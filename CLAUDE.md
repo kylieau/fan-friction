@@ -21,6 +21,7 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 - `design/wireframes/`: the current mockups (HTML boards, example night Fri Oct 25, 2024). Match their layout and feel; the palette and fonts are in the brief.
 
 ## Working rules
+- **Kylie's explicit instructions win.** If what she tells you conflicts with a mockup, a doc, the brand kit or anything another tool generated, follow her and point out the conflict so the source can be fixed.
 - Don't rebuild what is already decided. If something in the docs is unclear or seems wrong, ask Kylie before changing it.
 - Build in small steps and commit often, with plain-English commit messages. After each step, tell Kylie what she can now open and look at.
 - Build room for later features from day one: every map item is a generic "crowd event," layers are separate, teams and metros are their own records, and a personal layer attaches to any event. Don't hardcode for baseball only or for LA only.
