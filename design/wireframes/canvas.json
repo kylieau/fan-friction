@@ -1,0 +1,96 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-09-30T16:47:41Z"
+  },
+  "title": "Crowd Clash Wireframes",
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "boards": {
+    "FirstRun.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "0 \u00b7 First open: tip 1 of 3",
+      "is_interactive": true,
+      "radius": 28
+    },
+    "Main.dc.html": {
+      "x": 470,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "1 \u00b7 Map tab, Crowds",
+      "is_interactive": true,
+      "radius": 28
+    },
+    "Event.dc.html": {
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 1280,
+      "title": "2 \u00b7 Event: what beat it \u2192 share",
+      "is_interactive": true,
+      "radius": 28
+    },
+    "Traffic.dc.html": {
+      "x": 1410,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "3 \u00b7 Map tab, Traffic",
+      "is_interactive": true,
+      "radius": 28
+    },
+    "PickNight.dc.html": {
+      "x": 1880,
+      "y": 0,
+      "w": 390,
+      "h": 1040,
+      "title": "4 \u00b7 Nights tab",
+      "is_interactive": true,
+      "radius": 28
+    },
+    "You.dc.html": {
+      "x": 2350,
+      "y": 0,
+      "w": 390,
+      "h": 1200,
+      "title": "5A \u00b7 You tab: Plans first (default)",
+      "is_interactive": true,
+      "radius": 28
+    },
+    "YouB.dc.html": {
+      "x": 2820,
+      "y": 0,
+      "w": 390,
+      "h": 1200,
+      "title": "5B \u00b7 You tab: Your nights first",
+      "is_interactive": true,
+      "radius": 28
+    }
+  },
+  "order": [
+    "FirstRun.dc.html",
+    "Main.dc.html",
+    "Event.dc.html",
+    "Traffic.dc.html",
+    "PickNight.dc.html",
+    "You.dc.html",
+    "YouB.dc.html"
+  ],
+  "notes": {
+    "header": {
+      "x": 0,
+      "y": -260,
+      "text": "Crowd Clash \u00b7 M1 mockups, v4 (light, heat map, tabs)",
+      "kind": "title1",
+      "maxW": 3210
+    }
+  },
+  "designSystems": []
+}
