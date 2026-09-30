@@ -48,3 +48,6 @@ Thumbs.db
 
 # Vercel
 .vercel
+
+# Dev container: home-folder backup restored on rebuild (never commit)
+.devcontainer/.home-backup/

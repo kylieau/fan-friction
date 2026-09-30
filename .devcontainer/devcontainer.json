@@ -1,7 +1,15 @@
 {
-  "name": "Claude Code Sandbox",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
+  "name": "Fan/Friction",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  // Keep Claude Code settings, history and GitHub CLI login across rebuilds.
+  "mounts": [
+    "source=fan-friction-claude-${devcontainerId},target=/home/node/.claude,type=volume",
+    "source=fan-friction-gh-${devcontainerId},target=/home/node/.config/gh,type=volume"
+  ],
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
   "remoteUser": "node",
   "forwardPorts": [3001]
 }
