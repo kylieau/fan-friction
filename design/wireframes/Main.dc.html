@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Map tab, Crowds</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&amp;family=Manrope:wght@500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;font-family:'Manrope',sans-serif;background:#F7F8FA;color:#0F1B2D}
+a{color:#0F1B2D;text-decoration:none}a:hover{color:#005A9C}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F7F8FA; font-family: 'Manrope', sans-serif; color: #0F1B2D">
+
+<div style="position: absolute; left: 0px; top: 0px; width: 390px; box-sizing: border-box; padding: 16px 20px 12px 20px; display: flex; flex-direction: column; gap: 12px; background: #F7F8FA; z-index: 2">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<a href="PickNight.dc.html" style="display: flex; align-items: center; gap: 6px; min-height: 44px; font-size: 17px; font-weight: 700">
+Fri, Oct 25, 2024
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</a>
+<a href="PickNight.dc.html" aria-label="Search nights" style="width: 44px; height: 44px; border-radius: 22px; background: #FFFFFF; box-shadow: 0 1px 3px rgba(15,27,45,0.12); display: flex; align-items: center; justify-content: center">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg>
+</a>
+</div>
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="display: flex; align-items: baseline; gap: 2px">
+<span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 56px; line-height: 0.9; color: #005A9C">9</span>
+<span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 700; font-size: 22px; color: #4A5568">/10</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 14px; font-weight: 800; letter-spacing: 1.2px; color: #005A9C">NIGHT · BRUTAL</div>
+<div style="display: flex; gap: 3px">
+<span style="width: 12px; height: 6px; border-radius: 2px; background: #005A9C"></span><span style="width: 12px; height: 6px; border-radius: 2px; background: #005A9C"></span><span style="width: 12px; height: 6px; border-radius: 2px; background: #005A9C"></span><span style="width: 12px; height: 6px; border-radius: 2px; background: #005A9C"></span><span style="width: 12px; height: 6px; border-radius: 2px; background: #005A9C"></span><span style="width: 12px; height: 6px; border-radius: 2px; background: #005A9C"></span><span style="width: 12px; height: 6px; border-radius: 2px; background: #005A9C"></span><span style="width: 12px; height: 6px; border-radius: 2px; background: #005A9C"></span><span style="width: 12px; height: 6px; border-radius: 2px; background: #005A9C"></span><span style="width: 12px; height: 6px; border-radius: 2px; background: #DDE3EC"></span>
+</div>
+<div style="font-size: 13px; font-weight: 500; color: #4A5568">6 big events started within 3 hours</div>
+</div>
+</div>
+<div style="height: 44px; border-radius: 22px; background: #E8ECF2; display: flex; padding: 4px; box-sizing: border-box; gap: 4px">
+<span style="flex-grow: 1; border-radius: 18px; background: #FFFFFF; color: #005A9C; box-shadow: 0 1px 3px rgba(15,27,45,0.15); font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center">Crowds</span>
+<a href="Traffic.dc.html" style="flex-grow: 1; border-radius: 18px; color: #4A5568; font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center">Traffic</a>
+</div>
+<div style="font-size: 14px; font-weight: 600; color: #4A5568; text-align: center">Where did the crowds go?</div>
+</div>
+
+<div style="position: absolute; left: 0px; top: 236px; width: 390px; height: 520px">
+<svg width="390" height="520" viewBox="0 0 390 520" style="position: absolute; left: 0px; top: 0px">
+<defs>
+<radialGradient id="hotG"><stop offset="0%" stop-color="#FFD100" stop-opacity="0.75"></stop><stop offset="55%" stop-color="#FFD100" stop-opacity="0.28"></stop><stop offset="100%" stop-color="#FFD100" stop-opacity="0"></stop></radialGradient>
+<radialGradient id="midG"><stop offset="0%" stop-color="#2774AE" stop-opacity="0.45"></stop><stop offset="100%" stop-color="#2774AE" stop-opacity="0"></stop></radialGradient>
+<radialGradient id="lowG"><stop offset="0%" stop-color="#9CC3E4" stop-opacity="0.55"></stop><stop offset="100%" stop-color="#9CC3E4" stop-opacity="0"></stop></radialGradient>
+</defs>
+<rect x="0" y="0" width="390" height="520" fill="#EDF0F4"></rect>
+<polygon points="0,174 53,196 75,220 85,231 106,277 127,323 144,369 136,410 114,451 127,471 187,492 229,502 263,471 314,446 390,471 390,520 0,520" fill="#D5E5F3" stroke="#C3D6E8" stroke-width="1.5" stroke-linejoin="round"></polygon>
+<g fill="none" stroke-linejoin="round" stroke-linecap="round">
+<g stroke="#D3DAE5" stroke-width="5">
+<polyline points="339,61 276,133 246,154 237,195 237,277 233,461"></polyline>
+<polyline points="59,185 178,169 263,169 390,144"></polyline>
+<polyline points="76,0 93,133 161,256 195,338 322,410"></polyline>
+<polyline points="136,277 390,277"></polyline>
+<polyline points="271,149 195,103 161,61 110,0"></polyline>
+</g>
+<g stroke="#FFFFFF" stroke-width="3">
+<polyline points="339,61 276,133 246,154 237,195 237,277 233,461"></polyline>
+<polyline points="59,185 178,169 263,169 390,144"></polyline>
+<polyline points="76,0 93,133 161,256 195,338 322,410"></polyline>
+<polyline points="136,277 390,277"></polyline>
+<polyline points="271,149 195,103 161,61 110,0"></polyline>
+</g>
+</g>
+<circle cx="231" cy="191" r="78" fill="url(#hotG)"></circle>
+<circle cx="271" cy="129" r="66" fill="url(#hotG)"></circle>
+<circle cx="248" cy="161" r="38" fill="url(#midG)"></circle>
+<circle cx="185" cy="254" r="46" fill="url(#lowG)"></circle>
+<g font-family="Manrope, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#7B8798">
+<text x="300" y="26">PASADENA</text>
+<text x="104" y="112">HOLLYWOOD</text>
+<text x="10" y="162">SANTA MONICA</text>
+</g>
+</svg>
+
+<button type="button" aria-label="What do the colors mean?" style="position: absolute; left: 334px; top: 8px; width: 44px; height: 44px; border: none; border-radius: 22px; background: #FFFFFF; box-shadow: 0 1px 3px rgba(15,27,45,0.15); color: #4A5568; font-family: 'Manrope', sans-serif; font-size: 18px; font-weight: 700">?</button>
+
+<a href="Event.dc.html" aria-label="World Series Game 1" style="position: absolute; left: 251px; top: 109px; width: 40px; height: 40px; border-radius: 20px; background: #FFD100; border: 2px solid #FFFFFF; box-sizing: border-box; box-shadow: 0 0 0 1px rgba(15,27,45,0.25), 0 2px 6px rgba(15,27,45,0.2); display: flex; align-items: center; justify-content: center">
+</a>
+<a href="Event.dc.html" aria-label="Lakers vs. Suns" style="position: absolute; left: 237px; top: 150px; width: 23px; height: 23px; border-radius: 12px; background: #2774AE; border: 2px solid #FFFFFF; box-sizing: border-box; box-shadow: 0 0 0 1px rgba(15,27,45,0.2)"></a>
+<a href="Event.dc.html" aria-label="USC vs. Rutgers" style="position: absolute; left: 208px; top: 168px; width: 46px; height: 46px; border-radius: 23px; background: #FFD100; border: 2px solid #FFFFFF; box-sizing: border-box; box-shadow: 0 0 0 1px rgba(15,27,45,0.25), 0 2px 6px rgba(15,27,45,0.2); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="#0F1B2D"><polygon points="12,2 15,9 22,9.5 16.5,14 18.5,21 12,17 5.5,21 7.5,14 2,9.5 9,9"></polygon></svg></a>
+<div style="position: absolute; left: 161px; top: 230px; width: 48px; height: 48px; border-radius: 24px; background: #9CC3E4; border: 2px solid #FFFFFF; box-sizing: border-box; box-shadow: 0 0 0 1px rgba(15,27,45,0.2); display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">3</div>
+
+<div style="position: absolute; left: 190px; top: 80px; font-size: 13px; font-weight: 700; text-shadow: 0 0 3px #FFFFFF, 0 0 6px #FFFFFF, 0 0 10px #FFFFFF">World Series G1 · 52,394</div>
+<div style="position: absolute; left: 40px; top: 150px; width: 192px; display: flex; justify-content: flex-end; align-items: center; gap: 6px"><span style="font-size: 13px; font-weight: 600; color: #2D3748; text-shadow: 0 0 3px #FFFFFF, 0 0 6px #FFFFFF, 0 0 10px #FFFFFF">Lakers · 18,997</span><span style="font-size: 10px; font-weight: 800; letter-spacing: 0.5px; color: #005A9C; background: #FFFFFF; border: 1.5px solid #005A9C; padding: 1px 5px; border-radius: 4px">SOLD OUT</span></div>
+<a href="Event.dc.html" style="position: absolute; left: 262px; top: 180px; display: flex; flex-direction: column; gap: 3px">
+<span style="font-size: 14px; font-weight: 800; text-shadow: 0 0 3px #FFFFFF, 0 0 6px #FFFFFF, 0 0 10px #FFFFFF">★ USC · 63,404</span>
+<span style="align-self: flex-start; font-size: 11px; font-weight: 700; color: #FFFFFF; background: #005A9C; padding: 2px 7px; border-radius: 999px">Squeeze 8/10</span>
+</a>
+<div style="position: absolute; left: 36px; top: 246px; width: 118px; text-align: right; font-size: 13px; font-weight: 600; color: #2D3748; text-shadow: 0 0 3px #FFFFFF, 0 0 6px #FFFFFF, 0 0 10px #FFFFFF">Inglewood · 3 events</div>
+</div>
+
+<div style="position: absolute; left: 0px; top: 566px; width: 390px; height: 200px; box-sizing: border-box; background: #FFFFFF; border-radius: 28px 28px 0 0; box-shadow: 0 -4px 20px rgba(15,27,45,0.1); padding: 12px 20px 16px 20px; display: flex; flex-direction: column; gap: 14px; z-index: 3">
+<span style="width: 36px; height: 4px; border-radius: 2px; background: #CBD3DF; align-self: center"></span>
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 52px; height: 52px; flex-shrink: 0; border-radius: 14px; background: #005A9C; color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1">
+<span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 26px">8</span>
+<span style="font-size: 9px; font-weight: 800; letter-spacing: 0.5px">SQUEEZE</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px">
+<div style="font-size: 17px; font-weight: 800">USC got squeezed hardest.</div>
+<div style="font-size: 14px; font-weight: 500; color: #4A5568">Biggest crowd in town, yet its smallest of the season. What beat it?</div>
+</div>
+</div>
+<a href="Event.dc.html" style="height: 52px; border-radius: 16px; background: #FFD100; color: #0F1B2D; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 8px">
+See what beat USC
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F1B2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+</a>
+</div>
+
+<nav style="position: absolute; left: 0px; top: 766px; width: 390px; height: 78px; box-sizing: border-box; background: #FFFFFF; border-top: 1px solid #E5E9F0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 6px 8px 18px 8px; z-index: 4">
+<span style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 700; color: #005A9C">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#005A9C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>Map</span>
+<a href="PickNight.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 600; color: #4A5568">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line><line x1="8" y1="3" x2="8" y2="7"></line><line x1="16" y1="3" x2="16" y2="7"></line></svg>Nights</a>
+<span style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 600; color: #4A5568">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="20" x2="6" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="18" y1="20" x2="18" y2="14"></line></svg>Compare</span>
+<a href="You.dc.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 600; color: #4A5568">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>You</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
