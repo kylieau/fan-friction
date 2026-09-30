@@ -1,5 +1,7 @@
 # Fan/Friction brand kit (logo A, "The Slash")
 
+> Note (Sep 30, 2026): Kylie's naming rule overrides the "Rules" section below. Show the name as **Fan/Friction** everywhere a slash is possible, not just in the logo. See `CLAUDE.md`.
+
 ## Files
 Drop everything in `public/` into the app's public/static folder.
 
