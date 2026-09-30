@@ -64,7 +64,7 @@ Kylie wants this free until paying is unavoidable. Each of these is a milestone 
 | When | What starts costing | Rough cost |
 |---|---|---|
 | M1 | Nothing. Vercel free, Supabase free, OpenFreeMap, MLB feed, Ticketmaster key are all free | $0 |
-| M1, if Supabase fills up | Supabase free plan allows 2 active projects per account (Kylie already uses one) and pauses a project after about a week with no use. A third project, or no pausing, means Supabase Pro | $25/month |
+| M1, if Supabase fills up | Supabase free plan allows 2 active projects per account (Kylie already uses one) and pauses a project after about a week with no use. A third project, or no pausing, means Supabase Pro. Kylie's plan: switch to Firebase or another free option instead of paying | $25/month (or $0 by switching) |
 | Custom web address (any time) | A domain like fanfriction.app instead of fan-friction.vercel.app | ~$10–20/year |
 | Native iPhone app | Apple Developer Program | $99/year |
 | Native Android app | Google Play developer account | $25 once |
