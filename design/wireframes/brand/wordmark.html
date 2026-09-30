@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fan/Friction wordmark</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&display=swap">
+<style>
+  :root { --dodger: #005A9C; --ucla-blue: #2774AE; --gold: #FFD100; --ink: #0F1B2D; --bg: #F7F8FA; }
+  body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); }
+  .demo { padding: 48px 24px; display: flex; justify-content: center; }
+  .demo.dark { background: var(--dodger); }
+
+  /* ---- Wordmark: copy from here ---- */
+  .ff-wordmark {
+    display: inline-flex; align-items: center;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-style: italic;
+    font-size: 48px; line-height: 1; letter-spacing: 0.01em;
+  }
+  .ff-wordmark .fan { color: var(--ink); }
+  .ff-wordmark .friction { color: var(--dodger); }
+  .ff-wordmark .slash {
+    display: inline-block; width: 0.16em; height: 1.15em;
+    margin: 0 0.15em; background: var(--gold);
+    transform: skewX(-22deg); box-shadow: 0.065em 0 0 var(--dodger);
+  }
+  /* On Dodger blue: white words, plain gold slash */
+  .ff-wordmark.on-blue .fan, .ff-wordmark.on-blue .friction { color: #fff; }
+  .ff-wordmark.on-blue .slash { box-shadow: none; }
+  /* ---- to here ---- */
+</style>
+</head>
+<body>
+<div class="demo">
+  <span class="ff-wordmark" role="img" aria-label="Fan/Friction">
+    <span class="fan" aria-hidden="true">FAN</span><span class="slash" aria-hidden="true"></span><span class="friction" aria-hidden="true">FRICTION</span>
+  </span>
+</div>
+<div class="demo dark">
+  <span class="ff-wordmark on-blue" role="img" aria-label="Fan/Friction">
+    <span class="fan" aria-hidden="true">FAN</span><span class="slash" aria-hidden="true"></span><span class="friction" aria-hidden="true">FRICTION</span>
+  </span>
+</div>
+</body>
+</html>

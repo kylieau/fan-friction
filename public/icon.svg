@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Placeholder until Kylie's logo arrives. -->
+  <rect width="512" height="512" rx="112" fill="#0F1B2D"/>
+  <circle cx="276" cy="236" r="150" fill="#FFD100" fill-opacity="0.18"/>
+  <circle cx="276" cy="236" r="110" fill="#FFD100" fill-opacity="0.25"/>
+  <circle cx="276" cy="236" r="78" fill="#FFD100" stroke="#FFFFFF" stroke-width="16"/>
+  <circle cx="158" cy="354" r="36" fill="#2774AE" stroke="#FFFFFF" stroke-width="12"/>
+</svg>

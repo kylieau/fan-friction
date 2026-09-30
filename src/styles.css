@@ -1,0 +1,540 @@
+/* Colors come from src/config/theme.ts as CSS variables (--bg, --ink, ...). */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--track);
+  color: var(--ink);
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* ---------- App frame: phone-sized, centered on bigger screens ---------- */
+
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+@media (min-width: 520px) {
+  .app {
+    box-shadow: 0 0 40px rgba(15, 27, 45, 0.12);
+  }
+}
+
+.app-main {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+.screen {
+  height: 100%;
+}
+
+/* ---------- Tab bar ---------- */
+
+.tabbar {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  background: var(--card);
+  border-top: 1px solid var(--line);
+  padding: 6px 8px calc(10px + env(safe-area-inset-bottom, 0px));
+  z-index: 4;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  min-height: 52px;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.tab.active {
+  color: var(--dodger);
+  font-weight: 700;
+}
+
+/* ---------- Buttons ---------- */
+
+.gold-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  border: none;
+  border-radius: 16px;
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.gold-button.small {
+  height: 48px;
+  padding: 0 22px;
+  border-radius: 14px;
+}
+
+.link-button {
+  min-height: 44px;
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.round-button {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink2);
+}
+
+/* ---------- Map screen ---------- */
+
+.map-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-header {
+  padding: calc(16px + env(safe-area-inset-top, 0px)) 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--bg);
+  z-index: 2;
+}
+
+.map-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.date-button svg {
+  color: var(--ink2);
+}
+
+.segmented {
+  display: flex;
+  gap: 4px;
+  height: 44px;
+  padding: 4px;
+  border-radius: 22px;
+  background: var(--track);
+}
+
+.segmented button {
+  flex: 1;
+  border: none;
+  border-radius: 18px;
+  background: transparent;
+  color: var(--ink2);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.segmented button[aria-selected='true'] {
+  background: var(--card);
+  color: var(--dodger);
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.15);
+}
+
+.map-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.estimate-chip {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--dodger);
+  background: var(--card);
+  border: 1.5px solid var(--dodger);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+
+.map-area {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  background: #edf0f4;
+}
+
+.basemap {
+  position: absolute;
+  inset: 0;
+}
+
+.maplibregl-ctrl-bottom-right {
+  bottom: 220px;
+}
+
+/* ---------- Night score ---------- */
+
+.nightscore {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 56px;
+}
+
+.nightscore-number {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.score-big {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 0.9;
+  color: var(--dodger);
+}
+
+.score-of {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--ink2);
+}
+
+.nightscore-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nightscore-label {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: var(--dodger);
+}
+
+.nightscore-bars {
+  display: flex;
+  gap: 3px;
+}
+
+.nightscore-bars span {
+  width: 12px;
+  height: 6px;
+  border-radius: 2px;
+  background: var(--barOff);
+}
+
+.nightscore-bars span.on {
+  background: var(--dodger);
+}
+
+.nightscore-caption {
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+/* ---------- Bottom sheet ---------- */
+
+.sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 12px 20px 16px;
+  background: var(--card);
+  border-radius: 28px 28px 0 0;
+  box-shadow: 0 -4px 20px rgba(15, 27, 45, 0.1);
+}
+
+.sheet-handle {
+  align-self: center;
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: #cbd3df;
+}
+
+.sheet-title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.quiet-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quiet-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.quiet-label {
+  font-weight: 700;
+}
+
+.quiet-note {
+  color: var(--ink2);
+  text-align: right;
+  font-size: 13px;
+}
+
+/* ---------- Simple pages (Nights, Compare, You) ---------- */
+
+.page {
+  overflow-y: auto;
+  padding: calc(20px + env(safe-area-inset-top, 0px)) 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+}
+
+.empty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.card-body {
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+.soon-chip {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--card);
+  background: var(--dodger);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+  color: var(--ink2);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: #5a6578;
+}
+
+.you-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: var(--dodger);
+  color: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-heading {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
+.settings-row {
+  text-align: left;
+  min-height: 52px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 14px;
+  background: var(--card);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dodger);
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+}
+
+/* ---------- First-run tips ---------- */
+
+.tips-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: rgba(15, 27, 45, 0.55);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 20px calc(96px + env(safe-area-inset-bottom, 0px));
+}
+
+.tip-card {
+  width: 100%;
+  background: var(--card);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 12px 32px rgba(15, 27, 45, 0.3);
+}
+
+.tip-progress {
+  display: flex;
+  gap: 6px;
+}
+
+.tip-progress span {
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--barOff);
+}
+
+.tip-progress span.on {
+  background: var(--dodger);
+}
+
+.tip-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tip-title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.tip-body {
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+.tip-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
