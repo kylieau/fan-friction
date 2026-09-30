@@ -1,16 +1,18 @@
-# FanFriction (Fan/Friction): M1 build brief
+# Fan/Friction: M1 build brief
 
 Updated Sep 30, 2026. This is the hand-off for the first build. It says what people should see and do, not how to code it. The mockups are in `design/wireframes/`, the ratings and test nights are in `docs/test-nights-and-ratings.md`, and the product rules are in `docs/product-decisions.md`.
 
 ## Why / what we're building
-Big-city sports fans, especially LA's, get called "fake." The better explanation is competition: other 5k+ events the same night, traffic, weather and stakes. FanFriction makes that competition visible for any night, so a fan can make the argument and a local can decide whether to go. This first build is a personal prototype for Kylie and friends, seeded in LA.
+Big-city sports fans, especially LA's, get called "fake." The better explanation is competition: other 5k+ events the same night, traffic, weather and stakes. Fan/Friction makes that competition visible for any night, so a fan can make the argument and a local can decide whether to go. This first build is a personal prototype for Kylie and friends, seeded in LA.
+
+Sports are the reason it exists, but it's a live-event app: concerts and other big ticketed events count just as much. The feel is log + share, in the spirit of Flighty, Beli and Letterboxd. It is not a game.
 
 ## Decisions locked (Sep 30, 2026)
-- **Name:** FanFriction, written Fan/Friction when stylized. The name lives in one place so it can change later. Repo: `fan-friction`.
+- **Name:** Fan/Friction, with the slash, everywhere a slash is possible. Use `fan-friction` or `FanFriction` only where a slash can't go (repo, code, web addresses). The name lives in one place so it can change later. Repo: `fan-friction`. Live site: https://fan-friction.vercel.app/.
 - **Kind of app:** a phone-sized web app now, built so it can be installed or wrapped as a native app later.
-- **Data:** hand-seeded to start, but built so live schedules and results can plug in quickly. MLB goes first, because it's October baseball.
+- **Data:** hand-seeded to start, but built so live schedules and results can plug in quickly. MLB goes first, only because it's October baseball and its free feed is the easiest. Other sports (NFL, NBA, NHL, WNBA, MLS, college) and concerts follow right behind it. Upcoming concerts and shows start with Ticketmaster; SeatGeek or other sources get added later.
 - **Ratings:** hardcoded for the seeded nights first, then the real formula, checked against the 13-night table.
-- **People:** just Kylie, saved on her own device. Simple accounts come right after the baseline build.
+- **People:** just Kylie to start. Her log is saved in Supabase (which she already uses), not only on her phone, because iPhone Safari can erase a website's saved data. Also an "Export my nights" backup. Simple accounts come right after the baseline build, also on Supabase.
 - **Screens in the first slice:** Map (Crowds) with the Event screen, Nights, You (Plans and Your nights), and Traffic. Compare comes in the second slice.
 - **World Series games get a SOLD OUT tag** like any other sold-out event. Nothing special or bigger about it.
 - **Event types:** Game, Show, Festival, Live Broadcast (watch parties at places like Cosm), and Special event. "Live Broadcast" is Kylie's name for the Cosm-style category.
@@ -47,7 +49,30 @@ Big-city sports fans, especially LA's, get called "fake." The better explanation
 ## Net effect
 One app where a fan can pull up any night, see what else was on and how squeezed each event was, and share it as a card. A local can check Tonight and the roads. Kylie can log her own nights. Real MLB games flow in alongside the hand-seeded history.
 
+## Tech setup (Sep 30, 2026; open to change)
+- React + Vite phone-sized web app, installable to the home screen. Can be wrapped as a native app later (Capacitor).
+- Map: MapLibre with OpenFreeMap (free, no account). Google Maps was passed on: it needs a credit card on file, and its heat map layer is being retired.
+- Saving: Supabase. Hosting: Vercel free plan, deploying automatically from GitHub.
+- Every outside service sits behind its own replaceable piece, so any of these can be swapped later.
+
+## Checking the rating formula
+Matching the 13-night table is a sanity check, not proof: six factors can be tuned to fit 13 nights and still be wrong on the next one. Hold back two or three nights, tune on the rest, and check that the formula gets the held-back ones right.
+
+## Cost milestones 🚩
+Kylie wants this free until paying is unavoidable. Each of these is a milestone to flag and get her OK on before crossing. Nothing in the first slice (M1) costs money.
+
+| When | What starts costing | Rough cost |
+|---|---|---|
+| M1 | Nothing. Vercel free, Supabase free, OpenFreeMap, MLB feed, Ticketmaster key are all free | $0 |
+| M1, if Supabase fills up | Supabase free plan allows 2 active projects per account (Kylie already uses one) and pauses a project after about a week with no use. A third project, or no pausing, means Supabase Pro | $25/month |
+| Custom web address (any time) | A domain like fanfriction.app instead of fan-friction.vercel.app | ~$10–20/year |
+| Native iPhone app | Apple Developer Program | $99/year |
+| Native Android app | Google Play developer account | $25 once |
+| Public launch or any revenue (M2/M3) | Vercel's free plan is for personal, non-commercial use; commercial use means Vercel Pro. The MLB feed is non-commercial only too | $20/month+ (Vercel); MLB data licensing unknown |
+| If free data runs out | Paid sports or event data (e.g. PredictHQ, SportsDataIO) or higher Ticketmaster limits | Varies |
+
 ## Open questions (settle while building, ask Kylie when you reach them)
+- Where schedules for other sports come from. NHL has a free public feed; NFL, NBA, college and others probably come through an unofficial scoreboard feed. Pick when building.
 - Rating weights, and when dot size switches from capacity to predicted attendance.
 - What exactly the basic traffic cues show.
 - Streak and badge definitions, and the Compare-with-friends format.

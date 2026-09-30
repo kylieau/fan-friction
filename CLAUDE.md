@@ -1,6 +1,14 @@
-# FanFriction (Fan/Friction)
+# Fan/Friction
 
 A personal app that makes it visible how much competition (other 5k+ events the same night, traffic, weather, stakes) shapes attendance, to answer the claim that big-city fans are "fake." Seeded in LA. Formerly called "Crowd Clash" (older docs and wireframes may use that name).
+
+It's a live-event app, not a sports-only app: sports are the reason it exists, but concerts and other big ticketed events are first-class. The vibe is log + share, like Flighty, Beli and Letterboxd. It is not a game.
+
+- Repo: https://github.com/kylieau/fan-friction
+- Live site: https://fan-friction.vercel.app/ (Vercel, deploys automatically from `main`)
+
+## The name
+Write it **Fan/Friction**, with the slash, everywhere a slash is possible: screens, share cards, the app title, docs and conversation. Use `fan-friction` or `FanFriction` only where a slash can't go (repo, package and file names, code, web addresses). Keep the display name in one setting so it can change later.
 
 ## Who you're working with
 Kylie is a lawyer, not an engineer. She is the product owner and has made the product decisions in `docs/`. Explain things in plain language, avoid jargon, and don't assume she reads code. When a technical choice would change what she sees or what it costs, explain it in a sentence and recommend one option. She likes to react to a concrete proposal (a table, a mockup) rather than invent numbers herself.
@@ -23,3 +31,14 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 - One gold primary button per screen, with a plain verb. Light theme. No orange.
 - Verify facts (attendance, dates, who played) against current sources before seeding them; earlier research had at least one wrong claim. If a web page can't be fetched normally, don't work around it. Ask Kylie to paste it.
 - Keep M2/M3 topics (public launch, licensing, revenue) out of the conversation unless Kylie raises them.
+
+## Cost and flexibility
+- **Keep it free until paying is unavoidable.** Any step that would start a cost (a paid plan, a developer fee, a credit card on file, a domain) is a milestone: flag it clearly with 🚩 and get Kylie's OK first. The running list is under "Cost milestones" in `docs/build-brief.md`.
+- **Decisions are not set in stone.** Kylie gets second opinions from other AI models and wants pushback. If a decision in these docs (a vendor, a tool, a product rule) looks wrong, say so and recommend something better.
+- **Build so things can be swapped.** Keep each outside service (map, each data source, where data is saved) and the app name behind its own small, replaceable piece, so changing one doesn't mean rebuilding.
+
+## Tech setup (chosen Sep 30, 2026; open to change)
+- Phone-sized web app: React + Vite, installable to the home screen. It can be wrapped as a native app later (Capacitor).
+- Map: MapLibre with OpenFreeMap maps (free, no account). Google Maps was considered and passed on: it needs a credit card on file, and its heat map layer is being retired.
+- Saving: Supabase (Kylie already uses it) for her log and, later, accounts. Also an "Export my nights" backup. Don't rely only on phone storage, because iPhone Safari can erase it.
+- Hosting: Vercel free plan.
