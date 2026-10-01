@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 // The skippable three-tip guide shown the first time the app opens.
-// Tip 1's wording is from the mockup; tips 2 and 3 are drafts to react to.
+// Tip 1's wording is from the mockup; tips 2 and 3 are Kylie's approved wording.
 const TIPS = [
   {
     title: 'Gold glow = where the crowds went.',

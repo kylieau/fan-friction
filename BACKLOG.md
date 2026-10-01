@@ -11,11 +11,8 @@ Deferred work and open questions that outlive one session. Remove an item only a
 - **Step 8:** Rating formula from the six-factor recipe. Hold back 2–3 of the 13 nights to test it, so it isn't just tuned to fit.
 
 ## Waiting on Kylie
-- Her reaction to the draft wording of tips 2 and 3 in `src/components/FirstRunTips.tsx`.
 - Per-event Squeeze scores. These will be proposed as a table in step 2.
 - Whether to keep the 2013–2015 concerts in her log (rough dates, no rating). Ask at step 5.
-- **The "Brutal" label:** `docs/product-decisions.md` drops "brutal nights" as a stat, but the mockup labels a 9/10 night "NIGHT · BRUTAL." Confirm the label scale for scores before step 3.
-- Top bar color: light (current) or the brand kit's Dodger blue.
 
 ## Saving and accounts
 - **Supabase:** Kylie creates a free project and provides its URL and public key before step 5. 🚩 The free plan allows 2 active projects per account and she already uses one. It also pauses after about a week idle.

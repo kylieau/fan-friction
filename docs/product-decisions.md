@@ -8,6 +8,7 @@ The thesis: big-city fans get called "fake." Attendance is shaped by competition
 - Tabs: Map, Nights, Compare, You. Opens on Tonight, even when quiet. Quiet state offers: next big night, "On this night" (a famous past night from this date), your teams' next game.
 - Nights tab: search, a calendar shaded by night rating with each day's number and a legend, and "Famous nights." No "Jump to" chips.
 - "Brutal nights" is dropped as a stat or designation. "Immune" is not a word to use.
+- Score words (Oct 1, 2026): every 1–10 score, night or Squeeze, shows a word next to it: 1–2 Chill, 3–4 Light, 5–6 Mid, 7–8 Brutal, 9–10 Cooked. These are labels on a score, not a stat to count. The mockups predate this: the Main board's 9/10 night says "BRUTAL" but should say "COOKED."
 
 ## Product psychology rules
 One gold primary button per screen with a plain verb. Default to Tonight. Skippable three-tip first-run guide. Always label scores (no bare numbers). End the event screen on a shareable card. Curiosity-gap copy. Don't make the user think.

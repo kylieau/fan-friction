@@ -26,6 +26,8 @@ Drop everything in `public/` into the app's public/static folder.
 <meta name="theme-color" content="#005A9C">
 ```
 
+> **Overridden (Oct 1, 2026):** Kylie chose a light top bar (`#F7F8FA`, the app background) instead of Dodger blue for `theme-color` and the manifest's `theme_color`.
+
 ## Web app manifest (icons + colors)
 ```json
 {

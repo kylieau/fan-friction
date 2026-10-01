@@ -1,12 +1,13 @@
-// A night's difficulty score. Never a bare number: always with its label.
+import { scoreLabel } from '../config/scoreLabels';
+
+// A night's difficulty score. Never a bare number: always with its word label.
 // With no rating yet, it says so instead of guessing.
 interface Props {
   rating: number | null;
-  label?: string;
   caption: string;
 }
 
-export function NightScore({ rating, label, caption }: Props) {
+export function NightScore({ rating, caption }: Props) {
   const rated = rating !== null;
   return (
     <div className="nightscore">
@@ -18,7 +19,7 @@ export function NightScore({ rating, label, caption }: Props) {
       )}
       <div className="nightscore-text">
         <div className="nightscore-label">
-          NIGHT · {rated ? label : 'NOT RATED YET'}
+          NIGHT · {rated ? scoreLabel(rating).toUpperCase() : 'NOT RATED YET'}
         </div>
         <div className="nightscore-bars" aria-hidden>
           {Array.from({ length: 10 }, (_, i) => (

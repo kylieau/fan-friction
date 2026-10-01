@@ -19,7 +19,7 @@ Adjusts the result:
 
 Label only, not scored: **Big TV night** (award shows, big national games).
 
-Difficulty is per event and per night. A night score says how hard the night was for the events that could get squeezed (1 = easy, 10 = brutal). The rating measures how hard it was to draw a crowd, not how hard it was to get around.
+Difficulty is per event and per night. A night score says how hard the night was for the events that could get squeezed (1 = easy, 10 = hardest). Every score shows a word with it: 1–2 Chill, 3–4 Light, 5–6 Mid, 7–8 Brutal, 9–10 Cooked. The rating measures how hard it was to draw a crowd, not how hard it was to get around.
 
 ## Ratings table
 
