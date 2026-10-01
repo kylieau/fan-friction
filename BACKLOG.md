@@ -11,7 +11,7 @@ Deferred work and open questions that outlive one session. Remove an item only a
 - **Step 8:** Rating formula from the six-factor recipe. Hold back 2–3 of the 13 nights to test it, so it isn't just tuned to fit.
 
 ## Waiting on Kylie
-- Her OK on the redrafted tip 2 (Night + friction wording).
+- **First-run tips are on hold** (Kylie, Oct 1): rewrite all three once the bigger product questions settle, since the tips will explain them. Tip 2 still describes the rating model in draft form.
 - Per-event occasion and friction for all 13 nights (night 1 drafted on the review page), plus: raise night 5 to 5 and night 6 to 4? ELO start time 7:00 or 8:00?
 - Whether to keep the 2013–2015 concerts in her log (rough dates, no rating). Ask at step 5.
 

@@ -9,13 +9,13 @@ The thesis: big-city fans get called "fake." Attendance is shaped by competition
 - Nights tab: search, a calendar shaded by night rating with each day's number and a legend, and "Famous nights." No "Jump to" chips.
 - "Brutal nights" is dropped as a stat or designation. "Immune" is not a word to use.
 - **Rating model (Oct 1, 2026, replaces per-event Squeeze scores):**
-  - **The date's rating:** one 1–10 rating per city date (day games count too). Shown on one line with the date, word first: "FRI, OCT 25 · Cooked · 9/10," with a calendar line icon. Not labeled "Night," since many events are day games (Opening Day, Sunday NFL). Words: 1–2 Chill, 3–4 Light, 5–6 Mid, 7–8 Brutal, 9–10 Cooked.
+  - **The date's rating:** one 1–10 rating per city date (day games count too). Shown word first: "Cooked · 9/10." Share cards add the date with a calendar line icon ("FRI, OCT 25 · Cooked · 9/10"); the map screen leaves it off because its header already shows the date. Unrated dates say "Pending." Not labeled "Night," since many events are day games (Opening Day, Sunday NFL). Words: 1–2 Chill, 3–4 Light, 5–6 Mid, 7–8 Brutal, 9–10 Cooked.
   - **Event:** no number. An occasion chip (Routine → Notable → Major → Marquee), fact chips (Game 1, tour opener, rivalry, farewell, ordinary opponent) and a friction verdict: Low, Moderate, Heavy or Extreme friction. Both come only from facts known before the event.
   - **Crowd is evidence, not an input.** Show it next to the verdict, always labeled ("Extreme friction · 63,404 announced"). Say "sold out" when a source says so; don't invent a percentage of capacity.
   - **Why:** a single per-event Squeeze score gave a sold-out World Series "2/10," which read as a weak event, and a per-event "Pull" number would grade fanbases, which the app exists to defend.
   - "Today" replaces "Tonight" in the app. "Nights" stays in the log voice: the Nights tab, Famous nights, Your nights.
   - Weather shows as raw numbers only (°F, humidity), never as words like "heat."
-  - The mockups predate this: they show "Squeeze 8/10" tags and "NIGHT · BRUTAL" for a 9/10 night (now "FRI, OCT 25 · Cooked · 9/10").
+  - The mockups predate this: they show "Squeeze 8/10" tags and "NIGHT · BRUTAL" for a 9/10 night (now "Cooked · 9/10").
 
 ## Product psychology rules
 One gold primary button per screen with a plain verb. Default to Today. Skippable three-tip first-run guide. Always label scores (no bare numbers). End the event screen on a shareable card. Curiosity-gap copy. Don't make the user think.

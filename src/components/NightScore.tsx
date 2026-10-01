@@ -1,11 +1,12 @@
 import { scoreLabel } from '../config/scoreLabels';
 import { CalendarIcon } from './Icons';
 
-// The rating for a city's date, on one line: "FRI, OCT 25 · Cooked · 9/10".
-// It rates the whole date (day games count too), so it's labeled with the
-// date, not the word "night". Never a bare number; with no rating yet, it says so.
+// The rating for a city's date, word first: "Cooked · 9/10". It rates the
+// whole date (day games count too), so it's never labeled "Night". Where the
+// date isn't already on screen (share cards), pass dateLabel to show
+// "FRI, OCT 25 · Cooked · 9/10". Never a bare number; unrated says "Pending".
 interface Props {
-  dateLabel: string;
+  dateLabel?: string;
   rating: number | null;
   caption: string;
 }
@@ -15,17 +16,19 @@ export function NightScore({ dateLabel, rating, caption }: Props) {
   return (
     <div className="nightscore">
       <div className="nightscore-main">
-        <span className="nightscore-date">
-          <CalendarIcon />
-          {dateLabel.toUpperCase()} ·
-        </span>
+        {dateLabel && (
+          <span className="nightscore-date">
+            <CalendarIcon />
+            {dateLabel.toUpperCase()} ·
+          </span>
+        )}
         {rated ? (
           <>
             <span className="score-word">{scoreLabel(rating)}</span>
             <span className="score-of">· {rating}/10</span>
           </>
         ) : (
-          <span className="score-word unrated">Not rated yet</span>
+          <span className="score-word unrated">Pending</span>
         )}
       </div>
       <div className="nightscore-bars" aria-hidden>

@@ -258,7 +258,7 @@ button {
 }
 
 .score-word.unrated {
-  font-size: 28px;
+  font-size: 34px;
   color: var(--muted);
 }
 

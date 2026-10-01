@@ -27,7 +27,7 @@ export function MapScreen() {
           </Link>
         </div>
 
-        <NightScore dateLabel={shortDate(new Date(), metro)} rating={null} caption="No big events found for today yet" />
+        <NightScore rating={null} caption="No big events found for today yet" />
 
         <div className="segmented" role="tablist" aria-label="Map mode">
           <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
