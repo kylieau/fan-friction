@@ -7,13 +7,23 @@ Deferred work and open questions that outlive one session. Remove an item only a
 - **Step 4:** Nights tab (search, calendar shaded by night rating with legend, Famous nights).
 - **Step 5:** You tab (Up next, Your nights from `docs/kylie-logs.md`, team + sport filters, rough dates, plain stats, order setting).
 - **Step 6:** Traffic mode (blue corridors, "Drag to your leave time," "Estimate · not live," no red).
-- **Step 7:** Live MLB schedules and results, so Today shows real October games marked "Not rated yet." Then other sports: NHL has a free public feed; NFL, NBA, college and others probably come through an unofficial scoreboard feed. Concerts come from Ticketmaster first; SeatGeek or others are added later.
+- **Step 7:** Live MLB schedules and results, so Today shows real October games marked "Unrated." Then other sports: NHL has a free public feed; NFL, NBA, college and others probably come through an unofficial scoreboard feed. Concerts come from Ticketmaster first; SeatGeek or others are added later.
 - **Step 8:** Rating formula from the six-factor recipe. Hold back 2–3 of the 13 nights to test it, so it isn't just tuned to fit.
 
 ## Waiting on Kylie
 - **First-run tips are on hold** (Kylie, Oct 1): rewrite all three once the bigger product questions settle, since the tips will explain them. Tip 2 still describes the rating model in draft form.
-- Per-event occasion and friction for all 13 nights (night 1 drafted on the review page), plus: raise night 5 to 5 and night 6 to 4? ELO start time 7:00 or 8:00?
+- Her reactions to `docs/rating-model-draft.md`: the audience-overlap rule (and whether night 5 moves to 6), the friction weights by event type, and the occasion/friction table for all 13 nights.
+- The three empty states for a date: Quiet (no events), Unrated (events, no rating), rated. Proposed in the draft.
+- Whether "Pick a night," "Next big night" and "On this night" keep the word "night" (she's fine for now but reserves judgment).
+- Her ongoing doubt about the word "friction" for the event verdict.
 - Whether to keep the 2013–2015 concerts in her log (rough dates, no rating). Ask at step 5.
+
+## Research leftovers
+- Night 7: concerts and other events at Crypto.com and Honda Center not checked.
+- Night 9: pick a new comparison Friday (7/21/23 was an Ohtani start).
+- Concert crowd counts not found: Gilmour, ELO, Imagine Dragons, Rauw Alejandro, Taylor Swift (per night).
+- The review page (artifact WaSZurptyrcUs74KUjBE6F) still says "Local Load" in option C; update before sharing.
+- The mockups in `design/wireframes/` predate the rating model ("Squeeze 8/10" tags, "NIGHT · BRUTAL"). Follow `product-decisions.md`, not the mockups.
 
 ## Saving and accounts
 - **Supabase:** Kylie creates a free project and provides its URL and public key before step 5. 🚩 The free plan allows 2 active projects per account and she already uses one. It also pauses after about a week idle.
