@@ -19,6 +19,8 @@ Deferred work and open questions that outlive one session. Remove an item only a
 - Whether to keep the 2013–2015 concerts in her log (rough dates, no rating). Ask at step 5.
 
 ## Research leftovers
+- Seed data gaps (step 2, Oct 1): start times for most events on nights 2–4, 7–9, 11 and parts of 12–13; crowd counts for nights 1–4 (beyond "sold out"); the Rose Bowl reading on 9/3/22 (only "100°F+ that day" is recorded); Rose Bowl capacity (sources say 89,702 or 92,542); the month Banc of California Stadium became BMO Stadium; Kia Forum's earlier name and rename date. Each is marked in `src/data/`.
+- Audience overlap: the rule's "same fans' must-see" case (Lakers vs. World Series = High) isn't automatic yet; the code rates different sports Medium.
 - Night 7: concerts and other events at Crypto.com and Honda Center not checked.
 - Night 9: pick a new comparison Friday (7/21/23 was an Ohtani start).
 - Concert crowd counts not found: Gilmour, ELO, Imagine Dragons, Rauw Alejandro, Taylor Swift (per night).
