@@ -22,7 +22,7 @@ _Last synced: Oct 1, 2026 (evening of Sep 30 in LA)._
 - **Components:** `TabBar`, `NightScore` (never a bare number; "NOT RATED YET" when unrated), `FirstRunTips` (3 tips, skippable, Map tab only), and `BaseMap` (MapLibre).
 - **Brand kit:** Kylie's kit is in `design/brand/` and its icons are in `public/`. The kit's README notes that her naming rule overrides it.
 - **Dev container:** Node 24 on Debian 12, with Chromium and the GitHub CLI. `~/.claude` and `~/.config/gh` are on volumes, so memory, history and the gh login survive rebuilds.
-- **Skill:** `.claude/skills/sync-handoff/` (`/sync-handoff`) rewrites this file and `BACKLOG.md`, then commits and pushes.
+- **Skills:** `/sync-handoff` rewrites this file and `BACKLOG.md`, then commits and pushes. `/resume-handoff` starts a new session by checking this file against the repo, then proposes a first move and waits.
 - **Docs:** `CLAUDE.md` and `docs/build-brief.md` gained the naming rule, the "explicit instructions win" rule, cost milestones 🚩, the tech setup and the log + share vibe.
 
 ## Key decisions still in force
