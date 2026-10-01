@@ -237,23 +237,28 @@ button {
 
 .nightscore {
   display: flex;
-  align-items: center;
-  gap: 14px;
+  flex-direction: column;
+  gap: 6px;
   min-height: 56px;
 }
 
-.nightscore-number {
+.nightscore-main {
   display: flex;
   align-items: baseline;
-  gap: 2px;
+  gap: 8px;
 }
 
-.score-big {
+.score-word {
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 800;
-  font-size: 56px;
-  line-height: 0.9;
+  font-size: 40px;
+  line-height: 0.95;
   color: var(--dodger);
+}
+
+.score-word.unrated {
+  font-size: 28px;
+  color: var(--muted);
 }
 
 .score-of {
@@ -261,16 +266,11 @@ button {
   font-weight: 700;
   font-size: 22px;
   color: var(--ink2);
-}
-
-.nightscore-text {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  font-variant-numeric: tabular-nums;
 }
 
 .nightscore-label {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 1.2px;
   color: var(--dodger);

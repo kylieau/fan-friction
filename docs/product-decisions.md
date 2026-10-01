@@ -4,11 +4,17 @@ The thesis: big-city fans get called "fake." Attendance is shaped by competition
 
 ## Map and modes
 - Modes: Crowds | Traffic. Traffic is estimates only ("Estimate · not live"). No live data, no red "jam" color.
-- Heat map: gold glow and dot size show where crowds went. A separate "Squeeze 8/10" tag (Dodger blue) shows how squeezed an event was. ★ = biggest crowd in that city that night. SOLD OUT tag = venue full (World Series games get it too, nothing special).
+- Heat map: gold glow and dot size show where crowds went. Each event's tag shows its friction verdict in words (for example "Extreme friction"), not a number. ★ = biggest crowd in that city that night. SOLD OUT tag = venue full (World Series games get it too, nothing special).
 - Tabs: Map, Nights, Compare, You. Opens on Tonight, even when quiet. Quiet state offers: next big night, "On this night" (a famous past night from this date), your teams' next game.
 - Nights tab: search, a calendar shaded by night rating with each day's number and a legend, and "Famous nights." No "Jump to" chips.
 - "Brutal nights" is dropped as a stat or designation. "Immune" is not a word to use.
-- Score words (Oct 1, 2026): every 1–10 score, night or Squeeze, shows a word next to it: 1–2 Chill, 3–4 Light, 5–6 Mid, 7–8 Brutal, 9–10 Cooked. These are labels on a score, not a stat to count. The mockups predate this: the Main board's 9/10 night says "BRUTAL" but should say "COOKED."
+- **Rating model (Oct 1, 2026, replaces per-event Squeeze scores):**
+  - **Night:** one 1–10 rating per city night. Shown word first under a NIGHT label: "Cooked · 9/10." Never glue "Night" to the number ("Night 9"). Words: 1–2 Chill, 3–4 Light, 5–6 Mid, 7–8 Brutal, 9–10 Cooked.
+  - **Event:** no number. An occasion chip (Routine → Notable → Major → Marquee), fact chips (Game 1, tour opener, rivalry, farewell, ordinary opponent) and a friction verdict: Low, Moderate, Heavy or Extreme friction. Both come only from facts known before the event.
+  - **Crowd is evidence, not an input.** Show it next to the verdict, always labeled ("Extreme friction · 63,404 announced"). Say "sold out" when a source says so; don't invent a percentage of capacity.
+  - **Why:** a single per-event Squeeze score gave a sold-out World Series "2/10," which read as a weak event, and a per-event "Pull" number would grade fanbases, which the app exists to defend.
+  - Weather shows as raw numbers only (°F, humidity), never as words like "heat."
+  - The mockups predate this: they show "Squeeze 8/10" tags and "NIGHT · BRUTAL" for a 9/10 night (now "Cooked · 9/10").
 
 ## Product psychology rules
 One gold primary button per screen with a plain verb. Default to Tonight. Skippable three-tip first-run guide. Always label scores (no bare numbers). End the event screen on a shareable card. Curiosity-gap copy. Don't make the user think.

@@ -3,7 +3,7 @@
 Deferred work and open questions that outlive one session. Remove an item only after checking it against the code. The current snapshot is in `MEMORY_HANDOFF.md`.
 
 ## First slice: remaining build steps
-- **Step 3:** Map in Crowds mode (gold heat map, Squeeze tags, ★ biggest crowd, SOLD OUT tags, night score) plus the Event screen ("Here's what beat it," The game/show block, "I was there," share card at the end). Match `design/wireframes/Main` and `Event`. Put the brand wordmark (`design/brand/wordmark.html`) on the share card, and give World Series G1 a SOLD OUT tag (the mockup is missing it).
+- **Step 3:** Map in Crowds mode (gold heat map, friction tags, ★ biggest crowd, SOLD OUT tags, night score) plus the Event screen ("Here's what beat it," The game/show block, "I was there," share card at the end). Match `design/wireframes/Main` and `Event`. Put the brand wordmark (`design/brand/wordmark.html`) on the share card, and give World Series G1 a SOLD OUT tag (the mockup is missing it).
 - **Step 4:** Nights tab (search, calendar shaded by night rating with legend, Famous nights).
 - **Step 5:** You tab (Up next, Your nights from `docs/kylie-logs.md`, team + sport filters, rough dates, plain stats, order setting).
 - **Step 6:** Traffic mode (blue corridors, "Drag to your leave time," "Estimate · not live," no red).
@@ -11,7 +11,8 @@ Deferred work and open questions that outlive one session. Remove an item only a
 - **Step 8:** Rating formula from the six-factor recipe. Hold back 2–3 of the 13 nights to test it, so it isn't just tuned to fit.
 
 ## Waiting on Kylie
-- Per-event Squeeze scores. These will be proposed as a table in step 2.
+- Her OK on the redrafted tip 2 (Night + friction wording).
+- Per-event occasion and friction for all 13 nights (night 1 drafted on the review page), plus: raise night 5 to 5 and night 6 to 4? ELO start time 7:00 or 8:00?
 - Whether to keep the 2013–2015 concerts in her log (rough dates, no rating). Ask at step 5.
 
 ## Saving and accounts

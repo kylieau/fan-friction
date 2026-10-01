@@ -1,15 +1,16 @@
 import { useState } from 'react';
 
 // The skippable three-tip guide shown the first time the app opens.
-// Tip 1's wording is from the mockup; tips 2 and 3 are Kylie's approved wording.
+// Tip 1's wording is from the mockup; tip 3 is Kylie's approved wording; tip 2 was
+// redrafted for the Night + friction model and needs her OK.
 const TIPS = [
   {
     title: 'Gold glow = where the crowds went.',
     body: 'The brighter the spot, the more people were there. Tap the brightest one to see what it was up against.',
   },
   {
-    title: 'Squeeze = how crowded out it was.',
-    body: 'Every big event gets a Squeeze score from 1 to 10. The higher it is, the more the night was working against it: other big events, traffic, weather.',
+    title: 'Friction = what it was up against.',
+    body: 'Every night is rated from Chill to Cooked. Each big event shows its friction, from Low to Extreme: other big events, traffic, weather.',
   },
   {
     title: 'Any night. Your nights too.',
