@@ -10,7 +10,7 @@ const TIPS = [
   },
   {
     title: 'Friction = what it was up against.',
-    body: 'Every night is rated from Chill to Cooked. Each big event shows its friction, from Low to Extreme: other big events, traffic, weather.',
+    body: 'Every date is rated from Chill to Cooked. Each big event shows its friction, from Low to Extreme: other big events, traffic, weather.',
   },
   {
     title: 'Any night. Your nights too.',

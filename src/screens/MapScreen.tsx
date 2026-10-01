@@ -8,7 +8,7 @@ import { monthDay, shortDate } from '../lib/dates';
 
 type Mode = 'crowds' | 'traffic';
 
-// Opens on Tonight, even when it's quiet. Events, the heat map and the night
+// Opens on Today, even when it's quiet. Events, the heat map and the date's
 // score come from the data layer in steps 2 and 3.
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
@@ -19,7 +19,7 @@ export function MapScreen() {
       <header className="map-header">
         <div className="map-header-top">
           <Link to="/nights" className="date-button">
-            Tonight · {shortDate(new Date(), metro)}
+            Today · {shortDate(new Date(), metro)}
             <ChevronDown />
           </Link>
           <Link to="/nights" className="round-button" aria-label="Search nights">
@@ -27,7 +27,7 @@ export function MapScreen() {
           </Link>
         </div>
 
-        <NightScore rating={null} caption="No big events loaded for tonight yet" />
+        <NightScore dateLabel={shortDate(new Date(), metro)} rating={null} caption="No big events found for today yet" />
 
         <div className="segmented" role="tablist" aria-label="Map mode">
           <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
@@ -47,9 +47,9 @@ export function MapScreen() {
         <BaseMap metro={metro} />
       </div>
 
-      <section className="sheet" aria-label="Tonight">
+      <section className="sheet" aria-label="Today">
         <span className="sheet-handle" aria-hidden />
-        <div className="sheet-title">Quiet so far tonight.</div>
+        <div className="sheet-title">Quiet so far today.</div>
         <ul className="quiet-list">
           <li>
             <span className="quiet-label">Next big night</span>

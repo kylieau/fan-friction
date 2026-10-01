@@ -244,8 +244,9 @@ button {
 
 .nightscore-main {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  gap: 8px;
+  gap: 4px 8px;
 }
 
 .score-word {
@@ -269,11 +270,21 @@ button {
   font-variant-numeric: tabular-nums;
 }
 
-.nightscore-label {
+.nightscore-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 1.2px;
   color: var(--dodger);
+  white-space: nowrap;
+}
+
+.nightscore-date svg {
+  width: 16px;
+  height: 16px;
+  align-self: center;
 }
 
 .nightscore-bars {

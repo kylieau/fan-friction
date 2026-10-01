@@ -7,7 +7,7 @@ Deferred work and open questions that outlive one session. Remove an item only a
 - **Step 4:** Nights tab (search, calendar shaded by night rating with legend, Famous nights).
 - **Step 5:** You tab (Up next, Your nights from `docs/kylie-logs.md`, team + sport filters, rough dates, plain stats, order setting).
 - **Step 6:** Traffic mode (blue corridors, "Drag to your leave time," "Estimate · not live," no red).
-- **Step 7:** Live MLB schedules and results, so Tonight shows real October games marked "Not rated yet." Then other sports: NHL has a free public feed; NFL, NBA, college and others probably come through an unofficial scoreboard feed. Concerts come from Ticketmaster first; SeatGeek or others are added later.
+- **Step 7:** Live MLB schedules and results, so Today shows real October games marked "Not rated yet." Then other sports: NHL has a free public feed; NFL, NBA, college and others probably come through an unofficial scoreboard feed. Concerts come from Ticketmaster first; SeatGeek or others are added later.
 - **Step 8:** Rating formula from the six-factor recipe. Hold back 2–3 of the 13 nights to test it, so it isn't just tuned to fit.
 
 ## Waiting on Kylie
