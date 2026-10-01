@@ -29,7 +29,7 @@ Difficulty is per event and per night. A night score says how hard the night was
 | 2 | Sat 10/26/24 | WS G2 + Kings (Crypto.com 1pm) + Galaxy (Dignity Health) + ELO (Forum) + Imagine Dragons (Hollywood Bowl) | 7 | Galaxy, concerts |
 | 3 | Mon 4/28/25 | Beyoncé (SoFi) + Dodgers vs. Marlins + Rauw Alejandro (Intuit Dome) | 6 | Rauw, Dodgers |
 | 4 | Tue 4/1/25 | Dodgers vs. Braves + Kings vs. Jets + We ❤️ LA (Hollywood Bowl), all within ~5 miles | 4 | Kings |
-| 5 | Sat 11/19/22 | UCLA vs. USC (Rose Bowl 5:00, 70,865) + BLACKPINK (Banc of California Stadium, renamed BMO in 2023) + Elton John (Dodger Stadium) + Clippers vs. Spurs (Crypto.com 7:30, 18,581) | 5 (was 4; held at 5 until there is an explicit audience-overlap rule, then revisit 6) | Barely (different crowds) |
+| 5 | Sat 11/19/22 | UCLA vs. USC (Rose Bowl 5:00, 70,865) + BLACKPINK (Banc of California Stadium, renamed BMO in 2023) + Elton John (Dodger Stadium) + Clippers vs. Spurs (Crypto.com 7:30, 18,581) | 5 (was 4; stays 5 under the audience-overlap rule adopted Oct 1) | Barely (different crowds) |
 | 6 | Mon 10/27/25 | WS G3 vs. Blue Jays (5:00, 52,654, 18 innings, 6h39m) + Lakers vs. Blazers (Crypto.com 7:30, 18,512) | 4 (was 2; the doc had missed the Lakers) | Lakers |
 | 7 | Mon 7/22/24 | Dodgers vs. Giants (49,576), nothing else big; backup night Tue 6/13/23 (45,561) | 1 | Baseline |
 | 8 | Fri 9/1/23 | Dodgers vs. Braves (52,436) + Beyoncé (SoFi). Also Thu 8/31: 47,623 alone; Sat 9/2: 51,470 with Beyoncé | 4 | Dodgers on paper (still drew 52k) |

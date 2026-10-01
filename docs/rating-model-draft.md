@@ -5,6 +5,8 @@ Proposals still waiting on Kylie's reaction. Locked decisions live in `product-d
 ## Already locked (Oct 1)
 Night 5 stays at 5 · Mid, night 6 is 4 · Light, ELO starts at 8:00, Low friction is never shown, weather is local to each venue and only a small bump, and Kylie is still weighing the word "friction." The empty state says **Unrated** (changing it back is one word).
 
+Later on Oct 1, Kylie accepted: the audience-overlap tiers and rule (overlap acts only on event friction), the friction weights below as the working draft, the Lakers on night 1 as Heavy friction even though they nearly sold out, the Chargers on night 11 as Notable for now, and rain as light friction. She may get a second opinion on the overlap rule, the weights and the Chargers call; the prompt is in `second-opinion-prompt.md`.
+
 ## What "Unrated" is tied to
 Right now, nothing: the app has no event data yet, so the map just hard-codes "no rating." Once the data is in, a date can be in one of three states. Proposed display for each:
 
@@ -60,9 +62,7 @@ Reasoning behind the numbers:
 
 The full formula comes later and doesn't hold up step 2. Step 2 stores the facts these weights will use (venues, times, distances, occasions), not the formula itself.
 
-**Questions for Kylie:**
-1. Do the overlap tiers and the "overlap only touches event friction" idea make sense?
-2. Any weights that feel off for an event type?
+**Status:** Kylie accepted both as the working version (Oct 1), pending an optional second opinion.
 
 ## Occasion and friction draft, all 13 nights
 Drafted Oct 1 for Kylie to react to. Occasion and friction use only facts known before each event. **Bold** marks events the original doc missed. Low friction is stored but not shown in the app.
@@ -106,8 +106,8 @@ Drafted Oct 1 for Kylie to react to. Occasion and friction use only facts known 
 | | USC vs. Rice | Notable · new coach's debut | Heavy | 3pm in the heat |
 | | Dodgers vs. Padres | Notable · rivalry | Moderate | Night game, after the heat |
 | | The Weeknd | Major | Low | Different crowd, evening |
-| **13** Sat 4/13/24, rain (Light 3) | Dodgers vs. Padres | Notable · rivalry | Moderate | Rain, and a delay before first pitch |
+| **13** Sat 4/13/24, rain (Light 3) | Dodgers vs. Padres | Notable · rivalry | Moderate | Rain (light friction) |
 
-Ones to check: the Lakers on night 1 are "Heavy" and still nearly sold out (expected: friction is what they faced, the crowd is how they did); the Chargers on night 11 might be Major rather than Notable; and whether rain counts as friction is a judgment call.
+Settled Oct 1: the Lakers on night 1 stay Heavy even though they nearly sold out (friction is what they faced, the crowd is how they did); the Chargers on night 11 stay Notable for now (Kylie may ask a second opinion on Major); rain counts as light friction. Night 13 no longer cites the rain delay, since a delay is something that happened on the day.
 
 The "101°F at the Rose Bowl" wording in the shown-reasons example is illustrative only, not data.
