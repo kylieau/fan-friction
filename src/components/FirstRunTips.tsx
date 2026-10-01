@@ -9,7 +9,7 @@ const TIPS = [
   },
   {
     title: 'Squeeze = how crowded out it was.',
-    body: 'Every big event gets a Squeeze score from 1 to 10. The higher it is, the more the rest of the night pulled people away.',
+    body: 'Every big event gets a Squeeze score from 1 to 10. The higher it is, the more the night was working against it: other big events, traffic, weather.',
   },
   {
     title: 'Any night. Your nights too.',
