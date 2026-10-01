@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter, Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { TabBar } from './components/TabBar';
 import { FirstRunTips } from './components/FirstRunTips';
 import { MapScreen } from './screens/MapScreen';
@@ -10,6 +10,7 @@ import { getPref, setPref } from './lib/prefs';
 
 function Shell() {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   const [showTips, setShowTips] = useState(() => !getPref('tipsDone', false));
 
   const finishTips = () => {
@@ -39,7 +40,8 @@ function Shell() {
         </Routes>
       </main>
       <TabBar />
-      {showTips && <FirstRunTips onDone={finishTips} />}
+      {/* The tips point at the map, so they only show there. */}
+      {showTips && pathname === '/' && <FirstRunTips onDone={finishTips} />}
     </div>
   );
 }

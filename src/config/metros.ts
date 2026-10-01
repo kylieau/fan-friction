@@ -13,8 +13,8 @@ export const METROS: Record<string, Metro> = {
     id: 'la',
     name: 'Los Angeles',
     timeZone: 'America/Los_Angeles',
-    center: [-118.28, 34.04],
-    zoom: 9.6,
+    center: [-118.3, 33.97],
+    zoom: 9.5,
   },
 };
 

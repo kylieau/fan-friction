@@ -43,4 +43,5 @@ function appIdentity(): Plugin {
 
 export default defineConfig({
   plugins: [react(), appIdentity()],
+  worker: { format: 'es' },
 });
