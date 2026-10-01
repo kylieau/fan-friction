@@ -25,16 +25,16 @@ Difficulty is per event and per night. A night score says how hard the night was
 
 | # | Night | What was on | Rating | Squeezed most |
 |---|---|---|---|---|
-| 1 | Fri 10/25/24 | WS G1 (Dodger Stadium 5:08) + Lakers vs. Suns (Crypto.com 7:00) + USC vs. Rutgers (Coliseum 8:00) + East LA Classic (SoFi 7:30) + David Gilmour (Intuit Dome 7:30) + ELO (Kia Forum) | 9 | Lakers, USC, concerts (WS sold out) |
+| 1 | Fri 10/25/24 | WS G1 (Dodger Stadium 5:08) + Lakers vs. Suns (Crypto.com 7:00) + USC vs. Rutgers (Coliseum 8:00) + East LA Classic (SoFi 7:30) + David Gilmour (Intuit Dome 7:30) + ELO (Kia Forum 8:00) | 9 | Lakers, USC, concerts (WS sold out) |
 | 2 | Sat 10/26/24 | WS G2 + Kings (Crypto.com 1pm) + Galaxy (Dignity Health) + ELO (Forum) + Imagine Dragons (Hollywood Bowl) | 7 | Galaxy, concerts |
 | 3 | Mon 4/28/25 | Beyoncé (SoFi) + Dodgers vs. Marlins + Rauw Alejandro (Intuit Dome) | 6 | Rauw, Dodgers |
 | 4 | Tue 4/1/25 | Dodgers vs. Braves + Kings vs. Jets + We ❤️ LA (Hollywood Bowl), all within ~5 miles | 4 | Kings |
-| 5 | Sat 11/19/22 | UCLA vs. USC (Rose Bowl, USC won 48-45) + BLACKPINK (BMO Stadium) + Elton John (Dodger Stadium) | 4 (probably higher now: three big events, not two) | Barely (different crowds) |
-| 6 | Mon 10/27/25 | WS G3 vs. Blue Jays, 18 innings, 6.5+ hours, alone | 2 | No one (brutal to get home) |
+| 5 | Sat 11/19/22 | UCLA vs. USC (Rose Bowl 5:00, 70,865) + BLACKPINK (Banc of California Stadium, renamed BMO in 2023) + Elton John (Dodger Stadium) + Clippers vs. Spurs (Crypto.com 7:30, 18,581) | 5 (was 4; held at 5 until there is an explicit audience-overlap rule, then revisit 6) | Barely (different crowds) |
+| 6 | Mon 10/27/25 | WS G3 vs. Blue Jays (5:00, 52,654, 18 innings, 6h39m) + Lakers vs. Blazers (Crypto.com 7:30, 18,512) | 4 (was 2; the doc had missed the Lakers) | Lakers |
 | 7 | Mon 7/22/24 | Dodgers vs. Giants (49,576), nothing else big; backup night Tue 6/13/23 (45,561) | 1 | Baseline |
 | 8 | Fri 9/1/23 | Dodgers vs. Braves (52,436) + Beyoncé (SoFi). Also Thu 8/31: 47,623 alone; Sat 9/2: 51,470 with Beyoncé | 4 | Dodgers on paper (still drew 52k) |
 | 9 | Fri 8/4/23 | Angels (34,479) + Taylor Swift (SoFi). Comparison Fridays: 8/18 38,297, 7/21 40,309. Anaheim is ~30 mi from SoFi; giveaways differed | 5 | Angels (maybe) |
-| 10 | Sun 9/10/17, 96F | Rams vs. Colts (Coliseum 1:05, 60,128 announced, ~48,000 actual) + Dodgers vs. Rockies (1:11, 50,161) | 8 | Rams, plus heat |
+| 10 | Sun 9/10/17, 90F at kickoff | Rams vs. Colts (Coliseum 1:05, 60,128 announced, ~48,000 actual) + Dodgers vs. Rockies (1:11, 50,161) | 8 | Rams, plus heat |
 | 11 | Sun 9/17/17 | Chargers (StubHub Center, 25,381 of ~27k) + Rams (Coliseum, 56,612) + Angels (36,709), all starting within ~45 min | 7 | Both NFL teams |
 | 12 | Sat 9/3/22, 100F+ | UCLA at Rose Bowl 11:30am (27,143, record low) + USC vs. Rice at Coliseum 3pm (60,113, 17k+ empty) + Dodgers at night (46,144) + The Weeknd at SoFi | 7 | UCLA, USC (mostly heat) |
 | 13 | Sat 4/13/24, rain | Dodgers vs. Padres after a 2h15 rain delay, 44,582 | 3 | Dodgers, lightly |
@@ -57,7 +57,9 @@ Difficulty is per event and per night. A night score says how hard the night was
 - Announced attendance is not who showed up. Always label the kind of number (announced / reported / estimated).
 - Teams that always sell out (Dodgers) are poor tests of the effect.
 - Factors often land on the same night. The rating has to separate them.
-- Not yet checked: Lakers/Clippers/Kings home games on night 5; non-concert events at Crypto.com or Honda Center on night 7; the Eras Tour dates for night 9.
+- Checked Oct 1, 2026: night 5 had a Clippers home game (Kings and Ducks were away); night 6 had a Lakers home game; no Lakers, Clippers or Angels home game on night 7; Eras Tour played SoFi Aug 3, 4, 5, 7, 8, 9, 2023. Still unchecked: concerts and other events at Crypto.com and Honda Center on night 7.
+- The 2017 Coliseum held 93,607 (77,500 after the 2018–19 renovation). Store venue capacity by year.
+- Night 9's comparison Friday 7/21/23 was an Ohtani start, which inflates it. Pick another comparison Friday.
 
 ## What to record per night (columns for the data)
 Events (who, venue, capacity, reported attendance); timing (start, rough end, TV-driven?); calendar (day of week, time of year, holidays); stakes and context (playoffs, rivalry, opener, farewell, contention, opponent draw); conditions (weather); competition (distances, big TV events); getting there (transit); pull factors (giveaways, momentum, star availability); venue (novelty, too big for the act); mood (protests, scandals); watching at home (local TV, blackouts). Later: ticket price, resale, tickets sold vs. through the gates, stage-blocked seats, short-notice scheduling.

@@ -23,3 +23,6 @@ export const FRICTION_LEVELS = ['Low', 'Moderate', 'Heavy', 'Extreme'] as const;
 export type Friction = (typeof FRICTION_LEVELS)[number];
 
 export const frictionLabel = (level: Friction) => `${level} friction`;
+
+// Low friction is kept in the data but never shown: only Moderate and up get a chip.
+export const showFriction = (level: Friction) => level !== 'Low';
