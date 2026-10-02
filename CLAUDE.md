@@ -28,7 +28,7 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 - Data comes through a plug-in layer so live sources (MLB first) can be added without reshaping the app. Start with the hand-seeded nights.
 - Label every attendance number by kind: announced, reported, or estimated. Never show a bare score; always a label.
 - Traffic is an estimate only. No live traffic data and no red "jam" color.
-- Only facts known before an event can affect its rating. Results and what happened never do.
+- Only facts known before an event can affect its rating. Results and what happened at that event never do. Earlier results are fair game (for example, standings going into the game).
 - One gold primary button per screen, with a plain verb. Light theme. No orange.
 - Verify facts (attendance, dates, who played) against current sources before seeding them; earlier research had at least one wrong claim. If a web page can't be fetched normally, don't work around it. Ask Kylie to paste it.
 - Keep M2/M3 topics (public launch, licensing, revenue) out of the conversation unless Kylie raises them.

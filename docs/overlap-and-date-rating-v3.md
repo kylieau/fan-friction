@@ -26,7 +26,7 @@ Source: a second-opinion report Kylie got on Oct 2 ("Audience Overlap & Date Rat
 - **v1 uses publicly available data only.** See "Not in v1" below.
 - **Each city picks one of three starting types** (drive-centric sprawl like LA; transit-dominant like New York or London; destination hub like Las Vegas), plus a few venue exceptions.
 
-## Crowd fight scoring: proposed (second report, Oct 2; awaiting Kylie's picks)
+## Crowd fight scoring: proposed (second report, Oct 2; Kylie agreed to everything below except where noted)
 Claude re-ran the report's arithmetic and it checks out. Every number is a placeholder.
 1. **Pair volume:** `V = overlap × t × (A × B) / (A + B)`, where A and B are the two venues' capacities and t is a time factor.
 2. **Share for one event:** `d = overlap × t × cap(c) / (cap(E) + cap(c))`. It can never exceed the overlap weight, so a small venue next to a huge one isn't pinned at the maximum. This replaces dividing by the event's own capacity.
@@ -37,6 +37,12 @@ Claude re-ran the report's arithmetic and it checks out. Every number is a place
 7. **Absolute displaced fans** (for example "about 10,500 fans in play") show as labeled context and feed Gridlock, not Crowd fight.
 8. **Weights suggested:** High about 0.7 (was 1.0), Medium 0.3–0.4 (was 0.5), Low 0.15. **Marquee lift limited to the same sport or an adjacent genre**, so Elton John's farewell no longer lifts BLACKPINK vs. Elton from Low to Medium (that one lift alone moves 11/19/22 from 5.0 to 7.6).
 
+**Kylie's picks (Oct 2):**
+- Agreed: adopt the share-of-seats formula and date rule; High about 0.7; Marquee lift limited to the same sport or an adjacent genre (a small hand-written genre list for LA); fixed 15,000-seat floor for now; defer the weekday adjustment, the members-only flag and the Las Vegas visitor lift.
+- **Pre-game standings are in.** Clarified rule: results of that event never count, but earlier results do. Standings going into the game are fair game. How they enter (stakes, and how hard a clash hits a struggling team) is still to be designed.
+- **Tuning is allowed:** past attendance may tune the placeholder numbers across many dates, never feeding a single date's score, and with some dates held back as a test.
+- **Medium weight (0.3–0.4 vs. 0.5): held until Gridlock is designed.** Claude's lean is 0.35.
+
 **Test nights (Crowd fight only; Gridlock isn't designed yet):**
 | Night | Result |
 |---|---|
@@ -45,10 +51,10 @@ Claude re-ran the report's arithmetic and it checks out. Every number is a place
 
 **Caveats (Claude):** (a) The Medium weight decides night 11, and nothing in hand can fix it, because the only fitting data is Kylie's ratings, one of which may have been shaped by results. (b) A date's rating is the louder of Crowd fight and Gridlock plus a bump, so with the placeholder bump, night 5 at Crowd fight 5.0 would be 5.5 / 6.0 / 7.0 at Gridlock 4 / 5 / 6. Both nights now wait on the Gridlock design. (c) The report's 9/17/17 case counts the Emmys in Gridlock; under Kylie's theater rule they probably stay out. (d) The research table comes from abstracts, not full papers, and the report itself marks the "Humphreys 15–30%" figure unverified.
 
-**Other open items from the report:** a small map of which genres are "adjacent"; fixed vs. relative 15,000-seat floor; whether pre-game standings may be used (they are pre-event but come from earlier results); a weekday vs. weekend adjustment; a members-only/ballot flag for UK-style football; a Las Vegas concert-side visitor lift (sports keep a local core); College programs as Broad in one-team markets; a Gridlock scale based on road and rail capacity plus a transit modifier; whether historical attendance may tune placeholders across many dates without ever feeding one date's score.
+**Other open items from the report:** a small map of which genres are "adjacent"; fixed vs. relative 15,000-seat floor; how standings enter (decided: they count); a weekday vs. weekend adjustment (deferred); a members-only/ballot flag for UK-style football; a Las Vegas concert-side visitor lift (sports keep a local core); College programs as Broad in one-team markets; a Gridlock scale based on road and rail capacity plus a transit modifier; (tuning on historical attendance: decided, allowed with held-out dates).
 
 ## Not decided yet
-1. **Which Medium weight (0.3–0.4 vs. 0.5)** and whether to adopt the proposed Crowd fight scoring above. Second-opinion prompt that produced it: `docs/pressure-mapping-prompt.md`.
+1. **Which Medium weight (0.3–0.4 vs. 0.5)**, held until Gridlock is designed. Second-opinion prompt that produced it: `docs/pressure-mapping-prompt.md`.
 2. **Nights 5 and 11 ratings.** Both wait on item 1 and on the Gridlock design. Night 11's 7 may have been shaped by reports of empty stadiums (results), which can't be a target; whether it holds from pre-event facts is what item 1 will show. Night 5 leans 6 now that getting around counts.
 3. Every placeholder number: tier weights, 20% threshold, bump and its trigger, saturation factors, regional/national multipliers (1.15 / 1.3), the "stressed bottleneck" cutoff.
 4. Marquee rules per league and the definition of a "legacy act" (an artist who has headlined 40k+ stadiums, or a billed farewell).
