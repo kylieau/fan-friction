@@ -26,9 +26,30 @@ Source: a second-opinion report Kylie got on Oct 2 ("Audience Overlap & Date Rat
 - **v1 uses publicly available data only.** See "Not in v1" below.
 - **Each city picks one of three starting types** (drive-centric sprawl like LA; transit-dominant like New York or London; destination hub like Las Vegas), plus a few venue exceptions.
 
+## Crowd fight scoring: proposed (second report, Oct 2; awaiting Kylie's picks)
+Claude re-ran the report's arithmetic and it checks out. Every number is a placeholder.
+1. **Pair volume:** `V = overlap × t × (A × B) / (A + B)`, where A and B are the two venues' capacities and t is a time factor.
+2. **Share for one event:** `d = overlap × t × cap(c) / (cap(E) + cap(c))`. It can never exceed the overlap weight, so a small venue next to a huge one isn't pinned at the maximum. This replaces dividing by the event's own capacity.
+3. **Several competitors:** `D = 1 − Π(1 − d)`. Each extra competitor adds less, and the total stays under 1.
+4. **Score:** `Crowd fight = min(10, 1 + 14 × D)`. The 14 is anchored so two equal-size events with fully overlapping buyers read about 8, not fitted to the test nights.
+5. **Time factor t:** 1 if the two attendance windows overlap once a 1-hour travel buffer is added; 0.5 if same day and the gap beyond the buffer is under about 3 hours; else 0. Default lengths (placeholders): NFL 3h15, college football 3h30, MLB 2h45, NBA/NHL 2h30, soccer 2h, concert 3h.
+6. **Date Crowd fight:** the highest event score among events of about 15,000+ seats (smaller events still show their own verdict), plus an optional 0.5 if a second, different event also scores 6 or more. This replaces "worst pair + 0.5 per pair at 5+."
+7. **Absolute displaced fans** (for example "about 10,500 fans in play") show as labeled context and feed Gridlock, not Crowd fight.
+8. **Weights suggested:** High about 0.7 (was 1.0), Medium 0.3–0.4 (was 0.5), Low 0.15. **Marquee lift limited to the same sport or an adjacent genre**, so Elton John's farewell no longer lifts BLACKPINK vs. Elton from Low to Medium (that one lift alone moves 11/19/22 from 5.0 to 7.6).
+
+**Test nights (Crowd fight only; Gridlock isn't designed yet):**
+| Night | Result |
+|---|---|
+| 9/17/17 | Chargers 7.2 at Medium 0.5, 6.3 at 0.4, 5.8 at 0.35, 5.3 at 0.3. The Rams score about 3 and the Angels about 3. The Chargers set the date. |
+| 11/19/22 | 5.0 with the Marquee lift limited (the Clippers set the date), 7.6 as written |
+
+**Caveats (Claude):** (a) The Medium weight decides night 11, and nothing in hand can fix it, because the only fitting data is Kylie's ratings, one of which may have been shaped by results. (b) A date's rating is the louder of Crowd fight and Gridlock plus a bump, so with the placeholder bump, night 5 at Crowd fight 5.0 would be 5.5 / 6.0 / 7.0 at Gridlock 4 / 5 / 6. Both nights now wait on the Gridlock design. (c) The report's 9/17/17 case counts the Emmys in Gridlock; under Kylie's theater rule they probably stay out. (d) The research table comes from abstracts, not full papers, and the report itself marks the "Humphreys 15–30%" figure unverified.
+
+**Other open items from the report:** a small map of which genres are "adjacent"; fixed vs. relative 15,000-seat floor; whether pre-game standings may be used (they are pre-event but come from earlier results); a weekday vs. weekend adjustment; a members-only/ballot flag for UK-style football; a Las Vegas concert-side visitor lift (sports keep a local core); College programs as Broad in one-team markets; a Gridlock scale based on road and rail capacity plus a transit modifier; whether historical attendance may tune placeholders across many dates without ever feeding one date's score.
+
 ## Not decided yet
-1. **How pressure maps to a 1–10 score** and whether "relative to the event's own capacity" is the right denominator. Claude's concern: it makes a small venue next to a big one look crushed (the Chargers at about 27,000 seats vs. the Rams at about 93,600 gives pressure about twice their own size). That could argue for a high Crowd fight on 9/17/17, not the report's "about 5." Second-opinion prompt: `docs/pressure-mapping-prompt.md`.
-2. **Nights 5 and 11 ratings.** Both wait on item 1. Night 11's 7 may have been shaped by reports of empty stadiums (results), which can't be a target; whether it holds from pre-event facts is what item 1 will show. Night 5 leans 6 now that getting around counts.
+1. **Which Medium weight (0.3–0.4 vs. 0.5)** and whether to adopt the proposed Crowd fight scoring above. Second-opinion prompt that produced it: `docs/pressure-mapping-prompt.md`.
+2. **Nights 5 and 11 ratings.** Both wait on item 1 and on the Gridlock design. Night 11's 7 may have been shaped by reports of empty stadiums (results), which can't be a target; whether it holds from pre-event facts is what item 1 will show. Night 5 leans 6 now that getting around counts.
 3. Every placeholder number: tier weights, 20% threshold, bump and its trigger, saturation factors, regional/national multipliers (1.15 / 1.3), the "stressed bottleneck" cutoff.
 4. Marquee rules per league and the definition of a "legacy act" (an artist who has headlined 40k+ stadiums, or a billed farewell).
 5. Case-by-case map exceptions (events with no venue in the app). Idea: a site admin who approves them, **parked for v2**. For now Kylie asks Claude and the event is added by hand in the seed data.
