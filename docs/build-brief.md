@@ -69,6 +69,8 @@ Kylie wants this free until paying is unavoidable. Each of these is a milestone 
 | Native iPhone app | Apple Developer Program | $99/year |
 | Native Android app | Google Play developer account | $25 once |
 | Public launch or any revenue (M2/M3) | Vercel's free plan is for personal, non-commercial use; commercial use means Vercel Pro. The MLB feed is non-commercial only too | $20/month+ (Vercel); MLB data licensing unknown |
+| Billed traffic history (Oct 2) | Google Maps historical traffic is billed per request; Waze goes through a partner program. Kylie said no. Gridlock uses free sources only (transit share from census data, parking counts, transit notices) | Per request (declined) |
+| Paid crowd-origin data (Oct 2) | Placer.ai, StreetLight, buyer ZIP codes. Later calibration only; paid or partnership-only | Paid / partnership |
 | If free data runs out | Paid sports or event data (e.g. PredictHQ, SportsDataIO) or higher Ticketmaster limits | Varies |
 
 ## Open questions (settle while building, ask Kylie when you reach them)
