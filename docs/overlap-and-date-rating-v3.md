@@ -53,6 +53,27 @@ Claude re-ran the report's arithmetic and it checks out. Every number is a place
 
 **Other open items from the report:** a small map of which genres are "adjacent"; fixed vs. relative 15,000-seat floor; how standings enter (decided: they count); a weekday vs. weekend adjustment (deferred); a members-only/ballot flag for UK-style football; a Las Vegas concert-side visitor lift (sports keep a local core); College programs as Broad in one-team markets; a Gridlock scale based on road and rail capacity plus a transit modifier; (tuning on historical attendance: decided, allowed with held-out dates).
 
+## Gridlock scoring: proposed (third report, Oct 2; Kylie reviewing)
+A merged second opinion on Gridlock. Claude re-checked the score formula arithmetic (it holds). All numbers are placeholders.
+- **Zones, not a road table.** Venues within about 5 minutes' free-flow drive form a zone (Exposition Park, L.A. Live, Pittsburgh's North Shore). Nearby zones share part of each other's load by drive time (5–12 min = 0.15 in sprawl cities, 0.10 in transit cities; 12–30 min = 0.05). Drive times come from free OpenStreetMap routing; fallback is 2 km straight-line. Rail is its own unit per zone. 0–3 named choke points per city, added only when history shows the model under-scoring.
+- **Score against a normal night, on a log scale:** `s = clamp(1, 10, 5 + 5 × log2(background × load / reference))`. The reference is 1.25 × the largest normal-night flow of any venue in the zone (a Dodger Stadium zone's reference is a Dodgers game). A normal night lands near 3.4 (hidden); 25% above normal = 6.6; double = 10. Never use a raw parking or lane count as the reference; use such counts only as cuts (a lot closed for construction).
+- **Load in vehicles:** `capacity × road share × peak share / people per car × timing factor`. Road share by city type: sprawl 0.90, hub 0.75, transit-dominant 0.35, minus 0.10 for a rail station within 800 m with 8+ departures an hour (a manual yes/no flag in v1). Arrival and exit peak shares by event type (football 0.40/0.75, baseball 0.50/0.55, NBA/NHL/soccer 0.55/0.80, concert 0.50/0.85, awards 0.35/0.60 with 1.5 per car). Exits count, not just arrivals. A time-of-day background factor (weekday 3–7 pm 1.2, Sunday before 2 pm 0.9, and so on).
+- **Out-of-town crowds:** no 1.15/1.3 multiplier (visitors are already in the seat count). National and regional draws get an airport and hotel unit instead.
+- **Strikes and closures:** cut the unit's reference by the capacity lost. If the main mode loses half or more, or an authority says it can't be licensed or policed, the unit is 10. Festival, election and protest calendars count as police-capacity flags.
+- **Date rule:** `G = min(10, worst zone + 0.25 × sum of (other zones' score − 5))`, only for zones with different events and only above 5. No cliff.
+- **Each event's getting-there score:** the highest score among its own units at its own arrival and exit hours.
+- **Test results (report):** 9/17/17 = 4.3 without the Emmys; 11/19/22 = 6.4; Coldplay's Tube-strike dates = 10; Kolkata Apr 6, 2025 = 10; a normal Wembley concert 2.4; a normal Eden Gardens night 2.6.
+
+**What this does to the two disputed nights (Claude's arithmetic, placeholder date bump of 0.5 above 3):**
+| Night | Crowd fight | Gridlock | Date rating |
+|---|---|---|---|
+| 11 (9/17/17), Medium 0.35 | 5.8 | 4.3 (no Emmys) / 5.5 (Emmys with a 20% closure guess) | 6.4 / 7.0 |
+| 11, Medium 0.5 | 7.2 | same | 7.9 / 8.5 |
+| 5 (11/19/22), lift limited | 5.0 | 6.4 | **7.4** |
+Night 5's 7.4 is well above Kylie's gut of 5, possibly 6. The report compared Gridlock alone to that gut and left out the bump. Kylie's own gut table puts a 6/6 date at 7–8, so 5/6.4 at about 7 is consistent with it. Either Gridlock is scored too high for that night, the bump is too strong, or the gut for night 5 is low. Open.
+
+**Flags (Claude):** (a) The report's 11/19/22 run assumes BLACKPINK starts 7:30 and Elton John 8:00; neither start time is confirmed. (b) The Emmys case uses a 20% street-closure default. That invents a fact; closures should count only when a real announcement is found. (c) The report widens our theater rule: "shares a campus or corridor" becomes the same zone or one 5–12 minutes away that has a headline event that night. Under that wording the Emmys would count through the Coliseum game. Kylie's rule as written is narrower. (d) The sensitivity table shows the 5–12 minute coupling weight moves 11/19/22 from 6.1 to 7.0; it is the main knob. (e) The report assumed a 1:05 pm start for all three 9/17/17 games; the real starts are 12:38, 1:05 and 1:25 pm, so exits stagger slightly more.
+
 ## Not decided yet
 1. **Which Medium weight (0.3–0.4 vs. 0.5)**, held until Gridlock is designed. Second-opinion prompt that produced it: `docs/pressure-mapping-prompt.md`.
 2. **Nights 5 and 11 ratings.** Both wait on item 1 and on the Gridlock design. Night 11's 7 may have been shaped by reports of empty stadiums (results), which can't be a target; whether it holds from pre-event facts is what item 1 will show. Night 5 leans 6 now that getting around counts.
@@ -76,7 +97,7 @@ Claude re-ran the report's arithmetic and it checks out. Every number is a place
 | Wallrafen et al. 2019: top-division games cut fourth-division attendance | **Direction confirmed** (Journal of Sports Economics). Exact size not checked. |
 | "Springer 2022": German handball, basketball, hockey crowds rise 0.3–0.5 points per extra day from the nearest soccer match | **Paper exists and finds significant substitution** (Wallrafen, Nalbantis, Pawlowski, Review of Industrial Organization 2022). **The 0.3–0.5 figure is unverified** (it came from the other model's research pack and was repeated without a check); the paper page blocked automated reading. Ask Kylie to paste it if it matters. |
 | Coldplay Wembley dates moved for a Tube strike, Sept 2025 | **True.** Sept 7 moved to Sept 6, Sept 8 moved to Sept 12; the band said no licence could be granted without Tube service. |
-| KKR home games in Kolkata moved for Ram Navami policing (2024, 2025) | **True** for 2025 (KKR vs. LSG moved Apr 6, Kolkata to Guwahati); 2024 reported as a similar case. |
+| KKR home games in Kolkata moved for Ram Navami policing (2024, 2025) | **True, with a correction (verified Oct 2).** Kolkata police said they couldn't cover the Apr 6, 2025 KKR vs. LSG match during Ram Navami. Early reports said Guwahati, but the BCCI announced on Mar 28 that it moved to Tue Apr 8, 3:30 pm at Eden Gardens, so it stayed in Kolkata. 2024 reported as a similar case. |
 | 69th Emmys, Sun 9/17/17, Microsoft Theater | **True** (CBS, hosted by Stephen Colbert). The theater seats about 7,100. Attendance and start time not confirmed; the red-carpet street closures around LA Live are **unverified**. It's an invited audience, so it counts in Gridlock only (Kylie, Oct 2). |
 | Vegas Super Bowl 2/11/24 (Adele, I-15 collapse) and Bay Area 10/8/23 | **Not checked.** The report itself marks them "verify." |
 | Spotify related-artists API cut for new apps, Nov 2024 | **True.** |

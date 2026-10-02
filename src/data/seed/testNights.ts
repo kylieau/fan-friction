@@ -88,17 +88,17 @@ export const SEED_EVENTS: CrowdEvent[] = [
   // 1 · Fri 10/25/24
   game(D1, {
     title: 'World Series Game 1', home: 'dodgers', away: 'yankees', sport: 'baseball',
-    venue: 'dodger-stadium', start: '17:08', crowd: [soldOut],
+    venue: 'dodger-stadium', start: '17:08', crowd: [soldOut, announced(52394)],
     a: ['Marquee', ['Game 1'], 'Low', 'Nothing bigger was on'],
   }),
   game(D1, {
     title: 'Lakers vs. Suns', home: 'lakers', away: 'suns', sport: 'basketball',
-    venue: 'crypto-com-arena', start: '19:00',
+    venue: 'crypto-com-arena', start: '19:00', crowd: [announced(18997)],
     a: ['Routine', ['2nd home game'], 'Heavy', 'World Series 1.5 mi away, same hours'],
   }),
   game(D1, {
     title: 'USC vs. Rutgers', home: 'usc-football', away: 'rutgers', sport: 'football',
-    venue: 'coliseum', start: '20:00',
+    venue: 'coliseum', start: '20:00', crowd: [announced(63404)],
     a: ['Routine', ['ordinary opponent'], 'Extreme', 'World Series + Lakers, same hours'],
   }),
   {
@@ -125,7 +125,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
 
   // 2 · Sat 10/26/24
   game(D2, {
-    title: 'World Series Game 2', home: 'dodgers', away: 'yankees', sport: 'baseball', venue: 'dodger-stadium',
+    title: 'World Series Game 2', home: 'dodgers', away: 'yankees', sport: 'baseball', venue: 'dodger-stadium', start: '17:08',
     a: ['Marquee', ['Game 2'], 'Low', 'Nothing bigger was on'],
   }),
   game(D2, {
@@ -133,7 +133,8 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Routine', [], 'Moderate', 'Done before first pitch, but in World Series traffic'],
   }),
   game(D2, {
-    title: 'Galaxy vs. Rapids', home: 'galaxy', away: 'rapids', sport: 'soccer', venue: 'dignity-health-sports-park',
+    title: 'Galaxy vs. Rapids', home: 'galaxy', away: 'rapids', sport: 'soccer', venue: 'dignity-health-sports-park', start: '20:00',
+    crowd: [announced(24537, "Per the club's match report")],
     a: ['Notable', ['playoff opener'], 'Heavy', 'Same hours as the World Series, same sports crowd'],
   }),
   show(D2, {
@@ -152,24 +153,25 @@ export const SEED_EVENTS: CrowdEvent[] = [
   }),
   game(D3, {
     title: 'Dodgers vs. Marlins', home: 'dodgers', away: 'marlins', sport: 'baseball', venue: 'dodger-stadium',
+    start: '19:10', crowd: [announced(48232)],
     a: ['Routine', ['Monday'], 'Moderate', 'Beyoncé 13 mi away, mostly different crowd'],
   }),
   show(D3, {
-    performer: 'Rauw Alejandro', genre: 'latin', venue: 'intuit-dome',
+    performer: 'Rauw Alejandro', genre: 'latin', venue: 'intuit-dome', start: '20:00',
     a: ['Major', ['moved on short notice'], 'Heavy', 'Next door to Beyoncé, same hours'],
   }),
 
   // 4 · Tue 4/1/25
   game(D4, {
-    title: 'Dodgers vs. Braves', home: 'dodgers', away: 'braves', sport: 'baseball', venue: 'dodger-stadium',
+    title: 'Dodgers vs. Braves', home: 'dodgers', away: 'braves', sport: 'baseball', venue: 'dodger-stadium', start: '19:10',
     a: ['Notable', ['early season', 'champs'], 'Low', 'Biggest event of the night'],
   }),
   game(D4, {
-    title: 'Kings vs. Jets', home: 'kings', away: 'jets', sport: 'hockey', venue: 'crypto-com-arena',
+    title: 'Kings vs. Jets', home: 'kings', away: 'jets', sport: 'hockey', venue: 'crypto-com-arena', start: '19:30',
     a: ['Routine', [], 'Moderate', 'Dodgers 1.5 mi away, same hours'],
   }),
   show(D4, {
-    performer: 'We ❤️ LA', genre: 'various', venue: 'hollywood-bowl',
+    performer: 'We ❤️ LA', genre: 'various', venue: 'hollywood-bowl', start: '20:00',
     a: ['Notable', ['free fire-relief benefit'], 'Low', 'Tickets all claimed in advance'],
   }),
 
@@ -250,17 +252,17 @@ export const SEED_EVENTS: CrowdEvent[] = [
   // 11 · Sun 9/17/17 (all three started within about 45 minutes)
   game(D11, {
     title: 'Chargers vs. Dolphins', home: 'chargers', away: 'dolphins', sport: 'football',
-    venue: 'dignity-health-sports-park', crowd: [announced(25381)],
+    venue: 'dignity-health-sports-park', start: '13:05', crowd: [announced(25381)],
     a: ['Notable', ['first LA home game'], 'Extreme', 'Rams and Angels within 47 minutes'],
   }),
   game(D11, {
     title: 'Rams vs. Washington', home: 'rams', away: 'washington', sport: 'football',
-    venue: 'coliseum', crowd: [announced(56612)],
+    venue: 'coliseum', start: '13:25', crowd: [announced(56612)],
     a: ['Routine', [], 'Heavy', 'Chargers and Angels same hours'],
   }),
   game(D11, {
     title: 'Angels vs. Rangers', home: 'angels', away: 'rangers', sport: 'baseball',
-    venue: 'angel-stadium', crowd: [announced(36709)],
+    venue: 'angel-stadium', start: '12:38', crowd: [announced(36709)],
     a: ['Routine', [], 'Moderate', 'Anaheim, farther away'],
   }),
 
