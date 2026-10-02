@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { SearchIcon } from '../components/Icons';
 import { DEFAULT_METRO } from '../config/metros';
 import { scoreLabel } from '../config/scoreLabels';
@@ -49,7 +50,8 @@ export function NightsScreen() {
           <h2 className="section-title">Famous nights</h2>
           <ul className="famous-list">
             {famous.map((r) => (
-              <li key={r.date} className="famous-row">
+              <li key={r.date}>
+               <Link to={`/?date=${r.date}`} className="famous-row">
                 <span className={`rating-badge ${badgeClass(r.rating)}`} aria-hidden>
                   {r.rating}
                 </span>
@@ -59,6 +61,7 @@ export function NightsScreen() {
                     {scoreLabel(r.rating)} · {r.rating}/10 · {longDate(r.date)}
                   </span>
                 </span>
+               </Link>
               </li>
             ))}
           </ul>

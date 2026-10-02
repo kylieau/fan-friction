@@ -1,25 +1,53 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useMemo, useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
+import { frictionLabel, showFriction } from '../config/scoreLabels';
+import { getCityDate, todayIn, type CityDate } from '../data';
 import { BaseMap } from '../map/BaseMap';
+import { CrowdLayer } from '../map/CrowdLayer';
+import { crowdKind, crowdPoints } from '../map/crowdPoints';
 import { NightScore } from '../components/NightScore';
 import { ArrowRight, ChevronDown, SearchIcon } from '../components/Icons';
-import { monthDay, shortDate } from '../lib/dates';
+import { clockTime, monthDay, shortDate, shortLocalDate } from '../lib/dates';
 
 type Mode = 'crowds' | 'traffic';
 
-// Opens on Today, even when it's quiet. Events, the heat map and the date's
-// score come from the data layer in steps 2 and 3.
+// Opens on Today, even when it's quiet. A famous night opens here too
+// ("/?date=2024-10-25"): its events glow on the map and its rating shows on top.
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const metro = DEFAULT_METRO;
+  const today = todayIn(metro);
+  const [params] = useSearchParams();
+  const date = params.get('date') ?? today;
+  const isToday = date === today;
+
+  const [day, setDay] = useState<CityDate | null>(null);
+  useEffect(() => {
+    let current = true;
+    getCityDate(metro.id, date).then((d) => current && setDay(d));
+    return () => {
+      current = false;
+    };
+  }, [metro.id, date]);
+
+  const shown = day && day.date === date ? day : null;
+  const points = useMemo(() => (shown && mode === 'crowds' ? crowdPoints(shown.events, date) : []), [shown, mode, date]);
+  const rating = shown?.rating ?? null;
+  const caption = !shown
+    ? ' '
+    : shown.events.length === 0
+      ? isToday
+        ? 'No big events found for today yet'
+        : 'No big events found for this date'
+      : `${shown.events.length} big events that day`;
 
   return (
     <div className="screen map-screen">
       <header className="map-header">
         <div className="map-header-top">
           <Link to="/nights" className="date-button">
-            Today · {shortDate(new Date(), metro)}
+            {isToday ? `Today · ${shortDate(new Date(), metro)}` : shortLocalDate(date)}
             <ChevronDown />
           </Link>
           <Link to="/nights" className="round-button" aria-label="Search nights">
@@ -27,7 +55,7 @@ export function MapScreen() {
           </Link>
         </div>
 
-        <NightScore rating={null} caption="No big events found for today yet" />
+        <NightScore rating={rating ? rating.rating : null} caption={caption} />
 
         <div className="segmented" role="tablist" aria-label="Map mode">
           <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
@@ -44,26 +72,61 @@ export function MapScreen() {
       </header>
 
       <div className="map-area">
-        <BaseMap metro={metro} />
+        <BaseMap metro={metro}>
+          <CrowdLayer points={points} />
+        </BaseMap>
       </div>
 
-      <section className="sheet" aria-label="Today">
+      <section className="sheet" aria-label={isToday ? 'Today' : shortLocalDate(date)}>
         <span className="sheet-handle" aria-hidden />
-        <div className="sheet-title">Quiet so far today.</div>
-        <ul className="quiet-list">
-          <li>
-            <span className="quiet-label">Next big night</span>
-            <span className="quiet-note">Coming with the event data (step 2)</span>
-          </li>
-          <li>
-            <span className="quiet-label">On this night</span>
-            <span className="quiet-note">A famous past night from {monthDay(new Date(), metro)}</span>
-          </li>
-          <li>
-            <span className="quiet-label">Your teams' next game</span>
-            <span className="quiet-note">Coming with live schedules (step 7)</span>
-          </li>
-        </ul>
+        {shown && shown.events.length > 0 ? (
+          <>
+            <div className="sheet-title">
+              {rating ? `Squeezed most: ${rating.squeezedMost}` : 'Big events that day'}
+            </div>
+            <ul className="event-list">
+              {shown.events.map((e) => {
+                const figure = e.crowd.find((c) => c.count !== undefined);
+                const friction = e.assessment?.friction;
+                return (
+                  <li key={e.id} className="event-row">
+                    <span className="event-time">{e.start ? clockTime(e.start) : 'Time n/a'}</span>
+                    <span className="event-main">
+                      <span className="event-title">{e.title}</span>
+                      <span className="event-meta">
+                        {figure?.count !== undefined
+                          ? `${figure.count.toLocaleString('en-US')} ${crowdKind(e)}`
+                          : e.crowd.some((c) => c.soldOut)
+                            ? 'Sold out'
+                            : 'No count yet'}
+                        {e.crowd.some((c) => c.soldOut) && figure?.count !== undefined ? ' · sold out' : ''}
+                      </span>
+                    </span>
+                    {friction && showFriction(friction) && <span className="chip chip-friction">{frictionLabel(friction)}</span>}
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        ) : (
+          <>
+            <div className="sheet-title">{isToday ? 'Quiet so far today.' : 'Quiet on this date.'}</div>
+            <ul className="quiet-list">
+              <li>
+                <span className="quiet-label">Next big night</span>
+                <span className="quiet-note">Coming with live schedules (step 7)</span>
+              </li>
+              <li>
+                <span className="quiet-label">On this night</span>
+                <span className="quiet-note">A famous past night from {monthDay(new Date(), metro)}</span>
+              </li>
+              <li>
+                <span className="quiet-label">Your teams' next game</span>
+                <span className="quiet-note">Coming with live schedules (step 7)</span>
+              </li>
+            </ul>
+          </>
+        )}
         <Link to="/nights" className="gold-button">
           Pick a night
           <ArrowRight />
