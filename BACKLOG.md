@@ -4,7 +4,7 @@ Deferred work and open questions that outlive one session. Remove an item only a
 
 ## First slice: remaining build steps
 - **Step 3:** Map in Crowds mode (gold heat map, friction tags, ★ biggest crowd, SOLD OUT tags, night score) plus the Event screen ("Here's what beat it," The game/show block, "I was there," share card at the end). Match `design/wireframes/Main` and `Event`. Put the brand wordmark (`design/brand/wordmark.html`) on the share card, and give World Series G1 a SOLD OUT tag (the mockup is missing it).
-- **Step 4:** Nights tab (search, calendar shaded by night rating with legend, Famous nights).
+- **Step 4:** Nights tab (search, calendar shaded by date rating with legend). Famous nights already lists the 13 seeded dates (step 2); rows don't open a date yet.
 - **Step 5:** You tab (Up next, Your nights from `docs/kylie-logs.md`, team + sport filters, rough dates, plain stats, order setting).
 - **Step 6:** Traffic mode (blue corridors, "Drag to your leave time," "Estimate · not live," no red).
 - **Step 7:** Live MLB schedules and results, so Today shows real October games marked "Unrated." Then other sports: NHL has a free public feed; NFL, NBA, college and others probably come through an unofficial scoreboard feed. Concerts come from Ticketmaster first; SeatGeek or others are added later.
@@ -12,8 +12,9 @@ Deferred work and open questions that outlive one session. Remove an item only a
 
 ## Waiting on Kylie
 - **First-run tips are on hold** (Kylie, Oct 1): rewrite all three once the bigger product questions settle, since the tips will explain them. Tip 2 still describes the rating model in draft form.
-- Her reactions to `docs/rating-model-draft.md`: the audience-overlap rule (and whether night 5 moves to 6), the friction weights by event type, and the occasion/friction table for all 13 nights.
-- The three empty states for a date: Quiet (no events), Unrated (events, no rating), rated. Proposed in the draft.
+- **Second opinion** on the audience-overlap rule, the friction weights and whether the Chargers (night 11) are Major or Notable. Prompt: `docs/second-opinion-prompt.md`. Fold the answer into `product-decisions.md` and `rating-model-draft.md`.
+- **Quiet vs. Unrated on the Map:** today's Map still says "Unrated · No big events found for today yet." The draft's three states say a date with no events is **Quiet**. The data layer already returns quiet/unrated/rated; asked Kylie (Oct 1) whether to switch the screen.
+- The occasion/friction table for all 13 nights is still a draft (stored as `status: 'draft'` in the seed).
 - Whether "Pick a night," "Next big night" and "On this night" keep the word "night" (she's fine for now but reserves judgment).
 - Her ongoing doubt about the word "friction" for the event verdict.
 - Whether to keep the 2013–2015 concerts in her log (rough dates, no rating). Ask at step 5.
