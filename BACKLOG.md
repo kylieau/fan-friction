@@ -12,7 +12,7 @@ Deferred work and open questions that outlive one session. Remove an item only a
 
 ## Waiting on Kylie
 - **First-run tips are on hold** (Kylie, Oct 1): rewrite all three once the bigger product questions settle, since the tips will explain them. Tip 2 still describes the rating model in draft form.
-- **Second opinion** on the audience-overlap rule, the friction weights and whether the Chargers (night 11) are Major or Notable. Prompt: `docs/second-opinion-prompt.md`. Fold the answer into `product-decisions.md` and `rating-model-draft.md`.
+- **Second opinion** on the audience-overlap rule, the friction weights and whether the Chargers (night 11) are Major or Notable. Prompt: `docs/second-opinion-prompt.md`. Fold the answer into `product-decisions.md` and `rating-model-draft.md`. A deeper research prompt on overlap, written to hold in any city, is in `docs/overlap-research-prompt.md`.
 - **Quiet vs. Unrated on the Map:** today's Map still says "Unrated · No big events found for today yet." The draft's three states say a date with no events is **Quiet**. The data layer already returns quiet/unrated/rated; asked Kylie (Oct 1) whether to switch the screen.
 - The occasion/friction table for all 13 nights is still a draft (stored as `status: 'draft'` in the seed).
 - Whether "Pick a night," "Next big night" and "On this night" keep the word "night" (she's fine for now but reserves judgment).

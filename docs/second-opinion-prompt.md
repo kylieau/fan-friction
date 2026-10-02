@@ -6,7 +6,7 @@ Reminder for Kylie: the prompt also asks whether the Chargers on night 11 are Ma
 
 ---
 
-I'm building a personal app called Fan/Friction. It shows how much competition shapes attendance at live events in Los Angeles (sports and concerts), to answer the claim that big-city fans are "fake." I'd like a critical second opinion on two parts of the rating model, plus one call. Push back where you disagree, and suggest something better if you have it.
+I'm building a personal app called Fan/Friction. It shows how much competition shapes attendance at live events in Los Angeles (sports and concerts), to answer the claim that big-city fans are "fake." I'd like a critical second opinion on two parts of the rating model, plus one call. Push back where you disagree, and suggest something better if you have it. The app starts in Los Angeles, but every rule must work for any city in the US or abroad, so say where a suggestion would only fit LA.
 
 **How the model works.** Each date gets one 1–10 rating (Chill, Light, Mid, Brutal, Cooked). Each event that date gets an occasion level (Routine, Notable, Major, Marquee) and a friction verdict (Low, Moderate, Heavy, Extreme) describing the pressure it faced from everything else going on. Rules: only facts known before the event can count (results and what happened on the day never do); the crowd size is shown as evidence, never used as an input; weather uses the venue's own temperature and rain and is only a small bump; rain counts, but only as light friction.
 
@@ -21,7 +21,7 @@ I'm building a personal app called Fan/Friction. It shows how much competition s
 
 Overlap acts only on each event's friction, never directly on the date's rating; the date's rating then summarizes the friction its events faced, so overlap counts once. Example: on Sat 11/19/22, UCLA–USC, BLACKPINK, Elton John and a Clippers game all ran the same evening. Because the crowds barely overlap, the date rates 5/10 (Mid) rather than higher.
 
-Questions: Are these tiers right? Is anything missing (for example college vs. pro fans, family events, or fans who travel in from out of town)? Is "overlap only touches event friction" the right place for it, or should crowded dates with different audiences still raise the date's rating through traffic and parking?
+Questions: Are these tiers right? Is anything missing (for example college vs. pro fans, family events, or fans who travel in from out of town, or cities where soccer or cricket dominates and fans arrive by transit)? Is "overlap only touches event friction" the right place for it, or should crowded dates with different audiences still raise the date's rating through traffic and parking?
 
 **2. Friction weights.** What pushes friction up (each column adds to 100%):
 
