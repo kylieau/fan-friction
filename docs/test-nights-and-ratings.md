@@ -1,6 +1,6 @@
 # Test nights and ratings (seed data for the first build)
 
-Real LA nights used to calibrate the difficulty rating. Kylie reviewed the ratings and called them "very accurate." Attendance numbers are announced figures unless stated; label them that way in the app. Seed these 13 nights first with these ratings hardcoded, then build the formula and check that it reproduces this table.
+Real LA nights used to calibrate the difficulty rating. Kylie reviewed the ratings and called them "fairly accurate." Attendance numbers are announced figures unless stated; label them that way in the app. Seed these 13 nights first with these ratings hardcoded, then build the formula and check that it reproduces this table.
 
 ## The recipe, v1 (weights not set yet)
 Describes the competition that night:
