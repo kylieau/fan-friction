@@ -102,18 +102,22 @@ export function MapScreen() {
   const caption = !shown
     ? ' '
     : dayEvents.length === 0
-      ? isToday
-        ? 'No big events today yet'
-        : 'No big events found for this date'
-      : `${dayEvents.length} big ${dayEvents.length === 1 ? 'event' : 'events'} that day`;
+      ? 'No events'
+      : dayEvents.length === 1
+        ? '1 event'
+        : `${dayEvents.length} events`;
 
   const nightLine = !shown
     ? ' '
-    : dayEvents.length === 0
-      ? `${isToday ? 'Quiet so far today.' : 'Quiet on this date.'}${events.length > 0 ? ` Showing ${span === 'week' ? 'the next 7 days' : 'what\'s coming up'}.` : ''}`
-      : rating
-        ? `Squeezed most: ${rating.squeezedMost}`
-        : 'Big events that day';
+    : span === 'day' && rating
+      ? `Squeezed most: ${rating.squeezedMost}`
+      : span === 'week'
+        ? 'Next 7 days'
+        : span === 'all'
+          ? 'All upcoming'
+          : isToday
+            ? 'Today'
+            : shortLocalDate(date);
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);

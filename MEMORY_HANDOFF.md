@@ -16,7 +16,7 @@ _Last synced: Oct 3, 2026._
 - **Event:** "I was there" and "Plan this night."
 - **Saving:** `src/data/storage/` with a phone implementation and an uncalled cloud stub. No Supabase project, no keys.
 - **Log:** `src/data/seed/kylieLog.ts` from her log doc, including rough concert dates.
-- **Map:** the header city control is a closed chip (Los Angeles, plus a chevron). The list floats under that chip, about five rows tall, and does not push the score down. It lists real metros only: Los Angeles first, then Boston, Chicago, Columbus, New York, Phoenix, Sacramento, San Diego, Seattle, and Tampa. Ventura is part of Los Angeles. Indio is one festival site, not a metro. New York is Citi Field only. The When control is the pill on the map and starts closed. Opening one menu closes the other. The header score still rates the base date.
+- **Map:** the header city control is a closed chip (Los Angeles, plus a chevron). The list floats under that chip, about five rows tall, and does not push the score down. It lists real metros only: Los Angeles first, then Boston, Chicago, Columbus, New York, Phoenix, Sacramento, San Diego, Seattle, and Tampa. Ventura is part of Los Angeles. Indio is one festival site, not a metro. New York is Citi Field only. The When control is the pill on the map and starts closed. Opening one menu closes the other. The header score still rates the base date. The line under it is a plain count ("2 events", "1 event", "No events"). The sheet title matches the When pill ("Today", "Next 7 days", "All upcoming"), or the date if one day was picked. "Squeezed most" stays only on a rated single night.
 - **Parked:** `docs/nyc-filler-collection-prompt.md` is research only. New York is not seeded.
 
 ## Key decisions still in force
