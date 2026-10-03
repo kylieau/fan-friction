@@ -100,8 +100,8 @@ export function MapScreen() {
     const idToPin = new Map(all.map((p) => [p.event.id, next.get(venueKey(p))!.event.id]));
     return { points: [...next.values()], pinFor: (id: string | null) => (id ? (idToPin.get(id) ?? id) : null) };
   }, [shown, mode, events, date]);
-  // The sheet has two heights: collapsed (grabber + the night line) and expanded (the list).
-  // It starts expanded on a quiet date, where the list is all there is to see.
+  // Collapsed, the sheet peeks the title. Open, it is as tall as the rows, and the
+  // list scrolls once that would pass the sheet's max height.
   const [open, setOpen] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   useEffect(() => {

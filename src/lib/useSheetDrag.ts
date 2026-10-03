@@ -3,10 +3,11 @@ import { useEffect, useRef, type RefObject } from 'react';
 const SNAP_MS = 260;
 
 /**
- * Makes the bottom sheet follow a finger. The sheet is always laid out at its full
- * height and slid up and down: closed shows only its top block (grabber, night line,
- * selected event); open shows everything. Dragging moves it live; letting go settles it
- * to whichever height is nearer, or in the direction of a quick flick.
+ * Makes the bottom sheet follow a finger. The sheet is as tall as its title and
+ * rows, up to a max, and slides up and down: closed shows only its top block
+ * (grabber, night line, selected event); open shows the list. Dragging moves it
+ * live; letting go settles it to whichever height is nearer, or in the direction
+ * of a quick flick.
  *
  * Returns `wasDragged()`, so a tap on the grabber can tell a drag from a click.
  */
@@ -29,6 +30,7 @@ export function useSheetDrag(
     if (!el) return;
     el.style.transition = animate ? `transform ${SNAP_MS}ms cubic-bezier(0.22, 1, 0.36, 1)` : 'none';
     el.style.transform = `translateY(${y}px)`;
+    el.parentElement?.style.setProperty('--sheet-h', `${el.offsetHeight}px`);
   };
 
   // Rest at the right height whenever it opens, closes, or its top block changes size.

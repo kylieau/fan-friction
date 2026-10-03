@@ -395,7 +395,7 @@ button {
 }
 
 .map-screen.sheet-open .maplibregl-ctrl-bottom-right {
-  bottom: calc(54% + 8px);
+  bottom: calc(var(--sheet-h, 190px) + 8px);
 }
 
 /* ---------- Night score ---------- */
@@ -503,7 +503,9 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  height: 54%;
+  height: auto;
+  max-height: 54%;
+  overflow: hidden;
   padding: 8px 20px 0;
   will-change: transform;
   background: var(--card);
@@ -530,7 +532,7 @@ button {
 }
 
 .sheet-body {
-  flex: 1;
+  flex: 0 1 auto;
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
