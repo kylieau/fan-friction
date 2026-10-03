@@ -524,6 +524,11 @@ button {
   gap: 16px;
 }
 
+/* The page scrolls. Don't let a tall calendar squash the search box. */
+.page > * {
+  flex-shrink: 0;
+}
+
 .page-title {
   margin: 0;
   font-size: 28px;
@@ -740,9 +745,13 @@ button {
 }
 
 .cal-day.chill .cal-score,
-.cal-day.light .cal-score,
-.cal-day.mid .cal-score {
+.cal-day.light .cal-score {
   color: var(--dodger);
+}
+
+/* Dodger blue on the pale Mid shade is hard to read, so the number stays ink. */
+.cal-day.mid .cal-score {
+  color: var(--ink);
 }
 
 .cal-day.cooked .cal-score {
