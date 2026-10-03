@@ -5,14 +5,23 @@ import { CalendarIcon } from './Icons';
 // whole date (day games count too), so it's never labeled "Night". Where the
 // date isn't already on screen (share cards), pass dateLabel to show
 // "FRI, OCT 25 · Cooked · 9/10". Never a bare number; a date with no big events says "Quiet", and one with events but no rating yet says "Unrated".
+// A span of days passes showScore false: the count stays, and no word (including Unrated) is shown.
 interface Props {
   dateLabel?: string;
   rating: number | null;
   quiet?: boolean;
   caption: string;
+  showScore?: boolean;
 }
 
-export function NightScore({ dateLabel, rating, quiet, caption }: Props) {
+export function NightScore({ dateLabel, rating, quiet, caption, showScore = true }: Props) {
+  if (!showScore) {
+    return (
+      <div className="nightscore nightscore-count">
+        <div className="nightscore-caption">{caption}</div>
+      </div>
+    );
+  }
   const rated = rating !== null;
   return (
     <div className="nightscore">

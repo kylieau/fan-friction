@@ -407,6 +407,11 @@ button {
   min-height: 56px;
 }
 
+.nightscore-count {
+  min-height: 0;
+  justify-content: flex-end;
+}
+
 .nightscore-main {
   display: flex;
   flex-wrap: wrap;

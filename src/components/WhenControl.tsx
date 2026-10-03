@@ -2,7 +2,7 @@ import { useId } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import type { Metro } from '../config/metros';
 import { ChevronDown } from './Icons';
-import { shortDate, shortLocalDate } from '../lib/dates';
+import { shortLocalDate } from '../lib/dates';
 import { mapPath, nightsPath, type WhenSpan } from '../lib/view';
 
 interface Props {
@@ -18,19 +18,14 @@ interface Props {
 
 /**
  * The one When control, drawn as the on-map pill: Today, Next 7 days,
- * or Pick a date. Next 7 days is just those words. A single day keeps
- * its own date on the pill.
+ * or Pick a date. Each label is only those words: "Today", "Next 7 days",
+ * or the picked date.
  */
 export function WhenControl({ metro, date, today, isToday, span, open, onOpenChange }: Props) {
   const navigate = useNavigate();
   const menuId = useId();
 
-  const label =
-    span === 'week'
-      ? 'Next 7 days'
-      : isToday
-        ? `Today · ${shortDate(new Date(), metro)}`
-        : shortLocalDate(date);
+  const label = span === 'week' ? 'Next 7 days' : isToday ? 'Today' : shortLocalDate(date);
 
   const go = (nextDate: string, when: WhenSpan) => {
     navigate(mapPath({ metroId: metro.id, date: nextDate, today, when }));
