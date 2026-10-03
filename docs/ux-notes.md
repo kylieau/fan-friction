@@ -19,7 +19,7 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 - "Where did the crowds go?" only shows when a glow is on the map.
 - Sheet swipes down, two heights: collapsed = grabber + the night line; expanded = event list.
 - "Pick a night" shouldn't be a second date control. The yellow button stays but doesn't duplicate the header.
-- A pin and its row are one selection; tapping either selects both. No event page until that screen exists.
+- A pin and its row are one selection; tapping either selects both.
 - The "i" on the map is the tip entry, or it's cut.
 - Mid theaters (Peacock etc.) only get a pin when they share a campus with a headline night.
 - Traffic, if kept: same map, different read. Three cues (Light / Heavy / Skip), always "Estimate · not live." "Should I brave the roads?" is the mode's title. No second map, no minute ETAs.
@@ -32,7 +32,6 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 - Nearby regions don't lower overlap by default (OC and LA are one pool); silos only if a metro declares them. Freeways hit Gridlock, not the overlap tier.
 
 **Nights, Compare, You**
-- Only Map loads, so Nights, Compare and You leave the bar until each does one job.
 - Nights is the log: a past night, its rating, "I was there."
 - You is attendance you've claimed, not a profile. No badges in v1.
 - Streaks, badges and compare-with-friends stay out until Kylie says otherwise.
@@ -48,7 +47,7 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 ## Sorted (Oct 3)
 **Structural, before Step 4** (the Nights calendar reuses the sheet, rows and tab bar):
 - Map fills the screen with header and sheet on top; two-height swipe sheet; mode switch beside the rating; question line only with a glow; yellow button no longer a second date picker; pin and row share one selection; "i" becomes the tip entry or goes.
-- Tab bar trimmed to tabs that work (keep the tab list in one config so it can change); Nights becomes the log ("I was there"); You = claimed attendance.
+- Keep the tab list in one config so tabs can move later. Nights becomes the log ("I was there"); You = claimed attendance.
 - Tips: add Back and spotlight, or hold the tip.
 
 **Later**
@@ -60,7 +59,6 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 **Already true, no change:** friction hidden at Low, word-first score, tiers internal, no badges/streaks/compare.
 
 **Conflicts to settle** (your words win; flagging so the sources can be fixed):
-1. The Event screen is already built (Step 3), so "no event page until that screen exists" can't hold as written. Do you want it kept, or hidden until the selection behavior is rebuilt?
+1. _(Withdrawn Oct 3: the "no event page" note and the "trim the tab bar" note were scratched by Kylie.)_
 2. The brief puts "Your nights" and the log in the You tab (Step 5), and Nights holds the calendar. Your note makes Nights the log and You only claimed attendance. Is that a swap, or is the log shown in both places?
 3. Step 6 planned blue corridors; your note has three cues (Light / Heavy / Skip) on the same map.
-4. Nights currently has a Famous nights list and a placeholder calendar, so Nights does load; Compare and You are the empty ones.
