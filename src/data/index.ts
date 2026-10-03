@@ -12,10 +12,19 @@ import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, NightSea
 const EVENT_SOURCES: EventSource[] = [seedEvents, mlbEvents, espnEvents];
 const RATING_SOURCES: RatingSource[] = [seedRatings];
 
+/**
+ * A hand-checked date is the whole list for that day. Live games are left out,
+ * so the night is not mixed with a second copy or a building that was checked empty.
+ */
+function preferSeed(events: CrowdEvent[]): CrowdEvent[] {
+  const seeded = events.filter((event) => event.sourceId === 'seed');
+  return seeded.length > 0 ? seeded : events;
+}
+
 /** Everything known about one date in one metro: its events, rating and status. */
 export async function getCityDate(metroId: string, date: LocalDate): Promise<CityDate> {
   const lists = await Promise.all(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date)));
-  const events = lists.flat().sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
+  const events = preferSeed(lists.flat()).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
 
   let rating: DateRating | null = null;
   for (const s of RATING_SOURCES) {
@@ -65,11 +74,13 @@ export function todayIn(metro: Metro): LocalDate {
 async function catalog(metroId: string): Promise<CrowdEvent[]> {
   const lists = await Promise.all(EVENT_SOURCES.map((s) => (s.catalog ? s.catalog(metroId) : Promise.resolve([]))));
   const seen = new Set<string>();
-  return lists.flat().filter((event) => {
+  const events = lists.flat().filter((event) => {
     if (event.metroId !== metroId || seen.has(event.id)) return false;
     seen.add(event.id);
     return true;
   });
+  const seededDates = new Set(events.filter((event) => event.sourceId === 'seed').map((event) => event.date));
+  return events.filter((event) => event.sourceId === 'seed' || !seededDates.has(event.date));
 }
 
 /**
@@ -132,4 +143,24 @@ export async function searchNights(metroId: string, query: string): Promise<Nigh
 export { VENUES, venueNameOn, capacityOn } from './venues';
 export { TEAMS } from './teams';
 export { audienceOverlap } from './audience';
+export {
+  eventFacts,
+  filterChoices,
+  getPersonalLog,
+  getSaveWarning,
+  isPlanned,
+  isWasThere,
+  logStats,
+  nightBackup,
+  nightFacts,
+  ratingForNight,
+  removePlan,
+  setYouOrder,
+  subscribePersonalLog,
+  togglePlan,
+  toggleWasThere,
+  upcomingPlans,
+  yourNights,
+} from './personalLog';
+export type { LabeledFact } from './personalLog';
 export type * from './types';

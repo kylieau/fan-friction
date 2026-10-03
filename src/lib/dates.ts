@@ -1,4 +1,5 @@
 import type { Metro } from '../config/metros';
+import type { LoggedWhen } from '../data/types';
 
 /** "Wed, Sep 30" in the metro's own time zone. */
 export function shortDate(date: Date, metro: Metro) {
@@ -31,6 +32,15 @@ export function clockTime(time: string) {
   const [h, m] = time.split(':').map(Number);
   const hour = h % 12 === 0 ? 12 : h % 12;
   return `${hour}:${String(m).padStart(2, '0')} ${h < 12 ? 'am' : 'pm'}`;
+}
+
+/**
+ * How a logged date should read. An exact day includes the weekday and year.
+ * A rough or missing date uses the label, never a made-up day like Jan 1.
+ */
+export function loggedDateLabel(when: LoggedWhen): string {
+  if (when.precision === 'day' && isValidDate(when.sort)) return longLocalDate(when.sort);
+  return when.label.trim() || 'Date not written down';
 }
 
 /** "Fri, Oct 25, 2024" from a local date, for share cards (always with the year). */

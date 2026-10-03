@@ -173,3 +173,81 @@ export interface NightSearchHit {
   /** The names that matched, such as "Dodgers · SoFi Stadium". */
   matched: string;
 }
+
+// ---------- Your nights (personal log) ----------
+
+/**
+ * How precise a logged date is. Rough dates are allowed.
+ * "unknown" means the log never wrote a date down.
+ */
+export type DatePrecision = 'day' | 'month' | 'year' | 'span' | 'unknown';
+
+export interface LoggedWhen {
+  /**
+   * Sort key, always YYYY-MM-DD. A month uses the 1st, a year uses Jan 1,
+   * and an unknown date uses 0000-01-01. Shown as a calendar day only when
+   * precision is "day".
+   */
+  sort: LocalDate;
+  /** What to show when the date is not an exact day ("January 2013", "2014"). */
+  label: string;
+  precision: DatePrecision;
+}
+
+/** One night she went to. Not a map dot, and not limited to events over 5k. */
+export interface LoggedNight {
+  id: string;
+  /** Catalog event this night is tied to, when one exists. */
+  eventId?: string;
+  when: LoggedWhen;
+  title: string;
+  /** Filter chips, such as "UCLA MBB" or "Dodgers". */
+  tags: string[];
+  sport: string;
+  /** Team or artist names. Opponents she didn't go "for" stay out. */
+  sides: string[];
+  venue?: string;
+  /** Final score, only when one is actually known. Shown as Outcome. */
+  result?: string;
+  /** Starting pitcher or other starter, when she wrote one down. */
+  starter?: string;
+  /** Bobblehead, giveaway, or similar, when known. */
+  promo?: string;
+  /** A moment worth naming, when known. Not a personal note. */
+  notable?: string;
+  /** Private. Kept off the night row, the share card, and the map. */
+  note?: string;
+  away?: boolean;
+  /** A neutral site, such as a Final Four. Not either team's home city. */
+  neutralSite?: boolean;
+  /** Under the 5k map floor: logged, never rated, never a dot. */
+  belowFloor?: boolean;
+  /** In this metro. Away nights do not borrow the home city's rating. */
+  inMetro?: boolean;
+  metroId?: string;
+  kind: EventKind;
+}
+
+/** An upcoming night she flagged. Separate from "I was there". */
+export interface NightPlan {
+  id: string;
+  date: LocalDate;
+  metroId: string;
+  eventId?: string;
+  title: string;
+  venue?: string;
+}
+
+export type YouOrder = 'plans-first' | 'nights-first';
+
+/**
+ * What the phone saves. The seeded log ships with the app and is not copied here.
+ * A browser clear drops marks, plans, and the order setting. Export is the backup.
+ */
+export interface PersonalLog {
+  version: 1;
+  hiddenSeedIds: string[];
+  added: LoggedNight[];
+  plans: NightPlan[];
+  order: YouOrder;
+}

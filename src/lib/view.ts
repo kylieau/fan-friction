@@ -1,16 +1,24 @@
 import { useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import { todayIn } from '../data';
-import { isValidDate } from './dates';
+import { isValidDate, shortLocalDate } from './dates';
 
-/** How wide the map looks around its base date. A range has no rating of its own. */
-export type WhenSpan = 'day' | 'week' | 'all';
+/** How wide the map looks around its base date. A rated week shows the average to one decimal. */
+export type WhenSpan = 'day' | 'week';
+
+/** The When pill's words: "Today", "Next 7 days", or "Fri, Oct 25". */
+export function whenLabel(span: WhenSpan, isToday: boolean, date: string): string {
+  if (span === 'week') return 'Next 7 days';
+  if (isToday) return 'Today';
+  return shortLocalDate(date);
+}
 
 /**
- * What the Map is looking at: one place and one date. The header owns both;
- * the sheet, the map and everything else just read them. `when` is null until
- * someone picks Today, a range, or a date. The place is LA until a second
- * metro exists; an area switcher only has to change it here.
+ * What the Map is looking at: one place and one date. The header owns the
+ * place (the area switcher). The on-map When pill owns the date and how wide
+ * to look. The sheet and the map just read them. `when` is null until
+ * someone picks Today, a range, or a date. Los Angeles is the default.
+ * Other places are real metros from her log, not a row per venue.
  */
 export interface View {
   metro: Metro;
@@ -28,7 +36,7 @@ export function useView(): View {
   const rawDate = params.get('date');
   const date = rawDate && isValidDate(rawDate) ? rawDate : today;
   const rawWhen = params.get('when');
-  const when: WhenSpan | null = rawWhen === 'day' || rawWhen === 'week' || rawWhen === 'all' ? rawWhen : null;
+  const when: WhenSpan | null = rawWhen === 'day' || rawWhen === 'week' ? rawWhen : null;
   return { metro, date, today, isToday: date === today, when };
 }
 
