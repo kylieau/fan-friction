@@ -44,6 +44,17 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 - A surprise guest or one-song set doesn't move the night unless billed.
 - One ping: the morning of a saved night, or when that night's estimate flips. No traffic stream; she still picks which.
 
+### Oct 3, 2026: additions from a product-engineer pass (Kylie pasted these; input, not decisions)
+- One date state: the header changes it, the sheet reads it, the button goes away or becomes "another night" inside the same control.
+- Selection is one: pin, callout and sheet row share one event id.
+- Don't draw tabs for unbuilt routes; ship Map only. **(Conflicts with Kylie's own Oct 3 call to keep all four tabs.)**
+- The sheet is a bottom sheet with three heights (peek, half, full); the event screen is a later route; a deep link opens the map with the sheet on that event. **(Conflicts with Kylie's two heights and with keeping the Event screen.)**
+- Crowds and Traffic are layers of one map, not modes; if Traffic isn't ready, hide the control.
+- Copy can't name a control that isn't mounted (tip 3; any "step N" empty-state line).
+- No "why this score" breakdown until Crowd fight and Gridlock exist as real fields.
+- One store for nights: Nights reads all, You reads only attended; browsing never writes.
+- No new chrome beyond the bigger map and the small toggle.
+
 ## Sorted (Oct 3)
 **Structural, before Step 4** (the Nights calendar reuses the sheet, rows and tab bar):
 - Map fills the screen with header and sheet on top; two-height swipe sheet; mode switch beside the rating; question line only with a glow; yellow button no longer a second date picker; pin and row share one selection; "i" becomes the tip entry or goes.
@@ -62,3 +73,9 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 1. _(Withdrawn Oct 3: the "no event page" note and the "trim the tab bar" note were scratched by Kylie.)_
 2. **Settled Oct 3 (Kylie):** Nights is every night you can open (Famous nights, the full calendar, search). You is only the nights you marked "I was there." "Your nights" is the voice of that You list, not a second copy of the log. Nothing is shown in both places.
 3. Step 6 planned blue corridors; your note has three cues (Light / Heavy / Skip) on the same map.
+
+### Sorted: Oct 3 additions
+**Structural, before Step 4:** one date state (the header owns it; the sheet and button read it); one selected event id shared by pin, callout and row; Crowds/Traffic as layers on one map (and hide Traffic until Step 6 if it does nothing, since today it only changes the heading); one store for nights (Nights = all, You = attended).
+**Same fix, small:** no screen copy names an unbuilt step. Two lines do today: the Nights calendar card ("arrives in step 4") and the You tab ("in step 5"). Both go away once those screens are built.
+**Later:** the "why this score" breakdown waits for Step 8, once its fields exist. (The Event screen's draft friction text and "what beat it" bars are the nearest thing today; flagging so we don't extend them.)
+**Not adopted, because Kylie said otherwise earlier:** "ship Map only" (she kept all four tabs), "event screen later" (she kept it), and three sheet heights (she asked for two). Say the word if the engineer's version should win on any of these.
