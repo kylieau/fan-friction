@@ -188,27 +188,34 @@ button {
   display: flex;
   align-items: center;
   gap: 6px;
-  min-height: 44px;
+  min-height: 36px;
   border: none;
-  background: none;
-  padding: 0;
-  font-size: 17px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.2);
+  padding: 6px 12px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--ink);
+  white-space: nowrap;
 }
 
 .date-button svg {
+  width: 16px;
+  height: 16px;
   color: var(--ink2);
 }
 
 .when {
   position: relative;
+  z-index: 2;
 }
 
 .when-menu {
   position: absolute;
-  top: calc(100% - 4px);
-  left: 0;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 6;
   min-width: 196px;
   padding: 6px;
@@ -306,13 +313,22 @@ button {
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.15);
 }
 
-/* A small pill under the header; only there when the map has something to answer it with. */
-.map-question {
+/* The When control hangs on the map, under the area header, as one pill.
+   The question line sits under it, and only when the map has something to answer. */
+.map-pills {
   position: absolute;
-  top: 154px;
+  top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100% - 24px);
+}
+
+.map-question {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1395,7 +1411,7 @@ button {
 
 .legend-button {
   position: absolute;
-  top: 152px;
+  top: 168px;
   right: 12px;
   z-index: 2;
   width: 36px;
@@ -1412,7 +1428,7 @@ button {
 
 .legend-card {
   position: absolute;
-  top: 198px;
+  top: 214px;
   right: 12px;
   left: 12px;
   z-index: 2;

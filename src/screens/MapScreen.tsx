@@ -17,10 +17,9 @@ type Mode = 'crowds' | 'traffic';
 
 const LOOKAHEAD_DAYS = 120;
 
-// Room the header and the collapsed sheet take on the full-screen map;
-// dots and labels are kept out of it.
-// The area name sits above When, so the header is a row taller than a When-only bar.
-const INSETS = { top: 236, bottom: 200 };
+// Room the header, the on-map When pill, and the collapsed sheet take on the
+// full-screen map. Dots and labels are kept out of it.
+const INSETS = { top: 228, bottom: 200 };
 
 // The map is the screen; the header and the sheet sit on it. Opens on Today, even
 // when it's quiet. A famous night opens here too ("/?date=2024-10-25").
@@ -140,7 +139,6 @@ export function MapScreen() {
             <SearchIcon />
           </Link>
         </div>
-        <WhenControl metro={metro} date={date} today={today} isToday={isToday} span={span} />
         <div className="map-header-score">
           <NightScore rating={rating ? rating.rating : null} quiet={shown?.status === 'quiet'} caption={caption} />
           <div className="segmented small" role="tablist" aria-label="Map mode">
@@ -152,14 +150,16 @@ export function MapScreen() {
             </button>
           </div>
         </div>
-      </header>
-
-      {(mode === 'traffic' || points.length > 0) && (
-        <div className="map-question">
-          {mode === 'crowds' ? 'Where did the crowds go?' : 'Should I brave the roads?'}
-          {mode === 'traffic' && <span className="estimate-chip">Estimate · not live</span>}
+        <div className="map-pills">
+          <WhenControl metro={metro} date={date} today={today} isToday={isToday} span={span} />
+          {(mode === 'traffic' || points.length > 0) && (
+            <div className="map-question">
+              {mode === 'crowds' ? 'Where did the crowds go?' : 'Should I brave the roads?'}
+              {mode === 'traffic' && <span className="estimate-chip">Estimate · not live</span>}
+            </div>
+          )}
         </div>
-      )}
+      </header>
 
       {points.length > 0 && (
         <>

@@ -15,8 +15,9 @@ interface Props {
 }
 
 /**
- * The one When control: Today, Next 7 days, All upcoming, or Pick a date.
- * A range keeps the base date, and the header rating describes that date.
+ * The one When control, drawn as the on-map pill: Today, Next 7 days,
+ * All upcoming, or Pick a date. A range keeps the base date, and the header
+ * rating still describes that date.
  */
 export function WhenControl({ metro, date, today, isToday, span }: Props) {
   const [open, setOpen] = useState(false);
@@ -40,11 +41,12 @@ export function WhenControl({ metro, date, today, isToday, span }: Props) {
     };
   }, [open]);
 
+  const dayLabel = isToday ? 'Today' : shortLocalDate(date);
   const label =
     span === 'week'
-      ? 'Next 7 days'
+      ? `${dayLabel} · Next 7 days`
       : span === 'all'
-        ? 'All upcoming'
+        ? `${dayLabel} · All upcoming`
         : isToday
           ? `Today · ${shortDate(new Date(), metro)}`
           : shortLocalDate(date);

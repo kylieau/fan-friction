@@ -7,10 +7,10 @@ import { isValidDate } from './dates';
 export type WhenSpan = 'day' | 'week' | 'all';
 
 /**
- * What the Map is looking at: one place and one date. The header owns both;
- * the sheet, the map and everything else just read them. `when` is null until
- * someone picks Today, a range, or a date. The area switcher changes the
- * place here. Los Angeles is the only metro for now.
+ * What the Map is looking at: one place and one date. The header owns the
+ * place (the area switcher). The on-map When pill owns the date and how wide
+ * to look. The sheet and the map just read them. `when` is null until
+ * someone picks Today, a range, or a date. Los Angeles is the only metro for now.
  */
 export interface View {
   metro: Metro;
