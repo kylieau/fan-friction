@@ -244,7 +244,7 @@ export function MapScreen() {
             <div className="legend-card" role="note">
               <b>Gold glow</b> marks where an event was. Wider means a bigger venue. Stronger means the known crowd filled more of it;
               faint means no count found yet. <b>★</b> is the biggest known crowd that day. A count reads in
-              thousands, like 40.0k. Sold out and no count yet stay in words.
+              thousands, like 40.0k. The list adds “est” when that number is an estimate. Sold out and no count yet stay in words.
             </div>
           )}
         </>
@@ -370,12 +370,12 @@ function AreaSwitcher({
   );
 }
 
-/** Same thousands shorthand as the map. Sold out and no count stay in words. */
+/** Same thousands shorthand as the map, plus "est" when the number is an estimate. Sold out and no count stay in words. */
 function crowdWords(event: CrowdEvent): string {
   const figure = event.crowd.find((c) => c.count !== undefined);
   const sold = event.crowd.some((c) => c.soldOut);
   if (figure?.count !== undefined) {
-    const words = crowdThousands(figure.count);
+    const words = `${crowdThousands(figure.count)}${figure.kind === 'estimated' ? ' est' : ''}`;
     return sold ? `${words} · sold out` : words;
   }
   return sold ? 'Sold out' : 'No count yet';
