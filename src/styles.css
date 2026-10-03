@@ -351,6 +351,33 @@ button {
 
 /* The When control hangs on the map, under the area header, as one pill.
    The question line sits under it, and only when the map has something to answer. */
+/* Feels-like for Today only: one line under the header, left side, not a control. */
+.map-feels {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 16px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  pointer-events: none;
+  font-size: 13px;
+  line-height: 1.2;
+  color: var(--ink2);
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff;
+}
+
+.map-feels svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
 .map-pills {
   position: absolute;
   top: calc(100% + 8px);
@@ -1051,32 +1078,43 @@ button {
 .crowd-label {
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  width: 150px;
-  padding: 4px 8px;
+  gap: 1px;
+  width: max-content;
+  max-width: 210px;
+  padding: 2px 6px;
   background: var(--card);
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 1px 4px rgba(15, 27, 45, 0.22);
   font-size: 12px;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .crowd-line {
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 4px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 2px 6px;
+  gap: 4px;
 }
 
 .crowd-name {
+  flex: 0 1 auto;
   min-width: 0;
   font-weight: 800;
   color: var(--ink);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.tag-count {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink2);
+  white-space: nowrap;
 }
 
 .tag-soldout {
