@@ -43,6 +43,7 @@ const LIST: Team[] = [
   team('dolphins', 'Miami Dolphins', 'Dolphins', 'NFL', 'football'),
   team('washington', 'Washington', 'Washington', 'NFL', 'football'),
   team('rutgers', 'Rutgers Scarlet Knights', 'Rutgers', 'College football', 'football'),
+  team('washington-huskies', 'Washington Huskies', 'Huskies', 'College football', 'football'),
   team('bowling-green', 'Bowling Green Falcons', 'Bowling Green', 'College football', 'football'),
   team('rice', 'Rice Owls', 'Rice', 'College football', 'football'),
 ];
