@@ -11,7 +11,7 @@ import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, SearchIcon, SunIcon } from '../components/Icons';
 import { eventChip } from '../lib/chips';
 import { listTitle } from '../lib/eventTitle';
-import { addDays, clockTime, shortLocalDate } from '../lib/dates';
+import { addDays, clockTime, headerDate, shortLocalDate } from '../lib/dates';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { nightsPath, useView, whenLabel, type WhenSpan } from '../lib/view';
 
@@ -194,7 +194,7 @@ export function MapScreen() {
           </Link>
         </div>
         <div className="map-header-score">
-          {span === 'day' && <div className="map-header-date">{shortLocalDate(date)}</div>}
+          {span === 'day' && <div className="map-header-date">{headerDate(date)}</div>}
           <NightScore
             rating={headerRating}
             quiet={showScore && shown?.status === 'quiet'}

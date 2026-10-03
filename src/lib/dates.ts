@@ -27,6 +27,16 @@ export function shortLocalDate(date: string) {
   });
 }
 
+/** "Sat · Oct 3" for the map header. Other screens keep the comma form. */
+export function headerDate(date: string) {
+  const [y, m, d] = date.split('-').map(Number);
+  const utc = new Date(Date.UTC(y, m - 1, d));
+  const weekday = utc.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' });
+  const month = utc.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+  const day = utc.toLocaleDateString('en-US', { day: 'numeric', timeZone: 'UTC' });
+  return `${weekday} · ${month} ${day}`;
+}
+
 /** "7:30 pm" from a local 24-hour time like "19:30". */
 export function clockTime(time: string) {
   const [h, m] = time.split(':').map(Number);
