@@ -279,8 +279,8 @@ export function MapScreen() {
 }
 
 /**
- * Closed chip for the current metro. The list opens under the chip, about
- * five rows tall, and stays above the score. Los Angeles is first.
+ * Closed chip for the current metro. The list floats under the chip, about
+ * five rows tall, and does not move the score. Los Angeles is first.
  */
 function AreaSwitcher({
   metro,
