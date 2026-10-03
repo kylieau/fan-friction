@@ -8,6 +8,7 @@ export const seedEvents: EventSource = {
   id: 'seed',
   name: 'Hand-seeded test nights',
   eventsOn: async (metroId, date) => SEED_EVENTS.filter((e) => e.metroId === metroId && e.date === date),
+  catalog: async (metroId) => SEED_EVENTS.filter((e) => e.metroId === metroId),
 };
 
 export const seedRatings: RatingSource = {

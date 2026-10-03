@@ -14,6 +14,17 @@ export function scoreLabel(score: number): string {
   return (SCORE_LABELS.find((band) => score <= band.max) ?? SCORE_LABELS[SCORE_LABELS.length - 1]).label;
 }
 
+/** The shade band for a date rating: Chill, Light, Mid, Brutal, Cooked. */
+export type ScoreBand = 'chill' | 'light' | 'mid' | 'brutal' | 'cooked';
+
+export function scoreBand(score: number): ScoreBand {
+  if (score <= 2) return 'chill';
+  if (score <= 4) return 'light';
+  if (score <= 6) return 'mid';
+  if (score <= 8) return 'brutal';
+  return 'cooked';
+}
+
 // Events get no number. They get an occasion chip and a friction verdict,
 // both set only from facts known before the event. Shown as "Extreme friction".
 export const OCCASIONS = ['Routine', 'Notable', 'Major', 'Marquee'] as const;

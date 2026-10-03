@@ -2,11 +2,12 @@
 // so adding a live feed means adding it to the lists below, nothing else.
 
 import type { Metro } from '../config/metros';
+import { matchingNames } from './matchNight';
 import { espnEvents } from './sources/espnSource';
 import { mlbEvents } from './sources/mlbSource';
 import { seedEvents, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
-import type { CityDate, CrowdEvent, DateRating, LocalDate } from './types';
+import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, NightSearchHit } from './types';
 
 const EVENT_SOURCES: EventSource[] = [seedEvents, mlbEvents, espnEvents];
 const RATING_SOURCES: RatingSource[] = [seedRatings];
@@ -58,6 +59,74 @@ export async function getRatedDates(metroId: string): Promise<DateRating[]> {
 /** Today's date in the metro's own time zone, "2026-10-01". */
 export function todayIn(metro: Metro): LocalDate {
   return new Date().toLocaleDateString('en-CA', { timeZone: metro.timeZone });
+}
+
+/** Every event the calendar and search can see: seeded nights plus today onward. */
+async function catalog(metroId: string): Promise<CrowdEvent[]> {
+  const lists = await Promise.all(EVENT_SOURCES.map((s) => (s.catalog ? s.catalog(metroId) : Promise.resolve([]))));
+  const seen = new Set<string>();
+  return lists.flat().filter((event) => {
+    if (event.metroId !== metroId || seen.has(event.id)) return false;
+    seen.add(event.id);
+    return true;
+  });
+}
+
+/**
+ * Every day in a month ("2024-10"). Rated days carry their number. Days with
+ * events but no rating are unrated. The rest are quiet: nothing big is on file,
+ * which is not a claim that the city was empty.
+ */
+export async function getCalendarMonth(metroId: string, month: string): Promise<CalendarDay[]> {
+  if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(month)) return [];
+  const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId)]);
+  const rated = new Map(ratings.filter((r) => r.date.startsWith(month)).map((r) => [r.date, r.rating]));
+  const busy = new Set(events.filter((e) => e.date.startsWith(`${month}-`)).map((e) => e.date));
+  const count = new Date(Date.UTC(Number(month.slice(0, 4)), Number(month.slice(5, 7)), 0)).getUTCDate();
+  const days: CalendarDay[] = [];
+  for (let day = 1; day <= count; day++) {
+    const date = `${month}-${String(day).padStart(2, '0')}`;
+    const rating = rated.get(date);
+    if (rating !== undefined) days.push({ date, status: 'rated', rating });
+    else if (busy.has(date)) days.push({ date, status: 'unrated', rating: null });
+    else days.push({ date, status: 'quiet', rating: null });
+  }
+  return days;
+}
+
+/**
+ * Nights whose team, artist, or venue matches the query, newest first.
+ * Fewer than two letters matches nothing, so an empty box can show Famous nights.
+ */
+export async function searchNights(metroId: string, query: string): Promise<NightSearchHit[]> {
+  const q = query.trim();
+  if (q.length < 2) return [];
+  const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId)]);
+  const ratingByDate = new Map(ratings.map((r) => [r.date, r]));
+  const hits = new Map<string, { titles: string[]; matched: string[] }>();
+
+  for (const event of events) {
+    const names = matchingNames(event, q);
+    if (!names) continue;
+    const row = hits.get(event.date) ?? { titles: [], matched: [] };
+    if (!row.titles.includes(event.title)) row.titles.push(event.title);
+    for (const name of names) {
+      if (!row.matched.some((m) => m.toLowerCase() === name.toLowerCase())) row.matched.push(name);
+    }
+    hits.set(event.date, row);
+  }
+
+  return [...hits.entries()]
+    .sort((a, b) => b[0].localeCompare(a[0]))
+    .map(([date, row]) => {
+      const rating = ratingByDate.get(date);
+      return {
+        date,
+        rating: rating?.rating ?? null,
+        headline: rating?.headline ?? row.titles.slice(0, 2).join(' · '),
+        matched: row.matched.slice(0, 3).join(' · '),
+      };
+    });
 }
 
 export { VENUES, venueNameOn, capacityOn } from './venues';

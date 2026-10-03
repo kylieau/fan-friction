@@ -128,4 +128,5 @@ export const espnEvents: EventSource = {
   name: 'ESPN schedules',
   eventsOn: async (metroId, date) => (await upcomingFor(metroId)).filter((e) => e.date === date),
   upcoming: async (metroId, fromDate) => (await upcomingFor(metroId)).filter((e) => e.date >= fromDate),
+  catalog: (metroId) => upcomingFor(metroId),
 };

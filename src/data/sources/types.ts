@@ -12,6 +12,11 @@ export interface EventSource {
   eventsOn(metroId: string, date: LocalDate): Promise<CrowdEvent[]>;
   /** Events on or after a date, soonest first. Only live feeds have this. */
   upcoming?(metroId: string, fromDate: LocalDate): Promise<CrowdEvent[]>;
+  /**
+   * Every event this source can put on the calendar or in search.
+   * The seed returns its nights; live feeds return today onward.
+   */
+  catalog?(metroId: string): Promise<CrowdEvent[]>;
 }
 
 export interface RatingSource {
