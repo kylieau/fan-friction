@@ -34,6 +34,7 @@ _Last synced: Oct 2, 2026._
 - **Screenshots:** `playwright-core` (installed in the scratchpad) with `executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome'` and `--use-angle=swiftshader --enable-unsafe-swiftshader`. Don't `pkill -f vite`; it kills the shell.
 
 ## Next steps
+0. **First, ask Kylie for her UX/UI notes** and whether she found any of the seed data gaps (see the top of `BACKLOG.md` and `docs/ux-notes.md`). Then sort her notes: structural before Step 4, polish after Step 5 or 6.
 1. **Step 3:** Map in Crowds mode for a chosen date (gold heat by crowd/capacity, friction chips Moderate+, ★ biggest crowd, SOLD OUT tags, the date's rating) plus the Event screen. Let Famous nights rows open their date on the map. Data comes from `getCityDate`.
 2. When Kylie answers Quiet vs. Unrated, update `MapScreen.tsx` to use `getCityDate(todayIn(metro))` status.
 3. When the second opinion comes back, fold it into `product-decisions.md` and trim `rating-model-draft.md`.

@@ -2,6 +2,9 @@
 
 Deferred work and open questions that outlive one session. Remove an item only after checking it against the code. The current snapshot is in `MEMORY_HANDOFF.md`.
 
+## Prompt Kylie first thing when a session resumes
+Ask whether she has UX/UI thoughts to share before starting Step 4. Her approach (agreed Oct 3): send notes whenever; Claude sorts them into structural (raise before the next step) and polish (batch after Step 5 or 6). The running list is `docs/ux-notes.md`. She is also hunting down the remaining seed data gaps (crowd counts for Gilmour, ELO, Imagine Dragons, Beyoncé, and the open items under Research leftovers); ask whether she has anything to paste.
+
 ## First slice: remaining build steps
 - **Step 3 done (Oct 3), with these left over:** the Event screen has no "I was there" button (it needs saving, so it waits for the You tab in step 5); the share card is shown on screen and sharing sends text plus the link (an image version is later); the gold "See what beat it" button from the mockup is replaced by tapping an event in the list; dot size and heat still use capacity and the known crowd (the predicted-attendance rule comes later). The Event screen does not show a result block yet ("The game" / "The show": score, setlist), because the seed has no results.
 - **Step 4:** Nights tab (search, calendar shaded by date rating with legend). Famous nights already lists the 13 seeded dates (step 2); rows don't open a date yet.
