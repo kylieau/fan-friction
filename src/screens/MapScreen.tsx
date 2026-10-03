@@ -194,21 +194,13 @@ export function MapScreen() {
           </Link>
         </div>
         <div className="map-header-score">
+          {span === 'day' && <div className="map-header-date">{shortLocalDate(date)}</div>}
           <NightScore
-            dateLine={span === 'day' ? shortLocalDate(date) : undefined}
             rating={headerRating}
             quiet={showScore && shown?.status === 'quiet'}
             showScore={showScore}
             caption={caption}
           />
-          <div className="segmented small" role="tablist" aria-label="Map mode">
-            <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
-              Crowds
-            </button>
-            <button type="button" role="tab" aria-selected={mode === 'traffic'} onClick={() => setMode('traffic')}>
-              Traffic
-            </button>
-          </div>
         </div>
         <div className="map-pills">
           <div ref={whenRef}>
@@ -221,6 +213,14 @@ export function MapScreen() {
               open={menu === 'when'}
               onOpenChange={(next) => setMenu(next ? 'when' : null)}
             />
+          </div>
+          <div className="segmented small" role="tablist" aria-label="Map mode">
+            <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
+              Crowds
+            </button>
+            <button type="button" role="tab" aria-selected={mode === 'traffic'} onClick={() => setMode('traffic')}>
+              Traffic
+            </button>
           </div>
         </div>
         {showFeels && (

@@ -8,15 +8,13 @@ import { CalendarIcon } from './Icons';
 // A span with no rated days passes showScore false: the count stays, and no word (including Unrated) is shown.
 interface Props {
   dateLabel?: string;
-  /** A small muted line above the rating, such as "Sat, Oct 3". Not a button. */
-  dateLine?: string;
   rating: number | null;
   quiet?: boolean;
   caption: string;
   showScore?: boolean;
 }
 
-export function NightScore({ dateLabel, dateLine, rating, quiet, caption, showScore = true }: Props) {
+export function NightScore({ dateLabel, rating, quiet, caption, showScore = true }: Props) {
   if (!showScore) {
     return (
       <div className="nightscore nightscore-count">
@@ -28,7 +26,6 @@ export function NightScore({ dateLabel, dateLine, rating, quiet, caption, showSc
   const shown = rated ? Number(formatScore(rating)) : null;
   return (
     <div className="nightscore">
-      {dateLine && <div className="nightscore-dateline">{dateLine}</div>}
       <div className="nightscore-main">
         {dateLabel && (
           <span className="nightscore-date">

@@ -180,8 +180,21 @@ button {
 .map-header-score {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   gap: 12px;
+}
+
+.map-header-date {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.map-header-score .nightscore {
+  align-items: flex-end;
+  margin-left: auto;
 }
 
 .date-button {
@@ -395,6 +408,10 @@ button {
   max-width: calc(100% - 24px);
 }
 
+.map-pills .segmented {
+  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.2);
+}
+
 /* The map credit (the little "i"): required by the map's license, so it stays,
    kept just above the sheet. */
 .maplibregl-ctrl-bottom-right {
@@ -412,14 +429,6 @@ button {
   flex-direction: column;
   gap: 6px;
   min-height: 56px;
-}
-
-.nightscore-dateline {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--muted);
-  white-space: nowrap;
 }
 
 .nightscore-count {
