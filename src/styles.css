@@ -1078,27 +1078,28 @@ button {
 .crowd-label {
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  width: 176px;
-  padding: 4px 8px;
+  gap: 1px;
+  width: max-content;
+  max-width: 210px;
+  padding: 2px 6px;
   background: var(--card);
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 1px 4px rgba(15, 27, 45, 0.22);
   font-size: 12px;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .crowd-line {
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 4px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 2px 6px;
+  gap: 4px;
 }
 
 .crowd-name {
-  flex: 1;
+  flex: 0 1 auto;
   min-width: 0;
   font-weight: 800;
   color: var(--ink);
@@ -1109,7 +1110,7 @@ button {
 
 .tag-count {
   flex-shrink: 0;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
   color: var(--ink2);

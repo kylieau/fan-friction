@@ -68,8 +68,8 @@ export function crowdPoints(events: CrowdEvent[], date: string): CrowdPoint[] {
 }
 
 /**
- * Map labels only. Always thousands with one decimal: 40000 → "40.0k", 17500 → "17.5k".
- * The sheet and the event screen keep the full count.
+ * Thousands with one decimal: 40000 → "40.0k", 17500 → "17.5k".
+ * Used on the map and in the sheet. The event screen still spells the full count.
  */
 export function crowdThousands(count: number): string {
   return `${(count / 1000).toFixed(1)}k`;

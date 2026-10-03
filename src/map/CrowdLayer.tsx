@@ -103,7 +103,6 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
     }
     // Each label tries above, below, right and left of its dots and takes the first
     // spot that stays on screen (above the sheet) and doesn't cover another label or dot.
-    const LABEL_W = 176;
     const view = { w: map.getContainer().clientWidth, h: map.getContainer().clientHeight - insets.bottom };
     type Box = { x0: number; y0: number; x1: number; y1: number };
     const taken: Box[] = points.map((p) => {
@@ -130,6 +129,19 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
         const id = (ev.target as HTMLElement).closest<HTMLElement>('.crowd-line')?.dataset.id;
         if (id) selectRef.current(id);
       });
+      // The pill is only as wide as its text. Measure it so the gap check matches.
+      el.style.position = 'fixed';
+      el.style.left = '0';
+      el.style.top = '0';
+      el.style.visibility = 'hidden';
+      document.body.appendChild(el);
+      const labelW = el.offsetWidth;
+      const labelH = el.offsetHeight;
+      document.body.removeChild(el);
+      el.style.position = '';
+      el.style.left = '';
+      el.style.top = '';
+      el.style.visibility = '';
       const lng = group.reduce((sum, p) => sum + p.location[0], 0) / group.length;
       const lat = group.reduce((sum, p) => sum + p.location[1], 0) / group.length;
       const at = map.project([lng, lat]);
@@ -138,14 +150,13 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
       const gx1 = Math.max(...dots.map((d) => d.x));
       const gy0 = Math.min(...dots.map((d) => d.y));
       const gy1 = Math.max(...dots.map((d) => d.y));
-      const h = 10 + group.length * 19;
       // Offsets are measured from the label's anchor (the group's center), so a
       // label can sit clear of the outermost dot rather than on top of it.
       const options = [
-        { anchor: 'bottom', offset: [0, gy0 - at.y - 12], box: { x0: at.x - LABEL_W / 2, y0: gy0 - 12 - h, x1: at.x + LABEL_W / 2, y1: gy0 - 12 } },
-        { anchor: 'top', offset: [0, gy1 - at.y + 12], box: { x0: at.x - LABEL_W / 2, y0: gy1 + 12, x1: at.x + LABEL_W / 2, y1: gy1 + 12 + h } },
-        { anchor: 'left', offset: [gx1 - at.x + 14, 0], box: { x0: gx1 + 14, y0: at.y - h / 2, x1: gx1 + 14 + LABEL_W, y1: at.y + h / 2 } },
-        { anchor: 'right', offset: [gx0 - at.x - 14, 0], box: { x0: gx0 - 14 - LABEL_W, y0: at.y - h / 2, x1: gx0 - 14, y1: at.y + h / 2 } },
+        { anchor: 'bottom', offset: [0, gy0 - at.y - 12], box: { x0: at.x - labelW / 2, y0: gy0 - 12 - labelH, x1: at.x + labelW / 2, y1: gy0 - 12 } },
+        { anchor: 'top', offset: [0, gy1 - at.y + 12], box: { x0: at.x - labelW / 2, y0: gy1 + 12, x1: at.x + labelW / 2, y1: gy1 + 12 + labelH } },
+        { anchor: 'left', offset: [gx1 - at.x + 14, 0], box: { x0: gx1 + 14, y0: at.y - labelH / 2, x1: gx1 + 14 + labelW, y1: at.y + labelH / 2 } },
+        { anchor: 'right', offset: [gx0 - at.x - 14, 0], box: { x0: gx0 - 14 - labelW, y0: at.y - labelH / 2, x1: gx0 - 14, y1: at.y + labelH / 2 } },
       ] as const;
       const fits = (o: (typeof options)[number]) =>
         o.box.x0 >= 4 && o.box.x1 <= view.w - 4 && o.box.y0 >= insets.top && o.box.y1 <= view.h && !taken.some((t) => clash(o.box, t));
