@@ -21,6 +21,7 @@ const draft = ([occasion, facts, friction, why]: Draft): Assessment => ({
 });
 
 const announced = (count: number, note?: string): CrowdFigure => ({ count, kind: 'announced', note });
+const estimated = (count: number, note?: string): CrowdFigure => ({ count, kind: 'estimated', note });
 const soldOut: CrowdFigure = { kind: 'reported', soldOut: true };
 
 interface Common {
@@ -111,7 +112,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     title: 'East LA Classic (Garfield vs. Roosevelt)',
     place: { type: 'venue', venueId: 'sofi-stadium' },
     audience: { domain: 'sports', sport: 'football' },
-    crowd: [],
+    crowd: [estimated(18000, 'Rough figure for the 2023 game; this year not confirmed')],
     assessment: draft(['Notable', ['rivalry', 'first game at SoFi'], 'Heavy', 'Same hours, same city']),
     sourceId: SOURCE_ID,
   },
@@ -126,7 +127,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
 
   // 2 · Sat 10/26/24
   game(D2, {
-    title: 'World Series Game 2', home: 'dodgers', away: 'yankees', sport: 'baseball', venue: 'dodger-stadium', start: '17:08',
+    title: 'World Series Game 2', home: 'dodgers', away: 'yankees', sport: 'baseball', venue: 'dodger-stadium', start: '17:08', crowd: [announced(52725, 'Baseball-Reference box score; ESPN may differ slightly')],
     a: ['Marquee', ['Game 2'], 'Low', 'Nothing bigger was on'],
   }),
   game(D2, {
@@ -164,11 +165,11 @@ export const SEED_EVENTS: CrowdEvent[] = [
 
   // 4 · Tue 4/1/25
   game(D4, {
-    title: 'Dodgers vs. Braves', home: 'dodgers', away: 'braves', sport: 'baseball', venue: 'dodger-stadium', start: '19:10',
+    title: 'Dodgers vs. Braves', home: 'dodgers', away: 'braves', sport: 'baseball', venue: 'dodger-stadium', start: '19:10', crowd: [announced(50182)],
     a: ['Notable', ['early season', 'champs'], 'Low', 'Biggest event of the night'],
   }),
   game(D4, {
-    title: 'Kings vs. Jets', home: 'kings', away: 'jets', sport: 'hockey', venue: 'crypto-com-arena', start: '19:30',
+    title: 'Kings vs. Jets', home: 'kings', away: 'jets', sport: 'hockey', venue: 'crypto-com-arena', start: '19:30', crowd: [announced(15012)],
     a: ['Routine', [], 'Moderate', 'Dodgers 1.5 mi away, same hours'],
   }),
   show(D4, {
@@ -183,7 +184,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Major', ['rivalry'], 'Moderate', 'Three big events same evening, different crowds'],
   }),
   show(D5, {
-    performer: 'BLACKPINK', genre: 'k-pop', venue: 'bmo-stadium', start: '20:00', crowd: [soldOut],
+    performer: 'BLACKPINK', genre: 'k-pop', venue: 'bmo-stadium', start: '20:00', crowd: [soldOut, estimated(51855, 'Average of her three SoFi nights (155,567 tickets, Touring Data)')],
     a: ['Marquee', ['sold out'], 'Low', 'Different crowd'],
   }),
   show(D5, {
@@ -233,7 +234,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Routine', [], 'Moderate', 'Taylor Swift 30 mi away, Friday traffic'],
   }),
   show(D9, {
-    performer: 'Taylor Swift', genre: 'pop', venue: 'sofi-stadium', start: '18:30', crowd: [soldOut],
+    performer: 'Taylor Swift', genre: 'pop', venue: 'sofi-stadium', start: '18:30', crowd: [soldOut, estimated(67500, 'Eras Tour average per night (Pollstar); not this night')],
     a: ['Marquee', ['sold out'], 'Low', 'Nothing bigger was on'],
   }),
 
