@@ -16,6 +16,11 @@ export const THEME = {
   ucla: '#2774AE',
   /** UCLA gold: the one primary button per screen, and the hottest heat. */
   gold: '#FFD100',
+  /**
+   * One step brighter than the gold, for the Today sun only.
+   * Buttons stay on gold. This is the bit of yellow on the map.
+   */
+  sun: '#FFDE3A',
   paleBlue: '#9CC3E4',
   water: '#D5E5F3',
 } as const;
