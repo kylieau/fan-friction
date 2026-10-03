@@ -1083,3 +1083,7 @@ button {
 .legend-card b {
   color: var(--ink);
 }
+
+.coming-up {
+  margin-top: 14px;
+}

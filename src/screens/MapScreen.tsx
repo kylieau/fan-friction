@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { frictionLabel, showFriction } from '../config/scoreLabels';
-import { getCityDate, todayIn, type CityDate } from '../data';
+import { getCityDate, getUpcoming, todayIn, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { crowdKind, crowdPoints } from '../map/crowdPoints';
@@ -32,6 +32,15 @@ export function MapScreen() {
     };
   }, [metro.id, date]);
 
+  const [upcoming, setUpcoming] = useState<CrowdEvent[]>([]);
+  useEffect(() => {
+    let current = true;
+    getUpcoming(metro.id, date, 2).then((u) => current && setUpcoming(u));
+    return () => {
+      current = false;
+    };
+  }, [metro.id, date]);
+
   const shown = day && day.date === date ? day : null;
   const points = useMemo(() => (shown && mode === 'crowds' ? crowdPoints(shown.events, date) : []), [shown, mode, date]);
   const rating = shown?.rating ?? null;
@@ -41,7 +50,7 @@ export function MapScreen() {
       ? isToday
         ? 'No big events found for today yet'
         : 'No big events found for this date'
-      : `${shown.events.length} big events that day`;
+      : `${shown.events.length} big ${shown.events.length === 1 ? 'event' : 'events'} that day`;
 
   return (
     <div className="screen map-screen">
@@ -130,19 +139,29 @@ export function MapScreen() {
             <div className="sheet-title">{isToday ? 'Quiet so far today.' : 'Quiet on this date.'}</div>
             <ul className="quiet-list">
               <li>
-                <span className="quiet-label">Next big night</span>
-                <span className="quiet-note">Coming with live schedules (step 7)</span>
-              </li>
-              <li>
                 <span className="quiet-label">On this night</span>
                 <span className="quiet-note">A famous past night from {monthDay(new Date(), metro)}</span>
               </li>
-              <li>
-                <span className="quiet-label">Your teams' next game</span>
-                <span className="quiet-note">Coming with live schedules (step 7)</span>
-              </li>
             </ul>
           </>
+        )}
+        {upcoming.length > 0 && (
+          <div className="coming-up">
+            <div className="section-title">Coming up</div>
+            <ul className="event-list">
+              {upcoming.map((e) => (
+                <li key={e.id}>
+                  <Link to={`/?date=${e.date}`} className="event-row">
+                    <span className="event-time">{shortLocalDate(e.date)}</span>
+                    <span className="event-main">
+                      <span className="event-title">{e.title}</span>
+                      <span className="event-meta">{e.start ? clockTime(e.start) : 'Time n/a'}</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
         <Link to="/nights" className="gold-button">
           Pick a night

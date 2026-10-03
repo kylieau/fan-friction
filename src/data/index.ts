@@ -2,11 +2,12 @@
 // so adding a live feed means adding it to the lists below, nothing else.
 
 import type { Metro } from '../config/metros';
+import { mlbEvents } from './sources/mlbSource';
 import { seedEvents, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
-import type { CityDate, DateRating, LocalDate } from './types';
+import type { CityDate, CrowdEvent, DateRating, LocalDate } from './types';
 
-const EVENT_SOURCES: EventSource[] = [seedEvents];
+const EVENT_SOURCES: EventSource[] = [seedEvents, mlbEvents];
 const RATING_SOURCES: RatingSource[] = [seedRatings];
 
 /** Everything known about one date in one metro: its events, rating and status. */
@@ -22,6 +23,18 @@ export async function getCityDate(metroId: string, date: LocalDate): Promise<Cit
 
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';
   return { metroId, date, status, events, rating };
+}
+
+/** The next few events after a date, from every live source, soonest first. */
+export async function getUpcoming(metroId: string, afterDate: LocalDate, limit = 5): Promise<CrowdEvent[]> {
+  const lists = await Promise.all(
+    EVENT_SOURCES.map((s) => (s.upcoming ? s.upcoming(metroId, afterDate) : Promise.resolve([]))),
+  );
+  return lists
+    .flat()
+    .filter((e) => e.date > afterDate)
+    .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')))
+    .slice(0, limit);
 }
 
 /** Every rated date in a metro, newest first. */

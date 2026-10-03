@@ -10,6 +10,8 @@ export interface EventSource {
   /** Shown in credits, e.g. "Hand-seeded test nights", "MLB". */
   name: string;
   eventsOn(metroId: string, date: LocalDate): Promise<CrowdEvent[]>;
+  /** Events on or after a date, soonest first. Only live feeds have this. */
+  upcoming?(metroId: string, fromDate: LocalDate): Promise<CrowdEvent[]>;
 }
 
 export interface RatingSource {
