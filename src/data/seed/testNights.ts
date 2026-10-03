@@ -187,7 +187,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Marquee', ['sold out'], 'Low', 'Different crowd'],
   }),
   show(D5, {
-    performer: 'Elton John', genre: 'classic rock', venue: 'dodger-stadium',
+    performer: 'Elton John', genre: 'classic rock', venue: 'dodger-stadium', start: '20:00',
     a: ['Marquee', ['farewell tour'], 'Low', 'Different crowd'],
   }),
   game(D5, {
@@ -285,7 +285,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Notable', ['rivalry'], 'Moderate', 'Night game, after the heat'],
   }),
   show(D12, {
-    performer: 'The Weeknd', genre: 'pop', venue: 'sofi-stadium',
+    performer: 'The Weeknd', genre: 'pop', venue: 'sofi-stadium', start: '21:20',
     a: ['Major', [], 'Low', 'Different crowd, evening'],
   }),
 
