@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from
 import { TabBar } from './components/TabBar';
 import { FirstRunTips } from './components/FirstRunTips';
 import { MapScreen } from './screens/MapScreen';
+import { EventScreen } from './screens/EventScreen';
 import { NightsScreen } from './screens/NightsScreen';
 import { CompareScreen } from './screens/CompareScreen';
 import { YouScreen } from './screens/YouScreen';
@@ -24,6 +25,7 @@ function Shell() {
         <Routes>
           <Route path="/" element={<MapScreen />} />
           <Route path="/nights" element={<NightsScreen />} />
+          <Route path="/event/:id" element={<EventScreen />} />
           <Route path="/compare" element={<CompareScreen />} />
           <Route
             path="/you"

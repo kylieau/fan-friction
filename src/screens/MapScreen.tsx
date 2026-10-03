@@ -16,6 +16,7 @@ type Mode = 'crowds' | 'traffic';
 // ("/?date=2024-10-25"): its events glow on the map and its rating shows on top.
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
+  const [legend, setLegend] = useState(false);
   const metro = DEFAULT_METRO;
   const today = todayIn(metro);
   const [params] = useSearchParams();
@@ -75,6 +76,20 @@ export function MapScreen() {
         <BaseMap metro={metro}>
           <CrowdLayer points={points} />
         </BaseMap>
+        {points.length > 0 && (
+          <>
+            <button type="button" className="legend-button" aria-label="What do the colors mean?" onClick={() => setLegend((v) => !v)}>
+              ?
+            </button>
+            {legend && (
+              <div className="legend-card" role="note">
+                <b>Gold glow</b> marks where an event was. Wider means a bigger venue. Stronger means the known crowd filled more of it;
+                faint means no count found yet. <b>★</b> is the biggest known crowd that day. Counts are announced, reported or
+                estimated, and say so.
+              </div>
+            )}
+          </>
+        )}
       </div>
 
       <section className="sheet" aria-label={isToday ? 'Today' : shortLocalDate(date)}>
@@ -89,7 +104,8 @@ export function MapScreen() {
                 const figure = e.crowd.find((c) => c.count !== undefined);
                 const friction = e.assessment?.friction;
                 return (
-                  <li key={e.id} className="event-row">
+                  <li key={e.id}>
+                   <Link to={`/event/${e.id}`} className="event-row">
                     <span className="event-time">{e.start ? clockTime(e.start) : 'Time n/a'}</span>
                     <span className="event-main">
                       <span className="event-title">{e.title}</span>
@@ -103,6 +119,7 @@ export function MapScreen() {
                       </span>
                     </span>
                     {friction && showFriction(friction) && <span className="chip chip-friction">{frictionLabel(friction)}</span>}
+                   </Link>
                   </li>
                 );
               })}

@@ -705,16 +705,21 @@ button {
   flex-direction: column;
 }
 
+.event-list li {
+  border-bottom: 1px solid var(--line);
+}
+
+.event-list li:last-child {
+  border-bottom: none;
+}
+
 .event-row {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 6px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.event-row:last-child {
-  border-bottom: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .event-time {
@@ -754,4 +759,327 @@ button {
 .chip-friction {
   color: var(--dodger);
   background: #e3effa;
+}
+
+/* ---------- Event screen ---------- */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  align-self: flex-start;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.back-link svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(90deg);
+}
+
+.event-head {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.event-sub {
+  font-size: 14px;
+  color: var(--ink2);
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.chip-occasion {
+  color: var(--card);
+  background: var(--dodger);
+}
+
+.chip-fact {
+  color: var(--ink2);
+  background: var(--track);
+  font-weight: 700;
+}
+
+.verdict {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.verdict-word {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--dodger);
+}
+
+.verdict-why {
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--ink2);
+}
+
+.draft-note {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.crowd-card {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.crowd-figure,
+.crowd-cap {
+  display: flex;
+  flex-direction: column;
+}
+
+.crowd-number {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.crowd-number.small {
+  font-size: 28px;
+  color: var(--ink2);
+}
+
+.crowd-kind {
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.beaten {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.axis {
+  position: relative;
+  height: 14px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.axis span {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bar-dist {
+  flex-shrink: 0;
+  font-weight: 500;
+  color: var(--ink2);
+}
+
+.bar-track {
+  position: relative;
+  height: 8px;
+  margin-top: 4px;
+  background: var(--track);
+  border-radius: 4px;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px;
+}
+
+.bar-self {
+  background: var(--gold);
+  box-shadow: inset 0 0 0 1.5px var(--dodger);
+}
+
+.bar-overlap {
+  background: var(--ucla);
+}
+
+.bar-other {
+  background: var(--paleBlue);
+}
+
+.bar-legend {
+  font-size: 12px;
+  color: var(--ink2);
+}
+
+.source-note {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+/* ---------- Share card and wordmark ---------- */
+
+.ff-wordmark {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.ff-wordmark .fan {
+  color: var(--ink);
+}
+
+.ff-wordmark .friction {
+  color: var(--dodger);
+}
+
+.ff-wordmark .slash {
+  display: inline-block;
+  width: 0.16em;
+  height: 1.15em;
+  margin: 0 0.15em;
+  background: var(--gold);
+  transform: skewX(-22deg);
+  box-shadow: 0.065em 0 0 var(--dodger);
+}
+
+.ff-wordmark.on-blue .fan,
+.ff-wordmark.on-blue .friction {
+  color: #fff;
+}
+
+.ff-wordmark.on-blue .slash {
+  box-shadow: none;
+}
+
+.share-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.share-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--dodger);
+  color: #fff;
+}
+
+.share-date {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: var(--gold);
+}
+
+.share-title {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.share-line {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.share-crowd {
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.share-brand {
+  margin-top: 8px;
+}
+
+.share-note {
+  font-size: 13px;
+  color: var(--ink2);
+  text-align: center;
+}
+
+.text-link {
+  align-self: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dodger);
+  text-decoration: none;
+  padding: 8px;
+}
+
+/* ---------- Map legend ---------- */
+
+.legend-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  border: none;
+  background: var(--card);
+  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.22);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink2);
+  cursor: pointer;
+}
+
+.legend-card {
+  position: absolute;
+  top: 56px;
+  right: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: 0 2px 12px rgba(15, 27, 45, 0.2);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+.legend-card b {
+  color: var(--ink);
 }
