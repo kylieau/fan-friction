@@ -35,14 +35,14 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
         features: points.map((p) => ({
           type: 'Feature',
           geometry: { type: 'Point', coordinates: p.location },
-          properties: { id: p.event.id, venue: p.venueName, capacity: p.capacity ?? 20000, fill: p.fill ?? -1 },
+          properties: { id: p.event.id, venue: p.venueName, upcoming: p.upcoming, capacity: p.capacity ?? 20000, fill: p.fill ?? -1 },
         })),
       },
     });
     // Radius grows with capacity (a 90k stadium glows about twice as wide as a 20k arena).
     const radius = ['interpolate', ['linear'], ['get', 'capacity'], 15000, 26, 95000, 60] as never;
     // Known crowds glow in proportion to how full the venue was; unknown ones are faint.
-    const strength = ['case', ['<', ['get', 'fill'], 0], 0.22, ['+', 0.3, ['*', 0.5, ['get', 'fill']]]] as never;
+    const strength = ['case', ['get', 'upcoming'], 0.12, ['<', ['get', 'fill'], 0], 0.22, ['+', 0.3, ['*', 0.5, ['get', 'fill']]]] as never;
     map.addLayer({
       id: 'crowd-glow',
       type: 'circle',
@@ -54,7 +54,8 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
       type: 'circle',
       source: SOURCE,
       paint: {
-        'circle-color': '#FFD100',
+        // Gold for nights with a crowd to show; hollow white for events still to come.
+        'circle-color': ['case', ['get', 'upcoming'], '#FFFFFF', '#FFD100'] as never,
         'circle-radius': 6,
         'circle-stroke-color': '#005A9C',
         'circle-stroke-width': 2,
@@ -118,6 +119,7 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
         .map(
           (p) =>
             `<span class="crowd-line" data-id="${escapeHtml(p.event.id)}"><span class="crowd-name">${p.biggest ? '★ ' : ''}${escapeHtml(p.event.title)}</span>` +
+            (p.dayTag ? `<b class="tag-day">${escapeHtml(p.dayTag)}</b>` : '') +
             (p.soldOut ? `<b class="tag-soldout">SOLD OUT</b>` : '') +
             `</span>`,
         )

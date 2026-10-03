@@ -44,3 +44,9 @@ export function longLocalDate(date: string) {
     timeZone: 'UTC',
   });
 }
+
+/** A local date a number of days later (or earlier), "2026-10-03" + 6 = "2026-10-09". */
+export function addDays(date: string, days: number): string {
+  const [y, m, d] = date.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d + days)).toISOString().slice(0, 10);
+}

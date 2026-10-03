@@ -1,7 +1,9 @@
 // Turns a date's events into the dots the Crowds map draws. Kept apart from
 // the drawing so the Event screen and share cards can reuse it.
 
-import { VENUES, capacityOn, venueNameOn } from '../data';
+import { VENUES, capacityOn, todayIn, venueNameOn } from '../data';
+import { DEFAULT_METRO } from '../config/metros';
+import { shortLocalDate } from '../lib/dates';
 import type { CrowdEvent, LngLat } from '../data';
 
 export interface CrowdPoint {
@@ -16,6 +18,10 @@ export interface CrowdPoint {
   fill: number | null;
   /** True for the largest known crowd of the date (the ★). */
   biggest: boolean;
+  /** Hasn't happened yet: drawn as a hollow dot with no crowd glow. */
+  upcoming: boolean;
+  /** "Sat, Oct 4" when the event is on a different date than the one being viewed. */
+  dayTag: string | null;
 }
 
 const SETUP_BY_SPORT: Record<string, string> = {
@@ -29,25 +35,28 @@ const SETUP_BY_SPORT: Record<string, string> = {
 /** One point per event that happens at a known venue. Events with no venue yet are left off. */
 export function crowdPoints(events: CrowdEvent[], date: string): CrowdPoint[] {
   const points: CrowdPoint[] = [];
+  const today = todayIn(DEFAULT_METRO);
   for (const event of events) {
     if (event.place.type !== 'venue') continue;
     const venue = VENUES[event.place.venueId];
     if (!venue) continue;
     const setup = event.audience.domain === 'sports' ? SETUP_BY_SPORT[event.audience.sport] : 'concert';
-    const capacity = capacityOn(venue, date, setup);
+    const capacity = capacityOn(venue, event.date, setup);
     const figure = event.crowd.find((c) => c.count !== undefined) ?? event.crowd[0];
     const count = figure?.count;
     const soldOut = event.crowd.some((c) => c.soldOut);
     const fill = soldOut ? 1 : count !== undefined && capacity ? Math.min(1, count / capacity) : null;
     points.push({
       event,
-      venueName: venueNameOn(venue, date),
+      venueName: venueNameOn(venue, event.date),
       location: venue.location,
       capacity,
       count,
       soldOut,
       fill,
       biggest: false,
+      upcoming: event.date >= today,
+      dayTag: event.date === date ? null : shortLocalDate(event.date),
     });
   }
   const top = points.reduce<CrowdPoint | null>(

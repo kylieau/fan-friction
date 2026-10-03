@@ -140,6 +140,7 @@ button {
 .map-screen {
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .map-area {
@@ -272,7 +273,7 @@ button {
 }
 
 .map-screen.sheet-open .maplibregl-ctrl-bottom-right {
-  bottom: calc(52% + 8px);
+  bottom: calc(54% + 8px);
 }
 
 /* ---------- Night score ---------- */
@@ -361,11 +362,21 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-height: 52%;
-  padding: 8px 20px 16px;
+  height: 54%;
+  padding: 8px 20px 0;
+  will-change: transform;
   background: var(--card);
   border-radius: 28px 28px 0 0;
   box-shadow: 0 -4px 20px rgba(15, 27, 45, 0.1);
+}
+
+.sheet-top {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  padding-bottom: 4px;
+  touch-action: none;
 }
 
 .sheet-grab {
@@ -373,14 +384,16 @@ button {
   flex-direction: column;
   gap: 10px;
   padding-top: 4px;
-  touch-action: none;
   cursor: grab;
   outline: none;
 }
 
 .sheet-body {
+  flex: 1;
   min-height: 0;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -1129,7 +1142,7 @@ button {
 
 .legend-button {
   position: absolute;
-  top: 154px;
+  top: 152px;
   right: 12px;
   z-index: 2;
   width: 36px;
@@ -1174,4 +1187,71 @@ button {
 
 .coming-up .event-time {
   width: 88px;
+}
+
+.range-row {
+  position: absolute;
+  top: 152px;
+  left: 12px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 34px;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.2);
+}
+
+.range-row select {
+  appearance: none;
+  height: 100%;
+  border: none;
+  border-radius: 17px;
+  background: transparent;
+  padding: 0 30px 0 14px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dodger);
+}
+
+.range-row svg {
+  position: absolute;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  color: var(--ink2);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.map-question.below-filter {
+  top: 192px;
+}
+
+.event-time.wide {
+  width: 88px;
+}
+
+.event-day {
+  display: block;
+  color: var(--ink);
+}
+
+.tag-day {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--ink2);
+  background: var(--track);
+  border-radius: 999px;
+  padding: 0 6px;
 }

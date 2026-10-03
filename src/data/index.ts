@@ -38,6 +38,17 @@ export async function getUpcoming(metroId: string, afterDate: LocalDate, limit =
     .slice(0, limit);
 }
 
+/** Events after one date and up to another (both local dates, the end included), soonest first. */
+export async function getEventsBetween(metroId: string, afterDate: LocalDate, throughDate: LocalDate): Promise<CrowdEvent[]> {
+  const lists = await Promise.all(
+    EVENT_SOURCES.map((s) => (s.upcoming ? s.upcoming(metroId, afterDate) : Promise.resolve([]))),
+  );
+  return lists
+    .flat()
+    .filter((e) => e.date > afterDate && e.date <= throughDate)
+    .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')));
+}
+
 /** Every rated date in a metro, newest first. */
 export async function getRatedDates(metroId: string): Promise<DateRating[]> {
   const lists = await Promise.all(RATING_SOURCES.map((s) => s.ratedDates(metroId)));

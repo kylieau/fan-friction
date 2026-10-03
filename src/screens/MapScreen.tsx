@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useMemo, useRef, useState, type PointerEvent } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getCityDate, getUpcoming, type CityDate, type CrowdEvent } from '../data';
+import { getCityDate, getEventsBetween, getUpcoming, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { crowdKind, crowdPoints } from '../map/crowdPoints';
@@ -8,13 +8,20 @@ import { NightScore } from '../components/NightScore';
 import { ArrowRight, ChevronDown, SearchIcon } from '../components/Icons';
 import { eventChip } from '../lib/chips';
 import { clockTime, shortDate, shortLocalDate } from '../lib/dates';
+import { addDays } from '../lib/dates';
+import { useSheetDrag } from '../lib/useSheetDrag';
 import { useView } from '../lib/view';
 
 type Mode = 'crowds' | 'traffic';
+/** What the map shows: just this date, the next 7 days, or everything the feeds list. */
+type Range = 'day' | 'week' | 'all';
 
-// Room the header and the collapsed sheet take on the full-screen map; dots and
-// labels are kept out of it.
+const LOOKAHEAD_DAYS = 120;
+
+// Room the header, the filter row and the collapsed sheet take on the full-screen
+// map; dots and labels are kept out of it.
 const INSETS = { top: 190, bottom: 200 };
+const INSETS_WITH_FILTER = { top: 228, bottom: 200 };
 
 // The map is the screen; the header and the sheet sit on it. Opens on Today, even
 // when it's quiet. A famous night opens here too ("/?date=2024-10-25").
@@ -22,7 +29,7 @@ const INSETS = { top: 190, bottom: 200 };
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
-  const { metro, date, isToday } = useView();
+  const { metro, date, today, isToday } = useView();
 
   const [day, setDay] = useState<CityDate | null>(null);
   useEffect(() => {
@@ -32,6 +39,21 @@ export function MapScreen() {
       current = false;
     };
   }, [metro.id, date]);
+
+  // Everything listed after this date (live feeds only, so only from today on).
+  const canLookAhead = date >= today;
+  const [ahead, setAhead] = useState<CrowdEvent[]>([]);
+  useEffect(() => {
+    let current = true;
+    if (!canLookAhead) {
+      setAhead([]);
+      return;
+    }
+    getEventsBetween(metro.id, date, addDays(date, LOOKAHEAD_DAYS)).then((u) => current && setAhead(u));
+    return () => {
+      current = false;
+    };
+  }, [metro.id, date, canLookAhead]);
 
   const [upcoming, setUpcoming] = useState<CrowdEvent[]>([]);
   useEffect(() => {
@@ -43,9 +65,31 @@ export function MapScreen() {
   }, [metro.id, date]);
 
   const shown = day && day.date === date ? day : null;
-  const points = useMemo(() => (shown && mode === 'crowds' ? crowdPoints(shown.events, date) : []), [shown, mode, date]);
   const rating = shown?.rating ?? null;
-  const events = shown?.events ?? [];
+  const dayEvents = shown?.events ?? [];
+
+  // A blank map is boring, so if this date is empty the map widens by itself: next 7 days,
+  // then everything listed. Kylie's own pick of a filter always wins.
+  const [pickedRange, setPickedRange] = useState<Range | null>(null);
+  const weekAhead = useMemo(() => ahead.filter((e) => e.date <= addDays(date, 7)), [ahead, date]);
+  const autoRange: Range = dayEvents.length > 0 ? 'day' : weekAhead.length > 0 ? 'week' : 'all';
+  const range: Range = canLookAhead ? (pickedRange ?? autoRange) : 'day';
+  const events = useMemo(
+    () => (range === 'day' ? dayEvents : range === 'week' ? [...dayEvents, ...weekAhead] : [...dayEvents, ...ahead]),
+    [range, dayEvents, weekAhead, ahead],
+  );
+  // The map shows one pin and label per venue: the next event there. The sheet's list
+  // still holds every event, and picking one from it rings its venue's pin.
+  const { points, pinFor } = useMemo(() => {
+    const all = shown && mode === 'crowds' ? crowdPoints(events, date) : [];
+    all.sort((a, b) => (a.event.date + (a.event.start ?? '')).localeCompare(b.event.date + (b.event.start ?? '')));
+    const venueKey = (p: (typeof all)[number]) => (p.event.place.type === 'venue' ? p.event.place.venueId : p.event.id);
+    const next = new Map<string, (typeof all)[number]>();
+    for (const p of all) if (!next.has(venueKey(p))) next.set(venueKey(p), p);
+    const idToPin = new Map(all.map((p) => [p.event.id, next.get(venueKey(p))!.event.id]));
+    return { points: [...next.values()], pinFor: (id: string | null) => (id ? (idToPin.get(id) ?? id) : null) };
+  }, [shown, mode, events, date]);
+  const insets = canLookAhead ? INSETS_WITH_FILTER : INSETS;
 
   // The sheet has two heights: collapsed (grabber + the night line) and expanded (the list).
   // It starts expanded on a quiet date, where the list is all there is to see.
@@ -54,50 +98,42 @@ export function MapScreen() {
   useEffect(() => {
     setSelectedId(null);
     setOpen(false);
+    setPickedRange(null);
   }, [date]);
-  useEffect(() => {
-    if (shown && shown.events.length === 0) setOpen(true);
-  }, [shown]);
 
   const select = useCallback((id: string | null) => setSelectedId(id), []);
   const selected = events.find((e) => e.id === selectedId) ?? null;
 
   const caption = !shown
     ? ' '
-    : events.length === 0
+    : dayEvents.length === 0
       ? isToday
-        ? 'No big events found for today yet'
+        ? 'No big events today yet'
         : 'No big events found for this date'
-      : `${events.length} big ${events.length === 1 ? 'event' : 'events'} that day`;
+      : `${dayEvents.length} big ${dayEvents.length === 1 ? 'event' : 'events'} that day`;
 
   const nightLine = !shown
     ? ' '
-    : events.length === 0
-      ? isToday
-        ? 'Quiet so far today.'
-        : 'Quiet on this date.'
+    : dayEvents.length === 0
+      ? `${isToday ? 'Quiet so far today.' : 'Quiet on this date.'}${events.length > 0 ? ` Showing ${range === 'week' ? 'the next 7 days' : 'what\'s coming up'}.` : ''}`
       : rating
         ? `Squeezed most: ${rating.squeezedMost}`
         : 'Big events that day';
 
-  // Drag the grabber up or down to change the sheet's height; a tap toggles it.
-  const dragY = useRef<number | null>(null);
-  const grabStart = (e: PointerEvent) => {
-    dragY.current = e.clientY;
-    e.currentTarget.setPointerCapture(e.pointerId);
-  };
-  const grabEnd = (e: PointerEvent) => {
-    if (dragY.current === null) return;
-    const dy = e.clientY - dragY.current;
-    dragY.current = null;
-    setOpen(Math.abs(dy) < 24 ? (v) => !v : dy < 0);
+  // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
+  const sheetRef = useRef<HTMLElement>(null);
+  const topRef = useRef<HTMLDivElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null);
+  const { wasDragged } = useSheetDrag(sheetRef, topRef, bodyRef, open, setOpen);
+  const grabClick = () => {
+    if (!wasDragged()) setOpen((v) => !v);
   };
 
   return (
     <div className={`screen map-screen${open ? ' sheet-open' : ''}`}>
       <div className="map-area">
         <BaseMap metro={metro}>
-          <CrowdLayer points={points} selectedId={selectedId} onSelect={select} insets={INSETS} />
+          <CrowdLayer points={points} selectedId={pinFor(selectedId)} onSelect={select} insets={insets} />
         </BaseMap>
       </div>
 
@@ -124,8 +160,20 @@ export function MapScreen() {
         </div>
       </header>
 
+      {canLookAhead && (
+        <label className="range-row">
+          <span className="sr-only">Which events to show</span>
+          <select value={range} onChange={(e) => setPickedRange(e.target.value as Range)}>
+            <option value="day">{isToday ? 'Today' : 'This date'}</option>
+            <option value="week">Next 7 days</option>
+            <option value="all">All upcoming</option>
+          </select>
+          <ChevronDown />
+        </label>
+      )}
+
       {(mode === 'traffic' || points.length > 0) && (
-        <div className="map-question">
+        <div className={`map-question${canLookAhead ? ' below-filter' : ''}`}>
           {mode === 'crowds' ? 'Where did the crowds go?' : 'Should I brave the roads?'}
           {mode === 'traffic' && <span className="estimate-chip">Estimate · not live</span>}
         </div>
@@ -146,84 +194,86 @@ export function MapScreen() {
         </>
       )}
 
-      <section className="sheet" aria-label={isToday ? 'Today' : shortLocalDate(date)}>
-        <div
-          className="sheet-grab"
-          role="button"
-          tabIndex={0}
-          aria-expanded={open}
-          aria-label={open ? 'Collapse the list' : 'Expand the list'}
-          onPointerDown={grabStart}
-          onPointerUp={grabEnd}
-          onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setOpen((v) => !v)}
-        >
-          <span className="sheet-handle" aria-hidden />
-          <div className="sheet-title">{nightLine}</div>
+      <section className="sheet" ref={sheetRef} aria-label={isToday ? 'Today' : shortLocalDate(date)}>
+        <div className="sheet-top" ref={topRef}>
+          <div
+            className="sheet-grab"
+            role="button"
+            tabIndex={0}
+            aria-expanded={open}
+            aria-label={open ? 'Collapse the list' : 'Expand the list'}
+            onClick={grabClick}
+            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setOpen((v) => !v)}
+          >
+            <span className="sheet-handle" aria-hidden />
+            <div className="sheet-title">{nightLine}</div>
+          </div>
+
+          {selected && (
+            <>
+              <div className="selected-row">
+                <EventRow event={selected} selected showDate={selected.date !== date} />
+              </div>
+              <Link to={`/event/${selected.id}`} className="gold-button">
+                See what beat it
+                <ArrowRight />
+              </Link>
+            </>
+          )}
         </div>
 
-        {!open && selected && (
-          <div className="selected-row">
-            <EventRow event={selected} selected />
-          </div>
-        )}
-
-        {open && (
-          <div className="sheet-body">
-            {events.length > 0 && (
+        <div className="sheet-body" ref={bodyRef}>
+          {events.length > 0 && (
+            <ul className="event-list">
+              {events.map((e) => (
+                <li key={e.id}>
+                  <EventRow
+                    event={e}
+                    showDate={e.date !== date}
+                    selected={e.id === selectedId}
+                    onPick={() => {
+                      setSelectedId(e.id);
+                      setOpen(false);
+                    }}
+                  />
+                </li>
+              ))}
+            </ul>
+          )}
+          {range === 'day' && upcoming.length > 0 && (
+            <div className="coming-up">
+              <div className="section-title">Coming up</div>
               <ul className="event-list">
-                {events.map((e) => (
+                {upcoming.map((e) => (
                   <li key={e.id}>
-                    <EventRow
-                      event={e}
-                      selected={e.id === selectedId}
-                      onPick={() => {
-                        setSelectedId(e.id);
-                        setOpen(false);
-                      }}
-                    />
+                    <Link to={`/?date=${e.date}`} className="event-row">
+                      <span className="event-time">{shortLocalDate(e.date)}</span>
+                      <span className="event-main">
+                        <span className="event-title">{e.title}</span>
+                        <span className="event-meta">{e.start ? clockTime(e.start) : 'Time n/a'}</span>
+                      </span>
+                    </Link>
                   </li>
                 ))}
               </ul>
-            )}
-            {upcoming.length > 0 && (
-              <div className="coming-up">
-                <div className="section-title">Coming up</div>
-                <ul className="event-list">
-                  {upcoming.map((e) => (
-                    <li key={e.id}>
-                      <Link to={`/?date=${e.date}`} className="event-row">
-                        <span className="event-time">{shortLocalDate(e.date)}</span>
-                        <span className="event-main">
-                          <span className="event-title">{e.title}</span>
-                          <span className="event-meta">{e.start ? clockTime(e.start) : 'Time n/a'}</span>
-                        </span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        )}
-
-        {selected && (
-          <Link to={`/event/${selected.id}`} className="gold-button">
-            See what beat it
-            <ArrowRight />
-          </Link>
-        )}
+            </div>
+          )}
+        </div>
       </section>
     </div>
   );
 }
 
 /** One event: time, title, the labeled crowd, and one chip (friction, or why it's notable). */
-function EventRow({ event: e, selected, onPick }: { event: CrowdEvent; selected?: boolean; onPick?: () => void }) {
+function EventRow({ event: e, selected, onPick, showDate }: { event: CrowdEvent; selected?: boolean; onPick?: () => void; showDate?: boolean }) {
   const figure = e.crowd.find((c) => c.count !== undefined);
   const chip = eventChip(e);
   const body = (
     <>
-      <span className="event-time">{e.start ? clockTime(e.start) : 'Time n/a'}</span>
+      <span className={`event-time${showDate ? ' wide' : ''}`}>
+        {showDate && <span className="event-day">{shortLocalDate(e.date)}</span>}
+        {e.start ? clockTime(e.start) : 'Time n/a'}
+      </span>
       <span className="event-main">
         <span className="event-title">{e.title}</span>
         <span className="event-meta">
