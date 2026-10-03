@@ -14,6 +14,8 @@ export const THEME = {
   dodger: '#005A9C',
   /** UCLA blue: secondary. */
   ucla: '#2774AE',
+  /** Pale ground for the map header, the tab bar, and the sheet. */
+  chrome: '#DAEBFE',
   /** UCLA gold: the one primary button per screen, and the hottest heat. */
   gold: '#FFD100',
   /**
