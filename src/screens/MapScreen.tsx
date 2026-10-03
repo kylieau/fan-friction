@@ -247,8 +247,8 @@ export function MapScreen() {
 }
 
 /**
- * The top bar is the area. Los Angeles is the only metro for now, and the
- * control still shows so a later city does not have to move it.
+ * The top bar is the area. It lists every city in her log. Los Angeles
+ * stays the default. New York is only the city from that log, not a full pack.
  */
 function AreaSwitcher({ metro }: { metro: Metro }) {
   const [params, setParams] = useSearchParams();

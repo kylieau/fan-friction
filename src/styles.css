@@ -1672,6 +1672,32 @@ button {
   overflow-wrap: anywhere;
 }
 
+.fact-list {
+  margin: 4px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fact-line {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 13px;
+}
+
+.fact-line dt {
+  flex-shrink: 0;
+  font-weight: 800;
+  color: var(--ink2);
+}
+
+.fact-line dd {
+  margin: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .log-note {
   font-style: italic;
 }

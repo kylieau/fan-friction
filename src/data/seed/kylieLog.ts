@@ -16,6 +16,12 @@ interface Extra {
   note?: string;
   eventId?: string;
   kind?: EventKind;
+  /** City this night happened in, when it is not Los Angeles. */
+  metroId?: string;
+  neutralSite?: boolean;
+  starter?: string;
+  promo?: string;
+  notable?: string;
 }
 
 const day = (iso: string): LoggedWhen => ({ sort: iso, label: '', precision: 'day' });
@@ -48,8 +54,12 @@ function night(
     inMetro,
     note: extra.note,
     eventId: extra.eventId,
+    starter: extra.starter,
+    promo: extra.promo,
+    notable: extra.notable,
     kind: extra.kind ?? 'game',
-    metroId: inMetro ? 'la' : undefined,
+    neutralSite: extra.neutralSite,
+    metroId: extra.metroId ?? (inMetro ? 'la' : undefined),
   };
 }
 
@@ -71,8 +81,24 @@ const uclaFb = (iso: string, opponent: string, extra?: Extra) =>
     venue: 'Rose Bowl',
     ...extra,
   });
-const dodgers = (iso: string, title: string, extra?: Extra) =>
-  night(`k-${iso}-dodgers`, day(iso), title, 'Dodgers', BB, 'Dodgers', { venue: 'Dodger Stadium', ...extra });
+/** Her pitcher shorthand, from the log header. */
+const PITCHER: Record<string, string> = {
+  Yama: 'Yamamoto',
+  Glas: 'Glasnow',
+  Sho: 'Ohtani',
+  Sheehan: 'Sheehan',
+  Roki: 'Sasaki',
+};
+
+const dodgers = (iso: string, title: string, extra: Extra = {}) => {
+  const nick = title.match(/\(([^)]+)\)/)?.[1];
+  const starter = extra.starter ?? (nick ? (PITCHER[nick] ?? nick) : undefined);
+  return night(`k-${iso}-dodgers`, day(iso), title, 'Dodgers', BB, 'Dodgers', {
+    venue: 'Dodger Stadium',
+    ...extra,
+    starter,
+  });
+};
 const lakers = (iso: string, opponent: string) =>
   night(`k-${iso}-lakers`, day(iso), `Lakers vs. ${opponent}`, 'Lakers', MBB, 'Lakers', { venue: 'Crypto.com Arena' });
 const sparks = (iso: string, opponent: string) =>
@@ -120,25 +146,35 @@ export const KYLIE_LOG: LoggedNight[] = [
     belowFloor: true,
   }),
   lakers('2026-03-10', 'Timberwolves'),
-  night('k-2026-03-21-ucla-wbb', day('2026-03-21'), '#1 UCLA WBB vs. Cal Baptist (R64)', 'UCLA WBB', WBB, 'UCLA', {
-    inMetro: false,
-  }),
-  night('k-2026-03-23-ucla-wbb', day('2026-03-23'), '#1 UCLA WBB vs. Oklahoma State (R32)', 'UCLA WBB', WBB, 'UCLA', {
-    inMetro: false,
-  }),
+  uclaWbb('2026-03-21', '#1 UCLA WBB vs. Cal Baptist (R64)'),
+  uclaWbb('2026-03-23', '#1 UCLA WBB vs. Oklahoma State (R32)'),
   dodgers('2026-03-26', 'Dodgers (Yama) vs. Diamondbacks'),
   lakers('2026-03-27', 'Nets'),
   dodgers('2026-03-28', 'Dodgers (Glas) vs. Diamondbacks'),
-  night('k-2026-03-29-ucla-wbb', day('2026-03-29'), '#1 UCLA WBB vs. #3 Duke (E8)', 'UCLA WBB', WBB, 'UCLA', { inMetro: false }),
+  night('k-2026-03-29-ucla-wbb', day('2026-03-29'), '#1 UCLA WBB vs. #3 Duke (E8)', 'UCLA WBB', WBB, 'UCLA', {
+    venue: 'Golden 1 Center',
+    inMetro: false,
+    metroId: 'sacramento',
+    neutralSite: true,
+  }),
   night('k-2026-04-03-uconn-sc', day('2026-04-03'), '#1 UConn vs. #1 South Carolina (Final Four)', 'Women\'s basketball', WBB, 'UConn', {
     sides: ['UConn', 'South Carolina'],
+    venue: 'Mortgage Matchup Center',
     inMetro: false,
+    metroId: 'phoenix',
+    neutralSite: true,
   }),
   night('k-2026-04-03-ucla-wbb', day('2026-04-03'), '#1 UCLA WBB vs. #1 Texas (Final Four)', 'UCLA WBB', WBB, 'UCLA', {
+    venue: 'Mortgage Matchup Center',
     inMetro: false,
+    metroId: 'phoenix',
+    neutralSite: true,
   }),
   night('k-2026-04-05-ucla-wbb', day('2026-04-05'), '#1 UCLA WBB vs. #1 South Carolina (natty)', 'UCLA WBB', WBB, 'UCLA', {
+    venue: 'Mortgage Matchup Center',
     inMetro: false,
+    metroId: 'phoenix',
+    neutralSite: true,
   }),
   lakers('2026-04-10', 'Suns'),
   dodgers('2026-04-15', 'Dodgers (Sho) vs. Mets'),
@@ -150,7 +186,12 @@ export const KYLIE_LOG: LoggedNight[] = [
   dodgers('2026-07-04', 'Dodgers (Yama) vs. Padres'),
   dodgers('2026-08-13', 'Dodgers (Roki) vs. Brewers'),
   dodgers('2026-08-21', 'Dodgers (Yama) vs. Pirates'),
-  night('k-2026-09-17-mystics', day('2026-09-17'), 'Mystics @ Sky', 'Mystics', WNBA, 'Mystics', { away: true, inMetro: false }),
+  night('k-2026-09-17-mystics', day('2026-09-17'), 'Mystics @ Sky', 'Mystics', WNBA, 'Mystics', {
+    venue: 'Wintrust Arena',
+    away: true,
+    inMetro: false,
+    metroId: 'chicago',
+  }),
   night('k-2026-09-21-rams', day('2026-09-21'), 'Rams vs. NY Giants', 'Rams', FB, 'Rams', { venue: 'SoFi Stadium' }),
   dodgers('2026-09-24', 'Dodgers vs. Padres'),
 
@@ -185,16 +226,33 @@ export const KYLIE_LOG: LoggedNight[] = [
   uclaWbb('2025-03-23', 'UCLA WBB vs. Richmond'),
   night('k-2025-04-04-sc-texas', day('2025-04-04'), 'South Carolina vs. Texas (Final Four)', 'Women\'s basketball', WBB, 'South Carolina', {
     sides: ['South Carolina', 'Texas'],
+    venue: 'Amalie Arena',
     inMetro: false,
+    metroId: 'tampa',
+    neutralSite: true,
   }),
-  night('k-2025-04-04-ucla-wbb', day('2025-04-04'), 'UCLA WBB vs. UConn (Final Four)', 'UCLA WBB', WBB, 'UCLA', { inMetro: false }),
+  night('k-2025-04-04-ucla-wbb', day('2025-04-04'), 'UCLA WBB vs. UConn (Final Four)', 'UCLA WBB', WBB, 'UCLA', {
+    venue: 'Amalie Arena',
+    inMetro: false,
+    metroId: 'tampa',
+    neutralSite: true,
+  }),
   night('k-2025-04-13-lafc', day('2025-04-13'), 'LAFC vs. San Jose', 'LAFC', SOCCER, 'LAFC', { venue: 'BMO Stadium' }),
   dodgers('2025-05-18', 'Dodgers vs. Angels'),
-  night('k-2025-06-13-mariners', day('2025-06-13'), 'Mariners vs. Guardians', 'Mariners', BB, 'Mariners', { inMetro: false }),
+  night('k-2025-06-13-mariners', day('2025-06-13'), 'Mariners vs. Guardians', 'Mariners', BB, 'Mariners', {
+    venue: 'T-Mobile Park',
+    inMetro: false,
+    metroId: 'seattle',
+  }),
   night('k-2025-06-29-lafc', day('2025-06-29'), 'LAFC vs. Whitecaps', 'LAFC', SOCCER, 'LAFC', { venue: 'BMO Stadium' }),
   dodgers('2025-07-04', 'Dodgers vs. Astros'),
-  night('k-2025-08-14-braves', day('2025-08-14'), 'Braves @ Mets', 'Braves', BB, 'Braves', { away: true, inMetro: false }),
-  dodgers('2025-08-23', 'Dodgers @ Padres', { venue: undefined, away: true, inMetro: false }),
+  night('k-2025-08-14-braves', day('2025-08-14'), 'Braves @ Mets', 'Braves', BB, 'Braves', {
+    venue: 'Citi Field',
+    away: true,
+    inMetro: false,
+    metroId: 'new-york',
+  }),
+  dodgers('2025-08-23', 'Dodgers @ Padres', { venue: 'Petco Park', away: true, inMetro: false, metroId: 'san-diego' }),
   uclaFb('2025-08-30', 'Utah'),
   sparks('2025-09-07', 'Wings'),
   dodgers('2025-09-10', 'Dodgers vs. Rockies'),
@@ -211,8 +269,10 @@ export const KYLIE_LOG: LoggedNight[] = [
   uclaMbb('2025-11-10', 'West Georgia'),
   uclaMbb('2025-11-21', 'Presbyterian'),
   night('k-2025-11-15-ucla-fb', day('2025-11-15'), 'UCLA FB @ Ohio State', 'UCLA FB', FB, 'UCLA', {
+    venue: 'Ohio Stadium',
     away: true,
     inMetro: false,
+    metroId: 'columbus',
   }),
   uclaFb('2025-11-22', 'Washington'),
   uclaWbb('2025-11-23', 'UCLA WBB vs. Southern'),
@@ -224,7 +284,6 @@ export const KYLIE_LOG: LoggedNight[] = [
     venue: 'Cosm',
     kind: 'live-broadcast',
     belowFloor: true,
-    inMetro: false,
     note: 'Watch party, not the game itself.',
   }),
   uclaWbb('2025-11-30', 'UCLA WBB vs. Tennessee'),
@@ -256,13 +315,11 @@ export const KYLIE_LOG: LoggedNight[] = [
   }),
   show('k-onerepublic-script-2014', year(2014), 'OneRepublic & The Script', {
     venue: 'Irvine Amphitheatre',
-    inMetro: false,
     sides: ['OneRepublic'],
   }),
   show('k-onedirection-2014', year(2014), 'One Direction', { venue: 'Rose Bowl', sides: ['One Direction'] }),
   show('k-5sos', unknown(), '5 Seconds of Summer', {
     venue: 'Irvine Amphitheatre',
-    inMetro: false,
     sides: ['5 Seconds of Summer'],
     note: 'Maybe with family. Year not written down.',
   }),
@@ -286,6 +343,7 @@ export const KYLIE_LOG: LoggedNight[] = [
     kind: 'festival',
     venue: 'Empire Polo Club',
     inMetro: false,
+    metroId: 'indio',
     sides: ['Stagecoach'],
     note: 'Sets: Keith Urban, Jake Owen, Kelsea Ballerini, Chris Lane, Chris Janson, Brothers Osborne, Florida Georgia Line, Lee Brice, Garth Brooks, Brett Young, Kacey Musgraves.',
   }),
@@ -299,6 +357,7 @@ export const KYLIE_LOG: LoggedNight[] = [
     kind: 'festival',
     venue: 'Empire Polo Club',
     inMetro: false,
+    metroId: 'indio',
     sides: ['Stagecoach'],
     note: 'Sets: Luke Bryan, Sam Hunt, Cole Swindell, Luke Combs, Lauren Alaina, LANCO, Russell Dickerson, Kelsea Ballerini, Old Dominion, Scotty McCreery, Kane Brown, Jason Aldean, Diplo.',
   }),
@@ -311,6 +370,7 @@ export const KYLIE_LOG: LoggedNight[] = [
     kind: 'festival',
     venue: 'Empire Polo Club',
     inMetro: false,
+    metroId: 'indio',
     sides: ['Stagecoach'],
     note: 'Lineup not written down. Caught part of Thomas Rhett.',
   }),
@@ -327,6 +387,7 @@ export const KYLIE_LOG: LoggedNight[] = [
     venue: 'Ventura Theater',
     belowFloor: true,
     inMetro: false,
+    metroId: 'ventura',
     sides: ['Bryce Vine'],
   }),
   show('k-beach-life-2023-05', month('2023-05', 'May 2023'), 'BeachLife Festival', {
@@ -339,6 +400,7 @@ export const KYLIE_LOG: LoggedNight[] = [
     kind: 'festival',
     venue: 'Empire Polo Club',
     inMetro: false,
+    metroId: 'indio',
     sides: ['Coachella'],
     note: 'Weekend not written down. Sets she listed: Bad Bunny, Gorillaz, Becky G, Pusha T, Doechii, Kaytranada, Blondie, Metro Boomin, Two Friends, Blink-182, BLACKPINK, Rosalía, Charli XCX, Calvin Harris, Odesza, Frank Ocean, Björk, Kali Uchis, GloRilla, Fisher, Dominic Fike, Rae Sremmurd, Latto.',
   }),
@@ -353,10 +415,10 @@ export const KYLIE_LOG: LoggedNight[] = [
   }),
   show('k-pink', unknown(), 'P!nk & The Script', { venue: 'Dodger Stadium', sides: ['P!nk'] }),
   show('k-inhaler-2024-10', month('2024-10', 'October 2024'), 'Inhaler', {
-    venue: 'Roadrunner, Boston',
-    away: true,
+    venue: 'Roadrunner',
     belowFloor: true,
     inMetro: false,
+    metroId: 'boston',
     sides: ['Inhaler'],
   }),
   show('k-weeknd-2025-06', month('2025-06', 'June 2025'), 'The Weeknd', { venue: 'SoFi Stadium', sides: ['The Weeknd'] }),

@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { frictionLabel, showFriction } from '../config/scoreLabels';
 import {
+  eventFacts,
   getCityDate,
   getPersonalLog,
   isPlanned,
@@ -11,9 +12,11 @@ import {
   todayIn,
   togglePlan,
   toggleWasThere,
+  yourNights,
   type CityDate,
 } from '../data';
 import { crowdKind, crowdPoints, type CrowdPoint } from '../map/crowdPoints';
+import { FactList } from '../components/FactList';
 import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
@@ -60,6 +63,7 @@ export function EventScreen() {
   const e = me.event;
   const a = e.assessment;
   const kind = crowdKind(e);
+  const logged = yourNights(log).find((night) => night.eventId === e.id);
 
   return (
     <div className="screen page event-page">
@@ -73,6 +77,7 @@ export function EventScreen() {
           {me.venueName}
           {e.start ? ` · ${clockTime(e.start)}` : ''}
         </div>
+        <FactList facts={eventFacts(e, logged)} />
         {a && (
           <div className="chip-row">
             <span className="chip chip-occasion">{a.occasion}</span>

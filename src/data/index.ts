@@ -133,6 +133,7 @@ export { VENUES, venueNameOn, capacityOn } from './venues';
 export { TEAMS } from './teams';
 export { audienceOverlap } from './audience';
 export {
+  eventFacts,
   filterChoices,
   getPersonalLog,
   getSaveWarning,
@@ -140,6 +141,7 @@ export {
   isWasThere,
   logStats,
   nightBackup,
+  nightFacts,
   ratingForNight,
   removePlan,
   setYouOrder,
@@ -149,4 +151,5 @@ export {
   upcomingPlans,
   yourNights,
 } from './personalLog';
+export type { LabeledFact } from './personalLog';
 export type * from './types';

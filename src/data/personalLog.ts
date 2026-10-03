@@ -13,6 +13,12 @@ export interface CountRow {
   count: number;
 }
 
+/** One labeled fact. Empty categories are left out by the callers. */
+export interface LabeledFact {
+  label: string;
+  value: string;
+}
+
 export interface LogStats {
   /** Log entries, not unique evenings. */
   events: number;
@@ -100,6 +106,40 @@ function sportLabel(sport: string): string {
     soccer: 'Soccer',
   };
   return names[sport] ?? sport;
+}
+
+/**
+ * What kind of night it was. A game is named by its sport (Baseball, not Game).
+ * A concert stays Show, or Festival / Live broadcast when that is the real kind.
+ */
+export function eventTypeLabel(kind: string, sport: string): string {
+  if (kind === 'festival') return 'Festival';
+  if (kind === 'live-broadcast') return 'Live broadcast';
+  if (kind === 'special') return 'Special';
+  if (kind === 'show' || sport === 'Concerts') return 'Show';
+  if (sport === 'WNBA') return "Women's basketball";
+  return sport;
+}
+
+/** Separate labeled facts. Personal notes are not one of them. */
+export function nightFacts(night: LoggedNight, scope: 'all' | 'before' = 'all'): LabeledFact[] {
+  const facts: LabeledFact[] = [];
+  if (night.result) facts.push({ label: 'Outcome', value: night.result });
+  const type = eventTypeLabel(night.kind, night.sport);
+  if (type) facts.push({ label: 'Type', value: type });
+  if (night.starter) facts.push({ label: 'Starter', value: night.starter });
+  if (night.promo) facts.push({ label: 'Promo', value: night.promo });
+  if (night.notable) facts.push({ label: 'Notable', value: night.notable });
+  if (scope === 'before') return facts.filter((fact) => fact.label === 'Starter' || fact.label === 'Promo');
+  return facts;
+}
+
+/** Facts for an event page. A linked log night supplies anything she wrote down. */
+export function eventFacts(event: CrowdEvent, logged?: LoggedNight): LabeledFact[] {
+  if (logged) return nightFacts(logged);
+  const sport = event.audience.domain === 'sports' ? sportLabel(event.audience.sport) : '';
+  const type = eventTypeLabel(event.kind, sport);
+  return type ? [{ label: 'Type', value: type }] : [];
 }
 
 function tagFor(teamId: string | undefined, sport: string): { tag: string; side: string } {

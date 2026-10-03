@@ -207,11 +207,19 @@ export interface LoggedNight {
   /** Team or artist names. Opponents she didn't go "for" stay out. */
   sides: string[];
   venue?: string;
-  /** One line, only when a result is actually known. */
+  /** Final score, only when one is actually known. Shown as Outcome. */
   result?: string;
-  /** Private. Shown only in Your nights. */
+  /** Starting pitcher or other starter, when she wrote one down. */
+  starter?: string;
+  /** Bobblehead, giveaway, or similar, when known. */
+  promo?: string;
+  /** A moment worth naming, when known. Not a personal note. */
+  notable?: string;
+  /** Private. Kept off the night row, the share card, and the map. */
   note?: string;
   away?: boolean;
+  /** A neutral site, such as a Final Four. Not either team's home city. */
+  neutralSite?: boolean;
   /** Under the 5k map floor: logged, never rated, never a dot. */
   belowFloor?: boolean;
   /** In this metro. Away nights do not borrow the home city's rating. */

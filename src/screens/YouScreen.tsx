@@ -10,6 +10,7 @@ import {
   getSaveWarning,
   logStats,
   nightBackup,
+  nightFacts,
   ratingForNight,
   removePlan,
   setYouOrder,
@@ -21,6 +22,7 @@ import {
   type LoggedNight,
   type NightPlan,
 } from '../data';
+import { FactList } from '../components/FactList';
 import { clockTime, loggedDateLabel, longLocalDate } from '../lib/dates';
 
 const TOP = 8;
@@ -63,7 +65,7 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
     setExportNote('Downloaded a backup of your nights.');
   };
 
-  const plansBlock = <UpNext plans={plans} today={today} />;
+  const plansBlock = <UpNext plans={plans} today={today} nights={nights} />;
   const nightsBlock = (
     <section className="you-block" aria-labelledby="your-nights-heading">
       <h2 id="your-nights-heading" className="you-heading">
@@ -215,7 +217,7 @@ function CountList({ title, rows }: { title: string; rows: { label: string; coun
 }
 
 function NightRow({ night, rating }: { night: LoggedNight; rating: number | null }) {
-  const facts = [loggedDateLabel(night.when), night.venue, night.away ? 'Away' : '']
+  const facts = [loggedDateLabel(night.when), night.venue, night.neutralSite ? 'Neutral site' : night.away ? 'Away' : '']
     .filter(Boolean)
     .join(' · ');
   const extraTags = night.tags.filter((tag) => !night.title.includes(tag));
@@ -231,8 +233,7 @@ function NightRow({ night, rating }: { night: LoggedNight; rating: number | null
         <span className="log-title">{night.title}</span>
         <span className="log-facts">{facts}</span>
         {extraTags.length > 0 && <span className="log-facts">{extraTags.join(' · ')}</span>}
-        {night.result && <span className="log-result">{night.result}</span>}
-        {night.note && <span className="log-note">Note · {night.note}</span>}
+        <FactList facts={nightFacts(night)} />
       </span>
     </>
   );
@@ -246,7 +247,7 @@ function NightRow({ night, rating }: { night: LoggedNight; rating: number | null
   return <div className="log-row">{body}</div>;
 }
 
-function UpNext({ plans, today }: { plans: NightPlan[]; today: string }) {
+function UpNext({ plans, today, nights }: { plans: NightPlan[]; today: string; nights: LoggedNight[] }) {
   const next = plans[0];
   const [day, setDay] = useState<CityDate | null>(null);
 
@@ -276,6 +277,8 @@ function UpNext({ plans, today }: { plans: NightPlan[]; today: string }) {
 
   const others = (day?.events ?? []).filter((event) => event.id !== next.eventId);
   const later = plans.slice(1);
+  const logged = nights.find((night) => night.eventId !== undefined && night.eventId === next.eventId);
+  const before = logged ? nightFacts(logged, 'before') : [];
 
   return (
     <section className="you-block" aria-labelledby="up-next-heading">
@@ -320,6 +323,7 @@ function UpNext({ plans, today }: { plans: NightPlan[]; today: string }) {
             )}
           </div>
         )}
+        <FactList facts={before} />
         <p className="traffic-line">Estimate · not live</p>
         <button type="button" className="link-button" onClick={() => removePlan(next.id)}>
           Remove this plan
