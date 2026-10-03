@@ -558,7 +558,8 @@ button {
   overflow: hidden;
   padding: 8px 20px 0;
   will-change: transform;
-  background: var(--card);
+  background: var(--dodger);
+  color: #fff;
   border-radius: 28px 28px 0 0;
   box-shadow: 0 -4px 20px rgba(15, 27, 45, 0.1);
 }
@@ -594,20 +595,48 @@ button {
 
 .selected-row .event-row {
   background: #ffef9a;
+  color: var(--ink);
 }
 
 .sheet-handle {
   align-self: center;
-  align-self: center;
   width: 36px;
   height: 4px;
   border-radius: 2px;
-  background: #cbd3df;
+  background: rgba(255, 255, 255, 0.55);
 }
 
 .sheet-title {
   font-size: 17px;
   font-weight: 800;
+  color: #fff;
+}
+
+.sheet .event-list li {
+  border-bottom-color: rgba(255, 255, 255, 0.22);
+}
+
+.sheet .event-title,
+.sheet .section-title {
+  color: #fff;
+}
+
+.sheet .event-meta,
+.sheet .event-time,
+.sheet .quiet-note {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.sheet .event-row.selected .event-title,
+.selected-row .event-title {
+  color: var(--ink);
+}
+
+.sheet .event-row.selected .event-meta,
+.sheet .event-row.selected .event-time,
+.selected-row .event-meta,
+.selected-row .event-time {
+  color: var(--ink2);
 }
 
 .quiet-list {
@@ -1212,6 +1241,7 @@ button {
 
 .event-row.selected {
   background: #ffef9a;
+  color: var(--ink);
 }
 
 .event-time {
