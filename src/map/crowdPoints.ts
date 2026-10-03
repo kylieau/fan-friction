@@ -67,6 +67,14 @@ export function crowdPoints(events: CrowdEvent[], date: string): CrowdPoint[] {
   return points;
 }
 
+/**
+ * Map labels only. Always thousands with one decimal: 40000 → "40.0k", 17500 → "17.5k".
+ * The sheet and the event screen keep the full count.
+ */
+export function crowdThousands(count: number): string {
+  return `${(count / 1000).toFixed(1)}k`;
+}
+
 /** The kind of a crowd figure, for labels: "announced", "reported" or "estimated". */
 export function crowdKind(event: CrowdEvent): string | undefined {
   return (event.crowd.find((c) => c.count !== undefined) ?? event.crowd[0])?.kind;

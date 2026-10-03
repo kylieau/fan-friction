@@ -1,7 +1,7 @@
 // The hand-seeded test nights, served through the same plug-in shape a live
 // feed will use.
 
-import { LA_20261003_EVENTS, LA_20261003_RATING } from '../seed/la20261003';
+import { LA_20261003_EVENTS, LA_20261003_RATING, METRO_FEELS } from '../seed/la20261003';
 import { SEED_EVENTS, SEED_RATINGS } from '../seed/testNights';
 import type { EventSource, RatingSource } from './types';
 
@@ -14,6 +14,8 @@ export const seedEvents: EventSource = {
   eventsOn: async (metroId, date) => EVENTS.filter((e) => e.metroId === metroId && e.date === date),
   catalog: async (metroId) => EVENTS.filter((e) => e.metroId === metroId),
 };
+
+export { METRO_FEELS };
 
 export const seedRatings: RatingSource = {
   id: 'seed',

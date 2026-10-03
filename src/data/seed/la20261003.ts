@@ -3,10 +3,12 @@
 // and the convention-center marketplace are not pins.
 
 import type { Friction, Occasion } from '../../config/scoreLabels';
-import type { Assessment, CrowdEvent, DateRating } from '../types';
+import type { Assessment, CrowdEvent, CrowdFigure, DateRating } from '../types';
 
 const DATE = '2026-10-03';
 const SOURCE_ID = 'seed';
+
+const estimated = (count: number, note: string): CrowdFigure => ({ count, kind: 'estimated', note });
 
 const draft = (occasion: Occasion, facts: string[], friction: Friction, why: string): Assessment => ({
   occasion,
@@ -27,7 +29,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     place: { type: 'venue', venueId: 'dodger-stadium' },
     audience: { domain: 'sports', sport: 'baseball' },
     teams: { home: 'dodgers', away: 'braves' },
-    crowd: [],
+    crowd: [estimated(40000, 'Heat and a 1:08 pm first pitch look like they held demand down; tickets were still on sale and not scarce. Forecast about 100°F, feels like 103°. Dodger Stadium holds about 56,000. Not an announced attendance.')],
     assessment: draft('Marquee', ['NLDS Game 1', 'FOX'], 'Low', 'Afternoon playoff; the night cluster starts later'),
     sourceId: SOURCE_ID,
   },
@@ -41,7 +43,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     place: { type: 'venue', venueId: 'coliseum' },
     audience: { domain: 'sports', sport: 'football' },
     teams: { home: 'usc-football', away: 'washington-huskies' },
-    crowd: [],
+    crowd: [estimated(62000, 'Recent Coliseum games have drawn about 67,000. Heat and a 4:30 pm kickoff work against that; homecoming helps. The Coliseum holds 77,500. Not an announced attendance.')],
     assessment: draft('Notable', ['homecoming', 'NBC'], 'Moderate', 'Gets out as the Inglewood shows are starting'),
     sourceId: SOURCE_ID,
   },
@@ -55,7 +57,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     place: { type: 'venue', venueId: 'sofi-stadium' },
     audience: { domain: 'music', genre: 'pop' },
     performer: 'Bruno Mars',
-    crowd: [],
+    crowd: [estimated(70000, 'The Romantic Tour at SoFi. The venue lists about 70,240. The official SoFi page still says On Sale Now, so this is not a confirmed sellout.')],
     assessment: draft('Major', ['with Anderson .Paak and Raye'], 'Moderate', 'Forum and Intuit are next door, different crowds'),
     sourceId: SOURCE_ID,
   },
@@ -69,7 +71,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     place: { type: 'venue', venueId: 'kia-forum' },
     audience: { domain: 'music', genre: 'electronic' },
     performer: 'Klangkuenstler',
-    crowd: [],
+    crowd: [estimated(17500, 'Estimated from the Kia Forum concert capacity (about 17,500). No separate public attendance figure.')],
     assessment: draft('Notable', ['18+', 'terrace 5:00', 'doors 5:30'], 'Heavy', 'Same hour as Bruno Mars next door'),
     sourceId: SOURCE_ID,
   },
@@ -83,7 +85,11 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     place: { type: 'venue', venueId: 'intuit-dome' },
     audience: { domain: 'music', genre: 'k-pop' },
     performer: 'aespa',
-    crowd: [],
+    crowd: [{
+      kind: 'reported',
+      soldOut: true,
+      note: 'CashorTrade and resale listings treat the Intuit Dome show as sold out. About 18,000 seats; that is the room, not a published attendance.',
+    }],
     assessment: draft('Major', [], 'Heavy', 'Inglewood, an hour after Bruno Mars and the Forum'),
     sourceId: SOURCE_ID,
   },
@@ -97,10 +103,16 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     place: { type: 'venue', venueId: 'crypto-com-arena' },
     audience: { domain: 'music', genre: 'hip-hop' },
     performer: 'Ken Carson',
+    // No public crowd prediction. The convention-center marketplace is not this pin.
     crowd: [],
     assessment: draft('Notable', ['Ken Carson', 'doors 6:00'], 'Moderate', 'Downtown, same evening as the Inglewood cluster'),
     sourceId: SOURCE_ID,
   },
+];
+
+/** One feels-like for the whole metro. The Today map chip reads this. Not a temperature per pin. */
+export const METRO_FEELS: { metroId: string; date: string; feelsLikeF: number }[] = [
+  { metroId: 'la', date: DATE, feelsLikeF: 103 },
 ];
 
 export const LA_20261003_RATING: DateRating = {

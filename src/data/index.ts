@@ -5,7 +5,7 @@ import type { Metro } from '../config/metros';
 import { matchingNames } from './matchNight';
 import { espnEvents } from './sources/espnSource';
 import { mlbEvents } from './sources/mlbSource';
-import { seedEvents, seedRatings } from './sources/seedSource';
+import { METRO_FEELS, seedEvents, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
 import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, NightSearchHit } from './types';
 
@@ -63,6 +63,11 @@ export async function getEventsBetween(metroId: string, afterDate: LocalDate, th
 export async function getRatedDates(metroId: string): Promise<DateRating[]> {
   const lists = await Promise.all(RATING_SOURCES.map((s) => s.ratedDates(metroId)));
   return lists.flat().sort((a, b) => b.date.localeCompare(a.date));
+}
+
+/** The metro's feels-like temperature for a date, if one was seeded. One number, not a reading per pin. */
+export function feelsLikeF(metroId: string, date: LocalDate): number | undefined {
+  return METRO_FEELS.find((row) => row.metroId === metroId && row.date === date)?.feelsLikeF;
 }
 
 /** Today's date in the metro's own time zone, "2026-10-01". */

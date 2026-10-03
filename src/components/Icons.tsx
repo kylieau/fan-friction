@@ -80,6 +80,23 @@ export function ChevronRight() {
   );
 }
 
+/** A small sun for the Today feels-like line. Not a weather forecast. */
+export function SunIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" {...base} aria-hidden>
+      <circle cx="12" cy="12" r="4" />
+      <line x1="12" y1="2.5" x2="12" y2="5" />
+      <line x1="12" y1="19" x2="12" y2="21.5" />
+      <line x1="2.5" y1="12" x2="5" y2="12" />
+      <line x1="19" y1="12" x2="21.5" y2="12" />
+      <line x1="5.1" y1="5.1" x2="6.9" y2="6.9" />
+      <line x1="17.1" y1="17.1" x2="18.9" y2="18.9" />
+      <line x1="18.9" y1="5.1" x2="17.1" y2="6.9" />
+      <line x1="6.9" y1="17.1" x2="5.1" y2="18.9" />
+    </svg>
+  );
+}
+
 export function ArrowRight() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" {...base} strokeWidth={2} aria-hidden>

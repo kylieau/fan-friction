@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef } from 'react';
 import { LngLatBounds, Marker } from 'maplibre-gl';
 import { MapContext } from './BaseMap';
-import type { CrowdPoint } from './crowdPoints';
+import { crowdThousands, type CrowdPoint } from './crowdPoints';
 
 const SOURCE = 'crowds';
 
@@ -88,8 +88,8 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
     for (const p of points) bounds.extend(p.location);
     map.fitBounds(bounds, { padding: { top: insets.top + 20, bottom: insets.bottom + 20, left: 75, right: 75 }, maxZoom: 11.5, duration: 0 });
 
-    // Labels: just names, ★ for the biggest crowd and SOLD OUT. Counts (with their
-    // kind) and friction chips live in the list below, so the map stays readable.
+    // Labels: the name, the crowd in thousands (40.0k), ★ for the biggest, and SOLD OUT.
+    // Never a full count up here. The sheet keeps the fuller wording.
     // Dots that land close together share one label, so labels never pile up.
     const clusters: CrowdPoint[][] = [];
     for (const p of [...points].sort((x, y) => x.location[0] - y.location[0])) {
@@ -103,7 +103,7 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
     }
     // Each label tries above, below, right and left of its dots and takes the first
     // spot that stays on screen (above the sheet) and doesn't cover another label or dot.
-    const LABEL_W = 160;
+    const LABEL_W = 176;
     const view = { w: map.getContainer().clientWidth, h: map.getContainer().clientHeight - insets.bottom };
     type Box = { x0: number; y0: number; x1: number; y1: number };
     const taken: Box[] = points.map((p) => {
@@ -119,6 +119,7 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
         .map(
           (p) =>
             `<span class="crowd-line" data-id="${escapeHtml(p.event.id)}"><span class="crowd-name">${p.biggest ? '★ ' : ''}${escapeHtml(p.event.title)}</span>` +
+            (p.count !== undefined ? `<b class="tag-count">${escapeHtml(crowdThousands(p.count))}</b>` : '') +
             (p.dayTag ? `<b class="tag-day">${escapeHtml(p.dayTag)}</b>` : '') +
             (p.soldOut ? `<b class="tag-soldout">SOLD OUT</b>` : '') +
             `</span>`,
