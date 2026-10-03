@@ -47,7 +47,7 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 ## Sorted (Oct 3)
 **Structural, before Step 4** (the Nights calendar reuses the sheet, rows and tab bar):
 - Map fills the screen with header and sheet on top; two-height swipe sheet; mode switch beside the rating; question line only with a glow; yellow button no longer a second date picker; pin and row share one selection; "i" becomes the tip entry or goes.
-- Keep the tab list in one config so tabs can move later. Nights becomes the log ("I was there"); You = claimed attendance.
+- Keep the tab list in one config so tabs can move later. Nights = every night you can open, where "I was there" gets marked; You = only the nights marked "I was there" (titled "Your nights").
 - Tips: add Back and spotlight, or hold the tip.
 
 **Later**
@@ -60,5 +60,5 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 
 **Conflicts to settle** (your words win; flagging so the sources can be fixed):
 1. _(Withdrawn Oct 3: the "no event page" note and the "trim the tab bar" note were scratched by Kylie.)_
-2. The brief puts "Your nights" and the log in the You tab (Step 5), and Nights holds the calendar. Your note makes Nights the log and You only claimed attendance. Is that a swap, or is the log shown in both places?
+2. **Settled Oct 3 (Kylie):** Nights is every night you can open (Famous nights, the full calendar, search). You is only the nights you marked "I was there." "Your nights" is the voice of that You list, not a second copy of the log. Nothing is shown in both places.
 3. Step 6 planned blue corridors; your note has three cues (Light / Heavy / Skip) on the same map.
