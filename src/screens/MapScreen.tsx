@@ -5,6 +5,7 @@ import { getCityDate, getEventsBetween, getUpcoming, type CityDate, type CrowdEv
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { crowdKind, crowdPoints } from '../map/crowdPoints';
+import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { NightScore } from '../components/NightScore';
 import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, SearchIcon } from '../components/Icons';
@@ -76,8 +77,8 @@ export function MapScreen() {
     () => (span === 'day' ? dayEvents : [...dayEvents, ...weekAhead]),
     [span, dayEvents, weekAhead],
   );
-  // The map shows one pin and label per venue: the next event there. The sheet's list
-  // still holds every event, and picking one from it rings its venue's pin.
+  // The map shows one pin and label per venue: the next event there. The sheet
+  // lists the events inside the map after it settles, and picking one rings its pin.
   const { points, pinFor } = useMemo(() => {
     const all = shown && mode === 'crowds' ? crowdPoints(events, date) : [];
     all.sort((a, b) => (a.event.date + (a.event.start ?? '')).localeCompare(b.event.date + (b.event.start ?? '')));
@@ -107,13 +108,12 @@ export function MapScreen() {
         ? '1 event'
         : `${dayEvents.length} events`;
 
-  const nightLine = !shown
-    ? ' '
-    : dayEvents.length === 0
-      ? `${isToday ? 'Quiet so far today.' : 'Quiet on this date.'}${events.length > 0 ? ' Showing the next 7 days.' : ''}`
-      : rating
-        ? `Squeezed most: ${rating.squeezedMost}`
-        : 'Big events that day';
+  const [bounds, setBounds] = useState<ViewBounds | null>(null);
+  useEffect(() => {
+    setBounds(null);
+  }, [metro.id, date, span]);
+  const onMap = useMemo(() => events.filter((event) => eventInBounds(event, bounds)), [events, bounds]);
+  const nightLine = shown ? 'On the map' : ' ';
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);
@@ -149,6 +149,7 @@ export function MapScreen() {
       <div className="map-area" onPointerDown={() => setMenu(null)}>
         <BaseMap metro={metro}>
           <CrowdLayer points={points} selectedId={pinFor(selectedId)} onSelect={select} insets={INSETS} />
+          <MapSettle onSettle={setBounds} />
         </BaseMap>
       </div>
 
@@ -237,9 +238,9 @@ export function MapScreen() {
         </div>
 
         <div className="sheet-body" ref={bodyRef}>
-          {events.length > 0 && (
+          {onMap.length > 0 && (
             <ul className="event-list">
-              {events.map((e) => (
+              {onMap.map((e) => (
                 <li key={e.id}>
                   <EventRow
                     event={e}
