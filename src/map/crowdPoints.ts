@@ -75,6 +75,30 @@ export function crowdThousands(count: number): string {
   return `${(count / 1000).toFixed(1)}k`;
 }
 
+/** The room size used when a sold-out show has no separate count. */
+export function eventCapacity(event: CrowdEvent): number | undefined {
+  if (event.place.type !== 'venue') return undefined;
+  const venue = VENUES[event.place.venueId];
+  if (!venue) return undefined;
+  const setup = event.audience.domain === 'sports' ? SETUP_BY_SPORT[event.audience.sport] : 'concert';
+  return capacityOn(venue, event.date, setup);
+}
+
+/**
+ * Short crowd wording. The sheet says "est" for an estimate; the map chip does not.
+ * A sold-out show with no count of its own uses the room size, and that number is not "est".
+ */
+export function crowdShort(event: CrowdEvent, capacity = eventCapacity(event), withEst = true): string {
+  const figure = event.crowd.find((c) => c.count !== undefined);
+  const sold = event.crowd.some((c) => c.soldOut);
+  if (figure?.count !== undefined) {
+    const est = withEst && figure.kind === 'estimated' ? ' est' : '';
+    return `${crowdThousands(figure.count)}${est}${sold ? ' (sold out)' : ''}`;
+  }
+  if (sold && capacity) return `${crowdThousands(capacity)} (sold out)`;
+  return sold ? 'Sold out' : 'No count yet';
+}
+
 /** The kind of a crowd figure, for labels: "announced", "reported" or "estimated". */
 export function crowdKind(event: CrowdEvent): string | undefined {
   return (event.crowd.find((c) => c.count !== undefined) ?? event.crowd[0])?.kind;

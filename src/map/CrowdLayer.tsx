@@ -2,7 +2,8 @@ import { useContext, useEffect, useRef } from 'react';
 import { LngLatBounds, Marker } from 'maplibre-gl';
 import { MapContext } from './BaseMap';
 import { clockTime } from '../lib/dates';
-import { crowdThousands, type CrowdPoint } from './crowdPoints';
+import { mapTitle } from '../lib/eventTitle';
+import { crowdShort, type CrowdPoint } from './crowdPoints';
 
 const SOURCE = 'crowds';
 
@@ -114,10 +115,12 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
       for (const p of points) {
         const el = document.createElement('div');
         el.className = 'crowd-label';
-        const name = `${p.biggest ? '★ ' : ''}${escapeHtml(p.event.title)}`;
+        const name = `${p.biggest ? '★ ' : ''}${escapeHtml(mapTitle(p.event))}`;
+        const series = p.event.series ? `<span class="crowd-series">${escapeHtml(p.event.series)}</span>` : '';
         el.innerHTML =
           `<span class="crowd-line" data-id="${escapeHtml(p.event.id)}">` +
           `<span class="crowd-name">${name}</span>` +
+          series +
           `<span class="crowd-meta">${escapeHtml(chipDetail(p))}</span>` +
           `</span>`;
         el.addEventListener('click', (ev) => {
@@ -202,7 +205,7 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
 /** Line 2 of a map chip: "1:08 pm · 40.0k". A different day is named first. */
 function chipDetail(p: CrowdPoint): string {
   const time = p.event.start ? clockTime(p.event.start) : 'Time n/a';
-  const crowd = p.count !== undefined ? crowdThousands(p.count) : p.soldOut ? 'Sold out' : 'No count yet';
+  const crowd = crowdShort(p.event, p.capacity, false);
   return p.dayTag ? `${p.dayTag} · ${time} · ${crowd}` : `${time} · ${crowd}`;
 }
 

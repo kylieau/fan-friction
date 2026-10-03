@@ -4,12 +4,13 @@ import { areaMetros, DEFAULT_METRO, type Metro } from '../config/metros';
 import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
-import { crowdPoints, crowdThousands } from '../map/crowdPoints';
+import { crowdPoints, crowdShort } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { NightScore } from '../components/NightScore';
 import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, SearchIcon, SunIcon } from '../components/Icons';
 import { eventChip } from '../lib/chips';
+import { listTitle } from '../lib/eventTitle';
 import { addDays, clockTime, shortLocalDate } from '../lib/dates';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { nightsPath, useView, whenLabel, type WhenSpan } from '../lib/view';
@@ -238,7 +239,7 @@ export function MapScreen() {
             <div className="legend-card" role="note">
               <b>Gold glow</b> marks where an event was. Wider means a bigger venue. Stronger means the known crowd filled more of it;
               faint means no count found yet. <b>★</b> is the biggest known crowd that day. A count reads in
-              thousands, like 40.0k. The list adds “est” when that number is an estimate. Sold out and no count yet stay in words.
+              thousands, like 40.0k. The list adds “est” when that number is an estimate. A sold-out show with a known room size shows that size, like 18.0k (sold out). No count yet stays in words.
             </div>
           )}
         </>
@@ -299,7 +300,7 @@ export function MapScreen() {
                     <Link to={`/?date=${e.date}&when=day`} className="event-row">
                       <span className="event-time">{shortLocalDate(e.date)}</span>
                       <span className="event-main">
-                        <span className="event-title">{e.title}</span>
+                        <span className="event-title">{listTitle(e)}</span>
                         <span className="event-meta">{e.start ? clockTime(e.start) : 'Time n/a'}</span>
                       </span>
                     </Link>
@@ -364,16 +365,7 @@ function AreaSwitcher({
   );
 }
 
-/** Same thousands shorthand as the map, plus "est" when the number is an estimate. Sold out and no count stay in words. */
-function crowdWords(event: CrowdEvent): string {
-  const figure = event.crowd.find((c) => c.count !== undefined);
-  const sold = event.crowd.some((c) => c.soldOut);
-  if (figure?.count !== undefined) {
-    const words = `${crowdThousands(figure.count)}${figure.kind === 'estimated' ? ' est' : ''}`;
-    return sold ? `${words} · sold out` : words;
-  }
-  return sold ? 'Sold out' : 'No count yet';
-}
+/** Same short crowd line as the map chip. */
 
 /** One event: title, then time and the labeled crowd, plus one chip. */
 function EventRow({ event: e, selected, onPick, showDate }: { event: CrowdEvent; selected?: boolean; onPick?: () => void; showDate?: boolean }) {
@@ -383,9 +375,9 @@ function EventRow({ event: e, selected, onPick, showDate }: { event: CrowdEvent;
   const body = (
     <>
       <span className="event-main">
-        <span className="event-title">{e.title}</span>
+        <span className="event-title">{listTitle(e)}</span>
         <span className="event-meta">
-          {when} · {crowdWords(e)}
+          {when} · {crowdShort(e)}
         </span>
       </span>
       {chip && <span className={`chip ${chip.kind === 'friction' ? 'chip-friction' : 'chip-why'}`}>{chip.text}</span>}

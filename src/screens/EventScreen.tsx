@@ -20,6 +20,7 @@ import { FactList } from '../components/FactList';
 import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
+import { listTitle } from '../lib/eventTitle';
 import { longLocalDate } from '../lib/dates';
 import { hoursOf, milesBetween, runningHours } from '../lib/windows';
 
@@ -72,7 +73,7 @@ export function EventScreen() {
       </Link>
 
       <header className="event-head">
-        <h1 className="page-title">{e.title}</h1>
+        <h1 className="page-title">{listTitle(e)}</h1>
         <div className="event-sub">
           {me.venueName}
           {e.start ? ` · ${clockTime(e.start)}` : ''}
@@ -155,7 +156,7 @@ export function EventScreen() {
 
       <ShareCard
         dateLabel={longLocalDate(date)}
-        title={e.title}
+        title={listTitle(e)}
         line={a ? (showFriction(a.friction) ? `${frictionLabel(a.friction)}: ${a.why}.` : a.why) : ''}
         rating={day.rating ? day.rating.rating : null}
         crowd={me.count !== undefined ? `${fmt(me.count)} ${kind}` : me.soldOut ? 'Sold out' : null}
