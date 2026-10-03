@@ -90,3 +90,4 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 **Open, decide after Step 5:** team and artist (fanbase) pages as the answer to the "fake fan" claim, and what that means for the Compare tab.
 **Parked:** logging a role (at event A / B / in the city); replacing the tips with "log your first night."
 **Not adopted:** past/future split, renaming tabs, dropping the map as a destination, user-set friction scores, a friends feed, venue pages as the main page.
+- **Following (Kylie, Oct 3):** a personal list of teams, venues and artists you follow, which filters "Coming up" to them and can drive the one ping. Not a social feed: no other users' content. Lives in You; needs saving (Step 5). Team/artist pages, if built, are where Follow sits.
