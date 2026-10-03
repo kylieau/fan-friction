@@ -349,8 +349,7 @@ button {
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.15);
 }
 
-/* The When control hangs on the map, under the area header, as one pill.
-   The question line sits under it, and only when the map has something to answer. */
+/* The When control hangs on the map, under the area header, as one pill. */
 /* Feels-like for Today only: one line under the header, left side, not a control. */
 .map-feels {
   position: absolute;
@@ -394,30 +393,6 @@ button {
   align-items: center;
   gap: 8px;
   max-width: calc(100% - 24px);
-}
-
-.map-question {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 12px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.2);
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--ink2);
-  white-space: nowrap;
-}
-
-.estimate-chip {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--dodger);
-  background: var(--card);
-  border: 1.5px solid var(--dodger);
-  border-radius: 999px;
-  padding: 1px 8px;
 }
 
 /* The map credit (the little "i"): required by the map's license, so it stays,

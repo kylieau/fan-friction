@@ -220,12 +220,6 @@ export function MapScreen() {
               onOpenChange={(next) => setMenu(next ? 'when' : null)}
             />
           </div>
-          {(mode === 'traffic' || points.length > 0) && (
-            <div className="map-question">
-              {mode === 'crowds' ? 'Where did the crowds go?' : 'Should I brave the roads?'}
-              {mode === 'traffic' && <span className="estimate-chip">Estimate · not live</span>}
-            </div>
-          )}
         </div>
         {showFeels && (
           <div className="map-feels">
