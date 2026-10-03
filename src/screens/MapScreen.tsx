@@ -194,12 +194,14 @@ export function MapScreen() {
           </Link>
         </div>
         <div className="map-header-score">
-          {span === 'day' && <div className="map-header-date">{headerDate(date)}</div>}
+          <div className="map-header-dateblock">
+            {span === 'day' && <div className="map-header-date">{headerDate(date)}</div>}
+            {caption.trim() && <div className="map-header-count">{caption}</div>}
+          </div>
           <NightScore
             rating={headerRating}
             quiet={showScore && shown?.status === 'quiet'}
             showScore={showScore}
-            caption={caption}
           />
         </div>
         <div className="map-chrome">

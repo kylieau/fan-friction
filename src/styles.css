@@ -183,6 +183,14 @@ button {
   gap: 12px;
 }
 
+.map-header-dateblock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 0;
+}
+
 .map-header-date {
   padding-top: 4px;
   font-family: 'Big Shoulders Display', sans-serif;
@@ -190,6 +198,14 @@ button {
   font-weight: 700;
   line-height: 0.95;
   color: var(--ink);
+  white-space: nowrap;
+}
+
+.map-header-count {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink2);
   white-space: nowrap;
 }
 
