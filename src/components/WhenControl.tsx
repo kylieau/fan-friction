@@ -18,17 +18,16 @@ interface Props {
 
 /**
  * The one When control, drawn as the on-map pill: Today, Next 7 days,
- * or Pick a date. A range keeps the base date, and the header
- * rating still describes that date.
+ * or Pick a date. Next 7 days is just those words. A single day keeps
+ * its own date on the pill.
  */
 export function WhenControl({ metro, date, today, isToday, span, open, onOpenChange }: Props) {
   const navigate = useNavigate();
   const menuId = useId();
 
-  const dayLabel = isToday ? 'Today' : shortLocalDate(date);
   const label =
     span === 'week'
-      ? `${dayLabel} · Next 7 days`
+      ? 'Next 7 days'
       : isToday
         ? `Today · ${shortDate(new Date(), metro)}`
         : shortLocalDate(date);
