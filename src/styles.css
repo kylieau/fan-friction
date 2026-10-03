@@ -252,8 +252,7 @@ button {
 .when-menu {
   position: absolute;
   top: calc(100% + 6px);
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   z-index: 6;
   min-width: 196px;
   padding: 6px;
@@ -387,13 +386,33 @@ button {
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.15);
 }
 
-/* The When control hangs on the map, under the area header, as one pill. */
-/* Feels-like for Today only: one line under the header, left side, not a control. */
-.map-feels {
+/* When sits at the map's top left. Today's temperature is plain type beside it, not a pill. */
+.map-chrome {
   position: absolute;
-  top: calc(100% + 12px);
-  left: 16px;
-  z-index: 2;
+  top: calc(100% + 8px);
+  left: 12px;
+  right: 12px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.map-chrome-left,
+.map-chrome .segmented {
+  pointer-events: auto;
+}
+
+.map-chrome-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.map-feels {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -406,6 +425,7 @@ button {
   font-size: 13px;
   line-height: 1.2;
   color: var(--ink2);
+  white-space: nowrap;
 }
 
 .map-feels span {
@@ -421,20 +441,8 @@ button {
   filter: drop-shadow(0 0 1px #fff);
 }
 
-.map-pills {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  max-width: calc(100% - 24px);
-}
-
-.map-pills .segmented {
+.map-chrome .segmented {
+  flex-shrink: 0;
   box-shadow: 0 1px 4px rgba(15, 27, 45, 0.2);
 }
 
@@ -1577,9 +1585,9 @@ button {
 
 .legend-button {
   position: absolute;
-  top: 168px;
-  right: 12px;
-  z-index: 2;
+  left: 12px;
+  bottom: 96px;
+  z-index: 4;
   width: 36px;
   height: 36px;
   border-radius: 18px;
@@ -1592,12 +1600,16 @@ button {
   cursor: pointer;
 }
 
+.map-screen.sheet-open .legend-button {
+  bottom: calc(var(--sheet-h, 190px) + 12px);
+}
+
 .legend-card {
   position: absolute;
-  top: 214px;
-  right: 12px;
   left: 12px;
-  z-index: 2;
+  right: 12px;
+  bottom: 144px;
+  z-index: 4;
   padding: 14px 16px;
   border-radius: 16px;
   background: var(--card);
@@ -1605,6 +1617,10 @@ button {
   font-size: 13px;
   line-height: 1.45;
   color: var(--ink2);
+}
+
+.map-screen.sheet-open .legend-card {
+  bottom: calc(var(--sheet-h, 190px) + 60px);
 }
 
 .legend-card b {

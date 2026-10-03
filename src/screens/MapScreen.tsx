@@ -202,17 +202,25 @@ export function MapScreen() {
             caption={caption}
           />
         </div>
-        <div className="map-pills">
-          <div ref={whenRef}>
-            <WhenControl
-              metro={metro}
-              date={date}
-              today={today}
-              isToday={isToday}
-              span={span}
-              open={menu === 'when'}
-              onOpenChange={(next) => setMenu(next ? 'when' : null)}
-            />
+        <div className="map-chrome">
+          <div className="map-chrome-left">
+            <div ref={whenRef}>
+              <WhenControl
+                metro={metro}
+                date={date}
+                today={today}
+                isToday={isToday}
+                span={span}
+                open={menu === 'when'}
+                onOpenChange={(next) => setMenu(next ? 'when' : null)}
+              />
+            </div>
+            {showFeels && (
+              <div className="map-feels">
+                <SunIcon />
+                <span>{feels}°</span>
+              </div>
+            )}
           </div>
           <div className="segmented small" role="tablist" aria-label="Map mode">
             <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
@@ -223,12 +231,6 @@ export function MapScreen() {
             </button>
           </div>
         </div>
-        {showFeels && (
-          <div className="map-feels">
-            <SunIcon />
-            <span>{feels}°</span>
-          </div>
-        )}
       </header>
 
       {points.length > 0 && (
