@@ -1,8 +1,10 @@
 import { useState } from 'react';
 
 // The skippable three-tip guide shown the first time the app opens.
-// Tip 1's wording is from the mockup; tip 3 is Kylie's approved wording; tip 2 was
-// redrafted for the Night + friction model and needs her OK.
+// Tip 1's wording is from the mockup; tip 2 was redrafted for the Night + friction
+// model and needs her OK. The old tip 3 ("Any night. Your nights too.") is on hold: it named
+// Nights and "I was there", which aren't on the map. A tip only goes in once the control it
+// points at is on the screen it shows over.
 const TIPS = [
   {
     title: 'Gold glow = where the crowds went.',
@@ -11,10 +13,6 @@ const TIPS = [
   {
     title: 'Friction = what it was up against.',
     body: 'Every date is rated from Chill to Cooked. Each big event shows its friction, from Low to Extreme: other big events, traffic, weather.',
-  },
-  {
-    title: 'Any night. Your nights too.',
-    body: 'Pick any past night from Nights. Went to something? Tap "I was there" and it lands in You.',
   },
 ];
 
@@ -36,9 +34,15 @@ export function FirstRunTips({ onDone }: { onDone: () => void }) {
           <div className="tip-body">{tip.body}</div>
         </div>
         <div className="tip-actions">
-          <button type="button" className="link-button" onClick={onDone}>
-            Skip tips
-          </button>
+          {index > 0 ? (
+            <button type="button" className="link-button" onClick={() => setIndex(index - 1)}>
+              Back
+            </button>
+          ) : (
+            <button type="button" className="link-button" onClick={onDone}>
+              Skip tips
+            </button>
+          )}
           <button
             type="button"
             className="gold-button small"

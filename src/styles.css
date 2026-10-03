@@ -139,23 +139,48 @@ button {
 
 .map-screen {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
+.map-area {
+  position: absolute;
+  inset: 0;
+  background: #edf0f4;
+}
+
+.basemap {
+  position: absolute;
+  inset: 0;
+}
+
+/* The header and the sheet float on the map. */
 .map-header {
-  padding: calc(16px + env(safe-area-inset-top, 0px)) 20px 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: calc(8px + env(safe-area-inset-top, 0px)) 16px 12px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  background: var(--bg);
-  z-index: 2;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 2px 14px rgba(15, 27, 45, 0.12);
 }
 
 .map-header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.map-header-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
 }
 
 .date-button {
@@ -181,6 +206,13 @@ button {
   background: var(--track);
 }
 
+.segmented.small {
+  flex-shrink: 0;
+  height: 34px;
+  padding: 3px;
+  border-radius: 17px;
+}
+
 .segmented button {
   flex: 1;
   border: none;
@@ -191,20 +223,36 @@ button {
   font-weight: 700;
 }
 
+.segmented.small button {
+  padding: 0 12px;
+  border-radius: 14px;
+  font-size: 13px;
+}
+
 .segmented button[aria-selected='true'] {
   background: var(--card);
   color: var(--dodger);
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.15);
 }
 
+/* A small pill under the header; only there when the map has something to answer it with. */
 .map-question {
+  position: absolute;
+  top: 154px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
-  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.2);
+  font-size: 12px;
+  font-weight: 700;
   color: var(--ink2);
+  white-space: nowrap;
 }
 
 .estimate-chip {
@@ -217,20 +265,14 @@ button {
   padding: 1px 8px;
 }
 
-.map-area {
-  position: relative;
-  flex: 1;
-  min-height: 0;
-  background: #edf0f4;
-}
-
-.basemap {
-  position: absolute;
-  inset: 0;
-}
-
+/* The map credit (the little "i"): required by the map's license, so it stays,
+   kept just above the sheet. */
 .maplibregl-ctrl-bottom-right {
-  bottom: 256px;
+  bottom: 190px;
+}
+
+.map-screen.sheet-open .maplibregl-ctrl-bottom-right {
+  bottom: calc(52% + 8px);
 }
 
 /* ---------- Night score ---------- */
@@ -318,14 +360,38 @@ button {
   z-index: 3;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding: 12px 20px 16px;
+  gap: 12px;
+  max-height: 52%;
+  padding: 8px 20px 16px;
   background: var(--card);
   border-radius: 28px 28px 0 0;
   box-shadow: 0 -4px 20px rgba(15, 27, 45, 0.1);
 }
 
+.sheet-grab {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
+  touch-action: none;
+  cursor: grab;
+  outline: none;
+}
+
+.sheet-body {
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.selected-row .event-row {
+  background: #fff8d6;
+}
+
 .sheet-handle {
+  align-self: center;
   align-self: center;
   width: 36px;
   height: 4px;
@@ -654,10 +720,11 @@ button {
   box-shadow: 0 1px 4px rgba(15, 27, 45, 0.22);
   font-size: 12px;
   line-height: 1.25;
-  pointer-events: none;
 }
 
 .crowd-line {
+  cursor: pointer;
+  border-radius: 6px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -699,8 +766,6 @@ button {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 116px;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
 }
@@ -717,9 +782,18 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 6px 0;
+  width: 100%;
+  padding: 8px 6px;
+  border: none;
+  border-radius: 10px;
+  background: none;
   color: inherit;
+  text-align: left;
   text-decoration: none;
+}
+
+.event-row.selected {
+  background: #fff8d6;
 }
 
 .event-time {
@@ -754,6 +828,11 @@ button {
   font-weight: 800;
   border-radius: 999px;
   padding: 3px 9px;
+}
+
+.chip-why {
+  color: var(--ink2);
+  background: var(--track);
 }
 
 .chip-friction {
@@ -1050,7 +1129,7 @@ button {
 
 .legend-button {
   position: absolute;
-  top: 12px;
+  top: 154px;
   right: 12px;
   z-index: 2;
   width: 36px;
@@ -1067,7 +1146,7 @@ button {
 
 .legend-card {
   position: absolute;
-  top: 56px;
+  top: 198px;
   right: 12px;
   left: 12px;
   z-index: 2;
@@ -1086,4 +1165,13 @@ button {
 
 .coming-up {
   margin-top: 14px;
+}
+
+.crowd-line.selected {
+  background: #fff3b0;
+  box-shadow: 0 0 0 3px #fff3b0;
+}
+
+.coming-up .event-time {
+  width: 88px;
 }

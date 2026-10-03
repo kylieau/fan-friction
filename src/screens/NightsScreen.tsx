@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { SearchIcon } from '../components/Icons';
 import { DEFAULT_METRO } from '../config/metros';
 import { scoreLabel } from '../config/scoreLabels';
-import { getRatedDates, type DateRating } from '../data';
+import { getRatedDates, todayIn, type DateRating } from '../data';
 
 /** "Fri, Oct 25, 2024" from "2024-10-25", without time-zone drift. */
 function longDate(date: string) {
@@ -33,6 +33,10 @@ export function NightsScreen() {
     getRatedDates(metro.id).then(setFamous);
   }, [metro.id]);
 
+  // A famous night that fell on today's month and day in some earlier year, if there is one.
+  const monthDayToday = todayIn(metro).slice(5);
+  const onThisDay = famous?.find((r) => r.date.slice(5) === monthDayToday) ?? null;
+
   return (
     <div className="screen page">
       <h1 className="page-title">Nights</h1>
@@ -42,8 +46,29 @@ export function NightsScreen() {
       </label>
       <div className="card empty-card">
         <div className="card-title">The calendar is on its way.</div>
-        <div className="card-body">A calendar shaded by each date's rating arrives in step 4.</div>
+        <div className="card-body">Soon: a calendar shaded by each date's rating.</div>
       </div>
+
+      {onThisDay && (
+        <section className="famous">
+          <h2 className="section-title">On this night</h2>
+          <ul className="famous-list">
+            <li>
+              <Link to={`/?date=${onThisDay.date}`} className="famous-row">
+                <span className={`rating-badge ${badgeClass(onThisDay.rating)}`} aria-hidden>
+                  {onThisDay.rating}
+                </span>
+                <span className="famous-text">
+                  <span className="famous-headline">{onThisDay.headline}</span>
+                  <span className="famous-meta">
+                    {scoreLabel(onThisDay.rating)} · {onThisDay.rating}/10 · {longDate(onThisDay.date)}
+                  </span>
+                </span>
+              </Link>
+            </li>
+          </ul>
+        </section>
+      )}
 
       {famous && famous.length > 0 && (
         <section className="famous">

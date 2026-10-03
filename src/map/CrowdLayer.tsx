@@ -1,19 +1,29 @@
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { LngLatBounds, Marker } from 'maplibre-gl';
 import { MapContext } from './BaseMap';
 import type { CrowdPoint } from './crowdPoints';
 
 const SOURCE = 'crowds';
-/** About how tall the bottom sheet is, so labels stay clear of it. */
-const SHEET_HEIGHT = 270;
+
+interface Props {
+  points: CrowdPoint[];
+  /** The event picked in the list or on the map; its dot gets a ring and its label a highlight. */
+  selectedId: string | null;
+  /** Called with an event id (a label or dot was tapped) or null (empty map was tapped). */
+  onSelect: (id: string | null) => void;
+  /** Space under the header and the collapsed sheet, kept clear of dots and labels. */
+  insets: { top: number; bottom: number };
+}
 
 /**
  * The Crowds layer: a gold glow at each venue (bigger for bigger venues,
  * stronger when the known crowd filled more of it) plus a small label.
  * Draws nothing when there are no points, so a quiet date leaves the plain map.
  */
-export function CrowdLayer({ points }: { points: CrowdPoint[] }) {
+export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
   const map = useContext(MapContext);
+  const selectRef = useRef(onSelect);
+  selectRef.current = onSelect;
 
   useEffect(() => {
     if (!map || points.length === 0) return;
@@ -25,7 +35,7 @@ export function CrowdLayer({ points }: { points: CrowdPoint[] }) {
         features: points.map((p) => ({
           type: 'Feature',
           geometry: { type: 'Point', coordinates: p.location },
-          properties: { capacity: p.capacity ?? 20000, fill: p.fill ?? -1 },
+          properties: { id: p.event.id, venue: p.venueName, capacity: p.capacity ?? 20000, fill: p.fill ?? -1 },
         })),
       },
     });
@@ -51,10 +61,31 @@ export function CrowdLayer({ points }: { points: CrowdPoint[] }) {
       },
     });
 
+    map.addLayer({
+      id: 'crowd-selected',
+      type: 'circle',
+      source: SOURCE,
+      filter: ['==', ['get', 'id'], ''],
+      paint: { 'circle-color': 'rgba(0,0,0,0)', 'circle-radius': 13, 'circle-stroke-color': '#0f1b2d', 'circle-stroke-width': 3 },
+    });
+
+    // Tapping a dot picks its event (the first one, where several share a venue; their labels pick each one).
+    const onDot = (e: { features?: { properties?: Record<string, unknown> }[]; originalEvent?: Event }) => {
+      const id = e.features?.[0]?.properties?.id;
+      if (typeof id === 'string') selectRef.current(id);
+    };
+    const onEmpty = (e: { point: { x: number; y: number } }) => {
+      const hit = map.queryRenderedFeatures([e.point.x, e.point.y] as never, { layers: ['crowd-core', 'crowd-glow'] });
+      if (hit.length === 0) selectRef.current(null);
+    };
+    map.on('click', 'crowd-core', onDot as never);
+    map.on('click', 'crowd-glow', onDot as never);
+    map.on('click', onEmpty as never);
+
     // Frame every event, leaving room for the date header above and the sheet below.
     const bounds = new LngLatBounds();
     for (const p of points) bounds.extend(p.location);
-    map.fitBounds(bounds, { padding: { top: 60, bottom: 300, left: 75, right: 75 }, maxZoom: 11.5, duration: 0 });
+    map.fitBounds(bounds, { padding: { top: insets.top + 20, bottom: insets.bottom + 20, left: 75, right: 75 }, maxZoom: 11.5, duration: 0 });
 
     // Labels: just names, ★ for the biggest crowd and SOLD OUT. Counts (with their
     // kind) and friction chips live in the list below, so the map stays readable.
@@ -72,7 +103,7 @@ export function CrowdLayer({ points }: { points: CrowdPoint[] }) {
     // Each label tries above, below, right and left of its dots and takes the first
     // spot that stays on screen (above the sheet) and doesn't cover another label or dot.
     const LABEL_W = 160;
-    const view = { w: map.getContainer().clientWidth, h: map.getContainer().clientHeight - SHEET_HEIGHT };
+    const view = { w: map.getContainer().clientWidth, h: map.getContainer().clientHeight - insets.bottom };
     type Box = { x0: number; y0: number; x1: number; y1: number };
     const taken: Box[] = points.map((p) => {
       const at = map.project(p.location);
@@ -86,11 +117,16 @@ export function CrowdLayer({ points }: { points: CrowdPoint[] }) {
       el.innerHTML = group
         .map(
           (p) =>
-            `<span class="crowd-line"><span class="crowd-name">${p.biggest ? '★ ' : ''}${escapeHtml(p.event.title)}</span>` +
+            `<span class="crowd-line" data-id="${escapeHtml(p.event.id)}"><span class="crowd-name">${p.biggest ? '★ ' : ''}${escapeHtml(p.event.title)}</span>` +
             (p.soldOut ? `<b class="tag-soldout">SOLD OUT</b>` : '') +
             `</span>`,
         )
         .join('');
+      el.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        const id = (ev.target as HTMLElement).closest<HTMLElement>('.crowd-line')?.dataset.id;
+        if (id) selectRef.current(id);
+      });
       const lng = group.reduce((sum, p) => sum + p.location[0], 0) / group.length;
       const lat = group.reduce((sum, p) => sum + p.location[1], 0) / group.length;
       const at = map.project([lng, lat]);
@@ -109,7 +145,7 @@ export function CrowdLayer({ points }: { points: CrowdPoint[] }) {
         { anchor: 'right', offset: [gx0 - at.x - 14, 0], box: { x0: gx0 - 14 - LABEL_W, y0: at.y - h / 2, x1: gx0 - 14, y1: at.y + h / 2 } },
       ] as const;
       const fits = (o: (typeof options)[number]) =>
-        o.box.x0 >= 4 && o.box.x1 <= view.w - 4 && o.box.y0 >= 4 && o.box.y1 <= view.h && !taken.some((t) => clash(o.box, t));
+        o.box.x0 >= 4 && o.box.x1 <= view.w - 4 && o.box.y0 >= insets.top && o.box.y1 <= view.h && !taken.some((t) => clash(o.box, t));
       const pick = options.find(fits) ?? options[0];
       taken.push(pick.box);
       return new Marker({ element: el, anchor: pick.anchor, offset: [...pick.offset] })
@@ -119,11 +155,24 @@ export function CrowdLayer({ points }: { points: CrowdPoint[] }) {
 
     return () => {
       for (const m of markers) m.remove();
+      map.off('click', 'crowd-core', onDot as never);
+      map.off('click', 'crowd-glow', onDot as never);
+      map.off('click', onEmpty as never);
+      if (map.getLayer('crowd-selected')) map.removeLayer('crowd-selected');
       if (map.getLayer('crowd-core')) map.removeLayer('crowd-core');
       if (map.getLayer('crowd-glow')) map.removeLayer('crowd-glow');
       if (map.getSource(SOURCE)) map.removeSource(SOURCE);
     };
-  }, [map, points]);
+  }, [map, points, insets.top, insets.bottom]);
+
+  // Selection is one thing: the ring on the dot and the highlight on its label follow the same id.
+  useEffect(() => {
+    if (!map || points.length === 0) return;
+    if (map.getLayer('crowd-selected')) map.setFilter('crowd-selected', ['==', ['get', 'id'], selectedId ?? '']);
+    for (const line of map.getContainer().querySelectorAll<HTMLElement>('.crowd-line')) {
+      line.classList.toggle('selected', line.dataset.id === selectedId);
+    }
+  }, [map, points, selectedId]);
 
   return null;
 }

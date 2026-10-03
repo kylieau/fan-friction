@@ -6,16 +6,13 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
         <h1 className="page-title">You</h1>
       </div>
       <div className="card empty-card">
-        <div className="card-title">Your plans and nights live here.</div>
-        <div className="card-body">
-          Up next, Your nights (with your real logs), team and sport filters, and plain stats arrive
-          in step 5.
-        </div>
+        <div className="card-title">Your nights will live here.</div>
+        <div className="card-body">Nights you mark "I was there" will collect here, along with plain stats about them.</div>
       </div>
       <div className="settings">
         <div className="settings-heading">Settings</div>
         <button type="button" className="settings-row" onClick={onShowTips}>
-          Show the three tips again
+          Show the tips again
         </button>
       </div>
     </div>

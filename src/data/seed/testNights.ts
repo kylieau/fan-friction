@@ -184,7 +184,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Major', ['rivalry'], 'Moderate', 'Three big events same evening, different crowds'],
   }),
   show(D5, {
-    performer: 'BLACKPINK', genre: 'k-pop', venue: 'bmo-stadium', start: '20:00', crowd: [soldOut, estimated(51855, 'Average of her three SoFi nights (155,567 tickets, Touring Data)')],
+    performer: 'BLACKPINK', genre: 'k-pop', venue: 'bmo-stadium', start: '20:00', crowd: [soldOut],
     a: ['Marquee', ['sold out'], 'Low', 'Different crowd'],
   }),
   show(D5, {
@@ -223,7 +223,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Notable', ["NL's top two teams"], 'Moderate', 'Beyoncé 13 mi away, same hours'],
   }),
   show(D8, {
-    performer: 'Beyoncé', genre: 'pop', venue: 'sofi-stadium', start: '20:00', crowd: [soldOut],
+    performer: 'Beyoncé', genre: 'pop', venue: 'sofi-stadium', start: '20:00', crowd: [soldOut, estimated(51855, 'Average of her three SoFi nights (155,567 tickets, Touring Data)')],
     a: ['Marquee', ['sold out'], 'Low', 'Nothing bigger was on'],
   }),
 
