@@ -56,7 +56,7 @@ export function MapScreen() {
           </Link>
         </div>
 
-        <NightScore rating={rating ? rating.rating : null} caption={caption} />
+        <NightScore rating={rating ? rating.rating : null} quiet={shown?.status === 'quiet'} caption={caption} />
 
         <div className="segmented" role="tablist" aria-label="Map mode">
           <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>

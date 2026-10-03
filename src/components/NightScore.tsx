@@ -4,14 +4,15 @@ import { CalendarIcon } from './Icons';
 // The rating for a city's date, word first: "Cooked · 9/10". It rates the
 // whole date (day games count too), so it's never labeled "Night". Where the
 // date isn't already on screen (share cards), pass dateLabel to show
-// "FRI, OCT 25 · Cooked · 9/10". Never a bare number; a date with no rating yet says "Unrated".
+// "FRI, OCT 25 · Cooked · 9/10". Never a bare number; a date with no big events says "Quiet", and one with events but no rating yet says "Unrated".
 interface Props {
   dateLabel?: string;
   rating: number | null;
+  quiet?: boolean;
   caption: string;
 }
 
-export function NightScore({ dateLabel, rating, caption }: Props) {
+export function NightScore({ dateLabel, rating, quiet, caption }: Props) {
   const rated = rating !== null;
   return (
     <div className="nightscore">
@@ -28,7 +29,7 @@ export function NightScore({ dateLabel, rating, caption }: Props) {
             <span className="score-of">· {rating}/10</span>
           </>
         ) : (
-          <span className="score-word unrated">Unrated</span>
+          <span className="score-word unrated">{quiet ? 'Quiet' : 'Unrated'}</span>
         )}
       </div>
       <div className="nightscore-bars" aria-hidden>
