@@ -34,10 +34,10 @@ Ask whether she has more UX/UI notes (she said more are coming; the running list
 - The mockups in `design/wireframes/` predate the rating model ("Squeeze 8/10" tags, "NIGHT · BRUTAL"). Follow `product-decisions.md`, not the mockups.
 
 ## NYC filler (parked)
-- Research prompt: `docs/nyc-filler-collection-prompt.md`. Drafted by Mock Mosaic for Kylie. Research only until LA is fleshed out. Do not seed New York, do not score it, and do not build a New York screen.
+- Research prompt: `docs/nyc-filler-collection-prompt.md`. Research only. Do not seed New York, do not score it, and do not build a New York screen.
 - The area switcher on the Map shows with Los Angeles alone. A New York metro comes after LA is fleshed out. Do not add one in the Step 5 work.
 - Do not import Los Angeles rules onto New Jersey, Long Island, or the boroughs.
-- Collection rules she locked: NFL is required, along with MLB, NBA, NHL, and at least one stadium or arena concert, plus one ordinary weeknight. Prefer the same dates as the LA seeded nights. Goal is 5 dates if those dates carry the leagues. Cap is 10. Extra dates only when a seeded date has nothing useful in New York, or a league or shape is still missing. Venue table only for buildings those nights use.
+- Collection rules in that prompt: MLB, NBA, NHL, NFL, and at least one stadium or arena concert, plus one ordinary weeknight. Prefer the same dates as the LA seeded nights. Goal is 5 if those dates can carry it. Cap is 10. Add another date only to cover a league or shape the seed dates missed. Venue table only for buildings those nights use.
 
 ## Saving and accounts
 - **Step 5 saves on this phone** (`src/data/storage/`). A browser clear can erase nights she marked; Export my nights is the backup. The seeded log ships with the app.
