@@ -174,7 +174,7 @@ button {
 .map-header-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .map-header-score {
@@ -251,28 +251,60 @@ button {
 .area-switcher {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   min-height: 44px;
 }
 
-.area-switcher select {
-  appearance: none;
+.area-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
   border: none;
   background: transparent;
-  padding: 0 28px 0 0;
+  padding: 0 4px 0 0;
   font: inherit;
   font-size: 17px;
   font-weight: 700;
   color: var(--ink);
 }
 
-.area-switcher svg {
-  position: absolute;
-  right: 4px;
+.area-chip svg {
   width: 16px;
   height: 16px;
-  pointer-events: none;
   color: var(--ink2);
+}
+
+.area-menu {
+  width: 196px;
+  max-height: calc(5 * 44px + 12px);
+  margin: 0 0 4px;
+  padding: 6px;
+  overflow-y: auto;
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 8px 24px rgba(15, 27, 45, 0.18);
+}
+
+.area-menu button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.area-menu button[aria-selected='true'] {
+  background: var(--bg);
+  color: var(--dodger);
 }
 
 .segmented {
@@ -1857,7 +1889,7 @@ button {
 .filter-chip:focus-visible,
 .mark-button:focus-visible,
 .settings-row:focus-visible,
-.area-switcher select:focus-visible {
+.area-chip:focus-visible {
   outline: 2px solid var(--dodger);
   outline-offset: 2px;
 }

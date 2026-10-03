@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, useState } from 'react';
+import { useId } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import type { Metro } from '../config/metros';
 import { ChevronDown } from './Icons';
@@ -12,6 +12,8 @@ interface Props {
   isToday: boolean;
   /** The span the map is actually showing: an explicit pick, or the automatic widen. */
   span: WhenSpan;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
 }
 
 /**
@@ -19,27 +21,9 @@ interface Props {
  * All upcoming, or Pick a date. A range keeps the base date, and the header
  * rating still describes that date.
  */
-export function WhenControl({ metro, date, today, isToday, span }: Props) {
-  const [open, setOpen] = useState(false);
-  const rootRef = useRef<HTMLDivElement>(null);
+export function WhenControl({ metro, date, today, isToday, span, open, onOpenChange }: Props) {
   const navigate = useNavigate();
   const menuId = useId();
-
-  useEffect(() => {
-    if (!open) return;
-    const onPointer = (event: PointerEvent) => {
-      if (!rootRef.current?.contains(event.target as Node)) setOpen(false);
-    };
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setOpen(false);
-    };
-    document.addEventListener('pointerdown', onPointer);
-    document.addEventListener('keydown', onKey);
-    return () => {
-      document.removeEventListener('pointerdown', onPointer);
-      document.removeEventListener('keydown', onKey);
-    };
-  }, [open]);
 
   const dayLabel = isToday ? 'Today' : shortLocalDate(date);
   const label =
@@ -53,7 +37,7 @@ export function WhenControl({ metro, date, today, isToday, span }: Props) {
 
   const go = (nextDate: string, when: WhenSpan) => {
     navigate(mapPath({ metroId: metro.id, date: nextDate, today, when }));
-    setOpen(false);
+    onOpenChange(false);
   };
 
   // Next 7 days and All upcoming start at today when the base date is in the past.
@@ -61,14 +45,14 @@ export function WhenControl({ metro, date, today, isToday, span }: Props) {
   const pickedDate = span === 'day' && !isToday;
 
   return (
-    <div className="when" ref={rootRef}>
+    <div className="when">
       <button
         type="button"
         className="date-button"
         aria-haspopup="menu"
         aria-expanded={open}
         aria-controls={menuId}
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => onOpenChange(!open)}
       >
         {label}
         <ChevronDown />
@@ -88,7 +72,7 @@ export function WhenControl({ metro, date, today, isToday, span }: Props) {
             role="menuitem"
             aria-current={pickedDate ? 'date' : undefined}
             to={nightsPath({ metroId: metro.id, date })}
-            onClick={() => setOpen(false)}
+            onClick={() => onOpenChange(false)}
           >
             Pick a date
           </Link>

@@ -11,7 +11,7 @@ export type WhenSpan = 'day' | 'week' | 'all';
  * place (the area switcher). The on-map When pill owns the date and how wide
  * to look. The sheet and the map just read them. `when` is null until
  * someone picks Today, a range, or a date. Los Angeles is the default.
- * Other cities are only the ones that show up in her log.
+ * Other places are real metros from her log, not a row per venue.
  */
 export interface View {
   metro: Metro;

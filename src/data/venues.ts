@@ -179,20 +179,22 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 3500, setup: 'concert', note: 'About 3,500. Estimated.' }],
     roof: 'indoor',
   },
+  // One festival site in Indio, not its own metro. The logged nights stay
+  // outside the Los Angeles rating.
   'empire-polo-club': {
     id: 'empire-polo-club',
-    metroId: 'indio',
+    metroId: 'la',
     names: [{ name: 'Empire Polo Club' }],
     location: [-116.2372, 33.6803],
-    capacity: [{ seats: 125000, setup: 'concert', note: 'Festival grounds. Rough figure, not a seat count.' }],
+    capacity: [{ seats: 125000, setup: 'concert', note: 'Festival grounds in Indio. Rough figure, not a seat count.' }],
     roof: 'open',
   },
   'ventura-theater': {
     id: 'ventura-theater',
-    metroId: 'ventura',
+    metroId: 'la',
     names: [{ name: 'Ventura Theater' }],
     location: [-119.2978, 34.2805],
-    capacity: [{ seats: 1000, setup: 'concert', note: 'About 1,000. Estimated.' }],
+    capacity: [{ seats: 1000, setup: 'concert', note: 'About 1,000. Estimated. Ventura is part of Los Angeles here.' }],
     roof: 'indoor',
   },
 };

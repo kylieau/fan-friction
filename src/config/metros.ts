@@ -16,8 +16,9 @@ export const METROS: Record<string, Metro> = {
     center: [-118.3, 33.97],
     zoom: 9.5,
   },
-  // Cities that show up in her log, and nowhere else. New York is Citi Field
-  // only. It is not a full New York pack.
+  // Real away and neutral markets from her log. Not one row per building.
+  // Inglewood, Pasadena, Anaheim, and Ventura are Los Angeles. Indio is one
+  // festival site, so it is not a metro. New York is Citi Field only.
   boston: {
     id: 'boston',
     name: 'Boston',
@@ -37,13 +38,6 @@ export const METROS: Record<string, Metro> = {
     name: 'Columbus',
     timeZone: 'America/New_York',
     center: [-83.0197, 40.0016],
-    zoom: 12,
-  },
-  indio: {
-    id: 'indio',
-    name: 'Indio',
-    timeZone: 'America/Los_Angeles',
-    center: [-116.2372, 33.6803],
     zoom: 12,
   },
   'new-york': {
@@ -88,13 +82,14 @@ export const METROS: Record<string, Metro> = {
     center: [-82.4518, 27.9427],
     zoom: 12,
   },
-  ventura: {
-    id: 'ventura',
-    name: 'Ventura',
-    timeZone: 'America/Los_Angeles',
-    center: [-119.2978, 34.2805],
-    zoom: 13,
-  },
 };
 
 export const DEFAULT_METRO = METROS.la;
+
+/** Los Angeles first, then the other real metros by name. */
+export function areaMetros(): Metro[] {
+  const rest = Object.values(METROS)
+    .filter((metro) => metro.id !== DEFAULT_METRO.id)
+    .sort((a, b) => a.name.localeCompare(b.name));
+  return [DEFAULT_METRO, ...rest];
+}

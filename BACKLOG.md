@@ -35,7 +35,7 @@ Ask whether she has more UX/UI notes (she said more are coming; the running list
 
 ## NYC filler (parked)
 - Research prompt: `docs/nyc-filler-collection-prompt.md`. Research only. Do not seed New York, do not score it, and do not build a New York screen.
-- The area switcher lists the cities that appear in her log. New York in that list is Citi Field only, from the Braves at the Mets night. Do not seed this filler pack, and do not turn that one building into a full New York metro.
+- The area switcher lists real metros from her log, with Los Angeles first. New York in that list is Citi Field only, from the Braves at the Mets night. Ventura is part of Los Angeles. Do not seed this filler pack, and do not turn that one building into a full New York metro.
 - Do not import Los Angeles rules onto New Jersey, Long Island, or the boroughs.
 - Collection rules in that prompt: MLB, NBA, NHL, NFL, and at least one stadium or arena concert, plus one ordinary weeknight. Prefer the same dates as the LA seeded nights. Goal is 5 if those dates can carry it. Cap is 10. Add another date only to cover a league or shape the seed dates missed. Venue table only for buildings those nights use.
 

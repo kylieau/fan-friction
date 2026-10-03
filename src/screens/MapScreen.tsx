@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { DEFAULT_METRO, METROS, type Metro } from '../config/metros';
+import { areaMetros, DEFAULT_METRO, type Metro } from '../config/metros';
 import { getCityDate, getEventsBetween, getUpcoming, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
@@ -119,6 +119,26 @@ export function MapScreen() {
   const sheetRef = useRef<HTMLElement>(null);
   const topRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
+  const areaRef = useRef<HTMLDivElement>(null);
+  const whenRef = useRef<HTMLDivElement>(null);
+  const [menu, setMenu] = useState<'area' | 'when' | null>(null);
+  useEffect(() => {
+    if (!menu) return;
+    const onPointer = (event: PointerEvent) => {
+      const target = event.target as Node;
+      if (areaRef.current?.contains(target) || whenRef.current?.contains(target)) return;
+      setMenu(null);
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMenu(null);
+    };
+    document.addEventListener('pointerdown', onPointer);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onPointer);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [menu]);
   const { wasDragged } = useSheetDrag(sheetRef, topRef, bodyRef, open, setOpen);
   const grabClick = () => {
     if (!wasDragged()) setOpen((v) => !v);
@@ -126,7 +146,7 @@ export function MapScreen() {
 
   return (
     <div className={`screen map-screen${open ? ' sheet-open' : ''}`}>
-      <div className="map-area">
+      <div className="map-area" onPointerDown={() => setMenu(null)}>
         <BaseMap metro={metro}>
           <CrowdLayer points={points} selectedId={pinFor(selectedId)} onSelect={select} insets={INSETS} />
         </BaseMap>
@@ -134,7 +154,9 @@ export function MapScreen() {
 
       <header className="map-header">
         <div className="map-header-top">
-          <AreaSwitcher metro={metro} />
+          <div ref={areaRef}>
+            <AreaSwitcher metro={metro} open={menu === 'area'} onOpenChange={(next) => setMenu(next ? 'area' : null)} />
+          </div>
           <Link to={nightsPath({ metroId: metro.id, date })} className="round-button" aria-label="Search nights">
             <SearchIcon />
           </Link>
@@ -151,7 +173,17 @@ export function MapScreen() {
           </div>
         </div>
         <div className="map-pills">
-          <WhenControl metro={metro} date={date} today={today} isToday={isToday} span={span} />
+          <div ref={whenRef}>
+            <WhenControl
+              metro={metro}
+              date={date}
+              today={today}
+              isToday={isToday}
+              span={span}
+              open={menu === 'when'}
+              onOpenChange={(next) => setMenu(next ? 'when' : null)}
+            />
+          </div>
           {(mode === 'traffic' || points.length > 0) && (
             <div className="map-question">
               {mode === 'crowds' ? 'Where did the crowds go?' : 'Should I brave the roads?'}
@@ -247,33 +279,52 @@ export function MapScreen() {
 }
 
 /**
- * The top bar is the area. It lists every city in her log. Los Angeles
- * stays the default. New York is only the city from that log, not a full pack.
+ * Closed chip for the current metro. The list opens under the chip, about
+ * five rows tall, and stays above the score. Los Angeles is first.
  */
-function AreaSwitcher({ metro }: { metro: Metro }) {
+function AreaSwitcher({
+  metro,
+  open,
+  onOpenChange,
+}: {
+  metro: Metro;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+}) {
   const [params, setParams] = useSearchParams();
-  const metros = Object.values(METROS);
+  const menuId = useId();
+  const metros = areaMetros();
+  const pick = (id: string) => {
+    const next = new URLSearchParams(params);
+    if (id === DEFAULT_METRO.id) next.delete('metro');
+    else next.set('metro', id);
+    setParams(next);
+    onOpenChange(false);
+  };
   return (
-    <label className="area-switcher">
-      <span className="sr-only">Area</span>
-      <select
-        value={metro.id}
+    <div className="area-switcher">
+      <button
+        type="button"
+        className="area-chip"
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-controls={menuId}
         aria-label="Area"
-        onChange={(event) => {
-          const next = new URLSearchParams(params);
-          if (event.target.value === DEFAULT_METRO.id) next.delete('metro');
-          else next.set('metro', event.target.value);
-          setParams(next);
-        }}
+        onClick={() => onOpenChange(!open)}
       >
-        {metros.map((item) => (
-          <option key={item.id} value={item.id}>
-            {item.name}
-          </option>
-        ))}
-      </select>
-      <ChevronDown />
-    </label>
+        {metro.name}
+        <ChevronDown />
+      </button>
+      {open && (
+        <div className="area-menu" id={menuId} role="listbox" aria-label="Area">
+          {metros.map((item) => (
+            <button type="button" role="option" aria-selected={item.id === metro.id} key={item.id} onClick={() => pick(item.id)}>
+              {item.name}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
 
