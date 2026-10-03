@@ -112,6 +112,11 @@ export interface CrowdEvent {
   start: LocalTime | null;
   kind: EventKind;
   title: string;
+  /**
+   * A short series line under the matchup on the map chip only, such as "NLDS G1".
+   * The sheet keeps it in the title: "Dodgers vs Braves (NLDS G1)".
+   */
+  series?: string;
   place: Place;
   audience: Audience;
   /** For games. Ids point at Team records. */
