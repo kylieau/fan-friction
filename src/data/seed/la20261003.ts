@@ -106,12 +106,12 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
 export const LA_20261003_RATING: DateRating = {
   metroId: 'la',
   date: DATE,
-  rating: 7.5,
+  rating: 6.8,
   headline: 'NLDS Game 1 in the afternoon, then USC and an Inglewood night',
   squeezedMost: 'Forum and Intuit',
-  method: 'hand',
+  method: 'formula',
   notes:
-    'Draft. SoFi, the Forum and Intuit overlap around 7–8pm, ComplexCon is downtown from 6, and USC (4:30) gets out into that. The Dodgers game is at 1:08, so this is under Oct 25, 2024 (9).',
+    'Draft Crowd fight with Medium overlap 0.35, not a gut call. Date CF ≈ 6.3 from the Forum (loudest venue over 15k) plus a 0.5 second-event bump, so 6.8. Heat and Gridlock are not applied yet. Per event: Forum ~6.3, aespa ~6.3, ComplexCon ~6.2, Dodgers ~4.9, USC ~4.8, Bruno ~3.7.',
   sources: [
     { label: 'MLB', url: 'https://www.mlb.com/news/braves-vs-dodgers-nlds-game-1-starting-lineups-pitching-matchup' },
     { label: 'USC', url: 'https://usctrojans.com/game-center/35254' },
