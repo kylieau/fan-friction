@@ -79,3 +79,14 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 **Same fix, small:** no screen copy names an unbuilt step. Two lines do today: the Nights calendar card ("arrives in step 4") and the You tab ("in step 5"). Both go away once those screens are built.
 **Later:** the "why this score" breakdown waits for Step 8, once its fields exist. (The Event screen's draft friction text and "what beat it" bars are the nearest thing today; flagging so we don't extend them.)
 **Not adopted, because Kylie said otherwise earlier:** "ship Map only" (she kept all four tabs), "event screen later" (she kept it), and three sheet heights (she asked for two). Say the word if the engineer's version should win on any of these.
+
+### Oct 3, 2026: two outside models' structural ideas, sorted with Kylie
+**Principle (Kylie):** don't delete anything we've built. When an idea changes where something lives, the job is to rehome it, not remove it.
+**Adopted now (no new screens):**
+- The night is the main object; shares are about the night (word, date, what beat it), not a single event. The Event screen stays; the share card is rehomed toward the night. A "Friction Receipt" with the competing event and a map crop is the later, image version.
+- Date lifecycle: Upcoming, Tonight, Settled. "Settled, no evidence" is a real state (today's "No count yet"). A plan is an upcoming night you flagged, not a separate list.
+- Search finds nights by who played (team, artist, venue); Famous nights is what an empty search shows. Logging is search, tap a night, "I was there."
+- **Area switcher (Kylie's idea):** works like the date control, to peek in on other areas. Not needed with LA only. Rules: the view has one place state and one date state (the header owns both); a second area is read-only peeking, while a log stays tied to where the night happened; don't show the control until a second metro exists.
+**Open, decide after Step 5:** team and artist (fanbase) pages as the answer to the "fake fan" claim, and what that means for the Compare tab.
+**Parked:** logging a role (at event A / B / in the city); replacing the tips with "log your first night."
+**Not adopted:** past/future split, renaming tabs, dropping the map as a destination, user-set friction scores, a friends feed, venue pages as the main page.
