@@ -1,63 +1,53 @@
-# NYC filler collection (research only)
+# NYC filler nights (research only)
 
-Drafted by Mock Mosaic for Kylie; research only until LA is fleshed out.
+Collect unread filler for a later New York comparison. Do not score nights. Do not design screens. Do not say what the app should build. Los Angeles stays the only live city. This pack just sits until someone opens New York.
 
-Do not seed New York into the app from this note. Do not score these nights. Do not add a New York metro, teams, or screens. Los Angeles stays the only metro until LA is fleshed out.
+Fan/Friction is a personal log of live sports and concerts. One date has many events. What matters is same-night competition: same fans choosing between events, or different fans hitting the same roads and transit. Rules have to work in any city. New York is a dense, transit-heavy contrast to a driving city. Capture that. Do not import Los Angeles rules onto New Jersey, Long Island, or the boroughs.
 
-The character-for-character paste was not mounted in this workspace. The rules below are the consolidated cuts Kylie sent on Oct 3, 2026. If the original paste turns up, replace this page with it.
+## Venue and market table
 
-## What to collect
+One row per building that these nights actually use.
 
-Prefer the same calendar dates as the Los Angeles seeded nights (the famous nights already in the app), so the two cities can be compared head to head.
+Columns: venue, area (borough, or New Jersey / Long Island if outside the five boroughs), teams or main uses, rough capacity, same campus or corridor neighbors, how people actually arrive (subway, commuter rail, car, mix), source.
 
-Goal: **5 confirmed dates**, if those Los Angeles dates already carry every required league and shape in New York.
+Cover Madison Square Garden, Barclays Center, Yankee Stadium, Citi Field, and MetLife if a night needs it. Add USTA only if one night is a US Open date. Add another building only if one of the nights is there.
 
-Cap: **10 confirmed dates**. Not more.
+A theater around 5–8k (Theater at MSG, Radio City, Beacon, Brooklyn Paramount) gets a row only as a neighbor of a headline building on one of these nights. Do not list it as its own market.
 
-Add a date beyond the shared Los Angeles dates only when:
+Skip Broadway, comedy, clubs, bars, and arenas that never share a night with a headline sports or stadium event.
 
-- a seeded Los Angeles date has nothing useful in New York, or
-- a required league or shape is still missing.
+## Night table
 
-## The set must include
+Start from the Los Angeles seed dates already in the app (the famous-night list). Prefer a New York night on that same calendar date, in whatever year the bill is real. If a seed date has nothing useful in New York, skip it. Add other dates only to cover a league or a shape the seed dates missed. Cap at 10 nights. Fewer is fine. Five is the goal if the seed dates can carry it.
 
-- MLB
-- NBA
-- NHL
-- NFL (required, not optional)
-- at least one stadium or arena concert
-- one ordinary weeknight
+Together the nights must include MLB, NBA, NHL, NFL, and at least one stadium or arena concert. Verify every date. If you can't confirm it, drop it and pick another. Don't invent one. One of the nights should be an ordinary weeknight, not a marquee.
 
-## Venue table
+Shapes to cover across the set, not one night per shape:
+- Two or more headline events the same night, different buildings
+- A headline game and a concert the same night
+- Events in different boroughs the same night
+- A campus or corridor night (Garden complex, Flushing, or similar), or a second event across the river in New Jersey
 
-List only the buildings those chosen nights use. Do not add arenas for nights that are not in the set.
+Columns:
+- Date
+- Whether it matches an LA seed date (yes, and which, or no)
+- Event (team and opponent, or artist)
+- Kind (league, or concert)
+- Venue and area
+- Start time, if known
+- Attendance or capacity, and whether that number was announced, reported, or is just the building size
+- Same-night note, in plain words: same building, same campus, different borough, or across the river. Say whether it looks like the same fans choosing, or different fans on the same transit and roads. No tier names. No 1–10.
+- Source URL
+- Confidence: confirmed bill only. A season pattern does not count as a night row.
 
-## Do not
+## What to skip
 
-- Import Los Angeles rules onto New Jersey, Long Island, or the boroughs. Treat those as their own places when the research says so.
-- Invent a sixth-or-later night once the set is full and every required shape is covered.
-- Turn this research into app data.
+- Any 1–10, or the words Chill, Light, Mid, Brutal, Cooked
+- Overlap tiers, weights, or a catchments verdict. Flag New Jersey and Long Island as open. Don't decide them.
+- App screens, copy, tabs, or "you should build"
+- Cameos, one-song sets, and festivals that aren't a ticketed headline at one of the buildings above
+- An 11th night. If a date doesn't match a seed date and doesn't add a league or a shape, cut it.
 
-## Los Angeles dates to try first
+## Output
 
-These are the 13 seeded nights. Use a date from this list when New York has a useful event that day.
-
-| Date | What Los Angeles had |
-|---|---|
-| Fri 10/25/24 | World Series Game 1, Lakers, USC, East LA Classic, two concerts |
-| Sat 10/26/24 | World Series Game 2, Kings, Galaxy, two concerts |
-| Mon 4/28/25 | Beyoncé, Dodgers, Rauw Alejandro |
-| Tue 4/1/25 | Dodgers, Kings, We Love LA |
-| Sat 11/19/22 | UCLA–USC, BLACKPINK, Elton John, Clippers |
-| Mon 10/27/25 | World Series Game 3, Lakers |
-| Mon 7/22/24 | Dodgers, nothing else big (an ordinary night) |
-| Fri 9/1/23 | Dodgers, Beyoncé |
-| Fri 8/4/23 | Angels, Taylor Swift |
-| Sun 9/10/17 | Rams, Dodgers |
-| Sun 9/17/17 | Chargers, Rams, Angels |
-| Sat 9/3/22 | UCLA, USC, Dodgers, The Weeknd |
-| Sat 4/13/24 | Dodgers, rain |
-
-## Paste back
-
-Confirmed nights only, each with the date, the event, the league or shape it covers (MLB, NBA, NHL, NFL, concert, or ordinary weeknight), and the building. Then one venue table for those buildings and no others. Stop at 5 if the shared dates already cover the list. Otherwise stop at or before 10.
+The venue table, then the night table, then a short list of dates you almost included and why you cut them. No recommendations.
