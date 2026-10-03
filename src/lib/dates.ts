@@ -50,3 +50,55 @@ export function addDays(date: string, days: number): string {
   const [y, m, d] = date.split('-').map(Number);
   return new Date(Date.UTC(y, m - 1, d + days)).toISOString().slice(0, 10);
 }
+
+/** A real calendar day, "2024-10-25". Rejects "2024-13-40" and other non-dates. */
+export function isValidDate(value: string): boolean {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [y, m, d] = value.split('-').map(Number);
+  const date = new Date(Date.UTC(y, m - 1, d));
+  return date.getUTCFullYear() === y && date.getUTCMonth() === m - 1 && date.getUTCDate() === d;
+}
+
+/** "2024-10" from "2024-10-25". */
+export function yearMonth(date: string): string {
+  return date.slice(0, 7);
+}
+
+/** "October 2024" from "2024-10", without time-zone drift. */
+export function monthTitle(month: string): string {
+  const [y, m] = month.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, 1)).toLocaleDateString('en-US', {
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+}
+
+/** The month a number of months later (or earlier), "2024-10" + 1 = "2024-11". */
+export function shiftMonth(month: string, delta: number): string {
+  const [y, m] = month.split('-').map(Number);
+  const shifted = new Date(Date.UTC(y, m - 1 + delta, 1));
+  return `${shifted.getUTCFullYear()}-${String(shifted.getUTCMonth() + 1).padStart(2, '0')}`;
+}
+
+/** Sunday-first cells for a month: nulls for the leading blanks, then "YYYY-MM-DD". */
+export function monthCells(month: string): (string | null)[] {
+  const [y, m] = month.split('-').map(Number);
+  const leading = new Date(Date.UTC(y, m - 1, 1)).getUTCDay();
+  const count = new Date(Date.UTC(y, m, 0)).getUTCDate();
+  const cells: (string | null)[] = Array.from({ length: leading }, () => null);
+  for (let day = 1; day <= count; day++) cells.push(`${month}-${String(day).padStart(2, '0')}`);
+  return cells;
+}
+
+/** Logging goes back about ten years (the build brief). The calendar stops here. */
+export const EARLIEST_MONTH = '2016-01';
+
+/** Keep a month inside the calendar's range: 2016 through about 120 days ahead. */
+export function clampMonth(month: string, today: string): string {
+  const latest = addDays(today, 120).slice(0, 7);
+  if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(month)) return today.slice(0, 7);
+  if (month < EARLIEST_MONTH) return EARLIEST_MONTH;
+  if (month > latest) return latest;
+  return month;
+}

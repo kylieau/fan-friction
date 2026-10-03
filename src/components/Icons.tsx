@@ -64,6 +64,22 @@ export function ChevronDown() {
   );
 }
 
+export function ChevronLeft() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" {...base} aria-hidden>
+      <polyline points="15 6 9 12 15 18" />
+    </svg>
+  );
+}
+
+export function ChevronRight() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" {...base} aria-hidden>
+      <polyline points="9 6 15 12 9 18" />
+    </svg>
+  );
+}
+
 export function ArrowRight() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" {...base} strokeWidth={2} aria-hidden>

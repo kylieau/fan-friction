@@ -160,7 +160,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 5;
   padding: calc(8px + env(safe-area-inset-top, 0px)) 16px 12px;
   display: flex;
   flex-direction: column;
@@ -189,12 +189,82 @@ button {
   align-items: center;
   gap: 6px;
   min-height: 44px;
+  border: none;
+  background: none;
+  padding: 0;
   font-size: 17px;
   font-weight: 700;
   color: var(--ink);
 }
 
 .date-button svg {
+  color: var(--ink2);
+}
+
+.when {
+  position: relative;
+}
+
+.when-menu {
+  position: absolute;
+  top: calc(100% - 4px);
+  left: 0;
+  z-index: 6;
+  min-width: 196px;
+  padding: 6px;
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 8px 24px rgba(15, 27, 45, 0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+.when-menu button,
+.when-menu a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.when-menu button[aria-checked='true'],
+.when-menu a[aria-current='date'] {
+  background: var(--bg);
+  color: var(--dodger);
+}
+
+.area-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.area-switcher select {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0 28px 0 0;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.area-switcher svg {
+  position: absolute;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
   color: var(--ink2);
 }
 
@@ -454,6 +524,11 @@ button {
   gap: 16px;
 }
 
+/* The page scrolls. Don't let a tall calendar squash the search box. */
+.page > * {
+  flex-shrink: 0;
+}
+
 .page-title {
   margin: 0;
   font-size: 28px;
@@ -507,8 +582,17 @@ button {
   color: var(--ink2);
 }
 
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
 .search-box input {
   flex: 1;
+  width: 100%;
   border: none;
   background: none;
   font: inherit;
@@ -519,6 +603,175 @@ button {
 
 .search-box input::placeholder {
   color: #5a6578;
+}
+
+.search-box input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.search-clear {
+  border: none;
+  background: none;
+  padding: 8px 0 8px 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dodger);
+}
+
+.search-note {
+  margin: 0;
+}
+
+/* ---------- Nights calendar ---------- */
+
+.calendar {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 12px rgba(15, 27, 45, 0.08);
+}
+
+.cal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.cal-month {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.cal-nav {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 22px;
+  background: var(--track);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cal-nav:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.cal-weekdays,
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.cal-weekdays {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink2);
+  text-align: center;
+}
+
+.cal-blank {
+  height: 56px;
+}
+
+/* The date sits in the corner. The rating, number and word, is the center.
+   Darker blue is a harder night. Days with no rating stay plain. */
+.cal-day {
+  position: relative;
+  height: 56px;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.cal-day.plain {
+  background: #f2f5f9;
+  color: var(--ink);
+}
+
+.cal-num {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.cal-read {
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 14px;
+  bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.cal-score {
+  font-family: 'Big Shoulders Display', 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 0.85;
+}
+
+.cal-word {
+  font-size: 8px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+/* Light to dark blue. The darkest is Cooked. */
+.cal-day.chill {
+  background: #e4eef6;
+  color: var(--ink);
+}
+
+.cal-day.light {
+  background: var(--water);
+  color: var(--ink);
+}
+
+.cal-day.mid {
+  background: var(--paleBlue);
+  color: var(--ink);
+}
+
+.cal-day.brutal {
+  background: var(--ucla);
+  color: var(--card);
+}
+
+.cal-day.cooked {
+  background: var(--dodger);
+  color: var(--card);
+}
+
+.cal-day.selected {
+  box-shadow: 0 0 0 2px var(--gold);
+}
+
+.badge-unrated {
+  background: var(--card);
+  color: var(--dodger);
+  box-shadow: inset 0 0 0 1.5px var(--dodger);
 }
 
 .you-header {
@@ -1189,51 +1442,12 @@ button {
   width: 88px;
 }
 
-.range-row {
-  position: absolute;
-  top: 152px;
-  left: 12px;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  height: 34px;
-  border-radius: 17px;
-  background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.2);
-}
-
-.range-row select {
-  appearance: none;
-  height: 100%;
-  border: none;
-  border-radius: 17px;
-  background: transparent;
-  padding: 0 30px 0 14px;
-  font: inherit;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--dodger);
-}
-
-.range-row svg {
-  position: absolute;
-  right: 10px;
-  width: 14px;
-  height: 14px;
-  pointer-events: none;
-  color: var(--ink2);
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-}
-
-.map-question.below-filter {
-  top: 192px;
 }
 
 .event-time.wide {

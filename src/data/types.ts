@@ -155,3 +155,21 @@ export interface CityDate {
   events: CrowdEvent[];
   rating: DateRating | null;
 }
+
+/** One cell of the Nights calendar. Quiet means nothing big is on file for that date. */
+export interface CalendarDay {
+  date: LocalDate;
+  status: DateStatus;
+  /** Set only when status is "rated". */
+  rating: number | null;
+}
+
+/** A night that matched a team, artist, or venue search. */
+export interface NightSearchHit {
+  date: LocalDate;
+  rating: number | null;
+  /** The rated night's headline, or the matching event titles. */
+  headline: string;
+  /** The names that matched, such as "Dodgers · SoFi Stadium". */
+  matched: string;
+}

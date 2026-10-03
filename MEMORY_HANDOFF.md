@@ -5,16 +5,17 @@ Overwritten each session. Deferred work lives in `BACKLOG.md`. Product rules liv
 _Last synced: Oct 3, 2026._
 
 ## Current state
-- **Map rework and upcoming events are done, committed, pushed to `main` and verified** with phone-size screenshots (touch drag checked mid-drag; real-phone smoothness untested). `npm run build` passes. Live at https://fan-friction.vercel.app/ (Vercel deploys from `main`).
-- **What Kylie can open:** the Map is now the whole screen with the header and a swipeable sheet on top. Today shows "Quiet" when empty and the map widens itself to the next 7 days (then everything) with hollow pins for upcoming games; a dropdown picks Today / Next 7 days / All upcoming. Tap a pin, a name label or a list row to select it (ring, highlight, sheet row), then the gold "See what beat it" button opens the Event screen. Rows wear a friction chip, or a "why" chip (sold out, occasion, first fact) where friction is hidden at Low. Nights tab has Famous nights and an "On this night" row (only when a famous night fell on today's month and day).
-- **Working tree:** clean and in sync with `origin/main`. No outside changes.
+- **Step 4 is built on branch `cursor/nights-calendar-when-0a4d` (not merged).** Nights has a shaded calendar and search. The Map's date button and range dropdown are one When control. `npm run build` passes. Phone-width screenshots are in the PR. Live site https://fan-friction.vercel.app/ still deploys from `main`, so this is on the branch until it merges.
+- **What Kylie can open:** Nights shows a month calendar (the number on a shaded day is its rating; Quiet and Unrated stay readable), search by team, artist, or venue, and Famous nights when the search box is empty. The Map header's When menu is Today, Next 7 days, All upcoming, or Pick a date. A range does not get its own score; the header score is still for the base date. Today, when quiet, still widens to the next 7 days until someone picks When. There is no city switcher yet, because Los Angeles is the only metro. On this night and the Nights tab name are unchanged.
+- **Working tree:** branch `cursor/nights-calendar-when-0a4d`, not merged. `main` is unchanged.
 - **Live data:** MLB schedule (Dodgers, Angels) and ESPN team schedules (Lakers, Clippers, Kings, Galaxy, Rams, Chargers, USC, UCLA), home games only, today onward. Past dates come from the 13 hand-seeded nights.
 - **The rating model is still draft in code.** `src/data/audience.ts` has the Oct 1 rules; v3 (`docs/overlap-and-date-rating-v3.md`) is built at Step 8. Upcoming events show "Unrated."
 
-## Changes made (this session, all committed on `main`)
-- **Data layer:** `src/data/sources/mlbSource.ts`, `espnSource.ts` (new; plug-in sources with an optional `upcoming()`), `types.ts`, `index.ts` (`getUpcoming`, `getEventsBetween`), seed fixes in `testNights.ts` (night 4 counts, labeled estimates; a misplaced Beyoncé estimate was fixed).
-- **Map:** `src/screens/MapScreen.tsx` (rewritten), `src/map/CrowdLayer.tsx` (tappable, selection ring, insets, hollow upcoming dots, day tags), `src/map/crowdPoints.ts`, `src/lib/useSheetDrag.ts`, `src/lib/view.ts` (one place + date view), `src/lib/chips.ts`, `src/lib/dates.ts` (`addDays`), `src/components/NightScore.tsx` (Quiet), `src/components/FirstRunTips.tsx` (Back; old tip 3 on hold), `src/screens/NightsScreen.tsx`, `src/screens/YouScreen.tsx`, `src/styles.css`.
-- **Docs:** `docs/ux-notes.md` (Kylie's Oct 3 notes, the outside models' ideas, what was built), `docs/product-decisions.md` (Quiet).
+## Changes made (this session, on the Step 4 branch)
+- **Nights:** calendar shaded by rating, legend, search by team, artist, or venue. Famous nights stays the empty-search list. On this night stays.
+- **Map:** one When control replaced the date button and the range dropdown. The area switcher renders only if a second metro exists.
+- **Data:** `getCalendarMonth` and `searchNights` in `src/data/index.ts`. Screens still read only through that file.
+- **Also fixed while checking:** the search box was being squashed, and the Mid rating number was hard to read on its pale blue.
 
 ## Key decisions still in force
 - **Kylie's explicit instructions beat** mockups, docs, the brand kit and other models' output. Other models' opinions are input, not decisions; their facts get verified, and unverified figures may be seeded only if labeled estimated.
@@ -30,11 +31,10 @@ _Last synced: Oct 3, 2026._
 - **Screenshots:** `playwright-core` in the session scratchpad, `executablePath: '/usr/bin/chromium'`, args `--use-angle=swiftshader --enable-unsafe-swiftshader --no-sandbox`, a normal iPhone user agent, set `localStorage['fan-friction:tipsDone']='true'`. `npm run dev` may land on port 3002. Don't `pkill -f vite`; use `kill $(lsof -ti:PORT)`.
 
 ## Next steps
-1. **Step 4 (Kylie said wait until she says go):** Nights calendar shaded by each date's rating, with a legend, plus search by team, artist or venue. Her latest idea to build with it: one "When" control (Today, Next 7 days, All upcoming, Pick a date) replacing the Map's dropdown and date picker, with the very top bar of the Map becoming the area (city/metro) switcher, shown only once a second metro exists.
-2. First, ask Kylie for more UX/UI notes (she said more are coming) and any seed data gaps she can fill (`BACKLOG.md`).
-3. Then Step 5 (You tab, saving with Supabase), Step 6 (Traffic), rest of Step 7 (results, concerts via Ticketmaster), Step 8 (rating formula).
+1. Kylie looks at the Nights calendar, search, and the Map's When control (phone width). Ask whether she has more UX/UI notes and anything for the remaining seed gaps (`BACKLOG.md`).
+2. Then Step 5 (You tab, saving with Supabase), Step 6 (Traffic), rest of Step 7 (results, concerts via Ticketmaster), Step 8 (rating formula).
 
 **Next command to run:**
 ```bash
-npm run dev   # local preview (http://localhost:3001, or 3002 if busy); Step 4 starts in src/screens/NightsScreen.tsx once Kylie says go
+npm run dev   # local preview (http://localhost:3001, or 3002 if busy); open Nights, or the Map and tap When
 ```
