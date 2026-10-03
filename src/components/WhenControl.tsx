@@ -2,8 +2,7 @@ import { useId } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import type { Metro } from '../config/metros';
 import { ChevronDown } from './Icons';
-import { shortLocalDate } from '../lib/dates';
-import { mapPath, nightsPath, type WhenSpan } from '../lib/view';
+import { mapPath, nightsPath, whenLabel, type WhenSpan } from '../lib/view';
 
 interface Props {
   metro: Metro;
@@ -25,7 +24,7 @@ export function WhenControl({ metro, date, today, isToday, span, open, onOpenCha
   const navigate = useNavigate();
   const menuId = useId();
 
-  const label = span === 'week' ? 'Next 7 days' : isToday ? 'Today' : shortLocalDate(date);
+  const label = whenLabel(span, isToday, date);
 
   const go = (nextDate: string, when: WhenSpan) => {
     navigate(mapPath({ metroId: metro.id, date: nextDate, today, when }));

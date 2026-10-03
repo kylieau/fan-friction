@@ -1,10 +1,17 @@
 import { useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import { todayIn } from '../data';
-import { isValidDate } from './dates';
+import { isValidDate, shortLocalDate } from './dates';
 
 /** How wide the map looks around its base date. A rated week shows the average to one decimal. */
 export type WhenSpan = 'day' | 'week';
+
+/** The When pill's words: "Today", "Next 7 days", or "Fri, Oct 25". */
+export function whenLabel(span: WhenSpan, isToday: boolean, date: string): string {
+  if (span === 'week') return 'Next 7 days';
+  if (isToday) return 'Today';
+  return shortLocalDate(date);
+}
 
 /**
  * What the Map is looking at: one place and one date. The header owns the

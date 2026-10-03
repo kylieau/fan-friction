@@ -12,7 +12,7 @@ import { ArrowRight, ChevronDown, SearchIcon } from '../components/Icons';
 import { eventChip } from '../lib/chips';
 import { addDays, clockTime, shortLocalDate } from '../lib/dates';
 import { useSheetDrag } from '../lib/useSheetDrag';
-import { nightsPath, useView, type WhenSpan } from '../lib/view';
+import { nightsPath, useView, whenLabel, type WhenSpan } from '../lib/view';
 
 type Mode = 'crowds' | 'traffic';
 
@@ -140,7 +140,7 @@ export function MapScreen() {
     setBounds(null);
   }, [metro.id, date, span]);
   const onMap = useMemo(() => events.filter((event) => eventInBounds(event, bounds)), [events, bounds]);
-  const nightLine = shown ? 'On the map' : ' ';
+  const nightLine = shown ? `${whenLabel(span, isToday, date)} · On the map` : ' ';
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);
