@@ -132,4 +132,21 @@ export async function searchNights(metroId: string, query: string): Promise<Nigh
 export { VENUES, venueNameOn, capacityOn } from './venues';
 export { TEAMS } from './teams';
 export { audienceOverlap } from './audience';
+export {
+  filterChoices,
+  getPersonalLog,
+  getSaveWarning,
+  isPlanned,
+  isWasThere,
+  logStats,
+  nightBackup,
+  ratingForNight,
+  removePlan,
+  setYouOrder,
+  subscribePersonalLog,
+  togglePlan,
+  toggleWasThere,
+  upcomingPlans,
+  yourNights,
+} from './personalLog';
 export type * from './types';

@@ -19,7 +19,8 @@ const LOOKAHEAD_DAYS = 120;
 
 // Room the header and the collapsed sheet take on the full-screen map;
 // dots and labels are kept out of it.
-const INSETS = { top: 190, bottom: 200 };
+// The area name sits above When, so the header is a row taller than a When-only bar.
+const INSETS = { top: 236, bottom: 200 };
 
 // The map is the screen; the header and the sheet sit on it. Opens on Today, even
 // when it's quiet. A famous night opens here too ("/?date=2024-10-25").
@@ -28,7 +29,6 @@ export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
   const { metro, date, today, isToday, when } = useView();
-  const severalMetros = Object.values(METROS).length > 1;
 
   const [day, setDay] = useState<CityDate | null>(null);
   useEffect(() => {
@@ -135,16 +135,12 @@ export function MapScreen() {
 
       <header className="map-header">
         <div className="map-header-top">
-          {severalMetros ? (
-            <AreaSwitcher metro={metro} />
-          ) : (
-            <WhenControl metro={metro} date={date} today={today} isToday={isToday} span={span} />
-          )}
+          <AreaSwitcher metro={metro} />
           <Link to={nightsPath({ metroId: metro.id, date })} className="round-button" aria-label="Search nights">
             <SearchIcon />
           </Link>
         </div>
-        {severalMetros && <WhenControl metro={metro} date={date} today={today} isToday={isToday} span={span} />}
+        <WhenControl metro={metro} date={date} today={today} isToday={isToday} span={span} />
         <div className="map-header-score">
           <NightScore rating={rating ? rating.rating : null} quiet={shown?.status === 'quiet'} caption={caption} />
           <div className="segmented small" role="tablist" aria-label="Map mode">
@@ -251,13 +247,12 @@ export function MapScreen() {
 }
 
 /**
- * The top bar becomes an area switcher once a second metro exists.
- * With only Los Angeles it is not shown; the When control stays in that spot.
+ * The top bar is the area. Los Angeles is the only metro for now, and the
+ * control still shows so a later city does not have to move it.
  */
 function AreaSwitcher({ metro }: { metro: Metro }) {
   const [params, setParams] = useSearchParams();
   const metros = Object.values(METROS);
-  if (metros.length < 2) return null;
   return (
     <label className="area-switcher">
       <span className="sr-only">Area</span>

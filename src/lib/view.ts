@@ -9,8 +9,8 @@ export type WhenSpan = 'day' | 'week' | 'all';
 /**
  * What the Map is looking at: one place and one date. The header owns both;
  * the sheet, the map and everything else just read them. `when` is null until
- * someone picks Today, a range, or a date. The place is LA until a second
- * metro exists; an area switcher only has to change it here.
+ * someone picks Today, a range, or a date. The area switcher changes the
+ * place here. Los Angeles is the only metro for now.
  */
 export interface View {
   metro: Metro;

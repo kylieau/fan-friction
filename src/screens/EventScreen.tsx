@@ -1,8 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { frictionLabel, showFriction } from '../config/scoreLabels';
-import { getCityDate, type CityDate } from '../data';
+import {
+  getCityDate,
+  getPersonalLog,
+  isPlanned,
+  isWasThere,
+  subscribePersonalLog,
+  todayIn,
+  togglePlan,
+  toggleWasThere,
+  type CityDate,
+} from '../data';
 import { crowdKind, crowdPoints, type CrowdPoint } from '../map/crowdPoints';
 import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
@@ -18,6 +28,7 @@ export function EventScreen() {
   const { id = '' } = useParams();
   const date = id.slice(0, 10);
   const [day, setDay] = useState<CityDate | null>(null);
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
 
   useEffect(() => {
     let current = true;
@@ -73,6 +84,32 @@ export function EventScreen() {
           </div>
         )}
       </header>
+
+      <div className="event-marks">
+        <button
+          type="button"
+          className={`mark-button${isWasThere(e.id, log) ? ' on' : ''}`}
+          aria-pressed={isWasThere(e.id, log)}
+          onClick={() => toggleWasThere(e)}
+        >
+          {isWasThere(e.id, log) ? 'I was there · saved' : 'I was there'}
+        </button>
+        <p className="mark-hint">
+          {isWasThere(e.id, log)
+            ? 'Saved in Your nights on this phone. Tap again to remove it.'
+            : 'Saves this night in Your nights on this phone.'}
+        </p>
+        {e.date >= todayIn(DEFAULT_METRO) && (
+          <button
+            type="button"
+            className={`mark-button${isPlanned(e.id, log) ? ' on' : ''}`}
+            aria-pressed={isPlanned(e.id, log)}
+            onClick={() => togglePlan(e)}
+          >
+            {isPlanned(e.id, log) ? 'Planned · Up next' : 'Plan this night'}
+          </button>
+        )}
+      </div>
 
       {a && showFriction(a.friction) && (
         <section className="card verdict">
