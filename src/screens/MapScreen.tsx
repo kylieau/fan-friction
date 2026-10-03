@@ -15,7 +15,7 @@ import { nightsPath, useView, type WhenSpan } from '../lib/view';
 
 type Mode = 'crowds' | 'traffic';
 
-const LOOKAHEAD_DAYS = 120;
+const LOOKAHEAD_DAYS = 7;
 
 // Room the header, the on-map When pill, and the collapsed sheet take on the
 // full-screen map. Dots and labels are kept out of it.
@@ -67,14 +67,14 @@ export function MapScreen() {
   const dayEvents = shown?.events ?? [];
 
   // A blank map is boring, so if this date is empty and nobody has picked When yet,
-  // the map widens by itself: next 7 days, then everything listed. A pick always wins.
+  // the map widens to the next 7 days. A pick always wins.
   // The header rating still describes the base date; a range has no rating of its own.
   const weekAhead = useMemo(() => ahead.filter((e) => e.date <= addDays(date, 7)), [ahead, date]);
-  const autoSpan: WhenSpan = dayEvents.length > 0 ? 'day' : weekAhead.length > 0 ? 'week' : 'all';
+  const autoSpan: WhenSpan = dayEvents.length > 0 ? 'day' : 'week';
   const span: WhenSpan = !canLookAhead ? 'day' : (when ?? (shown ? autoSpan : 'day'));
   const events = useMemo(
-    () => (span === 'day' ? dayEvents : span === 'week' ? [...dayEvents, ...weekAhead] : [...dayEvents, ...ahead]),
-    [span, dayEvents, weekAhead, ahead],
+    () => (span === 'day' ? dayEvents : [...dayEvents, ...weekAhead]),
+    [span, dayEvents, weekAhead],
   );
   // The map shows one pin and label per venue: the next event there. The sheet's list
   // still holds every event, and picking one from it rings its venue's pin.
@@ -113,11 +113,9 @@ export function MapScreen() {
       ? `Squeezed most: ${rating.squeezedMost}`
       : span === 'week'
         ? 'Next 7 days'
-        : span === 'all'
-          ? 'All upcoming'
-          : isToday
-            ? 'Today'
-            : shortLocalDate(date);
+        : isToday
+          ? 'Today'
+          : shortLocalDate(date);
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);

@@ -4,7 +4,7 @@ import { todayIn } from '../data';
 import { isValidDate } from './dates';
 
 /** How wide the map looks around its base date. A range has no rating of its own. */
-export type WhenSpan = 'day' | 'week' | 'all';
+export type WhenSpan = 'day' | 'week';
 
 /**
  * What the Map is looking at: one place and one date. The header owns the
@@ -29,7 +29,7 @@ export function useView(): View {
   const rawDate = params.get('date');
   const date = rawDate && isValidDate(rawDate) ? rawDate : today;
   const rawWhen = params.get('when');
-  const when: WhenSpan | null = rawWhen === 'day' || rawWhen === 'week' || rawWhen === 'all' ? rawWhen : null;
+  const when: WhenSpan | null = rawWhen === 'day' || rawWhen === 'week' ? rawWhen : null;
   return { metro, date, today, isToday: date === today, when };
 }
 

@@ -18,7 +18,7 @@ interface Props {
 
 /**
  * The one When control, drawn as the on-map pill: Today, Next 7 days,
- * All upcoming, or Pick a date. A range keeps the base date, and the header
+ * or Pick a date. A range keeps the base date, and the header
  * rating still describes that date.
  */
 export function WhenControl({ metro, date, today, isToday, span, open, onOpenChange }: Props) {
@@ -29,18 +29,16 @@ export function WhenControl({ metro, date, today, isToday, span, open, onOpenCha
   const label =
     span === 'week'
       ? `${dayLabel} · Next 7 days`
-      : span === 'all'
-        ? `${dayLabel} · All upcoming`
-        : isToday
-          ? `Today · ${shortDate(new Date(), metro)}`
-          : shortLocalDate(date);
+      : isToday
+        ? `Today · ${shortDate(new Date(), metro)}`
+        : shortLocalDate(date);
 
   const go = (nextDate: string, when: WhenSpan) => {
     navigate(mapPath({ metroId: metro.id, date: nextDate, today, when }));
     onOpenChange(false);
   };
 
-  // Next 7 days and All upcoming start at today when the base date is in the past.
+  // Next 7 days starts at today when the base date is in the past.
   const base = date < today ? today : date;
   const pickedDate = span === 'day' && !isToday;
 
@@ -64,9 +62,6 @@ export function WhenControl({ metro, date, today, isToday, span, open, onOpenCha
           </button>
           <button type="button" role="menuitemradio" aria-checked={span === 'week'} onClick={() => go(base, 'week')}>
             Next 7 days
-          </button>
-          <button type="button" role="menuitemradio" aria-checked={span === 'all'} onClick={() => go(base, 'all')}>
-            All upcoming
           </button>
           <Link
             role="menuitem"
