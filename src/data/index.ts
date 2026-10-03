@@ -2,12 +2,13 @@
 // so adding a live feed means adding it to the lists below, nothing else.
 
 import type { Metro } from '../config/metros';
+import { espnEvents } from './sources/espnSource';
 import { mlbEvents } from './sources/mlbSource';
 import { seedEvents, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
 import type { CityDate, CrowdEvent, DateRating, LocalDate } from './types';
 
-const EVENT_SOURCES: EventSource[] = [seedEvents, mlbEvents];
+const EVENT_SOURCES: EventSource[] = [seedEvents, mlbEvents, espnEvents];
 const RATING_SOURCES: RatingSource[] = [seedRatings];
 
 /** Everything known about one date in one metro: its events, rating and status. */
