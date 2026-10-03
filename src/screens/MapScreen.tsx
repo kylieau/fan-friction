@@ -109,13 +109,11 @@ export function MapScreen() {
 
   const nightLine = !shown
     ? ' '
-    : span === 'day' && rating
-      ? `Squeezed most: ${rating.squeezedMost}`
-      : span === 'week'
-        ? 'Next 7 days'
-        : isToday
-          ? 'Today'
-          : shortLocalDate(date);
+    : dayEvents.length === 0
+      ? `${isToday ? 'Quiet so far today.' : 'Quiet on this date.'}${events.length > 0 ? ' Showing the next 7 days.' : ''}`
+      : rating
+        ? `Squeezed most: ${rating.squeezedMost}`
+        : 'Big events that day';
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);
