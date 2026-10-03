@@ -99,56 +99,83 @@ export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
       return { x0: at.x - 8, y0: at.y - 8, x1: at.x + 8, y1: at.y + 8 };
     });
     const clash = (a: Box, b: Box) => a.x0 < b.x1 && a.x1 > b.x0 && a.y0 < b.y1 && a.y1 > b.y0;
+    const overlapArea = (a: Box, b: Box) => {
+      const x = Math.max(0, Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0));
+      const y = Math.max(0, Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0));
+      return x * y;
+    };
 
-    const markers = points.map((p) => {
-      const el = document.createElement('div');
-      el.className = 'crowd-label';
-      const name = `${p.biggest ? '★ ' : ''}${escapeHtml(p.event.title)}`;
-      el.innerHTML =
-        `<span class="crowd-line" data-id="${escapeHtml(p.event.id)}">` +
-        `<span class="crowd-name">${name}</span>` +
-        `<span class="crowd-meta">${escapeHtml(chipDetail(p))}</span>` +
-        `</span>`;
-      el.addEventListener('click', (ev) => {
-        ev.stopPropagation();
-        const id = (ev.target as HTMLElement).closest<HTMLElement>('.crowd-line')?.dataset.id;
-        if (id) selectRef.current(id);
-      });
-      // The chip is only as wide as its text. Measure it so the gap check matches.
-      el.style.position = 'fixed';
-      el.style.left = '0';
-      el.style.top = '0';
-      el.style.visibility = 'hidden';
-      document.body.appendChild(el);
-      const labelW = el.offsetWidth;
-      const labelH = el.offsetHeight;
-      document.body.removeChild(el);
-      el.style.position = '';
-      el.style.left = '';
-      el.style.top = '';
-      el.style.visibility = '';
-      const at = map.project(p.location);
-      // Clearance keeps a two-line chip off its own dot and off the chip on the next side.
-      const pad = Math.ceil(labelH / 2) + 4;
-      const spots: { anchor: Anchor; offset: [number, number] }[] = [
-        { anchor: 'bottom', offset: [0, -pad] },
-        { anchor: 'top', offset: [0, pad] },
-        { anchor: 'left', offset: [pad, 0] },
-        { anchor: 'right', offset: [-pad, 0] },
-        { anchor: 'bottom-left', offset: [pad, -pad] },
-        { anchor: 'bottom-right', offset: [-pad, -pad] },
-        { anchor: 'top-left', offset: [pad, pad] },
-        { anchor: 'top-right', offset: [-pad, pad] },
-      ];
-      const options = spots.map((spot) => ({ ...spot, box: boxFor(spot.anchor, spot.offset[0], spot.offset[1], labelW, labelH, at) }));
-      const fits = (o: (typeof options)[number]) =>
-        o.box.x0 >= 4 && o.box.x1 <= view.w - 4 && o.box.y0 >= insets.top && o.box.y1 <= view.h && !taken.some((t) => clash(o.box, t));
-      const pick = options.find(fits) ?? options[0];
-      taken.push(pick.box);
-      return new Marker({ element: el, anchor: pick.anchor, offset: [...pick.offset] }).setLngLat(p.location).addTo(map);
-    });
+    const markers: Marker[] = [];
+    let cancelled = false;
+
+    // Measure after the font is in, so a late font swap doesn't grow a chip into its neighbor.
+    const placeLabels = () => {
+      if (cancelled) return;
+      for (const p of points) {
+        const el = document.createElement('div');
+        el.className = 'crowd-label';
+        const name = `${p.biggest ? '★ ' : ''}${escapeHtml(p.event.title)}`;
+        el.innerHTML =
+          `<span class="crowd-line" data-id="${escapeHtml(p.event.id)}">` +
+          `<span class="crowd-name">${name}</span>` +
+          `<span class="crowd-meta">${escapeHtml(chipDetail(p))}</span>` +
+          `</span>`;
+        el.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          const id = (ev.target as HTMLElement).closest<HTMLElement>('.crowd-line')?.dataset.id;
+          if (id) selectRef.current(id);
+        });
+        // The chip is only as wide as its text. Measure it so the gap check matches.
+        el.style.position = 'fixed';
+        el.style.left = '0';
+        el.style.top = '0';
+        el.style.visibility = 'hidden';
+        document.body.appendChild(el);
+        const labelW = el.offsetWidth;
+        const labelH = el.offsetHeight;
+        document.body.removeChild(el);
+        el.style.position = '';
+        el.style.left = '';
+        el.style.top = '';
+        el.style.visibility = '';
+        const at = map.project(p.location);
+        // Clearance keeps a two-line chip off its own dot. Further steps separate neighbors.
+        const pad = Math.ceil(labelH / 2) + 4;
+        const dirs: { anchor: Anchor; dir: [number, number] }[] = [
+          { anchor: 'bottom', dir: [0, -1] },
+          { anchor: 'top', dir: [0, 1] },
+          { anchor: 'left', dir: [1, 0] },
+          { anchor: 'right', dir: [-1, 0] },
+          { anchor: 'bottom-left', dir: [1, -1] },
+          { anchor: 'bottom-right', dir: [-1, -1] },
+          { anchor: 'top-left', dir: [1, 1] },
+          { anchor: 'top-right', dir: [-1, 1] },
+        ];
+        const options = [1, 2, 3].flatMap((step) =>
+          dirs.map((spot) => {
+            const offset: [number, number] = [spot.dir[0] * pad * step, spot.dir[1] * pad * step];
+            return { anchor: spot.anchor, offset, box: boxFor(spot.anchor, offset[0], offset[1], labelW, labelH, at) };
+          }),
+        );
+        const onScreen = (box: Box) => box.x0 >= 4 && box.x1 <= view.w - 4 && box.y0 >= insets.top && box.y1 <= view.h;
+        const breathe = (box: Box): Box => ({ x0: box.x0 - 4, y0: box.y0 - 4, x1: box.x1 + 4, y1: box.y1 + 4 });
+        const crowded = (box: Box) => taken.some((t) => clash(breathe(box), breathe(t)));
+        const pick =
+          options.find((o) => onScreen(o.box) && !crowded(o.box)) ??
+          options.slice().sort((a, b) => {
+            const cost = (box: Box) => taken.reduce((sum, t) => sum + overlapArea(box, t), 0) + (onScreen(box) ? 0 : 100000);
+            return cost(a.box) - cost(b.box);
+          })[0];
+        taken.push(pick.box);
+        markers.push(new Marker({ element: el, anchor: pick.anchor, offset: [...pick.offset] }).setLngLat(p.location).addTo(map));
+      }
+    };
+
+    if (document.fonts.status === 'loaded') placeLabels();
+    else void document.fonts.ready.then(placeLabels);
 
     return () => {
+      cancelled = true;
       for (const m of markers) m.remove();
       map.off('click', 'crowd-core', onDot as never);
       map.off('click', 'crowd-glow', onDot as never);
