@@ -106,12 +106,12 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
 export const LA_20261003_RATING: DateRating = {
   metroId: 'la',
   date: DATE,
-  rating: 7.5,
+  rating: 7.8,
   headline: 'NLDS Game 1 in the afternoon, then USC and an Inglewood night',
   squeezedMost: 'Forum and Intuit',
   method: 'formula',
   notes:
-    'Draft. Crowd fight draft 6.8 (Medium 0.35) plus a draft heat nudge of +0.7 (about 10%, the low end of the 10–15% weather cap). About 100°F at Dodger Stadium at first pitch (1:08 p.m.), high about 102°F. Heat applies to the open day games (Dodgers, USC), not the indoor Forum or Intuit, or covered SoFi. Gridlock is not applied yet.',
+    'Draft. Crowd fight draft 6.8 (Medium 0.35) plus a draft heat nudge of +1.0 (the high end of the 10–15% weather cap), so 7.8. Air about 100°F at first pitch, high about 102°F, feels-like 103°F. Heat applies to the open day games (Dodgers, USC) only, not the indoor Forum or Intuit, or covered SoFi. Gridlock is not applied yet.',
   sources: [
     { label: 'MLB', url: 'https://www.mlb.com/news/braves-vs-dodgers-nlds-game-1-starting-lineups-pitching-matchup' },
     { label: 'USC', url: 'https://usctrojans.com/game-center/35254' },
