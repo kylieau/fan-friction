@@ -682,38 +682,65 @@ button {
 }
 
 .cal-blank {
-  height: 46px;
+  height: 56px;
 }
 
+/* The date sits in the corner. The rating, number and word, is the center.
+   Darker blue is a harder night. Days with no rating stay plain. */
 .cal-day {
-  height: 46px;
+  position: relative;
+  height: 56px;
   border-radius: 10px;
+  display: block;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.cal-day.plain {
+  background: #f2f5f9;
+  color: var(--ink);
+}
+
+.cal-num {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.cal-read {
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 14px;
+  bottom: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1px;
-  font-size: 14px;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-  text-decoration: none;
+  gap: 0;
 }
 
-/* Quiet and Chill stay light, with ink text, so an empty day is still readable. */
-.cal-day.quiet {
-  background: #f2f5f9;
-  color: var(--ink2);
-  font-weight: 600;
+.cal-score {
+  font-family: 'Big Shoulders Display', 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 0.85;
 }
 
-.cal-day.unrated {
-  background: var(--card);
-  color: var(--ink);
-  box-shadow: inset 0 0 0 1.5px var(--dodger);
+.cal-word {
+  font-size: 8px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
+/* Light to dark blue. The darkest is Cooked. */
 .cal-day.chill {
-  background: #e8ecf2;
+  background: #e4eef6;
   color: var(--ink);
 }
 
@@ -737,107 +764,8 @@ button {
   color: var(--card);
 }
 
-.cal-score {
-  font-family: 'Big Shoulders Display', 'Manrope', sans-serif;
-  font-size: 11px;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.cal-day.chill .cal-score,
-.cal-day.light .cal-score {
-  color: var(--dodger);
-}
-
-/* Dodger blue on the pale Mid shade is hard to read, so the number stays ink. */
-.cal-day.mid .cal-score {
-  color: var(--ink);
-}
-
-.cal-day.cooked .cal-score {
-  color: var(--gold);
-}
-
-.cal-dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--dodger);
-}
-
 .cal-day.selected {
   box-shadow: 0 0 0 2px var(--gold);
-}
-
-.cal-day.unrated.selected {
-  box-shadow: inset 0 0 0 1.5px var(--dodger), 0 0 0 2px var(--gold);
-}
-
-.cal-day.today:not(.selected) {
-  box-shadow: inset 0 0 0 2px var(--dodger);
-}
-
-.cal-day.unrated.today:not(.selected) {
-  box-shadow: inset 0 0 0 2px var(--dodger);
-}
-
-.cal-legend {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 10px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--ink2);
-}
-
-.legend-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.legend-note {
-  flex-basis: 100%;
-  font-weight: 500;
-  line-height: 1.35;
-}
-
-.swatch {
-  width: 18px;
-  height: 10px;
-  border-radius: 3px;
-}
-
-.swatch.quiet {
-  background: #f2f5f9;
-  box-shadow: inset 0 0 0 1px var(--barOff);
-}
-
-.swatch.unrated {
-  background: var(--card);
-  box-shadow: inset 0 0 0 1.5px var(--dodger);
-}
-
-.swatch.chill {
-  background: #e8ecf2;
-  box-shadow: inset 0 0 0 1px var(--barOff);
-}
-
-.swatch.light {
-  background: var(--water);
-}
-
-.swatch.mid {
-  background: var(--paleBlue);
-}
-
-.swatch.brutal {
-  background: var(--ucla);
-}
-
-.swatch.cooked {
-  background: var(--dodger);
 }
 
 .badge-unrated {

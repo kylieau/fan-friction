@@ -123,19 +123,24 @@ export function NightsScreen() {
                 {monthCells(month).map((date, i) => {
                   if (!date) return <span key={`blank-${i}`} className="cal-blank" />;
                   const day = byDate.get(date) ?? { date, status: 'quiet' as const, rating: null };
-                  const band = day.status === 'rated' && day.rating !== null ? scoreBand(day.rating) : day.status;
+                  const rating = day.status === 'rated' ? day.rating : null;
+                  const band = rating !== null ? scoreBand(rating) : 'plain';
                   const selected = focus === date;
                   return (
                     <Link
                       key={date}
                       to={openNight(date)}
-                      className={`cal-day ${band}${selected ? ' selected' : ''}${date === today ? ' today' : ''}`}
+                      className={`cal-day ${band}${selected ? ' selected' : ''}`}
                       aria-label={dayLabel(day)}
                       aria-current={selected ? 'date' : undefined}
                     >
                       <span className="cal-num">{Number(date.slice(8))}</span>
-                      {day.status === 'rated' && day.rating !== null && <span className="cal-score">{day.rating}</span>}
-                      {day.status === 'unrated' && <span className="cal-dot" />}
+                      {rating !== null && (
+                        <span className="cal-read">
+                          <span className="cal-score">{rating}</span>
+                          <span className="cal-word">{scoreLabel(rating)}</span>
+                        </span>
+                      )}
                     </Link>
                   );
                 })}
@@ -143,30 +148,6 @@ export function NightsScreen() {
             ) : (
               <p className="card-body">Loading this month…</p>
             )}
-            <div className="cal-legend">
-              <span className="legend-item">
-                <span className="swatch quiet" /> Quiet
-              </span>
-              <span className="legend-item">
-                <span className="swatch unrated" /> Unrated
-              </span>
-              <span className="legend-item">
-                <span className="swatch chill" /> Chill
-              </span>
-              <span className="legend-item">
-                <span className="swatch light" /> Light
-              </span>
-              <span className="legend-item">
-                <span className="swatch mid" /> Mid
-              </span>
-              <span className="legend-item">
-                <span className="swatch brutal" /> Brutal
-              </span>
-              <span className="legend-item">
-                <span className="swatch cooked" /> Cooked
-              </span>
-              <span className="legend-note">The number on a day is its rating. Quiet means nothing big is on file.</span>
-            </div>
           </section>
 
           {onThisDay && (
