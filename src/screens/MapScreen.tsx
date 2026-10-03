@@ -1,27 +1,25 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
+import { DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import { getCityDate, getEventsBetween, getUpcoming, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { crowdKind, crowdPoints } from '../map/crowdPoints';
 import { NightScore } from '../components/NightScore';
+import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, SearchIcon } from '../components/Icons';
 import { eventChip } from '../lib/chips';
-import { clockTime, shortDate, shortLocalDate } from '../lib/dates';
-import { addDays } from '../lib/dates';
+import { addDays, clockTime, shortLocalDate } from '../lib/dates';
 import { useSheetDrag } from '../lib/useSheetDrag';
-import { useView } from '../lib/view';
+import { nightsPath, useView, type WhenSpan } from '../lib/view';
 
 type Mode = 'crowds' | 'traffic';
-/** What the map shows: just this date, the next 7 days, or everything the feeds list. */
-type Range = 'day' | 'week' | 'all';
 
 const LOOKAHEAD_DAYS = 120;
 
-// Room the header, the filter row and the collapsed sheet take on the full-screen
-// map; dots and labels are kept out of it.
+// Room the header and the collapsed sheet take on the full-screen map;
+// dots and labels are kept out of it.
 const INSETS = { top: 190, bottom: 200 };
-const INSETS_WITH_FILTER = { top: 228, bottom: 200 };
 
 // The map is the screen; the header and the sheet sit on it. Opens on Today, even
 // when it's quiet. A famous night opens here too ("/?date=2024-10-25").
@@ -29,7 +27,8 @@ const INSETS_WITH_FILTER = { top: 228, bottom: 200 };
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
-  const { metro, date, today, isToday } = useView();
+  const { metro, date, today, isToday, when } = useView();
+  const severalMetros = Object.values(METROS).length > 1;
 
   const [day, setDay] = useState<CityDate | null>(null);
   useEffect(() => {
@@ -68,15 +67,15 @@ export function MapScreen() {
   const rating = shown?.rating ?? null;
   const dayEvents = shown?.events ?? [];
 
-  // A blank map is boring, so if this date is empty the map widens by itself: next 7 days,
-  // then everything listed. Kylie's own pick of a filter always wins.
-  const [pickedRange, setPickedRange] = useState<Range | null>(null);
+  // A blank map is boring, so if this date is empty and nobody has picked When yet,
+  // the map widens by itself: next 7 days, then everything listed. A pick always wins.
+  // The header rating still describes the base date; a range has no rating of its own.
   const weekAhead = useMemo(() => ahead.filter((e) => e.date <= addDays(date, 7)), [ahead, date]);
-  const autoRange: Range = dayEvents.length > 0 ? 'day' : weekAhead.length > 0 ? 'week' : 'all';
-  const range: Range = canLookAhead ? (pickedRange ?? autoRange) : 'day';
+  const autoSpan: WhenSpan = dayEvents.length > 0 ? 'day' : weekAhead.length > 0 ? 'week' : 'all';
+  const span: WhenSpan = !canLookAhead ? 'day' : (when ?? (shown ? autoSpan : 'day'));
   const events = useMemo(
-    () => (range === 'day' ? dayEvents : range === 'week' ? [...dayEvents, ...weekAhead] : [...dayEvents, ...ahead]),
-    [range, dayEvents, weekAhead, ahead],
+    () => (span === 'day' ? dayEvents : span === 'week' ? [...dayEvents, ...weekAhead] : [...dayEvents, ...ahead]),
+    [span, dayEvents, weekAhead, ahead],
   );
   // The map shows one pin and label per venue: the next event there. The sheet's list
   // still holds every event, and picking one from it rings its venue's pin.
@@ -89,8 +88,6 @@ export function MapScreen() {
     const idToPin = new Map(all.map((p) => [p.event.id, next.get(venueKey(p))!.event.id]));
     return { points: [...next.values()], pinFor: (id: string | null) => (id ? (idToPin.get(id) ?? id) : null) };
   }, [shown, mode, events, date]);
-  const insets = canLookAhead ? INSETS_WITH_FILTER : INSETS;
-
   // The sheet has two heights: collapsed (grabber + the night line) and expanded (the list).
   // It starts expanded on a quiet date, where the list is all there is to see.
   const [open, setOpen] = useState(false);
@@ -98,7 +95,6 @@ export function MapScreen() {
   useEffect(() => {
     setSelectedId(null);
     setOpen(false);
-    setPickedRange(null);
   }, [date]);
 
   const select = useCallback((id: string | null) => setSelectedId(id), []);
@@ -115,7 +111,7 @@ export function MapScreen() {
   const nightLine = !shown
     ? ' '
     : dayEvents.length === 0
-      ? `${isToday ? 'Quiet so far today.' : 'Quiet on this date.'}${events.length > 0 ? ` Showing ${range === 'week' ? 'the next 7 days' : 'what\'s coming up'}.` : ''}`
+      ? `${isToday ? 'Quiet so far today.' : 'Quiet on this date.'}${events.length > 0 ? ` Showing ${span === 'week' ? 'the next 7 days' : 'what\'s coming up'}.` : ''}`
       : rating
         ? `Squeezed most: ${rating.squeezedMost}`
         : 'Big events that day';
@@ -133,20 +129,22 @@ export function MapScreen() {
     <div className={`screen map-screen${open ? ' sheet-open' : ''}`}>
       <div className="map-area">
         <BaseMap metro={metro}>
-          <CrowdLayer points={points} selectedId={pinFor(selectedId)} onSelect={select} insets={insets} />
+          <CrowdLayer points={points} selectedId={pinFor(selectedId)} onSelect={select} insets={INSETS} />
         </BaseMap>
       </div>
 
       <header className="map-header">
         <div className="map-header-top">
-          <Link to="/nights" className="date-button">
-            {isToday ? `Today · ${shortDate(new Date(), metro)}` : shortLocalDate(date)}
-            <ChevronDown />
-          </Link>
-          <Link to="/nights" className="round-button" aria-label="Search nights">
+          {severalMetros ? (
+            <AreaSwitcher metro={metro} />
+          ) : (
+            <WhenControl metro={metro} date={date} today={today} isToday={isToday} span={span} />
+          )}
+          <Link to={nightsPath({ metroId: metro.id, date })} className="round-button" aria-label="Search nights">
             <SearchIcon />
           </Link>
         </div>
+        {severalMetros && <WhenControl metro={metro} date={date} today={today} isToday={isToday} span={span} />}
         <div className="map-header-score">
           <NightScore rating={rating ? rating.rating : null} quiet={shown?.status === 'quiet'} caption={caption} />
           <div className="segmented small" role="tablist" aria-label="Map mode">
@@ -160,20 +158,8 @@ export function MapScreen() {
         </div>
       </header>
 
-      {canLookAhead && (
-        <label className="range-row">
-          <span className="sr-only">Which events to show</span>
-          <select value={range} onChange={(e) => setPickedRange(e.target.value as Range)}>
-            <option value="day">{isToday ? 'Today' : 'This date'}</option>
-            <option value="week">Next 7 days</option>
-            <option value="all">All upcoming</option>
-          </select>
-          <ChevronDown />
-        </label>
-      )}
-
       {(mode === 'traffic' || points.length > 0) && (
-        <div className={`map-question${canLookAhead ? ' below-filter' : ''}`}>
+        <div className="map-question">
           {mode === 'crowds' ? 'Where did the crowds go?' : 'Should I brave the roads?'}
           {mode === 'traffic' && <span className="estimate-chip">Estimate · not live</span>}
         </div>
@@ -240,13 +226,13 @@ export function MapScreen() {
               ))}
             </ul>
           )}
-          {range === 'day' && upcoming.length > 0 && (
+          {span === 'day' && upcoming.length > 0 && (
             <div className="coming-up">
               <div className="section-title">Coming up</div>
               <ul className="event-list">
                 {upcoming.map((e) => (
                   <li key={e.id}>
-                    <Link to={`/?date=${e.date}`} className="event-row">
+                    <Link to={`/?date=${e.date}&when=day`} className="event-row">
                       <span className="event-time">{shortLocalDate(e.date)}</span>
                       <span className="event-main">
                         <span className="event-title">{e.title}</span>
@@ -261,6 +247,38 @@ export function MapScreen() {
         </div>
       </section>
     </div>
+  );
+}
+
+/**
+ * The top bar becomes an area switcher once a second metro exists.
+ * With only Los Angeles it is not shown; the When control stays in that spot.
+ */
+function AreaSwitcher({ metro }: { metro: Metro }) {
+  const [params, setParams] = useSearchParams();
+  const metros = Object.values(METROS);
+  if (metros.length < 2) return null;
+  return (
+    <label className="area-switcher">
+      <span className="sr-only">Area</span>
+      <select
+        value={metro.id}
+        aria-label="Area"
+        onChange={(event) => {
+          const next = new URLSearchParams(params);
+          if (event.target.value === DEFAULT_METRO.id) next.delete('metro');
+          else next.set('metro', event.target.value);
+          setParams(next);
+        }}
+      >
+        {metros.map((item) => (
+          <option key={item.id} value={item.id}>
+            {item.name}
+          </option>
+        ))}
+      </select>
+      <ChevronDown />
+    </label>
   );
 }
 
