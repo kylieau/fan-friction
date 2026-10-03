@@ -1563,6 +1563,10 @@ button {
   gap: 10px;
 }
 
+.stat-grid.pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .stat-card {
   background: var(--card);
   border-radius: 16px;

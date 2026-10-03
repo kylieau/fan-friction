@@ -6,13 +6,13 @@ _Last synced: Oct 3, 2026._
 
 ## Current state
 - **Step 5 is on branch `cursor/you-tab-local-log-684c` (not merged).** The You tab lists her seeded log plus nights she marks, with filters, plain counts, Plans-first order, and Export. Saving is on this phone. `npm run build` passed. Phone-width stills are in the PR. Live site https://fan-friction.vercel.app/ still deploys from `main`.
-- **What Kylie can open:** You shows Up next (empty until she taps Plan this night), Your nights, team and sport filters, and counts by team and sport, sport, and venue. The Event screen has "I was there" and, for today or later, "Plan this night." Export my nights downloads a JSON file. The Map's top bar shows Los Angeles even though it is the only area. The date control is a pill on the map, under that bar, and it opens Today, Next 7 days, All upcoming, and Pick a date. The score in the bar still describes that one date when the map is showing a range. Nights calendar is unchanged: date in the corner, rating in the center.
+- **What Kylie can open:** You shows Up next (empty until she taps Plan this night), Your nights, team and sport filters, and counts. The two big numbers are Events (each log entry, not each evening) and Venues. Under them, By type lists game, show, festival, and the rest. Concerts are in that list. The word Sports is not a tile. The Event screen has "I was there" and, for today or later, "Plan this night." Export my nights downloads a JSON file. The Map's top bar shows Los Angeles even though it is the only area. The date control is a pill on the map, under that bar, and it opens Today, Next 7 days, All upcoming, and Pick a date. The score in the bar still describes that one date when the map is showing a range. Nights calendar is unchanged: date in the corner, rating in the center.
 - **Working tree:** branch `cursor/you-tab-local-log-684c`, not merged.
 - **Live data:** MLB schedule (Dodgers, Angels) and ESPN team schedules (Lakers, Clippers, Kings, Galaxy, Rams, Chargers, USC, UCLA), home games only, today onward. Past dates come from the 13 hand-seeded nights. Her personal log is separate, from `docs/kylie-logs.md`.
 - **The rating model is still draft in code.** `src/data/audience.ts` has the Oct 1 rules; v3 is Step 8. A logged night shows a rating only when that exact day is in the metro, is not under the 5k floor, and already has a hand rating.
 
 ## Changes made (this session, on the Step 5 branch)
-- **You:** Up next, Your nights, filters, plain stats, order setting, Export.
+- **You:** Up next, Your nights, filters, Events and Venues, a By type list (game, show, and the rest; concerts included), order setting, Export. No pitcher or giveaway lines on a row.
 - **Event:** "I was there" and "Plan this night."
 - **Saving:** `src/data/storage/` with a phone implementation and an uncalled cloud stub. No Supabase project, no keys.
 - **Log:** `src/data/seed/kylieLog.ts` from her log doc, including rough concert dates.

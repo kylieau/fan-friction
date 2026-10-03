@@ -173,11 +173,11 @@ function Stats({ stats, filter }: { stats: ReturnType<typeof logStats>; filter: 
   return (
     <div className="stats-block">
       <p className="you-fine">{filter === 'All' ? 'All your nights' : `${filter} only`}</p>
-      <div className="stat-grid">
-        <Stat n={stats.nights} label="nights" />
-        <Stat n={stats.venues} label="venues" />
-        <Stat n={stats.sports} label="sports" />
+      <div className="stat-grid pair">
+        <Stat n={stats.events} label="Events" />
+        <Stat n={stats.venues} label="Venues" />
       </div>
+      <CountList title="By type" rows={stats.byType} />
       <CountList title="By team and sport" rows={stats.byTeamSport} />
       <CountList title="By sport" rows={stats.bySport} />
       <CountList title="By venue" rows={stats.byVenue} />

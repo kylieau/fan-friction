@@ -14,9 +14,11 @@ export interface CountRow {
 }
 
 export interface LogStats {
-  nights: number;
+  /** Log entries, not unique evenings. */
+  events: number;
   venues: number;
-  sports: number;
+  /** Kind of event: game, show, festival, and so on. Concerts are included. */
+  byType: CountRow[];
   byTeamSport: CountRow[];
   bySport: CountRow[];
   byVenue: CountRow[];
@@ -217,12 +219,18 @@ export function filterChoices(nights: LoggedNight[]): CountRow[] {
   return counts(nights.flatMap((night) => night.tags)).filter((row) => row.count >= 2);
 }
 
+/** Plain words for a log entry's kind. Concerts are shows (or festivals), not a sport. */
+function typeLabel(kind: string): string {
+  if (kind === 'live-broadcast') return 'live broadcast';
+  return kind;
+}
+
 export function logStats(nights: LoggedNight[]): LogStats {
   const venues = nights.map((night) => night.venue).filter((venue): venue is string => Boolean(venue));
   return {
-    nights: nights.length,
+    events: nights.length,
     venues: new Set(venues).size,
-    sports: new Set(nights.map((night) => night.sport)).size,
+    byType: counts(nights.map((night) => typeLabel(night.kind))),
     byTeamSport: counts(nights.flatMap((night) => night.tags)),
     bySport: counts(nights.map((night) => night.sport)),
     byVenue: counts(venues),
