@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { areaMetros, DEFAULT_METRO, type Metro } from '../config/metros';
-import { getCityDate, getEventsBetween, getUpcoming, type CityDate, type CrowdEvent } from '../data';
+import { getCityDate, getEventsBetween, getRatedDates, getUpcoming, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { crowdKind, crowdPoints } from '../map/crowdPoints';
@@ -17,6 +17,17 @@ import { nightsPath, useView, type WhenSpan } from '../lib/view';
 type Mode = 'crowds' | 'traffic';
 
 const LOOKAHEAD_DAYS = 7;
+
+/** Mean of the days from start through end that already have a rating. Unrated days are left out. */
+function averageRating(start: string, end: string, rated: ReadonlyMap<string, number>): number | null {
+  const scores: number[] = [];
+  for (let cursor = start; cursor <= end; cursor = addDays(cursor, 1)) {
+    const score = rated.get(cursor);
+    if (score !== undefined) scores.push(score);
+  }
+  if (scores.length === 0) return null;
+  return scores.reduce((sum, score) => sum + score, 0) / scores.length;
+}
 
 // Room the header, the on-map When pill, and the collapsed sheet take on the
 // full-screen map. Dots and labels are kept out of it.
@@ -69,7 +80,8 @@ export function MapScreen() {
 
   // A blank map is boring, so if this date is empty and nobody has picked When yet,
   // the map widens to the next 7 days. A pick always wins.
-  // One day shows that day's rating. A span of days shows only the event count.
+  // One day shows that day's rating. Next 7 days shows the average of the rated
+  // days in the span, and hides the score when none of them are rated.
   const weekAhead = useMemo(() => ahead.filter((e) => e.date <= addDays(date, 7)), [ahead, date]);
   const autoSpan: WhenSpan = dayEvents.length > 0 ? 'day' : 'week';
   const span: WhenSpan = when === 'week' ? 'week' : !canLookAhead ? 'day' : (when ?? (shown ? autoSpan : 'day'));
@@ -100,8 +112,20 @@ export function MapScreen() {
   const select = useCallback((id: string | null) => setSelectedId(id), []);
   const selected = events.find((e) => e.id === selectedId) ?? null;
 
-  const showScore = span === 'day';
-  const headerRating = showScore && rating ? rating.rating : null;
+  const [ratedByDate, setRatedByDate] = useState<Map<string, number>>(new Map());
+  useEffect(() => {
+    let current = true;
+    getRatedDates(metro.id).then((rows) => {
+      if (current) setRatedByDate(new Map(rows.map((row) => [row.date, row.rating])));
+    });
+    return () => {
+      current = false;
+    };
+  }, [metro.id]);
+
+  const headerRating =
+    span === 'week' ? averageRating(date, addDays(date, LOOKAHEAD_DAYS), ratedByDate) : rating ? rating.rating : null;
+  const showScore = span === 'day' || headerRating !== null;
 
   const caption = !shown
     ? ' '

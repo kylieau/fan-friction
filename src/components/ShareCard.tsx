@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { APP } from '../config/app';
-import { scoreLabel } from '../config/scoreLabels';
+import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { Wordmark } from './Wordmark';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
   title: string;
   /** One plain line: what this event was up against. */
   line: string;
-  /** The date's rating, if it has one ("Cooked · 9/10"). */
+  /** The date's rating, if it has one ("Cooked · 9.0/10"). */
   rating: number | null;
   /** The crowd line with its kind, such as "63,404 announced". */
   crowd: string | null;
@@ -20,7 +20,7 @@ interface Props {
 export function ShareCard({ dateLabel, title, line, rating, crowd }: Props) {
   const [note, setNote] = useState('');
 
-  const text = `${title}, ${dateLabel}${rating !== null ? ` · ${scoreLabel(rating)} · ${rating}/10` : ''}. ${line}${crowd ? ` ${crowd}.` : ''}`;
+  const text = `${title}, ${dateLabel}${rating !== null ? ` · ${scoreLabel(rating)} · ${formatScore(rating)}/10` : ''}. ${line}${crowd ? ` ${crowd}.` : ''}`;
 
   const share = async () => {
     const data = { title: `${APP.name}: ${title}`, text, url: window.location.href };
@@ -41,7 +41,7 @@ export function ShareCard({ dateLabel, title, line, rating, crowd }: Props) {
       <div className="share-card">
         <div className="share-date">
           {dateLabel.toUpperCase()}
-          {rating !== null && ` · ${scoreLabel(rating).toUpperCase()} · ${rating}/10`}
+          {rating !== null && ` · ${scoreLabel(rating).toUpperCase()} · ${formatScore(rating)}/10`}
         </div>
         <div className="share-title">{title}</div>
         <div className="share-line">{line}</div>

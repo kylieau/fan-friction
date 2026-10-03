@@ -3,7 +3,7 @@ import { DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import { todayIn } from '../data';
 import { isValidDate } from './dates';
 
-/** How wide the map looks around its base date. A week hides the day rating. */
+/** How wide the map looks around its base date. A rated week shows the average to one decimal. */
 export type WhenSpan = 'day' | 'week';
 
 /**

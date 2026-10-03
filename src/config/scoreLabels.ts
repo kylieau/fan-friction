@@ -1,7 +1,7 @@
 // The words for the rating model, chosen by Kylie on Oct 1, 2026.
 // Change a word here and it changes everywhere.
 
-// The night's 1–10 rating always shows with its word: "Cooked · 9/10".
+// The night's 1–10 rating always shows with its word: "Cooked · 9.0/10".
 export const SCORE_LABELS = [
   { max: 2, label: 'Chill' },
   { max: 4, label: 'Light' },
@@ -12,6 +12,11 @@ export const SCORE_LABELS = [
 
 export function scoreLabel(score: number): string {
   return (SCORE_LABELS.find((band) => score <= band.max) ?? SCORE_LABELS[SCORE_LABELS.length - 1]).label;
+}
+
+/** How a date rating is written: one decimal, "7.4". This does not change the rating itself. */
+export function formatScore(score: number): string {
+  return (Math.round(score * 10) / 10).toFixed(1);
 }
 
 /** The shade band for a date rating: Chill, Light, Mid, Brutal, Cooked. */

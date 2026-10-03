@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, SearchIcon } from '../components/Icons';
-import { scoreBand, scoreLabel } from '../config/scoreLabels';
+import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
   getCalendarMonth,
   getRatedDates,
@@ -159,7 +159,7 @@ export function NightsScreen() {
                     to={openNight(onThisDay.date)}
                     rating={onThisDay.rating}
                     headline={onThisDay.headline}
-                    meta={`${scoreLabel(onThisDay.rating)} · ${onThisDay.rating}/10 · ${longLocalDate(onThisDay.date)}`}
+                    meta={`${scoreLabel(onThisDay.rating)} · ${formatScore(onThisDay.rating)}/10 · ${longLocalDate(onThisDay.date)}`}
                   />
                 </li>
               </ul>
@@ -176,7 +176,7 @@ export function NightsScreen() {
                       to={openNight(night.date)}
                       rating={night.rating}
                       headline={night.headline}
-                      meta={`${scoreLabel(night.rating)} · ${night.rating}/10 · ${longLocalDate(night.date)}`}
+                      meta={`${scoreLabel(night.rating)} · ${formatScore(night.rating)}/10 · ${longLocalDate(night.date)}`}
                     />
                   </li>
                 ))}
@@ -213,7 +213,7 @@ function SearchResults({
               to={openNight(hit.date)}
               rating={hit.rating}
               headline={hit.headline}
-              meta={[hit.rating !== null ? `${scoreLabel(hit.rating)} · ${hit.rating}/10` : 'Unrated', longLocalDate(hit.date), hit.matched]
+              meta={[hit.rating !== null ? `${scoreLabel(hit.rating)} · ${formatScore(hit.rating)}/10` : 'Unrated', longLocalDate(hit.date), hit.matched]
                 .filter(Boolean)
                 .join(' · ')}
             />
