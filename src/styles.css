@@ -184,22 +184,6 @@ button {
   gap: 12px;
 }
 
-.map-header-mode {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  flex-shrink: 0;
-}
-
-.map-header-date {
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.2;
-  color: var(--ink);
-  white-space: nowrap;
-}
-
 .date-button {
   display: flex;
   align-items: center;
@@ -428,6 +412,14 @@ button {
   flex-direction: column;
   gap: 6px;
   min-height: 56px;
+}
+
+.nightscore-dateline {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
 .nightscore-count {

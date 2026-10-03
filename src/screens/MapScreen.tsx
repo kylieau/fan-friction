@@ -195,21 +195,19 @@ export function MapScreen() {
         </div>
         <div className="map-header-score">
           <NightScore
+            dateLine={span === 'day' ? shortLocalDate(date) : undefined}
             rating={headerRating}
             quiet={showScore && shown?.status === 'quiet'}
             showScore={showScore}
             caption={caption}
           />
-          <div className="map-header-mode">
-            {span === 'day' && <div className="map-header-date">{shortLocalDate(date)}</div>}
-            <div className="segmented small" role="tablist" aria-label="Map mode">
-              <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
-                Crowds
-              </button>
-              <button type="button" role="tab" aria-selected={mode === 'traffic'} onClick={() => setMode('traffic')}>
-                Traffic
-              </button>
-            </div>
+          <div className="segmented small" role="tablist" aria-label="Map mode">
+            <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
+              Crowds
+            </button>
+            <button type="button" role="tab" aria-selected={mode === 'traffic'} onClick={() => setMode('traffic')}>
+              Traffic
+            </button>
           </div>
         </div>
         <div className="map-pills">
