@@ -244,7 +244,7 @@ export function MapScreen() {
           </button>
           {legend && (
             <div className="legend-card" role="note">
-              <b>Gold glow</b> marks where an event was. Wider means a bigger venue. Stronger means the known crowd filled more of it;
+              <b>Gold glow</b> marks where an event was. Wider means a bigger crowd. Stronger means the known crowd filled more of the room;
               faint means no count found yet. <b>★</b> is the biggest known crowd that day. A count reads in
               thousands, like 40.0k. The list adds “est” when that number is an estimate. A sold-out show with a known room size shows that size, like 18.0k (sold out). No count yet stays in words.
             </div>

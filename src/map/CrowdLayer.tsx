@@ -14,6 +14,13 @@ import {
   type PlacedChip,
 } from './chipPlacement';
 
+/** People in the disc. A sold-out show with no separate count uses the room. */
+function crowdForGlow(p: CrowdPoint): number | undefined {
+  if (p.count !== undefined && p.count > 0) return p.count;
+  if (p.soldOut && p.capacity) return p.capacity;
+  return undefined;
+}
+
 const SOURCE = 'crowds';
 const CLAIM = 'crowd-card-claim';
 const SELECTED_RANK = 1e15;
@@ -85,7 +92,9 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
           'circle-color': '#FFD100',
           'circle-radius': ['coalesce', ['feature-state', 'radius'], 12] as never,
           'circle-radius-transition': { duration: 0, delay: 0 },
-          'circle-blur': 0.9,
+          // A short soft edge, the same few pixels on every disc. Blur in
+          // this map is a share of the radius, so divide to keep it flat.
+          'circle-blur': ['/', 4, ['max', ['coalesce', ['feature-state', 'radius'], 12], 1]] as never,
           'circle-opacity': strength,
           'circle-opacity-transition': { duration: 280, delay: 0 },
         },
@@ -200,7 +209,7 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
 
       for (const p of pointsRef.current) {
         const at = map.project(p.location);
-        const radius = glowRadiusPx(p.capacity, zoom, p.location[1]);
+        const radius = glowRadiusPx(crowdForGlow(p), zoom, p.location[1]);
         map.setFeatureState({ source: SOURCE, id: p.event.id }, { radius });
         const marker = markers.get(p.event.id);
         const el = marker?.getElement();
@@ -270,7 +279,7 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       for (const p of pointsRef.current) {
         map.setFeatureState(
           { source: SOURCE, id: p.event.id },
-          { radius: glowRadiusPx(p.capacity, zoom, p.location[1]) },
+          { radius: glowRadiusPx(crowdForGlow(p), zoom, p.location[1]) },
         );
       }
     };

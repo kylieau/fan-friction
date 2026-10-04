@@ -2,6 +2,7 @@ import { useContext, useEffect, useRef } from 'react';
 import { LngLatBounds, type LngLatLike, type Map as MapLibreMap } from 'maplibre-gl';
 import { MapContext } from './BaseMap';
 import type { CrowdPoint } from './crowdPoints';
+import { setCityZoom } from './glowRadius';
 
 const EASE_MS = 420;
 
@@ -98,7 +99,7 @@ export function MapCamera({
     const pad = measureKeepOut(map, sheetOpen);
     const w = map.getContainer().clientWidth;
     const h = map.getContainer().clientHeight;
-    map.fitBounds(bounds, {
+    const fit = {
       padding: {
         top: Math.min(pad.top + 8, h * 0.42),
         bottom: Math.min(pad.bottom + 8, h * 0.46),
@@ -107,7 +108,17 @@ export function MapCamera({
       },
       maxZoom: 11.5,
       duration: 0,
-    });
+    };
+    // Lock the glow's pixel sizes to this frame before the map moves, so the
+    // discs land on the curve at the city view.
+    const framed = map.cameraForBounds(bounds, fit);
+    if (framed?.zoom != null) setCityZoom(framed.zoom);
+    map.fitBounds(bounds, fit);
+    const settled = map.getZoom();
+    if (framed?.zoom == null || Math.abs(settled - framed.zoom) > 0.001) {
+      setCityZoom(settled);
+      map.fire('moveend');
+    }
     // The night is framed when its events change, not when the sheet snaps.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, frameKey]);
