@@ -4,7 +4,6 @@ import { DEFAULT_METRO } from '../config/metros';
 import { scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
   filterChoices,
-  getCityDate,
   getPersonalLog,
   getRatedDates,
   getSaveWarning,
@@ -12,18 +11,13 @@ import {
   nightBackup,
   nightFacts,
   ratingForNight,
-  removePlan,
-  setYouOrder,
   subscribePersonalLog,
   todayIn,
-  upcomingPlans,
   yourNights,
-  type CityDate,
   type LoggedNight,
-  type NightPlan,
 } from '../data';
 import { FactList } from '../components/FactList';
-import { clockTime, loggedDateLabel, longLocalDate } from '../lib/dates';
+import { loggedDateLabel } from '../lib/dates';
 
 const TOP = 8;
 
@@ -32,7 +26,6 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
   const warning = useSyncExternalStore(subscribePersonalLog, getSaveWarning, getSaveWarning);
   const nights = useMemo(() => yourNights(log), [log]);
   const today = todayIn(DEFAULT_METRO);
-  const plans = useMemo(() => upcomingPlans(today, log), [log, today]);
   const [filter, setFilter] = useState('All');
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [exportNote, setExportNote] = useState('');
@@ -65,7 +58,6 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
     setExportNote('Downloaded a backup of your nights.');
   };
 
-  const plansBlock = <UpNext plans={plans} today={today} nights={nights} />;
   const nightsBlock = (
     <section className="you-block" aria-labelledby="your-nights-heading">
       <h2 id="your-nights-heading" className="you-heading">
@@ -114,14 +106,6 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
       </div>
 
       <div className="you-tools">
-        <button
-          type="button"
-          className="order-button"
-          aria-label={log.order === 'plans-first' ? 'Showing plans first. Switch to your nights first.' : 'Showing your nights first. Switch to plans first.'}
-          onClick={() => setYouOrder(log.order === 'plans-first' ? 'nights-first' : 'plans-first')}
-        >
-          Show first: <strong>{log.order === 'plans-first' ? 'Plans' : 'Your nights'}</strong>
-        </button>
         <button type="button" className="settings-row" onClick={download}>
           Export my nights
         </button>
@@ -141,17 +125,7 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
         )}
       </div>
 
-      {log.order === 'plans-first' ? (
-        <>
-          {plansBlock}
-          {nightsBlock}
-        </>
-      ) : (
-        <>
-          {nightsBlock}
-          {plansBlock}
-        </>
-      )}
+      {nightsBlock}
 
       <div className="settings">
         <div className="settings-heading">Settings</div>
@@ -245,104 +219,4 @@ function NightRow({ night, rating }: { night: LoggedNight; rating: number | null
     );
   }
   return <div className="log-row">{body}</div>;
-}
-
-function UpNext({ plans, today, nights }: { plans: NightPlan[]; today: string; nights: LoggedNight[] }) {
-  const next = plans[0];
-  const [day, setDay] = useState<CityDate | null>(null);
-
-  useEffect(() => {
-    if (!next) return;
-    let current = true;
-    setDay(null);
-    getCityDate(next.metroId, next.date).then((city) => current && setDay(city));
-    return () => {
-      current = false;
-    };
-  }, [next]);
-
-  if (!next) {
-    return (
-      <section className="you-block" aria-labelledby="up-next-heading">
-        <h2 id="up-next-heading" className="you-heading">
-          Up next
-        </h2>
-        <div className="card empty-card">
-          <div className="card-title">Nothing planned</div>
-          <p className="card-body">A saved night shows up here. It is not added to Your nights.</p>
-        </div>
-      </section>
-    );
-  }
-
-  const others = (day?.events ?? []).filter((event) => event.id !== next.eventId);
-  const later = plans.slice(1);
-  const logged = nights.find((night) => night.eventId !== undefined && night.eventId === next.eventId);
-  const before = logged ? nightFacts(logged, 'before') : [];
-
-  return (
-    <section className="you-block" aria-labelledby="up-next-heading">
-      <div className="you-heading-row">
-        <h2 id="up-next-heading" className="you-heading">
-          Up next
-        </h2>
-        {plans.length > 1 && <span className="you-fine">{plans.length} plans</span>}
-      </div>
-      <article className="card plan-card">
-        <div className="plan-top">
-          <div>
-            <div className="plan-when">
-              {next.date === today ? 'Today' : longLocalDate(next.date)}
-            </div>
-            <h3 className="plan-title">{next.title}</h3>
-            {next.venue && <div className="plan-venue">{next.venue}</div>}
-          </div>
-          {day?.rating ? (
-            <span className={`log-score ${scoreBand(day.rating.rating)}`} aria-label={`${scoreLabel(day.rating.rating)}, ${day.rating.rating} out of 10`}>
-              <span className="log-score-num">{day.rating.rating}</span>
-              <span className="log-score-word">{scoreLabel(day.rating.rating)}</span>
-            </span>
-          ) : (
-            day && <span className="plan-unrated">No rating yet</span>
-          )}
-        </div>
-        {day && (
-          <div>
-            <div className="plan-also">Also that night</div>
-            {others.length === 0 ? (
-              <p className="you-fine">Nothing else big is on file.</p>
-            ) : (
-              <ul className="plan-others">
-                {others.map((event) => (
-                  <li key={event.id}>
-                    {event.title}
-                    {event.start ? ` · ${clockTime(event.start)}` : ''}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        )}
-        <FactList facts={before} />
-        <p className="traffic-line">Estimate · not live</p>
-        <button type="button" className="link-button" onClick={() => removePlan(next.id)}>
-          Remove this plan
-        </button>
-      </article>
-      {later.length > 0 && (
-        <ul className="later-plans">
-          {later.map((plan) => (
-            <li key={plan.id}>
-              <span>
-                {longLocalDate(plan.date)} · {plan.title}
-              </span>
-              <button type="button" className="link-button" onClick={() => removePlan(plan.id)}>
-                Remove
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
-    </section>
-  );
 }
