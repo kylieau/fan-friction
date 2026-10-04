@@ -372,7 +372,7 @@ function AreaSwitcher({
   );
 }
 
-/** Same venue name the event page uses. Only the raised selected card shows it. */
+/** Same venue name the event page uses. Every On-the-map row shows it. */
 function sheetVenue(event: CrowdEvent): string | null {
   if (event.place.type === 'venue') {
     const venue = VENUES[event.place.venueId];
@@ -407,7 +407,7 @@ function EventRow({
     <>
       <span className="event-main">
         <span className="event-title">{listTitle(e)}</span>
-        {selected && venue && <span className="event-venue">{venue}</span>}
+        {venue && <span className="event-venue">{venue}</span>}
         {stakes && <span className="event-stakes">{stakes}</span>}
         <span className="event-meta">{detail}</span>
       </span>
