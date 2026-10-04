@@ -104,8 +104,9 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     place: { type: 'venue', venueId: 'crypto-com-arena' },
     audience: { domain: 'music', genre: 'hip-hop' },
     performer: 'Ken Carson',
-    // No public crowd prediction. The convention-center marketplace is not this pin.
-    crowd: [],
+    // The convention-center marketplace is not this pin. 35,000 is a placeholder
+    // estimate, not a published attendance and not from the Complex source below.
+    crowd: [estimated(35000, 'Placeholder estimate. Not a published attendance.')],
     assessment: draft('Notable', ['Ken Carson', 'doors 6:00'], 'Moderate', 'Downtown, same evening as the Inglewood cluster'),
     sourceId: SOURCE_ID,
   },
