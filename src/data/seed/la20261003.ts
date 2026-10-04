@@ -40,7 +40,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     date: DATE,
     start: '16:30',
     kind: 'game',
-    title: 'USC vs Washington (CFB)',
+    title: 'USC vs Washington',
     place: { type: 'venue', venueId: 'coliseum' },
     audience: { domain: 'sports', sport: 'football' },
     teams: { home: 'usc-football', away: 'washington-huskies' },

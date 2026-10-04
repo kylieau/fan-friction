@@ -1,14 +1,15 @@
 import { TEAMS } from '../data/teams';
 import type { CrowdEvent } from '../data/types';
 
-const SQUAD_TAG = 'CFB|MBB|WBB';
+/** Tags that belong after the first name. CFB is stripped from old titles and never written back. */
+const SQUAD_TAG = 'FB|MBB|WBB|CFB';
 
-/** College football is CFB. College basketball is MBB, or WBB when the team says so. */
+/** College football is (FB). College basketball is (MBB), or (WBB) when the team says so. */
 function collegeAbbrev(event: CrowdEvent): string | null {
   if (event.audience.domain !== 'sports' || !event.teams) return null;
   const sides = [TEAMS[event.teams.home], TEAMS[event.teams.away]].filter((t) => t !== undefined);
   if (!sides.some((t) => /college/i.test(t.league))) return null;
-  if (event.audience.sport === 'football') return 'CFB';
+  if (event.audience.sport === 'football') return 'FB';
   if (event.audience.sport === 'basketball') {
     const women = sides.some((t) => /women|wbb/i.test(t.league) || t.id.endsWith('-wbb'));
     return women ? 'WBB' : 'MBB';
@@ -16,8 +17,13 @@ function collegeAbbrev(event: CrowdEvent): string | null {
   return null;
 }
 
+/** A stored (CFB) is the old matchup tag. The name slot is (FB). */
+function squadTag(raw: string): string {
+  return raw === 'CFB' ? 'FB' : raw;
+}
+
 /**
- * Squad tag sits right after the first name: "USC (CFB) vs Washington".
+ * Squad tag sits right after the first name: "USC (FB) vs Washington".
  * A unique pro name (Dodgers, Lakers) gets no tag. Never leave the tag at the end.
  */
 function withSquadTag(title: string, tag: string | null): string {
@@ -26,7 +32,7 @@ function withSquadTag(title: string, tag: string | null): string {
   const trailing = rest.match(new RegExp(`^(.*?)\\s+\\((${SQUAD_TAG})\\)\\s*$`));
   if (trailing) {
     rest = trailing[1].trim();
-    found = found ?? trailing[2];
+    found = found ?? squadTag(trailing[2]);
   }
   const vs = rest.match(/^(.*?)\s+(vs\.?)\s+(.*)$/i);
   if (!vs) return rest;
@@ -34,7 +40,7 @@ function withSquadTag(title: string, tag: string | null): string {
   const onFirst = first.match(new RegExp(`^(.*?)\\s+\\((${SQUAD_TAG})\\)\\s*$`));
   if (onFirst) {
     first = onFirst[1].trim();
-    found = found ?? onFirst[2];
+    found = found ?? squadTag(onFirst[2]);
   }
   const second = vs[3].trim();
   if (!found) return `${first} ${vs[2]} ${second}`;

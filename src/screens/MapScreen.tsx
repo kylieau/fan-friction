@@ -10,7 +10,7 @@ import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { NightScore } from '../components/NightScore';
 import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, SearchIcon, SunIcon } from '../components/Icons';
-import { eventChip } from '../lib/chips';
+import { sheetBadges } from '../lib/chips';
 import { listTitle } from '../lib/eventTitle';
 import { addDays, clockTime, headerDate, shortLocalDate } from '../lib/dates';
 import { orderSheetEvents } from '../lib/sheetOrder';
@@ -375,7 +375,7 @@ function sheetVenue(event: CrowdEvent): string | null {
   return event.place.name;
 }
 
-/** One sheet card: the same lines as the map chip, plus a quiet venue and one badge. */
+/** One sheet card: the same lines as the map chip, plus a quiet venue and the badges. */
 function EventRow({
   event: e,
   selected,
@@ -389,7 +389,7 @@ function EventRow({
   showDate?: boolean;
   href?: string;
 }) {
-  const chip = eventChip(e);
+  const badges = sheetBadges(e);
   const time = e.start ? clockTime(e.start) : 'Time n/a';
   const crowd = crowdShort(e);
   const detail = showDate ? `${shortLocalDate(e.date)} · ${time} · ${crowd}` : `${time} · ${crowd}`;
@@ -401,7 +401,15 @@ function EventRow({
         <span className="event-meta">{detail}</span>
         {selected && venue && <span className="event-venue">{venue}</span>}
       </span>
-      {chip && <span className={`chip ${chip.kind === 'friction' ? 'chip-friction' : 'chip-why'}`}>{chip.text}</span>}
+      {badges.length > 0 && (
+        <span className="event-badges">
+          {badges.map((badge) => (
+            <span key={badge.kind} className={`chip chip-${badge.kind}`}>
+              {badge.text}
+            </span>
+          ))}
+        </span>
+      )}
     </>
   );
   const cls = `event-row${selected ? ' selected' : ''}`;

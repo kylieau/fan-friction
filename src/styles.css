@@ -696,6 +696,33 @@ button {
   color: var(--muted);
 }
 
+/* Sheet badges only. Friction is Dodger blue; the green mark is not gold and not gray. */
+.sheet .event-badges,
+.selected-row .event-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  max-width: 48%;
+}
+
+.sheet .chip-friction,
+.selected-row .chip-friction {
+  color: #fff;
+  background: #005a9c;
+  opacity: 1;
+}
+
+.sheet .chip-mark,
+.selected-row .chip-mark {
+  color: #216e1f;
+  background: #ecf3ec;
+  border: 1px solid #216e1f;
+  opacity: 1;
+}
+
 .sheet .section-title {
   color: var(--ink);
 }

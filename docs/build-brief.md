@@ -45,6 +45,8 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 - Dodger blue `#005A9C` for scores and selected states. UCLA blue `#2774AE` as secondary. UCLA gold `#FFD100` for the primary button and the hottest heat; never gold text on white. No orange.
 - Fonts: Big Shoulders Display for scores, Manrope for body text.
 - Product rules: don't make the user think, always label scores, curiosity-gap copy, and end the event screen on a shareable card.
+- **Matchup tags (Oct 4, 2026):** the college tag sits after the first name: USC (FB) vs Washington, UCLA (FB), and the same slot for (MBB) and (WBB). CFB stays a sport-type / By type label only. It never trails a matchup and it is not the tag in that slot. Sheet titles use (FB).
+- **Sheet badges (Oct 4, 2026):** friction from Moderate up is Dodger blue `#005A9C` fill, white type, full strength. On a sheet row, that blue is the friction badge only. Marquee, Major, Notable, and Sold Out are green: fill `#ECF3EC`, type and a 1px stroke `#216E1F`, full strength. When both show, Dodger comes first, then green. Gold is the crowd glow and the gold button, not a badge.
 
 ## Net effect
 One app where a fan can pull up any night, see what else was on and how much friction each event faced, and share it as a card. A local can check Today and the roads. Kylie can log her own nights. Real MLB games flow in alongside the hand-seeded history.
