@@ -26,15 +26,16 @@ Drop everything in `public/` into the app's public/static folder.
 <meta name="theme-color" content="#005A9C">
 ```
 
-> **Overridden (Oct 1, 2026):** Kylie chose a light top bar (`#F7F8FA`, the app background) instead of Dodger blue for `theme-color` and the manifest's `theme_color`.
+> **Overridden (Oct 1, 2026):** Kylie chose a light top bar instead of Dodger blue for `theme-color` and the manifest's `theme_color`.
+> **Overridden (Oct 4, 2026):** That light bar is the app shell, `#DAEBFE`, the same pale blue as the map chrome. Dark status-bar glyphs (`color-scheme: light`, `apple-mobile-web-app-status-bar-style: default`).
 
 ## Web app manifest (icons + colors)
 ```json
 {
   "name": "FanFriction",
   "short_name": "FanFriction",
-  "theme_color": "#005A9C",
-  "background_color": "#F7F8FA",
+  "theme_color": "#DAEBFE",
+  "background_color": "#DAEBFE",
   "display": "standalone",
   "icons": [
     { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
@@ -52,7 +53,7 @@ Drop everything in `public/` into the app's public/static folder.
 | UCLA blue | #2774AE | Secondary |
 | UCLA gold | #FFD100 | The slash, primary button, hottest heat. Never text on white. |
 | Ink | #0F1B2D | FAN, body text |
-| Background | #F7F8FA | App background |
+| Shell | #DAEBFE | App background, status bar, tab bar, map header, and sheet. White stays on cards and rows. |
 
 ## Rules
 - The name is spoken and shown in-app as FanFriction; Fan/Friction is the stylized logo.

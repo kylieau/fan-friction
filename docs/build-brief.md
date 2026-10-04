@@ -41,7 +41,7 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 10. **Room for later.** Every item on the map is a general "crowd event" (ticketed, non-ticketed like a parade, or a soft clash), with a place (point or route), a time window, an audience tag, and a size labeled by kind. Map layers are separate (events, traffic cues, TV labels, later parades). Teams and metros are their own records. A personal layer attaches to any event. The rating has open slots for new factors. Accounts and friends slot in without reshaping any of this.
 
 ## Look and feel (from v4)
-- Light theme. Background `#F7F8FA`, white cards, ink `#0F1B2D`, secondary text `#4A5568`.
+- Light theme. App shell `#DAEBFE` (page ground, status bar, tab bar, map header, and sheet — the same pale blue as the map chrome). White stays on cards and event rows. The map itself stays the basemap. Ink `#0F1B2D`, secondary text `#4A5568`.
 - Dodger blue `#005A9C` for scores and selected states. UCLA blue `#2774AE` as secondary. UCLA gold `#FFD100` for the primary button and the hottest heat; never gold text on white. No orange.
 - Fonts: Big Shoulders Display for scores, Manrope for body text.
 - Product rules: don't make the user think, always label scores, curiosity-gap copy, and end the event screen on a shareable card.

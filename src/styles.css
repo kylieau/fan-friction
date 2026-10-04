@@ -13,8 +13,17 @@ body,
   margin: 0;
 }
 
+/* Light page so the status bar uses dark glyphs. The shell matches --chrome.
+   The hex is the fallback before the theme variables are applied. */
+html {
+  color-scheme: light;
+  background: #daebfe;
+  background: var(--bg);
+}
+
 body {
-  background: var(--track);
+  background: #daebfe;
+  background: var(--bg);
   color: var(--ink);
   font-family: 'Manrope', system-ui, -apple-system, sans-serif;
   font-weight: 500;
