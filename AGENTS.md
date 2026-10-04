@@ -65,6 +65,7 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 
 ## Read these first
 - `docs/direction.md`: the Oct 4, 2026 direction (the log leads). Read it before any product decision; it outranks the docs below where they conflict.
+- `docs/product-review-decisions.md`: Kylie's Oct 4 decisions on first screen, forecast-to-record, Compare, Famous nights, size thresholds and accounts. Newer than direction.md where they differ.
 - `docs/build-brief.md`: what to build, decisions already made, open questions.
 - `docs/product-decisions.md`: the product rules behind each screen.
 - `docs/test-nights-and-ratings.md`: the 13 seeded nights, the rating recipe and the ratings to hardcode.
