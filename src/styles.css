@@ -1250,13 +1250,8 @@ button {
 
 .crowd-label.is-dim .crowd-name,
 .crowd-label.is-dim .crowd-series,
-.crowd-label.is-dim .crowd-meta,
-.crowd-label.is-dim .crowd-friction {
+.crowd-label.is-dim .crowd-meta {
   color: rgba(15, 27, 45, 0.45);
-}
-
-.crowd-label.is-dim .crowd-sold {
-  opacity: 0.45;
 }
 
 .crowd-label.is-hidden {
@@ -1293,34 +1288,6 @@ button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.crowd-status {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  max-width: 228px;
-}
-
-.crowd-friction {
-  font-size: 11px;
-  font-weight: 800;
-  line-height: 1.1;
-  color: #005a9c;
-  white-space: nowrap;
-}
-
-.crowd-sold {
-  font-size: 10px;
-  font-weight: 800;
-  line-height: 1.1;
-  color: #216e1f;
-  background: #ecf3ec;
-  border: 1px solid #216e1f;
-  border-radius: 999px;
-  padding: 1px 5px;
-  white-space: nowrap;
 }
 
 .crowd-series {

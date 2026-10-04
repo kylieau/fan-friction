@@ -21,15 +21,3 @@ export function sheetBadges(event: CrowdEvent): EventChip[] {
   else if (a && a.occasion !== 'Routine') badges.push({ text: a.occasion, kind: 'mark' });
   return badges;
 }
-
-/**
- * Map-chip status. Only what changes the night: friction from Moderate up,
- * then Sold Out. Marquee, Major, and Notable stay on the sheet.
- */
-export function mapBadges(event: CrowdEvent): EventChip[] {
-  const badges: EventChip[] = [];
-  const a = event.assessment;
-  if (a && showFriction(a.friction)) badges.push({ text: frictionLabel(a.friction), kind: 'friction' });
-  if (event.crowd.some((c) => c.soldOut)) badges.push({ text: 'Sold Out', kind: 'mark' });
-  return badges;
-}

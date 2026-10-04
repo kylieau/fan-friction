@@ -2,7 +2,6 @@ import { useContext, useEffect, useRef } from 'react';
 import { type Map as MapLibreMap, Marker } from 'maplibre-gl';
 import { MapContext } from './BaseMap';
 import { clockTime } from '../lib/dates';
-import { mapBadges } from '../lib/chips';
 import { mapTitle } from '../lib/eventTitle';
 import { chipRound } from '../lib/stakes';
 import { crowdShort, type CrowdPoint } from './crowdPoints';
@@ -141,7 +140,6 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       el.innerHTML =
         `<span class="crowd-line">` +
         `<span class="crowd-name">${name}</span>` +
-        statusHtml(p.event) +
         series +
         `<span class="crowd-meta">${escapeHtml(chipDetail(p))}</span>` +
         `</span>`;
@@ -444,22 +442,10 @@ function drawStems(svg: SVGSVGElement, placed: PlacedChip[], w: number, h: numbe
   }
 }
 
-/** Friction in Dodger blue, then the green Sold Out chip. Empty when neither applies. */
-function statusHtml(event: CrowdPoint['event']): string {
-  const badges = mapBadges(event);
-  if (badges.length === 0) return '';
-  const bits = badges.map((badge) =>
-    badge.kind === 'friction'
-      ? `<span class="crowd-friction">${escapeHtml(badge.text)}</span>`
-      : `<span class="crowd-sold">${escapeHtml(badge.text)}</span>`,
-  );
-  return `<span class="crowd-status">${bits.join('')}</span>`;
-}
-
-/** Line 2 of a map card: "1:08 pm · 40.0k". A different day is named first. */
+/** Line 2 of a map card: "1:08 pm · 40.0k". A different day is named first. No status words. */
 function chipDetail(p: CrowdPoint): string {
   const time = p.event.start ? clockTime(p.event.start) : 'Time n/a';
-  const crowd = crowdShort(p.event, p.capacity, false);
+  const crowd = crowdShort(p.event, p.capacity, false, false);
   return p.dayTag ? `${p.dayTag} · ${time} · ${crowd}` : `${time} · ${crowd}`;
 }
 

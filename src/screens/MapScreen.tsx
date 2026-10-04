@@ -256,12 +256,6 @@ export function MapScreen() {
           {legend && (
             <div className="legend-card" role="note">
               <ul className="map-key">
-                <li>
-                  <span className="crowd-friction">Friction</span> from Moderate up
-                </li>
-                <li>
-                  <span className="crowd-sold">Sold Out</span>
-                </li>
                 <li className="map-key-glow">Gold glow is the size of the crowd</li>
                 <li className="map-key-ring">Pale ring is the one you picked</li>
               </ul>

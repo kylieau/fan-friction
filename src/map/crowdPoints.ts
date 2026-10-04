@@ -83,16 +83,23 @@ export function eventCapacity(event: CrowdEvent): number | undefined {
 
 /**
  * Short crowd wording. The sheet says "est" for an estimate; the map chip does not.
+ * Sold out stays on the sheet. The map chip is the number only.
  * A sold-out show with no count of its own uses the room size, and that number is not "est".
  */
-export function crowdShort(event: CrowdEvent, capacity = eventCapacity(event), withEst = true): string {
+export function crowdShort(
+  event: CrowdEvent,
+  capacity = eventCapacity(event),
+  withEst = true,
+  withSold = true,
+): string {
   const figure = event.crowd.find((c) => c.count !== undefined);
-  const sold = event.crowd.some((c) => c.soldOut);
+  const sold = withSold && event.crowd.some((c) => c.soldOut);
   if (figure?.count !== undefined) {
     const est = withEst && figure.kind === 'estimated' ? ' est' : '';
     return `${crowdThousands(figure.count)}${est}${sold ? ' (sold out)' : ''}`;
   }
   if (sold && capacity) return `${crowdThousands(capacity)} (sold out)`;
+  if (!withSold && capacity && event.crowd.some((c) => c.soldOut)) return crowdThousands(capacity);
   return sold ? 'Sold out' : 'No count yet';
 }
 
