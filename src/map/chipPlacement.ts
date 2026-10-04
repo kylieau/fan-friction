@@ -1,11 +1,12 @@
 // Where each event card sits on the screen.
 //
-// Each card sits about 8px outside its gold circle, on the outer side of that
+// Each card sits about 8px from its own venue dot, on the outer side of that
 // night's pins. A pin left of the group's midpoint tries the left first; a pin
 // right of it tries the right. When the group is taller than wide, pins above
 // the middle try the top and pins below it try the bottom. The old
 // above-then-right order is only a fallback, and a fallback may not cross
-// another card. If no side fits, the card is left off and the mark stays.
+// another card. A card may cover the gold glow. It may not cover another venue's dot.
+// If no short side fits, the card is left off and the mark stays.
 
 export interface Box {
   x0: number;
@@ -54,14 +55,10 @@ export interface PlacedChip {
   stem: Stem | null;
 }
 
-export interface Glow {
-  x: number;
-  y: number;
-  r: number;
-}
-
 function boxFor(side: Side, c: ChipCandidate, gap: number): Box {
-  const d = c.glow + gap;
+  // A short hop from the dot. Do not add the glow radius: that walks the card
+  // to the far edge of a big crowd and can land it across town.
+  const d = gap;
   switch (side) {
     case 'top':
       return { x0: c.x - c.w / 2, y0: c.y - d - c.h, x1: c.x + c.w / 2, y1: c.y - d };
@@ -84,15 +81,6 @@ function inside(box: Box, view: Box): boolean {
 
 function inflate(box: Box, pad: number): Box {
   return { x0: box.x0 - pad, y0: box.y0 - pad, x1: box.x1 + pad, y1: box.y1 + pad };
-}
-
-/** True when the card paints over the gold circle. */
-function coversGlow(box: Box, glow: Glow): boolean {
-  const x = Math.max(box.x0, Math.min(glow.x, box.x1));
-  const y = Math.max(box.y0, Math.min(glow.y, box.y1));
-  const dx = x - glow.x;
-  const dy = y - glow.y;
-  return dx * dx + dy * dy < glow.r * glow.r - 0.25;
 }
 
 function hits(box: Box, obstacles: Box[]): boolean {
@@ -199,10 +187,14 @@ function crossesChip(c: ChipCandidate, box: Box, taken: Box[]): boolean {
   });
 }
 
-function clearAt(box: Box, obstacles: Box[], taken: Box[], view: Box, glows: Glow[]): boolean {
+function clearAt(box: Box, obstacles: Box[], taken: Box[], view: Box): boolean {
   const blocked = [...obstacles, ...taken.map((item) => inflate(item, CARD_AIR))];
-  if (!inside(box, view) || hits(box, blocked)) return false;
-  return glows.every((glow) => !coversGlow(box, glow));
+  return inside(box, view) && !hits(box, blocked);
+}
+
+/** True when this card would sit on another event's dot. */
+function coversPin(box: Box, pins: ChipCandidate[], selfId: string): boolean {
+  return pins.some((pin) => pin.id !== selfId && pointInBox(pin.x, pin.y, box));
 }
 
 function placeCard(
@@ -210,14 +202,15 @@ function placeCard(
   frame: PinFrame,
   obstacles: Box[],
   taken: Box[],
+  pins: ChipCandidate[],
   view: Box,
-  glows: Glow[],
 ): PlacedChip | null {
   const preferred = outwardSide(c, frame);
   const order = preferred ? [preferred, ...FALLBACK.filter((side) => side !== preferred)] : FALLBACK;
   for (const side of order) {
     const box = boxFor(side, c, CARD_GAP);
-    if (!clearAt(box, obstacles, taken, view, glows)) continue;
+    if (!clearAt(box, obstacles, taken, view)) continue;
+    if (coversPin(box, pins, c.id)) continue;
     if (preferred && side !== preferred && crossesChip(c, box, taken)) continue;
     return finish(c, side, box, CARD_GAP);
   }
@@ -226,13 +219,12 @@ function placeCard(
 
 /** Place cards in rank order. Missing ids were dropped; their marks stay. */
 export function placeChips(candidates: ChipCandidate[], obstacles: Box[], view: Box): PlacedChip[] {
-  const glows: Glow[] = candidates.map((c) => ({ x: c.x, y: c.y, r: c.glow }));
   const frame = pinFrame(candidates);
   const ordered = [...candidates].sort((a, b) => b.rank - a.rank || a.id.localeCompare(b.id));
   const placed: PlacedChip[] = [];
   const taken: Box[] = [];
   for (const c of ordered) {
-    const spot = placeCard(c, frame, obstacles, taken, view, glows);
+    const spot = placeCard(c, frame, obstacles, taken, candidates, view);
     if (!spot) continue;
     placed.push(spot);
     taken.push(spot.box);

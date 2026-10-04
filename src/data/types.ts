@@ -106,8 +106,9 @@ export interface Assessment {
 
 /**
  * A playoff round. Regular season leaves this off: no stakes word.
- * The map chip shows `round` only ("NLDS"). The sheet and the event page
- * add `game` when a feed has one ("NLDS · Game 2").
+ * The sheet and the event page show `round`, then `game` when a feed has one
+ * ("NLDS · Game 2"). A postseason map chip adds both, in parentheses:
+ * "Dodgers (NLDS G2)". Regular season and friendlies leave this off the chip.
  */
 export interface Stakes {
   round: string;
@@ -135,6 +136,11 @@ export interface CrowdEvent {
   crowd: CrowdFigure[];
   weather?: Weather;
   assessment?: Assessment;
+  /**
+   * Under the ~5k map floor. Same idea as a personal-log night: kept in the
+   * catalog, never a map dot, never an On-the-map sheet pin.
+   */
+  belowFloor?: boolean;
   /** Which source this came from, such as "seed" or "mlb". */
   sourceId: string;
 }

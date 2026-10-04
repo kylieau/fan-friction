@@ -1220,9 +1220,12 @@ button {
 .crowd-label {
   z-index: 2;
   display: flex;
-  width: max-content;
-  max-width: 240px;
-  padding: 2px 6px;
+  align-items: center;
+  box-sizing: border-box;
+  width: 112px;
+  height: 44px;
+  padding: 2px 4px;
+  overflow: hidden;
   background: #fff;
   opacity: 1;
   border: 1px solid rgba(15, 27, 45, 0.35);
@@ -1249,7 +1252,6 @@ button {
 }
 
 .crowd-label.is-dim .crowd-name,
-.crowd-label.is-dim .crowd-series,
 .crowd-label.is-dim .crowd-meta {
   color: rgba(15, 27, 45, 0.45);
 }
@@ -1276,12 +1278,14 @@ button {
   flex-direction: column;
   align-items: flex-start;
   gap: 0;
+  width: 100%;
   min-width: 0;
+  overflow: hidden;
 }
 
 .crowd-name {
-  max-width: 228px;
-  font-size: 15px;
+  width: 100%;
+  font-size: 10.5px;
   font-weight: 800;
   line-height: 1.05;
   color: var(--ink);
@@ -1290,21 +1294,16 @@ button {
   text-overflow: ellipsis;
 }
 
-.crowd-series {
-  font-size: 11px;
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--ink2);
-  white-space: nowrap;
-}
-
 .crowd-meta {
+  width: 100%;
   font-size: 11px;
   font-weight: 700;
   line-height: 1.15;
   font-variant-numeric: tabular-nums;
   color: var(--ink2);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .tag-count {
@@ -1736,16 +1735,47 @@ button {
 .legend-card {
   position: absolute;
   left: 12px;
-  right: 12px;
   bottom: 144px;
   z-index: 4;
-  padding: 14px 16px;
+  width: max-content;
+  max-width: min(260px, calc(100% - 24px));
+  padding: 12px 14px;
   border-radius: 16px;
   background: var(--card);
   box-shadow: 0 2px 12px rgba(15, 27, 45, 0.2);
   font-size: 13px;
-  line-height: 1.45;
-  color: var(--ink2);
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.map-key {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.map-key-glow::before,
+.map-key-ring::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  border-radius: 50%;
+  vertical-align: -1px;
+}
+
+.map-key-glow::before {
+  background: rgba(255, 209, 0, 0.85);
+}
+
+.map-key-ring::before {
+  box-shadow: 0 0 0 2px #ffe56b;
 }
 
 .map-screen.sheet-open .legend-card {

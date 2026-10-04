@@ -15,7 +15,7 @@ import {
   yourNights,
   type CityDate,
 } from '../data';
-import { crowdKind, crowdPoints, type CrowdPoint } from '../map/crowdPoints';
+import { crowdKind, crowdPoints, showsOnMap, type CrowdPoint } from '../map/crowdPoints';
 import { FactList } from '../components/FactList';
 import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
@@ -44,7 +44,13 @@ export function EventScreen() {
     };
   }, [date]);
 
-  const points = day ? crowdPoints(day.events, date) : [];
+  // A room under the floor can still open. It does not show up as competition on a bigger event.
+  const points = day
+    ? crowdPoints(
+        day.events.filter((event) => event.id === id || showsOnMap(event)),
+        date,
+      )
+    : [];
   const me = points.find((p) => p.event.id === id);
 
   if (!day) return <div className="screen page" />;

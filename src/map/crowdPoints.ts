@@ -16,12 +16,15 @@ export interface CrowdPoint {
   soldOut: boolean;
   /** Crowd over capacity when both are known, else null. Never above 1. */
   fill: number | null;
-  /** True for the largest known crowd of the date (the ★). */
-  biggest: boolean;
   /** Hasn't happened yet: drawn as a hollow dot with no crowd glow. */
   upcoming: boolean;
   /** "Sat, Oct 4" when the event is on a different date than the one being viewed. */
   dayTag: string | null;
+}
+
+/** Under the ~5k floor stays in the catalog. The map and the On-the-map sheet skip it. */
+export function showsOnMap(event: CrowdEvent): boolean {
+  return event.belowFloor !== true;
 }
 
 const SETUP_BY_SPORT: Record<string, string> = {
@@ -54,16 +57,10 @@ export function crowdPoints(events: CrowdEvent[], date: string): CrowdPoint[] {
       count,
       soldOut,
       fill,
-      biggest: false,
       upcoming: event.date >= today,
       dayTag: event.date === date ? null : shortLocalDate(event.date),
     });
   }
-  const top = points.reduce<CrowdPoint | null>(
-    (best, p) => (p.count !== undefined && (!best || p.count > (best.count ?? 0)) ? p : best),
-    null,
-  );
-  if (top) top.biggest = true;
   return points;
 }
 
@@ -86,16 +83,23 @@ export function eventCapacity(event: CrowdEvent): number | undefined {
 
 /**
  * Short crowd wording. The sheet says "est" for an estimate; the map chip does not.
+ * Sold out stays on the sheet. The map chip is the number only.
  * A sold-out show with no count of its own uses the room size, and that number is not "est".
  */
-export function crowdShort(event: CrowdEvent, capacity = eventCapacity(event), withEst = true): string {
+export function crowdShort(
+  event: CrowdEvent,
+  capacity = eventCapacity(event),
+  withEst = true,
+  withSold = true,
+): string {
   const figure = event.crowd.find((c) => c.count !== undefined);
-  const sold = event.crowd.some((c) => c.soldOut);
+  const sold = withSold && event.crowd.some((c) => c.soldOut);
   if (figure?.count !== undefined) {
     const est = withEst && figure.kind === 'estimated' ? ' est' : '';
     return `${crowdThousands(figure.count)}${est}${sold ? ' (sold out)' : ''}`;
   }
   if (sold && capacity) return `${crowdThousands(capacity)} (sold out)`;
+  if (!withSold && capacity && event.crowd.some((c) => c.soldOut)) return crowdThousands(capacity);
   return sold ? 'Sold out' : 'No count yet';
 }
 

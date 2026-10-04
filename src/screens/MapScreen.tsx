@@ -5,7 +5,7 @@ import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, 
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { MapCamera } from '../map/MapCamera';
-import { crowdPoints, crowdShort } from '../map/crowdPoints';
+import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { NightScore } from '../components/NightScore';
 import { WhenControl } from '../components/WhenControl';
@@ -76,13 +76,17 @@ export function MapScreen() {
 
   const shown = day && day.date === date ? day : null;
   const rating = shown?.rating ?? null;
-  const dayEvents = shown?.events ?? [];
+  // Under-floor rooms stay in the day's catalog. They are not pins, sheet rows, or part of this count.
+  const dayEvents = (shown?.events ?? []).filter(showsOnMap);
 
   // A blank map is boring, so if this date is empty and nobody has picked When yet,
   // the map widens to the next 7 days. A pick always wins.
   // One day shows that day's rating. Next 7 days shows the average of the rated
   // days in the span, and hides the score when none of them are rated.
-  const weekAhead = useMemo(() => ahead.filter((e) => e.date <= addDays(date, 7)), [ahead, date]);
+  const weekAhead = useMemo(
+    () => ahead.filter((e) => showsOnMap(e) && e.date <= addDays(date, 7)),
+    [ahead, date],
+  );
   const autoSpan: WhenSpan = dayEvents.length > 0 ? 'day' : 'week';
   const span: WhenSpan = when === 'week' ? 'week' : !canLookAhead ? 'day' : (when ?? (shown ? autoSpan : 'day'));
   const events = useMemo(
@@ -240,14 +244,21 @@ export function MapScreen() {
 
       {points.length > 0 && (
         <>
-          <button type="button" className="legend-button" aria-label="What do the colors mean?" onClick={() => setLegend((v) => !v)}>
+          <button
+            type="button"
+            className="legend-button"
+            aria-label="Map key"
+            aria-expanded={legend}
+            onClick={() => setLegend((v) => !v)}
+          >
             ?
           </button>
           {legend && (
             <div className="legend-card" role="note">
-              <b>Gold glow</b> marks where an event was. Wider means a bigger crowd. The gold is a light wash, so the map still shows through.
-              No count yet is a small circle. <b>★</b> is the biggest known crowd that day. A count reads in
-              thousands, like 40.0k. The list adds “est” when that number is an estimate. A sold-out show with a known room size shows that size, like 18.0k (sold out). No count yet stays in words.
+              <ul className="map-key">
+                <li className="map-key-glow">Gold glow is the size of the crowd</li>
+                <li className="map-key-ring">Pale ring is the one you picked</li>
+              </ul>
             </div>
           )}
         </>
@@ -368,7 +379,7 @@ function AreaSwitcher({
   );
 }
 
-/** Same venue name the event page uses. Only the raised selected card shows it. */
+/** Same venue name the event page uses. Every On-the-map row shows it. */
 function sheetVenue(event: CrowdEvent): string | null {
   if (event.place.type === 'venue') {
     const venue = VENUES[event.place.venueId];
@@ -403,7 +414,7 @@ function EventRow({
     <>
       <span className="event-main">
         <span className="event-title">{listTitle(e)}</span>
-        {selected && venue && <span className="event-venue">{venue}</span>}
+        {venue && <span className="event-venue">{venue}</span>}
         {stakes && <span className="event-stakes">{stakes}</span>}
         <span className="event-meta">{detail}</span>
       </span>
