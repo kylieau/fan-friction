@@ -41,5 +41,6 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 ## Tech setup (chosen Sep 30, 2026; open to change)
 - Phone-sized web app: React + Vite, installable to the home screen. It can be wrapped as a native app later (Capacitor).
 - Map: MapLibre with OpenFreeMap maps (free, no account). Google Maps was considered and passed on: it needs a credit card on file, and its heat map layer is being retired.
-- Saving: Supabase (Kylie already uses it) for her log and, later, accounts. Also an "Export my nights" backup. Don't rely only on phone storage, because iPhone Safari can erase it.
+- Saving today is this phone, plus an "Export my nights" backup, because iPhone Safari can erase a site's saved data. Supabase is the planned store, not connected yet.
+- **Supabase order (Kylie, Oct 4, 2026):** finish the current UI slice and the Oct 4 LA seed on local files, then put catalog events in Supabase (shared schedules and crowd figures), then move You-tab logs (I was there, notes, plans) after she pastes a project URL and public anon key. The adapter must not call the network until those keys exist. She does not need to do anything in Supabase right now. Do not block Step 6 Traffic on it. 🚩 The free plan allows 2 active projects (she already uses one) and pauses a project when it sits idle.
 - Hosting: Vercel free plan.
