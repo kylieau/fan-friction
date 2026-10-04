@@ -12,6 +12,7 @@ import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, SearchIcon, SunIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle } from '../lib/eventTitle';
+import { quietStakes } from '../lib/stakes';
 import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
@@ -270,7 +271,7 @@ export function MapScreen() {
           {selected && (
             <>
               <div className="selected-row">
-                <EventRow event={selected} selected showDate={selected.date !== date} />
+                <EventRow event={selected} night={events} selected showDate={selected.date !== date} />
               </div>
               <Link to={`/event/${selected.id}`} className="gold-button">
                 See this event
@@ -287,6 +288,7 @@ export function MapScreen() {
                 <li key={e.id}>
                   <EventRow
                     event={e}
+                    night={events}
                     showDate={e.date !== date}
                     selected={e.id === selectedId}
                     onPick={() => {
@@ -304,7 +306,7 @@ export function MapScreen() {
               <ul className="event-list">
                 {upcoming.map((e) => (
                   <li key={e.id}>
-                    <EventRow event={e} showDate href={`/?date=${e.date}&when=day`} />
+                    <EventRow event={e} night={upcoming} showDate href={`/?date=${e.date}&when=day`} />
                   </li>
                 ))}
               </ul>
@@ -378,12 +380,14 @@ function sheetVenue(event: CrowdEvent): string | null {
 /** One sheet card: the same lines as the map chip, plus a quiet venue and the badges. */
 function EventRow({
   event: e,
+  night,
   selected,
   onPick,
   showDate,
   href,
 }: {
   event: CrowdEvent;
+  night: CrowdEvent[];
   selected?: boolean;
   onPick?: () => void;
   showDate?: boolean;
@@ -394,11 +398,13 @@ function EventRow({
   const crowd = crowdShort(e);
   const detail = showDate ? `${shortLocalDate(e.date)} · ${time} · ${crowd}` : `${time} · ${crowd}`;
   const venue = sheetVenue(e);
+  const stakes = quietStakes(e, night);
   const body = (
     <>
       <span className="event-main">
         <span className="event-title">{listTitle(e)}</span>
         {selected && venue && <span className="event-venue">{venue}</span>}
+        {stakes && <span className="event-stakes">{stakes}</span>}
         <span className="event-meta">{detail}</span>
       </span>
       {badges.length > 0 && (

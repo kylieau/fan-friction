@@ -4,6 +4,7 @@
 
 import { METROS } from '../../config/metros';
 import type { CrowdEvent, LocalDate } from '../types';
+import { mlbStakes } from './roundLabel';
 import type { EventSource } from './types';
 
 const API = 'https://statsapi.mlb.com/api/v1/schedule';
@@ -19,6 +20,12 @@ const MLB_VENUES: Record<number, string> = { 22: 'dodger-stadium', 1: 'angel-sta
 interface MlbGame {
   gamePk: number;
   gameDate: string;
+  gameType?: string;
+  description?: string;
+  seriesDescription?: string;
+  seriesGameNumber?: number;
+  /** Doubleheader index. Not the series game. */
+  gameNumber?: number;
   status: { detailedState: string; startTimeTBD?: boolean };
   venue?: { id: number };
   teams: { home: MlbSide; away: MlbSide };
@@ -48,6 +55,7 @@ function toEvent(g: MlbGame, metroId: string): CrowdEvent | null {
   const { date, time } = localParts(g.gameDate, tz);
   const awayName = g.teams.away.team.teamName ?? g.teams.away.team.name;
   const homeName = g.teams.home.team.teamName ?? g.teams.home.team.name;
+  const stakes = mlbStakes(g);
   return {
     id: `${date}-mlb-${g.gamePk}`,
     metroId,
@@ -55,6 +63,7 @@ function toEvent(g: MlbGame, metroId: string): CrowdEvent | null {
     start: g.status.startTimeTBD ? null : time,
     kind: 'game',
     title: `${homeName} vs. ${awayName}`,
+    ...(stakes ? { stakes } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: 'baseball' },
     teams: { home: home.teamId, away: slug(awayName) },

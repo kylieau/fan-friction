@@ -21,6 +21,7 @@ import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
+import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { hoursOf, milesBetween, runningHours } from '../lib/windows';
 
@@ -65,6 +66,7 @@ export function EventScreen() {
   const e = me.event;
   const a = e.assessment;
   const kind = crowdKind(e);
+  const stakesLine = quietStakes(e, day.events);
   const logged = yourNights(log).find((night) => night.eventId === e.id);
 
   return (
@@ -75,6 +77,7 @@ export function EventScreen() {
 
       <header className="event-head">
         <h1 className="page-title">{listTitle(e)}</h1>
+        {stakesLine && <p className="event-stakes">{stakesLine}</p>}
         <div className="event-sub">
           {me.venueName}
           {e.start ? ` · ${clockTime(e.start)}` : ''}

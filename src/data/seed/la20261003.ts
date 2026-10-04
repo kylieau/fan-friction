@@ -26,7 +26,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     start: '13:08',
     kind: 'game',
     title: 'Dodgers vs Braves',
-    series: 'NLDS G1',
+    stakes: { round: 'NLDS', game: 1 },
     place: { type: 'venue', venueId: 'dodger-stadium' },
     audience: { domain: 'sports', sport: 'baseball' },
     teams: { home: 'dodgers', away: 'braves' },

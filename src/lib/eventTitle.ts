@@ -47,14 +47,12 @@ function withSquadTag(title: string, tag: string | null): string {
   return `${first} (${found}) ${vs[2]} ${second}`;
 }
 
-/** Map chip line 1. No venue, and no series (that has its own line on the chip). */
+/** Map chip line 1. No venue. The round, if any, is its own line. */
 export function mapTitle(event: CrowdEvent): string {
   return withSquadTag(event.title, collegeAbbrev(event));
 }
 
-/** Sheet and other one-line titles. A series stays in parentheses: "Dodgers vs Braves (NLDS G1)". */
+/** Matchup name on the sheet, the event page, and the log. The round is a separate line. */
 export function listTitle(event: CrowdEvent): string {
-  const base = mapTitle(event);
-  if (event.series && !base.includes(`(${event.series})`)) return `${base} (${event.series})`;
-  return base;
+  return mapTitle(event);
 }

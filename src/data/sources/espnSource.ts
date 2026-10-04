@@ -6,6 +6,7 @@
 import { METROS } from '../../config/metros';
 import { TEAMS } from '../teams';
 import type { CrowdEvent, LocalDate } from '../types';
+import { espnStakes, leagueFromPath } from './roundLabel';
 import type { EventSource } from './types';
 
 const API = 'https://site.api.espn.com/apis/site/v2/sports';
@@ -41,7 +42,16 @@ interface EspnSide {
 interface EspnGame {
   id: string;
   date: string;
-  competitions: { venue?: { fullName?: string }; competitors: EspnSide[]; status?: { type?: { name?: string } } }[];
+  season?: { slug?: string };
+  seasonType?: { name?: string; abbreviation?: string };
+  competitions: {
+    venue?: { fullName?: string };
+    competitors: EspnSide[];
+    status?: { type?: { name?: string } };
+    notes?: { headline?: string }[];
+    gameNumberOfSeries?: number;
+    series?: { gameNumberOfSeries?: number } | { gameNumberOfSeries?: number }[];
+  }[];
 }
 
 /** Short names can collide (Sacramento Kings vs. LA Kings), so use the full name when they do. */
@@ -69,6 +79,8 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
   if (/postponed|cancel/i.test(c.status?.type?.name ?? '')) return null;
 
   const { date, time } = localParts(g.date, METROS[t.metroId].timeZone);
+  const league = leagueFromPath(t.path);
+  const stakes = league ? espnStakes(g, league) : undefined;
   return {
     id: `${date}-espn-${t.teamId}-${g.id}`,
     metroId: t.metroId,
@@ -76,6 +88,7 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
     start: time,
     kind: 'game',
     title: `${nameOf(home.team)} vs. ${nameOf(away.team)}`,
+    ...(stakes ? { stakes } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: t.sport },
     teams: { home: t.teamId, away: slug(nameOf(away.team)) },
@@ -87,8 +100,8 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
 const cache = new Map<string, Promise<CrowdEvent[]>>();
 
 async function scheduleFor(t: (typeof ESPN_TEAMS)[number]): Promise<EspnGame[]> {
-  // The default list holds the preseason; seasontype=2 holds the regular season.
-  const urls = ['', '?seasontype=2'].map((q) => `${API}/${t.path}/teams/${t.espnId}/schedule${q}`);
+  // Default is preseason, seasontype=2 is the regular season, seasontype=3 is the postseason.
+  const urls = ['', '?seasontype=2', '?seasontype=3'].map((q) => `${API}/${t.path}/teams/${t.espnId}/schedule${q}`);
   const lists = await Promise.all(
     urls.map((u) =>
       fetch(u)
