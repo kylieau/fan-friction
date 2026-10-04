@@ -105,6 +105,50 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 45517 }],
     roof: 'open',
   },
+  'honda-center': {
+    id: 'honda-center',
+    metroId: 'la',
+    names: [{ name: 'Honda Center' }],
+    location: [-117.8765, 33.8078],
+    capacity: [{
+      seats: 17174,
+      setup: 'hockey',
+      note: 'Hockey capacity in wide use. The arena site has also listed 17,732.',
+    }],
+    roof: 'indoor',
+  },
+  belasco: {
+    id: 'belasco',
+    metroId: 'la',
+    names: [{ name: 'The Belasco' }],
+    location: [-118.2594, 34.0404],
+    capacity: [{ seats: 1500, setup: 'concert', note: 'Main theater, about 1,500. Under the map floor.' }],
+    roof: 'indoor',
+  },
+  wiltern: {
+    id: 'wiltern',
+    metroId: 'la',
+    names: [{ name: 'The Wiltern' }],
+    location: [-118.3089, 34.0615],
+    capacity: [{
+      seats: 1850,
+      setup: 'concert',
+      note: 'About 1,850 for a concert. Some guides say about 2,300. Under the map floor.',
+    }],
+    roof: 'indoor',
+  },
+  'zipper-hall': {
+    id: 'zipper-hall',
+    metroId: 'la',
+    names: [{ name: 'Zipper Concert Hall' }],
+    location: [-118.2497, 34.0538],
+    capacity: [{
+      seats: 415,
+      setup: 'concert',
+      note: 'Herbert Zipper Concert Hall at the Colburn School. Published room is about 415-435 seats. Under the map floor.',
+    }],
+    roof: 'indoor',
+  },
   // Buildings from her log outside Los Angeles. One record each. New York
   // is Citi Field only.
   'ohio-stadium': {

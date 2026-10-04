@@ -5,7 +5,7 @@ import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, 
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { MapCamera } from '../map/MapCamera';
-import { crowdPoints, crowdShort } from '../map/crowdPoints';
+import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { NightScore } from '../components/NightScore';
 import { WhenControl } from '../components/WhenControl';
@@ -76,13 +76,17 @@ export function MapScreen() {
 
   const shown = day && day.date === date ? day : null;
   const rating = shown?.rating ?? null;
-  const dayEvents = shown?.events ?? [];
+  // Under-floor rooms stay in the day's catalog. They are not pins, sheet rows, or part of this count.
+  const dayEvents = (shown?.events ?? []).filter(showsOnMap);
 
   // A blank map is boring, so if this date is empty and nobody has picked When yet,
   // the map widens to the next 7 days. A pick always wins.
   // One day shows that day's rating. Next 7 days shows the average of the rated
   // days in the span, and hides the score when none of them are rated.
-  const weekAhead = useMemo(() => ahead.filter((e) => e.date <= addDays(date, 7)), [ahead, date]);
+  const weekAhead = useMemo(
+    () => ahead.filter((e) => showsOnMap(e) && e.date <= addDays(date, 7)),
+    [ahead, date],
+  );
   const autoSpan: WhenSpan = dayEvents.length > 0 ? 'day' : 'week';
   const span: WhenSpan = when === 'week' ? 'week' : !canLookAhead ? 'day' : (when ?? (shown ? autoSpan : 'day'));
   const events = useMemo(

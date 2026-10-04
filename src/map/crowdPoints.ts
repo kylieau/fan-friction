@@ -24,6 +24,11 @@ export interface CrowdPoint {
   dayTag: string | null;
 }
 
+/** Under the ~5k floor stays in the catalog. The map and the On-the-map sheet skip it. */
+export function showsOnMap(event: CrowdEvent): boolean {
+  return event.belowFloor !== true;
+}
+
 const SETUP_BY_SPORT: Record<string, string> = {
   basketball: 'basketball',
   hockey: 'hockey',

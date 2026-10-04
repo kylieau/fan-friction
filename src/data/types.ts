@@ -135,6 +135,11 @@ export interface CrowdEvent {
   crowd: CrowdFigure[];
   weather?: Weather;
   assessment?: Assessment;
+  /**
+   * Under the ~5k map floor. Same idea as a personal-log night: kept in the
+   * catalog, never a map dot, never an On-the-map sheet pin.
+   */
+  belowFloor?: boolean;
   /** Which source this came from, such as "seed" or "mlb". */
   sourceId: string;
 }

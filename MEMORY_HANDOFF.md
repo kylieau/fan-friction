@@ -5,13 +5,13 @@ Overwritten each session. Deferred work lives in `BACKLOG.md`. Product rules liv
 _Last synced: Oct 4, 2026._
 
 ## Current state
-- **Do not merge** branch `cursor/map-chip-offset-e5fb` (PR https://github.com/kylieau/fan-friction/pull/6) until Kylie asks. Product UI is pushed through `9b416c1`. This file is the later docs sync on the same branch. The live site https://fan-friction.vercel.app deploys from `main` only, so this PR is not live.
-- **Already on `main`:** Step 5 is merged (You tab, her seeded log, phone storage, Export). Also on `main`: Nights, the Map sheet, MLB and ESPN home games from today on, and the Sat Oct 3, 2026 LA seed (NLDS Game 1 at 1:08, USC vs Washington at 4:30, Bruno Mars, Klangkuenstler, aespa, ComplexCon; provisional date rating 7.8). The old branch name `cursor/you-tab-local-log-684c` is stale.
-- **Only on PR #6:** map cards sit off the gold glow (outward from that night’s pins, about 8px; if no side fits, drop the card and keep the mark); one pale yellow ring on the selected chip; other cards stay white with faded ink; a 1px tab-bar hairline; app shell `#DAEBFE` (the map canvas stays the basemap); sheet button **See this event**; upcoming **Save this night** (a plan only) and past **I was there** / **You were there**; You lists attended nights only; a relative word beside a past date (Yesterday, Last week, Last month, Last year, or the year); sheet order is nearest venue, then earlier start; college tags `(FB)`, `(MBB)`, and `(WBB)` after the first name; venue only on the raised sheet card; sheet badges (friction from Moderate up is Dodger `#005A9C` with white type; Marquee, Major, Notable, and Sold Out are green `#ECF3EC` / `#216E1F`).
-- **Not built:** an Oct 4, 2026 LA seed (Today / Next 7 still needs upcoming nights), Step 6 Traffic, Step 7 leftovers, Step 8, and Supabase. Night story builds with the Step 7 leftovers, after Traffic, not sooner (placement in `BACKLOG.md`). **Nights tab is per city/area** is parked later, not Step 6: same metro scope as the Map switcher; needs nights filtered by metro, plus visual chrome. Kylie, 2026-10-04. Do not build now. On `main`, You still has Up next and **Plan this night**. This PR removes that screen and stores the plan without adding it to Your nights.
+- **PR #6 is on `main`** (`d4b4ccb`, map cards off the gold mark). The live site https://fan-friction.vercel.app deploys from `main`.
+- **Sun Oct 4, 2026 (LA) is seeded from Kylie's verified list only:** NLDS Game 2 at 5:00 (sold out, about 56,000), Ducks vs Panthers at 5:00, Galaxy vs Cruz Azul at 5:30, Slayer at 6:00 (sold out), and the ComplexCon concert (Playboi Carti) at 6:00. Draft hand rating **7.4**. The Today chip uses a draft metro feels-like of **97°F**. Chat Pile at the Belasco, Sammy Rae at the Wiltern, and Candlelight at Zipper are in the seed with `belowFloor` and do not pin. No SoFi, no Bruno Mars, no USC or UCLA.
+- **Already on `main`:** Step 5 (You tab, attended nights only, phone storage, Export). Nights, the Map sheet, MLB and ESPN home games from today on, and the Sat Oct 3, 2026 LA seed (NLDS Game 1 at 1:08, USC vs Washington at 4:30, Bruno Mars, Klangkuenstler, aespa, ComplexCon; provisional date rating 7.8). From #6: cards sit off the gold glow; sheet button **See this event**; upcoming **Save this night** and past **I was there** / **You were there**.
+- **Not built:** Step 6 Traffic, Step 7 leftovers, Step 8, and Supabase. Night story builds with the Step 7 leftovers, after Traffic, not sooner (placement in `BACKLOG.md`). **Nights tab is per city/area** is parked later, not Step 6. Kylie, 2026-10-04. Do not build now.
 
 ## Changes made
-This sync is docs only (`MEMORY_HANDOFF.md`, `BACKLOG.md`, `CLAUDE.md`, `docs/build-brief.md`). The product commits on this branch, not on `main`, are `0c27144` through `9b416c1`.
+Sun Oct 4, 2026 LA seed: eight verified events, three of them flagged `belowFloor` so they do not pin. Draft hand rating 7.4. Metro feels-like chip 97°F (draft). New venues: Honda Center, The Belasco, The Wiltern, Zipper Concert Hall. New teams: Ducks, Panthers, Cruz Azul.
 
 ## Key decisions still in force
 - Kylie’s instructions beat mockups, docs, and other models. Don’t delete what’s built; rehome it. The name is Fan/Friction. Flag any new cost with 🚩.
@@ -27,9 +27,9 @@ This sync is docs only (`MEMORY_HANDOFF.md`, `BACKLOG.md`, `CLAUDE.md`, `docs/bu
 - Screenshots in cloud sessions: `playwright-core`, `/usr/bin/google-chrome`, swiftshader args, an iPhone user agent, and `localStorage['fan-friction:tipsDone']='true'`. Don’t `pkill` vite.
 
 ## Next steps
-Do not merge PR #6 until Kylie asks. After that, and after an Oct 4, 2026 LA seed on the local files, follow the build order in `BACKLOG.md`.
+Oct 4 is seeded. Next is Step 6 (Traffic) in `BACKLOG.md`, once this seed is on `main`.
 
 **Next command to run:**
 ```bash
-npm run dev   # this branch; open /?date=2026-10-03&when=day
+npm run dev   # open /?date=2026-10-04&when=day
 ```
