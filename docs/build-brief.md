@@ -13,7 +13,7 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 - **Data:** hand-seeded to start, but built so live schedules and results can plug in quickly. MLB goes first, only because it's October baseball and its free feed is the easiest. Other sports (NFL, NBA, NHL, WNBA, MLS, college) and concerts follow right behind it. Upcoming concerts and shows start with Ticketmaster; SeatGeek or other sources get added later.
 - **Ratings:** hardcoded for the seeded nights first, then the real formula, checked against the 13-night table.
 - **People:** just Kylie to start. Her log is still on this phone, with an "Export my nights" backup, because iPhone Safari can erase a website's saved data. Supabase is the planned store (Kylie, Oct 4, 2026): catalog events first, then You, and only after she pastes a project URL and anon key. It does not block Traffic. She does not need to open Supabase right now. 🚩 Free plan: 2 active projects, and a project pauses when idle. Simple accounts come right after the baseline build, also on Supabase.
-- **Screens in the first slice:** Map (Crowds) with the Event screen, Nights, You (Plans and Your nights), and Traffic. Compare comes in the second slice.
+- **Screens in the first slice:** Map (Crowds) with the Event screen, Nights, You (attended nights only), and Traffic. Compare comes in the second slice.
 - **World Series games get a SOLD OUT tag** like any other sold-out event. Nothing special or bigger about it.
 - **Event types:** Game, Show, Festival, Live Broadcast (watch parties at places like Cosm), and Special event. "Live Broadcast" is Kylie's name for the Cosm-style category.
 - **How far back logging goes:** 10 years (to about 2016). Kylie's own concert log has a few older shows (2013 to 2015). Keep those as rough-dated entries with no rating, and ask Kylie if she wants them kept.
@@ -25,14 +25,14 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 4. **Event screen.** Tap any event to see:
    - its rating and what else was on nearby that night ("Here's what beat it")
    - a short "The game" or "The show" block (the result for sports; pitchers, giveaways and notable moments)
-   - an "I was there" button
+   - one action by tense: an upcoming night says **Save this night** (a plan only; it does not add a Your nights row); a past night says **I was there**, and after that the page says **You were there**
    - a shareable card at the very end of the screen
    - one gold primary button per screen, with a plain verb
 5. **Nights tab.** A search box and a calendar shaded by each day's night rating, with each day's number and a legend. Below it, a "Famous nights" list with rating badges. Tapping a day opens that night.
-6. **You tab.** Two parts, with the order switchable in settings (Plans first by default):
-   - **Plans ("Up next"):** your next planned night, the other events that night, its rating and an estimated traffic line.
-   - **Your nights:** a log with team + sport filters. Each row shows the date, event, rating (when there is one), plain facts and an optional one-line result. Plain stats (counts by team and sport, venues) are welcome. No loaded labels, and no "brutal nights" stat.
-   - Logging: search and add, "I was there" on the event screen, and a live check-in. Ticket import comes later.
+6. **You tab.** Attended nights only (Kylie, Oct 4, 2026). No Up next list and no Plans-first order toggle.
+   - **Your nights:** nights marked **I was there**. **Save this night** on an upcoming event stores a plan in the backup only. It does not add a row here.
+   - A log with team + sport filters. Each row shows the date, event, rating (when there is one), plain facts and an optional one-line result. Plain stats (counts by team and sport, venues) are welcome. No loaded labels, and no "brutal nights" stat.
+   - Logging: **I was there** on a past event. Search and add, a live check-in, and ticket import come later.
    - Logging rules: events below 5k can be logged (no rating, no dot). Rough dates are allowed alongside real ones. A festival is one entry with the sets inside. A partial night is a personal note. Away games are logged now, with context later. Old venue names match current ones (Staples Center = Crypto.com Arena, Banc of California Stadium = BMO Stadium).
    - Personal notes stay private and show only in Your nights.
 7. **"Who you've seen."** Headliners and pro-game participants count automatically. Openers, festival sets and multi-game events are opt-in. "Cameo" (surprise guests, one-song sets) is a secondary tier, and its default rules are still to be defined. Built in but not the main event of the app.
