@@ -1,17 +1,20 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { areaMetros, DEFAULT_METRO, type Metro } from '../config/metros';
-import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, type CityDate, type CrowdEvent } from '../data';
+import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, todayIn, VENUES, venueNameOn, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
+import { MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdShort } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { NightScore } from '../components/NightScore';
 import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, SearchIcon, SunIcon } from '../components/Icons';
-import { eventChip } from '../lib/chips';
+import { sheetBadges } from '../lib/chips';
 import { listTitle } from '../lib/eventTitle';
-import { addDays, clockTime, headerDate, shortLocalDate } from '../lib/dates';
+import { quietStakes } from '../lib/stakes';
+import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
+import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { nightsPath, useView, whenLabel, type WhenSpan } from '../lib/view';
 
@@ -29,10 +32,6 @@ function averageRating(start: string, end: string, rated: ReadonlyMap<string, nu
   if (scores.length === 0) return null;
   return scores.reduce((sum, score) => sum + score, 0) / scores.length;
 }
-
-// Room the header, the on-map When pill, and the collapsed sheet take on the
-// full-screen map. Dots and labels are kept out of it.
-const INSETS = { top: 228, bottom: 200 };
 
 // The map is the screen; the header and the sheet sit on it. Opens on Today, even
 // when it's quiet. A famous night opens here too ("/?date=2024-10-25").
@@ -90,16 +89,12 @@ export function MapScreen() {
     () => (span === 'day' ? dayEvents : [...dayEvents, ...weekAhead]),
     [span, dayEvents, weekAhead],
   );
-  // The map shows one pin and label per venue: the next event there. The sheet
-  // lists the events inside the map after it settles, and picking one rings its pin.
-  const { points, pinFor } = useMemo(() => {
-    const all = shown && mode === 'crowds' ? crowdPoints(events, date) : [];
+  // One mark and one card per event. Cards that overlap are dropped; the marks stay.
+  const points = useMemo(() => {
+    if (!shown || mode !== 'crowds') return [];
+    const all = crowdPoints(events, date);
     all.sort((a, b) => (a.event.date + (a.event.start ?? '')).localeCompare(b.event.date + (b.event.start ?? '')));
-    const venueKey = (p: (typeof all)[number]) => (p.event.place.type === 'venue' ? p.event.place.venueId : p.event.id);
-    const next = new Map<string, (typeof all)[number]>();
-    for (const p of all) if (!next.has(venueKey(p))) next.set(venueKey(p), p);
-    const idToPin = new Map(all.map((p) => [p.event.id, next.get(venueKey(p))!.event.id]));
-    return { points: [...next.values()], pinFor: (id: string | null) => (id ? (idToPin.get(id) ?? id) : null) };
+    return all;
   }, [shown, mode, events, date]);
   // Collapsed, the sheet peeks the title. Open, it is as tall as the rows, and the
   // list scrolls once that would pass the sheet's max height.
@@ -144,7 +139,9 @@ export function MapScreen() {
     setBounds(null);
   }, [metro.id, date, span]);
   const onMap = useMemo(() => events.filter((event) => eventInBounds(event, bounds)), [events, bounds]);
+  const sheetEvents = useMemo(() => orderSheetEvents(onMap, selected), [onMap, selected]);
   const nightLine = shown ? `${whenLabel(span, isToday, date)} · On the map` : ' ';
+  const pastLabel = span === 'day' ? pastRelativeLabel(date, todayIn(DEFAULT_METRO)) : null;
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);
@@ -179,7 +176,8 @@ export function MapScreen() {
     <div className={`screen map-screen${open ? ' sheet-open' : ''}`}>
       <div className="map-area" onPointerDown={() => setMenu(null)}>
         <BaseMap metro={metro}>
-          <CrowdLayer points={points} selectedId={pinFor(selectedId)} onSelect={select} insets={INSETS} />
+          <CrowdLayer points={points} selectedId={selectedId} onSelect={select} />
+          <MapCamera points={points} selectedId={selectedId} sheetOpen={open} />
           <MapSettle onSettle={setBounds} />
         </BaseMap>
       </div>
@@ -195,7 +193,12 @@ export function MapScreen() {
         </div>
         <div className="map-header-score">
           <div className="map-header-dateblock">
-            {span === 'day' && <div className="map-header-date">{headerDate(date)}</div>}
+            {span === 'day' && (
+              <div className="map-header-date">
+                <span>{headerDate(date, today)}</span>
+                {pastLabel && <span className="map-header-past">{pastLabel}</span>}
+              </div>
+            )}
             {caption.trim() && <div className="map-header-count">{caption}</div>}
           </div>
           <NightScore
@@ -242,8 +245,8 @@ export function MapScreen() {
           </button>
           {legend && (
             <div className="legend-card" role="note">
-              <b>Gold glow</b> marks where an event was. Wider means a bigger venue. Stronger means the known crowd filled more of it;
-              faint means no count found yet. <b>★</b> is the biggest known crowd that day. A count reads in
+              <b>Gold glow</b> marks where an event was. Wider means a bigger crowd. The gold is a light wash, so the map still shows through.
+              No count yet is a small circle. <b>★</b> is the biggest known crowd that day. A count reads in
               thousands, like 40.0k. The list adds “est” when that number is an estimate. A sold-out show with a known room size shows that size, like 18.0k (sold out). No count yet stays in words.
             </div>
           )}
@@ -268,10 +271,10 @@ export function MapScreen() {
           {selected && (
             <>
               <div className="selected-row">
-                <EventRow event={selected} selected showDate={selected.date !== date} />
+                <EventRow event={selected} night={events} selected showDate={selected.date !== date} />
               </div>
               <Link to={`/event/${selected.id}`} className="gold-button">
-                See what beat it
+                See this event
                 <ArrowRight />
               </Link>
             </>
@@ -279,12 +282,13 @@ export function MapScreen() {
         </div>
 
         <div className="sheet-body" ref={bodyRef}>
-          {onMap.length > 0 && (
+          {sheetEvents.length > 0 && (
             <ul className="event-list">
-              {onMap.map((e) => (
+              {sheetEvents.map((e) => (
                 <li key={e.id}>
                   <EventRow
                     event={e}
+                    night={events}
                     showDate={e.date !== date}
                     selected={e.id === selectedId}
                     onPick={() => {
@@ -302,13 +306,7 @@ export function MapScreen() {
               <ul className="event-list">
                 {upcoming.map((e) => (
                   <li key={e.id}>
-                    <Link to={`/?date=${e.date}&when=day`} className="event-row">
-                      <span className="event-time">{shortLocalDate(e.date)}</span>
-                      <span className="event-main">
-                        <span className="event-title">{listTitle(e)}</span>
-                        <span className="event-meta">{e.start ? clockTime(e.start) : 'Time n/a'}</span>
-                      </span>
-                    </Link>
+                    <EventRow event={e} night={upcoming} showDate href={`/?date=${e.date}&when=day`} />
                   </li>
                 ))}
               </ul>
@@ -370,25 +368,58 @@ function AreaSwitcher({
   );
 }
 
-/** Same short crowd line as the map chip. */
+/** Same venue name the event page uses. Only the raised selected card shows it. */
+function sheetVenue(event: CrowdEvent): string | null {
+  if (event.place.type === 'venue') {
+    const venue = VENUES[event.place.venueId];
+    return venue ? venueNameOn(venue, event.date) : null;
+  }
+  return event.place.name;
+}
 
-/** One event: title, then time and the labeled crowd, plus one chip. */
-function EventRow({ event: e, selected, onPick, showDate }: { event: CrowdEvent; selected?: boolean; onPick?: () => void; showDate?: boolean }) {
-  const chip = eventChip(e);
+/** One sheet card: the same lines as the map chip, plus a quiet venue and the badges. */
+function EventRow({
+  event: e,
+  night,
+  selected,
+  onPick,
+  showDate,
+  href,
+}: {
+  event: CrowdEvent;
+  night: CrowdEvent[];
+  selected?: boolean;
+  onPick?: () => void;
+  showDate?: boolean;
+  href?: string;
+}) {
+  const badges = sheetBadges(e);
   const time = e.start ? clockTime(e.start) : 'Time n/a';
-  const when = showDate ? `${time} · ${shortLocalDate(e.date)}` : time;
+  const crowd = crowdShort(e);
+  const detail = showDate ? `${shortLocalDate(e.date)} · ${time} · ${crowd}` : `${time} · ${crowd}`;
+  const venue = sheetVenue(e);
+  const stakes = quietStakes(e, night);
   const body = (
     <>
       <span className="event-main">
         <span className="event-title">{listTitle(e)}</span>
-        <span className="event-meta">
-          {when} · {crowdShort(e)}
-        </span>
+        {selected && venue && <span className="event-venue">{venue}</span>}
+        {stakes && <span className="event-stakes">{stakes}</span>}
+        <span className="event-meta">{detail}</span>
       </span>
-      {chip && <span className={`chip ${chip.kind === 'friction' ? 'chip-friction' : 'chip-why'}`}>{chip.text}</span>}
+      {badges.length > 0 && (
+        <span className="event-badges">
+          {badges.map((badge) => (
+            <span key={badge.kind} className={`chip chip-${badge.kind}`}>
+              {badge.text}
+            </span>
+          ))}
+        </span>
+      )}
     </>
   );
   const cls = `event-row${selected ? ' selected' : ''}`;
+  if (href) return <Link to={href} className={cls}>{body}</Link>;
   return onPick ? (
     <button type="button" className={cls} onClick={onPick} aria-pressed={selected}>
       {body}

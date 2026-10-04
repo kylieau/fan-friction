@@ -42,8 +42,10 @@ Three official layers plus personal notes:
 - Only pre-game facts may nudge an event's "own pull" rating factor. Outcomes never affect the rating.
 
 ## You tab
-- Plans ("Up next") and Your nights, order configurable (Plans first by default). Plain stats (counts by team + sport, venues), Receipts (saved past nights and cards).
-- Logging ways: search and add, live check-in, "I was there" on the event screen, ticket import (later).
+- You lists attended nights only (Kylie, Oct 4, 2026). A past event says **I was there**; after it is logged, the page says **You were there**. There is no Up next section and no Plans-first order toggle.
+- An upcoming event says **Save this night**. That stores a plan only. It does not add a Your nights row. There is no "Plan this night" button and no line that says saving adds the night to Your nights. A plan can stay in storage and in Export without showing on You.
+- Plain stats (counts by team + sport, venues). Receipts (saved past nights and cards) are still later.
+- Logging ways still later: search and add, live check-in, ticket import. What exists now is **I was there** on a past event.
 - Honor system for proof. Separate from Compare. Friends-only privacy.
 - Filters are team + sport (e.g. UCLA MBB, UCLA WBB, UCLA FB, Dodgers).
 - Streaks, badges and compare-with-friends are wanted, plain and factual; definitions TBD.

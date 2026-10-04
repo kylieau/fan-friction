@@ -26,7 +26,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     start: '13:08',
     kind: 'game',
     title: 'Dodgers vs Braves',
-    series: 'NLDS G1',
+    stakes: { round: 'NLDS', game: 1 },
     place: { type: 'venue', venueId: 'dodger-stadium' },
     audience: { domain: 'sports', sport: 'baseball' },
     teams: { home: 'dodgers', away: 'braves' },
@@ -40,7 +40,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     date: DATE,
     start: '16:30',
     kind: 'game',
-    title: 'USC vs Washington (CFB)',
+    title: 'USC vs Washington',
     place: { type: 'venue', venueId: 'coliseum' },
     audience: { domain: 'sports', sport: 'football' },
     teams: { home: 'usc-football', away: 'washington-huskies' },
@@ -54,7 +54,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     date: DATE,
     start: '19:00',
     kind: 'show',
-    title: 'Bruno Mars',
+    title: 'Bruno Mars: The Romantic Tour',
     place: { type: 'venue', venueId: 'sofi-stadium' },
     audience: { domain: 'music', genre: 'pop' },
     performer: 'Bruno Mars',
@@ -104,8 +104,9 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     place: { type: 'venue', venueId: 'crypto-com-arena' },
     audience: { domain: 'music', genre: 'hip-hop' },
     performer: 'Ken Carson',
-    // No public crowd prediction. The convention-center marketplace is not this pin.
-    crowd: [],
+    // The convention-center marketplace is not this pin. 35,000 is a placeholder
+    // estimate, not a published attendance and not from the Complex source below.
+    crowd: [estimated(35000, 'Placeholder estimate. Not a published attendance.')],
     assessment: draft('Notable', ['Ken Carson', 'doors 6:00'], 'Moderate', 'Downtown, same evening as the Inglewood cluster'),
     sourceId: SOURCE_ID,
   },

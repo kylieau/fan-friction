@@ -1,7 +1,12 @@
 // Colors from the build brief (v4 mockups). Light theme, no orange, and gold
 // is never used for text on white. These become CSS variables at startup.
+
+/** Pale UCLA blue. One shell for the page ground and the map chrome. */
+const SHELL = '#DAEBFE';
+
 export const THEME = {
-  bg: '#F7F8FA',
+  /** Page ground, status bar, and the frame around the phone. Same as chrome. */
+  bg: SHELL,
   card: '#FFFFFF',
   ink: '#0F1B2D',
   inkSoft: '#2D3748',
@@ -14,8 +19,8 @@ export const THEME = {
   dodger: '#005A9C',
   /** UCLA blue: secondary. */
   ucla: '#2774AE',
-  /** Pale ground for the map header, the tab bar, and the sheet. */
-  chrome: '#DAEBFE',
+  /** Map header, tab bar (including the home-indicator inset), and the sheet. */
+  chrome: SHELL,
   /** UCLA gold: the one primary button per screen, and the hottest heat. */
   gold: '#FFD100',
   /**

@@ -234,7 +234,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Routine', [], 'Moderate', 'Taylor Swift 30 mi away, Friday traffic'],
   }),
   show(D9, {
-    performer: 'Taylor Swift', genre: 'pop', venue: 'sofi-stadium', start: '18:30', crowd: [soldOut, estimated(67500, 'Eras Tour average per night (Pollstar); not this night')],
+    performer: 'Taylor Swift', title: 'Taylor Swift: Eras Tour', genre: 'pop', venue: 'sofi-stadium', start: '18:30', crowd: [soldOut, estimated(67500, 'Eras Tour average per night (Pollstar); not this night')],
     a: ['Marquee', ['sold out'], 'Low', 'Nothing bigger was on'],
   }),
 

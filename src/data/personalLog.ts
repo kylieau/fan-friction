@@ -2,6 +2,7 @@
 // Screens reach this only through src/data/index.ts.
 
 import { isValidDate } from '../lib/dates';
+import { listTitle } from '../lib/eventTitle';
 import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
 import { KYLIE_LOG } from './seed/kylieLog';
@@ -114,7 +115,7 @@ function sportLabel(sport: string): string {
  */
 export function eventTypeLabel(kind: string, sport: string): string {
   if (kind === 'festival') return 'Festival';
-  if (kind === 'live-broadcast') return 'Live broadcast';
+  if (kind === 'live-broadcast') return 'Live Broadcast';
   if (kind === 'special') return 'Special';
   if (kind === 'show' || sport === 'Concerts') return 'Show';
   if (sport === 'WNBA') return "Women's basketball";
@@ -160,7 +161,7 @@ function nightFromEvent(event: CrowdEvent): LoggedNight {
       id: `mark-${event.id}`,
       eventId: event.id,
       when: { sort: event.date, label: '', precision: 'day' },
-      title: event.title,
+      title: listTitle(event),
       tags: ['Concerts'],
       sport: 'Concerts',
       sides: [name],
@@ -176,7 +177,7 @@ function nightFromEvent(event: CrowdEvent): LoggedNight {
     id: `mark-${event.id}`,
     eventId: event.id,
     when: { sort: event.date, label: '', precision: 'day' },
-    title: event.title,
+    title: listTitle(event),
     tags: [tag],
     sport: sport ? sportLabel(sport) : 'Sports',
     sides: [side],
@@ -223,7 +224,7 @@ export function togglePlan(event: CrowdEvent) {
     date: event.date,
     metroId: event.metroId,
     eventId: event.id,
-    title: event.title,
+    title: listTitle(event),
     venue: venueLabel(event),
   };
   commit({ ...snapshot, plans: [...snapshot.plans, plan] });

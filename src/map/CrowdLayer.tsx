@@ -1,238 +1,452 @@
 import { useContext, useEffect, useRef } from 'react';
-import { LngLatBounds, Marker } from 'maplibre-gl';
+import { type Map as MapLibreMap, Marker } from 'maplibre-gl';
 import { MapContext } from './BaseMap';
 import { clockTime } from '../lib/dates';
 import { mapTitle } from '../lib/eventTitle';
+import { chipRound } from '../lib/stakes';
 import { crowdShort, type CrowdPoint } from './crowdPoints';
+import { glowRadiusPx } from './glowRadius';
+import {
+  nearestDot,
+  placeChips,
+  type Box,
+  type ChipCandidate,
+  type DotHit,
+  type PlacedChip,
+} from './chipPlacement';
+
+/** People in the disc. A sold-out show with no separate count uses the room. */
+function crowdForGlow(p: CrowdPoint): number | undefined {
+  if (p.count !== undefined && p.count > 0) return p.count;
+  if (p.soldOut && p.capacity) return p.capacity;
+  return undefined;
+}
 
 const SOURCE = 'crowds';
+const CLAIM = 'crowd-card-claim';
+const SELECTED_RANK = 1e15;
+/** Pale gold wash. The basemap stays visible. Fullness does not brighten it. */
+const WASH = 0.2;
 
 interface Props {
   points: CrowdPoint[];
-  /** The event picked in the list or on the map; its dot gets a ring and its label a highlight. */
+  /** The event picked in the list or on the map. */
   selectedId: string | null;
-  /** Called with an event id (a label or dot was tapped) or null (empty map was tapped). */
+  /** An event id, or null when the empty map was tapped. */
   onSelect: (id: string | null) => void;
-  /** Space under the header and the collapsed sheet, kept clear of dots and labels. */
-  insets: { top: number; bottom: number };
 }
 
 /**
- * The Crowds layer: a gold glow at each venue (bigger for bigger venues,
- * stronger when the known crowd filled more of it) plus a small label.
- * Draws nothing when there are no points, so a quiet date leaves the plain map.
+ * Pale gold wash per event (the crowd) with a dark dot at the venue, plus one
+ * white card offset off that circle. Cards that would cover another card, the
+ * gold, or the controls are dropped. The mark stays, and tapping it brings
+ * the card back.
  */
-export function CrowdLayer({ points, selectedId, onSelect, insets }: Props) {
+export function CrowdLayer({ points, selectedId, onSelect }: Props) {
   const map = useContext(MapContext);
   const selectRef = useRef(onSelect);
   selectRef.current = onSelect;
+  const selectedRef = useRef(selectedId);
+  selectedRef.current = selectedId;
+  const pointsRef = useRef(points);
+  pointsRef.current = points;
+  const refreshRef = useRef<() => void>(() => {});
 
   useEffect(() => {
     if (!map || points.length === 0) return;
 
     map.addSource(SOURCE, {
       type: 'geojson',
+      promoteId: 'id',
       data: {
         type: 'FeatureCollection',
         features: points.map((p) => ({
           type: 'Feature',
+          id: p.event.id,
           geometry: { type: 'Point', coordinates: p.location },
-          properties: { id: p.event.id, venue: p.venueName, upcoming: p.upcoming, capacity: p.capacity ?? 20000, fill: p.fill ?? -1 },
+          properties: {
+            id: p.event.id,
+            upcoming: p.upcoming,
+            capacity: p.capacity ?? 20000,
+            fill: p.fill ?? -1,
+          },
         })),
       },
     });
-    // Radius grows with capacity (a 90k stadium glows about twice as wide as a 20k arena).
-    const radius = ['interpolate', ['linear'], ['get', 'capacity'], 15000, 26, 95000, 60] as never;
-    // Known crowds glow in proportion to how full the venue was; unknown ones are faint.
-    const strength = ['case', ['get', 'upcoming'], 0.12, ['<', ['get', 'fill'], 0], 0.22, ['+', 0.3, ['*', 0.5, ['get', 'fill']]]] as never;
-    map.addLayer({
-      id: 'crowd-glow',
-      type: 'circle',
-      source: SOURCE,
-      paint: { 'circle-color': '#FFD100', 'circle-radius': radius, 'circle-blur': 0.9, 'circle-opacity': strength },
-    });
-    map.addLayer({
-      id: 'crowd-core',
-      type: 'circle',
-      source: SOURCE,
-      paint: {
-        // Gold for nights with a crowd to show; hollow white for events still to come.
-        'circle-color': ['case', ['get', 'upcoming'], '#FFFFFF', '#FFD100'] as never,
-        'circle-radius': 6,
-        'circle-stroke-color': '#005A9C',
-        'circle-stroke-width': 2,
+
+    const beforeLabel = map.getStyle().layers?.find((layer) => layer.type === 'symbol')?.id;
+    map.addLayer(
+      {
+        id: 'crowd-glow',
+        type: 'circle',
+        source: SOURCE,
+        paint: {
+          'circle-color': '#FFD100',
+          'circle-radius': ['coalesce', ['feature-state', 'radius'], 12] as never,
+          'circle-radius-transition': { duration: 0, delay: 0 },
+          // A short soft edge, the same few pixels on every disc.
+          'circle-blur': ['/', 4, ['max', ['coalesce', ['feature-state', 'radius'], 12], 1]] as never,
+          'circle-stroke-width': 0,
+          'circle-opacity': WASH,
+          'circle-opacity-transition': { duration: 0, delay: 0 },
+        },
       },
-    });
+      beforeLabel,
+    );
+    map.addLayer(
+      {
+        id: 'crowd-core',
+        type: 'circle',
+        source: SOURCE,
+        paint: {
+          'circle-color': '#0F1B2D',
+          'circle-radius': 5,
+          'circle-opacity': 1,
+          'circle-opacity-transition': { duration: 280, delay: 0 },
+        },
+      },
+      beforeLabel,
+    );
 
-    map.addLayer({
-      id: 'crowd-selected',
-      type: 'circle',
-      source: SOURCE,
-      filter: ['==', ['get', 'id'], ''],
-      paint: { 'circle-color': 'rgba(0,0,0,0)', 'circle-radius': 13, 'circle-stroke-color': '#0f1b2d', 'circle-stroke-width': 3 },
-    });
+    map.addSource(CLAIM, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    map.addLayer(
+      {
+        id: CLAIM,
+        type: 'symbol',
+        source: CLAIM,
+        layout: {
+          'icon-image': ['get', 'icon'] as never,
+          'icon-anchor': 'center',
+          'icon-overlap': 'always',
+          'icon-ignore-placement': false,
+          'icon-rotation-alignment': 'viewport',
+          'icon-pitch-alignment': 'viewport',
+          'symbol-sort-key': -1_000_000,
+          'icon-padding': 1,
+        },
+      },
+      beforeLabel,
+    );
 
-    // Tapping a dot picks its event (the first one, where several share a venue; their labels pick each one).
-    const onDot = (e: { features?: { properties?: Record<string, unknown> }[]; originalEvent?: Event }) => {
-      const id = e.features?.[0]?.properties?.id;
-      if (typeof id === 'string') selectRef.current(id);
-    };
-    const onEmpty = (e: { point: { x: number; y: number } }) => {
-      const hit = map.queryRenderedFeatures([e.point.x, e.point.y] as never, { layers: ['crowd-core', 'crowd-glow'] });
-      if (hit.length === 0) selectRef.current(null);
-    };
-    map.on('click', 'crowd-core', onDot as never);
-    map.on('click', 'crowd-glow', onDot as never);
-    map.on('click', onEmpty as never);
+    const markers = new Map<string, Marker>();
+    const night = points.map((p) => p.event);
+    for (const p of points) {
+      const el = document.createElement('div');
+      el.className = 'crowd-label is-hidden';
+      el.dataset.id = p.event.id;
+      const name = `${p.biggest ? '★ ' : ''}${escapeHtml(mapTitle(p.event))}`;
+      const round = chipRound(p.event, night);
+      const series = round ? `<span class="crowd-series">${escapeHtml(round)}</span>` : '';
+      el.innerHTML =
+        `<span class="crowd-line">` +
+        `<span class="crowd-name">${name}</span>` +
+        series +
+        `<span class="crowd-meta">${escapeHtml(chipDetail(p))}</span>` +
+        `</span>`;
+      el.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        selectRef.current(p.event.id);
+      });
+      const marker = new Marker({
+        element: el,
+        anchor: 'center',
+        pitchAlignment: 'viewport',
+        rotationAlignment: 'viewport',
+        opacity: 1,
+        opacityWhenCovered: 1,
+      })
+        .setLngLat(p.location)
+        .addTo(map);
+      markers.set(p.event.id, marker);
+    }
 
-    // Frame every event, leaving room for the date header above and the sheet below.
-    const bounds = new LngLatBounds();
-    for (const p of points) bounds.extend(p.location);
-    map.fitBounds(bounds, { padding: { top: insets.top + 20, bottom: insets.bottom + 20, left: 75, right: 75 }, maxZoom: 11.5, duration: 0 });
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('class', 'crowd-stems');
+    map.getContainer().appendChild(svg);
 
-    // One chip per event. Nearby shows stay separate chips; they are not folded into one label.
-    // Line 1 is the name (★ for the biggest crowd). Line 2 is the start time and the short count.
-    // Never a full count up here. The sheet keeps the fuller wording.
-    const view = { w: map.getContainer().clientWidth, h: map.getContainer().clientHeight - insets.bottom };
-    type Box = { x0: number; y0: number; x1: number; y1: number };
-    const taken: Box[] = points.map((p) => {
-      const at = map.project(p.location);
-      return { x0: at.x - 8, y0: at.y - 8, x1: at.x + 8, y1: at.y + 8 };
-    });
-    const clash = (a: Box, b: Box) => a.x0 < b.x1 && a.x1 > b.x0 && a.y0 < b.y1 && a.y1 > b.y0;
-    const overlapArea = (a: Box, b: Box) => {
-      const x = Math.max(0, Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0));
-      const y = Math.max(0, Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0));
-      return x * y;
-    };
-
-    const markers: Marker[] = [];
+    const seenIcons = new Set<string>();
+    let frame = 0;
     let cancelled = false;
 
-    // Measure after the font is in, so a late font swap doesn't grow a chip into its neighbor.
-    const placeLabels = () => {
+    const iconFor = (w: number, h: number) => {
+      const name = `card-claim-${w}x${h}`;
+      if (seenIcons.has(name)) return name;
+      if (!map.hasImage(name)) {
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.max(1, w);
+        canvas.height = Math.max(1, h);
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return name;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        map.addImage(name, ctx.getImageData(0, 0, canvas.width, canvas.height), { pixelRatio: 1 });
+      }
+      seenIcons.add(name);
+      return name;
+    };
+
+    const applyFade = () => {
+      if (cancelled || !map.getLayer('crowd-glow')) return;
+      const id = selectedRef.current;
+      const dim = (id ? ['case', ['==', ['get', 'id'], id], 1, 0.5] : 1) as never;
+      map.setPaintProperty('crowd-glow', 'circle-opacity', (id ? ['*', WASH, dim] : WASH) as never);
+      map.setPaintProperty('crowd-core', 'circle-opacity', dim);
+    };
+
+    const place = () => {
       if (cancelled) return;
-      for (const p of points) {
-        const el = document.createElement('div');
-        el.className = 'crowd-label';
-        const name = `${p.biggest ? '★ ' : ''}${escapeHtml(mapTitle(p.event))}`;
-        const series = p.event.series ? `<span class="crowd-series">${escapeHtml(p.event.series)}</span>` : '';
-        el.innerHTML =
-          `<span class="crowd-line" data-id="${escapeHtml(p.event.id)}">` +
-          `<span class="crowd-name">${name}</span>` +
-          series +
-          `<span class="crowd-meta">${escapeHtml(chipDetail(p))}</span>` +
-          `</span>`;
-        el.addEventListener('click', (ev) => {
-          ev.stopPropagation();
-          const id = (ev.target as HTMLElement).closest<HTMLElement>('.crowd-line')?.dataset.id;
-          if (id) selectRef.current(id);
-        });
-        // The chip is only as wide as its text. Measure it so the gap check matches.
-        el.style.position = 'fixed';
-        el.style.left = '0';
-        el.style.top = '0';
-        el.style.visibility = 'hidden';
-        document.body.appendChild(el);
-        const labelW = el.offsetWidth;
-        const labelH = el.offsetHeight;
-        document.body.removeChild(el);
-        el.style.position = '';
-        el.style.left = '';
-        el.style.top = '';
-        el.style.visibility = '';
+      const zoom = map.getZoom();
+      const container = map.getContainer();
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      const view: Box = { x0: 4, y0: 4, x1: w - 4, y1: h - 4 };
+      const candidates: ChipCandidate[] = [];
+
+      for (const p of pointsRef.current) {
         const at = map.project(p.location);
-        // Clearance keeps a two-line chip off its own dot. Further steps separate neighbors.
-        const pad = Math.ceil(labelH / 2) + 4;
-        const dirs: { anchor: Anchor; dir: [number, number] }[] = [
-          { anchor: 'bottom', dir: [0, -1] },
-          { anchor: 'top', dir: [0, 1] },
-          { anchor: 'left', dir: [1, 0] },
-          { anchor: 'right', dir: [-1, 0] },
-          { anchor: 'bottom-left', dir: [1, -1] },
-          { anchor: 'bottom-right', dir: [-1, -1] },
-          { anchor: 'top-left', dir: [1, 1] },
-          { anchor: 'top-right', dir: [-1, 1] },
-        ];
-        const options = [1, 2, 3].flatMap((step) =>
-          dirs.map((spot) => {
-            const offset: [number, number] = [spot.dir[0] * pad * step, spot.dir[1] * pad * step];
-            return { anchor: spot.anchor, offset, box: boxFor(spot.anchor, offset[0], offset[1], labelW, labelH, at) };
-          }),
+        const radius = glowRadiusPx(crowdForGlow(p), zoom, p.location[1]);
+        map.setFeatureState({ source: SOURCE, id: p.event.id }, { radius });
+        const marker = markers.get(p.event.id);
+        const el = marker?.getElement();
+        if (!marker || !el) continue;
+        const selected = p.event.id === selectedRef.current;
+        candidates.push({
+          id: p.event.id,
+          x: at.x,
+          y: at.y,
+          glow: radius,
+          w: Math.max(el.offsetWidth, 1),
+          h: Math.max(el.offsetHeight, 1),
+          rank: (selected ? SELECTED_RANK : 0) + crowdRank(p),
+          selected,
+        });
+      }
+
+      const placed = placeChips(candidates, chromeBoxes(map), view);
+      const byId = new Map(placed.map((chip) => [chip.id, chip]));
+      const atById = new Map(candidates.map((c) => [c.id, c]));
+
+      for (const p of pointsRef.current) {
+        const marker = markers.get(p.event.id);
+        const chip = byId.get(p.event.id);
+        const el = marker?.getElement();
+        if (!marker || !el) continue;
+        const at = atById.get(p.event.id);
+        const chosen = p.event.id === selectedRef.current;
+        el.classList.toggle('selected', chosen && !!chip);
+        el.classList.toggle('is-dim', !!selectedRef.current && !chosen && !!chip);
+        el.classList.toggle('is-hidden', !chip);
+        if (!chip || !at) continue;
+        const cx = (chip.box.x0 + chip.box.x1) / 2;
+        const cy = (chip.box.y0 + chip.box.y1) / 2;
+        marker.setOffset([Math.round(cx - at.x), Math.round(cy - at.y)]);
+      }
+
+      drawStems(svg, placed, w, h);
+      const features: { type: 'Feature'; geometry: { type: 'Point'; coordinates: [number, number] }; properties: { icon: string } }[] = [];
+      for (const c of candidates) {
+        const diameter = Math.max(1, Math.round(c.glow * 2));
+        const point = pointsRef.current.find((p) => p.event.id === c.id);
+        if (!point) continue;
+        features.push({
+          type: 'Feature',
+          geometry: { type: 'Point', coordinates: point.location },
+          properties: { icon: iconFor(diameter, diameter) },
+        });
+      }
+      for (const chip of placed) {
+        const width = Math.max(1, Math.round(chip.box.x1 - chip.box.x0));
+        const height = Math.max(1, Math.round(chip.box.y1 - chip.box.y0));
+        const center = map.unproject([(chip.box.x0 + chip.box.x1) / 2, (chip.box.y0 + chip.box.y1) / 2]);
+        features.push({
+          type: 'Feature',
+          geometry: { type: 'Point', coordinates: [center.lng, center.lat] },
+          properties: { icon: iconFor(width, height) },
+        });
+      }
+      const claim = map.getSource(CLAIM) as { setData: (data: unknown) => void } | undefined;
+      claim?.setData({ type: 'FeatureCollection', features });
+    };
+
+    const updateGlow = () => {
+      if (cancelled || !map.getSource(SOURCE)) return;
+      const zoom = map.getZoom();
+      for (const p of pointsRef.current) {
+        map.setFeatureState(
+          { source: SOURCE, id: p.event.id },
+          { radius: glowRadiusPx(crowdForGlow(p), zoom, p.location[1]) },
         );
-        const onScreen = (box: Box) => box.x0 >= 4 && box.x1 <= view.w - 4 && box.y0 >= insets.top && box.y1 <= view.h;
-        const breathe = (box: Box): Box => ({ x0: box.x0 - 4, y0: box.y0 - 4, x1: box.x1 + 4, y1: box.y1 + 4 });
-        const crowded = (box: Box) => taken.some((t) => clash(breathe(box), breathe(t)));
-        const pick =
-          options.find((o) => onScreen(o.box) && !crowded(o.box)) ??
-          options.slice().sort((a, b) => {
-            const cost = (box: Box) => taken.reduce((sum, t) => sum + overlapArea(box, t), 0) + (onScreen(box) ? 0 : 100000);
-            return cost(a.box) - cost(b.box);
-          })[0];
-        taken.push(pick.box);
-        markers.push(new Marker({ element: el, anchor: pick.anchor, offset: [...pick.offset] }).setLngLat(p.location).addTo(map));
       }
     };
 
-    if (document.fonts.status === 'loaded') placeLabels();
-    else void document.fonts.ready.then(placeLabels);
+    const schedule = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(place);
+    };
+
+    refreshRef.current = () => {
+      applyFade();
+      schedule();
+    };
+
+    if (document.fonts.status === 'loaded') schedule();
+    else void document.fonts.ready.then(schedule);
+
+    const onClick = (e: { point: { x: number; y: number }; originalEvent: Event }) => {
+      const target = e.originalEvent.target;
+      if (target instanceof Element && target.closest('.crowd-label, .maplibregl-ctrl')) return;
+      const dots = dotsInOrder(map, pointsRef.current, selectedRef.current);
+      const hit = nearestDot(dots, e.point.x, e.point.y);
+      selectRef.current(hit ? hit.id : null);
+    };
+    const onHover = (e: { point: { x: number; y: number } }) => {
+      const dots = dotsInOrder(map, pointsRef.current, selectedRef.current);
+      const hit = nearestDot(dots, e.point.x, e.point.y);
+      map.getCanvas().style.cursor = hit ? 'pointer' : '';
+    };
+    map.on('click', onClick as never);
+    map.on('mousemove', onHover as never);
+    map.on('move', updateGlow);
+    map.on('moveend', schedule);
+    map.on('resize', schedule);
+
+    const screen = map.getContainer().closest('.map-screen');
+    const sheet = screen?.querySelector('.sheet');
+    const header = screen?.querySelector('.map-header');
+    const observer = new MutationObserver(schedule);
+    const sizes = new ResizeObserver(schedule);
+    if (sheet) {
+      observer.observe(sheet, { attributes: true, attributeFilter: ['style', 'class'] });
+      sizes.observe(sheet);
+    }
+    if (header) sizes.observe(header);
+    sizes.observe(map.getContainer());
+
+    applyFade();
 
     return () => {
       cancelled = true;
-      for (const m of markers) m.remove();
-      map.off('click', 'crowd-core', onDot as never);
-      map.off('click', 'crowd-glow', onDot as never);
-      map.off('click', onEmpty as never);
-      if (map.getLayer('crowd-selected')) map.removeLayer('crowd-selected');
+      cancelAnimationFrame(frame);
+      refreshRef.current = () => {};
+      observer.disconnect();
+      sizes.disconnect();
+      svg.remove();
+      for (const marker of markers.values()) marker.remove();
+      map.off('click', onClick as never);
+      map.off('mousemove', onHover as never);
+      map.off('move', updateGlow);
+      map.off('moveend', schedule);
+      map.off('resize', schedule);
+      map.getCanvas().style.cursor = '';
+      if (map.getLayer(CLAIM)) map.removeLayer(CLAIM);
       if (map.getLayer('crowd-core')) map.removeLayer('crowd-core');
       if (map.getLayer('crowd-glow')) map.removeLayer('crowd-glow');
+      if (map.getSource(CLAIM)) map.removeSource(CLAIM);
       if (map.getSource(SOURCE)) map.removeSource(SOURCE);
     };
-  }, [map, points, insets.top, insets.bottom]);
+  }, [map, points]);
 
-  // Selection is one thing: the ring on the dot and the highlight on its label follow the same id.
   useEffect(() => {
-    if (!map || points.length === 0) return;
-    if (map.getLayer('crowd-selected')) map.setFilter('crowd-selected', ['==', ['get', 'id'], selectedId ?? '']);
-    for (const line of map.getContainer().querySelectorAll<HTMLElement>('.crowd-line')) {
-      line.classList.toggle('selected', line.dataset.id === selectedId);
-    }
-  }, [map, points, selectedId]);
+    refreshRef.current();
+  }, [selectedId]);
 
   return null;
 }
 
-/** Line 2 of a map chip: "1:08 pm · 40.0k". A different day is named first. */
+function crowdRank(p: CrowdPoint): number {
+  if (p.count !== undefined) return p.count;
+  if (p.soldOut && p.capacity) return p.capacity;
+  return 0;
+}
+
+function dotsInOrder(map: MapLibreMap, points: CrowdPoint[], selectedId: string | null): DotHit[] {
+  return [...points]
+    .sort((a, b) => {
+      const rank = (p: CrowdPoint) => (p.event.id === selectedId ? SELECTED_RANK : 0) + crowdRank(p);
+      return rank(b) - rank(a) || a.event.id.localeCompare(b.event.id);
+    })
+    .map((p) => {
+      const at = map.project(p.location);
+      return { id: p.event.id, x: at.x, y: at.y };
+    });
+}
+
+/** Header, When, the mode switch, the ?, the map credit, and the sheet. */
+function chromeBoxes(map: MapLibreMap): Box[] {
+  const screen = map.getContainer().closest('.map-screen');
+  if (!screen) return [];
+  const mapRect = map.getContainer().getBoundingClientRect();
+  const w = map.getContainer().clientWidth;
+  const h = map.getContainer().clientHeight;
+  const selectors = [
+    '.map-header',
+    '.map-chrome-left',
+    '.map-chrome .segmented',
+    '.legend-button',
+    '.legend-card',
+    '.maplibregl-ctrl-bottom-right',
+    '.when-menu',
+    '.area-menu',
+  ];
+  const boxes: Box[] = [];
+  for (const sel of selectors) {
+    const el = screen.querySelector(sel);
+    if (!el) continue;
+    const r = el.getBoundingClientRect();
+    const box = clipBox(
+      { x0: r.left - mapRect.left - 6, y0: r.top - mapRect.top - 6, x1: r.right - mapRect.left + 6, y1: r.bottom - mapRect.top + 6 },
+      w,
+      h,
+    );
+    if (box) boxes.push(box);
+  }
+  const sheet = sheetObstacle(screen, mapRect, w, h);
+  if (sheet) boxes.push(sheet);
+  return boxes;
+}
+
+/** The sheet's resting position, including a drag that has not snapped yet. */
+function sheetObstacle(screen: Element, mapRect: DOMRect, w: number, h: number): Box | null {
+  const sheet = screen.querySelector<HTMLElement>('.sheet');
+  if (!sheet) return null;
+  const parent = sheet.offsetParent instanceof HTMLElement ? sheet.offsetParent : null;
+  const parentTop = parent ? parent.getBoundingClientRect().top : mapRect.top;
+  const match = /translateY\(([-\d.]+)px\)/.exec(sheet.style.transform);
+  const shift = match ? Number(match[1]) : 0;
+  const top = parentTop + sheet.offsetTop + shift - mapRect.top;
+  return clipBox({ x0: -6, y0: top - 6, x1: w + 6, y1: top + sheet.offsetHeight + 6 }, w, h);
+}
+
+function clipBox(box: Box, w: number, h: number): Box | null {
+  const x0 = Math.max(0, box.x0);
+  const y0 = Math.max(0, box.y0);
+  const x1 = Math.min(w, box.x1);
+  const y1 = Math.min(h, box.y1);
+  if (x1 - x0 < 2 || y1 - y0 < 2) return null;
+  return { x0, y0, x1, y1 };
+}
+
+function drawStems(svg: SVGSVGElement, placed: PlacedChip[], w: number, h: number) {
+  svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+  svg.replaceChildren();
+  for (const chip of placed) {
+    if (!chip.stem) continue;
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', String(chip.stem.x1));
+    line.setAttribute('y1', String(chip.stem.y1));
+    line.setAttribute('x2', String(chip.stem.x2));
+    line.setAttribute('y2', String(chip.stem.y2));
+    line.setAttribute('stroke', 'rgba(15, 27, 45, 0.35)');
+    line.setAttribute('stroke-width', '1');
+    line.setAttribute('stroke-linecap', 'butt');
+    svg.appendChild(line);
+  }
+}
+
+/** Line 2 of a map card: "1:08 pm · 40.0k". A different day is named first. */
 function chipDetail(p: CrowdPoint): string {
   const time = p.event.start ? clockTime(p.event.start) : 'Time n/a';
   const crowd = crowdShort(p.event, p.capacity, false);
   return p.dayTag ? `${p.dayTag} · ${time} · ${crowd}` : `${time} · ${crowd}`;
-}
-
-type Anchor = 'bottom' | 'top' | 'left' | 'right' | 'bottom-left' | 'bottom-right' | 'top-left' | 'top-right';
-
-/** Where a chip sits once MapLibre pins that corner or edge to the dot. */
-function boxFor(anchor: Anchor, ox: number, oy: number, w: number, h: number, at: { x: number; y: number }) {
-  const x = at.x + ox;
-  const y = at.y + oy;
-  switch (anchor) {
-    case 'bottom':
-      return { x0: x - w / 2, y0: y - h, x1: x + w / 2, y1: y };
-    case 'top':
-      return { x0: x - w / 2, y0: y, x1: x + w / 2, y1: y + h };
-    case 'left':
-      return { x0: x, y0: y - h / 2, x1: x + w, y1: y + h / 2 };
-    case 'right':
-      return { x0: x - w, y0: y - h / 2, x1: x, y1: y + h / 2 };
-    case 'bottom-left':
-      return { x0: x, y0: y - h, x1: x + w, y1: y };
-    case 'bottom-right':
-      return { x0: x - w, y0: y - h, x1: x, y1: y };
-    case 'top-left':
-      return { x0: x, y0: y, x1: x + w, y1: y + h };
-    case 'top-right':
-      return { x0: x - w, y0: y, x1: x, y1: y + h };
-  }
 }
 
 function escapeHtml(text: string) {

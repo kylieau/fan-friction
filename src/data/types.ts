@@ -104,6 +104,17 @@ export interface Assessment {
   status: 'draft' | 'confirmed';
 }
 
+/**
+ * A playoff round. Regular season leaves this off: no stakes word.
+ * The map chip shows `round` only ("NLDS"). The sheet and the event page
+ * add `game` when a feed has one ("NLDS · Game 2").
+ */
+export interface Stakes {
+  round: string;
+  /** Series game number. Not a doubleheader index, and not an ESPN type code. */
+  game?: number;
+}
+
 export interface CrowdEvent {
   id: string;
   metroId: string;
@@ -112,11 +123,8 @@ export interface CrowdEvent {
   start: LocalTime | null;
   kind: EventKind;
   title: string;
-  /**
-   * A short series line under the matchup on the map chip only, such as "NLDS G1".
-   * The sheet keeps it in the title: "Dodgers vs Braves (NLDS G1)".
-   */
-  series?: string;
+  /** Playoff round, when there is one. Concerts and the regular season leave it off. */
+  stakes?: Stakes;
   place: Place;
   audience: Audience;
   /** For games. Ids point at Team records. */

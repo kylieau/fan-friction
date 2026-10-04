@@ -3,22 +3,21 @@ import type { CrowdEvent } from '../data';
 
 export interface EventChip {
   text: string;
-  /** "friction" is the verdict chip; "why" stands in when the verdict is hidden (Low). */
-  kind: 'friction' | 'why';
+  /** Friction is Dodger blue. A mark is the green occasion or Sold Out pill. */
+  kind: 'friction' | 'mark';
 }
 
 /**
- * The one chip an event row wears. Friction shows from Moderate up. Where it's
- * hidden (Low), the row says what makes the event notable instead: sold out,
- * then its occasion (Marquee, Major, Notable), then its first fact chip.
- * Events with nothing to say get no chip. Only facts known beforehand count,
- * except "sold out", which is itself a pre-event fact about demand.
+ * Sheet badges. Friction shows from Moderate up. A green mark is Sold Out,
+ * or otherwise Marquee, Major, or Notable. Fact chips stay off the sheet.
+ * When both apply, friction comes first. Low friction is stored but not shown.
+ * Sold out is a pre-event fact about demand, so it can show.
  */
-export function eventChip(event: CrowdEvent): EventChip | null {
+export function sheetBadges(event: CrowdEvent): EventChip[] {
+  const badges: EventChip[] = [];
   const a = event.assessment;
-  if (a && showFriction(a.friction)) return { text: frictionLabel(a.friction), kind: 'friction' };
-  if (event.crowd.some((c) => c.soldOut)) return { text: 'Sold out', kind: 'why' };
-  if (a && a.occasion !== 'Routine') return { text: a.occasion, kind: 'why' };
-  if (a?.facts[0]) return { text: a.facts[0], kind: 'why' };
-  return null;
+  if (a && showFriction(a.friction)) badges.push({ text: frictionLabel(a.friction), kind: 'friction' });
+  if (event.crowd.some((c) => c.soldOut)) badges.push({ text: 'Sold Out', kind: 'mark' });
+  else if (a && a.occasion !== 'Routine') badges.push({ text: a.occasion, kind: 'mark' });
+  return badges;
 }

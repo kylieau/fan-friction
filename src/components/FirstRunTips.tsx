@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 // The skippable three-tip guide shown the first time the app opens.
-// Tip 1's wording is from the mockup; tip 2 was redrafted for the Night + friction
+// Tip 1 matches the light gold wash: a wider circle is a bigger crowd. Tip 2 was redrafted for the Night + friction
 // model and needs her OK. The old tip 3 ("Any night. Your nights too.") is on hold: it named
 // Nights and "I was there", which aren't on the map. A tip only goes in once the control it
 // points at is on the screen it shows over.
 const TIPS = [
   {
     title: 'Gold glow = where the crowds went.',
-    body: 'The brighter the spot, the more people were there. Tap the brightest one to see what it was up against.',
+    body: 'A wider circle means a bigger crowd. The gold is a light wash. Tap a mark to see what it was up against.',
   },
   {
     title: 'Friction = what it was up against.',

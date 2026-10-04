@@ -12,8 +12,8 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 - **Kind of app:** a phone-sized web app now, built so it can be installed or wrapped as a native app later.
 - **Data:** hand-seeded to start, but built so live schedules and results can plug in quickly. MLB goes first, only because it's October baseball and its free feed is the easiest. Other sports (NFL, NBA, NHL, WNBA, MLS, college) and concerts follow right behind it. Upcoming concerts and shows start with Ticketmaster; SeatGeek or other sources get added later.
 - **Ratings:** hardcoded for the seeded nights first, then the real formula, checked against the 13-night table.
-- **People:** just Kylie to start. Her log is saved in Supabase (which she already uses), not only on her phone, because iPhone Safari can erase a website's saved data. Also an "Export my nights" backup. Simple accounts come right after the baseline build, also on Supabase.
-- **Screens in the first slice:** Map (Crowds) with the Event screen, Nights, You (Plans and Your nights), and Traffic. Compare comes in the second slice.
+- **People:** just Kylie to start. Her log is still on this phone, with an "Export my nights" backup, because iPhone Safari can erase a website's saved data. Supabase is the planned store (Kylie, Oct 4, 2026): catalog events first, then You, and only after she pastes a project URL and anon key. It does not block Traffic. She does not need to open Supabase right now. 🚩 Free plan: 2 active projects, and a project pauses when idle. Simple accounts come right after the baseline build, also on Supabase.
+- **Screens in the first slice:** Map (Crowds) with the Event screen, Nights, You (attended nights only), and Traffic. Compare comes in the second slice.
 - **World Series games get a SOLD OUT tag** like any other sold-out event. Nothing special or bigger about it.
 - **Event types:** Game, Show, Festival, Live Broadcast (watch parties at places like Cosm), and Special event. "Live Broadcast" is Kylie's name for the Cosm-style category.
 - **How far back logging goes:** 10 years (to about 2016). Kylie's own concert log has a few older shows (2013 to 2015). Keep those as rough-dated entries with no rating, and ask Kylie if she wants them kept.
@@ -23,16 +23,16 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 2. **Map, Crowds mode.** A heat map of where crowds went for the chosen night (default: today). Gold glow and dot size show where the most people were. Each event shows its friction verdict in words (for example "Extreme friction"); see the rating model in `product-decisions.md`. A ★ marks the biggest crowd in the city that night. A "SOLD OUT" tag marks a full venue. The night has an overall difficulty score with a label, never a bare number.
 3. **Crowds | Traffic toggle.** Traffic mode shades the corridors near overlapping events and events letting out together, in blues (gold only ever means crowds). It is always labeled "Estimate · not live." No live data and no red "jam" color. Includes "Drag to your leave time."
 4. **Event screen.** Tap any event to see:
-   - its rating and what else was on nearby that night ("Here's what beat it")
+   - its rating and what else was on nearby that night ("Local competition")
    - a short "The game" or "The show" block (the result for sports; pitchers, giveaways and notable moments)
-   - an "I was there" button
+   - one action by tense: an upcoming night says **Save this night** (a plan only; it does not add a Your nights row); a past night says **I was there**, and after that the page says **You were there**
    - a shareable card at the very end of the screen
    - one gold primary button per screen, with a plain verb
 5. **Nights tab.** A search box and a calendar shaded by each day's night rating, with each day's number and a legend. Below it, a "Famous nights" list with rating badges. Tapping a day opens that night.
-6. **You tab.** Two parts, with the order switchable in settings (Plans first by default):
-   - **Plans ("Up next"):** your next planned night, the other events that night, its rating and an estimated traffic line.
-   - **Your nights:** a log with team + sport filters. Each row shows the date, event, rating (when there is one), plain facts and an optional one-line result. Plain stats (counts by team and sport, venues) are welcome. No loaded labels, and no "brutal nights" stat.
-   - Logging: search and add, "I was there" on the event screen, and a live check-in. Ticket import comes later.
+6. **You tab.** Attended nights only (Kylie, Oct 4, 2026). No Up next list and no Plans-first order toggle.
+   - **Your nights:** nights marked **I was there**. **Save this night** on an upcoming event stores a plan in the backup only. It does not add a row here.
+   - A log with team + sport filters. Each row shows the date, event, rating (when there is one), plain facts and an optional one-line result. Plain stats (counts by team and sport, venues) are welcome. No loaded labels, and no "brutal nights" stat.
+   - Logging: **I was there** on a past event. Search and add, a live check-in, and ticket import come later.
    - Logging rules: events below 5k can be logged (no rating, no dot). Rough dates are allowed alongside real ones. A festival is one entry with the sets inside. A partial night is a personal note. Away games are logged now, with context later. Old venue names match current ones (Staples Center = Crypto.com Arena, Banc of California Stadium = BMO Stadium).
    - Personal notes stay private and show only in Your nights.
 7. **"Who you've seen."** Headliners and pro-game participants count automatically. Openers, festival sets and multi-game events are opt-in. "Cameo" (surprise guests, one-song sets) is a secondary tier, and its default rules are still to be defined. Built in but not the main event of the app.
@@ -41,10 +41,12 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 10. **Room for later.** Every item on the map is a general "crowd event" (ticketed, non-ticketed like a parade, or a soft clash), with a place (point or route), a time window, an audience tag, and a size labeled by kind. Map layers are separate (events, traffic cues, TV labels, later parades). Teams and metros are their own records. A personal layer attaches to any event. The rating has open slots for new factors. Accounts and friends slot in without reshaping any of this.
 
 ## Look and feel (from v4)
-- Light theme. Background `#F7F8FA`, white cards, ink `#0F1B2D`, secondary text `#4A5568`.
+- Light theme. App shell `#DAEBFE` (page ground, status bar, tab bar, map header, and sheet — the same pale blue as the map chrome). White stays on cards and event rows. The map itself stays the basemap. Ink `#0F1B2D`, secondary text `#4A5568`.
 - Dodger blue `#005A9C` for scores and selected states. UCLA blue `#2774AE` as secondary. UCLA gold `#FFD100` for the primary button and the hottest heat; never gold text on white. No orange.
 - Fonts: Big Shoulders Display for scores, Manrope for body text.
 - Product rules: don't make the user think, always label scores, curiosity-gap copy, and end the event screen on a shareable card.
+- **Matchup tags (Oct 4, 2026):** the college tag sits after the first name: USC (FB) vs Washington, UCLA (FB), and the same slot for (MBB) and (WBB). CFB stays a sport-type / By type label only. It never trails a matchup and it is not the tag in that slot. Sheet titles use (FB).
+- **Sheet badges (Oct 4, 2026):** friction from Moderate up is Dodger blue `#005A9C` fill, white type, full strength. On a sheet row, that blue is the friction badge only. Marquee, Major, Notable, and Sold Out are green: fill `#ECF3EC`, type and a 1px stroke `#216E1F`, full strength. When both show, Dodger comes first, then green. Gold is the crowd glow and the gold button, not a badge.
 
 ## Net effect
 One app where a fan can pull up any night, see what else was on and how much friction each event faced, and share it as a card. A local can check Today and the roads. Kylie can log her own nights. Real MLB games flow in alongside the hand-seeded history.
