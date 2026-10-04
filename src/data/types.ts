@@ -107,7 +107,8 @@ export interface Assessment {
 /**
  * A playoff round. Regular season leaves this off: no stakes word.
  * The sheet and the event page show `round`, then `game` when a feed has one
- * ("NLDS · Game 2"). The map chip is the name, the time, and the crowd.
+ * ("NLDS · Game 2"). A postseason map chip adds both, in parentheses:
+ * "Dodgers (NLDS G2)". Regular season and friendlies leave this off the chip.
  */
 export interface Stakes {
   round: string;

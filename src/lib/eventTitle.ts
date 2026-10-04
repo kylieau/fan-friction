@@ -76,17 +76,80 @@ function sharesHeadliner(event: CrowdEvent, name: string, night: readonly CrowdE
   );
 }
 
+/** Home club as people say it: Dodgers, Ducks, Galaxy. Not the visitor, not ATL @ LAD. */
+function spokenHome(event: CrowdEvent): string | null {
+  if (event.audience.domain !== 'sports') return null;
+  if (event.kind === 'show' || event.kind === 'festival') return null;
+  const id = event.teams?.home;
+  if (id && TEAMS[id]) return TEAMS[id].shortName;
+  const bare = event.title.replace(new RegExp(`\\s+\\((${SQUAD_TAG})\\)`, 'g'), '');
+  const first = bare.split(/\s+vs\.?\s+/i)[0]?.trim();
+  return first || null;
+}
+
+function spokenAway(event: CrowdEvent): string | null {
+  const id = event.teams?.away;
+  if (id && TEAMS[id]) return TEAMS[id].shortName;
+  return null;
+}
+
 /**
- * Map chip line 1. A concert is the headliner. The venue is added only when
- * two chips that night would otherwise match. A long headliner ellipsizes in
- * the fixed chip (see .crowd-name). The round stays on the sheet.
+ * Postseason chip. Parentheses are the locked punctuation (Oct 4, 2026):
+ * "Dodgers (NLDS G2)". Change this function to swap the delimiter.
+ * Regular season and friendlies have no stakes, so they stay the home name.
+ */
+function postseasonChip(home: string, event: CrowdEvent): string {
+  const round = event.stakes?.round;
+  if (!round) return home;
+  const game = event.stakes?.game;
+  const series = game && game > 0 ? `${round} G${game}` : round;
+  return `${home} (${series})`;
+}
+
+/** Squad tag and visitor only when two chips that night would otherwise match. */
+function sportsChip(event: CrowdEvent, squad: boolean, visitor: boolean): string | null {
+  const home = spokenHome(event);
+  if (!home) return null;
+  let name = home;
+  if (squad) {
+    const tag = collegeAbbrev(event);
+    if (tag) name = `${name} (${tag})`;
+  }
+  if (visitor) {
+    const away = spokenAway(event);
+    if (away) name = `${name} · ${away}`;
+  }
+  return postseasonChip(name, event);
+}
+
+function sportsCollide(event: CrowdEvent, night: readonly CrowdEvent[], squad: boolean, visitor: boolean): boolean {
+  const mine = sportsChip(event, squad, visitor);
+  if (!mine) return false;
+  return night.some(
+    (other) =>
+      other.id !== event.id && other.date === event.date && sportsChip(other, squad, visitor) === mine,
+  );
+}
+
+/**
+ * Map chip line 1. A concert is the headliner. A game is the home short name.
+ * Postseason adds the round and game number in parentheses. The venue, a squad
+ * tag, or the visitor is added only when two chips that night would otherwise
+ * match. The sheet and the event page keep the full title.
  */
 export function mapTitle(event: CrowdEvent, night: readonly CrowdEvent[] = []): string {
   const name = headliner(event);
-  if (!name) return withSquadTag(event.title, collegeAbbrev(event));
-  if (!sharesHeadliner(event, name, night)) return name;
-  const venue = venueLabel(event);
-  return venue ? `${name} · ${venue}` : name;
+  if (name) {
+    if (!sharesHeadliner(event, name, night)) return name;
+    const venue = venueLabel(event);
+    return venue ? `${name} · ${venue}` : name;
+  }
+  if (spokenHome(event)) {
+    if (!sportsCollide(event, night, false, false)) return sportsChip(event, false, false)!;
+    if (!sportsCollide(event, night, true, false)) return sportsChip(event, true, false)!;
+    return sportsChip(event, true, true)!;
+  }
+  return withSquadTag(event.title, collegeAbbrev(event));
 }
 
 /** Full official title on the sheet, the event page, and the log. The round is a separate line. */
