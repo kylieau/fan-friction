@@ -5,6 +5,7 @@ import { clockTime } from '../lib/dates';
 import { mapTitle } from '../lib/eventTitle';
 import { crowdShort, type CrowdPoint } from './crowdPoints';
 import { glowRadiusPx } from './glowRadius';
+import { stippleDots, stippleNeedsCull, stippleSpacing } from './stipple';
 import {
   nearestDot,
   placeChips,
@@ -22,19 +23,9 @@ function crowdForGlow(p: CrowdPoint): number | undefined {
 }
 
 const SOURCE = 'crowds';
+const STIPPLE = 'crowd-stipple';
 const CLAIM = 'crowd-card-claim';
 const SELECTED_RANK = 1e15;
-
-// Same strength as before: upcoming nights stay faint, a known crowd glows
-// in proportion to how full the room was, and an unknown crowd stays pale.
-const strength = [
-  'case',
-  ['get', 'upcoming'],
-  0.12,
-  ['<', ['get', 'fill'], 0],
-  0.22,
-  ['+', 0.3, ['*', 0.5, ['get', 'fill']]],
-] as never;
 
 interface Props {
   points: CrowdPoint[];
@@ -45,7 +36,7 @@ interface Props {
 }
 
 /**
- * Gold circle per event (the crowd) with a dark dot at the venue, plus one
+ * Gold stipple per event (the crowd) with a dark dot at the venue, plus one
  * white card offset off that circle. Cards that would cover another card, the
  * gold, or the controls are dropped. The mark stays, and tapping it brings
  * the card back.
@@ -83,20 +74,21 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
     });
 
     const beforeLabel = map.getStyle().layers?.find((layer) => layer.type === 'symbol')?.id;
+    map.addSource(STIPPLE, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
     map.addLayer(
       {
-        id: 'crowd-glow',
+        id: STIPPLE,
         type: 'circle',
-        source: SOURCE,
+        source: STIPPLE,
         paint: {
           'circle-color': '#FFD100',
-          'circle-radius': ['coalesce', ['feature-state', 'radius'], 12] as never,
+          // 2px diameter on every mark. Fullness never changes this.
+          'circle-radius': 1,
           'circle-radius-transition': { duration: 0, delay: 0 },
-          // A short soft edge, the same few pixels on every disc. Blur in
-          // this map is a share of the radius, so divide to keep it flat.
-          'circle-blur': ['/', 4, ['max', ['coalesce', ['feature-state', 'radius'], 12], 1]] as never,
-          'circle-opacity': strength,
-          'circle-opacity-transition': { duration: 280, delay: 0 },
+          'circle-blur': 0,
+          'circle-stroke-width': 0,
+          'circle-opacity': ['get', 'fade'] as never,
+          'circle-opacity-transition': { duration: 0, delay: 0 },
         },
       },
       beforeLabel,
@@ -191,15 +183,16 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
     };
 
     const applyFade = () => {
-      if (cancelled || !map.getLayer('crowd-glow')) return;
+      if (cancelled || !map.getLayer(STIPPLE)) return;
       const id = selectedRef.current;
-      const fade = (id ? ['case', ['==', ['get', 'id'], id], 1, 0.5] : 1) as never;
-      map.setPaintProperty('crowd-glow', 'circle-opacity', (id ? ['*', strength, fade] : strength) as never);
-      map.setPaintProperty('crowd-core', 'circle-opacity', fade);
+      const dim = (id ? ['case', ['==', ['get', 'id'], id], 1, 0.5] : 1) as never;
+      map.setPaintProperty(STIPPLE, 'circle-opacity', ['*', ['get', 'fade'], dim] as never);
+      map.setPaintProperty('crowd-core', 'circle-opacity', dim);
     };
 
     const place = () => {
       if (cancelled) return;
+      if (Number.isNaN(stippleZoom) || stippleCulled || Math.abs(map.getZoom() - stippleZoom) > 1e-9) syncStipple();
       const zoom = map.getZoom();
       const container = map.getContainer();
       const w = container.clientWidth;
@@ -210,7 +203,6 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       for (const p of pointsRef.current) {
         const at = map.project(p.location);
         const radius = glowRadiusPx(crowdForGlow(p), zoom, p.location[1]);
-        map.setFeatureState({ source: SOURCE, id: p.event.id }, { radius });
         const marker = markers.get(p.event.id);
         const el = marker?.getElement();
         if (!marker || !el) continue;
@@ -273,15 +265,60 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       claim?.setData({ type: 'FeatureCollection', features });
     };
 
-    const updateGlow = () => {
-      if (cancelled || !map.getSource(SOURCE)) return;
+    let stippleZoom = Number.NaN;
+    let stippleCulled = false;
+
+    // Rebuild the grid when the zoom changes. A pan leaves the coordinates
+    // alone, so the dots stay locked to each venue and do not shimmer.
+    const syncStipple = () => {
+      if (cancelled || !map.getSource(STIPPLE)) return;
       const zoom = map.getZoom();
+      const w = map.getContainer().clientWidth;
+      const h = map.getContainer().clientHeight;
+      const features: {
+        type: 'Feature';
+        geometry: { type: 'Point'; coordinates: [number, number] };
+        properties: { id: string; fade: number };
+      }[] = [];
+      let culled = false;
       for (const p of pointsRef.current) {
-        map.setFeatureState(
-          { source: SOURCE, id: p.event.id },
-          { radius: glowRadiusPx(crowdForGlow(p), zoom, p.location[1]) },
+        const radius = glowRadiusPx(crowdForGlow(p), zoom, p.location[1]);
+        const spacing = stippleSpacing(p.fill, p.soldOut);
+        const origin = map.project(p.location);
+        const needsCull = stippleNeedsCull(radius, spacing);
+        if (needsCull) culled = true;
+        const dots = stippleDots(
+          radius,
+          spacing,
+          needsCull
+            ? {
+                minX: -32 - origin.x,
+                minY: -32 - origin.y,
+                maxX: w + 32 - origin.x,
+                maxY: h + 32 - origin.y,
+              }
+            : undefined,
         );
+        for (const dot of dots) {
+          const fade = Math.round(dot.fade * 1000) / 1000;
+          if (fade <= 0) continue;
+          const at = map.unproject([origin.x + dot.x, origin.y + dot.y]);
+          features.push({
+            type: 'Feature',
+            geometry: { type: 'Point', coordinates: [at.lng, at.lat] },
+            properties: { id: p.event.id, fade },
+          });
+        }
       }
+      const stipple = map.getSource(STIPPLE) as { setData: (data: unknown) => void } | undefined;
+      stipple?.setData({ type: 'FeatureCollection', features });
+      stippleZoom = zoom;
+      stippleCulled = culled;
+    };
+
+    const onMove = () => {
+      const zoom = map.getZoom();
+      if (stippleCulled || Math.abs(zoom - stippleZoom) > 1e-9) syncStipple();
     };
 
     const schedule = () => {
@@ -311,7 +348,7 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
     };
     map.on('click', onClick as never);
     map.on('mousemove', onHover as never);
-    map.on('move', updateGlow);
+    map.on('move', onMove);
     map.on('moveend', schedule);
     map.on('resize', schedule);
 
@@ -339,14 +376,15 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       for (const marker of markers.values()) marker.remove();
       map.off('click', onClick as never);
       map.off('mousemove', onHover as never);
-      map.off('move', updateGlow);
+      map.off('move', onMove);
       map.off('moveend', schedule);
       map.off('resize', schedule);
       map.getCanvas().style.cursor = '';
       if (map.getLayer(CLAIM)) map.removeLayer(CLAIM);
       if (map.getLayer('crowd-core')) map.removeLayer('crowd-core');
-      if (map.getLayer('crowd-glow')) map.removeLayer('crowd-glow');
+      if (map.getLayer(STIPPLE)) map.removeLayer(STIPPLE);
       if (map.getSource(CLAIM)) map.removeSource(CLAIM);
+      if (map.getSource(STIPPLE)) map.removeSource(STIPPLE);
       if (map.getSource(SOURCE)) map.removeSource(SOURCE);
     };
   }, [map, points]);
