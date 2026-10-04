@@ -134,7 +134,7 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       const el = document.createElement('div');
       el.className = 'crowd-label is-hidden';
       el.dataset.id = p.event.id;
-      const name = `${p.biggest ? '★ ' : ''}${escapeHtml(mapTitle(p.event))}`;
+      const name = `${p.biggest ? '★ ' : ''}${escapeHtml(mapTitle(p.event, night))}`;
       const round = chipRound(p.event, night);
       const series = round ? `<span class="crowd-series">${escapeHtml(round)}</span>` : '';
       el.innerHTML =

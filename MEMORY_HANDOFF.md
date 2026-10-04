@@ -11,7 +11,7 @@ _Last synced: Oct 4, 2026._
 - **Not built:** Step 6 Traffic, Step 7 leftovers, Step 8, and Supabase. Night story builds with the Step 7 leftovers, after Traffic, not sooner (placement in `BACKLOG.md`). **Nights tab is per city/area** is parked later, not Step 6. Kylie, 2026-10-04. Do not build now.
 
 ## Changes made
-Sun Oct 4, 2026 LA seed: eight verified events, three of them flagged `belowFloor` so they do not pin. Draft hand rating 7.4. Metro feels-like chip 97°F (draft). New venues: Honda Center, The Belasco, The Wiltern, Zipper Concert Hall. New teams: Ducks, Panthers, Cruz Azul.
+Sun Oct 4, 2026 LA seed: eight verified events, three of them flagged `belowFloor` so they do not pin. Draft hand rating 7.4. Metro feels-like chip 97°F (draft). New venues: Honda Center, The Belasco, The Wiltern, Zipper Concert Hall. New teams: Ducks, Panthers, Cruz Azul. Concert map chips show the headliner only (Slayer, Playboi Carti). The sheet and the event page keep the full title.
 
 ## Key decisions still in force
 - Kylie’s instructions beat mockups, docs, and other models. Don’t delete what’s built; rehome it. The name is Fan/Friction. Flag any new cost with 🚩.
@@ -23,6 +23,7 @@ Sun Oct 4, 2026 LA seed: eight verified events, three of them flagged `belowFloo
 - A college matchup tag is `(FB)`, not `(CFB)`. CFB stays a sport-type label only.
 - Gold is the crowd glow and the one gold button. On the sheet, Dodger blue is the friction badge only. The event page still uses Dodger blue for its occasion chip and the big friction word.
 - That event’s own results never affect its rating. Friction shows from Moderate up.
+- **Concert map chips (Kylie, Oct 4, 2026):** the chip is the headliner only. A tour or anniversary stays off the chip. If the headliner itself does not fit, the chip ellipsizes. The venue is added only when two chips that night would otherwise match. The sheet and the event page keep the full official title.
 - Area switcher and NYC filler rules are unchanged. The rating formula is not in code; `src/data/audience.ts` is still the Oct 1 overlap rule until Step 8.
 - Screenshots in cloud sessions: `playwright-core`, `/usr/bin/google-chrome`, swiftshader args, an iPhone user agent, and `localStorage['fan-friction:tipsDone']='true'`. Don’t `pkill` vite.
 

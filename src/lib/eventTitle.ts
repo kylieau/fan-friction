@@ -1,4 +1,5 @@
 import { TEAMS } from '../data/teams';
+import { VENUES, venueNameOn } from '../data/venues';
 import type { CrowdEvent } from '../data/types';
 
 /** Tags that belong after the first name. CFB is stripped from old titles and never written back. */
@@ -47,12 +48,48 @@ function withSquadTag(title: string, tag: string | null): string {
   return `${first} (${found}) ${vs[2]} ${second}`;
 }
 
-/** Map chip line 1. No venue. The round, if any, is its own line. */
-export function mapTitle(event: CrowdEvent): string {
-  return withSquadTag(event.title, collegeAbbrev(event));
+/**
+ * Concerts and music festivals: the headliner only. Tour and anniversary
+ * stay on the full title. No made-up short name when a headliner is missing.
+ */
+function headliner(event: CrowdEvent): string | null {
+  if (event.audience.domain !== 'music') return null;
+  if (event.kind !== 'show' && event.kind !== 'festival') return null;
+  const name = event.performer?.trim();
+  return name || null;
 }
 
-/** Matchup name on the sheet, the event page, and the log. The round is a separate line. */
+function venueLabel(event: CrowdEvent): string | null {
+  if (event.place.type !== 'venue') return null;
+  const venue = VENUES[event.place.venueId];
+  return venue ? venueNameOn(venue, event.date) : null;
+}
+
+/** True when another chip that night would show the same headliner. */
+function sharesHeadliner(event: CrowdEvent, name: string, night: readonly CrowdEvent[]): boolean {
+  const key = name.toLowerCase();
+  return night.some(
+    (other) =>
+      other.id !== event.id &&
+      other.date === event.date &&
+      headliner(other)?.toLowerCase() === key,
+  );
+}
+
+/**
+ * Map chip line 1. A concert is the headliner. The venue is added only when
+ * two chips that night would otherwise match. A long headliner ellipsizes in
+ * the chip (see .crowd-name). The round, if any, is its own line.
+ */
+export function mapTitle(event: CrowdEvent, night: readonly CrowdEvent[] = []): string {
+  const name = headliner(event);
+  if (!name) return withSquadTag(event.title, collegeAbbrev(event));
+  if (!sharesHeadliner(event, name, night)) return name;
+  const venue = venueLabel(event);
+  return venue ? `${name} · ${venue}` : name;
+}
+
+/** Full official title on the sheet, the event page, and the log. The round is a separate line. */
 export function listTitle(event: CrowdEvent): string {
-  return mapTitle(event);
+  return withSquadTag(event.title, collegeAbbrev(event));
 }
