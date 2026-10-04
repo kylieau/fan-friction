@@ -202,6 +202,9 @@ button {
 }
 
 .map-header-date {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
   padding-top: 4px;
   font-family: 'Big Shoulders Display', sans-serif;
   font-size: 32px;
@@ -209,6 +212,14 @@ button {
   line-height: 0.95;
   color: var(--ink);
   white-space: nowrap;
+}
+
+.map-header-past {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink2);
 }
 
 .map-header-count {

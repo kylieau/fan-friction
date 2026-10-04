@@ -92,27 +92,20 @@ export function EventScreen() {
       </header>
 
       <div className="event-marks">
-        <button
-          type="button"
-          className={`mark-button${isWasThere(e.id, log) ? ' on' : ''}`}
-          aria-pressed={isWasThere(e.id, log)}
-          onClick={() => toggleWasThere(e)}
-        >
-          {isWasThere(e.id, log) ? 'I was there · saved' : 'I was there'}
-        </button>
-        <p className="mark-hint">
-          {isWasThere(e.id, log)
-            ? 'Saved in Your nights on this phone. Tap again to remove it.'
-            : 'Saves this night in Your nights on this phone.'}
-        </p>
-        {e.date >= todayIn(DEFAULT_METRO) && (
+        {e.date >= todayIn(DEFAULT_METRO) ? (
           <button
             type="button"
             className={`mark-button${isPlanned(e.id, log) ? ' on' : ''}`}
             aria-pressed={isPlanned(e.id, log)}
             onClick={() => togglePlan(e)}
           >
-            {isPlanned(e.id, log) ? 'Planned · Up next' : 'Plan this night'}
+            {isPlanned(e.id, log) ? 'Saved' : 'Save this night'}
+          </button>
+        ) : isWasThere(e.id, log) ? (
+          <p className="mark-hint">You were there</p>
+        ) : (
+          <button type="button" className="mark-button" onClick={() => toggleWasThere(e)}>
+            I was there
           </button>
         )}
       </div>
@@ -213,7 +206,7 @@ function Beaten({ me, all, date }: { me: CrowdPoint; all: CrowdPoint[]; date: st
               <div className="bar-label">
                 <span>
                   {self ? '★ ' : ''}
-                  {p.event.title}
+                  {listTitle(p.event)}
                   {p.count !== undefined ? ` · ${fmt(p.count)} ${crowdKind(p.event)}` : p.soldOut ? ' · sold out' : ''}
                 </span>
                 <span className="bar-dist">{self ? 'this event' : `${miles < 0.3 ? '<0.3' : miles.toFixed(1)} mi`}</span>

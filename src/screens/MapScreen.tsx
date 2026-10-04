@@ -13,6 +13,7 @@ import { ArrowRight, ChevronDown, SearchIcon, SunIcon } from '../components/Icon
 import { eventChip } from '../lib/chips';
 import { listTitle } from '../lib/eventTitle';
 import { addDays, clockTime, headerDate, shortLocalDate } from '../lib/dates';
+import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { nightsPath, useView, whenLabel, type WhenSpan } from '../lib/view';
 
@@ -137,7 +138,9 @@ export function MapScreen() {
     setBounds(null);
   }, [metro.id, date, span]);
   const onMap = useMemo(() => events.filter((event) => eventInBounds(event, bounds)), [events, bounds]);
+  const sheetEvents = useMemo(() => orderSheetEvents(onMap, selected), [onMap, selected]);
   const nightLine = shown ? `${whenLabel(span, isToday, date)} · On the map` : ' ';
+  const pastNight = span === 'day' && date < today;
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);
@@ -189,7 +192,12 @@ export function MapScreen() {
         </div>
         <div className="map-header-score">
           <div className="map-header-dateblock">
-            {span === 'day' && <div className="map-header-date">{headerDate(date)}</div>}
+            {span === 'day' && (
+              <div className="map-header-date">
+                <span>{headerDate(date, today)}</span>
+                {pastNight && <span className="map-header-past">Past</span>}
+              </div>
+            )}
             {caption.trim() && <div className="map-header-count">{caption}</div>}
           </div>
           <NightScore
@@ -265,7 +273,7 @@ export function MapScreen() {
                 <EventRow event={selected} selected showDate={selected.date !== date} />
               </div>
               <Link to={`/event/${selected.id}`} className="gold-button">
-                See what beat it
+                See this event
                 <ArrowRight />
               </Link>
             </>
@@ -273,9 +281,9 @@ export function MapScreen() {
         </div>
 
         <div className="sheet-body" ref={bodyRef}>
-          {onMap.length > 0 && (
+          {sheetEvents.length > 0 && (
             <ul className="event-list">
-              {onMap.map((e) => (
+              {sheetEvents.map((e) => (
                 <li key={e.id}>
                   <EventRow
                     event={e}

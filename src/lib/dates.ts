@@ -27,14 +27,13 @@ export function shortLocalDate(date: string) {
   });
 }
 
-/** "Sat · Oct 3" for the map header. Other screens keep the comma form. */
-export function headerDate(date: string) {
-  const [y, m, d] = date.split('-').map(Number);
-  const utc = new Date(Date.UTC(y, m - 1, d));
-  const weekday = utc.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' });
-  const month = utc.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
-  const day = utc.toLocaleDateString('en-US', { day: 'numeric', timeZone: 'UTC' });
-  return `${weekday} · ${month} ${day}`;
+/**
+ * Map header date, comma form. The year is included only when it is not the
+ * current year: "Sat, Oct 3" or "Sat, Apr 13, 2024".
+ */
+export function headerDate(date: string, today: string) {
+  const shown = shortLocalDate(date);
+  return date.slice(0, 4) === today.slice(0, 4) ? shown : `${shown}, ${date.slice(0, 4)}`;
 }
 
 /** "7:30 pm" from a local 24-hour time like "19:30". */

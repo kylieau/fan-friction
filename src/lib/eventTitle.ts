@@ -1,6 +1,8 @@
 import { TEAMS } from '../data/teams';
 import type { CrowdEvent } from '../data/types';
 
+const SQUAD_TAG = 'CFB|MBB|WBB';
+
 /** College football is CFB. College basketball is MBB, or WBB when the team says so. */
 function collegeAbbrev(event: CrowdEvent): string | null {
   if (event.audience.domain !== 'sports' || !event.teams) return null;
@@ -14,11 +16,34 @@ function collegeAbbrev(event: CrowdEvent): string | null {
   return null;
 }
 
-/** Map chip line 1. College sport sits in the title: "USC vs Washington (CFB)". */
+/**
+ * Squad tag sits right after the first name: "USC (CFB) vs Washington".
+ * A unique pro name (Dodgers, Lakers) gets no tag. Never leave the tag at the end.
+ */
+function withSquadTag(title: string, tag: string | null): string {
+  let rest = title.trim();
+  let found = tag;
+  const trailing = rest.match(new RegExp(`^(.*?)\\s+\\((${SQUAD_TAG})\\)\\s*$`));
+  if (trailing) {
+    rest = trailing[1].trim();
+    found = found ?? trailing[2];
+  }
+  const vs = rest.match(/^(.*?)\s+(vs\.?)\s+(.*)$/i);
+  if (!vs) return rest;
+  let first = vs[1].trim();
+  const onFirst = first.match(new RegExp(`^(.*?)\\s+\\((${SQUAD_TAG})\\)\\s*$`));
+  if (onFirst) {
+    first = onFirst[1].trim();
+    found = found ?? onFirst[2];
+  }
+  const second = vs[3].trim();
+  if (!found) return `${first} ${vs[2]} ${second}`;
+  return `${first} (${found}) ${vs[2]} ${second}`;
+}
+
+/** Map chip line 1. No venue, and no series (that has its own line on the chip). */
 export function mapTitle(event: CrowdEvent): string {
-  const tag = collegeAbbrev(event);
-  if (!tag || event.title.includes(`(${tag})`)) return event.title;
-  return `${event.title} (${tag})`;
+  return withSquadTag(event.title, collegeAbbrev(event));
 }
 
 /** Sheet and other one-line titles. A series stays in parentheses: "Dodgers vs Braves (NLDS G1)". */

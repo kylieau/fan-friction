@@ -269,7 +269,7 @@ function UpNext({ plans, today, nights }: { plans: NightPlan[]; today: string; n
         </h2>
         <div className="card empty-card">
           <div className="card-title">Nothing planned</div>
-          <p className="card-body">Open an event and tap Plan this night. It will show up here.</p>
+          <p className="card-body">A saved night shows up here. It is not added to Your nights.</p>
         </div>
       </section>
     );
