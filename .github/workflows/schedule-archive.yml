@@ -1,0 +1,66 @@
+# Saves the Los Angeles schedule for the coming two weeks.
+# Runs a little after midnight Los Angeles time (08:15 UTC is 1:15am during
+# daylight time and 12:15am during standard time). Free: no new accounts or keys.
+# The job commits straight to main so the night is saved without waiting on a
+# review. If main rejects the push, it opens a pull request instead.
+
+name: Nightly schedule archive
+
+on:
+  schedule:
+    - cron: '15 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: schedule-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Save today's schedule
+        run: npm run archive-schedule
+
+      - name: Commit and push the snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/schedule-archive
+          if git diff --cached --quiet; then
+            echo "No schedule change to commit."
+            exit 0
+          fi
+          day=$(git diff --cached --name-only | sed -n 's|.*/\([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]\)\.json|\1|p' | head -n 1)
+          git commit -m "Save the Los Angeles schedule for ${day:-the coming days}"
+          if git push origin HEAD:main; then
+            echo "Saved on main."
+            exit 0
+          fi
+          branch="schedule-archive/${day:-manual}"
+          git push origin "HEAD:refs/heads/${branch}"
+          gh pr create --base main --head "$branch" \
+            --title "Save the Los Angeles schedule for ${day:-the coming days}" \
+            --body "The nightly schedule archive could not commit straight to main, so this pull request holds the snapshot. Nothing in the app changes. Merge it so the night is not left as reconstructed."

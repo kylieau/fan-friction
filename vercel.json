@@ -1,6 +1,7 @@
 {
   "framework": "vite",
   "buildCommand": "npm run build",
+  "ignoreCommand": "bash scripts/vercel-skip-archive-only.sh",
   "outputDirectory": "dist",
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

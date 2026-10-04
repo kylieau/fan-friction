@@ -99,30 +99,42 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
 
 const cache = new Map<string, Promise<CrowdEvent[]>>();
 
-async function scheduleFor(t: (typeof ESPN_TEAMS)[number]): Promise<EspnGame[]> {
+async function scheduleFor(t: (typeof ESPN_TEAMS)[number], strict: boolean): Promise<EspnGame[]> {
   // Default is preseason, seasontype=2 is the regular season, seasontype=3 is the postseason.
   const urls = ['', '?seasontype=2', '?seasontype=3'].map((q) => `${API}/${t.path}/teams/${t.espnId}/schedule${q}`);
   const lists = await Promise.all(
-    urls.map((u) =>
-      fetch(u)
-        .then((r) => (r.ok ? r.json() : { events: [] }))
-        .then((j: { events?: EspnGame[] }) => j.events ?? [])
-        .catch(() => [] as EspnGame[]),
-    ),
+    urls.map(async (u) => {
+      try {
+        const r = await fetch(u);
+        if (!r.ok) {
+          // 404 is a season that team does not have. Anything else, in a strict
+          // read, means the listing is incomplete and must not be saved.
+          if (strict && r.status !== 404) throw new Error(`ESPN schedule for ${t.teamId} answered ${r.status}`);
+          return [] as EspnGame[];
+        }
+        const j = (await r.json()) as { events?: EspnGame[] };
+        return j.events ?? [];
+      } catch (err) {
+        if (strict) throw err;
+        return [] as EspnGame[];
+      }
+    }),
   );
   return lists.flat();
 }
 
-function upcomingFor(metroId: string): Promise<CrowdEvent[]> {
-  const hit = cache.get(metroId);
-  if (hit) return hit;
+function upcomingFor(metroId: string, strict = false): Promise<CrowdEvent[]> {
+  if (!strict) {
+    const hit = cache.get(metroId);
+    if (hit) return hit;
+  }
   const tz = METROS[metroId].timeZone;
   const today = new Date().toLocaleDateString('en-CA', { timeZone: tz });
   const end = new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
 
   const p = Promise.all(
     ESPN_TEAMS.filter((t) => t.metroId === metroId).map(async (t) =>
-      (await scheduleFor(t)).map((g) => toEvent(g, t)),
+      (await scheduleFor(t, strict)).map((g) => toEvent(g, t)),
     ),
   ).then((lists) => {
     const seen = new Set<string>();
@@ -132,8 +144,17 @@ function upcomingFor(metroId: string): Promise<CrowdEvent[]> {
       .filter((e) => !seen.has(e.id) && seen.add(e.id))
       .sort((a, b) => (a.date + a.start).localeCompare(b.date + b.start));
   });
-  cache.set(metroId, p);
+  if (!strict) cache.set(metroId, p);
   return p;
+}
+
+/**
+ * Home games for the metro. Throws if a team schedule cannot be read.
+ * The map does not call this: it uses `espnEvents`, which still returns an
+ * empty list when a feed is down.
+ */
+export function loadEspnSchedule(metroId: string): Promise<CrowdEvent[]> {
+  return upcomingFor(metroId, true);
 }
 
 export const espnEvents: EventSource = {

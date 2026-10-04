@@ -74,16 +74,19 @@ function toEvent(g: MlbGame, metroId: string): CrowdEvent | null {
 
 const cache = new Map<string, Promise<CrowdEvent[]>>();
 
-function upcomingFor(metroId: string): Promise<CrowdEvent[]> {
-  const hit = cache.get(metroId);
-  if (hit) return hit;
+/**
+ * Home games for the metro. Throws if the feed cannot be read.
+ * The map does not call this: it uses `mlbEvents`, which still returns an
+ * empty list when the feed is down.
+ */
+export function loadMlbSchedule(metroId: string, throughDate?: string): Promise<CrowdEvent[]> {
   const teamIds = Object.entries(MLB_TEAMS).filter(([, t]) => t.metroId === metroId).map(([id]) => id);
   const tz = METROS[metroId].timeZone;
   const today = new Date().toLocaleDateString('en-CA', { timeZone: tz });
-  const end = new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
+  const end = throughDate ?? new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
   const url = `${API}?sportId=1&teamId=${teamIds.join(',')}&startDate=${today}&endDate=${end}&hydrate=team`;
 
-  const p = fetch(url)
+  return fetch(url)
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
     .then((json: { dates: { games: MlbGame[] }[] }) =>
       json.dates
@@ -91,11 +94,16 @@ function upcomingFor(metroId: string): Promise<CrowdEvent[]> {
         .map((g) => toEvent(g, metroId))
         .filter((e): e is CrowdEvent => e !== null && e.date >= today)
         .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))),
-    )
-    .catch(() => {
-      cache.delete(metroId); // try again next time
-      return [] as CrowdEvent[];
-    });
+    );
+}
+
+function upcomingFor(metroId: string): Promise<CrowdEvent[]> {
+  const hit = cache.get(metroId);
+  if (hit) return hit;
+  const p = loadMlbSchedule(metroId).catch(() => {
+    cache.delete(metroId); // try again next time
+    return [] as CrowdEvent[];
+  });
   cache.set(metroId, p);
   return p;
 }

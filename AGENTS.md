@@ -25,6 +25,7 @@ docs/direction.md. Read it before making any product decision.
   - `src/lib/` small helpers (dates, titles, sheet drag, view)
   - `src/config/` app name, metros, score labels, theme
   - `docs/` product decisions and research; `design/wireframes/` older mockups
+  - `data/schedule-archive/` nightly Los Angeles listings (not shown in the app)
   - `MEMORY_HANDOFF.md` and `BACKLOG.md` in the root: current state and deferred work
 
 ## Multiple agents
@@ -55,7 +56,7 @@ It's a live-event app, not a sports-only app: sports are the reason it exists, b
 ## Where this stands (Oct 4, 2026)
 Kylie is leaving the map-chip polish and moving to a larger structure and purpose build. That work continues in Claude Code. This file, `MEMORY_HANDOFF.md`, and `BACKLOG.md` are the UI lock as of this date. They are not a commitment to keep polishing chips first.
 
-PRs #1–#7 are squash-merged to `main` (#7 was the Oct 4 Los Angeles seed plus the map chip pack; this paragraph was written before it merged). Do not start Traffic, Night story, or the rating formula until she asks. The order that was next after PR #7 merges is paused: Traffic, then Step 7 leftovers and Night story, then the rating formula. Supabase, favorite cities, nights-per-city, and a rich outdoor Forecast stay parked.
+PRs #1–#7 are squash-merged to `main` (#7 was the Oct 4 Los Angeles seed plus the map chip pack; this paragraph was written before it merged). Kylie then locked the pivot answers and approved the nightly schedule archive (`docs/schedule-archive.md`). The stamp locks 24 hours after the latest (main) event's scheduled start. Save and "I was there" stay on the event page; the Map list does not change. Famous nights keeps its stamps until they are hand-checked. Product risks are parked. Accounts, when built, are private by default. Tweets stay on hold until access and cost are verified. Do not start Traffic, Night story, the rating formula, Ticketmaster, or Supabase until she asks. Favorite cities, nights-per-city, and a rich outdoor Forecast stay parked.
 
 ## The name
 Write it **Fan/Friction**, with the slash, everywhere a slash is possible: screens, share cards, the app title, docs and conversation. Use `fan-friction` or `FanFriction` only where a slash can't go (repo, package and file names, code, web addresses). Keep the display name in one setting so it can change later.
