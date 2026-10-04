@@ -11,7 +11,9 @@ After #6 is merged, and after an Oct 4, 2026 LA seed is in the local seed files 
 2. **Step 7 leftovers.** Post-game results and attendance; BMO/LAFC and Angel City; UCLA basketball; concerts via Ticketmaster (🚩 ask before any key or signup). **Night story** builds here, after Traffic, not sooner (Kylie, Oct 4, 2026). Event page only, under Crowds/Traffic, not on You. Section label “The night”: a short paragraph, then a few text links (source names). No screenshots or embedded posts. White content card, ink type. Omit the whole block when there is no story (no empty state). **Save this night** / **I was there** stay above the story so it does not read as causing the rating. Hand-seed early nights first.
 3. **Step 8 rating formula.** Crowd fight plus Gridlock via OpenStreetMap drive times. Hold out 2–3 of the 13 nights. The Medium same-sport overlap weight stays the lean 0.35 draft until she confirms it at fitting.
 
-Parked after that, not now: Supabase (catalog events first, then You), favorite cities on the metro switcher, NYC filler research only (do not seed), the first-run tips rewrite, and team/artist pages.
+Parked after that, not now: Supabase (catalog events first, then You), favorite cities on the metro switcher, NYC filler research only (do not seed), the first-run tips rewrite, and team/artist pages. The Nights tab per city is parked here too, not in Step 6.
+
+- **Nights tab is per city/area** (Kylie, 2026-10-04). Same metro scope as the Map switcher. Needs a backend/data mechanism (nights filtered by metro) and visual chrome later. Do not build now.
 
 ## Prompt Kylie first thing when a session resumes
 Ask whether she has more UX/UI notes (she said more are coming; the running list and sorting are in `docs/ux-notes.md`) and whether she has anything to paste for the remaining seed data gaps (see Research leftovers). Sort new notes into structural (raise before the next step) and polish (batch after Step 5 or 6).
