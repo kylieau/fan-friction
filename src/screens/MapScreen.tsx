@@ -366,7 +366,7 @@ function AreaSwitcher({
   );
 }
 
-/** Venue name for the sheet row only. The map chip does not show it. */
+/** Same venue name the event page uses. Only the raised selected card shows it. */
 function sheetVenue(event: CrowdEvent): string | null {
   if (event.place.type === 'venue') {
     const venue = VENUES[event.place.venueId];
@@ -399,7 +399,7 @@ function EventRow({
       <span className="event-main">
         <span className="event-title">{listTitle(e)}</span>
         <span className="event-meta">{detail}</span>
-        {venue && <span className="event-venue">{venue}</span>}
+        {selected && venue && <span className="event-venue">{venue}</span>}
       </span>
       {chip && <span className={`chip ${chip.kind === 'friction' ? 'chip-friction' : 'chip-why'}`}>{chip.text}</span>}
     </>
