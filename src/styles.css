@@ -68,7 +68,8 @@ button {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   background: var(--chrome);
-  border-top: none;
+  border-top: 1px solid rgba(15, 27, 45, 0.12);
+  box-shadow: none;
   padding: 6px 8px calc(10px + env(safe-area-inset-bottom, 0px));
   z-index: 4;
 }
