@@ -1212,6 +1212,19 @@ button {
     0 2px 6px rgba(15, 27, 45, 0.28);
 }
 
+/* Faded ink on the other cards. The white fill stays solid. */
+.crowd-label.is-dim {
+  background: #fff;
+  opacity: 1;
+  border-color: rgba(15, 27, 45, 0.45);
+}
+
+.crowd-label.is-dim .crowd-name,
+.crowd-label.is-dim .crowd-series,
+.crowd-label.is-dim .crowd-meta {
+  color: rgba(15, 27, 45, 0.45);
+}
+
 .crowd-label.is-hidden {
   visibility: hidden;
   pointer-events: none;

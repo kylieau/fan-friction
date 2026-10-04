@@ -1,11 +1,11 @@
 // Where each event card sits on the screen.
 //
-// Every card is offset off its gold circle: above it first, then right, left,
-// and below, with about 8px of air between the card and the gold. A card that
-// would cover another card, the gold, or the on-map controls is moved out. If
-// the gap grows past about 16px, a short stem connects them. If it still cannot
-// sit clear, the card is left off and the gold mark stays.
-// The selected card uses the same 8px offset and is always kept.
+// Each card sits about 8px outside its gold circle, on the outer side of that
+// night's pins. A pin left of the group's midpoint tries the left first; a pin
+// right of it tries the right. When the group is taller than wide, pins above
+// the middle try the top and pins below it try the bottom. The old
+// above-then-right order is only a fallback, and a fallback may not cross
+// another card. If no side fits, the card is left off and the mark stays.
 
 export interface Box {
   x0: number;
@@ -22,8 +22,8 @@ export const STEM_GAP = 16;
 /** Taps within this of a dot's center count, even when the drawn dot is smaller. */
 export const DOT_HIT_RADIUS = 22;
 
-const SIDES: Side[] = ['top', 'right', 'left', 'bottom'];
-const JUMP_GAPS = [12, 16, 20, 24, 32, 40, 52, 68];
+/** Old order. Used only when the outward side does not fit. */
+const FALLBACK: Side[] = ['top', 'right', 'left', 'bottom'];
 const CARD_AIR = 4;
 
 export interface ChipCandidate {
@@ -99,22 +99,6 @@ function hits(box: Box, obstacles: Box[]): boolean {
   return obstacles.some((o) => intersects(box, o));
 }
 
-function overlapArea(box: Box, obstacles: Box[]): number {
-  let area = 0;
-  for (const o of obstacles) {
-    const w = Math.max(0, Math.min(box.x1, o.x1) - Math.max(box.x0, o.x0));
-    const h = Math.max(0, Math.min(box.y1, o.y1) - Math.max(box.y0, o.y0));
-    area += w * h;
-  }
-  return area;
-}
-
-function visibleArea(box: Box, view: Box): number {
-  const w = Math.max(0, Math.min(box.x1, view.x1) - Math.max(box.x0, view.x0));
-  const h = Math.max(0, Math.min(box.y1, view.y1) - Math.max(box.y0, view.y0));
-  return w * h;
-}
-
 function stemFor(side: Side, c: ChipCandidate, box: Box): Stem {
   switch (side) {
     case 'top':
@@ -138,47 +122,104 @@ function finish(c: ChipCandidate, side: Side, box: Box, gap: number): PlacedChip
   };
 }
 
-function placeSelected(c: ChipCandidate, obstacles: Box[], view: Box, glows: Glow[]): PlacedChip {
-  const own: Glow = { x: c.x, y: c.y, r: c.glow };
-  const spots = SIDES.map((side) => ({ side, box: boxFor(side, c, CARD_GAP) }));
-  const perfect = spots.find(
-    (s) => inside(s.box, view) && !hits(s.box, obstacles) && glows.every((g) => !coversGlow(s.box, g)),
-  );
-  if (perfect) return finish(c, perfect.side, perfect.box, CARD_GAP);
-  const clear = spots.find((s) => inside(s.box, view) && !hits(s.box, obstacles) && !coversGlow(s.box, own));
-  if (clear) return finish(c, clear.side, clear.box, CARD_GAP);
-  const onScreen = spots.find((s) => inside(s.box, view) && !coversGlow(s.box, own));
-  if (onScreen) return finish(c, onScreen.side, onScreen.box, CARD_GAP);
-
-  let best = spots[0];
-  let bestScore = -Infinity;
-  for (const s of spots) {
-    if (coversGlow(s.box, own)) continue;
-    const score = visibleArea(s.box, view) - overlapArea(s.box, obstacles) * 4;
-    if (score > bestScore) {
-      bestScore = score;
-      best = s;
-    }
-  }
-  return finish(c, best.side, best.box, CARD_GAP);
+interface PinFrame {
+  midX: number;
+  midY: number;
+  /** The night's pins stack taller than they spread wide, in screen pixels. */
+  tall: boolean;
 }
 
-function placeOther(
+/** Center of that night's pins, and whether the group is taller than wide. */
+function pinFrame(candidates: ChipCandidate[]): PinFrame {
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minY = Infinity;
+  let maxY = -Infinity;
+  for (const c of candidates) {
+    minX = Math.min(minX, c.x);
+    maxX = Math.max(maxX, c.x);
+    minY = Math.min(minY, c.y);
+    maxY = Math.max(maxY, c.y);
+  }
+  return {
+    midX: (minX + maxX) / 2,
+    midY: (minY + maxY) / 2,
+    tall: maxY - minY > maxX - minX,
+  };
+}
+
+/**
+ * The side away from the group. Null when the pin sits on the midline, so the
+ * caller uses the old order instead of aiming at the map center.
+ */
+function outwardSide(c: ChipCandidate, frame: PinFrame): Side | null {
+  if (frame.tall) {
+    if (c.y < frame.midY) return 'top';
+    if (c.y > frame.midY) return 'bottom';
+    return null;
+  }
+  if (c.x < frame.midX) return 'left';
+  if (c.x > frame.midX) return 'right';
+  return null;
+}
+
+function pointInBox(x: number, y: number, box: Box): boolean {
+  return x >= box.x0 && x <= box.x1 && y >= box.y0 && y <= box.y1;
+}
+
+function segmentsCross(
+  ax: number,
+  ay: number,
+  bx: number,
+  by: number,
+  cx: number,
+  cy: number,
+  dx: number,
+  dy: number,
+): boolean {
+  const det = (bx - ax) * (dy - cy) - (by - ay) * (dx - cx);
+  if (det === 0) return false;
+  const t = ((cx - ax) * (dy - cy) - (cy - ay) * (dx - cx)) / det;
+  const u = ((cx - ax) * (by - ay) - (cy - ay) * (bx - ax)) / det;
+  return t > 0 && t < 1 && u > 0 && u < 1;
+}
+
+/** True when the line from the pin to the card runs through another card. */
+function crossesChip(c: ChipCandidate, box: Box, taken: Box[]): boolean {
+  const x2 = (box.x0 + box.x1) / 2;
+  const y2 = (box.y0 + box.y1) / 2;
+  return taken.some((other) => {
+    if (pointInBox(c.x, c.y, other) || pointInBox(x2, y2, other)) return true;
+    return (
+      segmentsCross(c.x, c.y, x2, y2, other.x0, other.y0, other.x1, other.y0) ||
+      segmentsCross(c.x, c.y, x2, y2, other.x1, other.y0, other.x1, other.y1) ||
+      segmentsCross(c.x, c.y, x2, y2, other.x1, other.y1, other.x0, other.y1) ||
+      segmentsCross(c.x, c.y, x2, y2, other.x0, other.y1, other.x0, other.y0)
+    );
+  });
+}
+
+function clearAt(box: Box, obstacles: Box[], taken: Box[], view: Box, glows: Glow[]): boolean {
+  const blocked = [...obstacles, ...taken.map((item) => inflate(item, CARD_AIR))];
+  if (!inside(box, view) || hits(box, blocked)) return false;
+  return glows.every((glow) => !coversGlow(box, glow));
+}
+
+function placeCard(
   c: ChipCandidate,
+  frame: PinFrame,
   obstacles: Box[],
   taken: Box[],
   view: Box,
   glows: Glow[],
 ): PlacedChip | null {
-  const blocked = [...obstacles, ...taken.map((box) => inflate(box, CARD_AIR))];
-  const gaps = [CARD_GAP, ...JUMP_GAPS];
-  for (const gap of gaps) {
-    for (const side of SIDES) {
-      const box = boxFor(side, c, gap);
-      if (!inside(box, view) || hits(box, blocked)) continue;
-      if (glows.some((g) => coversGlow(box, g))) continue;
-      return finish(c, side, box, gap);
-    }
+  const preferred = outwardSide(c, frame);
+  const order = preferred ? [preferred, ...FALLBACK.filter((side) => side !== preferred)] : FALLBACK;
+  for (const side of order) {
+    const box = boxFor(side, c, CARD_GAP);
+    if (!clearAt(box, obstacles, taken, view, glows)) continue;
+    if (preferred && side !== preferred && crossesChip(c, box, taken)) continue;
+    return finish(c, side, box, CARD_GAP);
   }
   return null;
 }
@@ -186,11 +227,12 @@ function placeOther(
 /** Place cards in rank order. Missing ids were dropped; their marks stay. */
 export function placeChips(candidates: ChipCandidate[], obstacles: Box[], view: Box): PlacedChip[] {
   const glows: Glow[] = candidates.map((c) => ({ x: c.x, y: c.y, r: c.glow }));
+  const frame = pinFrame(candidates);
   const ordered = [...candidates].sort((a, b) => b.rank - a.rank || a.id.localeCompare(b.id));
   const placed: PlacedChip[] = [];
   const taken: Box[] = [];
   for (const c of ordered) {
-    const spot = c.selected ? placeSelected(c, obstacles, view, glows) : placeOther(c, obstacles, taken, view, glows);
+    const spot = placeCard(c, frame, obstacles, taken, view, glows);
     if (!spot) continue;
     placed.push(spot);
     taken.push(spot.box);

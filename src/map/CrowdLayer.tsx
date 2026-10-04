@@ -228,7 +228,9 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
         const el = marker?.getElement();
         if (!marker || !el) continue;
         const at = atById.get(p.event.id);
-        el.classList.toggle('selected', p.event.id === selectedRef.current && !!chip);
+        const chosen = p.event.id === selectedRef.current;
+        el.classList.toggle('selected', chosen && !!chip);
+        el.classList.toggle('is-dim', !!selectedRef.current && !chosen && !!chip);
         el.classList.toggle('is-hidden', !chip);
         if (!chip || !at) continue;
         const cx = (chip.box.x0 + chip.box.x1) / 2;
@@ -262,6 +264,17 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       claim?.setData({ type: 'FeatureCollection', features });
     };
 
+    const updateGlow = () => {
+      if (cancelled || !map.getSource(SOURCE)) return;
+      const zoom = map.getZoom();
+      for (const p of pointsRef.current) {
+        map.setFeatureState(
+          { source: SOURCE, id: p.event.id },
+          { radius: glowRadiusPx(p.capacity, zoom, p.location[1]) },
+        );
+      }
+    };
+
     const schedule = () => {
       cancelAnimationFrame(frame);
       frame = requestAnimationFrame(place);
@@ -289,7 +302,8 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
     };
     map.on('click', onClick as never);
     map.on('mousemove', onHover as never);
-    map.on('move', schedule);
+    map.on('move', updateGlow);
+    map.on('moveend', schedule);
     map.on('resize', schedule);
 
     const screen = map.getContainer().closest('.map-screen');
@@ -316,7 +330,8 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       for (const marker of markers.values()) marker.remove();
       map.off('click', onClick as never);
       map.off('mousemove', onHover as never);
-      map.off('move', schedule);
+      map.off('move', updateGlow);
+      map.off('moveend', schedule);
       map.off('resize', schedule);
       map.getCanvas().style.cursor = '';
       if (map.getLayer(CLAIM)) map.removeLayer(CLAIM);
