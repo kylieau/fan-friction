@@ -7,6 +7,11 @@ It's a live-event app, not a sports-only app: sports are the reason it exists, b
 - Repo: https://github.com/kylieau/fan-friction
 - Live site: https://fan-friction.vercel.app/ (Vercel, deploys automatically from `main`)
 
+## Where this stands (Oct 4, 2026)
+Kylie is leaving the map-chip polish and moving to a larger structure and purpose build. That work continues in Claude Code. This file, `MEMORY_HANDOFF.md`, and `BACKLOG.md` are the UI lock as of this date. They are not a commitment to keep polishing chips first.
+
+PR #6 is squash-merged to `main`. PR #7 is the Oct 4 Los Angeles seed plus the map chip pack. It is still open. Do not squash-merge it, and do not start Traffic, Night story, or the rating formula until she asks. The order that was next after PR #7 merges is paused: Traffic, then Step 7 leftovers and Night story, then the rating formula. Supabase, favorite cities, nights-per-city, and a rich outdoor Forecast stay parked.
+
 ## The name
 Write it **Fan/Friction**, with the slash, everywhere a slash is possible: screens, share cards, the app title, docs and conversation. Use `fan-friction` or `FanFriction` only where a slash can't go (repo, package and file names, code, web addresses). Keep the display name in one setting so it can change later.
 
@@ -42,5 +47,5 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 - Phone-sized web app: React + Vite, installable to the home screen. It can be wrapped as a native app later (Capacitor).
 - Map: MapLibre with OpenFreeMap maps (free, no account). Google Maps was considered and passed on: it needs a credit card on file, and its heat map layer is being retired.
 - Saving today is this phone, plus an "Export my nights" backup, because iPhone Safari can erase a site's saved data. Supabase is the planned store, not connected yet.
-- **Supabase order (Kylie, Oct 4, 2026):** finish the current UI slice and the Oct 4 LA seed on local files, then put catalog events in Supabase (shared schedules and crowd figures), then move You-tab logs (I was there, notes, plans) after she pastes a project URL and public anon key. The adapter must not call the network until those keys exist. She does not need to do anything in Supabase right now. Do not block Step 6 Traffic on it. 🚩 The free plan allows 2 active projects (she already uses one) and pauses a project when it sits idle.
+- **Supabase (parked, Oct 4, 2026):** shared event truth later, You-tab logs after that, and only after she pastes a project URL and public anon key. The adapter must not call the network until those keys exist. She does not need to do anything in Supabase right now. It does not block Traffic when Traffic is unpaused. 🚩 The free plan allows 2 active projects (she already uses one) and pauses a project when it sits idle.
 - Hosting: Vercel free plan.
