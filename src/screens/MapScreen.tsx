@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { areaMetros, DEFAULT_METRO, type Metro } from '../config/metros';
-import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, VENUES, venueNameOn, type CityDate, type CrowdEvent } from '../data';
+import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, todayIn, VENUES, venueNameOn, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { MapCamera } from '../map/MapCamera';
@@ -12,7 +12,7 @@ import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, SearchIcon, SunIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle } from '../lib/eventTitle';
-import { addDays, clockTime, headerDate, shortLocalDate } from '../lib/dates';
+import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { nightsPath, useView, whenLabel, type WhenSpan } from '../lib/view';
@@ -140,7 +140,7 @@ export function MapScreen() {
   const onMap = useMemo(() => events.filter((event) => eventInBounds(event, bounds)), [events, bounds]);
   const sheetEvents = useMemo(() => orderSheetEvents(onMap, selected), [onMap, selected]);
   const nightLine = shown ? `${whenLabel(span, isToday, date)} · On the map` : ' ';
-  const pastNight = span === 'day' && date < today;
+  const pastLabel = span === 'day' ? pastRelativeLabel(date, todayIn(DEFAULT_METRO)) : null;
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);
@@ -195,7 +195,7 @@ export function MapScreen() {
             {span === 'day' && (
               <div className="map-header-date">
                 <span>{headerDate(date, today)}</span>
-                {pastNight && <span className="map-header-past">Past</span>}
+                {pastLabel && <span className="map-header-past">{pastLabel}</span>}
               </div>
             )}
             {caption.trim() && <div className="map-header-count">{caption}</div>}

@@ -36,6 +36,29 @@ export function headerDate(date: string, today: string) {
   return date.slice(0, 4) === today.slice(0, 4) ? shown : `${shown}, ${date.slice(0, 4)}`;
 }
 
+/**
+ * The word that replaces "Past" beside a date. `today` is a Los Angeles
+ * calendar day. Today and any later date get nothing. The first match wins:
+ * Yesterday, then Last week (2–7 days ago), then the rest of the previous
+ * calendar month (Last month), then older dates through the previous
+ * calendar year (Last year), then the year itself. A day still in this
+ * month but more than a week ago also says Last month. Earlier this year,
+ * before last month, says Last year.
+ */
+export function pastRelativeLabel(date: string, today: string): string | null {
+  if (date >= today) return null;
+  if (date === addDays(today, -1)) return 'Yesterday';
+  if (date >= addDays(today, -7)) return 'Last week';
+
+  const prevMonth = shiftMonth(today.slice(0, 7), -1);
+  if (date.slice(0, 7) === prevMonth || date.slice(0, 7) === today.slice(0, 7)) return 'Last month';
+
+  const todayYear = Number(today.slice(0, 4));
+  const year = Number(date.slice(0, 4));
+  if (year < todayYear - 1) return String(year);
+  return 'Last year';
+}
+
 /** "7:30 pm" from a local 24-hour time like "19:30". */
 export function clockTime(time: string) {
   const [h, m] = time.split(':').map(Number);
