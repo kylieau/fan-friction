@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { areaMetros, DEFAULT_METRO, type Metro } from '../config/metros';
-import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, type CityDate, type CrowdEvent } from '../data';
+import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, VENUES, venueNameOn, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { MapCamera } from '../map/MapCamera';
@@ -304,13 +304,7 @@ export function MapScreen() {
               <ul className="event-list">
                 {upcoming.map((e) => (
                   <li key={e.id}>
-                    <Link to={`/?date=${e.date}&when=day`} className="event-row">
-                      <span className="event-time">{shortLocalDate(e.date)}</span>
-                      <span className="event-main">
-                        <span className="event-title">{listTitle(e)}</span>
-                        <span className="event-meta">{e.start ? clockTime(e.start) : 'Time n/a'}</span>
-                      </span>
-                    </Link>
+                    <EventRow event={e} showDate href={`/?date=${e.date}&when=day`} />
                   </li>
                 ))}
               </ul>
@@ -372,25 +366,46 @@ function AreaSwitcher({
   );
 }
 
-/** Same short crowd line as the map chip. */
+/** Venue name for the sheet row only. The map chip does not show it. */
+function sheetVenue(event: CrowdEvent): string | null {
+  if (event.place.type === 'venue') {
+    const venue = VENUES[event.place.venueId];
+    return venue ? venueNameOn(venue, event.date) : null;
+  }
+  return event.place.name;
+}
 
-/** One event: title, then time and the labeled crowd, plus one chip. */
-function EventRow({ event: e, selected, onPick, showDate }: { event: CrowdEvent; selected?: boolean; onPick?: () => void; showDate?: boolean }) {
+/** One sheet card: the same lines as the map chip, plus a quiet venue and one badge. */
+function EventRow({
+  event: e,
+  selected,
+  onPick,
+  showDate,
+  href,
+}: {
+  event: CrowdEvent;
+  selected?: boolean;
+  onPick?: () => void;
+  showDate?: boolean;
+  href?: string;
+}) {
   const chip = eventChip(e);
   const time = e.start ? clockTime(e.start) : 'Time n/a';
-  const when = showDate ? `${time} · ${shortLocalDate(e.date)}` : time;
+  const crowd = crowdShort(e);
+  const detail = showDate ? `${shortLocalDate(e.date)} · ${time} · ${crowd}` : `${time} · ${crowd}`;
+  const venue = sheetVenue(e);
   const body = (
     <>
       <span className="event-main">
         <span className="event-title">{listTitle(e)}</span>
-        <span className="event-meta">
-          {when} · {crowdShort(e)}
-        </span>
+        <span className="event-meta">{detail}</span>
+        {venue && <span className="event-venue">{venue}</span>}
       </span>
       {chip && <span className={`chip ${chip.kind === 'friction' ? 'chip-friction' : 'chip-why'}`}>{chip.text}</span>}
     </>
   );
   const cls = `event-row${selected ? ' selected' : ''}`;
+  if (href) return <Link to={href} className={cls}>{body}</Link>;
   return onPick ? (
     <button type="button" className={cls} onClick={onPick} aria-pressed={selected}>
       {body}
