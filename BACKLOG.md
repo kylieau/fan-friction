@@ -17,6 +17,9 @@ Parked, not now: Supabase as shared event truth (You stays on this phone for now
 
 - **Nights tab is per city/area** (Kylie, 2026-10-04). Same metro scope as the Map switcher. Needs a backend/data mechanism (nights filtered by metro) and visual chrome later. Do not build now.
 
+## Direction pivot (Oct 4, 2026): decisions so far
+Full reasoning in `docs/direction.md`. Kylie's answers to the audit questions: Cursor's work is finished (nothing to avoid); the app ships with her own nights pre-filled; the log probably leads, but first screen, Compare, and when a forecast becomes a record go to a second opinion (`docs/second-opinion-direction-prompt.md`); Compare's inclination is to stay; Famous nights stays as a concept but needs reworking; Supabase saving moves up (the log is the product, and phone storage can be erased). Structural proposal (night as core unit, two thresholds) is awaiting her approval; build nothing from it yet.
+
 ## Prompt Kylie first thing when a session resumes
 She is in a structure and purpose pivot (Oct 4, 2026). Do not open by starting Traffic. Ask whether she has more UX/UI notes (she said more are coming; the running list and sorting are in `docs/ux-notes.md`) and whether she has anything to paste for the remaining seed data gaps (see Research leftovers). Sort new notes into structural (raise before the next step) and polish (batch after Step 5 or 6).
 
