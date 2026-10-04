@@ -398,8 +398,8 @@ function EventRow({
     <>
       <span className="event-main">
         <span className="event-title">{listTitle(e)}</span>
-        <span className="event-meta">{detail}</span>
         {selected && venue && <span className="event-venue">{venue}</span>}
+        <span className="event-meta">{detail}</span>
       </span>
       {badges.length > 0 && (
         <span className="event-badges">

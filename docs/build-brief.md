@@ -23,7 +23,7 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 2. **Map, Crowds mode.** A heat map of where crowds went for the chosen night (default: today). Gold glow and dot size show where the most people were. Each event shows its friction verdict in words (for example "Extreme friction"); see the rating model in `product-decisions.md`. A ★ marks the biggest crowd in the city that night. A "SOLD OUT" tag marks a full venue. The night has an overall difficulty score with a label, never a bare number.
 3. **Crowds | Traffic toggle.** Traffic mode shades the corridors near overlapping events and events letting out together, in blues (gold only ever means crowds). It is always labeled "Estimate · not live." No live data and no red "jam" color. Includes "Drag to your leave time."
 4. **Event screen.** Tap any event to see:
-   - its rating and what else was on nearby that night ("Here's what beat it")
+   - its rating and what else was on nearby that night ("Local competition")
    - a short "The game" or "The show" block (the result for sports; pitchers, giveaways and notable moments)
    - one action by tense: an upcoming night says **Save this night** (a plan only; it does not add a Your nights row); a past night says **I was there**, and after that the page says **You were there**
    - a shareable card at the very end of the screen

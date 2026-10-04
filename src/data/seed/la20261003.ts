@@ -54,7 +54,7 @@ export const LA_20261003_EVENTS: CrowdEvent[] = [
     date: DATE,
     start: '19:00',
     kind: 'show',
-    title: 'Bruno Mars',
+    title: 'Bruno Mars: The Romantic Tour',
     place: { type: 'venue', venueId: 'sofi-stadium' },
     audience: { domain: 'music', genre: 'pop' },
     performer: 'Bruno Mars',

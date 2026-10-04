@@ -115,7 +115,7 @@ function sportLabel(sport: string): string {
  */
 export function eventTypeLabel(kind: string, sport: string): string {
   if (kind === 'festival') return 'Festival';
-  if (kind === 'live-broadcast') return 'Live broadcast';
+  if (kind === 'live-broadcast') return 'Live Broadcast';
   if (kind === 'special') return 'Special';
   if (kind === 'show' || sport === 'Concerts') return 'Show';
   if (sport === 'WNBA') return "Women's basketball";

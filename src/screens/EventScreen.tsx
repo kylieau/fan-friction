@@ -25,6 +25,7 @@ import { longLocalDate } from '../lib/dates';
 import { hoursOf, milesBetween, runningHours } from '../lib/windows';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
+const capital = (word: string) => word.charAt(0).toUpperCase() + word.slice(1);
 
 // One event: what it was, how much competition it faced (known beforehand),
 // the crowd as labeled evidence, and what else was on at the same time.
@@ -123,10 +124,10 @@ export function EventScreen() {
           {me.count !== undefined ? (
             <>
               <span className="crowd-number">{fmt(me.count)}</span>
-              <span className="crowd-kind">people ({kind})</span>
+              <span className="crowd-kind">People ({kind ? capital(kind) : kind})</span>
             </>
           ) : me.soldOut ? (
-            <span className="crowd-number small">Sold out</span>
+            <span className="crowd-number small">Sold Out</span>
           ) : (
             <span className="crowd-kind">No count found yet</span>
           )}
@@ -134,7 +135,7 @@ export function EventScreen() {
         {me.capacity && (
           <div className="crowd-cap">
             <span className="crowd-number small">{fmt(me.capacity)}</span>
-            <span className="crowd-kind">seats</span>
+            <span className="crowd-kind">Seats</span>
           </div>
         )}
         {me.soldOut && me.count !== undefined && <span className="tag-soldout">SOLD OUT</span>}
@@ -152,7 +153,7 @@ export function EventScreen() {
         title={listTitle(e)}
         line={a ? (showFriction(a.friction) ? `${frictionLabel(a.friction)}: ${a.why}.` : a.why) : ''}
         rating={day.rating ? day.rating.rating : null}
-        crowd={me.count !== undefined ? `${fmt(me.count)} ${kind}` : me.soldOut ? 'Sold out' : null}
+        crowd={me.count !== undefined ? `${fmt(me.count)} ${kind ? capital(kind) : ''}` : me.soldOut ? 'Sold Out' : null}
       />
 
       <Link to={`/?date=${date}`} className="text-link">
@@ -162,7 +163,7 @@ export function EventScreen() {
   );
 }
 
-/** "Here's what beat it": every event that day as a bar on a shared clock. */
+/** "Local competition": every event that day as a bar on a shared clock. */
 function Beaten({ me, all, date }: { me: CrowdPoint; all: CrowdPoint[]; date: string }) {
   const timed = all.filter((p) => p.event.start);
   const untimed = all.filter((p) => !p.event.start);
@@ -188,7 +189,7 @@ function Beaten({ me, all, date }: { me: CrowdPoint; all: CrowdPoint[]; date: st
 
   return (
     <section className="card beaten">
-      <h2 className="section-title">Here's what beat it</h2>
+      <h2 className="section-title">Local competition</h2>
       <div className="axis">
         {ticks.map((h) => (
           <span key={h} style={{ left: pct(h) }}>
@@ -209,7 +210,7 @@ function Beaten({ me, all, date }: { me: CrowdPoint; all: CrowdPoint[]; date: st
                   {listTitle(p.event)}
                   {p.count !== undefined ? ` · ${fmt(p.count)} ${crowdKind(p.event)}` : p.soldOut ? ' · sold out' : ''}
                 </span>
-                <span className="bar-dist">{self ? 'this event' : `${miles < 0.3 ? '<0.3' : miles.toFixed(1)} mi`}</span>
+                <span className="bar-dist">{self ? 'This event' : `${miles < 0.3 ? '<0.3' : miles.toFixed(1)} mi`}</span>
               </div>
               <div className="bar-track">
                 <span
