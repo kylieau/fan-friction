@@ -4,6 +4,7 @@ import { areaMetros, DEFAULT_METRO, type Metro } from '../config/metros';
 import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, type CityDate, type CrowdEvent } from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
+import { MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdShort } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { NightScore } from '../components/NightScore';
@@ -29,10 +30,6 @@ function averageRating(start: string, end: string, rated: ReadonlyMap<string, nu
   if (scores.length === 0) return null;
   return scores.reduce((sum, score) => sum + score, 0) / scores.length;
 }
-
-// Room the header, the on-map When pill, and the collapsed sheet take on the
-// full-screen map. Dots and labels are kept out of it.
-const INSETS = { top: 228, bottom: 200 };
 
 // The map is the screen; the header and the sheet sit on it. Opens on Today, even
 // when it's quiet. A famous night opens here too ("/?date=2024-10-25").
@@ -90,16 +87,12 @@ export function MapScreen() {
     () => (span === 'day' ? dayEvents : [...dayEvents, ...weekAhead]),
     [span, dayEvents, weekAhead],
   );
-  // The map shows one pin and label per venue: the next event there. The sheet
-  // lists the events inside the map after it settles, and picking one rings its pin.
-  const { points, pinFor } = useMemo(() => {
-    const all = shown && mode === 'crowds' ? crowdPoints(events, date) : [];
+  // One mark and one card per event. Cards that overlap are dropped; the marks stay.
+  const points = useMemo(() => {
+    if (!shown || mode !== 'crowds') return [];
+    const all = crowdPoints(events, date);
     all.sort((a, b) => (a.event.date + (a.event.start ?? '')).localeCompare(b.event.date + (b.event.start ?? '')));
-    const venueKey = (p: (typeof all)[number]) => (p.event.place.type === 'venue' ? p.event.place.venueId : p.event.id);
-    const next = new Map<string, (typeof all)[number]>();
-    for (const p of all) if (!next.has(venueKey(p))) next.set(venueKey(p), p);
-    const idToPin = new Map(all.map((p) => [p.event.id, next.get(venueKey(p))!.event.id]));
-    return { points: [...next.values()], pinFor: (id: string | null) => (id ? (idToPin.get(id) ?? id) : null) };
+    return all;
   }, [shown, mode, events, date]);
   // Collapsed, the sheet peeks the title. Open, it is as tall as the rows, and the
   // list scrolls once that would pass the sheet's max height.
@@ -179,7 +172,8 @@ export function MapScreen() {
     <div className={`screen map-screen${open ? ' sheet-open' : ''}`}>
       <div className="map-area" onPointerDown={() => setMenu(null)}>
         <BaseMap metro={metro}>
-          <CrowdLayer points={points} selectedId={pinFor(selectedId)} onSelect={select} insets={INSETS} />
+          <CrowdLayer points={points} selectedId={selectedId} onSelect={select} />
+          <MapCamera points={points} selectedId={selectedId} sheetOpen={open} />
           <MapSettle onSettle={setBounds} />
         </BaseMap>
       </div>

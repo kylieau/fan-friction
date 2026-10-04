@@ -32,6 +32,7 @@ export function BaseMap({ metro, children }: { metro: Metro; children?: ReactNod
     instance.touchZoomRotate.disableRotation();
     // Start the map credits collapsed to a small (i) button.
     instance.once('load', () => {
+      warmQuietStyle(instance);
       container.current
         ?.querySelector('.maplibregl-ctrl-attrib')
         ?.classList.remove('maplibregl-compact-show');
@@ -49,4 +50,22 @@ export function BaseMap({ metro, children }: { metro: Metro; children?: ReactNod
       <MapContext.Provider value={map}>{children}</MapContext.Provider>
     </>
   );
+}
+
+/**
+ * Positron is already a light map. Water and its names are the cool blue
+ * parts, so they shift toward sand. Roads are left as drawn. Nothing here
+ * tints the map to match the pale header.
+ */
+function warmQuietStyle(map: MapLibreMap) {
+  const set = (id: string, prop: string, value: string) => {
+    if (!map.getLayer(id)) return;
+    (map.setPaintProperty as (layer: string, name: string, color: string) => void)(id, prop, value);
+  };
+  set('background', 'background-color', '#f3f1ec');
+  set('water', 'fill-color', '#d5d0c6');
+  set('waterway', 'line-color', '#c9c3b8');
+  set('water_name_point_label', 'text-color', '#6d675f');
+  set('water_name_line_label', 'text-color', '#6d675f');
+  set('waterway_line_label', 'text-color', '#6d675f');
 }
