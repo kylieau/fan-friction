@@ -4,7 +4,7 @@ The thesis: big-city fans get called "fake." Attendance is shaped by competition
 
 ## Map and modes
 - Modes: Crowds | Traffic. Traffic is estimates only ("Estimate · not live"). No live data, no red "jam" color.
-- Heat map: gold glow and dot size show where crowds went. Each event's tag shows its friction verdict in words (for example "Extreme friction"), not a number. ★ = biggest crowd in that city that night. SOLD OUT tag = venue full (World Series games get it too, nothing special).
+- Heat map (Kylie, Oct 4, 2026): the gold glow is the size of the crowd, not a badge. A pale ring marks the one you picked. On a map chip, friction shows from Moderate up in Dodger blue, and Sold Out is the green chip. If both apply, friction comes first. Marquee, Major, and Notable stay on the sheet. The ? opens that short key. There is no star for the biggest crowd.
 - **On-the-map list (Kylie, Oct 4, 2026):** every row shows its venue, as a quiet line. The selected card can still sit above the list. This replaces showing the venue only on the raised card. Map chips are unchanged.
 - Tabs: Map, Nights, Compare, You. Opens on Today, even when quiet. Quiet state offers: next big night, "On this night" (a famous past night from this date), your teams' next game.
 - Nights tab: search, a calendar shaded by night rating with each day's number and a legend, and "Famous nights." No "Jump to" chips.

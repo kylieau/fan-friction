@@ -20,7 +20,7 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 
 ## What should be built
 1. **The shell.** Four tabs along the bottom: Map, Nights, Compare, You. Compare is visible but shows a simple "coming soon" page for now. The app opens on Today, even when it's quiet. A skippable three-tip first-run guide.
-2. **Map, Crowds mode.** A heat map of where crowds went for the chosen night (default: today). Gold glow and dot size show where the most people were. Each event shows its friction verdict in words (for example "Extreme friction"); see the rating model in `product-decisions.md`. A ★ marks the biggest crowd in the city that night. A "SOLD OUT" tag marks a full venue. The night has an overall difficulty score with a label, never a bare number.
+2. **Map, Crowds mode.** A heat map of where crowds went for the chosen night (default: today). The gold glow is the size of the crowd. A pale ring marks the one you picked. Friction from Moderate up shows in Dodger blue on the map chip; Sold Out is the green chip. Marquee, Major, and Notable stay on the sheet. See `product-decisions.md`. The night has an overall difficulty score with a label, never a bare number.
 3. **Crowds | Traffic toggle.** Traffic mode shades the corridors near overlapping events and events letting out together, in blues (gold only ever means crowds). It is always labeled "Estimate · not live." No live data and no red "jam" color. Includes "Drag to your leave time."
 4. **Event screen.** Tap any event to see:
    - its rating and what else was on nearby that night ("Local competition")

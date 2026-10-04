@@ -1250,8 +1250,13 @@ button {
 
 .crowd-label.is-dim .crowd-name,
 .crowd-label.is-dim .crowd-series,
-.crowd-label.is-dim .crowd-meta {
+.crowd-label.is-dim .crowd-meta,
+.crowd-label.is-dim .crowd-friction {
   color: rgba(15, 27, 45, 0.45);
+}
+
+.crowd-label.is-dim .crowd-sold {
+  opacity: 0.45;
 }
 
 .crowd-label.is-hidden {
@@ -1288,6 +1293,34 @@ button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.crowd-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  max-width: 228px;
+}
+
+.crowd-friction {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #005a9c;
+  white-space: nowrap;
+}
+
+.crowd-sold {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #216e1f;
+  background: #ecf3ec;
+  border: 1px solid #216e1f;
+  border-radius: 999px;
+  padding: 1px 5px;
+  white-space: nowrap;
 }
 
 .crowd-series {
@@ -1736,16 +1769,47 @@ button {
 .legend-card {
   position: absolute;
   left: 12px;
-  right: 12px;
   bottom: 144px;
   z-index: 4;
-  padding: 14px 16px;
+  width: max-content;
+  max-width: min(260px, calc(100% - 24px));
+  padding: 12px 14px;
   border-radius: 16px;
   background: var(--card);
   box-shadow: 0 2px 12px rgba(15, 27, 45, 0.2);
   font-size: 13px;
-  line-height: 1.45;
-  color: var(--ink2);
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.map-key {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.map-key-glow::before,
+.map-key-ring::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  border-radius: 50%;
+  vertical-align: -1px;
+}
+
+.map-key-glow::before {
+  background: rgba(255, 209, 0, 0.85);
+}
+
+.map-key-ring::before {
+  box-shadow: 0 0 0 2px #ffe56b;
 }
 
 .map-screen.sheet-open .legend-card {

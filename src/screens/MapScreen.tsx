@@ -244,14 +244,27 @@ export function MapScreen() {
 
       {points.length > 0 && (
         <>
-          <button type="button" className="legend-button" aria-label="What do the colors mean?" onClick={() => setLegend((v) => !v)}>
+          <button
+            type="button"
+            className="legend-button"
+            aria-label="Map key"
+            aria-expanded={legend}
+            onClick={() => setLegend((v) => !v)}
+          >
             ?
           </button>
           {legend && (
             <div className="legend-card" role="note">
-              <b>Gold glow</b> marks where an event was. Wider means a bigger crowd. The gold is a light wash, so the map still shows through.
-              No count yet is a small circle. <b>★</b> is the biggest known crowd that day. A count reads in
-              thousands, like 40.0k. The list adds “est” when that number is an estimate. A sold-out show with a known room size shows that size, like 18.0k (sold out). No count yet stays in words.
+              <ul className="map-key">
+                <li>
+                  <span className="crowd-friction">Friction</span> from Moderate up
+                </li>
+                <li>
+                  <span className="crowd-sold">Sold Out</span>
+                </li>
+                <li className="map-key-glow">Gold glow is the size of the crowd</li>
+                <li className="map-key-ring">Pale ring is the one you picked</li>
+              </ul>
             </div>
           )}
         </>

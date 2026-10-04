@@ -16,8 +16,6 @@ export interface CrowdPoint {
   soldOut: boolean;
   /** Crowd over capacity when both are known, else null. Never above 1. */
   fill: number | null;
-  /** True for the largest known crowd of the date (the ★). */
-  biggest: boolean;
   /** Hasn't happened yet: drawn as a hollow dot with no crowd glow. */
   upcoming: boolean;
   /** "Sat, Oct 4" when the event is on a different date than the one being viewed. */
@@ -59,16 +57,10 @@ export function crowdPoints(events: CrowdEvent[], date: string): CrowdPoint[] {
       count,
       soldOut,
       fill,
-      biggest: false,
       upcoming: event.date >= today,
       dayTag: event.date === date ? null : shortLocalDate(event.date),
     });
   }
-  const top = points.reduce<CrowdPoint | null>(
-    (best, p) => (p.count !== undefined && (!best || p.count > (best.count ?? 0)) ? p : best),
-    null,
-  );
-  if (top) top.biggest = true;
   return points;
 }
 
