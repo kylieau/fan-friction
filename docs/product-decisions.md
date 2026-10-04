@@ -4,7 +4,7 @@ The thesis: big-city fans get called "fake." Attendance is shaped by competition
 
 ## Map and modes
 - Modes: Crowds | Traffic. Traffic is estimates only ("Estimate · not live"). No live data, no red "jam" color.
-- Heat map (Kylie, Oct 4, 2026): a map chip is the name, the time, and the crowd. Friction and Sold Out stay on the sheet, with Marquee, Major, and Notable. The gold glow is the size of the crowd, not a badge. A pale ring marks the one you picked. The ? opens those two lines. There is no star for the biggest crowd.
+- Heat map (Kylie, Oct 4, 2026): a map chip is the name, the time, and the crowd, in one fixed box about 112×44. The type size stays the same on every chip. A long name ellipsizes on one line. Padding can shrink so the words fit. The box does not grow and the type does not shrink. Friction and Sold Out stay on the sheet, with Marquee, Major, and Notable. The gold glow is the size of the crowd, not a badge. A pale ring marks the one you picked. The ? opens those two lines. There is no star for the biggest crowd.
 - **On-the-map list (Kylie, Oct 4, 2026):** every row shows its venue, as a quiet line. The selected card can still sit above the list. This replaces showing the venue only on the raised card. Map chips are unchanged.
 - Tabs: Map, Nights, Compare, You. Opens on Today, even when quiet. Quiet state offers: next big night, "On this night" (a famous past night from this date), your teams' next game.
 - Nights tab: search, a calendar shaded by night rating with each day's number and a legend, and "Famous nights." No "Jump to" chips.

@@ -25,8 +25,8 @@ Sun Oct 4, 2026 LA seed: eight verified events, three of them flagged `belowFloo
 - That event’s own results never affect its rating. Friction shows from Moderate up.
 - **Concert map chips (Kylie, Oct 4, 2026):** the chip is the headliner only. A tour or anniversary stays off the chip. If the headliner itself does not fit, the chip ellipsizes. The venue is added only when two chips that night would otherwise match. The sheet and the event page keep the full official title.
 - **On-the-map list (Kylie, Oct 4, 2026):** every row shows its venue. The selected card can still sit above the list. This replaces the raised-card-only venue from PR #6. Map chips are unchanged.
-- **Map key (Kylie, Oct 4, 2026):** a map chip is the name, the time, and the crowd. Friction and Sold Out stay on the sheet. The gold glow is crowd size. A pale ring is the one you picked. The ? opens those two lines. There is no star.
-- **Chip placement (Kylie, Oct 4, 2026):** a chip stays a short step from its own venue dot. It may sit on the gold glow. Do not push it to the far edge of the circle.
+- **Map key (Kylie, Oct 4, 2026):** a map chip is the name, the time, and the crowd, in one fixed box about 112×44. Type size stays put. A long name ellipsizes on one line. Friction and Sold Out stay on the sheet. The gold glow is crowd size. A pale ring is the one you picked. The ? opens those two lines. There is no star.
+- **Chip placement (Kylie, Oct 4, 2026):** a chip stays a short step from its own venue dot. It may sit on the gold glow. It does not sit on another venue's dot. Do not push it to the far edge of the circle.
 - Area switcher and NYC filler rules are unchanged. The rating formula is not in code; `src/data/audience.ts` is still the Oct 1 overlap rule until Step 8.
 - Screenshots in cloud sessions: `playwright-core`, `/usr/bin/google-chrome`, swiftshader args, an iPhone user agent, and `localStorage['fan-friction:tipsDone']='true'`. Don’t `pkill` vite.
 

@@ -79,7 +79,7 @@ function sharesHeadliner(event: CrowdEvent, name: string, night: readonly CrowdE
 /**
  * Map chip line 1. A concert is the headliner. The venue is added only when
  * two chips that night would otherwise match. A long headliner ellipsizes in
- * the chip (see .crowd-name). The round, if any, is its own line.
+ * the fixed chip (see .crowd-name). The round stays on the sheet.
  */
 export function mapTitle(event: CrowdEvent, night: readonly CrowdEvent[] = []): string {
   const name = headliner(event);

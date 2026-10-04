@@ -32,15 +32,6 @@ function collided(event: CrowdEvent, night: readonly CrowdEvent[]): boolean {
   return false;
 }
 
-/** Map chip: the short round only, plus the team when that round appears twice. */
-export function chipRound(event: CrowdEvent, night: readonly CrowdEvent[]): string | null {
-  if (!showsStakes(event)) return null;
-  const round = event.stakes!.round;
-  if (!collided(event, night)) return round;
-  const team = teamName(event);
-  return team ? `${round}${DOT}${team}` : round;
-}
-
 /** Sheet and event page. Round, then the game number when a feed has one. */
 export function quietStakes(event: CrowdEvent, night: readonly CrowdEvent[]): string | null {
   if (!showsStakes(event)) return null;

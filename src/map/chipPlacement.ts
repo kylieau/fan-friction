@@ -5,7 +5,7 @@
 // right of it tries the right. When the group is taller than wide, pins above
 // the middle try the top and pins below it try the bottom. The old
 // above-then-right order is only a fallback, and a fallback may not cross
-// another card. The gold circle is not a wall: a card may cover the glow.
+// another card. A card may cover the gold glow. It may not cover another venue's dot.
 // If no short side fits, the card is left off and the mark stays.
 
 export interface Box {
@@ -192,11 +192,17 @@ function clearAt(box: Box, obstacles: Box[], taken: Box[], view: Box): boolean {
   return inside(box, view) && !hits(box, blocked);
 }
 
+/** True when this card would sit on another event's dot. */
+function coversPin(box: Box, pins: ChipCandidate[], selfId: string): boolean {
+  return pins.some((pin) => pin.id !== selfId && pointInBox(pin.x, pin.y, box));
+}
+
 function placeCard(
   c: ChipCandidate,
   frame: PinFrame,
   obstacles: Box[],
   taken: Box[],
+  pins: ChipCandidate[],
   view: Box,
 ): PlacedChip | null {
   const preferred = outwardSide(c, frame);
@@ -204,6 +210,7 @@ function placeCard(
   for (const side of order) {
     const box = boxFor(side, c, CARD_GAP);
     if (!clearAt(box, obstacles, taken, view)) continue;
+    if (coversPin(box, pins, c.id)) continue;
     if (preferred && side !== preferred && crossesChip(c, box, taken)) continue;
     return finish(c, side, box, CARD_GAP);
   }
@@ -217,7 +224,7 @@ export function placeChips(candidates: ChipCandidate[], obstacles: Box[], view: 
   const placed: PlacedChip[] = [];
   const taken: Box[] = [];
   for (const c of ordered) {
-    const spot = placeCard(c, frame, obstacles, taken, view);
+    const spot = placeCard(c, frame, obstacles, taken, candidates, view);
     if (!spot) continue;
     placed.push(spot);
     taken.push(spot.box);

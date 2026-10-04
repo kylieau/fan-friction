@@ -3,7 +3,6 @@ import { type Map as MapLibreMap, Marker } from 'maplibre-gl';
 import { MapContext } from './BaseMap';
 import { clockTime } from '../lib/dates';
 import { mapTitle } from '../lib/eventTitle';
-import { chipRound } from '../lib/stakes';
 import { crowdShort, type CrowdPoint } from './crowdPoints';
 import { glowRadiusPx } from './glowRadius';
 import {
@@ -135,12 +134,9 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       el.className = 'crowd-label is-hidden';
       el.dataset.id = p.event.id;
       const name = escapeHtml(mapTitle(p.event, night));
-      const round = chipRound(p.event, night);
-      const series = round ? `<span class="crowd-series">${escapeHtml(round)}</span>` : '';
       el.innerHTML =
         `<span class="crowd-line">` +
         `<span class="crowd-name">${name}</span>` +
-        series +
         `<span class="crowd-meta">${escapeHtml(chipDetail(p))}</span>` +
         `</span>`;
       el.addEventListener('click', (ev) => {
