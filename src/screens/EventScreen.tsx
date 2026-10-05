@@ -22,6 +22,7 @@ import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
+import { openedMetroId } from '../lib/view';
 import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { hoursOf, milesBetween, runningHours } from '../lib/windows';
@@ -100,7 +101,7 @@ export function EventScreen() {
 
   return (
     <div className="screen page event-page">
-      <MapBack date={date} className="back-link">
+      <MapBack date={date} metroId={e.metroId} className="back-link">
         <ChevronDown /> {shortLocalDate(date)}
       </MapBack>
 
@@ -188,7 +189,7 @@ export function EventScreen() {
         crowd={me.count !== undefined ? `${fmt(me.count)} ${kind ? capital(kind) : ''}` : me.soldOut ? 'Sold Out' : null}
       />
 
-      <MapBack date={date} className="text-link">
+      <MapBack date={date} metroId={e.metroId} className="text-link">
         Back to the map
       </MapBack>
     </div>
@@ -199,12 +200,25 @@ export function EventScreen() {
  * Back to the map she left. From the map, that is the same city, zoom, and
  * selection. A refresh still has that memory. Any other visit keeps the date link.
  */
-function MapBack({ date, className, children }: { date: string; className?: string; children: ReactNode }) {
+function MapBack({
+  date,
+  metroId,
+  className,
+  children,
+}: {
+  date: string;
+  metroId?: string;
+  className?: string;
+  children: ReactNode;
+}) {
   const navigate = useNavigate();
   const location = useLocation();
   const fromMap = Boolean((location.state as { fromMap?: boolean } | null)?.fromMap) || openedFromMap();
   const memoryHref = readMapMemory()?.href;
-  const to = fromMap ? (memoryHref ?? '/') : `/?date=${date}`;
+  const params = new URLSearchParams();
+  if (metroId && metroId !== openedMetroId()) params.set('metro', metroId);
+  params.set('date', date);
+  const to = fromMap ? (memoryHref ?? '/') : `/?${params.toString()}`;
   return (
     <Link
       to={to}

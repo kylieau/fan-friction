@@ -11,6 +11,11 @@ const EVENTS = [...SEED_EVENTS, ...LA_20261003_EVENTS, ...LA_20261004_EVENTS];
 const RATINGS = [...SEED_RATINGS, LA_20261003_RATING, LA_20261004_RATING];
 const METRO_FEELS = [...OCT3_FEELS, ...OCT4_FEELS];
 
+/** Cities the hand-seeded nights actually cover. */
+export function seedMetroIds(): string[] {
+  return [...new Set(EVENTS.map((event) => event.metroId))];
+}
+
 /** Seeded events already in the repo for one date. Live feeds are not included. */
 export function seedEventsOn(metroId: string, date: string): CrowdEvent[] {
   return EVENTS.filter((event) => event.metroId === metroId && event.date === date);

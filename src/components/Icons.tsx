@@ -97,6 +97,16 @@ export function SunIcon() {
   );
 }
 
+/** A small house for the home city. The words "Home" sit on the mark around it. */
+export function HomeIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" {...base} aria-hidden>
+      <path d="M4 11.2 12 4l8 7.2" />
+      <path d="M7 10.2V20h10V10.2" />
+    </svg>
+  );
+}
+
 export function ArrowRight() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" {...base} strokeWidth={2} aria-hidden>
