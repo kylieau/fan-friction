@@ -44,7 +44,7 @@ export function YouScreen() {
     clearOpenedFromMap();
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const [tab, setTab] = useState<'nights' | 'stats'>('nights');
+  const [tab, setTab] = useState<'nights' | 'stats' | 'friends'>('nights');
   const [handle, setHandle] = useState<string | null>(null);
   const [requests, setRequests] = useState<FollowRequest[]>([]);
   const [friends, setFriends] = useState<FriendNight[] | null>(null);
@@ -179,8 +179,6 @@ export function YouScreen() {
         </section>
       )}
 
-      {account && <FriendsSection items={friends} ratings={ratings} />}
-
       <div className="segmented" role="tablist" aria-label="You">
         <button type="button" role="tab" aria-selected={tab === 'nights'} onClick={() => setTab('nights')}>
           Nights
@@ -188,16 +186,19 @@ export function YouScreen() {
         <button type="button" role="tab" aria-selected={tab === 'stats'} onClick={() => setTab('stats')}>
           Stats
         </button>
+        <button type="button" role="tab" aria-selected={tab === 'friends'} onClick={() => setTab('friends')}>
+          Friends
+        </button>
       </div>
 
-      {tab === 'nights' ? (
-        nightsBlock
-      ) : (
+      {tab === 'nights' && nightsBlock}
+      {tab === 'stats' && (
         <>
           {filters}
           <Stats stats={stats} heaviest={heaviest} />
         </>
       )}
+      {tab === 'friends' && <FriendsTab items={friends} ratings={ratings} signedIn={Boolean(account)} />}
     </div>
   );
 }
@@ -219,14 +220,26 @@ function groupByTime(nights: LoggedNight[]): [string, LoggedNight[]][] {
  * list, each row a friend's night with its stamp, tapping through to the event.
  * Before anyone is followed, built-in examples show the shape, each marked Example.
  */
-function FriendsSection({ items, ratings }: { items: FriendNight[] | null; ratings: ReadonlyMap<string, number> }) {
+function FriendsTab({
+  items,
+  ratings,
+  signedIn,
+}: {
+  items: FriendNight[] | null;
+  ratings: ReadonlyMap<string, number>;
+  signedIn: boolean;
+}) {
+  if (!signedIn) {
+    return (
+      <div className="card empty-card">
+        <div className="card-title">Sign in to follow friends.</div>
+      </div>
+    );
+  }
   if (items === null) return null;
-  const list = items.length > 0 ? items.slice(0, 8) : EXAMPLE_FRIEND_NIGHTS;
+  const list = items.length > 0 ? items : EXAMPLE_FRIEND_NIGHTS;
   return (
-    <section className="you-block" aria-labelledby="friends-heading">
-      <h2 id="friends-heading" className="you-heading">
-        Friends
-      </h2>
+    <section className="you-block" aria-label="Friends">
       <ul className="log-list">
         {list.map(({ night, friend, example }) => {
           const rating = example ? null : ratingForNight(night, ratings);
