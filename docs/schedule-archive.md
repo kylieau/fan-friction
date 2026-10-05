@@ -28,7 +28,7 @@ A night logged later is meant to be stamped from the saved schedule for that dat
 - If the night is from before this archive began, there is no saved schedule. That night is **reconstructed**: built afterwards from whatever public listings and seeded nights can still be found. Reconstructed is a label for later. It is not on screen yet.
 - This job does not compute a rating, a stamp, or a lock. The rating formula stays paused.
 
-The stamp rule, when it is built, is the one Kylie locked: the read stays a forecast until **24 hours after the scheduled start**, then it locks. On a night with several events, those 24 hours count from the **latest (main) event's scheduled start**. Tapping "I was there" does not change the clock.
+The stamp rule, when it is built, is the one Kylie locked: the read stays a forecast until **24 hours after the scheduled start**, then it locks. On a night with several events, those 24 hours count from the **last scheduled start time that night**, whichever event is scheduled last. Tapping "I was there" does not change the clock.
 
 ## How it runs
 

@@ -18,7 +18,7 @@ Reasoning: `docs/direction.md` (the log leads) and `docs/product-review-decision
 | Question | Answer |
 |---|---|
 | Stamp lock | 24 hours after the scheduled start. Not 4 AM the next morning. |
-| A night with several events | The 24 hours count from the latest (main) event's scheduled start. |
+| A night with several events | The 24 hours count from the last scheduled start time that night, whichever event is scheduled last. |
 | Save / I was there | Event page only. The Map list stays as it is, including the gold button "See this event." |
 | Famous nights | Keep the current stamps. Hand-check every stamp before it becomes "Were you there?" |
 | Schedule archive | Yes. Plumbing only; nothing new on screen. See `docs/schedule-archive.md`. |

@@ -154,7 +154,7 @@ Kylie locked these after the review above. The review text is unchanged. The sam
 | Question | Locked answer |
 |---|---|
 | Stamp lock | 24 hours after the scheduled start. Not 4 AM the next morning. |
-| A night with several events | The 24 hours count from the latest (main) event's scheduled start. |
+| A night with several events | The 24 hours count from the last scheduled start time that night, whichever event is scheduled last. |
 | Save / I was there | Event page only. The Map list stays as it is. |
 | Famous nights | Keep the current stamps. Hand-check every stamp before any "Were you there?" version. |
 | Schedule archive | Yes. Plumbing only. See `docs/schedule-archive.md`. |
