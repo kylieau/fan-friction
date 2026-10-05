@@ -2,31 +2,24 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
 
-_Last synced: Oct 5, 2026. Docs only, so local Claude Code can resume from current `main`._
+_Last synced: Oct 5, 2026 (Claude Code, evening)._
 
 ## Current state
-Fan/Friction is a personal log of live events you attended, with a friction read stamped on each night. PRs #1–#12 are merged on `main`. This session changes docs only. The app is unchanged. The live site is https://fan-friction.vercel.app (Vercel deploys from `main`).
+Fan/Friction is a personal log of live events you attended, with a friction read stamped on each night. **Accounts are live.** Steps 1–4 of the accounts plan (`docs/accounts-proposal.md`) are on `main` and deployed; Kylie signed in with Google and her 130 nights now come from her account. Next is **step 5, the profile page**: mockup first, then build after she approves.
 
-What landed in PRs #8–#12:
-
-- **PR #8.** Nightly Los Angeles schedule archive. One free job, at 12:15am Pacific, saves the coming 14 days. Nothing new on screen.
-- **PR #9.** Data foundation. A night can hold a stamp. A room under about 5,000 does not feed friction. It can take a nearby score from a bigger event the same night. The stamp is not on screen.
-- **PR #10.** One Map card for the next saved upcoming night, in any city. Compare's heading is "Your nights, side by side."
-- **PR #11.** The forecast freezes at the scheduled start, not at Save. Save stores no forecast. The every-30-minute capture is parked. Until it returns, the stamp uses the latest daily snapshot taken before the start.
-- **PR #12.** Home city, stored on the device. The map opens there and never follows a saved night.
-
-- **Card.** It shows only after Save this night, for the soonest night still ahead, in any city. The three lines are "Next saved night", the chip name, and the date and city, as in "Fri, Oct 9 · Boston". There is no gold button. A tap opens that event in its own city. The map stays where it is. Back restores the same city, zoom, and selection. No saved night means no card. The card does not draw a forecast.
-- **Compare.** The heading is "Your nights, side by side." The tab and the Coming soon chip stay. The rebuild is later.
-- **Home.** The first open asks "Where's home?" The city switcher shows a house icon on the home city. "Set as home" appears only on cities that have events. Today that is Los Angeles. The map always opens on home. Looking at another city does not change home. Home is stored on this device. "Use my location" sits in the first picker and runs only if she taps it. 🚩 Another phone needs accounts.
-- **Map.** Rooms under about 5,000 stay off the map. The Map's look is no longer locked.
+- **Repo:** `main` clean, pushed. Live: https://fan-friction.vercel.app. Vercel env has `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` (Config, all environments; Kylie added them by hand). Local copy in `.env.local` (git-ignored); template in `.env.example`.
+- **Supabase project** `fhfqhcbnzmmkhsselayb`. Migrations run by Kylie in the SQL Editor: `supabase/migrations/0001_accounts.sql` (tables + privacy rules) and `0002_kylie_log.sql` (her 130 nights, 12 private notes; generated from `src/data/seed/kylieLog.ts`). Google provider and email link are on; redirect URLs include the live site, `*-kylie8.vercel.app` previews and localhost:3001.
+- **The Vercel MCP connection is scoped to her personal account, not the `kylie8` team**, so env changes from here fail with 403; she does them in the dashboard.
 
 ## Changes made (this session)
-Docs only. No app code.
-
-- `MEMORY_HANDOFF.md`, `BACKLOG.md`, `AGENTS.md`, `CLAUDE.md`, `docs/product-review-decisions.md`, and `docs/direction.md`.
-- The snapshot now matches merged PRs #8–#12. The Map UI lock is lifted. Under-5,000 rooms stay off the map. The next build is Supabase accounts, waiting on Kylie.
+- Docs: `docs/direction.md`, `docs/product-review-decisions.md`, `docs/accounts-proposal.md`, `docs/second-opinion-direction-prompt.md`, `AGENTS.md` (CLAUDE.md is `@AGENTS.md`).
+- Accounts: `src/data/storage/supabaseClient.ts` (client only when env exists), `supabaseStore.ts` (real cloud store), `storage/index.ts` (phone always, account when signed in; merge on first sign-in; clear phone copy on sign-out), `src/data/account.ts` (session, Google, email link, sign out), `src/components/AccountBlock.tsx` (You's sign-in card), `personalLog.ts` (sync status; seed no longer merged), `HomePicker.tsx` ("Use my location" removed), `YouScreen.tsx` (empty state says sign in).
+- `@supabase/supabase-js` added.
 
 ## Key decisions in force
+- **Accounts (Kylie, Oct 5):** account = login + saved data; profile = public face (display name, avatar, visible nights). She wants profiles **early** so they can be corrected, and people following each other someday. Visibility switch on the account: Only me (default) / People I approve / Anyone. **No feed of strangers' nights. No location, ever.** Private note lives in `night_notes`, never on a shared page. Photos: later, only if free. Sign-in: Google + email link; Apple waits for the native app (🚩 $99/yr).
+- **Profile entry point (approved):** tap your name at the top of You → your profile as others see it, with Edit (display name, visibility). Link form `/p/<handle>`.
+- **Her nights live in her account**, not in the app. New people start empty. `hiddenSeedIds` stays only for old phone copies.
 - **Working rules.** Propose a structural change, then wait for approval. Never delete a feature. Flag a new cost with 🚩 and wait. Kylie locks decisions. Do not reopen a locked answer unless she does.
 - **Stamp clock.** On a night with several events, the clock is the last scheduled start that night, whichever event is scheduled last. The stamp locks 24 hours after that start. Tapping does not move the clock.
 - **Forecast.** Save stores the night only, with no forecast. The every-30-minute start-time capture is parked. Until it returns, the stamp uses the latest daily Los Angeles snapshot saved before the event's start that includes the event, and is labeled as such. A snapshot at the start, or after it, is not used. If that file has no number, no number is added. Los Angeles only.
@@ -40,11 +33,10 @@ Docs only. No app code.
 - Cloud notes: Wikipedia is blocked; ESPN rejects headless-Chrome user agents; screenshots use `playwright-core` with swiftshader args; don't `pkill` vite.
 
 ## Next steps
-1. Next build is Supabase accounts. Do not connect anything until Kylie pastes a project URL and the public anon key. 🚩 The free plan allows 2 active projects and she already uses one. It pauses when a project sits idle.
-2. Accounts will hold the log, and also home city, favorite teams, and artists. The spec comes from Kylie. Do not invent it, and do not build it before she writes it.
-3. Parked until she asks: You "Did you go?"; Famous nights hand-check and the "Were you there?" title; the logging-threshold wording; Traffic; Night story; the rating formula; Ticketmaster; weather UI; favorite cities; Nights per city. The every-30-minute forecast capture stays parked too.
+1. **Step 5, profile page:** mockup for Kylie, then build after approval. Needs a `handle` column on `profiles` (migration 0003), a `/p/:handle` route, display-name edit, the visibility switch, Follow button writing to `follows`.
+2. Then richer entries (score auto-filled, setlist link, who you went with, note, optional photo) and the rating formula. Parked: Traffic, Night story, Famous nights → "Were you there?", You "Did you go?", Ticketmaster.
 
 **Next command to run:**
 ```bash
-git pull --ff-only && sed -n '/## Next/,/## Direction pivot/p' BACKLOG.md
+git pull --ff-only && npm run dev   # step 5 starts with a profile mockup; see docs/accounts-proposal.md
 ```
