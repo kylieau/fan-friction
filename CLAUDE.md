@@ -1,3 +1,3 @@
 @AGENTS.md
 
-Start a session from `MEMORY_HANDOFF.md`. That file is the current snapshot (Oct 5, 2026, `main` through PR #12). Parked work is in `BACKLOG.md`.
+Start a session from `MEMORY_HANDOFF.md`. That file is the current snapshot (it says when it was last synced; `main` is well past PR #12, with Home, Explore, Favorites, accounts and the rating formula landed as direct commits). Parked work is in `BACKLOG.md`.
