@@ -18,6 +18,8 @@ import {
 } from '../data';
 import { FactList } from '../components/FactList';
 import { loggedDateLabel } from '../lib/dates';
+import { clearOpenedFromMap } from '../lib/mapReturn';
+import { eventPath } from '../lib/view';
 
 const TOP = 8;
 
@@ -27,6 +29,9 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
   const nights = useMemo(() => yourNights(log), [log]);
   const today = todayIn(DEFAULT_METRO);
   const [filter, setFilter] = useState('All');
+  useEffect(() => {
+    clearOpenedFromMap();
+  }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [exportNote, setExportNote] = useState('');
 
@@ -213,7 +218,11 @@ function NightRow({ night, rating }: { night: LoggedNight; rating: number | null
   );
   if (night.eventId) {
     return (
-      <Link to={`/event/${night.eventId}`} className="log-row">
+      <Link
+        to={eventPath(night.eventId, night.metroId ?? DEFAULT_METRO.id)}
+        className="log-row"
+        onClick={() => clearOpenedFromMap()}
+      >
         {body}
       </Link>
     );

@@ -313,6 +313,28 @@ export function upcomingPlans(today: string, log: PersonalLog = snapshot): Night
   return log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
 }
 
+/** Today's date in a time zone, "2026-10-04". */
+function todayInZone(timeZone: string, now: Date): string {
+  return now.toLocaleDateString('en-CA', { timeZone });
+}
+
+/**
+ * The one saved night the Map card shows: the soonest plan still ahead, in any
+ * city. "Ahead" uses that night's own time zone, not the city on the map.
+ * A plan keeps the forecast it stored. This does not recalculate it.
+ * Same-day plans follow title order, because a plan does not store a start time.
+ */
+export function nextSavedPlan(log: PersonalLog = snapshot, now = new Date()): NightPlan | null {
+  return (
+    log.plans
+      .filter((plan) => {
+        const zone = METROS[plan.metroId]?.timeZone ?? 'America/Los_Angeles';
+        return plan.date >= todayInZone(zone, now);
+      })
+      .sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title))[0] ?? null
+  );
+}
+
 export function setYouOrder(order: YouOrder) {
   if (snapshot.order === order) return;
   commit({ ...snapshot, order });

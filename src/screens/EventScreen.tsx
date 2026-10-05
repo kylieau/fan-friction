@@ -1,6 +1,6 @@
-import { useEffect, useState, useSyncExternalStore } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { DEFAULT_METRO } from '../config/metros';
+import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import { DEFAULT_METRO, METROS } from '../config/metros';
 import { frictionLabel, showFriction } from '../config/scoreLabels';
 import {
   eventFacts,
@@ -21,6 +21,7 @@ import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
+import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { hoursOf, milesBetween, runningHours } from '../lib/windows';
@@ -32,17 +33,39 @@ const capital = (word: string) => word.charAt(0).toUpperCase() + word.slice(1);
 // the crowd as labeled evidence, and what else was on at the same time.
 export function EventScreen() {
   const { id = '' } = useParams();
+  const [params] = useSearchParams();
   const date = id.slice(0, 10);
+  const requestedMetro = params.get('metro');
   const [day, setDay] = useState<CityDate | null>(null);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
 
   useEffect(() => {
     let current = true;
-    getCityDate(DEFAULT_METRO.id, date).then((d) => current && setDay(d));
+    setDay(null);
+    const saved = getPersonalLog();
+    const planMetro = saved.plans.find((plan) => plan.eventId === id)?.metroId;
+    const loggedMetro = yourNights(saved).find((night) => night.eventId === id)?.metroId;
+    const metros = [requestedMetro, planMetro, loggedMetro, DEFAULT_METRO.id].filter(
+      (metroId, index, all): metroId is string =>
+        Boolean(metroId && METROS[metroId]) && all.indexOf(metroId) === index,
+    );
+    (async () => {
+      let last: CityDate | null = null;
+      for (const metroId of metros) {
+        const next = await getCityDate(metroId, date);
+        if (!current) return;
+        last = next;
+        if (next.events.some((event) => event.id === id)) {
+          setDay(next);
+          return;
+        }
+      }
+      if (current) setDay(last);
+    })();
     return () => {
       current = false;
     };
-  }, [date]);
+  }, [id, date, requestedMetro]);
 
   // A room under the floor can still open. It does not show up as competition on a bigger event.
   const points = day
@@ -57,14 +80,14 @@ export function EventScreen() {
   if (!me) {
     return (
       <div className="screen page">
-        <Link to={`/?date=${date}`} className="back-link">
+        <MapBack date={date} className="back-link">
           <ChevronDown /> {shortLocalDate(date)}
-        </Link>
+        </MapBack>
         <h1 className="page-title">Event not found</h1>
-        <Link to="/" className="gold-button">
+        <MapBack date={date} className="gold-button">
           See the map
           <ArrowRight />
-        </Link>
+        </MapBack>
       </div>
     );
   }
@@ -77,9 +100,9 @@ export function EventScreen() {
 
   return (
     <div className="screen page event-page">
-      <Link to={`/?date=${date}`} className="back-link">
+      <MapBack date={date} className="back-link">
         <ChevronDown /> {shortLocalDate(date)}
-      </Link>
+      </MapBack>
 
       <header className="event-head">
         <h1 className="page-title">{listTitle(e)}</h1>
@@ -102,7 +125,7 @@ export function EventScreen() {
       </header>
 
       <div className="event-marks">
-        {e.date >= todayIn(DEFAULT_METRO) ? (
+        {e.date >= todayIn(METROS[e.metroId] ?? DEFAULT_METRO) ? (
           <button
             type="button"
             className={`mark-button${isPlanned(e.id, log) ? ' on' : ''}`}
@@ -165,10 +188,38 @@ export function EventScreen() {
         crowd={me.count !== undefined ? `${fmt(me.count)} ${kind ? capital(kind) : ''}` : me.soldOut ? 'Sold Out' : null}
       />
 
-      <Link to={`/?date=${date}`} className="text-link">
+      <MapBack date={date} className="text-link">
         Back to the map
-      </Link>
+      </MapBack>
     </div>
+  );
+}
+
+/**
+ * Back to the map she left. From the map, that is the same city, zoom, and
+ * selection. A refresh still has that memory. Any other visit keeps the date link.
+ */
+function MapBack({ date, className, children }: { date: string; className?: string; children: ReactNode }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const fromMap = Boolean((location.state as { fromMap?: boolean } | null)?.fromMap) || openedFromMap();
+  const memoryHref = readMapMemory()?.href;
+  const to = fromMap ? (memoryHref ?? '/') : `/?date=${date}`;
+  return (
+    <Link
+      to={to}
+      className={className}
+      onClick={(event) => {
+        if (!fromMap) return;
+        clearOpenedFromMap();
+        if (window.history.length > 1) {
+          event.preventDefault();
+          navigate(-1);
+        }
+      }}
+    >
+      {children}
+    </Link>
   );
 }
 

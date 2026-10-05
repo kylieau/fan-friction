@@ -82,18 +82,30 @@ export function MapCamera({
   points,
   selectedId,
   sheetOpen,
+  holdCenter,
+  holdZoom,
 }: {
   points: CrowdPoint[];
   selectedId: string | null;
   sheetOpen: boolean;
+  /** When set, the camera stays on this view instead of framing the night again. */
+  holdCenter: [number, number] | null;
+  holdZoom: number | null;
 }) {
   const map = useContext(MapContext);
   const pointsRef = useRef(points);
   pointsRef.current = points;
   const frameKey = points.map((p) => p.event.id).join('|');
+  const holding = holdCenter !== null && holdZoom !== null;
 
   useEffect(() => {
-    if (!map || pointsRef.current.length === 0) return;
+    if (!map) return;
+    if (holding && holdCenter && holdZoom !== null) {
+      map.jumpTo({ center: holdCenter, zoom: holdZoom });
+      setCityZoom(holdZoom);
+      return;
+    }
+    if (pointsRef.current.length === 0) return;
     const bounds = new LngLatBounds();
     for (const p of pointsRef.current) bounds.extend(p.location);
     const pad = measureKeepOut(map, sheetOpen);
@@ -121,14 +133,14 @@ export function MapCamera({
     }
     // The night is framed when its events change, not when the sheet snaps.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [map, frameKey]);
+  }, [map, frameKey, holding, holdZoom, holdCenter]);
 
   useEffect(() => {
-    if (!map || !selectedId) return;
+    if (!map || !selectedId || holding) return;
     const point = pointsRef.current.find((p) => p.event.id === selectedId);
     if (!point) return;
     panMarkIntoOpenMap(map, point.location, measureKeepOut(map, sheetOpen));
-  }, [map, selectedId, sheetOpen]);
+  }, [map, selectedId, sheetOpen, holding]);
 
   return null;
 }
