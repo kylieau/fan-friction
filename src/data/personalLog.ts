@@ -1,11 +1,12 @@
-// Merges the seeded log with what she has marked on this phone.
+// The personal log: what this person marked, on this phone or in their account.
+// Kylie's own nights moved into her account on Oct 5, 2026 (supabase/migrations/0002);
+// the app no longer ships them to everyone. `hiddenSeedIds` stays for old phone copies.
 // Screens reach this only through src/data/index.ts.
 
 import { METROS } from '../config/metros';
 import { listTitle } from '../lib/eventTitle';
 import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
-import { KYLIE_LOG } from './seed/kylieLog';
 import { clearPhoneCopy, isSavingToAccount, mergeLogs, nightStore, readSavedLog, setStoreAccount } from './storage';
 import { onAccountChange } from './account';
 import { asMetroNight, createStamp, forecastBeforeStart, isStampLocked, ratingFromNight } from './night';
@@ -120,18 +121,12 @@ function compareNights(a: LoggedNight, b: LoggedNight) {
   return a.title.localeCompare(b.title);
 }
 
-/** Seeded nights she hasn't removed, plus nights she marked, newest first. */
+/** Nights this person marked, newest first. */
 export function yourNights(log: PersonalLog = snapshot): LoggedNight[] {
-  const hidden = new Set(log.hiddenSeedIds);
-  const seeds = KYLIE_LOG.filter((night) => !hidden.has(night.id));
-  const seedEvents = new Set(seeds.map((night) => night.eventId).filter((id): id is string => Boolean(id)));
-  const added = log.added.filter((night) => !night.eventId || !seedEvents.has(night.eventId));
-  return [...seeds, ...added].sort(compareNights);
+  return [...log.added].sort(compareNights);
 }
 
 export function isWasThere(eventId: string, log: PersonalLog = snapshot): boolean {
-  const seed = KYLIE_LOG.find((night) => night.eventId === eventId);
-  if (seed && !log.hiddenSeedIds.includes(seed.id)) return true;
   return log.added.some((night) => night.eventId === eventId);
 }
 
@@ -278,18 +273,6 @@ function stampNow(event: CrowdEvent, now: Date): NightStamp | undefined {
 
 /** Turn "I was there" on or off for a catalog event. */
 export function toggleWasThere(event: CrowdEvent) {
-  const seed = KYLIE_LOG.find((night) => night.eventId === event.id);
-  if (seed) {
-    const hidden = new Set(snapshot.hiddenSeedIds);
-    if (hidden.has(seed.id)) hidden.delete(seed.id);
-    else hidden.add(seed.id);
-    commit({
-      ...snapshot,
-      hiddenSeedIds: [...hidden],
-      added: snapshot.added.filter((night) => night.eventId !== event.id),
-    });
-    return;
-  }
   const on = snapshot.added.some((night) => night.eventId === event.id);
   if (on) {
     commit({ ...snapshot, added: snapshot.added.filter((night) => night.eventId !== event.id) });

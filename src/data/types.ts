@@ -352,7 +352,7 @@ export interface NightPlan {
 export type YouOrder = 'plans-first' | 'nights-first';
 
 /**
- * What the phone saves. The seeded log ships with the app and is not copied here.
+ * What the phone saves (and, signed in, what the account saves). Since Oct 5, 2026 no log ships inside the app.
  * A browser clear drops marks, plans, and the order setting. Export is the backup.
  */
 export interface PersonalLog {

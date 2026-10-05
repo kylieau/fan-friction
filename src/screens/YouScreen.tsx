@@ -6,6 +6,7 @@ import {
   filterChoices,
   getPersonalLog,
   getRatedDates,
+  canSignIn,
   getAccount,
   getSaveWarning,
   getSyncStatus,
@@ -89,7 +90,11 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
       {shown.length === 0 ? (
         <div className="card empty-card">
           <div className="card-title">
-            {filter === 'All' ? 'No nights yet. Find one on the map.' : `No nights match ${filter}.`}
+            {filter !== 'All'
+              ? `No nights match ${filter}.`
+              : canSignIn() && !account
+                ? 'No nights on this phone. Sign in to see yours, or find one on the map.'
+                : 'No nights yet. Find one on the map.'}
           </div>
           {filter !== 'All' && (
             <button type="button" className="link-button" onClick={() => setFilter('All')}>
@@ -127,7 +132,7 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
         <p className="you-fine">
           {sync === 'account'
             ? 'Downloads a JSON backup of your nights. Your account already keeps a copy.'
-            : 'Downloads a JSON backup. Nights you mark are saved on this phone, and a browser clear can erase them. The log that shipped with the app stays either way.'}
+            : 'Downloads a JSON backup. Nights you mark are saved on this phone, and a browser clear can erase them.'}
         </p>
         {exportNote && (
           <p className="you-fine" role="status">

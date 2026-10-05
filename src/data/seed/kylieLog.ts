@@ -1,4 +1,7 @@
-// Kylie's own log, from docs/kylie-logs.md (sports 2025–2026 and the concerts,
+// Kylie's own log, from docs/kylie-logs.md. Since Oct 5, 2026 it lives in her
+// account (supabase/migrations/0002_kylie_log.sql, generated from this file) and
+// is no longer shipped inside the app. Kept as the source for that migration.
+// Originally: (sports 2025–2026 and the concerts,
 // including 2013–2015). Dates she left rough stay rough. Venues are filled in
 // only where the log names one, or where "vs" means a home game at that team's
 // usual building. Away games and tournament rounds do not borrow an LA rating.
