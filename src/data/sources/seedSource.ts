@@ -4,11 +4,22 @@
 import { LA_20261003_EVENTS, LA_20261003_RATING, METRO_FEELS as OCT3_FEELS } from '../seed/la20261003';
 import { LA_20261004_EVENTS, LA_20261004_RATING, METRO_FEELS as OCT4_FEELS } from '../seed/la20261004';
 import { SEED_EVENTS, SEED_RATINGS } from '../seed/testNights';
+import type { CrowdEvent, DateRating } from '../types';
 import type { EventSource, RatingSource } from './types';
 
 const EVENTS = [...SEED_EVENTS, ...LA_20261003_EVENTS, ...LA_20261004_EVENTS];
 const RATINGS = [...SEED_RATINGS, LA_20261003_RATING, LA_20261004_RATING];
 const METRO_FEELS = [...OCT3_FEELS, ...OCT4_FEELS];
+
+/** Seeded events already in the repo for one date. Live feeds are not included. */
+export function seedEventsOn(metroId: string, date: string): CrowdEvent[] {
+  return EVENTS.filter((event) => event.metroId === metroId && event.date === date);
+}
+
+/** The hand score for one date, when the seed has one. */
+export function seedRatingFor(metroId: string, date: string): DateRating | null {
+  return RATINGS.find((rating) => rating.metroId === metroId && rating.date === date) ?? null;
+}
 
 export const seedEvents: EventSource = {
   id: 'seed',

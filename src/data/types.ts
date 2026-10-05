@@ -137,8 +137,9 @@ export interface CrowdEvent {
   weather?: Weather;
   assessment?: Assessment;
   /**
-   * Under the ~5k map floor. Same idea as a personal-log night: kept in the
-   * catalog, never a map dot, never an On-the-map sheet pin.
+   * Under the ~5,000 friction floor. Kept in the catalog, never a map dot,
+   * and it does not move anyone else's read. It can still carry a nearby
+   * read from bigger events the same night.
    */
   belowFloor?: boolean;
   /** Which source this came from, such as "seed" or "mlb". */
@@ -193,6 +194,61 @@ export interface NightSearchHit {
   matched: string;
 }
 
+// ---------- A night (forecast, then stamp) ----------
+
+/**
+ * Where a stored read came from.
+ * "nearby" means bigger events that night, not this room's own crowd.
+ */
+export type FrictionReadMethod = 'hand' | 'formula' | 'nearby';
+
+/**
+ * One friction read. The number is the night's 1–10 score, when a date has one.
+ * The word is the event's own friction (Moderate, Heavy, …), when that event
+ * feeds friction and an assessment is on file. Either may be absent. Neither
+ * is invented.
+ */
+export interface FrictionRead {
+  rating?: number;
+  friction?: Friction;
+  /** The event's own why line, frozen with an own read. Omitted for a nearby read. */
+  why?: string;
+  method: FrictionReadMethod;
+}
+
+/** What the app showed when the night was saved. Never recalculated. */
+export interface NightForecast extends FrictionRead {
+  kind: 'forecast';
+  /** ISO time the forecast was frozen. */
+  recordedAt: string;
+}
+
+/**
+ * The post-night record. Replaced when the formula improves; `lastUpdated`
+ * moves with that replacement. `reconstructed` means no saved schedule covered
+ * the date, so the listing was rebuilt afterwards.
+ */
+export interface NightStamp extends FrictionRead {
+  kind: 'stamp';
+  /** ISO time of the latest pass. */
+  lastUpdated: string;
+  reconstructed?: boolean;
+}
+
+/**
+ * One metro's calendar night: the events that share a local date.
+ * Ratings, the calendar, and the Map still look up by date. This is the
+ * object those lookups describe. A logged night (below) is one person's
+ * entry on a night like this, with a forecast and a stamp.
+ */
+export interface MetroNight {
+  metroId: string;
+  date: LocalDate;
+  events: CrowdEvent[];
+  /** Latest scheduled start, local "HH:MM". Null when no start is on file. */
+  lastScheduledStart: LocalTime | null;
+}
+
 // ---------- Your nights (personal log) ----------
 
 /**
@@ -222,6 +278,10 @@ export interface LoggedNight {
   title: string;
   /** Filter chips, such as "UCLA MBB" or "Dodgers". */
   tags: string[];
+  /**
+   * Type name used for filters. A game uses the sport (Baseball, Women's basketball).
+   * A show uses "Concerts". This is not a sports-only field.
+   */
   sport: string;
   /** Team or artist names. Opponents she didn't go "for" stay out. */
   sides: string[];
@@ -239,12 +299,25 @@ export interface LoggedNight {
   away?: boolean;
   /** A neutral site, such as a Final Four. Not either team's home city. */
   neutralSite?: boolean;
-  /** Under the 5k map floor: logged, never rated, never a dot. */
+  /**
+   * Under the ~5,000 friction floor: not a map dot, and it does not feed friction.
+   * It can still take a nearby read from bigger events that night.
+   */
   belowFloor?: boolean;
   /** In this metro. Away nights do not borrow the home city's rating. */
   inMetro?: boolean;
   metroId?: string;
   kind: EventKind;
+  /**
+   * The read shown when this night was saved as a plan. Absent when she did
+   * not plan it here. Never recalculated.
+   */
+  forecast?: NightForecast;
+  /**
+   * The post-night record. Absent until the stamp locks, or when there was
+   * no read to store. May be replaced when the formula improves.
+   */
+  stamp?: NightStamp;
 }
 
 /** An upcoming night she flagged. Separate from "I was there". */
@@ -255,6 +328,8 @@ export interface NightPlan {
   eventId?: string;
   title: string;
   venue?: string;
+  /** The read shown when she saved the plan. Never recalculated. */
+  forecast?: NightForecast;
 }
 
 export type YouOrder = 'plans-first' | 'nights-first';

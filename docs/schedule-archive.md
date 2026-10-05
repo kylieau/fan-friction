@@ -44,3 +44,11 @@ No new key, no credit card, no Ticketmaster.
 - It does not add Save or "I was there" anywhere. Those stay on the event page.
 - It does not start Traffic, Night story, accounts, or the rating formula.
 - It does not archive concerts from a ticket feed. Ticketmaster stays a later decision, and it needs a yes before any key.
+
+## How a later stamp knows
+
+The app keeps a short list of these windows in `src/data/scheduleArchiveIndex.ts`. The archive script refreshes that list from the files in this folder. It does not compute a rating.
+
+- A date inside a window is covered. A stamp for that date is not marked reconstructed.
+- A date before the first file, or a past date no window covers, is reconstructed. That flag can be stored on a stamp. It is not shown.
+- A date that is still ahead, and not inside a window yet, is simply not saved yet. It is not called reconstructed.
