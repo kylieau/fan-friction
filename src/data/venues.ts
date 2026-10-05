@@ -76,6 +76,7 @@ export const VENUES: Record<string, Venue> = {
   'hollywood-bowl': {
     id: 'hollywood-bowl',
     metroId: 'la',
+    strained: true,
     names: [{ name: 'Hollywood Bowl' }],
     location: [-118.3391, 34.1122],
     capacity: [{ seats: 17500 }],
@@ -84,6 +85,7 @@ export const VENUES: Record<string, Venue> = {
   'rose-bowl': {
     id: 'rose-bowl',
     metroId: 'la',
+    strained: true,
     names: [{ name: 'Rose Bowl' }],
     location: [-118.1676, 34.1613],
     capacity: [{ seats: 89702, note: 'Sources disagree (some say 92,542); recheck before showing it' }],

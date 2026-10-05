@@ -39,6 +39,8 @@ export interface Venue {
   capacity: Capacity[];
   /** Open-air venues feel the weather; roofed ones mostly don't. */
   roof: 'open' | 'covered' | 'indoor';
+  /** A single-road or hillside site (Hollywood Bowl, Rose Bowl): always a bit harder to reach. Gridlock × 1.25. */
+  strained?: boolean;
 }
 
 // ---------- Teams ----------

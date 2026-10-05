@@ -8,11 +8,13 @@ import type { CrowdEvent } from '../types';
 import { weatherForEvent } from '../weather';
 import { dateCrowdFight, type DateCrowdFight } from './crowdFight';
 import { dateConditions, eventConditions, type EventConditions, weatherGlyph } from './weather';
+import { dateGridlock, gridlockWhy, type DateGridlock } from './gridlock';
 
 export { eventCrowdFight, dateCrowdFight, timeFactor, verdictFromScore } from './crowdFight';
 export { occasionFor, occasionPoints, occasionFromPoints } from './occasion';
 export { overlapTier, isBroad } from './overlap';
 export { eventConditions, dateConditions, weatherGlyph, feelsLikeLabel, isOpenAir } from './weather';
+export { dateGridlock, zonesFor } from './gridlock';
 
 export interface Reason {
   name: 'Crowd fight' | 'Gridlock' | 'Conditions';
@@ -29,6 +31,7 @@ export interface DateRead {
   crowdFight: DateCrowdFight;
   /** Per open-air event with stored weather. */
   conditions: { event: CrowdEvent; conditions: EventConditions }[];
+  gridlock: DateGridlock;
   /** Firm: every input known. Likely: one guessed. Early: more than one, or far out. */
   confidence: 'Firm' | 'Likely' | 'Early';
 }
@@ -78,9 +81,13 @@ export function rateDate(metroId: string, events: readonly CrowdEvent[], before?
     .filter((row): row is { event: CrowdEvent; conditions: EventConditions } => row.conditions !== null);
   const condScore = dateConditions(conditions.map((row) => ({ capacity: listedCapacity(row.event) ?? 0, conditions: row.conditions })));
   if (condScore !== null) reasons.push({ name: 'Conditions', score: condScore, why: conditionsWhy(conditions) });
+  const date = events[0]?.date ?? '';
+  const rainy = new Set(conditions.filter((row) => row.conditions.cause === 'rain').map((row) => row.event.id));
+  const gridlock = dateGridlock(metroId, date, events, rainy);
+  if (events.length > 0) reasons.push({ name: 'Gridlock', score: gridlock.score, why: gridlockWhy(gridlock, date) });
   const rating = Number(formatScore(combine(reasons.map((r) => r.score))));
   const lead = reasons.reduce<Reason | null>((best, r) => (best === null || r.score > best.score ? r : best), null);
   const guessed = crowdFight.events.filter((row) => row.estimated).length;
   const confidence = guessed === 0 ? 'Firm' : guessed === 1 ? 'Likely' : 'Early';
-  return { rating, reasons, lead, why: lead?.why ?? '', crowdFight, conditions, confidence };
+  return { rating, reasons, lead, why: lead?.why ?? '', crowdFight, conditions, gridlock, confidence };
 }
