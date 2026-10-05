@@ -1,14 +1,20 @@
-# Saves the Los Angeles schedule for the coming two weeks.
-# Runs a little after midnight Los Angeles time (08:15 UTC is 1:15am during
-# daylight time and 12:15am during standard time). Free: no new accounts or keys.
+# Saves the Los Angeles schedule, and a forecast for each event just before it starts.
+# The listing run is 12:15am Pacific, year-round.
+# The start-time runs are every 30 minutes from 9:17am through 11:47pm Pacific,
+# at :17 and :47 so they stay off the top of the hour.
+# Free on this public repo: no new accounts or keys.
 # The job commits straight to main so the night is saved without waiting on a
 # review. If main rejects the push, it opens a pull request instead.
+# A forecast list the app uses will build the site. A listing-only commit does not.
 
 name: Nightly schedule archive
 
 on:
   schedule:
-    - cron: '15 8 * * *'
+    - cron: '15 0 * * *'
+      timezone: America/Los_Angeles
+    - cron: '17,47 9-23 * * *'
+      timezone: America/Los_Angeles
   workflow_dispatch:
 
 permissions:
@@ -38,7 +44,7 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Save today's schedule
+      - name: Save today's schedule and any start-time forecasts
         run: npm run archive-schedule
 
       - name: Commit and push the snapshot
@@ -48,13 +54,17 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/schedule-archive
+          git add data/schedule-archive src/data/scheduleArchiveIndex.ts src/data/startForecastIndex.ts
           if git diff --cached --quiet; then
             echo "No schedule change to commit."
             exit 0
           fi
           day=$(git diff --cached --name-only | sed -n 's|.*/\([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]\)\.json|\1|p' | head -n 1)
-          git commit -m "Save the Los Angeles schedule for ${day:-the coming days}"
+          if git diff --cached --name-only | grep -q '/start-forecasts/'; then
+            git commit -m "Save Los Angeles start-time forecasts"
+          else
+            git commit -m "Save the Los Angeles schedule for ${day:-the coming days}"
+          fi
           if git push origin HEAD:main; then
             echo "Saved on main."
             exit 0
@@ -63,4 +73,4 @@ jobs:
           git push origin "HEAD:refs/heads/${branch}"
           gh pr create --base main --head "$branch" \
             --title "Save the Los Angeles schedule for ${day:-the coming days}" \
-            --body "The nightly schedule archive could not commit straight to main, so this pull request holds the snapshot. Nothing in the app changes. Merge it so the night is not left as reconstructed."
+            --body "The schedule archive could not commit straight to main, so this pull request holds the snapshot. Nothing on screen changes. Merge it so the night is not left without a saved forecast."

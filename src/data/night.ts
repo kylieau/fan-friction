@@ -1,6 +1,7 @@
 // A night is the record the log is about: the events on one local date, the
-// forecast frozen when someone saves a plan, and the stamp written after the
-// night locks. Date-keyed lookups stay. Nothing here changes the Map.
+// forecast frozen at an event's scheduled start, and the stamp written after
+// the night locks. Save does not copy a forecast. Date-keyed lookups stay.
+// Nothing here changes the Map.
 
 import { METROS } from '../config/metros';
 import type { Friction } from '../config/scoreLabels';
@@ -8,14 +9,15 @@ import { isValidDate } from '../lib/dates';
 import type {
   CrowdEvent,
   DateRating,
+  ForecastBasisKind,
   FrictionRead,
   LocalDate,
   LocalTime,
   LoggedNight,
   MetroNight,
-  NightForecast,
   NightStamp,
 } from './types';
+import { ARCHIVE_FORECASTS, START_FORECASTS } from './startForecastIndex';
 import { SCHEDULE_SNAPSHOTS } from './scheduleArchiveIndex';
 import { capacityOn, VENUES } from './venues';
 
@@ -221,22 +223,63 @@ export function frictionReadForEvent(
   };
 }
 
-/** Freeze a read. Calling this again is not how a forecast is updated; keep the saved one. */
-export function captureForecast(read: FrictionRead, recordedAt: string): NightForecast {
-  return { kind: 'forecast', ...read, recordedAt };
+export interface StampForecast {
+  read: FrictionRead;
+  forecastBasis: ForecastBasisKind;
+  forecastCapturedAt: string;
 }
 
-/** A saved forecast stays as written. */
-export function retainForecast(saved: NightForecast): NightForecast {
-  return saved;
+/**
+ * The forecast a stamp lines up against.
+ * Los Angeles only. A start-time capture wins. If that capture exists but
+ * recorded no score and no friction word, nothing is filled in.
+ * With no start-time capture, the nearest daily archive row is used, and
+ * only when that row itself has a number. No number is invented.
+ */
+export function startTimeForecastFor(event: Pick<CrowdEvent, 'id' | 'metroId' | 'date' | 'start'>): StampForecast | null {
+  if (event.metroId !== 'la') return null;
+  const startRow = START_FORECASTS.find((row) => row.metroId === event.metroId && row.eventId === event.id);
+  if (startRow) {
+    const read = startRow.read ? readBody(startRow.read) : null;
+    if (!read || !startRow.capturedAt) return null;
+    return { read, forecastBasis: 'start-time', forecastCapturedAt: startRow.capturedAt };
+  }
+
+  const zone = METROS[event.metroId]?.timeZone ?? 'America/Los_Angeles';
+  const target = wallClockToUtc(event.date, event.start ?? '12:00', zone).getTime();
+  const rows = ARCHIVE_FORECASTS.filter((row) => row.metroId === event.metroId && row.eventId === event.id && row.capturedAt);
+  if (rows.length === 0) return null;
+  const nearest = rows.reduce((best, row) => closerArchive(best, row, target));
+  const read = nearest.read ? readBody(nearest.read) : null;
+  if (!read) return null;
+  return { read, forecastBasis: 'nearest-archive', forecastCapturedAt: nearest.capturedAt };
 }
 
-export function createStamp(read: FrictionRead, lastUpdated: string, reconstructed: boolean): NightStamp {
+function closerArchive<T extends { capturedAt: string }>(best: T, row: T, target: number): T {
+  const bestAt = new Date(best.capturedAt).getTime();
+  const rowAt = new Date(row.capturedAt).getTime();
+  const bestDelta = Math.abs(bestAt - target);
+  const rowDelta = Math.abs(rowAt - target);
+  if (rowDelta < bestDelta) return row;
+  if (rowDelta > bestDelta) return best;
+  const rowBefore = rowAt <= target;
+  const bestBefore = bestAt <= target;
+  if (rowBefore && !bestBefore) return row;
+  return best;
+}
+
+export function createStamp(
+  read: FrictionRead,
+  lastUpdated: string,
+  reconstructed: boolean,
+  basis?: Pick<StampForecast, 'forecastBasis' | 'forecastCapturedAt'>,
+): NightStamp {
   return {
     kind: 'stamp',
     ...read,
     lastUpdated,
     reconstructed: reconstructed ? true : undefined,
+    ...(basis ? { forecastBasis: basis.forecastBasis, forecastCapturedAt: basis.forecastCapturedAt } : {}),
   };
 }
 
@@ -255,6 +298,9 @@ export function refreshStamp(
     ...read,
     lastUpdated,
     reconstructed: reconstructed ?? saved.reconstructed,
+    ...(saved.forecastBasis && saved.forecastCapturedAt
+      ? { forecastBasis: saved.forecastBasis, forecastCapturedAt: saved.forecastCapturedAt }
+      : {}),
   };
 }
 
@@ -272,16 +318,6 @@ function readBody(value: unknown): FrictionRead | null {
   return { rating, friction, why, method: raw.method };
 }
 
-/** Drop a broken forecast. A bad one never replaces a night or a plan. */
-export function parseForecast(value: unknown): NightForecast | undefined {
-  if (!value || typeof value !== 'object') return undefined;
-  const raw = value as Partial<NightForecast>;
-  if (raw.kind !== 'forecast' || typeof raw.recordedAt !== 'string' || !raw.recordedAt) return undefined;
-  const body = readBody(value);
-  if (!body) return undefined;
-  return { kind: 'forecast', ...body, recordedAt: raw.recordedAt };
-}
-
 /** Drop a broken stamp. The night itself still loads. */
 export function parseStamp(value: unknown): NightStamp | undefined {
   if (!value || typeof value !== 'object') return undefined;
@@ -289,11 +325,14 @@ export function parseStamp(value: unknown): NightStamp | undefined {
   if (raw.kind !== 'stamp' || typeof raw.lastUpdated !== 'string' || !raw.lastUpdated) return undefined;
   const body = readBody(value);
   if (!body) return undefined;
+  const forecastBasis = raw.forecastBasis === 'start-time' || raw.forecastBasis === 'nearest-archive' ? raw.forecastBasis : undefined;
+  const forecastCapturedAt = typeof raw.forecastCapturedAt === 'string' && raw.forecastCapturedAt ? raw.forecastCapturedAt : undefined;
   return {
     kind: 'stamp',
     ...body,
     lastUpdated: raw.lastUpdated,
     reconstructed: raw.reconstructed === true ? true : undefined,
+    ...(forecastBasis && forecastCapturedAt ? { forecastBasis, forecastCapturedAt } : {}),
   };
 }
 
