@@ -44,7 +44,9 @@ Mean error against the hand ratings: about 1.6 for v3's Crowd fight; about 1.1 f
 ## Kylie's rulings (Oct 5)
 - **Hand ratings are not the target.** They stay in the data for comparison only. The formula is tuned to be accurate (attendance data, held-out dates), not to her feel. Her role: naming the considerations that belong in it.
 - Open-Meteo's non-commercial limit is logged in `build-brief.md` under Cost milestones.
-- Chargers Major vs. Notable, Dodgers–Braves Routine vs. Notable, and Conditions: arguments requested before ruling. **Build is on hold until she rules.**
+- **Chargers' first LA home game is Major.** Occasion is about the moment; fan-base size is the Broad flag's job. "First game in a new market or stadium" stays worth 3.
+- **Dodgers–Braves 4/1/25 is Routine**, with a new **storyline** input worth +1 (a star facing a former team, a rematch of last season's playoff series, a banner night). Freeman alone leaves it at 1; Freeman plus a banner-raising opener would make it Notable. Rivalry stays 2 for standing rivalries (Giants, Padres).
+- **Conditions is in**, as its own visible reason, open-air venues only. Kylie's view: weather is competition too, with staying home and with everything else people could do, and a forecast is something the app adds that a schedule can't. **Heat gets a per-city baseline** so Phoenix in August doesn't read hot every night: the threshold is the city's normal for that month (from the weather archive) plus a margin, with 85°F as the floor. Rain's small overlap with Gridlock is accepted. She has a saved "condition line" (wording for how it shows) to paste in.
 
 ## Pushbacks for Kylie to rule on
 1. **Hand ratings.** The review says night 12 (9/3/22, 100°F day, four big events) reads a 9, not 7; night 11 (9/17/17) a 6, not 7; and night 1's USC "Extreme" looks result-shaped. If the hand ratings move, the fit improves; if they stand, they're the target.
