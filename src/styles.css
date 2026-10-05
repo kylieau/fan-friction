@@ -3228,16 +3228,6 @@ button {
   text-transform: uppercase;
 }
 
-.day-cell.today .day-name::after {
-  content: '';
-  display: block;
-  width: 4px;
-  height: 4px;
-  margin: 2px auto 0;
-  border-radius: 2px;
-  background: currentColor;
-}
-
 .day-num {
   font-variant-numeric: tabular-nums;
 }

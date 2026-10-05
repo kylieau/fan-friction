@@ -12,8 +12,8 @@ const AHEAD = 4;
 
 /**
  * The week strip above the map: seven days with their reads, the day being
- * viewed in the third slot with a blue border; today keeps its weekday name
- * and wears a dot. Tap a day to move the map to it. Reads on days ahead sit
+ * viewed in the third slot with a blue border; today keeps its weekday name.
+ * Tap a day to move the map to it. Reads on days ahead sit
  * back a little, since they are forecasts.
  */
 export function DayStrip({ metro, today, date, span }: { metro: Metro; today: string; date: string; span: WhenSpan }) {
