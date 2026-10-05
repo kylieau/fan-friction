@@ -77,10 +77,25 @@ export function heatThresholdF(metroId: string, date: LocalDate): number {
   return Math.max(HEAT_FLOOR_F, normal != null ? normal + HEAT_MARGIN_F : 0);
 }
 
+/**
+ * Weather counts unless the building is fully indoor. A covered, open-sided
+ * stadium (SoFi) still feels the day (Kylie, Oct 5). A retractable roof is a
+ * game-time note, not a third category.
+ */
 export function isOpenAir(event: CrowdEvent): boolean {
   if (event.place.type !== 'venue') return true;
   const venue = VENUES[event.place.venueId];
-  return venue ? venue.roof === 'open' : true;
+  return venue ? venue.roof !== 'indoor' : true;
+}
+
+/** The hours an event runs, for the event page's high and low: start through end plus the exit hour. */
+export function weatherHoursFor(event: CrowdEvent): number[] {
+  const start = weatherHourFor(event);
+  const length = event.audience.domain === 'sports' ? ({ football: 3.25, baseball: 2.75, basketball: 2.5, hockey: 2.5, soccer: 2 } as Record<string, number>)[event.audience.sport] ?? 2.5 : 3;
+  const end = Math.min(23, Math.ceil(start + length));
+  const hours: number[] = [];
+  for (let h = start; h <= end; h += 1) hours.push(h);
+  return hours;
 }
 
 export interface EventConditions {

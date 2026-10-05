@@ -2,7 +2,7 @@ import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { frictionLabel, showFriction } from '../config/scoreLabels';
-import { feelsLikeLabel, isOpenAir, weatherForEvent, weatherGlyph } from '../data';
+import { feelsLikeLabel, isOpenAir, weatherForEvent, weatherGlyph, weatherRangeForEvent } from '../data';
 import {
   eventFacts,
   getCityDate,
@@ -207,10 +207,14 @@ function WeatherDetail({ event }: { event: CrowdEvent }) {
   if (!isOpenAir(event)) return null;
   const row = weatherForEvent(event);
   if (!row) return null;
+  const range = weatherRangeForEvent(event);
   const rows: [string, string][] = [
     ['Feels like', feelsLikeLabel(row, event.metroId)],
     ['Air', `${Math.round(row.tempF)}°`],
   ];
+  if (range && range.high.feelsLikeF !== range.low.feelsLikeF) {
+    rows.push(['During', `${feelsLikeLabel(range.low, event.metroId)}–${feelsLikeLabel(range.high, event.metroId)}`]);
+  }
   if (row.humidity != null) rows.push(['Humidity', `${Math.round(row.humidity)}%`]);
   if (row.windMph != null) rows.push(['Wind', `${Math.round(row.windMph)} mph`]);
   if (row.uvIndex != null) rows.push(['UV', `${Math.round(row.uvIndex)}`]);
@@ -224,7 +228,6 @@ function WeatherDetail({ event }: { event: CrowdEvent }) {
         </span>
         <span className="weather-title">
           {row.basis === 'forecast' ? 'Forecast' : 'Weather'} at {event.start ? clockTime(event.start) : 'start'}
-          {row.basis === 'reanalysis' ? ' · estimated' : ''}
         </span>
       </div>
       <dl className="weather-grid">

@@ -94,6 +94,13 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Do
 - Do not import Los Angeles rules onto New Jersey, Long Island, or the boroughs.
 - Collection rules in that prompt: MLB, NBA, NHL, NFL, and at least one stadium or arena concert, plus one ordinary weeknight. Prefer the same dates as the LA seeded nights. Goal is 5 if those dates can carry it. Cap is 10. Add another date only to cover a league or shape the seed dates missed. Venue table only for buildings those nights use.
 
+## Weather (Oct 5)
+- **City point:** the Map header's feels-like is read at the metro's map center (for LA that sits near Inglewood, not downtown). Kylie: fine for now, return to it once more is figured out.
+- **Per-city heat baseline:** the concept is in the code (`MONTHLY_NORMAL_F` in `src/data/formula/weather.ts`), the table is empty, so the 85°F floor applies. Needs research so it is consistent across cities; fill when a second city arrives.
+- **Retractable roofs:** a game-time note on the event, not a third roof category. Not built.
+- **Open-Meteo** is free for non-commercial use (cost milestone in `docs/build-brief.md`); attribution is on Settings.
+- Weather at the start hour is the headline; the event page also shows the feels-like range across the event. The date page shows start-hour only.
+
 ## Home and Explore (Oct 5)
 - Tonight needs a day with events; the mini map frames every venue that day (zooms out to Anaheim when the Ducks play). Hidden: map chips and credits inside the mini map.
 - Coming up only knows LA home games (MLB, ESPN); away games and concerts arrive with wider sources. Favorites without a catalog record (UCLA WBB, artists) show no upcoming dates yet.

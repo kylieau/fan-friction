@@ -42,7 +42,7 @@ function sameValues(a, b) {
 
 let exitCode = 0;
 try {
-  const { fetchWeather, isOpenAir, weatherHourFor } = await server.ssrLoadModule('/src/data/formula/weather.ts');
+  const { fetchWeather, isOpenAir, weatherHourFor, weatherHoursFor } = await server.ssrLoadModule('/src/data/formula/weather.ts');
   const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
   const { METROS } = await server.ssrLoadModule('/src/config/metros.ts');
   const metro = METROS[METRO];
@@ -72,7 +72,7 @@ try {
     if (!venue) continue;
     const key = `${venue.id}|${event.date}`;
     const ask = asks.get(key) ?? { venueId: venue.id, location: venue.location, date: event.date, hours: new Set() };
-    ask.hours.add(weatherHourFor(event));
+    for (const h of weatherHoursFor(event)) ask.hours.add(h);
     asks.set(key, ask);
   }
   // The city point, each date in play, at every start hour that day plus 7 pm: the Map

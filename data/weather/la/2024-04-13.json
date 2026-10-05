@@ -50,6 +50,54 @@
       "shortwave": 33,
       "cloudCover": 100,
       "code": 63
+    },
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2024-04-13",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T21:06:56.481Z",
+      "feelsLikeF": 44.8,
+      "tempF": 51.5,
+      "humidity": 75,
+      "windMph": 12.2,
+      "precipMm": 1.4,
+      "shortwave": 18,
+      "cloudCover": 100,
+      "code": 61
+    },
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2024-04-13",
+      "hour": 20,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T21:06:56.481Z",
+      "feelsLikeF": 45.6,
+      "tempF": 50.2,
+      "humidity": 77,
+      "windMph": 6.9,
+      "precipMm": 1,
+      "shortwave": 2,
+      "cloudCover": 100,
+      "code": 55
+    },
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2024-04-13",
+      "hour": 21,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T21:06:56.481Z",
+      "feelsLikeF": 48.4,
+      "tempF": 50.7,
+      "humidity": 74,
+      "windMph": 1.2,
+      "precipMm": 0.3,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 51
     }
   ]
 }

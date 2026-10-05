@@ -56,6 +56,42 @@
       "shortwave": 0,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "rose-bowl",
+      "date": "2026-10-16",
+      "hour": 22,
+      "basis": "forecast",
+      "capturedAt": "2026-10-05T21:07:15.232Z",
+      "feelsLikeF": 73.4,
+      "tempF": 75,
+      "humidity": 36,
+      "windMph": 1.6,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 10,
+      "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "rose-bowl",
+      "date": "2026-10-16",
+      "hour": 23,
+      "basis": "forecast",
+      "capturedAt": "2026-10-05T21:07:15.232Z",
+      "feelsLikeF": 72.6,
+      "tempF": 74.3,
+      "humidity": 37,
+      "windMph": 1.8,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 2,
+      "code": 0
     }
   ]
 }

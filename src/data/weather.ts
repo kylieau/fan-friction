@@ -5,7 +5,7 @@
 // weather; pre-app dates use the reanalysis archive, labeled estimated.
 
 import { WEATHER_ROWS } from './weatherIndex';
-import { weatherHourFor, type WeatherRow } from './formula/weather';
+import { weatherHourFor, weatherHoursFor, type WeatherRow } from './formula/weather';
 import type { CrowdEvent, LocalDate } from './types';
 
 function rowsFor(metroId: string, venueId: string, date: LocalDate, hour: number): WeatherRow[] {
@@ -40,4 +40,15 @@ export function cityWeather(metroId: string, date: LocalDate, events: readonly C
   const hours = events.map(weatherHourFor).sort((a, b) => a - b);
   const hour = hours.length > 0 ? hours[Math.floor(hours.length / 2)] : 19;
   return weatherAt(metroId, 'city', date, hour) ?? weatherAt(metroId, 'city', date, 19);
+}
+
+/** The feels-like high and low across the event's hours, for the event page only. */
+export function weatherRangeForEvent(event: CrowdEvent, before?: Date): { high: WeatherRow; low: WeatherRow } | undefined {
+  if (event.place.type !== 'venue') return undefined;
+  const rows = weatherHoursFor(event)
+    .map((hour) => weatherAt(event.metroId, event.place.type === 'venue' ? event.place.venueId : '', event.date, hour, before))
+    .filter((r): r is WeatherRow => r !== undefined);
+  if (rows.length < 2) return undefined;
+  const sorted = [...rows].sort((a, b) => a.feelsLikeF - b.feelsLikeF);
+  return { high: sorted[sorted.length - 1], low: sorted[0] };
 }

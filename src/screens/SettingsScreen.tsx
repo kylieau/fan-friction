@@ -105,6 +105,13 @@ export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
         <button type="button" className="settings-row" onClick={onShowTips}>
           Show the tips again
         </button>
+        <p className="you-fine">
+          Weather data by{' '}
+          <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">
+            Open-Meteo.com
+          </a>
+          . Maps by OpenFreeMap and OpenStreetMap.
+        </p>
       </div>
     </div>
   );

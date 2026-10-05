@@ -321,7 +321,6 @@ function VenueWeather({ event }: { event: CrowdEvent }) {
         {weatherGlyph(row)}
       </span>{' '}
       {feelsLikeLabel(row, event.metroId)}
-      {row.basis === 'reanalysis' ? ' est.' : ''}
     </>
   );
 }
