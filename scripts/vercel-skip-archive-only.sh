@@ -1,6 +1,7 @@
 #!/bin/bash
 # Vercel: exit 0 skips the deploy, exit 1 builds.
-# A nightly schedule file does not change the app, so it should not redeploy.
+# A nightly schedule file by itself does not change the app, so it should not redeploy.
+# A commit that also updates the forecast list in src does build, because the stamp reads that list.
 set -euo pipefail
 
 if ! git rev-parse --verify HEAD^ >/dev/null 2>&1; then

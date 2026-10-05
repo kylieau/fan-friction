@@ -4,6 +4,7 @@
 
 import { METROS } from '../config/metros';
 import type { CrowdEvent, LocalDate } from './types';
+import { archivedReads, type ArchivedEventRead } from './forecastCapture';
 import { loadEspnSchedule } from './sources/espnSource';
 import { loadMlbSchedule } from './sources/mlbSource';
 import { seedEvents } from './sources/seedSource';
@@ -38,10 +39,16 @@ export interface ScheduleSnapshot {
   note: string;
   sources: ScheduleSnapshotSource[];
   events: CrowdEvent[];
+  /**
+   * The read on file for each event at this capture. A later stamp uses the
+   * latest of these saved before the event's start. A missing read means there
+   * was no score and no friction word. None are filled in.
+   */
+  forecasts: ArchivedEventRead[];
 }
 
 const NOTE =
-  'Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. Draft words copied from a seeded row are not a locked stamp.';
+  'Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.';
 
 function addCalendarDays(isoDate: string, days: number): string {
   const [year, month, day] = isoDate.split('-').map(Number);
@@ -87,6 +94,7 @@ export async function collectScheduleArchive(now = new Date()): Promise<Schedule
   const mlbWindow = inWindow(mlb, capturedOn, through);
   const espnWindow = inWindow(espn, capturedOn, through);
   const seedWindow = inWindow(seed, capturedOn, through);
+  const events = [...mlbWindow, ...espnWindow, ...seedWindow].sort(byListing);
 
   return {
     schema: 1,
@@ -103,6 +111,7 @@ export async function collectScheduleArchive(now = new Date()): Promise<Schedule
       { id: 'espn', name: 'ESPN schedules', inWindow: espnWindow.length },
       { id: 'seed', name: seedEvents.name, inWindow: seedWindow.length },
     ],
-    events: [...mlbWindow, ...espnWindow, ...seedWindow].sort(byListing),
+    events,
+    forecasts: archivedReads(events),
   };
 }

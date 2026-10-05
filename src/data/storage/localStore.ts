@@ -2,7 +2,7 @@
 // The seeded nights are not stored here; they ship with the app.
 
 import { APP } from '../../config/app';
-import { parseForecast, parseStamp } from '../night';
+import { parseStamp } from '../night';
 import type { DatePrecision, LoggedNight, LoggedWhen, NightPlan, PersonalLog, YouOrder } from '../types';
 import type { NightStore } from './types';
 
@@ -39,11 +39,9 @@ function isNight(value: unknown): value is LoggedNight {
 }
 
 function cleanNight(night: LoggedNight): LoggedNight {
-  const forecast = parseForecast(night.forecast);
   const stamp = parseStamp(night.stamp);
   const next: LoggedNight = { ...night };
-  if (forecast) next.forecast = forecast;
-  else delete next.forecast;
+  delete next.forecast;
   if (stamp) next.stamp = stamp;
   else delete next.stamp;
   return next;
@@ -56,10 +54,8 @@ function isPlan(value: unknown): value is NightPlan {
 }
 
 function cleanPlan(plan: NightPlan): NightPlan {
-  const forecast = parseForecast(plan.forecast);
   const next: NightPlan = { ...plan };
-  if (forecast) next.forecast = forecast;
-  else delete next.forecast;
+  delete next.forecast;
   return next;
 }
 
