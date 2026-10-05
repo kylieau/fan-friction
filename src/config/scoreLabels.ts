@@ -2,10 +2,12 @@
 // Change a word here and it changes everywhere.
 
 // The night's 1–10 rating always shows with its word: "Cooked · 9.0/10".
+// Oct 5, 2026: "Mid" read as an insult (mediocre), so the middle is Spicy and the
+// step before it is Mild, a heat ladder: Chill, Mild, Spicy, Brutal, Cooked.
 export const SCORE_LABELS = [
   { max: 2, label: 'Chill' },
-  { max: 4, label: 'Light' },
-  { max: 6, label: 'Mid' },
+  { max: 4, label: 'Mild' },
+  { max: 6, label: 'Spicy' },
   { max: 8, label: 'Brutal' },
   { max: 10, label: 'Cooked' },
 ] as const;

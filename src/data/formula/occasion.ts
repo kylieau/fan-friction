@@ -3,6 +3,8 @@
 
 import type { Occasion } from '../../config/scoreLabels';
 import type { CrowdEvent, OccasionFacts } from '../types';
+import { listedCapacity } from '../read';
+import { seedEventsOn } from '../sources/seedSource';
 
 /** Playoff rounds by name. A final is 4; a later round 3; a first round or play-in 2. */
 function roundPoints(round: string | undefined): number {
@@ -14,8 +16,32 @@ function roundPoints(round: string | undefined): number {
   return 0;
 }
 
-/** The points each fact is worth. Kylie's Oct 5 rulings: new market 3, storyline 1. */
-export function occasionPoints(facts: OccasionFacts | undefined, round: string | undefined): number {
+/**
+ * A concert's base comes from the booking, since a tour visits a city once
+ * (Kylie, Oct 5): a stadium headliner 3, an arena headliner 2, a theater 1.
+ */
+function bookingPoints(event: CrowdEvent): number {
+  if (event.kind !== 'show' && event.kind !== 'festival') return 0;
+  const cap = listedCapacity(event) ?? 0;
+  if (cap >= 40000) return 3;
+  if (cap >= 12000) return 2;
+  return 1;
+}
+
+/** True when the same performer plays the same metro more than once within a week. */
+function multiNightRun(event: CrowdEvent): boolean {
+  if (!event.performer) return false;
+  const [y, m, d] = event.date.split('-').map(Number);
+  let count = 0;
+  for (let offset = -7; offset <= 7; offset += 1) {
+    const date = new Date(Date.UTC(y, m - 1, d + offset)).toISOString().slice(0, 10);
+    count += seedEventsOn(event.metroId, date).filter((e) => e.performer === event.performer).length;
+  }
+  return count > 1;
+}
+
+/** The points each fact is worth. Kylie's Oct 5 rulings: new market 3, storyline 1, concerts from the booking. */
+export function occasionPoints(facts: OccasionFacts | undefined, round: string | undefined, event?: CrowdEvent): number {
   const f = facts ?? {};
   const base = Math.max(
     roundPoints(round),
@@ -24,8 +50,10 @@ export function occasionPoints(facts: OccasionFacts | undefined, round: string |
     f.farewell ? 3 : 0,
     f.opener ? 2 : 0,
     f.rivalry ? 2 : 0,
+    event ? bookingPoints(event) : 0,
   );
-  const bonus = (f.bothContending ? 1 : 0) + (f.selloutAnnounced ? 1 : 0) + (f.starReturn ? 1 : 0) + (f.storyline ? 1 : 0);
+  const run = event && multiNightRun(event) ? 1 : 0;
+  const bonus = (f.bothContending ? 1 : 0) + (f.selloutAnnounced ? 1 : 0) + (f.starReturn ? 1 : 0) + (f.storyline ? 1 : 0) + run;
   return base + bonus;
 }
 
@@ -38,7 +66,7 @@ export function occasionFromPoints(points: number): Occasion {
 
 /** The occasion the formula uses: computed from facts. */
 export function occasionFor(event: CrowdEvent): Occasion {
-  return occasionFromPoints(occasionPoints(event.occasionFacts, event.stakes?.round));
+  return occasionFromPoints(occasionPoints(event.occasionFacts, event.stakes?.round, event));
 }
 
 /** The pull factor by occasion (asymmetric pull): a bigger occasion pulls harder and is pulled less. */

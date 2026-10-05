@@ -194,7 +194,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Marquee', ['sold out'], 'Low', 'Different crowd'],
   }),
   show(D5, {
-    performer: 'Elton John', genre: 'classic rock', facts: { farewell: true }, venue: 'dodger-stadium', start: '20:00',
+    performer: 'Elton John', genre: 'classic rock', facts: { farewell: true, selloutAnnounced: true }, venue: 'dodger-stadium', start: '20:00',
     a: ['Marquee', ['farewell tour'], 'Low', 'Different crowd'],
   }),
   game(D5, {

@@ -60,6 +60,10 @@ function factChips(event: CrowdEvent): string[] {
   if (f.selloutAnnounced) chips.push('sold out');
   if (f.starReturn) chips.push('star return');
   if (f.storyline) chips.push('storyline');
+  if (event.kind === 'show' || event.kind === 'festival') {
+    const cap = event.place.type === 'venue' ? (VENUES[event.place.venueId]?.capacity.at(-1)?.seats ?? 0) : 0;
+    chips.unshift(cap >= 40000 ? 'stadium headliner' : cap >= 12000 ? 'arena headliner' : 'theater');
+  }
   return chips;
 }
 
