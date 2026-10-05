@@ -1197,14 +1197,6 @@ button {
   color: var(--ink);
 }
 
-.home-locate {
-  align-self: flex-start;
-}
-
-.home-locate:disabled {
-  opacity: 0.6;
-}
-
 .home-note {
   margin: 0;
   font-size: 14px;
@@ -2347,4 +2339,76 @@ button {
 .area-chip:focus-visible {
   outline: 2px solid var(--dodger);
   outline-offset: 2px;
+}
+
+/* ---------- Account (You) ---------- */
+.account-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--card);
+}
+
+.account-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.account-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.account-who {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.account-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.account-block .settings-row {
+  background: var(--bg);
+  text-align: center;
+}
+
+.account-google {
+  color: var(--ink);
+}
+
+.account-email {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.account-input {
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1.5px solid var(--line, #d9d4c7);
+  border-radius: 14px;
+  background: var(--bg);
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.account-input:focus-visible {
+  outline: 2px solid var(--dodger);
+  outline-offset: 2px;
+}
+
+.account-send:disabled {
+  opacity: 0.5;
 }

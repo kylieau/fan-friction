@@ -6,7 +6,8 @@ import { listTitle } from '../lib/eventTitle';
 import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
 import { KYLIE_LOG } from './seed/kylieLog';
-import { nightStore, readSavedLog } from './storage';
+import { clearPhoneCopy, isSavingToAccount, mergeLogs, nightStore, readSavedLog, setStoreAccount } from './storage';
+import { onAccountChange } from './account';
 import { asMetroNight, createStamp, forecastBeforeStart, isStampLocked, ratingFromNight } from './night';
 import { seedEventsOn } from './sources/seedSource';
 import type { CrowdEvent, LoggedNight, NightPlan, NightStamp, PersonalLog, YouOrder } from './types';
@@ -67,10 +68,52 @@ function commit(next: PersonalLog) {
   saveWarning = null;
   emit();
   nightStore.save(next).catch(() => {
-    saveWarning = 'This phone blocked saving. Export a backup before you leave this page.';
+    saveWarning = isSavingToAccount()
+      ? "Couldn't reach your account. This phone still has the change; it will try again on the next save."
+      : 'This phone blocked saving. Export a backup before you leave this page.';
     emit();
   });
 }
+
+/** Where the log is being saved right now, for the You screen's status line. */
+export type SyncStatus = 'phone' | 'loading' | 'account';
+let syncStatus: SyncStatus = 'phone';
+
+export function getSyncStatus(): SyncStatus {
+  return syncStatus;
+}
+
+// Signing in: pull the account copy, fold in anything marked on this phone, save
+// the result both places. Signing out: show an empty log and forget the phone copy.
+onAccountChange(async (account) => {
+  if (account) {
+    syncStatus = 'loading';
+    emit();
+    setStoreAccount(account.id);
+    try {
+      const cloud = await nightStore.load();
+      const merged = mergeLogs(cloud, snapshot);
+      snapshot = merged;
+      syncStatus = 'account';
+      emit();
+      await nightStore.save(merged);
+    } catch {
+      saveWarning = "Couldn't load your account's nights. Showing what's on this phone.";
+      syncStatus = 'phone';
+      setStoreAccount(null);
+      emit();
+    }
+    return;
+  }
+  const wasSignedIn = isSavingToAccount();
+  setStoreAccount(null);
+  syncStatus = 'phone';
+  if (wasSignedIn) {
+    await clearPhoneCopy();
+    snapshot = readSavedLog();
+  }
+  emit();
+});
 
 function compareNights(a: LoggedNight, b: LoggedNight) {
   if (a.when.sort !== b.when.sort) return b.when.sort.localeCompare(a.when.sort);

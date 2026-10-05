@@ -6,7 +6,10 @@ import {
   filterChoices,
   getPersonalLog,
   getRatedDates,
+  getAccount,
   getSaveWarning,
+  getSyncStatus,
+  subscribeAccount,
   logStats,
   nightBackup,
   nightFacts,
@@ -16,6 +19,7 @@ import {
   yourNights,
   type LoggedNight,
 } from '../data';
+import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
 import { loggedDateLabel } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
@@ -26,6 +30,8 @@ const TOP = 8;
 export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const warning = useSyncExternalStore(subscribePersonalLog, getSaveWarning, getSaveWarning);
+  const sync = useSyncExternalStore(subscribePersonalLog, getSyncStatus, getSyncStatus);
+  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const nights = useMemo(() => yourNights(log), [log]);
   const today = todayIn(DEFAULT_METRO);
   const [filter, setFilter] = useState('All');
@@ -107,18 +113,21 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
     <div className="screen page">
       <div className="you-header">
         <span className="avatar" aria-hidden>
-          K
+          {(account?.displayName ?? account?.email ?? 'K').slice(0, 1).toUpperCase()}
         </span>
         <h1 className="page-title">You</h1>
       </div>
+
+      <AccountBlock />
 
       <div className="you-tools">
         <button type="button" className="settings-row" onClick={download}>
           Export my nights
         </button>
         <p className="you-fine">
-          Downloads a JSON backup. Nights you mark are saved on this phone, and a browser clear can erase them. The log that
-          shipped with the app stays either way.
+          {sync === 'account'
+            ? 'Downloads a JSON backup of your nights. Your account already keeps a copy.'
+            : 'Downloads a JSON backup. Nights you mark are saved on this phone, and a browser clear can erase them. The log that shipped with the app stays either way.'}
         </p>
         {exportNote && (
           <p className="you-fine" role="status">

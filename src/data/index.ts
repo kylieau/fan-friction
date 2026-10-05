@@ -158,6 +158,16 @@ export { VENUES, venueNameOn, capacityOn } from './venues';
 export { TEAMS } from './teams';
 export { audienceOverlap } from './audience';
 export {
+  canSignIn,
+  getAccount,
+  isAccountSettling,
+  signInWithEmail,
+  signInWithGoogle,
+  signOut,
+  subscribeAccount,
+  type Account,
+} from './account';
+export {
   PRELIST_ATTENDEES,
   FRICTION_ATTENDEES,
   STAMP_LOCK_HOURS,
@@ -181,6 +191,7 @@ export {
   filterChoices,
   getPersonalLog,
   getSaveWarning,
+  getSyncStatus,
   isPlanned,
   isWasThere,
   logStats,
@@ -196,5 +207,5 @@ export {
   upcomingPlans,
   yourNights,
 } from './personalLog';
-export type { LabeledFact } from './personalLog';
+export type { LabeledFact, SyncStatus } from './personalLog';
 export type * from './types';
