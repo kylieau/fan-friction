@@ -32,7 +32,7 @@ import { clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath } from '../lib/view';
-import { Read } from './FavoritesScreen';
+import { ReadTile as Read } from '../components/ReadTile';
 import { HeaviestStat, Stat } from './YouScreen';
 
 /** How many upcoming dates to list on a favorite's page. */

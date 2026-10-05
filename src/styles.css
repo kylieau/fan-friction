@@ -554,9 +554,22 @@ button {
 
 .datescore {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-height: 56px;
+  align-items: center;
+}
+
+.datescore .read-big {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+}
+
+.datescore .read-num {
+  font-size: 18px;
+}
+
+.read-big.none {
+  background: var(--track);
+  color: var(--ink2);
 }
 
 .datescore-count {

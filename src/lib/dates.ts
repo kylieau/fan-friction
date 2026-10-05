@@ -33,7 +33,10 @@ export function shortLocalDate(date: string) {
  */
 export function headerDate(date: string, today: string) {
   const shown = shortLocalDate(date);
-  return date.slice(0, 4) === today.slice(0, 4) ? shown : `${shown}, ${date.slice(0, 4)}`;
+  // Two years back or more, the word beside the date is the year itself, so the date doesn't repeat it.
+  const year = Number(date.slice(0, 4));
+  const todayYear = Number(today.slice(0, 4));
+  return year === todayYear || year < todayYear - 1 ? shown : `${shown}, ${date.slice(0, 4)}`;
 }
 
 /**

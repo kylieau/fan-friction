@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, SearchIcon } from '../components/Icons';
-import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
+import { scoreBand, scoreLabel } from '../config/scoreLabels';
+import { ReadTile } from '../components/ReadTile';
 import {
   getCalendarMonth,
   getRatedDates,
@@ -14,13 +15,6 @@ import { addDays, clampMonth, EARLIEST_MONTH, isValidDate, longLocalDate, monthC
 import { datePath, useView } from '../lib/view';
 
 /** Badge shade by rating band, darkest for the hardest dates (as in the mockup). */
-function badgeClass(rating: number) {
-  if (rating >= 7) return 'badge-hard';
-  if (rating >= 5) return 'badge-mid';
-  if (rating >= 3) return 'badge-light';
-  return 'badge-chill';
-}
-
 function dayLabel(day: CalendarDay) {
   const when = longLocalDate(day.date);
   if (day.status === 'rated' && day.rating !== null) return `${when}, ${scoreLabel(day.rating)}, ${day.rating} of 10`;
@@ -159,7 +153,7 @@ export function CalendarScreen() {
                     to={openNight(onThisDay.date)}
                     rating={onThisDay.rating}
                     headline={onThisDay.headline}
-                    meta={`${scoreLabel(onThisDay.rating)} · ${formatScore(onThisDay.rating)}/10 · ${longLocalDate(onThisDay.date)}`}
+                    meta={longLocalDate(onThisDay.date)}
                   />
                 </li>
               </ul>
@@ -176,7 +170,7 @@ export function CalendarScreen() {
                       to={openNight(entry.date)}
                       rating={entry.rating}
                       headline={entry.headline}
-                      meta={`${scoreLabel(entry.rating)} · ${formatScore(entry.rating)}/10 · ${longLocalDate(entry.date)}`}
+                      meta={longLocalDate(entry.date)}
                     />
                   </li>
                 ))}
@@ -213,7 +207,7 @@ function SearchResults({
               to={openNight(hit.date)}
               rating={hit.rating}
               headline={hit.headline}
-              meta={[hit.rating !== null ? `${scoreLabel(hit.rating)} · ${formatScore(hit.rating)}/10` : 'Unrated', longLocalDate(hit.date), hit.matched]
+              meta={[longLocalDate(hit.date), hit.matched]
                 .filter(Boolean)
                 .join(' · ')}
             />
@@ -228,15 +222,7 @@ function SearchResults({
 function EntryRow({ to, rating, headline, meta }: { to: string; rating: number | null; headline: string; meta: string }) {
   return (
     <Link to={to} className="famous-row">
-      {rating !== null ? (
-        <span className={`rating-badge ${badgeClass(rating)}`} aria-hidden>
-          {rating}
-        </span>
-      ) : (
-        <span className="rating-badge badge-unrated" aria-hidden>
-          –
-        </span>
-      )}
+      <ReadTile rating={rating} />
       <span className="famous-text">
         <span className="famous-headline">{headline}</span>
         <span className="famous-meta">{meta}</span>

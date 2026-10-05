@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { SearchIcon } from '../components/Icons';
+import { ReadTile as Read } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
   eventMatches,
   favoriteFor,
@@ -296,19 +296,5 @@ function FavRow({ fav, sub, on }: { fav: Favorite; sub: string; on: boolean }) {
   );
 }
 
-/** The date's read, when there is one. Upcoming dates show "—" until the formula lands. */
-export function Read({ rating }: { rating: number | null }) {
-  if (rating === null) {
-    return (
-      <span className="log-score none" aria-label="No read yet">
-        <span className="log-score-num">—</span>
-      </span>
-    );
-  }
-  return (
-    <span className={`log-score ${scoreBand(rating)}`} aria-label={`${scoreLabel(rating)}, ${rating} out of 10`}>
-      <span className="log-score-num">{rating}</span>
-      <span className="log-score-word">{scoreLabel(rating)}</span>
-    </span>
-  );
-}
+
+export { ReadTile as Read } from '../components/ReadTile';

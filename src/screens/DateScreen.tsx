@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronDown, ShareIcon } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { formatScore, frictionLabel, scoreBand, scoreLabel, showFriction } from '../config/scoreLabels';
+import { formatScore, scoreBand, scoreLabel, showFriction } from '../config/scoreLabels';
 import {
   asMetroDate,
   feelsLikeF,
@@ -195,9 +195,6 @@ export function DateScreen() {
                   <span className="entry-facts">
                     {[entry.venue, event?.start ? clockTime(event.start) : null, event ? crowdLine(event) : null].filter(Boolean).join(' · ')}
                   </span>
-                  {event?.assessment && (
-                    <span className="entry-facts">Friction · {frictionLabel(event.assessment.friction)}</span>
-                  )}
                   {entry.note && <span className="entry-note">{entry.note}</span>}
                 </div>
               );
