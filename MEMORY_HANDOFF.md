@@ -2,21 +2,26 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
 
-_Last synced: Oct 5, 2026 (Claude Code, evening)._
+_Last synced: Oct 5, 2026 (Claude Code, late)._
 
 ## Current state
-Fan/Friction is a personal log of live events you attended, with a friction read stamped on each night. **Accounts are live.** Steps 1–4 of the accounts plan (`docs/accounts-proposal.md`) are on `main` and deployed; Kylie signed in with Google and her 130 nights now come from her account. Next is **step 5, the profile page**: mockup first, then build after she approves.
+Accounts, profiles and the Friends tab are built and deployed. Kylie is mid-review of the You screen; her last reactions are folded in. Nothing uncommitted. `main` is pushed and live.
 
-- **Repo:** `main` clean, pushed. Live: https://fan-friction.vercel.app. Vercel env has `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` (Config, all environments; Kylie added them by hand). Local copy in `.env.local` (git-ignored); template in `.env.example`.
-- **Supabase project** `fhfqhcbnzmmkhsselayb`. Migrations run by Kylie in the SQL Editor: `supabase/migrations/0001_accounts.sql` (tables + privacy rules) and `0002_kylie_log.sql` (her 130 nights, 12 private notes; generated from `src/data/seed/kylieLog.ts`). Google provider and email link are on; redirect URLs include the live site, `*-kylie8.vercel.app` previews and localhost:3001.
-- **The Vercel MCP connection is scoped to her personal account, not the `kylie8` team**, so env changes from here fail with 403; she does them in the dashboard.
+- **You (signed in):** letter avatar, display name, `@handle` under it, gear top-right (blue count badge when follow requests wait). Three tabs: **Nights** (every night newest first, month separators, year for rough dates, no filter), **Stats** (filter chips + Nights/Venues/Heaviest night + count lists), **Friends** (recent nights of approved followees, newest first, name + night + stamp; three rows marked **Example** until anyone is followed, never saved anywhere). Signed out: the sign-in card (Google, centered email field, "Email me a link" as text) then the tabs.
+- **Settings** (`/you/settings`): Account (name, @handle, Sign out, **Share profile** via share sheet or copy), Profile form inline (display name, @handle, visibility Only me / People I approve / Anyone, Save), Export my nights, Show the tips again. `/profile/edit` still exists as a route but nothing links to it.
+- **Visitor page** `/p/<handle>`: name, Nights/Venues/Heaviest, nights list, gold Follow (Follow / Requested / Following). Opening your own shows exactly the visitor view, no banner, no Edit. Letter avatar only; the Google picture is stored but unused.
+- **Supabase:** migrations 0001 (tables + RLS), 0002 (her 130 nights), 0003 (handles, profile cards readable by anyone) all run by Kylie. Project `fhfqhcbnzmmkhsselayb`; keys in Vercel (by hand) and `.env.local`.
+- **City switcher:** house icon before the home city's name.
 
 ## Changes made (this session)
-- Docs: `docs/direction.md`, `docs/product-review-decisions.md`, `docs/accounts-proposal.md`, `docs/second-opinion-direction-prompt.md`, `AGENTS.md` (CLAUDE.md is `@AGENTS.md`).
-- Accounts: `src/data/storage/supabaseClient.ts` (client only when env exists), `supabaseStore.ts` (real cloud store), `storage/index.ts` (phone always, account when signed in; merge on first sign-in; clear phone copy on sign-out), `src/data/account.ts` (session, Google, email link, sign out), `src/components/AccountBlock.tsx` (You's sign-in card), `personalLog.ts` (sync status; seed no longer merged), `HomePicker.tsx` ("Use my location" removed), `YouScreen.tsx` (empty state says sign in).
-- `@supabase/supabase-js` added.
+Docs (`direction.md`, `product-review-decisions.md`, `accounts-proposal.md`, `AGENTS.md` incl. the UI copy rule), `supabase/migrations/0001–0003`, `src/data/{account,profiles}.ts`, `src/data/storage/{supabaseClient,supabaseStore,index}.ts`, `src/components/AccountBlock.tsx`, `src/screens/{ProfileScreen,ProfileEditScreen,SettingsScreen,YouScreen}.tsx`, `src/lib/dates.ts` (`timelineGroup`), `src/components/Icons.tsx` (GearIcon), `HomePicker.tsx` (no location), `MapScreen.tsx` (house first), styles.
 
 ## Key decisions in force
+- **Pushing (Kylie, Oct 5):** don't push every change at once. Commit, leave it on the local site (`npm run dev`, localhost:3001) for her to look at, push when she says. She OK'd the last pushes because she was stepping out.
+- **UI copy rule (Kylie, Oct 5):** users are not dumb; no explanatory banners, no "this is how others see you", utilities behind the gear. In `AGENTS.md`.
+- **You vs profile (settled Oct 5 after consulting Letterboxd/Strava/Flighty patterns):** one page; You holds the controls, `/p/<handle>` is the same page as a visitor sees. No separate profile page, no "Your page" row; the link is only for sharing.
+- **Friends is a tab on You** (she corrected a section I built). Feed = friends only, never strangers; no comments or likes.
+- **Stats:** Nights, Venues, Heaviest night (not Cities). Filters live on the Stats tab only.
 - **Accounts (Kylie, Oct 5):** account = login + saved data; profile = public face (display name, avatar, visible nights). She wants profiles **early** so they can be corrected, and people following each other someday. Visibility switch on the account: Only me (default) / People I approve / Anyone. **No feed of strangers' nights. No location, ever.** Private note lives in `night_notes`, never on a shared page. Photos: later, only if free. Sign-in: Google + email link; Apple waits for the native app (🚩 $99/yr).
 - **Profile entry point (approved):** tap your name at the top of You → your profile as others see it, with Edit (display name, visibility). Link form `/p/<handle>`.
 - **Her nights live in her account**, not in the app. New people start empty. `hiddenSeedIds` stays only for old phone copies.
@@ -33,10 +38,11 @@ Fan/Friction is a personal log of live events you attended, with a friction read
 - Cloud notes: Wikipedia is blocked; ESPN rejects headless-Chrome user agents; screenshots use `playwright-core` with swiftshader args; don't `pkill` vite.
 
 ## Next steps
-1. **Step 5, profile page:** mockup for Kylie, then build after approval. Needs a `handle` column on `profiles` (migration 0003), a `/p/:handle` route, display-name edit, the visibility switch, Follow button writing to `follows`.
-2. Then richer entries (score auto-filled, setlist link, who you went with, note, optional photo) and the rating formula. Parked: Traffic, Night story, Famous nights → "Were you there?", You "Did you go?", Ticketmaster.
+1. Kylie reviews You/Settings/Friends on the live site signed in (I could only screenshot signed-out states). Open question she left: should the sign-in card's two lines of copy go.
+2. **Night rows need design work** (Kylie): "work out the kinks of each entry". Bring her two or three row variants to pick from. Needs her notes first.
+3. Then richer entries (score auto-filled, setlist link, who you went with, note, optional photo), then the rating formula. Parked: Traffic, Night story, Famous nights → "Were you there?", You "Did you go?", Ticketmaster, photos (only if free).
 
 **Next command to run:**
 ```bash
-git pull --ff-only && npm run dev   # step 5 starts with a profile mockup; see docs/accounts-proposal.md
+git pull --ff-only && npm run dev   # localhost:3001; see the Direction pivot and Accounts sections of BACKLOG.md
 ```
