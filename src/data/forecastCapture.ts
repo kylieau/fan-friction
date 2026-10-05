@@ -3,30 +3,13 @@
 // Los Angeles is the only metro the archive collects.
 
 import type { CrowdEvent, FrictionRead, LocalDate, LocalTime } from './types';
-import { frictionReadForEvent, wallClockToUtc } from './night';
+import { frictionReadForEvent } from './night';
 import { seedRatingFor } from './sources/seedSource';
-
-/** How long before a scheduled start the job may write a start-time forecast. */
-export const START_FORECAST_LEAD_MINUTES = 45;
 
 export interface ArchivedEventRead {
   eventId: string;
   date: LocalDate;
   start: LocalTime | null;
-  /** Absent when nothing on file had a score or a friction word. Not invented. */
-  read?: FrictionRead;
-}
-
-export interface StartForecastRecord {
-  schema: 1;
-  kind: 'start-forecast';
-  metroId: string;
-  eventId: string;
-  date: LocalDate;
-  start: LocalTime;
-  capturedAt: string;
-  /** Whole minutes from this capture until the scheduled start. Never negative. */
-  minutesBeforeStart: number;
   /** Absent when nothing on file had a score or a friction word. Not invented. */
   read?: FrictionRead;
 }
@@ -61,51 +44,4 @@ export function archivedReads(events: readonly CrowdEvent[]): ArchivedEventRead[
       ...(read ? { read } : {}),
     };
   });
-}
-
-/**
- * Events whose scheduled start is still ahead, and no further ahead than the
- * lead window. A start that has already passed is left out, so a late run
- * cannot label itself a start-time forecast.
- */
-export function startForecastsFor(
-  metroId: string,
-  timeZone: string,
-  events: readonly CrowdEvent[],
-  now = new Date(),
-): StartForecastRecord[] {
-  const leadMs = START_FORECAST_LEAD_MINUTES * 60_000;
-  const records: StartForecastRecord[] = [];
-  for (const event of events) {
-    if (event.metroId !== metroId || !event.start) continue;
-    const startAt = wallClockToUtc(event.date, event.start, timeZone);
-    const ms = startAt.getTime() - now.getTime();
-    if (ms < 0 || ms > leadMs) continue;
-    const read = forecastRead(event, events);
-    records.push({
-      schema: 1,
-      kind: 'start-forecast',
-      metroId,
-      eventId: event.id,
-      date: event.date,
-      start: event.start,
-      capturedAt: now.toISOString(),
-      minutesBeforeStart: Math.round(ms / 60_000),
-      ...(read ? { read } : {}),
-    });
-  }
-  return records;
-}
-
-/**
- * A closer capture, still before the start, replaces an earlier one.
- * A capture after the start never replaces a file already saved.
- */
-export function shouldReplaceStartForecast(
-  saved: { minutesBeforeStart?: number } | null,
-  incoming: { minutesBeforeStart: number },
-): boolean {
-  if (incoming.minutesBeforeStart < 0) return false;
-  if (!saved || typeof saved.minutesBeforeStart !== 'number' || saved.minutesBeforeStart < 0) return true;
-  return incoming.minutesBeforeStart < saved.minutesBeforeStart;
 }

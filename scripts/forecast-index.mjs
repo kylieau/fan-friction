@@ -7,9 +7,10 @@ import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const HEADER = `// Start-time forecasts and daily-schedule reads on disk.
+const HEADER = `// Daily-schedule reads on disk.
 // scripts/forecast-index.mjs rewrites this file after an archive run.
-// Do not edit by hand. Los Angeles only.
+// Do not edit by hand. Los Angeles only. The stamp uses the latest row
+// saved before an event's start. It does not invent a number.
 
 export interface IndexedForecastRead {
   rating?: number;
@@ -18,21 +19,7 @@ export interface IndexedForecastRead {
   method: 'hand' | 'formula' | 'nearby';
 }
 
-/** Written just before an event's scheduled start. */
-export interface StartForecastRow {
-  metroId: string;
-  eventId: string;
-  date: string;
-  start: string;
-  capturedAt: string;
-  minutesBeforeStart: number;
-  read?: IndexedForecastRead;
-}
-
-/**
- * A read taken from a daily schedule file, not from a start-time capture.
- * One row per event per file. The stamp uses the row closest to the start.
- */
+/** One event in one daily schedule file. */
 export interface ArchiveForecastRow {
   metroId: string;
   eventId: string;
@@ -76,10 +63,8 @@ function readFromAssessment(event) {
   return read;
 }
 
-function emit(startRows, archiveRows) {
-  return `${HEADER}export const START_FORECASTS: readonly StartForecastRow[] = ${JSON.stringify(startRows, null, 2)};
-
-export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = ${JSON.stringify(archiveRows, null, 2)};
+function emit(archiveRows) {
+  return `${HEADER}export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = ${JSON.stringify(archiveRows, null, 2)};
 `;
 }
 
@@ -100,7 +85,6 @@ async function readJsonDir(dir) {
 /** Read every forecast file and write the lists the stamp imports. */
 export async function refreshForecastIndex(root) {
   const archive = path.join(root, 'data', 'schedule-archive');
-  const startRows = [];
   const archiveRows = [];
   let metros = [];
   try {
@@ -157,34 +141,8 @@ export async function refreshForecastIndex(root) {
         });
       }
     }
-
-    const startDir = path.join(metroDir, 'start-forecasts');
-    const starts = await readJsonDir(startDir);
-    for (const file of starts) {
-      const raw = file.raw;
-      if (raw?.kind !== 'start-forecast' || raw?.schema !== 1) {
-        throw new Error(`Start forecast ${metro.name}/start-forecasts/${file.name} is not a start-time record. The forecast list was not rewritten.`);
-      }
-      if (typeof raw.metroId !== 'string' || typeof raw.eventId !== 'string' || typeof raw.date !== 'string') {
-        throw new Error(`Start forecast ${metro.name}/start-forecasts/${file.name} is missing an event. The forecast list was not rewritten.`);
-      }
-      if (typeof raw.start !== 'string' || typeof raw.capturedAt !== 'string' || typeof raw.minutesBeforeStart !== 'number') {
-        throw new Error(`Start forecast ${metro.name}/start-forecasts/${file.name} is missing its start. The forecast list was not rewritten.`);
-      }
-      const read = cleanRead(raw.read);
-      startRows.push({
-        metroId: raw.metroId,
-        eventId: raw.eventId,
-        date: raw.date,
-        start: raw.start,
-        capturedAt: raw.capturedAt,
-        minutesBeforeStart: raw.minutesBeforeStart,
-        ...(read ? { read } : {}),
-      });
-    }
   }
 
-  startRows.sort((a, b) => a.metroId.localeCompare(b.metroId) || a.date.localeCompare(b.date) || a.eventId.localeCompare(b.eventId));
   archiveRows.sort(
     (a, b) =>
       a.metroId.localeCompare(b.metroId) ||
@@ -194,7 +152,7 @@ export async function refreshForecastIndex(root) {
   );
 
   const file = path.join(root, 'src', 'data', 'startForecastIndex.ts');
-  const next = emit(startRows, archiveRows);
+  const next = emit(archiveRows);
   let previous = '';
   try {
     previous = await readFile(file, 'utf8');
@@ -202,17 +160,15 @@ export async function refreshForecastIndex(root) {
     previous = '';
   }
   const relative = path.relative(root, file);
-  if (previous === next) return { changed: false, relative, startCount: startRows.length, archiveCount: archiveRows.length };
+  if (previous === next) return { changed: false, relative, archiveCount: archiveRows.length };
   await writeFile(file, next);
-  return { changed: true, relative, startCount: startRows.length, archiveCount: archiveRows.length };
+  return { changed: true, relative, archiveCount: archiveRows.length };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
   const index = await refreshForecastIndex(root);
   console.log(
-    index.changed
-      ? `Updated ${index.relative} (${index.startCount} start-time, ${index.archiveCount} archive).`
-      : `No change in ${index.relative}.`,
+    index.changed ? `Updated ${index.relative} (${index.archiveCount} archive reads).` : `No change in ${index.relative}.`,
   );
 }

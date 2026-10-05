@@ -40,15 +40,15 @@ export interface ScheduleSnapshot {
   sources: ScheduleSnapshotSource[];
   events: CrowdEvent[];
   /**
-   * The read on file for each event at this capture. A later stamp can fall
-   * back to the nearest of these when no start-time forecast was saved.
-   * A missing read means there was no score and no friction word. None are filled in.
+   * The read on file for each event at this capture. A later stamp uses the
+   * latest of these saved before the event's start. A missing read means there
+   * was no score and no friction word. None are filled in.
    */
   forecasts: ArchivedEventRead[];
 }
 
 const NOTE =
-  'Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. Start-time forecasts are separate files, written just before each event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.';
+  'Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.';
 
 function addCalendarDays(isoDate: string, days: number): string {
   const [year, month, day] = isoDate.split('-').map(Number);

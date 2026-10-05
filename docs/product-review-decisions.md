@@ -174,7 +174,7 @@ A room under about 5,000 does not change the read for everyone else. It can stil
 
 Kylie locked this after the data foundation. It replaces the save-time copy in section 2 ("Forecast when you planned") and in the data-foundation note above. The review text in section 2 is unchanged.
 
-An event's forecast freezes at its scheduled start, not when someone taps Save. Save stores the night and does not keep a forecast copy. The free Los Angeles schedule job writes one start-time forecast per event, just before that start. The stamp, after the 24-hour lock, lines up against that forecast. If no start-time capture exists, the stamp uses the nearest saved schedule and is marked as such. If neither record has a number, no number is added. This is Los Angeles only. Nothing on screen changed.
+Save stores the night and does not keep a forecast copy. Kylie parked the every-30-minute start-time capture until more is built. Until it returns, the stamp, after the 24-hour lock, lines up against the latest Los Angeles daily schedule saved before that event's start, and is labeled as such. A schedule saved at the start or after it is not used. If that file has no number, no number is added. This is Los Angeles only. Nothing on screen changed. The schedule job runs once a day, at 12:15am Pacific.
 
 ## Map card and Compare copy (Oct 5, 2026)
 

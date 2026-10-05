@@ -164,7 +164,7 @@ export {
   scheduleCoverage,
   sizeTier,
   stampLocksAt,
-  startTimeForecastFor,
+  forecastBeforeStart,
 } from './night';
 export type { ScheduleCoverage, SizeTier } from './night';
 export {

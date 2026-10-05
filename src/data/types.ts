@@ -226,15 +226,17 @@ export interface NightForecast extends FrictionRead {
   recordedAt: string;
 }
 
-/** Where the stamp's forecast came from. */
-export type ForecastBasisKind = 'start-time' | 'nearest-archive';
+/**
+ * Where the stamp's forecast came from.
+ * `daily-before-start` is the latest daily schedule saved before the event's start.
+ */
+export type ForecastBasisKind = 'daily-before-start';
 
 /**
  * The post-night record. Replaced when the formula improves; `lastUpdated`
  * moves with that replacement. `reconstructed` means no saved schedule covered
- * the date, so the listing was rebuilt afterwards. `forecastBasis` says which
- * saved forecast this stamp was lined up against. `nearest-archive` means no
- * start-time capture was on file.
+ * the date, so the listing was rebuilt afterwards. `forecastBasis` says the
+ * stamp used the latest daily schedule saved before the event's start.
  */
 export interface NightStamp extends FrictionRead {
   kind: 'stamp';

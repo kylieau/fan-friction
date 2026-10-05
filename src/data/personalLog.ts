@@ -7,7 +7,7 @@ import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
 import { KYLIE_LOG } from './seed/kylieLog';
 import { nightStore, readSavedLog } from './storage';
-import { asMetroNight, createStamp, isStampLocked, ratingFromNight, startTimeForecastFor } from './night';
+import { asMetroNight, createStamp, forecastBeforeStart, isStampLocked, ratingFromNight } from './night';
 import { seedEventsOn } from './sources/seedSource';
 import type { CrowdEvent, LoggedNight, NightPlan, NightStamp, PersonalLog, YouOrder } from './types';
 
@@ -219,16 +219,16 @@ function eventsThatNight(event: CrowdEvent): CrowdEvent[] {
 
 /**
  * The stamp, once 24 hours have passed since the last scheduled start that night.
- * The numbers come from the start-time forecast. If that capture is missing,
- * they come from the nearest archive record and are marked as such.
- * Nothing is written before the lock, and no number is filled in when neither record has one.
+ * The numbers come from the latest daily snapshot saved before this event's start.
+ * That snapshot is labeled on the stamp. Nothing is written before the lock,
+ * and no number is filled in when that snapshot has none.
  */
 function stampNow(event: CrowdEvent, now: Date): NightStamp | undefined {
   const events = eventsThatNight(event);
   const night = asMetroNight(event.metroId, event.date, events);
   const zone = METROS[event.metroId]?.timeZone ?? 'America/Los_Angeles';
   if (!isStampLocked(night, zone, now)) return undefined;
-  const saved = startTimeForecastFor(event);
+  const saved = forecastBeforeStart(event);
   if (!saved) return undefined;
   return createStamp(saved.read, now.toISOString(), false, saved);
 }

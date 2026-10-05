@@ -1,6 +1,7 @@
-// Start-time forecasts and daily-schedule reads on disk.
+// Daily-schedule reads on disk.
 // scripts/forecast-index.mjs rewrites this file after an archive run.
-// Do not edit by hand. Los Angeles only.
+// Do not edit by hand. Los Angeles only. The stamp uses the latest row
+// saved before an event's start. It does not invent a number.
 
 export interface IndexedForecastRead {
   rating?: number;
@@ -9,21 +10,7 @@ export interface IndexedForecastRead {
   method: 'hand' | 'formula' | 'nearby';
 }
 
-/** Written just before an event's scheduled start. */
-export interface StartForecastRow {
-  metroId: string;
-  eventId: string;
-  date: string;
-  start: string;
-  capturedAt: string;
-  minutesBeforeStart: number;
-  read?: IndexedForecastRead;
-}
-
-/**
- * A read taken from a daily schedule file, not from a start-time capture.
- * One row per event per file. The stamp uses the row closest to the start.
- */
+/** One event in one daily schedule file. */
 export interface ArchiveForecastRow {
   metroId: string;
   eventId: string;
@@ -33,8 +20,6 @@ export interface ArchiveForecastRow {
   capturedOn: string;
   read?: IndexedForecastRead;
 }
-
-export const START_FORECASTS: readonly StartForecastRow[] = [];
 
 export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   {
