@@ -235,6 +235,64 @@ button {
   margin-left: auto;
 }
 
+/* One personal card, only when a night is saved. Floats under the When row.
+   The header, chips, and sheet stay where they are. */
+.saved-night {
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 12px;
+  right: 12px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: 0 2px 12px rgba(15, 27, 45, 0.16);
+  color: var(--ink);
+}
+
+.saved-night-kicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ucla);
+}
+
+.saved-night-frozen {
+  letter-spacing: 0.3px;
+  color: var(--dodger);
+  background: var(--bg);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.saved-night-title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.saved-night-meta {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.saved-night-forecast {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--dodger);
+}
+
 .map-header .area-chip,
 .map-header .area-chip svg {
   color: var(--ink);

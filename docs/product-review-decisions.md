@@ -134,7 +134,7 @@ Outside user testing isn't planned for now. The answer instead is accounts:
 - [ ] Confirm the lock time: 24 hours after start (current) or 4 AM local the next morning.
 - [ ] Build the venue capacity table, starting with LA.
 - [ ] Decide privacy defaults for accounts and shared logs.
-- [ ] Replace the Compare tab's "Which fanbase really shows up?" copy.
+- [x] Replace the Compare tab's "Which fanbase really shows up?" copy. Done Oct 5, 2026. The tab still says Coming soon. The words are now about your nights side by side. The rebuild is later.
 - [ ] Hand-check every Famous night's stamp and example before publishing.
 - [ ] Review the terms of use for each data source.
 
@@ -162,10 +162,16 @@ Kylie locked these after the review above. The review text is unchanged. The sam
 | Privacy | Private by default. A log is shared only by choice, later. |
 | Tweets from the night | Hold. Do not build until access and cost are verified. |
 
-The archive does not show anything in the app. A night from before the first saved schedule is reconstructed, as section 2 describes. That word is not on screen yet. The open items above for the archive, the lock time, and privacy defaults are decided by this table. The venue capacity table, the Compare copy, the Famous-night hand check, and the terms-of-use review are still open.
+The archive does not show anything in the app. A night from before the first saved schedule is reconstructed, as section 2 describes. That word is not on screen yet. The open items above for the archive, the lock time, and privacy defaults are decided by this table. The Compare copy is done (see below). The venue capacity table, the Famous-night hand check, and the terms-of-use review are still open.
 
 ## Data foundation (Oct 5, 2026)
 
-The data layer now keeps the two fields from section 2. A saved plan stores the forecast it showed, and that forecast is not recalculated. "I was there," after the lock, stores a stamp with the time it was last updated. The lock is the one in the table above: 24 hours after the last scheduled start that night. A stamp is marked reconstructed when no schedule snapshot covers the date. None of this is on screen.
+The data layer now keeps the two fields from section 2. A saved plan stores the forecast it showed, and that forecast is not recalculated. "I was there," after the lock, stores a stamp with the time it was last updated. The lock is the one in the table above: 24 hours after the last scheduled start that night. A stamp is marked reconstructed when no schedule snapshot covers the date. The stamp is still not on screen.
 
 A room under about 5,000 does not change the read for everyone else. It can still take the night's existing score when a bigger event that night already has one. No new crowd number is made up. The logging-threshold sentence (about 1,000 in `docs/direction.md` and `AGENTS.md`, versus anything can be logged in section 5) is still open. This note does not close it.
+
+## Map card and Compare copy (Oct 5, 2026)
+
+The Map shows one card for the soonest saved upcoming night in the city on screen. When the plan stored a forecast, the card shows that frozen read and labels it Frozen. It does not recompute the read. Save and "I was there" stay on the event page. The Map list is unchanged.
+
+Compare keeps the Coming soon card. The heading now points at your nights side by side. The Coming soon chip stays. Nothing else on that tab was added or removed.

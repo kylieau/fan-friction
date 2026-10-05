@@ -176,6 +176,7 @@ export {
   isPlanned,
   isWasThere,
   logStats,
+  nextSavedPlan,
   nightBackup,
   nightFacts,
   ratingForNight,

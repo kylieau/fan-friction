@@ -313,6 +313,15 @@ export function upcomingPlans(today: string, log: PersonalLog = snapshot): Night
   return log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
 }
 
+/**
+ * The one saved night the Map card shows: the soonest plan still ahead in this
+ * city. A plan keeps the forecast it stored. This does not recalculate it.
+ * Same-day plans follow title order, because a plan does not store a start time.
+ */
+export function nextSavedPlan(today: string, metroId: string, log: PersonalLog = snapshot): NightPlan | null {
+  return upcomingPlans(today, log).find((plan) => plan.metroId === metroId) ?? null;
+}
+
 export function setYouOrder(order: YouOrder) {
   if (snapshot.order === order) return;
   commit({ ...snapshot, order });

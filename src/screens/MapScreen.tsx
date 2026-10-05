@@ -1,7 +1,24 @@
-import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { areaMetros, DEFAULT_METRO, type Metro } from '../config/metros';
-import { feelsLikeF, getCityDate, getEventsBetween, getRatedDates, getUpcoming, todayIn, VENUES, venueNameOn, type CityDate, type CrowdEvent } from '../data';
+import { formatScore, frictionLabel, scoreLabel, showFriction } from '../config/scoreLabels';
+import {
+  feelsLikeF,
+  getCityDate,
+  getEventsBetween,
+  getPersonalLog,
+  getRatedDates,
+  getUpcoming,
+  nextSavedPlan,
+  subscribePersonalLog,
+  todayIn,
+  VENUES,
+  venueNameOn,
+  type CityDate,
+  type CrowdEvent,
+  type NightForecast,
+  type NightPlan,
+} from '../data';
 import { BaseMap } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { MapCamera } from '../map/MapCamera';
@@ -40,6 +57,8 @@ export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
   const { metro, date, today, isToday, when } = useView();
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const nextNight = nextSavedPlan(today, metro.id, log);
 
   const [day, setDay] = useState<CityDate | null>(null);
   useEffect(() => {
@@ -240,6 +259,7 @@ export function MapScreen() {
             </button>
           </div>
         </div>
+        {nextNight && <SavedNightCard plan={nextNight} />}
       </header>
 
       {points.length > 0 && (
@@ -376,6 +396,39 @@ function AreaSwitcher({
         </div>
       )}
     </div>
+  );
+}
+
+/**
+ * Words for a forecast that was frozen at save. Low stays hidden, same as the
+ * sheet. A bare number is never shown. Null when nothing on the forecast is shown.
+ */
+function frozenForecastLine(forecast: NightForecast | undefined): string | null {
+  if (!forecast) return null;
+  const parts: string[] = [];
+  if (forecast.rating != null) {
+    const shown = Number(formatScore(forecast.rating));
+    parts.push(`${scoreLabel(shown)} · ${formatScore(shown)}/10`);
+  }
+  if (forecast.friction && showFriction(forecast.friction)) parts.push(frictionLabel(forecast.friction));
+  return parts.length > 0 ? parts.join(' · ') : null;
+}
+
+/** One quiet card for the soonest saved night still ahead in this city. */
+function SavedNightCard({ plan }: { plan: NightPlan }) {
+  const forecast = frozenForecastLine(plan.forecast);
+  const place = [shortLocalDate(plan.date), plan.venue].filter(Boolean).join(' · ');
+  const to = plan.eventId ? `/event/${plan.eventId}` : `/?date=${plan.date}&when=day`;
+  return (
+    <Link to={to} className="saved-night">
+      <span className="saved-night-kicker">
+        <span>Your next night</span>
+        {forecast && <span className="saved-night-frozen">Frozen</span>}
+      </span>
+      <span className="saved-night-title">{plan.title}</span>
+      {place && <span className="saved-night-meta">{place}</span>}
+      {forecast && <span className="saved-night-forecast">{forecast}</span>}
+    </Link>
   );
 }
 
