@@ -61,3 +61,16 @@ Mean error against the hand ratings: about 1.6 for v3's Crowd fight; about 1.1 f
 4. Lightest Gridlock.
 5. Combination, the "why" lines, the confidence label; replace the hand reads in the stamp/forecast pipeline; upcoming dates stop showing "—".
 6. Tuning session on the 13 nights with the holdouts kept. Then the attendance collection job.
+
+## Open after Kylie's table review (Oct 5, evening)
+- **Friction label framing:** she wants the verdict to read as something fans are *dealing with* ("fighting heavy friction"), not a grade on the event. Copy task for the chips and the why lines.
+- **"Mid" reads as an insult** (Gen Z usage: mediocre, "not even bad, which is worse"). The scale is about how hard the night was, so the middle word should say "some heat," not "meh." Proposal below.
+- **Concerts and occasion:** Taylor Swift's Eras Tour at SoFi reading Routine is wrong on its face; Elton John's final North American show reading Major is light. Concerts differ from games: a tour visits a city once, so the baseline for a concert is the size of the booking and the length of the run, not a season. Proposal below.
+- **LA-only perception:** every hand rating is an LA fan's; the review's §12 says where the formula may bend in other cities. Revisit when a second city is seeded.
+- World Series G1 night (10/25/24) at Cooked is right by her.
+
+### Proposal: the middle word
+Keep Chill · Light · ? · Brutal · Cooked. Candidates for the middle: **Spicy** (lean: escalation reads naturally, "some heat," sassy, not a put-down), Sweaty (gaming slang for tryhard, intense), Highkey (noticeable), Hectic (too close to Brutal). Change in one file (`src/config/scoreLabels.ts`).
+
+### Proposal: concert occasion from facts known in advance
+Base points from the booking: stadium headliner (venue ≥ 40,000) 3; arena headliner (≥ 12,000) 2; theater 1. Plus: a multi-night run in the metro (+1), a sellout announced a day ahead (+1), a farewell or tour opener/closer (3, as now). Same ≤1 / 2 / 3 / ≥4 words. Worked: Eras Tour at SoFi = 3 + 1 + 1 = **Marquee**; Elton's final North American show = 3 (farewell) + 1 (sellout) = **Marquee**; Beyoncé 9/1/23 = 3 + 1 + 1 = **Marquee**; Rauw Alejandro at Intuit Dome = 2 = **Notable**; ELO farewell at the Forum = 3 = **Major**; Gilmour at Intuit Dome = 2 = **Notable** (his "rare LA run" would be a storyline +1 → Major). The run length comes from the schedule (same performer, same metro, within a week), the rest from the booking, so none of it needs a judgment call.
