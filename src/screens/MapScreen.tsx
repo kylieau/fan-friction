@@ -32,7 +32,8 @@ import { quietStakes } from '../lib/stakes';
 import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
-import { eventPath, nightsPath, useView, whenLabel, type WhenSpan } from '../lib/view';
+import { getHomeId, setHomeId } from '../lib/homeCity';
+import { eventPath, mapPath, nightsPath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
 
 type Mode = 'crowds' | 'traffic';
 
@@ -383,7 +384,12 @@ export function MapScreen() {
               <ul className="event-list">
                 {upcoming.map((e) => (
                   <li key={e.id}>
-                    <EventRow event={e} night={upcoming} showDate href={`/?date=${e.date}&when=day`} />
+                    <EventRow
+                      event={e}
+                      night={upcoming}
+                      showDate
+                      href={mapPath({ metroId: e.metroId, date: e.date, today, when: 'day' })}
+                    />
                   </li>
                 ))}
               </ul>
@@ -398,6 +404,7 @@ export function MapScreen() {
 /**
  * Closed chip for the current metro. The list floats under the chip, about
  * five rows tall, and does not move the score. Los Angeles is first.
+ * Home is a mark on one row. Looking at another city does not change it.
  */
 function AreaSwitcher({
   metro,
@@ -411,12 +418,29 @@ function AreaSwitcher({
   const [params, setParams] = useSearchParams();
   const menuId = useId();
   const metros = areaMetros();
+  const homeId = openedMetroId();
+  const viewingHome = metro.id === getHomeId();
   const pick = (id: string) => {
     const next = new URLSearchParams(params);
-    if (id === DEFAULT_METRO.id) next.delete('metro');
+    if (id === homeId) next.delete('metro');
     else next.set('metro', id);
     setParams(next);
     onOpenChange(false);
+  };
+  const makeHome = (id: string) => {
+    const viewing = metro.id;
+    const next = new URLSearchParams(params);
+    if (viewing === id) {
+      setHomeId(id);
+      next.delete('metro');
+      setParams(next, { replace: true });
+      return;
+    }
+    // Keep the city on screen. A bare address means home, so name this city
+    // before home changes, or the map would jump.
+    if (!params.has('metro')) next.set('metro', viewing);
+    setParams(next, { replace: true });
+    setHomeId(id);
   };
   return (
     <div className="area-switcher">
@@ -426,19 +450,37 @@ function AreaSwitcher({
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-controls={menuId}
-        aria-label="Area"
+        aria-label={viewingHome ? `Area, ${metro.name}, home` : 'Area'}
         onClick={() => onOpenChange(!open)}
       >
         {metro.name}
+        {viewingHome && <span className="home-mark">Home</span>}
         <ChevronDown />
       </button>
       {open && (
         <div className="area-menu" id={menuId} role="listbox" aria-label="Area">
-          {metros.map((item) => (
-            <button type="button" role="option" aria-selected={item.id === metro.id} key={item.id} onClick={() => pick(item.id)}>
-              {item.name}
-            </button>
-          ))}
+          {metros.map((item) => {
+            const isHome = item.id === getHomeId();
+            return (
+              <div className="area-row" key={item.id}>
+                <button
+                  type="button"
+                  role="option"
+                  aria-selected={item.id === metro.id}
+                  aria-label={isHome ? `${item.name}, home` : item.name}
+                  onClick={() => pick(item.id)}
+                >
+                  <span>{item.name}</span>
+                  {isHome && <span className="home-mark">Home</span>}
+                </button>
+                {!isHome && (
+                  <button type="button" className="set-home" onClick={() => makeHome(item.id)}>
+                    Set as home
+                  </button>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
     </div>

@@ -1,11 +1,11 @@
 // The one place screens ask for event data. It merges every plugged-in source,
 // so adding a live feed means adding it to the lists below, nothing else.
 
-import type { Metro } from '../config/metros';
+import { areaMetros, type Metro } from '../config/metros';
 import { matchingNames } from './matchNight';
-import { espnEvents } from './sources/espnSource';
-import { mlbEvents } from './sources/mlbSource';
-import { METRO_FEELS, seedEvents, seedRatings } from './sources/seedSource';
+import { espnEvents, espnMetroIds } from './sources/espnSource';
+import { mlbEvents, mlbMetroIds } from './sources/mlbSource';
+import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
 import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, NightSearchHit } from './types';
 
@@ -68,6 +68,15 @@ export async function getRatedDates(metroId: string): Promise<DateRating[]> {
 /** The metro's feels-like temperature for a date, if one was seeded. One number, not a reading per pin. */
 export function feelsLikeF(metroId: string, date: LocalDate): number | undefined {
   return METRO_FEELS.find((row) => row.metroId === metroId && row.date === date)?.feelsLikeF;
+}
+
+/**
+ * Cities the map can list events for. A place that only appears in a personal
+ * log is not included. Los Angeles is first. Today that is the only one.
+ */
+export function metrosWithEvents(): Metro[] {
+  const ids = new Set<string>([...seedMetroIds(), ...mlbMetroIds(), ...espnMetroIds()]);
+  return areaMetros().filter((metro) => ids.has(metro.id));
 }
 
 /** Today's date in the metro's own time zone, "2026-10-01". */

@@ -82,7 +82,9 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
       <Stats stats={stats} filter={filter} />
       {shown.length === 0 ? (
         <div className="card empty-card">
-          <div className="card-title">{filter === 'All' ? 'No nights yet.' : `No nights match ${filter}.`}</div>
+          <div className="card-title">
+            {filter === 'All' ? 'No nights yet. Find one on the map.' : `No nights match ${filter}.`}
+          </div>
           {filter !== 'All' && (
             <button type="button" className="link-button" onClick={() => setFilter('All')}>
               Show all nights

@@ -17,6 +17,11 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string }> = {
 };
 const MLB_VENUES: Record<number, string> = { 22: 'dodger-stadium', 1: 'angel-stadium' };
 
+/** Cities this feed can list games for. */
+export function mlbMetroIds(): string[] {
+  return [...new Set(Object.values(MLB_TEAMS).map((team) => team.metroId))];
+}
+
 interface MlbGame {
   gamePk: number;
   gameDate: string;

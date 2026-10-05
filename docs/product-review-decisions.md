@@ -175,3 +175,17 @@ A room under about 5,000 does not change the read for everyone else. It can stil
 The Map shows one card for the soonest saved upcoming night, in any city. Kylie decided this on Oct 5: the card does not follow the city switcher. The card says "Next saved night," then the same short name a map chip uses, then the date and the city, as in "Fri, Oct 9 · Boston." The whole card opens that night. The map stays on the city, zoom, and selection she had, and Back returns there. The event page looks the night up in its own city, so a saved night outside Los Angeles is not "Event not found." A forecast frozen at save stays on the plan and is not drawn on the card. Save and "I was there" stay on the event page. The Map list is unchanged.
 
 Compare keeps the Coming soon card. The heading now points at your nights side by side. The Coming soon chip stays. Nothing else on that tab was added or removed.
+
+## Home city (Oct 5, 2026)
+
+Kylie locked this after the global next-saved-night card. Home is one city, kept on this phone only.
+
+The first time the app opens, a picker asks "Where's home?" The line under the title is "Your map opens here. Change it anytime." Then the city list. The list is only cities that have event data. Today that is Los Angeles. The app does not guess. "Use my location" is a button inside that picker, and it runs only when tapped. If that spot is not near a listed city, home stays unset and they pick from the list.
+
+After that, home lives in the city switcher. The home city has a small Home mark. The other cities say "Set as home." Nothing about home is on the You tab. Looking at another city does not change home. The Map tab opens on home. The map does not move itself to a saved night.
+
+The next-saved-night card stays the one from the section above: any city, the city is named, and the card is absent when nothing is saved. Home does not change which night it shows.
+
+An empty You log can say "No nights yet. Find one on the map." The nights that shipped with the app still fill that tab, so the sentence shows only when the log is actually empty.
+
+🚩 Copying home to another phone needs accounts. That stays out until accounts are built.

@@ -24,6 +24,11 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '26', metroId: 'la', teamId: 'ucla-football', sport: 'football' },
 ];
 
+/** Cities this feed can list games for. */
+export function espnMetroIds(): string[] {
+  return [...new Set(ESPN_TEAMS.map((team) => team.metroId))];
+}
+
 /** ESPN gives venue names, not ids. Games anywhere else (road, neutral, abroad) are skipped. */
 const VENUE_BY_NAME: Record<string, string> = {
   'crypto.com arena': 'crypto-com-arena',

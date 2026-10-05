@@ -1,17 +1,20 @@
-import { useState } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { TabBar } from './components/TabBar';
 import { FirstRunTips } from './components/FirstRunTips';
+import { HomePicker } from './components/HomePicker';
 import { MapScreen } from './screens/MapScreen';
 import { EventScreen } from './screens/EventScreen';
 import { NightsScreen } from './screens/NightsScreen';
 import { CompareScreen } from './screens/CompareScreen';
 import { YouScreen } from './screens/YouScreen';
+import { getHomeId, subscribeHome } from './lib/homeCity';
 import { getPref, setPref } from './lib/prefs';
 
 function Shell() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
+  const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const [showTips, setShowTips] = useState(() => !getPref('tipsDone', false));
 
   const finishTips = () => {
@@ -42,8 +45,9 @@ function Shell() {
         </Routes>
       </main>
       <TabBar />
-      {/* The tips point at the map, so they only show there. */}
-      {showTips && pathname === '/' && <FirstRunTips onDone={finishTips} />}
+      {/* Home is chosen before the tips. Both point at the map, so they only show there. */}
+      {!homeId && pathname === '/' && <HomePicker />}
+      {showTips && Boolean(homeId) && pathname === '/' && <FirstRunTips onDone={finishTips} />}
     </div>
   );
 }

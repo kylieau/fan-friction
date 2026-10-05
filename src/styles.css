@@ -374,7 +374,7 @@ button {
   top: calc(100% + 6px);
   left: 0;
   z-index: 6;
-  width: 196px;
+  width: 280px;
   max-height: calc(5 * 44px + 12px);
   margin: 0;
   padding: 6px;
@@ -384,9 +384,17 @@ button {
   box-shadow: 0 8px 24px rgba(15, 27, 45, 0.18);
 }
 
+.area-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 .area-menu button {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   width: 100%;
   min-height: 44px;
   padding: 8px 12px;
@@ -399,8 +407,31 @@ button {
   color: var(--ink);
 }
 
+.area-row > button[role='option'] {
+  flex: 1;
+  width: auto;
+  min-width: 0;
+}
+
 .area-menu button[aria-selected='true'] {
   background: var(--bg);
+  color: var(--dodger);
+}
+
+.area-menu .set-home {
+  flex: 0 0 auto;
+  width: auto;
+  padding: 8px 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dodger);
+}
+
+.home-mark {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
   color: var(--dodger);
 }
 
@@ -1098,6 +1129,82 @@ button {
   font-weight: 600;
   color: var(--dodger);
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+}
+
+/* ---------- First-run home city ---------- */
+
+.home-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  background: rgba(15, 27, 45, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 20px calc(24px + env(safe-area-inset-bottom, 0px));
+}
+
+.home-card {
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  background: var(--card);
+  border-radius: 20px;
+  padding: 24px 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 12px 32px rgba(15, 27, 45, 0.3);
+}
+
+.home-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.home-helper {
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+.home-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home-city {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 14px;
+  background: var(--bg);
+  text-align: left;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.home-locate {
+  align-self: flex-start;
+}
+
+.home-locate:disabled {
+  opacity: 0.6;
+}
+
+.home-note {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--ink2);
 }
 
 /* ---------- First-run tips ---------- */

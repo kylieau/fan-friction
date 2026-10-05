@@ -1,7 +1,9 @@
+import { useSyncExternalStore } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import { todayIn } from '../data';
 import { isValidDate, shortLocalDate } from './dates';
+import { getHomeId, subscribeHome } from './homeCity';
 
 /** How wide the map looks around its base date. A rated week shows the average to one decimal. */
 export type WhenSpan = 'day' | 'week';
@@ -13,12 +15,18 @@ export function whenLabel(span: WhenSpan, isToday: boolean, date: string): strin
   return shortLocalDate(date);
 }
 
+/** The city a bare map address means: home, once chosen, otherwise Los Angeles. */
+export function openedMetroId(): string {
+  return getHomeId() ?? DEFAULT_METRO.id;
+}
+
 /**
  * What the Map is looking at: one place and one date. The header owns the
  * place (the area switcher). The on-map When pill owns the date and how wide
  * to look. The sheet and the map just read them. `when` is null until
- * someone picks Today, a range, or a date. Los Angeles is the default.
- * Other places are real metros from her log, not a row per venue.
+ * someone picks Today, a range, or a date. No city in the address means home.
+ * Until they choose one, that is Los Angeles. Other places are real metros
+ * from her log, not a row per venue. Naming a city here does not change home.
  */
 export interface View {
   metro: Metro;
@@ -29,9 +37,10 @@ export interface View {
 }
 
 export function useView(): View {
+  const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const [params] = useSearchParams();
   const requested = params.get('metro');
-  const metro = (requested && METROS[requested]) || DEFAULT_METRO;
+  const metro = (requested && METROS[requested]) || (homeId && METROS[homeId]) || DEFAULT_METRO;
   const today = todayIn(metro);
   const rawDate = params.get('date');
   const date = rawDate && isValidDate(rawDate) ? rawDate : today;
@@ -43,7 +52,7 @@ export function useView(): View {
 /** The map address for one place, one base date, and how wide to look. */
 export function mapPath(opts: { metroId: string; date: string; today: string; when: WhenSpan }): string {
   const params = new URLSearchParams();
-  if (opts.metroId !== DEFAULT_METRO.id) params.set('metro', opts.metroId);
+  if (opts.metroId !== openedMetroId()) params.set('metro', opts.metroId);
   if (opts.date !== opts.today) params.set('date', opts.date);
   params.set('when', opts.when);
   return `/?${params.toString()}`;
@@ -61,7 +70,7 @@ export function eventPath(eventId: string, metroId: string): string {
 /** The Nights tab, opened on the month of a date so "Pick a date" lands in the right place. */
 export function nightsPath(opts: { metroId: string; date: string }): string {
   const params = new URLSearchParams();
-  if (opts.metroId !== DEFAULT_METRO.id) params.set('metro', opts.metroId);
+  if (opts.metroId !== openedMetroId()) params.set('metro', opts.metroId);
   params.set('date', opts.date);
   return `/nights?${params.toString()}`;
 }
