@@ -4,7 +4,7 @@
 
 import type { CrowdEvent, FrictionRead, LocalDate, LocalTime } from './types';
 import { frictionReadForEvent } from './read';
-import { seedRatingFor } from './sources/seedSource';
+import { applyFormula } from './formulaRead';
 
 export interface ArchivedEventRead {
   eventId: string;
@@ -29,7 +29,10 @@ function shownThatNight(events: readonly CrowdEvent[], event: CrowdEvent): Crowd
 
 /** The read on file for one event. Undefined when there is no score and no friction word. */
 export function forecastRead(event: CrowdEvent, events: readonly CrowdEvent[]): FrictionRead | undefined {
-  const result = frictionReadForEvent(event, shownThatNight(events, event), seedRatingFor(event.metroId, event.date));
+  const night = shownThatNight(events, event);
+  const { events: assessed, rating } = applyFormula(event.metroId, event.date, night);
+  const me = assessed.find((row) => row.id === event.id) ?? event;
+  const result = frictionReadForEvent(me, assessed, rating);
   return result?.read;
 }
 

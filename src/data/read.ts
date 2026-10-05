@@ -212,7 +212,7 @@ export function frictionReadForEvent(
         rating: dateRating?.rating,
         friction: ownFriction,
         why: ownFriction ? event.assessment?.why : undefined,
-        method: dateRating?.method ?? 'hand',
+        method: dateRating?.method ?? (ownFriction ? 'formula' : 'hand'),
       },
     };
   }

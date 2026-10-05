@@ -55,12 +55,8 @@ try {
     const { seedEvents } = await server.ssrLoadModule('/src/data/sources/seedSource.ts');
     events = (await seedEvents.catalog(METRO)).filter((e) => e.date < today);
   } else {
-    const dir = path.join(root, 'data', 'schedule-archive', METRO);
-    const { readdir } = await import('node:fs/promises');
-    const files = (await readdir(dir)).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort();
-    const latest = files[files.length - 1];
-    if (!latest) throw new Error('No schedule snapshot to read events from.');
-    const snapshot = JSON.parse(await readFile(path.join(dir, latest), 'utf8'));
+    const { collectScheduleArchive } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
+    const snapshot = await collectScheduleArchive(now);
     events = snapshot.events.filter((e) => e.date >= today);
   }
 

@@ -153,6 +153,7 @@ export function EventScreen() {
           <div className="verdict-word">{frictionLabel(a.friction)}</div>
           <div className="verdict-why">{a.why}</div>
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
+          {a.status === 'formula' && <div className="draft-note">Formula v4 · placeholder numbers until tuned.</div>}
         </section>
       )}
 

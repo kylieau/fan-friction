@@ -8,6 +8,7 @@ import { mlbEvents, mlbMetroIds } from './sources/mlbSource';
 import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
 import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, DateSearchHit } from './types';
+import { applyFormula } from './formulaRead';
 
 const EVENT_SOURCES: EventSource[] = [seedEvents, mlbEvents, espnEvents];
 const RATING_SOURCES: RatingSource[] = [seedRatings];
@@ -21,19 +22,26 @@ function preferSeed(events: CrowdEvent[]): CrowdEvent[] {
   return seeded.length > 0 ? seeded : events;
 }
 
-/** Everything known about one date in one metro: its events, rating and status. */
+/**
+ * Everything known about one date in one metro: its events, rating and status.
+ * The rating and each event's verdict come from the formula (v4). The hand
+ * ratings in the seed are comparison data and never shown.
+ */
 export async function getCityDate(metroId: string, date: LocalDate): Promise<CityDate> {
   const lists = await Promise.all(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date)));
-  const events = preferSeed(lists.flat()).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
-
-  let rating: DateRating | null = null;
-  for (const s of RATING_SOURCES) {
-    rating = await s.ratingFor(metroId, date);
-    if (rating) break;
-  }
-
+  const listed = preferSeed(lists.flat()).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
+  const { events, rating } = applyFormula(metroId, date, listed);
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';
   return { metroId, date, status, events, rating };
+}
+
+/** The hand rating on file for a date, for comparison tables only. */
+export async function handRatingFor(metroId: string, date: LocalDate): Promise<DateRating | null> {
+  for (const s of RATING_SOURCES) {
+    const rating = await s.ratingFor(metroId, date);
+    if (rating) return rating;
+  }
+  return null;
 }
 
 /** The next few events after a date, from every live source, soonest first. */
@@ -59,10 +67,23 @@ export async function getEventsBetween(metroId: string, afterDate: LocalDate, th
     .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')));
 }
 
-/** Every rated date in a metro, newest first. */
+/**
+ * The famous dates in a metro (the hand-checked list), each rated by the
+ * formula, newest first. The list is curated; the numbers are computed.
+ */
 export async function getRatedDates(metroId: string): Promise<DateRating[]> {
   const lists = await Promise.all(RATING_SOURCES.map((s) => s.ratedDates(metroId)));
-  return lists.flat().sort((a, b) => b.date.localeCompare(a.date));
+  const dates = [...new Set(lists.flat().map((r) => r.date))].sort((a, b) => b.localeCompare(a));
+  const hand = new Map(lists.flat().map((r) => [r.date, r]));
+  const rated = await Promise.all(dates.map((date) => getCityDate(metroId, date)));
+  // The list is curated, so its one-line headline is the curated one; the number is the formula's.
+  return rated
+    .map((day) => {
+      if (!day.rating) return null;
+      const curated = hand.get(day.date);
+      return curated ? { ...day.rating, headline: curated.headline, sources: curated.sources } : day.rating;
+    })
+    .filter((r): r is DateRating => r !== null);
 }
 
 /** The metro's feels-like temperature for a date, if one was seeded. One number, not a reading per pin. */
@@ -104,9 +125,11 @@ async function catalog(metroId: string): Promise<CrowdEvent[]> {
  */
 export async function getCalendarMonth(metroId: string, month: string): Promise<CalendarDay[]> {
   if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(month)) return [];
-  const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId)]);
-  const rated = new Map(ratings.filter((r) => r.date.startsWith(month)).map((r) => [r.date, r.rating]));
+  const events = await catalog(metroId);
   const busy = new Set(events.filter((e) => e.date.startsWith(`${month}-`)).map((e) => e.date));
+  // Every date with events gets the formula's read, so upcoming dates shade too.
+  const days_ = await Promise.all([...busy].map((date) => getCityDate(metroId, date)));
+  const rated = new Map(days_.filter((d) => d.rating).map((d) => [d.date, d.rating!.rating]));
   const count = new Date(Date.UTC(Number(month.slice(0, 4)), Number(month.slice(5, 7)), 0)).getUTCDate();
   const days: CalendarDay[] = [];
   for (let day = 1; day <= count; day++) {

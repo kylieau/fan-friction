@@ -135,7 +135,8 @@ export interface Assessment {
   friction: Friction;
   /** The one or two biggest reasons, in plain words. */
   why: string;
-  status: 'draft' | 'confirmed';
+  /** draft / confirmed are hand calls kept for comparison; formula is what the app shows. */
+  status: 'draft' | 'confirmed' | 'formula';
 }
 
 /**
