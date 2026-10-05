@@ -2,21 +2,26 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
 
-_Last synced: Oct 5, 2026 (Claude Code, late)._
+_Last synced: Oct 5, 2026 (Claude Code, night)._
 
 ## Current state
-Accounts, profiles and the Friends tab are built and deployed. Kylie is mid-review of the You screen; her last reactions are folded in. Nothing uncommitted. `main` is pushed and live.
+The app's structure pivoted again today, with Kylie: **tabs are Home · Explore · Favorites · You.** Home is a digest (Tonight in your city with a mini map, only when the city has events that day; Coming up; Recent; Friends grouped by event; signed out adds This week and the sign-in card). Explore is the old Map tab with a **Map / Calendar switch** that remembers the last choice per device; the city switcher lives only there. Compare is gone from the tabs (its screen stays at /compare). The **date page** (`/date/<date>`) is one page per date in a city: the read box, your entry or plan, the timeline of events with friction chips (Moderate+), friends there, Attend/Attended as the gold button with a share icon beside it. "Did you go?" and "Were you there?" were dropped: an Attending plan becomes Attended by itself once the date passes; Famous nights stay in the calendar view.
 
-- **You (signed in):** letter avatar, display name, `@handle` under it, gear top-right (blue count badge when follow requests wait). Three tabs: **Nights** (every night newest first, month separators, year for rough dates, no filter), **Stats** (filter chips + Nights/Venues/Heaviest night + count lists), **Friends** (recent nights of approved followees, newest first, name + night + stamp; three rows marked **Example** until anyone is followed, never saved anywhere). Signed out: the sign-in card (Google, centered email field, "Email me a link" as text) then the tabs.
-- **Settings** (`/you/settings`): Account (name, @handle, Sign out, **Share profile** via share sheet or copy), Profile form inline (display name, @handle, visibility Only me / People I approve / Anyone, Save), Export my nights, Show the tips again. `/profile/edit` still exists as a route but nothing links to it.
-- **Visitor page** `/p/<handle>`: name, Nights/Venues/Heaviest, nights list, gold Follow (Follow / Requested / Following). Opening your own shows exactly the visitor view, no banner, no Edit. Letter avatar only; the Google picture is stored but unused.
-- **Supabase:** migrations 0001 (tables + RLS), 0002 (her 130 nights), 0003 (handles, profile cards readable by anyone) all run by Kylie. Project `fhfqhcbnzmmkhsselayb`; keys in Vercel (by hand) and `.env.local`.
-- **City switcher:** house icon before the home city's name.
+- **Pushed and live:** everything through the read box (commit `7fd7ace`). **Local, not pushed:** the Home/Explore build (`44e996a`) and this handoff. Kylie wants to look locally first and say push.
+- **Words:** "Fan/Friction" unchanged. On screen: Events (entries), dates, Calendar, Home, Explore, Favorites, Attend/Attending/Attended. "Famous nights" kept. The date page says "That day in …" when everything starts before 5 pm. Code and Supabase tables renamed to match (entries, entry_notes; migration 0004 run by Kylie).
+- **Read box** (number + word in the band color; Cooked = ink + gold) is one component (`ReadTile`) used everywhere a date's read shows.
+- **Supabase:** migrations 0001–0004 all run. Favorites live in `settings.data`. Her 130 entries are in her account.
 
-## Changes made (this session)
-Docs (`direction.md`, `product-review-decisions.md`, `accounts-proposal.md`, `AGENTS.md` incl. the UI copy rule), `supabase/migrations/0001–0003`, `src/data/{account,profiles}.ts`, `src/data/storage/{supabaseClient,supabaseStore,index}.ts`, `src/components/AccountBlock.tsx`, `src/screens/{ProfileScreen,ProfileEditScreen,SettingsScreen,YouScreen}.tsx`, `src/lib/dates.ts` (`timelineGroup`), `src/components/Icons.tsx` (GearIcon), `HomePicker.tsx` (no location), `MapScreen.tsx` (house first), styles.
+## Changes made (this session, late)
+`src/screens/{HomeScreen,ExploreScreen,DateScreen,CalendarScreen,FavoritesScreen,FavoritePage,SettingsScreen}.tsx`, `src/components/{ReadTile,DateScore,AccountBlock}.tsx`, `src/data/{favorites,read,profiles,personalLog,types}.ts`, `src/lib/view.ts` (datePath, calendarPath → /explore?view=calendar, explore-view pref), `src/map/BaseMap.tsx` (interactive flag), styles (tighter spacing, read colors, chips), `supabase/migrations/0003_handles.sql`, `0004_entries.sql`.
 
 ## Key decisions in force
+- **Home (Kylie, Oct 5):** the app opens on a digest, not the Map. Tonight shows only when the home city has events that day; its list is the biggest three by crowd first, then the rest, in a box three rows tall that scrolls. No feed of strangers, nothing ranked by friction. Friends grouped by event ("Sam and Priya · Slayer"). Coming up and Recent list everything, home and away; Recent shows the outcome when known.
+- **Explore (Kylie, Oct 5):** Map / Calendar switch, remembers last choice. One search icon (Home and Explore) opens the calendar view's search.
+- **No confirmation steps:** no "Did you go?", no "Were you there?" as a step. Attending → Attended when the date passes (`settlePassedPlans` at app start).
+- **Friction chips:** Low never shown; Moderate pale blue, Heavy Dodger blue, Extreme ink. Same palette on the Map sheet and the date page.
+- **Spacing/type:** she wants it tight ("I'm not my grandparents"); one pass done, say "tighter" for another.
+- **Logos:** abbreviations until a public launch decision; logos are a licensing question she'll judge.
 - **Pushing (Kylie, Oct 5):** don't push every change at once. Commit, leave it on the local site (`npm run dev`, localhost:3001) for her to look at, push when she says. She OK'd the last pushes because she was stepping out.
 - **UI copy rule (Kylie, Oct 5):** users are not dumb; no explanatory banners, no "this is how others see you", utilities behind the gear. In `AGENTS.md`.
 - **You vs profile (settled Oct 5 after consulting Letterboxd/Strava/Flighty patterns):** one page; You holds the controls, `/p/<handle>` is the same page as a visitor sees. No separate profile page, no "Your page" row; the link is only for sharing.
@@ -38,11 +43,11 @@ Docs (`direction.md`, `product-review-decisions.md`, `accounts-proposal.md`, `AG
 - Cloud notes: Wikipedia is blocked; ESPN rejects headless-Chrome user agents; screenshots use `playwright-core` with swiftshader args; don't `pkill` vite.
 
 ## Next steps
-1. Kylie reviews You/Settings/Friends on the live site signed in (I could only screenshot signed-out states). Open question she left: should the sign-in card's two lines of copy go.
-2. **Night rows need design work** (Kylie): "work out the kinks of each entry". Bring her two or three row variants to pick from. Needs her notes first.
-3. Then richer entries (score auto-filled, setlist link, who you went with, note, optional photo), then the rating formula. Parked: Traffic, Night story, Famous nights → "Were you there?", You "Did you go?", Ticketmaster, photos (only if free).
+1. Kylie reviews Home and Explore locally (today, Oct 5, is quiet in LA, so Tonight won't show until a day with events; the Oct 4 seed shows it when the clock is set back). Then push.
+2. Night rows / entry design (her notes first; she wants to build all pages before this). Then richer entries (outcome auto-filled, setlist link, who with, note, photo), then the rating formula (makes Coming up / Tonight reads real; today upcoming dates show "—").
+3. Data widening when she asks: away games, concerts (Ticketmaster 🚩), results after games. Parked: Traffic, Night story, Compare-with on the date page, Friends feed beyond You's tab.
 
 **Next command to run:**
 ```bash
-git pull --ff-only && npm run dev   # localhost:3001; see the Direction pivot and Accounts sections of BACKLOG.md
+git status -sb && npm run dev   # localhost:3001; Home at /, Explore at /explore
 ```
