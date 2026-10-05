@@ -2399,11 +2399,19 @@ button {
 .account-input {
   min-height: 48px;
   padding: 0 14px;
-  border: 1.5px solid var(--line, #d9d4c7);
+  border: 1.5px solid var(--line);
   border-radius: 14px;
   background: var(--bg);
   font-size: 16px;
   color: var(--ink);
+}
+
+.account-email .account-input {
+  text-align: center;
+}
+
+.account-email .account-input::placeholder {
+  color: var(--muted);
 }
 
 .account-input:focus-visible {
@@ -2411,8 +2419,14 @@ button {
   outline-offset: 2px;
 }
 
+.account-send {
+  align-self: center;
+  min-height: 36px;
+  color: var(--dodger);
+}
+
 .account-send:disabled {
-  opacity: 0.5;
+  color: var(--muted);
 }
 
 /* ---------- Profile ---------- */

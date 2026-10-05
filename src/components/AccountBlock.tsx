@@ -80,7 +80,7 @@ export function AccountBlock() {
           onChange={(event) => setEmail(event.target.value)}
           disabled={busy}
         />
-        <button type="submit" className="settings-row account-send" disabled={busy || !email.includes('@')}>
+        <button type="submit" className="link-button account-send" disabled={busy || !email.includes('@')}>
           Email me a link
         </button>
       </form>
