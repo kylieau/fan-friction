@@ -8,6 +8,7 @@ import {
   getRatedDates,
   canSignIn,
   getAccount,
+  getMyProfile,
   getSaveWarning,
   getSyncStatus,
   subscribeAccount,
@@ -41,6 +42,19 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [exportNote, setExportNote] = useState('');
+  const [handle, setHandle] = useState<string | null>(null);
+
+  useEffect(() => {
+    let current = true;
+    if (!account) {
+      setHandle(null);
+      return;
+    }
+    getMyProfile().then((profile) => current && setHandle(profile?.handle ?? null));
+    return () => {
+      current = false;
+    };
+  }, [account?.id]);
 
   useEffect(() => {
     let current = true;
@@ -117,10 +131,22 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
   return (
     <div className="screen page">
       <div className="you-header">
-        <span className="avatar" aria-hidden>
-          {(account?.displayName ?? account?.email ?? 'K').slice(0, 1).toUpperCase()}
-        </span>
-        <h1 className="page-title">You</h1>
+        {account && handle ? (
+          <Link to={`/p/${handle}`} className="you-me" aria-label="Your profile">
+            <span className="avatar" aria-hidden>
+              {(account.displayName ?? account.email ?? 'Y').slice(0, 1).toUpperCase()}
+            </span>
+            <h1 className="page-title">{account.displayName ?? 'You'}</h1>
+            <span className="you-me-hint">Profile ›</span>
+          </Link>
+        ) : (
+          <>
+            <span className="avatar" aria-hidden>
+              {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
+            </span>
+            <h1 className="page-title">You</h1>
+          </>
+        )}
       </div>
 
       <AccountBlock />

@@ -168,6 +168,24 @@ export {
   type Account,
 } from './account';
 export {
+  approveFollow,
+  declineFollow,
+  follow,
+  followRequests,
+  followStatus,
+  getMyProfile,
+  getProfileByHandle,
+  isValidHandle,
+  nightsOf,
+  suggestHandle,
+  unfollow,
+  updateMyProfile,
+  type FollowRequest,
+  type FollowStatus,
+  type Profile,
+  type Visibility,
+} from './profiles';
+export {
   PRELIST_ATTENDEES,
   FRICTION_ATTENDEES,
   STAMP_LOCK_HOURS,
