@@ -102,7 +102,7 @@ export function AccountRow({ handle }: { handle: string | null }) {
     <div className="account-row">
       <div className="account-who">
         <span className="account-name">{account.displayName ?? account.email ?? 'Signed in'}</span>
-        {handle && <span className="you-fine">/p/{handle}</span>}
+        {handle && <span className="you-fine">@{handle}</span>}
       </div>
       <button
         type="button"

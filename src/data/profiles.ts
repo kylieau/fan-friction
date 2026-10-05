@@ -177,3 +177,87 @@ export async function declineFollow(followerId: string): Promise<void> {
   if (!c || !me) return;
   await c.from('follows').delete().eq('follower_id', followerId).eq('followee_id', me.id);
 }
+
+export interface FriendNight {
+  night: LoggedNight;
+  friend: Profile;
+  /** True on the built-in examples shown before anyone is followed. Never saved. */
+  example?: boolean;
+}
+
+/** Recent nights of the people the signed-in person follows (approved only), newest first. */
+export async function friendsNights(limit = 20): Promise<FriendNight[]> {
+  const c = supabase();
+  const me = getAccount();
+  if (!c || !me) return [];
+  const { data: links } = await c.from('follows').select('followee_id').eq('follower_id', me.id).eq('status', 'approved');
+  const ids = ((links ?? []) as { followee_id: string }[]).map((row) => row.followee_id);
+  if (ids.length === 0) return [];
+  const [{ data: people }, { data: rows }] = await Promise.all([
+    c.from('profiles').select('*').in('id', ids),
+    c.from('nights').select('id, user_id, data').in('user_id', ids).order('when_sort', { ascending: false }).limit(limit),
+  ]);
+  const byId = new Map(((people ?? []) as ProfileRow[]).map((row) => [row.id, fromRow(row)]));
+  return ((rows ?? []) as { id: string; user_id: string; data: LoggedNight }[])
+    .map((row) => {
+      const friend = byId.get(row.user_id);
+      return friend ? { night: { ...row.data, id: row.id }, friend } : null;
+    })
+    .filter((item): item is FriendNight => item !== null);
+}
+
+/**
+ * Placeholder rows for the Friends section while nobody is followed yet, so the
+ * shape can be judged. Each is marked `example` and shown with an Example chip.
+ * Nothing here is written anywhere.
+ */
+export const EXAMPLE_FRIEND_NIGHTS: FriendNight[] = [
+  {
+    example: true,
+    friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, visibility: 'anyone' },
+    night: {
+      id: 'example-night-1',
+      when: { sort: '2026-10-03', label: '', precision: 'day' },
+      title: 'Dodgers (NLDS G1) vs. Phillies',
+      tags: ['Dodgers'],
+      sport: 'Baseball',
+      sides: ['Dodgers'],
+      venue: 'Dodger Stadium',
+      inMetro: true,
+      kind: 'game',
+      metroId: 'la',
+    },
+  },
+  {
+    example: true,
+    friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, visibility: 'anyone' },
+    night: {
+      id: 'example-night-2',
+      when: { sort: '2026-10-02', label: '', precision: 'day' },
+      title: 'Slayer',
+      tags: ['Concerts'],
+      sport: 'Concerts',
+      sides: ['Slayer'],
+      venue: 'Kia Forum',
+      inMetro: true,
+      kind: 'show',
+      metroId: 'la',
+    },
+  },
+  {
+    example: true,
+    friend: { id: 'example-3', handle: 'dev', displayName: 'Dev', avatarUrl: null, visibility: 'anyone' },
+    night: {
+      id: 'example-night-3',
+      when: { sort: '2026-09-21', label: '', precision: 'day' },
+      title: 'Rams vs. NY Giants',
+      tags: ['Rams'],
+      sport: 'Football',
+      sides: ['Rams'],
+      venue: 'SoFi Stadium',
+      inMetro: true,
+      kind: 'game',
+      metroId: 'la',
+    },
+  },
+];

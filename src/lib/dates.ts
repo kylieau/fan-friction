@@ -144,3 +144,18 @@ export function clampMonth(month: string, today: string): string {
   if (month > latest) return latest;
   return month;
 }
+
+/**
+ * The timeline group a logged night falls in: "October 2026" for an exact day or a
+ * month, "2014" for a year or a span, and "Date not written down" otherwise.
+ */
+export function timelineGroup(when: LoggedWhen): string {
+  if ((when.precision === 'day' || when.precision === 'month') && isValidDate(when.sort)) {
+    const [y, m] = when.sort.split('-').map(Number);
+    return new Date(Date.UTC(y, m - 1, 1)).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+  }
+  if ((when.precision === 'year' || when.precision === 'span') && isValidDate(when.sort)) {
+    return when.label.trim() || when.sort.slice(0, 4);
+  }
+  return 'Date not written down';
+}

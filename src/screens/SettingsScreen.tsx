@@ -1,6 +1,7 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import { AccountRow } from '../components/AccountBlock';
+import { ProfileForm } from './ProfileEditScreen';
 import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO } from '../config/metros';
 import { getAccount, getMyProfile, getPersonalLog, nightBackup, subscribeAccount, subscribePersonalLog, todayIn } from '../data';
@@ -11,6 +12,22 @@ export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [handle, setHandle] = useState<string | null>(null);
   const [exportNote, setExportNote] = useState('');
+  const [shareNote, setShareNote] = useState('');
+
+  // The profile link is for sharing, like Letterboxd's Share profile. It is not shown as an address.
+  const shareProfile = async () => {
+    const url = `${window.location.origin}/p/${handle}`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: account?.displayName ?? 'Fan/Friction', url });
+        return;
+      }
+      await navigator.clipboard.writeText(url);
+      setShareNote('Link copied.');
+    } catch {
+      setShareNote(url);
+    }
+  };
 
   useEffect(() => {
     let current = true;
@@ -51,14 +68,19 @@ export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
           <div className="settings-row settings-static">
             <AccountRow handle={handle} />
           </div>
-          <Link to="/profile/edit" className="settings-row settings-link">
-            Edit profile
-          </Link>
           {handle && (
-            <Link to={`/p/${handle}`} className="settings-row settings-link">
-              Your page
-            </Link>
+            <button type="button" className="settings-row settings-link" onClick={shareProfile}>
+              <span>Share profile</span>
+              {shareNote && <span className="settings-value">{shareNote}</span>}
+            </button>
           )}
+        </div>
+      )}
+
+      {account && (
+        <div className="settings">
+          <div className="settings-heading">Profile</div>
+          <ProfileForm />
         </div>
       )}
 

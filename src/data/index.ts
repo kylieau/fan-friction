@@ -168,9 +168,11 @@ export {
   type Account,
 } from './account';
 export {
+  EXAMPLE_FRIEND_NIGHTS,
   approveFollow,
   declineFollow,
   follow,
+  friendsNights,
   followRequests,
   followStatus,
   getMyProfile,
@@ -182,6 +184,7 @@ export {
   updateMyProfile,
   type FollowRequest,
   type FollowStatus,
+  type FriendNight,
   type Profile,
   type Visibility,
 } from './profiles';

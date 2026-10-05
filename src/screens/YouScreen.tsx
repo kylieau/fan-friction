@@ -11,6 +11,8 @@ import {
   approveFollow,
   declineFollow,
   followRequests,
+  friendsNights,
+  EXAMPLE_FRIEND_NIGHTS,
   getMyProfile,
   getSaveWarning,
   subscribeAccount,
@@ -20,12 +22,13 @@ import {
   subscribePersonalLog,
   yourNights,
   type FollowRequest,
+  type FriendNight,
   type LoggedNight,
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
 import { GearIcon } from '../components/Icons';
-import { loggedDateLabel } from '../lib/dates';
+import { loggedDateLabel, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { eventPath } from '../lib/view';
 
@@ -44,6 +47,7 @@ export function YouScreen() {
   const [tab, setTab] = useState<'nights' | 'stats'>('nights');
   const [handle, setHandle] = useState<string | null>(null);
   const [requests, setRequests] = useState<FollowRequest[]>([]);
+  const [friends, setFriends] = useState<FriendNight[] | null>(null);
 
   const decide = async (followerId: string, yes: boolean) => {
     if (yes) await approveFollow(followerId);
@@ -55,10 +59,12 @@ export function YouScreen() {
     let current = true;
     if (!account) {
       setHandle(null);
+      setFriends(null);
       return;
     }
     getMyProfile().then((profile) => current && setHandle(profile?.handle ?? null));
     followRequests().then((list) => current && setRequests(list));
+    friendsNights().then((list) => current && setFriends(list));
     return () => {
       current = false;
     };
@@ -95,29 +101,29 @@ export function YouScreen() {
 
   const nightsBlock = (
     <section className="you-block" aria-label="Your nights">
-      {shown.length === 0 ? (
+      {nights.length === 0 ? (
         <div className="card empty-card">
           <div className="card-title">
-            {filter !== 'All'
-              ? `No nights match ${filter}.`
-              : canSignIn() && !account
-                ? 'No nights on this phone. Sign in to see yours, or find one on the map.'
-                : 'No nights yet. Find one on the map.'}
+            {canSignIn() && !account
+              ? 'No nights on this phone. Sign in to see yours, or find one on the map.'
+              : 'No nights yet. Find one on the map.'}
           </div>
-          {filter !== 'All' && (
-            <button type="button" className="link-button" onClick={() => setFilter('All')}>
-              Show all nights
-            </button>
-          )}
         </div>
       ) : (
-        <ul className="log-list">
-          {shown.map((night) => (
-            <li key={night.id}>
-              <NightRow night={night} rating={ratingForNight(night, ratings)} />
-            </li>
+        <div className="timeline">
+          {groupByTime(nights).map(([group, list]) => (
+            <section key={group} className="timeline-group" aria-label={group}>
+              <h3 className="timeline-heading">{group}</h3>
+              <ul className="log-list">
+                {list.map((night) => (
+                  <li key={night.id}>
+                    <NightRow night={night} rating={ratingForNight(night, ratings)} />
+                  </li>
+                ))}
+              </ul>
+            </section>
           ))}
-        </ul>
+        </div>
       )}
     </section>
   );
@@ -130,10 +136,15 @@ export function YouScreen() {
         </span>
         <div className="you-who">
           <h1 className="page-title">{account?.displayName ?? 'You'}</h1>
-          {account && handle && <span className="you-handle">/p/{handle}</span>}
+          {account && handle && <span className="you-handle">@{handle}</span>}
         </div>
-        <Link to="/you/settings" className="round-button you-gear" aria-label="Settings">
+        <Link
+          to="/you/settings"
+          className="round-button you-gear"
+          aria-label={requests.length > 0 ? `Settings, ${requests.length} follow requests` : 'Settings'}
+        >
           <GearIcon />
+          {requests.length > 0 && <span className="you-badge">{requests.length}</span>}
         </Link>
       </div>
 
@@ -168,6 +179,8 @@ export function YouScreen() {
         </section>
       )}
 
+      {account && <FriendsSection items={friends} ratings={ratings} />}
+
       <div className="segmented" role="tablist" aria-label="You">
         <button type="button" role="tab" aria-selected={tab === 'nights'} onClick={() => setTab('nights')}>
           Nights
@@ -177,10 +190,83 @@ export function YouScreen() {
         </button>
       </div>
 
-      {filters}
-
-      {tab === 'nights' ? nightsBlock : <Stats stats={stats} heaviest={heaviest} />}
+      {tab === 'nights' ? (
+        nightsBlock
+      ) : (
+        <>
+          {filters}
+          <Stats stats={stats} heaviest={heaviest} />
+        </>
+      )}
     </div>
+  );
+}
+
+/** Nights in the order given, split into month (or year) groups for the timeline. */
+function groupByTime(nights: LoggedNight[]): [string, LoggedNight[]][] {
+  const groups: [string, LoggedNight[]][] = [];
+  for (const night of nights) {
+    const label = timelineGroup(night.when);
+    const last = groups[groups.length - 1];
+    if (last && last[0] === label) last[1].push(night);
+    else groups.push([label, [night]]);
+  }
+  return groups;
+}
+
+/**
+ * Recent nights of people you follow, newest first. Not a feed to scroll: a short
+ * list, each row a friend's night with its stamp, tapping through to the event.
+ * Before anyone is followed, built-in examples show the shape, each marked Example.
+ */
+function FriendsSection({ items, ratings }: { items: FriendNight[] | null; ratings: ReadonlyMap<string, number> }) {
+  if (items === null) return null;
+  const list = items.length > 0 ? items.slice(0, 8) : EXAMPLE_FRIEND_NIGHTS;
+  return (
+    <section className="you-block" aria-labelledby="friends-heading">
+      <h2 id="friends-heading" className="you-heading">
+        Friends
+      </h2>
+      <ul className="log-list">
+        {list.map(({ night, friend, example }) => {
+          const rating = example ? null : ratingForNight(night, ratings);
+          const facts = [loggedDateLabel(night.when), night.venue].filter(Boolean).join(' · ');
+          const body = (
+            <>
+              {rating !== null && (
+                <span className={`log-score ${scoreBand(rating)}`} aria-label={`${scoreLabel(rating)}, ${rating} out of 10`}>
+                  <span className="log-score-num">{rating}</span>
+                  <span className="log-score-word">{scoreLabel(rating)}</span>
+                </span>
+              )}
+              <span className="log-main">
+                <span className="log-friend">
+                  {friend.displayName ?? friend.handle ?? 'Someone'}
+                  {example && <span className="example-chip">Example</span>}
+                </span>
+                <span className="log-title">{night.title}</span>
+                <span className="log-facts">{facts}</span>
+              </span>
+            </>
+          );
+          const key = `${friend.id}-${night.id}`;
+          if (night.eventId && !example) {
+            return (
+              <li key={key}>
+                <Link to={eventPath(night.eventId, night.metroId ?? DEFAULT_METRO.id)} className="log-row">
+                  {body}
+                </Link>
+              </li>
+            );
+          }
+          return (
+            <li key={key}>
+              <div className="log-row">{body}</div>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 }
 
