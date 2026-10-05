@@ -163,3 +163,9 @@ Kylie locked these after the review above. The review text is unchanged. The sam
 | Tweets from the night | Hold. Do not build until access and cost are verified. |
 
 The archive does not show anything in the app. A night from before the first saved schedule is reconstructed, as section 2 describes. That word is not on screen yet. The open items above for the archive, the lock time, and privacy defaults are decided by this table. The venue capacity table, the Compare copy, the Famous-night hand check, and the terms-of-use review are still open.
+
+## Data foundation (Oct 5, 2026)
+
+The data layer now keeps the two fields from section 2. A saved plan stores the forecast it showed, and that forecast is not recalculated. "I was there," after the lock, stores a stamp with the time it was last updated. The lock is the one in the table above: 24 hours after the last scheduled start that night. A stamp is marked reconstructed when no schedule snapshot covers the date. None of this is on screen.
+
+A room under about 5,000 does not change the read for everyone else. It can still take the night's existing score when a bigger event that night already has one. No new crowd number is made up. The logging-threshold sentence (about 1,000 in `docs/direction.md` and `AGENTS.md`, versus anything can be logged in section 5) is still open. This note does not close it.
