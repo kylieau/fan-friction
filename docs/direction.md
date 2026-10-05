@@ -2,7 +2,7 @@
 
 Oct 4, 2026 · Kylie Au
 
-_Saved from the PDF "Fan Friction — Direction Update The Log Leads." Text kept as written. Read this before making any product decision._
+_Saved from the PDF "Fan Friction — Direction Update The Log Leads." Text kept as written. Read this before making any product decision. Where a later lock differs, `docs/product-review-decisions.md` is newer. Status as of Oct 5, 2026 is at the bottom._
 
 ## Summary
 
@@ -108,3 +108,23 @@ These are directions to discuss, not build instructions. We will go back and for
 - **Can we show tweets on v1's public-data rule?** The X API is paid and restricted. Embedding a few specific posts may work differently from pulling feeds; check before building.
 - **How relevant is gridlock outside LA?** The goal is nationwide and eventually global. LA's event overlaps and traffic may make friction unusually vivid there. Other cities may need friction to lean more on crowd fight than on gridlock.
 - **Logging past nights.** Can someone add nights from before they had the app, with friction computed from public data for those dates?
+
+## Status (Oct 5, 2026)
+
+The text above is unchanged. This note is so a later session does not treat a settled question as still open. Current build state is `MEMORY_HANDOFF.md`. The locks are in `docs/product-review-decisions.md`.
+
+PRs #8–#12 are on `main`. The nightly Los Angeles schedule archive runs at 12:15am Pacific. A night can hold a stamp. The Map has one card for the next saved night in any city. The lines are "Next saved night", the chip name, and the date and city, as in "Fri, Oct 9 · Boston". There is no gold button. A tap opens that event in its own city. The map stays where it is, and Back restores it. Compare's heading is "Your nights, side by side."
+
+The forecast freezes at the scheduled start. Save stores no forecast. The every-30-minute capture is parked. Until it returns, the stamp uses the latest daily snapshot saved before the start. The stamp clock is the last scheduled start that night. The stamp locks 24 hours after that start.
+
+Home city is stored on the device. The first open asks "Where's home?" The city switcher shows a house icon. "Set as home" appears only on cities that have events. The map always opens on home and never follows a saved night.
+
+Rooms under about 5,000 stay off the map. They can still be logged, and they can take a read from the bigger events that night. They do not move anyone else's read.
+
+The Map's look is no longer locked. Propose a change, then wait for approval. Nothing already built is deleted. A new cost is flagged with 🚩 and waits for a yes. Kylie locks decisions.
+
+The open questions in the section above (will people log, how often, the name, gridlock outside LA, logging past nights) are parked. They are not a build step. Tweets stay on hold until access and cost are verified. The logging bar in "Which events count" is still an open sentence: this document says about 1,000+ can be logged, and the review says 1,000 only decides what is pre-listed. Do not pick a winner until she does.
+
+Next is Supabase accounts. Do not connect them until she pastes a project URL and the public anon key. Accounts will also hold home city, favorite teams, and artists. The spec comes from her.
+
+Parked until she asks: You "Did you go?"; the Famous nights hand-check and a "Were you there?" title; Traffic; Night story; the rating formula; Ticketmaster; weather UI; favorite cities; Nights per city.

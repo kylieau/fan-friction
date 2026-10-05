@@ -130,12 +130,12 @@ Outside user testing isn't planned for now. The answer instead is accounts:
 
 ## Open items
 
-- [ ] **Look into archiving the schedule.** Each night, save a copy of every event your data sources list for the coming days. Public listings often drop events once they've passed, so without your own copy the app can't stamp a night logged months later or recalculate old stamps when the formula changes. It's a small nightly job; every day before it starts is a day that can only be "reconstructed."
-- [ ] Confirm the lock time: 24 hours after start (current) or 4 AM local the next morning.
+- [x] **Look into archiving the schedule.** Each night, save a copy of every event your data sources list for the coming days. Public listings often drop events once they've passed, so without your own copy the app can't stamp a night logged months later or recalculate old stamps when the formula changes. It's a small nightly job; every day before it starts is a day that can only be "reconstructed." Done Oct 5, 2026 (PR #8). The job runs at 12:15am Pacific.
+- [x] Confirm the lock time: 24 hours after start (current) or 4 AM local the next morning. Decided Oct 4: 24 hours after the last scheduled start that night. Not 4 AM.
 - [ ] Build the venue capacity table, starting with LA.
-- [ ] Decide privacy defaults for accounts and shared logs.
-- [x] Replace the Compare tab's "Which fanbase really shows up?" copy. Done Oct 5, 2026. The tab still says Coming soon. The words are now about your nights side by side. The rebuild is later.
-- [ ] Hand-check every Famous night's stamp and example before publishing.
+- [x] Decide privacy defaults for accounts and shared logs. Decided Oct 4: private by default. A log is shared only by choice, later.
+- [x] Replace the Compare tab's "Which fanbase really shows up?" copy. Done Oct 5, 2026. The heading is "Your nights, side by side." The tab still says Coming soon. The rebuild is later.
+- [ ] Hand-check every Famous night's stamp and example before publishing. Parked, with the "Were you there?" title.
 - [ ] Review the terms of use for each data source.
 
 ## Sources
@@ -155,20 +155,20 @@ Kylie locked these after the review above. The review text is unchanged. The sam
 |---|---|
 | Stamp lock | 24 hours after the scheduled start. Not 4 AM the next morning. |
 | A night with several events | The 24 hours count from the last scheduled start time that night, whichever event is scheduled last. |
-| Save / I was there | Event page only. The Map list stays as it is. |
+| Save / I was there | Event page only. |
 | Famous nights | Keep the current stamps. Hand-check every stamp before any "Were you there?" version. |
 | Schedule archive | Yes. Plumbing only. See `docs/schedule-archive.md`. |
 | Product risks | Parked. Not a build step. |
 | Privacy | Private by default. A log is shared only by choice, later. |
 | Tweets from the night | Hold. Do not build until access and cost are verified. |
 
-The archive does not show anything in the app. A night from before the first saved schedule is reconstructed, as section 2 describes. That word is not on screen yet. The open items above for the archive, the lock time, and privacy defaults are decided by this table. The Compare copy is done (see below). The venue capacity table, the Famous-night hand check, and the terms-of-use review are still open.
+The archive does not show anything in the app. A night from before the first saved schedule is reconstructed, as section 2 describes. That word is not on screen yet. The open items above for the archive, the lock time, privacy defaults, and the Compare heading are done. The venue capacity table, the Famous-night hand check, and the terms-of-use review are still open. The hand check is parked.
 
 ## Data foundation (Oct 5, 2026)
 
 The data layer can hold a forecast and a stamp. The forecast is not taken at Save. See the lock below. "I was there," after the lock, stores a stamp with the time it was last updated. The lock is the one in the table above: 24 hours after the last scheduled start that night. The stamp is still not on screen.
 
-A room under about 5,000 does not change the read for everyone else. It can still take the night's existing score when a bigger event that night already has one. No new crowd number is made up. The logging-threshold sentence (about 1,000 in `docs/direction.md` and `AGENTS.md`, versus anything can be logged in section 5) is still open. This note does not close it.
+A room under about 5,000 does not change the read for everyone else, and it stays off the map. It can still take the night's existing score when a bigger event that night already has one. No new crowd number is made up. The logging-threshold sentence (about 1,000 in `docs/direction.md` and `AGENTS.md`, versus anything can be logged in section 5) is still open, and parked. This note does not close it.
 
 ## Forecast freeze (Oct 5, 2026)
 
@@ -178,13 +178,13 @@ Save stores the night and does not keep a forecast copy. Kylie parked the every-
 
 ## Map card and Compare copy (Oct 5, 2026)
 
-The Map shows one card for the soonest saved upcoming night, in any city. Kylie decided this on Oct 5: the card does not follow the city switcher. The card says "Next saved night," then the same short name a map chip uses, then the date and the city, as in "Fri, Oct 9 · Boston." The whole card opens that night. The map stays on the city, zoom, and selection she had, and Back returns there. The event page looks the night up in its own city, so a saved night outside Los Angeles is not "Event not found." Saving does not store a forecast, and the card does not draw one. Save and "I was there" stay on the event page. The Map list is unchanged.
+The Map shows one card for the soonest saved upcoming night, in any city. Kylie decided this on Oct 5: the card does not follow the city switcher. The three lines are "Next saved night", the same short name a map chip uses, and the date and the city, as in "Fri, Oct 9 · Boston." There is no gold button on the card. The whole card opens that night. The map stays on the city, zoom, and selection she had, and Back returns there. The event page looks the night up in its own city, so a saved night outside Los Angeles is not "Event not found." Saving does not store a forecast, and the card does not draw one. Save and "I was there" stay on the event page. What shipped in the Map list is unchanged. The freeze on that look was lifted later the same day (see Resume point).
 
-Compare keeps the Coming soon card. The heading now points at your nights side by side. The Coming soon chip stays. Nothing else on that tab was added or removed.
+Compare keeps the Coming soon card. The heading is "Your nights, side by side." The Coming soon chip stays. Nothing else on that tab was added or removed.
 
 ## Home city (Oct 5, 2026)
 
-Kylie locked this after the global next-saved-night card. Home is one city, kept on this phone only.
+Kylie locked this after the global next-saved-night card. Home is one city, kept on this device only.
 
 The first time the app opens, a picker asks "Where's home?" The line under the title is "Your map opens here. Change it anytime." Then the city list. The list is only cities that have event data. Today that is Los Angeles. The app does not guess. "Use my location" is a button inside that picker, and it runs only when tapped. If that spot is not near a listed city, home stays unset and they pick from the list.
 
@@ -194,4 +194,18 @@ The next-saved-night card stays the one from the section above: any city, the ci
 
 An empty You log can say "No nights yet. Find one on the map." The nights that shipped with the app still fill that tab, so the sentence shows only when the log is actually empty.
 
-🚩 Copying home to another phone needs accounts. That stays out until accounts are built.
+🚩 Copying home to another phone needs accounts. That is the next build, and it stays unconnected until Kylie pastes a project URL and the public anon key.
+
+## Resume point (Oct 5, 2026)
+
+PRs #8–#12 are on `main`. Sections 1–6 are the review, kept as written. Open items she later decided are checked. This note is the resume point for local Claude Code. The snapshot is `MEMORY_HANDOFF.md`.
+
+Locks still in force: the stamp clock is the last scheduled start that night, and the stamp locks 24 hours after that start. Save stores no forecast. Until the parked every-30-minute capture returns, the stamp uses the latest daily Los Angeles snapshot saved before the start. Rooms under about 5,000 stay off the map.
+
+The Oct 4 line that the Map list stays as it is was a freeze while the log was being built. That freeze is lifted. The Map's look can change. Propose the change, then wait. Save and "I was there" still live on the event page.
+
+Next is Supabase accounts. They will hold the log, and also home city, favorite teams, and artists. The spec comes from Kylie. Do not invent it, and do not connect until she pastes a project URL and the public anon key. 🚩 The free plan allows 2 active projects and she already uses one.
+
+Parked until she asks: You "Did you go?"; the Famous nights hand-check and a "Were you there?" title; the logging-threshold wording; Traffic; Night story; the rating formula; Ticketmaster; weather UI; favorite cities; Nights per city.
+
+Working rules: propose, then wait for approval. Never delete a feature. Flag a new cost with 🚩. Kylie locks decisions.

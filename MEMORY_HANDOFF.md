@@ -1,42 +1,50 @@
 # Fan/Friction: handoff snapshot
 
-Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md just points to it), `docs/direction.md` and `docs/product-review-decisions.md`.
+Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
 
-_Last synced: Oct 5, 2026 (Cursor session, home city on top of the nightly forecast lock)._
+_Last synced: Oct 5, 2026. Docs only, so local Claude Code can resume from current `main`._
 
 ## Current state
-Fan/Friction is a personal log of live events you attended, with a friction read stamped on each night. The schedule archive (PR #8), the night record (PR #9), the Map card (PR #10), and the nightly forecast lock (PR #11) are on `main`. Save stores the night only. The every-30-minute start-time capture is parked. Until it returns, the stamp, after the 24-hour lock, uses the latest Los Angeles daily schedule saved before the event's start, and is labeled as such. No number is invented. The schedule job runs once a day, at 12:15am Pacific. This branch adds a home city on top of that. The first open asks "Where's home?" and lists only cities with event data (Los Angeles today). The map opens there. The city switcher carries a house icon for home. "Set as home" shows only on cities that have events. The next-saved-night card stays global, still names its city, stays hidden when nothing is saved, and does not draw a forecast. Chips, glow, and the sheet are unchanged. Traffic, Night story, the rating formula, Ticketmaster, and Supabase were not started.
+Fan/Friction is a personal log of live events you attended, with a friction read stamped on each night. PRs #1–#12 are merged on `main`. This session changes docs only. The app is unchanged. The live site is https://fan-friction.vercel.app (Vercel deploys from `main`).
 
-- **Repo:** PRs #1–#11 are merged. This slice is on a branch off `main`. The live site is https://fan-friction.vercel.app (Vercel deploys from `main`).
-- **Home:** One city, on this phone only. The picker does not guess. "Use my location" is inside the picker and runs only when tapped. Looking at another city does not change home. The map does not follow a saved night. 🚩 Another phone needs accounts, which are not started.
-- **Card:** It appears only after Save this night, for the soonest night still ahead in any city. Home does not swap the night. No saved night means no card. The whole card opens that night's event in that night's city. The map stays where it is. Back returns to the same city, zoom, and selection. The card does not draw a forecast.
-- **Archive:** One free job writes the 14-day Los Angeles listing at 12:15am Pacific. The half-hour start-time capture is parked.
+What landed in PRs #8–#12:
+
+- **PR #8.** Nightly Los Angeles schedule archive. One free job, at 12:15am Pacific, saves the coming 14 days. Nothing new on screen.
+- **PR #9.** Data foundation. A night can hold a stamp. A room under about 5,000 does not feed friction. It can take a nearby score from a bigger event the same night. The stamp is not on screen.
+- **PR #10.** One Map card for the next saved upcoming night, in any city. Compare's heading is "Your nights, side by side."
+- **PR #11.** The forecast freezes at the scheduled start, not at Save. Save stores no forecast. The every-30-minute capture is parked. Until it returns, the stamp uses the latest daily snapshot taken before the start.
+- **PR #12.** Home city, stored on the device. The map opens there and never follows a saved night.
+
+- **Card.** It shows only after Save this night, for the soonest night still ahead, in any city. The three lines are "Next saved night", the chip name, and the date and city, as in "Fri, Oct 9 · Boston". There is no gold button. A tap opens that event in its own city. The map stays where it is. Back restores the same city, zoom, and selection. No saved night means no card. The card does not draw a forecast.
+- **Compare.** The heading is "Your nights, side by side." The tab and the Coming soon chip stay. The rebuild is later.
+- **Home.** The first open asks "Where's home?" The city switcher shows a house icon on the home city. "Set as home" appears only on cities that have events. Today that is Los Angeles. The map always opens on home. Looking at another city does not change home. Home is stored on this device. "Use my location" sits in the first picker and runs only if she taps it. 🚩 Another phone needs accounts.
+- **Map.** Rooms under about 5,000 stay off the map. The Map's look is no longer locked.
 
 ## Changes made (this session)
-- A first-run picker, "Where's home?", then the cities that have event data. Optional "Use my location" in that picker only.
-- A house icon for the home city, with the accessible name Home. "Set as home" only on cities that have events. Not on You.
-- The map opens on home. Browsing another city leaves home alone.
-- Brought in the nightly forecast lock from main: Save does not copy a forecast, and the stamp uses the latest daily schedule saved before the start.
-- Docs: `BACKLOG.md`, this file, `docs/product-review-decisions.md`, and the "where this stands" note in `AGENTS.md`.
+Docs only. No app code.
+
+- `MEMORY_HANDOFF.md`, `BACKLOG.md`, `AGENTS.md`, `CLAUDE.md`, `docs/product-review-decisions.md`, and `docs/direction.md`.
+- The snapshot now matches merged PRs #8–#12. The Map UI lock is lifted. Under-5,000 rooms stay off the map. The next build is Supabase accounts, waiting on Kylie.
 
 ## Key decisions in force
-- **Locked Oct 4, after the review:** the stamp locks 24 hours after the scheduled start. On a night with several events, the 24 hours count from the last scheduled start time that night, whichever event is scheduled last. Save / "I was there" stay on the event page only. Famous nights keeps its current stamps; hand-check them before "Were you there?" The schedule archive is on `main`. Product risks are parked. Privacy is private by default. Tweets stay on hold until access and cost are verified.
-- **Direction (Oct 4):** the log leads; friction is the stamp on a night. Nothing built is deleted. No points, leaderboards, collectible badges, open posting, public photo walls, navigation, or standalone "is tonight bad?" feed. v1 uses public data only.
-- **Her six decisions (Oct 4):** open on the Map with a card for the next saved night; forecast until 24 hours after start, then a stamp; keep Compare; Famous nights becomes "Were you there?" only after a hand check; 1,000+ is pre-listed, 5,000+ feeds friction; saved logs in accounts answer an empty log, private by default. The logging-threshold sentence (direction vs. review) is still unresolved.
-- **Locked Oct 5, then narrowed the same day:** Save stores the night only. The every-30-minute start-time capture is parked until more is built. The stamp uses the latest daily snapshot taken before the event's start, labeled as such. Never invent a number. Los Angeles only.
-- **Next saved night (Oct 5):** the card is her next saved night in any city, not the city on the map. The card says "Next saved night," then the chip name, then the date and city. It is hidden when nothing is saved, and it does not draw a forecast. Tapping it opens that night in its own city and leaves the map where it is. Back returns to the same city, zoom, and selection.
-- **Home (Oct 5):** one city on this phone. First open asks "Where's home?" and lists only cities with event data. "Use my location" is optional and only in that picker. The switcher shows a house icon. "Set as home" is only on cities that have events. More set-home behavior waits for her spec with accounts. Accounts should also hold favorite teams and artists; she will spec that. The map opens on home and does not follow a saved night. 🚩 Sync waits for accounts.
-- **Still in force from before:** her explicit words beat docs and other models; "Fan/Friction" with the slash; free until forced (flag costs with 🚩); swappable pieces behind small files; screens read only through `src/data/index.ts`; every crowd figure has a kind label; only pre-event facts affect a rating; friction shows Moderate and up; one gold button per screen; Traffic is an estimate only, no red.
-- **Map UI:** chips, glow, sheet list, legend, and the gold "See this event" button stay. The card is extra, and only when a night is saved.
-- Rating formula is not in code. "Nearby" means the same city and the same date, using seeded events. A distance, and adding smaller rooms together, wait for the formula. Traffic, Night story, and the formula stay paused until she asks.
+- **Working rules.** Propose a structural change, then wait for approval. Never delete a feature. Flag a new cost with 🚩 and wait. Kylie locks decisions. Do not reopen a locked answer unless she does.
+- **Stamp clock.** On a night with several events, the clock is the last scheduled start that night, whichever event is scheduled last. The stamp locks 24 hours after that start. Tapping does not move the clock.
+- **Forecast.** Save stores the night only, with no forecast. The every-30-minute start-time capture is parked. Until it returns, the stamp uses the latest daily Los Angeles snapshot saved before the event's start that includes the event, and is labeled as such. A snapshot at the start, or after it, is not used. If that file has no number, no number is added. Los Angeles only.
+- **Map card (Oct 5).** Any city. The lines are "Next saved night", the chip name, then the date and city ("Fri, Oct 9 · Boston"). No gold button. A tap opens the event in its own city and leaves the map where it is. Back restores it.
+- **Home (Oct 5).** One city, stored on the device. First open: "Where's home?" House icon in the switcher. "Set as home" only on cities with events. The map always opens on home and never follows a saved night.
+- **Map UI.** No longer locked. The Oct 4 freeze on chips, the sheet, the glow, and the legend is lifted. Still propose, then wait. Save and "I was there" stay on the event page.
+- **Under 5,000.** Those rooms stay off the map. They do not feed friction. They can still be logged, and they can take a nearby read.
+- **Direction (Oct 4).** The log leads. Nothing built is deleted. No points, leaderboards, collectible badges, open posting, public photo walls, navigation, or a standalone "is tonight bad?" feed. v1 uses public data only. Logs are private by default. Tweets stay on hold until access and cost are verified. Product risks are parked.
+- **Still in force.** Her words beat docs and other models. Write Fan/Friction with the slash. Free until forced. Screens read only through `src/data/index.ts`. Every crowd figure has a kind label. Only pre-event facts affect a rating. One gold button per screen. Traffic is an estimate only, and it is never red.
+- **Logging-threshold wording.** Still open, and parked. Direction and `AGENTS.md` say about 1,000+ can be logged. The review says 1,000 only decides what is pre-listed.
 - Cloud notes: Wikipedia is blocked; ESPN rejects headless-Chrome user agents; screenshots use `playwright-core` with swiftshader args; don't `pkill` vite.
 
 ## Next steps
-1. She reviews this pull request. Do not squash-merge it from an agent session unless she asks.
-2. Do not start You "Did you go?", the Famous nights rename, accounts, Traffic, Night story, or the formula until she asks.
-3. Still open for her: the logging-threshold sentence. Direction and `AGENTS.md` say about 1,000+ can be logged. The review says anything can be logged and 1,000 only decides what is pre-listed.
+1. Next build is Supabase accounts. Do not connect anything until Kylie pastes a project URL and the public anon key. 🚩 The free plan allows 2 active projects and she already uses one. It pauses when a project sits idle.
+2. Accounts will hold the log, and also home city, favorite teams, and artists. The spec comes from Kylie. Do not invent it, and do not build it before she writes it.
+3. Parked until she asks: You "Did you go?"; Famous nights hand-check and the "Were you there?" title; the logging-threshold wording; Traffic; Night story; the rating formula; Ticketmaster; weather UI; favorite cities; Nights per city. The every-30-minute forecast capture stays parked too.
 
 **Next command to run:**
 ```bash
-git pull --ff-only && sed -n '/## Direction pivot/,/## Prompt Kylie/p' BACKLOG.md
+git pull --ff-only && sed -n '/## Next/,/## Direction pivot/p' BACKLOG.md
 ```
