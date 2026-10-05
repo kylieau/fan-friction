@@ -411,6 +411,8 @@ button {
   flex: 1;
   width: auto;
   min-width: 0;
+  /* The house comes first, then the name, both on the left. */
+  justify-content: flex-start;
 }
 
 .area-menu button[aria-selected='true'] {

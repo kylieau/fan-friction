@@ -455,8 +455,8 @@ function AreaSwitcher({
         aria-label={viewingHome ? `Area, ${metro.name}, Home` : 'Area'}
         onClick={() => onOpenChange(!open)}
       >
-        {metro.name}
         {viewingHome && <HomeMark />}
+        {metro.name}
         <ChevronDown />
       </button>
       {open && (
@@ -471,8 +471,8 @@ function AreaSwitcher({
                   aria-selected={item.id === metro.id}
                   onClick={() => pick(item.id)}
                 >
-                  <span>{item.name}</span>
                   {isHome && <HomeMark />}
+                  <span>{item.name}</span>
                 </button>
                 {!isHome && withEvents.has(item.id) && (
                   <button type="button" className="set-home" onClick={() => makeHome(item.id)}>
@@ -488,7 +488,7 @@ function AreaSwitcher({
   );
 }
 
-/** The house beside the home city. The name for screen readers is Home. */
+/** The house before the home city's name (Kylie, Oct 5). The name for screen readers is Home. */
 function HomeMark() {
   return (
     <span className="home-mark" role="img" aria-label="Home">
