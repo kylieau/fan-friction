@@ -308,6 +308,41 @@ export function togglePlan(event: CrowdEvent) {
   commit({ ...snapshot, plans: [...snapshot.plans, plan] });
 }
 
+/**
+ * Attending becomes Attended by itself once the date passes (Kylie, Oct 5: no
+ * "did you go?" step; remove it afterwards if you didn't). Runs at app start and
+ * after sign-in. Needs each event's record, so it is async and quiet on failure.
+ */
+export async function settlePassedPlans(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
+  const now = new Date();
+  const passed = snapshot.plans.filter((plan) => {
+    const metro = METROS[plan.metroId] ?? METROS.la;
+    const today = new Date(now.toLocaleDateString('en-CA', { timeZone: metro.timeZone })).toISOString().slice(0, 10);
+    return plan.date < today;
+  });
+  if (passed.length === 0) return;
+  const added: Entry[] = [];
+  for (const plan of passed) {
+    if (!plan.eventId || snapshot.added.some((entry) => entry.eventId === plan.eventId)) continue;
+    try {
+      const day = await loadDate(plan.metroId, plan.date);
+      const event = day.events.find((e) => e.id === plan.eventId);
+      if (!event) continue;
+      const entry = entryFromEvent(event);
+      const stamp = stampNow(event, now);
+      added.push(stamp ? { ...entry, stamp } : entry);
+    } catch {
+      /* try again next open */
+    }
+  }
+  const settledIds = new Set(passed.map((plan) => plan.id));
+  commit({
+    ...snapshot,
+    added: [...snapshot.added, ...added],
+    plans: snapshot.plans.filter((plan) => !settledIds.has(plan.id)),
+  });
+}
+
 export function removePlan(planId: string) {
   commit({ ...snapshot, plans: snapshot.plans.filter((plan) => plan.id !== planId) });
 }

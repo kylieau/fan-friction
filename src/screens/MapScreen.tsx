@@ -25,7 +25,7 @@ import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { DateScore } from '../components/DateScore';
 import { WhenControl } from '../components/WhenControl';
-import { ArrowRight, ChevronDown, HomeIcon, SearchIcon, SunIcon } from '../components/Icons';
+import { ArrowRight, ChevronDown, HomeIcon, SunIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
@@ -34,7 +34,8 @@ import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } fro
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { getHomeId, setHomeId } from '../lib/homeCity';
-import { mapPath, datePath, calendarPath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
+import { mapPath, datePath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
+import { ExploreSwitch } from './ExploreScreen';
 
 type Mode = 'crowds' | 'traffic';
 
@@ -252,9 +253,7 @@ export function MapScreen() {
           <div ref={areaRef}>
             <AreaSwitcher metro={metro} open={menu === 'area'} onOpenChange={(next) => setMenu(next ? 'area' : null)} />
           </div>
-          <Link to={calendarPath({ metroId: metro.id, date })} className="round-button" aria-label="Search dates">
-            <SearchIcon />
-          </Link>
+          <ExploreSwitch view="map" />
         </div>
         <div className="map-header-score">
           <div className="map-header-dateblock">
@@ -407,7 +406,7 @@ export function MapScreen() {
  * five rows tall, and does not move the score. Los Angeles is first.
  * Home is a mark on one row. Looking at another city does not change it.
  */
-function AreaSwitcher({
+export function AreaSwitcher({
   metro,
   open,
   onOpenChange,

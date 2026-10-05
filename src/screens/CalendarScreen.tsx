@@ -13,6 +13,8 @@ import {
 } from '../data';
 import { addDays, clampMonth, EARLIEST_MONTH, isValidDate, longLocalDate, monthCells, monthTitle, shiftMonth, yearMonth } from '../lib/dates';
 import { datePath, useView } from '../lib/view';
+import { AreaSwitcher } from './MapScreen';
+import { ExploreSwitch } from './ExploreScreen';
 
 /** Badge shade by rating band, darkest for the hardest dates (as in the mockup). */
 function dayLabel(day: CalendarDay) {
@@ -32,6 +34,7 @@ export function CalendarScreen() {
   const [famous, setFamous] = useState<DateRating[] | null>(null);
   const [days, setDays] = useState<CalendarDay[] | null>(null);
   const [hits, setHits] = useState<DateSearchHit[] | null>(null);
+  const [areaOpen, setAreaOpen] = useState(false);
 
   useEffect(() => {
     let current = true;
@@ -74,7 +77,10 @@ export function CalendarScreen() {
 
   return (
     <div className="screen page">
-      <h1 className="page-title">Calendar</h1>
+      <div className="explore-top">
+        <AreaSwitcher metro={metro} open={areaOpen} onOpenChange={setAreaOpen} />
+        <ExploreSwitch view="calendar" />
+      </div>
       <div className="search-box">
         <label className="search-field">
           <SearchIcon />

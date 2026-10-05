@@ -220,7 +220,7 @@ function MapBack({
   const params = new URLSearchParams();
   if (metroId && metroId !== openedMetroId()) params.set('metro', metroId);
   params.set('date', date);
-  const to = fromMap ? (memoryHref ?? '/') : `/?${params.toString()}`;
+  const to = fromMap ? (memoryHref ?? '/explore') : `/explore?${params.toString()}`;
   return (
     <Link
       to={to}

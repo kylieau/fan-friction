@@ -233,6 +233,7 @@ export {
   entryFacts,
   ratingForEntry,
   removePlan,
+  settlePassedPlans,
   setYouOrder,
   subscribePersonalLog,
   togglePlan,

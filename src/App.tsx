@@ -3,9 +3,9 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from
 import { TabBar } from './components/TabBar';
 import { FirstRunTips } from './components/FirstRunTips';
 import { HomePicker } from './components/HomePicker';
-import { MapScreen } from './screens/MapScreen';
+import { HomeScreen } from './screens/HomeScreen';
+import { ExploreScreen } from './screens/ExploreScreen';
 import { EventScreen } from './screens/EventScreen';
-import { CalendarScreen } from './screens/CalendarScreen';
 import { CompareScreen } from './screens/CompareScreen';
 import { YouScreen } from './screens/YouScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
@@ -16,6 +16,8 @@ import { FavoritePage } from './screens/FavoritePage';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId, subscribeHome } from './lib/homeCity';
 import { getPref, setPref } from './lib/prefs';
+import { getCityDate, settlePassedPlans } from './data';
+import { useEffect } from 'react';
 
 /** /night/<date> was the date page's first address. */
 function OldDateRedirect() {
@@ -29,6 +31,11 @@ function Shell() {
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const [showTips, setShowTips] = useState(() => !getPref('tipsDone', false));
 
+  // An Attending date becomes Attended once it passes.
+  useEffect(() => {
+    void settlePassedPlans(getCityDate);
+  }, []);
+
   const finishTips = () => {
     setPref('tipsDone', true);
     setShowTips(false);
@@ -38,8 +45,9 @@ function Shell() {
     <div className="app">
       <main className="app-main">
         <Routes>
-          <Route path="/" element={<MapScreen />} />
-          <Route path="/calendar" element={<CalendarScreen />} />
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/explore" element={<ExploreScreen />} />
+          <Route path="/calendar" element={<Navigate to="/explore?view=calendar" replace />} />
           <Route path="/date/:date" element={<DateScreen />} />
           <Route path="/event/:id" element={<EventScreen />} />
           <Route path="/favorites" element={<FavoritesScreen />} />
@@ -54,7 +62,7 @@ function Shell() {
             element={
               <SettingsScreen
                 onShowTips={() => {
-                  navigate('/');
+                  navigate('/explore?view=map');
                   setShowTips(true);
                 }}
               />
@@ -66,9 +74,9 @@ function Shell() {
         </Routes>
       </main>
       <TabBar />
-      {/* Home is chosen before the tips. Both point at the map, so they only show there. */}
-      {!homeId && pathname === '/' && <HomePicker />}
-      {showTips && Boolean(homeId) && pathname === '/' && <FirstRunTips onDone={finishTips} />}
+      {/* Home city is chosen first, on Home or Explore. The tips explain the map, so they show on Explore. */}
+      {!homeId && (pathname === '/' || pathname === '/explore') && <HomePicker />}
+      {showTips && Boolean(homeId) && pathname === '/explore' && <FirstRunTips onDone={finishTips} />}
     </div>
   );
 }

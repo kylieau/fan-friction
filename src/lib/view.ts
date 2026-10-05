@@ -4,6 +4,7 @@ import { DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import { todayIn } from '../data';
 import { isValidDate, shortLocalDate } from './dates';
 import { getHomeId, subscribeHome } from './homeCity';
+import { getPref, setPref } from './prefs';
 
 /** How wide the map looks around its base date. A rated week shows the average to one decimal. */
 export type WhenSpan = 'day' | 'week';
@@ -55,7 +56,7 @@ export function mapPath(opts: { metroId: string; date: string; today: string; wh
   if (opts.metroId !== openedMetroId()) params.set('metro', opts.metroId);
   if (opts.date !== opts.today) params.set('date', opts.date);
   params.set('when', opts.when);
-  return `/?${params.toString()}`;
+  return `/explore?${params.toString()}`;
 }
 
 /**
@@ -76,10 +77,22 @@ export function datePath(date: string, metroId: string, eventId?: string): strin
   return `/date/${date}${q ? `?${q}` : ''}`;
 }
 
-/** The Nights tab, opened on the month of a date so "Pick a date" lands in the right place. */
+/** The calendar view of Explore, opened on the month of a date. */
 export function calendarPath(opts: { metroId: string; date: string }): string {
   const params = new URLSearchParams();
   if (opts.metroId !== openedMetroId()) params.set('metro', opts.metroId);
   params.set('date', opts.date);
-  return `/calendar?${params.toString()}`;
+  params.set('view', 'calendar');
+  return `/explore?${params.toString()}`;
+}
+
+export type ExploreView = 'map' | 'calendar';
+
+/** The view Explore last showed on this device (Kylie, Oct 5: a switch that remembers). */
+export function getExploreView(): ExploreView {
+  return getPref<ExploreView>('explore-view', 'map') === 'calendar' ? 'calendar' : 'map';
+}
+
+export function setExploreView(view: ExploreView) {
+  setPref('explore-view', view);
 }

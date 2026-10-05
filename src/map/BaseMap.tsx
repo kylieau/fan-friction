@@ -18,11 +18,14 @@ export function BaseMap({
   metro,
   camera,
   children,
+  interactive = true,
 }: {
   metro: Metro;
   /** Used once, when returning to a map she already framed. Later city changes use that city's own center. */
   camera?: { center: [number, number]; zoom: number } | null;
   children?: ReactNode;
+  /** False for a snapshot (the Home card): no panning, zooming or tapping. */
+  interactive?: boolean;
 }) {
   const container = useRef<HTMLDivElement>(null);
   const cameraRef = useRef(camera);
@@ -39,6 +42,7 @@ export function BaseMap({
       zoom: start?.zoom ?? metro.zoom,
       dragRotate: false,
       pitchWithRotate: false,
+      interactive,
       attributionControl: { compact: true },
     });
     instance.touchZoomRotate.disableRotation();
