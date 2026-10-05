@@ -72,7 +72,7 @@ export function ProfileEditScreen() {
       setNote(error);
       return;
     }
-    navigate(`/p/${handle.trim().toLowerCase()}`, { replace: true });
+    navigate('/you', { replace: true });
   };
 
   const handleOk = isValidHandle(handle.trim().toLowerCase());

@@ -8,6 +8,9 @@ import {
   getRatedDates,
   canSignIn,
   getAccount,
+  approveFollow,
+  declineFollow,
+  followRequests,
   getMyProfile,
   getSaveWarning,
   getSyncStatus,
@@ -19,6 +22,7 @@ import {
   subscribePersonalLog,
   todayIn,
   yourNights,
+  type FollowRequest,
   type LoggedNight,
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
@@ -43,6 +47,13 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [exportNote, setExportNote] = useState('');
   const [handle, setHandle] = useState<string | null>(null);
+  const [requests, setRequests] = useState<FollowRequest[]>([]);
+
+  const decide = async (followerId: string, yes: boolean) => {
+    if (yes) await approveFollow(followerId);
+    else await declineFollow(followerId);
+    setRequests((list) => list.filter((r) => r.followerId !== followerId));
+  };
 
   useEffect(() => {
     let current = true;
@@ -51,6 +62,7 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
       return;
     }
     getMyProfile().then((profile) => current && setHandle(profile?.handle ?? null));
+    followRequests().then((list) => current && setRequests(list));
     return () => {
       current = false;
     };
@@ -69,6 +81,7 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
   const choices = useMemo(() => filterChoices(nights), [nights]);
   const shown = filter === 'All' ? nights : nights.filter((night) => night.tags.includes(filter));
   const stats = useMemo(() => logStats(shown), [shown]);
+  const heaviest = useMemo(() => heaviestNight(shown, ratings), [shown, ratings]);
 
   const download = () => {
     const backup = nightBackup(log);
@@ -100,7 +113,7 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
           />
         ))}
       </div>
-      <Stats stats={stats} filter={filter} />
+      <Stats stats={stats} filter={filter} heaviest={heaviest} />
       {shown.length === 0 ? (
         <div className="card empty-card">
           <div className="card-title">
@@ -131,22 +144,10 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
   return (
     <div className="screen page">
       <div className="you-header">
-        {account && handle ? (
-          <Link to={`/p/${handle}`} className="you-me" aria-label="Your profile">
-            <span className="avatar" aria-hidden>
-              {(account.displayName ?? account.email ?? 'Y').slice(0, 1).toUpperCase()}
-            </span>
-            <h1 className="page-title">{account.displayName ?? 'You'}</h1>
-            <span className="you-me-hint">Profile ›</span>
-          </Link>
-        ) : (
-          <>
-            <span className="avatar" aria-hidden>
-              {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
-            </span>
-            <h1 className="page-title">You</h1>
-          </>
-        )}
+        <span className="avatar" aria-hidden>
+          {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
+        </span>
+        <h1 className="page-title">{account?.displayName ?? 'You'}</h1>
       </div>
 
       <AccountBlock />
@@ -172,10 +173,44 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
         )}
       </div>
 
+      {requests.length > 0 && (
+        <section className="you-block" aria-labelledby="requests-heading">
+          <h2 id="requests-heading" className="you-heading">
+            Wants to follow you
+          </h2>
+          <ul className="log-list">
+            {requests.map((r) => (
+              <li key={r.followerId} className="request-row">
+                <span className="log-title">{r.displayName ?? r.handle ?? 'Someone'}</span>
+                <span className="request-actions">
+                  <button type="button" className="link-button" onClick={() => decide(r.followerId, true)}>
+                    Approve
+                  </button>
+                  <button type="button" className="link-button" onClick={() => decide(r.followerId, false)}>
+                    Decline
+                  </button>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {nightsBlock}
 
       <div className="settings">
         <div className="settings-heading">Settings</div>
+        {account && (
+          <Link to="/profile/edit" className="settings-row settings-link">
+            Edit profile
+          </Link>
+        )}
+        {account && handle && (
+          <Link to={`/p/${handle}`} className="settings-row settings-link">
+            <span>Your page</span>
+            <span className="settings-value">/p/{handle}</span>
+          </Link>
+        )}
         <button type="button" className="settings-row" onClick={onShowTips}>
           Show the tips again
         </button>
@@ -192,13 +227,22 @@ function FilterChip({ label, pressed, onClick }: { label: string; pressed: boole
   );
 }
 
-function Stats({ stats, filter }: { stats: ReturnType<typeof logStats>; filter: string }) {
+function Stats({
+  stats,
+  filter,
+  heaviest,
+}: {
+  stats: ReturnType<typeof logStats>;
+  filter: string;
+  heaviest: number | null;
+}) {
   return (
     <div className="stats-block">
       <p className="you-fine">{filter === 'All' ? 'All your nights' : `${filter} only`}</p>
-      <div className="stat-grid pair">
-        <Stat n={stats.events} label="Events" />
+      <div className="stat-grid">
+        <Stat n={stats.events} label="Nights" />
         <Stat n={stats.venues} label="Venues" />
+        <HeaviestStat rating={heaviest} />
       </div>
       <CountList title="By type" rows={stats.byType} />
       <CountList title="By team and sport" rows={stats.byTeamSport} />
@@ -208,7 +252,24 @@ function Stats({ stats, filter }: { stats: ReturnType<typeof logStats>; filter: 
   );
 }
 
-function Stat({ n, label }: { n: number; label: string }) {
+/** The night with the highest friction read. Shown on You and on the page others see. */
+export function heaviestNight(nights: LoggedNight[], ratings: ReadonlyMap<string, number>): number | null {
+  return nights.reduce<number | null>((best, night) => {
+    const r = ratingForNight(night, ratings);
+    return r !== null && (best === null || r > best) ? r : best;
+  }, null);
+}
+
+export function HeaviestStat({ rating }: { rating: number | null }) {
+  return (
+    <div className="stat-card">
+      <span className="stat-num">{rating === null ? '—' : rating}</span>
+      <span className="stat-label">{rating === null ? 'Heaviest night' : `Heaviest · ${scoreLabel(rating)}`}</span>
+    </div>
+  );
+}
+
+export function Stat({ n, label }: { n: number; label: string }) {
   return (
     <div className="stat-card">
       <span className="stat-num">{n}</span>

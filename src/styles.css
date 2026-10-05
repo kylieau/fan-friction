@@ -2416,27 +2416,21 @@ button {
 }
 
 /* ---------- Profile ---------- */
-.you-me {
+.settings-link {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   text-decoration: none;
-  color: inherit;
-  min-width: 0;
 }
 
-.you-me .page-title {
+.settings-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink2);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.you-me-hint {
-  margin-left: auto;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--dodger);
-  flex-shrink: 0;
 }
 
 .profile-head {
@@ -2451,13 +2445,6 @@ button {
   border-radius: 32px;
   font-size: 26px;
   object-fit: cover;
-}
-
-.profile-edit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
 }
 
 .request-row {

@@ -3,12 +3,10 @@ import { Link, useParams } from 'react-router-dom';
 import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { scoreBand, scoreLabel } from '../config/scoreLabels';
+import { HeaviestStat, Stat, heaviestNight } from './YouScreen';
 import {
-  approveFollow,
   canSignIn,
-  declineFollow,
   follow,
-  followRequests,
   followStatus,
   getAccount,
   getProfileByHandle,
@@ -17,7 +15,6 @@ import {
   ratingForNight,
   subscribeAccount,
   unfollow,
-  type FollowRequest,
   type FollowStatus,
   type LoggedNight,
   type Profile,
@@ -26,8 +23,9 @@ import { loggedDateLabel } from '../lib/dates';
 import { eventPath } from '../lib/view';
 
 /**
- * One person's profile: name, three personal stats, and the nights they allow
- * others to see. Your own page adds Edit profile and any follow requests.
+ * Someone's page as others see it: name, three stats, and the nights they allow
+ * others to see. Your own controls (filters, Export, Edit profile, requests) live
+ * on You, not here; opening your own link shows exactly what a visitor sees.
  * Private notes never appear here. There is no feed.
  */
 export function ProfileScreen() {
@@ -36,7 +34,6 @@ export function ProfileScreen() {
   const [profile, setProfile] = useState<Profile | null | undefined>(undefined);
   const [nights, setNights] = useState<LoggedNight[]>([]);
   const [status, setStatus] = useState<FollowStatus>('none');
-  const [requests, setRequests] = useState<FollowRequest[]>([]);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState<string | null>(null);
@@ -59,15 +56,6 @@ export function ProfileScreen() {
       current = false;
     };
   }, [handle, account?.id]);
-
-  useEffect(() => {
-    if (!mine) return;
-    let current = true;
-    followRequests().then((list) => current && setRequests(list));
-    return () => {
-      current = false;
-    };
-  }, [mine]);
 
   useEffect(() => {
     let current = true;
@@ -95,11 +83,7 @@ export function ProfileScreen() {
 
   const name = profile.displayName ?? profile.handle ?? 'Someone';
   const venues = new Set(nights.map((n) => n.venue).filter(Boolean)).size;
-  // The night with the highest friction read. Kylie wants this over a city count (Oct 5).
-  const heaviest = nights.reduce<number | null>((best, n) => {
-    const r = ratingForNight(n, ratings);
-    return r !== null && (best === null || r > best) ? r : best;
-  }, null);
+  const heaviest = heaviestNight(nights, ratings);
 
   const toggleFollow = async () => {
     if (busy) return;
@@ -120,12 +104,6 @@ export function ProfileScreen() {
     setBusy(false);
   };
 
-  const decide = async (followerId: string, yes: boolean) => {
-    if (yes) await approveFollow(followerId);
-    else await declineFollow(followerId);
-    setRequests((list) => list.filter((r) => r.followerId !== followerId));
-  };
-
   return (
     <div className="screen page">
       <Link to="/you" className="back-link">
@@ -144,17 +122,10 @@ export function ProfileScreen() {
       <div className="stat-grid">
         <Stat n={nights.length} label="Nights" />
         <Stat n={venues} label="Venues" />
-        <div className="stat-card">
-          <span className="stat-num">{heaviest === null ? '—' : heaviest}</span>
-          <span className="stat-label">{heaviest === null ? 'Heaviest night' : `Heaviest · ${scoreLabel(heaviest)}`}</span>
-        </div>
+        <HeaviestStat rating={heaviest} />
       </div>
 
-      {mine ? (
-        <Link to="/profile/edit" className="mark-button profile-edit">
-          Edit profile
-        </Link>
-      ) : (
+      {!mine && (
         <button
           type="button"
           className={status === 'none' ? 'gold-button' : 'mark-button on'}
@@ -168,29 +139,6 @@ export function ProfileScreen() {
         <p className="you-fine" role="status">
           {note}
         </p>
-      )}
-
-      {mine && requests.length > 0 && (
-        <section className="you-block" aria-labelledby="requests-heading">
-          <h2 id="requests-heading" className="you-heading">
-            Wants to follow you
-          </h2>
-          <ul className="log-list">
-            {requests.map((r) => (
-              <li key={r.followerId} className="request-row">
-                <span className="log-title">{r.displayName ?? r.handle ?? 'Someone'}</span>
-                <span className="request-actions">
-                  <button type="button" className="link-button" onClick={() => decide(r.followerId, true)}>
-                    Approve
-                  </button>
-                  <button type="button" className="link-button" onClick={() => decide(r.followerId, false)}>
-                    Decline
-                  </button>
-                </span>
-              </li>
-            ))}
-          </ul>
-        </section>
       )}
 
       <section className="you-block" aria-labelledby="profile-nights-heading">
@@ -219,15 +167,6 @@ export function ProfileScreen() {
           </ul>
         )}
       </section>
-    </div>
-  );
-}
-
-function Stat({ n, label }: { n: number; label: string }) {
-  return (
-    <div className="stat-card">
-      <span className="stat-num">{n}</span>
-      <span className="stat-label">{label}</span>
     </div>
   );
 }
