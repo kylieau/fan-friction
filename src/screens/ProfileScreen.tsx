@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { scoreBand, scoreLabel } from '../config/scoreLabels';
-import { HeaviestStat, Stat, heaviestNight } from './YouScreen';
+import { HeaviestStat, Stat, heaviestEntry } from './YouScreen';
 import {
   canSignIn,
   follow,
@@ -11,19 +11,19 @@ import {
   getAccount,
   getProfileByHandle,
   getRatedDates,
-  nightsOf,
-  ratingForNight,
+  entriesOf,
+  ratingForEntry,
   subscribeAccount,
   unfollow,
   type FollowStatus,
-  type LoggedNight,
+  type Entry,
   type Profile,
 } from '../data';
 import { loggedDateLabel } from '../lib/dates';
 import { eventPath } from '../lib/view';
 
 /**
- * Someone's page as others see it: name, three stats, and the nights they allow
+ * Someone's page as others see it: name, three stats, and the entries they allow
  * others to see. Your own controls (filters, Export, Edit profile, requests) live
  * on You, not here; opening your own link shows exactly what a visitor sees.
  * Private notes never appear here. There is no feed.
@@ -32,7 +32,7 @@ export function ProfileScreen() {
   const { handle = '' } = useParams();
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [profile, setProfile] = useState<Profile | null | undefined>(undefined);
-  const [nights, setNights] = useState<LoggedNight[]>([]);
+  const [entries, setEntries] = useState<Entry[]>([]);
   const [status, setStatus] = useState<FollowStatus>('none');
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [busy, setBusy] = useState(false);
@@ -47,9 +47,9 @@ export function ProfileScreen() {
       if (!current) return;
       setProfile(found);
       if (!found) return;
-      const [list, st] = await Promise.all([nightsOf(found.id), followStatus(found.id)]);
+      const [list, st] = await Promise.all([entriesOf(found.id), followStatus(found.id)]);
       if (!current) return;
-      setNights(list);
+      setEntries(list);
       setStatus(st);
     });
     return () => {
@@ -82,8 +82,8 @@ export function ProfileScreen() {
   }
 
   const name = profile.displayName ?? profile.handle ?? 'Someone';
-  const venues = new Set(nights.map((n) => n.venue).filter(Boolean)).size;
-  const heaviest = heaviestNight(nights, ratings);
+  const venues = new Set(entries.map((n) => n.venue).filter(Boolean)).size;
+  const heaviest = heaviestEntry(entries, ratings);
 
   const toggleFollow = async () => {
     if (busy) return;
@@ -120,7 +120,7 @@ export function ProfileScreen() {
       </div>
 
       <div className="stat-grid">
-        <Stat n={nights.length} label="Events" />
+        <Stat n={entries.length} label="Events" />
         <Stat n={venues} label="Venues" />
         <HeaviestStat rating={heaviest} />
       </div>
@@ -141,11 +141,11 @@ export function ProfileScreen() {
         </p>
       )}
 
-      <section className="you-block" aria-labelledby="profile-nights-heading">
-        <h2 id="profile-nights-heading" className="you-heading">
+      <section className="you-block" aria-labelledby="profile-entries-heading">
+        <h2 id="profile-entries-heading" className="you-heading">
           Events
         </h2>
-        {nights.length === 0 ? (
+        {entries.length === 0 ? (
           <div className="card empty-card">
             <div className="card-title">
               {mine
@@ -159,9 +159,9 @@ export function ProfileScreen() {
           </div>
         ) : (
           <ul className="log-list">
-            {nights.map((night) => (
-              <li key={night.id}>
-                <ProfileNightRow night={night} rating={ratingForNight(night, ratings)} />
+            {entries.map((entry) => (
+              <li key={entry.id}>
+                <ProfileEntryRow entry={entry} rating={ratingForEntry(entry, ratings)} />
               </li>
             ))}
           </ul>
@@ -172,9 +172,9 @@ export function ProfileScreen() {
 }
 
 /** A night on someone's page: title, date, venue, stamp. No notes, no personal facts. */
-function ProfileNightRow({ night, rating }: { night: LoggedNight; rating: number | null }) {
-  const city = night.metroId ? METROS[night.metroId]?.name : undefined;
-  const facts = [loggedDateLabel(night.when), night.venue, city].filter(Boolean).join(' · ');
+function ProfileEntryRow({ entry, rating }: { entry: Entry; rating: number | null }) {
+  const city = entry.metroId ? METROS[entry.metroId]?.name : undefined;
+  const facts = [loggedDateLabel(entry.when), entry.venue, city].filter(Boolean).join(' · ');
   const body = (
     <>
       {rating !== null && (
@@ -184,14 +184,14 @@ function ProfileNightRow({ night, rating }: { night: LoggedNight; rating: number
         </span>
       )}
       <span className="log-main">
-        <span className="log-title">{night.title}</span>
+        <span className="log-title">{entry.title}</span>
         <span className="log-facts">{facts}</span>
       </span>
     </>
   );
-  if (night.eventId) {
+  if (entry.eventId) {
     return (
-      <Link to={eventPath(night.eventId, night.metroId ?? DEFAULT_METRO.id)} className="log-row">
+      <Link to={eventPath(entry.eventId, entry.metroId ?? DEFAULT_METRO.id)} className="log-row">
         {body}
       </Link>
     );

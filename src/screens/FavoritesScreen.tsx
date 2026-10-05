@@ -13,12 +13,12 @@ import {
   getPersonalLog,
   getRatedDates,
   metrosWithEvents,
-  nightMatches,
+  entryMatches,
   subscribePersonalLog,
   suggestionsFor,
   todayIn,
   toggleFavorite,
-  yourNights,
+  yourEntries,
   type CrowdEvent,
   type Favorite,
   type FavoriteKind,
@@ -50,7 +50,7 @@ export function FavoritesScreen() {
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const home = METROS[homeId ?? DEFAULT_METRO.id] ?? DEFAULT_METRO;
   const favorites = useMemo(() => favoritesOf(log), [log]);
-  const nights = useMemo(() => yourNights(log), [log]);
+  const entries = useMemo(() => yourEntries(log), [log]);
   const [query, setQuery] = useState('');
   const [where, setWhere] = useState<'home' | 'everywhere'>('home');
   const [upcoming, setUpcoming] = useState<CrowdEvent[]>([]);
@@ -84,7 +84,7 @@ export function FavoritesScreen() {
 
   const suggestions = useMemo(() => suggestionsFor(home.id, favorites), [home.id, favorites]);
   const isOn = (fav: Favorite) => favorites.some((f) => favoriteKey(f) === favoriteKey(fav));
-  const countFor = (fav: Favorite) => nights.filter((night) => nightMatches(night, fav)).length;
+  const countFor = (fav: Favorite) => entries.filter((entry) => entryMatches(entry, fav)).length;
 
   // Search: favorites, every home-city record, and names from the log.
   const q = query.trim().toLowerCase();
@@ -101,14 +101,14 @@ export function FavoritesScreen() {
     };
     favorites.forEach(add);
     suggestionsFor(home.id, []).forEach(add);
-    for (const night of nights) {
-      if (night.kind === 'show') night.sides.forEach((side) => add(favoriteFor('artist', side)));
-      else if (night.kind === 'festival') add(favoriteFor('festival', night.title));
-      else night.tags.forEach((tag) => tag !== 'Concerts' && add(favoriteFor('team', tag)));
-      if (night.venue) add(favoriteFor('venue', night.venue));
+    for (const entry of entries) {
+      if (entry.kind === 'show') entry.sides.forEach((side) => add(favoriteFor('artist', side)));
+      else if (entry.kind === 'festival') add(favoriteFor('festival', entry.title));
+      else entry.tags.forEach((tag) => tag !== 'Concerts' && add(favoriteFor('team', tag)));
+      if (entry.venue) add(favoriteFor('venue', entry.venue));
     }
     return out;
-  }, [q, favorites, nights, home.id]);
+  }, [q, favorites, entries, home.id]);
 
   const exactMatch = found.some((fav) => fav.label.toLowerCase() === q);
 

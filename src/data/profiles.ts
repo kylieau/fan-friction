@@ -5,7 +5,7 @@
 
 import { getAccount } from './account';
 import { supabase } from './storage/supabaseClient';
-import type { LoggedNight } from './types';
+import type { Entry } from './types';
 
 export type Visibility = 'only_me' | 'approved' | 'anyone';
 
@@ -105,16 +105,16 @@ export async function updateMyProfile(changes: {
  * The nights a viewer may see on this profile. The database returns nothing
  * when the owner's setting hides them, so an empty list can mean "private".
  */
-export async function nightsOf(userId: string): Promise<LoggedNight[]> {
+export async function entriesOf(userId: string): Promise<Entry[]> {
   const c = supabase();
   if (!c) return [];
   const { data, error } = await c
-    .from('nights')
+    .from('entries')
     .select('id, data')
     .eq('user_id', userId)
     .order('when_sort', { ascending: false });
   if (error || !data) return [];
-  return (data as { id: string; data: LoggedNight }[]).map((row) => ({ ...row.data, id: row.id }));
+  return (data as { id: string; data: Entry }[]).map((row) => ({ ...row.data, id: row.id }));
 }
 
 export async function followStatus(targetId: string): Promise<FollowStatus> {
@@ -178,15 +178,15 @@ export async function declineFollow(followerId: string): Promise<void> {
   await c.from('follows').delete().eq('follower_id', followerId).eq('followee_id', me.id);
 }
 
-export interface FriendNight {
-  night: LoggedNight;
+export interface FriendEntry {
+  entry: Entry;
   friend: Profile;
   /** True on the built-in examples shown before anyone is followed. Never saved. */
   example?: boolean;
 }
 
 /** Recent nights of the people the signed-in person follows (approved only), newest first. */
-export async function friendsNights(limit = 20): Promise<FriendNight[]> {
+export async function friendsEntries(limit = 20): Promise<FriendEntry[]> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return [];
@@ -195,15 +195,15 @@ export async function friendsNights(limit = 20): Promise<FriendNight[]> {
   if (ids.length === 0) return [];
   const [{ data: people }, { data: rows }] = await Promise.all([
     c.from('profiles').select('*').in('id', ids),
-    c.from('nights').select('id, user_id, data').in('user_id', ids).order('when_sort', { ascending: false }).limit(limit),
+    c.from('entries').select('id, user_id, data').in('user_id', ids).order('when_sort', { ascending: false }).limit(limit),
   ]);
   const byId = new Map(((people ?? []) as ProfileRow[]).map((row) => [row.id, fromRow(row)]));
-  return ((rows ?? []) as { id: string; user_id: string; data: LoggedNight }[])
+  return ((rows ?? []) as { id: string; user_id: string; data: Entry }[])
     .map((row) => {
       const friend = byId.get(row.user_id);
-      return friend ? { night: { ...row.data, id: row.id }, friend } : null;
+      return friend ? { entry: { ...row.data, id: row.id }, friend } : null;
     })
-    .filter((item): item is FriendNight => item !== null);
+    .filter((item): item is FriendEntry => item !== null);
 }
 
 /**
@@ -211,12 +211,12 @@ export async function friendsNights(limit = 20): Promise<FriendNight[]> {
  * shape can be judged. Each is marked `example` and shown with an Example chip.
  * Nothing here is written anywhere.
  */
-export const EXAMPLE_FRIEND_NIGHTS: FriendNight[] = [
+export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
   {
     example: true,
     friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, visibility: 'anyone' },
-    night: {
-      id: 'example-night-1',
+    entry: {
+      id: 'example-entry-1',
       when: { sort: '2026-10-03', label: '', precision: 'day' },
       title: 'Dodgers (NLDS G1) vs. Phillies',
       tags: ['Dodgers'],
@@ -231,8 +231,8 @@ export const EXAMPLE_FRIEND_NIGHTS: FriendNight[] = [
   {
     example: true,
     friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, visibility: 'anyone' },
-    night: {
-      id: 'example-night-2',
+    entry: {
+      id: 'example-entry-2',
       when: { sort: '2026-10-02', label: '', precision: 'day' },
       title: 'Slayer',
       tags: ['Concerts'],
@@ -247,8 +247,8 @@ export const EXAMPLE_FRIEND_NIGHTS: FriendNight[] = [
   {
     example: true,
     friend: { id: 'example-3', handle: 'dev', displayName: 'Dev', avatarUrl: null, visibility: 'anyone' },
-    night: {
-      id: 'example-night-3',
+    entry: {
+      id: 'example-entry-3',
       when: { sort: '2026-09-21', label: '', precision: 'day' },
       title: 'Rams vs. NY Giants',
       tags: ['Rams'],

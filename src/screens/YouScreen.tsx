@@ -11,26 +11,26 @@ import {
   approveFollow,
   declineFollow,
   followRequests,
-  friendsNights,
-  EXAMPLE_FRIEND_NIGHTS,
+  friendsEntries,
+  EXAMPLE_FRIEND_ENTRIES,
   getMyProfile,
   getSaveWarning,
   subscribeAccount,
   logStats,
-  nightFacts,
-  ratingForNight,
+  entryFacts,
+  ratingForEntry,
   subscribePersonalLog,
-  yourNights,
+  yourEntries,
   type FollowRequest,
-  type FriendNight,
-  type LoggedNight,
+  type FriendEntry,
+  type Entry,
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
 import { GearIcon } from '../components/Icons';
 import { loggedDateLabel, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
-import { nightPath } from '../lib/view';
+import { datePath } from '../lib/view';
 
 const TOP = 8;
 
@@ -38,16 +38,16 @@ export function YouScreen() {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const warning = useSyncExternalStore(subscribePersonalLog, getSaveWarning, getSaveWarning);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
-  const nights = useMemo(() => yourNights(log), [log]);
+  const entries = useMemo(() => yourEntries(log), [log]);
   const [filter, setFilter] = useState('All');
   useEffect(() => {
     clearOpenedFromMap();
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const [tab, setTab] = useState<'nights' | 'stats' | 'friends'>('nights');
+  const [tab, setTab] = useState<'events' | 'stats' | 'friends'>('events');
   const [handle, setHandle] = useState<string | null>(null);
   const [requests, setRequests] = useState<FollowRequest[]>([]);
-  const [friends, setFriends] = useState<FriendNight[] | null>(null);
+  const [friends, setFriends] = useState<FriendEntry[] | null>(null);
 
   const decide = async (followerId: string, yes: boolean) => {
     if (yes) await approveFollow(followerId);
@@ -64,7 +64,7 @@ export function YouScreen() {
     }
     getMyProfile().then((profile) => current && setHandle(profile?.handle ?? null));
     followRequests().then((list) => current && setRequests(list));
-    friendsNights().then((list) => current && setFriends(list));
+    friendsEntries().then((list) => current && setFriends(list));
     return () => {
       current = false;
     };
@@ -80,10 +80,10 @@ export function YouScreen() {
     };
   }, []);
 
-  const choices = useMemo(() => filterChoices(nights), [nights]);
-  const shown = filter === 'All' ? nights : nights.filter((night) => night.tags.includes(filter));
+  const choices = useMemo(() => filterChoices(entries), [entries]);
+  const shown = filter === 'All' ? entries : entries.filter((entry) => entry.tags.includes(filter));
   const stats = useMemo(() => logStats(shown), [shown]);
-  const heaviest = useMemo(() => heaviestNight(shown, ratings), [shown, ratings]);
+  const heaviest = useMemo(() => heaviestEntry(shown, ratings), [shown, ratings]);
 
   const filters = (
     <div className="filter-row" role="group" aria-label="Filter your events">
@@ -99,9 +99,9 @@ export function YouScreen() {
     </div>
   );
 
-  const nightsBlock = (
+  const eventsBlock = (
     <section className="you-block" aria-label="Your events">
-      {nights.length === 0 ? (
+      {entries.length === 0 ? (
         <div className="card empty-card">
           <div className="card-title">
             {canSignIn() && !account
@@ -111,13 +111,13 @@ export function YouScreen() {
         </div>
       ) : (
         <div className="timeline">
-          {groupByTime(nights).map(([group, list]) => (
+          {groupByTime(entries).map(([group, list]) => (
             <section key={group} className="timeline-group" aria-label={group}>
               <h3 className="timeline-heading">{group}</h3>
               <ul className="log-list">
-                {list.map((night) => (
-                  <li key={night.id}>
-                    <NightRow night={night} rating={ratingForNight(night, ratings)} />
+                {list.map((entry) => (
+                  <li key={entry.id}>
+                    <EntryRow entry={entry} rating={ratingForEntry(entry, ratings)} />
                   </li>
                 ))}
               </ul>
@@ -181,7 +181,7 @@ export function YouScreen() {
 
       <div className="segmented" role="tablist" aria-label="You">
         {/* "Events", not "Nights": the bottom bar already has a Nights tab (Kylie, Oct 5). */}
-        <button type="button" role="tab" aria-selected={tab === 'nights'} onClick={() => setTab('nights')}>
+        <button type="button" role="tab" aria-selected={tab === 'events'} onClick={() => setTab('events')}>
           Events
         </button>
         <button type="button" role="tab" aria-selected={tab === 'friends'} onClick={() => setTab('friends')}>
@@ -192,7 +192,7 @@ export function YouScreen() {
         </button>
       </div>
 
-      {tab === 'nights' && nightsBlock}
+      {tab === 'events' && eventsBlock}
       {tab === 'stats' && (
         <>
           {filters}
@@ -205,13 +205,13 @@ export function YouScreen() {
 }
 
 /** Nights in the order given, split into month (or year) groups for the timeline. */
-function groupByTime(nights: LoggedNight[]): [string, LoggedNight[]][] {
-  const groups: [string, LoggedNight[]][] = [];
-  for (const night of nights) {
-    const label = timelineGroup(night.when);
+function groupByTime(entries: Entry[]): [string, Entry[]][] {
+  const groups: [string, Entry[]][] = [];
+  for (const entry of entries) {
+    const label = timelineGroup(entry.when);
     const last = groups[groups.length - 1];
-    if (last && last[0] === label) last[1].push(night);
-    else groups.push([label, [night]]);
+    if (last && last[0] === label) last[1].push(entry);
+    else groups.push([label, [entry]]);
   }
   return groups;
 }
@@ -226,7 +226,7 @@ function FriendsTab({
   ratings,
   signedIn,
 }: {
-  items: FriendNight[] | null;
+  items: FriendEntry[] | null;
   ratings: ReadonlyMap<string, number>;
   signedIn: boolean;
 }) {
@@ -238,13 +238,13 @@ function FriendsTab({
     );
   }
   if (items === null) return null;
-  const list = items.length > 0 ? items : EXAMPLE_FRIEND_NIGHTS;
+  const list = items.length > 0 ? items : EXAMPLE_FRIEND_ENTRIES;
   return (
     <section className="you-block" aria-label="Friends">
       <ul className="log-list">
-        {list.map(({ night, friend, example }) => {
-          const rating = example ? null : ratingForNight(night, ratings);
-          const facts = [loggedDateLabel(night.when), night.venue].filter(Boolean).join(' · ');
+        {list.map(({ entry, friend, example }) => {
+          const rating = example ? null : ratingForEntry(entry, ratings);
+          const facts = [loggedDateLabel(entry.when), entry.venue].filter(Boolean).join(' · ');
           const body = (
             <>
               {rating !== null && (
@@ -258,16 +258,16 @@ function FriendsTab({
                   {friend.displayName ?? friend.handle ?? 'Someone'}
                   {example && <span className="example-chip">Example</span>}
                 </span>
-                <span className="log-title">{night.title}</span>
+                <span className="log-title">{entry.title}</span>
                 <span className="log-facts">{facts}</span>
               </span>
             </>
           );
-          const key = `${friend.id}-${night.id}`;
-          if (night.eventId && !example) {
+          const key = `${friend.id}-${entry.id}`;
+          if (entry.eventId && !example) {
             return (
               <li key={key}>
-                <Link to={nightPath(night.when.sort, night.metroId ?? DEFAULT_METRO.id, night.eventId)} className="log-row">
+                <Link to={datePath(entry.when.sort, entry.metroId ?? DEFAULT_METRO.id, entry.eventId)} className="log-row">
                   {body}
                 </Link>
               </li>
@@ -315,9 +315,9 @@ function Stats({
 }
 
 /** The night with the highest friction read. Shown on You and on the page others see. */
-export function heaviestNight(nights: LoggedNight[], ratings: ReadonlyMap<string, number>): number | null {
-  return nights.reduce<number | null>((best, night) => {
-    const r = ratingForNight(night, ratings);
+export function heaviestEntry(entries: Entry[], ratings: ReadonlyMap<string, number>): number | null {
+  return entries.reduce<number | null>((best, entry) => {
+    const r = ratingForEntry(entry, ratings);
     return r !== null && (best === null || r > best) ? r : best;
   }, null);
 }
@@ -360,11 +360,11 @@ function CountList({ title, rows }: { title: string; rows: { label: string; coun
   );
 }
 
-function NightRow({ night, rating }: { night: LoggedNight; rating: number | null }) {
-  const facts = [loggedDateLabel(night.when), night.venue, night.neutralSite ? 'Neutral site' : night.away ? 'Away' : '']
+function EntryRow({ entry, rating }: { entry: Entry; rating: number | null }) {
+  const facts = [loggedDateLabel(entry.when), entry.venue, entry.neutralSite ? 'Neutral site' : entry.away ? 'Away' : '']
     .filter(Boolean)
     .join(' · ');
-  const extraTags = night.tags.filter((tag) => !night.title.includes(tag));
+  const extraTags = entry.tags.filter((tag) => !entry.title.includes(tag));
   const body = (
     <>
       {rating !== null && (
@@ -374,17 +374,17 @@ function NightRow({ night, rating }: { night: LoggedNight; rating: number | null
         </span>
       )}
       <span className="log-main">
-        <span className="log-title">{night.title}</span>
+        <span className="log-title">{entry.title}</span>
         <span className="log-facts">{facts}</span>
         {extraTags.length > 0 && <span className="log-facts">{extraTags.join(' · ')}</span>}
-        <FactList facts={nightFacts(night)} />
+        <FactList facts={entryFacts(entry)} />
       </span>
     </>
   );
-  if (night.eventId) {
+  if (entry.eventId) {
     return (
       <Link
-        to={nightPath(night.when.sort, night.metroId ?? DEFAULT_METRO.id, night.eventId)}
+        to={datePath(entry.when.sort, entry.metroId ?? DEFAULT_METRO.id, entry.eventId)}
         className="log-row"
         onClick={() => clearOpenedFromMap()}
       >

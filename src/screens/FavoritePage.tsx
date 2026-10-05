@@ -8,30 +8,30 @@ import {
   favoriteKey,
   favoriteMark,
   favoritesOf,
-  friendsNights,
+  friendsEntries,
   getAccount,
   getPersonalLog,
   getRatedDates,
   getUpcoming,
   isPlanned,
   kindLabel,
-  nightMatches,
-  ratingForNight,
+  entryMatches,
+  ratingForEntry,
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
   toggleFavorite,
   togglePlan,
-  yourNights,
+  yourEntries,
   type CrowdEvent,
   type Favorite,
-  type FriendNight,
-  type LoggedNight,
+  type FriendEntry,
+  type Entry,
 } from '../data';
 import { clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { nightPath } from '../lib/view';
+import { datePath } from '../lib/view';
 import { Read } from './FavoritesScreen';
 import { HeaviestStat, Stat } from './YouScreen';
 
@@ -50,10 +50,10 @@ export function FavoritePage() {
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const metro = METROS[homeId ?? DEFAULT_METRO.id] ?? DEFAULT_METRO;
   const favorites = useMemo(() => favoritesOf(log), [log]);
-  const nights = useMemo(() => yourNights(log), [log]);
+  const entries = useMemo(() => yourEntries(log), [log]);
   const [upcoming, setUpcoming] = useState<CrowdEvent[]>([]);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const [friends, setFriends] = useState<FriendNight[]>([]);
+  const [friends, setFriends] = useState<FriendEntry[]>([]);
 
   // The favorite: the saved one, or one built from the address (a page you haven't followed yet).
   const fav: Favorite = useMemo(() => {
@@ -68,13 +68,13 @@ export function FavoritePage() {
   // A page for a name we only know from the log keeps that name's capitalization.
   const label = useMemo(() => {
     if (fav.teamId || fav.venueId) return fav.label;
-    const fromLog = nights.find((night) => nightMatches(night, fav));
+    const fromLog = entries.find((entry) => entryMatches(entry, fav));
     if (!fromLog) return fav.label;
     if (fav.kind === 'venue') return fromLog.venue ?? fav.label;
     if (fav.kind === 'festival') return fromLog.title;
     const name = [...fromLog.tags, ...fromLog.sides].find((n) => n.toLowerCase() === fav.label.toLowerCase());
     return name ?? fav.label;
-  }, [fav, nights]);
+  }, [fav, entries]);
 
   useEffect(() => {
     let current = true;
@@ -93,15 +93,15 @@ export function FavoritePage() {
       setFriends([]);
       return;
     }
-    friendsNights(200).then((list) => current && setFriends(list.filter((item) => nightMatches(item.night, fav))));
+    friendsEntries(200).then((list) => current && setFriends(list.filter((item) => entryMatches(item.entry, fav))));
     return () => {
       current = false;
     };
   }, [account?.id, fav]);
 
-  const mine = useMemo(() => nights.filter((night) => nightMatches(night, fav)), [nights, fav]);
-  const heaviest = mine.reduce<number | null>((best, night) => {
-    const r = ratingForNight(night, ratings);
+  const mine = useMemo(() => entries.filter((entry) => entryMatches(entry, fav)), [entries, fav]);
+  const heaviest = mine.reduce<number | null>((best, entry) => {
+    const r = ratingForEntry(entry, ratings);
     return r !== null && (best === null || r > best) ? r : best;
   }, null);
   const friendCount = new Set(friends.map((f) => f.friend.id)).size;
@@ -149,7 +149,7 @@ export function FavoritePage() {
           <ul className="log-list">
             {upcoming.map((event) => (
               <li key={event.id} className="fav-li">
-                <Link to={nightPath(event.date, event.metroId, event.id)} className="log-row fav-row">
+                <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
                   <Read rating={ratings.get(event.date) ?? null} />
                   <span className="log-main">
                     <span className="log-title">{listTitle(event)}</span>
@@ -183,9 +183,9 @@ export function FavoritePage() {
           </div>
         ) : (
           <ul className="log-list">
-            {mine.map((night) => (
-              <li key={night.id}>
-                <NightRow night={night} rating={ratingForNight(night, ratings)} />
+            {mine.map((entry) => (
+              <li key={entry.id}>
+                <EntryRow entry={entry} rating={ratingForEntry(entry, ratings)} />
               </li>
             ))}
           </ul>
@@ -198,14 +198,14 @@ export function FavoritePage() {
             Friends went
           </h2>
           <ul className="log-list">
-            {friends.map(({ night, friend }) => (
-              <li key={`${friend.id}-${night.id}`}>
+            {friends.map(({ entry, friend }) => (
+              <li key={`${friend.id}-${entry.id}`}>
                 <div className="log-row">
-                  <Read rating={ratingForNight(night, ratings)} />
+                  <Read rating={ratingForEntry(entry, ratings)} />
                   <span className="log-main">
                     <span className="log-friend">{friend.displayName ?? friend.handle ?? 'Someone'}</span>
-                    <span className="log-title">{night.title}</span>
-                    <span className="log-facts">{loggedDateLabel(night.when)}</span>
+                    <span className="log-title">{entry.title}</span>
+                    <span className="log-facts">{loggedDateLabel(entry.when)}</span>
                   </span>
                 </div>
               </li>
@@ -217,20 +217,20 @@ export function FavoritePage() {
   );
 }
 
-function NightRow({ night, rating }: { night: LoggedNight; rating: number | null }) {
-  const facts = [loggedDateLabel(night.when), night.venue].filter(Boolean).join(' · ');
+function EntryRow({ entry, rating }: { entry: Entry; rating: number | null }) {
+  const facts = [loggedDateLabel(entry.when), entry.venue].filter(Boolean).join(' · ');
   const body = (
     <>
       <Read rating={rating} />
       <span className="log-main">
-        <span className="log-title">{night.title}</span>
+        <span className="log-title">{entry.title}</span>
         <span className="log-facts">{facts}</span>
       </span>
     </>
   );
-  if (night.eventId) {
+  if (entry.eventId) {
     return (
-      <Link to={nightPath(night.when.sort, night.metroId ?? DEFAULT_METRO.id, night.eventId)} className="log-row">
+      <Link to={datePath(entry.when.sort, entry.metroId ?? DEFAULT_METRO.id, entry.eventId)} className="log-row">
         {body}
       </Link>
     );

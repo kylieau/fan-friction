@@ -189,7 +189,7 @@ export interface CalendarDay {
 }
 
 /** A night that matched a team, artist, or venue search. */
-export interface NightSearchHit {
+export interface DateSearchHit {
   date: LocalDate;
   rating: number | null;
   /** The rated night's headline, or the matching event titles. */
@@ -224,7 +224,7 @@ export interface FrictionRead {
  * A friction read frozen at a moment in time.
  * The schedule archive stores these. Save does not.
  */
-export interface NightForecast extends FrictionRead {
+export interface Forecast extends FrictionRead {
   kind: 'forecast';
   /** ISO time the forecast was frozen. */
   recordedAt: string;
@@ -242,7 +242,7 @@ export type ForecastBasisKind = 'daily-before-start';
  * the date, so the listing was rebuilt afterwards. `forecastBasis` says the
  * stamp used the latest daily schedule saved before the event's start.
  */
-export interface NightStamp extends FrictionRead {
+export interface Stamp extends FrictionRead {
   kind: 'stamp';
   /** ISO time of the latest pass. */
   lastUpdated: string;
@@ -258,7 +258,7 @@ export interface NightStamp extends FrictionRead {
  * object those lookups describe. A logged night (below) is one person's
  * entry on a night like this, with a forecast and a stamp.
  */
-export interface MetroNight {
+export interface MetroDate {
   metroId: string;
   date: LocalDate;
   events: CrowdEvent[];
@@ -287,7 +287,7 @@ export interface LoggedWhen {
 }
 
 /** One night she went to. Not a map dot, and not limited to events over 5k. */
-export interface LoggedNight {
+export interface Entry {
   id: string;
   /** Catalog event this night is tied to, when one exists. */
   eventId?: string;
@@ -330,16 +330,16 @@ export interface LoggedNight {
    * archive, not when this night is saved. An older phone copy may still have
    * one; it is dropped on load.
    */
-  forecast?: NightForecast;
+  forecast?: Forecast;
   /**
    * The post-night record. Absent until the stamp locks, or when there was
    * no read to store. May be replaced when the formula improves.
    */
-  stamp?: NightStamp;
+  stamp?: Stamp;
 }
 
 /** An upcoming night she flagged. Separate from "I was there". */
-export interface NightPlan {
+export interface Plan {
   id: string;
   date: LocalDate;
   metroId: string;
@@ -350,7 +350,7 @@ export interface NightPlan {
    * Not written. Save stores the night only. An older phone copy may still
    * have one; it is dropped on load.
    */
-  forecast?: NightForecast;
+  forecast?: Forecast;
 }
 
 export type YouOrder = 'plans-first' | 'nights-first';
@@ -362,8 +362,8 @@ export type YouOrder = 'plans-first' | 'nights-first';
 export interface PersonalLog {
   version: 1;
   hiddenSeedIds: string[];
-  added: LoggedNight[];
-  plans: NightPlan[];
+  added: Entry[];
+  plans: Plan[];
   order: YouOrder;
   /**
    * Teams, artists, venues and festivals followed (the Favorites tab). Absent on

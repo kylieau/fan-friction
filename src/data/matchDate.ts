@@ -15,7 +15,7 @@ function tokens(value: string): string[] {
 }
 
 /** Names a person would type for this event. */
-export function nightNames(event: CrowdEvent): string[] {
+export function dateNames(event: CrowdEvent): string[] {
   const names: string[] = [];
   if (event.teams) {
     for (const id of [event.teams.home, event.teams.away]) {
@@ -53,7 +53,7 @@ function fieldHits(query: string, field: string): boolean {
 export function matchingNames(event: CrowdEvent, query: string): string[] | null {
   const q = query.trim();
   if (fold(q).trim().length < 2) return null;
-  const hits = nightNames(event).filter((name) => fieldHits(q, name));
+  const hits = dateNames(event).filter((name) => fieldHits(q, name));
   if (hits.length === 0) return null;
   const specific = hits.filter((name) => name !== event.title);
   const chosen = (specific.length > 0 ? specific : hits).slice().sort((a, b) => a.length - b.length);

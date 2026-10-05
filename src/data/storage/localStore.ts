@@ -2,9 +2,9 @@
 // The seeded nights are not stored here; they ship with the app.
 
 import { APP } from '../../config/app';
-import { parseStamp } from '../night';
-import type { DatePrecision, Favorite, LoggedNight, LoggedWhen, NightPlan, PersonalLog, YouOrder } from '../types';
-import type { NightStore } from './types';
+import { parseStamp } from '../read';
+import type { DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder } from '../types';
+import type { EntryStore } from './types';
 
 const KEY = `${APP.slug}:your-nights`;
 
@@ -24,37 +24,37 @@ function isWhen(value: unknown): value is LoggedWhen {
   return typeof when.sort === 'string' && typeof when.label === 'string' && PRECISIONS.includes(when.precision);
 }
 
-function isNight(value: unknown): value is LoggedNight {
+function isEntry(value: unknown): value is Entry {
   if (!value || typeof value !== 'object') return false;
-  const night = value as LoggedNight;
+  const entry = value as Entry;
   return (
-    typeof night.id === 'string' &&
-    typeof night.title === 'string' &&
-    isWhen(night.when) &&
-    Array.isArray(night.tags) &&
-    typeof night.sport === 'string' &&
-    Array.isArray(night.sides) &&
-    typeof night.kind === 'string'
+    typeof entry.id === 'string' &&
+    typeof entry.title === 'string' &&
+    isWhen(entry.when) &&
+    Array.isArray(entry.tags) &&
+    typeof entry.sport === 'string' &&
+    Array.isArray(entry.sides) &&
+    typeof entry.kind === 'string'
   );
 }
 
-function cleanNight(night: LoggedNight): LoggedNight {
-  const stamp = parseStamp(night.stamp);
-  const next: LoggedNight = { ...night };
+function cleanEntry(entry: Entry): Entry {
+  const stamp = parseStamp(entry.stamp);
+  const next: Entry = { ...entry };
   delete next.forecast;
   if (stamp) next.stamp = stamp;
   else delete next.stamp;
   return next;
 }
 
-function isPlan(value: unknown): value is NightPlan {
+function isPlan(value: unknown): value is Plan {
   if (!value || typeof value !== 'object') return false;
-  const plan = value as NightPlan;
+  const plan = value as Plan;
   return typeof plan.id === 'string' && typeof plan.date === 'string' && typeof plan.metroId === 'string' && typeof plan.title === 'string';
 }
 
-function cleanPlan(plan: NightPlan): NightPlan {
-  const next: NightPlan = { ...plan };
+function cleanPlan(plan: Plan): Plan {
+  const next: Plan = { ...plan };
   delete next.forecast;
   return next;
 }
@@ -87,7 +87,7 @@ export function readLocalLog(): PersonalLog {
     return {
       version: 1,
       hiddenSeedIds: Array.isArray(parsed.hiddenSeedIds) ? parsed.hiddenSeedIds.filter((id) => typeof id === 'string') : [],
-      added: Array.isArray(parsed.added) ? parsed.added.filter(isNight).map(cleanNight) : [],
+      added: Array.isArray(parsed.added) ? parsed.added.filter(isEntry).map(cleanEntry) : [],
       plans: Array.isArray(parsed.plans) ? parsed.plans.filter(isPlan).map(cleanPlan) : [],
       order: asOrder(parsed.order),
       favorites: readFavorites(parsed.favorites),
@@ -101,7 +101,7 @@ export function writeLocalLog(log: PersonalLog) {
   localStorage.setItem(KEY, JSON.stringify(log));
 }
 
-export const localNightStore: NightStore = {
+export const localEntryStore: EntryStore = {
   async load() {
     return readLocalLog();
   },

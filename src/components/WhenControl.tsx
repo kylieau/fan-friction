@@ -2,7 +2,7 @@ import { useId } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import type { Metro } from '../config/metros';
 import { ChevronDown } from './Icons';
-import { mapPath, nightsPath, whenLabel, type WhenSpan } from '../lib/view';
+import { mapPath, calendarPath, whenLabel, type WhenSpan } from '../lib/view';
 
 interface Props {
   metro: Metro;
@@ -59,7 +59,7 @@ export function WhenControl({ metro, date, today, isToday, span, open, onOpenCha
           <Link
             role="menuitem"
             aria-current={pickedDate ? 'date' : undefined}
-            to={nightsPath({ metroId: metro.id, date })}
+            to={calendarPath({ metroId: metro.id, date })}
             onClick={() => onOpenChange(false)}
           >
             Pick a date

@@ -20,11 +20,11 @@ function teamName(event: CrowdEvent): string | null {
 }
 
 /** Two of the same round on one night: add the team, same idea as a shared short name. */
-function collided(event: CrowdEvent, night: readonly CrowdEvent[]): boolean {
+function collided(event: CrowdEvent, entry: readonly CrowdEvent[]): boolean {
   const round = event.stakes?.round;
   if (!round) return false;
   let count = 0;
-  for (const other of night) {
+  for (const other of entry) {
     if (other.date !== event.date || !showsStakes(other)) continue;
     if (other.stakes?.round === round) count += 1;
     if (count > 1) return true;
@@ -33,12 +33,12 @@ function collided(event: CrowdEvent, night: readonly CrowdEvent[]): boolean {
 }
 
 /** Sheet and event page. Round, then the game number when a feed has one. */
-export function quietStakes(event: CrowdEvent, night: readonly CrowdEvent[]): string | null {
+export function quietStakes(event: CrowdEvent, entry: readonly CrowdEvent[]): string | null {
   if (!showsStakes(event)) return null;
   const { round, game } = event.stakes!;
   const parts = [round];
   if (game && game > 0) parts.push(`Game ${game}`);
-  if (collided(event, night)) {
+  if (collided(event, entry)) {
     const team = teamName(event);
     if (team) parts.push(team);
   }

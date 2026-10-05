@@ -16,14 +16,14 @@ import {
   venueNameOn,
   type CityDate,
   type CrowdEvent,
-  type NightPlan,
+  type Plan,
 } from '../data';
 import { BaseMap, MapContext } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
-import { NightScore } from '../components/NightScore';
+import { DateScore } from '../components/DateScore';
 import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, HomeIcon, SearchIcon, SunIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
@@ -34,7 +34,7 @@ import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } fro
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { getHomeId, setHomeId } from '../lib/homeCity';
-import { mapPath, nightPath, nightsPath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
+import { mapPath, datePath, calendarPath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
 
 type Mode = 'crowds' | 'traffic';
 
@@ -67,7 +67,7 @@ export function MapScreen() {
   const memory = restored.current;
   const { metro, date, today, isToday, when } = useView();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
-  const nextNight = nextSavedPlan(log);
+  const nextPlan = nextSavedPlan(log);
   useEffect(() => {
     clearOpenedFromMap();
   }, []);
@@ -194,7 +194,7 @@ export function MapScreen() {
   }, [metro.id, date, span]);
   const onMap = useMemo(() => events.filter((event) => eventInBounds(event, bounds)), [events, bounds]);
   const sheetEvents = useMemo(() => orderSheetEvents(onMap, selected), [onMap, selected]);
-  const nightLine = shown ? `${whenLabel(span, isToday, date)} · On the map` : ' ';
+  const dateLine = shown ? `${whenLabel(span, isToday, date)} · On the map` : ' ';
   const pastLabel = span === 'day' ? pastRelativeLabel(date, todayIn(DEFAULT_METRO)) : null;
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
@@ -252,7 +252,7 @@ export function MapScreen() {
           <div ref={areaRef}>
             <AreaSwitcher metro={metro} open={menu === 'area'} onOpenChange={(next) => setMenu(next ? 'area' : null)} />
           </div>
-          <Link to={nightsPath({ metroId: metro.id, date })} className="round-button" aria-label="Search nights">
+          <Link to={calendarPath({ metroId: metro.id, date })} className="round-button" aria-label="Search dates">
             <SearchIcon />
           </Link>
         </div>
@@ -266,7 +266,7 @@ export function MapScreen() {
             )}
             {caption.trim() && <div className="map-header-count">{caption}</div>}
           </div>
-          <NightScore
+          <DateScore
             rating={headerRating}
             quiet={showScore && shown?.status === 'quiet'}
             showScore={showScore}
@@ -301,7 +301,7 @@ export function MapScreen() {
             </button>
           </div>
         </div>
-        {nextNight && <SavedNightCard plan={nextNight} />}
+        {nextPlan && <SavedDateCard plan={nextPlan} />}
       </header>
 
       {points.length > 0 && (
@@ -338,16 +338,16 @@ export function MapScreen() {
             onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setSheetOpen(!open)}
           >
             <span className="sheet-handle" aria-hidden />
-            <div className="sheet-title">{nightLine}</div>
+            <div className="sheet-title">{dateLine}</div>
           </div>
 
           {selected && (
             <>
               <div className="selected-row">
-                <EventRow event={selected} night={events} selected showDate={selected.date !== date} />
+                <EventRow event={selected} dateEvents={events} selected showDate={selected.date !== date} />
               </div>
               <Link
-                to={nightPath(selected.date, selected.metroId, selected.id)}
+                to={datePath(selected.date, selected.metroId, selected.id)}
                 state={{ fromMap: true }}
                 className="gold-button"
                 onClick={() => markOpenedFromMap()}
@@ -366,7 +366,7 @@ export function MapScreen() {
                 <li key={e.id}>
                   <EventRow
                     event={e}
-                    night={events}
+                    dateEvents={events}
                     showDate={e.date !== date}
                     selected={e.id === selectedId}
                     onPick={() => {
@@ -387,7 +387,7 @@ export function MapScreen() {
                   <li key={e.id}>
                     <EventRow
                       event={e}
-                      night={upcoming}
+                      dateEvents={upcoming}
                       showDate
                       href={mapPath({ metroId: e.metroId, date: e.date, today, when: 'day' })}
                     />
@@ -534,36 +534,36 @@ function RememberMap({
   return null;
 }
 
-/** One quiet card for the soonest saved night still ahead, in any city. */
-function SavedNightCard({ plan }: { plan: NightPlan }) {
-  const [night, setNight] = useState<CrowdEvent[] | null>(null);
+/** One quiet card for the soonest saved date still ahead, in any city. */
+function SavedDateCard({ plan }: { plan: Plan }) {
+  const [dateEvents, setDateEvents] = useState<CrowdEvent[] | null>(null);
   useEffect(() => {
     let current = true;
     getCityDate(plan.metroId, plan.date).then((day) => {
-      if (current) setNight(day.events);
+      if (current) setDateEvents(day.events);
     });
     return () => {
       current = false;
     };
   }, [plan.metroId, plan.date]);
 
-  const event = night?.find((item) => item.id === plan.eventId);
-  const title = event && night ? mapTitle(event, night) : plan.title;
+  const event = dateEvents?.find((item) => item.id === plan.eventId);
+  const title = event && dateEvents ? mapTitle(event, dateEvents) : plan.title;
   const city = METROS[plan.metroId]?.name;
   const place = [shortLocalDate(plan.date), city].filter(Boolean).join(' · ');
   const body = (
     <>
-      <span className="saved-night-kicker">Next saved date</span>
-      <span className="saved-night-title">{title}</span>
-      {place && <span className="saved-night-meta">{place}</span>}
+      <span className="saved-date-kicker">Next saved date</span>
+      <span className="saved-date-title">{title}</span>
+      {place && <span className="saved-date-meta">{place}</span>}
     </>
   );
-  if (!plan.eventId) return <div className="saved-night">{body}</div>;
+  if (!plan.eventId) return <div className="saved-date">{body}</div>;
   return (
     <Link
-      to={nightPath(plan.date, plan.metroId, plan.eventId)}
+      to={datePath(plan.date, plan.metroId, plan.eventId)}
       state={{ fromMap: true }}
-      className="saved-night"
+      className="saved-date"
       onClick={() => markOpenedFromMap()}
     >
       {body}
@@ -588,14 +588,14 @@ function sheetVenue(event: CrowdEvent): string | null {
 /** One sheet card: the same lines as the map chip, plus a quiet venue and the badges. */
 function EventRow({
   event: e,
-  night,
+  dateEvents,
   selected,
   onPick,
   showDate,
   href,
 }: {
   event: CrowdEvent;
-  night: CrowdEvent[];
+  dateEvents: CrowdEvent[];
   selected?: boolean;
   onPick?: () => void;
   showDate?: boolean;
@@ -606,7 +606,7 @@ function EventRow({
   const crowd = crowdShort(e);
   const detail = showDate ? `${shortLocalDate(e.date)} · ${time} · ${crowd}` : `${time} · ${crowd}`;
   const venue = sheetVenue(e);
-  const stakes = quietStakes(e, night);
+  const stakes = quietStakes(e, dateEvents);
   const body = (
     <>
       <span className="event-main">

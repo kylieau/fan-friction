@@ -13,15 +13,15 @@ interface Props {
   showScore?: boolean;
 }
 
-export function NightScore({ dateLabel, rating, quiet, showScore = true }: Props) {
+export function DateScore({ dateLabel, rating, quiet, showScore = true }: Props) {
   if (!showScore) return null;
   const rated = rating !== null;
   const shown = rated ? Number(formatScore(rating)) : null;
   return (
-    <div className="nightscore">
-      <div className="nightscore-main">
+    <div className="datescore">
+      <div className="datescore-main">
         {dateLabel && (
-          <span className="nightscore-date">
+          <span className="datescore-date">
             <CalendarIcon />
             {dateLabel.toUpperCase()} ·
           </span>
@@ -38,7 +38,7 @@ export function NightScore({ dateLabel, rating, quiet, showScore = true }: Props
           <span className="score-word unrated">{quiet ? 'Quiet' : 'Unrated'}</span>
         )}
       </div>
-      <div className="nightscore-bars" aria-hidden>
+      <div className="datescore-bars" aria-hidden>
         {Array.from({ length: 10 }, (_, i) => (
           <span key={i} className={shown !== null && i < Math.round(shown) ? 'on' : undefined} />
         ))}

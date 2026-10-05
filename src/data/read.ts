@@ -13,9 +13,9 @@ import type {
   FrictionRead,
   LocalDate,
   LocalTime,
-  LoggedNight,
-  MetroNight,
-  NightStamp,
+  Entry,
+  MetroDate,
+  Stamp,
 } from './types';
 import { ARCHIVE_FORECASTS } from './startForecastIndex';
 import { SCHEDULE_SNAPSHOTS } from './scheduleArchiveIndex';
@@ -91,13 +91,13 @@ export function eventFeedsFriction(event: CrowdEvent): boolean {
 }
 
 /** The events that share a local date, plus the latest start among them. */
-export function asMetroNight(metroId: string, date: LocalDate, events: readonly CrowdEvent[]): MetroNight {
-  const thatNight = events.filter((event) => event.metroId === metroId && event.date === date);
+export function asMetroDate(metroId: string, date: LocalDate, events: readonly CrowdEvent[]): MetroDate {
+  const thatDate = events.filter((event) => event.metroId === metroId && event.date === date);
   return {
     metroId,
     date,
-    events: thatNight,
-    lastScheduledStart: lastScheduledStart(thatNight),
+    events: thatDate,
+    lastScheduledStart: lastScheduledStart(thatDate),
   };
 }
 
@@ -141,18 +141,18 @@ export function wallClockToUtc(date: LocalDate, time: LocalTime, timeZone: strin
  * When the stamp locks: 24 hours after the last scheduled start that night.
  * Null when no start time is on file, so a stamp is not written early.
  */
-export function stampLocksAt(night: Pick<MetroNight, 'date' | 'lastScheduledStart'>, timeZone: string): Date | null {
-  if (!night.lastScheduledStart) return null;
-  const start = wallClockToUtc(night.date, night.lastScheduledStart, timeZone);
+export function stampLocksAt(entry: Pick<MetroDate, 'date' | 'lastScheduledStart'>, timeZone: string): Date | null {
+  if (!entry.lastScheduledStart) return null;
+  const start = wallClockToUtc(entry.date, entry.lastScheduledStart, timeZone);
   return new Date(start.getTime() + STAMP_LOCK_HOURS * 60 * 60 * 1000);
 }
 
 export function isStampLocked(
-  night: Pick<MetroNight, 'date' | 'lastScheduledStart'>,
+  entry: Pick<MetroDate, 'date' | 'lastScheduledStart'>,
   timeZone: string,
   now = new Date(),
 ): boolean {
-  const locks = stampLocksAt(night, timeZone);
+  const locks = stampLocksAt(entry, timeZone);
   if (!locks) return false;
   return now.getTime() >= locks.getTime();
 }
@@ -177,14 +177,14 @@ export function scheduleCoverage(metroId: string, date: LocalDate, now = new Dat
 }
 
 /** Coverage for a logged night. A vague date before the archive is reconstructed; it is not treated as saved. */
-export function coverageForNight(night: LoggedNight, now = new Date()): ScheduleCoverage {
-  const metroId = night.metroId ?? 'la';
-  if (night.when.precision === 'day' && isValidDate(night.when.sort)) {
-    return scheduleCoverage(metroId, night.when.sort, now);
+export function coverageForEntry(entry: Entry, now = new Date()): ScheduleCoverage {
+  const metroId = entry.metroId ?? 'la';
+  if (entry.when.precision === 'day' && isValidDate(entry.when.sort)) {
+    return scheduleCoverage(metroId, entry.when.sort, now);
   }
   const snaps = SCHEDULE_SNAPSHOTS.filter((span) => span.metroId === metroId);
   const first = snaps.map((span) => span.capturedOn).sort()[0];
-  if (!first || night.when.sort < first) return 'reconstructed';
+  if (!first || entry.when.sort < first) return 'reconstructed';
   return 'not-yet';
 }
 
@@ -260,7 +260,7 @@ export function createStamp(
   lastUpdated: string,
   reconstructed: boolean,
   basis?: Pick<StampForecast, 'forecastBasis' | 'forecastCapturedAt'>,
-): NightStamp {
+): Stamp {
   return {
     kind: 'stamp',
     ...read,
@@ -275,11 +275,11 @@ export function createStamp(
  * The reconstructed flag stays unless a caller passes a new one.
  */
 export function refreshStamp(
-  saved: NightStamp,
+  saved: Stamp,
   read: FrictionRead,
   lastUpdated: string,
   reconstructed?: boolean,
-): NightStamp {
+): Stamp {
   return {
     kind: 'stamp',
     ...read,
@@ -306,9 +306,9 @@ function readBody(value: unknown): FrictionRead | null {
 }
 
 /** Drop a broken stamp. The night itself still loads. */
-export function parseStamp(value: unknown): NightStamp | undefined {
+export function parseStamp(value: unknown): Stamp | undefined {
   if (!value || typeof value !== 'object') return undefined;
-  const raw = value as Partial<NightStamp>;
+  const raw = value as Partial<Stamp>;
   if (raw.kind !== 'stamp' || typeof raw.lastUpdated !== 'string' || !raw.lastUpdated) return undefined;
   const body = readBody(value);
   if (!body) return undefined;
@@ -329,17 +329,17 @@ export function parseStamp(value: unknown): NightStamp | undefined {
  * A below-floor night gets that score only as a nearby read: some other event
  * that night must feed friction, and the date must already have a score.
  */
-export function ratingFromNight(
-  night: LoggedNight,
+export function ratingFromEntry(
+  entry: Entry,
   ratings: ReadonlyMap<string, number>,
   sameNight: readonly CrowdEvent[],
 ): number | null {
-  if (night.when.precision !== 'day' || !isValidDate(night.when.sort)) return null;
-  if (night.inMetro === false) return null;
-  const score = ratings.get(night.when.sort);
+  if (entry.when.precision !== 'day' || !isValidDate(entry.when.sort)) return null;
+  if (entry.inMetro === false) return null;
+  const score = ratings.get(entry.when.sort);
   if (score == null) return null;
-  if (!night.belowFloor) return score;
-  const id = night.eventId ?? night.id;
+  if (!entry.belowFloor) return score;
+  const id = entry.eventId ?? entry.id;
   const nearby = sameNight.some((other) => other.id !== id && eventFeedsFriction(other));
   return nearby ? score : null;
 }

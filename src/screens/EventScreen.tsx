@@ -12,7 +12,7 @@ import {
   todayIn,
   togglePlan,
   toggleWasThere,
-  yourNights,
+  yourEntries,
   type CityDate,
 } from '../data';
 import { crowdKind, crowdPoints, showsOnMap, type CrowdPoint } from '../map/crowdPoints';
@@ -45,7 +45,7 @@ export function EventScreen() {
     setDay(null);
     const saved = getPersonalLog();
     const planMetro = saved.plans.find((plan) => plan.eventId === id)?.metroId;
-    const loggedMetro = yourNights(saved).find((night) => night.eventId === id)?.metroId;
+    const loggedMetro = yourEntries(saved).find((entry) => entry.eventId === id)?.metroId;
     const metros = [requestedMetro, planMetro, loggedMetro, DEFAULT_METRO.id].filter(
       (metroId, index, all): metroId is string =>
         Boolean(metroId && METROS[metroId]) && all.indexOf(metroId) === index,
@@ -97,7 +97,7 @@ export function EventScreen() {
   const a = e.assessment;
   const kind = crowdKind(e);
   const stakesLine = quietStakes(e, day.events);
-  const logged = yourNights(log).find((night) => night.eventId === e.id);
+  const logged = yourEntries(log).find((entry) => entry.eventId === e.id);
 
   return (
     <div className="screen page event-page">

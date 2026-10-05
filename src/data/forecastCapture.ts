@@ -3,7 +3,7 @@
 // Los Angeles is the only metro the archive collects.
 
 import type { CrowdEvent, FrictionRead, LocalDate, LocalTime } from './types';
-import { frictionReadForEvent } from './night';
+import { frictionReadForEvent } from './read';
 import { seedRatingFor } from './sources/seedSource';
 
 export interface ArchivedEventRead {
@@ -20,9 +20,9 @@ export interface ArchivedEventRead {
  * The event itself stays in the list so its own record can still be written.
  */
 function shownThatNight(events: readonly CrowdEvent[], event: CrowdEvent): CrowdEvent[] {
-  const thatNight = events.filter((row) => row.metroId === event.metroId && row.date === event.date);
-  const seeded = thatNight.filter((row) => row.sourceId === 'seed');
-  const shown = seeded.length > 0 ? seeded : thatNight;
+  const thatDate = events.filter((row) => row.metroId === event.metroId && row.date === event.date);
+  const seeded = thatDate.filter((row) => row.sourceId === 'seed');
+  const shown = seeded.length > 0 ? seeded : thatDate;
   if (shown.some((row) => row.id === event.id)) return shown;
   return [...shown, event];
 }

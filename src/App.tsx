@@ -5,7 +5,7 @@ import { FirstRunTips } from './components/FirstRunTips';
 import { HomePicker } from './components/HomePicker';
 import { MapScreen } from './screens/MapScreen';
 import { EventScreen } from './screens/EventScreen';
-import { NightsScreen } from './screens/NightsScreen';
+import { CalendarScreen } from './screens/CalendarScreen';
 import { CompareScreen } from './screens/CompareScreen';
 import { YouScreen } from './screens/YouScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
@@ -13,9 +13,15 @@ import { ProfileEditScreen } from './screens/ProfileEditScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { FavoritesScreen } from './screens/FavoritesScreen';
 import { FavoritePage } from './screens/FavoritePage';
-import { NightScreen } from './screens/NightScreen';
+import { DateScreen } from './screens/DateScreen';
 import { getHomeId, subscribeHome } from './lib/homeCity';
 import { getPref, setPref } from './lib/prefs';
+
+/** /night/<date> was the date page's first address. */
+function OldDateRedirect() {
+  const { pathname, search } = useLocation();
+  return <Navigate to={pathname.replace(/^\/night\//, '/date/') + search} replace />;
+}
 
 function Shell() {
   const navigate = useNavigate();
@@ -33,8 +39,8 @@ function Shell() {
       <main className="app-main">
         <Routes>
           <Route path="/" element={<MapScreen />} />
-          <Route path="/nights" element={<NightsScreen />} />
-          <Route path="/night/:date" element={<NightScreen />} />
+          <Route path="/calendar" element={<CalendarScreen />} />
+          <Route path="/date/:date" element={<DateScreen />} />
           <Route path="/event/:id" element={<EventScreen />} />
           <Route path="/favorites" element={<FavoritesScreen />} />
           <Route path="/favorites/edit" element={<FavoritesScreen />} />
@@ -54,6 +60,8 @@ function Shell() {
               />
             }
           />
+          <Route path="/nights" element={<Navigate to="/calendar" replace />} />
+          <Route path="/night/:date" element={<OldDateRedirect />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

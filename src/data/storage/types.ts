@@ -4,7 +4,7 @@
 
 import type { PersonalLog } from '../types';
 
-export interface NightStore {
+export interface EntryStore {
   /** Read the saved log. The phone copy resolves immediately. A cloud store may wait. */
   load(): Promise<PersonalLog>;
   save(log: PersonalLog): Promise<void>;

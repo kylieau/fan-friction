@@ -68,18 +68,18 @@ export function eventPath(eventId: string, metroId: string): string {
 }
 
 /** The night page: a date in a city, with an event to highlight when one is meant. */
-export function nightPath(date: string, metroId: string, eventId?: string): string {
+export function datePath(date: string, metroId: string, eventId?: string): string {
   const params = new URLSearchParams();
   if (metroId && metroId !== DEFAULT_METRO.id) params.set('metro', metroId);
   if (eventId) params.set('event', eventId);
   const q = params.toString();
-  return `/night/${date}${q ? `?${q}` : ''}`;
+  return `/date/${date}${q ? `?${q}` : ''}`;
 }
 
 /** The Nights tab, opened on the month of a date so "Pick a date" lands in the right place. */
-export function nightsPath(opts: { metroId: string; date: string }): string {
+export function calendarPath(opts: { metroId: string; date: string }): string {
   const params = new URLSearchParams();
   if (opts.metroId !== openedMetroId()) params.set('metro', opts.metroId);
   params.set('date', opts.date);
-  return `/nights?${params.toString()}`;
+  return `/calendar?${params.toString()}`;
 }

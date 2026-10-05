@@ -230,14 +230,14 @@ button {
   white-space: nowrap;
 }
 
-.map-header-score .nightscore {
+.map-header-score .datescore {
   align-items: flex-end;
   margin-left: auto;
 }
 
 /* One personal card, only when a night is saved. Floats under the When row.
    The header, chips, and sheet stay where they are. */
-.saved-night {
+.saved-date {
   position: absolute;
   top: calc(100% + 50px);
   left: 12px;
@@ -254,20 +254,20 @@ button {
   color: var(--ink);
 }
 
-.saved-night-kicker {
+.saved-date-kicker {
   font-size: 12px;
   font-weight: 700;
   line-height: 1.2;
   color: var(--ucla);
 }
 
-.saved-night-title {
+.saved-date-title {
   font-size: 15px;
   font-weight: 800;
   line-height: 1.25;
 }
 
-.saved-night-meta {
+.saved-date-meta {
   font-size: 13px;
   font-weight: 600;
   color: var(--ink2);
@@ -552,19 +552,19 @@ button {
 
 /* ---------- Night score ---------- */
 
-.nightscore {
+.datescore {
   display: flex;
   flex-direction: column;
   gap: 6px;
   min-height: 56px;
 }
 
-.nightscore-count {
+.datescore-count {
   min-height: 0;
   justify-content: flex-end;
 }
 
-.nightscore-main {
+.datescore-main {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -606,7 +606,7 @@ button {
   font-variant-numeric: tabular-nums;
 }
 
-.nightscore-date {
+.datescore-date {
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -617,29 +617,29 @@ button {
   white-space: nowrap;
 }
 
-.nightscore-date svg {
+.datescore-date svg {
   width: 16px;
   height: 16px;
   align-self: center;
 }
 
-.nightscore-bars {
+.datescore-bars {
   display: flex;
   gap: 3px;
 }
 
-.nightscore-bars span {
+.datescore-bars span {
   width: 12px;
   height: 6px;
   border-radius: 2px;
   background: var(--barOff);
 }
 
-.nightscore-bars span.on {
+.datescore-bars span.on {
   background: var(--dodger);
 }
 
-.nightscore-caption {
+.datescore-caption {
   font-size: 13px;
   color: var(--ink2);
 }
@@ -2776,13 +2776,13 @@ button {
 }
 
 /* ---------- Night page ---------- */
-.night-head {
+.date-head {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-.night-kicker {
+.date-kicker {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.8px;
@@ -2790,14 +2790,14 @@ button {
   color: var(--ink2);
 }
 
-.night-date {
+.date-title {
   margin: 0;
   font-size: 26px;
   font-weight: 800;
   line-height: 1.1;
 }
 
-.night-city {
+.date-city {
   font-size: 14px;
   color: var(--ink2);
 }
@@ -2968,13 +2968,13 @@ button {
   color: var(--card);
 }
 
-.night-page .back-link {
+.date-page .back-link {
   border: none;
   background: none;
   padding: 0;
 }
 
-.night-page .text-link {
+.date-page .text-link {
   border: none;
   background: none;
 }

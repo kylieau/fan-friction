@@ -7,7 +7,7 @@
 // usual building. Away games and tournament rounds do not borrow an LA rating.
 // No scores were in the log, so no result lines are invented.
 
-import type { EventKind, LoggedNight, LoggedWhen } from '../types';
+import type { EventKind, Entry, LoggedWhen } from '../types';
 
 interface Extra {
   tags?: string[];
@@ -33,7 +33,7 @@ const year = (y: number): LoggedWhen => ({ sort: `${y}-01-01`, label: String(y),
 const span = (y: number, label: string): LoggedWhen => ({ sort: `${y}-01-01`, label, precision: 'span' });
 const unknown = (): LoggedWhen => ({ sort: '0000-01-01', label: 'Date not written down', precision: 'unknown' });
 
-function night(
+function entry(
   id: string,
   when: LoggedWhen,
   title: string,
@@ -41,7 +41,7 @@ function night(
   sport: string,
   side: string,
   extra: Extra = {},
-): LoggedNight {
+): Entry {
   const away = extra.away ?? false;
   const inMetro = extra.inMetro ?? !away;
   return {
@@ -76,11 +76,11 @@ const WNBA = 'WNBA';
 const SOCCER = 'Soccer';
 
 const uclaMbb = (iso: string, opponent: string) =>
-  night(`k-${iso}-ucla-mbb`, day(iso), `UCLA MBB vs. ${opponent}`, 'UCLA MBB', MBB, 'UCLA', { venue: 'Pauley Pavilion' });
+  entry(`k-${iso}-ucla-mbb`, day(iso), `UCLA MBB vs. ${opponent}`, 'UCLA MBB', MBB, 'UCLA', { venue: 'Pauley Pavilion' });
 const uclaWbb = (iso: string, title: string, extra?: Extra) =>
-  night(`k-${iso}-ucla-wbb`, day(iso), title, 'UCLA WBB', WBB, 'UCLA', { venue: 'Pauley Pavilion', ...extra });
+  entry(`k-${iso}-ucla-wbb`, day(iso), title, 'UCLA WBB', WBB, 'UCLA', { venue: 'Pauley Pavilion', ...extra });
 const uclaFb = (iso: string, opponent: string, extra?: Extra) =>
-  night(`k-${iso}-ucla-fb`, day(iso), `UCLA FB vs. ${opponent}`, 'UCLA FB', FB, 'UCLA', {
+  entry(`k-${iso}-ucla-fb`, day(iso), `UCLA FB vs. ${opponent}`, 'UCLA FB', FB, 'UCLA', {
     venue: 'Rose Bowl',
     ...extra,
   });
@@ -96,21 +96,21 @@ const PITCHER: Record<string, string> = {
 const dodgers = (iso: string, title: string, extra: Extra = {}) => {
   const nick = title.match(/\(([^)]+)\)/)?.[1];
   const starter = extra.starter ?? (nick ? (PITCHER[nick] ?? nick) : undefined);
-  return night(`k-${iso}-dodgers`, day(iso), title, 'Dodgers', BB, 'Dodgers', {
+  return entry(`k-${iso}-dodgers`, day(iso), title, 'Dodgers', BB, 'Dodgers', {
     venue: 'Dodger Stadium',
     ...extra,
     starter,
   });
 };
 const lakers = (iso: string, opponent: string) =>
-  night(`k-${iso}-lakers`, day(iso), `Lakers vs. ${opponent}`, 'Lakers', MBB, 'Lakers', { venue: 'Crypto.com Arena' });
+  entry(`k-${iso}-lakers`, day(iso), `Lakers vs. ${opponent}`, 'Lakers', MBB, 'Lakers', { venue: 'Crypto.com Arena' });
 const sparks = (iso: string, opponent: string) =>
-  night(`k-${iso}-sparks`, day(iso), `Sparks vs. ${opponent}`, 'Sparks', WNBA, 'Sparks', { venue: 'Crypto.com Arena' });
+  entry(`k-${iso}-sparks`, day(iso), `Sparks vs. ${opponent}`, 'Sparks', WNBA, 'Sparks', { venue: 'Crypto.com Arena' });
 
-const show = (id: string, when: LoggedWhen, title: string, extra: Extra = {}): LoggedNight =>
-  night(id, when, title, 'Concerts', 'Concerts', title, { kind: 'show', ...extra, tags: ['Concerts'] });
+const show = (id: string, when: LoggedWhen, title: string, extra: Extra = {}): Entry =>
+  entry(id, when, title, 'Concerts', 'Concerts', title, { kind: 'show', ...extra, tags: ['Concerts'] });
 
-export const KYLIE_LOG: LoggedNight[] = [
+export const KYLIE_LOG: Entry[] = [
   // Sports, 2026
   uclaWbb('2026-01-03', '#4 UCLA WBB vs. #17 USC'),
   uclaMbb('2026-01-10', 'Maryland'),
@@ -120,7 +120,7 @@ export const KYLIE_LOG: LoggedNight[] = [
   uclaWbb('2026-02-01', '#2 UCLA WBB vs. #8 Iowa'),
   uclaMbb('2026-02-03', 'Rutgers'),
   uclaMbb('2026-02-07', 'Washington'),
-  night('k-2026-02-14-cms-pp', day('2026-02-14'), 'CMS WBB @ Pomona-Pitzer', 'CMS WBB', WBB, 'CMS', {
+  entry('k-2026-02-14-cms-pp', day('2026-02-14'), 'CMS WBB @ Pomona-Pitzer', 'CMS WBB', WBB, 'CMS', {
     tags: ['CMS WBB', 'Pomona-Pitzer WBB'],
     sides: ['CMS', 'Pomona-Pitzer'],
     venue: 'Pomona-Pitzer',
@@ -130,21 +130,21 @@ export const KYLIE_LOG: LoggedNight[] = [
     note: 'Kel senior night',
   }),
   uclaWbb('2026-02-19', '#2 UCLA WBB vs. Washington'),
-  night('k-2026-02-20-ucla-mvb', day('2026-02-20'), '#1 UCLA MVB vs. #2 Long Beach', 'UCLA MVB', MVB, 'UCLA'),
+  entry('k-2026-02-20-ucla-mvb', day('2026-02-20'), '#1 UCLA MVB vs. #2 Long Beach', 'UCLA MVB', MVB, 'UCLA'),
   uclaMbb('2026-02-21', '#10 Illinois'),
   uclaWbb('2026-02-22', '#2 UCLA WBB vs. Wisconsin'),
   uclaMbb('2026-02-24', 'USC'),
-  night('k-2026-03-03-ucla-baseball', day('2026-03-03'), '#1 UCLA baseball vs. CSF', 'UCLA Baseball', BB, 'UCLA', {
+  entry('k-2026-03-03-ucla-baseball', day('2026-03-03'), '#1 UCLA baseball vs. CSF', 'UCLA Baseball', BB, 'UCLA', {
     venue: 'Jackie Robinson Stadium',
     belowFloor: true,
   }),
   uclaMbb('2026-03-03', '#9 Nebraska'),
-  night('k-2026-03-06-ucla-mvb', day('2026-03-06'), '#1 UCLA MVB vs. #4 USC', 'UCLA MVB', MVB, 'UCLA'),
-  night('k-2026-03-08-cal-lu-bw', day('2026-03-08'), '#5 Cal Lutheran MVB vs. Baldwin Wallace', 'Cal Lutheran MVB', MVB, 'Cal Lutheran', {
+  entry('k-2026-03-06-ucla-mvb', day('2026-03-06'), '#1 UCLA MVB vs. #4 USC', 'UCLA MVB', MVB, 'UCLA'),
+  entry('k-2026-03-08-cal-lu-bw', day('2026-03-08'), '#5 Cal Lutheran MVB vs. Baldwin Wallace', 'Cal Lutheran MVB', MVB, 'Cal Lutheran', {
     venue: 'Cal Lutheran',
     belowFloor: true,
   }),
-  night('k-2026-03-08-cal-lu-kean', day('2026-03-08'), '#5 Cal Lutheran MVB vs. Kean', 'Cal Lutheran MVB', MVB, 'Cal Lutheran', {
+  entry('k-2026-03-08-cal-lu-kean', day('2026-03-08'), '#5 Cal Lutheran MVB vs. Kean', 'Cal Lutheran MVB', MVB, 'Cal Lutheran', {
     venue: 'Cal Lutheran',
     belowFloor: true,
   }),
@@ -154,26 +154,26 @@ export const KYLIE_LOG: LoggedNight[] = [
   dodgers('2026-03-26', 'Dodgers (Yama) vs. Diamondbacks'),
   lakers('2026-03-27', 'Nets'),
   dodgers('2026-03-28', 'Dodgers (Glas) vs. Diamondbacks'),
-  night('k-2026-03-29-ucla-wbb', day('2026-03-29'), '#1 UCLA WBB vs. #3 Duke (E8)', 'UCLA WBB', WBB, 'UCLA', {
+  entry('k-2026-03-29-ucla-wbb', day('2026-03-29'), '#1 UCLA WBB vs. #3 Duke (E8)', 'UCLA WBB', WBB, 'UCLA', {
     venue: 'Golden 1 Center',
     inMetro: false,
     metroId: 'sacramento',
     neutralSite: true,
   }),
-  night('k-2026-04-03-uconn-sc', day('2026-04-03'), '#1 UConn vs. #1 South Carolina (Final Four)', 'Women\'s basketball', WBB, 'UConn', {
+  entry('k-2026-04-03-uconn-sc', day('2026-04-03'), '#1 UConn vs. #1 South Carolina (Final Four)', 'Women\'s basketball', WBB, 'UConn', {
     sides: ['UConn', 'South Carolina'],
     venue: 'Mortgage Matchup Center',
     inMetro: false,
     metroId: 'phoenix',
     neutralSite: true,
   }),
-  night('k-2026-04-03-ucla-wbb', day('2026-04-03'), '#1 UCLA WBB vs. #1 Texas (Final Four)', 'UCLA WBB', WBB, 'UCLA', {
+  entry('k-2026-04-03-ucla-wbb', day('2026-04-03'), '#1 UCLA WBB vs. #1 Texas (Final Four)', 'UCLA WBB', WBB, 'UCLA', {
     venue: 'Mortgage Matchup Center',
     inMetro: false,
     metroId: 'phoenix',
     neutralSite: true,
   }),
-  night('k-2026-04-05-ucla-wbb', day('2026-04-05'), '#1 UCLA WBB vs. #1 South Carolina (natty)', 'UCLA WBB', WBB, 'UCLA', {
+  entry('k-2026-04-05-ucla-wbb', day('2026-04-05'), '#1 UCLA WBB vs. #1 South Carolina (natty)', 'UCLA WBB', WBB, 'UCLA', {
     venue: 'Mortgage Matchup Center',
     inMetro: false,
     metroId: 'phoenix',
@@ -189,20 +189,20 @@ export const KYLIE_LOG: LoggedNight[] = [
   dodgers('2026-07-04', 'Dodgers (Yama) vs. Padres'),
   dodgers('2026-08-13', 'Dodgers (Roki) vs. Brewers'),
   dodgers('2026-08-21', 'Dodgers (Yama) vs. Pirates'),
-  night('k-2026-09-17-mystics', day('2026-09-17'), 'Mystics @ Sky', 'Mystics', WNBA, 'Mystics', {
+  entry('k-2026-09-17-mystics', day('2026-09-17'), 'Mystics @ Sky', 'Mystics', WNBA, 'Mystics', {
     venue: 'Wintrust Arena',
     away: true,
     inMetro: false,
     metroId: 'chicago',
   }),
-  night('k-2026-09-21-rams', day('2026-09-21'), 'Rams vs. NY Giants', 'Rams', FB, 'Rams', { venue: 'SoFi Stadium' }),
+  entry('k-2026-09-21-rams', day('2026-09-21'), 'Rams vs. NY Giants', 'Rams', FB, 'Rams', { venue: 'SoFi Stadium' }),
   dodgers('2026-09-24', 'Dodgers vs. Padres'),
 
   // Sports, 2025
   uclaWbb('2025-01-01', 'UCLA WBB vs. Michigan'),
   lakers('2025-01-02', 'Trail Blazers'),
   uclaMbb('2025-01-17', 'Iowa'),
-  night('k-2025-01-18-pp', day('2025-01-18'), 'Pomona-Pitzer WBB vs. La Verne', 'Pomona-Pitzer WBB', WBB, 'Pomona-Pitzer', {
+  entry('k-2025-01-18-pp', day('2025-01-18'), 'Pomona-Pitzer WBB vs. La Verne', 'Pomona-Pitzer WBB', WBB, 'Pomona-Pitzer', {
     venue: 'Pomona-Pitzer',
     belowFloor: true,
   }),
@@ -212,7 +212,7 @@ export const KYLIE_LOG: LoggedNight[] = [
   uclaMbb('2025-02-04', 'Michigan State'),
   uclaWbb('2025-02-05', 'UCLA WBB vs. Ohio State'),
   uclaMbb('2025-02-08', 'Penn State'),
-  night('k-2025-02-15-cms-pp', day('2025-02-15'), 'CMS WBB vs. Pomona-Pitzer', 'CMS WBB', WBB, 'CMS', {
+  entry('k-2025-02-15-cms-pp', day('2025-02-15'), 'CMS WBB vs. Pomona-Pitzer', 'CMS WBB', WBB, 'CMS', {
     tags: ['CMS WBB', 'Pomona-Pitzer WBB'],
     sides: ['CMS', 'Pomona-Pitzer'],
     venue: 'CMS',
@@ -227,29 +227,29 @@ export const KYLIE_LOG: LoggedNight[] = [
   uclaMbb('2025-03-08', 'USC'),
   uclaWbb('2025-03-21', 'UCLA WBB vs. Southern'),
   uclaWbb('2025-03-23', 'UCLA WBB vs. Richmond'),
-  night('k-2025-04-04-sc-texas', day('2025-04-04'), 'South Carolina vs. Texas (Final Four)', 'Women\'s basketball', WBB, 'South Carolina', {
+  entry('k-2025-04-04-sc-texas', day('2025-04-04'), 'South Carolina vs. Texas (Final Four)', 'Women\'s basketball', WBB, 'South Carolina', {
     sides: ['South Carolina', 'Texas'],
     venue: 'Amalie Arena',
     inMetro: false,
     metroId: 'tampa',
     neutralSite: true,
   }),
-  night('k-2025-04-04-ucla-wbb', day('2025-04-04'), 'UCLA WBB vs. UConn (Final Four)', 'UCLA WBB', WBB, 'UCLA', {
+  entry('k-2025-04-04-ucla-wbb', day('2025-04-04'), 'UCLA WBB vs. UConn (Final Four)', 'UCLA WBB', WBB, 'UCLA', {
     venue: 'Amalie Arena',
     inMetro: false,
     metroId: 'tampa',
     neutralSite: true,
   }),
-  night('k-2025-04-13-lafc', day('2025-04-13'), 'LAFC vs. San Jose', 'LAFC', SOCCER, 'LAFC', { venue: 'BMO Stadium' }),
+  entry('k-2025-04-13-lafc', day('2025-04-13'), 'LAFC vs. San Jose', 'LAFC', SOCCER, 'LAFC', { venue: 'BMO Stadium' }),
   dodgers('2025-05-18', 'Dodgers vs. Angels'),
-  night('k-2025-06-13-mariners', day('2025-06-13'), 'Mariners vs. Guardians', 'Mariners', BB, 'Mariners', {
+  entry('k-2025-06-13-mariners', day('2025-06-13'), 'Mariners vs. Guardians', 'Mariners', BB, 'Mariners', {
     venue: 'T-Mobile Park',
     inMetro: false,
     metroId: 'seattle',
   }),
-  night('k-2025-06-29-lafc', day('2025-06-29'), 'LAFC vs. Whitecaps', 'LAFC', SOCCER, 'LAFC', { venue: 'BMO Stadium' }),
+  entry('k-2025-06-29-lafc', day('2025-06-29'), 'LAFC vs. Whitecaps', 'LAFC', SOCCER, 'LAFC', { venue: 'BMO Stadium' }),
   dodgers('2025-07-04', 'Dodgers vs. Astros'),
-  night('k-2025-08-14-braves', day('2025-08-14'), 'Braves @ Mets', 'Braves', BB, 'Braves', {
+  entry('k-2025-08-14-braves', day('2025-08-14'), 'Braves @ Mets', 'Braves', BB, 'Braves', {
     venue: 'Citi Field',
     away: true,
     inMetro: false,
@@ -265,13 +265,13 @@ export const KYLIE_LOG: LoggedNight[] = [
   dodgers('2025-09-30', 'NLWC Game 1: Dodgers vs. Reds'),
   uclaFb('2025-10-04', 'Penn State'),
   dodgers('2025-10-08', 'NLDS Game 3: Dodgers vs. Phillies'),
-  night('k-2025-10-10-ucla-wvb', day('2025-10-10'), 'UCLA WVB vs. USC', 'UCLA WVB', WVB, 'UCLA'),
+  entry('k-2025-10-10-ucla-wvb', day('2025-10-10'), 'UCLA WVB vs. USC', 'UCLA WVB', WVB, 'UCLA'),
   uclaFb('2025-10-18', 'Maryland'),
   uclaMbb('2025-10-28', 'Irvine'),
   uclaMbb('2025-11-03', 'Eastern Washington'),
   uclaMbb('2025-11-10', 'West Georgia'),
   uclaMbb('2025-11-21', 'Presbyterian'),
-  night('k-2025-11-15-ucla-fb', day('2025-11-15'), 'UCLA FB @ Ohio State', 'UCLA FB', FB, 'UCLA', {
+  entry('k-2025-11-15-ucla-fb', day('2025-11-15'), 'UCLA FB @ Ohio State', 'UCLA FB', FB, 'UCLA', {
     venue: 'Ohio Stadium',
     away: true,
     inMetro: false,
@@ -279,30 +279,30 @@ export const KYLIE_LOG: LoggedNight[] = [
   }),
   uclaFb('2025-11-22', 'Washington'),
   uclaWbb('2025-11-23', 'UCLA WBB vs. Southern'),
-  night('k-2025-11-28-pp', day('2025-11-28'), 'Pomona-Pitzer WBB vs. Babson', 'Pomona-Pitzer WBB', WBB, 'Pomona-Pitzer', {
+  entry('k-2025-11-28-pp', day('2025-11-28'), 'Pomona-Pitzer WBB vs. Babson', 'Pomona-Pitzer WBB', WBB, 'Pomona-Pitzer', {
     venue: 'Pomona-Pitzer',
     belowFloor: true,
   }),
-  night('k-2025-11-29-cosm', day('2025-11-29'), 'Ohio State @ Michigan, at Cosm', 'Cosm', FB, 'Ohio State', {
+  entry('k-2025-11-29-cosm', day('2025-11-29'), 'Ohio State @ Michigan, at Cosm', 'Cosm', FB, 'Ohio State', {
     venue: 'Cosm',
     kind: 'live-broadcast',
     belowFloor: true,
     note: 'Watch party, not the game itself.',
   }),
   uclaWbb('2025-11-30', 'UCLA WBB vs. Tennessee'),
-  night('k-2025-12-03-pp', day('2025-12-03'), 'Pomona-Pitzer WBB @ Caltech', 'Pomona-Pitzer WBB', WBB, 'Pomona-Pitzer', {
+  entry('k-2025-12-03-pp', day('2025-12-03'), 'Pomona-Pitzer WBB @ Caltech', 'Pomona-Pitzer WBB', WBB, 'Pomona-Pitzer', {
     venue: 'Caltech',
     away: true,
     belowFloor: true,
     inMetro: true,
   }),
-  night('k-2025-12-04-princeton', day('2025-12-04'), 'Princeton WVB @ USC', 'Princeton WVB', WVB, 'Princeton', {
+  entry('k-2025-12-04-princeton', day('2025-12-04'), 'Princeton WVB @ USC', 'Princeton WVB', WVB, 'Princeton', {
     venue: 'USC',
     away: true,
     inMetro: true,
   }),
   uclaMbb('2025-12-06', 'Oregon'),
-  night('k-2025-12-13-uconn', day('2025-12-13'), 'UConn WBB @ USC', 'Women\'s basketball', WBB, 'UConn', {
+  entry('k-2025-12-13-uconn', day('2025-12-13'), 'UConn WBB @ USC', 'Women\'s basketball', WBB, 'UConn', {
     venue: 'USC',
     away: true,
     inMetro: true,

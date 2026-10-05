@@ -4,7 +4,7 @@ import { AccountRow } from '../components/AccountBlock';
 import { ProfileForm } from './ProfileEditScreen';
 import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO } from '../config/metros';
-import { getAccount, getMyProfile, getPersonalLog, nightBackup, subscribeAccount, subscribePersonalLog, todayIn } from '../data';
+import { getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn } from '../data';
 
 /** Behind the gear on You: account, profile, backup, tips. */
 export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
@@ -42,12 +42,12 @@ export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
   }, [account?.id]);
 
   const download = () => {
-    const backup = nightBackup(log);
+    const backup = logBackup(log);
     const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `fan-friction-nights-${todayIn(DEFAULT_METRO)}.json`;
+    link.download = `fan-friction-events-${todayIn(DEFAULT_METRO)}.json`;
     document.body.appendChild(link);
     link.click();
     link.remove();

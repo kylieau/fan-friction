@@ -7,13 +7,13 @@ import { METROS } from '../config/metros';
 import { listTitle } from '../lib/eventTitle';
 import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
-import { clearPhoneCopy, isSavingToAccount, mergeLogs, nightStore, readSavedLog, setStoreAccount } from './storage';
+import { clearPhoneCopy, isSavingToAccount, mergeLogs, entryStore, readSavedLog, setStoreAccount } from './storage';
 import { onAccountChange } from './account';
 import { favoriteKey, favoritesFromLog } from './favorites';
 import type { Favorite } from './favorites';
-import { asMetroNight, createStamp, forecastBeforeStart, isStampLocked, ratingFromNight } from './night';
+import { asMetroDate, createStamp, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
-import type { CrowdEvent, LoggedNight, NightPlan, NightStamp, PersonalLog, YouOrder } from './types';
+import type { CrowdEvent, Entry, Plan, Stamp, PersonalLog, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -37,12 +37,12 @@ export interface LogStats {
   byVenue: CountRow[];
 }
 
-export interface NightBackup {
+export interface LogBackup {
   app: 'Fan/Friction';
   exportedAt: string;
   order: YouOrder;
-  nights: LoggedNight[];
-  plans: NightPlan[];
+  entries: Entry[];
+  plans: Plan[];
 }
 
 let snapshot: PersonalLog = readSavedLog();
@@ -70,7 +70,7 @@ function commit(next: PersonalLog) {
   snapshot = next;
   saveWarning = null;
   emit();
-  nightStore.save(next).catch(() => {
+  entryStore.save(next).catch(() => {
     saveWarning = isSavingToAccount()
       ? "Couldn't reach your account. This phone still has the change; it will try again on the next save."
       : 'This phone blocked saving. Export a backup before you leave this page.';
@@ -94,12 +94,12 @@ onAccountChange(async (account) => {
     emit();
     setStoreAccount(account.id);
     try {
-      const cloud = await nightStore.load();
+      const cloud = await entryStore.load();
       const merged = mergeLogs(cloud, snapshot);
       snapshot = merged;
       syncStatus = 'account';
       emit();
-      await nightStore.save(merged);
+      await entryStore.save(merged);
     } catch {
       saveWarning = "Couldn't load your account's nights. Showing what's on this phone.";
       syncStatus = 'phone';
@@ -118,18 +118,18 @@ onAccountChange(async (account) => {
   emit();
 });
 
-function compareNights(a: LoggedNight, b: LoggedNight) {
+function compareNights(a: Entry, b: Entry) {
   if (a.when.sort !== b.when.sort) return b.when.sort.localeCompare(a.when.sort);
   return a.title.localeCompare(b.title);
 }
 
 /** Nights this person marked, newest first. */
-export function yourNights(log: PersonalLog = snapshot): LoggedNight[] {
+export function yourEntries(log: PersonalLog = snapshot): Entry[] {
   return [...log.added].sort(compareNights);
 }
 
 export function isWasThere(eventId: string, log: PersonalLog = snapshot): boolean {
-  return log.added.some((night) => night.eventId === eventId);
+  return log.added.some((entry) => entry.eventId === eventId);
 }
 
 function venueLabel(event: CrowdEvent): string | undefined {
@@ -165,21 +165,21 @@ export function eventTypeLabel(kind: string, sport: string): string {
 }
 
 /** Separate labeled facts. Personal notes are not one of them. */
-export function nightFacts(night: LoggedNight, scope: 'all' | 'before' = 'all'): LabeledFact[] {
+export function entryFacts(entry: Entry, scope: 'all' | 'before' = 'all'): LabeledFact[] {
   const facts: LabeledFact[] = [];
-  if (night.result) facts.push({ label: 'Outcome', value: night.result });
-  const type = eventTypeLabel(night.kind, night.sport);
+  if (entry.result) facts.push({ label: 'Outcome', value: entry.result });
+  const type = eventTypeLabel(entry.kind, entry.sport);
   if (type) facts.push({ label: 'Type', value: type });
-  if (night.starter) facts.push({ label: 'Starter', value: night.starter });
-  if (night.promo) facts.push({ label: 'Promo', value: night.promo });
-  if (night.notable) facts.push({ label: 'Notable', value: night.notable });
+  if (entry.starter) facts.push({ label: 'Starter', value: entry.starter });
+  if (entry.promo) facts.push({ label: 'Promo', value: entry.promo });
+  if (entry.notable) facts.push({ label: 'Notable', value: entry.notable });
   if (scope === 'before') return facts.filter((fact) => fact.label === 'Starter' || fact.label === 'Promo');
   return facts;
 }
 
 /** Facts for an event page. A linked log night supplies anything she wrote down. */
-export function eventFacts(event: CrowdEvent, logged?: LoggedNight): LabeledFact[] {
-  if (logged) return nightFacts(logged);
+export function eventFacts(event: CrowdEvent, logged?: Entry): LabeledFact[] {
+  if (logged) return entryFacts(logged);
   const sport = event.audience.domain === 'sports' ? sportLabel(event.audience.sport) : '';
   const type = eventTypeLabel(event.kind, sport);
   return type ? [{ label: 'Type', value: type }] : [];
@@ -195,11 +195,11 @@ function tagFor(teamId: string | undefined, sport: string): { tag: string; side:
   return { tag: side, side };
 }
 
-function withFloor(event: CrowdEvent, night: LoggedNight): LoggedNight {
-  return event.belowFloor ? { ...night, belowFloor: true } : night;
+function withFloor(event: CrowdEvent, entry: Entry): Entry {
+  return event.belowFloor ? { ...entry, belowFloor: true } : entry;
 }
 
-function nightFromEvent(event: CrowdEvent): LoggedNight {
+function entryFromEvent(event: CrowdEvent): Entry {
   const music = event.audience.domain === 'music' || event.kind === 'show' || event.kind === 'festival';
   if (music) {
     const name = event.performer ?? event.title;
@@ -251,7 +251,7 @@ function nightFromEvent(event: CrowdEvent): LoggedNight {
 }
 
 /** Seeded events that night, plus this event when the live feed is the only copy. */
-function eventsThatNight(event: CrowdEvent): CrowdEvent[] {
+function eventsThatDate(event: CrowdEvent): CrowdEvent[] {
   const seeded = seedEventsOn(event.metroId, event.date);
   if (seeded.some((row) => row.id === event.id)) return seeded;
   return [...seeded, event];
@@ -263,11 +263,11 @@ function eventsThatNight(event: CrowdEvent): CrowdEvent[] {
  * That snapshot is labeled on the stamp. Nothing is written before the lock,
  * and no number is filled in when that snapshot has none.
  */
-function stampNow(event: CrowdEvent, now: Date): NightStamp | undefined {
-  const events = eventsThatNight(event);
-  const night = asMetroNight(event.metroId, event.date, events);
+function stampNow(event: CrowdEvent, now: Date): Stamp | undefined {
+  const events = eventsThatDate(event);
+  const entry = asMetroDate(event.metroId, event.date, events);
   const zone = METROS[event.metroId]?.timeZone ?? 'America/Los_Angeles';
-  if (!isStampLocked(night, zone, now)) return undefined;
+  if (!isStampLocked(entry, zone, now)) return undefined;
   const saved = forecastBeforeStart(event);
   if (!saved) return undefined;
   return createStamp(saved.read, now.toISOString(), false, saved);
@@ -275,16 +275,16 @@ function stampNow(event: CrowdEvent, now: Date): NightStamp | undefined {
 
 /** Turn "I was there" on or off for a catalog event. */
 export function toggleWasThere(event: CrowdEvent) {
-  const on = snapshot.added.some((night) => night.eventId === event.id);
+  const on = snapshot.added.some((entry) => entry.eventId === event.id);
   if (on) {
-    commit({ ...snapshot, added: snapshot.added.filter((night) => night.eventId !== event.id) });
+    commit({ ...snapshot, added: snapshot.added.filter((entry) => entry.eventId !== event.id) });
     return;
   }
   const now = new Date();
-  const night = nightFromEvent(event);
+  const entry = entryFromEvent(event);
   const stamp = stampNow(event, now);
-  if (stamp) night.stamp = stamp;
-  commit({ ...snapshot, added: [...snapshot.added, night] });
+  if (stamp) entry.stamp = stamp;
+  commit({ ...snapshot, added: [...snapshot.added, entry] });
 }
 
 export function isPlanned(eventId: string, log: PersonalLog = snapshot): boolean {
@@ -297,7 +297,7 @@ export function togglePlan(event: CrowdEvent) {
     commit({ ...snapshot, plans: snapshot.plans.filter((plan) => plan.eventId !== event.id) });
     return;
   }
-  const plan: NightPlan = {
+  const plan: Plan = {
     id: `plan-${event.id}`,
     date: event.date,
     metroId: event.metroId,
@@ -313,7 +313,7 @@ export function removePlan(planId: string) {
 }
 
 /** Plans still ahead, soonest first. A past plan stays in the backup but leaves Up next. */
-export function upcomingPlans(today: string, log: PersonalLog = snapshot): NightPlan[] {
+export function upcomingPlans(today: string, log: PersonalLog = snapshot): Plan[] {
   return log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
 }
 
@@ -328,7 +328,7 @@ function todayInZone(timeZone: string, now: Date): string {
  * A plan is the saved night only. It does not store a forecast.
  * Same-day plans follow title order, because a plan does not store a start time.
  */
-export function nextSavedPlan(log: PersonalLog = snapshot, now = new Date()): NightPlan | null {
+export function nextSavedPlan(log: PersonalLog = snapshot, now = new Date()): Plan | null {
   return (
     log.plans
       .filter((plan) => {
@@ -356,8 +356,8 @@ function counts(labels: string[]): CountRow[] {
 }
 
 /** Chips for teams and sports she has logged more than once. */
-export function filterChoices(nights: LoggedNight[]): CountRow[] {
-  return counts(nights.flatMap((night) => night.tags)).filter((row) => row.count >= 2);
+export function filterChoices(entries: Entry[]): CountRow[] {
+  return counts(entries.flatMap((entry) => entry.tags)).filter((row) => row.count >= 2);
 }
 
 /** Plain words for a log entry's kind. Concerts are shows (or festivals), not a sport. */
@@ -366,14 +366,14 @@ function typeLabel(kind: string): string {
   return kind;
 }
 
-export function logStats(nights: LoggedNight[]): LogStats {
-  const venues = nights.map((night) => night.venue).filter((venue): venue is string => Boolean(venue));
+export function logStats(entries: Entry[]): LogStats {
+  const venues = entries.map((entry) => entry.venue).filter((venue): venue is string => Boolean(venue));
   return {
-    events: nights.length,
+    events: entries.length,
     venues: new Set(venues).size,
-    byType: counts(nights.map((night) => typeLabel(night.kind))),
-    byTeamSport: counts(nights.flatMap((night) => night.tags)),
-    bySport: counts(nights.map((night) => night.sport)),
+    byType: counts(entries.map((entry) => typeLabel(entry.kind))),
+    byTeamSport: counts(entries.flatMap((entry) => entry.tags)),
+    bySport: counts(entries.map((entry) => entry.sport)),
     byVenue: counts(venues),
   };
 }
@@ -383,11 +383,11 @@ export function logStats(nights: LoggedNight[]): LogStats {
  * A below-floor night gets the score only when bigger events that night already
  * have one. The events checked are the seeded list for that date.
  */
-export function ratingForNight(night: LoggedNight, ratings: ReadonlyMap<string, number>): number | null {
-  const metroId = night.metroId ?? 'la';
+export function ratingForEntry(entry: Entry, ratings: ReadonlyMap<string, number>): number | null {
+  const metroId = entry.metroId ?? 'la';
   const events =
-    night.when.precision === 'day' ? seedEventsOn(metroId, night.when.sort) : [];
-  return ratingFromNight(night, ratings, events);
+    entry.when.precision === 'day' ? seedEventsOn(metroId, entry.when.sort) : [];
+  return ratingFromEntry(entry, ratings, events);
 }
 
 /**
@@ -396,7 +396,7 @@ export function ratingForNight(night: LoggedNight, ratings: ReadonlyMap<string, 
  * on the next change so it is derived only once.
  */
 export function favoritesOf(log: PersonalLog = snapshot): Favorite[] {
-  return log.favorites ?? favoritesFromLog(yourNights(log));
+  return log.favorites ?? favoritesFromLog(yourEntries(log));
 }
 
 export function isFavorite(fav: Pick<Favorite, 'kind' | 'id'>, log: PersonalLog = snapshot): boolean {
@@ -413,12 +413,12 @@ export function toggleFavorite(fav: Favorite) {
   commit({ ...snapshot, favorites: next });
 }
 
-export function nightBackup(log: PersonalLog = snapshot): NightBackup {
+export function logBackup(log: PersonalLog = snapshot): LogBackup {
   return {
     app: 'Fan/Friction',
     exportedAt: new Date().toISOString(),
     order: log.order,
-    nights: yourNights(log),
+    entries: yourEntries(log),
     plans: log.plans,
   };
 }

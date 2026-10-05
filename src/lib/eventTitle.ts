@@ -66,9 +66,9 @@ function venueLabel(event: CrowdEvent): string | null {
 }
 
 /** True when another chip that night would show the same headliner. */
-function sharesHeadliner(event: CrowdEvent, name: string, night: readonly CrowdEvent[]): boolean {
+function sharesHeadliner(event: CrowdEvent, name: string, entry: readonly CrowdEvent[]): boolean {
   const key = name.toLowerCase();
-  return night.some(
+  return entry.some(
     (other) =>
       other.id !== event.id &&
       other.date === event.date &&
@@ -122,10 +122,10 @@ function sportsChip(event: CrowdEvent, squad: boolean, visitor: boolean): string
   return postseasonChip(name, event);
 }
 
-function sportsCollide(event: CrowdEvent, night: readonly CrowdEvent[], squad: boolean, visitor: boolean): boolean {
+function sportsCollide(event: CrowdEvent, entry: readonly CrowdEvent[], squad: boolean, visitor: boolean): boolean {
   const mine = sportsChip(event, squad, visitor);
   if (!mine) return false;
-  return night.some(
+  return entry.some(
     (other) =>
       other.id !== event.id && other.date === event.date && sportsChip(other, squad, visitor) === mine,
   );
@@ -137,16 +137,16 @@ function sportsCollide(event: CrowdEvent, night: readonly CrowdEvent[], squad: b
  * tag, or the visitor is added only when two chips that night would otherwise
  * match. The sheet and the event page keep the full title.
  */
-export function mapTitle(event: CrowdEvent, night: readonly CrowdEvent[] = []): string {
+export function mapTitle(event: CrowdEvent, entry: readonly CrowdEvent[] = []): string {
   const name = headliner(event);
   if (name) {
-    if (!sharesHeadliner(event, name, night)) return name;
+    if (!sharesHeadliner(event, name, entry)) return name;
     const venue = venueLabel(event);
     return venue ? `${name} · ${venue}` : name;
   }
   if (spokenHome(event)) {
-    if (!sportsCollide(event, night, false, false)) return sportsChip(event, false, false)!;
-    if (!sportsCollide(event, night, true, false)) return sportsChip(event, true, false)!;
+    if (!sportsCollide(event, entry, false, false)) return sportsChip(event, false, false)!;
+    if (!sportsCollide(event, entry, true, false)) return sportsChip(event, true, false)!;
     return sportsChip(event, true, true)!;
   }
   return withSquadTag(event.title, collegeAbbrev(event));

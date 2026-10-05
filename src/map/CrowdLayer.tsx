@@ -128,12 +128,12 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
     );
 
     const markers = new Map<string, Marker>();
-    const night = points.map((p) => p.event);
+    const entry = points.map((p) => p.event);
     for (const p of points) {
       const el = document.createElement('div');
       el.className = 'crowd-label is-hidden';
       el.dataset.id = p.event.id;
-      const name = escapeHtml(mapTitle(p.event, night));
+      const name = escapeHtml(mapTitle(p.event, entry));
       el.innerHTML =
         `<span class="crowd-line">` +
         `<span class="crowd-name">${name}</span>` +

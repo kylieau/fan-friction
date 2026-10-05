@@ -10,7 +10,7 @@
 import { METROS } from '../config/metros';
 import { TEAMS } from './teams';
 import { VENUES, venueNameOn } from './venues';
-import type { CrowdEvent, Favorite, FavoriteKind, LoggedNight } from './types';
+import type { CrowdEvent, Favorite, FavoriteKind, Entry } from './types';
 
 export type { Favorite, FavoriteKind } from './types';
 
@@ -68,22 +68,22 @@ function today(): string {
  * has been to. Used once, to pre-fill Kylie's tab. A new person's log is empty,
  * so this gives them nothing and suggestions take over.
  */
-export function favoritesFromLog(nights: readonly LoggedNight[]): Favorite[] {
+export function favoritesFromLog(entries: readonly Entry[]): Favorite[] {
   const seen = new Map<string, Favorite>();
   const add = (fav: Favorite) => {
     const key = favoriteKey(fav);
     if (!seen.has(key)) seen.set(key, fav);
   };
-  for (const night of nights) {
-    if (night.kind === 'show') {
-      for (const side of night.sides) add(favoriteFor('artist', side));
-    } else if (night.kind === 'festival') {
-      add(favoriteFor('festival', night.title));
+  for (const entry of entries) {
+    if (entry.kind === 'show') {
+      for (const side of entry.sides) add(favoriteFor('artist', side));
+    } else if (entry.kind === 'festival') {
+      add(favoriteFor('festival', entry.title));
     } else {
       // Sports: the tag is the specific program (UCLA WBB), the side is the school or club.
-      for (const tag of night.tags) if (tag !== 'Concerts') add(favoriteFor('team', tag));
+      for (const tag of entry.tags) if (tag !== 'Concerts') add(favoriteFor('team', tag));
     }
-    if (night.venue) add(favoriteFor('venue', night.venue));
+    if (entry.venue) add(favoriteFor('venue', entry.venue));
   }
   return [...seen.values()];
 }
@@ -102,7 +102,7 @@ export function suggestionsFor(homeMetroId: string | null, have: readonly Favori
 }
 
 /** Does a logged night belong to this favorite? Matched by name, since logs are names. */
-export function nightMatches(night: LoggedNight, fav: Favorite): boolean {
+export function entryMatches(entry: Entry, fav: Favorite): boolean {
   const label = fav.label.toLowerCase();
   switch (fav.kind) {
     case 'team': {
@@ -112,16 +112,16 @@ export function nightMatches(night: LoggedNight, fav: Favorite): boolean {
         names.add(team.shortName.toLowerCase());
         (team.aliases ?? []).forEach((alias) => names.add(alias.toLowerCase()));
       }
-      if (night.tags.some((tag) => names.has(tag.toLowerCase()))) return true;
+      if (entry.tags.some((tag) => names.has(tag.toLowerCase()))) return true;
       // A bare side ("UCLA") only counts for a school's football program, the log's default.
-      return night.kind !== 'show' && night.kind !== 'festival' && !team && night.sides.some((side) => side.toLowerCase() === label);
+      return entry.kind !== 'show' && entry.kind !== 'festival' && !team && entry.sides.some((side) => side.toLowerCase() === label);
     }
     case 'artist':
-      return night.kind === 'show' && night.sides.some((side) => side.toLowerCase() === label);
+      return entry.kind === 'show' && entry.sides.some((side) => side.toLowerCase() === label);
     case 'festival':
-      return night.kind === 'festival' && night.title.toLowerCase() === label;
+      return entry.kind === 'festival' && entry.title.toLowerCase() === label;
     case 'venue':
-      return (night.venue ?? '').toLowerCase() === label;
+      return (entry.venue ?? '').toLowerCase() === label;
   }
 }
 

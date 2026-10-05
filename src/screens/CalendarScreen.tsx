@@ -5,13 +5,13 @@ import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
   getCalendarMonth,
   getRatedDates,
-  searchNights,
+  searchDates,
   type CalendarDay,
   type DateRating,
-  type NightSearchHit,
+  type DateSearchHit,
 } from '../data';
 import { addDays, clampMonth, EARLIEST_MONTH, isValidDate, longLocalDate, monthCells, monthTitle, shiftMonth, yearMonth } from '../lib/dates';
-import { nightPath, useView } from '../lib/view';
+import { datePath, useView } from '../lib/view';
 
 /** Badge shade by rating band, darkest for the hardest dates (as in the mockup). */
 function badgeClass(rating: number) {
@@ -28,7 +28,7 @@ function dayLabel(day: CalendarDay) {
   return `${when}, Quiet`;
 }
 
-export function NightsScreen() {
+export function CalendarScreen() {
   const { metro, today } = useView();
   const [params] = useSearchParams();
   const focusRaw = params.get('date');
@@ -37,7 +37,7 @@ export function NightsScreen() {
   const [query, setQuery] = useState('');
   const [famous, setFamous] = useState<DateRating[] | null>(null);
   const [days, setDays] = useState<CalendarDay[] | null>(null);
-  const [hits, setHits] = useState<NightSearchHit[] | null>(null);
+  const [hits, setHits] = useState<DateSearchHit[] | null>(null);
 
   useEffect(() => {
     let current = true;
@@ -63,7 +63,7 @@ export function NightsScreen() {
     if (trimmed.length < 2) return;
     let current = true;
     setHits(null);
-    searchNights(metro.id, trimmed).then((list) => current && setHits(list));
+    searchDates(metro.id, trimmed).then((list) => current && setHits(list));
     return () => {
       current = false;
     };
@@ -76,7 +76,7 @@ export function NightsScreen() {
   const atStart = month <= EARLIEST_MONTH;
   const atEnd = month >= latestMonth;
 
-  const openNight = (date: string) => nightPath(date, metro.id);
+  const openNight = (date: string) => datePath(date, metro.id);
 
   return (
     <div className="screen page">
@@ -155,7 +155,7 @@ export function NightsScreen() {
               <h2 className="section-title">On this date</h2>
               <ul className="famous-list">
                 <li>
-                  <NightRow
+                  <EntryRow
                     to={openNight(onThisDay.date)}
                     rating={onThisDay.rating}
                     headline={onThisDay.headline}
@@ -170,13 +170,13 @@ export function NightsScreen() {
             <section className="famous">
               <h2 className="section-title">Famous nights</h2>
               <ul className="famous-list">
-                {famous.map((night) => (
-                  <li key={night.date}>
-                    <NightRow
-                      to={openNight(night.date)}
-                      rating={night.rating}
-                      headline={night.headline}
-                      meta={`${scoreLabel(night.rating)} · ${formatScore(night.rating)}/10 · ${longLocalDate(night.date)}`}
+                {famous.map((entry) => (
+                  <li key={entry.date}>
+                    <EntryRow
+                      to={openNight(entry.date)}
+                      rating={entry.rating}
+                      headline={entry.headline}
+                      meta={`${scoreLabel(entry.rating)} · ${formatScore(entry.rating)}/10 · ${longLocalDate(entry.date)}`}
                     />
                   </li>
                 ))}
@@ -195,21 +195,21 @@ function SearchResults({
   openNight,
 }: {
   query: string;
-  hits: NightSearchHit[] | null;
+  hits: DateSearchHit[] | null;
   openNight: (date: string) => string;
 }) {
   if (query.length < 2) {
     return <p className="card-body search-note">Type a team, artist, or venue.</p>;
   }
   if (!hits) return <p className="card-body search-note">Searching…</p>;
-  if (hits.length === 0) return <p className="card-body search-note">No nights match that.</p>;
+  if (hits.length === 0) return <p className="card-body search-note">No dates match that.</p>;
   return (
     <section className="famous" aria-live="polite">
       <h2 className="section-title">{hits.length === 1 ? '1 night' : `${hits.length} nights`}</h2>
       <ul className="famous-list">
         {hits.map((hit) => (
           <li key={hit.date}>
-            <NightRow
+            <EntryRow
               to={openNight(hit.date)}
               rating={hit.rating}
               headline={hit.headline}
@@ -225,7 +225,7 @@ function SearchResults({
 }
 
 /** One night in Famous nights, On this night, or search results. */
-function NightRow({ to, rating, headline, meta }: { to: string; rating: number | null; headline: string; meta: string }) {
+function EntryRow({ to, rating, headline, meta }: { to: string; rating: number | null; headline: string; meta: string }) {
   return (
     <Link to={to} className="famous-row">
       {rating !== null ? (

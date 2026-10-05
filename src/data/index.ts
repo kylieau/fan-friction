@@ -2,12 +2,12 @@
 // so adding a live feed means adding it to the lists below, nothing else.
 
 import { areaMetros, type Metro } from '../config/metros';
-import { matchingNames } from './matchNight';
+import { matchingNames } from './matchDate';
 import { espnEvents, espnMetroIds } from './sources/espnSource';
 import { mlbEvents, mlbMetroIds } from './sources/mlbSource';
 import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
-import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, NightSearchHit } from './types';
+import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, DateSearchHit } from './types';
 
 const EVENT_SOURCES: EventSource[] = [seedEvents, mlbEvents, espnEvents];
 const RATING_SOURCES: RatingSource[] = [seedRatings];
@@ -123,7 +123,7 @@ export async function getCalendarMonth(metroId: string, month: string): Promise<
  * Nights whose team, artist, or venue matches the query, newest first.
  * Fewer than two letters matches nothing, so an empty box can show Famous nights.
  */
-export async function searchNights(metroId: string, query: string): Promise<NightSearchHit[]> {
+export async function searchDates(metroId: string, query: string): Promise<DateSearchHit[]> {
   const q = query.trim();
   if (q.length < 2) return [];
   const [ratings, events] = await Promise.all([getRatedDates(metroId), catalog(metroId)]);
@@ -162,7 +162,7 @@ export {
   favoriteKey,
   favoriteMark,
   kindLabel,
-  nightMatches,
+  entryMatches,
   suggestionsFor,
 } from './favorites';
 export { audienceOverlap } from './audience';
@@ -177,23 +177,23 @@ export {
   type Account,
 } from './account';
 export {
-  EXAMPLE_FRIEND_NIGHTS,
+  EXAMPLE_FRIEND_ENTRIES,
   approveFollow,
   declineFollow,
   follow,
-  friendsNights,
+  friendsEntries,
   followRequests,
   followStatus,
   getMyProfile,
   getProfileByHandle,
   isValidHandle,
-  nightsOf,
+  entriesOf,
   suggestHandle,
   unfollow,
   updateMyProfile,
   type FollowRequest,
   type FollowStatus,
-  type FriendNight,
+  type FriendEntry,
   type Profile,
   type Visibility,
 } from './profiles';
@@ -201,8 +201,8 @@ export {
   PRELIST_ATTENDEES,
   FRICTION_ATTENDEES,
   STAMP_LOCK_HOURS,
-  asMetroNight,
-  coverageForNight,
+  asMetroDate,
+  coverageForEntry,
   createStamp,
   eventFeedsFriction,
   frictionReadForEvent,
@@ -214,8 +214,8 @@ export {
   sizeTier,
   stampLocksAt,
   forecastBeforeStart,
-} from './night';
-export type { ScheduleCoverage, SizeTier } from './night';
+} from './read';
+export type { ScheduleCoverage, SizeTier } from './read';
 export {
   eventFacts,
   filterChoices,
@@ -229,16 +229,16 @@ export {
   isWasThere,
   logStats,
   nextSavedPlan,
-  nightBackup,
-  nightFacts,
-  ratingForNight,
+  logBackup,
+  entryFacts,
+  ratingForEntry,
   removePlan,
   setYouOrder,
   subscribePersonalLog,
   togglePlan,
   toggleWasThere,
   upcomingPlans,
-  yourNights,
+  yourEntries,
 } from './personalLog';
 export type { LabeledFact, SyncStatus } from './personalLog';
 export type * from './types';

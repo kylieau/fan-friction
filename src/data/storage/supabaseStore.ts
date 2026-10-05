@@ -3,15 +3,15 @@
 // person's rows private (see supabase/migrations/0001_accounts.sql).
 //
 // Shape on the server: `nights` holds each night as the app stores it, minus
-// the private note, which lives in `night_notes` so it can never ride along
+// the private note, which lives in `entry_notes` so it can never ride along
 // onto a shared page. `plans` and `settings` are always owner-only.
 
 import type { SupabaseClient } from '@supabase/supabase-js';
-import type { LoggedNight, NightPlan, PersonalLog, YouOrder } from '../types';
+import type { Entry, Plan, PersonalLog, YouOrder } from '../types';
 import { EMPTY_LOG, readFavorites } from './localStore';
-import type { NightStore } from './types';
+import type { EntryStore } from './types';
 
-interface NightRow {
+interface EntryRow {
   id: string;
   user_id: string;
   when_sort: string;
@@ -20,11 +20,11 @@ interface NightRow {
   kind: string;
   metro_id: string | null;
   event_id: string | null;
-  data: Omit<LoggedNight, 'note'>;
+  data: Omit<Entry, 'note'>;
 }
 
 interface NoteRow {
-  night_id: string;
+  entry_id: string;
   note: string;
 }
 
@@ -46,23 +46,23 @@ interface SettingsRow {
   data?: { favorites?: unknown };
 }
 
-function nightRow(userId: string, night: LoggedNight): NightRow {
-  const { note: _note, ...data } = night;
+function entryRow(userId: string, entry: Entry): EntryRow {
+  const { note: _note, ...data } = entry;
   void _note;
   return {
-    id: night.id,
+    id: entry.id,
     user_id: userId,
-    when_sort: night.when.sort,
-    when_precision: night.when.precision,
-    title: night.title,
-    kind: night.kind,
-    metro_id: night.metroId ?? null,
-    event_id: night.eventId ?? null,
+    when_sort: entry.when.sort,
+    when_precision: entry.when.precision,
+    title: entry.title,
+    kind: entry.kind,
+    metro_id: entry.metroId ?? null,
+    event_id: entry.eventId ?? null,
     data,
   };
 }
 
-function planRow(userId: string, plan: NightPlan): PlanRow {
+function planRow(userId: string, plan: Plan): PlanRow {
   const { id, date, metroId, eventId, title, venue, ...rest } = plan;
   return {
     id,
@@ -86,7 +86,7 @@ async function must<T>(promise: PromiseLike<{ data: T | null; error: { message: 
   return data;
 }
 
-export function createSupabaseNightStore(client: SupabaseClient, userId: () => string | null): NightStore {
+export function createSupabaseEntryStore(client: SupabaseClient, userId: () => string | null): EntryStore {
   const who = () => {
     const id = userId();
     if (!id) throw new Error('Not signed in.');
@@ -96,21 +96,21 @@ export function createSupabaseNightStore(client: SupabaseClient, userId: () => s
   return {
     async load(): Promise<PersonalLog> {
       const id = who();
-      const [nights, notes, plans, settings] = await Promise.all([
-        must<NightRow[]>(client.from('nights').select('*').eq('user_id', id)),
-        must<NoteRow[]>(client.from('night_notes').select('night_id, note').eq('user_id', id)),
+      const [entries, notes, plans, settings] = await Promise.all([
+        must<EntryRow[]>(client.from('entries').select('*').eq('user_id', id)),
+        must<NoteRow[]>(client.from('entry_notes').select('entry_id, note').eq('user_id', id)),
         must<PlanRow[]>(client.from('plans').select('*').eq('user_id', id)),
         must<SettingsRow>(client.from('settings').select('*').eq('user_id', id).maybeSingle()),
       ]);
-      const noteFor = new Map((notes ?? []).map((row) => [row.night_id, row.note]));
+      const noteFor = new Map((notes ?? []).map((row) => [row.entry_id, row.note]));
       return {
         version: 1,
         hiddenSeedIds: settings?.hidden_seed_ids ?? EMPTY_LOG.hiddenSeedIds,
-        added: (nights ?? []).map((row) => {
-          const night: LoggedNight = { ...row.data, id: row.id };
+        added: (entries ?? []).map((row) => {
+          const entry: Entry = { ...row.data, id: row.id };
           const note = noteFor.get(row.id);
-          if (note) night.note = note;
-          return night;
+          if (note) entry.note = note;
+          return entry;
         }),
         plans: (plans ?? []).map((row) => ({
           id: row.id,
@@ -131,25 +131,25 @@ export function createSupabaseNightStore(client: SupabaseClient, userId: () => s
 
       // Nights: write every one, then drop any the log no longer has.
       if (log.added.length > 0) {
-        await must(client.from('nights').upsert(log.added.map((night) => nightRow(id, night))));
+        await must(client.from('entries').upsert(log.added.map((entry) => entryRow(id, entry))));
       }
-      const keepNights = log.added.map((night) => night.id);
-      const existing = (await must<{ id: string }[]>(client.from('nights').select('id').eq('user_id', id))) ?? [];
-      const goneNights = existing.map((row) => row.id).filter((nightId) => !keepNights.includes(nightId));
-      if (goneNights.length > 0) {
-        await must(client.from('nights').delete().eq('user_id', id).in('id', goneNights));
+      const keepEntries = log.added.map((entry) => entry.id);
+      const existing = (await must<{ id: string }[]>(client.from('entries').select('id').eq('user_id', id))) ?? [];
+      const goneEntries = existing.map((row) => row.id).filter((entryId) => !keepEntries.includes(entryId));
+      if (goneEntries.length > 0) {
+        await must(client.from('entries').delete().eq('user_id', id).in('id', goneEntries));
       }
 
       // Private notes: one row per night that has one; remove the rest.
-      const noted = log.added.filter((night) => night.note);
+      const noted = log.added.filter((entry) => entry.note);
       if (noted.length > 0) {
         await must(
-          client.from('night_notes').upsert(noted.map((night) => ({ user_id: id, night_id: night.id, note: night.note! }))),
+          client.from('entry_notes').upsert(noted.map((entry) => ({ user_id: id, entry_id: entry.id, note: entry.note! }))),
         );
       }
-      const noteless = log.added.filter((night) => !night.note).map((night) => night.id);
+      const noteless = log.added.filter((entry) => !entry.note).map((entry) => entry.id);
       if (noteless.length > 0) {
-        await must(client.from('night_notes').delete().eq('user_id', id).in('night_id', noteless));
+        await must(client.from('entry_notes').delete().eq('user_id', id).in('entry_id', noteless));
       }
 
       // Plans: same approach.

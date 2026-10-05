@@ -4,9 +4,9 @@ import { ChevronDown, ShareIcon } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { formatScore, frictionLabel, scoreBand, scoreLabel, showFriction } from '../config/scoreLabels';
 import {
-  asMetroNight,
+  asMetroDate,
   feelsLikeF,
-  friendsNights,
+  friendsEntries,
   getAccount,
   getCityDate,
   getPersonalLog,
@@ -18,10 +18,10 @@ import {
   todayIn,
   togglePlan,
   toggleWasThere,
-  yourNights,
+  yourEntries,
   type CityDate,
   type CrowdEvent,
-  type FriendNight,
+  type FriendEntry,
 } from '../data';
 import { crowdKind } from '../map/crowdPoints';
 import { VENUES, venueNameOn } from '../data';
@@ -47,7 +47,7 @@ export function dayWord(events: readonly CrowdEvent[]): 'day' | 'night' {
  * sits under the read; then every event that date as a timeline; then friends
  * who were there. The event page is one tap deeper for an event's own detail.
  */
-export function NightScreen() {
+export function DateScreen() {
   const { date = '' } = useParams();
   const [params] = useSearchParams();
   const navigate = useNavigate();
@@ -57,7 +57,7 @@ export function NightScreen() {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [day, setDay] = useState<CityDate | null>(null);
-  const [friends, setFriends] = useState<FriendNight[]>([]);
+  const [friends, setFriends] = useState<FriendEntry[]>([]);
   const [choosing, setChoosing] = useState(false);
   const [shareNote, setShareNote] = useState('');
 
@@ -76,8 +76,8 @@ export function NightScreen() {
       setFriends([]);
       return;
     }
-    friendsNights(300).then((list) => {
-      if (current) setFriends(list.filter((f) => f.night.when.sort === date && (f.night.metroId ?? DEFAULT_METRO.id) === metro.id));
+    friendsEntries(300).then((list) => {
+      if (current) setFriends(list.filter((f) => f.entry.when.sort === date && (f.entry.metroId ?? DEFAULT_METRO.id) === metro.id));
     });
     return () => {
       current = false;
@@ -89,12 +89,12 @@ export function NightScreen() {
   const events = useMemo(() => (day ? [...day.events].sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99')) : []), [day]);
   const word = dayWord(events);
   const mine = useMemo(
-    () => yourNights(log).filter((n) => n.when.sort === date && n.when.precision === 'day' && (n.metroId ?? DEFAULT_METRO.id) === metro.id),
+    () => yourEntries(log).filter((n) => n.when.sort === date && n.when.precision === 'day' && (n.metroId ?? DEFAULT_METRO.id) === metro.id),
     [log, date, metro.id],
   );
   const plans = useMemo(() => log.plans.filter((p) => p.date === date && p.metroId === metro.id), [log, date, metro.id]);
   const rating = day?.rating ?? null;
-  const locksAt = useMemo(() => stampLocksAt(asMetroNight(metro.id, date, events), metro.timeZone), [metro, date, events]);
+  const locksAt = useMemo(() => stampLocksAt(asMetroDate(metro.id, date, events), metro.timeZone), [metro, date, events]);
   const feels = feelsLikeF(metro.id, date);
   const hottest = events.map((e) => e.weather?.tempF).filter((t): t is number => typeof t === 'number').sort((a, b) => b - a)[0];
 
@@ -127,7 +127,7 @@ export function NightScreen() {
 
   const back = () => {
     if (window.history.length > 1) navigate(-1);
-    else navigate('/nights');
+    else navigate('/calendar');
   };
 
   if (!day) return <div className="screen page" />;
@@ -135,15 +135,15 @@ export function NightScreen() {
   const readKind = rating ? (ahead ? 'Forecast' : 'Stamped') : null;
 
   return (
-    <div className="screen page night-page">
+    <div className="screen page date-page">
       <button type="button" className="back-link" onClick={back}>
         <ChevronDown /> Back
       </button>
 
-      <header className="night-head">
-        <span className="night-kicker">{weekdayLong(date)}</span>
-        <h1 className="night-date">{longLocalDate(date).replace(/^[A-Za-z]+, /, '')}</h1>
-        <span className="night-city">
+      <header className="date-head">
+        <span className="date-kicker">{weekdayLong(date)}</span>
+        <h1 className="date-title">{longLocalDate(date).replace(/^[A-Za-z]+, /, '')}</h1>
+        <span className="date-city">
           {metro.name}
           {feels !== undefined ? ` · ${feels}° feels like` : hottest !== undefined ? ` · ${hottest}°F` : ''}
         </span>
@@ -174,7 +174,7 @@ export function NightScreen() {
             <span className="read-why">
               <span className="read-lab">{ahead ? 'Forecast' : 'No read yet'}</span>
               <span className="read-txt">
-                {events.length === 0 ? `Nothing big on file in ${metro.name}.` : ahead ? 'The forecast arrives with the formula.' : 'This night has no rating yet.'}
+                {events.length === 0 ? `Nothing big on file in ${metro.name}.` : ahead ? 'The forecast arrives with the formula.' : 'This date has no rating yet.'}
               </span>
             </span>
           </>
@@ -182,23 +182,23 @@ export function NightScreen() {
       </section>
 
       {(mine.length > 0 || plans.length > 0) && (
-        <section className="you-block" aria-labelledby="your-night">
-          <h2 id="your-night" className="you-heading">
+        <section className="you-block" aria-labelledby="your-entry">
+          <h2 id="your-entry" className="you-heading">
             {ahead ? 'Attending' : 'Attended'}
           </h2>
           <div className="entry-card">
-            {mine.map((night) => {
-              const event = events.find((e) => e.id === night.eventId);
+            {mine.map((entry) => {
+              const event = events.find((e) => e.id === entry.eventId);
               return (
-                <div key={night.id} className="entry">
-                  <span className="entry-title">{night.title}</span>
+                <div key={entry.id} className="entry">
+                  <span className="entry-title">{entry.title}</span>
                   <span className="entry-facts">
-                    {[night.venue, event?.start ? clockTime(event.start) : null, event ? crowdLine(event) : null].filter(Boolean).join(' · ')}
+                    {[entry.venue, event?.start ? clockTime(event.start) : null, event ? crowdLine(event) : null].filter(Boolean).join(' · ')}
                   </span>
                   {event?.assessment && (
                     <span className="entry-facts">Friction · {frictionLabel(event.assessment.friction)}</span>
                   )}
-                  {night.note && <span className="entry-note">{night.note}</span>}
+                  {entry.note && <span className="entry-note">{entry.note}</span>}
                 </div>
               );
             })}
@@ -212,8 +212,8 @@ export function NightScreen() {
         </section>
       )}
 
-      <section className="you-block" aria-labelledby="that-night">
-        <h2 id="that-night" className="you-heading">
+      <section className="you-block" aria-labelledby="that-date">
+        <h2 id="that-date" className="you-heading">
           That {word} in {metro.name}
         </h2>
         {events.length === 0 ? (
@@ -272,16 +272,16 @@ export function NightScreen() {
       )}
 
       {friends.length > 0 && (
-        <section className="you-block" aria-labelledby="friends-night">
-          <h2 id="friends-night" className="you-heading">
+        <section className="you-block" aria-labelledby="friends-date">
+          <h2 id="friends-date" className="you-heading">
             Friends there
           </h2>
           <ul className="log-list">
-            {friends.map(({ friend, night }) => (
-              <li key={`${friend.id}-${night.id}`} className="log-row">
+            {friends.map(({ friend, entry }) => (
+              <li key={`${friend.id}-${entry.id}`} className="log-row">
                 <span className="log-main">
                   <span className="log-friend">{friend.displayName ?? friend.handle ?? 'Someone'}</span>
-                  <span className="log-title">{night.title}</span>
+                  <span className="log-title">{entry.title}</span>
                 </span>
               </li>
             ))}
