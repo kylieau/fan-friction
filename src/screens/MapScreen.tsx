@@ -618,7 +618,7 @@ function EventRow({
       {badges.length > 0 && (
         <span className="event-badges">
           {badges.map((badge) => (
-            <span key={badge.kind} className={`chip chip-${badge.kind}`}>
+            <span key={badge.kind} className={`chip chip-${badge.kind}${badge.level ? ` chip-f ${badge.level}` : ''}`}>
               {badge.text}
             </span>
           ))}

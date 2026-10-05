@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { ChevronDown } from '../components/Icons';
+import { ChevronDown, ShareIcon } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { formatScore, frictionLabel, scoreBand, scoreLabel } from '../config/scoreLabels';
+import { formatScore, frictionLabel, scoreBand, scoreLabel, showFriction } from '../config/scoreLabels';
 import {
   asMetroNight,
   feelsLikeF,
@@ -240,7 +240,7 @@ export function NightScreen() {
                     </button>
                   ) : yours ? (
                     <span className="chip chip-you">{ahead ? 'Attending' : 'Attended'}</span>
-                  ) : a ? (
+                  ) : a && showFriction(a.friction) ? (
                     <span className={`chip chip-f ${a.friction.toLowerCase()}`}>{a.friction}</span>
                   ) : null}
                 </li>
@@ -250,20 +250,26 @@ export function NightScreen() {
         )}
       </section>
 
-      {events.length > 0 &&
-        (target ? (
-          <button
-            type="button"
-            className={ahead ? (attending(target) ? 'mark-button on' : 'gold-button') : attended(target) ? 'mark-button on' : 'gold-button'}
-            onClick={() => mark(target)}
-          >
-            {ahead ? (attending(target) ? 'Attending' : 'Attend') : attended(target) ? 'Attended' : 'Attended'}
+      {events.length > 0 && (
+        <div className="action-row">
+          {target ? (
+            <button
+              type="button"
+              className={ahead ? (attending(target) ? 'mark-button on' : 'gold-button') : attended(target) ? 'mark-button on' : 'gold-button'}
+              onClick={() => mark(target)}
+            >
+              {ahead ? (attending(target) ? 'Attending' : 'Attend') : 'Attended'}
+            </button>
+          ) : (
+            <button type="button" className={choosing ? 'mark-button on' : 'gold-button'} onClick={() => setChoosing((c) => !c)}>
+              {choosing ? 'Done' : ahead ? 'Attend' : 'Attended'}
+            </button>
+          )}
+          <button type="button" className="round-button share-button" aria-label={`Share this ${word}`} onClick={share}>
+            <ShareIcon />
           </button>
-        ) : (
-          <button type="button" className={choosing ? 'mark-button on' : 'gold-button'} onClick={() => setChoosing((c) => !c)}>
-            {choosing ? 'Done' : ahead ? 'Attend' : 'Attended'}
-          </button>
-        ))}
+        </div>
+      )}
 
       {friends.length > 0 && (
         <section className="you-block" aria-labelledby="friends-night">
@@ -283,9 +289,11 @@ export function NightScreen() {
         </section>
       )}
 
-      <button type="button" className="text-link" onClick={share}>
-        {shareNote || `Share this ${word}`}
-      </button>
+      {shareNote && (
+        <p className="you-fine" role="status">
+          {shareNote}
+        </p>
+      )}
     </div>
   );
 }

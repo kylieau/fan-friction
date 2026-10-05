@@ -38,6 +38,17 @@ export function CompareIcon() {
   );
 }
 
+/** The share glyph everyone uses: a box with an arrow out the top. */
+export function ShareIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" {...base} aria-hidden>
+      <path d="M12 3v13" />
+      <path d="M7.5 7.5L12 3l4.5 4.5" />
+      <path d="M5 12v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7" />
+    </svg>
+  );
+}
+
 export function StarIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" {...base} aria-hidden>

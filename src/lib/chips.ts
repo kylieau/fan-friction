@@ -3,8 +3,10 @@ import type { CrowdEvent } from '../data';
 
 export interface EventChip {
   text: string;
-  /** Friction is Dodger blue. A mark is the green occasion or Sold Out pill. */
+  /** Friction takes the level's color (moderate, heavy, extreme). A mark is the occasion or Sold Out pill. */
   kind: 'friction' | 'mark';
+  /** The friction level, lowercase, for the chip's color class. */
+  level?: string;
 }
 
 /**
@@ -16,7 +18,7 @@ export interface EventChip {
 export function sheetBadges(event: CrowdEvent): EventChip[] {
   const badges: EventChip[] = [];
   const a = event.assessment;
-  if (a && showFriction(a.friction)) badges.push({ text: frictionLabel(a.friction), kind: 'friction' });
+  if (a && showFriction(a.friction)) badges.push({ text: frictionLabel(a.friction), kind: 'friction', level: a.friction.toLowerCase() });
   if (event.crowd.some((c) => c.soldOut)) badges.push({ text: 'Sold Out', kind: 'mark' });
   else if (a && a.occasion !== 'Routine') badges.push({ text: a.occasion, kind: 'mark' });
   return badges;

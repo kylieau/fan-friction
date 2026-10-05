@@ -1557,8 +1557,8 @@ button {
 }
 
 .chip-friction {
-  color: var(--dodger);
-  background: #e3effa;
+  color: var(--ink);
+  background: var(--paleBlue);
 }
 
 /* ---------- Event screen ---------- */
@@ -2977,4 +2977,23 @@ button {
 .night-page .text-link {
   border: none;
   background: none;
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-row .gold-button,
+.action-row .mark-button {
+  flex: 1;
+}
+
+.share-button {
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  border: none;
+  color: var(--ink);
 }
