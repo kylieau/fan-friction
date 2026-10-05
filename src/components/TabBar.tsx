@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import { HomeIcon, MapIcon, PersonIcon, StarIcon } from './Icons';
+import { HomeTabIcon, MapIcon, PersonIcon, StarIcon } from './Icons';
 
 const TABS = [
-  { to: '/', label: 'Home', Icon: HomeIcon },
+  { to: '/', label: 'Home', Icon: HomeTabIcon },
   { to: '/explore', label: 'Explore', Icon: MapIcon },
   // Favorites took Compare's place (Kylie, Oct 5). Compare's screen stays reachable at /compare.
   { to: '/favorites', label: 'Favorites', Icon: StarIcon },

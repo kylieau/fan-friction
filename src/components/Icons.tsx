@@ -126,11 +126,22 @@ export function SunIcon() {
 }
 
 /** A small house for the home city. The words "Home" sit on the mark around it. */
+/** The small house beside the home city in the switcher. Filled, so it reads at 14px. */
 export function HomeIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" {...base} aria-hidden>
-      <path d="M4 11.2 12 4l8 7.2" />
-      <path d="M7 10.2V20h10V10.2" />
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+      <path d="M12 3.2 2.8 11.4a1 1 0 0 0 .66 1.75H5V20a1 1 0 0 0 1 1h4.2v-5.4h3.6V21H18a1 1 0 0 0 1-1v-6.85h1.54a1 1 0 0 0 .66-1.75z" />
+    </svg>
+  );
+}
+
+/** The Home tab: same weight as the other tab icons, drawn as an outline house with a door. */
+export function HomeTabIcon() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" {...base} aria-hidden>
+      <path d="M3.5 11.5 12 4l8.5 7.5" />
+      <path d="M6 10v10h12V10" />
+      <path d="M10 20v-6h4v6" />
     </svg>
   );
 }

@@ -94,6 +94,7 @@ export function HomeScreen() {
     return [...top, ...rest];
   }, [day, today]);
   const points = useMemo(() => (day ? crowdPoints(day.events.filter(showsOnMap), today) : []), [day, today]);
+  const weekPoints = useMemo(() => crowdPoints(week.filter((e) => e.date > today && showsOnMap(e)), today), [week, today]);
 
   // Coming up: dates you're attending, then your favorites' next dates, anywhere.
   const comingUp = useMemo(() => {
@@ -144,6 +145,10 @@ export function HomeScreen() {
           <SearchIcon />
         </Link>
       </div>
+
+      {day && tonight.length === 0 && (
+        <p className="home-quiet">Nothing big in {home.name} {word === 'day' ? 'today' : 'tonight'}.</p>
+      )}
 
       {day && tonight.length > 0 && (
         <section className="you-block" aria-labelledby="tonight-heading">
@@ -201,6 +206,20 @@ export function HomeScreen() {
               Favorites ›
             </Link>
           </div>
+          {weekPoints.length > 0 && (
+            <Link to={mapPath({ metroId: home.id, date: today, today, when: 'week' })} className="mini-map" aria-label="Open the map for the next 7 days">
+              <BaseMap metro={home} interactive={false}>
+                <CrowdLayer points={weekPoints} selectedId={null} onSelect={() => {}} />
+                <MiniCamera points={weekPoints} />
+              </BaseMap>
+              <span className="mini-map-overlay">
+                <span className="mini-map-text">
+                  <span className="mini-map-title">Next 7 days · {weekPoints.length} {weekPoints.length === 1 ? 'event' : 'events'}</span>
+                  <span className="mini-map-sub">{home.name}</span>
+                </span>
+              </span>
+            </Link>
+          )}
           <ul className="log-list">
             {comingUp.map((row) => (
               <li key={row.key}>

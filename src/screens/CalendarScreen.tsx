@@ -130,7 +130,7 @@ export function CalendarScreen() {
                     <Link
                       key={date}
                       to={openNight(date)}
-                      className={`cal-day ${band}${selected ? ' selected' : ''}`}
+                      className={`cal-day ${band}${selected ? ' selected' : ''}${date > today ? ' forecast' : ''}`}
                       aria-label={dayLabel(day)}
                       aria-current={selected ? 'date' : undefined}
                     >

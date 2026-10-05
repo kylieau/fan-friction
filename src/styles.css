@@ -2215,9 +2215,11 @@ button {
 }
 
 .log-score-word {
+  margin-top: 4px;
   font-size: 8px;
   font-weight: 800;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .log-score.chill {
@@ -2854,7 +2856,7 @@ button {
 }
 
 .read-word {
-  margin-top: 4px;
+  margin-top: 6px;
   font-size: 9px;
   font-weight: 800;
   letter-spacing: 0.4px;
@@ -3155,4 +3157,18 @@ button {
   font-size: 15px;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
+}
+
+/* A date still ahead: the shade is a forecast, so it sits back a little. */
+.cal-day.forecast {
+  opacity: 0.62;
+}
+
+.cal-day.forecast.selected {
+  opacity: 1;
+}
+
+.home-quiet {
+  font-size: 14px;
+  color: var(--ink2);
 }
