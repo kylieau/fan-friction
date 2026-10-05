@@ -95,7 +95,11 @@ export function ProfileScreen() {
 
   const name = profile.displayName ?? profile.handle ?? 'Someone';
   const venues = new Set(nights.map((n) => n.venue).filter(Boolean)).size;
-  const cities = new Set(nights.map((n) => n.metroId).filter(Boolean)).size;
+  // The night with the highest friction read. Kylie wants this over a city count (Oct 5).
+  const heaviest = nights.reduce<number | null>((best, n) => {
+    const r = ratingForNight(n, ratings);
+    return r !== null && (best === null || r > best) ? r : best;
+  }, null);
 
   const toggleFollow = async () => {
     if (busy) return;
@@ -142,7 +146,10 @@ export function ProfileScreen() {
       <div className="stat-grid">
         <Stat n={nights.length} label="Nights" />
         <Stat n={venues} label="Venues" />
-        <Stat n={cities} label="Cities" />
+        <div className="stat-card">
+          <span className="stat-num">{heaviest === null ? '—' : heaviest}</span>
+          <span className="stat-label">{heaviest === null ? 'Heaviest night' : `Heaviest · ${scoreLabel(heaviest)}`}</span>
+        </div>
       </div>
 
       {mine ? (

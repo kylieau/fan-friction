@@ -22,7 +22,8 @@ An **account** is the login: an email and the data saved under it, so your log s
 - A display name and an optional avatar. No bio needed to start.
 - A page showing the nights that person has chosen to make visible, with their stamps.
 - A **"who can see my nights"** setting on the account: Only me (default) / People I approve / Anyone. One switch, changeable any time, the way Letterboxd lets a diary go private.
-- Following: you follow people; their nights appear on their page, not in a feed. No feed of strangers.
+- Following: you follow people; their nights appear on their page. **Kylie (Oct 5): she does want a feed of the nights of people she follows** (friends only, never strangers). Build it after profiles are live; where it lives (You or Compare) is open.
+- Profile stats: Nights, Venues, and the **heaviest night** (highest friction read). Not a city count.
 
 ## Not in v1 (room left)
 - Comments or likes on a night. Confirming an on-the-night fact with a tap is the only reaction allowed (direction doc).
