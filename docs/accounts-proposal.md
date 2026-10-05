@@ -1,9 +1,9 @@
 # Accounts: what one holds (proposal, Oct 5, 2026)
 
-_Draft for Kylie to react to. Nothing here is built. Supabase project: `fhfqhcbnzmmkhsselayb` (URL and public key in `.env.local`, not in the repo)._
+_Draft, revised Oct 5 with Kylie's answers. Nothing here is built. Supabase project: `fhfqhcbnzmmkhsselayb` (URL and public key in `.env.local`, not in the repo)._
 
 ## Purpose
-An account exists so your log survives a lost or wiped phone and follows you to another device. That's it for v1. It is not a profile and not a social presence.
+An **account** is the login: an email and the data saved under it, so your log survives a lost phone and follows you to another device. A **profile** is the public face: a display name and a page others can open and follow. Kylie (Oct 5) wants people to follow each other someday and would rather see public pages early so they can be corrected, so the data is shaped for profiles now and a simple profile page can be built in v1. The "no public profiles or feed" line came from the review doc's recommended v1 defaults, not from `direction.md`; she has overridden it. What stays firm: **no feed of strangers' nights**, and **no "Use my location."** The app never needs location.
 
 ## What an account holds
 
@@ -18,12 +18,16 @@ An account exists so your log survives a lost or wiped phone and follows you to 
 | **Photos** | Your own private photo on a night | Not built | Later (storage can start to cost 🚩) |
 | **Sharing** | A private link to your log, or approved friends | Not built | Later, off by default |
 
-## What an account does not hold
-- No public profile, username, avatar, bio or follower count.
-- No friend list or feed in v1.
-- No location history beyond the nights you log. "Use my location" stays a one-time tap and is never saved.
-- No contacts, no ad tracking.
-- Just an email address, used only to sign in.
+## Profile (public face, Kylie wants it early)
+- A display name and an optional avatar. No bio needed to start.
+- A page showing the nights that person has chosen to make visible, with their stamps.
+- A **"who can see my nights"** setting on the account: Only me (default) / People I approve / Anyone. One switch, changeable any time, the way Letterboxd lets a diary go private.
+- Following: you follow people; their nights appear on their page, not in a feed. No feed of strangers.
+
+## Not in v1 (room left)
+- Comments or likes on a night. Confirming an on-the-night fact with a tap is the only reaction allowed (direction doc).
+- Location. Never saved, never requested.
+- Contacts import, ad tracking.
 
 ## Rules
 - **Private by default.** Only you can read or change your rows. The database enforces this, not just the app.
@@ -32,10 +36,12 @@ An account exists so your log survives a lost or wiped phone and follows you to 
 - **Export stays.** "Export my nights" keeps working, with or without an account.
 - **Delete means delete.** Deleting the account removes all its rows.
 
-## Sign-in (lean)
-Email link: you type your email, tap the link it sends, and you're in. No password, free, no developer accounts. Supabase's built-in email sender has a small hourly limit, which is fine for you and a few testers; a real email service is a later 🚩. Google sign-in can come later (free, a little setup). Apple sign-in needs the $99/year Apple developer account 🚩, so it waits for the native app.
+## Sign-in (decided Oct 5)
+**Google sign-in plus email link.** Kylie has set up Google sign-in on another project and liked it, so it comes in v1 (free; needs a Google Cloud OAuth client and a paste into Supabase). Email link is the fallback for anyone without Google. Supabase's built-in email sender has a small hourly limit; she may have disabled it on her other project, so check Auth settings before relying on it; a real email service is a later 🚩. Apple sign-in needs the $99/year Apple developer account 🚩, so it waits for the native app.
 
-## Open questions
-1. **Your pre-filled nights.** Today they ship inside the app for everyone. With accounts, the natural home is *your* account. A new person would then see an empty log, with your nights shown only as examples (for instance in "Were you there?"). Lean: move them to your account; keep a few as examples.
-2. **Signed out on a second phone.** Lean: it shows the pre-filled examples and a "Sign in to see your nights" prompt.
-3. **Following:** leave a slot now and fill it when Following is built? Lean: yes.
+## Decided Oct 5
+- **Pre-filled nights move to Kylie's account.** New people start with an empty log. Keeping a few as examples is optional; not needed.
+- **A second phone, signed out,** shows an empty log and a "Sign in to see your nights" prompt.
+- **Following:** a slot now, filled when Following is built.
+- **Visibility:** private by default, with the door open (the switch above).
+- **Photos:** explore later; only if it stays free. Supabase free storage is about 1 GB.
