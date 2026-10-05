@@ -166,12 +166,18 @@ The archive does not show anything in the app. A night from before the first sav
 
 ## Data foundation (Oct 5, 2026)
 
-The data layer now keeps the two fields from section 2. A saved plan stores the forecast it showed, and that forecast is not recalculated. "I was there," after the lock, stores a stamp with the time it was last updated. The lock is the one in the table above: 24 hours after the last scheduled start that night. A stamp is marked reconstructed when no schedule snapshot covers the date. The stamp is still not on screen.
+The data layer can hold a forecast and a stamp. The forecast is not taken at Save. See the lock below. "I was there," after the lock, stores a stamp with the time it was last updated. The lock is the one in the table above: 24 hours after the last scheduled start that night. The stamp is still not on screen.
 
 A room under about 5,000 does not change the read for everyone else. It can still take the night's existing score when a bigger event that night already has one. No new crowd number is made up. The logging-threshold sentence (about 1,000 in `docs/direction.md` and `AGENTS.md`, versus anything can be logged in section 5) is still open. This note does not close it.
 
+## Forecast freeze (Oct 5, 2026)
+
+Kylie locked this after the data foundation. It replaces the save-time copy in section 2 ("Forecast when you planned") and in the data-foundation note above. The review text in section 2 is unchanged.
+
+Save stores the night and does not keep a forecast copy. Kylie parked the every-30-minute start-time capture until more is built. Until it returns, the stamp, after the 24-hour lock, lines up against the latest Los Angeles daily schedule saved before that event's start, and is labeled as such. A schedule saved at the start or after it is not used. If that file has no number, no number is added. This is Los Angeles only. Nothing on screen changed. The schedule job runs once a day, at 12:15am Pacific.
+
 ## Map card and Compare copy (Oct 5, 2026)
 
-The Map shows one card for the soonest saved upcoming night, in any city. Kylie decided this on Oct 5: the card does not follow the city switcher. The card says "Next saved night," then the same short name a map chip uses, then the date and the city, as in "Fri, Oct 9 · Boston." The whole card opens that night. The map stays on the city, zoom, and selection she had, and Back returns there. The event page looks the night up in its own city, so a saved night outside Los Angeles is not "Event not found." A forecast frozen at save stays on the plan and is not drawn on the card. Save and "I was there" stay on the event page. The Map list is unchanged.
+The Map shows one card for the soonest saved upcoming night, in any city. Kylie decided this on Oct 5: the card does not follow the city switcher. The card says "Next saved night," then the same short name a map chip uses, then the date and the city, as in "Fri, Oct 9 · Boston." The whole card opens that night. The map stays on the city, zoom, and selection she had, and Back returns there. The event page looks the night up in its own city, so a saved night outside Los Angeles is not "Event not found." Saving does not store a forecast, and the card does not draw one. Save and "I was there" stay on the event page. The Map list is unchanged.
 
 Compare keeps the Coming soon card. The heading now points at your nights side by side. The Coming soon chip stays. Nothing else on that tab was added or removed.

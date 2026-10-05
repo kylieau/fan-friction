@@ -7,18 +7,9 @@ import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
 import { KYLIE_LOG } from './seed/kylieLog';
 import { nightStore, readSavedLog } from './storage';
-import {
-  asMetroNight,
-  captureForecast,
-  createStamp,
-  frictionReadForEvent,
-  isStampLocked,
-  ratingFromNight,
-  retainForecast,
-  scheduleCoverage,
-} from './night';
-import { seedEventsOn, seedRatingFor } from './sources/seedSource';
-import type { CrowdEvent, LoggedNight, NightForecast, NightPlan, NightStamp, PersonalLog, YouOrder } from './types';
+import { asMetroNight, createStamp, forecastBeforeStart, isStampLocked, ratingFromNight } from './night';
+import { seedEventsOn } from './sources/seedSource';
+import type { CrowdEvent, LoggedNight, NightPlan, NightStamp, PersonalLog, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -227,30 +218,19 @@ function eventsThatNight(event: CrowdEvent): CrowdEvent[] {
 }
 
 /**
- * The read showing for this event right now, frozen.
- * Uses the hand scores and seeded events already in the app. No number is guessed.
- */
-function forecastNow(event: CrowdEvent, recordedAt: string): NightForecast | undefined {
-  const events = eventsThatNight(event);
-  const rating = seedRatingFor(event.metroId, event.date);
-  const read = frictionReadForEvent(event, events, rating);
-  if (!read) return undefined;
-  return captureForecast(read.read, recordedAt);
-}
-
-/**
  * The stamp, once 24 hours have passed since the last scheduled start that night.
- * A night with no saved schedule is marked reconstructed. Nothing is written before the lock.
+ * The numbers come from the latest daily snapshot saved before this event's start.
+ * That snapshot is labeled on the stamp. Nothing is written before the lock,
+ * and no number is filled in when that snapshot has none.
  */
 function stampNow(event: CrowdEvent, now: Date): NightStamp | undefined {
   const events = eventsThatNight(event);
   const night = asMetroNight(event.metroId, event.date, events);
   const zone = METROS[event.metroId]?.timeZone ?? 'America/Los_Angeles';
   if (!isStampLocked(night, zone, now)) return undefined;
-  const rating = seedRatingFor(event.metroId, event.date);
-  const read = frictionReadForEvent(event, events, rating);
-  if (!read) return undefined;
-  return createStamp(read.read, now.toISOString(), scheduleCoverage(event.metroId, event.date, now) === 'reconstructed');
+  const saved = forecastBeforeStart(event);
+  if (!saved) return undefined;
+  return createStamp(saved.read, now.toISOString(), false, saved);
 }
 
 /** Turn "I was there" on or off for a catalog event. */
@@ -273,9 +253,7 @@ export function toggleWasThere(event: CrowdEvent) {
     return;
   }
   const now = new Date();
-  const plan = snapshot.plans.find((row) => row.eventId === event.id);
   const night = nightFromEvent(event);
-  if (plan?.forecast) night.forecast = retainForecast(plan.forecast);
   const stamp = stampNow(event, now);
   if (stamp) night.stamp = stamp;
   commit({ ...snapshot, added: [...snapshot.added, night] });
@@ -291,7 +269,6 @@ export function togglePlan(event: CrowdEvent) {
     commit({ ...snapshot, plans: snapshot.plans.filter((plan) => plan.eventId !== event.id) });
     return;
   }
-  const forecast = forecastNow(event, new Date().toISOString());
   const plan: NightPlan = {
     id: `plan-${event.id}`,
     date: event.date,
@@ -299,7 +276,6 @@ export function togglePlan(event: CrowdEvent) {
     eventId: event.id,
     title: listTitle(event),
     venue: venueLabel(event),
-    ...(forecast ? { forecast } : {}),
   };
   commit({ ...snapshot, plans: [...snapshot.plans, plan] });
 }
@@ -321,7 +297,7 @@ function todayInZone(timeZone: string, now: Date): string {
 /**
  * The one saved night the Map card shows: the soonest plan still ahead, in any
  * city. "Ahead" uses that night's own time zone, not the city on the map.
- * A plan keeps the forecast it stored. This does not recalculate it.
+ * A plan is the saved night only. It does not store a forecast.
  * Same-day plans follow title order, because a plan does not store a start time.
  */
 export function nextSavedPlan(log: PersonalLog = snapshot, now = new Date()): NightPlan | null {

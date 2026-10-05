@@ -216,7 +216,10 @@ export interface FrictionRead {
   method: FrictionReadMethod;
 }
 
-/** What the app showed when the night was saved. Never recalculated. */
+/**
+ * A friction read frozen at a moment in time.
+ * The schedule archive stores these. Save does not.
+ */
 export interface NightForecast extends FrictionRead {
   kind: 'forecast';
   /** ISO time the forecast was frozen. */
@@ -224,15 +227,25 @@ export interface NightForecast extends FrictionRead {
 }
 
 /**
+ * Where the stamp's forecast came from.
+ * `daily-before-start` is the latest daily schedule saved before the event's start.
+ */
+export type ForecastBasisKind = 'daily-before-start';
+
+/**
  * The post-night record. Replaced when the formula improves; `lastUpdated`
  * moves with that replacement. `reconstructed` means no saved schedule covered
- * the date, so the listing was rebuilt afterwards.
+ * the date, so the listing was rebuilt afterwards. `forecastBasis` says the
+ * stamp used the latest daily schedule saved before the event's start.
  */
 export interface NightStamp extends FrictionRead {
   kind: 'stamp';
   /** ISO time of the latest pass. */
   lastUpdated: string;
   reconstructed?: boolean;
+  forecastBasis?: ForecastBasisKind;
+  /** ISO time that forecast record was captured. */
+  forecastCapturedAt?: string;
 }
 
 /**
@@ -309,8 +322,9 @@ export interface LoggedNight {
   metroId?: string;
   kind: EventKind;
   /**
-   * The read shown when this night was saved as a plan. Absent when she did
-   * not plan it here. Never recalculated.
+   * Not written. A forecast freezes at the scheduled start, in the schedule
+   * archive, not when this night is saved. An older phone copy may still have
+   * one; it is dropped on load.
    */
   forecast?: NightForecast;
   /**
@@ -328,7 +342,10 @@ export interface NightPlan {
   eventId?: string;
   title: string;
   venue?: string;
-  /** The read shown when she saved the plan. Never recalculated. */
+  /**
+   * Not written. Save stores the night only. An older phone copy may still
+   * have one; it is dropped on load.
+   */
   forecast?: NightForecast;
 }
 

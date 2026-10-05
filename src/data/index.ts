@@ -153,7 +153,6 @@ export {
   FRICTION_ATTENDEES,
   STAMP_LOCK_HOURS,
   asMetroNight,
-  captureForecast,
   coverageForNight,
   createStamp,
   eventFeedsFriction,
@@ -162,10 +161,10 @@ export {
   knownCrowdCount,
   listedCapacity,
   refreshStamp,
-  retainForecast,
   scheduleCoverage,
   sizeTier,
   stampLocksAt,
+  forecastBeforeStart,
 } from './night';
 export type { ScheduleCoverage, SizeTier } from './night';
 export {
