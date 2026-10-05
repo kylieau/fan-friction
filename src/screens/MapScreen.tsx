@@ -1,5 +1,5 @@
 import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { areaMetros, DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import {
   cityWeather,
@@ -27,7 +27,7 @@ import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { DateScore } from '../components/DateScore';
 import { WhenControl } from '../components/WhenControl';
-import { ArrowRight, ChevronDown, HomeIcon } from '../components/Icons';
+import { ArrowRight, ChevronDown, HomeIcon, SearchIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
@@ -37,7 +37,8 @@ import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { getHomeId, setHomeId } from '../lib/homeCity';
 import { mapPath, datePath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
-import { ExploreSwitch } from './ExploreScreen';
+import { CalendarPanel } from './CalendarScreen';
+import { DayStrip } from '../components/DayStrip';
 
 type Mode = 'crowds' | 'traffic';
 
@@ -207,6 +208,10 @@ export function MapScreen() {
   const areaRef = useRef<HTMLDivElement>(null);
   const whenRef = useRef<HTMLDivElement>(null);
   const [menu, setMenu] = useState<'area' | 'when' | null>(null);
+  // The month sheet: the grid, search and Famous nights over the map (Explore option A).
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const [monthOpen, setMonthOpen] = useState(() => searchParams.get('pick') === '1');
   useEffect(() => {
     if (!menu) return;
     const onPointer = (event: PointerEvent) => {
@@ -255,7 +260,9 @@ export function MapScreen() {
           <div ref={areaRef}>
             <AreaSwitcher metro={metro} open={menu === 'area'} onOpenChange={(next) => setMenu(next ? 'area' : null)} />
           </div>
-          <ExploreSwitch view="map" />
+          <button type="button" className="round-button" aria-label="Find a date" onClick={() => setMonthOpen(true)}>
+            <SearchIcon />
+          </button>
         </div>
         <div className="map-header-score">
           <div className="map-header-dateblock">
@@ -273,6 +280,7 @@ export function MapScreen() {
             showScore={showScore}
           />
         </div>
+        <DayStrip metro={metro} today={today} date={date} span={span} />
         <div className="map-chrome">
           <div className="map-chrome-left">
             <div ref={whenRef}>
@@ -284,6 +292,7 @@ export function MapScreen() {
                 span={span}
                 open={menu === 'when'}
                 onOpenChange={(next) => setMenu(next ? 'when' : null)}
+                onPickDate={() => setMonthOpen(true)}
               />
             </div>
             {showFeels && cityRow && (
@@ -401,6 +410,28 @@ export function MapScreen() {
           )}
         </div>
       </section>
+
+      {monthOpen && (
+        <div className="month-sheet" role="dialog" aria-modal="true" aria-label="Find a date">
+          <div className="month-sheet-top">
+            <span className="month-sheet-handle" aria-hidden />
+            <button type="button" className="link-button month-sheet-done" onClick={() => setMonthOpen(false)}>
+              Done
+            </button>
+          </div>
+          <div className="month-sheet-body">
+            <CalendarPanel
+              metro={metro}
+              today={today}
+              focus={span === 'day' ? date : null}
+              onPick={(picked) => {
+                setMonthOpen(false);
+                navigate(mapPath({ metroId: metro.id, date: picked, today, when: 'day' }));
+              }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

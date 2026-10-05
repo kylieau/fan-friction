@@ -136,6 +136,8 @@ button {
   width: 44px;
   height: 44px;
   flex-shrink: 0;
+  border: none;
+  padding: 0;
   border-radius: 22px;
   background: var(--card);
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.12);
@@ -3171,4 +3173,109 @@ button {
 .home-quiet {
   font-size: 14px;
   color: var(--ink2);
+}
+
+/* ---------- Explore: the week strip and the month sheet ---------- */
+.day-strip {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.day-cell {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 5px 0 4px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  color: var(--ink2);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.day-cell.on {
+  background: var(--card);
+  box-shadow: inset 0 0 0 2px var(--dodger);
+  color: var(--dodger);
+}
+
+.day-cell.forecast .log-score {
+  opacity: 0.62;
+}
+
+.day-cell .log-score {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+}
+
+.day-cell .log-score-num {
+  font-size: 13px;
+}
+
+.day-cell .log-score-word {
+  font-size: 7px;
+  margin-top: 3px;
+}
+
+.day-name {
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.day-num {
+  font-variant-numeric: tabular-nums;
+}
+
+.month-sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: calc(96px + env(safe-area-inset-top, 0px));
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -8px 28px rgba(15, 27, 45, 0.18);
+}
+
+.month-sheet-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px 0;
+}
+
+.month-sheet-handle {
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--barOff);
+}
+
+.month-sheet-done {
+  position: absolute;
+  right: 16px;
+  top: 2px;
+  color: var(--dodger);
+}
+
+.month-sheet-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 16px 24px;
+}
+
+.calendar-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }

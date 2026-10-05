@@ -1,8 +1,8 @@
 import { useId } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import type { Metro } from '../config/metros';
 import { ChevronDown } from './Icons';
-import { mapPath, calendarPath, whenLabel, type WhenSpan } from '../lib/view';
+import { mapPath, whenLabel, type WhenSpan } from '../lib/view';
 
 interface Props {
   metro: Metro;
@@ -13,6 +13,8 @@ interface Props {
   span: WhenSpan;
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  /** Opens the month sheet over the map. */
+  onPickDate: () => void;
 }
 
 /**
@@ -20,7 +22,7 @@ interface Props {
  * or Pick a date. Each label is only those words: "Today", "Next 7 days",
  * or the picked date.
  */
-export function WhenControl({ metro, date, today, isToday, span, open, onOpenChange }: Props) {
+export function WhenControl({ metro, date, today, isToday, span, open, onOpenChange, onPickDate }: Props) {
   const navigate = useNavigate();
   const menuId = useId();
 
@@ -56,14 +58,17 @@ export function WhenControl({ metro, date, today, isToday, span, open, onOpenCha
           <button type="button" role="menuitemradio" aria-checked={span === 'week'} onClick={() => go(base, 'week')}>
             Next 7 days
           </button>
-          <Link
+          <button
+            type="button"
             role="menuitem"
             aria-current={pickedDate ? 'date' : undefined}
-            to={calendarPath({ metroId: metro.id, date })}
-            onClick={() => onOpenChange(false)}
+            onClick={() => {
+              onOpenChange(false);
+              onPickDate();
+            }}
           >
             Pick a date
-          </Link>
+          </button>
         </div>
       )}
     </div>

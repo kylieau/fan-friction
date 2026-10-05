@@ -1,18 +1,16 @@
 import { useSearchParams } from 'react-router-dom';
-import { getExploreView, setExploreView, type ExploreView } from '../lib/view';
+import { setExploreView, type ExploreView } from '../lib/view';
 import { MapScreen } from './MapScreen';
 import { CalendarScreen } from './CalendarScreen';
 
 /**
- * Explore: one city, two views of its dates. The Map (pins, the read, the sheet)
- * or the Calendar (the shaded month, search, famous nights). The switch
- * remembers the last choice on this device; a `view` in the address overrides it.
+ * Explore: one city, one page (Kylie, Oct 5: option A). The map with a week strip
+ * above it; the month grid, search and Famous nights open as a sheet over the map.
+ * The old stand-alone calendar page stays reachable at ?view=calendar, unlinked.
  */
 export function ExploreScreen() {
   const [params] = useSearchParams();
-  const requested = params.get('view');
-  const view: ExploreView = requested === 'calendar' || requested === 'map' ? requested : getExploreView();
-  return view === 'calendar' ? <CalendarScreen /> : <MapScreen />;
+  return params.get('view') === 'calendar' ? <CalendarScreen /> : <MapScreen />;
 }
 
 /** The Map / Calendar segmented control. Both screens put it in their header. */

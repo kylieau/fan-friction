@@ -34,7 +34,7 @@ import { crowdKind, crowdPoints, showsOnMap } from '../map/crowdPoints';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { calendarPath, datePath, mapPath } from '../lib/view';
+import { datePath, mapPath } from '../lib/view';
 import { dayWord } from './DateScreen';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
@@ -141,7 +141,7 @@ export function HomeScreen() {
     <div className="screen page home-page">
       <div className="home-top">
         <h1 className="page-title">{home.name}</h1>
-        <Link to={calendarPath({ metroId: home.id, date: today })} className="round-button" aria-label="Search">
+        <Link to="/explore?pick=1" className="round-button" aria-label="Find a date">
           <SearchIcon />
         </Link>
       </div>

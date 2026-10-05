@@ -13,8 +13,8 @@ import {
 } from '../data';
 import { addDays, clampMonth, EARLIEST_MONTH, isValidDate, longLocalDate, monthCells, monthTitle, shiftMonth, yearMonth } from '../lib/dates';
 import { datePath, useView } from '../lib/view';
+import type { Metro } from '../config/metros';
 import { AreaSwitcher } from './MapScreen';
-import { ExploreSwitch } from './ExploreScreen';
 
 /** Badge shade by rating band, darkest for the hardest dates (as in the mockup). */
 function dayLabel(day: CalendarDay) {
@@ -24,17 +24,30 @@ function dayLabel(day: CalendarDay) {
   return `${when}, Quiet`;
 }
 
+/** The old stand-alone calendar page. Explore now opens the same panel as a sheet over the map. */
 export function CalendarScreen() {
   const { metro, today } = useView();
   const [params] = useSearchParams();
   const focusRaw = params.get('date');
   const focus = focusRaw && isValidDate(focusRaw) ? focusRaw : null;
+  const [areaOpen, setAreaOpen] = useState(false);
+  return (
+    <div className="screen page">
+      <div className="explore-top">
+        <AreaSwitcher metro={metro} open={areaOpen} onOpenChange={setAreaOpen} />
+      </div>
+      <CalendarPanel metro={metro} today={today} focus={focus} />
+    </div>
+  );
+}
+
+/** Search, the shaded month, On this date and Famous nights. Used by the page above and by Explore's month sheet. */
+export function CalendarPanel({ metro, today, focus, onPick }: { metro: Metro; today: string; focus: string | null; onPick?: (date: string) => void }) {
   const [month, setMonth] = useState(() => clampMonth(yearMonth(focus ?? today), today));
   const [query, setQuery] = useState('');
   const [famous, setFamous] = useState<DateRating[] | null>(null);
   const [days, setDays] = useState<CalendarDay[] | null>(null);
   const [hits, setHits] = useState<DateSearchHit[] | null>(null);
-  const [areaOpen, setAreaOpen] = useState(false);
 
   useEffect(() => {
     let current = true;
@@ -76,11 +89,7 @@ export function CalendarScreen() {
   const openNight = (date: string) => datePath(date, metro.id);
 
   return (
-    <div className="screen page">
-      <div className="explore-top">
-        <AreaSwitcher metro={metro} open={areaOpen} onOpenChange={setAreaOpen} />
-        <ExploreSwitch view="calendar" />
-      </div>
+    <div className="calendar-panel">
       <div className="search-box">
         <label className="search-field">
           <SearchIcon />
@@ -133,6 +142,11 @@ export function CalendarScreen() {
                       className={`cal-day ${band}${selected ? ' selected' : ''}${date > today ? ' forecast' : ''}`}
                       aria-label={dayLabel(day)}
                       aria-current={selected ? 'date' : undefined}
+                      onClick={(event) => {
+                        if (!onPick) return;
+                        event.preventDefault();
+                        onPick(date);
+                      }}
                     >
                       <span className="cal-num">{Number(date.slice(8))}</span>
                       {rating !== null && (
