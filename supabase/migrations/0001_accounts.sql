@@ -1,5 +1,5 @@
 -- Fan/Friction accounts: first setup. Paste into Supabase's SQL Editor and Run.
--- Safe to run once. Running it twice reports "already exists" errors and changes nothing.
+-- Safe to run more than once: anything that already exists is left alone.
 --
 -- What it makes:
 --   profiles     one row per signed-in person: display name, avatar, visibility switch, home city
@@ -15,9 +15,11 @@
 -- Plans, notes and settings are never visible to anyone else.
 
 -- ---------- profiles ----------
-create type public.visibility as enum ('only_me', 'approved', 'anyone');
+do $$ begin
+  create type public.visibility as enum ('only_me', 'approved', 'anyone');
+exception when duplicate_object then null; end $$;
 
-create table public.profiles (
+create table if not exists public.profiles (
   id uuid primary key references auth.users (id) on delete cascade,
   display_name text,
   avatar_url text,
@@ -44,9 +46,20 @@ begin
 end;
 $$;
 
+drop trigger if exists on_auth_user_created on auth.users;
 create trigger on_auth_user_created
   after insert on auth.users
   for each row execute function public.handle_new_user();
+
+-- ---------- follows (slot for later) ----------
+create table if not exists public.follows (
+  follower_id uuid not null references auth.users (id) on delete cascade,
+  followee_id uuid not null references auth.users (id) on delete cascade,
+  status text not null default 'pending' check (status in ('pending', 'approved')),
+  created_at timestamptz not null default now(),
+  primary key (follower_id, followee_id),
+  check (follower_id <> followee_id)
+);
 
 -- ---------- helpers ----------
 create or replace function public.set_updated_at()
@@ -57,6 +70,7 @@ begin
 end;
 $$;
 
+drop trigger if exists profiles_updated_at on public.profiles;
 create trigger profiles_updated_at before update on public.profiles
   for each row execute function public.set_updated_at();
 
@@ -89,7 +103,7 @@ as $$
 $$;
 
 -- ---------- nights (the log) ----------
-create table public.nights (
+create table if not exists public.nights (
   id text not null,
   user_id uuid not null references auth.users (id) on delete cascade,
   when_sort text not null,          -- YYYY-MM-DD, or the sortable stand-in for a rough date
@@ -103,13 +117,14 @@ create table public.nights (
   updated_at timestamptz not null default now(),
   primary key (user_id, id)
 );
-create index nights_user_when on public.nights (user_id, when_sort desc);
+create index if not exists nights_user_when on public.nights (user_id, when_sort desc);
 
+drop trigger if exists nights_updated_at on public.nights;
 create trigger nights_updated_at before update on public.nights
   for each row execute function public.set_updated_at();
 
 -- ---------- private notes ----------
-create table public.night_notes (
+create table if not exists public.night_notes (
   user_id uuid not null references auth.users (id) on delete cascade,
   night_id text not null,
   note text not null,
@@ -119,7 +134,7 @@ create table public.night_notes (
 );
 
 -- ---------- plans (saved upcoming nights) ----------
-create table public.plans (
+create table if not exists public.plans (
   id text not null,
   user_id uuid not null references auth.users (id) on delete cascade,
   date text not null,
@@ -133,7 +148,7 @@ create table public.plans (
 );
 
 -- ---------- settings ----------
-create table public.settings (
+create table if not exists public.settings (
   user_id uuid primary key references auth.users (id) on delete cascade,
   you_order text not null default 'plans-first',
   hidden_seed_ids text[] not null default '{}',
@@ -141,18 +156,9 @@ create table public.settings (
   updated_at timestamptz not null default now()
 );
 
+drop trigger if exists settings_updated_at on public.settings;
 create trigger settings_updated_at before update on public.settings
   for each row execute function public.set_updated_at();
-
--- ---------- follows (slot for later) ----------
-create table public.follows (
-  follower_id uuid not null references auth.users (id) on delete cascade,
-  followee_id uuid not null references auth.users (id) on delete cascade,
-  status text not null default 'pending' check (status in ('pending', 'approved')),
-  created_at timestamptz not null default now(),
-  primary key (follower_id, followee_id),
-  check (follower_id <> followee_id)
-);
 
 -- ---------- row level security ----------
 alter table public.profiles    enable row level security;
@@ -163,36 +169,49 @@ alter table public.settings    enable row level security;
 alter table public.follows     enable row level security;
 
 -- profiles: readable when the owner allows it; only the owner edits
+drop policy if exists "profiles: view own or shared" on public.profiles;
 create policy "profiles: view own or shared" on public.profiles
   for select using (public.can_view(id));
+drop policy if exists "profiles: owner updates" on public.profiles;
 create policy "profiles: owner updates" on public.profiles
   for update using (auth.uid() = id) with check (auth.uid() = id);
 
 -- nights: readable when the owner allows it; only the owner writes
+drop policy if exists "nights: view own or shared" on public.nights;
 create policy "nights: view own or shared" on public.nights
   for select using (public.can_view(user_id));
+drop policy if exists "nights: owner inserts" on public.nights;
 create policy "nights: owner inserts" on public.nights
   for insert with check (auth.uid() = user_id);
+drop policy if exists "nights: owner updates" on public.nights;
 create policy "nights: owner updates" on public.nights
   for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
+drop policy if exists "nights: owner deletes" on public.nights;
 create policy "nights: owner deletes" on public.nights
   for delete using (auth.uid() = user_id);
 
 -- notes, plans, settings: owner only, always
+drop policy if exists "night_notes: owner only" on public.night_notes;
 create policy "night_notes: owner only" on public.night_notes
   for all using (auth.uid() = user_id) with check (auth.uid() = user_id);
+drop policy if exists "plans: owner only" on public.plans;
 create policy "plans: owner only" on public.plans
   for all using (auth.uid() = user_id) with check (auth.uid() = user_id);
+drop policy if exists "settings: owner only" on public.settings;
 create policy "settings: owner only" on public.settings
   for all using (auth.uid() = user_id) with check (auth.uid() = user_id);
 
 -- follows: either side can see the row; the follower asks; the followee approves or removes
+drop policy if exists "follows: both sides view" on public.follows;
 create policy "follows: both sides view" on public.follows
   for select using (auth.uid() = follower_id or auth.uid() = followee_id);
+drop policy if exists "follows: follower asks" on public.follows;
 create policy "follows: follower asks" on public.follows
   for insert with check (auth.uid() = follower_id);
+drop policy if exists "follows: followee approves" on public.follows;
 create policy "follows: followee approves" on public.follows
   for update using (auth.uid() = followee_id) with check (auth.uid() = followee_id);
+drop policy if exists "follows: either side removes" on public.follows;
 create policy "follows: either side removes" on public.follows
   for delete using (auth.uid() = follower_id or auth.uid() = followee_id);
 
