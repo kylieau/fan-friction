@@ -41,6 +41,11 @@ Mean error against the hand ratings: about 1.6 for v3's Crowd fight; about 1.1 f
 | 12 | **Missing inputs:** default starts by type, capacity = listed max, weather absent → Conditions 1 with "weather not in yet"; a confidence label on each date: Firm / Likely / Early. | Adopt. Ends the dash. |
 | 13 | **Calibration plan:** collect announced attendance (MLB, NBA, NHL, MLS, college; NFL), expected = median of the same team's same-season home games in the same bucket; hold out 20% plus one season. | Adopt as the next data job after the formula is in. |
 
+## Kylie's rulings (Oct 5)
+- **Hand ratings are not the target.** They stay in the data for comparison only. The formula is tuned to be accurate (attendance data, held-out dates), not to her feel. Her role: naming the considerations that belong in it.
+- Open-Meteo's non-commercial limit is logged in `build-brief.md` under Cost milestones.
+- Chargers Major vs. Notable, Dodgers–Braves Routine vs. Notable, and Conditions: arguments requested before ruling. **Build is on hold until she rules.**
+
 ## Pushbacks for Kylie to rule on
 1. **Hand ratings.** The review says night 12 (9/3/22, 100°F day, four big events) reads a 9, not 7; night 11 (9/17/17) a 6, not 7; and night 1's USC "Extreme" looks result-shaped. If the hand ratings move, the fit improves; if they stand, they're the target.
 2. **Chargers' first LA home game:** Major, not Notable, under the points rule.
