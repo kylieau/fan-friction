@@ -5,7 +5,7 @@ Overwritten each session. Deferred work, open questions and the full plan live i
 _Last synced: Oct 5, 2026 (Cursor session, home city)._
 
 ## Current state
-Fan/Friction is a personal log of live events you attended, with a friction read stamped on each night. The schedule archive (PR #8), the night record (PR #9), and the global next-saved-night card (PR #10) are on `main`. This session adds a home city. The first open asks "Where's home?" and lists only cities with event data (Los Angeles today). The map opens there. The city switcher carries a Home mark and "Set as home." The next-saved-night card stays global, still names its city, and stays hidden when nothing is saved. Chips, glow, and the sheet are unchanged. Traffic, Night story, the rating formula, Ticketmaster, and Supabase were not started.
+Fan/Friction is a personal log of live events you attended, with a friction read stamped on each night. The schedule archive (PR #8), the night record (PR #9), and the global next-saved-night card (PR #10) are on `main`. This session adds a home city. The first open asks "Where's home?" and lists only cities with event data (Los Angeles today). The map opens there. The city switcher carries a house icon for home. "Set as home" shows only on cities that have events. The next-saved-night card stays global, still names its city, and stays hidden when nothing is saved. Chips, glow, and the sheet are unchanged. Traffic, Night story, the rating formula, Ticketmaster, and Supabase were not started.
 
 - **Repo:** PRs #1–#10 are merged. This slice is on a branch off `main`. The live site is https://fan-friction.vercel.app (Vercel deploys from `main`).
 - **Home:** One city, on this phone only. The picker does not guess. "Use my location" is inside the picker and runs only when tapped. Looking at another city does not change home. The map does not follow a saved night. 🚩 Another phone needs accounts, which are not started.
@@ -13,7 +13,7 @@ Fan/Friction is a personal log of live events you attended, with a friction read
 
 ## Changes made (this session)
 - A first-run picker, "Where's home?", then the cities that have event data. Optional "Use my location" in that picker only.
-- Home mark and "Set as home" in the city switcher. Not on You.
+- A house icon for the home city, with the accessible name Home. "Set as home" only on cities that have events. Not on You.
 - The map opens on home. Browsing another city leaves home alone.
 - Empty You copy, when the log really is empty: "No nights yet. Find one on the map."
 - Docs: `BACKLOG.md`, this file, `docs/product-review-decisions.md`, and the "where this stands" note in `AGENTS.md`.
@@ -23,7 +23,7 @@ Fan/Friction is a personal log of live events you attended, with a friction read
 - **Direction (Oct 4):** the log leads; friction is the stamp on a night. Nothing built is deleted. No points, leaderboards, collectible badges, open posting, public photo walls, navigation, or standalone "is tonight bad?" feed. v1 uses public data only.
 - **Her six decisions (Oct 4):** open on the Map with a card for the next saved night; forecast until 24 hours after start, then a stamp; keep Compare; Famous nights becomes "Were you there?" only after a hand check; 1,000+ is pre-listed, 5,000+ feeds friction; saved logs in accounts answer an empty log, private by default. The logging-threshold sentence (direction vs. review) is still unresolved.
 - **Next saved night (Oct 5):** the card is her next saved night in any city, not the city on the map. The card says "Next saved night," then the chip name, then the date and city. It is hidden when nothing is saved. Tapping it opens that night in its own city and leaves the map where it is. Back returns to the same city, zoom, and selection.
-- **Home (Oct 5):** one city on this phone. First open asks "Where's home?" and lists only cities with event data. "Use my location" is optional and only in that picker. The switcher shows Home and "Set as home." The map opens on home and does not follow a saved night. 🚩 Sync waits for accounts.
+- **Home (Oct 5):** one city on this phone. First open asks "Where's home?" and lists only cities with event data. "Use my location" is optional and only in that picker. The switcher shows a house icon. "Set as home" is only on cities that have events. More set-home behavior waits for her spec with accounts. Accounts should also hold favorite teams and artists; she will spec that. The map opens on home and does not follow a saved night. 🚩 Sync waits for accounts.
 - **Still in force from before:** her explicit words beat docs and other models; "Fan/Friction" with the slash; free until forced (flag costs with 🚩); swappable pieces behind small files; screens read only through `src/data/index.ts`; every crowd figure has a kind label; only pre-event facts affect a rating; friction shows Moderate and up; one gold button per screen; Traffic is an estimate only, no red.
 - **Map UI:** chips, glow, sheet list, legend, and the gold "See this event" button stay. The card is extra, and only when a night is saved.
 - Rating formula is not in code. "Nearby" means the same city and the same date, using seeded events. A distance, and adding smaller rooms together, wait for the formula. Traffic, Night story, and the formula stay paused until she asks.

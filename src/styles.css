@@ -428,10 +428,15 @@ button {
 }
 
 .home-mark {
+  display: inline-flex;
   flex-shrink: 0;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.02em;
+  color: var(--dodger);
+}
+
+.home-mark svg,
+.map-header .area-chip .home-mark svg {
+  width: 14px;
+  height: 14px;
   color: var(--dodger);
 }
 

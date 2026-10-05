@@ -182,7 +182,7 @@ Kylie locked this after the global next-saved-night card. Home is one city, kept
 
 The first time the app opens, a picker asks "Where's home?" The line under the title is "Your map opens here. Change it anytime." Then the city list. The list is only cities that have event data. Today that is Los Angeles. The app does not guess. "Use my location" is a button inside that picker, and it runs only when tapped. If that spot is not near a listed city, home stays unset and they pick from the list.
 
-After that, home lives in the city switcher. The home city has a small Home mark. The other cities say "Set as home." Nothing about home is on the You tab. Looking at another city does not change home. The Map tab opens on home. The map does not move itself to a saved night.
+After that, home lives in the city switcher. The home city has a small house icon. The accessible name is Home. "Set as home" shows only on a city that has events. Nothing about home is on the You tab. Looking at another city does not change home. The Map tab opens on home. The map does not move itself to a saved night.
 
 The next-saved-night card stays the one from the section above: any city, the city is named, and the card is absent when nothing is saved. Home does not change which night it shows.
 

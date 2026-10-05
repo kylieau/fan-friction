@@ -4,6 +4,7 @@ import { areaMetros, DEFAULT_METRO, METROS, type Metro } from '../config/metros'
 import {
   feelsLikeF,
   getCityDate,
+  metrosWithEvents,
   getEventsBetween,
   getPersonalLog,
   getRatedDates,
@@ -24,7 +25,7 @@ import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { NightScore } from '../components/NightScore';
 import { WhenControl } from '../components/WhenControl';
-import { ArrowRight, ChevronDown, SearchIcon, SunIcon } from '../components/Icons';
+import { ArrowRight, ChevronDown, HomeIcon, SearchIcon, SunIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
@@ -418,6 +419,7 @@ function AreaSwitcher({
   const [params, setParams] = useSearchParams();
   const menuId = useId();
   const metros = areaMetros();
+  const withEvents = new Set(metrosWithEvents().map((city) => city.id));
   const homeId = openedMetroId();
   const viewingHome = metro.id === getHomeId();
   const pick = (id: string) => {
@@ -450,11 +452,11 @@ function AreaSwitcher({
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-controls={menuId}
-        aria-label={viewingHome ? `Area, ${metro.name}, home` : 'Area'}
+        aria-label={viewingHome ? `Area, ${metro.name}, Home` : 'Area'}
         onClick={() => onOpenChange(!open)}
       >
         {metro.name}
-        {viewingHome && <span className="home-mark">Home</span>}
+        {viewingHome && <HomeMark />}
         <ChevronDown />
       </button>
       {open && (
@@ -467,13 +469,12 @@ function AreaSwitcher({
                   type="button"
                   role="option"
                   aria-selected={item.id === metro.id}
-                  aria-label={isHome ? `${item.name}, home` : item.name}
                   onClick={() => pick(item.id)}
                 >
                   <span>{item.name}</span>
-                  {isHome && <span className="home-mark">Home</span>}
+                  {isHome && <HomeMark />}
                 </button>
-                {!isHome && (
+                {!isHome && withEvents.has(item.id) && (
                   <button type="button" className="set-home" onClick={() => makeHome(item.id)}>
                     Set as home
                   </button>
@@ -484,6 +485,15 @@ function AreaSwitcher({
         </div>
       )}
     </div>
+  );
+}
+
+/** The house beside the home city. The name for screen readers is Home. */
+function HomeMark() {
+  return (
+    <span className="home-mark" role="img" aria-label="Home">
+      <HomeIcon />
+    </span>
   );
 }
 
