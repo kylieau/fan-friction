@@ -11,7 +11,7 @@ import {
   type NightSearchHit,
 } from '../data';
 import { addDays, clampMonth, EARLIEST_MONTH, isValidDate, longLocalDate, monthCells, monthTitle, shiftMonth, yearMonth } from '../lib/dates';
-import { mapPath, useView } from '../lib/view';
+import { nightPath, useView } from '../lib/view';
 
 /** Badge shade by rating band, darkest for the hardest dates (as in the mockup). */
 function badgeClass(rating: number) {
@@ -76,7 +76,7 @@ export function NightsScreen() {
   const atStart = month <= EARLIEST_MONTH;
   const atEnd = month >= latestMonth;
 
-  const openNight = (date: string) => mapPath({ metroId: metro.id, date, today, when: 'day' });
+  const openNight = (date: string) => nightPath(date, metro.id);
 
   return (
     <div className="screen page">

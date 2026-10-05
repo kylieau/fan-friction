@@ -30,7 +30,7 @@ import { FactList } from '../components/FactList';
 import { GearIcon } from '../components/Icons';
 import { loggedDateLabel, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
-import { eventPath } from '../lib/view';
+import { nightPath } from '../lib/view';
 
 const TOP = 8;
 
@@ -267,7 +267,7 @@ function FriendsTab({
           if (night.eventId && !example) {
             return (
               <li key={key}>
-                <Link to={eventPath(night.eventId, night.metroId ?? DEFAULT_METRO.id)} className="log-row">
+                <Link to={nightPath(night.when.sort, night.metroId ?? DEFAULT_METRO.id, night.eventId)} className="log-row">
                   {body}
                 </Link>
               </li>
@@ -384,7 +384,7 @@ function NightRow({ night, rating }: { night: LoggedNight; rating: number | null
   if (night.eventId) {
     return (
       <Link
-        to={eventPath(night.eventId, night.metroId ?? DEFAULT_METRO.id)}
+        to={nightPath(night.when.sort, night.metroId ?? DEFAULT_METRO.id, night.eventId)}
         className="log-row"
         onClick={() => clearOpenedFromMap()}
       >

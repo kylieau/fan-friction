@@ -133,13 +133,15 @@ export function EventScreen() {
             aria-pressed={isPlanned(e.id, log)}
             onClick={() => togglePlan(e)}
           >
-            {isPlanned(e.id, log) ? 'Saved' : 'Save this night'}
+            {isPlanned(e.id, log) ? 'Attending' : 'Attend'}
           </button>
         ) : isWasThere(e.id, log) ? (
-          <p className="mark-hint">You were there</p>
+          <button type="button" className="mark-button on" aria-pressed onClick={() => toggleWasThere(e)}>
+            Attended
+          </button>
         ) : (
           <button type="button" className="mark-button" onClick={() => toggleWasThere(e)}>
-            I was there
+            Attended
           </button>
         )}
       </div>

@@ -1073,13 +1073,13 @@ button {
 }
 
 .cal-day.brutal {
-  background: var(--ucla);
+  background: var(--dodger);
   color: var(--card);
 }
 
 .cal-day.cooked {
-  background: var(--dodger);
-  color: var(--card);
+  background: var(--ink);
+  color: var(--gold);
 }
 
 .cal-day.selected {
@@ -2222,13 +2222,13 @@ button {
 }
 
 .log-score.brutal {
-  background: var(--ucla);
+  background: var(--dodger);
   color: var(--card);
 }
 
 .log-score.cooked {
-  background: var(--dodger);
-  color: var(--card);
+  background: var(--ink);
+  color: var(--gold);
 }
 
 .plan-card {
@@ -2772,4 +2772,208 @@ button {
 
 .fav-add-kinds .fav-toggle {
   margin-right: 0;
+}
+
+/* ---------- Night page ---------- */
+.night-head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.night-kicker {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
+.night-date {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.night-city {
+  font-size: 14px;
+  color: var(--ink2);
+}
+
+.read-tile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+}
+
+.read-big {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.read-big.quiet {
+  background: var(--track);
+  color: var(--ink2);
+}
+
+.read-big.chill { background: #e4eef6; color: var(--ink); }
+.read-big.light { background: var(--water); color: var(--ink); }
+.read-big.mid { background: var(--paleBlue); color: var(--ink); }
+.read-big.brutal { background: var(--dodger); color: var(--card); }
+.read-big.cooked { background: var(--ink); color: var(--gold); }
+
+.read-num {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.read-word {
+  margin-top: 4px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.read-why {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.read-lab {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--dodger);
+}
+
+.read-txt {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.read-meta {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.entry-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: inset 0 0 0 2px var(--gold);
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.entry-title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.entry-facts {
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.entry-note {
+  font-size: 13.5px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #fff7cc;
+  color: var(--ink);
+}
+
+.timeline-list .tl-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline-list .tl-row:last-child {
+  border-bottom: none;
+}
+
+.timeline-list .tl-row.yours {
+  background: #f1f7fd;
+}
+
+.tl-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tl-time {
+  width: 60px;
+  flex-shrink: 0;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--ink2);
+  font-variant-numeric: tabular-nums;
+}
+
+.chip-you {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.chip-f {
+  background: var(--track);
+  color: var(--ink2);
+}
+
+.chip-f.moderate {
+  background: var(--paleBlue);
+  color: var(--ink);
+}
+
+.chip-f.heavy {
+  background: var(--dodger);
+  color: var(--card);
+}
+
+.chip-f.extreme {
+  background: var(--ink);
+  color: var(--card);
+}
+
+.night-page .back-link {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.night-page .text-link {
+  border: none;
+  background: none;
 }

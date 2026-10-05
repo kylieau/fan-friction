@@ -31,7 +31,7 @@ import {
 import { clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { eventPath } from '../lib/view';
+import { nightPath } from '../lib/view';
 import { Read } from './FavoritesScreen';
 import { HeaviestStat, Stat } from './YouScreen';
 
@@ -149,7 +149,7 @@ export function FavoritePage() {
           <ul className="log-list">
             {upcoming.map((event) => (
               <li key={event.id} className="fav-li">
-                <Link to={eventPath(event.id, event.metroId)} className="log-row fav-row">
+                <Link to={nightPath(event.date, event.metroId, event.id)} className="log-row fav-row">
                   <Read rating={ratings.get(event.date) ?? null} />
                   <span className="log-main">
                     <span className="log-title">{listTitle(event)}</span>
@@ -230,7 +230,7 @@ function NightRow({ night, rating }: { night: LoggedNight; rating: number | null
   );
   if (night.eventId) {
     return (
-      <Link to={eventPath(night.eventId, night.metroId ?? DEFAULT_METRO.id)} className="log-row">
+      <Link to={nightPath(night.when.sort, night.metroId ?? DEFAULT_METRO.id, night.eventId)} className="log-row">
         {body}
       </Link>
     );

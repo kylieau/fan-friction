@@ -159,3 +159,9 @@ export function timelineGroup(when: LoggedWhen): string {
   }
   return 'Date not written down';
 }
+
+/** "Saturday" from a local date, for the night page's kicker. */
+export function weekdayLong(date: string): string {
+  const [y, m, d] = date.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-US', { weekday: 'long', timeZone: 'UTC' });
+}

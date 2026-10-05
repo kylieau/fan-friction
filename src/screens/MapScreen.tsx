@@ -34,7 +34,7 @@ import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } fro
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { getHomeId, setHomeId } from '../lib/homeCity';
-import { eventPath, mapPath, nightsPath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
+import { mapPath, nightPath, nightsPath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
 
 type Mode = 'crowds' | 'traffic';
 
@@ -347,12 +347,12 @@ export function MapScreen() {
                 <EventRow event={selected} night={events} selected showDate={selected.date !== date} />
               </div>
               <Link
-                to={eventPath(selected.id, selected.metroId)}
+                to={nightPath(selected.date, selected.metroId, selected.id)}
                 state={{ fromMap: true }}
                 className="gold-button"
                 onClick={() => markOpenedFromMap()}
               >
-                See this event
+                See this {dayWordFor(selected)}
                 <ArrowRight />
               </Link>
             </>
@@ -561,7 +561,7 @@ function SavedNightCard({ plan }: { plan: NightPlan }) {
   if (!plan.eventId) return <div className="saved-night">{body}</div>;
   return (
     <Link
-      to={eventPath(plan.eventId, plan.metroId)}
+      to={nightPath(plan.date, plan.metroId, plan.eventId)}
       state={{ fromMap: true }}
       className="saved-night"
       onClick={() => markOpenedFromMap()}
@@ -569,6 +569,11 @@ function SavedNightCard({ plan }: { plan: NightPlan }) {
       {body}
     </Link>
   );
+}
+
+/** "day" when the event starts before 5 pm, else "night" (Kylie, Oct 5). */
+function dayWordFor(event: CrowdEvent): 'day' | 'night' {
+  return event.start && event.start < '17:00' ? 'day' : 'night';
 }
 
 /** Same venue name the event page uses. Every On-the-map row shows it. */

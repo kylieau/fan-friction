@@ -13,6 +13,7 @@ import { ProfileEditScreen } from './screens/ProfileEditScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { FavoritesScreen } from './screens/FavoritesScreen';
 import { FavoritePage } from './screens/FavoritePage';
+import { NightScreen } from './screens/NightScreen';
 import { getHomeId, subscribeHome } from './lib/homeCity';
 import { getPref, setPref } from './lib/prefs';
 
@@ -33,6 +34,7 @@ function Shell() {
         <Routes>
           <Route path="/" element={<MapScreen />} />
           <Route path="/nights" element={<NightsScreen />} />
+          <Route path="/night/:date" element={<NightScreen />} />
           <Route path="/event/:id" element={<EventScreen />} />
           <Route path="/favorites" element={<FavoritesScreen />} />
           <Route path="/favorites/edit" element={<FavoritesScreen />} />
