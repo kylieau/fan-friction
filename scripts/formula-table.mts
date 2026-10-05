@@ -6,13 +6,14 @@ import { rateDate, occasionFor } from '../src/data/formula/index.ts';
 
 const byDate = new Map<string, typeof SEED_EVENTS>();
 for (const e of SEED_EVENTS) byDate.set(e.date, [...(byDate.get(e.date) ?? []), e]);
-console.log('| Night | Hand | Crowd fight | Rating | Confidence | Why |');
-console.log('|---|---|---|---|---|---|');
+console.log('| Night | Hand | Crowd fight | Conditions | Rating | Confidence | Why |');
+console.log('|---|---|---|---|---|---|---|');
 const errors: number[] = [];
 for (const r of [...SEED_RATINGS].sort((a, b) => a.date.localeCompare(b.date))) {
   const read = rateDate('la', byDate.get(r.date) ?? []);
   errors.push(Math.abs(read.rating - r.rating));
-  console.log(`| ${r.date} | ${r.rating} | ${read.crowdFight.score.toFixed(1)} | ${read.rating} | ${read.confidence} | ${read.why} |`);
+  const cond = read.reasons.find((x) => x.name === 'Conditions');
+  console.log(`| ${r.date} | ${r.rating} | ${read.crowdFight.score.toFixed(1)} | ${cond ? cond.score.toFixed(1) : '—'} | ${read.rating} | ${read.confidence} | ${read.why} |`);
 }
 console.log(`\nMean gap from the hand ratings (comparison only): ${(errors.reduce((a, b) => a + b, 0) / errors.length).toFixed(2)}\n`);
 console.log('| Night | Event | Occasion (rule) | Hand | Verdict (rule) | Hand | Top competitor |');

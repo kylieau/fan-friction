@@ -3,12 +3,16 @@
 // Screens never call this directly; the read pipeline in `read.ts` will.
 
 import { formatScore } from '../../config/scoreLabels';
+import { listedCapacity } from '../read';
 import type { CrowdEvent } from '../types';
+import { weatherForEvent } from '../weather';
 import { dateCrowdFight, type DateCrowdFight } from './crowdFight';
+import { dateConditions, eventConditions, type EventConditions, weatherGlyph } from './weather';
 
 export { eventCrowdFight, dateCrowdFight, timeFactor, verdictFromScore } from './crowdFight';
 export { occasionFor, occasionPoints, occasionFromPoints } from './occasion';
 export { overlapTier, isBroad } from './overlap';
+export { eventConditions, dateConditions, weatherGlyph, feelsLikeLabel, isOpenAir } from './weather';
 
 export interface Reason {
   name: 'Crowd fight' | 'Gridlock' | 'Conditions';
@@ -23,6 +27,8 @@ export interface DateRead {
   lead: Reason | null;
   why: string;
   crowdFight: DateCrowdFight;
+  /** Per open-air event with stored weather. */
+  conditions: { event: CrowdEvent; conditions: EventConditions }[];
   /** Firm: every input known. Likely: one guessed. Early: more than one, or far out. */
   confidence: 'Firm' | 'Likely' | 'Early';
 }
@@ -47,13 +53,34 @@ function crowdFightWhy(cf: DateCrowdFight): string {
   return puller ? `${head}; ${puller.title} pulls on most of them.` : `${head}.`;
 }
 
-/** Rate one date in a city from its events. Only Crowd fight so far. */
-export function rateDate(metroId: string, events: readonly CrowdEvent[]): DateRead {
+function conditionsWhy(rows: { event: CrowdEvent; conditions: EventConditions }[]): string {
+  const worst = [...rows].sort((a, b) => b.conditions.w - a.conditions.w)[0];
+  if (!worst || worst.conditions.w === 0) return 'Nothing in the weather.';
+  const c = worst.conditions;
+  const start = worst.event.start ? ` at a ${clock(worst.event.start)} start` : '';
+  if (c.cause === 'heat') return `${Math.round(c.effectiveF)}° feels-like${start}, no roof (${worst.event.title}).`;
+  if (c.cause === 'rain') return `${weatherGlyph(c.row)} Rain in the forecast${start} (${worst.event.title}).`;
+  return `${Math.round(c.row.feelsLikeF)}° feels-like${start}, no roof (${worst.event.title}).`;
+}
+
+function clock(time: string): string {
+  const [h, m] = time.split(':').map(Number);
+  const hour = h % 12 === 0 ? 12 : h % 12;
+  return `${hour}:${String(m).padStart(2, '0')} ${h < 12 ? 'am' : 'pm'}`;
+}
+
+/** Rate one date in a city from its events. Crowd fight and Conditions; Gridlock next. */
+export function rateDate(metroId: string, events: readonly CrowdEvent[], before?: Date): DateRead {
   const crowdFight = dateCrowdFight(metroId, events);
   const reasons: Reason[] = [{ name: 'Crowd fight', score: crowdFight.score, why: crowdFightWhy(crowdFight) }];
+  const conditions = events
+    .map((event) => ({ event, conditions: eventConditions(event, weatherForEvent(event, before)) }))
+    .filter((row): row is { event: CrowdEvent; conditions: EventConditions } => row.conditions !== null);
+  const condScore = dateConditions(conditions.map((row) => ({ capacity: listedCapacity(row.event) ?? 0, conditions: row.conditions })));
+  if (condScore !== null) reasons.push({ name: 'Conditions', score: condScore, why: conditionsWhy(conditions) });
   const rating = Number(formatScore(combine(reasons.map((r) => r.score))));
   const lead = reasons.reduce<Reason | null>((best, r) => (best === null || r.score > best.score ? r : best), null);
   const guessed = crowdFight.events.filter((row) => row.estimated).length;
   const confidence = guessed === 0 ? 'Firm' : guessed === 1 ? 'Likely' : 'Early';
-  return { rating, reasons, lead, why: lead?.why ?? '', crowdFight, confidence };
+  return { rating, reasons, lead, why: lead?.why ?? '', crowdFight, conditions, confidence };
 }

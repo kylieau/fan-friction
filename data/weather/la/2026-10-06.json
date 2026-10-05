@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-06",
+  "rows": [
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-06",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-05T20:52:00.884Z",
+      "feelsLikeF": 83,
+      "tempF": 83,
+      "humidity": 42,
+      "windMph": 5.8,
+      "uvIndex": 0.05,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ]
+}

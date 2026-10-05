@@ -2,6 +2,7 @@ import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { frictionLabel, showFriction } from '../config/scoreLabels';
+import { feelsLikeLabel, isOpenAir, weatherForEvent, weatherGlyph } from '../data';
 import {
   eventFacts,
   getCityDate,
@@ -14,6 +15,7 @@ import {
   toggleWasThere,
   yourEntries,
   type CityDate,
+  type CrowdEvent,
 } from '../data';
 import { crowdKind, crowdPoints, showsOnMap, type CrowdPoint } from '../map/crowdPoints';
 import { FactList } from '../components/FactList';
@@ -176,6 +178,8 @@ export function EventScreen() {
         {me.soldOut && me.count !== undefined && <span className="tag-soldout">SOLD OUT</span>}
       </section>
 
+      <WeatherDetail event={e} />
+
       <Beaten me={me} all={points} date={date} />
 
       <p className="source-note">
@@ -195,6 +199,43 @@ export function EventScreen() {
         Back to the map
       </MapBack>
     </div>
+  );
+}
+
+/** Everything behind the feels-like number, open-air venues only. */
+function WeatherDetail({ event }: { event: CrowdEvent }) {
+  if (!isOpenAir(event)) return null;
+  const row = weatherForEvent(event);
+  if (!row) return null;
+  const rows: [string, string][] = [
+    ['Feels like', feelsLikeLabel(row, event.metroId)],
+    ['Air', `${Math.round(row.tempF)}°`],
+  ];
+  if (row.humidity != null) rows.push(['Humidity', `${Math.round(row.humidity)}%`]);
+  if (row.windMph != null) rows.push(['Wind', `${Math.round(row.windMph)} mph`]);
+  if (row.uvIndex != null) rows.push(['UV', `${Math.round(row.uvIndex)}`]);
+  if (row.precipProbability != null) rows.push(['Rain chance', `${Math.round(row.precipProbability)}%`]);
+  else if (row.precipMm != null) rows.push(['Rain', row.precipMm >= 1 ? `${row.precipMm.toFixed(1)} mm` : 'none']);
+  return (
+    <section className="card weather-card" aria-label="Weather at the venue">
+      <div className="weather-head">
+        <span className="weather-glyph big" aria-hidden>
+          {weatherGlyph(row)}
+        </span>
+        <span className="weather-title">
+          {row.basis === 'forecast' ? 'Forecast' : 'Weather'} at {event.start ? clockTime(event.start) : 'start'}
+          {row.basis === 'reanalysis' ? ' · estimated' : ''}
+        </span>
+      </div>
+      <dl className="weather-grid">
+        {rows.map(([label, value]) => (
+          <div key={label} className="weather-cell">
+            <dt>{label}</dt>
+            <dd>{value}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
   );
 }
 

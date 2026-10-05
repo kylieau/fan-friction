@@ -156,6 +156,8 @@ export async function searchDates(metroId: string, query: string): Promise<DateS
 
 export { VENUES, venueNameOn, capacityOn } from './venues';
 export { TEAMS } from './teams';
+export { weatherAt, weatherForEvent, cityWeather } from './weather';
+export { weatherGlyph, feelsLikeLabel, isOpenAir, type WeatherRow } from './formula/weather';
 export {
   eventMatches,
   favoriteFor,

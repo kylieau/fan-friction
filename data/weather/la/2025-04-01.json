@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2025-04-01",
+  "rows": [
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2025-04-01",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:51:44.677Z",
+      "feelsLikeF": 53.2,
+      "tempF": 57.5,
+      "humidity": 61,
+      "windMph": 6.5,
+      "precipMm": 0,
+      "shortwave": 55,
+      "cloudCover": 87,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "hollywood-bowl",
+      "date": "2025-04-01",
+      "hour": 20,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:51:44.677Z",
+      "feelsLikeF": 51.4,
+      "tempF": 55,
+      "humidity": 61,
+      "windMph": 3.9,
+      "precipMm": 0,
+      "shortwave": 1,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2025-04-01",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:51:44.677Z",
+      "feelsLikeF": 53.1,
+      "tempF": 56.4,
+      "humidity": 72,
+      "windMph": 6.2,
+      "precipMm": 0,
+      "shortwave": 55,
+      "cloudCover": 94,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2025-04-01",
+      "hour": 20,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:54:32.475Z",
+      "feelsLikeF": 52.5,
+      "tempF": 55.5,
+      "humidity": 71,
+      "windMph": 4.8,
+      "precipMm": 0,
+      "shortwave": 1,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ]
+}

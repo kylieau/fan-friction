@@ -2,7 +2,9 @@ import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState, u
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { areaMetros, DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import {
-  feelsLikeF,
+  cityWeather,
+  feelsLikeLabel,
+  weatherGlyph,
   getCityDate,
   metrosWithEvents,
   getEventsBetween,
@@ -25,7 +27,7 @@ import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { DateScore } from '../components/DateScore';
 import { WhenControl } from '../components/WhenControl';
-import { ArrowRight, ChevronDown, HomeIcon, SunIcon } from '../components/Icons';
+import { ArrowRight, ChevronDown, HomeIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
@@ -185,9 +187,9 @@ export function MapScreen() {
       : dayEvents.length === 1
         ? '1 event'
         : `${dayEvents.length} events`;
-  // One feels-like for the metro, and only while When is Today.
-  const feels = feelsLikeF(metro.id, date);
-  const showFeels = isToday && span === 'day' && feels !== undefined;
+  // The city point's evening feels-like, from stored weather. Orientation only; venues have their own.
+  const cityRow = span === 'day' ? cityWeather(metro.id, date, events.filter((e) => e.date === date)) : undefined;
+  const showFeels = cityRow !== undefined;
 
   const [bounds, setBounds] = useState<ViewBounds | null>(null);
   useEffect(() => {
@@ -284,10 +286,12 @@ export function MapScreen() {
                 onOpenChange={(next) => setMenu(next ? 'when' : null)}
               />
             </div>
-            {showFeels && (
-              <div className="map-feels">
-                <SunIcon />
-                <span>{feels}°</span>
+            {showFeels && cityRow && (
+              <div className="map-feels" aria-label={`Feels like ${feelsLikeLabel(cityRow, metro.id)} in ${metro.name}`}>
+                <span className="weather-glyph" aria-hidden>
+                  {weatherGlyph(cityRow)}
+                </span>
+                <span>{feelsLikeLabel(cityRow, metro.id)}</span>
               </div>
             )}
           </div>

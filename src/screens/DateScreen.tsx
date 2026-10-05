@@ -5,7 +5,11 @@ import { DEFAULT_METRO, METROS } from '../config/metros';
 import { formatScore, scoreBand, scoreLabel, showFriction } from '../config/scoreLabels';
 import {
   asMetroDate,
-  feelsLikeF,
+  cityWeather,
+  feelsLikeLabel,
+  isOpenAir,
+  weatherForEvent,
+  weatherGlyph,
   friendsEntries,
   getAccount,
   getCityDate,
@@ -95,8 +99,7 @@ export function DateScreen() {
   const plans = useMemo(() => log.plans.filter((p) => p.date === date && p.metroId === metro.id), [log, date, metro.id]);
   const rating = day?.rating ?? null;
   const locksAt = useMemo(() => stampLocksAt(asMetroDate(metro.id, date, events), metro.timeZone), [metro, date, events]);
-  const feels = feelsLikeF(metro.id, date);
-  const hottest = events.map((e) => e.weather?.tempF).filter((t): t is number => typeof t === 'number').sort((a, b) => b - a)[0];
+  const cityRow = cityWeather(metro.id, date, events);
 
   // The event the gold button acts on: the highlighted one, or the only one.
   const target = events.find((e) => e.id === highlight) ?? (events.length === 1 ? events[0] : undefined);
@@ -145,7 +148,15 @@ export function DateScreen() {
         <h1 className="date-title">{longLocalDate(date).replace(/^[A-Za-z]+, /, '')}</h1>
         <span className="date-city">
           {metro.name}
-          {feels !== undefined ? ` · ${feels}° feels like` : hottest !== undefined ? ` · ${hottest}°F` : ''}
+          {cityRow && (
+            <>
+              {' · '}
+              <span className="weather-glyph" aria-hidden>
+                {weatherGlyph(cityRow)}
+              </span>{' '}
+              {feelsLikeLabel(cityRow, metro.id)}
+            </>
+          )}
         </span>
       </header>
 
@@ -228,7 +239,10 @@ export function DateScreen() {
                     <span className="tl-time">{e.start ? clockTime(e.start) : '—'}</span>
                     <span className="log-main">
                       <span className="log-title">{listTitle(e)}</span>
-                      <span className="log-facts">{[venueOf(e), crowdLine(e)].filter(Boolean).join(' · ')}</span>
+                      <span className="log-facts">
+                        {[venueOf(e), crowdLine(e)].filter(Boolean).join(' · ')}
+                        <VenueWeather event={e} />
+                      </span>
                     </span>
                   </Link>
                   {choosing ? (
@@ -292,6 +306,23 @@ export function DateScreen() {
         </p>
       )}
     </div>
+  );
+}
+
+/** The venue's feels-like, inline, open-air venues only. */
+function VenueWeather({ event }: { event: CrowdEvent }) {
+  if (!isOpenAir(event)) return null;
+  const row = weatherForEvent(event);
+  if (!row) return null;
+  return (
+    <>
+      {' · '}
+      <span className="weather-glyph" aria-hidden>
+        {weatherGlyph(row)}
+      </span>{' '}
+      {feelsLikeLabel(row, event.metroId)}
+      {row.basis === 'reanalysis' ? ' est.' : ''}
+    </>
   );
 }
 

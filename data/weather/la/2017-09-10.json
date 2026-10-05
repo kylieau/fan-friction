@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2017-09-10",
+  "rows": [
+    {
+      "metroId": "la",
+      "venueId": "coliseum",
+      "date": "2017-09-10",
+      "hour": 13,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:51:44.677Z",
+      "feelsLikeF": 86.8,
+      "tempF": 85.8,
+      "humidity": 42,
+      "windMph": 9.4,
+      "precipMm": 0,
+      "shortwave": 705,
+      "cloudCover": 81,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2017-09-10",
+      "hour": 13,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:51:44.677Z",
+      "feelsLikeF": 91.8,
+      "tempF": 91,
+      "humidity": 28,
+      "windMph": 4.8,
+      "precipMm": 0,
+      "shortwave": 710,
+      "cloudCover": 71,
+      "code": 2
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2017-09-10",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:51:44.677Z",
+      "feelsLikeF": 76.8,
+      "tempF": 73.7,
+      "humidity": 71,
+      "windMph": 4.3,
+      "precipMm": 0,
+      "shortwave": 48,
+      "cloudCover": 90,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2017-09-10",
+      "hour": 13,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:54:32.475Z",
+      "feelsLikeF": 86.8,
+      "tempF": 85.8,
+      "humidity": 42,
+      "windMph": 9.4,
+      "precipMm": 0,
+      "shortwave": 705,
+      "cloudCover": 81,
+      "code": 3
+    }
+  ]
+}

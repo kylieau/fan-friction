@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-09",
+  "rows": [
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2026-10-09",
+      "hour": 17,
+      "basis": "forecast",
+      "capturedAt": "2026-10-05T20:52:00.884Z",
+      "feelsLikeF": 80.1,
+      "tempF": 84.8,
+      "humidity": 27,
+      "windMph": 9.3,
+      "uvIndex": 2.1,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 348,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-09",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-05T20:52:00.884Z",
+      "feelsLikeF": 78.2,
+      "tempF": 79.7,
+      "humidity": 45,
+      "windMph": 8.4,
+      "uvIndex": 0.05,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 7,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-09",
+      "hour": 17,
+      "basis": "forecast",
+      "capturedAt": "2026-10-05T20:54:48.937Z",
+      "feelsLikeF": 80.9,
+      "tempF": 84.4,
+      "humidity": 34,
+      "windMph": 10.4,
+      "uvIndex": 2.1,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 346,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ]
+}

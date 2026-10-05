@@ -3108,3 +3108,51 @@ button {
 .map-header-top .explore-switch {
   margin-left: 0;
 }
+
+/* ---------- Weather ---------- */
+.weather-glyph {
+  font-size: 0.95em;
+}
+
+.weather-glyph.big {
+  font-size: 22px;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.weather-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weather-title {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.weather-cell dt {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
+.weather-cell dd {
+  margin: 2px 0 0;
+  font-size: 15px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}

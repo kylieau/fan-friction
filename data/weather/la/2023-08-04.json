@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2023-08-04",
+  "rows": [
+    {
+      "metroId": "la",
+      "venueId": "angel-stadium",
+      "date": "2023-08-04",
+      "hour": 18,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:51:44.677Z",
+      "feelsLikeF": 80.6,
+      "tempF": 79.3,
+      "humidity": 57,
+      "windMph": 7.5,
+      "precipMm": 0,
+      "shortwave": 399,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2023-08-04",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:51:44.677Z",
+      "feelsLikeF": 73.4,
+      "tempF": 73.2,
+      "humidity": 69,
+      "windMph": 10.2,
+      "precipMm": 0,
+      "shortwave": 197,
+      "cloudCover": 5,
+      "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2023-08-04",
+      "hour": 18,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-05T20:54:32.475Z",
+      "feelsLikeF": 74.8,
+      "tempF": 75.9,
+      "humidity": 62,
+      "windMph": 12.4,
+      "precipMm": 0,
+      "shortwave": 398,
+      "cloudCover": 4,
+      "code": 0
+    }
+  ]
+}

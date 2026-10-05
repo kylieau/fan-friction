@@ -50,7 +50,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/schedule-archive src/data/scheduleArchiveIndex.ts src/data/startForecastIndex.ts
+          git add data/schedule-archive data/weather src/data/scheduleArchiveIndex.ts src/data/startForecastIndex.ts src/data/weatherIndex.ts
           if git diff --cached --quiet; then
             echo "No schedule change to commit."
             exit 0
