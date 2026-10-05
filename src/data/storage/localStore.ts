@@ -2,6 +2,7 @@
 // The seeded nights are not stored here; they ship with the app.
 
 import { APP } from '../../config/app';
+import { parseForecast, parseStamp } from '../night';
 import type { DatePrecision, LoggedNight, LoggedWhen, NightPlan, PersonalLog, YouOrder } from '../types';
 import type { NightStore } from './types';
 
@@ -37,10 +38,29 @@ function isNight(value: unknown): value is LoggedNight {
   );
 }
 
+function cleanNight(night: LoggedNight): LoggedNight {
+  const forecast = parseForecast(night.forecast);
+  const stamp = parseStamp(night.stamp);
+  const next: LoggedNight = { ...night };
+  if (forecast) next.forecast = forecast;
+  else delete next.forecast;
+  if (stamp) next.stamp = stamp;
+  else delete next.stamp;
+  return next;
+}
+
 function isPlan(value: unknown): value is NightPlan {
   if (!value || typeof value !== 'object') return false;
   const plan = value as NightPlan;
   return typeof plan.id === 'string' && typeof plan.date === 'string' && typeof plan.metroId === 'string' && typeof plan.title === 'string';
+}
+
+function cleanPlan(plan: NightPlan): NightPlan {
+  const forecast = parseForecast(plan.forecast);
+  const next: NightPlan = { ...plan };
+  if (forecast) next.forecast = forecast;
+  else delete next.forecast;
+  return next;
 }
 
 function asOrder(value: unknown): YouOrder {
@@ -57,8 +77,8 @@ export function readLocalLog(): PersonalLog {
     return {
       version: 1,
       hiddenSeedIds: Array.isArray(parsed.hiddenSeedIds) ? parsed.hiddenSeedIds.filter((id) => typeof id === 'string') : [],
-      added: Array.isArray(parsed.added) ? parsed.added.filter(isNight) : [],
-      plans: Array.isArray(parsed.plans) ? parsed.plans.filter(isPlan) : [],
+      added: Array.isArray(parsed.added) ? parsed.added.filter(isNight).map(cleanNight) : [],
+      plans: Array.isArray(parsed.plans) ? parsed.plans.filter(isPlan).map(cleanPlan) : [],
       order: asOrder(parsed.order),
     };
   } catch {

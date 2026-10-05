@@ -6,6 +6,7 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createServer } from 'vite';
+import { refreshScheduleIndex } from './schedule-index.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -47,6 +48,8 @@ try {
     await rename(tmp, file);
     console.log(`Saved ${relative} (${snapshot.events.length} events, ${snapshot.window.from} through ${snapshot.window.through}: ${counts}).`);
   }
+  const index = await refreshScheduleIndex(root);
+  console.log(index.changed ? `Updated ${index.relative} (${index.count} snapshot${index.count === 1 ? '' : 's'}).` : `No change in ${index.relative}.`);
 } catch (err) {
   console.error(err instanceof Error ? err.message : err);
   exitCode = 1;

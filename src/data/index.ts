@@ -149,6 +149,26 @@ export { VENUES, venueNameOn, capacityOn } from './venues';
 export { TEAMS } from './teams';
 export { audienceOverlap } from './audience';
 export {
+  PRELIST_ATTENDEES,
+  FRICTION_ATTENDEES,
+  STAMP_LOCK_HOURS,
+  asMetroNight,
+  captureForecast,
+  coverageForNight,
+  createStamp,
+  eventFeedsFriction,
+  frictionReadForEvent,
+  isStampLocked,
+  knownCrowdCount,
+  listedCapacity,
+  refreshStamp,
+  retainForecast,
+  scheduleCoverage,
+  sizeTier,
+  stampLocksAt,
+} from './night';
+export type { ScheduleCoverage, SizeTier } from './night';
+export {
   eventFacts,
   filterChoices,
   getPersonalLog,

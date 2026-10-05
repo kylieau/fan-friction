@@ -1,13 +1,24 @@
 // Merges the seeded log with what she has marked on this phone.
 // Screens reach this only through src/data/index.ts.
 
-import { isValidDate } from '../lib/dates';
+import { METROS } from '../config/metros';
 import { listTitle } from '../lib/eventTitle';
 import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
 import { KYLIE_LOG } from './seed/kylieLog';
 import { nightStore, readSavedLog } from './storage';
-import type { CrowdEvent, LoggedNight, NightPlan, PersonalLog, YouOrder } from './types';
+import {
+  asMetroNight,
+  captureForecast,
+  createStamp,
+  frictionReadForEvent,
+  isStampLocked,
+  ratingFromNight,
+  retainForecast,
+  scheduleCoverage,
+} from './night';
+import { seedEventsOn, seedRatingFor } from './sources/seedSource';
+import type { CrowdEvent, LoggedNight, NightForecast, NightPlan, NightStamp, PersonalLog, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -153,11 +164,15 @@ function tagFor(teamId: string | undefined, sport: string): { tag: string; side:
   return { tag: side, side };
 }
 
+function withFloor(event: CrowdEvent, night: LoggedNight): LoggedNight {
+  return event.belowFloor ? { ...night, belowFloor: true } : night;
+}
+
 function nightFromEvent(event: CrowdEvent): LoggedNight {
   const music = event.audience.domain === 'music' || event.kind === 'show' || event.kind === 'festival';
   if (music) {
     const name = event.performer ?? event.title;
-    return {
+    return withFloor(event, {
       id: `mark-${event.id}`,
       eventId: event.id,
       when: { sort: event.date, label: '', precision: 'day' },
@@ -169,23 +184,73 @@ function nightFromEvent(event: CrowdEvent): LoggedNight {
       inMetro: true,
       metroId: event.metroId,
       kind: event.kind,
-    };
+    });
   }
-  const sport = event.audience.domain === 'sports' ? event.audience.sport : '';
-  const { tag, side } = tagFor(event.teams?.home, sport);
-  return {
+  if (event.audience.domain === 'sports') {
+    const sport = event.audience.sport;
+    const { tag, side } = tagFor(event.teams?.home, sport);
+    return withFloor(event, {
+      id: `mark-${event.id}`,
+      eventId: event.id,
+      when: { sort: event.date, label: '', precision: 'day' },
+      title: listTitle(event),
+      tags: [tag],
+      sport: sport ? sportLabel(sport) : 'Sports',
+      sides: [side],
+      venue: venueLabel(event),
+      inMetro: true,
+      metroId: event.metroId,
+      kind: event.kind,
+    });
+  }
+  const label = event.kind === 'live-broadcast' ? 'Live broadcast' : event.kind === 'special' ? 'Special' : 'Event';
+  return withFloor(event, {
     id: `mark-${event.id}`,
     eventId: event.id,
     when: { sort: event.date, label: '', precision: 'day' },
     title: listTitle(event),
-    tags: [tag],
-    sport: sport ? sportLabel(sport) : 'Sports',
-    sides: [side],
+    tags: [label],
+    sport: label,
+    sides: [event.performer ?? event.title],
     venue: venueLabel(event),
     inMetro: true,
     metroId: event.metroId,
     kind: event.kind,
-  };
+  });
+}
+
+/** Seeded events that night, plus this event when the live feed is the only copy. */
+function eventsThatNight(event: CrowdEvent): CrowdEvent[] {
+  const seeded = seedEventsOn(event.metroId, event.date);
+  if (seeded.some((row) => row.id === event.id)) return seeded;
+  return [...seeded, event];
+}
+
+/**
+ * The read showing for this event right now, frozen.
+ * Uses the hand scores and seeded events already in the app. No number is guessed.
+ */
+function forecastNow(event: CrowdEvent, recordedAt: string): NightForecast | undefined {
+  const events = eventsThatNight(event);
+  const rating = seedRatingFor(event.metroId, event.date);
+  const read = frictionReadForEvent(event, events, rating);
+  if (!read) return undefined;
+  return captureForecast(read.read, recordedAt);
+}
+
+/**
+ * The stamp, once 24 hours have passed since the last scheduled start that night.
+ * A night with no saved schedule is marked reconstructed. Nothing is written before the lock.
+ */
+function stampNow(event: CrowdEvent, now: Date): NightStamp | undefined {
+  const events = eventsThatNight(event);
+  const night = asMetroNight(event.metroId, event.date, events);
+  const zone = METROS[event.metroId]?.timeZone ?? 'America/Los_Angeles';
+  if (!isStampLocked(night, zone, now)) return undefined;
+  const rating = seedRatingFor(event.metroId, event.date);
+  const read = frictionReadForEvent(event, events, rating);
+  if (!read) return undefined;
+  return createStamp(read.read, now.toISOString(), scheduleCoverage(event.metroId, event.date, now) === 'reconstructed');
 }
 
 /** Turn "I was there" on or off for a catalog event. */
@@ -203,10 +268,17 @@ export function toggleWasThere(event: CrowdEvent) {
     return;
   }
   const on = snapshot.added.some((night) => night.eventId === event.id);
-  commit({
-    ...snapshot,
-    added: on ? snapshot.added.filter((night) => night.eventId !== event.id) : [...snapshot.added, nightFromEvent(event)],
-  });
+  if (on) {
+    commit({ ...snapshot, added: snapshot.added.filter((night) => night.eventId !== event.id) });
+    return;
+  }
+  const now = new Date();
+  const plan = snapshot.plans.find((row) => row.eventId === event.id);
+  const night = nightFromEvent(event);
+  if (plan?.forecast) night.forecast = retainForecast(plan.forecast);
+  const stamp = stampNow(event, now);
+  if (stamp) night.stamp = stamp;
+  commit({ ...snapshot, added: [...snapshot.added, night] });
 }
 
 export function isPlanned(eventId: string, log: PersonalLog = snapshot): boolean {
@@ -219,6 +291,7 @@ export function togglePlan(event: CrowdEvent) {
     commit({ ...snapshot, plans: snapshot.plans.filter((plan) => plan.eventId !== event.id) });
     return;
   }
+  const forecast = forecastNow(event, new Date().toISOString());
   const plan: NightPlan = {
     id: `plan-${event.id}`,
     date: event.date,
@@ -226,6 +299,7 @@ export function togglePlan(event: CrowdEvent) {
     eventId: event.id,
     title: listTitle(event),
     venue: venueLabel(event),
+    ...(forecast ? { forecast } : {}),
   };
   commit({ ...snapshot, plans: [...snapshot.plans, plan] });
 }
@@ -279,13 +353,15 @@ export function logStats(nights: LoggedNight[]): LogStats {
 }
 
 /**
- * A date rating applies only to an exact day, in the metro, at a venue that
- * can hold a map dot. Small and away nights stay unlabeled.
+ * A date score applies to an exact day in the metro. Away nights stay unlabeled.
+ * A below-floor night gets the score only when bigger events that night already
+ * have one. The events checked are the seeded list for that date.
  */
 export function ratingForNight(night: LoggedNight, ratings: ReadonlyMap<string, number>): number | null {
-  if (night.when.precision !== 'day' || !isValidDate(night.when.sort)) return null;
-  if (night.belowFloor || night.inMetro === false) return null;
-  return ratings.get(night.when.sort) ?? null;
+  const metroId = night.metroId ?? 'la';
+  const events =
+    night.when.precision === 'day' ? seedEventsOn(metroId, night.when.sort) : [];
+  return ratingFromNight(night, ratings, events);
 }
 
 export function nightBackup(log: PersonalLog = snapshot): NightBackup {
