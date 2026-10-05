@@ -13,7 +13,7 @@ import { overlapTier, TIER_WEIGHT, type Tier } from './overlap';
 const DURATION: Record<string, number> = { football: 3.25, baseball: 2.75, basketball: 2.5, hockey: 2.5, soccer: 2, concert: 3 };
 /** When a start time is missing: a typical start by type (local hour). The read is then labeled estimated. */
 const DEFAULT_START: Record<string, number> = { football: 13.1, baseball: 19.2, basketball: 19.5, hockey: 19.5, soccer: 19.5, concert: 20 };
-/** Seats-in-a-fight that reads as a Mid night in LA: 0.2 × the median capacity of the city's 15k+ venues. */
+/** Seats-in-a-fight that reads as a Spicy night in LA: 0.2 × the median capacity of the city's 15k+ venues. */
 const S0_BY_METRO: Record<string, number> = { la: 10000 };
 const S0_DEFAULT = 10000;
 /** Event score = 1 + 14 × D; the 14 is anchored so two equal events fully overlapping read about 8. */
