@@ -2,20 +2,23 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
 
-_Last synced: Oct 5, 2026 (Claude Code, night)._
+_Last synced: Oct 5, 2026 (Claude Code, formula session)._
 
 ## Current state
-The app's structure pivoted again today, with Kylie: **tabs are Home · Explore · Favorites · You.** Home is a digest (Tonight in your city with a mini map, only when the city has events that day; Coming up; Recent; Friends grouped by event; signed out adds This week and the sign-in card). Explore is the old Map tab with a **Map / Calendar switch** that remembers the last choice per device; the city switcher lives only there. Compare is gone from the tabs (its screen stays at /compare). The **date page** (`/date/<date>`) is one page per date in a city: the read box, your entry or plan, the timeline of events with friction chips (Moderate+), friends there, Attend/Attended as the gold button with a share icon beside it. "Did you go?" and "Were you there?" were dropped: an Attending plan becomes Attended by itself once the date passes; Famous nights stay in the calendar view.
+**The rating formula v4 is built and wired in** (`src/data/formula/`, `src/data/formulaRead.ts`): Crowd fight (contested seats), Conditions (real weather from Open-Meteo, forecast and archive), lightest Gridlock (zones from venue locations). Every date's rating, every event's occasion, verdict and why line are computed; the nightly job fetches weather then records formula forecasts; the calendar shades every date with events; upcoming dates no longer show dashes. Hand ratings stay in the seed as comparison only (Kylie's rule). `docs/formula-table.md` prints the formula against the 13 nights (mean gap 0.81, comparison only).
 
-- **Pushed and live:** everything through the read box (commit `7fd7ace`). **Local, not pushed:** the Home/Explore build (`44e996a`) and this handoff. Kylie wants to look locally first and say push.
-- **Words:** "Fan/Friction" unchanged. On screen: Events (entries), dates, Calendar, Home, Explore, Favorites, Attend/Attending/Attended. "Famous nights" kept. The date page says "That day in …" when everything starts before 5 pm. Code and Supabase tables renamed to match (entries, entry_notes; migration 0004 run by Kylie).
-- **Read box** (number + word in the band color; Cooked = ink + gold) is one component (`ReadTile`) used everywhere a date's read shows.
-- **Supabase:** migrations 0001–0004 all run. Favorites live in `settings.data`. Her 130 entries are in her account.
+- **Local, not pushed:** ten commits (Home/Explore, formula docs, formula steps 1–4, weather). Kylie says push when she's looked.
+- **Docs:** `docs/formula-analysis.md` (fresh-eyes), `formula-review-prompt.md` + `formula-review-response.md` (outside review), `formula-v4.md` (decisions, her rulings), `formula-table.md`.
+- **Weather:** `data/weather/la/*.json` + `src/data/weatherIndex.ts`; `scripts/weather-fetch.mjs` (nightly, and `--backfill` once for the seeded nights). Feels-like is the headline number (Map header city point, date page per open-air venue, event page detail with the range during the event). Covered stadiums count as open air.
+- **Known soft spots to tune:** the World Series G1 reads Heavy friction on 10/25/24 (five competitors overwhelm the Marquee pull of 1.6); artists have no occasion input yet (Taylor Swift reads Routine), a "headliner tier" fact is the likely fix; Famous nights show curated headlines with computed numbers; all constants are placeholders until the attendance calibration (review §11).
 
-## Changes made (this session, late)
-`src/screens/{HomeScreen,ExploreScreen,DateScreen,CalendarScreen,FavoritesScreen,FavoritePage,SettingsScreen}.tsx`, `src/components/{ReadTile,DateScore,AccountBlock}.tsx`, `src/data/{favorites,read,profiles,personalLog,types}.ts`, `src/lib/view.ts` (datePath, calendarPath → /explore?view=calendar, explore-view pref), `src/map/BaseMap.tsx` (interactive flag), styles (tighter spacing, read colors, chips), `supabase/migrations/0003_handles.sql`, `0004_entries.sql`.
+## Changes made (this session)
+Formula: `src/data/formula/{occasion,overlap,crowdFight,weather,gridlock,index}.ts`, `src/data/{formulaRead,weather,weatherIndex}.ts`, `read.ts` (method formula), `forecastCapture.ts`, `index.ts` (getCityDate/getRatedDates/getCalendarMonth use the formula; `handRatingFor` for comparison), seed facts in `testNights.ts`, `types.ts` (OccasionFacts, SportsLevel, invited, strained, status formula), `venues.ts` (strained), scripts (`weather-fetch`, `weather-index`, `formula-table.mts`), package.json archive order, workflow adds weather files, screens (Map header, DateScreen, EventScreen weather, Settings attribution), `AGENTS.md` (no-results rule restated), `BACKLOG.md` (weather notes), `docs/build-brief.md` (Open-Meteo milestone).
 
 ## Key decisions in force
+- **Formula v4 (Oct 5):** see `docs/formula-v4.md`. Hand ratings are comparison only, never the target. Chargers' first LA game is Major; Dodgers–Braves 4/1/25 Routine with a +1 storyline fact; Conditions is a third reason (open-air only, per-city heat baseline concept, start-hour headline, range on the event page). Combination = max + 0.25 × Σ(others − 3)⁺.
+- **The no-results rule means only the event's own outcome** (score, who won). Observed weather may rate a past date. Crowd counts stay evidence (Oct 1). Earlier docs over-applied it.
+- **Weather:** one source (Open-Meteo; free non-commercial, on the cost milestones; credit on Settings). City point = the metro's map center (revisit later). No "estimated" labels on archive weather.
 - **Home (Kylie, Oct 5):** the app opens on a digest, not the Map. Tonight shows only when the home city has events that day; its list is the biggest three by crowd first, then the rest, in a box three rows tall that scrolls. No feed of strangers, nothing ranked by friction. Friends grouped by event ("Sam and Priya · Slayer"). Coming up and Recent list everything, home and away; Recent shows the outcome when known.
 - **Explore (Kylie, Oct 5):** Map / Calendar switch, remembers last choice. One search icon (Home and Explore) opens the calendar view's search.
 - **No confirmation steps:** no "Did you go?", no "Were you there?" as a step. Attending → Attended when the date passes (`settlePassedPlans` at app start).
@@ -43,11 +46,11 @@ The app's structure pivoted again today, with Kylie: **tabs are Home · Explore 
 - Cloud notes: Wikipedia is blocked; ESPN rejects headless-Chrome user agents; screenshots use `playwright-core` with swiftshader args; don't `pkill` vite.
 
 ## Next steps
-1. Kylie reviews Home and Explore locally (today, Oct 5, is quiet in LA, so Tonight won't show until a day with events; the Oct 4 seed shows it when the clock is set back). Then push.
-2. Night rows / entry design (her notes first; she wants to build all pages before this). Then richer entries (outcome auto-filled, setlist link, who with, note, photo), then the rating formula (makes Coming up / Tonight reads real; today upcoming dates show "—").
-3. Data widening when she asks: away games, concerts (Ticketmaster 🚩), results after games. Parked: Traffic, Night story, Compare-with on the date page, Friends feed beyond You's tab.
+1. Kylie looks at the formula on the local site (date pages, calendar, event pages, Map header weather), then says push.
+2. Tuning session with her on the 13 nights (holdouts kept), including the WS "Heavy" soft spot and an artist headliner-tier fact. Then the attendance collection job (review §11) for real calibration.
+3. Data widening when she asks (away games, concerts, results). Entry-row design when she has notes. Parked: full Gridlock zone design (after a season of stamps), Traffic, Night story, Compare-with.
 
 **Next command to run:**
 ```bash
-git status -sb && npm run dev   # localhost:3001; Home at /, Explore at /explore
+git status -sb && npm run dev   # localhost:3001; formula table: npx rolldown scripts/formula-table.mts --format esm --platform node -o /tmp/t.mjs && node /tmp/t.mjs
 ```
