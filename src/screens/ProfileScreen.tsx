@@ -133,13 +133,11 @@ export function ProfileScreen() {
       </Link>
 
       <div className="profile-head">
-        {profile.avatarUrl ? (
-          <img className="avatar avatar-big" src={profile.avatarUrl} alt="" referrerPolicy="no-referrer" />
-        ) : (
-          <span className="avatar avatar-big" aria-hidden>
-            {name.slice(0, 1).toUpperCase()}
-          </span>
-        )}
+        {/* The Google picture is stored on the profile but not shown (Kylie, Oct 5): a
+            letter in Dodger blue keeps every page in the app's own colors. */}
+        <span className="avatar avatar-big" aria-hidden>
+          {name.slice(0, 1).toUpperCase()}
+        </span>
         <h1 className="page-title">{name}</h1>
       </div>
 
