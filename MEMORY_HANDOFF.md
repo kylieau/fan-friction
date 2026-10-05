@@ -2,7 +2,7 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
 
-_Last synced: Oct 5, 2026 (end of the formula session; all pushed)._
+_Last synced: Oct 5, 2026, end of session. Everything is pushed; `main` is clean._
 
 ## Current state
 **The rating formula v4 is built and wired in** (`src/data/formula/`, `src/data/formulaRead.ts`): Crowd fight (contested seats), Conditions (real weather from Open-Meteo, forecast and archive), lightest Gridlock (zones from venue locations). Every date's rating, every event's occasion, verdict and why line are computed; the nightly job fetches weather then records formula forecasts; the calendar shades every date with events; upcoming dates no longer show dashes. Hand ratings stay in the seed as comparison only (Kylie's rule). `docs/formula-table.md` prints the formula against the 13 nights (mean gap 0.81, comparison only).
@@ -51,11 +51,11 @@ Formula: `src/data/formula/{occasion,overlap,crowdFight,weather,gridlock,index}.
 - Cloud notes: Wikipedia is blocked; ESPN rejects headless-Chrome user agents; screenshots use `playwright-core` with swiftshader args; don't `pkill` vite.
 
 ## Next steps
-1. Kylie looks at the formula on the local site (date pages, calendar, event pages, Map header weather), then says push.
-2. Tuning session with her on the 13 nights (holdouts kept), including the WS "Heavy" soft spot and an artist headliner-tier fact. Then the attendance collection job (review §11) for real calibration.
-3. Data widening when she asks (away games, concerts, results). Entry-row design when she has notes. Parked: full Gridlock zone design (after a season of stamps), Traffic, Night story, Compare-with.
+1. Kylie reviews on the live site: the formula on date and event pages, the Explore week strip and month sheet, Home's quiet line and the next-7-days mini map, the Mild/Spicy words.
+2. Formula tuning session on the 13 nights (holdouts kept): the WS G1 "Heavy" soft spot (Marquee pull vs. five competitors), Gilmour's storyline point, the why-line copy. Then the attendance collection job (review §11) for real calibration.
+3. Rehome Famous nights (Home discovery strip or team pages). Entry-row design when she has notes. Data widening (away games, concerts, results) when she asks. Parked: full Gridlock zones, Traffic, Night story, Compare-with.
 
 **Next command to run:**
 ```bash
-git status -sb && npm run dev   # localhost:3001; formula table: npx rolldown scripts/formula-table.mts --format esm --platform node -o /tmp/t.mjs && node /tmp/t.mjs
+git pull --ff-only && npm run dev   # localhost:3001. Formula table: npx rolldown scripts/formula-table.mts --format esm --platform node -o /tmp/t.mjs && node /tmp/t.mjs
 ```
