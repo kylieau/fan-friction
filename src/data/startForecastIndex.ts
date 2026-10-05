@@ -206,5 +206,93 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "start": "13:05",
     "capturedAt": "2026-10-04T23:30:25.307Z",
     "capturedOn": "2026-10-04"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-06-espn-kings-401891806",
+    "date": "2026-10-06",
+    "start": "19:00",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-08-espn-lakers-401898717",
+    "date": "2026-10-08",
+    "start": "19:30",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-09-mlb-849821",
+    "date": "2026-10-09",
+    "start": "17:00",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-11-espn-chargers-401872989",
+    "date": "2026-10-11",
+    "start": "13:05",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-12-espn-rams-401872994",
+    "date": "2026-10-12",
+    "start": "17:15",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-13-espn-kings-401892502",
+    "date": "2026-10-13",
+    "start": "19:30",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-14-espn-clippers-401918011",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-16-espn-lakers-401898719",
+    "date": "2026-10-16",
+    "start": "19:30",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-16-espn-ucla-football-401858494",
+    "date": "2026-10-16",
+    "start": "21:00",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-17-espn-kings-401892530",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-18-espn-rams-401873004",
+    "date": "2026-10-18",
+    "start": "13:05",
+    "capturedAt": "2026-10-05T16:01:06.701Z",
+    "capturedOn": "2026-10-05"
   }
 ];

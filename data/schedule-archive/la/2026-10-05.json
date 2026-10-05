@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "metroName": "Los Angeles",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-05",
+  "capturedAt": "2026-10-05T16:01:06.701Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-05",
+    "through": "2026-10-19"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 1
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 10
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-06-espn-kings-401891806",
+      "metroId": "la",
+      "date": "2026-10-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kings vs. Panthers",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kings",
+        "away": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-08-espn-lakers-401898717",
+      "metroId": "la",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Lakers vs. Sacramento Kings",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lakers",
+        "away": "sacramento-kings"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-09-mlb-849821",
+      "metroId": "la",
+      "date": "2026-10-09",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Dodgers vs. Braves",
+      "stakes": {
+        "round": "NLDS",
+        "game": 5
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "dodger-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "dodgers",
+        "away": "braves"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-11-espn-chargers-401872989",
+      "metroId": "la",
+      "date": "2026-10-11",
+      "start": "13:05",
+      "kind": "game",
+      "title": "Chargers vs. Broncos",
+      "place": {
+        "type": "venue",
+        "venueId": "sofi-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "chargers",
+        "away": "broncos"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-12-espn-rams-401872994",
+      "metroId": "la",
+      "date": "2026-10-12",
+      "start": "17:15",
+      "kind": "game",
+      "title": "Rams vs. Bills",
+      "place": {
+        "type": "venue",
+        "venueId": "sofi-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "rams",
+        "away": "bills"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-13-espn-kings-401892502",
+      "metroId": "la",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Kings vs. Oilers",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kings",
+        "away": "oilers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-14-espn-clippers-401918011",
+      "metroId": "la",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Clippers vs. Nuggets",
+      "place": {
+        "type": "venue",
+        "venueId": "intuit-dome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "clippers",
+        "away": "nuggets"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-16-espn-lakers-401898719",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Lakers vs. Nuggets",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lakers",
+        "away": "nuggets"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-16-espn-ucla-football-401858494",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "21:00",
+      "kind": "game",
+      "title": "UCLA vs. Wisconsin",
+      "place": {
+        "type": "venue",
+        "venueId": "rose-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "ucla-football",
+        "away": "wisconsin"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-kings-401892530",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Kings vs. Bruins",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kings",
+        "away": "bruins"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-18-espn-rams-401873004",
+      "metroId": "la",
+      "date": "2026-10-18",
+      "start": "13:05",
+      "kind": "game",
+      "title": "Rams vs. Cardinals",
+      "place": {
+        "type": "venue",
+        "venueId": "sofi-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "rams",
+        "away": "cardinals"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-06-espn-kings-401891806",
+      "date": "2026-10-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-08-espn-lakers-401898717",
+      "date": "2026-10-08",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-09-mlb-849821",
+      "date": "2026-10-09",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-10-11-espn-chargers-401872989",
+      "date": "2026-10-11",
+      "start": "13:05"
+    },
+    {
+      "eventId": "2026-10-12-espn-rams-401872994",
+      "date": "2026-10-12",
+      "start": "17:15"
+    },
+    {
+      "eventId": "2026-10-13-espn-kings-401892502",
+      "date": "2026-10-13",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-14-espn-clippers-401918011",
+      "date": "2026-10-14",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-16-espn-lakers-401898719",
+      "date": "2026-10-16",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-16-espn-ucla-football-401858494",
+      "date": "2026-10-16",
+      "start": "21:00"
+    },
+    {
+      "eventId": "2026-10-17-espn-kings-401892530",
+      "date": "2026-10-17",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-10-18-espn-rams-401873004",
+      "date": "2026-10-18",
+      "start": "13:05"
+    }
+  ]
+}

@@ -11,4 +11,5 @@ export interface ScheduleSnapshotSpan {
 
 export const SCHEDULE_SNAPSHOTS: readonly ScheduleSnapshotSpan[] = [
   { metroId: 'la', capturedOn: '2026-10-04', from: '2026-10-04', through: '2026-10-18' },
+  { metroId: 'la', capturedOn: '2026-10-05', from: '2026-10-05', through: '2026-10-19' },
 ];
