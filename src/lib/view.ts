@@ -49,6 +49,15 @@ export function mapPath(opts: { metroId: string; date: string; today: string; wh
   return `/?${params.toString()}`;
 }
 
+/**
+ * The event page for one night. Los Angeles stays a plain path. Any other
+ * city is named on the query so the page does not look the night up in Los Angeles.
+ */
+export function eventPath(eventId: string, metroId: string): string {
+  if (!metroId || metroId === DEFAULT_METRO.id) return `/event/${eventId}`;
+  return `/event/${eventId}?metro=${encodeURIComponent(metroId)}`;
+}
+
 /** The Nights tab, opened on the month of a date so "Pick a date" lands in the right place. */
 export function nightsPath(opts: { metroId: string; date: string }): string {
   const params = new URLSearchParams();

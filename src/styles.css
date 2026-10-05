@@ -255,24 +255,10 @@ button {
 }
 
 .saved-night-kicker {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  width: 100%;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
   color: var(--ucla);
-}
-
-.saved-night-frozen {
-  letter-spacing: 0.3px;
-  color: var(--dodger);
-  background: var(--bg);
-  padding: 2px 8px;
-  border-radius: 999px;
 }
 
 .saved-night-title {
@@ -285,12 +271,6 @@ button {
   font-size: 13px;
   font-weight: 600;
   color: var(--ink2);
-}
-
-.saved-night-forecast {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--dodger);
 }
 
 .map-header .area-chip,

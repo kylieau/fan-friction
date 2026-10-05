@@ -172,6 +172,6 @@ A room under about 5,000 does not change the read for everyone else. It can stil
 
 ## Map card and Compare copy (Oct 5, 2026)
 
-The Map shows one card for the soonest saved upcoming night, in any city. Kylie decided this on Oct 5: the card does not follow the city switcher. The card names the night's city. When the plan stored a forecast, the card shows that frozen read and labels it Frozen. It does not recompute the read. Save and "I was there" stay on the event page. The Map list is unchanged.
+The Map shows one card for the soonest saved upcoming night, in any city. Kylie decided this on Oct 5: the card does not follow the city switcher. The card says "Next saved night," then the same short name a map chip uses, then the date and the city, as in "Fri, Oct 9 · Boston." The whole card opens that night. The map stays on the city, zoom, and selection she had, and Back returns there. The event page looks the night up in its own city, so a saved night outside Los Angeles is not "Event not found." A forecast frozen at save stays on the plan and is not drawn on the card. Save and "I was there" stay on the event page. The Map list is unchanged.
 
 Compare keeps the Coming soon card. The heading now points at your nights side by side. The Coming soon chip stays. Nothing else on that tab was added or removed.

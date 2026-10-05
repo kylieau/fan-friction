@@ -1,7 +1,6 @@
-import { useCallback, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { areaMetros, DEFAULT_METRO, METROS, type Metro } from '../config/metros';
-import { formatScore, frictionLabel, scoreLabel, showFriction } from '../config/scoreLabels';
 import {
   feelsLikeF,
   getCityDate,
@@ -16,10 +15,9 @@ import {
   venueNameOn,
   type CityDate,
   type CrowdEvent,
-  type NightForecast,
   type NightPlan,
 } from '../data';
-import { BaseMap } from '../map/BaseMap';
+import { BaseMap, MapContext } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
@@ -28,12 +26,13 @@ import { NightScore } from '../components/NightScore';
 import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, SearchIcon, SunIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
-import { listTitle } from '../lib/eventTitle';
+import { listTitle, mapTitle } from '../lib/eventTitle';
+import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
 import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
-import { nightsPath, useView, whenLabel, type WhenSpan } from '../lib/view';
+import { eventPath, nightsPath, useView, whenLabel, type WhenSpan } from '../lib/view';
 
 type Mode = 'crowds' | 'traffic';
 
@@ -56,9 +55,20 @@ function averageRating(start: string, end: string, rated: ReadonlyMap<string, nu
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
+  const location = useLocation();
+  const href = `${location.pathname}${location.search}`;
+  const restored = useRef<MapMemory | null | undefined>(undefined);
+  if (restored.current === undefined) {
+    const saved = readMapMemory();
+    restored.current = saved && saved.href === href ? saved : null;
+  }
+  const memory = restored.current;
   const { metro, date, today, isToday, when } = useView();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const nextNight = nextSavedPlan(log);
+  useEffect(() => {
+    clearOpenedFromMap();
+  }, []);
 
   const [day, setDay] = useState<CityDate | null>(null);
   useEffect(() => {
@@ -121,14 +131,33 @@ export function MapScreen() {
   }, [shown, mode, events, date]);
   // Collapsed, the sheet peeks the title. Open, it is as tall as the rows, and the
   // list scrolls once that would pass the sheet's max height.
-  const [open, setOpen] = useState(false);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [open, setOpen] = useState(memory?.sheetOpen ?? false);
+  const [selectedId, setSelectedId] = useState<string | null>(memory?.selectedId ?? null);
+  const [freezeCamera, setFreezeCamera] = useState(Boolean(memory));
+  const initialDate = useRef(date);
   useEffect(() => {
+    if (date === initialDate.current) return;
+    setFreezeCamera(false);
     setSelectedId(null);
     setOpen(false);
   }, [date]);
 
-  const select = useCallback((id: string | null) => setSelectedId(id), []);
+  const initialMetro = useRef(metro.id);
+  useEffect(() => {
+    if (metro.id === initialMetro.current) return;
+    setFreezeCamera(false);
+  }, [metro.id]);
+
+  const initialWhen = useRef(when);
+  useEffect(() => {
+    if (when === initialWhen.current) return;
+    setFreezeCamera(false);
+  }, [when]);
+
+  const select = useCallback((id: string | null) => {
+    setFreezeCamera(false);
+    setSelectedId(id);
+  }, []);
   const selected = events.find((e) => e.id === selectedId) ?? null;
 
   const [ratedByDate, setRatedByDate] = useState<Map<string, number>>(new Map());
@@ -190,18 +219,29 @@ export function MapScreen() {
       document.removeEventListener('keydown', onKey);
     };
   }, [menu]);
-  const { wasDragged } = useSheetDrag(sheetRef, topRef, bodyRef, open, setOpen);
+  const setSheetOpen = useCallback((next: boolean) => {
+    setFreezeCamera(false);
+    setOpen(next);
+  }, []);
+  const { wasDragged } = useSheetDrag(sheetRef, topRef, bodyRef, open, setSheetOpen);
   const grabClick = () => {
-    if (!wasDragged()) setOpen((v) => !v);
+    if (!wasDragged()) setSheetOpen(!open);
   };
 
   return (
     <div className={`screen map-screen${open ? ' sheet-open' : ''}`}>
       <div className="map-area" onPointerDown={() => setMenu(null)}>
-        <BaseMap metro={metro}>
+        <BaseMap metro={metro} camera={memory}>
           <CrowdLayer points={points} selectedId={selectedId} onSelect={select} />
-          <MapCamera points={points} selectedId={selectedId} sheetOpen={open} />
+          <MapCamera
+            points={points}
+            selectedId={selectedId}
+            sheetOpen={open}
+            holdCenter={freezeCamera && memory ? memory.center : null}
+            holdZoom={freezeCamera && memory ? memory.zoom : null}
+          />
           <MapSettle onSettle={setBounds} />
+          <RememberMap href={href} selectedId={selectedId} sheetOpen={open} />
         </BaseMap>
       </div>
 
@@ -293,7 +333,7 @@ export function MapScreen() {
             aria-expanded={open}
             aria-label={open ? 'Collapse the list' : 'Expand the list'}
             onClick={grabClick}
-            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setOpen((v) => !v)}
+            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setSheetOpen(!open)}
           >
             <span className="sheet-handle" aria-hidden />
             <div className="sheet-title">{nightLine}</div>
@@ -304,7 +344,12 @@ export function MapScreen() {
               <div className="selected-row">
                 <EventRow event={selected} night={events} selected showDate={selected.date !== date} />
               </div>
-              <Link to={`/event/${selected.id}`} className="gold-button">
+              <Link
+                to={eventPath(selected.id, selected.metroId)}
+                state={{ fromMap: true }}
+                className="gold-button"
+                onClick={() => markOpenedFromMap()}
+              >
                 See this event
                 <ArrowRight />
               </Link>
@@ -323,6 +368,7 @@ export function MapScreen() {
                     showDate={e.date !== date}
                     selected={e.id === selectedId}
                     onPick={() => {
+                      setFreezeCamera(false);
                       setSelectedId(e.id);
                       setOpen(false);
                     }}
@@ -400,35 +446,75 @@ function AreaSwitcher({
 }
 
 /**
- * Words for a forecast that was frozen at save. Low stays hidden, same as the
- * sheet. A bare number is never shown. Null when nothing on the forecast is shown.
+ * Writes the map she is leaving, including zoom, so Back can put it back.
+ * The address is the one from the last map render. The live address may
+ * already be the event page by the time this runs.
  */
-function frozenForecastLine(forecast: NightForecast | undefined): string | null {
-  if (!forecast) return null;
-  const parts: string[] = [];
-  if (forecast.rating != null) {
-    const shown = Number(formatScore(forecast.rating));
-    parts.push(`${scoreLabel(shown)} · ${formatScore(shown)}/10`);
-  }
-  if (forecast.friction && showFriction(forecast.friction)) parts.push(frictionLabel(forecast.friction));
-  return parts.length > 0 ? parts.join(' · ') : null;
+function RememberMap({
+  href,
+  selectedId,
+  sheetOpen,
+}: {
+  href: string;
+  selectedId: string | null;
+  sheetOpen: boolean;
+}) {
+  const map = useContext(MapContext);
+  const latest = useRef({ href, selectedId, sheetOpen, map });
+  latest.current = { href, selectedId, sheetOpen, map };
+
+  useEffect(() => {
+    return () => {
+      const current = latest.current;
+      const live = current.map;
+      if (!live) return;
+      const center = live.getCenter();
+      saveMapMemory({
+        href: current.href,
+        selectedId: current.selectedId,
+        sheetOpen: current.sheetOpen,
+        center: [center.lng, center.lat],
+        zoom: live.getZoom(),
+      });
+    };
+  }, []);
+
+  return null;
 }
 
 /** One quiet card for the soonest saved night still ahead, in any city. */
 function SavedNightCard({ plan }: { plan: NightPlan }) {
-  const forecast = frozenForecastLine(plan.forecast);
+  const [night, setNight] = useState<CrowdEvent[] | null>(null);
+  useEffect(() => {
+    let current = true;
+    getCityDate(plan.metroId, plan.date).then((day) => {
+      if (current) setNight(day.events);
+    });
+    return () => {
+      current = false;
+    };
+  }, [plan.metroId, plan.date]);
+
+  const event = night?.find((item) => item.id === plan.eventId);
+  const title = event && night ? mapTitle(event, night) : plan.title;
   const city = METROS[plan.metroId]?.name;
-  const place = [shortLocalDate(plan.date), city, plan.venue].filter(Boolean).join(' · ');
-  const to = plan.eventId ? `/event/${plan.eventId}` : `/?date=${plan.date}&when=day`;
-  return (
-    <Link to={to} className="saved-night">
-      <span className="saved-night-kicker">
-        <span>Your next night</span>
-        {forecast && <span className="saved-night-frozen">Frozen</span>}
-      </span>
-      <span className="saved-night-title">{plan.title}</span>
+  const place = [shortLocalDate(plan.date), city].filter(Boolean).join(' · ');
+  const body = (
+    <>
+      <span className="saved-night-kicker">Next saved night</span>
+      <span className="saved-night-title">{title}</span>
       {place && <span className="saved-night-meta">{place}</span>}
-      {forecast && <span className="saved-night-forecast">{forecast}</span>}
+    </>
+  );
+  if (!plan.eventId) return <div className="saved-night">{body}</div>;
+  return (
+    <Link
+      to={eventPath(plan.eventId, plan.metroId)}
+      state={{ fromMap: true }}
+      className="saved-night"
+      onClick={() => markOpenedFromMap()}
+    >
+      {body}
     </Link>
   );
 }

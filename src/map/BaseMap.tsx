@@ -14,17 +14,29 @@ export const MapContext = createContext<MapLibreMap | null>(null);
 
 // The plain base map. Crowd, traffic and TV layers go on top of it as
 // separate layers (children), each reading the map from MapContext.
-export function BaseMap({ metro, children }: { metro: Metro; children?: ReactNode }) {
+export function BaseMap({
+  metro,
+  camera,
+  children,
+}: {
+  metro: Metro;
+  /** Used once, when returning to a map she already framed. Later city changes use that city's own center. */
+  camera?: { center: [number, number]; zoom: number } | null;
+  children?: ReactNode;
+}) {
   const container = useRef<HTMLDivElement>(null);
+  const cameraRef = useRef(camera);
   const [map, setMap] = useState<MapLibreMap | null>(null);
 
   useEffect(() => {
     if (!container.current) return;
+    const start = cameraRef.current;
+    cameraRef.current = null;
     const instance = new MapLibreMap({
       container: container.current,
       style: MAP_PROVIDER.styleUrl,
-      center: metro.center,
-      zoom: metro.zoom,
+      center: start?.center ?? metro.center,
+      zoom: start?.zoom ?? metro.zoom,
       dragRotate: false,
       pitchWithRotate: false,
       attributionControl: { compact: true },
