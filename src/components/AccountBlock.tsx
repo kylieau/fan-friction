@@ -74,15 +74,17 @@ export function AccountBlock() {
           inputMode="email"
           autoComplete="email"
           className="account-input"
-          placeholder="Or your email"
+          placeholder="Email me a link"
           aria-label="Email for a sign-in link"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           disabled={busy}
         />
-        <button type="submit" className="link-button account-send" disabled={busy || !email.includes('@')}>
-          Email me a link
-        </button>
+        {email.includes('@') && (
+          <button type="submit" className="link-button account-send" disabled={busy}>
+            Send the link
+          </button>
+        )}
       </form>
       {note && (
         <p className="you-fine" role="status">
