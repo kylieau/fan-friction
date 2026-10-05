@@ -13,39 +13,35 @@ import {
   followRequests,
   getMyProfile,
   getSaveWarning,
-  getSyncStatus,
   subscribeAccount,
   logStats,
-  nightBackup,
   nightFacts,
   ratingForNight,
   subscribePersonalLog,
-  todayIn,
   yourNights,
   type FollowRequest,
   type LoggedNight,
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
+import { GearIcon } from '../components/Icons';
 import { loggedDateLabel } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { eventPath } from '../lib/view';
 
 const TOP = 8;
 
-export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
+export function YouScreen() {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const warning = useSyncExternalStore(subscribePersonalLog, getSaveWarning, getSaveWarning);
-  const sync = useSyncExternalStore(subscribePersonalLog, getSyncStatus, getSyncStatus);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const nights = useMemo(() => yourNights(log), [log]);
-  const today = todayIn(DEFAULT_METRO);
   const [filter, setFilter] = useState('All');
   useEffect(() => {
     clearOpenedFromMap();
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const [exportNote, setExportNote] = useState('');
+  const [tab, setTab] = useState<'nights' | 'stats'>('nights');
   const [handle, setHandle] = useState<string | null>(null);
   const [requests, setRequests] = useState<FollowRequest[]>([]);
 
@@ -83,37 +79,22 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
   const stats = useMemo(() => logStats(shown), [shown]);
   const heaviest = useMemo(() => heaviestNight(shown, ratings), [shown, ratings]);
 
-  const download = () => {
-    const backup = nightBackup(log);
-    const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `fan-friction-nights-${today}.json`;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    URL.revokeObjectURL(url);
-    setExportNote('Downloaded a backup of your nights.');
-  };
+  const filters = (
+    <div className="filter-row" role="group" aria-label="Filter your nights">
+      <FilterChip label="All" pressed={filter === 'All'} onClick={() => setFilter('All')} />
+      {choices.map((choice) => (
+        <FilterChip
+          key={choice.label}
+          label={choice.label}
+          pressed={filter === choice.label}
+          onClick={() => setFilter(choice.label)}
+        />
+      ))}
+    </div>
+  );
 
   const nightsBlock = (
-    <section className="you-block" aria-labelledby="your-nights-heading">
-      <h2 id="your-nights-heading" className="you-heading">
-        Your nights
-      </h2>
-      <div className="filter-row" role="group" aria-label="Filter your nights">
-        <FilterChip label="All" pressed={filter === 'All'} onClick={() => setFilter('All')} />
-        {choices.map((choice) => (
-          <FilterChip
-            key={choice.label}
-            label={choice.label}
-            pressed={filter === choice.label}
-            onClick={() => setFilter(choice.label)}
-          />
-        ))}
-      </div>
-      <Stats stats={stats} filter={filter} heaviest={heaviest} />
+    <section className="you-block" aria-label="Your nights">
       {shown.length === 0 ? (
         <div className="card empty-card">
           <div className="card-title">
@@ -147,31 +128,22 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
         <span className="avatar" aria-hidden>
           {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
         </span>
-        <h1 className="page-title">{account?.displayName ?? 'You'}</h1>
+        <div className="you-who">
+          <h1 className="page-title">{account?.displayName ?? 'You'}</h1>
+          {account && handle && <span className="you-handle">/p/{handle}</span>}
+        </div>
+        <Link to="/you/settings" className="round-button you-gear" aria-label="Settings">
+          <GearIcon />
+        </Link>
       </div>
 
       <AccountBlock />
 
-      <div className="you-tools">
-        <button type="button" className="settings-row" onClick={download}>
-          Export my nights
-        </button>
-        <p className="you-fine">
-          {sync === 'account'
-            ? 'Downloads a JSON backup of your nights. Your account already keeps a copy.'
-            : 'Downloads a JSON backup. Nights you mark are saved on this phone, and a browser clear can erase them.'}
+      {warning && (
+        <p className="you-fine" role="status">
+          {warning}
         </p>
-        {exportNote && (
-          <p className="you-fine" role="status">
-            {exportNote}
-          </p>
-        )}
-        {warning && (
-          <p className="you-fine" role="status">
-            {warning}
-          </p>
-        )}
-      </div>
+      )}
 
       {requests.length > 0 && (
         <section className="you-block" aria-labelledby="requests-heading">
@@ -196,25 +168,18 @@ export function YouScreen({ onShowTips }: { onShowTips: () => void }) {
         </section>
       )}
 
-      {nightsBlock}
-
-      <div className="settings">
-        <div className="settings-heading">Settings</div>
-        {account && (
-          <Link to="/profile/edit" className="settings-row settings-link">
-            Edit profile
-          </Link>
-        )}
-        {account && handle && (
-          <Link to={`/p/${handle}`} className="settings-row settings-link">
-            <span>Your page</span>
-            <span className="settings-value">/p/{handle}</span>
-          </Link>
-        )}
-        <button type="button" className="settings-row" onClick={onShowTips}>
-          Show the tips again
+      <div className="segmented" role="tablist" aria-label="You">
+        <button type="button" role="tab" aria-selected={tab === 'nights'} onClick={() => setTab('nights')}>
+          Nights
+        </button>
+        <button type="button" role="tab" aria-selected={tab === 'stats'} onClick={() => setTab('stats')}>
+          Stats
         </button>
       </div>
+
+      {filters}
+
+      {tab === 'nights' ? nightsBlock : <Stats stats={stats} heaviest={heaviest} />}
     </div>
   );
 }
@@ -229,16 +194,13 @@ function FilterChip({ label, pressed, onClick }: { label: string; pressed: boole
 
 function Stats({
   stats,
-  filter,
   heaviest,
 }: {
   stats: ReturnType<typeof logStats>;
-  filter: string;
   heaviest: number | null;
 }) {
   return (
     <div className="stats-block">
-      <p className="you-fine">{filter === 'All' ? 'All your nights' : `${filter} only`}</p>
       <div className="stat-grid">
         <Stat n={stats.events} label="Nights" />
         <Stat n={stats.venues} label="Venues" />

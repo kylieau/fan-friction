@@ -2,13 +2,11 @@ import { useState, useSyncExternalStore } from 'react';
 import {
   canSignIn,
   getAccount,
-  getSyncStatus,
   isAccountSettling,
   signInWithEmail,
   signInWithGoogle,
   signOut,
   subscribeAccount,
-  subscribePersonalLog,
 } from '../data';
 
 /**
@@ -19,7 +17,6 @@ import {
 export function AccountBlock() {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const settling = useSyncExternalStore(subscribeAccount, isAccountSettling, isAccountSettling);
-  const sync = useSyncExternalStore(subscribePersonalLog, getSyncStatus, getSyncStatus);
   const [email, setEmail] = useState('');
   const [note, setNote] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
@@ -46,13 +43,6 @@ export function AccountBlock() {
     if (!error) setEmail('');
   };
 
-  const leave = async () => {
-    setBusy(true);
-    await signOut();
-    setBusy(false);
-    setNote(null);
-  };
-
   if (settling) {
     return (
       <section className="account-block" aria-label="Account">
@@ -61,37 +51,13 @@ export function AccountBlock() {
     );
   }
 
-  if (account) {
-    return (
-      <section className="account-block" aria-label="Account">
-        <div className="account-row">
-          <div className="account-who">
-            <span className="account-name">{account.displayName ?? account.email ?? 'Signed in'}</span>
-            {account.displayName && account.email && <span className="you-fine">{account.email}</span>}
-          </div>
-          <button type="button" className="link-button" onClick={leave} disabled={busy}>
-            Sign out
-          </button>
-        </div>
-        <p className="you-fine" role="status">
-          {sync === 'loading'
-            ? 'Loading your nights…'
-            : sync === 'account'
-              ? 'Your nights are saved to your account and follow you to any phone.'
-              : 'Saving on this phone for now.'}
-        </p>
-      </section>
-    );
-  }
+  if (account) return null;
 
   return (
     <section className="account-block" aria-label="Account">
       <div className="account-copy">
         <div className="card-title">Keep your nights safe</div>
-        <p className="you-fine">
-          Sign in and your log is saved to an account, so a lost phone or a browser clear can't take it. Private by
-          default. Nothing is posted anywhere.
-        </p>
+        <p className="you-fine">Your log follows you to any phone. Private by default.</p>
       </div>
       <button type="button" className="settings-row account-google" onClick={google} disabled={busy}>
         Continue with Google
@@ -124,5 +90,32 @@ export function AccountBlock() {
         </p>
       )}
     </section>
+  );
+}
+
+/** Who is signed in, with Sign out. Lives on the Settings screen. */
+export function AccountRow({ handle }: { handle: string | null }) {
+  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
+  const [busy, setBusy] = useState(false);
+  if (!account) return null;
+  return (
+    <div className="account-row">
+      <div className="account-who">
+        <span className="account-name">{account.displayName ?? account.email ?? 'Signed in'}</span>
+        {handle && <span className="you-fine">/p/{handle}</span>}
+      </div>
+      <button
+        type="button"
+        className="link-button"
+        disabled={busy}
+        onClick={async () => {
+          setBusy(true);
+          await signOut();
+          setBusy(false);
+        }}
+      >
+        Sign out
+      </button>
+    </div>
   );
 }

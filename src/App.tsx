@@ -10,6 +10,7 @@ import { CompareScreen } from './screens/CompareScreen';
 import { YouScreen } from './screens/YouScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
 import { ProfileEditScreen } from './screens/ProfileEditScreen';
+import { SettingsScreen } from './screens/SettingsScreen';
 import { getHomeId, subscribeHome } from './lib/homeCity';
 import { getPref, setPref } from './lib/prefs';
 
@@ -34,10 +35,11 @@ function Shell() {
           <Route path="/compare" element={<CompareScreen />} />
           <Route path="/p/:handle" element={<ProfileScreen />} />
           <Route path="/profile/edit" element={<ProfileEditScreen />} />
+          <Route path="/you" element={<YouScreen />} />
           <Route
-            path="/you"
+            path="/you/settings"
             element={
-              <YouScreen
+              <SettingsScreen
                 onShowTips={() => {
                   navigate('/');
                   setShowTips(true);

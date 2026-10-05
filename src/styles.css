@@ -2557,3 +2557,36 @@ button {
   color: var(--ink2);
   line-height: 1.4;
 }
+
+.you-who {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.you-who .page-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.you-handle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.you-gear {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.settings-static {
+  display: flex;
+  align-items: center;
+}
+
+.settings-static .account-row {
+  width: 100%;
+}

@@ -37,6 +37,13 @@ This repo is worked on in both Claude Code and Cursor. Before changing shared
 or foundational code, check for in-progress work and flag possible conflicts.
 (`git fetch` and look at `origin/cursor/*` branches and open PRs first.)
 
+## UI copy rule (Kylie, Oct 5, 2026)
+Users are not dumb. They use Letterboxd, Strava and Flighty daily. Don't spend
+screen space explaining patterns they already know: no "this is how others see
+you" banners, no reassurance fine print, no hint text under every control. Put
+utilities (Export, account details, settings) behind a gear, not top and center.
+Follow expert UX patterns, say less.
+
 ## How to explain changes
 Keep explanations high-level and conceptual, not code-level. End with
 questions when anything is unclear.
