@@ -6,7 +6,7 @@
 // start; they are left empty (null) where sources disagree or none was found.
 
 import type { Friction, Occasion } from '../../config/scoreLabels';
-import type { Assessment, CrowdEvent, CrowdFigure, DateRating, LocalDate, LocalTime, Weather } from '../types';
+import type { Assessment, CrowdEvent, CrowdFigure, DateRating, LocalDate, LocalTime, OccasionFacts, Weather } from '../types';
 
 const SOURCE_ID = 'seed';
 
@@ -30,6 +30,9 @@ interface Common {
   crowd?: CrowdFigure[];
   weather?: Weather;
   a: Draft;
+  /** Pre-event facts for the occasion rule (formula v4). The hand call in `a` stays for comparison. */
+  facts?: OccasionFacts;
+  stakes?: { round: string; game?: number };
 }
 
 function game(
@@ -49,6 +52,8 @@ function game(
     crowd: o.crowd ?? [],
     weather: o.weather,
     assessment: draft(o.a),
+    occasionFacts: o.facts,
+    stakes: o.stakes,
     sourceId: SOURCE_ID,
   };
 }
@@ -68,6 +73,7 @@ function show(date: LocalDate, o: Common & { performer: string; genre: string; t
     crowd: o.crowd ?? [],
     weather: o.weather,
     assessment: draft(o.a),
+    occasionFacts: o.facts,
     sourceId: SOURCE_ID,
   };
 }
@@ -89,7 +95,7 @@ const D13 = '2024-04-13';
 export const SEED_EVENTS: CrowdEvent[] = [
   // 1 · Fri 10/25/24
   game(D1, {
-    title: 'World Series Game 1', home: 'dodgers', away: 'yankees', sport: 'baseball',
+    title: 'World Series Game 1', home: 'dodgers', away: 'yankees', sport: 'baseball', facts: { final: true, selloutAnnounced: true }, stakes: { round: 'World Series', game: 1 },
     venue: 'dodger-stadium', start: '17:08', crowd: [soldOut, announced(52394)],
     a: ['Marquee', ['Game 1'], 'Low', 'Nothing bigger was on'],
   }),
@@ -121,13 +127,13 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Major', ['rare LA run'], 'Moderate', 'Different crowd'],
   }),
   show(D1, {
-    performer: "Jeff Lynne's ELO", genre: 'classic rock', venue: 'kia-forum', start: '20:00',
+    performer: "Jeff Lynne's ELO", genre: 'classic rock', facts: { farewell: true }, venue: 'kia-forum', start: '20:00',
     a: ['Major', ['farewell tour'], 'Moderate', 'Different crowd'],
   }),
 
   // 2 · Sat 10/26/24
   game(D2, {
-    title: 'World Series Game 2', home: 'dodgers', away: 'yankees', sport: 'baseball', venue: 'dodger-stadium', start: '17:08', crowd: [announced(52725, 'Baseball-Reference box score; ESPN may differ slightly')],
+    title: 'World Series Game 2', home: 'dodgers', away: 'yankees', sport: 'baseball', facts: { final: true, selloutAnnounced: true }, stakes: { round: 'World Series', game: 2 }, venue: 'dodger-stadium', start: '17:08', crowd: [announced(52725, 'Baseball-Reference box score; ESPN may differ slightly')],
     a: ['Marquee', ['Game 2'], 'Low', 'Nothing bigger was on'],
   }),
   game(D2, {
@@ -135,12 +141,12 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Routine', [], 'Moderate', 'Done before first pitch, but in World Series traffic'],
   }),
   game(D2, {
-    title: 'Galaxy vs. Rapids', home: 'galaxy', away: 'rapids', sport: 'soccer', venue: 'dignity-health-sports-park', start: '20:00',
+    title: 'Galaxy vs. Rapids', home: 'galaxy', away: 'rapids', sport: 'soccer', stakes: { round: 'MLS Cup Playoffs Round One', game: 1 }, venue: 'dignity-health-sports-park', start: '20:00',
     crowd: [announced(24537, "Per the club's match report")],
     a: ['Notable', ['playoff opener'], 'Heavy', 'Same hours as the World Series, same sports crowd'],
   }),
   show(D2, {
-    performer: "Jeff Lynne's ELO", genre: 'classic rock', venue: 'kia-forum', start: '20:00',
+    performer: "Jeff Lynne's ELO", genre: 'classic rock', facts: { farewell: true }, venue: 'kia-forum', start: '20:00',
     a: ['Major', ['farewell tour'], 'Moderate', 'Different crowd'],
   }),
   show(D2, {
@@ -150,7 +156,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
 
   // 3 · Mon 4/28/25
   show(D3, {
-    performer: 'Beyoncé', genre: 'pop', venue: 'sofi-stadium',
+    performer: 'Beyoncé', genre: 'pop', facts: { farewell: true }, venue: 'sofi-stadium',
     a: ['Marquee', ['tour opener'], 'Low', 'Nothing bigger was on'],
   }),
   game(D3, {
@@ -179,16 +185,16 @@ export const SEED_EVENTS: CrowdEvent[] = [
 
   // 5 · Sat 11/19/22
   game(D5, {
-    title: 'UCLA vs. USC', home: 'ucla-football', away: 'usc-football', sport: 'football',
+    title: 'UCLA vs. USC', home: 'ucla-football', away: 'usc-football', sport: 'football', facts: { rivalry: true, bothContending: true },
     venue: 'rose-bowl', start: '17:00', crowd: [announced(70865)],
     a: ['Major', ['rivalry'], 'Moderate', 'Three big events same evening, different crowds'],
   }),
   show(D5, {
-    performer: 'BLACKPINK', genre: 'k-pop', venue: 'bmo-stadium', start: '20:00', crowd: [soldOut],
+    performer: 'BLACKPINK', genre: 'k-pop', facts: { selloutAnnounced: true }, venue: 'bmo-stadium', start: '20:00', crowd: [soldOut],
     a: ['Marquee', ['sold out'], 'Low', 'Different crowd'],
   }),
   show(D5, {
-    performer: 'Elton John', genre: 'classic rock', venue: 'dodger-stadium', start: '20:00',
+    performer: 'Elton John', genre: 'classic rock', facts: { farewell: true }, venue: 'dodger-stadium', start: '20:00',
     a: ['Marquee', ['farewell tour'], 'Low', 'Different crowd'],
   }),
   game(D5, {
@@ -199,7 +205,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
 
   // 6 · Mon 10/27/25
   game(D6, {
-    title: 'World Series Game 3', home: 'dodgers', away: 'blue-jays', sport: 'baseball',
+    title: 'World Series Game 3', home: 'dodgers', away: 'blue-jays', sport: 'baseball', facts: { final: true, selloutAnnounced: true }, stakes: { round: 'World Series', game: 3 },
     venue: 'dodger-stadium', start: '17:00', crowd: [announced(52654)],
     a: ['Marquee', ['first LA game of the Series'], 'Low', 'Nothing bigger was on'],
   }),
@@ -211,7 +217,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
 
   // 7 · Mon 7/22/24 (the baseline)
   game(D7, {
-    title: 'Dodgers vs. Giants', home: 'dodgers', away: 'giants', sport: 'baseball',
+    title: 'Dodgers vs. Giants', home: 'dodgers', away: 'giants', sport: 'baseball', facts: { rivalry: true },
     venue: 'dodger-stadium', start: '19:10', crowd: [announced(49576)],
     a: ['Notable', ['rivalry'], 'Low', 'Nothing else big (the baseline)'],
   }),
@@ -223,7 +229,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Notable', ["NL's top two teams"], 'Moderate', 'Beyoncé 13 mi away, same hours'],
   }),
   show(D8, {
-    performer: 'Beyoncé', genre: 'pop', venue: 'sofi-stadium', start: '20:00', crowd: [soldOut, estimated(51855, 'Average of her three SoFi nights (155,567 tickets, Touring Data)')],
+    performer: 'Beyoncé', genre: 'pop', facts: { selloutAnnounced: true }, venue: 'sofi-stadium', start: '20:00', crowd: [soldOut, estimated(51855, 'Average of her three SoFi nights (155,567 tickets, Touring Data)')],
     a: ['Marquee', ['sold out'], 'Low', 'Nothing bigger was on'],
   }),
 
@@ -234,13 +240,13 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Routine', [], 'Moderate', 'Taylor Swift 30 mi away, Friday traffic'],
   }),
   show(D9, {
-    performer: 'Taylor Swift', title: 'Taylor Swift: Eras Tour', genre: 'pop', venue: 'sofi-stadium', start: '18:30', crowd: [soldOut, estimated(67500, 'Eras Tour average per night (Pollstar); not this night')],
+    performer: 'Taylor Swift', title: 'Taylor Swift: Eras Tour', genre: 'pop', facts: { selloutAnnounced: true }, venue: 'sofi-stadium', start: '18:30', crowd: [soldOut, estimated(67500, 'Eras Tour average per night (Pollstar); not this night')],
     a: ['Marquee', ['sold out'], 'Low', 'Nothing bigger was on'],
   }),
 
   // 10 · Sun 9/10/17
   game(D10, {
-    title: 'Rams vs. Colts', home: 'rams', away: 'colts', sport: 'football', venue: 'coliseum', start: '13:05',
+    title: 'Rams vs. Colts', home: 'rams', away: 'colts', sport: 'football', facts: { opener: true }, venue: 'coliseum', start: '13:05',
     crowd: [announced(60128), { count: 48000, kind: 'estimated', note: 'about this many actually there' }],
     weather: { tempF: 90, note: 'at kickoff' },
     a: ['Notable', ['home opener'], 'Extreme', 'Same start as the Dodgers, day game in an open bowl, 90°F'],
@@ -253,7 +259,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
 
   // 11 · Sun 9/17/17 (all three started within about 45 minutes)
   game(D11, {
-    title: 'Chargers vs. Dolphins', home: 'chargers', away: 'dolphins', sport: 'football',
+    title: 'Chargers vs. Dolphins', home: 'chargers', away: 'dolphins', sport: 'football', facts: { newMarket: true, opener: true },
     venue: 'dignity-health-sports-park', start: '13:05', crowd: [announced(25381)],
     a: ['Notable', ['first LA home game'], 'Extreme', 'Rams and Angels within 47 minutes'],
   }),
@@ -281,7 +287,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
     a: ['Notable', ["new coach's debut"], 'Heavy', '3pm in the heat'],
   }),
   game(D12, {
-    title: 'Dodgers vs. Padres', home: 'dodgers', away: 'padres', sport: 'baseball',
+    title: 'Dodgers vs. Padres', home: 'dodgers', away: 'padres', sport: 'baseball', facts: { rivalry: true },
     venue: 'dodger-stadium', start: '18:10', crowd: [announced(46144)],
     a: ['Notable', ['rivalry'], 'Moderate', 'Night game, after the heat'],
   }),
@@ -292,7 +298,7 @@ export const SEED_EVENTS: CrowdEvent[] = [
 
   // 13 · Sat 4/13/24
   game(D13, {
-    title: 'Dodgers vs. Padres', home: 'dodgers', away: 'padres', sport: 'baseball',
+    title: 'Dodgers vs. Padres', home: 'dodgers', away: 'padres', sport: 'baseball', facts: { rivalry: true },
     venue: 'dodger-stadium', start: '18:10', crowd: [announced(44582)], weather: { rain: true },
     a: ['Notable', ['rivalry'], 'Moderate', 'Rain (light friction)'],
   }),

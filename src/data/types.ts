@@ -66,9 +66,37 @@ export type EventKind = 'game' | 'show' | 'festival' | 'live-broadcast' | 'speci
  * (see product-decisions.md). Sports carry a sport; shows carry a genre.
  */
 export type Audience =
-  | { domain: 'sports'; sport: string }
+  | { domain: 'sports'; sport: string; level?: SportsLevel }
   | { domain: 'music'; genre: string }
   | { domain: 'other'; tag: string };
+
+/** Top pro, lower pro, college, or school. Left off means top pro. */
+export type SportsLevel = 'pro' | 'lower' | 'college' | 'school';
+
+/**
+ * Pre-event facts the occasion rule scores (formula v4, Oct 5, 2026). Every one
+ * is known before the event. Results never appear here.
+ */
+export interface OccasionFacts {
+  /** Championship final (World Series, Super Bowl, a cup final). */
+  final?: boolean;
+  /** Home or season opener. */
+  opener?: boolean;
+  /** A franchise's first game in a new market, or the first game in a new stadium. */
+  newMarket?: boolean;
+  /** A farewell or final game at a venue; a Marquee-tier artist's tour opener or closer. */
+  farewell?: boolean;
+  /** A standing rivalry (Giants, Padres, USC–UCLA). */
+  rivalry?: boolean;
+  /** Both teams at .600 or better after game 40, or both ranked (college). */
+  bothContending?: boolean;
+  /** A sellout announced at least a day ahead. */
+  selloutAnnounced?: boolean;
+  /** A publicized star debut or return. */
+  starReturn?: boolean;
+  /** A narrower story: a star facing a former team, a playoff rematch, a banner night (Kylie, Oct 5). */
+  storyline?: boolean;
+}
 
 /** Where it happens: a venue, a single point (a fan fest) or a route (a parade). */
 export type Place =
@@ -136,6 +164,10 @@ export interface CrowdEvent {
   teams?: { home: string; away: string };
   /** For shows. */
   performer?: string;
+  /** Pre-event facts for the occasion rule. Playoff round and game live in `stakes`. */
+  occasionFacts?: OccasionFacts;
+  /** Invite-only (an awards show, a convention): counts for Gridlock, never Crowd fight. */
+  invited?: boolean;
   /** Crowd is evidence, never an input to the rating. */
   crowd: CrowdFigure[];
   weather?: Weather;
