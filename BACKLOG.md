@@ -3,7 +3,7 @@
 Deferred work and open questions that outlive one session. Remove an item only after checking it against the code. The current snapshot is in `MEMORY_HANDOFF.md`.
 
 ## Next
-The structure pivot (Oct 4, 2026) replaces the old build order. Do not start Traffic, Night story or the rating formula until the pivot plan below is approved. PR #7 is merged (Oct 4 LA seed and map chips); the live site is https://fan-friction.vercel.app.
+The structure pivot (Oct 4, 2026) is approved. The slice in progress is the nightly schedule archive (`docs/schedule-archive.md`): plumbing only, nothing new on screen. Do not start Traffic, Night story, the rating formula, Ticketmaster, or Supabase until she asks. PR #7 is merged (Oct 4 LA seed and map chips); the live site is https://fan-friction.vercel.app.
 
 The old order, now behind the pivot plan: **Step 6 Traffic** (blue corridors, "Drag to your leave time," "Estimate · not live," no red; keep it a crowd read, not a route); **Step 7 leftovers** (post-game results and attendance; BMO/LAFC and Angel City; UCLA basketball; concerts via Ticketmaster, 🚩 ask before any key; **Night story**: event page only, label "The night," a short paragraph plus text links, no embeds, omit when empty, Save/I was there stay above it, hand-seed first); **Step 8 rating formula** (Crowd fight plus Gridlock via OpenStreetMap drive times; hold out 2–3 of the 13 nights; Medium same-sport weight stays the 0.35 draft until fitting).
 
@@ -11,37 +11,42 @@ Parked: favorite cities on the metro switcher, nights-per-city, a rich outdoor F
 
 - **Nights tab is per city/area** (Kylie, 2026-10-04). Same metro scope as the Map switcher. Needs a backend/data mechanism (nights filtered by metro) and visual chrome later. Do not build now.
 
-## Direction pivot (Oct 4, 2026): plan, conflicts and open questions
-Reasoning: `docs/direction.md` (the log leads) and `docs/product-review-decisions.md` (her six decisions, newer where they differ). Kylie said the plan is "directionally right, subject to the second opinion"; she has not approved building it. **Propose, then wait.** Her answers so far: Cursor is finished; the app ships with her own nights pre-filled; Compare stays; Famous nights stays but needs work; Supabase saving moves up.
+## Direction pivot (Oct 4, 2026): approved, with locked answers
+Reasoning: `docs/direction.md` (the log leads) and `docs/product-review-decisions.md` (her six decisions, newer where they differ). Kylie approved the plan and locked the questions below. **This slice is the schedule archive only.** Do not start the later slices until she asks. Her earlier answers still hold: the app ships with her own nights pre-filled; Compare stays; Famous nights stays but needs work; Supabase saving moves up in the plan and stays unconnected until she pastes keys.
 
-### Plan (proposal, in order)
-1. **Nightly schedule archive.** A small daily job saves every listed event for the coming days. Time-sensitive: each day before it starts can only be "reconstructed." Free if it runs as a scheduled GitHub job saving files in the repo; Supabase can take over later. Invisible to users. Needs her OK.
-2. **Data foundation.** The night becomes the core unit (today the date is: ratings, calendar and Map all key off it). Each entry holds **forecast when you planned** (kept as shown, never recalculated; today a plan stores no rating) and **the stamp** (recalculated when the formula improves, with a "last updated" time; "reconstructed" for nights before archiving began). Tiers: pre-listed 1,000+; feeds friction 5,000+ (one event or a cluster of close rooms); manual entry for anything else, which gets a read from nearby big events and moves no one else's. Today `belowFloor` returns no rating at all (`ratingForNight` in `src/data/personalLog.ts`), which is backwards for the new rule. Games and shows are already one data shape; check wording and chips for sports-only assumptions.
-3. **Screens.** Map: a card for the next saved night with its current forecast, and Save (future events) / "I was there" (past events) on each event. You: "Did you go?" item once a saved night passes. Compare: replace the "Which fanbase really shows up?" copy now (copy only, no feature removed), rebuild later around your stats, your nights against each other, any two nights side by side, tour dates. Nights: Famous nights retitled "Were you there?" with "I was there" as the main action, filters not hard rules, personalized once there is data, never framed as "worst night."
-4. **Saved logs in accounts** (Supabase), private by default; link sharing and comparing against someone else's night come later. 🚩 Needs her project URL and public key; free plan has 2 active projects and she uses one; pauses when idle.
-5. **Richer entries.** Final score (automatic for sports), setlist link, who you went with, private one-line note, optional private photo.
-6. **Rating formula** (Step 8) with the same formula for every night, the cluster rule, and capacity-based sizes (`venues.ts` already has capacity by setup; extend it, starting with LA).
+### Locked answers (Oct 4, 2026)
+| Question | Answer |
+|---|---|
+| Stamp lock | 24 hours after the scheduled start. Not 4 AM the next morning. |
+| A night with several events | The 24 hours count from the last scheduled start time that night, whichever event is scheduled last. |
+| Save / I was there | Event page only. The Map list stays as it is, including the gold button "See this event." |
+| Famous nights | Keep the current stamps. Hand-check every stamp before it becomes "Were you there?" |
+| Schedule archive | Yes. Plumbing only; nothing new on screen. See `docs/schedule-archive.md`. |
+| Product risks (will people log, how often, the name, gridlock outside LA, backfilling past nights) | Parked. Not a build step. |
+| Privacy | Private by default. A log is shared only by choice, later. No public profile or feed. |
+| Tweets from the night | Hold. Do not build until access and cost are verified. |
 
-### Conflicts to resolve
-- **Logging threshold wording.** `docs/direction.md` and the firm rule in `AGENTS.md` say events of about 1,000+ can be logged. The review says anything can be logged and 1,000 only decides what is pre-listed. Both need her wording (the AGENTS.md rule is hers, so it was left alone).
-- **Map actions vs. the Oct 4 UI lock.** The sheet has one gold button, "See this event." Adding Save / "I was there" to each row changes the lock and the one-gold-button rule. Which button is gold?
-- **Viewing other people's logs** brings back part of the social network the direction ruled out. Plan: accounts for saving first, private by default, sharing by link or approved friends later, no public profiles or feed.
-- **A stamp that can change** is less like a ticket stub than the direction's metaphor; "last updated" softens it.
+### Plan (approved, in order)
+1. **Nightly schedule archive.** Built as plumbing. A daily job saves the Los Angeles listings for the coming 14 days under `data/schedule-archive/`. A night from before the first file is reconstructed. Users see nothing. Supabase can take over later; it is not connected.
+2. **Data foundation.** Not started. The night becomes the core unit (today the date is: ratings, calendar and Map all key off it). Each entry holds **forecast when you planned** (kept as shown, never recalculated; today a plan stores no rating) and **the stamp** (recalculated when the formula improves, with a "last updated" time; "reconstructed" for nights before archiving began). Tiers: pre-listed 1,000+; feeds friction 5,000+ (one event or a cluster of close rooms); manual entry for anything else, which gets a read from nearby big events and moves no one else's. Today `belowFloor` returns no rating at all (`ratingForNight` in `src/data/personalLog.ts`), which is backwards for the new rule. Games and shows are already one data shape; check wording and chips for sports-only assumptions.
+3. **Screens.** Not started. Map: a card for the next saved night with its current forecast. Save / "I was there" stay on the event page only; the Map list does not gain them. You: "Did you go?" item once a saved night passes. Compare: replace the "Which fanbase really shows up?" copy now (copy only, no feature removed), rebuild later around your stats, your nights against each other, any two nights side by side, tour dates. Nights: Famous nights stays as it is until every stamp is hand-checked, then it can be retitled "Were you there?" with "I was there" as the main action, filters not hard rules, personalized once there is data, never framed as "worst night."
+4. **Saved logs in accounts** (Supabase), private by default; link sharing and comparing against someone else's night come later. Not started. 🚩 Needs her project URL and public key; free plan has 2 active projects and she uses one; pauses when idle.
+5. **Richer entries.** Not started. Final score (automatic for sports), setlist link, who you went with, private one-line note, optional private photo.
+6. **Rating formula** (Step 8), not started, with the same formula for every night, the cluster rule, and capacity-based sizes (`venues.ts` already has capacity by setup; extend it, starting with LA).
+
+### Conflicts
+- **Logging threshold wording.** Still open. `docs/direction.md` and the firm rule in `AGENTS.md` say events of about 1,000+ can be logged. The review says anything can be logged and 1,000 only decides what is pre-listed. Both need her wording (the AGENTS.md rule is hers, so it was left alone).
+- **Map actions vs. the Oct 4 UI lock.** Settled. Save / "I was there" stay on the event page. The Map list and its gold button, "See this event," do not change.
+- **Viewing other people's logs.** Settled for now. Accounts, when they are built, are private by default. Sharing is by choice later. No public profiles or feed. Not started.
+- **A stamp that can change** is less like a ticket stub than the direction's metaphor; "last updated" softens it. Not built.
 - **Unverified claims in the review:** Untappd's opening screen and the API coverage notes were not checked, and one Famous night "couldn't be confirmed." Verify before relying on them; ask her to paste what can't be fetched. Review each data source's terms of use before any Ticketmaster key.
-- **Famous nights stamps** are drafts. Hand-check every stamp and example before the "Were you there?" version goes live. Her own pre-filled nights overlap this list; decide how they appear to a new user.
+- **Famous nights stamps** stay as they are. Hand-check every stamp and example before the "Were you there?" version goes live. Her own pre-filled nights overlap this list; decide how they appear to a new user before that version.
 
 ### Open questions for Kylie
-1. **Lock time:** 24 hours after start (recommended: simpler) or 4 AM local the next morning?
-2. **Which start** does the lock count from when a night has several events? Recommended: the event you logged.
-3. **Map actions:** OK to show Save / "I was there" on each row, and which is the gold button?
-4. **Famous nights:** keep current stamps for now, hand-checked before it goes live as "Were you there?"
-5. **Schedule archive:** may it start now?
-6. **Open product risks to test:** will people log nights out; how often; does the name still fit (a rename is under consideration, keep the display name in one setting); how relevant gridlock is outside LA; whether past nights can be backfilled from public data.
-7. **Privacy defaults** for accounts and shared logs (recommended: private, shared only by choice).
-8. **Tweets from the night:** access and cost unchecked; do not build until verified.
+The eight pivot questions are answered in **Locked answers** above. Do not re-ask them. Still open: the logging-threshold sentence, plus Waiting on Kylie and Research leftovers.
 
 ## Prompt Kylie first thing when a session resumes
-She is in a structure and purpose pivot (Oct 4, 2026). Do not open by starting Traffic. Ask whether she has more UX/UI notes (she said more are coming; the running list and sorting are in `docs/ux-notes.md`) and whether she has anything to paste for the remaining seed data gaps (see Research leftovers). Sort new notes into structural (raise before the next step) and polish (batch after Step 5 or 6).
+The Oct 4 pivot answers are locked (see Direction pivot). Do not open by starting Traffic, and do not re-ask those eight questions. Ask whether she has more UX/UI notes (she said more are coming; the running list and sorting are in `docs/ux-notes.md`) and whether she has anything to paste for the remaining seed data gaps (see Research leftovers). Sort new notes into structural (raise before the next step) and polish (batch after Step 5 or 6).
 
 ## First slice: remaining build steps
 - **Done Oct 3 (Steps 3, a Map rework, and a first slice of Step 7):** Event screen; full-screen Map with a sheet that follows the finger; tappable pins and one selection; why chips; upcoming events from MLB and ESPN on the map with a range dropdown. Left over: sharing sends text plus the link, and the share card should become a night card, not an event card (image version later); dot size and heat still use capacity and the known crowd; the Event screen shows no result block ("The game" / "The show") because the seed has no results; the gold button on the Map was a draft. PR #6 locks it as **See this event**. "I was there" is on the Event screen as of Step 5.
@@ -80,7 +85,7 @@ She is in a structure and purpose pivot (Oct 4, 2026). Do not open by starting T
 ## Saving and accounts
 - **Step 5 saves on this phone** (`src/data/storage/`). A browser clear can erase nights she marked; Export my nights is the backup. The seeded log ships with the app. Local storage plus Export stays the store until the move below.
 - **Supabase direction (Kylie, Oct 4, 2026, she agreed):** catalog and seed events should live in Supabase as shared truth, not only repo JSON. Schedules and crowd figures are shared; local JSON is a spike that gets painful once nightly updates or more cities land. You-tab personal logs (I was there, notes, plans) should also move to Supabase eventually, for phone-to-laptop sync and so a browser clear does not wipe marks.
-- **Order:** moved up by the pivot (Oct 4): saved logs in accounts are the answer to an empty-log risk and to phone-only loss. Catalog events first, then You, only after she pastes keys. Do not start before the pivot plan is approved.
+- **Order:** moved up by the pivot (Oct 4): saved logs in accounts are the answer to an empty-log risk and to phone-only loss. Catalog events first, then You, only after she pastes keys. The plan is approved. Still do not connect Supabase until those keys exist. The schedule archive does not use it.
 - She does not need to do anything in Supabase right now. Still waiting on her project URL and public anon key. 🚩 The free plan allows 2 active projects per account and she already uses one. It also pauses after about a week idle. The adapter must not call the network until those keys exist.
 - Simple accounts, right after the baseline build.
 
@@ -94,6 +99,7 @@ She is in a structure and purpose pivot (Oct 4, 2026). Do not open by starting T
 - Name clearance before any public launch (two podcasts are named Fan Friction).
 
 ## Tech housekeeping
+- **Schedule archive** (`docs/schedule-archive.md`): `npm run archive-schedule` writes `data/schedule-archive/la/YYYY-MM-DD.json`. GitHub Actions runs it nightly and commits to `main`. A feed failure writes nothing. Archive-only commits skip the Vercel deploy. The map still gets an empty list when a live feed is down; only the archive treats that as a failed run.
 - **ESPN schedule feed (`src/data/sources/espnSource.ts`) is unofficial.** It can change without notice, and it answers 403 (no CORS headers) to "HeadlessChrome" user agents, so screenshot scripts must send a normal browser user agent. MLB's feed (`mlbSource.ts`) is the official free one. Both only serve today onward; past dates come from the seed.
 - ESPN's feed fails quietly (empty list) and is cached for the session, including an empty result after a failure; consider not caching failures.
 - Sheet drag (`src/lib/useSheetDrag.ts`) uses touch events on the sheet; mouse dragging isn't supported (a click on the grabber toggles). Smoothness on a real phone is untested; Kylie asked for it twice.

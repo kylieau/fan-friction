@@ -146,3 +146,20 @@ Outside user testing isn't planned for now. The answer instead is accounts:
 - Setlist.fm and Live Nation, Ara: attended-concert profiles; Live Nation ownership since 2011
 
 Untappd's opening screen and the API coverage notes in section 5 come from the second review and were not checked separately.
+
+## Locked answers (Oct 4, 2026, after this review)
+
+Kylie locked these after the review above. The review text is unchanged. The same answers are in `BACKLOG.md`.
+
+| Question | Locked answer |
+|---|---|
+| Stamp lock | 24 hours after the scheduled start. Not 4 AM the next morning. |
+| A night with several events | The 24 hours count from the last scheduled start time that night, whichever event is scheduled last. |
+| Save / I was there | Event page only. The Map list stays as it is. |
+| Famous nights | Keep the current stamps. Hand-check every stamp before any "Were you there?" version. |
+| Schedule archive | Yes. Plumbing only. See `docs/schedule-archive.md`. |
+| Product risks | Parked. Not a build step. |
+| Privacy | Private by default. A log is shared only by choice, later. |
+| Tweets from the night | Hold. Do not build until access and cost are verified. |
+
+The archive does not show anything in the app. A night from before the first saved schedule is reconstructed, as section 2 describes. That word is not on screen yet. The open items above for the archive, the lock time, and privacy defaults are decided by this table. The venue capacity table, the Compare copy, the Famous-night hand check, and the terms-of-use review are still open.
