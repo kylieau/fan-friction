@@ -11,6 +11,8 @@ import { YouScreen } from './screens/YouScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
 import { ProfileEditScreen } from './screens/ProfileEditScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
+import { FavoritesScreen } from './screens/FavoritesScreen';
+import { FavoritePage } from './screens/FavoritePage';
 import { getHomeId, subscribeHome } from './lib/homeCity';
 import { getPref, setPref } from './lib/prefs';
 
@@ -32,6 +34,8 @@ function Shell() {
           <Route path="/" element={<MapScreen />} />
           <Route path="/nights" element={<NightsScreen />} />
           <Route path="/event/:id" element={<EventScreen />} />
+          <Route path="/favorites" element={<FavoritesScreen />} />
+          <Route path="/favorites/:kind/:id" element={<FavoritePage />} />
           <Route path="/compare" element={<CompareScreen />} />
           <Route path="/p/:handle" element={<ProfileScreen />} />
           <Route path="/profile/edit" element={<ProfileEditScreen />} />

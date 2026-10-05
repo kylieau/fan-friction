@@ -156,6 +156,15 @@ export async function searchNights(metroId: string, query: string): Promise<Nigh
 
 export { VENUES, venueNameOn, capacityOn } from './venues';
 export { TEAMS } from './teams';
+export {
+  eventMatches,
+  favoriteFor,
+  favoriteKey,
+  favoriteMark,
+  kindLabel,
+  nightMatches,
+  suggestionsFor,
+} from './favorites';
 export { audienceOverlap } from './audience';
 export {
   canSignIn,
@@ -213,6 +222,9 @@ export {
   getPersonalLog,
   getSaveWarning,
   getSyncStatus,
+  favoritesOf,
+  isFavorite,
+  toggleFavorite,
   isPlanned,
   isWasThere,
   logStats,

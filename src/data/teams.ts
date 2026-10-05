@@ -2,10 +2,11 @@
 
 import type { Team } from './types';
 
-const team = (id: string, name: string, shortName: string, league: string, sport: string, metroId?: string): Team => ({
+const team = (id: string, name: string, shortName: string, league: string, sport: string, metroId?: string, abbr?: string): Team => ({
   id,
   name,
   shortName,
+  abbr,
   league,
   sport,
   metroId,
@@ -13,17 +14,17 @@ const team = (id: string, name: string, shortName: string, league: string, sport
 
 const LIST: Team[] = [
   // LA
-  team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la'),
-  team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la'),
-  team('lakers', 'Los Angeles Lakers', 'Lakers', 'NBA', 'basketball', 'la'),
-  team('clippers', 'LA Clippers', 'Clippers', 'NBA', 'basketball', 'la'),
-  team('kings', 'Los Angeles Kings', 'Kings', 'NHL', 'hockey', 'la'),
-  team('ducks', 'Anaheim Ducks', 'Ducks', 'NHL', 'hockey', 'la'),
-  team('galaxy', 'LA Galaxy', 'Galaxy', 'MLS', 'soccer', 'la'),
-  team('rams', 'Los Angeles Rams', 'Rams', 'NFL', 'football', 'la'),
-  team('chargers', 'Los Angeles Chargers', 'Chargers', 'NFL', 'football', 'la'),
-  team('usc-football', 'USC Trojans', 'USC', 'College football', 'football', 'la'),
-  team('ucla-football', 'UCLA Bruins', 'UCLA', 'College football', 'football', 'la'),
+  team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
+  team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),
+  team('lakers', 'Los Angeles Lakers', 'Lakers', 'NBA', 'basketball', 'la', 'LAL'),
+  team('clippers', 'LA Clippers', 'Clippers', 'NBA', 'basketball', 'la', 'LAC'),
+  team('kings', 'Los Angeles Kings', 'Kings', 'NHL', 'hockey', 'la', 'LAK'),
+  team('ducks', 'Anaheim Ducks', 'Ducks', 'NHL', 'hockey', 'la', 'ANA'),
+  team('galaxy', 'LA Galaxy', 'Galaxy', 'MLS', 'soccer', 'la', 'LAG'),
+  team('rams', 'Los Angeles Rams', 'Rams', 'NFL', 'football', 'la', 'LAR'),
+  team('chargers', 'Los Angeles Chargers', 'Chargers', 'NFL', 'football', 'la', 'LAC'),
+  team('usc-football', 'USC Trojans', 'USC', 'College football', 'football', 'la', 'USC'),
+  team('ucla-football', 'UCLA Bruins', 'UCLA', 'College football', 'football', 'la', 'UCLA'),
   // Visitors
   team('yankees', 'New York Yankees', 'Yankees', 'MLB', 'baseball'),
   team('blue-jays', 'Toronto Blue Jays', 'Blue Jays', 'MLB', 'baseball'),

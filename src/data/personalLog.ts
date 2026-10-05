@@ -9,6 +9,8 @@ import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
 import { clearPhoneCopy, isSavingToAccount, mergeLogs, nightStore, readSavedLog, setStoreAccount } from './storage';
 import { onAccountChange } from './account';
+import { favoriteKey, favoritesFromLog } from './favorites';
+import type { Favorite } from './favorites';
 import { asMetroNight, createStamp, forecastBeforeStart, isStampLocked, ratingFromNight } from './night';
 import { seedEventsOn } from './sources/seedSource';
 import type { CrowdEvent, LoggedNight, NightPlan, NightStamp, PersonalLog, YouOrder } from './types';
@@ -386,6 +388,29 @@ export function ratingForNight(night: LoggedNight, ratings: ReadonlyMap<string, 
   const events =
     night.when.precision === 'day' ? seedEventsOn(metroId, night.when.sort) : [];
   return ratingFromNight(night, ratings, events);
+}
+
+/**
+ * The favorites on a log. A log that has never had any gets a first set from
+ * its own nights (Kylie's tab fills itself; a new person's stays empty), saved
+ * on the next change so it is derived only once.
+ */
+export function favoritesOf(log: PersonalLog = snapshot): Favorite[] {
+  return log.favorites ?? favoritesFromLog(yourNights(log));
+}
+
+export function isFavorite(fav: Pick<Favorite, 'kind' | 'id'>, log: PersonalLog = snapshot): boolean {
+  const key = favoriteKey(fav);
+  return favoritesOf(log).some((item) => favoriteKey(item) === key);
+}
+
+export function toggleFavorite(fav: Favorite) {
+  const current = favoritesOf(snapshot);
+  const key = favoriteKey(fav);
+  const next = current.some((item) => favoriteKey(item) === key)
+    ? current.filter((item) => favoriteKey(item) !== key)
+    : [...current, fav];
+  commit({ ...snapshot, favorites: next });
 }
 
 export function nightBackup(log: PersonalLog = snapshot): NightBackup {

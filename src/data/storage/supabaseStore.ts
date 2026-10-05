@@ -8,7 +8,7 @@
 
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { LoggedNight, NightPlan, PersonalLog, YouOrder } from '../types';
-import { EMPTY_LOG } from './localStore';
+import { EMPTY_LOG, readFavorites } from './localStore';
 import type { NightStore } from './types';
 
 interface NightRow {
@@ -43,6 +43,7 @@ interface SettingsRow {
   user_id: string;
   you_order: string;
   hidden_seed_ids: string[];
+  data?: { favorites?: unknown };
 }
 
 function nightRow(userId: string, night: LoggedNight): NightRow {
@@ -121,6 +122,7 @@ export function createSupabaseNightStore(client: SupabaseClient, userId: () => s
           ...row.data,
         })),
         order: asOrder(settings?.you_order ?? EMPTY_LOG.order),
+        favorites: readFavorites(settings?.data?.favorites),
       };
     },
 
@@ -162,7 +164,12 @@ export function createSupabaseNightStore(client: SupabaseClient, userId: () => s
       }
 
       await must(
-        client.from('settings').upsert({ user_id: id, you_order: log.order, hidden_seed_ids: log.hiddenSeedIds }),
+        client.from('settings').upsert({
+          user_id: id,
+          you_order: log.order,
+          hidden_seed_ids: log.hiddenSeedIds,
+          data: { favorites: log.favorites ?? [] },
+        }),
       );
     },
   };

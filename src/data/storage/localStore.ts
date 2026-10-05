@@ -3,7 +3,7 @@
 
 import { APP } from '../../config/app';
 import { parseStamp } from '../night';
-import type { DatePrecision, LoggedNight, LoggedWhen, NightPlan, PersonalLog, YouOrder } from '../types';
+import type { DatePrecision, Favorite, LoggedNight, LoggedWhen, NightPlan, PersonalLog, YouOrder } from '../types';
 import type { NightStore } from './types';
 
 const KEY = `${APP.slug}:your-nights`;
@@ -59,6 +59,20 @@ function cleanPlan(plan: NightPlan): NightPlan {
   return next;
 }
 
+const KINDS = ['team', 'artist', 'venue', 'festival'];
+
+function isFavorite(value: unknown): value is Favorite {
+  if (!value || typeof value !== 'object') return false;
+  const fav = value as Favorite;
+  return KINDS.includes(fav.kind) && typeof fav.id === 'string' && typeof fav.label === 'string';
+}
+
+/** Favorites as saved, or undefined when this log has never had any (so they get derived once). */
+export function readFavorites(value: unknown): Favorite[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  return value.filter(isFavorite);
+}
+
 function asOrder(value: unknown): YouOrder {
   return value === 'nights-first' ? 'nights-first' : 'plans-first';
 }
@@ -76,6 +90,7 @@ export function readLocalLog(): PersonalLog {
       added: Array.isArray(parsed.added) ? parsed.added.filter(isNight).map(cleanNight) : [],
       plans: Array.isArray(parsed.plans) ? parsed.plans.filter(isPlan).map(cleanPlan) : [],
       order: asOrder(parsed.order),
+      favorites: readFavorites(parsed.favorites),
     };
   } catch {
     return EMPTY_LOG;

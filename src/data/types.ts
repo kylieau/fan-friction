@@ -47,6 +47,8 @@ export interface Team {
   id: string;
   name: string;
   shortName: string;
+  /** Scoreboard abbreviation, "LAD". Used for the mark on Favorites. */
+  abbr?: string;
   league: string;
   sport: string;
   /** Set for teams based in a metro the app covers; left off for visitors. */
@@ -361,4 +363,20 @@ export interface PersonalLog {
   added: LoggedNight[];
   plans: NightPlan[];
   order: YouOrder;
+  /**
+   * Teams, artists, venues and festivals followed (the Favorites tab). Absent on
+   * a log that has never been favorited from; the app then derives a first set
+   * from the nights in it (empty for a new person) and saves that.
+   */
+  favorites?: Favorite[];
+}
+
+export type FavoriteKind = 'team' | 'artist' | 'venue' | 'festival';
+
+export interface Favorite {
+  kind: FavoriteKind;
+  id: string;
+  label: string;
+  teamId?: string;
+  venueId?: string;
 }

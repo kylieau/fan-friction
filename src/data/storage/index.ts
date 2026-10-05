@@ -69,5 +69,16 @@ export function mergeLogs(account: PersonalLog, phone: PersonalLog): PersonalLog
     added: [...nights.values()],
     plans: [...plans.values()],
     order: account.order,
+    favorites: mergeFavorites(account.favorites, phone.favorites),
   };
+}
+
+function mergeFavorites(a?: PersonalLog['favorites'], b?: PersonalLog['favorites']) {
+  if (!a && !b) return undefined;
+  const seen = new Map<string, NonNullable<PersonalLog['favorites']>[number]>();
+  for (const fav of [...(a ?? []), ...(b ?? [])]) {
+    const key = `${fav.kind}:${fav.id}`;
+    if (!seen.has(key)) seen.set(key, fav);
+  }
+  return [...seen.values()];
 }
