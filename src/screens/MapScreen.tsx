@@ -553,7 +553,7 @@ function SavedNightCard({ plan }: { plan: NightPlan }) {
   const place = [shortLocalDate(plan.date), city].filter(Boolean).join(' · ');
   const body = (
     <>
-      <span className="saved-night-kicker">Next saved night</span>
+      <span className="saved-night-kicker">Next saved date</span>
       <span className="saved-night-title">{title}</span>
       {place && <span className="saved-night-meta">{place}</span>}
     </>

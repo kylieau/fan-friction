@@ -3,7 +3,7 @@ import { CalendarIcon, MapIcon, PersonIcon, StarIcon } from './Icons';
 
 const TABS = [
   { to: '/', label: 'Map', Icon: MapIcon },
-  { to: '/nights', label: 'Nights', Icon: CalendarIcon },
+  { to: '/nights', label: 'Calendar', Icon: CalendarIcon },
   // Favorites took Compare's place (Kylie, Oct 5). Compare's screen stays reachable at /compare.
   { to: '/favorites', label: 'Favorites', Icon: StarIcon },
   { to: '/you', label: 'You', Icon: PersonIcon },

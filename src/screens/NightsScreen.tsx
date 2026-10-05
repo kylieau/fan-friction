@@ -80,7 +80,7 @@ export function NightsScreen() {
 
   return (
     <div className="screen page">
-      <h1 className="page-title">Nights</h1>
+      <h1 className="page-title">Calendar</h1>
       <div className="search-box">
         <label className="search-field">
           <SearchIcon />
@@ -152,7 +152,7 @@ export function NightsScreen() {
 
           {onThisDay && (
             <section className="famous">
-              <h2 className="section-title">On this night</h2>
+              <h2 className="section-title">On this date</h2>
               <ul className="famous-list">
                 <li>
                   <NightRow

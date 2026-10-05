@@ -120,7 +120,7 @@ export function ProfileScreen() {
       </div>
 
       <div className="stat-grid">
-        <Stat n={nights.length} label="Nights" />
+        <Stat n={nights.length} label="Events" />
         <Stat n={venues} label="Venues" />
         <HeaviestStat rating={heaviest} />
       </div>
@@ -143,17 +143,17 @@ export function ProfileScreen() {
 
       <section className="you-block" aria-labelledby="profile-nights-heading">
         <h2 id="profile-nights-heading" className="you-heading">
-          Nights
+          Events
         </h2>
         {nights.length === 0 ? (
           <div className="card empty-card">
             <div className="card-title">
               {mine
-                ? 'No nights yet. Find one on the map.'
+                ? 'No events yet. Find one on the map.'
                 : profile.visibility === 'anyone'
-                  ? 'No nights yet.'
+                  ? 'No events yet.'
                   : profile.visibility === 'approved'
-                    ? 'Nights are shared with approved followers.'
+                    ? 'Events are shared with approved followers.'
                     : 'This log is private.'}
             </div>
           </div>

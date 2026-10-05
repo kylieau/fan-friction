@@ -123,7 +123,7 @@ export function FavoritePage() {
       </div>
 
       <div className="stat-grid">
-        <Stat n={mine.length} label="Your nights" />
+        <Stat n={mine.length} label="Your events" />
         <HeaviestStat rating={heaviest} />
         <Stat n={friendCount} label="Friends went" />
       </div>
@@ -175,7 +175,7 @@ export function FavoritePage() {
 
       <section className="you-block" aria-labelledby="fav-mine">
         <h2 id="fav-mine" className="you-heading">
-          Your nights
+          Your events
         </h2>
         {mine.length === 0 ? (
           <div className="card empty-card">

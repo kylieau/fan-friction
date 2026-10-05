@@ -269,7 +269,7 @@ export function FavoritesScreen() {
 
 function subFor(fav: Favorite, count: number): string {
   const kind = KINDS.find((k) => k.kind === fav.kind)?.label ?? '';
-  return count > 0 ? `${kind} · ${count} ${count === 1 ? 'night' : 'nights'}` : kind;
+  return count > 0 ? `${kind} · ${count} ${count === 1 ? 'event' : 'events'}` : kind;
 }
 
 export function favPath(fav: Pick<Favorite, 'kind' | 'id'>): string {

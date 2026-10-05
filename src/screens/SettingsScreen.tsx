@@ -92,12 +92,12 @@ export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
       </div>
 
       <div className="settings">
-        <div className="settings-heading">Your nights</div>
+        <div className="settings-heading">Your events</div>
         <button type="button" className="settings-row settings-link" onClick={download}>
-          <span>Export my nights</span>
+          <span>Export my events</span>
           {exportNote && <span className="settings-value">{exportNote}</span>}
         </button>
-        <p className="you-fine">A JSON file of every night and plan.</p>
+        <p className="you-fine">A JSON file of every event and plan.</p>
       </div>
 
       <div className="settings">

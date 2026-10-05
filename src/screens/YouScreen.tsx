@@ -86,7 +86,7 @@ export function YouScreen() {
   const heaviest = useMemo(() => heaviestNight(shown, ratings), [shown, ratings]);
 
   const filters = (
-    <div className="filter-row" role="group" aria-label="Filter your nights">
+    <div className="filter-row" role="group" aria-label="Filter your events">
       <FilterChip label="All" pressed={filter === 'All'} onClick={() => setFilter('All')} />
       {choices.map((choice) => (
         <FilterChip
@@ -100,13 +100,13 @@ export function YouScreen() {
   );
 
   const nightsBlock = (
-    <section className="you-block" aria-label="Your nights">
+    <section className="you-block" aria-label="Your events">
       {nights.length === 0 ? (
         <div className="card empty-card">
           <div className="card-title">
             {canSignIn() && !account
-              ? 'No nights on this phone. Sign in to see yours, or find one on the map.'
-              : 'No nights yet. Find one on the map.'}
+              ? 'No events on this phone. Sign in to see yours, or find one on the map.'
+              : 'No events yet. Find one on the map.'}
           </div>
         </div>
       ) : (
@@ -302,7 +302,7 @@ function Stats({
   return (
     <div className="stats-block">
       <div className="stat-grid">
-        <Stat n={stats.events} label="Nights" />
+        <Stat n={stats.events} label="Events" />
         <Stat n={stats.venues} label="Venues" />
         <HeaviestStat rating={heaviest} />
       </div>

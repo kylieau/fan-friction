@@ -12,16 +12,16 @@ import {
 } from '../data';
 
 const CHOICES: { value: Visibility; title: string; body: string }[] = [
-  { value: 'only_me', title: 'Only me', body: 'Your nights are private. The default.' },
+  { value: 'only_me', title: 'Only me', body: 'Your events are private. The default.' },
   {
     value: 'approved',
     title: 'People I approve',
-    body: 'Anyone can ask to follow you. Only people you approve see your nights.',
+    body: 'Anyone can ask to follow you. Only people you approve see your events.',
   },
   {
     value: 'anyone',
     title: 'Anyone',
-    body: 'Anyone with your link can see your nights and follow you. Private notes stay private.',
+    body: 'Anyone with your link can see your events and follow you. Private notes stay private.',
   },
 ];
 
@@ -108,7 +108,7 @@ export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
         </label>
 
         <fieldset className="field choices">
-          <legend className="field-label">Who can see your nights</legend>
+          <legend className="field-label">Who can see your events</legend>
           {CHOICES.map((choice) => (
             <label key={choice.value} className={`choice${visibility === choice.value ? ' on' : ''}`}>
               <input
