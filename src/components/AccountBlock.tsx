@@ -56,8 +56,8 @@ export function AccountBlock() {
   return (
     <section className="account-block" aria-label="Account">
       <div className="account-copy">
+        {/* Placeholder tagline (Kylie, Oct 5): one line, to be replaced. */}
         <div className="card-title">Keep your nights safe</div>
-        <p className="you-fine">Your log follows you to any phone. Private by default.</p>
       </div>
       <button type="button" className="settings-row account-google" onClick={google} disabled={busy}>
         Continue with Google

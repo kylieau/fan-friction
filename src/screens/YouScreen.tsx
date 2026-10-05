@@ -180,14 +180,15 @@ export function YouScreen() {
       )}
 
       <div className="segmented" role="tablist" aria-label="You">
+        {/* "Events", not "Nights": the bottom bar already has a Nights tab (Kylie, Oct 5). */}
         <button type="button" role="tab" aria-selected={tab === 'nights'} onClick={() => setTab('nights')}>
-          Nights
-        </button>
-        <button type="button" role="tab" aria-selected={tab === 'stats'} onClick={() => setTab('stats')}>
-          Stats
+          Events
         </button>
         <button type="button" role="tab" aria-selected={tab === 'friends'} onClick={() => setTab('friends')}>
           Friends
+        </button>
+        <button type="button" role="tab" aria-selected={tab === 'stats'} onClick={() => setTab('stats')}>
+          Stats
         </button>
       </div>
 
