@@ -1,7 +1,7 @@
 import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { frictionLabel, showFriction } from '../config/scoreLabels';
+import { frictionLabel, frictionVerdictTitle, showFriction } from '../config/scoreLabels';
 import { feelsLikeLabel, isOpenAir, weatherForEvent, weatherGlyph, weatherRangeForEvent } from '../data';
 import {
   eventFacts,
@@ -150,7 +150,7 @@ export function EventScreen() {
 
       {a && showFriction(a.friction) && (
         <section className="card verdict">
-          <div className="verdict-word">{frictionLabel(a.friction)}</div>
+          <div className="verdict-word">{frictionVerdictTitle(a.friction)}</div>
           <div className="verdict-why">{a.why}</div>
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
           {a.status === 'formula' && <div className="draft-note">Formula v4 · placeholder numbers until tuned.</div>}

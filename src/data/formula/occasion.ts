@@ -28,7 +28,7 @@ function bookingPoints(event: CrowdEvent): number {
   return 1;
 }
 
-/** True when the same performer plays the same metro more than once within a week. */
+/** True when the same performer plays the same metro three or more times within a week (a two-night stand is ordinary; Kylie, Oct 5). */
 function multiNightRun(event: CrowdEvent): boolean {
   if (!event.performer) return false;
   const [y, m, d] = event.date.split('-').map(Number);
@@ -37,7 +37,7 @@ function multiNightRun(event: CrowdEvent): boolean {
     const date = new Date(Date.UTC(y, m - 1, d + offset)).toISOString().slice(0, 10);
     count += seedEventsOn(event.metroId, date).filter((e) => e.performer === event.performer).length;
   }
-  return count > 1;
+  return count >= 3;
 }
 
 /** The points each fact is worth. Kylie's Oct 5 rulings: new market 3, storyline 1, concerts from the booking. */

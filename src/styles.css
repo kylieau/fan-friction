@@ -1078,12 +1078,12 @@ button {
   color: var(--ink);
 }
 
-.cal-day.light {
+.cal-day.mild {
   background: var(--water);
   color: var(--ink);
 }
 
-.cal-day.mid {
+.cal-day.spicy {
   background: var(--paleBlue);
   color: var(--ink);
 }
@@ -2229,12 +2229,12 @@ button {
   color: var(--ink);
 }
 
-.log-score.light {
+.log-score.mild {
   background: var(--water);
   color: var(--ink);
 }
 
-.log-score.mid {
+.log-score.spicy {
   background: var(--paleBlue);
   color: var(--ink);
 }
@@ -2847,8 +2847,8 @@ button {
 }
 
 .read-big.chill { background: #e4eef6; color: var(--ink); }
-.read-big.light { background: var(--water); color: var(--ink); }
-.read-big.mid { background: var(--paleBlue); color: var(--ink); }
+.read-big.mild { background: var(--water); color: var(--ink); }
+.read-big.spicy { background: var(--paleBlue); color: var(--ink); }
 .read-big.brutal { background: var(--dodger); color: var(--card); }
 .read-big.cooked { background: var(--ink); color: var(--gold); }
 
@@ -3228,6 +3228,16 @@ button {
   text-transform: uppercase;
 }
 
+.day-cell.today .day-name::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  margin: 2px auto 0;
+  border-radius: 2px;
+  background: currentColor;
+}
+
 .day-num {
   font-variant-numeric: tabular-nums;
 }
@@ -3247,11 +3257,15 @@ button {
 }
 
 .month-sheet-top {
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: center;
-  padding: 8px 16px 0;
+  padding: 8px 16px 4px;
+  min-height: 40px;
+}
+
+.month-sheet-top .month-sheet-handle {
+  grid-column: 2;
 }
 
 .month-sheet-handle {
@@ -3262,9 +3276,8 @@ button {
 }
 
 .month-sheet-done {
-  position: absolute;
-  right: 16px;
-  top: 2px;
+  grid-column: 3;
+  justify-self: end;
   color: var(--dodger);
 }
 
@@ -3278,4 +3291,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.home-page {
+  position: relative;
 }

@@ -96,7 +96,7 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Do
 
 ## Formula tuning (Oct 5)
 - World Series G1 on 10/25/24 reads Heavy friction (score 6.8): five competitors overwhelm the Marquee pull factor 1.6. Options: raise Marquee m, or keep a residual shield on the verdict.
-- Artists have no occasion input: Taylor Swift / Beyoncé read Routine. Add a headliner-tier fact (stadium headliner 2, arena 1) or similar; Kylie to rule.
+- Concert occasion from the booking is in (Oct 5). Open: whether a 2-night stand should count (currently no; 3+ nights +1). Gilmour reads Notable; a "rare run" storyline point would make it Major.
 - Famous nights show the curated headline with the formula number; the formula's own why lines ("8 big events, 40,880 seats in a fight…") read technical; refine copy.
 - All constants are placeholders (tier weights 0.7/0.35/0.15, pull 1/1.1/1.3/1.6, S₀ 10,000, event scale 14, date scale 2.5, heat floor 85°F, gridlock scale 7.5, spill 0.15/0.05). Tune on attendance with held-out dates (review §11).
 - Verdict bands from an event score: <3 Low, <5.5 Moderate, <8 Heavy, else Extreme (placeholder).

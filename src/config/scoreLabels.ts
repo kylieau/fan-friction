@@ -21,13 +21,13 @@ export function formatScore(score: number): string {
   return (Math.round(score * 10) / 10).toFixed(1);
 }
 
-/** The shade band for a date rating: Chill, Light, Mid, Brutal, Cooked. */
-export type ScoreBand = 'chill' | 'light' | 'mid' | 'brutal' | 'cooked';
+/** The shade band for a date rating: Chill, Mild, Spicy, Brutal, Cooked. */
+export type ScoreBand = 'chill' | 'mild' | 'spicy' | 'brutal' | 'cooked';
 
 export function scoreBand(score: number): ScoreBand {
   if (score <= 2) return 'chill';
-  if (score <= 4) return 'light';
-  if (score <= 6) return 'mid';
+  if (score <= 4) return 'mild';
+  if (score <= 6) return 'spicy';
   if (score <= 8) return 'brutal';
   return 'cooked';
 }
@@ -41,6 +41,8 @@ export const FRICTION_LEVELS = ['Low', 'Moderate', 'Heavy', 'Extreme'] as const;
 export type Friction = (typeof FRICTION_LEVELS)[number];
 
 export const frictionLabel = (level: Friction) => `${level} friction`;
+/** The event page's verdict title: the event is dealing with it (Kylie, Oct 5). */
+export const frictionVerdictTitle = (level: Friction) => `Fighting ${level.toLowerCase()} friction`;
 
 // Low friction is kept in the data but never shown: only Moderate and up get a chip.
 export const showFriction = (level: Friction) => level !== 'Low';

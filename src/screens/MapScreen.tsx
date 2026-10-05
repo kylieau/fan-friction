@@ -37,7 +37,7 @@ import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { getHomeId, setHomeId } from '../lib/homeCity';
 import { mapPath, datePath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
-import { CalendarPanel } from './CalendarScreen';
+import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 
 type Mode = 'crowds' | 'traffic';
@@ -412,25 +412,16 @@ export function MapScreen() {
       </section>
 
       {monthOpen && (
-        <div className="month-sheet" role="dialog" aria-modal="true" aria-label="Find a date">
-          <div className="month-sheet-top">
-            <span className="month-sheet-handle" aria-hidden />
-            <button type="button" className="link-button month-sheet-done" onClick={() => setMonthOpen(false)}>
-              Done
-            </button>
-          </div>
-          <div className="month-sheet-body">
-            <CalendarPanel
-              metro={metro}
-              today={today}
-              focus={span === 'day' ? date : null}
-              onPick={(picked) => {
-                setMonthOpen(false);
-                navigate(mapPath({ metroId: metro.id, date: picked, today, when: 'day' }));
-              }}
-            />
-          </div>
-        </div>
+        <MonthSheet
+          metro={metro}
+          today={today}
+          focus={span === 'day' ? date : null}
+          onClose={() => setMonthOpen(false)}
+          onPick={(picked) => {
+            setMonthOpen(false);
+            navigate(mapPath({ metroId: metro.id, date: picked, today, when: 'day' }));
+          }}
+        />
       )}
     </div>
   );

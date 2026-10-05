@@ -2,12 +2,12 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
 
-_Last synced: Oct 5, 2026 (Claude Code, formula session)._
+_Last synced: Oct 5, 2026 (end of the formula session; all pushed)._
 
 ## Current state
 **The rating formula v4 is built and wired in** (`src/data/formula/`, `src/data/formulaRead.ts`): Crowd fight (contested seats), Conditions (real weather from Open-Meteo, forecast and archive), lightest Gridlock (zones from venue locations). Every date's rating, every event's occasion, verdict and why line are computed; the nightly job fetches weather then records formula forecasts; the calendar shades every date with events; upcoming dates no longer show dashes. Hand ratings stay in the seed as comparison only (Kylie's rule). `docs/formula-table.md` prints the formula against the 13 nights (mean gap 0.81, comparison only).
 
-- **Local, not pushed:** ten commits (Home/Explore, formula docs, formula steps 1–4, weather). Kylie says push when she's looked.
+- **All pushed and live** as of this sync.
 - **Docs:** `docs/formula-analysis.md` (fresh-eyes), `formula-review-prompt.md` + `formula-review-response.md` (outside review), `formula-v4.md` (decisions, her rulings), `formula-table.md`.
 - **Weather:** `data/weather/la/*.json` + `src/data/weatherIndex.ts`; `scripts/weather-fetch.mjs` (nightly, and `--backfill` once for the seeded nights). Feels-like is the headline number (Map header city point, date page per open-air venue, event page detail with the range during the event). Covered stadiums count as open air.
 - **Known soft spots to tune:** the World Series G1 reads Heavy friction on 10/25/24 (five competitors overwhelm the Marquee pull of 1.6); artists have no occasion input yet (Taylor Swift reads Routine), a "headliner tier" fact is the likely fix; Famous nights show curated headlines with computed numbers; all constants are placeholders until the attendance calibration (review §11).
@@ -16,6 +16,11 @@ _Last synced: Oct 5, 2026 (Claude Code, formula session)._
 Formula: `src/data/formula/{occasion,overlap,crowdFight,weather,gridlock,index}.ts`, `src/data/{formulaRead,weather,weatherIndex}.ts`, `read.ts` (method formula), `forecastCapture.ts`, `index.ts` (getCityDate/getRatedDates/getCalendarMonth use the formula; `handRatingFor` for comparison), seed facts in `testNights.ts`, `types.ts` (OccasionFacts, SportsLevel, invited, strained, status formula), `venues.ts` (strained), scripts (`weather-fetch`, `weather-index`, `formula-table.mts`), package.json archive order, workflow adds weather files, screens (Map header, DateScreen, EventScreen weather, Settings attribution), `AGENTS.md` (no-results rule restated), `BACKLOG.md` (weather notes), `docs/build-brief.md` (Open-Meteo milestone).
 
 ## Key decisions in force
+- **Words (Oct 5):** Chill · Mild · Spicy · Brutal · Cooked (Mid read as an insult; Light→Mild keeps a heat ladder). Band names in code match (`mild`, `spicy`).
+- **Concert occasion (Oct 5):** base from the booking (stadium 3, arena 2, theater 1), a run of 3+ nights +1, sellout +1, farewell/tour opener 3. Eras Tour, Beyoncé, Elton's last show = Marquee; ELO = Major.
+- **Explore is one page (option A):** week strip (two back, viewed day in slot 3 with a blue border, four ahead; today wears a dot), the month sheet (grid, search, Famous nights) from the date pill or the search button; Home's search opens the same sheet and picks go to the date page. Map/Calendar switch rehomed; old calendar page at `?view=calendar`, unlinked.
+- **Event verdict title:** "Fighting heavy friction" (the event deals with it). Chips keep one word.
+- **Forecast shading:** days ahead muted in the strip and the grid.
 - **Formula v4 (Oct 5):** see `docs/formula-v4.md`. Hand ratings are comparison only, never the target. Chargers' first LA game is Major; Dodgers–Braves 4/1/25 Routine with a +1 storyline fact; Conditions is a third reason (open-air only, per-city heat baseline concept, start-hour headline, range on the event page). Combination = max + 0.25 × Σ(others − 3)⁺.
 - **The no-results rule means only the event's own outcome** (score, who won). Observed weather may rate a past date. Crowd counts stay evidence (Oct 1). Earlier docs over-applied it.
 - **Weather:** one source (Open-Meteo; free non-commercial, on the cost milestones; credit on Settings). City point = the metro's map center (revisit later). No "estimated" labels on archive weather.

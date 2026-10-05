@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { MonthSheet } from '../components/MonthSheet';
 import { AccountBlock } from '../components/AccountBlock';
 import { SearchIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
@@ -56,6 +57,8 @@ export function HomeScreen() {
   const [everywhere, setEverywhere] = useState<CrowdEvent[]>([]);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [friends, setFriends] = useState<FriendEntry[]>([]);
+  const [monthOpen, setMonthOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     let current = true;
@@ -141,9 +144,9 @@ export function HomeScreen() {
     <div className="screen page home-page">
       <div className="home-top">
         <h1 className="page-title">{home.name}</h1>
-        <Link to="/explore?pick=1" className="round-button" aria-label="Find a date">
+        <button type="button" className="round-button" aria-label="Find a date" onClick={() => setMonthOpen(true)}>
           <SearchIcon />
-        </Link>
+        </button>
       </div>
 
       {day && tonight.length === 0 && (
@@ -319,6 +322,18 @@ export function HomeScreen() {
             ))}
           </ul>
         </section>
+      )}
+      {monthOpen && (
+        <MonthSheet
+          metro={home}
+          today={today}
+          focus={null}
+          onClose={() => setMonthOpen(false)}
+          onPick={(picked) => {
+            setMonthOpen(false);
+            navigate(datePath(picked, home.id));
+          }}
+        />
       )}
     </div>
   );
