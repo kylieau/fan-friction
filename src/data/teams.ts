@@ -2,15 +2,30 @@
 
 import type { Team } from './types';
 
-const team = (id: string, name: string, shortName: string, league: string, sport: string, metroId?: string, abbr?: string): Team => ({
+const team = (
+  id: string,
+  name: string,
+  shortName: string,
+  league: string,
+  sport: string,
+  metroId?: string,
+  abbr?: string,
+  aliases?: string[],
+): Team => ({
   id,
   name,
   shortName,
   abbr,
+  aliases,
   league,
   sport,
   metroId,
 });
+
+// College programs are one team per sport, the way ESPN lists them (UCLA Football,
+// UCLA Women's Basketball), so a favorite is the program, not the school.
+const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport: string, league: string, label: string, aliases: string[]) =>
+  team(`${school}-${code}`, `${schoolName} ${label}`, `${school.toUpperCase()} ${code.toUpperCase()}`, league, sport, 'la', school.toUpperCase(), aliases);
 
 const LIST: Team[] = [
   // LA
@@ -23,8 +38,17 @@ const LIST: Team[] = [
   team('galaxy', 'LA Galaxy', 'Galaxy', 'MLS', 'soccer', 'la', 'LAG'),
   team('rams', 'Los Angeles Rams', 'Rams', 'NFL', 'football', 'la', 'LAR'),
   team('chargers', 'Los Angeles Chargers', 'Chargers', 'NFL', 'football', 'la', 'LAC'),
-  team('usc-football', 'USC Trojans', 'USC', 'College football', 'football', 'la', 'USC'),
-  team('ucla-football', 'UCLA Bruins', 'UCLA', 'College football', 'football', 'la', 'UCLA'),
+  team('usc-football', 'USC Trojans', 'USC', 'College football', 'football', 'la', 'USC', ['USC FB', 'USC Football']),
+  team('ucla-football', 'UCLA Bruins', 'UCLA', 'College football', 'football', 'la', 'UCLA', ['UCLA FB', 'UCLA Football']),
+  program('ucla', 'UCLA Bruins', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['UCLA Men\'s Basketball']),
+  program('ucla', 'UCLA Bruins', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['UCLA Women\'s Basketball']),
+  program('ucla', 'UCLA Bruins', 'baseball', 'baseball', 'College baseball', 'baseball', []),
+  program('ucla', 'UCLA Bruins', 'mvb', 'volleyball', "College men's volleyball", "men's volleyball", []),
+  program('ucla', 'UCLA Bruins', 'wvb', 'volleyball', "College women's volleyball", "women's volleyball", []),
+  program('usc', 'USC Trojans', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['USC Men\'s Basketball']),
+  program('usc', 'USC Trojans', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['USC Women\'s Basketball']),
+  program('usc', 'USC Trojans', 'baseball', 'baseball', 'College baseball', 'baseball', []),
+  program('usc', 'USC Trojans', 'wvb', 'volleyball', "College women's volleyball", "women's volleyball", []),
   // Visitors
   team('yankees', 'New York Yankees', 'Yankees', 'MLB', 'baseball'),
   team('blue-jays', 'Toronto Blue Jays', 'Blue Jays', 'MLB', 'baseball'),

@@ -35,6 +35,7 @@ function Shell() {
           <Route path="/nights" element={<NightsScreen />} />
           <Route path="/event/:id" element={<EventScreen />} />
           <Route path="/favorites" element={<FavoritesScreen />} />
+          <Route path="/favorites/edit" element={<FavoritesScreen />} />
           <Route path="/favorites/:kind/:id" element={<FavoritePage />} />
           <Route path="/compare" element={<CompareScreen />} />
           <Route path="/p/:handle" element={<ProfileScreen />} />

@@ -85,6 +85,13 @@ export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
       )}
 
       <div className="settings">
+        <div className="settings-heading">Favorites</div>
+        <Link to="/favorites/edit" className="settings-row settings-link">
+          Edit favorites
+        </Link>
+      </div>
+
+      <div className="settings">
         <div className="settings-heading">Your nights</div>
         <button type="button" className="settings-row settings-link" onClick={download}>
           <span>Export my nights</span>

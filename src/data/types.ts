@@ -49,6 +49,8 @@ export interface Team {
   shortName: string;
   /** Scoreboard abbreviation, "LAD". Used for the mark on Favorites. */
   abbr?: string;
+  /** Other names people write for this team, such as a log tag "UCLA FB". */
+  aliases?: string[];
   league: string;
   sport: string;
   /** Set for teams based in a metro the app covers; left off for visitors. */

@@ -32,7 +32,12 @@ export function kindLabel(kind: FavoriteKind): string {
 
 function teamByShortName(name: string) {
   const lower = name.toLowerCase();
-  return Object.values(TEAMS).find((team) => team.shortName.toLowerCase() === lower || team.name.toLowerCase() === lower);
+  return Object.values(TEAMS).find(
+    (team) =>
+      team.shortName.toLowerCase() === lower ||
+      team.name.toLowerCase() === lower ||
+      (team.aliases ?? []).some((alias) => alias.toLowerCase() === lower),
+  );
 }
 
 function venueByName(name: string) {
@@ -100,11 +105,17 @@ export function suggestionsFor(homeMetroId: string | null, have: readonly Favori
 export function nightMatches(night: LoggedNight, fav: Favorite): boolean {
   const label = fav.label.toLowerCase();
   switch (fav.kind) {
-    case 'team':
-      return (
-        night.tags.some((tag) => tag.toLowerCase() === label) ||
-        (night.kind !== 'show' && night.kind !== 'festival' && night.sides.some((side) => side.toLowerCase() === label))
-      );
+    case 'team': {
+      const names = new Set([label]);
+      const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+      if (team) {
+        names.add(team.shortName.toLowerCase());
+        (team.aliases ?? []).forEach((alias) => names.add(alias.toLowerCase()));
+      }
+      if (night.tags.some((tag) => names.has(tag.toLowerCase()))) return true;
+      // A bare side ("UCLA") only counts for a school's football program, the log's default.
+      return night.kind !== 'show' && night.kind !== 'festival' && !team && night.sides.some((side) => side.toLowerCase() === label);
+    }
     case 'artist':
       return night.kind === 'show' && night.sides.some((side) => side.toLowerCase() === label);
     case 'festival':
