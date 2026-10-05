@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { areaMetros, DEFAULT_METRO, type Metro } from '../config/metros';
+import { areaMetros, DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import { formatScore, frictionLabel, scoreLabel, showFriction } from '../config/scoreLabels';
 import {
   feelsLikeF,
@@ -58,7 +58,7 @@ export function MapScreen() {
   const [legend, setLegend] = useState(false);
   const { metro, date, today, isToday, when } = useView();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
-  const nextNight = nextSavedPlan(today, metro.id, log);
+  const nextNight = nextSavedPlan(log);
 
   const [day, setDay] = useState<CityDate | null>(null);
   useEffect(() => {
@@ -414,10 +414,11 @@ function frozenForecastLine(forecast: NightForecast | undefined): string | null 
   return parts.length > 0 ? parts.join(' · ') : null;
 }
 
-/** One quiet card for the soonest saved night still ahead in this city. */
+/** One quiet card for the soonest saved night still ahead, in any city. */
 function SavedNightCard({ plan }: { plan: NightPlan }) {
   const forecast = frozenForecastLine(plan.forecast);
-  const place = [shortLocalDate(plan.date), plan.venue].filter(Boolean).join(' · ');
+  const city = METROS[plan.metroId]?.name;
+  const place = [shortLocalDate(plan.date), city, plan.venue].filter(Boolean).join(' · ');
   const to = plan.eventId ? `/event/${plan.eventId}` : `/?date=${plan.date}&when=day`;
   return (
     <Link to={to} className="saved-night">
