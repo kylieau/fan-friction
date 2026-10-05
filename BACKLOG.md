@@ -114,7 +114,7 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Do
 - Recent shows `result` when the entry has one; live results are a Step 7 leftover.
 - The Oct 4 "open on the Map with a next-saved-night card" decision is superseded by Home. The saved-date card still exists on the Map.
 - `/compare` route and screen remain, unlinked (rehome rule). "Compare with…" returns later as a button on the date page.
-- Famous nights live in Explore's calendar view; hand-check stamps before any public launch.
+- **Famous nights (Kylie, Oct 5):** living under the search in Explore's month sheet is "funky" and only a reminder. Agreed options: a discovery strip on Home for thin logs (not a step), or a section on a team's page ("famous Dodgers nights"). Decide and rehome; nothing deleted. Hand-check stamps before any public launch.
 
 ## Accounts (built Oct 5)
 - Open: should the sign-in card keep its two lines of copy; whether `/profile/edit` route should go (unlinked now); the stale "5k+" line in AGENTS.md's carried-over intro; `hiddenSeedIds` only matters for old phone copies.
