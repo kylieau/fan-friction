@@ -12,7 +12,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -78,7 +78,8 @@ export const METROS: Record<string, Metro> = {
     id: 'seattle',
     name: 'Seattle',
     timeZone: 'America/Los_Angeles',
-    center: [-122.3321, 47.5914],
+    // Between the stadium district and the university, so both fit one phone screen.
+    center: [-122.335, 47.615],
     zoom: 12,
   },
   tampa: {

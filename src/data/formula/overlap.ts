@@ -16,6 +16,8 @@ const BROAD: Record<string, { fromYear: number; teams: string[] }[]> = {
   la: [{ fromYear: 2014, teams: ['lakers', 'dodgers'] }],
   // The Padres are the city's team; the Chargers were too until they left for LA after 2016.
   'san-diego': [{ fromYear: 2017, teams: ['padres'] }],
+  // Placeholder until a Seattle poll is found: the Seahawks are the region's team; the Mariners since the 2022 run.
+  seattle: [{ fromYear: 2016, teams: ['seahawks'] }, { fromYear: 2022, teams: ['seahawks', 'mariners'] }],
 };
 
 export function isBroad(metroId: string, teamId: string | undefined, date: string): boolean {

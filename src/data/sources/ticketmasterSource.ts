@@ -15,7 +15,7 @@ const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
 /** How far ahead to list, in days. The schedule archive keeps 14; the catalog can hold more. */
 const DAYS_AHEAD = 120;
 /** Search radius from the metro's center, miles. */
-const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30 };
+const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30, seattle: 38 };
 const PAGE_SIZE = 200;
 /** Ticketmaster stops paging at 1,000 results per query, so the four months are asked for a month at a time. */
 const MAX_PAGES = 5;

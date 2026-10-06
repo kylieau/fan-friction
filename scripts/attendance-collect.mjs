@@ -21,6 +21,7 @@ const MLB_TEAMS = [
   { teamId: 'dodgers', mlbId: 119, venueId: 'dodger-stadium', seasons: [2023, 2024, 2025] },
   { teamId: 'angels', mlbId: 108, venueId: 'angel-stadium', seasons: [2023, 2024, 2025] },
   { teamId: 'padres', mlbId: 135, venueId: 'petco-park', metroId: 'san-diego', seasons: [2023, 2024, 2025] },
+  { teamId: 'mariners', mlbId: 136, venueId: 't-mobile-park', metroId: 'seattle', seasons: [2023, 2024, 2025] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2024, 2025, 2026], seasontype: 2 },
@@ -43,6 +44,13 @@ const ESPN_TEAMS = [
   { teamId: 'sdsu-football', metroId: 'san-diego', path: 'football/college-football', espnId: '21', seasons: [2023, 2024, 2025], seasontype: 2 },
   { teamId: 'sdsu-mbb', metroId: 'san-diego', path: 'basketball/mens-college-basketball', espnId: '21', seasons: [2024, 2025, 2026], seasontype: 2 },
   { teamId: 'sdsu-wbb', metroId: 'san-diego', path: 'basketball/womens-college-basketball', espnId: '21', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'seahawks', metroId: 'seattle', path: 'football/nfl', espnId: '26', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'kraken', metroId: 'seattle', path: 'hockey/nhl', espnId: '124292', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sounders', metroId: 'seattle', path: 'soccer/usa.1', espnId: '9726', seasons: [2023, 2024, 2025] },
+  { teamId: 'reign', metroId: 'seattle', path: 'soccer/usa.nwsl', espnId: '15363', seasons: [2023, 2024, 2025] },
+  { teamId: 'uw-football', metroId: 'seattle', path: 'football/college-football', espnId: '264', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'uw-mbb', metroId: 'seattle', path: 'basketball/mens-college-basketball', espnId: '264', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uw-wbb', metroId: 'seattle', path: 'basketball/womens-college-basketball', espnId: '264', seasons: [2024, 2025, 2026], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -60,6 +68,13 @@ const VENUE_BY_NAME = {
   'snapdragon stadium': 'snapdragon-stadium',
   'viejas arena': 'viejas-arena',
   'petco park': 'petco-park',
+  'lumen field': 'lumen-field',
+  'climate pledge arena': 'climate-pledge-arena',
+  'husky stadium': 'husky-stadium',
+  'alaska airlines arena': 'alaska-airlines-arena',
+  'alaska airlines arena at hec edmundson pavilion': 'alaska-airlines-arena',
+  'hec edmundson pavilion': 'alaska-airlines-arena',
+  't-mobile park': 't-mobile-park',
 };
 
 function localParts(iso) {

@@ -34,6 +34,13 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '21', metroId: 'san-diego', teamId: 'sdsu-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '21', metroId: 'san-diego', teamId: 'sdsu-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '21', metroId: 'san-diego', teamId: 'sdsu-wbb', sport: 'basketball' },
+  { path: 'football/nfl', espnId: '26', metroId: 'seattle', teamId: 'seahawks', sport: 'football' },
+  { path: 'hockey/nhl', espnId: '124292', metroId: 'seattle', teamId: 'kraken', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '9726', metroId: 'seattle', teamId: 'sounders', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '15363', metroId: 'seattle', teamId: 'reign', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '264', metroId: 'seattle', teamId: 'uw-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '264', metroId: 'seattle', teamId: 'uw-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '264', metroId: 'seattle', teamId: 'uw-wbb', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -56,6 +63,13 @@ const VENUE_BY_NAME: Record<string, string> = {
   'snapdragon stadium': 'snapdragon-stadium',
   'viejas arena': 'viejas-arena',
   'petco park': 'petco-park',
+  'lumen field': 'lumen-field',
+  'climate pledge arena': 'climate-pledge-arena',
+  'husky stadium': 'husky-stadium',
+  'alaska airlines arena': 'alaska-airlines-arena',
+  'alaska airlines arena at hec edmundson pavilion': 'alaska-airlines-arena',
+  'hec edmundson pavilion': 'alaska-airlines-arena',
+  't-mobile park': 't-mobile-park',
 };
 
 interface EspnSide {

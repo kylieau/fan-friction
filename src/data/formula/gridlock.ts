@@ -24,7 +24,9 @@ const DEFAULT_START: Record<string, number> = { football: 13.1, baseball: 19.2, 
 const SCALE = 7.5;
 
 /** City type: drive-centric sprawl, destination hub, or transit-dominant. Others default to sprawl. */
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', 'new-york': 'transit', chicago: 'transit', boston: 'transit' };
+// Seattle is a hub (Oct 6, 2026): most fans still drive, but the big rooms sit on light rail
+// (Stadium and UW stations, the Monorail), so a venue's own carShare should fill in as research lands.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'transit', chicago: 'transit', boston: 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {

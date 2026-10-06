@@ -532,13 +532,217 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 6500, note: 'Hall H, seated (reported). Comic-Con sells about 135,000 badges over four days; no daily count is published.' }],
     roof: 'indoor',
   },
+  // ---- Seattle, from docs/seattle-venue-table-answer.md (Oct 6, 2026): King, Pierce and Snohomish counties, plus the Gorge ----
+  'husky-stadium': {
+    id: 'husky-stadium',
+    metroId: 'seattle',
+    // The field is "Alaska Airlines Field at Husky Stadium"; ESPN and the schedule say Husky Stadium.
+    names: [{ name: 'Husky Stadium' }],
+    location: [-122.3016, 47.6503],
+    capacity: [{ seats: 72132, setup: 'football', note: 'Washington Huskies (official). Roofs over both sidelines; the ends are open.' }],
+    roof: 'open',
+  },
+  'lumen-field': {
+    id: 'lumen-field',
+    metroId: 'seattle',
+    names: [{ name: 'CenturyLink Field' }, { name: 'Lumen Field', from: '2020-11-19' }],
+    location: [-122.3316, 47.5953],
+    capacity: [
+      { seats: 68740, setup: 'football', note: 'Seahawks (official); expandable to 72,000 for the biggest events' },
+      { seats: 37722, setup: 'soccer', note: 'Sounders setup (MLS). The Reign open about 10,000 lower-bowl seats (reported).' },
+    ],
+    roof: 'open',
+  },
   't-mobile-park': {
     id: 't-mobile-park',
     metroId: 'seattle',
-    names: [{ name: 'T-Mobile Park' }],
-    location: [-122.3321, 47.5914],
-    capacity: [{ seats: 47929, setup: 'baseball', note: 'Listed capacity' }],
+    names: [{ name: 'Safeco Field' }, { name: 'T-Mobile Park', from: '2019-01-01' }],
+    location: [-122.3323, 47.5915],
+    capacity: [
+      { seats: 47943, setup: 'baseball', note: 'Mariners (official; 47,929 was the older figure)' },
+      { seats: 30144, setup: 'football', note: 'One-off football setup (reported)' },
+    ],
+    // Retractable: an umbrella that closes for rain, with open sides. Closest of the three roof kinds.
     roof: 'covered',
+  },
+  'pacific-raceways': {
+    id: 'pacific-raceways',
+    metroId: 'seattle',
+    names: [{ name: 'Pacific Raceways' }],
+    location: [-122.1491, 47.3224],
+    capacity: [{ seats: 30000, note: 'Race days (reported). Standing and grandstand together.' }],
+    roof: 'open',
+    // Fallback until the measure runs: one road in, wooded hillside site (the research).
+    strained: true,
+  },
+  // Satellite in George, three hours out, the way Empire Polo Club rides with Los Angeles.
+  'gorge-amphitheatre': {
+    id: 'gorge-amphitheatre',
+    metroId: 'seattle',
+    names: [{ name: 'Gorge Amphitheatre' }, { name: 'The Gorge' }],
+    // Approximate (the research's figure); OpenStreetMap has no point for the amphitheatre itself.
+    location: [-119.996, 47.1028],
+    capacity: [
+      { seats: 27500, setup: 'concert', note: "Seats and lawn (reported); 20,000 is also quoted. Festival days are capped at 25,000 by Grant County (official)." },
+    ],
+    roof: 'open',
+    strained: true,
+  },
+  'seattle-center': {
+    id: 'seattle-center',
+    metroId: 'seattle',
+    names: [{ name: 'Seattle Center' }],
+    location: [-122.3497, 47.6213],
+    capacity: [{ seats: 26000, setup: 'concert', note: 'A Bumbershoot-size festival on the grounds, standing (estimated)' }],
+    roof: 'open',
+  },
+  'tacoma-dome': {
+    id: 'tacoma-dome',
+    metroId: 'seattle',
+    names: [{ name: 'Tacoma Dome' }],
+    location: [-122.427, 47.2369],
+    capacity: [
+      { seats: 21000, note: 'Maximum (official)' },
+      { seats: 20722, setup: 'basketball', note: 'Official' },
+      { seats: 17000, setup: 'concert', note: 'A typical end-stage show (estimated)' },
+    ],
+    roof: 'indoor',
+  },
+  'climate-pledge-arena': {
+    id: 'climate-pledge-arena',
+    metroId: 'seattle',
+    // KeyArena closed Oct 5, 2018 for the rebuild and reopened as Climate Pledge Arena in October 2021.
+    names: [{ name: 'KeyArena' }, { name: 'Climate Pledge Arena', from: '2018-10-05' }],
+    location: [-122.354, 47.6219],
+    capacity: [
+      { seats: 17072, setup: 'basketball', note: 'KeyArena (reported, Wikipedia infobox)' },
+      { seats: 17000, setup: 'concert', note: 'KeyArena (reported, Wikipedia infobox)' },
+      { seats: 18300, setup: 'basketball', fromYear: 2021, note: 'Official' },
+      { seats: 17100, setup: 'hockey', fromYear: 2021, note: 'Kraken (official)' },
+      { seats: 17200, setup: 'concert', fromYear: 2021, note: 'End stage (official); 18,600 in the round' },
+    ],
+    roof: 'indoor',
+  },
+  'white-river-amphitheatre': {
+    id: 'white-river-amphitheatre',
+    metroId: 'seattle',
+    names: [{ name: 'White River Amphitheatre' }],
+    location: [-122.1121, 47.2375],
+    capacity: [{ seats: 16000, setup: 'concert', note: 'Reserved seats under a roof plus lawn (official). 20,000 before 2015.' }],
+    roof: 'open',
+    strained: true,
+  },
+  'everett-memorial-stadium': {
+    id: 'everett-memorial-stadium',
+    metroId: 'seattle',
+    names: [{ name: 'Everett Memorial Stadium' }],
+    location: [-122.2036, 47.9657],
+    capacity: [{ seats: 12000, setup: 'football', note: 'Reported' }],
+    roof: 'open',
+  },
+  'memorial-stadium-seattle': {
+    id: 'memorial-stadium-seattle',
+    metroId: 'seattle',
+    // Closed for the rebuild; reopens in 2027 with 8,000 seats (the research). Kept so earlier nights can be logged.
+    names: [{ name: 'Seattle Center Memorial Stadium' }, { name: 'Memorial Stadium' }],
+    // Approximate: the north edge of Seattle Center; OpenStreetMap has no point while the site is a construction zone.
+    location: [-122.348, 47.6228],
+    capacity: [{ seats: 12000, note: 'Reported (Wikipedia infobox), before the rebuild' }],
+    roof: 'open',
+  },
+  'washington-state-fair-grandstand': {
+    id: 'washington-state-fair-grandstand',
+    metroId: 'seattle',
+    // Ticketmaster lists the grounds as the Washington State Fair Events Center.
+    names: [{ name: 'Washington State Fair Events Center' }, { name: 'Umpqua Bank Grandstand' }],
+    // Approximate (the research's figure); the fairgrounds in Puyallup.
+    location: [-122.2965, 47.1835],
+    capacity: [{ seats: 10200, setup: 'concert', note: 'Grandstand concerts during the fair (official)' }],
+    roof: 'open',
+  },
+  'alaska-airlines-arena': {
+    id: 'alaska-airlines-arena',
+    metroId: 'seattle',
+    names: [{ name: 'Hec Edmundson Pavilion' }, { name: 'Alaska Airlines Arena at Hec Edmundson Pavilion' }, { name: 'Alaska Airlines Arena' }],
+    location: [-122.3021, 47.6522],
+    capacity: [{ seats: 10000, setup: 'basketball', note: 'Washington Huskies (official)' }],
+    roof: 'indoor',
+  },
+  'angel-of-the-winds-arena': {
+    id: 'angel-of-the-winds-arena',
+    metroId: 'seattle',
+    names: [{ name: 'Xfinity Arena' }, { name: 'Angel of the Winds Arena', from: '2017-12-13' }],
+    location: [-122.203, 47.9786],
+    capacity: [
+      { seats: 10000, setup: 'concert', note: 'Maximum, floor standing (official); 9,000 seated' },
+      { seats: 8149, setup: 'hockey', note: 'Everett Silvertips (official)' },
+    ],
+    roof: 'indoor',
+  },
+  'emerald-downs': {
+    id: 'emerald-downs',
+    metroId: 'seattle',
+    names: [{ name: 'Emerald Downs' }],
+    location: [-122.2357, 47.3303],
+    capacity: [{ seats: 9100, note: 'No published capacity; the track\'s biggest recent crowd (estimated)' }],
+    roof: 'open',
+  },
+  'evergreen-speedway': {
+    id: 'evergreen-speedway',
+    metroId: 'seattle',
+    names: [{ name: 'Evergreen Speedway' }],
+    location: [-121.987, 47.8693],
+    capacity: [{ seats: 7500, note: '6,000–7,500 on race nights (reported)' }],
+    roof: 'open',
+  },
+  'accesso-showare-center': {
+    id: 'accesso-showare-center',
+    metroId: 'seattle',
+    // Renamed in the fall of 2017; the exact day was not in the research.
+    names: [{ name: 'ShoWare Center' }, { name: 'accesso ShoWare Center', from: '2017-09-01' }],
+    location: [-122.24, 47.3877],
+    capacity: [
+      { seats: 7300, setup: 'concert', note: 'Maximum, end stage (official)' },
+      { seats: 5887, setup: 'hockey', note: 'Seattle Thunderbirds (official)' },
+    ],
+    roof: 'indoor',
+  },
+  'wamu-theater': {
+    id: 'wamu-theater',
+    metroId: 'seattle',
+    // The building is the Lumen Field Event Center (CenturyLink Field Event Center until Nov 19, 2020).
+    names: [{ name: 'WaMu Theater' }],
+    location: [-122.3329, 47.5932],
+    capacity: [{ seats: 7000, setup: 'concert', note: 'General admission (official); more with the floor standing' }],
+    roof: 'indoor',
+  },
+  'marymoor-live': {
+    id: 'marymoor-live',
+    metroId: 'seattle',
+    names: [{ name: 'Marymoor Park' }, { name: 'Marymoor Live', from: '2023-01-01' }],
+    location: [-122.1111, 47.6587],
+    capacity: [
+      { seats: 5000, setup: 'concert', note: 'Official' },
+      { seats: 6500, setup: 'concert', fromYear: 2023, note: 'After the 2023 expansion (official)' },
+    ],
+    roof: 'open',
+  },
+  'cheney-stadium': {
+    id: 'cheney-stadium',
+    metroId: 'seattle',
+    names: [{ name: 'Cheney Stadium' }],
+    location: [-122.4976, 47.2383],
+    capacity: [{ seats: 6500, setup: 'baseball', note: 'Tacoma Rainiers (official)' }],
+    roof: 'open',
+  },
+  'remlinger-farms': {
+    id: 'remlinger-farms',
+    metroId: 'seattle',
+    names: [{ name: 'Remlinger Farms' }],
+    location: [-121.9154, 47.6365],
+    capacity: [{ seats: 6000, setup: 'concert', note: 'Up to 6,000 (reported)' }],
+    roof: 'open',
+    strained: true,
   },
   'wintrust-arena': {
     id: 'wintrust-arena',
