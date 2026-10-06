@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-06",
-  "capturedAt": "2026-10-06T19:27:52.473Z",
+  "capturedAt": "2026-10-06T19:59:17.652Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-06",
@@ -115,7 +115,10 @@
       "performer": "Bruno Mars",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_eheCVin"
+      "ticketmasterId": "vvG1IZ_eheCVin",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-06-tm-vv1AaZko3Gkdf6kuk",
@@ -135,7 +138,10 @@
       "performer": "Mumford & Sons",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZko3Gkdf6kuk"
+      "ticketmasterId": "vv1AaZko3Gkdf6kuk",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-07-tm-vv170Z_6GkRNGSd7",
@@ -198,7 +204,10 @@
       "performer": "Bruno Mars",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_eheo7is"
+      "ticketmasterId": "vvG1IZ_eheo7is",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-07-tm-vv1AaZko9Gketiqv4",
@@ -218,7 +227,10 @@
       "performer": "Mumford & Sons",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZko9Gketiqv4"
+      "ticketmasterId": "vv1AaZko9Gketiqv4",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-08-tm-vv1AaZk8tGkd6ll1M",
@@ -530,7 +542,10 @@
       "performer": "Jack Johnson",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZbU81spCL"
+      "ticketmasterId": "vvG1iZbU81spCL",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-10-tm-vv1AaZkfoGkdZT1iU",
@@ -673,7 +688,10 @@
       "performer": "Jack Johnson",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZbU81wkC0"
+      "ticketmasterId": "vvG1iZbU81wkC0",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-11-tm-vv1ke8v0PdGA2NIXk",
@@ -889,7 +907,10 @@
       "performer": "Phil Wickham",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_7GkMfFAZu"
+      "ticketmasterId": "vv170Z_7GkMfFAZu",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-15-tm-vv170Z_aGkRSVNGb",
@@ -929,7 +950,10 @@
       "performer": "Phil Wickham",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1k0Z_kp4G7ia50"
+      "ticketmasterId": "vv1k0Z_kp4G7ia50",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-15-tm-vvG10Z_GwWe2IR",
@@ -1055,7 +1079,10 @@
       "performer": "MILEY",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_owcOPJ1"
+      "ticketmasterId": "vvG1iZ_owcOPJ1",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
@@ -1240,7 +1267,10 @@
       "performer": "Charli xcx",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_G9R7nPH"
+      "ticketmasterId": "vvG10Z_G9R7nPH",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-17-espn-ucla-football-401858494",
@@ -1305,7 +1335,10 @@
       "performer": "MILEY",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_owcx4Jh"
+      "ticketmasterId": "vvG1iZ_owcx4Jh",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-18-tm-Z7r9jZ1A70kAU",
@@ -1325,7 +1358,10 @@
       "performer": "Kacey Musgraves",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A70kAU"
+      "ticketmasterId": "Z7r9jZ1A70kAU",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-18-tm-vvG10Z_G9gehI7",
@@ -1345,7 +1381,10 @@
       "performer": "Charli xcx",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_G9gehI7"
+      "ticketmasterId": "vvG10Z_G9gehI7",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-19-tm-vv1ke8v0r6GAuZNui",
@@ -1385,7 +1424,10 @@
       "performer": "Kacey Musgraves",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A70kAg"
+      "ticketmasterId": "Z7r9jZ1A70kAg",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-20-tm-vvG10Z_1hSZGrO",
