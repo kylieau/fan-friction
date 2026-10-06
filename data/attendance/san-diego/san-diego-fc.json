@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "teamId": "san-diego-fc",
+  "collectedOn": "2026-10-06",
+  "games": [
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-03-01",
+      "start": "19:30",
+      "opponent": "St. Louis",
+      "venueId": "snapdragon-stadium",
+      "attendance": 34506,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-03-15",
+      "start": "19:30",
+      "opponent": "Columbus",
+      "venueId": "snapdragon-stadium",
+      "attendance": 30018,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-03-29",
+      "start": "19:30",
+      "opponent": "LAFC",
+      "venueId": "snapdragon-stadium",
+      "attendance": 32502,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "19:30",
+      "opponent": "Seattle",
+      "venueId": "snapdragon-stadium",
+      "attendance": 28228,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "16:30",
+      "opponent": "Salt Lake",
+      "venueId": "snapdragon-stadium",
+      "attendance": 28116,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "18:15",
+      "opponent": "Dallas",
+      "venueId": "snapdragon-stadium",
+      "attendance": 27108,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "19:30",
+      "opponent": "Colorado",
+      "venueId": "snapdragon-stadium",
+      "attendance": 22361,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "19:30",
+      "opponent": "Kansas City",
+      "venueId": "snapdragon-stadium",
+      "attendance": 25233,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "13:45",
+      "opponent": "LA Galaxy",
+      "venueId": "snapdragon-stadium",
+      "attendance": 30114,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "19:30",
+      "opponent": "Austin",
+      "venueId": "snapdragon-stadium",
+      "attendance": 27133,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "19:30",
+      "opponent": "Houston",
+      "venueId": "snapdragon-stadium",
+      "attendance": 28321,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-07-16",
+      "start": "19:30",
+      "opponent": "Toronto",
+      "venueId": "snapdragon-stadium",
+      "attendance": 23514,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "19:30",
+      "opponent": "Vancouver",
+      "venueId": "snapdragon-stadium",
+      "attendance": 27418,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "19:30",
+      "opponent": "Nashville",
+      "venueId": "snapdragon-stadium",
+      "attendance": 28114,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "19:30",
+      "opponent": "Portland",
+      "venueId": "snapdragon-stadium",
+      "attendance": 27810,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "19:30",
+      "opponent": "Minnesota",
+      "venueId": "snapdragon-stadium",
+      "attendance": 27158,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "19:30",
+      "opponent": "San Jose",
+      "venueId": "snapdragon-stadium",
+      "attendance": 29437,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-10-26",
+      "start": "18:30",
+      "opponent": "Portland",
+      "venueId": "snapdragon-stadium",
+      "attendance": 32500,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-11-09",
+      "start": "18:00",
+      "opponent": "Portland",
+      "venueId": "snapdragon-stadium",
+      "attendance": 32500,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-11-24",
+      "start": "19:00",
+      "opponent": "Minnesota",
+      "venueId": "snapdragon-stadium",
+      "attendance": 32502,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2025,
+      "date": "2025-11-29",
+      "start": "18:00",
+      "opponent": "Vancouver",
+      "venueId": "snapdragon-stadium",
+      "attendance": 32502,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

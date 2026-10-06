@@ -38,6 +38,11 @@ const ESPN_TEAMS = [
   { teamId: 'ucla-mbb', path: 'basketball/mens-college-basketball', espnId: '26', seasons: [2024, 2025, 2026], seasontype: 2 },
   { teamId: 'usc-wbb', path: 'basketball/womens-college-basketball', espnId: '30', seasons: [2024, 2025, 2026], seasontype: 2 },
   { teamId: 'ucla-wbb', path: 'basketball/womens-college-basketball', espnId: '26', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'san-diego-fc', metroId: 'san-diego', path: 'soccer/usa.1', espnId: '22529', seasons: [2025] },
+  { teamId: 'wave', metroId: 'san-diego', path: 'soccer/usa.nwsl', espnId: '21423', seasons: [2023, 2024, 2025] },
+  { teamId: 'sdsu-football', metroId: 'san-diego', path: 'football/college-football', espnId: '21', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'sdsu-mbb', metroId: 'san-diego', path: 'basketball/mens-college-basketball', espnId: '21', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sdsu-wbb', metroId: 'san-diego', path: 'basketball/womens-college-basketball', espnId: '21', seasons: [2024, 2025, 2026], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -52,6 +57,9 @@ const VENUE_BY_NAME = {
   'honda center': 'honda-center',
   'pauley pavilion': 'pauley-pavilion',
   'galen center': 'galen-center',
+  'snapdragon stadium': 'snapdragon-stadium',
+  'viejas arena': 'viejas-arena',
+  'petco park': 'petco-park',
 };
 
 function localParts(iso) {

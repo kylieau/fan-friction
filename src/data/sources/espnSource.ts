@@ -29,6 +29,11 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/mens-college-basketball', espnId: '26', metroId: 'la', teamId: 'ucla-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '30', metroId: 'la', teamId: 'usc-wbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '26', metroId: 'la', teamId: 'ucla-wbb', sport: 'basketball' },
+  { path: 'soccer/usa.1', espnId: '22529', metroId: 'san-diego', teamId: 'san-diego-fc', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '21423', metroId: 'san-diego', teamId: 'wave', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '21', metroId: 'san-diego', teamId: 'sdsu-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '21', metroId: 'san-diego', teamId: 'sdsu-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '21', metroId: 'san-diego', teamId: 'sdsu-wbb', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -48,6 +53,9 @@ const VENUE_BY_NAME: Record<string, string> = {
   'honda center': 'honda-center',
   'pauley pavilion': 'pauley-pavilion',
   'galen center': 'galen-center',
+  'snapdragon stadium': 'snapdragon-stadium',
+  'viejas arena': 'viejas-arena',
+  'petco park': 'petco-park',
 };
 
 interface EspnSide {

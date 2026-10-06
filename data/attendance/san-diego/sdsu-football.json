@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "teamId": "sdsu-football",
+  "collectedOn": "2026-10-06",
+  "games": [
+    {
+      "teamId": "sdsu-football",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "16:00",
+      "opponent": "Ohio",
+      "venueId": "snapdragon-stadium",
+      "attendance": 23867,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "19:30",
+      "opponent": "Idaho St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 22345,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "16:30",
+      "opponent": "UCLA",
+      "venueId": "snapdragon-stadium",
+      "attendance": 32017,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "19:30",
+      "opponent": "Boise St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 23374,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "18:00",
+      "opponent": "Nevada",
+      "venueId": "snapdragon-stadium",
+      "attendance": 27122,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "16:00",
+      "opponent": "Utah State",
+      "venueId": "snapdragon-stadium",
+      "attendance": 23096,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2023,
+      "date": "2023-11-25",
+      "start": "19:30",
+      "opponent": "Fresno St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 22000,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "17:00",
+      "opponent": "East Texas A&M",
+      "venueId": "snapdragon-stadium",
+      "attendance": 25180,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "19:30",
+      "opponent": "Oregon St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 25318,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "17:00",
+      "opponent": "Hawai'i",
+      "venueId": "snapdragon-stadium",
+      "attendance": 31307,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "19:30",
+      "opponent": "Washington St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 26937,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2024,
+      "date": "2024-11-08",
+      "start": "19:30",
+      "opponent": "New Mexico",
+      "venueId": "snapdragon-stadium",
+      "attendance": 21832,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2024,
+      "date": "2024-11-30",
+      "start": "19:30",
+      "opponent": "Air Force",
+      "venueId": "snapdragon-stadium",
+      "attendance": 18045,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "19:00",
+      "opponent": "Stony Brook",
+      "venueId": "snapdragon-stadium",
+      "attendance": 20624,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "19:30",
+      "opponent": "California",
+      "venueId": "snapdragon-stadium",
+      "attendance": 31369,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2025,
+      "date": "2025-10-03",
+      "start": "19:30",
+      "opponent": "Colorado St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 29019,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "16:00",
+      "opponent": "Wyoming",
+      "venueId": "snapdragon-stadium",
+      "attendance": 24325,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "19:30",
+      "opponent": "Boise St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 29201,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "19:30",
+      "opponent": "San José St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 22595,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

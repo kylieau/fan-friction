@@ -2592,5 +2592,401 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "count": 42751,
     "games": 6,
     "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-fc",
+    "dayClass": "all",
+    "month": null,
+    "count": 28228,
+    "games": 21,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-fc",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 23514,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-fc",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 28228,
+    "games": 15,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-fc",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 32502,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-fc",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 27121,
+    "games": 4,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-football",
+    "dayClass": "all",
+    "month": null,
+    "count": 24325,
+    "games": 19,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-football",
+    "dayClass": "friday",
+    "month": null,
+    "count": 23374,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-football",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 25180,
+    "games": 15,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-football",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 28344,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-football",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 27122,
+    "games": 3,
+    "seasons": "2023,2024"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-football",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 22846,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "all",
+    "month": null,
+    "count": 12414,
+    "games": 44,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 12414,
+    "games": 29,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 12414,
+    "games": 7,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 12414,
+    "games": 7,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 12390,
+    "games": 8,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 11683,
+    "games": 7,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 12414,
+    "games": 12,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 12414,
+    "games": 5,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 12414,
+    "games": 4,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 12414,
+    "games": 3,
+    "seasons": "2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "all",
+    "month": null,
+    "count": 1529,
+    "games": 45,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1287,
+    "games": 22,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1353,
+    "games": 5,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 2135,
+    "games": 5,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1111,
+    "games": 7,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 918,
+    "games": 3,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "friday",
+    "month": null,
+    "count": 3708,
+    "games": 3,
+    "seasons": "2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1701,
+    "games": 17,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1852,
+    "games": 6,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1643,
+    "games": 4,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 1930,
+    "games": 4,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 1183,
+    "games": 3,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2365,
+    "games": 3,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "all",
+    "month": null,
+    "count": 16225,
+    "games": 37,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "friday",
+    "month": null,
+    "count": 16746,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 17073,
+    "games": 3,
+    "seasons": "2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 16920,
+    "games": 17,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 30854,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 16613,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 15834,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 15825,
+    "games": 12,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 12760,
+    "games": 3,
+    "seasons": "2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 24239,
+    "games": 4,
+    "seasons": "2023,2024,2025"
   }
 ];

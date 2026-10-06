@@ -355,7 +355,7 @@ export function eventFacts(event: CrowdEvent, logged?: Entry): LabeledFact[] {
 function tagFor(teamId: string | undefined, sport: string): { tag: string; side: string } {
   const team = teamId ? TEAMS[teamId] : undefined;
   const side = team?.shortName ?? 'Sports';
-  if (side === 'UCLA' || side === 'USC') {
+  if (team && /college/i.test(team.league)) {
     const abbr =
       sport === 'football' ? 'FB' : sport === 'basketball' ? (teamId?.endsWith('-wbb') ? 'WBB' : 'MBB') : sport === 'baseball' ? 'Baseball' : sport;
     return { tag: `${side} ${abbr}`, side };
