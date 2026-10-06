@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "teamId": "seahawks",
+  "collectedOn": "2026-10-06",
+  "games": [
+    {
+      "teamId": "seahawks",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:25",
+      "opponent": "Rams",
+      "venueId": "lumen-field",
+      "attendance": 68683,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "13:05",
+      "opponent": "Panthers",
+      "venueId": "lumen-field",
+      "attendance": 68699,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2023,
+      "date": "2023-10-22",
+      "start": "13:05",
+      "opponent": "Cardinals",
+      "venueId": "lumen-field",
+      "attendance": 68781,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2023,
+      "date": "2023-10-29",
+      "start": "13:05",
+      "opponent": "Browns",
+      "venueId": "lumen-field",
+      "attendance": 68807,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2023,
+      "date": "2023-11-12",
+      "start": "13:25",
+      "opponent": "Commanders",
+      "venueId": "lumen-field",
+      "attendance": 68721,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2023,
+      "date": "2023-11-23",
+      "start": "17:20",
+      "opponent": "49ers",
+      "venueId": "lumen-field",
+      "attendance": 68702,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2023,
+      "date": "2023-12-18",
+      "start": "17:15",
+      "opponent": "Eagles",
+      "venueId": "lumen-field",
+      "attendance": 68758,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2023,
+      "date": "2023-12-31",
+      "start": "13:05",
+      "opponent": "Steelers",
+      "venueId": "lumen-field",
+      "attendance": 68735,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "13:05",
+      "opponent": "Broncos",
+      "venueId": "lumen-field",
+      "attendance": 68714,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2024,
+      "date": "2024-09-22",
+      "start": "13:05",
+      "opponent": "Dolphins",
+      "venueId": "lumen-field",
+      "attendance": 68658,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2024,
+      "date": "2024-10-06",
+      "start": "13:25",
+      "opponent": "Giants",
+      "venueId": "lumen-field",
+      "attendance": 68306,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2024,
+      "date": "2024-10-10",
+      "start": "17:15",
+      "opponent": "49ers",
+      "venueId": "lumen-field",
+      "attendance": 68768,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2024,
+      "date": "2024-10-27",
+      "start": "13:05",
+      "opponent": "Bills",
+      "venueId": "lumen-field",
+      "attendance": 68704,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2024,
+      "date": "2024-11-03",
+      "start": "13:25",
+      "opponent": "Rams",
+      "venueId": "lumen-field",
+      "attendance": 68632,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2024,
+      "date": "2024-11-24",
+      "start": "13:25",
+      "opponent": "Cardinals",
+      "venueId": "lumen-field",
+      "attendance": 68649,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2024,
+      "date": "2024-12-15",
+      "start": "17:20",
+      "opponent": "Packers",
+      "venueId": "lumen-field",
+      "attendance": 68766,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2024,
+      "date": "2024-12-22",
+      "start": "13:05",
+      "opponent": "Vikings",
+      "venueId": "lumen-field",
+      "attendance": 68748,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "13:05",
+      "opponent": "49ers",
+      "venueId": "lumen-field",
+      "attendance": 68752,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2025-09-21",
+      "start": "13:05",
+      "opponent": "Saints",
+      "venueId": "lumen-field",
+      "attendance": 68599,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2025-10-05",
+      "start": "13:05",
+      "opponent": "Buccaneers",
+      "venueId": "lumen-field",
+      "attendance": 68804,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2025-10-20",
+      "start": "19:00",
+      "opponent": "Texans",
+      "venueId": "lumen-field",
+      "attendance": 68632,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2025-11-09",
+      "start": "13:05",
+      "opponent": "Cardinals",
+      "venueId": "lumen-field",
+      "attendance": 68723,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2025-11-30",
+      "start": "13:05",
+      "opponent": "Vikings",
+      "venueId": "lumen-field",
+      "attendance": 68790,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2025-12-14",
+      "start": "13:25",
+      "opponent": "Colts",
+      "venueId": "lumen-field",
+      "attendance": 68771,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2025-12-18",
+      "start": "17:15",
+      "opponent": "Rams",
+      "venueId": "lumen-field",
+      "attendance": 68853,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "metroName": "Seattle",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-06",
+  "capturedAt": "2026-10-06T20:43:10.643Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-06",
+    "through": "2026-10-20"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 5
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-06-espn-kraken-401892454",
+      "metroId": "seattle",
+      "date": "2026-10-06",
+      "start": "18:40",
+      "kind": "game",
+      "title": "Kraken vs. Golden Knights",
+      "broadcast": "KONG",
+      "place": {
+        "type": "venue",
+        "venueId": "climate-pledge-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kraken",
+        "away": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-09-espn-uw-football-401858487",
+      "metroId": "seattle",
+      "date": "2026-10-09",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Washington Huskies vs. Iowa",
+      "place": {
+        "type": "venue",
+        "venueId": "husky-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "uw-football",
+        "away": "iowa"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-11-espn-seahawks-401872992",
+      "metroId": "seattle",
+      "date": "2026-10-11",
+      "start": "13:25",
+      "kind": "game",
+      "title": "Seahawks vs. 49ers",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "lumen-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "seahawks",
+        "away": "49ers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-sounders-761885",
+      "metroId": "seattle",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Seattle vs. CF Montréal",
+      "place": {
+        "type": "venue",
+        "venueId": "lumen-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "sounders",
+        "away": "cf-montr-al"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-20-espn-kraken-401892547",
+      "metroId": "seattle",
+      "date": "2026-10-20",
+      "start": "18:40",
+      "kind": "game",
+      "title": "Kraken vs. Red Wings",
+      "broadcast": "KONG",
+      "place": {
+        "type": "venue",
+        "venueId": "climate-pledge-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kraken",
+        "away": "red-wings"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-06-espn-kraken-401892454",
+      "date": "2026-10-06",
+      "start": "18:40",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-09-espn-uw-football-401858487",
+      "date": "2026-10-09",
+      "start": "18:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-11-espn-seahawks-401872992",
+      "date": "2026-10-11",
+      "start": "13:25",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-sounders-761885",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-kraken-401892547",
+      "date": "2026-10-20",
+      "start": "18:40",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-17",
+  "rows": [
+    {
+      "metroId": "seattle",
+      "venueId": "lumen-field",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T20:43:05.889Z",
+      "feelsLikeF": 58.6,
+      "tempF": 63.8,
+      "humidity": 24,
+      "windMph": 1.4,
+      "uvIndex": 0,
+      "precipProbability": 9,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "seattle",
+      "venueId": "lumen-field",
+      "date": "2026-10-17",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T20:43:05.889Z",
+      "feelsLikeF": 54.7,
+      "tempF": 60.2,
+      "humidity": 27,
+      "windMph": 2,
+      "uvIndex": 0,
+      "precipProbability": 8,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 7,
+      "code": 0
+    },
+    {
+      "metroId": "seattle",
+      "venueId": "lumen-field",
+      "date": "2026-10-17",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T20:43:05.889Z",
+      "feelsLikeF": 53.1,
+      "tempF": 58.4,
+      "humidity": 29,
+      "windMph": 1.6,
+      "uvIndex": 0,
+      "precipProbability": 7,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 33,
+      "code": 1
+    },
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T20:43:05.889Z",
+      "feelsLikeF": 58.2,
+      "tempF": 63.5,
+      "humidity": 24,
+      "windMph": 1.4,
+      "uvIndex": 0,
+      "precipProbability": 9,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T20:43:05.889Z",
+      "feelsLikeHighF": 67.4,
+      "feelsLikeLowF": 41.2,
+      "code": 3,
+      "precipProbability": 10,
+      "precipMm": 0
+    }
+  ]
+}

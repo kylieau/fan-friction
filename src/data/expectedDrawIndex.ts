@@ -2643,9 +2643,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "teamId": "sdsu-football",
     "dayClass": "all",
     "month": null,
-    "count": 24325,
-    "games": 19,
-    "seasons": "2023,2024,2025"
+    "count": 24753,
+    "games": 20,
+    "seasons": "2023,2024,2025,2026"
   },
   {
     "metroId": "san-diego",
@@ -2661,9 +2661,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "teamId": "sdsu-football",
     "dayClass": "saturday",
     "month": null,
-    "count": 25180,
-    "games": 15,
-    "seasons": "2023,2024,2025"
+    "count": 25249,
+    "games": 16,
+    "seasons": "2023,2024,2025,2026"
   },
   {
     "metroId": "san-diego",
@@ -2679,9 +2679,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "teamId": "sdsu-football",
     "dayClass": "saturday",
     "month": 10,
-    "count": 27122,
-    "games": 3,
-    "seasons": "2023,2024"
+    "count": 27798,
+    "games": 4,
+    "seasons": "2023,2024,2026"
   },
   {
     "metroId": "san-diego",
@@ -2988,5 +2988,1004 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "count": 24239,
     "games": 4,
     "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "all",
+    "month": null,
+    "count": 17151,
+    "games": 123,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 17151,
+    "games": 75,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 17151,
+    "games": 16,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 17151,
+    "games": 6,
+    "seasons": "2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17151,
+    "games": 14,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 17151,
+    "games": 6,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 17151,
+    "games": 8,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17151,
+    "games": 14,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 17151,
+    "games": 11,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "friday",
+    "month": null,
+    "count": 17151,
+    "games": 7,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17151,
+    "games": 30,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 17151,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 17151,
+    "games": 6,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 17151,
+    "games": 3,
+    "seasons": "2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 17151,
+    "games": 5,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17151,
+    "games": 7,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 17151,
+    "games": 4,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17151,
+    "games": 11,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 17151,
+    "games": 3,
+    "seasons": "2024,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 17151,
+    "games": 3,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 17151,
+    "games": 3,
+    "seasons": "2024,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "all",
+    "month": null,
+    "count": 32944,
+    "games": 243,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 25648,
+    "games": 123,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 44070,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18877,
+    "games": 21,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 21177,
+    "games": 24,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 23329,
+    "games": 17,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 29764,
+    "games": 18,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 32756,
+    "games": 19,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 32723,
+    "games": 20,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "friday",
+    "month": null,
+    "count": 36581,
+    "games": 40,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 30013,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 31226,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 36279,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 37063,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 39981,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 39271,
+    "games": 8,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 42626,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 38022,
+    "games": 40,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 38104,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 37457,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 39932,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 38017,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 37627,
+    "games": 8,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 41828,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 36395,
+    "games": 40,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 32423,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 39914,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 39937,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 35038,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 37492,
+    "games": 8,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 42513,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "all",
+    "month": null,
+    "count": 8146,
+    "games": 39,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6947,
+    "games": 4,
+    "seasons": "2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7770,
+    "games": 12,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 7030,
+    "games": 3,
+    "seasons": "2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "friday",
+    "month": 10,
+    "count": 8193,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7996,
+    "games": 10,
+    "seasons": "2023,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 7721,
+    "games": 3,
+    "seasons": "2023,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 9051,
+    "games": 13,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 6841,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 9051,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "dayClass": "all",
+    "month": null,
+    "count": 68723,
+    "games": 25,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 68758,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 68722,
+    "games": 20,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 68691,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 68781,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 68721,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 68757,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "all",
+    "month": null,
+    "count": 30564,
+    "games": 56,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 30032,
+    "games": 11,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 30020,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 30495,
+    "games": 3,
+    "seasons": "2023,2024"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 31026,
+    "games": 35,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 30087,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 30550,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 30804,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 30397,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 31840,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 32351,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 33290,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 31149,
+    "games": 9,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-football",
+    "dayClass": "all",
+    "month": null,
+    "count": 68630,
+    "games": 21,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-football",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 68630,
+    "games": 19,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-football",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 66448,
+    "games": 8,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-football",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 69976,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-football",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 71251,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "all",
+    "month": null,
+    "count": 7346,
+    "games": 49,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6904,
+    "games": 27,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 7789,
+    "games": 5,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 7117,
+    "games": 6,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 5564,
+    "games": 7,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 7341,
+    "games": 8,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7882,
+    "games": 13,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 7419,
+    "games": 3,
+    "seasons": "2024,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 8755,
+    "games": 5,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 7251,
+    "games": 3,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 7346,
+    "games": 7,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 8156,
+    "games": 3,
+    "seasons": "2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "all",
+    "month": null,
+    "count": 2614,
+    "games": 51,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1980,
+    "games": 24,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2779,
+    "games": 6,
+    "seasons": "2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1864,
+    "games": 11,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1780,
+    "games": 5,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2685,
+    "games": 6,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 3413,
+    "games": 3,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2582,
+    "games": 6,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 2547,
+    "games": 4,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4104,
+    "games": 15,
+    "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 3509,
+    "games": 3,
+    "seasons": "2024,2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 4860,
+    "games": 8,
+    "seasons": "2024,2025,2026"
   }
 ];

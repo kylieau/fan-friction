@@ -97,8 +97,13 @@ interface EspnGame {
   }[];
 }
 
-/** Short names can collide (Sacramento Kings vs. LA Kings), so use the full name when they do. */
+/**
+ * Our own short name for a team we know (ESPN calls the Sounders "Seattle"); otherwise ESPN's.
+ * Short names can collide (Sacramento Kings vs. LA Kings), so use the full name when they do.
+ */
 function nameOf(team: EspnSide['team']): string {
+  const ours = Object.values(TEAMS).find((t) => t.metroId && t.name === team.displayName);
+  if (ours) return ours.shortName;
   const clash = Object.values(TEAMS).some((t) => t.shortName === team.shortDisplayName && t.name !== team.displayName);
   return clash ? team.displayName : team.shortDisplayName;
 }

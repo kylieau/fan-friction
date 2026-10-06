@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "teamId": "uw-football",
+  "collectedOn": "2026-10-06",
+  "games": [
+    {
+      "teamId": "uw-football",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "12:30",
+      "opponent": "Boise St",
+      "venueId": "husky-stadium",
+      "attendance": 67475,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "14:00",
+      "opponent": "Tulsa",
+      "venueId": "husky-stadium",
+      "attendance": 63128,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "19:30",
+      "opponent": "California",
+      "venueId": "husky-stadium",
+      "attendance": 69107,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2023,
+      "date": "2023-10-14",
+      "start": "12:30",
+      "opponent": "Oregon",
+      "venueId": "husky-stadium",
+      "attendance": 71321,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "19:45",
+      "opponent": "Arizona St",
+      "venueId": "husky-stadium",
+      "attendance": 68379,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "12:30",
+      "opponent": "Utah",
+      "venueId": "husky-stadium",
+      "attendance": 70976,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2023,
+      "date": "2023-11-25",
+      "start": "13:00",
+      "opponent": "Washington St",
+      "venueId": "husky-stadium",
+      "attendance": 71312,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "20:00",
+      "opponent": "Weber St",
+      "venueId": "husky-stadium",
+      "attendance": 66984,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "12:30",
+      "opponent": "E Michigan",
+      "venueId": "husky-stadium",
+      "attendance": 64222,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "12:30",
+      "opponent": "Washington St",
+      "venueId": "lumen-field",
+      "attendance": 57567,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "16:00",
+      "opponent": "Northwestern",
+      "venueId": "husky-stadium",
+      "attendance": 69788,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "16:30",
+      "opponent": "Michigan",
+      "venueId": "husky-stadium",
+      "attendance": 72132,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2024,
+      "date": "2024-11-02",
+      "start": "16:30",
+      "opponent": "USC",
+      "venueId": "husky-stadium",
+      "attendance": 71251,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2024,
+      "date": "2024-11-15",
+      "start": "18:00",
+      "opponent": "UCLA",
+      "venueId": "husky-stadium",
+      "attendance": 68811,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "20:00",
+      "opponent": "Colorado St",
+      "venueId": "husky-stadium",
+      "attendance": 67778,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "20:00",
+      "opponent": "UC Davis",
+      "venueId": "husky-stadium",
+      "attendance": 65421,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "12:30",
+      "opponent": "Ohio State",
+      "venueId": "husky-stadium",
+      "attendance": 72485,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2025,
+      "date": "2025-10-10",
+      "start": "18:00",
+      "opponent": "Rutgers",
+      "venueId": "husky-stadium",
+      "attendance": 63743,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2025,
+      "date": "2025-10-25",
+      "start": "12:30",
+      "opponent": "Illinois",
+      "venueId": "husky-stadium",
+      "attendance": 68630,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "16:00",
+      "opponent": "Purdue",
+      "venueId": "husky-stadium",
+      "attendance": 67229,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2025,
+      "date": "2025-11-29",
+      "start": "12:30",
+      "opponent": "Oregon",
+      "venueId": "husky-stadium",
+      "attendance": 72376,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}
