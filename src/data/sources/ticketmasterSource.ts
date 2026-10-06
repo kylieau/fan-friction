@@ -6,6 +6,7 @@
 // feeds. Only venues the app knows are kept: a listing matches a venue by
 // Ticketmaster's venue id when one is on record, else by name, else by
 // being within 300 m of the building. Unknown rooms are counted, not kept.
+// Satellite grounds far outside the city (the Gorge, Indio) get their own small search.
 
 import { COVERED_METRO_IDS, METROS } from '../../config/metros';
 import type { CrowdEvent, LocalDate } from '../types';
@@ -16,6 +17,11 @@ const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
 const DAYS_AHEAD = 120;
 /** Search radius from the metro's center, miles. */
 const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30, seattle: 38 };
+/** Satellite grounds outside the city radius, searched on their own: [lat, lng, miles]. */
+const EXTRA_POINTS: Record<string, [number, number, number][]> = {
+  la: [[33.6803, -116.2372, 5]], // Empire Polo Club, Indio
+  seattle: [[47.1028, -119.996, 5]], // the Gorge, George
+};
 const PAGE_SIZE = 200;
 /** Ticketmaster stops paging at 1,000 results per query, so the four months are asked for a month at a time. */
 const MAX_PAGES = 5;
@@ -111,13 +117,15 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
   const unknown = new Map<string, number>();
   const seen = new Set<string>();
   let pages = 0;
+  const points: [number, number, number][] = [[metro.center[1], metro.center[0], RADIUS_MILES[metroId] ?? 30], ...(EXTRA_POINTS[metroId] ?? [])];
+  for (const [lat, lng, radius] of points)
   for (let from = today; from <= through; from = addDays(from, WINDOW_DAYS)) {
   const to = addDays(from, WINDOW_DAYS - 1) < through ? addDays(from, WINDOW_DAYS - 1) : through;
   for (let page = 0; page < MAX_PAGES; page++) {
     const params = new URLSearchParams({
       apikey: apiKey,
-      latlong: `${metro.center[1]},${metro.center[0]}`,
-      radius: String(RADIUS_MILES[metroId] ?? 30),
+      latlong: `${lat},${lng}`,
+      radius: String(radius),
       unit: 'miles',
       startDateTime: `${from}T00:00:00Z`,
       endDateTime: `${to}T23:59:59Z`,

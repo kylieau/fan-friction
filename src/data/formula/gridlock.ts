@@ -43,6 +43,21 @@ const ZONE_NAMES: Record<string, string> = {
   'dignity-health-sports-park': 'Carson',
   'angel-stadium': 'Anaheim',
   'honda-center': 'Anaheim',
+  // Seattle
+  'lumen-field': 'SoDo',
+  't-mobile-park': 'SoDo',
+  'wamu-theater': 'SoDo',
+  'climate-pledge-arena': 'Seattle Center',
+  'seattle-center': 'Seattle Center',
+  'memorial-stadium-seattle': 'Seattle Center',
+  'husky-stadium': 'University District',
+  'alaska-airlines-arena': 'University District',
+  'tacoma-dome': 'Tacoma Dome',
+  'accesso-showare-center': 'Kent',
+  'angel-of-the-winds-arena': 'Everett',
+  'everett-memorial-stadium': 'Everett',
+  'white-river-amphitheatre': 'Auburn',
+  'emerald-downs': 'Auburn',
 };
 
 export interface Zone {
