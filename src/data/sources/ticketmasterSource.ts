@@ -17,8 +17,9 @@ const DAYS_AHEAD = 120;
 /** Search radius from the metro's center, miles. */
 const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30 };
 const PAGE_SIZE = 200;
-/** Ticketmaster stops paging at 1,000 results per query. */
+/** Ticketmaster stops paging at 1,000 results per query, so the four months are asked for a month at a time. */
 const MAX_PAGES = 5;
+const WINDOW_DAYS = 30;
 
 interface TmVenue {
   id: string;
@@ -58,13 +59,12 @@ function venueFor(metroId: string, v: TmVenue) {
   const byId = ours.find((venue) => venue.ticketmasterIds?.includes(v.id));
   if (byId) return byId;
   const name = v.name.trim().toLowerCase();
-  const byName = ours.find((venue) => venue.names.some((n) => n.name.toLowerCase() === name));
-  if (byName) return byName;
-  if (v.location) {
-    const point: [number, number] = [Number(v.location.longitude), Number(v.location.latitude)];
-    return ours.find((venue) => meters(venue.location, point) <= 300);
-  }
-  return undefined;
+  return ours.find((venue) => venue.names.some((n) => n.name.toLowerCase() === name));
+}
+
+/** Listings that are not a night out: venue tours, parking, camping, VIP add-ons. */
+function isAddOn(name: string): boolean {
+  return /\b(parking|tours?\b(?!\s+(?:de|of)\b)|no field access|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|upgrade)\b/i.test(name);
 }
 
 function kindOf(segment: string | undefined): CrowdEvent['kind'] | null {
@@ -97,14 +97,16 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
   const unknown = new Map<string, number>();
   const seen = new Set<string>();
   let pages = 0;
+  for (let from = today; from <= through; from = addDays(from, WINDOW_DAYS)) {
+  const to = addDays(from, WINDOW_DAYS - 1) < through ? addDays(from, WINDOW_DAYS - 1) : through;
   for (let page = 0; page < MAX_PAGES; page++) {
     const params = new URLSearchParams({
       apikey: apiKey,
       latlong: `${metro.center[1]},${metro.center[0]}`,
       radius: String(RADIUS_MILES[metroId] ?? 30),
       unit: 'miles',
-      startDateTime: `${today}T00:00:00Z`,
-      endDateTime: `${through}T23:59:59Z`,
+      startDateTime: `${from}T00:00:00Z`,
+      endDateTime: `${to}T23:59:59Z`,
       size: String(PAGE_SIZE),
       page: String(page),
       sort: 'date,asc',
@@ -121,6 +123,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       if (e.dates.start.dateTBA || !e.dates.start.localDate) continue;
       const kind = kindOf(e.classifications?.[0]?.segment?.name);
       if (!kind) continue;
+      if (kind === 'special' && isAddOn(e.name)) continue;
       const tmVenue = e._embedded?.venues?.[0];
       if (!tmVenue) continue;
       const venue = venueFor(metroId, tmVenue);
@@ -149,6 +152,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
     const total = json.page?.totalPages ?? 1;
     if (page + 1 >= total) break;
     await new Promise((resolve) => setTimeout(resolve, 250)); // five a second is the limit
+  }
   }
   return {
     events,
