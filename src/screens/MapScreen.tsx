@@ -27,7 +27,7 @@ import { HandMoveWatch, MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { DateScore } from '../components/DateScore';
-import { ArrowRight, ChevronDown, HomeIcon, RecenterIcon, SearchIcon } from '../components/Icons';
+import { ArrowRight, ChevronDown, ChevronLeft, HomeIcon, RecenterIcon, SearchIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
@@ -252,7 +252,7 @@ export function MapScreen() {
           <div className="map-chrome-left">
             {!isToday && (
               <Link to={mapPath({ metroId: metro.id, date: today, today })} className="date-button today-button">
-                Today
+                <ChevronLeft /> Today
               </Link>
             )}
             {showFeels && dayRange && (
