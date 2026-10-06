@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "rams",
+  "collectedOn": "2026-10-06",
+  "games": [
+    {
+      "teamId": "rams",
+      "season": 2023,
+      "date": "2023-09-17",
+      "start": "13:05",
+      "opponent": "49ers",
+      "venueId": "sofi-stadium",
+      "attendance": 74742,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2023,
+      "date": "2023-10-08",
+      "start": "13:05",
+      "opponent": "Eagles",
+      "venueId": "sofi-stadium",
+      "attendance": 74935,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2023,
+      "date": "2023-10-15",
+      "start": "13:25",
+      "opponent": "Cardinals",
+      "venueId": "sofi-stadium",
+      "attendance": 71202,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2023,
+      "date": "2023-10-22",
+      "start": "13:05",
+      "opponent": "Steelers",
+      "venueId": "sofi-stadium",
+      "attendance": 73471,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2023,
+      "date": "2023-11-19",
+      "start": "13:25",
+      "opponent": "Seahawks",
+      "venueId": "sofi-stadium",
+      "attendance": 72704,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2023,
+      "date": "2023-12-03",
+      "start": "13:25",
+      "opponent": "Browns",
+      "venueId": "sofi-stadium",
+      "attendance": 72887,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2023,
+      "date": "2023-12-17",
+      "start": "13:05",
+      "opponent": "Commanders",
+      "venueId": "sofi-stadium",
+      "attendance": 72035,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2023,
+      "date": "2023-12-21",
+      "start": "17:15",
+      "opponent": "Saints",
+      "venueId": "sofi-stadium",
+      "attendance": 73228,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2024,
+      "date": "2024-09-22",
+      "start": "13:25",
+      "opponent": "49ers",
+      "venueId": "sofi-stadium",
+      "attendance": 74484,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2024,
+      "date": "2024-10-06",
+      "start": "13:25",
+      "opponent": "Packers",
+      "venueId": "sofi-stadium",
+      "attendance": 72842,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2024,
+      "date": "2024-10-20",
+      "start": "13:05",
+      "opponent": "Raiders",
+      "venueId": "sofi-stadium",
+      "attendance": 73267,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2024,
+      "date": "2024-10-24",
+      "start": "17:15",
+      "opponent": "Vikings",
+      "venueId": "sofi-stadium",
+      "attendance": 72127,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2024,
+      "date": "2024-11-11",
+      "start": "17:15",
+      "opponent": "Dolphins",
+      "venueId": "sofi-stadium",
+      "attendance": 72474,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2024,
+      "date": "2024-11-24",
+      "start": "17:20",
+      "opponent": "Eagles",
+      "venueId": "sofi-stadium",
+      "attendance": 74400,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2024,
+      "date": "2024-12-08",
+      "start": "13:25",
+      "opponent": "Bills",
+      "venueId": "sofi-stadium",
+      "attendance": 73493,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2024,
+      "date": "2024-12-28",
+      "start": "17:00",
+      "opponent": "Cardinals",
+      "venueId": "sofi-stadium",
+      "attendance": 73051,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2024,
+      "date": "2025-01-05",
+      "start": "13:25",
+      "opponent": "Seahawks",
+      "venueId": "sofi-stadium",
+      "attendance": 72610,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "13:25",
+      "opponent": "Texans",
+      "venueId": "sofi-stadium",
+      "attendance": 71346,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "13:05",
+      "opponent": "Colts",
+      "venueId": "sofi-stadium",
+      "attendance": 71257,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2025,
+      "date": "2025-10-02",
+      "start": "17:15",
+      "opponent": "49ers",
+      "venueId": "sofi-stadium",
+      "attendance": 73652,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2025,
+      "date": "2025-11-02",
+      "start": "13:05",
+      "opponent": "Saints",
+      "venueId": "sofi-stadium",
+      "attendance": 72055,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2025,
+      "date": "2025-11-16",
+      "start": "13:05",
+      "opponent": "Seahawks",
+      "venueId": "sofi-stadium",
+      "attendance": 75323,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2025,
+      "date": "2025-11-23",
+      "start": "17:20",
+      "opponent": "Buccaneers",
+      "venueId": "sofi-stadium",
+      "attendance": 75545,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2025,
+      "date": "2025-12-14",
+      "start": "13:25",
+      "opponent": "Lions",
+      "venueId": "sofi-stadium",
+      "attendance": 74701,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2025,
+      "date": "2026-01-04",
+      "start": "13:25",
+      "opponent": "Cardinals",
+      "venueId": "sofi-stadium",
+      "attendance": 72004,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

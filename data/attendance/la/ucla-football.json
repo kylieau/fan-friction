@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "ucla-football",
+  "collectedOn": "2026-10-06",
+  "games": [
+    {
+      "teamId": "ucla-football",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "19:30",
+      "opponent": "Coastal",
+      "venueId": "rose-bowl",
+      "attendance": 43705,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "14:00",
+      "opponent": "NC Central",
+      "venueId": "rose-bowl",
+      "attendance": 38343,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2023,
+      "date": "2023-10-07",
+      "start": "12:00",
+      "opponent": "Washington St",
+      "venueId": "rose-bowl",
+      "attendance": 35437,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "16:30",
+      "opponent": "Colorado",
+      "venueId": "rose-bowl",
+      "attendance": 71343,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "18:00",
+      "opponent": "Arizona St",
+      "venueId": "rose-bowl",
+      "attendance": 56436,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2023,
+      "date": "2023-11-25",
+      "start": "19:30",
+      "opponent": "California",
+      "venueId": "rose-bowl",
+      "attendance": 42439,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "16:30",
+      "opponent": "Indiana",
+      "venueId": "rose-bowl",
+      "attendance": 47811,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "20:00",
+      "opponent": "Oregon",
+      "venueId": "rose-bowl",
+      "attendance": 43051,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "18:00",
+      "opponent": "Minnesota",
+      "venueId": "rose-bowl",
+      "attendance": 42012,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2024,
+      "date": "2024-11-08",
+      "start": "18:00",
+      "opponent": "Iowa",
+      "venueId": "rose-bowl",
+      "attendance": 53467,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "19:30",
+      "opponent": "USC",
+      "venueId": "rose-bowl",
+      "attendance": 59473,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2024,
+      "date": "2024-11-30",
+      "start": "12:30",
+      "opponent": "Fresno St",
+      "venueId": "rose-bowl",
+      "attendance": 35018,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "20:00",
+      "opponent": "Utah",
+      "venueId": "rose-bowl",
+      "attendance": 35032,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "19:00",
+      "opponent": "New Mexico",
+      "venueId": "rose-bowl",
+      "attendance": 31163,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2025,
+      "date": "2025-10-04",
+      "start": "12:30",
+      "opponent": "Penn State",
+      "venueId": "rose-bowl",
+      "attendance": 39256,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "16:00",
+      "opponent": "Maryland",
+      "venueId": "rose-bowl",
+      "attendance": 35561,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2025,
+      "date": "2025-11-08",
+      "start": "18:00",
+      "opponent": "Nebraska",
+      "venueId": "rose-bowl",
+      "attendance": 44481,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "19:30",
+      "opponent": "Washington",
+      "venueId": "rose-bowl",
+      "attendance": 38201,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

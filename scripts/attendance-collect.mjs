@@ -1,0 +1,184 @@
+// Collects announced attendance for past home games of the Los Angeles teams,
+// from MLB's box scores and ESPN's past-season schedules (both free, no key).
+// One file per team under data/attendance/la/. Run now and then, not nightly:
+//   node scripts/attendance-collect.mjs            (all teams, recent seasons)
+//   node scripts/attendance-collect.mjs dodgers    (one team)
+// Every figure is the league's announced count (tickets distributed, for MLB
+// and the NFL). Nothing here is invented; a game without a count is skipped.
+// The review's calibration plan (docs/formula-review-response.md §11).
+
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const METRO = 'la';
+const ZONE = 'America/Los_Angeles';
+const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
+
+/** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
+const MLB_TEAMS = [
+  { teamId: 'dodgers', mlbId: 119, venueId: 'dodger-stadium', seasons: [2023, 2024, 2025] },
+  { teamId: 'angels', mlbId: 108, venueId: 'angel-stadium', seasons: [2023, 2024, 2025] },
+];
+const ESPN_TEAMS = [
+  { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'clippers', path: 'basketball/nba', espnId: '12', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'kings', path: 'hockey/nhl', espnId: '8', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'ducks', path: 'hockey/nhl', espnId: '25', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'galaxy', path: 'soccer/usa.1', espnId: '187', seasons: [2023, 2024, 2025] },
+  { teamId: 'lafc', path: 'soccer/usa.1', espnId: '18966', seasons: [2023, 2024, 2025] },
+  { teamId: 'angel-city', path: 'soccer/usa.nwsl', espnId: '21422', seasons: [2023, 2024, 2025] },
+  { teamId: 'rams', path: 'football/nfl', espnId: '14', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'chargers', path: 'football/nfl', espnId: '24', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'usc-football', path: 'football/college-football', espnId: '30', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'ucla-football', path: 'football/college-football', espnId: '26', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'usc-mbb', path: 'basketball/mens-college-basketball', espnId: '30', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'ucla-mbb', path: 'basketball/mens-college-basketball', espnId: '26', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'usc-wbb', path: 'basketball/womens-college-basketball', espnId: '30', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'ucla-wbb', path: 'basketball/womens-college-basketball', espnId: '26', seasons: [2024, 2025, 2026], seasontype: 2 },
+];
+
+/** ESPN gives venue names. Only home games in buildings the app knows are kept. */
+const VENUE_BY_NAME = {
+  'crypto.com arena': 'crypto-com-arena',
+  'intuit dome': 'intuit-dome',
+  'sofi stadium': 'sofi-stadium',
+  'dignity health sports park': 'dignity-health-sports-park',
+  'los angeles memorial coliseum': 'coliseum',
+  'rose bowl': 'rose-bowl',
+  'bmo stadium': 'bmo-stadium',
+  'honda center': 'honda-center',
+  'pauley pavilion': 'pauley-pavilion',
+  'galen center': 'galen-center',
+};
+
+function localParts(iso) {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: ZONE, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+  }).formatToParts(new Date(iso));
+  const get = (t) => parts.find((p) => p.type === t)?.value ?? '';
+  return { date: `${get('year')}-${get('month')}-${get('day')}`, time: `${get('hour')}:${get('minute')}` };
+}
+
+async function getJson(url) {
+  const r = await fetch(url, { headers: UA });
+  if (!r.ok) throw new Error(`${r.status} for ${url}`);
+  return r.json();
+}
+
+async function mapLimit(items, limit, fn) {
+  const out = [];
+  let i = 0;
+  await Promise.all(
+    Array.from({ length: limit }, async () => {
+      while (i < items.length) {
+        const at = i++;
+        out[at] = await fn(items[at]);
+      }
+    }),
+  );
+  return out;
+}
+
+async function collectMlb(team) {
+  const rows = [];
+  for (const season of team.seasons) {
+    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${team.mlbId}&season=${season}&gameType=R,F,D,L,W&hydrate=team`;
+    const json = await getJson(url);
+    const games = json.dates
+      .flatMap((d) => d.games)
+      .filter((g) => g.teams.home.team.id === team.mlbId && g.status?.abstractGameState === 'Final');
+    const found = await mapLimit(games, 6, async (g) => {
+      try {
+        const box = await getJson(`https://statsapi.mlb.com/api/v1/game/${g.gamePk}/boxscore`);
+        const att = Number((box.info?.find((row) => row.label === 'Att')?.value ?? '').replace(/[^0-9]/g, ''));
+        if (!Number.isFinite(att) || att <= 0) return null;
+        const { date, time } = localParts(g.gameDate);
+        return {
+          teamId: team.teamId,
+          season,
+          date,
+          start: g.status?.startTimeTBD ? null : time,
+          opponent: g.teams.away.team.teamName ?? g.teams.away.team.name,
+          venueId: team.venueId,
+          attendance: att,
+          kind: 'announced',
+          postseason: g.gameType !== 'R' || undefined,
+          sourceId: 'mlb',
+        };
+      } catch {
+        return null;
+      }
+    });
+    rows.push(...found.filter(Boolean));
+    console.log(`  ${team.teamId} ${season}: ${found.filter(Boolean).length} of ${games.length} home games with a count`);
+  }
+  return rows;
+}
+
+async function collectEspn(team) {
+  const rows = [];
+  for (const season of team.seasons) {
+    const q = team.seasontype ? `?season=${season}&seasontype=${team.seasontype}` : `?season=${season}`;
+    const json = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${team.path}/teams/${team.espnId}/schedule${q}`);
+    let kept = 0;
+    for (const e of json.events ?? []) {
+      const c = e.competitions?.[0];
+      if (!c || c.status?.type?.name !== 'STATUS_FINAL') continue;
+      const home = c.competitors.find((x) => x.homeAway === 'home');
+      const away = c.competitors.find((x) => x.homeAway === 'away');
+      if (!home || home.team.id !== team.espnId) continue;
+      const venueId = VENUE_BY_NAME[(c.venue?.fullName ?? '').toLowerCase()];
+      if (!venueId) continue;
+      const att = Number(c.attendance);
+      if (!Number.isFinite(att) || att <= 0) continue;
+      const timeSet = e.timeValid !== false && c.timeValid !== false;
+      const { date, time } = timeSet ? localParts(e.date) : { date: localParts(e.date).date, time: null };
+      rows.push({
+        teamId: team.teamId,
+        season,
+        date,
+        start: time,
+        opponent: away?.team.shortDisplayName ?? away?.team.displayName ?? '',
+        venueId,
+        attendance: att,
+        kind: 'announced',
+        sourceId: 'espn',
+      });
+      kept++;
+    }
+    console.log(`  ${team.teamId} ${season}: ${kept} home games with a count`);
+  }
+  return rows;
+}
+
+const only = process.argv[2];
+const dir = path.join(root, 'data', 'attendance', METRO);
+await mkdir(dir, { recursive: true });
+let failures = 0;
+for (const team of [...MLB_TEAMS, ...ESPN_TEAMS]) {
+  if (only && team.teamId !== only) continue;
+  try {
+    const rows = 'mlbId' in team ? await collectMlb(team) : await collectEspn(team);
+    rows.sort((a, b) => a.date.localeCompare(b.date));
+    const file = path.join(dir, `${team.teamId}.json`);
+    let previous = null;
+    try {
+      previous = JSON.parse(await readFile(file, 'utf8'));
+    } catch {
+      previous = null;
+    }
+    const next = { schema: 1, metroId: METRO, teamId: team.teamId, collectedOn: new Date().toISOString().slice(0, 10), games: rows };
+    if (previous && JSON.stringify(previous.games) === JSON.stringify(rows)) {
+      console.log(`${team.teamId}: no change (${rows.length} games).`);
+    } else {
+      await writeFile(file, `${JSON.stringify(next, null, 2)}\n`);
+      console.log(`${team.teamId}: saved ${rows.length} games.`);
+    }
+  } catch (err) {
+    failures++;
+    console.error(`${team.teamId}: ${err instanceof Error ? err.message : err}`);
+  }
+}
+process.exit(failures ? 1 : 0);

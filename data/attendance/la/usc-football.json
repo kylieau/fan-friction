@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "usc-football",
+  "collectedOn": "2026-10-06",
+  "games": [
+    {
+      "teamId": "usc-football",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "17:00",
+      "opponent": "San José St",
+      "venueId": "coliseum",
+      "attendance": 63411,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "15:30",
+      "opponent": "Nevada",
+      "venueId": "coliseum",
+      "attendance": 62916,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "19:30",
+      "opponent": "Stanford",
+      "venueId": "coliseum",
+      "attendance": 67213,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2023,
+      "date": "2023-10-07",
+      "start": "19:30",
+      "opponent": "Arizona",
+      "venueId": "coliseum",
+      "attendance": 62916,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "17:00",
+      "opponent": "Utah",
+      "venueId": "coliseum",
+      "attendance": 61551,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "16:30",
+      "opponent": "Washington",
+      "venueId": "coliseum",
+      "attendance": 72243,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "12:30",
+      "opponent": "UCLA",
+      "venueId": "coliseum",
+      "attendance": 72244,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "20:00",
+      "opponent": "Utah State",
+      "venueId": "coliseum",
+      "attendance": 68110,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "12:30",
+      "opponent": "Wisconsin",
+      "venueId": "coliseum",
+      "attendance": 74118,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "12:30",
+      "opponent": "Penn State",
+      "venueId": "coliseum",
+      "attendance": 75250,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2024,
+      "date": "2024-10-25",
+      "start": "20:00",
+      "opponent": "Rutgers",
+      "venueId": "coliseum",
+      "attendance": 63404,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "13:00",
+      "opponent": "Nebraska",
+      "venueId": "coliseum",
+      "attendance": 75304,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2024,
+      "date": "2024-11-30",
+      "start": "12:30",
+      "opponent": "Notre Dame",
+      "venueId": "coliseum",
+      "attendance": 73241,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "16:30",
+      "opponent": "Missouri St",
+      "venueId": "coliseum",
+      "attendance": 62841,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "20:00",
+      "opponent": "Michigan St",
+      "venueId": "coliseum",
+      "attendance": 67614,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2025,
+      "date": "2025-10-11",
+      "start": "16:30",
+      "opponent": "Michigan",
+      "venueId": "coliseum",
+      "attendance": 75500,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2025,
+      "date": "2025-11-07",
+      "start": "18:00",
+      "opponent": "Northwestern",
+      "venueId": "coliseum",
+      "attendance": 67179,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "12:30",
+      "opponent": "Iowa",
+      "venueId": "coliseum",
+      "attendance": 65216,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2025,
+      "date": "2025-11-29",
+      "start": "16:30",
+      "opponent": "UCLA",
+      "venueId": "coliseum",
+      "attendance": 69614,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

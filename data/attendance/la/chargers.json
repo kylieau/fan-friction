@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "chargers",
+  "collectedOn": "2026-10-06",
+  "games": [
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:25",
+      "opponent": "Dolphins",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": "13:05",
+      "opponent": "Raiders",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2023-10-16",
+      "start": "17:15",
+      "opponent": "Cowboys",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2023-10-29",
+      "start": "17:20",
+      "opponent": "Bears",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2023-11-12",
+      "start": "13:05",
+      "opponent": "Lions",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2023-11-26",
+      "start": "17:20",
+      "opponent": "Ravens",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2023-12-10",
+      "start": "13:25",
+      "opponent": "Broncos",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2023-12-23",
+      "start": "17:00",
+      "opponent": "Bills",
+      "venueId": "sofi-stadium",
+      "attendance": 67678,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2024-01-07",
+      "start": "13:25",
+      "opponent": "Chiefs",
+      "venueId": "sofi-stadium",
+      "attendance": 68274,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "13:05",
+      "opponent": "Raiders",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "13:25",
+      "opponent": "Chiefs",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
+      "date": "2024-10-27",
+      "start": "13:05",
+      "opponent": "Saints",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
+      "date": "2024-11-10",
+      "start": "13:05",
+      "opponent": "Titans",
+      "venueId": "sofi-stadium",
+      "attendance": 68796,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
+      "date": "2024-11-17",
+      "start": "17:20",
+      "opponent": "Bengals",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
+      "date": "2024-11-25",
+      "start": "17:15",
+      "opponent": "Ravens",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
+      "date": "2024-12-15",
+      "start": "13:25",
+      "opponent": "Buccaneers",
+      "venueId": "sofi-stadium",
+      "attendance": 69496,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
+      "date": "2024-12-19",
+      "start": "17:15",
+      "opponent": "Broncos",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2025,
+      "date": "2025-09-21",
+      "start": "13:05",
+      "opponent": "Broncos",
+      "venueId": "sofi-stadium",
+      "attendance": 70740,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2025,
+      "date": "2025-10-05",
+      "start": "13:25",
+      "opponent": "Commanders",
+      "venueId": "sofi-stadium",
+      "attendance": 71021,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2025,
+      "date": "2025-10-19",
+      "start": "13:05",
+      "opponent": "Colts",
+      "venueId": "sofi-stadium",
+      "attendance": 71124,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2025,
+      "date": "2025-10-23",
+      "start": "17:15",
+      "opponent": "Vikings",
+      "venueId": "sofi-stadium",
+      "attendance": 71094,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2025,
+      "date": "2025-11-09",
+      "start": "17:20",
+      "opponent": "Steelers",
+      "venueId": "sofi-stadium",
+      "attendance": 72174,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2025,
+      "date": "2025-11-30",
+      "start": "13:25",
+      "opponent": "Raiders",
+      "venueId": "sofi-stadium",
+      "attendance": 71018,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2025,
+      "date": "2025-12-08",
+      "start": "17:15",
+      "opponent": "Eagles",
+      "venueId": "sofi-stadium",
+      "attendance": 72241,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2025,
+      "date": "2025-12-27",
+      "start": "13:30",
+      "opponent": "Texans",
+      "venueId": "sofi-stadium",
+      "attendance": 73066,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

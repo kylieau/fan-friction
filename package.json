@@ -7,6 +7,8 @@
     "dev": "vite --port 3001 --host",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --port 3001 --host",
+    "attendance-collect": "node scripts/attendance-collect.mjs",
+    "attendance-calibrate": "node scripts/attendance-calibrate.mjs",
     "archive-schedule": "node scripts/weather-fetch.mjs && node scripts/archive-schedule.mjs && node scripts/results-fetch.mjs"
   },
   "dependencies": {

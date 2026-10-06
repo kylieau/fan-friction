@@ -3,9 +3,11 @@
 // Run: node scripts/formula-table.mts
 import { SEED_EVENTS, SEED_RATINGS } from '../src/data/seed/testNights.ts';
 import { rateDate, occasionFor } from '../src/data/formula/index.ts';
+import { withExpectedDraws } from '../src/data/expectedDraw.ts';
 
 const byDate = new Map<string, typeof SEED_EVENTS>();
-for (const e of SEED_EVENTS) byDate.set(e.date, [...(byDate.get(e.date) ?? []), e]);
+// Sized the way the app sizes them: a seeded expected draw, else the calibrated one from past seasons.
+for (const e of withExpectedDraws(SEED_EVENTS)) byDate.set(e.date, [...(byDate.get(e.date) ?? []), e]);
 console.log('| Night | Hand | Crowd fight | Conditions | Gridlock | Rating | Confidence | Why |');
 console.log('|---|---|---|---|---|---|---|---|');
 const errors: number[] = [];
