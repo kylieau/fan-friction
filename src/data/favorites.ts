@@ -97,6 +97,7 @@ export function suggestionsFor(homeMetroId: string | null, have: readonly Favori
     .map((team) => favoriteFor('team', team.shortName));
   const venues = Object.values(VENUES)
     .filter((venue) => venue.metroId === homeMetroId)
+    .sort((a, b) => Math.max(...b.capacity.map((c) => c.seats)) - Math.max(...a.capacity.map((c) => c.seats)))
     .map((venue) => favoriteFor('venue', venueNameOn(venue, today())));
   return [...teams, ...venues].filter((fav) => !haveKeys.has(favoriteKey(fav)));
 }
