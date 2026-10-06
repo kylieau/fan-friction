@@ -6,7 +6,7 @@ import { addDays, daysBetween } from '../lib/dates';
 import { mapPath } from '../lib/view';
 import { ReadTile } from './ReadTile';
 
-/** The row runs two weeks back and a month ahead of its anchor; seven cells fit the width. */
+/** The row runs two weeks back and a month ahead of its anchor; seven cells fit the width, with half a cell peeking at each end. */
 const BACK = 14;
 const AHEAD = 30;
 /** The viewed day sits in the third slot (Kylie, Oct 5). */
@@ -48,7 +48,9 @@ export function DayStrip({ metro, today, date }: { metro: Metro; today: string; 
     if (!strip || !cell) return;
     const index = days.indexOf(target);
     if (index < 0) return;
-    strip.scrollTo({ left: Math.max(0, (index - SLOT) * (cell.offsetWidth + GAP)), behavior });
+    // The snap line sits half a cell in from the left edge (CSS scroll-padding), so
+    // the cell before the window peeks on the left and another on the right.
+    strip.scrollTo({ left: Math.max(0, (index - SLOT) * (cell.offsetWidth + GAP) - cell.offsetWidth / 2), behavior });
   };
 
   // First paint: the viewed day in its slot, no animation. A change glides there.

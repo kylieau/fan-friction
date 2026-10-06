@@ -212,7 +212,7 @@ export function MapScreen() {
         </div>
         <div className="map-header-score">
           <div className="map-header-dateblock">
-            <button type="button" className="map-header-date" aria-label="Pick a date" aria-haspopup="dialog" onClick={() => setMonthOpen(true)}>
+            <button type="button" className="map-header-date" aria-label="Pick a date" aria-haspopup="dialog" aria-expanded={monthOpen} onClick={() => setMonthOpen((v) => !v)}>
               <span>{headerDate(date, today)}</span>
               <ChevronDown />
               {pastLabel && <span className="map-header-past">{pastLabel}</span>}

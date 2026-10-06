@@ -86,3 +86,9 @@ Recommendation: B. Three elements, each with one job: the header names and picks
 - **The month sheet drops from the header** (she found it odd that the header's chevron opened something rising from the bottom): rounded bottom corners, shadow downward, a short drop-in, no drag handle. It starts under the header's caption line. Reduced-motion users get no animation.
 - **Today's cell: weekday plus a mark, not the word.** Her ask was the weekday with a little "today". The convention across Apple Calendar, Google Calendar, Outlook and Fantastical is the weekday as usual and the day number in a filled circle; NN/g's "label it Today" advice is for full pickers where a day is otherwise anonymous. Built the circle (Dodger blue). The word is a one-line change if she prefers it.
 - **The weather range is a pill** like the Today button, so it reads against the map instead of blending in.
+
+## Round 4 (Oct 6), built
+- The strip shows half a cell at both ends (eight cells to the width: half, seven, half).
+- The month sheet has no Done. A grab bar on its bottom edge: drag or flick it up and the sheet leaves; tap it, press Escape, or tap the header date again to close.
+- Confirmed for her: the weather range is the selected metro's city point (the map center in `metros.ts`, near Inglewood for LA), not wherever the map is panned.
+- **Map landing view, as it is:** the metro's center at zoom 9.5, then the camera frames that day's venues if it has any. The remembered view returns only for the same address (same city and date) in the same session. There is no reset control. Proposed, not built: a small recenter button on the map that re-frames the night.
