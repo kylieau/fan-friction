@@ -8,13 +8,14 @@ import { espnMetroIds } from './sources/espnSource';
 import { mlbMetroIds } from './sources/mlbSource';
 import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
-import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, DateSearchHit } from './types';
+import type { CalendarDay, CityDate, CrowdEvent, DateRating, Entry, LocalDate, DateSearchHit } from './types';
 import { applyFormula } from './formulaRead';
 import { rateDate } from './formula';
 import { withResults } from './results';
 import { withExpectedDraws } from './expectedDraw';
 import './homeSync';
 import { primeDate } from './catalogCache';
+import { entryMetroId, nightKey } from './read';
 
 // The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.
 const EVENT_SOURCES: EventSource[] = [seedEvents, catalogEvents];
@@ -100,6 +101,37 @@ export async function getRatedDates(metroId: string): Promise<DateRating[]> {
       return curated ? { ...day.rating, headline: curated.headline, sources: curated.sources } : day.rating;
     })
     .filter((r): r is DateRating => r !== null);
+}
+
+/**
+ * The formula's score for a given set of nights, keyed by city and date.
+ *
+ * Separate from getRatedDates on purpose. That list is curated: the famous
+ * nights someone chose and hand-checked. This answers for any night at all,
+ * including one typed in by hand on an ordinary Tuesday, which is what a log
+ * is mostly made of. A night with nothing on it comes back absent, not zero.
+ */
+export async function scoresForNights(
+  nights: Iterable<{ metroId: string; date: LocalDate }>,
+): Promise<Map<string, number>> {
+  const wanted = new Map<string, { metroId: string; date: LocalDate }>();
+  for (const night of nights) {
+    if (!night.metroId || !night.date) continue;
+    wanted.set(nightKey(night.metroId, night.date), night);
+  }
+  const days = await Promise.all([...wanted.values()].map((n) => getCityDate(n.metroId, n.date)));
+  const scores = new Map<string, number>();
+  for (const day of days) {
+    if (day.rating) scores.set(nightKey(day.metroId, day.date), day.rating.rating);
+  }
+  return scores;
+}
+
+/** The nights a log covers, as addresses to score. Vague dates are skipped; they cannot be rated. */
+export function nightsOf(entries: readonly Entry[]): { metroId: string; date: LocalDate }[] {
+  return entries
+    .filter((entry) => entry.when.precision === 'day')
+    .map((entry) => ({ metroId: entryMetroId(entry), date: entry.when.sort }));
 }
 
 /** The metro's feels-like temperature for a date, if one was seeded. One number, not a reading per pin. */

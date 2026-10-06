@@ -6,18 +6,19 @@ import { scoreBand, scoreLabel } from '../config/scoreLabels';
 import { HeaviestStat, Stat, heaviestEntry } from './YouScreen';
 import {
   canSignIn,
+  entriesOf,
   follow,
   followStatus,
   getAccount,
   getProfileByHandle,
-  getRatedDates,
-  entriesOf,
+  nightsOf,
   ratingForEntry,
+  scoresForNights,
   subscribeAccount,
-  unfollow,
-  type FollowStatus,
   type Entry,
+  type FollowStatus,
   type Profile,
+  unfollow,
 } from '../data';
 import { loggedDateLabel } from '../lib/dates';
 import { eventPath } from '../lib/view';
@@ -59,8 +60,8 @@ export function ProfileScreen() {
 
   useEffect(() => {
     let current = true;
-    getRatedDates(DEFAULT_METRO.id).then((rows) => {
-      if (current) setRatings(new Map(rows.map((row) => [row.date, row.rating])));
+    scoresForNights(nightsOf(entries)).then((map) => {
+      if (current) setRatings(map);
     });
     return () => {
       current = false;

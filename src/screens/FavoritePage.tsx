@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
+  entryMatches,
   eventMatches,
   favoriteFor,
   favoriteKey,
@@ -11,22 +12,22 @@ import {
   friendsEntries,
   getAccount,
   getPersonalLog,
-  getRatedDates,
   getUpcoming,
   isPlanned,
   kindLabel,
-  entryMatches,
+  nightsOf,
   ratingForEntry,
+  scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
   toggleFavorite,
   togglePlan,
-  yourEntries,
   type CrowdEvent,
+  type Entry,
   type Favorite,
   type FriendEntry,
-  type Entry,
+  yourEntries,
 } from '../data';
 import { clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
@@ -79,8 +80,8 @@ export function FavoritePage() {
   useEffect(() => {
     let current = true;
     getUpcoming(metro.id, todayIn(metro), 60).then((list) => current && setUpcoming(list.filter((e) => eventMatches(e, fav)).slice(0, UPCOMING)));
-    getRatedDates(metro.id).then((rows) => {
-      if (current) setRatings(new Map(rows.map((row) => [row.date, row.rating])));
+    scoresForNights(nightsOf(entries)).then((map) => {
+      if (current) setRatings(map);
     });
     return () => {
       current = false;

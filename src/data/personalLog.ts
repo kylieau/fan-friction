@@ -13,7 +13,7 @@ import { favoriteKey, favoritesFromLog } from './favorites';
 import { levelPhrase } from './competitions';
 import { lengthLine, scoreLine } from './results';
 import type { Favorite } from './favorites';
-import { asMetroDate, createStamp, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
+import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
 import type { CrowdEvent, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
 
@@ -586,11 +586,10 @@ export function logStats(entries: Entry[]): LogStats {
  * A below-floor night gets the score only when bigger events that night already
  * have one. The events checked are the seeded list for that date.
  */
-export function ratingForEntry(entry: Entry, ratings: ReadonlyMap<string, number>): number | null {
-  const metroId = entry.metroId ?? 'la';
+export function ratingForEntry(entry: Entry, scores: ReadonlyMap<string, number>): number | null {
   const events =
-    entry.when.precision === 'day' ? seedEventsOn(metroId, entry.when.sort) : [];
-  return ratingFromEntry(entry, ratings, events);
+    entry.when.precision === 'day' ? seedEventsOn(entryMetroId(entry), entry.when.sort) : [];
+  return ratingFromEntry(entry, scores, events);
 }
 
 /**

@@ -1,7 +1,15 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { METROS } from '../config/metros';
-import { entryFacts, getPersonalLog, getRatedDates, ratingForEntry, subscribePersonalLog, yourEntries } from '../data';
+import {
+  entryFacts,
+  getPersonalLog,
+  nightsOf,
+  ratingForEntry,
+  scoresForNights,
+  subscribePersonalLog,
+  yourEntries,
+} from '../data';
 import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
 import { FactList } from '../components/FactList';
 import { ChevronDown } from '../components/Icons';
@@ -21,14 +29,13 @@ export function ManualEntryScreen() {
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
 
   useEffect(() => {
-    const metroId = entry?.metroId;
-    if (!metroId) return;
+    if (!entry) return;
     let current = true;
-    getRatedDates(metroId).then((rows) => current && setRatings(new Map(rows.map((row) => [row.date, row.rating]))));
+    scoresForNights(nightsOf([entry])).then((map) => current && setRatings(map));
     return () => {
       current = false;
     };
-  }, [entry?.metroId]);
+  }, [entry]);
 
   if (!entry) {
     return (

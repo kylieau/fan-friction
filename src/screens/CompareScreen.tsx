@@ -8,15 +8,17 @@ import {
   getPersonalLog,
   getRatedDates,
   lengthLine,
+  nightsOf,
   ratingForEntry,
   readParts,
   resultFor,
+  scoresForNights,
   subscribePersonalLog,
-  yourEntries,
   type CityDate,
   type CrowdEvent,
   type DateRating,
   type Entry,
+  yourEntries,
 } from '../data';
 import { ChevronDown } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
@@ -66,12 +68,19 @@ function Picker({ a }: { a: NightKey }) {
     getRatedDates(a.metroId).then((rows) => {
       if (!current) return;
       setFamous(rows.filter((r) => r.date !== a.date));
-      setRatings(new Map(rows.map((r) => [r.date, r.rating])));
     });
     return () => {
       current = false;
     };
   }, [a.metroId, a.date]);
+
+  useEffect(() => {
+    let current = true;
+    scoresForNights(nightsOf(entries)).then((map) => current && setRatings(map));
+    return () => {
+      current = false;
+    };
+  }, [entries]);
   const back = datePath(a.date, a.metroId, a.eventId);
   return (
     <div className="screen page">

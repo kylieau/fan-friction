@@ -352,6 +352,21 @@ export function parseStamp(value: unknown): Stamp | undefined {
 }
 
 /**
+ * One night's address: a city and a local date. Scores are keyed this way, not
+ * by date alone, because the same evening is a different night in two cities.
+ */
+export function nightKey(metroId: string, date: LocalDate): string {
+  return `${metroId}|${date}`;
+}
+
+/** The city a logged night belongs to. Its own, when it says; the seed city otherwise. */
+export function entryMetroId(entry: Entry): string {
+  return entry.metroId ?? DEFAULT_ENTRY_METRO;
+}
+
+const DEFAULT_ENTRY_METRO = 'la';
+
+/**
  * The date score a logged night should show.
  * Exact day, in the metro. Away nights do not borrow the home city's score.
  * A below-floor night gets that score only as a nearby read: some other event
@@ -359,12 +374,12 @@ export function parseStamp(value: unknown): Stamp | undefined {
  */
 export function ratingFromEntry(
   entry: Entry,
-  ratings: ReadonlyMap<string, number>,
+  scores: ReadonlyMap<string, number>,
   sameNight: readonly CrowdEvent[],
 ): number | null {
   if (entry.when.precision !== 'day' || !isValidDate(entry.when.sort)) return null;
   if (entry.inMetro === false) return null;
-  const score = ratings.get(entry.when.sort);
+  const score = scores.get(nightKey(entryMetroId(entry), entry.when.sort));
   if (score == null) return null;
   if (!entry.belowFloor) return score;
   const id = entry.eventId ?? entry.id;

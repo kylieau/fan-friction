@@ -14,16 +14,17 @@ import {
   getCityDate,
   getEventsBetween,
   getPersonalLog,
-  getRatedDates,
   metrosWithEvents,
+  nightsOf,
   ratingForEntry,
+  scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
-  yourEntries,
   type CityDate,
   type CrowdEvent,
   type FriendEntry,
+  yourEntries,
 } from '../data';
 import { VENUES, venueNameOn } from '../data';
 import { crowdKind, crowdPoints, showsOnMap } from '../map/crowdPoints';
@@ -64,9 +65,6 @@ export function HomeScreen() {
     getEventsBetween(home.id, today, addDays(today, 7)).then((list) => current && setWeek(list));
     Promise.all(metrosWithEvents().map((metro) => getEventsBetween(metro.id, today, addDays(today, 30)))).then((lists) => {
       if (current) setEverywhere(lists.flat());
-    });
-    getRatedDates(home.id).then((rows) => {
-      if (current) setRatings(new Map(rows.map((row) => [row.date, row.rating])));
     });
     return () => {
       current = false;
@@ -113,6 +111,14 @@ export function HomeScreen() {
   }, [log, everywhere, today]);
 
   const recent = useMemo(() => yourEntries(log).filter((entry) => entry.when.precision === 'day' && entry.when.sort <= today).slice(0, ROWS), [log, today]);
+
+  useEffect(() => {
+    let current = true;
+    scoresForNights(nightsOf(recent)).then((map) => current && setRatings(map));
+    return () => {
+      current = false;
+    };
+  }, [recent]);
 
   // Friends, grouped by event: "Sam R. and Priya · Slayer".
   const friendGroups = useMemo(() => {

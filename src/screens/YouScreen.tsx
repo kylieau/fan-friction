@@ -3,28 +3,29 @@ import { Link } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
-  filterChoices,
-  getPersonalLog,
-  getRatedDates,
-  canSignIn,
-  getAccount,
   approveFollow,
+  canSignIn,
   declineFollow,
+  entryFacts,
+  EXAMPLE_FRIEND_ENTRIES,
+  filterChoices,
   followRequests,
   friendsEntries,
-  EXAMPLE_FRIEND_ENTRIES,
+  getAccount,
   getMyProfile,
+  getPersonalLog,
   getSaveWarning,
-  subscribeAccount,
   hoursAtGames,
   logStats,
-  entryFacts,
+  nightsOf,
   ratingForEntry,
+  scoresForNights,
+  subscribeAccount,
   subscribePersonalLog,
-  yourEntries,
+  type Entry,
   type FollowRequest,
   type FriendEntry,
-  type Entry,
+  yourEntries,
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
@@ -74,13 +75,13 @@ export function YouScreen() {
 
   useEffect(() => {
     let current = true;
-    getRatedDates(DEFAULT_METRO.id).then((rows) => {
-      if (current) setRatings(new Map(rows.map((row) => [row.date, row.rating])));
+    scoresForNights(nightsOf(entries)).then((map) => {
+      if (current) setRatings(map);
     });
     return () => {
       current = false;
     };
-  }, []);
+  }, [entries]);
 
   const choices = useMemo(() => filterChoices(entries), [entries]);
   const shown = filter === 'All' ? entries : entries.filter((entry) => entry.tags.includes(filter));
