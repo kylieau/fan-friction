@@ -66,13 +66,17 @@ jobs:
             exit 0
           fi
           day=$(git diff --cached --name-only | sed -n 's|.*/\([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]\)\.json|\1|p' | head -n 1)
-          git commit -m "Save the Los Angeles schedule for ${day:-the coming days}"
-          if git push origin HEAD:main; then
-            echo "Saved on main."
-            exit 0
-          fi
-          branch="schedule-archive/${day:-manual}"
-          git push origin "HEAD:refs/heads/${branch}"
-          gh pr create --base main --head "$branch" \
-            --title "Save the Los Angeles schedule for ${day:-the coming days}" \
-            --body "The nightly schedule archive could not commit straight to main, so this pull request holds the snapshot. Nothing on screen changes. Merge it so the night is not left without a saved schedule."
+          git commit -m "Save the schedule for ${day:-the coming days}"
+          # main may have moved while the job ran; rebase the one data commit onto it and try again.
+          # (The old fallback opened a pull request, which this repo's settings do not allow Actions to do.)
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Saved on main."
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            sleep 5
+          done
+          echo "Could not push the snapshot after three tries."
+          exit 1
