@@ -3,8 +3,9 @@
 
 import { areaMetros, type Metro } from '../config/metros';
 import { matchingNames } from './matchDate';
-import { espnEvents, espnMetroIds } from './sources/espnSource';
-import { mlbEvents, mlbMetroIds } from './sources/mlbSource';
+import { catalogEvents } from './sources/catalogSource';
+import { espnMetroIds } from './sources/espnSource';
+import { mlbMetroIds } from './sources/mlbSource';
 import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
 import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, DateSearchHit } from './types';
@@ -12,7 +13,8 @@ import { applyFormula } from './formulaRead';
 import { withResults } from './results';
 import { withExpectedDraws } from './expectedDraw';
 
-const EVENT_SOURCES: EventSource[] = [seedEvents, mlbEvents, espnEvents];
+// The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.
+const EVENT_SOURCES: EventSource[] = [seedEvents, catalogEvents];
 const RATING_SOURCES: RatingSource[] = [seedRatings];
 
 /**

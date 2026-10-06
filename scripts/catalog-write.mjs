@@ -71,6 +71,20 @@ try {
   const seen = new Set();
   const events = [...seed, ...mlb, ...espn].filter((e) => !seen.has(e.id) && seen.add(e.id)).map(eventRow);
   counts.events = await upsert('events', events, 'id');
+  // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds and past dates stay.
+  if (!dryRun) {
+    const todayLocal = new Date().toLocaleDateString('en-CA', { timeZone: METROS[metroId].timeZone });
+    const keep = events.map((e) => e.id);
+    const { error, count } = await db
+      .from('events')
+      .delete({ count: 'exact' })
+      .eq('metro_id', metroId)
+      .neq('source_id', 'seed')
+      .gte('date', todayLocal)
+      .not('id', 'in', `(${keep.map((id) => `"${id}"`).join(',')})`);
+    if (error) throw new Error(`events (stale): ${error.message}`);
+    counts.events_removed = count ?? 0;
+  }
 
   // 2. Results.
   const results = [];
