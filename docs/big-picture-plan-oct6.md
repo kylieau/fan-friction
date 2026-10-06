@@ -59,7 +59,7 @@ Four tabs: Home (tonight, coming up, recent, friends), Explore (one-day map with
 | Native wrap 🚩 $99/year Apple | Later. |
 
 ## Order of build (approved Oct 6)
-1. [ ] **Entry editing and manual entry.** Add or change the score, who you went with, a note, a setlist link; type in a night the catalog doesn't list; delete an entry. Proposal: `docs/entry-proposal-oct6.md`.
+1. [x] **Entry editing and manual entry.** Built Oct 6 (local, not pushed): the event page is the entry (review, outcome, starter, promo, notable, TV, setlist, with, note; Edit; Remove from log); TV from the MLB and ESPN feeds; a + in You with search then Add it yourself; a hand-typed night's own page; Big event files a suggestion. Needs migrations 0005 and 0006 pasted into Supabase. Proposal: `docs/entry-proposal-oct6.md`. Kylie to review on the local site.
 2. [ ] **Results and attendance after games**, the Ducks, LAFC and Angel City, college basketball feeds, and the Los Angeles venue capacity table. Then the attendance calibration job and a retune of the placeholder constants.
 3. [ ] **Compare rebuild.** Two nights side by side, "Compare with…" on the date page, this-year stats.
 4. [ ] **Concerts via Ticketmaster** 🚩 (free key; read the terms first) and **a second city** from the October research.

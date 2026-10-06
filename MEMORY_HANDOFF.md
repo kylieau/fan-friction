@@ -41,7 +41,7 @@ Formula: `src/data/{types,read,formulaRead}.ts`, `src/data/formula/{crowdFight,g
 
 ## Next steps
 **Oct 6 (later session): the build order is `docs/big-picture-plan-oct6.md`.** Follow it step by step, proposal first.
-1. Step 1, entry editing and manual entry: proposal in `docs/entry-proposal-oct6.md`, waiting on Kylie.
+1. Step 1 (entry editing, manual entry) is **built and committed, not pushed**: `src/components/EntryLayer.tsx`, `src/screens/{AddEntryScreen,ManualEntryScreen}.tsx`, `src/data/suggestions.ts`, new Entry fields (`review`, `setlistUrl`, `tv`, `with`, `suggestionId`), `CrowdEvent.broadcast` from both feeds, migrations `0005_entry_private.sql` (with_whom) and `0006_suggested_events.sql`. Kylie must paste both into Supabase before a signed-in save of With or a Big-event suggestion works. Ask how it reads on her phone. The ESPN fix (`docs/fix-plan-espn-feed.md`, untracked, not ours) is also committed: placeholder kickoffs keep their Saturday, Galaxy fixtures arrive.
 2. Step 2: results and attendance after games, Ducks/LAFC/Angel City/college basketball feeds, LA venue capacity table, then calibration.
 3. Her event-entry notes, when she has them: backend data first, then tab by tab.
 4. Kylie (Oct 6): plans settle to Attended automatically (no "Did you go?"); free Ticketmaster key is OK at step 4 if it stays free.
