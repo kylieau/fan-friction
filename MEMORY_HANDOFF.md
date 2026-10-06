@@ -49,7 +49,7 @@ The other session's commit fb20b3f (October research, `docs/research-oct-2026/`,
 
 ## Next steps
 1. **Wait for Kylie's word before step 3** (Compare rebuild: two nights side by side, "Compare with…" on the date page, this-year stats). Proposal first.
-2. Her read of `docs/hard-access-weight-answer.md` (×1.25 kept; venue car share scales it).
+2. The egress research (`docs/venue-egress-prompt.md`, Kylie runs it): parking spaces, outbound exit lanes, car share per venue. When it comes back, propose the cars-per-exit-lane rule to replace the flat ×1.25, with the same before/after check on the seven nights.
 3. Her event-entry notes, when she has them: backend data first, then tab by tab.
 4. Step 4 later: Ticketmaster concerts 🚩 (free key; terms first) and a second city via `docs/new-city-checklist.md`.
 
