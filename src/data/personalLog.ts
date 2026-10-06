@@ -30,8 +30,12 @@ export interface LabeledFact {
   private?: boolean;
 }
 
-/** The fields a person can write on their own entry. Nothing here touches the read. */
-export type EntryEdit = Pick<Entry, 'review' | 'result' | 'starter' | 'promo' | 'notable' | 'setlistUrl' | 'tv' | 'with' | 'note'>;
+/**
+ * The fields a person writes on their own entry (Kylie, Oct 6): the review,
+ * who you went with, a note. Outcome, starter, promo, TV and the setlist are
+ * facts about the event and come from a source, never from a form.
+ */
+export type EntryEdit = Pick<Entry, 'review' | 'with' | 'note'>;
 
 export interface LogStats {
   /** Log entries, not unique evenings. */
@@ -186,9 +190,9 @@ export function entryFacts(entry: Entry, scope: 'all' | 'before' = 'all'): Label
   return facts;
 }
 
-/** The owner's view of their own entry: the facts, then the private pair. Type is said in the header. */
+/** The owner's private pair, under the review. The event's facts sit in the header. */
 export function ownEntryFacts(entry: Entry): LabeledFact[] {
-  const facts = entryFacts(entry).filter((fact) => fact.label !== 'Type');
+  const facts: LabeledFact[] = [];
   if (entry.with) facts.push({ label: 'With', value: entry.with, private: true });
   if (entry.note) facts.push({ label: 'Note', value: entry.note, private: true });
   return facts;
@@ -202,18 +206,9 @@ function setlistName(url: string): string {
   }
 }
 
-/** A game asks for the score and the starter; a show asks for the setlist. */
-export function entryFieldsFor(kind: Entry['kind']): (keyof EntryEdit)[] {
-  const game = kind === 'game';
-  return [
-    'review',
-    ...(game ? (['result', 'starter', 'promo'] as const) : []),
-    'notable',
-    ...(game ? [] : (['setlistUrl'] as const)),
-    'tv',
-    'with',
-    'note',
-  ];
+/** The same three for every kind of night. */
+export function entryFieldsFor(_kind: Entry['kind']): (keyof EntryEdit)[] {
+  return ['review', 'with', 'note'];
 }
 
 /** What the Add form collects for a night the catalog doesn't list. */
@@ -265,9 +260,13 @@ export function markSuggested(entryId: string, suggestionId: string) {
   });
 }
 
-/** Every venue name the app knows, old names included, for the Add form's suggestions. */
-export function knownVenueNames(): string[] {
-  return [...new Set(Object.values(VENUES).flatMap((venue) => venue.names.map((n) => n.name)))].sort();
+/** The venues the app knows in one city, by the name they go by today. For the Add form's Where list. */
+export function venueNamesIn(metroId: string): string[] {
+  const today = new Date().toISOString().slice(0, 10);
+  return Object.values(VENUES)
+    .filter((venue) => venue.metroId === metroId)
+    .map((venue) => venueNameOn(venue, today))
+    .sort();
 }
 
 const VENUE_BY_ANY_NAME = new Map(
@@ -294,9 +293,13 @@ export function removeEntry(entryId: string) {
   commit({ ...snapshot, added: snapshot.added.filter((entry) => entry.id !== entryId) });
 }
 
-/** Facts for an event page. A linked log night supplies anything she wrote down. */
+/**
+ * Facts for an event page: the type, then anything known about the night
+ * (outcome, starter, promo, notable, setlist). A linked entry supplies what the
+ * catalog doesn't carry yet. TV is said in the line under the title.
+ */
 export function eventFacts(event: CrowdEvent, logged?: Entry): LabeledFact[] {
-  if (logged) return entryFacts(logged);
+  if (logged) return entryFacts(logged).filter((fact) => fact.label !== 'TV');
   const sport = event.audience.domain === 'sports' ? sportLabel(event.audience.sport) : '';
   const type = eventTypeLabel(event.kind, sport);
   return type ? [{ label: 'Type', value: type }] : [];

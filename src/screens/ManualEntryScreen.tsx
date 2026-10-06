@@ -1,7 +1,7 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { METROS } from '../config/metros';
-import { eventTypeLabel, getPersonalLog, getRatedDates, ratingForEntry, subscribePersonalLog, yourEntries } from '../data';
+import { entryFacts, getPersonalLog, getRatedDates, ratingForEntry, subscribePersonalLog, yourEntries } from '../data';
 import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
 import { FactList } from '../components/FactList';
 import { ChevronDown } from '../components/Icons';
@@ -44,7 +44,6 @@ export function ManualEntryScreen() {
   const rating = ratingForEntry(entry, ratings);
   const city = entry.metroId ? METROS[entry.metroId]?.name : undefined;
   const sub = [loggedDateLabel(entry.when), entry.venue, city, entry.away ? 'Away' : ''].filter(Boolean).join(' · ');
-  const type = eventTypeLabel(entry.kind, entry.sport);
 
   return (
     <div className="screen page event-page">
@@ -55,7 +54,7 @@ export function ManualEntryScreen() {
       <header className="event-head">
         <h1 className="page-title">{entry.title}</h1>
         <div className="event-sub">{sub}</div>
-        <FactList facts={type ? [{ label: 'Type', value: type }] : []} />
+        <FactList facts={entryFacts(entry)} />
       </header>
 
       {rating !== null && (

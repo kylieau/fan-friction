@@ -259,7 +259,7 @@ export {
   entryFacts,
   entryFieldsFor,
   eventTypeLabel,
-  knownVenueNames,
+  venueNamesIn,
   markSuggested,
   ownEntryFacts,
   ratingForEntry,

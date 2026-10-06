@@ -78,3 +78,10 @@ Photos 🚩. Automatic scores (step 2). Re-linking other hand-typed nights to ca
 1. One page: the event page in two tenses, your layer under Attended. Yes?
 2. Review follows your visibility switch (default Only me); no stars for now?
 3. Big hand-typed events go to a suggestions list you check, rather than publishing directly?
+
+## Kylie's round-3 notes (Oct 6, after seeing it on the local site)
+- **Only Review, With and Note are written by the person.** Outcome, Starter, Promo (and TV, Setlist, Notable) are facts about the event and come from a source: Starter and Promo before the game, Outcome after. They left the form the same day; the header keeps showing what is known. The results fetch is step 2 (she suggested about five hours after start, or one pass for all the night's events at the end of the night).
+- Review and Note may be redundant. Open: merge into one Review (recommendation below).
+- Add a night: exact day only (the month-only and year-only options are gone); City first, then Where lists that city's venues (plus "Another venue"); the Sport list needs a real design (leagues and levels), to be hammered out.
+- Big event tick: confirmed that 5,000+ is the bar for the map and for feeding friction; the tick only files a suggestion.
+- She likes the weather and local competition cards, and the type pills.

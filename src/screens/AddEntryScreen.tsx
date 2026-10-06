@@ -3,13 +3,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { METROS } from '../config/metros';
 import {
   addManualEntry,
-  knownVenueNames,
   markSuggested,
   searchDates,
   suggestEvent,
   type DateSearchHit,
   type EventKind,
   type ManualNight,
+  venueNamesIn,
 } from '../data';
 import { ChevronDown, SearchIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
@@ -27,7 +27,8 @@ const KINDS: { kind: EventKind; label: string }[] = [
 
 const SPORTS = ['Baseball', 'Basketball', 'Football', 'Hockey', 'Soccer', "Women's basketball", 'Other'];
 
-type Precision = 'day' | 'month' | 'year';
+/** The Where list's last choice: a venue the app doesn't know. */
+const OTHER = '__other__';
 
 /**
  * Add an event to your log. Search first: a listed night is one tap away.
@@ -118,28 +119,26 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
   const [title, setTitle] = useState(firstTitle);
   const [kind, setKind] = useState<EventKind>('game');
   const [sport, setSport] = useState('Baseball');
-  const [precision, setPrecision] = useState<Precision>('day');
   const [day, setDay] = useState('');
-  const [month, setMonth] = useState('');
-  const [year, setYear] = useState('');
-  const [venue, setVenue] = useState('');
   const [city, setCity] = useState<string>(homeId);
+  const [venue, setVenue] = useState('');
+  const [otherVenue, setOtherVenue] = useState('');
   const [big, setBig] = useState(false);
   const [busy, setBusy] = useState(false);
-  const venues = useMemo(() => knownVenueNames(), []);
+  const venues = useMemo(() => (city === 'elsewhere' ? [] : venueNamesIn(city)), [city]);
+  const venueName = venue === OTHER || venues.length === 0 ? otherVenue : venue;
 
-  const when = whenFrom(precision, day, month, year);
-  const ready = title.trim().length > 0 && when !== null;
+  const ready = title.trim().length > 0 && /^\d{4}-\d{2}-\d{2}$/.test(day);
 
   const save = async () => {
-    if (!ready || busy || !when) return;
+    if (!ready || busy) return;
     setBusy(true);
     const night: ManualNight = {
       title,
       kind,
       sport: kind === 'game' ? sport : undefined,
-      when,
-      venue,
+      when: { sort: day, label: '', precision: 'day' },
+      venue: venueName,
       metroId: city === 'elsewhere' ? undefined : city,
     };
     const entry = addManualEntry(night, homeId);
@@ -168,13 +167,7 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
         <span className="field-label">Type</span>
         <div className="pill-row" role="group" aria-label="Type">
           {KINDS.map((k) => (
-            <button
-              type="button"
-              key={k.kind}
-              aria-pressed={kind === k.kind}
-              className="filter-chip"
-              onClick={() => setKind(k.kind)}
-            >
+            <button type="button" key={k.kind} aria-pressed={kind === k.kind} className="filter-chip" onClick={() => setKind(k.kind)}>
               {k.label}
             </button>
           ))}
@@ -192,51 +185,21 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
         </label>
       )}
 
-      <div className="field">
-        <span className="field-label">When</span>
-        <div className="pill-row" role="group" aria-label="How exact">
-          {(['day', 'month', 'year'] as Precision[]).map((p) => (
-            <button
-              type="button"
-              key={p}
-              aria-pressed={precision === p}
-              className="filter-chip"
-              onClick={() => setPrecision(p)}
-            >
-              {p === 'day' ? 'Day' : p === 'month' ? 'Just the month' : 'Just the year'}
-            </button>
-          ))}
-        </div>
-        {precision === 'day' && <input className="account-input" type="date" value={day} onChange={(e) => setDay(e.target.value)} aria-label="Date" />}
-        {precision === 'month' && <input className="account-input" type="month" value={month} onChange={(e) => setMonth(e.target.value)} aria-label="Month" />}
-        {precision === 'year' && (
-          <input
-            className="account-input"
-            type="number"
-            inputMode="numeric"
-            min={1950}
-            max={2100}
-            placeholder="2014"
-            value={year}
-            onChange={(e) => setYear(e.target.value)}
-            aria-label="Year"
-          />
-        )}
-      </div>
-
       <label className="field">
-        <span className="field-label">Where</span>
-        <input className="account-input" list="known-venues" value={venue} onChange={(e) => setVenue(e.target.value)} maxLength={80} autoComplete="off" />
-        <datalist id="known-venues">
-          {venues.map((name) => (
-            <option key={name} value={name} />
-          ))}
-        </datalist>
+        <span className="field-label">When</span>
+        <input className="account-input" type="date" value={day} onChange={(e) => setDay(e.target.value)} />
       </label>
 
       <label className="field">
         <span className="field-label">City</span>
-        <select className="account-input" value={city} onChange={(e) => setCity(e.target.value)}>
+        <select
+          className="account-input"
+          value={city}
+          onChange={(e) => {
+            setCity(e.target.value);
+            setVenue('');
+          }}
+        >
           {Object.values(METROS).map((metro) => (
             <option key={metro.id} value={metro.id}>
               {metro.name}
@@ -244,6 +207,29 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
           ))}
           <option value="elsewhere">Somewhere else</option>
         </select>
+      </label>
+
+      <label className="field">
+        <span className="field-label">Where</span>
+        {venues.length > 0 && (
+          <select className="account-input" value={venue} onChange={(e) => setVenue(e.target.value)}>
+            <option value="">Pick a venue</option>
+            {venues.map((name) => (
+              <option key={name}>{name}</option>
+            ))}
+            <option value={OTHER}>Another venue</option>
+          </select>
+        )}
+        {(venue === OTHER || venues.length === 0) && (
+          <input
+            className="account-input"
+            value={otherVenue}
+            onChange={(e) => setOtherVenue(e.target.value)}
+            maxLength={80}
+            autoComplete="off"
+            aria-label="Venue"
+          />
+        )}
       </label>
 
       <label className="choice-line">
@@ -261,20 +247,4 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
       </div>
     </form>
   );
-}
-
-/** The rough or exact date as the log stores it. Null until something valid is typed. */
-function whenFrom(precision: Precision, day: string, month: string, year: string): ManualNight['when'] | null {
-  if (precision === 'day') {
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) return null;
-    return { sort: day, label: '', precision: 'day' };
-  }
-  if (precision === 'month') {
-    if (!/^\d{4}-\d{2}$/.test(month)) return null;
-    const [y, m] = month.split('-').map(Number);
-    const label = new Date(Date.UTC(y, m - 1, 1)).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
-    return { sort: `${month}-01`, label, precision: 'month' };
-  }
-  if (!/^\d{4}$/.test(year)) return null;
-  return { sort: `${year}-01-01`, label: year, precision: 'year' };
 }

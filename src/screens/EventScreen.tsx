@@ -119,7 +119,7 @@ export function EventScreen() {
           {e.start ? ` · ${clockTime(e.start)}` : ''}
           {tv ? ` · ${ahead ? 'On' : 'Was on'} ${tv}` : ''}
         </div>
-        <FactList facts={eventFacts(e)} />
+        <FactList facts={eventFacts(e, logged)} />
         {a && (
           <div className="chip-row">
             <span className="chip chip-occasion">{a.occasion}</span>

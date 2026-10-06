@@ -4,12 +4,6 @@ import { FactList } from './FactList';
 
 const LABELS: Record<keyof EntryEdit, string> = {
   review: 'Review',
-  result: 'Outcome',
-  starter: 'Starter',
-  promo: 'Promo',
-  notable: 'Notable',
-  setlistUrl: 'Setlist',
-  tv: 'TV',
   with: 'With',
   note: 'Note',
 };
@@ -33,7 +27,7 @@ export function EntryLayer({ entry }: { entry: Entry }) {
       {entry.review && <p className="entry-review">{entry.review}</p>}
       <FactList facts={facts} />
       <button type="button" className="link-button entry-edit" onClick={() => setEditing(true)}>
-        {empty ? `Add a review, ${entry.kind === 'game' ? 'the score' : 'the setlist'}, who you went with…` : 'Edit'}
+        {empty ? 'Add a review, who you went with…' : 'Edit'}
       </button>
     </section>
   );
@@ -62,23 +56,15 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
             {LABELS[key]}
             {PRIVATE.includes(key) && <span className="field-private"> · only you</span>}
           </span>
-          {key === 'review' || key === 'note' ? (
+          {key === 'with' ? (
+            <input className="account-input" value={draft[key] ?? ''} onChange={(e) => set(key, e.target.value)} maxLength={200} autoComplete="off" />
+          ) : (
             <textarea
               className="account-input entry-textarea"
               value={draft[key] ?? ''}
               onChange={(e) => set(key, e.target.value)}
               rows={key === 'review' ? 4 : 2}
               maxLength={2000}
-            />
-          ) : (
-            <input
-              className="account-input"
-              type={key === 'setlistUrl' ? 'url' : 'text'}
-              inputMode={key === 'setlistUrl' ? 'url' : 'text'}
-              value={draft[key] ?? ''}
-              onChange={(e) => set(key, e.target.value)}
-              maxLength={200}
-              autoComplete="off"
             />
           )}
         </label>
