@@ -888,9 +888,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "teamId": "ducks",
     "dayClass": "all",
     "month": null,
-    "count": 16098,
-    "games": 123,
-    "seasons": "2024,2025,2026"
+    "count": 16100,
+    "games": 124,
+    "seasons": "2024,2025,2026,2026"
   },
   {
     "metroId": "la",
@@ -1033,8 +1033,8 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "sunday",
     "month": null,
     "count": 16214,
-    "games": 33,
-    "seasons": "2024,2025,2026"
+    "games": 34,
+    "seasons": "2024,2025,2026,2026"
   },
   {
     "metroId": "la",
@@ -1077,9 +1077,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "teamId": "ducks",
     "dayClass": "sunday",
     "month": 10,
-    "count": 16098,
-    "games": 3,
-    "seasons": "2024,2025"
+    "count": 16636,
+    "games": 4,
+    "seasons": "2024,2025,2026"
   },
   {
     "metroId": "la",
@@ -2313,5 +2313,284 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "count": 4818,
     "games": 5,
     "seasons": "2024,2025,2026"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "all",
+    "month": null,
+    "count": 42510,
+    "games": 243,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 40849,
+    "games": 124,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 44953,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 37698,
+    "games": 21,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 38745,
+    "games": 19,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 41027,
+    "games": 20,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 43401,
+    "games": 17,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 39995,
+    "games": 20,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 41566,
+    "games": 22,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "friday",
+    "month": null,
+    "count": 43388,
+    "games": 39,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 43177,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 43822,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 42984,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 42439,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 44316,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 44061,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 42789,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 42663,
+    "games": 41,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 43018,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 42437,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 42918,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 43197,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 42478,
+    "games": 8,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 42922,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 42825,
+    "games": 39,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 42706,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 43881,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 42069,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 42439,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 43315,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 42751,
+    "games": 6,
+    "seasons": "2023,2024,2025"
   }
 ];

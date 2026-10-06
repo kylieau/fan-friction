@@ -21,8 +21,10 @@ const server = await createServer({
 
 let exitCode = 0;
 try {
-  const { collectResults, RESULTS_METRO_ID } = await server.ssrLoadModule('/src/data/sources/results.ts');
-  const { from, through, rows } = await collectResults();
+  const { collectResults } = await server.ssrLoadModule('/src/data/sources/results.ts');
+  const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  for (const RESULTS_METRO_ID of COVERED_METRO_IDS) {
+  const { from, through, rows } = await collectResults(RESULTS_METRO_ID);
   const dir = path.join(root, 'data', 'results', RESULTS_METRO_ID);
   await mkdir(dir, { recursive: true });
 
@@ -54,7 +56,8 @@ try {
     await rename(tmp, file);
     saved++;
   }
-  console.log(`Results ${from} through ${through}: ${rows.length} final${rows.length === 1 ? '' : 's'}, ${saved} file${saved === 1 ? '' : 's'} changed.`);
+  console.log(`${RESULTS_METRO_ID}: results ${from} through ${through}: ${rows.length} final${rows.length === 1 ? '' : 's'}, ${saved} file${saved === 1 ? '' : 's'} changed.`);
+  }
   const index = await refreshResultsIndex(root);
   console.log(index.changed ? `Updated ${index.relative} (${index.count} results).` : `No change in ${index.relative}.`);
 } catch (err) {

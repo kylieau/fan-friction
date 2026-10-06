@@ -17,8 +17,9 @@ function addCalendarDays(date: LocalDate, days: number): LocalDate {
 }
 
 /** Finished home games in the window, from every feed. Throws when a feed can't be read, so nothing partial is saved. */
-export async function collectResults(now = new Date()): Promise<{ from: LocalDate; through: LocalDate; rows: GameResult[] }> {
-  const metro = METROS[RESULTS_METRO_ID];
+export async function collectResults(metroId: string = RESULTS_METRO_ID, now = new Date()): Promise<{ from: LocalDate; through: LocalDate; rows: GameResult[] }> {
+  const metro = METROS[metroId];
+  if (!metro) throw new Error(`Unknown metro ${metroId}.`);
   const through = now.toLocaleDateString('en-CA', { timeZone: metro.timeZone });
   const from = addCalendarDays(through, -RESULTS_LOOKBACK_DAYS);
   const [mlb, espn] = await Promise.all([loadMlbFinals(metro.id, from, through), loadEspnFinals(metro.id, from, through)]);

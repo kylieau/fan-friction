@@ -366,7 +366,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-06-espn-kings-401891806",
     "date": "2026-10-06",
     "start": "19:00",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -380,7 +380,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-espn-ducks-401892456",
     "date": "2026-10-07",
     "start": "19:00",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -394,7 +394,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-08-espn-lakers-401898717",
     "date": "2026-10-08",
     "start": "19:30",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -408,7 +408,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-09-mlb-849821",
     "date": "2026-10-09",
     "start": "17:00",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -422,7 +422,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-lafc-761858",
     "date": "2026-10-10",
     "start": "19:30",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -436,13 +436,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-espn-chargers-401872989",
     "date": "2026-10-11",
     "start": "13:05",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
-      "rating": 1.5,
+      "rating": 1,
       "friction": "Low",
-      "why": "86° feels-like at a 1:05 pm start, no roof."
+      "why": "Nothing bigger was on."
     }
   },
   {
@@ -450,7 +450,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-espn-rams-401872994",
     "date": "2026-10-12",
     "start": "17:15",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -464,7 +464,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-ducks-401892501",
     "date": "2026-10-13",
     "start": "18:45",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -478,7 +478,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-kings-401892502",
     "date": "2026-10-13",
     "start": "19:30",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -492,7 +492,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-clippers-401918011",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -506,7 +506,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-galaxy-761874",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -520,7 +520,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-lafc-761873",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -534,7 +534,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-espn-ducks-401892518",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -548,7 +548,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-espn-lakers-401898719",
     "date": "2026-10-16",
     "start": "19:30",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
@@ -562,11 +562,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-galaxy-761887",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
-      "rating": 3.7,
+      "rating": 3.2,
       "friction": "Low",
       "why": "Kings vs. Bruins and UCLA vs. Wisconsin 12 mi away, same hours."
     }
@@ -576,11 +576,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-kings-401892530",
     "date": "2026-10-17",
     "start": "18:00",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
-      "rating": 3.7,
+      "rating": 3.2,
       "friction": "Moderate",
       "why": "LA Galaxy vs. San Diego 12 mi away, same hours."
     }
@@ -590,13 +590,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-ucla-football-401858494",
     "date": "2026-10-17",
     "start": null,
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
-      "rating": 3.7,
-      "friction": "Moderate",
-      "why": "93° feels-like, no roof."
+      "rating": 3.2,
+      "friction": "Low",
+      "why": "89° feels-like, no roof."
     }
   },
   {
@@ -604,13 +604,41 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-espn-rams-401873004",
     "date": "2026-10-18",
     "start": "13:05",
-    "capturedAt": "2026-10-06T14:12:21.410Z",
+    "capturedAt": "2026-10-06T17:45:42.494Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
-      "rating": 3.3,
-      "friction": "Moderate",
-      "why": "90° feels-like at a 1:05 pm start, no roof."
+      "rating": 1.9,
+      "friction": "Low",
+      "why": "87° feels-like at a 1:05 pm start, no roof."
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-06-mlb-849826",
+    "date": "2026-10-06",
+    "start": "18:30",
+    "capturedAt": "2026-10-06T17:45:43.131Z",
+    "capturedOn": "2026-10-06",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-07-mlb-849827",
+    "date": "2026-10-07",
+    "start": "19:00",
+    "capturedAt": "2026-10-06T17:45:43.131Z",
+    "capturedOn": "2026-10-06",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
     }
   }
 ];

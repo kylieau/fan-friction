@@ -14,7 +14,6 @@ import { refreshWeatherIndex } from './weather-index.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const backfill = process.argv.includes('--backfill');
-const METRO = 'la';
 
 const server = await createServer({
   root,
@@ -62,7 +61,8 @@ let exitCode = 0;
 try {
   const { fetchWeather, fetchWeatherDays, isOpenAir, weatherHourFor, weatherHoursFor } = await server.ssrLoadModule('/src/data/formula/weather.ts');
   const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
-  const { METROS } = await server.ssrLoadModule('/src/config/metros.ts');
+  const { METROS, COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  for (const METRO of COVERED_METRO_IDS) {
   const metro = METROS[METRO];
   const now = new Date();
   const today = now.toLocaleDateString('en-CA', { timeZone: metro.timeZone });
@@ -74,7 +74,7 @@ try {
     events = (await seedEvents.catalog(METRO)).filter((e) => e.date < today);
   } else {
     const { collectScheduleArchive } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
-    const snapshot = await collectScheduleArchive(now);
+    const snapshot = await collectScheduleArchive(METRO, now);
     events = snapshot.events.filter((e) => e.date >= today);
   }
 
@@ -148,7 +148,8 @@ try {
       written += 1;
     }
   }
-  console.log(`Weather: ${fetched} point-dates and ${dayCalls} day-range call${dayCalls === 1 ? '' : 's'} fetched, ${written} day file${written === 1 ? '' : 's'} changed${backfill ? ' (backfill)' : ''}.`);
+  console.log(`${METRO} weather: ${fetched} point-dates and ${dayCalls} day-range call${dayCalls === 1 ? '' : 's'} fetched, ${written} day file${written === 1 ? '' : 's'} changed${backfill ? ' (backfill)' : ''}.`);
+  }
   const index = await refreshWeatherIndex(root);
   console.log(index.changed ? `Updated ${index.relative} (${index.count} rows, ${index.days} days).` : `No change in ${index.relative}.`);
 } catch (err) {

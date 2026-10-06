@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "metroName": "San Diego",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-06",
+  "capturedAt": "2026-10-06T17:45:43.131Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-06",
+    "through": "2026-10-20"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 2
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-06-mlb-849826",
+      "broadcast": "FS1",
+      "starters": {
+        "home": "Nick Pivetta",
+        "away": "Dustin May"
+      },
+      "metroId": "san-diego",
+      "date": "2026-10-06",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Padres vs. Brewers",
+      "stakes": {
+        "round": "NLDS",
+        "game": 3
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "petco-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "padres",
+        "away": "brewers"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-07-mlb-849827",
+      "broadcast": "FS1",
+      "metroId": "san-diego",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Padres vs. Brewers",
+      "stakes": {
+        "round": "NLDS",
+        "game": 4
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "petco-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "padres",
+        "away": "brewers"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-06-mlb-849826",
+      "date": "2026-10-06",
+      "start": "18:30",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-07-mlb-849827",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    }
+  ]
+}

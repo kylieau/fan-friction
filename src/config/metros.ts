@@ -8,6 +8,12 @@ export interface Metro {
   zoom: number;
 }
 
+/**
+ * Cities the nightly jobs cover: schedules, weather, results and the shared
+ * catalog (docs/new-city-checklist.md). Adding a city here is step 1.
+ */
+export const COVERED_METRO_IDS = ['la', 'san-diego'] as const;
+
 export const METROS: Record<string, Metro> = {
   la: {
     id: 'la',

@@ -27,10 +27,12 @@ const server = await createServer({
 
 let exitCode = 0;
 try {
-  const { collectScheduleArchive, ARCHIVE_METRO_ID } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
+  const { collectScheduleArchive } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
+  const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  for (const metroId of COVERED_METRO_IDS) {
   // The reads saved tonight need weather; without Supabase here, it comes from the files.
-  await primeFromFiles(server, ARCHIVE_METRO_ID);
-  const snapshot = await collectScheduleArchive();
+  await primeFromFiles(server, metroId);
+  const snapshot = await collectScheduleArchive(metroId);
   const dir = path.join(root, 'data', 'schedule-archive', snapshot.metroId);
   const file = path.join(dir, `${snapshot.capturedOn}.json`);
   const relative = path.relative(root, file);
@@ -51,6 +53,7 @@ try {
     await writeFile(tmp, `${JSON.stringify(snapshot, null, 2)}\n`);
     await rename(tmp, file);
     console.log(`Saved ${relative} (${snapshot.events.length} events, ${snapshot.window.from} through ${snapshot.window.through}: ${counts}).`);
+  }
   }
 
   const index = await refreshScheduleIndex(root);

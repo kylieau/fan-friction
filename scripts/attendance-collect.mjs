@@ -12,7 +12,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const METRO = 'la';
+const DEFAULT_METRO = 'la';
 const ZONE = 'America/Los_Angeles';
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
@@ -20,6 +20,7 @@ const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 const MLB_TEAMS = [
   { teamId: 'dodgers', mlbId: 119, venueId: 'dodger-stadium', seasons: [2023, 2024, 2025] },
   { teamId: 'angels', mlbId: 108, venueId: 'angel-stadium', seasons: [2023, 2024, 2025] },
+  { teamId: 'padres', mlbId: 135, venueId: 'petco-park', metroId: 'san-diego', seasons: [2023, 2024, 2025] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2024, 2025, 2026], seasontype: 2 },
@@ -155,11 +156,13 @@ async function collectEspn(team) {
 }
 
 const only = process.argv[2];
-const dir = path.join(root, 'data', 'attendance', METRO);
-await mkdir(dir, { recursive: true });
 let failures = 0;
 for (const team of [...MLB_TEAMS, ...ESPN_TEAMS]) {
   if (only && team.teamId !== only) continue;
+  // Each team's file lives in its city's folder (docs/new-city-checklist.md).
+  const METRO = team.metroId ?? DEFAULT_METRO;
+  const dir = path.join(root, 'data', 'attendance', METRO);
+  await mkdir(dir, { recursive: true });
   try {
     const rows = 'mlbId' in team ? await collectMlb(team) : await collectEspn(team);
     rows.sort((a, b) => a.date.localeCompare(b.date));

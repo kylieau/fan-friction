@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-06",
-  "capturedAt": "2026-10-06T14:12:21.410Z",
+  "capturedAt": "2026-10-06T17:45:42.494Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-06",
@@ -504,9 +504,9 @@
       "date": "2026-10-11",
       "start": "13:05",
       "read": {
-        "rating": 1.5,
+        "rating": 1,
         "friction": "Low",
-        "why": "86° feels-like at a 1:05 pm start, no roof.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -603,7 +603,7 @@
       "date": "2026-10-17",
       "start": "18:00",
       "read": {
-        "rating": 3.7,
+        "rating": 3.2,
         "friction": "Moderate",
         "why": "LA Galaxy vs. San Diego 12 mi away, same hours.",
         "method": "formula"
@@ -614,7 +614,7 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 3.7,
+        "rating": 3.2,
         "friction": "Low",
         "why": "Kings vs. Bruins and UCLA vs. Wisconsin 12 mi away, same hours.",
         "method": "formula"
@@ -625,9 +625,9 @@
       "date": "2026-10-17",
       "start": null,
       "read": {
-        "rating": 3.7,
-        "friction": "Moderate",
-        "why": "93° feels-like, no roof.",
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "89° feels-like, no roof.",
         "method": "formula"
       }
     },
@@ -636,9 +636,9 @@
       "date": "2026-10-18",
       "start": "13:05",
       "read": {
-        "rating": 3.3,
-        "friction": "Moderate",
-        "why": "90° feels-like at a 1:05 pm start, no roof.",
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "87° feels-like at a 1:05 pm start, no roof.",
         "method": "formula"
       }
     }

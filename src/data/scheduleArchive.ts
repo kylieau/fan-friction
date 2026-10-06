@@ -12,7 +12,7 @@ import { seedEvents } from './sources/seedSource';
 /** How far past today the saved window runs, in calendar days. Today is included. */
 export const ARCHIVE_HORIZON_DAYS = 14;
 
-/** Los Angeles first. Another metro is a later decision. */
+/** The default city when a caller names none. The nightly job loops over COVERED_METRO_IDS. */
 export const ARCHIVE_METRO_ID = 'la';
 
 export interface ScheduleSnapshotSource {
@@ -77,18 +77,19 @@ async function readSource(name: string, load: () => Promise<CrowdEvent[]>): Prom
   }
 }
 
-/** Listings for the Los Angeles window: live home games, plus seeded events already in the repo. */
-export async function collectScheduleArchive(now = new Date()): Promise<ScheduleSnapshot> {
-  const metro = METROS[ARCHIVE_METRO_ID];
+/** Listings for one city's window: live home games, plus seeded events already in the repo. */
+export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID, now = new Date()): Promise<ScheduleSnapshot> {
+  const metro = METROS[metroId];
+  if (!metro) throw new Error(`Unknown metro ${metroId}. Nothing was saved.`);
   const capturedOn = now.toLocaleDateString('en-CA', { timeZone: metro.timeZone });
   const through = addCalendarDays(capturedOn, ARCHIVE_HORIZON_DAYS);
   const seedCatalog = seedEvents.catalog;
   if (!seedCatalog) throw new Error('The seeded catalog is missing. Nothing was saved.');
 
   const [mlb, espn, seed] = await Promise.all([
-    readSource('MLB schedule', () => loadMlbSchedule(ARCHIVE_METRO_ID, through)),
-    readSource('ESPN schedules', () => loadEspnSchedule(ARCHIVE_METRO_ID)),
-    readSource('seeded catalog', () => seedCatalog(ARCHIVE_METRO_ID)),
+    readSource('MLB schedule', () => loadMlbSchedule(metroId, through)),
+    readSource('ESPN schedules', () => loadEspnSchedule(metroId)),
+    readSource('seeded catalog', () => seedCatalog(metroId)),
   ]);
 
   const mlbWindow = inWindow(mlb, capturedOn, through);

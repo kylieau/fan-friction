@@ -67,8 +67,9 @@ try {
   const { loadMlbSchedule } = await server.ssrLoadModule('/src/data/sources/mlbSource.ts');
   const { loadEspnSchedule } = await server.ssrLoadModule('/src/data/sources/espnSource.ts');
   const { seedEvents } = await server.ssrLoadModule('/src/data/sources/seedSource.ts');
-  const { ARCHIVE_METRO_ID } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
-  const metroId = ARCHIVE_METRO_ID;
+  const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  const { EXPECTED_DRAWS } = await server.ssrLoadModule('/src/data/expectedDrawIndex.ts');
+  for (const metroId of COVERED_METRO_IDS) {
   const now = new Date().toISOString();
   const counts = {};
 
@@ -146,12 +147,12 @@ try {
   }
   const attendance = [...byTeamDate.values()];
   counts.attendance = await upsert('attendance', attendance, 'metro_id,team_id,date');
-  const { EXPECTED_DRAWS } = await server.ssrLoadModule('/src/data/expectedDrawIndex.ts');
-  const draws = EXPECTED_DRAWS.map((r) => ({ metro_id: r.metroId, team_id: r.teamId, day_class: r.dayClass, month: r.month ?? 0, data: r }));
+  const draws = EXPECTED_DRAWS.filter((r) => r.metroId === metroId).map((r) => ({ metro_id: r.metroId, team_id: r.teamId, day_class: r.dayClass, month: r.month ?? 0, data: r }));
   counts.expected_draws = await upsert('expected_draws', draws, 'metro_id,team_id,day_class,month');
 
   const summary = Object.entries(counts).map(([t, n]) => `${t} ${n}`).join(', ');
-  console.log(`${dryRun ? 'Would write' : 'Wrote'} to Supabase: ${summary}.`);
+  console.log(`${dryRun ? 'Would write' : 'Wrote'} ${metroId} to Supabase: ${summary}.`);
+  }
 } catch (err) {
   console.error(err instanceof Error ? err.message : err);
   exitCode = 1;

@@ -31,6 +31,7 @@ const LIST: Team[] = [
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),
+  team('padres', 'San Diego Padres', 'Padres', 'MLB', 'baseball', 'san-diego', 'SD'),
   team('lakers', 'Los Angeles Lakers', 'Lakers', 'NBA', 'basketball', 'la', 'LAL'),
   team('clippers', 'LA Clippers', 'Clippers', 'NBA', 'basketball', 'la', 'LAC'),
   team('kings', 'Los Angeles Kings', 'Kings', 'NHL', 'hockey', 'la', 'LAK'),
