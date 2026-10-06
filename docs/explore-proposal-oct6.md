@@ -78,3 +78,5 @@ Kylie, after the first build: the header date, the carousel, the pill and the To
 - **C (smallest):** only relabel today's strip cell. Leaves the pill and header duplication.
 
 Recommendation: B. Three elements, each with one job: the header names and picks the day, the strip browses, Today returns. A is B with one more tap and one more control, and is fine if she prefers the dropdown.
+
+**Kylie: B (Oct 6). Built the same day, local.** The header date is a button with a chevron that opens the month sheet; today's strip cell reads Today; a Today pill shows only off today; the sheet title is "On the map"; the old date pill (`WhenControl.tsx`) and the floating Today button are gone.

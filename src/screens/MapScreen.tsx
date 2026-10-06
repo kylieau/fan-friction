@@ -26,7 +26,6 @@ import { MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { DateScore } from '../components/DateScore';
-import { WhenControl } from '../components/WhenControl';
 import { ArrowRight, ChevronDown, HomeIcon, SearchIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle, mapTitle } from '../lib/eventTitle';
@@ -36,7 +35,7 @@ import { clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { getHomeId, setHomeId } from '../lib/homeCity';
-import { mapPath, datePath, openedMetroId, useView, dateLabel } from '../lib/view';
+import { mapPath, datePath, openedMetroId, useView } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 
@@ -143,7 +142,8 @@ export function MapScreen() {
   }, [metro.id, date]);
   const onMap = useMemo(() => events.filter((event) => eventInBounds(event, bounds)), [events, bounds]);
   const sheetEvents = useMemo(() => orderSheetEvents(onMap, selected), [onMap, selected]);
-  const dateLine = shown ? `${dateLabel(isToday, date)} · On the map` : ' ';
+  // The header already names the day (Kylie, Oct 6: say it once).
+  const dateLine = shown ? 'On the map' : ' ';
   const pastLabel = pastRelativeLabel(date, todayIn(DEFAULT_METRO));
   // An empty day names the next event (Kylie, Oct 6).
   const nextUp = shown && dayEvents.length === 0 ? upcoming[0] : undefined;
@@ -212,10 +212,11 @@ export function MapScreen() {
         </div>
         <div className="map-header-score">
           <div className="map-header-dateblock">
-            <div className="map-header-date">
+            <button type="button" className="map-header-date" aria-label="Pick a date" aria-haspopup="dialog" onClick={() => setMonthOpen(true)}>
               <span>{headerDate(date, today)}</span>
+              <ChevronDown />
               {pastLabel && <span className="map-header-past">{pastLabel}</span>}
-            </div>
+            </button>
             {caption.trim() && <div className="map-header-count">{caption}</div>}
           </div>
           <DateScore
@@ -227,7 +228,11 @@ export function MapScreen() {
         <DayStrip metro={metro} today={today} date={date} />
         <div className="map-chrome">
           <div className="map-chrome-left">
-            <WhenControl date={date} isToday={isToday} onPickDate={() => setMonthOpen(true)} />
+            {!isToday && (
+              <Link to={mapPath({ metroId: metro.id, date: today, today })} className="date-button today-button">
+                Today
+              </Link>
+            )}
             {showFeels && dayRange && (
               <div className="map-feels" aria-label={`Feels like ${rangeLabel(dayRange, metro.id)} in ${metro.name}`}>
                 <span className="weather-glyph" aria-hidden>

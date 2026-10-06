@@ -203,11 +203,16 @@ button {
   min-width: 0;
 }
 
+/* The header date is the picker (Kylie, Oct 6): a tap opens the month sheet. */
 .map-header-date {
   display: flex;
   align-items: baseline;
   gap: 8px;
-  padding-top: 4px;
+  margin: 0;
+  padding: 4px 0 0;
+  border: none;
+  background: none;
+  text-align: left;
   font-family: 'Big Shoulders Display', sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -3208,30 +3213,6 @@ button {
 
 .day-strip::-webkit-scrollbar {
   display: none;
-}
-
-.day-today-jump {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  min-height: 28px;
-  padding: 4px 10px;
-  border: none;
-  border-radius: 999px;
-  background: var(--card);
-  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.2);
-  font-size: 11px;
-  font-weight: 800;
-  color: var(--dodger);
-}
-
-.day-today-jump.left {
-  left: 4px;
-}
-
-.day-today-jump.right {
-  right: 4px;
 }
 
 .day-cell {

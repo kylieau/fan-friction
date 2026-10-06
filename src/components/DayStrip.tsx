@@ -19,9 +19,9 @@ type Read = { rating: number | null; quiet: boolean };
  * The day strip above the map, as a carousel (Kylie, Oct 6): one row of days
  * that scrolls sideways and snaps a cell at a time. Swipe to browse, tap to
  * pick. The viewed day keeps its blue border wherever it scrolls, and glides
- * into the third slot when it changes. A Today button brings the row back
- * when today has scrolled out of view. Reads on days ahead sit back a little,
- * since they are forecasts.
+ * into the third slot when it changes. Today's cell says Today, not its
+ * weekday, so nobody has to know the date (NN/g). Reads on days ahead sit
+ * back a little, since they are forecasts.
  */
 export function DayStrip({ metro, today, date }: { metro: Metro; today: string; date: string }) {
   // The row is anchored on today unless the viewed day is far from it (a famous night).
@@ -29,7 +29,6 @@ export function DayStrip({ metro, today, date }: { metro: Metro; today: string; 
   const days = Array.from({ length: BACK + 1 + AHEAD }, (_, i) => addDays(anchor, i - BACK));
   const [reads, setReads] = useState<Map<string, Read>>(new Map());
   const stripRef = useRef<HTMLDivElement>(null);
-  const [todayAway, setTodayAway] = useState<'left' | 'right' | null>(null);
 
   useEffect(() => {
     let current = true;
@@ -60,34 +59,13 @@ export function DayStrip({ metro, today, date }: { metro: Metro; today: string; 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [date, anchor]);
 
-  // Is today on screen? Checked as the row settles.
-  useEffect(() => {
-    const strip = stripRef.current;
-    if (!strip) return;
-    const check = () => {
-      const cell = strip.firstElementChild as HTMLElement | null;
-      const index = days.indexOf(today);
-      if (!cell || index < 0) {
-        setTodayAway(null);
-        return;
-      }
-      const step = cell.offsetWidth + GAP;
-      const left = index * step - strip.scrollLeft;
-      setTodayAway(left < -step / 2 ? 'left' : left + cell.offsetWidth > strip.clientWidth + step / 2 ? 'right' : null);
-    };
-    check();
-    strip.addEventListener('scroll', check, { passive: true });
-    return () => strip.removeEventListener('scroll', check);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [anchor, today]);
-
   return (
     <div className="day-strip-wrap">
       <div className="day-strip" ref={stripRef} role="tablist" aria-label="Days">
         {days.map((d) => {
           const read = reads.get(d);
           const on = d === date;
-          const label = new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' });
+          const label = d === today ? 'Today' : new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' });
           return (
             <Link
               key={d}
@@ -103,11 +81,6 @@ export function DayStrip({ metro, today, date }: { metro: Metro; today: string; 
           );
         })}
       </div>
-      {todayAway && (
-        <button type="button" className={`day-today-jump ${todayAway}`} onClick={() => scrollTo(today, 'smooth')}>
-          {todayAway === 'left' ? '‹ Today' : 'Today ›'}
-        </button>
-      )}
     </div>
   );
 }
