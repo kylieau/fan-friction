@@ -27,7 +27,7 @@ The review's §11 asked for announced attendance per team so the formula can siz
 
 Galaxy, LAFC and Angel City were collected too; their medians are in the index.
 
-Two things worth seeing. The Rose Bowl and Angel Stadium were the biggest overstatements: sizing UCLA football by the building made it a 90,000-seat pull when it draws 42,000. And the college basketball programs draw under the 5,000 friction floor on a typical night; they stay on the map (the building is over the floor) but now pull with their real weight.
+Two things worth seeing. The Rose Bowl and Angel Stadium were the biggest overstatements: sizing UCLA football by the building made it a 90,000-seat pull when it draws 42,000. And the college programs vary a lot by month: UCLA men's basketball draws about 5,050 at a November–December buy game and about 8,575 in Big Ten play (weekend conference games 9,000–12,000), which is why the buckets key on month and day; the women's programs draw 3,900–4,300 on a typical night and 10,000–13,659 for the biggest games. All stay on the map (the buildings are over the floor) and now pull with their real weight. (Kylie, Oct 6, caught an earlier overstatement here that said the men drew under 5,000 on a typical night.)
 
 ## Effect on the 13 hand-rated nights
 Mean gap from the hand ratings (comparison only, never the target): **0.74 → 0.70**. The nights that moved: 2022-09-03 from 9.3 to 8.5 (UCLA and USC sized by their draws, not their stadiums; hand 7), 2017-09-17 from 6.0 to 5.6 (hand 7), 2022-11-19 from 6.0 to 5.5 (hand 5), 2023-08-04 from 4.6 to 3.6 (the Angels at 37,000, not 45,517; hand 5), 2024-07-22 from 1.6 to 1.0 (hand 1). Nights before 2023 are sized by 2023–2025 medians, the only seasons collected, and say so in the note.
