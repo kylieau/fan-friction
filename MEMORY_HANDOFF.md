@@ -2,7 +2,7 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
 
-_Last synced: Oct 6, 2026, end of session. Everything below is committed and pushed. One untracked file is not ours (see Changes made)._
+_Last synced: Oct 6, 2026 (second session, mid-day). Everything below is committed and pushed. Current state and Changes made describe the morning's Explore work; the afternoon's work is under Next steps._
 
 ## Current state
 **Explore is "one day at a time"** (`docs/explore-proposal-oct6.md`, rounds 1–5, all built and pushed). Kylie reviewed each round on the local site.
@@ -40,11 +40,11 @@ Formula: `src/data/{types,read,formulaRead}.ts`, `src/data/formula/{crowdFight,g
 - **Testing notes:** headless Chromium at `/usr/bin/chromium` with swiftshader flags; a scratch DevTools-protocol script can drag the map. Set `fan-friction:home-metro` = `"la"` and `fan-friction:tipsDone` = `true` in localStorage first, or the home picker and tips cover the map. Don't `pkill` vite.
 
 ## Next steps
-**Oct 6 (later session): the build order is `docs/big-picture-plan-oct6.md`.** Follow it step by step, proposal first.
-1. Step 1 (entry editing, manual entry) is **built and committed, not pushed**: `src/components/EntryLayer.tsx`, `src/screens/{AddEntryScreen,ManualEntryScreen}.tsx`, `src/data/suggestions.ts`, new Entry fields (`review`, `setlistUrl`, `tv`, `with`, `suggestionId`), `CrowdEvent.broadcast` from both feeds, migrations `0005_entry_private.sql` (with_whom) and `0006_suggested_events.sql`. Kylie must paste both into Supabase before a signed-in save of With or a Big-event suggestion works. Ask how it reads on her phone. The ESPN fix (`docs/fix-plan-espn-feed.md`, untracked, not ours) is also committed: placeholder kickoffs keep their Saturday, Galaxy fixtures arrive.
-2. Step 2: results and attendance after games, Ducks/LAFC/Angel City/college basketball feeds, LA venue capacity table, then calibration.
-3. Her event-entry notes, when she has them: backend data first, then tab by tab.
-4. Kylie (Oct 6): plans settle to Attended automatically (no "Did you go?"); free Ticketmaster key is OK at step 4 if it stays free.
+**Oct 6 (later session): the build order is `docs/big-picture-plan-oct6.md`.** Follow it step by step, proposal first. Everything below is pushed to `main`.
+1. **Step 1 done and reviewed by Kylie:** the event page is the entry (Review and With are the only typed fields; Outcome, Starter, Promo, TV, Setlist are event facts from sources), a + in You with search then Add it yourself (sport, level, division, competition chips per `docs/sport-list-second-opinion-answer.md`; city first; exact day only), a hand-typed night's page, Big event files a suggestion. Migrations 0005 and 0006 are run. Kylie will have more notes after using it.
+2. **Step 2 in progress:** the nightly run saves finals and announced crowds (`scripts/results-fetch.mjs`, `data/results/la/`, `src/data/results.ts`); Outcome, Starters and the box-score count show on the event page. Ducks, LAFC, Angel City and UCLA/USC basketball (men's and women's) are on the map (Pauley Pavilion and Galen Center added). **Waiting on Kylie:** the scope of the LA venue capacity table (every ~1,000+ room, or the ~5,000+ rooms that feed friction) and whether she runs a research prompt or Claude drafts it with sources. Then the attendance calibration (past seasons' box scores from MLB, this season's from ESPN), then retune the placeholder constants.
+3. Also done Oct 6: the ESPN placeholder-kickoff and Galaxy-fixture fix; the Today tab on the strip's edge (left when looking ahead, right when looking back); Note folded into Review.
+4. Her event-entry notes, when she has them: backend data first, then tab by tab.
 
 **Next command to run:**
 ```bash
