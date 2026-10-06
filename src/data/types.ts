@@ -173,6 +173,10 @@ export interface CrowdEvent {
   invited?: boolean;
   /** The TV station carrying it, when the schedule names one ("ESPN", "SportsNet LA"). A fact, never an input. */
   broadcast?: string;
+  /** Probable or announced starters, known before the game (MLB names its pitchers). Home first. */
+  starters?: { home?: string; away?: string };
+  /** Attached on read from the saved results. Never an input to the read. */
+  result?: GameResult;
   /** Crowd is evidence, never an input to the rating. */
   crowd: CrowdFigure[];
   /**
@@ -192,6 +196,27 @@ export interface CrowdEvent {
   belowFloor?: boolean;
   /** Which source this came from, such as "seed" or "mlb". */
   sourceId: string;
+}
+
+/**
+ * What happened, from the league's own feed after the game: the final score
+ * and the announced crowd. Saved by the nightly run (Kylie, Oct 6: one pass
+ * for the day's games, never typed in). Evidence on the page; the read never
+ * looks at it (the no-results rule).
+ */
+export interface GameResult {
+  eventId: string;
+  metroId: string;
+  date: LocalDate;
+  sourceId: string;
+  status: 'final';
+  home: { name: string; score: number };
+  away: { name: string; score: number };
+  /** Announced attendance, when the box score carries one. */
+  attendance?: number;
+  /** "F/10", "OT", "SO": how the game ended, when not in regulation. */
+  note?: string;
+  capturedAt: string;
 }
 
 // ---------- The date's rating ----------

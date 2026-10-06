@@ -3,7 +3,7 @@
 // so nothing shows twice. If the feed is down it quietly returns nothing.
 
 import { METROS } from '../../config/metros';
-import type { CrowdEvent, LocalDate } from '../types';
+import type { CrowdEvent, GameResult, LocalDate } from '../types';
 import { mlbStakes } from './roundLabel';
 import type { EventSource } from './types';
 
@@ -31,13 +31,16 @@ interface MlbGame {
   seriesGameNumber?: number;
   /** Doubleheader index. Not the series game. */
   gameNumber?: number;
-  status: { detailedState: string; startTimeTBD?: boolean };
+  status: { detailedState: string; startTimeTBD?: boolean; abstractGameState?: string };
+  linescore?: { currentInning?: number; scheduledInnings?: number };
   venue?: { id: number };
   teams: { home: MlbSide; away: MlbSide };
   broadcasts?: { name?: string; type?: string; homeAway?: string; isNational?: boolean }[];
 }
 interface MlbSide {
   team: { id?: number; name: string; teamName?: string };
+  score?: number;
+  probablePitcher?: { fullName?: string };
 }
 
 /** The TV station, national first, else the home side's. Radio rows are skipped. */
@@ -70,9 +73,14 @@ function toEvent(g: MlbGame, metroId: string): CrowdEvent | null {
   const homeName = g.teams.home.team.teamName ?? g.teams.home.team.name;
   const stakes = mlbStakes(g);
   const broadcast = tvStation(g.broadcasts);
+  const starters = {
+    ...(g.teams.home.probablePitcher?.fullName ? { home: g.teams.home.probablePitcher.fullName } : {}),
+    ...(g.teams.away.probablePitcher?.fullName ? { away: g.teams.away.probablePitcher.fullName } : {}),
+  };
   return {
     id: `${date}-mlb-${g.gamePk}`,
     ...(broadcast ? { broadcast } : {}),
+    ...(Object.keys(starters).length ? { starters } : {}),
     metroId,
     date,
     start: g.status.startTimeTBD ? null : time,
@@ -99,7 +107,7 @@ export function loadMlbSchedule(metroId: string, throughDate?: string): Promise<
   const tz = METROS[metroId].timeZone;
   const today = new Date().toLocaleDateString('en-CA', { timeZone: tz });
   const end = throughDate ?? new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
-  const url = `${API}?sportId=1&teamId=${teamIds.join(',')}&startDate=${today}&endDate=${end}&hydrate=team,broadcasts(all)`;
+  const url = `${API}?sportId=1&teamId=${teamIds.join(',')}&startDate=${today}&endDate=${end}&hydrate=team,broadcasts(all),probablePitcher`;
 
   return fetch(url)
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
@@ -110,6 +118,53 @@ export function loadMlbSchedule(metroId: string, throughDate?: string): Promise<
         .filter((e): e is CrowdEvent => e !== null && e.date >= today)
         .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))),
     );
+}
+
+/**
+ * Finished home games between two dates, with the score and the box score's
+ * announced crowd. For the nightly results pass. Throws when the feed can't be read.
+ */
+export async function loadMlbFinals(metroId: string, from: LocalDate, through: LocalDate): Promise<GameResult[]> {
+  const teamIds = Object.entries(MLB_TEAMS).filter(([, t]) => t.metroId === metroId).map(([id]) => id);
+  const url = `${API}?sportId=1&teamId=${teamIds.join(',')}&startDate=${from}&endDate=${through}&hydrate=team,linescore`;
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`MLB schedule answered ${r.status}`);
+  const json = (await r.json()) as { dates: { games: MlbGame[] }[] };
+  const finals = json.dates.flatMap((d) => d.games).filter((g) => g.status.abstractGameState === 'Final');
+  const capturedAt = new Date().toISOString();
+  const rows: GameResult[] = [];
+  for (const g of finals) {
+    const event = toEvent(g, metroId);
+    const hs = g.teams.home.score;
+    const as = g.teams.away.score;
+    if (!event || hs == null || as == null) continue;
+    const innings = g.linescore?.currentInning;
+    const scheduled = g.linescore?.scheduledInnings ?? 9;
+    rows.push({
+      eventId: event.id,
+      metroId,
+      date: event.date,
+      sourceId: 'mlb',
+      status: 'final',
+      home: { name: g.teams.home.team.teamName ?? g.teams.home.team.name, score: hs },
+      away: { name: g.teams.away.team.teamName ?? g.teams.away.team.name, score: as },
+      ...(innings && innings !== scheduled ? { note: `F/${innings}` } : {}),
+      capturedAt,
+    });
+    const attendance = await boxScoreAttendance(g.gamePk);
+    if (attendance) rows[rows.length - 1].attendance = attendance;
+  }
+  return rows;
+}
+
+/** The "Att" line of the box score, as a number. Undefined when the box score has none. */
+async function boxScoreAttendance(gamePk: number): Promise<number | undefined> {
+  const r = await fetch(`https://statsapi.mlb.com/api/v1/game/${gamePk}/boxscore`);
+  if (!r.ok) return undefined;
+  const json = (await r.json()) as { info?: { label?: string; value?: string }[] };
+  const att = json.info?.find((row) => row.label === 'Att')?.value ?? '';
+  const n = Number(att.replace(/[^0-9]/g, ''));
+  return Number.isFinite(n) && n > 0 ? n : undefined;
 }
 
 function upcomingFor(metroId: string): Promise<CrowdEvent[]> {

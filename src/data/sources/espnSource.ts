@@ -5,7 +5,7 @@
 
 import { METROS } from '../../config/metros';
 import { TEAMS } from '../teams';
-import type { CrowdEvent, LocalDate } from '../types';
+import type { CrowdEvent, GameResult, LocalDate } from '../types';
 import { espnStakes, leagueFromPath } from './roundLabel';
 import type { EventSource } from './types';
 
@@ -43,6 +43,7 @@ const VENUE_BY_NAME: Record<string, string> = {
 interface EspnSide {
   homeAway: 'home' | 'away';
   team: { id: string; displayName: string; shortDisplayName: string };
+  score?: { value?: number; displayValue?: string } | string | number;
 }
 interface EspnGame {
   id: string;
@@ -55,7 +56,8 @@ interface EspnGame {
     timeValid?: boolean;
     venue?: { fullName?: string };
     competitors: EspnSide[];
-    status?: { type?: { name?: string } };
+    status?: { type?: { name?: string; shortDetail?: string } };
+    attendance?: number;
     broadcasts?: { type?: { shortName?: string }; market?: { type?: string }; media?: { shortName?: string } }[];
     notes?: { headline?: string }[];
     gameNumberOfSeries?: number;
@@ -173,6 +175,57 @@ function upcomingFor(metroId: string, strict = false): Promise<CrowdEvent[]> {
   });
   if (!strict) cache.set(metroId, p);
   return p;
+}
+
+function scoreOf(side: EspnSide): number | undefined {
+  const s = side.score;
+  if (s == null) return undefined;
+  if (typeof s === 'number') return s;
+  if (typeof s === 'string') return Number.isFinite(Number(s)) ? Number(s) : undefined;
+  if (typeof s.value === 'number') return s.value;
+  const n = Number(s.displayValue);
+  return Number.isFinite(n) ? n : undefined;
+}
+
+/**
+ * Finished home games between two dates, with the score and announced crowd.
+ * For the nightly results pass. Throws when a team schedule can't be read.
+ */
+export async function loadEspnFinals(metroId: string, from: LocalDate, through: LocalDate): Promise<GameResult[]> {
+  const capturedAt = new Date().toISOString();
+  const lists = await Promise.all(
+    ESPN_TEAMS.filter((t) => t.metroId === metroId).map(async (t) =>
+      (await scheduleFor(t, true)).flatMap((g): GameResult[] => {
+        const c = g.competitions[0];
+        if (c?.status?.type?.name !== 'STATUS_FINAL') return [];
+        const event = toEvent(g, t);
+        if (!event || event.date < from || event.date > through) return [];
+        const home = c.competitors.find((x) => x.homeAway === 'home');
+        const away = c.competitors.find((x) => x.homeAway === 'away');
+        const hs = home ? scoreOf(home) : undefined;
+        const as = away ? scoreOf(away) : undefined;
+        if (!home || !away || hs == null || as == null) return [];
+        const detail = c.status?.type?.shortDetail ?? '';
+        const note = /OT|SO|\/\d/.test(detail) ? detail.replace(/^Final/i, '').replace(/^\//, '').trim() : undefined;
+        return [
+          {
+            eventId: event.id,
+            metroId,
+            date: event.date,
+            sourceId: 'espn',
+            status: 'final',
+            home: { name: nameOf(home.team), score: hs },
+            away: { name: nameOf(away.team), score: as },
+            ...(typeof c.attendance === 'number' && c.attendance > 0 ? { attendance: c.attendance } : {}),
+            ...(note ? { note } : {}),
+            capturedAt,
+          },
+        ];
+      }),
+    ),
+  );
+  const seen = new Set<string>();
+  return lists.flat().filter((row) => !seen.has(row.eventId) && seen.add(row.eventId));
 }
 
 /**
