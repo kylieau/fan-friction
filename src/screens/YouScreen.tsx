@@ -16,6 +16,7 @@ import {
   getMyProfile,
   getSaveWarning,
   subscribeAccount,
+  hoursAtGames,
   logStats,
   entryFacts,
   ratingForEntry,
@@ -199,7 +200,7 @@ export function YouScreen() {
       {tab === 'stats' && (
         <>
           {filters}
-          <Stats stats={stats} heaviest={heaviest} />
+          <Stats stats={stats} heaviest={heaviest} hours={hoursAtGames(shown)} />
         </>
       )}
       {tab === 'friends' && <FriendsTab items={friends} ratings={ratings} signedIn={Boolean(account)} />}
@@ -298,9 +299,11 @@ function FilterChip({ label, pressed, onClick }: { label: string; pressed: boole
 function Stats({
   stats,
   heaviest,
+  hours,
 }: {
   stats: ReturnType<typeof logStats>;
   heaviest: number | null;
+  hours: { hours: number; games: number };
 }) {
   return (
     <div className="stats-block">
@@ -308,6 +311,7 @@ function Stats({
         <Stat n={stats.events} label="Events" />
         <Stat n={stats.venues} label="Venues" />
         <HeaviestStat rating={heaviest} />
+        {hours.games > 0 && <Stat n={hours.hours} label={`Hours at games · ${hours.games}`} />}
       </div>
       <CountList title="By type" rows={stats.byType} />
       <CountList title="By team and sport" rows={stats.byTeamSport} />

@@ -5,7 +5,7 @@
 
 import { METROS } from '../../config/metros';
 import { TEAMS } from '../teams';
-import type { CrowdEvent, GameResult, LocalDate } from '../types';
+import type { CrowdEvent, GameResult, LocalDate, LocalTime } from '../types';
 import { espnStakes, leagueFromPath } from './roundLabel';
 import type { EventSource } from './types';
 
@@ -198,11 +198,39 @@ function scoreOf(side: EspnSide): number | undefined {
 }
 
 /**
- * Finished home games between two dates, with the score and announced crowd.
- * For the nightly results pass. Throws when a team schedule can't be read.
+ * How long a finished game ran, from the first and last play's wall-clock
+ * stamps on ESPN's game page. An estimate: the first stamp is the first play,
+ * not the anthem, and the last is the final play. Undefined when the page has
+ * no stamps. One extra request per finished game.
+ */
+async function playClockSpan(path: string, gameId: string): Promise<{ minutes: number; startedAt: LocalTime } | undefined> {
+  try {
+    const r = await fetch(`${API}/${path}/summary?event=${gameId}`);
+    if (!r.ok) return undefined;
+    const json = (await r.json()) as {
+      plays?: { wallclock?: string }[];
+      drives?: { previous?: { plays?: { wallclock?: string }[] }[] };
+    };
+    const plays = json.plays ?? (json.drives?.previous ?? []).flatMap((d) => d.plays ?? []);
+    const stamps = plays.map((p) => p.wallclock).filter((w): w is string => Boolean(w)).map((w) => new Date(w).getTime()).filter(Number.isFinite).sort((a, b) => a - b);
+    if (stamps.length < 10) return undefined;
+    const minutes = Math.round((stamps[stamps.length - 1] - stamps[0]) / 60_000);
+    if (minutes < 60 || minutes > 360) return undefined;
+    const zone = METROS[ESPN_TEAMS.find((t) => t.path === path)?.metroId ?? 'la'].timeZone;
+    return { minutes, startedAt: localParts(new Date(stamps[0]).toISOString(), zone).time };
+  } catch {
+    return undefined;
+  }
+}
+
+/**
+ * Finished home games between two dates, with the score, announced crowd and
+ * how long the game ran. For the nightly results pass. Throws when a team
+ * schedule can't be read; a missing game page only leaves the length off.
  */
 export async function loadEspnFinals(metroId: string, from: LocalDate, through: LocalDate): Promise<GameResult[]> {
   const capturedAt = new Date().toISOString();
+  const spans = new Map<string, Promise<{ minutes: number; startedAt: LocalTime } | undefined>>();
   const lists = await Promise.all(
     ESPN_TEAMS.filter((t) => t.metroId === metroId).map(async (t) =>
       (await scheduleFor(t, true)).flatMap((g): GameResult[] => {
@@ -218,6 +246,7 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
         if (!home || !away || hs == null || as == null) return [];
         const detail = c.status?.type?.shortDetail ?? '';
         const note = /OT|SO|\/\d/.test(detail) ? detail.replace(/^Final/i, '').replace(/^\//, '').trim() : undefined;
+        spans.set(event.id, playClockSpan(t.path, g.id));
         return [
           {
             eventId: event.id,
@@ -238,7 +267,15 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
     ),
   );
   const seen = new Set<string>();
-  return lists.flat().filter((row) => !seen.has(row.eventId) && seen.add(row.eventId));
+  const rows = lists.flat().filter((row) => !seen.has(row.eventId) && seen.add(row.eventId));
+  for (const row of rows) {
+    const span = await spans.get(row.eventId);
+    if (span) {
+      row.duration = { minutes: span.minutes, kind: 'estimated' };
+      row.startedAt = span.startedAt;
+    }
+  }
+  return rows;
 }
 
 /**

@@ -22,7 +22,12 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 21
     },
     "attendance": 59136,
-    "capturedAt": "2026-10-06T05:16:56.380Z"
+    "capturedAt": "2026-10-06T06:33:21.627Z",
+    "duration": {
+      "minutes": 242,
+      "kind": "estimated"
+    },
+    "startedAt": "16:34"
   },
   {
     "eventId": "2026-10-03-mlb-849828",
@@ -40,8 +45,13 @@ export const GAME_RESULTS: GameResult[] = [
       "name": "Braves",
       "score": 3
     },
-    "capturedAt": "2026-10-06T05:16:56.591Z",
-    "attendance": 50194
+    "capturedAt": "2026-10-06T06:33:21.848Z",
+    "attendance": 50194,
+    "duration": {
+      "minutes": 164,
+      "kind": "official"
+    },
+    "startedAt": "13:08"
   },
   {
     "eventId": "2026-10-04-espn-ducks-401891778",
@@ -61,7 +71,12 @@ export const GAME_RESULTS: GameResult[] = [
     },
     "attendance": 17174,
     "note": "OT",
-    "capturedAt": "2026-10-06T06:23:06.153Z"
+    "capturedAt": "2026-10-06T06:33:21.627Z",
+    "duration": {
+      "minutes": 159,
+      "kind": "estimated"
+    },
+    "startedAt": "17:15"
   },
   {
     "eventId": "2026-10-04-mlb-849823",
@@ -79,7 +94,12 @@ export const GAME_RESULTS: GameResult[] = [
       "name": "Braves",
       "score": 3
     },
-    "capturedAt": "2026-10-06T06:23:06.363Z",
-    "attendance": 50729
+    "capturedAt": "2026-10-06T06:33:21.848Z",
+    "attendance": 50729,
+    "duration": {
+      "minutes": 198,
+      "kind": "official"
+    },
+    "startedAt": "17:03"
   }
 ];

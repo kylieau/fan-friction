@@ -21,7 +21,12 @@
       },
       "attendance": 17174,
       "note": "OT",
-      "capturedAt": "2026-10-06T06:23:06.153Z"
+      "capturedAt": "2026-10-06T06:33:21.627Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "17:15"
     },
     {
       "eventId": "2026-10-04-mlb-849823",
@@ -39,8 +44,13 @@
         "name": "Braves",
         "score": 3
       },
-      "capturedAt": "2026-10-06T06:23:06.363Z",
-      "attendance": 50729
+      "capturedAt": "2026-10-06T06:33:21.848Z",
+      "attendance": 50729,
+      "duration": {
+        "minutes": 198,
+        "kind": "official"
+      },
+      "startedAt": "17:03"
     }
   ]
 }

@@ -3,7 +3,8 @@
 // and home side. Scores and crowds are evidence; the read never looks at them.
 
 import { GAME_RESULTS } from './resultsIndex';
-import type { CrowdEvent, GameResult } from './types';
+import type { CrowdEvent, Entry, GameResult } from './types';
+import { VENUES } from './venues';
 
 export function resultFor(event: CrowdEvent): GameResult | undefined {
   const exact = GAME_RESULTS.find((row) => row.eventId === event.id);
@@ -35,6 +36,44 @@ export function withResults(events: CrowdEvent[]): CrowdEvent[] {
         : event.crowd;
     return { ...event, result, crowd };
   });
+}
+
+/** "3h 18m", or "about 2h 22m" when worked out from the play clock. */
+export function lengthLine(result: GameResult): string | undefined {
+  if (!result.duration) return undefined;
+  const h = Math.floor(result.duration.minutes / 60);
+  const m = result.duration.minutes % 60;
+  const text = h > 0 ? `${h}h ${String(m).padStart(2, '0')}m` : `${m}m`;
+  return result.duration.kind === 'official' ? text : `about ${text}`;
+}
+
+/**
+ * Hours at games across a log, from the results the app has. An entry finds
+ * its result by event id, else by date and building. Nights with no known
+ * length add nothing: this is a sum of what is known, not a guess.
+ */
+export function hoursAtGames(entries: readonly Entry[]): { hours: number; games: number } {
+  let minutes = 0;
+  let games = 0;
+  for (const entry of entries) {
+    const row = resultForEntry(entry);
+    if (!row?.duration) continue;
+    minutes += row.duration.minutes;
+    games++;
+  }
+  return { hours: Math.round(minutes / 6) / 10, games };
+}
+
+function resultForEntry(entry: Entry): GameResult | undefined {
+  if (entry.eventId) {
+    const exact = GAME_RESULTS.find((row) => row.eventId === entry.eventId);
+    if (exact) return exact;
+  }
+  if (entry.when.precision !== 'day' || !entry.venue) return undefined;
+  const venueName = entry.venue.toLowerCase();
+  const venue = Object.values(VENUES).find((v) => v.names.some((n) => n.name.toLowerCase() === venueName));
+  if (!venue) return undefined;
+  return GAME_RESULTS.find((row) => row.date === entry.when.sort && row.venueId === venue.id);
 }
 
 /** "Braves 3, Dodgers 2", winner first; a tie says home first. Extra time rides along: "Kings 4, Oilers 3 (OT)". */

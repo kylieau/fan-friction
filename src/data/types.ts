@@ -219,6 +219,14 @@ export interface GameResult {
   away: { name: string; score: number };
   /** Announced attendance, when the box score carries one. */
   attendance?: number;
+  /**
+   * How long the game ran, first pitch to final out, tip to final horn.
+   * Official when the league states it (MLB's "T: 3:18"); estimated when
+   * worked out from the first and last play's wall-clock stamps (ESPN).
+   */
+  duration?: { minutes: number; kind: 'official' | 'estimated' };
+  /** When it actually started, local "HH:MM" (first pitch, first play). */
+  startedAt?: LocalTime;
   /** "F/10", "OT", "SO": how the game ended, when not in regulation. */
   note?: string;
   capturedAt: string;

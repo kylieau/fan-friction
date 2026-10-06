@@ -3,7 +3,7 @@
 // so nothing shows twice. If the feed is down it quietly returns nothing.
 
 import { METROS } from '../../config/metros';
-import type { CrowdEvent, GameResult, LocalDate } from '../types';
+import type { CrowdEvent, GameResult, LocalDate, LocalTime } from '../types';
 import { mlbStakes } from './roundLabel';
 import type { EventSource } from './types';
 
@@ -154,20 +154,34 @@ export async function loadMlbFinals(metroId: string, from: LocalDate, through: L
       ...(innings && innings !== scheduled ? { note: `F/${innings}` } : {}),
       capturedAt,
     });
-    const attendance = await boxScoreAttendance(g.gamePk);
-    if (attendance) rows[rows.length - 1].attendance = attendance;
+    const box = await boxScoreInfo(g.gamePk);
+    const row = rows[rows.length - 1];
+    if (box.attendance) row.attendance = box.attendance;
+    if (box.durationMinutes) row.duration = { minutes: box.durationMinutes, kind: 'official' };
+    if (box.firstPitch) row.startedAt = box.firstPitch;
   }
   return rows;
 }
 
-/** The "Att" line of the box score, as a number. Undefined when the box score has none. */
-async function boxScoreAttendance(gamePk: number): Promise<number | undefined> {
+/** The box score's "Att", "T" (time of game) and "First pitch" lines. Each is undefined when absent. */
+async function boxScoreInfo(gamePk: number): Promise<{ attendance?: number; durationMinutes?: number; firstPitch?: LocalTime }> {
   const r = await fetch(`https://statsapi.mlb.com/api/v1/game/${gamePk}/boxscore`);
-  if (!r.ok) return undefined;
+  if (!r.ok) return {};
   const json = (await r.json()) as { info?: { label?: string; value?: string }[] };
-  const att = json.info?.find((row) => row.label === 'Att')?.value ?? '';
-  const n = Number(att.replace(/[^0-9]/g, ''));
-  return Number.isFinite(n) && n > 0 ? n : undefined;
+  const line = (label: string) => json.info?.find((row) => row.label === label)?.value ?? '';
+  const att = Number(line('Att').replace(/[^0-9]/g, ''));
+  const t = line('T').match(/(\d+):(\d{2})/);
+  const fp = line('First pitch').match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+  let firstPitch: LocalTime | undefined;
+  if (fp) {
+    const h = (Number(fp[1]) % 12) + (fp[3].toUpperCase() === 'PM' ? 12 : 0);
+    firstPitch = `${String(h).padStart(2, '0')}:${fp[2]}`;
+  }
+  return {
+    attendance: Number.isFinite(att) && att > 0 ? att : undefined,
+    durationMinutes: t ? Number(t[1]) * 60 + Number(t[2]) : undefined,
+    firstPitch,
+  };
 }
 
 function upcomingFor(metroId: string): Promise<CrowdEvent[]> {

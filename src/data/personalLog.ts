@@ -11,7 +11,7 @@ import { clearPhoneCopy, isSavingToAccount, mergeLogs, entryStore, readSavedLog,
 import { onAccountChange } from './account';
 import { favoriteKey, favoritesFromLog } from './favorites';
 import { levelPhrase } from './competitions';
-import { scoreLine } from './results';
+import { lengthLine, scoreLine } from './results';
 import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
@@ -347,6 +347,8 @@ export function eventFacts(event: CrowdEvent, logged?: Entry): LabeledFact[] {
     const names = [event.starters.home, event.starters.away].filter(Boolean).join(' · ');
     if (names) facts.push({ label: 'Starters', value: names });
   }
+  const length = event.result ? lengthLine(event.result) : undefined;
+  if (length) facts.push({ label: 'Length', value: length });
   return facts;
 }
 
