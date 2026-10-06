@@ -17,8 +17,8 @@ import type {
   MetroDate,
   Stamp,
 } from './types';
-import { ARCHIVE_FORECASTS } from './startForecastIndex';
-import { SCHEDULE_SNAPSHOTS } from './scheduleArchiveIndex';
+import { cachedCaptureDays, cachedSnapshots } from './catalogCache';
+import { SCHEDULE_SNAPSHOTS, type ScheduleSnapshotSpan } from './scheduleArchiveIndex';
 import { capacityOn, VENUES } from './venues';
 
 /**
@@ -169,6 +169,23 @@ export function isStampLocked(
   return now.getTime() >= locks.getTime();
 }
 
+/** A nightly capture saves today through this many days ahead (scheduleArchive.ts ARCHIVE_HORIZON_DAYS). */
+const SNAPSHOT_HORIZON_DAYS = 14;
+
+function plusDays(date: LocalDate, days: number): LocalDate {
+  const [y, m, d] = date.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d + days)).toISOString().slice(0, 10);
+}
+
+/** Snapshot windows: from the shared catalog's rows when the date is loaded, else the compiled list of capture days. */
+function spansFor(metroId: string, date: LocalDate): ScheduleSnapshotSpan[] {
+  const days = cachedCaptureDays(metroId, date);
+  const spans = days
+    ? days.map((capturedOn) => ({ metroId, capturedOn, from: capturedOn, through: plusDays(capturedOn, SNAPSHOT_HORIZON_DAYS) }))
+    : SCHEDULE_SNAPSHOTS.filter((span) => span.metroId === metroId);
+  return [...spans].sort((a, b) => a.capturedOn.localeCompare(b.capturedOn));
+}
+
 /**
  * Whether a saved schedule covers this date.
  * "saved" — a snapshot window includes the date.
@@ -176,9 +193,7 @@ export function isStampLocked(
  * "not-yet" — the date is still today or later, and no snapshot covers it yet.
  */
 export function scheduleCoverage(metroId: string, date: LocalDate, now = new Date()): ScheduleCoverage {
-  const snaps = SCHEDULE_SNAPSHOTS.filter((span) => span.metroId === metroId).sort((a, b) =>
-    a.capturedOn.localeCompare(b.capturedOn),
-  );
+  const snaps = spansFor(metroId, date);
   if (snaps.some((span) => date >= span.from && date <= span.through)) return 'saved';
   const zone = METROS[metroId]?.timeZone ?? 'America/Los_Angeles';
   const today = now.toLocaleDateString('en-CA', { timeZone: zone });
@@ -194,7 +209,7 @@ export function coverageForEntry(entry: Entry, now = new Date()): ScheduleCovera
   if (entry.when.precision === 'day' && isValidDate(entry.when.sort)) {
     return scheduleCoverage(metroId, entry.when.sort, now);
   }
-  const snaps = SCHEDULE_SNAPSHOTS.filter((span) => span.metroId === metroId);
+  const snaps = spansFor(metroId, entry.when.sort);
   const first = snaps.map((span) => span.capturedOn).sort()[0];
   if (!first || entry.when.sort < first) return 'reconstructed';
   return 'not-yet';
@@ -253,7 +268,8 @@ export function forecastBeforeStart(event: Pick<CrowdEvent, 'id' | 'metroId' | '
   if (event.metroId !== 'la' || !event.start) return null;
   const zone = METROS[event.metroId]?.timeZone ?? 'America/Los_Angeles';
   const startAt = wallClockToUtc(event.date, event.start, zone).getTime();
-  const rows = ARCHIVE_FORECASTS.filter((row) => {
+  const source = cachedSnapshots(event.metroId, event.id, event.date) ?? [];
+  const rows = source.filter((row) => {
     if (row.metroId !== event.metroId || row.eventId !== event.id || !row.capturedAt) return false;
     const captured = new Date(row.capturedAt).getTime();
     return Number.isFinite(captured) && captured < startAt;

@@ -7,6 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createServer } from 'vite';
 import { refreshForecastIndex } from './forecast-index.mjs';
+import { primeFromFiles } from './prime-from-files.mjs';
 import { refreshScheduleIndex } from './schedule-index.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -26,7 +27,9 @@ const server = await createServer({
 
 let exitCode = 0;
 try {
-  const { collectScheduleArchive } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
+  const { collectScheduleArchive, ARCHIVE_METRO_ID } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
+  // The reads saved tonight need weather; without Supabase here, it comes from the files.
+  await primeFromFiles(server, ARCHIVE_METRO_ID);
   const snapshot = await collectScheduleArchive();
   const dir = path.join(root, 'data', 'schedule-archive', snapshot.metroId);
   const file = path.join(dir, `${snapshot.capturedOn}.json`);

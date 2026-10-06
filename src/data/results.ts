@@ -2,17 +2,19 @@
 // a different id from the feed's, so a result also matches by date, building
 // and home side. Scores and crowds are evidence; the read never looks at them.
 
-import { GAME_RESULTS } from './resultsIndex';
+import { cachedResults } from './catalogCache';
 import type { CrowdEvent, Entry, GameResult } from './types';
 import { VENUES } from './venues';
 
 export function resultFor(event: CrowdEvent): GameResult | undefined {
-  const exact = GAME_RESULTS.find((row) => row.eventId === event.id);
+  // The shared catalog's rows for that date (loaded by getCityDate, or by a script from the files).
+  const rows = cachedResults(event.metroId, event.date) ?? [];
+  const exact = rows.find((row) => row.eventId === event.id);
   if (exact) return exact;
   if (event.place.type !== 'venue' || !event.teams) return undefined;
   const { venueId } = event.place;
   const home = event.teams.home;
-  return GAME_RESULTS.find(
+  return rows.find(
     (row) => row.metroId === event.metroId && row.date === event.date && row.venueId === venueId && row.homeTeamId === home,
   );
 }
@@ -65,15 +67,17 @@ export function hoursAtGames(entries: readonly Entry[]): { hours: number; games:
 }
 
 function resultForEntry(entry: Entry): GameResult | undefined {
+  if (entry.when.precision !== 'day') return undefined;
+  const rows = cachedResults(entry.metroId ?? 'la', entry.when.sort) ?? [];
   if (entry.eventId) {
-    const exact = GAME_RESULTS.find((row) => row.eventId === entry.eventId);
+    const exact = rows.find((row) => row.eventId === entry.eventId);
     if (exact) return exact;
   }
-  if (entry.when.precision !== 'day' || !entry.venue) return undefined;
+  if (!entry.venue) return undefined;
   const venueName = entry.venue.toLowerCase();
   const venue = Object.values(VENUES).find((v) => v.names.some((n) => n.name.toLowerCase() === venueName));
   if (!venue) return undefined;
-  return GAME_RESULTS.find((row) => row.date === entry.when.sort && row.venueId === venue.id);
+  return rows.find((row) => row.date === entry.when.sort && row.venueId === venue.id);
 }
 
 /** "Braves 3, Dodgers 2", winner first; a tie says home first. Extra time rides along: "Kings 4, Oilers 3 (OT)". */

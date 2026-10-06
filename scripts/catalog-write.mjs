@@ -111,12 +111,10 @@ try {
   }
   counts.event_results = await upsert('event_results', results, 'event_id');
 
-  // 3. Weather: today's file and the forecast files ahead (the ones the nightly fetch rewrites).
+  // 3. Weather: every file (upserts are idempotent, and past dates' rows serve stamps and old nights).
   const hours = [];
   const days = [];
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: METROS[metroId].timeZone });
   for (const f of await jsonFiles(path.join(root, 'data', 'weather', metroId))) {
-    if (f.slice(0, 10) < today && !process.argv.includes('--all-weather')) continue;
     const parsed = JSON.parse(await readFile(path.join(root, 'data', 'weather', metroId, f), 'utf8'));
     for (const r of parsed.rows ?? []) hours.push({ metro_id: r.metroId, venue_id: r.venueId, date: r.date, hour: r.hour, captured_at: r.capturedAt, data: r });
     for (const d of parsed.days ?? []) days.push({ metro_id: d.metroId, date: d.date, captured_at: d.capturedAt, data: d });
@@ -124,12 +122,10 @@ try {
   counts.weather_hours = await upsert('weather_hours', hours, 'metro_id,venue_id,date,hour,captured_at');
   counts.weather_days = await upsert('weather_days', days, 'metro_id,date,captured_at');
 
-  // 4. Today's schedule snapshot: the read on file per event, for stamps.
+  // 4. Every schedule snapshot: the read on file per event per capture, for stamps.
   const snapshots = [];
   const snapDir = path.join(root, 'data', 'schedule-archive', metroId);
-  const snapFiles = await jsonFiles(snapDir);
-  const snapPick = process.argv.includes('--all-snapshots') ? snapFiles : snapFiles.slice(-1);
-  for (const f of snapPick) {
+  for (const f of await jsonFiles(snapDir)) {
     const parsed = JSON.parse(await readFile(path.join(snapDir, f), 'utf8'));
     for (const row of parsed.forecasts ?? []) {
       snapshots.push({ metro_id: parsed.metroId, captured_on: parsed.capturedOn, captured_at: parsed.capturedAt, event_id: row.eventId, date: row.date, start: row.start ?? null, data: row });

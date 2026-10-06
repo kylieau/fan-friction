@@ -3,6 +3,7 @@
 // (drawSize). Always an estimate, and said so in the note.
 
 import { EXPECTED_DRAWS, type DayClass } from './expectedDrawIndex';
+import { cachedExpectedDraws } from './catalogCache';
 import type { CrowdEvent } from './types';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -23,7 +24,7 @@ export function calibratedDraw(event: CrowdEvent): { count: number; note: string
   const teamId = event.teams.home;
   const dc = dayClassOf(event.date);
   const month = Number(event.date.slice(5, 7));
-  const rows = EXPECTED_DRAWS.filter((row) => row.metroId === event.metroId && row.teamId === teamId);
+  const rows = (cachedExpectedDraws(event.metroId) ?? EXPECTED_DRAWS).filter((row) => row.metroId === event.metroId && row.teamId === teamId);
   const pick =
     rows.find((row) => row.dayClass === dc && row.month === month) ??
     rows.find((row) => row.dayClass === dc && row.month === null) ??

@@ -13,9 +13,10 @@ if [ -z "$names" ]; then
   exit 1
 fi
 
-other=$(echo "$names" | grep -v '^data/schedule-archive/' || true)
+# Nightly data (and the index files only scripts read) do not change the app: it reads the shared catalog.
+other=$(echo "$names" | grep -v -E '^data/|^src/data/(weatherIndex|resultsIndex|startForecastIndex|scheduleArchiveIndex)\.ts$' || true)
 if [ -z "$other" ]; then
-  echo "Only schedule archive files changed. Skipping this deploy."
+  echo "Only nightly data changed. Skipping this deploy."
   exit 0
 fi
 

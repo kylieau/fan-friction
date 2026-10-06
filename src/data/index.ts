@@ -12,6 +12,7 @@ import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, DateSear
 import { applyFormula } from './formulaRead';
 import { withResults } from './results';
 import { withExpectedDraws } from './expectedDraw';
+import { primeDate } from './catalogCache';
 
 // The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.
 const EVENT_SOURCES: EventSource[] = [seedEvents, catalogEvents];
@@ -32,7 +33,8 @@ function preferSeed(events: CrowdEvent[]): CrowdEvent[] {
  * ratings in the seed are comparison data and never shown.
  */
 export async function getCityDate(metroId: string, date: LocalDate): Promise<CityDate> {
-  const lists = await Promise.all(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date)));
+  // Weather, results and snapshots for the window around this date come from the shared catalog.
+  const [lists] = await Promise.all([Promise.all(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date))), primeDate(metroId, date)]);
   const listed = withExpectedDraws(withResults(preferSeed(lists.flat()))).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
   const { events, rating } = applyFormula(metroId, date, listed);
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';

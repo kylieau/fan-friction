@@ -4,6 +4,11 @@
 import { SEED_EVENTS, SEED_RATINGS } from '../src/data/seed/testNights.ts';
 import { rateDate, occasionFor } from '../src/data/formula/index.ts';
 import { withExpectedDraws } from '../src/data/expectedDraw.ts';
+import { primeFromRows } from '../src/data/catalogCache.ts';
+import { WEATHER_DAYS, WEATHER_ROWS } from '../src/data/weatherIndex.ts';
+
+// Weather comes from the shared catalog in the app; here, from the files on disk.
+primeFromRows('la', { hours: WEATHER_ROWS, days: WEATHER_DAYS });
 
 const byDate = new Map<string, typeof SEED_EVENTS>();
 // Sized the way the app sizes them: a seeded expected draw, else the calibrated one from past seasons.

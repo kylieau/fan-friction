@@ -4,12 +4,13 @@
 // counts, after the lock the last forecast saved before it, never observed
 // weather; pre-app dates use the reanalysis archive, labeled estimated.
 
-import { WEATHER_DAYS, WEATHER_ROWS } from './weatherIndex';
+import { cachedWeatherDays, cachedWeatherHours } from './catalogCache';
 import { weatherHourFor, weatherHoursFor, type WeatherDay, type WeatherRow } from './formula/weather';
 import type { CrowdEvent, LocalDate } from './types';
 
+/** The shared catalog's rows for that date (loaded by getCityDate, or by a script from the files). */
 function rowsFor(metroId: string, venueId: string, date: LocalDate, hour: number): WeatherRow[] {
-  return WEATHER_ROWS.filter((r) => r.metroId === metroId && r.venueId === venueId && r.date === date && r.hour === hour);
+  return cachedWeatherHours(metroId, venueId, date, hour) ?? [];
 }
 
 /**
@@ -47,7 +48,7 @@ export function cityWeather(metroId: string, date: LocalDate, events: readonly C
  * before `before` (the lock, or now), else the reanalysis day. Undefined when nothing is stored.
  */
 export function cityDayRange(metroId: string, date: LocalDate, before?: Date): WeatherDay | undefined {
-  const days = WEATHER_DAYS.filter((d) => d.metroId === metroId && d.date === date);
+  const days = cachedWeatherDays(metroId, date) ?? [];
   const cutoff = before?.getTime();
   const forecasts = days
     .filter((d) => d.basis === 'forecast' && (cutoff == null || new Date(d.capturedAt).getTime() <= cutoff))
