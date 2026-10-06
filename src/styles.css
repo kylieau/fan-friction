@@ -516,16 +516,19 @@ button {
 .map-feels {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
   margin: 0;
-  padding: 0;
+  min-height: 36px;
+  padding: 6px 12px;
   border: none;
-  background: none;
-  box-shadow: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.2);
   pointer-events: none;
   font-size: 13px;
+  font-weight: 700;
   line-height: 1.2;
-  color: var(--ink2);
+  color: var(--ink);
   white-space: nowrap;
 }
 
@@ -3216,7 +3219,8 @@ button {
 }
 
 .day-cell {
-  flex: 0 0 calc((100% - 24px) / 7);
+  /* Seven and a half cells fit: the half cell at the edge says the row scrolls. */
+  flex: 0 0 calc((100% - 28px) / 7.5);
   scroll-snap-align: start;
   min-width: 0;
   display: flex;
@@ -3263,21 +3267,52 @@ button {
 }
 
 .day-num {
+  min-width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 9px;
+  text-align: center;
   font-variant-numeric: tabular-nums;
 }
 
+/* Today wears the filled circle every calendar app uses; the border still marks the viewed day. */
+.day-cell.today .day-num {
+  background: var(--dodger);
+  color: var(--card);
+}
+
+/* Opens from the header date (Kylie, Oct 6): it drops down from under the header, not up from the bottom. */
 .month-sheet {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  top: calc(96px + env(safe-area-inset-top, 0px));
+  top: calc(118px + env(safe-area-inset-top, 0px));
   z-index: 9;
   display: flex;
   flex-direction: column;
   background: var(--bg);
-  border-radius: 24px 24px 0 0;
-  box-shadow: 0 -8px 28px rgba(15, 27, 45, 0.18);
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 8px 28px rgba(15, 27, 45, 0.18);
+  transform-origin: top center;
+  animation: month-drop 180ms ease-out;
+}
+
+@keyframes month-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .month-sheet {
+    animation: none;
+  }
 }
 
 .month-sheet-top {
@@ -3292,11 +3327,9 @@ button {
   grid-column: 2;
 }
 
+/* No drag handle: a handle says "bottom sheet", and this one drops from the header. */
 .month-sheet-handle {
-  width: 36px;
-  height: 4px;
-  border-radius: 2px;
-  background: var(--barOff);
+  display: none;
 }
 
 .month-sheet-done {

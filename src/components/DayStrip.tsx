@@ -19,9 +19,9 @@ type Read = { rating: number | null; quiet: boolean };
  * The day strip above the map, as a carousel (Kylie, Oct 6): one row of days
  * that scrolls sideways and snaps a cell at a time. Swipe to browse, tap to
  * pick. The viewed day keeps its blue border wherever it scrolls, and glides
- * into the third slot when it changes. Today's cell says Today, not its
- * weekday, so nobody has to know the date (NN/g). Reads on days ahead sit
- * back a little, since they are forecasts.
+ * into the third slot when it changes. Today's number sits in a filled circle,
+ * the mark every calendar app uses, so nobody has to know the date. Reads on
+ * days ahead sit back a little, since they are forecasts.
  */
 export function DayStrip({ metro, today, date }: { metro: Metro; today: string; date: string }) {
   // The row is anchored on today unless the viewed day is far from it (a famous night).
@@ -65,7 +65,7 @@ export function DayStrip({ metro, today, date }: { metro: Metro; today: string; 
         {days.map((d) => {
           const read = reads.get(d);
           const on = d === date;
-          const label = d === today ? 'Today' : new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' });
+          const label = new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' });
           return (
             <Link
               key={d}

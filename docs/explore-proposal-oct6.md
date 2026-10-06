@@ -80,3 +80,9 @@ Kylie, after the first build: the header date, the carousel, the pill and the To
 Recommendation: B. Three elements, each with one job: the header names and picks the day, the strip browses, Today returns. A is B with one more tap and one more control, and is fine if she prefers the dropdown.
 
 **Kylie: B (Oct 6). Built the same day, local.** The header date is a button with a chevron that opens the month sheet; today's strip cell reads Today; a Today pill shows only off today; the sheet title is "On the map"; the old date pill (`WhenControl.tsx`) and the floating Today button are gone.
+
+## Round 3 (Oct 6): four polish notes, built
+- **Does the carousel need arrows?** No. On touch, arrows are a desktop crutch; the standard hint is a partly visible cell at the edge (Google Flights, Apple Weather, every app-store carousel). Seven and a half cells now fit, so a half cell peeks at the right.
+- **The month sheet drops from the header** (she found it odd that the header's chevron opened something rising from the bottom): rounded bottom corners, shadow downward, a short drop-in, no drag handle. It starts under the header's caption line. Reduced-motion users get no animation.
+- **Today's cell: weekday plus a mark, not the word.** Her ask was the weekday with a little "today". The convention across Apple Calendar, Google Calendar, Outlook and Fantastical is the weekday as usual and the day number in a filled circle; NN/g's "label it Today" advice is for full pickers where a day is otherwise anonymous. Built the circle (Dodger blue). The word is a one-line change if she prefers it.
+- **The weather range is a pill** like the Today button, so it reads against the map instead of blending in.
