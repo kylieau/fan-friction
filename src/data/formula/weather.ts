@@ -242,7 +242,7 @@ async function fetchSteady(url: string): Promise<Response> {
   for (let attempt = 0; attempt < 3; attempt++) {
     if (attempt) await new Promise((resolve) => setTimeout(resolve, attempt * 4000));
     try {
-      const res = await fetchSteady(url);
+      const res = await fetch(url);
       if (res.ok || (res.status < 500 && res.status !== 429)) return res;
       last = new Error(`Open-Meteo ${res.status}`);
     } catch (err) {
