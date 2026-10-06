@@ -47,13 +47,26 @@ export function combine(scores: number[]): number {
 
 const fmt = (n: number) => Math.round(n).toLocaleString('en-US');
 
+/** "World Series Game 1 pulls on five other crowds." The seat figure is a detail line, not the headline. */
 function crowdFightWhy(cf: DateCrowdFight): string {
   const big = cf.events.filter((row) => row.competitors.length > 0);
   if (cf.contestedSeats < 1000 || big.length === 0) return 'Nothing else big that night.';
   const n = cf.events.filter((row) => !row.event.invited && row.competitors.length > 0).length;
   const puller = cf.topPuller;
-  const head = `${n} big ${n === 1 ? 'event' : 'events'}, ${fmt(cf.contestedSeats)} seats in a fight`;
-  return puller ? `${head}; ${puller.title} pulls on most of them.` : `${head}.`;
+  if (puller && n >= 2) {
+    const others = n - 1;
+    return `${puller.title} pulls on ${COUNT[others] ?? others} other ${others === 1 ? 'crowd' : 'crowds'}.`;
+  }
+  return `${COUNT[n] ?? n} crowds in a fight.`;
+}
+
+const COUNT = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+
+/** The seat figure behind the Crowd fight line, for the date page's detail line. */
+export function crowdFightDetail(cf: DateCrowdFight): string {
+  if (cf.contestedSeats < 1000) return '';
+  const n = cf.events.filter((row) => !row.event.invited && row.competitors.length > 0).length;
+  return `${fmt(cf.contestedSeats)} seats in a fight across ${n} ${n === 1 ? 'event' : 'events'}.`;
 }
 
 function conditionsWhy(rows: { event: CrowdEvent; conditions: EventConditions }[]): string {

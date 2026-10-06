@@ -67,6 +67,18 @@ export function listedCapacity(event: CrowdEvent): number | undefined {
   return capacityOn(venue, event.date, setup);
 }
 
+/**
+ * The size the formula pulls with: the expected draw when one is known ahead,
+ * capped by the building; otherwise the listed capacity (Kylie, Oct 6: a
+ * high-school game in SoFi is not 70,000 people). Undefined when neither is known.
+ */
+export function drawSize(event: CrowdEvent): number | undefined {
+  const cap = listedCapacity(event);
+  const draw = event.expectedDraw?.count;
+  if (draw && cap) return Math.min(draw, cap);
+  return draw ?? cap;
+}
+
 function knownSize(event: CrowdEvent): number | undefined {
   return knownCrowdCount(event) ?? listedCapacity(event);
 }

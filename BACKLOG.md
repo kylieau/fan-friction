@@ -95,10 +95,9 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - Collection rules in that prompt: MLB, NBA, NHL, NFL, and at least one stadium or arena concert, plus one ordinary weeknight. Prefer the same dates as the LA seeded nights. Goal is 5 if those dates can carry it. Cap is 10. Add another date only to cover a league or shape the seed dates missed. Venue table only for buildings those nights use.
 
 ## Formula tuning (Oct 5)
-- World Series G1 on 10/25/24 reads Heavy friction (score 6.8): five competitors overwhelm the Marquee pull factor 1.6. Options: raise Marquee m, or keep a residual shield on the verdict.
-- Concert occasion from the booking is in (Oct 5). Open: whether a 2-night stand should count (currently no; 3+ nights +1). Gilmour reads Notable; a "rare run" storyline point would make it Major.
-- Famous nights show the curated headline with the formula number; the formula's own why lines ("8 big events, 40,880 seats in a fight…") read technical; refine copy.
-- All constants are placeholders (tier weights 0.7/0.35/0.15, pull 1/1.1/1.3/1.6, S₀ 10,000, event scale 14, date scale 2.5, heat floor 85°F, gridlock scale 7.5, spill 0.15/0.05). Tune on attendance with held-out dates (review §11).
+- **Done Oct 6** (`docs/formula-tuning-oct5.md`): events sized by expected draw (seeded on the East LA Classic only; the attendance job will fill the rest), pull table 1/1.2/1.6/2.5, Gilmour storyline point, why-line copy ("X pulls on five other crowds", seats on a detail line). World Series G1 reads Moderate.
+- Open: a 2-night stand does not count (3+ nights +1). `expectedDraw` is seeded by hand until the attendance calibration (review §11) computes expected draws per team and bucket.
+- All constants are placeholders (tier weights 0.7/0.35/0.15, pull 1/1.2/1.6/2.5, S₀ 10,000, event scale 14, date scale 2.5, heat floor 85°F, gridlock scale 7.5, spill 0.15/0.05). Tune on attendance with held-out dates (review §11).
 - Verdict bands from an event score: <3 Low, <5.5 Moderate, <8 Heavy, else Extreme (placeholder).
 
 ## Weather (Oct 5)

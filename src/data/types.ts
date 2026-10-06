@@ -173,6 +173,13 @@ export interface CrowdEvent {
   invited?: boolean;
   /** Crowd is evidence, never an input to the rating. */
   crowd: CrowdFigure[];
+  /**
+   * How many people the event is expected to draw, known before the night
+   * (a high-school game in an NFL stadium, a theater act booked into an arena).
+   * The formula sizes the event by this, with the building as the ceiling.
+   * Always an estimate. Until the attendance calibration, seeded only where obvious.
+   */
+  expectedDraw?: { count: number; note: string };
   weather?: Weather;
   assessment?: Assessment;
   /**
@@ -194,6 +201,8 @@ export interface DateRating {
   rating: number;
   /** A short line for lists: "World Series G1, Lakers, USC and two concerts". */
   headline: string;
+  /** The figure behind the headline ("117,566 seats in a fight across 6 events."). Date page only. */
+  detail?: string;
   squeezedMost: string;
   /** "hand" for the seeded nights; "formula" once step 8 exists. */
   method: 'hand' | 'formula';

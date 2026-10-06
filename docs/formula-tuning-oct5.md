@@ -1,6 +1,6 @@
 # Formula tuning session (Oct 5, 2026)
 
-Scope: the soft spots left after v4 landed. Hand ratings are comparison only (Kylie's rule); the target is accuracy on attendance later. This session names the considerations that belong in the formula and fixes readings that are wrong on their face. Nothing here is decided until Kylie says so.
+Scope: the soft spots left after v4 landed. Hand ratings are comparison only (Kylie's rule); the target is accuracy on attendance later. This session names the considerations that belong in the formula and fixes readings that are wrong on their face. **Kylie's rulings (Oct 6): option C, Gilmour gets the storyline point, the copy change is fine. All three are built.**
 
 ## 1. World Series Game 1 reads "Heavy" (10/25/24)
 
@@ -58,6 +58,13 @@ Proposed shape, leading with the puller and the count, no seat figure:
 | Anaheim: Angels vs. Mariners alone, Friday evening. | (Gridlock line, unchanged) |
 
 The seat figure stays on the date page as a detail line under the reason, where someone curious can see it. Event lines ("USC vs. Rutgers 1.5 mi away, same hours") already read well and stay.
+
+## Built (Oct 6)
+- `expectedDraw` on an event (`src/data/types.ts`), `drawSize` in `src/data/read.ts`: Crowd fight and Gridlock size an event by its expected draw, capped by the building. Seeded on the East LA Classic only.
+- Pull table 1 / 1.2 / 1.6 / 2.5 (`src/data/formula/occasion.ts`).
+- Gilmour: `storyline: true` in the seed, reads Major.
+- Date why line: "World Series Game 1 pulls on five other crowds." The seat figure is a detail line on the date page.
+- Side effects: 10/25/24 now 9.2 (was 10.0), still Cooked. Its Gridlock fell from 8.5 to 2.9 because the Inglewood zone no longer carries 70,240 at SoFi for the high-school game. The East LA Classic itself now reads Extreme (an 18,000 crowd pulled by a World Series); hand said Heavy; band edge. Mean gap from the hand ratings 0.75 (was 0.81), comparison only.
 
 ## Holdouts
 

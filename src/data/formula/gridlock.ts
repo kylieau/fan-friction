@@ -8,7 +8,7 @@
 
 import { METROS } from '../../config/metros';
 import { milesBetween } from '../../lib/windows';
-import { eventFeedsFriction, listedCapacity } from '../read';
+import { drawSize, eventFeedsFriction } from '../read';
 import type { CrowdEvent, LngLat } from '../types';
 import { VENUES } from '../venues';
 
@@ -86,7 +86,7 @@ function endHour(event: CrowdEvent): number {
 }
 
 function capacityOf(event: CrowdEvent): number {
-  return listedCapacity(event) ?? Math.max(0, ...event.crowd.map((c) => c.count ?? 0)) ?? 0;
+  return drawSize(event) ?? Math.max(0, ...event.crowd.map((c) => c.count ?? 0)) ?? 0;
 }
 
 function venueCapacityMax(venueId: string, date: string): number {

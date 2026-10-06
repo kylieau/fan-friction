@@ -69,5 +69,9 @@ export function occasionFor(event: CrowdEvent): Occasion {
   return occasionFromPoints(occasionPoints(event.occasionFacts, event.stakes?.round, event));
 }
 
-/** The pull factor by occasion (asymmetric pull): a bigger occasion pulls harder and is pulled less. */
-export const PULL: Record<Occasion, number> = { Routine: 1, Notable: 1.1, Major: 1.3, Marquee: 1.6 };
+/**
+ * The pull factor by occasion (asymmetric pull): a bigger occasion pulls harder
+ * and is pulled less. Steepened Oct 6 (Kylie): at 1.6, three routine games could
+ * still drag a World Series opener to Heavy.
+ */
+export const PULL: Record<Occasion, number> = { Routine: 1, Notable: 1.2, Major: 1.6, Marquee: 2.5 };

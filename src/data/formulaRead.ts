@@ -4,7 +4,7 @@
 // the seed files for comparison; what the app shows is the formula.
 
 import type { Assessment, CrowdEvent, DateRating, LocalDate } from './types';
-import { rateDate, occasionFor, type DateRead } from './formula';
+import { rateDate, occasionFor, crowdFightDetail, type DateRead } from './formula';
 import { verdictFromScore, type EventCrowdFight } from './formula/crowdFight';
 import { milesBetween } from '../lib/windows';
 import { VENUES } from './venues';
@@ -101,6 +101,7 @@ export function applyFormula(metroId: string, date: LocalDate, events: readonly 
     date,
     rating: read.rating,
     headline: read.why,
+    detail: read.lead?.name === 'Crowd fight' ? crowdFightDetail(read.crowdFight) || undefined : undefined,
     squeezedMost: read.crowdFight.topPuller ? `pulled by ${read.crowdFight.topPuller.title}` : '',
     method: 'formula',
     notes: read.reasons.map((r) => `${r.name} ${r.score.toFixed(1)}: ${r.why}`).join(' '),

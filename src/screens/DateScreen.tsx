@@ -170,6 +170,7 @@ export function DateScreen() {
             <span className="read-why">
               <span className="read-lab">{readKind}</span>
               <span className="read-txt">{rating.headline}</span>
+              {rating.detail ? <span className="read-detail">{rating.detail}</span> : null}
               <span className="read-meta">
                 {rating.method === 'hand' ? 'Hand-rated' : 'Formula v4'}
                 {ahead && locksAt ? ` · locks ${locksAt.toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit', timeZone: metro.timeZone })}` : ''}

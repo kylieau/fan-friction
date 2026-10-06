@@ -4,7 +4,7 @@
 // Every constant is a placeholder to tune on attendance data with held-out dates.
 
 import type { Friction } from '../../config/scoreLabels';
-import { eventFeedsFriction, listedCapacity } from '../read';
+import { drawSize, eventFeedsFriction } from '../read';
 import type { CrowdEvent } from '../types';
 import { occasionFor, PULL } from './occasion';
 import { overlapTier, TIER_WEIGHT, type Tier } from './overlap';
@@ -91,8 +91,9 @@ export function verdictFromScore(score: number): Friction {
   return 'Extreme';
 }
 
+/** Expected draw when known ahead, else the building; a guess only when neither exists. */
 function capacityOf(event: CrowdEvent): { cap: number; estimated: boolean } {
-  const cap = listedCapacity(event);
+  const cap = drawSize(event);
   if (cap) return { cap, estimated: false };
   const known = Math.max(0, ...event.crowd.map((c) => c.count ?? 0));
   return { cap: known || 5000, estimated: true };

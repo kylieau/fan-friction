@@ -119,11 +119,12 @@ export const SEED_EVENTS: CrowdEvent[] = [
     place: { type: 'venue', venueId: 'sofi-stadium' },
     audience: { domain: 'sports', sport: 'football' },
     crowd: [estimated(18000, 'Rough figure for the 2023 game; this year not confirmed')],
+    expectedDraw: { count: 18000, note: 'A high-school game in SoFi; the 2023 game drew about this' },
     assessment: draft(['Notable', ['rivalry', 'first game at SoFi'], 'Heavy', 'Same hours, same city']),
     sourceId: SOURCE_ID,
   },
   show(D1, {
-    performer: 'David Gilmour', genre: 'classic rock', venue: 'intuit-dome', start: '19:30',
+    performer: 'David Gilmour', genre: 'classic rock', facts: { storyline: true }, venue: 'intuit-dome', start: '19:30',
     a: ['Major', ['rare LA run'], 'Moderate', 'Different crowd'],
   }),
   show(D1, {
