@@ -5,15 +5,14 @@ import { FactList } from './FactList';
 const LABELS: Record<keyof EntryEdit, string> = {
   review: 'Review',
   with: 'With',
-  note: 'Note',
 };
 
 /** Fields only the owner ever sees. Marked so in the form, the same way the fact list marks them. */
-const PRIVATE: (keyof EntryEdit)[] = ['with', 'note'];
+const PRIVATE: (keyof EntryEdit)[] = ['with'];
 
 /**
- * Your layer on a night you attended: the review, your facts, the private pair,
- * and a quiet Edit. Nothing here touches the read; the no-results rule holds
+ * Your layer on a night you attended: the review, who you went with, and a
+ * quiet Edit. Nothing here touches the read; the no-results rule holds
  * because the formula never looks at these fields.
  */
 export function EntryLayer({ entry }: { entry: Entry }) {
@@ -59,13 +58,7 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
           {key === 'with' ? (
             <input className="account-input" value={draft[key] ?? ''} onChange={(e) => set(key, e.target.value)} maxLength={200} autoComplete="off" />
           ) : (
-            <textarea
-              className="account-input entry-textarea"
-              value={draft[key] ?? ''}
-              onChange={(e) => set(key, e.target.value)}
-              rows={key === 'review' ? 4 : 2}
-              maxLength={2000}
-            />
+            <textarea className="account-input entry-textarea" value={draft[key] ?? ''} onChange={(e) => set(key, e.target.value)} rows={4} maxLength={2000} />
           )}
         </label>
       ))}

@@ -35,7 +35,7 @@ export interface LabeledFact {
  * who you went with, a note. Outcome, starter, promo, TV and the setlist are
  * facts about the event and come from a source, never from a form.
  */
-export type EntryEdit = Pick<Entry, 'review' | 'with' | 'note'>;
+export type EntryEdit = Pick<Entry, 'review' | 'with'>;
 
 export interface LogStats {
   /** Log entries, not unique evenings. */
@@ -56,7 +56,24 @@ export interface LogBackup {
   plans: Plan[];
 }
 
-let snapshot: PersonalLog = readSavedLog();
+/**
+ * Note folded into Review (Kylie, Oct 6: the two were redundant). An older
+ * copy's private note becomes the night's review on load; the review follows
+ * the visibility switch, which is Only me until the person changes it.
+ */
+function foldNotes(log: PersonalLog): PersonalLog {
+  if (!log.added.some((entry) => entry.note)) return log;
+  return {
+    ...log,
+    added: log.added.map((entry) => {
+      if (!entry.note) return entry;
+      const { note, ...rest } = entry;
+      return rest.review ? rest : { ...rest, review: note };
+    }),
+  };
+}
+
+let snapshot: PersonalLog = foldNotes(readSavedLog());
 let saveWarning: string | null = null;
 const listeners = new Set<() => void>();
 
@@ -106,7 +123,7 @@ onAccountChange(async (account) => {
     setStoreAccount(account.id);
     try {
       const cloud = await entryStore.load();
-      const merged = mergeLogs(cloud, snapshot);
+      const merged = foldNotes(mergeLogs(cloud, snapshot));
       snapshot = merged;
       syncStatus = 'account';
       emit();
@@ -124,7 +141,7 @@ onAccountChange(async (account) => {
   syncStatus = 'phone';
   if (wasSignedIn) {
     await clearPhoneCopy();
-    snapshot = readSavedLog();
+    snapshot = foldNotes(readSavedLog());
   }
   emit();
 });
@@ -190,12 +207,9 @@ export function entryFacts(entry: Entry, scope: 'all' | 'before' = 'all'): Label
   return facts;
 }
 
-/** The owner's private pair, under the review. The event's facts sit in the header. */
+/** The owner's private line, under the review. The event's facts sit in the header. */
 export function ownEntryFacts(entry: Entry): LabeledFact[] {
-  const facts: LabeledFact[] = [];
-  if (entry.with) facts.push({ label: 'With', value: entry.with, private: true });
-  if (entry.note) facts.push({ label: 'Note', value: entry.note, private: true });
-  return facts;
+  return entry.with ? [{ label: 'With', value: entry.with, private: true }] : [];
 }
 
 function setlistName(url: string): string {
@@ -206,9 +220,9 @@ function setlistName(url: string): string {
   }
 }
 
-/** The same three for every kind of night. */
+/** The same two for every kind of night. */
 export function entryFieldsFor(_kind: Entry['kind']): (keyof EntryEdit)[] {
-  return ['review', 'with', 'note'];
+  return ['review', 'with'];
 }
 
 /** What the Add form collects for a night the catalog doesn't list. */

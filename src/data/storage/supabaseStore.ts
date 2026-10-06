@@ -144,7 +144,7 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         await must(client.from('entries').delete().eq('user_id', id).in('id', goneEntries));
       }
 
-      // Private fields (note, who you went with): one row per night that has either; remove the rest.
+      // Private fields: who you went with (and an older copy's note, until it folds into the review). One row per night that has either; remove the rest.
       const noted = log.added.filter((entry) => entry.note || entry.with);
       if (noted.length > 0) {
         await must(

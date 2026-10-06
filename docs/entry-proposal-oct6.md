@@ -85,3 +85,8 @@ Photos 🚩. Automatic scores (step 2). Re-linking other hand-typed nights to ca
 - Add a night: exact day only (the month-only and year-only options are gone); City first, then Where lists that city's venues (plus "Another venue"); the Sport list needs a real design (leagues and levels), to be hammered out.
 - Big event tick: confirmed that 5,000+ is the bar for the map and for feeding friction; the tick only files a suggestion.
 - She likes the weather and local competition cards, and the type pills.
+
+## Locked Oct 6 (round 3)
+- **One piece of prose per night: Review.** Note is folded into Review on load; nothing writes a note any more. Review follows the visibility switch (Only me by default). With stays its own private line.
+- **Results come from the nightly 12:15am Pacific run**, one pass for the day's games, not a per-event timer. Starters and promos come from the same feeds before the game. This is the first piece of step 2.
+- **Sport list:** out for a second opinion, `docs/sport-list-second-opinion-prompt.md`. The form keeps its placeholder list until Kylie decides.

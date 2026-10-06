@@ -357,9 +357,9 @@ export interface Entry {
   promo?: string;
   /** A moment worth naming, when known. Not a personal note. */
   notable?: string;
-  /** Private. Kept off the night row, the share card, and the map. */
+  /** Older copies only: folded into `review` on load (Kylie, Oct 6). Not written any more. */
   note?: string;
-  /** Who you went with. Private, like the note. */
+  /** Who you went with. Private: only you ever see it. */
   with?: string;
   /** A few lines in your words (Kylie, Oct 6: Letterboxd-style, no stars). Follows your visibility switch. */
   review?: string;

@@ -221,7 +221,7 @@ export function DateScreen() {
                   <span className="entry-facts">
                     {[entry.venue, event?.start ? clockTime(event.start) : null, event ? crowdLine(event) : null].filter(Boolean).join(' · ')}
                   </span>
-                  {entry.note && <span className="entry-note">{entry.note}</span>}
+                  {entry.review && <span className="entry-note">{entry.review}</span>}
                 </div>
               );
             })}
