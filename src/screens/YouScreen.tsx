@@ -28,6 +28,7 @@ import {
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
+import { YourYear } from '../components/YourYear';
 import { GearIcon, PlusIcon } from '../components/Icons';
 import { loggedDateLabel, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
@@ -200,6 +201,7 @@ export function YouScreen() {
       {tab === 'stats' && (
         <>
           {filters}
+          <YourYear entries={shown} ratings={ratings} />
           <Stats stats={stats} heaviest={heaviest} hours={hoursAtGames(shown)} />
         </>
       )}

@@ -2330,6 +2330,61 @@ button {
   color: #b00020;
 }
 
+/* ---------- Your year (You → Stats) ---------- */
+.your-year {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.your-year-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.your-year-head .you-heading {
+  margin: 0;
+}
+
+.word-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.word-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--card);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.word-pill strong {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.word-pill.brutal,
+.word-pill.cooked {
+  background: var(--dodger);
+  color: var(--card);
+}
+
+.your-usual {
+  margin: 0;
+  font-size: 15px;
+  color: var(--ink2);
+}
+
 /* ---------- Add an event ---------- */
 .add-page {
   gap: 14px;
