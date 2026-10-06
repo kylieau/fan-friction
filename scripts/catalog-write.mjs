@@ -22,17 +22,20 @@ if (!url || !key) {
   process.exit(0);
 }
 
-// The key must be the service-role key, not the public (anon) one; they look alike. Read its role claim.
-function roleOf(jwt) {
+// The key must be one that can write: Supabase's newer "secret" key (sb_secret_…) or the
+// older service_role JWT. The public key (sb_publishable_… or an anon JWT) can only read.
+function keyKind(k) {
+  if (k.startsWith('sb_secret_')) return 'secret';
+  if (k.startsWith('sb_publishable_')) return 'publishable (read-only)';
   try {
-    return JSON.parse(Buffer.from(jwt.split('.')[1], 'base64url').toString()).role ?? '(none)';
+    return JSON.parse(Buffer.from(k.split('.')[1], 'base64url').toString()).role ?? 'unknown';
   } catch {
-    return '(not a JWT)';
+    return 'unknown';
   }
 }
-const role = roleOf(key);
-if (role !== 'service_role') {
-  console.error(`The key in SUPABASE_SERVICE_ROLE_KEY has role "${role}", not "service_role". In Supabase: Project Settings → API → the key labeled service_role.`);
+const kind = keyKind(key);
+if (kind !== 'secret' && kind !== 'service_role') {
+  console.error(`SUPABASE_SERVICE_ROLE_KEY holds a "${kind}" key, which cannot write. In Supabase: Project Settings → API Keys → a Secret key (sb_secret_…), or the legacy service_role key.`);
   process.exit(1);
 }
 
