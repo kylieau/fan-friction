@@ -1,52 +1,60 @@
 # Fan/Friction: handoff snapshot
 
-Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
+Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`. The build order is `docs/big-picture-plan-oct6.md`.
 
-_Last synced: Oct 6, 2026 (second session, mid-day). Everything below is committed and pushed. Current state and Changes made describe the morning's Explore work; the afternoon's work is under Next steps._
+_Last synced: Oct 6, 2026, end of the second session. Everything below is committed and pushed to `main` (Vercel builds from it). Kylie said she wants to "save everything and transfer" before step 3; this is that snapshot._
 
 ## Current state
-**Explore is "one day at a time"** (`docs/explore-proposal-oct6.md`, rounds 1–5, all built and pushed). Kylie reviewed each round on the local site.
-- The header date is the picker: a chevron, tap opens the month sheet. No date pill, no Next 7 days, no auto-widen. Old `?when=week` links open the day.
-- The strip is a carousel: eight cells to the width (half, seven, half), swipe browses, tap selects, viewed day in the third full slot with a blue border, today's number in a filled Dodger-blue circle. Anchored on today (two weeks back, a month ahead) unless the viewed day is far away.
-- A "Today" pill shows only when the map is on another day.
-- The month sheet drops from under the header (no Done). A grab bar on its bottom edge: drag or flick up, tap, Escape, or tap the header date again to close.
-- Weather: map header and date page show the city point's feels-like **"H:76° L:52°"** every day, quiet days included. Tap or hover the map chip for a small light note, "Feels-like, not air temp", that fades after 3 s. Event rows keep the start-hour venue number (the formula's input).
-- Map chrome: credit "i" bottom-left; the "?" key (only on days with events) and the recenter button (only after a hand move or a remembered view) are one column on the right. All three ride the sheet's real top edge (`--sheet-peek`), so a selected event or a home bar can't hide them.
-- The sheet title is "On the map" (the date is said once, in the header). No "Next up" line.
+**Steps 1 and 2 of the big-picture plan are done and live.** Step 3 (Compare rebuild) **must not start until Kylie says so.**
 
-**Formula tuning (Oct 6, pushed):** events are sized by an optional **expected draw** (known ahead, always an estimate, capped by the building; seeded only on the East LA Classic at 18,000). Pull table 1 / 1.2 / 1.6 / 2.5. Gilmour has a storyline point (Major). Date why line: "World Series Game 1 pulls on five other crowds"; the seat figure is a detail line on the date page. WS G1 reads Moderate; 10/25/24 is 9.2 Cooked; mean gap from hand ratings 0.75 (comparison only). Artifact for Kylie: https://claude.ai/artifact/F1oujANJrwodjs39D1pd7F
+**Step 1, the log entry (`docs/entry-proposal-oct6.md`):**
+- The event page is the entry. Once Attended is on, a card under the button holds your **Review** and **With** (who you went with; private, lock icon). Edit opens one form; Remove from log sits small at the bottom with an inline confirm. Note was folded into Review (older notes become the review on load).
+- Only Review and With are typed by the person. **Outcome, Starters, TV, Length and the crowd are facts from the leagues' feeds**, shown in the header. An upcoming game says "On ESPN2"; a past one "Was on".
+- **Add an event**: a + beside the gear in You. Search first; a listed night is one tap away. "Add it yourself": What, Type, Sport chips (six shown, More), Level, Division (only where not implied), Competition (typing WNBA sets Basketball · Pro · Women's), exact day, City first, then that city's venues (or Another venue), Big event tick. A hand-typed night is yours only (under the floor, off the map, nearby read when the city has one), with its own page (`/entry/:id`). Big event files a suggestion to `suggested_events` (migration 0006) for Kylie to check and seed. Migrations 0005 (with_whom) and 0006 are run.
+- You rows open the event page directly. Friends' rows still open the date page.
 
-**Weather data:** the nightly job now also fetches the city point's daily feels-like high and low for today through 15 days ahead (one extra Open-Meteo call), stored under `days` in each `data/weather/la/*.json` and indexed as `WEATHER_DAYS`. The 13 seeded nights were backfilled.
+**Step 2, data (`docs/calibration-oct6.md`, `docs/retune-oct6.md`, `docs/la-venue-table-answer.md`, `docs/hard-access-oct6.md`, `docs/data-sources.md`):**
+- **Nightly results pass** (`scripts/results-fetch.mjs`, in the 12:15am run): final scores, announced crowds and **game length** (MLB official from the box score's T line; other sports estimated from the first and last play's wall-clock stamps on ESPN's game page), three days back. `src/data/results.ts` attaches them on read; a result matches a seeded event by date, building and home side. The box score's announced crowd replaces a seeded estimate. **Hours at games** in You → Stats sums known lengths.
+- **Feeds:** Ducks, LAFC, Angel City, UCLA and USC basketball (men's and women's) added to ESPN. Soccer finals are `STATUS_FULL_TIME` (fixed). ESPN placeholder kickoffs keep their real date (`timeValid`); Galaxy fixtures need `?fixture=true`.
+- **Venue table:** every LA room of 5,000+ (37 venues), figures labeled official/reported/estimated, coordinates geocoded. Kia Forum corrected (17,500 concert; 17,505 was basketball).
+- **Calibration:** `data/attendance/la/` holds three seasons of announced crowds for 16 teams; `scripts/attendance-calibrate.mjs` writes medians by team, day class and month to `src/data/expectedDrawIndex.ts`; `src/data/expectedDraw.ts` sizes an event by them when no draw is seeded. UCLA football pulls as 42,000, not 89,702.
+- **Retune analysis** (`scripts/retune-analysis.mjs`): the direction holds (contested games draw a few percent below their norm) but the constants can't be pinned; **Kylie: keep the placeholders, rerun in a season.**
+- **Hard access is a rule, not a hand flag** (`isStrained` in `src/data/venues.ts`, measures in `src/data/venueAccessIndex.ts` from `scripts/venue-access.mjs`): relief ≥ 40 m within 500 m and ≤ 4 named streets within 250 m. Flagged: Hollywood Bowl, Greek, Rose Bowl, **Dodger Stadium, Weingart Stadium**. Pauley off (39 m). Weight × 1.25 in a driving city, × 1.1 in a transit city, both placeholders pending `docs/hard-access-weight-prompt.md` (Kylie will run it).
+- **Today tab** on the strip's edge (left when looking ahead, right when looking back) replaced the floating pill.
 
-**Not verified on a real phone:** the strip's swipe/snap feel, the month sheet's drag-to-dismiss, the recenter after a pinch. Checked only in headless Chromium.
+**Principle (Kylie, Oct 6):** LA is the only city built by hand. `docs/new-city-checklist.md` is how every later city gets added. Anything that can't go on that checklist isn't done.
 
-## Changes made (this session)
-Formula: `src/data/{types,read,formulaRead}.ts`, `src/data/formula/{crowdFight,gridlock,occasion,index,weather}.ts`, `src/data/seed/testNights.ts`, `docs/{formula-table,formula-tuning-oct5,formula-v4}.md`. Weather: `scripts/{weather-fetch,weather-index}.mjs`, `src/data/{weather,weatherIndex,index}.ts`, `data/weather/la/*.json`. Explore: `src/components/{DayStrip,MonthSheet,Icons}.tsx`, `src/components/WhenControl.tsx` (deleted), `src/lib/{view,dates,useSheetDrag}.ts`, `src/map/{BaseMap,MapCamera}.tsx`, `src/screens/{MapScreen,DateScreen,HomeScreen,ExploreScreen}.tsx`, `src/styles.css`. Docs: `docs/explore-proposal-oct6.md`, `docs/ux-notes.md`, `BACKLOG.md`, `CLAUDE.md` (stale "through PR #12" fixed).
+## Changes made (this session, all pushed)
+Entry: `src/components/{EntryLayer,FactList,Icons}.tsx`, `src/screens/{EventScreen,YouScreen,AddEntryScreen,ManualEntryScreen,DateScreen}.tsx`, `src/data/{personalLog,suggestions,competitions,types,index}.ts`, `src/data/storage/supabaseStore.ts`, `supabase/migrations/{0005_entry_private,0006_suggested_events}.sql`, `src/lib/view.ts`, `src/App.tsx`. Data: `src/data/sources/{mlbSource,espnSource,results}.ts`, `src/data/{results,resultsIndex,expectedDraw,expectedDrawIndex,venues,venueAccessIndex,teams}.ts`, `src/data/formula/gridlock.ts`, `scripts/{results-fetch,results-index,attendance-collect,attendance-calibrate,retune-analysis,venue-access}.mjs`, `scripts/formula-table.mts`, `data/{results,attendance}/la/`, `data/venue-access.tsv`, `.github/workflows/schedule-archive.yml`, `package.json` (devDeps `@mapbox/vector-tile`, `pbf`). Map: `src/components/DayStrip.tsx`, `src/screens/MapScreen.tsx`, `src/styles.css`. Docs: `docs/{big-picture-plan-oct6,entry-proposal-oct6,sport-list-second-opinion-prompt,sport-list-second-opinion-answer,la-venue-table-prompt,la-venue-table-answer,data-sources,calibration-oct6,retune-oct6,hard-access-oct6,hard-access-weight-prompt,new-city-checklist}.md`, `AGENTS.md` (logging bar locked), `docs/direction.md` (status note), `BACKLOG.md`.
 
-**Not ours, left untracked:** `docs/october-2026-events-prompt.md` (a research brief for October 2026 events in LA, San Diego, Seattle and New York, from a parallel session). It was swept into a local commit by mistake and taken back out before pushing.
+The other session's commit fb20b3f (October research, `docs/research-oct-2026/`, the ESPN fix plan) is in history too. This session owns handoff and backlog syncs.
 
-## Key decisions in force
-- **Explore (Kylie, Oct 6):** one day only; the header date is the picker; Today pill only off today; swipe browses, tap selects; today = filled circle on the number, not the word (calendar convention; NN/g's "label it Today" is for full pickers); no arrows on the strip, the half cells are the scroll hint; month sheet drops from the header and lifts away; "H: L:" like Apple Weather; feels-like note small and light, not a dark box; recenter only after a hand move; credit bottom-left, controls on the right.
-- **Week view stays on Home only** ("This week" mini map). Kylie asked for it on Explore, then reconsidered; Claude agreed. Revisit only if she misses it in use.
-- **Formula (Oct 6):** option C (expected draw + steeper pull); storyline for Gilmour; plainer why lines. Hand ratings are comparison only, never the target.
-- **Words (Oct 5):** Chill · Mild · Spicy · Brutal · Cooked. Event verdict title "Fighting heavy friction". Friction chips: Low never shown; Moderate pale blue, Heavy Dodger blue, Extreme ink.
-- **Pushing:** commit, leave it on the local site for her, push when she says.
-- **UI copy rule:** users are not dumb; no explanatory banners; utilities behind the gear. She will ask for a helper when one is needed (the feels-like note).
-- **Event-entry notes (Kylie, Oct 6):** she has many; attack them systematically, backend data first, then tab by tab. Do not drip-fix.
-- **No-results rule:** only the event's own outcome is excluded. Observed weather may rate a past date. Crowd counts stay evidence.
-- **Weather:** one source (Open-Meteo, free non-commercial, on the cost milestones). City point = the metro's map center (near Inglewood for LA); fine for now.
-- **Accounts, Home, You, Friends, Stats, profiles, sign-in:** as locked Oct 5 (see `BACKLOG.md` → Accounts and Home and Explore). Private by default; no strangers' feed; no location, ever.
-- **Working rules:** propose structural changes, then wait. Never delete a feature. 🚩 any new cost. Kylie locks decisions. Fan/Friction with the slash. Screens read only through `src/data/index.ts`. One gold button per screen. Traffic is an estimate, never red.
-- **Testing notes:** headless Chromium at `/usr/bin/chromium` with swiftshader flags; a scratch DevTools-protocol script can drag the map. Set `fan-friction:home-metro` = `"la"` and `fan-friction:tipsDone` = `true` in localStorage first, or the home picker and tips cover the map. Don't `pkill` vite.
+## Key decisions in force (new this session; earlier ones in BACKLOG.md)
+- **Logging bar locked:** anything can be logged by hand; ~1,000+ is pre-listed; 5,000+ feeds friction and is on the map.
+- **Only Review and With are typed**; every other fact comes from a source. No Letterboxd stars. Review follows the visibility switch (Only me by default).
+- **Saved nights settle to Attended automatically**; no "Did you go?" step.
+- **Results** come from the nightly run, one pass; game length is logged for every sport (official or estimated).
+- **Big hand-typed events: suggest, don't publish.** Kylie checks `suggested_events` in Supabase and seeds.
+- **Sport list v1** as the second opinion laid out (sport, level, division, competition). Kylie will have notes after using it.
+- **Retune:** placeholders stay; rerun after a season of archived nights with concerts.
+- **Hard access:** the rule above; Pauley off at 40 m; weights 1.25 / 1.1 pending research.
+- **Free Ticketmaster key** OK at step 4 if it stays free with no later obligation; read the terms first.
+- **Step 3 (Compare) waits for Kylie's go-ahead.**
+- **Testing notes:** headless Chromium at `/usr/bin/chromium` with swiftshader flags and a phone user agent (ESPN 403s "HeadlessChrome"); set `fan-friction:home-metro` = `"la"` and `fan-friction:tipsDone` = `true` in localStorage. Don't `pkill` vite. Overpass (OpenStreetMap's query server) was overloaded Oct 6; the venue survey reads the map tiles instead. Open-Elevation rate-limits repeat calls (the script retries).
+
+## Open for Kylie
+- The hard-access weight research (`docs/hard-access-weight-prompt.md`): are 1.25 and 1.1 right?
+- Notes on the entry layer and the Add form after using them; the sport list after a few entries.
+- The known edges from step 1: the review isn't shown on the profile page yet; Big-event suggestions file only when signed in.
+- The two weights, Pauley, and the Dodger Stadium property line can be revisited when the full OpenStreetMap data (parking lots) is reachable.
 
 ## Next steps
-**Oct 6 (later session): the build order is `docs/big-picture-plan-oct6.md`.** Follow it step by step, proposal first. Everything below is pushed to `main`.
-1. **Step 1 done and reviewed by Kylie:** the event page is the entry (Review and With are the only typed fields; Outcome, Starter, Promo, TV, Setlist are event facts from sources), a + in You with search then Add it yourself (sport, level, division, competition chips per `docs/sport-list-second-opinion-answer.md`; city first; exact day only), a hand-typed night's page, Big event files a suggestion. Migrations 0005 and 0006 are run. Kylie will have more notes after using it.
-2. **Step 2 in progress:** the nightly run saves finals and announced crowds (`scripts/results-fetch.mjs`, `data/results/la/`, `src/data/results.ts`); Outcome, Starters and the box-score count show on the event page. Ducks, LAFC, Angel City and UCLA/USC basketball (men's and women's) are on the map (Pauley Pavilion and Galen Center added). **Venue table (Kylie, Oct 6): 5,000+ rooms only, by research prompt:** `docs/la-venue-table-prompt.md`. When she pastes the answer, check each figure against its source and fold it into `src/data/venues.ts`. Calibration first pass done (`docs/calibration-oct6.md`; `npm run attendance-collect` then `npm run attendance-calibrate`; `src/data/expectedDraw.ts` applies the medians on read). Venue table done (`docs/la-venue-table-answer.md`, `docs/data-sources.md`). Retune analysis done (`docs/retune-oct6.md`, `scripts/retune-analysis.mjs`): keep the placeholders, rerun in a season; awaiting Kylie's read. Soccer finals fixed (ESPN says STATUS_FULL_TIME). **Open for Kylie: Dodger Stadium's hard-access flag (the research says yes; it would raise Gridlock on every Dodgers night).** **Step 3 (Compare) must wait for Kylie's go-ahead.**
-3. Also done Oct 6: the ESPN placeholder-kickoff and Galaxy-fixture fix; the Today tab on the strip's edge (left when looking ahead, right when looking back); Note folded into Review.
-4. Her event-entry notes, when she has them: backend data first, then tab by tab.
+1. **Wait for Kylie's word before step 3** (Compare rebuild: two nights side by side, "Compare with…" on the date page, this-year stats). Proposal first.
+2. Fold in the hard-access weight research when she pastes it.
+3. Her event-entry notes, when she has them: backend data first, then tab by tab.
+4. Step 4 later: Ticketmaster concerts 🚩 (free key; terms first) and a second city via `docs/new-city-checklist.md`.
 
 **Next command to run:**
 ```bash
-git pull --ff-only && npm run dev   # localhost:3001 → Explore
+git pull --ff-only && npm run dev   # localhost:3001
 ```
