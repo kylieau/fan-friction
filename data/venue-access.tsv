@@ -35,7 +35,20 @@ bren-events-center	la	5430	0	8	2	1250	32	0	Bren Events Center
 walter-pyramid	la	5000	0	15	6	1150	5	0	LBS Financial Credit Union Pyramid
 ohio-stadium	columbus	102780	0	10	3	600	14	0	Ohio Stadium
 citi-field	new-york	41922	0	14	4	250	3	0	Citi Field
-petco-park	san-diego	39860	0	28	13	800	15	0	Petco Park
+petco-park	san-diego	39860	0	29	13	800	10	0	Petco Park
+san-diego-stadium	san-diego	70561	0	12	4	350	53	1	San Diego Stadium
+snapdragon-stadium	san-diego	35000	0	13	8	250	63	0	Snapdragon Stadium
+del-mar-fairgrounds	san-diego	40000	0	4	0	700	17	0	Del Mar Fairgrounds
+embarcadero-marina-park-north	san-diego	30000	0	9	2	1400	9	0	Embarcadero Marina Park North
+north-island-amphitheatre	san-diego	20500	0	2	2	2400	51	1	North Island Credit Union Amphitheatre
+pechanga-arena	san-diego	16100	0	12	4	350	4	0	Pechanga Arena
+waterfront-park	san-diego	15000	0	14	6	600	26	0	Waterfront Park
+viejas-arena	san-diego	12414	0	19	7	600	36	0	Viejas Arena
+rady-shell	san-diego	10000	0	7	2	1200	12	0	The Rady Shell at Jacobs Park
+frontwave-arena	san-diego	7500	0	7	4	2250	35	0	Frontwave Arena
+torero-stadium	san-diego	6000	0	26	9	1450	53	0	Torero Stadium
+jenny-craig-pavilion	san-diego	5100	0	21	5	1600	55	0	Jenny Craig Pavilion
+san-diego-convention-center	san-diego	6500	0	22	8	1250	12	0	San Diego Convention Center
 t-mobile-park	seattle	47929	0	14	7	200	8	0	T-Mobile Park
 wintrust-arena	chicago	10387	0	19	8	550	17	0	Wintrust Arena
 amalie-arena	tampa	19420	0	38	10	150	15	0	Amalie Arena
