@@ -14,7 +14,7 @@ For a friend of Kylie's who is trying Fan/Friction.
 
 **5. Send it back.** When Claude has written its summary, use Claude's **Share** button and send Kylie the link.
 
-**Tonight's and Thursday's games:** these aren't in your log yet, on purpose. After each one, add it yourself with **Add a night** on the You tab. That's part of the test.
+**Games Kylie left out on purpose** (usually your most recent or next ones): after each one, add it yourself with **Add a night** on the You tab. That's part of the test.
 
 Everything you log is private to you unless you change that in Settings.
 
@@ -27,7 +27,7 @@ Fan/Friction is a personal log of the live events you went to (games, concerts, 
 
 The app is at **https://fan-friction.vercel.app**. It works best on a phone. I'm signed in, and Kylie has loaded my past nights into my account. Tabs: Home, Explore (a map and calendar of upcoming and past dates), Favorites, and You (my log). I can add a night myself with "Add a night."
 
-My past nights were loaded by hand, and each one carries its friction read, rebuilt afterwards from public listings of what else was on that date and the weather. The app may label these reads "reconstructed." That's expected, not a bug.
+My past nights were loaded by hand. Each night in a city the app covers carries its friction read, rebuilt afterwards from public listings of what else was on that date and the weather. The app may label these reads "reconstructed." That's expected, not a bug. Nights in a city the app doesn't cover yet may not have a read. Still ask whether those nights look right, and whether I'd want a read for them.
 
 ## How to run this
 - Ask me **one question at a time** and wait for my answer. Keep it to about 15–20 minutes.
