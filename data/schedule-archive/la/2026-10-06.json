@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-06",
-  "capturedAt": "2026-10-06T19:24:44.902Z",
+  "capturedAt": "2026-10-06T19:27:52.473Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-06",
@@ -30,7 +30,7 @@
     {
       "id": "ticketmaster",
       "name": "Ticketmaster listings",
-      "inWindow": 83
+      "inWindow": 51
     }
   ],
   "events": [
@@ -221,46 +221,6 @@
       "ticketmasterId": "vv1AaZko9Gketiqv4"
     },
     {
-      "id": "2026-10-07-tm-vvG10Z_CNXCTVT",
-      "metroId": "la",
-      "date": "2026-10-07",
-      "start": null,
-      "kind": "special",
-      "title": "Intuit Dome Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Intuit Dome Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_CNXCTVT"
-    },
-    {
-      "id": "2026-10-08-tm-vvG1IZ_C1JkkEz",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours - No Field Access",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1JkkEz"
-    },
-    {
       "id": "2026-10-08-tm-vv1AaZk8tGkd6ll1M",
       "metroId": "la",
       "date": "2026-10-08",
@@ -304,26 +264,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-08-tm-LvZ18QIWpy3xLY_QCF3xP",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Alex Warren",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Alex Warren",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "LvZ18QIWpy3xLY_QCF3xP"
-    },
-    {
       "id": "2026-10-08-tm-vvG1iZ_k9N_4fq",
       "metroId": "la",
       "date": "2026-10-08",
@@ -362,66 +302,6 @@
       "crowd": [],
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv1k0Z_kJ9G7DM5E"
-    },
-    {
-      "id": "2026-10-08-tm-vvG1IZ_unqW98C",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "kind": "special",
-      "title": "Insecure: The 10th Anniversary Tour",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Comedy"
-      },
-      "performer": "Issa Rae",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_unqW98C"
-    },
-    {
-      "id": "2026-10-08-tm-vvG10Z_CNX2Lg6",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": null,
-      "kind": "special",
-      "title": "Intuit Dome Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Intuit Dome Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_CNX2Lg6"
-    },
-    {
-      "id": "2026-10-09-tm-vvG1IZ_C1J6kEW",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours - No Field Access",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1J6kEW"
     },
     {
       "id": "2026-10-09-mlb-849821",
@@ -571,66 +451,6 @@
       "ticketmasterId": "vvG1IZ_GkDOGJ-"
     },
     {
-      "id": "2026-10-09-tm-1Ae0Z_8GkVW6-Bw",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "21:00",
-      "kind": "show",
-      "title": "03 Greedo At the Mayan Theatre",
-      "place": {
-        "type": "venue",
-        "venueId": "belasco"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "03 Greedo At the Mayan Theatre",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "1Ae0Z_8GkVW6-Bw"
-    },
-    {
-      "id": "2026-10-09-tm-vvG10Z_CNX2RgG",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": null,
-      "kind": "special",
-      "title": "Intuit Dome Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Intuit Dome Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_CNX2RgG"
-    },
-    {
-      "id": "2026-10-10-tm-vvG1IZ_C1JFpIF",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1JFpIF"
-    },
-    {
       "id": "2026-10-10-tm-vv16aZk3aZMZAuak1v",
       "metroId": "la",
       "date": "2026-10-10",
@@ -649,26 +469,6 @@
       "crowd": [],
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv16aZk3aZMZAuak1v"
-    },
-    {
-      "id": "2026-10-10-tm-vv170Z_kGkSyeRmF",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "kind": "special",
-      "title": "Bassem Youssef: The Belly of the Beast Tour",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Comedy"
-      },
-      "performer": "Bassem Youssef",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_kGkSyeRmF"
     },
     {
       "id": "2026-10-10-espn-lafc-761858",
@@ -711,26 +511,6 @@
       "crowd": [],
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv1AaZkowGkdFeQU8"
-    },
-    {
-      "id": "2026-10-10-tm-vvG1iZ_erLbePZ",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "kind": "special",
-      "title": "Classical: Gershwin, Copland, and Visions of Humanity & Unity",
-      "place": {
-        "type": "venue",
-        "venueId": "long-beach-arena"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Classical"
-      },
-      "performer": "Long Beach Symphony",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_erLbePZ"
     },
     {
       "id": "2026-10-10-tm-vvG1iZbU81spCL",
@@ -916,26 +696,6 @@
       "ticketmasterId": "vv1ke8v0PdGA2NIXk"
     },
     {
-      "id": "2026-10-11-tm-vvG10Z_CNX82g_",
-      "metroId": "la",
-      "date": "2026-10-11",
-      "start": null,
-      "kind": "special",
-      "title": "Intuit Dome Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Intuit Dome Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_CNX82g_"
-    },
-    {
       "id": "2026-10-12-espn-rams-401872994",
       "metroId": "la",
       "date": "2026-10-12",
@@ -977,66 +737,6 @@
       "crowd": [],
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_2Rimjss"
-    },
-    {
-      "id": "2026-10-12-tm-LvZ18Qn3AipYC1El7HbPQ",
-      "metroId": "la",
-      "date": "2026-10-12",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Brandi Carlile",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Brandi Carlile",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "LvZ18Qn3AipYC1El7HbPQ"
-    },
-    {
-      "id": "2026-10-12-tm-vvG1IZ_37Aq4Gq",
-      "metroId": "la",
-      "date": "2026-10-12",
-      "start": null,
-      "kind": "special",
-      "title": "Los Angeles Coliseum Historic Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "coliseum"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Los Angeles Coliseum Historic Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_37Aq4Gq"
-    },
-    {
-      "id": "2026-10-13-tm-vvG1IZ_C1J5UIN",
-      "metroId": "la",
-      "date": "2026-10-13",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1J5UIN"
     },
     {
       "id": "2026-10-13-espn-ducks-401892501",
@@ -1083,106 +783,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-13-tm-LvZ18QnUux3XmaiLo-FcX",
-      "metroId": "la",
-      "date": "2026-10-13",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Social Distortion",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Social Distortion",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "LvZ18QnUux3XmaiLo-FcX"
-    },
-    {
-      "id": "2026-10-13-tm-vvG1iZ_2SFMfYD",
-      "metroId": "la",
-      "date": "2026-10-13",
-      "start": "19:30",
-      "kind": "special",
-      "title": "Lucy Darling: As You Wish",
-      "place": {
-        "type": "venue",
-        "venueId": "long-beach-arena"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Comedy"
-      },
-      "performer": "Lucy Darling",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_2SFMfYD"
-    },
-    {
-      "id": "2026-10-13-tm-vvG1iZ_2SK5P6b",
-      "metroId": "la",
-      "date": "2026-10-13",
-      "start": "19:30",
-      "kind": "special",
-      "title": " Lucy Darling: 5:30PM Pre-Show Talkback ",
-      "place": {
-        "type": "venue",
-        "venueId": "long-beach-arena"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": " Lucy Darling: 5:30PM Pre-Show Talkback ",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_2SK5P6b"
-    },
-    {
-      "id": "2026-10-13-tm-vvG1IZ_37ArPGH",
-      "metroId": "la",
-      "date": "2026-10-13",
-      "start": null,
-      "kind": "special",
-      "title": "Los Angeles Coliseum Historic Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "coliseum"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Los Angeles Coliseum Historic Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_37ArPGH"
-    },
-    {
-      "id": "2026-10-14-tm-vvG1IZ_C1JGUII",
-      "metroId": "la",
-      "date": "2026-10-14",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1JGUII"
     },
     {
       "id": "2026-10-14-tm-vvG10Z_uKts2xv",
@@ -1272,46 +872,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-14-tm-LvZ18Qn3FkZ7b9kgZzu2y",
-      "metroId": "la",
-      "date": "2026-10-14",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Lucky Daye",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "R&B"
-      },
-      "performer": "Lucky Daye",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "LvZ18Qn3FkZ7b9kgZzu2y"
-    },
-    {
-      "id": "2026-10-15-tm-vvG1IZ_C1JCkIi",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1JCkIi"
-    },
-    {
       "id": "2026-10-15-tm-vv170Z_7GkMfFAZu",
       "metroId": "la",
       "date": "2026-10-15",
@@ -1392,26 +952,6 @@
       "ticketmasterId": "vvG10Z_GwWe2IR"
     },
     {
-      "id": "2026-10-15-tm-LvZ18QO_vQVmGCOZJgENE",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Isaiah Rashad",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "Isaiah Rashad",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "LvZ18QO_vQVmGCOZJgENE"
-    },
-    {
       "id": "2026-10-15-tm-vvG1iZ_1rd3dbK",
       "metroId": "la",
       "date": "2026-10-15",
@@ -1450,46 +990,6 @@
       "crowd": [],
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_82Z9hL3"
-    },
-    {
-      "id": "2026-10-15-tm-vvG10Z_CNX8Rgr",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": null,
-      "kind": "special",
-      "title": "Intuit Dome Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Intuit Dome Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_CNX8Rgr"
-    },
-    {
-      "id": "2026-10-16-tm-vvG1IZ_C1J2kIw",
-      "metroId": "la",
-      "date": "2026-10-16",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1J2kIw"
     },
     {
       "id": "2026-10-16-espn-ducks-401892518",
@@ -1576,46 +1076,6 @@
       "crowd": [],
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv170Z_7Gkz5H4zw"
-    },
-    {
-      "id": "2026-10-16-tm-vvG10Z_CNXo2g0",
-      "metroId": "la",
-      "date": "2026-10-16",
-      "start": null,
-      "kind": "special",
-      "title": "Intuit Dome Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Intuit Dome Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_CNXo2g0"
-    },
-    {
-      "id": "2026-10-17-tm-vvG1IZ_C1J8pIH",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1J8pIH"
     },
     {
       "id": "2026-10-17-espn-kings-401892530",
@@ -1888,26 +1348,6 @@
       "ticketmasterId": "vvG10Z_G9gehI7"
     },
     {
-      "id": "2026-10-19-tm-vvG1IZ_C1J3Jt5",
-      "metroId": "la",
-      "date": "2026-10-19",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours - No Field Access",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1J3Jt5"
-    },
-    {
       "id": "2026-10-19-tm-vv1ke8v0r6GAuZNui",
       "metroId": "la",
       "date": "2026-10-19",
@@ -1946,46 +1386,6 @@
       "crowd": [],
       "sourceId": "ticketmaster",
       "ticketmasterId": "Z7r9jZ1A70kAg"
-    },
-    {
-      "id": "2026-10-19-tm-vvG1IZ_37AOAuJ",
-      "metroId": "la",
-      "date": "2026-10-19",
-      "start": null,
-      "kind": "special",
-      "title": "Los Angeles Coliseum Historic Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "coliseum"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Los Angeles Coliseum Historic Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_37AOAuJ"
-    },
-    {
-      "id": "2026-10-20-tm-vvG1IZ_C1JKUt_",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "09:00",
-      "kind": "special",
-      "title": "SoFi Stadium Tours - No Field Access",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "SoFi Stadium Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_C1JKUt_"
     },
     {
       "id": "2026-10-20-tm-vvG10Z_1hSZGrO",
@@ -2028,26 +1428,6 @@
       "ticketmasterId": "vvG10Z_u1J_FHJ"
     },
     {
-      "id": "2026-10-20-tm-LvZ18QnUooXn9xhNzG1A6",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Stella Lefty",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Stella Lefty",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "LvZ18QnUooXn9xhNzG1A6"
-    },
-    {
       "id": "2026-10-20-tm-vv170Z_FGkU1BKx2",
       "metroId": "la",
       "date": "2026-10-20",
@@ -2086,26 +1466,6 @@
       "crowd": [],
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv1AaZk3vGkdfJcBD"
-    },
-    {
-      "id": "2026-10-20-tm-vvG1IZ_37A-4Cm",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": null,
-      "kind": "special",
-      "title": "Los Angeles Coliseum Historic Tours",
-      "place": {
-        "type": "venue",
-        "venueId": "coliseum"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Los Angeles Coliseum Historic Tours",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_37A-4Cm"
     }
   ],
   "forecasts": [
@@ -2167,7 +1527,7 @@
       "date": "2026-10-07",
       "start": "18:30",
       "read": {
-        "rating": 7.5,
+        "rating": 5.3,
         "method": "nearby"
       }
     },
@@ -2176,7 +1536,7 @@
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 7.5,
+        "rating": 5.3,
         "friction": "Moderate",
         "why": "Bruno Mars 28 mi away, same hours.",
         "method": "formula"
@@ -2187,7 +1547,7 @@
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 7.5,
+        "rating": 5.3,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -2198,31 +1558,9 @@
       "date": "2026-10-07",
       "start": "19:30",
       "read": {
-        "rating": 7.5,
+        "rating": 5.3,
         "friction": "Moderate",
         "why": "Bruno Mars next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-07-tm-vvG10Z_CNXCTVT",
-      "date": "2026-10-07",
-      "start": null,
-      "read": {
-        "rating": 7.5,
-        "friction": "Low",
-        "why": "Bruno Mars 0.6 mi away, back to back.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-vvG1IZ_C1JkkEz",
-      "date": "2026-10-08",
-      "start": "09:00",
-      "read": {
-        "rating": 5.5,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -2231,7 +1569,7 @@
       "date": "2026-10-08",
       "start": "19:00",
       "read": {
-        "rating": 5.5,
+        "rating": 3.1,
         "method": "nearby"
       }
     },
@@ -2240,18 +1578,7 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 5.5,
-        "friction": "Moderate",
-        "why": "Alex Warren and Chayanne next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-LvZ18QIWpy3xLY_QCF3xP",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "read": {
-        "rating": 5.5,
+        "rating": 3.1,
         "friction": "Moderate",
         "why": "Chayanne and Empire of the Sun 28 mi away, same hours.",
         "method": "formula"
@@ -2262,9 +1589,9 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 5.5,
+        "rating": 3.1,
         "friction": "Moderate",
-        "why": "Alex Warren and Chayanne 6.3 mi away, same hours.",
+        "why": "Chayanne and Lakers vs. Sacramento Kings 34 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2273,42 +1600,9 @@
       "date": "2026-10-08",
       "start": "20:00",
       "read": {
-        "rating": 5.5,
-        "friction": "Moderate",
-        "why": "Alex Warren and Empire of the Sun 28 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-vvG1IZ_unqW98C",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "read": {
-        "rating": 5.5,
-        "friction": "Heavy",
-        "why": "Alex Warren and Chayanne 7.5 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-vvG10Z_CNX2Lg6",
-      "date": "2026-10-08",
-      "start": null,
-      "read": {
-        "rating": 5.5,
-        "friction": "Moderate",
-        "why": "Alex Warren and Chayanne 8.0 mi away, back to back.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG1IZ_C1J6kEW",
-      "date": "2026-10-09",
-      "start": "09:00",
-      "read": {
-        "rating": 7.2,
+        "rating": 3.1,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Empire of the Sun and Lakers vs. Sacramento Kings 34 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2317,7 +1611,7 @@
       "date": "2026-10-09",
       "start": "17:00",
       "read": {
-        "rating": 7.2,
+        "rating": 6.8,
         "friction": "Low",
         "why": "Sombr and The Neighbourhood 28 mi away, same hours.",
         "method": "formula"
@@ -2328,7 +1622,7 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 7.2,
+        "rating": 6.8,
         "friction": "Heavy",
         "why": "Sombr and Mac DeMarco 29 mi away, same hours.",
         "method": "formula"
@@ -2339,7 +1633,7 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 7.2,
+        "rating": 6.8,
         "method": "nearby"
       }
     },
@@ -2348,7 +1642,7 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 7.2,
+        "rating": 6.8,
         "friction": "Heavy",
         "why": "Dodgers vs. Braves and Sombr 4.5 mi away, same hours.",
         "method": "formula"
@@ -2359,7 +1653,7 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 7.2,
+        "rating": 6.8,
         "friction": "Heavy",
         "why": "Sombr and The Neighbourhood 34 mi away, same hours.",
         "method": "formula"
@@ -2370,7 +1664,7 @@
       "date": "2026-10-09",
       "start": "19:30",
       "read": {
-        "rating": 7.2,
+        "rating": 6.8,
         "friction": "Heavy",
         "why": "The Neighbourhood and Mac DeMarco 29 mi away, same hours.",
         "method": "formula"
@@ -2381,40 +1675,9 @@
       "date": "2026-10-09",
       "start": "20:00",
       "read": {
-        "rating": 7.2,
+        "rating": 6.8,
         "friction": "Heavy",
         "why": "Dodgers vs. Braves and Sombr 10 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-1Ae0Z_8GkVW6-Bw",
-      "date": "2026-10-09",
-      "start": "21:00",
-      "read": {
-        "rating": 7.2,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG10Z_CNX2RgG",
-      "date": "2026-10-09",
-      "start": null,
-      "read": {
-        "rating": 7.2,
-        "friction": "Moderate",
-        "why": "Dodgers vs. Braves 11 mi away, back to back.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1IZ_C1JFpIF",
-      "date": "2026-10-10",
-      "start": "09:00",
-      "read": {
-        "rating": 7.7,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -2423,19 +1686,10 @@
       "date": "2026-10-10",
       "start": "19:00",
       "read": {
-        "rating": 7.7,
+        "rating": 7.1,
         "friction": "Heavy",
         "why": "Jack Johnson 11 mi away, same hours.",
         "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vv170Z_kGkSyeRmF",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "read": {
-        "rating": 7.7,
-        "method": "nearby"
       }
     },
     {
@@ -2443,7 +1697,7 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.7,
+        "rating": 7.1,
         "friction": "Heavy",
         "why": "Jungle and TLC 2.3 mi away, same hours.",
         "method": "formula"
@@ -2454,20 +1708,9 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.7,
+        "rating": 7.1,
         "friction": "Heavy",
         "why": "Jungle and LAFC vs. Vancouver 8.0 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1iZ_erLbePZ",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "read": {
-        "rating": 7.7,
-        "friction": "Heavy",
-        "why": "Jungle and LAFC vs. Vancouver 20 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2476,7 +1719,7 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.7,
+        "rating": 7.1,
         "friction": "Heavy",
         "why": "Sombr 11 mi away, same hours.",
         "method": "formula"
@@ -2487,7 +1730,7 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.7,
+        "rating": 7.1,
         "friction": "Extreme",
         "why": "Jungle and LAFC vs. Vancouver 5.5 mi away, same hours.",
         "method": "formula"
@@ -2498,7 +1741,7 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.7,
+        "rating": 7.1,
         "friction": "Extreme",
         "why": "Jungle and LAFC vs. Vancouver 5.5 mi away, same hours.",
         "method": "formula"
@@ -2509,7 +1752,7 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.7,
+        "rating": 7.1,
         "friction": "Extreme",
         "why": "Jungle and LAFC vs. Vancouver 7.5 mi away, same hours.",
         "method": "formula"
@@ -2520,7 +1763,7 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.7,
+        "rating": 7.1,
         "friction": "Heavy",
         "why": "LAFC vs. Vancouver and TLC 2.3 mi away, same hours.",
         "method": "formula"
@@ -2531,7 +1774,7 @@
       "date": "2026-10-11",
       "start": "13:05",
       "read": {
-        "rating": 3.4,
+        "rating": 2.7,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -2542,7 +1785,7 @@
       "date": "2026-10-11",
       "start": "18:30",
       "read": {
-        "rating": 3.4,
+        "rating": 2.7,
         "method": "nearby"
       }
     },
@@ -2551,9 +1794,9 @@
       "date": "2026-10-11",
       "start": "19:00",
       "read": {
-        "rating": 3.4,
+        "rating": 2.7,
         "friction": "Moderate",
-        "why": "Palace and Chargers vs. Broncos 2.5 mi away, same hours.",
+        "why": "Rain in the forecast at a 7:00 pm start.",
         "method": "formula"
       }
     },
@@ -2562,20 +1805,9 @@
       "date": "2026-10-11",
       "start": "19:20",
       "read": {
-        "rating": 3.4,
+        "rating": 2.7,
         "friction": "Heavy",
         "why": "Jack Johnson 2.5 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-11-tm-vvG10Z_CNX82g_",
-      "date": "2026-10-11",
-      "start": null,
-      "read": {
-        "rating": 3.4,
-        "friction": "Low",
-        "why": "Jack Johnson and Chargers vs. Broncos 12 mi away, back to back.",
         "method": "formula"
       }
     },
@@ -2584,9 +1816,9 @@
       "date": "2026-10-12",
       "start": "17:15",
       "read": {
-        "rating": 3.9,
+        "rating": 2.8,
         "friction": "Low",
-        "why": "Los Angeles Coliseum Historic Tours and Brandi Carlile 5.1 mi away, back to back.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -2595,41 +1827,8 @@
       "date": "2026-10-12",
       "start": "19:00",
       "read": {
-        "rating": 3.9,
+        "rating": 2.8,
         "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-12-tm-LvZ18Qn3AipYC1El7HbPQ",
-      "date": "2026-10-12",
-      "start": "19:30",
-      "read": {
-        "rating": 3.9,
-        "friction": "Moderate",
-        "why": "Rams vs. Bills 7.4 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-12-tm-vvG1IZ_37Aq4Gq",
-      "date": "2026-10-12",
-      "start": null,
-      "read": {
-        "rating": 3.9,
-        "friction": "Moderate",
-        "why": "Rain in the forecast.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-13-tm-vvG1IZ_C1J5UIN",
-      "date": "2026-10-13",
-      "start": "09:00",
-      "read": {
-        "rating": 10,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
-        "method": "formula"
       }
     },
     {
@@ -2637,8 +1836,8 @@
       "date": "2026-10-13",
       "start": "18:45",
       "read": {
-        "rating": 10,
-        "friction": "Heavy",
+        "rating": 2.7,
+        "friction": "Moderate",
         "why": "Kings vs. Oilers 28 mi away, same hours.",
         "method": "formula"
       }
@@ -2648,64 +1847,9 @@
       "date": "2026-10-13",
       "start": "19:30",
       "read": {
-        "rating": 10,
-        "friction": "Heavy",
-        "why": "Ducks vs. Flames 28 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-13-tm-LvZ18QnUux3XmaiLo-FcX",
-      "date": "2026-10-13",
-      "start": "19:30",
-      "read": {
-        "rating": 10,
+        "rating": 2.7,
         "friction": "Moderate",
-        "why": "Kings vs. Oilers and Ducks vs. Flames next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-13-tm-vvG1iZ_2SFMfYD",
-      "date": "2026-10-13",
-      "start": "19:30",
-      "read": {
-        "rating": 10,
-        "friction": "Heavy",
-        "why": "Social Distortion and Kings vs. Oilers 20 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-13-tm-vvG1iZ_2SK5P6b",
-      "date": "2026-10-13",
-      "start": "19:30",
-      "read": {
-        "rating": 10,
-        "friction": "Heavy",
-        "why": "Social Distortion and Kings vs. Oilers 20 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-13-tm-vvG1IZ_37ArPGH",
-      "date": "2026-10-13",
-      "start": null,
-      "read": {
-        "rating": 10,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-14-tm-vvG1IZ_C1JGUII",
-      "date": "2026-10-14",
-      "start": "09:00",
-      "read": {
-        "rating": 5.2,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Ducks vs. Flames 28 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2714,7 +1858,7 @@
       "date": "2026-10-14",
       "start": "19:00",
       "read": {
-        "rating": 5.2,
+        "rating": 4.2,
         "method": "nearby"
       }
     },
@@ -2723,9 +1867,9 @@
       "date": "2026-10-14",
       "start": "19:30",
       "read": {
-        "rating": 5.2,
+        "rating": 4.2,
         "friction": "Moderate",
-        "why": "LA Galaxy vs. Portland and Lucky Daye 7.3 mi away, same hours.",
+        "why": "LA Galaxy vs. Portland and LAFC vs. Austin 7.3 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2734,7 +1878,7 @@
       "date": "2026-10-14",
       "start": "19:30",
       "read": {
-        "rating": 5.2,
+        "rating": 4.2,
         "friction": "Moderate",
         "why": "LAFC vs. Austin 10 mi away, same hours.",
         "method": "formula"
@@ -2745,31 +1889,9 @@
       "date": "2026-10-14",
       "start": "19:30",
       "read": {
-        "rating": 5.2,
+        "rating": 4.2,
         "friction": "Moderate",
         "why": "LA Galaxy vs. Portland 10 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-14-tm-LvZ18Qn3FkZ7b9kgZzu2y",
-      "date": "2026-10-14",
-      "start": "19:30",
-      "read": {
-        "rating": 5.2,
-        "friction": "Moderate",
-        "why": "LA Galaxy vs. Portland and LAFC vs. Austin 12 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG1IZ_C1JCkIi",
-      "date": "2026-10-15",
-      "start": "09:00",
-      "read": {
-        "rating": 5.8,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -2778,8 +1900,8 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 5.8,
-        "friction": "Heavy",
+        "rating": 4.3,
+        "friction": "Moderate",
         "why": "Phil Wickham next door, same hours.",
         "method": "formula"
       }
@@ -2789,7 +1911,7 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 5.8,
+        "rating": 4.3,
         "method": "nearby"
       }
     },
@@ -2798,8 +1920,8 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 5.8,
-        "friction": "Heavy",
+        "rating": 4.3,
+        "friction": "Moderate",
         "why": "Phil Wickham next door, same hours.",
         "method": "formula"
       }
@@ -2809,19 +1931,8 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 5.8,
+        "rating": 4.3,
         "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-LvZ18QO_vQVmGCOZJgENE",
-      "date": "2026-10-15",
-      "start": "19:30",
-      "read": {
-        "rating": 5.8,
-        "friction": "Moderate",
-        "why": "Phil Wickham and Phil Wickham 28 mi away, same hours.",
-        "method": "formula"
       }
     },
     {
@@ -2829,9 +1940,9 @@
       "date": "2026-10-15",
       "start": "19:30",
       "read": {
-        "rating": 5.8,
+        "rating": 4.3,
         "friction": "Moderate",
-        "why": "Isaiah Rashad and Phil Wickham 6.3 mi away, same hours.",
+        "why": "Phil Wickham and Phil Wickham 34 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2840,31 +1951,9 @@
       "date": "2026-10-15",
       "start": "20:00",
       "read": {
-        "rating": 5.8,
-        "friction": "Heavy",
-        "why": "Isaiah Rashad and Phil Wickham 7.5 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG10Z_CNX8Rgr",
-      "date": "2026-10-15",
-      "start": null,
-      "read": {
-        "rating": 5.8,
+        "rating": 4.3,
         "friction": "Moderate",
-        "why": "Isaiah Rashad and Phil Wickham 8.0 mi away, back to back.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-16-tm-vvG1IZ_C1J2kIw",
-      "date": "2026-10-16",
-      "start": "09:00",
-      "read": {
-        "rating": 5.2,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Phil Wickham and Phil Wickham 28 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2873,8 +1962,8 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 5.2,
-        "friction": "Heavy",
+        "rating": 4.7,
+        "friction": "Moderate",
         "why": "Lakers vs. Nuggets 28 mi away, same hours.",
         "method": "formula"
       }
@@ -2884,7 +1973,7 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 5.2,
+        "rating": 4.7,
         "friction": "Moderate",
         "why": "Ducks vs. Bruins 28 mi away, same hours.",
         "method": "formula"
@@ -2895,7 +1984,7 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 5.2,
+        "rating": 4.7,
         "friction": "Moderate",
         "why": "Juanes and Lakers vs. Nuggets 11 mi away, same hours.",
         "method": "formula"
@@ -2906,31 +1995,9 @@
       "date": "2026-10-16",
       "start": "20:00",
       "read": {
-        "rating": 5.2,
+        "rating": 4.7,
         "friction": "Moderate",
         "why": "MILEY and Lakers vs. Nuggets 11 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-16-tm-vvG10Z_CNXo2g0",
-      "date": "2026-10-16",
-      "start": null,
-      "read": {
-        "rating": 5.2,
-        "friction": "Moderate",
-        "why": "MILEY and Juanes 12 mi away, back to back.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vvG1IZ_C1J8pIH",
-      "date": "2026-10-17",
-      "start": "09:00",
-      "read": {
-        "rating": 7.8,
-        "friction": "Low",
-        "why": "UCLA vs. Wisconsin 17 mi away, back to back.",
         "method": "formula"
       }
     },
@@ -3076,23 +2143,12 @@
       }
     },
     {
-      "eventId": "2026-10-19-tm-vvG1IZ_C1J3Jt5",
-      "date": "2026-10-19",
-      "start": "09:00",
-      "read": {
-        "rating": 2.3,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-19-tm-vv1ke8v0r6GAuZNui",
       "date": "2026-10-19",
       "start": "19:30",
       "read": {
-        "rating": 2.3,
-        "friction": "Moderate",
+        "rating": 1.4,
+        "friction": "Low",
         "why": "Kacey Musgraves 5.5 mi away, same hours.",
         "method": "formula"
       }
@@ -3102,31 +2158,9 @@
       "date": "2026-10-19",
       "start": "19:30",
       "read": {
-        "rating": 2.3,
+        "rating": 1.4,
         "friction": "Low",
-        "why": "Los Angeles Coliseum Historic Tours 2.3 mi away, back to back.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-19-tm-vvG1IZ_37AOAuJ",
-      "date": "2026-10-19",
-      "start": null,
-      "read": {
-        "rating": 2.3,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vvG1IZ_C1JKUt_",
-      "date": "2026-10-20",
-      "start": "09:00",
-      "read": {
-        "rating": 4.1,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Dermot Kennedy 5.5 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -3135,7 +2169,7 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 4.1,
+        "rating": 1.4,
         "method": "nearby"
       }
     },
@@ -3144,19 +2178,8 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 4.1,
+        "rating": 1.4,
         "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-LvZ18QnUooXn9xhNzG1A6",
-      "date": "2026-10-20",
-      "start": "19:30",
-      "read": {
-        "rating": 4.1,
-        "friction": "Moderate",
-        "why": "MONSTA X 7.3 mi away, same hours.",
-        "method": "formula"
       }
     },
     {
@@ -3164,9 +2187,9 @@
       "date": "2026-10-20",
       "start": "20:00",
       "read": {
-        "rating": 4.1,
-        "friction": "Moderate",
-        "why": "Stella Lefty and MONSTA X 5.5 mi away, same hours.",
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "MONSTA X 11 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -3175,20 +2198,9 @@
       "date": "2026-10-20",
       "start": "20:00",
       "read": {
-        "rating": 4.1,
-        "friction": "Moderate",
-        "why": "Stella Lefty 7.3 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vvG1IZ_37A-4Cm",
-      "date": "2026-10-20",
-      "start": null,
-      "read": {
-        "rating": 4.1,
+        "rating": 1.4,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Jessie Ware 11 mi away, same hours.",
         "method": "formula"
       }
     }
