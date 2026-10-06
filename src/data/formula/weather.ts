@@ -236,6 +236,22 @@ function rowAt(hourly: Hourly, index: number, base: Omit<WeatherRow, 'feelsLikeF
   };
 }
 
+/** Open-Meteo drops a connection now and then; one dropped call must not end the nightly run. Three tries, backing off. */
+async function fetchSteady(url: string): Promise<Response> {
+  let last: unknown;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    if (attempt) await new Promise((resolve) => setTimeout(resolve, attempt * 4000));
+    try {
+      const res = await fetchSteady(url);
+      if (res.ok || (res.status < 500 && res.status !== 429)) return res;
+      last = new Error(`Open-Meteo ${res.status}`);
+    } catch (err) {
+      last = err;
+    }
+  }
+  throw last instanceof Error ? last : new Error(String(last));
+}
+
 /**
  * Fetch one point for one date and return the rows for the hours asked.
  * Past dates use the reanalysis archive; today and later use the forecast.
@@ -271,7 +287,7 @@ export async function fetchWeather(
     params.set('end_date', date);
     url = `https://api.open-meteo.com/v1/forecast?${params}`;
   }
-  const res = await fetch(url);
+  const res = await fetchSteady(url);
   if (!res.ok) throw new Error(`Open-Meteo ${res.status} for ${venueId} ${date}`);
   const body = (await res.json()) as { hourly?: Hourly };
   const hourly = body.hourly;
@@ -326,7 +342,7 @@ export async function fetchWeatherDays(
     end_date: endDate,
   });
   const url = basis === 'reanalysis' ? `https://archive-api.open-meteo.com/v1/archive?${params}` : `https://api.open-meteo.com/v1/forecast?${params}`;
-  const res = await fetch(url);
+  const res = await fetchSteady(url);
   if (!res.ok) throw new Error(`Open-Meteo ${res.status} for city days ${startDate}..${endDate}`);
   const body = (await res.json()) as { daily?: Daily };
   const d = body.daily;
