@@ -171,6 +171,8 @@ export interface CrowdEvent {
   occasionFacts?: OccasionFacts;
   /** Invite-only (an awards show, a convention): counts for Gridlock, never Crowd fight. */
   invited?: boolean;
+  /** The TV station carrying it, when the schedule names one ("ESPN", "SportsNet LA"). A fact, never an input. */
+  broadcast?: string;
   /** Crowd is evidence, never an input to the rating. */
   crowd: CrowdFigure[];
   /**
@@ -357,6 +359,19 @@ export interface Entry {
   notable?: string;
   /** Private. Kept off the night row, the share card, and the map. */
   note?: string;
+  /** Who you went with. Private, like the note. */
+  with?: string;
+  /** A few lines in your words (Kylie, Oct 6: Letterboxd-style, no stars). Follows your visibility switch. */
+  review?: string;
+  /** Link to the setlist, for shows. */
+  setlistUrl?: string;
+  /** The TV station, typed in when the schedule didn't name one. */
+  tv?: string;
+  /**
+   * Set when this hand-typed night was also suggested as a catalog event
+   * (a big room). Lets the entry link up once the event is seeded.
+   */
+  suggestionId?: string;
   away?: boolean;
   /** A neutral site, such as a Final Four. Not either team's home city. */
   neutralSite?: boolean;

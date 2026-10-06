@@ -24,7 +24,14 @@ export interface CountRow {
 export interface LabeledFact {
   label: string;
   value: string;
+  /** Shown as a link when set (the setlist). */
+  href?: string;
+  /** Only the owner ever sees it (the note, who you went with). */
+  private?: boolean;
 }
+
+/** The fields a person can write on their own entry. Nothing here touches the read. */
+export type EntryEdit = Pick<Entry, 'review' | 'result' | 'starter' | 'promo' | 'notable' | 'setlistUrl' | 'tv' | 'with' | 'note'>;
 
 export interface LogStats {
   /** Log entries, not unique evenings. */
@@ -173,8 +180,60 @@ export function entryFacts(entry: Entry, scope: 'all' | 'before' = 'all'): Label
   if (entry.starter) facts.push({ label: 'Starter', value: entry.starter });
   if (entry.promo) facts.push({ label: 'Promo', value: entry.promo });
   if (entry.notable) facts.push({ label: 'Notable', value: entry.notable });
+  if (entry.tv) facts.push({ label: 'TV', value: entry.tv });
+  if (entry.setlistUrl) facts.push({ label: 'Setlist', value: setlistName(entry.setlistUrl), href: entry.setlistUrl });
   if (scope === 'before') return facts.filter((fact) => fact.label === 'Starter' || fact.label === 'Promo');
   return facts;
+}
+
+/** The owner's view of their own entry: the facts, then the private pair. Type is said in the header. */
+export function ownEntryFacts(entry: Entry): LabeledFact[] {
+  const facts = entryFacts(entry).filter((fact) => fact.label !== 'Type');
+  if (entry.with) facts.push({ label: 'With', value: entry.with, private: true });
+  if (entry.note) facts.push({ label: 'Note', value: entry.note, private: true });
+  return facts;
+}
+
+function setlistName(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return 'Link';
+  }
+}
+
+/** A game asks for the score and the starter; a show asks for the setlist. */
+export function entryFieldsFor(kind: Entry['kind']): (keyof EntryEdit)[] {
+  const game = kind === 'game';
+  return [
+    'review',
+    ...(game ? (['result', 'starter', 'promo'] as const) : []),
+    'notable',
+    ...(game ? [] : (['setlistUrl'] as const)),
+    'tv',
+    'with',
+    'note',
+  ];
+}
+
+/** Write the person's own fields on one entry. Blank values clear the field. The stamp is untouched. */
+export function updateEntry(entryId: string, edit: EntryEdit) {
+  const added = snapshot.added.map((entry) => {
+    if (entry.id !== entryId) return entry;
+    const next: Entry = { ...entry };
+    for (const key of Object.keys(edit) as (keyof EntryEdit)[]) {
+      const value = edit[key]?.trim();
+      if (value) next[key] = value;
+      else delete next[key];
+    }
+    return next;
+  });
+  commit({ ...snapshot, added });
+}
+
+/** Take an entry out of the log. For a linked night this is the same as un-tapping Attended. */
+export function removeEntry(entryId: string) {
+  commit({ ...snapshot, added: snapshot.added.filter((entry) => entry.id !== entryId) });
 }
 
 /** Facts for an event page. A linked log night supplies anything she wrote down. */

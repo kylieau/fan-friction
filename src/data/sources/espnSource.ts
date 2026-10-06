@@ -56,6 +56,7 @@ interface EspnGame {
     venue?: { fullName?: string };
     competitors: EspnSide[];
     status?: { type?: { name?: string } };
+    broadcasts?: { type?: { shortName?: string }; market?: { type?: string }; media?: { shortName?: string } }[];
     notes?: { headline?: string }[];
     gameNumberOfSeries?: number;
     series?: { gameNumberOfSeries?: number } | { gameNumberOfSeries?: number }[];
@@ -78,6 +79,13 @@ function localParts(iso: string, timeZone: string): { date: LocalDate; time: str
   return { date: `${get('year')}-${get('month')}-${get('day')}`, time: `${get('hour')}:${get('minute')}` };
 }
 
+/** The TV station, national first. Radio and streaming-only rows are skipped. */
+function tvStation(rows: NonNullable<EspnGame['competitions'][number]['broadcasts']> = []): string | undefined {
+  const tv = rows.filter((b) => b.type?.shortName === 'TV' && b.media?.shortName);
+  const pick = tv.find((b) => b.market?.type === 'National') ?? tv[0];
+  return pick?.media?.shortName;
+}
+
 function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null {
   const c = g.competitions[0];
   const home = c?.competitors.find((x) => x.homeAway === 'home');
@@ -95,6 +103,7 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
     : { date: localParts(g.date, 'America/New_York').date, time: null };
   const league = leagueFromPath(t.path);
   const stakes = league ? espnStakes(g, league) : undefined;
+  const broadcast = tvStation(c.broadcasts);
   return {
     id: `${date}-espn-${t.teamId}-${g.id}`,
     metroId: t.metroId,
@@ -103,6 +112,7 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
     kind: 'game',
     title: `${nameOf(home.team)} vs. ${nameOf(away.team)}`,
     ...(stakes ? { stakes } : {}),
+    ...(broadcast ? { broadcast } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: t.sport },
     teams: { home: t.teamId, away: slug(nameOf(away.team)) },

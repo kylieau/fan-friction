@@ -34,9 +34,17 @@ interface MlbGame {
   status: { detailedState: string; startTimeTBD?: boolean };
   venue?: { id: number };
   teams: { home: MlbSide; away: MlbSide };
+  broadcasts?: { name?: string; type?: string; homeAway?: string; isNational?: boolean }[];
 }
 interface MlbSide {
   team: { id?: number; name: string; teamName?: string };
+}
+
+/** The TV station, national first, else the home side's. Radio rows are skipped. */
+function tvStation(rows: MlbGame['broadcasts'] = []): string | undefined {
+  const tv = rows.filter((b) => b.type === 'TV' && b.name);
+  const pick = tv.find((b) => b.isNational) ?? tv.find((b) => b.homeAway === 'home') ?? tv[0];
+  return pick?.name;
 }
 
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -61,8 +69,10 @@ function toEvent(g: MlbGame, metroId: string): CrowdEvent | null {
   const awayName = g.teams.away.team.teamName ?? g.teams.away.team.name;
   const homeName = g.teams.home.team.teamName ?? g.teams.home.team.name;
   const stakes = mlbStakes(g);
+  const broadcast = tvStation(g.broadcasts);
   return {
     id: `${date}-mlb-${g.gamePk}`,
+    ...(broadcast ? { broadcast } : {}),
     metroId,
     date,
     start: g.status.startTimeTBD ? null : time,
@@ -89,7 +99,7 @@ export function loadMlbSchedule(metroId: string, throughDate?: string): Promise<
   const tz = METROS[metroId].timeZone;
   const today = new Date().toLocaleDateString('en-CA', { timeZone: tz });
   const end = throughDate ?? new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
-  const url = `${API}?sportId=1&teamId=${teamIds.join(',')}&startDate=${today}&endDate=${end}&hydrate=team`;
+  const url = `${API}?sportId=1&teamId=${teamIds.join(',')}&startDate=${today}&endDate=${end}&hydrate=team,broadcasts(all)`;
 
   return fetch(url)
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))

@@ -2249,6 +2249,84 @@ button {
   font-style: italic;
 }
 
+.fact-line dt svg {
+  margin-left: 4px;
+  vertical-align: -1px;
+  color: var(--muted);
+}
+
+.fact-line dd a {
+  color: var(--dodger);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ---------- Your layer on an attended night ---------- */
+.entry-layer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.entry-review {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.entry-edit {
+  align-self: flex-start;
+  min-height: 32px;
+  font-size: 14px;
+  color: var(--dodger);
+}
+
+.field-private {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.entry-textarea {
+  padding: 12px 14px;
+  min-height: 0;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.4;
+}
+
+.entry-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.remove-entry {
+  align-self: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.remove-confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.remove-confirm .link-button {
+  font-size: 13px;
+}
+
+.remove-confirm .remove-entry {
+  color: #b00020;
+}
+
 .log-score {
   width: 40px;
   height: 40px;

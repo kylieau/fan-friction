@@ -25,7 +25,8 @@ interface EntryRow {
 
 interface NoteRow {
   entry_id: string;
-  note: string;
+  note: string | null;
+  with_whom?: string | null;
 }
 
 interface PlanRow {
@@ -47,8 +48,10 @@ interface SettingsRow {
 }
 
 function entryRow(userId: string, entry: Entry): EntryRow {
-  const { note: _note, ...data } = entry;
+  // The private pair never rides along in `data`, which approved followers can read.
+  const { note: _note, with: _with, ...data } = entry;
   void _note;
+  void _with;
   return {
     id: entry.id,
     user_id: userId,
@@ -98,18 +101,19 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
       const id = who();
       const [entries, notes, plans, settings] = await Promise.all([
         must<EntryRow[]>(client.from('entries').select('*').eq('user_id', id)),
-        must<NoteRow[]>(client.from('entry_notes').select('entry_id, note').eq('user_id', id)),
+        must<NoteRow[]>(client.from('entry_notes').select('entry_id, note, with_whom').eq('user_id', id)),
         must<PlanRow[]>(client.from('plans').select('*').eq('user_id', id)),
         must<SettingsRow>(client.from('settings').select('*').eq('user_id', id).maybeSingle()),
       ]);
-      const noteFor = new Map((notes ?? []).map((row) => [row.entry_id, row.note]));
+      const privateFor = new Map((notes ?? []).map((row) => [row.entry_id, row]));
       return {
         version: 1,
         hiddenSeedIds: settings?.hidden_seed_ids ?? EMPTY_LOG.hiddenSeedIds,
         added: (entries ?? []).map((row) => {
           const entry: Entry = { ...row.data, id: row.id };
-          const note = noteFor.get(row.id);
-          if (note) entry.note = note;
+          const priv = privateFor.get(row.id);
+          if (priv?.note) entry.note = priv.note;
+          if (priv?.with_whom) entry.with = priv.with_whom;
           return entry;
         }),
         plans: (plans ?? []).map((row) => ({
@@ -140,14 +144,16 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         await must(client.from('entries').delete().eq('user_id', id).in('id', goneEntries));
       }
 
-      // Private notes: one row per night that has one; remove the rest.
-      const noted = log.added.filter((entry) => entry.note);
+      // Private fields (note, who you went with): one row per night that has either; remove the rest.
+      const noted = log.added.filter((entry) => entry.note || entry.with);
       if (noted.length > 0) {
         await must(
-          client.from('entry_notes').upsert(noted.map((entry) => ({ user_id: id, entry_id: entry.id, note: entry.note! }))),
+          client.from('entry_notes').upsert(
+            noted.map((entry) => ({ user_id: id, entry_id: entry.id, note: entry.note ?? null, with_whom: entry.with ?? null })),
+          ),
         );
       }
-      const noteless = log.added.filter((entry) => !entry.note).map((entry) => entry.id);
+      const noteless = log.added.filter((entry) => !entry.note && !entry.with).map((entry) => entry.id);
       if (noteless.length > 0) {
         await must(client.from('entry_notes').delete().eq('user_id', id).in('entry_id', noteless));
       }

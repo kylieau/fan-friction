@@ -18,6 +18,7 @@ import {
   type CrowdEvent,
 } from '../data';
 import { crowdKind, crowdPoints, showsOnMap, type CrowdPoint } from '../map/crowdPoints';
+import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
 import { FactList } from '../components/FactList';
 import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
@@ -100,6 +101,9 @@ export function EventScreen() {
   const kind = crowdKind(e);
   const stakesLine = quietStakes(e, day.events);
   const logged = yourEntries(log).find((entry) => entry.eventId === e.id);
+  const ahead = e.date >= todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
+  // The station: the schedule's when it names one, else what you wrote down.
+  const tv = e.broadcast ?? logged?.tv;
 
   return (
     <div className="screen page event-page">
@@ -113,8 +117,9 @@ export function EventScreen() {
         <div className="event-sub">
           {me.venueName}
           {e.start ? ` · ${clockTime(e.start)}` : ''}
+          {tv ? ` · ${ahead ? 'On' : 'Was on'} ${tv}` : ''}
         </div>
-        <FactList facts={eventFacts(e, logged)} />
+        <FactList facts={eventFacts(e)} />
         {a && (
           <div className="chip-row">
             <span className="chip chip-occasion">{a.occasion}</span>
@@ -128,7 +133,7 @@ export function EventScreen() {
       </header>
 
       <div className="event-marks">
-        {e.date >= todayIn(METROS[e.metroId] ?? DEFAULT_METRO) ? (
+        {ahead ? (
           <button
             type="button"
             className={`mark-button${isPlanned(e.id, log) ? ' on' : ''}`}
@@ -146,6 +151,7 @@ export function EventScreen() {
             Attended
           </button>
         )}
+        {logged && <EntryLayer entry={logged} />}
       </div>
 
       {a && showFriction(a.friction) && (
@@ -153,7 +159,9 @@ export function EventScreen() {
           <div className="verdict-word">{frictionVerdictTitle(a.friction)}</div>
           <div className="verdict-why">{a.why}</div>
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
-          {a.status === 'formula' && <div className="draft-note">Formula v4 · placeholder numbers until tuned.</div>}
+          {a.status === 'formula' && (
+            <div className="draft-note">{ahead ? 'Forecast' : 'Stamped'} · Formula v4 · placeholder numbers until tuned.</div>
+          )}
         </section>
       )}
 
@@ -199,6 +207,8 @@ export function EventScreen() {
       <MapBack date={date} metroId={e.metroId} className="text-link">
         Back to the map
       </MapBack>
+
+      {logged && <RemoveFromLog entry={logged} />}
     </div>
   );
 }

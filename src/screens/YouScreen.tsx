@@ -30,7 +30,7 @@ import { FactList } from '../components/FactList';
 import { GearIcon } from '../components/Icons';
 import { loggedDateLabel, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
-import { datePath } from '../lib/view';
+import { datePath, eventPath } from '../lib/view';
 
 const TOP = 8;
 
@@ -384,7 +384,7 @@ function EntryRow({ entry, rating }: { entry: Entry; rating: number | null }) {
   if (entry.eventId) {
     return (
       <Link
-        to={datePath(entry.when.sort, entry.metroId ?? DEFAULT_METRO.id, entry.eventId)}
+        to={eventPath(entry.eventId, entry.metroId ?? DEFAULT_METRO.id)}
         className="log-row"
         onClick={() => clearOpenedFromMap()}
       >

@@ -256,8 +256,12 @@ export {
   nextSavedPlan,
   logBackup,
   entryFacts,
+  entryFieldsFor,
+  ownEntryFacts,
   ratingForEntry,
+  removeEntry,
   removePlan,
+  updateEntry,
   settlePassedPlans,
   setYouOrder,
   subscribePersonalLog,
@@ -266,5 +270,5 @@ export {
   upcomingPlans,
   yourEntries,
 } from './personalLog';
-export type { LabeledFact, SyncStatus } from './personalLog';
+export type { EntryEdit, LabeledFact, SyncStatus } from './personalLog';
 export type * from './types';
