@@ -1,6 +1,6 @@
 # Explore proposal (Oct 6, 2026): one day at a time
 
-Kylie's three notes from Oct 5, taken together: show the day's high and low, drop "Next 7 days", and make the week strip a day-by-day carousel like an airline date picker. **Proposal only. Nothing is built until she says.**
+Kylie's three notes from Oct 5, taken together: show the day's high and low, drop "Next 7 days", and make the week strip a day-by-day carousel like an airline date picker. **Kylie, Oct 6:** swipe browses, tap selects (option B). The "Next up" line on an empty day: yes. Range on the date page: pending her answer. Not built yet.
 
 ## Why the map shows no temperature today
 Two causes, both found in the code:
@@ -31,8 +31,8 @@ Proposed: one scrolling row of day cells that snaps a cell at a time. The viewed
 ```
 
 Two ways to read "movement per day", and the recommendation:
-- **A (recommended): swipe selects.** One gesture moves the map a day. Each cell already carries the read, so browsing and choosing are the same act.
-- **B: swipe browses, tap selects**, as Google Flights does. Safer against accidental moves, but every change costs two gestures, and the border would sit on a day that may have scrolled out of view.
+- A: swipe selects. One gesture moves the map a day. Each cell already carries the read, so browsing and choosing are the same act.
+- **B (Kylie's pick, Oct 6): swipe browses, tap selects**, as Google Flights does. Safer against accidental moves. The viewed day keeps its border wherever it scrolls; a small "Today" tap target returns the row when today has scrolled out of view.
 
 Range: scroll freely either way. Reads load as cells arrive. Past days keep their reads back to the seed and the archive.
 
