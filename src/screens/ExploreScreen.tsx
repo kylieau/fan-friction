@@ -21,8 +21,6 @@ export function ExploreSwitch({ view }: { view: ExploreView }) {
     setExploreView(next);
     const nextParams = new URLSearchParams(params);
     nextParams.set('view', next);
-    // The map's "when" span means nothing to the calendar, and vice versa.
-    nextParams.delete('when');
     setParams(nextParams, { replace: true });
   };
   return (

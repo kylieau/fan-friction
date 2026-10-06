@@ -108,6 +108,7 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - Weather at the start hour is the headline; the event page also shows the feels-like range across the event. The date page shows start-hour only.
 
 ## Home and Explore (Oct 5)
+- **Oct 6 (built, local):** the map shows one day only; Next 7 days and the auto-widen are gone (an old `?when=week` link opens the day). The date pill opens the month sheet. The strip is a carousel (swipe browses, tap selects, a Today button when today scrolls away). Map and date headers show the city's feels-like low and high every day; event rows keep the start-hour venue number. An empty day's sheet says "Next up: …". Home's mini map is captioned "This week". Untested on a real phone: the strip's snap and swipe feel.
 - Tonight needs a day with events; the mini map frames every venue that day (zooms out to Anaheim when the Ducks play). Hidden: map chips and credits inside the mini map.
 - Coming up only knows LA home games (MLB, ESPN); away games and concerts arrive with wider sources. Favorites without a catalog record (UCLA WBB, artists) show no upcoming dates yet.
 - Recent shows `result` when the entry has one; live results are a Step 7 leftover.

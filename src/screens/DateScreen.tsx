@@ -6,6 +6,8 @@ import { formatScore, scoreBand, scoreLabel, showFriction } from '../config/scor
 import {
   asMetroDate,
   cityWeather,
+  cityDayRange,
+  rangeLabel,
   feelsLikeLabel,
   isOpenAir,
   weatherForEvent,
@@ -99,7 +101,9 @@ export function DateScreen() {
   const plans = useMemo(() => log.plans.filter((p) => p.date === date && p.metroId === metro.id), [log, date, metro.id]);
   const rating = day?.rating ?? null;
   const locksAt = useMemo(() => stampLocksAt(asMetroDate(metro.id, date, events), metro.timeZone), [metro, date, events]);
-  const cityRow = cityWeather(metro.id, date, events);
+  // The day's feels-like low and high at the city point (Kylie, Oct 6); the hourly number is the fallback for old data.
+  const dayRange = cityDayRange(metro.id, date);
+  const cityRow = dayRange ? undefined : cityWeather(metro.id, date, events);
 
   // The event the gold button acts on: the highlighted one, or the only one.
   const target = events.find((e) => e.id === highlight) ?? (events.length === 1 ? events[0] : undefined);
@@ -148,6 +152,15 @@ export function DateScreen() {
         <h1 className="date-title">{longLocalDate(date).replace(/^[A-Za-z]+, /, '')}</h1>
         <span className="date-city">
           {metro.name}
+          {dayRange && (
+            <>
+              {' · '}
+              <span className="weather-glyph" aria-hidden>
+                {weatherGlyph(dayRange)}
+              </span>{' '}
+              {rangeLabel(dayRange, metro.id)}
+            </>
+          )}
           {cityRow && (
             <>
               {' · '}

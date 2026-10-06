@@ -159,11 +159,11 @@ export function HomeScreen() {
             <h2 id="tonight-heading" className="you-heading">
               {word === 'day' ? 'Today' : 'Tonight'}
             </h2>
-            <Link to={mapPath({ metroId: home.id, date: today, today, when: 'day' })} className="link-more">
+            <Link to={mapPath({ metroId: home.id, date: today, today })} className="link-more">
               Map ›
             </Link>
           </div>
-          <Link to={mapPath({ metroId: home.id, date: today, today, when: 'day' })} className="mini-map" aria-label="Open the map">
+          <Link to={mapPath({ metroId: home.id, date: today, today })} className="mini-map" aria-label="Open the map">
             <BaseMap metro={home} interactive={false}>
               <CrowdLayer points={points} selectedId={null} onSelect={() => {}} />
               <MiniCamera points={points} />
@@ -210,14 +210,14 @@ export function HomeScreen() {
             </Link>
           </div>
           {weekPoints.length > 0 && (
-            <Link to={mapPath({ metroId: home.id, date: today, today, when: 'week' })} className="mini-map" aria-label="Open the map for the next 7 days">
+            <Link to={mapPath({ metroId: home.id, date: today, today })} className="mini-map" aria-label="Open the map">
               <BaseMap metro={home} interactive={false}>
                 <CrowdLayer points={weekPoints} selectedId={null} onSelect={() => {}} />
                 <MiniCamera points={weekPoints} />
               </BaseMap>
               <span className="mini-map-overlay">
                 <span className="mini-map-text">
-                  <span className="mini-map-title">Next 7 days · {weekPoints.length} {weekPoints.length === 1 ? 'event' : 'events'}</span>
+                  <span className="mini-map-title">This week · {weekPoints.length} {weekPoints.length === 1 ? 'event' : 'events'}</span>
                   <span className="mini-map-sub">{home.name}</span>
                 </span>
               </span>
@@ -250,7 +250,7 @@ export function HomeScreen() {
             <h2 id="week-heading" className="you-heading">
               This week
             </h2>
-            <Link to={mapPath({ metroId: home.id, date: today, today, when: 'week' })} className="link-more">
+            <Link to={mapPath({ metroId: home.id, date: today, today })} className="link-more">
               Map ›
             </Link>
           </div>

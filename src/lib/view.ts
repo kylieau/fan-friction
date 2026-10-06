@@ -6,12 +6,8 @@ import { isValidDate, shortLocalDate } from './dates';
 import { getHomeId, subscribeHome } from './homeCity';
 import { getPref, setPref } from './prefs';
 
-/** How wide the map looks around its base date. A rated week shows the average to one decimal. */
-export type WhenSpan = 'day' | 'week';
-
-/** The When pill's words: "Today", "Next 7 days", or "Fri, Oct 25". */
-export function whenLabel(span: WhenSpan, isToday: boolean, date: string): string {
-  if (span === 'week') return 'Next 7 days';
+/** The date pill's words: "Today" or "Fri, Oct 25". The map shows one day (Kylie, Oct 6: no Next 7 days). */
+export function dateLabel(isToday: boolean, date: string): string {
   if (isToday) return 'Today';
   return shortLocalDate(date);
 }
@@ -23,18 +19,17 @@ export function openedMetroId(): string {
 
 /**
  * What the Map is looking at: one place and one date. The header owns the
- * place (the area switcher). The on-map When pill owns the date and how wide
- * to look. The sheet and the map just read them. `when` is null until
- * someone picks Today, a range, or a date. No city in the address means home.
+ * place (the area switcher). The strip and the date pill own the date. The
+ * sheet and the map just read them. No city in the address means home.
  * Until they choose one, that is Los Angeles. Other places are real metros
  * from her log, not a row per venue. Naming a city here does not change home.
+ * An old `when=week` address opens the day; the map no longer widens.
  */
 export interface View {
   metro: Metro;
   date: string;
   today: string;
   isToday: boolean;
-  when: WhenSpan | null;
 }
 
 export function useView(): View {
@@ -45,18 +40,16 @@ export function useView(): View {
   const today = todayIn(metro);
   const rawDate = params.get('date');
   const date = rawDate && isValidDate(rawDate) ? rawDate : today;
-  const rawWhen = params.get('when');
-  const when: WhenSpan | null = rawWhen === 'day' || rawWhen === 'week' ? rawWhen : null;
-  return { metro, date, today, isToday: date === today, when };
+  return { metro, date, today, isToday: date === today };
 }
 
-/** The map address for one place, one base date, and how wide to look. */
-export function mapPath(opts: { metroId: string; date: string; today: string; when: WhenSpan }): string {
+/** The map address for one place and one date. */
+export function mapPath(opts: { metroId: string; date: string; today: string }): string {
   const params = new URLSearchParams();
   if (opts.metroId !== openedMetroId()) params.set('metro', opts.metroId);
   if (opts.date !== opts.today) params.set('date', opts.date);
-  params.set('when', opts.when);
-  return `/explore?${params.toString()}`;
+  const q = params.toString();
+  return `/explore${q ? `?${q}` : ''}`;
 }
 
 /**

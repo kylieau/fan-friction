@@ -3,13 +3,13 @@ import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-do
 import { areaMetros, DEFAULT_METRO, METROS, type Metro } from '../config/metros';
 import {
   cityWeather,
+  cityDayRange,
   feelsLikeLabel,
+  rangeLabel,
   weatherGlyph,
   getCityDate,
   metrosWithEvents,
-  getEventsBetween,
   getPersonalLog,
-  getRatedDates,
   getUpcoming,
   nextSavedPlan,
   subscribePersonalLog,
@@ -32,28 +32,15 @@ import { sheetBadges } from '../lib/chips';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
-import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
+import { clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { getHomeId, setHomeId } from '../lib/homeCity';
-import { mapPath, datePath, openedMetroId, useView, whenLabel, type WhenSpan } from '../lib/view';
+import { mapPath, datePath, openedMetroId, useView, dateLabel } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 
 type Mode = 'crowds' | 'traffic';
-
-const LOOKAHEAD_DAYS = 7;
-
-/** Mean of the days from start through end that already have a rating. Unrated days are left out. */
-function averageRating(start: string, end: string, rated: ReadonlyMap<string, number>): number | null {
-  const scores: number[] = [];
-  for (let cursor = start; cursor <= end; cursor = addDays(cursor, 1)) {
-    const score = rated.get(cursor);
-    if (score !== undefined) scores.push(score);
-  }
-  if (scores.length === 0) return null;
-  return scores.reduce((sum, score) => sum + score, 0) / scores.length;
-}
 
 // The map is the screen; the header and the sheet sit on it. Opens on Today, even
 // when it's quiet. A famous night opens here too ("/?date=2024-10-25").
@@ -69,7 +56,7 @@ export function MapScreen() {
     restored.current = saved && saved.href === href ? saved : null;
   }
   const memory = restored.current;
-  const { metro, date, today, isToday, when } = useView();
+  const { metro, date, today, isToday } = useView();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const nextPlan = nextSavedPlan(log);
   useEffect(() => {
@@ -85,21 +72,6 @@ export function MapScreen() {
     };
   }, [metro.id, date]);
 
-  // Everything listed after this date (live feeds only, so only from today on).
-  const canLookAhead = date >= today;
-  const [ahead, setAhead] = useState<CrowdEvent[]>([]);
-  useEffect(() => {
-    let current = true;
-    if (!canLookAhead) {
-      setAhead([]);
-      return;
-    }
-    getEventsBetween(metro.id, date, addDays(date, LOOKAHEAD_DAYS)).then((u) => current && setAhead(u));
-    return () => {
-      current = false;
-    };
-  }, [metro.id, date, canLookAhead]);
-
   const [upcoming, setUpcoming] = useState<CrowdEvent[]>([]);
   useEffect(() => {
     let current = true;
@@ -114,20 +86,9 @@ export function MapScreen() {
   // Under-floor rooms stay in the day's catalog. They are not pins, sheet rows, or part of this count.
   const dayEvents = (shown?.events ?? []).filter(showsOnMap);
 
-  // A blank map is boring, so if this date is empty and nobody has picked When yet,
-  // the map widens to the next 7 days. A pick always wins.
-  // One day shows that day's rating. Next 7 days shows the average of the rated
-  // days in the span, and hides the score when none of them are rated.
-  const weekAhead = useMemo(
-    () => ahead.filter((e) => showsOnMap(e) && e.date <= addDays(date, 7)),
-    [ahead, date],
-  );
-  const autoSpan: WhenSpan = dayEvents.length > 0 ? 'day' : 'week';
-  const span: WhenSpan = when === 'week' ? 'week' : !canLookAhead ? 'day' : (when ?? (shown ? autoSpan : 'day'));
-  const events = useMemo(
-    () => (span === 'day' ? dayEvents : [...dayEvents, ...weekAhead]),
-    [span, dayEvents, weekAhead],
-  );
+  // The map shows one day (Kylie, Oct 6). An empty day stays empty: the strip
+  // shows where the next reads are, and the sheet names the next event.
+  const events = dayEvents;
   // One mark and one card per event. Cards that overlap are dropped; the marks stay.
   const points = useMemo(() => {
     if (!shown || mode !== 'crowds') return [];
@@ -154,32 +115,14 @@ export function MapScreen() {
     setFreezeCamera(false);
   }, [metro.id]);
 
-  const initialWhen = useRef(when);
-  useEffect(() => {
-    if (when === initialWhen.current) return;
-    setFreezeCamera(false);
-  }, [when]);
-
   const select = useCallback((id: string | null) => {
     setFreezeCamera(false);
     setSelectedId(id);
   }, []);
   const selected = events.find((e) => e.id === selectedId) ?? null;
 
-  const [ratedByDate, setRatedByDate] = useState<Map<string, number>>(new Map());
-  useEffect(() => {
-    let current = true;
-    getRatedDates(metro.id).then((rows) => {
-      if (current) setRatedByDate(new Map(rows.map((row) => [row.date, row.rating])));
-    });
-    return () => {
-      current = false;
-    };
-  }, [metro.id]);
-
-  const headerRating =
-    span === 'week' ? averageRating(date, addDays(date, LOOKAHEAD_DAYS), ratedByDate) : rating ? rating.rating : null;
-  const showScore = span === 'day' || headerRating !== null;
+  const headerRating = rating ? rating.rating : null;
+  const showScore = true;
 
   const caption = !shown
     ? ' '
@@ -188,26 +131,29 @@ export function MapScreen() {
       : dayEvents.length === 1
         ? '1 event'
         : `${dayEvents.length} events`;
-  // The city point's evening feels-like, from stored weather. Orientation only; venues have their own.
-  const cityRow = span === 'day' ? cityWeather(metro.id, date, events.filter((e) => e.date === date)) : undefined;
-  const showFeels = cityRow !== undefined;
+  // The city point's feels-like low and high for the day (Kylie, Oct 6), on quiet days too.
+  // Orientation only; venues have their own. The evening hourly number is the fallback for old data.
+  const dayRange = cityDayRange(metro.id, date);
+  const cityRow = dayRange ? undefined : cityWeather(metro.id, date, events);
+  const showFeels = dayRange !== undefined || cityRow !== undefined;
 
   const [bounds, setBounds] = useState<ViewBounds | null>(null);
   useEffect(() => {
     setBounds(null);
-  }, [metro.id, date, span]);
+  }, [metro.id, date]);
   const onMap = useMemo(() => events.filter((event) => eventInBounds(event, bounds)), [events, bounds]);
   const sheetEvents = useMemo(() => orderSheetEvents(onMap, selected), [onMap, selected]);
-  const dateLine = shown ? `${whenLabel(span, isToday, date)} · On the map` : ' ';
-  const pastLabel = span === 'day' ? pastRelativeLabel(date, todayIn(DEFAULT_METRO)) : null;
+  const dateLine = shown ? `${dateLabel(isToday, date)} · On the map` : ' ';
+  const pastLabel = pastRelativeLabel(date, todayIn(DEFAULT_METRO));
+  // An empty day names the next event (Kylie, Oct 6).
+  const nextUp = shown && dayEvents.length === 0 ? upcoming[0] : undefined;
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);
   const topRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
   const areaRef = useRef<HTMLDivElement>(null);
-  const whenRef = useRef<HTMLDivElement>(null);
-  const [menu, setMenu] = useState<'area' | 'when' | null>(null);
+  const [menu, setMenu] = useState<'area' | null>(null);
   // The month sheet: the grid, search and Famous nights over the map (Explore option A).
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -216,7 +162,7 @@ export function MapScreen() {
     if (!menu) return;
     const onPointer = (event: PointerEvent) => {
       const target = event.target as Node;
-      if (areaRef.current?.contains(target) || whenRef.current?.contains(target)) return;
+      if (areaRef.current?.contains(target)) return;
       setMenu(null);
     };
     const onKey = (event: KeyboardEvent) => {
@@ -266,12 +212,10 @@ export function MapScreen() {
         </div>
         <div className="map-header-score">
           <div className="map-header-dateblock">
-            {span === 'day' && (
-              <div className="map-header-date">
-                <span>{headerDate(date, today)}</span>
-                {pastLabel && <span className="map-header-past">{pastLabel}</span>}
-              </div>
-            )}
+            <div className="map-header-date">
+              <span>{headerDate(date, today)}</span>
+              {pastLabel && <span className="map-header-past">{pastLabel}</span>}
+            </div>
             {caption.trim() && <div className="map-header-count">{caption}</div>}
           </div>
           <DateScore
@@ -280,21 +224,18 @@ export function MapScreen() {
             showScore={showScore}
           />
         </div>
-        <DayStrip metro={metro} today={today} date={date} span={span} />
+        <DayStrip metro={metro} today={today} date={date} />
         <div className="map-chrome">
           <div className="map-chrome-left">
-            <div ref={whenRef}>
-              <WhenControl
-                metro={metro}
-                date={date}
-                today={today}
-                isToday={isToday}
-                span={span}
-                open={menu === 'when'}
-                onOpenChange={(next) => setMenu(next ? 'when' : null)}
-                onPickDate={() => setMonthOpen(true)}
-              />
-            </div>
+            <WhenControl date={date} isToday={isToday} onPickDate={() => setMonthOpen(true)} />
+            {showFeels && dayRange && (
+              <div className="map-feels" aria-label={`Feels like ${rangeLabel(dayRange, metro.id)} in ${metro.name}`}>
+                <span className="weather-glyph" aria-hidden>
+                  {weatherGlyph(dayRange)}
+                </span>
+                <span>{rangeLabel(dayRange, metro.id)}</span>
+              </div>
+            )}
             {showFeels && cityRow && (
               <div className="map-feels" aria-label={`Feels like ${feelsLikeLabel(cityRow, metro.id)} in ${metro.name}`}>
                 <span className="weather-glyph" aria-hidden>
@@ -351,6 +292,11 @@ export function MapScreen() {
           >
             <span className="sheet-handle" aria-hidden />
             <div className="sheet-title">{dateLine}</div>
+            {nextUp && (
+              <Link to={mapPath({ metroId: nextUp.metroId, date: nextUp.date, today })} className="sheet-next">
+                Next up: {shortLocalDate(nextUp.date)} · {nextUp.title}
+              </Link>
+            )}
           </div>
 
           {selected && (
@@ -391,7 +337,7 @@ export function MapScreen() {
               ))}
             </ul>
           )}
-          {span === 'day' && upcoming.length > 0 && (
+          {upcoming.length > 0 && (
             <div className="coming-up">
               <div className="section-title">Coming up</div>
               <ul className="event-list">
@@ -401,7 +347,7 @@ export function MapScreen() {
                       event={e}
                       dateEvents={upcoming}
                       showDate
-                      href={mapPath({ metroId: e.metroId, date: e.date, today, when: 'day' })}
+                      href={mapPath({ metroId: e.metroId, date: e.date, today })}
                     />
                   </li>
                 ))}
@@ -415,11 +361,11 @@ export function MapScreen() {
         <MonthSheet
           metro={metro}
           today={today}
-          focus={span === 'day' ? date : null}
+          focus={date}
           onClose={() => setMonthOpen(false)}
           onPick={(picked) => {
             setMonthOpen(false);
-            navigate(mapPath({ metroId: metro.id, date: picked, today, when: 'day' }));
+            navigate(mapPath({ metroId: metro.id, date: picked, today }));
           }}
         />
       )}

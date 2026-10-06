@@ -1,76 +1,16 @@
-import { useId } from 'react';
-import { useNavigate } from 'react-router-dom';
-import type { Metro } from '../config/metros';
 import { ChevronDown } from './Icons';
-import { mapPath, whenLabel, type WhenSpan } from '../lib/view';
-
-interface Props {
-  metro: Metro;
-  date: string;
-  today: string;
-  isToday: boolean;
-  /** The span the map is actually showing: an explicit pick, or the automatic widen. */
-  span: WhenSpan;
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
-  /** Opens the month sheet over the map. */
-  onPickDate: () => void;
-}
+import { dateLabel } from '../lib/view';
 
 /**
- * The one When control, drawn as the on-map pill: Today, Next 7 days,
- * or Pick a date. Each label is only those words: "Today", "Next 7 days",
- * or the picked date.
+ * The date pill on the map: "Today" or "Fri, Oct 9". A tap opens the month
+ * sheet. The old menu (Today / Next 7 days / Pick a date) is gone: the map
+ * shows one day, and the strip is how you look around (Kylie, Oct 6).
  */
-export function WhenControl({ metro, date, today, isToday, span, open, onOpenChange, onPickDate }: Props) {
-  const navigate = useNavigate();
-  const menuId = useId();
-
-  const label = whenLabel(span, isToday, date);
-
-  const go = (nextDate: string, when: WhenSpan) => {
-    navigate(mapPath({ metroId: metro.id, date: nextDate, today, when }));
-    onOpenChange(false);
-  };
-
-  // Next 7 days starts at today when the base date is in the past.
-  const base = date < today ? today : date;
-  const pickedDate = span === 'day' && !isToday;
-
+export function WhenControl({ date, isToday, onPickDate }: { date: string; isToday: boolean; onPickDate: () => void }) {
   return (
-    <div className="when">
-      <button
-        type="button"
-        className="date-button"
-        aria-haspopup="menu"
-        aria-expanded={open}
-        aria-controls={menuId}
-        onClick={() => onOpenChange(!open)}
-      >
-        {label}
-        <ChevronDown />
-      </button>
-      {open && (
-        <div className="when-menu" id={menuId} role="menu" aria-label="When">
-          <button type="button" role="menuitemradio" aria-checked={span === 'day' && isToday} onClick={() => go(today, 'day')}>
-            Today
-          </button>
-          <button type="button" role="menuitemradio" aria-checked={span === 'week'} onClick={() => go(base, 'week')}>
-            Next 7 days
-          </button>
-          <button
-            type="button"
-            role="menuitem"
-            aria-current={pickedDate ? 'date' : undefined}
-            onClick={() => {
-              onOpenChange(false);
-              onPickDate();
-            }}
-          >
-            Pick a date
-          </button>
-        </div>
-      )}
-    </div>
+    <button type="button" className="date-button" aria-label="Pick a date" aria-haspopup="dialog" onClick={onPickDate}>
+      {dateLabel(isToday, date)}
+      <ChevronDown />
+    </button>
   );
 }
