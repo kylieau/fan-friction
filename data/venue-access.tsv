@@ -1,0 +1,44 @@
+venueId	metro	capacity	flagToday	roads500	roads250	freewayM	reliefM	ruleSays	name
+dodger-stadium	la	56000	0	3	0	500	56	1	Dodger Stadium
+crypto-com-arena	la	18910	0	19	7	350	14	0	Crypto.com Arena
+coliseum	la	93607	0	17	3	600	9	0	LA Memorial Coliseum
+bmo-stadium	la	24000	0	16	6	150	8	0	BMO Stadium
+sofi-stadium	la	70240	0	28	5	2300	19	0	SoFi Stadium
+intuit-dome	la	18000	0	13	4	1350	16	0	Intuit Dome
+kia-forum	la	17505	0	26	7	2700	18	0	Kia Forum
+hollywood-bowl	la	17500	1	27	2	300	122	1	Hollywood Bowl
+rose-bowl	la	89702	1	15	4	800	42	1	Rose Bowl
+dignity-health-sports-park	la	30510	0	19	2	1050	20	0	Dignity Health Sports Park
+angel-stadium	la	45517	0	4	0	300	10	0	Angel Stadium
+pauley-pavilion	la	13800	0	15	3	1300	39	0	Pauley Pavilion
+galen-center	la	10258	0	17	6	100	3	0	Galen Center
+honda-center	la	18900	0	8	4	250	6	0	Honda Center
+santa-anita-park	la	26000	0	0	0	1050	14	0	Santa Anita Park
+pomona-dragstrip	la	40000	0	5	2	2050	19	0	In-N-Out Burger Pomona Dragstrip
+weingart-stadium	la	22355	0	27	4	600	44	1	Weingart Stadium
+long-beach-arena	la	14500	0	16	3	750	22	0	Long Beach Arena
+fivepoint-amphitheatre	la	12000	0	2	2	1750	25	0	FivePoint Amphitheatre
+drake-stadium	la	11700	0	14	6	1300	48	0	Drake Stadium
+veterans-memorial-stadium	la	11600	0	14	0	2350	5	0	Veterans Memorial Stadium
+fairplex-grandstand	la	15000	0	2	0	1700	18	0	Fairplex
+titan-stadium	la	10000	0	23	3	400	21	0	Titan Stadium
+pacific-amphitheatre	la	8200	0	12	0	700	8	0	Pacific Amphitheatre
+dhsp-tennis-stadium	la	8000	0	16	2	1000	23	0	Dignity Health Sports Park Tennis Stadium
+anaheim-convention-center	la	7500	0	23	0	1350	6	0	Anaheim Convention Center
+peacock-theater	la	7100	0	22	9	250	15	0	Peacock Theater
+shrine-auditorium	la	6300	0	14	7	350	5	0	Shrine Auditorium
+youtube-theater	la	6000	0	21	8	2200	21	0	YouTube Theater
+greek-theatre	la	5900	1	9	2	2100	101	1	Greek Theatre
+la-tennis-center	la	5800	0	18	7	1150	47	0	Los Angeles Tennis Center
+championship-soccer-stadium	la	5500	0	3	0	1100	14	0	Championship Soccer Stadium
+bren-events-center	la	5430	0	8	2	1250	32	0	Bren Events Center
+walter-pyramid	la	5000	0	15	6	1150	5	0	LBS Financial Credit Union Pyramid
+ohio-stadium	columbus	102780	0	10	3	600	14	0	Ohio Stadium
+citi-field	new-york	41922	0	14	4	250	3	0	Citi Field
+petco-park	san-diego	39860	0	28	13	800	15	0	Petco Park
+t-mobile-park	seattle	47929	0	14	7	200	8	0	T-Mobile Park
+wintrust-arena	chicago	10387	0	19	8	550	17	0	Wintrust Arena
+amalie-arena	tampa	19420	0	38	10	150	15	0	Amalie Arena
+mortgage-matchup-center	phoenix	16795	0	30	9	1750	26	0	Mortgage Matchup Center
+golden-1-center	sacramento	17600	0	21	8	350	13	0	Golden 1 Center
+empire-polo-club	la	125000	0	1	0	>1500	4	0	Empire Polo Club
