@@ -15,7 +15,7 @@ _Last synced: Oct 6, 2026, end of the fourth session. Everything below is commit
 
 **3. `docs/unsized-events.md`**, a running list of events that are listed but feed nobody's friction (Kylie, Oct 6: record them so the gap can be attacked later). Three today: the LA Marathon, the FIFA Fan Festival, the Union Station fan zone.
 
-**New York research (saved, not yet applied):** `docs/new-york-venue-table-answer.md` (33 buildings with capacities, plus a second table of open grounds) and `docs/new-york-city-type-answer.md` (28 car-share rows). The arrival-mode original was delivered as a PDF that is **not in the repo** — what is saved is a transcription; add `new-york-city-type-answer.pdf` beside it when Kylie can supply the file, as Seattle's is saved.
+**New York research (saved, not yet applied):** `docs/new-york-venue-table-answer.md` (33 buildings with capacities, plus a second table of open grounds) and `docs/new-york-city-type-answer.md` (28 car-share rows). The arrival-mode answer came as a PDF Kylie can't put in the repo, so **the markdown transcription is the record** — all 18 pages' substance, including the per-venue transit, parking and event-day tables. There is no `…-answer.pdf` for New York; don't go looking for one.
 
 ## Changes made (this session, all pushed)
 Ours: `src/data/{index,personalLog,read,teams,sources/seedSource}.ts`, `src/data/seed/past2026.ts` (new), `src/screens/{You,Profile,Home,Compare,ManualEntry}Screen.tsx`, `src/screens/FavoritePage.tsx`, `data/weather/{la,san-diego}/` (16 new files), `src/data/weatherIndex.ts` (generated), `docs/{new-york-venue-table-prompt,new-york-city-type-prompt,new-york-venue-table-answer,new-york-city-type-answer,unsized-events}.md`, `BACKLOG.md`.

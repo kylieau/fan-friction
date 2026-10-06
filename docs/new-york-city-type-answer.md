@@ -2,11 +2,14 @@
 
 Run Oct 6, 2026 on `docs/new-york-city-type-prompt.md`. Pasted by Kylie from a
 research model; transcribed here from the delivered PDF ("NY Venue Arrival
-Mode", 18 pages, Oct 6, 2026). **The original PDF is not yet in the repo** —
-add it beside this file as `new-york-city-type-answer.pdf`, the way
-`seattle-venue-table-answer.pdf` is saved, so the source survives in full.
+Mode", 18 pages, Oct 6, 2026). The PDF itself could not be added to the repo (see the note below).
 
 Kept as returned; Claude's checks are at the bottom.
+
+**This transcription is the record.** Kylie has the answer only as a PDF and
+cannot drop the file into the repo, so there is no `…-answer.pdf` beside this
+file the way Seattle has one. Everything substantive from the 18 pages is
+below, including the per-venue access tables. Don't go looking for the PDF.
 
 ---
 
@@ -69,6 +72,57 @@ Event frequency tilts the regional picture toward transit: MSG alone averaged
 | Meadowlands Racetrack | 95% | 5% | — | Estimated | No count. Free parking. Only Hambletonian Day clears 5,000. |
 | Jones Beach Theater | **97%** | 2% | 1% (boat, bike) | Estimated | No count. No rail; the special NICE concert bus no longer runs. Sets the top of the range with PNC. |
 | PNC Bank Arts Center | **97%** | 3% | — | Estimated | No count. Highway venue at Garden State Parkway Exit 116; no rail. |
+
+## Transit, parking and event-day setup, per venue
+
+The prompt asked for these three alongside the car share. They matter for the
+gridlock and hard-access work, not just the mode split: "no parking by design"
+and "one highway exit" are the same facts the egress research needs.
+
+### Manhattan and Brooklyn
+
+| Venue | Transit that serves it, and the walk | Parking | Event-day setup |
+|---|---|---|---|
+| Barclays Center | Atlantic Av–Barclays Ctr (2/3/4/5/B/D/N/Q/R) and LIRR Atlantic Terminal, entrance on the plaza, 1–3 min | **Built with almost none by design:** on-site lot cut from 1,100 to 541 spaces, usually about half full; remote lots with shuttles saw low use | Extra 4 and Q trains and doubled LIRR departures after games; 400 bike spaces; tickets carry transit directions only |
+| Madison Square Garden and Theater | Penn Station directly below (LIRR, NJ Transit, Amtrak, A/C/E, 1/2/3), 0–3 min; 34 St–Herald Sq and PATH 33 St, ~5 min | None on site; private garages | Scheduled service at Penn; peak **$9 congestion toll** for drivers entering before 9 p.m. |
+| Radio City | 47–50 Sts–Rockefeller Ctr (B/D/F/M), 2 min; 49 St (N/Q/R/W) and 5 Av/53 St (E/M), ~5 min | None on site; private garages | Congestion toll as above |
+| Javits Center | 34 St–Hudson Yards (7), 2 min; Penn Station ~12 min; M34/M42/M12/M11/M50 buses; NY Waterway at W 39th St | None for the public; private garages | Show-run hotel shuttles |
+| Maimonides Park / Ford Amphitheater | Coney Island–Stillwell Av (D/F/N/Q), 5 min | Ballpark surface lot plus street parking | Officials urged subway for opening crowds |
+| Wien Stadium | 215 St (1), ~5 min; Inwood–207 St (A), ~10 min | Limited; street parking in Inwood | None found |
+
+### Bronx and Queens
+
+| Venue | Transit that serves it, and the walk | Parking | Event-day setup |
+|---|---|---|---|
+| Yankee Stadium | 161 St–Yankee Stadium (4/B/D), across the street; Metro-North Yankees–E 153 St, ~5 min; Bx6/Bx13 at the gate | Garages built with the stadium averaged **43% full** on game days in 2011; DOT found 90% of drivers park off-street | Express 4 and D stops before games; Metro-North "Yankee Clipper" one-seat trains from the Harlem and New Haven lines; Grand Central shuttles; Hudson Line added stops |
+| Citi Field | Mets–Willets Point (7 local and express), ~2 min; LIRR Mets–Willets Point (Port Washington Branch), ~5 min | Large surface lots **now shrinking** for the Metropolitan Park casino build; Mets push $40 prepaid parking | LIRR every 30 min for games, $5 off day passes in 2026; expanded ferry; shuttle buses from malls; rideshare zone at the Left Field Gate |
+| US Open grounds | Same two stations, ~10 min walk across the boardwalk | Shares Citi Field and park lots; rideshare only at the NY State Pavilion | Extra 7 and LIRR service for two weeks; LIRR also serves from Grand Central Madison |
+| Forest Hills Stadium | Forest Hills–71 Av (E/F/M/R), ~10 min; LIRR Forest Hills, ~5 min | **None at the venue or on nearby residential streets** | LIRR adds Forest Hills stops on Main Line trains before and after shows; NYPD closes Forest Hills Gardens streets |
+| Randall's Island | M35 bus from 125 St/Lexington (one stop); 103 St footbridge, ~20 min walk; ferry for major events | Very limited; $8.50 RFK toll to drive on | Festival ferries from E 35 St; dedicated rideshare zones on the Manhattan side |
+| Carnesecca Arena | Q46 bus on Union Tpke; nearest subway requires a bus | Campus lots | None found |
+
+### New Jersey
+
+| Venue | Transit that serves it, and the walk | Parking | Event-day setup |
+|---|---|---|---|
+| MetLife Stadium | Meadowlands Rail Line from Secaucus Junction (one stop from Penn Station NY), station steps from the gates; **runs only for NFL games and major events** | **~28,000 spaces** in lettered lots around the stadium | Trains every 10–20 min before games, ~2 hours after; the World Cup closed general parking and closed Penn Station to non-ticketholders |
+| Prudential Center | Newark Penn (NJ Transit, PATH, Amtrak, light rail), ~2 blocks; Newark Broad St, ~10 min | Attached garage plus downtown lots | Real-time train boards in the arena; extra late trains when it opened |
+| Sports Illustrated Stadium | Harrison PATH, 3 blocks; NJ Transit to Newark Penn then 2-min PATH | Harrison public lots $15–30; private lots $30+ | Newark Penn shuttle has been suspended for some matches |
+| Liberty State Park | Hudson-Bergen Light Rail (Liberty State Park, Jersey Ave), up to ~1 mile walk; ferries from Manhattan; PATH Grove St + footbridge | None for the public at major events | Extra light rail service; festival ferries and remote-lot shuttles |
+| Meadowlands Racetrack | No regular rail; the Meadowlands station runs only on stadium event days | Free surface lots | None |
+| PNC Bank Arts Center | None at the venue; NJ Transit to Aberdeen–Matawan then cab or shuttle | Large on-site lots, parking fee built into every ticket; space count not published | **Exit 116 is the post-show bottleneck** |
+
+### Long Island, Westchester and Staten Island
+
+| Venue | Transit that serves it, and the walk | Parking | Event-day setup |
+|---|---|---|---|
+| UBS Arena | Elmont–UBS Arena LIRR (full-time, both directions), ~10 min walk or shuttle; shuttles also from Queens Village; NICE N6 | FEIS: 1,900 structured spaces plus ~6,014 in Belmont's North, South and East lots under a shared agreement; **sells out for big events** | Extra event stops on the Hempstead, Huntington and Ronkonkoma branches; the LIRR counted its one-millionth UBS rider in Jan 2025 |
+| Belmont Park | Belmont Park spur station at the grandstand on race days; Elmont–UBS Arena station | ~10,435 surface spaces before the rebuild (FEIS) | 21 extra trains from Penn Station on Stakes day (2018) |
+| Nassau Coliseum | NICE n70/n71/n72 from Hempstead Transit Center (LIRR Hempstead) | Surrounded by surface lots | None found |
+| Jones Beach Theater | **None**; LIRR Freeport or Wantagh, then cab or rideshare | Park fields hold 23,500+ cars in total; concerts use Fields 4 and 5 | None now that the n88 concert bus is gone |
+| Hofstra | Hempstead LIRR then NICE bus on Hempstead Tpke | Campus lots | None found |
+| Westchester County Center | White Plains Metro-North, ~5 min; Bee-Line buses | 700+ spaces in county lots | None found |
+| SIUH Community Park | St. George ferry terminal and Staten Island Railway, ~5 min | Ballpark lot | Free ferry to Whitehall, 24 hours |
 
 ## Where the expected pattern held and broke
 
