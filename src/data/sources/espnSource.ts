@@ -214,6 +214,8 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
             date: event.date,
             sourceId: 'espn',
             status: 'final',
+            ...(event.place.type === 'venue' ? { venueId: event.place.venueId } : {}),
+            ...(event.teams ? { homeTeamId: event.teams.home } : {}),
             home: { name: nameOf(home.team), score: hs },
             away: { name: nameOf(away.team), score: as },
             ...(typeof c.attendance === 'number' && c.attendance > 0 ? { attendance: c.attendance } : {}),

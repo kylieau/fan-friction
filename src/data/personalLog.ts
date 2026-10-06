@@ -11,6 +11,7 @@ import { clearPhoneCopy, isSavingToAccount, mergeLogs, entryStore, readSavedLog,
 import { onAccountChange } from './account';
 import { favoriteKey, favoritesFromLog } from './favorites';
 import { levelPhrase } from './competitions';
+import { scoreLine } from './results';
 import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
@@ -329,10 +330,24 @@ export function removeEntry(entryId: string) {
  * catalog doesn't carry yet. TV is said in the line under the title.
  */
 export function eventFacts(event: CrowdEvent, logged?: Entry): LabeledFact[] {
-  if (logged) return entryFacts(logged).filter((fact) => fact.label !== 'TV');
-  const sport = event.audience.domain === 'sports' ? sportLabel(event.audience.sport) : '';
-  const type = eventTypeLabel(event.kind, sport);
-  return type ? [{ label: 'Type', value: type }] : [];
+  const facts: LabeledFact[] = logged ? entryFacts(logged).filter((fact) => fact.label !== 'TV') : [];
+  // The feed's result wins over anything an entry carried; the entry fills what the feed doesn't have.
+  if (event.result) {
+    const outcome = { label: 'Outcome', value: scoreLine(event.result) };
+    const at = facts.findIndex((fact) => fact.label === 'Outcome');
+    if (at >= 0) facts[at] = outcome;
+    else facts.unshift(outcome);
+  }
+  if (!logged) {
+    const sport = event.audience.domain === 'sports' ? sportLabel(event.audience.sport) : '';
+    const type = eventTypeLabel(event.kind, sport);
+    if (type) facts.push({ label: 'Type', value: type });
+  }
+  if (event.starters && !facts.some((fact) => fact.label === 'Starter')) {
+    const names = [event.starters.home, event.starters.away].filter(Boolean).join(' · ');
+    if (names) facts.push({ label: 'Starters', value: names });
+  }
+  return facts;
 }
 
 function tagFor(teamId: string | undefined, sport: string): { tag: string; side: string } {

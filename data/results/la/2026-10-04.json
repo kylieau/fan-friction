@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-04",
+  "results": [
+    {
+      "eventId": "2026-10-04-mlb-849823",
+      "metroId": "la",
+      "date": "2026-10-04",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "dodger-stadium",
+      "homeTeamId": "dodgers",
+      "home": {
+        "name": "Dodgers",
+        "score": 2
+      },
+      "away": {
+        "name": "Braves",
+        "score": 3
+      },
+      "capturedAt": "2026-10-06T05:16:56.591Z",
+      "attendance": 50729
+    }
+  ]
+}

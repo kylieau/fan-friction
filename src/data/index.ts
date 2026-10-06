@@ -9,6 +9,7 @@ import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/se
 import type { EventSource, RatingSource } from './sources/types';
 import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, DateSearchHit } from './types';
 import { applyFormula } from './formulaRead';
+import { withResults } from './results';
 
 const EVENT_SOURCES: EventSource[] = [seedEvents, mlbEvents, espnEvents];
 const RATING_SOURCES: RatingSource[] = [seedRatings];
@@ -29,7 +30,7 @@ function preferSeed(events: CrowdEvent[]): CrowdEvent[] {
  */
 export async function getCityDate(metroId: string, date: LocalDate): Promise<CityDate> {
   const lists = await Promise.all(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date)));
-  const listed = preferSeed(lists.flat()).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
+  const listed = withResults(preferSeed(lists.flat())).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
   const { events, rating } = applyFormula(metroId, date, listed);
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';
   return { metroId, date, status, events, rating };
@@ -276,6 +277,7 @@ export {
 } from './personalLog';
 export type { EntryEdit, LabeledFact, ManualNight, SyncStatus } from './personalLog';
 export { suggestEvent } from './suggestions';
+export { resultFor, scoreLine } from './results';
 export { COMPETITIONS, LEVELS, SPORTS_MORE, SPORTS_SHOWN, competitionNamed, competitionsFor, divisionChoices, levelPhrase } from './competitions';
 export type { Competition } from './competitions';
 export type * from './types';

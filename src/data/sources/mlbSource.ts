@@ -47,7 +47,8 @@ interface MlbSide {
 function tvStation(rows: MlbGame['broadcasts'] = []): string | undefined {
   const tv = rows.filter((b) => b.type === 'TV' && b.name);
   const pick = tv.find((b) => b.isNational) ?? tv.find((b) => b.homeAway === 'home') ?? tv[0];
-  return pick?.name;
+  // "FOX / FOX ONE" is one carrier listed twice; the first name is the station.
+  return pick?.name?.split(' / ')[0].trim();
 }
 
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -146,6 +147,8 @@ export async function loadMlbFinals(metroId: string, from: LocalDate, through: L
       date: event.date,
       sourceId: 'mlb',
       status: 'final',
+      ...(event.place.type === 'venue' ? { venueId: event.place.venueId } : {}),
+      ...(event.teams ? { homeTeamId: event.teams.home } : {}),
       home: { name: g.teams.home.team.teamName ?? g.teams.home.team.name, score: hs },
       away: { name: g.teams.away.team.teamName ?? g.teams.away.team.name, score: as },
       ...(innings && innings !== scheduled ? { note: `F/${innings}` } : {}),

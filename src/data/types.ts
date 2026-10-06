@@ -212,6 +212,9 @@ export interface GameResult {
   date: LocalDate;
   sourceId: string;
   status: 'final';
+  /** For matching a seeded event whose id differs from the feed's: same date, building and home side. */
+  venueId?: string;
+  homeTeamId?: string;
   home: { name: string; score: number };
   away: { name: string; score: number };
   /** Announced attendance, when the box score carries one. */
