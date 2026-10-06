@@ -47,9 +47,12 @@ interface EspnSide {
 interface EspnGame {
   id: string;
   date: string;
+  /** False when the kickoff isn't set yet; `date` is then a midnight-Eastern placeholder. */
+  timeValid?: boolean;
   season?: { slug?: string };
   seasonType?: { name?: string; abbreviation?: string };
   competitions: {
+    timeValid?: boolean;
     venue?: { fullName?: string };
     competitors: EspnSide[];
     status?: { type?: { name?: string } };
@@ -83,7 +86,13 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
   if (!home || !away || home.team.id !== t.espnId || !venueId) return null;
   if (/postponed|cancel/i.test(c.status?.type?.name ?? '')) return null;
 
-  const { date, time } = localParts(g.date, METROS[t.metroId].timeZone);
+  // No kickoff yet: ESPN sends midnight Eastern as a stand-in. Converting that
+  // to Pacific lands on 9:00 pm the day before, so take the calendar date as
+  // ESPN wrote it (Eastern) and leave the time blank rather than invent one.
+  const timeSet = g.timeValid !== false && c.timeValid !== false;
+  const { date, time } = timeSet
+    ? localParts(g.date, METROS[t.metroId].timeZone)
+    : { date: localParts(g.date, 'America/New_York').date, time: null };
   const league = leagueFromPath(t.path);
   const stakes = league ? espnStakes(g, league) : undefined;
   return {
@@ -106,7 +115,10 @@ const cache = new Map<string, Promise<CrowdEvent[]>>();
 
 async function scheduleFor(t: (typeof ESPN_TEAMS)[number], strict: boolean): Promise<EspnGame[]> {
   // Default is preseason, seasontype=2 is the regular season, seasontype=3 is the postseason.
-  const urls = ['', '?seasontype=2', '?seasontype=3'].map((q) => `${API}/${t.path}/teams/${t.espnId}/schedule${q}`);
+  // Soccer is different: the plain schedule lists only matches already played, and the
+  // season-type queries come back empty. Upcoming fixtures need `fixture=true`.
+  const queries = ['', '?seasontype=2', '?seasontype=3', ...(t.path.startsWith('soccer/') ? ['?fixture=true'] : [])];
+  const urls = queries.map((q) => `${API}/${t.path}/teams/${t.espnId}/schedule${q}`);
   const lists = await Promise.all(
     urls.map(async (u) => {
       try {
@@ -147,7 +159,7 @@ function upcomingFor(metroId: string, strict = false): Promise<CrowdEvent[]> {
       .flat()
       .filter((e): e is CrowdEvent => e !== null && e.date >= today && e.date <= end)
       .filter((e) => !seen.has(e.id) && seen.add(e.id))
-      .sort((a, b) => (a.date + a.start).localeCompare(b.date + b.start));
+      .sort((a, b) => (a.date + (a.start ?? '99:99')).localeCompare(b.date + (b.start ?? '99:99')));
   });
   if (!strict) cache.set(metroId, p);
   return p;
