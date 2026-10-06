@@ -139,3 +139,26 @@ for (const [vid, metro, lat, lng, cap, strained, name] of venues) {
 const out = path.join(root, 'data', 'venue-access.tsv');
 writeFileSync(out, lines.join('\n') + '\n');
 console.log(`Saved ${path.relative(root, out)}.`);
+
+// The index the app reads (venues.ts turns it into the strained flag by the rule).
+const rows = lines.slice(1).map((l) => l.split('\t'));
+const index = `// Hard-access measures per venue, from scripts/venue-access.mjs (the map
+// tiles and a public elevation service). Do not edit by hand; rerun the
+// script when venues are added. The rule that turns these into the
+// "strained" flag lives in venues.ts (docs/hard-access-oct6.md).
+
+export interface VenueAccessRow {
+  venueId: string;
+  /** Highest minus lowest ground, metres, among eight points 500 m out. */
+  reliefM: number;
+  /** Distinct named public streets within 250 m of the building's center. */
+  streets250: number;
+}
+
+export const VENUE_ACCESS: VenueAccessRow[] = [
+${rows.map(([vid, , , , , n250, , rel]) => `  { venueId: '${vid}', reliefM: ${rel}, streets250: ${n250} },`).join('\n')}
+];
+`;
+const indexOut = path.join(root, 'src', 'data', 'venueAccessIndex.ts');
+writeFileSync(indexOut, index);
+console.log(`Saved ${path.relative(root, indexOut)}.`);

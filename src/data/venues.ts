@@ -8,6 +8,7 @@
 // the research's approximation, said so in a comment.
 
 import type { LocalDate, Venue } from './types';
+import { VENUE_ACCESS } from './venueAccessIndex';
 
 export const VENUES: Record<string, Venue> = {
   'dodger-stadium': {
@@ -461,6 +462,22 @@ export function venueNameOn(venue: Venue, date: LocalDate): string {
   let current = venue.names[0].name;
   for (const n of venue.names) if (!n.from || n.from <= date) current = n.name;
   return current;
+}
+
+/**
+ * Hard to get in and out of: a hillside or canyon site with few streets at the
+ * gate (Kylie, Oct 6, 2026; docs/hard-access-oct6.md). Measured, not hand-set:
+ * relief of at least 40 m within 500 m and no more than 4 named public streets
+ * within 250 m, from scripts/venue-access.mjs. A venue the script has not
+ * measured falls back to its hand flag.
+ */
+export const HARD_ACCESS_RELIEF_M = 40;
+export const HARD_ACCESS_MAX_STREETS = 4;
+
+export function isStrained(venue: Venue): boolean {
+  const row = VENUE_ACCESS.find((r) => r.venueId === venue.id);
+  if (!row) return Boolean(venue.strained);
+  return row.reliefM >= HARD_ACCESS_RELIEF_M && row.streets250 <= HARD_ACCESS_MAX_STREETS;
 }
 
 /** The capacity that applied in that year and setup, if one is stored. */

@@ -39,7 +39,11 @@ export interface Venue {
   capacity: Capacity[];
   /** Open-air venues feel the weather; roofed ones mostly don't. */
   roof: 'open' | 'covered' | 'indoor';
-  /** A single-road or hillside site (Hollywood Bowl, Rose Bowl): always a bit harder to reach. Gridlock × 1.25. */
+  /**
+   * Hand flag for a hard-access site, used only when scripts/venue-access.mjs
+   * has not measured the venue. Measured venues use the rule in venues.ts
+   * (`isStrained`). Gridlock × 1.25 in a driving city, × 1.1 in a transit city.
+   */
   strained?: boolean;
 }
 

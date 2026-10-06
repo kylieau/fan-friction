@@ -10,7 +10,7 @@ import { METROS } from '../../config/metros';
 import { milesBetween } from '../../lib/windows';
 import { drawSize, eventFeedsFriction } from '../read';
 import type { CrowdEvent, LngLat } from '../types';
-import { VENUES } from '../venues';
+import { isStrained, VENUES } from '../venues';
 
 const ZONE_MILES = 1.25; // about 2 km
 const NEAR_MILES = 4; // about 12 minutes in a sprawl city
@@ -140,7 +140,13 @@ function activeSeats(events: readonly CrowdEvent[], hour: number): number {
 }
 
 /** Time-of-day background: weekday rush when any arrival window touches 4–7:30 pm; Friday worse; Sunday mornings easier; rain. */
-function backgroundFor(events: readonly CrowdEvent[], date: string, rain: boolean, strained: boolean): number {
+function backgroundFor(
+  events: readonly CrowdEvent[],
+  date: string,
+  rain: boolean,
+  strained: boolean,
+  cityType: 'sprawl' | 'hub' | 'transit',
+): number {
   const day = new Date(`${date}T12:00:00Z`).getUTCDay(); // 0 Sunday … 6 Saturday
   let factor = 1;
   const rush = events.some((e) => {
@@ -150,9 +156,13 @@ function backgroundFor(events: readonly CrowdEvent[], date: string, rain: boolea
   if (day >= 1 && day <= 5 && rush) factor = day === 5 ? 1.4 : 1.3;
   else if (day === 0 && events.every((e) => startHour(e) < 14)) factor = 0.9;
   if (rain) factor *= 1.15;
-  if (strained) factor *= 1.25;
+  // A hard-access site (hillside, few streets) bites hardest where everyone drives (Kylie, Oct 6).
+  // Both numbers are placeholders pending docs/hard-access-weight-prompt.md.
+  if (strained) factor *= HARD_ACCESS_FACTOR[cityType];
   return factor;
 }
+
+const HARD_ACCESS_FACTOR: Record<'sprawl' | 'hub' | 'transit', number> = { sprawl: 1.25, hub: 1.25, transit: 1.1 };
 
 /** Gridlock for one date in a city. `rainy` lists events with rain in their forecast. */
 export function dateGridlock(metroId: string, date: string, events: readonly CrowdEvent[], rainy: ReadonlySet<string> = new Set()): DateGridlock {
@@ -189,8 +199,11 @@ export function dateGridlock(metroId: string, date: string, events: readonly Cro
       normal += spillWeight(other, zone, cityType) * other.largest;
     }
     const rain = mine.some((e) => rainy.has(e.id));
-    const strained = mine.some((e) => e.place.type === 'venue' && VENUES[e.place.venueId]?.strained);
-    const background = backgroundFor(mine, date, rain, strained);
+    const strained = mine.some((e) => {
+      const venue = e.place.type === 'venue' ? VENUES[e.place.venueId] : undefined;
+      return venue ? isStrained(venue) : false;
+    });
+    const background = backgroundFor(mine, date, rain, strained, cityType);
     const ratio = normal > 0 ? (background * peak) / normal : 1;
     const score = Math.max(1, Math.min(10, 1 + SCALE * Math.log2(Math.max(ratio, 0.01))));
     scored.push({ zone, events: mine, load: peak, normal, background, score });
