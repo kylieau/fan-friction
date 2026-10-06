@@ -13,6 +13,7 @@ import { applyFormula } from './formulaRead';
 import { rateDate } from './formula';
 import { withResults } from './results';
 import { withExpectedDraws } from './expectedDraw';
+import './homeSync';
 import { primeDate } from './catalogCache';
 
 // The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.

@@ -15,6 +15,8 @@ export interface Profile {
   displayName: string | null;
   avatarUrl: string | null;
   visibility: Visibility;
+  /** The city the map opens on, kept with the account since Oct 6, 2026 so it follows you to another phone. */
+  homeMetroId: string | null;
 }
 
 export type FollowStatus = 'none' | 'pending' | 'approved';
@@ -31,6 +33,7 @@ interface ProfileRow {
   display_name: string | null;
   avatar_url: string | null;
   visibility: Visibility;
+  home_metro_id?: string | null;
 }
 
 function fromRow(row: ProfileRow): Profile {
@@ -40,6 +43,7 @@ function fromRow(row: ProfileRow): Profile {
     displayName: row.display_name,
     avatarUrl: row.avatar_url,
     visibility: row.visibility,
+    homeMetroId: row.home_metro_id ?? null,
   };
 }
 
@@ -81,6 +85,7 @@ export async function updateMyProfile(changes: {
   displayName?: string;
   handle?: string;
   visibility?: Visibility;
+  homeMetroId?: string | null;
 }): Promise<string | null> {
   const c = supabase();
   const me = getAccount();
@@ -93,6 +98,7 @@ export async function updateMyProfile(changes: {
     patch.handle = handle;
   }
   if (changes.visibility !== undefined) patch.visibility = changes.visibility;
+  if (changes.homeMetroId !== undefined) patch.home_metro_id = changes.homeMetroId;
   const { error } = await c.from('profiles').update(patch).eq('id', me.id);
   if (error) {
     if (error.code === '23505') return 'That link is taken. Try another.';
@@ -214,7 +220,7 @@ export async function friendsEntries(limit = 20): Promise<FriendEntry[]> {
 export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
   {
     example: true,
-    friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, visibility: 'anyone' },
+    friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, visibility: 'anyone', homeMetroId: null },
     entry: {
       id: 'example-entry-1',
       when: { sort: '2026-10-03', label: '', precision: 'day' },
@@ -230,7 +236,7 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
   },
   {
     example: true,
-    friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, visibility: 'anyone' },
+    friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, visibility: 'anyone', homeMetroId: null },
     entry: {
       id: 'example-entry-2',
       when: { sort: '2026-10-02', label: '', precision: 'day' },
@@ -246,7 +252,7 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
   },
   {
     example: true,
-    friend: { id: 'example-3', handle: 'dev', displayName: 'Dev', avatarUrl: null, visibility: 'anyone' },
+    friend: { id: 'example-3', handle: 'dev', displayName: 'Dev', avatarUrl: null, visibility: 'anyone', homeMetroId: null },
     entry: {
       id: 'example-entry-3',
       when: { sort: '2026-09-21', label: '', precision: 'day' },
