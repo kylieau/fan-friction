@@ -19,6 +19,7 @@ import {
 } from '../data';
 import { crowdKind, crowdPoints, showsOnMap, type CrowdPoint } from '../map/crowdPoints';
 import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
+import { SameTour } from '../components/SameTour';
 import { FactList } from '../components/FactList';
 import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
@@ -164,6 +165,8 @@ export function EventScreen() {
           )}
         </section>
       )}
+
+      {ahead && <SameTour event={e} />}
 
       <section className="card crowd-card">
         <div className="crowd-figure">

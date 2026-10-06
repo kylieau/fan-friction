@@ -2385,6 +2385,37 @@ button {
   color: var(--ink2);
 }
 
+/* ---------- Same tour or homestand (event page) ---------- */
+.same-tour {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.same-tour .you-heading {
+  margin: 0;
+}
+
+.same-tour-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  scrollbar-width: none;
+}
+
+.same-tour-cell {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: var(--ink2);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 /* ---------- Side by side (Compare) ---------- */
 .compare-page {
   gap: 14px;

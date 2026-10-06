@@ -112,6 +112,8 @@ export interface OccasionFacts {
   starReturn?: boolean;
   /** A narrower story: a star facing a former team, a playoff rematch, a banner night (Kylie, Oct 5). */
   storyline?: boolean;
+  /** Nights in the same performer's run at this venue within a week, from the listings. Three or more add a point. */
+  run?: number;
 }
 
 /** Where it happens: a venue, a single point (a fan fest) or a route (a parade). */

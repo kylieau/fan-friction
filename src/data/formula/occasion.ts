@@ -31,6 +31,8 @@ function bookingPoints(event: CrowdEvent): number {
 /** True when the same performer plays the same metro three or more times within a week (a two-night stand is ordinary; Kylie, Oct 5). */
 function multiNightRun(event: CrowdEvent): boolean {
   if (!event.performer) return false;
+  // The listings say so directly (Ticketmaster events carry their run); the seed is the fallback.
+  if (event.occasionFacts?.run !== undefined) return event.occasionFacts.run >= 3;
   const [y, m, d] = event.date.split('-').map(Number);
   let count = 0;
   for (let offset = -7; offset <= 7; offset += 1) {

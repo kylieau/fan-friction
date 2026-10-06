@@ -45,14 +45,6 @@ export interface TicketmasterPull {
   pages: number;
 }
 
-function meters(a: [number, number], b: [number, number]): number {
-  const R = 6371000;
-  const dLat = ((b[1] - a[1]) * Math.PI) / 180;
-  const dLng = ((b[0] - a[0]) * Math.PI) / 180;
-  const s = Math.sin(dLat / 2) ** 2 + Math.cos((a[1] * Math.PI) / 180) * Math.cos((b[1] * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
-  return 2 * R * Math.asin(Math.sqrt(s));
-}
-
 /** The venue record a Ticketmaster venue matches, or undefined. */
 function venueFor(metroId: string, v: TmVenue) {
   const ours = Object.values(VENUES).filter((venue) => venue.metroId === metroId);
@@ -85,6 +77,28 @@ function kindOf(segment: string | undefined): CrowdEvent['kind'] | null {
 function addDays(date: LocalDate, days: number): LocalDate {
   const [y, m, d] = date.split('-').map(Number);
   return new Date(Date.UTC(y, m - 1, d + days)).toISOString().slice(0, 10);
+}
+
+/** A performer's nights at one venue within a week of each other: the run each night belongs to. */
+function markRuns(events: CrowdEvent[]) {
+  const groups = new Map<string, CrowdEvent[]>();
+  for (const e of events) {
+    if (!e.performer || e.place.type !== 'venue') continue;
+    const key = `${e.performer.toLowerCase()}|${e.place.venueId}`;
+    groups.set(key, [...(groups.get(key) ?? []), e]);
+  }
+  for (const list of groups.values()) {
+    if (list.length < 2) continue;
+    for (const e of list) {
+      const [y, m, d] = e.date.split('-').map(Number);
+      const t = Date.UTC(y, m - 1, d);
+      const run = list.filter((o) => {
+        const [oy, om, od] = o.date.split('-').map(Number);
+        return Math.abs(Date.UTC(oy, om - 1, od) - t) <= 7 * 86_400_000;
+      }).length;
+      if (run >= 2) e.occasionFacts = { ...(e.occasionFacts ?? {}), run };
+    }
+  }
 }
 
 /** Upcoming listings for one covered city. Throws when the feed can't be read. */
@@ -154,6 +168,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
     await new Promise((resolve) => setTimeout(resolve, 250)); // five a second is the limit
   }
   }
+  markRuns(events);
   return {
     events,
     unknownVenues: [...unknown].map(([name, count]) => ({ name, count })).sort((a, b) => b.count - a.count),
