@@ -17,7 +17,7 @@ Kylie, Oct 6, 2026: Los Angeles is the only city built by hand. Every later city
 
 ## 3. Venues (the hand part, about an afternoon)
 - Run the venue research prompt for the city (`docs/la-venue-table-prompt.md`, change the city and boundary). Fold the answer into `src/data/venues.ts`: names with rename dates, coordinates, capacity by setup and year, roof. Label every figure official, reported or estimated. Geocode coordinates against OpenStreetMap.
-- Save the answer under `docs/` and point `docs/data-sources.md` at it.
+- Save the answer under `docs/` and point `docs/data-sources.md` at it. If it arrived as a PDF, save the PDF too and transcribe it with its links (`node scripts/pdf-text.mjs file.pdf`); a paste in the chat is not a saved source.
 
 ## 4. Run the scripts
 1. `npm run attendance-collect` then `npm run attendance-calibrate`: past crowds and expected draws per team.

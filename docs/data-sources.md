@@ -29,7 +29,7 @@ Kylie, Oct 6, 2026: one file that says where each kind of data is pulled from, s
 
 | Data | File | Sources |
 |---|---|---|
-| Venues: names and rename dates, coordinates, capacity by setup and year, roof, strained access | `src/data/venues.ts` | `docs/la-venue-table-answer.md`, `docs/san-diego-venue-table-answer.md` and `docs/seattle-venue-table-answer.md` (Oct 6, 2026 research, with a link per figure; the Seattle page is condensed from Kylie's PDF), Wikipedia infoboxes for Pauley Pavilion and Galen Center, OpenStreetMap for coordinates. Earlier figures: venue guides and news reports, Oct 1, 2026. |
+| Venues: names and rename dates, coordinates, capacity by setup and year, roof, strained access | `src/data/venues.ts` | `docs/la-venue-table-answer.md`, `docs/san-diego-venue-table-answer.md` and `docs/seattle-venue-table-answer.md` (Oct 6, 2026 research, with a link per figure; Seattle's PDF is saved beside its page), Wikipedia infoboxes for Pauley Pavilion and Galen Center, OpenStreetMap for coordinates. Earlier figures: venue guides and news reports, Oct 1, 2026. |
 | Teams and college programs | `src/data/teams.ts` | league sites; ESPN ids as above |
 | Competitions (leagues, cups) for the Add form | `src/data/competitions.ts` | `docs/sport-list-second-opinion-answer.md` |
 | The 13 hand-rated nights and the Oct 3–4, 2026 LA seeds | `src/data/seed/` | `docs/test-nights-and-ratings.md`, `docs/researched-events.md`; each figure labeled on the event |

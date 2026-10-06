@@ -539,8 +539,9 @@ export const VENUES: Record<string, Venue> = {
     // The field is "Alaska Airlines Field at Husky Stadium"; ESPN and the schedule say Husky Stadium.
     names: [{ name: 'Husky Stadium' }],
     location: [-122.3016, 47.6503],
-    capacity: [{ seats: 72132, setup: 'football', note: 'Washington Huskies (official). Roofs over both sidelines; the ends are open.' }],
-    roof: 'open',
+    capacity: [{ seats: 72132, setup: 'football', note: 'Washington Huskies (official, 2026); 70,083 before (reported)' }],
+    // Cantilever roofs over most sideline seats; the field and ends are open (the research's reading).
+    roof: 'covered',
   },
   'lumen-field': {
     id: 'lumen-field',
@@ -551,7 +552,8 @@ export const VENUES: Record<string, Venue> = {
       { seats: 68740, setup: 'football', note: 'Seahawks (official); expandable to 72,000 for the biggest events' },
       { seats: 37722, setup: 'soccer', note: 'Sounders setup (MLS). The Reign open about 10,000 lower-bowl seats (reported).' },
     ],
-    roof: 'open',
+    // Roof over about 70% of seats; the field is open (the research's reading). Called "Seattle Stadium" for the 2026 World Cup.
+    roof: 'covered',
   },
   't-mobile-park': {
     id: 't-mobile-park',
@@ -559,7 +561,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Safeco Field' }, { name: 'T-Mobile Park', from: '2019-01-01' }],
     location: [-122.3323, 47.5915],
     capacity: [
-      { seats: 47943, setup: 'baseball', note: 'Mariners (official; 47,929 was the older figure)' },
+      { seats: 47943, setup: 'baseball', note: 'Mariners (official, MLB.com 2026; 47,929 was the 2019 figure, 47,715 in 2018)' },
       { seats: 30144, setup: 'football', note: 'One-off football setup (reported)' },
     ],
     // Retractable: an umbrella that closes for rain, with open sides. Closest of the three roof kinds.
@@ -615,8 +617,9 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'KeyArena' }, { name: 'Climate Pledge Arena', from: '2018-10-05' }],
     location: [-122.354, 47.6219],
     capacity: [
-      { seats: 17072, setup: 'basketball', note: 'KeyArena (reported, Wikipedia infobox)' },
-      { seats: 17000, setup: 'concert', note: 'KeyArena (reported, Wikipedia infobox)' },
+      { seats: 17072, setup: 'basketball', note: 'KeyArena (official)' },
+      { seats: 15177, setup: 'hockey', note: 'KeyArena (reported)' },
+      { seats: 16641, setup: 'concert', note: 'KeyArena, end stage (reported); 17,459 in the round' },
       { seats: 18300, setup: 'basketball', fromYear: 2021, note: 'Official' },
       { seats: 17100, setup: 'hockey', fromYear: 2021, note: 'Kraken (official)' },
       { seats: 17200, setup: 'concert', fromYear: 2021, note: 'End stage (official); 18,600 in the round' },
@@ -647,7 +650,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Seattle Center Memorial Stadium' }, { name: 'Memorial Stadium' }],
     // Approximate: the north edge of Seattle Center; OpenStreetMap has no point while the site is a construction zone.
     location: [-122.348, 47.6228],
-    capacity: [{ seats: 12000, note: 'Reported (Wikipedia infobox), before the rebuild' }],
+    capacity: [{ seats: 12000, note: 'Before the rebuild (reported, Wikipedia infobox; the Oct 6, 2026 research could not confirm it). The new stadium: 6,500 seats, 8,000 capacity (official).' }],
     roof: 'open',
   },
   'washington-state-fair-grandstand': {
@@ -658,7 +661,7 @@ export const VENUES: Record<string, Venue> = {
     // Approximate (the research's figure); the fairgrounds in Puyallup.
     location: [-122.2965, 47.1835],
     capacity: [{ seats: 10200, setup: 'concert', note: 'Grandstand concerts during the fair (official)' }],
-    roof: 'open',
+    roof: 'covered',
   },
   'alaska-airlines-arena': {
     id: 'alaska-airlines-arena',
@@ -684,8 +687,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'seattle',
     names: [{ name: 'Emerald Downs' }],
     location: [-122.2357, 47.3303],
-    capacity: [{ seats: 9100, note: 'No published capacity; the track\'s biggest recent crowd (estimated)' }],
-    roof: 'open',
+    capacity: [{ seats: 9100, note: 'No published capacity; the track\'s biggest recent crowd, July 3, 2023 (estimated). Average race day about 3,000.' }],
+    roof: 'covered',
   },
   'evergreen-speedway': {
     id: 'evergreen-speedway',
