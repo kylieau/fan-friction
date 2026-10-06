@@ -13,7 +13,8 @@ docs/direction.md. Read it before making any product decision.
 - Kylie locks decisions. Do not reopen a locked answer unless she does.
 - Flag any new cost with 🚩 and wait for her OK before spending.
 - v1 uses only publicly available data.
-- Events of ~1,000+ attendees can be logged; only 5,000+ affect friction.
+- Anything can be logged by hand (Kylie, Oct 6, 2026). Events of ~1,000+ are what
+  the app pre-lists; only 5,000+ affect friction.
   Rooms under about 5,000 stay off the map.
 - The Map's look is not locked. Propose a Map change, then wait.
 - No points, leaderboards, open posting, public photo walls, or navigation.
@@ -54,7 +55,7 @@ questions when anything is unclear.
 
 The section below is older background. Where it conflicts with `docs/direction.md`, direction.md wins. Where a later lock in `docs/product-review-decisions.md` or `MEMORY_HANDOFF.md` differs from direction.md, the later lock wins.
 Known stale spots: the intro below describes the purpose as answering the
-"fake fans" claim, and says "5k+ events" (now: log at ~1,000+, friction at 5,000+).
+"fake fans" claim, and says "5k+ events" (now: anything by hand, ~1,000+ pre-listed, friction at 5,000+).
 
 
 A personal app that makes it visible how much competition (other 5k+ events the same night, traffic, weather, stakes) shapes attendance, to answer the claim that big-city fans are "fake." Seeded in LA. Formerly called "Crowd Clash" (older docs and wireframes may use that name).
@@ -75,7 +76,7 @@ Home is one city on this device. The first open asks "Where's home?" and lists o
 
 Rooms under about 5,000 stay off the map. A below-floor night can still take a nearby score from bigger events the same night. The Map's look is no longer locked: chips, the sheet, the glow, and the legend can change after a proposal she approves.
 
-The logging-threshold sentence is still open, and parked: direction and `AGENTS.md` say about 1,000+ can be logged; the review says 1,000 only decides what is pre-listed. Famous nights keeps its stamps until they are hand-checked. Product risks are parked. Accounts, when built, are private by default. Tweets stay on hold until access and cost are verified.
+The logging-threshold sentence was locked Oct 6, 2026: anything can be logged by hand; about 1,000+ is pre-listed; 5,000+ feeds friction. Famous nights keeps its stamps until they are hand-checked. Product risks are parked. Accounts, when built, are private by default. Tweets stay on hold until access and cost are verified.
 
 Next is Supabase accounts. Do not connect them until she pastes a project URL and the public anon key. Accounts will also hold home city, favorite teams, and artists. The spec comes from her. Do not invent it. Parked until she asks: You "Did you go?", the Famous nights hand-check and a "Were you there?" title, the logging-threshold wording, Traffic, Night story, the rating formula, Ticketmaster, weather UI, favorite cities, and Nights per city. An empty You log can say "No nights yet. Find one on the map."
 

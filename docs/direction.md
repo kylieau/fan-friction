@@ -123,7 +123,7 @@ Rooms under about 5,000 stay off the map. They can still be logged, and they can
 
 The Map's look is no longer locked. Propose a change, then wait for approval. Nothing already built is deleted. A new cost is flagged with 🚩 and waits for a yes. Kylie locks decisions.
 
-The open questions in the section above (will people log, how often, the name, gridlock outside LA, logging past nights) are parked. They are not a build step. Tweets stay on hold until access and cost are verified. The logging bar in "Which events count" is still an open sentence: this document says about 1,000+ can be logged, and the review says 1,000 only decides what is pre-listed. Do not pick a winner until she does.
+The open questions in the section above (will people log, how often, the name, gridlock outside LA, logging past nights) are parked. They are not a build step. Tweets stay on hold until access and cost are verified. The logging bar in "Which events count" was locked Oct 6, 2026, as the review words it: anything can be logged by hand; about 1,000+ is what the app pre-lists; 5,000+ feeds friction. The 1,000 sentence above is kept as written.
 
 Next is Supabase accounts. Do not connect them until she pastes a project URL and the public anon key. Accounts will also hold home city, favorite teams, and artists. The spec comes from her.
 

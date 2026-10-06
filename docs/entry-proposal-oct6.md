@@ -1,65 +1,80 @@
 # Proposal: the entry you can edit, and nights you type in yourself
 
-Oct 6, 2026. Step 1 of `docs/big-picture-plan-oct6.md`. Nothing here is built. Kylie approves, then it is built in small commits.
+Oct 6, 2026. Step 1 of `docs/big-picture-plan-oct6.md`. Round 1 was reviewed by Kylie the same day; round 2 below carries her changes. Nothing here is built yet.
+
+## Kylie's round-1 answers (Oct 6)
+1. A You row opens the entry, yes, **but** the entry should mostly be the event page's content plus your own layer, and possibly a Letterboxd-style review.
+2. Add the TV station when the event was televised. The event page will need pre-event and post-event forms.
+3. The "+" for adding a night is fine, **but** a big enough hand-typed event might become something other people can see and add.
+4. The logging bar is locked as the review words it: anything by hand; about 1,000+ pre-listed; 5,000+ feeds friction. (`AGENTS.md`, `docs/direction.md` status note and `BACKLOG.md` updated.)
 
 ## The problem
-The log is the product, but an entry today is one tap. Your own migrated nights carry an outcome, a starter, a promo and a note; nobody else can write any of those, and nothing can be changed or removed. And only a listed event can be logged: a club show, an away game or a festival the catalog never heard of has no way in.
+The log is the product, but an entry today is one tap. Kylie's migrated nights carry an outcome, a starter, a promo and a note; nobody else can write any of those, and nothing can be changed or removed. And only a listed event can be logged: a club show, an away game or a festival the catalog never heard of has no way in.
 
-## 1. An entry gets its own page
-Today a You row opens the date page with that event selected. Proposed: a You row opens **the entry**, a page about your night.
+## 1. One page, two tenses, your layer on top
+There is no separate entry page. **The event page is the entry.** A You row opens the event page directly (today it goes to the date page first). Once you've marked Attended, the page grows your layer near the top. A hand-typed night uses the same page with whatever is known.
 
-Top to bottom:
-- Back to You.
-- The title, the date, the venue, the city. Away or Neutral site when it applies.
-- The read: the stamped score and word, with the same tile the date page uses. "Nearby read" when the room is under the floor and the score comes from the big events that night. No tile when there is no read (a 2014 show, a night in a city with no data).
-- **Your fields**, one line each, the same `FactList` look. Empty fields are not shown; an "Add" row at the end opens the form. Tap any line to edit.
-- "See the night ›" to the date page, "See the event ›" to the event page (linked entries only).
-- At the bottom, plain and small: **Remove from log**. One confirm sheet. Linked entries: this is the same as un-tapping Attended.
+**Before the night (upcoming):**
+- Title, stakes, venue, start. **On TV: ESPN** when a broadcaster is known.
+- The read, labeled **Forecast**, with its why line, and "locks {time}".
+- Gold **Attend** / Attending.
+- Weather forecast (open-air), Local competition, the crowd card (seats, sold out), share card.
 
-The event page keeps its Attended button. When Attended is on, the facts under the title become a tap target that opens the entry page, and a small "Your entry ›" sits under the button.
+**After the night (past):**
+- Title, stakes, venue, start. **Was on ESPN** when known.
+- The read, labeled **Stamped** (or Hand-rated, Nearby read, or absent when there is none).
+- **Attended** button, then **your layer** directly under it (only when Attended is on):
+  - **Review**: a few lines in your words. Letterboxd-style, no stars (see Open).
+  - One line per fact, the same `FactList` look: Outcome, Starter, Promo, Notable, Setlist, With, TV. Empty ones hidden. A quiet **Edit** opens the form; tapping a line does the same.
+  - Your Note, marked private.
+- Then the crowd card (announced count once step 2 lands), weather during, Local competition, share card.
+- At the very bottom, small: **Remove from log**, one confirm. Same as un-tapping Attended.
+
+The "Attend / Attended" split already exists in the code as one `if` on the date; this proposal gives each branch a different page order and labels. Save and Attended stay on the event page, as locked.
 
 ## 2. The fields
 Per kind, so a concert isn't asked for a starting pitcher.
 
 | Field | Game | Show, festival, broadcast, special | Who sees it |
 |---|---|---|---|
-| Outcome (the score) | yes; filled automatically once step 2 lands | no | people who can see your log |
+| Review | yes | yes | whoever can see your log (your visibility switch; default Only me) |
+| Outcome | yes; automatic once step 2 lands | no | same |
 | Starter | yes | no | same |
-| Promo (giveaway) | yes | no | same |
-| Notable (a moment worth naming) | yes | yes | same |
-| Setlist (a link) | no | yes | same, shown as a "Setlist" link |
-| With (who you went with) | yes | yes | **only you** |
+| Promo | yes | no | same |
+| Notable | yes | yes | same |
+| Setlist (link) | no | yes | same, as a "Setlist" link |
+| TV (station) | yes | yes | same. Pre-filled from the feed when it has one (MLB and ESPN both list broadcasters; one extra field in the fetch, no new call). You can type it when it doesn't. |
+| With | yes | yes | **only you** |
 | Note | yes | yes | **only you** |
 
-Outcome, Starter, Promo, Notable and Note exist in storage today. **With** and **Setlist** are new. Entries are stored as a free-form record, so the account needs no database change. A photo stays out until storage is settled 🚩.
+New fields: Review, Setlist, TV, With. Entries are free-form records in the account, so no database change. TV also becomes an **event** fact (`broadcast`), so the pre-event page can show it for everyone; the entry's TV line is for nights the feed didn't cover. The read never looks at any of these, so the no-results rule holds. A photo waits for storage 🚩.
 
-The form is one sheet: labels and inputs, one gold **Save**, no hint text. Editing never changes the stamp or the read; the no-results rule holds because the read never looks at these fields.
+The form is one sheet: labels and inputs, Review as a taller box, one gold **Save**, no hint text.
 
 ## 3. Typing in a night the catalog doesn't list
-A **+** in the You header, beside the gear. It opens search first (the same team, artist, venue search Explore has, old venue names included). A listed night is one tap: Attended, then its entry page. Below the results, when nothing fits: **Add it yourself**.
+A **+** in the You header, beside the gear. Search first (the same team, artist, venue search Explore has, old venue names included). A listed night is one tap: Attended, then its page. Below the results, when nothing fits: **Add it yourself**.
 
-That form:
-- **What**: the title, as you'd say it ("Kings vs. Oilers", "David Gilmour").
-- **Type**: Game · Show · Festival · Live broadcast · Special event.
-- **When**: a date. Or, if you don't remember, a month or just a year (the storage already keeps rough dates; the row says "2014" or "Nov 2022").
-- **Where**: the venue. Suggestions come from the venue table as you type; anything else is kept as written. Then the city, from the metro list, or **Somewhere else**.
-- The per-kind fields from section 2, all optional.
-- One gold **Save**.
+That form: **What** (the title as you'd say it), **Type** (Game · Show · Festival · Live broadcast · Special event), **When** (a day, or a month, or just a year; the storage already keeps rough dates), **Where** (venue, with suggestions from the venue table; anything else kept as written) and the city from the metro list or **Somewhere else**; then the per-kind fields, all optional; one gold **Save**.
 
 What the app does with it:
-- It is your entry and nothing more. It is **not** a catalog event: it does not appear on the map, does not move anyone's read, and is not pre-listed for anyone else. (Rooms under about 5,000 stay off the map; a hand-typed night has no verified size, so it is treated as under the floor.)
-- If the date and city have a read, the entry takes that night's nearby read and says so. Otherwise it has no score, like the 2013–2015 concerts.
-- Away games work the same way: a Game in another city, marked Away.
-- A hand-typed night can be re-linked later if the catalog gains that event (a small "Is this it?" when a match appears). Not in this step; the field is left for it.
+- By default it is **your entry only**: not on the map, moves nobody's read, listed for nobody else. If its date and city have a read, it takes that night's nearby read and says so; otherwise it has no score.
+- Away games: a Game in another city, marked Away.
 
-## 4. What this settles, if Kylie agrees
-Building this adopts the review's reading of the logging bar: **anything can be logged by hand; about 1,000+ is what the app pre-lists; 5,000+ feeds friction.** `AGENTS.md` and `docs/direction.md` say "about 1,000+ can be logged." If she locks the review's wording, those two lines change to match. This is the open "logging-threshold sentence" in `BACKLOG.md`.
+### 3a. When the room was big (Kylie's "other people can see/add" question)
+Recommendation: **suggest, don't publish.** If the venue you picked holds about 5,000 or more in the venue table, or you tick **Big event**, the entry is also written to a small **suggested events** list that only Kylie can read. She checks it against a public source (v1 rule: public data only) and, when it's real, it is seeded as a catalog event. From then on it is on the map, other people can log it, and it feeds friction. Until then nothing moves for anyone.
+
+Why not let it publish straight away: a hand-typed 5,000+ event would move everyone's read on that date, which breaks "friction is computed from public schedules, never argued"; duplicates and typos would pile up; and it is open posting by another name. Why not "later": the list costs nothing (one table, one flag), and it is the cheapest way to learn which big events the feeds miss before Ticketmaster arrives at step 4. No admin screen in this step; she reads the list in the Supabase dashboard. A screen comes if the list earns one.
+
+When a suggested night is later seeded, the person's entry links to the new catalog event (the entry keeps a `suggestionId`, so the link is one lookup). "Is this it?" for other unlinked entries stays out of this step.
 
 ## Not in this step
-Photos 🚩. Automatic scores (step 2). "Is this it?" re-linking. Editing from the map or the date page. Anything on the share card or the profile beyond what the facts already show. No notes or "With" ever leave your own screen.
+Photos 🚩. Automatic scores (step 2). Re-linking other hand-typed nights to catalog events. An admin screen. Editing from the map or the date page. Nothing beyond what the facts already show reaches the share card or a profile. Note and With never leave your own screen.
 
-## Questions for Kylie
-1. A You row opens the entry page instead of the date page. Yes?
-2. The field list: anything to add or cut? "With" and "Note" private, the rest visible to approved followers?
-3. "+" in the You header for adding a night, search first, then "Add it yourself"?
-4. Lock the logging bar as the review words it (anything by hand; 1,000+ pre-listed; 5,000+ feeds friction)?
+## Open
+- **Stars.** Letterboxd pairs a review with a star rating. Recommendation: no personal star rating for now. A night would then carry two numbers (the friction read and your stars) and the read is the one that makes the app. Revisit after a season of entries.
+- Whether Review replaces Note over time. Kept separate for now: Review follows your visibility switch, Note is always private.
+
+## Questions for Kylie (round 2)
+1. One page: the event page in two tenses, your layer under Attended. Yes?
+2. Review follows your visibility switch (default Only me); no stars for now?
+3. Big hand-typed events go to a suggestions list you check, rather than publishing directly?
