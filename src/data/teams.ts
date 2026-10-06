@@ -53,6 +53,7 @@ const LIST: Team[] = [
   team('galaxy', 'LA Galaxy', 'Galaxy', 'MLS', 'soccer', 'la', 'LAG'),
   team('lafc', 'Los Angeles FC', 'LAFC', 'MLS', 'soccer', 'la', 'LAFC'),
   team('angel-city', 'Angel City FC', 'Angel City', 'NWSL', 'soccer', 'la', 'ACFC'),
+  team('sparks', 'Los Angeles Sparks', 'Sparks', 'WNBA', 'basketball', 'la', 'LAS'),
   team('rams', 'Los Angeles Rams', 'Rams', 'NFL', 'football', 'la', 'LAR'),
   team('chargers', 'Los Angeles Chargers', 'Chargers', 'NFL', 'football', 'la', 'LAC'),
   team('usc-football', 'USC Trojans', 'USC', 'College football', 'football', 'la', 'USC', ['USC FB', 'USC Football']),

@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-03-30",
+  "rows": [
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2026-03-30",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 66.4,
+      "tempF": 67.4,
+      "humidity": 61,
+      "windMph": 4.8,
+      "precipMm": 0,
+      "shortwave": 57,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2026-03-30",
+      "hour": 20,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 64.9,
+      "tempF": 65.2,
+      "humidity": 68,
+      "windMph": 4,
+      "precipMm": 0,
+      "shortwave": 1,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2026-03-30",
+      "hour": 21,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 63.5,
+      "tempF": 63.8,
+      "humidity": 72,
+      "windMph": 4,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "dodger-stadium",
+      "date": "2026-03-30",
+      "hour": 22,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 62.2,
+      "tempF": 62.3,
+      "humidity": 77,
+      "windMph": 4.1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-03-30",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 67,
+      "tempF": 66.8,
+      "humidity": 67,
+      "windMph": 3.8,
+      "precipMm": 0,
+      "shortwave": 56,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ],
+  "days": [
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-03-30",
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeHighF": 77.5,
+      "feelsLikeLowF": 55.2,
+      "code": 3,
+      "precipMm": 0
+    }
+  ]
+}

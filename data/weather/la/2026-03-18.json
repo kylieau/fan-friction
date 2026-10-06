@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-03-18",
+  "rows": [
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-03-18",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 73.6,
+      "tempF": 75.8,
+      "humidity": 41,
+      "windMph": 5.6,
+      "precipMm": 0,
+      "shortwave": 69,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-03-18",
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeHighF": 94.2,
+      "feelsLikeLowF": 64.2,
+      "code": 0,
+      "precipMm": 0
+    }
+  ]
+}

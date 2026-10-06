@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-02-25",
+  "rows": [
+    {
+      "metroId": "la",
+      "venueId": "dignity-health-sports-park",
+      "date": "2026-02-25",
+      "hour": 20,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 63.6,
+      "tempF": 63.6,
+      "humidity": 70,
+      "windMph": 2.8,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 95,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "dignity-health-sports-park",
+      "date": "2026-02-25",
+      "hour": 21,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 62.5,
+      "tempF": 62.5,
+      "humidity": 72,
+      "windMph": 2.4,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "dignity-health-sports-park",
+      "date": "2026-02-25",
+      "hour": 22,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 62.1,
+      "tempF": 61.5,
+      "humidity": 75,
+      "windMph": 1.4,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 41,
+      "code": 1
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-02-25",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 65.6,
+      "tempF": 65.8,
+      "humidity": 68,
+      "windMph": 4,
+      "precipMm": 0,
+      "shortwave": 30,
+      "cloudCover": 97,
+      "code": 3
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-02-25",
+      "hour": 20,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeF": 64.1,
+      "tempF": 64,
+      "humidity": 70,
+      "windMph": 2.7,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 99,
+      "code": 3
+    }
+  ],
+  "days": [
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-02-25",
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T22:23:21.836Z",
+      "feelsLikeHighF": 79.4,
+      "feelsLikeLowF": 50.7,
+      "code": 3,
+      "precipMm": 0
+    }
+  ]
+}
