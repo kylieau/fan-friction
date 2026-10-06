@@ -7,7 +7,7 @@ Kylie, Oct 6, 2026: Los Angeles is the only city built by hand. Every later city
 - `src/data/formula/gridlock.ts` `CITY_TYPE`: sprawl (everyone drives), hub, or transit. This sets the spill between zones and the hard-access weight (1.25 driving, 1.1 transit).
 - `src/data/formula/overlap.ts`: the city's **broad teams** (everyone's team, by year), if any.
 - `src/data/formula/weather.ts` `MONTHLY_NORMAL_F`: the heat baseline by month (empty today; the 85°F floor applies until filled). Needs a source that works for every city.
-- `src/data/scheduleArchive.ts` / `scripts/weather-fetch.mjs` / `scripts/results-fetch.mjs`: the metro ids each job covers (LA only today).
+- `src/data/scheduleArchive.ts` / `scripts/weather-fetch.mjs` / `scripts/results-fetch.mjs` / `scripts/catalog-write.mjs` (`ARCHIVE_METRO_ID`, `RESULTS_METRO_ID`): the metro ids each job covers (LA only today). The shared catalog tables are keyed by metro, so a second city needs no new tables.
 
 ## 2. Teams (one line each)
 - `src/data/teams.ts`: a record per team and college program (id, names, league, sport, metro).
