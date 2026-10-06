@@ -50,7 +50,7 @@ The other session's commit fb20b3f (October research, `docs/research-oct-2026/`,
 
 ## Next steps
 1. **Wait for Kylie's word before step 3** (Compare rebuild: two nights side by side, "Compare with…" on the date page, this-year stats). Proposal first.
-2. Egress research received Oct 6 (prompt, answer, and the 43-venue CSV: `docs/venue-egress-prompt.md`, `docs/venue-egress-answer.md`, `docs/gridlock_inputs_all_43_venues.csv`). Lanes are out of that research; cars-per-exit still needs OpenStreetMap for lanes. Gridlock rule is not locked: keep ×1.25 until Kylie approves a proposal. The before/after check on the seven nights waits for that proposal.
+2. Egress research done (`docs/venue-egress-answer.md`, `docs/gridlock_inputs_all_43_venues.csv`): exit lanes are not published anywhere, so the cars-per-lane rule is **shelved**; hard access stays the measured rule at ×1.25 scaled by car share. Two follow-ups when wanted: fill `carShare` on venues from the CSV's official/reported rows (Hollywood Bowl 61% car, Petco ~80%, Golden 1 ~85–90%), and a "stack-parked lots" yes/no as a third access signal. Watch for LADOT's Dodger Stadium study (fall 2026).
 3. Her event-entry notes, when she has them: backend data first, then tab by tab.
 4. Step 4 later: Ticketmaster concerts 🚩 (free key; terms first) and a second city via `docs/new-city-checklist.md`.
 
