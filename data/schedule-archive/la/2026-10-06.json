@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-06",
-  "capturedAt": "2026-10-06T19:27:52.473Z",
+  "capturedAt": "2026-10-06T20:52:18.350Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-06",
@@ -115,7 +115,10 @@
       "performer": "Bruno Mars",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_eheCVin"
+      "ticketmasterId": "vvG1IZ_eheCVin",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-06-tm-vv1AaZko3Gkdf6kuk",
@@ -135,7 +138,10 @@
       "performer": "Mumford & Sons",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZko3Gkdf6kuk"
+      "ticketmasterId": "vv1AaZko3Gkdf6kuk",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-07-tm-vv170Z_6GkRNGSd7",
@@ -198,7 +204,10 @@
       "performer": "Bruno Mars",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_eheo7is"
+      "ticketmasterId": "vvG1IZ_eheo7is",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-07-tm-vv1AaZko9Gketiqv4",
@@ -218,7 +227,10 @@
       "performer": "Mumford & Sons",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZko9Gketiqv4"
+      "ticketmasterId": "vv1AaZko9Gketiqv4",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-08-tm-vv1AaZk8tGkd6ll1M",
@@ -530,7 +542,10 @@
       "performer": "Jack Johnson",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZbU81spCL"
+      "ticketmasterId": "vvG1iZbU81spCL",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-10-tm-vv1AaZkfoGkdZT1iU",
@@ -673,7 +688,10 @@
       "performer": "Jack Johnson",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZbU81wkC0"
+      "ticketmasterId": "vvG1iZbU81wkC0",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-11-tm-vv1ke8v0PdGA2NIXk",
@@ -833,7 +851,7 @@
       "date": "2026-10-14",
       "start": "19:30",
       "kind": "game",
-      "title": "LA Galaxy vs. Portland",
+      "title": "Galaxy vs. Portland",
       "place": {
         "type": "venue",
         "venueId": "dignity-health-sports-park"
@@ -889,7 +907,10 @@
       "performer": "Phil Wickham",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_7GkMfFAZu"
+      "ticketmasterId": "vv170Z_7GkMfFAZu",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-15-tm-vv170Z_aGkRSVNGb",
@@ -929,7 +950,10 @@
       "performer": "Phil Wickham",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1k0Z_kp4G7ia50"
+      "ticketmasterId": "vv1k0Z_kp4G7ia50",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-15-tm-vvG10Z_GwWe2IR",
@@ -1055,7 +1079,10 @@
       "performer": "MILEY",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_owcOPJ1"
+      "ticketmasterId": "vvG1iZ_owcOPJ1",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
@@ -1126,7 +1153,7 @@
       "date": "2026-10-17",
       "start": "19:30",
       "kind": "game",
-      "title": "LA Galaxy vs. San Diego",
+      "title": "Galaxy vs. San Diego FC",
       "place": {
         "type": "venue",
         "venueId": "dignity-health-sports-park"
@@ -1137,7 +1164,7 @@
       },
       "teams": {
         "home": "galaxy",
-        "away": "san-diego"
+        "away": "san-diego-fc"
       },
       "crowd": [],
       "sourceId": "espn"
@@ -1240,7 +1267,10 @@
       "performer": "Charli xcx",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_G9R7nPH"
+      "ticketmasterId": "vvG10Z_G9R7nPH",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-17-espn-ucla-football-401858494",
@@ -1305,7 +1335,10 @@
       "performer": "MILEY",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_owcx4Jh"
+      "ticketmasterId": "vvG1iZ_owcx4Jh",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-18-tm-Z7r9jZ1A70kAU",
@@ -1325,7 +1358,10 @@
       "performer": "Kacey Musgraves",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A70kAU"
+      "ticketmasterId": "Z7r9jZ1A70kAU",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-18-tm-vvG10Z_G9gehI7",
@@ -1345,7 +1381,10 @@
       "performer": "Charli xcx",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_G9gehI7"
+      "ticketmasterId": "vvG10Z_G9gehI7",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-19-tm-vv1ke8v0r6GAuZNui",
@@ -1385,7 +1424,10 @@
       "performer": "Kacey Musgraves",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A70kAg"
+      "ticketmasterId": "Z7r9jZ1A70kAg",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-20-tm-vvG10Z_1hSZGrO",
@@ -1869,7 +1911,7 @@
       "read": {
         "rating": 4.2,
         "friction": "Moderate",
-        "why": "LA Galaxy vs. Portland and LAFC vs. Austin 7.3 mi away, same hours.",
+        "why": "Galaxy vs. Portland and LAFC vs. Austin 7.3 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -1891,7 +1933,7 @@
       "read": {
         "rating": 4.2,
         "friction": "Moderate",
-        "why": "LA Galaxy vs. Portland 10 mi away, same hours.",
+        "why": "Galaxy vs. Portland 10 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2008,7 +2050,7 @@
       "read": {
         "rating": 7.8,
         "friction": "Heavy",
-        "why": "LA Galaxy vs. San Diego and Los Tigres del Norte 12 mi away, same hours.",
+        "why": "Galaxy vs. San Diego FC and Los Tigres del Norte 12 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2039,7 +2081,7 @@
       "read": {
         "rating": 7.8,
         "friction": "Heavy",
-        "why": "LA Galaxy vs. San Diego and Los Tigres del Norte 18 mi away, same hours.",
+        "why": "Galaxy vs. San Diego FC and Los Tigres del Norte 18 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2050,7 +2092,7 @@
       "read": {
         "rating": 7.8,
         "friction": "Extreme",
-        "why": "LA Galaxy vs. San Diego and Los Tigres del Norte 18 mi away, same hours.",
+        "why": "Galaxy vs. San Diego FC and Los Tigres del Norte 18 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2083,7 +2125,7 @@
       "read": {
         "rating": 7.8,
         "friction": "Heavy",
-        "why": "LA Galaxy vs. San Diego and Los Tigres del Norte 8.0 mi away, same hours.",
+        "why": "Galaxy vs. San Diego FC and Los Tigres del Norte 8.0 mi away, same hours.",
         "method": "formula"
       }
     },

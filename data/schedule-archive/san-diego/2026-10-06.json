@@ -4,7 +4,7 @@
   "metroName": "San Diego",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-06",
-  "capturedAt": "2026-10-06T19:28:06.245Z",
+  "capturedAt": "2026-10-06T20:52:31.159Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-06",
@@ -110,7 +110,10 @@
       "performer": "San Diego Toreros Womens Volleyball",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7PEaY"
+      "ticketmasterId": "Z7r9jZ1A7PEaY",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-09-tm-vvG1IZ_F5TB6n1",
@@ -130,7 +133,10 @@
       "performer": "Niteharts Festival",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_F5TB6n1"
+      "ticketmasterId": "vvG1IZ_F5TB6n1",
+      "occasionFacts": {
+        "run": 6
+      }
     },
     {
       "id": "2026-10-09-tm-Z7r9jZ1A7-4as",
@@ -150,7 +156,10 @@
       "performer": "Niteharts Festival",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-4as"
+      "ticketmasterId": "Z7r9jZ1A7-4as",
+      "occasionFacts": {
+        "run": 6
+      }
     },
     {
       "id": "2026-10-09-tm-vvG1IZbgXbSgVe",
@@ -190,7 +199,10 @@
       "performer": "Niteharts Festival",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_F5TBMn9"
+      "ticketmasterId": "vvG1IZ_F5TBMn9",
+      "occasionFacts": {
+        "run": 6
+      }
     },
     {
       "id": "2026-10-10-tm-Z7r9jZ1A7PEas",
@@ -210,7 +222,10 @@
       "performer": "San Diego Toreros Womens Volleyball",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7PEas"
+      "ticketmasterId": "Z7r9jZ1A7PEas",
+      "occasionFacts": {
+        "run": 2
+      }
     },
     {
       "id": "2026-10-10-tm-Z7r9jZ1A7-4aw",
@@ -230,7 +245,10 @@
       "performer": "Niteharts Festival",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-4aw"
+      "ticketmasterId": "Z7r9jZ1A7-4aw",
+      "occasionFacts": {
+        "run": 6
+      }
     },
     {
       "id": "2026-10-10-tm-vvG1IZbMExObDZ",
@@ -270,7 +288,10 @@
       "performer": "Niteharts Festival",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_F5TDEnj"
+      "ticketmasterId": "vvG1IZ_F5TDEnj",
+      "occasionFacts": {
+        "run": 6
+      }
     },
     {
       "id": "2026-10-11-tm-Z7r9jZ1A7-4aS",
@@ -290,7 +311,10 @@
       "performer": "Niteharts Festival",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-4aS"
+      "ticketmasterId": "Z7r9jZ1A7-4aS",
+      "occasionFacts": {
+        "run": 6
+      }
     },
     {
       "id": "2026-10-11-tm-vvG1IZ_1UoDk-X",
@@ -358,7 +382,7 @@
       "date": "2026-10-14",
       "start": "19:30",
       "kind": "game",
-      "title": "San Diego vs. Houston",
+      "title": "San Diego FC vs. Houston",
       "place": {
         "type": "venue",
         "venueId": "snapdragon-stadium"
@@ -486,7 +510,7 @@
       "read": {
         "rating": 2,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "86° feels-like at a 6:30 pm start, no roof.",
         "method": "formula"
       }
     },
@@ -606,7 +630,7 @@
       "start": "13:00",
       "read": {
         "rating": 4,
-        "friction": "Low",
+        "friction": "Moderate",
         "why": "Niteharts Festival next door, same hours.",
         "method": "formula"
       }

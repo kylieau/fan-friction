@@ -2,7 +2,44 @@
   "schema": 1,
   "metroId": "seattle",
   "date": "2026-10-08",
-  "rows": [],
+  "rows": [
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-10-08",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T20:52:08.050Z",
+      "feelsLikeF": 58.8,
+      "tempF": 61.7,
+      "humidity": 55,
+      "windMph": 3.8,
+      "uvIndex": 0.05,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 9,
+      "cloudCover": 96,
+      "code": 3
+    },
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-10-08",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T20:52:08.050Z",
+      "feelsLikeF": 57.7,
+      "tempF": 60.4,
+      "humidity": 58,
+      "windMph": 3.6,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ],
   "days": [
     {
       "metroId": "seattle",

@@ -125,5 +125,53 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:40"
+  },
+  {
+    "eventId": "2026-10-04-espn-kraken-401891824",
+    "metroId": "seattle",
+    "date": "2026-10-04",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "climate-pledge-arena",
+    "homeTeamId": "kraken",
+    "home": {
+      "name": "Kraken",
+      "score": 6
+    },
+    "away": {
+      "name": "Flames",
+      "score": 1
+    },
+    "attendance": 17151,
+    "capturedAt": "2026-10-06T20:43:12.167Z",
+    "duration": {
+      "minutes": 152,
+      "kind": "estimated"
+    },
+    "startedAt": "17:17"
+  },
+  {
+    "eventId": "2026-10-04-espn-seahawks-401872977",
+    "metroId": "seattle",
+    "date": "2026-10-04",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "lumen-field",
+    "homeTeamId": "seahawks",
+    "home": {
+      "name": "Seahawks",
+      "score": 30
+    },
+    "away": {
+      "name": "Chargers",
+      "score": 23
+    },
+    "attendance": 68691,
+    "capturedAt": "2026-10-06T20:43:12.167Z",
+    "duration": {
+      "minutes": 198,
+      "kind": "estimated"
+    },
+    "startedAt": "13:25"
   }
 ];

@@ -74,6 +74,24 @@
       "shortwave": 0,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T20:52:08.050Z",
+      "feelsLikeF": 54.3,
+      "tempF": 59.9,
+      "humidity": 27,
+      "windMph": 2,
+      "uvIndex": 0,
+      "precipProbability": 8,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 7,
+      "code": 0
     }
   ],
   "days": [

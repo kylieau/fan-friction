@@ -14,4 +14,5 @@ export const SCHEDULE_SNAPSHOTS: readonly ScheduleSnapshotSpan[] = [
   { metroId: 'la', capturedOn: '2026-10-05', from: '2026-10-05', through: '2026-10-19' },
   { metroId: 'la', capturedOn: '2026-10-06', from: '2026-10-06', through: '2026-10-20' },
   { metroId: 'san-diego', capturedOn: '2026-10-06', from: '2026-10-06', through: '2026-10-20' },
+  { metroId: 'seattle', capturedOn: '2026-10-06', from: '2026-10-06', through: '2026-10-20' },
 ];
