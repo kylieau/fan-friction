@@ -33,6 +33,33 @@ export interface WeatherRow {
   code?: number;
 }
 
+/**
+ * One day's feels-like range at the city point (Kylie, Oct 5: show the high and
+ * low). Fetched for every day in the forecast horizon, quiet days included, so
+ * the Map header has a number even when nothing is on. Orientation only, never an input.
+ */
+export interface WeatherDay {
+  metroId: string;
+  venueId: 'city';
+  date: LocalDate;
+  basis: WeatherBasis;
+  capturedAt: string;
+  feelsLikeHighF: number;
+  feelsLikeLowF: number;
+  /** Daily WMO code and rain, for the glyph. */
+  code?: number;
+  precipProbability?: number;
+  precipMm?: number;
+}
+
+/** "62–88°", low to high, in the metro's units. */
+export function rangeLabel(day: Pick<WeatherDay, 'feelsLikeLowF' | 'feelsLikeHighF'>, metroId: string): string {
+  const metro = METROS[metroId];
+  const celsius = metro && !metro.timeZone.startsWith('America/');
+  const convert = (f: number) => Math.round(celsius ? ((f - 32) * 5) / 9 : f);
+  return `${convert(day.feelsLikeLowF)}–${convert(day.feelsLikeHighF)}°`;
+}
+
 /** The glyph beside the headline number. */
 export function weatherGlyph(row: Pick<WeatherRow, 'code' | 'precipMm' | 'precipProbability' | 'cloudCover'>): string {
   const code = row.code ?? -1;
@@ -251,6 +278,75 @@ export async function fetchWeather(
     if (row) rows.push(row);
   }
   return rows;
+}
+
+interface Daily {
+  time: string[];
+  apparent_temperature_max?: (number | null)[];
+  apparent_temperature_min?: (number | null)[];
+  weather_code?: (number | null)[];
+  precipitation_probability_max?: (number | null)[];
+  precipitation_sum?: (number | null)[];
+}
+
+/**
+ * Fetch the city point's daily feels-like high and low for a run of dates, one
+ * call. Past runs use the reanalysis archive; today and later use the forecast.
+ * A run must not straddle today.
+ */
+export async function fetchWeatherDays(
+  metroId: string,
+  location: [number, number],
+  startDate: LocalDate,
+  endDate: LocalDate,
+  now = new Date(),
+): Promise<WeatherDay[]> {
+  const metro = METROS[metroId];
+  const tz = metro?.timeZone ?? 'America/Los_Angeles';
+  const today = now.toLocaleDateString('en-CA', { timeZone: tz });
+  const basis: WeatherBasis = endDate < today ? 'reanalysis' : 'forecast';
+  const [lng, lat] = location;
+  const daily = ['apparent_temperature_max', 'apparent_temperature_min', 'weather_code', 'precipitation_sum'];
+  if (basis === 'forecast') daily.push('precipitation_probability_max');
+  const params = new URLSearchParams({
+    latitude: String(lat),
+    longitude: String(lng),
+    daily: daily.join(','),
+    temperature_unit: 'fahrenheit',
+    timezone: tz,
+    start_date: startDate,
+    end_date: endDate,
+  });
+  const url = basis === 'reanalysis' ? `https://archive-api.open-meteo.com/v1/archive?${params}` : `https://api.open-meteo.com/v1/forecast?${params}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Open-Meteo ${res.status} for city days ${startDate}..${endDate}`);
+  const body = (await res.json()) as { daily?: Daily };
+  const d = body.daily;
+  if (!d?.time) return [];
+  const capturedAt = now.toISOString();
+  const pick = (key: keyof Daily, i: number) => {
+    const v = (d[key] as (number | null)[] | undefined)?.[i];
+    return typeof v === 'number' ? v : undefined;
+  };
+  const days: WeatherDay[] = [];
+  d.time.forEach((date, i) => {
+    const high = pick('apparent_temperature_max', i);
+    const low = pick('apparent_temperature_min', i);
+    if (high == null || low == null) return;
+    days.push({
+      metroId,
+      venueId: 'city',
+      date,
+      basis,
+      capturedAt,
+      feelsLikeHighF: high,
+      feelsLikeLowF: low,
+      code: pick('weather_code', i),
+      precipProbability: pick('precipitation_probability_max', i),
+      precipMm: pick('precipitation_sum', i),
+    });
+  });
+  return days;
 }
 
 /** The hour a conditions read is taken at: the scheduled start, or a type's usual start. */

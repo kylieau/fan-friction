@@ -21,5 +21,19 @@
       "cloudCover": 0,
       "code": 0
     }
+  ],
+  "days": [
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-06",
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T00:33:04.063Z",
+      "feelsLikeHighF": 100.8,
+      "feelsLikeLowF": 67.2,
+      "code": 0,
+      "precipProbability": 1,
+      "precipMm": 0
+    }
   ]
 }

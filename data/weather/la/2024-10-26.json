@@ -243,5 +243,18 @@
       "cloudCover": 100,
       "code": 3
     }
+  ],
+  "days": [
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2024-10-26",
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-06T00:33:59.941Z",
+      "feelsLikeHighF": 77.1,
+      "feelsLikeLowF": 51.4,
+      "code": 3,
+      "precipMm": 0
+    }
   ]
 }

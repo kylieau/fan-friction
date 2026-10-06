@@ -4,8 +4,8 @@
 // counts, after the lock the last forecast saved before it, never observed
 // weather; pre-app dates use the reanalysis archive, labeled estimated.
 
-import { WEATHER_ROWS } from './weatherIndex';
-import { weatherHourFor, weatherHoursFor, type WeatherRow } from './formula/weather';
+import { WEATHER_DAYS, WEATHER_ROWS } from './weatherIndex';
+import { weatherHourFor, weatherHoursFor, type WeatherDay, type WeatherRow } from './formula/weather';
 import type { CrowdEvent, LocalDate } from './types';
 
 function rowsFor(metroId: string, venueId: string, date: LocalDate, hour: number): WeatherRow[] {
@@ -40,6 +40,20 @@ export function cityWeather(metroId: string, date: LocalDate, events: readonly C
   const hours = events.map(weatherHourFor).sort((a, b) => a - b);
   const hour = hours.length > 0 ? hours[Math.floor(hours.length / 2)] : 19;
   return weatherAt(metroId, 'city', date, hour) ?? weatherAt(metroId, 'city', date, 19);
+}
+
+/**
+ * The city point's feels-like high and low for a date: the latest forecast captured
+ * before `before` (the lock, or now), else the reanalysis day. Undefined when nothing is stored.
+ */
+export function cityDayRange(metroId: string, date: LocalDate, before?: Date): WeatherDay | undefined {
+  const days = WEATHER_DAYS.filter((d) => d.metroId === metroId && d.date === date);
+  const cutoff = before?.getTime();
+  const forecasts = days
+    .filter((d) => d.basis === 'forecast' && (cutoff == null || new Date(d.capturedAt).getTime() <= cutoff))
+    .sort((a, b) => a.capturedAt.localeCompare(b.capturedAt));
+  if (forecasts.length > 0) return forecasts[forecasts.length - 1];
+  return days.find((d) => d.basis === 'reanalysis');
 }
 
 /** The feels-like high and low across the event's hours, for the event page only. */
