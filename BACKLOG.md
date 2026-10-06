@@ -57,7 +57,7 @@ Reasoning: `docs/direction.md` (the log leads) and `docs/product-review-decision
 The eight pivot questions are answered in **Locked answers** above. Do not re-ask them. Still open: the logging-threshold sentence, plus Waiting on Kylie and Research leftovers.
 
 ## Prompt Kylie first thing when a session resumes
-The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Accounts are built and connected (Oct 5); do not ask for the Supabase URL or key again. Do not open by starting Traffic, Night story, Ticketmaster, or the Famous nights rename. **The current thread (Oct 5) is the formula tuning session** on the 13 nights (see Formula tuning below), then attendance calibration. Ask whether she has looked at the live site and has notes. **Event-entry notes (Kylie, Oct 5):** she will have many, and wants to attack them systematically, backend data first, then tab by tab; do not drip-fix them. Also ask whether she has anything to paste for the remaining seed data gaps (see Research leftovers). Sort new notes into structural (raise before building) and polish (batch). The Map's look is no longer locked, but a Map change is still a proposal she approves first.
+The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Accounts are built and connected (Oct 5); do not ask for the Supabase URL or key again. Do not open by starting Traffic, Night story, Ticketmaster, or the Famous nights rename. **The formula tuning session is done (Oct 6)**; next for the formula is the attendance calibration job. Explore was reworked Oct 6 (`docs/explore-proposal-oct6.md`); ask how it feels on her phone. Ask whether she has looked at the live site and has notes. **Event-entry notes (Kylie, Oct 5):** she will have many, and wants to attack them systematically, backend data first, then tab by tab; do not drip-fix them. Also ask whether she has anything to paste for the remaining seed data gaps (see Research leftovers). Sort new notes into structural (raise before building) and polish (batch). The Map's look is no longer locked, but a Map change is still a proposal she approves first.
 
 ## First slice: remaining build steps
 - **Done Oct 3 (Steps 3, a Map rework, and a first slice of Step 7):** Event screen; full-screen Map with a sheet that follows the finger; tappable pins and one selection; why chips; upcoming events from MLB and ESPN on the map with a range dropdown. Left over: sharing sends text plus the link, and the share card should become a night card, not an event card (image version later); dot size and heat still use capacity and the known crowd; the Event screen shows no result block ("The game" / "The show") because the seed has no results; the gold button on the Map was a draft. PR #6 locks it as **See this event**. "I was there" is on the Event screen as of Step 5.
@@ -115,6 +115,12 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - The Oct 4 "open on the Map with a next-saved-night card" decision is superseded by Home. The saved-date card still exists on the Map.
 - `/compare` route and screen remain, unlinked (rehome rule). "Compare with…" returns later as a button on the date page.
 - **Famous nights (Kylie, Oct 5):** living under the search in Explore's month sheet is "funky" and only a reminder. Agreed options: a discovery strip on Home for thin logs (not a step), or a section on a team's page ("famous Dodgers nights"). Decide and rehome; nothing deleted. Hand-check stamps before any public launch.
+
+## Explore follow-ups (Oct 6)
+- Untested on a real phone: the strip's swipe and snap, the month sheet's drag-to-dismiss, recenter after a pinch.
+- Week view on Explore: not rebuilt; Home's "This week" mini map covers it. Revisit only if Kylie misses it.
+- The strip loads 45 days of reads at once (`getCityDate` per day). Fine for LA; consider a batched read when more cities arrive.
+- Home's month sheet uses the same component, so it also drops from the top now; check that it reads right on Home.
 
 ## Accounts (built Oct 5)
 - Open: should the sign-in card keep its two lines of copy; whether `/profile/edit` route should go (unlinked now); the stale "5k+" line in AGENTS.md's carried-over intro; `hiddenSeedIds` only matters for old phone copies.

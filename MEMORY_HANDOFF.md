@@ -2,60 +2,50 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`.
 
-_Last synced: Oct 5, 2026, end of session. Everything is pushed; `main` is clean._
+_Last synced: Oct 6, 2026, end of session. Everything below is committed and pushed. One untracked file is not ours (see Changes made)._
 
 ## Current state
-**The rating formula v4 is built and wired in** (`src/data/formula/`, `src/data/formulaRead.ts`): Crowd fight (contested seats), Conditions (real weather from Open-Meteo, forecast and archive), lightest Gridlock (zones from venue locations). Every date's rating, every event's occasion, verdict and why line are computed; the nightly job fetches weather then records formula forecasts; the calendar shades every date with events; upcoming dates no longer show dashes. Hand ratings stay in the seed as comparison only (Kylie's rule). `docs/formula-table.md` prints the formula against the 13 nights (mean gap 0.81, comparison only).
+**Explore is "one day at a time"** (`docs/explore-proposal-oct6.md`, rounds 1–5, all built and pushed). Kylie reviewed each round on the local site.
+- The header date is the picker: a chevron, tap opens the month sheet. No date pill, no Next 7 days, no auto-widen. Old `?when=week` links open the day.
+- The strip is a carousel: eight cells to the width (half, seven, half), swipe browses, tap selects, viewed day in the third full slot with a blue border, today's number in a filled Dodger-blue circle. Anchored on today (two weeks back, a month ahead) unless the viewed day is far away.
+- A "Today" pill shows only when the map is on another day.
+- The month sheet drops from under the header (no Done). A grab bar on its bottom edge: drag or flick up, tap, Escape, or tap the header date again to close.
+- Weather: map header and date page show the city point's feels-like **"H:76° L:52°"** every day, quiet days included. Tap or hover the map chip for a small light note, "Feels-like, not air temp", that fades after 3 s. Event rows keep the start-hour venue number (the formula's input).
+- Map chrome: credit "i" bottom-left; the "?" key (only on days with events) and the recenter button (only after a hand move or a remembered view) are one column on the right. All three ride the sheet's real top edge (`--sheet-peek`), so a selected event or a home bar can't hide them.
+- The sheet title is "On the map" (the date is said once, in the header). No "Next up" line.
 
-- **All pushed and live** as of this sync.
-- **Docs:** `docs/formula-analysis.md` (fresh-eyes), `formula-review-prompt.md` + `formula-review-response.md` (outside review), `formula-v4.md` (decisions, her rulings), `formula-table.md`.
-- **Weather:** `data/weather/la/*.json` + `src/data/weatherIndex.ts`; `scripts/weather-fetch.mjs` (nightly, and `--backfill` once for the seeded nights). Feels-like is the headline number (Map header city point, date page per open-air venue, event page detail with the range during the event). Covered stadiums count as open air.
-- **Known soft spots to tune:** the World Series G1 reads Heavy friction on 10/25/24 (five competitors overwhelm the Marquee pull of 1.6); artists have no occasion input yet (Taylor Swift reads Routine), a "headliner tier" fact is the likely fix; Famous nights show curated headlines with computed numbers; all constants are placeholders until the attendance calibration (review §11).
+**Formula tuning (Oct 6, pushed):** events are sized by an optional **expected draw** (known ahead, always an estimate, capped by the building; seeded only on the East LA Classic at 18,000). Pull table 1 / 1.2 / 1.6 / 2.5. Gilmour has a storyline point (Major). Date why line: "World Series Game 1 pulls on five other crowds"; the seat figure is a detail line on the date page. WS G1 reads Moderate; 10/25/24 is 9.2 Cooked; mean gap from hand ratings 0.75 (comparison only). Artifact for Kylie: https://claude.ai/artifact/F1oujANJrwodjs39D1pd7F
+
+**Weather data:** the nightly job now also fetches the city point's daily feels-like high and low for today through 15 days ahead (one extra Open-Meteo call), stored under `days` in each `data/weather/la/*.json` and indexed as `WEATHER_DAYS`. The 13 seeded nights were backfilled.
+
+**Not verified on a real phone:** the strip's swipe/snap feel, the month sheet's drag-to-dismiss, the recenter after a pinch. Checked only in headless Chromium.
 
 ## Changes made (this session)
-Formula: `src/data/formula/{occasion,overlap,crowdFight,weather,gridlock,index}.ts`, `src/data/{formulaRead,weather,weatherIndex}.ts`, `read.ts` (method formula), `forecastCapture.ts`, `index.ts` (getCityDate/getRatedDates/getCalendarMonth use the formula; `handRatingFor` for comparison), seed facts in `testNights.ts`, `types.ts` (OccasionFacts, SportsLevel, invited, strained, status formula), `venues.ts` (strained), scripts (`weather-fetch`, `weather-index`, `formula-table.mts`), package.json archive order, workflow adds weather files, screens (Map header, DateScreen, EventScreen weather, Settings attribution), `AGENTS.md` (no-results rule restated), `BACKLOG.md` (weather notes), `docs/build-brief.md` (Open-Meteo milestone).
+Formula: `src/data/{types,read,formulaRead}.ts`, `src/data/formula/{crowdFight,gridlock,occasion,index,weather}.ts`, `src/data/seed/testNights.ts`, `docs/{formula-table,formula-tuning-oct5,formula-v4}.md`. Weather: `scripts/{weather-fetch,weather-index}.mjs`, `src/data/{weather,weatherIndex,index}.ts`, `data/weather/la/*.json`. Explore: `src/components/{DayStrip,MonthSheet,Icons}.tsx`, `src/components/WhenControl.tsx` (deleted), `src/lib/{view,dates,useSheetDrag}.ts`, `src/map/{BaseMap,MapCamera}.tsx`, `src/screens/{MapScreen,DateScreen,HomeScreen,ExploreScreen}.tsx`, `src/styles.css`. Docs: `docs/explore-proposal-oct6.md`, `docs/ux-notes.md`, `BACKLOG.md`, `CLAUDE.md` (stale "through PR #12" fixed).
+
+**Not ours, left untracked:** `docs/october-2026-events-prompt.md` (a research brief for October 2026 events in LA, San Diego, Seattle and New York, from a parallel session). It was swept into a local commit by mistake and taken back out before pushing.
 
 ## Key decisions in force
-- **Words (Oct 5):** Chill · Mild · Spicy · Brutal · Cooked (Mid read as an insult; Light→Mild keeps a heat ladder). Band names in code match (`mild`, `spicy`).
-- **Concert occasion (Oct 5):** base from the booking (stadium 3, arena 2, theater 1), a run of 3+ nights +1, sellout +1, farewell/tour opener 3. Eras Tour, Beyoncé, Elton's last show = Marquee; ELO = Major.
-- **Explore is one page (option A):** week strip (two back, viewed day in slot 3 with a blue border, four ahead; today wears a dot), the month sheet (grid, search, Famous nights) from the date pill or the search button; Home's search opens the same sheet and picks go to the date page. Map/Calendar switch rehomed; old calendar page at `?view=calendar`, unlinked.
-- **Event verdict title:** "Fighting heavy friction" (the event deals with it). Chips keep one word.
-- **Forecast shading:** days ahead muted in the strip and the grid.
-- **Formula v4 (Oct 5):** see `docs/formula-v4.md`. Hand ratings are comparison only, never the target. Chargers' first LA game is Major; Dodgers–Braves 4/1/25 Routine with a +1 storyline fact; Conditions is a third reason (open-air only, per-city heat baseline concept, start-hour headline, range on the event page). Combination = max + 0.25 × Σ(others − 3)⁺.
-- **The no-results rule means only the event's own outcome** (score, who won). Observed weather may rate a past date. Crowd counts stay evidence (Oct 1). Earlier docs over-applied it.
-- **Weather:** one source (Open-Meteo; free non-commercial, on the cost milestones; credit on Settings). City point = the metro's map center (revisit later). No "estimated" labels on archive weather.
-- **Home (Kylie, Oct 5):** the app opens on a digest, not the Map. Tonight shows only when the home city has events that day; its list is the biggest three by crowd first, then the rest, in a box three rows tall that scrolls. No feed of strangers, nothing ranked by friction. Friends grouped by event ("Sam and Priya · Slayer"). Coming up and Recent list everything, home and away; Recent shows the outcome when known.
-- **Explore (Kylie, Oct 5):** Map / Calendar switch, remembers last choice. One search icon (Home and Explore) opens the calendar view's search.
-- **No confirmation steps:** no "Did you go?", no "Were you there?" as a step. Attending → Attended when the date passes (`settlePassedPlans` at app start).
-- **Friction chips:** Low never shown; Moderate pale blue, Heavy Dodger blue, Extreme ink. Same palette on the Map sheet and the date page.
-- **Spacing/type:** she wants it tight ("I'm not my grandparents"); one pass done, say "tighter" for another.
-- **Logos:** abbreviations until a public launch decision; logos are a licensing question she'll judge.
-- **Pushing (Kylie, Oct 5):** don't push every change at once. Commit, leave it on the local site (`npm run dev`, localhost:3001) for her to look at, push when she says. She OK'd the last pushes because she was stepping out.
-- **UI copy rule (Kylie, Oct 5):** users are not dumb; no explanatory banners, no "this is how others see you", utilities behind the gear. In `AGENTS.md`.
-- **You vs profile (settled Oct 5 after consulting Letterboxd/Strava/Flighty patterns):** one page; You holds the controls, `/p/<handle>` is the same page as a visitor sees. No separate profile page, no "Your page" row; the link is only for sharing.
-- **Friends is a tab on You** (she corrected a section I built). Feed = friends only, never strangers; no comments or likes.
-- **Stats:** Nights, Venues, Heaviest night (not Cities). Filters live on the Stats tab only.
-- **Accounts (Kylie, Oct 5):** account = login + saved data; profile = public face (display name, avatar, visible nights). She wants profiles **early** so they can be corrected, and people following each other someday. Visibility switch on the account: Only me (default) / People I approve / Anyone. **No feed of strangers' nights. No location, ever.** Private note lives in `night_notes`, never on a shared page. Photos: later, only if free. Sign-in: Google + email link; Apple waits for the native app (🚩 $99/yr).
-- **Profile entry point (approved):** tap your name at the top of You → your profile as others see it, with Edit (display name, visibility). Link form `/p/<handle>`.
-- **Her nights live in her account**, not in the app. New people start empty. `hiddenSeedIds` stays only for old phone copies.
-- **Working rules.** Propose a structural change, then wait for approval. Never delete a feature. Flag a new cost with 🚩 and wait. Kylie locks decisions. Do not reopen a locked answer unless she does.
-- **Stamp clock.** On a night with several events, the clock is the last scheduled start that night, whichever event is scheduled last. The stamp locks 24 hours after that start. Tapping does not move the clock.
-- **Forecast.** Save stores the night only, with no forecast. The every-30-minute start-time capture is parked. Until it returns, the stamp uses the latest daily Los Angeles snapshot saved before the event's start that includes the event, and is labeled as such. A snapshot at the start, or after it, is not used. If that file has no number, no number is added. Los Angeles only.
-- **Map card (Oct 5).** Any city. The lines are "Next saved night", the chip name, then the date and city ("Fri, Oct 9 · Boston"). No gold button. A tap opens the event in its own city and leaves the map where it is. Back restores it.
-- **Home (Oct 5).** One city, stored on the device. First open: "Where's home?" House icon in the switcher. "Set as home" only on cities with events. The map always opens on home and never follows a saved night.
-- **Map UI.** No longer locked. The Oct 4 freeze on chips, the sheet, the glow, and the legend is lifted. Still propose, then wait. Save and "I was there" stay on the event page.
-- **Under 5,000.** Those rooms stay off the map. They do not feed friction. They can still be logged, and they can take a nearby read.
-- **Direction (Oct 4).** The log leads. Nothing built is deleted. No points, leaderboards, collectible badges, open posting, public photo walls, navigation, or a standalone "is tonight bad?" feed. v1 uses public data only. Logs are private by default. Tweets stay on hold until access and cost are verified. Product risks are parked.
-- **Still in force.** Her words beat docs and other models. Write Fan/Friction with the slash. Free until forced. Screens read only through `src/data/index.ts`. Every crowd figure has a kind label. Only pre-event facts affect a rating. One gold button per screen. Traffic is an estimate only, and it is never red.
-- **Logging-threshold wording.** Still open, and parked. Direction and `AGENTS.md` say about 1,000+ can be logged. The review says 1,000 only decides what is pre-listed.
-- Cloud notes: Wikipedia is blocked; ESPN rejects headless-Chrome user agents; screenshots use `playwright-core` with swiftshader args; don't `pkill` vite.
+- **Explore (Kylie, Oct 6):** one day only; the header date is the picker; Today pill only off today; swipe browses, tap selects; today = filled circle on the number, not the word (calendar convention; NN/g's "label it Today" is for full pickers); no arrows on the strip, the half cells are the scroll hint; month sheet drops from the header and lifts away; "H: L:" like Apple Weather; feels-like note small and light, not a dark box; recenter only after a hand move; credit bottom-left, controls on the right.
+- **Week view stays on Home only** ("This week" mini map). Kylie asked for it on Explore, then reconsidered; Claude agreed. Revisit only if she misses it in use.
+- **Formula (Oct 6):** option C (expected draw + steeper pull); storyline for Gilmour; plainer why lines. Hand ratings are comparison only, never the target.
+- **Words (Oct 5):** Chill · Mild · Spicy · Brutal · Cooked. Event verdict title "Fighting heavy friction". Friction chips: Low never shown; Moderate pale blue, Heavy Dodger blue, Extreme ink.
+- **Pushing:** commit, leave it on the local site for her, push when she says.
+- **UI copy rule:** users are not dumb; no explanatory banners; utilities behind the gear. She will ask for a helper when one is needed (the feels-like note).
+- **Event-entry notes (Kylie, Oct 6):** she has many; attack them systematically, backend data first, then tab by tab. Do not drip-fix.
+- **No-results rule:** only the event's own outcome is excluded. Observed weather may rate a past date. Crowd counts stay evidence.
+- **Weather:** one source (Open-Meteo, free non-commercial, on the cost milestones). City point = the metro's map center (near Inglewood for LA); fine for now.
+- **Accounts, Home, You, Friends, Stats, profiles, sign-in:** as locked Oct 5 (see `BACKLOG.md` → Accounts and Home and Explore). Private by default; no strangers' feed; no location, ever.
+- **Working rules:** propose structural changes, then wait. Never delete a feature. 🚩 any new cost. Kylie locks decisions. Fan/Friction with the slash. Screens read only through `src/data/index.ts`. One gold button per screen. Traffic is an estimate, never red.
+- **Testing notes:** headless Chromium at `/usr/bin/chromium` with swiftshader flags; a scratch DevTools-protocol script can drag the map. Set `fan-friction:home-metro` = `"la"` and `fan-friction:tipsDone` = `true` in localStorage first, or the home picker and tips cover the map. Don't `pkill` vite.
 
 ## Next steps
-1. Kylie reviews on the live site: the formula on date and event pages, the Explore week strip and month sheet, Home's quiet line and the next-7-days mini map, the Mild/Spicy words.
-2. Formula tuning session on the 13 nights (holdouts kept): the WS G1 "Heavy" soft spot (Marquee pull vs. five competitors), Gilmour's storyline point, the why-line copy. Then the attendance collection job (review §11) for real calibration.
-3. Rehome Famous nights (Home discovery strip or team pages). Entry-row design when she has notes. Data widening (away games, concerts, results) when she asks. Parked: full Gridlock zones, Traffic, Night story, Compare-with.
+1. Kylie tries Explore on her phone: the strip's swipe and snap, the month sheet's lift-to-close, recenter after a pinch, the feels-like note.
+2. Her event-entry notes, systematically: backend data first, then tab by tab. Ask her for the batch.
+3. Attendance calibration job (review §11): announced crowds per team and bucket, expected draw computed instead of hand-seeded, held-out dates. Then retune the placeholder constants.
+4. Parked (see `BACKLOG.md`): rehome Famous nights, the October 2026 multi-city research (its prompt is untracked from another session), Gridlock zones, Traffic, Night story.
 
 **Next command to run:**
 ```bash
-git pull --ff-only && npm run dev   # localhost:3001. Formula table: npx rolldown scripts/formula-table.mts --format esm --platform node -o /tmp/t.mjs && node /tmp/t.mjs
+git pull --ff-only && npm run dev   # localhost:3001 → Explore
 ```
