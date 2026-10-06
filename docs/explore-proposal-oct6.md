@@ -1,6 +1,6 @@
 # Explore proposal (Oct 6, 2026): one day at a time
 
-Kylie's three notes from Oct 5, taken together: show the day's high and low, drop "Next 7 days", and make the week strip a day-by-day carousel like an airline date picker. **Kylie, Oct 6:** swipe browses, tap selects (option B). The "Next up" line on an empty day: yes. Range on the date page: pending her answer. Not built yet.
+Kylie's three notes from Oct 5, taken together: show the day's high and low, drop "Next 7 days", and make the week strip a day-by-day carousel like an airline date picker. **Kylie, Oct 6:** swipe browses, tap selects (option B). The "Next up" line on an empty day: yes. Range on both the map header and the date page header (Oct 6). Building, data first.
 
 ## Why the map shows no temperature today
 Two causes, both found in the code:
