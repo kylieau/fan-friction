@@ -44,6 +44,26 @@ export const GAME_RESULTS: GameResult[] = [
     "attendance": 50194
   },
   {
+    "eventId": "2026-10-04-espn-ducks-401891778",
+    "metroId": "la",
+    "date": "2026-10-04",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "honda-center",
+    "homeTeamId": "ducks",
+    "home": {
+      "name": "Ducks",
+      "score": 3
+    },
+    "away": {
+      "name": "Panthers",
+      "score": 2
+    },
+    "attendance": 17174,
+    "note": "OT",
+    "capturedAt": "2026-10-06T06:23:06.153Z"
+  },
+  {
     "eventId": "2026-10-04-mlb-849823",
     "metroId": "la",
     "date": "2026-10-04",
@@ -59,7 +79,7 @@ export const GAME_RESULTS: GameResult[] = [
       "name": "Braves",
       "score": 3
     },
-    "capturedAt": "2026-10-06T05:16:56.591Z",
+    "capturedAt": "2026-10-06T06:23:06.363Z",
     "attendance": 50729
   }
 ];

@@ -125,7 +125,8 @@ async function collectEspn(team) {
     let kept = 0;
     for (const e of json.events ?? []) {
       const c = e.competitions?.[0];
-      if (!c || c.status?.type?.name !== 'STATUS_FINAL') continue;
+      // Soccer says STATUS_FULL_TIME; everything else says STATUS_FINAL.
+      if (!c || !/^STATUS_(FINAL|FULL_TIME)/.test(c.status?.type?.name ?? '')) continue;
       const home = c.competitors.find((x) => x.homeAway === 'home');
       const away = c.competitors.find((x) => x.homeAway === 'away');
       if (!home || home.team.id !== team.espnId) continue;

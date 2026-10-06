@@ -21,6 +21,78 @@ export interface ExpectedDrawRow {
 export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   {
     "metroId": "la",
+    "teamId": "angel-city",
+    "dayClass": "all",
+    "month": null,
+    "count": 18102,
+    "games": 37,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 16682,
+    "games": 9,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 15033,
+    "games": 3,
+    "seasons": "2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18465,
+    "games": 5,
+    "seasons": "2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17084,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 20039,
+    "games": 17,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 20864,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 19940,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
     "teamId": "angels",
     "dayClass": "all",
     "month": null,
@@ -1029,6 +1101,123 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   },
   {
     "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "all",
+    "month": null,
+    "count": 21707,
+    "games": 55,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19505,
+    "games": 9,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 44782,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 22198,
+    "games": 33,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 22924,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 22008,
+    "games": 3,
+    "seasons": "2023,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 21707,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 21269,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 20203,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 21568,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 21582,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 22149,
+    "games": 12,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 25335,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
     "teamId": "kings",
     "dayClass": "all",
     "month": null,
@@ -1206,6 +1395,132 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "count": 18145,
     "games": 3,
     "seasons": "2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "all",
+    "month": null,
+    "count": 22127,
+    "games": 57,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 22120,
+    "games": 15,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 22120,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 22125,
+    "games": 3,
+    "seasons": "2023"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 22163,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 22053,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 22130,
+    "games": 30,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 22137,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 22122,
+    "games": 5,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 22099,
+    "games": 3,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 22119,
+    "games": 4,
+    "seasons": "2023,2024"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 22122,
+    "games": 4,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 22217,
+    "games": 10,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 22221,
+    "games": 3,
+    "seasons": "2023,2024,2025"
   },
   {
     "metroId": "la",

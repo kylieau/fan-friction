@@ -207,7 +207,8 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
     ESPN_TEAMS.filter((t) => t.metroId === metroId).map(async (t) =>
       (await scheduleFor(t, true)).flatMap((g): GameResult[] => {
         const c = g.competitions[0];
-        if (c?.status?.type?.name !== 'STATUS_FINAL') return [];
+        // Soccer says STATUS_FULL_TIME; everything else says STATUS_FINAL.
+        if (!/^STATUS_(FINAL|FULL_TIME)/.test(c?.status?.type?.name ?? '')) return [];
         const event = toEvent(g, t);
         if (!event || event.date < from || event.date > through) return [];
         const home = c.competitors.find((x) => x.homeAway === 'home');
