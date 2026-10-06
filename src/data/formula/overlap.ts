@@ -14,6 +14,8 @@ export const TIER_WEIGHT: Record<Tier, number> = { High: 0.7, Medium: 0.35, Low:
  */
 const BROAD: Record<string, { fromYear: number; teams: string[] }[]> = {
   la: [{ fromYear: 2014, teams: ['lakers', 'dodgers'] }],
+  // The Padres are the city's team; the Chargers were too until they left for LA after 2016.
+  'san-diego': [{ fromYear: 2017, teams: ['padres'] }],
 };
 
 export function isBroad(metroId: string, teamId: string | undefined, date: string): boolean {
