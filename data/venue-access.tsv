@@ -49,7 +49,27 @@ frontwave-arena	san-diego	7500	0	7	4	2250	35	0	Frontwave Arena
 torero-stadium	san-diego	6000	0	26	9	1450	53	0	Torero Stadium
 jenny-craig-pavilion	san-diego	5100	0	21	5	1600	55	0	Jenny Craig Pavilion
 san-diego-convention-center	san-diego	6500	0	22	8	1250	12	0	San Diego Convention Center
-t-mobile-park	seattle	47929	0	14	7	200	8	0	T-Mobile Park
+husky-stadium	seattle	72132	0	12	3	550	40	1	Husky Stadium
+lumen-field	seattle	68740	0	22	7	200	22	0	Lumen Field
+t-mobile-park	seattle	47943	0	14	7	200	8	0	T-Mobile Park
+pacific-raceways	seattle	30000	1	6	1	850	72	1	Pacific Raceways
+gorge-amphitheatre	seattle	27500	1	1	0	>1500	142	1	The Gorge
+seattle-center	seattle	26000	0	31	9	350	23	0	Seattle Center
+tacoma-dome	seattle	21000	0	18	8	200	79	0	Tacoma Dome
+climate-pledge-arena	seattle	18300	0	40	10	700	47	0	Climate Pledge Arena
+white-river-amphitheatre	seattle	16000	1	10	1	>1500	58	1	White River Amphitheatre
+everett-memorial-stadium	seattle	12000	0	18	8	200	47	0	Everett Memorial Stadium
+memorial-stadium-seattle	seattle	12000	0	25	9	250	45	0	Memorial Stadium
+washington-state-fair-grandstand	seattle	10200	0	16	9	400	7	0	Umpqua Bank Grandstand
+alaska-airlines-arena	seattle	10000	0	10	5	800	49	0	Alaska Airlines Arena
+angel-of-the-winds-arena	seattle	10000	0	18	9	850	28	0	Angel of the Winds Arena
+emerald-downs	seattle	9100	0	4	1	700	4	0	Emerald Downs
+evergreen-speedway	seattle	7500	0	2	0	500	36	0	Evergreen Speedway
+accesso-showare-center	seattle	7300	0	14	4	200	3	0	accesso ShoWare Center
+wamu-theater	seattle	7000	0	16	7	150	15	0	WaMu Theater
+marymoor-live	seattle	6500	0	1	0	950	3	0	Marymoor Live
+cheney-stadium	seattle	6500	0	9	4	200	43	1	Cheney Stadium
+remlinger-farms	seattle	6000	1	7	4	>1500	8	0	Remlinger Farms
 wintrust-arena	chicago	10387	0	19	8	550	17	0	Wintrust Arena
 amalie-arena	tampa	19420	0	38	10	150	15	0	Amalie Arena
 mortgage-matchup-center	phoenix	16795	0	30	9	1750	26	0	Mortgage Matchup Center
