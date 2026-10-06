@@ -85,6 +85,8 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     strained: true,
     names: [{ name: 'Hollywood Bowl' }],
+    // LA Phil: 39% came by bus in 2025 (26% in 2022), so about 61% by car or other (docs/venue-egress-answer.md).
+    carShare: 0.61,
     location: [-118.3391, 34.1122],
     capacity: [{ seats: 17500, note: 'LA Phil. An older figure is 17,376.' }],
     roof: 'open',
@@ -374,6 +376,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'citi-field',
     metroId: 'new-york',
     names: [{ name: 'Citi Field' }],
+    // Reported: transit share reached 45% during the 2008–09 construction years (Sam Schwartz); a historical figure.
+    carShare: 0.55,
     location: [-73.8458, 40.7571],
     capacity: [{ seats: 41922, setup: 'baseball', note: 'Listed capacity' }],
     roof: 'open',
@@ -382,6 +386,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'petco-park',
     metroId: 'san-diego',
     names: [{ name: 'Petco Park' }],
+    // Estimated: MTS counts about 8,000 trolley riders on a sellout against 39,860 seats (docs/venue-egress-answer.md).
+    carShare: 0.8,
     location: [-117.1569, 32.7072],
     capacity: [{ seats: 39860, setup: 'baseball', note: 'Fixed seats (MLB). 42,445 is also reported and likely counts standing room.' }],
     roof: 'open',
@@ -562,6 +568,8 @@ export const VENUES: Record<string, Venue> = {
     id: 'golden-1-center',
     metroId: 'sacramento',
     names: [{ name: 'Golden 1 Center' }],
+    // Estimated by subtraction: the city put walking, biking and transit at 10–15% before opening (docs/venue-egress-answer.md).
+    carShare: 0.87,
     location: [-121.4996, 38.5802],
     capacity: [{ seats: 17600, setup: 'basketball', note: 'About 17,600 for basketball' }],
     roof: 'indoor',
