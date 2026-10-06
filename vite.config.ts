@@ -1,5 +1,6 @@
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
+import { VitePWA } from 'vite-plugin-pwa';
 import { APP } from './src/config/app.ts';
 import { THEME } from './src/config/theme.ts';
 
@@ -41,7 +42,45 @@ function appIdentity(): Plugin {
   };
 }
 
+/**
+ * The installed app works offline (big-picture plan, step 8): the app shell is
+ * kept on the phone, the shared catalog's last answers are kept for a week so
+ * a night read on the train is still there in the tunnel, and map tiles and
+ * fonts are kept once seen. Accounts and writes always go to the network.
+ */
+function offlineShell(): Plugin[] {
+  return VitePWA({
+    registerType: 'autoUpdate',
+    injectRegister: 'auto',
+    manifest: false, // appIdentity() writes the manifest from the one app config
+    workbox: {
+      globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest,woff2}'],
+      maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
+      navigateFallback: '/index.html',
+      navigateFallbackDenylist: [/^\/api\//],
+      runtimeCaching: [
+        {
+          // The shared catalog: the network when it answers, the last copy when it doesn't.
+          urlPattern: ({ url, request }) => request.method === 'GET' && url.hostname.endsWith('.supabase.co') && url.pathname.startsWith('/rest/v1/'),
+          handler: 'NetworkFirst',
+          options: { cacheName: 'catalog', networkTimeoutSeconds: 6, expiration: { maxEntries: 300, maxAgeSeconds: 7 * 86400 } },
+        },
+        {
+          urlPattern: ({ url }) => url.hostname === 'tiles.openfreemap.org',
+          handler: 'CacheFirst',
+          options: { cacheName: 'map-tiles', expiration: { maxEntries: 400, maxAgeSeconds: 30 * 86400 } },
+        },
+        {
+          urlPattern: ({ url }) => url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com',
+          handler: 'StaleWhileRevalidate',
+          options: { cacheName: 'fonts', expiration: { maxEntries: 30, maxAgeSeconds: 365 * 86400 } },
+        },
+      ],
+    },
+  });
+}
+
 export default defineConfig({
-  plugins: [react(), appIdentity()],
+  plugins: [react(), appIdentity(), ...offlineShell()],
   worker: { format: 'es' },
 });
