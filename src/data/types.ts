@@ -45,6 +45,12 @@ export interface Venue {
    * (`isStrained`). Gridlock × 1.25 in a driving city, × 1.1 in a transit city.
    */
   strained?: boolean;
+  /**
+   * Share of fans who drive to this venue (0–1), when a measured figure exists
+   * (Yankee Stadium about 0.55, Nationals Park about 0.66). Scales the
+   * hard-access penalty. Without one, the city type supplies a default.
+   */
+  carShare?: number;
 }
 
 // ---------- Teams ----------

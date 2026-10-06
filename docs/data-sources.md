@@ -39,6 +39,7 @@ Kylie, Oct 6, 2026: one file that says where each kind of data is pulled from, s
 - `docs/la-venue-table-answer.md`: the venue research, with the verdict on each figure the app already had.
 - `docs/research-oct-2026/`: October 2026 events in four cities (from the other session).
 - `docs/sport-list-second-opinion-answer.md`: how a game is classified.
+- `docs/hard-access-weight-answer.md`: what hard access and transit do to egress (StreetLight, Hwang/Humphreys/Pyun, FHWA); the ×1.25 and the car-share scaling.
 - `docs/formula-review-response.md`: the formula review, including the calibration plan (§11).
 
 ## Not yet used, checked as available

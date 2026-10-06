@@ -144,8 +144,7 @@ function backgroundFor(
   events: readonly CrowdEvent[],
   date: string,
   rain: boolean,
-  strained: boolean,
-  cityType: 'sprawl' | 'hub' | 'transit',
+  strainedCarShare: number | null,
 ): number {
   const day = new Date(`${date}T12:00:00Z`).getUTCDay(); // 0 Sunday … 6 Saturday
   let factor = 1;
@@ -156,13 +155,27 @@ function backgroundFor(
   if (day >= 1 && day <= 5 && rush) factor = day === 5 ? 1.4 : 1.3;
   else if (day === 0 && events.every((e) => startHour(e) < 14)) factor = 0.9;
   if (rain) factor *= 1.15;
-  // A hard-access site (hillside, few streets) bites hardest where everyone drives (Kylie, Oct 6).
-  // Both numbers are placeholders pending docs/hard-access-weight-prompt.md.
-  if (strained) factor *= HARD_ACCESS_FACTOR[cityType];
+  if (strainedCarShare !== null) factor *= hardAccessFactor(strainedCarShare);
   return factor;
 }
 
-const HARD_ACCESS_FACTOR: Record<'sprawl' | 'hub' | 'transit', number> = { sprawl: 1.25, hub: 1.25, transit: 1.1 };
+/**
+ * The hard-access multiplier (docs/hard-access-weight-answer.md, Oct 6, 2026).
+ * ×1.25 where everyone drives, scaled by the share of fans who drive to that
+ * venue: the penalty is a car's problem, and transit share belongs to the
+ * venue, not the city. A placeholder: the research puts the true effect at
+ * or above this, but the read already compares a hillside venue to its own
+ * quiet normal, so stacking more on top made a lone Monday game read mid.
+ * The better rule, cars per outbound exit lane, waits for lane counts.
+ */
+export const HARD_ACCESS_BASE = 1.25;
+export const CAR_SHARE_REFERENCE = 0.85;
+export function hardAccessFactor(carShare: number): number {
+  return 1 + (HARD_ACCESS_BASE - 1) * (carShare / CAR_SHARE_REFERENCE);
+}
+
+/** The share of fans who drive, until a venue has its own figure. */
+const CAR_SHARE_BY_CITY: Record<'sprawl' | 'hub' | 'transit', number> = { sprawl: 0.85, hub: 0.85, transit: 0.4 };
 
 /** Gridlock for one date in a city. `rainy` lists events with rain in their forecast. */
 export function dateGridlock(metroId: string, date: string, events: readonly CrowdEvent[], rainy: ReadonlySet<string> = new Set()): DateGridlock {
@@ -199,11 +212,15 @@ export function dateGridlock(metroId: string, date: string, events: readonly Cro
       normal += spillWeight(other, zone, cityType) * other.largest;
     }
     const rain = mine.some((e) => rainy.has(e.id));
-    const strained = mine.some((e) => {
+    // The hard-access venue in the zone with the most driving, if any.
+    let strainedCarShare: number | null = null;
+    for (const e of mine) {
       const venue = e.place.type === 'venue' ? VENUES[e.place.venueId] : undefined;
-      return venue ? isStrained(venue) : false;
-    });
-    const background = backgroundFor(mine, date, rain, strained, cityType);
+      if (!venue || !isStrained(venue)) continue;
+      const share = venue.carShare ?? CAR_SHARE_BY_CITY[cityType];
+      strainedCarShare = Math.max(strainedCarShare ?? 0, share);
+    }
+    const background = backgroundFor(mine, date, rain, strainedCarShare);
     const ratio = normal > 0 ? (background * peak) / normal : 1;
     const score = Math.max(1, Math.min(10, 1 + SCALE * Math.log2(Math.max(ratio, 0.01))));
     scored.push({ zone, events: mine, load: peak, normal, background, score });

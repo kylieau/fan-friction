@@ -19,7 +19,7 @@ _Last synced: Oct 6, 2026, end of the second session. Everything below is commit
 - **Venue table:** every LA room of 5,000+ (37 venues), figures labeled official/reported/estimated, coordinates geocoded. Kia Forum corrected (17,500 concert; 17,505 was basketball).
 - **Calibration:** `data/attendance/la/` holds three seasons of announced crowds for 16 teams; `scripts/attendance-calibrate.mjs` writes medians by team, day class and month to `src/data/expectedDrawIndex.ts`; `src/data/expectedDraw.ts` sizes an event by them when no draw is seeded. UCLA football pulls as 42,000, not 89,702.
 - **Retune analysis** (`scripts/retune-analysis.mjs`): the direction holds (contested games draw a few percent below their norm) but the constants can't be pinned; **Kylie: keep the placeholders, rerun in a season.**
-- **Hard access is a rule, not a hand flag** (`isStrained` in `src/data/venues.ts`, measures in `src/data/venueAccessIndex.ts` from `scripts/venue-access.mjs`): relief ≥ 40 m within 500 m and ≤ 4 named streets within 250 m. Flagged: Hollywood Bowl, Greek, Rose Bowl, **Dodger Stadium, Weingart Stadium**. Pauley off (39 m). Weight × 1.25 in a driving city, × 1.1 in a transit city, both placeholders pending `docs/hard-access-weight-prompt.md` (Kylie will run it).
+- **Hard access is a rule, not a hand flag** (`isStrained` in `src/data/venues.ts`, measures in `src/data/venueAccessIndex.ts` from `scripts/venue-access.mjs`): relief ≥ 40 m within 500 m and ≤ 4 named streets within 250 m. Flagged: Hollywood Bowl, Greek, Rose Bowl, **Dodger Stadium, Weingart Stadium**. Pauley off (39 m). Weight: ×1.25 at 85% driving, scaled by the venue's car share (`carShare` on the venue, else 0.85 driving city / 0.4 transit city), per the research in `docs/hard-access-weight-answer.md`; ×1.5 was tested and rejected (a lone Monday Dodgers game would read 4.6). Better rule later: cars per exit lane.
 - **Today tab** on the strip's edge (left when looking ahead, right when looking back) replaced the floating pill.
 
 **Principle (Kylie, Oct 6):** LA is the only city built by hand. `docs/new-city-checklist.md` is how every later city gets added. Anything that can't go on that checklist isn't done.
@@ -37,20 +37,19 @@ The other session's commit fb20b3f (October research, `docs/research-oct-2026/`,
 - **Big hand-typed events: suggest, don't publish.** Kylie checks `suggested_events` in Supabase and seeds.
 - **Sport list v1** as the second opinion laid out (sport, level, division, competition). Kylie will have notes after using it.
 - **Retune:** placeholders stay; rerun after a season of archived nights with concerts.
-- **Hard access:** the rule above; Pauley off at 40 m; weights 1.25 / 1.1 pending research.
+- **Hard access:** the rule above; Pauley off at 40 m; ×1.25 scaled by the venue's car share (research folded in Oct 6).
 - **Free Ticketmaster key** OK at step 4 if it stays free with no later obligation; read the terms first.
 - **Step 3 (Compare) waits for Kylie's go-ahead.**
 - **Testing notes:** headless Chromium at `/usr/bin/chromium` with swiftshader flags and a phone user agent (ESPN 403s "HeadlessChrome"); set `fan-friction:home-metro` = `"la"` and `fan-friction:tipsDone` = `true` in localStorage. Don't `pkill` vite. Overpass (OpenStreetMap's query server) was overloaded Oct 6; the venue survey reads the map tiles instead. Open-Elevation rate-limits repeat calls (the script retries).
 
 ## Open for Kylie
-- The hard-access weight research (`docs/hard-access-weight-prompt.md`): are 1.25 and 1.1 right?
 - Notes on the entry layer and the Add form after using them; the sport list after a few entries.
 - The known edges from step 1: the review isn't shown on the profile page yet; Big-event suggestions file only when signed in.
 - The two weights, Pauley, and the Dodger Stadium property line can be revisited when the full OpenStreetMap data (parking lots) is reachable.
 
 ## Next steps
 1. **Wait for Kylie's word before step 3** (Compare rebuild: two nights side by side, "Compare with…" on the date page, this-year stats). Proposal first.
-2. Fold in the hard-access weight research when she pastes it.
+2. Her read of `docs/hard-access-weight-answer.md` (×1.25 kept; venue car share scales it).
 3. Her event-entry notes, when she has them: backend data first, then tab by tab.
 4. Step 4 later: Ticketmaster concerts 🚩 (free key; terms first) and a second city via `docs/new-city-checklist.md`.
 
