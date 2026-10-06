@@ -73,7 +73,9 @@ export type Audience =
   | { domain: 'other'; tag: string };
 
 /** Top pro, lower pro, college, or school. Left off means top pro. */
-export type SportsLevel = 'pro' | 'lower' | 'college' | 'school';
+export type SportsLevel = 'pro' | 'lower' | 'college' | 'school' | 'amateur';
+/** Men's, women's or mixed. Its own field: it cuts across every level (Oct 6, 2026). */
+export type Division = 'men' | 'women' | 'mixed';
 
 /**
  * Pre-event facts the occasion rule scores (formula v4, Oct 5, 2026). Every one
@@ -373,6 +375,11 @@ export interface Entry {
   sport: string;
   /** Team or artist names. Opponents she didn't go "for" stay out. */
   sides: string[];
+  /** For a game typed in by hand: pro, college, high school… Catalog games carry this on the event. */
+  level?: SportsLevel;
+  division?: Division;
+  /** "WNBA", "Premier League", "NCAA D-I". Competition, not league: cups and tournaments fit. */
+  competition?: string;
   venue?: string;
   /** Final score, only when one is actually known. Shown as Outcome. */
   result?: string;

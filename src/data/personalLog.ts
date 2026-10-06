@@ -10,10 +10,11 @@ import { venueNameOn, VENUES } from './venues';
 import { clearPhoneCopy, isSavingToAccount, mergeLogs, entryStore, readSavedLog, setStoreAccount } from './storage';
 import { onAccountChange } from './account';
 import { favoriteKey, favoritesFromLog } from './favorites';
+import { levelPhrase } from './competitions';
 import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
-import type { CrowdEvent, Entry, Plan, Stamp, PersonalLog, YouOrder } from './types';
+import type { CrowdEvent, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -192,11 +193,20 @@ export function eventTypeLabel(kind: string, sport: string): string {
   return sport;
 }
 
+/** "Basketball · WNBA", "Basketball · Women's college", "Football · High school": the row's type line for a hand-typed game. */
+export function entryTypeLabel(entry: Entry): string {
+  const base = eventTypeLabel(entry.kind, entry.sport);
+  if (entry.kind !== 'game') return base;
+  if (entry.competition) return `${base} · ${entry.competition}`;
+  if (entry.level) return `${base} · ${levelPhrase(entry.level, entry.division)}`;
+  return base;
+}
+
 /** Separate labeled facts. Personal notes are not one of them. */
 export function entryFacts(entry: Entry, scope: 'all' | 'before' = 'all'): LabeledFact[] {
   const facts: LabeledFact[] = [];
   if (entry.result) facts.push({ label: 'Outcome', value: entry.result });
-  const type = eventTypeLabel(entry.kind, entry.sport);
+  const type = entryTypeLabel(entry);
   if (type) facts.push({ label: 'Type', value: type });
   if (entry.starter) facts.push({ label: 'Starter', value: entry.starter });
   if (entry.promo) facts.push({ label: 'Promo', value: entry.promo });
@@ -231,6 +241,9 @@ export interface ManualNight {
   kind: Entry['kind'];
   /** For a game: Baseball, Basketball, and so on. Shows use Concerts. */
   sport?: string;
+  level?: SportsLevel;
+  division?: Division;
+  competition?: string;
   when: Entry['when'];
   venue?: string;
   /** A metro id, or undefined for somewhere the app has no city for. */
@@ -255,6 +268,9 @@ export function addManualEntry(night: ManualNight, homeMetroId: string | null): 
     tags: [],
     sport: game ? (night.sport?.trim() || 'Sports') : 'Concerts',
     sides: [],
+    ...(game && night.level ? { level: night.level } : {}),
+    ...(game && night.division ? { division: night.division } : {}),
+    ...(game && night.competition?.trim() ? { competition: night.competition.trim() } : {}),
     venue: known ? venueNameOn(known, night.when.sort) : venue,
     kind: night.kind,
     belowFloor: true,

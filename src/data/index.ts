@@ -276,4 +276,6 @@ export {
 } from './personalLog';
 export type { EntryEdit, LabeledFact, ManualNight, SyncStatus } from './personalLog';
 export { suggestEvent } from './suggestions';
+export { COMPETITIONS, LEVELS, SPORTS_MORE, SPORTS_SHOWN, competitionNamed, competitionsFor, divisionChoices, levelPhrase } from './competitions';
+export type { Competition } from './competitions';
 export type * from './types';
