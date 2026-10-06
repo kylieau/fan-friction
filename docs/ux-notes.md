@@ -21,7 +21,7 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 - "Pick a night" shouldn't be a second date control. The yellow button stays but doesn't duplicate the header.
 - A pin and its row are one selection; tapping either selects both.
 - The "i" on the map is the tip entry, or it's cut.
-- Mid theaters (Peacock etc.) only get a pin when they share a campus with a headline night.
+- Mid theaters (Peacock etc.) only get a pin when they share a campus with a headline night. (Oct 6: an arena concert counts as headline; see the v3 doc.)
 - Traffic, if kept: same map, different read. Three cues (Light / Heavy / Skip), always "Estimate · not live." "Should I brave the roads?" is the mode's title. No second map, no minute ETAs.
 - Plans, if kept: pins on this map, your saves only, no shared who's-going list.
 
