@@ -1,0 +1,646 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "metroName": "Los Angeles",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-06",
+  "capturedAt": "2026-10-06T14:12:21.410Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-06",
+    "through": "2026-10-20"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 1
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 17
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-06-espn-kings-401891806",
+      "metroId": "la",
+      "date": "2026-10-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kings vs. Panthers",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kings",
+        "away": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-07-espn-ducks-401892456",
+      "metroId": "la",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ducks vs. Oilers",
+      "broadcast": "KCOP",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ducks",
+        "away": "oilers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-08-espn-lakers-401898717",
+      "metroId": "la",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Lakers vs. Sacramento Kings",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lakers",
+        "away": "sacramento-kings"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-09-mlb-849821",
+      "broadcast": "FOX",
+      "metroId": "la",
+      "date": "2026-10-09",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Dodgers vs. Braves",
+      "stakes": {
+        "round": "NLDS",
+        "game": 5
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "dodger-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "dodgers",
+        "away": "braves"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-10-espn-lafc-761858",
+      "metroId": "la",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "kind": "game",
+      "title": "LAFC vs. Vancouver",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "lafc",
+        "away": "vancouver"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-11-espn-chargers-401872989",
+      "metroId": "la",
+      "date": "2026-10-11",
+      "start": "13:05",
+      "kind": "game",
+      "title": "Chargers vs. Broncos",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "sofi-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "chargers",
+        "away": "broncos"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-12-espn-rams-401872994",
+      "metroId": "la",
+      "date": "2026-10-12",
+      "start": "17:15",
+      "kind": "game",
+      "title": "Rams vs. Bills",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "sofi-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "rams",
+        "away": "bills"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-13-espn-ducks-401892501",
+      "metroId": "la",
+      "date": "2026-10-13",
+      "start": "18:45",
+      "kind": "game",
+      "title": "Ducks vs. Flames",
+      "broadcast": "KCOP",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ducks",
+        "away": "flames"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-13-espn-kings-401892502",
+      "metroId": "la",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Kings vs. Oilers",
+      "broadcast": "ABTV",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kings",
+        "away": "oilers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-14-espn-clippers-401918011",
+      "metroId": "la",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Clippers vs. Nuggets",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "intuit-dome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "clippers",
+        "away": "nuggets"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-14-espn-galaxy-761874",
+      "metroId": "la",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "LA Galaxy vs. Portland",
+      "place": {
+        "type": "venue",
+        "venueId": "dignity-health-sports-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "galaxy",
+        "away": "portland"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-14-espn-lafc-761873",
+      "metroId": "la",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "LAFC vs. Austin",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "lafc",
+        "away": "austin"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-16-espn-ducks-401892518",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ducks vs. Bruins",
+      "broadcast": "KCOP",
+      "place": {
+        "type": "venue",
+        "venueId": "honda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ducks",
+        "away": "bruins"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-16-espn-lakers-401898719",
+      "metroId": "la",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Lakers vs. Nuggets",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lakers",
+        "away": "nuggets"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-kings-401892530",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Kings vs. Bruins",
+      "broadcast": "ABTV",
+      "place": {
+        "type": "venue",
+        "venueId": "crypto-com-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "kings",
+        "away": "bruins"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-galaxy-761887",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "LA Galaxy vs. San Diego",
+      "place": {
+        "type": "venue",
+        "venueId": "dignity-health-sports-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "galaxy",
+        "away": "san-diego"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-ucla-football-401858494",
+      "metroId": "la",
+      "date": "2026-10-17",
+      "start": null,
+      "kind": "game",
+      "title": "UCLA vs. Wisconsin",
+      "place": {
+        "type": "venue",
+        "venueId": "rose-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "ucla-football",
+        "away": "wisconsin"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-18-espn-rams-401873004",
+      "metroId": "la",
+      "date": "2026-10-18",
+      "start": "13:05",
+      "kind": "game",
+      "title": "Rams vs. Cardinals",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "sofi-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "rams",
+        "away": "cardinals"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-06-espn-kings-401891806",
+      "date": "2026-10-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-07-espn-ducks-401892456",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-08-espn-lakers-401898717",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-09-mlb-849821",
+      "date": "2026-10-09",
+      "start": "17:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-lafc-761858",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-11-espn-chargers-401872989",
+      "date": "2026-10-11",
+      "start": "13:05",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "86° feels-like at a 1:05 pm start, no roof.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-12-espn-rams-401872994",
+      "date": "2026-10-12",
+      "start": "17:15",
+      "read": {
+        "rating": 2.8,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-13-espn-ducks-401892501",
+      "date": "2026-10-13",
+      "start": "18:45",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Kings vs. Oilers 28 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-13-espn-kings-401892502",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Ducks vs. Flames 28 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-clippers-401918011",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "LA Galaxy vs. Portland and LAFC vs. Austin 7.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-galaxy-761874",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "LAFC vs. Austin 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-lafc-761873",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "LA Galaxy vs. Portland 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-ducks-401892518",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Lakers vs. Nuggets 28 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-lakers-401898719",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Ducks vs. Bruins 28 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-kings-401892530",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Moderate",
+        "why": "LA Galaxy vs. San Diego 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-galaxy-761887",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "Kings vs. Bruins and UCLA vs. Wisconsin 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-ucla-football-401858494",
+      "date": "2026-10-17",
+      "start": null,
+      "read": {
+        "rating": 3.7,
+        "friction": "Moderate",
+        "why": "93° feels-like, no roof.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-rams-401873004",
+      "date": "2026-10-18",
+      "start": "13:05",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "90° feels-like at a 1:05 pm start, no roof.",
+        "method": "formula"
+      }
+    }
+  ]
+}

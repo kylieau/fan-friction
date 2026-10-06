@@ -15,6 +15,18 @@
       "code": 0,
       "precipProbability": 0,
       "precipMm": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T14:12:10.407Z",
+      "feelsLikeHighF": 76.8,
+      "feelsLikeLowF": 69.7,
+      "code": 3,
+      "precipProbability": 1,
+      "precipMm": 0
     }
   ]
 }

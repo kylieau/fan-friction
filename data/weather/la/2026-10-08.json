@@ -38,6 +38,24 @@
       "shortwave": 8,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-08",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T14:12:10.407Z",
+      "feelsLikeF": 80.9,
+      "tempF": 80.9,
+      "humidity": 49,
+      "windMph": 8,
+      "uvIndex": 0.05,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 8,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
@@ -50,6 +68,18 @@
       "feelsLikeHighF": 91.5,
       "feelsLikeLowF": 79.3,
       "code": 0,
+      "precipProbability": 0,
+      "precipMm": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-08",
+      "basis": "forecast",
+      "capturedAt": "2026-10-06T14:12:10.407Z",
+      "feelsLikeHighF": 91.7,
+      "feelsLikeLowF": 72.9,
+      "code": 2,
       "precipProbability": 0,
       "precipMm": 0
     }
