@@ -536,6 +536,8 @@ export const VENUES: Record<string, Venue> = {
   'husky-stadium': {
     id: 'husky-stadium',
     metroId: 'seattle',
+    // Official, observed: UW's 2022 game-day survey, 37% by car (29% carpool, 3% alone, 5% rideshare), 45% transit (docs/seattle-city-type-answer.md).
+    carShare: 0.37,
     // The field is "Alaska Airlines Field at Husky Stadium"; ESPN and the schedule say Husky Stadium.
     names: [{ name: 'Husky Stadium' }],
     location: [-122.3016, 47.6503],
@@ -546,6 +548,8 @@ export const VENUES: Record<string, Venue> = {
   'lumen-field': {
     id: 'lumen-field',
     metroId: 'seattle',
+    // Reported planning baseline: 60% by car (49% personal vehicle, 11% rideshare), Kimley-Horn's June 2026 World Cup mobility deck; a 2002 survey had 70–75%.
+    carShare: 0.6,
     names: [{ name: 'CenturyLink Field' }, { name: 'Lumen Field', from: '2020-11-19' }],
     location: [-122.3316, 47.5953],
     capacity: [
@@ -558,6 +562,8 @@ export const VENUES: Record<string, Venue> = {
   't-mobile-park': {
     id: 't-mobile-park',
     metroId: 'seattle',
+    // Estimated (65–75%): the only count is 82% from a 2012 study, before every Link extension since; set between that and Lumen Field's 60%.
+    carShare: 0.7,
     names: [{ name: 'Safeco Field' }, { name: 'T-Mobile Park', from: '2019-01-01' }],
     location: [-122.3323, 47.5915],
     capacity: [
@@ -570,6 +576,8 @@ export const VENUES: Record<string, Venue> = {
   'pacific-raceways': {
     id: 'pacific-raceways',
     metroId: 'seattle',
+    // Estimated: no transit, on-site parking.
+    carShare: 0.98,
     names: [{ name: 'Pacific Raceways' }],
     location: [-122.1491, 47.3224],
     capacity: [{ seats: 30000, note: 'Race days (reported). Standing and grandstand together.' }],
@@ -581,6 +589,8 @@ export const VENUES: Record<string, Venue> = {
   'gorge-amphitheatre': {
     id: 'gorge-amphitheatre',
     metroId: 'seattle',
+    // Estimated: car or charter only; private shuttles from Quincy, Ephrata and George.
+    carShare: 0.98,
     names: [{ name: 'Gorge Amphitheatre' }, { name: 'The Gorge' }],
     // Approximate (the research's figure); OpenStreetMap has no point for the amphitheatre itself.
     location: [-119.996, 47.1028],
@@ -593,6 +603,8 @@ export const VENUES: Record<string, Venue> = {
   'seattle-center': {
     id: 'seattle-center',
     metroId: 'seattle',
+    // Estimated: no figure; Climate Pledge Arena concerts (~70%), festival crowds a little more transit-minded.
+    carShare: 0.65,
     names: [{ name: 'Seattle Center' }],
     location: [-122.3497, 47.6213],
     capacity: [{ seats: 26000, setup: 'concert', note: 'A Bumbershoot-size festival on the grounds, standing (estimated)' }],
@@ -601,6 +613,8 @@ export const VENUES: Record<string, Venue> = {
   'tacoma-dome': {
     id: 'tacoma-dome',
     metroId: 'seattle',
+    // Estimated: Tacoma Dome Station is three blocks away, but Sounder runs mainly at weekday peak.
+    carShare: 0.85,
     names: [{ name: 'Tacoma Dome' }],
     location: [-122.427, 47.2369],
     capacity: [
@@ -613,6 +627,8 @@ export const VENUES: Record<string, Venue> = {
   'climate-pledge-arena': {
     id: 'climate-pledge-arena',
     metroId: 'seattle',
+    // Estimated from an official, observed transit share: 27% rode transit in Oct 2024–Sep 2025 (the arena's dashboard; concerts 20%), about 10% walked; car is the remainder. Concerts run nearer 70%.
+    carShare: 0.63,
     // KeyArena closed Oct 5, 2018 for the rebuild and reopened as Climate Pledge Arena in October 2021.
     names: [{ name: 'KeyArena' }, { name: 'Climate Pledge Arena', from: '2018-10-05' }],
     location: [-122.354, 47.6219],
@@ -629,6 +645,8 @@ export const VENUES: Record<string, Venue> = {
   'white-river-amphitheatre': {
     id: 'white-river-amphitheatre',
     metroId: 'seattle',
+    // Estimated: no transit; the shuttle is park-and-ride. A sellout is about 20,000 people and parking for about 6,800 cars.
+    carShare: 0.97,
     names: [{ name: 'White River Amphitheatre' }],
     location: [-122.1121, 47.2375],
     capacity: [{ seats: 16000, setup: 'concert', note: 'Reserved seats under a roof plus lawn (official). 20,000 before 2015.' }],
@@ -638,6 +656,8 @@ export const VENUES: Record<string, Venue> = {
   'everett-memorial-stadium': {
     id: 'everett-memorial-stadium',
     metroId: 'seattle',
+    // Estimated: local Everett Transit; on-site lots.
+    carShare: 0.93,
     names: [{ name: 'Everett Memorial Stadium' }],
     location: [-122.2036, 47.9657],
     capacity: [{ seats: 12000, setup: 'football', note: 'Reported' }],
@@ -656,6 +676,8 @@ export const VENUES: Record<string, Venue> = {
   'washington-state-fair-grandstand': {
     id: 'washington-state-fair-grandstand',
     metroId: 'seattle',
+    // Estimated, partly reported: 38,563 Fair Express riders in 2014 against about a million fairgoers; special Sounder trains two Saturdays.
+    carShare: 0.94,
     // Ticketmaster lists the grounds as the Washington State Fair Events Center.
     names: [{ name: 'Washington State Fair Events Center' }, { name: 'Umpqua Bank Grandstand' }],
     // Approximate (the research's figure); the fairgrounds in Puyallup.
@@ -666,6 +688,8 @@ export const VENUES: Record<string, Venue> = {
   'alaska-airlines-arena': {
     id: 'alaska-airlines-arena',
     metroId: 'seattle',
+    // Estimated: no figure; Husky Stadium's 37% (same station) adjusted toward driving for weeknight indoor games.
+    carShare: 0.5,
     names: [{ name: 'Hec Edmundson Pavilion' }, { name: 'Alaska Airlines Arena at Hec Edmundson Pavilion' }, { name: 'Alaska Airlines Arena' }],
     location: [-122.3021, 47.6522],
     capacity: [{ seats: 10000, setup: 'basketball', note: 'Washington Huskies (official)' }],
@@ -674,6 +698,8 @@ export const VENUES: Record<string, Venue> = {
   'angel-of-the-winds-arena': {
     id: 'angel-of-the-winds-arena',
     metroId: 'seattle',
+    // Estimated: Everett Station about 15 minutes' walk; downtown lots.
+    carShare: 0.92,
     names: [{ name: 'Xfinity Arena' }, { name: 'Angel of the Winds Arena', from: '2017-12-13' }],
     location: [-122.203, 47.9786],
     capacity: [
@@ -685,6 +711,8 @@ export const VENUES: Record<string, Venue> = {
   'emerald-downs': {
     id: 'emerald-downs',
     metroId: 'seattle',
+    // Estimated: large on-site lots; a free shuttle from Auburn Station (older program).
+    carShare: 0.95,
     names: [{ name: 'Emerald Downs' }],
     location: [-122.2357, 47.3303],
     capacity: [{ seats: 9100, note: 'No published capacity; the track\'s biggest recent crowd, July 3, 2023 (estimated). Average race day about 3,000.' }],
@@ -693,6 +721,8 @@ export const VENUES: Record<string, Venue> = {
   'evergreen-speedway': {
     id: 'evergreen-speedway',
     metroId: 'seattle',
+    // Estimated: no transit, fairgrounds lots.
+    carShare: 0.98,
     names: [{ name: 'Evergreen Speedway' }],
     location: [-121.987, 47.8693],
     capacity: [{ seats: 7500, note: '6,000–7,500 on race nights (reported)' }],
@@ -701,6 +731,8 @@ export const VENUES: Record<string, Venue> = {
   'accesso-showare-center': {
     id: 'accesso-showare-center',
     metroId: 'seattle',
+    // Estimated: 1,500+ free spaces and peak-only Sounder at Kent Station.
+    carShare: 0.92,
     // Renamed in the fall of 2017; the exact day was not in the research.
     names: [{ name: 'ShoWare Center' }, { name: 'accesso ShoWare Center', from: '2017-09-01' }],
     location: [-122.24, 47.3877],
@@ -713,6 +745,8 @@ export const VENUES: Record<string, Venue> = {
   'wamu-theater': {
     id: 'wamu-theater',
     metroId: 'seattle',
+    // Estimated: no figure; Lumen Field next door, nudged up for consumer shows and concerts.
+    carShare: 0.65,
     // The building is the Lumen Field Event Center (CenturyLink Field Event Center until Nov 19, 2020).
     names: [{ name: 'WaMu Theater' }],
     location: [-122.3329, 47.5932],
@@ -722,6 +756,8 @@ export const VENUES: Record<string, Venue> = {
   'marymoor-live': {
     id: 'marymoor-live',
     metroId: 'seattle',
+    // Estimated: the 2 Line's Marymoor Village station opened in 2025; no count yet.
+    carShare: 0.85,
     names: [{ name: 'Marymoor Park' }, { name: 'Marymoor Live', from: '2023-01-01' }],
     location: [-122.1111, 47.6587],
     capacity: [
@@ -733,6 +769,8 @@ export const VENUES: Record<string, Venue> = {
   'cheney-stadium': {
     id: 'cheney-stadium',
     metroId: 'seattle',
+    // Estimated: local buses only; on-site paid lot.
+    carShare: 0.95,
     names: [{ name: 'Cheney Stadium' }],
     location: [-122.4976, 47.2383],
     capacity: [{ seats: 6500, setup: 'baseball', note: 'Tacoma Rainiers (official)' }],
@@ -741,6 +779,8 @@ export const VENUES: Record<string, Venue> = {
   'remlinger-farms': {
     id: 'remlinger-farms',
     metroId: 'seattle',
+    // Estimated: no transit, on-site fields.
+    carShare: 0.99,
     names: [{ name: 'Remlinger Farms' }],
     location: [-121.9154, 47.6365],
     capacity: [{ seats: 6000, setup: 'concert', note: 'Up to 6,000 (reported)' }],

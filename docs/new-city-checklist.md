@@ -4,7 +4,7 @@ Kylie, Oct 6, 2026: Los Angeles is the only city built by hand. Every later city
 
 ## 1. Configure (a few lines)
 - `src/config/metros.ts`: id, name, time zone, map center and zoom.
-- `src/data/formula/gridlock.ts` `CITY_TYPE`: sprawl (everyone drives), hub, or transit. This sets the spill between zones and the hard-access weight (1.25 driving, 1.1 transit).
+- `src/data/formula/gridlock.ts` `CITY_TYPE`: sprawl (everyone drives), hub, or transit. This sets the spill between zones and the default car share for a venue without its own. Research it, don't assume it (Kylie, Oct 6): run `docs/seattle-city-type-prompt.md` with the city swapped in, and give each venue its `carShare` from the answer.
 - `src/data/formula/overlap.ts`: the city's **broad teams** (everyone's team, by year), if any.
 - `src/data/formula/weather.ts` `MONTHLY_NORMAL_F`: the heat baseline by month (empty today; the 85°F floor applies until filled). Needs a source that works for every city.
 - `src/data/scheduleArchive.ts` / `scripts/weather-fetch.mjs` / `scripts/results-fetch.mjs` / `scripts/catalog-write.mjs` (`ARCHIVE_METRO_ID`, `RESULTS_METRO_ID`): the metro ids each job covers (LA only today). The shared catalog tables are keyed by metro, so a second city needs no new tables.
