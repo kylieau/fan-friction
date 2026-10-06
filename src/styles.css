@@ -2385,6 +2385,77 @@ button {
   color: var(--ink2);
 }
 
+/* ---------- Side by side (Compare) ---------- */
+.compare-page {
+  gap: 14px;
+}
+
+.cmp-head,
+.cmp-row {
+  display: grid;
+  grid-template-columns: 88px 1fr 1fr;
+  gap: 8px;
+  align-items: start;
+}
+
+.cmp-night {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.cmp-night-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+
+.cmp-table {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 6px 14px;
+}
+
+.cmp-row {
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.cmp-row:first-child {
+  border-top: none;
+}
+
+.cmp-label {
+  font-weight: 800;
+  color: var(--ink2);
+  font-size: 13px;
+}
+
+.cmp-cell {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.compare-link {
+  align-self: center;
+}
+
+button.back-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 /* ---------- Add an event ---------- */
 .add-page {
   gap: 14px;

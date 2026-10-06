@@ -25,7 +25,7 @@ import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
-import { openedMetroId } from '../lib/view';
+import { comparePath, openedMetroId } from '../lib/view';
 import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { hoursOf, milesBetween, runningHours } from '../lib/windows';
@@ -208,6 +208,11 @@ export function EventScreen() {
         Back to the map
       </MapBack>
 
+      {logged && (
+        <Link to={comparePath({ metroId: e.metroId, date, eventId: e.id })} className="text-link compare-link">
+          Compare with…
+        </Link>
+      )}
       {logged && <RemoveFromLog entry={logged} />}
     </div>
   );

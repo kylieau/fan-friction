@@ -34,7 +34,7 @@ import { crowdKind } from '../map/crowdPoints';
 import { VENUES, venueNameOn } from '../data';
 import { clockTime, longLocalDate, weekdayLong } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
-import { eventPath } from '../lib/view';
+import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
@@ -295,6 +295,11 @@ export function DateScreen() {
             <ShareIcon />
           </button>
         </div>
+      )}
+      {!ahead && rating && (
+        <Link to={comparePath({ metroId: metro.id, date, eventId: target?.id })} className="text-link compare-link">
+          Compare with…
+        </Link>
       )}
 
       {friends.length > 0 && (

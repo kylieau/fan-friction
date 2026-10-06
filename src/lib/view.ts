@@ -61,6 +61,31 @@ export function eventPath(eventId: string, metroId: string): string {
   return `/event/${eventId}?metro=${encodeURIComponent(metroId)}`;
 }
 
+/** One night for a side-by-side: a city, a date and, when it matters, the event. */
+export interface NightKey {
+  metroId: string;
+  date: string;
+  eventId?: string;
+}
+
+function nightKeyText(key: NightKey): string {
+  return [key.metroId, key.date, key.eventId ?? ''].join('|');
+}
+
+export function parseNightKey(text: string | null): NightKey | null {
+  if (!text) return null;
+  const [metroId, date, eventId] = text.split('|');
+  if (!metroId || !isValidDate(date ?? '')) return null;
+  return { metroId, date, ...(eventId ? { eventId } : {}) };
+}
+
+/** The picker with one night, the side-by-side with two (docs/compare-proposal-oct6.md). */
+export function comparePath(a: NightKey, b?: NightKey): string {
+  const params = new URLSearchParams({ a: nightKeyText(a) });
+  if (b) params.set('b', nightKeyText(b));
+  return `/compare?${params.toString()}`;
+}
+
 /** A night typed in by hand, with no catalog event behind it. */
 export function entryPath(entryId: string): string {
   return `/entry/${encodeURIComponent(entryId)}`;

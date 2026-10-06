@@ -10,6 +10,7 @@ import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/se
 import type { EventSource, RatingSource } from './sources/types';
 import type { CalendarDay, CityDate, CrowdEvent, DateRating, LocalDate, DateSearchHit } from './types';
 import { applyFormula } from './formulaRead';
+import { rateDate } from './formula';
 import { withResults } from './results';
 import { withExpectedDraws } from './expectedDraw';
 import { primeDate } from './catalogCache';
@@ -39,6 +40,14 @@ export async function getCityDate(metroId: string, date: LocalDate): Promise<Cit
   const { events, rating } = applyFormula(metroId, date, listed);
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';
   return { metroId, date, status, events, rating };
+}
+
+/** The three parts behind a date's read, for a side-by-side (docs/compare-proposal-oct6.md). */
+export function readParts(day: CityDate): { crowdFight: number; conditions: number | null; gridlock: number } | null {
+  if (!day.rating) return null;
+  const read = rateDate(day.metroId, day.events);
+  const cond = read.reasons.find((r) => r.name === 'Conditions');
+  return { crowdFight: read.crowdFight.score, conditions: cond ? cond.score : null, gridlock: read.gridlock.score };
 }
 
 /** The hand rating on file for a date, for comparison tables only. */
