@@ -255,8 +255,12 @@ export {
   logStats,
   nextSavedPlan,
   logBackup,
+  addManualEntry,
   entryFacts,
   entryFieldsFor,
+  eventTypeLabel,
+  knownVenueNames,
+  markSuggested,
   ownEntryFacts,
   ratingForEntry,
   removeEntry,
@@ -270,5 +274,6 @@ export {
   upcomingPlans,
   yourEntries,
 } from './personalLog';
-export type { EntryEdit, LabeledFact, SyncStatus } from './personalLog';
+export type { EntryEdit, LabeledFact, ManualNight, SyncStatus } from './personalLog';
+export { suggestEvent } from './suggestions';
 export type * from './types';

@@ -27,10 +27,10 @@ import {
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
-import { GearIcon } from '../components/Icons';
+import { GearIcon, PlusIcon } from '../components/Icons';
 import { loggedDateLabel, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
-import { datePath, eventPath } from '../lib/view';
+import { datePath, entryPath, eventPath } from '../lib/view';
 
 const TOP = 8;
 
@@ -138,6 +138,9 @@ export function YouScreen() {
           <h1 className="page-title">{account?.displayName ?? 'You'}</h1>
           {account && handle && <span className="you-handle">@{handle}</span>}
         </div>
+        <Link to="/you/add" className="round-button you-add" aria-label="Add an event">
+          <PlusIcon />
+        </Link>
         <Link
           to="/you/settings"
           className="round-button you-gear"
@@ -392,5 +395,9 @@ function EntryRow({ entry, rating }: { entry: Entry; rating: number | null }) {
       </Link>
     );
   }
-  return <div className="log-row">{body}</div>;
+  return (
+    <Link to={entryPath(entry.id)} className="log-row" onClick={() => clearOpenedFromMap()}>
+      {body}
+    </Link>
+  );
 }

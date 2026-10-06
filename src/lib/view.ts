@@ -61,6 +61,11 @@ export function eventPath(eventId: string, metroId: string): string {
   return `/event/${eventId}?metro=${encodeURIComponent(metroId)}`;
 }
 
+/** A night typed in by hand, with no catalog event behind it. */
+export function entryPath(entryId: string): string {
+  return `/entry/${encodeURIComponent(entryId)}`;
+}
+
 /** The night page: a date in a city, with an event to highlight when one is meant. */
 export function datePath(date: string, metroId: string, eventId?: string): string {
   const params = new URLSearchParams();

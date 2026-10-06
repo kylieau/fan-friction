@@ -8,6 +8,8 @@ import { ExploreScreen } from './screens/ExploreScreen';
 import { EventScreen } from './screens/EventScreen';
 import { CompareScreen } from './screens/CompareScreen';
 import { YouScreen } from './screens/YouScreen';
+import { AddEntryScreen } from './screens/AddEntryScreen';
+import { ManualEntryScreen } from './screens/ManualEntryScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
 import { ProfileEditScreen } from './screens/ProfileEditScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
@@ -57,6 +59,8 @@ function Shell() {
           <Route path="/p/:handle" element={<ProfileScreen />} />
           <Route path="/profile/edit" element={<ProfileEditScreen />} />
           <Route path="/you" element={<YouScreen />} />
+          <Route path="/you/add" element={<AddEntryScreen />} />
+          <Route path="/entry/:id" element={<ManualEntryScreen />} />
           <Route
             path="/you/settings"
             element={

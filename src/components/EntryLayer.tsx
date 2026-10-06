@@ -33,7 +33,7 @@ export function EntryLayer({ entry }: { entry: Entry }) {
       {entry.review && <p className="entry-review">{entry.review}</p>}
       <FactList facts={facts} />
       <button type="button" className="link-button entry-edit" onClick={() => setEditing(true)}>
-        {empty ? 'Add a review, the score, who you went with…' : 'Edit'}
+        {empty ? `Add a review, ${entry.kind === 'game' ? 'the score' : 'the setlist'}, who you went with…` : 'Edit'}
       </button>
     </section>
   );

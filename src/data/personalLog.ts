@@ -216,6 +216,64 @@ export function entryFieldsFor(kind: Entry['kind']): (keyof EntryEdit)[] {
   ];
 }
 
+/** What the Add form collects for a night the catalog doesn't list. */
+export interface ManualNight {
+  title: string;
+  kind: Entry['kind'];
+  /** For a game: Baseball, Basketball, and so on. Shows use Concerts. */
+  sport?: string;
+  when: Entry['when'];
+  venue?: string;
+  /** A metro id, or undefined for somewhere the app has no city for. */
+  metroId?: string;
+}
+
+/**
+ * Add a night by hand (Kylie, Oct 6: anything can be logged). It is this
+ * person's entry only: not a catalog event, not on the map, and it moves no
+ * one's read. It is treated as under the floor, so it can still take the
+ * night's nearby read when the city has one. A game in another city is away.
+ */
+export function addManualEntry(night: ManualNight, homeMetroId: string | null): Entry {
+  const venue = night.venue?.trim() || undefined;
+  const known = venue ? VENUE_BY_ANY_NAME.get(venue.toLowerCase()) : undefined;
+  const metroId = night.metroId ?? known?.metroId;
+  const game = night.kind === 'game';
+  const entry: Entry = {
+    id: `manual-${crypto.randomUUID()}`,
+    when: night.when,
+    title: night.title.trim(),
+    tags: [],
+    sport: game ? (night.sport?.trim() || 'Sports') : 'Concerts',
+    sides: [],
+    venue: known ? venueNameOn(known, night.when.sort) : venue,
+    kind: night.kind,
+    belowFloor: true,
+    inMetro: Boolean(metroId),
+    ...(metroId ? { metroId } : {}),
+    ...(game && homeMetroId && metroId !== homeMetroId ? { away: true } : {}),
+  };
+  commit({ ...snapshot, added: [...snapshot.added, entry] });
+  return entry;
+}
+
+/** Remember that a hand-typed night was also suggested as a catalog event. */
+export function markSuggested(entryId: string, suggestionId: string) {
+  commit({
+    ...snapshot,
+    added: snapshot.added.map((entry) => (entry.id === entryId ? { ...entry, suggestionId } : entry)),
+  });
+}
+
+/** Every venue name the app knows, old names included, for the Add form's suggestions. */
+export function knownVenueNames(): string[] {
+  return [...new Set(Object.values(VENUES).flatMap((venue) => venue.names.map((n) => n.name)))].sort();
+}
+
+const VENUE_BY_ANY_NAME = new Map(
+  Object.values(VENUES).flatMap((venue) => venue.names.map((n) => [n.name.toLowerCase(), venue] as const)),
+);
+
 /** Write the person's own fields on one entry. Blank values clear the field. The stamp is untouched. */
 export function updateEntry(entryId: string, edit: EntryEdit) {
   const added = snapshot.added.map((entry) => {
