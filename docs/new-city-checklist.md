@@ -28,6 +28,8 @@ Kylie, Oct 6, 2026: Los Angeles is the only city built by hand. Every later city
 ## 5. Check on screen
 San Diego (Oct 6, 2026) was the first run of this list, about three hours end to end: steps 1, 2 and 4 in an hour (the Padres, the city facts, the jobs' city list, the attendance pull); step 3 from Kylie's one research run (`docs/san-diego-venue-table-answer.md`, 13 venues folded in, including Frontwave Arena, which the brief had missed); then SDSU, San Diego FC and the Wave joined the feed and the attendance pull.
 
+Seattle (Oct 6, 2026) was the second run, about ninety minutes once the research answer was in: eight teams and the city facts in one commit, 21 venues folded in (`docs/seattle-venue-table-answer.md`), the attendance pull and calibration (12 minutes), the hard-access measure (about 25 minutes, Open-Elevation's pace), one hand run of `archive-schedule`, then the nightly job by hand so the catalog had the city the same day. Two things learned: the venue table's `setup` has no festival kind (store festival caps as `concert` with a note), and ESPN's short name for a soccer club can be the city ("Seattle"), so game titles now take our own short name for a home team we know.
+
 - Explore opens on the city with its venues on the map; the date page reads; an event page shows Outcome, Starters, TV and Length after a game.
 - The city appears in Explore's city switcher and offers "Set as home" (both follow from having events; cities with none are not listed, Kylie, Oct 6).
 - The Add form lists the city's venues under Where.
