@@ -1,34 +1,198 @@
-# Research prompt: how many lanes carry cars out of each venue?
+# Research brief: event egress inputs for 43 venues
 
-Copy everything below the line into a research model. Paste the answer back to Claude to fold in. Drafted Oct 6, 2026. The point: replace the flat hard-access multiplier with the rule the egress research supports, **cars per outbound exit lane** (`docs/hard-access-weight-answer.md`).
+## Purpose
+Fan/Friction's Gridlock score estimates how hard it is to leave a
+venue after an event. Road capacity will be computed separately from
+OpenStreetMap, so do NOT research lane counts, gate streets or
+freeway ramps. I need the inputs that only research can supply:
+how many people come by car, how parking works, any special event
+traffic setup, and published clearance times I can use to test the
+formula. v1 uses only publicly available data and must work the same
+way in every city.
 
----
+## What a previous attempt found
+An earlier research pass covered 12 venues. Treat its findings as
+leads: re-check each one, replace weak sources with official ones
+where possible, and fill the gaps. Lessons from that pass:
+- No venue, team, city plan or EIR found published exit-lane counts.
+  That is why lanes are now out of scope.
+- Parking-blog guides often conflict and many are low quality. EIRs,
+  city documents, transit agencies and team pages were far more
+  reliable.
+- Downtown venues have no venue lots, so on-site spaces doesn't
+  apply. Golden 1 Center has the best substitute found: a city
+  figure for cars actually used at a sellout.
+- Stack-parked venues (Rose Bowl, Hollywood Bowl) empty as fast as
+  the stacks unpack.
 
-# Research brief: exit capacity at 43 stadiums, arenas and amphitheaters
+Findings so far (label as given; verify before reuse):
+- Dodger Stadium: 16,000 spaces, ~50,000 average attendance
+  (reported, LAist, June 2026:
+  https://laist.com/news/transportation/dodger-stadium-traffic-gondola-walking-paths-buses-what-should-la-do).
+  Lower-quality sites say 14,000 (conflict). LADOT Dodger Stadium
+  traffic assessment was due to publish recommendations in fall
+  2026; check whether it's out, since it may have mode share and
+  clearance data. Team parking pages:
+  https://www.mlb.com/dodgers/ballpark/transportation/general-parking
+  and https://www.mlb.com/dodgers/ballpark/transportation/frequently-asked-questions
+- LA Coliseum + BMO Stadium: 4,800+ spaces within Expo Park and
+  adjacent lots, shared (official, https://bmostadium.com/?p=237342).
+  Park entrances at MLK & Hoover and 39th & Figueroa; USC campus
+  parking extra (official, https://www.lacoliseum.com/parking/).
+  Exposition Park's event calendar lists which lots each event uses
+  (e.g. https://expositionpark.ca.gov/?p=16248).
+- SoFi Stadium: 9,000+ on site (reported, weak source,
+  https://meetstadium.com/stadiums/sofi-stadium/). Inglewood Park &
+  Go satellite lots, 4,000+ spaces with shuttles (official,
+  https://www.cityofinglewood.org/1394/Parking-for-Events). Intuit
+  Dome garages are also sold for SoFi events (reported,
+  https://parking-mobility-magazine.org/august-2025-destination-and-event-management/enhancing-the-game-day-experience/).
+- Intuit Dome: EIR lists West garage ~3,110 and East garage ~365
+  spaces (official, https://ceqanet.lci.ca.gov/2018021056/4); venue
+  says 4,000+ on site (official,
+  https://intuitdome.com/contact-us/faq). The IBEC EIR likely also
+  has mode share assumptions; check.
+- Hollywood Bowl: ~350 of the previous 1,700+ stacked spaces removed
+  in 2024 (reported, LA Times via
+  https://au.news.yahoo.com/hollywood-bowl-parking-harder-l-171743489.html),
+  leaving roughly 1,350 (estimated). Only Lots A and D park cars;
+  all stacked, no early exit (official,
+  https://www.hollywoodbowl.com/visit/getting-here/parking). Shuttle
+  share "more than a third" and 1–2 hour exits are anecdotal only;
+  look for LA Phil shuttle ridership figures.
+- Rose Bowl: no official space count found. General parking in Lots
+  H, 1–4, 6, 8–10, mostly on Brookside Golf Course, stacked
+  (official,
+  https://rosebowlgame.com/sports/2021/11/16/parking-transportation-information).
+  60–90 minute exits anecdotal only. Pasadena runs a police traffic
+  plan with one-way outbound streets; the plan document itself was
+  not found.
+- Angel Stadium: conflicting counts, 12,000+ (fan site) vs. 7,000
+  (Parkopedia); find an official figure. Three lot entrances:
+  Douglass Rd, State College Blvd, Orangewood Ave (official,
+  https://www.mlb.com/angels/ballpark/transportation/directions).
+- Crypto.com Arena / Peacock Theater (L.A. Live): only code-required
+  parking found, 2,200 for STAPLES and 3,583 for L.A. Live
+  (official, Farmers Field EIR,
+  https://libraryarchives.metro.net/DPGTL/losangelescity/convention-event-center-DEIR/Farmers-Field-DEIR-Volume-1-Section-4.B.2-Parking.pdf).
+  Requirements, not supply. 42,922 off-street spaces within a 15–20
+  minute walk (official, LADOT letter,
+  https://libraryarchives.metro.net/DPGTL/losangelescity/convention-event-center-DEIR/Farmers-Field-DEIR-Volume-8-Appendix-I.2-LADOT-Traffic-Study-Approval-Letter.pdf).
+  That EIR's transportation study also has mode share assumptions
+  for an event center at this location; check.
+- Golden 1 Center: 15,500 spaces within four blocks; a sold-out
+  Kings game uses about 7,000 (official, City of Sacramento,
+  https://www.cityofsacramento.org/Arena/Project-Process). 10–15%
+  walk/bike/transit was a pre-opening estimate. Streets close up to
+  45 minutes after events (reported,
+  https://www.capradio.org/articles/2016/09/15/traffic-plans-for-sacramento-downtown-arena-events-unveiled/).
+- Petco Park: trolley carried ~24% of fans per game in 2004
+  (reported, old,
+  https://progressiverailroading.com/rail_industry_trends/news/San-Diego-Trolley-scores-big-with-baseball-park-service--11563);
+  about 8,000 trolley riders on sellout days more recently (MTS data,
+  reported,
+  https://www.10news.com/news/local-news/mts-unveils-padres-trolley-encourages-public-to-take-transit-to-petco-park).
+  Look for a current MTS share figure.
+- Citi Field: no count found; team says 2026 parking is reduced by
+  construction, so counts are in flux (reported,
+  https://www.nbcnewyork.com/news/sports/how-to-get-to-citi-field/6477611).
+- Ohio Stadium: after games, campus streets run one-way outbound
+  (official, https://news.osu.edu/football-parking-information/).
+  Expect 60–90 minutes to clear lots and garages (reported,
+  https://abc6onyourside.com/sports/the-football-fever/what-to-know-before-you-go-to-osu-home-football-games-this-season-ohio-state-buckeyes-parking-college-football-parking-traffic-columbus-stadium).
+  No total space count found.
+- Not yet researched: the other 31 venues.
 
-## What this is for
-Fan/Friction is a personal log of live sports and concerts with a "friction" read on each night, computed from public data. One part of the read, Gridlock, estimates how hard it was to get in and out. Traffic engineers size event egress as **cars divided by outbound lane throughput**, so I want, for each venue below, the numbers that rule needs. No judgment calls about whether a venue "feels" hard to leave; the counts.
-
-## For each venue
-| Field | What I need |
-|---|---|
-| **Parking spaces on site** | Official count of spaces in the venue's own lots and garages (not neighborhood or satellite lots unless the venue runs shuttles from them; list those separately). |
-| **Outbound exit lanes** | How many lanes carry cars from the venue's lots and garages onto public streets at the end of an event, counting every gate. One lane each way at a two-way gate counts as one outbound lane. If police convert streets to one-way outbound for events (the Rose Bowl does), count the event configuration and say so. |
-| **Public streets at the gates** | The names of the streets those gates open onto, and how many distinct streets that is. |
-| **Freeway ramps within about 1.5 km** | Which ramps, and roughly how far. |
-| **Share of fans who drive** | Any measured mode-share figure (the share arriving by car vs. rail, bus, rideshare drop-off, walking). Yankee Stadium (~37% subway, ~45% all transit), Nationals Park (~34% rail) and Dodger Stadium (shuttle and bus share) are known to have figures; most venues won't. Mark estimates. |
-| **Published clearance time** | Any stated time to empty the lots after a sellout (venue, team, city traffic plan, EIR, newspaper). Mark anecdotal reports as such. |
-| **Source for each number** | A link. Prefer the venue's own parking page, the team, the city's event traffic plan, or an environmental impact report. Aerial imagery counts for lane counts if you say that's how you counted. |
-
-## The venues
-**Los Angeles:** Dodger Stadium, Crypto.com Arena, LA Memorial Coliseum, BMO Stadium, SoFi Stadium, Intuit Dome, Kia Forum, Hollywood Bowl, Rose Bowl, Dignity Health Sports Park (and its tennis stadium), Angel Stadium, Honda Center, Pauley Pavilion, Galen Center, Santa Anita Park, In-N-Out Burger Pomona Dragstrip, Fairplex, Weingart Stadium (East LA College), Long Beach Arena, Drake Stadium (UCLA), Los Angeles Tennis Center (UCLA), Veterans Memorial Stadium (Long Beach), Titan Stadium (Cal State Fullerton), Pacific Amphitheatre, Anaheim Convention Center, Peacock Theater, Shrine Auditorium, YouTube Theater, Greek Theatre, Championship Soccer Stadium (Irvine), Bren Events Center (UC Irvine), LBS Financial Credit Union Pyramid (Long Beach State), Empire Polo Club (Indio), FivePoint Amphitheatre (closed 2023; as it operated).
-**Other cities (for the rule to be tested outside LA):** Citi Field, Petco Park, T-Mobile Park, Wintrust Arena, Amalie Arena, Mortgage Matchup Center (Phoenix), Golden 1 Center, Ohio Stadium.
+## Fields (one row per venue)
+1. Current venue name (verify; note recent renames)
+2. Venue type: dedicated lots / shared district / downtown grid /
+   stack parked (pick all that apply)
+3. Capacity: sellout capacity for its main event types (e.g. football
+   vs. concert)
+4. On-site spaces: venue-run lots and garages only
+5. Satellite spaces: lots with venue-run or city-run shuttles,
+   reported separately
+6. Cars per sellout: any measured or officially estimated count of
+   cars actually used at a sold-out event
+7. Drive share: share of attendees arriving by private car, plus
+   whatever split exists for rail, bus, shuttle, rideshare and
+   walk/bike
+8. Vehicle occupancy: people per car, if any source measures it
+9. Event traffic configuration: one-way conversions, street closures,
+   contraflow, police-directed exits, and how long they last
+10. Published clearance time: stated time to empty the lots or for
+    traffic to return to normal after a sellout
+11. Source URL for each figure
 
 ## Rules
-- Label every number official, reported, or estimated (your count from imagery is "estimated, counted from imagery").
-- Where a venue shares lots with its neighbors (the Coliseum and BMO Stadium in Exposition Park; Crypto.com Arena and Peacock Theater at L.A. Live; SoFi, Intuit Dome, YouTube Theater and the Forum in Inglewood), say which lots and gates serve which building, or that they are shared.
-- Say what you could not find rather than guessing.
-- The result will be used the same way in every city, so keep the definitions identical across venues.
+- Label every figure: official / reported / estimated / anecdotal.
+- If sources conflict, report both values with both sources.
+- Shared districts (Exposition Park; L.A. Live; Inglewood's SoFi
+  Stadium, Intuit Dome, YouTube Theater and Kia Forum): say which
+  lots serve which venue, or that they're shared.
+- Downtown-grid venues: instead of on-site spaces, report nearby
+  off-street supply and any cars-used figure.
+- Clearance times are for testing the formula, so report what each
+  source actually measured (lots emptied, traffic normal, last car
+  out) and for what event.
+- Prefer EIRs, city event traffic plans, transit agency ridership
+  reports and venue/team pages over parking-blog guides.
+- Write "n/f" rather than guessing. Don't derive drive share from
+  other numbers unless you show the math and label it estimated.
+
+## Batching
+Do venues 1–12 now. Stop after each batch so I can review before you
+continue.
 
 ## Output
-One table, one row per venue, with the columns above and a link per figure. Then a short list of venues where the lane count is uncertain and why. Tables beat prose.
+A CSV with the columns above, then a short list per batch of open
+questions: conflicting figures, venues with no drive-share data, and
+unclear shared-lot arrangements.
+
+## Venues
+Los Angeles area:
+1. Dodger Stadium
+2. Crypto.com Arena
+3. LA Memorial Coliseum
+4. BMO Stadium
+5. SoFi Stadium
+6. Intuit Dome
+7. Kia Forum
+8. Hollywood Bowl
+9. Rose Bowl
+10. Dignity Health Sports Park
+11. Dignity Health Sports Park tennis stadium
+12. Angel Stadium
+13. Honda Center
+14. Pauley Pavilion
+15. Galen Center
+16. Santa Anita Park
+17. In-N-Out Burger Pomona Dragstrip
+18. Fairplex
+19. Weingart Stadium (East LA College)
+20. Long Beach Arena
+21. Drake Stadium (UCLA)
+22. Los Angeles Tennis Center (UCLA)
+23. Veterans Memorial Stadium (Long Beach)
+24. Titan Stadium (Cal State Fullerton)
+25. Pacific Amphitheatre
+26. Anaheim Convention Center
+27. Peacock Theater
+28. Shrine Auditorium
+29. YouTube Theater
+30. Greek Theatre
+31. Championship Soccer Stadium (Irvine)
+32. Bren Events Center (UC Irvine)
+33. LBS Financial Credit Union Pyramid (Long Beach State)
+34. Empire Polo Club (Indio)
+35. FivePoint Amphitheatre (closed 2023; as it operated)
+
+Other cities:
+36. Citi Field
+37. Petco Park
+38. T-Mobile Park
+39. Wintrust Arena
+40. Amalie Arena
+41. Mortgage Matchup Center (Phoenix)
+42. Golden 1 Center
+43. Ohio Stadium
