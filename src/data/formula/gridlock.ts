@@ -27,7 +27,11 @@ const SCALE = 7.5;
 // Seattle is a hub (research, Oct 6, 2026, docs/seattle-city-type-answer.md): in between. Core crowds run 37–70% by
 // car (Husky Stadium 37% observed, Lumen Field 60%, Climate Pledge Arena ~63%), the suburbs 85–95%. Every Seattle
 // venue carries its own carShare, so this default only covers a room without one.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'transit', chicago: 'transit', boston: 'transit' };
+// New York is also a hub, not transit (research, Oct 6, 2026, docs/new-york-city-type-answer.md): ~60% of a big crowd
+// arrives by car, weighted by seats. The ballparks broke the assumption — Citi Field ~60% car, Yankee Stadium ~50%.
+// Only the rail-hub buildings (MSG, Barclays, Radio City) are transit-tier; Long Island and the Meadowlands drive.
+// Chicago and Boston are still assumptions; research them before covering either (Kylie: never assume a city's type).
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', chicago: 'transit', boston: 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
