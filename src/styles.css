@@ -3514,3 +3514,35 @@ button {
 .home-page {
   position: relative;
 }
+
+.day-today-tab {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: calc((100% - 28px) / 8 + 6px);
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--dodger);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.12), 4px 0 8px -4px rgba(15, 27, 45, 0.18);
+}
+
+.day-today-tab.right {
+  left: auto;
+  right: 0;
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.12), -4px 0 8px -4px rgba(15, 27, 45, 0.18);
+}
+
+.day-today-tab svg {
+  width: 16px;
+  height: 16px;
+}

@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ChevronLeft, ChevronRight } from './Icons';
 import type { Metro } from '../config/metros';
 import { getCityDate } from '../data';
 import { addDays, daysBetween } from '../lib/dates';
@@ -63,6 +64,17 @@ export function DayStrip({ metro, today, date }: { metro: Metro; today: string; 
 
   return (
     <div className="day-strip-wrap">
+      {/* A way back to today, on the edge today is off toward (Kylie, Oct 6): left when looking ahead, right when looking back. */}
+      {date !== today && (
+        <Link
+          to={mapPath({ metroId: metro.id, date: today, today })}
+          className={`day-today-tab${date < today ? ' right' : ''}`}
+          aria-label="Back to today"
+        >
+          {date < today ? <ChevronRight /> : <ChevronLeft />}
+          Today
+        </Link>
+      )}
       <div className="day-strip" ref={stripRef} role="tablist" aria-label="Days">
         {days.map((d) => {
           const read = reads.get(d);
