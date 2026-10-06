@@ -618,11 +618,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-06-mlb-849826",
     "date": "2026-10-06",
     "start": "18:30",
-    "capturedAt": "2026-10-06T17:45:43.131Z",
+    "capturedAt": "2026-10-06T17:58:01.525Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
-      "rating": 3.8,
+      "rating": 2,
       "friction": "Low",
       "why": "Nothing bigger was on."
     }
@@ -632,11 +632,39 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-mlb-849827",
     "date": "2026-10-07",
     "start": "19:00",
-    "capturedAt": "2026-10-06T17:45:43.131Z",
+    "capturedAt": "2026-10-06T17:58:01.525Z",
     "capturedOn": "2026-10-06",
     "read": {
       "method": "formula",
-      "rating": 3.8,
+      "rating": 2,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-14-espn-san-diego-fc-761872",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-06T17:58:01.525Z",
+    "capturedOn": "2026-10-06",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-17-espn-sdsu-football-401860904",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-06T17:58:01.525Z",
+    "capturedOn": "2026-10-06",
+    "read": {
+      "method": "formula",
+      "rating": 1,
       "friction": "Low",
       "why": "Nothing bigger was on."
     }

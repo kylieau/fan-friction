@@ -4,7 +4,7 @@
   "metroName": "San Diego",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-06",
-  "capturedAt": "2026-10-06T17:45:43.131Z",
+  "capturedAt": "2026-10-06T17:58:01.525Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-06",
@@ -20,7 +20,7 @@
     {
       "id": "espn",
       "name": "ESPN schedules",
-      "inWindow": 0
+      "inWindow": 2
     },
     {
       "id": "seed",
@@ -86,6 +86,51 @@
       },
       "crowd": [],
       "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-14-espn-san-diego-fc-761872",
+      "metroId": "san-diego",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "San Diego vs. Houston",
+      "place": {
+        "type": "venue",
+        "venueId": "snapdragon-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "san-diego-fc",
+        "away": "houston"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-sdsu-football-401860904",
+      "metroId": "san-diego",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "San Diego St vs. Fresno St",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "snapdragon-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sdsu-football",
+        "away": "fresno-st"
+      },
+      "crowd": [],
+      "sourceId": "espn"
     }
   ],
   "forecasts": [
@@ -94,7 +139,7 @@
       "date": "2026-10-06",
       "start": "18:30",
       "read": {
-        "rating": 3.8,
+        "rating": 2,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -105,7 +150,29 @@
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 3.8,
+        "rating": 2,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-san-diego-fc-761872",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-sdsu-football-401860904",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"

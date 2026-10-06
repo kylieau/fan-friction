@@ -101,5 +101,29 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "official"
     },
     "startedAt": "17:03"
+  },
+  {
+    "eventId": "2026-10-03-espn-sdsu-football-401860900",
+    "metroId": "san-diego",
+    "date": "2026-10-03",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "snapdragon-stadium",
+    "homeTeamId": "sdsu-football",
+    "home": {
+      "name": "San Diego St",
+      "score": 31
+    },
+    "away": {
+      "name": "Texas St",
+      "score": 29
+    },
+    "attendance": 28474,
+    "capturedAt": "2026-10-06T17:58:02.333Z",
+    "duration": {
+      "minutes": 216,
+      "kind": "estimated"
+    },
+    "startedAt": "19:40"
   }
 ];
