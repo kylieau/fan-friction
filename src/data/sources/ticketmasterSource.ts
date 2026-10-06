@@ -1,0 +1,160 @@
+// Concerts and other ticketed shows from Ticketmaster's Discovery API, for the
+// nightly job only (the key never reaches the app). Terms, Oct 6, 2026
+// (docs/ticketmaster-review-oct6.md): store the facts of a night, not the
+// content, so each event keeps its name, date, start, venue, performers and
+// Ticketmaster's id, and nothing else. Sports listings are left to the league
+// feeds. Only venues the app knows are kept: a listing matches a venue by
+// Ticketmaster's venue id when one is on record, else by name, else by
+// being within 300 m of the building. Unknown rooms are counted, not kept.
+
+import { COVERED_METRO_IDS, METROS } from '../../config/metros';
+import type { CrowdEvent, LocalDate } from '../types';
+import { VENUES } from '../venues';
+
+const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
+/** How far ahead to list, in days. The schedule archive keeps 14; the catalog can hold more. */
+const DAYS_AHEAD = 120;
+/** Search radius from the metro's center, miles. */
+const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30 };
+const PAGE_SIZE = 200;
+/** Ticketmaster stops paging at 1,000 results per query. */
+const MAX_PAGES = 5;
+
+interface TmVenue {
+  id: string;
+  name: string;
+  location?: { latitude: string; longitude: string };
+}
+
+interface TmEvent {
+  id: string;
+  name: string;
+  dates: { start: { localDate: string; localTime?: string; dateTBA?: boolean; timeTBA?: boolean }; status?: { code?: string } };
+  classifications?: { segment?: { name?: string }; genre?: { name?: string }; subGenre?: { name?: string } }[];
+  _embedded?: {
+    venues?: TmVenue[];
+    attractions?: { name: string }[];
+  };
+}
+
+export interface TicketmasterPull {
+  events: CrowdEvent[];
+  /** Listings at rooms the venue table doesn't have, by venue name, most first. */
+  unknownVenues: { name: string; count: number }[];
+  pages: number;
+}
+
+function meters(a: [number, number], b: [number, number]): number {
+  const R = 6371000;
+  const dLat = ((b[1] - a[1]) * Math.PI) / 180;
+  const dLng = ((b[0] - a[0]) * Math.PI) / 180;
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos((a[1] * Math.PI) / 180) * Math.cos((b[1] * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(s));
+}
+
+/** The venue record a Ticketmaster venue matches, or undefined. */
+function venueFor(metroId: string, v: TmVenue) {
+  const ours = Object.values(VENUES).filter((venue) => venue.metroId === metroId);
+  const byId = ours.find((venue) => venue.ticketmasterIds?.includes(v.id));
+  if (byId) return byId;
+  const name = v.name.trim().toLowerCase();
+  const byName = ours.find((venue) => venue.names.some((n) => n.name.toLowerCase() === name));
+  if (byName) return byName;
+  if (v.location) {
+    const point: [number, number] = [Number(v.location.longitude), Number(v.location.latitude)];
+    return ours.find((venue) => meters(venue.location, point) <= 300);
+  }
+  return undefined;
+}
+
+function kindOf(segment: string | undefined): CrowdEvent['kind'] | null {
+  switch (segment) {
+    case 'Music':
+      return 'show';
+    case 'Arts & Theatre':
+    case 'Miscellaneous':
+    case 'Film':
+      return 'special';
+    case 'Sports':
+      return null; // the league feeds own sports
+    default:
+      return 'special';
+  }
+}
+
+function addDays(date: LocalDate, days: number): LocalDate {
+  const [y, m, d] = date.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d + days)).toISOString().slice(0, 10);
+}
+
+/** Upcoming listings for one covered city. Throws when the feed can't be read. */
+export async function loadTicketmasterEvents(metroId: string, apiKey: string, now = new Date()): Promise<TicketmasterPull> {
+  const metro = METROS[metroId];
+  if (!metro) throw new Error(`Unknown metro ${metroId}`);
+  const today = now.toLocaleDateString('en-CA', { timeZone: metro.timeZone });
+  const through = addDays(today, DAYS_AHEAD);
+  const events: CrowdEvent[] = [];
+  const unknown = new Map<string, number>();
+  const seen = new Set<string>();
+  let pages = 0;
+  for (let page = 0; page < MAX_PAGES; page++) {
+    const params = new URLSearchParams({
+      apikey: apiKey,
+      latlong: `${metro.center[1]},${metro.center[0]}`,
+      radius: String(RADIUS_MILES[metroId] ?? 30),
+      unit: 'miles',
+      startDateTime: `${today}T00:00:00Z`,
+      endDateTime: `${through}T23:59:59Z`,
+      size: String(PAGE_SIZE),
+      page: String(page),
+      sort: 'date,asc',
+    });
+    const r = await fetch(`${API}?${params}`);
+    if (r.status === 429) throw new Error('Ticketmaster: over the daily quota');
+    if (!r.ok) throw new Error(`Ticketmaster answered ${r.status}`);
+    const json = (await r.json()) as { _embedded?: { events?: TmEvent[] }; page?: { totalPages?: number } };
+    pages++;
+    for (const e of json._embedded?.events ?? []) {
+      if (seen.has(e.id)) continue;
+      seen.add(e.id);
+      if (/cancel|postpon|resched/i.test(e.dates.status?.code ?? '')) continue;
+      if (e.dates.start.dateTBA || !e.dates.start.localDate) continue;
+      const kind = kindOf(e.classifications?.[0]?.segment?.name);
+      if (!kind) continue;
+      const tmVenue = e._embedded?.venues?.[0];
+      if (!tmVenue) continue;
+      const venue = venueFor(metroId, tmVenue);
+      if (!venue) {
+        unknown.set(tmVenue.name, (unknown.get(tmVenue.name) ?? 0) + 1);
+        continue;
+      }
+      const performers = (e._embedded?.attractions ?? []).map((a) => a.name).filter(Boolean);
+      const performer = performers[0] ?? e.name;
+      const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
+      events.push({
+        id: `${e.dates.start.localDate}-tm-${e.id}`,
+        metroId,
+        date: e.dates.start.localDate,
+        start: e.dates.start.timeTBA || !e.dates.start.localTime ? null : e.dates.start.localTime.slice(0, 5),
+        kind,
+        title: kind === 'show' ? performer : e.name,
+        place: { type: 'venue', venueId: venue.id },
+        audience: kind === 'show' ? { domain: 'music', genre } : { domain: 'other', tag: genre },
+        performer,
+        crowd: [],
+        sourceId: 'ticketmaster',
+        ticketmasterId: e.id,
+      });
+    }
+    const total = json.page?.totalPages ?? 1;
+    if (page + 1 >= total) break;
+    await new Promise((resolve) => setTimeout(resolve, 250)); // five a second is the limit
+  }
+  return {
+    events,
+    unknownVenues: [...unknown].map(([name, count]) => ({ name, count })).sort((a, b) => b.count - a.count),
+    pages,
+  };
+}
+
+export const TICKETMASTER_METRO_IDS = [...COVERED_METRO_IDS];

@@ -8,6 +8,13 @@ import { archivedReads, type ArchivedEventRead } from './forecastCapture';
 import { loadEspnSchedule } from './sources/espnSource';
 import { loadMlbSchedule } from './sources/mlbSource';
 import { seedEvents } from './sources/seedSource';
+import { loadTicketmasterEvents } from './sources/ticketmasterSource';
+
+/** The job's Ticketmaster key, from the environment; never in the app. */
+function ticketmasterKey(): string | undefined {
+  const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env;
+  return env?.TICKETMASTER_API_KEY || undefined;
+}
 
 /** How far past today the saved window runs, in calendar days. Today is included. */
 export const ARCHIVE_HORIZON_DAYS = 14;
@@ -86,16 +93,19 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
   const seedCatalog = seedEvents.catalog;
   if (!seedCatalog) throw new Error('The seeded catalog is missing. Nothing was saved.');
 
-  const [mlb, espn, seed] = await Promise.all([
+  const key = ticketmasterKey();
+  const [mlb, espn, seed, tm] = await Promise.all([
     readSource('MLB schedule', () => loadMlbSchedule(metroId, through)),
     readSource('ESPN schedules', () => loadEspnSchedule(metroId)),
     readSource('seeded catalog', () => seedCatalog(metroId)),
+    key ? readSource('Ticketmaster listings', async () => (await loadTicketmasterEvents(metroId, key, now)).events) : Promise.resolve([] as CrowdEvent[]),
   ]);
 
   const mlbWindow = inWindow(mlb, capturedOn, through);
   const espnWindow = inWindow(espn, capturedOn, through);
   const seedWindow = inWindow(seed, capturedOn, through);
-  const events = [...mlbWindow, ...espnWindow, ...seedWindow].sort(byListing);
+  const tmWindow = inWindow(tm, capturedOn, through);
+  const events = [...mlbWindow, ...espnWindow, ...seedWindow, ...tmWindow].sort(byListing);
 
   return {
     schema: 1,
@@ -111,6 +121,7 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
       { id: 'mlb', name: 'MLB schedule', inWindow: mlbWindow.length },
       { id: 'espn', name: 'ESPN schedules', inWindow: espnWindow.length },
       { id: 'seed', name: seedEvents.name, inWindow: seedWindow.length },
+      ...(key ? [{ id: 'ticketmaster', name: 'Ticketmaster listings', inWindow: tmWindow.length }] : []),
     ],
     events,
     forecasts: archivedReads(events),

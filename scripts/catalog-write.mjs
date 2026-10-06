@@ -67,6 +67,8 @@ try {
   const { loadMlbSchedule } = await server.ssrLoadModule('/src/data/sources/mlbSource.ts');
   const { loadEspnSchedule } = await server.ssrLoadModule('/src/data/sources/espnSource.ts');
   const { seedEvents } = await server.ssrLoadModule('/src/data/sources/seedSource.ts');
+  const { loadTicketmasterEvents } = await server.ssrLoadModule('/src/data/sources/ticketmasterSource.ts');
+  const tmKey = process.env.TICKETMASTER_API_KEY;
   const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
   const { EXPECTED_DRAWS } = await server.ssrLoadModule('/src/data/expectedDrawIndex.ts');
   for (const metroId of COVERED_METRO_IDS) {
@@ -74,7 +76,16 @@ try {
   const counts = {};
 
   // 1. The catalog: every upcoming home game the feeds list, plus the hand-seeded nights.
-  const [mlb, espn, seed] = await Promise.all([loadMlbSchedule(metroId), loadEspnSchedule(metroId), seedEvents.catalog(metroId)]);
+  const [mlb, espn, seed, tm] = await Promise.all([
+    loadMlbSchedule(metroId),
+    loadEspnSchedule(metroId),
+    seedEvents.catalog(metroId),
+    tmKey ? loadTicketmasterEvents(metroId, tmKey) : Promise.resolve({ events: [], unknownVenues: [], pages: 0 }),
+  ]);
+  if (tmKey) {
+    const top = tm.unknownVenues.slice(0, 8).map((v) => `${v.name} (${v.count})`).join(', ');
+    console.log(`${metroId}: Ticketmaster ${tm.events.length} listings kept at known venues, ${tm.unknownVenues.reduce((n, v) => n + v.count, 0)} at rooms the table lacks${top ? `: ${top}` : ''}.`);
+  }
   const eventRow = (e) => ({
     id: e.id,
     metro_id: e.metroId,
@@ -87,7 +98,7 @@ try {
     data: e,
   });
   const seen = new Set();
-  const events = [...seed, ...mlb, ...espn].filter((e) => !seen.has(e.id) && seen.add(e.id)).map(eventRow);
+  const events = [...seed, ...mlb, ...espn, ...tm.events].filter((e) => !seen.has(e.id) && seen.add(e.id)).map(eventRow);
   counts.events = await upsert('events', events, 'id');
   // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds and past dates stay.
   if (!dryRun) {

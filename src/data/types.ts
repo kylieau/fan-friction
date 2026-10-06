@@ -51,6 +51,8 @@ export interface Venue {
    * hard-access penalty. Without one, the city type supplies a default.
    */
   carShare?: number;
+  /** Ticketmaster's ids for this building, when known; a listing matches by id before by name. */
+  ticketmasterIds?: string[];
 }
 
 // ---------- Teams ----------
@@ -208,6 +210,8 @@ export interface CrowdEvent {
   belowFloor?: boolean;
   /** Which source this came from, such as "seed" or "mlb". */
   sourceId: string;
+  /** Ticketmaster's event id, for listings from its feed (the one piece of its content kept). */
+  ticketmasterId?: string;
 }
 
 /**

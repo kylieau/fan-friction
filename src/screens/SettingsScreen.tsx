@@ -110,7 +110,10 @@ export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
           <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">
             Open-Meteo.com
           </a>
-          . Maps by OpenFreeMap and OpenStreetMap.
+          . Maps by OpenFreeMap and OpenStreetMap. Listings from the leagues and Ticketmaster.
+        </p>
+        <p className="you-fine">
+          Your events are saved on this phone, and in your account if you sign in. No location, no tracking, nothing sold.
         </p>
       </div>
     </div>
