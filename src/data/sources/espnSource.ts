@@ -17,7 +17,10 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
+  { path: 'hockey/nhl', espnId: '25', metroId: 'la', teamId: 'ducks', sport: 'hockey' },
   { path: 'soccer/usa.1', espnId: '187', metroId: 'la', teamId: 'galaxy', sport: 'soccer' },
+  { path: 'soccer/usa.1', espnId: '18966', metroId: 'la', teamId: 'lafc', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '21422', metroId: 'la', teamId: 'angel-city', sport: 'soccer' },
   { path: 'football/nfl', espnId: '14', metroId: 'la', teamId: 'rams', sport: 'football' },
   { path: 'football/nfl', espnId: '24', metroId: 'la', teamId: 'chargers', sport: 'football' },
   { path: 'football/college-football', espnId: '30', metroId: 'la', teamId: 'usc-football', sport: 'football' },
@@ -38,6 +41,7 @@ const VENUE_BY_NAME: Record<string, string> = {
   'los angeles memorial coliseum': 'coliseum',
   'rose bowl': 'rose-bowl',
   'bmo stadium': 'bmo-stadium',
+  'honda center': 'honda-center',
 };
 
 interface EspnSide {
