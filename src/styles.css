@@ -161,7 +161,10 @@ button {
   background: #edf0f4;
 }
 
-.basemap {
+/* Two classes on purpose: the map library's own stylesheet (loaded later, with the lazy map chunk)
+   sets .maplibregl-map to position: relative, which would collapse the map to zero height. */
+.basemap,
+.basemap.maplibregl-map {
   position: absolute;
   inset: 0;
 }
