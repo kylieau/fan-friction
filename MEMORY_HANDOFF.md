@@ -40,10 +40,11 @@ Formula: `src/data/{types,read,formulaRead}.ts`, `src/data/formula/{crowdFight,g
 - **Testing notes:** headless Chromium at `/usr/bin/chromium` with swiftshader flags; a scratch DevTools-protocol script can drag the map. Set `fan-friction:home-metro` = `"la"` and `fan-friction:tipsDone` = `true` in localStorage first, or the home picker and tips cover the map. Don't `pkill` vite.
 
 ## Next steps
-1. Kylie tries Explore on her phone: the strip's swipe and snap, the month sheet's lift-to-close, recenter after a pinch, the feels-like note.
-2. Her event-entry notes, systematically: backend data first, then tab by tab. Ask her for the batch.
-3. Attendance calibration job (review §11): announced crowds per team and bucket, expected draw computed instead of hand-seeded, held-out dates. Then retune the placeholder constants.
-4. Parked (see `BACKLOG.md`): rehome Famous nights, the October 2026 multi-city research (its prompt is untracked from another session), Gridlock zones, Traffic, Night story.
+**Oct 6 (later session): the build order is `docs/big-picture-plan-oct6.md`.** Follow it step by step, proposal first.
+1. Step 1, entry editing and manual entry: proposal in `docs/entry-proposal-oct6.md`, waiting on Kylie.
+2. Step 2: results and attendance after games, Ducks/LAFC/Angel City/college basketball feeds, LA venue capacity table, then calibration.
+3. Her event-entry notes, when she has them: backend data first, then tab by tab.
+4. Kylie (Oct 6): plans settle to Attended automatically (no "Did you go?"); free Ticketmaster key is OK at step 4 if it stays free.
 
 **Next command to run:**
 ```bash
