@@ -59,3 +59,22 @@ Each step is a small commit on the local site for her to look at. No new cost. �
 - A or B on the swipe?
 - "Next up" line on an empty day: yes or no?
 - Range on the date page header too, or only the map?
+
+## Round 2 (Oct 6): the date is written four times
+Kylie, after the first build: the header date, the carousel, the pill and the Today button are redundant. She wants Today back on the pill's dropdown rather than having to recognize today's cell, which requires knowing the date. Asked for expert guidance on reducing the redundancy.
+
+**Where the date lives now on Explore:** the big header ("Mon, Oct 5"), the bordered strip cell, the pill ("Today ▾"), and the sheet title ("Today · On the map"). The idea of today lives in the pill text, the floating "‹ Today" button, and the sheet title.
+
+**What the patterns say.**
+- Calendar apps converge on one layout: the title is the picker (Google Calendar's "October ▾"), the grid shows the days, and one persistent Today control sits in the toolbar (Google Calendar top right, iOS Calendar bottom bar). The title is never repeated in the toolbar.
+- Nielsen Norman Group, on date input: label the current date "Today" in the picker, "it removes any uncertainty in case the user doesn't remember today's date" (their Todoist example). Offer Today as a shortcut because it is faster than navigating; reflect the pick back in the calendar.
+- Material 3: today and the selected day get two different marks (today outlined, selected filled), both quiet.
+- Apple Weather's day list labels the first row "Today", not "Mon".
+- General date-picker guidance: strip UI elements; a calendar is already busy.
+
+**Options.**
+- **A (her ask):** keep the header date as the one written date. The strip's today cell reads TODAY instead of MON. The pill drops its date text and becomes a small calendar button whose menu is Today / Pick a date. The floating Today button goes. The sheet title becomes "On the map".
+- **B (recommended):** same strip and sheet changes. The pill goes entirely: the header date gets a chevron and opens the month sheet (the title is the picker). A small "Today" pill sits where the date pill was, only when the viewed day is not today. One tap to today instead of two.
+- **C (smallest):** only relabel today's strip cell. Leaves the pill and header duplication.
+
+Recommendation: B. Three elements, each with one job: the header names and picks the day, the strip browses, Today returns. A is B with one more tap and one more control, and is fine if she prefers the dropdown.
