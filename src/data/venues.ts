@@ -107,6 +107,22 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 45517 }],
     roof: 'open',
   },
+  'pauley-pavilion': {
+    id: 'pauley-pavilion',
+    metroId: 'la',
+    names: [{ name: 'Pauley Pavilion' }],
+    location: [-118.4468, 34.0702],
+    capacity: [{ seats: 13800, setup: 'basketball', fromYear: 2012, note: 'Since the 2012 renovation (Wikipedia infobox, checked Oct 6, 2026).' }],
+    roof: 'indoor',
+  },
+  'galen-center': {
+    id: 'galen-center',
+    metroId: 'la',
+    names: [{ name: 'Galen Center' }],
+    location: [-118.28, 34.021],
+    capacity: [{ seats: 10258, setup: 'basketball', note: 'Basketball capacity (Wikipedia infobox, checked Oct 6, 2026).' }],
+    roof: 'indoor',
+  },
   'honda-center': {
     id: 'honda-center',
     metroId: 'la',

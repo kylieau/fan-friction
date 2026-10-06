@@ -354,7 +354,8 @@ function tagFor(teamId: string | undefined, sport: string): { tag: string; side:
   const team = teamId ? TEAMS[teamId] : undefined;
   const side = team?.shortName ?? 'Sports';
   if (side === 'UCLA' || side === 'USC') {
-    const abbr = sport === 'football' ? 'FB' : sport === 'basketball' ? 'MBB' : sport === 'baseball' ? 'Baseball' : sport;
+    const abbr =
+      sport === 'football' ? 'FB' : sport === 'basketball' ? (teamId?.endsWith('-wbb') ? 'WBB' : 'MBB') : sport === 'baseball' ? 'Baseball' : sport;
     return { tag: `${side} ${abbr}`, side };
   }
   return { tag: side, side };

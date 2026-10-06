@@ -25,6 +25,10 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/nfl', espnId: '24', metroId: 'la', teamId: 'chargers', sport: 'football' },
   { path: 'football/college-football', espnId: '30', metroId: 'la', teamId: 'usc-football', sport: 'football' },
   { path: 'football/college-football', espnId: '26', metroId: 'la', teamId: 'ucla-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '30', metroId: 'la', teamId: 'usc-mbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '26', metroId: 'la', teamId: 'ucla-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '30', metroId: 'la', teamId: 'usc-wbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '26', metroId: 'la', teamId: 'ucla-wbb', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -42,6 +46,8 @@ const VENUE_BY_NAME: Record<string, string> = {
   'rose bowl': 'rose-bowl',
   'bmo stadium': 'bmo-stadium',
   'honda center': 'honda-center',
+  'pauley pavilion': 'pauley-pavilion',
+  'galen center': 'galen-center',
 };
 
 interface EspnSide {
