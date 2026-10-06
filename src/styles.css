@@ -1879,6 +1879,24 @@ button {
 
 /* ---------- Map legend ---------- */
 
+/* Recenter (Kylie, Oct 6): bottom right, the Google/Apple Maps spot; only after a hand move. */
+.recenter-button {
+  position: absolute;
+  right: 12px;
+  bottom: 96px;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  border: none;
+  background: var(--card);
+  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.22);
+  color: var(--dodger);
+  cursor: pointer;
+}
+
 .legend-button {
   position: absolute;
   left: 12px;

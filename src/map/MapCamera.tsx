@@ -84,6 +84,8 @@ export function MapCamera({
   sheetOpen,
   holdCenter,
   holdZoom,
+  home,
+  recenter = 0,
 }: {
   points: CrowdPoint[];
   selectedId: string | null;
@@ -91,21 +93,54 @@ export function MapCamera({
   /** When set, the camera stays on this view instead of framing the night again. */
   holdCenter: [number, number] | null;
   holdZoom: number | null;
+  /** The city's own view, for a night with nothing on the map. */
+  home?: { center: [number, number]; zoom: number };
+  /** Bumped by the recenter button: frame the night again, with a glide. */
+  recenter?: number;
 }) {
   const map = useContext(MapContext);
   const pointsRef = useRef(points);
   pointsRef.current = points;
   const frameKey = points.map((p) => p.event.id).join('|');
   const holding = holdCenter !== null && holdZoom !== null;
+  const homeRef = useRef(home);
+  homeRef.current = home;
+  const lastRecenter = useRef(recenter);
 
   useEffect(() => {
     if (!map) return;
+    const gliding = recenter !== lastRecenter.current;
+    lastRecenter.current = recenter;
     if (holding && holdCenter && holdZoom !== null) {
       map.jumpTo({ center: holdCenter, zoom: holdZoom });
       setCityZoom(holdZoom);
       return;
     }
-    if (pointsRef.current.length === 0) return;
+    if (pointsRef.current.length === 0) {
+      // Nothing on the map: the recenter button goes back to the city's own view.
+      const start = homeRef.current;
+      if (gliding && start) map.easeTo({ center: start.center, zoom: start.zoom, duration: EASE_MS, easing: easeOut });
+      return;
+    }
+    if (gliding) {
+      const bounds = new LngLatBounds();
+      for (const p of pointsRef.current) bounds.extend(p.location);
+      const pad = measureKeepOut(map, sheetOpen);
+      const w = map.getContainer().clientWidth;
+      const h = map.getContainer().clientHeight;
+      map.fitBounds(bounds, {
+        padding: {
+          top: Math.min(pad.top + 8, h * 0.42),
+          bottom: Math.min(pad.bottom + 8, h * 0.46),
+          left: Math.min(72, w * 0.2),
+          right: Math.min(72, w * 0.2),
+        },
+        maxZoom: 11.5,
+        duration: EASE_MS,
+        easing: easeOut,
+      });
+      return;
+    }
     const bounds = new LngLatBounds();
     for (const p of pointsRef.current) bounds.extend(p.location);
     const pad = measureKeepOut(map, sheetOpen);
@@ -133,7 +168,7 @@ export function MapCamera({
     }
     // The night is framed when its events change, not when the sheet snaps.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [map, frameKey, holding, holdZoom, holdCenter]);
+  }, [map, frameKey, holding, holdZoom, holdCenter, recenter]);
 
   useEffect(() => {
     if (!map || !selectedId || holding) return;
@@ -142,5 +177,26 @@ export function MapCamera({
     panMarkIntoOpenMap(map, point.location, measureKeepOut(map, sheetOpen));
   }, [map, selectedId, sheetOpen, holding]);
 
+  return null;
+}
+
+/**
+ * Tells the page when someone has moved the map by hand, so the recenter
+ * button can show. Camera moves the app makes itself do not count.
+ */
+export function HandMoveWatch({ onMoved }: { onMoved: () => void }) {
+  const map = useContext(MapContext);
+  const onMovedRef = useRef(onMoved);
+  onMovedRef.current = onMoved;
+  useEffect(() => {
+    if (!map) return;
+    const handler = (event: { originalEvent?: unknown }) => {
+      if (event.originalEvent) onMovedRef.current();
+    };
+    map.on('movestart', handler);
+    return () => {
+      map.off('movestart', handler);
+    };
+  }, [map]);
   return null;
 }

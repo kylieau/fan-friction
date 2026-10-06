@@ -52,12 +52,20 @@ export interface WeatherDay {
   precipMm?: number;
 }
 
-/** "62–88°", low to high, in the metro's units. */
+/** "H:88° L:62°", the way Apple Weather writes a day (Kylie, Oct 6: a bare range read like a loose estimate). */
 export function rangeLabel(day: Pick<WeatherDay, 'feelsLikeLowF' | 'feelsLikeHighF'>, metroId: string): string {
   const metro = METROS[metroId];
   const celsius = metro && !metro.timeZone.startsWith('America/');
   const convert = (f: number) => Math.round(celsius ? ((f - 32) * 5) / 9 : f);
-  return `${convert(day.feelsLikeLowF)}–${convert(day.feelsLikeHighF)}°`;
+  return `H:${convert(day.feelsLikeHighF)}° L:${convert(day.feelsLikeLowF)}°`;
+}
+
+/** The same range for a screen reader: "feels like a high of 88 and a low of 62". */
+export function rangeSpoken(day: Pick<WeatherDay, 'feelsLikeLowF' | 'feelsLikeHighF'>, metroId: string): string {
+  const metro = METROS[metroId];
+  const celsius = metro && !metro.timeZone.startsWith('America/');
+  const convert = (f: number) => Math.round(celsius ? ((f - 32) * 5) / 9 : f);
+  return `feels like a high of ${convert(day.feelsLikeHighF)} and a low of ${convert(day.feelsLikeLowF)} degrees`;
 }
 
 /** The glyph beside the headline number. */

@@ -6,6 +6,7 @@ import {
   cityDayRange,
   feelsLikeLabel,
   rangeLabel,
+  rangeSpoken,
   weatherGlyph,
   getCityDate,
   metrosWithEvents,
@@ -22,11 +23,11 @@ import {
 } from '../data';
 import { BaseMap, MapContext } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
-import { MapCamera } from '../map/MapCamera';
+import { HandMoveWatch, MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { DateScore } from '../components/DateScore';
-import { ArrowRight, ChevronDown, HomeIcon, SearchIcon } from '../components/Icons';
+import { ArrowRight, ChevronDown, HomeIcon, RecenterIcon, SearchIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
@@ -100,10 +101,20 @@ export function MapScreen() {
   const [open, setOpen] = useState(memory?.sheetOpen ?? false);
   const [selectedId, setSelectedId] = useState<string | null>(memory?.selectedId ?? null);
   const [freezeCamera, setFreezeCamera] = useState(Boolean(memory));
+  // The recenter button (Kylie, Oct 6): shows once the map has been moved by hand,
+  // or when it opens on a remembered view; a tap frames the night again.
+  const [movedByHand, setMovedByHand] = useState(Boolean(memory));
+  const [recenter, setRecenter] = useState(0);
+  const doRecenter = () => {
+    setFreezeCamera(false);
+    setMovedByHand(false);
+    setRecenter((n) => n + 1);
+  };
   const initialDate = useRef(date);
   useEffect(() => {
     if (date === initialDate.current) return;
     setFreezeCamera(false);
+    setMovedByHand(false);
     setSelectedId(null);
     setOpen(false);
   }, [date]);
@@ -112,6 +123,7 @@ export function MapScreen() {
   useEffect(() => {
     if (metro.id === initialMetro.current) return;
     setFreezeCamera(false);
+    setMovedByHand(false);
   }, [metro.id]);
 
   const select = useCallback((id: string | null) => {
@@ -195,7 +207,10 @@ export function MapScreen() {
             sheetOpen={open}
             holdCenter={freezeCamera && memory ? memory.center : null}
             holdZoom={freezeCamera && memory ? memory.zoom : null}
+            home={{ center: metro.center, zoom: metro.zoom }}
+            recenter={recenter}
           />
+          <HandMoveWatch onMoved={() => setMovedByHand(true)} />
           <MapSettle onSettle={setBounds} />
           <RememberMap href={href} selectedId={selectedId} sheetOpen={open} />
         </BaseMap>
@@ -234,7 +249,7 @@ export function MapScreen() {
               </Link>
             )}
             {showFeels && dayRange && (
-              <div className="map-feels" aria-label={`Feels like ${rangeLabel(dayRange, metro.id)} in ${metro.name}`}>
+              <div className="map-feels" aria-label={`${metro.name}: ${rangeSpoken(dayRange, metro.id)}`}>
                 <span className="weather-glyph" aria-hidden>
                   {weatherGlyph(dayRange)}
                 </span>
@@ -261,6 +276,12 @@ export function MapScreen() {
         </div>
         {nextPlan && <SavedDateCard plan={nextPlan} />}
       </header>
+
+      {movedByHand && (
+        <button type="button" className="recenter-button" aria-label="Recenter the map" onClick={doRecenter}>
+          <RecenterIcon />
+        </button>
+      )}
 
       {points.length > 0 && (
         <>

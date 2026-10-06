@@ -8,6 +8,7 @@ import {
   cityWeather,
   cityDayRange,
   rangeLabel,
+  rangeSpoken,
   feelsLikeLabel,
   isOpenAir,
   weatherForEvent,
@@ -158,7 +159,7 @@ export function DateScreen() {
               <span className="weather-glyph" aria-hidden>
                 {weatherGlyph(dayRange)}
               </span>{' '}
-              {rangeLabel(dayRange, metro.id)}
+              <span aria-label={rangeSpoken(dayRange, metro.id)}>{rangeLabel(dayRange, metro.id)}</span>
             </>
           )}
           {cityRow && (
