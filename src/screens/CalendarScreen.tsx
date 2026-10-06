@@ -14,7 +14,7 @@ import {
 import { addDays, clampMonth, EARLIEST_MONTH, isValidDate, longLocalDate, monthCells, monthTitle, shiftMonth, yearMonth } from '../lib/dates';
 import { datePath, useView } from '../lib/view';
 import type { Metro } from '../config/metros';
-import { AreaSwitcher } from './MapScreen';
+import { AreaSwitcher } from '../components/AreaSwitcher';
 
 /** Badge shade by rating band, darkest for the hardest dates (as in the mockup). */
 function dayLabel(day: CalendarDay) {

@@ -2384,6 +2384,13 @@ button {
   margin-left: auto;
 }
 
+/* The small map's place while its library loads. */
+.mini-map-loading {
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+}
+
 .you-header .you-gear {
   margin-left: 0;
 }

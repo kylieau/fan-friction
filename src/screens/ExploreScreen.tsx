@@ -1,7 +1,10 @@
+import { lazy, Suspense } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { setExploreView, type ExploreView } from '../lib/view';
-import { MapScreen } from './MapScreen';
 import { CalendarScreen } from './CalendarScreen';
+
+// The map and its library load only when Explore shows the map, not with the rest of the app.
+const MapScreen = lazy(() => import('./MapScreen').then((m) => ({ default: m.MapScreen })));
 
 /**
  * Explore: one city, one page (Kylie, Oct 5: option A). The map with a week strip
@@ -10,7 +13,12 @@ import { CalendarScreen } from './CalendarScreen';
  */
 export function ExploreScreen() {
   const [params] = useSearchParams();
-  return params.get('view') === 'calendar' ? <CalendarScreen /> : <MapScreen />;
+  if (params.get('view') === 'calendar') return <CalendarScreen />;
+  return (
+    <Suspense fallback={<div className="screen map-screen" aria-busy />}>
+      <MapScreen />
+    </Suspense>
+  );
 }
 
 /** The Map / Calendar segmented control. Both screens put it in their header. */

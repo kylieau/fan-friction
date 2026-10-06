@@ -1,6 +1,6 @@
 import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
-import { areaMetros, DEFAULT_METRO, METROS, type Metro } from '../config/metros';
+import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
   cityWeather,
   cityDayRange,
@@ -9,7 +9,6 @@ import {
   rangeSpoken,
   weatherGlyph,
   getCityDate,
-  metrosWithEvents,
   getPersonalLog,
   getUpcoming,
   nextSavedPlan,
@@ -26,8 +25,9 @@ import { CrowdLayer } from '../map/CrowdLayer';
 import { HandMoveWatch, MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
+import { AreaSwitcher } from '../components/AreaSwitcher';
 import { DateScore } from '../components/DateScore';
-import { ArrowRight, ChevronDown, HomeIcon, RecenterIcon, SearchIcon } from '../components/Icons';
+import { ArrowRight, ChevronDown, RecenterIcon, SearchIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
@@ -35,8 +35,7 @@ import { quietStakes } from '../lib/stakes';
 import { clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
-import { getHomeId, setHomeId } from '../lib/homeCity';
-import { mapPath, datePath, openedMetroId, useView } from '../lib/view';
+import { mapPath, datePath, useView } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 
@@ -406,101 +405,6 @@ export function MapScreen() {
         />
       )}
     </div>
-  );
-}
-
-/**
- * Closed chip for the current metro. The list floats under the chip, about
- * five rows tall, and does not move the score. Los Angeles is first.
- * Home is a mark on one row. Looking at another city does not change it.
- */
-export function AreaSwitcher({
-  metro,
-  open,
-  onOpenChange,
-}: {
-  metro: Metro;
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
-}) {
-  const [params, setParams] = useSearchParams();
-  const menuId = useId();
-  const metros = areaMetros();
-  const withEvents = new Set(metrosWithEvents().map((city) => city.id));
-  const homeId = openedMetroId();
-  const viewingHome = metro.id === getHomeId();
-  const pick = (id: string) => {
-    const next = new URLSearchParams(params);
-    if (id === homeId) next.delete('metro');
-    else next.set('metro', id);
-    setParams(next);
-    onOpenChange(false);
-  };
-  const makeHome = (id: string) => {
-    const viewing = metro.id;
-    const next = new URLSearchParams(params);
-    if (viewing === id) {
-      setHomeId(id);
-      next.delete('metro');
-      setParams(next, { replace: true });
-      return;
-    }
-    // Keep the city on screen. A bare address means home, so name this city
-    // before home changes, or the map would jump.
-    if (!params.has('metro')) next.set('metro', viewing);
-    setParams(next, { replace: true });
-    setHomeId(id);
-  };
-  return (
-    <div className="area-switcher">
-      <button
-        type="button"
-        className="area-chip"
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        aria-controls={menuId}
-        aria-label={viewingHome ? `Area, ${metro.name}, Home` : 'Area'}
-        onClick={() => onOpenChange(!open)}
-      >
-        {viewingHome && <HomeMark />}
-        {metro.name}
-        <ChevronDown />
-      </button>
-      {open && (
-        <div className="area-menu" id={menuId} role="listbox" aria-label="Area">
-          {metros.map((item) => {
-            const isHome = item.id === getHomeId();
-            return (
-              <div className="area-row" key={item.id}>
-                <button
-                  type="button"
-                  role="option"
-                  aria-selected={item.id === metro.id}
-                  onClick={() => pick(item.id)}
-                >
-                  {isHome && <HomeMark />}
-                  <span>{item.name}</span>
-                </button>
-                {!isHome && withEvents.has(item.id) && (
-                  <button type="button" className="set-home" onClick={() => makeHome(item.id)}>
-                    Set as home
-                  </button>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      )}
-    </div>
-  );
-}
-
-/** The house before the home city's name (Kylie, Oct 5). The name for screen readers is Home. */
-function HomeMark() {
-  return (
-    <span className="home-mark" role="img" aria-label="Home">
-      <HomeIcon />
-    </span>
   );
 }
 

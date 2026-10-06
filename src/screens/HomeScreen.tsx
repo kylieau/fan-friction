@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { MonthSheet } from '../components/MonthSheet';
 import { AccountBlock } from '../components/AccountBlock';
@@ -26,17 +26,15 @@ import {
   type FriendEntry,
 } from '../data';
 import { VENUES, venueNameOn } from '../data';
-import { useContext } from 'react';
-import { LngLatBounds } from 'maplibre-gl';
-import { BaseMap, MapContext } from '../map/BaseMap';
-import type { CrowdPoint } from '../map/crowdPoints';
-import { CrowdLayer } from '../map/CrowdLayer';
 import { crowdKind, crowdPoints, showsOnMap } from '../map/crowdPoints';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, mapPath } from '../lib/view';
 import { dayWord } from './DateScreen';
+
+// The map library loads only when a map is on screen (Home and Explore), not on every tab.
+const MiniMap = lazy(() => import('../map/MiniMap'));
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 const ROWS = 3;
@@ -164,10 +162,9 @@ export function HomeScreen() {
             </Link>
           </div>
           <Link to={mapPath({ metroId: home.id, date: today, today })} className="mini-map" aria-label="Open the map">
-            <BaseMap metro={home} interactive={false}>
-              <CrowdLayer points={points} selectedId={null} onSelect={() => {}} />
-              <MiniCamera points={points} />
-            </BaseMap>
+            <Suspense fallback={<div className="mini-map-loading" aria-hidden />}>
+              <MiniMap metro={home} points={points} />
+            </Suspense>
             <span className="mini-map-overlay">
               <ReadTile rating={rating} quiet={day.status === 'quiet'} />
               <span className="mini-map-text">
@@ -211,10 +208,9 @@ export function HomeScreen() {
           </div>
           {weekPoints.length > 0 && (
             <Link to={mapPath({ metroId: home.id, date: today, today })} className="mini-map" aria-label="Open the map">
-              <BaseMap metro={home} interactive={false}>
-                <CrowdLayer points={weekPoints} selectedId={null} onSelect={() => {}} />
-                <MiniCamera points={weekPoints} />
-              </BaseMap>
+              <Suspense fallback={<div className="mini-map-loading" aria-hidden />}>
+                <MiniMap metro={home} points={weekPoints} />
+              </Suspense>
               <span className="mini-map-overlay">
                 <span className="mini-map-text">
                   <span className="mini-map-title">This week · {weekPoints.length} {weekPoints.length === 1 ? 'event' : 'events'}</span>
@@ -337,20 +333,6 @@ export function HomeScreen() {
       )}
     </div>
   );
-}
-
-/** Frames tonight's venues in the small map. No sheet or header to keep clear of. */
-function MiniCamera({ points }: { points: CrowdPoint[] }) {
-  const map = useContext(MapContext);
-  const key = points.map((p) => p.event.id).join('|');
-  useEffect(() => {
-    if (!map || points.length === 0) return;
-    const bounds = new LngLatBounds();
-    for (const p of points) bounds.extend(p.location);
-    map.fitBounds(bounds, { padding: { top: 28, bottom: 56, left: 36, right: 36 }, maxZoom: 11, duration: 0 });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [map, key]);
-  return null;
 }
 
 function joinNames(names: string[]): string {

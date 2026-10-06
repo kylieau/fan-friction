@@ -49,7 +49,9 @@ The other session's commit fb20b3f (October research, `docs/research-oct-2026/`,
 - Egress research received Oct 6: revised brief `docs/venue-egress-prompt.md`, narrative `docs/venue-egress-answer.md`, 43-venue table `docs/gridlock_inputs_all_43_venues.csv`. Gridlock rule is not locked. Keep ×1.25 until she approves a proposal. Cars-per-exit still needs OpenStreetMap for lanes.
 
 ## Next steps
-1. **Wait for Kylie's word before step 3** (Compare rebuild: two nights side by side, "Compare with…" on the date page, this-year stats). Proposal first.
+**Plan reordered Oct 6 after Push Pilot's review (`docs/push-pilot-review-oct6.md`), Kylie approved:** map code-split (done) → catalog write path (proposal first) → San Diego via the checklist → Compare whenever she wants it → Ticketmaster in slices → the rest.
+0. **Next: the catalog write path proposal** (events in Supabase as shared truth, written by the nightly job; no new cost). Then San Diego (Kylie runs the venue prompt).
+1. **Compare** when Kylie says so (two nights side by side, "Compare with…" on the date page, this-year stats). Proposal first.
 2. Egress research done (`docs/venue-egress-answer.md`, `docs/gridlock_inputs_all_43_venues.csv`): exit lanes are not published anywhere, so the cars-per-lane rule is **shelved**; hard access stays the measured rule at ×1.25 scaled by car share. Two follow-ups when wanted: fill `carShare` on venues from the CSV's official/reported rows (Hollywood Bowl 61% car, Petco ~80%, Golden 1 ~85–90%), and a "stack-parked lots" yes/no as a third access signal. Watch for LADOT's Dodger Stadium study (fall 2026).
 3. Her event-entry notes, when she has them: backend data first, then tab by tab.
 4. Step 4 later: Ticketmaster concerts 🚩 (free key; terms first) and a second city via `docs/new-city-checklist.md`.
