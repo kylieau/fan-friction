@@ -49,7 +49,7 @@ The other session's commit fb20b3f (October research, `docs/research-oct-2026/`,
 
 ## Next steps
 1. **Wait for Kylie's word before step 3** (Compare rebuild: two nights side by side, "Compare with…" on the date page, this-year stats). Proposal first.
-2. The egress research (`docs/venue-egress-prompt.md`, Kylie runs it): parking spaces, outbound exit lanes, car share per venue. When it comes back, propose the cars-per-exit-lane rule to replace the flat ×1.25, with the same before/after check on the seven nights.
+2. The egress research answer is in `docs/venue-egress-answer.md` (partial: 12 of 43 venues; outbound lanes n/f). Prompt: `docs/venue-egress-prompt.md`. When the rest comes back, propose the cars-per-exit-lane rule to replace the flat ×1.25, with the same before/after check on the seven nights.
 3. Her event-entry notes, when she has them: backend data first, then tab by tab.
 4. Step 4 later: Ticketmaster concerts 🚩 (free key; terms first) and a second city via `docs/new-city-checklist.md`.
 
