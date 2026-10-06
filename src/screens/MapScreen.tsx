@@ -157,8 +157,7 @@ export function MapScreen() {
   // The header already names the day (Kylie, Oct 6: say it once).
   const dateLine = shown ? 'On the map' : ' ';
   const pastLabel = pastRelativeLabel(date, todayIn(DEFAULT_METRO));
-  // An empty day names the next event (Kylie, Oct 6).
-  const nextUp = shown && dayEvents.length === 0 ? upcoming[0] : undefined;
+
 
   // The sheet follows your finger (see useSheetDrag); a tap on the grabber toggles it too.
   const sheetRef = useRef<HTMLElement>(null);
@@ -166,6 +165,14 @@ export function MapScreen() {
   const bodyRef = useRef<HTMLDivElement>(null);
   const areaRef = useRef<HTMLDivElement>(null);
   const [menu, setMenu] = useState<'area' | null>(null);
+  // The weather chip's one-line note: tap on a phone, hover on a computer (Kylie, Oct 6).
+  const [feelsTip, setFeelsTip] = useState(false);
+  const feelsTipId = useId();
+  useEffect(() => {
+    if (!feelsTip) return;
+    const timer = window.setTimeout(() => setFeelsTip(false), 3000);
+    return () => window.clearTimeout(timer);
+  }, [feelsTip]);
   // The month sheet: the grid, search and Famous nights over the map (Explore option A).
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -249,11 +256,23 @@ export function MapScreen() {
               </Link>
             )}
             {showFeels && dayRange && (
-              <div className="map-feels" aria-label={`${metro.name}: ${rangeSpoken(dayRange, metro.id)}`}>
-                <span className="weather-glyph" aria-hidden>
-                  {weatherGlyph(dayRange)}
+              <div className="map-feels-wrap">
+                <button
+                  type="button"
+                  className="map-feels"
+                  aria-label={`${metro.name}: ${rangeSpoken(dayRange, metro.id)}`}
+                  aria-describedby={feelsTipId}
+                  onClick={() => setFeelsTip((v) => !v)}
+                  onBlur={() => setFeelsTip(false)}
+                >
+                  <span className="weather-glyph" aria-hidden>
+                    {weatherGlyph(dayRange)}
+                  </span>
+                  <span>{rangeLabel(dayRange, metro.id)}</span>
+                </button>
+                <span id={feelsTipId} role="tooltip" className="map-feels-tip" style={{ display: feelsTip ? 'block' : 'none' }}>
+                  Feels-like, not air temp
                 </span>
-                <span>{rangeLabel(dayRange, metro.id)}</span>
               </div>
             )}
             {showFeels && cityRow && (
@@ -277,12 +296,7 @@ export function MapScreen() {
         {nextPlan && <SavedDateCard plan={nextPlan} />}
       </header>
 
-      {movedByHand && (
-        <button type="button" className="recenter-button" aria-label="Recenter the map" onClick={doRecenter}>
-          <RecenterIcon />
-        </button>
-      )}
-
+      <div className="map-controls">
       {points.length > 0 && (
         <>
           <button
@@ -304,6 +318,12 @@ export function MapScreen() {
           )}
         </>
       )}
+      {movedByHand && (
+        <button type="button" className="recenter-button" aria-label="Recenter the map" onClick={doRecenter}>
+          <RecenterIcon />
+        </button>
+      )}
+      </div>
 
       <section className="sheet" ref={sheetRef} aria-label={isToday ? 'Today' : shortLocalDate(date)}>
         <div className="sheet-top" ref={topRef}>
@@ -318,11 +338,6 @@ export function MapScreen() {
           >
             <span className="sheet-handle" aria-hidden />
             <div className="sheet-title">{dateLine}</div>
-            {nextUp && (
-              <Link to={mapPath({ metroId: nextUp.metroId, date: nextUp.date, today })} className="sheet-next">
-                Next up: {shortLocalDate(nextUp.date)} · {nextUp.title}
-              </Link>
-            )}
           </div>
 
           {selected && (

@@ -1,5 +1,5 @@
 import { createContext, useEffect, useRef, useState, type ReactNode } from 'react';
-import { Map as MapLibreMap, setWorkerUrl } from 'maplibre-gl';
+import { AttributionControl, Map as MapLibreMap, setWorkerUrl } from 'maplibre-gl';
 import mapWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Metro } from '../config/metros';
@@ -43,8 +43,11 @@ export function BaseMap({
       dragRotate: false,
       pitchWithRotate: false,
       interactive,
-      attributionControl: { compact: true },
+      attributionControl: false,
     });
+    // The map credit is required by the license. It sits in the bottom-left corner,
+    // where map apps keep their legal line (Kylie, Oct 6); controls stay on the right.
+    instance.addControl(new AttributionControl({ compact: true }), 'bottom-left');
     instance.touchZoomRotate.disableRotation();
     // Start the map credits collapsed to a small (i) button.
     instance.once('load', () => {

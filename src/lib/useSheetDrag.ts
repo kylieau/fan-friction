@@ -31,6 +31,8 @@ export function useSheetDrag(
     el.style.transition = animate ? `transform ${SNAP_MS}ms cubic-bezier(0.22, 1, 0.36, 1)` : 'none';
     el.style.transform = `translateY(${y}px)`;
     el.parentElement?.style.setProperty('--sheet-h', `${el.offsetHeight}px`);
+    // How much of the sheet shows above the tab bar: the map's buttons and credit sit on this edge.
+    el.parentElement?.style.setProperty('--sheet-peek', `${Math.max(0, el.offsetHeight - y)}px`);
   };
 
   // Rest at the right height whenever it opens, closes, or its top block changes size.

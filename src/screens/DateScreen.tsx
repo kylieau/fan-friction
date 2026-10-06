@@ -159,7 +159,7 @@ export function DateScreen() {
               <span className="weather-glyph" aria-hidden>
                 {weatherGlyph(dayRange)}
               </span>{' '}
-              <span aria-label={rangeSpoken(dayRange, metro.id)}>{rangeLabel(dayRange, metro.id)}</span>
+              <span aria-label={rangeSpoken(dayRange, metro.id)} title="Feels-like, not air temp">{rangeLabel(dayRange, metro.id)}</span>
             </>
           )}
           {cityRow && (

@@ -93,3 +93,9 @@ Recommendation: B. Three elements, each with one job: the header names and picks
 - Confirmed for her: the weather range is the selected metro's city point (the map center in `metros.ts`, near Inglewood for LA), not wherever the map is panned.
 - **Map landing view, as it is:** the metro's center at zoom 9.5, then the camera frames that day's venues if it has any. The remembered view returns only for the same address (same city and date) in the same session. Built Oct 6 (Kylie: yes): a recenter button, bottom right like Google and Apple Maps, that appears only after the map is moved by hand or opens on a remembered view; a tap glides back to the night's framing (the city's own view on an empty day) and the button hides.
 - **The range reads "H:76° L:52°"**, the way Apple Weather writes a day (Kylie: a bare "52–76°" looked like a loose estimate). Screen readers hear "feels like a high of 76 and a low of 52 degrees".
+
+## Round 5 (Oct 6), built
+- The weather chip is a button: tap (or hover on a computer) shows a small light note, "Feels-like, not air temp", which fades after three seconds. The date page's range carries the same words on hover.
+- The "Next up" line on an empty day is removed (Kylie changed her mind).
+- The map credit moved to the bottom-left corner. The map key "?" and the recenter button are one column on the right. All three ride the sheet's actual top edge (`--sheet-peek`), so a selected event or a phone's home bar no longer hides them. The "?" shows only on days with events on the map.
+- **A week view on Explore: not brought back.** Kylie asked, then reconsidered: Home's "This week" mini map already answers "what's on this week", and the strip shows the week's reads at a glance. Claude's view: keep it on Home only.
