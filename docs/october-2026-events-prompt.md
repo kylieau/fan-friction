@@ -32,7 +32,9 @@ Kinds to cover, all equally:
 
 **Mid-size theaters (about 5,000–8,000 seats)** go in only when they share a campus or sit within about a 5-minute drive of a headline sports or stadium event **that same night** (for example a theater on the same block as an arena with a game). Skip them on other nights.
 
-**Skip:** rooms under 5,000, Broadway and theater runs, clubs and bars, private events, watch parties, and away games.
+**Watch parties count when they're big** (5,000+), like any event: an official team watch party outside the arena, a stadium opened for an away game, a big Cosm-style screening. Use `kind` live-broadcast for one in a venue; put a street or plaza one in the no-venue table. Give a crowd figure only if a source has one.
+
+**Skip:** rooms under 5,000, Broadway and theater runs, clubs and bars, private events, small watch parties and bar screenings, and away games.
 
 ## How to verify
 - Every row needs at least one source URL. Prefer the team's, league's or venue's own schedule, or the official ticketing page. A news article is fine as a second source.
@@ -79,7 +81,7 @@ One row per event per date. A doubleheader is two rows. A multi-day festival is 
 city,date,weekday,start_local,start_note,kind,title,home_team,away_team,performer,league_or_genre,level,stakes,venue,booking,run,facts,invited,expected_draw,status,source_url,checked_on,result_oct1to5,attendance_oct1to5
 ```
 - `date`: YYYY-MM-DD. `start_local`: 24-hour HH:MM in local time, or blank.
-- `kind`: game, show, festival or special.
+- `kind`: game, show, festival, live-broadcast (a watch party) or special.
 - `title`: the official billing ("Seahawks vs. 49ers"; "Bad Bunny: Tour Name").
 - `league_or_genre`: the league for games (NFL, MLB, NCAA FB, NWSL, AHL); the main genre for shows (pop, hip-hop, metal, Latin, country, classical, comedy).
 - `level`: pro, lower (minor leagues, major-junior), college or school.
