@@ -22,6 +22,20 @@ if (!url || !key) {
   process.exit(0);
 }
 
+// The key must be the service-role key, not the public (anon) one; they look alike. Read its role claim.
+function roleOf(jwt) {
+  try {
+    return JSON.parse(Buffer.from(jwt.split('.')[1], 'base64url').toString()).role ?? '(none)';
+  } catch {
+    return '(not a JWT)';
+  }
+}
+const role = roleOf(key);
+if (role !== 'service_role') {
+  console.error(`The key in SUPABASE_SERVICE_ROLE_KEY has role "${role}", not "service_role". In Supabase: Project Settings → API → the key labeled service_role.`);
+  process.exit(1);
+}
+
 const db = createClient(url, key, { auth: { persistSession: false } });
 const CHUNK = 500;
 
