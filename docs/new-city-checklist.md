@@ -29,7 +29,7 @@ Kylie, Oct 6, 2026: Los Angeles is the only city built by hand. Every later city
 San Diego (Oct 6, 2026) was the first run of this list, about three hours end to end: steps 1, 2 and 4 in an hour (the Padres, the city facts, the jobs' city list, the attendance pull); step 3 from Kylie's one research run (`docs/san-diego-venue-table-answer.md`, 13 venues folded in, including Frontwave Arena, which the brief had missed); then SDSU, San Diego FC and the Wave joined the feed and the attendance pull.
 
 - Explore opens on the city with its venues on the map; the date page reads; an event page shows Outcome, Starters, TV and Length after a game.
-- "Set as home" appears for the city (it has events).
+- The city appears in Explore's city switcher and offers "Set as home" (both follow from having events; cities with none are not listed, Kylie, Oct 6).
 - The Add form lists the city's venues under Where.
 
 ## Not per city (already universal)
