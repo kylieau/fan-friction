@@ -51,3 +51,6 @@ Thumbs.db
 
 # Dev container: home-folder backup restored on rebuild (never commit)
 .devcontainer/.home-backup/
+
+# Private notes about real people (tester logs, import scripts). Never commit.
+private/
