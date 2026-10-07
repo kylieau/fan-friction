@@ -57,6 +57,19 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '171', metroId: 'new-york', teamId: 'columbia-football', sport: 'football' },
   { path: 'football/college-football', espnId: '2619', metroId: 'new-york', teamId: 'stony-brook-football', sport: 'football' },
   { path: 'football/college-football', espnId: '2230', metroId: 'new-york', teamId: 'fordham-football', sport: 'football' },
+  { path: 'basketball/nba', espnId: '1', metroId: 'atlanta', teamId: 'hawks', sport: 'basketball' },
+  { path: 'basketball/wnba', espnId: '20', metroId: 'atlanta', teamId: 'dream', sport: 'basketball' },
+  { path: 'football/nfl', espnId: '1', metroId: 'atlanta', teamId: 'falcons', sport: 'football' },
+  { path: 'soccer/usa.1', espnId: '18418', metroId: 'atlanta', teamId: 'atlanta-united', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '59', metroId: 'atlanta', teamId: 'gt-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '59', metroId: 'atlanta', teamId: 'gt-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '59', metroId: 'atlanta', teamId: 'gt-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2247', metroId: 'atlanta', teamId: 'gsu-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2247', metroId: 'atlanta', teamId: 'gsu-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2247', metroId: 'atlanta', teamId: 'gsu-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '338', metroId: 'atlanta', teamId: 'ksu-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '338', metroId: 'atlanta', teamId: 'ksu-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '338', metroId: 'atlanta', teamId: 'ksu-wbb', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -99,6 +112,19 @@ const VENUE_BY_NAME: Record<string, string> = {
   'moglia stadium at jack coffey field': 'coffey-field',
   'carnesecca arena': 'carnesecca-arena',
   'icahn stadium': 'icahn-stadium',
+  // Atlanta (docs/atlanta-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  'mercedes-benz stadium': 'mercedes-benz-stadium',
+  'state farm arena': 'state-farm-arena',
+  'gateway center': 'gateway-center-arena',
+  'center parc stadium': 'center-parc-stadium',
+  'bobby dodd stadium': 'bobby-dodd-stadium',
+  'bobby dodd stadium at hyundai field': 'bobby-dodd-stadium',
+  'walens family field at fifth third stadium': 'fifth-third-stadium',
+  'fifth third stadium': 'fifth-third-stadium',
+  'gsu convocation center': 'gsu-convocation-center',
+  'mccamish pavilion': 'mccamish-pavilion',
+  'vystar arena': 'ksu-convocation-center',
+  'ksu convocation center': 'ksu-convocation-center',
 };
 
 interface EspnSide {

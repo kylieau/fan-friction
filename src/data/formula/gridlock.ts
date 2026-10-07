@@ -31,7 +31,9 @@ const SCALE = 7.5;
 // arrives by car, weighted by seats. The ballparks broke the assumption — Citi Field ~60% car, Yankee Stadium ~50%.
 // Only the rail-hub buildings (MSG, Barclays, Radio City) are transit-tier; Long Island and the Meadowlands drive.
 // Chicago and Boston are still assumptions; research them before covering either (Kylie: never assume a city's type).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', chicago: 'transit', boston: 'transit' };
+// Atlanta is a driving region (research, Oct 7, 2026, docs/atlanta-city-type-answer.md): no regular-season
+// crowd measured under ~70% car; only the two downtown buildings on MARTA take a real rail share.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', chicago: 'transit', boston: 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {

@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "teamId": "gt-football",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "gt-football",
+      "season": 2022,
+      "date": "2022-09-05",
+      "start": "20:00",
+      "opponent": "Clemson",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 47712,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "19:00",
+      "opponent": "W Carolina",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 36486,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "15:30",
+      "opponent": "Ole Miss",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 40293,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "16:00",
+      "opponent": "Duke",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 32041,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2022,
+      "date": "2022-10-20",
+      "start": "19:30",
+      "opponent": "Virginia",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 29362,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "15:30",
+      "opponent": "Miami",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 33857,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "13:00",
+      "opponent": "SC State",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 31452,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "15:30",
+      "opponent": "Bowling Green",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 30097,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "12:00",
+      "opponent": "Boston College",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 35656,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "20:00",
+      "opponent": "North Carolina",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 35945,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "20:00",
+      "opponent": "Syracuse",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 33332,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2023,
+      "date": "2023-11-25",
+      "start": "19:30",
+      "opponent": "Georgia",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 51447,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "20:00",
+      "opponent": "Georgia St",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 40113,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "15:30",
+      "opponent": "VMI",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 31729,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "20:00",
+      "opponent": "Duke",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 37287,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2024,
+      "date": "2024-10-19",
+      "start": "15:30",
+      "opponent": "Notre Dame",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 59021,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2024,
+      "date": "2024-11-09",
+      "start": "12:00",
+      "opponent": "Miami",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 47358,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2024,
+      "date": "2024-11-21",
+      "start": "19:30",
+      "opponent": "NC State",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 34591,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "15:30",
+      "opponent": "Gardner-Webb",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 37775,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "12:00",
+      "opponent": "Clemson",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 48059,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "17:05",
+      "opponent": "Temple",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 45123,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2025,
+      "date": "2025-10-11",
+      "start": "15:30",
+      "opponent": "Virginia Tech",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 50878,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2025,
+      "date": "2025-10-25",
+      "start": "12:00",
+      "opponent": "Syracuse",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 51913,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "19:00",
+      "opponent": "Pitt",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 52413,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2025,
+      "date": "2025-11-28",
+      "start": "15:30",
+      "opponent": "Georgia",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 73728,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

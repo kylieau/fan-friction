@@ -1,0 +1,250 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "teamId": "gsu-football",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "gsu-football",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "12:00",
+      "opponent": "North Carolina",
+      "venueId": "center-parc-stadium",
+      "attendance": 17687,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "19:00",
+      "opponent": "Charlotte",
+      "venueId": "center-parc-stadium",
+      "attendance": 16433,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2022,
+      "date": "2022-09-22",
+      "start": "19:30",
+      "opponent": "Coastal Car",
+      "venueId": "center-parc-stadium",
+      "attendance": 13467,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "14:00",
+      "opponent": "GA Southern",
+      "venueId": "center-parc-stadium",
+      "attendance": 20109,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2022,
+      "date": "2022-10-29",
+      "start": "15:00",
+      "opponent": "Old Dominion",
+      "venueId": "center-parc-stadium",
+      "attendance": 16203,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "13:00",
+      "opponent": "UL Monroe",
+      "venueId": "center-parc-stadium",
+      "attendance": 12241,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": "19:00",
+      "opponent": "Rhode Island",
+      "venueId": "center-parc-stadium",
+      "attendance": 15546,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "19:00",
+      "opponent": "UConn",
+      "venueId": "center-parc-stadium",
+      "attendance": 15186,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "19:00",
+      "opponent": "Troy",
+      "venueId": "center-parc-stadium",
+      "attendance": 16536,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "15:30",
+      "opponent": "James Madison",
+      "venueId": "center-parc-stadium",
+      "attendance": 15320,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "14:00",
+      "opponent": "App State",
+      "venueId": "center-parc-stadium",
+      "attendance": 14260,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "19:00",
+      "opponent": "Vanderbilt",
+      "venueId": "center-parc-stadium",
+      "attendance": 14413,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "15:30",
+      "opponent": "GA Southern",
+      "venueId": "center-parc-stadium",
+      "attendance": 18808,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "15:30",
+      "opponent": "Old Dominion",
+      "venueId": "center-parc-stadium",
+      "attendance": 12280,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "17:00",
+      "opponent": "Arkansas St",
+      "venueId": "center-parc-stadium",
+      "attendance": 14047,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2024,
+      "date": "2024-11-30",
+      "start": "14:00",
+      "opponent": "Coastal",
+      "venueId": "center-parc-stadium",
+      "attendance": 12606,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "19:00",
+      "opponent": "Memphis",
+      "venueId": "center-parc-stadium",
+      "attendance": 13625,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "19:00",
+      "opponent": "Murray St",
+      "venueId": "center-parc-stadium",
+      "attendance": 13988,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2025,
+      "date": "2025-10-04",
+      "start": "15:30",
+      "opponent": "James Madison",
+      "venueId": "center-parc-stadium",
+      "attendance": 19256,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2025,
+      "date": "2025-10-11",
+      "start": "15:30",
+      "opponent": "App State",
+      "venueId": "center-parc-stadium",
+      "attendance": 19587,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2025,
+      "date": "2025-10-23",
+      "start": "19:30",
+      "opponent": "South Alabama",
+      "venueId": "center-parc-stadium",
+      "attendance": 13673,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "14:00",
+      "opponent": "Marshall",
+      "venueId": "center-parc-stadium",
+      "attendance": 12871,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

@@ -1,0 +1,8014 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "teamId": "braves",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-07",
+      "start": "20:08",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 40545,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "19:20",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 40234,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "19:20",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 40310,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:35",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 38233,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-11",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 42263,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 31462,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "12:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 31959,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-22",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 40402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-23",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 41931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-24",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 38440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "19:20",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 31990,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "19:20",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 30362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "19:20",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 34183,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-06",
+      "start": "19:20",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 36307,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-07",
+      "start": "19:20",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 37857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-08",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 36551,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": "19:20",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 38378,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "19:20",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 37200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "19:20",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 40635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": "16:05",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 40490,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "11:35",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 40114,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-23",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 41762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 32274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-25",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 29339,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 33188,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-27",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 40064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "16:10",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 40682,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 39669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-07",
+      "start": "19:20",
+      "opponent": "Athletics",
+      "venueId": "truist-park",
+      "attendance": 33981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-08",
+      "start": "19:20",
+      "opponent": "Athletics",
+      "venueId": "truist-park",
+      "attendance": 42075,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-09",
+      "start": "19:20",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 39336,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "19:20",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 41404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "16:10",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 41219,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": "13:35",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 35446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-20",
+      "start": "19:20",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 40589,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-21",
+      "start": "19:20",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 35384,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-22",
+      "start": "19:20",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 38478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-23",
+      "start": "12:20",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 36870,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-24",
+      "start": "19:20",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 42105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-25",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 42161,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-06-26",
+      "start": "19:08",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 42217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 41975,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-05",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 35656,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-06",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 36718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-07",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 37756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-08",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 41725,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-09",
+      "start": "16:10",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 40632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-10",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 32053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-11",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 42925,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 42217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "12:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 34879,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "19:20",
+      "opponent": "Angels",
+      "venueId": "truist-park",
+      "attendance": 42867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "19:20",
+      "opponent": "Angels",
+      "venueId": "truist-park",
+      "attendance": 42827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "13:35",
+      "opponent": "Angels",
+      "venueId": "truist-park",
+      "attendance": 42663,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "19:20",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 41536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "19:20",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 41682,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "13:35",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 39005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-02",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 38932,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-03",
+      "start": "12:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 30380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-15",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 38380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-16",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 37449,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-17",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 34308,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-18",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 39378,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-19",
+      "start": "19:20",
+      "opponent": "Astros",
+      "venueId": "truist-park",
+      "attendance": 42837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "19:15",
+      "opponent": "Astros",
+      "venueId": "truist-park",
+      "attendance": 42893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-21",
+      "start": "13:35",
+      "opponent": "Astros",
+      "venueId": "truist-park",
+      "attendance": 42531,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "19:20",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 34237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "19:20",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 29554,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "19:20",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 31203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 42161,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 42405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 42360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 42578,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 42542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "13:35",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 42015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-19",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 33443,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-20",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 40224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-21",
+      "start": "12:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 37240,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 42402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 97,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 42561,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 98,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-10-02",
+      "start": "19:08",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 42713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 99,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-10-11",
+      "start": "13:07",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 42641,
+      "kind": "announced",
+      "postseason": true,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2022,
+      "date": "2022-10-12",
+      "start": "16:35",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 42735,
+      "kind": "announced",
+      "postseason": true,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-06",
+      "start": "19:20",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 42803,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "19:20",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 41963,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "19:20",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 40154,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 40138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-10",
+      "start": "19:20",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 30237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "19:20",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 33559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "19:20",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 30648,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "19:20",
+      "opponent": "Astros",
+      "venueId": "truist-park",
+      "attendance": 41397,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "19:20",
+      "opponent": "Astros",
+      "venueId": "truist-park",
+      "attendance": 42399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": "13:35",
+      "opponent": "Astros",
+      "venueId": "truist-park",
+      "attendance": 41530,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-24",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 28241,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 34059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 30282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "12:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 32196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "19:20",
+      "opponent": "Orioles",
+      "venueId": "truist-park",
+      "attendance": 40176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "19:15",
+      "opponent": "Orioles",
+      "venueId": "truist-park",
+      "attendance": 41454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "11:35",
+      "opponent": "Orioles",
+      "venueId": "truist-park",
+      "attendance": 40800,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "19:20",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 36805,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "19:20",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 40270,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "19:20",
+      "opponent": "Mariners",
+      "venueId": "truist-park",
+      "attendance": 40412,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "19:15",
+      "opponent": "Mariners",
+      "venueId": "truist-park",
+      "attendance": 40250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:35",
+      "opponent": "Mariners",
+      "venueId": "truist-park",
+      "attendance": 40213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-22",
+      "start": "19:20",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 40205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "19:20",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 36731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "19:20",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 37838,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 43216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 40533,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "16:10",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 42665,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 43109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 37365,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 40178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 39347,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 40297,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "16:10",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 40799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 36744,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-15",
+      "start": "19:20",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 38555,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "19:20",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 41214,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "16:10",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 41558,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "13:35",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 41161,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-26",
+      "start": "19:20",
+      "opponent": "Twins",
+      "venueId": "truist-park",
+      "attendance": 40884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-27",
+      "start": "19:20",
+      "opponent": "Twins",
+      "venueId": "truist-park",
+      "attendance": 42635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "12:20",
+      "opponent": "Twins",
+      "venueId": "truist-park",
+      "attendance": 38260,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 42320,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "16:10",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 41889,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 40932,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "19:20",
+      "opponent": "White Sox",
+      "venueId": "truist-park",
+      "attendance": 42782,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "19:15",
+      "opponent": "White Sox",
+      "venueId": "truist-park",
+      "attendance": 43344,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": "13:35",
+      "opponent": "White Sox",
+      "venueId": "truist-park",
+      "attendance": 40174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-18",
+      "start": "19:20",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 41100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-19",
+      "start": "19:20",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 41992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "12:20",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 38791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "19:20",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 42502,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "19:20",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 43276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 40262,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-07-31",
+      "start": "19:20",
+      "opponent": "Angels",
+      "venueId": "truist-park",
+      "attendance": 41173,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "19:20",
+      "opponent": "Angels",
+      "venueId": "truist-park",
+      "attendance": 41777,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "12:20",
+      "opponent": "Angels",
+      "venueId": "truist-park",
+      "attendance": 36495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-14",
+      "start": "19:20",
+      "opponent": "Yankees",
+      "venueId": "truist-park",
+      "attendance": 42717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "19:20",
+      "opponent": "Yankees",
+      "venueId": "truist-park",
+      "attendance": 40454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "19:20",
+      "opponent": "Yankees",
+      "venueId": "truist-park",
+      "attendance": 40743,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "19:20",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 40688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "19:20",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 42744,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "13:35",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 40291,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-21",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 33216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 36841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 35674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 33553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 35514,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-07",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 34349,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "19:20",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 40452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "19:20",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 42866,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:35",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 39071,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-18",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 39216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 96,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 40695,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 96,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "12:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 38856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 97,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-26",
+      "start": "19:20",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 40151,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 100,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-27",
+      "start": "19:20",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 37246,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 101,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-28",
+      "start": "19:20",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 40249,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 102,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-29",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 41481,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 103,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 41652,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 103,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": "15:10",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 40697,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 104,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-10-07",
+      "start": "18:07",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 43689,
+      "kind": "announced",
+      "postseason": true,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2023,
+      "date": "2023-10-09",
+      "start": "18:07",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 43898,
+      "kind": "announced",
+      "postseason": true,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "19:20",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 41426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "19:20",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 41278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:35",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 40693,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-08",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 37538,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-09",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 32065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-11",
+      "start": "12:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 34352,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "19:20",
+      "opponent": "Rangers",
+      "venueId": "truist-park",
+      "attendance": 40810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "19:20",
+      "opponent": "Rangers",
+      "venueId": "truist-park",
+      "attendance": 41744,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "truist-park",
+      "attendance": 36581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-22",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 31572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 33533,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 38950,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "19:20",
+      "opponent": "Guardians",
+      "venueId": "truist-park",
+      "attendance": 40210,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "19:20",
+      "opponent": "Guardians",
+      "venueId": "truist-park",
+      "attendance": 41696,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "13:35",
+      "opponent": "Guardians",
+      "venueId": "truist-park",
+      "attendance": 40758,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "19:20",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 38142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "19:20",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 37015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-13",
+      "start": "19:20",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 34582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "19:20",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 37357,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "19:20",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 36623,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "19:20",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 40186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "19:15",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 34753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 39203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-20",
+      "start": "12:20",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 35113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-20",
+      "start": "18:20",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 34753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-27",
+      "start": "16:10",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 38858,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-28",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 37598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-29",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 33654,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-30",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 37784,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "19:20",
+      "opponent": "Athletics",
+      "venueId": "truist-park",
+      "attendance": 40204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "16:10",
+      "opponent": "Athletics",
+      "venueId": "truist-park",
+      "attendance": 41181,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "13:35",
+      "opponent": "Athletics",
+      "venueId": "truist-park",
+      "attendance": 37853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "19:20",
+      "opponent": "Rays",
+      "venueId": "truist-park",
+      "attendance": 41046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "16:10",
+      "opponent": "Rays",
+      "venueId": "truist-park",
+      "attendance": 40480,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "13:35",
+      "opponent": "Rays",
+      "venueId": "truist-park",
+      "attendance": 40211,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-17",
+      "start": "19:20",
+      "opponent": "Tigers",
+      "venueId": "truist-park",
+      "attendance": 38273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "19:20",
+      "opponent": "Tigers",
+      "venueId": "truist-park",
+      "attendance": 37561,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "12:20",
+      "opponent": "Tigers",
+      "venueId": "truist-park",
+      "attendance": 36055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "19:20",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 42155,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "16:10",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 40864,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "11:35",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 36679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-02",
+      "start": "19:20",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 34047,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-03",
+      "start": "19:20",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 38834,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "19:20",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 40672,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-05",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 40942,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-06",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 41006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-07",
+      "start": "13:35",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 36808,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-19",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 37042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "13:07",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 37042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "19:20",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 42168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-21",
+      "start": "13:35",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 36348,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-22",
+      "start": "19:20",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 38779,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "19:20",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 34883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "12:20",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 34407,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "18:05",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 34883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-01",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 34401,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-02",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 37726,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-03",
+      "start": "19:20",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 40749,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-04",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 33146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "19:20",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 38701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": "19:20",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 33281,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-08",
+      "start": "12:20",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 29935,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 34245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "19:20",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 33221,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-22",
+      "start": "19:08",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 34704,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 37203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "19:20",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 40230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "12:05",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 32327,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "19:20",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 32672,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "19:20",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 36859,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-05",
+      "start": "19:20",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 32811,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "19:20",
+      "opponent": "Blue Jays",
+      "venueId": "truist-park",
+      "attendance": 37230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "19:20",
+      "opponent": "Blue Jays",
+      "venueId": "truist-park",
+      "attendance": 38276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "truist-park",
+      "attendance": 36394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-09",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 34883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "19:20",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 40339,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "19:20",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 42732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 39198,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-16",
+      "start": "19:20",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 37109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-24",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 40103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-25",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 41561,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-27",
+      "start": "19:20",
+      "opponent": "Royals",
+      "venueId": "truist-park",
+      "attendance": 36212,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "19:20",
+      "opponent": "Royals",
+      "venueId": "truist-park",
+      "attendance": 38775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "15:20",
+      "opponent": "Royals",
+      "venueId": "truist-park",
+      "attendance": 39043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2024,
+      "date": "2024-09-30",
+      "start": null,
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 41561,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 41583,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Magnetic Schedule Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day Braves Walk"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 39732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "name": "Magnetic Schedule Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Girls Night Out Ticket Package - SOLD OUT!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 35664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Chris Sale \"Triple Crown\" Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Curtis Pride Meet and Greet"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 33508,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Los Bravos Hat Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 35323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pitcher Series: Chris Sale Cy Young Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Los Bravos Hat Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-10",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 36630,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "19:15",
+      "opponent": "Twins",
+      "venueId": "truist-park",
+      "attendance": 39142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "19:15",
+      "opponent": "Twins",
+      "venueId": "truist-park",
+      "attendance": 39278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Girls Night Out Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:35",
+      "opponent": "Twins",
+      "venueId": "truist-park",
+      "attendance": 31889,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "BLOOPER Mascot Security T-Shirt Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Los Bravos Hat Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-21",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 30180,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Los Bravos Hat Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 35876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Chipper Jones 2000 All-Star Game Bobblehead Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Los Bravos Hat Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "12:15",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 34009,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Los Bravos Hat Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 41201,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "AANHPI Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 42159,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 39649,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ozzie Albies \"Go Fish\" Cards Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-05",
+      "start": "19:15",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 30175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "19:15",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 32835,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Braves Racecar Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "19:15",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 32761,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Star Wars Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "19:15",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 33794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pitcher Series: Raisel Iglesias Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-12",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 32696,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 32725,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "A MINECRAFT MOVIE Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 37134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Marcell Ozuna Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Harlem Globetrotters"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-15",
+      "start": "12:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 34074,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "19:15",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 40327,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Military Appreciation Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Ticket Package - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "16:10",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 41338,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bucket Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "16:10",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 41251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids Drawstring Bag Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Kids Visor Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Club Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "19:15",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 39842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "16:10",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 41444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Braves Country 5K"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "13:35",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 38279,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pool Float Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AAGPBL Ticket Package"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "All-American Girls Professional Baseball League Exhibit"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "19:15",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 32898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pride Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "19:15",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 37082,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Truist Park Replica Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "ALS Awareness Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": "12:15",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 33902,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Beach Tote Bag"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Summer Camp Day Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 39303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "16:10",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 38515,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "EBCI Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:35",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 39405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Braves Teddy Bear"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 36791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pitcher Series: Spencer Strider & Kipnis Bobblehead Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Club Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 39926,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Usher Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 39234,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 40753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 41751,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "13:35",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 35792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Spencer Strider Growth Chart Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "19:15",
+      "opponent": "Angels",
+      "venueId": "truist-park",
+      "attendance": 31657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ceramic Coin Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "19:15",
+      "opponent": "Angels",
+      "venueId": "truist-park",
+      "attendance": 31519,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-03",
+      "start": "19:15",
+      "opponent": "Angels",
+      "venueId": "truist-park",
+      "attendance": 34702,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "19:15",
+      "opponent": "Orioles",
+      "venueId": "truist-park",
+      "attendance": 40249,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "16:10",
+      "opponent": "Orioles",
+      "venueId": "truist-park",
+      "attendance": 37170,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Chris Tomlin Field Pass Ticket Package"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Chris Tomlin Postgame Concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "11:35",
+      "opponent": "Orioles",
+      "venueId": "truist-park",
+      "attendance": 34012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "\"A\" Chain Necklace Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "BLOOPER's Mascot Party"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Club Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run The Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "truist-park",
+      "attendance": 41844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "truist-park",
+      "attendance": 42530,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "13:35",
+      "opponent": "Yankees",
+      "venueId": "truist-park",
+      "attendance": 40125,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Goodnight, Braves Fan children's book Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-21",
+      "start": "19:15",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 34857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Braves Rope Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "19:15",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 36433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter™ Themed Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "12:15",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 33352,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Summer Camp Day Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-04",
+      "start": "19:15",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 30790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pitcher Series: Reynaldo López Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "19:15",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 30642,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Batman™ Themed Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "19:15",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 30964,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ronald Acuña Jr. Funko POP! Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-07",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 32460,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 32717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "13:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 35664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Chris Sale \"Triple Crown\" Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Curtis Pride Meet and Greet"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 35433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Club Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 31203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sliding Mitt Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Heart Health Awareness Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-18",
+      "start": "19:15",
+      "opponent": "White Sox",
+      "venueId": "truist-park",
+      "attendance": 27868,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter™ Themed Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "19:15",
+      "opponent": "White Sox",
+      "venueId": "truist-park",
+      "attendance": 29134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Spencer Strider Volume 2 Vinyl Record Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "19:15",
+      "opponent": "White Sox",
+      "venueId": "truist-park",
+      "attendance": 30054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 40076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1995 World Series Replica Ring Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "2025 Alumni Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 39738,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hunting & Fishing Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "13:35",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 34393,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bat Hat Cover Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "1995 World Series Poster Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-05",
+      "start": "19:15",
+      "opponent": "Mariners",
+      "venueId": "truist-park",
+      "attendance": 36203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Grunge Night & Flannel Fest"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "19:15",
+      "opponent": "Mariners",
+      "venueId": "truist-park",
+      "attendance": 35700,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Celebrate Seattle Culture"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "12:05",
+      "opponent": "Mariners",
+      "venueId": "truist-park",
+      "attendance": 31119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Player Beaded Necklace Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Celebrate Seattle Culture"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-08",
+      "start": "19:15",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 33430,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Michael Harris II Scooter Bobblehead Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Ovarian Cancer Awareness Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter™ Themed Ticket Package"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Oktoberfest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "19:15",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 32721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Barbie Game Day™ Ticket Package"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Oktoberfest"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Parade"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "19:15",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 35757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Replica Jersey Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Batman™ Themed Ticket Package"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Oktoberfest"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Parade"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "19:15",
+      "opponent": "Astros",
+      "venueId": "truist-park",
+      "attendance": 34030,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "19:15",
+      "opponent": "Astros",
+      "venueId": "truist-park",
+      "attendance": 36826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "13:35",
+      "opponent": "Astros",
+      "venueId": "truist-park",
+      "attendance": 32807,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cap with Charms Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sunglass Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Club Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-22",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 35248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ronald Acuña Jr. \"Red Carpet\" Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Parade"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-23",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 37322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Los Bravos Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-24",
+      "start": "12:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 32898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Weather Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-26",
+      "start": "19:15",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 34500,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 84
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Live Music"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "19:15",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 35007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 85
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "15:15",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 35827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 86
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "BLOOPER Cereal Bowl and Spoon Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Club Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-03-27",
+      "start": "19:15",
+      "opponent": "Royals",
+      "venueId": "truist-park",
+      "attendance": 39697,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Magnetic Schedule Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Rally Towel Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Braves Walk"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "60th Anniversary Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "19:15",
+      "opponent": "Royals",
+      "venueId": "truist-park",
+      "attendance": 39362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Magnetic Schedule Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "BravesVision T-Shirt Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-03-29",
+      "start": "13:35",
+      "opponent": "Royals",
+      "venueId": "truist-park",
+      "attendance": 37961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ronald Acuña Jr. Chenille Cap"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "name": "Kids Club Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-03-30",
+      "start": "19:15",
+      "opponent": "Athletics",
+      "venueId": "truist-park",
+      "attendance": 24478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-03-31",
+      "start": "19:15",
+      "opponent": "Athletics",
+      "venueId": "truist-park",
+      "attendance": 30799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Drake Baldwin NL Rookie of the Year Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "12:15",
+      "opponent": "Athletics",
+      "venueId": "truist-park",
+      "attendance": 27568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Science Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "19:15",
+      "opponent": "Guardians",
+      "venueId": "truist-park",
+      "attendance": 40363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Dale Murphy Replica Jersey Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "80's Theme Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "19:15",
+      "opponent": "Guardians",
+      "venueId": "truist-park",
+      "attendance": 40195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "19:20",
+      "opponent": "Guardians",
+      "venueId": "truist-park",
+      "attendance": 29084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Colorful Novelty Bucket Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Autism Acceptance Day Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-13",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 22912,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 27441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 28884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 39627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Theme Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 39324,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Brian Snitker - Braves Hall of Fame Induction"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "13:35",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 39213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Michael Harris II Mini Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "19:15",
+      "opponent": "Tigers",
+      "venueId": "truist-park",
+      "attendance": 32162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mackenzie Carpenter Postgame Concert"
+        },
+        {
+          "type": "Giveaway|Day of Game Highlights",
+          "name": "Braves Country Fest Poster EXIT Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "19:15",
+      "opponent": "Tigers",
+      "venueId": "truist-park",
+      "attendance": 30439,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Bobblecard™ Series: Chris Sale Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": "12:15",
+      "opponent": "Tigers",
+      "venueId": "truist-park",
+      "attendance": 32620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "19:15",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 38342,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hawaiian Shirt Giveaway"
+        },
+        {
+          "type": "Giveaway|Day of Game Highlights",
+          "name": "Braves Country Fest Poster EXIT Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "19:15",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 35540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Michael Harris II & Cash Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "AANHPI Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "19:15",
+      "opponent": "Cubs",
+      "venueId": "truist-park",
+      "attendance": 36367,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "FIFA World Cup™ Trophy Tour"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "19:15",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 39288,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Braves Red Out Theme Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "19:15",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 39336,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Armed Forces Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "13:35",
+      "opponent": "Red Sox",
+      "venueId": "truist-park",
+      "attendance": 37800,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sunglasses Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "name": "Kids Club Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 36082,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Straw Cowboy Hat Giveaway"
+        },
+        {
+          "name": "Braves Country Night"
+        },
+        {
+          "type": "Giveaway|Day of Game Highlights",
+          "name": "Braves Country Fest Poster EXIT Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "16:10",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 35819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "16:10",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 36429,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kids City Connect Socks Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "19:15",
+      "opponent": "Blue Jays",
+      "venueId": "truist-park",
+      "attendance": 30937,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "David Justice Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "19:15",
+      "opponent": "Blue Jays",
+      "venueId": "truist-park",
+      "attendance": 37178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Crossover Jersey Collection: Drake Baldwin Hockey Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "19:15",
+      "opponent": "Blue Jays",
+      "venueId": "truist-park",
+      "attendance": 30598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "All-Star Poster Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "19:15",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 39418,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "name": "Summer Beach Bash Theme Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "16:10",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 40276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "13:35",
+      "opponent": "Pirates",
+      "venueId": "truist-park",
+      "attendance": 37697,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Crossover Jersey Collection: Kids Soccer Jersey Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Club Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "19:15",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 31266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "14:00",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 31266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "19:15",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 35449,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Crossover Jersey Collection: Soccer Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": "19:15",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 29349,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "19:15",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 40107,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "All-Star Poster Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "16:10",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 40156,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        },
+        {
+          "type": "Theme Days",
+          "name": "EBCI Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Country's Talent Search"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "truist-park",
+      "attendance": 39344,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Braves LED Light"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids & Dads Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Prostate Cancer Awareness Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Father's Day Pregame Parade"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Prostate Cancer Awareness Day Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 32932,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 27361,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-02",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "truist-park",
+      "attendance": 34524,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Corduroy Throwback Cap Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Independence Week Eating Contest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 39138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Independence Week Eating Contest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "20:08",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 40168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "4th of July Celebration 2026"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Independence Week Eating Contest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "12:30",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 28621,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Drake Baldwin Rookie of the Year Mini Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-06",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 31445,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Bobblecard™ Series: Matt Olson Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "19:15",
+      "opponent": "Rangers",
+      "venueId": "truist-park",
+      "attendance": 40147,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Christmas in July Theme Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "16:10",
+      "opponent": "Rangers",
+      "venueId": "truist-park",
+      "attendance": 37056,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Country's Talent Search"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "13:35",
+      "opponent": "Rangers",
+      "venueId": "truist-park",
+      "attendance": 29856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "ATL Clear Purse"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Concessions Offer"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-20",
+      "start": "19:15",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 31263,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Club Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "19:15",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 31870,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ha-Seong Kim Bobblehead Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Marvel™ Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "19:15",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 33766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jermaine Dupri Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-23",
+      "start": "12:15",
+      "opponent": "Padres",
+      "venueId": "truist-park",
+      "attendance": 29441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Summer Camp Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 35418,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Andruw Jones National Baseball Hall of Fame Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 37664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "name": "1996 Olympics Theme Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 38625,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Country's Talent Search"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "truist-park",
+      "attendance": 27143,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Colorful Novelty Drawstring Shorts"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 26374,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 25136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter™ Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "truist-park",
+      "attendance": 33500,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Alan Jackson Celebration Night and Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-10",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 28402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Crossover Jersey Collection: Michael Harris II Football Jersey Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "College Night: University of Georgia"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 24711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Spencer Strider Vol. 3 Vinyl Record Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "College Night: Kennesaw State University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "truist-park",
+      "attendance": 26415,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Javy López Bobblehead Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "College Night: Georgia Tech"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "19:15",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 35106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Andrés Galarraga Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "19:15",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 39693,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "13:35",
+      "opponent": "D-backs",
+      "venueId": "truist-park",
+      "attendance": 29629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Crossover Jersey Collection: Kids Michael Harris II Football Jersey Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Club Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Behind the Braves - Live with Brian Snitker"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Girl Scouts Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 36832,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 37227,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-27",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 39650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter™ Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 38006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "HBCU Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "16:10",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 40129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Hunting & Fishing Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Block Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "13:35",
+      "opponent": "Rockies",
+      "venueId": "truist-park",
+      "attendance": 31776,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sliding Mitt Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "College Day: Clemson University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-08-31",
+      "start": "18:05",
+      "opponent": "Giants",
+      "venueId": "truist-park",
+      "attendance": 29349,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "19:15",
+      "opponent": "Rays",
+      "venueId": "truist-park",
+      "attendance": 30969,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "The Avett Brothers Postgame Concert"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Ovarian Cancer Awareness Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Books & Baseball Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "19:15",
+      "opponent": "Rays",
+      "venueId": "truist-park",
+      "attendance": 30969,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kane Brown Bobblehead Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Barbie Game Day™ Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-10",
+      "start": "12:15",
+      "opponent": "Rays",
+      "venueId": "truist-park",
+      "attendance": 31664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Weather Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 40161,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Patriot Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Night Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 40863,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Braves Country's Talent Search - FINALE!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:35",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 39830,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Crossover Jersey Collection: Kids Ronald Acuña Jr. Basketball Jersey Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Sunday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Kids Club Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Braves x RMS Original Viral Mystery Squishy Dumpling Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-22",
+      "start": "19:15",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 38214,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Austin Riley Short Sleeve Hoodie Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-23",
+      "start": "19:15",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 39680,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-24",
+      "start": "19:15",
+      "opponent": "Reds",
+      "venueId": "truist-park",
+      "attendance": 40165,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Crossover Jersey Collection: Ronald Acuña Jr. Basketball Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-29",
+      "start": "14:00",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 30127,
+      "kind": "announced",
+      "postseason": true,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-09-30",
+      "start": "14:00",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 37150,
+      "kind": "announced",
+      "postseason": true,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-10-01",
+      "start": "20:00",
+      "opponent": "Phillies",
+      "venueId": "truist-park",
+      "attendance": 41731,
+      "kind": "announced",
+      "postseason": true,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-10-06",
+      "start": "18:00",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 42420,
+      "kind": "announced",
+      "postseason": true,
+      "promotions": [],
+      "sourceId": "mlb"
+    }
+  ]
+}

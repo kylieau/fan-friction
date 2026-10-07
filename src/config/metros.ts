@@ -12,7 +12,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -54,6 +54,16 @@ export const METROS: Record<string, Metro> = {
     name: 'New York',
     timeZone: 'America/New_York',
     center: [-73.93, 40.75],
+    zoom: 10.5,
+  },
+  // Covered Oct 7, 2026 (docs/atlanta-venue-table-answer.md): the 11-county core, from Kennesaw
+  // and Alpharetta down to Hampton. This frames Downtown, Midtown, the Battery and Lakewood on one
+  // phone screen; Gas South, Alpharetta, Kennesaw and the speedway sit off the first view.
+  atlanta: {
+    id: 'atlanta',
+    name: 'Atlanta',
+    timeZone: 'America/New_York',
+    center: [-84.4, 33.8],
     zoom: 10.5,
   },
   phoenix: {

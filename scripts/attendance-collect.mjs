@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -25,6 +25,7 @@ const MLB_TEAMS = [
   { teamId: 'mariners', mlbId: 136, venueId: 't-mobile-park', metroId: 'seattle', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'yankees', mlbId: 147, venueId: 'yankee-stadium', metroId: 'new-york', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'mets', mlbId: 121, venueId: 'citi-field', metroId: 'new-york', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'braves', mlbId: 144, venueId: 'truist-park', metroId: 'atlanta', seasons: [2022, 2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -70,6 +71,19 @@ const ESPN_TEAMS = [
   { teamId: 'columbia-football', metroId: 'new-york', path: 'football/college-football', espnId: '171', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'stony-brook-football', metroId: 'new-york', path: 'football/college-football', espnId: '2619', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'fordham-football', metroId: 'new-york', path: 'football/college-football', espnId: '2230', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'hawks', metroId: 'atlanta', path: 'basketball/nba', espnId: '1', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'dream', metroId: 'atlanta', path: 'basketball/wnba', espnId: '20', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'falcons', metroId: 'atlanta', path: 'football/nfl', espnId: '1', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'atlanta-united', metroId: 'atlanta', path: 'soccer/usa.1', espnId: '18418', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'gt-football', metroId: 'atlanta', path: 'football/college-football', espnId: '59', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'gt-mbb', metroId: 'atlanta', path: 'basketball/mens-college-basketball', espnId: '59', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'gt-wbb', metroId: 'atlanta', path: 'basketball/womens-college-basketball', espnId: '59', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'gsu-football', metroId: 'atlanta', path: 'football/college-football', espnId: '2247', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'gsu-mbb', metroId: 'atlanta', path: 'basketball/mens-college-basketball', espnId: '2247', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'gsu-wbb', metroId: 'atlanta', path: 'basketball/womens-college-basketball', espnId: '2247', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'ksu-football', metroId: 'atlanta', path: 'football/college-football', espnId: '338', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'ksu-mbb', metroId: 'atlanta', path: 'basketball/mens-college-basketball', espnId: '338', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'ksu-wbb', metroId: 'atlanta', path: 'basketball/womens-college-basketball', espnId: '338', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -110,6 +124,19 @@ const VENUE_BY_NAME = {
   'moglia stadium at jack coffey field': 'coffey-field',
   'carnesecca arena': 'carnesecca-arena',
   'icahn stadium': 'icahn-stadium',
+  // Atlanta (docs/atlanta-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  'mercedes-benz stadium': 'mercedes-benz-stadium',
+  'state farm arena': 'state-farm-arena',
+  'gateway center': 'gateway-center-arena',
+  'center parc stadium': 'center-parc-stadium',
+  'bobby dodd stadium': 'bobby-dodd-stadium',
+  'bobby dodd stadium at hyundai field': 'bobby-dodd-stadium',
+  'walens family field at fifth third stadium': 'fifth-third-stadium',
+  'fifth third stadium': 'fifth-third-stadium',
+  'gsu convocation center': 'gsu-convocation-center',
+  'mccamish pavilion': 'mccamish-pavilion',
+  'vystar arena': 'ksu-convocation-center',
+  'ksu convocation center': 'ksu-convocation-center',
 };
 
 function localParts(iso, metroId) {

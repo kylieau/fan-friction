@@ -1,0 +1,250 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "teamId": "ksu-football",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "ksu-football",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "18:00",
+      "opponent": "Wofford",
+      "venueId": "fifth-third-stadium",
+      "attendance": 7154,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "18:00",
+      "opponent": "North Alabama",
+      "venueId": "fifth-third-stadium",
+      "attendance": 4505,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2022,
+      "date": "2022-10-15",
+      "start": "13:00",
+      "opponent": "C Arkansas",
+      "venueId": "fifth-third-stadium",
+      "attendance": 4467,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2022,
+      "date": "2022-10-22",
+      "start": "15:00",
+      "opponent": "Tennessee Tech",
+      "venueId": "fifth-third-stadium",
+      "attendance": 7906,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2022,
+      "date": "2022-10-29",
+      "start": "13:00",
+      "opponent": "Charleston So",
+      "venueId": "fifth-third-stadium",
+      "attendance": 3845,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "13:00",
+      "opponent": "Austin Peay",
+      "venueId": "fifth-third-stadium",
+      "attendance": 5201,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": "19:00",
+      "opponent": "Tusculum",
+      "venueId": "fifth-third-stadium",
+      "attendance": 10108,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "17:00",
+      "opponent": "Furman",
+      "venueId": "fifth-third-stadium",
+      "attendance": 6993,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2023,
+      "date": "2023-10-07",
+      "start": "15:00",
+      "opponent": "Tennessee St",
+      "venueId": "fifth-third-stadium",
+      "attendance": 10436,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "15:00",
+      "opponent": "Lincoln (CA)",
+      "venueId": "fifth-third-stadium",
+      "attendance": 6013,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "15:00",
+      "opponent": "VA Lynchburg",
+      "venueId": "fifth-third-stadium",
+      "attendance": 5735,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "19:00",
+      "opponent": "Louisiana",
+      "venueId": "fifth-third-stadium",
+      "attendance": 11040,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2024,
+      "date": "2024-10-04",
+      "start": "19:00",
+      "opponent": "Jax State",
+      "venueId": "fifth-third-stadium",
+      "attendance": 10029,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2024,
+      "date": "2024-10-23",
+      "start": "19:00",
+      "opponent": "Liberty",
+      "venueId": "fifth-third-stadium",
+      "attendance": 8209,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "15:00",
+      "opponent": "Sam Houston",
+      "venueId": "fifth-third-stadium",
+      "attendance": 7736,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "15:00",
+      "opponent": "FIU",
+      "venueId": "fifth-third-stadium",
+      "attendance": 6210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "18:00",
+      "opponent": "Merrimack",
+      "venueId": "fifth-third-stadium",
+      "attendance": 11040,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "18:00",
+      "opponent": "Arkansas St",
+      "venueId": "fifth-third-stadium",
+      "attendance": 10713,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "18:00",
+      "opponent": "MTSU",
+      "venueId": "fifth-third-stadium",
+      "attendance": 11040,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2025,
+      "date": "2025-10-09",
+      "start": "19:00",
+      "opponent": "Louisiana Tech",
+      "venueId": "fifth-third-stadium",
+      "attendance": 9585,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2025,
+      "date": "2025-10-28",
+      "start": "20:00",
+      "opponent": "UTEP",
+      "venueId": "fifth-third-stadium",
+      "attendance": 11040,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "14:00",
+      "opponent": "Missouri St",
+      "venueId": "fifth-third-stadium",
+      "attendance": 11040,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}
