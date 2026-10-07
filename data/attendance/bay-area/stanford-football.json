@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "teamId": "stanford-football",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "stanford-football",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "17:00",
+      "opponent": "Colgate",
+      "venueId": "stanford-stadium",
+      "attendance": 26826,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "16:30",
+      "opponent": "USC",
+      "venueId": "stanford-stadium",
+      "attendance": 43813,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "20:00",
+      "opponent": "Oregon St",
+      "venueId": "stanford-stadium",
+      "attendance": 32482,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2022,
+      "date": "2022-10-22",
+      "start": "13:00",
+      "opponent": "Arizona St",
+      "venueId": "stanford-stadium",
+      "attendance": 25061,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "12:30",
+      "opponent": "Washington St",
+      "venueId": "stanford-stadium",
+      "attendance": 26515,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2022,
+      "date": "2022-11-26",
+      "start": "20:00",
+      "opponent": "BYU",
+      "venueId": "stanford-stadium",
+      "attendance": 25094,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "17:00",
+      "opponent": "Sacramento St",
+      "venueId": "stanford-stadium",
+      "attendance": 23848,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "16:00",
+      "opponent": "Arizona",
+      "venueId": "stanford-stadium",
+      "attendance": 38046,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "15:30",
+      "opponent": "Oregon",
+      "venueId": "stanford-stadium",
+      "attendance": 32160,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "19:30",
+      "opponent": "UCLA",
+      "venueId": "stanford-stadium",
+      "attendance": 30225,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "16:00",
+      "opponent": "Washington",
+      "venueId": "stanford-stadium",
+      "attendance": 24381,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "15:30",
+      "opponent": "California",
+      "venueId": "stanford-stadium",
+      "attendance": 52971,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2023,
+      "date": "2023-11-25",
+      "start": "16:00",
+      "opponent": "Notre Dame",
+      "venueId": "stanford-stadium",
+      "attendance": 30901,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "19:30",
+      "opponent": "TCU",
+      "venueId": "stanford-stadium",
+      "attendance": 36026,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "16:00",
+      "opponent": "Cal Poly",
+      "venueId": "stanford-stadium",
+      "attendance": 22634,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "12:30",
+      "opponent": "Virginia Tech",
+      "venueId": "stanford-stadium",
+      "attendance": 36277,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2024,
+      "date": "2024-10-19",
+      "start": "17:00",
+      "opponent": "SMU",
+      "venueId": "stanford-stadium",
+      "attendance": 19117,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "12:30",
+      "opponent": "Wake Forest",
+      "venueId": "stanford-stadium",
+      "attendance": 23471,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "12:30",
+      "opponent": "Louisville",
+      "venueId": "stanford-stadium",
+      "attendance": 18685,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "19:30",
+      "opponent": "Boston College",
+      "venueId": "stanford-stadium",
+      "attendance": 22162,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "16:30",
+      "opponent": "San José St",
+      "venueId": "stanford-stadium",
+      "attendance": 26357,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "19:30",
+      "opponent": "Florida St",
+      "venueId": "stanford-stadium",
+      "attendance": 26470,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "12:30",
+      "opponent": "Pitt",
+      "venueId": "stanford-stadium",
+      "attendance": 16540,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "16:30",
+      "opponent": "California",
+      "venueId": "stanford-stadium",
+      "attendance": 50039,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2025,
+      "date": "2025-11-29",
+      "start": "19:30",
+      "opponent": "Notre Dame",
+      "venueId": "stanford-stadium",
+      "attendance": 27456,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

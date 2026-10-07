@@ -2014,6 +2014,2382 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2025–2026"
   },
   {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "venueId": "paypal-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 12320,
+    "low": 11431,
+    "high": 14279,
+    "games": 23,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "venueId": "paypal-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 12643,
+    "low": 12127,
+    "high": 13519,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "venueId": "paypal-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 12269,
+    "low": 11483,
+    "high": 14406,
+    "games": 12,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "venueId": "paypal-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 11478,
+    "low": 11138,
+    "high": 11499,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "venueId": "paypal-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 12320,
+    "low": 11193,
+    "high": 14317,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-football",
+    "venueId": "california-memorial-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 35250,
+    "low": 33470,
+    "high": 39477,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-football",
+    "venueId": "california-memorial-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 35898,
+    "low": 34087,
+    "high": 40020,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-football",
+    "venueId": "california-memorial-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 35303,
+    "low": 33923,
+    "high": 40398,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-football",
+    "venueId": "california-memorial-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 36004,
+    "low": 34986,
+    "high": 37247,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-football",
+    "venueId": "california-memorial-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 38772,
+    "low": 35023,
+    "high": 43347,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-football",
+    "venueId": "california-memorial-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 33493,
+    "low": 30893,
+    "high": 38155,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 3494,
+    "low": 2749,
+    "high": 5166,
+    "games": 50,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3143,
+    "low": 3105,
+    "high": 3308,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3024,
+    "low": 2481,
+    "high": 3805,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3082,
+    "low": 2913,
+    "high": 3696,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 4272,
+    "low": 3388,
+    "high": 5616,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2503,
+    "low": 2152,
+    "high": 2779,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2783,
+    "low": 2516,
+    "high": 3035,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "friday",
+    "month": null,
+    "count": 4727,
+    "low": 3470,
+    "high": 5750,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4791,
+    "low": 3240,
+    "high": 5974,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 4586,
+    "low": 3803,
+    "high": 5896,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 5629,
+    "low": 4812,
+    "high": 7563,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 2827,
+    "low": 2701,
+    "high": 3246,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 2007,
+    "low": 1428,
+    "high": 2866,
+    "games": 29,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1904,
+    "low": 1192,
+    "high": 2698,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2116,
+    "low": 1652,
+    "high": 2484,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1970,
+    "low": 1777,
+    "high": 2208,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2889,
+    "low": 1132,
+    "high": 4735,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2307,
+    "low": 1610,
+    "high": 2952,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 2311,
+    "low": 1982,
+    "high": 3415,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 2589,
+    "low": 2409,
+    "high": 3012,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "venueId": "haas-pavilion",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 1512,
+    "low": 1359,
+    "high": 1675,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "venueId": "paypal-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 15175,
+    "low": 14166,
+    "high": 16104,
+    "games": 28,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "venueId": "paypal-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 14359,
+    "low": 13105,
+    "high": 15978,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "venueId": "paypal-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 15228,
+    "low": 14182,
+    "high": 16102,
+    "games": 21,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "venueId": "paypal-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 16045,
+    "low": 15302,
+    "high": 16102,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "venueId": "paypal-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 14363,
+    "low": 14065,
+    "high": 14779,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "venueId": "paypal-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 14196,
+    "low": 12150,
+    "high": 15871,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 35080,
+    "low": 31735,
+    "high": 39128,
+    "games": 239,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 40856,
+    "low": 40751,
+    "high": 40861,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 32073,
+    "low": 28618,
+    "high": 35094,
+    "games": 115,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 30183,
+    "low": 26896,
+    "high": 32898,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 32336,
+    "low": 30078,
+    "high": 34181,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 33930,
+    "low": 31899,
+    "high": 35515,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 35486,
+    "low": 32786,
+    "high": 38112,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 30139,
+    "low": 28307,
+    "high": 31389,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 27787,
+    "low": 25096,
+    "high": 30883,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 38317,
+    "low": 34125,
+    "high": 40066,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 38317,
+    "low": 37110,
+    "high": 38613,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 35036,
+    "low": 33943,
+    "high": 39274,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 39102,
+    "low": 38349,
+    "high": 39827,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 37465,
+    "low": 34116,
+    "high": 41069,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 34138,
+    "low": 33464,
+    "high": 38363,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 39923,
+    "low": 38735,
+    "high": 40394,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 38291,
+    "low": 35141,
+    "high": 40109,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 38589,
+    "low": 35697,
+    "high": 40134,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 40111,
+    "low": 38115,
+    "high": 40425,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 35699,
+    "low": 35142,
+    "high": 39186,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 37110,
+    "low": 34705,
+    "high": 39084,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 36087,
+    "low": 35070,
+    "high": 38742,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 38201,
+    "low": 33786,
+    "high": 40135,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 40051,
+    "low": 35519,
+    "high": 40389,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 40118,
+    "low": 36730,
+    "high": 40297,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 40136,
+    "low": 37170,
+    "high": 40869,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 40350,
+    "low": 39789,
+    "high": 40718,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 35647,
+    "low": 34112,
+    "high": 39388,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 39048,
+    "low": 33869,
+    "high": 39872,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 37536,
+    "low": 34079,
+    "high": 40129,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "venueId": "oakland-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 5295,
+    "low": 4642,
+    "high": 7044,
+    "games": 26,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "venueId": "oakland-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4601,
+    "low": 3549,
+    "high": 5159,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "venueId": "oakland-coliseum",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5349,
+    "low": 4765,
+    "high": 7063,
+    "games": 21,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "venueId": "oakland-coliseum",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 4765,
+    "low": 4246,
+    "high": 5412,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "venueId": "oakland-coliseum",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 4247,
+    "low": 4162,
+    "high": 6502,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "venueId": "oakland-coliseum",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 6125,
+    "low": 5658,
+    "high": 6556,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "venueId": "oakland-coliseum",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 5349,
+    "low": 5063,
+    "high": 7063,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "venueId": "levis-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 71564,
+    "low": 71257,
+    "high": 71682,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "venueId": "levis-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 71319,
+    "low": 70867,
+    "high": 71456,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "venueId": "levis-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 71124,
+    "low": 52653,
+    "high": 71124,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "venueId": "levis-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 71337,
+    "low": 71269,
+    "high": 71513,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "venueId": "levis-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 71521,
+    "low": 71239,
+    "high": 71655,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "venueId": "levis-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 71521,
+    "low": 71310,
+    "high": 71569,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "venueId": "levis-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 71607,
+    "low": 71423,
+    "high": 71679,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "venueId": "levis-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 71739,
+    "low": 71507,
+    "high": 71821,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 15571,
+    "low": 11547,
+    "high": 17435,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 17435,
+    "low": 17435,
+    "high": 17435,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 9640,
+    "low": 9152,
+    "high": 10312,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 11625,
+    "low": 10778,
+    "high": 14261,
+    "games": 65,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 11292,
+    "low": 10988,
+    "high": 12195,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 11215,
+    "low": 10982,
+    "high": 11509,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 12208,
+    "low": 10419,
+    "high": 15773,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 14666,
+    "low": 12363,
+    "high": 16030,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 12501,
+    "low": 10598,
+    "high": 12795,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 10719,
+    "low": 10452,
+    "high": 11180,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 13702,
+    "low": 11824,
+    "high": 15723,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 17435,
+    "low": 15846,
+    "high": 17435,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 15846,
+    "low": 14360,
+    "high": 17032,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17435,
+    "low": 17435,
+    "high": 17435,
+    "games": 42,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 17435,
+    "low": 17435,
+    "high": 17435,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 17435,
+    "low": 15919,
+    "high": 17435,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 17435,
+    "low": 17435,
+    "high": 17435,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 17435,
+    "low": 17435,
+    "high": 17435,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 17435,
+    "low": 17330,
+    "high": 17435,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17435,
+    "low": 16151,
+    "high": 17435,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 17435,
+    "low": 17213,
+    "high": 17435,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 16156,
+    "low": 14313,
+    "high": 17435,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-football",
+    "venueId": "cefcu-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 15520,
+    "low": 13663,
+    "high": 17100,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-football",
+    "venueId": "cefcu-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 14877,
+    "low": 14344,
+    "high": 17607,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-football",
+    "venueId": "cefcu-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 14898,
+    "low": 13281,
+    "high": 16872,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-football",
+    "venueId": "cefcu-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 15520,
+    "low": 14055,
+    "high": 17100,
+    "games": 12,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-football",
+    "venueId": "cefcu-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 13155,
+    "low": 12123,
+    "high": 13690,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-football",
+    "venueId": "cefcu-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 17099,
+    "low": 16064,
+    "high": 17100,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-football",
+    "venueId": "cefcu-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 16118,
+    "low": 14649,
+    "high": 18221,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 2037,
+    "low": 1735,
+    "high": 2665,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1876,
+    "low": 1849,
+    "high": 1982,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1874,
+    "low": 1572,
+    "high": 2985,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1853,
+    "low": 1497,
+    "high": 2496,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 2339,
+    "low": 2261,
+    "high": 3284,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1897,
+    "low": 1612,
+    "high": 2498,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2177,
+    "low": 1964,
+    "high": 2287,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2127,
+    "low": 1847,
+    "high": 2625,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 2784,
+    "low": 2407,
+    "high": 3284,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 2078,
+    "low": 2001,
+    "high": 2135,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 1767,
+    "low": 1752,
+    "high": 2042,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "venueId": "provident-event-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1701,
+    "low": 1542,
+    "high": 1759,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "venueId": "provident-event-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 356,
+    "low": 306,
+    "high": 537,
+    "games": 29,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "venueId": "provident-event-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 344,
+    "low": 300,
+    "high": 466,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "venueId": "provident-event-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 317,
+    "low": 276,
+    "high": 432,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "venueId": "provident-event-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 327,
+    "low": 320,
+    "high": 342,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "venueId": "provident-event-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 290,
+    "low": 213,
+    "high": 384,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "venueId": "provident-event-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 412,
+    "low": 308,
+    "high": 610,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "venueId": "provident-event-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 314,
+    "low": 302,
+    "high": 356,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "venueId": "provident-event-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 610,
+    "low": 575,
+    "high": 644,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "venueId": "provident-event-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 415,
+    "low": 361,
+    "high": 465,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-football",
+    "venueId": "stanford-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 26963,
+    "low": 23262,
+    "high": 33189,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-football",
+    "venueId": "stanford-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 23848,
+    "low": 23005,
+    "high": 29937,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-football",
+    "venueId": "stanford-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 26963,
+    "low": 23262,
+    "high": 33189,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-football",
+    "venueId": "stanford-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 29259,
+    "low": 25426,
+    "high": 33632,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-football",
+    "venueId": "stanford-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 25426,
+    "low": 23699,
+    "high": 29286,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-football",
+    "venueId": "stanford-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 29179,
+    "low": 20878,
+    "high": 45255,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 3262,
+    "low": 2649,
+    "high": 4172,
+    "games": 49,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2286,
+    "low": 2210,
+    "high": 2293,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2890,
+    "low": 2297,
+    "high": 3421,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3220,
+    "low": 2950,
+    "high": 3262,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3375,
+    "low": 3015,
+    "high": 3695,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2266,
+    "low": 2055,
+    "high": 2334,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2284,
+    "low": 2121,
+    "high": 2424,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2680,
+    "low": 2168,
+    "high": 2863,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 2299,
+    "low": 1983,
+    "high": 2640,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4334,
+    "low": 3817,
+    "high": 5258,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 4504,
+    "low": 4174,
+    "high": 7291,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 4827,
+    "low": 4573,
+    "high": 6093,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3037,
+    "low": 2791,
+    "high": 3981,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 3981,
+    "low": 3218,
+    "high": 4163,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 2936,
+    "low": 2526,
+    "high": 3633,
+    "games": 32,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2697,
+    "low": 2493,
+    "high": 3013,
+    "games": 16,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2660,
+    "low": 2594,
+    "high": 2807,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 2855,
+    "low": 2723,
+    "high": 3013,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2428,
+    "low": 2289,
+    "high": 2499,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2540,
+    "low": 2537,
+    "high": 2771,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3561,
+    "low": 3034,
+    "high": 3908,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 3840,
+    "low": 3510,
+    "high": 4135,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "venueId": "maples-pavilion",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 2461,
+    "low": 2444,
+    "high": 3163,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 41,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 19,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "venueId": "chase-center",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 65,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 18064,
+    "low": 18064,
+    "high": 18064,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
     "metroId": "la",
     "teamId": "angel-city",
     "venueId": "bmo-stadium",
@@ -11409,6 +13785,1224 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "utep",
     "ratio": 0.98,
     "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "angel-city",
+    "ratio": 1.075,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "chicago",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "gotham",
+    "ratio": 0.975,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "houston",
+    "ratio": 1.11,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "kansas-city",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "louisville",
+    "ratio": 1.05,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "north-carolina",
+    "ratio": 1.045,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "orlando",
+    "ratio": 0.972,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "portland",
+    "ratio": 1.017,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "san-diego",
+    "ratio": 1.022,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "seattle",
+    "ratio": 1.025,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "bay-fc",
+    "opponent": "utah",
+    "ratio": 0.961,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-football",
+    "opponent": "oregon-st",
+    "ratio": 0.945,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "opponent": "bakersfield",
+    "ratio": 1.122,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "opponent": "n-western-st",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "opponent": "pacific",
+    "ratio": 0.954,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "opponent": "sacramento-st",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "opponent": "smu",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-mbb",
+    "opponent": "stanford",
+    "ratio": 1.334,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "opponent": "saint-mary-s",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "cal-wbb",
+    "opponent": "stanford",
+    "ratio": 1.272,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "austin",
+    "ratio": 1.024,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "colorado",
+    "ratio": 0.979,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "dallas",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "houston",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "kansas-city",
+    "ratio": 0.95,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "minnesota",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "portland",
+    "ratio": 0.973,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "salt-lake",
+    "ratio": 1.046,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "seattle",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "st-louis",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "opponent": "vancouver",
+    "ratio": 1.019,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "angels",
+    "ratio": 1.014,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "astros",
+    "ratio": 0.973,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "athletics",
+    "ratio": 1.054,
+    "games": 8
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "blue-jays",
+    "ratio": 0.947,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "braves",
+    "ratio": 0.967,
+    "games": 10
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "brewers",
+    "ratio": 0.982,
+    "games": 10
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "cardinals",
+    "ratio": 0.971,
+    "games": 9
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "cubs",
+    "ratio": 0.996,
+    "games": 10
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "d-backs",
+    "ratio": 0.976,
+    "games": 20
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "dodgers",
+    "ratio": 1.11,
+    "games": 18
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "marlins",
+    "ratio": 0.987,
+    "games": 9
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "mets",
+    "ratio": 0.996,
+    "games": 10
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "nationals",
+    "ratio": 1.003,
+    "games": 9
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "padres",
+    "ratio": 1.033,
+    "games": 19
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "phillies",
+    "ratio": 1.074,
+    "games": 9
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "pirates",
+    "ratio": 1.03,
+    "games": 9
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "reds",
+    "ratio": 0.961,
+    "games": 9
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "rockies",
+    "ratio": 0.954,
+    "games": 20
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "tigers",
+    "ratio": 0.968,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "twins",
+    "ratio": 0.99,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "white-sox",
+    "ratio": 1.007,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "opponent": "yankees",
+    "ratio": 1.062,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "el-paso",
+    "ratio": 1.036,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "las-vegas",
+    "ratio": 0.882,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "monterey-bay",
+    "ratio": 1.019,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "new-mexico",
+    "ratio": 1.435,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "orange-county",
+    "ratio": 1.134,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "phoenix",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "pittsburgh",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "sacramento",
+    "ratio": 1.136,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "switchbacks-fc",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
+    "opponent": "tulsa",
+    "ratio": 0.927,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "opponent": "bears",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "opponent": "cardinals",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "opponent": "cowboys",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "opponent": "rams",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sf-49ers",
+    "opponent": "seahawks",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "avalanche",
+    "ratio": 0.957,
+    "games": 4
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "blackhawks",
+    "ratio": 1.014,
+    "games": 4
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "blue-jackets",
+    "ratio": 1.105,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "blues",
+    "ratio": 1.088,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "bruins",
+    "ratio": 1.022,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "canadiens",
+    "ratio": 1.112,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "canucks",
+    "ratio": 1.015,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "capitals",
+    "ratio": 1.035,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "coyotes",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "devils",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "ducks",
+    "ratio": 1.014,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "flames",
+    "ratio": 1.067,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "flyers",
+    "ratio": 0.973,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "golden-knights",
+    "ratio": 1.081,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "hurricanes",
+    "ratio": 0.983,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "islanders",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "jets",
+    "ratio": 0.948,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "kings",
+    "ratio": 1.057,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "kraken",
+    "ratio": 0.975,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "lightning",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "mammoth",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "maple-leafs",
+    "ratio": 1.045,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "oilers",
+    "ratio": 1.044,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "panthers",
+    "ratio": 0.97,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "penguins",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "predators",
+    "ratio": 0.976,
+    "games": 4
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "rangers",
+    "ratio": 1.01,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "red-wings",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "sabres",
+    "ratio": 1.107,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "senators",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "stars",
+    "ratio": 1.02,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "opponent": "wild",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-football",
+    "opponent": "air-force",
+    "ratio": 0.954,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-football",
+    "opponent": "fresno-st",
+    "ratio": 0.972,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "air-force",
+    "ratio": 0.876,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "bethesda",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "boise-st",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "colorado-st",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "fresno-st",
+    "ratio": 0.968,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "nevada",
+    "ratio": 1.031,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "new-mexico",
+    "ratio": 1.166,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "san-diego-st",
+    "ratio": 1.389,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "uc-irvine",
+    "ratio": 0.934,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "unlv",
+    "ratio": 0.897,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "utah-state",
+    "ratio": 1.028,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-mbb",
+    "opponent": "wyoming",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "opponent": "air-force",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "opponent": "colorado-st",
+    "ratio": 1.145,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "opponent": "fresno-st",
+    "ratio": 0.955,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "opponent": "nevada",
+    "ratio": 1.208,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "opponent": "new-mexico",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "opponent": "saint-mary-s",
+    "ratio": 1.059,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "opponent": "san-diego-st",
+    "ratio": 1.024,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "opponent": "unlv",
+    "ratio": 1.042,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sjsu-wbb",
+    "opponent": "utah-state",
+    "ratio": 1.225,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-football",
+    "opponent": "california",
+    "ratio": 1.246,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-football",
+    "opponent": "notre-dame",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "opponent": "california",
+    "ratio": 1.245,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "opponent": "csu-northridge",
+    "ratio": 0.888,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-mbb",
+    "opponent": "smu",
+    "ratio": 0.967,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "opponent": "cal-poly",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "opponent": "california",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "stanford-wbb",
+    "opponent": "uc-davis",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "aces",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "dream",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "fever",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "fire",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "liberty",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "lynx",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "mercury",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "mystics",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "sky",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "sparks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "storm",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "sun",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "valkyries",
+    "opponent": "wings",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "76ers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "bucks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "bulls",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "cavaliers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "celtics",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "clippers",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "grizzlies",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "hawks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "heat",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "hornets",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "jazz",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "knicks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "lakers",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "magic",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "mavericks",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "nets",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "nuggets",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "pacers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "pelicans",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "pistons",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "rockets",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "spurs",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "suns",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "thunder",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "timberwolves",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "trail-blazers",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "opponent": "wizards",
+    "ratio": 1,
+    "games": 3
   },
   {
     "metroId": "la",

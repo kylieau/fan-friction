@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-14",
+  "rows": [
+    {
+      "metroId": "bay-area",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T22:16:30.680Z",
+      "feelsLikeF": 62.2,
+      "tempF": 65.7,
+      "humidity": 52,
+      "windMph": 6.7,
+      "uvIndex": 0.05,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 9,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "bay-area",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T22:16:30.680Z",
+      "feelsLikeHighF": 71.1,
+      "feelsLikeLowF": 58,
+      "code": 3,
+      "precipProbability": 3,
+      "precipMm": 0
+    }
+  ]
+}

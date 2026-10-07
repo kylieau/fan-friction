@@ -1,0 +1,7702 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "teamId": "giants",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 40853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 38885,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 37332,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-11",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 23279,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 25560,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "12:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 27197,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 32898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 32014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 38256,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "13:05",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 33241,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": "13:05",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 38451,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-05",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 22562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-06",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 28898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-07",
+      "start": "16:15",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 40113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-08",
+      "start": "13:05",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 38193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-09",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 20039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 21472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "12:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 23341,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-20",
+      "start": "19:15",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 31359,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-21",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 38916,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 35363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-23",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 25690,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 27683,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-05-25",
+      "start": "12:45",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 27432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-07",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 24785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-08",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 21535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-09",
+      "start": "12:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 23780,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 39701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "16:15",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 41236,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": "13:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 41197,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-13",
+      "start": "18:45",
+      "opponent": "Royals",
+      "venueId": "oracle-park",
+      "attendance": 22185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "18:45",
+      "opponent": "Royals",
+      "venueId": "oracle-park",
+      "attendance": 24386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "12:45",
+      "opponent": "Royals",
+      "venueId": "oracle-park",
+      "attendance": 25527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-24",
+      "start": "19:15",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 29178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-25",
+      "start": "16:15",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 40115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-26",
+      "start": "13:05",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 32285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "18:45",
+      "opponent": "Tigers",
+      "venueId": "oracle-park",
+      "attendance": 28004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "12:45",
+      "opponent": "Tigers",
+      "venueId": "oracle-park",
+      "attendance": 26576,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-01",
+      "start": "19:15",
+      "opponent": "White Sox",
+      "venueId": "oracle-park",
+      "attendance": 35266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": "13:05",
+      "opponent": "White Sox",
+      "venueId": "oracle-park",
+      "attendance": 30804,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-03",
+      "start": "13:05",
+      "opponent": "White Sox",
+      "venueId": "oracle-park",
+      "attendance": 30155,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-11",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 25325,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 23353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "12:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 27055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-14",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 26994,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-15",
+      "start": "19:15",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 28244,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-16",
+      "start": "16:15",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 41279,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-17",
+      "start": "13:05",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 30584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-28",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 32259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "19:15",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 30376,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "18:05",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 40971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "16:08",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 33622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-01",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 34865,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-02",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 32798,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-03",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 35400,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-04",
+      "start": "12:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 34640,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "19:15",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 33328,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "18:05",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 38049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "13:05",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 36471,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-15",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 20694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-16",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 20897,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-17",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 22649,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-18",
+      "start": "12:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 26197,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-29",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 24815,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 28267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "12:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 25298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "19:15",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 32840,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "13:05",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 40010,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": "13:05",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 41189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-12",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 23790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 24872,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-14",
+      "start": "12:45",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 25093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 37487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "18:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "16:08",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 32137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-27",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 24218,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-28",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 22663,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-29",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 24112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "19:15",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 28478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 30630,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2022,
+      "date": "2022-10-02",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 34824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "13:35",
+      "opponent": "Royals",
+      "venueId": "oracle-park",
+      "attendance": 40711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "13:05",
+      "opponent": "Royals",
+      "venueId": "oracle-park",
+      "attendance": 35126,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "13:05",
+      "opponent": "Royals",
+      "venueId": "oracle-park",
+      "attendance": 30207,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-10",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 35232,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 30768,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 34903,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-20",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 24452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 27551,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "13:05",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 29912,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": "16:10",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 27721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-24",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 20203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 20797,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 21748,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "12:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 23397,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "19:15",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 28614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "16:15",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 26387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "13:05",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 34603,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-08",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 20502,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 22028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "12:45",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 21283,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-15",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 23819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 24304,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "12:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 25303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 30673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 31993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 28936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-29",
+      "start": "14:05",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 39323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "18:45",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 24166,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "12:45",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 23827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "19:15",
+      "opponent": "Orioles",
+      "venueId": "oracle-park",
+      "attendance": 27873,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "oracle-park",
+      "attendance": 32416,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "13:05",
+      "opponent": "Orioles",
+      "venueId": "oracle-park",
+      "attendance": 35571,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:15",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 34816,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "16:35",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 35452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:05",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 36842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-19",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 35376,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 32060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 33332,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": "12:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 38638,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "19:15",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 31992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 34343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 35766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-03",
+      "start": "18:45",
+      "opponent": "Mariners",
+      "venueId": "oracle-park",
+      "attendance": 40691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "13:35",
+      "opponent": "Mariners",
+      "venueId": "oracle-park",
+      "attendance": 37395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "18:05",
+      "opponent": "Mariners",
+      "venueId": "oracle-park",
+      "attendance": 24108,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 33886,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 34568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 36050,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 40014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 36142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "19:15",
+      "opponent": "Red Sox",
+      "venueId": "oracle-park",
+      "attendance": 33755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "16:15",
+      "opponent": "Red Sox",
+      "venueId": "oracle-park",
+      "attendance": 37470,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "13:05",
+      "opponent": "Red Sox",
+      "venueId": "oracle-park",
+      "attendance": 37026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-07-31",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 28404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 25806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 28956,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-03",
+      "start": "12:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 33087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:15",
+      "opponent": "Rangers",
+      "venueId": "oracle-park",
+      "attendance": 35689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "18:05",
+      "opponent": "Rangers",
+      "venueId": "oracle-park",
+      "attendance": 33112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "13:05",
+      "opponent": "Rangers",
+      "venueId": "oracle-park",
+      "attendance": 35648,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-14",
+      "start": "18:45",
+      "opponent": "Rays",
+      "venueId": "oracle-park",
+      "attendance": 25748,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "18:45",
+      "opponent": "Rays",
+      "venueId": "oracle-park",
+      "attendance": 26322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "12:45",
+      "opponent": "Rays",
+      "venueId": "oracle-park",
+      "attendance": 27510,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "19:15",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 36511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 36798,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "16:10",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 31047,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-28",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 24581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 26078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-08-30",
+      "start": "12:45",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 25140,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 32448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "18:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 34290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "17:10",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 33781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-11",
+      "start": "18:45",
+      "opponent": "Guardians",
+      "venueId": "oracle-park",
+      "attendance": 20705,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-12",
+      "start": "18:45",
+      "opponent": "Guardians",
+      "venueId": "oracle-park",
+      "attendance": 23541,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-13",
+      "start": "12:45",
+      "opponent": "Guardians",
+      "venueId": "oracle-park",
+      "attendance": 26218,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-25",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 28557,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-26",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 28183,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-27",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 32151,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-29",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 38159,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "18:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 39253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": "12:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 38359,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "13:35",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 40645,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "18:05",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 40114,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 40149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-08",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 25582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-09",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 24380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-10",
+      "start": "12:45",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 25558,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 26896,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "19:15",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 33921,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 31063,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 35922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-22",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 24138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 25453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "12:45",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 30183,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "19:15",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 37110,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "18:05",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 34841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "13:05",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 36380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "19:15",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 32867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "16:15",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 37321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:05",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 36210,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-13",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 35033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 33575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 36027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 32025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 31098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 34766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-27",
+      "start": "14:05",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 40598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-28",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 34655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-29",
+      "start": "12:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 31763,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "oracle-park",
+      "attendance": 35018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "19:05",
+      "opponent": "Yankees",
+      "venueId": "oracle-park",
+      "attendance": 34487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "13:05",
+      "opponent": "Yankees",
+      "venueId": "oracle-park",
+      "attendance": 39485,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-10",
+      "start": "18:45",
+      "opponent": "Astros",
+      "venueId": "oracle-park",
+      "attendance": 32820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "18:45",
+      "opponent": "Astros",
+      "venueId": "oracle-park",
+      "attendance": 32853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "12:45",
+      "opponent": "Astros",
+      "venueId": "oracle-park",
+      "attendance": 34506,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "19:15",
+      "opponent": "Angels",
+      "venueId": "oracle-park",
+      "attendance": 32842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "13:05",
+      "opponent": "Angels",
+      "venueId": "oracle-park",
+      "attendance": 36235,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "13:05",
+      "opponent": "Angels",
+      "venueId": "oracle-park",
+      "attendance": 41008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-24",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 30701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 30368,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 30893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "12:45",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 31535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "16:15",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 39663,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "oracle-park",
+      "attendance": 32924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "oracle-park",
+      "attendance": 32014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "12:45",
+      "opponent": "Blue Jays",
+      "venueId": "oracle-park",
+      "attendance": 30064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "19:15",
+      "opponent": "Twins",
+      "venueId": "oracle-park",
+      "attendance": 34106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "16:15",
+      "opponent": "Twins",
+      "venueId": "oracle-park",
+      "attendance": 32582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:05",
+      "opponent": "Twins",
+      "venueId": "oracle-park",
+      "attendance": 34115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 32861,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": null,
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 34543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 37178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 37885,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 38668,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "19:15",
+      "opponent": "Tigers",
+      "venueId": "oracle-park",
+      "attendance": 33037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "13:05",
+      "opponent": "Tigers",
+      "venueId": "oracle-park",
+      "attendance": 40030,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "13:05",
+      "opponent": "Tigers",
+      "venueId": "oracle-park",
+      "attendance": 40447,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-12",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 30184,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 30468,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 27460,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-15",
+      "start": "12:45",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 29319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-19",
+      "start": "18:45",
+      "opponent": "White Sox",
+      "venueId": "oracle-park",
+      "attendance": 29209,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "18:45",
+      "opponent": "White Sox",
+      "venueId": "oracle-park",
+      "attendance": 28766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "12:45",
+      "opponent": "White Sox",
+      "venueId": "oracle-park",
+      "attendance": 28375,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 33606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "18:05",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 36087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 41187,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 23545,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 22855,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-05",
+      "start": "12:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 27871,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 25096,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 22042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-12",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 22184,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "19:15",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 39798,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "18:05",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 31243,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 33043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-27",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 35101,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "13:05",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 36328,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "12:05",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 32348,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "13:35",
+      "opponent": "Mariners",
+      "venueId": "oracle-park",
+      "attendance": 40865,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "18:05",
+      "opponent": "Mariners",
+      "venueId": "oracle-park",
+      "attendance": 40886,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Matt Chapman Gold Glove Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:05",
+      "opponent": "Mariners",
+      "venueId": "oracle-park",
+      "attendance": 41060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Youth Baseball Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Youth Charm Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: A MINECRAFT MOVIE Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-07",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 30138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Santa Clara University Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 30261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: San Francisco State Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "12:45",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 35186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "STEM Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-21",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 31758,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Sacramento State Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 28573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Saint Mary's College Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 29049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: University of San Francisco Night - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": "12:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 28592,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "19:15",
+      "opponent": "Rangers",
+      "venueId": "oracle-park",
+      "attendance": 40080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Cal Night - SOLD OUT"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "13:05",
+      "opponent": "Rangers",
+      "venueId": "oracle-park",
+      "attendance": 40153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Brandon Crawford Celebration Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brandon Crawford T-shirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Brandon Crawford VIP Experience"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Junior Giants Glove Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "13:05",
+      "opponent": "Rangers",
+      "venueId": "oracle-park",
+      "attendance": 40118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Youth Baseball & Softball Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Youth Patrick Bailey Headband"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-01",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 27198,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Taiwanese Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 35036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: San Jose State Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 40049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "STAR WARS™ Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "STAR WARS™ Bucket Hat"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Star Wars™ Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 41087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "STAR WARS™ Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "STAR WARS™ BB-8 Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-12",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 27387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: UC Davis Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 30960,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Korean Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "12:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 30078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "19:15",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 41112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Japanese Heritage Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "18:05",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 40448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Puffer Vest"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Dog Days - SOLD OUT"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:05",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 40051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Youth Baseball Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Youth SF Chain"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-19",
+      "start": "18:45",
+      "opponent": "Royals",
+      "venueId": "oracle-park",
+      "attendance": 28432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Chinese Heritage Night - SOLD OUT"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Bruce Lee VIP Experience"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "18:45",
+      "opponent": "Royals",
+      "venueId": "oracle-park",
+      "attendance": 32118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Firefighter Appreciation Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday: Denim Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "12:45",
+      "opponent": "Royals",
+      "venueId": "oracle-park",
+      "attendance": 29064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-02",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 35680,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Peanuts® Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Peanuts® Night VIP Experience - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 35522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Nurses Night - SOLD OUT"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 34821,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": "12:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 37436,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "19:15",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 39153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Irish Heritage Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 35162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "PRIDE Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "PRIDE Bucket Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 41026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hello Kitty® Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Girl Scout Day - SOLD OUT"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "18:45",
+      "opponent": "Guardians",
+      "venueId": "oracle-park",
+      "attendance": 36222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Italian Heritage Night - SOLD OUT"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "18:45",
+      "opponent": "Guardians",
+      "venueId": "oracle-park",
+      "attendance": 34055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Pixar Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "13:05",
+      "opponent": "Guardians",
+      "venueId": "oracle-park",
+      "attendance": 40093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-20",
+      "start": "19:15",
+      "opponent": "Red Sox",
+      "venueId": "oracle-park",
+      "attendance": 40169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Autism Acceptance Night - SOLD OUT"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Autism Acceptance VIP Experience - SOLD OUT"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-21",
+      "start": "13:05",
+      "opponent": "Red Sox",
+      "venueId": "oracle-park",
+      "attendance": 39027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Camo Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-22",
+      "start": "13:05",
+      "opponent": "Red Sox",
+      "venueId": "oracle-park",
+      "attendance": 40350,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jung Hoo Lee Hooded Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 28643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 31712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: DC Superman Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "12:45",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 33804,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Swimmers Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-07",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 40043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Anime Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 40212,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Law Enforcement Appreciation Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "12:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 37334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Fellowship Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Giants Stretch Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "13:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 41029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Barry Bonds Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Giants Stretch Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 41048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Spirit Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Giants Stretch Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 41163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Cal Poly Night - SOLD OUT"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:05",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 39029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Stephen Curry Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Stephen Curry Limited Edition Bobblehead - SOLD OUT"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "16:10",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 40124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Lou Seal Funko POP!"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-28",
+      "start": "18:45",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 35572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-29",
+      "start": "18:45",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 38142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-07-30",
+      "start": "12:45",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 38144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": "19:15",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 38679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Peanut Allergy Friendly Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "13:05",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 38742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Aloha Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "13:05",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 40089,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wrestling Belt Fanny Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-11",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 31018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 35186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "SPECIAL EVENT: Grateful Dead Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "SPECIAL EVENT: Grateful Dead VIP Experience"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "12:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 35080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "19:15",
+      "opponent": "Rays",
+      "venueId": "oracle-park",
+      "attendance": 34172,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Native American Heritage Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "18:05",
+      "opponent": "Rays",
+      "venueId": "oracle-park",
+      "attendance": 35070,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Concert ft. Saweetie"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "13:05",
+      "opponent": "Rays",
+      "venueId": "oracle-park",
+      "attendance": 38876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Heliot Ramos Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 35060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Harry Potter Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Harry Potter Night VIP Experience"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 30457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Until There's A Cure Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "12:45",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 32187,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "19:15",
+      "opponent": "Orioles",
+      "venueId": "oracle-park",
+      "attendance": 40043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pokemon GO Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "16:15",
+      "opponent": "Orioles",
+      "venueId": "oracle-park",
+      "attendance": 37711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Black Heritage Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:05",
+      "opponent": "Orioles",
+      "venueId": "oracle-park",
+      "attendance": 39220,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Roped Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Pediatric Cancer Awareness Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-08",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 26699,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 30883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Jewish Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "12:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 33810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40509,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Latin Music Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "18:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40474,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "49ers Baseball Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "13:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Willy Adames T-Shirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jung Hoo Crew - Sold Out for this game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-22",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 31301,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-23",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 37012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Filipino Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-24",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 32409,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-26",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 40048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Willie Mac Award Ceremony"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 38201,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Rafael Devers T-shirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Dog Days 2 - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "12:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 37536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-03-25",
+      "start": "17:05",
+      "opponent": "Yankees",
+      "venueId": "oracle-park",
+      "attendance": 40856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "MLB Opening Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-03-27",
+      "start": "13:35",
+      "opponent": "Yankees",
+      "venueId": "oracle-park",
+      "attendance": 40273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Giants Opening Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Commemorative Pin"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "16:15",
+      "opponent": "Yankees",
+      "venueId": "oracle-park",
+      "attendance": 40634,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Willy Adames Bobblehead"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-02",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 32073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Sacramento State University Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 38613,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: San Jose State University Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "18:05",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 36553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Youth Baseball Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Youth Reversible Sleeve"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "13:05",
+      "opponent": "Mets",
+      "venueId": "oracle-park",
+      "attendance": 37079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Golden State Valkyries Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Valkyries Baseball Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-06",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 32898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Santa Clara University Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "18:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 32403,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: San Francisco State University Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "12:45",
+      "opponent": "Phillies",
+      "venueId": "oracle-park",
+      "attendance": 36106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: STEAM Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: University of San Francisco Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Stanford University Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "12:45",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 38619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "19:15",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 38317,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Cal Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 38589,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Brandon Belt Celebration Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brandon Belt Aloha Shirt"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Junior Giants Glove Drive"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "oracle-park",
+      "attendance": 40445,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Youth Baseball Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Youth Flip-Up Sunglasses"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-04",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 33097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Taiwanese Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 38275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Saint Mary's College Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "12:45",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 34181,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Career Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "19:15",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 41024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "K-Pop Fireworks Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Korean Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "18:05",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 40417,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Youth Baseball and Softball Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Youth Patch Hat"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:05",
+      "opponent": "Pirates",
+      "venueId": "oracle-park",
+      "attendance": 41085,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mother's Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Quilted Tote Bag"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "19:15",
+      "opponent": "White Sox",
+      "venueId": "oracle-park",
+      "attendance": 37524,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Japanese Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "13:05",
+      "opponent": "White Sox",
+      "venueId": "oracle-park",
+      "attendance": 40172,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Chain Hat"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "13:05",
+      "opponent": "White Sox",
+      "venueId": "oracle-park",
+      "attendance": 40220,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Star Wars™ Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Star Wars™ Grogu Bobblehead"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Star Wars™ Day VIP - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-25",
+      "start": "14:05",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 38380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Memorial Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 32336,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Chinese Heritage Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Bruce Lee Tribute VIP Event"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "12:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 33258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Character Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-08",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 35432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Nurses Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 35493,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: City Connect x Gryffin - SOLD OUT"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "12:45",
+      "opponent": "Nationals",
+      "venueId": "oracle-park",
+      "attendance": 32459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "19:15",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 38115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pride Night Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Pride Night - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 35142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Soccer Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "12:10",
+      "opponent": "Cubs",
+      "venueId": "oracle-park",
+      "attendance": 40093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hello Kitty® Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Hello Kitty® Plush Keychain"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Hello Kitty® Day VIP -  SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 40043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Mexican Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "18:45",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 37526,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Irish Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "12:45",
+      "opponent": "Athletics",
+      "venueId": "oracle-park",
+      "attendance": 33089,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "19:15",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 39051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Firefighter Appreciation Night - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "18:05",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 35140,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Rafael Devers Bobblehead"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "oracle-park",
+      "attendance": 33138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Camo T-shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-06",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "oracle-park",
+      "attendance": 32740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Anime Night - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "oracle-park",
+      "attendance": 32140,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Jewish Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "12:45",
+      "opponent": "Blue Jays",
+      "venueId": "oracle-park",
+      "attendance": 34023,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-09",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 32301,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Peanuts Night - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 34144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Black Heritage Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Black Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 35190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Gigantes Aloha Shirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Dog Days"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 33354,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "SpongeBob SquarePants Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Swimmer's Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "19:15",
+      "opponent": "Angels",
+      "venueId": "oracle-park",
+      "attendance": 41559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Cal Poly Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Autism Acceptance Night - SOLD OUT"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Autism Acceptance Night VIP Experience - SOLD OUT"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Junior Giants Stretch Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "13:05",
+      "opponent": "Angels",
+      "venueId": "oracle-park",
+      "attendance": 39102,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Vintage Button-up"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Junior Giants Stretch Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "13:05",
+      "opponent": "Angels",
+      "venueId": "oracle-park",
+      "attendance": 34111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Matt Chapman T-shirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Backyard Baseball Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Junior Giants Stretch Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-27",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 35107,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Law Enforcement Appreciation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 38021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Italian Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Peanut Allergy Friendly Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "12:45",
+      "opponent": "Brewers",
+      "venueId": "oracle-park",
+      "attendance": 35399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "19:15",
+      "opponent": "Tigers",
+      "venueId": "oracle-park",
+      "attendance": 34104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Top Gun Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Top Gun VIP Experience"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "16:15",
+      "opponent": "Tigers",
+      "venueId": "oracle-park",
+      "attendance": 35506,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wall of Fame Ceremony"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "13:05",
+      "opponent": "Tigers",
+      "venueId": "oracle-park",
+      "attendance": 32200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Corduroy Hat"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Girl Scout Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-10",
+      "start": "18:45",
+      "opponent": "Astros",
+      "venueId": "oracle-park",
+      "attendance": 28070,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Harry Potter™ Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Harry Potter™ Night VIP Experience"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Until There's A Cure"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:45",
+      "opponent": "Astros",
+      "venueId": "oracle-park",
+      "attendance": 30093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: National Hip Hop Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "12:45",
+      "opponent": "Astros",
+      "venueId": "oracle-park",
+      "attendance": 28101,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "19:15",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 38258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "KPop Demon Hunters Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: KPop Demon Hunters Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 35069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Gigantes Sweatshirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "oracle-park",
+      "attendance": 32063,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hello Kitty® Funko POP!"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Hello Kitty® Day VIP - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-24",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 31123,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Fourth Wing Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Fourth Wing VIP Experience - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 27207,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Grateful Dead Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "SPECIAL EVENT: Grateful Dead Night VIP Experience"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "12:45",
+      "opponent": "Reds",
+      "venueId": "oracle-park",
+      "attendance": 24130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-27",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 40120,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Pokémon Worlds Night - SOLD OUT"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pokémon Worlds Night Drone Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "19:15",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 27153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Native American Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 39190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jung Hoo Lee Bobblehead"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "19:05",
+      "opponent": "D-backs",
+      "venueId": "oracle-park",
+      "attendance": 29272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hall of Fame Celebration: Jeff Kent Number Retirement"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-07",
+      "start": "17:10",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 25833,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Labor Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 27787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENTS: Filipino Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "12:45",
+      "opponent": "Cardinals",
+      "venueId": "oracle-park",
+      "attendance": 27487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Weather Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "19:15",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 38381,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 85
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 40146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 86
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Willy Adames Gigantes Long Sleeve Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Dog Days 2"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "16:20",
+      "opponent": "Padres",
+      "venueId": "oracle-park",
+      "attendance": 35115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 87
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Logan Webb Football Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Pediatric Cancer Awareness Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-21",
+      "start": "18:45",
+      "opponent": "Twins",
+      "venueId": "oracle-park",
+      "attendance": 27466,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-22",
+      "start": "18:45",
+      "opponent": "Twins",
+      "venueId": "oracle-park",
+      "attendance": 28079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 92
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-23",
+      "start": "12:45",
+      "opponent": "Twins",
+      "venueId": "oracle-park",
+      "attendance": 28136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 93
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "SPECIAL EVENT: Faith Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "19:15",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40770,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 94
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "2026 Willie Mac Award Ceremony"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "13:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 95
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend: Fan Favorite Giveaways"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fiesta Gigantes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "giants",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "12:05",
+      "opponent": "Dodgers",
+      "venueId": "oracle-park",
+      "attendance": 40145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 96
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mike Krukow Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

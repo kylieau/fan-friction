@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "teamId": "sjsu-football",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "sjsu-football",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "19:30",
+      "opponent": "Portland St",
+      "venueId": "cefcu-stadium",
+      "attendance": 16291,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "19:30",
+      "opponent": "W Michigan",
+      "venueId": "cefcu-stadium",
+      "attendance": 17058,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2022,
+      "date": "2022-10-07",
+      "start": "19:30",
+      "opponent": "UNLV",
+      "venueId": "cefcu-stadium",
+      "attendance": 16669,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2022,
+      "date": "2022-10-29",
+      "start": "19:30",
+      "opponent": "Nevada",
+      "venueId": "cefcu-stadium",
+      "attendance": 17117,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "19:30",
+      "opponent": "Colorado St",
+      "venueId": "cefcu-stadium",
+      "attendance": 16382,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2022,
+      "date": "2022-11-26",
+      "start": "12:30",
+      "opponent": "Hawai'i",
+      "venueId": "cefcu-stadium",
+      "attendance": 15012,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "12:30",
+      "opponent": "Oregon St",
+      "venueId": "cefcu-stadium",
+      "attendance": 20337,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "13:00",
+      "opponent": "Cal Poly",
+      "venueId": "cefcu-stadium",
+      "attendance": 14224,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "19:30",
+      "opponent": "Air Force",
+      "venueId": "cefcu-stadium",
+      "attendance": 16124,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "16:00",
+      "opponent": "Utah State",
+      "venueId": "cefcu-stadium",
+      "attendance": 15028,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "19:30",
+      "opponent": "Fresno St",
+      "venueId": "cefcu-stadium",
+      "attendance": 18886,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "19:30",
+      "opponent": "San Diego St",
+      "venueId": "cefcu-stadium",
+      "attendance": 16224,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "19:00",
+      "opponent": "Sacramento St",
+      "venueId": "cefcu-stadium",
+      "attendance": 13811,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "16:00",
+      "opponent": "Kennesaw St",
+      "venueId": "cefcu-stadium",
+      "attendance": 11090,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "16:30",
+      "opponent": "Nevada",
+      "venueId": "cefcu-stadium",
+      "attendance": 17099,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2024,
+      "date": "2024-10-19",
+      "start": "13:00",
+      "opponent": "Wyoming",
+      "venueId": "cefcu-stadium",
+      "attendance": 17101,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "16:00",
+      "opponent": "Boise St",
+      "venueId": "cefcu-stadium",
+      "attendance": 20517,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2024,
+      "date": "2024-11-22",
+      "start": "19:00",
+      "opponent": "UNLV",
+      "venueId": "cefcu-stadium",
+      "attendance": 13671,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2024,
+      "date": "2024-11-29",
+      "start": "13:00",
+      "opponent": "Stanford",
+      "venueId": "cefcu-stadium",
+      "attendance": 19117,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "19:30",
+      "opponent": "C Michigan",
+      "venueId": "cefcu-stadium",
+      "attendance": 14877,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "14:00",
+      "opponent": "Idaho",
+      "venueId": "cefcu-stadium",
+      "attendance": 13155,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2025,
+      "date": "2025-10-03",
+      "start": "19:00",
+      "opponent": "New Mexico",
+      "venueId": "cefcu-stadium",
+      "attendance": 12109,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "19:30",
+      "opponent": "Hawai'i",
+      "venueId": "cefcu-stadium",
+      "attendance": 16012,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2025,
+      "date": "2025-11-08",
+      "start": "15:00",
+      "opponent": "Air Force",
+      "venueId": "cefcu-stadium",
+      "attendance": 13637,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2025,
+      "date": "2025-11-29",
+      "start": "19:30",
+      "opponent": "Fresno St",
+      "venueId": "cefcu-stadium",
+      "attendance": 14194,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

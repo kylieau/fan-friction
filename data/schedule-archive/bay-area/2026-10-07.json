@@ -1,0 +1,645 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "metroName": "Bay Area",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-07",
+  "capturedAt": "2026-10-07T22:16:41.178Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-07",
+    "through": "2026-10-21"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 14
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-07-espn-valkyries-401918298",
+      "metroId": "bay-area",
+      "date": "2026-10-07",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Valkyries vs. Aces",
+      "stakes": {
+        "round": "Semifinals",
+        "game": 2
+      },
+      "broadcast": "NBCSN",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valkyries",
+        "away": "aces"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-09-espn-sjsu-football-401864519",
+      "metroId": "bay-area",
+      "date": "2026-10-09",
+      "start": "18:00",
+      "kind": "game",
+      "title": "San José St vs. Wyoming",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "cefcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sjsu-football",
+        "away": "wyoming"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 14898,
+        "low": 13281,
+        "high": 16872,
+        "note": "Typical announced crowd here for a Friday: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-10-espn-cal-football-401858259",
+      "metroId": "bay-area",
+      "date": "2026-10-10",
+      "start": "12:30",
+      "kind": "game",
+      "title": "California vs. Virginia Tech",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "california-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "cal-football",
+        "away": "virginia-tech"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 38772,
+        "low": 35023,
+        "high": 43347,
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-10-espn-sharks-401892471",
+      "metroId": "bay-area",
+      "date": "2026-10-10",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Sharks vs. Oilers",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "oilers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18202,
+        "low": 18093,
+        "high": 18202,
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-10-espn-warriors-401898399",
+      "metroId": "bay-area",
+      "date": "2026-10-10",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Warriors vs. Sacramento Kings",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "sacramento-kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "note": "Typical announced crowd here for a preseason game: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-10-espn-oakland-roots-401842280",
+      "metroId": "bay-area",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Oakland vs. San Antonio ",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "oakland-roots",
+        "away": "san-antonio"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5349,
+        "low": 4765,
+        "high": 7063,
+        "note": "Typical announced crowd here for a Saturday: 21 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-13-espn-sharks-401892503",
+      "metroId": "bay-area",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Sharks vs. Bruins",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "bruins"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12776,
+        "low": 10831,
+        "high": 13076,
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-valkyries-401918304",
+      "metroId": "bay-area",
+      "date": "2026-10-14",
+      "start": null,
+      "kind": "game",
+      "title": "Valkyries vs. Aces",
+      "stakes": {
+        "round": "Semifinals",
+        "game": 5
+      },
+      "broadcast": "NBCSN",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valkyries",
+        "away": "aces"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-16-espn-warriors-401898409",
+      "metroId": "bay-area",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Warriors vs. Trail Blazers",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "trail-blazers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "note": "Typical announced crowd here for a preseason game: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-stanford-football-401858262",
+      "metroId": "bay-area",
+      "date": "2026-10-17",
+      "start": "16:30",
+      "kind": "game",
+      "title": "Stanford vs. Elon",
+      "place": {
+        "type": "venue",
+        "venueId": "stanford-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "stanford-football",
+        "away": "elon"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 25426,
+        "low": 23699,
+        "high": 29286,
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-earthquakes-761886",
+      "metroId": "bay-area",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Earthquakes vs. Nashville",
+      "place": {
+        "type": "venue",
+        "venueId": "paypal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "earthquakes",
+        "away": "nashville"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15228,
+        "low": 14182,
+        "high": 16102,
+        "note": "Typical announced crowd here for a Saturday: 21 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-cal-football-401858269",
+      "metroId": "bay-area",
+      "date": "2026-10-17",
+      "start": null,
+      "kind": "game",
+      "title": "California vs. Wake Forest",
+      "place": {
+        "type": "venue",
+        "venueId": "california-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "cal-football",
+        "away": "wake-forest"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 38772,
+        "low": 35023,
+        "high": 43347,
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-bay-fc-401854025",
+      "metroId": "bay-area",
+      "date": "2026-10-18",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Bay FC vs. Portland",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "paypal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "bay-fc",
+        "away": "portland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12529,
+        "low": 11383,
+        "high": 14560,
+        "note": "Typical announced crowd here for a Sunday: 5 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-19-espn-sf-49ers-401873008",
+      "metroId": "bay-area",
+      "date": "2026-10-19",
+      "start": "17:15",
+      "kind": "game",
+      "title": "49ers vs. Commanders",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "levis-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sf-49ers",
+        "away": "commanders"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 71337,
+        "low": 71269,
+        "high": 71513,
+        "note": "Typical announced crowd here for a weeknight: 3 games, 2024–2025."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-07-espn-valkyries-401918298",
+      "date": "2026-10-07",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-09-espn-sjsu-football-401864519",
+      "date": "2026-10-09",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14898,
+        "low": 13281,
+        "high": 16872
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-cal-football-401858259",
+      "date": "2026-10-10",
+      "start": "12:30",
+      "read": {
+        "rating": 4.2,
+        "friction": "Low",
+        "why": "Warriors vs. Sacramento Kings 10 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 38772,
+        "low": 35023,
+        "high": 43347
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-sharks-401892471",
+      "date": "2026-10-10",
+      "start": "13:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Warriors vs. Sacramento Kings 40 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18202,
+        "low": 18093,
+        "high": 18202
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-warriors-401898399",
+      "date": "2026-10-10",
+      "start": "17:30",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "California vs. Virginia Tech 10 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-oakland-roots-401842280",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 5349,
+        "low": 4765,
+        "high": 7063
+      }
+    },
+    {
+      "eventId": "2026-10-13-espn-sharks-401892503",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12776,
+        "low": 10831,
+        "high": 13076
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-valkyries-401918304",
+      "date": "2026-10-14",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-warriors-401898409",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-stanford-football-401858262",
+      "date": "2026-10-17",
+      "start": "16:30",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "California vs. Wake Forest 31 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 25426,
+        "low": 23699,
+        "high": 29286
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-earthquakes-761886",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 3.4,
+        "friction": "Low",
+        "why": "Stanford vs. Elon 14 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15228,
+        "low": 14182,
+        "high": 16102
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-cal-football-401858269",
+      "date": "2026-10-17",
+      "start": null,
+      "read": {
+        "rating": 3.4,
+        "friction": "Low",
+        "why": "Stanford vs. Elon 31 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 38772,
+        "low": 35023,
+        "high": 43347
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-bay-fc-401854025",
+      "date": "2026-10-18",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12529,
+        "low": 11383,
+        "high": 14560
+      }
+    },
+    {
+      "eventId": "2026-10-19-espn-sf-49ers-401873008",
+      "date": "2026-10-19",
+      "start": "17:15",
+      "read": {
+        "rating": 3.1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 71337,
+        "low": 71269,
+        "high": 71513
+      }
+    }
+  ]
+}

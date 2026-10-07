@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-04",
+  "results": [
+    {
+      "eventId": "2026-10-04-espn-sf-49ers-401872975",
+      "metroId": "bay-area",
+      "date": "2026-10-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "levis-stadium",
+      "homeTeamId": "sf-49ers",
+      "home": {
+        "name": "49ers",
+        "score": 24
+      },
+      "away": {
+        "name": "Broncos",
+        "score": 14
+      },
+      "attendance": 70776,
+      "capturedAt": "2026-10-07T22:16:43.869Z",
+      "duration": {
+        "minutes": 191,
+        "kind": "estimated"
+      },
+      "startedAt": "13:25"
+    },
+    {
+      "eventId": "2026-10-04-espn-valkyries-401918296",
+      "metroId": "bay-area",
+      "date": "2026-10-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "valkyries",
+      "home": {
+        "name": "Valkyries",
+        "score": 71
+      },
+      "away": {
+        "name": "Aces",
+        "score": 60
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-10-07T22:16:43.869Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "16:03"
+    }
+  ]
+}
