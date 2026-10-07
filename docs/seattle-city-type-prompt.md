@@ -5,7 +5,7 @@ Copy everything below the line into a research model. Paste the answer back to C
 ---
 
 ## How to deliver this (read first)
-**Deliver the answer as a downloadable Markdown file (`.md`)**, named **`seattle-city-type-answer.md`**. Do not make it a PDF, a Word file or a rendered page that can only be saved as a PDF. Inside the file use Markdown headings, pipe tables (`| a | b |`) and inline links. If you cannot create a file, reply in plain Markdown text in the chat instead, and if that is too long for one message, stop at a clean break, say "continued", and carry on in the next message.
+**Deliver the answer as a downloadable Markdown file (`.md`)**, named **`docs/archive/research/seattle-city-type-answer.md`**. Do not make it a PDF, a Word file or a rendered page that can only be saved as a PDF. Inside the file use Markdown headings, pipe tables (`| a | b |`) and inline links. If you cannot create a file, reply in plain Markdown text in the chat instead, and if that is too long for one message, stop at a clean break, say "continued", and carry on in the next message.
 
 # Research brief: arrival mode for Seattle's large venues
 

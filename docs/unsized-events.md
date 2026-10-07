@@ -74,7 +74,7 @@ takes out, for how long, and which venues sit inside or beyond it.
 
 New York is the next city, and its biggest crowd days have no buildings at all:
 the marathon, the Thanksgiving parade, the Pride march, New Year's Eve in Times
-Square. The venue-table research prompt (`docs/new-york-venue-table-prompt.md`)
+Square. The venue-table research prompt (`docs/archive/research/new-york-venue-table-prompt.md`)
 already asks for these as dates rather than venues, so they will arrive with the
 city. Unless something changes, every one of them will read as a quiet night.
 
@@ -103,7 +103,7 @@ whether they'd treat it as a venue. That answer belongs here when it comes back.
 
 - Never invent a crowd number (AGENTS.md).
 - Label every number announced, reported or estimated. Never a bare count.
-- **A multi-day total may be averaged into a per-day figure, labeled estimated** (Kylie, Oct 7, 2026). An earlier version of this page said the opposite and called it a rule; it was a Claude-written check note (`docs/research-past-dates/gap-followup.md`), never Kylie's decision.
+- **A multi-day total may be averaged into a per-day figure, labeled estimated** (Kylie, Oct 7, 2026). An earlier version of this page said the opposite and called it a rule; it was a Claude-written check note (`docs/archive/research/past-dates/gap-followup.md`), never Kylie's decision.
 - Scheduled starts, never actual.
 - Big official watch parties count as events of their size
   (`docs/overlap-and-date-rating-v3.md`), when a size exists.

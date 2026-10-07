@@ -1,4 +1,4 @@
-// Writes the catalog to Supabase, the shared truth (docs/catalog-proposal-oct6.md).
+// Writes the catalog to Supabase, the shared truth (docs/archive/proposals/catalog-proposal-oct6.md).
 // Runs at the end of the nightly job, after the files are saved:
 //   node scripts/catalog-write.mjs
 // Needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY in the environment (GitHub

@@ -52,7 +52,7 @@ jobs:
         continue-on-error: true
         run: node scripts/attendance-calibrate.mjs
 
-      # The catalog as shared truth (docs/catalog-proposal-oct6.md). Skips itself when the secrets are missing.
+      # The catalog as shared truth (docs/archive/proposals/catalog-proposal-oct6.md). Skips itself when the secrets are missing.
       - name: Write the catalog to Supabase
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}

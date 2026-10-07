@@ -29,9 +29,12 @@ docs/direction.md. Read it before making any product decision.
   - `src/map/` MapLibre map, pins, chips
   - `src/lib/` small helpers (dates, titles, sheet drag, view)
   - `src/config/` app name, metros, score labels, theme
-  - `docs/` product decisions and research; `design/wireframes/` older mockups
+  - `docs/` product decisions and what's still in play; `docs/research-queue/` prompts awaiting answers; `docs/archive/` finished research (see `docs/README.md`); `design/wireframes/` older mockups
   - `data/schedule-archive/` nightly Los Angeles listings (not shown in the app)
   - `MEMORY_HANDOFF.md` and `BACKLOG.md` in the root: current state and deferred work
+
+## Research docs
+New research prompts go in `docs/research-queue/`; save answers beside the prompt's name in `docs/`. When an answer is folded into the decisions, add a line `Status: closed, <where it went>, <date>` to it. The pre-commit hook then archives the pair and fixes links (`npm run docs:tidy` previews). Don't move docs by hand: links to them would break.
 
 ## Multiple agents
 This repo is worked on in both Claude Code and Cursor. Before changing shared

@@ -1,6 +1,6 @@
 # Expected draw: Kylie's decisions (Oct 7, 2026)
 
-On the two research answers: `docs/expected-draw-sports-research-answer.md` and `docs/expected-draw-concerts-research-answer.md`. Every line below marked "Kylie, Oct 7" is her answer in the Oct 7 Claude Code session. A line without her name is Claude's proposal.
+On the two research answers: `docs/archive/research/expected-draw-sports-research-answer.md` and `docs/archive/research/expected-draw-concerts-research-answer.md`. Every line below marked "Kylie, Oct 7" is her answer in the Oct 7 Claude Code session. A line without her name is Claude's proposal.
 
 ## Order
 - **Expected draw goes before Montreal** (Kylie, Oct 7).
@@ -40,7 +40,7 @@ Claude's proposal in reply (not locked):
 - **Stars: "All-Star last season" is not enough** (Kylie, Oct 7). Look at published lists: fantasy rankings, max contracts, notable players.
 - **Resale prices: agreed** (Kylie, Oct 7). Capture a week before and on the day.
 - **Opponent: recent tension and deep history both matter** (Kylie, Oct 7), e.g. Dodgers–Yankees: storied, but rarely in Los Angeles.
-- She asked whether this deserves a deeper research prompt. Drafted: `docs/expected-draw-demand-signals-prompt.md`.
+- She asked whether this deserves a deeper research prompt. Drafted: `docs/archive/research/expected-draw-demand-signals-prompt.md`.
 
 ## The held-out check, first runs (Oct 7)
 `scripts/expected-draw-check.mjs` writes `docs/expected-draw-check.md`: each team's last two seasons predicted from earlier seasons only, against the announced crowds. Constants set before the first run.
@@ -49,7 +49,7 @@ Claude's proposal in reply (not locked):
 - **Season level** beats the baseline in MLB, MLS, NWSL, WNBA, NBA and NHL. **Opponent ratio** beats it in MLB, MLS, NFL, WNBA and men's college basketball; it is worse in the NBA, NHL, NWSL and women's college basketball (crowds near capacity, or too few meetings). Both are in the check only; the app uses them only in the leagues where they win.
 - **The 5,000 line by the low end (S1)** is right more often overall (96.3% vs 94.9%), much better for women's college basketball (70% vs 30%), and worse for the NWSL (78% vs 99%) — Gotham's crowds doubled from 2022 to 2024, so a backtest from the earlier seasons reads low. Today's Gotham range (2023–2025) has a low end of ~6,000.
 - **The same seasons were used to decide and to score,** so these numbers flatter the rule a little. The honest test is the forward log: estimates saved before each game, scored when the crowd is announced.
-- **MLB promotions and standings, first run (Oct 7): neither beats the rule without them.** Promotions (per team, giveaway / fireworks / ticket offer, weekday and weekend apart): 6.6% → 6.8% median off. Standings (home record going in, slopes fit on earlier seasons, before Aug 1 and after): → 7.3%. Likely why: the day-and-month baseline already carries when teams schedule giveaways, and the season level already carries how good the team is this year. Both stay off. They are not re-tuned to pass; a different shape (e.g. bobbleheads only, the playoff race by games back) comes from `docs/expected-draw-demand-signals-prompt.md`, set before it is run. The data is on file: every MLB home game since 2022 carries its promotions and the record going in.
+- **MLB promotions and standings, first run (Oct 7): neither beats the rule without them.** Promotions (per team, giveaway / fireworks / ticket offer, weekday and weekend apart): 6.6% → 6.8% median off. Standings (home record going in, slopes fit on earlier seasons, before Aug 1 and after): → 7.3%. Likely why: the day-and-month baseline already carries when teams schedule giveaways, and the season level already carries how good the team is this year. Both stay off. They are not re-tuned to pass; a different shape (e.g. bobbleheads only, the playoff race by games back) comes from `docs/archive/research/expected-draw-demand-signals-prompt.md`, set before it is run. The data is on file: every MLB home game since 2022 carries its promotions and the record going in.
 - **Not wired into the app yet: the season level and the opponent ratio.** They win in the check, but the app would need this season's crowds and each opponent's history at read time, which means the nightly job recomputing the draws. That touches the shared nightly pipeline, so it is a proposal first.
 
 ## Kylie's answers on the follow-ups (Oct 7)
@@ -91,7 +91,7 @@ Written down before the run. MLB only (its feed lists promotions); every source 
 - **Season level and opponent ratio apply in every league** (Kylie, Oct 7): no league-wide gain in the last two or three seasons does not rule out an effect for one team or one visitor. The check's "app" column now equals the full rule. Cost the check shows: NBA 0.6% → 1.0% median off, NHL 1.6% → 2.1%, NWSL 15.1% → 19.5%; MLB, MLS, NFL, WNBA and men's college basketball gain.
 - **No "Adjusted for this opponent" on the event page** (Kylie, Oct 7). How estimates are made is explained once, behind an (i) beside the figure, for all estimates, not per event. The per-event basis sentence comes off the page too; the range stays (S4).
 - **Nightly job load:** she asked whether it is overloaded. Measured Oct 7: the whole run takes about 3 minutes; the new calibration step takes half a second. The calibration step is now allowed to fail without losing the night's snapshot.
-- **Promotion history:** she will research past promotional schedules herself. Prompt: `docs/promo-history-research-prompt.md`.
+- **Promotion history:** she will research past promotional schedules herself. Prompt: `docs/archive/research/promo-history-research-prompt.md`.
 - **Concerts: the 57% default is approved** (Kylie, Oct 7), and the (i) should say so. **Every estimated number gets the same (i)** (Kylie, Oct 7).
 - **City order after this work** (Kylie, Oct 7): **Atlanta, Bay Area, Chicago, Dallas–Fort Worth, Montreal.** Montreal moves from next to fifth.
 

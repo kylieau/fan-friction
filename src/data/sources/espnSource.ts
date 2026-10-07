@@ -112,7 +112,7 @@ const VENUE_BY_NAME: Record<string, string> = {
   'moglia stadium at jack coffey field': 'coffey-field',
   'carnesecca arena': 'carnesecca-arena',
   'icahn stadium': 'icahn-stadium',
-  // Atlanta (docs/atlanta-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  // Atlanta (docs/archive/research/atlanta-venue-table-answer.md), as ESPN writes them on each team's own schedule.
   'mercedes-benz stadium': 'mercedes-benz-stadium',
   'state farm arena': 'state-farm-arena',
   'gateway center': 'gateway-center-arena',

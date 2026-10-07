@@ -1,4 +1,4 @@
-// What the app reads from the shared catalog besides events (docs/catalog-proposal-oct6.md,
+// What the app reads from the shared catalog besides events (docs/archive/proposals/catalog-proposal-oct6.md,
 // slice 3): weather, results, the stamp snapshots and expected draws, loaded per
 // window of dates from Supabase and kept in memory for the session. The readers in
 // weather.ts, results.ts, read.ts and expectedDraw.ts ask here first and fall back

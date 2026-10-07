@@ -46,7 +46,7 @@ export const METROS: Record<string, Metro> = {
     center: [-83.0197, 40.0016],
     zoom: 12,
   },
-  // Covered Oct 7, 2026 (docs/new-york-venue-table-answer.md). The region runs from the
+  // Covered Oct 7, 2026 (docs/archive/research/new-york-venue-table-answer.md). The region runs from the
   // Meadowlands to Stony Brook; this frames Manhattan, the Bronx, Queens, Brooklyn, Newark
   // and Elmont on one phone screen. Jones Beach, PNC and Stony Brook sit off the first view.
   'new-york': {
@@ -56,7 +56,7 @@ export const METROS: Record<string, Metro> = {
     center: [-73.93, 40.75],
     zoom: 10.5,
   },
-  // Covered Oct 7, 2026 (docs/atlanta-venue-table-answer.md): the 11-county core, from Kennesaw
+  // Covered Oct 7, 2026 (docs/archive/research/atlanta-venue-table-answer.md): the 11-county core, from Kennesaw
   // and Alpharetta down to Hampton. This frames Downtown, Midtown, the Battery and Lakewood on one
   // phone screen; Gas South, Alpharetta, Kennesaw and the speedway sit off the first view.
   atlanta: {

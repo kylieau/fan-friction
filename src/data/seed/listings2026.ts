@@ -8,7 +8,7 @@ const SOURCE_ID = 'listing';
 
 /**
  * New York Comic Con at the Javits Center, Oct 8–11, 2026. A convention hall has no fixed
- * capacity (docs/new-york-venue-table-answer.md, Table B), so it is placed as a point and
+ * capacity (docs/archive/research/new-york-venue-table-answer.md, Table B), so it is placed as a point and
  * sized by its own crowd. Kylie, Oct 7, 2026: a per-day average of a multi-day total is fine
  * when labeled estimated. Floor hours 10:00–19:00 (NYCC's own schedule, Thursday).
  * A point does not reach Gridlock, so the load it puts on the West Side is not yet read
@@ -34,7 +34,7 @@ const comicConDay = (date: string, day: number): CrowdEvent => ({
 });
 
 /**
- * Neutral-site football at Mercedes-Benz Stadium (docs/atlanta-venue-table-answer.md §3). The
+ * Neutral-site football at Mercedes-Benz Stadium (docs/archive/research/atlanta-venue-table-answer.md §3). The
  * team feeds miss these because neither side is an Atlanta home team, so they are hand-listed
  * (Kylie, Oct 7, 2026). Sized by the stadium's expanded setup, which these games sell
  * (75,000 official; the read caps at the 71,000 football setup). Dates and kickoffs as announced.

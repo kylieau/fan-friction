@@ -1,6 +1,6 @@
 # Rating formula v4 (Oct 5, 2026): what the review changes, and what's proposed to build
 
-Source: `formula-review-prompt.md` → the outside review in `formula-review-response.md`, then Claude's re-check. **Nothing here is decided until Kylie says so.** Every number is a placeholder to be tuned on attendance data later (section 11 of the review).
+Source: `docs/archive/formula/formula-review-prompt.md` → the outside review in `docs/archive/formula/formula-review-response.md`, then Claude's re-check. **Nothing here is decided until Kylie says so.** Every number is a placeholder to be tuned on attendance data later (section 11 of the review).
 
 ## Claude's re-check of the arithmetic
 I re-ran the review's Crowd fight (single-buffer decaying `t`, asymmetric pull, contested-seats date rule) and its Conditions rule on the 13 nights, using the seeded temperatures (no feels-like data, so heat nights land a little lower than the review's). No Gridlock in this run.
@@ -29,7 +29,7 @@ Mean error against the hand ratings: about 1.6 for v3's Crowd fight; about 1.1 f
 |---|---|---|
 | 1 | **Date Crowd fight = contested seats:** `C = Σ cap(E) × D_E` over events ≥ 5,000 seats; `CF = 1 + 2.5 × log2(1 + C / S₀)`, `S₀` = 10,000 for LA (0.2 × median capacity of the city's 15k+ venues). | Adopt. The single biggest fix; it ends "one squeezed arena sets the night." |
 | 2 | **Time factor decays, buffered once:** `t = clamp(0, 1, 1 − gap/4h)`, gap = later start − (earlier end + 1h). | Adopt. Fixes the Kings-before-the-World-Series bug. |
-| 3 | **Asymmetric pull** replaces the Marquee lift and the verdict shield: `d = w × t × (m_c × cap_c) / (m_E × cap_E + m_c × cap_c)`, m = 1 / 1.1 / 1.3 / 1.6 for Routine / Notable / Major / Marquee. | Adopt. One mechanism instead of two, and it explains itself. **Oct 6: steepened to 1 / 1.2 / 1.6 / 2.5, and events are sized by expected draw, not the building (`docs/formula-tuning-oct5.md`).** |
+| 3 | **Asymmetric pull** replaces the Marquee lift and the verdict shield: `d = w × t × (m_c × cap_c) / (m_E × cap_E + m_c × cap_c)`, m = 1 / 1.1 / 1.3 / 1.6 for Routine / Notable / Major / Marquee. | Adopt. One mechanism instead of two, and it explains itself. **Oct 6: steepened to 1 / 1.2 / 1.6 / 2.5, and events are sized by expected draw, not the building (`docs/archive/formula/formula-tuning-oct5.md`).** |
 | 4 | **Tiers stay** 0.7 / 0.35 / 0.15; Medium settled at 0.35; "same sport, same level, not rivals" (Chargers–Rams) is Medium. | Adopt. |
 | 5 | **Conditions is a third reason:** per open-air event, heat `h = clamp(0,1,(T_eff − 85)/20)` with `T_eff` = feels-like at start, +8°F for 10:00–17:00 starts in strong sun; rain 0.25 / 0.5; cold `k = clamp(0,1,(20 − wind chill)/20)`; `w = max(h, r, k)`; event Conditions = 1 + 9w; date Conditions seat-weighted. Roofed venues 0. Source: Open-Meteo (forecast 16 days, archive to 1940). Frozen at the lock using the last forecast, never observed weather. | Adopt, with one flag: Open-Meteo is free for non-commercial use only. 🚩 A public launch would need their paid plan or another source. Fine for now. |
 | 6 | **Combination:** `rating = max(R) + 0.25 × Σ (other R − 3)⁺`, capped at 10. | Adopt. Replaces louder-wins-plus-fixed-bump. |

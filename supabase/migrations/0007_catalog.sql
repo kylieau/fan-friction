@@ -1,4 +1,4 @@
--- The catalog as shared truth (Oct 6, 2026; docs/catalog-proposal-oct6.md).
+-- The catalog as shared truth (Oct 6, 2026; docs/archive/proposals/catalog-proposal-oct6.md).
 -- Public data, public read: anyone can select; only the nightly job writes,
 -- with the service-role key kept in GitHub's secrets (never in the app).
 -- Each table keeps its full record in `data` (jsonb) beside a few indexed

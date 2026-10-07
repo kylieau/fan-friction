@@ -1,6 +1,6 @@
 // Concerts and other ticketed shows from Ticketmaster's Discovery API, for the
 // nightly job only (the key never reaches the app). Terms, Oct 6, 2026
-// (docs/ticketmaster-review-oct6.md): store the facts of a night, not the
+// (docs/archive/proposals/ticketmaster-review-oct6.md): store the facts of a night, not the
 // content, so each event keeps its name, date, start, venue, performers and
 // Ticketmaster's id, and nothing else. Sports listings are left to the league
 // feeds. Only venues the app knows are kept: a listing matches a venue by

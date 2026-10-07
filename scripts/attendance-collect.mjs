@@ -5,7 +5,7 @@
 //   node scripts/attendance-collect.mjs dodgers    (one team)
 // Every figure is the league's announced count (tickets distributed, for MLB
 // and the NFL). Nothing here is invented; a game without a count is skipped.
-// The review's calibration plan (docs/formula-review-response.md §11).
+// The review's calibration plan (docs/archive/formula/formula-review-response.md §11).
 
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -124,7 +124,7 @@ const VENUE_BY_NAME = {
   'moglia stadium at jack coffey field': 'coffey-field',
   'carnesecca arena': 'carnesecca-arena',
   'icahn stadium': 'icahn-stadium',
-  // Atlanta (docs/atlanta-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  // Atlanta (docs/archive/research/atlanta-venue-table-answer.md), as ESPN writes them on each team's own schedule.
   'mercedes-benz stadium': 'mercedes-benz-stadium',
   'state farm arena': 'state-farm-arena',
   'gateway center': 'gateway-center-arena',

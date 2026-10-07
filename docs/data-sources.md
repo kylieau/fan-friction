@@ -30,22 +30,22 @@ Kylie, Oct 6, 2026: one file that says where each kind of data is pulled from, s
 
 | Data | File | Sources |
 |---|---|---|
-| Venues: names and rename dates, coordinates, capacity by setup and year, roof, strained access | `src/data/venues.ts` | `docs/la-venue-table-answer.md`, `docs/san-diego-venue-table-answer.md`, `docs/seattle-venue-table-answer.md`, `docs/new-york-venue-table-answer.md` and `docs/atlanta-venue-table-answer.md` (Oct 6–7, 2026 research, with a link per figure; Seattle's PDF is saved beside its page; New York's arrival research came only as a PDF Kylie could not supply, so its markdown transcription is the record), Wikipedia infoboxes for Pauley Pavilion and Galen Center, OpenStreetMap for coordinates. Earlier figures: venue guides and news reports, Oct 1, 2026. |
+| Venues: names and rename dates, coordinates, capacity by setup and year, roof, strained access | `src/data/venues.ts` | `docs/archive/research/la-venue-table-answer.md`, `docs/archive/research/san-diego-venue-table-answer.md`, `docs/archive/research/seattle-venue-table-answer.md`, `docs/archive/research/new-york-venue-table-answer.md` and `docs/archive/research/atlanta-venue-table-answer.md` (Oct 6–7, 2026 research, with a link per figure; Seattle's PDF is saved beside its page; New York's arrival research came only as a PDF Kylie could not supply, so its markdown transcription is the record), Wikipedia infoboxes for Pauley Pavilion and Galen Center, OpenStreetMap for coordinates. Earlier figures: venue guides and news reports, Oct 1, 2026. |
 | Teams and college programs | `src/data/teams.ts` | league sites; ESPN ids as above |
-| Competitions (leagues, cups) for the Add form | `src/data/competitions.ts` | `docs/sport-list-second-opinion-answer.md` |
+| Competitions (leagues, cups) for the Add form | `src/data/competitions.ts` | `docs/archive/second-opinions/sport-list-second-opinion-answer.md` |
 | The 13 hand-rated nights and the Oct 3–4, 2026 LA seeds | `src/data/seed/` | `docs/test-nights-and-ratings.md`, `docs/researched-events.md`; each figure labeled on the event |
 | Weather normals (empty) | `src/data/formula/weather.ts` `MONTHLY_NORMAL_F` | to research when a second city arrives |
 
 ## Research answers kept in `docs/`
-- `docs/la-venue-table-answer.md`: the venue research, with the verdict on each figure the app already had.
+- `docs/archive/research/la-venue-table-answer.md`: the venue research, with the verdict on each figure the app already had.
 - `docs/research-oct-2026/`: October 2026 events in four cities (from the other session).
-- `docs/sport-list-second-opinion-answer.md`: how a game is classified.
-- `docs/hard-access-weight-answer.md`: what hard access and transit do to egress (StreetLight, Hwang/Humphreys/Pyun, FHWA); the ×1.25 and the car-share scaling.
-- `docs/seattle-city-type-answer.md`: how Seattle fans arrive, per venue (UW's 2022 game-day survey, Climate Pledge Arena's transit dashboard, the 2026 World Cup mobility deck, Sound Transit); the `carShare` on every Seattle venue and the city type.
-- `docs/atlanta-city-type-answer.md`: how Atlanta fans arrive, per venue (MARTA fare-card counts at the two stadium stations from a 2018–19 Georgia Tech study, MARTA's World Cup situation report, the Braves' 2016–17 transportation plan, venue parking pages); the `carShare` on every Atlanta venue, and the city type: driving. 17 of its 20 rows are estimates; only Mercedes-Benz Stadium and State Farm Arena have an observed count.
-- `docs/new-york-city-type-answer.md`: how New York fans arrive, per venue (the Belmont Park FEIS, LIRR and MTA ridership reports, the 2013 Barclays TDM survey, NYC DOT's 2012 Yankee Stadium survey, NJ Transit event counts); the `carShare` on every New York venue, and the city type: hub, not transit. 18 of its 28 rows are estimates from the nearest venue with a count; MSG and Harrison are the biggest risks.
-- `docs/venue-egress-answer.md` and `docs/gridlock_inputs_all_43_venues.csv`: parking counts, mode shares, occupancy and clearance times for all 43 venues (EIRs, city plans, LA Phil, MTS, SacRT). Exit lanes are not published anywhere, so the cars-per-lane rule is shelved; `carShare` can be filled from the official/reported rows.
-- `docs/formula-review-response.md`: the formula review, including the calibration plan (§11).
+- `docs/archive/second-opinions/sport-list-second-opinion-answer.md`: how a game is classified.
+- `docs/archive/research/hard-access-weight-answer.md`: what hard access and transit do to egress (StreetLight, Hwang/Humphreys/Pyun, FHWA); the ×1.25 and the car-share scaling.
+- `docs/archive/research/seattle-city-type-answer.md`: how Seattle fans arrive, per venue (UW's 2022 game-day survey, Climate Pledge Arena's transit dashboard, the 2026 World Cup mobility deck, Sound Transit); the `carShare` on every Seattle venue and the city type.
+- `docs/archive/research/atlanta-city-type-answer.md`: how Atlanta fans arrive, per venue (MARTA fare-card counts at the two stadium stations from a 2018–19 Georgia Tech study, MARTA's World Cup situation report, the Braves' 2016–17 transportation plan, venue parking pages); the `carShare` on every Atlanta venue, and the city type: driving. 17 of its 20 rows are estimates; only Mercedes-Benz Stadium and State Farm Arena have an observed count.
+- `docs/archive/research/new-york-city-type-answer.md`: how New York fans arrive, per venue (the Belmont Park FEIS, LIRR and MTA ridership reports, the 2013 Barclays TDM survey, NYC DOT's 2012 Yankee Stadium survey, NJ Transit event counts); the `carShare` on every New York venue, and the city type: hub, not transit. 18 of its 28 rows are estimates from the nearest venue with a count; MSG and Harrison are the biggest risks.
+- `docs/archive/research/venue-egress-answer.md` and `docs/archive/formula/gridlock_inputs_all_43_venues.csv`: parking counts, mode shares, occupancy and clearance times for all 43 venues (EIRs, city plans, LA Phil, MTS, SacRT). Exit lanes are not published anywhere, so the cars-per-lane rule is shelved; `carShare` can be filled from the official/reported rows.
+- `docs/archive/formula/formula-review-response.md`: the formula review, including the calibration plan (§11).
 
 ## Not yet used, checked as available
 - Ticketmaster Discovery API for concerts 🚩 free developer key, daily quota; terms to read first (step 4).

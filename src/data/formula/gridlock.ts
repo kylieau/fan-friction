@@ -24,14 +24,14 @@ const DEFAULT_START: Record<string, number> = { football: 13.1, baseball: 19.2, 
 const SCALE = 7.5;
 
 /** City type: drive-centric sprawl, destination hub, or transit-dominant. Others default to sprawl. */
-// Seattle is a hub (research, Oct 6, 2026, docs/seattle-city-type-answer.md): in between. Core crowds run 37–70% by
+// Seattle is a hub (research, Oct 6, 2026, docs/archive/research/seattle-city-type-answer.md): in between. Core crowds run 37–70% by
 // car (Husky Stadium 37% observed, Lumen Field 60%, Climate Pledge Arena ~63%), the suburbs 85–95%. Every Seattle
 // venue carries its own carShare, so this default only covers a room without one.
-// New York is also a hub, not transit (research, Oct 6, 2026, docs/new-york-city-type-answer.md): ~60% of a big crowd
+// New York is also a hub, not transit (research, Oct 6, 2026, docs/archive/research/new-york-city-type-answer.md): ~60% of a big crowd
 // arrives by car, weighted by seats. The ballparks broke the assumption — Citi Field ~60% car, Yankee Stadium ~50%.
 // Only the rail-hub buildings (MSG, Barclays, Radio City) are transit-tier; Long Island and the Meadowlands drive.
 // Chicago and Boston are still assumptions; research them before covering either (Kylie: never assume a city's type).
-// Atlanta is a driving region (research, Oct 7, 2026, docs/atlanta-city-type-answer.md): no regular-season
+// Atlanta is a driving region (research, Oct 7, 2026, docs/archive/research/atlanta-city-type-answer.md): no regular-season
 // crowd measured under ~70% car; only the two downtown buildings on MARTA take a real rail share.
 const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', chicago: 'transit', boston: 'transit' };
 
@@ -184,7 +184,7 @@ function backgroundFor(
 }
 
 /**
- * The hard-access multiplier (docs/hard-access-weight-answer.md, Oct 6, 2026).
+ * The hard-access multiplier (docs/archive/research/hard-access-weight-answer.md, Oct 6, 2026).
  * ×1.25 where everyone drives, scaled by the share of fans who drive to that
  * venue: the penalty is a car's problem, and transit share belongs to the
  * venue, not the city. A placeholder: the research puts the true effect at

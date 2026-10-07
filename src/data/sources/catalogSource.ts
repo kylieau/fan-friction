@@ -1,4 +1,4 @@
-// The catalog as shared truth (docs/catalog-proposal-oct6.md, slice 2): upcoming
+// The catalog as shared truth (docs/archive/proposals/catalog-proposal-oct6.md, slice 2): upcoming
 // games read from Supabase's `events` table, written once a night by the job,
 // instead of every phone calling MLB and ESPN itself. The hand-seeded nights
 // stay in code (seedSource) for now. When the table can't be reached, or has

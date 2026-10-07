@@ -1,4 +1,4 @@
-// The held-out check for expected draws (docs/expected-draw-sports-research-answer.md §4;
+// The held-out check for expected draws (docs/archive/research/expected-draw-sports-research-answer.md §4;
 // Kylie, Oct 6: attendance on held-out dates is the only accuracy target).
 // For each team's last two seasons on file, every home game is predicted from
 // earlier data only, then compared with the crowd that was announced. Each step

@@ -1,0 +1,4 @@
+#!/bin/sh
+# Archives finished research docs (those marked `Status: closed`) and fixes links to them.
+# Never blocks a commit. See docs/README.md and scripts/docs-tidy.mjs.
+node scripts/docs-tidy.mjs --apply --hook || true

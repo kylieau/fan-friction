@@ -370,7 +370,7 @@ export const PAST_2026_EVENTS: CrowdEvent[] = [
 
   // ---------- New York, Thu Oct 1 and Sat Oct 3 ----------
   // Before New York was covered (Oct 7), so no feed or archive lists them. From the October research
-  // (docs/research-oct-2026/new-york.md); start times checked against ESPN's season schedules and AXS.
+  // (docs/archive/research/oct-2026-events/new-york.md); start times checked against ESPN's season schedules and AXS.
   // Oct 6 onward needs nothing here: the archive's first New York file starts that day.
   game('new-york', '2026-10-01', 'rangers', 'Rangers vs Lightning', 'hockey', { home: 'ny-rangers', away: 'lightning' }, {
     start: '19:00', venue: 'madison-square-garden',

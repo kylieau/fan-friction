@@ -1,5 +1,5 @@
 // How an upcoming home game's crowd is estimated from past announced crowds
-// (docs/expected-draw-sports-research-answer.md, Kylie's locks in
+// (docs/archive/research/expected-draw-sports-research-answer.md, Kylie's locks in
 // docs/expected-draw-decisions-oct7.md). One copy of the rule, used three ways:
 // scripts/attendance-calibrate.mjs builds the rows the app ships with,
 // src/data/expectedDraw.ts picks a row for an event, and
@@ -358,14 +358,14 @@ export interface OpponentRatioRow {
  * A show with no better figure is sized at this share of the room: the median fill
  * of the covered arenas that publish attendance and show counts (MSG, Kia Forum,
  * Barclays, Prudential, Intuit Dome, YouTube Theater, Hollywood Bowl), from
- * docs/concert-venue-figures-answer.md against the capacities in venues.ts.
+ * docs/archive/research/concert-venue-figures-answer.md against the capacities in venues.ts.
  */
 export const CONCERT_FILL = 0.57;
 
 /**
- * Rung 4 of the show ladder (docs/expected-draw-concerts-research-answer.md): a room's
+ * Rung 4 of the show ladder (docs/archive/research/expected-draw-concerts-research-answer.md): a room's
  * own published average per reported show, Billboard's chart year Oct 1, 2024 – Sep 30,
- * 2025, from docs/concert-venue-figures-answer.md. Reported figures; they count every
+ * 2025, from docs/archive/research/concert-venue-figures-answer.md. Reported figures; they count every
  * ticketed non-team event Billboard received, so comedy and family shows are in the mix.
  * Rooms whose figure was only an upper bound (YouTube Theater, Hollywood Bowl) take the default.
  */

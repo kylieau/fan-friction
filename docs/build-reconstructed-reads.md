@@ -54,7 +54,7 @@ Notes:
 - Canadiens–Hurricanes, East Final G3, 8:00 pm ET (Bell Centre; 20,962 announced). The only 5,000+ event in town (eight other venues checked). The official outdoor watch party on Ave des Canadiens-de-Montréal from 5:00 pm has no crowd figure: listed, not counted.
 
 ## New York (after New York is set up)
-Early-October New York dates are covered by the October research already in the repo (`docs/research-oct-2026/new-york.md`). Use that.
+Early-October New York dates are covered by the October research already in the repo (`docs/archive/research/oct-2026-events/new-york.md`). Use that.
 
 ## Connecting logged nights to the reads
 Logged nights that come in by hand (a SQL import Kylie runs, kept outside the repo) carry a date, metro, title and venue, with `event_id` null. **Answered Oct 6 by the build session:** a logged night picks up its read by date + metro; `event_id` isn't needed. What matters is `metroId` set correctly and `inMetro` not false for a covered city (`inMetro: false` is the away-night escape and returns no read). Nights in a city not yet covered stay `inMetro: false` until it is. Kylie holds a small follow-up script for those; tell her when each city lands (Montreal's id will be `montreal`; `new-york` already exists). **Don't write to anyone's account yourself.**
