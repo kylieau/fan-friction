@@ -9,7 +9,7 @@ Boundary: Claude's reading of the next-cities research (`docs/next-cities-resear
 ---
 
 ## How to deliver this (read first)
-**Reply in plain Markdown text in the chat itself.** Do not create an artifact, canvas, document, file or PDF: the answer is copied straight out of the chat into a `.md` file, and anything else can only be saved as a PDF. Use Markdown headings, pipe tables (`| a | b |`) and inline links. If the answer is too long for one message, stop at a clean break, say "continued", and carry on in the next message.
+**Deliver the answer as a downloadable Markdown file (`.md`)**, named **`chicago-venue-table-answer.md`**. Do not make it a PDF, a Word file or a rendered page that can only be saved as a PDF. Inside the file use Markdown headings, pipe tables (`| a | b |`) and inline links. If you cannot create a file, reply in plain Markdown text in the chat instead, and if that is too long for one message, stop at a clean break, say "continued", and carry on in the next message.
 
 # Research brief: Chicago venues that hold 5,000 or more
 
@@ -60,7 +60,7 @@ Leave out: rooms under 5,000 in every setup; private spaces; buildings demolishe
 Wintrust Arena, 10,387, is the only Chicago building in the app today, carried over from a logged night. Confirm or correct it, with the source and coordinates.
 
 ## Output
-In Markdown, in the chat (no artifact): one table, one row per venue, sorted by capacity, largest first, with the columns above. Then:
+In the .md file: one table, one row per venue, sorted by capacity, largest first, with the columns above. Then:
 1. Near-the-line venues you left out and why (4,000–5,000 rooms).
 2. Anything you could not confirm.
 3. The big crowd dates with no building.
