@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-11",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-11",
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:35:35.364Z",
+      "feelsLikeHighF": 75.1,
+      "feelsLikeLowF": 63.1,
+      "code": 3,
+      "precipProbability": 24,
+      "precipMm": 0
+    }
+  ]
+}

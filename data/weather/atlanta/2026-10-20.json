@@ -64,6 +64,18 @@
       "code": 2,
       "precipProbability": 10,
       "precipMm": 0
+    },
+    {
+      "metroId": "atlanta",
+      "venueId": "city",
+      "date": "2026-10-20",
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:35:22.139Z",
+      "feelsLikeHighF": 80.4,
+      "feelsLikeLowF": 69.3,
+      "code": 3,
+      "precipProbability": 10,
+      "precipMm": 0
     }
   ]
 }

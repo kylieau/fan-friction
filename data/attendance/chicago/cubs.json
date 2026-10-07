@@ -1,0 +1,6959 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "teamId": "cubs",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-07",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 35112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 28620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 30369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 32858,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-18",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "wrigley-field",
+      "attendance": 26615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-19",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "wrigley-field",
+      "attendance": 26568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-20",
+      "start": "17:30",
+      "opponent": "Rays",
+      "venueId": "wrigley-field",
+      "attendance": 26167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-21",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 32341,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-22",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 25005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-23",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 39917,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-04-24",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 28387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-03",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 34206,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-04",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 36755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-06",
+      "start": "13:20",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 31520,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-07",
+      "start": "12:05",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 37594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-07",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 31520,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-08",
+      "start": "18:08",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 31424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-16",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 31119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 30478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-18",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 31631,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-19",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 32631,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-20",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 31235,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-21",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 32269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 32606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-30",
+      "start": "12:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 39305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-30",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 28620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-05-31",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 30596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-01",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 33398,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-02",
+      "start": "19:05",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 30466,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-03",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 32482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "12:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 32792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "18:15",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 31673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-05",
+      "start": "18:08",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 31424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-13",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 31629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 29233,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 31570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-16",
+      "start": "13:20",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 30096,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "13:20",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 35676,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-18",
+      "start": "13:20",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 40755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-19",
+      "start": "13:20",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 40369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 32732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 28987,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-06-30",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 32318,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-01",
+      "start": "13:20",
+      "opponent": "Red Sox",
+      "venueId": "wrigley-field",
+      "attendance": 34931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": "18:15",
+      "opponent": "Red Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-03",
+      "start": "13:20",
+      "opponent": "Red Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "wrigley-field",
+      "attendance": 31079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "wrigley-field",
+      "attendance": 29529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-14",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 34051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-15",
+      "start": "13:20",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 34366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-16",
+      "start": "13:20",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 39219,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-16",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 34366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-17",
+      "start": "13:20",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 34424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-25",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 37342,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 30978,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-05",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 35689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-06",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 36787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-07",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 30177,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-08",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 30904,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 37193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 29019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-19",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 39962,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 35994,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-21",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 34525,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-22",
+      "start": "19:05",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 29719,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 27273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "19:05",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 28163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-24",
+      "start": "19:05",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 32012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-08-25",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 28803,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-06",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 27600,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-07",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 27945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-08",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 23910,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-09",
+      "start": "15:05",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 31309,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "13:20",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 40086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-11",
+      "start": "19:08",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 30004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "13:20",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 31775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "13:20",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 34530,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "13:20",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 35627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-27",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 32069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-28",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 29368,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-29",
+      "start": "13:20",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 23425,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 24297,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 31256,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2022,
+      "date": "2022-10-02",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 30029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-03-30",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 36054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-01",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 31363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-02",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 33266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "13:20",
+      "opponent": "Rangers",
+      "venueId": "wrigley-field",
+      "attendance": 29094,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "15:05",
+      "opponent": "Rangers",
+      "venueId": "wrigley-field",
+      "attendance": 33578,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "13:20",
+      "opponent": "Rangers",
+      "venueId": "wrigley-field",
+      "attendance": 28807,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-10",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "wrigley-field",
+      "attendance": 26766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "wrigley-field",
+      "attendance": 30081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "13:20",
+      "opponent": "Mariners",
+      "venueId": "wrigley-field",
+      "attendance": 26944,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-20",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 32817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "13:20",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 30381,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "13:20",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 35076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": "13:20",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 33494,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 27956,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 28955,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "13:20",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 26588,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 31181,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 36418,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 38196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-08",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 30937,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 32693,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 36413,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 35958,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 33636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 35446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 31946,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "18:15",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 36372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 40551,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-29",
+      "start": "13:20",
+      "opponent": "Rays",
+      "venueId": "wrigley-field",
+      "attendance": 38163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "19:05",
+      "opponent": "Rays",
+      "venueId": "wrigley-field",
+      "attendance": 31762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "13:20",
+      "opponent": "Rays",
+      "venueId": "wrigley-field",
+      "attendance": 29360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 33740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 30832,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-15",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 32881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "13:20",
+      "opponent": "Orioles",
+      "venueId": "wrigley-field",
+      "attendance": 37515,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "13:20",
+      "opponent": "Orioles",
+      "venueId": "wrigley-field",
+      "attendance": 40605,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "12:05",
+      "opponent": "Orioles",
+      "venueId": "wrigley-field",
+      "attendance": 40121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-27",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 37072,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 32379,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 35090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": "13:20",
+      "opponent": "Guardians",
+      "venueId": "wrigley-field",
+      "attendance": 32230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "18:15",
+      "opponent": "Guardians",
+      "venueId": "wrigley-field",
+      "attendance": 34342,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "16:05",
+      "opponent": "Guardians",
+      "venueId": "wrigley-field",
+      "attendance": 38392,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "wrigley-field",
+      "attendance": 37597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "13:20",
+      "opponent": "Red Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": "13:20",
+      "opponent": "Red Sox",
+      "venueId": "wrigley-field",
+      "attendance": 37812,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-17",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 29383,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-18",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 28636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-19",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 28197,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "19:05",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 34251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 38819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 40425,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 38223,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-07-31",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 34688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 33452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 33991,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-03",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 35615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-04",
+      "start": "13:20",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 36225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-05",
+      "start": "13:20",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 40201,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-06",
+      "start": "13:20",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 39015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40389,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "13:20",
+      "opponent": "Royals",
+      "venueId": "wrigley-field",
+      "attendance": 37936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "13:20",
+      "opponent": "Royals",
+      "venueId": "wrigley-field",
+      "attendance": 39525,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "13:20",
+      "opponent": "Royals",
+      "venueId": "wrigley-field",
+      "attendance": 36949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-28",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 35097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 33294,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-08-30",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 31769,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-04",
+      "start": "13:20",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 39452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 28684,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "13:20",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 27443,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-07",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 28814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 31846,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 40391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 35431,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 34202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 31491,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-21",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 31544,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "13:20",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 32150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "13:20",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 38608,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "13:20",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 37060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-01",
+      "start": "13:20",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 40072,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 26555,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 25900,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "13:20",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 34981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "15:05",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 41040,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:20",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 38322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 32386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 29595,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 36379,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 32386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 36067,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "wrigley-field",
+      "attendance": 30643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "wrigley-field",
+      "attendance": 32327,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-04-25",
+      "start": "13:20",
+      "opponent": "Astros",
+      "venueId": "wrigley-field",
+      "attendance": 29876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 33557,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 40505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 39299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-06",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 35560,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 38133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "13:20",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 30138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-16",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 36202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 35372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 39857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 39008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 36121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 37584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": "13:20",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 35646,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 36281,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "18:15",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 36430,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 38129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 38397,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 40160,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 40088,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "12:05",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 39118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-17",
+      "start": "19:05",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 36048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "19:05",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 36297,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "13:20",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 37673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-21",
+      "start": "13:20",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 37037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-22",
+      "start": "13:20",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 39319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-06-23",
+      "start": "18:10",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 39417,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-02",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 38670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-03",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 36692,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "13:20",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 40143,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-05",
+      "start": "13:20",
+      "opponent": "Angels",
+      "venueId": "wrigley-field",
+      "attendance": 36948,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-06",
+      "start": "13:20",
+      "opponent": "Angels",
+      "venueId": "wrigley-field",
+      "attendance": 36420,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-07",
+      "start": "13:20",
+      "opponent": "Angels",
+      "venueId": "wrigley-field",
+      "attendance": 34355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-19",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 40691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "18:15",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 39595,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-21",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 39162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-22",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 35741,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 37651,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 37679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-01",
+      "start": "19:05",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 37969,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-02",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 37613,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-03",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 40073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-04",
+      "start": "18:10",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 34593,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-05",
+      "start": "19:05",
+      "opponent": "Twins",
+      "venueId": "wrigley-field",
+      "attendance": 35382,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "19:05",
+      "opponent": "Twins",
+      "venueId": "wrigley-field",
+      "attendance": 36653,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": "13:20",
+      "opponent": "Twins",
+      "venueId": "wrigley-field",
+      "attendance": 35059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "13:20",
+      "opponent": "Blue Jays",
+      "venueId": "wrigley-field",
+      "attendance": 39614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "13:20",
+      "opponent": "Blue Jays",
+      "venueId": "wrigley-field",
+      "attendance": 38755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-18",
+      "start": "13:20",
+      "opponent": "Blue Jays",
+      "venueId": "wrigley-field",
+      "attendance": 36117,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "19:05",
+      "opponent": "Tigers",
+      "venueId": "wrigley-field",
+      "attendance": 31119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "19:05",
+      "opponent": "Tigers",
+      "venueId": "wrigley-field",
+      "attendance": 31940,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-08-22",
+      "start": "13:20",
+      "opponent": "Tigers",
+      "venueId": "wrigley-field",
+      "attendance": 33536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-02",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 33583,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 29450,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 30369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "13:20",
+      "opponent": "Yankees",
+      "venueId": "wrigley-field",
+      "attendance": 40101,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "13:20",
+      "opponent": "Yankees",
+      "venueId": "wrigley-field",
+      "attendance": 40080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "13:20",
+      "opponent": "Yankees",
+      "venueId": "wrigley-field",
+      "attendance": 39364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-16",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "wrigley-field",
+      "attendance": 34532,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-17",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "wrigley-field",
+      "attendance": 32718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-18",
+      "start": "13:20",
+      "opponent": "Athletics",
+      "venueId": "wrigley-field",
+      "attendance": 27806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-19",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 31479,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-20",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 29590,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 38819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-22",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 30086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-27",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 32083,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 38180,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "14:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 33792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-03-18",
+      "start": "05:10",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 42365,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-03-19",
+      "start": "05:10",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 42367,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "13:20",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 40244,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2025 Cubs Magnet Schedule"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "13:20",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 35391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cubs Flannel"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:20",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 33941,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-07",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "wrigley-field",
+      "attendance": 27017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "wrigley-field",
+      "attendance": 27694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "13:20",
+      "opponent": "Rangers",
+      "venueId": "wrigley-field",
+      "attendance": 23590,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 39109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 36002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Speedy Pete Crow-Armstrong Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 29062,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 36425,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Reusable Earth Day Tote Bag"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "18:00",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 37150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "13:20",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 32880,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "15:05",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 40068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Clark the Cub's Scoreboard Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "18:10",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 35761,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-05",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 36834,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 37303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "13:20",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 31889,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-12",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 32271,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 38083,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 34167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "13:20",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "13:20",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:20",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40152,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-26",
+      "start": "13:20",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 40171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 33099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hefty's 60th Birthday Cubs Bucket Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 33748,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 36019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs Vintage Quarter Zip"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 39144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Dansby Swanson Flow Headband"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 40179,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shota Imanaga Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 40174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 39457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs Umbrella Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 39554,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 40162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Father's Day Obvious Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 38687,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 38971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 41078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-20",
+      "start": "13:20",
+      "opponent": "Mariners",
+      "venueId": "wrigley-field",
+      "attendance": 40787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cubs Blues Alternate Giveaway Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-21",
+      "start": "13:20",
+      "opponent": "Mariners",
+      "venueId": "wrigley-field",
+      "attendance": 39047,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-06-22",
+      "start": "13:20",
+      "opponent": "Mariners",
+      "venueId": "wrigley-field",
+      "attendance": 36185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Michael Busch Lightning Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "19:05",
+      "opponent": "Guardians",
+      "venueId": "wrigley-field",
+      "attendance": 38257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "19:05",
+      "opponent": "Guardians",
+      "venueId": "wrigley-field",
+      "attendance": 35250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-03",
+      "start": "19:05",
+      "opponent": "Guardians",
+      "venueId": "wrigley-field",
+      "attendance": 38450,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "100th Anniversary of Cubs Radio Broadcasts Bluetooth Speaker"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 40038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 40119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "17:10",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 40319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cubs Hawaiian Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "13:20",
+      "opponent": "Red Sox",
+      "venueId": "wrigley-field",
+      "attendance": 41011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs Vintage Tank Top"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "18:15",
+      "opponent": "Red Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40703,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "13:20",
+      "opponent": "Red Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-21",
+      "start": "19:05",
+      "opponent": "Royals",
+      "venueId": "wrigley-field",
+      "attendance": 38117,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "19:05",
+      "opponent": "Royals",
+      "venueId": "wrigley-field",
+      "attendance": 40092,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "13:20",
+      "opponent": "Royals",
+      "venueId": "wrigley-field",
+      "attendance": 38624,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-01",
+      "start": "13:20",
+      "opponent": "Orioles",
+      "venueId": "wrigley-field",
+      "attendance": 40520,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Flip-Up Sunglasses"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-02",
+      "start": "13:20",
+      "opponent": "Orioles",
+      "venueId": "wrigley-field",
+      "attendance": 40781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-03",
+      "start": "13:20",
+      "opponent": "Orioles",
+      "venueId": "wrigley-field",
+      "attendance": 39430,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Greg Maddux 1988 Rain Delay Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-04",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 37937,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 39797,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 37648,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 40044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs Corduroy Cap"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 40062,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cubs Cowboy Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 38012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Dansby and Mallory Swanson Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-18",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 38971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-18",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 33103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 33103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 34540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 36327,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-08-21",
+      "start": "13:20",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 37850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-01",
+      "start": "15:05",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 39673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cubs Picnic Blanket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-02",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 32618,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 31933,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-05",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 32320,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 38011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Harry Caray Fan Vote Graphic Tee"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 33343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "13:20",
+      "opponent": "Rays",
+      "venueId": "wrigley-field",
+      "attendance": 38794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs Vintage Tee"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "13:20",
+      "opponent": "Rays",
+      "venueId": "wrigley-field",
+      "attendance": 39712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Seiya Suzuki Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "13:20",
+      "opponent": "Rays",
+      "venueId": "wrigley-field",
+      "attendance": 37186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bill Murray Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-23",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 35729,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-24",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 35060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-25",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 38465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-26",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 35611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 38035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend Pennant"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "14:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 37497,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend Pennant"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-09-30",
+      "start": "14:08",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 39114,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-10-01",
+      "start": "14:08",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 41083,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-10-02",
+      "start": "16:08",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 40895,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-10-08",
+      "start": "16:08",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 40737,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2025,
+      "date": "2025-10-09",
+      "start": "20:08",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 41770,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-03-26",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 39712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2026 Cubs Magnet Schedule"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 34834,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cubs Puffer Vest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-03-29",
+      "start": "13:20",
+      "opponent": "Nationals",
+      "venueId": "wrigley-field",
+      "attendance": 33559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-03-30",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "wrigley-field",
+      "attendance": 36702,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Opening Night 1988 Replica Cap"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-03-31",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "wrigley-field",
+      "attendance": 26288,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "13:20",
+      "opponent": "Angels",
+      "venueId": "wrigley-field",
+      "attendance": 25125,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 28811,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 34049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ben Zobrist Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 35711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "13:20",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 34282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "13:20",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 36189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ron Santo Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "13:20",
+      "opponent": "Mets",
+      "venueId": "wrigley-field",
+      "attendance": 35497,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-20",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 27798,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 30651,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 29591,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "13:20",
+      "opponent": "Phillies",
+      "venueId": "wrigley-field",
+      "attendance": 31057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 31083,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 36907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kerry Wood Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "13:20",
+      "opponent": "D-backs",
+      "venueId": "wrigley-field",
+      "attendance": 35597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cade Horton Graphic Tee"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-04",
+      "start": "18:10",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 32997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 34777,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 34143,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-07",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 30441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-18",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 37647,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 38190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 39459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "13:20",
+      "opponent": "Astros",
+      "venueId": "wrigley-field",
+      "attendance": 37332,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "13:20",
+      "opponent": "Astros",
+      "venueId": "wrigley-field",
+      "attendance": 40017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "13:20",
+      "opponent": "Astros",
+      "venueId": "wrigley-field",
+      "attendance": 40048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ryne Sandberg Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "19:05",
+      "opponent": "Athletics",
+      "venueId": "wrigley-field",
+      "attendance": 36065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "ALS Awareness T-shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "19:05",
+      "opponent": "Athletics",
+      "venueId": "wrigley-field",
+      "attendance": 31922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "19:05",
+      "opponent": "Athletics",
+      "venueId": "wrigley-field",
+      "attendance": 37419,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "13:20",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 39060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs 1910s Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "13:20",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 39248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "19:30",
+      "opponent": "Giants",
+      "venueId": "wrigley-field",
+      "attendance": 36317,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wrigley Field Replica Ballpark"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-15",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 38337,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 35183,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "wrigley-field",
+      "attendance": 34938,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "13:20",
+      "opponent": "Blue Jays",
+      "venueId": "wrigley-field",
+      "attendance": 40275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs 1930s Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "13:20",
+      "opponent": "Blue Jays",
+      "venueId": "wrigley-field",
+      "attendance": 40706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "13:20",
+      "opponent": "Blue Jays",
+      "venueId": "wrigley-field",
+      "attendance": 39476,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Father's Day T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-29",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 37607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 36279,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Topps Series 2 Baseball Packs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "13:20",
+      "opponent": "Padres",
+      "venueId": "wrigley-field",
+      "attendance": 37311,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "15:05",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 39440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "19:08",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 38872,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fourth of July T-shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "13:30",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 38322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Clark the Cub Building Block Set"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "19:05",
+      "opponent": "Twins",
+      "venueId": "wrigley-field",
+      "attendance": 39855,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs 1940s-50s Replica Jersey"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Cubs x Macy's Black Friday in July Tote"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "13:20",
+      "opponent": "Twins",
+      "venueId": "wrigley-field",
+      "attendance": 39508,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "National Hot Dog Day Cap"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "13:20",
+      "opponent": "Twins",
+      "venueId": "wrigley-field",
+      "attendance": 37205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-20",
+      "start": "19:05",
+      "opponent": "Tigers",
+      "venueId": "wrigley-field",
+      "attendance": 39023,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "19:05",
+      "opponent": "Tigers",
+      "venueId": "wrigley-field",
+      "attendance": 39039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "wrigley-field",
+      "attendance": 40512,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Surprise Pins - 2016 World Series Anniversary"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "13:20",
+      "opponent": "Yankees",
+      "venueId": "wrigley-field",
+      "attendance": 40129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs 1960s Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "18:15",
+      "opponent": "Yankees",
+      "venueId": "wrigley-field",
+      "attendance": 39630,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "13:20",
+      "opponent": "Yankees",
+      "venueId": "wrigley-field",
+      "attendance": 40057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wrigley Field Marquee Night Light"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-03",
+      "start": "19:05",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 39384,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "19:05",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 40584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "13:20",
+      "opponent": "Dodgers",
+      "venueId": "wrigley-field",
+      "attendance": 38691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "13:20",
+      "opponent": "Blue Jays",
+      "venueId": "wrigley-field",
+      "attendance": 39476,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Father's Day T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 40374,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs 1980s Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "13:20",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 39834,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "14:15",
+      "opponent": "Cardinals",
+      "venueId": "wrigley-field",
+      "attendance": 39395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-17",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40354,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40304,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": "13:20",
+      "opponent": "White Sox",
+      "venueId": "wrigley-field",
+      "attendance": 40086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 39036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#BudFridays Cubs 1990s Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "13:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 39597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "18:20",
+      "opponent": "Reds",
+      "venueId": "wrigley-field",
+      "attendance": 36308,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Harry Caray Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-08-31",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 34763,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 33185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 36112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": "18:15",
+      "opponent": "Brewers",
+      "venueId": "wrigley-field",
+      "attendance": 39018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 39190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 39422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:20",
+      "opponent": "Pirates",
+      "venueId": "wrigley-field",
+      "attendance": 39103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sammy Sosa Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-14",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 34515,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Seiya Suzuki Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-15",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 38516,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-16",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "wrigley-field",
+      "attendance": 35779,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-22",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 33759,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-23",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 36635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "cubs",
+      "season": 2026,
+      "date": "2026-09-24",
+      "start": "13:20",
+      "opponent": "Marlins",
+      "venueId": "wrigley-field",
+      "attendance": 35410,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

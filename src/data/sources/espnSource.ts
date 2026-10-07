@@ -183,6 +183,8 @@ const VENUE_BY_NAME: Record<string, string> = {
   'jones convocation center': 'jones-convocation-center',
   'wrigley field': 'wrigley-field',
   'rate field': 'rate-field',
+  'seatgeek stadium': 'seatgeek-stadium',
+  'toyota park': 'seatgeek-stadium',
 };
 
 interface EspnSide {

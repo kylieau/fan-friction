@@ -4390,6 +4390,2658 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2024–2026"
   },
   {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "venueId": "soldier-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 59307,
+    "low": 58102,
+    "high": 61200,
+    "games": 21,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "venueId": "soldier-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 59403,
+    "low": 59073,
+    "high": 60930,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "venueId": "soldier-field",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 59829,
+    "low": 49445,
+    "high": 59829,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "venueId": "soldier-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 60152,
+    "low": 60065,
+    "high": 60952,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "venueId": "soldier-field",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 60152,
+    "low": 60065,
+    "high": 60952,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "venueId": "soldier-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 58993,
+    "low": 57991,
+    "high": 60285,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "venueId": "soldier-field",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 62167,
+    "low": 59307,
+    "high": 62199,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "venueId": "soldier-field",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 58912,
+    "low": 58884,
+    "high": 59419,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "venueId": "soldier-field",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 56539,
+    "low": 55295,
+    "high": 59362,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18892,
+    "low": 18028,
+    "high": 19737,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 19344,
+    "low": 19200,
+    "high": 19606,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 10069,
+    "low": 9819,
+    "high": 10323,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18068,
+    "low": 17114,
+    "high": 19227,
+    "games": 52,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 17224,
+    "low": 16527,
+    "high": 17725,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18096,
+    "low": 17167,
+    "high": 18834,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18169,
+    "low": 17527,
+    "high": 18671,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 17548,
+    "low": 16954,
+    "high": 18629,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 16161,
+    "low": 15177,
+    "high": 17681,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18431,
+    "low": 17567,
+    "high": 19064,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 19391,
+    "low": 18631,
+    "high": 19717,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19489,
+    "low": 18954,
+    "high": 20056,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 19298,
+    "low": 18875,
+    "high": 19843,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 19347,
+    "low": 19119,
+    "high": 19671,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 19528,
+    "low": 19414,
+    "high": 20539,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19093,
+    "low": 18787,
+    "high": 20265,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19340,
+    "low": 18845,
+    "high": 19641,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 20634,
+    "low": 19964,
+    "high": 20698,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18892,
+    "low": 18737,
+    "high": 19822,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19199,
+    "low": 18426,
+    "high": 19912,
+    "games": 29,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 18819,
+    "low": 18701,
+    "high": 19313,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 19153,
+    "low": 18666,
+    "high": 20125,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 19636,
+    "low": 19189,
+    "high": 20062,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 19342,
+    "low": 18548,
+    "high": 19848,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 19283,
+    "low": 18510,
+    "high": 19955,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 20639,
+    "low": 19520,
+    "high": 21299,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 21369,
+    "low": 21146,
+    "high": 21375,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 18704,
+    "low": 17218,
+    "high": 19975,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 20377,
+    "low": 19066,
+    "high": 21234,
+    "games": 64,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 19274,
+    "low": 18617,
+    "high": 21033,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 20313,
+    "low": 19031,
+    "high": 20673,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 21081,
+    "low": 20191,
+    "high": 21584,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 21114,
+    "low": 20509,
+    "high": 21312,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 19015,
+    "low": 18555,
+    "high": 19016,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 19621,
+    "low": 19134,
+    "high": 20380,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 20775,
+    "low": 19882,
+    "high": 21327,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 20945,
+    "low": 20043,
+    "high": 21337,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 21245,
+    "low": 21153,
+    "high": 21345,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 21547,
+    "low": 21492,
+    "high": 21579,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 20235,
+    "low": 19979,
+    "high": 20645,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 20008,
+    "low": 19544,
+    "high": 20591,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 21157,
+    "low": 20422,
+    "high": 21528,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 21378,
+    "low": 20444,
+    "high": 21930,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 21297,
+    "low": 21116,
+    "high": 21579,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 21198,
+    "low": 21122,
+    "high": 21448,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 19449,
+    "low": 18756,
+    "high": 20376,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 20527,
+    "low": 20157,
+    "high": 21223,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19358,
+    "low": 18546,
+    "high": 20439,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 18449,
+    "low": 18411,
+    "high": 18643,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "seatgeek-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 16947,
+    "low": 16426,
+    "high": 17485,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "seatgeek-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 16947,
+    "low": 16426,
+    "high": 17485,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "seatgeek-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 16426,
+    "low": 16262,
+    "high": 16687,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "soldier-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 20636,
+    "low": 17785,
+    "high": 24916,
+    "games": 27,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "soldier-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 15019,
+    "low": 12448,
+    "high": 17787,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "soldier-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 22465,
+    "low": 17966,
+    "high": 25048,
+    "games": 22,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "soldier-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 17984,
+    "low": 16861,
+    "high": 18388,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "soldier-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 20560,
+    "low": 18253,
+    "high": 22886,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "soldier-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 25237,
+    "low": 21537,
+    "high": 26090,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "soldier-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 27631,
+    "low": 26405,
+    "high": 28452,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "soldier-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 22188,
+    "low": 21412,
+    "high": 22505,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "venueId": "seatgeek-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 3751,
+    "low": 3104,
+    "high": 4544,
+    "games": 21,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "venueId": "seatgeek-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3886,
+    "low": 3425,
+    "high": 5045,
+    "games": 9,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "venueId": "seatgeek-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 3168,
+    "low": 2707,
+    "high": 3856,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "venueId": "seatgeek-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 3872,
+    "low": 3649,
+    "high": 3879,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "venueId": "seatgeek-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3751,
+    "low": 3624,
+    "high": 4317,
+    "games": 9,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "venueId": "seatgeek-stadium",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 4317,
+    "low": 4034,
+    "high": 5804,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 164,
+    "low": 109,
+    "high": 272,
+    "games": 28,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 525,
+    "low": 379,
+    "high": 619,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 147,
+    "low": 89,
+    "high": 290,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 183,
+    "low": 85,
+    "high": 295,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 111,
+    "low": 106,
+    "high": 193,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 200,
+    "low": 130,
+    "high": 254,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 141,
+    "low": 119,
+    "high": 200,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 272,
+    "low": 235,
+    "high": 275,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 145,
+    "low": 127,
+    "high": 250,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "venueId": "jones-convocation-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 250,
+    "low": 198,
+    "high": 261,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 37541,
+    "low": 34580,
+    "high": 39444,
+    "games": 244,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 40072,
+    "low": 39892,
+    "high": 41219,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 36065,
+    "low": 32858,
+    "high": 38162,
+    "games": 115,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 36702,
+    "low": 31495,
+    "high": 39535,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 29734,
+    "low": 26902,
+    "high": 31375,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 35603,
+    "low": 33261,
+    "high": 37514,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 37419,
+    "low": 36057,
+    "high": 38542,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 38257,
+    "low": 37481,
+    "high": 38847,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 37749,
+    "low": 34707,
+    "high": 39407,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 34524,
+    "low": 32447,
+    "high": 35862,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 38915,
+    "low": 35079,
+    "high": 40087,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 34282,
+    "low": 31238,
+    "high": 37045,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 36019,
+    "low": 34465,
+    "high": 36807,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 39457,
+    "low": 39060,
+    "high": 40160,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 39992,
+    "low": 39544,
+    "high": 40551,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 39829,
+    "low": 39181,
+    "high": 40292,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 35611,
+    "low": 32202,
+    "high": 38992,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 39575,
+    "low": 38017,
+    "high": 40078,
+    "games": 50,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 36096,
+    "low": 35056,
+    "high": 37301,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 40017,
+    "low": 39501,
+    "high": 40153,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 39437,
+    "low": 39097,
+    "high": 40228,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 39817,
+    "low": 39349,
+    "high": 40125,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 39834,
+    "low": 39614,
+    "high": 40068,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 38819,
+    "low": 38035,
+    "high": 39673,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 38012,
+    "low": 35711,
+    "high": 39395,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 35711,
+    "low": 34719,
+    "high": 35914,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 39299,
+    "low": 39008,
+    "high": 40048,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 39268,
+    "low": 37676,
+    "high": 39648,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 38742,
+    "low": 37484,
+    "high": 40030,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 38012,
+    "low": 36213,
+    "high": 39413,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 37186,
+    "low": 33568,
+    "high": 38300,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 3834,
+    "low": 3137,
+    "high": 5069,
+    "games": 52,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3051,
+    "low": 1991,
+    "high": 3273,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3263,
+    "low": 2844,
+    "high": 3783,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3708,
+    "low": 3026,
+    "high": 4890,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3789,
+    "low": 3763,
+    "high": 4595,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2790,
+    "low": 2734,
+    "high": 2826,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 4109,
+    "low": 3319,
+    "high": 5187,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 3335,
+    "low": 3268,
+    "high": 3849,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4480,
+    "low": 3861,
+    "high": 5368,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 5540,
+    "low": 5343,
+    "high": 5907,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 4773,
+    "low": 4122,
+    "high": 5424,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 5453,
+    "low": 4870,
+    "high": 5729,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 2745,
+    "low": 2698,
+    "high": 3169,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 4386,
+    "low": 4058,
+    "high": 4502,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5003,
+    "low": 4171,
+    "high": 6150,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 1420,
+    "low": 1164,
+    "high": 1794,
+    "games": 31,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1305,
+    "low": 980,
+    "high": 2634,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1313,
+    "low": 1159,
+    "high": 2632,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 966,
+    "low": 885,
+    "high": 1128,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1327,
+    "low": 1250,
+    "high": 1354,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1725,
+    "low": 1564,
+    "high": 2318,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 1580,
+    "low": 1521,
+    "high": 1628,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "venueId": "wintrust-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 1673,
+    "low": 1440,
+    "high": 1868,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-football",
+    "venueId": "martin-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 12023,
+    "low": 11783,
+    "high": 12023,
+    "games": 8,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-football",
+    "venueId": "martin-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 12023,
+    "low": 12023,
+    "high": 12023,
+    "games": 7,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-football",
+    "venueId": "martin-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 12023,
+    "low": 11327,
+    "high": 12023,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-football",
+    "venueId": "martin-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 12023,
+    "low": 12023,
+    "high": 12023,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-football",
+    "venueId": "wrigley-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 32263,
+    "low": 23614,
+    "high": 38166,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-football",
+    "venueId": "wrigley-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 32263,
+    "low": 23614,
+    "high": 38166,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-football",
+    "venueId": "wrigley-field",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 32263,
+    "low": 23614,
+    "high": 38166,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 5769,
+    "low": 5061,
+    "high": 7039,
+    "games": 47,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4607,
+    "low": 4389,
+    "high": 5064,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5567,
+    "low": 4979,
+    "high": 6325,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 5884,
+    "low": 5757,
+    "high": 7039,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 5681,
+    "low": 5440,
+    "high": 6400,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4564,
+    "low": 4426,
+    "high": 5034,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 4525,
+    "low": 4339,
+    "high": 4759,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 5911,
+    "low": 5576,
+    "high": 6447,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 5811,
+    "low": 5576,
+    "high": 5882,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 7039,
+    "low": 5989,
+    "high": 7039,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5752,
+    "low": 5506,
+    "high": 6629,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 5685,
+    "low": 5462,
+    "high": 5892,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 5448,
+    "low": 5228,
+    "high": 5600,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 6492,
+    "low": 5642,
+    "high": 7039,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 1507,
+    "low": 1139,
+    "high": 1892,
+    "games": 30,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1478,
+    "low": 1109,
+    "high": 1728,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1596,
+    "low": 1456,
+    "high": 1869,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1636,
+    "low": 1568,
+    "high": 1681,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1069,
+    "low": 1013,
+    "high": 1595,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1377,
+    "low": 1152,
+    "high": 1408,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1861,
+    "low": 1515,
+    "high": 2181,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 1854,
+    "low": 1693,
+    "high": 2374,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 1902,
+    "low": 1882,
+    "high": 2474,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "venueId": "welsh-ryan-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 1515,
+    "low": 1323,
+    "high": 1839,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "united-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 17781,
+    "low": 14918,
+    "high": 19522,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "wintrust-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 7647,
+    "low": 7107,
+    "high": 8721,
+    "games": 38,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 7524,
+    "low": 7122,
+    "high": 8854,
+    "games": 24,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 7468,
+    "low": 7225,
+    "high": 7579,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 8565,
+    "low": 7839,
+    "high": 9025,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 7099,
+    "low": 6868,
+    "high": 7175,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "wintrust-arena",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 8430,
+    "low": 7826,
+    "high": 8854,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "wintrust-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7714,
+    "low": 7116,
+    "high": 7916,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "wintrust-arena",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 7804,
+    "low": 7759,
+    "high": 7916,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "venueId": "wintrust-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8412,
+    "low": 7291,
+    "high": 9025,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 1485,
+    "low": 1166,
+    "high": 2117,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1155,
+    "low": 875,
+    "high": 1874,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1554,
+    "low": 1154,
+    "high": 2090,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1416,
+    "low": 931,
+    "high": 1766,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1883,
+    "low": 1774,
+    "high": 1970,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1154,
+    "low": 893,
+    "high": 1265,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1341,
+    "low": 1149,
+    "high": 1984,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1482,
+    "low": 1219,
+    "high": 1844,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1800,
+    "low": 1263,
+    "high": 2699,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1426,
+    "low": 1038,
+    "high": 1673,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "venueId": "credit-union-1-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 1621,
+    "low": 1288,
+    "high": 1897,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 18389,
+    "low": 12694,
+    "high": 25077,
+    "games": 243,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 33171,
+    "low": 32287,
+    "high": 33296,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 13001,
+    "low": 11138,
+    "high": 17052,
+    "games": 121,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 10712,
+    "low": 10372,
+    "high": 12389,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 11911,
+    "low": 11138,
+    "high": 13960,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 16166,
+    "low": 12598,
+    "high": 20736,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 14609,
+    "low": 12988,
+    "high": 22761,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 16534,
+    "low": 11208,
+    "high": 20219,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 12458,
+    "low": 11745,
+    "high": 17640,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 25084,
+    "low": 18912,
+    "high": 31365,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 13432,
+    "low": 11337,
+    "high": 17588,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 18912,
+    "low": 17744,
+    "high": 24763,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 29340,
+    "low": 25204,
+    "high": 35470,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 25084,
+    "low": 19859,
+    "high": 33098,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 26041,
+    "low": 22031,
+    "high": 32137,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 26513,
+    "low": 26204,
+    "high": 30505,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 24851,
+    "low": 20763,
+    "high": 30050,
+    "games": 44,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 28009,
+    "low": 22598,
+    "high": 30423,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 24851,
+    "low": 21226,
+    "high": 28614,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 21153,
+    "low": 19842,
+    "high": 26828,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 22264,
+    "low": 21224,
+    "high": 28207,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 25097,
+    "low": 18444,
+    "high": 32586,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 27749,
+    "low": 27345,
+    "high": 30631,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 20908,
+    "low": 17803,
+    "high": 27511,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 18840,
+    "low": 17589,
+    "high": 22326,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 19333,
+    "low": 16486,
+    "high": 22872,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 21596,
+    "low": 20433,
+    "high": 26010,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 25928,
+    "low": 18995,
+    "high": 31230,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 23736,
+    "low": 18980,
+    "high": 27788,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 22780,
+    "low": 18851,
+    "high": 28377,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
     "metroId": "la",
     "teamId": "angel-city",
     "venueId": "bmo-stadium",
@@ -14981,6 +17633,1399 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 3
   },
   {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "opponent": "lions",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "opponent": "packers",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "opponent": "panthers",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bears",
+    "opponent": "vikings",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "avalanche",
+    "ratio": 1.019,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "blue-jackets",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "blues",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "bruins",
+    "ratio": 1.027,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "canadiens",
+    "ratio": 1.009,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "canucks",
+    "ratio": 0.999,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "capitals",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "devils",
+    "ratio": 0.975,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "ducks",
+    "ratio": 0.962,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "flames",
+    "ratio": 0.981,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "flyers",
+    "ratio": 1.02,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "golden-knights",
+    "ratio": 0.992,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "hurricanes",
+    "ratio": 0.976,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "islanders",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "jets",
+    "ratio": 1.011,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "kings",
+    "ratio": 0.942,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "kraken",
+    "ratio": 0.991,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "lightning",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "mammoth",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "maple-leafs",
+    "ratio": 1.023,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "oilers",
+    "ratio": 1.01,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "panthers",
+    "ratio": 1.011,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "penguins",
+    "ratio": 1.024,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "predators",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "rangers",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "red-wings",
+    "ratio": 1.046,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "sabres",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "senators",
+    "ratio": 0.974,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "sharks",
+    "ratio": 1.068,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "stars",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "utah-hc",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "opponent": "wild",
+    "ratio": 1.029,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "76ers",
+    "ratio": 1.021,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "bucks",
+    "ratio": 1.025,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "cavaliers",
+    "ratio": 0.974,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "celtics",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "clippers",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "grizzlies",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "hawks",
+    "ratio": 0.977,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "heat",
+    "ratio": 1.012,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "hornets",
+    "ratio": 0.976,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "jazz",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "kings",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "knicks",
+    "ratio": 0.982,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "lakers",
+    "ratio": 1.037,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "magic",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "mavericks",
+    "ratio": 0.978,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "nets",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "nuggets",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "pacers",
+    "ratio": 1.006,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "pelicans",
+    "ratio": 0.987,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "pistons",
+    "ratio": 1.009,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "raptors",
+    "ratio": 0.978,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "rockets",
+    "ratio": 1.02,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "spurs",
+    "ratio": 1.026,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "suns",
+    "ratio": 1.016,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "thunder",
+    "ratio": 0.971,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "timberwolves",
+    "ratio": 1.011,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "trail-blazers",
+    "ratio": 0.971,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "warriors",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "opponent": "wizards",
+    "ratio": 1.026,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "atlanta",
+    "ratio": 1.029,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "cf-montr-al",
+    "ratio": 0.869,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "charlotte",
+    "ratio": 0.892,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "cincinnati",
+    "ratio": 1.019,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "columbus",
+    "ratio": 1.025,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "d-c-united",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "miami",
+    "ratio": 1.515,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "nashville",
+    "ratio": 1.026,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "new-england",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "nycfc",
+    "ratio": 0.969,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "orlando",
+    "ratio": 0.928,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "philadelphia",
+    "ratio": 1.074,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "red-bull-ny",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "opponent": "toronto",
+    "ratio": 1.022,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "angel-city",
+    "ratio": 1.032,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "gotham",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "houston",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "kansas-city",
+    "ratio": 1.056,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "louisville",
+    "ratio": 0.823,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "north-carolina",
+    "ratio": 0.895,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "portland",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "san-diego",
+    "ratio": 0.945,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "utah",
+    "ratio": 0.972,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-stars",
+    "opponent": "washington",
+    "ratio": 0.939,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "opponent": "c-connecticut",
+    "ratio": 1.066,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "opponent": "fdu",
+    "ratio": 1.337,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "opponent": "le-moyne",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "opponent": "long-island",
+    "ratio": 0.972,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "opponent": "mercyhurst",
+    "ratio": 0.903,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "opponent": "saint-francis",
+    "ratio": 0.601,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "opponent": "stonehill",
+    "ratio": 0.93,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-state-mbb",
+    "opponent": "wagner",
+    "ratio": 0.89,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "angels",
+    "ratio": 0.903,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "astros",
+    "ratio": 1.015,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "athletics",
+    "ratio": 0.954,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "blue-jays",
+    "ratio": 1.012,
+    "games": 7
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "braves",
+    "ratio": 1.015,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "brewers",
+    "ratio": 1.008,
+    "games": 22
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "cardinals",
+    "ratio": 0.999,
+    "games": 19
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "d-backs",
+    "ratio": 0.95,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "dodgers",
+    "ratio": 1.076,
+    "games": 10
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "giants",
+    "ratio": 0.981,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "marlins",
+    "ratio": 0.998,
+    "games": 11
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "mets",
+    "ratio": 1.009,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "nationals",
+    "ratio": 0.944,
+    "games": 10
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "padres",
+    "ratio": 0.996,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "phillies",
+    "ratio": 1.003,
+    "games": 10
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "pirates",
+    "ratio": 0.99,
+    "games": 20
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "reds",
+    "ratio": 0.969,
+    "games": 19
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "rockies",
+    "ratio": 0.978,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "tigers",
+    "ratio": 0.996,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "twins",
+    "ratio": 0.983,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "white-sox",
+    "ratio": 1.042,
+    "games": 8
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "opponent": "yankees",
+    "ratio": 1.018,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "butler",
+    "ratio": 1.025,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "chicago-st",
+    "ratio": 1.063,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "creighton",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "georgetown",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "marquette",
+    "ratio": 1.329,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "n-illinois",
+    "ratio": 1.074,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "northwestern",
+    "ratio": 1.171,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "providence",
+    "ratio": 1.056,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "seton-hall",
+    "ratio": 0.976,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "st-john-s",
+    "ratio": 1.083,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "uconn",
+    "ratio": 1.132,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "villanova",
+    "ratio": 1.127,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-mbb",
+    "opponent": "xavier",
+    "ratio": 0.971,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "opponent": "butler",
+    "ratio": 1.018,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "opponent": "creighton",
+    "ratio": 1.071,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "opponent": "marquette",
+    "ratio": 1.027,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "opponent": "providence",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "opponent": "seton-hall",
+    "ratio": 1.086,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "opponent": "st-john-s",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "opponent": "uconn",
+    "ratio": 1.942,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "opponent": "villanova",
+    "ratio": 1.096,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "opponent": "xavier",
+    "ratio": 1.11,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "illinois",
+    "ratio": 1.066,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "iowa",
+    "ratio": 1.043,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "jackson-st",
+    "ratio": 0.946,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "maryland",
+    "ratio": 0.96,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "michigan",
+    "ratio": 1.081,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "michigan-st",
+    "ratio": 1.033,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "minnesota",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "nebraska",
+    "ratio": 1.017,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "ohio-state",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "penn-state",
+    "ratio": 0.946,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "opponent": "purdue",
+    "ratio": 1.078,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "northwestern-wbb",
+    "opponent": "illinois",
+    "ratio": 1.146,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "aces",
+    "ratio": 0.953,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "dream",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "fever",
+    "ratio": 1.036,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "liberty",
+    "ratio": 1.015,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "lynx",
+    "ratio": 0.95,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "mercury",
+    "ratio": 0.97,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "mystics",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "sparks",
+    "ratio": 1.018,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "storm",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "sun",
+    "ratio": 0.927,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "tempo",
+    "ratio": 0.953,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "valkyries",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "sky",
+    "opponent": "wings",
+    "ratio": 1.078,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "belmont",
+    "ratio": 1.329,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "bradley",
+    "ratio": 1.028,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "drake",
+    "ratio": 0.937,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "evansville",
+    "ratio": 0.741,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "illinois-st",
+    "ratio": 1.076,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "indiana-st",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "murray-st",
+    "ratio": 0.855,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "northern-iowa",
+    "ratio": 0.871,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "s-illinois",
+    "ratio": 0.952,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "st-francis-il",
+    "ratio": 0.964,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "uic-mbb",
+    "opponent": "valparaiso",
+    "ratio": 1.049,
+    "games": 3
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "angels",
+    "ratio": 1.154,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "astros",
+    "ratio": 1.044,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "athletics",
+    "ratio": 1.048,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "blue-jays",
+    "ratio": 1.189,
+    "games": 10
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "braves",
+    "ratio": 1.044,
+    "games": 8
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "cubs",
+    "ratio": 1.489,
+    "games": 8
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "dodgers",
+    "ratio": 1.382,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "guardians",
+    "ratio": 1.08,
+    "games": 21
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "mariners",
+    "ratio": 0.988,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "mets",
+    "ratio": 1.049,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "nationals",
+    "ratio": 1.132,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "orioles",
+    "ratio": 1.039,
+    "games": 10
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "pirates",
+    "ratio": 1.136,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "rangers",
+    "ratio": 0.925,
+    "games": 8
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "rays",
+    "ratio": 1.001,
+    "games": 9
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "red-sox",
+    "ratio": 1.199,
+    "games": 10
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "reds",
+    "ratio": 1.222,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "rockies",
+    "ratio": 1.12,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "royals",
+    "ratio": 1.023,
+    "games": 18
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "tigers",
+    "ratio": 1.061,
+    "games": 21
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "twins",
+    "ratio": 1.046,
+    "games": 19
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "opponent": "yankees",
+    "ratio": 1.443,
+    "games": 11
+  },
+  {
     "metroId": "la",
     "teamId": "angel-city",
     "opponent": "bay",
@@ -19624,9 +23669,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "mercedes-benz-stadium",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -19634,11 +23679,23 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "metroId": "atlanta",
     "teamId": "braves",
     "venueId": "truist-park",
+    "band": "first",
+    "occupancy": 0.969,
+    "low": 0.901,
+    "high": 1.19,
+    "games": 23,
+    "seasons": "2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
     "band": "second",
-    "occupancy": 1.035,
-    "low": 0.922,
-    "high": 1.132,
-    "games": 39,
+    "occupancy": 1.033,
+    "low": 0.925,
+    "high": 1.126,
+    "games": 42,
     "seasons": "2022, 2023, 2026 + league",
     "basis": "blend"
   },
@@ -19660,9 +23717,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "paypal-park",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -19672,9 +23729,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "stanford-stadium",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -19684,9 +23741,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "levis-stadium",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -19694,11 +23751,23 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "metroId": "bay-area",
     "teamId": "giants",
     "venueId": "oracle-park",
+    "band": "first",
+    "occupancy": 1.008,
+    "low": 0.903,
+    "high": 1.192,
+    "games": 20,
+    "seasons": "league, 2022, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
     "band": "second",
-    "occupancy": 1.027,
-    "low": 0.92,
+    "occupancy": 1.021,
+    "low": 0.921,
     "high": 1.132,
-    "games": 34,
+    "games": 37,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -19727,14 +23796,134 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "basis": "blend"
   },
   {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "united-center",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.015,
+    "games": 32,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "blackhawks",
+    "venueId": "wrigley-field",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.015,
+    "games": 32,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "bulls",
+    "venueId": "united-center",
+    "band": "first",
+    "occupancy": 1.005,
+    "low": 1,
+    "high": 1.041,
+    "games": 44,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "soldier-field",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-fire",
+    "venueId": "seatgeek-stadium",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "band": "first",
+    "occupancy": 0.998,
+    "low": 0.903,
+    "high": 1.19,
+    "games": 23,
+    "seasons": "2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "cubs",
+    "venueId": "wrigley-field",
+    "band": "second",
+    "occupancy": 1.021,
+    "low": 0.921,
+    "high": 1.132,
+    "games": 37,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "band": "first",
+    "occupancy": 1.008,
+    "low": 0.903,
+    "high": 1.192,
+    "games": 20,
+    "seasons": "league, 2022, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "white-sox",
+    "venueId": "rate-field",
+    "band": "second",
+    "occupancy": 1.021,
+    "low": 0.921,
+    "high": 1.132,
+    "games": 37,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "venueId": "angel-stadium",
+    "band": "first",
+    "occupancy": 1.008,
+    "low": 0.903,
+    "high": 1.192,
+    "games": 20,
+    "seasons": "league, 2022, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
     "metroId": "la",
     "teamId": "angels",
     "venueId": "angel-stadium",
     "band": "second",
-    "occupancy": 1.027,
-    "low": 0.92,
+    "occupancy": 1.021,
+    "low": 0.921,
     "high": 1.132,
-    "games": 34,
+    "games": 37,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -19766,6 +23955,18 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "metroId": "la",
     "teamId": "dodgers",
     "venueId": "dodger-stadium",
+    "band": "first",
+    "occupancy": 1.008,
+    "low": 0.903,
+    "high": 1.192,
+    "games": 20,
+    "seasons": "league, 2022, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "venueId": "dodger-stadium",
     "band": "second",
     "occupancy": 0.922,
     "low": 0.896,
@@ -19792,9 +23993,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "dignity-health-sports-park",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -19804,9 +24005,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "rose-bowl",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -19828,9 +24029,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "bmo-stadium",
     "band": "first",
     "occupancy": 0.923,
-    "low": 0.651,
-    "high": 1.012,
-    "games": 25,
+    "low": 0.655,
+    "high": 1.011,
+    "games": 27,
     "seasons": "2023, 2024, 2025 + league",
     "basis": "blend"
   },
@@ -19922,11 +24123,23 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "metroId": "new-york",
     "teamId": "mets",
     "venueId": "citi-field",
+    "band": "first",
+    "occupancy": 1.002,
+    "low": 0.903,
+    "high": 1.19,
+    "games": 23,
+    "seasons": "2022 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "venueId": "citi-field",
     "band": "second",
-    "occupancy": 1.027,
-    "low": 0.92,
+    "occupancy": 1.021,
+    "low": 0.921,
     "high": 1.132,
-    "games": 34,
+    "games": 37,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -19960,9 +24173,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "yankee-stadium",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -19972,9 +24185,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "citi-field",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -19984,9 +24197,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "sports-illustrated-stadium",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -19997,9 +24210,21 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 0.79,
     "low": 0.643,
-    "high": 1.009,
-    "games": 25,
+    "high": 1.008,
+    "games": 27,
     "seasons": "2022, 2023, 2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "venueId": "yankee-stadium",
+    "band": "first",
+    "occupancy": 1.029,
+    "low": 0.903,
+    "high": 1.188,
+    "games": 25,
+    "seasons": "2025, 2026 + league",
     "basis": "blend"
   },
   {
@@ -20018,11 +24243,23 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "metroId": "san-diego",
     "teamId": "padres",
     "venueId": "petco-park",
+    "band": "first",
+    "occupancy": 1.101,
+    "low": 0.903,
+    "high": 1.195,
+    "games": 24,
+    "seasons": "2024, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "venueId": "petco-park",
     "band": "second",
-    "occupancy": 1.133,
-    "low": 0.922,
+    "occupancy": 1.131,
+    "low": 0.925,
     "high": 1.197,
-    "games": 39,
+    "games": 42,
     "seasons": "2022, 2024, 2026 + league",
     "basis": "blend"
   },
@@ -20032,9 +24269,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "snapdragon-stadium",
     "band": "first",
     "occupancy": 0.837,
-    "low": 0.643,
-    "high": 1.01,
-    "games": 21,
+    "low": 0.647,
+    "high": 1.009,
+    "games": 23,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -20066,11 +24303,23 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "metroId": "seattle",
     "teamId": "mariners",
     "venueId": "t-mobile-park",
+    "band": "first",
+    "occupancy": 1.008,
+    "low": 0.903,
+    "high": 1.192,
+    "games": 20,
+    "seasons": "league, 2022, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "venueId": "t-mobile-park",
     "band": "second",
-    "occupancy": 1.007,
-    "low": 0.921,
+    "occupancy": 1.004,
+    "low": 0.922,
     "high": 1.132,
-    "games": 38,
+    "games": 41,
     "seasons": "2022, 2025 + league",
     "basis": "blend"
   },
@@ -20080,9 +24329,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "lumen-field",
     "band": "first",
     "occupancy": 0.822,
-    "low": 0.651,
-    "high": 1.009,
-    "games": 25,
+    "low": 0.655,
+    "high": 1.008,
+    "games": 27,
     "seasons": "2023, 2024, 2025 + league",
     "basis": "blend"
   }

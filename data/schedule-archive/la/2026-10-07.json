@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T22:19:34.242Z",
+  "capturedAt": "2026-10-07T23:35:45.895Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -26,38 +26,9 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
-    },
-    {
-      "id": "ticketmaster",
-      "name": "Ticketmaster listings",
-      "inWindow": 50
     }
   ],
   "events": [
-    {
-      "id": "2026-10-07-tm-vv170Z_6GkRNGSd7",
-      "metroId": "la",
-      "date": "2026-10-07",
-      "start": "18:30",
-      "kind": "show",
-      "title": "PRESIDENT",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "PRESIDENT",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_6GkRNGSd7",
-      "expectedDraw": {
-        "count": 1850,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
     {
       "id": "2026-10-07-espn-ducks-401892456",
       "metroId": "la",
@@ -85,78 +56,6 @@
         "low": 15240,
         "high": 16693,
         "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2026."
-      }
-    },
-    {
-      "id": "2026-10-07-tm-vvG1IZ_eheo7is",
-      "metroId": "la",
-      "date": "2026-10-07",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Bruno Mars",
-      "place": {
-        "type": "venue",
-        "venueId": "sofi-stadium"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Bruno Mars",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_eheo7is",
-      "expectedDraw": {
-        "count": 70240,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-07-tm-vv1AaZko9Gketiqv4",
-      "metroId": "la",
-      "date": "2026-10-07",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Mumford & Sons",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Mumford & Sons",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZko9Gketiqv4",
-      "expectedDraw": {
-        "count": 10891,
-        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-08-tm-vv1AaZk8tGkd6ll1M",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Cavetown",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Cavetown",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk8tGkd6ll1M",
-      "expectedDraw": {
-        "count": 1850,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -190,54 +89,6 @@
       }
     },
     {
-      "id": "2026-10-08-tm-vvG1iZ_k9N_4fq",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Empire of the Sun",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Empire of the Sun",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_k9N_4fq",
-      "expectedDraw": {
-        "count": 17500,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-08-tm-vv1k0Z_kJ9G7DM5E",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Chayanne",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Chayanne",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1k0Z_kJ9G7DM5E",
-      "expectedDraw": {
-        "count": 10773,
-        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
-      }
-    },
-    {
       "id": "2026-10-09-mlb-849821",
       "broadcast": "FOX",
       "metroId": "la",
@@ -262,174 +113,13 @@
         "away": "braves"
       },
       "crowd": [],
-      "sourceId": "mlb"
-    },
-    {
-      "id": "2026-10-09-tm-vv170ZbgGkzetQ9Z",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "kind": "show",
-      "title": "The Neighbourhood",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "The Neighbourhood",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170ZbgGkzetQ9Z",
+      "sourceId": "mlb",
       "expectedDraw": {
-        "count": 10891,
-        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-09-tm-vv1AaZk38Gkel76YA",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Tinlicker",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Dance/Electronic"
-      },
-      "performer": "Tinlicker",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk38Gkel76YA",
-      "expectedDraw": {
-        "count": 1850,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-09-tm-vvG10Z_1DqhtZC",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "kind": "show",
-      "title": "for KING & COUNTRY",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "for KING & COUNTRY",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_1DqhtZC",
-      "expectedDraw": {
-        "count": 5900,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-09-tm-vvG1iZ_7Kfj7Wq",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Mac DeMarco",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Mac DeMarco",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_7Kfj7Wq",
-      "expectedDraw": {
-        "count": 17500,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-09-tm-vv1Fe8v0xoqvZ7u1ue",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Sombr",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Sombr",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1Fe8v0xoqvZ7u1ue",
-      "expectedDraw": {
-        "count": 10773,
-        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-09-tm-vvG1IZ_GkDOGJ-",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Jorge Medina",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Jorge Medina",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_GkDOGJ-",
-      "expectedDraw": {
-        "count": 6000,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-vv16aZk3aZMZAuak1v",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Sombr",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Sombr",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv16aZk3aZMZAuak1v",
-      "expectedDraw": {
-        "count": 10891,
-        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+        "count": 51632,
+        "low": 47376,
+        "high": 56000,
+        "planning": true,
+        "note": "Playoff crowds as a share of the building, this team's past 9 games (2023, 2024, 2025, 2026). An estimate."
       }
     },
     {
@@ -454,153 +144,10 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 22122,
-        "low": 22102,
-        "high": 22161,
-        "note": "Typical announced crowd here for a Saturday: 19 games, 2024–2025."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-vv1AaZkowGkdFeQU8",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "kind": "show",
-      "title": "TLC",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "TLC",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZkowGkdFeQU8",
-      "expectedDraw": {
-        "count": 10308,
-        "note": "This room's average per reported show: Billboard, 402K over 39 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-vvG1iZbU81spCL",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Jack Johnson",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Jack Johnson",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZbU81spCL",
-      "occasionFacts": {
-        "run": 2
-      },
-      "expectedDraw": {
-        "count": 17500,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-vv1AaZkfoGkdZT1iU",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "special",
-      "title": "Premium: AIR SUPPLY",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Premium: AIR SUPPLY",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZkfoGkdZT1iU"
-    },
-    {
-      "id": "2026-10-10-tm-vvG10Z_2TKvuzl",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Air Supply",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Air Supply",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_2TKvuzl",
-      "expectedDraw": {
-        "count": 5900,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-vvG1IZ_G0rStYB",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Menudo",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Menudo",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_G0rStYB",
-      "expectedDraw": {
-        "count": 6000,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-Z7r9jZ1A7-goJ",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Jungle",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "R&B"
-      },
-      "performer": "Jungle",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-goJ",
-      "expectedDraw": {
-        "count": 10779,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+        "count": 22098,
+        "low": 22079,
+        "high": 22122,
+        "note": "Typical announced crowd here for a Saturday: 18 games, 2024–2025."
       }
     },
     {
@@ -633,81 +180,6 @@
       }
     },
     {
-      "id": "2026-10-11-tm-vvG10Z_u5nPRGK",
-      "metroId": "la",
-      "date": "2026-10-11",
-      "start": "18:30",
-      "kind": "show",
-      "title": "Sons of Legion",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Sons of Legion",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_u5nPRGK",
-      "expectedDraw": {
-        "count": 1850,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-11-tm-vvG1iZbU81wkC0",
-      "metroId": "la",
-      "date": "2026-10-11",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Jack Johnson",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Jack Johnson",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZbU81wkC0",
-      "occasionFacts": {
-        "run": 2
-      },
-      "expectedDraw": {
-        "count": 17500,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-11-tm-vv1ke8v0PdGA2NIXk",
-      "metroId": "la",
-      "date": "2026-10-11",
-      "start": "19:20",
-      "kind": "show",
-      "title": "Palace",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Palace",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1ke8v0PdGA2NIXk",
-      "expectedDraw": {
-        "count": 5900,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
       "id": "2026-10-12-espn-rams-401872994",
       "metroId": "la",
       "date": "2026-10-12",
@@ -734,30 +206,6 @@
         "low": 72387,
         "high": 73334,
         "note": "Typical announced crowd here for a weeknight: 4 games, 2023–2025."
-      }
-    },
-    {
-      "id": "2026-10-12-tm-vvG10Z_2Rimjss",
-      "metroId": "la",
-      "date": "2026-10-12",
-      "start": "19:00",
-      "kind": "show",
-      "title": "BAND-MAID",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "BAND-MAID",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_2Rimjss",
-      "expectedDraw": {
-        "count": 1850,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -819,30 +267,6 @@
       }
     },
     {
-      "id": "2026-10-14-tm-vvG10Z_uKts2xv",
-      "metroId": "la",
-      "date": "2026-10-14",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Patrick Droney",
-      "place": {
-        "type": "venue",
-        "venueId": "belasco"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Patrick Droney",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_uKts2xv",
-      "expectedDraw": {
-        "count": 1500,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
       "id": "2026-10-14-espn-clippers-401918011",
       "metroId": "la",
       "date": "2026-10-14",
@@ -894,9 +318,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 18148,
-        "low": 16281,
-        "high": 19784,
+        "count": 18363,
+        "low": 16473,
+        "high": 20018,
         "note": "Typical announced crowd here for a weeknight: 4 games, 2024–2025."
       }
     },
@@ -922,122 +346,10 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 22086,
+        "count": 22142,
         "low": 22064,
-        "high": 22125,
-        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2025."
-      }
-    },
-    {
-      "id": "2026-10-15-tm-vv170Z_7GkMfFAZu",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Phil Wickham",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Phil Wickham",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_7GkMfFAZu",
-      "expectedDraw": {
-        "count": 10773,
-        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-15-tm-vv170Z_aGkRSVNGb",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "kind": "show",
-      "title": "LP",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "LP",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_aGkRSVNGb",
-      "expectedDraw": {
-        "count": 1850,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-15-tm-vvG10Z_GwWe2IR",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "kind": "special",
-      "title": "Ilana Glazer Live!",
-      "place": {
-        "type": "venue",
-        "venueId": "belasco"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Comedy"
-      },
-      "performer": "Ilana Glazer",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_GwWe2IR"
-    },
-    {
-      "id": "2026-10-15-tm-vvG1iZ_1rd3dbK",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:30",
-      "kind": "special",
-      "title": "Cynthia Erivo: Let Me Sing To You",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Theatre"
-      },
-      "performer": "Cynthia Erivo",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_1rd3dbK"
-    },
-    {
-      "id": "2026-10-15-tm-vvG1IZ_82Z9hL3",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Pedro Fernández",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Pedro Fernández",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_82Z9hL3",
-      "expectedDraw": {
-        "count": 6000,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+        "high": 22180,
+        "note": "Typical announced crowd here for a weeknight: 7 games, 2024–2025."
       }
     },
     {
@@ -1100,57 +412,6 @@
       }
     },
     {
-      "id": "2026-10-16-tm-vvG1iZ_owcOPJ1",
-      "metroId": "la",
-      "date": "2026-10-16",
-      "start": "19:30",
-      "kind": "show",
-      "title": "MILEY",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "MILEY",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_owcOPJ1",
-      "occasionFacts": {
-        "run": 2
-      },
-      "expectedDraw": {
-        "count": 17500,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
-      "metroId": "la",
-      "date": "2026-10-16",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Juanes",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Juanes",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_7Gkz5H4zw",
-      "expectedDraw": {
-        "count": 10891,
-        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
       "id": "2026-10-17-espn-kings-401892530",
       "metroId": "la",
       "date": "2026-10-17",
@@ -1180,30 +441,6 @@
       }
     },
     {
-      "id": "2026-10-17-tm-vvG10Z_1rn_GMv",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Thee Sinseers",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "R&B"
-      },
-      "performer": "Thee Sinseers",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_1rn_GMv",
-      "expectedDraw": {
-        "count": 1850,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
       "id": "2026-10-17-espn-galaxy-761887",
       "metroId": "la",
       "date": "2026-10-17",
@@ -1225,129 +462,10 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 21425,
-        "low": 18175,
-        "high": 25046,
-        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2025."
-      }
-    },
-    {
-      "id": "2026-10-17-tm-vvG1iZ_F53Epiv",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "19:30",
-      "kind": "special",
-      "title": "SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Theatre"
-      },
-      "performer": "SmartLess Podcast",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_F53Epiv"
-    },
-    {
-      "id": "2026-10-17-tm-vv170Z_FGkM0q1JB",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Vulfpeck",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Other"
-      },
-      "performer": "Vulfpeck",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_FGkM0q1JB",
-      "expectedDraw": {
-        "count": 5900,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-17-tm-vv1AaZk3dGkdvrEc1",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Young Miko",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Young Miko",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk3dGkdvrEc1",
-      "expectedDraw": {
-        "count": 10308,
-        "note": "This room's average per reported show: Billboard, 402K over 39 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-17-tm-vv1AaZkobGkeOgjs3",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Los Tigres del Norte",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Los Tigres del Norte",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZkobGkeOgjs3",
-      "expectedDraw": {
-        "count": 10773,
-        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-17-tm-vvG10Z_G9R7nPH",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Charli xcx",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Charli xcx",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_G9R7nPH",
-      "occasionFacts": {
-        "run": 2
-      },
-      "expectedDraw": {
-        "count": 10891,
-        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+        "count": 18312,
+        "low": 18039,
+        "high": 22443,
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
       }
     },
     {
@@ -1408,234 +526,6 @@
       }
     },
     {
-      "id": "2026-10-18-tm-vvG1iZ_owcx4Jh",
-      "metroId": "la",
-      "date": "2026-10-18",
-      "start": "19:30",
-      "kind": "show",
-      "title": "MILEY",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "MILEY",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_owcx4Jh",
-      "occasionFacts": {
-        "run": 2
-      },
-      "expectedDraw": {
-        "count": 17500,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-18-tm-Z7r9jZ1A70kAU",
-      "metroId": "la",
-      "date": "2026-10-18",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Kacey Musgraves",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Country"
-      },
-      "performer": "Kacey Musgraves",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A70kAU",
-      "occasionFacts": {
-        "run": 2
-      },
-      "expectedDraw": {
-        "count": 10779,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-18-tm-vvG10Z_G9gehI7",
-      "metroId": "la",
-      "date": "2026-10-18",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Charli xcx",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Charli xcx",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_G9gehI7",
-      "occasionFacts": {
-        "run": 2
-      },
-      "expectedDraw": {
-        "count": 10891,
-        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-19-tm-vv1ke8v0r6GAuZNui",
-      "metroId": "la",
-      "date": "2026-10-19",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Dermot Kennedy",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Dermot Kennedy",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1ke8v0r6GAuZNui",
-      "expectedDraw": {
-        "count": 5900,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-19-tm-Z7r9jZ1A70kAg",
-      "metroId": "la",
-      "date": "2026-10-19",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Kacey Musgraves",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Country"
-      },
-      "performer": "Kacey Musgraves",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A70kAg",
-      "occasionFacts": {
-        "run": 2
-      },
-      "expectedDraw": {
-        "count": 10779,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-20-tm-vvG10Z_1hSZGrO",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Cameron Whitcomb",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Country"
-      },
-      "performer": "Cameron Whitcomb",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_1hSZGrO",
-      "expectedDraw": {
-        "count": 1850,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-20-tm-vvG10Z_u1J_FHJ",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "kind": "show",
-      "title": "almost monday",
-      "place": {
-        "type": "venue",
-        "venueId": "belasco"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "almost monday",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_u1J_FHJ",
-      "expectedDraw": {
-        "count": 1500,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-20-tm-vv170Z_FGkU1BKx2",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Jessie Ware",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Jessie Ware",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_FGkU1BKx2",
-      "expectedDraw": {
-        "count": 5900,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-20-tm-vv1AaZk3vGkdfJcBD",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "20:00",
-      "kind": "show",
-      "title": "MONSTA X",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "MONSTA X",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk3vGkdfJcBD",
-      "expectedDraw": {
-        "count": 10891,
-        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
       "id": "2026-10-21-espn-lakers-401909092",
       "metroId": "la",
       "date": "2026-10-21",
@@ -1666,54 +556,6 @@
       }
     },
     {
-      "id": "2026-10-21-tm-vvG10Z_GpWro4Z",
-      "metroId": "la",
-      "date": "2026-10-21",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Pouya",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "Pouya",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_GpWro4Z",
-      "expectedDraw": {
-        "count": 1850,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-21-tm-vvG1IZ_aQlI5Ky",
-      "metroId": "la",
-      "date": "2026-10-21",
-      "start": "19:00",
-      "kind": "show",
-      "title": "G-Eazy",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "G-Eazy",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_aQlI5Ky",
-      "expectedDraw": {
-        "count": 6000,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
       "id": "2026-10-21-espn-clippers-401909842",
       "metroId": "la",
       "date": "2026-10-21",
@@ -1741,80 +583,17 @@
         "high": 17927,
         "note": "Typical announced crowd here for a weeknight: 46 games, 2025–2026."
       }
-    },
-    {
-      "id": "2026-10-21-tm-vvG10Z_uCyohlW",
-      "metroId": "la",
-      "date": "2026-10-21",
-      "start": "20:00",
-      "kind": "show",
-      "title": "beabadoobee",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "beabadoobee",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_uCyohlW",
-      "expectedDraw": {
-        "count": 10891,
-        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-21-tm-vvG1iZbS55MdJK",
-      "metroId": "la",
-      "date": "2026-10-21",
-      "start": "20:00",
-      "kind": "show",
-      "title": "My Chemical Romance",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "My Chemical Romance",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZbS55MdJK",
-      "occasionFacts": {
-        "run": 3
-      },
-      "expectedDraw": {
-        "count": 17500,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
     }
   ],
   "forecasts": [
-    {
-      "eventId": "2026-10-07-tm-vv170Z_6GkRNGSd7",
-      "date": "2026-10-07",
-      "start": "18:30",
-      "read": {
-        "rating": 4.3,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1850
-      }
-    },
     {
       "eventId": "2026-10-07-espn-ducks-401892456",
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 4.3,
-        "friction": "Moderate",
-        "why": "Bruno Mars 28 mi away, same hours.",
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
@@ -1824,53 +603,13 @@
       }
     },
     {
-      "eventId": "2026-10-07-tm-vvG1IZ_eheo7is",
-      "date": "2026-10-07",
-      "start": "19:00",
-      "read": {
-        "rating": 4.3,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 70240
-      }
-    },
-    {
-      "eventId": "2026-10-07-tm-vv1AaZko9Gketiqv4",
-      "date": "2026-10-07",
-      "start": "19:30",
-      "read": {
-        "rating": 4.3,
-        "friction": "Moderate",
-        "why": "Bruno Mars next door, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10891
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-vv1AaZk8tGkd6ll1M",
-      "date": "2026-10-08",
-      "start": "19:00",
-      "read": {
-        "rating": 2.8,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1850
-      }
-    },
-    {
       "eventId": "2026-10-08-espn-lakers-401898717",
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 2.8,
+        "rating": 1,
         "friction": "Low",
-        "why": "Empire of the Sun 6.3 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
@@ -1880,138 +619,19 @@
       }
     },
     {
-      "eventId": "2026-10-08-tm-vvG1iZ_k9N_4fq",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "read": {
-        "rating": 2.8,
-        "friction": "Low",
-        "why": "Lakers vs. Sacramento Kings and Chayanne 6.3 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 17500
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-vv1k0Z_kJ9G7DM5E",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "read": {
-        "rating": 2.8,
-        "friction": "Moderate",
-        "why": "Empire of the Sun and Lakers vs. Sacramento Kings 34 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10773
-      }
-    },
-    {
       "eventId": "2026-10-09-mlb-849821",
       "date": "2026-10-09",
       "start": "17:00",
       "read": {
-        "rating": 6.1,
+        "rating": 3.7,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vv170ZbgGkzetQ9Z",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "read": {
-        "rating": 6.1,
-        "friction": "Heavy",
-        "why": "Mac DeMarco and Sombr 11 mi away, same hours.",
-        "method": "formula"
       },
       "draw": {
-        "count": 10891
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vv1AaZk38Gkel76YA",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "read": {
-        "rating": 6.1,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1850
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG10Z_1DqhtZC",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "read": {
-        "rating": 6.1,
-        "friction": "Heavy",
-        "why": "Dodgers vs. Braves and Mac DeMarco 4.5 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5900
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG1iZ_7Kfj7Wq",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "read": {
-        "rating": 6.1,
-        "friction": "Heavy",
-        "why": "The Neighbourhood and Sombr 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 17500
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vv1Fe8v0xoqvZ7u1ue",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "read": {
-        "rating": 6.1,
-        "friction": "Heavy",
-        "why": "Mac DeMarco and The Neighbourhood 34 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10773
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG1IZ_GkDOGJ-",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "read": {
-        "rating": 6.1,
-        "friction": "Heavy",
-        "why": "Dodgers vs. Braves and Mac DeMarco 10 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 6000
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vv16aZk3aZMZAuak1v",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "read": {
-        "rating": 6,
-        "friction": "Heavy",
-        "why": "Jack Johnson 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10891
+        "count": 51632,
+        "low": 47376,
+        "high": 56000
       }
     },
     {
@@ -2019,94 +639,15 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 6,
-        "friction": "Moderate",
-        "why": "Jack Johnson 7.6 mi away, same hours.",
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
-        "count": 22122,
-        "low": 22102,
-        "high": 22161
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vv1AaZkowGkdFeQU8",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "read": {
-        "rating": 6,
-        "friction": "Heavy",
-        "why": "LAFC vs. Vancouver and Jack Johnson 5.8 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10308
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1iZbU81spCL",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "read": {
-        "rating": 6,
-        "friction": "Heavy",
-        "why": "Sombr 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 17500
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vv1AaZkfoGkdZT1iU",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 6,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG10Z_2TKvuzl",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 6,
-        "friction": "Heavy",
-        "why": "LAFC vs. Vancouver and Jack Johnson 7.4 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5900
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1IZ_G0rStYB",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 6,
-        "friction": "Heavy",
-        "why": "LAFC vs. Vancouver and Jack Johnson 5.2 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 6000
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-Z7r9jZ1A7-goJ",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 6,
-        "friction": "Heavy",
-        "why": "LAFC vs. Vancouver and Jack Johnson 2.3 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10779
+        "count": 22098,
+        "low": 22079,
+        "high": 22122
       }
     },
     {
@@ -2114,55 +655,15 @@
       "date": "2026-10-11",
       "start": "13:05",
       "read": {
-        "rating": 2.7,
-        "friction": "Moderate",
-        "why": "Rain in the forecast at a 1:05 pm start.",
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
         "count": 70380,
         "low": 70380,
         "high": 71163
-      }
-    },
-    {
-      "eventId": "2026-10-11-tm-vvG10Z_u5nPRGK",
-      "date": "2026-10-11",
-      "start": "18:30",
-      "read": {
-        "rating": 2.7,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1850
-      }
-    },
-    {
-      "eventId": "2026-10-11-tm-vvG1iZbU81wkC0",
-      "date": "2026-10-11",
-      "start": "19:00",
-      "read": {
-        "rating": 2.7,
-        "friction": "Low",
-        "why": "Palace and Chargers vs. Broncos 2.5 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 17500
-      }
-    },
-    {
-      "eventId": "2026-10-11-tm-vv1ke8v0PdGA2NIXk",
-      "date": "2026-10-11",
-      "start": "19:20",
-      "read": {
-        "rating": 2.7,
-        "friction": "Heavy",
-        "why": "Jack Johnson 2.5 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5900
       }
     },
     {
@@ -2179,18 +680,6 @@
         "count": 72851,
         "low": 72387,
         "high": 73334
-      }
-    },
-    {
-      "eventId": "2026-10-12-tm-vvG10Z_2Rimjss",
-      "date": "2026-10-12",
-      "start": "19:00",
-      "read": {
-        "rating": 2.8,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1850
       }
     },
     {
@@ -2226,18 +715,6 @@
       }
     },
     {
-      "eventId": "2026-10-14-tm-vvG10Z_uKts2xv",
-      "date": "2026-10-14",
-      "start": "19:00",
-      "read": {
-        "rating": 3.7,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1500
-      }
-    },
-    {
       "eventId": "2026-10-14-espn-clippers-401918011",
       "date": "2026-10-14",
       "start": "19:30",
@@ -2264,9 +741,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 18148,
-        "low": 16281,
-        "high": 19784
+        "count": 18363,
+        "low": 16473,
+        "high": 20018
       }
     },
     {
@@ -2280,69 +757,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 22086,
+        "count": 22142,
         "low": 22064,
-        "high": 22125
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vv170Z_7GkMfFAZu",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "read": {
-        "rating": 2.3,
-        "friction": "Low",
-        "why": "Cynthia Erivo: Let Me Sing To You 34 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10773
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vv170Z_aGkRSVNGb",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "read": {
-        "rating": 2.3,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1850
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG10Z_GwWe2IR",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "read": {
-        "rating": 2.3,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG1iZ_1rd3dbK",
-      "date": "2026-10-15",
-      "start": "19:30",
-      "read": {
-        "rating": 2.3,
-        "friction": "Low",
-        "why": "Phil Wickham 34 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG1IZ_82Z9hL3",
-      "date": "2026-10-15",
-      "start": "20:00",
-      "read": {
-        "rating": 2.3,
-        "friction": "Moderate",
-        "why": "Cynthia Erivo: Let Me Sing To You and Phil Wickham 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 6000
+        "high": 22180
       }
     },
     {
@@ -2350,7 +767,7 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 4.4,
+        "rating": 2.7,
         "friction": "Moderate",
         "why": "Lakers vs. Nuggets 28 mi away, same hours.",
         "method": "formula"
@@ -2366,7 +783,7 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 4.4,
+        "rating": 2.7,
         "friction": "Moderate",
         "why": "Ducks vs. Bruins 28 mi away, same hours.",
         "method": "formula"
@@ -2378,41 +795,13 @@
       }
     },
     {
-      "eventId": "2026-10-16-tm-vvG1iZ_owcOPJ1",
-      "date": "2026-10-16",
-      "start": "19:30",
-      "read": {
-        "rating": 4.4,
-        "friction": "Moderate",
-        "why": "Lakers vs. Nuggets and Ducks vs. Bruins 6.3 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 17500
-      }
-    },
-    {
-      "eventId": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
-      "date": "2026-10-16",
-      "start": "20:00",
-      "read": {
-        "rating": 4.4,
-        "friction": "Moderate",
-        "why": "MILEY and Lakers vs. Nuggets 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10891
-      }
-    },
-    {
       "eventId": "2026-10-17-espn-kings-401892530",
       "date": "2026-10-17",
       "start": "18:00",
       "read": {
-        "rating": 6.9,
-        "friction": "Heavy",
-        "why": "Galaxy vs. San Diego FC and SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett 12 mi away, same hours.",
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Galaxy vs. San Diego FC 12 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -2422,98 +811,19 @@
       }
     },
     {
-      "eventId": "2026-10-17-tm-vvG10Z_1rn_GMv",
-      "date": "2026-10-17",
-      "start": "19:00",
-      "read": {
-        "rating": 6.9,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1850
-      }
-    },
-    {
       "eventId": "2026-10-17-espn-galaxy-761887",
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 6.9,
-        "friction": "Heavy",
-        "why": "Kings vs. Bruins and SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett 12 mi away, same hours.",
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Kings vs. Bruins 12 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 21425,
-        "low": 18175,
-        "high": 25046
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vvG1iZ_F53Epiv",
-      "date": "2026-10-17",
-      "start": "19:30",
-      "read": {
-        "rating": 6.9,
-        "friction": "Heavy",
-        "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 18 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vv170Z_FGkM0q1JB",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "read": {
-        "rating": 6.9,
-        "friction": "Extreme",
-        "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 18 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5900
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vv1AaZk3dGkdvrEc1",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "read": {
-        "rating": 6.9,
-        "friction": "Heavy",
-        "why": "Los Tigres del Norte 28 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10308
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vv1AaZkobGkeOgjs3",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "read": {
-        "rating": 6.9,
-        "friction": "Heavy",
-        "why": "Young Miko 28 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10773
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vvG10Z_G9R7nPH",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "read": {
-        "rating": 6.9,
-        "friction": "Heavy",
-        "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 8.0 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10891
+        "count": 18312,
+        "low": 18039,
+        "high": 22443
       }
     },
     {
@@ -2521,9 +831,9 @@
       "date": "2026-10-17",
       "start": null,
       "read": {
-        "rating": 6.9,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "90° feels-like, no roof.",
         "method": "formula"
       },
       "draw": {
@@ -2537,9 +847,9 @@
       "date": "2026-10-18",
       "start": "13:05",
       "read": {
-        "rating": 3.8,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "90° feels-like at a 1:05 pm start, no roof.",
         "method": "formula"
       },
       "draw": {
@@ -2549,133 +859,11 @@
       }
     },
     {
-      "eventId": "2026-10-18-tm-vvG1iZ_owcx4Jh",
-      "date": "2026-10-18",
-      "start": "19:30",
-      "read": {
-        "rating": 3.8,
-        "friction": "Moderate",
-        "why": "Charli xcx 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 17500
-      }
-    },
-    {
-      "eventId": "2026-10-18-tm-Z7r9jZ1A70kAU",
-      "date": "2026-10-18",
-      "start": "19:30",
-      "read": {
-        "rating": 3.8,
-        "friction": "Moderate",
-        "why": "MILEY and Charli xcx 6.3 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10779
-      }
-    },
-    {
-      "eventId": "2026-10-18-tm-vvG10Z_G9gehI7",
-      "date": "2026-10-18",
-      "start": "20:00",
-      "read": {
-        "rating": 3.8,
-        "friction": "Moderate",
-        "why": "MILEY 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10891
-      }
-    },
-    {
-      "eventId": "2026-10-19-tm-vv1ke8v0r6GAuZNui",
-      "date": "2026-10-19",
-      "start": "19:30",
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "Kacey Musgraves 5.5 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5900
-      }
-    },
-    {
-      "eventId": "2026-10-19-tm-Z7r9jZ1A70kAg",
-      "date": "2026-10-19",
-      "start": "19:30",
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "Dermot Kennedy 5.5 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10779
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vvG10Z_1hSZGrO",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "read": {
-        "rating": 1.4,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1850
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vvG10Z_u1J_FHJ",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "read": {
-        "rating": 1.4,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1500
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vv170Z_FGkU1BKx2",
-      "date": "2026-10-20",
-      "start": "20:00",
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "MONSTA X 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5900
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vv1AaZk3vGkdfJcBD",
-      "date": "2026-10-20",
-      "start": "20:00",
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "Jessie Ware 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10891
-      }
-    },
-    {
       "eventId": "2026-10-21-espn-lakers-401909092",
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 5.3,
+        "rating": 2.8,
         "friction": "Moderate",
         "why": "Clippers vs. Sacramento Kings 8.0 mi away, same hours.",
         "method": "formula"
@@ -2687,38 +875,12 @@
       }
     },
     {
-      "eventId": "2026-10-21-tm-vvG10Z_GpWro4Z",
-      "date": "2026-10-21",
-      "start": "19:00",
-      "read": {
-        "rating": 5.3,
-        "method": "nearby"
-      },
-      "draw": {
-        "count": 1850
-      }
-    },
-    {
-      "eventId": "2026-10-21-tm-vvG1IZ_aQlI5Ky",
-      "date": "2026-10-21",
-      "start": "19:00",
-      "read": {
-        "rating": 5.3,
-        "friction": "Heavy",
-        "why": "My Chemical Romance and Lakers vs. Warriors 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 6000
-      }
-    },
-    {
       "eventId": "2026-10-21-espn-clippers-401909842",
       "date": "2026-10-21",
       "start": "19:30",
       "read": {
-        "rating": 5.3,
-        "friction": "Heavy",
+        "rating": 2.8,
+        "friction": "Moderate",
         "why": "Lakers vs. Warriors 8.0 mi away, same hours.",
         "method": "formula"
       },
@@ -2726,34 +888,6 @@
         "count": 17788,
         "low": 16037,
         "high": 17927
-      }
-    },
-    {
-      "eventId": "2026-10-21-tm-vvG10Z_uCyohlW",
-      "date": "2026-10-21",
-      "start": "20:00",
-      "read": {
-        "rating": 5.3,
-        "friction": "Heavy",
-        "why": "My Chemical Romance 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10891
-      }
-    },
-    {
-      "eventId": "2026-10-21-tm-vvG1iZbS55MdJK",
-      "date": "2026-10-21",
-      "start": "20:00",
-      "read": {
-        "rating": 5.3,
-        "friction": "Moderate",
-        "why": "beabadoobee 11 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 17500
       }
     }
   ]

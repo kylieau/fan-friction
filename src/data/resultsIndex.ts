@@ -149,6 +149,115 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "18:53"
   },
   {
+    "eventId": "2026-10-04-espn-bears-401872972",
+    "metroId": "chicago",
+    "date": "2026-10-04",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "soldier-field",
+    "homeTeamId": "bears",
+    "home": {
+      "name": "Bears",
+      "score": 23
+    },
+    "away": {
+      "name": "Jets",
+      "score": 12
+    },
+    "attendance": 59702,
+    "capturedAt": "2026-10-07T23:35:50.600Z",
+    "duration": {
+      "minutes": 173,
+      "kind": "estimated"
+    },
+    "startedAt": "10:02"
+  },
+  {
+    "eventId": "2026-10-04-espn-chicago-stars-401854090",
+    "metroId": "chicago",
+    "date": "2026-10-04",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "martin-stadium",
+    "homeTeamId": "chicago-stars",
+    "home": {
+      "name": "Stars",
+      "score": 0
+    },
+    "away": {
+      "name": "Denver",
+      "score": 3
+    },
+    "attendance": 4614,
+    "capturedAt": "2026-10-07T23:35:50.600Z"
+  },
+  {
+    "eventId": "2026-10-06-espn-blackhawks-401891779",
+    "metroId": "chicago",
+    "date": "2026-10-06",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "united-center",
+    "homeTeamId": "blackhawks",
+    "home": {
+      "name": "Blackhawks",
+      "score": 4
+    },
+    "away": {
+      "name": "Blues",
+      "score": 2
+    },
+    "attendance": 20270,
+    "capturedAt": "2026-10-07T23:35:50.600Z",
+    "duration": {
+      "minutes": 159,
+      "kind": "estimated"
+    },
+    "startedAt": "17:16"
+  },
+  {
+    "eventId": "2026-10-06-espn-chicago-fire-761660",
+    "metroId": "chicago",
+    "date": "2026-10-06",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "soldier-field",
+    "homeTeamId": "chicago-fire",
+    "home": {
+      "name": "Fire",
+      "score": 3
+    },
+    "away": {
+      "name": "Vancouver",
+      "score": 1
+    },
+    "capturedAt": "2026-10-07T23:35:50.600Z"
+  },
+  {
+    "eventId": "2026-10-07-mlb-849833",
+    "metroId": "chicago",
+    "date": "2026-10-07",
+    "sourceId": "mlb",
+    "status": "final",
+    "venueId": "rate-field",
+    "homeTeamId": "white-sox",
+    "home": {
+      "name": "White Sox",
+      "score": 3
+    },
+    "away": {
+      "name": "Guardians",
+      "score": 9
+    },
+    "capturedAt": "2026-10-07T23:35:50.782Z",
+    "attendance": 40590,
+    "duration": {
+      "minutes": 196,
+      "kind": "official"
+    },
+    "startedAt": "15:07"
+  },
+  {
     "eventId": "2026-10-03-espn-usc-football-401858478",
     "metroId": "la",
     "date": "2026-10-03",

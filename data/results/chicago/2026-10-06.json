@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-06",
+  "results": [
+    {
+      "eventId": "2026-10-06-espn-blackhawks-401891779",
+      "metroId": "chicago",
+      "date": "2026-10-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 4
+      },
+      "away": {
+        "name": "Blues",
+        "score": 2
+      },
+      "attendance": 20270,
+      "capturedAt": "2026-10-07T23:35:50.600Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "17:16"
+    },
+    {
+      "eventId": "2026-10-06-espn-chicago-fire-761660",
+      "metroId": "chicago",
+      "date": "2026-10-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "soldier-field",
+      "homeTeamId": "chicago-fire",
+      "home": {
+        "name": "Fire",
+        "score": 3
+      },
+      "away": {
+        "name": "Vancouver",
+        "score": 1
+      },
+      "capturedAt": "2026-10-07T23:35:50.600Z"
+    }
+  ]
+}

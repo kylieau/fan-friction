@@ -196,6 +196,8 @@ const VENUE_BY_NAME = {
   'jones convocation center': 'jones-convocation-center',
   'wrigley field': 'wrigley-field',
   'rate field': 'rate-field',
+  'seatgeek stadium': 'seatgeek-stadium',
+  'toyota park': 'seatgeek-stadium',
 };
 
 function localParts(iso, metroId) {

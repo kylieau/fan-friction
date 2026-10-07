@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-14",
+  "rows": [
+    {
+      "metroId": "chicago",
+      "venueId": "soldier-field",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:35:35.364Z",
+      "feelsLikeF": 55.3,
+      "tempF": 61.8,
+      "humidity": 38,
+      "windMph": 8,
+      "uvIndex": 0,
+      "precipProbability": 6,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "soldier-field",
+      "date": "2026-10-14",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:35:35.364Z",
+      "feelsLikeF": 55.1,
+      "tempF": 61.9,
+      "humidity": 39,
+      "windMph": 8.9,
+      "uvIndex": 0,
+      "precipProbability": 11,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 95,
+      "code": 3
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "soldier-field",
+      "date": "2026-10-14",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:35:35.364Z",
+      "feelsLikeF": 54.8,
+      "tempF": 62.1,
+      "humidity": 39,
+      "windMph": 10,
+      "uvIndex": 0,
+      "precipProbability": 11,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 89,
+      "code": 3
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:35:35.364Z",
+      "feelsLikeF": 55.3,
+      "tempF": 62,
+      "humidity": 34,
+      "windMph": 7.4,
+      "uvIndex": 0,
+      "precipProbability": 6,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ],
+  "days": [
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:35:35.364Z",
+      "feelsLikeHighF": 56,
+      "feelsLikeLowF": 44.6,
+      "code": 3,
+      "precipProbability": 12,
+      "precipMm": 0
+    }
+  ]
+}

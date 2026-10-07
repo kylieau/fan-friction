@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-04",
+  "results": [
+    {
+      "eventId": "2026-10-04-espn-bears-401872972",
+      "metroId": "chicago",
+      "date": "2026-10-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "soldier-field",
+      "homeTeamId": "bears",
+      "home": {
+        "name": "Bears",
+        "score": 23
+      },
+      "away": {
+        "name": "Jets",
+        "score": 12
+      },
+      "attendance": 59702,
+      "capturedAt": "2026-10-07T23:35:50.600Z",
+      "duration": {
+        "minutes": 173,
+        "kind": "estimated"
+      },
+      "startedAt": "10:02"
+    },
+    {
+      "eventId": "2026-10-04-espn-chicago-stars-401854090",
+      "metroId": "chicago",
+      "date": "2026-10-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "martin-stadium",
+      "homeTeamId": "chicago-stars",
+      "home": {
+        "name": "Stars",
+        "score": 0
+      },
+      "away": {
+        "name": "Denver",
+        "score": 3
+      },
+      "attendance": 4614,
+      "capturedAt": "2026-10-07T23:35:50.600Z"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "teamId": "northwestern-football",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "northwestern-football",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "14:30",
+      "opponent": "Miami OH",
+      "venueId": "martin-stadium",
+      "attendance": 12023,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "20:00",
+      "opponent": "Duke",
+      "venueId": "martin-stadium",
+      "attendance": 11062,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "18:30",
+      "opponent": "E Illinois",
+      "venueId": "martin-stadium",
+      "attendance": 10631,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "14:30",
+      "opponent": "Indiana",
+      "venueId": "martin-stadium",
+      "attendance": 12023,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2024,
+      "date": "2024-10-19",
+      "start": "11:00",
+      "opponent": "Wisconsin",
+      "venueId": "martin-stadium",
+      "attendance": 12023,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "11:00",
+      "opponent": "Ohio State",
+      "venueId": "wrigley-field",
+      "attendance": 38147,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2024,
+      "date": "2024-11-30",
+      "start": "11:00",
+      "opponent": "Illinois",
+      "venueId": "wrigley-field",
+      "attendance": 26378,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2025,
+      "date": "2025-09-05",
+      "start": "18:30",
+      "opponent": "W Illinois",
+      "venueId": "martin-stadium",
+      "attendance": 9647,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "11:00",
+      "opponent": "Oregon",
+      "venueId": "martin-stadium",
+      "attendance": 12023,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "14:30",
+      "opponent": "UCLA",
+      "venueId": "martin-stadium",
+      "attendance": 12023,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2025,
+      "date": "2025-10-04",
+      "start": "14:30",
+      "opponent": "UL Monroe",
+      "venueId": "martin-stadium",
+      "attendance": 12023,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "14:00",
+      "opponent": "Purdue",
+      "venueId": "martin-stadium",
+      "attendance": 12023,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "11:00",
+      "opponent": "Michigan",
+      "venueId": "wrigley-field",
+      "attendance": 38223,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "11:00",
+      "opponent": "Minnesota",
+      "venueId": "wrigley-field",
+      "attendance": 15323,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

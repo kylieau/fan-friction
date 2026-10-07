@@ -1,0 +1,7822 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "teamId": "white-sox",
+  "collectedOn": "2026-10-07",
+  "games": [
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "15:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 36948,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "18:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 12291,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-14",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 13391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 19009,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 27113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-17",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 17798,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "18:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 12031,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 12363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 11242,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "18:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 23709,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "15:05",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 33762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 27664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-02",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 13112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-09",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 17168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 16025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 18518,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-12",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 20050,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 28877,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 32830,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 29500,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 21835,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-25",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 21075,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 24896,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "18:15",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 37820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 38080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-07",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "rate-field",
+      "attendance": 25625,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-08",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "rate-field",
+      "attendance": 25078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-09",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "rate-field",
+      "attendance": 25482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 24270,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 30221,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 31096,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-20",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 22482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-21",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 20529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-22",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 19406,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-23",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 22431,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-24",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 27943,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-25",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 29282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-06-26",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 29191,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 32483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-05",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 18566,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-06",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 18393,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-07",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 21876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-08",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 29215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-09",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 29215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-10",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 31072,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 31379,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "12:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 18518,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "18:15",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 26329,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 30831,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 28503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "18:15",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 28142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 30028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-01",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 17500,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-02",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 24361,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-03",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 19753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "18:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 33015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "18:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 29458,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 32154,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-15",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 18205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-16",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 23476,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-17",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 24671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-18",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 24407,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 33054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "18:10",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 25837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 29781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 17130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 17168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 15257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 24818,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "18:15",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 31655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 32305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "rate-field",
+      "attendance": 23606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-14",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "rate-field",
+      "attendance": 16654,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-20",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 23242,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-21",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 22606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-22",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 23395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-23",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 33257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "18:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 36177,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-09-25",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 33549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-10-03",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 22891,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-10-04",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 24884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2022,
+      "date": "2022-10-05",
+      "start": "15:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 18918,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-03",
+      "start": "14:10",
+      "opponent": "Giants",
+      "venueId": "rate-field",
+      "attendance": 34784,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-05",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "rate-field",
+      "attendance": 15980,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-06",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "rate-field",
+      "attendance": 18261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "18:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 18941,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 32091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 13794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-17",
+      "start": "18:10",
+      "opponent": "Phillies",
+      "venueId": "rate-field",
+      "attendance": 12542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-18",
+      "start": null,
+      "opponent": "Phillies",
+      "venueId": "rate-field",
+      "attendance": 12542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-19",
+      "start": "13:10",
+      "opponent": "Phillies",
+      "venueId": "rate-field",
+      "attendance": 10149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 11060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 16681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 28462,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 17049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 13094,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 11468,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 14650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 18673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "18:15",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 23242,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 18347,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 18459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 12241,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-18",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 11900,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 20329,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 23984,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 23556,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-29",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 23599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 22135,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 17015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 20229,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 24674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 23372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "rate-field",
+      "attendance": 21033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "rate-field",
+      "attendance": 25793,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "rate-field",
+      "attendance": 20888,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-19",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 19554,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 21048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 18963,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 27015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "15:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 33054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 26077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 32607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 20258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": null,
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 20258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "rate-field",
+      "attendance": 27569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "rate-field",
+      "attendance": 26560,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "rate-field",
+      "attendance": 29769,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 37079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 37214,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-27",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 20893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "18:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 26654,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "18:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 26299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 28096,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-07",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 27574,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 26446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 23377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:10",
+      "opponent": "Brewers",
+      "venueId": "rate-field",
+      "attendance": 30059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "18:15",
+      "opponent": "Brewers",
+      "venueId": "rate-field",
+      "attendance": 29851,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "13:10",
+      "opponent": "Brewers",
+      "venueId": "rate-field",
+      "attendance": 24495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-21",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 15275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 16070,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 15759,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-24",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 13247,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "18:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 21906,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "18:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 21508,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 20236,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 15105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "18:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 21186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 22246,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-11",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 14824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 88
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-12",
+      "start": null,
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 14824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 88
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-13",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 15593,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-14",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 13233,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 90
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-15",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 18001,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 91
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 24964,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-17",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 17641,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-25",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 23522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 98
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-26",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 14339,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 98
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-27",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 14790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 97
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-28",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 23522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 98
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-29",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "rate-field",
+      "attendance": 20491,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 98
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "18:10",
+      "opponent": "Padres",
+      "venueId": "rate-field",
+      "attendance": 30118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 99
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": "14:10",
+      "opponent": "Padres",
+      "venueId": "rate-field",
+      "attendance": 20588,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 100
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-03-28",
+      "start": "15:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 33420,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-03-30",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 28176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-03-31",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 17478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-01",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "rate-field",
+      "attendance": 13781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "rate-field",
+      "attendance": 12300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "rate-field",
+      "attendance": 12656,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "rate-field",
+      "attendance": 11337,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "rate-field",
+      "attendance": 22598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "rate-field",
+      "attendance": 17589,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-15",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 10569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 10412,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": null,
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 10412,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 10323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 28009,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 12669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-29",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 10772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 11609,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 12216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-09",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 10495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 17319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "18:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 26152,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 15529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-13",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "rate-field",
+      "attendance": 11138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": null,
+      "opponent": "Nationals",
+      "venueId": "rate-field",
+      "attendance": 11138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "rate-field",
+      "attendance": 11008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 15843,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 18831,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 22283,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 14992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-27",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 14993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-28",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 11852,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-05-29",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 11599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 15568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 19684,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "15:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 26248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 21055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 16763,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 14124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-20",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 14435,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-24",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "rate-field",
+      "attendance": 25070,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "rate-field",
+      "attendance": 23662,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "rate-field",
+      "attendance": 36225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "15:10",
+      "opponent": "Braves",
+      "venueId": "rate-field",
+      "attendance": 12656,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "18:10",
+      "opponent": "Rockies",
+      "venueId": "rate-field",
+      "attendance": 24422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "rate-field",
+      "attendance": 21490,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "rate-field",
+      "attendance": 19334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-08",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 10881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 13607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": null,
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 13607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "rate-field",
+      "attendance": 19548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "rate-field",
+      "attendance": 20437,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "rate-field",
+      "attendance": 16501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 20170,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "18:15",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 21037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 79
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 17100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-29",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 12179,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 15360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 14112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 38127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "18:15",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 38341,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 90
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-12",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 22815,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 91
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 21199,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 91
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 22675,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 24012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 97
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "18:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 23570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 98
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 16928,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 99
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-26",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 10975,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 100
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 11285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 102
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 10402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 103
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "rate-field",
+      "attendance": 15288,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 104
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "18:10",
+      "opponent": "Mets",
+      "venueId": "rate-field",
+      "attendance": 18627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 105
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "rate-field",
+      "attendance": 16887,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 106
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-09",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 11429,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 111
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 12246,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 112
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 11252,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 113
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 26513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 114
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "18:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 21478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 115
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 18017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 115
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-24",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 17606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 120
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-25",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 18423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 120
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2024,
+      "date": "2024-09-26",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 15678,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 120
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-03-27",
+      "start": "15:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 31403,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "125th Anniversary Plush Blanket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-03-29",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 20602,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1907 Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-03-30",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 19591,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2025 Magnet Schedule"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-03-31",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 10423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-01",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 12089,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-02",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 10193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-11",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 13432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "White Sox Magnet Schedule"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-12",
+      "start": "15:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 30423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1920 Jersey Hoodie"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sox Crawl Whiskey-Que"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-13",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 18840,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "A MINECRAFT MOVIE Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-15",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 10673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-16",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 10411,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-17",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 10560,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-29",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "rate-field",
+      "attendance": 14904,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Dog Day sponsored by Tito's Handmade Vodka"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-04-30",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "rate-field",
+      "attendance": 10253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-01",
+      "start": "13:10",
+      "opponent": "Brewers",
+      "venueId": "rate-field",
+      "attendance": 11917,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Weather Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 13866,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 20874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1972 Dick Allen MVP Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "UIC Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 19418,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Star Wars Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "rate-field",
+      "attendance": 18992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "DePaul Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "University of Chicago Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "18:10",
+      "opponent": "Marlins",
+      "venueId": "rate-field",
+      "attendance": 24264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1940s Varsity Sweater"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "rate-field",
+      "attendance": 16805,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Organist Nancy Faust Scheduled to Perform"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-19",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 10380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Asian American & Pacific Islander Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 11983,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Illini Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 10556,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 17885,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Reggaeton Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "15:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 19240,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1914 World Tour Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 20908,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Charles Comiskey Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Organist Nancy Faust Scheduled to Perform"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-02",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 11852,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 12308,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 12381,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 11630,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 36916,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Mexican Heritage Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Mexican Heritage Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": "15:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 19099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1993 Division Champs Rope Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sox Crawl Taste of the Sox"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Northwestern Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 22137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ray Durham Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Organist Nancy Faust Scheduled to Perform"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Southpaw's 21st Birthday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "rate-field",
+      "attendance": 16974,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Greek Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "rate-field",
+      "attendance": 20816,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": null,
+      "opponent": "Cardinals",
+      "venueId": "rate-field",
+      "attendance": 20816,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-23",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 12579,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Barbie Game Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 13001,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Polish Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "rate-field",
+      "attendance": 10217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "rate-field",
+      "attendance": 27549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Flo Rida Postgame Concert"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "ISU Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "15:10",
+      "opponent": "Giants",
+      "venueId": "rate-field",
+      "attendance": 20090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Taiwan Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "rate-field",
+      "attendance": 20225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Luis Aparicio Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Organist Nancy Faust Scheduled to Perform"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-07",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 13292,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 13027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Italian Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 11123,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 12869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "14:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 12869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 25084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mark Buehrle Statue Unveiling"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2005 Champs Hawaiian Shirt"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "15:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 21785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "2005 Reunion Pregame Ceremony"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Mark Buehrle Replica Statue"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "'05 Photograph Session"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 24680,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Buehrle, Garland, Garcia & Contreras First Pitch"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Buehrle, Garland, Garcia & Contreras Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Organist Nancy Faust Scheduled to Perform"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 38762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:10",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 38432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 38036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-28",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "rate-field",
+      "attendance": 15106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Christmas in July"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Christmas Vacation Themed Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-29",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "rate-field",
+      "attendance": 20730,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Seinfeld Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Navy Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-07-30",
+      "start": "13:10",
+      "opponent": "Phillies",
+      "venueId": "rate-field",
+      "attendance": 12718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 21007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Chicago Bulls Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "18:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 17893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1960 Bill Veeck Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bill Veeck Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Organist Nancy Faust Scheduled to Perform"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 19750,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ozzie Guillen Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Organist Nancy Faust Scheduled to Perform"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "NIU Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-11",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 16054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pokémon GO Night – T-Shirt Sold Out"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 19494,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Grateful Dead Tribute Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 13647,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 22372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 82
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Elvis Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 16998,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1980s Sweater Vest"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Northeastern Illinois University Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 18723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ken Griffey Jr. Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-25",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 10444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 10907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Chicago Sky Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 10598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 84
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Police & Fire Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Police & Fire Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 18187,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "African American Heritage Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cube Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "African American Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 28069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 86
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Puerto Rican Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Puerto Rican Heritage Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Puerto Rican Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 26624,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 87
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Babe Ruth & Al Simmons 1933 All-Star Game Figurine"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 27810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 88
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Childhood Cancer Awareness Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Gold Ribbon Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 12487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 89
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "CHSN Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Loyola Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 12099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 90
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Nurses Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-09-11",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 11850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 90
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-09-15",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 11020,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 93
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Dog Day sponsored by Tito's Handmade Vodka"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 12428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 94
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "A Night with the 108"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-09-17",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 10919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 95
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-09-19",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "rate-field",
+      "attendance": 30505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 96
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Hispanic Heritage Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Guayabera"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hispanic Heritage Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Cristo Rey Jesuit High School Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "18:10",
+      "opponent": "Padres",
+      "venueId": "rate-field",
+      "attendance": 27345,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 96
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Halfway to St. Patrick's Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "St. Paddy's Hockey Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sox Crawl Halfway to St. Pats Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2025,
+      "date": "2025-09-21",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "rate-field",
+      "attendance": 24205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 97
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1959 Comiskey Park Radio"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coca-Cola Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Oktoberfest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-02",
+      "start": "15:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 33171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Opening Day T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 33171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Opening Day T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 18389,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Colson Montgomery Hooded Jersey Tank"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Opening Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Southpaw 67 Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "rate-field",
+      "attendance": 22326,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jenks & A.J. Celebration Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-06",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 17221,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "14:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 10750,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "rate-field",
+      "attendance": 10133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 14648,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2026 Magnetic Schedule"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 10193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "rate-field",
+      "attendance": 10128,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "rate-field",
+      "attendance": 17588,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Miguel Vargas Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Windy City Series Night Sold Out"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "15:10",
+      "opponent": "Nationals",
+      "venueId": "rate-field",
+      "attendance": 35174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "'90s City Connect Jacket"
+        },
+        {
+          "type": "Theme Days",
+          "name": "UIC Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sox Crawl Beer & BBQ"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "rate-field",
+      "attendance": 24259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Star Wars Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-27",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 10193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Dog Day sponsored by Tito's Handmade Vodka"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 11857,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Halfway to Halloween"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "12:10",
+      "opponent": "Angels",
+      "venueId": "rate-field",
+      "attendance": 15901,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Weather Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 23011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Bravo Night, Featuring Summer House"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "18:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 25438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Women's Athleisure Jacket"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Gameday for the Girls"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "rate-field",
+      "attendance": 19247,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 13256,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Asian American & Pacific Islander Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 11905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 14913,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Emo Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Emo Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 38723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "18:10",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 38795,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "rate-field",
+      "attendance": 38608,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-25",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 30114,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Chase Meidroth Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 15432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Taiwan Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 14796,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Illini Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-28",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 14194,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-29",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 30019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Reggaeton Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 29435,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kyle Teel & Edgar Quero Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 28764,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Southpaw's Birthday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "rate-field",
+      "attendance": 20494,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "rate-field",
+      "attendance": 14622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pride at the Park"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Pride at the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-11",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "rate-field",
+      "attendance": 17052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "rate-field",
+      "attendance": 37882,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Homies Big Head Figure"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Homies Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "15:10",
+      "opponent": "Dodgers",
+      "venueId": "rate-field",
+      "attendance": 37832,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Colson Montgomery Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sox Crawl Fiesta on 35th Street"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "rate-field",
+      "attendance": 38507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hello Kitty Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-22",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 23151,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Toy Story 5 Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 28883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Polish Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 17664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 31130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Marshmello Postgame Concert"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Illinois State University Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "15:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 28569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "America's 250th Homage T-Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "1983 Reunion"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "rate-field",
+      "attendance": 27301,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Nickelodeon Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "World Baseball Classic Bobblehead Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 25392,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Italian Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 23973,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pokémon Go Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-09",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "rate-field",
+      "attendance": 19148,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 37539,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mexican Heritage Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Mexican Heritage Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mexican Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 22742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alumni Postgame Home Run Derby"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "rate-field",
+      "attendance": 27175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "World Baseball Classic Bobblehead Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 28657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Chicago Bulls Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "18:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 30029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Warmup"
+        },
+        {
+          "type": "Theme Days",
+          "name": "SOFAR Sounds Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "rate-field",
+      "attendance": 32581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Munetaka Murakami ''First MLB Home Run'' Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Baseball Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-27",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 22357,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Christmas in July"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Christmas in July"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 33743,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Grateful Dead Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 31694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "rate-field",
+      "attendance": 29384,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 33750,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "African American Heritage Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Ja Rule Postgame Concert"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "African American Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "18:15",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 38227,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ozzie Guillén Jersey Retirement"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ozzie Guillén Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 31263,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shoeless Joe Jackson Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "NIU Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "rate-field",
+      "attendance": 38113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "White Sox Pope Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "rate-field",
+      "attendance": 24099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Fourth Wing Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": "12:10",
+      "opponent": "Reds",
+      "venueId": "rate-field",
+      "attendance": 17013,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-20",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "rate-field",
+      "attendance": 17052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "rate-field",
+      "attendance": 31599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Elvis Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "18:10",
+      "opponent": "Mets",
+      "venueId": "rate-field",
+      "attendance": 30705,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wooden Domino Set"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Puerto Rican Heritage Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Puerto Rican Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "rate-field",
+      "attendance": 27721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hot Ones"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-24",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 11471,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 19892,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Late Night with Chuck & Ozzie Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "CHSN Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "rate-field",
+      "attendance": 16038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Police & Fire Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Police & Fire Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 25616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "White Sox Magic Wand"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Boy Band Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 27749,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Finance Bro Vest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "17:20",
+      "opponent": "Twins",
+      "venueId": "rate-field",
+      "attendance": 32024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kid-Designed Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Childhood Cancer Awareness Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Caleb Cares"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "rate-field",
+      "attendance": 18375,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Dog Day sponsored by Tito's Handmade Vodka"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Notre Dame Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "rate-field",
+      "attendance": 14803,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-10",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "rate-field",
+      "attendance": 17741,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Barbie Game Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-17",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 18472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Return of the Southside and Tribute to Tim Anderson"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tim Anderson Tribute Card"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-18",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 26204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Cole Swindell Postgame Concert"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 30631,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Irish Quarter Zip"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Halfway to St. Patrick's Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Gaelic Storm Postgame Acoustic Set"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "rate-field",
+      "attendance": 21354,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Oktoberfest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "rate-field",
+      "attendance": 35778,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Los White Sox Poncho"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "City Connect Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hispanic Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "18:10",
+      "opponent": "Rockies",
+      "venueId": "rate-field",
+      "attendance": 31938,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Crewneck"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Abbey Murphy Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Barstool Sports and the 108ers in the Patio"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "14:10",
+      "opponent": "Rockies",
+      "venueId": "rate-field",
+      "attendance": 29767,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-10-07",
+      "start": "15:00",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 40590,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 3,
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Postseason Rally Towel"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}
