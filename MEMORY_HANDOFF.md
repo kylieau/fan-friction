@@ -29,8 +29,8 @@ Expected draw v1 and round 2; the ⓘ card; Atlanta and the Bay Area end to end 
 - **Testing notes:** `npm i --no-save playwright-core` in a fresh container; headless Chromium at `/usr/bin/chromium` with swiftshader flags; `waitUntil: 'commit'` then wait. Scripts that import from the repo run from the repo root (`scripts/.tmp-*.mjs`, deleted after). The home picker covers Explore in a fresh browser; open `/event/<id>?metro=<id>` or `/favorites/team/<id>` directly. Open-Elevation rate-limits: wait five minutes. GitHub push sometimes answers 500: retry. Don't `pkill` vite; `kill $(lsof -ti:3001)`.
 
 ## Next steps
-1. **Kylie's read of the distance-check result** (`docs/distance-discount-proposal.md`, last section): keep Crowd fight as it is, revisit with concert listings. Nothing to build unless she says otherwise.
-2. **Kylie's confirmation of the Bay Area choices** (city type driving, Roots included, two car shares that are mine, Levi's 68,500 vs the 49ers' 71,500).
+1. **Kylie's postseason-attendance research answer** (closing the playoff "People" estimate gap): save in full, then propose what to build from it.
+2. **Chicago** answers will come from OpenAI's Astra; compare their quality with the earlier cities' answers and say whether Astra is meaningfully better (she may rerun or spot-check the other cities). Distance check accepted and Bay Area choices confirmed (Oct 7).
 3. **Chicago**, when both answers are in, via `docs/new-city-checklist.md` (then Dallas–Fort Worth, Montreal). The tester's Canadiens night (May 25, 2026) is hand-seeded at Montreal time.
 4. **Tester interview about Oct 13:** a day before, a data-side check that her LA, San Diego and New York nights show reads.
 5. **Nov 3, 2026:** re-check every Bay Area car share after the Prop RTM vote (BACKLOG "Bay Area is covered").

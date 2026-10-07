@@ -121,7 +121,7 @@ Written down before the run. MLB only (its feed lists promotions); every source 
 - **Festivals listed twice:** the Ticketmaster dedupe also keys on venue + date + title.
 - **Team schedules** (`src/data/teamSchedule.ts`): one record per covered team, home and away, with scores once final, built from the team's own feed (MLB Stats API; ESPN team schedule). The nightly job writes them to the `team_schedules` table (`supabase/migrations/0010_team_schedules.sql`, **Kylie to run**), because ESPN refuses calls made from a phone's browser; an MLB club is also read live as a fallback. A row for a home game in a covered city points at the app's existing event (no second copy), and so does an away game at a covered team's building (Dodgers at Padres opens the San Diego night). Times are shown in the team's home city. The team page (`FavoritePage.tsx`) shows **Schedule** (next 10 to come, Save on games the catalog lists) and **Results** (last 10 played, "W 5–3"); a team with no feed says "No schedule yet." UCLA football, men's and women's basketball were already in the ESPN list and get schedules as soon as the table exists.
 
-## Bay Area build (Oct 7): choices made, for Kylie to confirm
+## Bay Area build (Oct 7): choices made, confirmed by Kylie (Oct 7)
 Both answers are saved in full (`docs/bay-area-venue-table-answer.md`, `docs/bay-area-city-type-answer.md`). Choices I made without a lock:
 - **City type: driving** (the research's "driving or hub, 0.85 default"; it could not judge spillover). Oracle Park and Chase Center carry their own 0.50 car shares, so the type only reaches venues with no figure.
 - **Boundary as briefed** (SF, Alameda, Contra Costa, San Mateo, Santa Clara). Sacramento, Napa, Sonoma out; the research would not move the line.
@@ -130,3 +130,9 @@ Both answers are saved in full (`docs/bay-area-venue-table-answer.md`, `docs/bay
 - **Oracle Park reads 41,265** (Ticketmaster) over 41,915; the Giants publish neither.
 - **Levi's lists 68,500**, but the 49ers announce about 71,500, so a 49ers estimate sits above Seats on the page. That is the data, not an error; a confirmed 49ers capacity would close it.
 - **Re-check every Bay Area car share after Nov 3, 2026** (the Prop RTM transit vote; if it fails, BART ends service at 9 p.m. from January 2027 and the core's evening shares move sharply toward car).
+
+## Distance discount: Kylie's read (Oct 7)
+Kylie accepted the check's result ("that's fine… not something I felt was that big a weight anyway, I'm glad we checked it out"). Crowd fight stays as it is; the discount is not built; revisit when a season of concert listings is on file.
+
+## Research source change (Kylie, Oct 7)
+Chicago's two prompts will be run on OpenAI's Astra model. When both answers arrive, compare them against the earlier cities' answers on the same checklist (venues found, figures sourced and labeled, coordinates, scheduled changes, gaps admitted) and tell Kylie whether Astra's is meaningfully better; if so, she may rerun or spot-check the other cities there. A postseason-attendance research answer (closing the gap on playoff "People" estimates) is coming from her next.
