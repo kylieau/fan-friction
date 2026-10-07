@@ -13,6 +13,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46097,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -24,6 +29,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46097,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -35,6 +45,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46882,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -46,6 +61,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40108,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -57,6 +77,11 @@
       "venueId": "yankee-stadium",
       "attendance": 26211,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -68,6 +93,11 @@
       "venueId": "yankee-stadium",
       "attendance": 25068,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -79,6 +109,11 @@
       "venueId": "yankee-stadium",
       "attendance": 30109,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -90,6 +125,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37255,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -101,6 +141,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41062,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -112,6 +157,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39180,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -123,6 +173,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39050,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -134,6 +189,11 @@
       "venueId": "yankee-stadium",
       "attendance": 28596,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -145,6 +205,11 @@
       "venueId": "yankee-stadium",
       "attendance": 31122,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -156,6 +221,11 @@
       "venueId": "yankee-stadium",
       "attendance": 29268,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -167,6 +237,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40714,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -178,6 +253,11 @@
       "venueId": "yankee-stadium",
       "attendance": 34866,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -189,6 +269,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40714,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -200,6 +285,11 @@
       "venueId": "yankee-stadium",
       "attendance": 34866,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -211,6 +301,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41522,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -222,6 +317,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42105,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -233,6 +333,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36167,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -244,6 +349,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44001,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -255,6 +365,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36167,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -266,6 +381,11 @@
       "venueId": "yankee-stadium",
       "attendance": 32187,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -277,6 +397,11 @@
       "venueId": "yankee-stadium",
       "attendance": 32289,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -288,6 +413,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39154,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -299,6 +429,11 @@
       "venueId": "yankee-stadium",
       "attendance": 31242,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -310,6 +445,11 @@
       "venueId": "yankee-stadium",
       "attendance": 30518,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -321,6 +461,11 @@
       "venueId": "yankee-stadium",
       "attendance": 30518,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -332,6 +477,11 @@
       "venueId": "yankee-stadium",
       "attendance": 33476,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -343,6 +493,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42026,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -354,6 +509,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38106,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -365,6 +525,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38030,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -376,6 +541,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43446,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -387,6 +557,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38043,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -398,6 +573,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39114,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -409,6 +589,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35692,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -420,6 +605,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35104,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -431,6 +621,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39469,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -442,6 +637,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44071,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -453,6 +653,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47528,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -464,6 +669,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45076,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -475,6 +685,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44028,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -486,6 +701,11 @@
       "venueId": "yankee-stadium",
       "attendance": 33168,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -497,6 +717,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38051,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -508,6 +733,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39647,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -519,6 +749,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40235,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 25
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -530,6 +765,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36772,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 26
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -541,6 +781,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41311,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 26
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -552,6 +797,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47573,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 27
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -563,6 +813,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47997,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -574,6 +829,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47958,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -585,6 +845,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43836,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -596,6 +861,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42481,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -607,6 +877,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44081,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -618,6 +893,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45341,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -629,6 +909,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36731,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -640,6 +925,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38735,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -651,6 +941,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42169,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 35
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -662,6 +957,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42192,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 43
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -673,6 +973,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41083,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -684,6 +989,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42512,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 45
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -695,6 +1005,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41419,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 45
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -706,6 +1021,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46194,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -717,6 +1037,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45538,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -728,6 +1053,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46958,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -739,6 +1069,11 @@
       "venueId": "yankee-stadium",
       "attendance": 48760,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -750,6 +1085,11 @@
       "venueId": "yankee-stadium",
       "attendance": 49217,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -761,6 +1101,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38446,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -772,6 +1117,11 @@
       "venueId": "yankee-stadium",
       "attendance": 30157,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -783,6 +1133,11 @@
       "venueId": "yankee-stadium",
       "attendance": 30157,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -794,6 +1149,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35551,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -805,6 +1165,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46160,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 55
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -816,6 +1181,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43088,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -827,6 +1197,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36402,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -838,6 +1213,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40157,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -849,6 +1229,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46175,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -860,6 +1245,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43123,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -871,6 +1261,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47346,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -882,6 +1277,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47611,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -893,6 +1293,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46707,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -904,6 +1309,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47583,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 96,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -915,6 +1325,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45428,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 96,
+        "losses": 60
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -926,6 +1341,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44332,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 97,
+        "losses": 60
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -938,6 +1358,7 @@
       "attendance": 47807,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -950,6 +1371,7 @@
       "attendance": 47535,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -962,6 +1384,7 @@
       "attendance": 47535,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -974,6 +1397,7 @@
       "attendance": 48178,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -986,6 +1410,7 @@
       "attendance": 48178,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -998,6 +1423,7 @@
       "attendance": 47569,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1010,6 +1436,7 @@
       "attendance": 46545,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1021,6 +1448,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46172,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1032,6 +1464,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41642,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1043,6 +1480,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42053,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1054,6 +1496,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37202,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1065,6 +1512,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35392,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1076,6 +1528,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35847,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1087,6 +1544,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39024,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 4
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1098,6 +1560,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41039,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1109,6 +1576,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38363,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1120,6 +1592,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39342,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1131,6 +1608,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37883,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1142,6 +1624,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38131,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1153,6 +1640,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39315,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1164,6 +1656,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39025,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1175,6 +1672,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43223,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1186,6 +1688,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39293,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1197,6 +1704,11 @@
       "venueId": "yankee-stadium",
       "attendance": 33414,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1208,6 +1720,11 @@
       "venueId": "yankee-stadium",
       "attendance": 32521,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1219,6 +1736,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36060,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1230,6 +1752,11 @@
       "venueId": "yankee-stadium",
       "attendance": 33011,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1241,6 +1768,11 @@
       "venueId": "yankee-stadium",
       "attendance": 33569,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1252,6 +1784,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40687,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1263,6 +1800,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37686,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1274,6 +1816,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46130,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1285,6 +1832,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44714,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1296,6 +1848,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42116,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1307,6 +1864,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40652,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1318,6 +1880,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39455,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1329,6 +1896,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41520,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 21
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1340,6 +1912,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46724,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1351,6 +1928,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46963,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1362,6 +1944,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47295,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1373,6 +1960,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38049,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 25
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1384,6 +1976,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40659,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 27
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1395,6 +1992,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40659,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 27
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1406,6 +2008,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46007,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 27
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1417,6 +2024,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46061,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1428,6 +2040,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46138,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1439,6 +2056,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43130,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1450,6 +2072,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41090,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1461,6 +2088,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42440,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1472,6 +2104,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44822,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1483,6 +2120,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46018,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 35
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1494,6 +2136,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46064,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 35
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1505,6 +2152,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46015,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1516,6 +2168,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43876,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1527,6 +2184,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36022,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1538,6 +2200,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39766,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 39
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1549,6 +2216,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42763,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1560,6 +2232,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43507,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1571,6 +2248,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43761,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1582,6 +2264,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46242,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1593,6 +2280,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44401,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1604,6 +2296,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44130,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1615,6 +2312,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46540,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1626,6 +2328,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46761,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1637,6 +2344,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43613,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 50
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1648,6 +2360,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38047,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 51
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1659,6 +2376,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38740,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1670,6 +2392,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44019,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1681,6 +2408,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42105,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1692,6 +2424,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41411,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1703,6 +2440,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46345,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1714,6 +2456,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44566,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 61
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1725,6 +2472,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42599,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1736,6 +2488,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43946,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1747,6 +2504,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38105,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 64
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1758,6 +2520,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37266,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 65
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1769,6 +2536,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39681,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 65
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1780,6 +2552,11 @@
       "venueId": "yankee-stadium",
       "attendance": 31553,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 69
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1791,6 +2568,11 @@
       "venueId": "yankee-stadium",
       "attendance": 30673,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 69
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1802,6 +2584,11 @@
       "venueId": "yankee-stadium",
       "attendance": 32722,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 69
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1813,6 +2600,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37115,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 70
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1824,6 +2616,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44068,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 71
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1835,6 +2632,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41702,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 72
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1846,6 +2648,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38525,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 74
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1857,6 +2664,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35587,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 75
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1868,6 +2680,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37646,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 76
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1879,6 +2696,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39143,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 76
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1890,6 +2712,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41096,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 77
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1901,6 +2728,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39018,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 77
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1912,6 +2744,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41096,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 77
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1923,6 +2760,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47812,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1934,6 +2776,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42250,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1945,6 +2792,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40569,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1956,6 +2808,11 @@
       "venueId": "yankee-stadium",
       "attendance": 31071,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1967,6 +2824,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37680,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1978,6 +2840,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36295,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1989,6 +2856,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36055,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2000,6 +2872,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47629,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2011,6 +2888,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40022,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2022,6 +2904,11 @@
       "venueId": "yankee-stadium",
       "attendance": 30366,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2033,6 +2920,11 @@
       "venueId": "yankee-stadium",
       "attendance": 30060,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2044,6 +2936,11 @@
       "venueId": "yankee-stadium",
       "attendance": 31179,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2055,6 +2952,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40141,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2066,6 +2968,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37386,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2077,6 +2984,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45017,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2088,6 +3000,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35119,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2099,6 +3016,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37126,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2110,6 +3032,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37660,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2121,6 +3048,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38095,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2132,6 +3064,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46025,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2143,6 +3080,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43194,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2154,6 +3096,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41041,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2165,6 +3112,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37590,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2176,6 +3128,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37257,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2187,6 +3144,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40224,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2198,6 +3160,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43121,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2209,6 +3176,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37139,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2220,6 +3192,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43202,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2231,6 +3208,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41380,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2242,6 +3224,11 @@
       "venueId": "yankee-stadium",
       "attendance": 48048,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2253,6 +3240,11 @@
       "venueId": "yankee-stadium",
       "attendance": 48374,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2264,6 +3256,11 @@
       "venueId": "yankee-stadium",
       "attendance": 48023,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 21
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2275,6 +3272,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47429,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2286,6 +3288,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47155,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2297,6 +3304,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45456,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 25
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2308,6 +3320,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45226,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 26
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2319,6 +3336,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45056,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 27
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2330,6 +3352,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46683,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 27
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2341,6 +3368,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41219,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 32
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2352,6 +3384,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47646,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2363,6 +3400,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43154,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2374,6 +3416,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47158,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 35
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2385,6 +3432,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45504,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 36
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2396,6 +3448,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45250,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 36
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2407,6 +3464,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47036,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2418,6 +3480,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43173,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2429,6 +3496,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45178,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2440,6 +3512,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40824,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2451,6 +3528,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47453,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2462,6 +3544,11 @@
       "venueId": "yankee-stadium",
       "attendance": 48760,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 43
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2473,6 +3560,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44883,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 45
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2484,6 +3576,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40218,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2495,6 +3592,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44237,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2506,6 +3608,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40744,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2517,6 +3624,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40744,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2528,6 +3640,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40681,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2539,6 +3656,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41996,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2550,6 +3672,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41996,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2561,6 +3688,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45318,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2572,6 +3704,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41426,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2583,6 +3720,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41263,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2594,6 +3736,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38105,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2605,6 +3752,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38910,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2616,6 +3768,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40438,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2627,6 +3784,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41324,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2638,6 +3800,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47103,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2649,6 +3816,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41454,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2660,6 +3832,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42768,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2671,6 +3848,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35308,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 61
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2682,6 +3864,11 @@
       "venueId": "yankee-stadium",
       "attendance": 34485,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 61
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2693,6 +3880,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40080,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2704,6 +3896,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40229,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2715,6 +3912,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45292,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2726,6 +3928,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46378,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2737,6 +3944,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45552,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2748,6 +3960,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41149,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 64
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2759,6 +3976,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41010,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 65
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2770,6 +3992,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42022,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2781,6 +4008,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41778,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2792,6 +4024,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46069,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 67
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2803,6 +4040,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44108,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 68
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2815,6 +4057,7 @@
       "attendance": 48790,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2827,6 +4070,7 @@
       "attendance": 48034,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2839,6 +4083,7 @@
       "attendance": 47264,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2851,6 +4096,7 @@
       "attendance": 47054,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2863,6 +4109,7 @@
       "attendance": 49368,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2875,6 +4122,7 @@
       "attendance": 49354,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2887,6 +4135,7 @@
       "attendance": 49263,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2898,6 +4147,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46208,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Opening Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2909,6 +4168,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46683,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Calendar Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2920,6 +4189,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41803,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2931,6 +4205,20 @@
       "venueId": "yankee-stadium",
       "attendance": 37482,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Value Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2942,6 +4230,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40558,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2953,6 +4251,16 @@
       "venueId": "yankee-stadium",
       "attendance": 43382,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2964,6 +4272,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35286,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2975,6 +4288,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35455,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2986,6 +4304,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36449,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2997,6 +4320,20 @@
       "venueId": "yankee-stadium",
       "attendance": 42648,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Value Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3008,6 +4345,16 @@
       "venueId": "yankee-stadium",
       "attendance": 43601,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3019,6 +4366,16 @@
       "venueId": "yankee-stadium",
       "attendance": 43720,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3030,6 +4387,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46081,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hockey Jersey Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3041,6 +4408,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43824,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3052,6 +4424,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43824,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3063,6 +4440,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45189,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jazz Chisholm Jr. Basketball Jersey Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3074,6 +4461,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44051,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3085,6 +4477,16 @@
       "venueId": "yankee-stadium",
       "attendance": 43349,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Star Wars Day - Giancarlo Stanton Jedi Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3096,6 +4498,16 @@
       "venueId": "yankee-stadium",
       "attendance": 38128,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3107,6 +4519,16 @@
       "venueId": "yankee-stadium",
       "attendance": 38090,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3118,6 +4540,16 @@
       "venueId": "yankee-stadium",
       "attendance": 42302,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3129,6 +4561,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47700,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3140,6 +4577,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47510,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3151,6 +4593,11 @@
       "venueId": "yankee-stadium",
       "attendance": 48028,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3162,6 +4609,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40343,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3173,6 +4630,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40359,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3184,6 +4651,20 @@
       "venueId": "yankee-stadium",
       "attendance": 43450,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Half-Price Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3195,6 +4676,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40683,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3206,6 +4697,16 @@
       "venueId": "yankee-stadium",
       "attendance": 36759,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3217,6 +4718,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41665,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3228,6 +4739,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46783,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yogi Berra U.S. Navy Bobblehead Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3239,6 +4760,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47020,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3250,6 +4776,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45140,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3261,6 +4792,20 @@
       "venueId": "yankee-stadium",
       "attendance": 37398,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Legacy of Pride"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3272,6 +4817,16 @@
       "venueId": "yankee-stadium",
       "attendance": 35278,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3283,6 +4838,20 @@
       "venueId": "yankee-stadium",
       "attendance": 43255,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Bucket Hat Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3294,6 +4863,20 @@
       "venueId": "yankee-stadium",
       "attendance": 45671,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Half-Price Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3305,6 +4888,16 @@
       "venueId": "yankee-stadium",
       "attendance": 47034,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Aaron Judge Superman Bobblehead Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3316,6 +4909,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46142,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees T-Shirt Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3327,6 +4930,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45571,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Collectible Cup Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3338,6 +4951,20 @@
       "venueId": "yankee-stadium",
       "attendance": 46192,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "USA Flag Cap Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3349,6 +4976,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45084,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Military Appreciation Day - Yankees Camo Shirt"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3360,6 +4997,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42166,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 35
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3371,6 +5013,16 @@
       "venueId": "yankee-stadium",
       "attendance": 38641,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3382,6 +5034,16 @@
       "venueId": "yankee-stadium",
       "attendance": 35651,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3393,6 +5055,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41241,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3404,6 +5076,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46327,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Billy Joel Bobblehead Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3415,6 +5097,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46839,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees + Eric Emanuel T-shirt"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3426,6 +5118,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45435,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mo Willems \"The Pigeon\" 4 Inch Plush Keychain Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3437,6 +5139,16 @@
       "venueId": "yankee-stadium",
       "attendance": 47018,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Anthony Volpe Bobblehead Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3448,6 +5160,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46621,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3459,6 +5176,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45612,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3470,6 +5192,16 @@
       "venueId": "yankee-stadium",
       "attendance": 37308,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3481,6 +5213,16 @@
       "venueId": "yankee-stadium",
       "attendance": 35660,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3492,6 +5234,20 @@
       "venueId": "yankee-stadium",
       "attendance": 45355,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Cowboy Hat Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3503,6 +5259,20 @@
       "venueId": "yankee-stadium",
       "attendance": 44292,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Half-Price Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3514,6 +5284,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46027,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jerry Garcia Bobblehead Game"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3525,6 +5305,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45738,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Old-Timers' Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3536,6 +5326,16 @@
       "venueId": "yankee-stadium",
       "attendance": 43658,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jerry Garcia Bobblehead Game"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3547,6 +5347,16 @@
       "venueId": "yankee-stadium",
       "attendance": 36744,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3558,6 +5368,20 @@
       "venueId": "yankee-stadium",
       "attendance": 37552,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Italian Heritage Cap Night presented by Barilla"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3569,6 +5393,20 @@
       "venueId": "yankee-stadium",
       "attendance": 44466,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Aaron Judge MVP Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3580,6 +5418,16 @@
       "venueId": "yankee-stadium",
       "attendance": 47036,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "\"Seinfeld Night\" - George Costanza Sleeping Under His Desk Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3591,6 +5439,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46064,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3602,6 +5455,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45512,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3613,6 +5471,16 @@
       "venueId": "yankee-stadium",
       "attendance": 44640,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Beach Tote Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3624,6 +5492,20 @@
       "venueId": "yankee-stadium",
       "attendance": 36939,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hamilton Cap Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3635,6 +5517,16 @@
       "venueId": "yankee-stadium",
       "attendance": 35531,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3646,6 +5538,20 @@
       "venueId": "yankee-stadium",
       "attendance": 35501,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Half-Price Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3657,6 +5563,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46055,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Austin Wells Football Jersey Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3668,6 +5584,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45123,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ryder Cup Cap Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3679,6 +5605,16 @@
       "venueId": "yankee-stadium",
       "attendance": 43266,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "CC Sabathia Replica Hall of Fame Plaque Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3690,6 +5626,24 @@
       "venueId": "yankee-stadium",
       "attendance": 35653,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Lightweight Hoodie Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Value Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3701,6 +5655,20 @@
       "venueId": "yankee-stadium",
       "attendance": 36727,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees + New York or Nowhere Knit Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3712,6 +5680,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40608,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3723,6 +5701,20 @@
       "venueId": "yankee-stadium",
       "attendance": 38318,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Cap Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3734,6 +5726,24 @@
       "venueId": "yankee-stadium",
       "attendance": 37751,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Vest Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Value Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3745,6 +5755,24 @@
       "venueId": "yankee-stadium",
       "attendance": 38545,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bernie Williams Musical Bobblehead Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hispanic Heritage Cap Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3756,6 +5784,16 @@
       "venueId": "yankee-stadium",
       "attendance": 44596,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Jersey Hoodie Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3767,6 +5805,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46085,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 68
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3778,6 +5821,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45004,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Voucher Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3790,6 +5843,7 @@
       "attendance": 47027,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3802,6 +5856,7 @@
       "attendance": 47993,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3814,6 +5869,7 @@
       "attendance": 48833,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3826,6 +5882,7 @@
       "attendance": 47399,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3838,6 +5895,7 @@
       "attendance": 47823,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3849,6 +5907,16 @@
       "venueId": "yankee-stadium",
       "attendance": 48788,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Opening Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3860,6 +5928,16 @@
       "venueId": "yankee-stadium",
       "attendance": 44150,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Calendar Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3871,6 +5949,11 @@
       "venueId": "yankee-stadium",
       "attendance": 34807,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3882,6 +5965,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39853,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3893,6 +5981,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38147,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3904,6 +5997,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40392,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Value Games"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3915,6 +6018,11 @@
       "venueId": "yankee-stadium",
       "attendance": 35789,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3926,6 +6034,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37792,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3937,6 +6050,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41019,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3948,6 +6066,16 @@
       "venueId": "yankee-stadium",
       "attendance": 38424,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Value Games"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3959,6 +6087,16 @@
       "venueId": "yankee-stadium",
       "attendance": 44244,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Hockey Jersey Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3970,6 +6108,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42070,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 9
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3981,6 +6124,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40198,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hersheypark Kids Ticket Giveaway Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3992,6 +6145,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41239,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4003,6 +6161,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46049,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Star Wars Day - Max Fried Mandalorian Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4014,6 +6182,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43416,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4025,6 +6198,11 @@
       "venueId": "yankee-stadium",
       "attendance": 36802,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4036,6 +6214,11 @@
       "venueId": "yankee-stadium",
       "attendance": 38360,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4047,6 +6230,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40269,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4058,6 +6246,16 @@
       "venueId": "yankee-stadium",
       "attendance": 42729,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Value Games"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4069,6 +6267,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39082,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4080,6 +6283,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37181,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4091,6 +6299,16 @@
       "venueId": "yankee-stadium",
       "attendance": 37497,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Half-Price Games"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4102,6 +6320,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40249,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cap Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4113,6 +6341,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41358,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giancarlo Stanton Basketball Jersey Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4124,6 +6362,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41421,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4135,6 +6383,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41396,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4146,6 +6399,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41045,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Charles Fazzino's America250: A New York Yankees Celebration Poster Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4157,6 +6420,11 @@
       "venueId": "yankee-stadium",
       "attendance": 37683,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4168,6 +6436,20 @@
       "venueId": "yankee-stadium",
       "attendance": 39504,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sun Safety Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Half-Price Games"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4179,6 +6461,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43750,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 25
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4190,6 +6477,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47314,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4201,6 +6493,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46144,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4212,6 +6509,16 @@
       "venueId": "yankee-stadium",
       "attendance": 36723,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "House of the Dragon Cap Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4223,6 +6530,16 @@
       "venueId": "yankee-stadium",
       "attendance": 38558,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Legacy of Pride"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4234,6 +6551,16 @@
       "venueId": "yankee-stadium",
       "attendance": 44809,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Soccer Jersey Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4245,6 +6572,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42420,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4256,6 +6588,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46089,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Aaron Judge MVP Bobblehead Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4267,6 +6609,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46046,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4278,6 +6625,11 @@
       "venueId": "yankee-stadium",
       "attendance": 40506,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 35
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4289,6 +6641,16 @@
       "venueId": "yankee-stadium",
       "attendance": 37211,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Collectible Cup Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4300,6 +6662,16 @@
       "venueId": "yankee-stadium",
       "attendance": 37117,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Half-Price Games"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4311,6 +6683,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45104,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4322,6 +6704,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40156,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees 4th of July Cap Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4333,6 +6725,11 @@
       "venueId": "yankee-stadium",
       "attendance": 39155,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 39
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4344,6 +6741,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46450,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4355,6 +6757,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43305,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4366,6 +6773,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43305,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4377,6 +6789,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43378,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4388,6 +6805,20 @@
       "venueId": "yankee-stadium",
       "attendance": 42348,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees T-shirt Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4399,6 +6830,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41064,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Harry Potter Night - Aaron Judge Harry Potter Houses Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4410,6 +6851,20 @@
       "venueId": "yankee-stadium",
       "attendance": 43290,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Half-Price Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4421,6 +6876,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41064,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Harry Potter Night - Aaron Judge Harry Potter Houses Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4432,6 +6897,16 @@
       "venueId": "yankee-stadium",
       "attendance": 38151,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4443,6 +6918,20 @@
       "venueId": "yankee-stadium",
       "attendance": 41081,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Bucket Hat Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4454,6 +6943,16 @@
       "venueId": "yankee-stadium",
       "attendance": 37425,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4465,6 +6964,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42297,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 51
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4476,6 +6980,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45222,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Old-Timers' Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4487,6 +7001,11 @@
       "venueId": "yankee-stadium",
       "attendance": 42533,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 51
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4498,6 +7017,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41407,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "KPop Demon Hunters Night - Rumi Yankees Bobblehead Giveaway"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4509,6 +7038,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41714,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4520,6 +7059,20 @@
       "venueId": "yankee-stadium",
       "attendance": 41842,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Half-Price Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4531,6 +7084,16 @@
       "venueId": "yankee-stadium",
       "attendance": 45062,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cody Bellinger Bobblehead Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4542,6 +7105,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46231,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hello Kitty Yankees Bobblehead Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4553,6 +7126,11 @@
       "venueId": "yankee-stadium",
       "attendance": 41802,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4564,6 +7142,20 @@
       "venueId": "yankee-stadium",
       "attendance": 43229,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees Rugby Shirt Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4575,6 +7167,16 @@
       "venueId": "yankee-stadium",
       "attendance": 40269,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4586,6 +7188,20 @@
       "venueId": "yankee-stadium",
       "attendance": 41203,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "George Costanza Calzone Bobblehead Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4597,6 +7213,11 @@
       "venueId": "yankee-stadium",
       "attendance": 43476,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4608,6 +7229,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47314,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4619,6 +7245,11 @@
       "venueId": "yankee-stadium",
       "attendance": 44266,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4630,6 +7261,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45256,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4641,6 +7277,16 @@
       "venueId": "yankee-stadium",
       "attendance": 46211,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "NARUTO Night - NARUTO Yankee Stadium Exclusive Card Giveaway"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4652,6 +7298,16 @@
       "venueId": "yankee-stadium",
       "attendance": 34413,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4663,6 +7319,20 @@
       "venueId": "yankee-stadium",
       "attendance": 40706,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yankees + New York or Nowhere Knit Hat Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4674,6 +7344,11 @@
       "venueId": "yankee-stadium",
       "attendance": 47410,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4685,6 +7360,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46864,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4696,6 +7376,11 @@
       "venueId": "yankee-stadium",
       "attendance": 45508,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4707,6 +7392,16 @@
       "venueId": "yankee-stadium",
       "attendance": 41421,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4718,6 +7413,16 @@
       "venueId": "yankee-stadium",
       "attendance": 38656,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4729,6 +7434,16 @@
       "venueId": "yankee-stadium",
       "attendance": 42238,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4740,6 +7455,20 @@
       "venueId": "yankee-stadium",
       "attendance": 44136,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mastercard Value Games"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Group Tickets"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4751,6 +7480,11 @@
       "venueId": "yankee-stadium",
       "attendance": 46656,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 68
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4763,6 +7497,7 @@
       "attendance": 48437,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4775,6 +7510,7 @@
       "attendance": 49004,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     }
   ]

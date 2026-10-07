@@ -143,8 +143,20 @@ async function mapLimit(items, limit, fn) {
 async function collectMlb(team) {
   const rows = [];
   for (const season of team.seasons) {
-    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${team.mlbId}&season=${season}&gameType=R,F,D,L,W&hydrate=team`;
+    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${team.mlbId}&season=${season}&gameType=R,F,D,L,W&hydrate=team,game(promotions)`;
     const json = await getJson(url);
+    // The record going in: the team's record after its previous regular-season game, home or away.
+    const regular = json.dates
+      .flatMap((d) => d.games)
+      .filter((g) => g.gameType === 'R' && g.status?.abstractGameState === 'Final')
+      .sort((a, b) => a.gameDate.localeCompare(b.gameDate) || (a.gameNumber ?? 1) - (b.gameNumber ?? 1));
+    const recordBefore = new Map();
+    let prev = { wins: 0, losses: 0 };
+    for (const g of regular) {
+      recordBefore.set(g.gamePk, prev);
+      const side = g.teams.home.team.id === team.mlbId ? g.teams.home : g.teams.away;
+      if (side.leagueRecord) prev = { wins: side.leagueRecord.wins, losses: side.leagueRecord.losses };
+    }
     const games = json.dates
       .flatMap((d) => d.games)
       .filter((g) => g.teams.home.team.id === team.mlbId && g.status?.abstractGameState === 'Final');
@@ -164,6 +176,9 @@ async function collectMlb(team) {
           attendance: att,
           kind: 'announced',
           postseason: g.gameType !== 'R' || undefined,
+          recordBefore: recordBefore.get(g.gamePk),
+          // MLB's own list for the game: giveaways, ticket offers, fireworks and other highlights.
+          promotions: (g.promotions ?? []).map((p) => ({ type: p.offerType, name: p.name })),
           sourceId: 'mlb',
         };
       } catch {

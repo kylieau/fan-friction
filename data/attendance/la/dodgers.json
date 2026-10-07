@@ -13,6 +13,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52995,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -24,6 +29,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51891,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -35,6 +45,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51059,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -46,6 +61,11 @@
       "venueId": "dodger-stadium",
       "attendance": 41167,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -57,6 +77,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52052,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -68,6 +93,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51889,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -79,6 +109,11 @@
       "venueId": "dodger-stadium",
       "attendance": 38888,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 3
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -90,6 +125,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49394,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -101,6 +141,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52613,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -112,6 +157,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51172,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -123,6 +173,11 @@
       "venueId": "dodger-stadium",
       "attendance": 43370,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -134,6 +189,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52203,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -145,6 +205,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46539,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 9
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -156,6 +221,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50712,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -167,6 +237,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50279,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -178,6 +253,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51869,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -189,6 +269,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42650,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -200,6 +285,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42089,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -211,6 +301,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46850,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -222,6 +317,11 @@
       "venueId": "dodger-stadium",
       "attendance": 35643,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -233,6 +333,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46724,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 14
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -244,6 +349,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52686,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -255,6 +365,11 @@
       "venueId": "dodger-stadium",
       "attendance": 39324,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -266,6 +381,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48018,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -277,6 +397,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52505,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -288,6 +413,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50165,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -299,6 +429,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48672,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -310,6 +445,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51013,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -321,6 +461,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50812,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -332,6 +477,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48361,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -343,6 +493,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50078,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -354,6 +509,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53033,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -365,6 +525,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53094,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -376,6 +541,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48076,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -387,6 +557,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47061,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -398,6 +573,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42633,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -409,6 +589,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47163,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -420,6 +605,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45885,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -431,6 +621,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45098,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -442,6 +637,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52072,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -453,6 +653,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44158,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -464,6 +669,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45198,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -475,6 +685,11 @@
       "venueId": "dodger-stadium",
       "attendance": 41824,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -486,6 +701,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53165,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -497,6 +717,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51316,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -508,6 +733,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47749,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -519,6 +749,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47505,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -530,6 +765,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48647,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -541,6 +781,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53302,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 31
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -552,6 +797,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44229,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 32
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -563,6 +813,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52714,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -574,6 +829,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52124,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -585,6 +845,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48093,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -596,6 +861,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47874,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -607,6 +877,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53432,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -618,6 +893,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50431,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 36
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -629,6 +909,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51813,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 36
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -640,6 +925,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42125,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 36
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -651,6 +941,11 @@
       "venueId": "dodger-stadium",
       "attendance": 37091,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 36
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -662,6 +957,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53222,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 37
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -673,6 +973,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47216,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 37
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -684,6 +989,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45164,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -695,6 +1005,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46144,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -706,6 +1021,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48522,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -717,6 +1037,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51887,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -728,6 +1053,11 @@
       "venueId": "dodger-stadium",
       "attendance": 39752,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -739,6 +1069,11 @@
       "venueId": "dodger-stadium",
       "attendance": 39237,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -750,6 +1085,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44854,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 101,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -761,6 +1101,11 @@
       "venueId": "dodger-stadium",
       "attendance": 38902,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 102,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -772,6 +1117,11 @@
       "venueId": "dodger-stadium",
       "attendance": 43097,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 103,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -783,6 +1133,11 @@
       "venueId": "dodger-stadium",
       "attendance": 38845,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 103,
+        "losses": 45
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -794,6 +1149,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47907,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 103,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -805,6 +1165,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50041,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 104,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -816,6 +1181,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52527,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 104,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -827,6 +1197,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48695,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 105,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -838,6 +1213,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52025,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 108,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -849,6 +1229,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47334,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 109,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -860,6 +1245,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44091,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 110,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -871,6 +1261,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52012,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 110,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -882,6 +1277,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51833,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 110,
+        "losses": 50
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -893,6 +1293,11 @@
       "venueId": "dodger-stadium",
       "attendance": 37514,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 110,
+        "losses": 51
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -905,6 +1310,7 @@
       "attendance": 52407,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -917,6 +1323,7 @@
       "attendance": 53122,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -928,6 +1335,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52075,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -939,6 +1351,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45389,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -950,6 +1367,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48886,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -961,6 +1383,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46549,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -972,6 +1399,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49792,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -983,6 +1415,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52290,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -994,6 +1431,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52298,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1005,6 +1447,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52375,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1016,6 +1463,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52180,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1027,6 +1479,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50313,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1038,6 +1495,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46884,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1049,6 +1511,11 @@
       "venueId": "dodger-stadium",
       "attendance": 43990,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1060,6 +1527,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48138,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1071,6 +1543,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48763,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1082,6 +1559,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52304,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1093,6 +1575,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42137,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1104,6 +1591,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42780,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1115,6 +1607,11 @@
       "venueId": "dodger-stadium",
       "attendance": 36539,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1126,6 +1623,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49399,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1137,6 +1639,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51334,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1148,6 +1655,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46201,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1159,6 +1671,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49749,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1170,6 +1687,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52159,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1181,6 +1703,11 @@
       "venueId": "dodger-stadium",
       "attendance": 36434,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1192,6 +1719,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47067,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1203,6 +1735,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46571,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1214,6 +1751,11 @@
       "venueId": "dodger-stadium",
       "attendance": 36552,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1225,6 +1767,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52534,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1236,6 +1783,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52975,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1247,6 +1799,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52816,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1258,6 +1815,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45561,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1269,6 +1831,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44442,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1280,6 +1847,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48655,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1291,6 +1863,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49074,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1302,6 +1879,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51385,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 31
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1313,6 +1895,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52307,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 32
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1324,6 +1911,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49795,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1335,6 +1927,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49218,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1346,6 +1943,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47273,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1357,6 +1959,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49652,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 37
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1368,6 +1975,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51487,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 37
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1379,6 +1991,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45403,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1390,6 +2007,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42036,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1401,6 +2023,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52214,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1412,6 +2039,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53057,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1423,6 +2055,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47731,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1434,6 +2071,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47069,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1445,6 +2087,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46667,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1456,6 +2103,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48280,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 43
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1467,6 +2119,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51015,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1478,6 +2135,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45936,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1489,6 +2151,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44207,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 45
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1500,6 +2167,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47711,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 45
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1511,6 +2183,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52624,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 45
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1522,6 +2199,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45933,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1533,6 +2215,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49315,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1544,6 +2231,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52515,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1555,6 +2247,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45904,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1566,6 +2263,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46050,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1577,6 +2279,11 @@
       "venueId": "dodger-stadium",
       "attendance": 41413,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1588,6 +2295,11 @@
       "venueId": "dodger-stadium",
       "attendance": 43195,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1599,6 +2311,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46053,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1610,6 +2327,11 @@
       "venueId": "dodger-stadium",
       "attendance": 40895,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1621,6 +2343,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52688,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1632,6 +2359,11 @@
       "venueId": "dodger-stadium",
       "attendance": 36521,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1643,6 +2375,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42323,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1654,6 +2391,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50953,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1665,6 +2407,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47623,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1676,6 +2423,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52436,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 50
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1687,6 +2439,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51470,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 51
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1698,6 +2455,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47499,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1709,6 +2471,11 @@
       "venueId": "dodger-stadium",
       "attendance": 40072,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 55
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1720,6 +2487,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42194,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1731,6 +2503,11 @@
       "venueId": "dodger-stadium",
       "attendance": 41810,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1742,6 +2519,11 @@
       "venueId": "dodger-stadium",
       "attendance": 37239,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1753,6 +2535,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42223,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1764,6 +2551,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42635,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1775,6 +2567,11 @@
       "venueId": "dodger-stadium",
       "attendance": 43942,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1786,6 +2583,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52887,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 94,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1797,6 +2599,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52704,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 94,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1808,6 +2615,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48315,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 95,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1820,6 +2632,7 @@
       "attendance": 51653,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1832,6 +2645,7 @@
       "attendance": 51449,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1843,6 +2657,11 @@
       "venueId": "dodger-stadium",
       "attendance": 15928,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1854,6 +2673,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52667,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1865,6 +2689,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47524,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1876,6 +2705,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45019,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1887,6 +2721,11 @@
       "venueId": "dodger-stadium",
       "attendance": 41014,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1898,6 +2737,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49044,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1909,6 +2753,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49365,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1920,6 +2769,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52746,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1931,6 +2785,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49606,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1942,6 +2801,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44582,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1953,6 +2817,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49432,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1964,6 +2833,11 @@
       "venueId": "dodger-stadium",
       "attendance": 42677,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1975,6 +2849,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52718,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1986,6 +2865,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44428,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1997,6 +2881,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44783,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2008,6 +2897,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45373,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2019,6 +2913,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49287,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2030,6 +2929,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50859,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2041,6 +2945,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44474,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2052,6 +2961,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52733,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2063,6 +2977,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44970,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2074,6 +2993,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51496,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2085,6 +3009,11 @@
       "venueId": "dodger-stadium",
       "attendance": 40702,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2096,6 +3025,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53527,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2107,6 +3041,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46832,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2118,6 +3057,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49239,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2129,6 +3073,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52656,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2140,6 +3089,11 @@
       "venueId": "dodger-stadium",
       "attendance": 37634,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2151,6 +3105,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46180,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2162,6 +3121,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46593,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2173,6 +3137,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47542,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2184,6 +3153,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50182,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2195,6 +3169,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48251,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2206,6 +3185,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51416,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 26
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2217,6 +3201,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48930,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 26
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2228,6 +3217,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50134,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 27
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2239,6 +3233,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49580,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2250,6 +3249,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50423,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2261,6 +3265,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52789,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2272,6 +3281,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51841,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2283,6 +3297,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53273,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 31
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2294,6 +3313,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52931,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2305,6 +3329,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47965,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2316,6 +3345,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52320,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2327,6 +3361,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49885,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 35
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2338,6 +3377,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50086,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 35
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2349,6 +3393,11 @@
       "venueId": "dodger-stadium",
       "attendance": 43528,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 35
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2360,6 +3409,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51562,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2371,6 +3425,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48129,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2382,6 +3441,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50824,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2393,6 +3457,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49576,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2404,6 +3473,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52627,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2415,6 +3489,11 @@
       "venueId": "dodger-stadium",
       "attendance": 54070,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2426,6 +3505,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52291,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2437,6 +3521,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48178,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2448,6 +3537,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47150,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2459,6 +3553,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45003,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2470,6 +3569,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48664,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2481,6 +3585,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50697,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2492,6 +3601,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50389,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2503,6 +3617,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51348,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2514,6 +3633,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48395,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2525,6 +3649,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45295,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2536,6 +3665,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45556,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2547,6 +3681,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48488,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2558,6 +3697,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52464,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2569,6 +3713,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52382,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2580,6 +3729,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53290,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2591,6 +3745,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53203,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2602,6 +3761,11 @@
       "venueId": "dodger-stadium",
       "attendance": 45318,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2613,6 +3777,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48690,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2624,6 +3793,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44207,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2635,6 +3809,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50495,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2646,6 +3825,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51923,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2657,6 +3841,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48691,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2668,6 +3857,11 @@
       "venueId": "dodger-stadium",
       "attendance": 49073,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2679,6 +3873,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52267,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2690,6 +3889,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50730,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2701,6 +3905,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50369,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2712,6 +3921,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52310,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 64
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2723,6 +3937,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52433,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 94,
+        "losses": 64
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2735,6 +3954,7 @@
       "attendance": 53028,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2747,6 +3967,7 @@
       "attendance": 54119,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2759,6 +3980,7 @@
       "attendance": 53183,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2771,6 +3993,7 @@
       "attendance": 53503,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2783,6 +4006,7 @@
       "attendance": 52926,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2795,6 +4019,7 @@
       "attendance": 52674,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2807,6 +4032,7 @@
       "attendance": 52394,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2819,6 +4045,7 @@
       "attendance": 52725,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2830,6 +4057,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53595,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2841,6 +4078,20 @@
       "venueId": "dodger-stadium",
       "attendance": 52029,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "World Series Ring Ceremony"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "World Champions Drone Show"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2852,6 +4103,16 @@
       "venueId": "dodger-stadium",
       "attendance": 51788,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Orel Hershiser Jersey"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2863,6 +4124,16 @@
       "venueId": "dodger-stadium",
       "attendance": 50816,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "World Champions Hoodie"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2874,6 +4145,16 @@
       "venueId": "dodger-stadium",
       "attendance": 50182,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Healthcare Appreciation Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2885,6 +4166,16 @@
       "venueId": "dodger-stadium",
       "attendance": 50281,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shohei Ohtani MVP Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2896,6 +4187,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53933,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Freddie Freeman Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2907,6 +4208,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53887,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Teacher Appreciation Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2918,6 +4229,11 @@
       "venueId": "dodger-stadium",
       "attendance": 50899,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2929,6 +4245,16 @@
       "venueId": "dodger-stadium",
       "attendance": 52693,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hello Kitty Squish Plush"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2940,6 +4266,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53198,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jackie Robinson Jersey"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2951,6 +4287,11 @@
       "venueId": "dodger-stadium",
       "attendance": 52143,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2962,6 +4303,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53655,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2973,6 +4324,16 @@
       "venueId": "dodger-stadium",
       "attendance": 54012,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Dave Roberts Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2984,6 +4345,16 @@
       "venueId": "dodger-stadium",
       "attendance": 49512,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2995,6 +4366,16 @@
       "venueId": "dodger-stadium",
       "attendance": 48232,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Japanese Heritage Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3006,6 +4387,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46502,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3017,6 +4403,11 @@
       "venueId": "dodger-stadium",
       "attendance": 47192,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3028,6 +4419,16 @@
       "venueId": "dodger-stadium",
       "attendance": 45161,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mookie Betts Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3039,6 +4440,16 @@
       "venueId": "dodger-stadium",
       "attendance": 50071,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Star Wars Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3050,6 +4461,16 @@
       "venueId": "dodger-stadium",
       "attendance": 51272,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shohei Ohtani 50/50 Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3061,6 +4482,16 @@
       "venueId": "dodger-stadium",
       "attendance": 46273,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3072,6 +4503,16 @@
       "venueId": "dodger-stadium",
       "attendance": 50084,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mental Health Awareness Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3083,6 +4524,16 @@
       "venueId": "dodger-stadium",
       "attendance": 51997,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3094,6 +4545,16 @@
       "venueId": "dodger-stadium",
       "attendance": 41372,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Vin Scully Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3105,6 +4566,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51932,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3116,6 +4582,16 @@
       "venueId": "dodger-stadium",
       "attendance": 43517,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Will Smith \"Last Out\" Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3127,6 +4603,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53276,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3138,6 +4619,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51746,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3149,6 +4635,11 @@
       "venueId": "dodger-stadium",
       "attendance": 54031,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3160,6 +4651,16 @@
       "venueId": "dodger-stadium",
       "attendance": 48556,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tommy Edman Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3171,6 +4672,11 @@
       "venueId": "dodger-stadium",
       "attendance": 53424,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3182,6 +4688,16 @@
       "venueId": "dodger-stadium",
       "attendance": 45733,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sandy Koufax Brooklyn Dodgers Jersey"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3193,6 +4709,11 @@
       "venueId": "dodger-stadium",
       "attendance": 46364,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 25
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3204,6 +4725,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53022,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "LGBTQ+ Pride Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3215,6 +4750,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51548,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3226,6 +4766,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53980,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Father's Day Bucket Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Viva Los Dodgers"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3237,6 +4791,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53207,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Blake Snell Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3248,6 +4812,16 @@
       "venueId": "dodger-stadium",
       "attendance": 51555,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "World Series Replica Trophy"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3259,6 +4833,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53568,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Gold Player Jerseys"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3270,6 +4854,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53280,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Black Heritage Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3281,6 +4875,20 @@
       "venueId": "dodger-stadium",
       "attendance": 46558,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Universal Studios Hollywood Theme Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3292,6 +4900,16 @@
       "venueId": "dodger-stadium",
       "attendance": 54154,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ice Cube Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3303,6 +4921,20 @@
       "venueId": "dodger-stadium",
       "attendance": 48177,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pups at the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3314,6 +4946,11 @@
       "venueId": "dodger-stadium",
       "attendance": 51368,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 32
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3325,6 +4962,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53536,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yoshinobu Yamamoto Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3336,6 +4983,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53530,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "One Piece Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3347,6 +5008,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53377,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Independence Day Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3358,6 +5033,16 @@
       "venueId": "dodger-stadium",
       "attendance": 49744,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "hololive Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3369,6 +5054,20 @@
       "venueId": "dodger-stadium",
       "attendance": 41291,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Viva Los Dodgers"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3380,6 +5079,24 @@
       "venueId": "dodger-stadium",
       "attendance": 49281,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ron Cey Legends of Dodger Baseball Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Peanut Allergy Friendly Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3391,6 +5108,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53540,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fernando Valenzuela Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3402,6 +5129,11 @@
       "venueId": "dodger-stadium",
       "attendance": 40376,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3413,6 +5145,16 @@
       "venueId": "dodger-stadium",
       "attendance": 51121,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "World Series Player Rings"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3424,6 +5166,20 @@
       "venueId": "dodger-stadium",
       "attendance": 45074,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Teoscar Hernández Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3435,6 +5191,11 @@
       "venueId": "dodger-stadium",
       "attendance": 40094,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 43
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3446,6 +5207,20 @@
       "venueId": "dodger-stadium",
       "attendance": 46628,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Roki Sasaki Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3457,6 +5232,16 @@
       "venueId": "dodger-stadium",
       "attendance": 50477,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hello Kitty Crossbody Bag"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3468,6 +5253,16 @@
       "venueId": "dodger-stadium",
       "attendance": 44621,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shohei Ohtani World Series Ring"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3479,6 +5274,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53825,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kobe Bryant Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3490,6 +5295,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44727,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3501,6 +5311,20 @@
       "venueId": "dodger-stadium",
       "attendance": 41557,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Viva Los Dodgers"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3512,6 +5336,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53119,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Demon Slayer® Hat Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3523,6 +5361,24 @@
       "venueId": "dodger-stadium",
       "attendance": 53606,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Blake Treinen Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3534,6 +5390,20 @@
       "venueId": "dodger-stadium",
       "attendance": 48189,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Law Enforcement Appreciation Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3545,6 +5415,20 @@
       "venueId": "dodger-stadium",
       "attendance": 49702,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mookie Betts World Series Ring"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3556,6 +5440,16 @@
       "venueId": "dodger-stadium",
       "attendance": 44943,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Salvadoran Heritage Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3567,6 +5461,20 @@
       "venueId": "dodger-stadium",
       "attendance": 49199,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shohei Ohtani 50/50 Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3578,6 +5486,20 @@
       "venueId": "dodger-stadium",
       "attendance": 45701,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Native American Appreciation Cap"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3589,6 +5511,16 @@
       "venueId": "dodger-stadium",
       "attendance": 47632,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Union Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3600,6 +5532,24 @@
       "venueId": "dodger-stadium",
       "attendance": 51803,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kiké Hernández Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Viva Los Dodgers"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3611,6 +5561,11 @@
       "venueId": "dodger-stadium",
       "attendance": 48433,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 64
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3622,6 +5577,16 @@
       "venueId": "dodger-stadium",
       "attendance": 44126,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Guatemalan Heritage Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3633,6 +5598,20 @@
       "venueId": "dodger-stadium",
       "attendance": 50805,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shohei Ohtani Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3644,6 +5623,20 @@
       "venueId": "dodger-stadium",
       "attendance": 43602,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Freddie Freeman World Series Ring"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3655,6 +5648,11 @@
       "venueId": "dodger-stadium",
       "attendance": 44063,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3666,6 +5664,16 @@
       "venueId": "dodger-stadium",
       "attendance": 50859,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Nurses Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3677,6 +5685,20 @@
       "venueId": "dodger-stadium",
       "attendance": 41225,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tyler Glasnow Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3688,6 +5710,24 @@
       "venueId": "dodger-stadium",
       "attendance": 53037,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Joe Davis Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3699,6 +5739,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53251,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Clayton Kershaw 3000 Strikeout Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Early Entry Ticket Package"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3710,6 +5764,16 @@
       "venueId": "dodger-stadium",
       "attendance": 46601,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Trading Card Giveaway "
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3722,6 +5786,7 @@
       "attendance": 50555,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3734,6 +5799,7 @@
       "attendance": 50465,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3746,6 +5812,7 @@
       "attendance": 53689,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3758,6 +5825,7 @@
       "attendance": 50563,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3770,6 +5838,7 @@
       "attendance": 51251,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3782,6 +5851,7 @@
       "attendance": 52883,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3794,6 +5864,7 @@
       "attendance": 52654,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3806,6 +5877,7 @@
       "attendance": 52552,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3818,6 +5890,7 @@
       "attendance": 52175,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3829,6 +5902,19 @@
       "venueId": "dodger-stadium",
       "attendance": 53712,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "name": "Opening Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3840,6 +5926,19 @@
       "venueId": "dodger-stadium",
       "attendance": 51540,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "name": "World Series Ring Ceremony"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3851,6 +5950,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53340,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Will Smith \"Game 7 Home Run\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3862,6 +5975,20 @@
       "venueId": "dodger-stadium",
       "attendance": 52173,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Back-to-Back World Champions Hoodie"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3873,6 +6000,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53614,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yoshi Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3884,6 +6025,16 @@
       "venueId": "dodger-stadium",
       "attendance": 45556,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3895,6 +6046,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53675,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shohei Ohtani \"Greatest Game\" Bobblehead Part 1"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3906,6 +6071,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53617,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Teacher Appreciation Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3917,6 +6096,20 @@
       "venueId": "dodger-stadium",
       "attendance": 48530,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3928,6 +6121,20 @@
       "venueId": "dodger-stadium",
       "attendance": 52838,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hello Kitty Hoodie"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3939,6 +6146,24 @@
       "venueId": "dodger-stadium",
       "attendance": 48138,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Healthcare Appreciation Night Ticket Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Taco Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3950,6 +6175,20 @@
       "venueId": "dodger-stadium",
       "attendance": 50909,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jackie Robinson Day Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3961,6 +6200,24 @@
       "venueId": "dodger-stadium",
       "attendance": 53733,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Dodgers Date Night Ticket Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3972,6 +6229,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53397,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Roki Sasaki Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3983,6 +6254,20 @@
       "venueId": "dodger-stadium",
       "attendance": 52060,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3994,6 +6279,20 @@
       "venueId": "dodger-stadium",
       "attendance": 49918,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Japanese Heritage Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4005,6 +6304,24 @@
       "venueId": "dodger-stadium",
       "attendance": 51909,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Women's Night Ticket Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Taco Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4016,6 +6333,16 @@
       "venueId": "dodger-stadium",
       "attendance": 50555,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4027,6 +6354,24 @@
       "venueId": "dodger-stadium",
       "attendance": 51255,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Miguel Rojas \"Game 7 Home Run\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mental Health Awareness Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4038,6 +6383,20 @@
       "venueId": "dodger-stadium",
       "attendance": 50209,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Blake Snell \"Starter Series\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4049,6 +6408,32 @@
       "venueId": "dodger-stadium",
       "attendance": 49514,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mother's Day Clear Tote Bag"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Viva Los Dodgers"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "All Access Event - Mother's Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4060,6 +6445,20 @@
       "venueId": "dodger-stadium",
       "attendance": 44298,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2025 World Series Replica Trophy"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4071,6 +6470,20 @@
       "venueId": "dodger-stadium",
       "attendance": 50029,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ice Cube Lowrider Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4082,6 +6495,20 @@
       "venueId": "dodger-stadium",
       "attendance": 48043,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2025 World Champions Gold Jerseys"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4093,6 +6520,20 @@
       "venueId": "dodger-stadium",
       "attendance": 51048,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Star Wars Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4104,6 +6545,20 @@
       "venueId": "dodger-stadium",
       "attendance": 48778,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Dave Roberts Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4115,6 +6570,16 @@
       "venueId": "dodger-stadium",
       "attendance": 52148,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4126,6 +6591,20 @@
       "venueId": "dodger-stadium",
       "attendance": 50832,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yoshinobu Yamamoto \"Game 7 Last Out\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4137,6 +6616,20 @@
       "venueId": "dodger-stadium",
       "attendance": 50834,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Alex Vesia Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4148,6 +6641,20 @@
       "venueId": "dodger-stadium",
       "attendance": 51794,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Teoscar Hernández \"Mr. Seeds\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4159,6 +6666,20 @@
       "venueId": "dodger-stadium",
       "attendance": 50677,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4170,6 +6691,20 @@
       "venueId": "dodger-stadium",
       "attendance": 46850,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "LGBTQ+ Pride Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4181,6 +6716,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53448,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Tyler Glasnow \"Starter Series\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4192,6 +6741,20 @@
       "venueId": "dodger-stadium",
       "attendance": 49535,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4203,6 +6766,20 @@
       "venueId": "dodger-stadium",
       "attendance": 53911,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Filipino Heritage Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4214,6 +6791,24 @@
       "venueId": "dodger-stadium",
       "attendance": 49070,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Dodgers Soccer Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Taco Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4225,6 +6820,16 @@
       "venueId": "dodger-stadium",
       "attendance": 50705,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4236,6 +6841,20 @@
       "venueId": "dodger-stadium",
       "attendance": 51939,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mookie Betts \"Game 7 Double Play\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4247,6 +6866,20 @@
       "venueId": "dodger-stadium",
       "attendance": 50538,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shaquille O'Neal Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4258,6 +6891,32 @@
       "venueId": "dodger-stadium",
       "attendance": 50215,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Father's Day UNIQLO T-Shirt"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Viva Los Dodgers"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "All Access Event - Father's Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4269,6 +6928,24 @@
       "venueId": "dodger-stadium",
       "attendance": 54081,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "One Piece Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4280,6 +6957,20 @@
       "venueId": "dodger-stadium",
       "attendance": 49578,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4291,6 +6982,28 @@
       "venueId": "dodger-stadium",
       "attendance": 52284,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "A250 Commemorative Coin"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "250th Anniversary Fireworks Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fourth of July Picnic Blanket Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4302,6 +7015,16 @@
       "venueId": "dodger-stadium",
       "attendance": 46506,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4313,6 +7036,20 @@
       "venueId": "dodger-stadium",
       "attendance": 48245,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Freddie Freeman \"18th Inning Walk-Off\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4324,6 +7061,20 @@
       "venueId": "dodger-stadium",
       "attendance": 47806,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Hawaiian Shirt Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4335,6 +7086,20 @@
       "venueId": "dodger-stadium",
       "attendance": 49996,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shohei Ohtani \"Greatest Game\" Bobblehead Part 2"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4346,6 +7111,20 @@
       "venueId": "dodger-stadium",
       "attendance": 47727,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Black Heritage Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4357,6 +7136,20 @@
       "venueId": "dodger-stadium",
       "attendance": 48102,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Son Heung-min Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4368,6 +7161,28 @@
       "venueId": "dodger-stadium",
       "attendance": 47967,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kiké Hernández Pitching Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Viva Los Dodgers"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4379,6 +7194,24 @@
       "venueId": "dodger-stadium",
       "attendance": 51686,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2025 World Series Player Rings"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Taco Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4390,6 +7223,20 @@
       "venueId": "dodger-stadium",
       "attendance": 46065,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Edwin Díaz Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4401,6 +7248,20 @@
       "venueId": "dodger-stadium",
       "attendance": 52378,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Guatemalan Heritage Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4412,6 +7273,20 @@
       "venueId": "dodger-stadium",
       "attendance": 47903,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Kyle Tucker Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4423,6 +7298,24 @@
       "venueId": "dodger-stadium",
       "attendance": 49291,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "All Access Event - Joe Kelly"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4434,6 +7327,20 @@
       "venueId": "dodger-stadium",
       "attendance": 46834,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Universal Studios Hollywood Theme Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4445,6 +7352,20 @@
       "venueId": "dodger-stadium",
       "attendance": 51799,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Max Muncy \"Game 7 Home Run\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4456,6 +7377,20 @@
       "venueId": "dodger-stadium",
       "attendance": 49958,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Salvadoran Heritage Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4467,6 +7402,20 @@
       "venueId": "dodger-stadium",
       "attendance": 47578,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hello Kitty And Friends Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4478,6 +7427,20 @@
       "venueId": "dodger-stadium",
       "attendance": 46105,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Korean Heritage Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4489,6 +7452,20 @@
       "venueId": "dodger-stadium",
       "attendance": 47066,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Clayton Kershaw Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4500,6 +7477,20 @@
       "venueId": "dodger-stadium",
       "attendance": 47767,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Reggie Smith \"Legends of Dodger Baseball\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4511,6 +7502,24 @@
       "venueId": "dodger-stadium",
       "attendance": 45828,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Viva Los Dodgers"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4522,6 +7531,20 @@
       "venueId": "dodger-stadium",
       "attendance": 51872,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Luka Dončić Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4533,6 +7556,16 @@
       "venueId": "dodger-stadium",
       "attendance": 53417,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shohei Ohtani \"Starter Series\" Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4544,6 +7577,28 @@
       "venueId": "dodger-stadium",
       "attendance": 44092,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "UNIQLO Sunglasses"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Viva Los Dodgers"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4555,6 +7610,20 @@
       "venueId": "dodger-stadium",
       "attendance": 44593,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "LA Kings Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4566,6 +7635,20 @@
       "venueId": "dodger-stadium",
       "attendance": 45900,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2025 World Series Ohtani Ring"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4577,6 +7660,20 @@
       "venueId": "dodger-stadium",
       "attendance": 45150,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Lakers Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4588,6 +7685,24 @@
       "venueId": "dodger-stadium",
       "attendance": 49847,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Dodgers Date Night #2 Ticket Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4599,6 +7714,24 @@
       "venueId": "dodger-stadium",
       "attendance": 52785,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Yoshinobu Yamamoto \"Starter Series\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Union Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4610,6 +7743,20 @@
       "venueId": "dodger-stadium",
       "attendance": 54211,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "\"The Catch\" Bobblehead ft. Andy Pages and Kiké Hernández"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4621,6 +7768,20 @@
       "venueId": "dodger-stadium",
       "attendance": 50293,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "First Responders Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4632,6 +7793,24 @@
       "venueId": "dodger-stadium",
       "attendance": 48439,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Dia de Los Dodgers Ticket Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Taco Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4643,6 +7822,16 @@
       "venueId": "dodger-stadium",
       "attendance": 45252,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4654,6 +7843,20 @@
       "venueId": "dodger-stadium",
       "attendance": 48145,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4665,6 +7868,20 @@
       "venueId": "dodger-stadium",
       "attendance": 47410,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 94,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "La Gran Fiesta"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4676,6 +7893,28 @@
       "venueId": "dodger-stadium",
       "attendance": 48085,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 95,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Decorté Trading Cards"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Teacher Appreciation Day Ticket Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4687,6 +7926,24 @@
       "venueId": "dodger-stadium",
       "attendance": 46066,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 96,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2025 World Series Kershaw Ring"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Taco Tuesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4698,6 +7955,24 @@
       "venueId": "dodger-stadium",
       "attendance": 48201,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 97,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Hello Kitty And Friends Night Ticket Pack"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "All Access Event - Miguel Rojas Experience"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4709,6 +7984,24 @@
       "venueId": "dodger-stadium",
       "attendance": 53027,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 97,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Godzilla Minus Zero Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Drone Show"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Suites & Boxes"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4721,6 +8014,7 @@
       "attendance": 50194,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4733,6 +8027,7 @@
       "attendance": 50729,
       "kind": "announced",
       "postseason": true,
+      "promotions": [],
       "sourceId": "mlb"
     }
   ]

@@ -13,6 +13,11 @@
       "venueId": "angel-stadium",
       "attendance": 44723,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -24,6 +29,11 @@
       "venueId": "angel-stadium",
       "attendance": 42719,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -35,6 +45,11 @@
       "venueId": "angel-stadium",
       "attendance": 36139,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -46,6 +61,11 @@
       "venueId": "angel-stadium",
       "attendance": 41253,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -57,6 +77,11 @@
       "venueId": "angel-stadium",
       "attendance": 20480,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -68,6 +93,11 @@
       "venueId": "angel-stadium",
       "attendance": 16132,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -79,6 +109,11 @@
       "venueId": "angel-stadium",
       "attendance": 31679,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -90,6 +125,11 @@
       "venueId": "angel-stadium",
       "attendance": 43883,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -101,6 +141,11 @@
       "venueId": "angel-stadium",
       "attendance": 41984,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -112,6 +157,11 @@
       "venueId": "angel-stadium",
       "attendance": 23099,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -123,6 +173,11 @@
       "venueId": "angel-stadium",
       "attendance": 22551,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -134,6 +189,11 @@
       "venueId": "angel-stadium",
       "attendance": 28557,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -145,6 +205,11 @@
       "venueId": "angel-stadium",
       "attendance": 18826,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 7
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -156,6 +221,11 @@
       "venueId": "angel-stadium",
       "attendance": 41923,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -167,6 +237,11 @@
       "venueId": "angel-stadium",
       "attendance": 30666,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -178,6 +253,11 @@
       "venueId": "angel-stadium",
       "attendance": 32337,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -189,6 +269,11 @@
       "venueId": "angel-stadium",
       "attendance": 19537,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -200,6 +285,11 @@
       "venueId": "angel-stadium",
       "attendance": 39313,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -211,6 +301,11 @@
       "venueId": "angel-stadium",
       "attendance": 21045,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -222,6 +317,11 @@
       "venueId": "angel-stadium",
       "attendance": 32422,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -233,6 +333,11 @@
       "venueId": "angel-stadium",
       "attendance": 39045,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -244,6 +349,11 @@
       "venueId": "angel-stadium",
       "attendance": 40042,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -255,6 +365,11 @@
       "venueId": "angel-stadium",
       "attendance": 23791,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -266,6 +381,11 @@
       "venueId": "angel-stadium",
       "attendance": 22950,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -277,6 +397,11 @@
       "venueId": "angel-stadium",
       "attendance": 28228,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -288,6 +413,11 @@
       "venueId": "angel-stadium",
       "attendance": 44641,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -299,6 +429,11 @@
       "venueId": "angel-stadium",
       "attendance": 34005,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -310,6 +445,11 @@
       "venueId": "angel-stadium",
       "attendance": 36568,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 21
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -321,6 +461,11 @@
       "venueId": "angel-stadium",
       "attendance": 29395,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -332,6 +477,11 @@
       "venueId": "angel-stadium",
       "attendance": 27627,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -343,6 +493,11 @@
       "venueId": "angel-stadium",
       "attendance": 26587,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -354,6 +509,11 @@
       "venueId": "angel-stadium",
       "attendance": 28595,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 31
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -365,6 +525,11 @@
       "venueId": "angel-stadium",
       "attendance": 31499,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 31
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -376,6 +541,11 @@
       "venueId": "angel-stadium",
       "attendance": 36408,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -387,6 +557,11 @@
       "venueId": "angel-stadium",
       "attendance": 36598,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 32
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -398,6 +573,11 @@
       "venueId": "angel-stadium",
       "attendance": 22234,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -409,6 +589,11 @@
       "venueId": "angel-stadium",
       "attendance": 20189,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 37
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -420,6 +605,11 @@
       "venueId": "angel-stadium",
       "attendance": 34792,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -431,6 +621,11 @@
       "venueId": "angel-stadium",
       "attendance": 35704,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -442,6 +637,11 @@
       "venueId": "angel-stadium",
       "attendance": 35466,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 39
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -453,6 +653,11 @@
       "venueId": "angel-stadium",
       "attendance": 26489,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -464,6 +669,11 @@
       "venueId": "angel-stadium",
       "attendance": 21973,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -475,6 +685,11 @@
       "venueId": "angel-stadium",
       "attendance": 23979,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -486,6 +701,11 @@
       "venueId": "angel-stadium",
       "attendance": 27612,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -497,6 +717,11 @@
       "venueId": "angel-stadium",
       "attendance": 27180,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -508,6 +733,11 @@
       "venueId": "angel-stadium",
       "attendance": 27803,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 50
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -519,6 +749,11 @@
       "venueId": "angel-stadium",
       "attendance": 34496,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 50
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -530,6 +765,11 @@
       "venueId": "angel-stadium",
       "attendance": 44648,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 51
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -541,6 +781,11 @@
       "venueId": "angel-stadium",
       "attendance": 44728,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -552,6 +797,11 @@
       "venueId": "angel-stadium",
       "attendance": 29718,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -563,6 +813,11 @@
       "venueId": "angel-stadium",
       "attendance": 29906,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -574,6 +829,11 @@
       "venueId": "angel-stadium",
       "attendance": 32968,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -585,6 +845,11 @@
       "venueId": "angel-stadium",
       "attendance": 29257,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -596,6 +861,11 @@
       "venueId": "angel-stadium",
       "attendance": 22920,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -607,6 +877,11 @@
       "venueId": "angel-stadium",
       "attendance": 25190,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -618,6 +893,11 @@
       "venueId": "angel-stadium",
       "attendance": 23849,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 60
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -629,6 +909,11 @@
       "venueId": "angel-stadium",
       "attendance": 33459,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -640,6 +925,11 @@
       "venueId": "angel-stadium",
       "attendance": 43027,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 64
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -651,6 +941,11 @@
       "venueId": "angel-stadium",
       "attendance": 27515,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 64
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -662,6 +957,11 @@
       "venueId": "angel-stadium",
       "attendance": 23096,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 64
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -673,6 +973,11 @@
       "venueId": "angel-stadium",
       "attendance": 20294,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 65
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -684,6 +989,11 @@
       "venueId": "angel-stadium",
       "attendance": 19550,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -695,6 +1005,11 @@
       "venueId": "angel-stadium",
       "attendance": 44537,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 73
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -706,6 +1021,11 @@
       "venueId": "angel-stadium",
       "attendance": 42684,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 73
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -717,6 +1037,11 @@
       "venueId": "angel-stadium",
       "attendance": 43555,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 74
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -728,6 +1053,11 @@
       "venueId": "angel-stadium",
       "attendance": 22464,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 74
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -739,6 +1069,11 @@
       "venueId": "angel-stadium",
       "attendance": 38244,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 75
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -750,6 +1085,11 @@
       "venueId": "angel-stadium",
       "attendance": 28179,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 75
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -761,6 +1101,11 @@
       "venueId": "angel-stadium",
       "attendance": 19518,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 76
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -772,6 +1117,11 @@
       "venueId": "angel-stadium",
       "attendance": 20002,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 76
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -783,6 +1133,11 @@
       "venueId": "angel-stadium",
       "attendance": 15756,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 76
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -794,6 +1149,11 @@
       "venueId": "angel-stadium",
       "attendance": 37480,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 82
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -805,6 +1165,11 @@
       "venueId": "angel-stadium",
       "attendance": 35538,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 82
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -816,6 +1181,11 @@
       "venueId": "angel-stadium",
       "attendance": 24929,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 82
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -827,6 +1197,11 @@
       "venueId": "angel-stadium",
       "attendance": 15594,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 82
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -838,6 +1213,11 @@
       "venueId": "angel-stadium",
       "attendance": 19374,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -849,6 +1229,11 @@
       "venueId": "angel-stadium",
       "attendance": 23573,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -860,6 +1245,11 @@
       "venueId": "angel-stadium",
       "attendance": 31293,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -871,6 +1261,11 @@
       "venueId": "angel-stadium",
       "attendance": 32939,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -882,6 +1277,11 @@
       "venueId": "angel-stadium",
       "attendance": 32472,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -893,6 +1293,11 @@
       "venueId": "angel-stadium",
       "attendance": 26041,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -904,6 +1309,11 @@
       "venueId": "angel-stadium",
       "attendance": 44735,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -915,6 +1325,11 @@
       "venueId": "angel-stadium",
       "attendance": 44534,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -926,6 +1341,11 @@
       "venueId": "angel-stadium",
       "attendance": 31092,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -937,6 +1357,11 @@
       "venueId": "angel-stadium",
       "attendance": 19557,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -948,6 +1373,11 @@
       "venueId": "angel-stadium",
       "attendance": 27390,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -959,6 +1389,11 @@
       "venueId": "angel-stadium",
       "attendance": 17780,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -970,6 +1405,11 @@
       "venueId": "angel-stadium",
       "attendance": 44741,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -981,6 +1421,11 @@
       "venueId": "angel-stadium",
       "attendance": 44148,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -992,6 +1437,11 @@
       "venueId": "angel-stadium",
       "attendance": 36016,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1003,6 +1453,11 @@
       "venueId": "angel-stadium",
       "attendance": 23814,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1014,6 +1469,11 @@
       "venueId": "angel-stadium",
       "attendance": 26971,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1025,6 +1485,11 @@
       "venueId": "angel-stadium",
       "attendance": 24524,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1036,6 +1501,11 @@
       "venueId": "angel-stadium",
       "attendance": 21741,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1047,6 +1517,11 @@
       "venueId": "angel-stadium",
       "attendance": 39073,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 14
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1058,6 +1533,11 @@
       "venueId": "angel-stadium",
       "attendance": 37409,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 14
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1069,6 +1549,11 @@
       "venueId": "angel-stadium",
       "attendance": 41641,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1080,6 +1565,11 @@
       "venueId": "angel-stadium",
       "attendance": 26064,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1091,6 +1581,11 @@
       "venueId": "angel-stadium",
       "attendance": 29018,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1102,6 +1597,11 @@
       "venueId": "angel-stadium",
       "attendance": 20420,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1113,6 +1613,11 @@
       "venueId": "angel-stadium",
       "attendance": 31079,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1124,6 +1629,11 @@
       "venueId": "angel-stadium",
       "attendance": 35688,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1135,6 +1645,11 @@
       "venueId": "angel-stadium",
       "attendance": 42138,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1146,6 +1661,11 @@
       "venueId": "angel-stadium",
       "attendance": 25314,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1157,6 +1677,11 @@
       "venueId": "angel-stadium",
       "attendance": 25798,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1168,6 +1693,11 @@
       "venueId": "angel-stadium",
       "attendance": 26596,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1179,6 +1709,11 @@
       "venueId": "angel-stadium",
       "attendance": 32130,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1190,6 +1725,11 @@
       "venueId": "angel-stadium",
       "attendance": 38131,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1201,6 +1741,11 @@
       "venueId": "angel-stadium",
       "attendance": 36345,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 25
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1212,6 +1757,11 @@
       "venueId": "angel-stadium",
       "attendance": 27716,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1223,6 +1773,11 @@
       "venueId": "angel-stadium",
       "attendance": 28817,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1234,6 +1789,11 @@
       "venueId": "angel-stadium",
       "attendance": 28179,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1245,6 +1805,11 @@
       "venueId": "angel-stadium",
       "attendance": 36064,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1256,6 +1821,11 @@
       "venueId": "angel-stadium",
       "attendance": 38454,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1267,6 +1837,11 @@
       "venueId": "angel-stadium",
       "attendance": 39405,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 31
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1278,6 +1853,11 @@
       "venueId": "angel-stadium",
       "attendance": 44703,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1289,6 +1869,11 @@
       "venueId": "angel-stadium",
       "attendance": 44760,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1300,6 +1885,11 @@
       "venueId": "angel-stadium",
       "attendance": 28554,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 37
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1311,6 +1901,11 @@
       "venueId": "angel-stadium",
       "attendance": 33637,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 37
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1322,6 +1917,11 @@
       "venueId": "angel-stadium",
       "attendance": 29861,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 37
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1333,6 +1933,11 @@
       "venueId": "angel-stadium",
       "attendance": 27630,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1344,6 +1949,11 @@
       "venueId": "angel-stadium",
       "attendance": 34957,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 39
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1355,6 +1965,11 @@
       "venueId": "angel-stadium",
       "attendance": 44472,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1366,6 +1981,11 @@
       "venueId": "angel-stadium",
       "attendance": 29167,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 41
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1377,6 +1997,11 @@
       "venueId": "angel-stadium",
       "attendance": 38850,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1388,6 +2013,11 @@
       "venueId": "angel-stadium",
       "attendance": 37523,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1399,6 +2029,11 @@
       "venueId": "angel-stadium",
       "attendance": 34679,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1410,6 +2045,11 @@
       "venueId": "angel-stadium",
       "attendance": 41180,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1421,6 +2061,11 @@
       "venueId": "angel-stadium",
       "attendance": 41556,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1432,6 +2077,11 @@
       "venueId": "angel-stadium",
       "attendance": 39141,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1443,6 +2093,11 @@
       "venueId": "angel-stadium",
       "attendance": 40309,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1454,6 +2109,11 @@
       "venueId": "angel-stadium",
       "attendance": 37240,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1465,6 +2125,11 @@
       "venueId": "angel-stadium",
       "attendance": 28385,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 49
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1476,6 +2141,11 @@
       "venueId": "angel-stadium",
       "attendance": 37701,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1487,6 +2157,11 @@
       "venueId": "angel-stadium",
       "attendance": 34479,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1498,6 +2173,11 @@
       "venueId": "angel-stadium",
       "attendance": 35318,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 55
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1509,6 +2189,11 @@
       "venueId": "angel-stadium",
       "attendance": 29960,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 56
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1520,6 +2205,11 @@
       "venueId": "angel-stadium",
       "attendance": 32582,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1531,6 +2221,11 @@
       "venueId": "angel-stadium",
       "attendance": 31974,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1542,6 +2237,11 @@
       "venueId": "angel-stadium",
       "attendance": 36980,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1553,6 +2253,11 @@
       "venueId": "angel-stadium",
       "attendance": 38297,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1564,6 +2269,11 @@
       "venueId": "angel-stadium",
       "attendance": 27309,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1575,6 +2285,11 @@
       "venueId": "angel-stadium",
       "attendance": 33803,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1586,6 +2301,11 @@
       "venueId": "angel-stadium",
       "attendance": 24596,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1597,6 +2317,11 @@
       "venueId": "angel-stadium",
       "attendance": 26583,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1608,6 +2333,11 @@
       "venueId": "angel-stadium",
       "attendance": 28776,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 65
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1619,6 +2349,11 @@
       "venueId": "angel-stadium",
       "attendance": 24596,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1630,6 +2365,11 @@
       "venueId": "angel-stadium",
       "attendance": 29214,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 73
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1641,6 +2381,11 @@
       "venueId": "angel-stadium",
       "attendance": 22496,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 74
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1652,6 +2397,11 @@
       "venueId": "angel-stadium",
       "attendance": 29021,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 75
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1663,6 +2413,11 @@
       "venueId": "angel-stadium",
       "attendance": 24288,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 76
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1674,6 +2429,11 @@
       "venueId": "angel-stadium",
       "attendance": 34209,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 76
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1685,6 +2445,11 @@
       "venueId": "angel-stadium",
       "attendance": 27233,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 77
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1696,6 +2461,11 @@
       "venueId": "angel-stadium",
       "attendance": 26134,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 77
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1707,6 +2477,11 @@
       "venueId": "angel-stadium",
       "attendance": 37822,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 79
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1718,6 +2493,11 @@
       "venueId": "angel-stadium",
       "attendance": 35022,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 80
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1729,6 +2509,11 @@
       "venueId": "angel-stadium",
       "attendance": 34943,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 81
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1740,6 +2525,11 @@
       "venueId": "angel-stadium",
       "attendance": 25208,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1751,6 +2541,11 @@
       "venueId": "angel-stadium",
       "attendance": 26976,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 87
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1762,6 +2557,11 @@
       "venueId": "angel-stadium",
       "attendance": 30020,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 87
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1773,6 +2573,11 @@
       "venueId": "angel-stadium",
       "attendance": 32333,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 88
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1784,6 +2589,11 @@
       "venueId": "angel-stadium",
       "attendance": 31633,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 88
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1795,6 +2605,11 @@
       "venueId": "angel-stadium",
       "attendance": 26539,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 89
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1806,6 +2621,11 @@
       "venueId": "angel-stadium",
       "attendance": 44714,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1817,6 +2637,11 @@
       "venueId": "angel-stadium",
       "attendance": 44485,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1828,6 +2653,11 @@
       "venueId": "angel-stadium",
       "attendance": 38917,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1839,6 +2669,11 @@
       "venueId": "angel-stadium",
       "attendance": 18748,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1850,6 +2685,11 @@
       "venueId": "angel-stadium",
       "attendance": 20271,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1861,6 +2701,11 @@
       "venueId": "angel-stadium",
       "attendance": 16600,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1872,6 +2717,11 @@
       "venueId": "angel-stadium",
       "attendance": 26081,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1883,6 +2733,11 @@
       "venueId": "angel-stadium",
       "attendance": 22803,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1894,6 +2749,11 @@
       "venueId": "angel-stadium",
       "attendance": 19557,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 14
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1905,6 +2765,11 @@
       "venueId": "angel-stadium",
       "attendance": 31087,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1916,6 +2781,11 @@
       "venueId": "angel-stadium",
       "attendance": 44478,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1927,6 +2797,11 @@
       "venueId": "angel-stadium",
       "attendance": 38955,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1938,6 +2813,11 @@
       "venueId": "angel-stadium",
       "attendance": 25449,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1949,6 +2829,11 @@
       "venueId": "angel-stadium",
       "attendance": 23949,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 18
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1960,6 +2845,11 @@
       "venueId": "angel-stadium",
       "attendance": 20156,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1971,6 +2861,11 @@
       "venueId": "angel-stadium",
       "attendance": 23568,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1982,6 +2877,11 @@
       "venueId": "angel-stadium",
       "attendance": 29126,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 24
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -1993,6 +2893,11 @@
       "venueId": "angel-stadium",
       "attendance": 31593,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 25
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2004,6 +2909,11 @@
       "venueId": "angel-stadium",
       "attendance": 27723,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 25
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2015,6 +2925,11 @@
       "venueId": "angel-stadium",
       "attendance": 22814,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 26
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2026,6 +2941,11 @@
       "venueId": "angel-stadium",
       "attendance": 21490,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 27
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2037,6 +2957,11 @@
       "venueId": "angel-stadium",
       "attendance": 21961,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2048,6 +2973,11 @@
       "venueId": "angel-stadium",
       "attendance": 37618,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2059,6 +2989,11 @@
       "venueId": "angel-stadium",
       "attendance": 35861,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 31
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2070,6 +3005,11 @@
       "venueId": "angel-stadium",
       "attendance": 38741,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 32
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2081,6 +3021,11 @@
       "venueId": "angel-stadium",
       "attendance": 34894,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2092,6 +3037,11 @@
       "venueId": "angel-stadium",
       "attendance": 34313,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2103,6 +3053,11 @@
       "venueId": "angel-stadium",
       "attendance": 36312,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2114,6 +3069,11 @@
       "venueId": "angel-stadium",
       "attendance": 32683,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2125,6 +3085,11 @@
       "venueId": "angel-stadium",
       "attendance": 33947,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2136,6 +3101,11 @@
       "venueId": "angel-stadium",
       "attendance": 31960,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2147,6 +3117,11 @@
       "venueId": "angel-stadium",
       "attendance": 36534,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2158,6 +3133,11 @@
       "venueId": "angel-stadium",
       "attendance": 38217,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 39
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2169,6 +3149,11 @@
       "venueId": "angel-stadium",
       "attendance": 42703,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2180,6 +3165,11 @@
       "venueId": "angel-stadium",
       "attendance": 26575,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 43
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2191,6 +3181,11 @@
       "venueId": "angel-stadium",
       "attendance": 27967,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 43
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2202,6 +3197,11 @@
       "venueId": "angel-stadium",
       "attendance": 28483,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 44
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2213,6 +3213,11 @@
       "venueId": "angel-stadium",
       "attendance": 24586,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2224,6 +3229,11 @@
       "venueId": "angel-stadium",
       "attendance": 26473,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2235,6 +3245,11 @@
       "venueId": "angel-stadium",
       "attendance": 31240,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2246,6 +3261,11 @@
       "venueId": "angel-stadium",
       "attendance": 27340,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2257,6 +3277,11 @@
       "venueId": "angel-stadium",
       "attendance": 34381,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2268,6 +3293,11 @@
       "venueId": "angel-stadium",
       "attendance": 39559,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2279,6 +3309,11 @@
       "venueId": "angel-stadium",
       "attendance": 35061,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 46
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2290,6 +3325,11 @@
       "venueId": "angel-stadium",
       "attendance": 25193,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 52
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2301,6 +3341,11 @@
       "venueId": "angel-stadium",
       "attendance": 23791,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2312,6 +3357,11 @@
       "venueId": "angel-stadium",
       "attendance": 23230,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2323,6 +3373,11 @@
       "venueId": "angel-stadium",
       "attendance": 26747,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 54
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2334,6 +3389,11 @@
       "venueId": "angel-stadium",
       "attendance": 31243,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 55
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2345,6 +3405,11 @@
       "venueId": "angel-stadium",
       "attendance": 43273,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 55
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2356,6 +3421,11 @@
       "venueId": "angel-stadium",
       "attendance": 26015,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 55
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2367,6 +3437,11 @@
       "venueId": "angel-stadium",
       "attendance": 25752,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 57
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2378,6 +3453,11 @@
       "venueId": "angel-stadium",
       "attendance": 28722,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2389,6 +3469,11 @@
       "venueId": "angel-stadium",
       "attendance": 33755,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2400,6 +3485,11 @@
       "venueId": "angel-stadium",
       "attendance": 27016,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 60
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2411,6 +3501,11 @@
       "venueId": "angel-stadium",
       "attendance": 25241,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 60
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2422,6 +3517,11 @@
       "venueId": "angel-stadium",
       "attendance": 23658,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 60
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2433,6 +3533,11 @@
       "venueId": "angel-stadium",
       "attendance": 27335,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 61
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2444,6 +3549,11 @@
       "venueId": "angel-stadium",
       "attendance": 37012,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2455,6 +3565,11 @@
       "venueId": "angel-stadium",
       "attendance": 36377,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2466,6 +3581,11 @@
       "venueId": "angel-stadium",
       "attendance": 37811,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 63
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2477,6 +3597,11 @@
       "venueId": "angel-stadium",
       "attendance": 29676,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2488,6 +3613,11 @@
       "venueId": "angel-stadium",
       "attendance": 30982,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 67
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2499,6 +3629,11 @@
       "venueId": "angel-stadium",
       "attendance": 28356,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 68
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2510,6 +3645,11 @@
       "venueId": "angel-stadium",
       "attendance": 37736,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 69
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2521,6 +3661,11 @@
       "venueId": "angel-stadium",
       "attendance": 37268,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 69
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2532,6 +3677,11 @@
       "venueId": "angel-stadium",
       "attendance": 36102,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 70
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2543,6 +3693,11 @@
       "venueId": "angel-stadium",
       "attendance": 34435,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 79
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2554,6 +3709,11 @@
       "venueId": "angel-stadium",
       "attendance": 34253,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 80
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2565,6 +3725,11 @@
       "venueId": "angel-stadium",
       "attendance": 39370,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 80
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2576,6 +3741,11 @@
       "venueId": "angel-stadium",
       "attendance": 44731,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 80
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2587,6 +3757,11 @@
       "venueId": "angel-stadium",
       "attendance": 44822,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 81
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2598,6 +3773,11 @@
       "venueId": "angel-stadium",
       "attendance": 36226,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2609,6 +3789,11 @@
       "venueId": "angel-stadium",
       "attendance": 39880,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 87
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2620,6 +3805,11 @@
       "venueId": "angel-stadium",
       "attendance": 41005,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 88
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2631,6 +3821,11 @@
       "venueId": "angel-stadium",
       "attendance": 35587,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 89
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2642,6 +3837,11 @@
       "venueId": "angel-stadium",
       "attendance": 36254,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 90
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2653,6 +3853,11 @@
       "venueId": "angel-stadium",
       "attendance": 22757,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 90
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2664,6 +3869,11 @@
       "venueId": "angel-stadium",
       "attendance": 39308,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 96
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2675,6 +3885,11 @@
       "venueId": "angel-stadium",
       "attendance": 41560,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 97
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2686,6 +3901,11 @@
       "venueId": "angel-stadium",
       "attendance": 35145,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 98
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2697,6 +3917,20 @@
       "venueId": "angel-stadium",
       "attendance": 44749,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Wall Calendar"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Theme: Home Opener"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2708,6 +3942,20 @@
       "venueId": "angel-stadium",
       "attendance": 41128,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Wall Calendar"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2719,6 +3967,11 @@
       "venueId": "angel-stadium",
       "attendance": 41480,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2730,6 +3983,20 @@
       "venueId": "angel-stadium",
       "attendance": 43912,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Star Wars Weekend Light Show"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Theme: Star Wars Weekend"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2741,6 +4008,24 @@
       "venueId": "angel-stadium",
       "attendance": 44374,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Big A & Millennium Falcon"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Theme: Star Wars Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2752,6 +4037,11 @@
       "venueId": "angel-stadium",
       "attendance": 36026,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2763,6 +4053,11 @@
       "venueId": "angel-stadium",
       "attendance": 30439,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 10
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2774,6 +4069,11 @@
       "venueId": "angel-stadium",
       "attendance": 31256,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2785,6 +4085,11 @@
       "venueId": "angel-stadium",
       "attendance": 29060,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 12
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2796,6 +4101,11 @@
       "venueId": "angel-stadium",
       "attendance": 28486,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 17
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2807,6 +4117,16 @@
       "venueId": "angel-stadium",
       "attendance": 29870,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Ben Joyce Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2818,6 +4138,16 @@
       "venueId": "angel-stadium",
       "attendance": 31335,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2829,6 +4159,11 @@
       "venueId": "angel-stadium",
       "attendance": 37554,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 19
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2840,6 +4175,11 @@
       "venueId": "angel-stadium",
       "attendance": 25867,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2851,6 +4191,11 @@
       "venueId": "angel-stadium",
       "attendance": 26646,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2862,6 +4207,11 @@
       "venueId": "angel-stadium",
       "attendance": 26245,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 20
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2873,6 +4223,16 @@
       "venueId": "angel-stadium",
       "attendance": 30778,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Quilted Quarter Zip"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2884,6 +4244,16 @@
       "venueId": "angel-stadium",
       "attendance": 27975,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2895,6 +4265,16 @@
       "venueId": "angel-stadium",
       "attendance": 29460,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Clear Belt Bag"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2906,6 +4286,16 @@
       "venueId": "angel-stadium",
       "attendance": 28116,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Angels Vest"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2917,6 +4307,16 @@
       "venueId": "angel-stadium",
       "attendance": 29301,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2928,6 +4328,20 @@
       "venueId": "angel-stadium",
       "attendance": 37074,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Stitch Water Bottle"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2939,6 +4353,11 @@
       "venueId": "angel-stadium",
       "attendance": 43626,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 27
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2950,6 +4369,11 @@
       "venueId": "angel-stadium",
       "attendance": 34491,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2961,6 +4385,11 @@
       "venueId": "angel-stadium",
       "attendance": 36808,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 29
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -2972,6 +4401,20 @@
       "venueId": "angel-stadium",
       "attendance": 34915,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: City Connect Hawaiian Shirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Theme: Beach Weekend"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2983,6 +4426,20 @@
       "venueId": "angel-stadium",
       "attendance": 29407,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Theme: Beach Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -2994,6 +4451,24 @@
       "venueId": "angel-stadium",
       "attendance": 31416,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Logan O'Hoppe Youth Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Theme: Beach Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3005,6 +4480,11 @@
       "venueId": "angel-stadium",
       "attendance": 24884,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3016,6 +4496,11 @@
       "venueId": "angel-stadium",
       "attendance": 27480,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3027,6 +4512,11 @@
       "venueId": "angel-stadium",
       "attendance": 21741,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3038,6 +4528,16 @@
       "venueId": "angel-stadium",
       "attendance": 29580,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: City Connect Tank Top"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3049,6 +4549,20 @@
       "venueId": "angel-stadium",
       "attendance": 32326,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Nolan Schanuel Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3060,6 +4574,16 @@
       "venueId": "angel-stadium",
       "attendance": 29154,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3071,6 +4595,11 @@
       "venueId": "angel-stadium",
       "attendance": 30137,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3082,6 +4611,11 @@
       "venueId": "angel-stadium",
       "attendance": 33115,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3093,6 +4627,11 @@
       "venueId": "angel-stadium",
       "attendance": 28301,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 40
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3104,6 +4643,20 @@
       "venueId": "angel-stadium",
       "attendance": 34289,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Theme: Christmas in June"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Christmas in June Drone Show"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3115,6 +4668,24 @@
       "venueId": "angel-stadium",
       "attendance": 39623,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Plaid Blanket"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Theme: Christmas in June"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3126,6 +4697,20 @@
       "venueId": "angel-stadium",
       "attendance": 33661,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Theme: Christmas in June"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3137,6 +4722,16 @@
       "venueId": "angel-stadium",
       "attendance": 24382,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Theme: Throwback Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3148,6 +4743,16 @@
       "venueId": "angel-stadium",
       "attendance": 26368,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Theme: Throwback Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3159,6 +4764,16 @@
       "venueId": "angel-stadium",
       "attendance": 25462,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Theme: Throwback Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3170,6 +4785,16 @@
       "venueId": "angel-stadium",
       "attendance": 27071,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Theme: Throwback Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3181,6 +4806,20 @@
       "venueId": "angel-stadium",
       "attendance": 35209,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Throwback Reversible Bucket Hat"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Theme: Throwback Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3192,6 +4831,24 @@
       "venueId": "angel-stadium",
       "attendance": 43008,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Throwback Long Sleeve Shirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Theme: Throwback Week"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3203,6 +4860,20 @@
       "venueId": "angel-stadium",
       "attendance": 26773,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Theme: Throwback Week"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3214,6 +4885,11 @@
       "venueId": "angel-stadium",
       "attendance": 28532,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 53
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3225,6 +4901,16 @@
       "venueId": "angel-stadium",
       "attendance": 37821,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Zach Neto Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3236,6 +4922,20 @@
       "venueId": "angel-stadium",
       "attendance": 40836,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Corduroy Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3247,6 +4947,20 @@
       "venueId": "angel-stadium",
       "attendance": 27219,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Mike Trout Youth Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3258,6 +4972,11 @@
       "venueId": "angel-stadium",
       "attendance": 24538,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 55
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3269,6 +4988,11 @@
       "venueId": "angel-stadium",
       "attendance": 26390,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 55
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3280,6 +5004,11 @@
       "venueId": "angel-stadium",
       "attendance": 27162,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 55
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3291,6 +5020,16 @@
       "venueId": "angel-stadium",
       "attendance": 29937,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Postcard Shirt"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3302,6 +5041,16 @@
       "venueId": "angel-stadium",
       "attendance": 39161,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3313,6 +5062,11 @@
       "venueId": "angel-stadium",
       "attendance": 30963,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3324,6 +5078,11 @@
       "venueId": "angel-stadium",
       "attendance": 25754,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3335,6 +5094,11 @@
       "venueId": "angel-stadium",
       "attendance": 27018,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 58
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3346,6 +5110,11 @@
       "venueId": "angel-stadium",
       "attendance": 22064,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 59
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3357,6 +5126,11 @@
       "venueId": "angel-stadium",
       "attendance": 44571,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3368,6 +5142,11 @@
       "venueId": "angel-stadium",
       "attendance": 44741,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3379,6 +5158,11 @@
       "venueId": "angel-stadium",
       "attendance": 44893,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 62
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3390,6 +5174,11 @@
       "venueId": "angel-stadium",
       "attendance": 25421,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 64
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3401,6 +5190,11 @@
       "venueId": "angel-stadium",
       "attendance": 22276,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 65
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3412,6 +5206,11 @@
       "venueId": "angel-stadium",
       "attendance": 27083,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 66
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3423,6 +5222,16 @@
       "venueId": "angel-stadium",
       "attendance": 39872,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Logan O'Hoppe Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3434,6 +5243,20 @@
       "venueId": "angel-stadium",
       "attendance": 44355,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: City Connect Angels Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3445,6 +5268,11 @@
       "venueId": "angel-stadium",
       "attendance": 41206,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 68
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3456,6 +5284,20 @@
       "venueId": "angel-stadium",
       "attendance": 30779,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Angels & Ducks Cooler Bag"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Theme: Ducks Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3467,6 +5309,20 @@
       "venueId": "angel-stadium",
       "attendance": 35816,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fiesta Angels"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3478,6 +5334,11 @@
       "venueId": "angel-stadium",
       "attendance": 33053,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 76
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3489,6 +5350,16 @@
       "venueId": "angel-stadium",
       "attendance": 28824,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Mike Trout Rookie of the Year Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3500,6 +5371,11 @@
       "venueId": "angel-stadium",
       "attendance": 29694,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 77
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3511,6 +5387,11 @@
       "venueId": "angel-stadium",
       "attendance": 20746,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 77
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3522,6 +5403,11 @@
       "venueId": "angel-stadium",
       "attendance": 30861,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3533,6 +5419,16 @@
       "venueId": "angel-stadium",
       "attendance": 29266,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 87
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Mike Trout 400th Home Run Poster"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3544,6 +5440,11 @@
       "venueId": "angel-stadium",
       "attendance": 35752,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 87
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3555,6 +5456,16 @@
       "venueId": "angel-stadium",
       "attendance": 37448,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 88
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Angels Jersey"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3566,6 +5477,24 @@
       "venueId": "angel-stadium",
       "attendance": 36487,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 88
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Team Photo"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Theme: Fan Appreciation Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3577,6 +5506,11 @@
       "venueId": "angel-stadium",
       "attendance": 30609,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 89
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3588,6 +5522,24 @@
       "venueId": "angel-stadium",
       "attendance": 44931,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Home Opener"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Home Opener Red Carpet Event"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Wall Calendar"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3599,6 +5551,20 @@
       "venueId": "angel-stadium",
       "attendance": 44084,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Wall Calendar"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3610,6 +5576,11 @@
       "venueId": "angel-stadium",
       "attendance": 27712,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3621,6 +5592,11 @@
       "venueId": "angel-stadium",
       "attendance": 25471,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3632,6 +5608,16 @@
       "venueId": "angel-stadium",
       "attendance": 40450,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Mike Trout 400th Home Run Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3643,6 +5629,11 @@
       "venueId": "angel-stadium",
       "attendance": 21375,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3654,6 +5645,20 @@
       "venueId": "angel-stadium",
       "attendance": 44551,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: The Mandalorian & Grogu Angels Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Star Wars Weekend"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3665,6 +5670,20 @@
       "venueId": "angel-stadium",
       "attendance": 44279,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Star Wars Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3676,6 +5695,11 @@
       "venueId": "angel-stadium",
       "attendance": 44560,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 11
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3687,6 +5711,16 @@
       "venueId": "angel-stadium",
       "attendance": 37897,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Angels Hockey Jersey"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3698,6 +5732,11 @@
       "venueId": "angel-stadium",
       "attendance": 28641,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3709,6 +5748,11 @@
       "venueId": "angel-stadium",
       "attendance": 25306,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 14
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3720,6 +5764,16 @@
       "venueId": "angel-stadium",
       "attendance": 43959,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Angels Bomber Jacket"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3731,6 +5785,16 @@
       "venueId": "angel-stadium",
       "attendance": 42788,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3742,6 +5806,11 @@
       "venueId": "angel-stadium",
       "attendance": 41614,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 21
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3753,6 +5822,11 @@
       "venueId": "angel-stadium",
       "attendance": 26262,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 22
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3764,6 +5838,11 @@
       "venueId": "angel-stadium",
       "attendance": 26892,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3775,6 +5854,11 @@
       "venueId": "angel-stadium",
       "attendance": 23338,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 23
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3786,6 +5870,11 @@
       "venueId": "angel-stadium",
       "attendance": 44887,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 28
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3797,6 +5886,16 @@
       "venueId": "angel-stadium",
       "attendance": 44841,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3808,6 +5907,11 @@
       "venueId": "angel-stadium",
       "attendance": 44809,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 30
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3819,6 +5923,11 @@
       "venueId": "angel-stadium",
       "attendance": 25776,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 31
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3830,6 +5939,11 @@
       "venueId": "angel-stadium",
       "attendance": 23803,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 31
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3841,6 +5955,11 @@
       "venueId": "angel-stadium",
       "attendance": 24588,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 32
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3852,6 +5971,11 @@
       "venueId": "angel-stadium",
       "attendance": 25848,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 33
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3863,6 +5987,16 @@
       "venueId": "angel-stadium",
       "attendance": 32488,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Camo Trucker Hat"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3874,6 +6008,16 @@
       "venueId": "angel-stadium",
       "attendance": 31860,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3885,6 +6029,11 @@
       "venueId": "angel-stadium",
       "attendance": 36903,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 34
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3896,6 +6045,16 @@
       "venueId": "angel-stadium",
       "attendance": 27165,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: City Connect Cooler Tote"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3907,6 +6066,11 @@
       "venueId": "angel-stadium",
       "attendance": 26426,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 38
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3918,6 +6082,11 @@
       "venueId": "angel-stadium",
       "attendance": 26554,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 39
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3929,6 +6098,16 @@
       "venueId": "angel-stadium",
       "attendance": 25474,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Yusei Kikuchi Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3940,6 +6119,11 @@
       "venueId": "angel-stadium",
       "attendance": 24767,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3951,6 +6135,11 @@
       "venueId": "angel-stadium",
       "attendance": 25179,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 42
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -3962,6 +6151,20 @@
       "venueId": "angel-stadium",
       "attendance": 37023,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Angels Soccer Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Aerospace Night Drone Show"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3973,6 +6176,16 @@
       "venueId": "angel-stadium",
       "attendance": 34030,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3984,6 +6197,16 @@
       "venueId": "angel-stadium",
       "attendance": 34048,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -3995,6 +6218,11 @@
       "venueId": "angel-stadium",
       "attendance": 28431,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 47
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4006,6 +6234,11 @@
       "venueId": "angel-stadium",
       "attendance": 31569,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4017,6 +6250,11 @@
       "venueId": "angel-stadium",
       "attendance": 27585,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 48
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4028,6 +6266,20 @@
       "venueId": "angel-stadium",
       "attendance": 29089,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Plaid Santa Hat"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Christmas in June"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4039,6 +6291,20 @@
       "venueId": "angel-stadium",
       "attendance": 37064,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Christmas in June"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4050,6 +6316,20 @@
       "venueId": "angel-stadium",
       "attendance": 32557,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Christmas in June"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4061,6 +6341,20 @@
       "venueId": "angel-stadium",
       "attendance": 43747,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Patriotic Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Fourth of July Weekend & Postgame Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4072,6 +6366,20 @@
       "venueId": "angel-stadium",
       "attendance": 43599,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Fourth of July"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4083,6 +6391,16 @@
       "venueId": "angel-stadium",
       "attendance": 35992,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Fourth of July Weekend & Postgame Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4094,6 +6412,20 @@
       "venueId": "angel-stadium",
       "attendance": 29536,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Throwback Collared Crewneck"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Throwback Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4105,6 +6437,24 @@
       "venueId": "angel-stadium",
       "attendance": 32003,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Throwback Week"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Event: Cal State Fullerton College Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4116,6 +6466,20 @@
       "venueId": "angel-stadium",
       "attendance": 30778,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Throwback Week"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4127,6 +6491,20 @@
       "venueId": "angel-stadium",
       "attendance": 29794,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Throwback Clear Backpack"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Throwback Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4138,6 +6516,16 @@
       "venueId": "angel-stadium",
       "attendance": 33151,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Throwback Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4149,6 +6537,16 @@
       "venueId": "angel-stadium",
       "attendance": 25187,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Throwback Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4160,6 +6558,16 @@
       "venueId": "angel-stadium",
       "attendance": 30121,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Beach Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4171,6 +6579,20 @@
       "venueId": "angel-stadium",
       "attendance": 32051,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Beach Week"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Vietnamese Heritage Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4182,6 +6604,20 @@
       "venueId": "angel-stadium",
       "attendance": 26417,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: City Connect Beach Towel"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Beach Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4193,6 +6629,20 @@
       "venueId": "angel-stadium",
       "attendance": 43720,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: SpongeBob Angels Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Beach Week"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4204,6 +6654,20 @@
       "venueId": "angel-stadium",
       "attendance": 31124,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Beach Week"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4215,6 +6679,20 @@
       "venueId": "angel-stadium",
       "attendance": 31061,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Event: Beach Week"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4226,6 +6704,11 @@
       "venueId": "angel-stadium",
       "attendance": 23880,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 73
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4237,6 +6720,16 @@
       "venueId": "angel-stadium",
       "attendance": 23648,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Event: Korean Heritage Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4248,6 +6741,16 @@
       "venueId": "angel-stadium",
       "attendance": 33733,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Mickey Mouse Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4259,6 +6762,16 @@
       "venueId": "angel-stadium",
       "attendance": 24959,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Event: Law Enforcement Appreciation Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4270,6 +6783,16 @@
       "venueId": "angel-stadium",
       "attendance": 23139,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Zach Neto T-Shirt"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4281,6 +6804,20 @@
       "venueId": "angel-stadium",
       "attendance": 30002,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Event: UC Irvine College Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4292,6 +6829,16 @@
       "venueId": "angel-stadium",
       "attendance": 28036,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4303,6 +6850,16 @@
       "venueId": "angel-stadium",
       "attendance": 26302,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Event: Anime Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4314,6 +6871,11 @@
       "venueId": "angel-stadium",
       "attendance": 26001,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 80
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4325,6 +6887,11 @@
       "venueId": "angel-stadium",
       "attendance": 25161,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 81
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4336,6 +6903,16 @@
       "venueId": "angel-stadium",
       "attendance": 34951,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 82
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Zach Neto Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4347,6 +6924,20 @@
       "venueId": "angel-stadium",
       "attendance": 38677,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Event: Mexican Heritage Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4358,6 +6949,24 @@
       "venueId": "angel-stadium",
       "attendance": 31035,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 84
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Jo Adell Angels Football Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Family Sunday & Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Event: USC College Day"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4369,6 +6978,11 @@
       "venueId": "angel-stadium",
       "attendance": 37613,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 85
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4380,6 +6994,11 @@
       "venueId": "angel-stadium",
       "attendance": 37678,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 85
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4391,6 +7010,11 @@
       "venueId": "angel-stadium",
       "attendance": 38372,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 86
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4402,6 +7026,11 @@
       "venueId": "angel-stadium",
       "attendance": 28311,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 93
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4413,6 +7042,16 @@
       "venueId": "angel-stadium",
       "attendance": 30906,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 93
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Event: Chapman University College Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4424,6 +7063,16 @@
       "venueId": "angel-stadium",
       "attendance": 38906,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 93
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Adell HR Robbery Bobblehead"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4435,6 +7084,11 @@
       "venueId": "angel-stadium",
       "attendance": 34251,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 94
+      },
+      "promotions": [],
       "sourceId": "mlb"
     },
     {
@@ -4446,6 +7100,24 @@
       "venueId": "angel-stadium",
       "attendance": 35237,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 94
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Angels & Ducks Blanket"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Ducks Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Event: Japanese Heritage Night"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4457,6 +7129,28 @@
       "venueId": "angel-stadium",
       "attendance": 33726,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 95
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Giveaway: Team Photo"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Fan Appreciation Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Event: Yard Sale"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Event: Saturday Night Fireworks"
+        }
+      ],
       "sourceId": "mlb"
     },
     {
@@ -4468,6 +7162,11 @@
       "venueId": "angel-stadium",
       "attendance": 32240,
       "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 95
+      },
+      "promotions": [],
       "sourceId": "mlb"
     }
   ]

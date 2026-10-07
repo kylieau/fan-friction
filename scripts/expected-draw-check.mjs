@@ -36,6 +36,11 @@ const OPP_SHRINK_K = 3;
 /** Weight of a meeting by how many seasons back it was (0 = this season). */
 const OPP_SEASON_WEIGHT = [1, 1, 0.5, 0.25];
 const FRICTION = 5000;
+// Added Oct 7, 2026, before their first run (MLB only: its feed carries both):
+/** Promotions: per team, giveaway / fireworks / ticket offer, weekday and weekend apart, shrunk n ÷ (n + k). */
+const PROMO_SHRINK_K = 3;
+/** Standings: the home record going in, once this many games are played; slopes fit on earlier seasons, before Aug 1 and after. */
+const STANDINGS_MIN_PLAYED = 20;
 // --------------------------------------
 
 function median(xs) {
@@ -71,6 +76,28 @@ function seriesCount(dates) {
   return n;
 }
 
+/** The promotion flags a game carries (MLB's own list). */
+function promoFlags(g) {
+  const flags = new Set();
+  for (const p of g.promotions ?? []) {
+    if (/firework/i.test(p.name ?? '')) flags.add('fireworks');
+    else if (p.type === 'Giveaway') flags.add('giveaway');
+    else if (p.type === 'Ticket Offer') flags.add('discount');
+  }
+  return flags;
+}
+
+function weekendLike(build, date) {
+  const dc = build.dayClassOf(date);
+  return dc !== 'weekday' || build.isHoliday(date);
+}
+
+function winShare(g) {
+  const r = g.recordBefore;
+  if (!r || r.wins + r.losses < STANDINGS_MIN_PLAYED) return undefined;
+  return r.wins / (r.wins + r.losses);
+}
+
 function pct(x) {
   return `${(x * 100).toFixed(1)}%`;
 }
@@ -81,14 +108,48 @@ try {
   const { VENUES, capacityOn } = await server.ssrLoadModule('/src/data/venues.ts');
   const { TEAMS } = await server.ssrLoadModule('/src/data/teams.ts');
 
-  const STEPS = ['capacity', 'old', 'baseline', '+season', '+opponent'];
+  const STEPS = ['capacity', 'old', 'baseline', '+season', '+opponent', '+promos', '+standings'];
+  const teamsOnFile = await loadAttendance(root);
+
+  // Standings slopes, pooled across MLB teams, fit only on seasons before the one predicted.
+  // y = log(announced ÷ baseline), x = home win share going in − .500; before Aug 1 and from Aug 1.
+  const slopeCache = new Map();
+  function standingsSlopes(season) {
+    if (slopeCache.has(season)) return slopeCache.get(season);
+    const pts = { early: [], late: [] };
+    for (const t of teamsOnFile) {
+      if (TEAMS[t.teamId]?.league !== 'MLB') continue;
+      const all = t.games.filter((g) => g.attendance > 0 && !g.postseason && !g.preseason);
+      const before = all.filter((g) => g.season < season);
+      const rows = build.buildDrawRows(t.metroId, t.teamId, before);
+      const win = [...new Set(before.map((g) => g.season))].sort((a, b) => b - a).slice(0, 3);
+      for (const g of before.filter((g) => win.includes(g.season))) {
+        const w = winShare(g);
+        const b = build.pickDraw(rows, { teamId: t.teamId, venueId: g.venueId, date: g.date })?.count;
+        if (w == null || !b) continue;
+        (g.date.slice(5) >= '08-01' ? pts.late : pts.early).push([w - 0.5, Math.log(g.attendance / b)]);
+      }
+    }
+    const fit = (xy) => {
+      if (xy.length < 30) return 0;
+      const mx = xy.reduce((a, [x]) => a + x, 0) / xy.length;
+      const my = xy.reduce((a, [, y]) => a + y, 0) / xy.length;
+      const sxy = xy.reduce((a, [x, y]) => a + (x - mx) * (y - my), 0);
+      const sxx = xy.reduce((a, [x]) => a + (x - mx) ** 2, 0);
+      return sxx > 0 ? sxy / sxx : 0;
+    };
+    const out = { early: fit(pts.early), late: fit(pts.late) };
+    slopeCache.set(season, out);
+    return out;
+  }
+  const slopeLog = new Map();
   // Variants of the baseline, each tested against it (Oct 7): the conference-move reset, and a 2-season window.
   // The app's baseline is build.optionsFor(league): three seasons, two for the WNBA and
   // women's college basketball, no conference-move reset (decided on the first run, Oct 7).
   const VARIANTS = { 'reset at conf. move': { resetOnRealignment: true }, '3 seasons everywhere': { windowSeasons: 3 }, '2 seasons everywhere': { windowSeasons: 2 } };
   const rows = []; // one per predicted game
 
-  for (const t of await loadAttendance(root)) {
+  for (const t of teamsOnFile) {
     const team = TEAMS[t.teamId];
     const league = team?.league ?? 'Other';
     const sport = team?.sport;
@@ -108,6 +169,29 @@ try {
         const row = build.pickDraw(drawRows, { teamId: t.teamId, venueId: g.venueId, date: g.date, opener: openers.has(g.date), preseason: g.preseason });
         return row;
       };
+
+      // Promotion multipliers for this team, from the window's seasons: games with a flag against games with none.
+      const promo = new Map();
+      if (league === 'MLB') {
+        const training = before.filter((g) => windowSeasons.includes(g.season) && !g.preseason);
+        const logr = (g) => {
+          const b = build.pickDraw(drawRows, { teamId: t.teamId, venueId: g.venueId, date: g.date })?.count;
+          return b ? Math.log(g.attendance / b) : undefined;
+        };
+        for (const wk of [false, true]) {
+          const side = training.filter((g) => weekendLike(build, g.date) === wk);
+          const none = side.filter((g) => promoFlags(g).size === 0).map(logr).filter((x) => x != null);
+          if (none.length < 3) continue;
+          for (const flag of ['giveaway', 'fireworks', 'discount']) {
+            const withFlag = side.filter((g) => promoFlags(g).has(flag)).map(logr).filter((x) => x != null);
+            if (withFlag.length < 3) continue;
+            const n = withFlag.length;
+            promo.set(`${flag}|${wk}`, Math.exp((n / (n + PROMO_SHRINK_K)) * (median(withFlag) - median(none))));
+          }
+        }
+      }
+      const slopes = league === 'MLB' ? standingsSlopes(season) : null;
+      if (slopes) slopeLog.set(season, slopes);
 
       for (let i = 0; i < thisSeason.length; i++) {
         const g = thisSeason[i];
@@ -159,6 +243,15 @@ try {
           }
         }
         pred['+opponent'] = capped(base != null ? base * level * opp : undefined);
+
+        let promoMult = 1;
+        for (const flag of promoFlags(g)) promoMult *= promo.get(`${flag}|${weekendLike(build, g.date)}`) ?? 1;
+        pred['+promos'] = capped(base != null ? base * level * opp * promoMult : undefined);
+
+        let standMult = 1;
+        const w = winShare(g);
+        if (slopes && w != null) standMult = Math.exp((g.date.slice(5) >= '08-01' ? slopes.late : slopes.early) * (w - 0.5));
+        pred['+standings'] = capped(base != null ? base * level * opp * promoMult * standMult : undefined);
 
         rows.push({
           league,
@@ -220,6 +313,8 @@ try {
     });
     say(`| ${lg} | ${set.length} | ${pct(set.filter((r) => r.estimated).length / set.length)} | ${cells.join(' | ')} |`);
   }
+  say();
+  say(`**MLB standings slopes** (log crowd per 1.000 of win share, fit on earlier seasons): ${[...slopeLog.entries()].sort().map(([season, sl]) => `predicting ${season}: before Aug ${sl.early.toFixed(2)}, from Aug ${sl.late.toFixed(2)}`).join('; ')}.`);
   say();
   say('## Baseline variants (median % off · bias)');
   say();
