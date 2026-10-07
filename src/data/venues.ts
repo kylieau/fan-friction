@@ -372,14 +372,398 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 102780, setup: 'football', note: 'Listed capacity' }],
     roof: 'open',
   },
+  // New York, covered Oct 7, 2026. Capacities: docs/new-york-venue-table-answer.md (33 buildings; Etihad Park left
+  // out until it opens Jul 17, 2027). Car shares: docs/new-york-city-type-answer.md, the "value to use" per venue;
+  // where that research had no row, an estimate from the nearest comparable, as the research itself did, and labeled.
+  // Kylie, Oct 6: one car share per venue (MetLife 0.85 though concerts run ~0.75; UBS 0.90 across 0.89/0.93).
+  // The open grounds in the research's Table B (US Open grounds, Javits, the Great Lawn, Bethpage, Randall's Island
+  // fields, Liberty State Park) are not venues: no fixed capacity. Events there are placed as points and sized only
+  // by their own crowd figure (docs/unsized-events.md). Hard access is measured by scripts/venue-access.mjs, not set here.
+  'metlife-stadium': {
+    id: 'metlife-stadium',
+    metroId: 'new-york',
+    // Reported: ~87% by car for NFL (NJ Transit, 2010), ~75% for concerts, ~60% with lots closed. One value by Kylie's call.
+    carShare: 0.85,
+    names: [{ name: 'MetLife Stadium' }],
+    location: [-74.0745, 40.8135],
+    capacity: [
+      { seats: 82500, setup: 'football', note: 'Reported; NFL record crowd 83,367. The 2026 World Cup cut 1,740 corner seats for the tournament only.' },
+    ],
+    roof: 'open',
+  },
+  'yankee-stadium': {
+    id: 'yankee-stadium',
+    metroId: 'new-york',
+    // Reported: MTA put ~45% on transit (2011); a NYC DOT intercept survey found 61% by car (2012). The research splits it at 50%.
+    carShare: 0.5,
+    names: [{ name: 'Yankee Stadium' }],
+    location: [-73.9262, 40.8296],
+    capacity: [
+      { seats: 46537, setup: 'baseball', note: 'Official (team media guide)' },
+      { seats: 28743, setup: 'soccer', note: 'Reported; NYCFC standard setup, expandable to 47,309' },
+      { seats: 54251, setup: 'football', note: 'Reported' },
+    ],
+    roof: 'open',
+  },
+  'belmont-park': {
+    id: 'belmont-park',
+    metroId: 'new-york',
+    // Official, pre-rebuild: the LIRR carried 17–35% of Belmont Stakes crowds, 2008–2017 (Belmont FEIS).
+    carShare: 0.75,
+    names: [{ name: 'Belmont Park' }],
+    location: [-73.7226, 40.7144],
+    // Big-day grounds figure. Ordinary race days draw well under 5,000; only the Stakes and the Breeders' Cup matter.
+    // The Belmont Stakes ran at Saratoga in 2024, 2025 and 2026 and returns here in 2027. The rebuilt track reopened Sep 2026;
+    // the new grandstand (~10,000) finishes in early 2027. Shares its site and LIRR station with UBS Arena.
+    capacity: [{ seats: 50000, note: 'Reported; grounds in the big-day configuration' }],
+    roof: 'covered',
+  },
   'citi-field': {
     id: 'citi-field',
     metroId: 'new-york',
+    // Reported: MTA counted 25–30% by subway at an average game (2011); the research adds ~7% for the LIRR. Lots are shrinking for the casino build.
+    carShare: 0.6,
     names: [{ name: 'Citi Field' }],
-    // Reported: transit share reached 45% during the 2008–09 construction years (Sam Schwartz); a historical figure.
-    carShare: 0.55,
     location: [-73.8458, 40.7571],
-    capacity: [{ seats: 41922, setup: 'baseball', note: 'Listed capacity' }],
+    capacity: [
+      { seats: 41800, setup: 'baseball', note: 'Reported, 2009–2011' },
+      { seats: 41922, setup: 'baseball', fromYear: 2012, note: 'Official; 45,000+ with standing room (record 45,186, 2013 All-Star Game)' },
+    ],
+    roof: 'open',
+  },
+  'aqueduct': {
+    id: 'aqueduct',
+    metroId: 'new-york',
+    // Estimated, nearest comparable Citi Field: the A train stops at the gate, but the casino's lots are large.
+    carShare: 0.6,
+    names: [{ name: 'Aqueduct Racetrack' }],
+    location: [-73.8303, 40.672],
+    // Live racing ended Jun 28, 2026 (moved to Belmont); the casino stays. fromYear is year-granular, but the research says the
+    // historic figure was overstated for all of modern use anyway: the final race day drew 6,866.
+    capacity: [
+      { seats: 17000, note: 'Reported, historic (40,000 total); badly overstated for modern racing days' },
+      { seats: 7000, fromYear: 2026, note: 'Estimated; racing ended 2026-06-28 and the last card drew 6,866' },
+    ],
+    roof: 'open',
+  },
+  'sports-illustrated-stadium': {
+    id: 'sports-illustrated-stadium',
+    metroId: 'new-york',
+    // Estimated, nearest comparable Prudential Center: Harrison PATH is three blocks away and the club warns parking is scarce.
+    carShare: 0.5,
+    names: [{ name: 'Red Bull Arena' }, { name: 'Sports Illustrated Stadium', from: '2024-12-11' }],
+    location: [-74.1503, 40.7368],
+    capacity: [{ seats: 25000, setup: 'soccer', note: 'Official' }],
+    roof: 'covered',
+  },
+  'arthur-ashe-stadium': {
+    id: 'arthur-ashe-stadium',
+    metroId: 'new-york',
+    // Reported: the USTA says more than 60% of US Open fans take mass transit.
+    carShare: 0.37,
+    names: [{ name: 'Arthur Ashe Stadium' }],
+    location: [-73.8465, 40.7498],
+    // The US Open's daily grounds crowd (record 73,201) is three times this room. A US Open day is sized by that figure on the event, not by Ashe.
+    capacity: [{ seats: 23771, note: 'Official; finals draw ~28,000 with standing room' }],
+    // Retractable, like T-Mobile Park: closes for rain.
+    roof: 'covered',
+  },
+  'madison-square-garden': {
+    id: 'madison-square-garden',
+    metroId: 'new-york',
+    // Estimated (range 15–30%): sits on Penn Station, no parking on site, inside the congestion zone. No count since 2003.
+    carShare: 0.2,
+    names: [{ name: 'Madison Square Garden' }],
+    location: [-73.9934, 40.7505],
+    capacity: [
+      { seats: 19812, setup: 'basketball', note: 'Reported' },
+      { seats: 18006, setup: 'hockey', note: 'Reported' },
+      { seats: 19500, setup: 'concert', note: 'Reported, end-stage; 20,789 is the centre-ring maximum, up to 22,000 in the round' },
+    ],
+    roof: 'indoor',
+  },
+  'ubs-arena': {
+    id: 'ubs-arena',
+    metroId: 'new-york',
+    // Official, LIRR observed: rail carried 8.8% of the gate at Islanders games and 5.3% at other events (2022). One value by Kylie's call.
+    carShare: 0.9,
+    names: [{ name: 'UBS Arena' }],
+    location: [-73.7259, 40.711],
+    capacity: [
+      { seats: 17255, setup: 'hockey', note: 'Reported; 17,250 also cited' },
+      { seats: 19000, setup: 'concert', note: 'Reported' },
+    ],
+    roof: 'indoor',
+  },
+  'barclays-center': {
+    id: 'barclays-center',
+    metroId: 'new-york',
+    // Reported, observed: Sam Schwartz TDM survey of 5,633 fans across 8 Nets games, 2013. Built with almost no parking by design.
+    carShare: 0.25,
+    names: [{ name: 'Barclays Center' }],
+    location: [-73.9752, 40.6827],
+    capacity: [
+      { seats: 17732, setup: 'basketball', note: 'Official' },
+      { seats: 15795, setup: 'hockey', note: 'Official; Islanders 2015–2020' },
+      { seats: 19000, setup: 'concert', note: 'Official (AEG); 20,000 reported' },
+    ],
+    roof: 'indoor',
+  },
+  'prudential-center': {
+    id: 'prudential-center',
+    metroId: 'new-york',
+    // Reported, old: 53% of Devils fans on mass transit over two months of 2007–08. Nothing newer found.
+    carShare: 0.45,
+    names: [{ name: 'Prudential Center' }],
+    location: [-74.1711, 40.7336],
+    capacity: [
+      { seats: 17625, setup: 'hockey', note: 'Official, before 2013' },
+      { seats: 16592, setup: 'hockey', fromYear: 2013, note: 'Official' },
+      { seats: 16514, setup: 'hockey', fromYear: 2015, note: 'Official' },
+      { seats: 18711, setup: 'basketball', note: 'Official (Seton Hall)' },
+      { seats: 17500, setup: 'concert', note: 'Reported, end-stage; 19,500 also listed, unresolved' },
+    ],
+    roof: 'indoor',
+  },
+  'pnc-bank-arts-center': {
+    id: 'pnc-bank-arts-center',
+    metroId: 'new-york',
+    // Estimated: no rail at the venue; one Parkway exit. Sets the top of the range with Jones Beach.
+    carShare: 0.97,
+    names: [{ name: 'PNC Bank Arts Center' }],
+    location: [-74.1756, 40.3934],
+    capacity: [{ seats: 17500, setup: 'concert', note: 'Reported; 7,000 seats plus ~10,500 lawn' }],
+    roof: 'covered',
+  },
+  'wien-stadium': {
+    id: 'wien-stadium',
+    metroId: 'new-york',
+    // Estimated: college football draws an older suburban crowd; the 1 train is at 215 St.
+    carShare: 0.45,
+    // ESPN says "Lawrence A. Wien Stadium"; the field is Robert K. Kraft Field.
+    names: [{ name: 'Lawrence A. Wien Stadium' }, { name: 'Robert K. Kraft Field at Lawrence A. Wien Stadium' }],
+    location: [-73.9149, 40.8722],
+    capacity: [{ seats: 17000, setup: 'football', note: 'Official (Columbia)' }],
+    roof: 'open',
+  },
+  'meadowlands-racetrack': {
+    id: 'meadowlands-racetrack',
+    metroId: 'new-york',
+    // Estimated: free surface lots; the rail station runs only on stadium days.
+    carShare: 0.95,
+    names: [{ name: 'Meadowlands Racetrack' }],
+    location: [-74.0716, 40.8158],
+    // Under the floor as a building. Hambletonian Day (one a year; 16,465 in 2024, official) carries its own crowd figure on the event.
+    capacity: [{ seats: 2200, note: 'Reported; grandstand seats only' }],
+    roof: 'covered',
+  },
+  'nassau-coliseum': {
+    id: 'nassau-coliseum',
+    metroId: 'new-york',
+    // Estimated, nearest comparable UBS Arena's non-Islanders events: no rail within three miles.
+    carShare: 0.95,
+    // Still open and lightly used (LI Nets, NY Riptide, a few concerts); Sands dropped its casino bid Apr 2025 and the future is undecided.
+    names: [{ name: 'NYCB Live: Nassau Veterans Memorial Coliseum' }, { name: 'Nassau Veterans Memorial Coliseum', from: '2020-01-01' }],
+    location: [-73.5904, 40.7229],
+    capacity: [
+      { seats: 16170, note: 'Reported, before the 2017 renovation' },
+      { seats: 14000, fromYear: 2017, note: 'Estimated; 14,000 (amNY) vs 16,000 (NY Post), neither with a setup' },
+    ],
+    roof: 'indoor',
+  },
+  'jones-beach-theater': {
+    id: 'jones-beach-theater',
+    metroId: 'new-york',
+    // Estimated: no rail, and the concert bus no longer runs. Barrier island with three parkways in.
+    carShare: 0.97,
+    names: [
+      { name: 'Nikon at Jones Beach Theater' },
+      { name: 'Northwell Health at Jones Beach Theater', from: '2017-01-01' },
+      { name: 'Northwell at Jones Beach Theater', from: '2025-01-01' },
+    ],
+    location: [-73.5023, 40.601],
+    capacity: [{ seats: 14000, setup: 'concert', note: "Official (Live Nation, 2017); 15,000 reported. The separate Bay Stage holds 5,000 standing." }],
+    roof: 'open',
+  },
+  'forest-hills-stadium': {
+    id: 'forest-hills-stadium',
+    metroId: 'new-york',
+    // Estimated: no parking at the venue or on nearby streets; the venue tells fans not to drive.
+    carShare: 0.15,
+    names: [{ name: 'Forest Hills Stadium' }],
+    location: [-73.8481, 40.7197],
+    capacity: [{ seats: 14000, setup: 'concert', note: 'Reported; some guides say up to 16,000' }],
+    roof: 'open',
+  },
+  'louis-armstrong-stadium': {
+    id: 'louis-armstrong-stadium',
+    metroId: 'new-york',
+    carShare: 0.37,
+    names: [{ name: 'Louis Armstrong Stadium' }],
+    location: [-73.8466, 40.7484],
+    capacity: [{ seats: 14000, fromYear: 2018, note: 'Reported; rebuilt 2018. 14,069 could not be confirmed.' }],
+    // Retractable.
+    roof: 'covered',
+  },
+  'lavalle-stadium': {
+    id: 'lavalle-stadium',
+    metroId: 'new-york',
+    // Estimated, nearest comparable UBS Arena's non-Islanders events: Suffolk County, campus lots, no rail at the gate.
+    carShare: 0.9,
+    names: [{ name: 'Kenneth P. LaValle Stadium' }],
+    location: [-73.124, 40.917],
+    capacity: [
+      { seats: 10300, setup: 'football', note: 'Official, 2002–2016' },
+      { seats: 12300, setup: 'football', fromYear: 2017, note: 'Official; 10,300 seats plus 2,000 standing' },
+    ],
+    roof: 'open',
+  },
+  'shuart-stadium': {
+    id: 'shuart-stadium',
+    metroId: 'new-york',
+    // Estimated: same corridor as Nassau Coliseum; campus residents walk.
+    carShare: 0.8,
+    names: [{ name: 'James M. Shuart Stadium' }],
+    location: [-73.5964, 40.7158],
+    capacity: [{ seats: 11929, note: 'Reported, since 2013 (Hofstra lacrosse)' }],
+    roof: 'open',
+  },
+  'maimonides-park': {
+    id: 'maimonides-park',
+    metroId: 'new-york',
+    // Estimated: a four-line subway terminal, but surface lots next to the ballpark.
+    carShare: 0.4,
+    names: [{ name: 'MCU Park' }, { name: 'Maimonides Park', from: '2021-01-01' }],
+    location: [-73.9845, 40.5745],
+    capacity: [{ seats: 7000, setup: 'baseball', note: 'Official; up to 2,500 standing. 7,500 seats before 2016.' }],
+    roof: 'open',
+  },
+  'usta-grandstand': {
+    id: 'usta-grandstand',
+    metroId: 'new-york',
+    carShare: 0.37,
+    names: [{ name: 'USTA Grandstand' }],
+    location: [-73.845, 40.748],
+    capacity: [{ seats: 8000, fromYear: 2016, note: 'Estimated; the research could not source a figure' }],
+    roof: 'open',
+  },
+  'siuh-community-park': {
+    id: 'siuh-community-park',
+    metroId: 'new-york',
+    // Estimated: ferry terminal and the Staten Island Railway at the door, a ballpark lot beside it.
+    carShare: 0.6,
+    names: [{ name: 'Richmond County Bank Ballpark' }, { name: 'SIUH Community Park', from: '2022-04-01' }],
+    location: [-74.0768, 40.6453],
+    // The FerryHawks averaged 1,232 in 2025; it clears 5,000 only on fireworks nights.
+    capacity: [{ seats: 7171, setup: 'baseball', note: 'Reported' }],
+    roof: 'open',
+  },
+  'fairfield-properties-ballpark': {
+    id: 'fairfield-properties-ballpark',
+    metroId: 'new-york',
+    // Estimated, nearest comparable UBS Arena's non-Islanders events: central Suffolk, 2.5 miles from the LIRR.
+    carShare: 0.9,
+    names: [{ name: 'Bethpage Ballpark' }, { name: 'Fairfield Properties Ballpark', from: '2021-01-01' }],
+    location: [-73.1958, 40.7957],
+    capacity: [{ seats: 6002, setup: 'baseball', note: 'Official (Long Island Ducks)' }],
+    roof: 'open',
+  },
+  'pacha-new-york': {
+    id: 'pacha-new-york',
+    metroId: 'new-york',
+    // Estimated, nearest comparable Barclays Center: no lot, the L train nearby, a free shuttle from the venue.
+    carShare: 0.25,
+    // Closed all of 2025 after failing inspection; the owner went bankrupt. Reopened as Pacha in June 2026, seasonal June–October.
+    names: [{ name: 'The Brooklyn Mirage' }, { name: 'Pacha New York', from: '2026-06-01' }],
+    location: [-73.9268, 40.7105],
+    capacity: [{ seats: 6000, setup: 'concert', note: "Estimated; the Mirage's widely cited figure. Pacha has published none." }],
+    roof: 'open',
+  },
+  'radio-city-music-hall': {
+    id: 'radio-city-music-hall',
+    metroId: 'new-york',
+    // Estimated: Midtown walk-ins, no parking on site, inside the congestion zone.
+    carShare: 0.15,
+    names: [{ name: 'Radio City Music Hall' }],
+    location: [-73.98, 40.76],
+    capacity: [{ seats: 5960, setup: 'concert', note: 'Reported; some listings say 6,015' }],
+    roof: 'indoor',
+  },
+  'carnesecca-arena': {
+    id: 'carnesecca-arena',
+    metroId: 'new-york',
+    // Estimated: campus arena with its own lots and no subway within walking distance. St. John's big games are at the Garden.
+    carShare: 0.5,
+    names: [{ name: 'Carnesecca Arena' }],
+    location: [-73.7948, 40.7225],
+    capacity: [{ seats: 5602, setup: 'basketball', note: "Official (St. John's); 5,260 reported" }],
+    roof: 'indoor',
+  },
+  'infosys-theater-msg': {
+    id: 'infosys-theater-msg',
+    metroId: 'new-york',
+    carShare: 0.2,
+    // Inside Madison Square Garden: a show here and a game upstairs stack on one night (the theater rule). The 2018 and 2023
+    // rename months were not researched; the years are right.
+    names: [
+      { name: 'The Theater at Madison Square Garden' },
+      { name: 'Hulu Theater at Madison Square Garden', from: '2018-01-01' },
+      { name: 'The Theater at Madison Square Garden', from: '2023-01-01' },
+      { name: 'Infosys Theater at Madison Square Garden', from: '2026-02-02' },
+    ],
+    location: [-73.9934, 40.7505],
+    capacity: [{ seats: 5600, setup: 'concert', note: 'Official; 2,000–5,600 depending on the setup' }],
+    roof: 'indoor',
+  },
+  'summerstage': {
+    id: 'summerstage',
+    metroId: 'new-york',
+    // Estimated, nearest comparable Radio City: inside Central Park, no parking.
+    carShare: 0.15,
+    names: [{ name: 'SummerStage' }, { name: 'Rumsey Playfield' }],
+    location: [-73.9708, 40.7726],
+    capacity: [{ seats: 5000, setup: 'concert', note: 'Official (City Parks Foundation); 5,500 reported after the 2019 renovation' }],
+    roof: 'open',
+  },
+  'icahn-stadium': {
+    id: 'icahn-stadium',
+    metroId: 'new-york',
+    // Estimated: an island reached by the RFK Bridge, a footbridge and ferries; festivals ban personal parking.
+    carShare: 0.1,
+    names: [{ name: 'Icahn Stadium' }],
+    location: [-73.9241, 40.7955],
+    // The festival fields around it (Governors Ball's old home, Electric Zoo) have no fixed capacity; those are events placed as points.
+    capacity: [{ seats: 5000, note: 'Official (USATF); designed to take 5,000 more on bleachers' }],
+    roof: 'covered',
+  },
+  'ford-amphitheater': {
+    id: 'ford-amphitheater',
+    metroId: 'new-york',
+    carShare: 0.4,
+    names: [{ name: 'Ford Amphitheater at Coney Island' }],
+    location: [-73.9834, 40.5729],
+    capacity: [{ seats: 5000, setup: 'concert', note: 'Reported; exactly on the floor' }],
+    roof: 'covered',
+  },
+  'westchester-county-center': {
+    id: 'westchester-county-center',
+    metroId: 'new-york',
+    // Estimated: five minutes from White Plains Metro-North, 700+ county spaces next door.
+    carShare: 0.85,
+    names: [{ name: 'Westchester County Center' }],
+    location: [-73.7704, 41.0296],
+    // On the floor: 5,000 is the usual figure; Bandsintown lists 4,264.
+    capacity: [{ seats: 5000, note: 'Reported; 4,264 also listed' }],
+    roof: 'indoor',
+  },
+  'coffey-field': {
+    id: 'coffey-field',
+    metroId: 'new-york',
+    // Estimated, nearest comparable Columbia: a Bronx campus with the 4, B and D at Fordham Road.
+    carShare: 0.45,
+    names: [{ name: 'Jack Coffey Field' }, { name: 'Moglia Stadium at Jack Coffey Field' }],
+    location: [-73.8836, 40.8615],
+    capacity: [{ seats: 7000, setup: 'football', note: 'Official (Fordham)' }],
     roof: 'open',
   },
   'petco-park': {
