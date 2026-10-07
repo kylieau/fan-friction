@@ -4,7 +4,7 @@
   "metroName": "Atlanta",
   "timeZone": "America/New_York",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T17:33:41.082Z",
+  "capturedAt": "2026-10-07T21:23:23.278Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -115,7 +115,7 @@
       "ticketmasterId": "vvG1zZ_7MxKXo2",
       "expectedDraw": {
         "count": 7410,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -166,7 +166,7 @@
       "ticketmasterId": "vvG1zZ_8UEbzYQ",
       "expectedDraw": {
         "count": 11970,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -189,8 +189,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1zZ_65jmHBe",
       "expectedDraw": {
-        "count": 3933,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 6900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -213,8 +213,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1zZ_axBx1u5",
       "expectedDraw": {
-        "count": 6840,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 12000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -267,7 +267,7 @@
       "ticketmasterId": "vvG1zZ_6d_IGUK",
       "expectedDraw": {
         "count": 11970,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -318,8 +318,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1zZ_6r-FIF6",
       "expectedDraw": {
-        "count": 3933,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 6900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -345,8 +345,8 @@
         "run": 2
       },
       "expectedDraw": {
-        "count": 10784,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 18920,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -392,8 +392,8 @@
         "run": 2
       },
       "expectedDraw": {
-        "count": 10784,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 18920,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -474,8 +474,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1zZ_eQ2KN-d",
       "expectedDraw": {
-        "count": 6840,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 12000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -499,7 +499,7 @@
       "ticketmasterId": "vvG1zZ_G68Ii_o",
       "expectedDraw": {
         "count": 11970,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -523,7 +523,7 @@
       "ticketmasterId": "vvG1zZ_uQsKFm-",
       "expectedDraw": {
         "count": 7410,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -573,8 +573,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1zZ_1D-1FDp",
       "expectedDraw": {
-        "count": 6840,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 12000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -598,7 +598,7 @@
       "ticketmasterId": "vvG1zZ_8MZhDf8",
       "expectedDraw": {
         "count": 7410,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -622,7 +622,7 @@
       "ticketmasterId": "vvG1zZ_1RbHwoA",
       "expectedDraw": {
         "count": 11970,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -665,8 +665,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1zZ_6RsPgK8",
       "expectedDraw": {
-        "count": 10784,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 18920,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -690,7 +690,7 @@
       "ticketmasterId": "vvG1zZ_121qqS7",
       "expectedDraw": {
         "count": 7410,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -713,8 +713,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1zZ_7mxwkQk",
       "expectedDraw": {
-        "count": 6840,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 12000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -766,7 +766,7 @@
       "ticketmasterId": "vvG1zZ_1UneLAE",
       "expectedDraw": {
         "count": 11970,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -819,7 +819,7 @@
       "ticketmasterId": "vvG1zZ_1p_clEl",
       "expectedDraw": {
         "count": 11970,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -843,7 +843,7 @@
       "ticketmasterId": "vvG1zZ_FUW3nLL",
       "expectedDraw": {
         "count": 11970,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     }
   ],
@@ -919,13 +919,13 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 1.3,
+        "rating": 4.6,
         "friction": "Low",
         "why": "G-Eazy 13 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3933
+        "count": 6900
       }
     },
     {
@@ -933,13 +933,13 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 1.3,
+        "rating": 4.6,
         "friction": "Low",
         "why": "Turnpike Troubadours 13 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 6840
+        "count": 12000
       }
     },
     {
@@ -947,7 +947,7 @@
       "date": "2026-10-10",
       "start": "15:30",
       "read": {
-        "rating": 5.1,
+        "rating": 5.7,
         "friction": "Moderate",
         "why": "Atlanta United vs. Cincinnati 1.3 mi away, same hours.",
         "method": "formula"
@@ -963,9 +963,9 @@
       "date": "2026-10-10",
       "start": "19:00",
       "read": {
-        "rating": 5.1,
-        "friction": "Moderate",
-        "why": "Atlanta United vs. Cincinnati and Georgia Tech vs. Duke next door, same hours.",
+        "rating": 5.7,
+        "friction": "Heavy",
+        "why": "Dermot Kennedy and Atlanta United vs. Cincinnati 8.3 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -977,7 +977,7 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 5.1,
+        "rating": 5.7,
         "friction": "Moderate",
         "why": "Georgia Tech vs. Duke 1.3 mi away, same hours.",
         "method": "formula"
@@ -993,13 +993,13 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 5.1,
-        "friction": "Extreme",
+        "rating": 5.7,
+        "friction": "Heavy",
         "why": "Weezer 8.3 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3933
+        "count": 6900
       }
     },
     {
@@ -1007,13 +1007,13 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 5.1,
+        "rating": 5.7,
         "friction": "Moderate",
         "why": "Atlanta United vs. Cincinnati and Georgia Tech vs. Duke 3.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 10784
+        "count": 18920
       }
     },
     {
@@ -1021,7 +1021,7 @@
       "date": "2026-10-11",
       "start": "18:00",
       "read": {
-        "rating": 3,
+        "rating": 3.4,
         "friction": "Moderate",
         "why": "Falcons vs. Ravens 21 mi away, same hours.",
         "method": "formula"
@@ -1032,13 +1032,13 @@
       "date": "2026-10-11",
       "start": "20:00",
       "read": {
-        "rating": 3,
+        "rating": 3.4,
         "friction": "Moderate",
         "why": "Falcons vs. Ravens 3.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 10784
+        "count": 18920
       }
     },
     {
@@ -1046,9 +1046,9 @@
       "date": "2026-10-11",
       "start": "20:20",
       "read": {
-        "rating": 3,
+        "rating": 3.4,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Fuerza Regida 3.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1078,13 +1078,13 @@
       "date": "2026-10-13",
       "start": "18:45",
       "read": {
-        "rating": 1.4,
+        "rating": 3.8,
         "friction": "Low",
         "why": "Phoebe Bridgers 21 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 6840
+        "count": 12000
       }
     },
     {
@@ -1092,7 +1092,7 @@
       "date": "2026-10-13",
       "start": "19:30",
       "read": {
-        "rating": 1.4,
+        "rating": 3.8,
         "friction": "Low",
         "why": "Five Finger Death Punch 21 mi away, same hours.",
         "method": "formula"
@@ -1131,13 +1131,13 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 3.5,
-        "friction": "Heavy",
+        "rating": 4,
+        "friction": "Moderate",
         "why": "Alabama 13 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 6840
+        "count": 12000
       }
     },
     {
@@ -1145,7 +1145,7 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 3.5,
+        "rating": 4,
         "friction": "Heavy",
         "why": "Dan + Shay 13 mi away, same hours.",
         "method": "formula"
@@ -1159,9 +1159,9 @@
       "date": "2026-10-15",
       "start": "20:00",
       "read": {
-        "rating": 3.5,
+        "rating": 4,
         "friction": "Moderate",
-        "why": "Delta Sky360 Club Experience: Katseye next door, same hours.",
+        "why": "Delta Sky360 Club Experience: Katseye and Dan + Shay next door, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1173,9 +1173,9 @@
       "date": "2026-10-15",
       "start": "20:00",
       "read": {
-        "rating": 3.5,
-        "friction": "Low",
-        "why": "KATSEYE next door, same hours.",
+        "rating": 4,
+        "friction": "Moderate",
+        "why": "Dan + Shay and KATSEYE 21 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -1184,13 +1184,13 @@
       "date": "2026-10-16",
       "start": "18:30",
       "read": {
-        "rating": 1.4,
+        "rating": 2.8,
         "friction": "Low",
-        "why": "MercyMe 26 mi away, same hours.",
+        "why": "89° feels-like at a 6:30 pm start, no roof.",
         "method": "formula"
       },
       "draw": {
-        "count": 10784
+        "count": 18920
       }
     },
     {
@@ -1198,7 +1198,7 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 1.4,
+        "rating": 2.8,
         "friction": "Low",
         "why": "$UICIDEBOY$ 26 mi away, same hours.",
         "method": "formula"
@@ -1212,13 +1212,13 @@
       "date": "2026-10-17",
       "start": "18:00",
       "read": {
-        "rating": 2.7,
+        "rating": 3,
         "friction": "Moderate",
         "why": "Atlanta United vs. Miami 21 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 6840
+        "count": 12000
       }
     },
     {
@@ -1226,9 +1226,9 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 2.7,
+        "rating": 3,
         "friction": "Low",
-        "why": "Don Omar next door, same hours.",
+        "why": "Breaking Benjamin and Don Omar 21 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1242,7 +1242,7 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 2.7,
+        "rating": 3,
         "friction": "Moderate",
         "why": "Atlanta United vs. Miami next door, same hours.",
         "method": "formula"

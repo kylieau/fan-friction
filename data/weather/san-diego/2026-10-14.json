@@ -308,6 +308,78 @@
       "shortwave": 1,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "snapdragon-stadium",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T21:21:16.212Z",
+      "feelsLikeF": 68.8,
+      "tempF": 70.1,
+      "humidity": 62,
+      "windMph": 7.9,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 1,
+      "cloudCover": 86,
+      "code": 3
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "snapdragon-stadium",
+      "date": "2026-10-14",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T21:21:16.212Z",
+      "feelsLikeF": 68.5,
+      "tempF": 69.5,
+      "humidity": 63,
+      "windMph": 7.2,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 90,
+      "code": 3
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "snapdragon-stadium",
+      "date": "2026-10-14",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T21:21:16.212Z",
+      "feelsLikeF": 68.4,
+      "tempF": 69.3,
+      "humidity": 63,
+      "windMph": 6.8,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 94,
+      "code": 3
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T21:21:16.212Z",
+      "feelsLikeF": 68.7,
+      "tempF": 70,
+      "humidity": 64,
+      "windMph": 8.6,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 73,
+      "code": 2
     }
   ],
   "days": [
@@ -346,6 +418,18 @@
       "code": 1,
       "precipProbability": 8,
       "precipMm": 0
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T21:21:16.212Z",
+      "feelsLikeHighF": 69.7,
+      "feelsLikeLowF": 67.4,
+      "code": 51,
+      "precipProbability": 12,
+      "precipMm": 0.3
     }
   ]
 }

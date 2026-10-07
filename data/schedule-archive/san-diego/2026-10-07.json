@@ -4,7 +4,7 @@
   "metroName": "San Diego",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T17:33:20.785Z",
+  "capturedAt": "2026-10-07T21:23:00.437Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -30,7 +30,7 @@
     {
       "id": "ticketmaster",
       "name": "Ticketmaster listings",
-      "inWindow": 18
+      "inWindow": 15
     }
   ],
   "events": [
@@ -38,7 +38,8 @@
       "id": "2026-10-07-mlb-849827",
       "broadcast": "FS1",
       "starters": {
-        "home": "Walker Buehler"
+        "home": "Walker Buehler",
+        "away": "Robert Gasser"
       },
       "metroId": "san-diego",
       "date": "2026-10-07",
@@ -107,34 +108,11 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_F5TB6n1",
       "occasionFacts": {
-        "run": 6
+        "run": 3
       },
       "expectedDraw": {
         "count": 19950,
         "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-09-tm-Z7r9jZ1A7-4as",
-      "metroId": "san-diego",
-      "date": "2026-10-09",
-      "start": "15:00",
-      "kind": "special",
-      "title": "Niteharts Festival",
-      "place": {
-        "type": "venue",
-        "venueId": "snapdragon-stadium"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Niteharts Festival",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-4as",
-      "occasionFacts": {
-        "run": 6
       }
     },
     {
@@ -157,8 +135,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZbgXbSgVe",
       "expectedDraw": {
-        "count": 11685,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 20500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -181,7 +159,7 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_F5TBMn9",
       "occasionFacts": {
-        "run": 6
+        "run": 3
       },
       "expectedDraw": {
         "count": 19950,
@@ -212,29 +190,6 @@
       }
     },
     {
-      "id": "2026-10-10-tm-Z7r9jZ1A7-4aw",
-      "metroId": "san-diego",
-      "date": "2026-10-10",
-      "start": "14:00",
-      "kind": "special",
-      "title": "Niteharts Festival",
-      "place": {
-        "type": "venue",
-        "venueId": "snapdragon-stadium"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Niteharts Festival",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-4aw",
-      "occasionFacts": {
-        "run": 6
-      }
-    },
-    {
       "id": "2026-10-10-tm-vvG1IZbMExObDZ",
       "metroId": "san-diego",
       "date": "2026-10-10",
@@ -254,8 +209,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZbMExObDZ",
       "expectedDraw": {
-        "count": 11685,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 20500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -278,34 +233,11 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_F5TDEnj",
       "occasionFacts": {
-        "run": 6
+        "run": 3
       },
       "expectedDraw": {
         "count": 19950,
         "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-11-tm-Z7r9jZ1A7-4aS",
-      "metroId": "san-diego",
-      "date": "2026-10-11",
-      "start": "13:00",
-      "kind": "special",
-      "title": "Niteharts Festival",
-      "place": {
-        "type": "venue",
-        "venueId": "snapdragon-stadium"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Niteharts Festival",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-4aS",
-      "occasionFacts": {
-        "run": 6
       }
     },
     {
@@ -328,8 +260,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_1UoDk-X",
       "expectedDraw": {
-        "count": 5700,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -452,8 +384,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_18W2pnn",
       "expectedDraw": {
-        "count": 5700,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -476,8 +408,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_ap-YIAd",
       "expectedDraw": {
-        "count": 11685,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 20500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -500,8 +432,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "Z7r9jZ1A7-w7J",
       "expectedDraw": {
-        "count": 5700,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -573,20 +505,14 @@
     {
       "eventId": "2026-10-08-tm-Z7r9jZ1A7PEaY",
       "date": "2026-10-08",
-      "start": "19:00",
-      "read": {
-        "rating": 1,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
-        "method": "formula"
-      }
+      "start": "19:00"
     },
     {
       "eventId": "2026-10-09-tm-vvG1IZ_F5TB6n1",
       "date": "2026-10-09",
       "start": "12:00",
       "read": {
-        "rating": 4.5,
+        "rating": 7.4,
         "friction": "Heavy",
         "why": "97° feels-like at a 12:00 pm start, no roof.",
         "method": "formula"
@@ -596,28 +522,17 @@
       }
     },
     {
-      "eventId": "2026-10-09-tm-Z7r9jZ1A7-4as",
-      "date": "2026-10-09",
-      "start": "15:00",
-      "read": {
-        "rating": 4.5,
-        "friction": "Moderate",
-        "why": "93° feels-like at a 3:00 pm start, no roof.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-09-tm-vvG1IZbgXbSgVe",
       "date": "2026-10-09",
       "start": "19:30",
       "read": {
-        "rating": 4.5,
+        "rating": 7.4,
         "friction": "Low",
-        "why": "Niteharts Festival 15 mi away, back to back.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
-        "count": 11685
+        "count": 20500
       }
     },
     {
@@ -625,9 +540,9 @@
       "date": "2026-10-10",
       "start": "12:00",
       "read": {
-        "rating": 3,
-        "friction": "Low",
-        "why": "Niteharts Festival next door, same hours.",
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "92° feels-like at a 12:00 pm start, no roof.",
         "method": "formula"
       },
       "draw": {
@@ -639,21 +554,8 @@
       "date": "2026-10-10",
       "start": "12:00",
       "read": {
-        "rating": 3,
-        "friction": "Moderate",
-        "why": "Niteharts Festival and Niteharts Festival 3.6 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-Z7r9jZ1A7-4aw",
-      "date": "2026-10-10",
-      "start": "14:00",
-      "read": {
-        "rating": 3,
-        "friction": "Low",
-        "why": "Niteharts Festival next door, same hours.",
-        "method": "formula"
+        "rating": 3.4,
+        "method": "nearby"
       }
     },
     {
@@ -661,13 +563,13 @@
       "date": "2026-10-10",
       "start": "20:30",
       "read": {
-        "rating": 3,
+        "rating": 3.4,
         "friction": "Low",
-        "why": "Niteharts Festival 15 mi away, earlier in the day.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
-        "count": 11685
+        "count": 20500
       }
     },
     {
@@ -675,9 +577,9 @@
       "date": "2026-10-11",
       "start": "12:00",
       "read": {
-        "rating": 3.3,
+        "rating": 2,
         "friction": "Low",
-        "why": "Niteharts Festival next door, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
@@ -685,28 +587,17 @@
       }
     },
     {
-      "eventId": "2026-10-11-tm-Z7r9jZ1A7-4aS",
-      "date": "2026-10-11",
-      "start": "13:00",
-      "read": {
-        "rating": 3.3,
-        "friction": "Low",
-        "why": "Niteharts Festival next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-11-tm-vvG1IZ_1UoDk-X",
       "date": "2026-10-11",
       "start": "19:00",
       "read": {
-        "rating": 3.3,
-        "friction": "Moderate",
+        "rating": 2,
+        "friction": "Low",
         "why": "Taking Back Sunday 0.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 5700
+        "count": 10000
       }
     },
     {
@@ -714,9 +605,9 @@
       "date": "2026-10-11",
       "start": "19:00",
       "read": {
-        "rating": 3.3,
+        "rating": 2,
         "friction": "Low",
-        "why": "Niteharts Festival 5.7 mi away, back to back.",
+        "why": "for KING & COUNTRY 0.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -772,13 +663,13 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "G-Eazy 12 mi away, same hours.",
+        "rating": 7.1,
+        "friction": "Moderate",
+        "why": "Rain in the forecast at a 7:00 pm start.",
         "method": "formula"
       },
       "draw": {
-        "count": 5700
+        "count": 10000
       }
     },
     {
@@ -786,13 +677,13 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 1.4,
+        "rating": 7.1,
         "friction": "Low",
         "why": "MUNA 12 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 11685
+        "count": 20500
       }
     },
     {
@@ -800,13 +691,13 @@
       "date": "2026-10-17",
       "start": "19:00",
       "read": {
-        "rating": 1.5,
+        "rating": 1.7,
         "friction": "Low",
         "why": "San Diego St vs. Fresno St 6.0 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 5700
+        "count": 10000
       }
     },
     {
@@ -814,9 +705,9 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 1.5,
+        "rating": 1.7,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Bonnie Raitt 6.0 mi away, same hours.",
         "method": "formula"
       },
       "draw": {

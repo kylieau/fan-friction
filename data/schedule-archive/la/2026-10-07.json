@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T17:33:09.856Z",
+  "capturedAt": "2026-10-07T21:22:49.103Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -54,8 +54,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv170Z_6GkRNGSd7",
       "expectedDraw": {
-        "count": 1055,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -107,8 +107,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_eheo7is",
       "expectedDraw": {
-        "count": 40037,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+        "count": 70240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -155,8 +155,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv1AaZk8tGkd6ll1M",
       "expectedDraw": {
-        "count": 1055,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -209,8 +209,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1iZ_k9N_4fq",
       "expectedDraw": {
-        "count": 9975,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -234,7 +234,7 @@
       "ticketmasterId": "vv1k0Z_kJ9G7DM5E",
       "expectedDraw": {
         "count": 10773,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -308,8 +308,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv1AaZk38Gkel76YA",
       "expectedDraw": {
-        "count": 1055,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -332,8 +332,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_1DqhtZC",
       "expectedDraw": {
-        "count": 3363,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -356,8 +356,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1iZ_7Kfj7Wq",
       "expectedDraw": {
-        "count": 9975,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -381,7 +381,7 @@
       "ticketmasterId": "vv1Fe8v0xoqvZ7u1ue",
       "expectedDraw": {
         "count": 10773,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -404,8 +404,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_GkDOGJ-",
       "expectedDraw": {
-        "count": 3420,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -507,8 +507,8 @@
         "run": 2
       },
       "expectedDraw": {
-        "count": 9975,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -551,8 +551,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_2TKvuzl",
       "expectedDraw": {
-        "count": 3363,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -575,8 +575,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_G0rStYB",
       "expectedDraw": {
-        "count": 3420,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -652,8 +652,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_u5nPRGK",
       "expectedDraw": {
-        "count": 1055,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -679,8 +679,8 @@
         "run": 2
       },
       "expectedDraw": {
-        "count": 9975,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -703,8 +703,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv1ke8v0PdGA2NIXk",
       "expectedDraw": {
-        "count": 3363,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -756,8 +756,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_2Rimjss",
       "expectedDraw": {
-        "count": 1055,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -838,8 +838,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_uKts2xv",
       "expectedDraw": {
-        "count": 855,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -949,7 +949,7 @@
       "ticketmasterId": "vv170Z_7GkMfFAZu",
       "expectedDraw": {
         "count": 10773,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -972,8 +972,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv170Z_aGkRSVNGb",
       "expectedDraw": {
-        "count": 1055,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1036,8 +1036,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_82Z9hL3",
       "expectedDraw": {
-        "count": 3420,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1122,8 +1122,8 @@
         "run": 2
       },
       "expectedDraw": {
-        "count": 9975,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1199,8 +1199,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_1rn_GMv",
       "expectedDraw": {
-        "count": 1055,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1271,8 +1271,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv170Z_FGkM0q1JB",
       "expectedDraw": {
-        "count": 3363,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1320,7 +1320,7 @@
       "ticketmasterId": "vv1AaZkobGkeOgjs3",
       "expectedDraw": {
         "count": 10773,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -1430,8 +1430,8 @@
         "run": 2
       },
       "expectedDraw": {
-        "count": 9975,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1508,8 +1508,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv1ke8v0r6GAuZNui",
       "expectedDraw": {
-        "count": 3363,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1559,8 +1559,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_1hSZGrO",
       "expectedDraw": {
-        "count": 1055,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1583,8 +1583,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_u1J_FHJ",
       "expectedDraw": {
-        "count": 855,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1607,8 +1607,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv170Z_FGkU1BKx2",
       "expectedDraw": {
-        "count": 3363,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 5900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1685,8 +1685,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG10Z_GpWro4Z",
       "expectedDraw": {
-        "count": 1055,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1709,8 +1709,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1IZ_aQlI5Ky",
       "expectedDraw": {
-        "count": 3420,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -1789,8 +1789,8 @@
         "run": 3
       },
       "expectedDraw": {
-        "count": 9975,
-        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+        "count": 17500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     }
   ],
@@ -1800,11 +1800,11 @@
       "date": "2026-10-07",
       "start": "18:30",
       "read": {
-        "rating": 3,
+        "rating": 4.3,
         "method": "nearby"
       },
       "draw": {
-        "count": 1055
+        "count": 1850
       }
     },
     {
@@ -1812,7 +1812,7 @@
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 3,
+        "rating": 4.3,
         "friction": "Moderate",
         "why": "Bruno Mars 28 mi away, same hours.",
         "method": "formula"
@@ -1828,13 +1828,13 @@
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 3,
+        "rating": 4.3,
         "friction": "Low",
-        "why": "Ducks vs. Oilers and Mumford & Sons 28 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
-        "count": 40037
+        "count": 70240
       }
     },
     {
@@ -1842,7 +1842,7 @@
       "date": "2026-10-07",
       "start": "19:30",
       "read": {
-        "rating": 3,
+        "rating": 4.3,
         "friction": "Moderate",
         "why": "Bruno Mars next door, same hours.",
         "method": "formula"
@@ -1856,11 +1856,11 @@
       "date": "2026-10-08",
       "start": "19:00",
       "read": {
-        "rating": 2.6,
+        "rating": 2.8,
         "method": "nearby"
       },
       "draw": {
-        "count": 1055
+        "count": 1850
       }
     },
     {
@@ -1868,9 +1868,9 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 2.6,
+        "rating": 2.8,
         "friction": "Low",
-        "why": "Chayanne and Empire of the Sun 28 mi away, same hours.",
+        "why": "Empire of the Sun 6.3 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1884,13 +1884,13 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 2.6,
-        "friction": "Moderate",
+        "rating": 2.8,
+        "friction": "Low",
         "why": "Lakers vs. Sacramento Kings and Chayanne 6.3 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 9975
+        "count": 17500
       }
     },
     {
@@ -1898,9 +1898,9 @@
       "date": "2026-10-08",
       "start": "20:00",
       "read": {
-        "rating": 2.6,
+        "rating": 2.8,
         "friction": "Moderate",
-        "why": "Lakers vs. Sacramento Kings and Empire of the Sun 28 mi away, same hours.",
+        "why": "Empire of the Sun and Lakers vs. Sacramento Kings 34 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1912,7 +1912,7 @@
       "date": "2026-10-09",
       "start": "17:00",
       "read": {
-        "rating": 5.5,
+        "rating": 6.1,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -1923,9 +1923,9 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 5.5,
+        "rating": 6.1,
         "friction": "Heavy",
-        "why": "Sombr and Mac DeMarco 29 mi away, same hours.",
+        "why": "Mac DeMarco and Sombr 11 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1937,11 +1937,11 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 5.5,
+        "rating": 6.1,
         "method": "nearby"
       },
       "draw": {
-        "count": 1055
+        "count": 1850
       }
     },
     {
@@ -1949,13 +1949,13 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 5.5,
+        "rating": 6.1,
         "friction": "Heavy",
-        "why": "Dodgers vs. Braves and The Neighbourhood 4.5 mi away, same hours.",
+        "why": "Dodgers vs. Braves and Mac DeMarco 4.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3363
+        "count": 5900
       }
     },
     {
@@ -1963,13 +1963,13 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 5.5,
+        "rating": 6.1,
         "friction": "Heavy",
         "why": "The Neighbourhood and Sombr 11 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 9975
+        "count": 17500
       }
     },
     {
@@ -1977,9 +1977,9 @@
       "date": "2026-10-09",
       "start": "19:30",
       "read": {
-        "rating": 5.5,
+        "rating": 6.1,
         "friction": "Heavy",
-        "why": "The Neighbourhood and Mac DeMarco 29 mi away, same hours.",
+        "why": "Mac DeMarco and The Neighbourhood 34 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1991,13 +1991,13 @@
       "date": "2026-10-09",
       "start": "20:00",
       "read": {
-        "rating": 5.5,
+        "rating": 6.1,
         "friction": "Heavy",
-        "why": "Dodgers vs. Braves and The Neighbourhood 10 mi away, same hours.",
+        "why": "Dodgers vs. Braves and Mac DeMarco 10 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3420
+        "count": 6000
       }
     },
     {
@@ -2005,7 +2005,7 @@
       "date": "2026-10-10",
       "start": "19:00",
       "read": {
-        "rating": 5.9,
+        "rating": 6,
         "friction": "Heavy",
         "why": "Jack Johnson 11 mi away, same hours.",
         "method": "formula"
@@ -2019,9 +2019,9 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 5.9,
+        "rating": 6,
         "friction": "Moderate",
-        "why": "Sombr and Jungle 5.1 mi away, same hours.",
+        "why": "Jack Johnson 7.6 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -2035,9 +2035,9 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 5.9,
+        "rating": 6,
         "friction": "Heavy",
-        "why": "LAFC vs. Vancouver and Sombr 5.8 mi away, same hours.",
+        "why": "LAFC vs. Vancouver and Jack Johnson 5.8 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -2049,13 +2049,13 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 5.9,
+        "rating": 6,
         "friction": "Heavy",
         "why": "Sombr 11 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 9975
+        "count": 17500
       }
     },
     {
@@ -2063,10 +2063,8 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 5.9,
-        "friction": "Heavy",
-        "why": "LAFC vs. Vancouver and Sombr 7.4 mi away, same hours.",
-        "method": "formula"
+        "rating": 6,
+        "method": "nearby"
       }
     },
     {
@@ -2074,13 +2072,13 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 5.9,
-        "friction": "Extreme",
-        "why": "LAFC vs. Vancouver and Sombr 7.4 mi away, same hours.",
+        "rating": 6,
+        "friction": "Heavy",
+        "why": "LAFC vs. Vancouver and Jack Johnson 7.4 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3363
+        "count": 5900
       }
     },
     {
@@ -2088,13 +2086,13 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 5.9,
-        "friction": "Extreme",
-        "why": "LAFC vs. Vancouver and Sombr 5.2 mi away, same hours.",
+        "rating": 6,
+        "friction": "Heavy",
+        "why": "LAFC vs. Vancouver and Jack Johnson 5.2 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3420
+        "count": 6000
       }
     },
     {
@@ -2102,9 +2100,9 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 5.9,
+        "rating": 6,
         "friction": "Heavy",
-        "why": "LAFC vs. Vancouver 2.3 mi away, same hours.",
+        "why": "LAFC vs. Vancouver and Jack Johnson 2.3 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -2116,9 +2114,9 @@
       "date": "2026-10-11",
       "start": "13:05",
       "read": {
-        "rating": 2.1,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Rain in the forecast at a 1:05 pm start.",
         "method": "formula"
       },
       "draw": {
@@ -2132,11 +2130,11 @@
       "date": "2026-10-11",
       "start": "18:30",
       "read": {
-        "rating": 2.1,
+        "rating": 2.7,
         "method": "nearby"
       },
       "draw": {
-        "count": 1055
+        "count": 1850
       }
     },
     {
@@ -2144,13 +2142,13 @@
       "date": "2026-10-11",
       "start": "19:00",
       "read": {
-        "rating": 2.1,
-        "friction": "Moderate",
+        "rating": 2.7,
+        "friction": "Low",
         "why": "Palace and Chargers vs. Broncos 2.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 9975
+        "count": 17500
       }
     },
     {
@@ -2158,13 +2156,13 @@
       "date": "2026-10-11",
       "start": "19:20",
       "read": {
-        "rating": 2.1,
+        "rating": 2.7,
         "friction": "Heavy",
         "why": "Jack Johnson 2.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3363
+        "count": 5900
       }
     },
     {
@@ -2192,7 +2190,7 @@
         "method": "nearby"
       },
       "draw": {
-        "count": 1055
+        "count": 1850
       }
     },
     {
@@ -2236,7 +2234,7 @@
         "method": "nearby"
       },
       "draw": {
-        "count": 855
+        "count": 1500
       }
     },
     {
@@ -2292,7 +2290,7 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 2.1,
+        "rating": 2.3,
         "friction": "Low",
         "why": "Cynthia Erivo: Let Me Sing To You 34 mi away, same hours.",
         "method": "formula"
@@ -2306,11 +2304,11 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 2.1,
+        "rating": 2.3,
         "method": "nearby"
       },
       "draw": {
-        "count": 1055
+        "count": 1850
       }
     },
     {
@@ -2318,7 +2316,7 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 2.1,
+        "rating": 2.3,
         "method": "nearby"
       }
     },
@@ -2327,7 +2325,7 @@
       "date": "2026-10-15",
       "start": "19:30",
       "read": {
-        "rating": 2.1,
+        "rating": 2.3,
         "friction": "Low",
         "why": "Phil Wickham 34 mi away, same hours.",
         "method": "formula"
@@ -2338,13 +2336,13 @@
       "date": "2026-10-15",
       "start": "20:00",
       "read": {
-        "rating": 2.1,
+        "rating": 2.3,
         "friction": "Moderate",
         "why": "Cynthia Erivo: Let Me Sing To You and Phil Wickham 11 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3420
+        "count": 6000
       }
     },
     {
@@ -2352,7 +2350,7 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 4.2,
+        "rating": 4.4,
         "friction": "Moderate",
         "why": "Lakers vs. Nuggets 28 mi away, same hours.",
         "method": "formula"
@@ -2368,7 +2366,7 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 4.2,
+        "rating": 4.4,
         "friction": "Moderate",
         "why": "Ducks vs. Bruins 28 mi away, same hours.",
         "method": "formula"
@@ -2384,13 +2382,13 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 4.2,
+        "rating": 4.4,
         "friction": "Moderate",
         "why": "Lakers vs. Nuggets and Ducks vs. Bruins 6.3 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 9975
+        "count": 17500
       }
     },
     {
@@ -2398,9 +2396,9 @@
       "date": "2026-10-16",
       "start": "20:00",
       "read": {
-        "rating": 4.2,
+        "rating": 4.4,
         "friction": "Moderate",
-        "why": "Lakers vs. Nuggets and Ducks vs. Bruins 7.3 mi away, same hours.",
+        "why": "MILEY and Lakers vs. Nuggets 11 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -2412,7 +2410,7 @@
       "date": "2026-10-17",
       "start": "18:00",
       "read": {
-        "rating": 6.8,
+        "rating": 6.9,
         "friction": "Heavy",
         "why": "Galaxy vs. San Diego FC and SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett 12 mi away, same hours.",
         "method": "formula"
@@ -2428,11 +2426,11 @@
       "date": "2026-10-17",
       "start": "19:00",
       "read": {
-        "rating": 6.8,
+        "rating": 6.9,
         "method": "nearby"
       },
       "draw": {
-        "count": 1055
+        "count": 1850
       }
     },
     {
@@ -2440,8 +2438,8 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 6.8,
-        "friction": "Moderate",
+        "rating": 6.9,
+        "friction": "Heavy",
         "why": "Kings vs. Bruins and SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett 12 mi away, same hours.",
         "method": "formula"
       },
@@ -2456,7 +2454,7 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 6.8,
+        "rating": 6.9,
         "friction": "Heavy",
         "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 18 mi away, same hours.",
         "method": "formula"
@@ -2467,13 +2465,13 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 6.8,
+        "rating": 6.9,
         "friction": "Extreme",
         "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 18 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3363
+        "count": 5900
       }
     },
     {
@@ -2481,7 +2479,7 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 6.8,
+        "rating": 6.9,
         "friction": "Heavy",
         "why": "Los Tigres del Norte 28 mi away, same hours.",
         "method": "formula"
@@ -2495,7 +2493,7 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 6.8,
+        "rating": 6.9,
         "friction": "Heavy",
         "why": "Young Miko 28 mi away, same hours.",
         "method": "formula"
@@ -2509,7 +2507,7 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 6.8,
+        "rating": 6.9,
         "friction": "Heavy",
         "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 8.0 mi away, same hours.",
         "method": "formula"
@@ -2523,7 +2521,7 @@
       "date": "2026-10-17",
       "start": null,
       "read": {
-        "rating": 6.8,
+        "rating": 6.9,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -2539,7 +2537,7 @@
       "date": "2026-10-18",
       "start": "13:05",
       "read": {
-        "rating": 3.5,
+        "rating": 3.8,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -2555,13 +2553,13 @@
       "date": "2026-10-18",
       "start": "19:30",
       "read": {
-        "rating": 3.5,
+        "rating": 3.8,
         "friction": "Moderate",
         "why": "Charli xcx 11 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 9975
+        "count": 17500
       }
     },
     {
@@ -2569,9 +2567,9 @@
       "date": "2026-10-18",
       "start": "19:30",
       "read": {
-        "rating": 3.5,
+        "rating": 3.8,
         "friction": "Moderate",
-        "why": "Charli xcx and MILEY 7.3 mi away, same hours.",
+        "why": "MILEY and Charli xcx 6.3 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -2583,7 +2581,7 @@
       "date": "2026-10-18",
       "start": "20:00",
       "read": {
-        "rating": 3.5,
+        "rating": 3.8,
         "friction": "Moderate",
         "why": "MILEY 11 mi away, same hours.",
         "method": "formula"
@@ -2597,13 +2595,13 @@
       "date": "2026-10-19",
       "start": "19:30",
       "read": {
-        "rating": 1.3,
+        "rating": 1.4,
         "friction": "Low",
         "why": "Kacey Musgraves 5.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3363
+        "count": 5900
       }
     },
     {
@@ -2611,7 +2609,7 @@
       "date": "2026-10-19",
       "start": "19:30",
       "read": {
-        "rating": 1.3,
+        "rating": 1.4,
         "friction": "Low",
         "why": "Dermot Kennedy 5.5 mi away, same hours.",
         "method": "formula"
@@ -2625,11 +2623,11 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 1.3,
+        "rating": 1.4,
         "method": "nearby"
       },
       "draw": {
-        "count": 1055
+        "count": 1850
       }
     },
     {
@@ -2637,11 +2635,11 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 1.3,
+        "rating": 1.4,
         "method": "nearby"
       },
       "draw": {
-        "count": 855
+        "count": 1500
       }
     },
     {
@@ -2649,13 +2647,13 @@
       "date": "2026-10-20",
       "start": "20:00",
       "read": {
-        "rating": 1.3,
+        "rating": 1.4,
         "friction": "Low",
         "why": "MONSTA X 11 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3363
+        "count": 5900
       }
     },
     {
@@ -2663,7 +2661,7 @@
       "date": "2026-10-20",
       "start": "20:00",
       "read": {
-        "rating": 1.3,
+        "rating": 1.4,
         "friction": "Low",
         "why": "Jessie Ware 11 mi away, same hours.",
         "method": "formula"
@@ -2677,7 +2675,7 @@
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 4.9,
+        "rating": 5.3,
         "friction": "Moderate",
         "why": "Clippers vs. Sacramento Kings 8.0 mi away, same hours.",
         "method": "formula"
@@ -2693,11 +2691,11 @@
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 4.9,
+        "rating": 5.3,
         "method": "nearby"
       },
       "draw": {
-        "count": 1055
+        "count": 1850
       }
     },
     {
@@ -2705,13 +2703,13 @@
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 4.9,
+        "rating": 5.3,
         "friction": "Heavy",
-        "why": "Lakers vs. Warriors and Clippers vs. Sacramento Kings 7.5 mi away, same hours.",
+        "why": "My Chemical Romance and Lakers vs. Warriors 11 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3420
+        "count": 6000
       }
     },
     {
@@ -2719,8 +2717,8 @@
       "date": "2026-10-21",
       "start": "19:30",
       "read": {
-        "rating": 4.9,
-        "friction": "Moderate",
+        "rating": 5.3,
+        "friction": "Heavy",
         "why": "Lakers vs. Warriors 8.0 mi away, same hours.",
         "method": "formula"
       },
@@ -2735,7 +2733,7 @@
       "date": "2026-10-21",
       "start": "20:00",
       "read": {
-        "rating": 4.9,
+        "rating": 5.3,
         "friction": "Heavy",
         "why": "My Chemical Romance 11 mi away, same hours.",
         "method": "formula"
@@ -2749,13 +2747,13 @@
       "date": "2026-10-21",
       "start": "20:00",
       "read": {
-        "rating": 4.9,
+        "rating": 5.3,
         "friction": "Moderate",
         "why": "beabadoobee 11 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 9975
+        "count": 17500
       }
     }
   ]

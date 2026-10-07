@@ -4,7 +4,7 @@
   "metroName": "Seattle",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T17:33:23.920Z",
+  "capturedAt": "2026-10-07T21:23:03.735Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -55,7 +55,7 @@
       "ticketmasterId": "vvG1HZ_2dnQmix",
       "expectedDraw": {
         "count": 5700,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -79,7 +79,7 @@
       "ticketmasterId": "vvG1HZ_eSaDa4L",
       "expectedDraw": {
         "count": 9804,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -134,7 +134,7 @@
       },
       "expectedDraw": {
         "count": 5700,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -158,7 +158,7 @@
       "ticketmasterId": "vvG1HZ_apipb8J",
       "expectedDraw": {
         "count": 9804,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -185,7 +185,7 @@
       },
       "expectedDraw": {
         "count": 5700,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -208,8 +208,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1HZ_aRdSCOm",
       "expectedDraw": {
-        "count": 3990,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -253,7 +253,7 @@
       "ticketmasterId": "vvG1HZ_kRkZBZv",
       "expectedDraw": {
         "count": 9690,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -280,7 +280,7 @@
       },
       "expectedDraw": {
         "count": 5700,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -307,7 +307,7 @@
       },
       "expectedDraw": {
         "count": 9804,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -363,7 +363,7 @@
       },
       "expectedDraw": {
         "count": 9804,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -387,7 +387,7 @@
       "ticketmasterId": "vvG1HZ_F1SXXOW",
       "expectedDraw": {
         "count": 9804,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -411,7 +411,7 @@
       "ticketmasterId": "vvG1HZbSlq8gOt",
       "expectedDraw": {
         "count": 9804,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -483,7 +483,7 @@
       "ticketmasterId": "vvG1HZbMEehMj0",
       "expectedDraw": {
         "count": 9804,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -558,8 +558,8 @@
       "sourceId": "ticketmaster",
       "ticketmasterId": "vvG1HZ_knDpajm",
       "expectedDraw": {
-        "count": 3990,
-        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     }
   ],
@@ -655,13 +655,13 @@
       "date": "2026-10-10",
       "start": "19:00",
       "read": {
-        "rating": 3.3,
-        "friction": "Heavy",
+        "rating": 3.5,
+        "friction": "Moderate",
         "why": "RUSH and Disney Worlds Collide Concert Tour 2.2 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3990
+        "count": 7000
       }
     },
     {
@@ -669,7 +669,7 @@
       "date": "2026-10-10",
       "start": "19:00",
       "read": {
-        "rating": 3.3,
+        "rating": 3.5,
         "friction": "Moderate",
         "why": "RUSH and Disney Worlds Collide Concert Tour 2.2 mi away, same hours.",
         "method": "formula"
@@ -680,7 +680,7 @@
       "date": "2026-10-10",
       "start": "19:00",
       "read": {
-        "rating": 3.3,
+        "rating": 3.5,
         "friction": "Moderate",
         "why": "RUSH 27 mi away, same hours.",
         "method": "formula"
@@ -694,7 +694,7 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 3.3,
+        "rating": 3.5,
         "friction": "Moderate",
         "why": "RUSH and Disney Worlds Collide Concert Tour 26 mi away, same hours.",
         "method": "formula"
@@ -708,7 +708,7 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 3.3,
+        "rating": 3.5,
         "friction": "Moderate",
         "why": "Disney Worlds Collide Concert Tour 27 mi away, same hours.",
         "method": "formula"
@@ -821,9 +821,9 @@
       "date": "2026-10-20",
       "start": "18:40",
       "read": {
-        "rating": 2,
+        "rating": 2.2,
         "friction": "Low",
-        "why": "WAMU Theater Amplified Access: Rise Against (Not an Event Ticket) 2.2 mi away, same hours.",
+        "why": "WAMU Theater Amplified Access: Rise Against (Not an Event Ticket) and Rise Against 2.2 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -837,7 +837,7 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 2,
+        "rating": 2.2,
         "friction": "Moderate",
         "why": "Kraken vs. Red Wings 2.2 mi away, same hours.",
         "method": "formula"
@@ -848,13 +848,13 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 2,
+        "rating": 2.2,
         "friction": "Moderate",
         "why": "Kraken vs. Red Wings 2.2 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 3990
+        "count": 7000
       }
     }
   ]
