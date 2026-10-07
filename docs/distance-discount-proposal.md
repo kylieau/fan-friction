@@ -54,3 +54,13 @@ Per-city calibration later, from work others have done (Kylie, Oct 6): Nielsen T
 1. Candidate B, A, or other distances, as the default to test.
 2. Straight-line miles for v1 (yes/no).
 3. Run the attendance check first (the second opinion's recommendation, and mine), or build B now and check after.
+
+## Result of the check (Oct 7, 2026)
+
+Kylie locked all three answers (Oct 7: "agree with all"), so the check ran first: `scripts/distance-check.mjs` → `docs/distance-check.md`. **It did not pass.** On 6,318 home games across six cities (2023–2026, sellouts set aside), games with a competing big game the same night drew the same against their expected draw as games with none: median −1.5% with a competitor within 15 miles, +0.4% with none, +1.0% with the nearest 15–45 miles out. On untouched (odd) seasons, ignoring competitors predicts crowds as well as counting them at full weight, and no fade (A, B, or the pair the even seasons chose) does better than either. The fitted slopes are slightly positive: nights with company draw a touch *more*, not less.
+
+What that means, and what it does not:
+- **Nothing is built.** The distance discount has no effect to discount.
+- **This is sports against sports, measured in announced crowds.** Announced counts are tickets distributed, mostly sold weeks ahead, so a same-night choice shows up as no-shows, which announced counts never record. Concerts, the largest same-night competitors in most cities, are not on file for past dates. The check can only say that *ticket sales* for a game do not fall when another game is on across town.
+- **Crowd fight's premise is therefore untested, not disproved.** It claims fans choose between events; the data the app has cannot see that choice. A season of archived Ticketmaster listings would let the test include shows; a turnstile count (which few teams publish) would let it see no-shows.
+- **Open for Kylie:** keep Crowd fight as it is (its read is still a plain statement of how many seats are in play at once, which is what she asked for on Oct 5), and revisit the discount when a season of concert listings is on file. Not reopened: the formula's constants stay as they are; no tuning to close this.
