@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-01",
+  "rows": [
+    {
+      "metroId": "new-york",
+      "venueId": "forest-hills-stadium",
+      "date": "2026-10-01",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-07T00:44:13.808Z",
+      "feelsLikeF": 71.7,
+      "tempF": 68.5,
+      "humidity": 91,
+      "windMph": 6.4,
+      "precipMm": 0,
+      "shortwave": 13,
+      "cloudCover": 54,
+      "code": 2
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "forest-hills-stadium",
+      "date": "2026-10-01",
+      "hour": 20,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-07T00:44:13.808Z",
+      "feelsLikeF": 72.9,
+      "tempF": 68.9,
+      "humidity": 92,
+      "windMph": 5.3,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 56,
+      "code": 2
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "forest-hills-stadium",
+      "date": "2026-10-01",
+      "hour": 21,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-07T00:44:13.808Z",
+      "feelsLikeF": 74,
+      "tempF": 69.8,
+      "humidity": 94,
+      "windMph": 6.4,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 73,
+      "code": 2
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "forest-hills-stadium",
+      "date": "2026-10-01",
+      "hour": 22,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-07T00:44:13.808Z",
+      "feelsLikeF": 74.6,
+      "tempF": 70.9,
+      "humidity": 91,
+      "windMph": 7.8,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 13,
+      "code": 0
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-10-01",
+      "hour": 19,
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-07T00:44:13.808Z",
+      "feelsLikeF": 75.4,
+      "tempF": 70.1,
+      "humidity": 93,
+      "windMph": 3.7,
+      "precipMm": 0,
+      "shortwave": 14,
+      "cloudCover": 41,
+      "code": 1
+    }
+  ],
+  "days": [
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-10-01",
+      "basis": "reanalysis",
+      "capturedAt": "2026-10-07T00:44:13.808Z",
+      "feelsLikeHighF": 79.3,
+      "feelsLikeLowF": 65,
+      "code": 3,
+      "precipMm": 0
+    }
+  ]
+}

@@ -22,6 +22,16 @@ const EVENT_SOURCES: EventSource[] = [seedEvents, catalogEvents];
 const RATING_SOURCES: RatingSource[] = [seedRatings];
 
 /**
+ * One copy of each event. A hand-entered listing lives in the repo and is also
+ * copied into the shared catalog by the nightly job, so both sources can return
+ * it; the first source wins (the repo's, which is listed first).
+ */
+function uniqueById(events: CrowdEvent[]): CrowdEvent[] {
+  const seen = new Set<string>();
+  return events.filter((event) => !seen.has(event.id) && Boolean(seen.add(event.id)));
+}
+
+/**
  * A hand-checked date is the whole list for that day. Live games are left out,
  * so the night is not mixed with a second copy or a building that was checked empty.
  */
@@ -38,7 +48,7 @@ function preferSeed(events: CrowdEvent[]): CrowdEvent[] {
 export async function getCityDate(metroId: string, date: LocalDate): Promise<CityDate> {
   // Weather, results and snapshots for the window around this date come from the shared catalog.
   const [lists] = await Promise.all([Promise.all(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date))), primeDate(metroId, date)]);
-  const listed = withExpectedDraws(withResults(preferSeed(lists.flat()))).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
+  const listed = withExpectedDraws(withResults(preferSeed(uniqueById(lists.flat())))).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
   const { events, rating } = applyFormula(metroId, date, listed);
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';
   return { metroId, date, status, events, rating };
@@ -66,8 +76,7 @@ export async function getUpcoming(metroId: string, afterDate: LocalDate, limit =
   const lists = await Promise.all(
     EVENT_SOURCES.map((s) => (s.upcoming ? s.upcoming(metroId, afterDate) : Promise.resolve([]))),
   );
-  return lists
-    .flat()
+  return uniqueById(lists.flat())
     .filter((e) => e.date > afterDate)
     .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')))
     .slice(0, limit);
@@ -78,8 +87,7 @@ export async function getEventsBetween(metroId: string, afterDate: LocalDate, th
   const lists = await Promise.all(
     EVENT_SOURCES.map((s) => (s.upcoming ? s.upcoming(metroId, afterDate) : Promise.resolve([]))),
   );
-  return lists
-    .flat()
+  return uniqueById(lists.flat())
     .filter((e) => e.date > afterDate && e.date <= throughDate)
     .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')));
 }

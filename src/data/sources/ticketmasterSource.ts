@@ -116,6 +116,9 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
   const events: CrowdEvent[] = [];
   const unknown = new Map<string, number>();
   const seen = new Set<string>();
+  // Ticketmaster can list one show twice under two ids (a second listing, a package). The same
+  // performer in the same building at the same date and start is one show, counted once.
+  const shows = new Set<string>();
   let pages = 0;
   const points: [number, number, number][] = [[metro.center[1], metro.center[0], RADIUS_MILES[metroId] ?? 30], ...(EXTRA_POINTS[metroId] ?? [])];
   for (const [lat, lng, radius] of points)
@@ -156,6 +159,9 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       const performers = (e._embedded?.attractions ?? []).map((a) => a.name).filter(Boolean);
       const performer = performers[0] ?? e.name;
       const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
+      const show = [e.dates.start.localDate, e.dates.start.localTime ?? '', venue.id, performer.toLowerCase()].join('|');
+      if (shows.has(show)) continue;
+      shows.add(show);
       events.push({
         id: `${e.dates.start.localDate}-tm-${e.id}`,
         metroId,

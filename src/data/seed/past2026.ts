@@ -17,6 +17,7 @@ const SOURCE_ID = 'seed';
 
 const announced = (count: number, note?: string): CrowdFigure => ({ count, kind: 'announced', note });
 const reported = (count: number, note?: string): CrowdFigure => ({ count, kind: 'reported', note });
+const estimated = (count: number, note: string): CrowdFigure => ({ count, kind: 'estimated', note });
 
 type Opts = {
   start: LocalTime | null;
@@ -314,12 +315,15 @@ export const PAST_2026_EVENTS: CrowdEvent[] = [
     stakes: { round: 'World Cup Group D' },
     facts: { opener: true, storyline: true /* USA's first home World Cup match since 1994; opening ceremony beforehand */ },
   }),
-  // Ticketed, four days, 100,000+ across the opening weekend — a weekend total,
-  // not a Friday figure, so it is not divided into one. Placed as a point, not
-  // as the Coliseum's 77,500 seats, because a lawn festival is not a full stadium.
-  unsized('la', '2026-06-12', 'fifa-fan-festival', 'FIFA Fan Festival', 'fan-festival', {
-    type: 'point', location: [-118.2879, 34.0141], name: 'LA Memorial Coliseum',
-  }, '11:00'),
+  // Ticketed, four days. Placed as a point, not as the Coliseum's 77,500 seats, because a lawn
+  // festival is not a full stadium. Sized by its own crowd: Kylie, Oct 7, 2026, a multi-day
+  // total may be averaged into a per-day figure when it is labeled estimated.
+  {
+    ...unsized('la', '2026-06-12', 'fifa-fan-festival', 'FIFA Fan Festival', 'fan-festival', {
+      type: 'point', location: [-118.2879, 34.0141], name: 'LA Memorial Coliseum',
+    }, '11:00'),
+    crowd: [estimated(25000, 'Estimated: LA Magazine reported 100,000+ visitors over the Jun 11–14 opening weekend; averaged over the four days')],
+  },
   la('2026-06-12', 'angels', 'Angels vs Rays', 'baseball', { home: 'angels', away: 'rays' }, {
     start: '18:38', venue: 'angel-stadium', crowd: [announced(37023)],
   }),
@@ -362,6 +366,39 @@ export const PAST_2026_EVENTS: CrowdEvent[] = [
   laShow('2026-09-20', 'carin-leon', 'Carín León', 'Carín León', 'regional mexican', {
     start: '20:00', venue: 'bmo-stadium',
     facts: { storyline: true /* De Sonora Para El Mundo tour */ },
+  }),
+
+  // ---------- New York, Thu Oct 1 and Sat Oct 3 ----------
+  // Before New York was covered (Oct 7), so no feed or archive lists them. From the October research
+  // (docs/research-oct-2026/new-york.md); start times checked against ESPN's season schedules and AXS.
+  // Oct 6 onward needs nothing here: the archive's first New York file starts that day.
+  game('new-york', '2026-10-01', 'rangers', 'Rangers vs Lightning', 'hockey', { home: 'ny-rangers', away: 'lightning' }, {
+    start: '19:00', venue: 'madison-square-garden',
+    facts: { opener: true },
+  }),
+  game('new-york', '2026-10-01', 'devils', 'Devils vs Flyers', 'hockey', { home: 'devils', away: 'flyers' }, {
+    start: '19:00', venue: 'prudential-center',
+    facts: { opener: true },
+  }),
+  show('new-york', '2026-10-01', 'ringo-starr', 'Ringo Starr and His All Starr Band', 'Ringo Starr and His All Starr Band', 'rock', {
+    start: '19:00', venue: 'forest-hills-stadium',
+  }),
+  show('new-york', '2026-10-03', 'harry-styles', 'Harry Styles', 'Harry Styles', 'pop', {
+    start: '20:00', venue: 'madison-square-garden',
+    // A 30-night residency, every Wed, Fri and Sat from Aug 26 to Oct 31: seven nights within a week either side.
+    facts: { run: 7, storyline: true /* Together, Together; night 18 of 30 */ },
+  }),
+  game('new-york', '2026-10-03', 'islanders', 'Islanders vs Devils', 'hockey', { home: 'islanders', away: 'devils' }, {
+    start: '19:30', venue: 'ubs-arena',
+    facts: { opener: true },
+  }),
+  game('new-york', '2026-10-03', 'columbia', 'Columbia vs Princeton', 'football', { home: 'columbia-football', away: 'princeton' }, {
+    start: '12:00', venue: 'wien-stadium', level: 'college',
+    facts: { storyline: true /* Ivy League opener */ },
+  }),
+  show('new-york', '2026-10-03', 'geese', 'Geese', 'Geese', 'rock', {
+    start: '19:00', venue: 'forest-hills-stadium',
+    facts: { storyline: true /* Getting Killed Again tour, second of two nights */ },
   }),
 
   // ---------- San Diego, Sat Aug 22 ----------
