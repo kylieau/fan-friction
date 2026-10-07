@@ -285,8 +285,9 @@ function HowEstimatesWork({ onClose }: { onClose: () => void }) {
           the building.
         </p>
         <p className="home-helper">
-          <strong>A show:</strong> {Math.round(CONCERT_FILL * 100)}% of the room, the average fill of arenas that publish their
-          numbers; a venue's own published average when it has one.
+          <strong>A show:</strong> a venue's own published average when it has one; otherwise the full room for a venue built
+          for shows, or {Math.round(CONCERT_FILL * 100)}% of an arena or stadium, the average fill of the ones that publish
+          their numbers.
         </p>
         <p className="home-helper">Teams announce tickets sold or handed out, not people through the gates.</p>
         <p className="home-helper">An announced or reported count replaces the estimate when it lands.</p>

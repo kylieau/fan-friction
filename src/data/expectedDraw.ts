@@ -64,12 +64,14 @@ export function showDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   if (!cap) return undefined;
   const own = VENUE_SHOW_AVERAGE[event.place.venueId];
   if (own) return { count: Math.min(own.perShow, cap), note: `This room's average per reported show: ${own.basis}. An estimate.` };
-  // A ballpark or stadium with no concert figure on file falls back to its listed size.
-  // 57% of that is closer than a full house for both a stadium show and a park-stage
-  // show (Petco's Gallagher Square lists as "Petco Park"), but it is the weakest rung;
-  // the gap is in BACKLOG.md.
+  // Kylie, Oct 7: a room with no sports setup is built for shows and reads at full
+  // capacity; an arena or stadium (any sports setup) keeps 57% for a concert. A
+  // ballpark with no concert figure on file falls back to its listed size at 57%; that
+  // is the weakest rung (Petco's park-stage shows list as "Petco Park"; see BACKLOG.md).
+  const multiUse = venue!.capacity.some((c) => c.setup && c.setup !== 'concert');
+  if (!multiUse) return { count: cap, note: 'The room, full: a venue built for shows, with no published average on file. An estimate.' };
   const hasConcertSetup = venue!.capacity.some((c) => c.setup === 'concert');
-  const of = hasConcertSetup ? 'the room' : "the building's listed size (no concert figure on file)";
+  const of = hasConcertSetup ? 'the concert setup' : "the building's listed size (no concert figure on file)";
   return { count: Math.round(cap * CONCERT_FILL), note: `${Math.round(CONCERT_FILL * 100)}% of ${of}, the typical fill of arenas that publish their numbers. An estimate.` };
 }
 

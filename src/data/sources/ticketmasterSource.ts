@@ -181,8 +181,12 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       const performer = performers[0] ?? e.name;
       const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
       const show = [e.dates.start.localDate, e.dates.start.localTime ?? '', venue.id, performer.toLowerCase()].join('|');
-      if (shows.has(show)) continue;
+      // One event can also be listed under two segments with two performer names (a festival
+      // as Music and as Miscellaneous), so the same name in the same building on the same date is one too.
+      const named = [e.dates.start.localDate, venue.id, e.name.toLowerCase().replace(/\s+/g, ' ').trim()].join('|');
+      if (shows.has(show) || shows.has(named)) continue;
       shows.add(show);
+      shows.add(named);
       events.push({
         id: `${e.dates.start.localDate}-tm-${e.id}`,
         metroId,

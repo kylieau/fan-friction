@@ -30,6 +30,8 @@ export const PRELIST_ATTENDEES = 1000;
 
 /** About 5,000 attendees. Only events this large feed friction for everyone nearby. */
 export const FRICTION_ATTENDEES = 5000;
+/** A non-concert Ticketmaster listing in a room smaller than this stays under the floor unless it sold out. */
+export const SMALL_SPECIAL_ROOM = 6000;
 
 /** The stamp locks this many hours after the last scheduled start that night. */
 export const STAMP_LOCK_HOURS = 24;
@@ -87,6 +89,13 @@ export function drawSize(event: CrowdEvent): number | undefined {
 function knownSize(event: CrowdEvent): number | undefined {
   const counted = knownCrowdCount(event);
   if (counted != null) return counted;
+  // A Ticketmaster listing that is neither a concert nor a league game (Arts & Theatre,
+  // Miscellaneous, a college match the feeds don't carry) in a room under ~6,000 sits
+  // under the floor unless a source says it sold out (Kylie, Oct 7).
+  if (event.kind === 'special' && event.sourceId === 'ticketmaster' && !event.crowd.some((c) => c.soldOut)) {
+    const cap = listedCapacity(event);
+    if (cap != null && cap < SMALL_SPECIAL_ROOM) return Math.min(cap, FRICTION_ATTENDEES - 1);
+  }
   const draw = event.expectedDraw;
   // A show's estimate sizes its pull, not the gate: the room decides until venue
   // averages exist for most covered rooms (Kylie, Oct 7, C1).
