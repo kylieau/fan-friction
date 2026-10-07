@@ -58,6 +58,50 @@ Range: how often the announced crowd landed inside the middle half (about half s
 
 62 games. Median % off: capacity 10.5%, old 10.5%, baseline 4.6%.
 
+## Round 2: promotions by kind and top teams (MLB)
+
+Pre-registered Oct 7 (docs/expected-draw-decisions-oct7.md). Against the app's rule; each line scores only the games carrying that kind or flag. MLB's feed lists promotions only from 2025, so promotion lifts for 2026 come from 2025 alone, and 2025 gets none.
+
+| Games | Count | app (median off · bias) | with round 2 |
+|---|---|---|---|
+| All MLB | 977 | 6.6% · +1.5% | 7.3% · +1.5% |
+| crossover | 45 | 7.0% · −1.3% | 7.3% · −2.3% |
+| star | 42 | 4.9% · +1.7% | 4.5% · +3.0% |
+| special ticket | 44 | 15.6% · +9.7% | 12.4% · +8.0% |
+| championship | 14 | 3.7% · +0.6% | 4.0% · +3.5% |
+| repeat | 493 | 6.4% · −0.3% | 7.3% · −0.0% |
+| fireworks | 20 | 10.2% · −4.0% | 9.5% · −4.3% |
+| discount | 159 | 7.6% · −0.1% | 7.5% · −1.4% |
+| other giveaway | 250 | 6.4% · +1.1% | 6.6% · +0.0% |
+| home top team | 347 | 5.4% · −0.5% | 5.6% · +0.3% |
+| visiting top team | 198 | 6.5% · +0.2% | 7.2% · +1.0% |
+| home champion | 162 | 5.3% · +1.5% | 5.4% · +2.6% |
+| visiting champion | 31 | 5.9% · −4.5% | 7.5% · −2.8% |
+
+**Each kind on its own** (the pre-registered test): only that kind applied on top of the app. It stays if its own games improve and all MLB does not get worse.
+
+| Kind or flag | Games | Its games: app → with it | All MLB: app → with it | Stays? |
+|---|---|---|---|---|
+| crossover | 45 | 7.0% → 7.0% | 6.6% → 6.6% | no |
+| star | 42 | 4.9% → 5.0% | 6.6% → 6.6% | no |
+| special ticket | 44 | 15.6% → 14.3% | 6.6% → 6.5% | **yes** |
+| championship | 14 | 3.7% → 3.9% | 6.6% → 6.6% | no |
+| repeat | 493 | 6.4% → 7.2% | 6.6% → 7.2% | no |
+| fireworks | 20 | 10.2% → 10.2% | 6.6% → 6.6% | no |
+| discount | 159 | 7.6% → 8.2% | 6.6% → 6.6% | no |
+| other giveaway | 250 | 6.4% → 6.6% | 6.6% → 6.6% | no |
+| home top team | 347 | 5.4% → 5.4% | 6.6% → 6.6% | no |
+| visiting top team | 198 | 6.5% → 6.7% | 6.6% → 6.6% | no |
+| home champion | 162 | 5.3% → 5.1% | 6.6% → 6.6% | no |
+| visiting champion | 31 | 5.9% → 7.5% | 6.6% → 6.7% | no |
+
+All MLB, median off: app 6.6%, +promos 7.2%, +top teams 6.8%, both 7.3%. Average fans off: 3,431 / 3,610 / 3,466 / 3,623.
+
+Lifts learned for 2025 (from earlier seasons): ; visiting top team ×1.02 (299), home top team ×1.00 (445), visiting champion ×1.01 (56).
+
+Lifts learned for 2026 (from earlier seasons): other giveaway ×0.98 (133), fireworks ×1.00 (34), crossover ×1.00 (26), championship ×1.01 (7), discount ×0.97 (174), star ×1.00 (24), special ticket ×0.99 (10); visiting top team ×1.00 (318), visiting champion ×1.05 (53), home top team ×1.01 (435), home champion ×1.03 (81).
+
+
 ## Saved ahead
 
 No game has both a saved estimate and an announced crowd yet. Estimates are saved from Oct 7, 2026.

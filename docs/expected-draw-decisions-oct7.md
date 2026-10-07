@@ -79,3 +79,10 @@ Written down before the run. MLB only (its feed lists promotions); every source 
 - Each flag's lift is pooled across MLB teams from earlier seasons, the same way as promotions (shrunk n ÷ (n + 3)).
 
 **Scored** against the app's current rule (baseline + season level + opponent ratio): overall, and on the games each flag touches. A kind or flag stays only if it improves the games it touches without making MLB worse overall.
+
+### Round 2 results (Oct 7)
+- **A data gap found first:** MLB's feed lists promotions only from 2025 (2022–2024 games show none). Those seasons were being counted as "no promotion", which washed every lift out. Fixed by treating them as unknown; the definitions were not changed. It also means promotion lifts for 2026 are learned from 2025 alone, and 2025 can't be tested at all.
+- **Each kind on its own, as pre-registered:** only **special-ticket nights** pass (their games 15.6% → 14.3% median off; all MLB 6.6% → 6.5%). Crossover, star, championship, fireworks, discount, other giveaways, repeat promotions and all four top-team flags do not.
+- **A correction to the quick look shown to Kylie:** that table listed the top promo nights sorted by lift, so it showed the spikes and not the typical night. Its own summary lines said so: Hello Kitty / anime nights had a median lift of +5% (13 games), Ohtani items +0% (7), bobbleheads +1% (59). The big nights are real (Mariners Hello Kitty +30%), but a promotion's kind doesn't predict which nights spike, and many top nights (Dodgers, Padres) are already near full.
+- **Top teams:** no flag passes. The season level (the home team's crowds this season) and the opponent ratio (how a visitor has drawn here) already carry most of it.
+- **Next:** special-ticket nights go into the app when MLB listings carry promotions (the season starts in March, so nothing changes before then). Rerun the rest after the 2026 promotions are a full training season, i.e. when 2027 can be predicted.
