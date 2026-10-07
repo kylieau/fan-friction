@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-04",
+  "results": [
+    {
+      "eventId": "2026-10-04-espn-gotham-401854019",
+      "metroId": "new-york",
+      "date": "2026-10-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sports-illustrated-stadium",
+      "homeTeamId": "gotham",
+      "home": {
+        "name": "Gotham",
+        "score": 1
+      },
+      "away": {
+        "name": "Angel City",
+        "score": 1
+      },
+      "attendance": 13475,
+      "capturedAt": "2026-10-07T00:08:50.954Z"
+    },
+    {
+      "eventId": "2026-10-04-espn-ny-giants-401872966",
+      "metroId": "new-york",
+      "date": "2026-10-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "metlife-stadium",
+      "homeTeamId": "ny-giants",
+      "home": {
+        "name": "Giants",
+        "score": 36
+      },
+      "away": {
+        "name": "Cardinals",
+        "score": 24
+      },
+      "attendance": 80893,
+      "capturedAt": "2026-10-07T00:08:50.954Z",
+      "duration": {
+        "minutes": 188,
+        "kind": "estimated"
+      },
+      "startedAt": "10:02"
+    },
+    {
+      "eventId": "2026-10-04-espn-ny-rangers-401892443",
+      "metroId": "new-york",
+      "date": "2026-10-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "ny-rangers",
+      "home": {
+        "name": "Rangers",
+        "score": 4
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 2
+      },
+      "attendance": 17377,
+      "capturedAt": "2026-10-07T00:08:50.954Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "15:08"
+    }
+  ]
+}

@@ -1,0 +1,1062 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "metroName": "New York",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-06",
+  "capturedAt": "2026-10-07T00:08:32.689Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-06",
+    "through": "2026-10-20"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 2
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 28
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-06-espn-devils-401892451",
+      "metroId": "new-york",
+      "date": "2026-10-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Devils vs. Mammoth",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "prudential-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "devils",
+        "away": "mammoth"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-06-espn-ny-rangers-401892452",
+      "metroId": "new-york",
+      "date": "2026-10-06",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Rangers vs. Islanders",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "madison-square-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ny-rangers",
+        "away": "islanders"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-07-mlb-849838",
+      "broadcast": "TBS/HBO MAX",
+      "starters": {
+        "home": "Max Fried",
+        "away": "Nick Martinez"
+      },
+      "metroId": "new-york",
+      "date": "2026-10-07",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Yankees vs. Rays",
+      "stakes": {
+        "round": "ALDS",
+        "game": 3
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "yankee-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "yankees",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-08-espn-islanders-401892462",
+      "metroId": "new-york",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Islanders vs. Blackhawks",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ubs-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "islanders",
+        "away": "blackhawks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-08-espn-knicks-401906508",
+      "metroId": "new-york",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Knicks vs. Wizards",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "madison-square-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "knicks",
+        "away": "wizards"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-08-espn-nets-401901823",
+      "metroId": "new-york",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Nets vs. 76ers",
+      "place": {
+        "type": "venue",
+        "venueId": "barclays-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nets",
+        "away": "76ers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-08-mlb-849837",
+      "broadcast": "TBS/HBO MAX",
+      "starters": {
+        "home": "Carlos Rodón"
+      },
+      "metroId": "new-york",
+      "date": "2026-10-08",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Yankees vs. Rays",
+      "stakes": {
+        "round": "ALDS",
+        "game": 4
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "yankee-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "yankees",
+        "away": "rays"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-09-espn-liberty-401918299",
+      "metroId": "new-york",
+      "date": "2026-10-09",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Liberty vs. Dream",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "barclays-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "liberty",
+        "away": "dream"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-10-espn-devils-401892470",
+      "metroId": "new-york",
+      "date": "2026-10-10",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Devils vs. Canucks",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "prudential-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "devils",
+        "away": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-10-espn-fordham-football-401868011",
+      "metroId": "new-york",
+      "date": "2026-10-10",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Fordham vs. Richmond",
+      "place": {
+        "type": "venue",
+        "venueId": "coffey-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "fordham-football",
+        "away": "richmond"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-10-espn-islanders-401892479",
+      "metroId": "new-york",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Islanders vs. Lightning",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ubs-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "islanders",
+        "away": "lightning"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-10-espn-red-bulls-761853",
+      "metroId": "new-york",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Red Bull NY vs. San Diego FC",
+      "place": {
+        "type": "venue",
+        "venueId": "sports-illustrated-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "red-bulls",
+        "away": "san-diego-fc"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-11-espn-ny-jets-401872983",
+      "metroId": "new-york",
+      "date": "2026-10-11",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Jets vs. Browns",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "metlife-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "ny-jets",
+        "away": "browns"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-11-espn-liberty-401918301",
+      "metroId": "new-york",
+      "date": "2026-10-11",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Liberty vs. Dream",
+      "broadcast": "ABC",
+      "place": {
+        "type": "venue",
+        "venueId": "barclays-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "liberty",
+        "away": "dream"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-11-espn-ny-rangers-401892483",
+      "metroId": "new-york",
+      "date": "2026-10-11",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Rangers vs. Canucks",
+      "broadcast": "MSG",
+      "place": {
+        "type": "venue",
+        "venueId": "madison-square-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ny-rangers",
+        "away": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-12-espn-devils-401892486",
+      "metroId": "new-york",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Devils vs. Senators",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "prudential-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "devils",
+        "away": "senators"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-12-espn-knicks-401914124",
+      "metroId": "new-york",
+      "date": "2026-10-12",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Knicks vs. Timberwolves",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "madison-square-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "knicks",
+        "away": "timberwolves"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-13-espn-ny-rangers-401892493",
+      "metroId": "new-york",
+      "date": "2026-10-13",
+      "start": "19:15",
+      "kind": "game",
+      "title": "Rangers vs. Lightning",
+      "broadcast": "MSG",
+      "place": {
+        "type": "venue",
+        "venueId": "madison-square-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ny-rangers",
+        "away": "lightning"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-13-espn-islanders-401892495",
+      "metroId": "new-york",
+      "date": "2026-10-13",
+      "start": "19:45",
+      "kind": "game",
+      "title": "Islanders vs. Canucks",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ubs-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "islanders",
+        "away": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-15-espn-devils-401892511",
+      "metroId": "new-york",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Devils vs. Rangers",
+      "broadcast": "MSG",
+      "place": {
+        "type": "venue",
+        "venueId": "prudential-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "devils",
+        "away": "rangers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-15-espn-knicks-401908945",
+      "metroId": "new-york",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Knicks vs. Raptors",
+      "place": {
+        "type": "venue",
+        "venueId": "madison-square-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "knicks",
+        "away": "raptors"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-stony-brook-football-401866666",
+      "metroId": "new-york",
+      "date": "2026-10-17",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Stony Brook vs. UAlbany",
+      "place": {
+        "type": "venue",
+        "venueId": "lavalle-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "stony-brook-football",
+        "away": "ualbany"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-fordham-football-401868012",
+      "metroId": "new-york",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Fordham vs. Villanova",
+      "place": {
+        "type": "venue",
+        "venueId": "coffey-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "fordham-football",
+        "away": "villanova"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-nycfc-761877",
+      "metroId": "new-york",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "NYCFC vs. LAFC",
+      "place": {
+        "type": "venue",
+        "venueId": "citi-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "nycfc",
+        "away": "lafc"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-red-bulls-761878",
+      "metroId": "new-york",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Red Bull NY vs. Toronto",
+      "place": {
+        "type": "venue",
+        "venueId": "sports-illustrated-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "red-bulls",
+        "away": "toronto"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-18-espn-ny-giants-401873000",
+      "metroId": "new-york",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Giants vs. Saints",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "metlife-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "ny-giants",
+        "away": "saints"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-19-espn-ny-rangers-401892535",
+      "metroId": "new-york",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rangers vs. Ducks",
+      "broadcast": "MSG",
+      "place": {
+        "type": "venue",
+        "venueId": "madison-square-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ny-rangers",
+        "away": "ducks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-20-espn-devils-401892540",
+      "metroId": "new-york",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Devils vs. Avalanche",
+      "broadcast": "MSG",
+      "place": {
+        "type": "venue",
+        "venueId": "prudential-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "devils",
+        "away": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-20-espn-islanders-401892541",
+      "metroId": "new-york",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Islanders vs. Ducks",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ubs-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "islanders",
+        "away": "ducks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-20-espn-knicks-401909089",
+      "metroId": "new-york",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Knicks vs. 76ers",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "madison-square-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "knicks",
+        "away": "76ers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-06-espn-devils-401892451",
+      "date": "2026-10-06",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Rangers vs. Islanders 9.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-06-espn-ny-rangers-401892452",
+      "date": "2026-10-06",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Devils vs. Mammoth 9.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-07-mlb-849838",
+      "date": "2026-10-07",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-08-espn-islanders-401892462",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "read": {
+        "rating": 6.9,
+        "friction": "Heavy",
+        "why": "Yankees vs. Rays 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-08-espn-knicks-401906508",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "read": {
+        "rating": 6.9,
+        "friction": "Extreme",
+        "why": "Yankees vs. Rays 6.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-08-espn-nets-401901823",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "read": {
+        "rating": 6.9,
+        "friction": "Heavy",
+        "why": "Yankees vs. Rays 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-08-mlb-849837",
+      "date": "2026-10-08",
+      "start": "20:00",
+      "read": {
+        "rating": 6.9,
+        "friction": "Moderate",
+        "why": "Knicks vs. Wizards 6.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-09-espn-liberty-401918299",
+      "date": "2026-10-09",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-devils-401892470",
+      "date": "2026-10-10",
+      "start": "15:30",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Islanders vs. Lightning 23 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-fordham-football-401868011",
+      "date": "2026-10-10",
+      "start": "15:30",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Red Bull NY vs. San Diego FC and Islanders vs. Lightning 16 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-islanders-401892479",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Devils vs. Canucks 23 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-red-bulls-761853",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "read": {
+        "rating": 4.6,
+        "friction": "Low",
+        "why": "Islanders vs. Lightning and Devils vs. Canucks 22 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-11-espn-ny-jets-401872983",
+      "date": "2026-10-11",
+      "start": "13:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-11-espn-liberty-401918301",
+      "date": "2026-10-11",
+      "start": "14:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Jets vs. Browns 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-11-espn-ny-rangers-401892483",
+      "date": "2026-10-11",
+      "start": "18:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Jets vs. Browns 6.1 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-12-espn-devils-401892486",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Knicks vs. Timberwolves 9.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-12-espn-knicks-401914124",
+      "date": "2026-10-12",
+      "start": "19:30",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Devils vs. Senators 9.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-13-espn-ny-rangers-401892493",
+      "date": "2026-10-13",
+      "start": "19:15",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Islanders vs. Canucks 14 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-13-espn-islanders-401892495",
+      "date": "2026-10-13",
+      "start": "19:45",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Rangers vs. Lightning 14 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-espn-devils-401892511",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Knicks vs. Raptors 9.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-espn-knicks-401908945",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Devils vs. Rangers 9.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-stony-brook-football-401866666",
+      "date": "2026-10-17",
+      "start": "14:30",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Fordham vs. Villanova 40 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-fordham-football-401868012",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "read": {
+        "rating": 5,
+        "friction": "Heavy",
+        "why": "Stony Brook vs. UAlbany 40 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-nycfc-761877",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Red Bull NY vs. Toronto 16 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-red-bulls-761878",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "NYCFC vs. LAFC 16 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-ny-giants-401873000",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-19-espn-ny-rangers-401892535",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-devils-401892540",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Heavy",
+        "why": "Knicks vs. 76ers and Islanders vs. Ducks 9.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-islanders-401892541",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Heavy",
+        "why": "Knicks vs. 76ers and Devils vs. Avalanche 14 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-knicks-401909089",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Islanders vs. Ducks and Devils vs. Avalanche 14 mi away, same hours.",
+        "method": "formula"
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "metroName": "Seattle",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-06",
-  "capturedAt": "2026-10-06T20:52:34.508Z",
+  "capturedAt": "2026-10-07T00:08:31.603Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-06",
@@ -26,11 +26,6 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
-    },
-    {
-      "id": "ticketmaster",
-      "name": "Ticketmaster listings",
-      "inWindow": 17
     }
   ],
   "events": [
@@ -58,46 +53,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-08-tm-vvG1HZ_2dnQmix",
-      "metroId": "seattle",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "kind": "show",
-      "title": "YG",
-      "place": {
-        "type": "venue",
-        "venueId": "angel-of-the-winds-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "YG",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_2dnQmix"
-    },
-    {
-      "id": "2026-10-08-tm-vvG1HZ_eSaDa4L",
-      "metroId": "seattle",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Carín León",
-      "place": {
-        "type": "venue",
-        "venueId": "climate-pledge-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Carín León",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_eSaDa4L"
-    },
-    {
       "id": "2026-10-09-espn-uw-football-401858487",
       "metroId": "seattle",
       "date": "2026-10-09",
@@ -118,178 +73,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-09-tm-vvG1HZ_6RGOXwD",
-      "metroId": "seattle",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Billy Strings",
-      "place": {
-        "type": "venue",
-        "venueId": "angel-of-the-winds-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Country"
-      },
-      "performer": "Billy Strings",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_6RGOXwD",
-      "occasionFacts": {
-        "run": 3
-      }
-    },
-    {
-      "id": "2026-10-09-tm-vvG1HZ_apipb8J",
-      "metroId": "seattle",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "kind": "show",
-      "title": "aespa",
-      "place": {
-        "type": "venue",
-        "venueId": "climate-pledge-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "aespa",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_apipb8J"
-    },
-    {
-      "id": "2026-10-09-tm-vvG1HZ_6RCaryz",
-      "metroId": "seattle",
-      "date": "2026-10-09",
-      "start": null,
-      "kind": "show",
-      "title": "Billy Strings",
-      "place": {
-        "type": "venue",
-        "venueId": "angel-of-the-winds-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Country"
-      },
-      "performer": "Billy Strings",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_6RCaryz",
-      "occasionFacts": {
-        "run": 3
-      }
-    },
-    {
-      "id": "2026-10-10-tm-vvG1HZ_aRdSCOm",
-      "metroId": "seattle",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Kai Wachi",
-      "place": {
-        "type": "venue",
-        "venueId": "wamu-theater"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Dance/Electronic"
-      },
-      "performer": "Kai Wachi",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_aRdSCOm"
-    },
-    {
-      "id": "2026-10-10-tm-vvG1HZ_awvO4ij",
-      "metroId": "seattle",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "kind": "special",
-      "title": "WAMU Theater Amplified Access: Kai Wachi (Not an Event Ticket)",
-      "place": {
-        "type": "venue",
-        "venueId": "wamu-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "WAMU Theater – Amplified",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_awvO4ij"
-    },
-    {
-      "id": "2026-10-10-tm-vvG1HZ_kRkZBZv",
-      "metroId": "seattle",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Disney Worlds Collide Concert Tour",
-      "place": {
-        "type": "venue",
-        "venueId": "tacoma-dome"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Other"
-      },
-      "performer": "Disney Worlds Collide Concert Tour",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_kRkZBZv"
-    },
-    {
-      "id": "2026-10-10-tm-vvG1HZ_6RG-rSZ",
-      "metroId": "seattle",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Billy Strings",
-      "place": {
-        "type": "venue",
-        "venueId": "angel-of-the-winds-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Country"
-      },
-      "performer": "Billy Strings",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_6RG-rSZ",
-      "occasionFacts": {
-        "run": 3
-      }
-    },
-    {
-      "id": "2026-10-10-tm-vvG1HZbVHCjUxY",
-      "metroId": "seattle",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "kind": "show",
-      "title": "RUSH",
-      "place": {
-        "type": "venue",
-        "venueId": "climate-pledge-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "RUSH",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZbVHCjUxY",
-      "occasionFacts": {
-        "run": 2
-      }
     },
     {
       "id": "2026-10-11-espn-seahawks-401872992",
@@ -315,89 +98,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-12-tm-vvG1HZbg96d7M9",
-      "metroId": "seattle",
-      "date": "2026-10-12",
-      "start": "19:30",
-      "kind": "show",
-      "title": "RUSH",
-      "place": {
-        "type": "venue",
-        "venueId": "climate-pledge-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "RUSH",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZbg96d7M9",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-13-tm-vvG1HZ_F1SXXOW",
-      "metroId": "seattle",
-      "date": "2026-10-13",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Young Miko",
-      "place": {
-        "type": "venue",
-        "venueId": "climate-pledge-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Young Miko",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_F1SXXOW"
-    },
-    {
-      "id": "2026-10-15-tm-vvG1HZbSlq8gOt",
-      "metroId": "seattle",
-      "date": "2026-10-15",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Doja Cat",
-      "place": {
-        "type": "venue",
-        "venueId": "climate-pledge-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "Doja Cat",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZbSlq8gOt"
-    },
-    {
-      "id": "2026-10-15-tm-vvG1HZ_F51rx5F",
-      "metroId": "seattle",
-      "date": "2026-10-15",
-      "start": null,
-      "kind": "special",
-      "title": "Tacoma Holiday Festival",
-      "place": {
-        "type": "venue",
-        "venueId": "tacoma-dome"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Hobby/Special Interest Expos"
-      },
-      "performer": "Tacoma Holiday Festival",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_F51rx5F"
-    },
-    {
       "id": "2026-10-17-espn-sounders-761885",
       "metroId": "seattle",
       "date": "2026-10-17",
@@ -418,26 +118,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-17-tm-vvG1HZbMEehMj0",
-      "metroId": "seattle",
-      "date": "2026-10-17",
-      "start": "20:30",
-      "kind": "show",
-      "title": "MANÁ",
-      "place": {
-        "type": "venue",
-        "venueId": "climate-pledge-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "MANÁ",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZbMEehMj0"
     },
     {
       "id": "2026-10-20-espn-kraken-401892547",
@@ -461,49 +141,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-20-tm-vvG1HZ_ahVjxry",
-      "metroId": "seattle",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "kind": "special",
-      "title": "WAMU Theater Amplified Access: Rise Against (Not an Event Ticket)",
-      "place": {
-        "type": "venue",
-        "venueId": "wamu-theater"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "WAMU Theater – Amplified",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_ahVjxry",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-20-tm-vvG1HZ_knDpajm",
-      "metroId": "seattle",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Rise Against",
-      "place": {
-        "type": "venue",
-        "venueId": "wamu-theater"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Rise Against",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1HZ_knDpajm"
     }
   ],
   "forecasts": [
@@ -519,123 +156,13 @@
       }
     },
     {
-      "eventId": "2026-10-08-tm-vvG1HZ_2dnQmix",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "read": {
-        "rating": 1.9,
-        "friction": "Low",
-        "why": "Carín León 26 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-vvG1HZ_eSaDa4L",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "read": {
-        "rating": 1.9,
-        "friction": "Low",
-        "why": "YG 26 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-09-espn-uw-football-401858487",
       "date": "2026-10-09",
       "start": "18:00",
       "read": {
-        "rating": 10,
+        "rating": 4.7,
         "friction": "Low",
-        "why": "aespa 3.1 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG1HZ_6RGOXwD",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "read": {
-        "rating": 10,
-        "friction": "Moderate",
-        "why": "Washington Huskies vs. Iowa 23 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG1HZ_apipb8J",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "read": {
-        "rating": 10,
-        "friction": "Moderate",
-        "why": "Washington Huskies vs. Iowa 3.1 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG1HZ_6RCaryz",
-      "date": "2026-10-09",
-      "start": null,
-      "read": {
-        "rating": 10,
-        "friction": "Moderate",
-        "why": "Billy Strings next door, back to back.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1HZ_aRdSCOm",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "read": {
-        "rating": 4.2,
-        "friction": "Heavy",
-        "why": "RUSH and Disney Worlds Collide Concert Tour 2.2 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1HZ_awvO4ij",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "read": {
-        "rating": 4.2,
-        "friction": "Heavy",
-        "why": "RUSH and Disney Worlds Collide Concert Tour 2.2 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1HZ_kRkZBZv",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "read": {
-        "rating": 4.2,
-        "friction": "Moderate",
-        "why": "RUSH 27 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1HZ_6RG-rSZ",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "read": {
-        "rating": 4.2,
-        "friction": "Moderate",
-        "why": "RUSH and Disney Worlds Collide Concert Tour 26 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1HZbVHCjUxY",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "read": {
-        "rating": 4.2,
-        "friction": "Moderate",
-        "why": "Disney Worlds Collide Concert Tour 27 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -651,68 +178,13 @@
       }
     },
     {
-      "eventId": "2026-10-12-tm-vvG1HZbg96d7M9",
-      "date": "2026-10-12",
-      "start": "19:30",
-      "read": {
-        "rating": 1,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-13-tm-vvG1HZ_F1SXXOW",
-      "date": "2026-10-13",
-      "start": "20:00",
-      "read": {
-        "rating": 1,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG1HZbSlq8gOt",
-      "date": "2026-10-15",
-      "start": "19:30",
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "Tacoma Holiday Festival 27 mi away, back to back.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG1HZ_F51rx5F",
-      "date": "2026-10-15",
-      "start": null,
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "Doja Cat 27 mi away, back to back.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-17-espn-sounders-761885",
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 2.1,
+        "rating": 1,
         "friction": "Low",
-        "why": "MANÁ 2.1 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vvG1HZbMEehMj0",
-      "date": "2026-10-17",
-      "start": "20:30",
-      "read": {
-        "rating": 2.1,
-        "friction": "Low",
-        "why": "Sounders vs. CF Montréal 2.1 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -721,31 +193,9 @@
       "date": "2026-10-20",
       "start": "18:40",
       "read": {
-        "rating": 2.2,
+        "rating": 1,
         "friction": "Low",
-        "why": "WAMU Theater Amplified Access: Rise Against (Not an Event Ticket) and Rise Against 2.2 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vvG1HZ_ahVjxry",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "read": {
-        "rating": 2.2,
-        "friction": "Moderate",
-        "why": "Kraken vs. Red Wings 2.2 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vvG1HZ_knDpajm",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "read": {
-        "rating": 2.2,
-        "friction": "Moderate",
-        "why": "Kraken vs. Red Wings 2.2 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     }

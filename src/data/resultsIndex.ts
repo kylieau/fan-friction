@@ -103,6 +103,121 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "17:03"
   },
   {
+    "eventId": "2026-10-03-espn-columbia-football-401867819",
+    "metroId": "new-york",
+    "date": "2026-10-03",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "wien-stadium",
+    "homeTeamId": "columbia-football",
+    "home": {
+      "name": "Columbia",
+      "score": 7
+    },
+    "away": {
+      "name": "Princeton",
+      "score": 35
+    },
+    "attendance": 3676,
+    "capturedAt": "2026-10-07T00:08:50.954Z",
+    "duration": {
+      "minutes": 178,
+      "kind": "estimated"
+    },
+    "startedAt": "09:01"
+  },
+  {
+    "eventId": "2026-10-03-espn-islanders-401891818",
+    "metroId": "new-york",
+    "date": "2026-10-03",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ubs-arena",
+    "homeTeamId": "islanders",
+    "home": {
+      "name": "Islanders",
+      "score": 6
+    },
+    "away": {
+      "name": "Devils",
+      "score": 0
+    },
+    "attendance": 17345,
+    "capturedAt": "2026-10-07T00:08:50.954Z",
+    "duration": {
+      "minutes": 145,
+      "kind": "estimated"
+    },
+    "startedAt": "16:46"
+  },
+  {
+    "eventId": "2026-10-04-espn-gotham-401854019",
+    "metroId": "new-york",
+    "date": "2026-10-04",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "sports-illustrated-stadium",
+    "homeTeamId": "gotham",
+    "home": {
+      "name": "Gotham",
+      "score": 1
+    },
+    "away": {
+      "name": "Angel City",
+      "score": 1
+    },
+    "attendance": 13475,
+    "capturedAt": "2026-10-07T00:08:50.954Z"
+  },
+  {
+    "eventId": "2026-10-04-espn-ny-giants-401872966",
+    "metroId": "new-york",
+    "date": "2026-10-04",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "metlife-stadium",
+    "homeTeamId": "ny-giants",
+    "home": {
+      "name": "Giants",
+      "score": 36
+    },
+    "away": {
+      "name": "Cardinals",
+      "score": 24
+    },
+    "attendance": 80893,
+    "capturedAt": "2026-10-07T00:08:50.954Z",
+    "duration": {
+      "minutes": 188,
+      "kind": "estimated"
+    },
+    "startedAt": "10:02"
+  },
+  {
+    "eventId": "2026-10-04-espn-ny-rangers-401892443",
+    "metroId": "new-york",
+    "date": "2026-10-04",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "madison-square-garden",
+    "homeTeamId": "ny-rangers",
+    "home": {
+      "name": "Rangers",
+      "score": 4
+    },
+    "away": {
+      "name": "Mammoth",
+      "score": 2
+    },
+    "attendance": 17377,
+    "capturedAt": "2026-10-07T00:08:50.954Z",
+    "duration": {
+      "minutes": 148,
+      "kind": "estimated"
+    },
+    "startedAt": "15:08"
+  },
+  {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",
     "metroId": "san-diego",
     "date": "2026-10-03",

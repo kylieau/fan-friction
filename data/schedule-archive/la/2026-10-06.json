@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-06",
-  "capturedAt": "2026-10-06T20:52:18.350Z",
+  "capturedAt": "2026-10-07T00:08:27.842Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-06",
@@ -26,11 +26,6 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
-    },
-    {
-      "id": "ticketmaster",
-      "name": "Ticketmaster listings",
-      "inWindow": 51
     }
   ],
   "events": [
@@ -58,112 +53,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-06-tm-vv170Z_kGkMvpHlm",
-      "metroId": "la",
-      "date": "2026-10-06",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Jesse Welles",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Folk"
-      },
-      "performer": "Jesse Welles",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_kGkMvpHlm"
-    },
-    {
-      "id": "2026-10-06-tm-vvG1iZ_16lDyfW",
-      "metroId": "la",
-      "date": "2026-10-06",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Hayley Williams",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Hayley Williams",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_16lDyfW"
-    },
-    {
-      "id": "2026-10-06-tm-vvG1IZ_eheCVin",
-      "metroId": "la",
-      "date": "2026-10-06",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Bruno Mars",
-      "place": {
-        "type": "venue",
-        "venueId": "sofi-stadium"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Bruno Mars",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_eheCVin",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-06-tm-vv1AaZko3Gkdf6kuk",
-      "metroId": "la",
-      "date": "2026-10-06",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Mumford & Sons",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Mumford & Sons",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZko3Gkdf6kuk",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-07-tm-vv170Z_6GkRNGSd7",
-      "metroId": "la",
-      "date": "2026-10-07",
-      "start": "18:30",
-      "kind": "show",
-      "title": "PRESIDENT",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "PRESIDENT",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_6GkRNGSd7"
-    },
-    {
       "id": "2026-10-07-espn-ducks-401892456",
       "metroId": "la",
       "date": "2026-10-07",
@@ -187,72 +76,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-07-tm-vvG1IZ_eheo7is",
-      "metroId": "la",
-      "date": "2026-10-07",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Bruno Mars",
-      "place": {
-        "type": "venue",
-        "venueId": "sofi-stadium"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Bruno Mars",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_eheo7is",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-07-tm-vv1AaZko9Gketiqv4",
-      "metroId": "la",
-      "date": "2026-10-07",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Mumford & Sons",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Mumford & Sons",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZko9Gketiqv4",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-08-tm-vv1AaZk8tGkd6ll1M",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Cavetown",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Cavetown",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk8tGkd6ll1M"
-    },
-    {
       "id": "2026-10-08-espn-lakers-401898717",
       "metroId": "la",
       "date": "2026-10-08",
@@ -274,46 +97,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-08-tm-vvG1iZ_k9N_4fq",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Empire of the Sun",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Empire of the Sun",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_k9N_4fq"
-    },
-    {
-      "id": "2026-10-08-tm-vv1k0Z_kJ9G7DM5E",
-      "metroId": "la",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Chayanne",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Chayanne",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1k0Z_kJ9G7DM5E"
     },
     {
       "id": "2026-10-09-mlb-849821",
@@ -343,146 +126,6 @@
       "sourceId": "mlb"
     },
     {
-      "id": "2026-10-09-tm-vv170ZbgGkzetQ9Z",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "kind": "show",
-      "title": "The Neighbourhood",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "The Neighbourhood",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170ZbgGkzetQ9Z"
-    },
-    {
-      "id": "2026-10-09-tm-vv1AaZk38Gkel76YA",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Tinlicker",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Dance/Electronic"
-      },
-      "performer": "Tinlicker",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk38Gkel76YA"
-    },
-    {
-      "id": "2026-10-09-tm-vvG10Z_1DqhtZC",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "kind": "show",
-      "title": "for KING & COUNTRY",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "for KING & COUNTRY",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_1DqhtZC"
-    },
-    {
-      "id": "2026-10-09-tm-vvG1iZ_7Kfj7Wq",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Mac DeMarco",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Mac DeMarco",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_7Kfj7Wq"
-    },
-    {
-      "id": "2026-10-09-tm-vv1Fe8v0xoqvZ7u1ue",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Sombr",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Sombr",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1Fe8v0xoqvZ7u1ue"
-    },
-    {
-      "id": "2026-10-09-tm-vvG1IZ_GkDOGJ-",
-      "metroId": "la",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Jorge Medina",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Jorge Medina",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_GkDOGJ-"
-    },
-    {
-      "id": "2026-10-10-tm-vv16aZk3aZMZAuak1v",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Sombr",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Sombr",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv16aZk3aZMZAuak1v"
-    },
-    {
       "id": "2026-10-10-espn-lafc-761858",
       "metroId": "la",
       "date": "2026-10-10",
@@ -503,129 +146,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-10-tm-vv1AaZkowGkdFeQU8",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "kind": "show",
-      "title": "TLC",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "TLC",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZkowGkdFeQU8"
-    },
-    {
-      "id": "2026-10-10-tm-vvG1iZbU81spCL",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Jack Johnson",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Jack Johnson",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZbU81spCL",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-10-tm-vv1AaZkfoGkdZT1iU",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "special",
-      "title": "Premium: AIR SUPPLY",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Premium: AIR SUPPLY",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZkfoGkdZT1iU"
-    },
-    {
-      "id": "2026-10-10-tm-vvG10Z_2TKvuzl",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Air Supply",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Air Supply",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_2TKvuzl"
-    },
-    {
-      "id": "2026-10-10-tm-vvG1IZ_G0rStYB",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Menudo",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Menudo",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_G0rStYB"
-    },
-    {
-      "id": "2026-10-10-tm-Z7r9jZ1A7-goJ",
-      "metroId": "la",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Jungle",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "R&B"
-      },
-      "performer": "Jungle",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-goJ"
     },
     {
       "id": "2026-10-11-espn-chargers-401872989",
@@ -651,69 +171,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-11-tm-vvG10Z_u5nPRGK",
-      "metroId": "la",
-      "date": "2026-10-11",
-      "start": "18:30",
-      "kind": "show",
-      "title": "Sons of Legion",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Sons of Legion",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_u5nPRGK"
-    },
-    {
-      "id": "2026-10-11-tm-vvG1iZbU81wkC0",
-      "metroId": "la",
-      "date": "2026-10-11",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Jack Johnson",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Jack Johnson",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZbU81wkC0",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-11-tm-vv1ke8v0PdGA2NIXk",
-      "metroId": "la",
-      "date": "2026-10-11",
-      "start": "19:20",
-      "kind": "show",
-      "title": "Palace",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Palace",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1ke8v0PdGA2NIXk"
-    },
-    {
       "id": "2026-10-12-espn-rams-401872994",
       "metroId": "la",
       "date": "2026-10-12",
@@ -735,26 +192,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-12-tm-vvG10Z_2Rimjss",
-      "metroId": "la",
-      "date": "2026-10-12",
-      "start": "19:00",
-      "kind": "show",
-      "title": "BAND-MAID",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "BAND-MAID",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_2Rimjss"
     },
     {
       "id": "2026-10-13-espn-ducks-401892501",
@@ -801,26 +238,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-14-tm-vvG10Z_uKts2xv",
-      "metroId": "la",
-      "date": "2026-10-14",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Patrick Droney",
-      "place": {
-        "type": "venue",
-        "venueId": "belasco"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Patrick Droney",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_uKts2xv"
     },
     {
       "id": "2026-10-14-espn-clippers-401918011",
@@ -890,132 +307,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-15-tm-vv170Z_7GkMfFAZu",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Phil Wickham",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Phil Wickham",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_7GkMfFAZu",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-15-tm-vv170Z_aGkRSVNGb",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "kind": "show",
-      "title": "LP",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "LP",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_aGkRSVNGb"
-    },
-    {
-      "id": "2026-10-15-tm-vv1k0Z_kp4G7ia50",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Phil Wickham",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Phil Wickham",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1k0Z_kp4G7ia50",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-15-tm-vvG10Z_GwWe2IR",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "kind": "special",
-      "title": "Ilana Glazer Live!",
-      "place": {
-        "type": "venue",
-        "venueId": "belasco"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Comedy"
-      },
-      "performer": "Ilana Glazer",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_GwWe2IR"
-    },
-    {
-      "id": "2026-10-15-tm-vvG1iZ_1rd3dbK",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:30",
-      "kind": "special",
-      "title": "Cynthia Erivo: Let Me Sing To You",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Theatre"
-      },
-      "performer": "Cynthia Erivo",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_1rd3dbK"
-    },
-    {
-      "id": "2026-10-15-tm-vvG1IZ_82Z9hL3",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Pedro Fernández",
-      "place": {
-        "type": "venue",
-        "venueId": "youtube-theater"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Pedro Fernández",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_82Z9hL3"
-    },
-    {
       "id": "2026-10-16-espn-ducks-401892518",
       "metroId": "la",
       "date": "2026-10-16",
@@ -1062,49 +353,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-16-tm-vvG1iZ_owcOPJ1",
-      "metroId": "la",
-      "date": "2026-10-16",
-      "start": "19:30",
-      "kind": "show",
-      "title": "MILEY",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "MILEY",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_owcOPJ1",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
-      "metroId": "la",
-      "date": "2026-10-16",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Juanes",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Juanes",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_7Gkz5H4zw"
-    },
-    {
       "id": "2026-10-17-espn-kings-401892530",
       "metroId": "la",
       "date": "2026-10-17",
@@ -1128,26 +376,6 @@
       "sourceId": "espn"
     },
     {
-      "id": "2026-10-17-tm-vvG10Z_1rn_GMv",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Thee Sinseers",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "R&B"
-      },
-      "performer": "Thee Sinseers",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_1rn_GMv"
-    },
-    {
       "id": "2026-10-17-espn-galaxy-761887",
       "metroId": "la",
       "date": "2026-10-17",
@@ -1168,109 +396,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-17-tm-vvG1iZ_F53Epiv",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "19:30",
-      "kind": "special",
-      "title": "SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Theatre"
-      },
-      "performer": "SmartLess Podcast",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_F53Epiv"
-    },
-    {
-      "id": "2026-10-17-tm-vv170Z_FGkM0q1JB",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Vulfpeck",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Other"
-      },
-      "performer": "Vulfpeck",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_FGkM0q1JB"
-    },
-    {
-      "id": "2026-10-17-tm-vv1AaZk3dGkdvrEc1",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Young Miko",
-      "place": {
-        "type": "venue",
-        "venueId": "intuit-dome"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Young Miko",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk3dGkdvrEc1"
-    },
-    {
-      "id": "2026-10-17-tm-vv1AaZkobGkeOgjs3",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Los Tigres del Norte",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Latin"
-      },
-      "performer": "Los Tigres del Norte",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZkobGkeOgjs3"
-    },
-    {
-      "id": "2026-10-17-tm-vvG10Z_G9R7nPH",
-      "metroId": "la",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Charli xcx",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Charli xcx",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_G9R7nPH",
-      "occasionFacts": {
-        "run": 2
-      }
     },
     {
       "id": "2026-10-17-espn-ucla-football-401858494",
@@ -1316,198 +441,6 @@
       },
       "crowd": [],
       "sourceId": "espn"
-    },
-    {
-      "id": "2026-10-18-tm-vvG1iZ_owcx4Jh",
-      "metroId": "la",
-      "date": "2026-10-18",
-      "start": "19:30",
-      "kind": "show",
-      "title": "MILEY",
-      "place": {
-        "type": "venue",
-        "venueId": "hollywood-bowl"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "MILEY",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_owcx4Jh",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-18-tm-Z7r9jZ1A70kAU",
-      "metroId": "la",
-      "date": "2026-10-18",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Kacey Musgraves",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Country"
-      },
-      "performer": "Kacey Musgraves",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A70kAU",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-18-tm-vvG10Z_G9gehI7",
-      "metroId": "la",
-      "date": "2026-10-18",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Charli xcx",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Charli xcx",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_G9gehI7",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-19-tm-vv1ke8v0r6GAuZNui",
-      "metroId": "la",
-      "date": "2026-10-19",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Dermot Kennedy",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Dermot Kennedy",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1ke8v0r6GAuZNui"
-    },
-    {
-      "id": "2026-10-19-tm-Z7r9jZ1A70kAg",
-      "metroId": "la",
-      "date": "2026-10-19",
-      "start": "19:30",
-      "kind": "show",
-      "title": "Kacey Musgraves",
-      "place": {
-        "type": "venue",
-        "venueId": "crypto-com-arena"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Country"
-      },
-      "performer": "Kacey Musgraves",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A70kAg",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-20-tm-vvG10Z_1hSZGrO",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Cameron Whitcomb",
-      "place": {
-        "type": "venue",
-        "venueId": "wiltern"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Country"
-      },
-      "performer": "Cameron Whitcomb",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_1hSZGrO"
-    },
-    {
-      "id": "2026-10-20-tm-vvG10Z_u1J_FHJ",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "kind": "show",
-      "title": "almost monday",
-      "place": {
-        "type": "venue",
-        "venueId": "belasco"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "almost monday",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_u1J_FHJ"
-    },
-    {
-      "id": "2026-10-20-tm-vv170Z_FGkU1BKx2",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Jessie Ware",
-      "place": {
-        "type": "venue",
-        "venueId": "greek-theatre"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Jessie Ware",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_FGkU1BKx2"
-    },
-    {
-      "id": "2026-10-20-tm-vv1AaZk3vGkdfJcBD",
-      "metroId": "la",
-      "date": "2026-10-20",
-      "start": "20:00",
-      "kind": "show",
-      "title": "MONSTA X",
-      "place": {
-        "type": "venue",
-        "venueId": "kia-forum"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "MONSTA X",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk3vGkdfJcBD"
     }
   ],
   "forecasts": [
@@ -1516,61 +449,10 @@
       "date": "2026-10-06",
       "start": "19:00",
       "read": {
-        "rating": 5.9,
-        "friction": "Moderate",
-        "why": "Bruno Mars 7.4 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-06-tm-vv170Z_kGkMvpHlm",
-      "date": "2026-10-06",
-      "start": "19:00",
-      "read": {
-        "rating": 5.9,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-06-tm-vvG1iZ_16lDyfW",
-      "date": "2026-10-06",
-      "start": "19:00",
-      "read": {
-        "rating": 5.9,
-        "friction": "Heavy",
-        "why": "Bruno Mars 11 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-06-tm-vvG1IZ_eheCVin",
-      "date": "2026-10-06",
-      "start": "19:00",
-      "read": {
-        "rating": 5.9,
+        "rating": 1,
         "friction": "Low",
-        "why": "Hayley Williams 11 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-06-tm-vv1AaZko3Gkdf6kuk",
-      "date": "2026-10-06",
-      "start": "19:30",
-      "read": {
-        "rating": 5.9,
-        "friction": "Moderate",
-        "why": "Bruno Mars next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-07-tm-vv170Z_6GkRNGSd7",
-      "date": "2026-10-07",
-      "start": "18:30",
-      "read": {
-        "rating": 5.3,
-        "method": "nearby"
       }
     },
     {
@@ -1578,41 +460,10 @@
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 5.3,
-        "friction": "Moderate",
-        "why": "Bruno Mars 28 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-07-tm-vvG1IZ_eheo7is",
-      "date": "2026-10-07",
-      "start": "19:00",
-      "read": {
-        "rating": 5.3,
+        "rating": 1,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-07-tm-vv1AaZko9Gketiqv4",
-      "date": "2026-10-07",
-      "start": "19:30",
-      "read": {
-        "rating": 5.3,
-        "friction": "Moderate",
-        "why": "Bruno Mars next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-vv1AaZk8tGkd6ll1M",
-      "date": "2026-10-08",
-      "start": "19:00",
-      "read": {
-        "rating": 3.1,
-        "method": "nearby"
       }
     },
     {
@@ -1620,31 +471,9 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 3.1,
-        "friction": "Moderate",
-        "why": "Chayanne and Empire of the Sun 28 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-vvG1iZ_k9N_4fq",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "read": {
-        "rating": 3.1,
-        "friction": "Moderate",
-        "why": "Chayanne and Lakers vs. Sacramento Kings 34 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-08-tm-vv1k0Z_kJ9G7DM5E",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "read": {
-        "rating": 3.1,
+        "rating": 1,
         "friction": "Low",
-        "why": "Empire of the Sun and Lakers vs. Sacramento Kings 34 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -1653,84 +482,9 @@
       "date": "2026-10-09",
       "start": "17:00",
       "read": {
-        "rating": 6.8,
+        "rating": 4.6,
         "friction": "Low",
-        "why": "Sombr and The Neighbourhood 28 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vv170ZbgGkzetQ9Z",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "read": {
-        "rating": 6.8,
-        "friction": "Heavy",
-        "why": "Sombr and Mac DeMarco 29 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vv1AaZk38Gkel76YA",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "read": {
-        "rating": 6.8,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG10Z_1DqhtZC",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "read": {
-        "rating": 6.8,
-        "friction": "Heavy",
-        "why": "Dodgers vs. Braves and Sombr 4.5 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG1iZ_7Kfj7Wq",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "read": {
-        "rating": 6.8,
-        "friction": "Heavy",
-        "why": "Sombr and The Neighbourhood 34 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vv1Fe8v0xoqvZ7u1ue",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "read": {
-        "rating": 6.8,
-        "friction": "Heavy",
-        "why": "The Neighbourhood and Mac DeMarco 29 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-vvG1IZ_GkDOGJ-",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "read": {
-        "rating": 6.8,
-        "friction": "Heavy",
-        "why": "Dodgers vs. Braves and Sombr 10 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vv16aZk3aZMZAuak1v",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "read": {
-        "rating": 7.1,
-        "friction": "Heavy",
-        "why": "Jack Johnson 11 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -1739,75 +493,9 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.1,
-        "friction": "Heavy",
-        "why": "Jungle and TLC 2.3 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vv1AaZkowGkdFeQU8",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "read": {
-        "rating": 7.1,
-        "friction": "Heavy",
-        "why": "Jungle and LAFC vs. Vancouver 8.0 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1iZbU81spCL",
-      "date": "2026-10-10",
-      "start": "19:30",
-      "read": {
-        "rating": 7.1,
-        "friction": "Heavy",
-        "why": "Sombr 11 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vv1AaZkfoGkdZT1iU",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 7.1,
-        "friction": "Extreme",
-        "why": "Jungle and LAFC vs. Vancouver 5.5 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG10Z_2TKvuzl",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 7.1,
-        "friction": "Extreme",
-        "why": "Jungle and LAFC vs. Vancouver 5.5 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-vvG1IZ_G0rStYB",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 7.1,
-        "friction": "Extreme",
-        "why": "Jungle and LAFC vs. Vancouver 7.5 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-Z7r9jZ1A7-goJ",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 7.1,
-        "friction": "Heavy",
-        "why": "LAFC vs. Vancouver and TLC 2.3 mi away, same hours.",
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -1816,40 +504,9 @@
       "date": "2026-10-11",
       "start": "13:05",
       "read": {
-        "rating": 2.7,
+        "rating": 1,
         "friction": "Low",
         "why": "Nothing bigger was on.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-11-tm-vvG10Z_u5nPRGK",
-      "date": "2026-10-11",
-      "start": "18:30",
-      "read": {
-        "rating": 2.7,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-11-tm-vvG1iZbU81wkC0",
-      "date": "2026-10-11",
-      "start": "19:00",
-      "read": {
-        "rating": 2.7,
-        "friction": "Moderate",
-        "why": "Rain in the forecast at a 7:00 pm start.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-11-tm-vv1ke8v0PdGA2NIXk",
-      "date": "2026-10-11",
-      "start": "19:20",
-      "read": {
-        "rating": 2.7,
-        "friction": "Heavy",
-        "why": "Jack Johnson 2.5 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -1862,15 +519,6 @@
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-12-tm-vvG10Z_2Rimjss",
-      "date": "2026-10-12",
-      "start": "19:00",
-      "read": {
-        "rating": 2.8,
-        "method": "nearby"
       }
     },
     {
@@ -1893,15 +541,6 @@
         "friction": "Moderate",
         "why": "Ducks vs. Flames 28 mi away, same hours.",
         "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-14-tm-vvG10Z_uKts2xv",
-      "date": "2026-10-14",
-      "start": "19:00",
-      "read": {
-        "rating": 4.2,
-        "method": "nearby"
       }
     },
     {
@@ -1938,73 +577,11 @@
       }
     },
     {
-      "eventId": "2026-10-15-tm-vv170Z_7GkMfFAZu",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "read": {
-        "rating": 4.3,
-        "friction": "Moderate",
-        "why": "Phil Wickham next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vv170Z_aGkRSVNGb",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "read": {
-        "rating": 4.3,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vv1k0Z_kp4G7ia50",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "read": {
-        "rating": 4.3,
-        "friction": "Moderate",
-        "why": "Phil Wickham next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG10Z_GwWe2IR",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "read": {
-        "rating": 4.3,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG1iZ_1rd3dbK",
-      "date": "2026-10-15",
-      "start": "19:30",
-      "read": {
-        "rating": 4.3,
-        "friction": "Moderate",
-        "why": "Phil Wickham and Phil Wickham 34 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vvG1IZ_82Z9hL3",
-      "date": "2026-10-15",
-      "start": "20:00",
-      "read": {
-        "rating": 4.3,
-        "friction": "Moderate",
-        "why": "Phil Wickham and Phil Wickham 28 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-16-espn-ducks-401892518",
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 4.7,
+        "rating": 2.8,
         "friction": "Moderate",
         "why": "Lakers vs. Nuggets 28 mi away, same hours.",
         "method": "formula"
@@ -2015,31 +592,9 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 4.7,
+        "rating": 2.8,
         "friction": "Moderate",
         "why": "Ducks vs. Bruins 28 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-16-tm-vvG1iZ_owcOPJ1",
-      "date": "2026-10-16",
-      "start": "19:30",
-      "read": {
-        "rating": 4.7,
-        "friction": "Moderate",
-        "why": "Juanes and Lakers vs. Nuggets 11 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
-      "date": "2026-10-16",
-      "start": "20:00",
-      "read": {
-        "rating": 4.7,
-        "friction": "Moderate",
-        "why": "MILEY and Lakers vs. Nuggets 11 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2048,19 +603,10 @@
       "date": "2026-10-17",
       "start": "18:00",
       "read": {
-        "rating": 7.8,
-        "friction": "Heavy",
-        "why": "Galaxy vs. San Diego FC and Los Tigres del Norte 12 mi away, same hours.",
+        "rating": 5.1,
+        "friction": "Moderate",
+        "why": "Galaxy vs. San Diego FC 12 mi away, same hours.",
         "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vvG10Z_1rn_GMv",
-      "date": "2026-10-17",
-      "start": "19:00",
-      "read": {
-        "rating": 7.8,
-        "method": "nearby"
       }
     },
     {
@@ -2068,64 +614,9 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 7.8,
-        "friction": "Heavy",
-        "why": "Los Tigres del Norte and Young Miko 22 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vvG1iZ_F53Epiv",
-      "date": "2026-10-17",
-      "start": "19:30",
-      "read": {
-        "rating": 7.8,
-        "friction": "Heavy",
-        "why": "Galaxy vs. San Diego FC and Los Tigres del Norte 18 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vv170Z_FGkM0q1JB",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "read": {
-        "rating": 7.8,
-        "friction": "Extreme",
-        "why": "Galaxy vs. San Diego FC and Los Tigres del Norte 18 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vv1AaZk3dGkdvrEc1",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "read": {
-        "rating": 7.8,
-        "friction": "Heavy",
-        "why": "Los Tigres del Norte 28 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vv1AaZkobGkeOgjs3",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "read": {
-        "rating": 7.8,
-        "friction": "Heavy",
-        "why": "Young Miko 28 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-17-tm-vvG10Z_G9R7nPH",
-      "date": "2026-10-17",
-      "start": "20:00",
-      "read": {
-        "rating": 7.8,
-        "friction": "Heavy",
-        "why": "Galaxy vs. San Diego FC and Los Tigres del Norte 8.0 mi away, same hours.",
+        "rating": 5.1,
+        "friction": "Low",
+        "why": "Kings vs. Bruins and UCLA vs. Wisconsin 12 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2134,9 +625,9 @@
       "date": "2026-10-17",
       "start": null,
       "read": {
-        "rating": 7.8,
-        "friction": "Low",
-        "why": "89° feels-like, no roof.",
+        "rating": 5.1,
+        "friction": "Heavy",
+        "why": "97° feels-like, no roof.",
         "method": "formula"
       }
     },
@@ -2145,104 +636,9 @@
       "date": "2026-10-18",
       "start": "13:05",
       "read": {
-        "rating": 4.5,
-        "friction": "Low",
-        "why": "87° feels-like at a 1:05 pm start, no roof.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-18-tm-vvG1iZ_owcx4Jh",
-      "date": "2026-10-18",
-      "start": "19:30",
-      "read": {
-        "rating": 4.5,
-        "friction": "Moderate",
-        "why": "Charli xcx 11 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-18-tm-Z7r9jZ1A70kAU",
-      "date": "2026-10-18",
-      "start": "19:30",
-      "read": {
-        "rating": 4.5,
-        "friction": "Moderate",
-        "why": "MILEY and Charli xcx 6.3 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-18-tm-vvG10Z_G9gehI7",
-      "date": "2026-10-18",
-      "start": "20:00",
-      "read": {
-        "rating": 4.5,
-        "friction": "Moderate",
-        "why": "MILEY 11 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-19-tm-vv1ke8v0r6GAuZNui",
-      "date": "2026-10-19",
-      "start": "19:30",
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "Kacey Musgraves 5.5 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-19-tm-Z7r9jZ1A70kAg",
-      "date": "2026-10-19",
-      "start": "19:30",
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "Dermot Kennedy 5.5 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vvG10Z_1hSZGrO",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "read": {
-        "rating": 1.4,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vvG10Z_u1J_FHJ",
-      "date": "2026-10-20",
-      "start": "19:00",
-      "read": {
-        "rating": 1.4,
-        "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vv170Z_FGkU1BKx2",
-      "date": "2026-10-20",
-      "start": "20:00",
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "MONSTA X 11 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-20-tm-vv1AaZk3vGkdfJcBD",
-      "date": "2026-10-20",
-      "start": "20:00",
-      "read": {
-        "rating": 1.4,
-        "friction": "Low",
-        "why": "Jessie Ware 11 mi away, same hours.",
+        "rating": 7.8,
+        "friction": "Heavy",
+        "why": "100° feels-like at a 1:05 pm start, no roof.",
         "method": "formula"
       }
     }
