@@ -136,3 +136,13 @@ Kylie accepted the check's result ("that's fine… not something I felt was that
 
 ## Research source change (Kylie, Oct 7)
 Chicago's two prompts will be run on OpenAI's Astra model. When both answers arrive, compare them against the earlier cities' answers on the same checklist (venues found, figures sourced and labeled, coordinates, scheduled changes, gaps admitted) and tell Kylie whether Astra's is meaningfully better; if so, she may rerun or spot-check the other cities there. A postseason-attendance research answer (closing the gap on playoff "People" estimates) is coming from her next.
+
+## Chicago build (Oct 7): choices made, for Kylie to confirm
+Both answers are saved in full (`docs/chicago-venue-table-answer.md`, `docs/chicago-city-type-answer.md`). Choices I made without a lock:
+- **City type: hub** (the research: "in between, leaning driving"; the United Center is 87% car, the suburban ring near-total, Wrigley 37%). The code had 'transit' from the away-market stub, which the research contradicts. Hub keeps the 0.85 default for venues with no figure; Wrigley, Soldier Field, the United Center and the rest carry their own.
+- **Boundary as briefed plus Chicagoland Speedway** (Joliet, Will County; one NASCAR weekend a year, 47,000, sold out in 2026), the research's one addition. Its car share is mine.
+- **15 teams.** Loyola is out (Gentile Arena is under 5,000). Chicago State is in because its building qualifies; its games sit under the floor. The Chicago Wolves (AHL, Allstate Arena) have no free feed and are not listed.
+- **Not venue rows:** Grant, Douglass, Union and Humboldt parks; McCormick Place and the Stephens Convention Center (sized per event-day, as the research recommends); Hawthorne and Arlington Park (closed). None of the big open-site dates (Lollapalooza, Riot Fest, the Marathon, the Air and Water Show) is hand-listed yet; the research gives per-day figures for Lollapalooza (115,000 cap) and Riot Fest (50,000) that could be, when their 2027 dates are set.
+- **Car shares that are mine, not the research's** (nearest comparable, noted in each row): Martin Stadium, Pritzker Pavilion, Impact Field, Wintrust Field, the Jones Convocation Center, the Salt Shed, the Aragon, Gately Stadium, the speedway.
+- **Ryan Field** opened Oct 2, 2026, so Northwestern games there have no estimate until crowds land (the building, 35,000, is the fallback). **Martin Stadium** stays a row at 12,000 until Northwestern says what happens to the temporary stands; the Stars' 2027 home is unresolved.
+- **The Bears:** Soldier Field through 2028 at least; if Hammond is chosen, the boundary moves. **The Fire** leave Soldier Field for their own 22,000-seat stadium before the 2028 season (a row to add then).

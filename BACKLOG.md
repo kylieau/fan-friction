@@ -199,6 +199,13 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/expected-draw-decisions-oct7.md
 - **War Memorial (USF)** 5,300 vs 3,005: under the floor until USF confirms. **Raimondi Park** may pass 5,000 if the Ballers add the Coliseum bleachers.
 - The hard-access rule flags Cow Palace, Concord and Haas and misses Shoreline, Memorial and the Greek (the research's reads). Not tuned; see the checklist's fifth-run lessons.
 
+## Chicago is covered (Oct 7) — follow-ons
+- **Astra's Chicago answers** (due ~5 hours after Oct 7 evening): compare with the Claude answers folded in here; tell Kylie whether Astra's are meaningfully better; fold in any correction.
+- **Ryan Field** (opened Oct 2, 2026): no estimate until crowds land; concerts from 2027 need a concert setup when published.
+- **Martin Stadium and the Stars' 2027 home:** re-check early 2027. **The Fire's stadium at The 78** opens before the 2028 season: new row. **Bears to Hammond** would move the boundary.
+- **Hand-list when dates are set:** Lollapalooza (115,000/day cap, Grant Park), Riot Fest (50,000/day, Douglass Park), the Auto Show and C2E2 at McCormick (per-day averages), Fan Expo in Rosemont, the Marathon (Oct 11, 2026 is this week; no building).
+- Nine car shares are mine (listed in the decisions doc); the Chicago Wolves have no feed.
+
 ## Team schedules (built Oct 7) — follow-ons
 - **Kylie runs `supabase/migrations/0010_team_schedules.sql`**; until then ESPN teams' pages say "No schedule yet" (the job logs a warning and skips the table) and only MLB clubs show a schedule, read live.
 - A favorite that is not a team in the feeds (an artist, UCLA men's volleyball) says "No schedule yet." Programs join as their city is built out; the intent is every city eventually (Kylie, Oct 7).
