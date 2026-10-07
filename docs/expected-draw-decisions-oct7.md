@@ -33,3 +33,11 @@ Claude's proposal in reply (not locked):
 - **Star players:** an objective definition only: a visiting player named an All-Star (WNBA/NBA/NHL/MLB) the season before. No hand-picked stars.
 - **Opponent:** "deep history" meant a minimum count of past games, not a long span. Proposed instead: last 2–3 seasons only, newest weighted most, at least 2 past home games; plus objective tension flags that need no history (same division, met in the playoffs within 2 seasons, same metro). Sellout teams get the effect and then the building cap, rather than skipping it.
 - **Resale prices:** the strongest forward signal and the hardest to use. No free history, so it can't be tested yet. SeatGeek's API needs a free key and its terms must be checked first. Proposed: record prices a day ahead in the nightly job for a season, then test. Not in the number until it passes.
+
+## Kylie's second round (Oct 7)
+- **Promotions: yes, every league, not MLB only** (Kylie, Oct 7). They are all public; MLB is first only because its feed already carries them.
+- **Standings: yes, weighted toward the end of the season**; last season matters sometimes (a reigning champion, "something happened") (Kylie, Oct 7). She suggests social media attention as a way to see it.
+- **Stars: "All-Star last season" is not enough** (Kylie, Oct 7). Look at published lists: fantasy rankings, max contracts, notable players.
+- **Resale prices: agreed** (Kylie, Oct 7). Capture a week before and on the day.
+- **Opponent: recent tension and deep history both matter** (Kylie, Oct 7), e.g. Dodgers–Yankees: storied, but rarely in Los Angeles.
+- She asked whether this deserves a deeper research prompt. Drafted: `docs/expected-draw-demand-signals-prompt.md`.
