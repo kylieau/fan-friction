@@ -108,3 +108,9 @@ Written down before the run. MLB only (its feed lists promotions); every source 
 - Championship items, fireworks, discounts, other giveaways, repeat promotions and all four top-team flags still do not pass.
 - Caveat the research itself gives: several team-seasons are partial (Angels 2022, Padres 2021, the 2021 seasons generally), so some real promo nights sit in the "no promotion" pile and dilute every lift. The 2021 rows have no attendance file to land on (the files start at 2022).
 - **Next:** crossover and star-player lifts go into the app's MLB estimate when the 2027 listings carry promotions (MLB's feed names them); special-ticket nights do not, pending another season.
+
+## Kylie's answers, fourth round (Oct 7)
+- **Shows:** a venue with **no sports setup** in the table is a performance room and reads at **full capacity**; arenas and stadiums with a sports setup keep **57%** for concerts. A **published average per show** beats both, wherever one exists. (Kylie, Oct 7.)
+- **Small non-concert listings** (Arts & Theatre / Miscellaneous in rooms under ~6,000) sit **under the floor unless a source says sold out** or otherwise signals a big crowd. (Kylie, Oct 7.)
+- **A team's full schedule, home and away:** one schedule record per team from the feeds we already use; where a game is a home game in a covered city it points at the existing event, never a second copy. Team pages show **results for past games and the upcoming schedule**. A favorite with no feed (an artist; a program not yet wired) shows "No schedule yet" for now; the intent is to cover every city and feed eventually. UCLA men's and women's basketball and football are already in the feeds and should get schedules first (the season is on). (Kylie, Oct 7.)
+- **Distance discount** after the Bay Area build (Kylie, Oct 7).
