@@ -186,10 +186,15 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - Name clearance before any public launch (two podcasts are named Fan Friction).
 
 ## Show sizing follow-ups (Oct 7)
+Built Oct 7 (Kylie's fourth-round answers, `docs/expected-draw-decisions-oct7.md`): a room with no sports setup reads full for a show, arenas and stadiums 57%, a published average first; `special` listings in rooms under 6,000 sit under the floor unless sold out; a festival listed under two segments is one event. Still open:
 - **Ballparks and stadiums with no concert figure** take 57% of their listed size. Petco Park is the worst case: Ticketmaster lists Gallagher Square park-stage shows (Taking Back Sunday, Geese) as "Petco Park", so they read ~22,700 when the stage holds a fraction of that. Needs a Gallagher Square venue row (or a Ticketmaster venue-name split) with a sourced capacity; the concert research found no stadium concert figures for Petco, Dodger Stadium, SoFi, Angel Stadium, Yankee Stadium, Citi Field, Lumen (one show only), T-Mobile Park.
-- **A Ticketmaster listing that is a sport but not in a league feed** (San Diego Toreros women's volleyball at Jenny Craig Pavilion) comes through as `special` and sizes at the full room, 5,100, so it feeds friction as a sellout. The Sports segment is dropped; this one must carry another segment. Check the classification, and consider sizing `special` listings in rooms under ~6,000 as below the floor.
-- **One festival, two listings:** Niteharts Festival at Snapdragon appears as a `show` (19,950) and a `special` (35,000) on the same dates: two Ticketmaster segments, different performer names, so the same-show dedupe misses it. Dedupe on venue + date + title too.
-- **`special` listings (Arts & Theatre, Miscellaneous) are still sized at the full room** (rung 0 of the research ladder says "not sized", and the app then falls back to the building). A Tacoma Holiday Festival reads 17,000. Decide: default ratio, or below the floor.
+- **A Ticketmaster listing that is a sport but not in a league feed** (San Diego Toreros women's volleyball at Jenny Craig Pavilion, 5,100) now sits under the floor by the small-room rule; a larger such room would still read full. Check the segment classification when one shows up.
+
+## Team schedules (built Oct 7) — follow-ons
+- **Kylie runs `supabase/migrations/0010_team_schedules.sql`**; until then ESPN teams' pages say "No schedule yet" (the job logs a warning and skips the table) and only MLB clubs show a schedule, read live.
+- A favorite that is not a team in the feeds (an artist, UCLA men's volleyball) says "No schedule yet." Programs join as their city is built out; the intent is every city eventually (Kylie, Oct 7).
+- The Read tile on a schedule row shows a rating only for nights already in the log; an upcoming home game's read could be looked up from the catalog later.
+- Away games at buildings the app does not cover are listed only (no night to open). Times are the team's home-city time, not the venue's.
 
 ## Tech housekeeping
 - **Schedule archive** (`docs/schedule-archive.md`): `npm run archive-schedule` writes `data/schedule-archive/la/YYYY-MM-DD.json`. GitHub Actions runs it once a day, at 12:15am Pacific, and commits to `main`. A feed failure writes nothing. A listing-only commit skips the Vercel deploy. A commit that updates the forecast list the app reads does build the site, still on the free plan. The map still gets an empty list when a live feed is down; only the archive treats that as a failed run.

@@ -22,7 +22,7 @@ Kylie, Oct 6, 2026: Los Angeles is the only city built by hand. Every later city
 ## 4. Run the scripts
 1. `npm run attendance-collect` then `npm run attendance-calibrate`: past crowds and expected draws per team.
 2. `node scripts/venue-access.mjs`: relief and streets per venue; the hard-access flag follows from the rule.
-3. `npm run archive-schedule` once by hand to confirm the feeds, weather and results all answer for the new metro.
+3. `npm run archive-schedule` once by hand to confirm the feeds, weather and results all answer for the new metro. The nightly job also writes each team's full schedule (`team_schedules`); a team is covered there as soon as it is in `ESPN_TEAMS` or `MLB_TEAMS`.
 4. `node scripts/retune-analysis.mjs` only when the city has a season of archived nights.
 
 ## 5. Check on screen

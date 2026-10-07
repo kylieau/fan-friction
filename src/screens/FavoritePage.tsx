@@ -298,7 +298,7 @@ function GameRow({ game, rating }: { game: TeamGame; rating: number | null }) {
     .join(' · ');
   const body = (
     <>
-      {game.eventId && <Read rating={rating} />}
+      <Read rating={rating} />
       <span className="log-main">
         <span className="log-title">
           {title}
