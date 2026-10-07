@@ -12,6 +12,15 @@ export interface ArchivedEventRead {
   start: LocalTime | null;
   /** Absent when nothing on file had a score or a friction word. Not invented. */
   read?: FrictionRead;
+  /** The expected draw the app showed for the event at this capture (Oct 7, 2026 on). */
+  draw?: SavedDraw;
+}
+
+/** An expected draw as saved ahead of the game, to show beside the announced crowd later. */
+export interface SavedDraw {
+  count: number;
+  low?: number;
+  high?: number;
 }
 
 /**
@@ -45,6 +54,9 @@ export function archivedReads(events: readonly CrowdEvent[]): ArchivedEventRead[
       date: event.date,
       start: event.start,
       ...(read ? { read } : {}),
+      ...(event.expectedDraw
+        ? { draw: { count: event.expectedDraw.count, ...(event.expectedDraw.low != null ? { low: event.expectedDraw.low, high: event.expectedDraw.high } : {}) } }
+        : {}),
     };
   });
 }

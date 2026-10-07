@@ -19,6 +19,8 @@ export interface ArchiveForecastRow {
   capturedAt: string;
   capturedOn: string;
   read?: IndexedForecastRead;
+  /** The expected draw shown at this capture. */
+  draw?: { count: number; low?: number; high?: number };
 }
 
 export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [

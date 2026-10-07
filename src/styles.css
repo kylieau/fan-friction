@@ -1695,8 +1695,17 @@ button {
 
 .crowd-card {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
-  gap: 24px;
+  gap: 8px 24px;
+}
+
+.crowd-note {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--muted);
 }
 
 .crowd-figure,

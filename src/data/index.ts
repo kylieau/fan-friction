@@ -295,7 +295,9 @@ export {
   sizeTier,
   stampLocksAt,
   forecastBeforeStart,
+  drawSavedAhead,
 } from './read';
+export { roundEstimate } from './expectedDrawBuild';
 export type { ScheduleCoverage, SizeTier } from './read';
 export {
   eventFacts,

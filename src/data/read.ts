@@ -283,6 +283,23 @@ export function forecastBeforeStart(event: Pick<CrowdEvent, 'id' | 'metroId' | '
   return { read, forecastBasis: 'daily-before-start', forecastCapturedAt: latest.capturedAt };
 }
 
+/**
+ * The expected draw saved before this game: the latest nightly capture taken
+ * before its start (or before its date, with no start on file). Shown beside
+ * the announced crowd once it lands (Kylie, Oct 7, S5). Any covered city.
+ */
+export function drawSavedAhead(event: Pick<CrowdEvent, 'id' | 'metroId' | 'date' | 'start'>): { count: number; low?: number; high?: number } | null {
+  const zone = METROS[event.metroId]?.timeZone;
+  if (!zone) return null;
+  const cutoff = wallClockToUtc(event.date, event.start ?? '00:00', zone).getTime();
+  const rows = (cachedSnapshots(event.metroId, event.id, event.date) ?? []).filter(
+    (row) => row.eventId === event.id && row.draw && new Date(row.capturedAt).getTime() < cutoff,
+  );
+  if (rows.length === 0) return null;
+  const latest = rows.reduce((best, row) => (row.capturedAt > best.capturedAt ? row : best));
+  return latest.draw ?? null;
+}
+
 export function createStamp(
   read: FrictionRead,
   lastUpdated: string,

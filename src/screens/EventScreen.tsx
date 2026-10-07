@@ -4,7 +4,9 @@ import { DEFAULT_METRO, METROS } from '../config/metros';
 import { frictionLabel, frictionVerdictTitle, showFriction } from '../config/scoreLabels';
 import { feelsLikeLabel, isOpenAir, weatherForEvent, weatherGlyph, weatherRangeForEvent } from '../data';
 import {
+  drawSavedAhead,
   eventFacts,
+  roundEstimate,
   getCityDate,
   getPersonalLog,
   isPlanned,
@@ -177,6 +179,11 @@ export function EventScreen() {
             </>
           ) : me.soldOut ? (
             <span className="crowd-number small">Sold Out</span>
+          ) : e.expectedDraw ? (
+            <>
+              <span className="crowd-number">~{fmt(roundEstimate(e.expectedDraw.count))}</span>
+              <span className="crowd-kind">People (Estimated)</span>
+            </>
           ) : (
             <span className="crowd-kind">No count found yet</span>
           )}
@@ -188,6 +195,7 @@ export function EventScreen() {
           </div>
         )}
         {me.soldOut && me.count !== undefined && <span className="tag-soldout">SOLD OUT</span>}
+        <DrawNote event={e} counted={me.count !== undefined || me.soldOut} />
       </section>
 
       <WeatherDetail event={e} />
@@ -195,8 +203,9 @@ export function EventScreen() {
       <Beaten me={me} all={points} date={date} />
 
       <p className="source-note">
-        Counts are labeled by kind: announced, reported or estimated. Run times are rough defaults and distances are
-        straight-line.
+        Counts are labeled by kind: announced, reported or estimated.{' '}
+        {e.audience.domain === 'sports' && 'Teams announce tickets sold or handed out, not people through the gates. '}
+        Run times are rough defaults and distances are straight-line.
       </p>
 
       <ShareCard
@@ -222,6 +231,21 @@ export function EventScreen() {
 }
 
 /** Everything behind the feels-like number, open-air venues only. */
+/** Where an estimate came from, and its middle half. After the game, what was estimated ahead (Kylie, Oct 7, S4 and S5). */
+function DrawNote({ event, counted }: { event: CrowdEvent; counted: boolean }) {
+  const range = (d: { low?: number; high?: number }) =>
+    d.low != null && d.high != null && roundEstimate(d.low) !== roundEstimate(d.high)
+      ? ` Middle half ${fmt(roundEstimate(d.low))}–${fmt(roundEstimate(d.high))}.`
+      : '';
+  if (!counted) {
+    if (!event.expectedDraw) return null;
+    return <p className="crowd-note">{event.expectedDraw.note}{range(event.expectedDraw)}</p>;
+  }
+  const saved = drawSavedAhead(event);
+  if (!saved) return null;
+  return <p className="crowd-note">Estimated ahead: ~{fmt(roundEstimate(saved.count))}.</p>;
+}
+
 function WeatherDetail({ event }: { event: CrowdEvent }) {
   if (!isOpenAir(event)) return null;
   const row = weatherForEvent(event);

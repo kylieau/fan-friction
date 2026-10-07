@@ -28,6 +28,8 @@ export interface ArchiveForecastRow {
   capturedAt: string;
   capturedOn: string;
   read?: IndexedForecastRead;
+  /** The expected draw shown at this capture. */
+  draw?: { count: number; low?: number; high?: number };
 }
 
 `;
@@ -119,6 +121,7 @@ export async function refreshForecastIndex(root) {
             capturedAt,
             capturedOn,
             ...(read ? { read } : {}),
+            ...(row.draw && typeof row.draw.count === 'number' ? { draw: row.draw } : {}),
           });
         }
         continue;
