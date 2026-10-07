@@ -107,6 +107,28 @@ function markRuns(events: CrowdEvent[]) {
   }
 }
 
+// Ticketmaster allows five requests a second and 5,000 a day, and answers 429 to both. Every
+// request waits its turn (the old pause ran only between pages of one window, so the first
+// request of each window went out back to back). A per-second refusal ("spike arrest") is
+// retried after a pause; only the daily quota stops the run.
+const MIN_GAP_MS = 250;
+let lastRequestAt = 0;
+
+async function getPage(url: string): Promise<Response> {
+  for (let attempt = 0; ; attempt++) {
+    const wait = lastRequestAt + MIN_GAP_MS - Date.now();
+    if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
+    lastRequestAt = Date.now();
+    const r = await fetch(url);
+    if (r.status !== 429) return r;
+    const reason = await r.text().catch(() => '');
+    if (/quota/i.test(reason) || attempt >= 3) {
+      throw new Error(`Ticketmaster: ${/quota/i.test(reason) ? 'over the daily quota' : 'still refusing after retries'} (${reason.slice(0, 120)})`);
+    }
+    await new Promise((resolve) => setTimeout(resolve, 1000 * 2 ** attempt));
+  }
+}
+
 /** Upcoming listings for one covered city. Throws when the feed can't be read. */
 export async function loadTicketmasterEvents(metroId: string, apiKey: string, now = new Date()): Promise<TicketmasterPull> {
   const metro = METROS[metroId];
@@ -136,8 +158,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       page: String(page),
       sort: 'date,asc',
     });
-    const r = await fetch(`${API}?${params}`);
-    if (r.status === 429) throw new Error('Ticketmaster: over the daily quota');
+    const r = await getPage(`${API}?${params}`);
     if (!r.ok) throw new Error(`Ticketmaster answered ${r.status}`);
     const json = (await r.json()) as { _embedded?: { events?: TmEvent[] }; page?: { totalPages?: number } };
     pages++;
@@ -179,7 +200,6 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
     }
     const total = json.page?.totalPages ?? 1;
     if (page + 1 >= total) break;
-    await new Promise((resolve) => setTimeout(resolve, 250)); // five a second is the limit
   }
   }
   markRuns(events);
