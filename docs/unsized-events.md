@@ -25,10 +25,23 @@ friction. They are mentioned here only so nobody mistakes them for the problem.
 | Event | Date | Why it can't be sized | What would close it |
 |---|---|---|---|
 | **Los Angeles Marathon** | Mar 8, 2026 | A route, not a building, so no capacity. ~27,000 *registered runners* is not a crowd figure, and spectators along the course were never counted. | Both a size rule and a formula change — see below. This is the hard one. |
-| **FIFA Fan Festival** | Jun 12, 2026 | A ticketed festival on the Coliseum lawn. The only published number, 100,000+, is a four-day weekend total; it must not be divided into a daily figure. | A per-day attendance from FIFA or the city, or a published capacity for the festival footprint. |
 | **Union Station World Cup Fan Zone** | Jun 26, 2026 | Free, registration-based. Reuters reported "thousands" and nothing more precise was published. | A figure from the organiser, the city's permit, or a transit count for the day. |
 
 Resolved, kept as precedent:
+
+- **FIFA Fan Festival**, LA, Jun 12, 2026. Sized at ~25,000 a day, estimated:
+  LA Magazine's 100,000+ over the Jun 11–14 opening weekend, averaged over the
+  four days. Kylie, Oct 7, 2026: a per-day average of a multi-day total is fine
+  when it is labeled estimated.
+- **NY Comic Con**, Javits, Oct 8–11, 2026. ~62,500 a day, estimated: RX's
+  250,000+ for 2025 over four days. Listed beside the feeds, not as a seeded date
+  (a seeded date replaces the feeds for that day).
+
+**What sizing them showed:** both now feed friction, and both barely move their
+nights. They open hours before the evening games, and an event with no building
+reaches Crowd fight but not Gridlock. Comic Con loads the 7 train and the West
+Side exactly as an MSG night does, and Gridlock can't see it. That is the same
+gap as the marathon below, in a milder form.
 
 - **Seven Lions at Waterfront Park**, San Diego, Aug 22, 2026. The research found
   no count and no setup capacity, so it was first marked not-counted. But our own
@@ -90,7 +103,7 @@ whether they'd treat it as a venue. That answer belongs here when it comes back.
 
 - Never invent a crowd number (AGENTS.md).
 - Label every number announced, reported or estimated. Never a bare count.
-- A multi-day total is not a daily figure.
+- **A multi-day total may be averaged into a per-day figure, labeled estimated** (Kylie, Oct 7, 2026). An earlier version of this page said the opposite and called it a rule; it was a Claude-written check note (`docs/research-past-dates/gap-followup.md`), never Kylie's decision.
 - Scheduled starts, never actual.
 - Big official watch parties count as events of their size
   (`docs/overlap-and-date-rating-v3.md`), when a size exists.

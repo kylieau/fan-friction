@@ -51,5 +51,7 @@ Concerts only. Comedy, family shows and other events may not appear.
 ## Crowd figures: none usable
 The fan zones, the Canadiens' watch party and Seven Lions stay listed but don't feed friction until a real figure exists. The FIFA Fan Festival's 100,000+ is a four-day total, not a daily figure; don't divide it into one.
 
+**Superseded Oct 7, 2026 (Kylie):** the last sentence above was Claude's check note, not her decision. Her decision: a per-day average of a multi-day total is fine when labeled estimated. The FIFA Fan Festival is now sized at ~25,000 a day, estimated.
+
 ## Still open (minor)
 The Greek Theatre on the spring dates; Galen Center, Long Beach Arena, the Rose Bowl, Great Park Live; non-baseball nights at Dodger and Angel stadiums; WWE, boxing and awards shows.
