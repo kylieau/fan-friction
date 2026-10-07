@@ -7,6 +7,42 @@
     {
       "teamId": "knicks",
       "season": 2023,
+      "date": "2022-10-04",
+      "start": "19:00",
+      "opponent": "Pistons",
+      "venueId": "madison-square-garden",
+      "attendance": 14426,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2023,
+      "date": "2022-10-07",
+      "start": "19:30",
+      "opponent": "Pacers",
+      "venueId": "madison-square-garden",
+      "attendance": 16510,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2023,
+      "date": "2022-10-14",
+      "start": "19:30",
+      "opponent": "Wizards",
+      "venueId": "madison-square-garden",
+      "attendance": 19812,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2023,
       "date": "2022-10-21",
       "start": "19:30",
       "opponent": "Pistons",
@@ -453,6 +489,42 @@
       "venueId": "madison-square-garden",
       "attendance": 19812,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2024,
+      "date": "2023-10-09",
+      "start": "19:30",
+      "opponent": "Celtics",
+      "venueId": "madison-square-garden",
+      "attendance": 19512,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2024,
+      "date": "2023-10-14",
+      "start": "19:30",
+      "opponent": "Timberwolves",
+      "venueId": "madison-square-garden",
+      "attendance": 19018,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2024,
+      "date": "2023-10-18",
+      "start": "19:30",
+      "opponent": "Wizards",
+      "venueId": "madison-square-garden",
+      "attendance": 18881,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {
@@ -909,6 +981,42 @@
     {
       "teamId": "knicks",
       "season": 2025,
+      "date": "2024-10-09",
+      "start": "19:30",
+      "opponent": "Wizards",
+      "venueId": "madison-square-garden",
+      "attendance": 19161,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2025,
+      "date": "2024-10-13",
+      "start": "18:00",
+      "opponent": "Timberwolves",
+      "venueId": "madison-square-garden",
+      "attendance": 19812,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2025,
+      "date": "2024-10-15",
+      "start": "19:30",
+      "opponent": "Hornets",
+      "venueId": "madison-square-garden",
+      "attendance": 19355,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2025,
       "date": "2024-10-25",
       "start": "19:30",
       "opponent": "Pacers",
@@ -1355,6 +1463,42 @@
       "venueId": "madison-square-garden",
       "attendance": 19812,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2026,
+      "date": "2025-10-09",
+      "start": "19:30",
+      "opponent": "Timberwolves",
+      "venueId": "madison-square-garden",
+      "attendance": 18344,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2026,
+      "date": "2025-10-13",
+      "start": "19:30",
+      "opponent": "Wizards",
+      "venueId": "madison-square-garden",
+      "attendance": 19241,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2026,
+      "date": "2025-10-17",
+      "start": "19:30",
+      "opponent": "Hornets",
+      "venueId": "madison-square-garden",
+      "attendance": 19270,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {

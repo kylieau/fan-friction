@@ -7,6 +7,30 @@
     {
       "teamId": "nets",
       "season": 2023,
+      "date": "2022-10-03",
+      "start": "19:30",
+      "opponent": "76ers",
+      "venueId": "barclays-center",
+      "attendance": 13250,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nets",
+      "season": 2023,
+      "date": "2022-10-06",
+      "start": "19:30",
+      "opponent": "Heat",
+      "venueId": "barclays-center",
+      "attendance": 14058,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nets",
+      "season": 2023,
       "date": "2022-10-19",
       "start": "19:30",
       "opponent": "Pelicans",
@@ -453,6 +477,30 @@
       "venueId": "barclays-center",
       "attendance": 17732,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nets",
+      "season": 2024,
+      "date": "2023-10-12",
+      "start": "19:30",
+      "opponent": "Ra'Anana",
+      "venueId": "barclays-center",
+      "attendance": 12346,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nets",
+      "season": 2024,
+      "date": "2023-10-16",
+      "start": "19:30",
+      "opponent": "76ers",
+      "venueId": "barclays-center",
+      "attendance": 14966,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {
@@ -909,6 +957,30 @@
     {
       "teamId": "nets",
       "season": 2025,
+      "date": "2024-10-14",
+      "start": "19:30",
+      "opponent": "Wizards",
+      "venueId": "barclays-center",
+      "attendance": 12904,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nets",
+      "season": 2025,
+      "date": "2024-10-18",
+      "start": "19:30",
+      "opponent": "Raptors",
+      "venueId": "barclays-center",
+      "attendance": 17158,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nets",
+      "season": 2025,
       "date": "2024-10-27",
       "start": "18:00",
       "opponent": "Bucks",
@@ -1355,6 +1427,18 @@
       "venueId": "barclays-center",
       "attendance": 17926,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nets",
+      "season": 2026,
+      "date": "2025-10-04",
+      "start": "20:00",
+      "opponent": "Hapoel Jerusalem",
+      "venueId": "barclays-center",
+      "attendance": 13849,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {

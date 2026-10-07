@@ -7,6 +7,42 @@
     {
       "teamId": "kraken",
       "season": 2023,
+      "date": "2022-09-26",
+      "start": "19:00",
+      "opponent": "Oilers",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2023,
+      "date": "2022-09-27",
+      "start": "19:00",
+      "opponent": "Flames",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2023,
+      "date": "2022-10-01",
+      "start": "18:30",
+      "opponent": "Canucks",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2023,
       "date": "2022-10-15",
       "start": "19:00",
       "opponent": "Golden Knights",
@@ -453,6 +489,30 @@
       "venueId": "climate-pledge-arena",
       "attendance": 17151,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2024,
+      "date": "2023-09-28",
+      "start": "19:00",
+      "opponent": "Canucks",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2024,
+      "date": "2023-10-02",
+      "start": "19:00",
+      "opponent": "Oilers",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {
@@ -909,6 +969,42 @@
     {
       "teamId": "kraken",
       "season": 2025,
+      "date": "2024-09-22",
+      "start": "19:00",
+      "opponent": "Flames",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2025,
+      "date": "2024-09-27",
+      "start": "19:00",
+      "opponent": "Canucks",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2025,
+      "date": "2024-10-02",
+      "start": "19:00",
+      "opponent": "Oilers",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2025,
       "date": "2024-10-08",
       "start": "13:30",
       "opponent": "Blues",
@@ -1355,6 +1451,42 @@
       "venueId": "climate-pledge-arena",
       "attendance": 17151,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2026,
+      "date": "2025-09-21",
+      "start": "17:00",
+      "opponent": "Canucks",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2026,
+      "date": "2025-09-29",
+      "start": "19:00",
+      "opponent": "Flames",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kraken",
+      "season": 2026,
+      "date": "2025-10-01",
+      "start": "19:00",
+      "opponent": "Oilers",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {

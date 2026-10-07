@@ -180,6 +180,7 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
     kind: 'game',
     title: `${nameOf(home.team)} vs. ${nameOf(away.team)}`,
     ...(stakes ? { stakes } : {}),
+    ...(g.seasonType?.abbreviation === 'pre' ? { preseason: true } : {}),
     ...(broadcast ? { broadcast } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: t.sport },
@@ -218,6 +219,15 @@ async function scheduleFor(t: (typeof ESPN_TEAMS)[number], strict: boolean): Pro
   return lists.flat();
 }
 
+/** The team's first regular-season home game in this listing (it sizes from past openers). */
+function homeOpenerId(games: EspnGame[], espnId: string): string | undefined {
+  const home = games.filter(
+    (g) => g.seasonType?.abbreviation === 'reg' && g.competitions[0]?.competitors.some((x) => x.homeAway === 'home' && x.team.id === espnId),
+  );
+  home.sort((a, b) => a.date.localeCompare(b.date));
+  return home[0]?.id;
+}
+
 function upcomingFor(metroId: string, strict = false): Promise<CrowdEvent[]> {
   if (!strict) {
     const hit = cache.get(metroId);
@@ -228,9 +238,14 @@ function upcomingFor(metroId: string, strict = false): Promise<CrowdEvent[]> {
   const end = new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
 
   const p = Promise.all(
-    ESPN_TEAMS.filter((t) => t.metroId === metroId).map(async (t) =>
-      (await scheduleFor(t, strict)).map((g) => toEvent(g, t)),
-    ),
+    ESPN_TEAMS.filter((t) => t.metroId === metroId).map(async (t) => {
+      const games = await scheduleFor(t, strict);
+      const openerId = homeOpenerId(games, t.espnId);
+      return games.map((g) => {
+        const e = toEvent(g, t);
+        return e && g.id === openerId ? { ...e, homeOpener: true } : e;
+      });
+    }),
   ).then((lists) => {
     const seen = new Set<string>();
     return lists

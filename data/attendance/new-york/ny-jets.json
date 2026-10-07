@@ -7,6 +7,30 @@
     {
       "teamId": "ny-jets",
       "season": 2022,
+      "date": "2022-08-22",
+      "start": "20:00",
+      "opponent": "Falcons",
+      "venueId": "metlife-stadium",
+      "attendance": 62625,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-jets",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "13:00",
+      "opponent": "Giants",
+      "venueId": "metlife-stadium",
+      "attendance": 64763,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-jets",
+      "season": 2022,
       "date": "2022-09-11",
       "start": "13:00",
       "opponent": "Ravens",
@@ -90,6 +114,18 @@
       "venueId": "metlife-stadium",
       "attendance": 70043,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-jets",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "19:30",
+      "opponent": "Buccaneers",
+      "venueId": "metlife-stadium",
+      "attendance": 71023,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {
@@ -194,6 +230,30 @@
     {
       "teamId": "ny-jets",
       "season": 2024,
+      "date": "2024-08-10",
+      "start": "12:00",
+      "opponent": "Commanders",
+      "venueId": "metlife-stadium",
+      "attendance": 65834,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-jets",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "19:30",
+      "opponent": "Giants",
+      "venueId": "metlife-stadium",
+      "attendance": 71894,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-jets",
+      "season": 2024,
       "date": "2024-09-19",
       "start": "20:15",
       "opponent": "Patriots",
@@ -266,6 +326,18 @@
       "venueId": "metlife-stadium",
       "attendance": 68818,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-jets",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "19:30",
+      "opponent": "Eagles",
+      "venueId": "metlife-stadium",
+      "attendance": 67180,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {

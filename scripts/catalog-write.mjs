@@ -158,8 +158,21 @@ try {
   }
   const attendance = [...byTeamDate.values()];
   counts.attendance = await upsert('attendance', attendance, 'metro_id,team_id,date');
-  const draws = EXPECTED_DRAWS.filter((r) => r.metroId === metroId).map((r) => ({ metro_id: r.metroId, team_id: r.teamId, day_class: r.dayClass, month: r.month ?? 0, data: r }));
-  counts.expected_draws = await upsert('expected_draws', draws, 'metro_id,team_id,day_class,month');
+  // Keyed by building since Oct 7, 2026 (supabase/migrations/0009). Until that SQL is run
+  // the table has no venue_id: skip it and say so; the app falls back to the built-in rows.
+  // The city's rows are replaced, not merged, so a bucket that no longer has 3 games goes away.
+  const draws = EXPECTED_DRAWS.filter((r) => r.metroId === metroId).map((r) => ({ metro_id: r.metroId, team_id: r.teamId, venue_id: r.venueId, day_class: r.dayClass, month: r.month ?? 0, data: r }));
+  const probe = await db.from('expected_draws').select('venue_id').limit(1);
+  if (probe.error) {
+    console.warn(`expected_draws skipped: ${probe.error.message}. Run supabase/migrations/0009_expected_draws_by_venue.sql in Supabase.`);
+    counts.expected_draws = 0;
+  } else {
+    if (!dryRun) {
+      const { error } = await db.from('expected_draws').delete().eq('metro_id', metroId);
+      if (error) throw new Error(`expected_draws: ${error.message}`);
+    }
+    counts.expected_draws = await upsert('expected_draws', draws, 'metro_id,team_id,venue_id,day_class,month');
+  }
 
   const summary = Object.entries(counts).map(([t, n]) => `${t} ${n}`).join(', ');
   console.log(`${dryRun ? 'Would write' : 'Wrote'} ${metroId} to Supabase: ${summary}.`);

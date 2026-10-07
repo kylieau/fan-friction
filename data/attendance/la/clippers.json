@@ -7,6 +7,42 @@
     {
       "teamId": "clippers",
       "season": 2023,
+      "date": "2022-09-30",
+      "start": "19:00",
+      "opponent": "Ra'Anana",
+      "venueId": "climate-pledge-arena",
+      "attendance": 9333,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2023,
+      "date": "2022-10-03",
+      "start": "19:30",
+      "opponent": "Trail Blazers",
+      "venueId": "climate-pledge-arena",
+      "attendance": 18440,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2023,
+      "date": "2022-10-09",
+      "start": "19:30",
+      "opponent": "Timberwolves",
+      "venueId": "crypto-com-arena",
+      "attendance": 16466,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2023,
       "date": "2022-10-23",
       "start": "19:00",
       "opponent": "Suns",
@@ -453,6 +489,42 @@
       "venueId": "crypto-com-arena",
       "attendance": 19068,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2024,
+      "date": "2023-10-10",
+      "start": "19:00",
+      "opponent": "Jazz",
+      "venueId": "climate-pledge-arena",
+      "attendance": 18100,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2024,
+      "date": "2023-10-17",
+      "start": "19:30",
+      "opponent": "Nuggets",
+      "venueId": "crypto-com-arena",
+      "attendance": 16182,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2024,
+      "date": "2023-10-19",
+      "start": "19:00",
+      "opponent": "Nuggets",
+      "venueId": "crypto-com-arena",
+      "attendance": 15007,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {
@@ -909,6 +981,42 @@
     {
       "teamId": "clippers",
       "season": 2025,
+      "date": "2024-10-11",
+      "start": "19:30",
+      "opponent": "Trail Blazers",
+      "venueId": "climate-pledge-arena",
+      "attendance": 18300,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2025,
+      "date": "2024-10-14",
+      "start": "19:30",
+      "opponent": "Mavericks",
+      "venueId": "intuit-dome",
+      "attendance": 13400,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2025,
+      "date": "2024-10-17",
+      "start": "19:30",
+      "opponent": "Kings",
+      "venueId": "intuit-dome",
+      "attendance": 13800,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2025,
       "date": "2024-10-23",
       "start": "19:00",
       "opponent": "Suns",
@@ -1355,6 +1463,18 @@
       "venueId": "intuit-dome",
       "attendance": 17927,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "clippers",
+      "season": 2026,
+      "date": "2025-10-12",
+      "start": "18:30",
+      "opponent": "Nuggets",
+      "venueId": "intuit-dome",
+      "attendance": 13951,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {

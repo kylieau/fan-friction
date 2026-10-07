@@ -199,9 +199,14 @@ export interface CrowdEvent {
    * How many people the event is expected to draw, known before the night
    * (a high-school game in an NFL stadium, a theater act booked into an arena).
    * The formula sizes the event by this, with the building as the ceiling.
-   * Always an estimate. Until the attendance calibration, seeded only where obvious.
+   * Always an estimate. Seeded where obvious; otherwise attached on read from
+   * past announced crowds (expectedDraw.ts), with the middle half as low–high.
    */
-  expectedDraw?: { count: number; note: string };
+  expectedDraw?: { count: number; note: string; low?: number; high?: number };
+  /** A preseason (exhibition) game. Sized from past preseason crowds, never the regular season's. */
+  preseason?: boolean;
+  /** The home side's first regular-season home game of the season. */
+  homeOpener?: boolean;
   weather?: Weather;
   assessment?: Assessment;
   /**

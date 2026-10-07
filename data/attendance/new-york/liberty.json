@@ -656,6 +656,18 @@
     {
       "teamId": "liberty",
       "season": 2025,
+      "date": "2025-05-09",
+      "start": "19:00",
+      "opponent": "Sun",
+      "venueId": "barclays-center",
+      "attendance": 8395,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "liberty",
+      "season": 2025,
       "date": "2025-05-17",
       "start": "13:00",
       "opponent": "Aces",
@@ -893,6 +905,18 @@
       "venueId": "barclays-center",
       "attendance": 17532,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "liberty",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "15:00",
+      "opponent": "Fever",
+      "venueId": "barclays-center",
+      "attendance": 14662,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {

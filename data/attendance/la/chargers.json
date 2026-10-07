@@ -7,6 +7,30 @@
     {
       "teamId": "chargers",
       "season": 2022,
+      "date": "2022-08-13",
+      "start": "19:00",
+      "opponent": "Rams",
+      "venueId": "sofi-stadium",
+      "attendance": 68734,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "19:00",
+      "opponent": "Cowboys",
+      "venueId": "sofi-stadium",
+      "attendance": 69047,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2022,
       "date": "2022-09-11",
       "start": "13:25",
       "opponent": "Raiders",
@@ -90,6 +114,18 @@
       "venueId": "sofi-stadium",
       "attendance": 70240,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "16:05",
+      "opponent": "Saints",
+      "venueId": "sofi-stadium",
+      "attendance": 64455,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {
@@ -194,6 +230,30 @@
     {
       "teamId": "chargers",
       "season": 2024,
+      "date": "2024-08-10",
+      "start": "16:05",
+      "opponent": "Seahawks",
+      "venueId": "sofi-stadium",
+      "attendance": 65600,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "16:05",
+      "opponent": "Rams",
+      "venueId": "sofi-stadium",
+      "attendance": 66112,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2024,
       "date": "2024-09-08",
       "start": "13:05",
       "opponent": "Raiders",
@@ -277,6 +337,18 @@
       "venueId": "sofi-stadium",
       "attendance": 70240,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "13:00",
+      "opponent": "Saints",
+      "venueId": "sofi-stadium",
+      "attendance": 65049,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     },
     {

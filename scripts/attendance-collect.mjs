@@ -176,13 +176,25 @@ async function collectMlb(team) {
   return rows;
 }
 
+/** Pro leagues with a preseason played in the home building; it gets its own bucket. */
+const HAS_PRESEASON = /^(basketball\/nba|basketball\/wnba|hockey\/nhl|football\/nfl)$/;
+
 async function collectEspn(team) {
   const rows = [];
   for (const season of team.seasons) {
     const q = team.seasontype ? `?season=${season}&seasontype=${team.seasontype}` : `?season=${season}`;
     const json = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${team.path}/teams/${team.espnId}/schedule${q}`);
+    const events = (json.events ?? []).map((e) => ({ e, preseason: false }));
+    if (team.seasontype && HAS_PRESEASON.test(team.path)) {
+      try {
+        const pre = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${team.path}/teams/${team.espnId}/schedule?season=${season}&seasontype=1`);
+        events.push(...(pre.events ?? []).map((e) => ({ e, preseason: true })));
+      } catch {
+        /* no preseason listed that year */
+      }
+    }
     let kept = 0;
-    for (const e of json.events ?? []) {
+    for (const { e, preseason } of events) {
       const c = e.competitions?.[0];
       // Soccer says STATUS_FULL_TIME; everything else says STATUS_FINAL.
       if (!c || !/^STATUS_(FINAL|FULL_TIME)/.test(c.status?.type?.name ?? '')) continue;
@@ -204,6 +216,7 @@ async function collectEspn(team) {
         venueId,
         attendance: att,
         kind: 'announced',
+        preseason: preseason || undefined,
         sourceId: 'espn',
       });
       kept++;
@@ -223,7 +236,7 @@ for (const team of [...MLB_TEAMS, ...ESPN_TEAMS]) {
   await mkdir(dir, { recursive: true });
   try {
     const rows = 'mlbId' in team ? await collectMlb(team) : await collectEspn(team);
-    rows.sort((a, b) => a.date.localeCompare(b.date));
+    rows.sort((a, b) => a.date.localeCompare(b.date) || (a.start ?? '').localeCompare(b.start ?? ''));
     const file = path.join(dir, `${team.teamId}.json`);
     let previous = null;
     try {
