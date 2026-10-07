@@ -10,7 +10,7 @@
 // home opener, preseason, then weeknight / Friday / Saturday / Sunday, each by
 // month when there are enough games. A holiday counts as a Saturday. The middle
 // half of those games is the range. Nothing is invented: a bucket needs 3 games.
-// The WNBA and women's college basketball use two seasons (optionsFor).
+// The WNBA, NWSL, MLS and women's college basketball use two seasons (optionsFor).
 
 export type DayClass = 'weekday' | 'friday' | 'saturday' | 'sunday';
 export type DrawClass = DayClass | 'opener' | 'preseason';
@@ -134,9 +134,10 @@ function summarize(games: PastGame[]): Pick<ExpectedDrawRow, 'count' | 'low' | '
  * Leagues on a 2-season window. Kylie, Oct 7 (S3): three seasons everywhere, shorter
  * for women's leagues only if the check showed them reading low. The first check
  * (docs/expected-draw-check.md) did: the WNBA read 30% low on three seasons, women's
- * college basketball 28% low. The NWSL read high, so it keeps three.
+ * college basketball 28% low. The NWSL and MLS also scored better on two seasons;
+ * Kylie moved them to two as well (Oct 7).
  */
-export const SHORT_WINDOW_LEAGUES = ['WNBA', "College women's basketball"];
+export const SHORT_WINDOW_LEAGUES = ['WNBA', "College women's basketball", 'NWSL', 'MLS'];
 
 /**
  * The options the app uses for a team in this league. The conference-move reset is
@@ -235,4 +236,102 @@ export function pickDraw(rows: readonly ExpectedDrawRow[], q: DrawQuery): Expect
 export function roundEstimate(n: number): number {
   const step = n < 10_000 ? 500 : 1000;
   return Math.round(n / step) * step;
+}
+
+// ---- This season's level and the opponent ratio (Oct 7, 2026) ----
+// Both were set before the first held-out check and are kept only in the leagues
+// where they beat the baseline (docs/expected-draw-check.md; Kylie, Oct 7).
+
+/** Home games this season before its level applies. No NFL or college: too few home games. */
+export const SEASON_MIN: Record<string, number> = { MLB: 15, NBA: 10, NHL: 10, WNBA: 6, MLS: 6, NWSL: 5 };
+/** Leagues where the season level beat the baseline in the check. */
+export const SEASON_LEVEL_LEAGUES = ['MLB', 'MLS', 'NWSL', 'WNBA', 'NBA', 'NHL'];
+/** Leagues where the opponent ratio beat the season level in the check. */
+export const OPPONENT_LEAGUES = ['MLB', 'MLS', 'NFL', 'WNBA', "College men's basketball"];
+/** Opponent: past home meetings needed, in at least this many separate series (meetings within 4 days are one). */
+export const OPP_MIN_GAMES = 2;
+export const OPP_MIN_SERIES = 2;
+/** Shrink toward no effect: n ÷ (n + k). */
+export const OPP_SHRINK_K = 3;
+/** Weight of a meeting by how many seasons back it was (0 = this season). */
+export const OPP_SEASON_WEIGHT = [1, 1, 0.5, 0.25];
+
+function median(xs: number[]): number {
+  const s = [...xs].sort((a, b) => a - b);
+  const m = Math.floor(s.length / 2);
+  return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+}
+
+/** The same name the listings use for a visiting side ("D-backs" → "d-backs"). */
+export function opponentKey(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function seriesCount(dates: string[]): number {
+  let n = 0;
+  let last: number | null = null;
+  for (const d of [...dates].sort()) {
+    const t = new Date(`${d}T12:00:00Z`).getTime();
+    if (last == null || (t - last) / 86_400_000 > 4) n++;
+    last = t;
+  }
+  return n;
+}
+
+/**
+ * This season's level: the median of announced ÷ baseline over its regular-season
+ * home games so far, once there are enough. Undefined before that.
+ */
+export function seasonLevel(rows: readonly ExpectedDrawRow[], teamId: string, league: string | undefined, soFar: PastGame[], openers = openerDates(soFar), onlyWhereItWins = true): { level: number; games: number } | undefined {
+  const min = SEASON_MIN[league ?? ''];
+  if (!min || (onlyWhereItWins && !SEASON_LEVEL_LEAGUES.includes(league ?? ''))) return undefined;
+  const ratios = soFar
+    .filter((g) => !g.preseason && !g.postseason)
+    .map((g) => ({ g, b: pickDraw(rows, { teamId, venueId: g.venueId, date: g.date, opener: openers.has(g.date) })?.count }))
+    .filter((x): x is { g: PastGame; b: number } => x.b != null)
+    .map((x) => x.g.attendance / x.b);
+  return ratios.length >= min ? { level: median(ratios), games: ratios.length } : undefined;
+}
+
+/**
+ * How this opponent has drawn here against the usual crowd for those dates: past
+ * meetings in the window plus this season so far, newest weighted most, shrunk
+ * toward no effect. Undefined when there are too few meetings.
+ */
+export function opponentRatio(rows: readonly ExpectedDrawRow[], teamId: string, league: string | undefined, opponent: string, meetings: PastGame[], season: number, onlyWhereItWins = true): { ratio: number; games: number } | undefined {
+  if (onlyWhereItWins && !OPPONENT_LEAGUES.includes(league ?? '')) return undefined;
+  const key = opponentKey(opponent);
+  const scored = meetings
+    .filter((p) => !p.preseason && !p.postseason && p.opponent && opponentKey(p.opponent) === key)
+    .map((p) => ({ p, b: pickDraw(rows, { teamId, venueId: p.venueId, date: p.date })?.count }))
+    .filter((x): x is { p: PastGame; b: number } => x.b != null);
+  if (scored.length < OPP_MIN_GAMES || seriesCount(scored.map((x) => x.p.date)) < OPP_MIN_SERIES) return undefined;
+  let wsum = 0;
+  let lsum = 0;
+  for (const { p, b } of scored) {
+    const w = OPP_SEASON_WEIGHT[season - p.season] ?? 0;
+    wsum += w;
+    lsum += w * Math.log(p.attendance / b);
+  }
+  if (wsum === 0) return undefined;
+  return { ratio: Math.exp((scored.length / (scored.length + OPP_SHRINK_K)) * (lsum / wsum)), games: scored.length };
+}
+
+/** A team's level this season so far (announced ÷ baseline), written nightly by the calibration. */
+export interface SeasonLevelRow {
+  metroId: string;
+  teamId: string;
+  season: number;
+  level: number;
+  games: number;
+}
+
+/** How an opponent draws at this team's games against the usual crowd, written nightly by the calibration. */
+export interface OpponentRatioRow {
+  metroId: string;
+  teamId: string;
+  /** opponentKey of the visiting side's name, as the listings write it. */
+  opponent: string;
+  ratio: number;
+  games: number;
 }

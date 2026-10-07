@@ -51,3 +51,10 @@ Claude's proposal in reply (not locked):
 - **The same seasons were used to decide and to score,** so these numbers flatter the rule a little. The honest test is the forward log: estimates saved before each game, scored when the crowd is announced.
 - **MLB promotions and standings, first run (Oct 7): neither beats the rule without them.** Promotions (per team, giveaway / fireworks / ticket offer, weekday and weekend apart): 6.6% → 6.8% median off. Standings (home record going in, slopes fit on earlier seasons, before Aug 1 and after): → 7.3%. Likely why: the day-and-month baseline already carries when teams schedule giveaways, and the season level already carries how good the team is this year. Both stay off. They are not re-tuned to pass; a different shape (e.g. bobbleheads only, the playoff race by games back) comes from `docs/expected-draw-demand-signals-prompt.md`, set before it is run. The data is on file: every MLB home game since 2022 carries its promotions and the record going in.
 - **Not wired into the app yet: the season level and the opponent ratio.** They win in the check, but the app would need this season's crowds and each opponent's history at read time, which means the nightly job recomputing the draws. That touches the shared nightly pipeline, so it is a proposal first.
+
+## Kylie's answers on the follow-ups (Oct 7)
+- **Season level and opponent ratio go into the app**, in the leagues where the check showed them winning (Kylie, Oct 7).
+- **The NWSL and MLS also use a 2-season window** (Kylie, Oct 7), alongside the WNBA and women's college basketball.
+- **Map cards show the expected draw** (Kylie, Oct 7), approved as a Map change.
+- **A team's estimate may sit above the listed seats when its announced crowds do** (Kylie, Oct 7; the Lakers announce 18,997 against 18,910 seats).
+- She ran `supabase/migrations/0009_expected_draws_by_venue.sql` (Oct 7).

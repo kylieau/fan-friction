@@ -4,9 +4,9 @@
 // one kind of date (src/data/expectedDrawBuild.ts), with the middle half of
 // those games as the range. Always an estimate; the building stays the ceiling.
 
-import type { ExpectedDrawRow } from './expectedDrawBuild';
+import type { ExpectedDrawRow, OpponentRatioRow, SeasonLevelRow } from './expectedDrawBuild';
 
-export type { DayClass, ExpectedDrawRow } from './expectedDrawBuild';
+export type { DayClass, ExpectedDrawRow, OpponentRatioRow, SeasonLevelRow } from './expectedDrawBuild';
 
 export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   {
@@ -15,23 +15,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 18022,
-    "low": 16535,
-    "high": 19695,
-    "games": 34,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "angel-city",
-    "venueId": "bmo-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 22000,
-    "low": 20864,
-    "high": 22000,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 17139,
+    "low": 15658,
+    "high": 19198,
+    "games": 24,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -39,11 +27,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "weekday",
     "month": null,
-    "count": 16682,
-    "low": 15391,
-    "high": 18603,
-    "games": 7,
-    "seasons": "2023–2025"
+    "count": 15749,
+    "low": 15033,
+    "high": 19103,
+    "games": 5,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -63,11 +51,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "saturday",
     "month": null,
-    "count": 16738,
-    "low": 16149,
-    "high": 17455,
-    "games": 8,
-    "seasons": "2023–2025"
+    "count": 16639,
+    "low": 15364,
+    "high": 16739,
+    "games": 6,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -87,11 +75,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 19940,
-    "low": 18068,
-    "high": 22000,
-    "games": 14,
-    "seasons": "2023–2025"
+    "count": 19000,
+    "low": 17374,
+    "high": 20529,
+    "games": 8,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -99,11 +87,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "sunday",
     "month": 10,
-    "count": 19940,
-    "low": 18699,
-    "high": 20529,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 19841,
+    "low": 17558,
+    "high": 19940,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -1587,23 +1575,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "all",
     "month": null,
-    "count": 21164,
-    "low": 19279,
-    "high": 23656,
-    "games": 50,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "galaxy",
-    "venueId": "dignity-health-sports-park",
-    "dayClass": "opener",
-    "month": null,
-    "count": 25224,
-    "low": 24168,
-    "high": 26433,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 21722,
+    "low": 19395,
+    "high": 25174,
+    "games": 35,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -1612,10 +1588,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "weekday",
     "month": null,
     "count": 17880,
-    "low": 16158,
-    "high": 19501,
-    "games": 6,
-    "seasons": "2023–2025"
+    "low": 16040,
+    "high": 19492,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -1623,11 +1599,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "saturday",
     "month": null,
-    "count": 21865,
-    "low": 19830,
-    "high": 24324,
-    "games": 34,
-    "seasons": "2023–2025"
+    "count": 22973,
+    "low": 20163,
+    "high": 25174,
+    "games": 24,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -1646,24 +1622,12 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "teamId": "galaxy",
     "venueId": "dignity-health-sports-park",
     "dayClass": "saturday",
-    "month": 4,
-    "count": 22008,
-    "low": 20442,
-    "high": 22847,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "galaxy",
-    "venueId": "dignity-health-sports-park",
-    "dayClass": "saturday",
     "month": 5,
-    "count": 21707,
-    "low": 19101,
-    "high": 23210,
-    "games": 5,
-    "seasons": "2023–2025"
+    "count": 23210,
+    "low": 22459,
+    "high": 24215,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -1671,23 +1635,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "saturday",
     "month": 7,
-    "count": 21191,
-    "low": 20724,
-    "high": 21844,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "galaxy",
-    "venueId": "dignity-health-sports-park",
-    "dayClass": "saturday",
-    "month": 8,
-    "count": 20203,
-    "low": 19983,
-    "high": 22689,
+    "count": 21113,
+    "low": 20335,
+    "high": 22341,
     "games": 3,
-    "seasons": "2023–2025"
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -1695,11 +1647,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "saturday",
     "month": 9,
-    "count": 21568,
-    "low": 18897,
-    "high": 24656,
-    "games": 6,
-    "seasons": "2023–2025"
+    "count": 21846,
+    "low": 18364,
+    "high": 25227,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -1707,11 +1659,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "saturday",
     "month": 10,
-    "count": 21582,
-    "low": 18902,
-    "high": 24026,
-    "games": 6,
-    "seasons": "2023–2025"
+    "count": 21425,
+    "low": 18175,
+    "high": 25046,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -1719,23 +1671,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "sunday",
     "month": null,
-    "count": 20385,
-    "low": 19279,
-    "high": 24772,
-    "games": 10,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "galaxy",
-    "venueId": "dignity-health-sports-park",
-    "dayClass": "sunday",
-    "month": 4,
-    "count": 25335,
-    "low": 23275,
-    "high": 26245,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 21215,
+    "low": 19287,
+    "high": 24209,
+    "games": 7,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -1995,71 +1935,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 22126,
-    "low": 22035,
-    "high": 22194,
-    "games": 54,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "lafc",
-    "venueId": "bmo-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 22214,
-    "low": 22208,
-    "high": 22262,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "lafc",
-    "venueId": "bmo-stadium",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 22120,
-    "low": 22019,
-    "high": 22158,
-    "games": 15,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "lafc",
-    "venueId": "bmo-stadium",
-    "dayClass": "weekday",
-    "month": 5,
-    "count": 22120,
-    "low": 22065,
-    "high": 22171,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "lafc",
-    "venueId": "bmo-stadium",
-    "dayClass": "weekday",
-    "month": 6,
     "count": 22125,
-    "low": 22068,
-    "high": 22151,
-    "games": 3,
-    "seasons": "2023"
+    "low": 22091,
+    "high": 22185,
+    "games": 36,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
     "teamId": "lafc",
     "venueId": "bmo-stadium",
     "dayClass": "weekday",
-    "month": 7,
-    "count": 22163,
-    "low": 22087,
-    "high": 22197,
-    "games": 3,
-    "seasons": "2023–2025"
+    "month": null,
+    "count": 22131,
+    "low": 22053,
+    "high": 22156,
+    "games": 8,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -2067,11 +1959,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "weekday",
     "month": 10,
-    "count": 22053,
-    "low": 22036,
-    "high": 22084,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 22064,
+    "low": 22042,
+    "high": 22103,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -2079,11 +1971,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "saturday",
     "month": null,
-    "count": 22127,
-    "low": 22066,
-    "high": 22169,
-    "games": 27,
-    "seasons": "2023–2025"
+    "count": 22122,
+    "low": 22102,
+    "high": 22161,
+    "games": 19,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -2091,11 +1983,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "saturday",
     "month": 3,
-    "count": 22111,
-    "low": 22030,
-    "high": 22163,
-    "games": 5,
-    "seasons": "2023–2025"
+    "count": 22071,
+    "low": 22028,
+    "high": 22127,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -2103,23 +1995,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "saturday",
     "month": 4,
-    "count": 22122,
-    "low": 22110,
-    "high": 22199,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "lafc",
-    "venueId": "bmo-stadium",
-    "dayClass": "saturday",
-    "month": 5,
-    "count": 22099,
-    "low": 22065,
-    "high": 22113,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 22116,
+    "low": 22091,
+    "high": 22172,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -2127,11 +2007,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "saturday",
     "month": 6,
-    "count": 22119,
-    "low": 22084,
-    "high": 22136,
-    "games": 4,
-    "seasons": "2023–2024"
+    "count": 22105,
+    "low": 22062,
+    "high": 22126,
+    "games": 3,
+    "seasons": "2024"
   },
   {
     "metroId": "la",
@@ -2139,11 +2019,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "saturday",
     "month": 7,
-    "count": 22122,
-    "low": 22096,
-    "high": 22171,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 22127,
+    "low": 22122,
+    "high": 22214,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -2151,23 +2031,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 22217,
-    "low": 22079,
-    "high": 22750,
-    "games": 10,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "lafc",
-    "venueId": "bmo-stadium",
-    "dayClass": "sunday",
-    "month": 10,
-    "count": 22221,
-    "low": 22144,
-    "high": 22260,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 22212,
+    "low": 22092,
+    "high": 22600,
+    "games": 7,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -3579,23 +3447,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 7819,
-    "low": 6008,
-    "high": 10076,
-    "games": 35,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "gotham",
-    "venueId": "sports-illustrated-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 9730,
-    "low": 8632,
-    "high": 10006,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 8890,
+    "low": 7330,
+    "high": 10640,
+    "games": 25,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -3603,11 +3459,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "saturday",
     "month": null,
-    "count": 9092,
-    "low": 6193,
-    "high": 10679,
-    "games": 11,
-    "seasons": "2023–2025"
+    "count": 10399,
+    "low": 9009,
+    "high": 10718,
+    "games": 9,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -3639,35 +3495,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 7425,
-    "low": 5913,
-    "high": 9003,
-    "games": 22,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "gotham",
-    "venueId": "sports-illustrated-stadium",
-    "dayClass": "sunday",
-    "month": 5,
-    "count": 7330,
-    "low": 5399,
-    "high": 8163,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "gotham",
-    "venueId": "sports-illustrated-stadium",
-    "dayClass": "sunday",
-    "month": 6,
-    "count": 7730,
-    "low": 6698,
-    "high": 10062,
-    "games": 4,
-    "seasons": "2023–2024"
+    "count": 8038,
+    "low": 7169,
+    "high": 9563,
+    "games": 14,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -3687,11 +3519,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "sunday",
     "month": 10,
-    "count": 9752,
-    "low": 9005,
-    "high": 10689,
-    "games": 5,
-    "seasons": "2023–2025"
+    "count": 10689,
+    "low": 10221,
+    "high": 10954,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5439,23 +5271,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "citi-field",
     "dayClass": "all",
     "month": null,
-    "count": 21285,
-    "low": 19264,
-    "high": 24529,
-    "games": 20,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "nycfc",
-    "venueId": "citi-field",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 16724,
-    "low": 15209,
-    "high": 23778,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 21611,
+    "low": 19897,
+    "high": 24891,
+    "games": 13,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5463,11 +5283,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "citi-field",
     "dayClass": "saturday",
     "month": null,
-    "count": 22830,
-    "low": 20922,
-    "high": 24832,
-    "games": 13,
-    "seasons": "2023–2025"
+    "count": 24428,
+    "low": 21073,
+    "high": 24891,
+    "games": 9,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5475,47 +5295,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "citi-field",
     "dayClass": "saturday",
     "month": 4,
-    "count": 20922,
-    "low": 19897,
-    "high": 21073,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "nycfc",
-    "venueId": "citi-field",
-    "dayClass": "saturday",
-    "month": 5,
-    "count": 30731,
-    "low": 26781,
-    "high": 30768,
+    "count": 21073,
+    "low": 20485,
+    "high": 21285,
     "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "nycfc",
-    "venueId": "citi-field",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 19456,
-    "low": 19031,
-    "high": 20534,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "nycfc",
-    "venueId": "sports-illustrated-stadium",
-    "dayClass": "all",
-    "month": null,
-    "count": 10785,
-    "low": 9101,
-    "high": 12097,
-    "games": 3,
-    "seasons": "2023–2024"
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5524,22 +5308,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "all",
     "month": null,
     "count": 19537,
-    "low": 18225,
-    "high": 20300,
-    "games": 28,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "nycfc",
-    "venueId": "yankee-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 24774,
-    "low": 24632,
-    "high": 25310,
-    "games": 3,
-    "seasons": "2023–2025"
+    "low": 18598,
+    "high": 20189,
+    "games": 20,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5547,11 +5319,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "yankee-stadium",
     "dayClass": "weekday",
     "month": null,
-    "count": 17413,
-    "low": 16172,
-    "high": 18608,
-    "games": 7,
-    "seasons": "2023–2025"
+    "count": 18062,
+    "low": 17413,
+    "high": 19153,
+    "games": 5,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5571,47 +5343,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "yankee-stadium",
     "dayClass": "saturday",
     "month": null,
-    "count": 20095,
-    "low": 18972,
-    "high": 21474,
-    "games": 15,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "nycfc",
-    "venueId": "yankee-stadium",
-    "dayClass": "saturday",
-    "month": 3,
-    "count": 18623,
-    "low": 17952,
-    "high": 18758,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "nycfc",
-    "venueId": "yankee-stadium",
-    "dayClass": "saturday",
-    "month": 4,
-    "count": 20119,
-    "low": 20107,
-    "high": 20432,
-    "games": 3,
-    "seasons": "2023–2024"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "nycfc",
-    "venueId": "yankee-stadium",
-    "dayClass": "saturday",
-    "month": 9,
-    "count": 24871,
-    "low": 19549,
-    "high": 33427,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 20084,
+    "low": 19051,
+    "high": 20192,
+    "games": 9,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5631,23 +5367,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 18407,
-    "low": 16615,
-    "high": 21115,
-    "games": 51,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "red-bulls",
-    "venueId": "sports-illustrated-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 18843,
-    "low": 18659,
-    "high": 19064,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 18913,
+    "low": 17525,
+    "high": 21425,
+    "games": 33,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5655,23 +5379,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "weekday",
     "month": null,
-    "count": 14345,
-    "low": 13124,
-    "high": 15916,
-    "games": 8,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "red-bulls",
-    "venueId": "sports-illustrated-stadium",
-    "dayClass": "weekday",
-    "month": 7,
-    "count": 15128,
-    "low": 14284,
-    "high": 15496,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 15496,
+    "low": 14130,
+    "high": 16026,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5679,11 +5391,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "saturday",
     "month": null,
-    "count": 19850,
-    "low": 17662,
-    "high": 23147,
-    "games": 40,
-    "seasons": "2023–2025"
+    "count": 19828,
+    "low": 18039,
+    "high": 23870,
+    "games": 27,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5691,11 +5403,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "saturday",
     "month": 3,
-    "count": 17449,
-    "low": 16388,
-    "high": 19944,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 18185,
+    "low": 17449,
+    "high": 21702,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5703,11 +5415,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "saturday",
     "month": 4,
-    "count": 17501,
-    "low": 16589,
-    "high": 17966,
-    "games": 7,
-    "seasons": "2023–2025"
+    "count": 17525,
+    "low": 17501,
+    "high": 18407,
+    "games": 5,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5715,11 +5427,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "saturday",
     "month": 5,
-    "count": 19450,
-    "low": 17822,
-    "high": 22388,
-    "games": 6,
-    "seasons": "2023–2025"
+    "count": 20187,
+    "low": 18856,
+    "high": 21706,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5729,21 +5441,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "month": 6,
     "count": 18315,
     "low": 18039,
-    "high": 20582,
-    "games": 7,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "red-bulls",
-    "venueId": "sports-illustrated-stadium",
-    "dayClass": "saturday",
-    "month": 7,
-    "count": 20014,
-    "low": 19921,
-    "high": 22617,
-    "games": 3,
-    "seasons": "2023–2025"
+    "high": 21293,
+    "games": 5,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5751,11 +5451,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "saturday",
     "month": 8,
-    "count": 20688,
-    "low": 19692,
-    "high": 22638,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 19951,
+    "low": 19432,
+    "high": 20688,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -5763,35 +5463,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "saturday",
     "month": 9,
-    "count": 20347,
-    "low": 19751,
-    "high": 25219,
-    "games": 5,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "red-bulls",
-    "venueId": "sports-illustrated-stadium",
-    "dayClass": "saturday",
-    "month": 10,
-    "count": 24515,
-    "low": 24511,
-    "high": 24766,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "red-bulls",
-    "venueId": "sports-illustrated-stadium",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 18087,
-    "low": 17980,
-    "high": 19512,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 22485,
+    "low": 19240,
+    "high": 25237,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -7347,23 +7023,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "snapdragon-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 15929,
-    "low": 12812,
-    "high": 19908,
-    "games": 34,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "wave",
-    "venueId": "snapdragon-stadium",
-    "dayClass": "opener",
-    "month": null,
-    "count": 30854,
-    "low": 24660,
-    "high": 31460,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 15549,
+    "low": 11836,
+    "high": 16997,
+    "games": 23,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "san-diego",
@@ -7371,11 +7035,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "snapdragon-stadium",
     "dayClass": "friday",
     "month": null,
-    "count": 16746,
-    "low": 13527,
-    "high": 17602,
-    "games": 7,
-    "seasons": "2023–2025"
+    "count": 16070,
+    "low": 12593,
+    "high": 16991,
+    "games": 6,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "san-diego",
@@ -7395,35 +7059,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "snapdragon-stadium",
     "dayClass": "saturday",
     "month": null,
-    "count": 16030,
-    "low": 14589,
-    "high": 17155,
-    "games": 14,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "wave",
-    "venueId": "snapdragon-stadium",
-    "dayClass": "saturday",
-    "month": 4,
-    "count": 16613,
-    "low": 14887,
-    "high": 17052,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "wave",
-    "venueId": "snapdragon-stadium",
-    "dayClass": "saturday",
-    "month": 8,
     "count": 15834,
-    "low": 13940,
-    "high": 18167,
-    "games": 3,
-    "seasons": "2023–2025"
+    "low": 13072,
+    "high": 17063,
+    "games": 7,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "san-diego",
@@ -7431,11 +7071,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "snapdragon-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 15825,
-    "low": 12915,
-    "high": 25331,
-    "games": 12,
-    "seasons": "2023–2025"
+    "count": 15549,
+    "low": 12760,
+    "high": 16024,
+    "games": 9,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "san-diego",
@@ -7455,11 +7095,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "snapdragon-stadium",
     "dayClass": "sunday",
     "month": 9,
-    "count": 24239,
-    "low": 21562,
-    "high": 25331,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 23541,
+    "low": 19584,
+    "high": 25029,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8163,23 +7803,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "all",
     "month": null,
-    "count": 7930,
-    "low": 6811,
-    "high": 9800,
-    "games": 35,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "seattle",
-    "teamId": "reign",
-    "venueId": "lumen-field",
-    "dayClass": "opener",
-    "month": null,
-    "count": 8557,
-    "low": 8512,
-    "high": 8888,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 7665,
+    "low": 6765,
+    "high": 9051,
+    "games": 24,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8199,11 +7827,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "friday",
     "month": null,
-    "count": 7770,
-    "low": 6951,
-    "high": 10010,
-    "games": 12,
-    "seasons": "2023–2025"
+    "count": 7345,
+    "low": 6794,
+    "high": 8325,
+    "games": 10,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8223,23 +7851,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "friday",
     "month": 10,
-    "count": 8193,
-    "low": 7019,
-    "high": 11228,
-    "games": 6,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "seattle",
-    "teamId": "reign",
-    "venueId": "lumen-field",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 7620,
-    "low": 6841,
-    "high": 7996,
-    "games": 7,
-    "seasons": "2023–2025"
+    "count": 7323,
+    "low": 6713,
+    "high": 8062,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8247,35 +7863,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "sunday",
     "month": null,
-    "count": 9052,
-    "low": 7820,
-    "high": 10166,
-    "games": 12,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "seattle",
-    "teamId": "reign",
-    "venueId": "lumen-field",
-    "dayClass": "sunday",
-    "month": 5,
-    "count": 6841,
-    "low": 6811,
-    "high": 7494,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "seattle",
-    "teamId": "reign",
-    "venueId": "lumen-field",
-    "dayClass": "sunday",
-    "month": 9,
     "count": 9051,
-    "low": 8807,
-    "high": 9579,
-    "games": 3,
-    "seasons": "2023–2025"
+    "low": 6841,
+    "high": 9626,
+    "games": 9,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8391,23 +7983,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "all",
     "month": null,
-    "count": 30693,
-    "low": 30045,
-    "high": 31867,
-    "games": 53,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "seattle",
-    "teamId": "sounders",
-    "venueId": "lumen-field",
-    "dayClass": "opener",
-    "month": null,
-    "count": 30055,
-    "low": 30044,
-    "high": 30061,
-    "games": 3,
-    "seasons": "2023–2025"
+    "count": 30157,
+    "low": 30042,
+    "high": 31442,
+    "games": 34,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8416,34 +7996,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "weekday",
     "month": null,
     "count": 30032,
-    "low": 30020,
-    "high": 30067,
-    "games": 11,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "seattle",
-    "teamId": "sounders",
-    "venueId": "lumen-field",
-    "dayClass": "weekday",
-    "month": 5,
-    "count": 30020,
-    "low": 29821,
-    "high": 30030,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "seattle",
-    "teamId": "sounders",
-    "venueId": "lumen-field",
-    "dayClass": "weekday",
-    "month": 10,
-    "count": 30495,
-    "low": 30261,
-    "high": 30618,
-    "games": 3,
-    "seasons": "2023–2024"
+    "low": 29676,
+    "high": 30045,
+    "games": 7,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8451,11 +8007,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "saturday",
     "month": null,
-    "count": 31032,
-    "low": 30101,
-    "high": 32515,
-    "games": 33,
-    "seasons": "2023–2025"
+    "count": 30563,
+    "low": 30095,
+    "high": 31797,
+    "games": 22,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8464,10 +8020,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "saturday",
     "month": 3,
     "count": 30107,
-    "low": 30036,
-    "high": 31293,
-    "games": 5,
-    "seasons": "2023–2025"
+    "low": 30072,
+    "high": 30700,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8476,10 +8032,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "saturday",
     "month": 4,
     "count": 30550,
-    "low": 30025,
-    "high": 31789,
-    "games": 5,
-    "seasons": "2023–2025"
+    "low": 30282,
+    "high": 31209,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8487,11 +8043,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "saturday",
     "month": 5,
-    "count": 30804,
-    "low": 30457,
-    "high": 31083,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 30575,
+    "low": 30339,
+    "high": 30906,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8499,11 +8055,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "saturday",
     "month": 6,
-    "count": 30397,
-    "low": 30095,
-    "high": 30943,
-    "games": 6,
-    "seasons": "2023–2025"
+    "count": 30097,
+    "low": 30081,
+    "high": 30332,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8511,11 +8067,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "saturday",
     "month": 7,
-    "count": 31840,
-    "low": 30129,
-    "high": 32753,
-    "games": 5,
-    "seasons": "2023–2025"
+    "count": 30129,
+    "low": 30073,
+    "high": 31517,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8523,11 +8079,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "saturday",
     "month": 9,
-    "count": 32351,
-    "low": 31468,
-    "high": 33820,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 31952,
+    "low": 30984,
+    "high": 32351,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8535,11 +8091,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "saturday",
     "month": 10,
-    "count": 33290,
-    "low": 32582,
-    "high": 34335,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 32913,
+    "low": 32250,
+    "high": 34627,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8547,11 +8103,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "sunday",
     "month": null,
-    "count": 31320,
-    "low": 30965,
-    "high": 31690,
-    "games": 8,
-    "seasons": "2023–2025"
+    "count": 31102,
+    "low": 30552,
+    "high": 31491,
+    "games": 5,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -8876,5 +8432,2035 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 6212,
     "games": 5,
     "seasons": "2025–2026"
+  }
+];
+
+/** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */
+export const SEASON_LEVELS: SeasonLevelRow[] = [];
+
+/** How each opponent has drawn at each team's games (expectedDrawBuild.ts opponentRatio). */
+export const OPPONENT_RATIOS: OpponentRatioRow[] = [
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "astros",
+    "ratio": 1,
+    "games": 18
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "athletics",
+    "ratio": 0.951,
+    "games": 20
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "blue-jays",
+    "ratio": 1.09,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "braves",
+    "ratio": 1.064,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "brewers",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "cardinals",
+    "ratio": 1.034,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "dodgers",
+    "ratio": 1.293,
+    "games": 8
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "guardians",
+    "ratio": 0.993,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "mariners",
+    "ratio": 0.958,
+    "games": 20
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "mets",
+    "ratio": 1.151,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "orioles",
+    "ratio": 0.986,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "padres",
+    "ratio": 1.052,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "phillies",
+    "ratio": 0.995,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "rangers",
+    "ratio": 0.988,
+    "games": 20
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "rays",
+    "ratio": 0.955,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "red-sox",
+    "ratio": 1.106,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "rockies",
+    "ratio": 0.98,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "royals",
+    "ratio": 0.876,
+    "games": 10
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "tigers",
+    "ratio": 0.965,
+    "games": 11
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "twins",
+    "ratio": 0.922,
+    "games": 10
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "white-sox",
+    "ratio": 0.975,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "opponent": "yankees",
+    "ratio": 1.195,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "chargers",
+    "opponent": "broncos",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "chargers",
+    "opponent": "chiefs",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "chargers",
+    "opponent": "raiders",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "chargers",
+    "opponent": "ravens",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "angels",
+    "ratio": 0.99,
+    "games": 8
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "braves",
+    "ratio": 0.989,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "brewers",
+    "ratio": 0.977,
+    "games": 10
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "cardinals",
+    "ratio": 0.953,
+    "games": 10
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "cubs",
+    "ratio": 1.014,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "d-backs",
+    "ratio": 0.988,
+    "games": 18
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "giants",
+    "ratio": 0.998,
+    "games": 21
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "guardians",
+    "ratio": 0.977,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "mariners",
+    "ratio": 0.985,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "marlins",
+    "ratio": 0.987,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "mets",
+    "ratio": 0.979,
+    "games": 10
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "nationals",
+    "ratio": 1.011,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "orioles",
+    "ratio": 1.007,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "padres",
+    "ratio": 1,
+    "games": 21
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "phillies",
+    "ratio": 0.987,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "pirates",
+    "ratio": 1.015,
+    "games": 9
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "rangers",
+    "ratio": 0.996,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "rays",
+    "ratio": 1.006,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "red-sox",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "reds",
+    "ratio": 0.986,
+    "games": 10
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "rockies",
+    "ratio": 0.999,
+    "games": 18
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "opponent": "royals",
+    "ratio": 1.016,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "austin",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "colorado",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "dallas",
+    "ratio": 0.97,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "houston",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "kansas-city",
+    "ratio": 0.944,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "lafc",
+    "ratio": 1.042,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "minnesota",
+    "ratio": 0.968,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "portland",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "salt-lake",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "san-jose",
+    "ratio": 0.983,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "seattle",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "st-louis",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "opponent": "vancouver",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "austin",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "colorado",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "dallas",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "houston",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "kansas-city",
+    "ratio": 0.932,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "la-galaxy",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "minnesota",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "portland",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "salt-lake",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "san-jose",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "seattle",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "st-louis",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "opponent": "vancouver",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "rams",
+    "opponent": "49ers",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "rams",
+    "opponent": "cardinals",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "rams",
+    "opponent": "eagles",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "rams",
+    "opponent": "saints",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "rams",
+    "opponent": "seahawks",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-mbb",
+    "opponent": "arizona-st",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-mbb",
+    "opponent": "maryland",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-mbb",
+    "opponent": "oregon",
+    "ratio": 0.957,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-mbb",
+    "opponent": "uc-riverside",
+    "ratio": 0.958,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-mbb",
+    "opponent": "usc",
+    "ratio": 1.3,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-mbb",
+    "opponent": "washington",
+    "ratio": 0.92,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-mbb",
+    "opponent": "california",
+    "ratio": 1.043,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-mbb",
+    "opponent": "oregon",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-mbb",
+    "opponent": "ucla",
+    "ratio": 1.165,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-mbb",
+    "opponent": "washington",
+    "ratio": 0.97,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-mbb",
+    "opponent": "washington-st",
+    "ratio": 1.072,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "aces",
+    "ratio": 0.99,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "dream",
+    "ratio": 0.988,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "fever",
+    "ratio": 1.016,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "lynx",
+    "ratio": 0.973,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "mercury",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "mystics",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "sky",
+    "ratio": 1.01,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "sparks",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "storm",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "sun",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "valkyries",
+    "ratio": 1.027,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "opponent": "wings",
+    "ratio": 1.016,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "astros",
+    "ratio": 0.871,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "athletics",
+    "ratio": 0.978,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "braves",
+    "ratio": 0.942,
+    "games": 21
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "brewers",
+    "ratio": 0.932,
+    "games": 11
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "cardinals",
+    "ratio": 0.988,
+    "games": 10
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "cubs",
+    "ratio": 0.929,
+    "games": 12
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "d-backs",
+    "ratio": 0.995,
+    "games": 10
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "dodgers",
+    "ratio": 0.98,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "giants",
+    "ratio": 0.945,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "marlins",
+    "ratio": 0.956,
+    "games": 20
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "nationals",
+    "ratio": 0.993,
+    "games": 18
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "orioles",
+    "ratio": 0.941,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "padres",
+    "ratio": 0.955,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "phillies",
+    "ratio": 1.028,
+    "games": 20
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "pirates",
+    "ratio": 0.969,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "red-sox",
+    "ratio": 1.007,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "reds",
+    "ratio": 1.006,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "rockies",
+    "ratio": 0.989,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "royals",
+    "ratio": 0.967,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "tigers",
+    "ratio": 0.917,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "twins",
+    "ratio": 0.995,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "opponent": "yankees",
+    "ratio": 1.038,
+    "games": 8
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-giants",
+    "opponent": "commanders",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-giants",
+    "opponent": "cowboys",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-giants",
+    "opponent": "eagles",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-giants",
+    "opponent": "packers",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-giants",
+    "opponent": "vikings",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-jets",
+    "opponent": "bills",
+    "ratio": 1.014,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-jets",
+    "opponent": "dolphins",
+    "ratio": 0.97,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-jets",
+    "opponent": "falcons",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-jets",
+    "opponent": "patriots",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "atlanta",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "cf-montr-al",
+    "ratio": 0.972,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "charlotte",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "chicago",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "cincinnati",
+    "ratio": 0.971,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "columbus",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "d-c-united",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "miami",
+    "ratio": 1.315,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "new-england",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "orlando",
+    "ratio": 1.075,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "philadelphia",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "red-bull-ny",
+    "ratio": 1.093,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "opponent": "toronto",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "atlanta",
+    "ratio": 0.983,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "cf-montr-al",
+    "ratio": 1.034,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "charlotte",
+    "ratio": 0.923,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "chicago",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "cincinnati",
+    "ratio": 1.064,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "columbus",
+    "ratio": 1.026,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "d-c-united",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "miami",
+    "ratio": 1.114,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "nashville",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "new-england",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "nycfc",
+    "ratio": 1.047,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "orlando",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "philadelphia",
+    "ratio": 1.019,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "opponent": "toronto",
+    "ratio": 1.043,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "butler",
+    "ratio": 0.963,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "creighton",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "depaul",
+    "ratio": 0.934,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "georgetown",
+    "ratio": 0.974,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "marquette",
+    "ratio": 0.953,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "monmouth",
+    "ratio": 1.044,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "providence",
+    "ratio": 0.972,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "rutgers",
+    "ratio": 1.065,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "saint-peter-s",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "st-john-s",
+    "ratio": 1.036,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "uconn",
+    "ratio": 1.047,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "villanova",
+    "ratio": 1.092,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "wagner",
+    "ratio": 0.746,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "seton-hall-mbb",
+    "opponent": "xavier",
+    "ratio": 0.942,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "butler",
+    "ratio": 1.02,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "creighton",
+    "ratio": 0.966,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "depaul",
+    "ratio": 0.98,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "georgetown",
+    "ratio": 0.891,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "harvard",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "marquette",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "providence",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "quinnipiac",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "seton-hall",
+    "ratio": 1.057,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "uconn",
+    "ratio": 1.039,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "villanova",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "opponent": "xavier",
+    "ratio": 1.017,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "angels",
+    "ratio": 0.99,
+    "games": 11
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "astros",
+    "ratio": 1.009,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "athletics",
+    "ratio": 0.982,
+    "games": 10
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "blue-jays",
+    "ratio": 1.009,
+    "games": 19
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "braves",
+    "ratio": 0.984,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "cardinals",
+    "ratio": 0.972,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "dodgers",
+    "ratio": 0.991,
+    "games": 7
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "guardians",
+    "ratio": 0.982,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "mariners",
+    "ratio": 0.999,
+    "games": 10
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "marlins",
+    "ratio": 1.002,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "mets",
+    "ratio": 1.044,
+    "games": 8
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "orioles",
+    "ratio": 1.007,
+    "games": 17
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "pirates",
+    "ratio": 1.006,
+    "games": 7
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "rangers",
+    "ratio": 1.036,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "rays",
+    "ratio": 0.999,
+    "games": 21
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "red-sox",
+    "ratio": 1.01,
+    "games": 21
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "reds",
+    "ratio": 0.991,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "rockies",
+    "ratio": 0.986,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "royals",
+    "ratio": 1.028,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "tigers",
+    "ratio": 0.949,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "twins",
+    "ratio": 0.958,
+    "games": 9
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "opponent": "white-sox",
+    "ratio": 0.983,
+    "games": 9
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "astros",
+    "ratio": 0.979,
+    "games": 6
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "athletics",
+    "ratio": 0.986,
+    "games": 6
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "blue-jays",
+    "ratio": 0.983,
+    "games": 6
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "braves",
+    "ratio": 1.003,
+    "games": 10
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "brewers",
+    "ratio": 0.988,
+    "games": 10
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "cardinals",
+    "ratio": 1.004,
+    "games": 10
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "cubs",
+    "ratio": 1.018,
+    "games": 9
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "d-backs",
+    "ratio": 0.989,
+    "games": 21
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "dodgers",
+    "ratio": 1.014,
+    "games": 18
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "giants",
+    "ratio": 1.011,
+    "games": 20
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "mariners",
+    "ratio": 1.019,
+    "games": 8
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "marlins",
+    "ratio": 0.966,
+    "games": 9
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "mets",
+    "ratio": 0.998,
+    "games": 10
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "nationals",
+    "ratio": 0.955,
+    "games": 9
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "phillies",
+    "ratio": 0.986,
+    "games": 9
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "pirates",
+    "ratio": 1.007,
+    "games": 9
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "reds",
+    "ratio": 0.961,
+    "games": 9
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "rockies",
+    "ratio": 0.983,
+    "games": 19
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "tigers",
+    "ratio": 1.024,
+    "games": 6
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "twins",
+    "ratio": 0.977,
+    "games": 6
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "white-sox",
+    "ratio": 1.002,
+    "games": 6
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "opponent": "yankees",
+    "ratio": 0.98,
+    "games": 6
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-fc",
+    "opponent": "minnesota",
+    "ratio": 1.059,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-fc",
+    "opponent": "portland",
+    "ratio": 1.047,
+    "games": 3
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-fc",
+    "opponent": "vancouver",
+    "ratio": 1.023,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "air-force",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "boise-st",
+    "ratio": 0.951,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "colorado-st",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "fresno-st",
+    "ratio": 0.954,
+    "games": 3
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "long-beach-st",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "nevada",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "new-mexico",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "san-jos-st",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "unlv",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "utah-state",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-mbb",
+    "opponent": "wyoming",
+    "ratio": 0.981,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "angels",
+    "ratio": 1.021,
+    "games": 19
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "astros",
+    "ratio": 1.031,
+    "games": 19
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "athletics",
+    "ratio": 0.975,
+    "games": 20
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "blue-jays",
+    "ratio": 1,
+    "games": 9
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "braves",
+    "ratio": 1.048,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "cubs",
+    "ratio": 1.099,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "d-backs",
+    "ratio": 1.064,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "giants",
+    "ratio": 1.04,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "guardians",
+    "ratio": 1.107,
+    "games": 10
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "mets",
+    "ratio": 0.965,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "orioles",
+    "ratio": 1.027,
+    "games": 9
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "padres",
+    "ratio": 1.029,
+    "games": 8
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "phillies",
+    "ratio": 1.038,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "rangers",
+    "ratio": 0.967,
+    "games": 20
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "rays",
+    "ratio": 1.008,
+    "games": 9
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "red-sox",
+    "ratio": 1.064,
+    "games": 10
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "reds",
+    "ratio": 0.995,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "royals",
+    "ratio": 0.929,
+    "games": 10
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "tigers",
+    "ratio": 0.943,
+    "games": 9
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "twins",
+    "ratio": 1.021,
+    "games": 9
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "white-sox",
+    "ratio": 1.036,
+    "games": 10
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "opponent": "yankees",
+    "ratio": 1.125,
+    "games": 9
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "opponent": "49ers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "opponent": "cardinals",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "opponent": "rams",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seahawks",
+    "opponent": "vikings",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "austin",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "colorado",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "dallas",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "houston",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "kansas-city",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "la-galaxy",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "lafc",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "minnesota",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "portland",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "salt-lake",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "san-jose",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "st-louis",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "opponent": "vancouver",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "opponent": "e-washington",
+    "ratio": 0.935,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "opponent": "oregon",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "opponent": "ucla",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "opponent": "usc",
+    "ratio": 1.052,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "opponent": "utah",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "opponent": "washington-st",
+    "ratio": 1.027,
+    "games": 2
   }
 ];

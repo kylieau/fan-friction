@@ -3,8 +3,8 @@
 // expectedDrawBuild.ts. The building stays the ceiling (drawSize). Always an
 // estimate, and said so.
 
-import { EXPECTED_DRAWS } from './expectedDrawIndex';
-import { isHoliday, pickDraw, type ExpectedDrawRow } from './expectedDrawBuild';
+import { EXPECTED_DRAWS, OPPONENT_RATIOS, SEASON_LEVELS } from './expectedDrawIndex';
+import { isHoliday, opponentKey, pickDraw, type ExpectedDrawRow } from './expectedDrawBuild';
 import { cachedExpectedDraws } from './catalogCache';
 import type { CrowdEvent } from './types';
 
@@ -33,11 +33,18 @@ export function calibratedDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
     { teamId: event.teams.home, venueId: event.place.venueId, date: event.date, opener: event.homeOpener, preseason: event.preseason },
   );
   if (!row) return undefined;
+  // This season's level and the opponent's past draw here, only in the leagues where each
+  // beat the baseline in the held-out check (expectedDrawBuild.ts; Kylie, Oct 7).
+  const level = event.preseason ? undefined : SEASON_LEVELS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home);
+  const away = event.teams.away;
+  const opp = event.preseason || !away ? undefined : OPPONENT_RATIOS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.opponent === opponentKey(away));
+  const k = (level?.level ?? 1) * (opp?.ratio ?? 1);
+  const adjusted = [level && 'this season so far', opp && 'this opponent'].filter(Boolean).join(' and ');
   return {
-    count: row.count,
-    low: row.low,
-    high: row.high,
-    note: `Typical announced crowd here for ${describe(row, event.date)}: ${row.games} games, ${row.seasons}.`,
+    count: Math.round(row.count * k),
+    low: Math.round(row.low * k),
+    high: Math.round(row.high * k),
+    note: `Typical announced crowd here for ${describe(row, event.date)}: ${row.games} games, ${row.seasons}.${adjusted ? ` Adjusted for ${adjusted}.` : ''}`,
   };
 }
 

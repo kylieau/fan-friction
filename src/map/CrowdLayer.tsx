@@ -441,8 +441,8 @@ function drawStems(svg: SVGSVGElement, placed: PlacedChip[], w: number, h: numbe
 /** Line 2 of a map card: "1:08 pm · 40.0k". A different day is named first. No status words. */
 function chipDetail(p: CrowdPoint): string {
   const time = p.event.start ? clockTime(p.event.start) : 'Time n/a';
-  // The map card keeps "No count yet" for an expected draw until a Map change is approved.
-  const crowd = crowdShort(p.event, p.capacity, false, false, false);
+  // An expected draw shows as its number, like any estimate on a map card (Kylie, Oct 7).
+  const crowd = crowdShort(p.event, p.capacity, false, false);
   return p.dayTag ? `${p.dayTag} · ${time} · ${crowd}` : `${time} · ${crowd}`;
 }
 
