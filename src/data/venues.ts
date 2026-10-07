@@ -1470,6 +1470,249 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+  // ---------- Bay Area (docs/bay-area-venue-table-answer.md; car shares from docs/bay-area-city-type-answer.md), Oct 7, 2026 ----------
+  // Not venue rows (Kylie, Oct 7, as for New York's Table B): the Golden Gate Park festival meadows, the Alameda County
+  // Fairgrounds, Moscone, the San Jose convention center, Civic Center Plaza, Marina Green, Lake Merritt, Stern Grove,
+  // Treasure Island. Their events are placed as points and sized by their own crowd.
+  'levis-stadium': {
+    id: 'levis-stadium',
+    metroId: 'bay-area',
+    // Reported ridership, estimated share (82–88%): ~15,000 VTA light-rail riders per 49ers game, about 11% of the crowd, plus ACE and Capitol Corridor.
+    carShare: 0.85,
+    names: [{ name: "Levi's Stadium" }],
+    location: [-121.97, 37.403],
+    capacity: [
+      { seats: 68500, setup: 'football', note: 'Reported. Expandable to about 75,000 for a Super Bowl; the World Cup did not use the expansion.' },
+      { seats: 68827, setup: 'soccer', note: 'Official (FIFA): the 2026 World Cup sellout; six-match average 68,558.' },
+    ],
+    roof: 'open',
+  },
+  'oakland-coliseum': {
+    id: 'oakland-coliseum',
+    metroId: 'bay-area',
+    // Official (BART): 14% of Coliseum baseball fans rode BART, 2013–2023, plus ~1% Capitol Corridor and AC Transit.
+    carShare: 0.84,
+    // Name dates are approximate to the month (RingCentral 2019–2023, with a lapse in 2020).
+    names: [{ name: 'Oakland–Alameda County Coliseum' }, { name: 'O.co Coliseum' }, { name: 'RingCentral Coliseum', from: '2019-07-01' }, { name: 'Oakland Coliseum', from: '2023-09-01' }],
+    location: [-122.2006, 37.7517],
+    capacity: [
+      { seats: 46847, setup: 'baseball', note: "Reported (the A's tarped setup); 56,782 with the tarps off. The A's left after 2024." },
+      { seats: 53200, setup: 'football', note: 'Reported (Raiders era, to 2019); expandable to 63,132.' },
+      { seats: 15000, setup: 'soccer', note: "Reported listed configuration; the Roots' 2025 opener drew 26,000+ with more sections open, so this is not a cap. The Roots leave after Oct 10, 2026." },
+      { seats: 47416, setup: 'concert', note: 'Reported; 64,829 in another layout.' },
+    ],
+    roof: 'open',
+  },
+  'california-memorial-stadium': {
+    id: 'california-memorial-stadium',
+    metroId: 'bay-area',
+    // Estimated (50–70%): hillside with almost no on-site parking; Downtown Berkeley BART with a free shuttle; students walk.
+    carShare: 0.6,
+    names: [{ name: 'California Memorial Stadium' }],
+    location: [-122.2508, 37.8711],
+    capacity: [
+      { seats: 62467, setup: 'football', note: 'Reported, full bowl; 63,186 official at the 2013 reopening.' },
+      { seats: 52428, setup: 'football', fromYear: 2024, note: 'Reported, south end tarped; one source dates the tarp to 2022.' },
+    ],
+    roof: 'open',
+  },
+  'stanford-stadium': {
+    id: 'stanford-stadium',
+    metroId: 'bay-area',
+    // Estimated: large campus lots; Caltrain stops at the stadium on weekend games.
+    carShare: 0.85,
+    names: [{ name: 'Stanford Stadium' }],
+    location: [-122.1619, 37.4345],
+    capacity: [{ seats: 50424, setup: 'football', note: 'Reported, since 2013. The Earthquakes play one match a year in the same bowl.' }],
+    roof: 'open',
+  },
+  'oracle-park': {
+    id: 'oracle-park',
+    metroId: 'bay-area',
+    // Reported (the Giants, 2026): nearly half of fans arrive by bus, train, ferry, bike, scooter or on foot.
+    carShare: 0.5,
+    names: [{ name: 'AT&T Park' }, { name: 'Oracle Park', from: '2019-01-10' }],
+    location: [-122.3894, 37.7786],
+    capacity: [{ seats: 41265, setup: 'baseball', note: 'Reported (Ticketmaster); seat-map sites say 41,915. The Giants publish neither.' }],
+    roof: 'open',
+  },
+  'shoreline-amphitheatre': {
+    id: 'shoreline-amphitheatre',
+    metroId: 'bay-area',
+    // Estimated: on-site lots included in most tickets; no rail within walking distance.
+    carShare: 0.95,
+    names: [{ name: 'Shoreline Amphitheatre' }],
+    location: [-122.0806, 37.4269],
+    capacity: [{ seats: 22500, setup: 'concert', note: 'Reported: 6,500 reserved seats plus 16,000 lawn; up to 30,000 as a festival with parking-lot stages.' }],
+    roof: 'covered',
+  },
+  'oakland-arena': {
+    id: 'oakland-arena',
+    metroId: 'bay-area',
+    // Estimated (comparable: the Coliseum next door, which shares its lots and BART station).
+    carShare: 0.8,
+    names: [{ name: 'Oracle Arena' }, { name: 'Oakland Arena', from: '2019-07-01' }],
+    location: [-122.2029, 37.7503],
+    capacity: [
+      { seats: 19596, setup: 'basketball', note: 'Reported; no tenant since the Warriors left in 2019.' },
+      { seats: 19596, setup: 'concert', note: 'Reported; TheStadiumBusiness says 19,200 (2026). Oak View Group is pricing a renovation.' },
+    ],
+    roof: 'indoor',
+  },
+  'sap-center': {
+    id: 'sap-center',
+    metroId: 'bay-area',
+    // Estimated (80–90%): Diridon Station across the street, but no observed survey; 4,850 contracted spaces nearby.
+    carShare: 0.85,
+    names: [{ name: 'SAP Center' }],
+    location: [-121.9011, 37.3328],
+    capacity: [
+      { seats: 17562, setup: 'hockey', note: 'Reported, 2001–2023' },
+      { seats: 17435, setup: 'hockey', fromYear: 2023, note: 'Reported, after a penthouse-lounge conversion; a phased renovation from 2026 will change it again.' },
+      { seats: 18543, setup: 'basketball', note: 'Reported' },
+      { seats: 18500, setup: 'concert', note: 'Reported (Ticketmaster), end-stage; 19,190 in the round.' },
+    ],
+    roof: 'indoor',
+  },
+  'chase-center': {
+    id: 'chase-center',
+    metroId: 'bay-area',
+    // Reported (Warriors, 2019: 35% by light rail) and the 2015 plan's cap of 53–59% by car; estimated 45–55%.
+    carShare: 0.5,
+    names: [{ name: 'Chase Center' }],
+    location: [-122.3874, 37.7679],
+    capacity: [
+      { seats: 18064, setup: 'basketball', note: 'Official: both the Warriors and the Valkyries announce sellouts at this number.' },
+      { seats: 19500, setup: 'concert', note: 'Reported' },
+    ],
+    roof: 'indoor',
+  },
+  'cefcu-stadium': {
+    id: 'cefcu-stadium',
+    metroId: 'bay-area',
+    // Estimated: city streets south of downtown; no survey.
+    carShare: 0.85,
+    names: [{ name: 'Spartan Stadium' }, { name: 'CEFCU Stadium', from: '2016-09-10' }],
+    location: [-121.8683, 37.3197],
+    capacity: [
+      { seats: 30456, setup: 'football', note: 'Reported, 1998–2018. Many sites still show this figure; it is stale.' },
+      { seats: 21520, setup: 'football', fromYear: 2019, note: 'Reported, during the east-side rebuild' },
+      { seats: 18203, setup: 'football', fromYear: 2021, note: 'Reported' },
+    ],
+    roof: 'open',
+  },
+  'paypal-park': {
+    id: 'paypal-park',
+    metroId: 'bay-area',
+    // Estimated: Bay FC says driving is the go-to; Caltrain counted ~850 riders per match in 2026.
+    carShare: 0.9,
+    names: [{ name: 'Avaya Stadium' }, { name: 'Earthquakes Stadium', from: '2020-07-01' }, { name: 'PayPal Park', from: '2021-02-01' }],
+    location: [-121.9246, 37.3513],
+    capacity: [{ seats: 18000, setup: 'soccer', note: 'Official (Bay FC). A canopy covers the stands; the field is open.' }],
+    roof: 'open',
+  },
+  'cow-palace': {
+    id: 'cow-palace',
+    metroId: 'bay-area',
+    // Estimated: on-site lots; Balboa Park BART is a long walk.
+    carShare: 0.88,
+    names: [{ name: 'Cow Palace' }],
+    location: [-122.4202, 37.7062],
+    capacity: [
+      { seats: 16500, setup: 'concert', note: 'Reported' },
+      { seats: 14000, setup: 'basketball', note: 'Reported' },
+      { seats: 13550, setup: 'hockey', note: 'Reported' },
+    ],
+    roof: 'indoor',
+  },
+  'toyota-pavilion-concord': {
+    id: 'toyota-pavilion-concord',
+    metroId: 'bay-area',
+    // Estimated (comparable: Shoreline); hillside site on one road, Concord BART several km away.
+    carShare: 0.95,
+    names: [{ name: 'Concord Pavilion' }, { name: 'Toyota Pavilion at Concord', from: '2023-07-01' }],
+    location: [-121.9404, 37.96],
+    capacity: [{ seats: 12500, setup: 'concert', note: 'Reported, covered seats plus lawn; the split is not published. The Toyota name runs to about the end of 2027.' }],
+    roof: 'covered',
+  },
+  'haas-pavilion': {
+    id: 'haas-pavilion',
+    metroId: 'bay-area',
+    // Estimated (comparable: Cal football, with more students walking); Downtown Berkeley BART ten minutes away.
+    carShare: 0.55,
+    names: [{ name: 'Haas Pavilion' }],
+    location: [-122.2622, 37.8694],
+    capacity: [{ seats: 11858, setup: 'basketball', note: "Reported, since 2015; Cal's own older page says 11,877." }],
+    roof: 'indoor',
+  },
+  'kezar-stadium': {
+    id: 'kezar-stadium',
+    metroId: 'bay-area',
+    // Estimated, ours (not in the research): city streets at the park's edge, Muni N Judah nearby; comparable to Haas and the Greek.
+    carShare: 0.55,
+    names: [{ name: 'Kezar Stadium' }],
+    location: [-122.456, 37.7669],
+    capacity: [
+      { seats: 10000, setup: 'football', note: "Official (SF Rec & Park); \"over 9,000\" reported. Golden City FC's seat upgrades may lower it." },
+      { seats: 10000, setup: 'soccer', note: 'Official (SF Rec & Park)' },
+    ],
+    roof: 'open',
+  },
+  'greek-theatre-berkeley': {
+    id: 'greek-theatre-berkeley',
+    metroId: 'bay-area',
+    // Estimated (comparable: Cal football, same campus and station).
+    carShare: 0.6,
+    names: [{ name: 'Hearst Greek Theatre' }, { name: 'Greek Theatre' }],
+    location: [-122.2542, 37.8737],
+    capacity: [{ seats: 8500, setup: 'concert', note: 'Official (Cal Performances), general admission: 6,500 bowl plus 2,000 lawn; 7,250 seated.' }],
+    roof: 'open',
+  },
+  'bill-graham-civic': {
+    id: 'bill-graham-civic',
+    metroId: 'bay-area',
+    // Estimated (comparable: Oracle and Chase, with a better station and less parking); Civic Center BART across the street.
+    carShare: 0.4,
+    names: [{ name: 'Bill Graham Civic Auditorium' }],
+    location: [-122.4173, 37.7781],
+    capacity: [{ seats: 8500, setup: 'concert', note: 'Reported, general-admission floor plus seated balcony; the all-seated figure is unpublished.' }],
+    roof: 'indoor',
+  },
+  'frost-amphitheater': {
+    id: 'frost-amphitheater',
+    metroId: 'bay-area',
+    // Estimated: paid campus lot; Palo Alto Caltrain a 20-minute walk, with shows timed to the trains.
+    carShare: 0.75,
+    names: [{ name: 'Frost Amphitheater' }],
+    // Approximate (research); OpenStreetMap does not know the venue by name.
+    location: [-122.1663, 37.4296],
+    capacity: [{ seats: 8000, setup: 'concert', note: 'Reported; rebuilt and reopened 2019' }],
+    roof: 'open',
+  },
+  'maples-pavilion': {
+    id: 'maples-pavilion',
+    metroId: 'bay-area',
+    // Estimated (comparable: Stanford Stadium).
+    carShare: 0.85,
+    names: [{ name: 'Maples Pavilion' }],
+    location: [-122.1605, 37.4295],
+    capacity: [{ seats: 7233, setup: 'basketball', note: 'Reported, citing Stanford' }],
+    roof: 'indoor',
+  },
+  'provident-event-center': {
+    id: 'provident-event-center',
+    metroId: 'bay-area',
+    // Estimated, ours (not in the research): downtown campus; comparable to CEFCU Stadium.
+    carShare: 0.85,
+    names: [{ name: 'Event Center at San José State' }, { name: 'Provident Credit Union Event Center', from: '2019-09-01' }],
+    // Approximate (research); OpenStreetMap does not know the venue by name.
+    location: [-121.8794, 37.3352],
+    capacity: [
+      { seats: 5000, setup: 'basketball', note: 'Official (SJSU)' },
+      { seats: 6000, setup: 'concert', note: 'Official (SJSU): "over 6,000"' },
+    ],
+    roof: 'indoor',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -26,6 +26,7 @@ const MLB_TEAMS = [
   { teamId: 'yankees', mlbId: 147, venueId: 'yankee-stadium', metroId: 'new-york', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'mets', mlbId: 121, venueId: 'citi-field', metroId: 'new-york', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'braves', mlbId: 144, venueId: 'truist-park', metroId: 'atlanta', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'giants', mlbId: 137, venueId: 'oracle-park', metroId: 'bay-area', seasons: [2022, 2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -84,6 +85,22 @@ const ESPN_TEAMS = [
   { teamId: 'ksu-football', metroId: 'atlanta', path: 'football/college-football', espnId: '338', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'ksu-mbb', metroId: 'atlanta', path: 'basketball/mens-college-basketball', espnId: '338', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'ksu-wbb', metroId: 'atlanta', path: 'basketball/womens-college-basketball', espnId: '338', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'warriors', metroId: 'bay-area', path: 'basketball/nba', espnId: '9', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'valkyries', metroId: 'bay-area', path: 'basketball/wnba', espnId: '129689', seasons: [2025, 2026], seasontype: 2 },
+  { teamId: 'sf-49ers', metroId: 'bay-area', path: 'football/nfl', espnId: '25', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'sharks', metroId: 'bay-area', path: 'hockey/nhl', espnId: '18', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'earthquakes', metroId: 'bay-area', path: 'soccer/usa.1', espnId: '191', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'bay-fc', metroId: 'bay-area', path: 'soccer/usa.nwsl', espnId: '22187', seasons: [2024, 2025] },
+  { teamId: 'oakland-roots', metroId: 'bay-area', path: 'soccer/usa.usl.1', espnId: '20687', seasons: [2025, 2026] },
+  { teamId: 'cal-football', metroId: 'bay-area', path: 'football/college-football', espnId: '25', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'cal-mbb', metroId: 'bay-area', path: 'basketball/mens-college-basketball', espnId: '25', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'cal-wbb', metroId: 'bay-area', path: 'basketball/womens-college-basketball', espnId: '25', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'stanford-football', metroId: 'bay-area', path: 'football/college-football', espnId: '24', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'stanford-mbb', metroId: 'bay-area', path: 'basketball/mens-college-basketball', espnId: '24', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'stanford-wbb', metroId: 'bay-area', path: 'basketball/womens-college-basketball', espnId: '24', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sjsu-football', metroId: 'bay-area', path: 'football/college-football', espnId: '23', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'sjsu-mbb', metroId: 'bay-area', path: 'basketball/mens-college-basketball', espnId: '23', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sjsu-wbb', metroId: 'bay-area', path: 'basketball/womens-college-basketball', espnId: '23', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -137,6 +154,21 @@ const VENUE_BY_NAME = {
   'mccamish pavilion': 'mccamish-pavilion',
   'vystar arena': 'ksu-convocation-center',
   'ksu convocation center': 'ksu-convocation-center',
+  // Bay Area (docs/bay-area-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  'chase center': 'chase-center',
+  "levi's stadium": 'levis-stadium',
+  'sap center at san jose': 'sap-center',
+  'sap center': 'sap-center',
+  'paypal park': 'paypal-park',
+  'stanford stadium': 'stanford-stadium',
+  'oakland coliseum': 'oakland-coliseum',
+  'oakland-alameda county coliseum': 'oakland-coliseum',
+  'california memorial stadium': 'california-memorial-stadium',
+  'cefcu stadium': 'cefcu-stadium',
+  'haas pavilion': 'haas-pavilion',
+  'maples pavilion': 'maples-pavilion',
+  'provident credit union event center': 'provident-event-center',
+  'oracle park': 'oracle-park',
 };
 
 function localParts(iso, metroId) {

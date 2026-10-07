@@ -12,7 +12,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -65,6 +65,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/New_York',
     center: [-84.4, 33.8],
     zoom: 10.5,
+  },
+  // Covered Oct 7, 2026 (docs/bay-area-venue-table-answer.md): San Francisco, Alameda, Contra Costa,
+  // San Mateo and Santa Clara counties. One frame holds San Francisco, Oakland, Berkeley and
+  // San Jose; Concord and Pleasanton sit off the first view. Three centers 30–45 miles apart.
+  'bay-area': {
+    id: 'bay-area',
+    name: 'Bay Area',
+    timeZone: 'America/Los_Angeles',
+    center: [-122.2, 37.62],
+    zoom: 9.2,
   },
   phoenix: {
     id: 'phoenix',
