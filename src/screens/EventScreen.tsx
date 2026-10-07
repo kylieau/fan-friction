@@ -286,8 +286,8 @@ function HowEstimatesWork({ onClose }: { onClose: () => void }) {
         </p>
         <p>
           <strong>A playoff game:</strong> how full this building got at the team's past playoff games in this round, or the
-          league's when the team has too few. The range shown is a planning range, wider than a middle half; its low end
-          is what counts toward friction.
+          league's when the team has too few; the building itself when neither is on file. The range shown is a planning
+          range, wider than a middle half; its low end is what counts toward friction.
         </p>
         <p className="home-helper">
           <strong>A show:</strong> a venue's own published average when it has one; otherwise the full room for a venue built

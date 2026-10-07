@@ -66,7 +66,9 @@ export function postseasonDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   const cap = venue ? capacityOn(venue, event.date, event.audience.sport) ?? capacityOn(venue, event.date) : undefined;
   if (!cap) return undefined;
   const row = POSTSEASON_DRAWS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.venueId === venueId && r.band === band);
-  if (!row) return undefined;
+  // No comparables (the WNBA, NFL, NWSL today): the building itself, said so (Kylie, Oct 7: show the
+  // building rather than "No count yet"). The friction read already used it.
+  if (!row) return { count: cap, low: cap, high: cap, planning: true, note: 'No past playoff crowds on file for this round; the building\'s capacity for this sport. An estimate.' };
   const people = postseasonPeople(row, cap);
   const who = row.basis === 'team' ? 'this team\'s' : row.basis === 'blend' ? 'this team\'s and the league\'s' : 'the league\'s';
   return { ...people, planning: true, note: `Playoff crowds as a share of the building, ${who} past ${row.games} games (${row.seasons}). An estimate.` };
