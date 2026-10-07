@@ -33,9 +33,33 @@ const comicConDay = (date: string, day: number): CrowdEvent => ({
   sourceId: SOURCE_ID,
 });
 
+/**
+ * Neutral-site football at Mercedes-Benz Stadium (docs/atlanta-venue-table-answer.md §3). The
+ * team feeds miss these because neither side is an Atlanta home team, so they are hand-listed
+ * (Kylie, Oct 7, 2026). Sized by the stadium's expanded setup, which these games sell
+ * (75,000 official; the read caps at the 71,000 football setup). Dates and kickoffs as announced.
+ */
+const neutralFootball = (id: string, date: string, start: string | null, title: string, note: string): CrowdEvent => ({
+  id: `${date}-${id}`,
+  metroId: 'atlanta',
+  date,
+  start,
+  kind: 'game',
+  title,
+  place: { type: 'venue', venueId: 'mercedes-benz-stadium' },
+  audience: { domain: 'sports', sport: 'football' },
+  crowd: [],
+  expectedDraw: { count: 75000, note: `Expanded setup, official (75,000); ${note} An estimate.` },
+  sourceId: SOURCE_ID,
+});
+
 export const LISTINGS_2026_EVENTS: CrowdEvent[] = [
   comicConDay('2026-10-08', 1),
   comicConDay('2026-10-09', 2),
   comicConDay('2026-10-10', 3),
   comicConDay('2026-10-11', 4),
+  neutralFootball('florida-georgia', '2026-10-31', '15:30', 'Florida vs. Georgia (neutral site)', 'a one-year move from Jacksonville.'),
+  neutralFootball('sec-championship', '2026-12-05', '16:00', 'SEC Championship', 'the title game has sold out every year here.'),
+  neutralFootball('celebration-bowl', '2026-12-12', '12:00', 'Celebration Bowl', 'MEAC vs. SWAC champions.'),
+  neutralFootball('peach-bowl', '2027-01-01', null, 'Peach Bowl (CFP quarterfinal)', 'kickoff not yet announced.'),
 ];
