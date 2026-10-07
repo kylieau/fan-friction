@@ -190,6 +190,15 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/expected-draw-decisions-oct7.md
 - **Ballparks and stadiums with no concert figure** take 57% of their listed size. Petco Park is the worst case: Ticketmaster lists Gallagher Square park-stage shows (Taking Back Sunday, Geese) as "Petco Park", so they read ~22,700 when the stage holds a fraction of that. Needs a Gallagher Square venue row (or a Ticketmaster venue-name split) with a sourced capacity; the concert research found no stadium concert figures for Petco, Dodger Stadium, SoFi, Angel Stadium, Yankee Stadium, Citi Field, Lumen (one show only), T-Mobile Park.
 - **A Ticketmaster listing that is a sport but not in a league feed** (San Diego Toreros women's volleyball at Jenny Craig Pavilion, 5,100) now sits under the floor by the small-room rule; a larger such room would still read full. Check the segment classification when one shows up.
 
+## Bay Area is covered (Oct 7) — follow-ons
+- **Nov 3, 2026, Prop RTM:** re-check `docs/bay-area-city-type-answer.md` §5 and every Bay Area `carShare` after the vote.
+- **Oakland Coliseum goes dark in 2027** (the Roots' last match Oct 10, 2026); the Roots' 2027 home and Oak View Group's Oakland Arena plans may add or change rows.
+- **Levi's Stadium:** the 49ers announce ~71,500 against a listed 68,500; find a confirmed 49ers capacity.
+- **Valkyries games carry no estimate** (two seasons, every home game a sellout at 18,064; playoff rows keep the building). Fine for now: a counted crowd lands after each game.
+- **Open sites with big crowds** (Outside Lands ~75,000/day, Hardly Strictly, Dreamforce ~40,000/day, Fleet Week, Bay to Breakers, Pride): hand-list as point events when a date and a sourced figure exist, as Comic Con was.
+- **War Memorial (USF)** 5,300 vs 3,005: under the floor until USF confirms. **Raimondi Park** may pass 5,000 if the Ballers add the Coliseum bleachers.
+- The hard-access rule flags Cow Palace, Concord and Haas and misses Shoreline, Memorial and the Greek (the research's reads). Not tuned; see the checklist's fifth-run lessons.
+
 ## Team schedules (built Oct 7) — follow-ons
 - **Kylie runs `supabase/migrations/0010_team_schedules.sql`**; until then ESPN teams' pages say "No schedule yet" (the job logs a warning and skips the table) and only MLB clubs show a schedule, read live.
 - A favorite that is not a team in the feeds (an artist, UCLA men's volleyball) says "No schedule yet." Programs join as their city is built out; the intent is every city eventually (Kylie, Oct 7).
