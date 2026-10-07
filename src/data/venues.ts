@@ -97,7 +97,10 @@ export const VENUES: Record<string, Venue> = {
     strained: true,
     names: [{ name: 'Rose Bowl' }],
     location: [-118.1676, 34.1613],
-    capacity: [{ seats: 89702, note: 'The stadium\'s all-seated figure. UCLA reports 91,136; aggregators say 92,542.' }],
+    capacity: [
+      { seats: 89702, note: 'The stadium\'s all-seated figure. UCLA reports 91,136; aggregators say 92,542.' },
+      { seats: 60000, setup: 'concert', note: 'Estimated: the City of Pasadena\'s expected crowd per Live Nation concert (Jan 18, 2023 agenda), docs/concert-venue-figures-answer.md.' },
+    ],
     roof: 'open',
   },
   'dignity-health-sports-park': {
@@ -521,7 +524,7 @@ export const VENUES: Record<string, Venue> = {
       { seats: 16592, setup: 'hockey', fromYear: 2013, note: 'Official' },
       { seats: 16514, setup: 'hockey', fromYear: 2015, note: 'Official' },
       { seats: 18711, setup: 'basketball', note: 'Official (Seton Hall)' },
-      { seats: 17500, setup: 'concert', note: 'Reported, end-stage; 19,500 also listed, unresolved' },
+      { seats: 19500, setup: 'concert', note: 'Venue: "up to 19,500 fans for concerts" (via Pollstar, Jul 2026); record 19,151 for Zach Bryan, Mar 15, 2024. Was 17,500 here until Oct 7, 2026 (docs/concert-venue-figures-answer.md).' },
     ],
     roof: 'indoor',
   },
@@ -939,6 +942,7 @@ export const VENUES: Record<string, Venue> = {
     capacity: [
       { seats: 68740, setup: 'football', note: 'Seahawks (official); expandable to 72,000 for the biggest events' },
       { seats: 37722, setup: 'soccer', note: 'Sounders setup (MLS). The Reign open about 10,000 lower-bowl seats (reported).' },
+      { seats: 51556, setup: 'concert', note: 'Reported: the sold-out count for The Weeknd, Aug 25, 2022 (Pollstar), the one end-stage figure found (docs/concert-venue-figures-answer.md).' },
     ],
     // Roof over about 70% of seats; the field is open (the research's reading). Called "Seattle Stadium" for the 2026 World Cup.
     roof: 'covered',

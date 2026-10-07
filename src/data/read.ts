@@ -88,7 +88,9 @@ function knownSize(event: CrowdEvent): number | undefined {
   const counted = knownCrowdCount(event);
   if (counted != null) return counted;
   const draw = event.expectedDraw;
-  if (draw) return draw.low ?? draw.count;
+  // A show's estimate sizes its pull, not the gate: the room decides until venue
+  // averages exist for most covered rooms (Kylie, Oct 7, C1).
+  if (draw && event.audience.domain === 'sports') return draw.low ?? draw.count;
   return listedCapacity(event);
 }
 
