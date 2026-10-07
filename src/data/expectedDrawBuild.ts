@@ -46,6 +46,13 @@ export const POST_TEAM_MIN = 3;
 export const POST_POOL_MIN = { games: 20, teams: 4, seasons: 2 };
 /** The range: 10th–90th percentile with this many games, else min–max; then widened by this share of capacity. */
 export const POST_PERCENTILE_MIN = 20;
+/**
+ * Leagues whose league pool spans every round (Kylie, Oct 7, 2026, for the WNBA and MLS): the playoff
+ * sample is too small per band, so the pool is "any round", labeled as such. A team's own rows stay by
+ * band. The check (docs/postseason-check.md) passed for MLS (4.4% vs 7.7% by the building) and failed for
+ * the WNBA (25.1% vs 0.4% on six games, all sellouts), so the WNBA is held back pending Kylie's word.
+ */
+export const ANY_ROUND_POOL = new Set(['MLS']);
 export const POST_ALLOWANCE = 0.05;
 
 /**
@@ -117,7 +124,7 @@ export function buildPostseasonRows(teams: PostseasonTeam[], throughSeason = Inf
       if (!band || !cap) continue;
       const occ = { teamId: team.teamId, venueId: g.venueId, season: g.season, occ: g.attendance / cap };
       occs.push({ ...occ, venueId: `${band}|${g.venueId}` });
-      const key = `${team.league}|${band}`;
+      const key = `${team.league}|${ANY_ROUND_POOL.has(team.league) ? 'any' : band}`;
       if (!byLeagueBand.has(key)) byLeagueBand.set(key, []);
       byLeagueBand.get(key)!.push(occ);
     }
@@ -138,7 +145,8 @@ export function buildPostseasonRows(teams: PostseasonTeam[], throughSeason = Inf
       for (const venueId of home) {
         const mine = occs.filter((o) => o.venueId === `${band}|${venueId}`);
         const mineSeasons = new Set(mine.map((o) => o.season));
-        const pool = byLeagueBand.get(`${team.league}|${band}`) ?? [];
+        const anyRound = ANY_ROUND_POOL.has(team.league);
+        const pool = byLeagueBand.get(`${team.league}|${anyRound ? 'any' : band}`) ?? [];
         const poolOk = pool.length >= POST_POOL_MIN.games && new Set(pool.map((o) => o.teamId)).size >= POST_POOL_MIN.teams && new Set(pool.map((o) => o.season)).size >= POST_POOL_MIN.seasons;
         let occupancy: number, low: number, high: number, basis: PostseasonRow['basis'], games: number, seasonsText: string;
         if (mine.length >= POST_TEAM_FULL && mineSeasons.size >= 2) {
@@ -148,10 +156,10 @@ export function buildPostseasonRows(teams: PostseasonTeam[], throughSeason = Inf
           const w = mine.length / POST_TEAM_FULL;
           occupancy = w * med(mine.map((o) => o.occ)) + (1 - w) * med(pool.map((o) => o.occ));
           [low, high] = rangeOf([...mine, ...pool].map((o) => o.occ)); basis = 'blend'; games = mine.length + pool.length;
-          seasonsText = `${[...mineSeasons].sort().join(', ')} + league`;
+          seasonsText = `${[...mineSeasons].sort().join(', ')} + league${anyRound ? ', any round' : ''}`;
         } else if (poolOk) {
           occupancy = med(pool.map((o) => o.occ)); [low, high] = rangeOf(pool.map((o) => o.occ)); basis = 'league'; games = pool.length;
-          seasonsText = `league, ${[...new Set(pool.map((o) => o.season))].sort().join(', ')}`;
+          seasonsText = `league${anyRound ? ', any round' : ''}, ${[...new Set(pool.map((o) => o.season))].sort().join(', ')}`;
         } else continue;
         void bands;
         rows.push({ metroId: team.metroId, teamId: team.teamId, venueId, band, occupancy, low, high, games, seasons: seasonsText, basis });
