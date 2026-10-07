@@ -2315,6 +2315,528 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2024,2025,2026"
   },
   {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "all",
+    "month": null,
+    "count": 34944,
+    "games": 249,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 33764,
+    "games": 126,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 28746,
+    "games": 24,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 34021,
+    "games": 21,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 38302,
+    "games": 19,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 34840,
+    "games": 18,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 34225,
+    "games": 25,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 29400,
+    "games": 17,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "friday",
+    "month": null,
+    "count": 37805,
+    "games": 40,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 34434,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 34447,
+    "games": 8,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 33207,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 37588,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 39736,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 39484,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 38572,
+    "games": 42,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 38777,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 39995,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 37704,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 35149,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 39859,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 41102,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 36501,
+    "games": 41,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 33223,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 39995,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 42169,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 33861,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 34469,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 39034,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "all",
+    "month": null,
+    "count": 42038,
+    "games": 244,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 39681,
+    "games": 123,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 37782,
+    "games": 20,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 38095,
+    "games": 23,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 41380,
+    "games": 19,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 43384,
+    "games": 20,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 38740,
+    "games": 19,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 38035,
+    "games": 20,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "friday",
+    "month": null,
+    "count": 46007,
+    "games": 39,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 40032,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 46078,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 46192,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 46673,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 44725,
+    "games": 8,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 43187,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 45017,
+    "games": 41,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 42250,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 44866,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 46061,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 44953,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 41725,
+    "games": 8,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 45596,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 43946,
+    "games": 41,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 40022,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 42733,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 46064,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 45214,
+    "games": 6,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 44237,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 43266,
+    "games": 7,
+    "seasons": "2023,2024,2025"
+  },
+  {
     "metroId": "san-diego",
     "teamId": "padres",
     "dayClass": "all",
@@ -2995,8 +3517,8 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "all",
     "month": null,
     "count": 17151,
-    "games": 123,
-    "seasons": "2024,2025,2026"
+    "games": 124,
+    "seasons": "2024,2025,2026,2026"
   },
   {
     "metroId": "seattle",
@@ -3148,8 +3670,8 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "sunday",
     "month": null,
     "count": 17151,
-    "games": 11,
-    "seasons": "2024,2025,2026"
+    "games": 12,
+    "seasons": "2024,2025,2026,2026"
   },
   {
     "metroId": "seattle",
@@ -3552,9 +4074,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "teamId": "seahawks",
     "dayClass": "all",
     "month": null,
-    "count": 68723,
-    "games": 25,
-    "seasons": "2023,2024,2025"
+    "count": 68722,
+    "games": 26,
+    "seasons": "2023,2024,2025,2026"
   },
   {
     "metroId": "seattle",
@@ -3570,9 +4092,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "teamId": "seahawks",
     "dayClass": "sunday",
     "month": null,
-    "count": 68722,
-    "games": 20,
-    "seasons": "2023,2024,2025"
+    "count": 68721,
+    "games": 21,
+    "seasons": "2023,2024,2025,2026"
   },
   {
     "metroId": "seattle",
@@ -3588,9 +4110,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "teamId": "seahawks",
     "dayClass": "sunday",
     "month": 10,
-    "count": 68781,
-    "games": 5,
-    "seasons": "2023,2024,2025"
+    "count": 68743,
+    "games": 6,
+    "seasons": "2023,2024,2025,2026"
   },
   {
     "metroId": "seattle",

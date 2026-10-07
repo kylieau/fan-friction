@@ -542,7 +542,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.45,
     // ESPN says "Lawrence A. Wien Stadium"; the field is Robert K. Kraft Field.
     names: [{ name: 'Lawrence A. Wien Stadium' }, { name: 'Robert K. Kraft Field at Lawrence A. Wien Stadium' }],
-    location: [-73.9149, 40.8722],
+    location: [-73.9165, 40.8732],
     capacity: [{ seats: 17000, setup: 'football', note: 'Official (Columbia)' }],
     roof: 'open',
   },
@@ -591,7 +591,7 @@ export const VENUES: Record<string, Venue> = {
     // Estimated: no parking at the venue or on nearby streets; the venue tells fans not to drive.
     carShare: 0.15,
     names: [{ name: 'Forest Hills Stadium' }],
-    location: [-73.8481, 40.7197],
+    location: [-73.8502, 40.7197],
     capacity: [{ seats: 14000, setup: 'concert', note: 'Reported; some guides say up to 16,000' }],
     roof: 'open',
   },
@@ -600,7 +600,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'new-york',
     carShare: 0.37,
     names: [{ name: 'Louis Armstrong Stadium' }],
-    location: [-73.8466, 40.7484],
+    location: [-73.8454, 40.751],
     capacity: [{ seats: 14000, fromYear: 2018, note: 'Reported; rebuilt 2018. 14,069 could not be confirmed.' }],
     // Retractable.
     roof: 'covered',
@@ -611,7 +611,7 @@ export const VENUES: Record<string, Venue> = {
     // Estimated, nearest comparable UBS Arena's non-Islanders events: Suffolk County, campus lots, no rail at the gate.
     carShare: 0.9,
     names: [{ name: 'Kenneth P. LaValle Stadium' }],
-    location: [-73.124, 40.917],
+    location: [-73.1237, 40.9188],
     capacity: [
       { seats: 10300, setup: 'football', note: 'Official, 2002–2016' },
       { seats: 12300, setup: 'football', fromYear: 2017, note: 'Official; 10,300 seats plus 2,000 standing' },
@@ -751,7 +751,7 @@ export const VENUES: Record<string, Venue> = {
     // Estimated: five minutes from White Plains Metro-North, 700+ county spaces next door.
     carShare: 0.85,
     names: [{ name: 'Westchester County Center' }],
-    location: [-73.7704, 41.0296],
+    location: [-73.7788, 41.0371],
     // On the floor: 5,000 is the usual figure; Bandsintown lists 4,264.
     capacity: [{ seats: 5000, note: 'Reported; 4,264 also listed' }],
     roof: 'indoor',
