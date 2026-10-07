@@ -58,3 +58,24 @@ Claude's proposal in reply (not locked):
 - **Map cards show the expected draw** (Kylie, Oct 7), approved as a Map change.
 - **A team's estimate may sit above the listed seats when its announced crowds do** (Kylie, Oct 7; the Lakers announce 18,997 against 18,910 seats).
 - She ran `supabase/migrations/0009_expected_draws_by_venue.sql` (Oct 7).
+
+## Round 2: promotions by kind and top teams (pre-registered Oct 7, before the run)
+Kylie, Oct 7: specific promos spike crowds (Hello Kitty, anime, Ohtani bobbleheads, World Series items, franchise players, crossovers), and standings matter for top teams, home and visiting, over longer stretches, not across the board. She approved this round. A quick look (not the test) agreed: Mariners Hello Kitty Night +30%, Judge MVP bobblehead +21%, Ohtani bobbleheads +14–15%, Naruto Night +13%. The first run missed it because it lumped every giveaway together, scored only across all games (two dozen big nights can't move a median of 977), and full buildings cap the lift.
+
+Written down before the run. MLB only (its feed lists promotions); every source is MLB's free feed.
+
+**Promotions, by kind** (matched on MLB's promotion name; a game takes every kind it matches):
+- *crossover*: hello kitty, sanrio, anime, naruto, one piece, dragon ball, pokémon, star wars, marvel, disney, peanuts/snoopy, sesame, mario/nintendo, jujutsu, demon slayer, my hero, attack on titan, gundam, sailor moon, squishmallow, care bears, barbie, transformers, harry potter, lego.
+- *star*: a giveaway naming, in full, a player who was an All-Star or MVP the season before (MLB's award lists).
+- *special ticket*: "special event ticket", "ticket required", "theme ticket", "ticket package".
+- *championship*: world series, champion, ring, trophy.
+- *fireworks*, *other giveaway*, *discount* (a ticket offer).
+- Each kind's lift is pooled across the six MLB teams on file, from earlier seasons only: median log(announced ÷ baseline) on its games minus the same on games with no promotion, shrunk n ÷ (n + 3).
+- **A repeat of the same promotion** (same name once numbers like "#2", "Part 2" and years are removed) at the same team uses its own earlier lift instead, shrunk n ÷ (n + 1).
+
+**Top teams:**
+- *Home top team* / *visiting top team*: in the top 3 of its league (AL or NL) by record going in, once 30 games are played; before that, top 3 of its league at the end of last season.
+- *Reigning champion*, home or visiting: won last season's World Series.
+- Each flag's lift is pooled across MLB teams from earlier seasons, the same way as promotions (shrunk n ÷ (n + 3)).
+
+**Scored** against the app's current rule (baseline + season level + opponent ratio): overall, and on the games each flag touches. A kind or flag stays only if it improves the games it touches without making MLB worse overall.
