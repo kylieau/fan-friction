@@ -99,3 +99,12 @@ Written down before the run. MLB only (its feed lists promotions); every source 
 - Boundary: the 11-county core, as researched. City type **driving**. Neutral-site football at Mercedes-Benz Stadium is hand-listed (`listings2026.ts`); festival parks and the Georgia World Congress Center are not venue rows (events sized by their own crowds); Dragon Con is not sized (passes, not person-days); Dream games at Gateway Center (3,500) are under the floor.
 - The tester's Canadiens night (May 25, 2026) is hand-seeded when Montreal is built, not before (Kylie, Oct 7).
 - Concert-sizing gaps and the distance discount: both approved to proceed; the discount as a proposal first.
+
+### Round 2, rerun with Kylie's promotion research (Oct 7)
+`docs/promo-history-rows.csv` (971 rows, her research) is folded into the six MLB teams' attendance files for 2021–2024 by `scripts/promo-history-fold.mjs`, so the check now learns promotion lifts from four seasons instead of one. Same pre-registered definitions, same scoring. **The result flipped:**
+- **Crossover nights pass** (Hello Kitty, Star Wars, anime, Peanuts…): their games 7.0% → 6.5% median off, all MLB 6.6% → 6.5%.
+- **Star-player giveaways pass** (an item naming an All-Star or MVP of the season before): 4.9% → 4.2% on their games, MLB unchanged.
+- **Special-ticket nights no longer pass** (15.6% → 16.4%); with one season they had, which was the small-sample flattery the first run warned about.
+- Championship items, fireworks, discounts, other giveaways, repeat promotions and all four top-team flags still do not pass.
+- Caveat the research itself gives: several team-seasons are partial (Angels 2022, Padres 2021, the 2021 seasons generally), so some real promo nights sit in the "no promotion" pile and dilute every lift. The 2021 rows have no attendance file to land on (the files start at 2022).
+- **Next:** crossover and star-player lifts go into the app's MLB estimate when the 2027 listings carry promotions (MLB's feed names them); special-ticket nights do not, pending another season.
