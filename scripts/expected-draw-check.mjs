@@ -16,7 +16,7 @@
 // The constants below were set Oct 7, 2026, before the first run, and are not
 // changed to improve the score. If they change, the next season is the new test.
 
-import { writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createServer } from 'vite';
@@ -255,6 +255,46 @@ try {
   if (pre.length) {
     const ms = STEPS.slice(0, 3).map((s) => metrics(pre, s));
     say(`${pre.length} games. Median % off: ${STEPS.slice(0, 3).map((s, i) => `${s} ${pct(ms[i].mdape)}`).join(', ')}.`);
+  }
+
+  // Saved ahead: the estimate each nightly listing carried the day before a game
+  // (the latest capture before its date), against the crowd announced after it.
+  // The honest test, because nothing here was seen when the rule was set.
+  say();
+  say('## Saved ahead');
+  say();
+  const ahead = [];
+  for (const metroId of await readdir(path.join(root, 'data', 'schedule-archive')).catch(() => [])) {
+    const dir = path.join(root, 'data', 'schedule-archive', metroId);
+    const files = (await readdir(dir).catch(() => [])).filter((f) => f.endsWith('.json')).sort();
+    const latest = new Map();
+    for (const f of files) {
+      const snap = JSON.parse(await readFile(path.join(dir, f), 'utf8'));
+      for (const e of snap.events ?? []) {
+        if (e.expectedDraw && snap.capturedOn < e.date) latest.set(e.id, { e, capturedOn: snap.capturedOn });
+      }
+    }
+    const resultsDir = path.join(root, 'data', 'results', metroId);
+    for (const f of (await readdir(resultsDir).catch(() => [])).filter((f) => f.endsWith('.json'))) {
+      for (const r of JSON.parse(await readFile(path.join(resultsDir, f), 'utf8')).results ?? []) {
+        const saved = latest.get(r.eventId);
+        if (saved && r.attendance) ahead.push({ league: TEAMS[r.homeTeamId]?.league ?? 'Other', actual: r.attendance, est: saved.e.expectedDraw });
+      }
+    }
+  }
+  if (ahead.length === 0) {
+    say('No game has both a saved estimate and an announced crowd yet. Estimates are saved from Oct 7, 2026.');
+  } else {
+    say('| League | Games | Median % off | Bias | Inside the range |');
+    say('|---|---|---|---|---|');
+    for (const lg of [...new Set(ahead.map((a) => a.league))].sort().concat('All')) {
+      const set = ahead.filter((a) => lg === 'All' || a.league === lg);
+      const ape = median(set.map((a) => Math.abs(a.est.count - a.actual) / a.actual));
+      const bias = set.reduce((x, a) => x + (a.est.count - a.actual) / a.actual, 0) / set.length;
+      const ranged = set.filter((a) => a.est.low != null);
+      const inside = ranged.length ? pct(ranged.filter((a) => a.actual >= a.est.low && a.actual <= a.est.high).length / ranged.length) : '—';
+      say(`| ${lg} | ${set.length} | ${pct(ape)} | ${bias >= 0 ? '+' : '−'}${pct(Math.abs(bias))} | ${inside} |`);
+    }
   }
 
   await writeFile(path.join(root, 'docs', 'expected-draw-check.md'), `${lines.join('\n')}\n`);

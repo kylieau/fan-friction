@@ -55,3 +55,7 @@ Range: how often the announced crowd landed inside the middle half (about half s
 ## Preseason only
 
 62 games. Median % off: capacity 10.5%, old 10.5%, baseline 4.6%.
+
+## Saved ahead
+
+No game has both a saved estimate and an announced crowd yet. Estimates are saved from Oct 7, 2026.
