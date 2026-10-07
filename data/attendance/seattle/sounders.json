@@ -387,6 +387,9 @@
       "venueId": "lumen-field",
       "attendance": 30741,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Round One - Game 1",
+      "game": 1,
       "sourceId": "espn"
     },
     {
@@ -398,6 +401,9 @@
       "venueId": "lumen-field",
       "attendance": 33048,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Round One - Game 3",
+      "game": 3,
       "sourceId": "espn"
     },
     {
@@ -409,6 +415,8 @@
       "venueId": "lumen-field",
       "attendance": 33649,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Semifinals",
       "sourceId": "espn"
     },
     {
@@ -607,6 +615,9 @@
       "venueId": "lumen-field",
       "attendance": 30026,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Round One - Game 1, SEA wins 5-4 on penalties",
+      "game": 1,
       "sourceId": "espn"
     },
     {
@@ -805,6 +816,9 @@
       "venueId": "lumen-field",
       "attendance": 30085,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Round One - Game 2",
+      "game": 2,
       "sourceId": "espn"
     }
   ]

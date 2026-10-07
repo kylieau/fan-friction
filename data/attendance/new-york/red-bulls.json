@@ -200,6 +200,8 @@
       "venueId": "sports-illustrated-stadium",
       "attendance": 17113,
       "kind": "announced",
+      "postseason": true,
+      "round": "Eastern Conference Playoffs - First Round",
       "sourceId": "espn"
     },
     {
@@ -398,6 +400,8 @@
       "venueId": "sports-illustrated-stadium",
       "attendance": 16074,
       "kind": "announced",
+      "postseason": true,
+      "round": "Eastern Conference Playoffs - Wild Card",
       "sourceId": "espn"
     },
     {
@@ -409,6 +413,9 @@
       "venueId": "sports-illustrated-stadium",
       "attendance": 20044,
       "kind": "announced",
+      "postseason": true,
+      "round": "Eastern Conference Playoffs - Round One - Game 2, CIN wins 8-7 on penalties",
+      "game": 2,
       "sourceId": "espn"
     },
     {
@@ -607,6 +614,9 @@
       "venueId": "sports-illustrated-stadium",
       "attendance": 20936,
       "kind": "announced",
+      "postseason": true,
+      "round": "Eastern Conference Playoffs - Round One - Game 2, RBNY wins 5-4 on penalties",
+      "game": 2,
       "sourceId": "espn"
     },
     {

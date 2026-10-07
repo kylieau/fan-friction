@@ -22,9 +22,9 @@ const HEADER = `// Expected draws from past seasons' announced crowds.
 // one kind of date (src/data/expectedDrawBuild.ts), with the middle half of
 // those games as the range. Always an estimate; the building stays the ceiling.
 
-import type { ExpectedDrawRow, OpponentRatioRow, SeasonLevelRow } from './expectedDrawBuild';
+import type { ExpectedDrawRow, OpponentRatioRow, PostseasonRow, SeasonLevelRow } from './expectedDrawBuild';
 
-export type { DayClass, ExpectedDrawRow, OpponentRatioRow, SeasonLevelRow } from './expectedDrawBuild';
+export type { DayClass, ExpectedDrawRow, OpponentRatioRow, PostseasonRow, SeasonLevelRow } from './expectedDrawBuild';
 
 export const EXPECTED_DRAWS: ExpectedDrawRow[] = `;
 
@@ -71,12 +71,14 @@ async function thisSeasonGames(root, metroId) {
   return games;
 }
 
-export async function calibrate(root, build, teams = {}) {
+export async function calibrate(root, build, teams = {}, venues = {}) {
+  const { VENUES = {}, capacityOn = () => undefined } = venues;
   const rows = [];
+  const teamsOnFile = await loadAttendance(root);
   const levels = [];
   const opponents = [];
   const seasonGames = new Map();
-  for (const t of await loadAttendance(root)) {
+  for (const t of teamsOnFile) {
     const league = teams[t.teamId]?.league;
     const opts = build.optionsFor(league);
     const teamRows = build.buildDrawRows(t.metroId, t.teamId, t.games, opts);
@@ -106,13 +108,21 @@ export async function calibrate(root, build, teams = {}) {
       if (op) opponents.push({ metroId: t.metroId, teamId: t.teamId, opponent: key, ratio: Math.round(op.ratio * 1000) / 1000, games: op.games });
     }
   }
+  // Playoff rows (docs/postseason-estimate-proposal.md): occupancy per team, building and round band.
+  const postTeams = teamsOnFile.map((t) => {
+    const sport = teams[t.teamId]?.sport;
+    return { metroId: t.metroId, teamId: t.teamId, league: teams[t.teamId]?.league ?? 'Other', games: t.games, capacityOn: (venueId, date) => (VENUES[venueId] ? capacityOn(VENUES[venueId], date, sport) ?? capacityOn(VENUES[venueId], date) : undefined) };
+  });
+  const postseason = build.buildPostseasonRows(postTeams).map((r) => ({ ...r, occupancy: Math.round(r.occupancy * 1000) / 1000, low: Math.round(r.low * 1000) / 1000, high: Math.round(r.high * 1000) / 1000 }));
   const out = path.join(root, 'src', 'data', 'expectedDrawIndex.ts');
   const next =
     `${HEADER}${JSON.stringify(rows, null, 2)};\n\n` +
     `/** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */\n` +
     `export const SEASON_LEVELS: SeasonLevelRow[] = ${JSON.stringify(levels, null, 2)};\n\n` +
     `/** How each opponent has drawn at each team's games (expectedDrawBuild.ts opponentRatio). */\n` +
-    `export const OPPONENT_RATIOS: OpponentRatioRow[] = ${JSON.stringify(opponents, null, 2)};\n`;
+    `export const OPPONENT_RATIOS: OpponentRatioRow[] = ${JSON.stringify(opponents, null, 2)};\n\n` +
+    `/** Playoff occupancy per team, building and round band (expectedDrawBuild.ts buildPostseasonRows). */\n` +
+    `export const POSTSEASON_DRAWS: PostseasonRow[] = ${JSON.stringify(postseason, null, 2)};\n`;
   let current = '';
   try {
     current = await readFile(out, 'utf8');
@@ -129,7 +139,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   try {
     const build = await server.ssrLoadModule('/src/data/expectedDrawBuild.ts');
     const { TEAMS } = await server.ssrLoadModule('/src/data/teams.ts');
-    const r = await calibrate(root, build, TEAMS);
+    const venues = await server.ssrLoadModule('/src/data/venues.ts');
+    const r = await calibrate(root, build, TEAMS, venues);
     console.log(r.changed ? `Updated ${r.relative} (${r.count} rows, ${r.levels.length} season levels, ${r.opponents.length} opponent ratios).` : `No change in ${r.relative}.`);
     for (const row of r.rows.filter((row) => row.dayClass === 'all')) {
       console.log(`  ${row.teamId.padEnd(20)} ${row.venueId.padEnd(28)} median ${String(row.count).padStart(6)} (${row.low}–${row.high}) over ${row.games} games (${row.seasons})`);

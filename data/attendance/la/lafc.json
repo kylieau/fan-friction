@@ -200,6 +200,8 @@
       "venueId": "bmo-stadium",
       "attendance": 22305,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Semifinals",
       "sourceId": "espn"
     },
     {
@@ -211,6 +213,8 @@
       "venueId": "bmo-stadium",
       "attendance": 22175,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Final",
       "sourceId": "espn"
     },
     {
@@ -222,6 +226,8 @@
       "venueId": "bmo-stadium",
       "attendance": 22384,
       "kind": "announced",
+      "postseason": true,
+      "round": "MLS Cup - LAFC win 3-0 on penalties",
       "sourceId": "espn"
     },
     {
@@ -420,6 +426,9 @@
       "venueId": "bmo-stadium",
       "attendance": 22002,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Round One - Game 1",
+      "game": 1,
       "sourceId": "espn"
     },
     {
@@ -431,6 +440,8 @@
       "venueId": "bmo-stadium",
       "attendance": 22221,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Final",
       "sourceId": "espn"
     },
     {
@@ -629,6 +640,9 @@
       "venueId": "bmo-stadium",
       "attendance": 22298,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Round One - Game 1",
+      "game": 1,
       "sourceId": "espn"
     },
     {
@@ -640,6 +654,9 @@
       "venueId": "bmo-stadium",
       "attendance": 22220,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Round One - Game 3",
+      "game": 3,
       "sourceId": "espn"
     },
     {
@@ -651,6 +668,8 @@
       "venueId": "bmo-stadium",
       "attendance": 22301,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Semifinals",
       "sourceId": "espn"
     },
     {
@@ -849,6 +868,9 @@
       "venueId": "bmo-stadium",
       "attendance": 22142,
       "kind": "announced",
+      "postseason": true,
+      "round": "Western Conference Playoffs - Round One - Game 1",
+      "game": 1,
       "sourceId": "espn"
     }
   ]

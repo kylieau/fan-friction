@@ -171,6 +171,19 @@
     },
     {
       "teamId": "ucla-wbb",
+      "season": 2023,
+      "date": "2023-03-20",
+      "start": "19:00",
+      "opponent": "Oklahoma",
+      "venueId": "pauley-pavilion",
+      "attendance": 3872,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship pres. by Capital One - Greenville Regional 1 - 2nd Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-wbb",
       "season": 2024,
       "date": "2023-11-06",
       "start": "17:30",
@@ -325,6 +338,32 @@
     },
     {
       "teamId": "ucla-wbb",
+      "season": 2024,
+      "date": "2024-03-23",
+      "start": "18:30",
+      "opponent": "CA Baptist",
+      "venueId": "pauley-pavilion",
+      "attendance": 8841,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 2 in Albany - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-wbb",
+      "season": 2024,
+      "date": "2024-03-25",
+      "start": "17:30",
+      "opponent": "Creighton",
+      "venueId": "pauley-pavilion",
+      "attendance": 7839,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 2 in Albany - 2nd Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-wbb",
       "season": 2025,
       "date": "2024-11-10",
       "start": "14:00",
@@ -375,6 +414,17 @@
       "opponent": "Cal Poly",
       "venueId": "pauley-pavilion",
       "attendance": 2356,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-wbb",
+      "season": 2025,
+      "date": "2024-12-20",
+      "start": "20:00",
+      "opponent": "Creighton",
+      "venueId": "chase-center",
+      "attendance": 3766,
       "kind": "announced",
       "sourceId": "espn"
     },
@@ -453,6 +503,32 @@
       "venueId": "pauley-pavilion",
       "attendance": 13659,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-wbb",
+      "season": 2025,
+      "date": "2025-03-21",
+      "start": "19:00",
+      "opponent": "Southern",
+      "venueId": "pauley-pavilion",
+      "attendance": 5703,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 1 in Spokane - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-wbb",
+      "season": 2025,
+      "date": "2025-03-23",
+      "start": "19:00",
+      "opponent": "Richmond",
+      "venueId": "pauley-pavilion",
+      "attendance": 6119,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 1 in Spokane - 2nd Round",
       "sourceId": "espn"
     },
     {
@@ -607,6 +683,32 @@
       "venueId": "pauley-pavilion",
       "attendance": 5421,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-wbb",
+      "season": 2026,
+      "date": "2026-03-21",
+      "start": "19:00",
+      "opponent": "CA Baptist",
+      "venueId": "pauley-pavilion",
+      "attendance": 7250,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Basketball Championship - Regional 2 in Sacramento - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-wbb",
+      "season": 2026,
+      "date": "2026-03-23",
+      "start": "19:00",
+      "opponent": "Oklahoma St",
+      "venueId": "pauley-pavilion",
+      "attendance": 6114,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Basketball Championship - Regional 2 in Sacramento - 2nd Round",
       "sourceId": "espn"
     }
   ]

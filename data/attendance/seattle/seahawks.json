@@ -449,6 +449,32 @@
       "attendance": 68853,
       "kind": "announced",
       "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2026-01-17",
+      "start": "17:00",
+      "opponent": "49ers",
+      "venueId": "lumen-field",
+      "attendance": 68579,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NFC Divisional Playoffs",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2025,
+      "date": "2026-01-25",
+      "start": "15:30",
+      "opponent": "Rams",
+      "venueId": "lumen-field",
+      "attendance": 68773,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NFC Championship",
+      "sourceId": "espn"
     }
   ]
 }

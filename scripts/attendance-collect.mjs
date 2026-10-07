@@ -235,6 +235,7 @@ async function collectMlb(team) {
           attendance: att,
           kind: 'announced',
           postseason: g.gameType !== 'R' || undefined,
+          ...(g.gameType !== 'R' ? { round: g.seriesDescription ?? g.description ?? g.gameType, ...(g.seriesGameNumber ? { game: g.seriesGameNumber } : {}) } : {}),
           recordBefore: recordBefore.get(g.gamePk),
           // MLB's own list for the game: giveaways, ticket offers, fireworks and other highlights.
           promotions: (g.promotions ?? []).map((p) => ({ type: p.offerType, name: p.name })),
@@ -258,18 +259,33 @@ async function collectEspn(team) {
   for (const season of team.seasons) {
     const q = team.seasontype ? `?season=${season}&seasontype=${team.seasontype}` : `?season=${season}`;
     const json = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${team.path}/teams/${team.espnId}/schedule${q}`);
-    const events = (json.events ?? []).map((e) => ({ e, preseason: false }));
+    const events = (json.events ?? []).map((e) => ({ e, preseason: false, postseason: false }));
+    if (team.seasontype) {
+      // Playoff games (docs/postseason-estimate-proposal.md, Kylie's OK Oct 7): the same feed, season type 3.
+      try {
+        const post = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${team.path}/teams/${team.espnId}/schedule?season=${season}&seasontype=3`);
+        events.push(...(post.events ?? []).map((e) => ({ e, preseason: false, postseason: true })));
+      } catch {
+        /* no postseason listed that year */
+      }
+    }
     if (team.seasontype && HAS_PRESEASON.test(team.path)) {
       try {
         const pre = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${team.path}/teams/${team.espnId}/schedule?season=${season}&seasontype=1`);
-        events.push(...(pre.events ?? []).map((e) => ({ e, preseason: true })));
+        events.push(...(pre.events ?? []).map((e) => ({ e, preseason: true, postseason: false })));
       } catch {
         /* no preseason listed that year */
       }
     }
     let kept = 0;
-    for (const { e, preseason } of events) {
+    for (const { e, preseason, postseason: fromPost } of events) {
       const c = e.competitions?.[0];
+      // Soccer lists its playoffs in the one schedule, under their own season-type names.
+      const typeName = e.seasonType?.name ?? '';
+      const postseason = fromPost || (!team.seasontype && typeName && !/regular season|preseason/i.test(typeName) && !/^\d+$/.test(typeName));
+      const headline = (c?.notes ?? []).find((n) => n.headline)?.headline?.trim() ?? '';
+      const roundName = postseason ? (team.seasontype ? headline || typeName || 'Postseason' : [typeName, headline].filter(Boolean).join(' - ') || 'Postseason').replace(/\s+if necessary$/i, '') : undefined;
+      const gameNo = postseason ? Number((headline.match(/\bGame\s+(\d+)\b/i) ?? [])[1]) || c?.gameNumberOfSeries || undefined : undefined;
       // Soccer says STATUS_FULL_TIME; everything else says STATUS_FINAL.
       if (!c || !/^STATUS_(FINAL|FULL_TIME)/.test(c.status?.type?.name ?? '')) continue;
       const home = c.competitors.find((x) => x.homeAway === 'home');
@@ -291,6 +307,7 @@ async function collectEspn(team) {
         attendance: att,
         kind: 'announced',
         preseason: preseason || undefined,
+        ...(postseason ? { postseason: true, round: roundName, ...(gameNo ? { game: gameNo } : {}) } : {}),
         sourceId: 'espn',
       });
       kept++;

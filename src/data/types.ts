@@ -202,7 +202,7 @@ export interface CrowdEvent {
    * Always an estimate. Seeded where obvious; otherwise attached on read from
    * past announced crowds (expectedDraw.ts), with the middle half as low–high.
    */
-  expectedDraw?: { count: number; note: string; low?: number; high?: number };
+  expectedDraw?: { count: number; note: string; low?: number; high?: number; /** A playoff estimate: the range is a planning range, wider than a middle half. */ planning?: boolean };
   /** A preseason (exhibition) game. Sized from past preseason crowds, never the regular season's. */
   preseason?: boolean;
   /** The home side's first regular-season home game of the season. */

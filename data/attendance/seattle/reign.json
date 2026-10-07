@@ -134,6 +134,8 @@
       "venueId": "lumen-field",
       "attendance": 21491,
       "kind": "announced",
+      "postseason": true,
+      "round": "Playoffs - Semifinals",
       "sourceId": "espn"
     },
     {
@@ -266,6 +268,8 @@
       "venueId": "lumen-field",
       "attendance": 12152,
       "kind": "announced",
+      "postseason": true,
+      "round": "Playoffs -Quarterfinals",
       "sourceId": "espn"
     },
     {
@@ -277,6 +281,8 @@
       "venueId": "snapdragon-stadium",
       "attendance": 25011,
       "kind": "announced",
+      "postseason": true,
+      "round": "Playoffs - Championship",
       "sourceId": "espn"
     },
     {

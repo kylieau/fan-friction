@@ -101,7 +101,12 @@ export function crowdShort(
   }
   if (sold && capacity) return `${crowdThousands(capacity)} (sold out)`;
   if (!withSold && capacity && event.crowd.some((c) => c.soldOut)) return crowdThousands(capacity);
-  if (!sold && withDraw && event.expectedDraw) return `${crowdThousands(roundEstimate(event.expectedDraw.count))}${withEst ? ' est' : ''}`;
+  // A playoff estimate shows its low end (Kylie, Oct 7): that is what counts toward friction.
+  if (!sold && withDraw && event.expectedDraw) {
+    const d = event.expectedDraw;
+    const shown = d.planning && d.low != null ? d.low : d.count;
+    return `${crowdThousands(roundEstimate(shown))}${withEst ? (d.planning ? '+ est' : ' est') : ''}`;
+  }
   return sold ? 'Sold out' : 'No count yet';
 }
 

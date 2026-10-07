@@ -26,6 +26,149 @@ export interface PastGame {
   attendance: number;
   postseason?: boolean;
   preseason?: boolean;
+  /** The feed's round name for a playoff game ("NLDS", "West 1st Round - Game 2", "WC - Semifinals"). */
+  round?: string;
+  /** Game number in the series, when the feed says. */
+  game?: number;
+}
+
+// ---------- Postseason (docs/postseason-estimate-proposal.md, Kylie's locks Oct 7, 2026) ----------
+// A playoff crowd is learned as occupancy (announced ÷ the building's capacity for that sport),
+// in four round bands, from the team's own home playoff games, else the league's pool. Every
+// constant below was written before the check ran (docs/postseason-check.md) and is not re-tuned.
+
+export type RoundBand = 'first' | 'second' | 'conference' | 'final';
+export const POSTSEASON_WINDOW = 3;
+/** Team games in the band needed to stand alone; below this, blended with the league pool by n ÷ TEAM_FULL. */
+export const POST_TEAM_FULL = 8;
+export const POST_TEAM_MIN = 3;
+/** The league-band pool must be this big, this wide and this old to be used at all. */
+export const POST_POOL_MIN = { games: 20, teams: 4, seasons: 2 };
+/** The range: 10th–90th percentile with this many games, else min–max; then widened by this share of capacity. */
+export const POST_PERCENTILE_MIN = 20;
+export const POST_ALLOWANCE = 0.05;
+
+/**
+ * The band a round name falls in. The same word means different rounds in different leagues
+ * (WNBA "Semifinals" is the round before the Finals; NBA "Semis" and MLS "WC - Semifinals" are
+ * the second round), so the league decides.
+ */
+export function roundBand(round: string | undefined, league: string | undefined): RoundBand | undefined {
+  if (!round) return undefined;
+  // College postseasons (NCAA tournaments, NIT, WBIT, bowls) are mostly neutral-site and are not sized here.
+  if (/^College/.test(league ?? '')) return undefined;
+  const r = round.toLowerCase();
+  if (/super bowl|world series|mls cup|cup final|stanley cup|nwsl championship|playoffs - championship|wnba finals|^finals?\b|\bfinals - game/.test(r)) return 'final';
+  if (/wild card|wildcard|1st round|first round|round one|round 1|play-in|nlwc|alwc/.test(r)) return 'first';
+  if (/conference playoffs - final|conference final|conf final|east(ern)? final|west(ern)? final|championship series|nlcs|alcs|^wc - final|championship/.test(r)) return 'conference';
+  if (/semi/.test(r)) return league === 'WNBA' || league === 'NWSL' ? 'conference' : 'second';
+  if (/2nd round|second round|division|nlds|alds|quarter/.test(r)) return 'second';
+  return undefined;
+}
+
+export interface PostseasonRow {
+  metroId: string;
+  teamId: string;
+  venueId: string;
+  band: RoundBand;
+  /** Median occupancy of the comparables, and the range before the allowance. */
+  occupancy: number;
+  low: number;
+  high: number;
+  games: number;
+  seasons: string;
+  /** 'team' when the team's own games stand alone, 'blend' when mixed with the league pool, 'league' when the pool alone. */
+  basis: 'team' | 'blend' | 'league';
+}
+
+
+function quantileAt(sorted: number[], q: number): number {
+  if (sorted.length === 0) return NaN;
+  const pos = (sorted.length - 1) * q;
+  const lo = Math.floor(pos), hi = Math.ceil(pos);
+  return sorted[lo] + (sorted[hi] - sorted[lo]) * (pos - lo);
+}
+
+export interface PostseasonTeam {
+  metroId: string;
+  teamId: string;
+  league: string;
+  games: PastGame[];
+  /** The building's capacity for this team's sport on a date; undefined when unknown. */
+  capacityOn: (venueId: string, date: string) => number | undefined;
+}
+
+/**
+ * One row per team, building and band, from the last POSTSEASON_WINDOW completed postseasons
+ * plus the current one (`throughSeason` limits what counts as known, for the check).
+ */
+export function buildPostseasonRows(teams: PostseasonTeam[], throughSeason = Infinity): PostseasonRow[] {
+  type Occ = { teamId: string; venueId: string; season: number; occ: number };
+  const byLeagueBand = new Map<string, Occ[]>();
+  const byTeam = new Map<string, { team: PostseasonTeam; occs: Occ[] }>();
+  for (const team of teams) {
+    const post = team.games.filter((g) => g.postseason && g.attendance > 0 && g.season <= throughSeason);
+    const seasons = [...new Set(post.map((g) => g.season))].sort((a, b) => b - a).slice(0, POSTSEASON_WINDOW + 1);
+    const occs: Occ[] = [];
+    for (const g of post) {
+      if (!seasons.includes(g.season)) continue;
+      const band = roundBand(g.round, team.league);
+      const cap = team.capacityOn(g.venueId, g.date);
+      if (!band || !cap) continue;
+      const occ = { teamId: team.teamId, venueId: g.venueId, season: g.season, occ: g.attendance / cap };
+      occs.push({ ...occ, venueId: `${band}|${g.venueId}` });
+      const key = `${team.league}|${band}`;
+      if (!byLeagueBand.has(key)) byLeagueBand.set(key, []);
+      byLeagueBand.get(key)!.push(occ);
+    }
+    byTeam.set(team.teamId, { team, occs });
+  }
+  const rangeOf = (xs: number[]) => {
+    const s = [...xs].sort((a, b) => a - b);
+    return s.length >= POST_PERCENTILE_MIN ? [quantileAt(s, 0.1), quantileAt(s, 0.9)] : [s[0], s[s.length - 1]];
+  };
+  const med = (xs: number[]) => quantileAt([...xs].sort((a, b) => a - b), 0.5);
+  const rows: PostseasonRow[] = [];
+  for (const { team, occs } of byTeam.values()) {
+    const bands = new Set(occs.map((o) => o.venueId));
+    // A band the team has never played still gets a league row for its home building, so an
+    // upcoming game there can be sized from the pool.
+    const home = [...new Set(team.games.filter((g) => !g.preseason).map((g) => g.venueId))];
+    for (const band of ['first', 'second', 'conference', 'final'] as RoundBand[]) {
+      for (const venueId of home) {
+        const mine = occs.filter((o) => o.venueId === `${band}|${venueId}`);
+        const mineSeasons = new Set(mine.map((o) => o.season));
+        const pool = byLeagueBand.get(`${team.league}|${band}`) ?? [];
+        const poolOk = pool.length >= POST_POOL_MIN.games && new Set(pool.map((o) => o.teamId)).size >= POST_POOL_MIN.teams && new Set(pool.map((o) => o.season)).size >= POST_POOL_MIN.seasons;
+        let occupancy: number, low: number, high: number, basis: PostseasonRow['basis'], games: number, seasonsText: string;
+        if (mine.length >= POST_TEAM_FULL && mineSeasons.size >= 2) {
+          occupancy = med(mine.map((o) => o.occ)); [low, high] = rangeOf(mine.map((o) => o.occ)); basis = 'team'; games = mine.length;
+          seasonsText = [...mineSeasons].sort().join(', ');
+        } else if (mine.length >= POST_TEAM_MIN && poolOk) {
+          const w = mine.length / POST_TEAM_FULL;
+          occupancy = w * med(mine.map((o) => o.occ)) + (1 - w) * med(pool.map((o) => o.occ));
+          [low, high] = rangeOf([...mine, ...pool].map((o) => o.occ)); basis = 'blend'; games = mine.length + pool.length;
+          seasonsText = `${[...mineSeasons].sort().join(', ')} + league`;
+        } else if (poolOk) {
+          occupancy = med(pool.map((o) => o.occ)); [low, high] = rangeOf(pool.map((o) => o.occ)); basis = 'league'; games = pool.length;
+          seasonsText = `league, ${[...new Set(pool.map((o) => o.season))].sort().join(', ')}`;
+        } else continue;
+        void bands;
+        rows.push({ metroId: team.metroId, teamId: team.teamId, venueId, band, occupancy, low, high, games, seasons: seasonsText, basis });
+      }
+    }
+  }
+  return rows;
+}
+
+/** People from a row and the building: the median, and a planning range widened by the allowance, all capped. */
+export function postseasonPeople(row: PostseasonRow, capacity: number): { count: number; low: number; high: number } {
+  const cap = (x: number) => Math.max(0, Math.min(capacity, Math.round(x)));
+  return {
+    count: cap(capacity * row.occupancy),
+    low: cap(capacity * (row.low - POST_ALLOWANCE)),
+    high: cap(capacity * (row.high + POST_ALLOWANCE)),
+  };
 }
 
 export interface ExpectedDrawRow {

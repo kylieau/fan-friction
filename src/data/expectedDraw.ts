@@ -3,8 +3,9 @@
 // expectedDrawBuild.ts. The building stays the ceiling (drawSize). Always an
 // estimate, and said so.
 
-import { EXPECTED_DRAWS, OPPONENT_RATIOS, SEASON_LEVELS } from './expectedDrawIndex';
-import { CONCERT_FILL, VENUE_SHOW_AVERAGE, isHoliday, opponentKey, pickDraw, type ExpectedDrawRow } from './expectedDrawBuild';
+import { EXPECTED_DRAWS, OPPONENT_RATIOS, POSTSEASON_DRAWS, SEASON_LEVELS } from './expectedDrawIndex';
+import { TEAMS } from './teams';
+import { CONCERT_FILL, VENUE_SHOW_AVERAGE, isHoliday, opponentKey, pickDraw, postseasonPeople, roundBand, type ExpectedDrawRow } from './expectedDrawBuild';
 import { VENUES, capacityOn } from './venues';
 import { cachedExpectedDraws } from './catalogCache';
 import type { CrowdEvent } from './types';
@@ -50,6 +51,28 @@ export function calibratedDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
 }
 
 /**
+ * A playoff game (docs/postseason-estimate-proposal.md, checked in docs/postseason-check.md):
+ * the team's past playoff occupancy in this building for this round band, or the league's,
+ * times the building. The range is a planning range, not a middle half. No row: no estimate,
+ * as before.
+ */
+export function postseasonDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
+  if (event.audience.domain !== 'sports' || !event.teams || !event.stakes?.round || event.place.type !== 'venue') return undefined;
+  const team = TEAMS[event.teams.home];
+  const band = roundBand(event.stakes.round, team?.league);
+  if (!band) return undefined;
+  const venueId = event.place.venueId;
+  const venue = VENUES[venueId];
+  const cap = venue ? capacityOn(venue, event.date, event.audience.sport) ?? capacityOn(venue, event.date) : undefined;
+  if (!cap) return undefined;
+  const row = POSTSEASON_DRAWS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.venueId === venueId && r.band === band);
+  if (!row) return undefined;
+  const people = postseasonPeople(row, cap);
+  const who = row.basis === 'team' ? 'this team\'s' : row.basis === 'blend' ? 'this team\'s and the league\'s' : 'the league\'s';
+  return { ...people, planning: true, note: `Playoff crowds as a share of the building, ${who} past ${row.games} games (${row.seasons}). An estimate.` };
+}
+
+/**
  * A show's size (Kylie, Oct 7: the 57% default is approved): the room's own published
  * average when it has one, else CONCERT_FILL of its concert setup. Never above the room.
  * Not sized: a listing that already carries a count or a sellout, anything that is not a
@@ -79,7 +102,7 @@ export function showDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
 export function withExpectedDraws(events: CrowdEvent[]): CrowdEvent[] {
   return events.map((event) => {
     if (event.expectedDraw) return event;
-    const draw = calibratedDraw(event) ?? showDraw(event);
+    const draw = calibratedDraw(event) ?? postseasonDraw(event) ?? showDraw(event);
     return draw ? { ...event, expectedDraw: draw } : event;
   });
 }

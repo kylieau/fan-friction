@@ -387,6 +387,8 @@
       "venueId": "sports-illustrated-stadium",
       "attendance": 15540,
       "kind": "announced",
+      "postseason": true,
+      "round": "Playoffs - Quarterfinals",
       "sourceId": "espn"
     },
     {

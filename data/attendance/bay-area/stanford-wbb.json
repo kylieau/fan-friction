@@ -193,6 +193,32 @@
     },
     {
       "teamId": "stanford-wbb",
+      "season": 2023,
+      "date": "2023-03-17",
+      "start": "16:30",
+      "opponent": "Sacred Heart",
+      "venueId": "maples-pavilion",
+      "attendance": 4020,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship pres. by Capital One - Seattle Regional 4 - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-wbb",
+      "season": 2023,
+      "date": "2023-03-19",
+      "start": "18:41",
+      "opponent": "Ole Miss",
+      "venueId": "maples-pavilion",
+      "attendance": 5361,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship pres. by Capital One - Seattle Regional 4 - 2nd Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-wbb",
       "season": 2024,
       "date": "2023-11-08",
       "start": "19:00",
@@ -365,6 +391,32 @@
       "venueId": "maples-pavilion",
       "attendance": 4271,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-wbb",
+      "season": 2024,
+      "date": "2024-03-22",
+      "start": "19:09",
+      "opponent": "Norfolk St",
+      "venueId": "maples-pavilion",
+      "attendance": 4537,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 4 in Portland - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-wbb",
+      "season": 2024,
+      "date": "2024-03-24",
+      "start": "19:11",
+      "opponent": "Iowa State",
+      "venueId": "maples-pavilion",
+      "attendance": 5811,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 4 in Portland - 2nd Round",
       "sourceId": "espn"
     },
     {
@@ -567,6 +619,19 @@
     },
     {
       "teamId": "stanford-wbb",
+      "season": 2025,
+      "date": "2025-03-20",
+      "start": "19:00",
+      "opponent": "Portland",
+      "venueId": "maples-pavilion",
+      "attendance": 1106,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-wbb",
       "season": 2026,
       "date": "2025-11-03",
       "start": "19:00",
@@ -761,6 +826,32 @@
       "venueId": "maples-pavilion",
       "attendance": 3034,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-wbb",
+      "season": 2026,
+      "date": "2026-03-19",
+      "start": "19:00",
+      "opponent": "LMU",
+      "venueId": "maples-pavilion",
+      "attendance": 944,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-wbb",
+      "season": 2026,
+      "date": "2026-03-22",
+      "start": "14:00",
+      "opponent": "Quinnipiac",
+      "venueId": "maples-pavilion",
+      "attendance": 874,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - 2nd Round",
       "sourceId": "espn"
     }
   ]

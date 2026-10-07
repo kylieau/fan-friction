@@ -1310,6 +1310,8 @@
       "attendance": 42641,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 1,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -1323,6 +1325,8 @@
       "attendance": 42735,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 2,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -2632,6 +2636,8 @@
       "attendance": 43689,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 1,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -2645,6 +2651,8 @@
       "attendance": 43898,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 2,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -7968,6 +7976,8 @@
       "attendance": 30127,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 1,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -7981,6 +7991,8 @@
       "attendance": 37150,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 2,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -7994,6 +8006,8 @@
       "attendance": 41731,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 3,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -8007,6 +8021,8 @@
       "attendance": 42420,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 3,
       "promotions": [],
       "sourceId": "mlb"
     }

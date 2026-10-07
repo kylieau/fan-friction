@@ -806,6 +806,19 @@
       "attendance": 19812,
       "kind": "announced",
       "sourceId": "espn"
+    },
+    {
+      "teamId": "stjohns-mbb",
+      "season": 2026,
+      "date": "2026-03-20",
+      "start": "19:25",
+      "opponent": "Northern Iowa",
+      "venueId": "viejas-arena",
+      "attendance": 11441,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Men's Basketball Championship - East Region - 1st Round",
+      "sourceId": "espn"
     }
   ]
 }

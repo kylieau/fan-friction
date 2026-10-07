@@ -160,6 +160,19 @@
     },
     {
       "teamId": "usc-football",
+      "season": 2023,
+      "date": "2023-12-27",
+      "start": "17:00",
+      "opponent": "Louisville",
+      "venueId": "petco-park",
+      "attendance": 35317,
+      "kind": "announced",
+      "postseason": true,
+      "round": "DirecTV Holiday Bowl",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
       "season": 2024,
       "date": "2024-09-07",
       "start": "20:00",

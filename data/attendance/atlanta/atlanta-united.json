@@ -387,6 +387,9 @@
       "venueId": "mercedes-benz-stadium",
       "attendance": 41850,
       "kind": "announced",
+      "postseason": true,
+      "round": "Eastern Conference Playoffs - Round One - Game 2",
+      "game": 2,
       "sourceId": "espn"
     },
     {
@@ -585,6 +588,9 @@
       "venueId": "mercedes-benz-stadium",
       "attendance": 68455,
       "kind": "announced",
+      "postseason": true,
+      "round": "Eastern Conference Playoffs - Round One - Game 2",
+      "game": 2,
       "sourceId": "espn"
     },
     {

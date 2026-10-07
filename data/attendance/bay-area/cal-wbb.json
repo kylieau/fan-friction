@@ -391,6 +391,32 @@
     },
     {
       "teamId": "cal-wbb",
+      "season": 2024,
+      "date": "2024-03-21",
+      "start": "19:00",
+      "opponent": "Hawai'i",
+      "venueId": "haas-pavilion",
+      "attendance": 761,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cal-wbb",
+      "season": 2024,
+      "date": "2024-03-24",
+      "start": "13:00",
+      "opponent": "Saint Joseph's",
+      "venueId": "haas-pavilion",
+      "attendance": 607,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - 2nd Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cal-wbb",
       "season": 2025,
       "date": "2024-11-04",
       "start": "18:00",
@@ -552,6 +578,19 @@
       "venueId": "haas-pavilion",
       "attendance": 3295,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cal-wbb",
+      "season": 2025,
+      "date": "2025-03-22",
+      "start": "14:30",
+      "opponent": "Mississippi St",
+      "venueId": "galen-center",
+      "attendance": 6865,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 4 in Spokane - 1st Round",
       "sourceId": "espn"
     },
     {
@@ -739,6 +778,32 @@
       "venueId": "haas-pavilion",
       "attendance": 3025,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cal-wbb",
+      "season": 2026,
+      "date": "2026-03-19",
+      "start": "19:00",
+      "opponent": "Santa Clara",
+      "venueId": "haas-pavilion",
+      "attendance": 665,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cal-wbb",
+      "season": 2026,
+      "date": "2026-03-26",
+      "start": "19:00",
+      "opponent": "Columbia",
+      "venueId": "haas-pavilion",
+      "attendance": 1113,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - Quarterfinal",
       "sourceId": "espn"
     }
   ]

@@ -17,15 +17,8 @@
         "wins": 4,
         "losses": 3
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Fleece blanket (home opener)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -41,8 +34,7 @@
         "losses": 3
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -58,8 +50,7 @@
         "losses": 4
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -74,15 +65,8 @@
         "wins": 5,
         "losses": 5
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Opening Series hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -98,8 +82,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -115,8 +98,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -132,8 +114,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -149,8 +130,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -166,8 +146,7 @@
         "losses": 6
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -183,8 +162,7 @@
         "losses": 6
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -200,8 +178,7 @@
         "losses": 9
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -217,8 +194,7 @@
         "losses": 9
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -234,8 +210,7 @@
         "losses": 9
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -250,15 +225,8 @@
         "wins": 18,
         "losses": 10
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Kids sunglasses",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -273,15 +241,8 @@
         "wins": 19,
         "losses": 10
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Tony Gwynn shirsey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -297,8 +258,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -314,8 +274,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -331,8 +290,7 @@
         "losses": 14
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -347,15 +305,8 @@
         "wins": 28,
         "losses": 14
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Manny Machado bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -371,8 +322,7 @@
         "losses": 15
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -387,15 +337,8 @@
         "wins": 28,
         "losses": 16
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Pitchers beach towel (Darvish / Snell / Musgrove)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -411,8 +354,7 @@
         "losses": 16
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -427,15 +369,8 @@
         "wins": 29,
         "losses": 17
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Padres pets calendar",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -451,8 +386,7 @@
         "losses": 21
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -468,8 +402,7 @@
         "losses": 22
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -484,15 +417,8 @@
         "wins": 34,
         "losses": 22
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Custom Tatis Jr. hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -508,8 +434,7 @@
         "losses": 22
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -525,8 +450,7 @@
         "losses": 22
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -542,8 +466,7 @@
         "losses": 22
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -559,8 +482,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -576,8 +498,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -593,8 +514,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -610,8 +530,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -626,15 +545,8 @@
         "wins": 44,
         "losses": 27
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Jake Cronenworth bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -650,8 +562,7 @@
         "losses": 28
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -667,8 +578,7 @@
         "losses": 28
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -683,15 +593,8 @@
         "wins": 45,
         "losses": 29
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Batting gloves (kids)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -707,8 +610,7 @@
         "losses": 34
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -724,8 +626,7 @@
         "losses": 35
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -740,15 +641,8 @@
         "wins": 47,
         "losses": 36
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "El Niño fleece blanket (Tatis Jr.)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -764,8 +658,7 @@
         "losses": 36
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -780,15 +673,8 @@
         "wins": 49,
         "losses": 36
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Tatis Jr. & Pups bobblehead (theme game)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -804,8 +690,7 @@
         "losses": 37
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -820,15 +705,8 @@
         "wins": 50,
         "losses": 41
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Star Wars Weekend (July 15-17); Machado \"Mandalorian\" bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -844,8 +722,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -861,8 +738,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -878,8 +754,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -895,8 +770,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -911,15 +785,8 @@
         "wins": 56,
         "losses": 46
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Tatis Jr. plastic bat and ball set",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -935,8 +802,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -952,8 +818,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -969,8 +834,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -985,15 +849,8 @@
         "wins": 60,
         "losses": 46
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Team hoodie",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1009,8 +866,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1026,8 +882,7 @@
         "losses": 50
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1043,8 +898,7 @@
         "losses": 51
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1060,8 +914,7 @@
         "losses": 51
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1076,15 +929,8 @@
         "wins": 66,
         "losses": 54
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Joe Musgrove no-hitter bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1100,8 +946,7 @@
         "losses": 55
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1116,15 +961,8 @@
         "wins": 66,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Peanuts theme ticket: Linus bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1139,15 +977,8 @@
         "wins": 67,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Mini bat (kids)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1162,15 +993,8 @@
         "wins": 68,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Soccer Night (\"El Niño\" jersey)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1186,8 +1010,7 @@
         "losses": 57
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1202,15 +1025,8 @@
         "wins": 74,
         "losses": 61
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Mug (kids)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1226,8 +1042,7 @@
         "losses": 62
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1242,15 +1057,8 @@
         "wins": 75,
         "losses": 62
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Fernando Tatis Jr. bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1265,15 +1073,8 @@
         "wins": 76,
         "losses": 62
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Thundersticks",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1289,8 +1090,7 @@
         "losses": 62
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1305,15 +1105,8 @@
         "wins": 77,
         "losses": 63
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Hello Kitty theme package bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1329,8 +1122,7 @@
         "losses": 66
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1346,8 +1138,7 @@
         "losses": 66
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1363,8 +1154,7 @@
         "losses": 66
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1380,8 +1170,7 @@
         "losses": 68
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1397,8 +1186,7 @@
         "losses": 68
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1414,8 +1202,7 @@
         "losses": 69
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1431,8 +1218,7 @@
         "losses": 70
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1448,8 +1234,7 @@
         "losses": 71
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1465,8 +1250,7 @@
         "losses": 71
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1482,8 +1266,7 @@
         "losses": 72
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1499,8 +1282,7 @@
         "losses": 72
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1516,8 +1298,7 @@
         "losses": 72
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1529,9 +1310,10 @@
       "attendance": 45137,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 3,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1543,9 +1325,10 @@
       "attendance": 45139,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 4,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1557,9 +1340,10 @@
       "attendance": 44826,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Championship Series",
+      "game": 1,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1571,9 +1355,10 @@
       "attendance": 44607,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Championship Series",
+      "game": 2,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1589,8 +1374,7 @@
         "losses": 0
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1606,8 +1390,7 @@
         "losses": 1
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1623,8 +1406,7 @@
         "losses": 2
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1639,15 +1421,8 @@
         "wins": 1,
         "losses": 2
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Opening Series hat (vintage brown and gold)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1663,8 +1438,7 @@
         "losses": 2
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1680,8 +1454,7 @@
         "losses": 2
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1696,15 +1469,8 @@
         "wins": 7,
         "losses": 6
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Juan Soto \"Soto Shuffle\" bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1720,8 +1486,7 @@
         "losses": 7
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1737,8 +1502,7 @@
         "losses": 8
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1754,8 +1518,7 @@
         "losses": 8
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1771,8 +1534,7 @@
         "losses": 9
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1787,15 +1549,8 @@
         "wins": 8,
         "losses": 10
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "1998 Trevor Hoffman replica jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1811,8 +1566,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1828,8 +1582,7 @@
         "losses": 14
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1845,8 +1598,7 @@
         "losses": 14
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1862,8 +1614,7 @@
         "losses": 14
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1878,15 +1629,8 @@
         "wins": 16,
         "losses": 14
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Joe Musgrove bucket hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1902,8 +1646,7 @@
         "losses": 15
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1919,8 +1662,7 @@
         "losses": 15
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1936,8 +1678,7 @@
         "losses": 15
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1953,8 +1694,7 @@
         "losses": 16
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1969,15 +1709,8 @@
         "wins": 19,
         "losses": 22
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Manny Machado City Connect bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -1993,8 +1726,7 @@
         "losses": 22
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2010,8 +1742,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2027,8 +1758,7 @@
         "losses": 24
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2044,8 +1774,7 @@
         "losses": 25
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2061,8 +1790,7 @@
         "losses": 26
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2078,8 +1806,7 @@
         "losses": 30
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2095,8 +1822,7 @@
         "losses": 31
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2111,15 +1837,8 @@
         "wins": 27,
         "losses": 31
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Peanuts Day",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2134,15 +1853,8 @@
         "wins": 27,
         "losses": 32
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Belt bag",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2158,8 +1870,7 @@
         "losses": 32
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2175,8 +1886,7 @@
         "losses": 33
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2192,8 +1902,7 @@
         "losses": 34
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2208,15 +1917,8 @@
         "wins": 32,
         "losses": 34
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "City Connect Hawaiian shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2232,8 +1934,7 @@
         "losses": 34
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2248,15 +1949,8 @@
         "wins": 33,
         "losses": 35
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Star Wars Weekend (June 16-18)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2272,8 +1966,7 @@
         "losses": 36
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2289,8 +1982,7 @@
         "losses": 36
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2306,8 +1998,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2322,15 +2013,8 @@
         "wins": 37,
         "losses": 39
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Harry Potter Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2346,8 +2030,7 @@
         "losses": 40
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2363,8 +2046,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2380,8 +2062,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2397,8 +2078,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2414,8 +2094,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2431,8 +2110,7 @@
         "losses": 47
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2448,8 +2126,7 @@
         "losses": 47
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2464,15 +2141,8 @@
         "wins": 48,
         "losses": 52
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Yu Darvish 3000 strikeouts bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2488,8 +2158,7 @@
         "losses": 53
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2505,8 +2174,7 @@
         "losses": 53
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2522,8 +2190,7 @@
         "losses": 54
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2539,8 +2206,7 @@
         "losses": 54
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2556,8 +2222,7 @@
         "losses": 54
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2573,8 +2238,7 @@
         "losses": 55
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2590,8 +2254,7 @@
         "losses": 56
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2607,8 +2270,7 @@
         "losses": 56
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2623,15 +2285,8 @@
         "wins": 55,
         "losses": 57
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Straw hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2647,8 +2302,7 @@
         "losses": 62
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2664,8 +2318,7 @@
         "losses": 63
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2680,15 +2333,8 @@
         "wins": 57,
         "losses": 63
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Home hoodie",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2704,8 +2350,7 @@
         "losses": 63
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2720,15 +2365,8 @@
         "wins": 58,
         "losses": 64
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Don Orsillo & Mark Grant (\"Don & Mud\") bobblehead night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2744,8 +2382,7 @@
         "losses": 64
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2761,8 +2398,7 @@
         "losses": 65
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2778,8 +2414,7 @@
         "losses": 66
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2794,15 +2429,8 @@
         "wins": 60,
         "losses": 66
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Ha-Seong Kim bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2818,8 +2446,7 @@
         "losses": 67
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2835,8 +2462,7 @@
         "losses": 72
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2852,8 +2478,7 @@
         "losses": 73
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2869,8 +2494,7 @@
         "losses": 73
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2886,8 +2510,7 @@
         "losses": 73
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2903,8 +2526,7 @@
         "losses": 73
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2919,15 +2541,8 @@
         "wins": 65,
         "losses": 74
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Fernando Tatis Jr. bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2943,8 +2558,7 @@
         "losses": 74
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2959,15 +2573,8 @@
         "wins": 72,
         "losses": 78
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Xander Bogaerts City Connect jersey shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -2983,8 +2590,7 @@
         "losses": 78
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3000,8 +2606,7 @@
         "losses": 78
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3017,8 +2622,7 @@
         "losses": 78
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3034,8 +2638,7 @@
         "losses": 78
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3051,8 +2654,7 @@
         "losses": 79
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3068,8 +2670,7 @@
         "losses": 0
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3085,8 +2686,7 @@
         "losses": 1
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3101,15 +2701,8 @@
         "wins": 2,
         "losses": 1
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Opening Series hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3125,8 +2718,7 @@
         "losses": 2
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3142,8 +2734,7 @@
         "losses": 3
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3159,8 +2750,7 @@
         "losses": 3
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3175,15 +2765,8 @@
         "wins": 3,
         "losses": 4
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "City Connect poncho",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3199,8 +2782,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3216,8 +2798,7 @@
         "losses": 7
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3233,8 +2814,7 @@
         "losses": 7
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3249,15 +2829,8 @@
         "wins": 6,
         "losses": 8
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Manny Machado home run bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3273,8 +2846,7 @@
         "losses": 10
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3290,8 +2862,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3307,8 +2878,7 @@
         "losses": 12
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3324,8 +2894,7 @@
         "losses": 14
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3341,8 +2910,7 @@
         "losses": 15
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3358,8 +2926,7 @@
         "losses": 16
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3374,15 +2941,8 @@
         "wins": 14,
         "losses": 17
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Knit beanie with removable pom",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3398,8 +2958,7 @@
         "losses": 18
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3415,8 +2974,7 @@
         "losses": 18
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3432,8 +2990,7 @@
         "losses": 20
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3448,15 +3005,8 @@
         "wins": 21,
         "losses": 20
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Joe Musgrove & dog Theo bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3472,8 +3022,7 @@
         "losses": 21
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3489,8 +3038,7 @@
         "losses": 21
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3506,8 +3054,7 @@
         "losses": 22
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3523,8 +3070,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3540,8 +3086,7 @@
         "losses": 26
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3557,8 +3102,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3574,8 +3118,7 @@
         "losses": 28
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3591,8 +3134,7 @@
         "losses": 28
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3607,15 +3149,8 @@
         "wins": 29,
         "losses": 28
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "City Connect belt bag",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3631,8 +3166,7 @@
         "losses": 28
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3647,15 +3181,8 @@
         "wins": 32,
         "losses": 33
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Xander Bogaerts bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3671,8 +3198,7 @@
         "losses": 34
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3688,8 +3214,7 @@
         "losses": 34
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3705,8 +3230,7 @@
         "losses": 34
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3722,8 +3246,7 @@
         "losses": 35
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3738,15 +3261,8 @@
         "wins": 35,
         "losses": 35
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Joe Musgrove basketball jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3762,8 +3278,7 @@
         "losses": 35
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3778,15 +3293,8 @@
         "wins": 38,
         "losses": 40
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "619 Aloha shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3802,8 +3310,7 @@
         "losses": 40
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3819,8 +3326,7 @@
         "losses": 40
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3835,15 +3341,8 @@
         "wins": 41,
         "losses": 40
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Rookie plush pillow (kids)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3859,8 +3358,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3875,15 +3373,8 @@
         "wins": 42,
         "losses": 41
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Ha-Seong Kim bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3899,8 +3390,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3915,15 +3405,8 @@
         "wins": 48,
         "losses": 43
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Star Wars Weekend (July 5-7)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3939,8 +3422,7 @@
         "losses": 43
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3956,8 +3438,7 @@
         "losses": 44
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3973,8 +3454,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -3989,15 +3469,8 @@
         "wins": 49,
         "losses": 46
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "'84 throwback hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4013,8 +3486,7 @@
         "losses": 47
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4030,8 +3502,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4047,8 +3518,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4064,8 +3534,7 @@
         "losses": 51
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4081,8 +3550,7 @@
         "losses": 51
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4098,8 +3566,7 @@
         "losses": 51
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4115,8 +3582,7 @@
         "losses": 52
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4132,8 +3598,7 @@
         "losses": 52
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4148,15 +3613,8 @@
         "wins": 66,
         "losses": 53
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "1999 Tony Gwynn henley (3000th hit 25th anniversary)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4172,8 +3630,7 @@
         "losses": 53
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4189,8 +3646,7 @@
         "losses": 53
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4206,8 +3662,7 @@
         "losses": 55
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4222,15 +3677,8 @@
         "wins": 71,
         "losses": 55
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Manny Machado collectible pin",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4246,8 +3694,7 @@
         "losses": 55
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4262,15 +3709,8 @@
         "wins": 72,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Tatis Jr. City Connect bucket hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4286,8 +3726,7 @@
         "losses": 57
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4303,8 +3742,7 @@
         "losses": 57
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4319,15 +3757,8 @@
         "wins": 73,
         "losses": 58
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Padres tin lunchbox (kids)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4343,8 +3774,7 @@
         "losses": 61
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4359,15 +3789,8 @@
         "wins": 79,
         "losses": 61
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "City Connect hoodie",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4383,8 +3806,7 @@
         "losses": 61
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4400,8 +3822,7 @@
         "losses": 62
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4417,8 +3838,7 @@
         "losses": 62
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4434,8 +3854,7 @@
         "losses": 63
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4451,8 +3870,7 @@
         "losses": 65
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4468,8 +3886,7 @@
         "losses": 65
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4484,15 +3901,8 @@
         "wins": 86,
         "losses": 66
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Tatis Jr. Platinum Glove bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4508,8 +3918,7 @@
         "losses": 66
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4525,8 +3934,7 @@
         "losses": 66
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4542,8 +3950,7 @@
         "losses": 66
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4555,9 +3962,10 @@
       "attendance": 47647,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 1,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4569,9 +3977,10 @@
       "attendance": 47705,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 2,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4583,9 +3992,10 @@
       "attendance": 47744,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 3,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -4597,9 +4007,10 @@
       "attendance": 47773,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 4,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "padres",
@@ -8530,6 +7941,8 @@
       "attendance": 47084,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 1,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -8543,6 +7956,8 @@
       "attendance": 47513,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 2,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -8556,6 +7971,8 @@
       "attendance": 47708,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 3,
       "promotions": [],
       "sourceId": "mlb"
     }

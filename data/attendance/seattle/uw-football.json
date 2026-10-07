@@ -300,6 +300,19 @@
       "attendance": 72376,
       "kind": "announced",
       "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2025,
+      "date": "2025-12-13",
+      "start": "17:00",
+      "opponent": "Boise St",
+      "venueId": "sofi-stadium",
+      "attendance": 23269,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Bucked Up LA Bowl",
+      "sourceId": "espn"
     }
   ]
 }

@@ -17,15 +17,8 @@
         "wins": 3,
         "losses": 4
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Opening Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -40,15 +33,8 @@
         "wins": 4,
         "losses": 4
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Ken Griffey Jr. \"42\" bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -63,15 +49,8 @@
         "wins": 4,
         "losses": 5
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Clear tote (moms 21+)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -87,8 +66,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -104,8 +82,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -121,8 +98,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -137,15 +113,8 @@
         "wins": 7,
         "losses": 6
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Puffy Vest Night + College Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -161,8 +130,7 @@
         "losses": 6
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -177,15 +145,8 @@
         "wins": 9,
         "losses": 6
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Little League Day (Mitch Haniger caps for kids)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -201,8 +162,7 @@
         "losses": 13
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -217,15 +177,8 @@
         "wins": 12,
         "losses": 14
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "J.P. Crawford bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -241,8 +194,7 @@
         "losses": 15
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -257,15 +209,8 @@
         "wins": 12,
         "losses": 16
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Little League Day (bat backpacks for kids)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -280,15 +225,8 @@
         "wins": 13,
         "losses": 16
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Bark at the Park",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -304,8 +242,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -321,8 +258,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -337,15 +273,8 @@
         "wins": 17,
         "losses": 25
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Title IX 50th Anniversary Celebration",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -360,15 +289,8 @@
         "wins": 18,
         "losses": 25
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "AAPI Heritage Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -384,8 +306,7 @@
         "losses": 26
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -400,15 +321,8 @@
         "wins": 18,
         "losses": 27
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "'90s neon pink cap",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -424,8 +338,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -441,8 +354,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -458,8 +370,7 @@
         "losses": 31
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -475,8 +386,7 @@
         "losses": 32
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -491,15 +401,8 @@
         "wins": 27,
         "losses": 32
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Little League Day (Ty France wristbands for kids)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -515,8 +418,7 @@
         "losses": 33
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -532,8 +434,7 @@
         "losses": 34
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -549,8 +450,7 @@
         "losses": 34
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -566,8 +466,7 @@
         "losses": 35
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -582,15 +481,8 @@
         "wins": 28,
         "losses": 36
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Star Wars Night \"Marcolorian\" Marco Gonzales bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -605,15 +497,8 @@
         "wins": 29,
         "losses": 36
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Juneteenth: players wear 1946 Seattle Steelheads uniforms",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -628,15 +513,8 @@
         "wins": 29,
         "losses": 37
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Juneteenth: players wear 1946 Seattle Steelheads uniforms",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -651,15 +529,8 @@
         "wins": 29,
         "losses": 38
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Father's Day replica Steelheads cap",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -674,15 +545,8 @@
         "wins": 34,
         "losses": 40
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Bark at the Park",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -698,8 +562,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -715,8 +578,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -731,15 +593,8 @@
         "wins": 36,
         "losses": 41
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Pride Night rainbow cap",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -755,8 +610,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -772,8 +626,7 @@
         "losses": 42
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -789,8 +642,7 @@
         "losses": 42
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -806,8 +658,7 @@
         "losses": 42
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -823,8 +674,7 @@
         "losses": 42
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -840,8 +690,7 @@
         "losses": 42
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -857,8 +706,7 @@
         "losses": 42
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -874,8 +722,7 @@
         "losses": 42
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -891,8 +738,7 @@
         "losses": 43
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -908,8 +754,7 @@
         "losses": 44
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -925,8 +770,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -942,8 +786,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -959,8 +802,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -975,15 +817,8 @@
         "wins": 57,
         "losses": 49
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Girls Night Out",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -998,15 +833,8 @@
         "wins": 57,
         "losses": 50
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Retro jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1021,15 +849,8 @@
         "wins": 58,
         "losses": 50
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Retro jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1045,8 +866,7 @@
         "losses": 51
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1062,8 +882,7 @@
         "losses": 51
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1079,8 +898,7 @@
         "losses": 52
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1096,8 +914,7 @@
         "losses": 52
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1112,15 +929,8 @@
         "wins": 66,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Native American Heritage Night cap + Bark at the Park",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1136,8 +946,7 @@
         "losses": 56
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1153,8 +962,7 @@
         "losses": 57
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1169,15 +977,8 @@
         "wins": 68,
         "losses": 57
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Guys Night Out",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1193,8 +994,7 @@
         "losses": 57
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1209,15 +1009,8 @@
         "wins": 69,
         "losses": 58
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Ichiro Suzuki Hall of Fame bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1233,8 +1026,7 @@
         "losses": 58
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1250,8 +1042,7 @@
         "losses": 59
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1267,8 +1058,7 @@
         "losses": 59
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1284,8 +1074,7 @@
         "losses": 60
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1300,15 +1089,8 @@
         "wins": 77,
         "losses": 61
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Dan Wilson Funko Pop!",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1324,8 +1106,7 @@
         "losses": 61
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1340,15 +1121,8 @@
         "wins": 79,
         "losses": 61
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Hello Kitty ticket-special bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1363,15 +1137,8 @@
         "wins": 79,
         "losses": 62
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Hispanic Heritage: players wear \"Marineros\" jerseys",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1387,8 +1154,7 @@
         "losses": 69
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1403,15 +1169,8 @@
         "wins": 83,
         "losses": 70
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Bark at the Park",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1427,8 +1186,7 @@
         "losses": 70
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1443,15 +1201,8 @@
         "wins": 85,
         "losses": 70
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "College Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1467,8 +1218,7 @@
         "losses": 70
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1483,15 +1233,8 @@
         "wins": 87,
         "losses": 70
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Kids Appreciation Day (prize drawings and kids t-shirts)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1507,8 +1250,7 @@
         "losses": 71
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1524,8 +1266,7 @@
         "losses": 72
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1541,8 +1282,7 @@
         "losses": 72
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1554,9 +1294,10 @@
       "attendance": 47690,
       "kind": "announced",
       "postseason": true,
+      "round": "AL Division Series",
+      "game": 3,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1572,8 +1313,7 @@
         "losses": 0
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1589,8 +1329,7 @@
         "losses": 0
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1605,15 +1344,8 @@
         "wins": 1,
         "losses": 1
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Julio Rodríguez Rookie of the Year bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1629,8 +1361,7 @@
         "losses": 2
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1645,15 +1376,8 @@
         "wins": 1,
         "losses": 3
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Bark at the Park",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1669,8 +1393,7 @@
         "losses": 4
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1686,8 +1409,7 @@
         "losses": 4
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1702,15 +1424,8 @@
         "wins": 5,
         "losses": 8
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Cal Raleigh \"The Clinch\" bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1726,8 +1441,7 @@
         "losses": 8
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1743,8 +1457,7 @@
         "losses": 8
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1760,8 +1473,7 @@
         "losses": 8
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1777,8 +1489,7 @@
         "losses": 9
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1794,8 +1505,7 @@
         "losses": 10
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1811,8 +1521,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1828,8 +1537,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1845,8 +1553,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1862,8 +1569,7 @@
         "losses": 16
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1879,8 +1585,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1895,15 +1600,8 @@
         "wins": 16,
         "losses": 17
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Geno Grigio wine tumbler",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1918,15 +1616,8 @@
         "wins": 17,
         "losses": 17
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "DC Comics ticket special: Cal Raleigh \"Superman\" bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1942,8 +1633,7 @@
         "losses": 18
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1959,8 +1649,7 @@
         "losses": 18
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1976,8 +1665,7 @@
         "losses": 24
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -1993,8 +1681,7 @@
         "losses": 24
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2010,8 +1697,7 @@
         "losses": 24
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2026,15 +1712,8 @@
         "wins": 25,
         "losses": 24
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Bark at the Park",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2049,15 +1728,8 @@
         "wins": 26,
         "losses": 24
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Postgame fireworks",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2072,15 +1744,8 @@
         "wins": 26,
         "losses": 25
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "J.P. Crawford Funko POP!",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2096,8 +1761,7 @@
         "losses": 25
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2113,8 +1777,7 @@
         "losses": 25
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2130,8 +1793,7 @@
         "losses": 26
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2147,8 +1809,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2164,8 +1825,7 @@
         "losses": 33
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2181,8 +1841,7 @@
         "losses": 33
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2198,8 +1857,7 @@
         "losses": 33
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2214,15 +1872,8 @@
         "wins": 33,
         "losses": 34
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Pride Night + Geno Vibes talking bottle opener",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2237,15 +1888,8 @@
         "wins": 34,
         "losses": 34
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Salute to the Negro Leagues: Steelheads jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2261,8 +1905,7 @@
         "losses": 35
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2277,15 +1920,8 @@
         "wins": 37,
         "losses": 39
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Indiana Jones ticket special: Logan Gilbert bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2301,8 +1937,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2318,8 +1953,7 @@
         "losses": 40
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2334,15 +1968,8 @@
         "wins": 38,
         "losses": 41
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Postgame fireworks",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2357,15 +1984,8 @@
         "wins": 38,
         "losses": 42
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Patriotic \"Cal-Boy\" hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2380,15 +2000,8 @@
         "wins": 39,
         "losses": 42
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Stars & Stripes fanny pack",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2403,15 +2016,8 @@
         "wins": 45,
         "losses": 44
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Postgame fireworks",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2427,8 +2033,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2444,8 +2049,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2460,15 +2064,8 @@
         "wins": 46,
         "losses": 46
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Bark at the Park",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2483,15 +2080,8 @@
         "wins": 47,
         "losses": 46
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Ty France bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2506,15 +2096,8 @@
         "wins": 47,
         "losses": 47
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "DC Comics ticket special: Wonder Woman bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2530,8 +2113,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2547,8 +2129,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2564,8 +2145,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2581,8 +2161,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2598,8 +2177,7 @@
         "losses": 51
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2615,8 +2193,7 @@
         "losses": 51
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2632,8 +2209,7 @@
         "losses": 52
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2648,15 +2224,8 @@
         "wins": 60,
         "losses": 52
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Sesame Street ticket special: Elmo bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2671,15 +2240,8 @@
         "wins": 61,
         "losses": 52
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Bark at the Park",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2694,15 +2256,8 @@
         "wins": 62,
         "losses": 52
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Félix-themed postgame fireworks",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2717,15 +2272,8 @@
         "wins": 63,
         "losses": 52
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Félix Hernández Mariners Hall of Fame induction ceremony",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2740,15 +2288,8 @@
         "wins": 63,
         "losses": 53
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Félix Hernández Hall of Fame bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2763,15 +2304,8 @@
         "wins": 71,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Postgame fireworks",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2787,8 +2321,7 @@
         "losses": 56
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2804,8 +2337,7 @@
         "losses": 56
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2821,8 +2353,7 @@
         "losses": 56
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2837,15 +2368,8 @@
         "wins": 75,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Julio Rodríguez Funko POP! + Peanuts ticket special Charlie Brown bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2861,8 +2385,7 @@
         "losses": 57
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2877,15 +2400,8 @@
         "wins": 79,
         "losses": 64
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Bark at the Park + World Baseball Classic ticket special Julio Rodríguez bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2900,15 +2416,8 @@
         "wins": 79,
         "losses": 65
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "World Baseball Classic ticket special: Eugenio Suárez bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2924,8 +2433,7 @@
         "losses": 65
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2941,8 +2449,7 @@
         "losses": 65
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2958,8 +2465,7 @@
         "losses": 66
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2975,8 +2481,7 @@
         "losses": 67
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -2992,8 +2497,7 @@
         "losses": 71
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3009,8 +2513,7 @@
         "losses": 72
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3026,8 +2529,7 @@
         "losses": 72
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3043,8 +2545,7 @@
         "losses": 73
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3059,15 +2560,8 @@
         "wins": 86,
         "losses": 73
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Postgame fireworks",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3083,8 +2577,7 @@
         "losses": 73
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3100,8 +2593,7 @@
         "losses": 74
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3116,15 +2608,8 @@
         "wins": 0,
         "losses": 0
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Opening Day magnetic schedule",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3139,15 +2624,8 @@
         "wins": 0,
         "losses": 1
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "College Night ($10 tickets)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3163,8 +2641,7 @@
         "losses": 1
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3180,8 +2657,7 @@
         "losses": 1
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3196,15 +2672,8 @@
         "wins": 2,
         "losses": 2
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Julio Rodríguez \"No-Fly Zone\" bobblehead + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3219,15 +2688,8 @@
         "wins": 3,
         "losses": 2
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Julio Rodríguez \"No-Fly Zone\" bobblehead + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3242,15 +2704,8 @@
         "wins": 3,
         "losses": 3
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Julio Rodríguez \"No-Fly Zone\" bobblehead + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3265,15 +2720,8 @@
         "wins": 5,
         "losses": 8
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Hoodie + DC Comics Night (Aquaman ticket-special bobblehead) + College Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3288,15 +2736,8 @@
         "wins": 6,
         "losses": 8
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Salute to Armed Forces cap and jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3311,15 +2752,8 @@
         "wins": 6,
         "losses": 9
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Little League Day (kids poster)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3334,15 +2768,8 @@
         "wins": 6,
         "losses": 10
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Ken Griffey Jr. \"Home Run Robbery\" bobblehead + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3357,15 +2784,8 @@
         "wins": 7,
         "losses": 10
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Ken Griffey Jr. \"Home Run Robbery\" bobblehead + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3380,15 +2800,8 @@
         "wins": 8,
         "losses": 10
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Ken Griffey Jr. \"Home Run Robbery\" bobblehead + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3403,15 +2816,8 @@
         "wins": 13,
         "losses": 12
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Turn Ahead the Clock jersey + College Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3426,15 +2832,8 @@
         "wins": 14,
         "losses": 12
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "'90s Night neon hat + CWU jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3449,15 +2848,8 @@
         "wins": 15,
         "losses": 12
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Little League Day (kids poster)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3472,15 +2864,8 @@
         "wins": 15,
         "losses": 13
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Bark at the Park + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3495,15 +2880,8 @@
         "wins": 16,
         "losses": 13
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Hello Kitty Night (ticket-special jersey) + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3518,15 +2896,8 @@
         "wins": 17,
         "losses": 13
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3541,15 +2912,8 @@
         "wins": 20,
         "losses": 18
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Cal Raleigh POP! + Teacher Appreciation mug + College Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3565,8 +2929,7 @@
         "losses": 18
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3581,15 +2944,8 @@
         "wins": 21,
         "losses": 19
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Mother's Day crossbody bag + Little League Day",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3604,15 +2960,8 @@
         "wins": 22,
         "losses": 19
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3627,15 +2976,8 @@
         "wins": 23,
         "losses": 19
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Nurse Appreciation Night mug + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3650,15 +2992,8 @@
         "wins": 23,
         "losses": 20
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3674,8 +3009,7 @@
         "losses": 26
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3690,15 +3024,8 @@
         "wins": 29,
         "losses": 26
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Peanuts Night (Snoopy & Woodstock ticket-special bobblehead) + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3713,15 +3040,8 @@
         "wins": 30,
         "losses": 26
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "AANHPI Heritage Night + Bark at the Park + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3736,15 +3056,8 @@
         "wins": 31,
         "losses": 26
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3759,15 +3072,8 @@
         "wins": 31,
         "losses": 27
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Country Music Fireworks Night + College Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3782,15 +3088,8 @@
         "wins": 32,
         "losses": 27
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Pride Day trucker hat + Zags Day",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3805,15 +3104,8 @@
         "wins": 33,
         "losses": 27
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Little League Day + ALS Awareness Day",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3828,15 +3120,8 @@
         "wins": 37,
         "losses": 30
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Bark at the Park + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3851,15 +3136,8 @@
         "wins": 38,
         "losses": 30
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3874,15 +3152,8 @@
         "wins": 39,
         "losses": 30
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Star Wars Night + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3897,15 +3168,8 @@
         "wins": 40,
         "losses": 30
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Pride Month t-shirt + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3920,15 +3184,8 @@
         "wins": 40,
         "losses": 31
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3944,8 +3201,7 @@
         "losses": 31
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3960,15 +3216,8 @@
         "wins": 42,
         "losses": 31
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Father's Day seat cushion + Youth Softball Day",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -3983,15 +3232,8 @@
         "wins": 46,
         "losses": 37
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "J.P. Crawford City Connect bobblehead + Filipino Heritage Night jacket",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4006,15 +3248,8 @@
         "wins": 47,
         "losses": 37
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Aloha shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4030,8 +3265,7 @@
         "losses": 38
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4046,15 +3280,8 @@
         "wins": 47,
         "losses": 39
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Bark at the Park + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4069,15 +3296,8 @@
         "wins": 47,
         "losses": 40
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4093,8 +3313,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4110,8 +3329,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4127,8 +3345,7 @@
         "losses": 41
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4144,8 +3361,7 @@
         "losses": 42
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4160,15 +3376,8 @@
         "wins": 52,
         "losses": 46
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks Night + Pickleball Night (paddle)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4183,15 +3392,8 @@
         "wins": 52,
         "losses": 47
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "WSU Cougs Night jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4206,15 +3408,8 @@
         "wins": 52,
         "losses": 48
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "EWU Day jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4229,15 +3424,8 @@
         "wins": 53,
         "losses": 48
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Sesame Street ticket special: Cookie Monster bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4252,15 +3440,8 @@
         "wins": 53,
         "losses": 49
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "International Trading Card Day (trading cards)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4276,8 +3457,7 @@
         "losses": 50
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4292,15 +3472,8 @@
         "wins": 57,
         "losses": 53
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "UW Alumni Night jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4315,15 +3488,8 @@
         "wins": 58,
         "losses": 53
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "University of Idaho Night jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4338,15 +3504,8 @@
         "wins": 59,
         "losses": 53
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Bucket hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4361,15 +3520,8 @@
         "wins": 59,
         "losses": 54
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Harry Potter Night hat + House of the Dragon Luis Castillo ticket-special bobblehead + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4384,15 +3536,8 @@
         "wins": 59,
         "losses": 55
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Bark at the Park + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4407,15 +3552,8 @@
         "wins": 59,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Grateful Dead ticket special (Dancing Bear bobblehead) + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4430,15 +3568,8 @@
         "wins": 60,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks Night + Season Ticket Member Appreciation + Seattle U Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4453,15 +3584,8 @@
         "wins": 61,
         "losses": 56
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Boise State Night jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4477,8 +3601,7 @@
         "losses": 56
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4493,15 +3616,8 @@
         "wins": 64,
         "losses": 64
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks Night + Margaritaville Night shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4516,15 +3632,8 @@
         "wins": 65,
         "losses": 64
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Bowling Night shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4540,8 +3649,7 @@
         "losses": 65
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4556,15 +3664,8 @@
         "wins": 66,
         "losses": 65
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Native American Heritage jersey + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4579,15 +3680,8 @@
         "wins": 67,
         "losses": 65
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Card Show ticket special Julio Rodríguez bobblehead + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4602,15 +3696,8 @@
         "wins": 67,
         "losses": 66
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4625,15 +3712,8 @@
         "wins": 73,
         "losses": 71
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Hello Kitty Night crossbody bag + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4648,15 +3728,8 @@
         "wins": 73,
         "losses": 72
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4671,15 +3744,8 @@
         "wins": 74,
         "losses": 72
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Bark at the Park + Value Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4694,15 +3760,8 @@
         "wins": 74,
         "losses": 73
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks Night + Teacher Appreciation Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4717,15 +3776,8 @@
         "wins": 75,
         "losses": 73
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Luis Castillo POP! + Oktoberfest stein",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4740,15 +3792,8 @@
         "wins": 76,
         "losses": 73
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Hispanic Heritage Day",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4763,15 +3808,8 @@
         "wins": 77,
         "losses": 73
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Irish Heritage Night jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4786,15 +3824,8 @@
         "wins": 77,
         "losses": 74
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Flannel Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4810,8 +3841,7 @@
         "losses": 75
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4826,15 +3856,8 @@
         "wins": 82,
         "losses": 77
       },
-      "promotions": [
-        {
-          "type": "Ticket Offer",
-          "name": "Fan Appreciation Night + Fireworks Night + College Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4850,8 +3873,7 @@
         "losses": 77
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -4866,15 +3888,8 @@
         "wins": 84,
         "losses": 77
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Kids Appreciation Day + Pink at the Park t-shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mariners",
@@ -6792,6 +5807,8 @@
       "attendance": 47290,
       "kind": "announced",
       "postseason": true,
+      "round": "AL Division Series",
+      "game": 1,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -6805,6 +5822,8 @@
       "attendance": 47371,
       "kind": "announced",
       "postseason": true,
+      "round": "AL Division Series",
+      "game": 2,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -6818,6 +5837,8 @@
       "attendance": 47025,
       "kind": "announced",
       "postseason": true,
+      "round": "AL Division Series",
+      "game": 5,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -6831,6 +5852,8 @@
       "attendance": 46471,
       "kind": "announced",
       "postseason": true,
+      "round": "AL Championship Series",
+      "game": 3,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -6844,6 +5867,8 @@
       "attendance": 46981,
       "kind": "announced",
       "postseason": true,
+      "round": "AL Championship Series",
+      "game": 4,
       "promotions": [],
       "sourceId": "mlb"
     },
@@ -6857,6 +5882,8 @@
       "attendance": 46758,
       "kind": "announced",
       "postseason": true,
+      "round": "AL Championship Series",
+      "game": 5,
       "promotions": [],
       "sourceId": "mlb"
     },

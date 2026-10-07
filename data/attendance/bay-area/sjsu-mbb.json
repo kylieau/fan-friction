@@ -501,6 +501,19 @@
     },
     {
       "teamId": "sjsu-mbb",
+      "season": 2025,
+      "date": "2025-03-19",
+      "start": "20:00",
+      "opponent": "Loyola Chicago",
+      "venueId": "provident-event-center",
+      "attendance": 3627,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NIT - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-mbb",
       "season": 2026,
       "date": "2025-11-17",
       "start": "19:00",

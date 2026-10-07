@@ -17,15 +17,8 @@
         "wins": 5,
         "losses": 2
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Jackie Robinson Brooklyn Dodgers name-and-number t-shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -40,15 +33,8 @@
         "wins": 6,
         "losses": 2
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Tom Seaver replica statue",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -64,8 +50,7 @@
         "losses": 3
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -81,8 +66,7 @@
         "losses": 3
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -98,8 +82,7 @@
         "losses": 3
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -115,8 +98,7 @@
         "losses": 3
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -132,8 +114,7 @@
         "losses": 4
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -149,8 +130,7 @@
         "losses": 6
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -165,15 +145,8 @@
         "wins": 15,
         "losses": 6
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Francisco Lindor bobble gnome",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -189,8 +162,7 @@
         "losses": 7
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -206,8 +178,7 @@
         "losses": 7
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -223,8 +194,7 @@
         "losses": 8
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -239,15 +209,8 @@
         "wins": 18,
         "losses": 8
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Trevor May Mandalorian bobblehead (Star Wars Night)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -263,8 +226,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -279,15 +241,8 @@
         "wins": 22,
         "losses": 12
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Polar Bear Pete Alonso bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -302,15 +257,8 @@
         "wins": 23,
         "losses": 12
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Mr. & Mrs. Met sidewalk chalk",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -326,8 +274,7 @@
         "losses": 13
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -343,8 +290,7 @@
         "losses": 13
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -360,8 +306,7 @@
         "losses": 14
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -377,8 +322,7 @@
         "losses": 14
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -394,8 +338,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -411,8 +354,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -428,8 +370,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -445,8 +386,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -462,8 +402,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -479,8 +418,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -496,8 +434,7 @@
         "losses": 22
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -513,8 +450,7 @@
         "losses": 22
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -530,8 +466,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -547,8 +482,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -564,8 +498,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -581,8 +514,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -598,8 +530,7 @@
         "losses": 24
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -615,8 +546,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -632,8 +562,7 @@
         "losses": 28
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -649,8 +578,7 @@
         "losses": 29
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -666,8 +594,7 @@
         "losses": 29
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -683,8 +610,7 @@
         "losses": 30
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -700,8 +626,7 @@
         "losses": 31
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -717,8 +642,7 @@
         "losses": 31
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -733,15 +657,8 @@
         "wins": 52,
         "losses": 32
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Keith Hernandez bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -757,8 +674,7 @@
         "losses": 32
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -774,8 +690,7 @@
         "losses": 35
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -791,8 +706,7 @@
         "losses": 36
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -807,15 +721,8 @@
         "wins": 58,
         "losses": 37
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Gil Hodges bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -831,8 +738,7 @@
         "losses": 37
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -848,8 +754,7 @@
         "losses": 37
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -865,8 +770,7 @@
         "losses": 38
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -882,8 +786,7 @@
         "losses": 38
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -898,15 +801,8 @@
         "wins": 67,
         "losses": 39
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Jacob deGrom strikeout-counter bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -921,15 +817,8 @@
         "wins": 68,
         "losses": 39
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Jacob deGrom strikeout-counter bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -945,8 +834,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -962,8 +850,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -979,8 +866,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -996,8 +882,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1013,8 +898,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1029,15 +913,8 @@
         "wins": 73,
         "losses": 40
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Ron Darling bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1053,8 +930,7 @@
         "losses": 40
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1070,8 +946,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1086,15 +961,8 @@
         "wins": 80,
         "losses": 46
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Max Scherzer strikeout-counter bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1110,8 +978,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1127,8 +994,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1144,8 +1010,7 @@
         "losses": 47
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1161,8 +1026,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1178,8 +1042,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1195,8 +1058,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1212,8 +1074,7 @@
         "losses": 48
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1229,8 +1090,7 @@
         "losses": 49
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1246,8 +1106,7 @@
         "losses": 52
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1263,8 +1122,7 @@
         "losses": 53
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1279,15 +1137,8 @@
         "wins": 89,
         "losses": 54
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Sparky and Mr. Met bobblehead (theme ticket)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1303,8 +1154,7 @@
         "losses": 55
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1320,8 +1170,7 @@
         "losses": 55
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1336,15 +1185,8 @@
         "wins": 91,
         "losses": 55
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Gary Cohen bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1360,8 +1202,7 @@
         "losses": 55
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1377,8 +1218,7 @@
         "losses": 57
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1394,8 +1234,7 @@
         "losses": 58
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1411,8 +1250,7 @@
         "losses": 61
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1428,8 +1266,7 @@
         "losses": 61
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1445,8 +1282,7 @@
         "losses": 61
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1458,9 +1294,10 @@
       "attendance": 41621,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 1,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1472,9 +1309,10 @@
       "attendance": 42156,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 2,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1486,9 +1324,10 @@
       "attendance": 39241,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 3,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1504,8 +1343,7 @@
         "losses": 4
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1521,8 +1359,7 @@
         "losses": 4
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1537,15 +1374,8 @@
         "wins": 4,
         "losses": 4
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Citi Field replica",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1561,8 +1391,7 @@
         "losses": 4
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1578,8 +1407,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1595,8 +1423,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1612,8 +1439,7 @@
         "losses": 6
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1629,8 +1455,7 @@
         "losses": 9
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1646,8 +1471,7 @@
         "losses": 10
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1663,8 +1487,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1680,8 +1503,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1697,8 +1519,7 @@
         "losses": 63
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1714,8 +1535,7 @@
         "losses": 13
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1731,8 +1551,7 @@
         "losses": 13
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1747,15 +1566,8 @@
         "wins": 16,
         "losses": 16
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks (first Friday home game of May)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1770,15 +1582,8 @@
         "wins": 17,
         "losses": 16
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Mental Health Awareness Day + knit series Mrs. Met",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1794,8 +1599,7 @@
         "losses": 17
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1811,8 +1615,7 @@
         "losses": 22
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1828,8 +1631,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1845,8 +1647,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1862,8 +1663,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1879,8 +1679,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1896,8 +1695,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1913,8 +1711,7 @@
         "losses": 23
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1930,8 +1727,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1946,15 +1742,8 @@
         "wins": 28,
         "losses": 27
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Howie Rose sound bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1970,8 +1759,7 @@
         "losses": 27
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -1986,15 +1774,8 @@
         "wins": 30,
         "losses": 27
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks (first Friday home game of June)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2009,15 +1790,8 @@
         "wins": 30,
         "losses": 28
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Mets Hall of Fame induction (Johnson / Leiter / Cohen / Rose)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2032,15 +1806,8 @@
         "wins": 30,
         "losses": 29
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Pete Alonso-inspired neon sunglasses",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2056,8 +1823,7 @@
         "losses": 35
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2073,8 +1839,7 @@
         "losses": 36
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2089,15 +1854,8 @@
         "wins": 32,
         "losses": 36
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Pride Night hand fan",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2113,8 +1871,7 @@
         "losses": 36
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2129,15 +1886,8 @@
         "wins": 33,
         "losses": 37
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Father's Day bucket hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2152,15 +1902,8 @@
         "wins": 35,
         "losses": 42
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Starling Marte Black Panther bobblehead + Black Legacy Game",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2175,15 +1918,8 @@
         "wins": 35,
         "losses": 43
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Mr. Met as Indiana Jones bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2199,8 +1935,7 @@
         "losses": 43
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2215,15 +1950,8 @@
         "wins": 36,
         "losses": 44
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Filipino Heritage Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2239,8 +1967,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2256,8 +1983,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2273,8 +1999,7 @@
         "losses": 46
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2289,15 +2014,8 @@
         "wins": 42,
         "losses": 48
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks (first Friday home game of July)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2313,8 +2031,7 @@
         "losses": 49
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2330,8 +2047,7 @@
         "losses": 50
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2346,15 +2062,8 @@
         "wins": 43,
         "losses": 50
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Basketball jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2369,15 +2078,8 @@
         "wins": 44,
         "losses": 50
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Topps baseball cards",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2393,8 +2095,7 @@
         "losses": 50
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2409,15 +2110,8 @@
         "wins": 47,
         "losses": 54
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Soccer jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2433,8 +2127,7 @@
         "losses": 54
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2450,8 +2143,7 @@
         "losses": 54
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2467,8 +2159,7 @@
         "losses": 55
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2484,8 +2175,7 @@
         "losses": 61
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2501,8 +2191,7 @@
         "losses": 61
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2517,15 +2206,8 @@
         "wins": 51,
         "losses": 62
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Football jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2540,15 +2222,8 @@
         "wins": 52,
         "losses": 62
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks (first Friday home game of August)",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2563,15 +2238,8 @@
         "wins": 52,
         "losses": 63
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Knit series Mr. Met",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2586,15 +2254,8 @@
         "wins": 52,
         "losses": 64
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Knit series Mr. Met",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2609,15 +2270,8 @@
         "wins": 52,
         "losses": 65
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Irish Heritage Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2632,15 +2286,8 @@
         "wins": 53,
         "losses": 65
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Korean Heritage Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2655,15 +2302,8 @@
         "wins": 54,
         "losses": 65
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Edwin Díaz trumpet bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2678,15 +2318,8 @@
         "wins": 54,
         "losses": 66
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Max Scherzer-inspired two-tone sunglasses",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2701,15 +2334,8 @@
         "wins": 59,
         "losses": 69
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Japanese Heritage Night + Kodai Senga glow-in-the-dark ghost fork ball",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2724,15 +2350,8 @@
         "wins": 59,
         "losses": 70
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Women's Equality Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2747,15 +2366,8 @@
         "wins": 59,
         "losses": 71
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Taiwanese Heritage Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2771,8 +2383,7 @@
         "losses": 71
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2788,8 +2399,7 @@
         "losses": 72
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2804,15 +2414,8 @@
         "wins": 60,
         "losses": 73
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "MLB Network hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2827,15 +2430,8 @@
         "wins": 61,
         "losses": 73
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Chinese Heritage Night + fireworks",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2850,15 +2446,8 @@
         "wins": 62,
         "losses": 73
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Corduroy hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2873,15 +2462,8 @@
         "wins": 62,
         "losses": 74
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Jewish Heritage Day",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2897,8 +2479,7 @@
         "losses": 77
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2913,15 +2494,8 @@
         "wins": 65,
         "losses": 78
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Hockey jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2937,8 +2511,7 @@
         "losses": 78
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2954,8 +2527,7 @@
         "losses": 78
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2970,15 +2542,8 @@
         "wins": 68,
         "losses": 78
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Hispanic Heritage Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -2994,8 +2559,7 @@
         "losses": 79
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3011,8 +2575,7 @@
         "losses": 80
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3028,8 +2591,7 @@
         "losses": 85
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3045,8 +2607,7 @@
         "losses": 85
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3061,15 +2622,8 @@
         "wins": 75,
         "losses": 87
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Buck Showalter-inspired windbreaker",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3085,8 +2639,7 @@
         "losses": 86
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3101,15 +2654,8 @@
         "wins": 74,
         "losses": 86
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Tie-dye headband",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3125,8 +2671,7 @@
         "losses": 86
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3142,8 +2687,7 @@
         "losses": 87
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3159,8 +2703,7 @@
         "losses": 1
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3176,8 +2719,7 @@
         "losses": 1
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3193,8 +2735,7 @@
         "losses": 1
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3210,8 +2751,7 @@
         "losses": 2
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3226,15 +2766,8 @@
         "wins": 0,
         "losses": 3
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Rugby shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3250,8 +2783,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3267,8 +2799,7 @@
         "losses": 5
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3284,8 +2815,7 @@
         "losses": 7
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3300,15 +2830,8 @@
         "wins": 6,
         "losses": 7
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Dwight Gooden moving-arm bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3323,15 +2846,8 @@
         "wins": 6,
         "losses": 8
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Dwight Gooden #16 jersey retirement",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3347,8 +2863,7 @@
         "losses": 8
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3364,8 +2879,7 @@
         "losses": 8
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3381,8 +2895,7 @@
         "losses": 8
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3398,8 +2911,7 @@
         "losses": 11
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3414,15 +2926,8 @@
         "wins": 13,
         "losses": 12
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Hogwarts House scarves",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3438,8 +2943,7 @@
         "losses": 13
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3455,8 +2959,7 @@
         "losses": 13
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3472,8 +2975,7 @@
         "losses": 14
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3489,8 +2991,7 @@
         "losses": 14
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3506,8 +3007,7 @@
         "losses": 15
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3523,8 +3023,7 @@
         "losses": 53
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3539,15 +3038,8 @@
         "wins": 18,
         "losses": 19
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Mr. Met London telephone booth bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3562,15 +3054,8 @@
         "wins": 18,
         "losses": 20
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Tumbler",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3586,8 +3071,7 @@
         "losses": 20
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3603,8 +3087,7 @@
         "losses": 21
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3620,8 +3103,7 @@
         "losses": 28
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3636,15 +3118,8 @@
         "wins": 21,
         "losses": 29
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Artist Series Joel Mesler beach tote",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3659,15 +3134,8 @@
         "wins": 21,
         "losses": 30
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Hello Kitty light-up bow bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3683,8 +3151,7 @@
         "losses": 31
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3700,8 +3167,7 @@
         "losses": 31
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3717,8 +3183,7 @@
         "losses": 32
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3734,8 +3199,7 @@
         "losses": 33
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3750,15 +3214,8 @@
         "wins": 23,
         "losses": 33
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3773,15 +3230,8 @@
         "wins": 24,
         "losses": 33
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Darryl Strawberry #18 jersey retirement",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3796,15 +3246,8 @@
         "wins": 24,
         "losses": 34
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Darryl Strawberry baseball-card bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3820,8 +3263,7 @@
         "losses": 35
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3837,8 +3279,7 @@
         "losses": 36
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3854,8 +3295,7 @@
         "losses": 37
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3871,8 +3311,7 @@
         "losses": 37
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3888,8 +3327,7 @@
         "losses": 37
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3904,15 +3342,8 @@
         "wins": 31,
         "losses": 37
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Hawaiian shirt",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3928,8 +3359,7 @@
         "losses": 37
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3945,8 +3375,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3962,8 +3391,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -3978,15 +3406,8 @@
         "wins": 39,
         "losses": 39
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Pride hat + fireworks",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4002,8 +3423,7 @@
         "losses": 39
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4018,15 +3438,8 @@
         "wins": 40,
         "losses": 40
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Basketball jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4041,15 +3454,8 @@
         "wins": 44,
         "losses": 45
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Soccer jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4065,8 +3471,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4082,8 +3487,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4098,15 +3502,8 @@
         "wins": 47,
         "losses": 45
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Brandon Nimmo bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4121,15 +3518,8 @@
         "wins": 48,
         "losses": 45
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Artist Series Rashid Johnson bucket hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4145,8 +3535,7 @@
         "losses": 45
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4161,15 +3550,8 @@
         "wins": 53,
         "losses": 48
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Pickleball paddle",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4184,15 +3566,8 @@
         "wins": 54,
         "losses": 48
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4207,15 +3582,8 @@
         "wins": 55,
         "losses": 48
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Mike Piazza Mercury Mets replica jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4231,8 +3599,7 @@
         "losses": 49
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4247,15 +3614,8 @@
         "wins": 55,
         "losses": 50
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Francisco Lindor streetwear bobblehead",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4271,8 +3631,7 @@
         "losses": 50
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4287,15 +3646,8 @@
         "wins": 57,
         "losses": 50
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Topps baseball cards",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4311,8 +3663,7 @@
         "losses": 57
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4328,8 +3679,7 @@
         "losses": 58
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4345,8 +3695,7 @@
         "losses": 58
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4361,15 +3710,8 @@
         "wins": 62,
         "losses": 59
       },
-      "promotions": [
-        {
-          "type": "Day of Game Highlights",
-          "name": "Fireworks Night",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4385,8 +3727,7 @@
         "losses": 59
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4401,15 +3742,8 @@
         "wins": 64,
         "losses": 59
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Football jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4425,8 +3759,7 @@
         "losses": 60
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4442,8 +3775,7 @@
         "losses": 60
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4459,8 +3791,7 @@
         "losses": 61
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4476,8 +3807,7 @@
         "losses": 64
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4492,15 +3822,8 @@
         "wins": 74,
         "losses": 64
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Artist Series Sarah Sze baseball hat",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4516,8 +3839,7 @@
         "losses": 64
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4533,8 +3855,7 @@
         "losses": 64
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4549,15 +3870,8 @@
         "wins": 77,
         "losses": 64
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Hockey jersey",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4573,8 +3887,7 @@
         "losses": 64
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4590,8 +3903,7 @@
         "losses": 68
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4607,8 +3919,7 @@
         "losses": 68
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4623,15 +3934,8 @@
         "wins": 83,
         "losses": 68
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Reversible hoodie",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4647,8 +3951,7 @@
         "losses": 68
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4664,8 +3967,7 @@
         "losses": 68
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4680,15 +3982,8 @@
         "wins": 85,
         "losses": 69
       },
-      "promotions": [
-        {
-          "type": "Giveaway",
-          "name": "Fan Appreciation beanie",
-          "source": "research"
-        }
-      ],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "promotions": [],
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4704,8 +3999,7 @@
         "losses": 69
       },
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4717,9 +4011,10 @@
       "attendance": 44093,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 3,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4731,9 +4026,10 @@
       "attendance": 44103,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Division Series",
+      "game": 4,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4745,9 +4041,10 @@
       "attendance": 43883,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Championship Series",
+      "game": 3,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4759,9 +4056,10 @@
       "attendance": 43882,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Championship Series",
+      "game": 4,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",
@@ -4773,9 +4071,10 @@
       "attendance": 43841,
       "kind": "announced",
       "postseason": true,
+      "round": "NL Championship Series",
+      "game": 5,
       "promotions": [],
-      "sourceId": "mlb",
-      "promotionsSource": "research"
+      "sourceId": "mlb"
     },
     {
       "teamId": "mets",

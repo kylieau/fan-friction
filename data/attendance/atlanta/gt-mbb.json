@@ -567,6 +567,19 @@
     },
     {
       "teamId": "gt-mbb",
+      "season": 2025,
+      "date": "2025-03-18",
+      "start": "19:00",
+      "opponent": "Jax State",
+      "venueId": "mccamish-pavilion",
+      "attendance": 1623,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NIT - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-mbb",
       "season": 2026,
       "date": "2025-11-03",
       "start": "19:30",

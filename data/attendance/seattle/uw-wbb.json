@@ -193,6 +193,58 @@
     },
     {
       "teamId": "uw-wbb",
+      "season": 2023,
+      "date": "2023-03-16",
+      "start": "19:00",
+      "opponent": "San Francisco",
+      "venueId": "alaska-airlines-arena",
+      "attendance": 1110,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Women's NIT - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-wbb",
+      "season": 2023,
+      "date": "2023-03-19",
+      "start": "17:00",
+      "opponent": "New Mexico",
+      "venueId": "alaska-airlines-arena",
+      "attendance": 1455,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Women's NIT - 2nd Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-wbb",
+      "season": 2023,
+      "date": "2023-03-24",
+      "start": "19:00",
+      "opponent": "Kansas St",
+      "venueId": "alaska-airlines-arena",
+      "attendance": 3245,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Women's NIT - 3rd Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-wbb",
+      "season": 2023,
+      "date": "2023-03-26",
+      "start": "15:00",
+      "opponent": "Oregon",
+      "venueId": "alaska-airlines-arena",
+      "attendance": 3052,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Women's NIT - Quarterfinal",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-wbb",
       "season": 2024,
       "date": "2023-11-06",
       "start": "17:30",
@@ -365,6 +417,19 @@
       "venueId": "alaska-airlines-arena",
       "attendance": 3284,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-wbb",
+      "season": 2024,
+      "date": "2024-03-21",
+      "start": "19:00",
+      "opponent": "Georgetown",
+      "venueId": "alaska-airlines-arena",
+      "attendance": 699,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - 1st Round",
       "sourceId": "espn"
     },
     {

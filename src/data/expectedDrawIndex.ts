@@ -4,9 +4,9 @@
 // one kind of date (src/data/expectedDrawBuild.ts), with the middle half of
 // those games as the range. Always an estimate; the building stays the ceiling.
 
-import type { ExpectedDrawRow, OpponentRatioRow, SeasonLevelRow } from './expectedDrawBuild';
+import type { ExpectedDrawRow, OpponentRatioRow, PostseasonRow, SeasonLevelRow } from './expectedDrawBuild';
 
-export type { DayClass, ExpectedDrawRow, OpponentRatioRow, SeasonLevelRow } from './expectedDrawBuild';
+export type { DayClass, ExpectedDrawRow, OpponentRatioRow, PostseasonRow, SeasonLevelRow } from './expectedDrawBuild';
 
 export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   {
@@ -15,10 +15,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "mercedes-benz-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 42600,
-    "low": 41893,
-    "high": 43330,
-    "games": 33,
+    "count": 42584,
+    "low": 41890,
+    "high": 43179,
+    "games": 32,
     "seasons": "2024–2025"
   },
   {
@@ -40,9 +40,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "saturday",
     "month": null,
     "count": 42601,
-    "low": 41984,
-    "high": 43338,
-    "games": 21,
+    "low": 41961,
+    "high": 43332,
+    "games": 20,
     "seasons": "2024–2025"
   },
   {
@@ -5955,10 +5955,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "all",
     "month": null,
-    "count": 21722,
-    "low": 19395,
-    "high": 25174,
-    "games": 35,
+    "count": 21215,
+    "low": 19287,
+    "high": 23627,
+    "games": 31,
     "seasons": "2024–2025"
   },
   {
@@ -5979,10 +5979,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "saturday",
     "month": null,
-    "count": 22973,
-    "low": 20163,
+    "count": 22198,
+    "low": 20043,
     "high": 25174,
-    "games": 24,
+    "games": 21,
     "seasons": "2024–2025"
   },
   {
@@ -6039,10 +6039,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "saturday",
     "month": 10,
-    "count": 21425,
-    "low": 18175,
-    "high": 25046,
-    "games": 4,
+    "count": 18312,
+    "low": 18039,
+    "high": 22443,
+    "games": 3,
     "seasons": "2024–2025"
   },
   {
@@ -6051,10 +6051,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "dignity-health-sports-park",
     "dayClass": "sunday",
     "month": null,
-    "count": 21215,
-    "low": 19287,
-    "high": 24209,
-    "games": 7,
+    "count": 20259,
+    "low": 19279,
+    "high": 22616,
+    "games": 6,
     "seasons": "2024–2025"
   },
   {
@@ -6315,10 +6315,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 22125,
-    "low": 22091,
-    "high": 22185,
-    "games": 36,
+    "count": 22119,
+    "low": 22066,
+    "high": 22166,
+    "games": 32,
     "seasons": "2024–2025"
   },
   {
@@ -6327,22 +6327,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "weekday",
     "month": null,
-    "count": 22131,
-    "low": 22053,
-    "high": 22156,
-    "games": 8,
-    "seasons": "2024–2025"
-  },
-  {
-    "metroId": "la",
-    "teamId": "lafc",
-    "venueId": "bmo-stadium",
-    "dayClass": "weekday",
-    "month": 10,
-    "count": 22064,
+    "count": 22120,
     "low": 22042,
-    "high": 22103,
-    "games": 3,
+    "high": 22158,
+    "games": 7,
     "seasons": "2024–2025"
   },
   {
@@ -6351,10 +6339,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "saturday",
     "month": null,
-    "count": 22122,
-    "low": 22102,
-    "high": 22161,
-    "games": 19,
+    "count": 22120,
+    "low": 22101,
+    "high": 22144,
+    "games": 18,
     "seasons": "2024–2025"
   },
   {
@@ -6411,11 +6399,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "bmo-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 22212,
-    "low": 22092,
-    "high": 22600,
-    "games": 7,
-    "seasons": "2024–2025"
+    "count": 22164,
+    "low": 22079,
+    "high": 22729,
+    "games": 6,
+    "seasons": "2025"
   },
   {
     "metroId": "la",
@@ -7827,10 +7815,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 8890,
-    "low": 7330,
-    "high": 10640,
-    "games": 25,
+    "count": 8706,
+    "low": 7276,
+    "high": 10459,
+    "games": 24,
     "seasons": "2024–2025"
   },
   {
@@ -7875,10 +7863,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 8038,
-    "low": 7169,
-    "high": 9563,
-    "games": 14,
+    "count": 7680,
+    "low": 7115,
+    "high": 8996,
+    "games": 13,
     "seasons": "2024–2025"
   },
   {
@@ -9652,9 +9640,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "all",
     "month": null,
     "count": 21611,
-    "low": 19897,
-    "high": 24891,
-    "games": 13,
+    "low": 20485,
+    "high": 27782,
+    "games": 11,
     "seasons": "2024–2025"
   },
   {
@@ -9664,9 +9652,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "saturday",
     "month": null,
     "count": 24428,
-    "low": 21073,
-    "high": 24891,
-    "games": 9,
+    "low": 21285,
+    "high": 27782,
+    "games": 7,
     "seasons": "2024–2025"
   },
   {
@@ -9687,10 +9675,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "yankee-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 19537,
-    "low": 18598,
-    "high": 20189,
-    "games": 20,
+    "count": 19679,
+    "low": 18574,
+    "high": 20190,
+    "games": 19,
     "seasons": "2024–2025"
   },
   {
@@ -9723,10 +9711,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "yankee-stadium",
     "dayClass": "saturday",
     "month": null,
-    "count": 20084,
-    "low": 19051,
-    "high": 20192,
-    "games": 9,
+    "count": 20102,
+    "low": 19482,
+    "high": 20330,
+    "games": 8,
     "seasons": "2024–2025"
   },
   {
@@ -9747,10 +9735,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sports-illustrated-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 18913,
+    "count": 18660,
     "low": 17525,
-    "high": 21425,
-    "games": 33,
+    "high": 21875,
+    "games": 32,
     "seasons": "2024–2025"
   },
   {
@@ -11031,22 +11019,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "snapdragon-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 28172,
-    "low": 27152,
-    "high": 30711,
-    "games": 20,
-    "seasons": "2025"
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "san-diego-fc",
-    "venueId": "snapdragon-stadium",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 23514,
-    "low": 22938,
-    "high": 28008,
-    "games": 3,
+    "count": 27962,
+    "low": 27127,
+    "high": 28600,
+    "games": 16,
     "seasons": "2025"
   },
   {
@@ -11055,10 +11031,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "snapdragon-stadium",
     "dayClass": "saturday",
     "month": null,
-    "count": 28172,
-    "low": 27223,
-    "high": 29873,
-    "games": 14,
+    "count": 28116,
+    "low": 27158,
+    "high": 29437,
+    "games": 13,
     "seasons": "2025"
   },
   {
@@ -12363,10 +12339,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "lumen-field",
     "dayClass": "all",
     "month": null,
-    "count": 30157,
-    "low": 30042,
-    "high": 31442,
-    "games": 34,
+    "count": 30367,
+    "low": 30044,
+    "high": 31515,
+    "games": 32,
     "seasons": "2024–2025"
   },
   {
@@ -12376,9 +12352,9 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "weekday",
     "month": null,
     "count": 30032,
-    "low": 29676,
-    "high": 30045,
-    "games": 7,
+    "low": 29326,
+    "high": 30041,
+    "games": 5,
     "seasons": "2024–2025"
   },
   {
@@ -12866,8 +12842,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "atlanta",
     "teamId": "atlanta-united",
     "opponent": "miami",
-    "ratio": 1.126,
-    "games": 3
+    "ratio": 1.066,
+    "games": 2
   },
   {
     "metroId": "atlanta",
@@ -15862,56 +15838,56 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "austin",
-    "ratio": 1.004,
+    "ratio": 1.025,
     "games": 2
   },
   {
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "colorado",
-    "ratio": 0.996,
-    "games": 3
+    "ratio": 0.986,
+    "games": 2
   },
   {
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "dallas",
-    "ratio": 0.97,
+    "ratio": 1.012,
     "games": 2
   },
   {
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "houston",
-    "ratio": 0.999,
+    "ratio": 1.008,
     "games": 2
   },
   {
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "kansas-city",
-    "ratio": 0.944,
+    "ratio": 0.948,
     "games": 2
   },
   {
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "lafc",
-    "ratio": 1.042,
+    "ratio": 1.055,
     "games": 2
   },
   {
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "minnesota",
-    "ratio": 0.968,
-    "games": 3
+    "ratio": 0.986,
+    "games": 2
   },
   {
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "portland",
-    "ratio": 1.015,
+    "ratio": 1.027,
     "games": 2
   },
   {
@@ -15925,21 +15901,21 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "san-jose",
-    "ratio": 0.983,
+    "ratio": 0.989,
     "games": 2
   },
   {
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "seattle",
-    "ratio": 0.986,
-    "games": 3
+    "ratio": 0.98,
+    "games": 2
   },
   {
     "metroId": "la",
     "teamId": "galaxy",
     "opponent": "st-louis",
-    "ratio": 0.988,
+    "ratio": 1,
     "games": 2
   },
   {
@@ -16171,7 +16147,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "lafc",
     "opponent": "austin",
     "ratio": 1.001,
-    "games": 3
+    "games": 2
   },
   {
     "metroId": "la",
@@ -16198,7 +16174,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "la",
     "teamId": "lafc",
     "opponent": "kansas-city",
-    "ratio": 0.932,
+    "ratio": 0.933,
     "games": 2
   },
   {
@@ -16226,7 +16202,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "la",
     "teamId": "lafc",
     "opponent": "salt-lake",
-    "ratio": 1.008,
+    "ratio": 1.009,
     "games": 2
   },
   {
@@ -16241,7 +16217,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "lafc",
     "opponent": "seattle",
     "ratio": 1.001,
-    "games": 3
+    "games": 2
   },
   {
     "metroId": "la",
@@ -16254,8 +16230,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "la",
     "teamId": "lafc",
     "opponent": "vancouver",
-    "ratio": 1,
-    "games": 4
+    "ratio": 0.999,
+    "games": 2
   },
   {
     "metroId": "la",
@@ -16884,63 +16860,63 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "chicago",
-    "ratio": 0.99,
+    "ratio": 1.009,
     "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "houston",
-    "ratio": 0.948,
+    "ratio": 0.96,
     "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "kansas-city",
-    "ratio": 1.029,
+    "ratio": 1.035,
     "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "louisville",
-    "ratio": 0.975,
+    "ratio": 0.981,
     "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "north-carolina",
-    "ratio": 0.903,
+    "ratio": 0.914,
     "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "orlando",
-    "ratio": 1.052,
+    "ratio": 1.065,
     "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "portland",
-    "ratio": 1.074,
-    "games": 3
+    "ratio": 0.994,
+    "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "san-diego",
-    "ratio": 0.968,
+    "ratio": 0.974,
     "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "seattle",
-    "ratio": 0.959,
+    "ratio": 0.965,
     "games": 2
   },
   {
@@ -16954,7 +16930,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "gotham",
     "opponent": "washington",
-    "ratio": 1.079,
+    "ratio": 1.086,
     "games": 2
   },
   {
@@ -18102,21 +18078,14 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "nycfc",
     "opponent": "charlotte",
-    "ratio": 0.99,
-    "games": 3
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "nycfc",
-    "opponent": "chicago",
     "ratio": 1,
     "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "nycfc",
-    "opponent": "cincinnati",
-    "ratio": 0.971,
+    "opponent": "chicago",
+    "ratio": 1,
     "games": 2
   },
   {
@@ -18165,8 +18134,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "nycfc",
     "opponent": "red-bull-ny",
-    "ratio": 1.093,
-    "games": 3
+    "ratio": 1.097,
+    "games": 2
   },
   {
     "metroId": "new-york",
@@ -18214,8 +18183,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "red-bulls",
     "opponent": "columbus",
-    "ratio": 1.026,
-    "games": 3
+    "ratio": 1.014,
+    "games": 2
   },
   {
     "metroId": "new-york",
@@ -18776,27 +18745,6 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "yankees",
     "ratio": 0.98,
     "games": 6
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "san-diego-fc",
-    "opponent": "minnesota",
-    "ratio": 1.059,
-    "games": 2
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "san-diego-fc",
-    "opponent": "portland",
-    "ratio": 1.047,
-    "games": 3
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "san-diego-fc",
-    "opponent": "vancouver",
-    "ratio": 1.023,
-    "games": 2
   },
   {
     "metroId": "san-diego",
@@ -19538,7 +19486,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "sounders",
     "opponent": "houston",
     "ratio": 1.002,
-    "games": 3
+    "games": 2
   },
   {
     "metroId": "seattle",
@@ -19565,8 +19513,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "seattle",
     "teamId": "sounders",
     "opponent": "minnesota",
-    "ratio": 1.006,
-    "games": 3
+    "ratio": 1.007,
+    "games": 2
   },
   {
     "metroId": "seattle",
@@ -19665,5 +19613,477 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "seattle-u",
     "ratio": 1.106,
     "games": 2
+  }
+];
+
+/** Playoff occupancy per team, building and round band (expectedDrawBuild.ts buildPostseasonRows). */
+export const POSTSEASON_DRAWS: PostseasonRow[] = [
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "band": "second",
+    "occupancy": 1.035,
+    "low": 0.922,
+    "high": 1.132,
+    "games": 39,
+    "seasons": "2022, 2023, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "band": "first",
+    "occupancy": 1.07,
+    "low": 1,
+    "high": 1.117,
+    "games": 50,
+    "seasons": "2023, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "venueId": "paypal-park",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "venueId": "stanford-stadium",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "earthquakes",
+    "venueId": "levis-stadium",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "giants",
+    "venueId": "oracle-park",
+    "band": "second",
+    "occupancy": 1.027,
+    "low": 0.92,
+    "high": 1.132,
+    "games": 34,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "sharks",
+    "venueId": "sap-center",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.015,
+    "games": 32,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "warriors",
+    "venueId": "chase-center",
+    "band": "first",
+    "occupancy": 1.001,
+    "low": 1,
+    "high": 1.027,
+    "games": 50,
+    "seasons": "2023, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "la",
+    "teamId": "angels",
+    "venueId": "angel-stadium",
+    "band": "second",
+    "occupancy": 1.027,
+    "low": 0.92,
+    "high": 1.132,
+    "games": 34,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "venueId": "crypto-com-arena",
+    "band": "first",
+    "occupancy": 1.017,
+    "low": 1,
+    "high": 1.029,
+    "games": 49,
+    "seasons": "2023, 2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "venueId": "intuit-dome",
+    "band": "first",
+    "occupancy": 1.001,
+    "low": 0.996,
+    "high": 1.034,
+    "games": 47,
+    "seasons": "2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "la",
+    "teamId": "dodgers",
+    "venueId": "dodger-stadium",
+    "band": "second",
+    "occupancy": 0.922,
+    "low": 0.896,
+    "high": 0.966,
+    "games": 9,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "venueId": "honda-center",
+    "band": "first",
+    "occupancy": 0.992,
+    "low": 0.979,
+    "high": 1.014,
+    "games": 35,
+    "seasons": "2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "venueId": "dignity-health-sports-park",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "galaxy",
+    "venueId": "rose-bowl",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "venueId": "crypto-com-arena",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.012,
+    "games": 10,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lafc",
+    "venueId": "bmo-stadium",
+    "band": "first",
+    "occupancy": 0.923,
+    "low": 0.651,
+    "high": 1.012,
+    "games": 25,
+    "seasons": "2023, 2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "venueId": "crypto-com-arena",
+    "band": "first",
+    "occupancy": 1.005,
+    "low": 1.005,
+    "high": 1.008,
+    "games": 11,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "venueId": "prudential-center",
+    "band": "first",
+    "occupancy": 1.018,
+    "low": 1,
+    "high": 1.034,
+    "games": 38,
+    "seasons": "2023, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "venueId": "metlife-stadium",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.015,
+    "games": 32,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "venueId": "ubs-arena",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.013,
+    "games": 37,
+    "seasons": "2023, 2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "venueId": "metlife-stadium",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.015,
+    "games": 32,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "venueId": "madison-square-garden",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1,
+    "games": 11,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "venueId": "madison-square-garden",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1,
+    "games": 12,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "mets",
+    "venueId": "citi-field",
+    "band": "second",
+    "occupancy": 1.027,
+    "low": 0.92,
+    "high": 1.132,
+    "games": 34,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "venueId": "barclays-center",
+    "band": "first",
+    "occupancy": 1.005,
+    "low": 1,
+    "high": 1.041,
+    "games": 44,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "venueId": "madison-square-garden",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.013,
+    "games": 37,
+    "seasons": "2023, 2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "venueId": "yankee-stadium",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "venueId": "citi-field",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nycfc",
+    "venueId": "sports-illustrated-stadium",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "red-bulls",
+    "venueId": "sports-illustrated-stadium",
+    "band": "first",
+    "occupancy": 0.79,
+    "low": 0.643,
+    "high": 1.009,
+    "games": 25,
+    "seasons": "2022, 2023, 2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "yankees",
+    "venueId": "yankee-stadium",
+    "band": "second",
+    "occupancy": 1.028,
+    "low": 1.019,
+    "high": 1.048,
+    "games": 9,
+    "seasons": "2022, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "padres",
+    "venueId": "petco-park",
+    "band": "second",
+    "occupancy": 1.133,
+    "low": 0.922,
+    "high": 1.197,
+    "games": 39,
+    "seasons": "2022, 2024, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-fc",
+    "venueId": "snapdragon-stadium",
+    "band": "first",
+    "occupancy": 0.837,
+    "low": 0.643,
+    "high": 1.01,
+    "games": 21,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "venueId": "climate-pledge-arena",
+    "band": "first",
+    "occupancy": 1.001,
+    "low": 1,
+    "high": 1.014,
+    "games": 35,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "venueId": "t-mobile-park",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.015,
+    "games": 32,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "mariners",
+    "venueId": "t-mobile-park",
+    "band": "second",
+    "occupancy": 1.007,
+    "low": 0.921,
+    "high": 1.132,
+    "games": 38,
+    "seasons": "2022, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "sounders",
+    "venueId": "lumen-field",
+    "band": "first",
+    "occupancy": 0.822,
+    "low": 0.651,
+    "high": 1.009,
+    "games": 25,
+    "seasons": "2023, 2024, 2025 + league",
+    "basis": "blend"
   }
 ];

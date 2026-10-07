@@ -35,6 +35,8 @@
       "venueId": "snapdragon-stadium",
       "attendance": 26215,
       "kind": "announced",
+      "postseason": true,
+      "round": "Playoffs -Quarterfinals",
       "sourceId": "espn"
     },
     {
@@ -167,6 +169,8 @@
       "venueId": "snapdragon-stadium",
       "attendance": 32262,
       "kind": "announced",
+      "postseason": true,
+      "round": "Playoffs - Semifinals",
       "sourceId": "espn"
     },
     {

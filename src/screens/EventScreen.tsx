@@ -248,7 +248,7 @@ function DrawNote({ event, counted }: { event: CrowdEvent; counted: boolean }) {
   if (!counted) {
     const d = event.expectedDraw;
     if (!d || d.low == null || d.high == null || roundEstimate(d.low) === roundEstimate(d.high)) return null;
-    return <p className="crowd-note">Middle half {fmt(roundEstimate(d.low))}–{fmt(roundEstimate(d.high))}.</p>;
+    return <p className="crowd-note">{d.planning ? 'Likely' : 'Middle half'} {fmt(roundEstimate(d.low))}–{fmt(roundEstimate(d.high))}.</p>;
   }
   const saved = drawSavedAhead(event);
   if (!saved) return null;
@@ -283,6 +283,11 @@ function HowEstimatesWork({ onClose }: { onClose: () => void }) {
           <strong>A game:</strong> the crowd this team typically announced in this building on this kind of night, over the last
           two or three seasons, nudged by how the team is drawing this season and how this visitor has drawn here. Never above
           the building.
+        </p>
+        <p>
+          <strong>A playoff game:</strong> how full this building got at the team's past playoff games in this round, or the
+          league's when the team has too few. The range shown is a planning range, wider than a middle half; its low end
+          is what counts toward friction.
         </p>
         <p className="home-helper">
           <strong>A show:</strong> a venue's own published average when it has one; otherwise the full room for a venue built

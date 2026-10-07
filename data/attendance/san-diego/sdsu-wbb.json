@@ -182,6 +182,19 @@
     },
     {
       "teamId": "sdsu-wbb",
+      "season": 2023,
+      "date": "2023-03-17",
+      "start": "18:00",
+      "opponent": "UC Irvine",
+      "venueId": "viejas-arena",
+      "attendance": 1364,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Women's NIT - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-wbb",
       "season": 2024,
       "date": "2023-11-10",
       "start": "18:00",
@@ -673,6 +686,32 @@
       "venueId": "viejas-arena",
       "attendance": 1961,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-wbb",
+      "season": 2026,
+      "date": "2026-03-19",
+      "start": "18:00",
+      "opponent": "UC Irvine",
+      "venueId": "viejas-arena",
+      "attendance": 858,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-wbb",
+      "season": 2026,
+      "date": "2026-03-22",
+      "start": "14:00",
+      "opponent": "McNeese",
+      "venueId": "viejas-arena",
+      "attendance": 812,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WBIT - 2nd Round",
       "sourceId": "espn"
     }
   ]

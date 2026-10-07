@@ -358,6 +358,32 @@
     },
     {
       "teamId": "usc-wbb",
+      "season": 2024,
+      "date": "2024-03-23",
+      "start": "13:47",
+      "opponent": "Texas A&M-CC",
+      "venueId": "galen-center",
+      "attendance": 8386,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 3 in Portland - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-wbb",
+      "season": 2024,
+      "date": "2024-03-25",
+      "start": "19:00",
+      "opponent": "Kansas",
+      "venueId": "galen-center",
+      "attendance": 8941,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 3 in Portland - 2nd Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-wbb",
       "season": 2025,
       "date": "2024-11-09",
       "start": "14:00",
@@ -519,6 +545,32 @@
       "venueId": "galen-center",
       "attendance": 9021,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-wbb",
+      "season": 2025,
+      "date": "2025-03-22",
+      "start": "12:00",
+      "opponent": "UNC Greensboro",
+      "venueId": "galen-center",
+      "attendance": 6865,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 4 in Spokane - 1st Round",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-wbb",
+      "season": 2025,
+      "date": "2025-03-24",
+      "start": "19:00",
+      "opponent": "Mississippi St",
+      "venueId": "galen-center",
+      "attendance": 7808,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Championship - Regional 4 in Spokane - 2nd Round",
       "sourceId": "espn"
     },
     {

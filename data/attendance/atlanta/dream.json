@@ -877,6 +877,34 @@
     },
     {
       "teamId": "dream",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "15:00",
+      "opponent": "Fever",
+      "venueId": "gateway-center-arena",
+      "attendance": 3800,
+      "kind": "announced",
+      "postseason": true,
+      "round": "First Round - Game 1",
+      "game": 1,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "dream",
+      "season": 2025,
+      "date": "2025-09-18",
+      "start": "19:30",
+      "opponent": "Fever",
+      "venueId": "gateway-center-arena",
+      "attendance": 3800,
+      "kind": "announced",
+      "postseason": true,
+      "round": "First Round - Game 3",
+      "game": 3,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "dream",
       "season": 2026,
       "date": "2026-05-03",
       "start": "15:00",
@@ -1127,6 +1155,34 @@
       "venueId": "state-farm-arena",
       "attendance": 17099,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "dream",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "19:00",
+      "opponent": "Mystics",
+      "venueId": "state-farm-arena",
+      "attendance": 9766,
+      "kind": "announced",
+      "postseason": true,
+      "round": "First Round - Game 1",
+      "game": 1,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "dream",
+      "season": 2026,
+      "date": "2026-10-04",
+      "start": "14:00",
+      "opponent": "Liberty",
+      "venueId": "state-farm-arena",
+      "attendance": 9745,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Semifinals - Game 1",
+      "game": 1,
       "sourceId": "espn"
     }
   ]
