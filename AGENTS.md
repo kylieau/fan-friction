@@ -23,6 +23,14 @@ Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which 
 - No points, leaderboards, open posting, public photo walls, or navigation.
   See the Guardrails section of docs/direction.md.
 
+## Working agreements (carried over from Claude's private notes so every tool follows them)
+- **Build for every city, not just LA** (Kylie, Oct 2 and Oct 6, 2026). Phrase rules in city-neutral terms (metro, venue, sport and genre tags), and treat LA nights as test cases, not the definition. LA is the only city built by hand, once; every later city rides `docs/new-city-checklist.md` plus the scripts. A feature that only works because someone hand-tuned it for LA isn't done. Prefer a computed rule over a hand flag, and ask research prompts to cover other metros and countries.
+- **Check provenance before calling anything Kylie's.** Several sessions and tools write these docs, and check notes and handoff lines are often an assistant's own words. Call something "Kylie's rule" or "locked" only when her name and a date sit beside it ("Kylie, Oct 6"). Otherwise say "a note in X". On Oct 7, 2026 an assistant's check note was promoted to a rule and presented to her as hers; she had decided the opposite.
+- **Reconcile small source gaps with judgment** (Kylie, Oct 3, 2026). When two sources differ slightly (8:00 vs. 8:15) or measure different things (doors vs. stage time), pick the sensible reading, record which kind it is, and move on. Leave a field blank only when there is no source or the conflict really changes the answer.
+- **Ratings are evidence, never a target** (handoff, Oct 6–7). Never report a gap from anyone's hand ratings as progress, and never tune a constant to close one. Attendance on held-out dates is the only accuracy target.
+- **UX notes:** sort each note as structural (what a screen shows, flow, tabs, naming, button placement; raise before the next step that reuses those pieces) or polish (colors, spacing, wording; batch it later). The running list is `docs/ux-notes.md`. At the start of a resumed session, ask Kylie for new UX notes before starting new work.
+- **Private material stays out of the repo.** Tester names, emails, attended lists and SQL live in the git-ignored `private/` folder. Public event facts can go in `docs/`.
+
 ## Working in this repo
 - Run: `npm run dev` (phone-sized web app on http://localhost:3001; Vite may pick 3002 if busy). Don't `pkill -f vite`; use `kill $(lsof -ti:PORT)`.
 - Test: there is no test suite yet. `npm run build` (type-check plus production build) is the check that must pass. Visual checks use phone-size screenshots (see MEMORY_HANDOFF.md).
