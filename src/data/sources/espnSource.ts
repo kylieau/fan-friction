@@ -41,6 +41,22 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '264', metroId: 'seattle', teamId: 'uw-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '264', metroId: 'seattle', teamId: 'uw-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '264', metroId: 'seattle', teamId: 'uw-wbb', sport: 'basketball' },
+  { path: 'basketball/nba', espnId: '18', metroId: 'new-york', teamId: 'knicks', sport: 'basketball' },
+  { path: 'basketball/nba', espnId: '17', metroId: 'new-york', teamId: 'nets', sport: 'basketball' },
+  { path: 'basketball/wnba', espnId: '9', metroId: 'new-york', teamId: 'liberty', sport: 'basketball' },
+  { path: 'hockey/nhl', espnId: '13', metroId: 'new-york', teamId: 'ny-rangers', sport: 'hockey' },
+  { path: 'hockey/nhl', espnId: '12', metroId: 'new-york', teamId: 'islanders', sport: 'hockey' },
+  { path: 'hockey/nhl', espnId: '11', metroId: 'new-york', teamId: 'devils', sport: 'hockey' },
+  { path: 'football/nfl', espnId: '19', metroId: 'new-york', teamId: 'ny-giants', sport: 'football' },
+  { path: 'football/nfl', espnId: '20', metroId: 'new-york', teamId: 'ny-jets', sport: 'football' },
+  { path: 'soccer/usa.1', espnId: '17606', metroId: 'new-york', teamId: 'nycfc', sport: 'soccer' },
+  { path: 'soccer/usa.1', espnId: '190', metroId: 'new-york', teamId: 'red-bulls', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '15364', metroId: 'new-york', teamId: 'gotham', sport: 'soccer' },
+  { path: 'basketball/mens-college-basketball', espnId: '2599', metroId: 'new-york', teamId: 'stjohns-mbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '2550', metroId: 'new-york', teamId: 'seton-hall-mbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '171', metroId: 'new-york', teamId: 'columbia-football', sport: 'football' },
+  { path: 'football/college-football', espnId: '2619', metroId: 'new-york', teamId: 'stony-brook-football', sport: 'football' },
+  { path: 'football/college-football', espnId: '2230', metroId: 'new-york', teamId: 'fordham-football', sport: 'football' },
 ];
 
 /** Cities this feed can list games for. */
@@ -70,6 +86,19 @@ const VENUE_BY_NAME: Record<string, string> = {
   'alaska airlines arena at hec edmundson pavilion': 'alaska-airlines-arena',
   'hec edmundson pavilion': 'alaska-airlines-arena',
   't-mobile park': 't-mobile-park',
+  'madison square garden': 'madison-square-garden',
+  'barclays center': 'barclays-center',
+  'ubs arena': 'ubs-arena',
+  'metlife stadium': 'metlife-stadium',
+  'yankee stadium': 'yankee-stadium',
+  'citi field': 'citi-field',
+  'sports illustrated stadium': 'sports-illustrated-stadium',
+  'prudential center': 'prudential-center',
+  'lawrence a. wien stadium': 'wien-stadium',
+  'kenneth p. lavalle stadium': 'lavalle-stadium',
+  'moglia stadium at jack coffey field': 'coffey-field',
+  'carnesecca arena': 'carnesecca-arena',
+  'icahn stadium': 'icahn-stadium',
 };
 
 interface EspnSide {

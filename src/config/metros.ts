@@ -12,7 +12,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -46,12 +46,15 @@ export const METROS: Record<string, Metro> = {
     center: [-83.0197, 40.0016],
     zoom: 12,
   },
+  // Covered Oct 7, 2026 (docs/new-york-venue-table-answer.md). The region runs from the
+  // Meadowlands to Stony Brook; this frames Manhattan, the Bronx, Queens, Brooklyn, Newark
+  // and Elmont on one phone screen. Jones Beach, PNC and Stony Brook sit off the first view.
   'new-york': {
     id: 'new-york',
     name: 'New York',
     timeZone: 'America/New_York',
-    center: [-73.8458, 40.7571],
-    zoom: 12,
+    center: [-73.93, 40.75],
+    zoom: 10.5,
   },
   phoenix: {
     id: 'phoenix',

@@ -22,6 +22,8 @@ const MLB_TEAMS = [
   { teamId: 'angels', mlbId: 108, venueId: 'angel-stadium', seasons: [2023, 2024, 2025] },
   { teamId: 'padres', mlbId: 135, venueId: 'petco-park', metroId: 'san-diego', seasons: [2023, 2024, 2025] },
   { teamId: 'mariners', mlbId: 136, venueId: 't-mobile-park', metroId: 'seattle', seasons: [2023, 2024, 2025] },
+  { teamId: 'yankees', mlbId: 147, venueId: 'yankee-stadium', metroId: 'new-york', seasons: [2023, 2024, 2025] },
+  { teamId: 'mets', mlbId: 121, venueId: 'citi-field', metroId: 'new-york', seasons: [2023, 2024, 2025] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2024, 2025, 2026], seasontype: 2 },
@@ -51,6 +53,22 @@ const ESPN_TEAMS = [
   { teamId: 'uw-football', metroId: 'seattle', path: 'football/college-football', espnId: '264', seasons: [2023, 2024, 2025], seasontype: 2 },
   { teamId: 'uw-mbb', metroId: 'seattle', path: 'basketball/mens-college-basketball', espnId: '264', seasons: [2024, 2025, 2026], seasontype: 2 },
   { teamId: 'uw-wbb', metroId: 'seattle', path: 'basketball/womens-college-basketball', espnId: '264', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'knicks', metroId: 'new-york', path: 'basketball/nba', espnId: '18', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'nets', metroId: 'new-york', path: 'basketball/nba', espnId: '17', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'liberty', metroId: 'new-york', path: 'basketball/wnba', espnId: '9', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'ny-rangers', metroId: 'new-york', path: 'hockey/nhl', espnId: '13', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'islanders', metroId: 'new-york', path: 'hockey/nhl', espnId: '12', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'devils', metroId: 'new-york', path: 'hockey/nhl', espnId: '11', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'ny-giants', metroId: 'new-york', path: 'football/nfl', espnId: '19', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'ny-jets', metroId: 'new-york', path: 'football/nfl', espnId: '20', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'nycfc', metroId: 'new-york', path: 'soccer/usa.1', espnId: '17606', seasons: [2023, 2024, 2025] },
+  { teamId: 'red-bulls', metroId: 'new-york', path: 'soccer/usa.1', espnId: '190', seasons: [2023, 2024, 2025] },
+  { teamId: 'gotham', metroId: 'new-york', path: 'soccer/usa.nwsl', espnId: '15364', seasons: [2023, 2024, 2025] },
+  { teamId: 'stjohns-mbb', metroId: 'new-york', path: 'basketball/mens-college-basketball', espnId: '2599', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'seton-hall-mbb', metroId: 'new-york', path: 'basketball/mens-college-basketball', espnId: '2550', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'columbia-football', metroId: 'new-york', path: 'football/college-football', espnId: '171', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'stony-brook-football', metroId: 'new-york', path: 'football/college-football', espnId: '2619', seasons: [2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'fordham-football', metroId: 'new-york', path: 'football/college-football', espnId: '2230', seasons: [2023, 2024, 2025], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
