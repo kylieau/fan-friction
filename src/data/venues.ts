@@ -1175,13 +1175,273 @@ export const VENUES: Record<string, Venue> = {
     roof: 'open',
     strained: true,
   },
+  // ---------- Chicago (docs/chicago-venue-table-answer.md; car shares from docs/chicago-city-type-answer.md), Oct 7, 2026 ----------
+  // Not venue rows: Grant, Douglass, Union and Humboldt parks (festival grounds), McCormick Place and the Stephens
+  // Convention Center (sized per event-day), Hawthorne (racing ended July 19, 2026) and Arlington Park (closed 2021).
+  // Car shares marked "ours" are not in the research; they come from the nearest comparable and are flagged for Kylie.
+  'soldier-field': {
+    id: 'soldier-field',
+    metroId: 'chicago',
+    // Estimated (research): Bears games toward 75–80% car, concerts toward 60–65%; CTA alone carried ~11% at the 2023 Swift shows.
+    carShare: 0.7,
+    names: [{ name: 'Soldier Field' }],
+    location: [-87.6176, 41.8623],
+    capacity: [
+      { seats: 61500, setup: 'football', note: 'Reported (Ticketmaster and most outlets); Wikipedia says 62,500.' },
+      { seats: 61500, setup: 'soccer', note: 'No separate figure; the football setup.' },
+      { seats: 63500, setup: 'concert', note: "Official: the stadium's own figure; one low-confidence source says ~66,000." },
+    ],
+    roof: 'open',
+  },
+  'wrigley-field': {
+    id: 'wrigley-field',
+    metroId: 'chicago',
+    // Reported (the Cubs' own fan survey, March 2026): 37% drive, 63% other modes.
+    carShare: 0.37,
+    names: [{ name: 'Wrigley Field' }],
+    location: [-87.6556, 41.9481],
+    capacity: [
+      { seats: 41649, setup: 'baseball', note: 'Official (MLB.com, March 2026); 41,374 is an older figure.' },
+      { seats: 41649, setup: 'concert', note: 'No official concert figure; a ticket aggregator lists 41,159. Estimated at the baseball setup.' },
+    ],
+    roof: 'open',
+  },
+  'rate-field': {
+    id: 'rate-field',
+    metroId: 'chicago',
+    // Estimated (70–80%): ~17% rode the L by the team's older estimate; ~7,000 team spaces.
+    carShare: 0.75,
+    names: [{ name: 'U.S. Cellular Field' }, { name: 'Guaranteed Rate Field', from: '2016-11-01' }, { name: 'Rate Field', from: '2025-01-01' }],
+    location: [-87.6338, 41.8297],
+    capacity: [{ seats: 40615, setup: 'baseball', note: 'Official (MLB.com, March 2026). A ~48,000 concert figure is low-confidence and not kept.' }],
+    roof: 'open',
+  },
+  'ryan-field': {
+    id: 'ryan-field',
+    metroId: 'chicago',
+    // Estimated: football ~60% car; the pre-opening concert plan projects 30–65% transit. Opened Oct 2, 2026.
+    carShare: 0.6,
+    names: [{ name: 'Ryan Field' }],
+    location: [-87.6908, 42.0669],
+    capacity: [
+      { seats: 47130, setup: 'football', note: 'Reported: the old Ryan Field, closed after 2023. Northwestern played at Martin Stadium and Wrigley in 2024–25.' },
+      { seats: 35000, setup: 'football', fromYear: 2026, note: 'Official (Northwestern); sold out at the Oct 2, 2026 opener. Concerts (up to six a year) expected from 2027; capacity unpublished.' },
+    ],
+    roof: 'covered',
+  },
+  'huntington-bank-pavilion': {
+    id: 'huntington-bank-pavilion',
+    metroId: 'chicago',
+    // Estimated: the venue recommends transit or rideshare; patrons park in Soldier Field lots.
+    carShare: 0.6,
+    names: [{ name: 'FirstMerit Bank Pavilion' }, { name: 'Huntington Bank Pavilion at Northerly Island', from: '2017-01-09' }],
+    location: [-87.6085, 41.8634],
+    capacity: [{ seats: 30000, setup: 'concert', note: 'Reported, seats plus lawn; the reduced seated layout is ~8,000.' }],
+    roof: 'open',
+  },
+  'credit-union-1-amphitheatre': {
+    id: 'credit-union-1-amphitheatre',
+    metroId: 'chicago',
+    // Estimated: one suburban site, one lot; hours-long approach jams documented in 2023.
+    carShare: 0.97,
+    names: [{ name: 'Hollywood Casino Amphitheatre' }, { name: 'Credit Union 1 Amphitheatre', from: '2023-04-25' }],
+    // Approximate (research); OpenStreetMap does not know the venue by name.
+    location: [-87.785, 41.546],
+    capacity: [{ seats: 28000, setup: 'concert', note: 'Official (Live Nation via WGN): about 11,000 reserved plus 17,000 lawn; Wikipedia says 28,739.' }],
+    roof: 'covered',
+  },
+  'seatgeek-stadium': {
+    id: 'seatgeek-stadium',
+    metroId: 'chicago',
+    // Estimated: big lots on Harlem Ave; weak transit is the main fan complaint.
+    carShare: 0.93,
+    names: [{ name: 'Toyota Park' }, { name: 'SeatGeek Stadium', from: '2018-11-01' }],
+    location: [-87.8062, 41.7648],
+    capacity: [
+      { seats: 20000, setup: 'soccer', note: 'Reported. No confirmed pro tenant in 2026: the Fire left after 2019, the Stars after 2025.' },
+      { seats: 28000, setup: 'concert', note: 'Reported, concert or festival' },
+    ],
+    roof: 'open',
+  },
+  'united-center': {
+    id: 'united-center',
+    metroId: 'chicago',
+    // Official (2023 patron survey in the 1901 Project TDM study): 86.9% car, 8.1% transit, 5.1% walk.
+    carShare: 0.87,
+    names: [{ name: 'United Center' }],
+    location: [-87.6742, 41.8807],
+    capacity: [
+      { seats: 20917, setup: 'basketball', note: 'Reported; 23,129 with standing room is the record' },
+      { seats: 19717, setup: 'hockey', note: 'Reported; 22,428 with standing room is the record' },
+      { seats: 23500, setup: 'concert', note: 'Reported, up to' },
+    ],
+    roof: 'indoor',
+  },
+  'allstate-arena': {
+    id: 'allstate-arena',
+    metroId: 'chicago',
+    // Estimated: Blue Line Rosemont is not at the door; Pace bus or rideshare from the station.
+    carShare: 0.93,
+    names: [{ name: 'Allstate Arena' }],
+    location: [-87.8878, 42.0053],
+    capacity: [
+      { seats: 18500, setup: 'concert', note: 'Reported; Wikipedia now shows 18,200–22,000' },
+      { seats: 17500, setup: 'basketball', note: 'Reported' },
+      { seats: 16692, setup: 'hockey', note: 'Reported; the Wolves (AHL) play here' },
+    ],
+    roof: 'indoor',
+  },
+  ravinia: {
+    id: 'ravinia',
+    metroId: 'chicago',
+    // Estimated: no published share; Metra UP-N stops at the gate, free with a ticket; the only count is a 2021 monthly total.
+    carShare: 0.8,
+    names: [{ name: 'Ravinia Festival' }, { name: 'Ravinia' }],
+    location: [-87.7754, 42.1579],
+    capacity: [{ seats: 12758, setup: 'concert', note: 'Official (Ravinia via AP, July 2026): pavilion 2,840 after the 2026 renovation (was 3,350) plus ~9,918 lawn.' }],
+    roof: 'covered',
+  },
+  'martin-stadium': {
+    id: 'martin-stadium',
+    metroId: 'chicago',
+    // Estimated, ours (not in the research): campus lakefill with limited parking; comparable to Welsh-Ryan.
+    carShare: 0.65,
+    names: [{ name: 'Northwestern Medicine Field at Martin Stadium' }, { name: 'Martin Stadium' }],
+    location: [-87.6708, 42.0584],
+    capacity: [
+      { seats: 12000, setup: 'football', note: "Official (Northwestern), bleachers plus boxes; built 2024 as a temporary home. Northwestern football's last game here was Sept 2026." },
+      { seats: 12000, setup: 'soccer', note: 'The same stands; the Chicago Stars played the 2026 season here. 2027 unresolved.' },
+    ],
+    roof: 'open',
+  },
+  'now-arena': {
+    id: 'now-arena',
+    metroId: 'chicago',
+    // Estimated: 3,200 on-site spaces; no practical transit.
+    carShare: 0.98,
+    names: [{ name: 'Sears Centre Arena' }, { name: 'NOW Arena', from: '2020-09-01' }],
+    location: [-88.2128, 42.0693],
+    capacity: [
+      { seats: 11218, setup: 'concert', note: 'Reported, center stage; 7,410 end stage' },
+      { seats: 8700, setup: 'basketball', note: 'Reported' },
+    ],
+    roof: 'indoor',
+  },
+  'pritzker-pavilion': {
+    id: 'pritzker-pavilion',
+    metroId: 'chicago',
+    // Estimated, ours (not in the research): the Loop, no parking of its own; comparable to the Grant Park festival figure.
+    carShare: 0.2,
+    names: [{ name: 'Jay Pritzker Pavilion' }],
+    location: [-87.6219, 41.8835],
+    capacity: [{ seats: 11000, setup: 'concert', note: 'Official (City of Chicago): 4,000 fixed seats plus 7,000 lawn; mostly free events' }],
+    roof: 'open',
+  },
   'wintrust-arena': {
     id: 'wintrust-arena',
     metroId: 'chicago',
+    // Estimated: Green Line station 0.15 mile away and McCormick Place garages adjacent; set between the United Center and Wrigley.
+    carShare: 0.65,
     names: [{ name: 'Wintrust Arena' }],
-    location: [-87.6216, 41.8536],
-    capacity: [{ seats: 10387, setup: 'basketball', note: 'Listed basketball capacity' }],
+    location: [-87.6214, 41.8537],
+    capacity: [{ seats: 10387, setup: 'basketball', note: 'Official (DePaul / MPEA). Concert configuration not published.' }],
     roof: 'indoor',
+  },
+  'credit-union-1-arena': {
+    id: 'credit-union-1-arena',
+    metroId: 'chicago',
+    // Estimated: Blue and Pink Line stations a short walk; campus walk-ins.
+    carShare: 0.6,
+    names: [{ name: 'UIC Pavilion' }, { name: 'Credit Union 1 Arena', from: '2018-11-01' }],
+    location: [-87.6561, 41.8747],
+    capacity: [
+      { seats: 8000, setup: 'basketball', note: 'Official (UIC)' },
+      { seats: 10300, setup: 'concert', note: 'Official (UIC); 10,075 end stage' },
+    ],
+    roof: 'indoor',
+  },
+  'impact-field': {
+    id: 'impact-field',
+    metroId: 'chicago',
+    // Estimated, ours (not in the research): Rosemont, I-294 at Balmoral, adjacent garage; comparable to Allstate Arena.
+    carShare: 0.93,
+    names: [{ name: 'Impact Field' }],
+    location: [-87.8711, 41.9781],
+    capacity: [{ seats: 6300, setup: 'baseball', note: 'Reported (a ballpark trade site), 5,526 fixed seats; Wikipedia says 8,300. A ~10,000 concert figure is unverified and not kept.' }],
+    roof: 'open',
+  },
+  'wintrust-field': {
+    id: 'wintrust-field',
+    metroId: 'chicago',
+    // Estimated, ours (not in the research): a suburban site with surface parking; comparable to NOW Arena.
+    carShare: 0.98,
+    names: [{ name: 'Boomers Stadium' }, { name: 'Wintrust Field', from: '2020-01-01' }],
+    location: [-88.1177, 41.9931],
+    capacity: [{ seats: 7365, setup: 'baseball', note: 'Reported (citing the team): 5,665 fixed plus lawn; record crowd 8,297' }],
+    roof: 'open',
+  },
+  'welsh-ryan-arena': {
+    id: 'welsh-ryan-arena',
+    metroId: 'chicago',
+    // Estimated: the same Purple Line and Metra access as Ryan Field plus a large student walk-in share.
+    carShare: 0.65,
+    names: [{ name: 'Welsh-Ryan Arena' }],
+    location: [-87.6924, 42.0669],
+    capacity: [
+      { seats: 8117, setup: 'basketball', note: 'Reported, before the 2018 renovation' },
+      { seats: 7039, setup: 'basketball', fromYear: 2019, note: 'Reported, since Nov 2018' },
+    ],
+    roof: 'indoor',
+  },
+  'jones-convocation-center': {
+    id: 'jones-convocation-center',
+    metroId: 'chicago',
+    // Estimated, ours (not in the research): near the I-57/I-94 merge, campus lots.
+    carShare: 0.85,
+    names: [{ name: 'Jones Convocation Center' }, { name: 'Emil and Patricia Jones Convocation Center' }],
+    location: [-87.6084, 41.7165],
+    capacity: [{ seats: 7000, setup: 'basketball', note: 'Reported. Chicago State crowds are often in the hundreds; the building qualifies, the games sit under the floor.' }],
+    roof: 'indoor',
+  },
+  'salt-shed': {
+    id: 'salt-shed',
+    metroId: 'chicago',
+    // Estimated, ours (not in the research): an industrial corridor with little parking, no rail at the door.
+    carShare: 0.55,
+    names: [{ name: 'The Salt Shed' }],
+    location: [-87.6592, 41.9067],
+    capacity: [{ seats: 5000, setup: 'concert', note: 'Reported (Pollstar): the outdoor Fairgrounds, standing; Wikipedia says 5,500. The indoor Shed (3,600) is under the floor.' }],
+    roof: 'open',
+  },
+  'aragon-ballroom': {
+    id: 'aragon-ballroom',
+    metroId: 'chicago',
+    // Estimated, ours (not in the research): a block from the Red Line Lawrence stop; comparable to Wrigley.
+    carShare: 0.45,
+    names: [{ name: 'Aragon Ballroom' }, { name: 'Byline Bank Aragon Ballroom', from: '2019-01-01' }],
+    location: [-87.658, 41.9694],
+    capacity: [{ seats: 5000, setup: 'concert', note: 'Reported (Ticketmaster), general admission; some sources say 4,800–4,900' }],
+    roof: 'indoor',
+  },
+  'gately-stadium': {
+    id: 'gately-stadium',
+    metroId: 'chicago',
+    // Estimated, ours (not in the research): a Public League stadium on the far South Side.
+    carShare: 0.8,
+    names: [{ name: 'Gately Stadium' }],
+    location: [-87.6026, 41.7085],
+    capacity: [{ seats: 5000, setup: 'football', note: 'Reported (the CPS stadium list); renovated 2011' }],
+    roof: 'open',
+  },
+  'chicagoland-speedway': {
+    id: 'chicagoland-speedway',
+    metroId: 'chicago',
+    // Estimated, ours (not in the research): a speedway on I-55/I-80 with its own lots.
+    carShare: 0.98,
+    names: [{ name: 'Chicagoland Speedway' }],
+    location: [-88.0588, 41.4744],
+    capacity: [{ seats: 47000, note: "Reported, after a cut from 75,000; the 2026 Cup race sold out. One weekend a year (June 25–27, 2027). The research's one addition to the boundary; in Will County." }],
+    roof: 'open',
   },
   'amalie-arena': {
     id: 'amalie-arena',

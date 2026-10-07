@@ -31,11 +31,14 @@ const SCALE = 7.5;
 // arrives by car, weighted by seats. The ballparks broke the assumption — Citi Field ~60% car, Yankee Stadium ~50%.
 // Only the rail-hub buildings (MSG, Barclays, Radio City) are transit-tier; Long Island and the Meadowlands drive.
 // Chicago and Boston are still assumptions; research them before covering either (Kylie: never assume a city's type).
+// Chicago is in between, leaning driving (research, Oct 7, 2026, docs/chicago-city-type-answer.md): Wrigley and the
+// downtown festivals run majority non-car, the United Center is 87% car, the suburban ring near-total. It was
+// 'transit' before any research; hub keeps the 0.85 default for venues with no figure of their own.
 // The Bay Area is driving, leaning (research, Oct 7, 2026, docs/bay-area-city-type-answer.md): Oracle Park and
 // Chase Center are about half by car, nearly every other big crowd 80–95%; the research picks a 0.85 default.
 // Atlanta is a driving region (research, Oct 7, 2026, docs/archive/research/atlanta-city-type-answer.md): no regular-season
 // crowd measured under ~70% car; only the two downtown buildings on MARTA take a real rail share.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'transit', boston: 'transit' };
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', boston: 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {

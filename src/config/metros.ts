@@ -12,7 +12,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -32,12 +32,15 @@ export const METROS: Record<string, Metro> = {
     center: [-71.1428, 42.3564],
     zoom: 12,
   },
+  // Covered Oct 7, 2026 (docs/chicago-venue-table-answer.md): the city, Cook County and the named
+  // collar towns, plus Chicagoland Speedway in Joliet (the research's one addition). One frame holds
+  // the lakefront, the West Side, Evanston and Rosemont; Tinley Park, Hoffman Estates and Joliet sit off it.
   chicago: {
     id: 'chicago',
     name: 'Chicago',
     timeZone: 'America/Chicago',
-    center: [-87.6216, 41.8536],
-    zoom: 12,
+    center: [-87.72, 41.88],
+    zoom: 9.3,
   },
   columbus: {
     id: 'columbus',

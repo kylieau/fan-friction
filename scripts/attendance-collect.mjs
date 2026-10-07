@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -27,6 +27,8 @@ const MLB_TEAMS = [
   { teamId: 'mets', mlbId: 121, venueId: 'citi-field', metroId: 'new-york', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'braves', mlbId: 144, venueId: 'truist-park', metroId: 'atlanta', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'giants', mlbId: 137, venueId: 'oracle-park', metroId: 'bay-area', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'cubs', mlbId: 112, venueId: 'wrigley-field', metroId: 'chicago', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'white-sox', mlbId: 145, venueId: 'rate-field', metroId: 'chicago', seasons: [2022, 2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -101,6 +103,19 @@ const ESPN_TEAMS = [
   { teamId: 'sjsu-football', metroId: 'bay-area', path: 'football/college-football', espnId: '23', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'sjsu-mbb', metroId: 'bay-area', path: 'basketball/mens-college-basketball', espnId: '23', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'sjsu-wbb', metroId: 'bay-area', path: 'basketball/womens-college-basketball', espnId: '23', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'bulls', metroId: 'chicago', path: 'basketball/nba', espnId: '4', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sky', metroId: 'chicago', path: 'basketball/wnba', espnId: '19', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'blackhawks', metroId: 'chicago', path: 'hockey/nhl', espnId: '4', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'bears', metroId: 'chicago', path: 'football/nfl', espnId: '3', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'chicago-fire', metroId: 'chicago', path: 'soccer/usa.1', espnId: '182', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'chicago-stars', metroId: 'chicago', path: 'soccer/usa.nwsl', espnId: '15360', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'northwestern-football', metroId: 'chicago', path: 'football/college-football', espnId: '77', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'northwestern-mbb', metroId: 'chicago', path: 'basketball/mens-college-basketball', espnId: '77', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'northwestern-wbb', metroId: 'chicago', path: 'basketball/womens-college-basketball', espnId: '77', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'depaul-mbb', metroId: 'chicago', path: 'basketball/mens-college-basketball', espnId: '305', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'depaul-wbb', metroId: 'chicago', path: 'basketball/womens-college-basketball', espnId: '305', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uic-mbb', metroId: 'chicago', path: 'basketball/mens-college-basketball', espnId: '82', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'chicago-state-mbb', metroId: 'chicago', path: 'basketball/mens-college-basketball', espnId: '2130', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -169,6 +184,18 @@ const VENUE_BY_NAME = {
   'maples pavilion': 'maples-pavilion',
   'provident credit union event center': 'provident-event-center',
   'oracle park': 'oracle-park',
+  // Chicago (docs/chicago-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  'united center': 'united-center',
+  'wintrust arena': 'wintrust-arena',
+  'soldier field': 'soldier-field',
+  'northwestern medicine field at martin stadium': 'martin-stadium',
+  'martin stadium': 'martin-stadium',
+  'ryan field': 'ryan-field',
+  'welsh-ryan arena': 'welsh-ryan-arena',
+  'credit union 1 arena': 'credit-union-1-arena',
+  'jones convocation center': 'jones-convocation-center',
+  'wrigley field': 'wrigley-field',
+  'rate field': 'rate-field',
 };
 
 function localParts(iso, metroId) {

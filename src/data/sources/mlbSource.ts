@@ -20,8 +20,10 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string }> = {
   121: { metroId: 'new-york', teamId: 'mets' },
   144: { metroId: 'atlanta', teamId: 'braves' },
   137: { metroId: 'bay-area', teamId: 'giants' },
+  112: { metroId: 'chicago', teamId: 'cubs' },
+  145: { metroId: 'chicago', teamId: 'white-sox' },
 };
-const MLB_VENUES: Record<number, string> = { 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park' };
+const MLB_VENUES: Record<number, string> = { 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field' };
 
 /** Cities this feed can list games for. */
 export function mlbMetroIds(): string[] {
