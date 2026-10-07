@@ -119,6 +119,11 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - Chicago and Boston are still assumed `transit` in `CITY_TYPE`; research before covering either.
 - The nightly job's first scheduled New York run is 12:15am Pacific; a hand run was triggered Oct 7 so the catalog had the city the same day.
 
+## Hard access in New York: the rule measures hillsides, the city's constraint is water (Oct 7)
+- `scripts/venue-access.mjs` measured all 33 New York venues. The rule (relief ≥ 40 m within 500 m and ≤ 4 named streets within 250 m) flags **one**: PNC Bank Arts Center (41 m, 2 streets). Wien Stadium (40 m, 6 streets) and the Staten Island ballpark (46 m, 6 streets) miss on streets.
+- **The sites the research called hardest all pass the rule**, because they are flat: Jones Beach (a barrier island, three parkways in — 2 roads within 500 m, 4 m relief), the Belmont/UBS site (one turnpike, 7 roads, 8 m), the Meadowlands (wetland complex, 5 roads, 5 m), Icahn Stadium (an island, 5 roads, 11 m). The rule was built on LA and Seattle, where hard access means a hill; in New York it means a causeway.
+- **The rule wins, as it did for Remlinger Farms.** No hand flags. But this is the first city where the rule's shape is wrong rather than its thresholds, and it is the case for the parked cars-per-exit rule (`docs/venue-egress-answer.md`, the 43-venue table): roads-in and lanes-out catch an island; relief never will. Revisit when that rule is built; Jones Beach is the test case.
+
 ## New York: Kylie's decisions (Oct 6, after the research)
 - **Build order approved.** Checklist steps 1–5 in order; commit and push after every step (her Fable usage is limited; the thread must not be lost).
 - **City type: `hub`.** Fixed first (this commit). Was `transit`, assumed before research.
