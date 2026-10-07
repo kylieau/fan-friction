@@ -38,6 +38,42 @@
       "shortwave": 0,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-10-06",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T00:51:40.736Z",
+      "feelsLikeF": 52.1,
+      "tempF": 57.4,
+      "humidity": 39,
+      "windMph": 3.5,
+      "uvIndex": 0.05,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-10-06",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T00:51:40.736Z",
+      "feelsLikeF": 49.2,
+      "tempF": 54.9,
+      "humidity": 42,
+      "windMph": 4.5,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [

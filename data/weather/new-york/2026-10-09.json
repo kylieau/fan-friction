@@ -92,6 +92,24 @@
       "shortwave": 0,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-10-09",
+      "hour": 10,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T00:51:40.736Z",
+      "feelsLikeF": 61.8,
+      "tempF": 66.7,
+      "humidity": 35,
+      "windMph": 5.2,
+      "uvIndex": 2.3,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 384,
+      "cloudCover": 88,
+      "code": 3
     }
   ],
   "days": [

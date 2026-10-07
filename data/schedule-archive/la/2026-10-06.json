@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-06",
-  "capturedAt": "2026-10-07T00:12:55.063Z",
+  "capturedAt": "2026-10-07T00:52:16.467Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-06",
@@ -30,7 +30,7 @@
     {
       "id": "ticketmaster",
       "name": "Ticketmaster listings",
-      "inWindow": 51
+      "inWindow": 50
     }
   ],
   "events": [
@@ -907,10 +907,7 @@
       "performer": "Phil Wickham",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_7GkMfFAZu",
-      "occasionFacts": {
-        "run": 2
-      }
+      "ticketmasterId": "vv170Z_7GkMfFAZu"
     },
     {
       "id": "2026-10-15-tm-vv170Z_aGkRSVNGb",
@@ -931,29 +928,6 @@
       "crowd": [],
       "sourceId": "ticketmaster",
       "ticketmasterId": "vv170Z_aGkRSVNGb"
-    },
-    {
-      "id": "2026-10-15-tm-vv1k0Z_kp4G7ia50",
-      "metroId": "la",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Phil Wickham",
-      "place": {
-        "type": "venue",
-        "venueId": "honda-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Phil Wickham",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1k0Z_kp4G7ia50",
-      "occasionFacts": {
-        "run": 2
-      }
     },
     {
       "id": "2026-10-15-tm-vvG10Z_GwWe2IR",
@@ -1942,9 +1916,9 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 4.3,
-        "friction": "Moderate",
-        "why": "Phil Wickham next door, same hours.",
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Cynthia Erivo: Let Me Sing To You 34 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -1953,19 +1927,8 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 4.3,
+        "rating": 2.5,
         "method": "nearby"
-      }
-    },
-    {
-      "eventId": "2026-10-15-tm-vv1k0Z_kp4G7ia50",
-      "date": "2026-10-15",
-      "start": "19:00",
-      "read": {
-        "rating": 4.3,
-        "friction": "Moderate",
-        "why": "Phil Wickham next door, same hours.",
-        "method": "formula"
       }
     },
     {
@@ -1973,7 +1936,7 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 4.3,
+        "rating": 2.5,
         "method": "nearby"
       }
     },
@@ -1982,9 +1945,9 @@
       "date": "2026-10-15",
       "start": "19:30",
       "read": {
-        "rating": 4.3,
-        "friction": "Moderate",
-        "why": "Phil Wickham and Phil Wickham 34 mi away, same hours.",
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Phil Wickham 34 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -1993,9 +1956,9 @@
       "date": "2026-10-15",
       "start": "20:00",
       "read": {
-        "rating": 4.3,
+        "rating": 2.5,
         "friction": "Moderate",
-        "why": "Phil Wickham and Phil Wickham 28 mi away, same hours.",
+        "why": "Phil Wickham and Cynthia Erivo: Let Me Sing To You 28 mi away, same hours.",
         "method": "formula"
       }
     },
