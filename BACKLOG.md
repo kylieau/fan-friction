@@ -111,6 +111,14 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - **A day before the interview:** data-side check that her LA and San Diego nights show reads.
 - Her New York nights are MSG (Oct 1), UBS Arena (Oct 3 and Oct 8) and Prudential Center (Oct 6). All four buildings are open and in use, so they do not depend on the "out of use from" work below. Other events on those dates are in `docs/research-oct-2026/new-york.md`.
 
+## New York is covered (Oct 7) — follow-ons
+- **Kylie runs part 1 of the tester's later-cities SQL now** (`private/testers/becca/becca-later-cities.sql`): New York is in `COVERED_METRO_IDS`, so her MSG (Oct 1), UBS (Oct 3, Oct 8) and Prudential (Oct 6) nights can carry `inMetro: true`.
+- **Her past New York nights still need reconstructed reads.** The feeds serve today onward, so Oct 1, 3 and 6 show nothing until seeded. The research is already saved (`docs/research-oct-2026/new-york.md`); seed those dates the way `src/data/seed/past2026.ts` did LA's, then `node scripts/weather-fetch.mjs --backfill`. Oct 8 is live from the feed (6.9 Brutal: Yankees postseason, Knicks, Nets, Islanders).
+- **NY Comic Con, Oct 8–11, is this week and not in the catalog.** ~62,500 a day at Javits, which has no venue row by design. It is the first real test of a Table B event: add it as a point with its per-day crowd (reported, RX's 250,000+ over four days) or let it stay off and note it in `docs/unsized-events.md`. Kylie's call.
+- Broad teams (Yankees, Giants, Knicks) are a placeholder until a poll is found, as Seattle's are.
+- Chicago and Boston are still assumed `transit` in `CITY_TYPE`; research before covering either.
+- The nightly job's first scheduled New York run is 12:15am Pacific; a hand run was triggered Oct 7 so the catalog had the city the same day.
+
 ## New York: Kylie's decisions (Oct 6, after the research)
 - **Build order approved.** Checklist steps 1–5 in order; commit and push after every step (her Fable usage is limited; the thread must not be lost).
 - **City type: `hub`.** Fixed first (this commit). Was `transit`, assumed before research.
