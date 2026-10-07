@@ -94,3 +94,8 @@ Written down before the run. MLB only (its feed lists promotions); every source 
 - **Promotion history:** she will research past promotional schedules herself. Prompt: `docs/promo-history-research-prompt.md`.
 - **Concerts: the 57% default is approved** (Kylie, Oct 7), and the (i) should say so. **Every estimated number gets the same (i)** (Kylie, Oct 7).
 - **City order after this work** (Kylie, Oct 7): **Atlanta, Bay Area, Chicago, Dallas–Fort Worth, Montreal.** Montreal moves from next to fifth.
+
+## Atlanta build (Kylie, Oct 7): recommendations approved
+- Boundary: the 11-county core, as researched. City type **driving**. Neutral-site football at Mercedes-Benz Stadium is hand-listed (`listings2026.ts`); festival parks and the Georgia World Congress Center are not venue rows (events sized by their own crowds); Dragon Con is not sized (passes, not person-days); Dream games at Gateway Center (3,500) are under the floor.
+- The tester's Canadiens night (May 25, 2026) is hand-seeded when Montreal is built, not before (Kylie, Oct 7).
+- Concert-sizing gaps and the distance discount: both approved to proceed; the discount as a proposal first.
