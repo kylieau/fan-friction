@@ -2,8 +2,107 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "rams",
-  "collectedOn": "2026-10-06",
+  "collectedOn": "2026-10-07",
   "games": [
+    {
+      "teamId": "rams",
+      "season": 2022,
+      "date": "2022-09-08",
+      "start": "17:20",
+      "opponent": "Bills",
+      "venueId": "sofi-stadium",
+      "attendance": 73846,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "13:05",
+      "opponent": "Falcons",
+      "venueId": "sofi-stadium",
+      "attendance": 71802,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2022,
+      "date": "2022-10-09",
+      "start": "13:25",
+      "opponent": "Cowboys",
+      "venueId": "sofi-stadium",
+      "attendance": 74154,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2022,
+      "date": "2022-10-16",
+      "start": "13:05",
+      "opponent": "Panthers",
+      "venueId": "sofi-stadium",
+      "attendance": 71482,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2022,
+      "date": "2022-10-30",
+      "start": "13:25",
+      "opponent": "49ers",
+      "venueId": "sofi-stadium",
+      "attendance": 73505,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2022,
+      "date": "2022-11-13",
+      "start": "13:25",
+      "opponent": "Cardinals",
+      "venueId": "sofi-stadium",
+      "attendance": 71752,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2022,
+      "date": "2022-12-04",
+      "start": "13:05",
+      "opponent": "Seahawks",
+      "venueId": "sofi-stadium",
+      "attendance": 71802,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2022,
+      "date": "2022-12-08",
+      "start": "17:15",
+      "opponent": "Raiders",
+      "venueId": "sofi-stadium",
+      "attendance": 74738,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2022,
+      "date": "2022-12-25",
+      "start": "13:30",
+      "opponent": "Broncos",
+      "venueId": "sofi-stadium",
+      "attendance": 71525,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
     {
       "teamId": "rams",
       "season": 2023,

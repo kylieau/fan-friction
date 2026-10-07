@@ -2,8 +2,96 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "ucla-football",
-  "collectedOn": "2026-10-06",
+  "collectedOn": "2026-10-07",
   "games": [
+    {
+      "teamId": "ucla-football",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "11:30",
+      "opponent": "Bowling Green",
+      "venueId": "rose-bowl",
+      "attendance": 27143,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "14:00",
+      "opponent": "Alabama St",
+      "venueId": "rose-bowl",
+      "attendance": 33727,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "11:00",
+      "opponent": "South Alabama",
+      "venueId": "rose-bowl",
+      "attendance": 29344,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "19:30",
+      "opponent": "Washington",
+      "venueId": "rose-bowl",
+      "attendance": 41343,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "12:30",
+      "opponent": "Utah",
+      "venueId": "rose-bowl",
+      "attendance": 42038,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2022,
+      "date": "2022-10-29",
+      "start": "19:30",
+      "opponent": "Stanford",
+      "venueId": "rose-bowl",
+      "attendance": 43850,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "19:30",
+      "opponent": "Arizona",
+      "venueId": "rose-bowl",
+      "attendance": 44430,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2022,
+      "date": "2022-11-19",
+      "start": "17:00",
+      "opponent": "USC",
+      "venueId": "rose-bowl",
+      "attendance": 70865,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
     {
       "teamId": "ucla-football",
       "season": 2023,

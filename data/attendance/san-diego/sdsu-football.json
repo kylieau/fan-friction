@@ -2,8 +2,85 @@
   "schema": 1,
   "metroId": "san-diego",
   "teamId": "sdsu-football",
-  "collectedOn": "2026-10-06",
+  "collectedOn": "2026-10-07",
   "games": [
+    {
+      "teamId": "sdsu-football",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "12:30",
+      "opponent": "Arizona",
+      "venueId": "snapdragon-stadium",
+      "attendance": 34046,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "17:00",
+      "opponent": "Idaho St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 27865,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "12:30",
+      "opponent": "Toledo",
+      "venueId": "snapdragon-stadium",
+      "attendance": 27108,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "19:30",
+      "opponent": "Hawai'i",
+      "venueId": "snapdragon-stadium",
+      "attendance": 33073,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "16:00",
+      "opponent": "UNLV",
+      "venueId": "snapdragon-stadium",
+      "attendance": 28854,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "19:30",
+      "opponent": "San José St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 28406,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2022,
+      "date": "2022-11-26",
+      "start": "18:00",
+      "opponent": "Air Force",
+      "venueId": "snapdragon-stadium",
+      "attendance": 25223,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
     {
       "teamId": "sdsu-football",
       "season": 2023,

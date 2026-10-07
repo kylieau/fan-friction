@@ -3,5 +3,138 @@
   "metroId": "new-york",
   "teamId": "fordham-football",
   "collectedOn": "2026-10-07",
-  "games": []
+  "games": [
+    {
+      "teamId": "fordham-football",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "13:00",
+      "opponent": "UAlbany",
+      "venueId": "coffey-field",
+      "attendance": 5000,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "13:00",
+      "opponent": "Georgetown",
+      "venueId": "coffey-field",
+      "attendance": 4417,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2022,
+      "date": "2022-10-15",
+      "start": "18:00",
+      "opponent": "Stony Brook",
+      "venueId": "coffey-field",
+      "attendance": 1914,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "13:00",
+      "opponent": "Lafayette",
+      "venueId": "coffey-field",
+      "attendance": 2020,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "13:00",
+      "opponent": "Holy Cross",
+      "venueId": "coffey-field",
+      "attendance": 7000,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "13:00",
+      "opponent": "Bucknell",
+      "venueId": "coffey-field",
+      "attendance": 1950,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "13:00",
+      "opponent": "Stony Brook",
+      "venueId": "coffey-field",
+      "attendance": 3112,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "13:00",
+      "opponent": "Lafayette",
+      "venueId": "coffey-field",
+      "attendance": 4300,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "13:00",
+      "opponent": "Holy Cross",
+      "venueId": "coffey-field",
+      "attendance": 2039,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "13:00",
+      "opponent": "Dartmouth",
+      "venueId": "coffey-field",
+      "attendance": 3814,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2025,
+      "date": "2025-10-25",
+      "start": "13:00",
+      "opponent": "Lehigh",
+      "venueId": "coffey-field",
+      "attendance": 4893,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2025,
+      "date": "2025-11-08",
+      "start": "13:00",
+      "opponent": "Bucknell",
+      "venueId": "coffey-field",
+      "attendance": 2235,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
 }

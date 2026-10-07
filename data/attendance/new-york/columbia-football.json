@@ -3,5 +3,226 @@
   "metroId": "new-york",
   "teamId": "columbia-football",
   "collectedOn": "2026-10-07",
-  "games": []
+  "games": [
+    {
+      "teamId": "columbia-football",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "13:00",
+      "opponent": "Princeton",
+      "venueId": "wien-stadium",
+      "attendance": 4071,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "13:00",
+      "opponent": "Wagner",
+      "venueId": "wien-stadium",
+      "attendance": 3125,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2022,
+      "date": "2022-10-22",
+      "start": "13:30",
+      "opponent": "Dartmouth",
+      "venueId": "wien-stadium",
+      "attendance": 11023,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2022,
+      "date": "2022-10-28",
+      "start": "18:30",
+      "opponent": "Yale",
+      "venueId": "wien-stadium",
+      "attendance": 3551,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2022,
+      "date": "2022-11-19",
+      "start": "13:00",
+      "opponent": "Cornell",
+      "venueId": "wien-stadium",
+      "attendance": 3672,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "12:30",
+      "opponent": "Georgetown",
+      "venueId": "wien-stadium",
+      "attendance": 3197,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2023,
+      "date": "2023-10-07",
+      "start": "12:30",
+      "opponent": "Marist",
+      "venueId": "wien-stadium",
+      "attendance": 2873,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2023,
+      "date": "2023-10-14",
+      "start": "13:30",
+      "opponent": "Penn",
+      "venueId": "wien-stadium",
+      "attendance": 8032,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "12:30",
+      "opponent": "Harvard",
+      "venueId": "wien-stadium",
+      "attendance": 3723,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "12:30",
+      "opponent": "Brown",
+      "venueId": "wien-stadium",
+      "attendance": 4007,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "12:00",
+      "opponent": "Lafayette",
+      "venueId": "wien-stadium",
+      "attendance": 3592,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "12:00",
+      "opponent": "Princeton",
+      "venueId": "wien-stadium",
+      "attendance": 4111,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "13:30",
+      "opponent": "Dartmouth",
+      "venueId": "wien-stadium",
+      "attendance": 12642,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2024,
+      "date": "2024-11-01",
+      "start": "19:00",
+      "opponent": "Yale",
+      "venueId": "wien-stadium",
+      "attendance": 3560,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "12:00",
+      "opponent": "Cornell",
+      "venueId": "wien-stadium",
+      "attendance": 4224,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "12:00",
+      "opponent": "Georgetown",
+      "venueId": "wien-stadium",
+      "attendance": 3909,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2025,
+      "date": "2025-10-11",
+      "start": "12:00",
+      "opponent": "Lehigh",
+      "venueId": "wien-stadium",
+      "attendance": 3049,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "13:30",
+      "opponent": "Penn",
+      "venueId": "wien-stadium",
+      "attendance": 12704,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2025,
+      "date": "2025-11-07",
+      "start": "19:00",
+      "opponent": "Harvard",
+      "venueId": "wien-stadium",
+      "attendance": 3644,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "12:00",
+      "opponent": "Brown",
+      "venueId": "wien-stadium",
+      "attendance": 3122,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
 }

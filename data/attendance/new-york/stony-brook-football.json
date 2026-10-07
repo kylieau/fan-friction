@@ -3,5 +3,248 @@
   "metroId": "new-york",
   "teamId": "stony-brook-football",
   "collectedOn": "2026-10-07",
-  "games": []
+  "games": [
+    {
+      "teamId": "stony-brook-football",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "19:00",
+      "opponent": "Rhode Island",
+      "venueId": "lavalle-stadium",
+      "attendance": 7101,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "15:30",
+      "opponent": "William & Mary",
+      "venueId": "lavalle-stadium",
+      "attendance": 3581,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2022,
+      "date": "2022-10-22",
+      "start": "15:30",
+      "opponent": "Maine",
+      "venueId": "lavalle-stadium",
+      "attendance": 7174,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "13:00",
+      "opponent": "Morgan St",
+      "venueId": "lavalle-stadium",
+      "attendance": 4502,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "13:00",
+      "opponent": "Towson",
+      "venueId": "lavalle-stadium",
+      "attendance": 3513,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": "19:00",
+      "opponent": "Delaware",
+      "venueId": "lavalle-stadium",
+      "attendance": 11132,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "15:30",
+      "opponent": "Richmond",
+      "venueId": "lavalle-stadium",
+      "attendance": 3678,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2023,
+      "date": "2023-10-14",
+      "start": "15:30",
+      "opponent": "Fordham",
+      "venueId": "lavalle-stadium",
+      "attendance": 4165,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "15:30",
+      "opponent": "New Hampshire",
+      "venueId": "lavalle-stadium",
+      "attendance": 7739,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "13:00",
+      "opponent": "UAlbany",
+      "venueId": "lavalle-stadium",
+      "attendance": 5671,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "15:30",
+      "opponent": "Stonehill",
+      "venueId": "lavalle-stadium",
+      "attendance": 8062,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "15:30",
+      "opponent": "Morgan St",
+      "venueId": "lavalle-stadium",
+      "attendance": 4818,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "15:30",
+      "opponent": "Villanova",
+      "venueId": "lavalle-stadium",
+      "attendance": 6142,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "15:30",
+      "opponent": "William & Mary",
+      "venueId": "lavalle-stadium",
+      "attendance": 7599,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2024,
+      "date": "2024-11-09",
+      "start": "13:00",
+      "opponent": "UAlbany",
+      "venueId": "lavalle-stadium",
+      "attendance": 5717,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "13:00",
+      "opponent": "Monmouth",
+      "venueId": "lavalle-stadium",
+      "attendance": 5263,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "19:30",
+      "opponent": "Rhode Island",
+      "venueId": "lavalle-stadium",
+      "attendance": 5539,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "15:30",
+      "opponent": "Fordham",
+      "venueId": "lavalle-stadium",
+      "attendance": 5769,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "15:30",
+      "opponent": "Merrimack",
+      "venueId": "lavalle-stadium",
+      "attendance": 3596,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2025,
+      "date": "2025-10-25",
+      "start": "15:30",
+      "opponent": "Towson",
+      "venueId": "lavalle-stadium",
+      "attendance": 6701,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2025,
+      "date": "2025-11-08",
+      "start": "12:00",
+      "opponent": "NC A&T",
+      "venueId": "lavalle-stadium",
+      "attendance": 4117,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "12:00",
+      "opponent": "Bryant",
+      "venueId": "lavalle-stadium",
+      "attendance": 3027,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
 }

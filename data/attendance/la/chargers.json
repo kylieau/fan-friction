@@ -2,8 +2,96 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "chargers",
-  "collectedOn": "2026-10-06",
+  "collectedOn": "2026-10-07",
   "games": [
+    {
+      "teamId": "chargers",
+      "season": 2022,
+      "date": "2022-09-11",
+      "start": "13:25",
+      "opponent": "Raiders",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2022,
+      "date": "2022-09-25",
+      "start": "13:05",
+      "opponent": "Jaguars",
+      "venueId": "sofi-stadium",
+      "attendance": 67964,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2022,
+      "date": "2022-10-17",
+      "start": "17:15",
+      "opponent": "Broncos",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2022,
+      "date": "2022-10-23",
+      "start": "13:25",
+      "opponent": "Seahawks",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2022,
+      "date": "2022-11-20",
+      "start": "17:20",
+      "opponent": "Chiefs",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2022,
+      "date": "2022-12-11",
+      "start": "17:20",
+      "opponent": "Dolphins",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2022,
+      "date": "2022-12-18",
+      "start": "13:25",
+      "opponent": "Titans",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chargers",
+      "season": 2022,
+      "date": "2023-01-01",
+      "start": "13:25",
+      "opponent": "Rams",
+      "venueId": "sofi-stadium",
+      "attendance": 70240,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
     {
       "teamId": "chargers",
       "season": 2023,

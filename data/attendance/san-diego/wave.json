@@ -2,8 +2,41 @@
   "schema": 1,
   "metroId": "san-diego",
   "teamId": "wave",
-  "collectedOn": "2026-10-06",
+  "collectedOn": "2026-10-07",
   "games": [
+    {
+      "teamId": "wave",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "19:00",
+      "opponent": "Angel City",
+      "venueId": "snapdragon-stadium",
+      "attendance": 32000,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "wave",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "19:00",
+      "opponent": "North Carolina",
+      "venueId": "snapdragon-stadium",
+      "attendance": 18000,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "wave",
+      "season": 2022,
+      "date": "2022-10-16",
+      "start": "19:00",
+      "opponent": "Chicago",
+      "venueId": "snapdragon-stadium",
+      "attendance": 26215,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
     {
       "teamId": "wave",
       "season": 2023,

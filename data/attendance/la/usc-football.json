@@ -2,8 +2,85 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "usc-football",
-  "collectedOn": "2026-10-06",
+  "collectedOn": "2026-10-07",
   "games": [
+    {
+      "teamId": "usc-football",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "15:00",
+      "opponent": "Rice",
+      "venueId": "coliseum",
+      "attendance": 60113,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "19:30",
+      "opponent": "Fresno St",
+      "venueId": "coliseum",
+      "attendance": 67226,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "19:40",
+      "opponent": "Arizona St",
+      "venueId": "coliseum",
+      "attendance": 62133,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "16:30",
+      "opponent": "Washington St",
+      "venueId": "coliseum",
+      "attendance": 63204,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "19:30",
+      "opponent": "California",
+      "venueId": "coliseum",
+      "attendance": 64916,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2022,
+      "date": "2022-11-11",
+      "start": "18:30",
+      "opponent": "Colorado",
+      "venueId": "coliseum",
+      "attendance": 61206,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2022,
+      "date": "2022-11-26",
+      "start": "16:30",
+      "opponent": "Notre Dame",
+      "venueId": "coliseum",
+      "attendance": 72613,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
     {
       "teamId": "usc-football",
       "season": 2023,

@@ -2,8 +2,107 @@
   "schema": 1,
   "metroId": "seattle",
   "teamId": "seahawks",
-  "collectedOn": "2026-10-06",
+  "collectedOn": "2026-10-07",
   "games": [
+    {
+      "teamId": "seahawks",
+      "season": 2022,
+      "date": "2022-09-12",
+      "start": "17:15",
+      "opponent": "Broncos",
+      "venueId": "lumen-field",
+      "attendance": 68965,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2022,
+      "date": "2022-09-25",
+      "start": "13:25",
+      "opponent": "Falcons",
+      "venueId": "lumen-field",
+      "attendance": 68773,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2022,
+      "date": "2022-10-16",
+      "start": "13:05",
+      "opponent": "Cardinals",
+      "venueId": "lumen-field",
+      "attendance": 68867,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2022,
+      "date": "2022-10-30",
+      "start": "13:25",
+      "opponent": "Giants",
+      "venueId": "lumen-field",
+      "attendance": 68921,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2022,
+      "date": "2022-11-27",
+      "start": "13:05",
+      "opponent": "Raiders",
+      "venueId": "lumen-field",
+      "attendance": 68849,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2022,
+      "date": "2022-12-11",
+      "start": "13:25",
+      "opponent": "Panthers",
+      "venueId": "lumen-field",
+      "attendance": 68672,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2022,
+      "date": "2022-12-15",
+      "start": "17:15",
+      "opponent": "49ers",
+      "venueId": "lumen-field",
+      "attendance": 68957,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2022,
+      "date": "2023-01-01",
+      "start": "13:05",
+      "opponent": "Jets",
+      "venueId": "lumen-field",
+      "attendance": 68827,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2022,
+      "date": "2023-01-08",
+      "start": "13:25",
+      "opponent": "Rams",
+      "venueId": "lumen-field",
+      "attendance": 68660,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
     {
       "teamId": "seahawks",
       "season": 2023,
