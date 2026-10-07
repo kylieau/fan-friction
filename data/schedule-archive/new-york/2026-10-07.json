@@ -4,7 +4,7 @@
   "metroName": "New York",
   "timeZone": "America/New_York",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T14:32:38.455Z",
+  "capturedAt": "2026-10-07T17:33:29.531Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -30,7 +30,7 @@
     {
       "id": "ticketmaster",
       "name": "Ticketmaster listings",
-      "inWindow": 13
+      "inWindow": 14
     }
   ],
   "events": [
@@ -86,6 +86,10 @@
       "ticketmasterId": "G5diZ_dfAnI1y",
       "occasionFacts": {
         "run": 3
+      },
+      "expectedDraw": {
+        "count": 14173,
+        "note": "This room's average per reported show: Billboard, 1.8M over 127 shows, Oct 2024 – Sep 2025. An estimate."
       }
     },
     {
@@ -139,9 +143,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 14666,
-        "low": 14290,
-        "high": 14897,
+        "count": 15018,
+        "low": 14633,
+        "high": 15255,
         "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
       }
     },
@@ -222,7 +226,11 @@
       "performer": "LE SSERAFIM",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1FZ_1RM07i3"
+      "ticketmasterId": "vvG1FZ_1RM07i3",
+      "expectedDraw": {
+        "count": 9083,
+        "note": "This room's average per reported show: Billboard, 981K over 108 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-08-mlb-849837",
@@ -272,7 +280,11 @@
       "performer": "Jessie Ware",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "G5dYZ_kma1OTc"
+      "ticketmasterId": "G5dYZ_kma1OTc",
+      "expectedDraw": {
+        "count": 3397,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-09-nycc",
@@ -367,7 +379,11 @@
       "performer": "The Format",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "G5dYZ_1NSz3fJ"
+      "ticketmasterId": "G5dYZ_1NSz3fJ",
+      "expectedDraw": {
+        "count": 3397,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-09-tm-G5diZ_dfAcz51",
@@ -390,6 +406,10 @@
       "ticketmasterId": "G5diZ_dfAcz51",
       "occasionFacts": {
         "run": 3
+      },
+      "expectedDraw": {
+        "count": 14173,
+        "note": "This room's average per reported show: Billboard, 1.8M over 127 shows, Oct 2024 – Sep 2025. An estimate."
       }
     },
     {
@@ -410,7 +430,11 @@
       "performer": "Jamie Jones",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7PI0I"
+      "ticketmasterId": "Z7r9jZ1A7PI0I",
+      "expectedDraw": {
+        "count": 3420,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-10-nycc",
@@ -463,9 +487,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 16514,
-        "low": 16514,
-        "high": 16514,
+        "count": 15886,
+        "low": 15886,
+        "high": 15886,
         "note": "Typical announced crowd here for a Saturday: 27 games, 2024–2026."
       }
     },
@@ -515,7 +539,11 @@
       "performer": "CHRONO TRIGGER Orchestra Concert",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "G5diZ_7rmEKO0"
+      "ticketmasterId": "G5diZ_7rmEKO0",
+      "expectedDraw": {
+        "count": 3192,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-10-tm-k7vGF_aUb02cm",
@@ -535,7 +563,11 @@
       "performer": "Foster the People",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "k7vGF_aUb02cm"
+      "ticketmasterId": "k7vGF_aUb02cm",
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-10-espn-islanders-401892479",
@@ -560,9 +592,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 17255,
-        "low": 17255,
-        "high": 17255,
+        "count": 16513,
+        "low": 16513,
+        "high": 16513,
         "note": "Typical announced crowd here for a Saturday: 33 games, 2024–2026."
       }
     },
@@ -612,7 +644,11 @@
       "performer": "Don Omar",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "17GZv0G61DlIaN2"
+      "ticketmasterId": "17GZv0G61DlIaN2",
+      "expectedDraw": {
+        "count": 10571,
+        "note": "This room's average per reported show: Billboard, 962K over 91 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-10-tm-G5diZ_dfAVb5L",
@@ -635,6 +671,10 @@
       "ticketmasterId": "G5diZ_dfAVb5L",
       "occasionFacts": {
         "run": 3
+      },
+      "expectedDraw": {
+        "count": 14173,
+        "note": "This room's average per reported show: Billboard, 1.8M over 127 shows, Oct 2024 – Sep 2025. An estimate."
       }
     },
     {
@@ -655,7 +695,11 @@
       "performer": "Steve Lacy",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "G5dYZ_8CAw-5m"
+      "ticketmasterId": "G5dYZ_8CAw-5m",
+      "expectedDraw": {
+        "count": 3397,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-10-tm-Z7r9jZ1A7JFjw",
@@ -675,7 +719,11 @@
       "performer": "50 Cent",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7JFjw"
+      "ticketmasterId": "Z7r9jZ1A7JFjw",
+      "expectedDraw": {
+        "count": 3420,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-11-nycc",
@@ -762,6 +810,26 @@
       "sourceId": "espn"
     },
     {
+      "id": "2026-10-11-tm-Z7r9jZ1AAZ8FU",
+      "metroId": "new-york",
+      "date": "2026-10-11",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Francis Mercier - Ages 21+",
+      "place": {
+        "type": "venue",
+        "venueId": "pacha-new-york"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Francis Mercier",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ8FU"
+    },
+    {
       "id": "2026-10-11-espn-ny-rangers-401892483",
       "metroId": "new-york",
       "date": "2026-10-11",
@@ -784,9 +852,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 18006,
-        "low": 17484,
-        "high": 18006,
+        "count": 17844,
+        "low": 17327,
+        "high": 17844,
         "note": "Typical announced crowd here for a Sunday: 20 games, 2024–2026."
       }
     },
@@ -872,9 +940,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 18006,
-        "low": 17634,
-        "high": 18006,
+        "count": 17844,
+        "low": 17475,
+        "high": 17844,
         "note": "Typical announced crowd here for a weeknight in October: 6 games, 2024–2026."
       }
     },
@@ -901,9 +969,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 14666,
-        "low": 14290,
-        "high": 14897,
+        "count": 14475,
+        "low": 14104,
+        "high": 14703,
         "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
       }
     },
@@ -930,9 +998,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 16117,
-        "low": 15410,
-        "high": 16434,
+        "count": 16198,
+        "low": 15487,
+        "high": 16516,
         "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
       }
     },
@@ -987,9 +1055,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 6701,
-        "low": 6142,
-        "high": 7599,
+        "count": 6922,
+        "low": 6345,
+        "high": 7850,
         "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
       }
     },
@@ -1074,7 +1142,7 @@
         "count": 20681,
         "low": 18815,
         "high": 24896,
-        "note": "Typical announced crowd here for a Saturday: 27 games, 2024–2025. Adjusted for this opponent."
+        "note": "Typical announced crowd here for a Saturday: 27 games, 2024–2025."
       }
     },
     {
@@ -1158,9 +1226,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 16117,
-        "low": 15410,
-        "high": 16434,
+        "count": 16004,
+        "low": 15302,
+        "high": 16319,
         "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
       }
     },
@@ -1187,9 +1255,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 14666,
-        "low": 14290,
-        "high": 14897,
+        "count": 14461,
+        "low": 14090,
+        "high": 14688,
         "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
       }
     },
@@ -1217,9 +1285,9 @@
       "sourceId": "espn",
       "homeOpener": true,
       "expectedDraw": {
-        "count": 19812,
-        "low": 19812,
-        "high": 19812,
+        "count": 19673,
+        "low": 19673,
+        "high": 19673,
         "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
       }
     },
@@ -1246,9 +1314,9 @@
       "sourceId": "espn",
       "homeOpener": true,
       "expectedDraw": {
-        "count": 17926,
-        "low": 17737,
-        "high": 17929,
+        "count": 17711,
+        "low": 17524,
+        "high": 17714,
         "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
       }
     }
@@ -1259,7 +1327,7 @@
       "date": "2026-10-07",
       "start": "20:00",
       "read": {
-        "rating": 2.2,
+        "rating": 2,
         "friction": "Low",
         "why": "Harry Styles 6.5 mi away, same hours.",
         "method": "formula"
@@ -1270,10 +1338,13 @@
       "date": "2026-10-07",
       "start": "20:00",
       "read": {
-        "rating": 2.2,
+        "rating": 2,
         "friction": "Low",
         "why": "Yankees vs. Rays 6.5 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 14173
       }
     },
     {
@@ -1281,7 +1352,7 @@
       "date": "2026-10-08",
       "start": "10:00",
       "read": {
-        "rating": 7.5,
+        "rating": 7.2,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -1292,15 +1363,15 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 7.5,
+        "rating": 7.2,
         "friction": "Extreme",
         "why": "Yankees vs. Rays 13 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 14666,
-        "low": 14290,
-        "high": 14897
+        "count": 15018,
+        "low": 14633,
+        "high": 15255
       }
     },
     {
@@ -1308,7 +1379,7 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 7.5,
+        "rating": 7.2,
         "friction": "Extreme",
         "why": "Yankees vs. Rays 6.5 mi away, same hours.",
         "method": "formula"
@@ -1324,7 +1395,7 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 7.5,
+        "rating": 7.2,
         "friction": "Extreme",
         "why": "Yankees vs. Rays 10 mi away, same hours.",
         "method": "formula"
@@ -1340,10 +1411,13 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 7.5,
-        "friction": "Moderate",
+        "rating": 7.2,
+        "friction": "Heavy",
         "why": "Yankees vs. Rays 14 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 9083
       }
     },
     {
@@ -1351,7 +1425,7 @@
       "date": "2026-10-08",
       "start": "20:00",
       "read": {
-        "rating": 7.5,
+        "rating": 7.2,
         "friction": "Moderate",
         "why": "Knicks vs. Wizards 6.5 mi away, same hours.",
         "method": "formula"
@@ -1362,10 +1436,13 @@
       "date": "2026-10-08",
       "start": "20:00",
       "read": {
-        "rating": 7.5,
+        "rating": 7.2,
         "friction": "Heavy",
-        "why": "Yankees vs. Rays and LE SSERAFIM 5.6 mi away, same hours.",
+        "why": "Yankees vs. Rays and Knicks vs. Wizards 5.6 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3397
       }
     },
     {
@@ -1373,7 +1450,7 @@
       "date": "2026-10-09",
       "start": "10:00",
       "read": {
-        "rating": 9.2,
+        "rating": 8.9,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -1384,9 +1461,9 @@
       "date": "2026-10-09",
       "start": "19:30",
       "read": {
-        "rating": 9.2,
+        "rating": 8.9,
         "friction": "Moderate",
-        "why": "Harry Styles 4.8 mi away, same hours.",
+        "why": "Harry Styles and 2026 New York Liberty Benchwarmers Pre-Game Pass (Watch Warm-Ups) 4.8 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -1395,9 +1472,9 @@
       "date": "2026-10-09",
       "start": "19:30",
       "read": {
-        "rating": 9.2,
+        "rating": 8.9,
         "friction": "Moderate",
-        "why": "Harry Styles and Liberty vs. Dream 4.8 mi away, same hours.",
+        "why": "Liberty vs. Dream and Harry Styles next door, same hours.",
         "method": "formula"
       }
     },
@@ -1406,10 +1483,13 @@
       "date": "2026-10-09",
       "start": "19:30",
       "read": {
-        "rating": 9.2,
+        "rating": 8.9,
         "friction": "Heavy",
-        "why": "Harry Styles and Liberty vs. Dream 1.0 mi away, same hours.",
+        "why": "Liberty vs. Dream and Harry Styles 5.3 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3397
       }
     },
     {
@@ -1417,10 +1497,13 @@
       "date": "2026-10-09",
       "start": "20:00",
       "read": {
-        "rating": 9.2,
+        "rating": 8.9,
         "friction": "Moderate",
-        "why": "Liberty vs. Dream 4.8 mi away, same hours.",
+        "why": "Liberty vs. Dream and 2026 New York Liberty Benchwarmers Pre-Game Pass (Watch Warm-Ups) 4.8 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 14173
       }
     },
     {
@@ -1428,10 +1511,13 @@
       "date": "2026-10-09",
       "start": "22:00",
       "read": {
-        "rating": 9.2,
+        "rating": 8.9,
         "friction": "Heavy",
-        "why": "Harry Styles and Liberty vs. Dream 4.4 mi away, same hours.",
+        "why": "Liberty vs. Dream and Harry Styles 3.2 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3420
       }
     },
     {
@@ -1439,7 +1525,7 @@
       "date": "2026-10-10",
       "start": "10:00",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -1450,15 +1536,15 @@
       "date": "2026-10-10",
       "start": "15:30",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Heavy",
         "why": "Islanders vs. Lightning 23 mi away, back to back.",
         "method": "formula"
       },
       "draw": {
-        "count": 16514,
-        "low": 16514,
-        "high": 16514
+        "count": 15886,
+        "low": 15886,
+        "high": 15886
       }
     },
     {
@@ -1466,7 +1552,7 @@
       "date": "2026-10-10",
       "start": "15:30",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "method": "nearby"
       },
       "draw": {
@@ -1480,10 +1566,13 @@
       "date": "2026-10-10",
       "start": "19:00",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Extreme",
         "why": "Harry Styles next door, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3192
       }
     },
     {
@@ -1491,10 +1580,13 @@
       "date": "2026-10-10",
       "start": "19:00",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Heavy",
-        "why": "Harry Styles and Don Omar 7.8 mi away, same hours.",
+        "why": "Harry Styles and Red Bull NY vs. San Diego FC 7.8 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 7980
       }
     },
     {
@@ -1502,15 +1594,15 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Heavy",
         "why": "Devils vs. Canucks 23 mi away, back to back.",
         "method": "formula"
       },
       "draw": {
-        "count": 17255,
-        "low": 17255,
-        "high": 17255
+        "count": 16513,
+        "low": 16513,
+        "high": 16513
       }
     },
     {
@@ -1518,9 +1610,9 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Heavy",
-        "why": "Harry Styles and Don Omar 8.3 mi away, same hours.",
+        "why": "Harry Styles and Islanders vs. Lightning 8.3 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1534,10 +1626,13 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Heavy",
-        "why": "Harry Styles and 50 Cent 4.8 mi away, same hours.",
+        "why": "Harry Styles and Red Bull NY vs. San Diego FC 4.8 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10571
       }
     },
     {
@@ -1545,10 +1640,13 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Moderate",
-        "why": "Don Omar and Red Bull NY vs. San Diego FC 4.8 mi away, same hours.",
+        "why": "Red Bull NY vs. San Diego FC and Islanders vs. Lightning 8.3 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 14173
       }
     },
     {
@@ -1556,10 +1654,13 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Extreme",
-        "why": "Harry Styles and Don Omar 1.0 mi away, same hours.",
+        "why": "Harry Styles and Red Bull NY vs. San Diego FC 1.0 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3397
       }
     },
     {
@@ -1567,10 +1668,13 @@
       "date": "2026-10-10",
       "start": "22:00",
       "read": {
-        "rating": 7.8,
+        "rating": 6.8,
         "friction": "Extreme",
         "why": "Don Omar 3.2 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3420
       }
     },
     {
@@ -1578,7 +1682,7 @@
       "date": "2026-10-11",
       "start": "10:00",
       "read": {
-        "rating": 5.6,
+        "rating": 6,
         "friction": "Low",
         "why": "Jets vs. Browns 5.4 mi away, same hours.",
         "method": "formula"
@@ -1589,7 +1693,7 @@
       "date": "2026-10-11",
       "start": "13:00",
       "read": {
-        "rating": 5.6,
+        "rating": 6,
         "friction": "Moderate",
         "why": "Rain in the forecast at a 1:00 pm start.",
         "method": "formula"
@@ -1605,9 +1709,20 @@
       "date": "2026-10-11",
       "start": "14:00",
       "read": {
-        "rating": 5.6,
+        "rating": 6,
         "friction": "Moderate",
         "why": "Jets vs. Browns and New York Comic Con (day 4 of 4) 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-Z7r9jZ1AAZ8FU",
+      "date": "2026-10-11",
+      "start": "16:00",
+      "read": {
+        "rating": 6,
+        "friction": "Heavy",
+        "why": "Jets vs. Browns and Liberty vs. Dream 11 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -1616,15 +1731,15 @@
       "date": "2026-10-11",
       "start": "18:00",
       "read": {
-        "rating": 5.6,
+        "rating": 6,
         "friction": "Moderate",
         "why": "Jets vs. Browns and Liberty vs. Dream 6.1 mi away, back to back.",
         "method": "formula"
       },
       "draw": {
-        "count": 18006,
-        "low": 17484,
-        "high": 18006
+        "count": 17844,
+        "low": 17327,
+        "high": 17844
       }
     },
     {
@@ -1670,9 +1785,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 18006,
-        "low": 17634,
-        "high": 18006
+        "count": 17844,
+        "low": 17475,
+        "high": 17844
       }
     },
     {
@@ -1686,9 +1801,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 14666,
-        "low": 14290,
-        "high": 14897
+        "count": 14475,
+        "low": 14104,
+        "high": 14703
       }
     },
     {
@@ -1702,9 +1817,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 16117,
-        "low": 15410,
-        "high": 16434
+        "count": 16198,
+        "low": 15487,
+        "high": 16516
       }
     },
     {
@@ -1734,9 +1849,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 6701,
-        "low": 6142,
-        "high": 7599
+        "count": 6922,
+        "low": 6345,
+        "high": 7850
       }
     },
     {
@@ -1828,9 +1943,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 16117,
-        "low": 15410,
-        "high": 16434
+        "count": 16004,
+        "low": 15302,
+        "high": 16319
       }
     },
     {
@@ -1844,9 +1959,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 14666,
-        "low": 14290,
-        "high": 14897
+        "count": 14461,
+        "low": 14090,
+        "high": 14688
       }
     },
     {
@@ -1860,9 +1975,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 19812,
-        "low": 19812,
-        "high": 19812
+        "count": 19673,
+        "low": 19673,
+        "high": 19673
       }
     },
     {
@@ -1876,9 +1991,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 17926,
-        "low": 17737,
-        "high": 17929
+        "count": 17711,
+        "low": 17524,
+        "high": 17714
       }
     }
   ]

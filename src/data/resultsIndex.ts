@@ -6,6 +6,78 @@ import type { GameResult } from './types';
 
 export const GAME_RESULTS: GameResult[] = [
   {
+    "eventId": "2026-10-04-espn-dream-401918295",
+    "metroId": "atlanta",
+    "date": "2026-10-04",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "state-farm-arena",
+    "homeTeamId": "dream",
+    "home": {
+      "name": "Dream",
+      "score": 92
+    },
+    "away": {
+      "name": "Liberty",
+      "score": 82
+    },
+    "attendance": 9745,
+    "capturedAt": "2026-10-07T17:33:50.195Z",
+    "duration": {
+      "minutes": 125,
+      "kind": "estimated"
+    },
+    "startedAt": "14:04"
+  },
+  {
+    "eventId": "2026-10-05-espn-hawks-401898388",
+    "metroId": "atlanta",
+    "date": "2026-10-05",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "state-farm-arena",
+    "homeTeamId": "hawks",
+    "home": {
+      "name": "Hawks",
+      "score": 123
+    },
+    "away": {
+      "name": "Grizzlies",
+      "score": 132
+    },
+    "attendance": 10923,
+    "capturedAt": "2026-10-07T17:33:50.195Z",
+    "duration": {
+      "minutes": 166,
+      "kind": "estimated"
+    },
+    "startedAt": "15:52"
+  },
+  {
+    "eventId": "2026-10-06-mlb-849819",
+    "metroId": "atlanta",
+    "date": "2026-10-06",
+    "sourceId": "mlb",
+    "status": "final",
+    "venueId": "truist-park",
+    "homeTeamId": "braves",
+    "home": {
+      "name": "Braves",
+      "score": 1
+    },
+    "away": {
+      "name": "Dodgers",
+      "score": 3
+    },
+    "capturedAt": "2026-10-07T17:33:50.328Z",
+    "attendance": 42420,
+    "duration": {
+      "minutes": 176,
+      "kind": "official"
+    },
+    "startedAt": "18:11"
+  },
+  {
     "eventId": "2026-10-03-espn-usc-football-401858478",
     "metroId": "la",
     "date": "2026-10-03",

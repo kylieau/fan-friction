@@ -1,0 +1,1299 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "metroName": "Atlanta",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-07",
+  "capturedAt": "2026-10-07T17:33:41.082Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-07",
+    "through": "2026-10-21"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 1
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 9
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 22
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-07-mlb-849822",
+      "broadcast": "FS1",
+      "starters": {
+        "home": "Tyler Mahle",
+        "away": "Tyler Glasnow"
+      },
+      "metroId": "atlanta",
+      "date": "2026-10-07",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Braves vs. Dodgers",
+      "stakes": {
+        "round": "NLDS",
+        "game": 4
+      },
+      "place": {
+        "type": "venue",
+        "venueId": "truist-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "teams": {
+        "home": "braves",
+        "away": "dodgers"
+      },
+      "crowd": [],
+      "sourceId": "mlb"
+    },
+    {
+      "id": "2026-10-07-espn-ksu-football-401871051",
+      "metroId": "atlanta",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kennesaw St vs. Jax State",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "ksu-football",
+        "away": "jax-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 9585,
+        "low": 8897,
+        "high": 10313,
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-07-tm-vvG1zZ_7MxKXo2",
+      "metroId": "atlanta",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Phil Wickham",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phil Wickham",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_7MxKXo2",
+      "expectedDraw": {
+        "count": 7410,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-07-espn-dream-401918297",
+      "metroId": "atlanta",
+      "date": "2026-10-07",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Dream vs. Liberty",
+      "stakes": {
+        "round": "Semifinals",
+        "game": 2
+      },
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "dream",
+        "away": "liberty"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-08-tm-vvG1zZ_8UEbzYQ",
+      "metroId": "atlanta",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_8UEbzYQ",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-vvG1zZ_65jmHBe",
+      "metroId": "atlanta",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Turnpike Troubadours",
+      "place": {
+        "type": "venue",
+        "venueId": "chastain-park-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Turnpike Troubadours",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_65jmHBe",
+      "expectedDraw": {
+        "count": 3933,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-vvG1zZ_axBx1u5",
+      "metroId": "atlanta",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "kind": "show",
+      "title": "G-Eazy",
+      "place": {
+        "type": "venue",
+        "venueId": "ameris-bank-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "G-Eazy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_axBx1u5",
+      "expectedDraw": {
+        "count": 6840,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-espn-gt-football-401858255",
+      "metroId": "atlanta",
+      "date": "2026-10-10",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Georgia Tech vs. Duke",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "bobby-dodd-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "gt-football",
+        "away": "duke"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 37287,
+        "low": 35945,
+        "high": 50878,
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-vvG1zZ_6d_IGUK",
+      "metroId": "atlanta",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Weezer",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Weezer",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_6d_IGUK",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-espn-atlanta-united-761850",
+      "metroId": "atlanta",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Atlanta United vs. Cincinnati",
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "atlanta-united",
+        "away": "cincinnati"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 42218,
+        "low": 41606,
+        "high": 42948,
+        "note": "Typical announced crowd here for a Saturday: 21 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-vvG1zZ_6r-FIF6",
+      "metroId": "atlanta",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dermot Kennedy",
+      "place": {
+        "type": "venue",
+        "venueId": "chastain-park-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dermot Kennedy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_6r-FIF6",
+      "expectedDraw": {
+        "count": 3933,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-vvG1zZ_8kRi5L2",
+      "metroId": "atlanta",
+      "date": "2026-10-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fuerza Regida",
+      "place": {
+        "type": "venue",
+        "venueId": "lakewood-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Fuerza Regida",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_8kRi5L2",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10784,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-vvG1zZ_2QEaQGk",
+      "metroId": "atlanta",
+      "date": "2026-10-11",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Symphony at Sunset: Halloween Spooktacular with the ASO",
+      "place": {
+        "type": "venue",
+        "venueId": "ameris-bank-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Atlanta Symphony Orchestra",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_2QEaQGk"
+    },
+    {
+      "id": "2026-10-11-tm-vvG1zZ_83jDpwc",
+      "metroId": "atlanta",
+      "date": "2026-10-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fuerza Regida",
+      "place": {
+        "type": "venue",
+        "venueId": "lakewood-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Fuerza Regida",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_83jDpwc",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10784,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-espn-falcons-401872993",
+      "metroId": "atlanta",
+      "date": "2026-10-11",
+      "start": "20:20",
+      "kind": "game",
+      "title": "Falcons vs. Ravens",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "falcons",
+        "away": "ravens"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 70306,
+        "low": 69806,
+        "high": 70854,
+        "note": "Typical announced crowd here for a Sunday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-12-espn-hawks-401898402",
+      "metroId": "atlanta",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Hawks vs. Thunder",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "hawks",
+        "away": "thunder"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12575,
+        "low": 11854,
+        "high": 13081,
+        "note": "Typical announced crowd here for a preseason game: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-vvG1zZ_eQ2KN-d",
+      "metroId": "atlanta",
+      "date": "2026-10-13",
+      "start": "18:45",
+      "kind": "show",
+      "title": "Five Finger Death Punch",
+      "place": {
+        "type": "venue",
+        "venueId": "ameris-bank-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Five Finger Death Punch",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_eQ2KN-d",
+      "expectedDraw": {
+        "count": 6840,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-vvG1zZ_G68Ii_o",
+      "metroId": "atlanta",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Phoebe Bridgers",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phoebe Bridgers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_G68Ii_o",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-14-tm-vvG1zZ_uQsKFm-",
+      "metroId": "atlanta",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "beabadoobee",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "beabadoobee",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_uQsKFm-",
+      "expectedDraw": {
+        "count": 7410,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-dream-401918303",
+      "metroId": "atlanta",
+      "date": "2026-10-14",
+      "start": null,
+      "kind": "game",
+      "title": "Dream vs. Liberty",
+      "stakes": {
+        "round": "Semifinals",
+        "game": 5
+      },
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "dream",
+        "away": "liberty"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-15-tm-vvG1zZ_1D-1FDp",
+      "metroId": "atlanta",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dan + Shay",
+      "place": {
+        "type": "venue",
+        "venueId": "ameris-bank-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dan + Shay",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_1D-1FDp",
+      "expectedDraw": {
+        "count": 6840,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-vvG1zZ_8MZhDf8",
+      "metroId": "atlanta",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Alabama",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Alabama",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_8MZhDf8",
+      "expectedDraw": {
+        "count": 7410,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-vvG1zZ_1RbHwoA",
+      "metroId": "atlanta",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "KATSEYE",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "KATSEYE",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_1RbHwoA",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-vvG1zZ_oCmPBLY",
+      "metroId": "atlanta",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Delta Sky360 Club Experience: Katseye",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Delta Sky360 Club Experience: Katseye",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_oCmPBLY"
+    },
+    {
+      "id": "2026-10-16-tm-vvG1zZ_6RsPgK8",
+      "metroId": "atlanta",
+      "date": "2026-10-16",
+      "start": "18:30",
+      "kind": "show",
+      "title": "$UICIDEBOY$",
+      "place": {
+        "type": "venue",
+        "venueId": "lakewood-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "$UICIDEBOY$",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_6RsPgK8",
+      "expectedDraw": {
+        "count": 10784,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vvG1zZ_121qqS7",
+      "metroId": "atlanta",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "MercyMe",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "MercyMe",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_121qqS7",
+      "expectedDraw": {
+        "count": 7410,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1zZ_7mxwkQk",
+      "metroId": "atlanta",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Breaking Benjamin",
+      "place": {
+        "type": "venue",
+        "venueId": "ameris-bank-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Breaking Benjamin",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_7mxwkQk",
+      "expectedDraw": {
+        "count": 6840,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-atlanta-united-761880",
+      "metroId": "atlanta",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Atlanta United vs. Miami",
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "atlanta-united",
+        "away": "miami"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 47969,
+        "low": 47274,
+        "high": 48799,
+        "note": "Typical announced crowd here for a Saturday: 21 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1zZ_1UneLAE",
+      "metroId": "atlanta",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Don Omar",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Don Omar",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_1UneLAE",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-falcons-401872999",
+      "metroId": "atlanta",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Falcons vs. Bears",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "falcons",
+        "away": "bears"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 70306,
+        "low": 69806,
+        "high": 70854,
+        "note": "Typical announced crowd here for a Sunday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-vvG1zZ_1p_clEl",
+      "metroId": "atlanta",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_1p_clEl",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-vvG1zZ_FUW3nLL",
+      "metroId": "atlanta",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Teddy Swims",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_FUW3nLL",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-07-mlb-849822",
+      "date": "2026-10-07",
+      "start": "18:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "Dream vs. Liberty 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-07-espn-ksu-football-401871051",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Heavy",
+        "why": "Braves vs. Dodgers 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9585,
+        "low": 8897,
+        "high": 10313
+      }
+    },
+    {
+      "eventId": "2026-10-07-tm-vvG1zZ_7MxKXo2",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "Braves vs. Dodgers and Dream vs. Liberty 23 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7410
+      }
+    },
+    {
+      "eventId": "2026-10-07-espn-dream-401918297",
+      "date": "2026-10-07",
+      "start": "19:30",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "Braves vs. Dodgers 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-08-tm-vvG1zZ_8UEbzYQ",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-vvG1zZ_65jmHBe",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "G-Eazy 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 3933
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-vvG1zZ_axBx1u5",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Turnpike Troubadours 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6840
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-gt-football-401858255",
+      "date": "2026-10-10",
+      "start": "15:30",
+      "read": {
+        "rating": 5.1,
+        "friction": "Moderate",
+        "why": "Atlanta United vs. Cincinnati 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 37287,
+        "low": 35945,
+        "high": 50878
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-vvG1zZ_6d_IGUK",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Moderate",
+        "why": "Atlanta United vs. Cincinnati and Georgia Tech vs. Duke next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-atlanta-united-761850",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "read": {
+        "rating": 5.1,
+        "friction": "Moderate",
+        "why": "Georgia Tech vs. Duke 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 42218,
+        "low": 41606,
+        "high": 42948
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-vvG1zZ_6r-FIF6",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "read": {
+        "rating": 5.1,
+        "friction": "Extreme",
+        "why": "Weezer 8.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 3933
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-vvG1zZ_8kRi5L2",
+      "date": "2026-10-10",
+      "start": "20:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Moderate",
+        "why": "Atlanta United vs. Cincinnati and Georgia Tech vs. Duke 3.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10784
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG1zZ_2QEaQGk",
+      "date": "2026-10-11",
+      "start": "18:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Falcons vs. Ravens 21 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG1zZ_83jDpwc",
+      "date": "2026-10-11",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Falcons vs. Ravens 3.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10784
+      }
+    },
+    {
+      "eventId": "2026-10-11-espn-falcons-401872993",
+      "date": "2026-10-11",
+      "start": "20:20",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 70306,
+        "low": 69806,
+        "high": 70854
+      }
+    },
+    {
+      "eventId": "2026-10-12-espn-hawks-401898402",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12575,
+        "low": 11854,
+        "high": 13081
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-vvG1zZ_eQ2KN-d",
+      "date": "2026-10-13",
+      "start": "18:45",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Phoebe Bridgers 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6840
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-vvG1zZ_G68Ii_o",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Five Finger Death Punch 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-14-tm-vvG1zZ_uQsKFm-",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Dream vs. Liberty 24 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7410
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-dream-401918303",
+      "date": "2026-10-14",
+      "start": null,
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG1zZ_1D-1FDp",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Heavy",
+        "why": "Alabama 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6840
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG1zZ_8MZhDf8",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Heavy",
+        "why": "Dan + Shay 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7410
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG1zZ_1RbHwoA",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Delta Sky360 Club Experience: Katseye next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG1zZ_oCmPBLY",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "KATSEYE next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1zZ_6RsPgK8",
+      "date": "2026-10-16",
+      "start": "18:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "MercyMe 26 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10784
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1zZ_121qqS7",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "$UICIDEBOY$ 26 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7410
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1zZ_7mxwkQk",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Atlanta United vs. Miami 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6840
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-atlanta-united-761880",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Don Omar next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 47969,
+        "low": 47274,
+        "high": 48799
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1zZ_1UneLAE",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Atlanta United vs. Miami next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-falcons-401872999",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 70306,
+        "low": 69806,
+        "high": 70854
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-vvG1zZ_1p_clEl",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-vvG1zZ_FUW3nLL",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    }
+  ]
+}

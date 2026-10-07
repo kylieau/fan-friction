@@ -4,7 +4,7 @@
   "metroName": "San Diego",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T14:32:29.048Z",
+  "capturedAt": "2026-10-07T17:33:20.785Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -108,6 +108,10 @@
       "ticketmasterId": "vvG1IZ_F5TB6n1",
       "occasionFacts": {
         "run": 6
+      },
+      "expectedDraw": {
+        "count": 19950,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -151,7 +155,11 @@
       "performer": "Jack Johnson",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZbgXbSgVe"
+      "ticketmasterId": "vvG1IZbgXbSgVe",
+      "expectedDraw": {
+        "count": 11685,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-10-tm-vvG1IZ_F5TBMn9",
@@ -174,6 +182,10 @@
       "ticketmasterId": "vvG1IZ_F5TBMn9",
       "occasionFacts": {
         "run": 6
+      },
+      "expectedDraw": {
+        "count": 19950,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -240,7 +252,11 @@
       "performer": "MANÁ",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZbMExObDZ"
+      "ticketmasterId": "vvG1IZbMExObDZ",
+      "expectedDraw": {
+        "count": 11685,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-11-tm-vvG1IZ_F5TDEnj",
@@ -263,6 +279,10 @@
       "ticketmasterId": "vvG1IZ_F5TDEnj",
       "occasionFacts": {
         "run": 6
+      },
+      "expectedDraw": {
+        "count": 19950,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -306,7 +326,11 @@
       "performer": "for KING & COUNTRY",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_1UoDk-X"
+      "ticketmasterId": "vvG1IZ_1UoDk-X",
+      "expectedDraw": {
+        "count": 5700,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-11-tm-vvG1IZ_a3NPpAU",
@@ -326,7 +350,11 @@
       "performer": "Taking Back Sunday",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_a3NPpAU"
+      "ticketmasterId": "vvG1IZ_a3NPpAU",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-13-tm-vvG1IZ_FBVqMW5",
@@ -346,7 +374,11 @@
       "performer": "Geese",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_FBVqMW5"
+      "ticketmasterId": "vvG1IZ_FBVqMW5",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-14-espn-san-diego-fc-761872",
@@ -394,7 +426,11 @@
       "performer": "Turnpike Troubadours",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_Cks8Id5"
+      "ticketmasterId": "vvG1IZ_Cks8Id5",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-16-tm-vvG1IZ_18W2pnn",
@@ -414,7 +450,11 @@
       "performer": "MUNA",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_18W2pnn"
+      "ticketmasterId": "vvG1IZ_18W2pnn",
+      "expectedDraw": {
+        "count": 5700,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-16-tm-vvG1IZ_ap-YIAd",
@@ -434,7 +474,11 @@
       "performer": "G-Eazy",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_ap-YIAd"
+      "ticketmasterId": "vvG1IZ_ap-YIAd",
+      "expectedDraw": {
+        "count": 11685,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-17-tm-Z7r9jZ1A7-w7J",
@@ -454,7 +498,11 @@
       "performer": "Bonnie Raitt",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-w7J"
+      "ticketmasterId": "Z7r9jZ1A7-w7J",
+      "expectedDraw": {
+        "count": 5700,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-17-espn-sdsu-football-401860904",
@@ -503,7 +551,11 @@
       "performer": "Foster the People",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_ampfFN9"
+      "ticketmasterId": "vvG1IZ_ampfFN9",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
     }
   ],
   "forecasts": [
@@ -534,10 +586,13 @@
       "date": "2026-10-09",
       "start": "12:00",
       "read": {
-        "rating": 7.5,
+        "rating": 4.5,
         "friction": "Heavy",
         "why": "97° feels-like at a 12:00 pm start, no roof.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 19950
       }
     },
     {
@@ -545,7 +600,7 @@
       "date": "2026-10-09",
       "start": "15:00",
       "read": {
-        "rating": 7.5,
+        "rating": 4.5,
         "friction": "Moderate",
         "why": "93° feels-like at a 3:00 pm start, no roof.",
         "method": "formula"
@@ -556,10 +611,13 @@
       "date": "2026-10-09",
       "start": "19:30",
       "read": {
-        "rating": 7.5,
+        "rating": 4.5,
         "friction": "Low",
         "why": "Niteharts Festival 15 mi away, back to back.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 11685
       }
     },
     {
@@ -567,10 +625,13 @@
       "date": "2026-10-10",
       "start": "12:00",
       "read": {
-        "rating": 3.5,
+        "rating": 3,
         "friction": "Low",
-        "why": "87° feels-like at a 12:00 pm start, no roof.",
+        "why": "Niteharts Festival next door, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 19950
       }
     },
     {
@@ -578,7 +639,7 @@
       "date": "2026-10-10",
       "start": "12:00",
       "read": {
-        "rating": 3.5,
+        "rating": 3,
         "friction": "Moderate",
         "why": "Niteharts Festival and Niteharts Festival 3.6 mi away, same hours.",
         "method": "formula"
@@ -589,7 +650,7 @@
       "date": "2026-10-10",
       "start": "14:00",
       "read": {
-        "rating": 3.5,
+        "rating": 3,
         "friction": "Low",
         "why": "Niteharts Festival next door, same hours.",
         "method": "formula"
@@ -600,10 +661,13 @@
       "date": "2026-10-10",
       "start": "20:30",
       "read": {
-        "rating": 3.5,
+        "rating": 3,
         "friction": "Low",
         "why": "Niteharts Festival 15 mi away, earlier in the day.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 11685
       }
     },
     {
@@ -611,10 +675,13 @@
       "date": "2026-10-11",
       "start": "12:00",
       "read": {
-        "rating": 4,
+        "rating": 3.3,
         "friction": "Low",
         "why": "Niteharts Festival next door, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 19950
       }
     },
     {
@@ -622,8 +689,8 @@
       "date": "2026-10-11",
       "start": "13:00",
       "read": {
-        "rating": 4,
-        "friction": "Moderate",
+        "rating": 3.3,
+        "friction": "Low",
         "why": "Niteharts Festival next door, same hours.",
         "method": "formula"
       }
@@ -633,10 +700,13 @@
       "date": "2026-10-11",
       "start": "19:00",
       "read": {
-        "rating": 4,
+        "rating": 3.3,
         "friction": "Moderate",
         "why": "Taking Back Sunday 0.5 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 5700
       }
     },
     {
@@ -644,10 +714,13 @@
       "date": "2026-10-11",
       "start": "19:00",
       "read": {
-        "rating": 4,
+        "rating": 3.3,
         "friction": "Low",
-        "why": "Niteharts Festival and for KING & COUNTRY 5.7 mi away, back to back.",
+        "why": "Niteharts Festival 5.7 mi away, back to back.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 22720
       }
     },
     {
@@ -655,10 +728,13 @@
       "date": "2026-10-13",
       "start": "19:00",
       "read": {
-        "rating": 2,
+        "rating": 1,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 22720
       }
     },
     {
@@ -682,10 +758,13 @@
       "date": "2026-10-15",
       "start": "18:00",
       "read": {
-        "rating": 2,
+        "rating": 1,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 22720
       }
     },
     {
@@ -693,10 +772,13 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 7.1,
+        "rating": 1.4,
         "friction": "Low",
         "why": "G-Eazy 12 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 5700
       }
     },
     {
@@ -704,10 +786,13 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 7.1,
+        "rating": 1.4,
         "friction": "Low",
         "why": "MUNA 12 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 11685
       }
     },
     {
@@ -715,10 +800,13 @@
       "date": "2026-10-17",
       "start": "19:00",
       "read": {
-        "rating": 1.7,
+        "rating": 1.5,
         "friction": "Low",
         "why": "San Diego St vs. Fresno St 6.0 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 5700
       }
     },
     {
@@ -726,9 +814,9 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 1.7,
+        "rating": 1.5,
         "friction": "Low",
-        "why": "Bonnie Raitt 6.0 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
@@ -742,10 +830,13 @@
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 2,
+        "rating": 1,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 22720
       }
     }
   ]

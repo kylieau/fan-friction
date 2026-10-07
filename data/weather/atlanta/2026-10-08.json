@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-08",
+  "rows": [
+    {
+      "metroId": "atlanta",
+      "venueId": "city",
+      "date": "2026-10-08",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T17:32:51.092Z",
+      "feelsLikeF": 79.1,
+      "tempF": 81.3,
+      "humidity": 30,
+      "windMph": 3.2,
+      "uvIndex": 0.3,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 36,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ],
+  "days": [
+    {
+      "metroId": "atlanta",
+      "venueId": "city",
+      "date": "2026-10-08",
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T17:32:51.092Z",
+      "feelsLikeHighF": 86.2,
+      "feelsLikeLowF": 55.1,
+      "code": 3,
+      "precipProbability": 0,
+      "precipMm": 0
+    }
+  ]
+}

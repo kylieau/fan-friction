@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-04",
+  "results": [
+    {
+      "eventId": "2026-10-04-espn-dream-401918295",
+      "metroId": "atlanta",
+      "date": "2026-10-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "dream",
+      "home": {
+        "name": "Dream",
+        "score": 92
+      },
+      "away": {
+        "name": "Liberty",
+        "score": 82
+      },
+      "attendance": 9745,
+      "capturedAt": "2026-10-07T17:33:50.195Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "14:04"
+    }
+  ]
+}

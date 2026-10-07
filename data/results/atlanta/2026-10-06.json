@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-06",
+  "results": [
+    {
+      "eventId": "2026-10-06-mlb-849819",
+      "metroId": "atlanta",
+      "date": "2026-10-06",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "truist-park",
+      "homeTeamId": "braves",
+      "home": {
+        "name": "Braves",
+        "score": 1
+      },
+      "away": {
+        "name": "Dodgers",
+        "score": 3
+      },
+      "capturedAt": "2026-10-07T17:33:50.328Z",
+      "attendance": 42420,
+      "duration": {
+        "minutes": 176,
+        "kind": "official"
+      },
+      "startedAt": "18:11"
+    }
+  ]
+}

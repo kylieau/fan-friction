@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T14:32:17.180Z",
+  "capturedAt": "2026-10-07T17:33:09.856Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -52,7 +52,11 @@
       "performer": "PRESIDENT",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_6GkRNGSd7"
+      "ticketmasterId": "vv170Z_6GkRNGSd7",
+      "expectedDraw": {
+        "count": 1055,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-07-espn-ducks-401892456",
@@ -77,9 +81,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 16145,
-        "low": 15210,
-        "high": 16660,
+        "count": 16177,
+        "low": 15240,
+        "high": 16693,
         "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2026."
       }
     },
@@ -101,7 +105,11 @@
       "performer": "Bruno Mars",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_eheo7is"
+      "ticketmasterId": "vvG1IZ_eheo7is",
+      "expectedDraw": {
+        "count": 40037,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-07-tm-vv1AaZko9Gketiqv4",
@@ -121,7 +129,11 @@
       "performer": "Mumford & Sons",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZko9Gketiqv4"
+      "ticketmasterId": "vv1AaZko9Gketiqv4",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-08-tm-vv1AaZk8tGkd6ll1M",
@@ -141,7 +153,11 @@
       "performer": "Cavetown",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk8tGkd6ll1M"
+      "ticketmasterId": "vv1AaZk8tGkd6ll1M",
+      "expectedDraw": {
+        "count": 1055,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-08-espn-lakers-401898717",
@@ -191,7 +207,11 @@
       "performer": "Empire of the Sun",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_k9N_4fq"
+      "ticketmasterId": "vvG1iZ_k9N_4fq",
+      "expectedDraw": {
+        "count": 9975,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-08-tm-vv1k0Z_kJ9G7DM5E",
@@ -211,7 +231,11 @@
       "performer": "Chayanne",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1k0Z_kJ9G7DM5E"
+      "ticketmasterId": "vv1k0Z_kJ9G7DM5E",
+      "expectedDraw": {
+        "count": 10773,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-09-mlb-849821",
@@ -258,7 +282,11 @@
       "performer": "The Neighbourhood",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170ZbgGkzetQ9Z"
+      "ticketmasterId": "vv170ZbgGkzetQ9Z",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-09-tm-vv1AaZk38Gkel76YA",
@@ -278,7 +306,11 @@
       "performer": "Tinlicker",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk38Gkel76YA"
+      "ticketmasterId": "vv1AaZk38Gkel76YA",
+      "expectedDraw": {
+        "count": 1055,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-09-tm-vvG10Z_1DqhtZC",
@@ -298,7 +330,11 @@
       "performer": "for KING & COUNTRY",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_1DqhtZC"
+      "ticketmasterId": "vvG10Z_1DqhtZC",
+      "expectedDraw": {
+        "count": 3363,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-09-tm-vvG1iZ_7Kfj7Wq",
@@ -318,7 +354,11 @@
       "performer": "Mac DeMarco",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1iZ_7Kfj7Wq"
+      "ticketmasterId": "vvG1iZ_7Kfj7Wq",
+      "expectedDraw": {
+        "count": 9975,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-09-tm-vv1Fe8v0xoqvZ7u1ue",
@@ -338,7 +378,11 @@
       "performer": "Sombr",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1Fe8v0xoqvZ7u1ue"
+      "ticketmasterId": "vv1Fe8v0xoqvZ7u1ue",
+      "expectedDraw": {
+        "count": 10773,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-09-tm-vvG1IZ_GkDOGJ-",
@@ -358,7 +402,11 @@
       "performer": "Jorge Medina",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_GkDOGJ-"
+      "ticketmasterId": "vvG1IZ_GkDOGJ-",
+      "expectedDraw": {
+        "count": 3420,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-10-tm-vv16aZk3aZMZAuak1v",
@@ -378,7 +426,11 @@
       "performer": "Sombr",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv16aZk3aZMZAuak1v"
+      "ticketmasterId": "vv16aZk3aZMZAuak1v",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-10-espn-lafc-761858",
@@ -405,7 +457,7 @@
         "count": 22122,
         "low": 22102,
         "high": 22161,
-        "note": "Typical announced crowd here for a Saturday: 19 games, 2024–2025. Adjusted for this opponent."
+        "note": "Typical announced crowd here for a Saturday: 19 games, 2024–2025."
       }
     },
     {
@@ -426,7 +478,11 @@
       "performer": "TLC",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZkowGkdFeQU8"
+      "ticketmasterId": "vv1AaZkowGkdFeQU8",
+      "expectedDraw": {
+        "count": 10308,
+        "note": "This room's average per reported show: Billboard, 402K over 39 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-10-tm-vvG1iZbU81spCL",
@@ -449,6 +505,10 @@
       "ticketmasterId": "vvG1iZbU81spCL",
       "occasionFacts": {
         "run": 2
+      },
+      "expectedDraw": {
+        "count": 9975,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -489,7 +549,11 @@
       "performer": "Air Supply",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_2TKvuzl"
+      "ticketmasterId": "vvG10Z_2TKvuzl",
+      "expectedDraw": {
+        "count": 3363,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-10-tm-vvG1IZ_G0rStYB",
@@ -509,7 +573,11 @@
       "performer": "Menudo",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_G0rStYB"
+      "ticketmasterId": "vvG1IZ_G0rStYB",
+      "expectedDraw": {
+        "count": 3420,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-10-tm-Z7r9jZ1A7-goJ",
@@ -529,7 +597,11 @@
       "performer": "Jungle",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7-goJ"
+      "ticketmasterId": "Z7r9jZ1A7-goJ",
+      "expectedDraw": {
+        "count": 10779,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-11-espn-chargers-401872989",
@@ -557,7 +629,7 @@
         "count": 70380,
         "low": 70380,
         "high": 71163,
-        "note": "Typical announced crowd here for a Sunday in October: 5 games, 2023–2025. Adjusted for this opponent."
+        "note": "Typical announced crowd here for a Sunday in October: 5 games, 2023–2025."
       }
     },
     {
@@ -578,7 +650,11 @@
       "performer": "Sons of Legion",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_u5nPRGK"
+      "ticketmasterId": "vvG10Z_u5nPRGK",
+      "expectedDraw": {
+        "count": 1055,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-11-tm-vvG1iZbU81wkC0",
@@ -601,6 +677,10 @@
       "ticketmasterId": "vvG1iZbU81wkC0",
       "occasionFacts": {
         "run": 2
+      },
+      "expectedDraw": {
+        "count": 9975,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -621,7 +701,11 @@
       "performer": "Palace",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1ke8v0PdGA2NIXk"
+      "ticketmasterId": "vv1ke8v0PdGA2NIXk",
+      "expectedDraw": {
+        "count": 3363,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-12-espn-rams-401872994",
@@ -670,7 +754,11 @@
       "performer": "BAND-MAID",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_2Rimjss"
+      "ticketmasterId": "vvG10Z_2Rimjss",
+      "expectedDraw": {
+        "count": 1055,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-13-espn-ducks-401892501",
@@ -695,9 +783,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 16145,
-        "low": 15210,
-        "high": 16660,
+        "count": 15806,
+        "low": 14891,
+        "high": 16310,
         "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2026."
       }
     },
@@ -724,9 +812,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 15510,
-        "low": 14940,
-        "high": 16427,
+        "count": 15324,
+        "low": 14761,
+        "high": 16230,
         "note": "Typical announced crowd here for a weeknight in October: 4 games, 2024–2026."
       }
     },
@@ -748,7 +836,11 @@
       "performer": "Patrick Droney",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_uKts2xv"
+      "ticketmasterId": "vvG10Z_uKts2xv",
+      "expectedDraw": {
+        "count": 855,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-14-espn-clippers-401918011",
@@ -805,7 +897,7 @@
         "count": 18148,
         "low": 16281,
         "high": 19784,
-        "note": "Typical announced crowd here for a weeknight: 4 games, 2024–2025. Adjusted for this opponent."
+        "note": "Typical announced crowd here for a weeknight: 4 games, 2024–2025."
       }
     },
     {
@@ -833,7 +925,7 @@
         "count": 22086,
         "low": 22064,
         "high": 22125,
-        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2025. Adjusted for this opponent."
+        "note": "Typical announced crowd here for a weeknight in October: 3 games, 2024–2025."
       }
     },
     {
@@ -854,7 +946,11 @@
       "performer": "Phil Wickham",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_7GkMfFAZu"
+      "ticketmasterId": "vv170Z_7GkMfFAZu",
+      "expectedDraw": {
+        "count": 10773,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-15-tm-vv170Z_aGkRSVNGb",
@@ -874,7 +970,11 @@
       "performer": "LP",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_aGkRSVNGb"
+      "ticketmasterId": "vv170Z_aGkRSVNGb",
+      "expectedDraw": {
+        "count": 1055,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-15-tm-vvG10Z_GwWe2IR",
@@ -934,7 +1034,11 @@
       "performer": "Pedro Fernández",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_82Z9hL3"
+      "ticketmasterId": "vvG1IZ_82Z9hL3",
+      "expectedDraw": {
+        "count": 3420,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-16-espn-ducks-401892518",
@@ -959,9 +1063,9 @@
       "crowd": [],
       "sourceId": "espn",
       "expectedDraw": {
-        "count": 15596,
-        "low": 14588,
-        "high": 16220,
+        "count": 15315,
+        "low": 14325,
+        "high": 15928,
         "note": "Typical announced crowd here for a Friday: 27 games, 2024–2026."
       }
     },
@@ -1016,6 +1120,10 @@
       "ticketmasterId": "vvG1iZ_owcOPJ1",
       "occasionFacts": {
         "run": 2
+      },
+      "expectedDraw": {
+        "count": 9975,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -1036,7 +1144,11 @@
       "performer": "Juanes",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_7Gkz5H4zw"
+      "ticketmasterId": "vv170Z_7Gkz5H4zw",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-17-espn-kings-401892530",
@@ -1085,7 +1197,11 @@
       "performer": "Thee Sinseers",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_1rn_GMv"
+      "ticketmasterId": "vvG10Z_1rn_GMv",
+      "expectedDraw": {
+        "count": 1055,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-17-espn-galaxy-761887",
@@ -1153,7 +1269,11 @@
       "performer": "Vulfpeck",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_FGkM0q1JB"
+      "ticketmasterId": "vv170Z_FGkM0q1JB",
+      "expectedDraw": {
+        "count": 3363,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-17-tm-vv1AaZk3dGkdvrEc1",
@@ -1173,7 +1293,11 @@
       "performer": "Young Miko",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk3dGkdvrEc1"
+      "ticketmasterId": "vv1AaZk3dGkdvrEc1",
+      "expectedDraw": {
+        "count": 10308,
+        "note": "This room's average per reported show: Billboard, 402K over 39 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-17-tm-vv1AaZkobGkeOgjs3",
@@ -1193,7 +1317,11 @@
       "performer": "Los Tigres del Norte",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZkobGkeOgjs3"
+      "ticketmasterId": "vv1AaZkobGkeOgjs3",
+      "expectedDraw": {
+        "count": 10773,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-17-tm-vvG10Z_G9R7nPH",
@@ -1216,6 +1344,10 @@
       "ticketmasterId": "vvG10Z_G9R7nPH",
       "occasionFacts": {
         "run": 2
+      },
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
       }
     },
     {
@@ -1272,7 +1404,7 @@
         "count": 72901,
         "low": 72478,
         "high": 73104,
-        "note": "Typical announced crowd here for a Sunday in October: 5 games, 2023–2024. Adjusted for this opponent."
+        "note": "Typical announced crowd here for a Sunday in October: 5 games, 2023–2024."
       }
     },
     {
@@ -1296,6 +1428,10 @@
       "ticketmasterId": "vvG1iZ_owcx4Jh",
       "occasionFacts": {
         "run": 2
+      },
+      "expectedDraw": {
+        "count": 9975,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -1319,6 +1455,10 @@
       "ticketmasterId": "Z7r9jZ1A70kAU",
       "occasionFacts": {
         "run": 2
+      },
+      "expectedDraw": {
+        "count": 10779,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -1342,6 +1482,10 @@
       "ticketmasterId": "vvG10Z_G9gehI7",
       "occasionFacts": {
         "run": 2
+      },
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
       }
     },
     {
@@ -1362,7 +1506,11 @@
       "performer": "Dermot Kennedy",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1ke8v0r6GAuZNui"
+      "ticketmasterId": "vv1ke8v0r6GAuZNui",
+      "expectedDraw": {
+        "count": 3363,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-19-tm-Z7r9jZ1A70kAg",
@@ -1385,6 +1533,10 @@
       "ticketmasterId": "Z7r9jZ1A70kAg",
       "occasionFacts": {
         "run": 2
+      },
+      "expectedDraw": {
+        "count": 10779,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -1405,7 +1557,11 @@
       "performer": "Cameron Whitcomb",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_1hSZGrO"
+      "ticketmasterId": "vvG10Z_1hSZGrO",
+      "expectedDraw": {
+        "count": 1055,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-20-tm-vvG10Z_u1J_FHJ",
@@ -1425,7 +1581,11 @@
       "performer": "almost monday",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_u1J_FHJ"
+      "ticketmasterId": "vvG10Z_u1J_FHJ",
+      "expectedDraw": {
+        "count": 855,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-20-tm-vv170Z_FGkU1BKx2",
@@ -1445,7 +1605,11 @@
       "performer": "Jessie Ware",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv170Z_FGkU1BKx2"
+      "ticketmasterId": "vv170Z_FGkU1BKx2",
+      "expectedDraw": {
+        "count": 3363,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-20-tm-vv1AaZk3vGkdfJcBD",
@@ -1465,7 +1629,11 @@
       "performer": "MONSTA X",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vv1AaZk3vGkdfJcBD"
+      "ticketmasterId": "vv1AaZk3vGkdfJcBD",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-21-espn-lakers-401909092",
@@ -1515,7 +1683,11 @@
       "performer": "Pouya",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_GpWro4Z"
+      "ticketmasterId": "vvG10Z_GpWro4Z",
+      "expectedDraw": {
+        "count": 1055,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-21-tm-vvG1IZ_aQlI5Ky",
@@ -1535,7 +1707,11 @@
       "performer": "G-Eazy",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1IZ_aQlI5Ky"
+      "ticketmasterId": "vvG1IZ_aQlI5Ky",
+      "expectedDraw": {
+        "count": 3420,
+        "note": "57% of the room, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-21-espn-clippers-401909842",
@@ -1584,7 +1760,11 @@
       "performer": "beabadoobee",
       "crowd": [],
       "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG10Z_uCyohlW"
+      "ticketmasterId": "vvG10Z_uCyohlW",
+      "expectedDraw": {
+        "count": 10891,
+        "note": "This room's average per reported show: Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025. An estimate."
+      }
     },
     {
       "id": "2026-10-21-tm-vvG1iZbS55MdJK",
@@ -1607,6 +1787,10 @@
       "ticketmasterId": "vvG1iZbS55MdJK",
       "occasionFacts": {
         "run": 3
+      },
+      "expectedDraw": {
+        "count": 9975,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     }
   ],
@@ -1616,8 +1800,11 @@
       "date": "2026-10-07",
       "start": "18:30",
       "read": {
-        "rating": 5.3,
+        "rating": 3,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 1055
       }
     },
     {
@@ -1625,15 +1812,15 @@
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 5.3,
+        "rating": 3,
         "friction": "Moderate",
         "why": "Bruno Mars 28 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 16145,
-        "low": 15210,
-        "high": 16660
+        "count": 16177,
+        "low": 15240,
+        "high": 16693
       }
     },
     {
@@ -1641,10 +1828,13 @@
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 5.3,
+        "rating": 3,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Ducks vs. Oilers and Mumford & Sons 28 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 40037
       }
     },
     {
@@ -1652,10 +1842,13 @@
       "date": "2026-10-07",
       "start": "19:30",
       "read": {
-        "rating": 5.3,
+        "rating": 3,
         "friction": "Moderate",
         "why": "Bruno Mars next door, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10891
       }
     },
     {
@@ -1663,8 +1856,11 @@
       "date": "2026-10-08",
       "start": "19:00",
       "read": {
-        "rating": 3.1,
+        "rating": 2.6,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 1055
       }
     },
     {
@@ -1672,8 +1868,8 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 3.1,
-        "friction": "Moderate",
+        "rating": 2.6,
+        "friction": "Low",
         "why": "Chayanne and Empire of the Sun 28 mi away, same hours.",
         "method": "formula"
       },
@@ -1688,10 +1884,13 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 3.1,
-        "friction": "Low",
-        "why": "Chayanne and Lakers vs. Sacramento Kings 34 mi away, same hours.",
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "Lakers vs. Sacramento Kings and Chayanne 6.3 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 9975
       }
     },
     {
@@ -1699,10 +1898,13 @@
       "date": "2026-10-08",
       "start": "20:00",
       "read": {
-        "rating": 3.1,
-        "friction": "Low",
-        "why": "Empire of the Sun and Lakers vs. Sacramento Kings 34 mi away, same hours.",
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "Lakers vs. Sacramento Kings and Empire of the Sun 28 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10773
       }
     },
     {
@@ -1710,9 +1912,9 @@
       "date": "2026-10-09",
       "start": "17:00",
       "read": {
-        "rating": 6.8,
+        "rating": 5.5,
         "friction": "Low",
-        "why": "Sombr and The Neighbourhood 28 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       }
     },
@@ -1721,10 +1923,13 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 6.8,
+        "rating": 5.5,
         "friction": "Heavy",
         "why": "Sombr and Mac DeMarco 29 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10891
       }
     },
     {
@@ -1732,8 +1937,11 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 6.8,
+        "rating": 5.5,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 1055
       }
     },
     {
@@ -1741,10 +1949,13 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 6.8,
+        "rating": 5.5,
         "friction": "Heavy",
-        "why": "Dodgers vs. Braves and Sombr 4.5 mi away, same hours.",
+        "why": "Dodgers vs. Braves and The Neighbourhood 4.5 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3363
       }
     },
     {
@@ -1752,10 +1963,13 @@
       "date": "2026-10-09",
       "start": "19:00",
       "read": {
-        "rating": 6.8,
+        "rating": 5.5,
         "friction": "Heavy",
-        "why": "Sombr and The Neighbourhood 34 mi away, same hours.",
+        "why": "The Neighbourhood and Sombr 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 9975
       }
     },
     {
@@ -1763,10 +1977,13 @@
       "date": "2026-10-09",
       "start": "19:30",
       "read": {
-        "rating": 6.8,
+        "rating": 5.5,
         "friction": "Heavy",
         "why": "The Neighbourhood and Mac DeMarco 29 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10773
       }
     },
     {
@@ -1774,10 +1991,13 @@
       "date": "2026-10-09",
       "start": "20:00",
       "read": {
-        "rating": 6.8,
+        "rating": 5.5,
         "friction": "Heavy",
-        "why": "Dodgers vs. Braves and Sombr 10 mi away, same hours.",
+        "why": "Dodgers vs. Braves and The Neighbourhood 10 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3420
       }
     },
     {
@@ -1785,10 +2005,13 @@
       "date": "2026-10-10",
       "start": "19:00",
       "read": {
-        "rating": 7.1,
+        "rating": 5.9,
         "friction": "Heavy",
         "why": "Jack Johnson 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10891
       }
     },
     {
@@ -1796,9 +2019,9 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.1,
-        "friction": "Heavy",
-        "why": "Jungle and TLC 2.3 mi away, same hours.",
+        "rating": 5.9,
+        "friction": "Moderate",
+        "why": "Sombr and Jungle 5.1 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1812,10 +2035,13 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.1,
+        "rating": 5.9,
         "friction": "Heavy",
-        "why": "Jungle and LAFC vs. Vancouver 8.0 mi away, same hours.",
+        "why": "LAFC vs. Vancouver and Sombr 5.8 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10308
       }
     },
     {
@@ -1823,10 +2049,13 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.1,
+        "rating": 5.9,
         "friction": "Heavy",
         "why": "Sombr 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 9975
       }
     },
     {
@@ -1834,9 +2063,9 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.1,
-        "friction": "Extreme",
-        "why": "Jungle and LAFC vs. Vancouver 5.5 mi away, same hours.",
+        "rating": 5.9,
+        "friction": "Heavy",
+        "why": "LAFC vs. Vancouver and Sombr 7.4 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -1845,10 +2074,13 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.1,
+        "rating": 5.9,
         "friction": "Extreme",
-        "why": "Jungle and LAFC vs. Vancouver 5.5 mi away, same hours.",
+        "why": "LAFC vs. Vancouver and Sombr 7.4 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3363
       }
     },
     {
@@ -1856,10 +2088,13 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.1,
+        "rating": 5.9,
         "friction": "Extreme",
-        "why": "Jungle and LAFC vs. Vancouver 7.5 mi away, same hours.",
+        "why": "LAFC vs. Vancouver and Sombr 5.2 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3420
       }
     },
     {
@@ -1867,10 +2102,13 @@
       "date": "2026-10-10",
       "start": "20:00",
       "read": {
-        "rating": 7.1,
+        "rating": 5.9,
         "friction": "Heavy",
-        "why": "LAFC vs. Vancouver and TLC 2.3 mi away, same hours.",
+        "why": "LAFC vs. Vancouver 2.3 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10779
       }
     },
     {
@@ -1878,7 +2116,7 @@
       "date": "2026-10-11",
       "start": "13:05",
       "read": {
-        "rating": 2.7,
+        "rating": 2.1,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -1894,8 +2132,11 @@
       "date": "2026-10-11",
       "start": "18:30",
       "read": {
-        "rating": 2.7,
+        "rating": 2.1,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 1055
       }
     },
     {
@@ -1903,10 +2144,13 @@
       "date": "2026-10-11",
       "start": "19:00",
       "read": {
-        "rating": 2.7,
-        "friction": "Low",
+        "rating": 2.1,
+        "friction": "Moderate",
         "why": "Palace and Chargers vs. Broncos 2.5 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 9975
       }
     },
     {
@@ -1914,10 +2158,13 @@
       "date": "2026-10-11",
       "start": "19:20",
       "read": {
-        "rating": 2.7,
+        "rating": 2.1,
         "friction": "Heavy",
         "why": "Jack Johnson 2.5 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3363
       }
     },
     {
@@ -1943,6 +2190,9 @@
       "read": {
         "rating": 2.8,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 1055
       }
     },
     {
@@ -1956,9 +2206,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 16145,
-        "low": 15210,
-        "high": 16660
+        "count": 15806,
+        "low": 14891,
+        "high": 16310
       }
     },
     {
@@ -1972,9 +2222,9 @@
         "method": "formula"
       },
       "draw": {
-        "count": 15510,
-        "low": 14940,
-        "high": 16427
+        "count": 15324,
+        "low": 14761,
+        "high": 16230
       }
     },
     {
@@ -1984,6 +2234,9 @@
       "read": {
         "rating": 3.7,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 855
       }
     },
     {
@@ -2039,10 +2292,13 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 2.5,
+        "rating": 2.1,
         "friction": "Low",
         "why": "Cynthia Erivo: Let Me Sing To You 34 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10773
       }
     },
     {
@@ -2050,8 +2306,11 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 2.5,
+        "rating": 2.1,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 1055
       }
     },
     {
@@ -2059,7 +2318,7 @@
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 2.5,
+        "rating": 2.1,
         "method": "nearby"
       }
     },
@@ -2068,7 +2327,7 @@
       "date": "2026-10-15",
       "start": "19:30",
       "read": {
-        "rating": 2.5,
+        "rating": 2.1,
         "friction": "Low",
         "why": "Phil Wickham 34 mi away, same hours.",
         "method": "formula"
@@ -2079,10 +2338,13 @@
       "date": "2026-10-15",
       "start": "20:00",
       "read": {
-        "rating": 2.5,
+        "rating": 2.1,
         "friction": "Moderate",
-        "why": "Phil Wickham and Cynthia Erivo: Let Me Sing To You 28 mi away, same hours.",
+        "why": "Cynthia Erivo: Let Me Sing To You and Phil Wickham 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3420
       }
     },
     {
@@ -2090,15 +2352,15 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 4.6,
-        "friction": "Heavy",
+        "rating": 4.2,
+        "friction": "Moderate",
         "why": "Lakers vs. Nuggets 28 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
-        "count": 15596,
-        "low": 14588,
-        "high": 16220
+        "count": 15315,
+        "low": 14325,
+        "high": 15928
       }
     },
     {
@@ -2106,7 +2368,7 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 4.6,
+        "rating": 4.2,
         "friction": "Moderate",
         "why": "Ducks vs. Bruins 28 mi away, same hours.",
         "method": "formula"
@@ -2122,10 +2384,13 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 4.6,
+        "rating": 4.2,
         "friction": "Moderate",
-        "why": "Juanes and Lakers vs. Nuggets 11 mi away, same hours.",
+        "why": "Lakers vs. Nuggets and Ducks vs. Bruins 6.3 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 9975
       }
     },
     {
@@ -2133,10 +2398,13 @@
       "date": "2026-10-16",
       "start": "20:00",
       "read": {
-        "rating": 4.6,
+        "rating": 4.2,
         "friction": "Moderate",
-        "why": "MILEY and Lakers vs. Nuggets 11 mi away, same hours.",
+        "why": "Lakers vs. Nuggets and Ducks vs. Bruins 7.3 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10891
       }
     },
     {
@@ -2144,9 +2412,9 @@
       "date": "2026-10-17",
       "start": "18:00",
       "read": {
-        "rating": 7.6,
+        "rating": 6.8,
         "friction": "Heavy",
-        "why": "Los Tigres del Norte and Young Miko 28 mi away, same hours.",
+        "why": "Galaxy vs. San Diego FC and SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett 12 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -2160,8 +2428,11 @@
       "date": "2026-10-17",
       "start": "19:00",
       "read": {
-        "rating": 7.6,
+        "rating": 6.8,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 1055
       }
     },
     {
@@ -2169,9 +2440,9 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 7.6,
-        "friction": "Heavy",
-        "why": "Los Tigres del Norte and Young Miko 22 mi away, same hours.",
+        "rating": 6.8,
+        "friction": "Moderate",
+        "why": "Kings vs. Bruins and SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett 12 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -2185,9 +2456,9 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 7.6,
+        "rating": 6.8,
         "friction": "Heavy",
-        "why": "Los Tigres del Norte and Young Miko 34 mi away, same hours.",
+        "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 18 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -2196,10 +2467,13 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 7.6,
+        "rating": 6.8,
         "friction": "Extreme",
-        "why": "Los Tigres del Norte and Young Miko 32 mi away, same hours.",
+        "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 18 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3363
       }
     },
     {
@@ -2207,10 +2481,13 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 7.6,
+        "rating": 6.8,
         "friction": "Heavy",
         "why": "Los Tigres del Norte 28 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10308
       }
     },
     {
@@ -2218,10 +2495,13 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 7.6,
+        "rating": 6.8,
         "friction": "Heavy",
         "why": "Young Miko 28 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10773
       }
     },
     {
@@ -2229,10 +2509,13 @@
       "date": "2026-10-17",
       "start": "20:00",
       "read": {
-        "rating": 7.6,
+        "rating": 6.8,
         "friction": "Heavy",
-        "why": "Los Tigres del Norte and Young Miko 29 mi away, same hours.",
+        "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 8.0 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10891
       }
     },
     {
@@ -2240,7 +2523,7 @@
       "date": "2026-10-17",
       "start": null,
       "read": {
-        "rating": 7.6,
+        "rating": 6.8,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -2256,7 +2539,7 @@
       "date": "2026-10-18",
       "start": "13:05",
       "read": {
-        "rating": 4.5,
+        "rating": 3.5,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -2272,10 +2555,13 @@
       "date": "2026-10-18",
       "start": "19:30",
       "read": {
-        "rating": 4.5,
+        "rating": 3.5,
         "friction": "Moderate",
         "why": "Charli xcx 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 9975
       }
     },
     {
@@ -2283,10 +2569,13 @@
       "date": "2026-10-18",
       "start": "19:30",
       "read": {
-        "rating": 4.5,
+        "rating": 3.5,
         "friction": "Moderate",
-        "why": "MILEY and Charli xcx 6.3 mi away, same hours.",
+        "why": "Charli xcx and MILEY 7.3 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10779
       }
     },
     {
@@ -2294,10 +2583,13 @@
       "date": "2026-10-18",
       "start": "20:00",
       "read": {
-        "rating": 4.5,
+        "rating": 3.5,
         "friction": "Moderate",
         "why": "MILEY 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10891
       }
     },
     {
@@ -2305,10 +2597,13 @@
       "date": "2026-10-19",
       "start": "19:30",
       "read": {
-        "rating": 1.4,
+        "rating": 1.3,
         "friction": "Low",
         "why": "Kacey Musgraves 5.5 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3363
       }
     },
     {
@@ -2316,10 +2611,13 @@
       "date": "2026-10-19",
       "start": "19:30",
       "read": {
-        "rating": 1.4,
+        "rating": 1.3,
         "friction": "Low",
         "why": "Dermot Kennedy 5.5 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10779
       }
     },
     {
@@ -2327,8 +2625,11 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 1.4,
+        "rating": 1.3,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 1055
       }
     },
     {
@@ -2336,8 +2637,11 @@
       "date": "2026-10-20",
       "start": "19:00",
       "read": {
-        "rating": 1.4,
+        "rating": 1.3,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 855
       }
     },
     {
@@ -2345,10 +2649,13 @@
       "date": "2026-10-20",
       "start": "20:00",
       "read": {
-        "rating": 1.4,
+        "rating": 1.3,
         "friction": "Low",
         "why": "MONSTA X 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3363
       }
     },
     {
@@ -2356,10 +2663,13 @@
       "date": "2026-10-20",
       "start": "20:00",
       "read": {
-        "rating": 1.4,
+        "rating": 1.3,
         "friction": "Low",
         "why": "Jessie Ware 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10891
       }
     },
     {
@@ -2367,8 +2677,8 @@
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 5.5,
-        "friction": "Heavy",
+        "rating": 4.9,
+        "friction": "Moderate",
         "why": "Clippers vs. Sacramento Kings 8.0 mi away, same hours.",
         "method": "formula"
       },
@@ -2383,8 +2693,11 @@
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 5.5,
+        "rating": 4.9,
         "method": "nearby"
+      },
+      "draw": {
+        "count": 1055
       }
     },
     {
@@ -2392,10 +2705,13 @@
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 5.5,
+        "rating": 4.9,
         "friction": "Heavy",
-        "why": "My Chemical Romance and beabadoobee 11 mi away, same hours.",
+        "why": "Lakers vs. Warriors and Clippers vs. Sacramento Kings 7.5 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 3420
       }
     },
     {
@@ -2403,8 +2719,8 @@
       "date": "2026-10-21",
       "start": "19:30",
       "read": {
-        "rating": 5.5,
-        "friction": "Heavy",
+        "rating": 4.9,
+        "friction": "Moderate",
         "why": "Lakers vs. Warriors 8.0 mi away, same hours.",
         "method": "formula"
       },
@@ -2419,10 +2735,13 @@
       "date": "2026-10-21",
       "start": "20:00",
       "read": {
-        "rating": 5.5,
+        "rating": 4.9,
         "friction": "Heavy",
         "why": "My Chemical Romance 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 10891
       }
     },
     {
@@ -2430,10 +2749,13 @@
       "date": "2026-10-21",
       "start": "20:00",
       "read": {
-        "rating": 5.5,
+        "rating": 4.9,
         "friction": "Moderate",
         "why": "beabadoobee 11 mi away, same hours.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 9975
       }
     }
   ]

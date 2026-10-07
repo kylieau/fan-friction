@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-05",
+  "results": [
+    {
+      "eventId": "2026-10-05-espn-hawks-401898388",
+      "metroId": "atlanta",
+      "date": "2026-10-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "hawks",
+      "home": {
+        "name": "Hawks",
+        "score": 123
+      },
+      "away": {
+        "name": "Grizzlies",
+        "score": 132
+      },
+      "attendance": 10923,
+      "capturedAt": "2026-10-07T17:33:50.195Z",
+      "duration": {
+        "minutes": 166,
+        "kind": "estimated"
+      },
+      "startedAt": "15:52"
+    }
+  ]
+}
