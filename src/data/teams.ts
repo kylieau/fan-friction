@@ -112,7 +112,7 @@ const LIST: Team[] = [
   team('earthquakes', 'San Jose Earthquakes', 'Earthquakes', 'MLS', 'soccer', 'bay-area', 'SJ', ['Quakes']),
   team('bay-fc', 'Bay FC', 'Bay FC', 'NWSL', 'soccer', 'bay-area', 'BAY'),
   // USL Championship; the club's last Coliseum match is Oct 10, 2026, and its 2027 home is undecided.
-  team('oakland-roots', 'Oakland Roots SC', 'Roots', 'USL Championship', 'soccer', 'bay-area', 'OAK', ['Oakland Roots']),
+  team('oakland-roots', 'Oakland Roots', 'Roots', 'USL Championship', 'soccer', 'bay-area', 'OAK', ['Oakland Roots SC']),
   team('cal-football', 'California Golden Bears Football', 'Cal FB', 'College football', 'football', 'bay-area', 'CAL', ['Cal', 'California']),
   team('cal-mbb', "California Golden Bears Men's Basketball", 'Cal MBB', "College men's basketball", 'basketball', 'bay-area', 'CAL', ['Cal']),
   team('cal-wbb', "California Golden Bears Women's Basketball", 'Cal WBB', "College women's basketball", 'basketball', 'bay-area', 'CAL', ['Cal']),
