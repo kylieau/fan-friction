@@ -41,3 +41,11 @@ Claude's proposal in reply (not locked):
 - **Resale prices: agreed** (Kylie, Oct 7). Capture a week before and on the day.
 - **Opponent: recent tension and deep history both matter** (Kylie, Oct 7), e.g. Dodgers–Yankees: storied, but rarely in Los Angeles.
 - She asked whether this deserves a deeper research prompt. Drafted: `docs/expected-draw-demand-signals-prompt.md`.
+
+## The held-out check, first runs (Oct 7)
+`scripts/expected-draw-check.mjs` writes `docs/expected-draw-check.md`: each team's last two seasons predicted from earlier seasons only, against the announced crowds. Constants set before the first run.
+- **Expected draws beat the building:** half of all games within 5.2% (full rule) against 9.2% sizing by capacity.
+- **Decided from the first run (structural switches the research proposed, not constants):** the conference-move reset is **off** (it left UCLA/USC/UW's first Big Ten season with no history and made college worse); the **2-season window applies to the WNBA and women's college basketball**, per S3, because both read ~30% low on three seasons. The NWSL and MLS also scored better on two seasons but were not reading low, so they keep three (Kylie to say if she wants them shortened).
+- **Season level** beats the baseline in MLB, MLS, NWSL, WNBA, NBA and NHL. **Opponent ratio** beats it in MLB, MLS, NFL, WNBA and men's college basketball; it is worse in the NBA, NHL, NWSL and women's college basketball (crowds near capacity, or too few meetings). Both are in the check only; the app uses them only in the leagues where they win.
+- **The 5,000 line by the low end (S1)** is right more often overall (96.3% vs 94.9%), much better for women's college basketball (70% vs 30%), and worse for the NWSL (78% vs 99%) — Gotham's crowds doubled from 2022 to 2024, so a backtest from the earlier seasons reads low. Today's Gotham range (2023–2025) has a low end of ~6,000.
+- **The same seasons were used to decide and to score,** so these numbers flatter the rule a little. The honest test is the forward log: estimates saved before each game, scored when the crowd is announced.

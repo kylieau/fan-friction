@@ -10,6 +10,7 @@
 // home opener, preseason, then weeknight / Friday / Saturday / Sunday, each by
 // month when there are enough games. A holiday counts as a Saturday. The middle
 // half of those games is the range. Nothing is invented: a bucket needs 3 games.
+// The WNBA and women's college basketball use two seasons (optionsFor).
 
 export type DayClass = 'weekday' | 'friday' | 'saturday' | 'sunday';
 export type DrawClass = DayClass | 'opener' | 'preseason';
@@ -129,9 +130,33 @@ function summarize(games: PastGame[]): Pick<ExpectedDrawRow, 'count' | 'low' | '
   };
 }
 
-/** Past games that count for a baseline: no playoffs, no abnormal seasons, nothing before a conference move. */
-export function normalGames(teamId: string, games: PastGame[]): PastGame[] {
-  const first = Math.max(FIRST_NORMAL_SEASON, FIRST_SEASON_BY_TEAM[teamId] ?? 0);
+/**
+ * Leagues on a 2-season window. Kylie, Oct 7 (S3): three seasons everywhere, shorter
+ * for women's leagues only if the check showed them reading low. The first check
+ * (docs/expected-draw-check.md) did: the WNBA read 30% low on three seasons, women's
+ * college basketball 28% low. The NWSL read high, so it keeps three.
+ */
+export const SHORT_WINDOW_LEAGUES = ['WNBA', "College women's basketball"];
+
+/**
+ * The options the app uses for a team in this league. The conference-move reset is
+ * off: in the check it left a program's first new-conference season with no history
+ * and made college estimates worse, not better.
+ */
+export function optionsFor(league: string | undefined): BuildOptions {
+  return SHORT_WINDOW_LEAGUES.includes(league ?? '') ? { windowSeasons: 2 } : {};
+}
+
+export interface BuildOptions {
+  /** Drop a college program's seasons before its conference move. */
+  resetOnRealignment?: boolean;
+  /** Seasons in the window (default WINDOW_SEASONS). */
+  windowSeasons?: number;
+}
+
+/** Past games that count for a baseline: no playoffs, no abnormal seasons, optionally nothing before a conference move. */
+export function normalGames(teamId: string, games: PastGame[], opts: BuildOptions = {}): PastGame[] {
+  const first = Math.max(FIRST_NORMAL_SEASON, opts.resetOnRealignment ? FIRST_SEASON_BY_TEAM[teamId] ?? 0 : 0);
   return games.filter((g) => !g.postseason && g.season >= first && g.attendance > 0);
 }
 
@@ -150,9 +175,9 @@ export function openerDates(games: PastGame[]): Set<string> {
  * The rows for one team, from the games it has on file. The caller passes only
  * games from before the date being predicted; the last three seasons among them are used.
  */
-export function buildDrawRows(metroId: string, teamId: string, allGames: PastGame[]): ExpectedDrawRow[] {
-  const usable = normalGames(teamId, allGames);
-  const seasons = [...new Set(usable.map((g) => g.season))].sort((a, b) => b - a).slice(0, WINDOW_SEASONS);
+export function buildDrawRows(metroId: string, teamId: string, allGames: PastGame[], opts: BuildOptions = {}): ExpectedDrawRow[] {
+  const usable = normalGames(teamId, allGames, opts);
+  const seasons = [...new Set(usable.map((g) => g.season))].sort((a, b) => b - a).slice(0, opts.windowSeasons ?? WINDOW_SEASONS);
   const inWindow = usable.filter((g) => seasons.includes(g.season));
   const openers = openerDates(inWindow);
   const rows: ExpectedDrawRow[] = [];

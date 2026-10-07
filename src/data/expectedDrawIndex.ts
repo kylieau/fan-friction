@@ -2559,11 +2559,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "rose-bowl",
     "dayClass": "all",
     "month": null,
-    "count": 40634,
-    "low": 36221,
-    "high": 44124,
-    "games": 10,
-    "seasons": "2024–2025"
+    "count": 42012,
+    "low": 36881,
+    "high": 48974,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-football",
+    "venueId": "rose-bowl",
+    "dayClass": "opener",
+    "month": null,
+    "count": 43705,
+    "low": 39369,
+    "high": 45758,
+    "games": 3,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "la",
@@ -2571,11 +2583,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "rose-bowl",
     "dayClass": "saturday",
     "month": null,
-    "count": 40634,
-    "low": 37541,
-    "high": 43409,
-    "games": 8,
-    "seasons": "2024–2025"
+    "count": 42012,
+    "low": 38201,
+    "high": 44481,
+    "games": 13,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "la",
@@ -2584,10 +2596,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "saturday",
     "month": 10,
     "count": 39256,
-    "low": 37409,
-    "high": 40634,
-    "games": 3,
-    "seasons": "2024–2025"
+    "low": 35561,
+    "high": 42012,
+    "games": 5,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "la",
@@ -2595,11 +2607,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "rose-bowl",
     "dayClass": "saturday",
     "month": 11,
-    "count": 41341,
-    "low": 37405,
-    "high": 48229,
-    "games": 4,
-    "seasons": "2024–2025"
+    "count": 43460,
+    "low": 39261,
+    "high": 53447,
+    "games": 6,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "la",
@@ -2607,11 +2619,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "all",
     "month": null,
-    "count": 6879,
-    "low": 5017,
-    "high": 9156,
-    "games": 33,
-    "seasons": "2025–2026"
+    "count": 7044,
+    "low": 5251,
+    "high": 9046,
+    "games": 48,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-mbb",
+    "venueId": "pauley-pavilion",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4489,
+    "low": 4052,
+    "high": 5636,
+    "games": 3,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2619,11 +2643,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "weekday",
     "month": null,
-    "count": 5821,
-    "low": 4806,
-    "high": 9223,
-    "games": 18,
-    "seasons": "2025–2026"
+    "count": 6224,
+    "low": 5017,
+    "high": 8428,
+    "games": 25,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2631,11 +2655,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "weekday",
     "month": 1,
-    "count": 9762,
-    "low": 8640,
-    "high": 10457,
-    "games": 4,
-    "seasons": "2025–2026"
+    "count": 9288,
+    "low": 6695,
+    "high": 10235,
+    "games": 5,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2643,11 +2667,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "weekday",
     "month": 2,
-    "count": 8799,
-    "low": 6969,
-    "high": 10970,
-    "games": 4,
-    "seasons": "2025–2026"
+    "count": 7353,
+    "low": 6367,
+    "high": 9436,
+    "games": 6,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2655,11 +2679,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "weekday",
     "month": 11,
-    "count": 4311,
-    "low": 4133,
-    "high": 4735,
-    "games": 5,
-    "seasons": "2025–2026"
+    "count": 4735,
+    "low": 4222,
+    "high": 4930,
+    "games": 7,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2667,11 +2691,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "weekday",
     "month": 12,
-    "count": 5285,
-    "low": 4882,
-    "high": 5687,
-    "games": 4,
-    "seasons": "2025–2026"
+    "count": 5553,
+    "low": 5017,
+    "high": 6089,
+    "games": 5,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2679,11 +2703,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "friday",
     "month": null,
-    "count": 4781,
-    "low": 4228,
-    "high": 5243,
-    "games": 6,
-    "seasons": "2025–2026"
+    "count": 5188,
+    "low": 4399,
+    "high": 6461,
+    "games": 8,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2691,11 +2715,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "friday",
     "month": 11,
-    "count": 4781,
-    "low": 4399,
-    "high": 6084,
-    "games": 4,
-    "seasons": "2025–2026"
+    "count": 5078,
+    "low": 4484,
+    "high": 6259,
+    "games": 5,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2703,11 +2727,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "saturday",
     "month": null,
-    "count": 8300,
-    "low": 7066,
+    "count": 8084,
+    "low": 7277,
     "high": 10049,
-    "games": 8,
-    "seasons": "2025–2026"
+    "games": 12,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2715,11 +2739,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "pauley-pavilion",
     "dayClass": "saturday",
     "month": 1,
-    "count": 7444,
-    "low": 7162,
-    "high": 8765,
-    "games": 3,
-    "seasons": "2026"
+    "count": 7393,
+    "low": 7226,
+    "high": 8105,
+    "games": 4,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2728,10 +2752,22 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "saturday",
     "month": 2,
     "count": 9156,
-    "low": 8118,
-    "high": 9596,
+    "low": 8723,
+    "high": 10036,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-mbb",
+    "venueId": "pauley-pavilion",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 9015,
+    "low": 7774,
+    "high": 9276,
     "games": 3,
-    "seasons": "2025–2026"
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -2823,11 +2859,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "coliseum",
     "dayClass": "all",
     "month": null,
-    "count": 71428,
-    "low": 67288,
-    "high": 74967,
-    "games": 10,
-    "seasons": "2024–2025"
+    "count": 68614,
+    "low": 64763,
+    "high": 73460,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-football",
+    "venueId": "coliseum",
+    "dayClass": "opener",
+    "month": null,
+    "count": 63411,
+    "low": 63126,
+    "high": 65761,
+    "games": 3,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "la",
@@ -2835,11 +2883,35 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "coliseum",
     "dayClass": "saturday",
     "month": null,
-    "count": 73680,
-    "low": 69114,
-    "high": 75264,
-    "games": 8,
-    "seasons": "2024–2025"
+    "count": 70929,
+    "low": 65715,
+    "high": 73899,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-football",
+    "venueId": "coliseum",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 67414,
+    "low": 66139,
+    "high": 69240,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-football",
+    "venueId": "coliseum",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 69083,
+    "low": 62575,
+    "high": 75313,
+    "games": 4,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "la",
@@ -2847,11 +2919,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "coliseum",
     "dayClass": "saturday",
     "month": 11,
-    "count": 71428,
-    "low": 68515,
-    "high": 73757,
-    "games": 4,
-    "seasons": "2024–2025"
+    "count": 72244,
+    "low": 70271,
+    "high": 72992,
+    "games": 6,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "la",
@@ -2859,11 +2931,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "galen-center",
     "dayClass": "all",
     "month": null,
-    "count": 5322,
-    "low": 4127,
-    "high": 6490,
-    "games": 33,
-    "seasons": "2025–2026"
+    "count": 5337,
+    "low": 4491,
+    "high": 6593,
+    "games": 47,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-mbb",
+    "venueId": "galen-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3902,
+    "low": 3598,
+    "high": 5057,
+    "games": 3,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2871,11 +2955,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "galen-center",
     "dayClass": "weekday",
     "month": null,
-    "count": 4612,
-    "low": 3634,
-    "high": 5754,
-    "games": 16,
-    "seasons": "2025–2026"
+    "count": 4730,
+    "low": 3885,
+    "high": 5788,
+    "games": 23,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2884,10 +2968,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "weekday",
     "month": 1,
     "count": 5050,
-    "low": 4786,
-    "high": 5818,
-    "games": 4,
-    "seasons": "2025–2026"
+    "low": 4666,
+    "high": 5975,
+    "games": 6,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2895,11 +2979,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "galen-center",
     "dayClass": "weekday",
     "month": 2,
-    "count": 6037,
-    "low": 5450,
-    "high": 6597,
-    "games": 4,
-    "seasons": "2025–2026"
+    "count": 5421,
+    "low": 4927,
+    "high": 6195,
+    "games": 6,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2908,10 +2992,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "weekday",
     "month": 11,
     "count": 3264,
-    "low": 3019,
-    "high": 3439,
-    "games": 4,
-    "seasons": "2025–2026"
+    "low": 3179,
+    "high": 3634,
+    "games": 6,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2931,11 +3015,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "galen-center",
     "dayClass": "saturday",
     "month": null,
-    "count": 6792,
-    "low": 6442,
-    "high": 7957,
-    "games": 10,
-    "seasons": "2025–2026"
+    "count": 6645,
+    "low": 6454,
+    "high": 8346,
+    "games": 15,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2944,10 +3028,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "saturday",
     "month": 1,
     "count": 7007,
-    "low": 6534,
-    "high": 7464,
-    "games": 4,
-    "seasons": "2025–2026"
+    "low": 6595,
+    "high": 8241,
+    "games": 6,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2955,11 +3039,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "galen-center",
     "dayClass": "saturday",
     "month": 2,
-    "count": 6568,
-    "low": 6474,
-    "high": 7047,
-    "games": 4,
-    "seasons": "2025–2026"
+    "count": 6516,
+    "low": 6442,
+    "high": 6619,
+    "games": 6,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2967,11 +3051,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "galen-center",
     "dayClass": "sunday",
     "month": null,
-    "count": 4378,
-    "low": 3598,
-    "high": 4985,
-    "games": 7,
-    "seasons": "2025–2026"
+    "count": 4522,
+    "low": 4127,
+    "high": 5394,
+    "games": 9,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2979,11 +3063,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "galen-center",
     "dayClass": "sunday",
     "month": 11,
-    "count": 4378,
-    "low": 3723,
-    "high": 4922,
-    "games": 3,
-    "seasons": "2025–2026"
+    "count": 4450,
+    "low": 4051,
+    "high": 4758,
+    "games": 4,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -2991,11 +3075,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "galen-center",
     "dayClass": "sunday",
     "month": 12,
-    "count": 4351,
-    "low": 3691,
-    "high": 4780,
-    "games": 4,
-    "seasons": "2025–2026"
+    "count": 4575,
+    "low": 4127,
+    "high": 5394,
+    "games": 5,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -4143,23 +4227,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "barclays-center",
     "dayClass": "all",
     "month": null,
-    "count": 15875,
-    "low": 13972,
-    "high": 17296,
-    "games": 62,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "liberty",
-    "venueId": "barclays-center",
-    "dayClass": "opener",
-    "month": null,
-    "count": 17615,
-    "low": 17480,
-    "high": 17675,
-    "games": 3,
-    "seasons": "2024–2026"
+    "count": 16458,
+    "low": 15329,
+    "high": 17368,
+    "games": 43,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "new-york",
@@ -4167,11 +4239,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "barclays-center",
     "dayClass": "weekday",
     "month": null,
-    "count": 15149,
-    "low": 13694,
-    "high": 16864,
-    "games": 37,
-    "seasons": "2024–2026"
+    "count": 16014,
+    "low": 15059,
+    "high": 17222,
+    "games": 26,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "new-york",
@@ -4179,11 +4251,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "barclays-center",
     "dayClass": "weekday",
     "month": 5,
-    "count": 14774,
-    "low": 10715,
-    "high": 14973,
-    "games": 7,
-    "seasons": "2024–2026"
+    "count": 14973,
+    "low": 14907,
+    "high": 15212,
+    "games": 4,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "new-york",
@@ -4191,11 +4263,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "barclays-center",
     "dayClass": "weekday",
     "month": 6,
-    "count": 15112,
-    "low": 14574,
-    "high": 15149,
-    "games": 5,
-    "seasons": "2024–2026"
+    "count": 15131,
+    "low": 14978,
+    "high": 15382,
+    "games": 4,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "new-york",
@@ -4203,11 +4275,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "barclays-center",
     "dayClass": "weekday",
     "month": 7,
-    "count": 16783,
-    "low": 15041,
-    "high": 17371,
-    "games": 9,
-    "seasons": "2024–2026"
+    "count": 17074,
+    "low": 16163,
+    "high": 17370,
+    "games": 6,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "new-york",
@@ -4215,11 +4287,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "barclays-center",
     "dayClass": "weekday",
     "month": 8,
-    "count": 15887,
-    "low": 15013,
-    "high": 16918,
-    "games": 11,
-    "seasons": "2024–2026"
+    "count": 16071,
+    "low": 15312,
+    "high": 16971,
+    "games": 9,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "new-york",
@@ -4227,11 +4299,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "barclays-center",
     "dayClass": "weekday",
     "month": 9,
-    "count": 16458,
-    "low": 12721,
-    "high": 17532,
-    "games": 5,
-    "seasons": "2024–2026"
+    "count": 17532,
+    "low": 16995,
+    "high": 17557,
+    "games": 3,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "new-york",
@@ -4239,47 +4311,35 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "barclays-center",
     "dayClass": "friday",
     "month": null,
-    "count": 16430,
-    "low": 13978,
-    "high": 17531,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "liberty",
-    "venueId": "barclays-center",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 16306,
-    "low": 13881,
-    "high": 16539,
-    "games": 9,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "liberty",
-    "venueId": "barclays-center",
-    "dayClass": "saturday",
-    "month": 6,
-    "count": 16345,
-    "low": 15639,
-    "high": 16422,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "liberty",
-    "venueId": "barclays-center",
-    "dayClass": "saturday",
-    "month": 8,
-    "count": 17107,
-    "low": 15103,
-    "high": 17344,
+    "count": 17515,
+    "low": 16430,
+    "high": 17547,
     "games": 3,
-    "seasons": "2024–2026"
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "venueId": "barclays-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 16383,
+    "low": 16165,
+    "high": 16823,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "liberty",
+    "venueId": "barclays-center",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 16383,
+    "low": 16345,
+    "high": 16461,
+    "games": 3,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "new-york",
@@ -4287,23 +4347,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "barclays-center",
     "dayClass": "sunday",
     "month": null,
-    "count": 17174,
-    "low": 15106,
-    "high": 17405,
-    "games": 12,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "liberty",
-    "venueId": "barclays-center",
-    "dayClass": "sunday",
-    "month": 6,
-    "count": 17401,
-    "low": 12477,
-    "high": 17415,
-    "games": 5,
-    "seasons": "2024–2026"
+    "count": 17343,
+    "low": 17174,
+    "high": 17498,
+    "games": 7,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "new-york",
@@ -7191,23 +7239,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "viejas-arena",
     "dayClass": "all",
     "month": null,
-    "count": 1507,
-    "low": 1176,
-    "high": 2149,
-    "games": 42,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "sdsu-wbb",
-    "venueId": "viejas-arena",
-    "dayClass": "opener",
-    "month": null,
-    "count": 2333,
-    "low": 1570,
-    "high": 2431,
-    "games": 3,
-    "seasons": "2024–2026"
+    "count": 1701,
+    "low": 1206,
+    "high": 2160,
+    "games": 27,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "san-diego",
@@ -7216,10 +7252,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "weekday",
     "month": null,
     "count": 1356,
-    "low": 1089,
-    "high": 2328,
-    "games": 20,
-    "seasons": "2024–2026"
+    "low": 1184,
+    "high": 2528,
+    "games": 12,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "san-diego",
@@ -7227,11 +7263,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "viejas-arena",
     "dayClass": "weekday",
     "month": 1,
-    "count": 1353,
-    "low": 1191,
-    "high": 2908,
-    "games": 5,
-    "seasons": "2024–2026"
+    "count": 1272,
+    "low": 1184,
+    "high": 3028,
+    "games": 4,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "san-diego",
@@ -7240,10 +7276,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "weekday",
     "month": 2,
     "count": 2135,
-    "low": 1358,
-    "high": 4088,
-    "games": 5,
-    "seasons": "2024–2026"
+    "low": 1747,
+    "high": 3112,
+    "games": 3,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "san-diego",
@@ -7251,11 +7287,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "viejas-arena",
     "dayClass": "weekday",
     "month": 11,
-    "count": 1166,
-    "low": 1045,
-    "high": 1418,
-    "games": 6,
-    "seasons": "2024–2026"
+    "count": 1220,
+    "low": 1069,
+    "high": 2464,
+    "games": 3,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "san-diego",
@@ -7263,11 +7299,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "viejas-arena",
     "dayClass": "saturday",
     "month": null,
-    "count": 1529,
-    "low": 1287,
-    "high": 1961,
-    "games": 17,
-    "seasons": "2024–2026"
+    "count": 1615,
+    "low": 1353,
+    "high": 1996,
+    "games": 12,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "san-diego",
@@ -7275,11 +7311,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "viejas-arena",
     "dayClass": "saturday",
     "month": 1,
-    "count": 1852,
-    "low": 1572,
-    "high": 2116,
-    "games": 6,
-    "seasons": "2024–2026"
+    "count": 1928,
+    "low": 1658,
+    "high": 2157,
+    "games": 4,
+    "seasons": "2025–2026"
   },
   {
     "metroId": "san-diego",
@@ -7287,23 +7323,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "viejas-arena",
     "dayClass": "saturday",
     "month": 2,
-    "count": 1643,
-    "low": 1414,
-    "high": 1863,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "sdsu-wbb",
-    "venueId": "viejas-arena",
-    "dayClass": "saturday",
-    "month": 11,
-    "count": 1758,
-    "low": 1374,
-    "high": 1930,
+    "count": 1830,
+    "low": 1643,
+    "high": 1896,
     "games": 3,
-    "seasons": "2024–2026"
+    "seasons": "2025–2026"
   },
   {
     "metroId": "san-diego",
@@ -7311,23 +7335,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "viejas-arena",
     "dayClass": "saturday",
     "month": 12,
-    "count": 1179,
-    "low": 1106,
-    "high": 1240,
-    "games": 4,
-    "seasons": "2024–2026"
-  },
-  {
-    "metroId": "san-diego",
-    "teamId": "sdsu-wbb",
-    "venueId": "viejas-arena",
-    "dayClass": "sunday",
-    "month": null,
-    "count": 2365,
-    "low": 1642,
-    "high": 2465,
+    "count": 1183,
+    "low": 1179,
+    "high": 1297,
     "games": 3,
-    "seasons": "2024–2026"
+    "seasons": "2025–2026"
   },
   {
     "metroId": "san-diego",
@@ -8547,11 +8559,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "husky-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 68811,
-    "low": 66325,
-    "high": 71692,
-    "games": 11,
-    "seasons": "2024–2025"
+    "count": 69107,
+    "low": 67229,
+    "high": 71312,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-football",
+    "venueId": "husky-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 67475,
+    "low": 67230,
+    "high": 67627,
+    "games": 3,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "seattle",
@@ -8560,10 +8584,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "saturday",
     "month": null,
     "count": 69788,
-    "low": 67229,
-    "high": 72132,
-    "games": 9,
-    "seasons": "2024–2025"
+    "low": 67804,
+    "high": 71317,
+    "games": 15,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "seattle",
@@ -8571,11 +8595,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "husky-stadium",
     "dayClass": "saturday",
     "month": 9,
-    "count": 67605,
-    "low": 65121,
-    "high": 70462,
+    "count": 67264,
+    "low": 64522,
+    "high": 69618,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-football",
+    "venueId": "husky-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 69976,
+    "low": 68567,
+    "high": 71524,
     "games": 4,
-    "seasons": "2024–2025"
+    "seasons": "2023–2025"
   },
   {
     "metroId": "seattle",
@@ -8584,10 +8620,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "saturday",
     "month": 11,
     "count": 71251,
-    "low": 69240,
-    "high": 71814,
-    "games": 3,
-    "seasons": "2024–2025"
+    "low": 70976,
+    "high": 71312,
+    "games": 5,
+    "seasons": "2023–2025"
   },
   {
     "metroId": "seattle",
@@ -8595,11 +8631,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "alaska-airlines-arena",
     "dayClass": "all",
     "month": null,
-    "count": 7346,
-    "low": 6518,
-    "high": 7995,
-    "games": 31,
-    "seasons": "2025–2026"
+    "count": 7398,
+    "low": 6320,
+    "high": 8057,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "venueId": "alaska-airlines-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 5568,
+    "low": 5462,
+    "high": 5573,
+    "games": 3,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "seattle",
@@ -8607,11 +8655,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "alaska-airlines-arena",
     "dayClass": "weekday",
     "month": null,
-    "count": 7267,
-    "low": 6202,
-    "high": 7898,
-    "games": 16,
-    "seasons": "2025–2026"
+    "count": 7078,
+    "low": 5933,
+    "high": 7883,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "venueId": "alaska-airlines-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 7789,
+    "low": 5641,
+    "high": 8522,
+    "games": 5,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "seattle",
@@ -8619,11 +8679,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "alaska-airlines-arena",
     "dayClass": "weekday",
     "month": 2,
-    "count": 7105,
-    "low": 6774,
-    "high": 7489,
-    "games": 4,
-    "seasons": "2025–2026"
+    "count": 7117,
+    "low": 6910,
+    "high": 7746,
+    "games": 6,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "seattle",
@@ -8631,11 +8691,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "alaska-airlines-arena",
     "dayClass": "weekday",
     "month": 11,
-    "count": 5134,
-    "low": 4947,
-    "high": 5349,
-    "games": 3,
-    "seasons": "2025–2026"
+    "count": 5349,
+    "low": 5041,
+    "high": 5680,
+    "games": 4,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "seattle",
@@ -8643,11 +8703,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "alaska-airlines-arena",
     "dayClass": "weekday",
     "month": 12,
-    "count": 7475,
-    "low": 6832,
-    "high": 7840,
-    "games": 6,
-    "seasons": "2025–2026"
+    "count": 7341,
+    "low": 6536,
+    "high": 7761,
+    "games": 8,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "seattle",
@@ -8655,11 +8715,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "alaska-airlines-arena",
     "dayClass": "saturday",
     "month": null,
-    "count": 7851,
-    "low": 6951,
-    "high": 7973,
-    "games": 7,
-    "seasons": "2025–2026"
+    "count": 7882,
+    "low": 7376,
+    "high": 8916,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "venueId": "alaska-airlines-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 7419,
+    "low": 7398,
+    "high": 7651,
+    "games": 3,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "seattle",
@@ -8667,11 +8739,23 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "alaska-airlines-arena",
     "dayClass": "saturday",
     "month": 2,
-    "count": 8064,
-    "low": 7358,
-    "high": 8410,
+    "count": 8755,
+    "low": 8064,
+    "high": 8916,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-mbb",
+    "venueId": "alaska-airlines-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 7251,
+    "low": 6384,
+    "high": 8273,
     "games": 3,
-    "seasons": "2025–2026"
+    "seasons": "2024–2026"
   },
   {
     "metroId": "seattle",
@@ -8679,11 +8763,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "alaska-airlines-arena",
     "dayClass": "sunday",
     "month": null,
-    "count": 7751,
-    "low": 6921,
-    "high": 8161,
-    "games": 6,
-    "seasons": "2025–2026"
+    "count": 7346,
+    "low": 6467,
+    "high": 8160,
+    "games": 7,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "seattle",

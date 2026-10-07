@@ -46,9 +46,11 @@ export async function loadAttendance(root) {
   return teams;
 }
 
-export async function calibrate(root, build) {
+export async function calibrate(root, build, teams = {}) {
   const rows = [];
-  for (const t of await loadAttendance(root)) rows.push(...build.buildDrawRows(t.metroId, t.teamId, t.games));
+  for (const t of await loadAttendance(root)) {
+    rows.push(...build.buildDrawRows(t.metroId, t.teamId, t.games, build.optionsFor(teams[t.teamId]?.league)));
+  }
   const out = path.join(root, 'src', 'data', 'expectedDrawIndex.ts');
   const next = `${HEADER}${JSON.stringify(rows, null, 2)};\n`;
   let current = '';
@@ -66,7 +68,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const server = await createServer({ root, configFile: path.join(root, 'vite.config.ts'), server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' });
   try {
     const build = await server.ssrLoadModule('/src/data/expectedDrawBuild.ts');
-    const r = await calibrate(root, build);
+    const { TEAMS } = await server.ssrLoadModule('/src/data/teams.ts');
+    const r = await calibrate(root, build, TEAMS);
     console.log(r.changed ? `Updated ${r.relative} (${r.count} rows).` : `No change in ${r.relative}.`);
     for (const row of r.rows.filter((row) => row.dayClass === 'all')) {
       console.log(`  ${row.teamId.padEnd(20)} ${row.venueId.padEnd(28)} median ${String(row.count).padStart(6)} (${row.low}–${row.high}) over ${row.games} games (${row.seasons})`);
