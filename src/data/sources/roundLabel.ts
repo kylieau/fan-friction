@@ -156,6 +156,21 @@ export function espnStakes(game: EspnScheduleGame, league: FeedLeague): Stakes |
   return gameNo ? { round, game: gameNo } : { round };
 }
 
+/**
+ * Any other league's playoff game (WNBA, MLS, NWSL): ESPN marks the season type
+ * "post", and the headline names the round ("WNBA Semifinals - Game 3"). Without
+ * this they read as regular-season games and took a regular-season crowd.
+ */
+export function otherPostseason(game: EspnScheduleGame): Stakes | undefined {
+  if (!playoffSeason(game)) return undefined;
+  const headline = headlineOf(game).replace(/\s+if necessary$/i, '');
+  const m = headline.match(/^(?:WNBA|NWSL|MLS)?\s*(.*?)(?:\s*-\s*Game\s+(\d+))?$/i);
+  const round = m?.[1]?.trim();
+  const game_ = m?.[2] ? Number(m[2]) : undefined;
+  const label = round && !BANNED.test(round) ? round : 'Postseason';
+  return game_ ? { round: label, game: game_ } : { round: label };
+}
+
 export function leagueFromPath(path: string): FeedLeague | null {
   if (path.endsWith('/nba')) return 'nba';
   if (path.endsWith('/nhl')) return 'nhl';

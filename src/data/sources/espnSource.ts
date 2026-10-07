@@ -6,7 +6,7 @@
 import { METROS } from '../../config/metros';
 import { TEAMS } from '../teams';
 import type { CrowdEvent, GameResult, LocalDate, LocalTime } from '../types';
-import { espnStakes, leagueFromPath } from './roundLabel';
+import { espnStakes, leagueFromPath, otherPostseason } from './roundLabel';
 import type { EventSource } from './types';
 
 const API = 'https://site.api.espn.com/apis/site/v2/sports';
@@ -170,7 +170,7 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
     ? localParts(g.date, METROS[t.metroId].timeZone)
     : { date: localParts(g.date, 'America/New_York').date, time: null };
   const league = leagueFromPath(t.path);
-  const stakes = league ? espnStakes(g, league) : undefined;
+  const stakes = league ? espnStakes(g, league) : otherPostseason(g);
   const broadcast = tvStation(c.broadcasts);
   return {
     id: `${date}-espn-${t.teamId}-${g.id}`,
