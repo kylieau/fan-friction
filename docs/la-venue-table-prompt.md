@@ -4,6 +4,9 @@ Copy everything below the line into a research model. Paste the answer back to C
 
 ---
 
+## How to deliver this (read first)
+**Reply in plain Markdown text in the chat itself.** Do not create an artifact, canvas, document, file or PDF: the answer is copied straight out of the chat into a `.md` file, and anything else can only be saved as a PDF. Use Markdown headings, pipe tables (`| a | b |`) and inline links. If the answer is too long for one message, stop at a clean break, say "continued", and carry on in the next message.
+
 # Research brief: Los Angeles venues that hold 5,000 or more
 
 ## What this is for
@@ -49,4 +52,4 @@ Leave out: rooms under 5,000 in every setup; private or members-only spaces; bui
 Dodger Stadium 56,000 · Crypto.com Arena 18,910 basketball / 18,145 hockey · LA Memorial Coliseum 93,607 then 77,500 · BMO Stadium 22,000 soccer / 24,000 concert · SoFi Stadium 70,240 · Intuit Dome 18,000 · Kia Forum 17,505 concert · Hollywood Bowl 17,500 · Rose Bowl 89,702 · Dignity Health Sports Park 27,167 · Angel Stadium 45,517 · Pauley Pavilion 13,800 · Galen Center 10,258 · Honda Center 17,174 hockey · Empire Polo Club 125,000 festival. Confirm or correct each, with the source.
 
 ## Output
-One table, one row per venue, sorted by capacity, largest first, with the columns above. Then a short list of near-the-line venues you left out and why (4,000–5,000 rooms), and a list of anything you could not confirm. Tables beat prose. Links for every capacity.
+In Markdown, in the chat (no artifact): one table, one row per venue, sorted by capacity, largest first, with the columns above. Then a short list of near-the-line venues you left out and why (4,000–5,000 rooms), and a list of anything you could not confirm. Tables beat prose. Links for every capacity.

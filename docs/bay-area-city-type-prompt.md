@@ -8,6 +8,9 @@ The next-cities research said **one type can't describe the Bay Area**: a transi
 
 ---
 
+## How to deliver this (read first)
+**Reply in plain Markdown text in the chat itself.** Do not create an artifact, canvas, document, file or PDF: the answer is copied straight out of the chat into a `.md` file, and anything else can only be saved as a PDF. Use Markdown headings, pipe tables (`| a | b |`) and inline links. If the answer is too long for one message, stop at a clean break, say "continued", and carry on in the next message.
+
 # Research brief: arrival mode for the Bay Area's large venues
 
 ## What this is for

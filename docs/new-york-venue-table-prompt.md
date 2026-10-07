@@ -6,6 +6,9 @@ Boundary set by Kylie, Oct 6: the five boroughs, northern New Jersey and Long Is
 
 ---
 
+## How to deliver this (read first)
+**Reply in plain Markdown text in the chat itself.** Do not create an artifact, canvas, document, file or PDF: the answer is copied straight out of the chat into a `.md` file, and anything else can only be saved as a PDF. Use Markdown headings, pipe tables (`| a | b |`) and inline links. If the answer is too long for one message, stop at a clean break, say "continued", and carry on in the next message.
+
 # Research brief: New York venues that hold 5,000 or more
 
 ## What this is for
@@ -74,7 +77,7 @@ Leave out: rooms under 5,000 in every setup; private spaces; buildings demolishe
 Citi Field, 41,922 baseball, listed capacity, at 40.7571, -73.8458. It is the only New York building in the app today, carried over from a single logged night. Confirm or correct it, with the source.
 
 ## Output
-One table, one row per venue, sorted by capacity, largest first, with the columns above. Then:
+In Markdown, in the chat (no artifact): one table, one row per venue, sorted by capacity, largest first, with the columns above. Then:
 1. A short list of near-the-line venues you left out and why (4,000–5,000 rooms).
 2. A list of anything you could not confirm.
 3. The big crowd dates with no building (marathon, parades).

@@ -8,6 +8,9 @@ Boundary: **one metro**, as the next-cities research recommended (`docs/next-cit
 
 ---
 
+## How to deliver this (read first)
+**Reply in plain Markdown text in the chat itself.** Do not create an artifact, canvas, document, file or PDF: the answer is copied straight out of the chat into a `.md` file, and anything else can only be saved as a PDF. Use Markdown headings, pipe tables (`| a | b |`) and inline links. If the answer is too long for one message, stop at a clean break, say "continued", and carry on in the next message.
+
 # Research brief: Bay Area venues that hold 5,000 or more
 
 ## What this is for
@@ -57,7 +60,7 @@ Leave out: rooms under 5,000 in every setup; private spaces; buildings demolishe
 Nothing. The Bay Area is not in the app today.
 
 ## Output
-One table, one row per venue, sorted by capacity, largest first, with the columns above. Then:
+In Markdown, in the chat (no artifact): one table, one row per venue, sorted by capacity, largest first, with the columns above. Then:
 1. Near-the-line venues you left out and why (4,000–5,000 rooms).
 2. Anything you could not confirm.
 3. The big crowd dates with no building.

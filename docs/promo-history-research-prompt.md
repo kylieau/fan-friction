@@ -2,6 +2,9 @@
 
 Drafted Oct 7, 2026 by Claude Code, for Kylie to run in a research chat. Why: MLB's free feed lists each game's promotions only from the 2025 season, so the test of whether a promotion kind lifts a crowd has one season to learn from (`docs/expected-draw-decisions-oct7.md`, round 2). Save the answer in full as `docs/promo-history-research-answer.md`, and any tables as `.csv` files beside it. Do not build from this file alone.
 
+## How to deliver this (read first)
+**Reply in plain Markdown text in the chat itself.** Do not create an artifact, canvas, document, file or PDF: the answer is copied straight out of the chat into a `.md` file, and anything else can only be saved as a PDF. Use Markdown headings, pipe tables (`| a | b |`) and inline links. If the answer is too long for one message, stop at a clean break, say "continued", and carry on in the next message.
+
 You are a careful researcher. Work from free, public sources only. Every row needs a link. Prefer "not found" to a guess. Tables beat prose.
 
 ## What to find
@@ -34,7 +37,7 @@ Also note, when a source gives it: the sponsor, the quantity ("first 40,000 fans
 Do not use paid databases or anything behind a login.
 
 ## Output
-1. **One CSV-style table per team**, one row per promotion: `team, season, date (YYYY-MM-DD), opponent, promotion, kinds, sponsor, quantity, sold out?, source link`. Dates are the local game date.
+1. **One Markdown table per team** (in the chat, no artifact; the column order below is fixed so it converts to CSV), one row per promotion: `team, season, date (YYYY-MM-DD), opponent, promotion, kinds, sponsor, quantity, sold out?, source link`. Dates are the local game date.
 2. **A coverage table:** team · season · complete / partial / not found · main source.
 3. **Caveats:** promotions that moved dates (rainouts), items that ran for a series rather than one night, and anything you could not date.
 
