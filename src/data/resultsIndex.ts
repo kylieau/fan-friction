@@ -103,6 +103,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "17:03"
   },
   {
+    "eventId": "2026-10-06-espn-kings-401891806",
+    "metroId": "la",
+    "date": "2026-10-06",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "crypto-com-arena",
+    "homeTeamId": "kings",
+    "home": {
+      "name": "Kings",
+      "score": 1
+    },
+    "away": {
+      "name": "Panthers",
+      "score": 2
+    },
+    "attendance": 18145,
+    "capturedAt": "2026-10-07T14:32:50.849Z",
+    "duration": {
+      "minutes": 161,
+      "kind": "estimated"
+    },
+    "startedAt": "19:21"
+  },
+  {
     "eventId": "2026-10-03-espn-columbia-football-401867819",
     "metroId": "new-york",
     "date": "2026-10-03",
@@ -218,6 +242,54 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "15:08"
   },
   {
+    "eventId": "2026-10-06-espn-devils-401892451",
+    "metroId": "new-york",
+    "date": "2026-10-06",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "prudential-center",
+    "homeTeamId": "devils",
+    "home": {
+      "name": "Devils",
+      "score": 3
+    },
+    "away": {
+      "name": "Mammoth",
+      "score": 5
+    },
+    "attendance": 15146,
+    "capturedAt": "2026-10-07T14:32:51.692Z",
+    "duration": {
+      "minutes": 164,
+      "kind": "estimated"
+    },
+    "startedAt": "16:08"
+  },
+  {
+    "eventId": "2026-10-06-espn-ny-rangers-401892452",
+    "metroId": "new-york",
+    "date": "2026-10-06",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "madison-square-garden",
+    "homeTeamId": "ny-rangers",
+    "home": {
+      "name": "Rangers",
+      "score": 5
+    },
+    "away": {
+      "name": "Islanders",
+      "score": 2
+    },
+    "attendance": 18006,
+    "capturedAt": "2026-10-07T14:32:51.692Z",
+    "duration": {
+      "minutes": 162,
+      "kind": "estimated"
+    },
+    "startedAt": "16:38"
+  },
+  {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",
     "metroId": "san-diego",
     "date": "2026-10-03",
@@ -240,6 +312,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:40"
+  },
+  {
+    "eventId": "2026-10-06-mlb-849826",
+    "metroId": "san-diego",
+    "date": "2026-10-06",
+    "sourceId": "mlb",
+    "status": "final",
+    "venueId": "petco-park",
+    "homeTeamId": "padres",
+    "home": {
+      "name": "Padres",
+      "score": 4
+    },
+    "away": {
+      "name": "Brewers",
+      "score": 3
+    },
+    "capturedAt": "2026-10-07T14:32:51.371Z",
+    "attendance": 47708,
+    "duration": {
+      "minutes": 202,
+      "kind": "official"
+    },
+    "startedAt": "18:39"
   },
   {
     "eventId": "2026-10-04-espn-kraken-401891824",
@@ -288,5 +384,29 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "13:25"
+  },
+  {
+    "eventId": "2026-10-06-espn-kraken-401892454",
+    "metroId": "seattle",
+    "date": "2026-10-06",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "climate-pledge-arena",
+    "homeTeamId": "kraken",
+    "home": {
+      "name": "Kraken",
+      "score": 2
+    },
+    "away": {
+      "name": "Golden Knights",
+      "score": 6
+    },
+    "attendance": 17151,
+    "capturedAt": "2026-10-07T14:32:51.506Z",
+    "duration": {
+      "minutes": 167,
+      "kind": "estimated"
+    },
+    "startedAt": "18:48"
   }
 ];

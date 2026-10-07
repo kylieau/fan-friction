@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-06",
+  "results": [
+    {
+      "eventId": "2026-10-06-espn-kraken-401892454",
+      "metroId": "seattle",
+      "date": "2026-10-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 2
+      },
+      "away": {
+        "name": "Golden Knights",
+        "score": 6
+      },
+      "attendance": 17151,
+      "capturedAt": "2026-10-07T14:32:51.506Z",
+      "duration": {
+        "minutes": 167,
+        "kind": "estimated"
+      },
+      "startedAt": "18:48"
+    }
+  ]
+}

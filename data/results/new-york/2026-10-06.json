@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-06",
+  "results": [
+    {
+      "eventId": "2026-10-06-espn-devils-401892451",
+      "metroId": "new-york",
+      "date": "2026-10-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "prudential-center",
+      "homeTeamId": "devils",
+      "home": {
+        "name": "Devils",
+        "score": 3
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 5
+      },
+      "attendance": 15146,
+      "capturedAt": "2026-10-07T14:32:51.692Z",
+      "duration": {
+        "minutes": 164,
+        "kind": "estimated"
+      },
+      "startedAt": "16:08"
+    },
+    {
+      "eventId": "2026-10-06-espn-ny-rangers-401892452",
+      "metroId": "new-york",
+      "date": "2026-10-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "ny-rangers",
+      "home": {
+        "name": "Rangers",
+        "score": 5
+      },
+      "away": {
+        "name": "Islanders",
+        "score": 2
+      },
+      "attendance": 18006,
+      "capturedAt": "2026-10-07T14:32:51.692Z",
+      "duration": {
+        "minutes": 162,
+        "kind": "estimated"
+      },
+      "startedAt": "16:38"
+    }
+  ]
+}
