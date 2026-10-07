@@ -10,6 +10,2010 @@ export type { DayClass, ExpectedDrawRow, OpponentRatioRow, SeasonLevelRow } from
 
 export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 42600,
+    "low": 41893,
+    "high": 43330,
+    "games": 33,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 42501,
+    "low": 39275,
+    "high": 42524,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 42601,
+    "low": 41984,
+    "high": 43338,
+    "games": 21,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 41984,
+    "low": 41932,
+    "high": 42292,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 42822,
+    "low": 41893,
+    "high": 43128,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 42601,
+    "low": 41505,
+    "high": 51303,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 43330,
+    "low": 42210,
+    "high": 43415,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 42631,
+    "low": 41722,
+    "high": 42804,
+    "games": 7,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 42631,
+    "low": 42578,
+    "high": 42738,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 36581,
+    "low": 32898,
+    "high": 39384,
+    "games": 247,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 41426,
+    "low": 40562,
+    "high": 41505,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 33766,
+    "low": 31266,
+    "high": 36630,
+    "games": 121,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 32620,
+    "low": 30310,
+    "high": 34838,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 35113,
+    "low": 33654,
+    "high": 37134,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 33902,
+    "low": 31266,
+    "high": 37130,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 34227,
+    "low": 31623,
+    "high": 34883,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 30877,
+    "low": 28951,
+    "high": 34284,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 35503,
+    "low": 32789,
+    "high": 38581,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 39523,
+    "low": 37223,
+    "high": 40330,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 40210,
+    "low": 39627,
+    "high": 40363,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 40186,
+    "low": 39565,
+    "high": 40266,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 40753,
+    "low": 39418,
+    "high": 41046,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 39643,
+    "low": 38033,
+    "high": 40743,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 37465,
+    "low": 35630,
+    "high": 37936,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 36212,
+    "low": 35352,
+    "high": 38696,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 40107,
+    "low": 38515,
+    "high": 40864,
+    "games": 49,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 40195,
+    "low": 39528,
+    "high": 41487,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 39336,
+    "low": 37339,
+    "high": 41391,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 40216,
+    "low": 39452,
+    "high": 40768,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 40249,
+    "low": 37170,
+    "high": 41006,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 39716,
+    "low": 37885,
+    "high": 40154,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 38276,
+    "low": 36263,
+    "high": 39819,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 36581,
+    "low": 32807,
+    "high": 39203,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 36581,
+    "low": 33777,
+    "high": 39953,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 39203,
+    "low": 37800,
+    "high": 39649,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 38066,
+    "low": 37443,
+    "high": 39359,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 35180,
+    "low": 30895,
+    "high": 36693,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 31776,
+    "low": 30416,
+    "high": 32737,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "venueId": "truist-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 36394,
+    "low": 34317,
+    "high": 39121,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 3317,
+    "low": 3265,
+    "high": 3576,
+    "games": 36,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3326,
+    "low": 3265,
+    "high": 3575,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 3575,
+    "low": 3420,
+    "high": 3588,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 3265,
+    "low": 3265,
+    "high": 3592,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 3451,
+    "low": 3311,
+    "high": 3575,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 3319,
+    "low": 3292,
+    "high": 3447,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 3296,
+    "low": 3268,
+    "high": 3575,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 3265,
+    "low": 3265,
+    "high": 3281,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 3283,
+    "low": 3276,
+    "high": 3429,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3577,
+    "low": 3305,
+    "high": 3596,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "gateway-center-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3315,
+    "low": 3274,
+    "high": 3575,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "venueId": "state-farm-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 17044,
+    "low": 17044,
+    "high": 17044,
+    "games": 5,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 70091,
+    "low": 69500,
+    "high": 71455,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 71610,
+    "low": 70604,
+    "high": 71951,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 67523,
+    "low": 67477,
+    "high": 67784,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 70016,
+    "low": 69665,
+    "high": 71042,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 70285,
+    "low": 69529,
+    "high": 71455,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 71848,
+    "low": 70932,
+    "high": 72263,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 70306,
+    "low": 69806,
+    "high": 70854,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 70453,
+    "low": 70053,
+    "high": 71221,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "venueId": "mercedes-benz-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 69950,
+    "low": 69302,
+    "high": 70838,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-football",
+    "venueId": "center-parc-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 14260,
+    "low": 13673,
+    "high": 16536,
+    "games": 13,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-football",
+    "venueId": "center-parc-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 14413,
+    "low": 14019,
+    "high": 14980,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-football",
+    "venueId": "center-parc-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 14723,
+    "low": 13709,
+    "high": 17104,
+    "games": 12,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-football",
+    "venueId": "center-parc-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 15861,
+    "low": 14887,
+    "high": 17104,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-football",
+    "venueId": "center-parc-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 19256,
+    "low": 15768,
+    "high": 19422,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-football",
+    "venueId": "center-parc-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 14047,
+    "low": 12871,
+    "high": 14260,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1697,
+    "low": 1560,
+    "high": 2013,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1262,
+    "low": 806,
+    "high": 1300,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1697,
+    "low": 1570,
+    "high": 2034,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1600,
+    "low": 1498,
+    "high": 1647,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 2013,
+    "low": 1668,
+    "high": 2482,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1882,
+    "low": 1367,
+    "high": 2280,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1704,
+    "low": 1569,
+    "high": 1917,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1842,
+    "low": 1579,
+    "high": 2032,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1682,
+    "low": 1603,
+    "high": 1924,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 1671,
+    "low": 1606,
+    "high": 1701,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1154,
+    "low": 768,
+    "high": 1444,
+    "games": 29,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1181,
+    "low": 683,
+    "high": 1420,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4030,
+    "low": 1218,
+    "high": 7343,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1381,
+    "low": 1122,
+    "high": 1807,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 725,
+    "low": 295,
+    "high": 1148,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1200,
+    "low": 822,
+    "high": 1525,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 983,
+    "low": 768,
+    "high": 1223,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1498,
+    "low": 1377,
+    "high": 1594,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 876,
+    "low": 759,
+    "high": 1016,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "venueId": "gsu-convocation-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 876,
+    "low": 759,
+    "high": 1016,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-football",
+    "venueId": "bobby-dodd-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 41205,
+    "low": 34857,
+    "high": 50173,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-football",
+    "venueId": "bobby-dodd-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 37775,
+    "low": 34614,
+    "high": 38944,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-football",
+    "venueId": "bobby-dodd-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 45123,
+    "low": 35656,
+    "high": 50878,
+    "games": 13,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-football",
+    "venueId": "bobby-dodd-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 38426,
+    "low": 31321,
+    "high": 45857,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-football",
+    "venueId": "bobby-dodd-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 37287,
+    "low": 35945,
+    "high": 50878,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-football",
+    "venueId": "bobby-dodd-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 49403,
+    "low": 43852,
+    "high": 51689,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 4769,
+    "low": 3922,
+    "high": 5952,
+    "games": 50,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3530,
+    "low": 3472,
+    "high": 3541,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4182,
+    "low": 3766,
+    "high": 4923,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4047,
+    "low": 3699,
+    "high": 5743,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 4567,
+    "low": 4239,
+    "high": 4879,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 3802,
+    "low": 3596,
+    "high": 4249,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 4859,
+    "low": 4177,
+    "high": 5267,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5052,
+    "low": 4491,
+    "high": 6380,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 6179,
+    "low": 5284,
+    "high": 6681,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 6194,
+    "low": 5772,
+    "high": 6374,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 4595,
+    "low": 4375,
+    "high": 6373,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4772,
+    "low": 4163,
+    "high": 5370,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 1935,
+    "low": 1517,
+    "high": 2641,
+    "games": 32,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1526,
+    "low": 1441,
+    "high": 1781,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1730,
+    "low": 1524,
+    "high": 1969,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1879,
+    "low": 1537,
+    "high": 2356,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1439,
+    "low": 1293,
+    "high": 1534,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1363,
+    "low": 1178,
+    "high": 1529,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2560,
+    "low": 1966,
+    "high": 3727,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 6125,
+    "low": 5213,
+    "high": 6256,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 2812,
+    "low": 2439,
+    "high": 3244,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 1809,
+    "low": 1693,
+    "high": 2180,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "venueId": "mccamish-pavilion",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 1937,
+    "low": 1703,
+    "high": 2044,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 16536,
+    "low": 15916,
+    "high": 17454,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 17692,
+    "low": 17620,
+    "high": 17752,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 12575,
+    "low": 11854,
+    "high": 13081,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 16158,
+    "low": 15553,
+    "high": 17162,
+    "games": 57,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 15993,
+    "low": 14602,
+    "high": 16412,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 16436,
+    "low": 15828,
+    "high": 17093,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 16008,
+    "low": 15656,
+    "high": 17092,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 17124,
+    "low": 17049,
+    "high": 17242,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17060,
+    "low": 15925,
+    "high": 17186,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 16761,
+    "low": 15771,
+    "high": 17564,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 16245,
+    "low": 15758,
+    "high": 17405,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 15596,
+    "low": 15529,
+    "high": 15873,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 16536,
+    "low": 16378,
+    "high": 17625,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 16232,
+    "low": 16060,
+    "high": 16885,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 16149,
+    "low": 15664,
+    "high": 18040,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17447,
+    "low": 17052,
+    "high": 17711,
+    "games": 27,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 17278,
+    "low": 17062,
+    "high": 17479,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 17503,
+    "low": 17498,
+    "high": 17552,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 17122,
+    "low": 17064,
+    "high": 17741,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17722,
+    "low": 17458,
+    "high": 17774,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 17632,
+    "low": 16909,
+    "high": 17809,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 16331,
+    "low": 16137,
+    "high": 17173,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 17121,
+    "low": 17086,
+    "high": 17147,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 16161,
+    "low": 15830,
+    "high": 16928,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "venueId": "state-farm-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 16137,
+    "low": 15624,
+    "high": 16194,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-football",
+    "venueId": "fifth-third-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 9585,
+    "low": 6993,
+    "high": 10713,
+    "games": 13,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-football",
+    "venueId": "fifth-third-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 11040,
+    "low": 10574,
+    "high": 11040,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-football",
+    "venueId": "fifth-third-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 9585,
+    "low": 8897,
+    "high": 10313,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-football",
+    "venueId": "fifth-third-stadium",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 9585,
+    "low": 8897,
+    "high": 10313,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-football",
+    "venueId": "fifth-third-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7736,
+    "low": 6210,
+    "high": 10713,
+    "games": 9,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-football",
+    "venueId": "fifth-third-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 10713,
+    "low": 8853,
+    "high": 10877,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-football",
+    "venueId": "fifth-third-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 6973,
+    "low": 6091,
+    "high": 8562,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1769,
+    "low": 1378,
+    "high": 2046,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2733,
+    "low": 2569,
+    "high": 11496,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1633,
+    "low": 1340,
+    "high": 1801,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1729,
+    "low": 1529,
+    "high": 1848,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1851,
+    "low": 1642,
+    "high": 2041,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1647,
+    "low": 1474,
+    "high": 1792,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1279,
+    "low": 1209,
+    "high": 1340,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1933,
+    "low": 1652,
+    "high": 2152,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1857,
+    "low": 1625,
+    "high": 2041,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1858,
+    "low": 1730,
+    "high": 2129,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2167,
+    "low": 1763,
+    "high": 2986,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 572,
+    "low": 509,
+    "high": 686,
+    "games": 26,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 576,
+    "low": 515,
+    "high": 675,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 534,
+    "low": 488,
+    "high": 622,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 576,
+    "low": 549,
+    "high": 613,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 658,
+    "low": 567,
+    "high": 684,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 567,
+    "low": 513,
+    "high": 822,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 545,
+    "low": 529,
+    "high": 617,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 822,
+    "low": 744,
+    "high": 829,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "venueId": "ksu-convocation-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 499,
+    "low": 479,
+    "high": 528,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
     "metroId": "la",
     "teamId": "angel-city",
     "venueId": "bmo-stadium",
@@ -8440,6 +10444,972 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [];
 
 /** How each opponent has drawn at each team's games (expectedDrawBuild.ts opponentRatio). */
 export const OPPONENT_RATIOS: OpponentRatioRow[] = [
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "cf-montr-al",
+    "ratio": 1.122,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "charlotte",
+    "ratio": 1.15,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "chicago",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "cincinnati",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "columbus",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "d-c-united",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "miami",
+    "ratio": 1.126,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "nashville",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "new-england",
+    "ratio": 1.063,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "nycfc",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "orlando",
+    "ratio": 0.979,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "philadelphia",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "red-bull-ny",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "atlanta-united",
+    "opponent": "toronto",
+    "ratio": 0.98,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "athletics",
+    "ratio": 0.902,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "blue-jays",
+    "ratio": 0.983,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "brewers",
+    "ratio": 1.013,
+    "games": 9
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "cardinals",
+    "ratio": 0.968,
+    "games": 10
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "cubs",
+    "ratio": 1.013,
+    "games": 9
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "d-backs",
+    "ratio": 0.991,
+    "games": 9
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "dodgers",
+    "ratio": 1.111,
+    "games": 10
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "giants",
+    "ratio": 0.973,
+    "games": 11
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "guardians",
+    "ratio": 0.967,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "marlins",
+    "ratio": 0.928,
+    "games": 21
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "mets",
+    "ratio": 0.968,
+    "games": 19
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "nationals",
+    "ratio": 0.963,
+    "games": 21
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "padres",
+    "ratio": 0.964,
+    "games": 12
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "phillies",
+    "ratio": 1.041,
+    "games": 18
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "pirates",
+    "ratio": 0.984,
+    "games": 9
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "rangers",
+    "ratio": 0.961,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "rays",
+    "ratio": 0.936,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "red-sox",
+    "ratio": 1,
+    "games": 8
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "reds",
+    "ratio": 1.024,
+    "games": 12
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "rockies",
+    "ratio": 0.996,
+    "games": 9
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "royals",
+    "ratio": 1.008,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "braves",
+    "opponent": "tigers",
+    "ratio": 0.99,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "aces",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "fever",
+    "ratio": 0.991,
+    "games": 4
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "fire",
+    "ratio": 1.017,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "liberty",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "lynx",
+    "ratio": 1.015,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "mercury",
+    "ratio": 1.022,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "mystics",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "sky",
+    "ratio": 1.015,
+    "games": 4
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "sparks",
+    "ratio": 1.023,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "storm",
+    "ratio": 1.039,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "sun",
+    "ratio": 1.013,
+    "games": 4
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "tempo",
+    "ratio": 0.899,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "valkyries",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "dream",
+    "opponent": "wings",
+    "ratio": 1.012,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "opponent": "buccaneers",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "opponent": "commanders",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "opponent": "panthers",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "opponent": "saints",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
+    "opponent": "seahawks",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-football",
+    "opponent": "app-state",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-football",
+    "opponent": "james-madison",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "app-state",
+    "ratio": 1.044,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "arkansas-st",
+    "ratio": 1.038,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "coastal",
+    "ratio": 0.973,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "ga-southern",
+    "ratio": 1.243,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "james-madison",
+    "ratio": 0.944,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "marshall",
+    "ratio": 1.012,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "n-illinois",
+    "ratio": 0.955,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "old-dominion",
+    "ratio": 1.079,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "toccoa-falls",
+    "ratio": 0.672,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-mbb",
+    "opponent": "troy",
+    "ratio": 1.04,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "opponent": "app-state",
+    "ratio": 0.954,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "opponent": "coastal",
+    "ratio": 0.886,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "opponent": "ga-southern",
+    "ratio": 0.59,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "opponent": "james-madison",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "opponent": "marshall",
+    "ratio": 0.942,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gsu-wbb",
+    "opponent": "old-dominion",
+    "ratio": 1.091,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-football",
+    "opponent": "syracuse",
+    "ratio": 1.077,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "alabama-a-m",
+    "ratio": 0.969,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "boston-college",
+    "ratio": 0.916,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "california",
+    "ratio": 0.959,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "clemson",
+    "ratio": 1.027,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "duke",
+    "ratio": 1.243,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "florida-st",
+    "ratio": 1.042,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "ga-southern",
+    "ratio": 1.091,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "mississippi-st",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "north-carolina",
+    "ratio": 1.185,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "notre-dame",
+    "ratio": 0.973,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "pitt",
+    "ratio": 1.078,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "syracuse",
+    "ratio": 1.148,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "virginia",
+    "ratio": 1.036,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "wake-forest",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
+    "opponent": "west-georgia",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "opponent": "clemson",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "opponent": "west-georgia",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "76ers",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "bucks",
+    "ratio": 0.977,
+    "games": 5
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "bulls",
+    "ratio": 0.977,
+    "games": 5
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "cavaliers",
+    "ratio": 1.023,
+    "games": 5
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "celtics",
+    "ratio": 1.013,
+    "games": 5
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "clippers",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "grizzlies",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "heat",
+    "ratio": 0.988,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "hornets",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "jazz",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "kings",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "knicks",
+    "ratio": 0.995,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "lakers",
+    "ratio": 1.015,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "magic",
+    "ratio": 1.013,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "mavericks",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "nets",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "nuggets",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "pacers",
+    "ratio": 0.932,
+    "games": 5
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "pelicans",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "pistons",
+    "ratio": 0.993,
+    "games": 5
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "raptors",
+    "ratio": 1.016,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "rockets",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "spurs",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "suns",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "thunder",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "timberwolves",
+    "ratio": 0.978,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "trail-blazers",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "warriors",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "hawks",
+    "opponent": "wizards",
+    "ratio": 0.966,
+    "games": 6
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "fiu",
+    "ratio": 1.047,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "georgia-st",
+    "ratio": 1.223,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "jacksonville",
+    "ratio": 0.565,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "jax-state",
+    "ratio": 1.049,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "liberty",
+    "ratio": 1.113,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "louisiana-tech",
+    "ratio": 0.984,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "mtsu",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "new-mexico-st",
+    "ratio": 0.939,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "sam-houston",
+    "ratio": 0.874,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "opponent": "western-ky",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "opponent": "jax-state",
+    "ratio": 1.082,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "opponent": "liberty",
+    "ratio": 1.071,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "opponent": "life-univ",
+    "ratio": 0.931,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "opponent": "louisiana-tech",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "opponent": "mtsu",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "opponent": "new-mexico-st",
+    "ratio": 1.039,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "opponent": "sam-houston",
+    "ratio": 0.94,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "ksu-wbb",
+    "opponent": "utep",
+    "ratio": 0.98,
+    "games": 2
+  },
   {
     "metroId": "la",
     "teamId": "angel-city",

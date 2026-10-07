@@ -1238,6 +1238,238 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 1000, setup: 'concert', note: 'About 1,000. Estimated. Ventura is part of Los Angeles here.' }],
     roof: 'indoor',
   },
+  // ---- Atlanta (docs/atlanta-venue-table-answer.md, Oct 7, 2026). Capacities labeled as the research
+  // labeled them; car shares from docs/atlanta-city-type-answer.md (one value per venue, Kylie, Oct 6).
+  // Coordinates checked against OpenStreetMap by name; three rooms OSM does not know take the research's
+  // approximation, said so below. Festival parks and the Georgia World Congress Center are not rows
+  // (Kylie, Oct 7): their events are points sized by their own crowds. ----
+  'mercedes-benz-stadium': {
+    id: 'mercedes-benz-stadium',
+    metroId: 'atlanta',
+    // Reported: Falcons 78% car (MARTA fare-card counts, 2018–19), Atlanta United ~70%. One value: 0.75; concerts and bowls read a few points off.
+    carShare: 0.75,
+    names: [{ name: 'Mercedes-Benz Stadium' }],
+    location: [-84.4008, 33.7554],
+    capacity: [
+      { seats: 71000, setup: 'football', note: 'Official (Falcons). 75,000 expanded for the SEC Championship, Peach Bowl and other neutral-site games; record 79,330 (2022 Peach Bowl).' },
+      { seats: 42500, setup: 'soccer', note: 'Official, the upper-bowl curtain for Atlanta United; the full bowl opens for big matches (record 73,019, 2018 MLS Cup, reported).' },
+    ],
+    // Retractable roof; the venue type has no such value, so covered, as the roof is usually closed for events.
+    roof: 'covered',
+  },
+  'echopark-speedway': {
+    id: 'echopark-speedway',
+    metroId: 'atlanta',
+    // Estimated: 850 acres of free lots, no transit (99%+).
+    carShare: 0.99,
+    names: [{ name: 'Atlanta Motor Speedway' }, { name: 'EchoPark Speedway', from: '2025-06-03' }],
+    location: [-84.3162, 33.3889],
+    capacity: [{ seats: 71000, note: 'Reported: the last grandstand figure the owner released (2015). No feed lists its two race weekends; hand-list them.' }],
+    roof: 'open',
+  },
+  'bobby-dodd-stadium': {
+    id: 'bobby-dodd-stadium',
+    metroId: 'atlanta',
+    // Estimated (55–75%): North Avenue station three blocks away, plus students walking in.
+    carShare: 0.65,
+    names: [{ name: 'Bobby Dodd Stadium at Grant Field' }, { name: 'Bobby Dodd Stadium at Hyundai Field', from: '2023-08-08' }],
+    location: [-84.393, 33.7725],
+    capacity: [
+      { seats: 55000, setup: 'football', note: 'Official, through the 2023 season' },
+      { seats: 51913, setup: 'football', fromYear: 2024, note: 'Official (Georgia Tech). About 50,000 from 2027 after the renovation; update then.' },
+    ],
+    roof: 'open',
+  },
+  'truist-park': {
+    id: 'truist-park',
+    metroId: 'atlanta',
+    // Estimated (93–98%): no rail; 9,000+ Braves game-day spaces; CobbLinc 10 does not run Sundays. No observed count since 2017.
+    carShare: 0.96,
+    names: [{ name: 'SunTrust Park' }, { name: 'Truist Park', from: '2020-01-14' }],
+    location: [-84.4676, 33.8907],
+    capacity: [{ seats: 41084, setup: 'baseball', note: 'Reported (the Braves\' figure via Ticketmaster and Populous); 41,149 at the 2017 opening' }],
+    roof: 'open',
+  },
+  'center-parc-stadium': {
+    id: 'center-parc-stadium',
+    metroId: 'atlanta',
+    // Estimated (75–88%): the same site drew 6–8% by MARTA as Turner Field; a mile from Georgia State station.
+    carShare: 0.82,
+    names: [{ name: 'Georgia State Stadium' }, { name: 'Center Parc Stadium', from: '2020-08-01' }],
+    location: [-84.3887, 33.7355],
+    capacity: [{ seats: 24333, setup: 'football', note: 'Reported. Turner Field (49,586, baseball, 1997–2016) is history, not a setup.' }],
+    roof: 'open',
+  },
+  'state-farm-arena': {
+    id: 'state-farm-arena',
+    metroId: 'atlanta',
+    // Reported: Hawks ~84% car (MARTA fare-card counts 2018–19, 9.3% rail, raised for undercount).
+    carShare: 0.84,
+    names: [{ name: 'Philips Arena' }, { name: 'State Farm Arena', from: '2018-08-29' }],
+    location: [-84.3964, 33.7574],
+    capacity: [
+      { seats: 18047, setup: 'basketball', note: 'Reported, 2014–17' },
+      { seats: 16600, setup: 'basketball', fromYear: 2018, note: 'Official at the 2018 reopening' },
+      { seats: 17600, setup: 'basketball', fromYear: 2024, note: 'Reported (2026); Dream crowds above 17,000 in 2024–25 confirm the 16,600 is out of date' },
+      { seats: 21000, setup: 'concert', note: 'Reported, end-stage' },
+    ],
+    roof: 'indoor',
+  },
+  'lakewood-amphitheatre': {
+    id: 'lakewood-amphitheatre',
+    metroId: 'atlanta',
+    // Estimated (90–97%): ~6,000-car lot, parking in the ticket; a bus bridge from Lakewood/Fort McPherson.
+    carShare: 0.95,
+    names: [{ name: 'Lakewood Amphitheatre' }, { name: 'Cellairis Amphitheatre at Lakewood', from: '2017-11-03' }, { name: 'Lakewood Amphitheatre', from: '2022-01-01' }],
+    location: [-84.396, 33.7042],
+    capacity: [{ seats: 18920, setup: 'concert', note: 'Reported: ~7,000 seats and ~12,000 lawn; Live Nation rounds to 19,000. The Cellairis name came off about 2021 (end date not confirmed; 2022 used here).' }],
+    roof: 'covered',
+  },
+  'gas-south-arena': {
+    id: 'gas-south-arena',
+    metroId: 'atlanta',
+    // Estimated (96–99%): on-site lots, no event transit.
+    carShare: 0.98,
+    names: [{ name: 'Infinite Energy Arena' }, { name: 'Gas South Arena', from: '2021-05-25' }],
+    location: [-84.0938, 33.9916],
+    capacity: [
+      { seats: 13000, setup: 'concert', note: 'Official' },
+      { seats: 12750, setup: 'basketball', note: 'Reported' },
+      { seats: 11355, setup: 'hockey', note: 'Reported (Gladiators, ECHL)' },
+    ],
+    roof: 'indoor',
+  },
+  'ameris-bank-amphitheatre': {
+    id: 'ameris-bank-amphitheatre',
+    metroId: 'atlanta',
+    // Estimated (96–99%): a parking pass in every ticket, no transit.
+    carShare: 0.98,
+    names: [{ name: 'Verizon Wireless Amphitheatre' }, { name: 'Verizon Amphitheatre', from: '2017-01-01' }, { name: 'Ameris Bank Amphitheatre', from: '2019-01-01' }],
+    location: [-84.3063, 34.0544],
+    capacity: [{ seats: 12000, setup: 'concert', note: 'Official (Live Nation); 12,500 max standing and 7,500 seated reported' }],
+    roof: 'covered',
+  },
+  'fifth-third-stadium': {
+    id: 'fifth-third-stadium',
+    metroId: 'atlanta',
+    // Estimated (75–90%): the Big Owl Bus carries students from campus.
+    carShare: 0.85,
+    names: [{ name: 'Fifth Third Bank Stadium' }, { name: 'Fifth Third Stadium' }],
+    location: [-84.5678, 34.0288],
+    capacity: [
+      { seats: 11040, setup: 'football', note: 'Official (KSU listing; equals the record). 8,300 permanent seats.' },
+      { seats: 16316, setup: 'concert', note: 'Reported: seats plus ~8,000 on the field' },
+    ],
+    roof: 'open',
+  },
+  'gwinnett-field': {
+    id: 'gwinnett-field',
+    metroId: 'atlanta',
+    // Estimated (99%): no direct bus.
+    carShare: 0.99,
+    names: [{ name: 'Coolray Field' }, { name: 'Gwinnett Field', from: '2026-01-01' }],
+    location: [-83.9925, 34.0407],
+    capacity: [{ seats: 10427, setup: 'baseball', note: 'Official (MiLB). The Stripers averaged 2,694 in 2025, so most nights sit under the floor.' }],
+    roof: 'open',
+  },
+  'bt-harvey-stadium': {
+    id: 'bt-harvey-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'B.T. Harvey Stadium' }],
+    location: [-84.4162, 33.7457],
+    capacity: [{ seats: 9000, setup: 'football', note: 'Official (Morehouse)' }],
+    roof: 'open',
+  },
+  'mccamish-pavilion': {
+    id: 'mccamish-pavilion',
+    metroId: 'atlanta',
+    // Estimated (55–75%): a walk across campus from Midtown and North Avenue stations; little nearby parking.
+    carShare: 0.65,
+    names: [{ name: 'McCamish Pavilion' }],
+    location: [-84.3928, 33.7806],
+    capacity: [{ seats: 8600, setup: 'basketball', note: 'Official (Georgia Tech): 6,935 court level and 1,665 balcony' }],
+    roof: 'indoor',
+  },
+  'gsu-convocation-center': {
+    id: 'gsu-convocation-center',
+    metroId: 'atlanta',
+    // Estimated (65–83%): four blocks from Georgia State station, plus a student shuttle.
+    carShare: 0.73,
+    names: [{ name: 'GSU Convocation Center' }],
+    location: [-84.3887, 33.7425],
+    capacity: [
+      { seats: 7300, setup: 'basketball', fromYear: 2022, note: 'Official (Georgia State); opened September 2022' },
+      { seats: 8000, setup: 'concert', fromYear: 2022, note: 'Official' },
+    ],
+    roof: 'indoor',
+  },
+  'chastain-park-amphitheater': {
+    id: 'chastain-park-amphitheater',
+    metroId: 'atlanta',
+    // Estimated (85–95%): four pay lots inside a residential park, rideshare urged.
+    carShare: 0.92,
+    names: [
+      { name: 'Chastain Park Amphitheater' },
+      { name: 'State Bank Amphitheatre at Chastain Park', from: '2018-04-04' },
+      { name: 'Cadence Bank Amphitheatre at Chastain Park', from: '2019-02-21' },
+      { name: 'Synovus Bank Amphitheater at Chastain Park', from: '2025-03-01' },
+    ],
+    // OpenStreetMap knows the street address (4469 Stella Drive), not the stage; the research read 33.876, -84.396.
+    location: [-84.3965, 33.878],
+    capacity: [{ seats: 6900, setup: 'concert', note: 'Reported; Live Nation says "nearly 7,000", mostly reserved and table seating' }],
+    roof: 'open',
+  },
+  'forbes-arena': {
+    id: 'forbes-arena',
+    metroId: 'atlanta',
+    names: [{ name: 'Forbes Arena' }],
+    location: [-84.4171, 33.7486],
+    capacity: [{ seats: 6000, setup: 'basketball', note: 'Official (Morehouse)' }],
+    roof: 'indoor',
+  },
+  'wolf-creek-amphitheater': {
+    id: 'wolf-creek-amphitheater',
+    metroId: 'atlanta',
+    names: [{ name: 'Wolf Creek Amphitheater' }],
+    // Approximate: 3025 Merk Road SW, South Fulton; neither OpenStreetMap nor the research gave the building. Geocode before it matters.
+    location: [-84.569, 33.665],
+    capacity: [{ seats: 5420, setup: 'concert', note: 'Reported (venue listing); 5,116 seated, older listings 5,200–5,300' }],
+    roof: 'open',
+  },
+  'ksu-convocation-center': {
+    id: 'ksu-convocation-center',
+    metroId: 'atlanta',
+    names: [{ name: 'KSU Convocation Center' }, { name: 'VyStar Arena' }],
+    // Approximate: the research's read (34.039, -84.583); OpenStreetMap does not list the building.
+    location: [-84.583, 34.039],
+    capacity: [
+      { seats: 3800, setup: 'basketball', note: 'Official (KSU, current); 4,600 in an older listing. Under the floor for games.' },
+      { seats: 5000, setup: 'concert', note: 'Official: "5,000+" for concerts and seminars' },
+    ],
+    roof: 'indoor',
+  },
+  'panther-stadium': {
+    id: 'panther-stadium',
+    metroId: 'atlanta',
+    names: [{ name: 'Panther Stadium' }],
+    // Approximate: on the Clark Atlanta campus beside B.T. Harvey; not in OpenStreetMap, no research coordinate.
+    location: [-84.413, 33.748],
+    capacity: [{ seats: 5000, setup: 'football', note: 'Reported (secondary source only); exactly on the line' }],
+    roof: 'open',
+  },
+  'gateway-center-arena': {
+    id: 'gateway-center-arena',
+    metroId: 'atlanta',
+    // Estimated (80–92%): the ATL SkyTrain from Airport station carries a minority.
+    carShare: 0.85,
+    names: [{ name: 'Gateway Center Arena at College Park' }, { name: 'Gateway Center' }],
+    location: [-84.4597, 33.6468],
+    capacity: [
+      { seats: 3500, setup: 'basketball', fromYear: 2019, note: 'Official. Dream home games sit under the floor (Kylie, Oct 7); their State Farm Arena games count.' },
+      { seats: 5000, setup: 'concert', fromYear: 2019, note: 'Official' },
+    ],
+    roof: 'indoor',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */
