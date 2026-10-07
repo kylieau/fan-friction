@@ -74,6 +74,42 @@
       "shortwave": 7,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "hour": 18,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:38:26.864Z",
+      "feelsLikeF": 67.3,
+      "tempF": 73.4,
+      "humidity": 21,
+      "windMph": 4.9,
+      "uvIndex": 0.75,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 149,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:38:26.864Z",
+      "feelsLikeF": 65.7,
+      "tempF": 69.9,
+      "humidity": 32,
+      "windMph": 3.6,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [

@@ -596,6 +596,24 @@
       "shortwave": 723,
       "cloudCover": 5,
       "code": 0
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "hour": 11,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:38:26.864Z",
+      "feelsLikeF": 69.2,
+      "tempF": 74.3,
+      "humidity": 18,
+      "windMph": 1.7,
+      "uvIndex": 3.6,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 543,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [

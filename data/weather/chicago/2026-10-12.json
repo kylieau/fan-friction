@@ -2,7 +2,26 @@
   "schema": 1,
   "metroId": "chicago",
   "date": "2026-10-12",
-  "rows": [],
+  "rows": [
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-12",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:38:39.516Z",
+      "feelsLikeF": 78,
+      "tempF": 75.1,
+      "humidity": 69,
+      "windMph": 5.6,
+      "uvIndex": 0,
+      "precipProbability": 7,
+      "precipMm": 0.5,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 53
+    }
+  ],
   "days": [
     {
       "metroId": "chicago",

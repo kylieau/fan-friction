@@ -29,11 +29,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-espn-dream-401918297",
     "date": "2026-10-07",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 4.2,
+      "rating": 4.7,
       "friction": "Moderate",
       "why": "Braves vs. Dodgers 10 mi away, same hours."
     }
@@ -43,11 +43,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-espn-ksu-football-401871051",
     "date": "2026-10-07",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 4.2,
+      "rating": 4.7,
       "friction": "Heavy",
       "why": "Braves vs. Dodgers 11 mi away, same hours."
     },
@@ -62,11 +62,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-mlb-849822",
     "date": "2026-10-07",
     "start": "18:00",
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 4.2,
+      "rating": 4.7,
       "friction": "Moderate",
       "why": "Dream vs. Liberty 10 mi away, same hours."
     },
@@ -78,16 +78,84 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "atlanta",
-    "eventId": "2026-10-10-espn-atlanta-united-761850",
-    "date": "2026-10-10",
-    "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "eventId": "2026-10-07-tm-vvG1zZ_7MxKXo2",
+    "date": "2026-10-07",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.3,
+      "rating": 4.7,
       "friction": "Moderate",
-      "why": "Rain in the forecast at a 7:30 pm start."
+      "why": "Braves vs. Dodgers and Dream vs. Liberty 23 mi away, same hours."
+    },
+    "draw": {
+      "count": 7410
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-08-tm-vvG1zZ_8UEbzYQ",
+    "date": "2026-10-08",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 11970
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-09-tm-vvG1zZ_65jmHBe",
+    "date": "2026-10-09",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4.6,
+      "friction": "Low",
+      "why": "G-Eazy 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 6900
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-09-tm-vvG1zZ_axBx1u5",
+    "date": "2026-10-09",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4.6,
+      "friction": "Low",
+      "why": "Turnpike Troubadours 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 12000
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-10-espn-atlanta-united-761850",
+    "date": "2026-10-10",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.7,
+      "friction": "Moderate",
+      "why": "Georgia Tech vs. Duke 1.3 mi away, same hours."
     },
     "draw": {
       "count": 42218,
@@ -100,13 +168,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-gt-football-401858255",
     "date": "2026-10-10",
     "start": "15:30",
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.3,
+      "rating": 5.7,
       "friction": "Moderate",
-      "why": "Rain in the forecast at a 3:30 pm start."
+      "why": "Atlanta United vs. Cincinnati 1.3 mi away, same hours."
     },
     "draw": {
       "count": 37287,
@@ -116,16 +184,67 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "atlanta",
-    "eventId": "2026-10-11-espn-falcons-401872993",
-    "date": "2026-10-11",
-    "start": "20:20",
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "eventId": "2026-10-10-tm-vvG1zZ_6d_IGUK",
+    "date": "2026-10-10",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 5.7,
+      "friction": "Heavy",
+      "why": "Dermot Kennedy and Atlanta United vs. Cincinnati 8.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 11970
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-10-tm-vvG1zZ_6r-FIF6",
+    "date": "2026-10-10",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.7,
+      "friction": "Heavy",
+      "why": "Weezer 8.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 6900
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-10-tm-vvG1zZ_8kRi5L2",
+    "date": "2026-10-10",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.7,
+      "friction": "Moderate",
+      "why": "Atlanta United vs. Cincinnati and Georgia Tech vs. Duke 3.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 18920
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-11-espn-falcons-401872993",
+    "date": "2026-10-11",
+    "start": "20:20",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.4,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Fuerza Regida 3.5 mi away, same hours."
     },
     "draw": {
       "count": 70306,
@@ -135,10 +254,41 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "atlanta",
+    "eventId": "2026-10-11-tm-vvG1zZ_2QEaQGk",
+    "date": "2026-10-11",
+    "start": "18:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.4,
+      "friction": "Moderate",
+      "why": "Falcons vs. Ravens 21 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-11-tm-vvG1zZ_83jDpwc",
+    "date": "2026-10-11",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.4,
+      "friction": "Moderate",
+      "why": "Falcons vs. Ravens 3.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 18920
+    }
+  },
+  {
+    "metroId": "atlanta",
     "eventId": "2026-10-12-espn-hawks-401898402",
     "date": "2026-10-12",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -154,16 +304,166 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "atlanta",
-    "eventId": "2026-10-14-espn-dream-401918303",
-    "date": "2026-10-14",
-    "start": null,
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "eventId": "2026-10-13-tm-vvG1zZ_eQ2KN-d",
+    "date": "2026-10-13",
+    "start": "18:45",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 3.8,
+      "friction": "Low",
+      "why": "Phoebe Bridgers 21 mi away, same hours."
+    },
+    "draw": {
+      "count": 12000
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-13-tm-vvG1zZ_G68Ii_o",
+    "date": "2026-10-13",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Low",
+      "why": "Five Finger Death Punch 21 mi away, same hours."
+    },
+    "draw": {
+      "count": 11970
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-14-espn-dream-401918303",
+    "date": "2026-10-14",
+    "start": null,
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
       "friction": "Low",
       "why": "Nothing bigger was on."
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-14-tm-vvG1zZ_uQsKFm-",
+    "date": "2026-10-14",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "Dream vs. Liberty 24 mi away, back to back."
+    },
+    "draw": {
+      "count": 7410
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-15-tm-vvG1zZ_1D-1FDp",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Alabama 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 12000
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-15-tm-vvG1zZ_1RbHwoA",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Delta Sky360 Club Experience: Katseye and Dan + Shay next door, same hours."
+    },
+    "draw": {
+      "count": 11970
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-15-tm-vvG1zZ_8MZhDf8",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Heavy",
+      "why": "Dan + Shay 13 mi away, same hours."
+    },
+    "draw": {
+      "count": 7410
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-15-tm-vvG1zZ_oCmPBLY",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4,
+      "friction": "Moderate",
+      "why": "Dan + Shay and KATSEYE 21 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-16-tm-vvG1zZ_121qqS7",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "$UICIDEBOY$ 26 mi away, same hours."
+    },
+    "draw": {
+      "count": 7410
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-16-tm-vvG1zZ_6RsPgK8",
+    "date": "2026-10-16",
+    "start": "18:30",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "MercyMe 26 mi away, same hours."
+    },
+    "draw": {
+      "count": 18920
     }
   },
   {
@@ -171,13 +471,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-atlanta-united-761880",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 3,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Breaking Benjamin and Don Omar 21 mi away, same hours."
     },
     "draw": {
       "count": 45413,
@@ -187,10 +487,44 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "atlanta",
+    "eventId": "2026-10-17-tm-vvG1zZ_1UneLAE",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Moderate",
+      "why": "Atlanta United vs. Miami next door, same hours."
+    },
+    "draw": {
+      "count": 11970
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-17-tm-vvG1zZ_7mxwkQk",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Moderate",
+      "why": "Atlanta United vs. Miami 21 mi away, same hours."
+    },
+    "draw": {
+      "count": 12000
+    }
+  },
+  {
+    "metroId": "atlanta",
     "eventId": "2026-10-18-espn-falcons-401872999",
     "date": "2026-10-18",
     "start": "13:00",
-    "capturedAt": "2026-10-07T23:35:47.386Z",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -205,17 +539,85 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
-    "metroId": "bay-area",
-    "eventId": "2026-10-07-espn-valkyries-401918298",
-    "date": "2026-10-07",
-    "start": "18:30",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "metroId": "atlanta",
+    "eventId": "2026-10-19-tm-vvG1zZ_1p_clEl",
+    "date": "2026-10-19",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
       "rating": 1,
       "friction": "Low",
       "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 11970
+    }
+  },
+  {
+    "metroId": "atlanta",
+    "eventId": "2026-10-20-tm-vvG1zZ_FUW3nLL",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:08.522Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 11970
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-07-espn-valkyries-401918298",
+    "date": "2026-10-07",
+    "start": "18:30",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "The Neighbourhood 1.8 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-07-tm-G5vYZbgD1f1IU",
+    "date": "2026-10-07",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Valkyries vs. Aces 1.8 mi away, same hours."
+    },
+    "draw": {
+      "count": 8500
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-08-tm-G5vYZ_AxtLqKN",
+    "date": "2026-10-08",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 22500
     }
   },
   {
@@ -223,13 +625,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-09-espn-sjsu-football-401864519",
     "date": "2026-10-09",
     "start": "18:00",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.5,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Holy Priest 44 mi away, same hours."
     },
     "draw": {
       "count": 14898,
@@ -239,10 +641,27 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "bay-area",
+    "eventId": "2026-10-09-tm-G5vYZ_CQwHuk4",
+    "date": "2026-10-09",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "San José St vs. Wyoming 44 mi away, same hours."
+    },
+    "draw": {
+      "count": 8500
+    }
+  },
+  {
+    "metroId": "bay-area",
     "eventId": "2026-10-10-espn-cal-football-401858259",
     "date": "2026-10-10",
     "start": "12:30",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -261,7 +680,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-oakland-roots-401842280",
     "date": "2026-10-10",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "nearby",
@@ -278,7 +697,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-sharks-401892471",
     "date": "2026-10-10",
     "start": "13:00",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -297,7 +716,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-warriors-401898399",
     "date": "2026-10-10",
     "start": "17:30",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -313,10 +732,44 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "bay-area",
+    "eventId": "2026-10-11-tm-G5vYZ_6eBbDWb",
+    "date": "2026-10-11",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.7,
+      "friction": "Low",
+      "why": "Chayanne 28 mi away, same hours."
+    },
+    "draw": {
+      "count": 12500
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-11-tm-G5vYZ_k9d23or",
+    "date": "2026-10-11",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.7,
+      "friction": "Low",
+      "why": "TLC 28 mi away, same hours."
+    },
+    "draw": {
+      "count": 11115
+    }
+  },
+  {
+    "metroId": "bay-area",
     "eventId": "2026-10-13-espn-sharks-401892503",
     "date": "2026-10-13",
     "start": "20:00",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -335,7 +788,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-valkyries-401918304",
     "date": "2026-10-14",
     "start": null,
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -346,16 +799,64 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "bay-area",
-    "eventId": "2026-10-16-espn-warriors-401898409",
-    "date": "2026-10-16",
-    "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "eventId": "2026-10-15-tm-G5vYZ_6TyA5KT",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 2.5,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Disney On Ice presents Find Your Hero 10 mi away, same hours."
+    },
+    "draw": {
+      "count": 11115
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-15-tm-G5vYZ_aLvBhU9",
+    "date": "2026-10-15",
+    "start": "18:30",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.5,
+      "friction": "Low",
+      "why": "Young Miko 10 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-15-tm-G5vYZ_ki2fDlR",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.5,
+      "friction": "Moderate",
+      "why": "Disney On Ice presents Find Your Hero and Young Miko 12 mi away, same hours."
+    },
+    "draw": {
+      "count": 8500
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-16-espn-warriors-401898409",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
+      "friction": "Low",
+      "why": "Disney On Ice presents Find Your Hero 10 mi away, same hours."
     },
     "draw": {
       "count": 18064,
@@ -365,14 +866,45 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "bay-area",
-    "eventId": "2026-10-17-espn-cal-football-401858269",
-    "date": "2026-10-17",
-    "start": null,
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "eventId": "2026-10-16-tm-G5vYZ_aLvDDUV",
+    "date": "2026-10-16",
+    "start": "18:30",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.4,
+      "rating": 2.8,
+      "friction": "Low",
+      "why": "Warriors vs. Trail Blazers 10 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-16-tm-Z7r9jZ1A7JeGd",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
+      "friction": "Moderate",
+      "why": "Disney On Ice presents Find Your Hero and Warriors vs. Trail Blazers 12 mi away, same hours."
+    },
+    "draw": {
+      "count": 9405
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-17-espn-cal-football-401858269",
+    "date": "2026-10-17",
+    "start": null,
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4,
       "friction": "Low",
       "why": "Stanford vs. Elon 31 mi away, back to back."
     },
@@ -387,11 +919,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-earthquakes-761886",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.4,
+      "rating": 4,
       "friction": "Low",
       "why": "Stanford vs. Elon 14 mi away, same hours."
     },
@@ -406,11 +938,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-stanford-football-401858262",
     "date": "2026-10-17",
     "start": "16:30",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.4,
+      "rating": 4,
       "friction": "Moderate",
       "why": "California vs. Wake Forest 31 mi away, back to back."
     },
@@ -422,16 +954,30 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "bay-area",
-    "eventId": "2026-10-18-espn-bay-fc-401854025",
-    "date": "2026-10-18",
-    "start": "14:00",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "eventId": "2026-10-17-tm-G5vYZ_aLeZhMg",
+    "date": "2026-10-17",
+    "start": "11:00",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1.4,
+      "rating": 4,
       "friction": "Low",
-      "why": "86° feels-like at a 2:00 pm start, no roof."
+      "why": "Stanford vs. Elon and California vs. Wake Forest 22 mi away, back to back."
+    }
+  },
+  {
+    "metroId": "bay-area",
+    "eventId": "2026-10-18-espn-bay-fc-401854025",
+    "date": "2026-10-18",
+    "start": "14:00",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "Disney On Ice presents Find Your Hero 32 mi away, same hours."
     },
     "draw": {
       "count": 12529,
@@ -441,10 +987,24 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "bay-area",
+    "eventId": "2026-10-18-tm-G5vYZ_aLed5z0",
+    "date": "2026-10-18",
+    "start": "11:00",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "Bay FC vs. Portland 32 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "bay-area",
     "eventId": "2026-10-19-espn-sf-49ers-401873008",
     "date": "2026-10-19",
     "start": "17:15",
-    "capturedAt": "2026-10-07T23:35:47.636Z",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -459,11 +1019,28 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "bay-area",
+    "eventId": "2026-10-19-tm-G5vYZbS0uA9TW",
+    "date": "2026-10-19",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:17.212Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.1,
+      "friction": "Low",
+      "why": "49ers vs. Commanders 34 mi away, same hours."
+    },
+    "draw": {
+      "count": 11115
+    }
+  },
+  {
     "metroId": "chicago",
     "eventId": "2026-10-07-espn-bulls-401908939",
     "date": "2026-10-07",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -482,7 +1059,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-mlb-849833",
     "date": "2026-10-07",
     "start": "15:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -501,11 +1078,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-08-mlb-849832",
     "date": "2026-10-08",
     "start": "16:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 2.8,
       "friction": "Low",
       "why": "Nothing bigger was on."
     },
@@ -517,16 +1094,50 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "chicago",
-    "eventId": "2026-10-09-espn-bulls-401908940",
-    "date": "2026-10-09",
-    "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "eventId": "2026-10-08-tm-vv1A7Zko_GkdGJoO2",
+    "date": "2026-10-08",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 2.8,
+      "friction": "Moderate",
+      "why": "White Sox vs. Guardians 4.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 13395
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-08-tm-vvG18Z_1BHCnVF",
+    "date": "2026-10-08",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
+      "friction": "Moderate",
+      "why": "White Sox vs. Guardians 18 mi away, back to back."
+    },
+    "draw": {
+      "count": 10545
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-09-espn-bulls-401908940",
+    "date": "2026-10-09",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.5,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Zach Top 14 mi away, same hours."
     },
     "draw": {
       "count": 18704,
@@ -536,14 +1147,48 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "chicago",
-    "eventId": "2026-10-10-espn-blackhawks-401892476",
-    "date": "2026-10-10",
-    "start": "18:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "eventId": "2026-10-09-tm-vv1kvZv0PoGA2h9X8",
+    "date": "2026-10-09",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3,
+      "rating": 2.5,
+      "friction": "Heavy",
+      "why": "Zach Top 12 mi away, same hours."
+    },
+    "draw": {
+      "count": 5000
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-09-tm-vvG18Z_1XRAjum",
+    "date": "2026-10-09",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.5,
+      "friction": "Moderate",
+      "why": "Shaboozey and Bulls vs. Grizzlies 12 mi away, same hours."
+    },
+    "draw": {
+      "count": 10545
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-10-espn-blackhawks-401892476",
+    "date": "2026-10-10",
+    "start": "18:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.3,
       "friction": "Low",
       "why": "Fire vs. NYCFC and Northwestern vs. Ball State 3.2 mi away, back to back."
     },
@@ -558,11 +1203,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-chicago-fire-761846",
     "date": "2026-10-10",
     "start": "13:30",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3,
+      "rating": 3.3,
       "friction": "Low",
       "why": "Northwestern vs. Ball State 15 mi away, same hours."
     },
@@ -577,13 +1222,81 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-northwestern-football-401858482",
     "date": "2026-10-10",
     "start": "11:30",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3,
+      "rating": 3.3,
       "friction": "Low",
       "why": "Fire vs. NYCFC 15 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-10-tm-vv1A7Zk36GkdsK2Za",
+    "date": "2026-10-10",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.3,
+      "friction": "Moderate",
+      "why": "Blackhawks vs. Hurricanes 6.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 5000
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-11-tm-vv178Z_aGkYeTUOa",
+    "date": "2026-10-11",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "In This Moment 6.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 13395
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-11-tm-vvG18Z_5RmHt8s",
+    "date": "2026-10-11",
+    "start": "18:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Olivia Rodrigo 6.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 5000
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-12-tm-vv178Z_aGkMlEBGy",
+    "date": "2026-10-12",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 13395
     }
   },
   {
@@ -591,13 +1304,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-blackhawks-401892496",
     "date": "2026-10-13",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.4,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Jessie Ware 6.2 mi away, same hours."
     },
     "draw": {
       "count": 16549,
@@ -607,16 +1320,33 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "chicago",
-    "eventId": "2026-10-14-espn-chicago-fire-761869",
-    "date": "2026-10-14",
-    "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "eventId": "2026-10-13-tm-vv1A7ZkoyGkdaJQVG",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.4,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Blackhawks vs. Penguins 6.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 5000
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-14-espn-chicago-fire-761869",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "The Smashing Pumpkins 3.2 mi away, same hours."
     },
     "draw": {
       "count": 16130,
@@ -626,10 +1356,27 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "chicago",
+    "eventId": "2026-10-14-tm-vvG18Z_1DaaHeF",
+    "date": "2026-10-14",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "Fire vs. Philadelphia 3.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 13395
+    }
+  },
+  {
+    "metroId": "chicago",
     "eventId": "2026-10-15-espn-blackhawks-401892512",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -648,7 +1395,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-espn-bulls-401908943",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -667,13 +1414,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-blackhawks-401892528",
     "date": "2026-10-17",
     "start": "18:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 2.2,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Sweetest Day Comedy Jam 3.3 mi away, same hours."
     },
     "draw": {
       "count": 19093,
@@ -683,16 +1430,64 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "chicago",
+    "eventId": "2026-10-17-tm-vv17jZ_8GkmcT72q",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.2,
+      "friction": "Low",
+      "why": "Blackhawks vs. Dallas Stars 3.3 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-17-tm-vv1A7Zk3bGkeUJi-K",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.2,
+      "friction": "Moderate",
+      "why": "Blackhawks vs. Dallas Stars and Sweetest Day Comedy Jam 6.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 5000
+    }
+  },
+  {
+    "metroId": "chicago",
     "eventId": "2026-10-18-espn-chicago-stars-401854026",
     "date": "2026-10-18",
     "start": "18:00",
-    "capturedAt": "2026-10-07T23:35:47.867Z",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
       "rating": 1,
       "friction": "Low",
       "why": "Nothing bigger was on."
+    }
+  },
+  {
+    "metroId": "chicago",
+    "eventId": "2026-10-19-tm-vv178Z_kGkRLKIPC",
+    "date": "2026-10-19",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:40:23.722Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 13395
     }
   },
   {
@@ -1967,13 +2762,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-espn-ducks-401892456",
     "date": "2026-10-07",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
-      "friction": "Low",
-      "why": "Nothing bigger was on."
+      "rating": 4.3,
+      "friction": "Moderate",
+      "why": "Bruno Mars 28 mi away, same hours."
     },
     "draw": {
       "count": 16177,
@@ -1983,16 +2778,65 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
-    "eventId": "2026-10-08-espn-lakers-401898717",
-    "date": "2026-10-08",
+    "eventId": "2026-10-07-tm-vv170Z_6GkRNGSd7",
+    "date": "2026-10-07",
+    "start": "18:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 4.3
+    },
+    "draw": {
+      "count": 1850
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-07-tm-vv1AaZko9Gketiqv4",
+    "date": "2026-10-07",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 4.3,
+      "friction": "Moderate",
+      "why": "Bruno Mars next door, same hours."
+    },
+    "draw": {
+      "count": 10891
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-07-tm-vvG1IZ_eheo7is",
+    "date": "2026-10-07",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4.3,
       "friction": "Low",
       "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 70240
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-08-espn-lakers-401898717",
+    "date": "2026-10-08",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
+      "friction": "Low",
+      "why": "Empire of the Sun 6.3 mi away, same hours."
     },
     "draw": {
       "count": 18190,
@@ -2002,16 +2846,65 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
-    "eventId": "2026-10-09-mlb-849821",
-    "date": "2026-10-09",
-    "start": "17:00",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "eventId": "2026-10-08-tm-vv1AaZk8tGkd6ll1M",
+    "date": "2026-10-08",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 2.8
+    },
+    "draw": {
+      "count": 1850
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-08-tm-vv1k0Z_kJ9G7DM5E",
+    "date": "2026-10-08",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.7,
+      "rating": 2.8,
+      "friction": "Moderate",
+      "why": "Empire of the Sun and Lakers vs. Sacramento Kings 34 mi away, same hours."
+    },
+    "draw": {
+      "count": 10773
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-08-tm-vvG1iZ_k9N_4fq",
+    "date": "2026-10-08",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.8,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Lakers vs. Sacramento Kings and Chayanne 6.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 17500
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-09-mlb-849821",
+    "date": "2026-10-09",
+    "start": "17:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.9,
+      "friction": "Low",
+      "why": "Mac DeMarco 6.3 mi away, same hours."
     },
     "draw": {
       "count": 51632,
@@ -2021,16 +2914,116 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
-    "eventId": "2026-10-10-espn-lafc-761858",
-    "date": "2026-10-10",
-    "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "eventId": "2026-10-09-tm-vv170ZbgGkzetQ9Z",
+    "date": "2026-10-09",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
-      "friction": "Low",
-      "why": "Nothing bigger was on."
+      "rating": 5.9,
+      "friction": "Heavy",
+      "why": "Mac DeMarco and Sombr 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 10891
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-09-tm-vv1AaZk38Gkel76YA",
+    "date": "2026-10-09",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 5.9
+    },
+    "draw": {
+      "count": 1850
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-09-tm-vv1Fe8v0xoqvZ7u1ue",
+    "date": "2026-10-09",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.9,
+      "friction": "Heavy",
+      "why": "Mac DeMarco and The Neighbourhood 34 mi away, same hours."
+    },
+    "draw": {
+      "count": 10773
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-09-tm-vvG10Z_1DqhtZC",
+    "date": "2026-10-09",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.9,
+      "friction": "Heavy",
+      "why": "Dodgers vs. Braves and Mac DeMarco 4.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 5900
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-09-tm-vvG1iZ_7Kfj7Wq",
+    "date": "2026-10-09",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.9,
+      "friction": "Heavy",
+      "why": "The Neighbourhood and Sombr 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 17500
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-09-tm-vvG1IZ_GkDOGJ-",
+    "date": "2026-10-09",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.9,
+      "friction": "Heavy",
+      "why": "Dodgers vs. Braves and Mac DeMarco 10 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-10-espn-lafc-761858",
+    "date": "2026-10-10",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6,
+      "friction": "Moderate",
+      "why": "Jack Johnson 7.6 mi away, same hours."
     },
     "draw": {
       "count": 22098,
@@ -2040,14 +3033,128 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
-    "eventId": "2026-10-11-espn-chargers-401872989",
-    "date": "2026-10-11",
-    "start": "13:05",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "eventId": "2026-10-10-tm-vv16aZk3aZMZAuak1v",
+    "date": "2026-10-10",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 6,
+      "friction": "Heavy",
+      "why": "Jack Johnson 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 10891
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-10-tm-vv1AaZkfoGkdZT1iU",
+    "date": "2026-10-10",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 6
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-10-tm-vv1AaZkowGkdFeQU8",
+    "date": "2026-10-10",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6,
+      "friction": "Heavy",
+      "why": "LAFC vs. Vancouver and Jack Johnson 5.8 mi away, same hours."
+    },
+    "draw": {
+      "count": 10308
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-10-tm-vvG10Z_2TKvuzl",
+    "date": "2026-10-10",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6,
+      "friction": "Heavy",
+      "why": "LAFC vs. Vancouver and Jack Johnson 7.4 mi away, same hours."
+    },
+    "draw": {
+      "count": 5900
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-10-tm-vvG1IZ_G0rStYB",
+    "date": "2026-10-10",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6,
+      "friction": "Heavy",
+      "why": "LAFC vs. Vancouver and Jack Johnson 5.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-10-tm-vvG1iZbU81spCL",
+    "date": "2026-10-10",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6,
+      "friction": "Heavy",
+      "why": "Sombr 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 17500
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-10-tm-Z7r9jZ1A7-goJ",
+    "date": "2026-10-10",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6,
+      "friction": "Heavy",
+      "why": "LAFC vs. Vancouver and Jack Johnson 2.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 10779
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-11-espn-chargers-401872989",
+    "date": "2026-10-11",
+    "start": "13:05",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.7,
       "friction": "Low",
       "why": "Nothing bigger was on."
     },
@@ -2059,10 +3166,59 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
+    "eventId": "2026-10-11-tm-vv1ke8v0PdGA2NIXk",
+    "date": "2026-10-11",
+    "start": "19:20",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.7,
+      "friction": "Heavy",
+      "why": "Jack Johnson 2.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 5900
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-11-tm-vvG10Z_u5nPRGK",
+    "date": "2026-10-11",
+    "start": "18:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 2.7
+    },
+    "draw": {
+      "count": 1850
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-11-tm-vvG1iZbU81wkC0",
+    "date": "2026-10-11",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.7,
+      "friction": "Low",
+      "why": "Palace and Chargers vs. Broncos 2.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 17500
+    }
+  },
+  {
+    "metroId": "la",
     "eventId": "2026-10-12-espn-rams-401872994",
     "date": "2026-10-12",
     "start": "17:15",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -2078,10 +3234,25 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
+    "eventId": "2026-10-12-tm-vvG10Z_2Rimjss",
+    "date": "2026-10-12",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 2.8
+    },
+    "draw": {
+      "count": 1850
+    }
+  },
+  {
+    "metroId": "la",
     "eventId": "2026-10-13-espn-ducks-401892501",
     "date": "2026-10-13",
     "start": "18:45",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -2100,7 +3271,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-kings-401892502",
     "date": "2026-10-13",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -2119,7 +3290,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-clippers-401918011",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -2138,7 +3309,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-galaxy-761874",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -2157,7 +3328,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-lafc-761873",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -2173,14 +3344,104 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
-    "eventId": "2026-10-16-espn-ducks-401892518",
-    "date": "2026-10-16",
+    "eventId": "2026-10-14-tm-vvG10Z_uKts2xv",
+    "date": "2026-10-14",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 3.7
+    },
+    "draw": {
+      "count": 1500
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-15-tm-vv170Z_7GkMfFAZu",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 2.7,
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Cynthia Erivo: Let Me Sing To You 34 mi away, same hours."
+    },
+    "draw": {
+      "count": 10773
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-15-tm-vv170Z_aGkRSVNGb",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 2.3
+    },
+    "draw": {
+      "count": 1850
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-15-tm-vvG10Z_GwWe2IR",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 2.3
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-15-tm-vvG1iZ_1rd3dbK",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Phil Wickham 34 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-15-tm-vvG1IZ_82Z9hL3",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Moderate",
+      "why": "Cynthia Erivo: Let Me Sing To You and Phil Wickham 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-16-espn-ducks-401892518",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4.4,
       "friction": "Moderate",
       "why": "Lakers vs. Nuggets 28 mi away, same hours."
     },
@@ -2195,11 +3456,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-espn-lakers-401898719",
     "date": "2026-10-16",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 2.7,
+      "rating": 4.4,
       "friction": "Moderate",
       "why": "Ducks vs. Bruins 28 mi away, same hours."
     },
@@ -2211,16 +3472,50 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
-    "eventId": "2026-10-17-espn-galaxy-761887",
-    "date": "2026-10-17",
-    "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "eventId": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 2.7,
-      "friction": "Low",
-      "why": "Kings vs. Bruins 12 mi away, same hours."
+      "rating": 4.4,
+      "friction": "Moderate",
+      "why": "MILEY and Lakers vs. Nuggets 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 10891
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-16-tm-vvG1iZ_owcOPJ1",
+    "date": "2026-10-16",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4.4,
+      "friction": "Moderate",
+      "why": "Lakers vs. Nuggets and Ducks vs. Bruins 6.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 17500
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-17-espn-galaxy-761887",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6.8,
+      "friction": "Heavy",
+      "why": "Kings vs. Bruins and SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett 12 mi away, same hours."
     },
     "draw": {
       "count": 18312,
@@ -2233,13 +3528,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-kings-401892530",
     "date": "2026-10-17",
     "start": "18:00",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 2.7,
-      "friction": "Low",
-      "why": "Galaxy vs. San Diego FC 12 mi away, same hours."
+      "rating": 6.8,
+      "friction": "Heavy",
+      "why": "Galaxy vs. San Diego FC and SmartLess Live with Jason Bateman, Sean Hayes, & Will Arnett 12 mi away, same hours."
     },
     "draw": {
       "count": 18145,
@@ -2252,11 +3547,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-ucla-football-401858494",
     "date": "2026-10-17",
     "start": null,
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 2.7,
+      "rating": 6.8,
       "friction": "Moderate",
       "why": "90° feels-like, no roof."
     },
@@ -2268,14 +3563,111 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
-    "eventId": "2026-10-18-espn-rams-401873004",
-    "date": "2026-10-18",
-    "start": "13:05",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "eventId": "2026-10-17-tm-vv170Z_FGkM0q1JB",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.3,
+      "rating": 6.8,
+      "friction": "Extreme",
+      "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 18 mi away, same hours."
+    },
+    "draw": {
+      "count": 5900
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-17-tm-vv1AaZk3dGkdvrEc1",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6.8,
+      "friction": "Heavy",
+      "why": "Los Tigres del Norte 28 mi away, same hours."
+    },
+    "draw": {
+      "count": 10308
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-17-tm-vv1AaZkobGkeOgjs3",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6.8,
+      "friction": "Heavy",
+      "why": "Young Miko 28 mi away, same hours."
+    },
+    "draw": {
+      "count": 10773
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-17-tm-vvG10Z_1rn_GMv",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 6.8
+    },
+    "draw": {
+      "count": 1850
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-17-tm-vvG10Z_G9R7nPH",
+    "date": "2026-10-17",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6.8,
+      "friction": "Heavy",
+      "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 8.0 mi away, same hours."
+    },
+    "draw": {
+      "count": 10891
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-17-tm-vvG1iZ_F53Epiv",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6.8,
+      "friction": "Heavy",
+      "why": "Galaxy vs. San Diego FC and Kings vs. Bruins 18 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-18-espn-rams-401873004",
+    "date": "2026-10-18",
+    "start": "13:05",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
       "friction": "Moderate",
       "why": "90° feels-like at a 1:05 pm start, no roof."
     },
@@ -2287,15 +3679,164 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "la",
-    "eventId": "2026-10-21-espn-clippers-401909842",
-    "date": "2026-10-21",
-    "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "eventId": "2026-10-18-tm-vvG10Z_G9gehI7",
+    "date": "2026-10-18",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 2.8,
+      "rating": 3.8,
       "friction": "Moderate",
+      "why": "MILEY 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 10891
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-18-tm-vvG1iZ_owcx4Jh",
+    "date": "2026-10-18",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Moderate",
+      "why": "Charli xcx 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 17500
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-18-tm-Z7r9jZ1A70kAU",
+    "date": "2026-10-18",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Moderate",
+      "why": "MILEY and Charli xcx 6.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 10779
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-19-tm-vv1ke8v0r6GAuZNui",
+    "date": "2026-10-19",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Kacey Musgraves 5.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 5900
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-19-tm-Z7r9jZ1A70kAg",
+    "date": "2026-10-19",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Dermot Kennedy 5.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 10779
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-20-tm-vv170Z_FGkU1BKx2",
+    "date": "2026-10-20",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "MONSTA X 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 5900
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-20-tm-vv1AaZk3vGkdfJcBD",
+    "date": "2026-10-20",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Jessie Ware 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 10891
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-20-tm-vvG10Z_1hSZGrO",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 1850
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-20-tm-vvG10Z_u1J_FHJ",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 1.4
+    },
+    "draw": {
+      "count": 1500
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-21-espn-clippers-401909842",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.3,
+      "friction": "Heavy",
       "why": "Lakers vs. Warriors 8.0 mi away, same hours."
     },
     "draw": {
@@ -2309,11 +3850,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-espn-lakers-401909092",
     "date": "2026-10-21",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:45.895Z",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 2.8,
+      "rating": 5.3,
       "friction": "Moderate",
       "why": "Clippers vs. Sacramento Kings 8.0 mi away, same hours."
     },
@@ -2321,6 +3862,72 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "count": 18997,
       "low": 18997,
       "high": 18997
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-21-tm-vvG10Z_GpWro4Z",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 5.3
+    },
+    "draw": {
+      "count": 1850
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-21-tm-vvG10Z_uCyohlW",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.3,
+      "friction": "Heavy",
+      "why": "My Chemical Romance 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 10891
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-21-tm-vvG1IZ_aQlI5Ky",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.3,
+      "friction": "Heavy",
+      "why": "My Chemical Romance and Lakers vs. Warriors 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
+    }
+  },
+  {
+    "metroId": "la",
+    "eventId": "2026-10-21-tm-vvG1iZbS55MdJK",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:32.245Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 5.3,
+      "friction": "Moderate",
+      "why": "beabadoobee 11 mi away, same hours."
+    },
+    "draw": {
+      "count": 17500
     }
   },
   {
@@ -3000,13 +4607,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-mlb-849838",
     "date": "2026-10-07",
     "start": "20:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 2,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Harry Styles 6.5 mi away, same hours."
     },
     "draw": {
       "count": 46537,
@@ -3016,15 +4623,32 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "new-york",
-    "eventId": "2026-10-08-espn-islanders-401892462",
-    "date": "2026-10-08",
-    "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "eventId": "2026-10-07-tm-G5diZ_dfAnI1y",
+    "date": "2026-10-07",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 6.7,
-      "friction": "Heavy",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Yankees vs. Rays 6.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 14173
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-08-espn-islanders-401892462",
+    "date": "2026-10-08",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.3,
+      "friction": "Extreme",
       "why": "Yankees vs. Rays 13 mi away, same hours."
     },
     "draw": {
@@ -3038,11 +4662,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-08-espn-knicks-401906508",
     "date": "2026-10-08",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 6.7,
+      "rating": 7.3,
       "friction": "Extreme",
       "why": "Yankees vs. Rays 6.5 mi away, same hours."
     },
@@ -3057,12 +4681,12 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-08-espn-nets-401901823",
     "date": "2026-10-08",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 6.7,
-      "friction": "Heavy",
+      "rating": 7.3,
+      "friction": "Extreme",
       "why": "Yankees vs. Rays 10 mi away, same hours."
     },
     "draw": {
@@ -3076,11 +4700,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-08-mlb-849837",
     "date": "2026-10-08",
     "start": "20:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 6.7,
+      "rating": 7.3,
       "friction": "Moderate",
       "why": "Knicks vs. Wizards 6.5 mi away, same hours."
     },
@@ -3095,13 +4719,47 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-08-nycc",
     "date": "2026-10-08",
     "start": "10:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 6.7,
+      "rating": 7.3,
       "friction": "Low",
       "why": "Nothing bigger was on."
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-08-tm-G5dYZ_kma1OTc",
+    "date": "2026-10-08",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.3,
+      "friction": "Heavy",
+      "why": "Yankees vs. Rays and Knicks vs. Wizards 5.6 mi away, same hours."
+    },
+    "draw": {
+      "count": 5960
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-08-tm-vvG1FZ_1RM07i3",
+    "date": "2026-10-08",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.3,
+      "friction": "Heavy",
+      "why": "Yankees vs. Rays 14 mi away, same hours."
+    },
+    "draw": {
+      "count": 9083
     }
   },
   {
@@ -3109,13 +4767,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-09-espn-liberty-401918299",
     "date": "2026-10-09",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
-      "friction": "Low",
-      "why": "Nothing bigger was on."
+      "rating": 9.1,
+      "friction": "Moderate",
+      "why": "Harry Styles and 2026 New York Liberty Benchwarmers Pre-Game Pass (Watch Warm-Ups) 4.8 mi away, same hours."
     }
   },
   {
@@ -3123,13 +4781,78 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-09-nycc",
     "date": "2026-10-09",
     "start": "10:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 9.1,
       "friction": "Low",
       "why": "Nothing bigger was on."
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-09-tm-1AdZZ_KGkBbIgHH",
+    "date": "2026-10-09",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 9.1,
+      "friction": "Moderate",
+      "why": "Liberty vs. Dream and Harry Styles next door, same hours."
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-09-tm-G5diZ_dfAcz51",
+    "date": "2026-10-09",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 9.1,
+      "friction": "Moderate",
+      "why": "Liberty vs. Dream and 2026 New York Liberty Benchwarmers Pre-Game Pass (Watch Warm-Ups) 4.8 mi away, same hours."
+    },
+    "draw": {
+      "count": 14173
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-09-tm-G5dYZ_1NSz3fJ",
+    "date": "2026-10-09",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 9.1,
+      "friction": "Heavy",
+      "why": "Liberty vs. Dream and Harry Styles 5.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 5960
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-09-tm-Z7r9jZ1A7PI0I",
+    "date": "2026-10-09",
+    "start": "22:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 9.1,
+      "friction": "Heavy",
+      "why": "Liberty vs. Dream and Harry Styles 3.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
     }
   },
   {
@@ -3137,12 +4860,12 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-devils-401892470",
     "date": "2026-10-10",
     "start": "15:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.8,
-      "friction": "Moderate",
+      "rating": 7.5,
+      "friction": "Heavy",
       "why": "Islanders vs. Lightning 23 mi away, back to back."
     },
     "draw": {
@@ -3156,11 +4879,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-fordham-football-401868011",
     "date": "2026-10-10",
     "start": "15:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "nearby",
-      "rating": 3.8
+      "rating": 7.5
     },
     "draw": {
       "count": 4300,
@@ -3173,12 +4896,12 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-islanders-401892479",
     "date": "2026-10-10",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.8,
-      "friction": "Moderate",
+      "rating": 7.5,
+      "friction": "Heavy",
       "why": "Devils vs. Canucks 23 mi away, back to back."
     },
     "draw": {
@@ -3192,13 +4915,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-espn-red-bulls-761853",
     "date": "2026-10-10",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.8,
-      "friction": "Low",
-      "why": "Islanders vs. Lightning and Devils vs. Canucks 22 mi away, same hours."
+      "rating": 7.5,
+      "friction": "Heavy",
+      "why": "Harry Styles and Foster the People 8.3 mi away, same hours."
     },
     "draw": {
       "count": 19828,
@@ -3211,13 +4934,115 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-10-nycc",
     "date": "2026-10-10",
     "start": "10:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 3.8,
+      "rating": 7.5,
       "friction": "Low",
       "why": "Nothing bigger was on."
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-10-tm-17GZv0G61DlIaN2",
+    "date": "2026-10-10",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.5,
+      "friction": "Heavy",
+      "why": "50 Cent and Harry Styles 3.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 10571
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-10-tm-G5diZ_7rmEKO0",
+    "date": "2026-10-10",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.5,
+      "friction": "Extreme",
+      "why": "Harry Styles next door, same hours."
+    },
+    "draw": {
+      "count": 5600
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-10-tm-G5diZ_dfAVb5L",
+    "date": "2026-10-10",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.5,
+      "friction": "Heavy",
+      "why": "Red Bull NY vs. San Diego FC and CHRONO TRIGGER Orchestra Concert 8.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 14173
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-10-tm-G5dYZ_8CAw-5m",
+    "date": "2026-10-10",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.5,
+      "friction": "Extreme",
+      "why": "Harry Styles and Red Bull NY vs. San Diego FC 1.0 mi away, same hours."
+    },
+    "draw": {
+      "count": 5960
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-10-tm-k7vGF_aUb02cm",
+    "date": "2026-10-10",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.5,
+      "friction": "Heavy",
+      "why": "Harry Styles and Red Bull NY vs. San Diego FC 7.8 mi away, same hours."
+    },
+    "draw": {
+      "count": 14000
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-10-tm-Z7r9jZ1A7JFjw",
+    "date": "2026-10-10",
+    "start": "22:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.5,
+      "friction": "Extreme",
+      "why": "Don Omar 3.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 6000
     }
   },
   {
@@ -3225,11 +5050,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-espn-liberty-401918301",
     "date": "2026-10-11",
     "start": "14:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 5.5,
+      "rating": 6,
       "friction": "Moderate",
       "why": "Jets vs. Browns and New York Comic Con (day 4 of 4) 10 mi away, same hours."
     }
@@ -3239,11 +5064,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-espn-ny-jets-401872983",
     "date": "2026-10-11",
     "start": "13:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 5.5,
+      "rating": 6,
       "friction": "Low",
       "why": "New York Comic Con (day 4 of 4) 5.4 mi away, same hours."
     },
@@ -3258,11 +5083,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-espn-ny-rangers-401892483",
     "date": "2026-10-11",
     "start": "18:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 5.5,
+      "rating": 6,
       "friction": "Moderate",
       "why": "Jets vs. Browns and Liberty vs. Dream 6.1 mi away, back to back."
     },
@@ -3277,13 +5102,39 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-nycc",
     "date": "2026-10-11",
     "start": "10:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 5.5,
+      "rating": 6,
       "friction": "Low",
       "why": "Jets vs. Browns 5.4 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-11-tm-G5dYZ_oCCO-12",
+    "date": "2026-10-11",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 6
+    }
+  },
+  {
+    "metroId": "new-york",
+    "eventId": "2026-10-11-tm-Z7r9jZ1AAZ8FU",
+    "date": "2026-10-11",
+    "start": "16:00",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 6,
+      "friction": "Heavy",
+      "why": "Jets vs. Browns and Liberty vs. Dream 11 mi away, same hours."
     }
   },
   {
@@ -3291,7 +5142,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-espn-devils-401892486",
     "date": "2026-10-12",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3310,7 +5161,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-espn-knicks-401914124",
     "date": "2026-10-12",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3329,7 +5180,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-islanders-401892495",
     "date": "2026-10-13",
     "start": "19:45",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3348,7 +5199,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-ny-rangers-401892493",
     "date": "2026-10-13",
     "start": "19:15",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3367,7 +5218,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-espn-devils-401892511",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3386,7 +5237,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-espn-knicks-401908945",
     "date": "2026-10-15",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3405,7 +5256,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-fordham-football-401868012",
     "date": "2026-10-17",
     "start": "15:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "nearby",
@@ -3422,7 +5273,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-nycfc-761877",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3441,7 +5292,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-red-bulls-761878",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3460,7 +5311,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-stony-brook-football-401866666",
     "date": "2026-10-17",
     "start": "14:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3479,7 +5330,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-espn-ny-giants-401873000",
     "date": "2026-10-18",
     "start": "13:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3498,7 +5349,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-19-espn-ny-rangers-401892535",
     "date": "2026-10-19",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3517,7 +5368,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-espn-devils-401892540",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3536,7 +5387,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-espn-islanders-401892541",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3555,7 +5406,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-espn-knicks-401909089",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3574,7 +5425,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-espn-nets-401909836",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.755Z",
+    "capturedAt": "2026-10-07T23:39:54.808Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3887,7 +5738,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-mlb-849827",
     "date": "2026-10-07",
     "start": "19:00",
-    "capturedAt": "2026-10-07T23:35:46.340Z",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3903,10 +5754,166 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "san-diego",
+    "eventId": "2026-10-08-tm-Z7r9jZ1A7PEaY",
+    "date": "2026-10-08",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07"
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-09-tm-vvG1IZ_F5TB6n1",
+    "date": "2026-10-09",
+    "start": "12:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.4,
+      "friction": "Heavy",
+      "why": "97° feels-like at a 12:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 19950
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-09-tm-vvG1IZbgXbSgVe",
+    "date": "2026-10-09",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.4,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 20500
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-10-tm-vvG1IZ_F5TBMn9",
+    "date": "2026-10-10",
+    "start": "12:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.4,
+      "friction": "Moderate",
+      "why": "93° feels-like at a 12:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 19950
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-10-tm-vvG1IZbMExObDZ",
+    "date": "2026-10-10",
+    "start": "20:30",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.4,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 20500
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-10-tm-Z7r9jZ1A7PEas",
+    "date": "2026-10-10",
+    "start": "12:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "nearby",
+      "rating": 3.4
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-11-tm-vvG1IZ_1UoDk-X",
+    "date": "2026-10-11",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Taking Back Sunday 0.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 10000
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-11-tm-vvG1IZ_a3NPpAU",
+    "date": "2026-10-11",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "for KING & COUNTRY 0.5 mi away, same hours."
+    },
+    "draw": {
+      "count": 22720
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-11-tm-vvG1IZ_F5TDEnj",
+    "date": "2026-10-11",
+    "start": "12:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 19950
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-13-tm-vvG1IZ_FBVqMW5",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 22720
+    }
+  },
+  {
+    "metroId": "san-diego",
     "eventId": "2026-10-14-espn-san-diego-fc-761872",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.340Z",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3922,10 +5929,10 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "san-diego",
-    "eventId": "2026-10-17-espn-sdsu-football-401860904",
-    "date": "2026-10-17",
-    "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.340Z",
+    "eventId": "2026-10-15-tm-vvG1IZ_Cks8Id5",
+    "date": "2026-10-15",
+    "start": "18:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -3934,9 +5941,94 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "why": "Nothing bigger was on."
     },
     "draw": {
+      "count": 22720
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-16-tm-vvG1IZ_18W2pnn",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.1,
+      "friction": "Low",
+      "why": "G-Eazy 12 mi away, same hours."
+    },
+    "draw": {
+      "count": 10000
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-16-tm-vvG1IZ_ap-YIAd",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 7.1,
+      "friction": "Low",
+      "why": "MUNA 12 mi away, same hours."
+    },
+    "draw": {
+      "count": 20500
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-17-espn-sdsu-football-401860904",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "Bonnie Raitt 6.0 mi away, same hours."
+    },
+    "draw": {
       "count": 27122,
       "low": 27030,
       "high": 29215
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-17-tm-Z7r9jZ1A7-w7J",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.7,
+      "friction": "Low",
+      "why": "San Diego St vs. Fresno St 6.0 mi away, same hours."
+    },
+    "draw": {
+      "count": 10000
+    }
+  },
+  {
+    "metroId": "san-diego",
+    "eventId": "2026-10-21-tm-vvG1IZ_ampfFN9",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:44.837Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 22720
     }
   },
   {
@@ -4249,10 +6341,44 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "seattle",
+    "eventId": "2026-10-08-tm-vvG1HZ_2dnQmix",
+    "date": "2026-10-08",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Carín León 26 mi away, same hours."
+    },
+    "draw": {
+      "count": 5700
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-08-tm-vvG1HZ_eSaDa4L",
+    "date": "2026-10-08",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "YG 26 mi away, same hours."
+    },
+    "draw": {
+      "count": 9804
+    }
+  },
+  {
+    "metroId": "seattle",
     "eventId": "2026-10-09-espn-uw-football-401858487",
     "date": "2026-10-09",
     "start": "18:00",
-    "capturedAt": "2026-10-07T23:35:46.551Z",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -4268,10 +6394,143 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "seattle",
+    "eventId": "2026-10-09-tm-vvG1HZ_6RCaryz",
+    "date": "2026-10-09",
+    "start": null,
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4.2,
+      "friction": "Moderate",
+      "why": "Billy Strings next door, back to back."
+    },
+    "draw": {
+      "count": 5700
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-09-tm-vvG1HZ_6RGOXwD",
+    "date": "2026-10-09",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4.2,
+      "friction": "Moderate",
+      "why": "Washington Huskies vs. Iowa 23 mi away, same hours."
+    },
+    "draw": {
+      "count": 5700
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-09-tm-vvG1HZ_apipb8J",
+    "date": "2026-10-09",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 4.2,
+      "friction": "Moderate",
+      "why": "Washington Huskies vs. Iowa 3.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 9804
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-10-tm-vvG1HZ_6RG-rSZ",
+    "date": "2026-10-10",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.5,
+      "friction": "Moderate",
+      "why": "RUSH and Disney Worlds Collide Concert Tour 26 mi away, same hours."
+    },
+    "draw": {
+      "count": 5700
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-10-tm-vvG1HZ_aRdSCOm",
+    "date": "2026-10-10",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.5,
+      "friction": "Moderate",
+      "why": "RUSH and Disney Worlds Collide Concert Tour 2.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-10-tm-vvG1HZ_awvO4ij",
+    "date": "2026-10-10",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.5,
+      "friction": "Moderate",
+      "why": "RUSH and Disney Worlds Collide Concert Tour 2.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-10-tm-vvG1HZ_kRkZBZv",
+    "date": "2026-10-10",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.5,
+      "friction": "Moderate",
+      "why": "RUSH 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 9690
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-10-tm-vvG1HZbVHCjUxY",
+    "date": "2026-10-10",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 3.5,
+      "friction": "Moderate",
+      "why": "Disney Worlds Collide Concert Tour 27 mi away, same hours."
+    },
+    "draw": {
+      "count": 9804
+    }
+  },
+  {
+    "metroId": "seattle",
     "eventId": "2026-10-11-espn-seahawks-401872992",
     "date": "2026-10-11",
     "start": "13:25",
-    "capturedAt": "2026-10-07T23:35:46.551Z",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -4287,16 +6546,81 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "seattle",
-    "eventId": "2026-10-17-espn-sounders-761885",
-    "date": "2026-10-17",
+    "eventId": "2026-10-12-tm-vvG1HZbg96d7M9",
+    "date": "2026-10-12",
     "start": "19:30",
-    "capturedAt": "2026-10-07T23:35:46.551Z",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
       "rating": 1,
       "friction": "Low",
       "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 9804
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-13-tm-vvG1HZ_F1SXXOW",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
+    },
+    "draw": {
+      "count": 9804
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-15-tm-vvG1HZ_F51rx5F",
+    "date": "2026-10-15",
+    "start": null,
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "Doja Cat 27 mi away, back to back."
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-15-tm-vvG1HZbSlq8gOt",
+    "date": "2026-10-15",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "Tacoma Holiday Festival 27 mi away, back to back."
+    },
+    "draw": {
+      "count": 9804
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-17-espn-sounders-761885",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 1.8,
+      "friction": "Low",
+      "why": "MANÁ 2.1 mi away, same hours."
     },
     "draw": {
       "count": 32913,
@@ -4306,21 +6630,69 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "seattle",
-    "eventId": "2026-10-20-espn-kraken-401892547",
-    "date": "2026-10-20",
-    "start": "18:40",
-    "capturedAt": "2026-10-07T23:35:46.551Z",
+    "eventId": "2026-10-17-tm-vvG1HZbMEehMj0",
+    "date": "2026-10-17",
+    "start": "20:30",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 1,
+      "rating": 1.8,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "Sounders vs. CF Montréal 2.1 mi away, same hours."
+    },
+    "draw": {
+      "count": 9804
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-20-espn-kraken-401892547",
+    "date": "2026-10-20",
+    "start": "18:40",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.2,
+      "friction": "Low",
+      "why": "WAMU Theater Amplified Access: Rise Against (Not an Event Ticket) and Rise Against 2.2 mi away, same hours."
     },
     "draw": {
       "count": 17151,
       "low": 17151,
       "high": 17151
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-20-tm-vvG1HZ_ahVjxry",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.2,
+      "friction": "Moderate",
+      "why": "Kraken vs. Red Wings 2.2 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "seattle",
+    "eventId": "2026-10-20-tm-vvG1HZ_knDpajm",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-07T23:39:48.524Z",
+    "capturedOn": "2026-10-07",
+    "read": {
+      "method": "formula",
+      "rating": 2.2,
+      "friction": "Moderate",
+      "why": "Kraken vs. Red Wings 2.2 mi away, same hours."
+    },
+    "draw": {
+      "count": 7000
     }
   }
 ];

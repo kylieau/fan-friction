@@ -92,6 +92,24 @@
       "shortwave": 0,
       "cloudCover": 3,
       "code": 0
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "shoreline-amphitheatre",
+      "date": "2026-10-08",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:38:26.864Z",
+      "feelsLikeF": 64.9,
+      "tempF": 64.8,
+      "humidity": 70,
+      "windMph": 3.2,
+      "uvIndex": 0.1,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 1,
+      "code": 0
     }
   ],
   "days": [
@@ -114,6 +132,18 @@
       "basis": "forecast",
       "capturedAt": "2026-10-07T23:35:27.895Z",
       "feelsLikeHighF": 62.9,
+      "feelsLikeLowF": 59.4,
+      "code": 0,
+      "precipProbability": 1,
+      "precipMm": 0
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "city",
+      "date": "2026-10-08",
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T23:38:26.864Z",
+      "feelsLikeHighF": 63.2,
       "feelsLikeLowF": 59.4,
       "code": 0,
       "precipProbability": 1,

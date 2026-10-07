@@ -4,7 +4,7 @@
   "metroName": "Bay Area",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T23:35:47.636Z",
+  "capturedAt": "2026-10-07T23:40:17.212Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -26,6 +26,11 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 13
     }
   ],
   "events": [
@@ -57,6 +62,54 @@
       "sourceId": "espn"
     },
     {
+      "id": "2026-10-07-tm-G5vYZbgD1f1IU",
+      "metroId": "bay-area",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Neighbourhood",
+      "place": {
+        "type": "venue",
+        "venueId": "bill-graham-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Neighbourhood",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZbgD1f1IU",
+      "expectedDraw": {
+        "count": 8500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-08-tm-G5vYZ_AxtLqKN",
+      "metroId": "bay-area",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Mumford & Sons",
+      "place": {
+        "type": "venue",
+        "venueId": "shoreline-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Mumford & Sons",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_AxtLqKN",
+      "expectedDraw": {
+        "count": 22500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-09-espn-sjsu-football-401864519",
       "metroId": "bay-area",
       "date": "2026-10-09",
@@ -83,6 +136,30 @@
         "low": 13281,
         "high": 16872,
         "note": "Typical announced crowd here for a Friday: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-G5vYZ_CQwHuk4",
+      "metroId": "bay-area",
+      "date": "2026-10-09",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Holy Priest",
+      "place": {
+        "type": "venue",
+        "venueId": "bill-graham-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Holy Priest",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CQwHuk4",
+      "expectedDraw": {
+        "count": 8500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -201,6 +278,54 @@
       }
     },
     {
+      "id": "2026-10-11-tm-G5vYZ_k9d23or",
+      "metroId": "bay-area",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Chayanne",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Chayanne",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_k9d23or",
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-G5vYZ_6eBbDWb",
+      "metroId": "bay-area",
+      "date": "2026-10-11",
+      "start": "19:30",
+      "kind": "show",
+      "title": "TLC",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-pavilion-concord"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "TLC",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_6eBbDWb",
+      "expectedDraw": {
+        "count": 12500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-13-espn-sharks-401892503",
       "metroId": "bay-area",
       "date": "2026-10-13",
@@ -257,6 +382,100 @@
       "sourceId": "espn"
     },
     {
+      "id": "2026-10-15-tm-G5vYZ_aLvBhU9",
+      "metroId": "bay-area",
+      "date": "2026-10-15",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_aLvBhU9",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-15-tm-G5vYZ_6TyA5KT",
+      "metroId": "bay-area",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Young Miko",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Young Miko",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_6TyA5KT",
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-G5vYZ_ki2fDlR",
+      "metroId": "bay-area",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rawayana",
+      "place": {
+        "type": "venue",
+        "venueId": "bill-graham-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Rawayana",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_ki2fDlR",
+      "expectedDraw": {
+        "count": 8500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-G5vYZ_aLvDDUV",
+      "metroId": "bay-area",
+      "date": "2026-10-16",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_aLvDDUV",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
       "id": "2026-10-16-espn-warriors-401898409",
       "metroId": "bay-area",
       "date": "2026-10-16",
@@ -283,6 +502,53 @@
         "low": 18064,
         "high": 18064,
         "note": "Typical announced crowd here for a preseason game: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-Z7r9jZ1A7JeGd",
+      "metroId": "bay-area",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dom Dolla",
+      "place": {
+        "type": "venue",
+        "venueId": "cow-palace"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Dom Dolla",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JeGd",
+      "expectedDraw": {
+        "count": 9405,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-G5vYZ_aLeZhMg",
+      "metroId": "bay-area",
+      "date": "2026-10-17",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_aLeZhMg",
+      "occasionFacts": {
+        "run": 4
       }
     },
     {
@@ -370,6 +636,29 @@
       }
     },
     {
+      "id": "2026-10-18-tm-G5vYZ_aLed5z0",
+      "metroId": "bay-area",
+      "date": "2026-10-18",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_aLed5z0",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
       "id": "2026-10-18-espn-bay-fc-401854025",
       "metroId": "bay-area",
       "date": "2026-10-18",
@@ -426,6 +715,30 @@
         "high": 71513,
         "note": "Typical announced crowd here for a weeknight: 3 games, 2024–2025."
       }
+    },
+    {
+      "id": "2026-10-19-tm-G5vYZbS0uA9TW",
+      "metroId": "bay-area",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Doja Cat",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Doja Cat",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZbS0uA9TW",
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
     }
   ],
   "forecasts": [
@@ -434,10 +747,38 @@
       "date": "2026-10-07",
       "start": "18:30",
       "read": {
-        "rating": 1,
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "The Neighbourhood 1.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-07-tm-G5vYZbgD1f1IU",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Valkyries vs. Aces 1.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8500
+      }
+    },
+    {
+      "eventId": "2026-10-08-tm-G5vYZ_AxtLqKN",
+      "date": "2026-10-08",
+      "start": "19:30",
+      "read": {
+        "rating": 1.3,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 22500
       }
     },
     {
@@ -445,15 +786,29 @@
       "date": "2026-10-09",
       "start": "18:00",
       "read": {
-        "rating": 1,
+        "rating": 1.5,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Holy Priest 44 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
         "count": 14898,
         "low": 13281,
         "high": 16872
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-G5vYZ_CQwHuk4",
+      "date": "2026-10-09",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "San José St vs. Wyoming 44 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8500
       }
     },
     {
@@ -519,6 +874,34 @@
       }
     },
     {
+      "eventId": "2026-10-11-tm-G5vYZ_k9d23or",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "TLC 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-G5vYZ_6eBbDWb",
+      "date": "2026-10-11",
+      "start": "19:30",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "Chayanne 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12500
+      }
+    },
+    {
       "eventId": "2026-10-13-espn-sharks-401892503",
       "date": "2026-10-13",
       "start": "20:00",
@@ -546,13 +929,63 @@
       }
     },
     {
+      "eventId": "2026-10-15-tm-G5vYZ_aLvBhU9",
+      "date": "2026-10-15",
+      "start": "18:30",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Young Miko 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-G5vYZ_6TyA5KT",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Disney On Ice presents Find Your Hero 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-G5vYZ_ki2fDlR",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Disney On Ice presents Find Your Hero and Young Miko 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8500
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-G5vYZ_aLvDDUV",
+      "date": "2026-10-16",
+      "start": "18:30",
+      "read": {
+        "rating": 2.8,
+        "friction": "Low",
+        "why": "Warriors vs. Trail Blazers 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
       "eventId": "2026-10-16-espn-warriors-401898409",
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 2.8,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "Disney On Ice presents Find Your Hero 10 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -562,11 +995,36 @@
       }
     },
     {
+      "eventId": "2026-10-16-tm-Z7r9jZ1A7JeGd",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Disney On Ice presents Find Your Hero and Warriors vs. Trail Blazers 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9405
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-G5vYZ_aLeZhMg",
+      "date": "2026-10-17",
+      "start": "11:00",
+      "read": {
+        "rating": 4,
+        "friction": "Low",
+        "why": "Stanford vs. Elon and California vs. Wake Forest 22 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
       "eventId": "2026-10-17-espn-stanford-football-401858262",
       "date": "2026-10-17",
       "start": "16:30",
       "read": {
-        "rating": 3.4,
+        "rating": 4,
         "friction": "Moderate",
         "why": "California vs. Wake Forest 31 mi away, back to back.",
         "method": "formula"
@@ -582,7 +1040,7 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 3.4,
+        "rating": 4,
         "friction": "Low",
         "why": "Stanford vs. Elon 14 mi away, same hours.",
         "method": "formula"
@@ -598,7 +1056,7 @@
       "date": "2026-10-17",
       "start": null,
       "read": {
-        "rating": 3.4,
+        "rating": 4,
         "friction": "Low",
         "why": "Stanford vs. Elon 31 mi away, back to back.",
         "method": "formula"
@@ -610,13 +1068,24 @@
       }
     },
     {
+      "eventId": "2026-10-18-tm-G5vYZ_aLed5z0",
+      "date": "2026-10-18",
+      "start": "11:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Bay FC vs. Portland 32 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
       "eventId": "2026-10-18-espn-bay-fc-401854025",
       "date": "2026-10-18",
       "start": "14:00",
       "read": {
-        "rating": 1.4,
+        "rating": 1.7,
         "friction": "Low",
-        "why": "86° feels-like at a 2:00 pm start, no roof.",
+        "why": "Disney On Ice presents Find Your Hero 32 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -639,6 +1108,20 @@
         "count": 71337,
         "low": 71269,
         "high": 71513
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-G5vYZbS0uA9TW",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 3.1,
+        "friction": "Low",
+        "why": "49ers vs. Commanders 34 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
       }
     }
   ]
