@@ -239,14 +239,31 @@ export function roundEstimate(n: number): number {
 }
 
 // ---- This season's level and the opponent ratio (Oct 7, 2026) ----
-// Both were set before the first held-out check and are kept only in the leagues
-// where they beat the baseline (docs/expected-draw-check.md; Kylie, Oct 7).
+// Both were set before the first held-out check. Kylie, Oct 7: apply them in every
+// league. The check found no league-wide gain in some (NBA, NHL, NWSL), but an
+// effect can be real for one team or one visitor without moving a league's median,
+// and the shrinkage keeps a thin history close to no effect.
 
-/** Home games this season before its level applies. No NFL or college: too few home games. */
-export const SEASON_MIN: Record<string, number> = { MLB: 15, NBA: 10, NHL: 10, WNBA: 6, MLS: 6, NWSL: 5 };
-/** Leagues where the season level beat the baseline in the check. */
+/**
+ * Home games this season before its level applies: roughly a fifth to a third of the
+ * home slate. The NFL and college figures were added Oct 7 when the level went to every
+ * league (3 of ~8 NFL home games, 3 of ~6 college football, 5 of ~17 college basketball).
+ */
+export const SEASON_MIN: Record<string, number> = {
+  MLB: 15,
+  NBA: 10,
+  NHL: 10,
+  WNBA: 6,
+  MLS: 6,
+  NWSL: 5,
+  NFL: 3,
+  'College football': 3,
+  "College men's basketball": 5,
+  "College women's basketball": 5,
+};
+/** Leagues where the season level beat the baseline in the first check (kept for the record; the app no longer gates on it). */
 export const SEASON_LEVEL_LEAGUES = ['MLB', 'MLS', 'NWSL', 'WNBA', 'NBA', 'NHL'];
-/** Leagues where the opponent ratio beat the season level in the check. */
+/** Leagues where the opponent ratio beat the season level in the first check (kept for the record; the app no longer gates on it). */
 export const OPPONENT_LEAGUES = ['MLB', 'MLS', 'NFL', 'WNBA', "College men's basketball"];
 /** Opponent: past home meetings needed, in at least this many separate series (meetings within 4 days are one). */
 export const OPP_MIN_GAMES = 2;
@@ -282,9 +299,9 @@ function seriesCount(dates: string[]): number {
  * This season's level: the median of announced ÷ baseline over its regular-season
  * home games so far, once there are enough. Undefined before that.
  */
-export function seasonLevel(rows: readonly ExpectedDrawRow[], teamId: string, league: string | undefined, soFar: PastGame[], openers = openerDates(soFar), onlyWhereItWins = true): { level: number; games: number } | undefined {
-  const min = SEASON_MIN[league ?? ''];
-  if (!min || (onlyWhereItWins && !SEASON_LEVEL_LEAGUES.includes(league ?? ''))) return undefined;
+export function seasonLevel(rows: readonly ExpectedDrawRow[], teamId: string, league: string | undefined, soFar: PastGame[], openers = openerDates(soFar), onlyWhereItWins = false): { level: number; games: number } | undefined {
+  const min = SEASON_MIN[league ?? ''] ?? 5;
+  if (onlyWhereItWins && !SEASON_LEVEL_LEAGUES.includes(league ?? '')) return undefined;
   const ratios = soFar
     .filter((g) => !g.preseason && !g.postseason)
     .map((g) => ({ g, b: pickDraw(rows, { teamId, venueId: g.venueId, date: g.date, opener: openers.has(g.date) })?.count }))
@@ -298,7 +315,7 @@ export function seasonLevel(rows: readonly ExpectedDrawRow[], teamId: string, le
  * meetings in the window plus this season so far, newest weighted most, shrunk
  * toward no effect. Undefined when there are too few meetings.
  */
-export function opponentRatio(rows: readonly ExpectedDrawRow[], teamId: string, league: string | undefined, opponent: string, meetings: PastGame[], season: number, onlyWhereItWins = true): { ratio: number; games: number } | undefined {
+export function opponentRatio(rows: readonly ExpectedDrawRow[], teamId: string, league: string | undefined, opponent: string, meetings: PastGame[], season: number, onlyWhereItWins = false): { ratio: number; games: number } | undefined {
   if (onlyWhereItWins && !OPPONENT_LEAGUES.includes(league ?? '')) return undefined;
   const key = opponentKey(opponent);
   const scored = meetings
@@ -335,3 +352,27 @@ export interface OpponentRatioRow {
   ratio: number;
   games: number;
 }
+
+// ---- Shows (Oct 7, 2026; Kylie approved the default) ----
+/**
+ * A show with no better figure is sized at this share of the room: the median fill
+ * of the covered arenas that publish attendance and show counts (MSG, Kia Forum,
+ * Barclays, Prudential, Intuit Dome, YouTube Theater, Hollywood Bowl), from
+ * docs/concert-venue-figures-answer.md against the capacities in venues.ts.
+ */
+export const CONCERT_FILL = 0.57;
+
+/**
+ * Rung 4 of the show ladder (docs/expected-draw-concerts-research-answer.md): a room's
+ * own published average per reported show, Billboard's chart year Oct 1, 2024 – Sep 30,
+ * 2025, from docs/concert-venue-figures-answer.md. Reported figures; they count every
+ * ticketed non-team event Billboard received, so comedy and family shows are in the mix.
+ * Rooms whose figure was only an upper bound (YouTube Theater, Hollywood Bowl) take the default.
+ */
+export const VENUE_SHOW_AVERAGE: Record<string, { perShow: number; shows: number; basis: string }> = {
+  'madison-square-garden': { perShow: 14173, shows: 127, basis: 'Billboard, 1.8M over 127 shows, Oct 2024 – Sep 2025' },
+  'kia-forum': { perShow: 10891, shows: 101, basis: 'Billboard, 1.1M over 101 shows, Oct 2024 – Sep 2025' },
+  'barclays-center': { perShow: 10571, shows: 91, basis: 'Billboard, 962K over 91 shows, Oct 2024 – Sep 2025' },
+  'prudential-center': { perShow: 9083, shows: 108, basis: 'Billboard, 981K over 108 shows, Oct 2024 – Sep 2025' },
+  'intuit-dome': { perShow: 10308, shows: 39, basis: 'Billboard, 402K over 39 shows, Oct 2024 – Sep 2025' },
+};

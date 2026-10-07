@@ -4,7 +4,8 @@
 // estimate, and said so.
 
 import { EXPECTED_DRAWS, OPPONENT_RATIOS, SEASON_LEVELS } from './expectedDrawIndex';
-import { isHoliday, opponentKey, pickDraw, type ExpectedDrawRow } from './expectedDrawBuild';
+import { CONCERT_FILL, VENUE_SHOW_AVERAGE, isHoliday, opponentKey, pickDraw, type ExpectedDrawRow } from './expectedDrawBuild';
+import { VENUES, capacityOn } from './venues';
 import { cachedExpectedDraws } from './catalogCache';
 import type { CrowdEvent } from './types';
 
@@ -33,26 +34,50 @@ export function calibratedDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
     { teamId: event.teams.home, venueId: event.place.venueId, date: event.date, opener: event.homeOpener, preseason: event.preseason },
   );
   if (!row) return undefined;
-  // This season's level and the opponent's past draw here, only in the leagues where each
-  // beat the baseline in the held-out check (expectedDrawBuild.ts; Kylie, Oct 7).
+  // This season's level and the opponent's past draw here, in every league (Kylie, Oct 7).
+  // The note names neither: how estimates are made is explained once, behind the (i) on
+  // the event page, not per event (Kylie, Oct 7).
   const level = event.preseason ? undefined : SEASON_LEVELS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home);
   const away = event.teams.away;
   const opp = event.preseason || !away ? undefined : OPPONENT_RATIOS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.opponent === opponentKey(away));
   const k = (level?.level ?? 1) * (opp?.ratio ?? 1);
-  const adjusted = [level && 'this season so far', opp && 'this opponent'].filter(Boolean).join(' and ');
   return {
     count: Math.round(row.count * k),
     low: Math.round(row.low * k),
     high: Math.round(row.high * k),
-    note: `Typical announced crowd here for ${describe(row, event.date)}: ${row.games} games, ${row.seasons}.${adjusted ? ` Adjusted for ${adjusted}.` : ''}`,
+    note: `Typical announced crowd here for ${describe(row, event.date)}: ${row.games} games, ${row.seasons}.`,
   };
+}
+
+/**
+ * A show's size (Kylie, Oct 7: the 57% default is approved): the room's own published
+ * average when it has one, else CONCERT_FILL of its concert setup. Never above the room.
+ * Not sized: a listing that already carries a count or a sellout, anything that is not a
+ * concert (Arts & Theatre, Miscellaneous and the rest stay 'special'), or a room with no
+ * concert capacity on file. The friction gate still reads the room for shows (C1).
+ */
+export function showDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
+  if (event.kind !== 'show' || event.place.type !== 'venue') return undefined;
+  if (event.crowd.some((c) => c.count !== undefined || c.soldOut)) return undefined;
+  const venue = VENUES[event.place.venueId];
+  const cap = venue ? capacityOn(venue, event.date, 'concert') : undefined;
+  if (!cap) return undefined;
+  const own = VENUE_SHOW_AVERAGE[event.place.venueId];
+  if (own) return { count: Math.min(own.perShow, cap), note: `This room's average per reported show: ${own.basis}. An estimate.` };
+  // A ballpark or stadium with no concert figure on file falls back to its listed size.
+  // 57% of that is closer than a full house for both a stadium show and a park-stage
+  // show (Petco's Gallagher Square lists as "Petco Park"), but it is the weakest rung;
+  // the gap is in BACKLOG.md.
+  const hasConcertSetup = venue!.capacity.some((c) => c.setup === 'concert');
+  const of = hasConcertSetup ? 'the room' : "the building's listed size (no concert figure on file)";
+  return { count: Math.round(cap * CONCERT_FILL), note: `${Math.round(CONCERT_FILL * 100)}% of ${of}, the typical fill of arenas that publish their numbers. An estimate.` };
 }
 
 /** Each event with an expected draw: its own when seeded, else the calibrated one. Playoff games keep the building. */
 export function withExpectedDraws(events: CrowdEvent[]): CrowdEvent[] {
   return events.map((event) => {
     if (event.expectedDraw) return event;
-    const draw = calibratedDraw(event);
+    const draw = calibratedDraw(event) ?? showDraw(event);
     return draw ? { ...event, expectedDraw: draw } : event;
   });
 }

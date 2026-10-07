@@ -1729,8 +1729,28 @@ button {
 }
 
 .crowd-kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 13px;
   color: var(--ink2);
+}
+
+/* The (i) beside an estimated figure: opens "How estimates work". */
+.info-dot {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  background: none;
+  color: var(--ink2);
+  font: 600 11px/1 Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .beaten {

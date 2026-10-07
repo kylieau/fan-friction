@@ -4,6 +4,7 @@ import { DEFAULT_METRO, METROS } from '../config/metros';
 import { frictionLabel, frictionVerdictTitle, showFriction } from '../config/scoreLabels';
 import { feelsLikeLabel, isOpenAir, weatherForEvent, weatherGlyph, weatherRangeForEvent } from '../data';
 import {
+  CONCERT_FILL,
   drawSavedAhead,
   eventFacts,
   roundEstimate,
@@ -45,6 +46,7 @@ export function EventScreen() {
   const requestedMetro = params.get('metro');
   const [day, setDay] = useState<CityDate | null>(null);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const [showHow, setShowHow] = useState(false);
 
   useEffect(() => {
     let current = true;
@@ -175,14 +177,20 @@ export function EventScreen() {
           {me.count !== undefined ? (
             <>
               <span className="crowd-number">{fmt(me.count)}</span>
-              <span className="crowd-kind">People ({kind ? capital(kind) : kind})</span>
+              <span className="crowd-kind">
+                People ({kind ? capital(kind) : kind})
+                {kind === 'estimated' && <HowButton onOpen={() => setShowHow(true)} />}
+              </span>
             </>
           ) : me.soldOut ? (
             <span className="crowd-number small">Sold Out</span>
           ) : e.expectedDraw ? (
             <>
               <span className="crowd-number">~{fmt(roundEstimate(e.expectedDraw.count))}</span>
-              <span className="crowd-kind">People (Estimated)</span>
+              <span className="crowd-kind">
+                People (Estimated)
+                <HowButton onOpen={() => setShowHow(true)} />
+              </span>
             </>
           ) : (
             <span className="crowd-kind">No count found yet</span>
@@ -197,15 +205,15 @@ export function EventScreen() {
         {me.soldOut && me.count !== undefined && <span className="tag-soldout">SOLD OUT</span>}
         <DrawNote event={e} counted={me.count !== undefined || me.soldOut} />
       </section>
+      {showHow && <HowEstimatesWork onClose={() => setShowHow(false)} />}
 
       <WeatherDetail event={e} />
 
       <Beaten me={me} all={points} date={date} />
 
       <p className="source-note">
-        Counts are labeled by kind: announced, reported or estimated.{' '}
-        {e.audience.domain === 'sports' && 'Teams announce tickets sold or handed out, not people through the gates. '}
-        Run times are rough defaults and distances are straight-line.
+        Counts are labeled by kind: announced, reported or estimated. Run times are rough defaults and distances are
+        straight-line.
       </p>
 
       <ShareCard
@@ -231,19 +239,63 @@ export function EventScreen() {
 }
 
 /** Everything behind the feels-like number, open-air venues only. */
-/** Where an estimate came from, and its middle half. After the game, what was estimated ahead (Kylie, Oct 7, S4 and S5). */
+/**
+ * The estimate's middle half (Kylie, Oct 7, S4); after the game, what was estimated
+ * ahead (S5). No per-event basis sentence: how estimates are made is behind the (i),
+ * once, for all of them (Kylie, Oct 7).
+ */
 function DrawNote({ event, counted }: { event: CrowdEvent; counted: boolean }) {
-  const range = (d: { low?: number; high?: number }) =>
-    d.low != null && d.high != null && roundEstimate(d.low) !== roundEstimate(d.high)
-      ? ` Middle half ${fmt(roundEstimate(d.low))}–${fmt(roundEstimate(d.high))}.`
-      : '';
   if (!counted) {
-    if (!event.expectedDraw) return null;
-    return <p className="crowd-note">{event.expectedDraw.note}{range(event.expectedDraw)}</p>;
+    const d = event.expectedDraw;
+    if (!d || d.low == null || d.high == null || roundEstimate(d.low) === roundEstimate(d.high)) return null;
+    return <p className="crowd-note">Middle half {fmt(roundEstimate(d.low))}–{fmt(roundEstimate(d.high))}.</p>;
   }
   const saved = drawSavedAhead(event);
   if (!saved) return null;
   return <p className="crowd-note">Estimated ahead: ~{fmt(roundEstimate(saved.count))}.</p>;
+}
+
+/** The small (i) beside an estimated figure. */
+function HowButton({ onOpen }: { onOpen: () => void }) {
+  return (
+    <button type="button" className="info-dot" aria-label="How estimates work" onClick={onOpen}>
+      i
+    </button>
+  );
+}
+
+/** One explanation for every estimate in the app, games and shows alike (Kylie, Oct 7). */
+function HowEstimatesWork({ onClose }: { onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (ev: KeyboardEvent) => {
+      if (ev.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+  return (
+    <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="how-title" onClick={onClose}>
+      <div className="home-card" onClick={(ev) => ev.stopPropagation()}>
+        <h1 id="how-title" className="home-title">
+          How estimates work
+        </h1>
+        <p className="home-helper">
+          <strong>A game:</strong> the crowd this team typically announced in this building on this kind of night, over the last
+          two or three seasons, nudged by how the team is drawing this season and how this visitor has drawn here. Never above
+          the building.
+        </p>
+        <p className="home-helper">
+          <strong>A show:</strong> {Math.round(CONCERT_FILL * 100)}% of the room, the average fill of arenas that publish their
+          numbers; a venue's own published average when it has one.
+        </p>
+        <p className="home-helper">Teams announce tickets sold or handed out, not people through the gates.</p>
+        <p className="home-helper">An announced or reported count replaces the estimate when it lands.</p>
+        <button type="button" className="home-city" onClick={onClose}>
+          Done
+        </button>
+      </div>
+    </div>
+  );
 }
 
 function WeatherDetail({ event }: { event: CrowdEvent }) {

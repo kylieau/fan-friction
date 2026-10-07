@@ -86,3 +86,11 @@ Written down before the run. MLB only (its feed lists promotions); every source 
 - **A correction to the quick look shown to Kylie:** that table listed the top promo nights sorted by lift, so it showed the spikes and not the typical night. Its own summary lines said so: Hello Kitty / anime nights had a median lift of +5% (13 games), Ohtani items +0% (7), bobbleheads +1% (59). The big nights are real (Mariners Hello Kitty +30%), but a promotion's kind doesn't predict which nights spike, and many top nights (Dodgers, Padres) are already near full.
 - **Top teams:** no flag passes. The season level (the home team's crowds this season) and the opponent ratio (how a visitor has drawn here) already carry most of it.
 - **Next:** special-ticket nights go into the app when MLB listings carry promotions (the season starts in March, so nothing changes before then). Rerun the rest after the 2026 promotions are a full training season, i.e. when 2027 can be predicted.
+
+## Kylie's answers, third round (Oct 7)
+- **Season level and opponent ratio apply in every league** (Kylie, Oct 7): no league-wide gain in the last two or three seasons does not rule out an effect for one team or one visitor. The check's "app" column now equals the full rule. Cost the check shows: NBA 0.6% → 1.0% median off, NHL 1.6% → 2.1%, NWSL 15.1% → 19.5%; MLB, MLS, NFL, WNBA and men's college basketball gain.
+- **No "Adjusted for this opponent" on the event page** (Kylie, Oct 7). How estimates are made is explained once, behind an (i) beside the figure, for all estimates, not per event. The per-event basis sentence comes off the page too; the range stays (S4).
+- **Nightly job load:** she asked whether it is overloaded. Measured Oct 7: the whole run takes about 3 minutes; the new calibration step takes half a second. The calibration step is now allowed to fail without losing the night's snapshot.
+- **Promotion history:** she will research past promotional schedules herself. Prompt: `docs/promo-history-research-prompt.md`.
+- **Concerts: the 57% default is approved** (Kylie, Oct 7), and the (i) should say so. **Every estimated number gets the same (i)** (Kylie, Oct 7).
+- **City order after this work** (Kylie, Oct 7): **Atlanta, Bay Area, Chicago, Dallas–Fort Worth, Montreal.** Montreal moves from next to fifth.

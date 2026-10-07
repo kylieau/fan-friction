@@ -48,6 +48,8 @@ jobs:
       # Expected draws from the night's results: this season's level and the opponent
       # ratios move as games are played (docs/expected-draw-decisions-oct7.md).
       - name: Recompute expected draws
+        # A hiccup here must not lose the night's snapshot: the commit step still runs.
+        continue-on-error: true
         run: node scripts/attendance-calibrate.mjs
 
       # The catalog as shared truth (docs/catalog-proposal-oct6.md). Skips itself when the secrets are missing.

@@ -8442,6 +8442,97 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [];
 export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "bay",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "chicago",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "gotham",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "houston",
+    "ratio": 0.926,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "kansas-city",
+    "ratio": 0.917,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "louisville",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "north-carolina",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "orlando",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "portland",
+    "ratio": 1.046,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "san-diego",
+    "ratio": 1.036,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "seattle",
+    "ratio": 0.928,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "utah",
+    "ratio": 0.972,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "angel-city",
+    "opponent": "washington",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "la",
     "teamId": "angels",
     "opponent": "astros",
     "ratio": 1,
@@ -8624,6 +8715,209 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "76ers",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "bucks",
+    "ratio": 0.977,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "bulls",
+    "ratio": 0.978,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "cavaliers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "celtics",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "grizzlies",
+    "ratio": 0.99,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "hawks",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "heat",
+    "ratio": 0.981,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "hornets",
+    "ratio": 1.054,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "jazz",
+    "ratio": 0.957,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "kings",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "knicks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "lakers",
+    "ratio": 1.029,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "magic",
+    "ratio": 0.975,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "mavericks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "nets",
+    "ratio": 0.977,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "nuggets",
+    "ratio": 1.005,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "pacers",
+    "ratio": 0.947,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "pelicans",
+    "ratio": 0.962,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "pistons",
+    "ratio": 1.03,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "rockets",
+    "ratio": 1.006,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "spurs",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "suns",
+    "ratio": 1.006,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "thunder",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "timberwolves",
+    "ratio": 0.974,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "trail-blazers",
+    "ratio": 0.987,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "warriors",
+    "ratio": 1.042,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "clippers",
+    "opponent": "wizards",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "la",
     "teamId": "dodgers",
     "opponent": "angels",
     "ratio": 0.99,
@@ -8778,6 +9072,230 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "avalanche",
+    "ratio": 0.975,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "blackhawks",
+    "ratio": 1.012,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "blue-jackets",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "blues",
+    "ratio": 0.957,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "bruins",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "canadiens",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "canucks",
+    "ratio": 1.019,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "capitals",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "coyotes",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "devils",
+    "ratio": 1.032,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "flames",
+    "ratio": 0.979,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "flyers",
+    "ratio": 1.011,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "golden-knights",
+    "ratio": 0.975,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "hurricanes",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "islanders",
+    "ratio": 0.974,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "jets",
+    "ratio": 0.985,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "kings",
+    "ratio": 1.045,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "kraken",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "lightning",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "mammoth",
+    "ratio": 0.957,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "maple-leafs",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "oilers",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "panthers",
+    "ratio": 0.981,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "penguins",
+    "ratio": 1.024,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "predators",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "rangers",
+    "ratio": 1.009,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "red-wings",
+    "ratio": 0.947,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "sabres",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "senators",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "sharks",
+    "ratio": 1.021,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "stars",
+    "ratio": 0.972,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "ducks",
+    "opponent": "wild",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "la",
     "teamId": "galaxy",
     "opponent": "austin",
     "ratio": 1.004,
@@ -8866,6 +9384,223 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "vancouver",
     "ratio": 1,
     "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "avalanche",
+    "ratio": 1.016,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "blackhawks",
+    "ratio": 0.976,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "blue-jackets",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "blues",
+    "ratio": 0.917,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "bruins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "canadiens",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "canucks",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "capitals",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "devils",
+    "ratio": 0.967,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "ducks",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "flames",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "flyers",
+    "ratio": 1.018,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "golden-knights",
+    "ratio": 1.012,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "hurricanes",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "islanders",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "jets",
+    "ratio": 0.937,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "kraken",
+    "ratio": 1.004,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "lightning",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "maple-leafs",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "oilers",
+    "ratio": 0.988,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "panthers",
+    "ratio": 1.007,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "penguins",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "predators",
+    "ratio": 0.999,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "rangers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "red-wings",
+    "ratio": 1.009,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "sabres",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "senators",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "sharks",
+    "ratio": 1.01,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "stars",
+    "ratio": 0.961,
+    "games": 4
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "utah-hc",
+    "ratio": 0.964,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "kings",
+    "opponent": "wild",
+    "ratio": 0.984,
+    "games": 5
   },
   {
     "metroId": "la",
@@ -8960,6 +9695,209 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "76ers",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "bucks",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "bulls",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "cavaliers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "celtics",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "clippers",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "grizzlies",
+    "ratio": 0.977,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "hawks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "heat",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "hornets",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "jazz",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "kings",
+    "ratio": 0.991,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "knicks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "magic",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "mavericks",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "nets",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "nuggets",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "pacers",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "pelicans",
+    "ratio": 0.991,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "pistons",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "raptors",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "rockets",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "spurs",
+    "ratio": 0.989,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "suns",
+    "ratio": 0.998,
+    "games": 7
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "thunder",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "timberwolves",
+    "ratio": 0.996,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "trail-blazers",
+    "ratio": 0.987,
+    "games": 5
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "warriors",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "la",
+    "teamId": "lakers",
+    "opponent": "wizards",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "la",
     "teamId": "rams",
     "opponent": "49ers",
     "ratio": 1.008,
@@ -9037,6 +9975,27 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "la",
+    "teamId": "ucla-wbb",
+    "opponent": "cal-poly",
+    "ratio": 0.91,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-wbb",
+    "opponent": "usc",
+    "ratio": 1.182,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-football",
+    "opponent": "ucla",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "la",
     "teamId": "usc-mbb",
     "opponent": "california",
     "ratio": 1.043,
@@ -9069,6 +10028,783 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "washington-st",
     "ratio": 1.072,
     "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-wbb",
+    "opponent": "cal-poly",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "usc-wbb",
+    "opponent": "ucla",
+    "ratio": 1.221,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "columbia-football",
+    "opponent": "brown",
+    "ratio": 0.937,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "columbia-football",
+    "opponent": "georgetown",
+    "ratio": 0.969,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "columbia-football",
+    "opponent": "harvard",
+    "ratio": 0.978,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "columbia-football",
+    "opponent": "penn",
+    "ratio": 1.295,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "avalanche",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "blackhawks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "blue-jackets",
+    "ratio": 0.955,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "blues",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "bruins",
+    "ratio": 0.993,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "canadiens",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "canucks",
+    "ratio": 0.962,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "capitals",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "ducks",
+    "ratio": 0.97,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "flames",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "flyers",
+    "ratio": 1.003,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "golden-knights",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "hurricanes",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "islanders",
+    "ratio": 0.99,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "jets",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "kings",
+    "ratio": 0.98,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "kraken",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "lightning",
+    "ratio": 0.99,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "mammoth",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "maple-leafs",
+    "ratio": 1.004,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "oilers",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "panthers",
+    "ratio": 0.992,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "penguins",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "predators",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "rangers",
+    "ratio": 1.005,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "red-wings",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "sabres",
+    "ratio": 1.018,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "senators",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "sharks",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "stars",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "devils",
+    "opponent": "wild",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "fordham-football",
+    "opponent": "bucknell",
+    "ratio": 0.799,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "fordham-football",
+    "opponent": "holy-cross",
+    "ratio": 0.851,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "angel-city",
+    "ratio": 1.054,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "bay",
+    "ratio": 0.942,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "chicago",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "houston",
+    "ratio": 0.948,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "kansas-city",
+    "ratio": 1.029,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "louisville",
+    "ratio": 0.975,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "north-carolina",
+    "ratio": 0.903,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "orlando",
+    "ratio": 1.052,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "portland",
+    "ratio": 1.074,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "san-diego",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "seattle",
+    "ratio": 0.959,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "utah",
+    "ratio": 0.792,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "gotham",
+    "opponent": "washington",
+    "ratio": 1.079,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "avalanche",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "blackhawks",
+    "ratio": 1.024,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "blue-jackets",
+    "ratio": 0.957,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "blues",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "bruins",
+    "ratio": 1.025,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "canadiens",
+    "ratio": 0.971,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "canucks",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "capitals",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "devils",
+    "ratio": 1.047,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "ducks",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "flames",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "flyers",
+    "ratio": 1.003,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "golden-knights",
+    "ratio": 0.963,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "hurricanes",
+    "ratio": 0.96,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "jets",
+    "ratio": 0.956,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "kings",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "kraken",
+    "ratio": 1.028,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "lightning",
+    "ratio": 0.957,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "maple-leafs",
+    "ratio": 1.019,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "oilers",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "panthers",
+    "ratio": 0.979,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "penguins",
+    "ratio": 1.005,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "predators",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "rangers",
+    "ratio": 1.014,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "red-wings",
+    "ratio": 0.977,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "sabres",
+    "ratio": 1.012,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "senators",
+    "ratio": 0.992,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "sharks",
+    "ratio": 1.019,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "stars",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "islanders",
+    "opponent": "wild",
+    "ratio": 0.953,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "76ers",
+    "ratio": 0.993,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "bucks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "bulls",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "cavaliers",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "celtics",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "clippers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "grizzlies",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "hawks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "heat",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "hornets",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "jazz",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "lakers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "magic",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "mavericks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "nets",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "nuggets",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "pacers",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "pelicans",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "pistons",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "rockets",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "spurs",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "suns",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "thunder",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "timberwolves",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "trail-blazers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "warriors",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "knicks",
+    "opponent": "wizards",
+    "ratio": 0.999,
+    "games": 5
   },
   {
     "metroId": "new-york",
@@ -9310,6 +11046,209 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "76ers",
+    "ratio": 0.993,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "bucks",
+    "ratio": 0.993,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "bulls",
+    "ratio": 0.994,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "cavaliers",
+    "ratio": 0.997,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "celtics",
+    "ratio": 1.007,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "clippers",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "grizzlies",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "hawks",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "heat",
+    "ratio": 1.006,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "hornets",
+    "ratio": 0.988,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "jazz",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "kings",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "knicks",
+    "ratio": 1.014,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "lakers",
+    "ratio": 1.024,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "magic",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "mavericks",
+    "ratio": 0.981,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "nuggets",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "pacers",
+    "ratio": 0.985,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "pelicans",
+    "ratio": 0.978,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "pistons",
+    "ratio": 0.99,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "raptors",
+    "ratio": 0.985,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "rockets",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "spurs",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "suns",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "thunder",
+    "ratio": 1.011,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "timberwolves",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "trail-blazers",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "warriors",
+    "ratio": 1.028,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "nets",
+    "opponent": "wizards",
+    "ratio": 0.982,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
     "teamId": "ny-giants",
     "opponent": "commanders",
     "ratio": 0.996,
@@ -9368,6 +11307,216 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "ny-jets",
     "opponent": "patriots",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "avalanche",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "blackhawks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "blue-jackets",
+    "ratio": 0.992,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "blues",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "bruins",
+    "ratio": 0.992,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "canadiens",
+    "ratio": 0.993,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "canucks",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "capitals",
+    "ratio": 0.989,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "devils",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "ducks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "flames",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "flyers",
+    "ratio": 0.987,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "golden-knights",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "hurricanes",
+    "ratio": 0.981,
+    "games": 6
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "islanders",
+    "ratio": 1.001,
+    "games": 7
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "jets",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "kings",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "kraken",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "lightning",
+    "ratio": 0.991,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "maple-leafs",
+    "ratio": 0.995,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "oilers",
+    "ratio": 0.978,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "panthers",
+    "ratio": 0.995,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "penguins",
+    "ratio": 0.999,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "predators",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "red-wings",
+    "ratio": 0.989,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "sabres",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "senators",
+    "ratio": 0.993,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "sharks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "stars",
+    "ratio": 0.979,
+    "games": 3
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-rangers",
+    "opponent": "wild",
     "ratio": 0.996,
     "games": 3
   },
@@ -9744,6 +11893,20 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "new-york",
+    "teamId": "stony-brook-football",
+    "opponent": "fordham",
+    "ratio": 1.062,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stony-brook-football",
+    "opponent": "ualbany",
+    "ratio": 1.033,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
     "teamId": "yankees",
     "opponent": "angels",
     "ratio": 0.99,
@@ -10073,6 +12236,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "san-diego",
+    "teamId": "sdsu-football",
+    "opponent": "boise-st",
+    "ratio": 1.082,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
     "teamId": "sdsu-mbb",
     "opponent": "air-force",
     "ratio": 0.977,
@@ -10147,6 +12317,363 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "wyoming",
     "ratio": 0.981,
     "games": 3
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "opponent": "boise-st",
+    "ratio": 1.056,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "opponent": "cal-state-sm",
+    "ratio": 1.066,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "opponent": "colorado-st",
+    "ratio": 0.894,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "opponent": "fresno-st",
+    "ratio": 1.06,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "opponent": "nevada",
+    "ratio": 1.125,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "opponent": "new-mexico",
+    "ratio": 1.586,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "opponent": "san-jos-st",
+    "ratio": 0.959,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "sdsu-wbb",
+    "opponent": "unlv",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "angel-city",
+    "ratio": 1.035,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "bay",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "chicago",
+    "ratio": 1.066,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "gotham",
+    "ratio": 0.918,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "houston",
+    "ratio": 0.896,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "kansas-city",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "north-carolina",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "orlando",
+    "ratio": 0.918,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "portland",
+    "ratio": 0.89,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "seattle",
+    "ratio": 0.978,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "utah",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "wave",
+    "opponent": "washington",
+    "ratio": 0.933,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "avalanche",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "blackhawks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "blue-jackets",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "blues",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "bruins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "canadiens",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "canucks",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "capitals",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "devils",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "ducks",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "flames",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "flyers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "golden-knights",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "hurricanes",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "islanders",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "jets",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "lightning",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "maple-leafs",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "oilers",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "panthers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "penguins",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "predators",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "rangers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "red-wings",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "sabres",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "senators",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "sharks",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "stars",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "utah-hc",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "kraken",
+    "opponent": "wild",
+    "ratio": 1,
+    "games": 5
   },
   {
     "metroId": "seattle",
@@ -10304,6 +12831,97 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "angel-city",
+    "ratio": 1.076,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "bay",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "chicago",
+    "ratio": 1.021,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "gotham",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "houston",
+    "ratio": 0.946,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "kansas-city",
+    "ratio": 0.916,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "louisville",
+    "ratio": 1.066,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "north-carolina",
+    "ratio": 1.068,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "orlando",
+    "ratio": 0.964,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "portland",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "san-diego",
+    "ratio": 1.085,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "utah",
+    "ratio": 0.973,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "reign",
+    "opponent": "washington",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
     "teamId": "seahawks",
     "opponent": "49ers",
     "ratio": 1,
@@ -10423,6 +13041,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "seattle",
+    "teamId": "uw-football",
+    "opponent": "oregon",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
     "teamId": "uw-mbb",
     "opponent": "e-washington",
     "ratio": 0.935,
@@ -10461,6 +13086,20 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "uw-mbb",
     "opponent": "washington-st",
     "ratio": 1.027,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "opponent": "oregon",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "uw-wbb",
+    "opponent": "seattle-u",
+    "ratio": 1.106,
     "games": 2
   }
 ];
