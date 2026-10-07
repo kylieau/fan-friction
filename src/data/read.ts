@@ -79,8 +79,17 @@ export function drawSize(event: CrowdEvent): number | undefined {
   return draw ?? cap;
 }
 
+/**
+ * The size that decides whether an event feeds friction: a counted crowd; else an
+ * expected draw by the low end of its range (Kylie, Oct 7, S1: so a borderline
+ * game does not make a quiet night look busy); else the building.
+ */
 function knownSize(event: CrowdEvent): number | undefined {
-  return knownCrowdCount(event) ?? listedCapacity(event);
+  const counted = knownCrowdCount(event);
+  if (counted != null) return counted;
+  const draw = event.expectedDraw;
+  if (draw) return draw.low ?? draw.count;
+  return listedCapacity(event);
 }
 
 /**
