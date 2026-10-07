@@ -6,6 +6,9 @@ friction read (crowd fight and gridlock) stamped on each night. Not a game,
 social network, traffic app, or rewards program. Full reasoning:
 docs/direction.md. Read it before making any product decision.
 
+## Starting and ending a session (every tool)
+Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which tool it was last synced) and `BACKLOG.md` (parked work). When Kylie says "resume the handoff" or "sync the handoff", follow `handoff/resume.md` or `handoff/sync.md`. Claude Code and Cursor also have `/resume-handoff` and `/sync-handoff`, which only point at those files. Edit the procedure there, not in a tool's own folder.
+
 ## Firm rules
 - Never delete existing features. Reposition them to serve the log, and flag
   anything that doesn't fit.
@@ -37,7 +40,7 @@ docs/direction.md. Read it before making any product decision.
 New research prompts go in `docs/research-queue/`; save answers beside the prompt's name in `docs/`. When an answer is folded into the decisions, add a line `Status: closed, <where it went>, <date>` to it. The pre-commit hook then archives the pair and fixes links (`npm run docs:tidy` previews). Don't move docs by hand: links to them would break.
 
 ## Multiple agents
-This repo is worked on in both Claude Code and Cursor. Before changing shared
+This repo is worked on in Claude Code, Cursor and Codex. Before changing shared
 or foundational code, check for in-progress work and flag possible conflicts.
 (`git fetch` and look at `origin/cursor/*` branches and open PRs first.)
 
