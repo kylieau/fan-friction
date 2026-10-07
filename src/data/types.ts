@@ -227,6 +227,28 @@ export interface CrowdEvent {
  * for the day's games, never typed in). Evidence on the page; the read never
  * looks at it (the no-results rule).
  */
+/**
+ * One game on a team's own schedule, home or away, from the team's feed. The row
+ * points at the app's event when the home side plays in a covered city, so a
+ * fan can open that night; other games are listed only (no friction read yet).
+ * Times are in the team's home city, which is what its fans keep.
+ */
+export interface TeamGame {
+  id: string;
+  date: LocalDate;
+  start: LocalTime | null;
+  home: boolean;
+  neutral?: boolean;
+  opponent: string;
+  venueName?: string;
+  preseason?: boolean;
+  stakes?: Stakes;
+  /** Set once the game is final. */
+  score?: { us: number; them: number };
+  eventId?: string;
+  eventMetroId?: string;
+}
+
 export interface GameResult {
   eventId: string;
   metroId: string;

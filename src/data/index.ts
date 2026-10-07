@@ -334,6 +334,7 @@ export {
 } from './personalLog';
 export type { EntryEdit, LabeledFact, ManualNight, SyncStatus } from './personalLog';
 export { suggestEvent } from './suggestions';
+export { getTeamSchedule, scoreMark } from './teamSchedule';
 export { hoursAtGames, lengthLine, resultFor, scoreLine } from './results';
 export { COMPETITIONS, LEVELS, SPORTS_MORE, SPORTS_SHOWN, competitionNamed, competitionsFor, divisionChoices, levelPhrase } from './competitions';
 export type { Competition } from './competitions';

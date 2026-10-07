@@ -12,11 +12,13 @@ import {
   friendsEntries,
   getAccount,
   getPersonalLog,
+  getTeamSchedule,
   getUpcoming,
   isPlanned,
   kindLabel,
   nightsOf,
   ratingForEntry,
+  scoreMark,
   scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
@@ -27,6 +29,7 @@ import {
   type Entry,
   type Favorite,
   type FriendEntry,
+  type TeamGame,
   yourEntries,
 } from '../data';
 import { clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
@@ -55,6 +58,8 @@ export function FavoritePage() {
   const [upcoming, setUpcoming] = useState<CrowdEvent[]>([]);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [friends, setFriends] = useState<FriendEntry[]>([]);
+  // A team's own schedule, home and away; null when no feed carries the team.
+  const [schedule, setSchedule] = useState<TeamGame[] | null>(null);
 
   // The favorite: the saved one, or one built from the address (a page you haven't followed yet).
   const fav: Favorite = useMemo(() => {
@@ -90,6 +95,16 @@ export function FavoritePage() {
 
   useEffect(() => {
     let current = true;
+    setSchedule(null);
+    if (!fav.teamId) return;
+    getTeamSchedule(fav.teamId).then((rows) => current && setSchedule(rows));
+    return () => {
+      current = false;
+    };
+  }, [fav.teamId]);
+
+  useEffect(() => {
+    let current = true;
     if (!account) {
       setFriends([]);
       return;
@@ -106,6 +121,10 @@ export function FavoritePage() {
     return r !== null && (best === null || r > best) ? r : best;
   }, null);
   const friendCount = new Set(friends.map((f) => f.friend.id)).size;
+  const today = todayIn(metro);
+  const toCome = schedule?.filter((g) => g.date >= today && !g.score) ?? [];
+  const played = schedule?.filter((g) => g.score).reverse() ?? [];
+  const plannable = new Map(upcoming.map((e) => [e.id, e]));
 
   return (
     <div className="screen page">
@@ -138,41 +157,89 @@ export function FavoritePage() {
         {following ? 'Following' : 'Follow'}
       </button>
 
-      <section className="you-block" aria-labelledby="fav-upcoming">
-        <h2 id="fav-upcoming" className="you-heading">
-          Upcoming
-        </h2>
-        {upcoming.length === 0 ? (
-          <div className="card empty-card">
-            <div className="card-title">Nothing listed in {metro.name} yet.</div>
-          </div>
-        ) : (
-          <ul className="log-list">
-            {upcoming.map((event) => (
-              <li key={event.id} className="fav-li">
-                <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
-                  <Read rating={ratings.get(event.date) ?? null} />
-                  <span className="log-main">
-                    <span className="log-title">{listTitle(event)}</span>
-                    <span className="log-facts">
-                      {shortLocalDate(event.date)}
-                      {event.start ? ` · ${clockTime(event.start)}` : ''}
+      {fav.kind === 'team' ? (
+        <>
+          <section className="you-block" aria-labelledby="fav-schedule">
+            <h2 id="fav-schedule" className="you-heading">
+              Schedule
+            </h2>
+            {toCome.length === 0 ? (
+              <div className="card empty-card">
+                <div className="card-title">{schedule ? 'No games to come.' : 'No schedule yet.'}</div>
+              </div>
+            ) : (
+              <ul className="log-list">
+                {toCome.slice(0, UPCOMING).map((game) => (
+                  <li key={game.id} className="fav-li">
+                    <GameRow game={game} rating={game.eventId ? (ratings.get(game.date) ?? null) : null} />
+                    {game.eventId && plannable.has(game.eventId) && (
+                      <button
+                        type="button"
+                        className={`fav-toggle${isPlanned(game.eventId, log) ? ' on' : ''}`}
+                        aria-pressed={isPlanned(game.eventId, log)}
+                        onClick={() => togglePlan(plannable.get(game.eventId!)!)}
+                      >
+                        {isPlanned(game.eventId, log) ? 'Saved' : 'Save'}
+                      </button>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+
+          {played.length > 0 && (
+            <section className="you-block" aria-labelledby="fav-results">
+              <h2 id="fav-results" className="you-heading">
+                Results
+              </h2>
+              <ul className="log-list">
+                {played.slice(0, UPCOMING).map((game) => (
+                  <li key={game.id}>
+                    <GameRow game={game} rating={null} />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </>
+      ) : (
+        <section className="you-block" aria-labelledby="fav-upcoming">
+          <h2 id="fav-upcoming" className="you-heading">
+            Upcoming
+          </h2>
+          {upcoming.length === 0 ? (
+            <div className="card empty-card">
+              <div className="card-title">Nothing listed in {metro.name} yet.</div>
+            </div>
+          ) : (
+            <ul className="log-list">
+              {upcoming.map((event) => (
+                <li key={event.id} className="fav-li">
+                  <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
+                    <Read rating={ratings.get(event.date) ?? null} />
+                    <span className="log-main">
+                      <span className="log-title">{listTitle(event)}</span>
+                      <span className="log-facts">
+                        {shortLocalDate(event.date)}
+                        {event.start ? ` · ${clockTime(event.start)}` : ''}
+                      </span>
                     </span>
-                  </span>
-                </Link>
-                <button
-                  type="button"
-                  className={`fav-toggle${isPlanned(event.id, log) ? ' on' : ''}`}
-                  aria-pressed={isPlanned(event.id, log)}
-                  onClick={() => togglePlan(event)}
-                >
-                  {isPlanned(event.id, log) ? 'Saved' : 'Save'}
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
+                  </Link>
+                  <button
+                    type="button"
+                    className={`fav-toggle${isPlanned(event.id, log) ? ' on' : ''}`}
+                    aria-pressed={isPlanned(event.id, log)}
+                    onClick={() => togglePlan(event)}
+                  >
+                    {isPlanned(event.id, log) ? 'Saved' : 'Save'}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )}
 
       <section className="you-block" aria-labelledby="fav-mine">
         <h2 id="fav-mine" className="you-heading">
@@ -216,6 +283,39 @@ export function FavoritePage() {
       )}
     </div>
   );
+}
+
+/** "vs. Dodgers" at home, "at Dodgers" away; the score once it is final. Home games in a covered city open that night. */
+function GameRow({ game, rating }: { game: TeamGame; rating: number | null }) {
+  const title = `${game.home || game.neutral ? 'vs.' : 'at'} ${game.opponent}`;
+  const mark = scoreMark(game);
+  const facts = [
+    shortLocalDate(game.date) + (game.start && !mark ? ` · ${clockTime(game.start)}` : ''),
+    game.neutral ? game.venueName : !game.home ? game.venueName : undefined,
+    game.preseason ? 'Preseason' : game.stakes ? `${game.stakes.round}${game.stakes.game ? ` game ${game.stakes.game}` : ''}` : undefined,
+  ]
+    .filter(Boolean)
+    .join(' · ');
+  const body = (
+    <>
+      {game.eventId && <Read rating={rating} />}
+      <span className="log-main">
+        <span className="log-title">
+          {title}
+          {mark ? ` · ${mark}` : ''}
+        </span>
+        <span className="log-facts">{facts}</span>
+      </span>
+    </>
+  );
+  if (game.eventId && game.eventMetroId) {
+    return (
+      <Link to={datePath(game.date, game.eventMetroId, game.eventId)} className="log-row fav-row">
+        {body}
+      </Link>
+    );
+  }
+  return <div className="log-row fav-row">{body}</div>;
 }
 
 function EntryRow({ entry, rating }: { entry: Entry; rating: number | null }) {

@@ -3,7 +3,7 @@
 // so nothing shows twice. If the feed is down it quietly returns nothing.
 
 import { METROS } from '../../config/metros';
-import type { CrowdEvent, GameResult, LocalDate, LocalTime } from '../types';
+import type { CrowdEvent, GameResult, LocalDate, LocalTime, TeamGame } from '../types';
 import { mlbStakes } from './roundLabel';
 import type { EventSource } from './types';
 
@@ -38,7 +38,7 @@ interface MlbGame {
   gameNumber?: number;
   status: { detailedState: string; startTimeTBD?: boolean; abstractGameState?: string };
   linescore?: { currentInning?: number; scheduledInnings?: number };
-  venue?: { id: number };
+  venue?: { id: number; name?: string };
   teams: { home: MlbSide; away: MlbSide };
   broadcasts?: { name?: string; type?: string; homeAway?: string; isNational?: boolean }[];
 }
@@ -99,6 +99,55 @@ function toEvent(g: MlbGame, metroId: string): CrowdEvent | null {
     crowd: [],
     sourceId: 'mlb',
   };
+}
+
+/** One club's games this season, home and away, with scores where a game is final. */
+export async function mlbTeamSchedule(teamId: string): Promise<TeamGame[] | null> {
+  const entry = Object.entries(MLB_TEAMS).find(([, t]) => t.teamId === teamId);
+  if (!entry) return null;
+  const [mlbId, t] = entry;
+  const tz = METROS[t.metroId].timeZone;
+  const year = new Date().getFullYear();
+  const read = async (season: number): Promise<MlbGame[]> => {
+    const u = `${API}?sportId=1&teamId=${mlbId}&season=${season}&gameType=S,R,F,D,L,W&hydrate=linescore,team`;
+    const r = await fetch(u);
+    if (!r.ok) return [];
+    const j = (await r.json()) as { dates?: { games: MlbGame[] }[] };
+    return (j.dates ?? []).flatMap((d) => d.games);
+  };
+  let games = await read(year).catch(() => [] as MlbGame[]);
+  // January and February sit before the schedule is posted; show the season just ended.
+  if (games.length === 0) games = await read(year - 1).catch(() => [] as MlbGame[]);
+  if (games.length === 0) return null;
+  return games
+    .flatMap((g): TeamGame[] => {
+      if (/postponed|cancel/i.test(g.status.detailedState)) return [];
+      const home = g.teams.home.team.id === Number(mlbId);
+      const us = home ? g.teams.home : g.teams.away;
+      const them = home ? g.teams.away : g.teams.home;
+      // A playoff slot with no opponent yet.
+      if (!them.team.id) return [];
+      const { date, time } = localParts(g.gameDate, tz);
+      const final = g.status.abstractGameState === 'Final';
+      const hostVenue = MLB_VENUES[g.venue?.id ?? -1];
+      const host = MLB_TEAMS[g.teams.home.team.id ?? -1];
+      const stakes = mlbStakes(g);
+      return [
+        {
+          id: `mlb-${t.teamId}-${g.gamePk}`,
+          date,
+          start: g.status.startTimeTBD ? null : time,
+          home,
+          opponent: them.team.teamName ?? them.team.name,
+          ...(g.venue?.name ? { venueName: g.venue.name } : {}),
+          ...(g.gameType === 'S' ? { preseason: true } : {}),
+          ...(stakes ? { stakes } : {}),
+          ...(final && us.score != null && them.score != null ? { score: { us: us.score, them: them.score } } : {}),
+          ...(host && hostVenue ? { eventId: `${date}-mlb-${g.gamePk}`, eventMetroId: host.metroId } : {}),
+        },
+      ];
+    })
+    .sort((a, b) => (a.date + (a.start ?? '99:99')).localeCompare(b.date + (b.start ?? '99:99')));
 }
 
 const cache = new Map<string, Promise<CrowdEvent[]>>();

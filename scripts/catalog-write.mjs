@@ -71,6 +71,8 @@ try {
   const tmKey = process.env.TICKETMASTER_API_KEY;
   const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
   const { EXPECTED_DRAWS } = await server.ssrLoadModule('/src/data/expectedDrawIndex.ts');
+  const { TEAMS } = await server.ssrLoadModule('/src/data/teams.ts');
+  const { teamScheduleFromFeeds } = await server.ssrLoadModule('/src/data/teamSchedule.ts');
   for (const metroId of COVERED_METRO_IDS) {
   const now = new Date().toISOString();
   const counts = {};
@@ -172,6 +174,21 @@ try {
       if (error) throw new Error(`expected_draws: ${error.message}`);
     }
     counts.expected_draws = await upsert('expected_draws', draws, 'metro_id,team_id,venue_id,day_class,month');
+  }
+
+  // 6. Team schedules, home and away (supabase/migrations/0010). The feeds answer the
+  // job but not a phone's browser (ESPN sends no CORS header), so a team's page reads this.
+  const probeTeams = await db.from('team_schedules').select('team_id').limit(1);
+  if (probeTeams.error) {
+    console.warn(`team_schedules skipped: ${probeTeams.error.message}. Run supabase/migrations/0010_team_schedules.sql in Supabase.`);
+    counts.team_schedules = 0;
+  } else {
+    const teamRows = [];
+    for (const team of Object.values(TEAMS).filter((t) => t.metroId === metroId)) {
+      const games = await teamScheduleFromFeeds(team.id).catch(() => null);
+      if (games && games.length > 0) teamRows.push({ team_id: team.id, metro_id: metroId, captured_at: now, data: { games } });
+    }
+    counts.team_schedules = await upsert('team_schedules', teamRows, 'team_id');
   }
 
   const summary = Object.entries(counts).map(([t, n]) => `${t} ${n}`).join(', ');

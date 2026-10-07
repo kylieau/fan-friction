@@ -5,7 +5,7 @@
 
 import { METROS } from '../../config/metros';
 import { TEAMS } from '../teams';
-import type { CrowdEvent, GameResult, LocalDate, LocalTime } from '../types';
+import type { CrowdEvent, GameResult, LocalDate, LocalTime, TeamGame } from '../types';
 import { espnStakes, leagueFromPath, otherPostseason } from './roundLabel';
 import type { EventSource } from './types';
 
@@ -141,6 +141,7 @@ interface EspnGame {
   seasonType?: { name?: string; abbreviation?: string };
   competitions: {
     timeValid?: boolean;
+    neutralSite?: boolean;
     venue?: { fullName?: string };
     competitors: EspnSide[];
     status?: { type?: { name?: string; shortDetail?: string } };
@@ -382,6 +383,50 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
  */
 export function loadEspnSchedule(metroId: string): Promise<CrowdEvent[]> {
   return upcomingFor(metroId, true);
+}
+
+/** One team's games this season, home and away, with scores where a game is final. */
+export async function espnTeamSchedule(teamId: string): Promise<TeamGame[] | null> {
+  const t = ESPN_TEAMS.find((x) => x.teamId === teamId);
+  if (!t) return null;
+  const games = await scheduleFor(t, false);
+  if (games.length === 0) return null;
+  const tz = METROS[t.metroId].timeZone;
+  const seen = new Set<string>();
+  return games
+    .flatMap((g): TeamGame[] => {
+      const c = g.competitions[0];
+      const us = c?.competitors.find((x) => x.team.id === t.espnId);
+      const them = c?.competitors.find((x) => x.team.id !== t.espnId);
+      if (!c || !us || !them || seen.has(g.id)) return [];
+      seen.add(g.id);
+      if (/postponed|cancel/i.test(c.status?.type?.name ?? '')) return [];
+      const timeSet = g.timeValid !== false && c.timeValid !== false;
+      const { date, time } = timeSet ? localParts(g.date, tz) : { date: localParts(g.date, 'America/New_York').date, time: null };
+      const home = us.homeAway === 'home';
+      const final = /^STATUS_(FINAL|FULL_TIME)/.test(c.status?.type?.name ?? '');
+      const ours = scoreOf(us);
+      const theirs = scoreOf(them);
+      // The home side's own event in a city the app covers, so the row can open that night.
+      const hostId = home ? t.espnId : them.team.id;
+      const host = ESPN_TEAMS.find((x) => x.path === t.path && x.espnId === hostId);
+      const eventId = host && VENUE_BY_NAME[(c.venue?.fullName ?? '').toLowerCase()] ? `${date}-espn-${host.teamId}-${g.id}` : undefined;
+      return [
+        {
+          id: `espn-${t.teamId}-${g.id}`,
+          date,
+          start: time,
+          home,
+          ...(c.neutralSite ? { neutral: true } : {}),
+          opponent: nameOf(them.team),
+          ...(c.venue?.fullName ? { venueName: c.venue.fullName } : {}),
+          ...(g.seasonType?.abbreviation === 'pre' ? { preseason: true } : {}),
+          ...(final && ours != null && theirs != null ? { score: { us: ours, them: theirs } } : {}),
+          ...(eventId ? { eventId, eventMetroId: host!.metroId } : {}),
+        },
+      ];
+    })
+    .sort((a, b) => (a.date + (a.start ?? '99:99')).localeCompare(b.date + (b.start ?? '99:99')));
 }
 
 export const espnEvents: EventSource = {
