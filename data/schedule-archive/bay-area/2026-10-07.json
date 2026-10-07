@@ -4,7 +4,7 @@
   "metroName": "Bay Area",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-07T22:20:14.371Z",
+  "capturedAt": "2026-10-07T22:25:34.833Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -255,7 +255,7 @@
       "date": "2026-10-10",
       "start": "19:00",
       "kind": "game",
-      "title": "Oakland vs. San Antonio ",
+      "title": "Roots vs. San Antonio ",
       "place": {
         "type": "venue",
         "venueId": "oakland-coliseum"
@@ -878,7 +878,7 @@
       "date": "2026-10-11",
       "start": "19:00",
       "read": {
-        "rating": 1.6,
+        "rating": 3.7,
         "friction": "Low",
         "why": "TLC 28 mi away, same hours.",
         "method": "formula"
@@ -892,7 +892,7 @@
       "date": "2026-10-11",
       "start": "19:30",
       "read": {
-        "rating": 1.6,
+        "rating": 3.7,
         "friction": "Low",
         "why": "Chayanne 28 mi away, same hours.",
         "method": "formula"
