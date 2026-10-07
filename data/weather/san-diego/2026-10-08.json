@@ -92,6 +92,24 @@
       "shortwave": 5,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "city",
+      "date": "2026-10-08",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-07T00:11:51.387Z",
+      "feelsLikeF": 81.6,
+      "tempF": 80.2,
+      "humidity": 52,
+      "windMph": 5.7,
+      "uvIndex": 0.05,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 5,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
