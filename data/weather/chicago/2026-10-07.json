@@ -164,6 +164,42 @@
       "shortwave": 0,
       "cloudCover": 1,
       "code": 0
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "rate-field",
+      "date": "2026-10-07",
+      "hour": 18,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T00:42:38.027Z",
+      "feelsLikeF": 67.2,
+      "tempF": 65.5,
+      "humidity": 75,
+      "windMph": 1.7,
+      "uvIndex": 0.5,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 56,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-07",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T00:42:38.027Z",
+      "feelsLikeF": 63.3,
+      "tempF": 67.3,
+      "humidity": 44,
+      "windMph": 6.3,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
@@ -187,6 +223,18 @@
       "capturedAt": "2026-10-07T23:38:39.516Z",
       "feelsLikeHighF": 78.9,
       "feelsLikeLowF": 52.3,
+      "code": 0,
+      "precipProbability": 1,
+      "precipMm": 0
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-07",
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T00:42:38.027Z",
+      "feelsLikeHighF": 78.9,
+      "feelsLikeLowF": 52.5,
       "code": 0,
       "precipProbability": 1,
       "precipMm": 0
