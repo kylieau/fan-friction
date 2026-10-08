@@ -78,6 +78,78 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "18:11"
   },
   {
+    "eventId": "2026-10-07-espn-dream-401918297",
+    "metroId": "atlanta",
+    "date": "2026-10-07",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "state-farm-arena",
+    "homeTeamId": "dream",
+    "home": {
+      "name": "Dream",
+      "score": 101
+    },
+    "away": {
+      "name": "Liberty",
+      "score": 98
+    },
+    "attendance": 9574,
+    "note": "OT",
+    "capturedAt": "2026-10-08T02:49:22.905Z",
+    "duration": {
+      "minutes": 146,
+      "kind": "estimated"
+    },
+    "startedAt": "19:34"
+  },
+  {
+    "eventId": "2026-10-07-espn-ksu-football-401871051",
+    "metroId": "atlanta",
+    "date": "2026-10-07",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "fifth-third-stadium",
+    "homeTeamId": "ksu-football",
+    "home": {
+      "name": "Kennesaw St",
+      "score": 26
+    },
+    "away": {
+      "name": "Jax State",
+      "score": 27
+    },
+    "capturedAt": "2026-10-08T02:49:22.905Z",
+    "duration": {
+      "minutes": 217,
+      "kind": "estimated"
+    },
+    "startedAt": "16:00"
+  },
+  {
+    "eventId": "2026-10-07-mlb-849822",
+    "metroId": "atlanta",
+    "date": "2026-10-07",
+    "sourceId": "mlb",
+    "status": "final",
+    "venueId": "truist-park",
+    "homeTeamId": "braves",
+    "home": {
+      "name": "Braves",
+      "score": 1
+    },
+    "away": {
+      "name": "Dodgers",
+      "score": 4
+    },
+    "capturedAt": "2026-10-08T02:49:23.194Z",
+    "attendance": 41173,
+    "duration": {
+      "minutes": 174,
+      "kind": "official"
+    },
+    "startedAt": "18:09"
+  },
+  {
     "eventId": "2026-10-04-espn-sf-49ers-401872975",
     "metroId": "bay-area",
     "date": "2026-10-04",
@@ -234,6 +306,30 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-07T23:35:50.600Z"
   },
   {
+    "eventId": "2026-10-07-espn-bulls-401908939",
+    "metroId": "chicago",
+    "date": "2026-10-07",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "united-center",
+    "homeTeamId": "bulls",
+    "home": {
+      "name": "Bulls",
+      "score": 124
+    },
+    "away": {
+      "name": "Suns",
+      "score": 117
+    },
+    "attendance": 16362,
+    "capturedAt": "2026-10-08T02:49:24.141Z",
+    "duration": {
+      "minutes": 154,
+      "kind": "estimated"
+    },
+    "startedAt": "17:11"
+  },
+  {
     "eventId": "2026-10-07-mlb-849833",
     "metroId": "chicago",
     "date": "2026-10-07",
@@ -249,7 +345,7 @@ export const GAME_RESULTS: GameResult[] = [
       "name": "Guardians",
       "score": 9
     },
-    "capturedAt": "2026-10-07T23:35:50.782Z",
+    "capturedAt": "2026-10-08T02:49:24.426Z",
     "attendance": 40590,
     "duration": {
       "minutes": 196,
@@ -401,6 +497,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:21"
+  },
+  {
+    "eventId": "2026-10-06-espn-canadiens-401891815",
+    "metroId": "montreal",
+    "date": "2026-10-06",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "bell-centre",
+    "homeTeamId": "canadiens",
+    "home": {
+      "name": "Montreal Canadiens",
+      "score": 4
+    },
+    "away": {
+      "name": "Hurricanes",
+      "score": 6
+    },
+    "attendance": 20962,
+    "capturedAt": "2026-10-08T02:49:25.322Z",
+    "duration": {
+      "minutes": 156,
+      "kind": "estimated"
+    },
+    "startedAt": "16:17"
   },
   {
     "eventId": "2026-10-03-espn-columbia-football-401867819",

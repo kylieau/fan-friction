@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "metroName": "Montreal",
+  "timeZone": "America/Toronto",
+  "capturedOn": "2026-10-07",
+  "capturedAt": "2026-10-08T02:49:15.904Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-07",
+    "through": "2026-10-21"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 6
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-08-espn-canadiens-401892459",
+      "metroId": "montreal",
+      "date": "2026-10-08",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Montreal Canadiens vs. Predators",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "canadiens",
+        "away": "predators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21063,
+        "low": 21063,
+        "high": 21063,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-10-espn-canadiens-401892473",
+      "metroId": "montreal",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Montreal Canadiens vs. Red Wings",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "canadiens",
+        "away": "red-wings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21063,
+        "low": 21063,
+        "high": 21063,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-13-espn-canadiens-401892490",
+      "metroId": "montreal",
+      "date": "2026-10-13",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Montreal Canadiens vs. Sabres",
+      "broadcast": "MSGB",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "canadiens",
+        "away": "sabres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21042,
+        "low": 21042,
+        "high": 21042,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-cf-montreal-761864",
+      "metroId": "montreal",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "CF Montréal vs. Atlanta United",
+      "place": {
+        "type": "venue",
+        "venueId": "stade-saputo"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "cf-montreal",
+        "away": "atlanta-united"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17830,
+        "low": 15784,
+        "high": 19619,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "note": "Typical announced crowd here for a weeknight: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-canadiens-401892524",
+      "metroId": "montreal",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Montreal Canadiens vs. Sabres",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "canadiens",
+        "away": "sabres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21042,
+        "low": 21042,
+        "high": 21042,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-20-espn-canadiens-401892539",
+      "metroId": "montreal",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Montreal Canadiens vs. Sharks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "canadiens",
+        "away": "sharks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21063,
+        "low": 21063,
+        "high": 21063,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-08-espn-canadiens-401892459",
+      "date": "2026-10-08",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21063,
+        "low": 21063,
+        "high": 21063
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-canadiens-401892473",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21063,
+        "low": 21063,
+        "high": 21063
+      }
+    },
+    {
+      "eventId": "2026-10-13-espn-canadiens-401892490",
+      "date": "2026-10-13",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21042,
+        "low": 21042,
+        "high": 21042
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-cf-montreal-761864",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17830,
+        "low": 15784,
+        "high": 19619
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-canadiens-401892524",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21042,
+        "low": 21042,
+        "high": 21042
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-canadiens-401892539",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21063,
+        "low": 21063,
+        "high": 21063
+      }
+    }
+  ]
+}

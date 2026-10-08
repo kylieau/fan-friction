@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-10-06",
+  "results": [
+    {
+      "eventId": "2026-10-06-espn-canadiens-401891815",
+      "metroId": "montreal",
+      "date": "2026-10-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Montreal Canadiens",
+        "score": 4
+      },
+      "away": {
+        "name": "Hurricanes",
+        "score": 6
+      },
+      "attendance": 20962,
+      "capturedAt": "2026-10-08T02:49:25.322Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "16:17"
+    }
+  ]
+}

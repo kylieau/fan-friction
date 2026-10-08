@@ -200,6 +200,24 @@
       "shortwave": 0,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-07",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T02:48:41.227Z",
+      "feelsLikeF": 65.6,
+      "tempF": 66.2,
+      "humidity": 56,
+      "windMph": 1.4,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [

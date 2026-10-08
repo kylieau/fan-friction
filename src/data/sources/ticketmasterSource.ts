@@ -73,7 +73,8 @@ function isAddOn(name: string): boolean {
  */
 const SPORTS_FROM_TICKETMASTER = new Set([
   'dickies-arena', 'will-rogers-coliseum', 'cutx-event-center', 'grand-prairie-stadium', 'mansfield-stadium', 'cotton-bowl', 'toyota-stadium', 'comerica-center', 'texas-motor-speedway',
-  'allstate-arena', 'now-arena', 'chicagoland-speedway',
+  // The Dogs and Boomers (American Association, Frontier League) have no schedule in MLB's partner-league feed, so their parks are swept too.
+  'allstate-arena', 'now-arena', 'chicagoland-speedway', 'impact-field', 'wintrust-field',
   'toyota-arena', 'pechanga-arena', 'acrisure-arena',
   'climate-pledge-arena', 'angel-of-the-winds-arena', 'accesso-showare-center',
   'gas-south-arena', 'echopark-speedway',

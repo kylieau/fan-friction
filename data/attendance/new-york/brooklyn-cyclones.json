@@ -1,0 +1,6064 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "teamId": "brooklyn-cyclones",
+  "collectedOn": "2026-10-08",
+  "games": [
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "13:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 1992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 1245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2864,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-04-18",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-04-19",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 727,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-04-20",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 872,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 970,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 1676,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "14:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 1909,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "14:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 4484,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "18:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 1449,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "11:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 6483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "19:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 2248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "19:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 2069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "18:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 2856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "14:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 3499,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "18:00",
+      "opponent": "Drive",
+      "venueId": "maimonides-park",
+      "attendance": 1952,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "11:00",
+      "opponent": "Drive",
+      "venueId": "maimonides-park",
+      "attendance": 6397,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": null,
+      "opponent": "Drive",
+      "venueId": "maimonides-park",
+      "attendance": 4053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:00",
+      "opponent": "Drive",
+      "venueId": "maimonides-park",
+      "attendance": 3222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": null,
+      "opponent": "Drive",
+      "venueId": "maimonides-park",
+      "attendance": 4053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "14:00",
+      "opponent": "Drive",
+      "venueId": "maimonides-park",
+      "attendance": 4698,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1379,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2623,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1481,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 4742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "18:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2541,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "14:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 4054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 4071,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 1378,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 4078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "18:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-03",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "19:00",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 3814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "18:00",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 3242,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": "16:00",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 2841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 2765,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "12:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 2360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-27",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3485,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "18:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 2953,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "12:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 2826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 1915,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 4245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "18:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 4075,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "14:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 3712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-17",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2210,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2676,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "18:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 8112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "14:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 3905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 2270,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1431,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-09-07",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "18:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 5322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-09",
+      "start": "19:00",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 1726,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-10",
+      "start": "14:00",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 915,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-11",
+      "start": "19:00",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 1182,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "19:00",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 861,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": null,
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 1182,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "14:00",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 1569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 767,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-25",
+      "start": "13:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1233,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 897,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1704,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "18:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 747,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-02",
+      "start": "12:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 4239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 1715,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "14:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 1449,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "14:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 2079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "18:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1249,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "11:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 4473,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1970,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "18:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "14:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 3086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "18:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 1564,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "11:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 5530,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 2914,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "19:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 4135,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "18:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 2779,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "14:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 5352,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-20",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 1472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-21",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 5599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-22",
+      "start": "18:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 4913,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-06-23",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 5223,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-01",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-02",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1304,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-03",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 5024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-19",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3880,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "18:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3848,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-21",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3564,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "19:00",
+      "opponent": "Emperors",
+      "venueId": "maimonides-park",
+      "attendance": 2888,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "12:00",
+      "opponent": "Emperors",
+      "venueId": "maimonides-park",
+      "attendance": 4060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-25",
+      "start": "19:00",
+      "opponent": "Emperors",
+      "venueId": "maimonides-park",
+      "attendance": 3231,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "19:00",
+      "opponent": "Emperors",
+      "venueId": "maimonides-park",
+      "attendance": 5068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "18:00",
+      "opponent": "Emperors",
+      "venueId": "maimonides-park",
+      "attendance": 4233,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "14:00",
+      "opponent": "Emperors",
+      "venueId": "maimonides-park",
+      "attendance": 2414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": null,
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-08",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "19:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 3491,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "18:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 7221,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": null,
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 3491,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 1492,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 1870,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-22",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 4323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "18:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 4282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1464,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-09-05",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "19:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 4041,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 2999,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 2497,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Saturday Backyard Bash"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "EVERYONE Runs the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "12:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 980,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Senior Field Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-10",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-11",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-12",
+      "start": null,
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-13",
+      "start": "14:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-29",
+      "start": "18:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-04-30",
+      "start": "11:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-01",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 808,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 2272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Boy Scouts Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 2331,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Saturday Backyard Bash"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "EVERYONE Runs the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Neighborhood Nights"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "18:40",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 1014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "18:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-15",
+      "start": "11:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 5348,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "18:40",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 2479,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Military Appreciation Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "18:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 2391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Saturday Backyard Bash"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "14:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 2898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "18:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 1212,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Neighborhood Nights"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "11:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 6081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-29",
+      "start": "18:40",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 1636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Brooklyn Jefes Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "EVERYONE Runs the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "18:40",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 1935,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "FDNY Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "18:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 2545,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Saturday Backyard Bash"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Kodai Senga Ghost Bobblehead"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Halfway to Halloween"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Malmö Oat Milkers Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "14:00",
+      "opponent": "IronBirds",
+      "venueId": "maimonides-park",
+      "attendance": 5081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cross Body Bag"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Eastern European Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "18:40",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 1444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "18:40",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 1229,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "18:40",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 1727,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "EVERYONE Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Neighborhood Nights"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "18:40",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 4893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pride Skyline Cap"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Pride Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pride Jersey Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "18:00",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 3632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Saturday Backyard Bash"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brandon Nimmo Hoodie Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Faith & Family Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "14:00",
+      "opponent": "Tourists",
+      "venueId": "maimonides-park",
+      "attendance": 3753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Corduroy Cap"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 1510,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "19:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2592,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Catholic Schools Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 4148,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "EVERYONE Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Neighborhood Nights"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3913,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brandon NimmOMG Bobble"
+        },
+        {
+          "type": "Theme Days",
+          "name": "First Responder's Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "18:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3880,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Margaritaville Straw Cap"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Hawaiian Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Saturday Backyard Bash"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Margaritaville Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Girl Scout Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Parrot Head Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 4268,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Widget Cap"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Toy Story Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jewish Heritage Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 4706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Coney Island Franks Cap"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Coney Island Franks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hot Dog Hawaiian Shirt Package"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Rooftop Rager"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "18:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 3269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Basketball Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "14:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sandy the Seagull Socks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Neighborhood Nights"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 2426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Neighborhood Nights"
+        },
+        {
+          "type": "Theme Days",
+          "name": "AAPI Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Edwin Diaz Bobble"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Brooklyn Jefes Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "EVERYONE Runs the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Lucha Libre Appearance"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 4446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Amazins Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "New York State Courts Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "18:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Superman Bobble"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "The 7 Line Backyard Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3705,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "#5 Retired Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Italian Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-29",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2425,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "American Cancer Society Brooklyn Strides Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-30",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 1882,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Blind Box Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-07-31",
+      "start": "12:30",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Camp Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-01",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 5273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Irish Cap"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Irish Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Irish Hoodie Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-02",
+      "start": "18:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 6640,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Saturday Backyard Bash"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Seinfeld Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "\"The Kramer\" Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Del Boca Brooklyn Rooftop"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-03",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 4698,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hawaiian Bucket Cap"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Moana Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "18:40",
+      "opponent": "Spartanburgers",
+      "venueId": "maimonides-park",
+      "attendance": 3044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "18:40",
+      "opponent": "Spartanburgers",
+      "venueId": "maimonides-park",
+      "attendance": 2096,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-14",
+      "start": null,
+      "opponent": "Spartanburgers",
+      "venueId": "maimonides-park",
+      "attendance": 2096,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "18:40",
+      "opponent": "Spartanburgers",
+      "venueId": "maimonides-park",
+      "attendance": 4208,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pete Alonso \"He Did it!\" Neon Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "18:00",
+      "opponent": "Spartanburgers",
+      "venueId": "maimonides-park",
+      "attendance": 4883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Saturday Backyard Bash"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Hockey Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Star Wars Cantina Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "14:00",
+      "opponent": "Spartanburgers",
+      "venueId": "maimonides-park",
+      "attendance": 3476,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Short Sleeve Hoodie"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2173,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "BOGO Tuesdays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1702,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2083,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "EVERYONE Runs the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Dream Days Presented by Qaultrics"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 4732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fri-Yay Drink Deal"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Backyard Baseball Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Pablo Sanchez Bobblehead"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Dream Days Presented by Qaultrics"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 4458,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Harry Potter Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Harry Potter House Cap"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter Jersey Package"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Saturday Backyard Bash"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "14:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 4207,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Baseball Card Set"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-09-11",
+      "start": "18:40",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 3231,
+      "kind": "announced",
+      "postseason": true,
+      "round": "SAL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "14:00",
+      "opponent": "Spartanburgers",
+      "venueId": "maimonides-park",
+      "attendance": 1942,
+      "kind": "announced",
+      "postseason": true,
+      "round": "SAL Championship Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2283,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "2026 Opening Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "14:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 1900,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Bash"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "14:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 3291,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "18:40",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 704,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "16:00",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 776,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "name": "Jackie Robinson Day"
+        },
+        {
+          "name": "Most Improved Student Award Ceremony"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "18:40",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 720,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "18:40",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 1440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "14:00",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 2663,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "name": "Most Improved Student Award Ceremony"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Bash"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "14:00",
+      "opponent": "Grasshoppers",
+      "venueId": "maimonides-park",
+      "attendance": 1245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "name": "Most Improved Student Award Ceremony"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "18:40",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 684,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "16:00",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 735,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": "18:40",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 1698,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "18:40",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 1342,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "name": "Most Improved Student Award Ceremony"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "14:00",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 2324,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "name": "Brooklyn Jefes"
+        },
+        {
+          "name": "Most Improved Student Award Ceremony"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Bash"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "14:00",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 3290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jewish Celebration Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Upper East Side Neighborhood Night"
+        },
+        {
+          "name": "Stitch N Pitch"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Lifeguard Appreciation Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "11:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 5899,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Education Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-21",
+      "start": null,
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 3291,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2110,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Rockaway Neighborhood Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "14:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 2092,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1056,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "18:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 970,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Gowanus Canal Neighborhood Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-28",
+      "start": "11:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 6245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Education Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-29",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 4588,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Trek Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Star Trek Jersey Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Bay Ridge Neighborhood Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 4455,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Weenie Weekend Hot Dog Hat"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Weenie Weekend"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Bash"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 5597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days|Giveaway",
+          "name": "Halfway to Halloween"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Autism Acceptance Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Weenie Weekend Mustard Jersey"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Weenie Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bundle Up Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "18:40",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 1525,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "name": "Howard Beach Neighborhood Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "18:40",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 1028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-11",
+      "start": "18:40",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 1508,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Carson Benge '25 Champs Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Park Slope Neighborhood Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Fight the Hunger"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "18:40",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 6002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brooklyn Pride Cap"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pride Jersey Hoodie Ticket Package"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "name": "FDNY Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Scouting America Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "FDNY Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "18:00",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 3591,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2025 Championship Ring Replica"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Girl Scouts Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Bash"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "14:00",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 4929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "name": "Soccer Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Amazin' Soccer Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 1707,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kosher Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2586,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "name": "Catholic School Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2601,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "25th Anniversary Celebration"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2001 Championship Ring Replica"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3379,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Margaritaville Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Margaritaville Hawaiian Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "18:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "In our Brooklyn Era"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "DJ Swiftie Dance Party"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Friendship Bracelet 3-Pack Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Bash"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Glitter Cap"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Teenage Mutant Ninja Turtles Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "TMNT Jersey Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kosher Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1339,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "name": "Brooklyn Jefes"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kosher Meal Deal"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Qualtrics Dream Days"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 1419,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "National Love & Marriage Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Qualtrics Dream Days"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-09",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cyclones Basketball Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "AAPI Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "18:40",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 4231,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Italian Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Frank Sinatra Bobblehead"
+        },
+        {
+          "name": "NYS Courts Night"
+        },
+        {
+          "name": "First Responders Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": "18:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 2396,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "King of Queens Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Doug Heffernan Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Bash"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pink 182 Performance"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "14:00",
+      "opponent": "Blue Rocks",
+      "venueId": "maimonides-park",
+      "attendance": 3272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jonah Tong Anime Bobblehead"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Anime Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kosher Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "18:40",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 4579,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "WWE Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "WWE Championship Title Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "American Nightmare or Yeet T-Shirt Package"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "WWE T-Shirt Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "18:00",
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 3305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": null,
+      "opponent": "Renegades",
+      "venueId": "maimonides-park",
+      "attendance": 3305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:40",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 1440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kosher Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "12:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 3814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "name": "Camp Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "18:40",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 2789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Brooklyn Bridge Cap"
+        },
+        {
+          "name": "Faith and Family Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ben vs. Chris Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Tarps Off Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "18:40",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 4077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Coney Island Upside Down Cap"
+        },
+        {
+          "name": "Coney Island Neighborhood Night"
+        },
+        {
+          "name": "American Cancer Society Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Coney Island Neighborhood Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hot Dog Heaven - All You Can Eat Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "18:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 6578,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Seinfeld Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Cosmo Kramer Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Seinfeld Night Appearance Bobblehead Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "14:00",
+      "opponent": "Dash",
+      "venueId": "maimonides-park",
+      "attendance": 3224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Big League Chew Carson Benge Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kosher Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kosher Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "name": "Brooklyn Jefes"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hot Dog Heaven - All You Can Eat Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 2030,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2001 Road Jersey Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Whiskey & Weenies"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "18:40",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 5072,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Irish Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "BKLYN Irish Cap"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Irish Jersey Hoodie Package"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "18:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 5455,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Short Sleeve Hoodie"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Bash"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "14:00",
+      "opponent": "BlueClaws",
+      "venueId": "maimonides-park",
+      "attendance": 3262,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cowboy Nolan McLean Bobblehead"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Country Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kosher Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "21:01",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 2522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "18:40",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 1927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Hot Dog Heaven - All You Can Eat Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": "16:00",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 2239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Everyone Runs the Bases"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Thursday Meal Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "18:40",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 4672,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Brooklyn Chenille Cap"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Friyay Drink Deal"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Rainbow Hoodie Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:00",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 5785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "A Happy Little Ballgame - Bob Ross Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bob Ross Bobble Painting"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Bash"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post-Game Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bob Ross Painting Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brooklyn-cyclones",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "14:00",
+      "opponent": "Keys",
+      "venueId": "maimonides-park",
+      "attendance": 5363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Baseball Card Set Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ice Cream Sunday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Brunch"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kosher Meal Deal"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark in the Park T-Shirt Package"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "King of Queens Bobblehead Offer"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

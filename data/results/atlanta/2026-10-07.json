@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-07",
+  "results": [
+    {
+      "eventId": "2026-10-07-espn-dream-401918297",
+      "metroId": "atlanta",
+      "date": "2026-10-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "dream",
+      "home": {
+        "name": "Dream",
+        "score": 101
+      },
+      "away": {
+        "name": "Liberty",
+        "score": 98
+      },
+      "attendance": 9574,
+      "note": "OT",
+      "capturedAt": "2026-10-08T02:49:22.905Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:34"
+    },
+    {
+      "eventId": "2026-10-07-espn-ksu-football-401871051",
+      "metroId": "atlanta",
+      "date": "2026-10-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fifth-third-stadium",
+      "homeTeamId": "ksu-football",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 26
+      },
+      "away": {
+        "name": "Jax State",
+        "score": 27
+      },
+      "capturedAt": "2026-10-08T02:49:22.905Z",
+      "duration": {
+        "minutes": 217,
+        "kind": "estimated"
+      },
+      "startedAt": "16:00"
+    },
+    {
+      "eventId": "2026-10-07-mlb-849822",
+      "metroId": "atlanta",
+      "date": "2026-10-07",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "truist-park",
+      "homeTeamId": "braves",
+      "home": {
+        "name": "Braves",
+        "score": 1
+      },
+      "away": {
+        "name": "Dodgers",
+        "score": 4
+      },
+      "capturedAt": "2026-10-08T02:49:23.194Z",
+      "attendance": 41173,
+      "duration": {
+        "minutes": 174,
+        "kind": "official"
+      },
+      "startedAt": "18:09"
+    }
+  ]
+}

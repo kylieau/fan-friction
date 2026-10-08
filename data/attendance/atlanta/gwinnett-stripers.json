@@ -1,0 +1,5414 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "teamId": "gwinnett-stripers",
+  "collectedOn": "2026-10-08",
+  "games": [
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-03-31",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 5074,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-01",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 3573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-02",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 3512,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "11:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 5911,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-13",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 3339,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "18:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 4422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "13:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 2944,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "11:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 4669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "19:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 1194,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "19:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 1033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "19:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 3272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "18:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 4997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "13:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 2724,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1061,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 2686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 6084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "13:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 3111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1626,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 4448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "18:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 5191,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "13:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 3815,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1347,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 2724,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 3271,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 5189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 2719,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "12:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 4744,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": null,
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 4744,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 5106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 6216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 2827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "gwinnett-field",
+      "attendance": 10067,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "gwinnett-field",
+      "attendance": 1811,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "gwinnett-field",
+      "attendance": 2761,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "19:05",
+      "opponent": "Storm Chasers",
+      "venueId": "gwinnett-field",
+      "attendance": 4515,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:05",
+      "opponent": "Storm Chasers",
+      "venueId": "gwinnett-field",
+      "attendance": 5129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-18",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 1956,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-19",
+      "start": "12:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 3050,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 5216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": null,
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 5216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "17:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 3893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": null,
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 5216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 3104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 1519,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 1505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-03",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 1861,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-04",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 4024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-05",
+      "start": "18:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 5652,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1182,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-24",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "18:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 5430,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 2844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "gwinnett-field",
+      "attendance": 1065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "gwinnett-field",
+      "attendance": 1147,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-07",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "gwinnett-field",
+      "attendance": 2107,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "gwinnett-field",
+      "attendance": 3543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "18:05",
+      "opponent": "Red Sox",
+      "venueId": "gwinnett-field",
+      "attendance": 4448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:05",
+      "opponent": "Red Sox",
+      "venueId": "gwinnett-field",
+      "attendance": 3446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2117,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "12:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2382,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-21",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2041,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 5443,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "18:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 4956,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "13:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 4053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 3073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 1337,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-04",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 1604,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 1940,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "18:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 2716,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 2226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1309,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "12:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 2066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 2627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "18:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 4051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "11:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1148,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": null,
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1148,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-02",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2311,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "18:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 4444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "13:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2373,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "11:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 4770,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-09",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1524,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 2819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 3653,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 2399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 2005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1770,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 4198,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 4184,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 3186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 2027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "12:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3212,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "18:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 4961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 2997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 2098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 2165,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1916,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 4296,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "18:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 3558,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1984,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 2024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "12:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1652,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 2033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 3543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 7050,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-19",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 4466,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": null,
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 4466,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-21",
+      "start": "13:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-01",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-02",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 2789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-03",
+      "start": "18:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-04",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1668,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 1317,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 1003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-15",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 1052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 3176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "18:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 4235,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-18",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 2290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "gwinnett-field",
+      "attendance": 1015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "gwinnett-field",
+      "attendance": 1033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "gwinnett-field",
+      "attendance": 2866,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "19:05",
+      "opponent": "Clippers",
+      "venueId": "gwinnett-field",
+      "attendance": 3594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "18:05",
+      "opponent": "Clippers",
+      "venueId": "gwinnett-field",
+      "attendance": 4022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:05",
+      "opponent": "Clippers",
+      "venueId": "gwinnett-field",
+      "attendance": 2313,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "19:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 1465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "12:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 3313,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-09-12",
+      "start": "19:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 2078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "19:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 4537,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "18:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 4074,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "13:05",
+      "opponent": "Bisons",
+      "venueId": "gwinnett-field",
+      "attendance": 4442,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-01",
+      "start": "16:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 2112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-02",
+      "start": "11:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 4398,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-03",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 4681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "18:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "12:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-15",
+      "start": "11:05",
+      "opponent": "IronPigs",
+      "venueId": "gwinnett-field",
+      "attendance": 4623,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-16",
+      "start": "19:05",
+      "opponent": "IronPigs",
+      "venueId": "gwinnett-field",
+      "attendance": 1178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-17",
+      "start": "19:05",
+      "opponent": "IronPigs",
+      "venueId": "gwinnett-field",
+      "attendance": 1487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "19:05",
+      "opponent": "IronPigs",
+      "venueId": "gwinnett-field",
+      "attendance": 2441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "18:05",
+      "opponent": "IronPigs",
+      "venueId": "gwinnett-field",
+      "attendance": 3956,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:05",
+      "opponent": "IronPigs",
+      "venueId": "gwinnett-field",
+      "attendance": 1955,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-29",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-04-30",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-01",
+      "start": null,
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3089,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "18:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3491,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3072,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "11:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 2487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-15",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 4192,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 6482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 5044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 4324,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": null,
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-29",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1092,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 2892,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 2885,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 2821,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "12:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 3142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 2472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 2472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "19:12",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 4381,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "18:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 4623,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 3721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "gwinnett-field",
+      "attendance": 1431,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "gwinnett-field",
+      "attendance": 1389,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-03",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "gwinnett-field",
+      "attendance": 3821,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "gwinnett-field",
+      "attendance": 9269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "19:05",
+      "opponent": "Saints",
+      "venueId": "gwinnett-field",
+      "attendance": 3305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "13:05",
+      "opponent": "Saints",
+      "venueId": "gwinnett-field",
+      "attendance": 1764,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 3319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 3553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1970,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-29",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-30",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-07-31",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 3118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-01",
+      "start": null,
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 3118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-02",
+      "start": "18:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 3167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-03",
+      "start": "13:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 1510,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 954,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-14",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 1164,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 2115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "18:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 3457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "13:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 2190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 1076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 2262,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 2003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 2844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 1766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-01",
+      "start": "16:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1095,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-04",
+      "start": null,
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-05",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 3157,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "18:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 4036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "13:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 1156,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 82
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "T-Shirt Tuesday: \"Grab Your Pole\" Tarp Tee"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-17",
+      "start": "12:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 2094,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wet Nose Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dream Days, Presented by Qualtrics"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-18",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 1575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Frank N Stein Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Throwback Thursday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Frank N Stein Ticket Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dream Days, Presented by Qualtrics"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-19",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 3681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 84
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Hispanic Heritage Night with the Xolos de Gwinnett"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "18:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 4002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Night of Giveaways"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stripers Short Sleeve Hoodie Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Firework Show"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Soundcheck Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2025,
+      "date": "2025-09-21",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 3763,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 86
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-03-27",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 3303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Opening Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2026 Magnet Schedule Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "18:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 2100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Opening Night 2.0"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2026 Schedule T-Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-03-29",
+      "start": "13:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 2617,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1760,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "18:35",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1260,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wet Nose Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-09",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "19:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 3514,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Golf Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "18:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 2298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Backyard Baseball Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Backyard Baseball Specialty Jersey Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:05",
+      "opponent": "Sounds",
+      "venueId": "gwinnett-field",
+      "attendance": 1277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 2146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "11:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 3549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1846,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Trades Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 3009,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Game Show Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Georgia Peaches Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 3037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Georgia Peaches Replica Jersey Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Georgia Peaches Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "13:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 2501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Georgia Peaches Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Autism Awareness Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "11:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 7267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "50s & 60s Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 4861,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Heart of Gwinnett Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "18:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 4879,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Salute to Armed Forces Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2025 Armed Forces Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "16:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2894,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1346,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wet Nose Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-21",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "70s Disco Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1515,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Halfway to Halloween"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 2573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Star Wars Specialty Jersey Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "13:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1566,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 1385,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "12:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 3426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wet Nose Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 1593,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "80s Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "19:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 2603,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Outdoors Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "18:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 3723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Braves Country Road Trip"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Drake Baldwin NL Rookie of the Year Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "gwinnett-field",
+      "attendance": 2056,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Princesses in the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Princess Brunch Pack featuring Disney Princess T-Shirts"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 1162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "17:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 1162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "19:47",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 1301,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wet Nose Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": "19:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 3004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": null,
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 3004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "18:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 2953,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Atlanta Black Crackers Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Atlanta Black Crackers Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "13:05",
+      "opponent": "Bats",
+      "venueId": "gwinnett-field",
+      "attendance": 2738,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Atlanta Black Crackers Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1344,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1327,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wet Nose Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-09",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1822,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "2000s Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "19:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 3734,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Racing Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stripers Toy Car Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": "18:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 5635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "©Disney Toy Story Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stripers Cowboy Hat Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "©Disney Toy Story Specialty Jersey Auction"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "©Disney Toy Story T-Shirt Ticket Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "13:05",
+      "opponent": "Redbirds",
+      "venueId": "gwinnett-field",
+      "attendance": 1591,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "gwinnett-field",
+      "attendance": 2200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "gwinnett-field",
+      "attendance": 2023,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wet Nose Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-23",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "gwinnett-field",
+      "attendance": 2041,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "2010s Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "gwinnett-field",
+      "attendance": 4319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": null,
+      "opponent": "Cubs",
+      "venueId": "gwinnett-field",
+      "attendance": 4319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "13:05",
+      "opponent": "Cubs",
+      "venueId": "gwinnett-field",
+      "attendance": 1943,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 899,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wet Nose Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1135,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "2020s Meme Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "19:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 5250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": null,
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 5250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "16:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "gwinnett-field",
+      "attendance": 1565,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": null,
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-20",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "20s Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "19:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 2314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pink in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pink in the Park Specialty Jersey Auction"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "18:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 4475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Chopper's Birthday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Chopper Building Block Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "13:05",
+      "opponent": "Bulls",
+      "venueId": "gwinnett-field",
+      "attendance": 1754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wet Nose Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 2338,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Women & Girls in Sports Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Stripers Stich 'N' Pitch Ticket Pack"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "19:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 2285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Xolos de Gwinnett Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 3622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Xolos de Gwinnett Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ronald Acuña Jr. Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "13:05",
+      "opponent": "Knights",
+      "venueId": "gwinnett-field",
+      "attendance": 1660,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Xolos de Gwinnett Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-15",
+      "start": "18:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 1404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Purr in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pet Supply Donation Drive"
+        },
+        {
+          "type": "Giveaway",
+          "name": "5-4-3 Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-16",
+      "start": "11:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 2582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-17",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 1692,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Salute to Gwinnett Braves Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Brian Snitker Meet & Greet"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Salute to G-Braves Specialty Jersey Auction"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Pop Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-18",
+      "start": "19:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 3637,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "18:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 4731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Night of Giveaways"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "2026 Player Awards Ceremony"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "gwinnett-stripers",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "13:05",
+      "opponent": "Indians",
+      "venueId": "gwinnett-field",
+      "attendance": 3253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Team Photo Poster Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Sunday Funday"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

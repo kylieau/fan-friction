@@ -4,7 +4,7 @@
   "metroName": "New York",
   "timeZone": "America/New_York",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-08T00:43:50.134Z",
+  "capturedAt": "2026-10-08T02:49:07.900Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -26,11 +26,6 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 4
-    },
-    {
-      "id": "ticketmaster",
-      "name": "Ticketmaster listings",
-      "inWindow": 16
     }
   ],
   "events": [
@@ -69,34 +64,10 @@
         "low": 45094,
         "high": 46537,
         "planning": true,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2022, 2024, 2025",
         "note": "Playoff crowds as a share of the building, this team's past 9 games (2022, 2024, 2025). An estimate."
-      }
-    },
-    {
-      "id": "2026-10-07-tm-G5diZ_dfAnI1y",
-      "metroId": "new-york",
-      "date": "2026-10-07",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Harry Styles",
-      "place": {
-        "type": "venue",
-        "venueId": "madison-square-garden"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Harry Styles",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "G5diZ_dfAnI1y",
-      "occasionFacts": {
-        "run": 3
-      },
-      "expectedDraw": {
-        "count": 14173,
-        "note": "This room's average per reported show: Billboard, 1.8M over 127 shows, Oct 2024 – Sep 2025. An estimate."
       }
     },
     {
@@ -153,6 +124,9 @@
         "count": 15018,
         "low": 14633,
         "high": 15255,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
       }
     },
@@ -183,6 +157,9 @@
         "count": 19241,
         "low": 19018,
         "high": 19355,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a preseason game: 9 games, 2024–2026."
       }
     },
@@ -212,31 +189,10 @@
         "count": 13849,
         "low": 12904,
         "high": 14966,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a preseason game: 5 games, 2024–2026."
-      }
-    },
-    {
-      "id": "2026-10-08-tm-vvG1FZ_1RM07i3",
-      "metroId": "new-york",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "kind": "show",
-      "title": "LE SSERAFIM",
-      "place": {
-        "type": "venue",
-        "venueId": "prudential-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "LE SSERAFIM",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "vvG1FZ_1RM07i3",
-      "expectedDraw": {
-        "count": 9083,
-        "note": "This room's average per reported show: Billboard, 981K over 108 shows, Oct 2024 – Sep 2025. An estimate."
       }
     },
     {
@@ -274,31 +230,10 @@
         "low": 45094,
         "high": 46537,
         "planning": true,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2022, 2024, 2025",
         "note": "Playoff crowds as a share of the building, this team's past 9 games (2022, 2024, 2025). An estimate."
-      }
-    },
-    {
-      "id": "2026-10-08-tm-G5dYZ_kma1OTc",
-      "metroId": "new-york",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Jessie Ware",
-      "place": {
-        "type": "venue",
-        "venueId": "radio-city-music-hall"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Jessie Ware",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "G5dYZ_kma1OTc",
-      "expectedDraw": {
-        "count": 5960,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -364,104 +299,6 @@
       }
     },
     {
-      "id": "2026-10-09-tm-1AdZZ_KGkBbIgHH",
-      "metroId": "new-york",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "kind": "special",
-      "title": "2026 New York Liberty Benchwarmers Pre-Game Pass (Watch Warm-Ups)",
-      "place": {
-        "type": "venue",
-        "venueId": "barclays-center"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "New York Liberty Benchwarmer Pre-Game Option",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "1AdZZ_KGkBbIgHH",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-09-tm-G5dYZ_1NSz3fJ",
-      "metroId": "new-york",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "kind": "show",
-      "title": "The Format",
-      "place": {
-        "type": "venue",
-        "venueId": "radio-city-music-hall"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "The Format",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "G5dYZ_1NSz3fJ",
-      "expectedDraw": {
-        "count": 5960,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-09-tm-G5diZ_dfAcz51",
-      "metroId": "new-york",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Harry Styles",
-      "place": {
-        "type": "venue",
-        "venueId": "madison-square-garden"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Harry Styles",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "G5diZ_dfAcz51",
-      "occasionFacts": {
-        "run": 3
-      },
-      "expectedDraw": {
-        "count": 14173,
-        "note": "This room's average per reported show: Billboard, 1.8M over 127 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-09-tm-Z7r9jZ1A7PI0I",
-      "metroId": "new-york",
-      "date": "2026-10-09",
-      "start": "22:00",
-      "kind": "show",
-      "title": "Jamie Jones",
-      "place": {
-        "type": "venue",
-        "venueId": "pacha-new-york"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Other"
-      },
-      "performer": "Jamie Jones",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7PI0I",
-      "expectedDraw": {
-        "count": 6000,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
       "id": "2026-10-10-nycc",
       "metroId": "new-york",
       "date": "2026-10-10",
@@ -515,6 +352,9 @@
         "count": 15886,
         "low": 15886,
         "high": 15886,
+        "fromCrowds": true,
+        "games": 27,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a Saturday: 27 games, 2024–2026."
       }
     },
@@ -543,55 +383,10 @@
         "count": 4300,
         "low": 4057,
         "high": 4597,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
         "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-G5diZ_7rmEKO0",
-      "metroId": "new-york",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "kind": "show",
-      "title": "CHRONO TRIGGER Orchestra Concert",
-      "place": {
-        "type": "venue",
-        "venueId": "infosys-theater-msg"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "CHRONO TRIGGER Orchestra Concert",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "G5diZ_7rmEKO0",
-      "expectedDraw": {
-        "count": 5600,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-k7vGF_aUb02cm",
-      "metroId": "new-york",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "kind": "show",
-      "title": "Foster the People",
-      "place": {
-        "type": "venue",
-        "venueId": "forest-hills-stadium"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Rock"
-      },
-      "performer": "Foster the People",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "k7vGF_aUb02cm",
-      "expectedDraw": {
-        "count": 14000,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -620,6 +415,9 @@
         "count": 16513,
         "low": 16513,
         "high": 16513,
+        "fromCrowds": true,
+        "games": 33,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a Saturday: 33 games, 2024–2026."
       }
     },
@@ -648,106 +446,10 @@
         "count": 19828,
         "low": 18039,
         "high": 23870,
+        "fromCrowds": true,
+        "games": 27,
+        "seasons": "2024–2025",
         "note": "Typical announced crowd here for a Saturday: 27 games, 2024–2025."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-17GZv0G61DlIaN2",
-      "metroId": "new-york",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Don Omar",
-      "place": {
-        "type": "venue",
-        "venueId": "barclays-center"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "Don Omar",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "17GZv0G61DlIaN2",
-      "expectedDraw": {
-        "count": 10571,
-        "note": "This room's average per reported show: Billboard, 962K over 91 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-G5diZ_dfAVb5L",
-      "metroId": "new-york",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Harry Styles",
-      "place": {
-        "type": "venue",
-        "venueId": "madison-square-garden"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Pop"
-      },
-      "performer": "Harry Styles",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "G5diZ_dfAVb5L",
-      "occasionFacts": {
-        "run": 3
-      },
-      "expectedDraw": {
-        "count": 14173,
-        "note": "This room's average per reported show: Billboard, 1.8M over 127 shows, Oct 2024 – Sep 2025. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-G5dYZ_8CAw-5m",
-      "metroId": "new-york",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "kind": "show",
-      "title": "Steve Lacy",
-      "place": {
-        "type": "venue",
-        "venueId": "radio-city-music-hall"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "R&B"
-      },
-      "performer": "Steve Lacy",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "G5dYZ_8CAw-5m",
-      "expectedDraw": {
-        "count": 5960,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
-      }
-    },
-    {
-      "id": "2026-10-10-tm-Z7r9jZ1A7JFjw",
-      "metroId": "new-york",
-      "date": "2026-10-10",
-      "start": "22:00",
-      "kind": "show",
-      "title": "50 Cent",
-      "place": {
-        "type": "venue",
-        "venueId": "pacha-new-york"
-      },
-      "audience": {
-        "domain": "music",
-        "genre": "Hip-Hop/Rap"
-      },
-      "performer": "50 Cent",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1A7JFjw",
-      "expectedDraw": {
-        "count": 6000,
-        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -804,6 +506,9 @@
         "count": 81100,
         "low": 78108,
         "high": 82071,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
         "note": "Typical announced crowd here for a Sunday in October: 4 games, 2023–2025."
       }
     },
@@ -842,26 +547,6 @@
       }
     },
     {
-      "id": "2026-10-11-tm-Z7r9jZ1AAZ8FU",
-      "metroId": "new-york",
-      "date": "2026-10-11",
-      "start": "16:00",
-      "kind": "special",
-      "title": "Francis Mercier - Ages 21+",
-      "place": {
-        "type": "venue",
-        "venueId": "pacha-new-york"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Francis Mercier",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "Z7r9jZ1AAZ8FU"
-    },
-    {
       "id": "2026-10-11-espn-ny-rangers-401892483",
       "metroId": "new-york",
       "date": "2026-10-11",
@@ -887,51 +572,11 @@
         "count": 17844,
         "low": 17327,
         "high": 17844,
+        "fromCrowds": true,
+        "games": 20,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a Sunday: 20 games, 2024–2026."
       }
-    },
-    {
-      "id": "2026-10-11-tm-1AdZZ_KGkB_qJAT",
-      "metroId": "new-york",
-      "date": "2026-10-11",
-      "start": "19:00",
-      "kind": "special",
-      "title": "2026 New York Liberty Benchwarmers Pre-Game Pass (Watch Warm-Ups)",
-      "place": {
-        "type": "venue",
-        "venueId": "barclays-center"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "New York Liberty Benchwarmer Pre-Game Option",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "1AdZZ_KGkB_qJAT",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-11-tm-G5dYZ_oCCO-12",
-      "metroId": "new-york",
-      "date": "2026-10-11",
-      "start": "19:00",
-      "kind": "special",
-      "title": "30 Rock 20th Anniversary Celebration",
-      "place": {
-        "type": "venue",
-        "venueId": "radio-city-music-hall"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Comedy"
-      },
-      "performer": "Tina Fey",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "G5dYZ_oCCO-12"
     },
     {
       "id": "2026-10-12-espn-devils-401892486",
@@ -959,6 +604,9 @@
         "count": 16117,
         "low": 15410,
         "high": 16434,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
       }
     },
@@ -989,6 +637,9 @@
         "count": 19241,
         "low": 19018,
         "high": 19355,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a preseason game: 9 games, 2024–2026."
       }
     },
@@ -1018,6 +669,9 @@
         "count": 17844,
         "low": 17475,
         "high": 17844,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 6 games, 2024–2026."
       }
     },
@@ -1047,6 +701,9 @@
         "count": 14475,
         "low": 14104,
         "high": 14703,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
       }
     },
@@ -1076,6 +733,9 @@
         "count": 16198,
         "low": 15487,
         "high": 16516,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
       }
     },
@@ -1105,6 +765,9 @@
         "count": 19241,
         "low": 19018,
         "high": 19355,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a preseason game: 9 games, 2024–2026."
       }
     },
@@ -1133,6 +796,9 @@
         "count": 6922,
         "low": 6345,
         "high": 7850,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
         "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
       }
     },
@@ -1161,6 +827,9 @@
         "count": 4300,
         "low": 4057,
         "high": 4597,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
         "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
       }
     },
@@ -1189,6 +858,9 @@
         "count": 24428,
         "low": 21285,
         "high": 27782,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2025",
         "note": "Typical announced crowd here for a Saturday: 7 games, 2024–2025."
       }
     },
@@ -1217,6 +889,9 @@
         "count": 20681,
         "low": 18815,
         "high": 24896,
+        "fromCrowds": true,
+        "games": 27,
+        "seasons": "2024–2025",
         "note": "Typical announced crowd here for a Saturday: 27 games, 2024–2025."
       }
     },
@@ -1246,6 +921,9 @@
         "count": 82225,
         "low": 80956,
         "high": 82926,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2024",
         "note": "Typical announced crowd here for a Sunday in October: 4 games, 2023–2024."
       }
     },
@@ -1275,6 +953,9 @@
         "count": 18006,
         "low": 17634,
         "high": 18006,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 6 games, 2024–2026."
       }
     },
@@ -1304,6 +985,9 @@
         "count": 16004,
         "low": 15302,
         "high": 16319,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
       }
     },
@@ -1333,6 +1017,9 @@
         "count": 14461,
         "low": 14090,
         "high": 14688,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 10 games, 2024–2026."
       }
     },
@@ -1363,6 +1050,9 @@
         "count": 19673,
         "low": 19673,
         "high": 19673,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
       }
     },
@@ -1392,6 +1082,9 @@
         "count": 17711,
         "low": 17524,
         "high": 17714,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
         "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
       }
     }
@@ -1402,9 +1095,9 @@
       "date": "2026-10-07",
       "start": "20:00",
       "read": {
-        "rating": 2,
+        "rating": 1,
         "friction": "Low",
-        "why": "Harry Styles 6.5 mi away, same hours.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
@@ -1414,25 +1107,11 @@
       }
     },
     {
-      "eventId": "2026-10-07-tm-G5diZ_dfAnI1y",
-      "date": "2026-10-07",
-      "start": "20:00",
-      "read": {
-        "rating": 2,
-        "friction": "Low",
-        "why": "Yankees vs. Rays 6.5 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 14173
-      }
-    },
-    {
       "eventId": "2026-10-08-nycc",
       "date": "2026-10-08",
       "start": "10:00",
       "read": {
-        "rating": 7.3,
+        "rating": 6.7,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -1443,8 +1122,8 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 7.3,
-        "friction": "Extreme",
+        "rating": 6.7,
+        "friction": "Heavy",
         "why": "Yankees vs. Rays 13 mi away, same hours.",
         "method": "formula"
       },
@@ -1459,7 +1138,7 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 7.3,
+        "rating": 6.7,
         "friction": "Extreme",
         "why": "Yankees vs. Rays 6.5 mi away, same hours.",
         "method": "formula"
@@ -1475,8 +1154,8 @@
       "date": "2026-10-08",
       "start": "19:30",
       "read": {
-        "rating": 7.3,
-        "friction": "Extreme",
+        "rating": 6.7,
+        "friction": "Heavy",
         "why": "Yankees vs. Rays 10 mi away, same hours.",
         "method": "formula"
       },
@@ -1487,25 +1166,11 @@
       }
     },
     {
-      "eventId": "2026-10-08-tm-vvG1FZ_1RM07i3",
-      "date": "2026-10-08",
-      "start": "19:30",
-      "read": {
-        "rating": 7.3,
-        "friction": "Heavy",
-        "why": "Yankees vs. Rays 14 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 9083
-      }
-    },
-    {
       "eventId": "2026-10-08-mlb-849837",
       "date": "2026-10-08",
       "start": "20:00",
       "read": {
-        "rating": 7.3,
+        "rating": 6.7,
         "friction": "Moderate",
         "why": "Knicks vs. Wizards 6.5 mi away, same hours.",
         "method": "formula"
@@ -1517,25 +1182,11 @@
       }
     },
     {
-      "eventId": "2026-10-08-tm-G5dYZ_kma1OTc",
-      "date": "2026-10-08",
-      "start": "20:00",
-      "read": {
-        "rating": 7.3,
-        "friction": "Heavy",
-        "why": "Yankees vs. Rays and Knicks vs. Wizards 5.6 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5960
-      }
-    },
-    {
       "eventId": "2026-10-09-nycc",
       "date": "2026-10-09",
       "start": "10:00",
       "read": {
-        "rating": 9.1,
+        "rating": 1,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -1546,9 +1197,9 @@
       "date": "2026-10-09",
       "start": "19:30",
       "read": {
-        "rating": 9.1,
-        "friction": "Moderate",
-        "why": "Harry Styles and 2026 New York Liberty Benchwarmers Pre-Game Pass (Watch Warm-Ups) 4.8 mi away, same hours.",
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
@@ -1558,64 +1209,11 @@
       }
     },
     {
-      "eventId": "2026-10-09-tm-1AdZZ_KGkBbIgHH",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "read": {
-        "rating": 9.1,
-        "friction": "Moderate",
-        "why": "Liberty vs. Dream and Harry Styles next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-G5dYZ_1NSz3fJ",
-      "date": "2026-10-09",
-      "start": "19:30",
-      "read": {
-        "rating": 9.1,
-        "friction": "Heavy",
-        "why": "Liberty vs. Dream and Harry Styles 5.3 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5960
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-G5diZ_dfAcz51",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "read": {
-        "rating": 9.1,
-        "friction": "Moderate",
-        "why": "Liberty vs. Dream and 2026 New York Liberty Benchwarmers Pre-Game Pass (Watch Warm-Ups) 4.8 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 14173
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-Z7r9jZ1A7PI0I",
-      "date": "2026-10-09",
-      "start": "22:00",
-      "read": {
-        "rating": 9.1,
-        "friction": "Heavy",
-        "why": "Liberty vs. Dream and Harry Styles 3.2 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 6000
-      }
-    },
-    {
       "eventId": "2026-10-10-nycc",
       "date": "2026-10-10",
       "start": "10:00",
       "read": {
-        "rating": 7.5,
+        "rating": 3.8,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -1626,8 +1224,8 @@
       "date": "2026-10-10",
       "start": "15:30",
       "read": {
-        "rating": 7.5,
-        "friction": "Heavy",
+        "rating": 3.8,
+        "friction": "Moderate",
         "why": "Islanders vs. Lightning 23 mi away, back to back.",
         "method": "formula"
       },
@@ -1642,7 +1240,7 @@
       "date": "2026-10-10",
       "start": "15:30",
       "read": {
-        "rating": 7.5,
+        "rating": 3.8,
         "method": "nearby"
       },
       "draw": {
@@ -1652,40 +1250,12 @@
       }
     },
     {
-      "eventId": "2026-10-10-tm-G5diZ_7rmEKO0",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "read": {
-        "rating": 7.5,
-        "friction": "Extreme",
-        "why": "Harry Styles next door, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5600
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-k7vGF_aUb02cm",
-      "date": "2026-10-10",
-      "start": "19:00",
-      "read": {
-        "rating": 7.5,
-        "friction": "Heavy",
-        "why": "Harry Styles and Red Bull NY vs. San Diego FC 7.8 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 14000
-      }
-    },
-    {
       "eventId": "2026-10-10-espn-islanders-401892479",
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.5,
-        "friction": "Heavy",
+        "rating": 3.8,
+        "friction": "Moderate",
         "why": "Devils vs. Canucks 23 mi away, back to back.",
         "method": "formula"
       },
@@ -1700,9 +1270,9 @@
       "date": "2026-10-10",
       "start": "19:30",
       "read": {
-        "rating": 7.5,
-        "friction": "Heavy",
-        "why": "Harry Styles and Foster the People 8.3 mi away, same hours.",
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "Islanders vs. Lightning and Devils vs. Canucks 22 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -1712,67 +1282,11 @@
       }
     },
     {
-      "eventId": "2026-10-10-tm-17GZv0G61DlIaN2",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 7.5,
-        "friction": "Heavy",
-        "why": "50 Cent and Harry Styles 3.2 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 10571
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-G5diZ_dfAVb5L",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 7.5,
-        "friction": "Heavy",
-        "why": "Red Bull NY vs. San Diego FC and CHRONO TRIGGER Orchestra Concert 8.3 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 14173
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-G5dYZ_8CAw-5m",
-      "date": "2026-10-10",
-      "start": "20:00",
-      "read": {
-        "rating": 7.5,
-        "friction": "Extreme",
-        "why": "Harry Styles and Red Bull NY vs. San Diego FC 1.0 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 5960
-      }
-    },
-    {
-      "eventId": "2026-10-10-tm-Z7r9jZ1A7JFjw",
-      "date": "2026-10-10",
-      "start": "22:00",
-      "read": {
-        "rating": 7.5,
-        "friction": "Extreme",
-        "why": "Don Omar 3.2 mi away, same hours.",
-        "method": "formula"
-      },
-      "draw": {
-        "count": 6000
-      }
-    },
-    {
       "eventId": "2026-10-11-nycc",
       "date": "2026-10-11",
       "start": "10:00",
       "read": {
-        "rating": 7.1,
+        "rating": 5.5,
         "friction": "Low",
         "why": "Jets vs. Browns 5.4 mi away, same hours.",
         "method": "formula"
@@ -1783,8 +1297,8 @@
       "date": "2026-10-11",
       "start": "13:00",
       "read": {
-        "rating": 7.1,
-        "friction": "Moderate",
+        "rating": 5.5,
+        "friction": "Low",
         "why": "New York Comic Con (day 4 of 4) 5.4 mi away, same hours.",
         "method": "formula"
       },
@@ -1799,7 +1313,7 @@
       "date": "2026-10-11",
       "start": "14:00",
       "read": {
-        "rating": 7.1,
+        "rating": 5.5,
         "friction": "Moderate",
         "why": "Jets vs. Browns and New York Comic Con (day 4 of 4) 10 mi away, same hours.",
         "method": "formula"
@@ -1811,22 +1325,11 @@
       }
     },
     {
-      "eventId": "2026-10-11-tm-Z7r9jZ1AAZ8FU",
-      "date": "2026-10-11",
-      "start": "16:00",
-      "read": {
-        "rating": 7.1,
-        "friction": "Heavy",
-        "why": "Jets vs. Browns and Liberty vs. Dream 11 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-11-espn-ny-rangers-401892483",
       "date": "2026-10-11",
       "start": "18:00",
       "read": {
-        "rating": 7.1,
+        "rating": 5.5,
         "friction": "Moderate",
         "why": "Jets vs. Browns and Liberty vs. Dream 6.1 mi away, back to back.",
         "method": "formula"
@@ -1835,26 +1338,6 @@
         "count": 17844,
         "low": 17327,
         "high": 17844
-      }
-    },
-    {
-      "eventId": "2026-10-11-tm-1AdZZ_KGkB_qJAT",
-      "date": "2026-10-11",
-      "start": "19:00",
-      "read": {
-        "rating": 7.1,
-        "friction": "Moderate",
-        "why": "Rangers vs. Canucks and Jets vs. Browns 4.8 mi away, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-11-tm-G5dYZ_oCCO-12",
-      "date": "2026-10-11",
-      "start": "19:00",
-      "read": {
-        "rating": 7.1,
-        "method": "nearby"
       }
     },
     {

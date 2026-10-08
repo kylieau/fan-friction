@@ -1,0 +1,1096 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "teamId": "long-island-ducks",
+  "collectedOn": "2026-10-08",
+  "games": [
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "18:35",
+      "opponent": "Ferry Hawks",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "18:35",
+      "opponent": "Ferry Hawks",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "18:35",
+      "opponent": "Ferry Hawks",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 2729,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "18:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "18:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5796,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "13:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 2882,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3541,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-18",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "18:35",
+      "opponent": "Rockers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "18:35",
+      "opponent": "Rockers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:35",
+      "opponent": "Rockers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "18:35",
+      "opponent": "Rockers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "18:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "13:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3938,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "18:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5879,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "13:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3918,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3933,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-01",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "18:35",
+      "opponent": "Ghost Hounds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "18:35",
+      "opponent": "Ghost Hounds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": null,
+      "opponent": "Ghost Hounds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5909,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 6082,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "18:35",
+      "opponent": "Dirty Birds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": "18:35",
+      "opponent": "Dirty Birds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-15",
+      "start": "18:35",
+      "opponent": "Dirty Birds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-27",
+      "start": "18:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "18:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "18:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": "18:35",
+      "opponent": "Ferry Hawks",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "18:35",
+      "opponent": "Ferry Hawks",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 7005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "18:35",
+      "opponent": "Ferry Hawks",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5719,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-03",
+      "start": "18:35",
+      "opponent": "Ferry Hawks",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 7151,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-11",
+      "start": "18:35",
+      "opponent": "Barnstormers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3778,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-12",
+      "start": "18:35",
+      "opponent": "Barnstormers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-13",
+      "start": "11:05",
+      "opponent": "Barnstormers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5450,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4388,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "18:35",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 6726,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": "17:05",
+      "opponent": "Revolution",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 1941,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "18:35",
+      "opponent": "Ghost Hounds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3309,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "18:35",
+      "opponent": "Ghost Hounds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3894,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-27",
+      "start": "18:35",
+      "opponent": "Ghost Hounds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4604,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "18:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "18:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5832,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "17:05",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5537,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "18:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3571,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "18:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": "18:35",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3488,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "13:00",
+      "opponent": "Blue Crabs",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3488,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "18:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4524,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "18:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 6670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "17:05",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4603,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "18:35",
+      "opponent": "Dirty Birds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4590,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "18:35",
+      "opponent": "Dirty Birds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 6013,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "17:05",
+      "opponent": "Dirty Birds",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4481,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "18:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "18:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3764,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-08-24",
+      "start": "18:35",
+      "opponent": "Honey Hunters",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4716,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": "18:35",
+      "opponent": "Barnstormers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "18:35",
+      "opponent": "Barnstormers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 6961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "13:35",
+      "opponent": "Barnstormers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 3929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-09-04",
+      "start": "13:35",
+      "opponent": "Barnstormers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4085,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-09-15",
+      "start": "18:35",
+      "opponent": "Rockers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 4105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "18:35",
+      "opponent": "Rockers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "long-island-ducks",
+      "season": 2023,
+      "date": "2023-09-17",
+      "start": "13:35",
+      "opponent": "Rockers",
+      "venueId": "fairfield-properties-ballpark",
+      "attendance": 5527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    }
+  ]
+}

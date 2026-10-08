@@ -4,6 +4,30 @@
   "date": "2026-10-07",
   "results": [
     {
+      "eventId": "2026-10-07-espn-bulls-401908939",
+      "metroId": "chicago",
+      "date": "2026-10-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 124
+      },
+      "away": {
+        "name": "Suns",
+        "score": 117
+      },
+      "attendance": 16362,
+      "capturedAt": "2026-10-08T02:49:24.141Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "17:11"
+    },
+    {
       "eventId": "2026-10-07-mlb-849833",
       "metroId": "chicago",
       "date": "2026-10-07",
@@ -19,7 +43,7 @@
         "name": "Guardians",
         "score": 9
       },
-      "capturedAt": "2026-10-07T23:35:50.782Z",
+      "capturedAt": "2026-10-08T02:49:24.426Z",
       "attendance": 40590,
       "duration": {
         "minutes": 196,

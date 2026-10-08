@@ -2044,6 +2044,18 @@
       "code": 45,
       "precipProbability": 1,
       "precipMm": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-09",
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T02:48:05.746Z",
+      "feelsLikeHighF": 85.6,
+      "feelsLikeLowF": 70.6,
+      "code": 3,
+      "precipProbability": 1,
+      "precipMm": 0
     }
   ]
 }
