@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -30,6 +30,16 @@ const MLB_TEAMS = [
   { teamId: 'cubs', mlbId: 112, venueId: 'wrigley-field', metroId: 'chicago', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'white-sox', mlbId: 145, venueId: 'rate-field', metroId: 'chicago', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'rangers', mlbId: 140, venueId: 'globe-life-field', metroId: 'dallas-fort-worth', seasons: [2022, 2023, 2024, 2025, 2026] },
+  // Minor-league and independent clubs (the same feed, a sport id each; Kylie's OK, Oct 8, 2026).
+  { teamId: 'frisco-roughriders', mlbId: 540, sportId: 12, venueId: 'riders-field', metroId: 'dallas-fort-worth', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'tacoma-rainiers', mlbId: 529, sportId: 11, venueId: 'cheney-stadium', metroId: 'seattle', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'everett-aquasox', mlbId: 403, sportId: 13, venueId: 'everett-memorial-stadium', metroId: 'seattle', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'brooklyn-cyclones', mlbId: 453, sportId: 13, venueId: 'maimonides-park', metroId: 'new-york', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'staten-island-ferryhawks', mlbId: 586, sportId: 23, venueId: 'siuh-community-park', metroId: 'new-york', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'long-island-ducks', mlbId: 1896, sportId: 23, venueId: 'fairfield-properties-ballpark', metroId: 'new-york', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'gwinnett-stripers', mlbId: 431, sportId: 11, venueId: 'gwinnett-field', metroId: 'atlanta', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'chicago-dogs', mlbId: 1882, sportId: 23, venueId: 'impact-field', metroId: 'chicago', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'schaumburg-boomers', mlbId: 1950, sportId: 23, venueId: 'wintrust-field', metroId: 'chicago', seasons: [2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -131,6 +141,8 @@ const ESPN_TEAMS = [
   { teamId: 'unt-football', metroId: 'dallas-fort-worth', path: 'football/college-football', espnId: '249', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'unt-mbb', metroId: 'dallas-fort-worth', path: 'basketball/mens-college-basketball', espnId: '249', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'uta-mbb', metroId: 'dallas-fort-worth', path: 'basketball/mens-college-basketball', espnId: '250', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'canadiens', metroId: 'montreal', path: 'hockey/nhl', espnId: '10', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'cf-montreal', metroId: 'montreal', path: 'soccer/usa.1', espnId: '9720', seasons: [2022, 2023, 2024, 2025] },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -230,6 +242,11 @@ const VENUE_BY_NAME = {
   'unt coliseum': 'unt-coliseum',
   'cotton bowl': 'cotton-bowl',
   'globe life field': 'globe-life-field',
+  // Montreal, as ESPN writes them.
+  'bell centre': 'bell-centre',
+  'centre bell': 'bell-centre',
+  'stade saputo': 'stade-saputo',
+  'saputo stadium': 'stade-saputo',
 };
 
 function localParts(iso, metroId) {
@@ -263,7 +280,7 @@ async function mapLimit(items, limit, fn) {
 async function collectMlb(team) {
   const rows = [];
   for (const season of team.seasons) {
-    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${team.mlbId}&season=${season}&gameType=R,F,D,L,W&hydrate=team,game(promotions)`;
+    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=${team.sportId ?? 1}&teamId=${team.mlbId}&season=${season}&gameType=R,F,D,L,W&hydrate=team,game(promotions)`;
     const json = await getJson(url);
     // The record going in: the team's record after its previous regular-season game, home or away.
     const regular = json.dates

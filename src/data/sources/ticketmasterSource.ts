@@ -16,7 +16,7 @@ const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
 /** How far ahead to list, in days. The schedule archive keeps 14; the catalog can hold more. */
 const DAYS_AHEAD = 120;
 /** Search radius from the metro's center, miles. */
-const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30, seattle: 38, 'bay-area': 36, chicago: 38, 'dallas-fort-worth': 42 };
+const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30, seattle: 38, 'bay-area': 36, chicago: 38, 'dallas-fort-worth': 42, montreal: 24 };
 /** Satellite grounds outside the city radius, searched on their own: [lat, lng, miles]. */
 const EXTRA_POINTS: Record<string, [number, number, number][]> = {
   la: [[33.6803, -116.2372, 5]], // Empire Polo Club, Indio
@@ -65,7 +65,23 @@ function isAddOn(name: string): boolean {
   return /\b(parking|tours?\b(?!\s+(?:de|of)\b)|no field access|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|upgrade)\b/i.test(name);
 }
 
-function kindOf(segment: string | undefined): CrowdEvent['kind'] | null {
+/**
+ * Buildings whose games no league feed lists (docs/no-feed-teams-proposal.md; Kylie's OK, Oct 8, 2026): the AHL,
+ * ECHL, PWHL, WHL, CFL, UFL, USL Super League, MASL, cricket, rodeo and motorsport rooms. Sports listings are kept
+ * only here, and a feed game at the same building on the same date still wins (the catalog and archive drop the
+ * Ticketmaster copy).
+ */
+const SPORTS_FROM_TICKETMASTER = new Set([
+  'dickies-arena', 'will-rogers-coliseum', 'cutx-event-center', 'grand-prairie-stadium', 'mansfield-stadium', 'cotton-bowl', 'toyota-stadium', 'comerica-center', 'texas-motor-speedway',
+  'allstate-arena', 'now-arena', 'chicagoland-speedway',
+  'toyota-arena', 'pechanga-arena', 'acrisure-arena',
+  'climate-pledge-arena', 'angel-of-the-winds-arena', 'accesso-showare-center',
+  'gas-south-arena', 'echopark-speedway',
+  'kezar-stadium', 'oakland-coliseum',
+  'place-bell', 'percival-molson-stadium', 'cepsum-stadium', 'iga-stadium',
+]);
+
+function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {
   switch (segment) {
     case 'Music':
       return 'show';
@@ -74,10 +90,17 @@ function kindOf(segment: string | undefined): CrowdEvent['kind'] | null {
     case 'Film':
       return 'special';
     case 'Sports':
-      return null; // the league feeds own sports
+      return SPORTS_FROM_TICKETMASTER.has(venueId) ? 'game' : null; // elsewhere the league feeds own sports
     default:
       return 'special';
   }
+}
+
+/** The sport a Ticketmaster genre names ("Hockey" → hockey); "other" when it is a rodeo, a race or unclear. */
+function sportOf(genre: string | undefined): string {
+  const g = (genre ?? '').toLowerCase();
+  for (const s of ['hockey', 'basketball', 'football', 'soccer', 'baseball', 'lacrosse', 'rodeo', 'motorsports', 'tennis', 'cricket', 'wrestling', 'boxing']) if (g.includes(s)) return s;
+  return 'other';
 }
 
 function addDays(date: LocalDate, days: number): LocalDate {
@@ -167,16 +190,17 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
       seen.add(e.id);
       if (/cancel|postpon|resched/i.test(e.dates.status?.code ?? '')) continue;
       if (e.dates.start.dateTBA || !e.dates.start.localDate) continue;
-      const kind = kindOf(e.classifications?.[0]?.segment?.name);
-      if (!kind) continue;
-      if (kind === 'special' && isAddOn(e.name)) continue;
+      const segment = e.classifications?.[0]?.segment?.name;
       const tmVenue = e._embedded?.venues?.[0];
       if (!tmVenue) continue;
       const venue = venueFor(metroId, tmVenue);
       if (!venue) {
-        unknown.set(tmVenue.name, (unknown.get(tmVenue.name) ?? 0) + 1);
+        if (segment !== 'Sports') unknown.set(tmVenue.name, (unknown.get(tmVenue.name) ?? 0) + 1);
         continue;
       }
+      const kind = kindOf(segment, venue.id);
+      if (!kind) continue;
+      if (kind !== 'show' && isAddOn(e.name)) continue;
       const performers = (e._embedded?.attractions ?? []).map((a) => a.name).filter(Boolean);
       const performer = performers[0] ?? e.name;
       const genre = e.classifications?.[0]?.genre?.name ?? e.classifications?.[0]?.segment?.name ?? 'Other';
@@ -195,7 +219,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         kind,
         title: kind === 'show' ? performer : e.name,
         place: { type: 'venue', venueId: venue.id },
-        audience: kind === 'show' ? { domain: 'music', genre } : { domain: 'other', tag: genre },
+        audience: kind === 'show' ? { domain: 'music', genre } : kind === 'game' ? { domain: 'sports', sport: sportOf(genre) } : { domain: 'other', tag: genre },
         performer,
         crowd: [],
         sourceId: 'ticketmaster',

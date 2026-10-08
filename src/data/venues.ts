@@ -1824,6 +1824,116 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+  // ---------- Montreal (docs/montreal-venue-table-answer.md; car shares from docs/montreal-city-type-answer.md), Oct 8, 2026 ----------
+  // Not venue rows: Circuit Gilles-Villeneuve and Parc Jean-Drapeau (the Grand Prix, Osheaga: sized per day), Place des Festivals,
+  // the Palais des congrès, the Old Port. Their events are placed as points and sized by their own crowd when a figure exists.
+  'bell-centre': {
+    id: 'bell-centre',
+    metroId: 'montreal',
+    // Estimated (30–45%) with an observed floor: game nights add ~5,000 Métro riders at two stations alone (STM via La Presse, 2026).
+    carShare: 0.35,
+    names: [{ name: 'Centre Bell' }, { name: 'Bell Centre' }],
+    location: [-73.5692, 45.496],
+    capacity: [
+      { seats: 21288, setup: 'hockey', note: 'Reported, 2015–17' },
+      { seats: 21302, setup: 'hockey', fromYear: 2017, note: 'Reported, 2017–21' },
+      { seats: 21105, setup: 'hockey', fromYear: 2021, note: 'Reported, 2021–25' },
+      { seats: 20962, setup: 'hockey', fromYear: 2025, note: 'Official (NHL announced attendance), 2025–26 on; the new Le Parterre section' },
+      { seats: 22114, setup: 'basketball', note: 'Reported' },
+      { seats: 15000, setup: 'concert', note: 'Reported, end stage; up to 21,500 in other setups' },
+    ],
+    roof: 'indoor',
+  },
+  'olympic-stadium': {
+    id: 'olympic-stadium',
+    metroId: 'montreal',
+    // Estimated (25–40%) for a full house when it reopens: 4,000 indoor spaces for the whole park; Métro Pie-IX at the door.
+    carShare: 0.3,
+    names: [{ name: 'Stade olympique' }, { name: 'Olympic Stadium' }],
+    location: [-73.5516, 45.5578],
+    capacity: [
+      { seats: 56000, setup: 'football', note: 'Official (Montréal olympique). Closed to events since mid-December 2023; reopening 2028 with a new roof and a reshaped lower bowl (capacity not announced).' },
+      { seats: 56000, setup: 'soccer', note: 'The same bowl; record 61,004 (2016 MLS conference final)' },
+    ],
+    roof: 'covered',
+  },
+  'stade-saputo': {
+    id: 'stade-saputo',
+    metroId: 'montreal',
+    // Estimated (35–55%): the Olympic Park's 4,000 spaces serve a crowd a third the size of the stadium's; Métro Viau.
+    carShare: 0.45,
+    names: [{ name: 'Stade Saputo' }, { name: 'Saputo Stadium' }],
+    location: [-73.5526, 45.5631],
+    capacity: [
+      { seats: 20801, setup: 'soccer', note: 'Reported, after the 2012 expansion (low confidence)' },
+      { seats: 19619, setup: 'soccer', fromYear: 2019, note: 'Official (CF Montréal)' },
+    ],
+    roof: 'open',
+  },
+  'place-bell': {
+    id: 'place-bell',
+    metroId: 'montreal',
+    // Estimated (55–75%): Laval's Montmorency sector is 75% car for all trips; the Métro terminus is across the street.
+    carShare: 0.65,
+    names: [{ name: 'Place Bell' }],
+    location: [-73.7217, 45.5558],
+    capacity: [
+      { seats: 10172, setup: 'hockey', note: 'Reported: announced sellouts, PWHL 2024–26; 10,062 in earlier listings. The Rocket (AHL) and Victoire (PWHL).' },
+      { seats: 10000, setup: 'concert', note: 'Reported: a 10,000-seat amphitheatre that converts to a theatre; 10,500 not confirmed' },
+    ],
+    roof: 'indoor',
+  },
+  'percival-molson-stadium': {
+    id: 'percival-molson-stadium',
+    metroId: 'montreal',
+    // Estimated (27–40%) from a 2005 traffic projection; no fan parking on site; a hillside walk from Métro McGill.
+    carShare: 0.35,
+    names: [{ name: 'Stade Percival-Molson' }, { name: 'Percival Molson Memorial Stadium' }, { name: 'Molson Stadium' }],
+    location: [-73.5808, 45.5102],
+    capacity: [
+      { seats: 25012, setup: 'football', note: 'Official (McGill), after the 2010 expansion' },
+      { seats: 23420, setup: 'football', fromYear: 2014, note: 'Reported, after seats were removed in 2014' },
+      { seats: 23035, setup: 'football', fromYear: 2024, note: 'Reported: the announced sellout at the 2024 home opener. The Alouettes (CFL) and McGill.' },
+    ],
+    roof: 'open',
+  },
+  'iga-stadium': {
+    id: 'iga-stadium',
+    metroId: 'montreal',
+    // Estimated (30–45%): limited parking, a shuttle from a remote lot, two Métro lines within walking distance.
+    carShare: 0.35,
+    names: [{ name: 'Stade Uniprix' }, { name: 'Stade IGA', from: '2018-04-01' }, { name: 'IGA Stadium' }],
+    location: [-73.6267, 45.533],
+    capacity: [
+      { seats: 11991, note: "Reported (Canadian Press, 2026): centre court; the grounds average about 24,000 a day during the National Bank Open (men's event in even years, women's in odd). A ~15,000-seat roofed court is planned, no dates." },
+    ],
+    roof: 'open',
+  },
+  'cepsum-stadium': {
+    id: 'cepsum-stadium',
+    metroId: 'montreal',
+    // Estimated, ours (not in the research): Métro Édouard-Montpetit at the door; a campus crowd.
+    carShare: 0.35,
+    names: [{ name: 'Stade du CEPSUM' }, { name: 'CEPSUM Stadium' }],
+    location: [-73.6114, 45.5089],
+    capacity: [
+      { seats: 5000, setup: 'football', note: 'Official (Tourisme Montréal); 5,100 by the RSEQ. The Carabins (U Sports).' },
+      { seats: 5000, setup: 'soccer', note: 'The same stands' },
+    ],
+    roof: 'open',
+  },
+  'claude-robillard': {
+    id: 'claude-robillard',
+    metroId: 'montreal',
+    // Estimated, ours (not in the research): Métro Crémazie nearby; a meet crowd arrives over the day.
+    carShare: 0.5,
+    names: [{ name: 'Complexe sportif Claude-Robillard' }, { name: 'Claude-Robillard Sports Complex' }],
+    location: [-73.6362, 45.5526],
+    capacity: [
+      { seats: 6375, note: "Official (Tourisme Montréal): the outdoor track stadium's bleachers; ticketed meets only. Renovations through 2029; stays open." },
+    ],
+    roof: 'open',
+  },
   'amalie-arena': {
     id: 'amalie-arena',
     metroId: 'tampa',

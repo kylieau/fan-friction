@@ -430,6 +430,15 @@ export const PAST_2026_EVENTS: CrowdEvent[] = [
     start: '17:00', venue: 'waterfront-park',
     facts: { storyline: true /* Final stop of the Asleep in the Garden of Infernal Stars tour */ },
   }),
+  // Montreal, May 25, 2026: the tester's night (docs/archive/research/past-dates/san-diego-montreal.md;
+  // hand-seeded with the Montreal build, Kylie, Oct 7). Eastern Conference Final Game 3, a holiday Monday,
+  // the day after the Grand Prix weekend. The street watch party outside has no published count, so it
+  // is not seeded (no number is invented). 20,962 is the building's new capacity and the announced crowd.
+  game('montreal', '2026-05-25', 'canadiens', 'Canadiens vs Hurricanes', 'hockey', { home: 'canadiens', away: 'hurricanes' }, {
+    start: '20:00', venue: 'bell-centre', crowd: [announced(20962, 'ESPN box score')],
+    stakes: { round: 'Conf Final', game: 3 },
+    facts: { storyline: true /* series tied 1-1; rally towels on every seat; Snowbirds flyover; official outdoor watch party from 5 pm */ },
+  }),
 ];
 
 /**

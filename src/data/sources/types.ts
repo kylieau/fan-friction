@@ -5,6 +5,15 @@
 
 import type { CrowdEvent, DateRating, LocalDate } from '../types';
 
+/**
+ * A Ticketmaster game at a building and date where a league feed already lists one is the same game
+ * sold twice; the feed's copy stays (docs/no-feed-teams-proposal.md).
+ */
+export function dropTicketmasterGamesCoveredByFeeds<T extends { sourceId: string; kind: string; date: string; place: { type: string; venueId?: string } }>(events: T[]): T[] {
+  const feedGames = new Set(events.filter((e) => e.sourceId !== 'ticketmaster' && e.kind === 'game' && e.place.type === 'venue').map((e) => `${e.place.venueId}|${e.date}`));
+  return events.filter((e) => !(e.sourceId === 'ticketmaster' && e.kind === 'game' && e.place.type === 'venue' && feedGames.has(`${e.place.venueId}|${e.date}`)));
+}
+
 export interface EventSource {
   id: string;
   /** Shown in credits, e.g. "Hand-seeded test nights", "MLB". */

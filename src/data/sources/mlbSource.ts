@@ -11,7 +11,7 @@ const API = 'https://statsapi.mlb.com/api/v1/schedule';
 const DAYS_AHEAD = 120;
 
 /** MLB's own ids, mapped to our records. Add a metro's teams and ballparks here. */
-const MLB_TEAMS: Record<number, { metroId: string; teamId: string }> = {
+const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's sport id: 1 the majors, 11–14 the affiliated minors, 23 the partner leagues. */ sportId?: number; /** The club's home building when the feed's venue is not on file (the partner leagues list "TBD"). */ venueId?: string }> = {
   119: { metroId: 'la', teamId: 'dodgers' },
   108: { metroId: 'la', teamId: 'angels' },
   135: { metroId: 'san-diego', teamId: 'padres' },
@@ -23,8 +23,29 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string }> = {
   112: { metroId: 'chicago', teamId: 'cubs' },
   145: { metroId: 'chicago', teamId: 'white-sox' },
   140: { metroId: 'dallas-fort-worth', teamId: 'rangers' },
+  // Minor-league and independent clubs, the same feed (Kylie's OK, Oct 8, 2026; docs/no-feed-teams-proposal.md).
+  540: { metroId: 'dallas-fort-worth', teamId: 'frisco-roughriders', sportId: 12, venueId: 'riders-field' },
+  529: { metroId: 'seattle', teamId: 'tacoma-rainiers', sportId: 11, venueId: 'cheney-stadium' },
+  403: { metroId: 'seattle', teamId: 'everett-aquasox', sportId: 13, venueId: 'everett-memorial-stadium' },
+  453: { metroId: 'new-york', teamId: 'brooklyn-cyclones', sportId: 13, venueId: 'maimonides-park' },
+  586: { metroId: 'new-york', teamId: 'staten-island-ferryhawks', sportId: 23, venueId: 'siuh-community-park' },
+  1896: { metroId: 'new-york', teamId: 'long-island-ducks', sportId: 23, venueId: 'fairfield-properties-ballpark' },
+  431: { metroId: 'atlanta', teamId: 'gwinnett-stripers', sportId: 11, venueId: 'gwinnett-field' },
+  1882: { metroId: 'chicago', teamId: 'chicago-dogs', sportId: 23, venueId: 'impact-field' },
+  1950: { metroId: 'chicago', teamId: 'schaumburg-boomers', sportId: 23, venueId: 'wintrust-field' },
 };
-const MLB_VENUES: Record<number, string> = { 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field' };
+const MLB_VENUES: Record<number, string> = { 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field' };
+
+/** The feed's team ids for a metro, grouped by sport id (one schedule call per sport). */
+function teamIdsBySport(metroId: string): Map<number, string[]> {
+  const out = new Map<number, string[]>();
+  for (const [id, t] of Object.entries(MLB_TEAMS)) {
+    if (t.metroId !== metroId) continue;
+    const sport = t.sportId ?? 1;
+    out.set(sport, [...(out.get(sport) ?? []), id]);
+  }
+  return out;
+}
 
 /** Cities this feed can list games for. */
 export function mlbMetroIds(): string[] {
@@ -72,7 +93,7 @@ function localParts(iso: string, timeZone: string): { date: LocalDate; time: str
 
 function toEvent(g: MlbGame, metroId: string): CrowdEvent | null {
   const home = MLB_TEAMS[g.teams.home.team.id ?? -1];
-  const venueId = MLB_VENUES[g.venue?.id ?? -1];
+  const venueId = MLB_VENUES[g.venue?.id ?? -1] ?? home?.venueId;
   // Only home games in the metro; skip placeholder playoff slots and postponements.
   if (!home || home.metroId !== metroId || !venueId || !g.teams.away.team.id) return null;
   if (/postponed|cancel/i.test(g.status.detailedState)) return null;
@@ -113,7 +134,7 @@ export async function mlbTeamSchedule(teamId: string): Promise<TeamGame[] | null
   const tz = METROS[t.metroId].timeZone;
   const year = new Date().getFullYear();
   const read = async (season: number): Promise<MlbGame[]> => {
-    const u = `${API}?sportId=1&teamId=${mlbId}&season=${season}&gameType=S,R,F,D,L,W&hydrate=linescore,team`;
+    const u = `${API}?sportId=${t.sportId ?? 1}&teamId=${mlbId}&season=${season}&gameType=S,R,F,D,L,W&hydrate=linescore,team`;
     const r = await fetch(u);
     if (!r.ok) return [];
     const j = (await r.json()) as { dates?: { games: MlbGame[] }[] };
@@ -133,8 +154,8 @@ export async function mlbTeamSchedule(teamId: string): Promise<TeamGame[] | null
       if (!them.team.id) return [];
       const { date, time } = localParts(g.gameDate, tz);
       const final = g.status.abstractGameState === 'Final';
-      const hostVenue = MLB_VENUES[g.venue?.id ?? -1];
       const host = MLB_TEAMS[g.teams.home.team.id ?? -1];
+      const hostVenue = MLB_VENUES[g.venue?.id ?? -1] ?? host?.venueId;
       const stakes = mlbStakes(g);
       return [
         {
@@ -162,21 +183,21 @@ const cache = new Map<string, Promise<CrowdEvent[]>>();
  * empty list when the feed is down.
  */
 export function loadMlbSchedule(metroId: string, throughDate?: string): Promise<CrowdEvent[]> {
-  const teamIds = Object.entries(MLB_TEAMS).filter(([, t]) => t.metroId === metroId).map(([id]) => id);
   const tz = METROS[metroId].timeZone;
   const today = new Date().toLocaleDateString('en-CA', { timeZone: tz });
   const end = throughDate ?? new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
-  const url = `${API}?sportId=1&teamId=${teamIds.join(',')}&startDate=${today}&endDate=${end}&hydrate=team,broadcasts(all),probablePitcher`;
-
-  return fetch(url)
-    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-    .then((json: { dates: { games: MlbGame[] }[] }) =>
-      json.dates
-        .flatMap((d) => d.games)
-        .map((g) => toEvent(g, metroId))
-        .filter((e): e is CrowdEvent => e !== null && e.date >= today)
-        .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))),
-    );
+  const calls = [...teamIdsBySport(metroId)].map(([sportId, teamIds]) =>
+    fetch(`${API}?sportId=${sportId}&teamId=${teamIds.join(',')}&startDate=${today}&endDate=${end}&hydrate=team,broadcasts(all),probablePitcher`)
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((json: { dates: { games: MlbGame[] }[] }) => json.dates.flatMap((d) => d.games)),
+  );
+  return Promise.all(calls).then((lists) =>
+    lists
+      .flat()
+      .map((g) => toEvent(g, metroId))
+      .filter((e): e is CrowdEvent => e !== null && e.date >= today)
+      .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))),
+  );
 }
 
 /**
@@ -184,12 +205,14 @@ export function loadMlbSchedule(metroId: string, throughDate?: string): Promise<
  * announced crowd. For the nightly results pass. Throws when the feed can't be read.
  */
 export async function loadMlbFinals(metroId: string, from: LocalDate, through: LocalDate): Promise<GameResult[]> {
-  const teamIds = Object.entries(MLB_TEAMS).filter(([, t]) => t.metroId === metroId).map(([id]) => id);
-  const url = `${API}?sportId=1&teamId=${teamIds.join(',')}&startDate=${from}&endDate=${through}&hydrate=team,linescore`;
-  const r = await fetch(url);
-  if (!r.ok) throw new Error(`MLB schedule answered ${r.status}`);
-  const json = (await r.json()) as { dates: { games: MlbGame[] }[] };
-  const finals = json.dates.flatMap((d) => d.games).filter((g) => g.status.abstractGameState === 'Final');
+  const games: MlbGame[] = [];
+  for (const [sportId, teamIds] of teamIdsBySport(metroId)) {
+    const r = await fetch(`${API}?sportId=${sportId}&teamId=${teamIds.join(',')}&startDate=${from}&endDate=${through}&hydrate=team,linescore`);
+    if (!r.ok) throw new Error(`MLB schedule answered ${r.status}`);
+    const json = (await r.json()) as { dates: { games: MlbGame[] }[] };
+    games.push(...json.dates.flatMap((d) => d.games));
+  }
+  const finals = games.filter((g) => g.status.abstractGameState === 'Final');
   const capturedAt = new Date().toISOString();
   const rows: GameResult[] = [];
   for (const g of finals) {

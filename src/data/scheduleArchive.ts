@@ -7,6 +7,7 @@ import type { CrowdEvent, LocalDate } from './types';
 import { archivedReads, type ArchivedEventRead } from './forecastCapture';
 import { withExpectedDraws } from './expectedDraw';
 import { loadEspnSchedule } from './sources/espnSource';
+import { dropTicketmasterGamesCoveredByFeeds } from './sources/types';
 import { loadMlbSchedule } from './sources/mlbSource';
 import { seedEvents } from './sources/seedSource';
 import { loadTicketmasterEvents } from './sources/ticketmasterSource';
@@ -109,7 +110,7 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
   // Each game carries the expected draw the app shows that day (Oct 7, 2026): the saved read
   // sizes events the way the live read does, and the estimate is on file before the game, to
   // be scored against the announced crowd (scripts/expected-draw-check.mjs, "Saved ahead").
-  const events = withExpectedDraws([...mlbWindow, ...espnWindow, ...seedWindow, ...tmWindow].sort(byListing));
+  const events = withExpectedDraws(dropTicketmasterGamesCoveredByFeeds([...mlbWindow, ...espnWindow, ...seedWindow, ...tmWindow]).sort(byListing));
 
   return {
     schema: 1,

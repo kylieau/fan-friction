@@ -105,6 +105,9 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '249', metroId: 'dallas-fort-worth', teamId: 'unt-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '249', metroId: 'dallas-fort-worth', teamId: 'unt-mbb', sport: 'basketball' },
   { path: 'basketball/mens-college-basketball', espnId: '250', metroId: 'dallas-fort-worth', teamId: 'uta-mbb', sport: 'basketball' },
+  // Montreal (docs/montreal-venue-table-answer.md); ids checked against the feed Oct 8, 2026.
+  { path: 'hockey/nhl', espnId: '10', metroId: 'montreal', teamId: 'canadiens', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '9720', metroId: 'montreal', teamId: 'cf-montreal', sport: 'soccer' },
   { path: 'football/nfl', espnId: '1', metroId: 'atlanta', teamId: 'falcons', sport: 'football' },
   { path: 'soccer/usa.1', espnId: '18418', metroId: 'atlanta', teamId: 'atlanta-united', sport: 'soccer' },
   { path: 'football/college-football', espnId: '59', metroId: 'atlanta', teamId: 'gt-football', sport: 'football' },
@@ -217,6 +220,11 @@ const VENUE_BY_NAME: Record<string, string> = {
   'unt coliseum': 'unt-coliseum',
   'cotton bowl': 'cotton-bowl',
   'globe life field': 'globe-life-field',
+  // Montreal, as ESPN writes them.
+  'bell centre': 'bell-centre',
+  'centre bell': 'bell-centre',
+  'stade saputo': 'stade-saputo',
+  'saputo stadium': 'stade-saputo',
 };
 
 interface EspnSide {

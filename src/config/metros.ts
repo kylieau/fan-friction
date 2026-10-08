@@ -12,7 +12,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -87,6 +87,15 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-97.0, 32.85],
     zoom: 9,
+  },
+  // Covered Oct 8, 2026 (docs/montreal-venue-table-answer.md): the island, Laval, Longueuil and the South Shore.
+  // One frame holds downtown, the Olympic Park, Parc Jean-Drapeau and Laval's Place Bell.
+  montreal: {
+    id: 'montreal',
+    name: 'Montreal',
+    timeZone: 'America/Toronto',
+    center: [-73.6, 45.53],
+    zoom: 10.5,
   },
   phoenix: {
     id: 'phoenix',

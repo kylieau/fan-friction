@@ -68,6 +68,7 @@ try {
   const { loadEspnSchedule } = await server.ssrLoadModule('/src/data/sources/espnSource.ts');
   const { seedEvents } = await server.ssrLoadModule('/src/data/sources/seedSource.ts');
   const { loadTicketmasterEvents } = await server.ssrLoadModule('/src/data/sources/ticketmasterSource.ts');
+  const { dropTicketmasterGamesCoveredByFeeds } = await server.ssrLoadModule('/src/data/sources/types.ts');
   const tmKey = process.env.TICKETMASTER_API_KEY;
   const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
   const { EXPECTED_DRAWS } = await server.ssrLoadModule('/src/data/expectedDrawIndex.ts');
@@ -100,7 +101,7 @@ try {
     data: e,
   });
   const seen = new Set();
-  const events = [...seed, ...mlb, ...espn, ...tm.events].filter((e) => !seen.has(e.id) && seen.add(e.id)).map(eventRow);
+  const events = dropTicketmasterGamesCoveredByFeeds([...seed, ...mlb, ...espn, ...tm.events].filter((e) => !seen.has(e.id) && seen.add(e.id))).map(eventRow);
   counts.events = await upsert('events', events, 'id');
   // A game the feeds no longer list (postponed, cancelled, moved) leaves the catalog. Seeds and past dates stay.
   if (!dryRun) {
