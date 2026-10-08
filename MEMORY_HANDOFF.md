@@ -30,6 +30,7 @@ Expected draw v1, round 2 and the playoff rule; the fullness word and bar; the â
 - **Testing notes:** `npm i --no-save playwright-core` in a fresh container; headless Chromium at `/usr/bin/chromium` with swiftshader flags; `waitUntil: 'commit'` then wait; scripts that import from the repo run from the repo root as `scripts/.tmp-*.mjs`, deleted after; set `localStorage['home-metro']` to skip the home picker; open `/event/<id>?metro=<id>`, `/date/<date>?metro=<id>` or `/favorites/team/<id>` directly. Open-Elevation rate-limits: wait five minutes. Don't `pkill` vite; `kill $(lsof -ti:3001)`.
 
 ## Next steps
+0. **Run `node scripts/venue-access.mjs montreal`** (the hard-access measure for Montreal's eight venues) and commit the TSV and index: Open-Elevation answered 429 to every request on Oct 8, even after a ten-minute wait. The rest of Montreal is built and live.
 1. **Kylie's answers:** the ESPN extension (extend or hold; `docs/no-feed-teams-proposal.md`, status section), whether to send the HockeyTech email, and the Montreal build choices.
 2. **The Ticketmaster sweep's second night:** confirm the lounge and dinner listings at the Bell Centre are gone (the add-on filter was widened after the first night read Montreal's Oct 7 as Cooked) and that no feed game got a Ticketmaster twin.
 3. **Tester interview about Oct 13:** a day before, a data-side check that Becca's LA, San Diego, New York and Montreal nights show reads.
