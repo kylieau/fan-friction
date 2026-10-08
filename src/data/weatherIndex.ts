@@ -12807,6 +12807,24 @@ export const WEATHER_ROWS: WeatherRow[] = [
   {
     "metroId": "dallas-fort-worth",
     "venueId": "city",
+    "date": "2026-10-08",
+    "hour": 10,
+    "basis": "forecast",
+    "capturedAt": "2026-10-08T03:39:37.886Z",
+    "feelsLikeF": 77.1,
+    "tempF": 75.8,
+    "humidity": 51,
+    "windMph": 1.7,
+    "uvIndex": 2.15,
+    "precipProbability": 0,
+    "precipMm": 0,
+    "shortwave": 379,
+    "cloudCover": 6,
+    "code": 0
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "venueId": "city",
     "date": "2026-10-09",
     "hour": 19,
     "basis": "forecast",
@@ -65100,6 +65118,18 @@ export const WEATHER_DAYS: WeatherDay[] = [
   {
     "metroId": "chicago",
     "venueId": "city",
+    "date": "2026-10-08",
+    "basis": "forecast",
+    "capturedAt": "2026-10-08T03:39:18.948Z",
+    "feelsLikeHighF": 65.7,
+    "feelsLikeLowF": 45.8,
+    "code": 2,
+    "precipProbability": 2,
+    "precipMm": 0
+  },
+  {
+    "metroId": "chicago",
+    "venueId": "city",
     "date": "2026-10-09",
     "basis": "forecast",
     "capturedAt": "2026-10-07T23:35:35.364Z",
@@ -65478,6 +65508,18 @@ export const WEATHER_DAYS: WeatherDay[] = [
     "feelsLikeHighF": 92.2,
     "feelsLikeLowF": 63.3,
     "code": 3,
+    "precipProbability": 0,
+    "precipMm": 0
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "venueId": "city",
+    "date": "2026-10-08",
+    "basis": "forecast",
+    "capturedAt": "2026-10-08T03:39:37.886Z",
+    "feelsLikeHighF": 90.9,
+    "feelsLikeLowF": 63.4,
+    "code": 0,
     "precipProbability": 0,
     "precipMm": 0
   },
@@ -67926,6 +67968,18 @@ export const WEATHER_DAYS: WeatherDay[] = [
   {
     "metroId": "montreal",
     "venueId": "city",
+    "date": "2026-10-07",
+    "basis": "forecast",
+    "capturedAt": "2026-10-08T03:40:07.733Z",
+    "feelsLikeHighF": 54.2,
+    "feelsLikeLowF": 35.9,
+    "code": 61,
+    "precipProbability": 66,
+    "precipMm": 2.6
+  },
+  {
+    "metroId": "montreal",
+    "venueId": "city",
     "date": "2026-10-08",
     "basis": "forecast",
     "capturedAt": "2026-10-08T02:49:00.616Z",
@@ -67946,6 +68000,18 @@ export const WEATHER_DAYS: WeatherDay[] = [
     "code": 61,
     "precipProbability": 44,
     "precipMm": 4.4
+  },
+  {
+    "metroId": "montreal",
+    "venueId": "city",
+    "date": "2026-10-08",
+    "basis": "forecast",
+    "capturedAt": "2026-10-08T03:40:07.733Z",
+    "feelsLikeHighF": 52.5,
+    "feelsLikeLowF": 41.9,
+    "code": 55,
+    "precipProbability": 44,
+    "precipMm": 1.8
   },
   {
     "metroId": "montreal",

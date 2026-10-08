@@ -23186,6 +23186,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "atlanta",
+    "teamId": "ksu-football",
+    "opponent": "jax-state",
+    "ratio": 1.024,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
     "teamId": "ksu-mbb",
     "opponent": "fiu",
     "ratio": 1.047,
