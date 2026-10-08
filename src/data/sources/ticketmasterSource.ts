@@ -16,7 +16,7 @@ const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
 /** How far ahead to list, in days. The schedule archive keeps 14; the catalog can hold more. */
 const DAYS_AHEAD = 120;
 /** Search radius from the metro's center, miles. */
-const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30, seattle: 38, 'bay-area': 36, chicago: 38 };
+const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30, seattle: 38, 'bay-area': 36, chicago: 38, 'dallas-fort-worth': 42 };
 /** Satellite grounds outside the city radius, searched on their own: [lat, lng, miles]. */
 const EXTRA_POINTS: Record<string, [number, number, number][]> = {
   la: [[33.6803, -116.2372, 5]], // Empire Polo Club, Indio

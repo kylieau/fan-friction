@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -29,6 +29,7 @@ const MLB_TEAMS = [
   { teamId: 'giants', mlbId: 137, venueId: 'oracle-park', metroId: 'bay-area', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'cubs', mlbId: 112, venueId: 'wrigley-field', metroId: 'chicago', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'white-sox', mlbId: 145, venueId: 'rate-field', metroId: 'chicago', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'rangers', mlbId: 140, venueId: 'globe-life-field', metroId: 'dallas-fort-worth', seasons: [2022, 2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -116,6 +117,20 @@ const ESPN_TEAMS = [
   { teamId: 'depaul-wbb', metroId: 'chicago', path: 'basketball/womens-college-basketball', espnId: '305', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'uic-mbb', metroId: 'chicago', path: 'basketball/mens-college-basketball', espnId: '82', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'chicago-state-mbb', metroId: 'chicago', path: 'basketball/mens-college-basketball', espnId: '2130', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'mavericks', metroId: 'dallas-fort-worth', path: 'basketball/nba', espnId: '6', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'wings', metroId: 'dallas-fort-worth', path: 'basketball/wnba', espnId: '3', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'dallas-stars', metroId: 'dallas-fort-worth', path: 'hockey/nhl', espnId: '9', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'cowboys', metroId: 'dallas-fort-worth', path: 'football/nfl', espnId: '6', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'fc-dallas', metroId: 'dallas-fort-worth', path: 'soccer/usa.1', espnId: '185', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'smu-football', metroId: 'dallas-fort-worth', path: 'football/college-football', espnId: '2567', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'smu-mbb', metroId: 'dallas-fort-worth', path: 'basketball/mens-college-basketball', espnId: '2567', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'smu-wbb', metroId: 'dallas-fort-worth', path: 'basketball/womens-college-basketball', espnId: '2567', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'tcu-football', metroId: 'dallas-fort-worth', path: 'football/college-football', espnId: '2628', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'tcu-mbb', metroId: 'dallas-fort-worth', path: 'basketball/mens-college-basketball', espnId: '2628', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'tcu-wbb', metroId: 'dallas-fort-worth', path: 'basketball/womens-college-basketball', espnId: '2628', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'unt-football', metroId: 'dallas-fort-worth', path: 'football/college-football', espnId: '249', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'unt-mbb', metroId: 'dallas-fort-worth', path: 'basketball/mens-college-basketball', espnId: '249', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uta-mbb', metroId: 'dallas-fort-worth', path: 'basketball/mens-college-basketball', espnId: '250', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -198,6 +213,23 @@ const VENUE_BY_NAME = {
   'rate field': 'rate-field',
   'seatgeek stadium': 'seatgeek-stadium',
   'toyota park': 'seatgeek-stadium',
+  // Dallas–Fort Worth (docs/dallas-fort-worth-venue-table-answer.md), as ESPN writes them.
+  'at&t stadium': 'att-stadium',
+  'american airlines center': 'american-airlines-center',
+  'college park center': 'college-park-center',
+  'toyota stadium': 'toyota-stadium',
+  'gerald j. ford stadium': 'gerald-j-ford-stadium',
+  'amon g. carter stadium': 'amon-g-carter-stadium',
+  'datcu stadium': 'datcu-stadium',
+  'apogee stadium': 'datcu-stadium',
+  'moody coliseum (dallas)': 'moody-coliseum',
+  'moody coliseum': 'moody-coliseum',
+  'schollmaier arena': 'schollmaier-arena',
+  'dickies arena': 'dickies-arena',
+  'the super pit': 'unt-coliseum',
+  'unt coliseum': 'unt-coliseum',
+  'cotton bowl': 'cotton-bowl',
+  'globe life field': 'globe-life-field',
 };
 
 function localParts(iso, metroId) {

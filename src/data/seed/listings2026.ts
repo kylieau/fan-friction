@@ -53,7 +53,51 @@ const neutralFootball = (id: string, date: string, start: string | null, title: 
   sourceId: SOURCE_ID,
 });
 
+/**
+ * The State Fair of Texas, Sep 25 – Oct 18, 2026, at Fair Park (docs/dallas-fort-worth-venue-table-answer.md §4:
+ * treat the fair as a daily event; the grounds have no capacity). Each remaining day takes the official 2025 gate for
+ * the same day of the run (bigtex.com), labeled estimated. On Red River Saturday the game crowd inside the fair is
+ * taken out, since game tickets include fair admission and the gate most likely counts them (the research's reading).
+ */
+const fairDay = (date: string, count: number, basis: string): CrowdEvent => ({
+  id: `${date}-state-fair-texas`,
+  metroId: 'dallas-fort-worth',
+  date,
+  start: '10:00',
+  kind: 'special',
+  title: 'State Fair of Texas',
+  place: { type: 'point', location: [-96.76, 32.7792], name: 'Fair Park' },
+  audience: { domain: 'other', tag: 'fair' },
+  crowd: [{ count, kind: 'estimated', note: `Estimated: ${basis} (State Fair of Texas, official daily attendance, 2025).` }],
+  sourceId: SOURCE_ID,
+});
+
 export const LISTINGS_2026_EVENTS: CrowdEvent[] = [
+  // Red River Showdown, Texas vs. Oklahoma, a neutral-site game inside the running fair (Kylie's hand-list rule, Oct 7).
+  {
+    id: '2026-10-10-red-river-showdown',
+    metroId: 'dallas-fort-worth',
+    date: '2026-10-10',
+    start: '14:30',
+    kind: 'game',
+    title: 'Texas vs. Oklahoma (Red River Showdown)',
+    place: { type: 'venue', venueId: 'cotton-bowl' },
+    audience: { domain: 'sports', sport: 'football' },
+    crowd: [],
+    expectedDraw: { count: 92100, note: 'The Cotton Bowl, full: the Showdown sells out every year. An estimate.' },
+    sourceId: SOURCE_ID,
+  },
+  fairDay('2026-10-08', 81320, 'the second Thursday of the 2025 run'),
+  fairDay('2026-10-09', 94292, 'the second Friday of the 2025 run'),
+  fairDay('2026-10-10', 101860, 'Red River Saturday 2025 (193,960) less the stadium crowd inside the gate'),
+  fairDay('2026-10-11', 96116, 'the second Sunday of the 2025 run'),
+  fairDay('2026-10-12', 97218, 'the Monday after Red River weekend, 2025'),
+  fairDay('2026-10-13', 101703, 'the third Tuesday of the 2025 run'),
+  fairDay('2026-10-14', 67723, 'the third Wednesday of the 2025 run'),
+  fairDay('2026-10-15', 105251, 'the third Thursday of the 2025 run'),
+  fairDay('2026-10-16', 90310, 'the third Friday of the 2025 run'),
+  fairDay('2026-10-17', 110153, 'the last Saturday of the 2025 run'),
+  fairDay('2026-10-18', 108685, 'the closing Sunday of the 2025 run'),
   comicConDay('2026-10-08', 1),
   comicConDay('2026-10-09', 2),
   comicConDay('2026-10-10', 3),

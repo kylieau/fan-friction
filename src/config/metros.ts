@@ -12,7 +12,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -78,6 +78,15 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Los_Angeles',
     center: [-122.2, 37.62],
     zoom: 9.2,
+  },
+  // Covered Oct 8, 2026 (docs/dallas-fort-worth-venue-table-answer.md): Dallas, Tarrant, Collin and Denton
+  // counties. One frame holds Dallas, Arlington, Fort Worth and Frisco; Denton and the Speedway sit off it.
+  'dallas-fort-worth': {
+    id: 'dallas-fort-worth',
+    name: 'Dallas–Fort Worth',
+    timeZone: 'America/Chicago',
+    center: [-97.0, 32.85],
+    zoom: 9,
   },
   phoenix: {
     id: 'phoenix',

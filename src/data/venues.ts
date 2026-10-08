@@ -1443,6 +1443,387 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 47000, note: "Reported, after a cut from 75,000; the 2026 Cup race sold out. One weekend a year (June 25–27, 2027). The research's one addition to the boundary; in Will County." }],
     roof: 'open',
   },
+  // ---------- Dallas–Fort Worth (docs/dallas-fort-worth-venue-table-answer.md; car shares from docs/dallas-fort-worth-city-type-answer.md), Oct 8, 2026 ----------
+  // Not venue rows: Fair Park's grounds and the Will Rogers grounds (sized per fair day), PGA Frisco, the convention halls, and
+  // the Fort Worth Convention Center Arena (final event Sept 2026). Car shares marked "ours" are not in the research.
+  'att-stadium': {
+    id: 'att-stadium',
+    metroId: 'dallas-fort-worth',
+    // Estimated (98–100%): no fixed-route transit in Arlington; even the World Cup's funded shuttle moved about 5%.
+    carShare: 0.99,
+    names: [{ name: "AT&T Stadium" }],
+    location: [-97.0928, 32.7479],
+    capacity: [
+      { seats: 80000, setup: 'football', note: 'Reported, seated; 100,000+ with standing-room platforms; NFL record 105,121 (2009)' },
+      { seats: 80000, setup: 'soccer', note: "The 2026 World Cup drew about 70,000 per match, not FIFA's listed 94,000; the seated bowl is the ceiling" },
+      { seats: 80000, setup: 'concert', note: 'Not published; the seated bowl as the ceiling. Estimated.' },
+    ],
+    roof: 'covered',
+  },
+  'cotton-bowl': {
+    id: 'cotton-bowl',
+    metroId: 'dallas-fort-worth',
+    // Estimated (88–95%) outside the fair; about 81% on Red River day with DART's fair service.
+    carShare: 0.92,
+    names: [{ name: 'Cotton Bowl Stadium' }, { name: 'Cotton Bowl' }],
+    location: [-96.7596, 32.7796],
+    capacity: [
+      { seats: 92100, setup: 'football', note: 'Official (Fair Park). Inside the State Fair grounds Sep 25 – Oct 18, 2026' },
+      { seats: 92100, setup: 'soccer', note: 'No published soccer configuration; Trinity FC averages about 3,000. Atlético Dallas (USL) joins 2027.' },
+    ],
+    roof: 'open',
+  },
+  'texas-motor-speedway': {
+    id: 'texas-motor-speedway',
+    metroId: 'dallas-fort-worth',
+    // Estimated: free lots for about 80,000 vehicles; no transit.
+    carShare: 0.99,
+    names: [{ name: 'Texas Motor Speedway' }],
+    location: [-97.2816, 33.0371],
+    capacity: [
+      { seats: 75000, note: 'Reported (2026), after cuts from about 150,000; the May 3, 2026 Cup race sold out. One race weekend a year.' },
+    ],
+    roof: 'open',
+  },
+  'amon-g-carter-stadium': {
+    id: 'amon-g-carter-stadium',
+    metroId: 'dallas-fort-worth',
+    // Estimated (80–90%): campus venue, no rail; students walk.
+    carShare: 0.85,
+    names: [{ name: 'Amon G. Carter Stadium' }],
+    location: [-97.368, 32.7098],
+    capacity: [
+      { seats: 46000, setup: 'football', note: 'Official (TCU); record 53,294 with standing room (2023)' },
+    ],
+    roof: 'open',
+  },
+  'globe-life-field': {
+    id: 'globe-life-field',
+    metroId: 'dallas-fort-worth',
+    // Estimated (95–99%): no transit; shares the Arlington lots with AT&T Stadium.
+    carShare: 0.97,
+    names: [{ name: 'Globe Life Field' }],
+    location: [-97.0841, 32.7476],
+    capacity: [
+      { seats: 40300, setup: 'baseball', note: 'Official (the Rangers); 40,518 has no source; record 42,500 (2023 World Series)' },
+      { seats: 43598, setup: 'concert', note: 'Reported: the Morgan Wallen record (Oct 2022), as the ceiling' },
+    ],
+    roof: 'covered',
+  },
+  'gerald-j-ford-stadium': {
+    id: 'gerald-j-ford-stadium',
+    metroId: 'dallas-fort-worth',
+    // Estimated (75–85%): Mockingbird DART station about a mile away with a free shuttle; students walk.
+    carShare: 0.8,
+    names: [{ name: 'Gerald J. Ford Stadium' }, { name: 'Ford Stadium' }],
+    location: [-96.7828, 32.8378],
+    capacity: [
+      { seats: 32000, setup: 'football', note: 'Official (SMU), before the 2024 end zone' },
+      { seats: 33200, setup: 'football', fromYear: 2024, note: 'Official (SMU, 2026)' },
+    ],
+    roof: 'open',
+  },
+  'datcu-stadium': {
+    id: 'datcu-stadium',
+    metroId: 'dallas-fort-worth',
+    // Estimated (78–88%): the A-train plus a game-day shuttle carries little; students walk over I-35E.
+    carShare: 0.83,
+    names: [{ name: 'Apogee Stadium' }, { name: 'DATCU Stadium', from: '2023-07-31' }],
+    location: [-97.1594, 33.2039],
+    capacity: [
+      { seats: 30850, setup: 'football', note: 'Reported, 2011–2023' },
+      { seats: 30100, setup: 'football', fromYear: 2024, note: 'Reported, 2024 on' },
+    ],
+    roof: 'open',
+  },
+  'choctaw-stadium': {
+    id: 'choctaw-stadium',
+    metroId: 'dallas-fort-worth',
+    // Estimated: the Arlington district, no transit. No regular tenant in 2026.
+    carShare: 0.98,
+    names: [{ name: 'Globe Life Park in Arlington' }, { name: 'Choctaw Stadium', from: '2021-08-25' }],
+    location: [-97.0826, 32.7513],
+    capacity: [
+      { seats: 25000, setup: 'football', note: 'Reported, the football and soccer configuration' },
+      { seats: 25000, setup: 'soccer', note: 'Reported' },
+      { seats: 48114, setup: 'baseball', note: 'Reported: the 1994–2019 Rangers configuration, no longer used' },
+    ],
+    roof: 'open',
+  },
+  'american-airlines-center': {
+    id: 'american-airlines-center',
+    metroId: 'dallas-fort-worth',
+    // Estimated (85–94%): DART and TRE at Victory Station beside the arena carry high single digits, by Victory's FY22 boardings.
+    carShare: 0.9,
+    names: [{ name: 'American Airlines Center' }],
+    location: [-96.8103, 32.7905],
+    capacity: [
+      { seats: 19200, setup: 'basketball', note: 'Reported; 21,146 with standing room' },
+      { seats: 18532, setup: 'hockey', note: 'Reported; 19,323 with standing room' },
+      { seats: 21000, setup: 'concert', note: 'Reported' },
+    ],
+    roof: 'indoor',
+  },
+  'dos-equis-pavilion': {
+    id: 'dos-equis-pavilion',
+    metroId: 'dallas-fort-worth',
+    // Estimated (88–95%): inside Fair Park, Green Line stations a short walk; no fair-day service boost outside the fair.
+    carShare: 0.92,
+    names: [{ name: 'Gexa Energy Pavilion' }, { name: 'Starplex Pavilion', from: '2017-01-01' }, { name: 'Dos Equis Pavilion', from: '2018-04-20' }],
+    location: [-96.7563, 32.7751],
+    capacity: [
+      { seats: 20000, setup: 'concert', note: 'Reported: about 7,500 covered seats plus 12,500 lawn' },
+    ],
+    roof: 'covered',
+  },
+  'toyota-stadium': {
+    id: 'toyota-stadium',
+    metroId: 'dallas-fort-worth',
+    // Estimated: Frisco is not a DART member; surface lots, with structures coming in the renovation.
+    carShare: 0.98,
+    names: [{ name: 'Toyota Stadium' }],
+    location: [-96.8354, 33.1542],
+    capacity: [
+      { seats: 20500, setup: 'soccer', note: 'Reported, the pre-renovation sellable maximum (19,096 seated bowl)' },
+      { seats: 15000, setup: 'soccer', fromYear: 2025, note: 'Estimated (research): about 11,000 in 2025 during the $182M renovation, 15,000–20,000 reported for 2026–27; no official figure. 22,500–23,900 after Q1 2028.' },
+      { seats: 20500, setup: 'football', note: 'The Dallas Renegades (UFL) and Frisco ISD play here; the same bowl' },
+      { seats: 30000, setup: 'concert', note: 'Reported (City of Frisco), north-end stage; may not survive the renovation' },
+    ],
+    roof: 'open',
+  },
+  'dickies-arena': {
+    id: 'dickies-arena',
+    metroId: 'dallas-fort-worth',
+    // Estimated (93–97%): a 2,210-car garage and the Will Rogers campus lots; one bus route.
+    carShare: 0.95,
+    names: [{ name: 'Dickies Arena' }],
+    location: [-97.3685, 32.7411],
+    capacity: [
+      { seats: 14000, setup: 'concert', note: 'Official, up to' },
+      { seats: 13300, setup: 'basketball', note: 'Official; Wikipedia says 13,550' },
+      { seats: 12200, setup: 'hockey', note: 'Official, hockey and family shows; rodeo 9,300' },
+    ],
+    roof: 'indoor',
+  },
+  'ford-center-at-the-star': {
+    id: 'ford-center-at-the-star',
+    metroId: 'dallas-fort-worth',
+    // Estimated, ours (not in the research): Frisco, the Dallas North Tollway, no rail; comparable to Toyota Stadium.
+    carShare: 0.98,
+    names: [{ name: 'Ford Center at The Star' }, { name: 'The Star' }],
+    location: [-96.829, 33.1101],
+    capacity: [
+      { seats: 12000, setup: 'football', note: "Reported; the Cowboys' practice facility, Frisco ISD football and events" },
+    ],
+    roof: 'indoor',
+  },
+  'riders-field': {
+    id: 'riders-field',
+    metroId: 'dallas-fort-worth',
+    // Estimated, ours (not in the research): Frisco, no rail; comparable to Toyota Stadium.
+    carShare: 0.98,
+    names: [{ name: 'Dr Pepper Ballpark' }, { name: 'Riders Field', from: '2021-01-01' }],
+    location: [-96.8197, 33.0984],
+    capacity: [
+      { seats: 10316, setup: 'baseball', note: 'Reported; 10,216 by MiLB; 7,748 fixed seats plus a berm' },
+    ],
+    roof: 'open',
+  },
+  'unt-coliseum': {
+    id: 'unt-coliseum',
+    metroId: 'dallas-fort-worth',
+    // Estimated: campus; students walk.
+    carShare: 0.83,
+    names: [{ name: 'UNT Coliseum' }, { name: 'The Super Pit' }],
+    location: [-97.1533, 33.2079],
+    capacity: [
+      { seats: 9797, setup: 'basketball', note: 'Reported; record 10,600 (1977)' },
+    ],
+    roof: 'indoor',
+  },
+  'dallas-memorial-arena': {
+    id: 'dallas-memorial-arena',
+    metroId: 'dallas-fort-worth',
+    // Estimated, ours (not in the research): downtown, with the Convention Center DART station closed 2026–2029.
+    carShare: 0.75,
+    names: [{ name: 'Dallas Memorial Auditorium' }, { name: 'Kay Bailey Hutchison Convention Center Dallas Memorial Arena' }, { name: 'Dallas Memorial Arena' }],
+    location: [-96.8019, 32.7748],
+    capacity: [
+      { seats: 10000, setup: 'basketball', note: "Reported, 'almost 10,000' before the renovation. Not hosting events in 2026." },
+      { seats: 8400, setup: 'basketball', fromYear: 2027, note: 'Reported (city memo): about 8,400 for the WNBA after the renovation; the Wings from 2027' },
+    ],
+    roof: 'indoor',
+  },
+  'fair-park-coliseum': {
+    id: 'fair-park-coliseum',
+    metroId: 'dallas-fort-worth',
+    // Estimated: inside Fair Park, as the Cotton Bowl.
+    carShare: 0.92,
+    names: [{ name: 'Fair Park Coliseum' }],
+    location: [-96.7572, 32.7792],
+    capacity: [
+      { seats: 8500, setup: 'concert', note: 'Reported (OVG360), end stage; 9,552 maximum; 5,768 seated' },
+    ],
+    roof: 'indoor',
+  },
+  'curtis-culwell-center': {
+    id: 'curtis-culwell-center',
+    metroId: 'dallas-fort-worth',
+    // Estimated, ours (not in the research): Garland, the Bush Turnpike, surface lots.
+    carShare: 0.97,
+    names: [{ name: 'Curtis Culwell Center' }],
+    location: [-96.642, 32.9594],
+    capacity: [
+      { seats: 6860, setup: 'basketball', note: 'Reported, seated; 8,500 standing' },
+    ],
+    roof: 'indoor',
+  },
+  'toyota-music-factory': {
+    id: 'toyota-music-factory',
+    metroId: 'dallas-fort-worth',
+    // Estimated (88–95%): the DART Orange Line's Irving Convention Center station is a short walk; an 800-car garage.
+    carShare: 0.92,
+    names: [{ name: 'Irving Music Factory' }, { name: 'The Pavilion at Toyota Music Factory', from: '2017-09-01' }, { name: 'Toyota Music Factory' }],
+    location: [-96.9448, 32.8742],
+    capacity: [
+      { seats: 8000, setup: 'concert', note: 'Official: the indoor theater plus lawn; 4,000 all-seated indoors (under the floor in winter)' },
+    ],
+    roof: 'covered',
+  },
+  'lone-star-park': {
+    id: 'lone-star-park',
+    metroId: 'dallas-fort-worth',
+    // Estimated: no transit; the Grand Prairie cluster on I-30.
+    carShare: 0.99,
+    names: [{ name: 'Lone Star Park' }],
+    location: [-96.9882, 32.7747],
+    capacity: [
+      { seats: 8000, note: 'Reported, an older grandstand figure; about 700,000 visitors a year. Thoroughbred meet April–July.' },
+    ],
+    roof: 'covered',
+  },
+  'grand-prairie-stadium': {
+    id: 'grand-prairie-stadium',
+    metroId: 'dallas-fort-worth',
+    // Estimated, ours (not in the research): the same Grand Prairie cluster as Lone Star Park.
+    carShare: 0.99,
+    names: [{ name: 'Grand Prairie Stadium' }, { name: 'QuikTrip Park' }],
+    location: [-96.986, 32.7683],
+    capacity: [
+      { seats: 7200, note: 'Reported: cricket (Texas Super Kings, Major League Cricket); expandable to 15,000' },
+    ],
+    roof: 'open',
+  },
+  'mansfield-stadium': {
+    id: 'mansfield-stadium',
+    metroId: 'dallas-fort-worth',
+    // Estimated, ours (not in the research): a new suburban stadium with surface parking.
+    carShare: 0.98,
+    names: [{ name: 'Texas Health Mansfield Stadium' }, { name: 'Mansfield Stadium' }],
+    location: [-97.1395, 32.565],
+    capacity: [
+      { seats: 7000, setup: 'soccer', note: 'Reported; 7,500 by the city. Opened summer 2026; North Texas SC (MLS Next Pro). Coordinates approximate (research).' },
+    ],
+    roof: 'open',
+  },
+  'college-park-center': {
+    id: 'college-park-center',
+    metroId: 'dallas-fort-worth',
+    // Estimated (80–90%): a campus venue in a city with no fixed-route transit; students walk.
+    carShare: 0.85,
+    names: [{ name: 'College Park Center' }],
+    location: [-97.1081, 32.7305],
+    capacity: [
+      { seats: 7000, setup: 'basketball', note: 'Reported; the Wings through 2026, UTA basketball' },
+    ],
+    roof: 'indoor',
+  },
+  'moody-coliseum': {
+    id: 'moody-coliseum',
+    metroId: 'dallas-fort-worth',
+    // Estimated: the SMU campus, Mockingbird station; students walk.
+    carShare: 0.8,
+    names: [{ name: 'Moody Coliseum' }],
+    location: [-96.7807, 32.8404],
+    capacity: [
+      { seats: 7000, setup: 'basketball', note: 'Official (SMU)' },
+    ],
+    roof: 'indoor',
+  },
+  'cutx-event-center': {
+    id: 'cutx-event-center',
+    metroId: 'dallas-fort-worth',
+    // Estimated: a freeway-side venue with surface lots.
+    carShare: 0.99,
+    names: [{ name: 'Allen Event Center' }, { name: 'Credit Union of Texas Event Center', from: '2021-10-15' }],
+    location: [-96.6546, 33.1275],
+    capacity: [
+      { seats: 7080, setup: 'concert', note: 'Reported, in the round; 6,200 end stage' },
+      { seats: 6200, setup: 'hockey', note: 'Estimated (research): the end-stage figure as a proxy; the Allen Americans (ECHL)' },
+    ],
+    roof: 'indoor',
+  },
+  'schollmaier-arena': {
+    id: 'schollmaier-arena',
+    metroId: 'dallas-fort-worth',
+    // Estimated: the TCU campus, as the stadium.
+    carShare: 0.85,
+    names: [{ name: 'Ed & Rae Schollmaier Arena' }, { name: 'Schollmaier Arena' }],
+    location: [-97.3667, 32.7088],
+    capacity: [
+      { seats: 6800, setup: 'basketball', note: 'Reported; an 8,500 figure looks like an error' },
+    ],
+    roof: 'indoor',
+  },
+  'texas-trust-cu-theatre': {
+    id: 'texas-trust-cu-theatre',
+    metroId: 'dallas-fort-worth',
+    // Estimated, ours (not in the research): the Grand Prairie cluster.
+    carShare: 0.99,
+    names: [{ name: 'Verizon Theatre' }, { name: 'The Theatre at Grand Prairie', from: '2018-07-27' }, { name: 'Texas Trust CU Theatre', from: '2021-04-27' }],
+    location: [-96.9824, 32.7668],
+    capacity: [
+      { seats: 6350, setup: 'concert', note: 'Official (AEG), seated' },
+    ],
+    roof: 'indoor',
+  },
+  'billy-bobs-texas': {
+    id: 'billy-bobs-texas',
+    metroId: 'dallas-fort-worth',
+    // Estimated, ours (not in the research): the Stockyards district, congested on weekends.
+    carShare: 0.9,
+    names: [{ name: "Billy Bob's Texas" }],
+    location: [-97.3478, 32.7909],
+    capacity: [
+      { seats: 6000, setup: 'concert', note: 'Official, up to' },
+    ],
+    roof: 'indoor',
+  },
+  'comerica-center': {
+    id: 'comerica-center',
+    metroId: 'dallas-fort-worth',
+    // Estimated: Frisco, next to Riders Field.
+    carShare: 0.98,
+    names: [{ name: 'Dr Pepper Arena' }, { name: 'Comerica Center' }],
+    location: [-96.8194, 33.1006],
+    capacity: [
+      { seats: 6000, setup: 'concert', note: 'Official (Visit Frisco), seated; 7,000 standing' },
+      { seats: 4500, setup: 'basketball', note: 'Reported, older: the Texas Legends (G League) sit under the floor' },
+    ],
+    roof: 'indoor',
+  },
+  'will-rogers-coliseum': {
+    id: 'will-rogers-coliseum',
+    metroId: 'dallas-fort-worth',
+    // Estimated: the Will Rogers campus, as Dickies Arena.
+    carShare: 0.95,
+    names: [{ name: 'Will Rogers Memorial Coliseum' }],
+    location: [-97.37, 32.7472],
+    capacity: [
+      { seats: 5652, note: 'Official (City of Fort Worth), permanent seats; equestrian and Stock Show events' },
+    ],
+    roof: 'indoor',
+  },
   'amalie-arena': {
     id: 'amalie-arena',
     metroId: 'tampa',
