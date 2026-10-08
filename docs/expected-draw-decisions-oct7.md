@@ -165,3 +165,16 @@ Both answers are saved in full (`docs/dallas-fort-worth-venue-table-answer.md`, 
 - **Toyota Stadium during its renovation** reads 15,000 (the research's estimate; no official figure) until FC Dallas publishes one.
 - **Car shares that are mine** (nearest comparable, noted in each row): Ford Center, Riders Field, Dallas Memorial Arena, Curtis Culwell Center, Grand Prairie Stadium, the Mansfield stadium, Texas Trust CU Theatre, Billy Bob's.
 - **The Cowboys announce 92,000+ against 80,000 seats** (standing-room platforms), so their estimate sits above Seats on the page, as the 49ers' does.
+
+## Standing room and the "Seats" line (Kylie's question, Oct 8): a look, not a build
+Kylie asked whether standing-room tickets explain estimates above Seats for the Cowboys and 49ers, and whether Seats is the right second figure. What the data on file says (regular season, 2022–2025, announced):
+
+| Team | Listed seats | Median announced | Max announced | Gap |
+|---|---|---|---|---|
+| Cowboys (AT&T Stadium) | 80,000 | 93,448 | 93,843 | +17%: the "Party Pass" standing platforms, sold every game; the stadium lists 100,000+ with them |
+| 49ers (Levi's) | 68,500 | 71,607 | 71,836 | +5%: standing-room and club areas; the research found no published figure above 68,500 |
+| Giants (MetLife) | 82,500 | 78,019 | 83,367 | the max is over by 1%; the median under |
+| Falcons (Mercedes-Benz) | 71,000 | 69,921 | 72,665 | the max is over by 2% |
+| Rams, Chargers, Seahawks, Bears | — | under their listed seats | at or under | — |
+
+So yes: standing room accounts for the Cowboys' gap entirely and the 49ers' most likely, and the app's estimate (the median announced) is already the right number. The question is only the second line. **Recommendation:** keep "Seats" as the seated figure (it is what every source publishes and what fans mean), and add an optional **standing-room figure** to a venue's capacity row where one is published or regularly sold (AT&T 100,000+; Levi's not published). The page would then read "80,000 seats · 100,000 with standing room", the estimate's cap would use the higher figure, and nothing changes for the 200 rooms that have none. Not built; waiting on Kylie.
