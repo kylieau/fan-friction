@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-07",
+  "results": [
+    {
+      "eventId": "2026-10-07-espn-ducks-401892456",
+      "metroId": "la",
+      "date": "2026-10-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "honda-center",
+      "homeTeamId": "ducks",
+      "home": {
+        "name": "Ducks",
+        "score": 2
+      },
+      "away": {
+        "name": "Oilers",
+        "score": 5
+      },
+      "attendance": 17174,
+      "capturedAt": "2026-10-08T14:40:26.508Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

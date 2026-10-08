@@ -74,6 +74,24 @@
       "shortwave": 78,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "atlanta",
+      "venueId": "city",
+      "date": "2026-10-12",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T14:36:55.908Z",
+      "feelsLikeF": 77.8,
+      "tempF": 77.5,
+      "humidity": 52,
+      "windMph": 5.8,
+      "uvIndex": 0.35,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 77,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
@@ -123,6 +141,18 @@
       "feelsLikeLowF": 63.9,
       "code": 0,
       "precipProbability": 8,
+      "precipMm": 0
+    },
+    {
+      "metroId": "atlanta",
+      "venueId": "city",
+      "date": "2026-10-12",
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T14:36:55.908Z",
+      "feelsLikeHighF": 81.7,
+      "feelsLikeLowF": 63.4,
+      "code": 3,
+      "precipProbability": 7,
       "precipMm": 0
     }
   ]

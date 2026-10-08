@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-07",
+  "results": [
+    {
+      "eventId": "2026-10-07-espn-valkyries-401918298",
+      "metroId": "bay-area",
+      "date": "2026-10-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "valkyries",
+      "home": {
+        "name": "Valkyries",
+        "score": 83
+      },
+      "away": {
+        "name": "Aces",
+        "score": 81
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-10-08T14:40:28.365Z",
+      "duration": {
+        "minutes": 141,
+        "kind": "estimated"
+      },
+      "startedAt": "21:36"
+    }
+  ]
+}

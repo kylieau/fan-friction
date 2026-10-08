@@ -222,6 +222,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "18:53"
   },
   {
+    "eventId": "2026-10-07-espn-valkyries-401918298",
+    "metroId": "bay-area",
+    "date": "2026-10-07",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "chase-center",
+    "homeTeamId": "valkyries",
+    "home": {
+      "name": "Valkyries",
+      "score": 83
+    },
+    "away": {
+      "name": "Aces",
+      "score": 81
+    },
+    "attendance": 18064,
+    "capturedAt": "2026-10-08T14:40:28.365Z",
+    "duration": {
+      "minutes": 141,
+      "kind": "estimated"
+    },
+    "startedAt": "21:36"
+  },
+  {
     "eventId": "2026-10-04-espn-bears-401872972",
     "metroId": "chicago",
     "date": "2026-10-04",
@@ -500,6 +524,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:21"
   },
   {
+    "eventId": "2026-10-07-espn-ducks-401892456",
+    "metroId": "la",
+    "date": "2026-10-07",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "honda-center",
+    "homeTeamId": "ducks",
+    "home": {
+      "name": "Ducks",
+      "score": 2
+    },
+    "away": {
+      "name": "Oilers",
+      "score": 5
+    },
+    "attendance": 17174,
+    "capturedAt": "2026-10-08T14:40:26.508Z",
+    "duration": {
+      "minutes": 159,
+      "kind": "estimated"
+    },
+    "startedAt": "19:08"
+  },
+  {
     "eventId": "2026-10-06-espn-canadiens-401891815",
     "metroId": "montreal",
     "date": "2026-10-06",
@@ -757,6 +805,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "official"
     },
     "startedAt": "18:39"
+  },
+  {
+    "eventId": "2026-10-07-mlb-849827",
+    "metroId": "san-diego",
+    "date": "2026-10-07",
+    "sourceId": "mlb",
+    "status": "final",
+    "venueId": "petco-park",
+    "homeTeamId": "padres",
+    "home": {
+      "name": "Padres",
+      "score": 1
+    },
+    "away": {
+      "name": "Brewers",
+      "score": 3
+    },
+    "capturedAt": "2026-10-08T14:40:27.086Z",
+    "attendance": 47712,
+    "duration": {
+      "minutes": 180,
+      "kind": "official"
+    },
+    "startedAt": "19:08"
   },
   {
     "eventId": "2026-10-04-espn-kraken-401891824",

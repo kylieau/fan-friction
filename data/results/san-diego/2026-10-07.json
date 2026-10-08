@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-10-07",
+  "results": [
+    {
+      "eventId": "2026-10-07-mlb-849827",
+      "metroId": "san-diego",
+      "date": "2026-10-07",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "petco-park",
+      "homeTeamId": "padres",
+      "home": {
+        "name": "Padres",
+        "score": 1
+      },
+      "away": {
+        "name": "Brewers",
+        "score": 3
+      },
+      "capturedAt": "2026-10-08T14:40:27.086Z",
+      "attendance": 47712,
+      "duration": {
+        "minutes": 180,
+        "kind": "official"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

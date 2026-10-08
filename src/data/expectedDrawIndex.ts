@@ -28116,8 +28116,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "la",
     "teamId": "ducks",
     "opponent": "oilers",
-    "ratio": 1.002,
-    "games": 5
+    "ratio": 1.013,
+    "games": 6
   },
   {
     "metroId": "la",
