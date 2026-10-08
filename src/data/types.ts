@@ -213,6 +213,9 @@ export interface CrowdEvent {
     planning?: boolean;
     /** True when the figure rests on announced crowds (a team's or a league's), not on a rule of thumb or the building. */
     fromCrowds?: boolean;
+    /** How many announced crowds are behind the figure, and which seasons ("2023, 2024, 2025"). */
+    games?: number;
+    seasons?: string;
   };
   /** A preseason (exhibition) game. Sized from past preseason crowds, never the regular season's. */
   preseason?: boolean;

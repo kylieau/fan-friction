@@ -1718,6 +1718,23 @@ button {
   flex: 1 1 100%;
 }
 
+/* The (i) card's per-event opening and the heading of the general explanation under it. */
+.how-about {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.how-sub {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink2);
+}
+
 /* How full the building reads: a word, then a track in pale blue with a gold fill, under an estimate. */
 .crowd-fill-word {
   display: block;

@@ -2,7 +2,7 @@ import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { frictionLabel, frictionVerdictTitle, showFriction } from '../config/scoreLabels';
-import { feelsLikeLabel, isOpenAir, weatherForEvent, weatherGlyph, weatherRangeForEvent } from '../data';
+import { VENUES, feelsLikeLabel, isOpenAir, venueNameOn, weatherForEvent, weatherGlyph, weatherRangeForEvent } from '../data';
 import {
   CONCERT_FILL,
   drawSavedAhead,
@@ -210,7 +210,7 @@ export function EventScreen() {
         {me.soldOut && me.count !== undefined && <span className="tag-soldout">SOLD OUT</span>}
         <DrawNote event={e} counted={me.count !== undefined || me.soldOut} />
       </section>
-      {showHow && <HowEstimatesWork onClose={() => setShowHow(false)} />}
+      {showHow && <HowEstimatesWork onClose={() => setShowHow(false)} event={e} seats={me.capacity} />}
 
       <WeatherDetail event={e} />
 
@@ -273,8 +273,9 @@ function FillBar({ count, capacity }: { count: number; capacity: number }) {
 function DrawNote({ event, counted }: { event: CrowdEvent; counted: boolean }) {
   if (!counted) {
     const d = event.expectedDraw;
-    if (!d || d.low == null || d.high == null || roundEstimate(d.low) === roundEstimate(d.high)) return null;
-    return <p className="crowd-note">{d.planning ? 'Likely' : 'Middle half'} {fmt(roundEstimate(d.low))}–{fmt(roundEstimate(d.high))}.</p>;
+    // The middle half lives in the (i) card (Kylie, Oct 8: "half of games land between"); a playoff planning range stays here.
+    if (!d || !d.planning || d.low == null || d.high == null || roundEstimate(d.low) === roundEstimate(d.high)) return null;
+    return <p className="crowd-note">Likely {fmt(roundEstimate(d.low))}–{fmt(roundEstimate(d.high))}.</p>;
   }
   const saved = drawSavedAhead(event);
   if (!saved) return null;
@@ -291,7 +292,33 @@ function HowButton({ onOpen }: { onOpen: () => void }) {
 }
 
 /** One explanation for every estimate in the app, games and shows alike (Kylie, Oct 7). */
-function HowEstimatesWork({ onClose }: { onClose: () => void }) {
+/**
+ * The per-event opening of the (i) card (Kylie, Oct 8, from the mockup): where the figure comes from, "half of
+ * games land between" for the middle half, and the standing-room sentence when the crowd tops the seats.
+ */
+function aboutThisEstimate(event: CrowdEvent, seats: number | undefined): string | null {
+  const d = event.expectedDraw;
+  if (!d?.fromCrowds) return null;
+  const where = event.place.type === 'venue' ? venueNameOn(VENUES[event.place.venueId], event.date) : event.place.name;
+  const span = seasonSpan(d.seasons);
+  const parts = [`Based on ${d.games ? `${d.games} announced crowds` : 'announced crowds'} at ${where}${span ? `, ${span}` : ''}.`];
+  if (d.low != null && d.high != null && roundEstimate(d.low) !== roundEstimate(d.high)) {
+    parts.push(d.planning ? `A planning range: ${fmt(roundEstimate(d.low))} to ${fmt(roundEstimate(d.high))}.` : `Half of games land between ${fmt(roundEstimate(d.low))} and ${fmt(roundEstimate(d.high))}.`);
+  }
+  if (seats && d.count > seats) parts.push(`${where} sells standing room, so crowds can top its ${fmt(seats)} seats.`);
+  return parts.join(' ');
+}
+
+/** "2023, 2024, 2025" → "2023–2025"; anything else as written. */
+function seasonSpan(seasons: string | undefined): string | undefined {
+  if (!seasons) return undefined;
+  const years = seasons.match(/\b20\d\d\b/g)?.map(Number) ?? [];
+  if (years.length >= 2 && /^[\d,\s]+$/.test(seasons) && years[years.length - 1] - years[0] === years.length - 1) return `${years[0]}–${years[years.length - 1]}`;
+  return seasons;
+}
+
+function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; event: CrowdEvent; seats: number | undefined }) {
+  const about = aboutThisEstimate(event, seats);
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => {
       if (ev.key === 'Escape') onClose();
@@ -303,8 +330,10 @@ function HowEstimatesWork({ onClose }: { onClose: () => void }) {
     <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="how-title" onClick={onClose}>
       <div className="home-card" onClick={(ev) => ev.stopPropagation()}>
         <h1 id="how-title" className="home-title">
-          How estimates work
+          {about ? 'About this estimate' : 'How estimates work'}
         </h1>
+        {about && <p className="how-about">{about}</p>}
+        <h2 className="how-sub">How estimates work</h2>
         <p className="home-helper">
           <strong>A game:</strong> the crowd this team typically announced in this building on this kind of night, over the last
           two or three seasons, nudged by how the team is drawing this season and how this visitor has drawn here. Never above
