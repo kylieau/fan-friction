@@ -1,0 +1,44 @@
+<html><head><link rel="stylesheet" href="base.css"><style>
+.map{position:absolute;left:0;top:0;width:390px;background-size:390px 844px;background-repeat:no-repeat}
+.pop{position:absolute;left:12px;width:256px;background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(15,27,45,.25);padding:14px 16px 12px;z-index:6}
+.pop:after{content:"";position:absolute;left:12px;bottom:-7px;width:14px;height:14px;background:#fff;transform:rotate(45deg);box-shadow:3px 3px 6px rgba(15,27,45,.08)}
+.pop h3{font-size:14px;font-weight:800;display:flex;justify-content:space-between;align-items:center}
+.pop p{font-size:13px;line-height:1.4;color:var(--ink);margin-top:8px}
+.pop p b{font-weight:800}
+.pop .foot{font-size:11.5px;color:var(--mute);margin-top:10px;font-weight:600}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:var(--chrome);border-radius:22px 22px 0 0;box-shadow:0 -2px 12px rgba(15,27,45,.15);padding:0 16px 14px;z-index:6}
+.sheet h2{font-size:18px;font-weight:800;margin:12px 2px 10px;display:flex;justify-content:space-between;align-items:center}
+</style></head><body>
+<div class="title"><h1>01 · Map key (the ? button)</h1><p>Today the key card squeezes to about 28 px wide, one word per line, and runs off the right edge. It stays open when you switch cities or pick an event, and it's missing on empty maps (Seattle) and in Traffic view. Cause seen in the live CSS: the card's max width is a percent of the 36 px button column. The soft-lock puts the ? at bottom-left, but the app has it at bottom-right (the map's ⓘ credit is at bottom-left).</p></div>
+<div class="cols">
+ <div class="col"><span class="lab cur">Current</span><div class="src">04-map-key-clipped-bug.png (same on 06, 07; also seen live at 390 pt)</div>
+  <div class="phone"><img class="cur" src="cur/c01.png"></div>
+  <div class="cap">Key text wraps one word per line ("Gold / glow / is th…") and gets cut off past the right edge. Nothing closes it except tapping ? again.</div></div>
+ <div class="col"><span class="lab opt">Option 1 · Popover from the ?</span><div class="src">Small card anchored to the ?, opens up and inward</div>
+  <div class="phone" style="height:650px">
+   <div class="map" style="height:650px;background-image:url(bg-oct7-chips.png)"></div>
+   <div class="pop" style="top:436px"><h3>Map key <span class="ic" style="color:var(--mute)"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg>
+</span></h3>
+    <p><b>Gold circle</b> = crowd size. Bigger circle, bigger crowd.</p>
+    <p><b>Pale ring</b> = the event you picked.</p>
+    <div class="foot">Tap the map or switch cities to close.</div></div>
+   <div class="mapbtn" style="left:12px;top:596px;background:var(--ink);color:#fff">?</div>
+   <div class="mapbtn" style="left:342px;top:596px;width:26px;height:26px;font-size:0;color:var(--ink)"><span class="ic" style="width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M508.5-291.5Q520-303 520-320v-160q0-17-11.5-28.5T480-520q-17 0-28.5 11.5T440-480v160q0 17 11.5 28.5T480-280q17 0 28.5-11.5Zm0-320Q520-623 520-640t-11.5-28.5Q497-680 480-680t-28.5 11.5Q440-657 440-640t11.5 28.5Q463-600 480-600t28.5-11.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+</span></div>
+  </div>
+  <div class="cap"><b>Card width comes from the screen, not the button</b> (about 256 pt, never more than the screen minus 24). It opens above the ? and toward the middle, so it can't leave the screen. It closes on ×, a map tap, a city switch, or picking an event. The ? also shows on empty maps and in Traffic view. Apple HIG: popovers point at their source and stay on-screen. Header and strip are shown as the app has them today.</div></div>
+ <div class="col"><span class="lab opt">Option 2 · Key in the bottom sheet</span><div class="src">? raises the sheet that's already there</div>
+  <div class="phone" style="height:650px">
+   <div class="map" style="height:650px;background-image:url(bg-oct7-chips.png)"></div>
+      <div class="sheet" style="height:250px"><div class="handle"></div>
+    <h2><span style="display:flex;align-items:center;gap:8px"><span class="mapbtn" style="position:static;width:28px;height:28px;font-size:14px;background:var(--ink);color:#fff">?</span>Map key</span> <span class="link" style="font-size:14px">Done</span></h2>
+    <div class="card" style="overflow:hidden"><table class="t">
+     <tr><th style="width:38%">What you see</th><th>What it means</th></tr>
+     <tr><td class="b">Gold circle</td><td>Crowd size. Bigger circle, bigger crowd.</td></tr>
+     <tr><td class="b">Pale ring</td><td>The event you picked</td></tr>
+     <tr><td class="b">Blue lines <span style="font-weight:600;color:var(--mute)">(Traffic)</span></td><td>Traffic estimate · not live</td></tr>
+    </table></div>
+   </div>
+  </div>
+  <div class="cap"><b>Uses the sheet that's already on screen,</b> so nothing can open off the edge, and it fits a table. It covers the Traffic words too ("Estimate · not live"). The ? turns into the sheet title while it is open. Swipe down or tap Done to close. It goes away by itself on a city switch. Trade-off: it covers the bottom of the map while it's open. NN/g: put help where people look and let them dismiss it, with no persistent legend.</div></div>
+</div></body></html>

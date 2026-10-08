@@ -1,0 +1,37 @@
+<html><head><link rel="stylesheet" href="base.css"><style>
+.map{position:absolute;left:0;top:0;width:390px;height:480px;background:url(bg-oct3.png) no-repeat;background-size:390px 844px;background-position:0 -250px}
+svg.lines{position:absolute;left:0;top:0;width:390px;height:480px;z-index:2;pointer-events:none}
+.badge{position:absolute;min-width:26px;height:22px;border-radius:11px;background:var(--dodger);color:#fff;font-size:11.5px;font-weight:800;display:flex;align-items:center;justify-content:center;padding:0 6px;box-shadow:0 1px 4px rgba(15,27,45,.3);z-index:4;border:2px solid #fff}
+.mlab{position:absolute;left:10px;bottom:10px;background:#fff;border-radius:8px;padding:4px 8px;font-size:11px;font-weight:700;color:var(--ink2);z-index:4}
+</style></head><body>
+<div class="title"><h1>06 · Neighbor chips in Inglewood (SoFi, Kia Forum, Intuit Dome)</h1><p>Oct 7: the Bruno Mars (SoFi) and Mumford &amp; Sons (Kia Forum) chips stack on top of each other, their dots touch, and they swap places when you pick one. Oct 3 is worse. Inglewood has three dots but only the Bruno Mars chip; Klangkuenstler and aespa are hidden with no sign that anything's missing. Map labeling practice (Mapbox/Google declutter, callout leader lines): when labels collide, move them along a short leader line or show a count. Never drop them silently.</p></div>
+<div class="cols">
+ <div class="col"><span class="lab cur">Current</span><div class="src">02-map-la.png (Oct 7) · live Oct 3, 390 pt</div>
+  <div class="phone"><div class="seclab">Oct 7 (02)</div><img class="cur" src="cur/c06a.png"><div class="seclab">Oct 3 (live): 3 Inglewood dots, 1 chip</div><img class="cur" src="cur/c06b.png"></div>
+  <div class="cap">Chips 2 and 3 in Inglewood are hidden on purpose by the collision code (they're in the page with a hidden class). Both had Heavy friction on the Oct 3 date page (13), so the map hides exactly the events the night was about.</div></div>
+
+ <div class="col"><span class="lab opt">Option 1 · Fan out with short leader lines</span><div class="src">All chips stay; offsets go east (the west side is the coast)</div>
+  <div class="phone" style="height:480px"><div class="map"></div>
+   <svg class="lines" viewBox="0 0 390 480"><g stroke="#0F1B2D" stroke-opacity=".55" stroke-width="1.5" fill="none">
+    <path d="M73 385 L104 340 L120 340"/><path d="M79 400 L120 394"/><path d="M73 424.5 L104 448 L120 448"/></g></svg>
+   <div class="chipm" style="left:198px;top:27px"><div class="cn">Dodgers (NLDS G1)</div><div class="cm">1:08 pm · 50.2k</div></div>
+   <div class="chipm" style="left:196px;top:87px"><div class="cn">Ken Carson</div><div class="cm">7:00 pm · 35.0k</div></div>
+   <div class="chipm" style="left:146px;top:171px"><div class="cn">USC</div><div class="cm">4:30 pm · 59.1k</div></div>
+   <div class="chipm" style="left:120px;top:318px"><div class="cn">Klangkuenstler</div><div class="cm">7:00 pm · 17.5k</div></div>
+   <div class="chipm" style="left:120px;top:372px"><div class="cn">Bruno Mars</div><div class="cm">7:00 pm · 70.0k</div></div>
+   <div class="chipm" style="left:120px;top:426px"><div class="cn">aespa</div><div class="cm">8:00 pm · 18.0k</div></div>
+   <div class="mlab" style="left:10px;top:10px;bottom:auto">aespa crowd <span class="ex">example</span></div>
+  </div>
+  <div class="cap"><b>Every event keeps its fixed 112×44 chip.</b> Neighbors fan out in a tidy column toward open space (inland here), each with a thin line back to its own dot, in north-to-south order like the venues. Positions stay put when you select one, so nothing jumps. This is the lock's "short geography-aware offset", plus the leader line. Trade-off: in really dense spots (Downtown, 4+ events) the column gets long.</div></div>
+
+ <div class="col"><span class="lab opt">Option 2 · Biggest crowd + a "+2" count</span><div class="src">One chip with a count; tap fans out like Option 1</div>
+  <div class="phone" style="height:480px"><div class="map"></div>
+   <svg class="lines" viewBox="0 0 390 480"><g stroke="#0F1B2D" stroke-opacity=".55" stroke-width="1.5" fill="none"><path d="M79 400 L120 394"/></g></svg>
+   <div class="chipm" style="left:198px;top:27px"><div class="cn">Dodgers (NLDS G1)</div><div class="cm">1:08 pm · 50.2k</div></div>
+   <div class="chipm" style="left:196px;top:87px"><div class="cn">Ken Carson</div><div class="cm">7:00 pm · 35.0k</div></div>
+   <div class="chipm" style="left:146px;top:171px"><div class="cn">USC</div><div class="cm">4:30 pm · 59.1k</div></div>
+   <div class="chipm" style="left:120px;top:372px"><div class="cn">Bruno Mars</div><div class="cm">7:00 pm · 70.0k</div></div>
+   <div class="badge" style="left:218px;top:360px">+2</div>
+  </div>
+  <div class="cap"><b>The chip stays clean and the "+2" says something's hiding.</b> The biggest crowd at that spot gets the chip. Tap the chip or the +2 and the group fans out (Option 1 layout), and the list sheet always shows all three. Fewest chips on screen. <b>Lock note:</b> the +2 badge is a new mark on the chip lock, so she'd need to OK it. Trade-off: it still hides two Heavy-friction events until you tap.</div></div>
+</div></body></html>

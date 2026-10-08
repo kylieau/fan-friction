@@ -79,12 +79,20 @@ function rewrite(fileRepoPath, text) {
   const oldDir = path.posix.dirname(fileRepoPath);
   const newDir = path.posix.dirname(newPathOf(fileRepoPath));
   const inDocs = fileRepoPath.startsWith('docs/');
+  // Links from a moving doc to something outside docs/ (code, config): keep them pointing at the same file.
+  if (inDocs && newDir !== oldDir) {
+    text = text.replace(/\]\((\.{1,2}\/[^)#\s]*)((?:#[^)\s]*)?)\)/g, (whole, rel, frag) => {
+      const target = path.posix.normalize(path.posix.join(oldDir, rel));
+      if (target.startsWith('docs/') || target.startsWith('..')) return whole; // doc targets are handled below
+      return `](${path.posix.relative(newDir, target)}${frag})`;
+    });
+  }
   return text.replace(REF, (whole, prefix, rest, offset, str) => {
     const inLink = str.slice(Math.max(0, offset - 2), offset) === ']('; // a markdown link target
     let oldTarget; // repo-relative path of what this reference pointed at
     if (prefix === 'docs/') oldTarget = `docs/${rest}`;
     else if (prefix) oldTarget = path.posix.normalize(path.posix.join(oldDir, prefix, rest));
-    else if (inDocs) {
+    else if (inDocs && fileRepoPath.endsWith('.md')) { // bare names are prose only in markdown; html/css use them as real paths
       const sibling = path.posix.normalize(path.posix.join(oldDir, rest));
       oldTarget = docsSet.has(sibling.slice(5)) ? sibling : docsSet.has(rest) ? `docs/${rest}` : null;
     }

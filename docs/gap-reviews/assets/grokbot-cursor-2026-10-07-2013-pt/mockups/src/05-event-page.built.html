@@ -1,0 +1,72 @@
+<html><head><link rel="stylesheet" href="base.css"><style>
+.pg{padding:14px 16px 16px}
+.back{display:flex;align-items:center;gap:2px;font-weight:800;font-size:15px}
+.ttl{font-size:26px;font-weight:800;margin-top:10px;letter-spacing:-.3px}
+.meta{font-size:14px;color:var(--ink2);font-weight:600;margin-top:2px}
+.facts{display:flex;gap:6px;margin-top:10px}
+.fact{font-size:12px;font-weight:800;background:#fff;border-radius:999px;padding:3px 10px;color:var(--ink2)}
+.fcard{margin-top:12px;padding:14px}
+.fh{font-family:'Big Shoulders Display';font-weight:800;font-size:26px;color:var(--dodger);line-height:1}
+.fs{font-size:11.5px;color:var(--mute);font-weight:600;margin-top:8px}
+.crowd{margin-top:10px;padding:12px 14px;display:flex;gap:22px;align-items:baseline}
+.crowd .big{font-family:'Big Shoulders Display';font-weight:800;font-size:28px}
+.crowd .lb{font-size:12px;color:var(--ink2);font-weight:600}
+.note{font-size:11.5px;color:var(--ink2);font-weight:600;text-align:center;margin-top:8px}
+.hd{display:flex;justify-content:space-between;align-items:flex-start;margin-top:8px}
+.cnt{font-size:12px;color:var(--ink2);font-weight:700;text-align:right;margin-top:5px}
+.stamp{margin-top:10px;padding:12px 14px}
+.stamp .k{font-size:11px;font-weight:800;color:var(--dodger);letter-spacing:.5px}
+.stamp .t{font-size:13.5px;font-weight:600;margin-top:2px;line-height:1.4}
+.lr{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border-bottom:1px solid #EEF1F5}
+.lr .tm{font-size:12.5px;font-weight:700;color:var(--ink2);width:52px;flex:0 0 52px;padding-top:1px}
+.lr .n{font-weight:800;font-size:14px}.lr .v{font-size:12px;color:var(--mute);font-weight:600}
+.open{background:#F2F8FE;box-shadow:inset 3px 0 0 var(--dodger)}
+.mini{margin-top:8px;font-size:12px;width:100%;border-collapse:collapse}
+.mini td{padding:4px 0;color:var(--ink2);font-weight:600;vertical-align:top}
+.mini td:first-child{color:var(--mute);width:78px;font-weight:700}
+</style></head><body>
+<div class="title"><h1>05 · Getting to an event page</h1><p>An event page already exists live at <b>/event/&lt;id&gt;</b> (Ducks vs. Oilers: friction, crowd estimate, same-homestand strip, local-competition timeline). But nothing opens it. The map sheet button says "See this night" and goes to the date page, and ?event= links only tint one row so faintly it's hard to see. Also: tonight's events show "Attended" (and "Attend" on the event page) before they start, and "STAMPED" while the night is still a forecast.</p></div>
+<div class="cols">
+ <div class="col"><span class="lab cur">Current</span><div class="src">11-concert-bruno-mars-selected-on-map.png · 10-date-page-la-ducks-regular-season.png (also 12, 13)</div>
+  <div class="phone"><div class="seclab">Map sheet (11)</div><img class="cur" src="cur/c05a.png"><div class="seclab">Date page via ?event= Ducks (10)</div><img class="cur" src="cur/c05b.png"></div>
+  <div class="cap">The lock says the sheet button is <b>"See this event"</b> and opens the event page. The Ducks row is "highlighted" by a near-white tint. The gold button says <b>Attended</b> at 5 pm for a 7 pm game, and the card says STAMPED on a night that hasn't happened yet.</div></div>
+
+ <div class="col"><span class="lab opt">Option 1 · Wire the existing event page</span><div class="src">Sheet "See this event" → /event/&lt;id&gt; (cleaned up)</div>
+  <div class="phone"><div class="pg">
+   <div class="back"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m432-480 156 156q11 11 11 28t-11 28q-11 11-28 11t-28-11L348-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 28-11t28 11q11 11 11 28t-11 28L432-480Z"/></svg>
+</span>Wed, Oct 7</div>
+   <div class="ttl">Ducks vs. Oilers</div>
+   <div class="meta">Honda Center · 7:00 pm</div>
+   <div class="facts"><span class="fact">Hockey</span><span class="fact">Routine</span></div>
+   <div class="card fcard"><div class="fh">Moderate friction</div>
+    <table class="t" style="margin-top:8px"><tr><th>Reason</th><th>Read</th><th>Why</th></tr>
+     <tr><td class="b">Crowd fight</td><td>Moderate</td><td>Bruno Mars, same hours</td></tr>
+     <tr><td class="b">Gridlock</td><td>Low <span class="ex">example</span></td><td>Estimate · not live</td></tr></table>
+    <div class="fs">Forecast. It freezes into a stamp when the night ends.</div></div>
+   <div class="card crowd"><div><div class="big">~16,000</div><div class="lb">people (estimated)</div></div><div><div class="big" style="color:var(--ink2)">17,174</div><div class="lb">seats</div></div></div>
+   <div class="btn-gold" style="margin-top:14px"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m480-240-168 72q-40 17-76-6.5T200-241v-519q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v519q0 43-36 66.5t-76 6.5l-168-72Zm0-88 200 86v-518H280v518l200-86Zm0-432H280h400-200Z"/></svg>
+</span>Save this night</div>
+   <div class="note">Turns into "I was there" once the night is over.</div>
+  </div></div>
+  <div class="cap"><b>Smallest change:</b> rename the sheet button to "See this event" and point it (and ?event= links) at the page that already exists. On that page: occasion is a plain fact chip, not a blue pill; friction gets the two locked reasons in a small table; "Formula v4 · placeholder numbers until tuned" becomes plain "Forecast…"; one gold button, <b>Save this night</b>, which only becomes I was there after the night. The homestand strip and timeline stay below. <span class="ex">example</span> The Gridlock read is made up.</div></div>
+
+ <div class="col"><span class="lab opt">Option 2 · Row opens in place on the date page</span><div class="src">?event= expands the row; the full page is one tap further</div>
+  <div class="phone"><div class="pg">
+   <div class="back"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m432-480 156 156q11 11 11 28t-11 28q-11 11-28 11t-28-11L348-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 28-11t28 11q11 11 11 28t-11 28L432-480Z"/></svg>
+</span>Back</div>
+   <div class="hd"><div class="h-date">Wed, Oct 7</div><div style="text-align:right"><span class="rate r-light">Light · 4/10</span><div class="cnt">4 events</div></div></div>
+   <div class="card stamp"><div class="k">FORECAST</div><div class="t">Inglewood: Bruno Mars and Mumford &amp; Sons arriving together.</div></div>
+   <div style="font-size:16px;font-weight:800;margin:14px 2px 8px">That night in Los Angeles</div>
+   <div class="card" style="overflow:hidden">
+    <div class="lr"><span class="tm">6:30 pm</span><div style="flex:1"><div class="n">PRESIDENT</div><div class="v">The Wiltern</div></div><span class="pill f-heavy">Heavy</span></div>
+    <div class="lr open"><span class="tm">7:00 pm</span><div style="flex:1"><div style="display:flex;justify-content:space-between"><div><div class="n">Ducks vs. Oilers</div><div class="v">Honda Center</div></div><span class="pill f-mod">Moderate</span></div>
+     <table class="mini"><tr><td>Crowd</td><td>~16,000 est · 17,174 seats</td></tr><tr><td>Up against</td><td>Bruno Mars, same hours</td></tr><tr><td>Occasion</td><td>Routine</td></tr></table>
+     <div style="margin-top:6px"><span class="link" style="font-size:13.5px">See this event ›</span></div></div></div>
+    <div class="lr"><span class="tm">7:00 pm</span><div style="flex:1"><div class="n">Bruno Mars</div><div class="v">SoFi Stadium</div></div></div>
+    <div class="lr" style="border-bottom:none"><span class="tm">7:30 pm</span><div style="flex:1"><div class="n">Mumford &amp; Sons</div><div class="v">Kia Forum</div></div><span class="pill f-mod">Moderate</span></div>
+   </div>
+   <div class="btn-gold" style="margin-top:12px"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m480-240-168 72q-40 17-76-6.5T200-241v-519q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v519q0 43-36 66.5t-76 6.5l-168-72Zm0-88 200 86v-518H280v518l200-86Zm0-432H280h400-200Z"/></svg>
+</span>Save this night</div>
+  </div></div>
+  <div class="cap"><b>The link lands you on the night, with your event already open</b> (blue edge, short facts, "See this event ›"). You get the context of the whole night and the detail together, which suits a log of nights. The card says <b>FORECAST</b> until the night ends. Header follows the lock ("Wed, Oct 7", read right, count under). Trade-off: two ways into one event. <span class="ex">example</span> "Light · 4/10" stands in for 4.3.</div></div>
+</div></body></html>

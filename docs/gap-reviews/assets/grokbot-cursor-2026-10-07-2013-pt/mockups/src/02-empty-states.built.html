@@ -1,0 +1,72 @@
+<html><head><link rel="stylesheet" href="base.css"><style>
+.sheet{background:var(--chrome);padding:0 16px 14px}
+.sh2{font-size:18px;font-weight:800;margin:10px 2px 10px}
+.empty{padding:16px}
+.empty .t1{font-size:15.5px;font-weight:800}
+.empty .t2{font-size:13px;color:var(--ink2);margin-top:4px;line-height:1.45;font-weight:600}
+.youhd{display:flex;align-items:center;justify-content:space-between;padding:16px 16px 10px}
+.av{width:34px;height:34px;border-radius:17px;background:var(--dodger);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.rbtn{width:36px;height:36px;border-radius:18px;background:#fff;display:inline-flex;align-items:center;justify-content:center;color:var(--ink2);margin-left:8px}
+.seg{display:flex;background:#E4ECF5;border-radius:12px;padding:3px;margin:0 16px 12px}
+.seg div{flex:1;text-align:center;font-size:13px;font-weight:800;color:var(--ink2);padding:6px 0;border-radius:10px}
+.seg .on{background:#fff;color:var(--dodger)}
+.ghost td{opacity:.55}
+.signrow{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;margin:12px 16px 16px;font-size:13px;font-weight:700}
+</style></head><body>
+<div class="title"><h1>02 · Empty states (Seattle map sheet and You tab)</h1><p>When Seattle has no events, the sheet shows an "On the map" heading with nothing under it, and there's no ? button. The You tab is one sentence and a big blank area. "find one on the map" isn't a link, and it says "events" though the tab holds nights. NN/g on empty states: say why it's empty, say what will show up here, and give one direct next step.</p></div>
+<div class="cols">
+ <div class="col"><span class="lab cur">Current</span><div class="src">09-seattle-list-empty-on-the-map.png · 17-you-tab-empty-state.png (also 08)</div>
+  <div class="phone"><div class="seclab">Seattle · map sheet (09)</div><img class="cur" src="cur/c02a.png"><div class="seclab">You tab (17)</div><img class="cur" src="cur/c02b.png"></div>
+  <div class="cap">The heading has no content under it, so it reads like a load that failed. On You, the sign-in card sits above an empty list, and the one sentence has no button to tap.</div></div>
+
+ <div class="col"><span class="lab opt">Option 1 · Say why + one next step</span><div class="src">Plain sentence, one button, nothing else</div>
+  <div class="phone"><div class="seclab">Seattle · map sheet</div>
+   <div class="sheet"><div class="handle"></div><div class="sh2">On the map</div>
+    <div class="card empty"><div class="t1">Nothing on the map tonight</div><div class="t2">No big events in Seattle on Wed, Oct 7. Thursday has 2.</div>
+     <div style="margin-top:12px"><span class="btn-line">See Thu, Oct 8 <span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M647-440H200q-17 0-28.5-11.5T160-480q0-17 11.5-28.5T200-520h447L451-716q-12-12-11.5-28t12.5-28q12-11 28-11.5t28 11.5l264 264q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L508-188q-11 11-27.5 11T452-188q-12-12-12-28.5t12-28.5l195-195Z"/></svg>
+</span></span></div></div>
+    <div class="sh2" style="font-size:16px;margin-top:14px">Coming up</div>
+    <div class="card"><div class="ev"><div class="n">YG</div><div class="v">Angel of the Winds Arena</div><div class="m">Thu, Oct 8 · 7:30 pm</div></div></div>
+   </div>
+   <div class="seclab">You tab</div>
+   <div class="youhd"><div style="display:flex;align-items:center;gap:10px"><div class="av">Y</div><div style="font-size:22px;font-weight:800">You</div></div><div><span class="rbtn"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z"/></svg>
+</span></span><span class="rbtn"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M433-80q-27 0-46.5-18T363-142l-9-66q-13-5-24.5-12T307-235l-62 26q-25 11-50 2t-39-32l-47-82q-14-23-8-49t27-43l53-40q-1-7-1-13.5v-27q0-6.5 1-13.5l-53-40q-21-17-27-43t8-49l47-82q14-23 39-32t50 2l62 26q11-8 23-15t24-12l9-66q4-26 23.5-44t46.5-18h94q27 0 46.5 18t23.5 44l9 66q13 5 24.5 12t22.5 15l62-26q25-11 50-2t39 32l47 82q14 23 8 49t-27 43l-53 40q1 7 1 13.5v27q0 6.5-2 13.5l53 40q21 17 27 43t-8 49l-48 82q-14 23-39 32t-50-2l-60-26q-11 8-23 15t-24 12l-9 66q-4 26-23.5 44T527-80h-94Zm7-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
+</span></span></div></div>
+   <div class="seg"><div class="on">Events</div><div>Friends</div><div>Stats</div></div>
+   <div class="card empty" style="margin:0 16px"><div class="t1">No nights logged yet</div><div class="t2">Tap <b>I was there</b> on any past night. It shows up here with that night's friction stamp.</div>
+    <div class="btn-gold" style="margin-top:14px">Find a night on the map</div>
+    <div style="text-align:center;margin-top:12px"><span class="link"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z"/></svg>
+</span> Log a night by date</span></div></div>
+   <div class="card signrow"><span>Keep your nights safe</span><span class="link">Sign in</span></div>
+  </div>
+  <div class="cap"><b>Seattle:</b> the heading gets a real line and a jump to the next night that has events. The ? still shows. <b>You:</b> says what lands here (nights marked I was there), gives one gold button and a quiet "+ Log a night by date" (same as the + up top). Sign-in moves to one row below, since it isn't what you came here for. The Friends and Stats tabs stay.</div></div>
+
+ <div class="col"><span class="lab opt">Option 2 · Show the shape of what's coming</span><div class="src">A short week table and a faded example log</div>
+  <div class="phone"><div class="seclab">Seattle · map sheet</div>
+   <div class="sheet"><div class="handle"></div><div class="sh2">On the map <span style="font-size:13px;color:var(--mute);font-weight:700">· No events tonight</span></div>
+    <div class="card" style="overflow:hidden"><table class="t">
+     <tr><th>This week in Seattle</th><th>Events</th><th>Read</th></tr>
+     <tr><td class="b">Thu, Oct 8</td><td>2</td><td><span class="rate r-chill" style="height:22px;font-size:11px;padding:0 8px;border-radius:8px">Chill · 1/10</span></td></tr>
+     <tr><td class="b">Fri, Oct 9</td><td>3 <span class="ex">example</span></td><td><span class="rate r-light" style="height:22px;font-size:11px;padding:0 8px;border-radius:8px">Light · 4/10</span></td></tr>
+     <tr><td class="b">Sat, Oct 10</td><td>2 <span class="ex">example</span></td><td><span class="rate r-light" style="height:22px;font-size:11px;padding:0 8px;border-radius:8px">Light · 4/10</span></td></tr>
+    </table></div>
+    <div style="font-size:11px;color:var(--mute);margin-top:6px;font-weight:600">Reads use the locked words. The app shows these days as 1.4 Chill, 4.2 Spicy, 3.5 Mild today.</div>
+   </div>
+   <div class="seclab">You tab</div>
+   <div class="youhd"><div style="display:flex;align-items:center;gap:10px"><div class="av">Y</div><div style="font-size:22px;font-weight:800">You</div></div><div><span class="rbtn"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z"/></svg>
+</span></span><span class="rbtn"><span class="ic"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M433-80q-27 0-46.5-18T363-142l-9-66q-13-5-24.5-12T307-235l-62 26q-25 11-50 2t-39-32l-47-82q-14-23-8-49t27-43l53-40q-1-7-1-13.5v-27q0-6.5 1-13.5l-53-40q-21-17-27-43t8-49l47-82q14-23 39-32t50 2l62 26q11-8 23-15t24-12l9-66q4-26 23.5-44t46.5-18h94q27 0 46.5 18t23.5 44l9 66q13 5 24.5 12t22.5 15l62-26q25-11 50-2t39 32l47 82q14 23 8 49t-27 43l-53 40q1 7 1 13.5v27q0 6.5-2 13.5l53 40q21 17 27 43t-8 49l-48 82q-14 23-39 32t-50-2l-60-26q-11 8-23 15t-24 12l-9 66q-4 26-23.5 44T527-80h-94Zm7-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
+</span></span></div></div>
+   <div class="seg"><div class="on">Events</div><div>Friends</div><div>Stats</div></div>
+   <div class="card" style="margin:0 16px;overflow:hidden">
+    <div style="padding:12px 12px 4px;display:flex;justify-content:space-between;align-items:center"><span style="font-weight:800;font-size:15px">Your nights</span><span class="ex">example rows</span></div>
+    <table class="t ghost">
+     <tr><th>Date</th><th>Night</th><th>Read</th></tr>
+     <tr><td class="b">Sat, Oct 3</td><td>Dodgers (NLDS G1)</td><td class="b">Cooked · 10/10</td></tr>
+     <tr><td class="b">Sun, Oct 4</td><td>Dodgers (NLDS G2)</td><td class="b">Brutal · 7/10</td></tr>
+    </table>
+    <div style="padding:6px 14px 14px"><div style="font-size:13px;font-weight:700;color:var(--ink2);margin-bottom:10px">Your log starts with your first <b style="color:var(--ink)">I was there</b>.</div><div class="btn-gold">Find a night</div></div>
+   </div>
+   <div class="card signrow"><span>Keep your nights safe</span><span class="link">Sign in</span></div>
+  </div>
+  <div class="cap"><b>Seattle:</b> the empty night turns into a small table of the next few nights (she likes tables), so there's always a next tap. <b>You:</b> faded rows marked as examples show what a log will look like, Letterboxd-style. Rows and counts are labeled examples. Trade-off: it's busier than Option 1, and fake rows must never look like real data.</div></div>
+</div></body></html>
