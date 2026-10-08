@@ -191,7 +191,12 @@ export function EventScreen() {
                 People (Estimated)
                 <HowButton onOpen={() => setShowHow(true)} />
               </span>
-              {e.expectedDraw.fromCrowds && me.capacity && <FillBar count={e.expectedDraw.count} capacity={me.capacity} />}
+              {e.expectedDraw.fromCrowds && me.capacity && (
+                <>
+                  <span className="crowd-fill-word">{fullnessWord(e.expectedDraw.count, me.capacity)}</span>
+                  <FillBar count={e.expectedDraw.count} capacity={me.capacity} />
+                </>
+              )}
             </>
           ) : me.capacity ? (
             <>
@@ -244,17 +249,22 @@ export function EventScreen() {
  * ahead (S5). No per-event basis sentence: how estimates are made is behind the (i),
  * once, for all of them (Kylie, Oct 7).
  */
+/** How full the building reads, in a word (Kylie, Oct 8): the cutoffs are 40, 70 and 95% of the seats. */
+function fullnessWord(count: number, capacity: number): string {
+  const share = count / capacity;
+  return share < 0.4 ? 'Light' : share < 0.7 ? 'Partly full' : share < 0.95 ? 'Mostly full' : 'Packed';
+}
+
 /**
- * How full the building reads, as a bar (Kylie, Oct 8: the bar, not a word). Only under an
- * estimate that rests on announced crowds; a show sized by a rule of thumb or a playoff game sized
- * by the building would just draw the rule. Fill is the estimate over the seats; past full it
- * stays full, since the building has held that many. The label is for screen readers only.
+ * How full the building reads, as a word and a bar (Kylie, Oct 8). Only under an estimate that
+ * rests on announced crowds; a show sized by a rule of thumb or a playoff game sized by the building
+ * would just draw the rule. Fill is the estimate over the seats; past full it stays full, since the
+ * building has held that many. The bar is decorative once the word is on the page.
  */
 function FillBar({ count, capacity }: { count: number; capacity: number }) {
   const share = Math.min(1, count / capacity);
-  const word = share < 0.4 ? 'Plenty of room' : share < 0.7 ? 'About half full' : share < 0.95 ? 'Mostly full' : 'Packed';
   return (
-    <span className="fill-bar" role="img" aria-label={word}>
+    <span className="fill-bar" aria-hidden>
       <span className="fill-bar-fill" style={{ width: `${Math.round(share * 100)}%` }} />
     </span>
   );

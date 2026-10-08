@@ -1718,12 +1718,20 @@ button {
   flex: 1 1 100%;
 }
 
-/* How full the building reads: a track in pale blue, a gold fill, under an estimate. */
+/* How full the building reads: a word, then a track in pale blue with a gold fill, under an estimate. */
+.crowd-fill-word {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .fill-bar {
   display: block;
   width: 100%;
   height: 6px;
-  margin-top: 8px;
+  margin-top: 5px;
   border-radius: 3px;
   background: var(--paleBlue);
   overflow: hidden;
