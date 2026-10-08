@@ -32,7 +32,7 @@ export interface PastGame {
   game?: number;
 }
 
-// ---------- Postseason (docs/postseason-estimate-proposal.md, Kylie's locks Oct 7, 2026) ----------
+// ---------- Postseason (docs/archive/proposals/postseason-estimate-proposal.md, Kylie's locks Oct 7, 2026) ----------
 // A playoff crowd is learned as occupancy (announced ÷ the building's capacity for that sport),
 // in four round bands, from the team's own home playoff games, else the league's pool. Every
 // constant below was written before the check ran (docs/postseason-check.md) and is not re-tuned.

@@ -1,6 +1,6 @@
 # The distance-discount check
 
-_Written by `scripts/distance-check.mjs` on 2026-10-07. The design is pre-registered at the top of that script; the constants were not changed after the first run. Companion to `docs/distance-discount-proposal.md`._
+_Written by `scripts/distance-check.mjs` on 2026-10-07. The design is pre-registered at the top of that script; the constants were not changed after the first run. Companion to `docs/archive/proposals/distance-discount-proposal.md`._
 
 **What was tested.** 6318 home games with an announced crowd and a baseline (the app's expected draw for that game, built from the seasons before its own), across 6 cities and 79 teams, seasons 2023–2026. Preseason and postseason out. 2175 sellouts (97%+ of the building) set aside; 92 games had no baseline. Competitors are other home games on file in the same city whose window overlaps (sports only: past concerts are not on file). The outcome is log(announced ÷ baseline), shown below as a percentage.
 

@@ -108,7 +108,7 @@ export async function calibrate(root, build, teams = {}, venues = {}) {
       if (op) opponents.push({ metroId: t.metroId, teamId: t.teamId, opponent: key, ratio: Math.round(op.ratio * 1000) / 1000, games: op.games });
     }
   }
-  // Playoff rows (docs/postseason-estimate-proposal.md): occupancy per team, building and round band.
+  // Playoff rows (docs/archive/proposals/postseason-estimate-proposal.md): occupancy per team, building and round band.
   const postTeams = teamsOnFile.map((t) => {
     const sport = teams[t.teamId]?.sport;
     return { metroId: t.metroId, teamId: t.teamId, league: teams[t.teamId]?.league ?? 'Other', games: t.games, capacityOn: (venueId, date) => (VENUES[venueId] ? capacityOn(VENUES[venueId], date, sport) ?? capacityOn(VENUES[venueId], date) : undefined) };

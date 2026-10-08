@@ -59,7 +59,7 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '2230', metroId: 'new-york', teamId: 'fordham-football', sport: 'football' },
   { path: 'basketball/nba', espnId: '1', metroId: 'atlanta', teamId: 'hawks', sport: 'basketball' },
   { path: 'basketball/wnba', espnId: '20', metroId: 'atlanta', teamId: 'dream', sport: 'basketball' },
-  // Bay Area (docs/bay-area-venue-table-answer.md); every id checked against the feed Oct 7, 2026.
+  // Bay Area (docs/archive/research/bay-area-venue-table-answer.md); every id checked against the feed Oct 7, 2026.
   { path: 'basketball/nba', espnId: '9', metroId: 'bay-area', teamId: 'warriors', sport: 'basketball' },
   { path: 'basketball/wnba', espnId: '129689', metroId: 'bay-area', teamId: 'valkyries', sport: 'basketball' },
   { path: 'football/nfl', espnId: '25', metroId: 'bay-area', teamId: 'sf-49ers', sport: 'football' },
@@ -76,7 +76,7 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '23', metroId: 'bay-area', teamId: 'sjsu-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '23', metroId: 'bay-area', teamId: 'sjsu-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '23', metroId: 'bay-area', teamId: 'sjsu-wbb', sport: 'basketball' },
-  // Chicago (docs/chicago-venue-table-answer.md); every id checked against the feed Oct 7, 2026.
+  // Chicago (docs/archive/research/chicago-venue-table-answer.md); every id checked against the feed Oct 7, 2026.
   { path: 'basketball/nba', espnId: '4', metroId: 'chicago', teamId: 'bulls', sport: 'basketball' },
   { path: 'basketball/wnba', espnId: '19', metroId: 'chicago', teamId: 'sky', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '4', metroId: 'chicago', teamId: 'blackhawks', sport: 'hockey' },
@@ -90,7 +90,7 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/womens-college-basketball', espnId: '305', metroId: 'chicago', teamId: 'depaul-wbb', sport: 'basketball' },
   { path: 'basketball/mens-college-basketball', espnId: '82', metroId: 'chicago', teamId: 'uic-mbb', sport: 'basketball' },
   { path: 'basketball/mens-college-basketball', espnId: '2130', metroId: 'chicago', teamId: 'chicago-state-mbb', sport: 'basketball' },
-  // Dallas–Fort Worth (docs/dallas-fort-worth-venue-table-answer.md); every id checked against the feed Oct 7, 2026.
+  // Dallas–Fort Worth (docs/archive/research/dallas-fort-worth-venue-table-answer.md); every id checked against the feed Oct 7, 2026.
   { path: 'basketball/nba', espnId: '6', metroId: 'dallas-fort-worth', teamId: 'mavericks', sport: 'basketball' },
   { path: 'basketball/wnba', espnId: '3', metroId: 'dallas-fort-worth', teamId: 'wings', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '9', metroId: 'dallas-fort-worth', teamId: 'dallas-stars', sport: 'hockey' },
@@ -105,7 +105,7 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '249', metroId: 'dallas-fort-worth', teamId: 'unt-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '249', metroId: 'dallas-fort-worth', teamId: 'unt-mbb', sport: 'basketball' },
   { path: 'basketball/mens-college-basketball', espnId: '250', metroId: 'dallas-fort-worth', teamId: 'uta-mbb', sport: 'basketball' },
-  // Montreal (docs/montreal-venue-table-answer.md); ids checked against the feed Oct 8, 2026.
+  // Montreal (docs/archive/research/montreal-venue-table-answer.md); ids checked against the feed Oct 8, 2026.
   { path: 'hockey/nhl', espnId: '10', metroId: 'montreal', teamId: 'canadiens', sport: 'hockey' },
   { path: 'soccer/usa.1', espnId: '9720', metroId: 'montreal', teamId: 'cf-montreal', sport: 'soccer' },
   { path: 'football/nfl', espnId: '1', metroId: 'atlanta', teamId: 'falcons', sport: 'football' },
@@ -174,7 +174,7 @@ const VENUE_BY_NAME: Record<string, string> = {
   'mccamish pavilion': 'mccamish-pavilion',
   'vystar arena': 'ksu-convocation-center',
   'ksu convocation center': 'ksu-convocation-center',
-  // Bay Area (docs/bay-area-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  // Bay Area (docs/archive/research/bay-area-venue-table-answer.md), as ESPN writes them on each team's own schedule.
   'chase center': 'chase-center',
   "levi's stadium": 'levis-stadium',
   'sap center at san jose': 'sap-center',
@@ -189,7 +189,7 @@ const VENUE_BY_NAME: Record<string, string> = {
   'maples pavilion': 'maples-pavilion',
   'provident credit union event center': 'provident-event-center',
   'oracle park': 'oracle-park',
-  // Chicago (docs/chicago-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  // Chicago (docs/archive/research/chicago-venue-table-answer.md), as ESPN writes them on each team's own schedule.
   'united center': 'united-center',
   'wintrust arena': 'wintrust-arena',
   'soldier field': 'soldier-field',
@@ -203,7 +203,7 @@ const VENUE_BY_NAME: Record<string, string> = {
   'rate field': 'rate-field',
   'seatgeek stadium': 'seatgeek-stadium',
   'toyota park': 'seatgeek-stadium',
-  // Dallas–Fort Worth (docs/dallas-fort-worth-venue-table-answer.md), as ESPN writes them.
+  // Dallas–Fort Worth (docs/archive/research/dallas-fort-worth-venue-table-answer.md), as ESPN writes them.
   'at&t stadium': 'att-stadium',
   'american airlines center': 'american-airlines-center',
   'college park center': 'college-park-center',

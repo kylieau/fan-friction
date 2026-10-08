@@ -10,7 +10,7 @@
 // around it is fine), e.g. `Status: closed, folded into product-decisions.md, Oct 8, 2026`. Prompt and
 // answer files pair by name (x-prompt.md, x-research-prompt.md, x-answer.md, x-research-answer.md). When
 // the answer is closed, the pair moves together to docs/archive/research/. Any other closed doc moves to
-// docs/archive/proposals/. Only docs/*.md and docs/research-queue/*.md are scanned.
+// docs/archive/proposals/. Only docs/*.md, docs/research-queue/*.md and docs/gap-reviews/*.md are scanned. A closed gap review moves to docs/archive/gap-reviews/ with its assets.
 
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, writeFileSync, statSync, readdirSync } from 'node:fs';
@@ -31,7 +31,7 @@ const docsSet = new Set(docsFiles);
 
 // ---- decide the moves: old docs-relative path -> new docs-relative path ----------------------------
 const CLOSED = /^\s*(?:<!--\s*)?status:\s*closed\b/im;
-const KEEP = new Set(['README.md']);
+const KEEP = new Set(['README.md', 'gap-reviews/README.md']);
 const moves = new Map();
 
 if (manifestPath) {
@@ -43,12 +43,16 @@ if (manifestPath) {
     for (const f of matches) moves.set(f, isDir ? posix(path.join(to, f.slice(from.replace(/\/?$/, '/').length))) : to);
   }
 } else {
-  const scanned = docsFiles.filter((f) => /^(research-queue\/)?[^/]+\.md$/.test(f) && !KEEP.has(f));
+  const scanned = docsFiles.filter((f) => /^(research-queue\/|gap-reviews\/)?[^/]+\.md$/.test(f) && !KEEP.has(f));
   const pairKey = (f) => path.basename(f, '.md').replace(/(-research)?-(prompt|answer)$/, '');
   const kindOf = (f) => (/-answer\.md$/.test(f) ? 'answer' : /-prompt\.md$/.test(f) ? 'prompt' : null);
   const closed = scanned.filter((f) => CLOSED.test(readFileSync(path.join(root, 'docs', f), 'utf8')));
   for (const f of closed) {
-    if (kindOf(f)) {
+    if (f.startsWith('gap-reviews/')) { // a closed gap review takes its screenshots with it
+      moves.set(f, `archive/gap-reviews/${path.basename(f)}`);
+      const key = path.basename(f, '.md').replace(/^gap-review-/, '');
+      for (const a of docsFiles.filter((x) => x.startsWith(`gap-reviews/assets/${key}/`))) moves.set(a, `archive/gap-reviews/${a.slice('gap-reviews/'.length)}`);
+    } else if (kindOf(f)) {
       const key = pairKey(f);
       for (const g of scanned.filter((x) => kindOf(x) && pairKey(x) === key)) moves.set(g, `archive/research/${path.basename(g)}`);
     } else {
@@ -69,13 +73,14 @@ const allFiles = git('ls-files', '-z').split('\0').filter((p) => p && TEXT.test(
 const newPathOf = (repoPath) => (repoPath.startsWith('docs/') && moves.has(repoPath.slice(5)) ? `docs/${moves.get(repoPath.slice(5))}` : repoPath);
 
 // A reference to a doc: optional `docs/` or ./ ../ prefix, then a path ending in a known extension.
-const REF = /(?<![\w./-])(docs\/|(?:\.{1,2}\/)*)([A-Za-z0-9_][A-Za-z0-9_.\/-]*?\.(?:md|csv|py|pdf|png))(?![\w-])/g;
+const REF = /(?<![\w./-])(docs\/|(?:\.{1,2}\/)*)([A-Za-z0-9_][A-Za-z0-9_.\/-]*?\.(?:md|csv|py|pdf|png|html))(?![\w-])/g;
 
 function rewrite(fileRepoPath, text) {
   const oldDir = path.posix.dirname(fileRepoPath);
   const newDir = path.posix.dirname(newPathOf(fileRepoPath));
   const inDocs = fileRepoPath.startsWith('docs/');
-  return text.replace(REF, (whole, prefix, rest) => {
+  return text.replace(REF, (whole, prefix, rest, offset, str) => {
+    const inLink = str.slice(Math.max(0, offset - 2), offset) === ']('; // a markdown link target
     let oldTarget; // repo-relative path of what this reference pointed at
     if (prefix === 'docs/') oldTarget = `docs/${rest}`;
     else if (prefix) oldTarget = path.posix.normalize(path.posix.join(oldDir, prefix, rest));
@@ -87,6 +92,11 @@ function rewrite(fileRepoPath, text) {
     const newTarget = newPathOf(oldTarget);
     const targetMoved = newTarget !== oldTarget;
     const fileMoved = newDir !== oldDir;
+    if (inLink) { // markdown link: always a path relative to where the file will live
+      if (!targetMoved && !fileMoved) return whole;
+      const rel = path.posix.relative(newDir, newTarget);
+      return prefix.startsWith('.') && !rel.startsWith('.') ? `./${rel}` : rel;
+    }
     if (prefix === 'docs/') return targetMoved ? newTarget : whole;
     if (prefix) { // relative link: recompute from where the file will live
       if (!targetMoved && !fileMoved) return whole;

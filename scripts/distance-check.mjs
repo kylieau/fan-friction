@@ -1,4 +1,4 @@
-// The distance-discount check (docs/distance-discount-proposal.md, Kylie's lock Oct 7, 2026:
+// The distance-discount check (docs/archive/proposals/distance-discount-proposal.md, Kylie's lock Oct 7, 2026:
 // candidate B as the default to test, straight-line miles, check before building).
 //
 // Question: when another big event competes the same night, does a home game draw less
@@ -180,7 +180,7 @@ try {
   const lines = [];
   lines.push('# The distance-discount check');
   lines.push('');
-  lines.push(`_Written by \`scripts/distance-check.mjs\` on ${new Date().toISOString().slice(0, 10)}. The design is pre-registered at the top of that script; the constants were not changed after the first run. Companion to \`docs/distance-discount-proposal.md\`._`);
+  lines.push(`_Written by \`scripts/distance-check.mjs\` on ${new Date().toISOString().slice(0, 10)}. The design is pre-registered at the top of that script; the constants were not changed after the first run. Companion to \`docs/archive/proposals/distance-discount-proposal.md\`._`);
   lines.push('');
   lines.push(`**What was tested.** ${rows.length} home games with an announced crowd and a baseline (the app's expected draw for that game, built from the seasons before its own), across ${new Set(rows.map((r) => r.metroId)).size} cities and ${new Set(rows.map((r) => r.teamId)).size} teams, seasons ${Math.min(...rows.map((r) => r.season))}–${Math.max(...rows.map((r) => r.season))}. Preseason and postseason out. ${sellouts} sellouts (97%+ of the building) set aside; ${noBaseline} games had no baseline. Competitors are other home games on file in the same city whose window overlaps (sports only: past concerts are not on file). The outcome is log(announced ÷ baseline), shown below as a percentage.`);
   lines.push('');

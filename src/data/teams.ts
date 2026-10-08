@@ -103,7 +103,7 @@ const LIST: Team[] = [
   team('gsu-wbb', "Georgia State Panthers Women's Basketball", 'Georgia State WBB', "College women's basketball", 'basketball', 'atlanta', 'GSU', ['Georgia State']),
   team('ksu-football', 'Kennesaw State Owls Football', 'Kennesaw State FB', 'College football', 'football', 'atlanta', 'KSU', ['Kennesaw State']),
   team('ksu-mbb', "Kennesaw State Owls Men's Basketball", 'Kennesaw State MBB', "College men's basketball", 'basketball', 'atlanta', 'KSU', ['Kennesaw State']),
-  // Bay Area, covered Oct 7, 2026 (docs/bay-area-venue-table-answer.md). The Giants were a visitor record before.
+  // Bay Area, covered Oct 7, 2026 (docs/archive/research/bay-area-venue-table-answer.md). The Giants were a visitor record before.
   team('giants', 'San Francisco Giants', 'Giants', 'MLB', 'baseball', 'bay-area', 'SF'),
   team('warriors', 'Golden State Warriors', 'Warriors', 'NBA', 'basketball', 'bay-area', 'GSW'),
   team('valkyries', 'Golden State Valkyries', 'Valkyries', 'WNBA', 'basketball', 'bay-area', 'GSV'),
@@ -122,7 +122,7 @@ const LIST: Team[] = [
   team('sjsu-football', 'San José State Spartans Football', 'San José State FB', 'College football', 'football', 'bay-area', 'SJSU', ['San Jose State', 'SJSU']),
   team('sjsu-mbb', "San José State Spartans Men's Basketball", 'San José State MBB', "College men's basketball", 'basketball', 'bay-area', 'SJSU', ['San Jose State', 'SJSU']),
   team('sjsu-wbb', "San José State Spartans Women's Basketball", 'San José State WBB', "College women's basketball", 'basketball', 'bay-area', 'SJSU', ['San Jose State', 'SJSU']),
-  // Chicago, covered Oct 7, 2026 (docs/chicago-venue-table-answer.md). Loyola is out: Gentile Arena is under 5,000.
+  // Chicago, covered Oct 7, 2026 (docs/archive/research/chicago-venue-table-answer.md). Loyola is out: Gentile Arena is under 5,000.
   team('cubs', 'Chicago Cubs', 'Cubs', 'MLB', 'baseball', 'chicago', 'CHC'),
   team('white-sox', 'Chicago White Sox', 'White Sox', 'MLB', 'baseball', 'chicago', 'CWS'),
   team('bulls', 'Chicago Bulls', 'Bulls', 'NBA', 'basketball', 'chicago', 'CHI'),
@@ -138,7 +138,7 @@ const LIST: Team[] = [
   team('depaul-wbb', "DePaul Blue Demons Women's Basketball", 'DePaul WBB', "College women's basketball", 'basketball', 'chicago', 'DEP', ['DePaul']),
   team('uic-mbb', "UIC Flames Men's Basketball", 'UIC MBB', "College men's basketball", 'basketball', 'chicago', 'UIC', ['UIC']),
   team('chicago-state-mbb', "Chicago State Cougars Men's Basketball", 'Chicago State MBB', "College men's basketball", 'basketball', 'chicago', 'CSU', ['Chicago State']),
-  // Dallas–Fort Worth, covered Oct 8, 2026 (docs/dallas-fort-worth-venue-table-answer.md). The Rangers were a visitor record before.
+  // Dallas–Fort Worth, covered Oct 8, 2026 (docs/archive/research/dallas-fort-worth-venue-table-answer.md). The Rangers were a visitor record before.
   team('rangers', 'Texas Rangers', 'Rangers', 'MLB', 'baseball', 'dallas-fort-worth', 'TEX'),
   team('cowboys', 'Dallas Cowboys', 'Cowboys', 'NFL', 'football', 'dallas-fort-worth', 'DAL'),
   team('mavericks', 'Dallas Mavericks', 'Mavericks', 'NBA', 'basketball', 'dallas-fort-worth', 'DAL', ['Mavs']),
@@ -154,7 +154,7 @@ const LIST: Team[] = [
   team('unt-football', 'North Texas Mean Green Football', 'North Texas FB', 'College football', 'football', 'dallas-fort-worth', 'UNT', ['North Texas', 'UNT']),
   team('unt-mbb', "North Texas Mean Green Men's Basketball", 'North Texas MBB', "College men's basketball", 'basketball', 'dallas-fort-worth', 'UNT', ['North Texas', 'UNT']),
   team('uta-mbb', "UT Arlington Mavericks Men's Basketball", 'UTA MBB', "College men's basketball", 'basketball', 'dallas-fort-worth', 'UTA', ['UT Arlington', 'UTA']),
-  // Montreal, covered Oct 8, 2026 (docs/montreal-venue-table-answer.md). The Alouettes (CFL), Victoire (PWHL), Rocket (AHL)
+  // Montreal, covered Oct 8, 2026 (docs/archive/research/montreal-venue-table-answer.md). The Alouettes (CFL), Victoire (PWHL), Rocket (AHL)
   // and Carabins (U Sports) have no feed wired yet; their pages say "No schedule yet" until one is (docs/no-feed-teams-proposal.md).
   team('canadiens', 'Montreal Canadiens', 'Canadiens', 'NHL', 'hockey', 'montreal', 'MTL', ['Montréal Canadiens', 'Habs']),
   team('cf-montreal', 'CF Montréal', 'CF Montréal', 'MLS', 'soccer', 'montreal', 'MTL', ['CF Montreal', 'Montreal Impact']),

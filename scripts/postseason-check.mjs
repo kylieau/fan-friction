@@ -1,4 +1,4 @@
-// The postseason-estimate check (docs/postseason-estimate-proposal.md; Kylie's locks Oct 7, 2026).
+// The postseason-estimate check (docs/archive/proposals/postseason-estimate-proposal.md; Kylie's locks Oct 7, 2026).
 // Each team's playoff home games in a postseason are predicted from the postseasons before it
 // (the team's own games and the league pool, both limited to earlier seasons), with the rule in
 // src/data/expectedDrawBuild.ts (buildPostseasonRows / postseasonPeople). Scored against:
@@ -72,7 +72,7 @@ try {
   const lines = [];
   lines.push('# The postseason-estimate check');
   lines.push('');
-  lines.push(`_Written by \`scripts/postseason-check.mjs\` on ${new Date().toISOString().slice(0, 10)}. Pre-registered at the top of that script; constants in \`expectedDrawBuild.ts\` not re-tuned. Companion to \`docs/postseason-estimate-proposal.md\`._`);
+  lines.push(`_Written by \`scripts/postseason-check.mjs\` on ${new Date().toISOString().slice(0, 10)}. Pre-registered at the top of that script; constants in \`expectedDrawBuild.ts\` not re-tuned. Companion to \`docs/archive/proposals/postseason-estimate-proposal.md\`._`);
   lines.push('');
   lines.push(`**What was tested.** ${scored.length} playoff home games with an announced crowd, each predicted from the postseasons before its own (${seasonsAll.slice(1).join(', ')}), across ${new Set(scored.map((r) => r.teamId)).size} teams in ${byLeague.length} leagues. ${unbanded} games had no round band or capacity; ${noRow} had no comparable (neither the team nor the league pool qualified), which is where the app shows no estimate.`);
   lines.push('');

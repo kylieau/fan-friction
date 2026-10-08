@@ -1,6 +1,6 @@
 # Distance discount proposal: second opinion (Oct 7, 2026)
 
-Pasted by Kylie on Oct 7, 2026, from another model, on `docs/distance-discount-proposal.md` as first written. Saved in full.
+Pasted by Kylie on Oct 7, 2026, from another model, on `docs/archive/proposals/distance-discount-proposal.md` as first written. Saved in full.
 
 > My recommendation: B as the starting hypothesis, straight-line miles for v1, and the attendance check before locking it in. The examples show how the rule changes scores; they don't yet establish that those changes are more accurate.
 > I'd tighten three points before sending:

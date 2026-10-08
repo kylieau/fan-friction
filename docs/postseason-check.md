@@ -1,6 +1,6 @@
 # The postseason-estimate check
 
-_Written by `scripts/postseason-check.mjs` on 2026-10-07. Pre-registered at the top of that script; constants in `expectedDrawBuild.ts` not re-tuned. Companion to `docs/postseason-estimate-proposal.md`._
+_Written by `scripts/postseason-check.mjs` on 2026-10-07. Pre-registered at the top of that script; constants in `expectedDrawBuild.ts` not re-tuned. Companion to `docs/archive/proposals/postseason-estimate-proposal.md`._
 
 **What was tested.** 56 playoff home games with an announced crowd, each predicted from the postseasons before its own (2023, 2024, 2025, 2026), across 20 teams in 4 leagues. 40 games had no round band or capacity; 191 had no comparable (neither the team nor the league pool qualified), which is where the app shows no estimate.
 

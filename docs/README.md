@@ -5,13 +5,14 @@ What's here is what's still in play. Finished research lives in `archive/`.
 | Folder | What it holds |
 |---|---|
 | `docs/` | Product direction and decisions, the build plan, the current formula (`formula-v4.md`), the new-city checklist, data sources, UX notes, test nights, the tester kit. Plus two prompts the new-city checklist uses as templates (`la-venue-table-prompt.md`, `seattle-city-type-prompt.md`). |
+| `gap-reviews/` | Independent reviews of the app (Codex, GrokBot/Cursor), each with its screenshots under `assets/`. Open until their items are decided. See its README. |
 | `research-queue/` | Prompts that have gone out and are waiting for an answer. |
 | `archive/research/` | Answered prompts and their answers, by city and topic. Still cited by the code as sources. |
 | `archive/second-opinions/` | Second-opinion prompts and answers. |
 | `archive/formula/` | Formula analysis, tuning, review and calibration history. The live formula is `formula-v4.md`. |
 | `archive/proposals/` | Proposals and plans that were built or decided. |
 
-Two files stay put because scripts write or read them at these exact paths: `expected-draw-check.md` and `promo-history-rows.csv`.
+Some files stay put because scripts write or read them at these exact paths: `expected-draw-check.md`, `postseason-check.md`, `distance-check.md` and `promo-history-rows.csv`.
 
 ## How things move
 

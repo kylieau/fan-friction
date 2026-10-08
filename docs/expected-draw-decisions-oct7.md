@@ -122,7 +122,7 @@ Written down before the run. MLB only (its feed lists promotions); every source 
 - **Team schedules** (`src/data/teamSchedule.ts`): one record per covered team, home and away, with scores once final, built from the team's own feed (MLB Stats API; ESPN team schedule). The nightly job writes them to the `team_schedules` table (`supabase/migrations/0010_team_schedules.sql`, **Kylie to run**), because ESPN refuses calls made from a phone's browser; an MLB club is also read live as a fallback. A row for a home game in a covered city points at the app's existing event (no second copy), and so does an away game at a covered team's building (Dodgers at Padres opens the San Diego night). Times are shown in the team's home city. The team page (`FavoritePage.tsx`) shows **Schedule** (next 10 to come, Save on games the catalog lists) and **Results** (last 10 played, "W 5–3"); a team with no feed says "No schedule yet." UCLA football, men's and women's basketball were already in the ESPN list and get schedules as soon as the table exists.
 
 ## Bay Area build (Oct 7): choices made, confirmed by Kylie (Oct 7)
-Both answers are saved in full (`docs/bay-area-venue-table-answer.md`, `docs/bay-area-city-type-answer.md`). Choices I made without a lock:
+Both answers are saved in full (`docs/archive/research/bay-area-venue-table-answer.md`, `docs/archive/research/bay-area-city-type-answer.md`). Choices I made without a lock:
 - **City type: driving** (the research's "driving or hub, 0.85 default"; it could not judge spillover). Oracle Park and Chase Center carry their own 0.50 car shares, so the type only reaches venues with no figure.
 - **Boundary as briefed** (SF, Alameda, Contra Costa, San Mateo, Santa Clara). Sacramento, Napa, Sonoma out; the research would not move the line.
 - **17 teams**, including the **Oakland Roots** for their last Coliseum match (Oct 10, 2026); their 2027 home is undecided. **Not venue rows:** the Golden Gate Park festival meadows, the Alameda County Fairgrounds, Moscone, the San Jose convention center and the open sites (as New York's Table B and Atlanta's parks). Their events would be placed as points and sized by their own crowd; **none is hand-listed yet** (the research gives no confirmed per-day figure for the Fleet Week air show, Oct 9–11, so no number was invented).
@@ -138,7 +138,7 @@ Kylie accepted the check's result ("that's fine… not something I felt was that
 Chicago's two prompts will be run on OpenAI's Astra model. When both answers arrive, compare them against the earlier cities' answers on the same checklist (venues found, figures sourced and labeled, coordinates, scheduled changes, gaps admitted) and tell Kylie whether Astra's is meaningfully better; if so, she may rerun or spot-check the other cities there. A postseason-attendance research answer (closing the gap on playoff "People" estimates) is coming from her next.
 
 ## Chicago build (Oct 7): choices made, for Kylie to confirm
-Both answers are saved in full (`docs/chicago-venue-table-answer.md`, `docs/chicago-city-type-answer.md`). Choices I made without a lock:
+Both answers are saved in full (`docs/archive/research/chicago-venue-table-answer.md`, `docs/archive/research/chicago-city-type-answer.md`). Choices I made without a lock:
 - **City type: hub** (the research: "in between, leaning driving"; the United Center is 87% car, the suburban ring near-total, Wrigley 37%). The code had 'transit' from the away-market stub, which the research contradicts. Hub keeps the 0.85 default for venues with no figure; Wrigley, Soldier Field, the United Center and the rest carry their own.
 - **Boundary as briefed plus Chicagoland Speedway** (Joliet, Will County; one NASCAR weekend a year, 47,000, sold out in 2026), the research's one addition. Its car share is mine.
 - **15 teams.** Loyola is out (Gentile Arena is under 5,000). Chicago State is in because its building qualifies; its games sit under the floor. The Chicago Wolves (AHL, Allstate Arena) have no free feed and are not listed.
@@ -156,7 +156,7 @@ Both answers are saved in full (`docs/chicago-venue-table-answer.md`, `docs/chic
 Kylie (Oct 7): "I don't want WNBA to have 'no count yet'. Why can't you just put building/capacity (same for other leagues)." Built: a playoff game whose team and league have no comparables on file (the WNBA, NFL and NWSL today) shows the building's capacity for that sport as its estimate, with the note "No past playoff crowds on file for this round; the building's capacity for this sport." The friction read already used the building; only the page changed. The ⓘ card says so.
 
 ## Dallas–Fort Worth build (Oct 8): choices made, for Kylie to confirm
-Both answers are saved in full (`docs/dallas-fort-worth-venue-table-answer.md`, `docs/dallas-fort-worth-city-type-answer.md`). Choices I made without a lock:
+Both answers are saved in full (`docs/archive/research/dallas-fort-worth-venue-table-answer.md`, `docs/archive/research/dallas-fort-worth-city-type-answer.md`). Choices I made without a lock:
 - **City type: driving** (the research: no large venue clears 20% transit; Arlington has none).
 - **Boundary as briefed** (Dallas, Tarrant, Collin, Denton); the research found nothing outside it to add.
 - **15 teams.** Dallas Trinity FC (USL Super League), the Renegades (UFL), the Wolves-style minor clubs and Major League Cricket have no free feed and are not listed; their buildings are rows.
@@ -185,7 +185,7 @@ So yes: standing room accounts for the Cowboys' gap entirely and the 49ers' most
 Built: the card opens "About this estimate" with the per-event sentences, then the general "How estimates work" below. The opening: "Based on N announced crowds at {building}, {seasons}. Half of games land between X and Y." (a playoff game says "A planning range: X to Y."), and, when the estimate tops the seats, "{Building} sells standing room, so crowds can top its {seats} seats." The "Middle half" line left the page; the playoff "Likely X–Y" line stays. Kylie chose "half of games" over "most games" (Oct 8): it is what a middle half means.
 
 ## Montreal build (Oct 8): choices made, for Kylie to confirm
-Both answers are saved in full (`docs/montreal-venue-table-answer.md`, `docs/montreal-city-type-answer.md`). Choices I made without a lock:
+Both answers are saved in full (`docs/archive/research/montreal-venue-table-answer.md`, `docs/archive/research/montreal-city-type-answer.md`). Choices I made without a lock:
 - **City type: transit** (the research: in between with a transit core; no venue reaches 80% by car; the Bell Centre about 35%). Place Bell in Laval carries its own 65%.
 - **Boundary as briefed** (the island, Laval, Longueuil, the South Shore); the research would keep it.
 - **Six team records, two on feeds** (Canadiens, CF Montréal). The Alouettes (CFL), Victoire (PWHL), Laval Rocket (AHL) and Carabins (U Sports) wait on the no-feed work: CFL is an ESPN slug (Kylie's call on ESPN), the PWHL and AHL are HockeyTech (the permission email), the Carabins have no feed. Their buildings are rows and are on the Ticketmaster sports sweep.

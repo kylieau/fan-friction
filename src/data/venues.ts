@@ -1175,7 +1175,7 @@ export const VENUES: Record<string, Venue> = {
     roof: 'open',
     strained: true,
   },
-  // ---------- Chicago (docs/chicago-venue-table-answer.md; car shares from docs/chicago-city-type-answer.md), Oct 7, 2026 ----------
+  // ---------- Chicago (docs/archive/research/chicago-venue-table-answer.md; car shares from docs/archive/research/chicago-city-type-answer.md), Oct 7, 2026 ----------
   // Not venue rows: Grant, Douglass, Union and Humboldt parks (festival grounds), McCormick Place and the Stephens
   // Convention Center (sized per event-day), Hawthorne (racing ended July 19, 2026) and Arlington Park (closed 2021).
   // Car shares marked "ours" are not in the research; they come from the nearest comparable and are flagged for Kylie.
@@ -1443,7 +1443,7 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 47000, note: "Reported, after a cut from 75,000; the 2026 Cup race sold out. One weekend a year (June 25–27, 2027). The research's one addition to the boundary; in Will County." }],
     roof: 'open',
   },
-  // ---------- Dallas–Fort Worth (docs/dallas-fort-worth-venue-table-answer.md; car shares from docs/dallas-fort-worth-city-type-answer.md), Oct 8, 2026 ----------
+  // ---------- Dallas–Fort Worth (docs/archive/research/dallas-fort-worth-venue-table-answer.md; car shares from docs/archive/research/dallas-fort-worth-city-type-answer.md), Oct 8, 2026 ----------
   // Not venue rows: Fair Park's grounds and the Will Rogers grounds (sized per fair day), PGA Frisco, the convention halls, and
   // the Fort Worth Convention Center Arena (final event Sept 2026). Car shares marked "ours" are not in the research.
   'att-stadium': {
@@ -1824,7 +1824,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
-  // ---------- Montreal (docs/montreal-venue-table-answer.md; car shares from docs/montreal-city-type-answer.md), Oct 8, 2026 ----------
+  // ---------- Montreal (docs/archive/research/montreal-venue-table-answer.md; car shares from docs/archive/research/montreal-city-type-answer.md), Oct 8, 2026 ----------
   // Not venue rows: Circuit Gilles-Villeneuve and Parc Jean-Drapeau (the Grand Prix, Osheaga: sized per day), Place des Festivals,
   // the Palais des congrès, the Old Port. Their events are placed as points and sized by their own crowd when a figure exists.
   'bell-centre': {
@@ -2221,7 +2221,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
-  // ---------- Bay Area (docs/bay-area-venue-table-answer.md; car shares from docs/bay-area-city-type-answer.md), Oct 7, 2026 ----------
+  // ---------- Bay Area (docs/archive/research/bay-area-venue-table-answer.md; car shares from docs/archive/research/bay-area-city-type-answer.md), Oct 7, 2026 ----------
   // Not venue rows (Kylie, Oct 7, as for New York's Table B): the Golden Gate Park festival meadows, the Alameda County
   // Fairgrounds, Moscone, the San Jose convention center, Civic Center Plaza, Marina Green, Lake Merritt, Stern Grove,
   // Treasure Island. Their events are placed as points and sized by their own crowd.

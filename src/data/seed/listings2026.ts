@@ -54,7 +54,7 @@ const neutralFootball = (id: string, date: string, start: string | null, title: 
 });
 
 /**
- * The State Fair of Texas, Sep 25 – Oct 18, 2026, at Fair Park (docs/dallas-fort-worth-venue-table-answer.md §4:
+ * The State Fair of Texas, Sep 25 – Oct 18, 2026, at Fair Park (docs/archive/research/dallas-fort-worth-venue-table-answer.md §4:
  * treat the fair as a daily event; the grounds have no capacity). Each remaining day takes the official 2025 gate for
  * the same day of the run (bigtex.com), labeled estimated. On Red River Saturday the game crowd inside the fair is
  * taken out, since game tickets include fair admission and the gate most likely counts them (the research's reading).

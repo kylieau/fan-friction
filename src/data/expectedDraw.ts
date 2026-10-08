@@ -54,7 +54,7 @@ export function calibratedDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
 }
 
 /**
- * A playoff game (docs/postseason-estimate-proposal.md, checked in docs/postseason-check.md):
+ * A playoff game (docs/archive/proposals/postseason-estimate-proposal.md, checked in docs/postseason-check.md):
  * the team's past playoff occupancy in this building for this round band, or the league's,
  * times the building. The range is a planning range, not a middle half. No row: no estimate,
  * as before.

@@ -196,7 +196,7 @@ const VENUE_BY_NAME = {
   'mccamish pavilion': 'mccamish-pavilion',
   'vystar arena': 'ksu-convocation-center',
   'ksu convocation center': 'ksu-convocation-center',
-  // Bay Area (docs/bay-area-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  // Bay Area (docs/archive/research/bay-area-venue-table-answer.md), as ESPN writes them on each team's own schedule.
   'chase center': 'chase-center',
   "levi's stadium": 'levis-stadium',
   'sap center at san jose': 'sap-center',
@@ -211,7 +211,7 @@ const VENUE_BY_NAME = {
   'maples pavilion': 'maples-pavilion',
   'provident credit union event center': 'provident-event-center',
   'oracle park': 'oracle-park',
-  // Chicago (docs/chicago-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  // Chicago (docs/archive/research/chicago-venue-table-answer.md), as ESPN writes them on each team's own schedule.
   'united center': 'united-center',
   'wintrust arena': 'wintrust-arena',
   'soldier field': 'soldier-field',
@@ -225,7 +225,7 @@ const VENUE_BY_NAME = {
   'rate field': 'rate-field',
   'seatgeek stadium': 'seatgeek-stadium',
   'toyota park': 'seatgeek-stadium',
-  // Dallas–Fort Worth (docs/dallas-fort-worth-venue-table-answer.md), as ESPN writes them.
+  // Dallas–Fort Worth (docs/archive/research/dallas-fort-worth-venue-table-answer.md), as ESPN writes them.
   'at&t stadium': 'att-stadium',
   'american airlines center': 'american-airlines-center',
   'college park center': 'college-park-center',
@@ -339,7 +339,7 @@ async function collectEspn(team) {
     const json = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${team.path}/teams/${team.espnId}/schedule${q}`);
     const events = (json.events ?? []).map((e) => ({ e, preseason: false, postseason: false }));
     if (team.seasontype) {
-      // Playoff games (docs/postseason-estimate-proposal.md, Kylie's OK Oct 7): the same feed, season type 3.
+      // Playoff games (docs/archive/proposals/postseason-estimate-proposal.md, Kylie's OK Oct 7): the same feed, season type 3.
       try {
         const post = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${team.path}/teams/${team.espnId}/schedule?season=${season}&seasontype=3`);
         events.push(...(post.events ?? []).map((e) => ({ e, preseason: false, postseason: true })));
