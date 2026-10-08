@@ -218,6 +218,60 @@
       "shortwave": 471,
       "cloudCover": 91,
       "code": 3
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "paypal-park",
+      "date": "2026-10-18",
+      "hour": 14,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T03:03:58.317Z",
+      "feelsLikeF": 77.8,
+      "tempF": 83.7,
+      "humidity": 12,
+      "windMph": 6,
+      "uvIndex": 4.6,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 679,
+      "cloudCover": 55,
+      "code": 2
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "paypal-park",
+      "date": "2026-10-18",
+      "hour": 15,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T03:03:58.317Z",
+      "feelsLikeF": 77.8,
+      "tempF": 84.9,
+      "humidity": 11,
+      "windMph": 6.5,
+      "uvIndex": 3.85,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 599,
+      "cloudCover": 65,
+      "code": 2
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "paypal-park",
+      "date": "2026-10-18",
+      "hour": 16,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T03:03:58.317Z",
+      "feelsLikeF": 77.4,
+      "tempF": 85.3,
+      "humidity": 10,
+      "windMph": 6.9,
+      "uvIndex": 2.9,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 475,
+      "cloudCover": 77,
+      "code": 2
     }
   ],
   "days": [
@@ -243,6 +297,18 @@
       "feelsLikeLowF": 58.6,
       "code": 3,
       "precipProbability": 0,
+      "precipMm": 0
+    },
+    {
+      "metroId": "bay-area",
+      "venueId": "city",
+      "date": "2026-10-18",
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T03:03:58.317Z",
+      "feelsLikeHighF": 74.3,
+      "feelsLikeLowF": 58.6,
+      "code": 3,
+      "precipProbability": 2,
       "precipMm": 0
     }
   ]

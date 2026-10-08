@@ -4,7 +4,7 @@
   "metroName": "Montreal",
   "timeZone": "America/Toronto",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-08T02:54:29.815Z",
+  "capturedAt": "2026-10-08T03:06:40.531Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -30,33 +30,10 @@
     {
       "id": "ticketmaster",
       "name": "Ticketmaster listings",
-      "inWindow": 15
+      "inWindow": 8
     }
   ],
   "events": [
-    {
-      "id": "2026-10-07-tm-1AsZk3oGkeROFjL",
-      "metroId": "montreal",
-      "date": "2026-10-07",
-      "start": "18:00",
-      "kind": "special",
-      "title": "Salon des Directeurs CIBC - Teddy Swims",
-      "place": {
-        "type": "venue",
-        "venueId": "bell-centre"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Salon des Directeurs CIBC",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "1AsZk3oGkeROFjL",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
     {
       "id": "2026-10-07-tm-1Ad7Z_FGkM9lFwl",
       "metroId": "montreal",
@@ -106,55 +83,12 @@
       }
     },
     {
-      "id": "2026-10-07-tm-1AsZk3oGkdod1MV",
-      "metroId": "montreal",
-      "date": "2026-10-07",
-      "start": "19:00",
-      "kind": "special",
-      "title": "Centre Bell - Repas Restaurant Canti - Teddy Swims",
-      "place": {
-        "type": "venue",
-        "venueId": "bell-centre"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Restaurant Canti",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "1AsZk3oGkdod1MV",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
-      "id": "2026-10-07-tm-1AsZk3oGkdodBMz",
-      "metroId": "montreal",
-      "date": "2026-10-07",
-      "start": "19:00",
-      "kind": "special",
-      "title": "Centre Bell - Repas Restaurant Mythik - Teddy Swims",
-      "place": {
-        "type": "venue",
-        "venueId": "bell-centre"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Restaurant Mythik",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "1AsZk3oGkdodBMz"
-    },
-    {
       "id": "2026-10-08-espn-canadiens-401892459",
       "metroId": "montreal",
       "date": "2026-10-08",
       "start": "19:00",
       "kind": "game",
-      "title": "Montreal Canadiens vs. Predators",
+      "title": "Canadiens vs. Predators",
       "place": {
         "type": "venue",
         "venueId": "bell-centre"
@@ -204,29 +138,6 @@
       }
     },
     {
-      "id": "2026-10-09-tm-1AsZkfMGkdLxarJ",
-      "metroId": "montreal",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "kind": "special",
-      "title": "Salon des Directeurs CIBC - The Smashing Pumpkins",
-      "place": {
-        "type": "venue",
-        "venueId": "bell-centre"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Salon des Directeurs CIBC",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "1AsZkfMGkdLxarJ",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
       "id": "2026-10-09-tm-17G8v0G61BQjJfg",
       "metroId": "montreal",
       "date": "2026-10-09",
@@ -251,35 +162,12 @@
       }
     },
     {
-      "id": "2026-10-09-tm-17G8v0G61Db_ngC",
-      "metroId": "montreal",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "kind": "special",
-      "title": "Centre Bell - Repas Restaurant Canti - The Smashing Pumpkins",
-      "place": {
-        "type": "venue",
-        "venueId": "bell-centre"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Restaurant Canti",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "17G8v0G61Db_ngC",
-      "occasionFacts": {
-        "run": 2
-      }
-    },
-    {
       "id": "2026-10-10-espn-canadiens-401892473",
       "metroId": "montreal",
       "date": "2026-10-10",
       "start": "19:00",
       "kind": "game",
-      "title": "Montreal Canadiens vs. Red Wings",
+      "title": "Canadiens vs. Red Wings",
       "place": {
         "type": "venue",
         "venueId": "bell-centre"
@@ -310,7 +198,7 @@
       "date": "2026-10-13",
       "start": "18:30",
       "kind": "game",
-      "title": "Montreal Canadiens vs. Sabres",
+      "title": "Canadiens vs. Sabres",
       "broadcast": "MSGB",
       "place": {
         "type": "venue",
@@ -397,7 +285,7 @@
       "date": "2026-10-17",
       "start": "19:00",
       "kind": "game",
-      "title": "Montreal Canadiens vs. Sabres",
+      "title": "Canadiens vs. Sabres",
       "broadcast": "NHL Net",
       "place": {
         "type": "venue",
@@ -453,7 +341,7 @@
       "date": "2026-10-20",
       "start": "19:00",
       "kind": "game",
-      "title": "Montreal Canadiens vs. Sharks",
+      "title": "Canadiens vs. Sharks",
       "broadcast": "NBC Sports BA",
       "place": {
         "type": "venue",
@@ -477,52 +365,6 @@
         "games": 9,
         "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
-      }
-    },
-    {
-      "id": "2026-10-21-tm-17G8v0G616vwIMQ",
-      "metroId": "montreal",
-      "date": "2026-10-21",
-      "start": "18:00",
-      "kind": "special",
-      "title": "Salon des Directeurs CIBC - Olivia Rodrigo",
-      "place": {
-        "type": "venue",
-        "venueId": "bell-centre"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Salon des Directeurs CIBC",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "17G8v0G616vwIMQ",
-      "occasionFacts": {
-        "run": 5
-      }
-    },
-    {
-      "id": "2026-10-21-tm-17G8v0G6166ta9H",
-      "metroId": "montreal",
-      "date": "2026-10-21",
-      "start": "19:00",
-      "kind": "special",
-      "title": "Centre Bell - Repas Restaurant Canti - Olivia Rodrigo",
-      "place": {
-        "type": "venue",
-        "venueId": "bell-centre"
-      },
-      "audience": {
-        "domain": "other",
-        "tag": "Undefined"
-      },
-      "performer": "Restaurant Canti",
-      "crowd": [],
-      "sourceId": "ticketmaster",
-      "ticketmasterId": "17G8v0G6166ta9H",
-      "occasionFacts": {
-        "run": 5
       }
     },
     {
@@ -578,24 +420,13 @@
   ],
   "forecasts": [
     {
-      "eventId": "2026-10-07-tm-1AsZk3oGkeROFjL",
-      "date": "2026-10-07",
-      "start": "18:00",
-      "read": {
-        "rating": 10,
-        "friction": "Moderate",
-        "why": "Centre Bell - Repas Restaurant Canti - Teddy Swims and Centre Bell - Repas Restaurant Mythik - Teddy Swims next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-07-tm-1Ad7Z_FGkM9lFwl",
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 10,
-        "friction": "Moderate",
-        "why": "Salon des Directeurs CIBC - Teddy Swims and Centre Bell - Repas Restaurant Canti - Teddy Swims next door, same hours.",
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Metric 8.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -607,35 +438,13 @@
       "date": "2026-10-07",
       "start": "19:00",
       "read": {
-        "rating": 10,
-        "friction": "Heavy",
-        "why": "Salon des Directeurs CIBC - Teddy Swims and Centre Bell - Repas Restaurant Canti - Teddy Swims 8.5 mi away, same hours.",
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Teddy Swims 8.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
         "count": 5700
-      }
-    },
-    {
-      "eventId": "2026-10-07-tm-1AsZk3oGkdod1MV",
-      "date": "2026-10-07",
-      "start": "19:00",
-      "read": {
-        "rating": 10,
-        "friction": "Moderate",
-        "why": "Salon des Directeurs CIBC - Teddy Swims and Centre Bell - Repas Restaurant Mythik - Teddy Swims next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-07-tm-1AsZk3oGkdodBMz",
-      "date": "2026-10-07",
-      "start": "19:00",
-      "read": {
-        "rating": 10,
-        "friction": "Moderate",
-        "why": "Salon des Directeurs CIBC - Teddy Swims and Centre Bell - Repas Restaurant Canti - Teddy Swims next door, same hours.",
-        "method": "formula"
       }
     },
     {
@@ -661,7 +470,7 @@
       "read": {
         "rating": 1.5,
         "friction": "Low",
-        "why": "Montreal Canadiens vs. Predators 8.5 mi away, same hours.",
+        "why": "Canadiens vs. Predators 8.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -669,39 +478,17 @@
       }
     },
     {
-      "eventId": "2026-10-09-tm-1AsZkfMGkdLxarJ",
-      "date": "2026-10-09",
-      "start": "19:00",
-      "read": {
-        "rating": 7.2,
-        "friction": "Low",
-        "why": "Centre Bell - Repas Restaurant Canti - The Smashing Pumpkins and The Smashing Pumpkins next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-09-tm-17G8v0G61BQjJfg",
       "date": "2026-10-09",
       "start": "20:00",
       "read": {
-        "rating": 7.2,
-        "friction": "Moderate",
-        "why": "Salon des Directeurs CIBC - The Smashing Pumpkins and Centre Bell - Repas Restaurant Canti - The Smashing Pumpkins next door, same hours.",
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
         "count": 8550
-      }
-    },
-    {
-      "eventId": "2026-10-09-tm-17G8v0G61Db_ngC",
-      "date": "2026-10-09",
-      "start": "20:00",
-      "read": {
-        "rating": 7.2,
-        "friction": "Low",
-        "why": "Salon des Directeurs CIBC - The Smashing Pumpkins and The Smashing Pumpkins next door, same hours.",
-        "method": "formula"
       }
     },
     {
@@ -789,7 +576,7 @@
       "read": {
         "rating": 1.5,
         "friction": "Low",
-        "why": "Montreal Canadiens vs. Sabres 8.5 mi away, same hours.",
+        "why": "Canadiens vs. Sabres 8.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -813,35 +600,13 @@
       }
     },
     {
-      "eventId": "2026-10-21-tm-17G8v0G616vwIMQ",
-      "date": "2026-10-21",
-      "start": "18:00",
-      "read": {
-        "rating": 6.7,
-        "friction": "Moderate",
-        "why": "Centre Bell - Repas Restaurant Canti - Olivia Rodrigo and Olivia Rodrigo next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
-      "eventId": "2026-10-21-tm-17G8v0G6166ta9H",
-      "date": "2026-10-21",
-      "start": "19:00",
-      "read": {
-        "rating": 6.7,
-        "friction": "Moderate",
-        "why": "Salon des Directeurs CIBC - Olivia Rodrigo and Olivia Rodrigo next door, same hours.",
-        "method": "formula"
-      }
-    },
-    {
       "eventId": "2026-10-21-tm-1Ad7Z_aGkmbY4v9",
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 6.7,
-        "friction": "Moderate",
-        "why": "Salon des Directeurs CIBC - Olivia Rodrigo and Centre Bell - Repas Restaurant Canti - Olivia Rodrigo next door, same hours.",
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Laval Rocket vs. Syracuse Crunch 8.5 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -853,9 +618,9 @@
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 6.7,
-        "friction": "Moderate",
-        "why": "Salon des Directeurs CIBC - Olivia Rodrigo and Centre Bell - Repas Restaurant Canti - Olivia Rodrigo 8.5 mi away, same hours.",
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Olivia Rodrigo 8.5 mi away, same hours.",
         "method": "formula"
       }
     }

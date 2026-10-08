@@ -12,7 +12,7 @@
       "venueId": "bell-centre",
       "homeTeamId": "canadiens",
       "home": {
-        "name": "Montreal Canadiens",
+        "name": "Canadiens",
         "score": 4
       },
       "away": {
@@ -20,7 +20,7 @@
         "score": 6
       },
       "attendance": 20962,
-      "capturedAt": "2026-10-08T02:49:25.322Z",
+      "capturedAt": "2026-10-08T03:06:45.785Z",
       "duration": {
         "minutes": 156,
         "kind": "estimated"

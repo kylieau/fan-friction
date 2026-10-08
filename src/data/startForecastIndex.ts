@@ -5034,13 +5034,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-tm-1Ad7Z_FGkM9lFwl",
     "date": "2026-10-07",
     "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 10,
-      "friction": "Moderate",
-      "why": "Salon des Directeurs CIBC - Teddy Swims and Centre Bell - Repas Restaurant Canti - Teddy Swims next door, same hours."
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "Metric 8.5 mi away, same hours."
     },
     "draw": {
       "count": 8550
@@ -5051,13 +5051,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-07-tm-1Ad7Z_kGkwt44qV",
     "date": "2026-10-07",
     "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 10,
-      "friction": "Heavy",
-      "why": "Salon des Directeurs CIBC - Teddy Swims and Centre Bell - Repas Restaurant Canti - Teddy Swims 8.5 mi away, same hours."
+      "rating": 1.3,
+      "friction": "Low",
+      "why": "Teddy Swims 8.5 mi away, same hours."
     },
     "draw": {
       "count": 5700
@@ -5065,52 +5065,10 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "montreal",
-    "eventId": "2026-10-07-tm-1AsZk3oGkdod1MV",
-    "date": "2026-10-07",
-    "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
-    "capturedOn": "2026-10-07",
-    "read": {
-      "method": "formula",
-      "rating": 10,
-      "friction": "Moderate",
-      "why": "Salon des Directeurs CIBC - Teddy Swims and Centre Bell - Repas Restaurant Mythik - Teddy Swims next door, same hours."
-    }
-  },
-  {
-    "metroId": "montreal",
-    "eventId": "2026-10-07-tm-1AsZk3oGkdodBMz",
-    "date": "2026-10-07",
-    "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
-    "capturedOn": "2026-10-07",
-    "read": {
-      "method": "formula",
-      "rating": 10,
-      "friction": "Moderate",
-      "why": "Salon des Directeurs CIBC - Teddy Swims and Centre Bell - Repas Restaurant Canti - Teddy Swims next door, same hours."
-    }
-  },
-  {
-    "metroId": "montreal",
-    "eventId": "2026-10-07-tm-1AsZk3oGkeROFjL",
-    "date": "2026-10-07",
-    "start": "18:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
-    "capturedOn": "2026-10-07",
-    "read": {
-      "method": "formula",
-      "rating": 10,
-      "friction": "Moderate",
-      "why": "Centre Bell - Repas Restaurant Canti - Teddy Swims and Centre Bell - Repas Restaurant Mythik - Teddy Swims next door, same hours."
-    }
-  },
-  {
-    "metroId": "montreal",
     "eventId": "2026-10-08-espn-canadiens-401892459",
     "date": "2026-10-08",
     "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -5129,13 +5087,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-08-tm-17G8v0G6u51wzMn",
     "date": "2026-10-08",
     "start": "20:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
       "rating": 1.5,
       "friction": "Low",
-      "why": "Montreal Canadiens vs. Predators 8.5 mi away, same hours."
+      "why": "Canadiens vs. Predators 8.5 mi away, same hours."
     },
     "draw": {
       "count": 5700
@@ -5146,13 +5104,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-09-tm-17G8v0G61BQjJfg",
     "date": "2026-10-09",
     "start": "20:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 7.2,
-      "friction": "Moderate",
-      "why": "Salon des Directeurs CIBC - The Smashing Pumpkins and Centre Bell - Repas Restaurant Canti - The Smashing Pumpkins next door, same hours."
+      "rating": 1,
+      "friction": "Low",
+      "why": "Nothing bigger was on."
     },
     "draw": {
       "count": 8550
@@ -5160,38 +5118,10 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "montreal",
-    "eventId": "2026-10-09-tm-17G8v0G61Db_ngC",
-    "date": "2026-10-09",
-    "start": "20:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
-    "capturedOn": "2026-10-07",
-    "read": {
-      "method": "formula",
-      "rating": 7.2,
-      "friction": "Low",
-      "why": "Salon des Directeurs CIBC - The Smashing Pumpkins and The Smashing Pumpkins next door, same hours."
-    }
-  },
-  {
-    "metroId": "montreal",
-    "eventId": "2026-10-09-tm-1AsZkfMGkdLxarJ",
-    "date": "2026-10-09",
-    "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
-    "capturedOn": "2026-10-07",
-    "read": {
-      "method": "formula",
-      "rating": 7.2,
-      "friction": "Low",
-      "why": "Centre Bell - Repas Restaurant Canti - The Smashing Pumpkins and The Smashing Pumpkins next door, same hours."
-    }
-  },
-  {
-    "metroId": "montreal",
     "eventId": "2026-10-10-espn-canadiens-401892473",
     "date": "2026-10-10",
     "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -5210,7 +5140,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-canadiens-401892490",
     "date": "2026-10-13",
     "start": "18:30",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -5229,7 +5159,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-cf-montreal-761864",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -5248,7 +5178,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-1AsZko7Gkd3kFbS",
     "date": "2026-10-16",
     "start": "19:30",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -5265,7 +5195,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-canadiens-401892524",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -5284,13 +5214,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-17G8v0G65SFmQJz",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
       "rating": 1.5,
       "friction": "Low",
-      "why": "Montreal Canadiens vs. Sabres 8.5 mi away, same hours."
+      "why": "Canadiens vs. Sabres 8.5 mi away, same hours."
     },
     "draw": {
       "count": 5700
@@ -5301,7 +5231,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-espn-canadiens-401892539",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
@@ -5317,44 +5247,16 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "montreal",
-    "eventId": "2026-10-21-tm-17G8v0G6166ta9H",
-    "date": "2026-10-21",
-    "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
-    "capturedOn": "2026-10-07",
-    "read": {
-      "method": "formula",
-      "rating": 6.7,
-      "friction": "Moderate",
-      "why": "Salon des Directeurs CIBC - Olivia Rodrigo and Olivia Rodrigo next door, same hours."
-    }
-  },
-  {
-    "metroId": "montreal",
-    "eventId": "2026-10-21-tm-17G8v0G616vwIMQ",
-    "date": "2026-10-21",
-    "start": "18:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
-    "capturedOn": "2026-10-07",
-    "read": {
-      "method": "formula",
-      "rating": 6.7,
-      "friction": "Moderate",
-      "why": "Centre Bell - Repas Restaurant Canti - Olivia Rodrigo and Olivia Rodrigo next door, same hours."
-    }
-  },
-  {
-    "metroId": "montreal",
     "eventId": "2026-10-21-tm-1Ad7Z_aGkmbY4v9",
     "date": "2026-10-21",
     "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 6.7,
-      "friction": "Moderate",
-      "why": "Salon des Directeurs CIBC - Olivia Rodrigo and Centre Bell - Repas Restaurant Canti - Olivia Rodrigo next door, same hours."
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Laval Rocket vs. Syracuse Crunch 8.5 mi away, same hours."
     },
     "draw": {
       "count": 8550
@@ -5365,13 +5267,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-1AsZkf3Gkdjozk0",
     "date": "2026-10-21",
     "start": "19:00",
-    "capturedAt": "2026-10-08T02:54:29.815Z",
+    "capturedAt": "2026-10-08T03:06:40.531Z",
     "capturedOn": "2026-10-07",
     "read": {
       "method": "formula",
-      "rating": 6.7,
-      "friction": "Moderate",
-      "why": "Salon des Directeurs CIBC - Olivia Rodrigo and Centre Bell - Repas Restaurant Canti - Olivia Rodrigo 8.5 mi away, same hours."
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Olivia Rodrigo 8.5 mi away, same hours."
     }
   },
   {
