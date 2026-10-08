@@ -191,17 +191,17 @@ export function EventScreen() {
                 People (Estimated)
                 <HowButton onOpen={() => setShowHow(true)} />
               </span>
+              {e.expectedDraw.fromCrowds && me.capacity && <FillBar count={e.expectedDraw.count} capacity={me.capacity} />}
+            </>
+          ) : me.capacity ? (
+            <>
+              <span className="crowd-number small">{fmt(me.capacity)}</span>
+              <span className="crowd-kind">Seats · no estimate yet</span>
             </>
           ) : (
             <span className="crowd-kind">No count found yet</span>
           )}
         </div>
-        {me.capacity && (
-          <div className="crowd-cap">
-            <span className="crowd-number small">{fmt(me.capacity)}</span>
-            <span className="crowd-kind">Seats</span>
-          </div>
-        )}
         {me.soldOut && me.count !== undefined && <span className="tag-soldout">SOLD OUT</span>}
         <DrawNote event={e} counted={me.count !== undefined || me.soldOut} />
       </section>
@@ -244,6 +244,22 @@ export function EventScreen() {
  * ahead (S5). No per-event basis sentence: how estimates are made is behind the (i),
  * once, for all of them (Kylie, Oct 7).
  */
+/**
+ * How full the building reads, as a bar (Kylie, Oct 8: the bar, not a word). Only under an
+ * estimate that rests on announced crowds; a show sized by a rule of thumb or a playoff game sized
+ * by the building would just draw the rule. Fill is the estimate over the seats; past full it
+ * stays full, since the building has held that many. The label is for screen readers only.
+ */
+function FillBar({ count, capacity }: { count: number; capacity: number }) {
+  const share = Math.min(1, count / capacity);
+  const word = share < 0.4 ? 'Plenty of room' : share < 0.7 ? 'About half full' : share < 0.95 ? 'Mostly full' : 'Packed';
+  return (
+    <span className="fill-bar" role="img" aria-label={word}>
+      <span className="fill-bar-fill" style={{ width: `${Math.round(share * 100)}%` }} />
+    </span>
+  );
+}
+
 function DrawNote({ event, counted }: { event: CrowdEvent; counted: boolean }) {
   if (!counted) {
     const d = event.expectedDraw;
@@ -287,7 +303,9 @@ function HowEstimatesWork({ onClose }: { onClose: () => void }) {
         <p>
           <strong>A playoff game:</strong> how full this building got at the team's past playoff games in this round, or the
           league's when the team has too few; the building itself when neither is on file. The range shown is a planning
-          range, wider than a middle half; its low end is what counts toward friction.
+          range, wider than a middle half; its low end is what counts toward friction. The bar under an estimate is the
+          crowd against the building's seats; it shows only when past crowds are behind the figure, and a building that
+          sells standing room can read full.
         </p>
         <p className="home-helper">
           <strong>A show:</strong> a venue's own published average when it has one; otherwise the full room for a venue built

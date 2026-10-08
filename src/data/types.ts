@@ -28,6 +28,8 @@ export interface Capacity {
   setup?: 'basketball' | 'hockey' | 'football' | 'soccer' | 'baseball' | 'concert';
   /** Anything a reader should know, such as sources that disagree. */
   note?: string;
+  /** Capacity with standing room, where published or regularly sold (AT&T Stadium 100,000+). Caps estimates; never shown. */
+  standing?: number;
 }
 
 export interface Venue {
@@ -202,7 +204,16 @@ export interface CrowdEvent {
    * Always an estimate. Seeded where obvious; otherwise attached on read from
    * past announced crowds (expectedDraw.ts), with the middle half as low–high.
    */
-  expectedDraw?: { count: number; note: string; low?: number; high?: number; /** A playoff estimate: the range is a planning range, wider than a middle half. */ planning?: boolean };
+  expectedDraw?: {
+    count: number;
+    note: string;
+    low?: number;
+    high?: number;
+    /** A playoff estimate: the range is a planning range, wider than a middle half. */
+    planning?: boolean;
+    /** True when the figure rests on announced crowds (a team's or a league's), not on a rule of thumb or the building. */
+    fromCrowds?: boolean;
+  };
   /** A preseason (exhibition) game. Sized from past preseason crowds, never the regular season's. */
   preseason?: boolean;
   /** The home side's first regular-season home game of the season. */

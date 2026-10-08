@@ -1454,7 +1454,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: "AT&T Stadium" }],
     location: [-97.0928, 32.7479],
     capacity: [
-      { seats: 80000, setup: 'football', note: 'Reported, seated; 100,000+ with standing-room platforms; NFL record 105,121 (2009)' },
+      { seats: 80000, setup: 'football', standing: 100000, note: 'Reported, seated; 100,000+ with standing-room platforms; NFL record 105,121 (2009)' },
       { seats: 80000, setup: 'soccer', note: "The 2026 World Cup drew about 70,000 per match, not FIFA's listed 94,000; the seated bowl is the ceiling" },
       { seats: 80000, setup: 'concert', note: 'Not published; the seated bowl as the ceiling. Estimated.' },
     ],

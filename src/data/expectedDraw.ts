@@ -46,6 +46,7 @@ export function calibratedDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
     count: Math.round(row.count * k),
     low: Math.round(row.low * k),
     high: Math.round(row.high * k),
+    fromCrowds: true,
     note: `Typical announced crowd here for ${describe(row, event.date)}: ${row.games} games, ${row.seasons}.`,
   };
 }
@@ -71,7 +72,7 @@ export function postseasonDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   if (!row) return { count: cap, low: cap, high: cap, planning: true, note: 'No past playoff crowds on file for this round; the building\'s capacity for this sport. An estimate.' };
   const people = postseasonPeople(row, cap);
   const who = row.basis === 'team' ? 'this team\'s' : row.basis === 'blend' ? 'this team\'s and the league\'s' : 'the league\'s';
-  return { ...people, planning: true, note: `Playoff crowds as a share of the building, ${who} past ${row.games} games (${row.seasons}). An estimate.` };
+  return { ...people, planning: true, fromCrowds: true, note: `Playoff crowds as a share of the building, ${who} past ${row.games} games (${row.seasons}). An estimate.` };
 }
 
 /**
