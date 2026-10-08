@@ -183,3 +183,18 @@ So yes: standing room accounts for the Cowboys' gap entirely and the 49ers' most
 
 ## The ⓘ card's opening (Kylie, Oct 8, from the GrokBot mockup)
 Built: the card opens "About this estimate" with the per-event sentences, then the general "How estimates work" below. The opening: "Based on N announced crowds at {building}, {seasons}. Half of games land between X and Y." (a playoff game says "A planning range: X to Y."), and, when the estimate tops the seats, "{Building} sells standing room, so crowds can top its {seats} seats." The "Middle half" line left the page; the playoff "Likely X–Y" line stays. Kylie chose "half of games" over "most games" (Oct 8): it is what a middle half means.
+
+## Montreal build (Oct 8): choices made, for Kylie to confirm
+Both answers are saved in full (`docs/montreal-venue-table-answer.md`, `docs/montreal-city-type-answer.md`). Choices I made without a lock:
+- **City type: transit** (the research: in between with a transit core; no venue reaches 80% by car; the Bell Centre about 35%). Place Bell in Laval carries its own 65%.
+- **Boundary as briefed** (the island, Laval, Longueuil, the South Shore); the research would keep it.
+- **Six team records, two on feeds** (Canadiens, CF Montréal). The Alouettes (CFL), Victoire (PWHL), Laval Rocket (AHL) and Carabins (U Sports) wait on the no-feed work: CFL is an ESPN slug (Kylie's call on ESPN), the PWHL and AHL are HockeyTech (the permission email), the Carabins have no feed. Their buildings are rows and are on the Ticketmaster sports sweep.
+- **Not venue rows:** Circuit Gilles-Villeneuve and Parc Jean-Drapeau (the Grand Prix at ~120,000 a day, Osheaga ~52,000, îLESONIQ 45,000), Place des Festivals, the Palais des congrès, the Old Port. Hand-list their dates each spring when announced; none is listed yet (the 2027 dates are not set).
+- **The Olympic Stadium** is a row at 56,000 with a note that it is closed to events until 2028; nothing lists games there, so it costs nothing and is ready for the reopening.
+- **Car shares that are mine** (noted in the rows): the CEPSUM stadium and Claude-Robillard.
+- **The tester's night** is seeded with the announced 20,962; the street watch party outside the Bell Centre is not, because no count was published.
+
+## No-feed sources: what was built (Kylie's OK on 1 and 2, Oct 8)
+- **Minor-league and independent baseball through the MLB feed**: nine clubs in six cities; seven have schedules and box-score crowds (Frisco 275 games on file, Tacoma 300, Everett 270, Brooklyn 264, Gwinnett 300, Staten Island 62, Long Island 68). The Chicago Dogs and Schaumburg Boomers are in the feed's team list but have no schedule there, so their parks are on the Ticketmaster sweep instead.
+- **The Ticketmaster sports sweep** at an allowlist of buildings no feed covers (`SPORTS_FROM_TICKETMASTER` in `ticketmasterSource.ts`): the rodeo, AHL, ECHL, PWHL, WHL, CFL, UFL, cricket and speedway rooms, plus the two independent ballparks. A feed game at the same building on the same date wins. These listings size by the building. First results come with the next nightly run.
+- **ESPN extension** (USL Super League, G League, UFL, NLL, CFL): waiting on Kylie's read of the terms question. **HockeyTech**: the email is drafted (`docs/hockeytech-permission-email.md`), not sent.

@@ -30,3 +30,19 @@ Two corrections from the research to carry: the Dallas Sidekicks sat out 2025–
 2. OK to wire step 2 (the Ticketmaster sweep at the allowlisted buildings).
 3. Her read on step 3: extend ESPN, or hold.
 4. Whether she wants to send the HockeyTech email (I can draft it).
+
+## Status (Oct 8, 2026)
+Kylie: yes to 1 and 2 (built the same day; see `docs/expected-draw-decisions-oct7.md`, "No-feed sources: what was built"); asked for the pros and cons of 3 and for the HockeyTech email and process (4: `docs/hockeytech-permission-email.md`).
+
+### 3. Extending ESPN: pros and cons
+The question is not technical. The USL Super League, G League, UFL, NLL and CFL slugs all respond today. It is whether to widen the app's reliance on a feed whose owner's terms the research reads as barring automated access without written permission, the feed the app has run on since the first LA build for the NBA, WNBA, NHL, NFL, MLS, NWSL and college games.
+
+| | Extend | Hold |
+|---|---|---|
+| Coverage | Dallas Trinity, the Alouettes and every CFL club, the G League rooms, the UFL, the NLL: about 60 more home dates a year in the covered cities, with announced crowds where ESPN fills the field | Those teams stay on the Ticketmaster sweep (no crowds, building-sized) or hand entry |
+| Work | Four lines in the team list per league; the same code path | None |
+| Terms exposure | Wider by the same kind, not a new kind: more calls to the same feed under the same terms | Unchanged; the exposure that exists today stays exactly as it is |
+| Reversibility | Removing a slug is one line; the catalog's rows for it go away the next night | — |
+| What a reviewer sees later | Reliance on ESPN across more leagues, harder to unwind if the answer is ever "stop" | Reliance on ESPN for the major leagues only, with the gap filled by sources that are plainly licensed (MLB's feed, Ticketmaster's key) |
+
+My read: the research is right that this is one decision, not five. If ESPN is acceptable for the Lakers, it is acceptable for the G League; if it is not, the problem is the existing feed, and the fix is a licensed replacement for everything, which is a public-launch question, not a today question. Extending changes the amount, not the kind, and it is reversible in one line. Holding costs about 60 nights a year, mostly small rooms, with the CFL and the USL Super League as the ones that matter (Molson Stadium at 23,000; the Cotton Bowl). I'd extend, with the CFL and USL Super League first, and note the date and reason in `data-sources.md`. Her call.

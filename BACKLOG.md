@@ -215,6 +215,18 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/expected-draw-decisions-oct7.md
 - Eight car shares are mine (listed in the decisions doc).
 - **Ticketmaster lists suite packages as their own event** ("Dickies Arena Suites" beside The Red Clay Strays, same night, same building, 8.0k each): a venue-plus-date dedupe for listings whose title is the building's name plus "Suites" or similar.
 
+## Montreal is covered (Oct 8) — follow-ons
+- **Hand-list each spring:** the Grand Prix weekend (~120,000/day, late May), Osheaga (~52,000/day) and îLESONIQ (45,000/day) at Parc Jean-Drapeau, the Jazz Festival's free headliners at Place des Festivals (~25,000, low confidence), the National Bank Open at IGA Stadium (~24,000/day on the grounds). None has a feed.
+- **Alouettes, Victoire, Rocket, Carabins** list only once a source is wired (ESPN's CFL slug; HockeyTech after permission); until then the Ticketmaster sweep at Molson Stadium and Place Bell.
+- **Olympic Stadium** reopens 2028 with a new capacity; CF Montréal may move there. **IGA Stadium** gets a roofed 15,000-seat court, no dates. **MLS** goes to a fall-to-spring calendar in 2027.
+- The Canadiens' street watch parties (every home playoff game) have no published count; seed one only if a figure appears.
+
+## No-feed sources (Oct 8) — follow-ons
+- **ESPN extension**: Kylie's call on the Disney terms (USL Super League, G League, UFL, NLL, CFL slugs verified responding).
+- **HockeyTech**: send `docs/hockeytech-permission-email.md` per league; wire after a yes; keep replies in `private/`.
+- **The Ticketmaster sweep's first night**: check which allowlisted buildings actually list sports there, and that no feed game got a Ticketmaster twin.
+- **Hand-entered annual file**: NASCAR and IndyCar weekends, the Stock Show, PBR, Major League Cricket by building.
+
 ## Team schedules (built Oct 7) — follow-ons
 - **Kylie runs `supabase/migrations/0010_team_schedules.sql`**; until then ESPN teams' pages say "No schedule yet" (the job logs a warning and skips the table) and only MLB clubs show a schedule, read live.
 - A favorite that is not a team in the feeds (an artist, UCLA men's volleyball) says "No schedule yet." Programs join as their city is built out; the intent is every city eventually (Kylie, Oct 7).
