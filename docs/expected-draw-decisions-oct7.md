@@ -154,3 +154,14 @@ Both answers are saved in full (`docs/chicago-venue-table-answer.md`, `docs/chic
 
 ## Playoff games with no comparables show the building (Kylie, Oct 7)
 Kylie (Oct 7): "I don't want WNBA to have 'no count yet'. Why can't you just put building/capacity (same for other leagues)." Built: a playoff game whose team and league have no comparables on file (the WNBA, NFL and NWSL today) shows the building's capacity for that sport as its estimate, with the note "No past playoff crowds on file for this round; the building's capacity for this sport." The friction read already used the building; only the page changed. The ⓘ card says so.
+
+## Dallas–Fort Worth build (Oct 8): choices made, for Kylie to confirm
+Both answers are saved in full (`docs/dallas-fort-worth-venue-table-answer.md`, `docs/dallas-fort-worth-city-type-answer.md`). Choices I made without a lock:
+- **City type: driving** (the research: no large venue clears 20% transit; Arlington has none).
+- **Boundary as briefed** (Dallas, Tarrant, Collin, Denton); the research found nothing outside it to add.
+- **15 teams.** Dallas Trinity FC (USL Super League), the Renegades (UFL), the Wolves-style minor clubs and Major League Cricket have no free feed and are not listed; their buildings are rows.
+- **The State Fair is a daily event** (the research's recommendation): its remaining 2026 days are hand-listed at Fair Park as points, each with the official 2025 gate for the same day of the run, labeled estimated. **The Red River Showdown** is hand-listed as a neutral-site game at the Cotton Bowl (92,100), and the fair's Saturday figure has the stadium crowd taken out so the two are not counted twice. Future fairs need the same hand list each September.
+- **Not venue rows:** Fair Park's grounds, the Will Rogers grounds (the Stock Show, Jan–Feb, could be hand-listed the same way), PGA Frisco, the convention halls, the closed Fort Worth Convention Center Arena. **Dallas Memorial Arena** is a row for 2027 (the Wings move in) with no events until then.
+- **Toyota Stadium during its renovation** reads 15,000 (the research's estimate; no official figure) until FC Dallas publishes one.
+- **Car shares that are mine** (nearest comparable, noted in each row): Ford Center, Riders Field, Dallas Memorial Arena, Curtis Culwell Center, Grand Prairie Stadium, the Mansfield stadium, Texas Trust CU Theatre, Billy Bob's.
+- **The Cowboys announce 92,000+ against 80,000 seats** (standing-room platforms), so their estimate sits above Seats on the page, as the 49ers' does.

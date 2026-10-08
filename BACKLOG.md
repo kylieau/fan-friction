@@ -206,6 +206,15 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/expected-draw-decisions-oct7.md
 - **Hand-list when dates are set:** Lollapalooza (115,000/day cap, Grant Park), Riot Fest (50,000/day, Douglass Park), the Auto Show and C2E2 at McCormick (per-day averages), Fan Expo in Rosemont, the Marathon (Oct 11, 2026 is this week; no building).
 - Nine car shares are mine (listed in the decisions doc); the Chicago Wolves have no feed.
 
+## Dallas–Fort Worth is covered (Oct 8) — follow-ons
+- **Each September:** hand-list the State Fair's 24 days (official daily gate from the year before) and the Red River Showdown; **each January:** the Stock Show at Will Rogers (about 1.2M over 23 days; no daily figures found yet).
+- **Toyota Stadium:** replace the 15,000 construction estimate when FC Dallas publishes a figure; 22,500–23,900 from Q1 2028.
+- **Dallas Memorial Arena** reopens 2027 with the Wings; College Park Center loses them. **AT&T Stadium and Globe Life Field roof state** per event is not in any feed.
+- **High-school stadiums** (Allen's Eagle Stadium and others at 10,000+) are the research's biggest completeness gap; a second pass from district sites if Friday nights matter.
+- **The Arlington double date** (Cowboys and Rangers the same day) is the region's Gridlock case: ~0% transit, official parking for about half the demand. Nothing special-cased; the formula reads both as one zone.
+- Eight car shares are mine (listed in the decisions doc).
+- **Ticketmaster lists suite packages as their own event** ("Dickies Arena Suites" beside The Red Clay Strays, same night, same building, 8.0k each): a venue-plus-date dedupe for listings whose title is the building's name plus "Suites" or similar.
+
 ## Team schedules (built Oct 7) — follow-ons
 - **Kylie runs `supabase/migrations/0010_team_schedules.sql`**; until then ESPN teams' pages say "No schedule yet" (the job logs a warning and skips the table) and only MLB clubs show a schedule, read live.
 - A favorite that is not a team in the feeds (an artist, UCLA men's volleyball) says "No schedule yet." Programs join as their city is built out; the intent is every city eventually (Kylie, Oct 7).
