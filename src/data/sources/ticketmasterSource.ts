@@ -62,7 +62,7 @@ function venueFor(metroId: string, v: TmVenue) {
 
 /** Listings that are not a night out: venue tours, parking, camping, VIP add-ons. */
 function isAddOn(name: string): boolean {
-  return /\b(parking|tours?\b(?!\s+(?:de|of)\b)|no field access|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|upgrade)\b/i.test(name);
+  return /\b(parking|tours?\b(?!\s+(?:de|of)\b)|no field access|camping|vip (?:package|upgrade|add-on)|meet (?:&|and) greet|upgrade|repas|restaurant|salon des|lounge|hospitality|suites?)\b/i.test(name);
 }
 
 /**
@@ -220,7 +220,7 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         kind,
         title: kind === 'show' ? performer : e.name,
         place: { type: 'venue', venueId: venue.id },
-        audience: kind === 'show' ? { domain: 'music', genre } : kind === 'game' ? { domain: 'sports', sport: sportOf(genre) } : { domain: 'other', tag: genre },
+        audience: kind === 'show' ? { domain: 'music', genre } : kind === 'game' ? { domain: 'sports', sport: sportOf(`${genre} ${e.classifications?.[0]?.subGenre?.name ?? ''} ${e.name}`) } : { domain: 'other', tag: genre },
         performer,
         crowd: [],
         sourceId: 'ticketmaster',

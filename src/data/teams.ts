@@ -156,7 +156,7 @@ const LIST: Team[] = [
   team('uta-mbb', "UT Arlington Mavericks Men's Basketball", 'UTA MBB', "College men's basketball", 'basketball', 'dallas-fort-worth', 'UTA', ['UT Arlington', 'UTA']),
   // Montreal, covered Oct 8, 2026 (docs/montreal-venue-table-answer.md). The Alouettes (CFL), Victoire (PWHL), Rocket (AHL)
   // and Carabins (U Sports) have no feed wired yet; their pages say "No schedule yet" until one is (docs/no-feed-teams-proposal.md).
-  team('canadiens', 'Montréal Canadiens', 'Canadiens', 'NHL', 'hockey', 'montreal', 'MTL', ['Montreal Canadiens', 'Habs']),
+  team('canadiens', 'Montreal Canadiens', 'Canadiens', 'NHL', 'hockey', 'montreal', 'MTL', ['Montréal Canadiens', 'Habs']),
   team('cf-montreal', 'CF Montréal', 'CF Montréal', 'MLS', 'soccer', 'montreal', 'MTL', ['CF Montreal', 'Montreal Impact']),
   team('alouettes', 'Montréal Alouettes', 'Alouettes', 'CFL', 'football', 'montreal', 'MTL', ['Montreal Alouettes']),
   team('victoire', 'Montréal Victoire', 'Victoire', 'PWHL', 'hockey', 'montreal', 'MTL', ['Montreal Victoire']),
