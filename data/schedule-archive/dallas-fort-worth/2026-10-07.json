@@ -1,0 +1,858 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "metroName": "Dallas–Fort Worth",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-07",
+  "capturedAt": "2026-10-08T00:39:22.644Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-07",
+    "through": "2026-10-21"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 8
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 12
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-08-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-08",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 81320,
+          "kind": "estimated",
+          "note": "Estimated: the second Thursday of the 2025 run (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-08-espn-cowboys-401872980",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-08",
+      "start": "19:15",
+      "kind": "game",
+      "title": "Cowboys vs. Buccaneers",
+      "place": {
+        "type": "venue",
+        "venueId": "att-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "cowboys",
+        "away": "buccaneers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 92778,
+        "low": 92493,
+        "high": 93069,
+        "note": "Typical announced crowd here for a weeknight: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-09-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-09",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 94292,
+          "kind": "estimated",
+          "note": "Estimated: the second Friday of the 2025 run (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-10-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-10",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 101860,
+          "kind": "estimated",
+          "note": "Estimated: Red River Saturday 2025 (193,960) less the stadium crowd inside the gate (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-10-espn-unt-football-401862796",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-10",
+      "start": "14:30",
+      "kind": "game",
+      "title": "North Texas vs. Charlotte",
+      "place": {
+        "type": "venue",
+        "venueId": "datcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "unt-football",
+        "away": "charlotte"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20600,
+        "low": 16966,
+        "high": 23617,
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-10-red-river-showdown",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-10",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Texas vs. Oklahoma (Red River Showdown)",
+      "place": {
+        "type": "venue",
+        "venueId": "cotton-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "crowd": [],
+      "expectedDraw": {
+        "count": 92100,
+        "note": "The Cotton Bowl, full: the Showdown sells out every year. An estimate."
+      },
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-11-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-11",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 96116,
+          "kind": "estimated",
+          "note": "Estimated: the second Sunday of the 2025 run (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-12-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-12",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 97218,
+          "kind": "estimated",
+          "note": "Estimated: the Monday after Red River weekend, 2025 (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-13-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-13",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 101703,
+          "kind": "estimated",
+          "note": "Estimated: the third Tuesday of the 2025 run (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-13-espn-dallas-stars-401892498",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Stars vs. Avalanche",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "dallas-stars",
+        "away": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532,
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-14",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 67723,
+          "kind": "estimated",
+          "note": "Estimated: the third Wednesday of the 2025 run (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-14-espn-mavericks-401901825",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mavericks vs. Pelicans",
+      "preseason": true,
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "mavericks",
+        "away": "pelicans"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19210,
+        "low": 19207,
+        "high": 19217,
+        "note": "Typical announced crowd here for a preseason game: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-fc-dallas-761867",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "FC Dallas vs. Sounders",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "fc-dallas",
+        "away": "sounders"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15110,
+        "low": 11004,
+        "high": 19096,
+        "note": "Typical announced crowd here for a home game: 32 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-15-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-15",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 105251,
+          "kind": "estimated",
+          "note": "Estimated: the third Thursday of the 2025 run (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-16-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-16",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 90310,
+          "kind": "estimated",
+          "note": "Estimated: the third Friday of the 2025 run (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-16-espn-mavericks-401898408",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mavericks vs. Hawks",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "mavericks",
+        "away": "hawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19210,
+        "low": 19207,
+        "high": 19217,
+        "note": "Typical announced crowd here for a preseason game: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-17",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 110153,
+          "kind": "estimated",
+          "note": "Estimated: the last Saturday of the 2025 run (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-17-espn-smu-football-401858268",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-17",
+      "start": "11:00",
+      "kind": "game",
+      "title": "SMU vs. Virginia",
+      "broadcast": "CW",
+      "place": {
+        "type": "venue",
+        "venueId": "gerald-j-ford-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "smu-football",
+        "away": "virginia"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 30654,
+        "low": 25727,
+        "high": 32750,
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-18-state-fair-texas",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-18",
+      "start": "10:00",
+      "kind": "special",
+      "title": "State Fair of Texas",
+      "place": {
+        "type": "point",
+        "location": [
+          -96.76,
+          32.7792
+        ],
+        "name": "Fair Park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "fair"
+      },
+      "crowd": [
+        {
+          "count": 108685,
+          "kind": "estimated",
+          "note": "Estimated: the closing Sunday of the 2025 run (State Fair of Texas, official daily attendance, 2025)."
+        }
+      ],
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-20-espn-dallas-stars-401892545",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Bruins",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "dallas-stars",
+        "away": "bruins"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532,
+        "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-08-state-fair-texas",
+      "date": "2026-10-08",
+      "start": "10:00",
+      "read": {
+        "rating": 3.6,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-08-espn-cowboys-401872980",
+      "date": "2026-10-08",
+      "start": "19:15",
+      "read": {
+        "rating": 3.6,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 92778,
+        "low": 92493,
+        "high": 93069
+      }
+    },
+    {
+      "eventId": "2026-10-09-state-fair-texas",
+      "date": "2026-10-09",
+      "start": "10:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-10-state-fair-texas",
+      "date": "2026-10-10",
+      "start": "10:00",
+      "read": {
+        "rating": 6.9,
+        "friction": "Low",
+        "why": "Texas vs. Oklahoma (Red River Showdown) next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-unt-football-401862796",
+      "date": "2026-10-10",
+      "start": "14:30",
+      "read": {
+        "rating": 6.9,
+        "friction": "Heavy",
+        "why": "Texas vs. Oklahoma (Red River Showdown) 37 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20600,
+        "low": 16966,
+        "high": 23617
+      }
+    },
+    {
+      "eventId": "2026-10-10-red-river-showdown",
+      "date": "2026-10-10",
+      "start": "14:30",
+      "read": {
+        "rating": 6.9,
+        "friction": "Heavy",
+        "why": "97° feels-like at a 2:30 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 92100
+      }
+    },
+    {
+      "eventId": "2026-10-11-state-fair-texas",
+      "date": "2026-10-11",
+      "start": "10:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-12-state-fair-texas",
+      "date": "2026-10-12",
+      "start": "10:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-13-state-fair-texas",
+      "date": "2026-10-13",
+      "start": "10:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-13-espn-dallas-stars-401892498",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532
+      }
+    },
+    {
+      "eventId": "2026-10-14-state-fair-texas",
+      "date": "2026-10-14",
+      "start": "10:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-mavericks-401901825",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "FC Dallas vs. Sounders 25 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19210,
+        "low": 19207,
+        "high": 19217
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-fc-dallas-761867",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Mavericks vs. Pelicans 25 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15110,
+        "low": 11004,
+        "high": 19096
+      }
+    },
+    {
+      "eventId": "2026-10-15-state-fair-texas",
+      "date": "2026-10-15",
+      "start": "10:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-state-fair-texas",
+      "date": "2026-10-16",
+      "start": "10:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-mavericks-401898408",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19210,
+        "low": 19207,
+        "high": 19217
+      }
+    },
+    {
+      "eventId": "2026-10-17-state-fair-texas",
+      "date": "2026-10-17",
+      "start": "10:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "SMU vs. Virginia 4.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-smu-football-401858268",
+      "date": "2026-10-17",
+      "start": "11:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "State Fair of Texas 4.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 30654,
+        "low": 25727,
+        "high": 32750
+      }
+    },
+    {
+      "eventId": "2026-10-18-state-fair-texas",
+      "date": "2026-10-18",
+      "start": "10:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-dallas-stars-401892545",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532
+      }
+    }
+  ]
+}

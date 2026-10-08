@@ -794,6 +794,24 @@
       "shortwave": 98,
       "cloudCover": 5,
       "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-07",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T00:03:42.174Z",
+      "feelsLikeF": 79.5,
+      "tempF": 74.9,
+      "humidity": 78,
+      "windMph": 4.9,
+      "uvIndex": 0.05,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 7,
+      "code": 0
     }
   ],
   "days": [

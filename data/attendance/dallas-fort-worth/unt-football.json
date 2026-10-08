@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "teamId": "unt-football",
+  "collectedOn": "2026-10-08",
+  "games": [
+    {
+      "teamId": "unt-football",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "18:30",
+      "opponent": "SMU",
+      "venueId": "datcu-stadium",
+      "attendance": 25306,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "18:30",
+      "opponent": "Texas Southern",
+      "venueId": "datcu-stadium",
+      "attendance": 15984,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "15:00",
+      "opponent": "FAU",
+      "venueId": "datcu-stadium",
+      "attendance": 18274,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2022,
+      "date": "2022-10-15",
+      "start": "15:00",
+      "opponent": "Louisiana Tech",
+      "venueId": "datcu-stadium",
+      "attendance": 16590,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "15:00",
+      "opponent": "FIU",
+      "venueId": "datcu-stadium",
+      "attendance": 22308,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2022,
+      "date": "2022-11-26",
+      "start": "13:00",
+      "opponent": "Rice",
+      "venueId": "datcu-stadium",
+      "attendance": 15688,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "15:00",
+      "opponent": "California",
+      "venueId": "datcu-stadium",
+      "attendance": 21350,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "18:00",
+      "opponent": "Abilene Chrstn",
+      "venueId": "datcu-stadium",
+      "attendance": 21494,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2023,
+      "date": "2023-10-14",
+      "start": "11:00",
+      "opponent": "Temple",
+      "venueId": "datcu-stadium",
+      "attendance": 13678,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "14:00",
+      "opponent": "Memphis",
+      "venueId": "datcu-stadium",
+      "attendance": 18062,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "14:00",
+      "opponent": "UTSA",
+      "venueId": "datcu-stadium",
+      "attendance": 17354,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2023,
+      "date": "2023-11-25",
+      "start": "13:00",
+      "opponent": "UAB",
+      "venueId": "datcu-stadium",
+      "attendance": 14628,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:30",
+      "opponent": "SF Austin",
+      "venueId": "datcu-stadium",
+      "attendance": 23510,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "18:00",
+      "opponent": "Wyoming",
+      "venueId": "datcu-stadium",
+      "attendance": 27049,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "18:00",
+      "opponent": "Tulsa",
+      "venueId": "datcu-stadium",
+      "attendance": 18529,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "11:00",
+      "opponent": "Tulane",
+      "venueId": "datcu-stadium",
+      "attendance": 23138,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2024,
+      "date": "2024-11-09",
+      "start": "14:30",
+      "opponent": "Army",
+      "venueId": "datcu-stadium",
+      "attendance": 28519,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "14:30",
+      "opponent": "East Carolina",
+      "venueId": "datcu-stadium",
+      "attendance": 17387,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "19:00",
+      "opponent": "Lamar",
+      "venueId": "datcu-stadium",
+      "attendance": 20594,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "14:30",
+      "opponent": "Washington St",
+      "venueId": "datcu-stadium",
+      "attendance": 26837,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "11:00",
+      "opponent": "South Alabama",
+      "venueId": "datcu-stadium",
+      "attendance": 16575,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2025,
+      "date": "2025-10-10",
+      "start": "18:30",
+      "opponent": "South Florida",
+      "venueId": "datcu-stadium",
+      "attendance": 31386,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "15:05",
+      "opponent": "UTSA",
+      "venueId": "datcu-stadium",
+      "attendance": 25053,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "11:00",
+      "opponent": "Navy",
+      "venueId": "datcu-stadium",
+      "attendance": 26516,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2025,
+      "date": "2025-11-28",
+      "start": "14:30",
+      "opponent": "Temple",
+      "venueId": "datcu-stadium",
+      "attendance": 24492,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

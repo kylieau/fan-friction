@@ -258,6 +258,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "15:07"
   },
   {
+    "eventId": "2026-10-05-espn-dallas-stars-401892448",
+    "metroId": "dallas-fort-worth",
+    "date": "2026-10-05",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "american-airlines-center",
+    "homeTeamId": "dallas-stars",
+    "home": {
+      "name": "Stars",
+      "score": 5
+    },
+    "away": {
+      "name": "Sharks",
+      "score": 0
+    },
+    "attendance": 18532,
+    "capturedAt": "2026-10-08T00:39:30.064Z",
+    "duration": {
+      "minutes": 137,
+      "kind": "estimated"
+    },
+    "startedAt": "17:08"
+  },
+  {
     "eventId": "2026-10-03-espn-usc-football-401858478",
     "metroId": "la",
     "date": "2026-10-03",
