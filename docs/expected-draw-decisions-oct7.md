@@ -184,7 +184,7 @@ So yes: standing room accounts for the Cowboys' gap entirely and the 49ers' most
 ## The ⓘ card's opening (Kylie, Oct 8, from the GrokBot mockup)
 Built: the card opens "About this estimate" with the per-event sentences, then the general "How estimates work" below. The opening: "Based on N announced crowds at {building}, {seasons}. Half of games land between X and Y." (a playoff game says "A planning range: X to Y."), and, when the estimate tops the seats, "{Building} sells standing room, so crowds can top its {seats} seats." The "Middle half" line left the page; the playoff "Likely X–Y" line stays. Kylie chose "half of games" over "most games" (Oct 8): it is what a middle half means.
 
-## Montreal build (Oct 8): choices made, for Kylie to confirm
+## Montreal build (Oct 8): choices made, confirmed by Kylie (Oct 8)
 Both answers are saved in full (`docs/archive/research/montreal-venue-table-answer.md`, `docs/archive/research/montreal-city-type-answer.md`). Choices I made without a lock:
 - **City type: transit** (the research: in between with a transit core; no venue reaches 80% by car; the Bell Centre about 35%). Place Bell in Laval carries its own 65%.
 - **Boundary as briefed** (the island, Laval, Longueuil, the South Shore); the research would keep it.
@@ -198,3 +198,6 @@ Both answers are saved in full (`docs/archive/research/montreal-venue-table-answ
 - **Minor-league and independent baseball through the MLB feed**: nine clubs in six cities; seven have schedules and box-score crowds (Frisco 275 games on file, Tacoma 300, Everett 270, Brooklyn 264, Gwinnett 300, Staten Island 62, Long Island 68). The Chicago Dogs and Schaumburg Boomers are in the feed's team list but have no schedule there, so their parks are on the Ticketmaster sweep instead.
 - **The Ticketmaster sports sweep** at an allowlist of buildings no feed covers (`SPORTS_FROM_TICKETMASTER` in `ticketmasterSource.ts`): the rodeo, AHL, ECHL, PWHL, WHL, CFL, UFL, cricket and speedway rooms, plus the two independent ballparks. A feed game at the same building on the same date wins. These listings size by the building. First results come with the next nightly run.
 - **ESPN extension** (USL Super League, G League, UFL, NLL, CFL): waiting on Kylie's read of the terms question. **HockeyTech**: the email is drafted (`docs/hockeytech-permission-email.md`), not sent.
+
+## ESPN extended (Kylie, Oct 8)
+Kylie agreed with the assessment in `docs/no-feed-teams-proposal.md` ("fine for now, but note for future milestones/blockers"). Built: the CFL (Alouettes), USL Super League (Dallas Trinity), UFL (Dallas Renegades) and G League (Texas Legends, Windy City Bulls) on ESPN, with the same code path. The NLL is not wired: its schedule carries no venue names. The CFL team schedule answered empty on Oct 8 (the row stays). **The ESPN terms question is recorded as a launch milestone** in `docs/build-brief.md` and `BACKLOG.md`: before any public launch, replace or license the ESPN feed for every league it carries.

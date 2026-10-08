@@ -143,6 +143,11 @@ const ESPN_TEAMS = [
   { teamId: 'uta-mbb', metroId: 'dallas-fort-worth', path: 'basketball/mens-college-basketball', espnId: '250', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'canadiens', metroId: 'montreal', path: 'hockey/nhl', espnId: '10', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'cf-montreal', metroId: 'montreal', path: 'soccer/usa.1', espnId: '9720', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'alouettes', metroId: 'montreal', path: 'football/cfl', espnId: '83', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'dallas-trinity', metroId: 'dallas-fort-worth', path: 'soccer/usa.w.usl.1', espnId: '131447', seasons: [2025, 2026] },
+  { teamId: 'dallas-renegades', metroId: 'dallas-fort-worth', path: 'football/ufl', espnId: '112647', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'texas-legends', metroId: 'dallas-fort-worth', path: 'basketball/nba-development', espnId: '24', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'windy-city-bulls', metroId: 'chicago', path: 'basketball/nba-development', espnId: '26', seasons: [2024, 2025, 2026], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -247,6 +252,10 @@ const VENUE_BY_NAME = {
   'centre bell': 'bell-centre',
   'stade saputo': 'stade-saputo',
   'saputo stadium': 'stade-saputo',
+  'percival molson memorial stadium': 'percival-molson-stadium',
+  'molson stadium': 'percival-molson-stadium',
+  'now arena': 'now-arena',
+  'comerica center': 'comerica-center',
 };
 
 function localParts(iso, metroId) {

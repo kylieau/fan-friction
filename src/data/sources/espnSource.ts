@@ -108,6 +108,12 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   // Montreal (docs/archive/research/montreal-venue-table-answer.md); ids checked against the feed Oct 8, 2026.
   { path: 'hockey/nhl', espnId: '10', metroId: 'montreal', teamId: 'canadiens', sport: 'hockey' },
   { path: 'soccer/usa.1', espnId: '9720', metroId: 'montreal', teamId: 'cf-montreal', sport: 'soccer' },
+  // ESPN's smaller leagues (Kylie, Oct 8). The CFL team schedule answered empty on Oct 8; the row stays so it lists when it fills.
+  { path: 'football/cfl', espnId: '83', metroId: 'montreal', teamId: 'alouettes', sport: 'football' },
+  { path: 'soccer/usa.w.usl.1', espnId: '131447', metroId: 'dallas-fort-worth', teamId: 'dallas-trinity', sport: 'soccer' },
+  { path: 'football/ufl', espnId: '112647', metroId: 'dallas-fort-worth', teamId: 'dallas-renegades', sport: 'football' },
+  { path: 'basketball/nba-development', espnId: '24', metroId: 'dallas-fort-worth', teamId: 'texas-legends', sport: 'basketball' },
+  { path: 'basketball/nba-development', espnId: '26', metroId: 'chicago', teamId: 'windy-city-bulls', sport: 'basketball' },
   { path: 'football/nfl', espnId: '1', metroId: 'atlanta', teamId: 'falcons', sport: 'football' },
   { path: 'soccer/usa.1', espnId: '18418', metroId: 'atlanta', teamId: 'atlanta-united', sport: 'soccer' },
   { path: 'football/college-football', espnId: '59', metroId: 'atlanta', teamId: 'gt-football', sport: 'football' },
@@ -225,6 +231,10 @@ const VENUE_BY_NAME: Record<string, string> = {
   'centre bell': 'bell-centre',
   'stade saputo': 'stade-saputo',
   'saputo stadium': 'stade-saputo',
+  'percival molson memorial stadium': 'percival-molson-stadium',
+  'molson stadium': 'percival-molson-stadium',
+  'now arena': 'now-arena',
+  'comerica center': 'comerica-center',
 };
 
 interface EspnSide {

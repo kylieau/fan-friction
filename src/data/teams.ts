@@ -172,6 +172,11 @@ const LIST: Team[] = [
   team('gwinnett-stripers', 'Gwinnett Stripers', 'Stripers', 'Triple-A baseball', 'baseball', 'atlanta', 'GWN'),
   team('chicago-dogs', 'Chicago Dogs', 'Dogs', 'Independent baseball', 'baseball', 'chicago', 'CHI'),
   team('schaumburg-boomers', 'Schaumburg Boomers', 'Boomers', 'Independent baseball', 'baseball', 'chicago', 'SCH'),
+  // ESPN's smaller leagues (Kylie, Oct 8: extend ESPN; the terms question is a launch milestone, docs/no-feed-teams-proposal.md).
+  team('dallas-trinity', 'Dallas Trinity FC', 'Trinity FC', 'USL Super League', 'soccer', 'dallas-fort-worth', 'DAL', ['Dallas Trinity']),
+  team('dallas-renegades', 'Dallas Renegades', 'Renegades', 'UFL', 'football', 'dallas-fort-worth', 'DAL', ['Arlington Renegades']),
+  team('texas-legends', 'Texas Legends', 'Legends', 'NBA G League', 'basketball', 'dallas-fort-worth', 'TEX'),
+  team('windy-city-bulls', 'Windy City Bulls', 'Windy City Bulls', 'NBA G League', 'basketball', 'chicago', 'WCB'),
   team('ksu-wbb', "Kennesaw State Owls Women's Basketball", 'Kennesaw State WBB', "College women's basketball", 'basketball', 'atlanta', 'KSU', ['Kennesaw State']),
   team('blue-jays', 'Toronto Blue Jays', 'Blue Jays', 'MLB', 'baseball'),
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball'),

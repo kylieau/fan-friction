@@ -222,7 +222,7 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/expected-draw-decisions-oct7.md
 - The Canadiens' street watch parties (every home playoff game) have no published count; seed one only if a figure appears.
 
 ## No-feed sources (Oct 8) — follow-ons
-- **ESPN extension**: Kylie's call on the Disney terms (USL Super League, G League, UFL, NLL, CFL slugs verified responding).
+- **🚩 Launch blocker (Kylie, Oct 8):** the app's ESPN feed (NBA, WNBA, NHL, NFL, MLS, NWSL, USL, CFL, UFL, G League, college) runs under Disney's terms, which the research reads as barring automated access without written permission. Fine for a personal app today; before a public launch, license it or replace it. Noted in `docs/build-brief.md` under Cost milestones.
 - **HockeyTech**: send `docs/hockeytech-permission-email.md` per league; wire after a yes; keep replies in `private/`.
 - **The Ticketmaster sweep's first night**: check which allowlisted buildings actually list sports there, and that no feed game got a Ticketmaster twin.
 - **Hand-entered annual file**: NASCAR and IndyCar weekends, the Stock Show, PBR, Major League Cricket by building.

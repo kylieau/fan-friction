@@ -7402,6 +7402,174 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2024–2026"
   },
   {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 3431,
+    "low": 1721,
+    "high": 4433,
+    "games": 48,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2586,
+    "low": 2535,
+    "high": 2882,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1647,
+    "low": 1276,
+    "high": 2873,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 813,
+    "low": 780,
+    "high": 917,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1756,
+    "low": 1513,
+    "high": 6098,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 1741,
+    "low": 1586,
+    "high": 2641,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 4143,
+    "low": 3184,
+    "high": 4236,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 3192,
+    "low": 3176,
+    "high": 3651,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 4292,
+    "low": 4179,
+    "high": 4599,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4316,
+    "low": 3508,
+    "high": 5137,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 4139,
+    "low": 3219,
+    "high": 4311,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 4950,
+    "low": 4449,
+    "high": 5273,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 6787,
+    "low": 5653,
+    "high": 7211,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "venueId": "now-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4117,
+    "low": 1921,
+    "high": 4378,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
     "metroId": "dallas-fort-worth",
     "teamId": "cowboys",
     "venueId": "att-stadium",
@@ -7832,6 +8000,54 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 18532,
     "games": 4,
     "seasons": "2025–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "venueId": "cotton-bowl",
+    "dayClass": "all",
+    "month": null,
+    "count": 2569,
+    "low": 2321,
+    "high": 3651,
+    "games": 13,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "venueId": "cotton-bowl",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2412,
+    "low": 2149,
+    "high": 2672,
+    "games": 8,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "venueId": "cotton-bowl",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 2377,
+    "low": 2291,
+    "high": 2473,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "venueId": "cotton-bowl",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3741,
+    "low": 3485,
+    "high": 4483,
+    "games": 3,
+    "seasons": "2025"
   },
   {
     "metroId": "dallas-fort-worth",
@@ -9680,6 +9896,174 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 2776,
     "games": 3,
     "seasons": "2025–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 5938,
+    "low": 5580,
+    "high": 6398,
+    "games": 47,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6582,
+    "low": 6457,
+    "high": 6868,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5445,
+    "low": 5119,
+    "high": 5740,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 5503,
+    "low": 5119,
+    "high": 5802,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 5451,
+    "low": 5445,
+    "high": 5717,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 5848,
+    "low": 5476,
+    "high": 6192,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 5579,
+    "low": 5168,
+    "high": 5889,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 6076,
+    "low": 5742,
+    "high": 6423,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6253,
+    "low": 5938,
+    "high": 6658,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 6132,
+    "low": 6058,
+    "high": 6522,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 6521,
+    "low": 6084,
+    "high": 6773,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 6145,
+    "low": 5862,
+    "high": 6587,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5902,
+    "low": 5743,
+    "high": 6527,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "venueId": "comerica-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 5810,
+    "low": 5765,
+    "high": 6257,
+    "games": 3,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "dallas-fort-worth",
@@ -23978,6 +24362,76 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 11
   },
   {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "905",
+    "ratio": 0.98,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "blue-coats",
+    "ratio": 1.068,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "boom",
+    "ratio": 0.783,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "celtics",
+    "ratio": 0.867,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "gold",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "herd",
+    "ratio": 1.15,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "magic",
+    "ratio": 1.01,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "nets",
+    "ratio": 1.441,
+    "games": 4
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "skyhawks",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "windy-city-bulls",
+    "opponent": "squadron",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
     "metroId": "dallas-fort-worth",
     "teamId": "cowboys",
     "opponent": "commanders",
@@ -24235,6 +24689,48 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "wild",
     "ratio": 1,
     "games": 5
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "opponent": "brooklyn",
+    "ratio": 0.915,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "opponent": "carolina",
+    "ratio": 1.069,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "opponent": "dc-power",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "opponent": "lexington",
+    "ratio": 1.057,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "opponent": "spokane",
+    "ratio": 1.072,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "dallas-trinity",
+    "opponent": "sporting-jax",
+    "ratio": 0.962,
+    "games": 2
   },
   {
     "metroId": "dallas-fort-worth",
@@ -24900,6 +25396,76 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "west-virginia",
     "ratio": 0.989,
     "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "blue",
+    "ratio": 1.036,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "clippers",
+    "ratio": 1.014,
+    "games": 4
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "cruise",
+    "ratio": 1.031,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "kings",
+    "ratio": 0.978,
+    "games": 4
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "lakers",
+    "ratio": 1.068,
+    "games": 3
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "skyforce",
+    "ratio": 0.949,
+    "games": 4
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "spurs",
+    "ratio": 1.022,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "suns",
+    "ratio": 0.957,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "vipers",
+    "ratio": 0.987,
+    "games": 4
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "texas-legends",
+    "opponent": "wolves",
+    "ratio": 1.048,
+    "games": 4
   },
   {
     "metroId": "dallas-fort-worth",
