@@ -4,7 +4,7 @@
   "metroName": "Dallas–Fort Worth",
   "timeZone": "America/Chicago",
   "capturedOn": "2026-10-07",
-  "capturedAt": "2026-10-08T02:49:14.945Z",
+  "capturedAt": "2026-10-08T02:54:24.860Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-07",
@@ -26,9 +26,68 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 12
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 43
     }
   ],
   "events": [
+    {
+      "id": "2026-10-07-tm-vvG1YZ_aE4su5L",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-07",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Dickies Arena Suites",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dickies Arena Suites",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_aE4su5L",
+      "occasionFacts": {
+        "run": 6
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-07-tm-vvG1YZ_F0exkqy",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-07",
+      "start": "18:30",
+      "kind": "show",
+      "title": "The Red Clay Strays",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Red Clay Strays",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_F0exkqy",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
     {
       "id": "2026-10-08-state-fair-texas",
       "metroId": "dallas-fort-worth",
@@ -56,6 +115,60 @@
         }
       ],
       "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-08-tm-vvG1YZ_aEpIW8P",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-08",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Dickies Arena Suites",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dickies Arena Suites",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_aEpIW8P",
+      "occasionFacts": {
+        "run": 6
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-08-tm-vvG1YZ_F0kF9e_",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-08",
+      "start": "18:30",
+      "kind": "show",
+      "title": "The Red Clay Strays",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Red Clay Strays",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_F0kF9e_",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-08-espn-cowboys-401872980",
@@ -89,6 +202,50 @@
       }
     },
     {
+      "id": "2026-10-08-tm-vvG1YZ_5jmmTtC",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-08",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Sonic Live in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Sonic Live in Concert",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_5jmmTtC"
+    },
+    {
+      "id": "2026-10-08-tm-Z7r9jZ1A7xffE",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Phil Collins Story",
+      "place": {
+        "type": "venue",
+        "venueId": "texas-trust-cu-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Phil Collins Story",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xffE",
+      "expectedDraw": {
+        "count": 6350,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-09-state-fair-texas",
       "metroId": "dallas-fort-worth",
       "date": "2026-10-09",
@@ -115,6 +272,152 @@
         }
       ],
       "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-09-tm-vvG1YZ_A5O90yi",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Brooks & Dunn",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Brooks & Dunn",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_A5O90yi",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-vvG1YZ_AQxX4ND",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dickies Arena Suites",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dickies Arena Suites",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_AQxX4ND",
+      "occasionFacts": {
+        "run": 7
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-vvG1YZ_GXxf4BI",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-09",
+      "start": "20:00",
+      "kind": "show",
+      "title": "ROLE MODEL",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "ROLE MODEL",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_GXxf4BI",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-Z7r9jZ1A7-P0Z",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-09",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Metaphor: ReFantazio Orchestra Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "texas-trust-cu-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Metaphor: ReFantazio Orchestra Concert",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-P0Z",
+      "expectedDraw": {
+        "count": 6350,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-Z7r9jZ1AAvs7a",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-09",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mijares",
+      "place": {
+        "type": "venue",
+        "venueId": "curtis-culwell-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Mijares",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvs7a",
+      "expectedDraw": {
+        "count": 3910,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-vvG1YZbzcSof7Q",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-10",
+      "start": "09:00",
+      "kind": "special",
+      "title": "Share the Arrows 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "cutx-event-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Lecture/Seminar"
+      },
+      "performer": "Share the Arrows",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZbzcSof7Q"
     },
     {
       "id": "2026-10-10-state-fair-texas",
@@ -198,6 +501,111 @@
       "sourceId": "listing"
     },
     {
+      "id": "2026-10-10-tm-vvG1YZ_A5Ob0BJ",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Brooks & Dunn",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Brooks & Dunn",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_A5Ob0BJ",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-vvG1YZ_AQxT40G",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dickies Arena Suites",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dickies Arena Suites",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_AQxT40G",
+      "occasionFacts": {
+        "run": 8
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-vvG1YZ_awGIEBP",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Kacey Musgraves",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Kacey Musgraves",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_awGIEBP",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-Z7r9jZ1A7-kuK",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Los Parras",
+      "place": {
+        "type": "venue",
+        "venueId": "texas-trust-cu-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Los Parras",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-kuK",
+      "expectedDraw": {
+        "count": 6350,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-11-state-fair-texas",
       "metroId": "dallas-fort-worth",
       "date": "2026-10-11",
@@ -224,6 +632,108 @@
         }
       ],
       "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-11-tm-vvG1YZ_A2e5hg5",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dickies Arena Suites",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "Dickies Arena Suites",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_A2e5hg5",
+      "occasionFacts": {
+        "run": 8
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-vvG1YZ_AChebu0",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "CeCe Winans",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "CeCe Winans",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_AChebu0",
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-vvG1YZ_awL1QUZ",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-11",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Kacey Musgraves",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Kacey Musgraves",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_awL1QUZ",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-vvG1YZ_1DmMqf5",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-11",
+      "start": "20:15",
+      "kind": "show",
+      "title": "Wave To Earth",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Wave To Earth",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_1DmMqf5",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
     },
     {
       "id": "2026-10-12-state-fair-texas",
@@ -254,6 +764,81 @@
       "sourceId": "listing"
     },
     {
+      "id": "2026-10-12-tm-vvG1YZ_7w4jzz2",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-12",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Dickies Arena Suites",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dickies Arena Suites",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_7w4jzz2",
+      "occasionFacts": {
+        "run": 8
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-12-tm-vvG1YZ_7whjaQV",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-12",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Breaking Benjamin",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Breaking Benjamin",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_7whjaQV",
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-12-tm-vvG1YZ_axJRhSo",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "G-Eazy",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "G-Eazy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_axJRhSo",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-13-state-fair-texas",
       "metroId": "dallas-fort-worth",
       "date": "2026-10-13",
@@ -280,6 +865,26 @@
         }
       ],
       "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-13-tm-Z7r9jZ1AAZvu_",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "special",
+      "title": "ARTMS",
+      "place": {
+        "type": "venue",
+        "venueId": "texas-trust-cu-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "ARTMS",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZvu_"
     },
     {
       "id": "2026-10-13-espn-dallas-stars-401892498",
@@ -406,6 +1011,30 @@
       }
     },
     {
+      "id": "2026-10-14-tm-vvG1YZ_6J3Sk_V",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dermot Kennedy",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dermot Kennedy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_6J3Sk_V",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-15-state-fair-texas",
       "metroId": "dallas-fort-worth",
       "date": "2026-10-15",
@@ -432,6 +1061,102 @@
         }
       ],
       "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-15-tm-vvG1YZ_13XPlXI",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Elevation Worship",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "Elevation Worship",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_13XPlXI",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-Z7r9jZ1A7xfrb",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Karol G",
+      "place": {
+        "type": "venue",
+        "venueId": "att-stadium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Karol G",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xfrb",
+      "expectedDraw": {
+        "count": 45600,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-Z7r9jZ1A7Ptqe",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Sons of Legion",
+      "place": {
+        "type": "venue",
+        "venueId": "texas-trust-cu-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sons of Legion",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ptqe",
+      "expectedDraw": {
+        "count": 6350,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-vvG1YZ_FCbXFze",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "MONSTA X",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "MONSTA X",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_FCbXFze",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
     },
     {
       "id": "2026-10-16-state-fair-texas",
@@ -491,6 +1216,105 @@
         "games": 5,
         "seasons": "2024–2026",
         "note": "Typical announced crowd here for a preseason game: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vvG1YZ_FB_UM69",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Modest Mouse",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Modest Mouse",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_FB_UM69",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vvG1YZ_ARabXTr",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dickies Arena Suites",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dickies Arena Suites",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_ARabXTr",
+      "occasionFacts": {
+        "run": 6
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vvG1YZ_dxO-E0O",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Gorillaz",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gorillaz",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_dxO-E0O",
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vvG1YZ_axCfz2I",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-16",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Rahat Fateh Ali Khan",
+      "place": {
+        "type": "venue",
+        "venueId": "comerica-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Rahat Fateh Ali Khan",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_axCfz2I",
+      "expectedDraw": {
+        "count": 3420,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -554,6 +1378,129 @@
       }
     },
     {
+      "id": "2026-10-17-tm-vvG1YZ_5m3Hz7t",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Gov't Mule",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gov't Mule",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_5m3Hz7t",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1YZ_kMvOnlG",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Weezer",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Weezer",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_kMvOnlG",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1YZ_G3pCUqa",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dickies Arena Suites",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dickies Arena Suites",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_G3pCUqa",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vvG1YZ_G6EbQDb",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Phoebe Bridgers",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phoebe Bridgers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_G6EbQDb",
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A70IuO",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Air Supply",
+      "place": {
+        "type": "venue",
+        "venueId": "texas-trust-cu-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Air Supply",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70IuO",
+      "expectedDraw": {
+        "count": 6350,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-18-state-fair-texas",
       "metroId": "dallas-fort-worth",
       "date": "2026-10-18",
@@ -580,6 +1527,54 @@
         }
       ],
       "sourceId": "listing"
+    },
+    {
+      "id": "2026-10-18-tm-vvG1YZ_FN5kiFV",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Sombr",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_FN5kiFV",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vvG1YZ_aSPl9Lu",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Foster the People",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Foster the People",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_aSPl9Lu",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
     },
     {
       "id": "2026-10-20-espn-dallas-stars-401892545",
@@ -612,18 +1607,98 @@
         "seasons": "2024–2026",
         "note": "Typical announced crowd here for a weeknight in October: 7 games, 2024–2026."
       }
+    },
+    {
+      "id": "2026-10-21-tm-vvG1YZ_kYCNL4e",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mon Laferte",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Mon Laferte",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_kYCNL4e",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
     }
   ],
   "forecasts": [
+    {
+      "eventId": "2026-10-07-tm-vvG1YZ_aE4su5L",
+      "date": "2026-10-07",
+      "start": "18:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Moderate",
+        "why": "The Red Clay Strays next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-07-tm-vvG1YZ_F0exkqy",
+      "date": "2026-10-07",
+      "start": "18:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Moderate",
+        "why": "Dickies Arena Suites next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
     {
       "eventId": "2026-10-08-state-fair-texas",
       "date": "2026-10-08",
       "start": "10:00",
       "read": {
-        "rating": 3.6,
+        "rating": 4.6,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-08-tm-vvG1YZ_aEpIW8P",
+      "date": "2026-10-08",
+      "start": "18:30",
+      "read": {
+        "rating": 4.6,
+        "friction": "Heavy",
+        "why": "The Red Clay Strays and Cowboys vs. Buccaneers next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-08-tm-vvG1YZ_F0kF9e_",
+      "date": "2026-10-08",
+      "start": "18:30",
+      "read": {
+        "rating": 4.6,
+        "friction": "Heavy",
+        "why": "Dickies Arena Suites next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
       }
     },
     {
@@ -631,9 +1706,9 @@
       "date": "2026-10-08",
       "start": "19:15",
       "read": {
-        "rating": 3.6,
+        "rating": 4.6,
         "friction": "Low",
-        "why": "86° feels-like at a 7:15 pm start, no roof.",
+        "why": "Nothing bigger was on.",
         "method": "formula"
       },
       "draw": {
@@ -643,13 +1718,119 @@
       }
     },
     {
+      "eventId": "2026-10-08-tm-vvG1YZ_5jmmTtC",
+      "date": "2026-10-08",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Heavy",
+        "why": "Cowboys vs. Buccaneers 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-08-tm-Z7r9jZ1A7xffE",
+      "date": "2026-10-08",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Heavy",
+        "why": "Cowboys vs. Buccaneers 6.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6350
+      }
+    },
+    {
       "eventId": "2026-10-09-state-fair-texas",
       "date": "2026-10-09",
       "start": "10:00",
       "read": {
-        "rating": 1,
+        "rating": 4.7,
         "friction": "Low",
         "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-vvG1YZ_A5O90yi",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Heavy",
+        "why": "Dickies Arena Suites next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-vvG1YZ_AQxX4ND",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "Brooks & Dunn next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-vvG1YZ_GXxf4BI",
+      "date": "2026-10-09",
+      "start": "20:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Heavy",
+        "why": "Metaphor: ReFantazio Orchestra Concert 7.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-Z7r9jZ1A7-P0Z",
+      "date": "2026-10-09",
+      "start": "20:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Heavy",
+        "why": "ROLE MODEL 7.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6350
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-Z7r9jZ1AAvs7a",
+      "date": "2026-10-09",
+      "start": "20:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Heavy",
+        "why": "Dickies Arena Suites and Brooks & Dunn 45 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 3910
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-vvG1YZbzcSof7Q",
+      "date": "2026-10-10",
+      "start": "09:00",
+      "read": {
+        "rating": 8.5,
+        "friction": "Moderate",
+        "why": "State Fair of Texas 25 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -658,7 +1839,7 @@
       "date": "2026-10-10",
       "start": "10:00",
       "read": {
-        "rating": 6.9,
+        "rating": 8.5,
         "friction": "Low",
         "why": "Texas vs. Oklahoma (Red River Showdown) next door, back to back.",
         "method": "formula"
@@ -669,7 +1850,7 @@
       "date": "2026-10-10",
       "start": "14:30",
       "read": {
-        "rating": 6.9,
+        "rating": 8.5,
         "friction": "Heavy",
         "why": "Texas vs. Oklahoma (Red River Showdown) 37 mi away, same hours.",
         "method": "formula"
@@ -685,7 +1866,7 @@
       "date": "2026-10-10",
       "start": "14:30",
       "read": {
-        "rating": 6.9,
+        "rating": 8.5,
         "friction": "Heavy",
         "why": "97° feels-like at a 2:30 pm start, no roof.",
         "method": "formula"
@@ -695,14 +1876,126 @@
       }
     },
     {
+      "eventId": "2026-10-10-tm-vvG1YZ_A5Ob0BJ",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "read": {
+        "rating": 8.5,
+        "friction": "Extreme",
+        "why": "Kacey Musgraves and Dickies Arena Suites 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-vvG1YZ_AQxT40G",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "read": {
+        "rating": 8.5,
+        "friction": "Heavy",
+        "why": "Kacey Musgraves and Brooks & Dunn 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-vvG1YZ_awGIEBP",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "read": {
+        "rating": 8.5,
+        "friction": "Heavy",
+        "why": "Dickies Arena Suites and Brooks & Dunn 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-Z7r9jZ1A7-kuK",
+      "date": "2026-10-10",
+      "start": "20:00",
+      "read": {
+        "rating": 8.5,
+        "friction": "Heavy",
+        "why": "Kacey Musgraves and Dickies Arena Suites 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6350
+      }
+    },
+    {
       "eventId": "2026-10-11-state-fair-texas",
       "date": "2026-10-11",
       "start": "10:00",
       "read": {
-        "rating": 1,
+        "rating": 3.3,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG1YZ_A2e5hg5",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "CeCe Winans next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG1YZ_AChebu0",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Heavy",
+        "why": "Dickies Arena Suites next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG1YZ_awL1QUZ",
+      "date": "2026-10-11",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Dickies Arena Suites and CeCe Winans 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG1YZ_1DmMqf5",
+      "date": "2026-10-11",
+      "start": "20:15",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Kacey Musgraves and Dickies Arena Suites 9.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
       }
     },
     {
@@ -710,10 +2003,52 @@
       "date": "2026-10-12",
       "start": "10:00",
       "read": {
-        "rating": 1,
+        "rating": 3.3,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-12-tm-vvG1YZ_7w4jzz2",
+      "date": "2026-10-12",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Breaking Benjamin next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-12-tm-vvG1YZ_7whjaQV",
+      "date": "2026-10-12",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Dickies Arena Suites next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-12-tm-vvG1YZ_axJRhSo",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Dickies Arena Suites and Breaking Benjamin 26 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
       }
     },
     {
@@ -721,9 +2056,20 @@
       "date": "2026-10-13",
       "start": "10:00",
       "read": {
-        "rating": 1,
+        "rating": 1.5,
         "friction": "Low",
         "why": "Nothing bigger was on.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-Z7r9jZ1AAZvu_",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Stars vs. Avalanche 10 mi away, same hours.",
         "method": "formula"
       }
     },
@@ -732,9 +2078,9 @@
       "date": "2026-10-13",
       "start": "19:30",
       "read": {
-        "rating": 1,
+        "rating": 1.5,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "ARTMS 10 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -748,7 +2094,7 @@
       "date": "2026-10-14",
       "start": "10:00",
       "read": {
-        "rating": 2.7,
+        "rating": 3.4,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -759,7 +2105,7 @@
       "date": "2026-10-14",
       "start": "19:00",
       "read": {
-        "rating": 2.7,
+        "rating": 3.4,
         "friction": "Moderate",
         "why": "FC Dallas vs. Sounders 25 mi away, same hours.",
         "method": "formula"
@@ -775,7 +2121,7 @@
       "date": "2026-10-14",
       "start": "19:30",
       "read": {
-        "rating": 2.7,
+        "rating": 3.4,
         "friction": "Moderate",
         "why": "Mavericks vs. Pelicans 25 mi away, same hours.",
         "method": "formula"
@@ -787,14 +2133,84 @@
       }
     },
     {
+      "eventId": "2026-10-14-tm-vvG1YZ_6J3Sk_V",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "92° feels-like at a 7:30 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
       "eventId": "2026-10-15-state-fair-texas",
       "date": "2026-10-15",
       "start": "10:00",
       "read": {
-        "rating": 1,
+        "rating": 3.8,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG1YZ_13XPlXI",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Karol G 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-Z7r9jZ1A7xfrb",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "89° feels-like at a 7:00 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 45600
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-Z7r9jZ1A7Ptqe",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Karol G 6.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6350
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG1YZ_FCbXFze",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Karol G 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
       }
     },
     {
@@ -802,7 +2218,7 @@
       "date": "2026-10-16",
       "start": "10:00",
       "read": {
-        "rating": 1,
+        "rating": 4.5,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
@@ -813,9 +2229,9 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 1,
-        "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "rating": 4.5,
+        "friction": "Moderate",
+        "why": "Dickies Arena Suites and Gorillaz 33 mi away, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -825,11 +2241,67 @@
       }
     },
     {
+      "eventId": "2026-10-16-tm-vvG1YZ_FB_UM69",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 4.5,
+        "friction": "Heavy",
+        "why": "Dickies Arena Suites and Gorillaz 26 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1YZ_ARabXTr",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "read": {
+        "rating": 4.5,
+        "friction": "Heavy",
+        "why": "Gorillaz and Modest Mouse next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1YZ_dxO-E0O",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "read": {
+        "rating": 4.5,
+        "friction": "Heavy",
+        "why": "Dickies Arena Suites next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1YZ_axCfz2I",
+      "date": "2026-10-16",
+      "start": "20:30",
+      "read": {
+        "rating": 4.5,
+        "friction": "Heavy",
+        "why": "Mavericks vs. Hawks and Dickies Arena Suites 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 3420
+      }
+    },
+    {
       "eventId": "2026-10-17-state-fair-texas",
       "date": "2026-10-17",
       "start": "10:00",
       "read": {
-        "rating": 3,
+        "rating": 5.7,
         "friction": "Low",
         "why": "SMU vs. Virginia 4.3 mi away, same hours.",
         "method": "formula"
@@ -840,7 +2312,7 @@
       "date": "2026-10-17",
       "start": "11:00",
       "read": {
-        "rating": 3,
+        "rating": 5.7,
         "friction": "Low",
         "why": "State Fair of Texas 4.3 mi away, same hours.",
         "method": "formula"
@@ -852,14 +2324,112 @@
       }
     },
     {
+      "eventId": "2026-10-17-tm-vvG1YZ_5m3Hz7t",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 5.7,
+        "friction": "Extreme",
+        "why": "Weezer and Dickies Arena Suites 9.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1YZ_kMvOnlG",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 5.7,
+        "friction": "Heavy",
+        "why": "Dickies Arena Suites and Phoebe Bridgers 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1YZ_G3pCUqa",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 5.7,
+        "friction": "Heavy",
+        "why": "Weezer and Phoebe Bridgers 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1YZ_G6EbQDb",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 5.7,
+        "friction": "Extreme",
+        "why": "Weezer and Dickies Arena Suites 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A70IuO",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 5.7,
+        "friction": "Heavy",
+        "why": "Weezer and Dickies Arena Suites 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6350
+      }
+    },
+    {
       "eventId": "2026-10-18-state-fair-texas",
       "date": "2026-10-18",
       "start": "10:00",
       "read": {
-        "rating": 1,
+        "rating": 2,
         "friction": "Low",
         "why": "Nothing bigger was on.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1YZ_FN5kiFV",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Foster the People 9.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1YZ_aSPl9Lu",
+      "date": "2026-10-18",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Sombr 9.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
       }
     },
     {
@@ -876,6 +2446,20 @@
         "count": 18532,
         "low": 18532,
         "high": 18532
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG1YZ_kYCNL4e",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
       }
     }
   ]

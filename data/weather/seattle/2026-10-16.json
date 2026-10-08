@@ -2,7 +2,26 @@
   "schema": 1,
   "metroId": "seattle",
   "date": "2026-10-16",
-  "rows": [],
+  "rows": [
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T02:50:42.993Z",
+      "feelsLikeF": 48.3,
+      "tempF": 52.8,
+      "humidity": 58,
+      "windMph": 4.2,
+      "uvIndex": 0,
+      "precipProbability": 8,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ],
   "days": [
     {
       "metroId": "seattle",

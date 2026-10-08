@@ -38,6 +38,24 @@
       "shortwave": 245,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "dallas-fort-worth",
+      "venueId": "city",
+      "date": "2026-10-07",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T02:53:03.989Z",
+      "feelsLikeF": 81,
+      "tempF": 83.4,
+      "humidity": 28,
+      "windMph": 3.8,
+      "uvIndex": 0.35,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [

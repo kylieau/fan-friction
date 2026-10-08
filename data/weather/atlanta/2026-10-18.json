@@ -506,6 +506,24 @@
       "shortwave": 602,
       "cloudCover": 67,
       "code": 2
+    },
+    {
+      "metroId": "atlanta",
+      "venueId": "city",
+      "date": "2026-10-18",
+      "hour": 15,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T02:51:27.782Z",
+      "feelsLikeF": 82.8,
+      "tempF": 81.5,
+      "humidity": 39,
+      "windMph": 4.3,
+      "uvIndex": 4.75,
+      "precipProbability": 10,
+      "precipMm": 0,
+      "shortwave": 709,
+      "cloudCover": 41,
+      "code": 1
     }
   ],
   "days": [

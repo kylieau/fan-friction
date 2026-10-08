@@ -2,7 +2,26 @@
   "schema": 1,
   "metroId": "montreal",
   "date": "2026-10-16",
-  "rows": [],
+  "rows": [
+    {
+      "metroId": "montreal",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T02:53:20.278Z",
+      "feelsLikeF": 58.6,
+      "tempF": 57.7,
+      "humidity": 99,
+      "windMph": 3.4,
+      "uvIndex": 0,
+      "precipProbability": 22,
+      "precipMm": 0.7,
+      "shortwave": 0,
+      "cloudCover": 96,
+      "code": 53
+    }
+  ],
   "days": [
     {
       "metroId": "montreal",

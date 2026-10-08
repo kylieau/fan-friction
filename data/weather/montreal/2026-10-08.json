@@ -20,6 +20,24 @@
       "shortwave": 0,
       "cloudCover": 37,
       "code": 1
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "city",
+      "date": "2026-10-08",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-08T02:53:20.278Z",
+      "feelsLikeF": 46.3,
+      "tempF": 50.6,
+      "humidity": 79,
+      "windMph": 6.7,
+      "uvIndex": 0,
+      "precipProbability": 5,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 99,
+      "code": 3
     }
   ],
   "days": [
