@@ -7,10 +7,11 @@
 import type { CrowdEvent, LocalDate } from '../types';
 import { supabase } from '../storage/supabaseClient';
 import { espnEvents } from './espnSource';
+import { hockeytechEvents } from './hockeytechSource';
 import { mlbEvents } from './mlbSource';
 import type { EventSource } from './types';
 
-const FEEDS: EventSource[] = [mlbEvents, espnEvents];
+const FEEDS: EventSource[] = [mlbEvents, espnEvents, hockeytechEvents];
 const cache = new Map<string, Promise<CrowdEvent[] | null>>();
 
 /** Every feed-sourced event in the table for a metro, or null when the table can't answer. */

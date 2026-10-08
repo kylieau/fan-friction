@@ -5771,6 +5771,306 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   },
   {
     "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 8493,
+    "low": 6141,
+    "high": 10862,
+    "games": 105,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 8707,
+    "low": 8667,
+    "high": 8914,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 10089,
+    "low": 4414,
+    "high": 16403,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4215,
+    "low": 3680,
+    "high": 4530,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 16403,
+    "low": 16403,
+    "high": 16467,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 4624,
+    "low": 4459,
+    "high": 5008,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 14102,
+    "low": 12096,
+    "high": 15253,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 16359,
+    "low": 13187,
+    "high": 16403,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 6040,
+    "low": 5583,
+    "high": 6090,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 6044,
+    "low": 5738,
+    "high": 6075,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8224,
+    "low": 7243,
+    "high": 10837,
+    "games": 44,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 12556,
+    "low": 10902,
+    "high": 13673,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 10507,
+    "low": 8646,
+    "high": 12095,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 8298,
+    "low": 7537,
+    "high": 10238,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 8841,
+    "low": 8480,
+    "high": 9589,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 6015,
+    "low": 5931,
+    "high": 6633,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 7256,
+    "low": 6771,
+    "high": 7510,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 7144,
+    "low": 6482,
+    "high": 8493,
+    "games": 9,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 8822,
+    "low": 7291,
+    "high": 10323,
+    "games": 38,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 8889,
+    "low": 7698,
+    "high": 9592,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 10020,
+    "low": 9420,
+    "high": 10862,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 9253,
+    "low": 7996,
+    "high": 13315,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 8419,
+    "low": 7919,
+    "high": 9551,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 9725,
+    "low": 8710,
+    "high": 11312,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "venueId": "allstate-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 5455,
+    "low": 5330,
+    "high": 6104,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "chicago",
     "teamId": "cubs",
     "venueId": "wrigley-field",
     "dayClass": "all",
@@ -13978,6 +14278,366 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2024–2025"
   },
   {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "all",
+    "month": null,
+    "count": 10243,
+    "low": 9784,
+    "high": 10243,
+    "games": 71,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "opener",
+    "month": null,
+    "count": 10243,
+    "low": 10243,
+    "high": 10243,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 9537,
+    "low": 9027,
+    "high": 10180,
+    "games": 20,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 9508,
+    "low": 9491,
+    "high": 9598,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 9848,
+    "low": 9784,
+    "high": 10046,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 10184,
+    "low": 9718,
+    "high": 10230,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 8967,
+    "low": 8943,
+    "high": 9018,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "friday",
+    "month": null,
+    "count": 10243,
+    "low": 10243,
+    "high": 10243,
+    "games": 25,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 10243,
+    "low": 10243,
+    "high": 10243,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 10243,
+    "low": 10243,
+    "high": 10243,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 10243,
+    "low": 10243,
+    "high": 10243,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 10243,
+    "low": 10243,
+    "high": 10243,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 10166,
+    "low": 9876,
+    "high": 10243,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 10229,
+    "low": 10163,
+    "high": 10243,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 10243,
+    "low": 10227,
+    "high": 10243,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 10243,
+    "low": 10243,
+    "high": 10243,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 10243,
+    "low": 10243,
+    "high": 10243,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 10243,
+    "low": 10243,
+    "high": 10243,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 9405,
+    "low": 9368,
+    "high": 9640,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 10033,
+    "low": 9949,
+    "high": 10138,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "venueId": "place-bell",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 10243,
+    "low": 10227,
+    "high": 10243,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "venueId": "bell-centre",
+    "dayClass": "all",
+    "month": null,
+    "count": 18107,
+    "low": 17716,
+    "high": 19606,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "venueId": "bell-centre",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18107,
+    "low": 17716,
+    "high": 19606,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "venueId": "place-bell",
+    "dayClass": "all",
+    "month": null,
+    "count": 9247,
+    "low": 8066,
+    "high": 10172,
+    "games": 27,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "venueId": "place-bell",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 8408,
+    "low": 6833,
+    "high": 9113,
+    "games": 14,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "venueId": "place-bell",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 7325,
+    "low": 6969,
+    "high": 7561,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "venueId": "place-bell",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 8994,
+    "low": 8809,
+    "high": 9194,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "venueId": "place-bell",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 10103,
+    "low": 9686,
+    "high": 10172,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "venueId": "place-bell",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 10172,
+    "low": 10172,
+    "high": 10172,
+    "games": 7,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "venueId": "place-bell",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 10172,
+    "low": 10172,
+    "high": 10172,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
     "metroId": "new-york",
     "teamId": "brooklyn-cyclones",
     "venueId": "maimonides-park",
@@ -16703,6 +17363,102 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   },
   {
     "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "venueId": "prudential-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 2992,
+    "low": 2722,
+    "high": 3765,
+    "games": 25,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "venueId": "prudential-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2759,
+    "low": 1780,
+    "high": 3488,
+    "games": 13,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "venueId": "prudential-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1780,
+    "low": 1675,
+    "high": 2270,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "venueId": "prudential-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1729,
+    "low": 1649,
+    "high": 2609,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "venueId": "prudential-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 4265,
+    "low": 3629,
+    "high": 5269,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "venueId": "prudential-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3226,
+    "low": 2737,
+    "high": 3978,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "venueId": "prudential-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3388,
+    "low": 3024,
+    "high": 4139,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "venueId": "prudential-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 2946,
+    "low": 2834,
+    "high": 3232,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-york",
     "teamId": "nycfc",
     "venueId": "citi-field",
     "dayClass": "all",
@@ -18311,6 +19067,282 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   },
   {
     "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 6839,
+    "low": 5111,
+    "high": 8589,
+    "games": 105,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 10023,
+    "low": 9645,
+    "high": 11199,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5001,
+    "low": 4809,
+    "high": 5139,
+    "games": 33,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4972,
+    "low": 4573,
+    "high": 5065,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 4840,
+    "low": 4774,
+    "high": 4982,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 5111,
+    "low": 5002,
+    "high": 5642,
+    "games": 5,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 6719,
+    "low": 5111,
+    "high": 7029,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4883,
+    "low": 4822,
+    "high": 4971,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 4854,
+    "low": 4832,
+    "high": 5764,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7119,
+    "low": 6411,
+    "high": 8013,
+    "games": 29,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 6957,
+    "low": 6219,
+    "high": 7923,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 8523,
+    "low": 7821,
+    "high": 8823,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 7087,
+    "low": 6787,
+    "high": 7467,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 7101,
+    "low": 6317,
+    "high": 7455,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 6057,
+    "low": 5523,
+    "high": 8009,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 10013,
+    "low": 7104,
+    "high": 11074,
+    "games": 35,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 8658,
+    "low": 7335,
+    "high": 8969,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 10847,
+    "low": 10659,
+    "high": 11395,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 10013,
+    "low": 8764,
+    "high": 10600,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 12157,
+    "low": 11330,
+    "high": 12920,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 6899,
+    "low": 6237,
+    "high": 10325,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 7957,
+    "low": 6420,
+    "high": 10045,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "venueId": "pechanga-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 6500,
+    "low": 5172,
+    "high": 8312,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "san-diego",
     "teamId": "sdsu-football",
     "venueId": "snapdragon-stadium",
     "dayClass": "all",
@@ -19028,6 +20060,270 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 3979,
     "games": 8,
     "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 6549,
+    "low": 5017,
+    "high": 7893,
+    "games": 69,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6279,
+    "low": 6263,
+    "high": 6748,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4291,
+    "low": 3991,
+    "high": 4664,
+    "games": 12,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4264,
+    "low": 4119,
+    "high": 4422,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4317,
+    "low": 4177,
+    "high": 5473,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 4317,
+    "low": 4157,
+    "high": 4617,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 6379,
+    "low": 5317,
+    "high": 7519,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 6281,
+    "low": 5879,
+    "high": 6389,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 7558,
+    "low": 7423,
+    "high": 7760,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 8249,
+    "low": 8249,
+    "high": 8249,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "friday",
+    "month": 10,
+    "count": 5017,
+    "low": 4802,
+    "high": 5167,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 6543,
+    "low": 6268,
+    "high": 6546,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 5743,
+    "low": 5258,
+    "high": 5908,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7806,
+    "low": 7045,
+    "high": 8249,
+    "games": 26,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 7752,
+    "low": 7387,
+    "high": 8209,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 8249,
+    "low": 7984,
+    "high": 8249,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 8249,
+    "low": 8249,
+    "high": 8249,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 6863,
+    "low": 6491,
+    "high": 6997,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 7483,
+    "low": 6720,
+    "high": 7688,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 7893,
+    "low": 6947,
+    "high": 8249,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5491,
+    "low": 4906,
+    "high": 7264,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "venueId": "angel-of-the-winds-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 7461,
+    "low": 6177,
+    "high": 7627,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "seattle",
@@ -19904,6 +21200,270 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 68769,
     "games": 3,
     "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 4340,
+    "low": 3518,
+    "high": 5057,
+    "games": 65,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 5007,
+    "low": 4836,
+    "high": 5086,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3510,
+    "low": 3307,
+    "high": 3589,
+    "games": 13,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3224,
+    "low": 3154,
+    "high": 3279,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4762,
+    "low": 3490,
+    "high": 6029,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 4185,
+    "low": 3915,
+    "high": 4560,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 4178,
+    "low": 3859,
+    "high": 4394,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 4396,
+    "low": 4369,
+    "high": 4583,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "friday",
+    "month": 10,
+    "count": 3812,
+    "low": 3186,
+    "high": 4058,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 3530,
+    "low": 2950,
+    "high": 4105,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 4538,
+    "low": 4074,
+    "high": 5002,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5044,
+    "low": 4517,
+    "high": 5398,
+    "games": 23,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 5742,
+    "low": 5400,
+    "high": 5910,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 5535,
+    "low": 4917,
+    "high": 6070,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 5270,
+    "low": 5086,
+    "high": 5537,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 3414,
+    "low": 3293,
+    "high": 4024,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 4513,
+    "low": 3986,
+    "high": 4653,
+    "games": 7,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "venueId": "accesso-showare-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4293,
+    "low": 4159,
+    "high": 5809,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-torrent",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 12351,
+    "low": 10247,
+    "high": 14159,
+    "games": 12,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-torrent",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 10218,
+    "low": 9582,
+    "high": 11556,
+    "games": 6,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-torrent",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 9389,
+    "low": 9006,
+    "high": 9833,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-torrent",
+    "venueId": "climate-pledge-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 12774,
+    "low": 11899,
+    "high": 14680,
+    "games": 3,
+    "seasons": "2025"
   },
   {
     "metroId": "seattle",
@@ -23646,6 +25206,55 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "wagner",
     "ratio": 0.89,
     "games": 2
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "opponent": "admirals",
+    "ratio": 1.011,
+    "games": 18
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "opponent": "griffins",
+    "ratio": 1.05,
+    "games": 13
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "opponent": "icehogs",
+    "ratio": 1.023,
+    "games": 18
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "opponent": "monsters",
+    "ratio": 0.899,
+    "games": 8
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "opponent": "moose",
+    "ratio": 0.736,
+    "games": 12
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "opponent": "stars",
+    "ratio": 1.047,
+    "games": 12
+  },
+  {
+    "metroId": "chicago",
+    "teamId": "chicago-wolves",
+    "opponent": "wild",
+    "ratio": 0.912,
+    "games": 13
   },
   {
     "metroId": "chicago",
@@ -27631,6 +29240,160 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 2
   },
   {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "americans",
+    "ratio": 0.963,
+    "games": 8
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "bears",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "bruins",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "canucks",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "comets",
+    "ratio": 0.979,
+    "games": 8
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "crunch",
+    "ratio": 0.994,
+    "games": 10
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "islanders",
+    "ratio": 0.983,
+    "games": 2
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "marlies",
+    "ratio": 1,
+    "games": 8
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "monsters",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "moose",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "penguins",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "phantoms",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "senators",
+    "ratio": 1.007,
+    "games": 10
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "thunderbirds",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "laval-rocket",
+    "opponent": "wolf-pack",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "opponent": "charge",
+    "ratio": 0.986,
+    "games": 4
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "opponent": "fleet",
+    "ratio": 1.029,
+    "games": 5
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "opponent": "frost",
+    "ratio": 0.994,
+    "games": 5
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "opponent": "ottawa",
+    "ratio": 0.969,
+    "games": 2
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "opponent": "sceptres",
+    "ratio": 0.956,
+    "games": 6
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "opponent": "sirens",
+    "ratio": 0.949,
+    "games": 4
+  },
+  {
+    "metroId": "montreal",
+    "teamId": "victoire",
+    "opponent": "torrent",
+    "ratio": 1.042,
+    "games": 2
+  },
+  {
     "metroId": "new-york",
     "teamId": "brooklyn-cyclones",
     "opponent": "blue-rocks",
@@ -29214,6 +30977,48 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "opponent": "charge",
+    "ratio": 1.298,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "opponent": "fleet",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "opponent": "frost",
+    "ratio": 1.061,
+    "games": 4
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "opponent": "goldeneyes",
+    "ratio": 0.984,
+    "games": 2
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "opponent": "sceptres",
+    "ratio": 1.096,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "ny-sirens",
+    "opponent": "victoire",
+    "ratio": 1.139,
+    "games": 5
+  },
+  {
+    "metroId": "new-york",
     "teamId": "nycfc",
     "opponent": "atlanta",
     "ratio": 1.003,
@@ -29949,6 +31754,90 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "barracuda",
+    "ratio": 0.986,
+    "games": 10
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "canucks",
+    "ratio": 1.059,
+    "games": 10
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "condors",
+    "ratio": 1.113,
+    "games": 10
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "eagles",
+    "ratio": 0.948,
+    "games": 8
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "firebirds",
+    "ratio": 1.016,
+    "games": 12
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "icehogs",
+    "ratio": 1.079,
+    "games": 4
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "reign",
+    "ratio": 1.118,
+    "games": 10
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "roadrunners",
+    "ratio": 0.955,
+    "games": 12
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "silver-knights",
+    "ratio": 1.043,
+    "games": 8
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "stars",
+    "ratio": 1.003,
+    "games": 4
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "wild",
+    "ratio": 0.943,
+    "games": 4
+  },
+  {
+    "metroId": "san-diego",
+    "teamId": "san-diego-gulls",
+    "opponent": "wranglers",
+    "ratio": 1.038,
+    "games": 8
+  },
+  {
+    "metroId": "san-diego",
     "teamId": "sdsu-football",
     "opponent": "boise-st",
     "ratio": 1.082,
@@ -30205,6 +32094,90 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "indians",
     "ratio": 1.034,
     "games": 42
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "americans",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "blazers",
+    "ratio": 0.929,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "chiefs",
+    "ratio": 0.958,
+    "games": 7
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "cougars",
+    "ratio": 1.006,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "giants",
+    "ratio": 0.97,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "rockets",
+    "ratio": 0.951,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "royals",
+    "ratio": 0.97,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "thunderbirds",
+    "ratio": 1.086,
+    "games": 7
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "vees",
+    "ratio": 1.014,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "wheat-kings",
+    "ratio": 0.975,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "wild",
+    "ratio": 0.944,
+    "games": 10
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "everett-silvertips",
+    "opponent": "winterhawks",
+    "ratio": 0.95,
+    "games": 8
   },
   {
     "metroId": "seattle",
@@ -30694,6 +32667,118 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "seahawks",
     "opponent": "vikings",
     "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "americans",
+    "ratio": 0.977,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "blazers",
+    "ratio": 1.022,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "chiefs",
+    "ratio": 1.082,
+    "games": 6
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "cougars",
+    "ratio": 0.955,
+    "games": 5
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "giants",
+    "ratio": 0.966,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "rockets",
+    "ratio": 1.025,
+    "games": 4
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "royals",
+    "ratio": 0.959,
+    "games": 5
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "silvertips",
+    "ratio": 1.03,
+    "games": 5
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "vees",
+    "ratio": 0.979,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "wild",
+    "ratio": 0.99,
+    "games": 7
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-thunderbirds",
+    "opponent": "winterhawks",
+    "ratio": 1.053,
+    "games": 9
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-torrent",
+    "opponent": "charge",
+    "ratio": 1.054,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-torrent",
+    "opponent": "fleet",
+    "ratio": 1.02,
+    "games": 3
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-torrent",
+    "opponent": "frost",
+    "ratio": 1.087,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-torrent",
+    "opponent": "sceptres",
+    "ratio": 1.069,
+    "games": 2
+  },
+  {
+    "metroId": "seattle",
+    "teamId": "seattle-torrent",
+    "opponent": "victoire",
+    "ratio": 1.087,
     "games": 2
   },
   {

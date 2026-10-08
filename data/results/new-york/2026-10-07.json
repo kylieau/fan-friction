@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-07",
+  "results": [
+    {
+      "eventId": "2026-10-07-mlb-849838",
+      "metroId": "new-york",
+      "date": "2026-10-07",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "yankee-stadium",
+      "homeTeamId": "yankees",
+      "home": {
+        "name": "Yankees",
+        "score": 3
+      },
+      "away": {
+        "name": "Rays",
+        "score": 4
+      },
+      "capturedAt": "2026-10-08T03:34:45.455Z",
+      "attendance": 48865,
+      "duration": {
+        "minutes": 184,
+        "kind": "official"
+      },
+      "startedAt": "20:09"
+    }
+  ]
+}

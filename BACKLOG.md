@@ -223,7 +223,7 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/expected-draw-decisions-oct7.md
 
 ## No-feed sources (Oct 8) — follow-ons
 - **🚩 Launch blocker (Kylie, Oct 8):** the app's ESPN feed (NBA, WNBA, NHL, NFL, MLS, NWSL, USL, CFL, UFL, G League, college) runs under Disney's terms, which the research reads as barring automated access without written permission. Fine for a personal app today; before a public launch, license it or replace it. Noted in `docs/build-brief.md` under Cost milestones.
-- **HockeyTech**: send `docs/hockeytech-permission-email.md` per league; wire after a yes; keep replies in `private/`.
+- **HockeyTech**: Kylie chose to read the feed without asking (Oct 8); the email stays drafted for a public launch, when both ESPN and HockeyTech need permission or a license (🚩 launch blocker above).
 - **The Ticketmaster sweep's first night**: check which allowlisted buildings actually list sports there, and that no feed game got a Ticketmaster twin.
 - **Hand-entered annual file**: NASCAR and IndyCar weekends, the Stock Show, PBR, Major League Cricket by building.
 

@@ -8,6 +8,7 @@
 
 import { supabase } from './storage/supabaseClient';
 import { espnTeamSchedule } from './sources/espnSource';
+import { hockeytechTeamSchedule } from './sources/hockeytechSource';
 import { mlbTeamSchedule } from './sources/mlbSource';
 import type { TeamGame } from './types';
 
@@ -15,7 +16,7 @@ const cache = new Map<string, Promise<TeamGame[] | null>>();
 
 /** Straight from the feeds. The job calls this; a browser can only reach the MLB half. */
 export async function teamScheduleFromFeeds(teamId: string): Promise<TeamGame[] | null> {
-  return (await mlbTeamSchedule(teamId)) ?? (await espnTeamSchedule(teamId));
+  return (await mlbTeamSchedule(teamId)) ?? (await espnTeamSchedule(teamId)) ?? (await hockeytechTeamSchedule(teamId));
 }
 
 async function fromTable(teamId: string): Promise<TeamGame[] | null> {

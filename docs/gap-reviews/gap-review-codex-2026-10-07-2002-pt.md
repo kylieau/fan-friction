@@ -263,3 +263,67 @@ Address log loss, sync, and cache boundaries first. Then address read clarity, m
 ## Reuse in later reviews
 
 Reference this review by its dated filename and issue identifiers. Save later gap reviews as separate dated documents rather than silently rewriting this snapshot. Compare with the other model’s review only after preserving both independent passes.
+
+
+---
+
+## Addendum: broader project-context review
+
+**Author:** Codex  
+**Appended:** October 07, 2026 at 08:32:28 PM PDT (UTC-0700)  
+**Status:** Review only; no implementation approved.
+
+Kylie requested a fuller catch-up and any resulting updates to this review. This addendum preserves the original snapshot and its issue IDs. It follows a broader reading of the product decisions, account and entry specifications, Compare proposal, catalog architecture, city checklist, attendance decisions and checks, deferred work, and tester guide. GrokBot/Cursor's gap-review document and visual assets remain unopened for this pass. Product decisions that credit its mockups were read as decisions, not as an independent review to copy.
+
+The checkout was at `20abaa5`; Claude was actively changing other documents during this pass. These notes describe the files read, not a guarantee about the eventual build. No fresh browser screenshots or signed-in tests were taken. Original screenshots remain dated evidence.
+
+### Clarifications and updates to existing findings
+
+| Item | Updated assessment |
+|---|---|
+| **D01–D04** | The plan-removal, full-log replacement, account-wins merge and broad REST-cache patterns remain in the inspected code. Protecting saved nights remains my first recommendation. Their original verification limits still apply: this pass did not reproduce a live account collision or demonstrate private-cache disclosure. |
+| **D05** | The problem is consistency of value, status and historical basis. A record need not be permanently immune to formula improvements: recalculation was explicitly allowed. Save-time forecast capture and a new half-hour job are not proposed fixes; the later decision says Save keeps no forecast, and the half-hour job stays parked. Automatic plan-to-attendance conversion is also approved; D01 concerns failed conversion losing a night, not whether automatic conversion should exist. |
+| **D09** | Limit the proposal to correcting a person's manually entered identifying details. Kylie explicitly removed sourced event facts from the editing form. This recommendation does not restore typed scores, starters, promotions, TV or setlists. |
+| **UX02** | A signed-out sign-in prompt is intentional, and accounts are optional. The recommendation concerns prominence and access to logging; it does not mean removing sign-in. The plus beside the gear is also an approved entry point. Making Add the main empty-state action is an alternative to propose, not correction of an unauthorized layout. |
+| **UX03** | The backlog already acknowledges that upcoming team-schedule rows lack catalog reads. This is a known presentation gap, not evidence that the formula has no forecasts. |
+| **UX08** | The share card serves an explicitly approved purpose at the end of the event page. Opening it only on demand would require Kylie to reopen that placement. My narrower recommendation is to improve the entry's hierarchy and consolidate repeated information while retaining the card in its current role. Kylie also explicitly liked the weather and local-competition cards; retain them. |
+| **UX09** | Partly addressed in the current code: crowd-backed estimates now open with “About this estimate” and an event-specific basis and range before the general explanation. Withdraw the blanket claim that every opening begins with regular-season games. Rule-based shows still have no specific opening, and the general section still starts with games; Done remains last. Those remaining scanability concerns need a fresh visual check before treating the old screenshot as current. |
+| **UX10** | “Your usual” as the median is an approved statistic. A median of one entry is mathematically valid. My concern is the language implying an established pattern with one observation, plus duplication and the unexplained hours count; keep the median feature and propose any wording change. |
+
+Sources: [account rules](../accounts-proposal.md), [entry decisions](../archive/proposals/entry-proposal-oct6.md), [Compare proposal](../compare-proposal-oct6.md), [later forecast-freeze decision](../product-review-decisions.md), [automatic attendance decision](../big-picture-plan-oct6.md), [current estimate-card decisions](../expected-draw-decisions-oct7.md), and [backlog](../../BACKLOG.md).
+
+### D10 Current instructions and historical records are easy to confuse
+
+**Classification:** Documentation/workflow gap; observed, not an app bug.
+
+`BACKLOG.md` still opens with Compare waiting for approval and Ticketmaster as a future step, although the build plan records Compare built and Ticketmaster live. `docs/data-sources.md` calls Ticketmaster unused and describes older compiled-index paths. `docs/schedule-archive.md` says Los Angeles only, no Ticketmaster, no Supabase, and formula paused, while the job serves covered cities and writes the shared catalog. The handoff's pending ESPN/Montreal answers have also been overtaken by the latest decision entries. These contradictions can make the next model request approval again, miss an existing feature, or build against an obsolete assumption.
+
+**Potential solution:** Preserve historical decision text, but mark historical descriptions clearly and give current operational documents a compact, dated status section linking to the latest decisions. Reconcile the handoff through the existing sync procedure when Claude finishes. Do not rewrite assistant proposals as Kylie's rules.
+
+**Evidence:** [backlog](../../BACKLOG.md), [data sources](../data-sources.md), [schedule archive](../schedule-archive.md), [build plan](../big-picture-plan-oct6.md), [latest decisions](../expected-draw-decisions-oct7.md), [nightly workflow](../../.github/workflows/schedule-archive.yml).
+
+### D11 The playoff explanation can misattribute its evidence
+
+**Classification:** Data/UI correctness; static code finding.
+
+The playoff estimator distinguishes team, blended and league evidence, but the explanation constructs the same opening for all crowd-backed estimates: “Based on N announced crowds at [this building].” A league pool includes games at other buildings; a blended pool includes those games too. The opening therefore implies local observations the estimate may not have. Separately, an estimate exceeding seats automatically produces a statement that the building sells standing room. The approved rule permits announced attendance above seats; that comparison alone does not establish why.
+
+**Potential solution:** Carry the evidence basis into the existing card. For a league fallback, say it uses comparable league playoff crowds, scaled to this building; for a blend, identify both sources. Show the standing-room explanation where venue evidence supports it. Keep this within the existing ⓘ card, without adding fine print to the page or changing the approved fullness words and bar.
+
+**Evidence:** [playoff estimator](../../src/data/expectedDraw.ts#L62), [explanation builder](../../src/screens/EventScreen.tsx#L299), [postseason check and league-pool caveat](../postseason-check.md). This pass traced the generated wording; it did not capture a specific fallback event in a browser.
+
+### D12 Attendance-estimate accuracy does not validate the whole friction read
+
+**Classification:** Validation limitation; documented, not a newly discovered implementation bug.
+
+The expected-draw checks demonstrate that historical crowds can improve sizing over capacity. They do not establish that the combined friction score measures difficulty accurately. The distance check found no aggregate predictive gain from sports-against-sports competition in the tested data; it lacked historical concerts and used announced attendance, which is not a count of arrivals or road delay. The result neither proves the friction read nor proves that competing events never matter. The decision to leave the distance discount unbuilt is settled and should stay settled.
+
+**Potential solution:** Keep three kinds of evidence separate in future reviews: attendance-estimate error, evidence for each friction component, and whether users understand and value the read. Continue scoring estimates saved before games; use the existing tester interview to investigate what users think the read describes, without tuning to their personal ratings. When concert history exists, revisit the parked competition check under a predeclared design. No formula or constant change is proposed here.
+
+**Evidence:** [expected-draw check](../expected-draw-check.md), [distance check and its caveats](../distance-check.md), [Kylie's decision to leave the discount out](../expected-draw-decisions-oct7.md), [tester interview guide](../tester-interview-guide.md).
+
+### Known limitations to carry forward, without reopening them
+
+Open sites and routes missing from Gridlock, the hillside-based access rule missing flat causeways, uncertain event-specific car shares, and incomplete historical concert coverage are already documented limitations. They should inform interpretation and later validation, not become invented “new” bugs or a reason to add hand-tuned city exceptions. Likewise, the approved 57% show fallback, building-based playoff fallback, announced-crowds-only fullness signal, and no Seats beside an estimate are deliberate choices, not gaps to undo.
+
+My priority remains log preservation and account/cache boundaries, then consistent read status and truthful evidence attribution, then logging flow and visual hierarchy. The extra context narrows several recommendations; it does not authorize a broader rebuild.

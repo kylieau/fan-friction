@@ -1,6 +1,6 @@
 # HockeyTech / league schedule feeds: the permission email (draft, Oct 8, 2026)
 
-Kylie asked for a draft and the process (Oct 8). Nothing is sent and nothing is wired until a yes is on file.
+Kylie asked for a draft and the process (Oct 8), then decided the same day: **not sent; read the feed** ("skip and read the feed"), with the reasoning recorded in `docs/expected-draw-decisions-oct7.md` and the launch milestone in `docs/build-brief.md`. The draft stays here for the day a public launch makes it necessary.
 
 ## Why ask first
 The AHL, ECHL, PWHL and WHL all publish their schedules and announced crowds through one stats platform (HockeyTech's LeagueStat, `lscluster.hockeytech.com`). The platform has no public developer program: the league websites call it with a client key embedded in their own pages, and open-source projects reuse those keys. Reading it would mean borrowing a key that was never issued to us, and no published terms say whether that is allowed. The app's rule is free data only and nothing a site's terms forbid; where the terms are silent, the honest move is to ask. A written yes also protects the app later: it is the kind of thing a launch review asks for.

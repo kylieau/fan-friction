@@ -5,6 +5,7 @@
 import { METROS } from '../../config/metros';
 import type { GameResult, LocalDate } from '../types';
 import { loadEspnFinals } from './espnSource';
+import { loadHockeytechFinals } from './hockeytechSource';
 import { loadMlbFinals } from './mlbSource';
 
 export const RESULTS_METRO_ID = 'la';
@@ -22,7 +23,7 @@ export async function collectResults(metroId: string = RESULTS_METRO_ID, now = n
   if (!metro) throw new Error(`Unknown metro ${metroId}.`);
   const through = now.toLocaleDateString('en-CA', { timeZone: metro.timeZone });
   const from = addCalendarDays(through, -RESULTS_LOOKBACK_DAYS);
-  const [mlb, espn] = await Promise.all([loadMlbFinals(metro.id, from, through), loadEspnFinals(metro.id, from, through)]);
-  const rows = [...mlb, ...espn].sort((a, b) => (a.date + a.eventId).localeCompare(b.date + b.eventId));
+  const [mlb, espn, ht] = await Promise.all([loadMlbFinals(metro.id, from, through), loadEspnFinals(metro.id, from, through), loadHockeytechFinals(metro.id, from, through)]);
+  const rows = [...mlb, ...espn, ...ht].sort((a, b) => (a.date + a.eventId).localeCompare(b.date + b.eventId));
   return { from, through, rows };
 }

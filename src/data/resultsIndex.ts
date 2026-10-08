@@ -95,7 +95,7 @@ export const GAME_RESULTS: GameResult[] = [
     },
     "attendance": 9574,
     "note": "OT",
-    "capturedAt": "2026-10-08T02:49:22.905Z",
+    "capturedAt": "2026-10-08T03:34:46.841Z",
     "duration": {
       "minutes": 146,
       "kind": "estimated"
@@ -118,7 +118,8 @@ export const GAME_RESULTS: GameResult[] = [
       "name": "Jax State",
       "score": 27
     },
-    "capturedAt": "2026-10-08T02:49:22.905Z",
+    "attendance": 10225,
+    "capturedAt": "2026-10-08T03:34:46.841Z",
     "duration": {
       "minutes": 217,
       "kind": "estimated"
@@ -141,7 +142,7 @@ export const GAME_RESULTS: GameResult[] = [
       "name": "Dodgers",
       "score": 4
     },
-    "capturedAt": "2026-10-08T02:49:23.194Z",
+    "capturedAt": "2026-10-08T03:34:47.187Z",
     "attendance": 41173,
     "duration": {
       "minutes": 174,
@@ -686,6 +687,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "16:38"
   },
   {
+    "eventId": "2026-10-07-mlb-849838",
+    "metroId": "new-york",
+    "date": "2026-10-07",
+    "sourceId": "mlb",
+    "status": "final",
+    "venueId": "yankee-stadium",
+    "homeTeamId": "yankees",
+    "home": {
+      "name": "Yankees",
+      "score": 3
+    },
+    "away": {
+      "name": "Rays",
+      "score": 4
+    },
+    "capturedAt": "2026-10-08T03:34:45.455Z",
+    "attendance": 48865,
+    "duration": {
+      "minutes": 184,
+      "kind": "official"
+    },
+    "startedAt": "20:09"
+  },
+  {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",
     "metroId": "san-diego",
     "date": "2026-10-03",
@@ -750,7 +775,7 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 1
     },
     "attendance": 17151,
-    "capturedAt": "2026-10-06T20:43:12.167Z",
+    "capturedAt": "2026-10-08T03:34:43.690Z",
     "duration": {
       "minutes": 152,
       "kind": "estimated"
@@ -774,12 +799,31 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 23
     },
     "attendance": 68691,
-    "capturedAt": "2026-10-06T20:43:12.167Z",
+    "capturedAt": "2026-10-08T03:34:43.690Z",
     "duration": {
       "minutes": 198,
       "kind": "estimated"
     },
     "startedAt": "13:25"
+  },
+  {
+    "eventId": "2026-10-04-ht-everett-silvertips-1023136",
+    "metroId": "seattle",
+    "date": "2026-10-04",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "angel-of-the-winds-arena",
+    "homeTeamId": "everett-silvertips",
+    "home": {
+      "name": "Silvertips",
+      "score": 1
+    },
+    "away": {
+      "name": "Chiefs",
+      "score": 3
+    },
+    "attendance": 4583,
+    "capturedAt": "2026-10-08T03:34:43.691Z"
   },
   {
     "eventId": "2026-10-06-espn-kraken-401892454",

@@ -160,6 +160,7 @@ const LIST: Team[] = [
   team('cf-montreal', 'CF Montréal', 'CF Montréal', 'MLS', 'soccer', 'montreal', 'MTL', ['CF Montreal', 'Montreal Impact']),
   team('alouettes', 'Montréal Alouettes', 'Alouettes', 'CFL', 'football', 'montreal', 'MTL', ['Montreal Alouettes']),
   team('victoire', 'Montréal Victoire', 'Victoire', 'PWHL', 'hockey', 'montreal', 'MTL', ['Montreal Victoire']),
+  // (the Laval Rocket row is above; it reads from HockeyTech too)
   team('laval-rocket', 'Laval Rocket', 'Rocket', 'AHL', 'hockey', 'montreal', 'LAV'),
   team('carabins-football', 'Montréal Carabins Football', 'Carabins FB', 'U Sports football', 'football', 'montreal', 'UdeM', ['Carabins']),
   // Minor-league and independent baseball through MLB's own feed (Kylie's OK, Oct 8; docs/no-feed-teams-proposal.md).
@@ -177,6 +178,15 @@ const LIST: Team[] = [
   team('dallas-renegades', 'Dallas Renegades', 'Renegades', 'UFL', 'football', 'dallas-fort-worth', 'DAL', ['Arlington Renegades']),
   team('texas-legends', 'Texas Legends', 'Legends', 'NBA G League', 'basketball', 'dallas-fort-worth', 'TEX'),
   team('windy-city-bulls', 'Windy City Bulls', 'Windy City Bulls', 'NBA G League', 'basketball', 'chicago', 'WCB'),
+  // HockeyTech leagues (AHL, PWHL, WHL), read from the feed behind the league sites (Kylie, Oct 8; docs/no-feed-teams-proposal.md).
+  team('chicago-wolves', 'Chicago Wolves', 'Wolves', 'AHL', 'hockey', 'chicago', 'CHI'),
+  team('san-jose-barracuda', 'San Jose Barracuda', 'Barracuda', 'AHL', 'hockey', 'bay-area', 'SJ'),
+  team('san-diego-gulls', 'San Diego Gulls', 'Gulls', 'AHL', 'hockey', 'san-diego', 'SD'),
+  team('seattle-torrent', 'Seattle Torrent', 'Torrent', 'PWHL', 'hockey', 'seattle', 'SEA'),
+  team('ny-sirens', 'New York Sirens', 'Sirens', 'PWHL', 'hockey', 'new-york', 'NY'),
+  team('pwhl-san-jose', 'PWHL San Jose', 'PWHL San Jose', 'PWHL', 'hockey', 'bay-area', 'SJ'),
+  team('seattle-thunderbirds', 'Seattle Thunderbirds', 'Thunderbirds', 'WHL', 'hockey', 'seattle', 'SEA'),
+  team('everett-silvertips', 'Everett Silvertips', 'Silvertips', 'WHL', 'hockey', 'seattle', 'EVT'),
   team('ksu-wbb', "Kennesaw State Owls Women's Basketball", 'Kennesaw State WBB', "College women's basketball", 'basketball', 'atlanta', 'KSU', ['Kennesaw State']),
   team('blue-jays', 'Toronto Blue Jays', 'Blue Jays', 'MLB', 'baseball'),
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball'),

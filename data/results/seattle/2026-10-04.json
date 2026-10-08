@@ -20,7 +20,7 @@
         "score": 1
       },
       "attendance": 17151,
-      "capturedAt": "2026-10-06T20:43:12.167Z",
+      "capturedAt": "2026-10-08T03:34:43.690Z",
       "duration": {
         "minutes": 152,
         "kind": "estimated"
@@ -44,12 +44,31 @@
         "score": 23
       },
       "attendance": 68691,
-      "capturedAt": "2026-10-06T20:43:12.167Z",
+      "capturedAt": "2026-10-08T03:34:43.690Z",
       "duration": {
         "minutes": 198,
         "kind": "estimated"
       },
       "startedAt": "13:25"
+    },
+    {
+      "eventId": "2026-10-04-ht-everett-silvertips-1023136",
+      "metroId": "seattle",
+      "date": "2026-10-04",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "angel-of-the-winds-arena",
+      "homeTeamId": "everett-silvertips",
+      "home": {
+        "name": "Silvertips",
+        "score": 1
+      },
+      "away": {
+        "name": "Chiefs",
+        "score": 3
+      },
+      "attendance": 4583,
+      "capturedAt": "2026-10-08T03:34:43.691Z"
     }
   ]
 }

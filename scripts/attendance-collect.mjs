@@ -338,6 +338,61 @@ async function collectMlb(team) {
   return rows;
 }
 
+/**
+ * HockeyTech clubs (AHL, PWHL, WHL): the feed's own schedule rows carry the announced crowd and the
+ * final score, season by season (src/data/sources/hockeytechSource.ts has the keys and team ids).
+ */
+const HOCKEYTECH_TEAMS = [
+  { teamId: 'chicago-wolves', metroId: 'chicago', client: 'ahl', htId: '330', venueId: 'allstate-arena' },
+  { teamId: 'laval-rocket', metroId: 'montreal', client: 'ahl', htId: '415', venueId: 'place-bell' },
+  { teamId: 'san-jose-barracuda', metroId: 'bay-area', client: 'ahl', htId: '405', venueId: 'sap-center' },
+  { teamId: 'san-diego-gulls', metroId: 'san-diego', client: 'ahl', htId: '404', venueId: 'pechanga-arena' },
+  { teamId: 'victoire', metroId: 'montreal', client: 'pwhl', htId: '3', venueId: 'place-bell' },
+  { teamId: 'seattle-torrent', metroId: 'seattle', client: 'pwhl', htId: '8', venueId: 'climate-pledge-arena' },
+  { teamId: 'ny-sirens', metroId: 'new-york', client: 'pwhl', htId: '4', venueId: 'prudential-center' },
+  { teamId: 'pwhl-san-jose', metroId: 'bay-area', client: 'pwhl', htId: '13', venueId: 'sap-center' },
+  { teamId: 'seattle-thunderbirds', metroId: 'seattle', client: 'whl', htId: '214', venueId: 'accesso-showare-center' },
+  { teamId: 'everett-silvertips', metroId: 'seattle', client: 'whl', htId: '226', venueId: 'angel-of-the-winds-arena' },
+];
+const HT_VENUES = { 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena' };
+
+const HT_KEYS = { ahl: 'ccb91f29d6744675', pwhl: '446521baf8c38984', whl: '41b145a848f4bd67' };
+const htUrl = (client, params) => `https://lscluster.hockeytech.com/feed/?${new URLSearchParams({ feed: 'modulekit', key: HT_KEYS[client], client_code: client, fmt: 'json', lang: 'en', ...params })}`;
+async function seasonIdsOf(client, kind) {
+  const j = await getJson(htUrl(client, { view: 'seasons' }));
+  return j.SiteKit.Seasons.filter((s) => (kind === 'regular' ? /regular/i.test(s.season_name) : /playoff|cup/i.test(s.season_name)));
+}
+async function scheduleFor(client, seasonId, htId) {
+  const j = await getJson(htUrl(client, { view: 'schedule', season_id: seasonId, team_id: htId }));
+  return j.SiteKit.Schedule ?? [];
+}
+
+async function collectHockeytech(team) {
+  const rows = [];
+  const kinds = [['regular', false], ['playoffs', true]];
+  for (const [kind, postseason] of kinds) {
+    const seasons = (await seasonIdsOf(team.client, kind)).slice(0, 4);
+    for (const s of seasons) {
+      const games = await scheduleFor(team.client, s.season_id, team.htId);
+      const year = Number((s.season_name.match(/20\d\d/g) ?? []).at(-1));
+      let kept = 0;
+      for (const g of games) {
+        if (g.home_team !== team.htId || g.final !== '1') continue;
+        const att = Number(g.attendance);
+        if (!Number.isFinite(att) || att <= 0) continue;
+        const name = (g.venue_name ?? '').split('|')[0].trim().toLowerCase();
+        const venueId = !name || name === 'tbd' ? team.venueId : HT_VENUES[name] ?? (name.startsWith(team.venueId.split('-')[0]) ? team.venueId : null);
+        if (!venueId) continue;
+        const { date, time } = localParts(g.GameDateISO8601, team.metroId);
+        rows.push({ teamId: team.teamId, season: year, date, start: g.time_tbd === '1' ? null : time, opponent: g.visiting_team_nickname ?? g.visiting_team_name ?? '', venueId, attendance: att, kind: 'announced', ...(postseason ? { postseason: true, round: s.season_name } : {}), sourceId: 'hockeytech' });
+        kept++;
+      }
+      console.log(`  ${team.teamId} ${s.season_name}: ${kept} home games with a count`);
+    }
+  }
+  return rows;
+}
+
 /** Pro leagues with a preseason played in the home building; it gets its own bucket. */
 const HAS_PRESEASON = /^(basketball\/nba|basketball\/wnba|hockey\/nhl|football\/nfl)$/;
 
@@ -406,14 +461,14 @@ async function collectEspn(team) {
 
 const only = process.argv[2];
 let failures = 0;
-for (const team of [...MLB_TEAMS, ...ESPN_TEAMS]) {
+for (const team of [...MLB_TEAMS, ...ESPN_TEAMS, ...HOCKEYTECH_TEAMS]) {
   if (only && team.teamId !== only) continue;
   // Each team's file lives in its city's folder (docs/new-city-checklist.md).
   const METRO = team.metroId ?? DEFAULT_METRO;
   const dir = path.join(root, 'data', 'attendance', METRO);
   await mkdir(dir, { recursive: true });
   try {
-    const rows = 'mlbId' in team ? await collectMlb(team) : await collectEspn(team);
+    const rows = 'mlbId' in team ? await collectMlb(team) : 'htId' in team ? await collectHockeytech(team) : await collectEspn(team);
     rows.sort((a, b) => a.date.localeCompare(b.date) || (a.start ?? '').localeCompare(b.start ?? ''));
     const file = path.join(dir, `${team.teamId}.json`);
     let previous = null;

@@ -21,7 +21,7 @@
       },
       "attendance": 9574,
       "note": "OT",
-      "capturedAt": "2026-10-08T02:49:22.905Z",
+      "capturedAt": "2026-10-08T03:34:46.841Z",
       "duration": {
         "minutes": 146,
         "kind": "estimated"
@@ -44,7 +44,8 @@
         "name": "Jax State",
         "score": 27
       },
-      "capturedAt": "2026-10-08T02:49:22.905Z",
+      "attendance": 10225,
+      "capturedAt": "2026-10-08T03:34:46.841Z",
       "duration": {
         "minutes": 217,
         "kind": "estimated"
@@ -67,7 +68,7 @@
         "name": "Dodgers",
         "score": 4
       },
-      "capturedAt": "2026-10-08T02:49:23.194Z",
+      "capturedAt": "2026-10-08T03:34:47.187Z",
       "attendance": 41173,
       "duration": {
         "minutes": 174,

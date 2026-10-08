@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "teamId": "seattle-torrent",
+  "collectedOn": "2026-10-08",
+  "games": [
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2025-11-28",
+      "start": "13:00",
+      "opponent": "Frost",
+      "venueId": "climate-pledge-arena",
+      "attendance": 16014,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2025-12-03",
+      "start": "19:00",
+      "opponent": "Sirens",
+      "venueId": "climate-pledge-arena",
+      "attendance": 8622,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2025-12-17",
+      "start": "19:00",
+      "opponent": "Charge",
+      "venueId": "climate-pledge-arena",
+      "attendance": 9389,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2025-12-21",
+      "start": "14:00",
+      "opponent": "Fleet",
+      "venueId": "climate-pledge-arena",
+      "attendance": 11023,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2025-12-23",
+      "start": "19:00",
+      "opponent": "Victoire",
+      "venueId": "climate-pledge-arena",
+      "attendance": 10276,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2026-01-18",
+      "start": "19:00",
+      "opponent": "Fleet",
+      "venueId": "climate-pledge-arena",
+      "attendance": 12774,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2026-01-20",
+      "start": "19:00",
+      "opponent": "Sceptres",
+      "venueId": "climate-pledge-arena",
+      "attendance": 10160,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2026-02-27",
+      "start": "19:00",
+      "opponent": "Sceptres",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17335,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2026-03-11",
+      "start": "19:00",
+      "opponent": "Fleet",
+      "venueId": "climate-pledge-arena",
+      "attendance": 13350,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2026-03-25",
+      "start": "17:00",
+      "opponent": "Sirens",
+      "venueId": "allstate-arena",
+      "attendance": 10006,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2026-03-29",
+      "start": "16:00",
+      "opponent": "Charge",
+      "venueId": "climate-pledge-arena",
+      "attendance": 16586,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2026-04-18",
+      "start": "14:00",
+      "opponent": "Goldeneyes",
+      "venueId": "climate-pledge-arena",
+      "attendance": 12719,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2026-04-22",
+      "start": "19:00",
+      "opponent": "Frost",
+      "venueId": "climate-pledge-arena",
+      "attendance": 11982,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "seattle-torrent",
+      "season": 2025,
+      "date": "2026-04-25",
+      "start": "19:00",
+      "opponent": "Victoire",
+      "venueId": "climate-pledge-arena",
+      "attendance": 17151,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    }
+  ]
+}

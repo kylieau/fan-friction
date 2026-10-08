@@ -7,6 +7,7 @@ import type { CrowdEvent, LocalDate } from './types';
 import { archivedReads, type ArchivedEventRead } from './forecastCapture';
 import { withExpectedDraws } from './expectedDraw';
 import { loadEspnSchedule } from './sources/espnSource';
+import { loadHockeytechSchedule } from './sources/hockeytechSource';
 import { dropTicketmasterGamesCoveredByFeeds } from './sources/types';
 import { loadMlbSchedule } from './sources/mlbSource';
 import { seedEvents } from './sources/seedSource';
@@ -96,21 +97,23 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
   if (!seedCatalog) throw new Error('The seeded catalog is missing. Nothing was saved.');
 
   const key = ticketmasterKey();
-  const [mlb, espn, seed, tm] = await Promise.all([
+  const [mlb, espn, ht, seed, tm] = await Promise.all([
     readSource('MLB schedule', () => loadMlbSchedule(metroId, through)),
     readSource('ESPN schedules', () => loadEspnSchedule(metroId)),
+    readSource('HockeyTech schedules', () => loadHockeytechSchedule(metroId)),
     readSource('seeded catalog', () => seedCatalog(metroId)),
     key ? readSource('Ticketmaster listings', async () => (await loadTicketmasterEvents(metroId, key, now)).events) : Promise.resolve([] as CrowdEvent[]),
   ]);
 
   const mlbWindow = inWindow(mlb, capturedOn, through);
   const espnWindow = inWindow(espn, capturedOn, through);
+  const htWindow = inWindow(ht, capturedOn, through);
   const seedWindow = inWindow(seed, capturedOn, through);
   const tmWindow = inWindow(tm, capturedOn, through);
   // Each game carries the expected draw the app shows that day (Oct 7, 2026): the saved read
   // sizes events the way the live read does, and the estimate is on file before the game, to
   // be scored against the announced crowd (scripts/expected-draw-check.mjs, "Saved ahead").
-  const events = withExpectedDraws(dropTicketmasterGamesCoveredByFeeds([...mlbWindow, ...espnWindow, ...seedWindow, ...tmWindow]).sort(byListing));
+  const events = withExpectedDraws(dropTicketmasterGamesCoveredByFeeds([...mlbWindow, ...espnWindow, ...htWindow, ...seedWindow, ...tmWindow]).sort(byListing));
 
   return {
     schema: 1,
@@ -125,6 +128,7 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
     sources: [
       { id: 'mlb', name: 'MLB schedule', inWindow: mlbWindow.length },
       { id: 'espn', name: 'ESPN schedules', inWindow: espnWindow.length },
+      { id: 'hockeytech', name: 'HockeyTech schedules', inWindow: htWindow.length },
       { id: 'seed', name: seedEvents.name, inWindow: seedWindow.length },
       ...(key ? [{ id: 'ticketmaster', name: 'Ticketmaster listings', inWindow: tmWindow.length }] : []),
     ],

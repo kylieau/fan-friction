@@ -5,6 +5,7 @@ import { areaMetros, type Metro } from '../config/metros';
 import { matchingNames } from './matchDate';
 import { catalogEvents } from './sources/catalogSource';
 import { espnMetroIds } from './sources/espnSource';
+import { hockeytechMetroIds } from './sources/hockeytechSource';
 import { mlbMetroIds } from './sources/mlbSource';
 import { METRO_FEELS, seedEvents, seedMetroIds, seedRatings } from './sources/seedSource';
 import type { EventSource, RatingSource } from './sources/types';
@@ -152,7 +153,7 @@ export function feelsLikeF(metroId: string, date: LocalDate): number | undefined
  * log is not included. Los Angeles is first. Today that is the only one.
  */
 export function metrosWithEvents(): Metro[] {
-  const ids = new Set<string>([...seedMetroIds(), ...mlbMetroIds(), ...espnMetroIds()]);
+  const ids = new Set<string>([...seedMetroIds(), ...mlbMetroIds(), ...espnMetroIds(), ...hockeytechMetroIds()]);
   return areaMetros().filter((metro) => ids.has(metro.id));
 }
 

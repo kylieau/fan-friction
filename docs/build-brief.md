@@ -76,7 +76,7 @@ Kylie wants this free until paying is unavoidable. Each of these is a milestone 
 | Weather for the Conditions reason (Oct 5) | Open-Meteo (forecast 16 days, archive to 1940) is free for non-commercial use only. A public launch means its paid API plan or another source (NWS is free but US-only, 7 days) | ~€29/month at launch (Open-Meteo) |
 | If free data runs out | Paid sports or event data (e.g. PredictHQ, SportsDataIO) or higher Ticketmaster limits | Varies |
 
-**Not a cost, but a blocker (Kylie, Oct 8, 2026):** the ESPN site API behind every non-MLB game listing is unofficial and sits under Disney's terms of use, which bar automated access without written permission. Acceptable for a personal app; a public launch needs a licensed replacement or permission for every league it carries (`docs/no-feed-teams-answer.md`, finding 2).
+**Not a cost, but a blocker (Kylie, Oct 8, 2026):** the ESPN site API behind every non-MLB game listing is unofficial and sits under Disney's terms of use, which bar automated access without written permission. Acceptable for a personal app; a public launch needs a licensed replacement or permission for every league it carries (`docs/no-feed-teams-answer.md`, finding 2). **The same holds for the HockeyTech feed** (AHL, ECHL, PWHL, WHL), read with the leagues' own site key and without asking (Kylie, Oct 8); the permission email is drafted in `docs/hockeytech-permission-email.md` for that day.
 
 ## Open questions (settle while building, ask Kylie when you reach them)
 - Where schedules for other sports come from. NHL has a free public feed; NFL, NBA, college and others probably come through an unofficial scoreboard feed. Pick when building.
