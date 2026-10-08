@@ -143,8 +143,10 @@ for (const [from, to] of moves) {
   execFileSync('mkdir', ['-p', path.join(root, 'docs', path.posix.dirname(to))]);
   git('mv', `docs/${from}`, `docs/${to}`);
 }
-for (const dir of new Set([...moves.keys()].map((f) => path.posix.dirname(f)).filter((d) => d !== '.'))) {
-  try { execFileSync('rmdir', [path.join(root, 'docs', dir)], { stdio: 'ignore' }); } catch { /* not empty, or already gone */ }
+for (const start of new Set([...moves.keys()].map((f) => path.posix.dirname(f)).filter((d) => d !== '.'))) {
+  for (let dir = start; dir !== '.'; dir = path.posix.dirname(dir)) { // remove emptied folders, climbing up
+    try { execFileSync('rmdir', [path.join(root, 'docs', dir)], { stdio: 'ignore' }); } catch { break; }
+  }
 }
 if (hook) git('add', '--', ...new Set([...plan.map((p) => newPathOf(p.f)), ...[...moves.values()].map((m) => `docs/${m}`)]));
 console.log(hook ? 'docs-tidy: archived finished docs and fixed their links.' : '\nDone. Review with `git status`, then commit.');
