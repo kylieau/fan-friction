@@ -29,7 +29,7 @@ Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which 
 - **Reconcile small source gaps with judgment** (Kylie, Oct 3, 2026). When two sources differ slightly (8:00 vs. 8:15) or measure different things (doors vs. stage time), pick the sensible reading, record which kind it is, and move on. Leave a field blank only when there is no source or the conflict really changes the answer.
 - **Ratings are evidence, never a target** (handoff, Oct 6–7). Never report a gap from anyone's hand ratings as progress, and never tune a constant to close one. Attendance on held-out dates is the only accuracy target.
 - **UX notes:** sort each note as structural (what a screen shows, flow, tabs, naming, button placement; raise before the next step that reuses those pieces) or polish (colors, spacing, wording; batch it later). The running list is `docs/ux-notes.md`. At the start of a resumed session, ask Kylie for new UX notes before starting new work.
-- **Private material stays out of the repo.** Tester names, emails, attended lists and SQL live in the git-ignored `private/` folder. Public event facts can go in `docs/`.
+- **Private material stays out of the repo.** Tester names, emails, attended lists and SQL live in the git-ignored `private/` folder. Public event facts can go in `docs/`. Refer to "the tester" everywhere else: no name in a file, a file path, a folder name or a commit message. (A first name once slipped into `BACKLOG.md` and `MEMORY_HANDOFF.md` and is in git history; see BACKLOG.)
 
 ## Working in this repo
 - Run: `npm run dev` (phone-sized web app on http://localhost:3001; Vite may pick 3002 if busy). Don't `pkill -f vite`; use `kill $(lsof -ti:PORT)`.
@@ -40,7 +40,7 @@ Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which 
   - `src/map/` MapLibre map, pins, chips
   - `src/lib/` small helpers (dates, titles, sheet drag, view)
   - `src/config/` app name, metros, score labels, theme
-  - `docs/` product decisions and what's still in play; `docs/research-queue/` prompts awaiting answers; `docs/gap-reviews/` independent reviews of the app (saved with author, date and time; see its README); `docs/archive/` finished research (see `docs/README.md`); `design/wireframes/` older mockups
+  - `docs/` product decisions and what's still in play; `docs/research-queue/` prompts awaiting answers; `docs/gap-reviews/` and `docs/tester-readiness-reviews/` independent reviews of the app and of tester readiness (saved with author, date and time; see their READMEs; none is a decision); `docs/archive/` finished research (see `docs/README.md`); `design/wireframes/` older mockups
   - `data/schedule-archive/` nightly Los Angeles listings (not shown in the app)
   - `MEMORY_HANDOFF.md` and `BACKLOG.md` in the root: current state and deferred work
 

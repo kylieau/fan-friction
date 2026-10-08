@@ -2,7 +2,7 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`. The build order is `docs/big-picture-plan-oct6.md`.
 
-_Last synced: Oct 8, 2026, Claude Code, end of the sixth session (Oct 7–8). Everything below is committed and pushed to `main`; the working tree is clean except an untracked `docs/tester-readiness-reviews/` folder from another session, left alone. **Kylie's standing instruction: her usage is limited; commit and push after every step so the thread is never lost.**_
+_Last synced: Oct 8, 2026, Claude Code, end of the sixth session (Oct 7–8). Everything below is committed and pushed to `main`; the working tree is clean. **Kylie's standing instruction: her usage is limited; commit and push after every step so the thread is never lost.**_
 
 ## Current state
 **Nine covered cities** (`COVERED_METRO_IDS` in `src/config/metros.ts`: LA, San Diego, Seattle, New York, Atlanta, Bay Area, Chicago, Dallas–Fort Worth, Montreal). Five were built this session via `docs/new-city-checklist.md` (each run and its lessons are recorded there), and Kylie confirmed every city's build choices (`docs/expected-draw-decisions-oct7.md`, one heading per city). The tester's Canadiens night (May 25, 2026) is seeded and reads 1.0 Chill with 20,962 announced. Kylie's city list is done; the next city is hers to name. Research answers are saved verbatim in `docs/` next to the prompt's name; a pre-commit hook moves closed ones to `docs/archive/` (index: `docs/README.md`), which is why the proposals now sit under `docs/archive/proposals/`.
@@ -20,6 +20,8 @@ _Last synced: Oct 8, 2026, Claude Code, end of the sixth session (Oct 7–8). Ev
 
 **Nightly job** (`schedule-archive.yml`): archive → calibrate → catalog write → commit, about four minutes now. One run on Oct 8 failed on a transient "fetch failed" from ESPN on the runner and passed on re-run; `gh workflow run schedule-archive.yml --ref main` triggers it.
 
+**Reviews (saved Oct 7, 2026 PT; all open, none approved):** `docs/gap-reviews/` holds Codex's gap review and GrokBot/Cursor's (58 issues, Kylie's notes K1–K4, six mockups with sources in `assets/.../mockups/src/`); `docs/tester-readiness-reviews/` holds Codex's and GrokBot's reviews of the seven tester tasks. Each opens with an author / saved / status block, and each folder has a README index. Closing one: add a `Status: closed, <where it went>, <date>` line and the pre-commit hook archives it with its images (`npm run docs:tidy` previews). They are the reviewers' claims, not decisions; Kylie picks what to act on, and Claude proposes before building. **Privacy:** the tester's first name was found in this file and `BACKLOG.md` (and six commits on `origin/main`); it is scrubbed from current files, and the history question is Kylie's call (BACKLOG, "Waiting on Kylie"). Refer to "the tester"; names stay out of files, paths and commit messages.
+
 ## Changes made (this session, all pushed)
 Expected draw v1, round 2 and the playoff rule; the fullness word and bar; the ⓘ card's opening; show sizing; team schedules (migration 0010); five cities end to end; minor-league baseball, the ESPN extension, the HockeyTech source and the Ticketmaster sports sweep (`mlbSource.ts`, `espnSource.ts`, `hockeytechSource.ts`, `ticketmasterSource.ts`, `sources/types.ts`, `results.ts`, `catalogSource.ts`, `scheduleArchive.ts`, `teamSchedule.ts`, `catalog-write.mjs`, `attendance-collect.mjs`, `teams.ts`, `venues.ts`, `listings2026.ts`, `past2026.ts`, `data/attendance/**`); `scripts/{distance-check,postseason-check,promo-history-fold}.mjs`; docs: `expected-draw-decisions-oct7.md`, ten research answers saved verbatim, the no-feed proposal and email draft, `new-city-checklist.md`, `data-sources.md`, `build-brief.md`, `BACKLOG.md`. The nightly job's "Save the schedule" commits and another session's docs tidy are not ours.
 
@@ -33,10 +35,11 @@ Expected draw v1, round 2 and the playoff rule; the fullness word and bar; the �
 
 ## Next steps
 1. **Run `node scripts/venue-access.mjs montreal`** and commit the TSV and index: Open-Elevation answered 429 all day on Oct 8. Everything else in Montreal is live.
-2. **Nothing is waiting on Kylie.** Her next city, if any, is hers to name.
-3. **Tester interview about Oct 13:** a day before, a data-side check that Becca's LA, San Diego, New York and Montreal nights show reads.
+2. **Waiting on Kylie:** which review findings to act on, and whether to rewrite git history over the tester's first name (both in BACKLOG, "Waiting on Kylie"). Her next city, if any, is hers to name.
+3. **Tester interview about Oct 13:** a day before, a data-side check that the tester's LA, San Diego, New York and Montreal nights show reads.
 4. **Re-check the CFL slug** once the Alouettes' schedule fills; the Dogs and Boomers if MLB's partner-league feed starts carrying them.
 5. Dated re-checks in BACKLOG: Nov 3 (Bay Area transit vote), each spring (Montreal's open-site dates), each September (State Fair, Red River), each January (Stock Show), early 2027 (Martin Stadium, Toyota Stadium, Dallas Memorial Arena).
+6. **Before the Oct 13 tester interview:** walk through the GrokBot tester-readiness review's pre-interview checks with Kylie (`docs/tester-readiness-reviews/`), and ask which review findings she wants proposed as fixes.
 
 **Rules to carry (Kylie, Oct 6–8):** never report a gap from anyone's ratings as progress, never tune a constant to close one; attendance on held-out dates is the only accuracy target. Keep sessions lean.
 

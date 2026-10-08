@@ -10,7 +10,7 @@
 // around it is fine), e.g. `Status: closed, folded into product-decisions.md, Oct 8, 2026`. Prompt and
 // answer files pair by name (x-prompt.md, x-research-prompt.md, x-answer.md, x-research-answer.md). When
 // the answer is closed, the pair moves together to docs/archive/research/. Any other closed doc moves to
-// docs/archive/proposals/. Only docs/*.md, docs/research-queue/*.md and docs/gap-reviews/*.md are scanned. A closed gap review moves to docs/archive/gap-reviews/ with its assets.
+// docs/archive/proposals/. Only docs/*.md, docs/research-queue/*.md, docs/gap-reviews/*.md and docs/tester-readiness-reviews/*.md are scanned. A closed review moves to docs/archive/<its folder>/ with its assets.
 
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, writeFileSync, statSync, readdirSync } from 'node:fs';
@@ -31,7 +31,7 @@ const docsSet = new Set(docsFiles);
 
 // ---- decide the moves: old docs-relative path -> new docs-relative path ----------------------------
 const CLOSED = /^\s*(?:<!--\s*)?status:\s*closed\b/im;
-const KEEP = new Set(['README.md', 'gap-reviews/README.md']);
+const KEEP = new Set(['README.md', 'gap-reviews/README.md', 'tester-readiness-reviews/README.md']);
 const moves = new Map();
 
 if (manifestPath) {
@@ -43,15 +43,17 @@ if (manifestPath) {
     for (const f of matches) moves.set(f, isDir ? posix(path.join(to, f.slice(from.replace(/\/?$/, '/').length))) : to);
   }
 } else {
-  const scanned = docsFiles.filter((f) => /^(research-queue\/|gap-reviews\/)?[^/]+\.md$/.test(f) && !KEEP.has(f));
+  const scanned = docsFiles.filter((f) => /^(research-queue\/|gap-reviews\/|tester-readiness-reviews\/)?[^/]+\.md$/.test(f) && !KEEP.has(f));
   const pairKey = (f) => path.basename(f, '.md').replace(/(-research)?-(prompt|answer)$/, '');
   const kindOf = (f) => (/-answer\.md$/.test(f) ? 'answer' : /-prompt\.md$/.test(f) ? 'prompt' : null);
   const closed = scanned.filter((f) => CLOSED.test(readFileSync(path.join(root, 'docs', f), 'utf8')));
   for (const f of closed) {
-    if (f.startsWith('gap-reviews/')) { // a closed gap review takes its screenshots with it
-      moves.set(f, `archive/gap-reviews/${path.basename(f)}`);
-      const key = path.basename(f, '.md').replace(/^gap-review-/, '');
-      for (const a of docsFiles.filter((x) => x.startsWith(`gap-reviews/assets/${key}/`))) moves.set(a, `archive/gap-reviews/${a.slice('gap-reviews/'.length)}`);
+    const review = f.match(/^(gap-reviews|tester-readiness-reviews)\//);
+    if (review) { // a closed review takes its screenshots with it
+      const folder = review[1];
+      moves.set(f, `archive/${folder}/${path.basename(f)}`);
+      const key = path.basename(f, '.md').replace(/^(gap-review|tester-readiness-review)-/, '');
+      for (const a of docsFiles.filter((x) => x.startsWith(`${folder}/assets/${key}/`))) moves.set(a, `archive/${folder}/${a.slice(folder.length + 1)}`);
     } else if (kindOf(f)) {
       const key = pairKey(f);
       for (const g of scanned.filter((x) => kindOf(x) && pairKey(x) === key)) moves.set(g, `archive/research/${path.basename(g)}`);
