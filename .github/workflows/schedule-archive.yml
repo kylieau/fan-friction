@@ -1,5 +1,7 @@
 # Saves the Los Angeles schedule for the coming two weeks.
-# Runs at 12:15am Pacific, year-round. One run a day.
+# Runs at 08:23 UTC: 1:23am Pacific in summer, 12:23am in winter. One run a day.
+# (Set in UTC on purpose: with a `timezone:` line the runs started about seven hours
+# late, 7-9am Pacific, Oct 5-9. The odd minute avoids the busy top of the hour.)
 # Free on this public repo: no new accounts or keys.
 # The job commits straight to main so the night is saved without waiting on a
 # review. If main rejects the push, it opens a pull request instead.
@@ -9,8 +11,7 @@ name: Nightly schedule archive
 
 on:
   schedule:
-    - cron: '15 0 * * *'
-      timezone: America/Los_Angeles
+    - cron: '23 8 * * *'
   workflow_dispatch:
 
 permissions:

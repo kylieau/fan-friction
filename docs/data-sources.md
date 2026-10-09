@@ -22,7 +22,7 @@ Kylie, Oct 6, 2026: one file that says where each kind of data is pulled from, s
 
 | Folder | What | Written by | Read through |
 |---|---|---|---|
-| `data/schedule-archive/la/` | one snapshot a night of the next 14 days' listings | `scripts/archive-schedule.mjs` (GitHub Actions, 12:15am Pacific) | `scheduleArchiveIndex.ts`, `startForecastIndex.ts` |
+| `data/schedule-archive/la/` | one snapshot a night of the next 14 days' listings | `scripts/archive-schedule.mjs` (GitHub Actions, 08:23 UTC) | `scheduleArchiveIndex.ts`, `startForecastIndex.ts` |
 | `data/weather/la/` | hourly rows and daily ranges | `scripts/weather-fetch.mjs` (same run) | `weatherIndex.ts` |
 | `data/results/la/` | final scores and announced crowds, one file per date | `scripts/results-fetch.mjs` (same run) | `resultsIndex.ts` → `src/data/results.ts` |
 | `data/attendance/la/` | past seasons' announced crowds, one file per team | `scripts/attendance-collect.mjs` (by hand, now and then) | `scripts/attendance-calibrate.mjs` → `expectedDrawIndex.ts` → `src/data/expectedDraw.ts` |

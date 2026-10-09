@@ -47,7 +47,7 @@ A night logged later is meant to be stamped from the saved schedule for that dat
 
 `npm run archive-schedule` writes today's listing. It needs the network. If a live feed cannot be read, it writes nothing.
 
-GitHub runs that command once a day, at **12:15am Pacific**, and commits to `main`. (This used to drift between 12:15am and 1:15am because the old clock was set in UTC. It is now 12:15am year-round.) If `main` will not take the commit, the job opens a pull request instead, and that request needs a merge or the night stays missing.
+GitHub runs that command once a day, at **08:23 UTC** (1:23am Pacific in summer, 12:23am in winter), and commits to `main`. (From Oct 4 to Oct 9 the schedule carried a Los Angeles `timezone:` line, and every run started about seven hours late, 7–9am Pacific. It is back in plain UTC, Oct 9, with an odd minute to miss GitHub's busy top of the hour.) If `main` will not take the commit, the job opens a pull request instead, and that request needs a merge or the night stays missing.
 
 A commit that only adds schedule files does not redeploy the website. A commit that updates the forecast list the app reads does build the site. That is still the free Vercel plan. One build a night is inside the free cap of 100 a day.
 
@@ -56,7 +56,7 @@ No new key, no credit card, no Ticketmaster.
 ### Limits of the free schedule
 
 - The job runs once a day. GitHub's closest allowed schedule is every 5 minutes. This does not use that.
-- The time is Pacific. On the morning the clocks spring forward, a 2:30am job would skip ahead. This job runs at 12:15am, so that skip does not apply.
+- The time is UTC, so Pacific drifts by an hour when the clocks change. Either way the run lands after midnight Pacific, so the day's file keeps the right date.
 - A run can start late. One late night does not invent a number. The next night's file is a new day.
 - If GitHub is very busy, it can drop a scheduled run. The missed night has no new file.
 - The schedule runs only from `main`, after this is merged. It does not run from a pull request.
