@@ -1,6 +1,6 @@
 import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
-import { DEFAULT_METRO, METROS } from '../config/metros';
+import { DEFAULT_METRO } from '../config/metros';
 import {
   cityWeather,
   cityDayRange,
@@ -9,16 +9,12 @@ import {
   rangeSpoken,
   weatherGlyph,
   getCityDate,
-  getPersonalLog,
   getUpcoming,
-  nextSavedPlan,
-  subscribePersonalLog,
   todayIn,
   VENUES,
   venueNameOn,
   type CityDate,
   type CrowdEvent,
-  type Plan,
 } from '../data';
 import { BaseMap, MapContext } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
@@ -30,7 +26,7 @@ import { DateScore } from '../components/DateScore';
 import { ArrowRight, ChevronLeft, ChevronRight, RecenterIcon } from '../components/Icons';
 import { dayWordFor, tonightWord } from '../lib/dayWord';
 import { SearchSheet } from '../components/SearchSheet';
-import { listTitle, mapTitle } from '../lib/eventTitle';
+import { listTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
 import { eventColumns, type EventColumns } from '../lib/eventColumns';
@@ -61,8 +57,6 @@ export function MapScreen() {
   }
   const memory = restored.current;
   const { metro, date, today, isToday } = useView();
-  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
-  const nextPlan = nextSavedPlan(log);
   useEffect(() => {
     clearOpenedFromMap();
   }, []);
@@ -308,7 +302,7 @@ export function MapScreen() {
             </div>
           )}
         </div>
-        {nextPlan && <SavedDateCard plan={nextPlan} />}
+        {/* The next-saved-night card (Oct 5) left the map on Oct 9 (Kylie): Home's Your next event and You's Coming up strip carry it. */}
       </header>
 
       <div className="map-controls">
@@ -485,42 +479,6 @@ function RememberMap({
   return null;
 }
 
-/** One quiet card for the soonest saved date still ahead, in any city. */
-function SavedDateCard({ plan }: { plan: Plan }) {
-  const [dateEvents, setDateEvents] = useState<CrowdEvent[] | null>(null);
-  useEffect(() => {
-    let current = true;
-    getCityDate(plan.metroId, plan.date).then((day) => {
-      if (current) setDateEvents(day.events);
-    });
-    return () => {
-      current = false;
-    };
-  }, [plan.metroId, plan.date]);
-
-  const event = dateEvents?.find((item) => item.id === plan.eventId);
-  const title = event && dateEvents ? mapTitle(event, dateEvents) : plan.title;
-  const city = METROS[plan.metroId]?.name;
-  const place = [shortLocalDate(plan.date), city].filter(Boolean).join(' · ');
-  const body = (
-    <>
-      <span className="saved-date-kicker">Next saved date</span>
-      <span className="saved-date-title">{title}</span>
-      {place && <span className="saved-date-meta">{place}</span>}
-    </>
-  );
-  if (!plan.eventId) return <div className="saved-date">{body}</div>;
-  return (
-    <Link
-      to={datePath(plan.date, plan.metroId, plan.eventId)}
-      state={{ fromMap: true }}
-      className="saved-date"
-      onClick={() => markOpenedFromMap()}
-    >
-      {body}
-    </Link>
-  );
-}
 
 
 /** Same venue name the event page uses. Every On-the-map row shows it. */
