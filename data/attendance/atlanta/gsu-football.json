@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "atlanta",
   "teamId": "gsu-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "gsu-football",
@@ -243,6 +243,39 @@
       "opponent": "Marshall",
       "venueId": "center-parc-stadium",
       "attendance": 12871,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "19:00",
+      "opponent": "NC A&T",
+      "venueId": "center-parc-stadium",
+      "attendance": 16703,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "14:00",
+      "opponent": "N Illinois",
+      "venueId": "center-parc-stadium",
+      "attendance": 16608,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gsu-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "15:30",
+      "opponent": "Old Dominion",
+      "venueId": "center-parc-stadium",
+      "attendance": 17854,
       "kind": "announced",
       "sourceId": "espn"
     }

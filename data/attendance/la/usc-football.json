@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "usc-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "usc-football",
@@ -79,6 +79,19 @@
       "venueId": "coliseum",
       "attendance": 72613,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2022,
+      "date": "2023-01-02",
+      "start": "10:00",
+      "opponent": "Tulane",
+      "venueId": "att-stadium",
+      "attendance": 55329,
+      "kind": "announced",
+      "postseason": true,
+      "round": "Goodyear Cotton Bowl Classic",
       "sourceId": "espn"
     },
     {
@@ -300,6 +313,61 @@
       "opponent": "UCLA",
       "venueId": "coliseum",
       "attendance": 69614,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "12:00",
+      "opponent": "San José St",
+      "venueId": "coliseum",
+      "attendance": 51144,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "18:00",
+      "opponent": "Fresno St",
+      "venueId": "coliseum",
+      "attendance": 53014,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "20:00",
+      "opponent": "Louisiana",
+      "venueId": "coliseum",
+      "attendance": 60019,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "16:30",
+      "opponent": "Oregon",
+      "venueId": "coliseum",
+      "attendance": 75500,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usc-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "16:30",
+      "opponent": "Washington",
+      "venueId": "coliseum",
+      "attendance": 59136,
       "kind": "announced",
       "sourceId": "espn"
     }

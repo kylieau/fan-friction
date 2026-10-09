@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "dallas-fort-worth",
   "teamId": "smu-mbb",
-  "collectedOn": "2026-10-08",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "smu-mbb",
@@ -441,6 +441,17 @@
       "opponent": "Virginia",
       "venueId": "moody-coliseum",
       "attendance": 5189,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "smu-mbb",
+      "season": 2025,
+      "date": "2024-12-14",
+      "start": "15:00",
+      "opponent": "LSU",
+      "venueId": "comerica-center",
+      "attendance": 3479,
       "kind": "announced",
       "sourceId": "espn"
     },

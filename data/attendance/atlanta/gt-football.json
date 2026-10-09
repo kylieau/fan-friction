@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "atlanta",
   "teamId": "gt-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "gt-football",
@@ -276,6 +276,39 @@
       "opponent": "Georgia",
       "venueId": "mercedes-benz-stadium",
       "attendance": 73728,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": "20:00",
+      "opponent": "Colorado",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 52113,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "19:00",
+      "opponent": "Tennessee",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 52113,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gt-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "12:00",
+      "opponent": "Mercer",
+      "venueId": "bobby-dodd-stadium",
+      "attendance": 50852,
       "kind": "announced",
       "sourceId": "espn"
     }

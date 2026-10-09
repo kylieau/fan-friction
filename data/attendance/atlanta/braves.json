@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "atlanta",
   "teamId": "braves",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "braves",
@@ -8023,6 +8023,21 @@
       "postseason": true,
       "round": "NL Division Series",
       "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "braves",
+      "season": 2026,
+      "date": "2026-10-07",
+      "start": "18:00",
+      "opponent": "Dodgers",
+      "venueId": "truist-park",
+      "attendance": 41173,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 4,
       "promotions": [],
       "sourceId": "mlb"
     }

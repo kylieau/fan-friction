@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "nets",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "nets",
@@ -1918,6 +1918,18 @@
       "venueId": "barclays-center",
       "attendance": 17548,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nets",
+      "season": 2027,
+      "date": "2026-10-08",
+      "start": "19:30",
+      "opponent": "76ers",
+      "venueId": "barclays-center",
+      "attendance": 16785,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     }
   ]

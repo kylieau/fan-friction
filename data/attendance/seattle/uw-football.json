@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "seattle",
   "teamId": "uw-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "uw-football",
@@ -312,6 +312,50 @@
       "kind": "announced",
       "postseason": true,
       "round": "Bucked Up LA Bowl",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "13:00",
+      "opponent": "Washington St",
+      "venueId": "husky-stadium",
+      "attendance": 71056,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "12:30",
+      "opponent": "Utah State",
+      "venueId": "husky-stadium",
+      "attendance": 62152,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "16:15",
+      "opponent": "E Washington",
+      "venueId": "husky-stadium",
+      "attendance": 61619,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "20:00",
+      "opponent": "Minnesota",
+      "venueId": "husky-stadium",
+      "attendance": 63323,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

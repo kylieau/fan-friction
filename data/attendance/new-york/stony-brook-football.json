@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "stony-brook-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "stony-brook-football",
@@ -243,6 +243,28 @@
       "opponent": "Bryant",
       "venueId": "lavalle-stadium",
       "attendance": 3027,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": "19:00",
+      "opponent": "Lindenwood",
+      "venueId": "lavalle-stadium",
+      "attendance": 4383,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stony-brook-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "14:30",
+      "opponent": "Rhode Island",
+      "venueId": "lavalle-stadium",
+      "attendance": 5632,
       "kind": "announced",
       "sourceId": "espn"
     }

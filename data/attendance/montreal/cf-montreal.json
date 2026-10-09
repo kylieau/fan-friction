@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "montreal",
   "teamId": "cf-montreal",
-  "collectedOn": "2026-10-08",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "cf-montreal",
@@ -766,6 +766,94 @@
       "opponent": "Nashville",
       "venueId": "stade-saputo",
       "attendance": 16244,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cf-montreal",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "14:30",
+      "opponent": "Philadelphia",
+      "venueId": "stade-saputo",
+      "attendance": 14028,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cf-montreal",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "14:30",
+      "opponent": "Red Bull NY",
+      "venueId": "stade-saputo",
+      "attendance": 12568,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cf-montreal",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "14:30",
+      "opponent": "NYCFC",
+      "venueId": "stade-saputo",
+      "attendance": 14015,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cf-montreal",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "16:30",
+      "opponent": "Orlando",
+      "venueId": "stade-saputo",
+      "attendance": 14044,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cf-montreal",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "19:30",
+      "opponent": "Portland",
+      "venueId": "stade-saputo",
+      "attendance": 12251,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cf-montreal",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "16:30",
+      "opponent": "Chicago",
+      "venueId": "stade-saputo",
+      "attendance": 16018,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cf-montreal",
+      "season": 2026,
+      "date": "2026-07-16",
+      "start": "19:30",
+      "opponent": "Toronto",
+      "venueId": "stade-saputo",
+      "attendance": 17707,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cf-montreal",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "19:30",
+      "opponent": "New England",
+      "venueId": "stade-saputo",
+      "attendance": 15082,
       "kind": "announced",
       "sourceId": "espn"
     }

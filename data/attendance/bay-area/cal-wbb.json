@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "bay-area",
   "teamId": "cal-wbb",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "cal-wbb",
@@ -634,6 +634,17 @@
       "opponent": "Saint Mary's",
       "venueId": "haas-pavilion",
       "attendance": 4624,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cal-wbb",
+      "season": 2026,
+      "date": "2025-11-24",
+      "start": "17:00",
+      "opponent": "Grand Canyon",
+      "venueId": "comerica-center",
+      "attendance": 271,
       "kind": "announced",
       "sourceId": "espn"
     },

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "bay-area",
   "teamId": "stanford-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "stanford-football",
@@ -276,6 +276,39 @@
       "opponent": "Notre Dame",
       "venueId": "stanford-stadium",
       "attendance": 27456,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "16:00",
+      "opponent": "Hawai'i",
+      "venueId": "stanford-stadium",
+      "attendance": 23222,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "18:00",
+      "opponent": "Miami",
+      "venueId": "stanford-stadium",
+      "attendance": 37648,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "stanford-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "19:30",
+      "opponent": "Georgia Tech",
+      "venueId": "stanford-stadium",
+      "attendance": 23455,
       "kind": "announced",
       "sourceId": "espn"
     }

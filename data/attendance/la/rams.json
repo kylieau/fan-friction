@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "rams",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "rams",
@@ -447,6 +447,29 @@
       "opponent": "Cardinals",
       "venueId": "sofi-stadium",
       "attendance": 72004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "13:00",
+      "opponent": "Saints",
+      "venueId": "sofi-stadium",
+      "attendance": 71206,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "rams",
+      "season": 2026,
+      "date": "2026-09-21",
+      "start": "17:15",
+      "opponent": "Giants",
+      "venueId": "sofi-stadium",
+      "attendance": 73773,
       "kind": "announced",
       "sourceId": "espn"
     }

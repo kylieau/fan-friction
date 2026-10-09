@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "chicago",
   "teamId": "bears",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "bears",
@@ -463,6 +463,51 @@
       "kind": "announced",
       "postseason": true,
       "round": "NFC Divisional Playoffs",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bears",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "12:00",
+      "opponent": "Browns",
+      "venueId": "soldier-field",
+      "attendance": 43537,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bears",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "12:00",
+      "opponent": "Vikings",
+      "venueId": "soldier-field",
+      "attendance": 58914,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bears",
+      "season": 2026,
+      "date": "2026-09-28",
+      "start": "19:15",
+      "opponent": "Eagles",
+      "venueId": "soldier-field",
+      "attendance": 59588,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bears",
+      "season": 2026,
+      "date": "2026-10-04",
+      "start": "12:00",
+      "opponent": "Jets",
+      "venueId": "soldier-field",
+      "attendance": 59702,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

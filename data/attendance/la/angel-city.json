@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "angel-city",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "angel-city",
@@ -529,6 +529,127 @@
       "opponent": "Portland",
       "venueId": "bmo-stadium",
       "attendance": 19841,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-03-15",
+      "start": "16:00",
+      "opponent": "Chicago",
+      "venueId": "bmo-stadium",
+      "attendance": 16813,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-03-27",
+      "start": "19:00",
+      "opponent": "Houston",
+      "venueId": "bmo-stadium",
+      "attendance": 13896,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "15:00",
+      "opponent": "Portland",
+      "venueId": "bmo-stadium",
+      "attendance": 16636,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "17:45",
+      "opponent": "Utah",
+      "venueId": "bmo-stadium",
+      "attendance": 15183,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "17:45",
+      "opponent": "San Diego",
+      "venueId": "bmo-stadium",
+      "attendance": 17169,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "19:00",
+      "opponent": "Kansas City",
+      "venueId": "bmo-stadium",
+      "attendance": 11574,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "16:00",
+      "opponent": "North Carolina",
+      "venueId": "bmo-stadium",
+      "attendance": 16057,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "19:00",
+      "opponent": "Orlando",
+      "venueId": "bmo-stadium",
+      "attendance": 13900,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "18:00",
+      "opponent": "Louisville",
+      "venueId": "bmo-stadium",
+      "attendance": 15908,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "17:00",
+      "opponent": "Gotham",
+      "venueId": "bmo-stadium",
+      "attendance": 15860,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "angel-city",
+      "season": 2026,
+      "date": "2026-09-16",
+      "start": "19:00",
+      "opponent": "Seattle",
+      "venueId": "bmo-stadium",
+      "attendance": 13208,
       "kind": "announced",
       "sourceId": "espn"
     }

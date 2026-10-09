@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "ny-jets",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "ny-jets",
@@ -425,6 +425,41 @@
       "opponent": "Patriots",
       "venueId": "metlife-stadium",
       "attendance": 70918,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-jets",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "19:00",
+      "opponent": "Buccaneers",
+      "venueId": "metlife-stadium",
+      "attendance": 62082,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-jets",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "19:30",
+      "opponent": "Giants",
+      "venueId": "metlife-stadium",
+      "attendance": 70828,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-jets",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "13:00",
+      "opponent": "Packers",
+      "venueId": "metlife-stadium",
+      "attendance": 78674,
       "kind": "announced",
       "sourceId": "espn"
     }

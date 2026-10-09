@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "bay-area",
   "teamId": "bay-fc",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "bay-fc",
@@ -287,6 +287,138 @@
       "opponent": "North Carolina",
       "venueId": "paypal-park",
       "attendance": 13519,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-03-14",
+      "start": "15:30",
+      "opponent": "Denver",
+      "venueId": "paypal-park",
+      "attendance": 13110,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-03-21",
+      "start": "17:45",
+      "opponent": "Angel City",
+      "venueId": "paypal-park",
+      "attendance": 10299,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "14:00",
+      "opponent": "Washington",
+      "venueId": "paypal-park",
+      "attendance": 10237,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:00",
+      "opponent": "Utah",
+      "venueId": "paypal-park",
+      "attendance": 11689,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "19:00",
+      "opponent": "Boston",
+      "venueId": "paypal-park",
+      "attendance": 12533,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "14:00",
+      "opponent": "Chicago",
+      "venueId": "paypal-park",
+      "attendance": 12015,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "13:00",
+      "opponent": "North Carolina",
+      "venueId": "paypal-park",
+      "attendance": 12081,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "17:45",
+      "opponent": "Seattle",
+      "venueId": "paypal-park",
+      "attendance": 11439,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "15:00",
+      "opponent": "Houston",
+      "venueId": "paypal-park",
+      "attendance": 12548,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "19:00",
+      "opponent": "Kansas City",
+      "venueId": "paypal-park",
+      "attendance": 10569,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "16:00",
+      "opponent": "Louisville",
+      "venueId": "paypal-park",
+      "attendance": 11427,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bay-fc",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "14:00",
+      "opponent": "Orlando",
+      "venueId": "paypal-park",
+      "attendance": 11393,
       "kind": "announced",
       "sourceId": "espn"
     }

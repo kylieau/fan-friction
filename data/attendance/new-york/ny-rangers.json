@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "ny-rangers",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "ny-rangers",
@@ -2101,6 +2101,63 @@
       "date": "2026-04-08",
       "start": "19:00",
       "opponent": "Sabres",
+      "venueId": "madison-square-garden",
+      "attendance": 18006,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-rangers",
+      "season": 2027,
+      "date": "2026-09-22",
+      "start": "19:00",
+      "opponent": "Islanders",
+      "venueId": "madison-square-garden",
+      "attendance": 16603,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-rangers",
+      "season": 2027,
+      "date": "2026-09-24",
+      "start": "19:00",
+      "opponent": "Devils",
+      "venueId": "madison-square-garden",
+      "attendance": 16078,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-rangers",
+      "season": 2027,
+      "date": "2026-10-01",
+      "start": "19:00",
+      "opponent": "Lightning",
+      "venueId": "madison-square-garden",
+      "attendance": 18006,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-rangers",
+      "season": 2027,
+      "date": "2026-10-04",
+      "start": "18:00",
+      "opponent": "Mammoth",
+      "venueId": "madison-square-garden",
+      "attendance": 17377,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-rangers",
+      "season": 2027,
+      "date": "2026-10-06",
+      "start": "19:30",
+      "opponent": "Islanders",
       "venueId": "madison-square-garden",
       "attendance": 18006,
       "kind": "announced",

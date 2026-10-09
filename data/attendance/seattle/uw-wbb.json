@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "seattle",
   "teamId": "uw-wbb",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "uw-wbb",
@@ -815,6 +815,19 @@
       "venueId": "alaska-airlines-arena",
       "attendance": 6212,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-wbb",
+      "season": 2026,
+      "date": "2026-03-20",
+      "start": "11:30",
+      "opponent": "S Dakota St",
+      "venueId": "schollmaier-arena",
+      "attendance": 3934,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NCAA Women's Basketball Championship - Regional 4 in Sacramento - 1st Round",
       "sourceId": "espn"
     }
   ]

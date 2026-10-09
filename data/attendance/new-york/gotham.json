@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "gotham",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "gotham",
@@ -531,6 +531,149 @@
       "opponent": "Louisville",
       "venueId": "sports-illustrated-stadium",
       "attendance": 11219,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-03-21",
+      "start": "18:30",
+      "opponent": "North Carolina",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 10796,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-03-25",
+      "start": "19:00",
+      "opponent": "Denver",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 5000,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-03-29",
+      "start": "19:00",
+      "opponent": "Orlando",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 6009,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "13:00",
+      "opponent": "Bay",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 7184,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "17:00",
+      "opponent": "Louisville",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 6193,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "18:30",
+      "opponent": "Boston",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 11308,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "15:00",
+      "opponent": "Houston",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 10549,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-07-15",
+      "start": "20:00",
+      "opponent": "Washington",
+      "venueId": "citi-field",
+      "attendance": 42175,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "14:30",
+      "opponent": "Seattle",
+      "venueId": "icahn-stadium",
+      "attendance": 4738,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "20:00",
+      "opponent": "Kansas City",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 9622,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "20:00",
+      "opponent": "Portland",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 10379,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "20:00",
+      "opponent": "Chicago",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 9176,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "gotham",
+      "season": 2026,
+      "date": "2026-10-04",
+      "start": "13:00",
+      "opponent": "Angel City",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 13475,
       "kind": "announced",
       "sourceId": "espn"
     }

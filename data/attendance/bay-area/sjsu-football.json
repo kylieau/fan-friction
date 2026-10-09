@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "bay-area",
   "teamId": "sjsu-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "sjsu-football",
@@ -276,6 +276,28 @@
       "opponent": "Fresno St",
       "venueId": "cefcu-stadium",
       "attendance": 14194,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "18:00",
+      "opponent": "Cal Poly",
+      "venueId": "cefcu-stadium",
+      "attendance": 15017,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sjsu-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "20:00",
+      "opponent": "Fresno St",
+      "venueId": "cefcu-stadium",
+      "attendance": 18256,
       "kind": "announced",
       "sourceId": "espn"
     }

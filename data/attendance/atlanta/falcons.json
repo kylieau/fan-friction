@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "atlanta",
   "teamId": "falcons",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "falcons",
@@ -447,6 +447,29 @@
       "opponent": "Saints",
       "venueId": "mercedes-benz-stadium",
       "attendance": 69512,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "falcons",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "19:00",
+      "opponent": "Broncos",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 68183,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "falcons",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "13:00",
+      "opponent": "Panthers",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 71143,
       "kind": "announced",
       "sourceId": "espn"
     }

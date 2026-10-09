@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "dallas-fort-worth",
   "teamId": "unt-football",
-  "collectedOn": "2026-10-08",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "unt-football",
@@ -276,6 +276,28 @@
       "opponent": "Temple",
       "venueId": "datcu-stadium",
       "attendance": 24492,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "14:45",
+      "opponent": "UNLV",
+      "venueId": "datcu-stadium",
+      "attendance": 20331,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unt-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "18:30",
+      "opponent": "Hou Christian",
+      "venueId": "datcu-stadium",
+      "attendance": 21718,
       "kind": "announced",
       "sourceId": "espn"
     }

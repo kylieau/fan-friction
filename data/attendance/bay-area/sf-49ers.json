@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "bay-area",
   "teamId": "sf-49ers",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "sf-49ers",
@@ -499,6 +499,51 @@
       "opponent": "Seahawks",
       "venueId": "levis-stadium",
       "attendance": 71836,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sf-49ers",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": "18:00",
+      "opponent": "Titans",
+      "venueId": "levis-stadium",
+      "attendance": 68418,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sf-49ers",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "13:25",
+      "opponent": "Dolphins",
+      "venueId": "levis-stadium",
+      "attendance": 70878,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sf-49ers",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "13:05",
+      "opponent": "Cardinals",
+      "venueId": "levis-stadium",
+      "attendance": 70687,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sf-49ers",
+      "season": 2026,
+      "date": "2026-10-04",
+      "start": "13:25",
+      "opponent": "Broncos",
+      "venueId": "levis-stadium",
+      "attendance": 70776,
       "kind": "announced",
       "sourceId": "espn"
     }

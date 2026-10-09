@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "galaxy",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "galaxy",
@@ -815,6 +815,105 @@
       "opponent": "Minnesota",
       "venueId": "dignity-health-sports-park",
       "attendance": 17765,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "galaxy",
+      "season": 2026,
+      "date": "2026-02-22",
+      "start": "16:00",
+      "opponent": "NYCFC",
+      "venueId": "dignity-health-sports-park",
+      "attendance": 25025,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "galaxy",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": "19:30",
+      "opponent": "Charlotte",
+      "venueId": "dignity-health-sports-park",
+      "attendance": 20205,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "galaxy",
+      "season": 2026,
+      "date": "2026-03-14",
+      "start": "18:30",
+      "opponent": "Kansas City",
+      "venueId": "dignity-health-sports-park",
+      "attendance": 18232,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "galaxy",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "19:30",
+      "opponent": "Minnesota",
+      "venueId": "dignity-health-sports-park",
+      "attendance": 22447,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "galaxy",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "16:00",
+      "opponent": "Salt Lake",
+      "venueId": "dignity-health-sports-park",
+      "attendance": 19773,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "galaxy",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "19:30",
+      "opponent": "Vancouver",
+      "venueId": "dignity-health-sports-park",
+      "attendance": 19429,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "galaxy",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "19:30",
+      "opponent": "Houston",
+      "venueId": "dignity-health-sports-park",
+      "attendance": 23638,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "galaxy",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "19:30",
+      "opponent": "Dallas",
+      "venueId": "dignity-health-sports-park",
+      "attendance": 18122,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "galaxy",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "19:30",
+      "opponent": "Colorado",
+      "venueId": "dignity-health-sports-park",
+      "attendance": 19452,
       "kind": "announced",
       "sourceId": "espn"
     }

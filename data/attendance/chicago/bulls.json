@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "chicago",
   "teamId": "bulls",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "bulls",
@@ -1950,6 +1950,18 @@
       "venueId": "united-center",
       "attendance": 21522,
       "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "bulls",
+      "season": 2027,
+      "date": "2026-10-07",
+      "start": "19:00",
+      "opponent": "Suns",
+      "venueId": "united-center",
+      "attendance": 16362,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     }
   ]

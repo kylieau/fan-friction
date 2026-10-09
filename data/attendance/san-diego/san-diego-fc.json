@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "san-diego",
   "teamId": "san-diego-fc",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "san-diego-fc",
@@ -243,6 +243,105 @@
       "kind": "announced",
       "postseason": true,
       "round": "Western Conference Playoffs - Final",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": "19:30",
+      "opponent": "CF Montréal",
+      "venueId": "snapdragon-stadium",
+      "attendance": 25412,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2026,
+      "date": "2026-03-01",
+      "start": "18:15",
+      "opponent": "St. Louis",
+      "venueId": "snapdragon-stadium",
+      "attendance": 21969,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2026,
+      "date": "2026-03-22",
+      "start": "16:00",
+      "opponent": "Salt Lake",
+      "venueId": "snapdragon-stadium",
+      "attendance": 24141,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "19:30",
+      "opponent": "Minnesota",
+      "venueId": "snapdragon-stadium",
+      "attendance": 23394,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "18:30",
+      "opponent": "Portland",
+      "venueId": "snapdragon-stadium",
+      "attendance": 22396,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "18:30",
+      "opponent": "LAFC",
+      "venueId": "snapdragon-stadium",
+      "attendance": 28459,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:30",
+      "opponent": "Austin",
+      "venueId": "snapdragon-stadium",
+      "attendance": 19194,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "18:30",
+      "opponent": "Cincinnati",
+      "venueId": "snapdragon-stadium",
+      "attendance": 24984,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "san-diego-fc",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "18:30",
+      "opponent": "Vancouver",
+      "venueId": "snapdragon-stadium",
+      "attendance": 23906,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

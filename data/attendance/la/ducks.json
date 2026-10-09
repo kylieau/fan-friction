@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "ducks",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "ducks",
@@ -2022,6 +2022,52 @@
       "postseason": true,
       "round": "West 2nd Round - Game 6",
       "game": 6,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ducks",
+      "season": 2027,
+      "date": "2026-09-20",
+      "start": "13:00",
+      "opponent": "Sharks",
+      "venueId": "honda-center",
+      "attendance": 10000,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ducks",
+      "season": 2027,
+      "date": "2026-09-23",
+      "start": "19:00",
+      "opponent": "Kings",
+      "venueId": "honda-center",
+      "attendance": 14696,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ducks",
+      "season": 2027,
+      "date": "2026-10-04",
+      "start": "17:00",
+      "opponent": "Panthers",
+      "venueId": "honda-center",
+      "attendance": 17174,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ducks",
+      "season": 2027,
+      "date": "2026-10-07",
+      "start": "19:00",
+      "opponent": "Oilers",
+      "venueId": "honda-center",
+      "attendance": 17174,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

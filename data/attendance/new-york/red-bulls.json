@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "red-bulls",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "red-bulls",
@@ -803,6 +803,94 @@
       "opponent": "Cincinnati",
       "venueId": "sports-illustrated-stadium",
       "attendance": 25017,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "red-bulls",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": "14:30",
+      "opponent": "New England",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 15087,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "red-bulls",
+      "season": 2026,
+      "date": "2026-03-08",
+      "start": "16:30",
+      "opponent": "CF Montréal",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 16847,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "red-bulls",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "19:30",
+      "opponent": "Cincinnati",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 20867,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "red-bulls",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "19:30",
+      "opponent": "D.C. United",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 13309,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "red-bulls",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "19:30",
+      "opponent": "Dallas",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 20414,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "red-bulls",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "19:30",
+      "opponent": "Columbus",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 14116,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "red-bulls",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "19:30",
+      "opponent": "NYCFC",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 25219,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "red-bulls",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "19:30",
+      "opponent": "Orlando",
+      "venueId": "sports-illustrated-stadium",
+      "attendance": 22104,
       "kind": "announced",
       "sourceId": "espn"
     }

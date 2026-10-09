@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "lafc",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "lafc",
@@ -871,6 +871,83 @@
       "postseason": true,
       "round": "Western Conference Playoffs - Round One - Game 1",
       "game": 1,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lafc",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": "18:30",
+      "opponent": "Miami",
+      "venueId": "coliseum",
+      "attendance": 75673,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lafc",
+      "season": 2026,
+      "date": "2026-03-07",
+      "start": "19:30",
+      "opponent": "Dallas",
+      "venueId": "bmo-stadium",
+      "attendance": 22130,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lafc",
+      "season": 2026,
+      "date": "2026-03-14",
+      "start": "19:30",
+      "opponent": "St. Louis",
+      "venueId": "bmo-stadium",
+      "attendance": 22266,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lafc",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "18:30",
+      "opponent": "Orlando",
+      "venueId": "bmo-stadium",
+      "attendance": 22185,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lafc",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "16:00",
+      "opponent": "San Jose",
+      "venueId": "bmo-stadium",
+      "attendance": 22114,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lafc",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "19:30",
+      "opponent": "Colorado",
+      "venueId": "bmo-stadium",
+      "attendance": 22132,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lafc",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "18:00",
+      "opponent": "Houston",
+      "venueId": "bmo-stadium",
+      "attendance": 21531,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

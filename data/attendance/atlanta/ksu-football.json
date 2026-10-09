@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "atlanta",
   "teamId": "ksu-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "ksu-football",
@@ -243,6 +243,39 @@
       "opponent": "Missouri St",
       "venueId": "fifth-third-stadium",
       "attendance": 11040,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": "19:00",
+      "opponent": "West Georgia",
+      "venueId": "fifth-third-stadium",
+      "attendance": 11040,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "19:00",
+      "opponent": "Georgia St",
+      "venueId": "fifth-third-stadium",
+      "attendance": 11040,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ksu-football",
+      "season": 2026,
+      "date": "2026-10-07",
+      "start": "19:00",
+      "opponent": "Jax State",
+      "venueId": "fifth-third-stadium",
+      "attendance": 10225,
       "kind": "announced",
       "sourceId": "espn"
     }

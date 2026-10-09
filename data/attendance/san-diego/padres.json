@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "san-diego",
   "teamId": "padres",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "padres",
@@ -7973,6 +7973,21 @@
       "postseason": true,
       "round": "NL Division Series",
       "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "padres",
+      "season": 2026,
+      "date": "2026-10-07",
+      "start": "19:00",
+      "opponent": "Brewers",
+      "venueId": "petco-park",
+      "attendance": 47712,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 4,
       "promotions": [],
       "sourceId": "mlb"
     }

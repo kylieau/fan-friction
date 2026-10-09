@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "ucla-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "ucla-football",
@@ -287,6 +287,28 @@
       "opponent": "Washington",
       "venueId": "rose-bowl",
       "attendance": 38201,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "16:15",
+      "opponent": "San Diego St",
+      "venueId": "rose-bowl",
+      "attendance": 31976,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "20:00",
+      "opponent": "Purdue",
+      "venueId": "rose-bowl",
+      "attendance": 30916,
       "kind": "announced",
       "sourceId": "espn"
     }

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "dallas-fort-worth",
   "teamId": "cowboys",
-  "collectedOn": "2026-10-08",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "cowboys",
@@ -460,6 +460,40 @@
       "opponent": "Chargers",
       "venueId": "att-stadium",
       "attendance": 92740,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cowboys",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "19:00",
+      "opponent": "Saints",
+      "venueId": "att-stadium",
+      "attendance": 81295,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cowboys",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "15:25",
+      "opponent": "Commanders",
+      "venueId": "att-stadium",
+      "attendance": 93188,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cowboys",
+      "season": 2026,
+      "date": "2026-10-08",
+      "start": "19:15",
+      "opponent": "Buccaneers",
+      "venueId": "att-stadium",
+      "attendance": 92351,
       "kind": "announced",
       "sourceId": "espn"
     }

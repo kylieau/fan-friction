@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "atlanta",
   "teamId": "dream",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "dream",
@@ -1181,8 +1181,22 @@
       "attendance": 9745,
       "kind": "announced",
       "postseason": true,
-      "round": "Semifinals - Game 1",
+      "round": "WNBA Semifinals - Game 1",
       "game": 1,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "dream",
+      "season": 2026,
+      "date": "2026-10-07",
+      "start": "19:30",
+      "opponent": "Liberty",
+      "venueId": "state-farm-arena",
+      "attendance": 9574,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WNBA Semifinals - Game 2",
+      "game": 2,
       "sourceId": "espn"
     }
   ]

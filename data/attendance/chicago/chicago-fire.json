@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "chicago",
   "teamId": "chicago-fire",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "chicago-fire",
@@ -777,6 +777,105 @@
       "postseason": true,
       "round": "Eastern Conference Playoffs - Round One - Game 2",
       "game": 2,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-fire",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": "13:30",
+      "opponent": "CF Montréal",
+      "venueId": "soldier-field",
+      "attendance": 20872,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-fire",
+      "season": 2026,
+      "date": "2026-03-14",
+      "start": "19:30",
+      "opponent": "D.C. United",
+      "venueId": "soldier-field",
+      "attendance": 15845,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-fire",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "19:30",
+      "opponent": "Nashville",
+      "venueId": "soldier-field",
+      "attendance": 15932,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-fire",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "19:30",
+      "opponent": "Atlanta",
+      "venueId": "soldier-field",
+      "attendance": 17764,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-fire",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "19:30",
+      "opponent": "Kansas City",
+      "venueId": "soldier-field",
+      "attendance": 17892,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-fire",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "19:30",
+      "opponent": "Cincinnati",
+      "venueId": "soldier-field",
+      "attendance": 18639,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-fire",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "13:30",
+      "opponent": "Red Bull NY",
+      "venueId": "soldier-field",
+      "attendance": 23647,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-fire",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "19:30",
+      "opponent": "Toronto",
+      "venueId": "soldier-field",
+      "attendance": 26752,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-fire",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "19:30",
+      "opponent": "Charlotte",
+      "venueId": "soldier-field",
+      "attendance": 32183,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

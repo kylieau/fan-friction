@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "devils",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "devils",
@@ -2038,6 +2038,52 @@
       "opponent": "Senators",
       "venueId": "prudential-center",
       "attendance": 16514,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "devils",
+      "season": 2027,
+      "date": "2026-09-20",
+      "start": "13:00",
+      "opponent": "Islanders",
+      "venueId": "prudential-center",
+      "attendance": 10226,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "devils",
+      "season": 2027,
+      "date": "2026-09-21",
+      "start": "19:00",
+      "opponent": "Rangers",
+      "venueId": "prudential-center",
+      "attendance": 11156,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "devils",
+      "season": 2027,
+      "date": "2026-10-01",
+      "start": "19:00",
+      "opponent": "Flyers",
+      "venueId": "prudential-center",
+      "attendance": 16539,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "devils",
+      "season": 2027,
+      "date": "2026-10-06",
+      "start": "19:00",
+      "opponent": "Mammoth",
+      "venueId": "prudential-center",
+      "attendance": 15146,
       "kind": "announced",
       "sourceId": "espn"
     }

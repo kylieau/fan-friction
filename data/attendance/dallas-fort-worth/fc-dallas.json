@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "dallas-fort-worth",
   "teamId": "fc-dallas",
-  "collectedOn": "2026-10-08",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "fc-dallas",
@@ -791,6 +791,105 @@
       "postseason": true,
       "round": "Western Conference Playoffs - Round One - Game 2, VAN wins 4-2 on penalties",
       "game": 2,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fc-dallas",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": "19:30",
+      "opponent": "Toronto",
+      "venueId": "toyota-stadium",
+      "attendance": 11004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fc-dallas",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": "19:30",
+      "opponent": "Nashville",
+      "venueId": "toyota-stadium",
+      "attendance": 11004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fc-dallas",
+      "season": 2026,
+      "date": "2026-03-14",
+      "start": "19:30",
+      "opponent": "San Diego",
+      "venueId": "toyota-stadium",
+      "attendance": 11004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fc-dallas",
+      "season": 2026,
+      "date": "2026-03-21",
+      "start": "19:30",
+      "opponent": "Houston",
+      "venueId": "toyota-stadium",
+      "attendance": 11004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fc-dallas",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "19:30",
+      "opponent": "St. Louis",
+      "venueId": "toyota-stadium",
+      "attendance": 11004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fc-dallas",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "19:30",
+      "opponent": "LA Galaxy",
+      "venueId": "toyota-stadium",
+      "attendance": 11004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fc-dallas",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "19:30",
+      "opponent": "Minnesota",
+      "venueId": "toyota-stadium",
+      "attendance": 11004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fc-dallas",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "19:30",
+      "opponent": "Salt Lake",
+      "venueId": "toyota-stadium",
+      "attendance": 11004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fc-dallas",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "19:30",
+      "opponent": "Vancouver",
+      "venueId": "toyota-stadium",
+      "attendance": 11004,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "seattle",
   "teamId": "sounders",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "sounders",
@@ -819,6 +819,83 @@
       "postseason": true,
       "round": "Western Conference Playoffs - Round One - Game 2",
       "game": 2,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sounders",
+      "season": 2026,
+      "date": "2026-02-22",
+      "start": "18:15",
+      "opponent": "Colorado",
+      "venueId": "lumen-field",
+      "attendance": 31606,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sounders",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "18:30",
+      "opponent": "St. Louis",
+      "venueId": "lumen-field",
+      "attendance": 30596,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sounders",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "19:30",
+      "opponent": "Dallas",
+      "venueId": "lumen-field",
+      "attendance": 31785,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sounders",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "19:30",
+      "opponent": "San Diego",
+      "venueId": "lumen-field",
+      "attendance": 31528,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sounders",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:30",
+      "opponent": "San Jose",
+      "venueId": "lumen-field",
+      "attendance": 28726,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sounders",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "18:15",
+      "opponent": "LA Galaxy",
+      "venueId": "lumen-field",
+      "attendance": 32659,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sounders",
+      "season": 2026,
+      "date": "2026-10-01",
+      "start": "18:30",
+      "opponent": "Kansas City",
+      "venueId": "lumen-field",
+      "attendance": 28587,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

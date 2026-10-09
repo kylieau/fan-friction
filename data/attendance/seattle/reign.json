@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "seattle",
   "teamId": "reign",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "reign",
@@ -568,6 +568,116 @@
       "opponent": "Utah",
       "venueId": "lumen-field",
       "attendance": 7930,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "17:00",
+      "opponent": "Utah",
+      "venueId": "lumen-field",
+      "attendance": 8211,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "16:00",
+      "opponent": "Washington",
+      "venueId": "lumen-field",
+      "attendance": 7597,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "19:00",
+      "opponent": "Gotham",
+      "venueId": "lumen-field",
+      "attendance": 6406,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "13:00",
+      "opponent": "Portland",
+      "venueId": "lumen-field",
+      "attendance": 14793,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "18:00",
+      "opponent": "Angel City",
+      "venueId": "lumen-field",
+      "attendance": 7102,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "19:00",
+      "opponent": "Chicago",
+      "venueId": "lumen-field",
+      "attendance": 7646,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "16:00",
+      "opponent": "Houston",
+      "venueId": "lumen-field",
+      "attendance": 7878,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "18:00",
+      "opponent": "San Diego",
+      "venueId": "lumen-field",
+      "attendance": 9104,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "17:00",
+      "opponent": "Bay",
+      "venueId": "lumen-field",
+      "attendance": 8191,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "reign",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "17:30",
+      "opponent": "Boston",
+      "venueId": "lumen-field",
+      "attendance": 7116,
       "kind": "announced",
       "sourceId": "espn"
     }

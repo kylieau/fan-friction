@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "chicago",
   "teamId": "white-sox",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "white-sox",
@@ -7816,6 +7816,21 @@
           "name": "Postseason Rally Towel"
         }
       ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "white-sox",
+      "season": 2026,
+      "date": "2026-10-08",
+      "start": "19:00",
+      "opponent": "Guardians",
+      "venueId": "rate-field",
+      "attendance": 39920,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 4,
+      "promotions": [],
       "sourceId": "mlb"
     }
   ]

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "bay-area",
   "teamId": "valkyries",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "valkyries",
@@ -553,8 +553,22 @@
       "attendance": 18064,
       "kind": "announced",
       "postseason": true,
-      "round": "Semifinals - Game 1",
+      "round": "WNBA Semifinals - Game 1",
       "game": 1,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "valkyries",
+      "season": 2026,
+      "date": "2026-10-07",
+      "start": "18:30",
+      "opponent": "Aces",
+      "venueId": "chase-center",
+      "attendance": 18064,
+      "kind": "announced",
+      "postseason": true,
+      "round": "WNBA Semifinals - Game 2",
+      "game": 2,
       "sourceId": "espn"
     }
   ]

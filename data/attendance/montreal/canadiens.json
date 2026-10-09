@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "montreal",
   "teamId": "canadiens",
-  "collectedOn": "2026-10-08",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "canadiens",
@@ -2114,6 +2114,52 @@
       "postseason": true,
       "round": "East Final - Game 4",
       "game": 4,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "canadiens",
+      "season": 2027,
+      "date": "2026-09-19",
+      "start": "19:00",
+      "opponent": "Maple Leafs",
+      "venueId": "bell-centre",
+      "attendance": 20962,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "canadiens",
+      "season": 2027,
+      "date": "2026-09-26",
+      "start": "19:00",
+      "opponent": "Senators",
+      "venueId": "bell-centre",
+      "attendance": 20962,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "canadiens",
+      "season": 2027,
+      "date": "2026-10-06",
+      "start": "19:00",
+      "opponent": "Hurricanes",
+      "venueId": "bell-centre",
+      "attendance": 20962,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "canadiens",
+      "season": 2027,
+      "date": "2026-10-08",
+      "start": "19:00",
+      "opponent": "Predators",
+      "venueId": "bell-centre",
+      "attendance": 20962,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

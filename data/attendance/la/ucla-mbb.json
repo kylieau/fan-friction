@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "ucla-mbb",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "ucla-mbb",
@@ -760,6 +760,28 @@
       "opponent": "Nebraska",
       "venueId": "pauley-pavilion",
       "attendance": 9027,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-mbb",
+      "season": 2026,
+      "date": "2026-03-12",
+      "start": "18:00",
+      "opponent": "Rutgers",
+      "venueId": "united-center",
+      "attendance": 16861,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ucla-mbb",
+      "season": 2026,
+      "date": "2026-03-14",
+      "start": "12:30",
+      "opponent": "Purdue",
+      "venueId": "united-center",
+      "attendance": 17923,
       "kind": "announced",
       "sourceId": "espn"
     }

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "seattle",
   "teamId": "uw-mbb",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "uw-mbb",
@@ -727,6 +727,17 @@
       "opponent": "USC",
       "venueId": "alaska-airlines-arena",
       "attendance": 8121,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uw-mbb",
+      "season": 2026,
+      "date": "2026-03-11",
+      "start": "11:30",
+      "opponent": "USC",
+      "venueId": "united-center",
+      "attendance": 15661,
       "kind": "announced",
       "sourceId": "espn"
     }

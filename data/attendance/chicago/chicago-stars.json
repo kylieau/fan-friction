@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "chicago",
   "teamId": "chicago-stars",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "chicago-stars",
@@ -529,6 +529,116 @@
       "opponent": "Angel City",
       "venueId": "seatgeek-stadium",
       "attendance": 4219,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-03-22",
+      "start": "13:00",
+      "opponent": "Kansas City",
+      "venueId": "martin-stadium",
+      "attendance": 4192,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-03-25",
+      "start": "19:00",
+      "opponent": "Orlando",
+      "venueId": "martin-stadium",
+      "attendance": 1821,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "17:30",
+      "opponent": "Boston",
+      "venueId": "martin-stadium",
+      "attendance": 4579,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "19:00",
+      "opponent": "Gotham",
+      "venueId": "martin-stadium",
+      "attendance": 2607,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "12:00",
+      "opponent": "Portland",
+      "venueId": "martin-stadium",
+      "attendance": 4344,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "12:00",
+      "opponent": "San Diego",
+      "venueId": "martin-stadium",
+      "attendance": 6014,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "16:00",
+      "opponent": "Utah",
+      "venueId": "martin-stadium",
+      "attendance": 4156,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "17:30",
+      "opponent": "Angel City",
+      "venueId": "martin-stadium",
+      "attendance": 6678,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "13:00",
+      "opponent": "Louisville",
+      "venueId": "martin-stadium",
+      "attendance": 4405,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "chicago-stars",
+      "season": 2026,
+      "date": "2026-10-04",
+      "start": "15:00",
+      "opponent": "Denver",
+      "venueId": "martin-stadium",
+      "attendance": 4614,
       "kind": "announced",
       "sourceId": "espn"
     }

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "chicago",
   "teamId": "blackhawks",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "blackhawks",
@@ -1913,6 +1913,41 @@
       "opponent": "Sharks",
       "venueId": "united-center",
       "attendance": 20397,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "blackhawks",
+      "season": 2027,
+      "date": "2026-09-21",
+      "start": "19:00",
+      "opponent": "Wild",
+      "venueId": "united-center",
+      "attendance": 10605,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "blackhawks",
+      "season": 2027,
+      "date": "2026-09-26",
+      "start": "18:00",
+      "opponent": "Blues",
+      "venueId": "united-center",
+      "attendance": 10497,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "blackhawks",
+      "season": 2027,
+      "date": "2026-10-06",
+      "start": "19:00",
+      "opponent": "Blues",
+      "venueId": "united-center",
+      "attendance": 20270,
       "kind": "announced",
       "sourceId": "espn"
     }

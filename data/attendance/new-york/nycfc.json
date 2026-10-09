@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "nycfc",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "nycfc",
@@ -804,6 +804,94 @@
       "postseason": true,
       "round": "Eastern Conference Playoffs - Round One - Game 2, CLT wins 7-6 on penalties",
       "game": 2,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nycfc",
+      "season": 2026,
+      "date": "2026-03-07",
+      "start": "14:30",
+      "opponent": "Orlando",
+      "venueId": "yankee-stadium",
+      "attendance": 25055,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nycfc",
+      "season": 2026,
+      "date": "2026-03-14",
+      "start": "19:30",
+      "opponent": "Colorado",
+      "venueId": "yankee-stadium",
+      "attendance": 18079,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nycfc",
+      "season": 2026,
+      "date": "2026-03-22",
+      "start": "13:00",
+      "opponent": "Miami",
+      "venueId": "yankee-stadium",
+      "attendance": 45845,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nycfc",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "19:30",
+      "opponent": "St. Louis",
+      "venueId": "citi-field",
+      "attendance": 20867,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nycfc",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "19:30",
+      "opponent": "Charlotte",
+      "venueId": "citi-field",
+      "attendance": 20997,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nycfc",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "19:30",
+      "opponent": "Cincinnati",
+      "venueId": "yankee-stadium",
+      "attendance": 17847,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nycfc",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "15:00",
+      "opponent": "D.C. United",
+      "venueId": "citi-field",
+      "attendance": 23931,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "nycfc",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "16:30",
+      "opponent": "Columbus",
+      "venueId": "yankee-stadium",
+      "attendance": 17770,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

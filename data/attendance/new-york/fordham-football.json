@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "fordham-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "fordham-football",
@@ -133,6 +133,28 @@
       "opponent": "Bucknell",
       "venueId": "coffey-field",
       "attendance": 2235,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "18:00",
+      "opponent": "Colgate",
+      "venueId": "coffey-field",
+      "attendance": 2521,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "fordham-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "13:00",
+      "opponent": "Stony Brook",
+      "venueId": "coffey-field",
+      "attendance": 2237,
       "kind": "announced",
       "sourceId": "espn"
     }

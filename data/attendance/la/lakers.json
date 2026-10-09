@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "lakers",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "lakers",
@@ -2142,6 +2142,18 @@
       "postseason": true,
       "round": "West Semifinals - Game 4",
       "game": 4,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "lakers",
+      "season": 2027,
+      "date": "2026-10-08",
+      "start": "19:45",
+      "opponent": "Kings",
+      "venueId": "crypto-com-arena",
+      "attendance": 18350,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     }
   ]

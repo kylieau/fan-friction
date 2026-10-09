@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "ny-giants",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "ny-giants",
@@ -447,6 +447,51 @@
       "opponent": "Cowboys",
       "venueId": "metlife-stadium",
       "attendance": 74395,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-giants",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "13:00",
+      "opponent": "Vikings",
+      "venueId": "metlife-stadium",
+      "attendance": 77494,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-giants",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "20:20",
+      "opponent": "Cowboys",
+      "venueId": "metlife-stadium",
+      "attendance": 83286,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-giants",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "13:00",
+      "opponent": "Titans",
+      "venueId": "metlife-stadium",
+      "attendance": 79919,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "ny-giants",
+      "season": 2026,
+      "date": "2026-10-04",
+      "start": "13:00",
+      "opponent": "Cardinals",
+      "venueId": "metlife-stadium",
+      "attendance": 80893,
       "kind": "announced",
       "sourceId": "espn"
     }

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "dallas-fort-worth",
   "teamId": "tcu-football",
-  "collectedOn": "2026-10-08",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "tcu-football",
@@ -287,6 +287,39 @@
       "opponent": "Cincinnati",
       "venueId": "amon-g-carter-stadium",
       "attendance": 37259,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tcu-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "19:00",
+      "opponent": "Grambling",
+      "venueId": "amon-g-carter-stadium",
+      "attendance": 37600,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tcu-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "19:00",
+      "opponent": "Arkansas St",
+      "venueId": "amon-g-carter-stadium",
+      "attendance": 46139,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tcu-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "18:00",
+      "opponent": "BYU",
+      "venueId": "amon-g-carter-stadium",
+      "attendance": 38327,
       "kind": "announced",
       "sourceId": "espn"
     }

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "bay-area",
   "teamId": "sharks",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "sharks",
@@ -1936,6 +1936,52 @@
       "date": "2026-04-11",
       "start": "19:00",
       "opponent": "Canucks",
+      "venueId": "sap-center",
+      "attendance": 17435,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sharks",
+      "season": 2027,
+      "date": "2026-09-22",
+      "start": "19:00",
+      "opponent": "Golden Knights",
+      "venueId": "sap-center",
+      "attendance": 11573,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sharks",
+      "season": 2027,
+      "date": "2026-09-24",
+      "start": "19:00",
+      "opponent": "Ducks",
+      "venueId": "sap-center",
+      "attendance": 11678,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sharks",
+      "season": 2027,
+      "date": "2026-10-01",
+      "start": "19:00",
+      "opponent": "Panthers",
+      "venueId": "sap-center",
+      "attendance": 17435,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sharks",
+      "season": 2027,
+      "date": "2026-10-03",
+      "start": "19:00",
+      "opponent": "Kings",
       "venueId": "sap-center",
       "attendance": 17435,
       "kind": "announced",

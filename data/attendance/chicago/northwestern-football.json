@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "chicago",
   "teamId": "northwestern-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "northwestern-football",
@@ -155,6 +155,39 @@
       "opponent": "Minnesota",
       "venueId": "wrigley-field",
       "attendance": 15323,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "19:00",
+      "opponent": "S Dakota St",
+      "venueId": "martin-stadium",
+      "attendance": 9574,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "18:30",
+      "opponent": "Colorado",
+      "venueId": "martin-stadium",
+      "attendance": 12023,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "northwestern-football",
+      "season": 2026,
+      "date": "2026-10-02",
+      "start": "19:00",
+      "opponent": "Penn State",
+      "venueId": "ryan-field",
+      "attendance": 35000,
       "kind": "announced",
       "sourceId": "espn"
     }

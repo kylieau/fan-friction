@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "dallas-fort-worth",
   "teamId": "smu-football",
-  "collectedOn": "2026-10-08",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "smu-football",
@@ -290,6 +290,39 @@
       "kind": "announced",
       "postseason": true,
       "round": "Trust & Will Holiday Bowl",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "smu-football",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "15:00",
+      "opponent": "UC Davis",
+      "venueId": "gerald-j-ford-stadium",
+      "attendance": 29054,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "smu-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "20:00",
+      "opponent": "Missouri St",
+      "venueId": "gerald-j-ford-stadium",
+      "attendance": 31987,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "smu-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "11:00",
+      "opponent": "Boston College",
+      "venueId": "gerald-j-ford-stadium",
+      "attendance": 27942,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "atlanta",
   "teamId": "atlanta-united",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "atlanta-united",
@@ -777,6 +777,105 @@
       "opponent": "D.C. United",
       "venueId": "mercedes-benz-stadium",
       "attendance": 44098,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "atlanta-united",
+      "season": 2026,
+      "date": "2026-03-07",
+      "start": "19:30",
+      "opponent": "Salt Lake",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 53862,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "atlanta-united",
+      "season": 2026,
+      "date": "2026-03-14",
+      "start": "15:15",
+      "opponent": "Philadelphia",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 35308,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "atlanta-united",
+      "season": 2026,
+      "date": "2026-03-21",
+      "start": "19:30",
+      "opponent": "D.C. United",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 35418,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "atlanta-united",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "19:30",
+      "opponent": "Columbus",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 34130,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "atlanta-united",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "19:30",
+      "opponent": "Nashville",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 36895,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "atlanta-united",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "19:45",
+      "opponent": "New England",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 30306,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "atlanta-united",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "19:30",
+      "opponent": "CF Montréal",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 34703,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "atlanta-united",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "19:30",
+      "opponent": "LA Galaxy",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 40392,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "atlanta-united",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "19:30",
+      "opponent": "Red Bull NY",
+      "venueId": "mercedes-benz-stadium",
+      "attendance": 38469,
       "kind": "announced",
       "sourceId": "espn"
     }

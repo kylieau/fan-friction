@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "knicks",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "knicks",
@@ -2359,6 +2359,18 @@
       "postseason": true,
       "round": "NBA Finals - Game 4",
       "game": 4,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "knicks",
+      "season": 2027,
+      "date": "2026-10-08",
+      "start": "19:30",
+      "opponent": "Wizards",
+      "venueId": "madison-square-garden",
+      "attendance": 17960,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     }
   ]

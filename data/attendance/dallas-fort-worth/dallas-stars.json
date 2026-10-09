@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "dallas-fort-worth",
   "teamId": "dallas-stars",
-  "collectedOn": "2026-10-08",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "dallas-stars",
@@ -2401,6 +2401,52 @@
       "postseason": true,
       "round": "West 1st Round - Game 5",
       "game": 5,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "dallas-stars",
+      "season": 2027,
+      "date": "2026-09-21",
+      "start": "19:00",
+      "opponent": "Blues",
+      "venueId": "american-airlines-center",
+      "attendance": 14614,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "dallas-stars",
+      "season": 2027,
+      "date": "2026-09-23",
+      "start": "19:00",
+      "opponent": "Wild",
+      "venueId": "american-airlines-center",
+      "attendance": 14991,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "dallas-stars",
+      "season": 2027,
+      "date": "2026-10-02",
+      "start": "20:00",
+      "opponent": "Blues",
+      "venueId": "american-airlines-center",
+      "attendance": 18532,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "dallas-stars",
+      "season": 2027,
+      "date": "2026-10-05",
+      "start": "19:00",
+      "opponent": "Sharks",
+      "venueId": "american-airlines-center",
+      "attendance": 18532,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

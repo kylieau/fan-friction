@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "seattle",
   "teamId": "seahawks",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "seahawks",
@@ -474,6 +474,40 @@
       "kind": "announced",
       "postseason": true,
       "round": "NFC Championship",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "17:00",
+      "opponent": "Cowboys",
+      "venueId": "lumen-field",
+      "attendance": 68474,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "17:20",
+      "opponent": "Patriots",
+      "venueId": "lumen-field",
+      "attendance": 68744,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "seahawks",
+      "season": 2026,
+      "date": "2026-10-04",
+      "start": "13:25",
+      "opponent": "Chargers",
+      "venueId": "lumen-field",
+      "attendance": 68691,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

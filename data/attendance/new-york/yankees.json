@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "yankees",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "yankees",
@@ -7552,6 +7552,21 @@
       "postseason": true,
       "round": "AL Wild Card Series",
       "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "yankees",
+      "season": 2026,
+      "date": "2026-10-07",
+      "start": "20:00",
+      "opponent": "Rays",
+      "venueId": "yankee-stadium",
+      "attendance": 48865,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 3,
       "promotions": [],
       "sourceId": "mlb"
     }

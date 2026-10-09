@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "bay-area",
   "teamId": "cal-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "cal-football",
@@ -287,6 +287,39 @@
       "opponent": "SMU",
       "venueId": "california-memorial-stadium",
       "attendance": 28956,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cal-football",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "19:30",
+      "opponent": "UCLA",
+      "venueId": "california-memorial-stadium",
+      "attendance": 54283,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cal-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "12:30",
+      "opponent": "Wagner",
+      "venueId": "california-memorial-stadium",
+      "attendance": 35586,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "cal-football",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "19:30",
+      "opponent": "Clemson",
+      "venueId": "california-memorial-stadium",
+      "attendance": 41778,
       "kind": "announced",
       "sourceId": "espn"
     }

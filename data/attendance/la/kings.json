@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "kings",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "kings",
@@ -1994,6 +1994,41 @@
       "postseason": true,
       "round": "West 1st Round - Game 4",
       "game": 4,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kings",
+      "season": 2027,
+      "date": "2026-09-22",
+      "start": "19:00",
+      "opponent": "Mammoth",
+      "venueId": "crypto-com-arena",
+      "attendance": 10191,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kings",
+      "season": 2027,
+      "date": "2026-09-26",
+      "start": "13:00",
+      "opponent": "Ducks",
+      "venueId": "crypto-com-arena",
+      "attendance": 12995,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "kings",
+      "season": 2027,
+      "date": "2026-10-06",
+      "start": "19:20",
+      "opponent": "Panthers",
+      "venueId": "crypto-com-arena",
+      "attendance": 18145,
+      "kind": "announced",
       "sourceId": "espn"
     }
   ]

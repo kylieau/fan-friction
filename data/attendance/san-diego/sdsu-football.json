@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "san-diego",
   "teamId": "sdsu-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "sdsu-football",
@@ -287,6 +287,39 @@
       "opponent": "San José St",
       "venueId": "snapdragon-stadium",
       "attendance": 22595,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:30",
+      "opponent": "Portland St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 26913,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "19:00",
+      "opponent": "James Madison",
+      "venueId": "snapdragon-stadium",
+      "attendance": 26487,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sdsu-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "19:30",
+      "opponent": "Texas St",
+      "venueId": "snapdragon-stadium",
+      "attendance": 28474,
       "kind": "announced",
       "sourceId": "espn"
     }

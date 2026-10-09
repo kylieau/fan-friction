@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "columbia-football",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "columbia-football",
@@ -221,6 +221,28 @@
       "opponent": "Brown",
       "venueId": "wien-stadium",
       "attendance": 3122,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "12:00",
+      "opponent": "Lafayette",
+      "venueId": "wien-stadium",
+      "attendance": 3728,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "columbia-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "12:00",
+      "opponent": "Princeton",
+      "venueId": "wien-stadium",
+      "attendance": 3676,
       "kind": "announced",
       "sourceId": "espn"
     }

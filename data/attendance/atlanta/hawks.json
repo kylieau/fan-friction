@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "atlanta",
   "teamId": "hawks",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "hawks",
@@ -1963,6 +1963,18 @@
       "postseason": true,
       "round": "East 1st Round - Game 6",
       "game": 6,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "hawks",
+      "season": 2027,
+      "date": "2026-10-05",
+      "start": "19:00",
+      "opponent": "Grizzlies",
+      "venueId": "state-farm-arena",
+      "attendance": 10923,
+      "kind": "announced",
+      "preseason": true,
       "sourceId": "espn"
     }
   ]

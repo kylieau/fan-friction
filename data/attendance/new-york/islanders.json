@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "islanders",
-  "collectedOn": "2026-10-07",
+  "collectedOn": "2026-10-09",
   "games": [
     {
       "teamId": "islanders",
@@ -1996,6 +1996,52 @@
       "opponent": "Hurricanes",
       "venueId": "ubs-arena",
       "attendance": 15231,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "islanders",
+      "season": 2027,
+      "date": "2026-09-25",
+      "start": "19:30",
+      "opponent": "Rangers",
+      "venueId": "ubs-arena",
+      "attendance": 14034,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "islanders",
+      "season": 2027,
+      "date": "2026-09-26",
+      "start": "19:30",
+      "opponent": "Devils",
+      "venueId": "ubs-arena",
+      "attendance": 9777,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "islanders",
+      "season": 2027,
+      "date": "2026-10-03",
+      "start": "19:30",
+      "opponent": "Devils",
+      "venueId": "ubs-arena",
+      "attendance": 17345,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "islanders",
+      "season": 2027,
+      "date": "2026-10-08",
+      "start": "19:30",
+      "opponent": "Blackhawks",
+      "venueId": "ubs-arena",
+      "attendance": 13946,
       "kind": "announced",
       "sourceId": "espn"
     }
