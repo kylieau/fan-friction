@@ -8,6 +8,7 @@ import { rateDate, occasionFor, crowdFightDetail, type DateRead } from './formul
 import { verdictFromScore, type EventCrowdFight } from './formula/crowdFight';
 import { milesBetween } from '../lib/windows';
 import { VENUES } from './venues';
+import { METROS } from '../config/metros';
 import { eventConditions } from './formula/weather';
 import { weatherForEvent } from './weather';
 
@@ -101,7 +102,7 @@ export function applyFormula(metroId: string, date: LocalDate, events: readonly 
     date,
     rating: read.rating,
     headline: read.why,
-    detail: read.lead?.name === 'Crowd fight' ? crowdFightDetail(read.crowdFight) || undefined : undefined,
+    detail: read.lead?.name === 'Crowd fight' ? crowdFightDetail(read.crowdFight, METROS[metroId]?.name ?? metroId) || undefined : undefined,
     squeezedMost: read.crowdFight.topPuller ? `pulled by ${read.crowdFight.topPuller.title}` : '',
     method: 'formula',
     notes: read.reasons.map((r) => `${r.name} ${r.score.toFixed(1)}: ${r.why}`).join(' '),

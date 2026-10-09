@@ -1,7 +1,6 @@
-import { useState, useSyncExternalStore } from 'react';
-import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { useSyncExternalStore } from 'react';
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { TabBar } from './components/TabBar';
-import { FirstRunTips } from './components/FirstRunTips';
 import { HomePicker } from './components/HomePicker';
 import { HomeScreen } from './screens/HomeScreen';
 import { ExploreScreen } from './screens/ExploreScreen';
@@ -17,7 +16,6 @@ import { FavoritesScreen } from './screens/FavoritesScreen';
 import { FavoritePage } from './screens/FavoritePage';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId, subscribeHome } from './lib/homeCity';
-import { getPref, setPref } from './lib/prefs';
 import { getCityDate, settlePassedPlans, subscribeLogLoaded } from './data';
 import { useEffect } from 'react';
 
@@ -28,21 +26,14 @@ function OldDateRedirect() {
 }
 
 function Shell() {
-  const navigate = useNavigate();
   const { pathname } = useLocation();
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
-  const [showTips, setShowTips] = useState(() => !getPref('tipsDone', false));
 
   // An Attending date becomes Attended once it passes: at open, and again once the account copy is in.
   useEffect(() => {
     void settlePassedPlans(getCityDate);
     return subscribeLogLoaded(() => void settlePassedPlans(getCityDate));
   }, []);
-
-  const finishTips = () => {
-    setPref('tipsDone', true);
-    setShowTips(false);
-  };
 
   return (
     <div className="app">
@@ -62,26 +53,15 @@ function Shell() {
           <Route path="/you" element={<YouScreen />} />
           <Route path="/you/add" element={<AddEntryScreen />} />
           <Route path="/entry/:id" element={<ManualEntryScreen />} />
-          <Route
-            path="/you/settings"
-            element={
-              <SettingsScreen
-                onShowTips={() => {
-                  navigate('/explore?view=map');
-                  setShowTips(true);
-                }}
-              />
-            }
-          />
+          <Route path="/you/settings" element={<SettingsScreen />} />
           <Route path="/nights" element={<Navigate to="/calendar" replace />} />
           <Route path="/night/:date" element={<OldDateRedirect />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <TabBar />
-      {/* Home city is chosen first, on Home or Explore. The tips explain the map, so they show on Explore. */}
+      {/* Home city is chosen first, on Home or Explore. No first-run tips: the ? and the empty states carry it (3.17). */}
       {!homeId && (pathname === '/' || pathname === '/explore') && <HomePicker />}
-      {showTips && Boolean(homeId) && pathname === '/explore' && <FirstRunTips onDone={finishTips} />}
     </div>
   );
 }

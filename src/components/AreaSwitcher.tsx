@@ -2,7 +2,7 @@ import { useId } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { type Metro } from '../config/metros';
 import { metrosWithEvents } from '../data';
-import { getHomeId, setHomeId } from '../lib/homeCity';
+import { getHomeId } from '../lib/homeCity';
 import { openedMetroId } from '../lib/view';
 import { ChevronDown, HomeIcon } from './Icons';
 
@@ -27,7 +27,6 @@ export function AreaSwitcher({
   // Logged nights elsewhere still open from You. A city reached by link stays listed while it is on screen.
   const covered = metrosWithEvents();
   const metros = covered.some((city) => city.id === metro.id) ? covered : [...covered, metro];
-  const withEvents = new Set(covered.map((city) => city.id));
   const homeId = openedMetroId();
   const viewingHome = metro.id === getHomeId();
   const pick = (id: string) => {
@@ -36,21 +35,6 @@ export function AreaSwitcher({
     else next.set('metro', id);
     setParams(next);
     onOpenChange(false);
-  };
-  const makeHome = (id: string) => {
-    const viewing = metro.id;
-    const next = new URLSearchParams(params);
-    if (viewing === id) {
-      setHomeId(id);
-      next.delete('metro');
-      setParams(next, { replace: true });
-      return;
-    }
-    // Keep the city on screen. A bare address means home, so name this city
-    // before home changes, or the map would jump.
-    if (!params.has('metro')) next.set('metro', viewing);
-    setParams(next, { replace: true });
-    setHomeId(id);
   };
   return (
     <div className="area-switcher">
@@ -82,11 +66,7 @@ export function AreaSwitcher({
                   {isHome && <HomeMark />}
                   <span>{item.name}</span>
                 </button>
-                {!isHome && withEvents.has(item.id) && (
-                  <button type="button" className="set-home" onClick={() => makeHome(item.id)}>
-                    Set as home
-                  </button>
-                )}
+                {/* Changing home lives in Settings (Kylie, Oct 9); the house marks it here. */}
               </div>
             );
           })}

@@ -2060,6 +2060,34 @@ button {
   color: var(--ink2);
 }
 
+.map-key-note {
+  font-weight: 500;
+  color: var(--ink2);
+}
+
+.empty-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.account-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--ink2);
+}
+
+.section-note {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
 .map-key-glow::before,
 .map-key-ring::before {
   content: '';

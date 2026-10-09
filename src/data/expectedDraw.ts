@@ -90,7 +90,11 @@ export function showDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   if (event.crowd.some((c) => c.count !== undefined || c.soldOut)) return undefined;
   const venue = VENUES[event.place.venueId];
   const cap = venue ? capacityOn(venue, event.date, 'concert') : undefined;
-  if (!cap) return undefined;
+  if (!cap) {
+    // No concert figure at all: the room as a ceiling, "Up to N", so the page matches what the read counts (3.3).
+    const room = venue ? capacityOn(venue, event.date) : undefined;
+    return room ? { count: room, planning: true, basis: 'building', note: 'No concert figure on file for this room; its listed size, as a ceiling. An estimate.' } : undefined;
+  }
   const own = VENUE_SHOW_AVERAGE[event.place.venueId];
   if (own) return { count: Math.min(own.perShow, cap), note: `This room's average per reported show: ${own.basis}. An estimate.` };
   // Kylie, Oct 7: a room with no sports setup is built for shows and reads at full

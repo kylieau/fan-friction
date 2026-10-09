@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
-import { scoreBand, scoreLabel } from '../config/scoreLabels';
+import { formatScore, scoreLabel } from '../config/scoreLabels';
+import { ReadTile } from '../components/ReadTile';
 import {
   approveFollow,
   canSignIn,
@@ -86,7 +87,6 @@ export function YouScreen() {
   const choices = useMemo(() => filterChoices(entries), [entries]);
   const shown = filter === 'All' ? entries : entries.filter((entry) => entry.tags.includes(filter));
   const stats = useMemo(() => logStats(shown), [shown]);
-  const heaviest = useMemo(() => heaviestEntry(shown, ratings), [shown, ratings]);
 
   const filters = (
     <div className="filter-row" role="group" aria-label="Filter your events">
@@ -106,10 +106,14 @@ export function YouScreen() {
     <section className="you-block" aria-label="Your events">
       {entries.length === 0 ? (
         <div className="card empty-card">
-          <div className="card-title">
-            {canSignIn() && !account
-              ? 'No events on this phone. Sign in to see yours, or find one on the map.'
-              : 'No events yet. Find one on the map.'}
+          <div className="card-title">{canSignIn() && !account ? 'No events on this phone.' : 'No events yet.'}</div>
+          <div className="empty-actions">
+            <Link to="/you/add" className="gold-button small">
+              Log an event
+            </Link>
+            <Link to="/explore" className="link-button">
+              Find one on the map
+            </Link>
           </div>
         </div>
       ) : (
@@ -141,7 +145,7 @@ export function YouScreen() {
           <h1 className="page-title">{account?.displayName ?? 'You'}</h1>
           {account && handle && <span className="you-handle">@{handle}</span>}
         </div>
-        <Link to="/you/add" className="round-button you-add" aria-label="Add an event">
+        <Link to="/you/add" className="round-button you-add" aria-label="Log an event">
           <PlusIcon />
         </Link>
         <Link
@@ -186,12 +190,12 @@ export function YouScreen() {
       )}
 
       <div className="segmented" role="tablist" aria-label="You">
-        {/* "Events", not "Nights": the bottom bar already has a Nights tab (Kylie, Oct 5). */}
+        {/* "My Stubs" for your events; "Following" for who you see (Kylie, Oct 9). */}
         <button type="button" role="tab" aria-selected={tab === 'events'} onClick={() => setTab('events')}>
-          Events
+          My Stubs
         </button>
         <button type="button" role="tab" aria-selected={tab === 'friends'} onClick={() => setTab('friends')}>
-          Friends
+          Following
         </button>
         <button type="button" role="tab" aria-selected={tab === 'stats'} onClick={() => setTab('stats')}>
           Stats
@@ -203,7 +207,7 @@ export function YouScreen() {
         <>
           {filters}
           <YourYear entries={shown} ratings={ratings} />
-          <Stats stats={stats} heaviest={heaviest} hours={hoursAtGames(shown)} />
+          <Stats stats={stats} hours={hoursAtGames(shown)} />
         </>
       )}
       {tab === 'friends' && <FriendsTab items={friends} ratings={ratings} signedIn={Boolean(account)} />}
@@ -254,12 +258,7 @@ function FriendsTab({
           const facts = [loggedDateLabel(entry.when), entry.venue].filter(Boolean).join(' · ');
           const body = (
             <>
-              {rating !== null && (
-                <span className={`log-score ${scoreBand(rating)}`} aria-label={`${scoreLabel(rating)}, ${rating} out of 10`}>
-                  <span className="log-score-num">{rating}</span>
-                  <span className="log-score-word">{scoreLabel(rating)}</span>
-                </span>
-              )}
+              {rating !== null && <ReadTile rating={rating} />}
               <span className="log-main">
                 <span className="log-friend">
                   {friend.displayName ?? friend.handle ?? 'Someone'}
@@ -299,22 +298,14 @@ function FilterChip({ label, pressed, onClick }: { label: string; pressed: boole
   );
 }
 
-function Stats({
-  stats,
-  heaviest,
-  hours,
-}: {
-  stats: ReturnType<typeof logStats>;
-  heaviest: number | null;
-  hours: { hours: number; games: number };
-}) {
+function Stats({ stats, hours }: { stats: ReturnType<typeof logStats>; hours: { hours: number; games: number } }) {
   return (
     <div className="stats-block">
       <div className="stat-grid">
         <Stat n={stats.events} label="Events" />
         <Stat n={stats.venues} label="Venues" />
-        <HeaviestStat rating={heaviest} />
-        {hours.games > 0 && <Stat n={hours.hours} label={`Hours at games · ${hours.games}`} />}
+        {/* The heaviest read sits in Your year above; not repeated here (3.22). */}
+        {hours.games > 0 && <Stat n={hours.hours} label={`Hours at ${hours.games === 1 ? '1 game' : `${hours.games} games`}`} />}
       </div>
       <CountList title="By type" rows={stats.byType} />
       <CountList title="By team and sport" rows={stats.byTeamSport} />
@@ -335,8 +326,8 @@ export function heaviestEntry(entries: Entry[], ratings: ReadonlyMap<string, num
 export function HeaviestStat({ rating }: { rating: number | null }) {
   return (
     <div className="stat-card">
-      <span className="stat-num">{rating === null ? '—' : rating}</span>
-      <span className="stat-label">{rating === null ? 'Heaviest night' : `Heaviest · ${scoreLabel(rating)}`}</span>
+      <span className="stat-num">{rating === null ? '—' : formatScore(rating)}</span>
+      <span className="stat-label">{rating === null ? 'Heaviest' : `Heaviest · ${scoreLabel(rating)}`}</span>
     </div>
   );
 }
@@ -377,12 +368,7 @@ function EntryRow({ entry, rating }: { entry: Entry; rating: number | null }) {
   const extraTags = entry.tags.filter((tag) => !entry.title.includes(tag));
   const body = (
     <>
-      {rating !== null && (
-        <span className={`log-score ${scoreBand(rating)}`} aria-label={`${scoreLabel(rating)}, ${rating} out of 10`}>
-          <span className="log-score-num">{rating}</span>
-          <span className="log-score-word">{scoreLabel(rating)}</span>
-        </span>
-      )}
+      {rating !== null && <ReadTile rating={rating} />}
       <span className="log-main">
         <span className="log-title">{entry.title}</span>
         <span className="log-facts">{facts}</span>

@@ -5,11 +5,12 @@ import { setHomeId } from '../lib/homeCity';
  * The first time the app opens, they pick a home city.
  * The app never asks for location (Kylie, Oct 5, 2026). They pick from the list.
  */
-export function HomePicker() {
+export function HomePicker({ onDone }: { onDone?: () => void } = {}) {
   const cities = metrosWithEvents();
 
   const choose = (id: string) => {
     setHomeId(id);
+    onDone?.();
   };
 
   return (

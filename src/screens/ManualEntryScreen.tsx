@@ -67,7 +67,7 @@ export function ManualEntryScreen() {
       {rating !== null && (
         <section className="card verdict manual-read">
           <ReadTile rating={rating} size="big" />
-          <div className="verdict-why">Nearby read: the big events in {city} that night.</div>
+          <div className="verdict-why">Nearby read: the big events in {city} that date.</div>
         </section>
       )}
 

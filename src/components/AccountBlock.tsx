@@ -2,7 +2,9 @@ import { useState, useSyncExternalStore } from 'react';
 import {
   canSignIn,
   getAccount,
+  getPersonalLog,
   hasUnsyncedChanges,
+  subscribePersonalLog,
   isAccountSettling,
   signInWithEmail,
   signInWithGoogle,
@@ -21,6 +23,9 @@ export function AccountBlock() {
   const [email, setEmail] = useState('');
   const [note, setNote] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const hasEntries = log.added.length > 0;
 
   if (!canSignIn()) return null;
 
@@ -54,11 +59,22 @@ export function AccountBlock() {
 
   if (account) return null;
 
+  // After the first entry the block shrinks to one line until tapped (3.23).
+  if (hasEntries && !expanded) {
+    return (
+      <section className="account-block account-line" aria-label="Account">
+        <span>Sign in to keep your log safe.</span>
+        <button type="button" className="link-button" onClick={() => setExpanded(true)}>
+          Sign in
+        </button>
+      </section>
+    );
+  }
+
   return (
     <section className="account-block" aria-label="Account">
       <div className="account-copy">
-        {/* Placeholder tagline (Kylie, Oct 5): one line, to be replaced. */}
-        <div className="card-title">Keep your events safe</div>
+        <div className="card-title">Keep your log safe</div>
       </div>
       <button type="button" className="settings-row account-google" onClick={google} disabled={busy}>
         Continue with Google

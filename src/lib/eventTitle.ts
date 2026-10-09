@@ -44,8 +44,9 @@ function withSquadTag(title: string, tag: string | null): string {
     found = found ?? squadTag(onFirst[2]);
   }
   const second = vs[3].trim();
-  if (!found) return `${first} ${vs[2]} ${second}`;
-  return `${first} (${found}) ${vs[2]} ${second}`;
+  // "vs." everywhere, whatever the source wrote (Kylie, Oct 9, C086).
+  if (!found) return `${first} vs. ${second}`;
+  return `${first} (${found}) vs. ${second}`;
 }
 
 /**

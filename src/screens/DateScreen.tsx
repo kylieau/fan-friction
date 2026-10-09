@@ -229,9 +229,9 @@ export function DateScreen() {
               <span className="read-txt">{rating.headline}</span>
               {rating.detail ? <span className="read-detail">{rating.detail}</span> : null}
               <span className="read-meta">
-                {rating.method === 'hand' ? 'Hand-rated' : 'Formula v4'}
-                {ahead && locksAt ? ` · locks ${locksAt.toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit', timeZone: metro.timeZone })}` : ''}
-                {!ahead && rating.sources?.length ? ` · ${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
+                {/* No internal terms here (C069): the lock time ahead, the sources count after. */}
+                {ahead && locksAt ? `Locks ${locksAt.toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit', timeZone: metro.timeZone })}` : ''}
+                {!ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
               </span>
             </span>
           </>
@@ -306,7 +306,7 @@ export function DateScreen() {
               return (
                 <li key={e.id} className={`tl-row${yours || e.id === highlight ? ' yours' : ''}`}>
                   <Link to={eventPath(e.id, e.metroId)} className="tl-main">
-                    <span className="tl-time">{e.start ? clockTime(e.start) : '—'}</span>
+                    <span className="tl-time">{e.start ? clockTime(e.start) : 'TBA'}</span>
                     <span className="log-main">
                       <span className="log-title">{listTitle(e)}</span>
                       {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}

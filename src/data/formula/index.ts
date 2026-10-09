@@ -46,12 +46,10 @@ export function combine(scores: number[]): number {
   return Math.min(10, top + 0.25 * extra);
 }
 
-const fmt = (n: number) => Math.round(n).toLocaleString('en-US');
-
 /** "World Series Game 1 pulls on five other crowds." The seat figure is a detail line, not the headline. */
 function crowdFightWhy(cf: DateCrowdFight): string {
   const big = cf.events.filter((row) => row.competitors.length > 0);
-  if (cf.contestedSeats < 1000 || big.length === 0) return 'Nothing else big that night.';
+  if (cf.contestedSeats < 1000 || big.length === 0) return 'Nothing else big that date.';
   const n = cf.events.filter((row) => !row.event.invited && row.competitors.length > 0).length;
   const puller = cf.topPuller;
   if (puller && n >= 2) {
@@ -63,11 +61,14 @@ function crowdFightWhy(cf: DateCrowdFight): string {
 
 const COUNT = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 
-/** The seat figure behind the Crowd fight line, for the date page's detail line. */
-export function crowdFightDetail(cf: DateCrowdFight): string {
+/**
+ * The date page's detail line: "{City} activity across N events." (Kylie, Oct 9, C070). The
+ * seat total stays out of it: it read like another crowd count. Compare keeps the capacity math.
+ */
+export function crowdFightDetail(cf: DateCrowdFight, cityName: string): string {
   if (cf.contestedSeats < 1000) return '';
   const n = cf.events.filter((row) => !row.event.invited && row.competitors.length > 0).length;
-  return `${fmt(cf.contestedSeats)} seats in a fight across ${n} ${n === 1 ? 'event' : 'events'}.`;
+  return `${cityName} activity across ${n} ${n === 1 ? 'event' : 'events'}.`;
 }
 
 function conditionsWhy(rows: { event: CrowdEvent; conditions: EventConditions }[]): string {

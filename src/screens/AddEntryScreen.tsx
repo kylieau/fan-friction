@@ -66,7 +66,7 @@ export function AddEntryScreen() {
       <Link to="/you" className="back-link">
         <ChevronDown /> You
       </Link>
-      <h1 className="page-title">Add an event</h1>
+      <h1 className="page-title">Log an event</h1>
 
       {!typing && (
         <>
@@ -91,7 +91,7 @@ export function AddEntryScreen() {
 
           {trimmed.length >= 2 && hits && hits.length > 0 && (
             <section className="famous" aria-live="polite">
-              <h2 className="section-title">{hits.length === 1 ? '1 night' : `${hits.length} nights`}</h2>
+              <h2 className="section-title">{hits.length === 1 ? '1 date' : `${hits.length} dates`}</h2>
               <ul className="famous-list">
                 {hits.map((hit) => (
                   <li key={hit.date}>

@@ -34,6 +34,7 @@ export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: Read
 
   const byWord = LADDER.map((word) => ({ word, count: rated.filter((r) => scoreLabel(r.rating) === word).length })).filter((w) => w.count > 0);
   const sorted = [...rated].sort((a, b) => b.rating - a.rating);
+  const first = [...rated].sort((a, b) => a.entry.when.sort.localeCompare(b.entry.when.sort))[0];
   const heaviest = sorted[0];
   const quietest = sorted.length > 1 ? sorted[sorted.length - 1] : undefined;
   const usual = median(rated.map((r) => r.rating));
@@ -52,19 +53,24 @@ export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: Read
         </div>
       </div>
       {rated.length === 0 ? (
-        <p className="you-fine">{inScope.length === 0 ? 'No nights yet.' : 'No reads on these nights yet.'}</p>
+        <p className="you-fine">{inScope.length === 0 ? 'No events yet.' : 'No reads on these events yet.'}</p>
       ) : (
         <>
-          <div className="word-row" aria-label="Nights by read">
+          <div className="word-row" aria-label="Events by read">
             {byWord.map(({ word, count }) => (
               <span key={word} className={`word-pill ${word.toLowerCase()}`}>
                 <strong>{count}</strong> {word}
               </span>
             ))}
           </div>
-          {usual !== null && (
+          {/* "Your usual" means something after about three reads; before that, the first one (3.22). */}
+          {usual !== null && rated.length >= 3 ? (
             <p className="your-usual">
-              Your usual night is <strong>{scoreLabel(usual)}</strong>, {usual.toFixed(1)}.
+              Your usual read is <strong>{scoreLabel(usual)}</strong>, {usual.toFixed(1)}.
+            </p>
+          ) : (
+            <p className="your-usual">
+              Your first event was <strong>{scoreLabel(first.rating)}</strong>, {first.rating.toFixed(1)}.
             </p>
           )}
           <ul className="log-list">

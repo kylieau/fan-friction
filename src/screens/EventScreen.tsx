@@ -174,7 +174,7 @@ export function EventScreen() {
           <div className="verdict-why">{a.why}</div>
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
           {a.status === 'formula' && (
-            <div className="draft-note">{stampLocked ? 'Stamped' : 'Forecast'} · Formula v4 · placeholder numbers until tuned.</div>
+            <div className="draft-note">{stampLocked ? 'Stamped' : 'Forecast'}</div>
           )}
         </section>
       )}
@@ -195,9 +195,10 @@ export function EventScreen() {
             <span className="crowd-number small">Sold Out</span>
           ) : e.expectedDraw ? (
             <>
-              <span className="crowd-number">~{fmt(roundEstimate(e.expectedDraw.count))}</span>
+              {/* A building-only figure is a ceiling: "Up to N" (3.1, 3.3); a crowd-based one is "~N". */}
+              <span className="crowd-number">{e.expectedDraw.basis === 'building' ? `Up to ${fmt(roundEstimate(e.expectedDraw.count))}` : `~${fmt(roundEstimate(e.expectedDraw.count))}`}</span>
               <span className="crowd-kind">
-                People (Estimated)
+                People (Est.)
                 <HowButton onOpen={() => setShowHow(true)} />
               </span>
               {e.expectedDraw.fromCrowds && me.capacity && (
@@ -318,7 +319,11 @@ function aboutThisEstimate(event: CrowdEvent, seats: number | undefined): string
   if (d.low != null && d.high != null && roundEstimate(d.low) !== roundEstimate(d.high)) {
     parts.push(d.planning ? `A planning range: ${fmt(roundEstimate(d.low))} to ${fmt(roundEstimate(d.high))}.` : `Half of games land between ${fmt(roundEstimate(d.low))} and ${fmt(roundEstimate(d.high))}.`);
   }
-  if (seats && d.count > seats) parts.push(`${where} sells standing room, so crowds can top its ${fmt(seats)} seats.`);
+  // Over the listed seats (3.2): name standing room only where a standing figure is on file.
+  if (seats && d.count > seats) {
+    const standing = event.place.type === 'venue' ? VENUES[event.place.venueId]?.capacity.find((c) => c.standing)?.standing : undefined;
+    parts.push(standing ? `${where} sells standing room, so crowds can top its ${fmt(seats)} seats.` : 'Announced crowds here have topped the listed seats.');
+  }
   return parts.join(' ');
 }
 
@@ -346,26 +351,24 @@ function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; even
           {about ? 'About this estimate' : 'How estimates work'}
         </h1>
         {about && <p className="how-about">{about}</p>}
-        <h2 className="how-sub">How estimates work</h2>
+        {/* Short headed sections (Kylie, Oct 9, C071). */}
+        <h2 className="how-sub">Games</h2>
         <p className="home-helper">
-          <strong>A game:</strong> the crowd this team typically announced in this building on this kind of night, over the last
-          two or three seasons, nudged by how the team is drawing this season and how this visitor has drawn here. Never above
-          the building.
+          This team's typical announced crowd here on this kind of date, over the last two or three seasons, nudged by how
+          the team is drawing this season and how this visitor has drawn here.
         </p>
-        <p>
-          <strong>A playoff game:</strong> how full this building got at the team's past playoff games in this round, or the
-          league's when the team has too few; the building itself when neither is on file. The range shown is a planning
-          range, wider than a middle half; its low end is what counts toward friction. The bar under an estimate is the
-          crowd against the building's seats; it shows only when past crowds are behind the figure, and a building that
-          sells standing room can read full.
-        </p>
+        <h2 className="how-sub">Playoff games</h2>
         <p className="home-helper">
-          <strong>A show:</strong> a venue's own published average when it has one; otherwise the full room for a venue built
-          for shows, or {Math.round(CONCERT_FILL * 100)}% of an arena or stadium, the average fill of the ones that publish
-          their numbers.
+          How full this building got at past playoff games in this round, the team's or the league's. With none on file, the
+          building itself, as "Up to". The range is a planning range; its low end counts toward friction.
         </p>
-        <p className="home-helper">Teams announce tickets sold or handed out, not people through the gates.</p>
-        <p className="home-helper">An announced or reported count replaces the estimate when it lands.</p>
+        <h2 className="how-sub">Shows</h2>
+        <p className="home-helper">
+          The room's own published average when it has one; otherwise the full room for a venue built for shows, or{' '}
+          {Math.round(CONCERT_FILL * 100)}% of an arena or stadium.
+        </p>
+        <h2 className="how-sub">Counts</h2>
+        <p className="home-helper">Teams announce tickets sold or handed out, not people through the gates. An announced or reported count replaces the estimate when it lands.</p>
         <button type="button" className="home-city" onClick={onClose}>
           Done
         </button>

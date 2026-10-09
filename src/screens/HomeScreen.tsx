@@ -314,7 +314,7 @@ export function HomeScreen() {
         <section className="you-block" aria-labelledby="friends-heading">
           <div className="you-heading-row">
             <h2 id="friends-heading" className="you-heading">
-              Friends
+              Following
             </h2>
             <Link to="/you" className="link-more">
               All ›

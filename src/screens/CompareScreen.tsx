@@ -47,7 +47,7 @@ export function CompareScreen() {
           <ChevronDown /> You
         </Link>
         <h1 className="page-title">Compare</h1>
-        <p className="you-fine">Open a night you attended and tap Compare with…</p>
+        <p className="you-fine">Open an event you attended and tap Compare with…</p>
       </div>
     );
   }
@@ -90,8 +90,8 @@ function Picker({ a }: { a: NightKey }) {
       </Link>
       <h1 className="page-title">Compare with…</h1>
       {entries.length > 0 && (
-        <section className="you-block" aria-label="Your nights">
-          <h2 className="you-heading">Your nights</h2>
+        <section className="you-block" aria-label="Your events">
+          <h2 className="you-heading">Your events</h2>
           <ul className="log-list">
             {entries.map((entry) => (
               <li key={entry.id}>
@@ -222,7 +222,7 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
         {row('Conditions', part((p) => p.conditions))}
         {row('Gridlock', part((p) => p.gridlock))}
         {row('What else was on', others)}
-        {row('Your night', yours)}
+        {row('Your event', yours)}
         {row('Weather', weather)}
       </div>
       <ShareCard
@@ -233,8 +233,10 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
         crowd={null}
         buttonLabel={dayWord(A.day.events) === 'night' && dayWord(B.day.events) === 'night' ? 'Share these nights' : 'Share these events'}
       />
+      {/* How the parts become the read (3.6). */}
+      <p className="you-fine">The read is the strongest reason, plus a bump for each other strong one.</p>
       <Link to={comparePath(A.key)} className="text-link">
-        Compare with another night
+        Compare with another event
       </Link>
     </div>
   );

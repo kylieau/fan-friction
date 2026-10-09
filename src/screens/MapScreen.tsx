@@ -316,6 +316,8 @@ export function MapScreen() {
                 {points.length === 0 && <li className="map-key-empty">Nothing big on this date.</li>}
                 <li className="map-key-glow">Gold glow is the size of the crowd</li>
                 <li className="map-key-ring">Pale ring is the one you picked</li>
+                <li className="map-key-note">The date's read, 1–10, from three reasons: crowd fight, gridlock, conditions.</li>
+                <li className="map-key-note">An event's friction, Moderate to Extreme, is its own fight for a crowd.</li>
               </ul>
             </div>
           )}
@@ -517,7 +519,7 @@ function EventRow({
   href?: string;
 }) {
   const badges = sheetBadges(e);
-  const time = e.start ? clockTime(e.start) : 'Time n/a';
+  const time = e.start ? clockTime(e.start) : 'Time TBA';
   const crowd = crowdShort(e);
   const detail = showDate ? `${shortLocalDate(e.date)} · ${time} · ${crowd}` : `${time} · ${crowd}`;
   const venue = sheetVenue(e);

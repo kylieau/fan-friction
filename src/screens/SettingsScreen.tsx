@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom';
 import { AccountRow } from '../components/AccountBlock';
 import { ProfileForm } from './ProfileEditScreen';
 import { ChevronDown } from '../components/Icons';
-import { DEFAULT_METRO } from '../config/metros';
+import { DEFAULT_METRO, METROS } from '../config/metros';
+import { HomePicker } from '../components/HomePicker';
+import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn } from '../data';
 
 /** Behind the gear on You: account, profile, backup, tips. */
-export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
+export function SettingsScreen() {
+  const [changingHome, setChangingHome] = useState(false);
+  const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [handle, setHandle] = useState<string | null>(null);
@@ -101,10 +105,16 @@ export function SettingsScreen({ onShowTips }: { onShowTips: () => void }) {
       </div>
 
       <div className="settings">
-        <div className="settings-heading">App</div>
-        <button type="button" className="settings-row" onClick={onShowTips}>
-          Show the tips again
+        <div className="settings-heading">Home city</div>
+        <button type="button" className="settings-row settings-link" onClick={() => setChangingHome(true)}>
+          <span>{homeId ? METROS[homeId]?.name ?? 'Change home' : 'Choose home'}</span>
+          <span className="settings-value">Change</span>
         </button>
+      </div>
+      {changingHome && <HomePicker onDone={() => setChangingHome(false)} />}
+
+      <div className="settings">
+        <div className="settings-heading">App</div>
         <p className="you-fine">
           Weather data by{' '}
           <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">

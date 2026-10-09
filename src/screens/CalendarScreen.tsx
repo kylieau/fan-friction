@@ -182,7 +182,9 @@ export function CalendarPanel({ metro, today, focus, onPick }: { metro: Metro; t
 
           {famous && famous.length > 0 && (
             <section className="famous">
-              <h2 className="section-title">Famous nights</h2>
+              <h2 className="section-title">
+                Famous nights <span className="section-note">Newest first</span>
+              </h2>
               <ul className="famous-list">
                 {famous.map((entry) => (
                   <li key={entry.date}>
