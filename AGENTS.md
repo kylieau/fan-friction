@@ -40,7 +40,7 @@ Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which 
   - `src/map/` MapLibre map, pins, chips
   - `src/lib/` small helpers (dates, titles, sheet drag, view)
   - `src/config/` app name, metros, score labels, theme
-  - `docs/` product decisions and what's still in play; `docs/research-queue/` prompts awaiting answers; `docs/gap-reviews/` and `docs/tester-readiness-reviews/` independent reviews of the app and of tester readiness (saved with author, date and time; see their READMEs; none is a decision); `docs/archive/` finished research (see `docs/README.md`); `design/wireframes/` older mockups
+  - `docs/` product decisions and what's still in play; `docs/research-queue/` prompts awaiting answers; `docs/reviews/gap-reviews/` and `docs/reviews/tester-readiness-reviews/` independent reviews of the app and of tester readiness (saved with author, date and time; see their READMEs; none is a decision); `docs/archive/` finished research (see `docs/README.md`); `design/wireframes/` older mockups
   - `data/schedule-archive/` nightly Los Angeles listings (not shown in the app)
   - `MEMORY_HANDOFF.md` and `BACKLOG.md` in the root: current state and deferred work
 

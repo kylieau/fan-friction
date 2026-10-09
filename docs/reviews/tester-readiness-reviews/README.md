@@ -1,6 +1,6 @@
 # Tester readiness reviews
 
-Dated reviews of whether a tester can use Fan/Friction's main flows without help. Findings and possible fixes are review input, not approved build instructions. The interview procedure remains in [tester-interview-guide.md](../tester-interview-guide.md).
+Dated reviews of whether a tester can use Fan/Friction's main flows without help. Findings and possible fixes are review input, not approved build instructions. The interview procedure remains in [tester-interview-guide.md](../../tester-interview-guide.md).
 
 Each review records its author, save time in Pacific time, task results, verification limits and evidence. Save future reviews as separate dated files rather than replacing earlier snapshots. Private tester material stays in the ignored private folder.
 

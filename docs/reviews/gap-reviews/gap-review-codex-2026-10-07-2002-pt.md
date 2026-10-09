@@ -33,7 +33,7 @@ When the app converts past plans to attended entries, a failed lookup or missing
 
 **Potential solution:** Remove a plan only after its attended entry exists. Retain unresolved plans for retry and preserve enough event information for a night to remain loggable when its listing disappears.
 
-**Evidence:** [src/data/personalLog.ts:484](../../src/data/personalLog.ts#L484).
+**Evidence:** [src/data/personalLog.ts:484](../../../src/data/personalLog.ts#L484).
 
 ### D02 Two devices can overwrite each other’s logs
 
@@ -43,7 +43,7 @@ Saving writes the device’s entire log, then deletes account entries absent fro
 
 **Potential solution:** Save individual additions, edits and removals; handle conflicting edits explicitly and serialize saves on each device.
 
-**Evidence:** [src/data/storage/supabaseStore.ts:133](../../src/data/storage/supabaseStore.ts#L133).
+**Evidence:** [src/data/storage/supabaseStore.ts:133](../../../src/data/storage/supabaseStore.ts#L133).
 
 ### D03 An offline edit can revert when the app reopens
 
@@ -53,7 +53,7 @@ The phone retains failed saves, but on account loading the account’s version w
 
 **Potential solution:** Retain unsynced changes and replay them after reconnecting. Surface a short pending or failed-save status where the edit happens.
 
-**Evidence:** [src/data/storage/index.ts:63](../../src/data/storage/index.ts#L63), [src/data/personalLog.ts:99](../../src/data/personalLog.ts#L99).
+**Evidence:** [src/data/storage/index.ts:63](../../../src/data/storage/index.ts#L63), [src/data/personalLog.ts:99](../../../src/data/personalLog.ts#L99).
 
 ### D04 The offline cache includes private account data
 
@@ -63,7 +63,7 @@ The rule described as caching the shared catalog matches every Supabase data GET
 
 **Potential solution:** Restrict caching to explicitly public catalog tables. If private offline storage is wanted, give it account boundaries and sign-out cleanup.
 
-**Evidence:** [vite.config.ts:64](../../vite.config.ts#L64).
+**Evidence:** [vite.config.ts:64](../../../vite.config.ts#L64).
 
 ### D05 Stamped does not reliably mean the night has locked
 
@@ -73,7 +73,7 @@ The date page calls today Stamped while the event page calls today Forecast. Bot
 
 **Potential solution:** Give all screens one shared answer for the read’s value, status and basis. Use the actual lock time and preserve the approved distinction between a saved forecast basis and a reconstructed night. Formula updates can still recalculate records under the existing decision.
 
-**Evidence:** [src/screens/DateScreen.tsx:95](../../src/screens/DateScreen.tsx#L95), [src/data/read.ts:412](../../src/data/read.ts#L412).
+**Evidence:** [src/screens/DateScreen.tsx:95](../../../src/screens/DateScreen.tsx#L95), [src/data/read.ts:412](../../../src/data/read.ts#L412).
 
 ### D06 Manually logged nights can miss a nearby read
 
@@ -83,7 +83,7 @@ The score lookup loads the catalog, but the eligibility check for a small hand-e
 
 **Potential solution:** Check the same complete event list used to calculate the date’s read.
 
-**Evidence:** [src/data/personalLog.ts:589](../../src/data/personalLog.ts#L589).
+**Evidence:** [src/data/personalLog.ts:589](../../../src/data/personalLog.ts#L589).
 
 ### D07 Tied friction components calculate incorrectly
 
@@ -93,7 +93,7 @@ The combination rule removes every component tied for highest rather than removi
 
 **Potential solution:** Count the other tied component normally. This corrects the existing formula without changing or tuning its weights.
 
-**Evidence:** [src/data/formula/index.ts:40](../../src/data/formula/index.ts#L40).
+**Evidence:** [src/data/formula/index.ts:40](../../../src/data/formula/index.ts#L40).
 
 ### D08 Add-event search silently searches only home
 
@@ -103,7 +103,7 @@ Someone whose home is Los Angeles can receive no match for a covered New York ev
 
 **Potential solution:** Make search scope visible and changeable without changing home.
 
-**Evidence:** [src/screens/AddEntryScreen.tsx:58](../../src/screens/AddEntryScreen.tsx#L58).
+**Evidence:** [src/screens/AddEntryScreen.tsx:58](../../../src/screens/AddEntryScreen.tsx#L58).
 
 ### D09 A manually entered date, title or venue cannot be corrected
 
@@ -113,7 +113,7 @@ Edit changes Review and With only. Fixing identifying details requires removing 
 
 **Potential solution:** Allow correction of identifying details on manual entries while keeping sourced event facts governed by their sources.
 
-**Evidence:** [src/components/EntryLayer.tsx:38](../../src/components/EntryLayer.tsx#L38).
+**Evidence:** [src/components/EntryLayer.tsx:38](../../../src/components/EntryLayer.tsx#L38).
 
 ## UX/UI visual findings
 
@@ -290,7 +290,7 @@ The checkout was at `20abaa5`; Claude was actively changing other documents duri
 | **UX09** | Partly addressed in the current code: crowd-backed estimates now open with “About this estimate” and an event-specific basis and range before the general explanation. Withdraw the blanket claim that every opening begins with regular-season games. Rule-based shows still have no specific opening, and the general section still starts with games; Done remains last. Those remaining scanability concerns need a fresh visual check before treating the old screenshot as current. |
 | **UX10** | “Your usual” as the median is an approved statistic. A median of one entry is mathematically valid. My concern is the language implying an established pattern with one observation, plus duplication and the unexplained hours count; keep the median feature and propose any wording change. |
 
-Sources: [account rules](../accounts-proposal.md), [entry decisions](../archive/proposals/entry-proposal-oct6.md), [Compare proposal](../compare-proposal-oct6.md), [later forecast-freeze decision](../product-review-decisions.md), [automatic attendance decision](../big-picture-plan-oct6.md), [current estimate-card decisions](../expected-draw-decisions-oct7.md), and [backlog](../../BACKLOG.md).
+Sources: [account rules](../../accounts-proposal.md), [entry decisions](../../archive/proposals/entry-proposal-oct6.md), [Compare proposal](../../compare-proposal-oct6.md), [later forecast-freeze decision](../../product-review-decisions.md), [automatic attendance decision](../../big-picture-plan-oct6.md), [current estimate-card decisions](../../expected-draw-decisions-oct7.md), and [backlog](../../../BACKLOG.md).
 
 ### D10 Current instructions and historical records are easy to confuse
 
@@ -300,7 +300,7 @@ Sources: [account rules](../accounts-proposal.md), [entry decisions](../archive/
 
 **Potential solution:** Preserve historical decision text, but mark historical descriptions clearly and give current operational documents a compact, dated status section linking to the latest decisions. Reconcile the handoff through the existing sync procedure when Claude finishes. Do not rewrite assistant proposals as Kylie's rules.
 
-**Evidence:** [backlog](../../BACKLOG.md), [data sources](../data-sources.md), [schedule archive](../schedule-archive.md), [build plan](../big-picture-plan-oct6.md), [latest decisions](../expected-draw-decisions-oct7.md), [nightly workflow](../../.github/workflows/schedule-archive.yml).
+**Evidence:** [backlog](../../../BACKLOG.md), [data sources](../../data-sources.md), [schedule archive](../../schedule-archive.md), [build plan](../../big-picture-plan-oct6.md), [latest decisions](../../expected-draw-decisions-oct7.md), [nightly workflow](../../../.github/workflows/schedule-archive.yml).
 
 ### D11 The playoff explanation can misattribute its evidence
 
@@ -310,7 +310,7 @@ The playoff estimator distinguishes team, blended and league evidence, but the e
 
 **Potential solution:** Carry the evidence basis into the existing card. For a league fallback, say it uses comparable league playoff crowds, scaled to this building; for a blend, identify both sources. Show the standing-room explanation where venue evidence supports it. Keep this within the existing ⓘ card, without adding fine print to the page or changing the approved fullness words and bar.
 
-**Evidence:** [playoff estimator](../../src/data/expectedDraw.ts#L62), [explanation builder](../../src/screens/EventScreen.tsx#L299), [postseason check and league-pool caveat](../postseason-check.md). This pass traced the generated wording; it did not capture a specific fallback event in a browser.
+**Evidence:** [playoff estimator](../../../src/data/expectedDraw.ts#L62), [explanation builder](../../../src/screens/EventScreen.tsx#L299), [postseason check and league-pool caveat](../../postseason-check.md). This pass traced the generated wording; it did not capture a specific fallback event in a browser.
 
 ### D12 Attendance-estimate accuracy does not validate the whole friction read
 
@@ -320,7 +320,7 @@ The expected-draw checks demonstrate that historical crowds can improve sizing o
 
 **Potential solution:** Keep three kinds of evidence separate in future reviews: attendance-estimate error, evidence for each friction component, and whether users understand and value the read. Continue scoring estimates saved before games; use the existing tester interview to investigate what users think the read describes, without tuning to their personal ratings. When concert history exists, revisit the parked competition check under a predeclared design. No formula or constant change is proposed here.
 
-**Evidence:** [expected-draw check](../expected-draw-check.md), [distance check and its caveats](../distance-check.md), [Kylie's decision to leave the discount out](../expected-draw-decisions-oct7.md), [tester interview guide](../tester-interview-guide.md).
+**Evidence:** [expected-draw check](../../expected-draw-check.md), [distance check and its caveats](../../distance-check.md), [Kylie's decision to leave the discount out](../../expected-draw-decisions-oct7.md), [tester interview guide](../../tester-interview-guide.md).
 
 ### Known limitations to carry forward, without reopening them
 

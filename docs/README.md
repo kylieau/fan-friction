@@ -5,8 +5,8 @@ What's here is what's still in play. Finished research lives in `archive/`.
 | Folder | What it holds |
 |---|---|
 | `docs/` | Product direction and decisions, the build plan, the current formula (`formula-v4.md`), the new-city checklist, data sources, UX notes, test nights, the tester kit. Plus two prompts the new-city checklist uses as templates (`la-venue-table-prompt.md`, `seattle-city-type-prompt.md`). |
-| `gap-reviews/` | Independent reviews of the app (Codex, GrokBot/Cursor), each with its screenshots under `assets/`. Open until their items are decided. See its README. |
-| `tester-readiness-reviews/` | Independent reviews of whether a tester can use the main flows unaided (Codex, GrokBot), with screenshots under `assets/`. Open until their findings are decided. See its README. |
+| `reviews/gap-reviews/` | Independent reviews of the app (Codex, GrokBot/Cursor), each with its screenshots under `assets/`. Open until their items are decided. See its README. |
+| `reviews/tester-readiness-reviews/` | Independent reviews of whether a tester can use the main flows unaided (Codex, GrokBot), with screenshots under `assets/`. Open until their findings are decided. See its README. |
 | `research-queue/` | Prompts that have gone out and are waiting for an answer. |
 | `archive/research/` | Answered prompts and their answers, by city and topic. Still cited by the code as sources. |
 | `archive/second-opinions/` | Second-opinion prompts and answers. |
