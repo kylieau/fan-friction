@@ -27,8 +27,9 @@ import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { AreaSwitcher } from '../components/AreaSwitcher';
 import { DateScore } from '../components/DateScore';
-import { ArrowRight, ChevronDown, RecenterIcon, SearchIcon } from '../components/Icons';
-import { dayWordFor } from '../lib/dayWord';
+import { ArrowRight, RecenterIcon } from '../components/Icons';
+import { dayWordFor, tonightWord } from '../lib/dayWord';
+import { SearchSheet } from '../components/SearchSheet';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
@@ -50,6 +51,7 @@ const TRAFFIC_BUILT = false;
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
   const href = `${location.pathname}${location.search}`;
   const restored = useRef<MapMemory | null | undefined>(undefined);
@@ -229,21 +231,19 @@ export function MapScreen() {
       </div>
 
       <header className="map-header">
-        <div className="map-header-top">
+        {/* The city switcher alone, centered (Kylie, Oct 9, 6.1). Search moved to the day strip. */}
+        <div className="map-header-top centered">
           <div ref={areaRef}>
             <AreaSwitcher metro={metro} open={menu === 'area'} onOpenChange={(next) => setMenu(next ? 'area' : null)} />
           </div>
-          <button type="button" className="round-button" aria-label="Find a date" onClick={() => setMonthOpen(true)}>
-            <SearchIcon />
-          </button>
         </div>
         <div className="map-header-score">
           <div className="map-header-dateblock">
-            <button type="button" className="map-header-date" aria-label="Pick a date" aria-haspopup="dialog" aria-expanded={monthOpen} onClick={() => setMonthOpen((v) => !v)}>
+            {/* The big date is a label (6.1): Pick a date lives in search. */}
+            <h1 className="map-header-date">
               <span>{headerDate(date, today)}</span>
-              <ChevronDown />
               {pastLabel && <span className="map-header-past">{pastLabel}</span>}
-            </button>
+            </h1>
             {caption.trim() && <div className="map-header-count">{caption}</div>}
           </div>
           <DateScore
@@ -252,7 +252,7 @@ export function MapScreen() {
             showScore={showScore}
           />
         </div>
-        <DayStrip metro={metro} today={today} date={date} />
+        <DayStrip metro={metro} today={today} date={date} onSearch={() => setSearchOpen(true)} />
         <div className="map-chrome">
           <div className="map-chrome-left">
             {showFeels && dayRange && (
@@ -404,6 +404,22 @@ export function MapScreen() {
         </div>
       </section>
 
+      {searchOpen && (
+        <SearchSheet
+          homeId={metro.id}
+          today={today}
+          tonightWord={tonightWord(events)}
+          onClose={() => setSearchOpen(false)}
+          onPick={(picked, metroId) => {
+            setSearchOpen(false);
+            navigate(mapPath({ metroId, date: picked, today }));
+          }}
+          onPickDate={() => {
+            setSearchOpen(false);
+            setMonthOpen(true);
+          }}
+        />
+      )}
       {monthOpen && (
         <MonthSheet
           metro={metro}

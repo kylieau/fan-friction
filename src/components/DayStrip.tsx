@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight } from './Icons';
+import { ChevronLeft, ChevronRight, SearchIcon } from './Icons';
 import type { Metro } from '../config/metros';
 import { getCityDate } from '../data';
 import { addDays, daysBetween } from '../lib/dates';
@@ -24,7 +24,7 @@ type Read = { rating: number | null; empty?: EmptyKind };
  * the mark every calendar app uses, so nobody has to know the date. Reads on
  * days ahead sit back a little, since they are forecasts.
  */
-export function DayStrip({ metro, today, date }: { metro: Metro; today: string; date: string }) {
+export function DayStrip({ metro, today, date, onSearch }: { metro: Metro; today: string; date: string; onSearch?: () => void }) {
   // The row is anchored on today unless the viewed day is far from it (a famous night).
   const anchor = Math.abs(daysBetween(today, date)) <= BACK ? today : date;
   const days = Array.from({ length: BACK + 1 + AHEAD }, (_, i) => addDays(anchor, i - BACK));
@@ -64,16 +64,23 @@ export function DayStrip({ metro, today, date }: { metro: Metro; today: string; 
 
   return (
     <div className="day-strip-wrap">
-      {/* A way back to today, on the edge today is off toward (Kylie, Oct 6): left when looking ahead, right when looking back. */}
+      {/* A way back to today, on the edge today is off toward (Kylie, Oct 6): left when looking ahead, right when looking back.
+          On the right it sits just inside search, smaller, so search stays last (Kylie, Oct 9, 6.1). */}
       {date !== today && (
         <Link
           to={mapPath({ metroId: metro.id, date: today, today })}
-          className={`day-today-tab${date < today ? ' right' : ''}`}
+          className={`day-today-tab${date < today ? ' right' : ''}${date < today && onSearch ? ' beside-search' : ''}`}
           aria-label="Back to today"
         >
           {date < today ? <ChevronRight /> : <ChevronLeft />}
           Today
         </Link>
+      )}
+      {/* Search, pinned at the strip's right end (6.1). It may cover the last cell; the strip scrolls. */}
+      {onSearch && (
+        <button type="button" className="round-button strip-search" aria-label="Search" onClick={onSearch}>
+          <SearchIcon />
+        </button>
       )}
       <div className="day-strip" ref={stripRef} role="tablist" aria-label="Days">
         {days.map((d) => {
