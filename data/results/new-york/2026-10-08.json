@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-08",
+  "results": [
+    {
+      "eventId": "2026-10-08-espn-islanders-401892462",
+      "metroId": "new-york",
+      "date": "2026-10-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ubs-arena",
+      "homeTeamId": "islanders",
+      "home": {
+        "name": "Islanders",
+        "score": 4
+      },
+      "away": {
+        "name": "Blackhawks",
+        "score": 1
+      },
+      "attendance": 13946,
+      "capturedAt": "2026-10-09T14:27:43.605Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "16:38"
+    },
+    {
+      "eventId": "2026-10-08-espn-knicks-401906508",
+      "metroId": "new-york",
+      "date": "2026-10-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 109
+      },
+      "away": {
+        "name": "Wizards",
+        "score": 111
+      },
+      "attendance": 17960,
+      "capturedAt": "2026-10-09T14:27:43.605Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "16:41"
+    },
+    {
+      "eventId": "2026-10-08-espn-nets-401901823",
+      "metroId": "new-york",
+      "date": "2026-10-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "barclays-center",
+      "homeTeamId": "nets",
+      "home": {
+        "name": "Nets",
+        "score": 114
+      },
+      "away": {
+        "name": "76ers",
+        "score": 108
+      },
+      "attendance": 16785,
+      "capturedAt": "2026-10-09T14:27:43.605Z",
+      "duration": {
+        "minutes": 164,
+        "kind": "estimated"
+      },
+      "startedAt": "16:22"
+    }
+  ]
+}

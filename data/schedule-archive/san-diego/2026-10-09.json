@@ -1,0 +1,887 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "metroName": "San Diego",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-09",
+  "capturedAt": "2026-10-09T14:26:42.752Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-09",
+    "through": "2026-10-23"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 2
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 16
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-09-tm-vvG1IZ_F5TB6n1",
+      "metroId": "san-diego",
+      "date": "2026-10-09",
+      "start": "12:00",
+      "kind": "show",
+      "title": "Niteharts Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "snapdragon-stadium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Niteharts Festival",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_F5TB6n1",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 19950,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-vvG1IZbgXbSgVe",
+      "metroId": "san-diego",
+      "date": "2026-10-09",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jack Johnson",
+      "place": {
+        "type": "venue",
+        "venueId": "north-island-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jack Johnson",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZbgXbSgVe",
+      "expectedDraw": {
+        "count": 20500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-vvG1IZ_F5TBMn9",
+      "metroId": "san-diego",
+      "date": "2026-10-10",
+      "start": "12:00",
+      "kind": "show",
+      "title": "Niteharts Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "snapdragon-stadium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Niteharts Festival",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_F5TBMn9",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 19950,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-Z7r9jZ1A7PEas",
+      "metroId": "san-diego",
+      "date": "2026-10-10",
+      "start": "12:00",
+      "kind": "special",
+      "title": "San Diego Toreros Womens Volleyball vs. Pepperdine Waves Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "jenny-craig-pavilion"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "San Diego Toreros Womens Volleyball",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PEas"
+    },
+    {
+      "id": "2026-10-10-ht-san-diego-gulls-1029118",
+      "metroId": "san-diego",
+      "date": "2026-10-10",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Gulls vs. Silver Knights",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "san-diego-gulls",
+        "away": "silver-knights"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 10444,
+        "low": 7409,
+        "high": 11550,
+        "fromCrowds": true,
+        "games": 35,
+        "seasons": "2023–2025",
+        "note": "Typical announced crowd here for a Saturday: 35 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-vvG1IZbMExObDZ",
+      "metroId": "san-diego",
+      "date": "2026-10-10",
+      "start": "20:30",
+      "kind": "show",
+      "title": "MANÁ",
+      "place": {
+        "type": "venue",
+        "venueId": "north-island-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "MANÁ",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZbMExObDZ",
+      "expectedDraw": {
+        "count": 20500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-vvG1IZ_F5TDEnj",
+      "metroId": "san-diego",
+      "date": "2026-10-11",
+      "start": "12:00",
+      "kind": "show",
+      "title": "Niteharts Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "snapdragon-stadium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Niteharts Festival",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_F5TDEnj",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 19950,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-vvG1IZ_1UoDk-X",
+      "metroId": "san-diego",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "for KING & COUNTRY",
+      "place": {
+        "type": "venue",
+        "venueId": "rady-shell"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "for KING & COUNTRY",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_1UoDk-X",
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-vvG1IZ_a3NPpAU",
+      "metroId": "san-diego",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Taking Back Sunday",
+      "place": {
+        "type": "venue",
+        "venueId": "petco-park"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Taking Back Sunday",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_a3NPpAU",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-vvG1IZ_FBVqMW5",
+      "metroId": "san-diego",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Geese",
+      "place": {
+        "type": "venue",
+        "venueId": "petco-park"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Geese",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_FBVqMW5",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-14-ht-san-diego-gulls-1029135",
+      "metroId": "san-diego",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Gulls vs. Reign",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "san-diego-gulls",
+        "away": "reign"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5591,
+        "low": 5376,
+        "high": 5745,
+        "fromCrowds": true,
+        "games": 33,
+        "seasons": "2023–2025",
+        "note": "Typical announced crowd here for a weeknight: 33 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-san-diego-fc-761872",
+      "metroId": "san-diego",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "San Diego FC vs. Houston",
+      "place": {
+        "type": "venue",
+        "venueId": "snapdragon-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "san-diego-fc",
+        "away": "houston"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 27962,
+        "low": 27127,
+        "high": 28600,
+        "fromCrowds": true,
+        "games": 16,
+        "seasons": "2025",
+        "note": "Typical announced crowd here for a home game: 16 games, 2025."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-vvG1IZ_Cks8Id5",
+      "metroId": "san-diego",
+      "date": "2026-10-15",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Turnpike Troubadours",
+      "place": {
+        "type": "venue",
+        "venueId": "petco-park"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Turnpike Troubadours",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_Cks8Id5",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vvG1IZ_18W2pnn",
+      "metroId": "san-diego",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "MUNA",
+      "place": {
+        "type": "venue",
+        "venueId": "rady-shell"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "MUNA",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_18W2pnn",
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-vvG1IZ_ap-YIAd",
+      "metroId": "san-diego",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "G-Eazy",
+      "place": {
+        "type": "venue",
+        "venueId": "north-island-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "G-Eazy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_ap-YIAd",
+      "expectedDraw": {
+        "count": 20500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-Z7r9jZ1A7-w7J",
+      "metroId": "san-diego",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bonnie Raitt",
+      "place": {
+        "type": "venue",
+        "venueId": "rady-shell"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Bonnie Raitt",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-w7J",
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-sdsu-football-401860904",
+      "metroId": "san-diego",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "San Diego St vs. Fresno St",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "snapdragon-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sdsu-football",
+        "away": "fresno-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 27122,
+        "low": 27030,
+        "high": 29215,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2024",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2024."
+      }
+    },
+    {
+      "id": "2026-10-21-ht-san-diego-gulls-1029173",
+      "metroId": "san-diego",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Gulls vs. Firebirds",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "san-diego-gulls",
+        "away": "firebirds"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5081,
+        "low": 4886,
+        "high": 5221,
+        "fromCrowds": true,
+        "games": 33,
+        "seasons": "2023–2025",
+        "note": "Typical announced crowd here for a weeknight: 33 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vvG1IZ_ampfFN9",
+      "metroId": "san-diego",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Foster the People",
+      "place": {
+        "type": "venue",
+        "venueId": "petco-park"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Foster the People",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_ampfFN9",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG1IZ_7R1Et1i",
+      "metroId": "san-diego",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Juanes",
+      "place": {
+        "type": "venue",
+        "venueId": "petco-park"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Juanes",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_7R1Et1i",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG1IZ_185x9WF",
+      "metroId": "san-diego",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Madeon",
+      "place": {
+        "type": "venue",
+        "venueId": "rady-shell"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Madeon",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_185x9WF",
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-09-tm-vvG1IZ_F5TB6n1",
+      "date": "2026-10-09",
+      "start": "12:00",
+      "read": {
+        "rating": 7.3,
+        "friction": "Moderate",
+        "why": "95° feels-like at a 12:00 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19950
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-vvG1IZbgXbSgVe",
+      "date": "2026-10-09",
+      "start": "19:30",
+      "read": {
+        "rating": 7.3,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20500
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-vvG1IZ_F5TBMn9",
+      "date": "2026-10-10",
+      "start": "12:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19950
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-Z7r9jZ1A7PEas",
+      "date": "2026-10-10",
+      "start": "12:00",
+      "read": {
+        "rating": 3.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-10-ht-san-diego-gulls-1029118",
+      "date": "2026-10-10",
+      "start": "18:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "MANÁ 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10444,
+        "low": 7409,
+        "high": 11550
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-vvG1IZbMExObDZ",
+      "date": "2026-10-10",
+      "start": "20:30",
+      "read": {
+        "rating": 3.4,
+        "friction": "Low",
+        "why": "Gulls vs. Silver Knights 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20500
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG1IZ_F5TDEnj",
+      "date": "2026-10-11",
+      "start": "12:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19950
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG1IZ_1UoDk-X",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Taking Back Sunday 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10000
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG1IZ_a3NPpAU",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "for KING & COUNTRY 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22720
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-vvG1IZ_FBVqMW5",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22720
+      }
+    },
+    {
+      "eventId": "2026-10-14-ht-san-diego-gulls-1029135",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "San Diego FC vs. Houston 5.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5591,
+        "low": 5376,
+        "high": 5745
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-san-diego-fc-761872",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 27962,
+        "low": 27127,
+        "high": 28600
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-vvG1IZ_Cks8Id5",
+      "date": "2026-10-15",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22720
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1IZ_18W2pnn",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 7.1,
+        "friction": "Low",
+        "why": "G-Eazy 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10000
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1IZ_ap-YIAd",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 7.1,
+        "friction": "Low",
+        "why": "MUNA 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20500
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-Z7r9jZ1A7-w7J",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "San Diego St vs. Fresno St 6.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10000
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-sdsu-football-401860904",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Bonnie Raitt 6.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 27122,
+        "low": 27030,
+        "high": 29215
+      }
+    },
+    {
+      "eventId": "2026-10-21-ht-san-diego-gulls-1029173",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 5081,
+        "low": 4886,
+        "high": 5221
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vvG1IZ_ampfFN9",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22720
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1IZ_7R1Et1i",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22720
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1IZ_185x9WF",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10000
+      }
+    }
+  ]
+}

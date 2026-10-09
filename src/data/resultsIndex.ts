@@ -379,6 +379,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "15:07"
   },
   {
+    "eventId": "2026-10-08-mlb-849832",
+    "metroId": "chicago",
+    "date": "2026-10-08",
+    "sourceId": "mlb",
+    "status": "final",
+    "venueId": "rate-field",
+    "homeTeamId": "white-sox",
+    "home": {
+      "name": "White Sox",
+      "score": 5
+    },
+    "away": {
+      "name": "Guardians",
+      "score": 9
+    },
+    "capturedAt": "2026-10-09T14:27:44.457Z",
+    "attendance": 39920,
+    "duration": {
+      "minutes": 219,
+      "kind": "official"
+    },
+    "startedAt": "19:08"
+  },
+  {
     "eventId": "2026-10-05-espn-dallas-stars-401892448",
     "metroId": "dallas-fort-worth",
     "date": "2026-10-05",
@@ -401,6 +425,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "17:08"
+  },
+  {
+    "eventId": "2026-10-08-espn-cowboys-401872980",
+    "metroId": "dallas-fort-worth",
+    "date": "2026-10-08",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "att-stadium",
+    "homeTeamId": "cowboys",
+    "home": {
+      "name": "Cowboys",
+      "score": 16
+    },
+    "away": {
+      "name": "Buccaneers",
+      "score": 24
+    },
+    "attendance": 92351,
+    "capturedAt": "2026-10-09T14:27:44.672Z",
+    "duration": {
+      "minutes": 183,
+      "kind": "estimated"
+    },
+    "startedAt": "17:15"
   },
   {
     "eventId": "2026-10-03-espn-usc-football-401858478",
@@ -548,6 +596,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:08"
   },
   {
+    "eventId": "2026-10-08-espn-lakers-401898717",
+    "metroId": "la",
+    "date": "2026-10-08",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "crypto-com-arena",
+    "homeTeamId": "lakers",
+    "home": {
+      "name": "Lakers",
+      "score": 114
+    },
+    "away": {
+      "name": "Sacramento Kings",
+      "score": 110
+    },
+    "attendance": 18350,
+    "capturedAt": "2026-10-09T14:27:42.144Z",
+    "duration": {
+      "minutes": 152,
+      "kind": "estimated"
+    },
+    "startedAt": "19:48"
+  },
+  {
     "eventId": "2026-10-06-espn-canadiens-401891815",
     "metroId": "montreal",
     "date": "2026-10-06",
@@ -570,6 +642,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "16:17"
+  },
+  {
+    "eventId": "2026-10-08-espn-canadiens-401892459",
+    "metroId": "montreal",
+    "date": "2026-10-08",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "bell-centre",
+    "homeTeamId": "canadiens",
+    "home": {
+      "name": "Canadiens",
+      "score": 2
+    },
+    "away": {
+      "name": "Predators",
+      "score": 5
+    },
+    "attendance": 20962,
+    "capturedAt": "2026-10-09T14:27:44.874Z",
+    "duration": {
+      "minutes": 155,
+      "kind": "estimated"
+    },
+    "startedAt": "16:08"
   },
   {
     "eventId": "2026-10-03-espn-columbia-football-401867819",
@@ -757,6 +853,78 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "official"
     },
     "startedAt": "20:09"
+  },
+  {
+    "eventId": "2026-10-08-espn-islanders-401892462",
+    "metroId": "new-york",
+    "date": "2026-10-08",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ubs-arena",
+    "homeTeamId": "islanders",
+    "home": {
+      "name": "Islanders",
+      "score": 4
+    },
+    "away": {
+      "name": "Blackhawks",
+      "score": 1
+    },
+    "attendance": 13946,
+    "capturedAt": "2026-10-09T14:27:43.605Z",
+    "duration": {
+      "minutes": 152,
+      "kind": "estimated"
+    },
+    "startedAt": "16:38"
+  },
+  {
+    "eventId": "2026-10-08-espn-knicks-401906508",
+    "metroId": "new-york",
+    "date": "2026-10-08",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "madison-square-garden",
+    "homeTeamId": "knicks",
+    "home": {
+      "name": "Knicks",
+      "score": 109
+    },
+    "away": {
+      "name": "Wizards",
+      "score": 111
+    },
+    "attendance": 17960,
+    "capturedAt": "2026-10-09T14:27:43.605Z",
+    "duration": {
+      "minutes": 136,
+      "kind": "estimated"
+    },
+    "startedAt": "16:41"
+  },
+  {
+    "eventId": "2026-10-08-espn-nets-401901823",
+    "metroId": "new-york",
+    "date": "2026-10-08",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "barclays-center",
+    "homeTeamId": "nets",
+    "home": {
+      "name": "Nets",
+      "score": 114
+    },
+    "away": {
+      "name": "76ers",
+      "score": 108
+    },
+    "attendance": 16785,
+    "capturedAt": "2026-10-09T14:27:43.605Z",
+    "duration": {
+      "minutes": 164,
+      "kind": "estimated"
+    },
+    "startedAt": "16:22"
   },
   {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",

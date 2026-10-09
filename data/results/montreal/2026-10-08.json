@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-10-08",
+  "results": [
+    {
+      "eventId": "2026-10-08-espn-canadiens-401892459",
+      "metroId": "montreal",
+      "date": "2026-10-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 2
+      },
+      "away": {
+        "name": "Predators",
+        "score": 5
+      },
+      "attendance": 20962,
+      "capturedAt": "2026-10-09T14:27:44.874Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "16:08"
+    }
+  ]
+}

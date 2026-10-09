@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-08",
+  "results": [
+    {
+      "eventId": "2026-10-08-espn-cowboys-401872980",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "att-stadium",
+      "homeTeamId": "cowboys",
+      "home": {
+        "name": "Cowboys",
+        "score": 16
+      },
+      "away": {
+        "name": "Buccaneers",
+        "score": 24
+      },
+      "attendance": 92351,
+      "capturedAt": "2026-10-09T14:27:44.672Z",
+      "duration": {
+        "minutes": 183,
+        "kind": "estimated"
+      },
+      "startedAt": "17:15"
+    }
+  ]
+}

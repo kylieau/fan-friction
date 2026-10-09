@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-08",
+  "results": [
+    {
+      "eventId": "2026-10-08-mlb-849832",
+      "metroId": "chicago",
+      "date": "2026-10-08",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "rate-field",
+      "homeTeamId": "white-sox",
+      "home": {
+        "name": "White Sox",
+        "score": 5
+      },
+      "away": {
+        "name": "Guardians",
+        "score": 9
+      },
+      "capturedAt": "2026-10-09T14:27:44.457Z",
+      "attendance": 39920,
+      "duration": {
+        "minutes": 219,
+        "kind": "official"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

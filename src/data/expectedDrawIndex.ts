@@ -26050,6 +26050,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "dallas-fort-worth",
     "teamId": "cowboys",
+    "opponent": "buccaneers",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "dallas-fort-worth",
+    "teamId": "cowboys",
     "opponent": "commanders",
     "ratio": 0.995,
     "games": 3
@@ -29096,8 +29103,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "montreal",
     "teamId": "canadiens",
     "opponent": "predators",
-    "ratio": 0.998,
-    "games": 3
+    "ratio": 0.997,
+    "games": 4
   },
   {
     "metroId": "montreal",
@@ -29810,8 +29817,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "islanders",
     "opponent": "blackhawks",
-    "ratio": 1.024,
-    "games": 3
+    "ratio": 1.007,
+    "games": 4
   },
   {
     "metroId": "new-york",

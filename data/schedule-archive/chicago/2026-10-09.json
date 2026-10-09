@@ -1,0 +1,1256 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "metroName": "Chicago",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-09",
+  "capturedAt": "2026-10-09T14:27:19.852Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-09",
+    "through": "2026-10-23"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 13
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 16
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-09-espn-bulls-401908940",
+      "metroId": "chicago",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bulls vs. Grizzlies",
+      "preseason": true,
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bulls",
+        "away": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18704,
+        "low": 17218,
+        "high": 19975,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a preseason game: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-vv1kvZv0PoGA2h9X8",
+      "metroId": "chicago",
+      "date": "2026-10-09",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Shaboozey",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Shaboozey",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kvZv0PoGA2h9X8",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-09-tm-vvG18Z_1XRAjum",
+      "metroId": "chicago",
+      "date": "2026-10-09",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Zach Top",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Zach Top",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_1XRAjum",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-10-espn-northwestern-football-401858482",
+      "metroId": "chicago",
+      "date": "2026-10-10",
+      "start": "11:30",
+      "kind": "game",
+      "title": "Northwestern vs. Ball State",
+      "broadcast": "BTN",
+      "place": {
+        "type": "venue",
+        "venueId": "ryan-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "northwestern-football",
+        "away": "ball-state"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-10-espn-chicago-fire-761846",
+      "metroId": "chicago",
+      "date": "2026-10-10",
+      "start": "13:30",
+      "kind": "game",
+      "title": "Fire vs. NYCFC",
+      "place": {
+        "type": "venue",
+        "venueId": "soldier-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "chicago-fire",
+        "away": "nycfc"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21769,
+        "low": 17409,
+        "high": 24272,
+        "fromCrowds": true,
+        "games": 22,
+        "seasons": "2024–2025",
+        "note": "Typical announced crowd here for a Saturday: 22 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-10-espn-blackhawks-401892476",
+      "metroId": "chicago",
+      "date": "2026-10-10",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Hurricanes",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "hurricanes"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18635,
+        "low": 18336,
+        "high": 19779,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a Saturday: 18 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-10-ht-chicago-wolves-1029110",
+      "metroId": "chicago",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wolves vs. Moose",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "chicago-wolves",
+        "away": "moose"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 4427,
+        "low": 4365,
+        "high": 4882,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-10-tm-vv1A7Zk36GkdsK2Za",
+      "metroId": "chicago",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "kind": "show",
+      "title": "JPEGMAFIA",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "JPEGMAFIA",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7Zk36GkdsK2Za",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-vvG18Z_5RmHt8s",
+      "metroId": "chicago",
+      "date": "2026-10-11",
+      "start": "18:00",
+      "kind": "show",
+      "title": "In This Moment",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "In This Moment",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_5RmHt8s",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-11-tm-vv178Z_aGkYeTUOa",
+      "metroId": "chicago",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_aGkYeTUOa",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-12-tm-vv178Z_aGkMlEBGy",
+      "metroId": "chicago",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_aGkMlEBGy",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-espn-blackhawks-401892496",
+      "metroId": "chicago",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Penguins",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "penguins"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16549,
+        "low": 15541,
+        "high": 18105,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a weeknight in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-vv1A7ZkoyGkdaJQVG",
+      "metroId": "chicago",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jessie Ware",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jessie Ware",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7ZkoyGkdaJQVG",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-chicago-fire-761869",
+      "metroId": "chicago",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Fire vs. Philadelphia",
+      "place": {
+        "type": "venue",
+        "venueId": "soldier-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "chicago-fire",
+        "away": "philadelphia"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16130,
+        "low": 13369,
+        "high": 19103,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "note": "Typical announced crowd here for a weeknight: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-14-tm-vvG18Z_1DaaHeF",
+      "metroId": "chicago",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Smashing Pumpkins",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Smashing Pumpkins",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_1DaaHeF",
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-espn-blackhawks-401892512",
+      "metroId": "chicago",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Winnipeg Jets",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "winnipeg-jets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16161,
+        "low": 15177,
+        "high": 17681,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a weeknight in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-bulls-401908943",
+      "metroId": "chicago",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bulls vs. Timberwolves",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bulls",
+        "away": "timberwolves"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18704,
+        "low": 17218,
+        "high": 19975,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a preseason game: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-blackhawks-401892528",
+      "metroId": "chicago",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Stars",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "stars"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19093,
+        "low": 18787,
+        "high": 20265,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a Saturday: 18 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-ht-chicago-wolves-1029151",
+      "metroId": "chicago",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wolves vs. Wild",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "chicago-wolves",
+        "away": "wild"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5486,
+        "low": 5409,
+        "high": 6049,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vv1A7Zk3bGkeUJi-K",
+      "metroId": "chicago",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Suki Waterhouse",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Suki Waterhouse",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7Zk3bGkeUJi-K",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-vv17jZ_8GkmcT72q",
+      "metroId": "chicago",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Sweetest Day Comedy Jam",
+      "place": {
+        "type": "venue",
+        "venueId": "wintrust-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Cedric The Entertainer",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_8GkmcT72q"
+    },
+    {
+      "id": "2026-10-18-ht-chicago-wolves-1029162",
+      "metroId": "chicago",
+      "date": "2026-10-18",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Wolves vs. Wild",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "chicago-wolves",
+        "away": "wild"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 8046,
+        "low": 6649,
+        "high": 9415,
+        "fromCrowds": true,
+        "games": 38,
+        "seasons": "2023–2025",
+        "note": "Typical announced crowd here for a Sunday: 38 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-chicago-stars-401854026",
+      "metroId": "chicago",
+      "date": "2026-10-18",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Stars vs. Reign",
+      "broadcast": "Roku",
+      "place": {
+        "type": "venue",
+        "venueId": "martin-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "chicago-stars",
+        "away": "reign"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-19-tm-vv178Z_kGkRLKIPC",
+      "metroId": "chicago",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_kGkRLKIPC",
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-vv178Z_kGkTlVyFY",
+      "metroId": "chicago",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_kGkTlVyFY",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-bears-401873010",
+      "metroId": "chicago",
+      "date": "2026-10-22",
+      "start": "19:15",
+      "kind": "game",
+      "title": "Bears vs. Patriots",
+      "place": {
+        "type": "venue",
+        "venueId": "soldier-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "bears",
+        "away": "patriots"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 59307,
+        "low": 58102,
+        "high": 61200,
+        "fromCrowds": true,
+        "games": 21,
+        "seasons": "2023–2025",
+        "note": "Typical announced crowd here for a home game: 21 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vv178Z_8GkymMwt7",
+      "metroId": "chicago",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_8GkymMwt7",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-blackhawks-401892564",
+      "metroId": "chicago",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Canadiens",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "canadiens"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19664,
+        "low": 19125,
+        "high": 20237,
+        "fromCrowds": true,
+        "games": 20,
+        "seasons": "2024–2026",
+        "note": "Typical announced crowd here for a Friday: 20 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-chicago-stars-401854027",
+      "metroId": "chicago",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Houston",
+      "place": {
+        "type": "venue",
+        "venueId": "martin-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "chicago-stars",
+        "away": "houston"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-09-espn-bulls-401908940",
+      "date": "2026-10-09",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Zach Top 14 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18704,
+        "low": 17218,
+        "high": 19975
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-vv1kvZv0PoGA2h9X8",
+      "date": "2026-10-09",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "friction": "Heavy",
+        "why": "Zach Top 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-09-tm-vvG18Z_1XRAjum",
+      "date": "2026-10-09",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Shaboozey and Bulls vs. Grizzlies 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-northwestern-football-401858482",
+      "date": "2026-10-10",
+      "start": "11:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "Fire vs. NYCFC 15 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-chicago-fire-761846",
+      "date": "2026-10-10",
+      "start": "13:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "Northwestern vs. Ball State 15 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21769,
+        "low": 17409,
+        "high": 24272
+      }
+    },
+    {
+      "eventId": "2026-10-10-espn-blackhawks-401892476",
+      "date": "2026-10-10",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "Fire vs. NYCFC and Northwestern vs. Ball State 3.2 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18635,
+        "low": 18336,
+        "high": 19779
+      }
+    },
+    {
+      "eventId": "2026-10-10-ht-chicago-wolves-1029110",
+      "date": "2026-10-10",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4427,
+        "low": 4365,
+        "high": 4882
+      }
+    },
+    {
+      "eventId": "2026-10-10-tm-vv1A7Zk36GkdsK2Za",
+      "date": "2026-10-10",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Blackhawks vs. Hurricanes 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vvG18Z_5RmHt8s",
+      "date": "2026-10-11",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Olivia Rodrigo 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-11-tm-vv178Z_aGkYeTUOa",
+      "date": "2026-10-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "In This Moment 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-10-12-tm-vv178Z_aGkMlEBGy",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-10-13-espn-blackhawks-401892496",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Jessie Ware 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16549,
+        "low": 15541,
+        "high": 18105
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-vv1A7ZkoyGkdaJQVG",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Blackhawks vs. Penguins 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-chicago-fire-761869",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "The Smashing Pumpkins 3.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16130,
+        "low": 13369,
+        "high": 19103
+      }
+    },
+    {
+      "eventId": "2026-10-14-tm-vvG18Z_1DaaHeF",
+      "date": "2026-10-14",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Fire vs. Philadelphia 3.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-10-15-espn-blackhawks-401892512",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16161,
+        "low": 15177,
+        "high": 17681
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-bulls-401908943",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18704,
+        "low": 17218,
+        "high": 19975
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-blackhawks-401892528",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "Wolves vs. Wild 14 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19093,
+        "low": 18787,
+        "high": 20265
+      }
+    },
+    {
+      "eventId": "2026-10-17-ht-chicago-wolves-1029151",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Heavy",
+        "why": "Blackhawks vs. Stars 14 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5486,
+        "low": 5409,
+        "high": 6049
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vv1A7Zk3bGkeUJi-K",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "Blackhawks vs. Stars and Sweetest Day Comedy Jam 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vv17jZ_8GkmcT72q",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "Blackhawks vs. Stars 3.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-ht-chicago-wolves-1029162",
+      "date": "2026-10-18",
+      "start": "15:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Stars vs. Reign 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8046,
+        "low": 6649,
+        "high": 9415
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-chicago-stars-401854026",
+      "date": "2026-10-18",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Wolves vs. Wild 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-vv178Z_kGkRLKIPC",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-vv178Z_kGkTlVyFY",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-bears-401873010",
+      "date": "2026-10-22",
+      "start": "19:15",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Nothing bigger was on.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 59307,
+        "low": 58102,
+        "high": 61200
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vv178Z_8GkymMwt7",
+      "date": "2026-10-22",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Bears vs. Patriots 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-blackhawks-401892564",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Stars vs. Houston 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19664,
+        "low": 19125,
+        "high": 20237
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-chicago-stars-401854027",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Blackhawks vs. Canadiens 12 mi away, same hours.",
+        "method": "formula"
+      }
+    }
+  ]
+}

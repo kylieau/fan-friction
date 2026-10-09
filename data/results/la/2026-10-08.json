@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-08",
+  "results": [
+    {
+      "eventId": "2026-10-08-espn-lakers-401898717",
+      "metroId": "la",
+      "date": "2026-10-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 114
+      },
+      "away": {
+        "name": "Sacramento Kings",
+        "score": 110
+      },
+      "attendance": 18350,
+      "capturedAt": "2026-10-09T14:27:42.144Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:48"
+    }
+  ]
+}
