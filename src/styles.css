@@ -2065,6 +2065,15 @@ button {
   color: var(--ink2);
 }
 
+.field-group-label {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
 .empty-actions {
   display: flex;
   align-items: center;

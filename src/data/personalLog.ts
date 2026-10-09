@@ -274,12 +274,19 @@ export interface ManualNight {
  * night's nearby read when the city has one. A game in another city is away.
  */
 export function addManualEntry(night: ManualNight, homeMetroId: string | null): Entry {
+  const entry = manualEntryFrom(night, homeMetroId, `manual-${crypto.randomUUID()}`);
+  commit({ ...snapshot, added: [...snapshot.added, entry] });
+  return entry;
+}
+
+/** The entry a hand-typed night becomes. Shared by Log an event and by a hand-added plan whose date has passed. */
+function manualEntryFrom(night: ManualNight, homeMetroId: string | null, id: string): Entry {
   const venue = night.venue?.trim() || undefined;
   const known = venue ? VENUE_BY_ANY_NAME.get(venue.toLowerCase()) : undefined;
   const metroId = night.metroId ?? known?.metroId;
   const game = night.kind === 'game';
   const entry: Entry = {
-    id: `manual-${crypto.randomUUID()}`,
+    id,
     when: night.when,
     title: night.title.trim(),
     tags: [],
@@ -295,8 +302,111 @@ export function addManualEntry(night: ManualNight, homeMetroId: string | null): 
     ...(metroId ? { metroId } : {}),
     ...(game && homeMetroId && metroId !== homeMetroId ? { away: true } : {}),
   };
-  commit({ ...snapshot, added: [...snapshot.added, entry] });
   return entry;
+}
+
+/**
+ * A night typed in by hand for a date still ahead (Kylie, Oct 9, C059): saved as a plan,
+ * which becomes an entry once the date passes. A city the app has no metro for keeps
+ * the home city on the plan so it still sits in Coming up, marked elsewhere.
+ */
+export function addManualPlan(night: ManualNight, homeMetroId: string | null): Plan {
+  const venue = night.venue?.trim() || undefined;
+  const known = venue ? VENUE_BY_ANY_NAME.get(venue.toLowerCase()) : undefined;
+  const metroId = night.metroId ?? known?.metroId;
+  const plan: Plan = {
+    id: `plan-manual-${crypto.randomUUID()}`,
+    date: night.when.sort,
+    metroId: metroId ?? homeMetroId ?? 'la',
+    title: night.title.trim(),
+    venue: known ? venueNameOn(known, night.when.sort) : venue,
+    manual: {
+      kind: night.kind,
+      ...(night.sport ? { sport: night.sport } : {}),
+      ...(night.level ? { level: night.level } : {}),
+      ...(night.division ? { division: night.division } : {}),
+      ...(night.competition ? { competition: night.competition } : {}),
+      ...(metroId ? {} : { elsewhere: true }),
+    },
+  };
+  commit({ ...snapshot, plans: [...snapshot.plans, plan] });
+  return plan;
+}
+
+/** What a hand-added plan asked for, as the Add form would have. */
+function nightFromPlan(plan: Plan): ManualNight {
+  const m = plan.manual!;
+  return {
+    title: plan.title,
+    kind: m.kind,
+    sport: m.sport,
+    level: m.level,
+    division: m.division,
+    competition: m.competition,
+    when: { sort: plan.date, label: '', precision: 'day' },
+    venue: plan.venue,
+    metroId: m.elsewhere ? undefined : plan.metroId,
+  };
+}
+
+/** Normalized words of a title, for the duplicate check. */
+function titleWords(title: string): Set<string> {
+  return new Set(title.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter((w) => w.length > 1 && !['vs', 'the', 'at', 'and', 'of'].includes(w)));
+}
+
+/**
+ * Titles that look like the same event (Kylie, Oct 9, C059: "flag even if the title is a
+ * little different"): one contains the other, or they share most of their words.
+ */
+export function similarTitles(a: string, b: string): boolean {
+  const x = a.trim().toLowerCase();
+  const y = b.trim().toLowerCase();
+  if (!x || !y) return false;
+  if (x === y || x.includes(y) || y.includes(x)) return true;
+  const wa = titleWords(a);
+  const wb = titleWords(b);
+  if (wa.size === 0 || wb.size === 0) return false;
+  let shared = 0;
+  for (const w of wa) if (wb.has(w)) shared++;
+  return shared / Math.min(wa.size, wb.size) >= 0.6;
+}
+
+/** What a hand-typed entry's owner may change (3.14): the date, title, venue and city. Catalog entries stay locked. */
+export interface ManualEntryEdit {
+  title?: string;
+  date?: string;
+  venue?: string;
+  /** A metro id, or '' for somewhere the app has no city for. */
+  metroId?: string;
+}
+
+export function isManualEntry(entry: Entry): boolean {
+  return entry.id.startsWith('manual-') && !entry.eventId;
+}
+
+/** Edit a hand-typed entry's facts. The nearby read follows the new date and city by itself (C035). */
+export function updateManualEntry(entryId: string, edit: ManualEntryEdit, homeMetroId: string | null) {
+  const added = snapshot.added.map((entry) => {
+    if (entry.id !== entryId || !isManualEntry(entry)) return entry;
+    const next: Entry = { ...entry };
+    if (edit.title?.trim()) next.title = edit.title.trim();
+    if (edit.date && /^\d{4}-\d{2}-\d{2}$/.test(edit.date)) next.when = { sort: edit.date, label: '', precision: 'day' };
+    if (edit.venue !== undefined) {
+      const venue = edit.venue.trim() || undefined;
+      const known = venue ? VENUE_BY_ANY_NAME.get(venue.toLowerCase()) : undefined;
+      if (venue) next.venue = known ? venueNameOn(known, next.when.sort) : venue;
+      else delete next.venue;
+    }
+    if (edit.metroId !== undefined) {
+      if (edit.metroId) next.metroId = edit.metroId;
+      else delete next.metroId;
+      next.inMetro = Boolean(edit.metroId);
+      if (next.kind === 'game' && homeMetroId && edit.metroId !== homeMetroId) next.away = true;
+      else delete next.away;
+    }
+    return next;
+  });
+  commit({ ...snapshot, added });
 }
 
 /** Remember that a hand-typed night was also suggested as a catalog event. */
@@ -500,9 +610,9 @@ export function togglePlan(event: CrowdEvent) {
  * A plan is cleared only when it became an entry, or its event is already
  * logged (C111). A plan whose event could not be loaded, or was not found,
  * waits for the next open; public listings drop past events, so "not found"
- * is treated like a failed load. A plan with no event id is left alone here.
+ * is treated like a failed load. A hand-added plan becomes a hand-added entry (C059).
  */
-export async function settlePassedPlans(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
+export async function settlePassedPlans(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>, homeMetroId: string | null = null) {
   const now = new Date();
   const passed = snapshot.plans.filter((plan) => {
     const metro = METROS[plan.metroId] ?? METROS.la;
@@ -512,7 +622,13 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   const added: Entry[] = [];
   const settledIds = new Set<string>();
   for (const plan of passed) {
-    if (!plan.eventId) continue;
+    if (!plan.eventId) {
+      if (plan.manual) {
+        added.push(manualEntryFrom(nightFromPlan(plan), homeMetroId, `manual-${plan.id.replace(/^plan-manual-/, '')}`));
+        settledIds.add(plan.id);
+      }
+      continue;
+    }
     if (snapshot.added.some((entry) => entry.eventId === plan.eventId)) {
       settledIds.add(plan.id);
       continue;

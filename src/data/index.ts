@@ -1,7 +1,7 @@
 // The one place screens ask for event data. It merges every plugged-in source,
 // so adding a live feed means adding it to the lists below, nothing else.
 
-import { DEFAULT_METRO, METROS, areaMetros, type Metro } from '../config/metros';
+import { COVERED_METRO_IDS, DEFAULT_METRO, METROS, areaMetros, type Metro } from '../config/metros';
 import { matchingNames } from './matchDate';
 import { catalogEvents } from './sources/catalogSource';
 import { espnMetroIds } from './sources/espnSource';
@@ -239,11 +239,19 @@ export async function searchDates(metroId: string, query: string): Promise<DateS
       const rating = ratingByDate.get(date);
       return {
         date,
+        metroId,
         rating: rating?.rating ?? null,
         headline: rating?.headline ?? row.titles.slice(0, 2).join(' · '),
         matched: row.matched.slice(0, 3).join(' · '),
       };
     });
+}
+
+/** The same search over every covered city at once, the home city's hits first (Kylie, Oct 9, C058). */
+export async function searchAllDates(homeId: string | null, query: string): Promise<DateSearchHit[]> {
+  const ids = [...COVERED_METRO_IDS].sort((a, b) => (a === homeId ? -1 : b === homeId ? 1 : 0));
+  const lists = await Promise.all(ids.map((id) => searchDates(id, query)));
+  return lists.flat();
 }
 
 export { VENUES, venueNameOn, capacityOn } from './venues';
@@ -328,6 +336,9 @@ export {
   nextSavedPlan,
   logBackup,
   addManualEntry,
+  addManualPlan,
+  updateManualEntry,
+  similarTitles,
   entryFacts,
   entryFieldsFor,
   eventTypeLabel,
@@ -347,7 +358,8 @@ export {
   upcomingPlans,
   yourEntries,
 } from './personalLog';
-export type { EntryEdit, LabeledFact, ManualNight, SyncStatus } from './personalLog';
+export type { EntryEdit, LabeledFact, ManualEntryEdit, ManualNight, SyncStatus } from './personalLog';
+export { isManualEntry } from './personalLog';
 export { hasUnsyncedChanges } from './storage';
 export { suggestEvent } from './suggestions';
 export { getTeamSchedule, scoreMark } from './teamSchedule';

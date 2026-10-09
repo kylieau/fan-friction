@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { entryFieldsFor, ownEntryFacts, removeEntry, updateEntry, type Entry, type EntryEdit } from '../data';
+import { entryFieldsFor, isManualEntry, ownEntryFacts, removeEntry, updateEntry, updateManualEntry, type Entry, type EntryEdit } from '../data';
+import { METROS } from '../config/metros';
+import { getHomeId } from '../lib/homeCity';
 import { FactList } from './FactList';
 
 const LABELS: Record<keyof EntryEdit, string> = {
@@ -38,6 +40,9 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
     Object.fromEntries(fields.map((key) => [key, entry[key] ?? ''])) as EntryEdit,
   );
   const set = (key: keyof EntryEdit, value: string) => setDraft((d) => ({ ...d, [key]: value }));
+  // A hand-typed entry's facts open too (3.14); a catalog entry's stay locked.
+  const manual = isManualEntry(entry);
+  const [facts, setFacts] = useState({ title: entry.title, date: entry.when.sort, venue: entry.venue ?? '', metroId: entry.metroId ?? '' });
 
   return (
     <form
@@ -45,10 +50,38 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
       aria-label="Edit your entry"
       onSubmit={(event) => {
         event.preventDefault();
+        if (manual) updateManualEntry(entry.id, facts, getHomeId());
         updateEntry(entry.id, draft);
         onDone();
       }}
     >
+      {manual && (
+        <>
+          <label className="field">
+            <span className="field-label">What</span>
+            <input className="account-input" value={facts.title} onChange={(e) => setFacts((f) => ({ ...f, title: e.target.value }))} maxLength={120} required />
+          </label>
+          <label className="field">
+            <span className="field-label">When</span>
+            <input className="account-input" type="date" value={facts.date} onChange={(e) => setFacts((f) => ({ ...f, date: e.target.value }))} required />
+          </label>
+          <label className="field">
+            <span className="field-label">City</span>
+            <select className="account-input" value={facts.metroId} onChange={(e) => setFacts((f) => ({ ...f, metroId: e.target.value }))}>
+              {Object.values(METROS).map((metro) => (
+                <option key={metro.id} value={metro.id}>
+                  {metro.name}
+                </option>
+              ))}
+              <option value="">Somewhere else</option>
+            </select>
+          </label>
+          <label className="field">
+            <span className="field-label">Where</span>
+            <input className="account-input" value={facts.venue} onChange={(e) => setFacts((f) => ({ ...f, venue: e.target.value }))} maxLength={80} />
+          </label>
+        </>
+      )}
       {fields.map((key) => (
         <label className="field" key={key}>
           <span className="field-label">

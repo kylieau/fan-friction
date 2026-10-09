@@ -2,14 +2,18 @@ import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { METROS } from '../config/metros';
 import {
+  cityDayRange,
   entryFacts,
   getPersonalLog,
   nightsOf,
+  rangeLabel,
   ratingForEntry,
   scoresForNights,
   subscribePersonalLog,
+  weatherGlyph,
   yourEntries,
 } from '../data';
+import { comparePath, datePath } from '../lib/view';
 import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
 import { FactList } from '../components/FactList';
 import { ChevronDown } from '../components/Icons';
@@ -17,9 +21,10 @@ import { ReadTile } from '../components/ReadTile';
 import { loggedDateLabel } from '../lib/dates';
 
 /**
- * A night typed in by hand: no catalog event behind it, so no crowd, weather
- * or competition cards. What is known, the nearby read when the city has one,
- * and your layer.
+ * An event typed in by hand: no catalog event behind it, so no crowd or
+ * competition cards. Everything a listed event's page shows where the data
+ * exists (Kylie, Oct 9, C053): the date, the day's weather, the nearby read,
+ * Compare with…, and your layer.
  */
 export function ManualEntryScreen() {
   const { id = '' } = useParams();
@@ -50,6 +55,8 @@ export function ManualEntryScreen() {
 
   const rating = ratingForEntry(entry, ratings);
   const city = entry.metroId ? METROS[entry.metroId]?.name : undefined;
+  const exact = entry.when.precision === 'day' && entry.metroId ? { metroId: entry.metroId, date: entry.when.sort } : null;
+  const weather = exact ? cityDayRange(exact.metroId, exact.date) : undefined;
   const sub = [loggedDateLabel(entry.when), entry.venue, city, entry.away ? 'Away' : ''].filter(Boolean).join(' · ');
 
   return (
@@ -60,7 +67,18 @@ export function ManualEntryScreen() {
 
       <header className="event-head">
         <h1 className="page-title">{entry.title}</h1>
-        <div className="event-sub">{sub}</div>
+        <div className="event-sub">
+          {sub}
+          {weather && (
+            <>
+              {' · '}
+              <span className="weather-glyph" aria-hidden>
+                {weatherGlyph(weather)}
+              </span>{' '}
+              {rangeLabel(weather, exact!.metroId)}
+            </>
+          )}
+        </div>
         <FactList facts={entryFacts(entry)} />
       </header>
 
@@ -75,6 +93,16 @@ export function ManualEntryScreen() {
         <EntryLayer entry={entry} />
       </div>
 
+      {exact && (
+        <Link to={datePath(exact.date, exact.metroId)} className="text-link">
+          That date in {city}
+        </Link>
+      )}
+      {exact && (
+        <Link to={comparePath(exact)} className="text-link compare-link">
+          Compare with…
+        </Link>
+      )}
       <RemoveFromLog entry={entry} onRemoved={() => navigate('/you', { replace: true })} />
     </div>
   );

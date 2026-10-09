@@ -1,14 +1,19 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { METROS } from '../config/metros';
+import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
   addManualEntry,
+  addManualPlan,
+  getPersonalLog,
+  similarTitles,
+  subscribePersonalLog,
+  todayIn,
   competitionNamed,
   competitionsFor,
   divisionChoices,
   LEVELS,
   markSuggested,
-  searchDates,
+  searchAllDates,
   SPORTS_MORE,
   SPORTS_SHOWN,
   suggestEvent,
@@ -55,7 +60,7 @@ export function AddEntryScreen() {
     }
     let current = true;
     setHits(null);
-    searchDates(homeId, trimmed).then((list) => current && setHits(list));
+    searchAllDates(homeId, trimmed).then((list) => current && setHits(list));
     return () => {
       current = false;
     };
@@ -94,12 +99,14 @@ export function AddEntryScreen() {
               <h2 className="section-title">{hits.length === 1 ? '1 date' : `${hits.length} dates`}</h2>
               <ul className="famous-list">
                 {hits.map((hit) => (
-                  <li key={hit.date}>
-                    <Link to={datePath(hit.date, homeId)} className="famous-row">
+                  <li key={`${hit.metroId}-${hit.date}`}>
+                    <Link to={datePath(hit.date, hit.metroId)} className="famous-row">
                       <ReadTile rating={hit.rating} />
                       <span className="famous-text">
                         <span className="famous-headline">{hit.headline}</span>
-                        <span className="famous-meta">{[longLocalDate(hit.date), hit.matched].filter(Boolean).join(' · ')}</span>
+                        <span className="famous-meta">
+                          {[longLocalDate(hit.date), hit.metroId !== homeId ? METROS[hit.metroId]?.name : null, hit.matched].filter(Boolean).join(' · ')}
+                        </span>
                       </span>
                     </Link>
                   </li>
@@ -123,6 +130,7 @@ export function AddEntryScreen() {
 
 function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTitle: string; onCancel: () => void }) {
   const navigate = useNavigate();
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [title, setTitle] = useState(firstTitle);
   const [kind, setKind] = useState<EventKind>('game');
   const [sport, setSport] = useState('');
@@ -139,11 +147,22 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
   const venues = useMemo(() => (city === 'elsewhere' ? [] : venueNamesIn(city)), [city]);
   const venueName = venue === OTHER || venues.length === 0 ? otherVenue : venue;
 
-  const ready = title.trim().length > 0 && /^\d{4}-\d{2}-\d{2}$/.test(day) && (kind !== 'game' || sport.length > 0);
+  // The essentials are required (Kylie, Oct 9, C060): what, when, city and where. The rest is optional.
+  const validDay = /^\d{4}-\d{2}-\d{2}$/.test(day);
+  const ready = title.trim().length > 0 && validDay && venueName.trim().length > 0;
   const known = competitionNamed(competition);
   // Division is asked where it isn't implied: college, school and club always; pro only with no competition.
   const askDivision = kind === 'game' && level !== '' && level !== 'lower' && (level !== 'pro' || !known);
   const sportChips = moreSports || (sport && !SPORTS_SHOWN.includes(sport)) ? [...SPORTS_SHOWN, ...SPORTS_MORE] : SPORTS_SHOWN;
+  const ahead = validDay && day >= todayIn(METROS[city] ?? DEFAULT_METRO);
+  // A warning, not a block (C059): something on the same date with the same or a similar title.
+  const duplicate = useMemo(() => {
+    if (!validDay || title.trim().length < 2) return null;
+    const entry = log.added.find((e) => e.when.sort === day && similarTitles(e.title, title));
+    if (entry) return entry.title;
+    const plan = log.plans.find((p) => p.date === day && similarTitles(p.title, title));
+    return plan ? plan.title : null;
+  }, [log, day, title, validDay]);
 
   const pickCompetition = (name: string) => {
     setCompetition(name);
@@ -161,14 +180,20 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
     const night: ManualNight = {
       title,
       kind,
-      sport: kind === 'game' ? sport : undefined,
+      sport: kind === 'game' ? sport || undefined : undefined,
       level: kind === 'game' && level ? level : undefined,
       division: kind === 'game' && division && (askDivision || known?.division) ? division : undefined,
-      competition: kind === 'game' ? competition : undefined,
+      competition: kind === 'game' ? competition || undefined : undefined,
       when: { sort: day, label: '', precision: 'day' },
       venue: venueName,
       metroId: city === 'elsewhere' ? undefined : city,
     };
+    // A date still ahead is a plan; it becomes an entry once the date passes (C059).
+    if (ahead) {
+      addManualPlan(night, homeId);
+      navigate('/you', { replace: true });
+      return;
+    }
     const entry = addManualEntry(night, homeId);
     if (big) {
       const id = await suggestEvent(entry);
@@ -188,8 +213,65 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
     >
       <label className="field">
         <span className="field-label">What</span>
-        <input className="account-input" value={title} onChange={(e) => setTitle(e.target.value)} maxLength={120} autoFocus autoComplete="off" />
+        <input className="account-input" value={title} onChange={(e) => setTitle(e.target.value)} maxLength={120} autoFocus autoComplete="off" required />
       </label>
+
+      <label className="field">
+        <span className="field-label">When</span>
+        <input className="account-input" type="date" value={day} onChange={(e) => setDay(e.target.value)} required />
+      </label>
+
+      <label className="field">
+        <span className="field-label">City</span>
+        <select
+          className="account-input"
+          value={city}
+          onChange={(e) => {
+            setCity(e.target.value);
+            setVenue('');
+          }}
+        >
+          {Object.values(METROS).map((metro) => (
+            <option key={metro.id} value={metro.id}>
+              {metro.name}
+            </option>
+          ))}
+          <option value="elsewhere">Somewhere else</option>
+        </select>
+      </label>
+
+      <label className="field">
+        <span className="field-label">Where</span>
+        {venues.length > 0 && (
+          <select className="account-input" value={venue} onChange={(e) => setVenue(e.target.value)} required>
+            <option value="">Pick a venue</option>
+            {venues.map((name) => (
+              <option key={name}>{name}</option>
+            ))}
+            <option value={OTHER}>Another venue</option>
+          </select>
+        )}
+        {(venue === OTHER || venues.length === 0) && (
+          <input
+            className="account-input"
+            value={otherVenue}
+            onChange={(e) => setOtherVenue(e.target.value)}
+            maxLength={80}
+            autoComplete="off"
+            aria-label="Venue"
+            required
+          />
+        )}
+      </label>
+
+      {duplicate && (
+        <p className="you-fine" role="status">
+          Looks like {duplicate} on this date is already in your log.
+        </p>
+      )}
+
+      <div className="field-group-label">Details</div>
+      <p className="you-fine">More details help match this to listings later.</p>
 
       <div className="field">
         <span className="field-label">Type</span>
@@ -279,64 +361,19 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
         </>
       )}
 
-      <label className="field">
-        <span className="field-label">When</span>
-        <input className="account-input" type="date" value={day} onChange={(e) => setDay(e.target.value)} />
-      </label>
-
-      <label className="field">
-        <span className="field-label">City</span>
-        <select
-          className="account-input"
-          value={city}
-          onChange={(e) => {
-            setCity(e.target.value);
-            setVenue('');
-          }}
-        >
-          {Object.values(METROS).map((metro) => (
-            <option key={metro.id} value={metro.id}>
-              {metro.name}
-            </option>
-          ))}
-          <option value="elsewhere">Somewhere else</option>
-        </select>
-      </label>
-
-      <label className="field">
-        <span className="field-label">Where</span>
-        {venues.length > 0 && (
-          <select className="account-input" value={venue} onChange={(e) => setVenue(e.target.value)}>
-            <option value="">Pick a venue</option>
-            {venues.map((name) => (
-              <option key={name}>{name}</option>
-            ))}
-            <option value={OTHER}>Another venue</option>
-          </select>
-        )}
-        {(venue === OTHER || venues.length === 0) && (
-          <input
-            className="account-input"
-            value={otherVenue}
-            onChange={(e) => setOtherVenue(e.target.value)}
-            maxLength={80}
-            autoComplete="off"
-            aria-label="Venue"
-          />
-        )}
-      </label>
-
-      <label className="choice-line">
-        <input type="checkbox" checked={big} onChange={(e) => setBig(e.target.checked)} />
-        <span>Big event (5,000 or more)</span>
-      </label>
+      {!ahead && (
+        <label className="choice-line">
+          <input type="checkbox" checked={big} onChange={(e) => setBig(e.target.checked)} />
+          <span>Big event (5,000 or more)</span>
+        </label>
+      )}
 
       <div className="entry-form-actions">
         <button type="button" className="link-button" onClick={onCancel}>
           Back
         </button>
         <button type="submit" className="gold-button small" disabled={!ready || busy}>
-          Save
+          {ahead ? 'Save plan' : 'Save'}
         </button>
       </div>
     </form>

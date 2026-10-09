@@ -31,8 +31,8 @@ function Shell() {
 
   // An Attending date becomes Attended once it passes: at open, and again once the account copy is in.
   useEffect(() => {
-    void settlePassedPlans(getCityDate);
-    return subscribeLogLoaded(() => void settlePassedPlans(getCityDate));
+    void settlePassedPlans(getCityDate, getHomeId());
+    return subscribeLogLoaded(() => void settlePassedPlans(getCityDate, getHomeId()));
   }, []);
 
   return (

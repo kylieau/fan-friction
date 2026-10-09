@@ -346,6 +346,8 @@ export interface CalendarDay {
 /** A night that matched a team, artist, or venue search. */
 export interface DateSearchHit {
   date: LocalDate;
+  /** The city the hit is in; a search covers every covered city, home first (C058). */
+  metroId: string;
   rating: number | null;
   /** The rated night's headline, or the matching event titles. */
   headline: string;
@@ -528,6 +530,8 @@ export interface Plan {
   forecast?: Forecast;
   /** When this device last changed the plan (ISO). The newer copy wins when two devices disagree. */
   updatedAt?: string;
+  /** A plan typed in by hand (C059): what the form collected, so it becomes an entry when the date passes. */
+  manual?: { kind: EventKind; sport?: string; level?: SportsLevel; division?: Division; competition?: string; elsewhere?: boolean };
 }
 
 export type YouOrder = 'plans-first' | 'nights-first';
