@@ -21,7 +21,7 @@ import {
   type CrowdEvent,
 } from '../data';
 import { crowdKind, crowdPoints, showsOnMap, type CrowdPoint } from '../map/crowdPoints';
-import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
+import { EntryLayer, RemoveConfirm, RemoveFromLog } from '../components/EntryLayer';
 import { SameTour } from '../components/SameTour';
 import { FactList } from '../components/FactList';
 import { ArrowRight, ChevronDown } from '../components/Icons';
@@ -47,6 +47,7 @@ export function EventScreen() {
   const [day, setDay] = useState<CityDate | null>(null);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [showHow, setShowHow] = useState(false);
+  const [unmarking, setUnmarking] = useState(false);
 
   useEffect(() => {
     let current = true;
@@ -148,9 +149,13 @@ export function EventScreen() {
             {isPlanned(e.id, log) ? 'Attending' : 'Attend'}
           </button>
         ) : isWasThere(e.id, log) ? (
-          <button type="button" className="mark-button on" aria-pressed onClick={() => toggleWasThere(e)}>
-            Attended
-          </button>
+          unmarking ? (
+            <RemoveConfirm onKeep={() => setUnmarking(false)} onRemove={() => { setUnmarking(false); toggleWasThere(e); }} />
+          ) : (
+            <button type="button" className="mark-button on" aria-pressed onClick={() => setUnmarking(true)}>
+              Attended
+            </button>
+          )
         ) : (
           <button type="button" className="mark-button" onClick={() => toggleWasThere(e)}>
             Attended

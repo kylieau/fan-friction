@@ -60,10 +60,14 @@ function offlineShell(): Plugin[] {
       navigateFallbackDenylist: [/^\/api\//],
       runtimeCaching: [
         {
-          // The shared catalog: the network when it answers, the last copy when it doesn't.
-          urlPattern: ({ url, request }) => request.method === 'GET' && url.hostname.endsWith('.supabase.co') && url.pathname.startsWith('/rest/v1/'),
+          // The shared catalog only: the network when it answers, the last copy when it doesn't.
+          // Account tables (entries, notes, plans, settings, profiles, follows) are never cached (C116).
+          urlPattern: ({ url, request }) =>
+            request.method === 'GET' &&
+            url.hostname.endsWith('.supabase.co') &&
+            /^\/rest\/v1\/(events|event_results|weather_hours|weather_days|schedule_snapshots|expected_draws|attendance|team_schedules)(\/|\?|$)/.test(url.pathname),
           handler: 'NetworkFirst',
-          options: { cacheName: 'catalog', networkTimeoutSeconds: 6, expiration: { maxEntries: 300, maxAgeSeconds: 7 * 86400 } },
+          options: { cacheName: 'catalog-public', networkTimeoutSeconds: 6, expiration: { maxEntries: 300, maxAgeSeconds: 7 * 86400 } },
         },
         {
           urlPattern: ({ url }) => url.hostname === 'tiles.openfreemap.org',

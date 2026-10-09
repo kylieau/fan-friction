@@ -495,6 +495,8 @@ export interface Entry {
    * no read to store. May be replaced when the formula improves.
    */
   stamp?: Stamp;
+  /** When this device last changed the entry (ISO). The newer copy wins when two devices disagree. */
+  updatedAt?: string;
 }
 
 /** An upcoming night she flagged. Separate from "I was there". */
@@ -510,6 +512,8 @@ export interface Plan {
    * have one; it is dropped on load.
    */
   forecast?: Forecast;
+  /** When this device last changed the plan (ISO). The newer copy wins when two devices disagree. */
+  updatedAt?: string;
 }
 
 export type YouOrder = 'plans-first' | 'nights-first';
@@ -530,6 +534,11 @@ export interface PersonalLog {
    * from the nights in it (empty for a new person) and saves that.
    */
   favorites?: Favorite[];
+  /**
+   * Entries and plans taken out, by id, with when (ISO). Kept so a copy on
+   * another device cannot put them back; pruned after half a year.
+   */
+  removed?: Record<string, string>;
 }
 
 export type FavoriteKind = 'team' | 'artist' | 'venue' | 'festival';

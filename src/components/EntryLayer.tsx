@@ -74,6 +74,21 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
   );
 }
 
+/** "Remove from log?" with Keep and Remove. The one confirm before an entry leaves the log (C054). */
+export function RemoveConfirm({ onKeep, onRemove, compact = false }: { onKeep: () => void; onRemove: () => void; compact?: boolean }) {
+  return (
+    <div className={`remove-confirm${compact ? ' compact' : ''}`} role="group" aria-label="Remove from log?">
+      <span>{compact ? 'Remove?' : 'Remove from log?'}</span>
+      <button type="button" className="link-button" onClick={onKeep}>
+        Keep
+      </button>
+      <button type="button" className="link-button remove-entry" onClick={onRemove}>
+        Remove
+      </button>
+    </div>
+  );
+}
+
 /** Small and plain, at the very bottom of the page. One confirm, inline. */
 export function RemoveFromLog({ entry, onRemoved }: { entry: Entry; onRemoved?: () => void }) {
   const [asking, setAsking] = useState(false);
@@ -85,21 +100,12 @@ export function RemoveFromLog({ entry, onRemoved }: { entry: Entry; onRemoved?: 
     );
   }
   return (
-    <div className="remove-confirm" role="group" aria-label="Remove from log?">
-      <span>Remove from log?</span>
-      <button type="button" className="link-button" onClick={() => setAsking(false)}>
-        Keep
-      </button>
-      <button
-        type="button"
-        className="link-button remove-entry"
-        onClick={() => {
-          removeEntry(entry.id);
-          onRemoved?.();
-        }}
-      >
-        Remove
-      </button>
-    </div>
+    <RemoveConfirm
+      onKeep={() => setAsking(false)}
+      onRemove={() => {
+        removeEntry(entry.id);
+        onRemoved?.();
+      }}
+    />
   );
 }

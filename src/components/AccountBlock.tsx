@@ -2,6 +2,7 @@ import { useState, useSyncExternalStore } from 'react';
 import {
   canSignIn,
   getAccount,
+  hasUnsyncedChanges,
   isAccountSettling,
   signInWithEmail,
   signInWithGoogle,
@@ -95,29 +96,42 @@ export function AccountBlock() {
   );
 }
 
-/** Who is signed in, with Sign out. Lives on the Settings screen. */
+/**
+ * Who is signed in, with Sign out. Lives on the Settings screen. Sign out wipes
+ * this phone's copy, so while a change has not reached the account it asks first (3.21).
+ */
 export function AccountRow({ handle }: { handle: string | null }) {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [busy, setBusy] = useState(false);
+  const [asking, setAsking] = useState(false);
   if (!account) return null;
+  const leave = async () => {
+    setAsking(false);
+    setBusy(true);
+    await signOut();
+    setBusy(false);
+  };
   return (
     <div className="account-row">
       <div className="account-who">
         <span className="account-name">{account.displayName ?? account.email ?? 'Signed in'}</span>
         {handle && <span className="you-fine">@{handle}</span>}
       </div>
-      <button
-        type="button"
-        className="link-button"
-        disabled={busy}
-        onClick={async () => {
-          setBusy(true);
-          await signOut();
-          setBusy(false);
-        }}
-      >
-        Sign out
-      </button>
+      {asking ? (
+        <div className="remove-confirm" role="group" aria-label="Sign out?">
+          <span>Some changes haven't reached your account yet.</span>
+          <button type="button" className="link-button" onClick={() => setAsking(false)}>
+            Stay
+          </button>
+          <button type="button" className="link-button remove-entry" onClick={leave}>
+            Sign out
+          </button>
+        </div>
+      ) : (
+        <button type="button" className="link-button" disabled={busy} onClick={() => (hasUnsyncedChanges() ? setAsking(true) : void leave())}>
+          Sign out
+        </button>
+      )}
     </div>
   );
 }

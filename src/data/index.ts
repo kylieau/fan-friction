@@ -327,6 +327,7 @@ export {
   updateEntry,
   settlePassedPlans,
   setYouOrder,
+  subscribeLogLoaded,
   subscribePersonalLog,
   togglePlan,
   toggleWasThere,
@@ -334,6 +335,7 @@ export {
   yourEntries,
 } from './personalLog';
 export type { EntryEdit, LabeledFact, ManualNight, SyncStatus } from './personalLog';
+export { hasUnsyncedChanges } from './storage';
 export { suggestEvent } from './suggestions';
 export { getTeamSchedule, scoreMark } from './teamSchedule';
 export { hoursAtGames, lengthLine, resultFor, scoreLine } from './results';

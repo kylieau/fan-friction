@@ -2,14 +2,19 @@
 // only while someone is signed in. The database's own rules keep each
 // person's rows private (see supabase/migrations/0001_accounts.sql).
 //
-// Shape on the server: `nights` holds each night as the app stores it, minus
-// the private note, which lives in `entry_notes` so it can never ride along
-// onto a shared page. `plans` and `settings` are always owner-only.
+// Shape on the server: `entries` holds each entry as the app stores it, minus
+// the private pair (note, With), which lives in `entry_notes` so it can never
+// ride along onto a shared page. `plans` and `settings` are owner-only; the
+// removed-ids map rides in `settings.data` so a deletion reaches every device.
+//
+// A save writes only the rows one change touched (Kylie's build notes, Oct 9,
+// C112). It never lists the server's rows to delete the rest, so an older tab
+// cannot wipe what a newer device saved.
 
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Entry, Plan, PersonalLog, YouOrder } from '../types';
-import { EMPTY_LOG, readFavorites } from './localStore';
-import type { EntryStore } from './types';
+import { EMPTY_LOG, readFavorites, readRemoved } from './localStore';
+import type { EntryStore, LogDiff } from './types';
 
 interface EntryRow {
   id: string;
@@ -44,7 +49,7 @@ interface SettingsRow {
   user_id: string;
   you_order: string;
   hidden_seed_ids: string[];
-  data?: { favorites?: unknown };
+  data?: { favorites?: unknown; removed?: unknown };
 }
 
 function entryRow(userId: string, entry: Entry): EntryRow {
@@ -127,56 +132,44 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         })),
         order: asOrder(settings?.you_order ?? EMPTY_LOG.order),
         favorites: readFavorites(settings?.data?.favorites),
+        removed: readRemoved(settings?.data?.removed),
       };
     },
 
-    async save(log: PersonalLog): Promise<void> {
+    async save(diff: LogDiff): Promise<void> {
       const id = who();
+      const { entries, plans, log } = diff;
 
-      // Nights: write every one, then drop any the log no longer has.
-      if (log.added.length > 0) {
-        await must(client.from('entries').upsert(log.added.map((entry) => entryRow(id, entry))));
+      if (entries.upsert.length > 0) {
+        await must(client.from('entries').upsert(entries.upsert.map((entry) => entryRow(id, entry))));
+        // The private pair: one row per entry that has either; none for the rest.
+        const noted = entries.upsert.filter((entry) => entry.note || entry.with);
+        if (noted.length > 0) {
+          await must(
+            client.from('entry_notes').upsert(
+              noted.map((entry) => ({ user_id: id, entry_id: entry.id, note: entry.note ?? null, with_whom: entry.with ?? null })),
+            ),
+          );
+        }
+        const noteless = entries.upsert.filter((entry) => !entry.note && !entry.with).map((entry) => entry.id);
+        if (noteless.length > 0) await must(client.from('entry_notes').delete().eq('user_id', id).in('entry_id', noteless));
       }
-      const keepEntries = log.added.map((entry) => entry.id);
-      const existing = (await must<{ id: string }[]>(client.from('entries').select('id').eq('user_id', id))) ?? [];
-      const goneEntries = existing.map((row) => row.id).filter((entryId) => !keepEntries.includes(entryId));
-      if (goneEntries.length > 0) {
-        await must(client.from('entries').delete().eq('user_id', id).in('id', goneEntries));
-      }
+      // Notes go with their entry (the database cascades).
+      if (entries.remove.length > 0) await must(client.from('entries').delete().eq('user_id', id).in('id', entries.remove));
 
-      // Private fields: who you went with (and an older copy's note, until it folds into the review). One row per night that has either; remove the rest.
-      const noted = log.added.filter((entry) => entry.note || entry.with);
-      if (noted.length > 0) {
+      if (plans.upsert.length > 0) await must(client.from('plans').upsert(plans.upsert.map((plan) => planRow(id, plan))));
+      if (plans.remove.length > 0) await must(client.from('plans').delete().eq('user_id', id).in('id', plans.remove));
+
+      if (diff.settings) {
         await must(
-          client.from('entry_notes').upsert(
-            noted.map((entry) => ({ user_id: id, entry_id: entry.id, note: entry.note ?? null, with_whom: entry.with ?? null })),
-          ),
+          client.from('settings').upsert({
+            user_id: id,
+            you_order: log.order,
+            hidden_seed_ids: log.hiddenSeedIds,
+            data: { favorites: log.favorites ?? [], removed: log.removed ?? {} },
+          }),
         );
       }
-      const noteless = log.added.filter((entry) => !entry.note && !entry.with).map((entry) => entry.id);
-      if (noteless.length > 0) {
-        await must(client.from('entry_notes').delete().eq('user_id', id).in('entry_id', noteless));
-      }
-
-      // Plans: same approach.
-      if (log.plans.length > 0) {
-        await must(client.from('plans').upsert(log.plans.map((plan) => planRow(id, plan))));
-      }
-      const keepPlans = log.plans.map((plan) => plan.id);
-      const existingPlans = (await must<{ id: string }[]>(client.from('plans').select('id').eq('user_id', id))) ?? [];
-      const gonePlans = existingPlans.map((row) => row.id).filter((planId) => !keepPlans.includes(planId));
-      if (gonePlans.length > 0) {
-        await must(client.from('plans').delete().eq('user_id', id).in('id', gonePlans));
-      }
-
-      await must(
-        client.from('settings').upsert({
-          user_id: id,
-          you_order: log.order,
-          hidden_seed_ids: log.hiddenSeedIds,
-          data: { favorites: log.favorites ?? [] },
-        }),
-      );
     },
   };
 }

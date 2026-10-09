@@ -106,8 +106,20 @@ export async function signInWithEmail(email: string): Promise<string | null> {
   return error ? error.message : null;
 }
 
+// Only a Sign out the person tapped wipes the phone copy. A session that
+// expires on its own also arrives as a sign-out; the log keeps the phone copy then.
+let deliberate = false;
+
+/** True once, right after a sign-out the person asked for. */
+export function tookDeliberateSignOut(): boolean {
+  const was = deliberate;
+  deliberate = false;
+  return was;
+}
+
 export async function signOut(): Promise<void> {
   const c = supabase();
   if (!c) return;
+  deliberate = true;
   await c.auth.signOut();
 }

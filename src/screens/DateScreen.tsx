@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronDown, ShareIcon } from '../components/Icons';
+import { RemoveConfirm } from '../components/EntryLayer';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { formatScore, scoreBand, scoreLabel, showFriction } from '../config/scoreLabels';
 import {
@@ -66,6 +67,8 @@ export function DateScreen() {
   const [day, setDay] = useState<CityDate | null>(null);
   const [friends, setFriends] = useState<FriendEntry[]>([]);
   const [choosing, setChoosing] = useState(false);
+  // The event whose Attended is being un-tapped: one confirm before it leaves the log (C054).
+  const [unmarking, setUnmarking] = useState<string | null>(null);
   const [shareNote, setShareNote] = useState('');
 
   useEffect(() => {
@@ -113,7 +116,10 @@ export function DateScreen() {
 
   const mark = (e: CrowdEvent) => {
     if (ahead) togglePlan(e);
-    else toggleWasThere(e);
+    else if (attended(e)) {
+      setUnmarking(e.id);
+      return;
+    } else toggleWasThere(e);
     setChoosing(false);
   };
 
@@ -260,7 +266,17 @@ export function DateScreen() {
                       </span>
                     </span>
                   </Link>
-                  {choosing ? (
+                  {choosing && unmarking === e.id ? (
+                    <RemoveConfirm
+                      compact
+                      onKeep={() => setUnmarking(null)}
+                      onRemove={() => {
+                        setUnmarking(null);
+                        toggleWasThere(e);
+                        setChoosing(false);
+                      }}
+                    />
+                  ) : choosing ? (
                     <button type="button" className={`fav-toggle${yours ? ' on' : ''}`} onClick={() => mark(e)}>
                       {ahead ? (attending(e) ? 'Attending' : 'Attend') : attended(e) ? 'Attended' : 'Attended?'}
                     </button>

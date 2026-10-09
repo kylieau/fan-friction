@@ -67,6 +67,14 @@ function isFavorite(value: unknown): value is Favorite {
   return KINDS.includes(fav.kind) && typeof fav.id === 'string' && typeof fav.label === 'string';
 }
 
+/** The removed-ids map as saved: id to ISO time. Anything else is dropped. */
+export function readRemoved(value: unknown): Record<string, string> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
+  const out: Record<string, string> = {};
+  for (const [id, at] of Object.entries(value as Record<string, unknown>)) if (typeof at === 'string') out[id] = at;
+  return out;
+}
+
 /** Favorites as saved, or undefined when this log has never had any (so they get derived once). */
 export function readFavorites(value: unknown): Favorite[] | undefined {
   if (!Array.isArray(value)) return undefined;
@@ -91,6 +99,7 @@ export function readLocalLog(): PersonalLog {
       plans: Array.isArray(parsed.plans) ? parsed.plans.filter(isPlan).map(cleanPlan) : [],
       order: asOrder(parsed.order),
       favorites: readFavorites(parsed.favorites),
+      ...(parsed.removed ? { removed: readRemoved(parsed.removed) } : {}),
     };
   } catch {
     return EMPTY_LOG;
@@ -105,7 +114,7 @@ export const localEntryStore: EntryStore = {
   async load() {
     return readLocalLog();
   },
-  async save(log) {
-    writeLocalLog(log);
+  async save(diff) {
+    writeLocalLog(diff.log);
   },
 };

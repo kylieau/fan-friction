@@ -2407,6 +2407,17 @@ button {
   color: #b00020;
 }
 
+/* Inside a list row: wraps to two short lines so the event's text keeps its width. */
+.remove-confirm.compact {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 4px;
+  column-gap: 12px;
+  max-width: 112px;
+  flex: 0 0 auto;
+  align-self: center;
+}
+
 /* ---------- Your year (You → Stats) ---------- */
 .your-year {
   display: flex;

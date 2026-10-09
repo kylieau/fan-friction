@@ -137,14 +137,20 @@ export async function followStatus(targetId: string): Promise<FollowStatus> {
   return (data as { status: FollowStatus }).status;
 }
 
-/** Follow someone. Approved at once when their page is open to anyone; otherwise a request. */
+/**
+ * Ask to follow someone. Every follow is a request the other person approves,
+ * whatever their visibility (Kylie, Oct 9); the database refuses anything else
+ * (supabase/migrations/0011_follow_approval.sql). A row that already exists
+ * (asked before, or already approved) is reported as it stands.
+ */
 export async function follow(target: Profile): Promise<FollowStatus | string> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return 'Sign in to follow.';
-  const status: FollowStatus = target.visibility === 'anyone' ? 'approved' : 'pending';
-  const { error } = await c.from('follows').upsert({ follower_id: me.id, followee_id: target.id, status });
-  return error ? error.message : status;
+  const { error } = await c.from('follows').insert({ follower_id: me.id, followee_id: target.id, status: 'pending' });
+  if (!error) return 'pending';
+  if (error.code === '23505') return followStatus(target.id);
+  return error.message;
 }
 
 export async function unfollow(targetId: string): Promise<void> {

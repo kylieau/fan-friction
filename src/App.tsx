@@ -18,7 +18,7 @@ import { FavoritePage } from './screens/FavoritePage';
 import { DateScreen } from './screens/DateScreen';
 import { getHomeId, subscribeHome } from './lib/homeCity';
 import { getPref, setPref } from './lib/prefs';
-import { getCityDate, settlePassedPlans } from './data';
+import { getCityDate, settlePassedPlans, subscribeLogLoaded } from './data';
 import { useEffect } from 'react';
 
 /** /night/<date> was the date page's first address. */
@@ -33,9 +33,10 @@ function Shell() {
   const homeId = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const [showTips, setShowTips] = useState(() => !getPref('tipsDone', false));
 
-  // An Attending date becomes Attended once it passes.
+  // An Attending date becomes Attended once it passes: at open, and again once the account copy is in.
   useEffect(() => {
     void settlePassedPlans(getCityDate);
+    return subscribeLogLoaded(() => void settlePassedPlans(getCityDate));
   }, []);
 
   const finishTips = () => {

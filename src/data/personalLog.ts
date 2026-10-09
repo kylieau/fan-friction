@@ -7,8 +7,8 @@ import { METROS } from '../config/metros';
 import { listTitle } from '../lib/eventTitle';
 import { TEAMS } from './teams';
 import { venueNameOn, VENUES } from './venues';
-import { clearPhoneCopy, isSavingToAccount, mergeLogs, entryStore, readSavedLog, setStoreAccount } from './storage';
-import { onAccountChange } from './account';
+import { clearOfflineCatalog, clearPhoneCopy, diffLogs, isSavingToAccount, mergeLogs, entryStore, readSavedLog, setStoreAccount } from './storage';
+import { onAccountChange, tookDeliberateSignOut } from './account';
 import { favoriteKey, favoritesFromLog } from './favorites';
 import { levelPhrase } from './competitions';
 import { lengthLine, scoreLine } from './results';
@@ -96,11 +96,13 @@ export function getSaveWarning(): string | null {
   return saveWarning;
 }
 
+/** Save what changed. Changed rows get an edit time; removed ids are remembered (see storage/index.ts). */
 function commit(next: PersonalLog) {
-  snapshot = next;
+  const diff = diffLogs(snapshot, next);
+  snapshot = diff.log;
   saveWarning = null;
   emit();
-  entryStore.save(next).catch(() => {
+  entryStore.save(diff).catch(() => {
     saveWarning = isSavingToAccount()
       ? "Couldn't reach your account. This phone still has the change; it will try again on the next save."
       : 'This phone blocked saving. Export a backup before you leave this page.';
@@ -116,8 +118,20 @@ export function getSyncStatus(): SyncStatus {
   return syncStatus;
 }
 
-// Signing in: pull the account copy, fold in anything marked on this phone, save
-// the result both places. Signing out: show an empty log and forget the phone copy.
+// Fires once the account copy has been folded in, so plans can settle against it.
+const loadedListeners = new Set<() => void>();
+export function subscribeLogLoaded(listener: () => void): () => void {
+  loadedListeners.add(listener);
+  return () => {
+    loadedListeners.delete(listener);
+  };
+}
+
+// Signing in (and every open while signed in): pull the account copy, fold in
+// anything marked on this phone, save the difference up and the whole thing
+// here. Signing out on purpose: show an empty log and forget the phone copy.
+// A sign-out the person did not ask for (an expired session) keeps the phone
+// copy, so nothing unsaved is lost on their own device.
 onAccountChange(async (account) => {
   if (account) {
     syncStatus = 'loading';
@@ -126,12 +140,14 @@ onAccountChange(async (account) => {
     try {
       const cloud = await entryStore.load();
       const merged = foldNotes(mergeLogs(cloud, snapshot));
-      snapshot = merged;
+      const diff = diffLogs(cloud, merged);
+      snapshot = diff.log;
       syncStatus = 'account';
       emit();
-      await entryStore.save(merged);
+      loadedListeners.forEach((listener) => listener());
+      await entryStore.save(diff);
     } catch {
-      saveWarning = "Couldn't load your account's nights. Showing what's on this phone.";
+      saveWarning = "Couldn't load your account's events. Showing what's on this phone.";
       syncStatus = 'phone';
       setStoreAccount(null);
       emit();
@@ -141,8 +157,8 @@ onAccountChange(async (account) => {
   const wasSignedIn = isSavingToAccount();
   setStoreAccount(null);
   syncStatus = 'phone';
-  if (wasSignedIn) {
-    await clearPhoneCopy();
+  if (wasSignedIn && tookDeliberateSignOut()) {
+    await Promise.all([clearPhoneCopy(), clearOfflineCatalog()]);
     snapshot = foldNotes(readSavedLog());
   }
   emit();
@@ -479,19 +495,27 @@ export function togglePlan(event: CrowdEvent) {
 /**
  * Attending becomes Attended by itself once the date passes (Kylie, Oct 5: no
  * "did you go?" step; remove it afterwards if you didn't). Runs at app start and
- * after sign-in. Needs each event's record, so it is async and quiet on failure.
+ * once the account copy has loaded. Needs each event's record, so it is async.
+ * A plan is cleared only when it became an entry, or its event is already
+ * logged (C111). A plan whose event could not be loaded, or was not found,
+ * waits for the next open; public listings drop past events, so "not found"
+ * is treated like a failed load. A plan with no event id is left alone here.
  */
 export async function settlePassedPlans(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
   const now = new Date();
   const passed = snapshot.plans.filter((plan) => {
     const metro = METROS[plan.metroId] ?? METROS.la;
-    const today = new Date(now.toLocaleDateString('en-CA', { timeZone: metro.timeZone })).toISOString().slice(0, 10);
-    return plan.date < today;
+    return plan.date < todayInZone(metro.timeZone, now);
   });
   if (passed.length === 0) return;
   const added: Entry[] = [];
+  const settledIds = new Set<string>();
   for (const plan of passed) {
-    if (!plan.eventId || snapshot.added.some((entry) => entry.eventId === plan.eventId)) continue;
+    if (!plan.eventId) continue;
+    if (snapshot.added.some((entry) => entry.eventId === plan.eventId)) {
+      settledIds.add(plan.id);
+      continue;
+    }
     try {
       const day = await loadDate(plan.metroId, plan.date);
       const event = day.events.find((e) => e.id === plan.eventId);
@@ -499,11 +523,12 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       const entry = entryFromEvent(event);
       const stamp = stampNow(event, now);
       added.push(stamp ? { ...entry, stamp } : entry);
+      settledIds.add(plan.id);
     } catch {
       /* try again next open */
     }
   }
-  const settledIds = new Set(passed.map((plan) => plan.id));
+  if (settledIds.size === 0) return;
   commit({
     ...snapshot,
     added: [...snapshot.added, ...added],
