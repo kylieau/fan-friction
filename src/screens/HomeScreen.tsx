@@ -17,6 +17,7 @@ import {
   metrosWithEvents,
   nightsOf,
   ratingForEntry,
+  roundEstimate,
   scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
@@ -32,7 +33,7 @@ import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/date
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, mapPath } from '../lib/view';
-import { dayWord } from './DateScreen';
+import { dayWord } from '../lib/dayWord';
 
 // The map library loads only when a map is on screen (Home and Explore), not on every tab.
 const MiniMap = lazy(() => import('../map/MiniMap'));
@@ -360,5 +361,6 @@ function crowdLine(e: CrowdEvent): string | null {
   const sold = e.crowd.some((c) => c.soldOut);
   if (counted?.count !== undefined) return `${fmt(counted.count)} ${crowdKind(e) ?? ''}`.trim() + (sold ? ' · sold out' : '');
   if (sold) return 'sold out';
+  if (e.expectedDraw) return `~${fmt(roundEstimate(e.expectedDraw.count))} estimated`;
   return null;
 }

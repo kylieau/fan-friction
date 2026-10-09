@@ -269,9 +269,9 @@ interface EspnGame {
  */
 function nameOf(team: EspnSide['team']): string {
   const ours = Object.values(TEAMS).find((t) => t.metroId && t.name === team.displayName);
-  if (ours) return ours.shortName;
+  if (ours) return ours.shortName.trim();
   const clash = Object.values(TEAMS).some((t) => t.shortName === team.shortDisplayName && t.name !== team.displayName);
-  return clash ? team.displayName : team.shortDisplayName;
+  return (clash ? team.displayName : team.shortDisplayName).trim();
 }
 
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -321,7 +321,9 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
     ...(broadcast ? { broadcast } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: t.sport },
-    teams: { home: t.teamId, away: slug(nameOf(away.team)) },
+    // The away key is ESPN's own short name, the one data/attendance stores, so opponent ratios line up (C012).
+    teams: { home: t.teamId, away: slug(away.team.shortDisplayName ?? nameOf(away.team)) },
+    ...(c.neutralSite ? { neutralSite: true } : {}),
     crowd: [],
     sourceId: 'espn',
   };

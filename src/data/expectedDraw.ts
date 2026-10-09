@@ -29,7 +29,7 @@ function describe(row: ExpectedDrawRow, date: string): string {
 
 /** The typical past crowd for this home side in this building on this kind of date. */
 export function calibratedDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
-  if (event.audience.domain !== 'sports' || !event.teams || event.stakes?.round || event.place.type !== 'venue') return undefined;
+  if (event.audience.domain !== 'sports' || !event.teams || event.stakes?.round || event.place.type !== 'venue' || event.neutralSite) return undefined;
   const row = pickDraw(
     rowsFor(event.metroId).filter((r) => r.metroId === event.metroId),
     { teamId: event.teams.home, venueId: event.place.venueId, date: event.date, opener: event.homeOpener, preseason: event.preseason },
@@ -49,6 +49,7 @@ export function calibratedDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
     fromCrowds: true,
     games: row.games,
     seasons: row.seasons,
+    basis: 'team',
     note: `Typical announced crowd here for ${describe(row, event.date)}: ${row.games} games, ${row.seasons}.`,
   };
 }
@@ -71,10 +72,10 @@ export function postseasonDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   const row = POSTSEASON_DRAWS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.venueId === venueId && r.band === band);
   // No comparables (the WNBA, NFL, NWSL today): the building itself, said so (Kylie, Oct 7: show the
   // building rather than "No count yet"). The friction read already used it.
-  if (!row) return { count: cap, low: cap, high: cap, planning: true, note: 'No past playoff crowds on file for this round; the building\'s capacity for this sport. An estimate.' };
+  if (!row) return { count: cap, low: cap, high: cap, planning: true, basis: 'building', note: 'No past playoff crowds on file for this round; the building\'s capacity for this sport. An estimate.' };
   const people = postseasonPeople(row, cap);
   const who = row.basis === 'team' ? 'this team\'s' : row.basis === 'blend' ? 'this team\'s and the league\'s' : 'the league\'s';
-  return { ...people, planning: true, fromCrowds: true, games: row.games, seasons: row.seasons, note: `Playoff crowds as a share of the building, ${who} past ${row.games} games (${row.seasons}). An estimate.` };
+  return { ...people, planning: true, fromCrowds: true, games: row.games, seasons: row.seasons, basis: row.basis, note: `Playoff crowds as a share of the building, ${who} past ${row.games} games (${row.seasons}). An estimate.` };
 }
 
 /**

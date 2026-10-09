@@ -11,6 +11,8 @@ import {
   getCityDate,
   getPersonalLog,
   isPlanned,
+  isStampLocked,
+  asMetroDate,
   isWasThere,
   subscribePersonalLog,
   todayIn,
@@ -108,6 +110,8 @@ export function EventScreen() {
   const stakesLine = quietStakes(e, day.events);
   const logged = yourEntries(log).find((entry) => entry.eventId === e.id);
   const ahead = e.date >= todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
+  // "Stamped" only once the stamp has locked, 24 hours after the night's last start (C041).
+  const stampLocked = !ahead && isStampLocked(asMetroDate(e.metroId, date, day.events), (METROS[e.metroId] ?? DEFAULT_METRO).timeZone);
   // The station: the schedule's when it names one, else what you wrote down.
   const tv = e.broadcast ?? logged?.tv;
 
@@ -170,7 +174,7 @@ export function EventScreen() {
           <div className="verdict-why">{a.why}</div>
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
           {a.status === 'formula' && (
-            <div className="draft-note">{ahead ? 'Forecast' : 'Stamped'} · Formula v4 · placeholder numbers until tuned.</div>
+            <div className="draft-note">{stampLocked ? 'Stamped' : 'Forecast'} · Formula v4 · placeholder numbers until tuned.</div>
           )}
         </section>
       )}
@@ -229,7 +233,7 @@ export function EventScreen() {
       <ShareCard
         dateLabel={longLocalDate(date)}
         title={listTitle(e)}
-        line={a ? (showFriction(a.friction) ? `${frictionLabel(a.friction)}: ${a.why}.` : a.why) : ''}
+        line={a ? (showFriction(a.friction) ? `${frictionLabel(a.friction)}: ${a.why}` : a.why) : ''}
         rating={day.rating ? day.rating.rating : null}
         crowd={me.count !== undefined ? `${fmt(me.count)} ${kind ? capital(kind) : ''}` : me.soldOut ? 'Sold Out' : null}
       />
@@ -306,7 +310,11 @@ function aboutThisEstimate(event: CrowdEvent, seats: number | undefined): string
   if (!d?.fromCrowds) return null;
   const where = event.place.type === 'venue' ? venueNameOn(VENUES[event.place.venueId], event.date) : event.place.name;
   const span = seasonSpan(d.seasons);
-  const parts = [`Based on ${d.games ? `${d.games} announced crowds` : 'announced crowds'} at ${where}${span ? `, ${span}` : ''}.`];
+  const n = d.games ? `${d.games} announced` : 'announced';
+  // Name the real basis (C031): this team here, this team's and the league's playoff games, or the league's.
+  const basis =
+    d.basis === 'league' ? `${n} playoff crowds across the league` : d.basis === 'blend' ? `${n} playoff crowds, this team's and the league's` : `${n} crowds for this team at ${where}`;
+  const parts = [`Based on ${basis}${span ? `, ${span}` : ''}.`];
   if (d.low != null && d.high != null && roundEstimate(d.low) !== roundEstimate(d.high)) {
     parts.push(d.planning ? `A planning range: ${fmt(roundEstimate(d.low))} to ${fmt(roundEstimate(d.high))}.` : `Half of games land between ${fmt(roundEstimate(d.low))} and ${fmt(roundEstimate(d.high))}.`);
   }

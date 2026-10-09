@@ -25,7 +25,7 @@ export interface Capacity {
   /** First year this figure applies. Leave off if it has always applied. */
   fromYear?: number;
   /** Only for one setup (basketball vs. hockey, concerts). Leave off for the usual one. */
-  setup?: 'basketball' | 'hockey' | 'football' | 'soccer' | 'baseball' | 'concert';
+  setup?: 'basketball' | 'hockey' | 'football' | 'soccer' | 'baseball' | 'concert' | 'tennis' | 'track' | 'cricket' | 'rodeo' | 'racing';
   /** Anything a reader should know, such as sources that disagree. */
   note?: string;
   /** Capacity with standing room, where published or regularly sold (AT&T Stadium 100,000+). Caps estimates; never shown. */
@@ -216,7 +216,11 @@ export interface CrowdEvent {
     /** How many announced crowds are behind the figure, and which seasons ("2023, 2024, 2025"). */
     games?: number;
     seasons?: string;
+    /** Whose crowds: this team's here, this team's and the league's, the league's, or just the building (C031). */
+    basis?: 'team' | 'blend' | 'league' | 'building';
   };
+  /** The feed lists a tracked team as home, but the site is neutral (a bowl game). Not sized from its usual crowd (C005). */
+  neutralSite?: boolean;
   /** A preseason (exhibition) game. Sized from past preseason crowds, never the regular season's. */
   preseason?: boolean;
   /** The home side's first regular-season home game of the season. */
@@ -312,6 +316,7 @@ export interface DateRating {
  * Rated: has a rating. Nothing is ever "being calculated".
  */
 export type DateStatus = 'quiet' | 'unrated' | 'rated';
+/** Ids of sources that failed to answer for this date (C046). Empty when every source answered. */
 
 export interface CityDate {
   metroId: string;
@@ -319,6 +324,7 @@ export interface CityDate {
   status: DateStatus;
   events: CrowdEvent[];
   rating: DateRating | null;
+  failed?: string[];
 }
 
 /** One cell of the Nights calendar. Quiet means nothing big is on file for that date. */

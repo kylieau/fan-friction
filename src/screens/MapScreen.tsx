@@ -29,6 +29,7 @@ import { AreaSwitcher } from '../components/AreaSwitcher';
 import { DateScore } from '../components/DateScore';
 import { ArrowRight, ChevronDown, RecenterIcon, SearchIcon } from '../components/Icons';
 import { sheetBadges } from '../lib/chips';
+import { dayWordFor } from '../lib/dayWord';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
@@ -40,6 +41,8 @@ import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 
 type Mode = 'crowds' | 'traffic';
+/** No traffic layer exists yet; the switch stays off the map until one does (C079). */
+const TRAFFIC_BUILT = false;
 
 // The map is the screen; the header and the sheet sit on it. Opens on Today, even
 // when it's quiet. A famous night opens here too ("/?date=2024-10-25").
@@ -116,6 +119,7 @@ export function MapScreen() {
     setMovedByHand(false);
     setSelectedId(null);
     setOpen(false);
+    setLegend(false);
   }, [date]);
 
   const initialMetro = useRef(metro.id);
@@ -123,11 +127,13 @@ export function MapScreen() {
     if (metro.id === initialMetro.current) return;
     setFreezeCamera(false);
     setMovedByHand(false);
+    setLegend(false); // the key closes on a city switch (C048)
   }, [metro.id]);
 
   const select = useCallback((id: string | null) => {
     setFreezeCamera(false);
     setSelectedId(id);
+    if (id) setLegend(false); // and on an event pick
   }, []);
   const selected = events.find((e) => e.id === selectedId) ?? null;
 
@@ -278,21 +284,23 @@ export function MapScreen() {
               </div>
             )}
           </div>
-          <div className="segmented small" role="tablist" aria-label="Map mode">
-            <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
-              Crowds
-            </button>
-            <button type="button" role="tab" aria-selected={mode === 'traffic'} onClick={() => setMode('traffic')}>
-              Traffic
-            </button>
-          </div>
+          {/* The Crowds/Traffic switch is hidden until a Traffic layer exists (C079; Traffic is parked). */}
+          {TRAFFIC_BUILT && (
+            <div className="segmented small" role="tablist" aria-label="Map mode">
+              <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
+                Crowds
+              </button>
+              <button type="button" role="tab" aria-selected={mode === 'traffic'} onClick={() => setMode('traffic')}>
+                Traffic
+              </button>
+            </div>
+          )}
         </div>
         {nextPlan && <SavedDateCard plan={nextPlan} />}
       </header>
 
       <div className="map-controls">
-      {points.length > 0 && (
-        <>
+      <>
           <button
             type="button"
             className="legend-button"
@@ -305,13 +313,13 @@ export function MapScreen() {
           {legend && (
             <div className="legend-card" role="note">
               <ul className="map-key">
+                {points.length === 0 && <li className="map-key-empty">Nothing big on this date.</li>}
                 <li className="map-key-glow">Gold glow is the size of the crowd</li>
                 <li className="map-key-ring">Pale ring is the one you picked</li>
               </ul>
             </div>
           )}
-        </>
-      )}
+      </>
       {movedByHand && (
         <button type="button" className="recenter-button" aria-label="Recenter the map" onClick={doRecenter}>
           <RecenterIcon />
@@ -482,10 +490,6 @@ function SavedDateCard({ plan }: { plan: Plan }) {
   );
 }
 
-/** "day" when the event starts before 5 pm, else "night" (Kylie, Oct 5). */
-function dayWordFor(event: CrowdEvent): 'day' | 'night' {
-  return event.start && event.start < '17:00' ? 'day' : 'night';
-}
 
 /** Same venue name the event page uses. Every On-the-map row shows it. */
 function sheetVenue(event: CrowdEvent): string | null {

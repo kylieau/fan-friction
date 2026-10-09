@@ -396,6 +396,14 @@ export function nightKey(metroId: string, date: LocalDate): string {
   return `${metroId}|${date}`;
 }
 
+// Whether some event that night feeds friction, from the full list for that city and
+// date (feeds and catalog included), remembered when the night was scored (C035).
+const nearbyByNight = new Map<string, boolean>();
+
+export function rememberNearby(metroId: string, date: LocalDate, events: readonly CrowdEvent[]) {
+  nearbyByNight.set(nightKey(metroId, date), events.some(eventFeedsFriction));
+}
+
 /** The city a logged night belongs to. Its own, when it says; the seed city otherwise. */
 export function entryMetroId(entry: Entry): string {
   return entry.metroId ?? DEFAULT_ENTRY_METRO;
@@ -420,6 +428,7 @@ export function ratingFromEntry(
   if (score == null) return null;
   if (!entry.belowFloor) return score;
   const id = entry.eventId ?? entry.id;
-  const nearby = sameNight.some((other) => other.id !== id && eventFeedsFriction(other));
+  // The full list for that night when it has been scored; the seeded list is the fallback.
+  const nearby = nearbyByNight.get(nightKey(entryMetroId(entry), entry.when.sort)) ?? sameNight.some((other) => other.id !== id && eventFeedsFriction(other));
   return nearby ? score : null;
 }

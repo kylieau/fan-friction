@@ -19,7 +19,9 @@ import {
   getCityDate,
   getPersonalLog,
   isPlanned,
+  isStampLocked,
   isWasThere,
+  roundEstimate,
   stampLocksAt,
   subscribeAccount,
   subscribePersonalLog,
@@ -34,21 +36,15 @@ import {
 import { crowdKind } from '../map/crowdPoints';
 import { VENUES, venueNameOn } from '../data';
 import { clockTime, longLocalDate, weekdayLong } from '../lib/dates';
+import { dayWord } from '../lib/dayWord';
 import { listTitle } from '../lib/eventTitle';
+import { getHomeId } from '../lib/homeCity';
+import { quietStakes } from '../lib/stakes';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
 
-/**
- * "day" when everything that date starts before 5 pm, otherwise "night"
- * (Kylie, Oct 5). The unit is still called a night everywhere else.
- */
-export function dayWord(events: readonly CrowdEvent[]): 'day' | 'night' {
-  const starts = events.map((e) => e.start).filter((s): s is string => Boolean(s));
-  if (starts.length === 0) return 'night';
-  return starts.every((s) => s < '17:00') ? 'day' : 'night';
-}
 
 /**
  * One page per night: a date in a city with one read. Your entry (or plan)
@@ -59,10 +55,16 @@ export function DateScreen() {
   const { date = '' } = useParams();
   const [params] = useSearchParams();
   const navigate = useNavigate();
-  const metroId = params.get('metro') ?? DEFAULT_METRO.id;
-  const metro = METROS[metroId] ?? DEFAULT_METRO;
   const highlight = params.get('event');
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  // The city: the link's, else the city of a plan or entry on this date, else home, else the default (C045).
+  const metroId =
+    params.get('metro') ??
+    log.plans.find((p) => p.date === date)?.metroId ??
+    log.added.find((n) => n.when.sort === date && n.when.precision === 'day')?.metroId ??
+    getHomeId() ??
+    DEFAULT_METRO.id;
+  const metro = METROS[metroId] ?? DEFAULT_METRO;
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [day, setDay] = useState<CityDate | null>(null);
   const [friends, setFriends] = useState<FriendEntry[]>([]);
@@ -71,14 +73,19 @@ export function DateScreen() {
   const [unmarking, setUnmarking] = useState<string | null>(null);
   const [shareNote, setShareNote] = useState('');
 
+  const [tries, setTries] = useState(0);
+  const [loadFailed, setLoadFailed] = useState(false);
   useEffect(() => {
     let current = true;
     setDay(null);
-    getCityDate(metro.id, date).then((next) => current && setDay(next));
+    setLoadFailed(false);
+    getCityDate(metro.id, date)
+      .then((next) => current && setDay(next))
+      .catch(() => current && setLoadFailed(true));
     return () => {
       current = false;
     };
-  }, [metro.id, date]);
+  }, [metro.id, date, tries]);
 
   useEffect(() => {
     let current = true;
@@ -95,7 +102,8 @@ export function DateScreen() {
   }, [account?.id, date, metro.id]);
 
   const today = todayIn(metro);
-  const ahead = date > today;
+  // Today counts as ahead: an Attend today is a plan, and becomes Attended once the date passes (C039).
+  const ahead = date >= today;
   const events = useMemo(() => (day ? [...day.events].sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99')) : []), [day]);
   const word = dayWord(events);
   const mine = useMemo(
@@ -144,9 +152,37 @@ export function DateScreen() {
     else navigate('/calendar');
   };
 
-  if (!day) return <div className="screen page" />;
+  if (loadFailed || (day && day.failed?.length && day.events.length === 0)) {
+    return (
+      <div className="screen page">
+        <button type="button" className="back-link" onClick={back}>
+          <ChevronDown /> Back
+        </button>
+        <div className="card empty-card">
+          <div className="card-title">Couldn't load this date.</div>
+          <button type="button" className="link-button" onClick={() => setTries((n) => n + 1)}>
+            Try again
+          </button>
+        </div>
+      </div>
+    );
+  }
+  if (!day) {
+    return (
+      <div className="screen page">
+        <button type="button" className="back-link" onClick={back}>
+          <ChevronDown /> Back
+        </button>
+        <p className="you-fine" role="status">
+          Loading…
+        </p>
+      </div>
+    );
+  }
 
-  const readKind = rating ? (ahead ? 'Forecast' : 'Stamped') : null;
+  // "Forecast" until the stamp locks, 24 hours after the last start; "Stamped" only after (C041).
+  const locked = !ahead && isStampLocked(asMetroDate(metro.id, date, events), metro.timeZone);
+  const readKind = rating ? (locked ? 'Stamped' : 'Forecast') : null;
 
   return (
     <div className="screen page date-page">
@@ -260,6 +296,7 @@ export function DateScreen() {
                     <span className="tl-time">{e.start ? clockTime(e.start) : '—'}</span>
                     <span className="log-main">
                       <span className="log-title">{listTitle(e)}</span>
+                      {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
                       <span className="log-facts">
                         {[venueOf(e), crowdLine(e)].filter(Boolean).join(' · ')}
                         <VenueWeather event={e} />
@@ -375,5 +412,7 @@ function crowdLine(e: CrowdEvent): string | null {
   const sold = e.crowd.some((c) => c.soldOut);
   if (counted?.count !== undefined) return `${fmt(counted.count)} ${crowdKind(e) ?? ''}`.trim() + (sold ? ' · sold out' : '');
   if (sold) return 'sold out';
+  // An upcoming row shows the estimate the map's rows show (C065); full numbers here, there is room (C073).
+  if (e.expectedDraw) return `~${fmt(roundEstimate(e.expectedDraw.count))} estimated`;
   return null;
 }

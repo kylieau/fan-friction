@@ -205,7 +205,7 @@ export function eventTypeLabel(kind: string, sport: string): string {
   if (kind === 'festival') return 'Festival';
   if (kind === 'live-broadcast') return 'Live Broadcast';
   if (kind === 'special') return 'Special';
-  if (kind === 'show' || sport === 'Concerts') return 'Show';
+  if (kind === 'show' || sport === 'Concerts') return 'Concert';
   if (sport === 'WNBA') return "Women's basketball";
   return sport;
 }
@@ -359,6 +359,7 @@ export function eventFacts(event: CrowdEvent, logged?: Entry): LabeledFact[] {
     const type = eventTypeLabel(event.kind, sport);
     if (type) facts.push({ label: 'Type', value: type });
   }
+  if (event.neutralSite) facts.push({ label: 'Site', value: 'Neutral' });
   if (event.starters && !facts.some((fact) => fact.label === 'Starter')) {
     const names = [event.starters.home, event.starters.away].filter(Boolean).join(' · ');
     if (names) facts.push({ label: 'Starters', value: names });
@@ -588,10 +589,11 @@ export function filterChoices(entries: Entry[]): CountRow[] {
   return counts(entries.flatMap((entry) => entry.tags)).filter((row) => row.count >= 2);
 }
 
-/** Plain words for a log entry's kind. Concerts are shows (or festivals), not a sport. */
+/** Plain words for a log entry's kind. A show is a concert (C089: one label everywhere), not a sport. */
 function typeLabel(kind: string): string {
-  if (kind === 'live-broadcast') return 'live broadcast';
-  return kind;
+  if (kind === 'live-broadcast') return 'Live broadcast';
+  if (kind === 'show') return 'Concert';
+  return kind.charAt(0).toUpperCase() + kind.slice(1);
 }
 
 export function logStats(entries: Entry[]): LogStats {
@@ -601,7 +603,7 @@ export function logStats(entries: Entry[]): LogStats {
     venues: new Set(venues).size,
     byType: counts(entries.map((entry) => typeLabel(entry.kind))),
     byTeamSport: counts(entries.flatMap((entry) => entry.tags)),
-    bySport: counts(entries.map((entry) => entry.sport)),
+    bySport: counts(entries.map((entry) => (entry.sport === 'Concerts' ? 'Concert' : entry.sport))),
     byVenue: counts(venues),
   };
 }
@@ -609,7 +611,8 @@ export function logStats(entries: Entry[]): LogStats {
 /**
  * A date score applies to an exact day in the metro. Away nights stay unlabeled.
  * A below-floor night gets the score only when bigger events that night already
- * have one. The events checked are the seeded list for that date.
+ * have one, checked against every event that date once the night has been
+ * scored (C035); the seeded list is the fallback before then.
  */
 export function ratingForEntry(entry: Entry, scores: ReadonlyMap<string, number>): number | null {
   const events =

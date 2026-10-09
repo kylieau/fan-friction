@@ -40,7 +40,8 @@ export interface DateRead {
 export function combine(scores: number[]): number {
   if (scores.length === 0) return 1;
   const top = Math.max(...scores);
-  const rest = scores.filter((s) => s !== top);
+  const rest = [...scores];
+  rest.splice(rest.indexOf(top), 1); // one copy of the top score, so a tie still counts the other (C026)
   const extra = rest.reduce((sum, s) => sum + Math.max(0, s - 3), 0);
   return Math.min(10, top + 0.25 * extra);
 }

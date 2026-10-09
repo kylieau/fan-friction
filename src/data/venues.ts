@@ -16,7 +16,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Dodger Stadium' }],
     location: [-118.24, 34.0739],
-    capacity: [{ seats: 56000 }],
+    capacity: [{ seats: 56000, setup: 'baseball' }],
     roof: 'open',
   },
   'crypto-com-arena': {
@@ -35,8 +35,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'LA Memorial Coliseum' }],
     location: [-118.2879, 34.0141],
-    capacity: [
-      { seats: 93607, note: 'Through the 2018 season (reported; USC\'s own pre-renovation figure was 92,348)' },
+    capacity: [{ seats: 93607, setup: 'football', note: 'Through the 2018 season (reported; USC\'s own pre-renovation figure was 92,348)' },
       { seats: 77500, fromYear: 2019, note: 'From August 2019, after the renovation (USC)' },
     ],
     roof: 'open',
@@ -57,7 +56,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'SoFi Stadium' }],
     location: [-118.3392, 33.9535],
-    capacity: [{ seats: 70240, fromYear: 2020, note: 'Standard setup. Expandable to 100,240 for the biggest events.' }],
+    capacity: [{ seats: 70240, setup: 'football', fromYear: 2020, note: 'Standard setup. Expandable to 100,240 for the biggest events.' }],
     roof: 'covered',
   },
   'intuit-dome': {
@@ -65,7 +64,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Intuit Dome' }],
     location: [-118.3415, 33.945],
-    capacity: [{ seats: 18000, fromYear: 2024, note: 'Design figure; 18,300 also reported. No end-stage concert figure found.' }],
+    capacity: [{ seats: 18000, setup: 'basketball', fromYear: 2024, note: 'Design figure; 18,300 also reported. No end-stage concert figure found.' }],
     roof: 'indoor',
   },
   'kia-forum': {
@@ -119,8 +118,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Angel Stadium' }],
     location: [-117.8817, 33.8003],
-    capacity: [
-      { seats: 45483, note: 'Through 2018 (reported)' },
+    capacity: [{ seats: 45483, setup: 'baseball', note: 'Through 2018 (reported)' },
       { seats: 45517, fromYear: 2019, note: 'MLB' },
     ],
     roof: 'open',
@@ -158,7 +156,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Santa Anita Park' }],
     location: [-118.0459, 34.139],
-    capacity: [{ seats: 26000, note: 'Grandstand, seated (reported; an event listing says 18,897). Infield events up to 50,000.' }],
+    capacity: [{ seats: 26000, setup: 'racing', note: 'Grandstand, seated (reported; an event listing says 18,897). Infield events up to 50,000.' }],
     roof: 'covered',
   },
   'pomona-dragstrip': {
@@ -167,7 +165,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Auto Club Raceway at Pomona' }, { name: 'In-N-Out Burger Pomona Dragstrip', from: '2023-03-30' }],
     // Approximate: OpenStreetMap has no point for the strip itself.
     location: [-117.771, 34.091],
-    capacity: [{ seats: 40000, note: 'Reported' }],
+    capacity: [{ seats: 40000, setup: 'racing', note: 'Reported' }],
     roof: 'open',
   },
   'weingart-stadium': {
@@ -175,7 +173,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Weingart Stadium' }],
     location: [-118.1504, 34.0413],
-    capacity: [{ seats: 22355, note: 'Reported, not confirmed with East LA College' }],
+    capacity: [{ seats: 22355, setup: 'football', note: 'Reported, not confirmed with East LA College' }],
     roof: 'open',
   },
   'long-beach-arena': {
@@ -205,7 +203,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Drake Stadium' }],
     location: [-118.4485, 34.0721],
-    capacity: [{ seats: 11700, note: 'UCLA' }],
+    capacity: [{ seats: 11700, setup: 'soccer', note: 'UCLA' }],
     roof: 'open',
   },
   'veterans-memorial-stadium': {
@@ -213,7 +211,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Veterans Memorial Stadium' }],
     location: [-118.1364, 33.8283],
-    capacity: [{ seats: 11600, note: 'Reported' }],
+    capacity: [{ seats: 11600, setup: 'football', note: 'Reported' }],
     roof: 'open',
   },
   'fairplex-grandstand': {
@@ -249,7 +247,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Dignity Health Sports Park Tennis Stadium' }],
     // Approximate: beside the main stadium in Carson.
     location: [-118.262, 33.863],
-    capacity: [{ seats: 8000, note: 'Tennis and boxing' }],
+    capacity: [{ seats: 8000, setup: 'tennis', note: 'Tennis and boxing' }],
     roof: 'open',
   },
   'anaheim-convention-center': {
@@ -298,7 +296,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Los Angeles Tennis Center' }],
     location: [-118.4484, 34.0701],
-    capacity: [{ seats: 5800, note: 'UCLA' }],
+    capacity: [{ seats: 5800, setup: 'tennis', note: 'UCLA' }],
     roof: 'open',
   },
   'championship-soccer-stadium': {
@@ -418,7 +416,7 @@ export const VENUES: Record<string, Venue> = {
     // Big-day grounds figure. Ordinary race days draw well under 5,000; only the Stakes and the Breeders' Cup matter.
     // The Belmont Stakes ran at Saratoga in 2024, 2025 and 2026 and returns here in 2027. The rebuilt track reopened Sep 2026;
     // the new grandstand (~10,000) finishes in early 2027. Shares its site and LIRR station with UBS Arena.
-    capacity: [{ seats: 50000, note: 'Reported; grounds in the big-day configuration' }],
+    capacity: [{ seats: 50000, setup: 'racing', note: 'Reported; grounds in the big-day configuration' }],
     roof: 'covered',
   },
   'citi-field': {
@@ -443,8 +441,7 @@ export const VENUES: Record<string, Venue> = {
     location: [-73.8303, 40.672],
     // Live racing ended Jun 28, 2026 (moved to Belmont); the casino stays. fromYear is year-granular, but the research says the
     // historic figure was overstated for all of modern use anyway: the final race day drew 6,866.
-    capacity: [
-      { seats: 17000, note: 'Reported, historic (40,000 total); badly overstated for modern racing days' },
+    capacity: [{ seats: 17000, setup: 'racing', note: 'Reported, historic (40,000 total); badly overstated for modern racing days' },
       { seats: 7000, fromYear: 2026, note: 'Estimated; racing ended 2026-06-28 and the last card drew 6,866' },
     ],
     roof: 'open',
@@ -467,7 +464,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Arthur Ashe Stadium' }],
     location: [-73.8465, 40.7498],
     // The US Open's daily grounds crowd (record 73,201) is three times this room. A US Open day is sized by that figure on the event, not by Ashe.
-    capacity: [{ seats: 23771, note: 'Official; finals draw ~28,000 with standing room' }],
+    capacity: [{ seats: 23771, setup: 'tennis', note: 'Official; finals draw ~28,000 with standing room' }],
     // Retractable, like T-Mobile Park: closes for rain.
     roof: 'covered',
   },
@@ -557,7 +554,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Meadowlands Racetrack' }],
     location: [-74.0716, 40.8158],
     // Under the floor as a building. Hambletonian Day (one a year; 16,465 in 2024, official) carries its own crowd figure on the event.
-    capacity: [{ seats: 2200, note: 'Reported; grandstand seats only' }],
+    capacity: [{ seats: 2200, setup: 'racing', note: 'Reported; grandstand seats only' }],
     roof: 'covered',
   },
   'nassau-coliseum': {
@@ -568,8 +565,7 @@ export const VENUES: Record<string, Venue> = {
     // Still open and lightly used (LI Nets, NY Riptide, a few concerts); Sands dropped its casino bid Apr 2025 and the future is undecided.
     names: [{ name: 'NYCB Live: Nassau Veterans Memorial Coliseum' }, { name: 'Nassau Veterans Memorial Coliseum', from: '2020-01-01' }],
     location: [-73.5904, 40.7229],
-    capacity: [
-      { seats: 16170, note: 'Reported, before the 2017 renovation' },
+    capacity: [{ seats: 16170, setup: 'hockey', note: 'Reported, before the 2017 renovation' },
       { seats: 14000, fromYear: 2017, note: 'Estimated; 14,000 (amNY) vs 16,000 (NY Post), neither with a setup' },
     ],
     roof: 'indoor',
@@ -604,7 +600,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.37,
     names: [{ name: 'Louis Armstrong Stadium' }],
     location: [-73.8454, 40.751],
-    capacity: [{ seats: 14000, fromYear: 2018, note: 'Reported; rebuilt 2018. 14,069 could not be confirmed.' }],
+    capacity: [{ seats: 14000, setup: 'tennis', fromYear: 2018, note: 'Reported; rebuilt 2018. 14,069 could not be confirmed.' }],
     // Retractable.
     roof: 'covered',
   },
@@ -628,7 +624,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.8,
     names: [{ name: 'James M. Shuart Stadium' }],
     location: [-73.5964, 40.7158],
-    capacity: [{ seats: 11929, note: 'Reported, since 2013 (Hofstra lacrosse)' }],
+    capacity: [{ seats: 11929, setup: 'football', note: 'Reported, since 2013 (Hofstra lacrosse)' }],
     roof: 'open',
   },
   'maimonides-park': {
@@ -647,7 +643,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.37,
     names: [{ name: 'USTA Grandstand' }],
     location: [-73.845, 40.748],
-    capacity: [{ seats: 8000, fromYear: 2016, note: 'Estimated; the research could not source a figure' }],
+    capacity: [{ seats: 8000, setup: 'tennis', fromYear: 2016, note: 'Estimated; the research could not source a figure' }],
     roof: 'open',
   },
   'siuh-community-park': {
@@ -736,7 +732,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Icahn Stadium' }],
     location: [-73.9241, 40.7955],
     // The festival fields around it (Governors Ball's old home, Electric Zoo) have no fixed capacity; those are events placed as points.
-    capacity: [{ seats: 5000, note: 'Official (USATF); designed to take 5,000 more on bleachers' }],
+    capacity: [{ seats: 5000, setup: 'track', note: 'Official (USATF); designed to take 5,000 more on bleachers' }],
     roof: 'covered',
   },
   'ford-amphitheater': {
@@ -756,7 +752,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Westchester County Center' }],
     location: [-73.7788, 41.0371],
     // On the floor: 5,000 is the usual figure; Bandsintown lists 4,264.
-    capacity: [{ seats: 5000, note: 'Reported; 4,264 also listed' }],
+    capacity: [{ seats: 5000, setup: 'basketball', note: 'Reported; 4,264 also listed' }],
     roof: 'indoor',
   },
   'coffey-field': {
@@ -968,7 +964,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Pacific Raceways' }],
     location: [-122.1491, 47.3224],
-    capacity: [{ seats: 30000, note: 'Race days (reported). Standing and grandstand together.' }],
+    capacity: [{ seats: 30000, setup: 'racing', note: 'Race days (reported). Standing and grandstand together.' }],
     roof: 'open',
     // Fallback until the measure runs: one road in, wooded hillside site (the research).
     strained: true,
@@ -1058,7 +1054,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Seattle Center Memorial Stadium' }, { name: 'Memorial Stadium' }],
     // Approximate: the north edge of Seattle Center; OpenStreetMap has no point while the site is a construction zone.
     location: [-122.348, 47.6228],
-    capacity: [{ seats: 12000, note: 'Before the rebuild (reported, Wikipedia infobox; the Oct 6, 2026 research could not confirm it). The new stadium: 6,500 seats, 8,000 capacity (official).' }],
+    capacity: [{ seats: 12000, setup: 'football', note: 'Before the rebuild (reported, Wikipedia infobox; the Oct 6, 2026 research could not confirm it). The new stadium: 6,500 seats, 8,000 capacity (official).' }],
     roof: 'open',
   },
   'washington-state-fair-grandstand': {
@@ -1103,7 +1099,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Emerald Downs' }],
     location: [-122.2357, 47.3303],
-    capacity: [{ seats: 9100, note: 'No published capacity; the track\'s biggest recent crowd, July 3, 2023 (estimated). Average race day about 3,000.' }],
+    capacity: [{ seats: 9100, setup: 'racing', note: 'No published capacity; the track\'s biggest recent crowd, July 3, 2023 (estimated). Average race day about 3,000.' }],
     roof: 'covered',
   },
   'evergreen-speedway': {
@@ -1113,7 +1109,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Evergreen Speedway' }],
     location: [-121.987, 47.8693],
-    capacity: [{ seats: 7500, note: '6,000–7,500 on race nights (reported)' }],
+    capacity: [{ seats: 7500, setup: 'racing', note: '6,000–7,500 on race nights (reported)' }],
     roof: 'open',
   },
   'accesso-showare-center': {
@@ -1440,7 +1436,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Chicagoland Speedway' }],
     location: [-88.0588, 41.4744],
-    capacity: [{ seats: 47000, note: "Reported, after a cut from 75,000; the 2026 Cup race sold out. One weekend a year (June 25–27, 2027). The research's one addition to the boundary; in Will County." }],
+    capacity: [{ seats: 47000, setup: 'racing', note: "Reported, after a cut from 75,000; the 2026 Cup race sold out. One weekend a year (June 25–27, 2027). The research's one addition to the boundary; in Will County." }],
     roof: 'open',
   },
   // ---------- Dallas–Fort Worth (docs/archive/research/dallas-fort-worth-venue-table-answer.md; car shares from docs/archive/research/dallas-fort-worth-city-type-answer.md), Oct 8, 2026 ----------
@@ -1480,8 +1476,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Texas Motor Speedway' }],
     location: [-97.2816, 33.0371],
-    capacity: [
-      { seats: 75000, note: 'Reported (2026), after cuts from about 150,000; the May 3, 2026 Cup race sold out. One race weekend a year.' },
+    capacity: [{ seats: 75000, setup: 'racing', note: 'Reported (2026), after cuts from about 150,000; the May 3, 2026 Cup race sold out. One race weekend a year.' },
     ],
     roof: 'open',
   },
@@ -1697,8 +1692,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Lone Star Park' }],
     location: [-96.9882, 32.7747],
-    capacity: [
-      { seats: 8000, note: 'Reported, an older grandstand figure; about 700,000 visitors a year. Thoroughbred meet April–July.' },
+    capacity: [{ seats: 8000, setup: 'racing', note: 'Reported, an older grandstand figure; about 700,000 visitors a year. Thoroughbred meet April–July.' },
     ],
     roof: 'covered',
   },
@@ -1709,8 +1703,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Grand Prairie Stadium' }, { name: 'QuikTrip Park' }],
     location: [-96.986, 32.7683],
-    capacity: [
-      { seats: 7200, note: 'Reported: cricket (Texas Super Kings, Major League Cricket); expandable to 15,000' },
+    capacity: [{ seats: 7200, setup: 'cricket', note: 'Reported: cricket (Texas Super Kings, Major League Cricket); expandable to 15,000' },
     ],
     roof: 'open',
   },
@@ -1819,8 +1812,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Will Rogers Memorial Coliseum' }],
     location: [-97.37, 32.7472],
-    capacity: [
-      { seats: 5652, note: 'Official (City of Fort Worth), permanent seats; equestrian and Stock Show events' },
+    capacity: [{ seats: 5652, setup: 'rodeo', note: 'Official (City of Fort Worth), permanent seats; equestrian and Stock Show events' },
     ],
     roof: 'indoor',
   },
@@ -1904,8 +1896,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.35,
     names: [{ name: 'Stade Uniprix' }, { name: 'Stade IGA', from: '2018-04-01' }, { name: 'IGA Stadium' }],
     location: [-73.6267, 45.533],
-    capacity: [
-      { seats: 11991, note: "Reported (Canadian Press, 2026): centre court; the grounds average about 24,000 a day during the National Bank Open (men's event in even years, women's in odd). A ~15,000-seat roofed court is planned, no dates." },
+    capacity: [{ seats: 11991, setup: 'tennis', note: "Reported (Canadian Press, 2026): centre court; the grounds average about 24,000 a day during the National Bank Open (men's event in even years, women's in odd). A ~15,000-seat roofed court is planned, no dates." },
     ],
     roof: 'open',
   },
@@ -1929,8 +1920,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.5,
     names: [{ name: 'Complexe sportif Claude-Robillard' }, { name: 'Claude-Robillard Sports Complex' }],
     location: [-73.6362, 45.5526],
-    capacity: [
-      { seats: 6375, note: "Official (Tourisme Montréal): the outdoor track stadium's bleachers; ticketed meets only. Renovations through 2029; stays open." },
+    capacity: [{ seats: 6375, setup: 'soccer', note: "Official (Tourisme Montréal): the outdoor track stadium's bleachers; ticketed meets only. Renovations through 2029; stays open." },
     ],
     roof: 'open',
   },
@@ -2015,7 +2005,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Atlanta Motor Speedway' }, { name: 'EchoPark Speedway', from: '2025-06-03' }],
     location: [-84.3162, 33.3889],
-    capacity: [{ seats: 71000, note: 'Reported: the last grandstand figure the owner released (2015). No feed lists its two race weekends; hand-list them.' }],
+    capacity: [{ seats: 71000, setup: 'racing', note: 'Reported: the last grandstand figure the owner released (2015). No feed lists its two race weekends; hand-list them.' }],
     roof: 'open',
   },
   'bobby-dodd-stadium': {

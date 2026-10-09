@@ -396,9 +396,22 @@ async function collectHockeytech(team) {
 /** Pro leagues with a preseason played in the home building; it gets its own bucket. */
 const HAS_PRESEASON = /^(basketball\/nba|basketball\/wnba|hockey\/nhl|football\/nfl)$/;
 
+/**
+ * The season in play, by ESPN's numbering (C010): the calendar year for soccer and football,
+ * the year the season ends for basketball and hockey (2026-27 is 2027 once October comes).
+ */
+function seasonInPlay(path) {
+  const now = new Date();
+  const winter = /basketball|hockey/.test(path);
+  return now.getUTCFullYear() + (winter && now.getUTCMonth() >= 9 ? 1 : 0);
+}
+
 async function collectEspn(team) {
   const rows = [];
-  for (const season of team.seasons) {
+  const seasons = [...team.seasons];
+  const current = seasonInPlay(team.path);
+  if (!seasons.includes(current)) seasons.push(current);
+  for (const season of seasons) {
     const q = team.seasontype ? `?season=${season}&seasontype=${team.seasontype}` : `?season=${season}`;
     const json = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${team.path}/teams/${team.espnId}/schedule${q}`);
     const events = (json.events ?? []).map((e) => ({ e, preseason: false, postseason: false }));

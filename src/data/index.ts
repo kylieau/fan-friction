@@ -16,7 +16,7 @@ import { withResults } from './results';
 import { withExpectedDraws } from './expectedDraw';
 import './homeSync';
 import { primeDate } from './catalogCache';
-import { entryMetroId, nightKey } from './read';
+import { entryMetroId, nightKey, rememberNearby } from './read';
 
 // The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.
 const EVENT_SOURCES: EventSource[] = [seedEvents, catalogEvents];
@@ -48,11 +48,13 @@ function preferSeed(events: CrowdEvent[]): CrowdEvent[] {
  */
 export async function getCityDate(metroId: string, date: LocalDate): Promise<CityDate> {
   // Weather, results and snapshots for the window around this date come from the shared catalog.
-  const [lists] = await Promise.all([Promise.all(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date))), primeDate(metroId, date)]);
+  const [answers] = await Promise.all([Promise.allSettled(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date))), primeDate(metroId, date)]);
+  const lists = answers.map((a) => (a.status === 'fulfilled' ? a.value : []));
+  const failed = EVENT_SOURCES.filter((_, i) => answers[i].status === 'rejected').map((s) => s.id);
   const listed = withExpectedDraws(withResults(preferSeed(uniqueById(lists.flat())))).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
   const { events, rating } = applyFormula(metroId, date, listed);
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';
-  return { metroId, date, status, events, rating };
+  return { metroId, date, status, events, rating, ...(failed.length ? { failed } : {}) };
 }
 
 /** The three parts behind a date's read, for a side-by-side (docs/compare-proposal-oct6.md). */
@@ -131,6 +133,7 @@ export async function scoresForNights(
   const days = await Promise.all([...wanted.values()].map((n) => getCityDate(n.metroId, n.date)));
   const scores = new Map<string, number>();
   for (const day of days) {
+    rememberNearby(day.metroId, day.date, day.events);
     if (day.rating) scores.set(nightKey(day.metroId, day.date), day.rating.rating);
   }
   return scores;

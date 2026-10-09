@@ -8,7 +8,7 @@
 // The Weeknd) still work: they match the log by name and get a page from it.
 
 import { METROS } from '../config/metros';
-import { TEAMS } from './teams';
+import { TEAMS, teamBadge } from './teams';
 import { VENUES, venueNameOn } from './venues';
 import type { CrowdEvent, Favorite, FavoriteKind, Entry } from './types';
 
@@ -147,7 +147,7 @@ export function eventMatches(event: CrowdEvent, fav: Favorite): boolean {
 export function favoriteMark(fav: Favorite): string {
   if (fav.teamId) {
     const team = TEAMS[fav.teamId];
-    if (team) return team.abbr ?? team.shortName.slice(0, 3).toUpperCase();
+    if (team) return teamBadge(team);
   }
   const words = fav.label.split(/\s+/).filter(Boolean);
   if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();

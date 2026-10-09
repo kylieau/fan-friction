@@ -81,26 +81,39 @@ export async function calibrate(root, build, teams = {}, venues = {}) {
   for (const t of teamsOnFile) {
     const league = teams[t.teamId]?.league;
     const opts = build.optionsFor(league);
-    const teamRows = build.buildDrawRows(t.metroId, t.teamId, t.games, opts);
+    // The season being played (C010): the files' latest season when its last game is recent
+    // (within 60 days) and it is still short of the season before it (under 80% of its home
+    // games); else the next season. An in-progress season sets the level and stays out of the
+    // baseline; data/results adds the games after the files end.
+    const bySeason = new Map();
+    for (const g of t.games) if (!g.preseason && !g.postseason) bySeason.set(g.season, (bySeason.get(g.season) ?? 0) + 1);
+    const seasonsOnFile = [...bySeason.keys()].sort((a, b) => a - b);
+    const lastSeason = seasonsOnFile.at(-1);
+    const prevCount = seasonsOnFile.length > 1 ? bySeason.get(seasonsOnFile.at(-2)) : 0;
+    const lastGame = t.games.reduce((a, g) => (g.date > a ? g.date : a), '');
+    const recent = Date.now() - Date.parse(`${lastGame}T12:00:00Z`) < 60 * 86400 * 1000;
+    const inProgress = recent && prevCount > 0 && bySeason.get(lastSeason) < 0.8 * prevCount;
+    const season = inProgress ? lastSeason : lastSeason + 1;
+    const baseline = inProgress ? t.games.filter((g) => g.season !== lastSeason) : t.games;
+    const teamRows = build.buildDrawRows(t.metroId, t.teamId, baseline, opts);
     rows.push(...teamRows);
     if (teamRows.length === 0) continue;
 
-    // The files hold complete seasons, so the one being played is the next.
-    const lastSeason = Math.max(...t.games.map((g) => g.season));
     const lastDate = t.games.reduce((a, g) => (g.date > a ? g.date : a), '');
-    const season = lastSeason + 1;
     if (!seasonGames.has(t.metroId)) seasonGames.set(t.metroId, await thisSeasonGames(root, t.metroId));
-    const soFar = seasonGames
-      .get(t.metroId)
-      .filter((g) => g.teamId === t.teamId && g.date > lastDate)
-      .map((g) => ({ ...g, season }))
-      .sort((a, b) => a.date.localeCompare(b.date));
+    const soFar = [
+      ...(inProgress ? t.games.filter((g) => g.season === lastSeason) : []),
+      ...seasonGames
+        .get(t.metroId)
+        .filter((g) => g.teamId === t.teamId && g.date > lastDate)
+        .map((g) => ({ ...g, season })),
+    ].sort((a, b) => a.date.localeCompare(b.date));
     const openers = new Set(soFar.filter((g) => g.opener).map((g) => g.date));
     const lv = build.seasonLevel(teamRows, t.teamId, league, soFar, openers);
     if (lv) levels.push({ metroId: t.metroId, teamId: t.teamId, season, level: Math.round(lv.level * 1000) / 1000, games: lv.games });
 
-    const window = [...new Set(build.normalGames(t.teamId, t.games, opts).map((g) => g.season))].sort((a, b) => b - a).slice(0, opts.windowSeasons ?? build.WINDOW_SEASONS);
-    const meetings = [...build.normalGames(t.teamId, t.games, opts).filter((g) => window.includes(g.season)), ...soFar];
+    const window = [...new Set(build.normalGames(t.teamId, baseline, opts).map((g) => g.season))].sort((a, b) => b - a).slice(0, opts.windowSeasons ?? build.WINDOW_SEASONS);
+    const meetings = [...build.normalGames(t.teamId, baseline, opts).filter((g) => window.includes(g.season)), ...soFar];
     const names = new Map();
     for (const g of meetings) if (g.opponent) names.set(build.opponentKey(g.opponent), g.opponent);
     for (const [key, name] of [...names.entries()].sort()) {

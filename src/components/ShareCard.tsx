@@ -13,14 +13,18 @@ interface Props {
   rating: number | null;
   /** The crowd line with its kind, such as "63,404 announced". */
   crowd: string | null;
+  /** The button's verb. Compare passes "Share these events" (C080). */
+  buttonLabel?: string;
 }
 
 // The event's share card (shown on screen; sharing sends text and the link for
 // now, and an image version can come later).
-export function ShareCard({ dateLabel, title, line, rating, crowd }: Props) {
+export function ShareCard({ dateLabel, title, line, rating, crowd, buttonLabel = 'Share this event' }: Props) {
   const [note, setNote] = useState('');
 
-  const text = `${title}, ${dateLabel}${rating !== null ? ` · ${scoreLabel(rating)} · ${formatScore(rating)}/10` : ''}. ${line}${crowd ? ` ${crowd}.` : ''}`;
+  // One period per sentence, whether or not the reason already ends with one (C029).
+  const sentence = (s: string) => (s && !/[.!?]$/.test(s) ? `${s}.` : s);
+  const text = [`${title}, ${dateLabel}${rating !== null ? ` · ${scoreLabel(rating)} · ${formatScore(rating)}/10` : ''}.`, sentence(line), sentence(crowd ?? '')].filter(Boolean).join(' ');
 
   const share = async () => {
     const data = { title: `${APP.name}: ${title}`, text, url: window.location.href };
@@ -51,7 +55,7 @@ export function ShareCard({ dateLabel, title, line, rating, crowd }: Props) {
         </div>
       </div>
       <button type="button" className="gold-button" onClick={share}>
-        Share this event
+        {buttonLabel}
       </button>
       {note && <div className="share-note" role="status">{note}</div>}
     </section>

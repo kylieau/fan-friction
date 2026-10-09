@@ -160,7 +160,8 @@ function toEvent(g: HtGame, t: (typeof HOCKEYTECH_TEAMS)[number], playoffs: bool
     ...(playoffs ? { stakes: { round: `${league} Playoffs` } } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: 'hockey' },
-    teams: { home: t.teamId, away: slug(nameOf(g, 'visiting')) },
+    // The key is the feed's nickname, the one data/attendance stores (C012).
+    teams: { home: t.teamId, away: slug(g.visiting_team_nickname ?? g.visiting_team_name ?? nameOf(g, 'visiting')) },
     crowd: [],
     sourceId: 'hockeytech',
   };

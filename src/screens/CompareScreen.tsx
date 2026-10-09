@@ -24,6 +24,7 @@ import { ChevronDown } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { ShareCard } from '../components/ShareCard';
 import { listTitle } from '../lib/eventTitle';
+import { dayWord } from '../lib/dayWord';
 import { loggedDateLabel, longLocalDate, shortLocalDate } from '../lib/dates';
 import { comparePath, datePath, type NightKey, parseNightKey } from '../lib/view';
 
@@ -230,6 +231,7 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
         line={`${A.day.rating?.headline ?? ''} · ${B.day.rating?.headline ?? ''}`}
         rating={null}
         crowd={null}
+        buttonLabel={dayWord(A.day.events) === 'night' && dayWord(B.day.events) === 'night' ? 'Share these nights' : 'Share these events'}
       />
       <Link to={comparePath(A.key)} className="text-link">
         Compare with another night

@@ -27,6 +27,18 @@ const team = (
 const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport: string, league: string, label: string, aliases: string[]) =>
   team(`${school}-${code}`, `${schoolName} ${label}`, `${school.toUpperCase()} ${code.toUpperCase()}`, league, sport, 'la', school.toUpperCase(), aliases);
 
+/**
+ * The mark on a favorite with no logo. The team's abbreviation when no other team in
+ * its city uses it; otherwise the first three letters of its nickname, so the Clippers
+ * and Chargers (both LAC), or Chicago's eight teams (all CHI), tell apart (C013).
+ */
+export function teamBadge(team: Team): string {
+  const abbr = team.abbr;
+  if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|fc)\s+/i, '');
+  return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
+}
+
 const LIST: Team[] = [
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
