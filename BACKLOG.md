@@ -71,11 +71,12 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 
 ## Open from the Oct 9 build (Kylie's build notes)
 - **Step (d), Explore header and Home hub: merged to `main` Oct 9 after Kylie's OK on the screenshots.** Her header change: the read box left of the date and a `< Today >` control on the right (no Today tab on the strip); the count line carries how long ago. The next-saved-night card left the map (Kylie, Oct 9); Home's Your next event and You's Coming up strip carry it. Choices made: the new-user line says "Log your first event", and the map's event count stays under the date.
-- **Step (e), privacy: built Oct 9** (Followers and Following lists with Follow back / Remove / Unfollow, the follow copy from Q2 as drafted, quiet declines via migration 0013 (Kylie's to paste), names in the feed open profiles, visibility words matched). **Still open from Q11:** follower field limits (followers can read an entry's whole `data`, including the review), handle-only profile lookup (profile cards are listable over REST, with home city), per-event sharing, per-detail visibility, block, a share-link off switch.
-- **Chip icons (3.18):** drawn in the line style; Kylie asked to see actual-size chips before settling. Screenshots shown Oct 9; not yet confirmed.
+- **Step (e), privacy: built Oct 9** (Followers and Following lists with Follow back / Remove / Unfollow, the follow copy from Q2 as drafted, quiet declines via migration 0013 (applied), names in the feed open profiles, visibility words matched). **Still open from Q11:** follower field limits (followers can read an entry's whole `data`, including the review), handle-only profile lookup (profile cards are listable over REST, with home city), per-event sharing, per-detail visibility, block, a share-link off switch.
+- **Chip icons (3.18):** drawn in the line style; Kylie saw actual-size chips Oct 9 and approved them, with the +N badge and fan-out.
+- **C002, done Oct 9:** the pull asks by venue id, a dozen venues a call; a venue with no id is searched by name within 3 miles of its spot. New York kept 80 → 225, LA 229 → 245, Seattle 150 → 145 (watch). The horizon stays 120 days.
 - **C016:** 25 venues Ticketmaster does not list under our names (the Coliseum, Galen Center, Weingart, college and county rooms, speedways); the 300 m fallback covers listings at them. `scripts/ticketmaster-venues.mjs --all` re-checks.
 - **3.15 re-score:** nothing re-scores a settled night when the formula changes; the nightly job would need to write `rescoredOn` on the snapshot rows for "Updated <date>" to appear.
-- **3.24 feed:** plan lines need migration 0012; example rows show until someone is followed.
+- **3.24 feed:** live, plans included (0012 applied); example rows show until someone is followed.
 - **C017:** nothing to build; new teams are added only where a free feed lists them (Kylie, Oct 9).
 - **Hand-added plans in a city the app has no metro for** keep the home city on the plan (marked elsewhere), so they sit in Coming up.
 
