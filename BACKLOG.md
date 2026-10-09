@@ -70,7 +70,7 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - **Step 8:** Rating formula from the v3 design (Crowd fight share-of-seats, Gridlock zones with OpenStreetMap drive times computed once per venue pair, free sources only). Hold back 2–3 of the 13 nights to test it, so it isn't just tuned to fit. When the app widens beyond LA, add benchmark dates that test what LA can't (list in the v3 doc).
 
 ## Open from the Oct 9 build (Kylie's build notes)
-- **Step (d), Explore header and Home hub: built on branch `claude/step-d` (commit 6305210), screenshots sent to Kylie Oct 9; merges to `main` on her OK.** Choices made: the new-user line says "Log your first event" (the Oct 9 wording rule), and the map's event count stays under the date (no lock found in the docs; only a note in the GrokBot gap review).
+- **Step (d), Explore header and Home hub: merged to `main` Oct 9 after Kylie's OK on the screenshots.** Her header change: the read box left of the date and a `< Today >` control on the right (no Today tab on the strip); the count line carries how long ago. The next-saved-night card left the map (Kylie, Oct 9); Home's Your next event and You's Coming up strip carry it. Choices made: the new-user line says "Log your first event", and the map's event count stays under the date.
 - **Step (e), privacy: built Oct 9** (Followers and Following lists with Follow back / Remove / Unfollow, the follow copy from Q2 as drafted, quiet declines via migration 0013 (Kylie's to paste), names in the feed open profiles, visibility words matched). **Still open from Q11:** follower field limits (followers can read an entry's whole `data`, including the review), handle-only profile lookup (profile cards are listable over REST, with home city), per-event sharing, per-detail visibility, block, a share-link off switch.
 - **Chip icons (3.18):** drawn in the line style; Kylie asked to see actual-size chips before settling. Screenshots shown Oct 9; not yet confirmed.
 - **C016:** 25 venues Ticketmaster does not list under our names (the Coliseum, Galen Center, Weingart, college and county rooms, speedways); the 300 m fallback covers listings at them. `scripts/ticketmaster-venues.mjs --all` re-checks.
@@ -85,9 +85,9 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - [ ] **C083** Weather glyphs on an iPhone and an Android phone: do they show as "…"?
 - [ ] **C087** Touch targets: anything under 44 pt (the chips' +N badge, the strip's cells, See all ›, the key's ?).
 - [ ] **Sign out** with a change still unsaved (airplane mode, mark an event, Sign out): the "Some changes haven't reached your account" line should appear.
-- [ ] **Follow flow from your own account:** You → Following → Followers › → Test A → Follow back; then Test A's "is planning to attend" line should show on Home and in Following.
+- [x] **Follow flow from your own account** (done Oct 9: you and Test A follow each other). Check that Test A's "is planning to attend Texas vs. Oklahoma" line shows on your Home and in Following.
 - [ ] **Attended un-tap** on the event page and the date page asks once.
-- [ ] **Step (d) on your phone** once merged: the search on the strip, the Today pill beside it on a past date, typed dates ("Oct 17", "Saturday"), and Home's sections.
+- [ ] **Step (d) on your phone** (merged Oct 9): the search on the strip, the Today pill beside it on a past date, typed dates ("Oct 17", "Saturday"), and Home's sections.
 - [ ] **The tester's nights** (LA, San Diego, New York, Montreal) show reads a day before the interview (about Oct 12).
 - [ ] After the interview: **C034**, the tester's descriptions beside the reads as evidence, never a target.
 
@@ -266,7 +266,7 @@ Built Oct 7 (Kylie's fourth-round answers, `docs/expected-draw-decisions-oct7.md
 - **Hand-entered annual file**: NASCAR and IndyCar weekends, the Stock Show, PBR, Major League Cricket by building.
 
 ## Team schedules (built Oct 7) — follow-ons
-- Migration `0010_team_schedules.sql` is applied (checked against the project Oct 9: the table exists and has rows). Migrations `0011` (follow approval) is applied; `0012` (plans readable by approved followers) is Kylie's to paste.
+- Migrations `0010`–`0013` are all applied (Kylie pasted 0011–0013 on Oct 9).
 - A favorite that is not a team in the feeds (an artist, UCLA men's volleyball) says "No schedule yet." Programs join as their city is built out; the intent is every city eventually (Kylie, Oct 7).
 - The Read tile on a schedule row shows a rating only for nights already in the log; an upcoming home game's read could be looked up from the catalog later.
 - Away games at buildings the app does not cover are listed only (no night to open). Times are the team's home-city time, not the venue's.

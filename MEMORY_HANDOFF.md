@@ -2,10 +2,10 @@
 
 Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-review-decisions.md`. The current build plan is Kylie's `docs/reviews/build-notes-oct9.md` (her decisions on all 103 review items, saved verbatim).
 
-_Last synced: Oct 9, 2026, Claude Code, eighth session (late). Everything below is committed and pushed (`main`, plus branch `claude/step-d`); the working tree holds only two untracked helper scripts (`scripts/.tmp-follow-kylie.mjs`, `scripts/.tmp-b-follows-a.mjs`, test-account chores; safe to delete). **Kylie's standing instruction: her usage is limited; commit and push after every step so the thread is never lost. No PRs: work goes to `main` (Kylie, Oct 9). Ask before anything uncertain.**_
+_Last synced: Oct 9, 2026, Claude Code, eighth session (end). Everything below is committed and pushed to `main`; the working tree holds only two untracked helper scripts (`scripts/.tmp-follow-kylie.mjs`, `scripts/.tmp-b-follows-a.mjs`, test-account chores; safe to delete). **Kylie's standing instruction: her usage is limited; commit and push after every step so the thread is never lost. No PRs: work goes to `main` (Kylie, Oct 9). Ask before anything uncertain.**_
 
 ## Current state
-Steps (a), (b), (c), (e) and (f) of the Oct 9 build notes are built and live on `main`; the Ticketmaster pull now asks by venue id (C002). **Step (d) is built on branch `claude/step-d` (6305210) and waits for Kylie's OK on the screenshots sent Oct 9; merge with `git checkout main && git merge --ff-only claude/step-d && git push`.** Migrations 0011 and 0012 are applied; **0013 (quiet declines) is hers to paste.** The Section 8 tests that can run from here are run (BACKLOG, "Section 8 test results"); her phone checklist is in BACKLOG.
+**Every step of the Oct 9 build notes, (a) through (f), is built and live on `main`**, plus the Ticketmaster pull by venue id (C002). Step (d) merged after Kylie's OK with her header change (read box left, `< Today >` right) and the saved-date card off the map. Migrations 0010–0013 are all applied. Kylie and Test A follow each other. The Section 8 tests that can run from here are run (BACKLOG, "Section 8 test results"); her phone checklist is in BACKLOG.
 
 **Built Oct 9 (nine commits, all pushed):**
 - Fix first: un-tapping Attended asks once; change-based account sync (only what changed is written, in order, failed writes resent, newer entry wins, removed ids remembered half a year in `settings.data.removed`); sign-out asks while a change hasn't reached the account; an involuntary sign-out keeps the phone copy; the offline cache holds only catalog tables (`catalog-public`); every follow is a request, enforced by migration `0011` (applied).
@@ -25,11 +25,11 @@ Steps (a), (b), (c), (e) and (f) of the Oct 9 build notes are built and live on 
 - **Testing notes:** `npm i --no-save playwright-core`; Chromium at `/usr/bin/chromium` with swiftshader flags; `localStorage['fan-friction:home-metro'] = JSON.stringify('la')` skips the picker; a signed-in screenshot works by writing a password session into `localStorage[sb-<ref>-auth-token]` (see `private/test-session-b.json`); `scripts/.tmp-*.mjs` run from the repo root and are deleted after; don't `pkill` vite, `kill $(lsof -ti:3001)`.
 
 ## Next steps
-1. **Kylie's OK on step (d)** (screenshots sent Oct 9), then merge the branch to `main`.
-2. **Kylie pastes `supabase/migrations/0013_follow_declines.sql`.** Until then a decline deletes the row (the app falls back).
-3. The rest of Q11 (privacy) when she decides: follower field limits, handle-only lookup, block, link off switch, per-event / per-detail sharing.
-4. Close the four Oct 7 reviews (`Status: closed` lines) once (d) is merged; the hook archives them.
-5. Tester interview about Oct 13: a day before, check the tester's LA, San Diego, New York and Montreal nights show reads.
+1. **Kylie's phone checklist** (BACKLOG) on the live site once Vercel has `main`.
+2. The rest of Q11 (privacy) when she decides: follower field limits, handle-only lookup, block, link off switch, per-event / per-detail sharing.
+3. Close the four Oct 7 reviews (`Status: closed` lines); the hook archives them. Her build notes stay as the record of the decisions.
+4. Tester interview about Oct 13: a day before, check the tester's LA, San Diego, New York and Montreal nights show reads.
+5. Watch tonight's nightly run: the first catalog write with the venue-id Ticketmaster pull, the add-on filter and the dedupe.
 
 **Next command to run:**
 ```bash
