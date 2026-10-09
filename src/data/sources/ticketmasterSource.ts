@@ -3,10 +3,12 @@
 // (docs/archive/proposals/ticketmaster-review-oct6.md): store the facts of a night, not the
 // content, so each event keeps its name, date, start, venue, performers and
 // Ticketmaster's id, and nothing else. Sports listings are left to the league
-// feeds. Only venues the app knows are kept: a listing matches a venue by
-// Ticketmaster's venue id when one is on record, else by name, else by
-// being within 300 m of the building. Unknown rooms are counted, not kept.
-// Satellite grounds far outside the city (the Gorge, Indio) get their own small search.
+// feeds. Only venues the app knows are kept, and since Oct 9, 2026 (C002) the
+// pull asks for them by venue id, a dozen venues a call, so a busy city is never
+// cut at Ticketmaster's 1,000-result ceiling (New York has ~6,000 listings a
+// month). A venue with no id on record is searched by its name near its spot.
+// A listing still matches a venue by id, else by name, else by being within
+// 300 m of the building. Unknown rooms are counted, not kept.
 
 import { COVERED_METRO_IDS, METROS } from '../../config/metros';
 import type { CrowdEvent, LocalDate } from '../types';
@@ -15,17 +17,13 @@ import { VENUES } from '../venues';
 const API = 'https://app.ticketmaster.com/discovery/v2/events.json';
 /** How far ahead to list, in days. The schedule archive keeps 14; the catalog can hold more. */
 const DAYS_AHEAD = 120;
-/** Search radius from the metro's center, miles. */
-const RADIUS_MILES: Record<string, number> = { la: 45, 'san-diego': 30, seattle: 38, 'bay-area': 36, chicago: 38, 'dallas-fort-worth': 42, montreal: 24 };
-/** Satellite grounds outside the city radius, searched on their own: [lat, lng, miles]. */
-const EXTRA_POINTS: Record<string, [number, number, number][]> = {
-  la: [[33.6803, -116.2372, 5]], // Empire Polo Club, Indio
-  seattle: [[47.1028, -119.996, 5]], // the Gorge, George
-};
 const PAGE_SIZE = 200;
-/** Ticketmaster stops paging at 1,000 results per query, so the four months are asked for a month at a time. */
+/** Ticketmaster stops paging at 1,000 results per query. A dozen venues over two months stays far under it. */
 const MAX_PAGES = 5;
-const WINDOW_DAYS = 30;
+const WINDOW_DAYS = 60;
+const VENUES_PER_CALL = 12;
+/** A venue with no Ticketmaster id on record: its current name, searched this close to its spot (miles). */
+const NAME_SEARCH_MILES = 3;
 
 interface TmVenue {
   id: string;
@@ -84,7 +82,7 @@ function isAddOn(name: string): boolean {
  * lot pass, or Ticketmaster's own "Not an Event Ticket" (C001).
  */
 function isPremiumAddOn(name: string): boolean {
-  return /^\s*(?:premium|club|vip|platinum)\s*[:–-]|\b(?:premium|club|platinum) (?:seat(?:s|ing)?|package|experience|access|ticket)s?\b|\b(?:parking|lot|fast|early entry|pre-?show|tailgate) pass(?:es)?\b|not an event ticket/i.test(name);
+  return /^\s*(?:premium|club|vip|platinum)\s*[:–-]|\b(?:premium|club|platinum) (?:seat(?:s|ing)?|package|experience|access|ticket)s?\b|\b(?:parking|lot|fast|early entry|pre-?show|pre-?game|tailgate|benchwarmers?) pass(?:es)?\b|not an event ticket/i.test(name);
 }
 
 /** For a show: the add-on shapes only, never the bare words a tour or band name can carry. */
@@ -193,22 +191,31 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
   // performer in the same building at the same date and start is one show, counted once.
   const shows = new Set<string>();
   let pages = 0;
-  const points: [number, number, number][] = [[metro.center[1], metro.center[0], RADIUS_MILES[metroId] ?? 30], ...(EXTRA_POINTS[metroId] ?? [])];
-  for (const [lat, lng, radius] of points)
-  for (let from = today; from <= through; from = addDays(from, WINDOW_DAYS)) {
-  const to = addDays(from, WINDOW_DAYS - 1) < through ? addDays(from, WINDOW_DAYS - 1) : through;
-  for (let page = 0; page < MAX_PAGES; page++) {
-    const params = new URLSearchParams({
-      apikey: apiKey,
-      latlong: `${lat},${lng}`,
-      radius: String(radius),
+  // The queries: the city's venues by id, a dozen at a time per two-month window; then each
+  // venue with no id by its name near its spot, over the whole horizon.
+  const ours = Object.values(VENUES).filter((venue) => venue.metroId === metroId);
+  const withIds = ours.filter((venue) => venue.ticketmasterIds?.length);
+  const queries: Record<string, string>[] = [];
+  for (let i = 0; i < withIds.length; i += VENUES_PER_CALL) {
+    const ids = withIds.slice(i, i + VENUES_PER_CALL).flatMap((venue) => venue.ticketmasterIds ?? []);
+    for (let from = today; from <= through; from = addDays(from, WINDOW_DAYS)) {
+      const to = addDays(from, WINDOW_DAYS - 1) < through ? addDays(from, WINDOW_DAYS - 1) : through;
+      queries.push({ venueId: ids.join(','), startDateTime: `${from}T00:00:00Z`, endDateTime: `${to}T23:59:59Z` });
+    }
+  }
+  for (const venue of ours.filter((v) => !v.ticketmasterIds?.length)) {
+    queries.push({
+      keyword: venue.names[venue.names.length - 1].name,
+      latlong: `${venue.location[1]},${venue.location[0]}`,
+      radius: String(NAME_SEARCH_MILES),
       unit: 'miles',
-      startDateTime: `${from}T00:00:00Z`,
-      endDateTime: `${to}T23:59:59Z`,
-      size: String(PAGE_SIZE),
-      page: String(page),
-      sort: 'date,asc',
+      startDateTime: `${today}T00:00:00Z`,
+      endDateTime: `${through}T23:59:59Z`,
     });
+  }
+  for (const query of queries) {
+  for (let page = 0; page < MAX_PAGES; page++) {
+    const params = new URLSearchParams({ apikey: apiKey, ...query, size: String(PAGE_SIZE), page: String(page), sort: 'date,asc' });
     const r = await getPage(`${API}?${params}`);
     if (!r.ok) throw new Error(`Ticketmaster answered ${r.status}`);
     const json = (await r.json()) as { _embedded?: { events?: TmEvent[] }; page?: { totalPages?: number } };
