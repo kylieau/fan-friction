@@ -8,7 +8,7 @@ Each review records its author, save time in Pacific time, task results, verific
 
 | Saved | Author | Review | Status |
 |---|---|---|---|
-| Oct 7, 2026, 8:39 PM PT | Codex | [tester-readiness-review-codex-2026-10-07-2039-pt.md](tester-readiness-review-codex-2026-10-07-2039-pt.md) | Open |
-| Oct 7, 2026, 8:50 PM PT | GrokBot | [tester-readiness-review-grokbot-2026-10-07-2050-pt.md](tester-readiness-review-grokbot-2026-10-07-2050-pt.md) (code and live-site pass; no screenshots) | Open |
+| Oct 7, 2026, 8:39 PM PT | Codex | [docs/archive/reviews/tester-readiness-reviews/tester-readiness-review-codex-2026-10-07-2039-pt.md](../../archive/reviews/tester-readiness-reviews/tester-readiness-review-codex-2026-10-07-2039-pt.md) | Closed Oct 9, 2026 |
+| Oct 7, 2026, 8:50 PM PT | GrokBot | [docs/archive/reviews/tester-readiness-reviews/tester-readiness-review-grokbot-2026-10-07-2050-pt.md](../../archive/reviews/tester-readiness-reviews/tester-readiness-review-grokbot-2026-10-07-2050-pt.md) (code and live-site pass; no screenshots) | Closed Oct 9, 2026 |
 
 These reviews are separate from the broader [gap reviews](../gap-reviews/README.md).

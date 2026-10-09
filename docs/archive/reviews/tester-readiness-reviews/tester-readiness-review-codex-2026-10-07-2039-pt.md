@@ -31,11 +31,11 @@ The tester's actual account, imported nights, sign-in, cross-device sync, physic
 | Understand event versus date reads | Requires tester observation | The app presenting both readings does not prove users understand their different scopes. |
 | Inspect an upcoming date | Not retested here | Keep this task in the existing interview; no new readiness claim is made. |
 
-Source references: [Add search and manual form](../../../src/screens/AddEntryScreen.tsx), [editing and removal](../../../src/components/EntryLayer.tsx), [manual entry page](../../../src/screens/ManualEntryScreen.tsx), [comparison picker and screen](../../../src/screens/CompareScreen.tsx).
+Source references: [Add search and manual form](../../../../src/screens/AddEntryScreen.tsx), [editing and removal](../../../../src/components/EntryLayer.tsx), [manual entry page](../../../../src/screens/ManualEntryScreen.tsx), [comparison picker and screen](../../../../src/screens/CompareScreen.tsx).
 
 ## Checks before the interview
 
-1. Verify the tester can sign in on their phone and sees the intended imported nights. The [tester brief](../../tester-brief.md) explicitly warns that an open copy can overwrite an import; follow the existing close, import, reopen sequence. This workaround does not establish that the broader sync issues are resolved.
+1. Verify the tester can sign in on their phone and sees the intended imported nights. The [tester brief](../../../tester-brief.md) explicitly warns that an open copy can overwrite an import; follow the existing close, import, reopen sequence. This workaround does not establish that the broader sync issues are resolved.
 2. Open the tester's covered-city nights and check that reads appear where expected, especially manual entries. Keep private account details and attended lists in the ignored private folder.
 3. Pick two or three remembered dates, preferably one busy and one quiet. Check that the comparison path works with those actual entries; begin from a catalog-linked event or date page when the manual entry lacks a direct control.
 4. Check the Add form on the physical phone with its keyboard visible. Browser emulation does not establish usable scrolling, date entry or touch behavior.
@@ -44,7 +44,7 @@ These are readiness checks, not a newly approved implementation order.
 
 ## Suggested interview tasks
 
-Keep the existing [interview guide](../../tester-interview-guide.md). Add these short tasks without describing where the controls are:
+Keep the existing [interview guide](../../../tester-interview-guide.md). Add these short tasks without describing where the controls are:
 
 - “Add a night, then imagine you entered the wrong date. Correct it.” Observe whether they find a path, abandon the attempt, or remove and recreate the entry.
 - “Compare this night with another one you remember.” Observe where they start and whether the missing manual-entry control stops them.
@@ -101,3 +101,6 @@ Return:
 
 Respect locked decisions and parked work. Tester ratings are evidence, never a formula-tuning target. Keep personal tester information out of public artifacts. Report in chat; do not build fixes.
 ```
+
+
+Status: closed, every item decided by Kylie in docs/reviews/build-notes-oct9.md and built Oct 9, 2026

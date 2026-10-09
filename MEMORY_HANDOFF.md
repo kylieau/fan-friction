@@ -32,10 +32,10 @@ _Last synced: Oct 9, 2026, Claude Code, eighth session (end). Everything below i
 3. **Famous nights (C078):** move it or leave it, now that search exists.
 4. **Re-scoring settled nights (3.15):** no job writes `rescoredOn`; build it when the formula next changes.
 5. **Ticketmaster:** 25 venues without ids (name search covers them); Seattle kept 145 vs 150 before the venue-id pull, worth a look after tonight's run; the horizon (120 days) is her call.
-6. **Close the four Oct 7 reviews** (`Status: closed` lines; the hook archives them). Her build notes stay as the record.
+6. ~~Close the four Oct 7 reviews~~ Done Oct 9 (closed lines added; the hook archived them). Her build notes stay as the record.
 7. **The tester's first name in git history** (BACKLOG, Waiting on Kylie): leave or rewrite.
 8. **Tester interview about Oct 13:** a day before, check the tester's LA, San Diego, New York and Montreal nights show reads; after it, C034.
-9. **Watch tonight's nightly run:** the first catalog write with the venue-id pull, the add-on filter and the dedupe ("Premium: AIR SUPPLY" should be gone).
+9. **Watch the nightly run:** it moved to a plain UTC schedule (08:23 UTC, about 1:23am Pacific) because the `timezone:` line made it start ~7 hours late. Tomorrow's run should start near 1:30am Pacific; if it still starts at 7am, the cause was something else. It is also the first catalog write with the venue-id pull, the add-on filter and the dedupe ("Premium: AIR SUPPLY" should be gone).
 10. Dated re-checks in BACKLOG (Nov 3 Bay Area transit vote; seasonal ones).
 
 **Next command to run:**

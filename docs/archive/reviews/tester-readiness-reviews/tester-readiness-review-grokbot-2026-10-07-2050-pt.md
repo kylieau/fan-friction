@@ -173,3 +173,6 @@ These respect the rule that users are capable: say less, and add no explanatory 
 - Account sync, sign-in, Friends, Stats with an account, Share, Export.
 - Real-device touch and a true 390×844 viewport.
 - Live catalog row counts, and whether past events stay in the shared `events` table.
+
+
+Status: closed, every item decided by Kylie in docs/reviews/build-notes-oct9.md and built Oct 9, 2026
