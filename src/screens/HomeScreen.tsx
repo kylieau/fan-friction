@@ -9,7 +9,7 @@ import { showFriction } from '../config/scoreLabels';
 import {
   eventMatches,
   favoritesOf,
-  friendsEntries,
+  followingFeed,
   getAccount,
   getCityDate,
   getEventsBetween,
@@ -25,7 +25,7 @@ import {
   todayIn,
   type CityDate,
   type CrowdEvent,
-  type FriendEntry,
+  type FeedItem,
   yourEntries,
 } from '../data';
 import { VENUES, venueNameOn } from '../data';
@@ -35,6 +35,7 @@ import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, mapPath } from '../lib/view';
 import { dayWord } from '../lib/dayWord';
+import { FeedRow } from './YouScreen';
 
 // The map library loads only when a map is on screen (Home and Explore), not on every tab.
 const MiniMap = lazy(() => import('../map/MiniMap'));
@@ -57,7 +58,7 @@ export function HomeScreen() {
   const [week, setWeek] = useState<CrowdEvent[]>([]);
   const [everywhere, setEverywhere] = useState<CrowdEvent[]>([]);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const [friends, setFriends] = useState<FriendEntry[]>([]);
+  const [feed, setFeed] = useState<FeedItem[]>([]);
   const [monthOpen, setMonthOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -76,10 +77,10 @@ export function HomeScreen() {
   useEffect(() => {
     let current = true;
     if (!account) {
-      setFriends([]);
+      setFeed([]);
       return;
     }
-    friendsEntries(30).then((list) => current && setFriends(list));
+    followingFeed(12).then((list) => current && setFeed(list));
     return () => {
       current = false;
     };
@@ -115,21 +116,7 @@ export function HomeScreen() {
   const recent = useMemo(() => yourEntries(log).filter((entry) => entry.when.precision === 'day' && entry.when.sort <= today).slice(0, ROWS), [log, today]);
 
 
-  // Friends, grouped by event: "Sam R. and Priya · Slayer".
-  const friendGroups = useMemo(() => {
-    const groups = new Map<string, { title: string; date: string; venue?: string; metroId?: string; eventId?: string; names: string[] }>();
-    for (const { friend, entry } of friends) {
-      const key = entry.eventId ?? `${entry.when.sort}-${entry.title}`;
-      const name = friend.displayName ?? friend.handle ?? 'Someone';
-      const group = groups.get(key);
-      if (group) {
-        if (!group.names.includes(name)) group.names.push(name);
-      } else {
-        groups.set(key, { title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, names: [name] });
-      }
-    }
-    return [...groups.values()].sort((a, b) => b.date.localeCompare(a.date)).slice(0, ROWS);
-  }, [friends]);
+  const feedShown = useMemo(() => feed.slice(0, ROWS), [feed]);
 
   const thisWeek = useMemo(() => {
     const later = week.filter((e) => e.date > today && showsOnMap(e));
@@ -141,9 +128,9 @@ export function HomeScreen() {
   const nightsShown = useMemo(() => {
     const nights = [...nightsOf(recent), ...comingUp.map((row) => ({ metroId: row.metroId, date: row.date }))];
     for (const e of thisWeek) nights.push({ metroId: e.metroId, date: e.date });
-    for (const g of friendGroups) nights.push({ metroId: g.metroId ?? DEFAULT_METRO.id, date: g.date });
+    for (const g of feedShown) if (g.kind === 'attended') nights.push({ metroId: g.metroId ?? DEFAULT_METRO.id, date: g.date });
     return nights;
-  }, [recent, comingUp, thisWeek, friendGroups]);
+  }, [recent, comingUp, thisWeek, feedShown]);
   useEffect(() => {
     let current = true;
     scoresForNights(nightsShown).then((map) => current && setRatings(map));
@@ -310,28 +297,19 @@ export function HomeScreen() {
         </section>
       )}
 
-      {friendGroups.length > 0 && (
-        <section className="you-block" aria-labelledby="friends-heading">
+      {feedShown.length > 0 && (
+        <section className="you-block" aria-labelledby="following-heading">
           <div className="you-heading-row">
-            <h2 id="friends-heading" className="you-heading">
+            <h2 id="following-heading" className="you-heading">
               Following
             </h2>
-            <Link to="/you" className="link-more">
+            <Link to="/you?tab=following" className="link-more">
               All ›
             </Link>
           </div>
           <ul className="log-list">
-            {friendGroups.map((group) => (
-              <li key={`${group.date}-${group.title}`}>
-                <Link to={datePath(group.date, group.metroId ?? DEFAULT_METRO.id, group.eventId)} className="log-row">
-                  <ReadTile rating={ratings.get(nightKey(group.metroId ?? DEFAULT_METRO.id, group.date)) ?? null} />
-                  <span className="log-main">
-                    <span className="log-friend">{joinNames(group.names)}</span>
-                    <span className="log-title">{group.title}</span>
-                    <span className="log-facts">{[shortLocalDate(group.date), group.venue].filter(Boolean).join(' · ')}</span>
-                  </span>
-                </Link>
-              </li>
+            {feedShown.map((item) => (
+              <FeedRow key={`${item.friend.id}-${item.kind}-${item.date}-${item.title}`} item={item} ratings={ratings} />
             ))}
           </ul>
         </section>
@@ -352,11 +330,6 @@ export function HomeScreen() {
   );
 }
 
-function joinNames(names: string[]): string {
-  if (names.length <= 1) return names[0] ?? '';
-  if (names.length === 2) return `${names[0]} and ${names[1]}`;
-  return `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
-}
 
 function venueOf(e: CrowdEvent): string | undefined {
   if (e.place.type === 'venue') {

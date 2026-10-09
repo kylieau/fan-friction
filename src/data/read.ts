@@ -18,6 +18,7 @@ import type {
   Stamp,
 } from './types';
 import { cachedCaptureDays, cachedSnapshots } from './catalogCache';
+import type { ArchiveForecastRow } from './startForecastIndex';
 import { SCHEDULE_SNAPSHOTS, type ScheduleSnapshotSpan } from './scheduleArchiveIndex';
 import { capacityOn, VENUES } from './venues';
 
@@ -292,6 +293,39 @@ export interface StampForecast {
   read: FrictionRead;
   forecastBasis: ForecastBasisKind;
   forecastCapturedAt: string;
+}
+
+export interface SavedNightRead {
+  rating: number;
+  /** When the nightly job saved it. */
+  capturedAt: string;
+  /** Set when a formula change re-scored the night against the saved schedule; shown as "Updated <date>" (Kylie, Oct 9, 3.15). */
+  rescoredOn?: string;
+}
+
+/**
+ * A past night's read as it was saved (Kylie, Oct 9, 3.15): the latest nightly capture
+ * before the night's last scheduled start that carries a rating. Past nights are settled;
+ * their read is not redone against today's listings. A night from before the archive has
+ * no saved read and is scored from the catalog like any settled night.
+ */
+export function savedNightRead(metroId: string, date: LocalDate, events: readonly CrowdEvent[]): SavedNightRead | null {
+  const zone = METROS[metroId]?.timeZone;
+  if (!zone || events.length === 0) return null;
+  const starts = events.map((e) => e.start).filter((s): s is string => Boolean(s)).sort();
+  const lastStart = starts[starts.length - 1] ?? '23:59';
+  const cutoff = wallClockToUtc(date, lastStart, zone).getTime();
+  let best: (ArchiveForecastRow & { rescoredOn?: string }) | null = null;
+  for (const event of events) {
+    for (const row of cachedSnapshots(metroId, event.id, date) ?? []) {
+      if (row.read?.rating == null || !row.capturedAt) continue;
+      const at = new Date(row.capturedAt).getTime();
+      if (!Number.isFinite(at) || at >= cutoff) continue;
+      if (!best || at > new Date(best.capturedAt).getTime()) best = row;
+    }
+  }
+  if (!best || best.read?.rating == null) return null;
+  return { rating: best.read.rating, capturedAt: best.capturedAt, ...(best.rescoredOn ? { rescoredOn: best.rescoredOn } : {}) };
 }
 
 /**

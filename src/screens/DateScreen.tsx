@@ -15,13 +15,14 @@ import {
   isOpenAir,
   weatherForEvent,
   weatherGlyph,
-  friendsEntries,
+  followingFeed,
   getAccount,
   getCityDate,
   getPersonalLog,
   isPlanned,
   isStampLocked,
   isWasThere,
+  savedNightRead,
   roundEstimate,
   stampLocksAt,
   subscribeAccount,
@@ -32,17 +33,18 @@ import {
   yourEntries,
   type CityDate,
   type CrowdEvent,
-  type FriendEntry,
+  type FeedItem,
 } from '../data';
 import { crowdKind } from '../map/crowdPoints';
 import { VENUES, venueNameOn } from '../data';
-import { clockTime, longLocalDate, weekdayLong } from '../lib/dates';
+import { clockTime, longLocalDate, shortLocalDate, weekdayLong } from '../lib/dates';
 import { dayWord } from '../lib/dayWord';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId } from '../lib/homeCity';
 import { quietStakes } from '../lib/stakes';
 import { eventColumns } from '../lib/eventColumns';
 import { EventCols, EventColsHead, EventColsKey } from './MapScreen';
+import { feedLine } from './YouScreen';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 
@@ -70,7 +72,7 @@ export function DateScreen() {
   const metro = METROS[metroId] ?? DEFAULT_METRO;
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [day, setDay] = useState<CityDate | null>(null);
-  const [friends, setFriends] = useState<FriendEntry[]>([]);
+  const [friends, setFriends] = useState<FeedItem[]>([]);
   const [choosing, setChoosing] = useState(false);
   // The event whose Attended is being un-tapped: one confirm before it leaves the log (C054).
   const [unmarking, setUnmarking] = useState<string | null>(null);
@@ -96,8 +98,9 @@ export function DateScreen() {
       setFriends([]);
       return;
     }
-    friendsEntries(300).then((list) => {
-      if (current) setFriends(list.filter((f) => f.entry.when.sort === date && (f.entry.metroId ?? DEFAULT_METRO.id) === metro.id));
+    // The same feed rules as Following (3.24): attended only once the date has passed, plans ahead.
+    followingFeed(300).then((list) => {
+      if (current) setFriends(list.filter((f) => f.date === date && (f.metroId ?? DEFAULT_METRO.id) === metro.id));
     });
     return () => {
       current = false;
@@ -135,7 +138,7 @@ export function DateScreen() {
   };
 
   const share = async () => {
-    const line = rating ? `${scoreLabel(rating.rating)} · ${formatScore(rating.rating)}/10` : '';
+    const line = shownRating !== null ? `${scoreLabel(shownRating)} · ${formatScore(shownRating)}/10` : '';
     const title = mine[0]?.title ?? events[0]?.title ?? metro.name;
     const text = `${title}, ${longLocalDate(date)}${line ? ` · ${line}` : ''}`;
     try {
@@ -186,6 +189,9 @@ export function DateScreen() {
   // "Forecast" until the stamp locks, 24 hours after the last start; "Stamped" only after (C041).
   const locked = !ahead && isStampLocked(asMetroDate(metro.id, date, events), metro.timeZone);
   const readKind = rating ? (locked ? 'Stamped' : 'Forecast') : null;
+  // A settled night shows the read as it was saved, never today's recomputation (3.15).
+  const saved = locked ? savedNightRead(metro.id, date, events) : null;
+  const shownRating = saved?.rating ?? rating?.rating ?? null;
 
   return (
     <div className="screen page date-page">
@@ -220,11 +226,11 @@ export function DateScreen() {
       </header>
 
       <section className={`read-tile${rating ? '' : ' none'}`} aria-label="The read">
-        {rating ? (
+        {rating && shownRating !== null ? (
           <>
-            <span className={`read-big ${scoreBand(rating.rating)}`}>
-              <span className="read-num">{formatScore(rating.rating)}</span>
-              <span className="read-word">{scoreLabel(rating.rating)}</span>
+            <span className={`read-big ${scoreBand(shownRating)}`}>
+              <span className="read-num">{formatScore(shownRating)}</span>
+              <span className="read-word">{scoreLabel(shownRating)}</span>
             </span>
             <span className="read-why">
               <span className="read-lab">{readKind}</span>
@@ -234,6 +240,7 @@ export function DateScreen() {
                 {/* No internal terms here (C069): the lock time ahead, the sources count after. */}
                 {ahead && locksAt ? `Locks ${locksAt.toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit', timeZone: metro.timeZone })}` : ''}
                 {!ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
+                {saved?.rescoredOn ? ` · Updated ${shortLocalDate(saved.rescoredOn)}` : ''}
               </span>
             </span>
           </>
@@ -373,14 +380,14 @@ export function DateScreen() {
       {friends.length > 0 && (
         <section className="you-block" aria-labelledby="friends-date">
           <h2 id="friends-date" className="you-heading">
-            Friends there
+            Following
           </h2>
           <ul className="log-list">
-            {friends.map(({ friend, entry }) => (
-              <li key={`${friend.id}-${entry.id}`} className="log-row">
+            {friends.map((item) => (
+              <li key={`${item.friend.id}-${item.kind}-${item.title}`} className="log-row">
                 <span className="log-main">
-                  <span className="log-friend">{friend.displayName ?? friend.handle ?? 'Someone'}</span>
-                  <span className="log-title">{entry.title}</span>
+                  <span className="log-friend">{feedLine(item)}</span>
+                  <span className="log-title">{item.title}</span>
                 </span>
               </li>
             ))}

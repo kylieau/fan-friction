@@ -279,7 +279,9 @@ export {
   type Account,
 } from './account';
 export {
+  EXAMPLE_FEED,
   EXAMPLE_FRIEND_ENTRIES,
+  followingFeed,
   approveFollow,
   declineFollow,
   follow,
@@ -295,6 +297,7 @@ export {
   updateMyProfile,
   type FollowRequest,
   type FollowStatus,
+  type FeedItem,
   type FriendEntry,
   type Profile,
   type Visibility,
@@ -310,6 +313,7 @@ export {
   frictionReadForEvent,
   isStampLocked,
   nightKey,
+  savedNightRead,
   knownCrowdCount,
   listedCapacity,
   refreshStamp,

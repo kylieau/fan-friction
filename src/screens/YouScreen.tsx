@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { ReadTile } from '../components/ReadTile';
@@ -8,10 +8,10 @@ import {
   canSignIn,
   declineFollow,
   entryFacts,
-  EXAMPLE_FRIEND_ENTRIES,
+  EXAMPLE_FEED,
   filterChoices,
   followRequests,
-  friendsEntries,
+  followingFeed,
   getAccount,
   getMyProfile,
   getPersonalLog,
@@ -24,15 +24,17 @@ import {
   subscribeAccount,
   subscribePersonalLog,
   type Entry,
+  type FeedItem,
   type FollowRequest,
-  type FriendEntry,
+  todayIn,
+  upcomingPlans,
   yourEntries,
 } from '../data';
 import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
 import { YourYear } from '../components/YourYear';
 import { GearIcon, PlusIcon } from '../components/Icons';
-import { loggedDateLabel, timelineGroup } from '../lib/dates';
+import { loggedDateLabel, shortLocalDate, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { datePath, entryPath, eventPath } from '../lib/view';
 
@@ -48,10 +50,12 @@ export function YouScreen() {
     clearOpenedFromMap();
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
-  const [tab, setTab] = useState<'events' | 'stats' | 'friends'>('events');
+  const [params] = useSearchParams();
+  const [tab, setTab] = useState<'events' | 'stats' | 'friends'>(() => (params.get('tab') === 'following' ? 'friends' : params.get('tab') === 'stats' ? 'stats' : 'events'));
   const [handle, setHandle] = useState<string | null>(null);
   const [requests, setRequests] = useState<FollowRequest[]>([]);
-  const [friends, setFriends] = useState<FriendEntry[] | null>(null);
+  const [feed, setFeed] = useState<FeedItem[] | null>(null);
+  const plansAhead = useMemo(() => upcomingPlans(todayIn(DEFAULT_METRO), log), [log]);
 
   const decide = async (followerId: string, yes: boolean) => {
     if (yes) await approveFollow(followerId);
@@ -63,12 +67,12 @@ export function YouScreen() {
     let current = true;
     if (!account) {
       setHandle(null);
-      setFriends(null);
+      setFeed(null);
       return;
     }
     getMyProfile().then((profile) => current && setHandle(profile?.handle ?? null));
     followRequests().then((list) => current && setRequests(list));
-    friendsEntries().then((list) => current && setFriends(list));
+    followingFeed().then((list) => current && setFeed(list));
     return () => {
       current = false;
     };
@@ -104,6 +108,22 @@ export function YouScreen() {
 
   const eventsBlock = (
     <section className="you-block" aria-label="Your events">
+      {/* A small Coming up strip above the log (3.11): plans still ahead, soonest first. */}
+      {plansAhead.length > 0 && (
+        <div className="coming-strip" aria-label="Coming up">
+          <span className="coming-strip-label">Coming up</span>
+          <ul className="coming-strip-list">
+            {plansAhead.slice(0, 6).map((plan) => (
+              <li key={plan.id}>
+                <Link to={datePath(plan.date, plan.metroId, plan.eventId)} className="coming-chip">
+                  <span className="coming-chip-date">{shortLocalDate(plan.date)}</span>
+                  <span className="coming-chip-title">{plan.title}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       {entries.length === 0 ? (
         <div className="card empty-card">
           <div className="card-title">{canSignIn() && !account ? 'No events on this phone.' : 'No events yet.'}</div>
@@ -210,7 +230,7 @@ export function YouScreen() {
           <Stats stats={stats} hours={hoursAtGames(shown)} />
         </>
       )}
-      {tab === 'friends' && <FriendsTab items={friends} ratings={ratings} signedIn={Boolean(account)} />}
+      {tab === 'friends' && <FollowingTab items={feed} ratings={ratings} signedIn={Boolean(account)} />}
     </div>
   );
 }
@@ -228,65 +248,59 @@ function groupByTime(entries: Entry[]): [string, Entry[]][] {
 }
 
 /**
- * Recent nights of people you follow, newest first. Not a feed to scroll: a short
- * list, each row a friend's night with its stamp, tapping through to the event.
- * Before anyone is followed, built-in examples show the shape, each marked Example.
+ * The Following feed (Kylie, Oct 9, 3.24): what the people you follow are planning
+ * to attend, and what they attended. Each line is dated by the event. No post times,
+ * no "is at", and an attended line only once the date has passed.
  */
-function FriendsTab({
-  items,
-  ratings,
-  signedIn,
-}: {
-  items: FriendEntry[] | null;
-  ratings: ReadonlyMap<string, number>;
-  signedIn: boolean;
-}) {
+function FollowingTab({ items, ratings, signedIn }: { items: FeedItem[] | null; ratings: ReadonlyMap<string, number>; signedIn: boolean }) {
   if (!signedIn) {
     return (
       <div className="card empty-card">
-        <div className="card-title">Sign in to follow friends.</div>
+        <div className="card-title">Sign in to follow people.</div>
       </div>
     );
   }
   if (items === null) return null;
-  const list = items.length > 0 ? items : EXAMPLE_FRIEND_ENTRIES;
+  const list = items.length > 0 ? items : EXAMPLE_FEED;
   return (
-    <section className="you-block" aria-label="Friends">
+    <section className="you-block" aria-label="Following">
       <ul className="log-list">
-        {list.map(({ entry, friend, example }) => {
-          const rating = example ? null : ratingForEntry(entry, ratings);
-          const facts = [loggedDateLabel(entry.when), entry.venue].filter(Boolean).join(' · ');
-          const body = (
-            <>
-              {rating !== null && <ReadTile rating={rating} />}
-              <span className="log-main">
-                <span className="log-friend">
-                  {friend.displayName ?? friend.handle ?? 'Someone'}
-                  {example && <span className="example-chip">Example</span>}
-                </span>
-                <span className="log-title">{entry.title}</span>
-                <span className="log-facts">{facts}</span>
-              </span>
-            </>
-          );
-          const key = `${friend.id}-${entry.id}`;
-          if (entry.eventId && !example) {
-            return (
-              <li key={key}>
-                <Link to={datePath(entry.when.sort, entry.metroId ?? DEFAULT_METRO.id, entry.eventId)} className="log-row">
-                  {body}
-                </Link>
-              </li>
-            );
-          }
-          return (
-            <li key={key}>
-              <div className="log-row">{body}</div>
-            </li>
-          );
-        })}
+        {list.map((item) => (
+          <FeedRow key={`${item.friend.id}-${item.kind}-${item.date}-${item.title}`} item={item} ratings={ratings} />
+        ))}
       </ul>
     </section>
+  );
+}
+
+export function feedLine(item: FeedItem): string {
+  const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
+  return item.kind === 'planning' ? `${name} is planning to attend` : `${name} attended`;
+}
+
+export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMap<string, number> }) {
+  const rating = item.entry && !item.example ? ratingForEntry(item.entry, ratings) : null;
+  const facts = [shortLocalDate(item.date), item.venue].filter(Boolean).join(' · ');
+  const body = (
+    <>
+      {rating !== null && <ReadTile rating={rating} />}
+      <span className="log-main">
+        <span className="log-friend">
+          {feedLine(item)}
+          {item.example && <span className="example-chip">Example</span>}
+        </span>
+        <span className="log-title">{item.title}</span>
+        <span className="log-facts">{facts}</span>
+      </span>
+    </>
+  );
+  if (item.example) return <li className="log-row">{body}</li>;
+  return (
+    <li>
+      <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} className="log-row">
+        {body}
+      </Link>
+    </li>
   );
 }
 

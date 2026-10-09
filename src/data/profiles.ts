@@ -6,6 +6,7 @@
 import { getAccount } from './account';
 import { supabase } from './storage/supabaseClient';
 import type { Entry } from './types';
+import { METROS } from '../config/metros';
 
 export type Visibility = 'only_me' | 'approved' | 'anyone';
 
@@ -196,6 +197,66 @@ export interface FriendEntry {
   /** True on the built-in examples shown before anyone is followed. Never saved. */
   example?: boolean;
 }
+
+/**
+ * One line of the Following feed (Kylie, Oct 9, 3.24): "{name} attended {event}" once the
+ * date has passed, or "{name} is planning to attend {event}" for a date ahead. Dated by the
+ * event, never by when it was saved, and never "is at": nothing here says where someone is now.
+ */
+export interface FeedItem {
+  kind: 'attended' | 'planning';
+  friend: Profile;
+  title: string;
+  date: string;
+  venue?: string;
+  metroId?: string;
+  eventId?: string;
+  /** The entry behind an attended line, for its read. */
+  entry?: Entry;
+  example?: boolean;
+}
+
+/** Today's date where the friend's event is, so an "attended" line never shows on the day itself. */
+function todayFor(metroId: string | undefined): string {
+  const zone = (metroId && METROS[metroId]?.timeZone) || 'America/Los_Angeles';
+  return new Date().toLocaleDateString('en-CA', { timeZone: zone });
+}
+
+/** The Following feed: approved followees' past entries and upcoming plans, soonest plans first, then newest entries. */
+export async function followingFeed(limit = 30): Promise<FeedItem[]> {
+  const c = supabase();
+  const me = getAccount();
+  if (!c || !me) return [];
+  const { data: links } = await c.from('follows').select('followee_id').eq('follower_id', me.id).eq('status', 'approved');
+  const ids = ((links ?? []) as { followee_id: string }[]).map((row) => row.followee_id);
+  if (ids.length === 0) return [];
+  const [{ data: people }, { data: rows }, { data: plans }] = await Promise.all([
+    c.from('profiles').select('*').in('id', ids),
+    c.from('entries').select('id, user_id, data').in('user_id', ids).order('when_sort', { ascending: false }).limit(limit),
+    c.from('plans').select('id, user_id, date, metro_id, event_id, title, venue').in('user_id', ids).order('date', { ascending: true }).limit(limit),
+  ]);
+  const byId = new Map(((people ?? []) as ProfileRow[]).map((row) => [row.id, fromRow(row)]));
+  const planning: FeedItem[] = ((plans ?? []) as { id: string; user_id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null }[])
+    .filter((p) => p.date >= todayFor(p.metro_id))
+    .flatMap((p) => {
+      const friend = byId.get(p.user_id);
+      return friend ? [{ kind: 'planning' as const, friend, title: p.title, date: p.date, venue: p.venue ?? undefined, metroId: p.metro_id, eventId: p.event_id ?? undefined }] : [];
+    });
+  const attended: FeedItem[] = ((rows ?? []) as { id: string; user_id: string; data: Entry }[])
+    .flatMap((row) => {
+      const friend = byId.get(row.user_id);
+      const entry: Entry = { ...row.data, id: row.id };
+      if (!friend || entry.when.sort >= todayFor(entry.metroId)) return [];
+      return [{ kind: 'attended' as const, friend, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry }];
+    });
+  return [...planning, ...attended].slice(0, limit);
+}
+
+/** The feed's shape before anyone is followed, marked Example. Nothing here is written anywhere. */
+export const EXAMPLE_FEED: FeedItem[] = [
+  { example: true, kind: 'planning', friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, visibility: 'approved', homeMetroId: null }, title: 'Rams vs. Bills', date: '2026-10-12', venue: 'SoFi Stadium', metroId: 'la' },
+  { example: true, kind: 'attended', friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, visibility: 'approved', homeMetroId: null }, title: 'Slayer', date: '2026-10-02', venue: 'Kia Forum', metroId: 'la' },
+];
 
 /** Recent nights of the people the signed-in person follows (approved only), newest first. */
 export async function friendsEntries(limit = 20): Promise<FriendEntry[]> {
