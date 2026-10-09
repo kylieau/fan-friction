@@ -70,14 +70,26 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - **Step 8:** Rating formula from the v3 design (Crowd fight share-of-seats, Gridlock zones with OpenStreetMap drive times computed once per venue pair, free sources only). Hold back 2–3 of the 13 nights to test it, so it isn't just tuned to fit. When the app widens beyond LA, add benchmark dates that test what LA can't (list in the v3 doc).
 
 ## Open from the Oct 9 build (Kylie's build notes)
-- **Step (d), Explore header and Home hub: not started.** Propose with screenshots or a mock first (Kylie, Oct 9). Two wording points to settle: the new-user line ("Log your first night" in the mock vs. "Log your first event" per the Oct 9 rule), and whether the map's event count stays under the date (no lock found in the docs; only a note in the GrokBot gap review, so it stays unless she says).
-- **Step (e), privacy: waiting on Q11** (which of: a Followers list with Remove, follower field limits, handle-only profile lookup, per-event sharing, per-detail visibility, block, a link off switch), Q2 (follow copy) and Q4 (what a declined requester sees). Built already: approval enforced (0011), re-asking auto-approved followers on leaving Anyone, plans readable by approved followers (0012, to paste).
+- **Step (d), Explore header and Home hub: built on branch `claude/step-d` (commit 6305210), screenshots sent to Kylie Oct 9; merges to `main` on her OK.** Choices made: the new-user line says "Log your first event" (the Oct 9 wording rule), and the map's event count stays under the date (no lock found in the docs; only a note in the GrokBot gap review).
+- **Step (e), privacy: built Oct 9** (Followers and Following lists with Follow back / Remove / Unfollow, the follow copy from Q2 as drafted, quiet declines via migration 0013 (Kylie's to paste), names in the feed open profiles, visibility words matched). **Still open from Q11:** follower field limits (followers can read an entry's whole `data`, including the review), handle-only profile lookup (profile cards are listable over REST, with home city), per-event sharing, per-detail visibility, block, a share-link off switch.
 - **Chip icons (3.18):** drawn in the line style; Kylie asked to see actual-size chips before settling. Screenshots shown Oct 9; not yet confirmed.
 - **C016:** 25 venues Ticketmaster does not list under our names (the Coliseum, Galen Center, Weingart, college and county rooms, speedways); the 300 m fallback covers listings at them. `scripts/ticketmaster-venues.mjs --all` re-checks.
 - **3.15 re-score:** nothing re-scores a settled night when the formula changes; the nightly job would need to write `rescoredOn` on the snapshot rows for "Updated <date>" to appear.
 - **3.24 feed:** plan lines need migration 0012; example rows show until someone is followed.
 - **C017:** nothing to build; new teams are added only where a free feed lists them (Kylie, Oct 9).
 - **Hand-added plans in a city the app has no metro for** keep the home city on the plan (marked elsewhere), so they sit in Coming up.
+
+## Kylie's phone checklist (asked for Oct 9; these need a real phone or her own account)
+- [ ] **C118** Log an event by hand on an iPhone and an Android phone: does the keyboard hide fields or Save?
+- [ ] **C075** Scroll Home: does the Tonight list scroll inside the page or move the page?
+- [ ] **C083** Weather glyphs on an iPhone and an Android phone: do they show as "…"?
+- [ ] **C087** Touch targets: anything under 44 pt (the chips' +N badge, the strip's cells, See all ›, the key's ?).
+- [ ] **Sign out** with a change still unsaved (airplane mode, mark an event, Sign out): the "Some changes haven't reached your account" line should appear.
+- [ ] **Follow flow from your own account:** You → Following → Followers › → Test A → Follow back; then Test A's "is planning to attend" line should show on Home and in Following.
+- [ ] **Attended un-tap** on the event page and the date page asks once.
+- [ ] **Step (d) on your phone** once merged: the search on the strip, the Today pill beside it on a past date, typed dates ("Oct 17", "Saturday"), and Home's sections.
+- [ ] **The tester's nights** (LA, San Diego, New York, Montreal) show reads a day before the interview (about Oct 12).
+- [ ] After the interview: **C034**, the tester's descriptions beside the reads as evidence, never a target.
 
 ## Section 8 test results (Oct 9; report only, no behavior changed without asking)
 - **C002, the Ticketmaster 1,000 cap: real and biting.** Per 30-day window on Oct 9 (radius 40 mi probe; the source uses 30 mi plus satellite points, so slightly less): New York ~6,000 listings (31 pages), Chicago ~2,000 (11), Los Angeles ~1,300 (7), Atlanta ~1,200 (7), Seattle ~500 (3). The source stops at 5 pages × 200, and Ticketmaster itself refuses to page past 1,000 items on one query, so "more pages" is not an option. Options: (1) smaller windows (7 days still leaves New York over 1,000; 3 days fits, ~60 calls per city per night); (2) split each window by segment (Music / Sports / Arts), which halves it but New York still overflows; (3) **query by venue id** (`venueId=` with the 188 ids we store): no cap problem, no unknown-venue noise, about 200–400 calls a night across nine cities, well under the 5,000-a-day key limit; the 25 unmatched venues keep the radius search as a fallback. Recommendation: (3). The horizon (how far ahead to list) is a separate choice; today it is about six months.
