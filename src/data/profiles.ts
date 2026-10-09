@@ -22,6 +22,13 @@ export interface Profile {
 
 export type FollowStatus = 'none' | 'pending' | 'approved';
 
+/** Someone in your Followers or Following list. */
+export interface Person {
+  profile: Profile;
+  /** For a follower: whether you follow them back ('none' | 'pending' | 'approved'). For someone you follow: your request's state. */
+  status: FollowStatus;
+}
+
 export interface FollowRequest {
   followerId: string;
   displayName: string | null;
@@ -135,7 +142,51 @@ export async function followStatus(targetId: string): Promise<FollowStatus> {
     .eq('followee_id', targetId)
     .maybeSingle();
   if (!data) return 'none';
-  return (data as { status: FollowStatus }).status;
+  // A declined request still reads as "Requested" to the person who asked (privacy 2 and 7; migration 0013).
+  const status = (data as { status: string }).status;
+  return status === 'declined' ? 'pending' : (status as FollowStatus);
+}
+
+/** The people who follow you (approved), with whether you follow them back. */
+export async function followers(): Promise<Person[]> {
+  const c = supabase();
+  const me = getAccount();
+  if (!c || !me) return [];
+  const [{ data: inRows }, { data: outRows }] = await Promise.all([
+    c.from('follows').select('follower_id').eq('followee_id', me.id).eq('status', 'approved'),
+    c.from('follows').select('followee_id, status').eq('follower_id', me.id),
+  ]);
+  const ids = ((inRows ?? []) as { follower_id: string }[]).map((r) => r.follower_id);
+  if (ids.length === 0) return [];
+  const mine = new Map(((outRows ?? []) as { followee_id: string; status: string }[]).map((r) => [r.followee_id, r.status === 'declined' ? 'pending' : (r.status as FollowStatus)]));
+  const { data: people } = await c.from('profiles').select('*').in('id', ids);
+  return ((people ?? []) as ProfileRow[]).map((row) => ({ profile: fromRow(row), status: mine.get(row.id) ?? 'none' }));
+}
+
+/** The people you follow, approved and still waiting. */
+export async function following(): Promise<Person[]> {
+  const c = supabase();
+  const me = getAccount();
+  if (!c || !me) return [];
+  const { data: rows } = await c.from('follows').select('followee_id, status').eq('follower_id', me.id);
+  const list = (rows ?? []) as { followee_id: string; status: string }[];
+  if (list.length === 0) return [];
+  const { data: people } = await c.from('profiles').select('*').in('id', list.map((r) => r.followee_id));
+  const byId = new Map(((people ?? []) as ProfileRow[]).map((row) => [row.id, fromRow(row)]));
+  return list
+    .flatMap((r) => {
+      const profile = byId.get(r.followee_id);
+      return profile ? [{ profile, status: (r.status === 'declined' ? 'pending' : r.status) as FollowStatus }] : [];
+    })
+    .sort((a, b) => (a.status === b.status ? 0 : a.status === 'approved' ? -1 : 1));
+}
+
+/** Take a follower's access away. They see nothing of yours from then on, and nothing tells them. */
+export async function removeFollower(followerId: string): Promise<void> {
+  const c = supabase();
+  const me = getAccount();
+  if (!c || !me) return;
+  await c.from('follows').delete().eq('follower_id', followerId).eq('followee_id', me.id);
 }
 
 /**
@@ -184,11 +235,14 @@ export async function approveFollow(followerId: string): Promise<void> {
   await c.from('follows').update({ status: 'approved' }).eq('follower_id', followerId).eq('followee_id', me.id);
 }
 
+/** Decline quietly: the row stays as "declined" so the requester still sees "Requested" (migration 0013). */
 export async function declineFollow(followerId: string): Promise<void> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return;
-  await c.from('follows').delete().eq('follower_id', followerId).eq('followee_id', me.id);
+  const { error } = await c.from('follows').update({ status: 'declined' }).eq('follower_id', followerId).eq('followee_id', me.id);
+  // Before 0013 the status check refuses "declined"; fall back to the old delete so a decline still works.
+  if (error) await c.from('follows').delete().eq('follower_id', followerId).eq('followee_id', me.id);
 }
 
 export interface FriendEntry {

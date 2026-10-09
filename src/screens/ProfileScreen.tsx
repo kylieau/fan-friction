@@ -38,6 +38,7 @@ export function ProfileScreen() {
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState<string | null>(null);
+  const [asking, setAsking] = useState(false);
 
   const mine = Boolean(profile && account && profile.id === account.id);
 
@@ -126,11 +127,25 @@ export function ProfileScreen() {
         <HeaviestStat rating={heaviest} />
       </div>
 
-      {!mine && (
+      {!mine && status === 'none' && asking && (
+        <div className="card follow-ask">
+          {/* The one line before a request goes out (Kylie, Oct 9, 3.24; privacy 2). */}
+          <p className="card-title">If {name} approves, you'll see their logged events and plans.</p>
+          <div className="entry-form-actions">
+            <button type="button" className="link-button" onClick={() => setAsking(false)}>
+              Cancel
+            </button>
+            <button type="button" className="gold-button small" onClick={() => { setAsking(false); void toggleFollow(); }} disabled={busy}>
+              Send request
+            </button>
+          </div>
+        </div>
+      )}
+      {!mine && !(status === 'none' && asking) && (
         <button
           type="button"
           className={status === 'none' ? 'gold-button' : 'mark-button on'}
-          onClick={toggleFollow}
+          onClick={() => (status === 'none' ? setAsking(true) : void toggleFollow())}
           disabled={busy || !canSignIn()}
         >
           {status === 'none' ? 'Follow' : status === 'pending' ? 'Requested' : 'Following'}

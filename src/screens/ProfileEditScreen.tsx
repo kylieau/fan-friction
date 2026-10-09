@@ -16,12 +16,12 @@ const CHOICES: { value: Visibility; title: string; body: string }[] = [
   {
     value: 'approved',
     title: 'People I approve',
-    body: 'Anyone can ask to follow you. Only people you approve see your events.',
+    body: 'Anyone can ask to follow you. Only people you approve see your events and plans.',
   },
   {
     value: 'anyone',
     title: 'Anyone',
-    body: 'Anyone with your link can see your events and follow you. Private notes stay private.',
+    body: 'Anyone can see your events. Following still needs your OK, and only followers see your plans.',
   },
 ];
 

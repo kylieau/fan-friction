@@ -194,7 +194,11 @@ export function YouScreen() {
           <ul className="log-list">
             {requests.map((r) => (
               <li key={r.followerId} className="request-row">
-                <span className="log-title">{r.displayName ?? r.handle ?? 'Someone'}</span>
+                <Link to={r.handle ? `/p/${r.handle}` : '#'} className="log-main">
+                  <span className="log-title">{r.displayName ?? r.handle ?? 'Someone'}</span>
+                  {/* What approval gives, in one line (Kylie, Oct 9, 3.24). */}
+                  <span className="log-facts">They'll see your logged events and plans.</span>
+                </Link>
                 <span className="request-actions">
                   <button type="button" className="link-button" onClick={() => decide(r.followerId, true)}>
                     Approve
@@ -264,6 +268,14 @@ function FollowingTab({ items, ratings, signedIn }: { items: FeedItem[] | null; 
   const list = items.length > 0 ? items : EXAMPLE_FEED;
   return (
     <section className="you-block" aria-label="Following">
+      <div className="you-heading-row">
+        <Link to="/you/people?tab=following" className="link-more people-link">
+          Following ›
+        </Link>
+        <Link to="/you/people?tab=followers" className="link-more people-link">
+          Followers ›
+        </Link>
+      </div>
       <ul className="log-list">
         {list.map((item) => (
           <FeedRow key={`${item.friend.id}-${item.kind}-${item.date}-${item.title}`} item={item} ratings={ratings} />
@@ -286,7 +298,7 @@ export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMa
       {rating !== null && <ReadTile rating={rating} />}
       <span className="log-main">
         <span className="log-friend">
-          {feedLine(item)}
+          {item.example || !item.friend.handle ? feedLine(item) : <Link to={`/p/${item.friend.handle}`} className="log-friend-link">{feedLine(item)}</Link>}
           {item.example && <span className="example-chip">Example</span>}
         </span>
         <span className="log-title">{item.title}</span>

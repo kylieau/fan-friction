@@ -2111,6 +2111,19 @@ button {
   color: var(--ink2);
 }
 
+.people-link + .people-link {
+  margin-left: 16px;
+}
+
+.log-friend-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.follow-ask {
+  margin-bottom: 12px;
+}
+
 .coming-strip {
   margin-bottom: 12px;
 }

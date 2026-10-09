@@ -11,6 +11,7 @@ import { AddEntryScreen } from './screens/AddEntryScreen';
 import { ManualEntryScreen } from './screens/ManualEntryScreen';
 import { ProfileScreen } from './screens/ProfileScreen';
 import { ProfileEditScreen } from './screens/ProfileEditScreen';
+import { PeopleScreen } from './screens/PeopleScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { FavoritesScreen } from './screens/FavoritesScreen';
 import { FavoritePage } from './screens/FavoritePage';
@@ -52,6 +53,7 @@ function Shell() {
           <Route path="/profile/edit" element={<ProfileEditScreen />} />
           <Route path="/you" element={<YouScreen />} />
           <Route path="/you/add" element={<AddEntryScreen />} />
+          <Route path="/you/people" element={<PeopleScreen />} />
           <Route path="/entry/:id" element={<ManualEntryScreen />} />
           <Route path="/you/settings" element={<SettingsScreen />} />
           <Route path="/nights" element={<Navigate to="/calendar" replace />} />
