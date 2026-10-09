@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronDown, ShareIcon } from '../components/Icons';
 import { RemoveConfirm } from '../components/EntryLayer';
+import { ReadTile } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { formatScore, scoreBand, scoreLabel, showFriction } from '../config/scoreLabels';
 import {
@@ -152,7 +153,7 @@ export function DateScreen() {
     else navigate('/calendar');
   };
 
-  if (loadFailed || (day && day.failed?.length && day.events.length === 0)) {
+  if (loadFailed) {
     return (
       <div className="screen page">
         <button type="button" className="back-link" onClick={back}>
@@ -236,14 +237,29 @@ export function DateScreen() {
           </>
         ) : (
           <>
-            <span className="read-big quiet">
-              <span className="read-num">—</span>
-            </span>
+            <ReadTile rating={null} size="big" empty={day.empty} />
             <span className="read-why">
-              <span className="read-lab">{ahead ? 'Forecast' : 'No read yet'}</span>
-              <span className="read-txt">
-                {events.length === 0 ? `Nothing big on file in ${metro.name}.` : ahead ? 'The forecast arrives with the formula.' : 'This date has no rating yet.'}
-              </span>
+              {day.empty ? (
+                <span className="read-txt">
+                  {day.empty === 'quiet'
+                    ? `Nothing big in ${metro.name}.`
+                    : day.emptyWhy === 'partial'
+                      ? 'Events have not all been collected for this date.'
+                      : day.emptyWhy === 'failed'
+                        ? "Couldn't load this date."
+                        : 'Events have not been collected for this date.'}
+                </span>
+              ) : (
+                <>
+                  <span className="read-lab">{ahead ? 'Forecast' : 'No read yet'}</span>
+                  <span className="read-txt">{ahead ? 'The forecast arrives with the formula.' : 'This date has no rating yet.'}</span>
+                </>
+              )}
+              {day.emptyWhy === 'failed' && (
+                <button type="button" className="link-button" onClick={() => setTries((n) => n + 1)}>
+                  Try again
+                </button>
+              )}
             </span>
           </>
         )}
@@ -277,15 +293,12 @@ export function DateScreen() {
         </section>
       )}
 
+      {events.length > 0 && (
       <section className="you-block" aria-labelledby="that-date">
         <h2 id="that-date" className="you-heading">
           That {word} in {metro.name}
         </h2>
-        {events.length === 0 ? (
-          <div className="card empty-card">
-            <div className="card-title">Nothing big on file.</div>
-          </div>
-        ) : (
+        {(
           <ul className="log-list timeline-list">
             {events.map((e) => {
               const yours = attended(e) || attending(e);
@@ -328,6 +341,7 @@ export function DateScreen() {
           </ul>
         )}
       </section>
+      )}
 
       {events.length > 0 && (
         <div className="action-row">

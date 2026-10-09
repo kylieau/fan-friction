@@ -325,6 +325,14 @@ export interface CityDate {
   events: CrowdEvent[];
   rating: DateRating | null;
   failed?: string[];
+  /**
+   * Why a date with no big events is empty (Kylie, Oct 9): "quiet" when it was checked and
+   * nothing big was on; "no-data" when it was never checked, only partly checked, or a source
+   * failed today. Absent when the date has events.
+   */
+  empty?: 'quiet' | 'no-data';
+  /** The line under "No data" on the date page: never collected, not all collected, or a failed load. */
+  emptyWhy?: 'never' | 'partial' | 'failed';
 }
 
 /** One cell of the Nights calendar. Quiet means nothing big is on file for that date. */

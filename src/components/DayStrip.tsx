@@ -5,7 +5,7 @@ import type { Metro } from '../config/metros';
 import { getCityDate } from '../data';
 import { addDays, daysBetween } from '../lib/dates';
 import { mapPath } from '../lib/view';
-import { ReadTile } from './ReadTile';
+import { ReadTile, type EmptyKind } from './ReadTile';
 
 /** The row runs two weeks back and a month ahead of its anchor; seven cells fit the width, with half a cell peeking at each end. */
 const BACK = 14;
@@ -14,7 +14,7 @@ const AHEAD = 30;
 const SLOT = 2;
 const GAP = 4;
 
-type Read = { rating: number | null; quiet: boolean };
+type Read = { rating: number | null; empty?: EmptyKind };
 
 /**
  * The day strip above the map, as a carousel (Kylie, Oct 6): one row of days
@@ -35,7 +35,7 @@ export function DayStrip({ metro, today, date }: { metro: Metro; today: string; 
     let current = true;
     Promise.all(days.map((d) => getCityDate(metro.id, d))).then((list) => {
       if (!current) return;
-      setReads(new Map(list.map((day) => [day.date, { rating: day.rating?.rating ?? null, quiet: day.status === 'quiet' }])));
+      setReads(new Map(list.map((day) => [day.date, { rating: day.rating?.rating ?? null, empty: day.empty }])));
     });
     return () => {
       current = false;
@@ -89,7 +89,7 @@ export function DayStrip({ metro, today, date }: { metro: Metro; today: string; 
               className={`day-cell${on ? ' on' : ''}${d > today ? ' forecast' : ''}${d === today ? ' today' : ''}`}
             >
               <span className="day-name">{label}</span>
-              <ReadTile rating={read?.rating ?? null} quiet={read?.quiet} />
+              <ReadTile rating={read?.rating ?? null} empty={read?.empty} />
               <span className="day-num">{Number(d.slice(8))}</span>
             </Link>
           );

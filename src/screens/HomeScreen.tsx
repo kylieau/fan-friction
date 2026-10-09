@@ -17,6 +17,7 @@ import {
   metrosWithEvents,
   nightsOf,
   ratingForEntry,
+  nightKey,
   roundEstimate,
   scoresForNights,
   subscribeAccount,
@@ -113,13 +114,6 @@ export function HomeScreen() {
 
   const recent = useMemo(() => yourEntries(log).filter((entry) => entry.when.precision === 'day' && entry.when.sort <= today).slice(0, ROWS), [log, today]);
 
-  useEffect(() => {
-    let current = true;
-    scoresForNights(nightsOf(recent)).then((map) => current && setRatings(map));
-    return () => {
-      current = false;
-    };
-  }, [recent]);
 
   // Friends, grouped by event: "Sam R. and Priya · Slayer".
   const friendGroups = useMemo(() => {
@@ -141,6 +135,22 @@ export function HomeScreen() {
     const later = week.filter((e) => e.date > today && showsOnMap(e));
     return later.slice(0, ROWS);
   }, [week, today]);
+
+  // One scores map for every night Home shows, keyed by city and date (nightKey), so no row
+  // asks by date alone (the Coming up, This week and Friends rows always showed a dash; C066/5.2).
+  const nightsShown = useMemo(() => {
+    const nights = [...nightsOf(recent), ...comingUp.map((row) => ({ metroId: row.metroId, date: row.date }))];
+    for (const e of thisWeek) nights.push({ metroId: e.metroId, date: e.date });
+    for (const g of friendGroups) nights.push({ metroId: g.metroId ?? DEFAULT_METRO.id, date: g.date });
+    return nights;
+  }, [recent, comingUp, thisWeek, friendGroups]);
+  useEffect(() => {
+    let current = true;
+    scoresForNights(nightsShown).then((map) => current && setRatings(map));
+    return () => {
+      current = false;
+    };
+  }, [nightsShown]);
 
   const word = dayWord(day?.events ?? []);
   const rating = day?.rating?.rating ?? null;
@@ -230,7 +240,7 @@ export function HomeScreen() {
             {comingUp.map((row) => (
               <li key={row.key}>
                 <Link to={datePath(row.date, row.metroId, row.eventId)} className="log-row">
-                  <ReadTile rating={ratings.get(row.date) ?? null} />
+                  <ReadTile rating={ratings.get(nightKey(row.metroId, row.date)) ?? null} />
                   <span className="log-main">
                     <span className="log-title">{row.title}</span>
                     <span className="log-facts">
@@ -261,7 +271,7 @@ export function HomeScreen() {
             {thisWeek.map((e) => (
               <li key={e.id}>
                 <Link to={datePath(e.date, e.metroId, e.id)} className="log-row">
-                  <ReadTile rating={ratings.get(e.date) ?? null} />
+                  <ReadTile rating={ratings.get(nightKey(e.metroId, e.date)) ?? null} />
                   <span className="log-main">
                     <span className="log-title">{listTitle(e)}</span>
                     <span className="log-facts">{[shortLocalDate(e.date), e.start ? clockTime(e.start) : null, venueOf(e)].filter(Boolean).join(' · ')}</span>
@@ -314,7 +324,7 @@ export function HomeScreen() {
             {friendGroups.map((group) => (
               <li key={`${group.date}-${group.title}`}>
                 <Link to={datePath(group.date, group.metroId ?? DEFAULT_METRO.id, group.eventId)} className="log-row">
-                  <ReadTile rating={ratings.get(group.date) ?? null} />
+                  <ReadTile rating={ratings.get(nightKey(group.metroId ?? DEFAULT_METRO.id, group.date)) ?? null} />
                   <span className="log-main">
                     <span className="log-friend">{joinNames(group.names)}</span>
                     <span className="log-title">{group.title}</span>

@@ -15,6 +15,8 @@ export interface ScheduleSnapshotSpan {
   capturedOn: string;
   from: string;
   through: string;
+  /** The sources that ran for this capture (mlb, espn, ticketmaster, ...). A date is "checked" only when every source the city uses now ran. */
+  sources: string[];
 }
 
 export const SCHEDULE_SNAPSHOTS: readonly ScheduleSnapshotSpan[] = [
@@ -24,7 +26,7 @@ function emit(spans) {
   const rows = spans
     .map(
       (span) =>
-        `  { metroId: '${span.metroId}', capturedOn: '${span.capturedOn}', from: '${span.from}', through: '${span.through}' },`,
+        `  { metroId: '${span.metroId}', capturedOn: '${span.capturedOn}', from: '${span.from}', through: '${span.through}', sources: [${span.sources.map((s) => `'${s}'`).join(', ')}] },`,
     )
     .join('\n');
   return `${HEADER}${rows}\n];\n`;
@@ -53,7 +55,8 @@ export async function refreshScheduleIndex(root) {
       if (typeof metroId !== 'string' || typeof capturedOn !== 'string' || typeof from !== 'string' || typeof through !== 'string') {
         throw new Error(`Snapshot ${metro.name}/${name} is missing a window. The coverage list was not rewritten.`);
       }
-      spans.push({ metroId, capturedOn, from, through });
+      const sources = Array.isArray(raw?.sources) ? raw.sources.map((s) => s?.id).filter((id) => typeof id === 'string') : [];
+      spans.push({ metroId, capturedOn, from, through, sources });
     }
   }
   spans.sort((a, b) => a.metroId.localeCompare(b.metroId) || a.capturedOn.localeCompare(b.capturedOn));

@@ -57,7 +57,20 @@ function venueFor(metroId: string, v: TmVenue) {
   const byId = ours.find((venue) => venue.ticketmasterIds?.includes(v.id));
   if (byId) return byId;
   const name = v.name.trim().toLowerCase();
-  return ours.find((venue) => venue.names.some((n) => n.name.toLowerCase() === name));
+  const byName = ours.find((venue) => venue.names.some((n) => n.name.toLowerCase() === name));
+  if (byName || !v.location) return byName;
+  // Within 300 m of a venue we know: the same room under a name we have not stored (C016).
+  const lat = Number(v.location.latitude);
+  const lng = Number(v.location.longitude);
+  if (!Number.isFinite(lat) || !Number.isFinite(lng)) return undefined;
+  return ours.find((venue) => metersBetween(venue.location, [lng, lat]) <= 300);
+}
+
+function metersBetween([lng1, lat1]: readonly [number, number] | number[], [lng2, lat2]: readonly [number, number] | number[]): number {
+  const r = Math.PI / 180;
+  const x = (lng2 - lng1) * r * Math.cos(((lat1 + lat2) / 2) * r);
+  const y = (lat2 - lat1) * r;
+  return Math.sqrt(x * x + y * y) * 6_371_000;
 }
 
 /** Listings that are not a night out: venue tours, parking, camping, VIP add-ons, premium seating, passes. */

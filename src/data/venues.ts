@@ -16,6 +16,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Dodger Stadium' }],
     location: [-118.24, 34.0739],
+    ticketmasterIds: ['KovZpa2W1e'],
     capacity: [{ seats: 56000, setup: 'baseball' }],
     roof: 'open',
   },
@@ -24,6 +25,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Staples Center' }, { name: 'Crypto.com Arena', from: '2021-12-25' }],
     location: [-118.2673, 34.043],
+    ticketmasterIds: ['KovZpZAEdntA'],
     capacity: [
       { seats: 18910, setup: 'basketball' },
       { seats: 18145, setup: 'hockey' },
@@ -45,6 +47,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Banc of California Stadium' }, { name: 'BMO Stadium', from: '2023-01-19' }],
     location: [-118.2833, 34.0128],
+    ticketmasterIds: ['KovZ917A3c0'],
     capacity: [
       { seats: 22000, setup: 'soccer', note: 'MLS. MLS Cup 2022 drew 22,384.' },
       { seats: 24000, setup: 'concert', note: 'Estimated. The Oct 6, 2026 research found no source for an end-stage figure.' },
@@ -56,6 +59,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'SoFi Stadium' }],
     location: [-118.3392, 33.9535],
+    ticketmasterIds: ['KovZ917ACh0', 'KovZ917AJe0'],
     capacity: [{ seats: 70240, setup: 'football', fromYear: 2020, note: 'Standard setup. Expandable to 100,240 for the biggest events.' }],
     roof: 'covered',
   },
@@ -64,6 +68,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Intuit Dome' }],
     location: [-118.3415, 33.945],
+    ticketmasterIds: ['KovZ917Acq0', 'Za5ju3rKuqZDvWRX-N-s4vLnLnpbuyYw5q'],
     capacity: [{ seats: 18000, setup: 'basketball', fromYear: 2024, note: 'Design figure; 18,300 also reported. No end-stage concert figure found.' }],
     roof: 'indoor',
   },
@@ -72,6 +77,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'The Forum' }, { name: 'Kia Forum', from: '2022-04-04' }],
     location: [-118.342, 33.9582],
+    ticketmasterIds: ['KovZpZAEkn6A'],
     capacity: [
       { seats: 17500, setup: 'concert', note: 'Marketed as 17,500; up to 18,000 (reported)' },
       { seats: 17505, setup: 'basketball', note: 'Reported' },
@@ -87,6 +93,7 @@ export const VENUES: Record<string, Venue> = {
     // LA Phil: 39% came by bus in 2025 (26% in 2022), so about 61% by car or other (docs/archive/research/venue-egress-answer.md).
     carShare: 0.61,
     location: [-118.3391, 34.1122],
+    ticketmasterIds: ['KovZpZAFFvJA', 'KovZpZAFFvtA'],
     capacity: [{ seats: 17500, note: 'LA Phil. An older figure is 17,376.' }],
     roof: 'open',
   },
@@ -96,6 +103,7 @@ export const VENUES: Record<string, Venue> = {
     strained: true,
     names: [{ name: 'Rose Bowl' }],
     location: [-118.1676, 34.1613],
+    ticketmasterIds: ['KovZpZAEA66A', 'Z7r9jZadjY', 'KovZpZAal1tA', 'rZ7HnEZ17qk_f', 'Z7r9jZadz8'],
     capacity: [
       { seats: 89702, note: 'The stadium\'s all-seated figure. UCLA reports 91,136; aggregators say 92,542.' },
       { seats: 60000, setup: 'concert', note: 'Estimated: the City of Pasadena\'s expected crowd per Live Nation concert (Jan 18, 2023 agenda), docs/archive/research/concert-venue-figures-answer.md.' },
@@ -107,6 +115,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'StubHub Center' }, { name: 'Dignity Health Sports Park', from: '2019-01-01' }],
     location: [-118.2629, 33.8624],
+    ticketmasterIds: ['Za5ju3rKuqZDe3v6VgGnvCzDCXT-Ay_Rm8', 'Z7r9jZadao', 'Z7r9jZae-S', 'Z7r9jZadN4', 'KovZ917A-Mx'],
     capacity: [
       { seats: 27167, note: 'Soccer and football (the Galaxy round to 27,000)' },
       { seats: 30510, setup: 'concert', note: 'Reported' },
@@ -118,6 +127,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Angel Stadium' }],
     location: [-117.8817, 33.8003],
+    ticketmasterIds: ['KovZpZA7dkIA'],
     capacity: [{ seats: 45483, setup: 'baseball', note: 'Through 2018 (reported)' },
       { seats: 45517, fromYear: 2019, note: 'MLB' },
     ],
@@ -128,6 +138,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Pauley Pavilion' }],
     location: [-118.4468, 34.0702],
+    ticketmasterIds: ['KovZpZAEkveA'],
     capacity: [{ seats: 13800, setup: 'basketball', fromYear: 2012, note: 'Since the 2012 renovation (Wikipedia infobox, checked Oct 6, 2026).' }],
     roof: 'indoor',
   },
@@ -144,6 +155,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Honda Center' }],
     location: [-117.8765, 33.8078],
+    ticketmasterIds: ['KovZpakTme'],
     capacity: [
       { seats: 17174, setup: 'hockey', note: 'Hockey capacity in wide use. The arena site has also listed 17,732.' },
       { seats: 18336, setup: 'basketball', note: 'Reported' },
@@ -156,6 +168,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Santa Anita Park' }],
     location: [-118.0459, 34.139],
+    ticketmasterIds: ['KovZpZAId1lA'],
     capacity: [{ seats: 26000, setup: 'racing', note: 'Grandstand, seated (reported; an event listing says 18,897). Infield events up to 50,000.' }],
     roof: 'covered',
   },
@@ -165,6 +178,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Auto Club Raceway at Pomona' }, { name: 'In-N-Out Burger Pomona Dragstrip', from: '2023-03-30' }],
     // Approximate: OpenStreetMap has no point for the strip itself.
     location: [-117.771, 34.091],
+    ticketmasterIds: ['KovZpZAaEknA'],
     capacity: [{ seats: 40000, setup: 'racing', note: 'Reported' }],
     roof: 'open',
   },
@@ -181,6 +195,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Long Beach Arena' }],
     location: [-118.1884, 33.7641],
+    ticketmasterIds: ['KovZ917ARcA', 'KovZpZAJdIJA'],
     capacity: [
       { seats: 13000, note: 'Visit Long Beach; 13,500 also reported' },
       { seats: 14000, setup: 'basketball', note: 'Reported' },
@@ -195,6 +210,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'FivePoint Amphitheatre' }],
     // Approximate: the Great Park point, not the stage.
     location: [-117.7325, 33.6705],
+    ticketmasterIds: ['KovZ917A8gf'],
     capacity: [{ seats: 12000, setup: 'concert', note: 'Reported (12,280 also reported). Closed Oct 21, 2023.' }],
     roof: 'open',
   },
@@ -203,6 +219,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Drake Stadium' }],
     location: [-118.4485, 34.0721],
+    ticketmasterIds: ['KovZpZAEA61A'],
     capacity: [{ seats: 11700, setup: 'soccer', note: 'UCLA' }],
     roof: 'open',
   },
@@ -219,6 +236,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Fairplex' }],
     location: [-117.7669, 34.0871],
+    ticketmasterIds: ['KovZpZAaalvA', 'KovZ917AcjZ'],
     capacity: [
       { seats: 10000, note: 'Grandstand, seated (reported; Songkick lists 8,710)' },
       { seats: 15000, setup: 'concert', note: 'Up to 15,000 (reported)' },
@@ -230,6 +248,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Titan Stadium' }],
     location: [-117.887, 33.8866],
+    ticketmasterIds: ['ZFr9jZAv67', 'KovZ917AEUG'],
     capacity: [{ seats: 10000, setup: 'soccer', note: 'Cal State Fullerton' }],
     roof: 'open',
   },
@@ -238,6 +257,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Pacific Amphitheatre' }],
     location: [-117.9044, 33.6666],
+    ticketmasterIds: ['KovZpZAF6EaA'],
     capacity: [{ seats: 8200, setup: 'concert', note: 'OC Fair, after the 2013 rebuild; 8,042 also reported' }],
     roof: 'open',
   },
@@ -255,6 +275,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Anaheim Convention Center' }],
     location: [-117.9208, 33.8006],
+    ticketmasterIds: ['KovZpZAJE1eA', 'KovZpZAaaatA'],
     capacity: [{ seats: 7500, note: 'The arena, stadium-style. Halls A–D take 12,000–15,000 each in a theater setup.' }],
     roof: 'indoor',
   },
@@ -263,6 +284,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Microsoft Theater' }, { name: 'Peacock Theater', from: '2023-07-11' }],
     location: [-118.2671, 34.0445],
+    ticketmasterIds: ['KovZpaFSVe', 'KovZ917ARk0'],
     capacity: [{ seats: 7100, setup: 'concert', note: 'AEG' }],
     roof: 'indoor',
   },
@@ -271,6 +293,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Shrine Auditorium' }],
     location: [-118.2814, 34.0234],
+    ticketmasterIds: ['KovZpa3u7e'],
     capacity: [{ seats: 6300, setup: 'concert', note: 'The auditorium, seated (reported). The Expo Hall takes 5,000 standing and can run its own event the same night.' }],
     roof: 'indoor',
   },
@@ -279,6 +302,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'YouTube Theater' }],
     location: [-118.3368, 33.9518],
+    ticketmasterIds: ['KovZ917AJue', 'Za5ju3rKuqZDvOb3OUpwW54n8LGqwdkjqv'],
     capacity: [{ seats: 6000, setup: 'concert', fromYear: 2021, note: 'Full setup; 4,400 and 3,400 reduced setups' }],
     roof: 'indoor',
   },
@@ -288,6 +312,7 @@ export const VENUES: Record<string, Venue> = {
     strained: true,
     names: [{ name: 'Greek Theatre' }],
     location: [-118.2964, 34.1195],
+    ticketmasterIds: ['KovZpa2Hxe', 'rZ7HnEZ17f9vP'],
     capacity: [{ seats: 5900, setup: 'concert', note: '5,870 seated' }],
     roof: 'open',
   },
@@ -296,6 +321,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Los Angeles Tennis Center' }],
     location: [-118.4484, 34.0701],
+    ticketmasterIds: ['KovZpZAEkvdA'],
     capacity: [{ seats: 5800, setup: 'tennis', note: 'UCLA' }],
     roof: 'open',
   },
@@ -304,6 +330,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Championship Soccer Stadium' }],
     location: [-117.7393, 33.6746],
+    ticketmasterIds: ['KovZ917A2HV'],
     capacity: [
       { seats: 5000, setup: 'soccer', note: 'Orange County SC says "over 5,000"' },
       { seats: 5500, setup: 'soccer', fromYear: 2026, note: 'After the February 2026 expansion (reported)' },
@@ -315,6 +342,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Bren Events Center' }],
     location: [-117.8469, 33.6495],
+    ticketmasterIds: ['KovZpZAdEJtA'],
     capacity: [{ seats: 5430, setup: 'basketball', note: 'Reported, not confirmed with UC Irvine' }],
     roof: 'indoor',
   },
@@ -325,6 +353,7 @@ export const VENUES: Record<string, Venue> = {
     // name is shown from 2026 and older nights keep the old one.
     names: [{ name: 'Walter Pyramid' }, { name: 'LBS Financial Credit Union Pyramid', from: '2026-01-01' }],
     location: [-118.1144, 33.7873],
+    ticketmasterIds: ['KovZpZA1IakA'],
     capacity: [
       { seats: 4200, setup: 'basketball', note: 'Reported; 4,000 fixed seats' },
       { seats: 5000, setup: 'concert', note: 'Concerts and events, 5,000 or more (reported). On the line.' },
@@ -336,6 +365,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'The Belasco' }],
     location: [-118.2594, 34.0404],
+    ticketmasterIds: ['KovZpZAJvttA', 'KovZ917AVsO', 'Za5ju3rKuqZBGUligsG_7J_GlrY7VbhGQ', 'Za5ju3rKuqZBfH_w6eKaeUIFRBK9Q9Img'],
     capacity: [{ seats: 1500, setup: 'concert', note: 'Main theater, about 1,500. Under the map floor.' }],
     roof: 'indoor',
   },
@@ -344,6 +374,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'The Wiltern' }],
     location: [-118.3089, 34.0615],
+    ticketmasterIds: ['KovZpZAEAl6A'],
     capacity: [{
       seats: 1850,
       setup: 'concert',
@@ -356,6 +387,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Zipper Concert Hall' }],
     location: [-118.2497, 34.0538],
+    ticketmasterIds: ['KovZpZAAtddA'],
     capacity: [{
       seats: 415,
       setup: 'concert',
@@ -370,6 +402,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'columbus',
     names: [{ name: 'Ohio Stadium' }],
     location: [-83.0197, 40.0016],
+    ticketmasterIds: ['KovZpZAEAAeA'],
     capacity: [{ seats: 102780, setup: 'football', note: 'Listed capacity' }],
     roof: 'open',
   },
@@ -387,6 +420,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'MetLife Stadium' }],
     location: [-74.0745, 40.8135],
+    ticketmasterIds: ['KovZpakS7e', 'Za5ju3rKuqZDvHedXLG_oGLahekc5ec_GO'],
     capacity: [
       { seats: 82500, setup: 'football', note: 'Reported; NFL record crowd 83,367. The 2026 World Cup cut 1,740 corner seats for the tournament only.' },
     ],
@@ -399,6 +433,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.5,
     names: [{ name: 'Yankee Stadium' }],
     location: [-73.9262, 40.8296],
+    ticketmasterIds: ['KovZpZA6t77A', 'KovZ917Aai7', 'Za5ju3rKuqZDdHMIbmtFodB5uo6vs3BpOx', 'rZ7HnEZ17abC4', 'rZ7HnEZ17j0Gd'],
     capacity: [
       { seats: 46537, setup: 'baseball', note: 'Official (team media guide)' },
       { seats: 28743, setup: 'soccer', note: 'Reported; NYCFC standard setup, expandable to 47,309' },
@@ -413,6 +448,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.75,
     names: [{ name: 'Belmont Park' }],
     location: [-73.7226, 40.7144],
+    ticketmasterIds: ['KovZpZAdtlEA'],
     // Big-day grounds figure. Ordinary race days draw well under 5,000; only the Stakes and the Breeders' Cup matter.
     // The Belmont Stakes ran at Saratoga in 2024, 2025 and 2026 and returns here in 2027. The rebuilt track reopened Sep 2026;
     // the new grandstand (~10,000) finishes in early 2027. Shares its site and LIRR station with UBS Arena.
@@ -426,6 +462,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.6,
     names: [{ name: 'Citi Field' }],
     location: [-73.8458, 40.7571],
+    ticketmasterIds: ['KovZpZAalvtA', 'rZ7HnEZ17F44V'],
     capacity: [
       { seats: 41800, setup: 'baseball', note: 'Reported, 2009–2011' },
       { seats: 41922, setup: 'baseball', fromYear: 2012, note: 'Official; 45,000+ with standing room (record 45,186, 2013 All-Star Game)' },
@@ -439,6 +476,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.6,
     names: [{ name: 'Aqueduct Racetrack' }],
     location: [-73.8303, 40.672],
+    ticketmasterIds: ['KovZ917AQ3f'],
     // Live racing ended Jun 28, 2026 (moved to Belmont); the casino stays. fromYear is year-granular, but the research says the
     // historic figure was overstated for all of modern use anyway: the final race day drew 6,866.
     capacity: [{ seats: 17000, setup: 'racing', note: 'Reported, historic (40,000 total); badly overstated for modern racing days' },
@@ -453,6 +491,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.5,
     names: [{ name: 'Red Bull Arena' }, { name: 'Sports Illustrated Stadium', from: '2024-12-11' }],
     location: [-74.1503, 40.7368],
+    ticketmasterIds: ['Za5ju3rKuqZDeIxFViXaskgBXHSK4aoUhi', 'KovZpZAatEaA'],
     capacity: [{ seats: 25000, setup: 'soccer', note: 'Official' }],
     roof: 'covered',
   },
@@ -463,6 +502,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.37,
     names: [{ name: 'Arthur Ashe Stadium' }],
     location: [-73.8465, 40.7498],
+    ticketmasterIds: ['KovZpZA6taJA'],
     // The US Open's daily grounds crowd (record 73,201) is three times this room. A US Open day is sized by that figure on the event, not by Ashe.
     capacity: [{ seats: 23771, setup: 'tennis', note: 'Official; finals draw ~28,000 with standing room' }],
     // Retractable, like T-Mobile Park: closes for rain.
@@ -475,6 +515,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.2,
     names: [{ name: 'Madison Square Garden' }],
     location: [-73.9934, 40.7505],
+    ticketmasterIds: ['KovZpZA7AAEA', 'Za5ju3rKuqZDv8mMivxUACKtKhT7rDXfsr'],
     capacity: [
       { seats: 19812, setup: 'basketball', note: 'Reported' },
       { seats: 18006, setup: 'hockey', note: 'Reported' },
@@ -489,6 +530,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.9,
     names: [{ name: 'UBS Arena' }],
     location: [-73.7259, 40.711],
+    ticketmasterIds: ['KovZ917APye'],
     capacity: [
       { seats: 17255, setup: 'hockey', note: 'Reported; 17,250 also cited' },
       { seats: 19000, setup: 'concert', note: 'Reported' },
@@ -502,6 +544,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.25,
     names: [{ name: 'Barclays Center' }],
     location: [-73.9752, 40.6827],
+    ticketmasterIds: ['KovZ917AtP3', 'Za5ju3rKuqZBaV2aBp8v6MbnVFSuKiiAu'],
     capacity: [
       { seats: 17732, setup: 'basketball', note: 'Official' },
       { seats: 15795, setup: 'hockey', note: 'Official; Islanders 2015–2020' },
@@ -516,6 +559,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.45,
     names: [{ name: 'Prudential Center' }],
     location: [-74.1711, 40.7336],
+    ticketmasterIds: ['KovZpZAE7vaA', 'Z7r9jZadBb'],
     capacity: [
       { seats: 17625, setup: 'hockey', note: 'Official, before 2013' },
       { seats: 16592, setup: 'hockey', fromYear: 2013, note: 'Official' },
@@ -543,6 +587,7 @@ export const VENUES: Record<string, Venue> = {
     // ESPN says "Lawrence A. Wien Stadium"; the field is Robert K. Kraft Field.
     names: [{ name: 'Lawrence A. Wien Stadium' }, { name: 'Robert K. Kraft Field at Lawrence A. Wien Stadium' }],
     location: [-73.9165, 40.8732],
+    ticketmasterIds: ['KovZ917A5P0'],
     capacity: [{ seats: 17000, setup: 'football', note: 'Official (Columbia)' }],
     roof: 'open',
   },
@@ -553,6 +598,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Meadowlands Racetrack' }],
     location: [-74.0716, 40.8158],
+    ticketmasterIds: ['KovZpZA7AlEA'],
     // Under the floor as a building. Hambletonian Day (one a year; 16,465 in 2024, official) carries its own crowd figure on the event.
     capacity: [{ seats: 2200, setup: 'racing', note: 'Reported; grandstand seats only' }],
     roof: 'covered',
@@ -565,6 +611,7 @@ export const VENUES: Record<string, Venue> = {
     // Still open and lightly used (LI Nets, NY Riptide, a few concerts); Sands dropped its casino bid Apr 2025 and the future is undecided.
     names: [{ name: 'NYCB Live: Nassau Veterans Memorial Coliseum' }, { name: 'Nassau Veterans Memorial Coliseum', from: '2020-01-01' }],
     location: [-73.5904, 40.7229],
+    ticketmasterIds: ['Za5ju3rKuqZDdTyA5suaceLBwBivFRAWL5', 'KovZpZA7deEA', 'Za5ju3rKuqZBbiYeAyw41M5PEUNEA1d9Z'],
     capacity: [{ seats: 16170, setup: 'hockey', note: 'Reported, before the 2017 renovation' },
       { seats: 14000, fromYear: 2017, note: 'Estimated; 14,000 (amNY) vs 16,000 (NY Post), neither with a setup' },
     ],
@@ -581,6 +628,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Northwell at Jones Beach Theater', from: '2025-01-01' },
     ],
     location: [-73.5023, 40.601],
+    ticketmasterIds: ['KovZpZAE6eAA', 'KovZpZAE6ekA'],
     capacity: [{ seats: 14000, setup: 'concert', note: "Official (Live Nation, 2017); 15,000 reported. The separate Bay Stage holds 5,000 standing." }],
     roof: 'open',
   },
@@ -591,6 +639,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.15,
     names: [{ name: 'Forest Hills Stadium' }],
     location: [-73.8502, 40.7197],
+    ticketmasterIds: ['KovZpZA777nA'],
     capacity: [{ seats: 14000, setup: 'concert', note: 'Reported; some guides say up to 16,000' }],
     roof: 'open',
   },
@@ -600,6 +649,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.37,
     names: [{ name: 'Louis Armstrong Stadium' }],
     location: [-73.8454, 40.751],
+    ticketmasterIds: ['KovZpZAFFtkA'],
     capacity: [{ seats: 14000, setup: 'tennis', fromYear: 2018, note: 'Reported; rebuilt 2018. 14,069 could not be confirmed.' }],
     // Retractable.
     roof: 'covered',
@@ -611,6 +661,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.9,
     names: [{ name: 'Kenneth P. LaValle Stadium' }],
     location: [-73.1237, 40.9188],
+    ticketmasterIds: ['KovZ917AJ7J'],
     capacity: [
       { seats: 10300, setup: 'football', note: 'Official, 2002–2016' },
       { seats: 12300, setup: 'football', fromYear: 2017, note: 'Official; 10,300 seats plus 2,000 standing' },
@@ -624,6 +675,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.8,
     names: [{ name: 'James M. Shuart Stadium' }],
     location: [-73.5964, 40.7158],
+    ticketmasterIds: ['KovZpZAAn6kA'],
     capacity: [{ seats: 11929, setup: 'football', note: 'Reported, since 2013 (Hofstra lacrosse)' }],
     roof: 'open',
   },
@@ -634,6 +686,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.4,
     names: [{ name: 'MCU Park' }, { name: 'Maimonides Park', from: '2021-01-01' }],
     location: [-73.9845, 40.5745],
+    ticketmasterIds: ['Za5ju3rKuqZDvSUgiYRKoGeB-A8gO0FbMj', 'KovZpZAat1FA', 'rZ7HnEZ17pd4z'],
     capacity: [{ seats: 7000, setup: 'baseball', note: 'Official; up to 2,500 standing. 7,500 seats before 2016.' }],
     roof: 'open',
   },
@@ -653,6 +706,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.6,
     names: [{ name: 'Richmond County Bank Ballpark' }, { name: 'SIUH Community Park', from: '2022-04-01' }],
     location: [-74.0768, 40.6453],
+    ticketmasterIds: ['KovZpapJHe'],
     // The FerryHawks averaged 1,232 in 2025; it clears 5,000 only on fireworks nights.
     capacity: [{ seats: 7171, setup: 'baseball', note: 'Reported' }],
     roof: 'open',
@@ -664,6 +718,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.9,
     names: [{ name: 'Bethpage Ballpark' }, { name: 'Fairfield Properties Ballpark', from: '2021-01-01' }],
     location: [-73.1958, 40.7957],
+    ticketmasterIds: ['ZFr9jZ77aA'],
     capacity: [{ seats: 6002, setup: 'baseball', note: 'Official (Long Island Ducks)' }],
     roof: 'open',
   },
@@ -675,6 +730,7 @@ export const VENUES: Record<string, Venue> = {
     // Closed all of 2025 after failing inspection; the owner went bankrupt. Reopened as Pacha in June 2026, seasonal June–October.
     names: [{ name: 'The Brooklyn Mirage' }, { name: 'Pacha New York', from: '2026-06-01' }],
     location: [-73.9268, 40.7105],
+    ticketmasterIds: ['KovZ917AINX'],
     capacity: [{ seats: 6000, setup: 'concert', note: "Estimated; the Mirage's widely cited figure. Pacha has published none." }],
     roof: 'open',
   },
@@ -685,6 +741,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.15,
     names: [{ name: 'Radio City Music Hall' }],
     location: [-73.98, 40.76],
+    ticketmasterIds: ['KovZpZAE7vdA'],
     capacity: [{ seats: 5960, setup: 'concert', note: 'Reported; some listings say 6,015' }],
     roof: 'indoor',
   },
@@ -695,6 +752,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.5,
     names: [{ name: 'Carnesecca Arena' }],
     location: [-73.7948, 40.7225],
+    ticketmasterIds: ['KovZpZAEAdFA'],
     capacity: [{ seats: 5602, setup: 'basketball', note: "Official (St. John's); 5,260 reported" }],
     roof: 'indoor',
   },
@@ -711,6 +769,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'Infosys Theater at Madison Square Garden', from: '2026-02-02' },
     ],
     location: [-73.9934, 40.7505],
+    ticketmasterIds: ['KovZpZA7kvlA'],
     capacity: [{ seats: 5600, setup: 'concert', note: 'Official; 2,000–5,600 depending on the setup' }],
     roof: 'indoor',
   },
@@ -721,6 +780,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.15,
     names: [{ name: 'SummerStage' }, { name: 'Rumsey Playfield' }],
     location: [-73.9708, 40.7726],
+    ticketmasterIds: ['KovZpZA77eJA', 'KovZpZAdIFdA', 'ZFr9jZkdaa'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Official (City Parks Foundation); 5,500 reported after the 2019 renovation' }],
     roof: 'open',
   },
@@ -731,6 +791,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.1,
     names: [{ name: 'Icahn Stadium' }],
     location: [-73.9241, 40.7955],
+    ticketmasterIds: ['KovZ917AR21'],
     // The festival fields around it (Governors Ball's old home, Electric Zoo) have no fixed capacity; those are events placed as points.
     capacity: [{ seats: 5000, setup: 'track', note: 'Official (USATF); designed to take 5,000 more on bleachers' }],
     roof: 'covered',
@@ -751,6 +812,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Westchester County Center' }],
     location: [-73.7788, 41.0371],
+    ticketmasterIds: ['KovZpZAFdlAA'],
     // On the floor: 5,000 is the usual figure; Bandsintown lists 4,264.
     capacity: [{ seats: 5000, setup: 'basketball', note: 'Reported; 4,264 also listed' }],
     roof: 'indoor',
@@ -762,6 +824,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.45,
     names: [{ name: 'Jack Coffey Field' }, { name: 'Moglia Stadium at Jack Coffey Field' }],
     location: [-73.8836, 40.8615],
+    ticketmasterIds: ['KovZpZAtvE7A'],
     capacity: [{ seats: 7000, setup: 'football', note: 'Official (Fordham)' }],
     roof: 'open',
   },
@@ -772,6 +835,7 @@ export const VENUES: Record<string, Venue> = {
     // Estimated: MTS counts about 8,000 trolley riders on a sellout against 39,860 seats (docs/archive/research/venue-egress-answer.md).
     carShare: 0.8,
     location: [-117.1569, 32.7072],
+    ticketmasterIds: ['KovZpa4cFe', 'rZ7HnEZ17favg'],
     capacity: [{ seats: 39860, setup: 'baseball', note: 'Fixed seats (MLB). 42,445 is also reported and likely counts standing room.' }],
     roof: 'open',
   },
@@ -787,6 +851,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // Approximate: the site is now Snapdragon Stadium's park; OpenStreetMap has no point for the old building.
     location: [-117.1196, 32.7831],
+    ticketmasterIds: ['Za5ju3rKuqZDvz7cnKM04uLQHozY4yeGnN', 'KovZpZA6eaIA', 'KovZ917AIoi'],
     capacity: [
       { seats: 70561, setup: 'football', note: 'Chargers setup (reported)' },
       { seats: 54000, setup: 'football', fromYear: 2017, note: 'Aztecs setup after the Chargers left (reported)' },
@@ -798,6 +863,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'san-diego',
     names: [{ name: 'Snapdragon Stadium' }],
     location: [-117.1224, 32.7842],
+    ticketmasterIds: ['KovZ917AIoi', 'KovZ917AtnY'],
     capacity: [
       { seats: 35000, setup: 'football', note: 'SDSU (official); temporary end-zone seats take it to about 40,000' },
       { seats: 32000, setup: 'soccer', note: "The Wave's 2022 setup (reported)" },
@@ -811,6 +877,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Del Mar Fairgrounds' }],
     // Approximate: OpenStreetMap had no point for the grounds.
     location: [-117.262, 32.9765],
+    ticketmasterIds: ['KovZpZAEA6AA'],
     capacity: [
       { seats: 14000, note: 'Grandstand (reported; the setup is not stated)' },
       { seats: 40000, setup: 'concert', note: 'Festival grounds, per day, as KAABOO drew 2015–2019 (reported); a full-site buyout is 35,000' },
@@ -823,6 +890,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Embarcadero Marina Park North' }],
     // Approximate: the Wonderfront festival grounds, the park plus the piers.
     location: [-117.1715, 32.7083],
+    ticketmasterIds: ['KovZpaGS3e'],
     capacity: [{ seats: 30000, setup: 'concert', note: 'Festival, standing: the maximum occupancy across the sites (reported, 2019); organizers aim for 12,500–15,000 a day' }],
     roof: 'open',
   },
@@ -835,6 +903,7 @@ export const VENUES: Record<string, Venue> = {
       { name: 'North Island Credit Union Amphitheatre', from: '2018-11-01' },
     ],
     location: [-117.0058, 32.5881],
+    ticketmasterIds: ['KovZpa2WZe'],
     capacity: [{ seats: 20500, setup: 'concert', note: 'Reported (19,442 also reported): about 9,468 reserved seats and 10,024 on the lawn' }],
     roof: 'covered',
   },
@@ -844,6 +913,7 @@ export const VENUES: Record<string, Venue> = {
     // Valley View Casino Center through 2018; the Pechanga name took over late in 2018 (month not confirmed). The deal runs through 2026.
     names: [{ name: 'Valley View Casino Center' }, { name: 'Pechanga Arena', from: '2018-12-01' }],
     location: [-117.2123, 32.7553],
+    ticketmasterIds: ['KovZpZAEd1EA'],
     capacity: [
       { seats: 16100, note: 'Boxing and MMA (reported)' },
       { seats: 14500, setup: 'basketball', note: 'Reported' },
@@ -857,6 +927,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'san-diego',
     names: [{ name: 'Waterfront Park' }],
     location: [-117.1721, 32.7222],
+    ticketmasterIds: ['KovZ917Afcf'],
     capacity: [{ seats: 15000, setup: 'concert', note: 'Festival, standing, per day (CRSSD; reported)' }],
     roof: 'open',
   },
@@ -865,6 +936,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'san-diego',
     names: [{ name: 'Cox Arena' }, { name: 'Viejas Arena', from: '2009-07-01' }],
     location: [-117.0745, 32.7738],
+    ticketmasterIds: ['KovZpZA6AEdA'],
     capacity: [
       { seats: 12414, setup: 'basketball', note: 'SDSU (official)' },
       { seats: 12200, setup: 'concert', note: 'End-stage (reported); in the round 12,845' },
@@ -876,6 +948,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'san-diego',
     names: [{ name: 'The Rady Shell at Jacobs Park' }],
     location: [-117.1659, 32.7048],
+    ticketmasterIds: ['KovZ917AJ-O'],
     capacity: [{ seats: 10000, setup: 'concert', fromYear: 2021, note: 'The maximum, allowed six nights a year (official). Most nights seat 3,500–4,700, under the floor.' }],
     roof: 'open',
   },
@@ -884,6 +957,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'san-diego',
     names: [{ name: 'Frontwave Arena' }],
     location: [-117.3147, 33.2075],
+    ticketmasterIds: ['KovZ917AVkQ'],
     capacity: [
       { seats: 7500, setup: 'concert', fromYear: 2024, note: 'Reported' },
       { seats: 6000, setup: 'basketball', fromYear: 2024, note: 'Reported' },
@@ -896,6 +970,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'san-diego',
     names: [{ name: 'Torero Stadium' }],
     location: [-117.1837, 32.7731],
+    ticketmasterIds: ['KovZpapZee'],
     capacity: [{ seats: 6000, setup: 'soccer', note: 'Football and soccer (USD, official)' }],
     roof: 'open',
   },
@@ -904,6 +979,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'san-diego',
     names: [{ name: 'Jenny Craig Pavilion' }],
     location: [-117.1837, 32.7745],
+    ticketmasterIds: ['KovZpabZ1e'],
     capacity: [{ seats: 5100, setup: 'basketball', note: 'Basketball and volleyball (USD, official)' }],
     roof: 'indoor',
   },
@@ -912,6 +988,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'san-diego',
     names: [{ name: 'San Diego Convention Center' }],
     location: [-117.1619, 32.7064],
+    ticketmasterIds: ['KovZpZA1ntdA'],
     capacity: [{ seats: 6500, note: 'Hall H, seated (reported). Comic-Con sells about 135,000 badges over four days; no daily count is published.' }],
     roof: 'indoor',
   },
@@ -924,6 +1001,7 @@ export const VENUES: Record<string, Venue> = {
     // The field is "Alaska Airlines Field at Husky Stadium"; ESPN and the schedule say Husky Stadium.
     names: [{ name: 'Husky Stadium' }],
     location: [-122.3016, 47.6503],
+    ticketmasterIds: ['KovZpZAaIJtA'],
     capacity: [{ seats: 72132, setup: 'football', note: 'Washington Huskies (official, 2026); 70,083 before (reported)' }],
     // Cantilever roofs over most sideline seats; the field and ends are open (the research's reading).
     roof: 'covered',
@@ -935,6 +1013,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.6,
     names: [{ name: 'CenturyLink Field' }, { name: 'Lumen Field', from: '2020-11-19' }],
     location: [-122.3316, 47.5953],
+    ticketmasterIds: ['Za5ju3rKuqZDdE59ESVOgdTID_ipjiREie', 'KovZpZAEknnA', 'KovZpa34Ve'],
     capacity: [
       { seats: 68740, setup: 'football', note: 'Seahawks (official); expandable to 72,000 for the biggest events' },
       { seats: 37722, setup: 'soccer', note: 'Sounders setup (MLS). The Reign open about 10,000 lower-bowl seats (reported).' },
@@ -950,6 +1029,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.7,
     names: [{ name: 'Safeco Field' }, { name: 'T-Mobile Park', from: '2019-01-01' }],
     location: [-122.3323, 47.5915],
+    ticketmasterIds: ['KovZpZAEevAA'],
     capacity: [
       { seats: 47943, setup: 'baseball', note: 'Mariners (official, MLB.com 2026; 47,929 was the 2019 figure, 47,715 in 2018)' },
       { seats: 30144, setup: 'football', note: 'One-off football setup (reported)' },
@@ -964,6 +1044,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Pacific Raceways' }],
     location: [-122.1491, 47.3224],
+    ticketmasterIds: ['KovZpZAFFJkA'],
     capacity: [{ seats: 30000, setup: 'racing', note: 'Race days (reported). Standing and grandstand together.' }],
     roof: 'open',
     // Fallback until the measure runs: one road in, wooded hillside site (the research).
@@ -978,6 +1059,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Gorge Amphitheatre' }, { name: 'The Gorge' }],
     // Approximate (the research's figure); OpenStreetMap has no point for the amphitheatre itself.
     location: [-119.996, 47.1028],
+    ticketmasterIds: ['KovZpZAEkk1A', 'Za5ju3rKuqZBN4RFvXEvFFyQ0lpuAKpKN'],
     capacity: [
       { seats: 27500, setup: 'concert', note: "Seats and lawn (reported); 20,000 is also quoted. Festival days are capped at 25,000 by Grant County (official)." },
     ],
@@ -991,6 +1073,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.65,
     names: [{ name: 'Seattle Center' }],
     location: [-122.3497, 47.6213],
+    ticketmasterIds: ['KovZpZAFkktA', 'ZFr9jZekdA', 'KovZpZA1tJtA', 'Za5ju3rKuqZDemxf5QQYuaElLG2MSLrZqK', 'Za5ju3rKuqZDvhbIkxEqsZp5VnbeJUdK3o', 'KovZpZA1t1tA', 'KovZpZAFFJeA', 'KovZ917ANex', 'KovZpZA1tnIA'],
     capacity: [{ seats: 26000, setup: 'concert', note: 'A Bumbershoot-size festival on the grounds, standing (estimated)' }],
     roof: 'open',
   },
@@ -1001,6 +1084,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Tacoma Dome' }],
     location: [-122.427, 47.2369],
+    ticketmasterIds: ['KovZpa3zGe', 'KovZpZAFkvIA'],
     capacity: [
       { seats: 21000, note: 'Maximum (official)' },
       { seats: 20722, setup: 'basketball', note: 'Official' },
@@ -1016,6 +1100,7 @@ export const VENUES: Record<string, Venue> = {
     // KeyArena closed Oct 5, 2018 for the rebuild and reopened as Climate Pledge Arena in October 2021.
     names: [{ name: 'KeyArena' }, { name: 'Climate Pledge Arena', from: '2018-10-05' }],
     location: [-122.354, 47.6219],
+    ticketmasterIds: ['KovZpZAJdt1A', 'Za5ju3rKuqZDemxf5QQYuaElLG2MSLrZqK', 'Za5ju3rKuqZDvhbIkxEqsZp5VnbeJUdK3o', 'KovZ917Ahkk'],
     capacity: [
       { seats: 17072, setup: 'basketball', note: 'KeyArena (official)' },
       { seats: 15177, setup: 'hockey', note: 'KeyArena (reported)' },
@@ -1033,6 +1118,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.97,
     names: [{ name: 'White River Amphitheatre' }],
     location: [-122.1121, 47.2375],
+    ticketmasterIds: ['KovZpZAEkd1A'],
     capacity: [{ seats: 16000, setup: 'concert', note: 'Reserved seats under a roof plus lawn (official). 20,000 before 2015.' }],
     roof: 'open',
     strained: true,
@@ -1044,6 +1130,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.93,
     names: [{ name: 'Everett Memorial Stadium' }],
     location: [-122.2036, 47.9657],
+    ticketmasterIds: ['KovZpa9_ze'],
     capacity: [{ seats: 12000, setup: 'football', note: 'Reported' }],
     roof: 'open',
   },
@@ -1054,6 +1141,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Seattle Center Memorial Stadium' }, { name: 'Memorial Stadium' }],
     // Approximate: the north edge of Seattle Center; OpenStreetMap has no point while the site is a construction zone.
     location: [-122.348, 47.6228],
+    ticketmasterIds: ['KovZpZA1tntA'],
     capacity: [{ seats: 12000, setup: 'football', note: 'Before the rebuild (reported, Wikipedia infobox; the Oct 6, 2026 research could not confirm it). The new stadium: 6,500 seats, 8,000 capacity (official).' }],
     roof: 'open',
   },
@@ -1076,6 +1164,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.5,
     names: [{ name: 'Hec Edmundson Pavilion' }, { name: 'Alaska Airlines Arena at Hec Edmundson Pavilion' }, { name: 'Alaska Airlines Arena' }],
     location: [-122.3021, 47.6522],
+    ticketmasterIds: ['KovZpZAFkkIA'],
     capacity: [{ seats: 10000, setup: 'basketball', note: 'Washington Huskies (official)' }],
     roof: 'indoor',
   },
@@ -1086,6 +1175,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.92,
     names: [{ name: 'Xfinity Arena' }, { name: 'Angel of the Winds Arena', from: '2017-12-13' }],
     location: [-122.203, 47.9786],
+    ticketmasterIds: ['KovZpZAJEteA', 'KovZ917AhRn'],
     capacity: [
       { seats: 10000, setup: 'concert', note: 'Maximum, floor standing (official); 9,000 seated' },
       { seats: 8149, setup: 'hockey', note: 'Everett Silvertips (official)' },
@@ -1099,6 +1189,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Emerald Downs' }],
     location: [-122.2357, 47.3303],
+    ticketmasterIds: ['KovZpa98ee'],
     capacity: [{ seats: 9100, setup: 'racing', note: 'No published capacity; the track\'s biggest recent crowd, July 3, 2023 (estimated). Average race day about 3,000.' }],
     roof: 'covered',
   },
@@ -1109,6 +1200,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Evergreen Speedway' }],
     location: [-121.987, 47.8693],
+    ticketmasterIds: ['KovZpZAFFJvA'],
     capacity: [{ seats: 7500, setup: 'racing', note: '6,000–7,500 on race nights (reported)' }],
     roof: 'open',
   },
@@ -1120,6 +1212,7 @@ export const VENUES: Record<string, Venue> = {
     // Renamed in the fall of 2017; the exact day was not in the research.
     names: [{ name: 'ShoWare Center' }, { name: 'accesso ShoWare Center', from: '2017-09-01' }],
     location: [-122.24, 47.3877],
+    ticketmasterIds: ['KovZpZAktAaA', 'KovZpZAJvdEA'],
     capacity: [
       { seats: 7300, setup: 'concert', note: 'Maximum, end stage (official)' },
       { seats: 5887, setup: 'hockey', note: 'Seattle Thunderbirds (official)' },
@@ -1134,6 +1227,7 @@ export const VENUES: Record<string, Venue> = {
     // The building is the Lumen Field Event Center (CenturyLink Field Event Center until Nov 19, 2020).
     names: [{ name: 'WaMu Theater' }],
     location: [-122.3329, 47.5932],
+    ticketmasterIds: ['KovZpZAFFE7A'],
     capacity: [{ seats: 7000, setup: 'concert', note: 'General admission (official); more with the floor standing' }],
     roof: 'indoor',
   },
@@ -1144,6 +1238,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Marymoor Park' }, { name: 'Marymoor Live', from: '2023-01-01' }],
     location: [-122.1111, 47.6587],
+    ticketmasterIds: ['KovZpZA1JAkA'],
     capacity: [
       { seats: 5000, setup: 'concert', note: 'Official' },
       { seats: 6500, setup: 'concert', fromYear: 2023, note: 'After the 2023 expansion (official)' },
@@ -1157,6 +1252,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Cheney Stadium' }],
     location: [-122.4976, 47.2383],
+    ticketmasterIds: ['KovZpZAJeE1A'],
     capacity: [{ seats: 6500, setup: 'baseball', note: 'Tacoma Rainiers (official)' }],
     roof: 'open',
   },
@@ -1167,6 +1263,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Remlinger Farms' }],
     location: [-121.9154, 47.6365],
+    ticketmasterIds: ['KovZ917AioZ'],
     capacity: [{ seats: 6000, setup: 'concert', note: 'Up to 6,000 (reported)' }],
     roof: 'open',
     strained: true,
@@ -1182,6 +1279,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.7,
     names: [{ name: 'Soldier Field' }],
     location: [-87.6176, 41.8623],
+    ticketmasterIds: ['KovZpZAF6tIA', 'Za5ju3rKuqZDvOFjl5XkvAGDNWiF_6-ko-'],
     capacity: [
       { seats: 61500, setup: 'football', note: 'Reported (Ticketmaster and most outlets); Wikipedia says 62,500.' },
       { seats: 61500, setup: 'soccer', note: 'No separate figure; the football setup.' },
@@ -1196,6 +1294,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.37,
     names: [{ name: 'Wrigley Field' }],
     location: [-87.6556, 41.9481],
+    ticketmasterIds: ['KovZpZAFlktA'],
     capacity: [
       { seats: 41649, setup: 'baseball', note: 'Official (MLB.com, March 2026); 41,374 is an older figure.' },
       { seats: 41649, setup: 'concert', note: 'No official concert figure; a ticket aggregator lists 41,159. Estimated at the baseball setup.' },
@@ -1209,6 +1308,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.75,
     names: [{ name: 'U.S. Cellular Field' }, { name: 'Guaranteed Rate Field', from: '2016-11-01' }, { name: 'Rate Field', from: '2025-01-01' }],
     location: [-87.6338, 41.8297],
+    ticketmasterIds: ['KovZpaFPJe'],
     capacity: [{ seats: 40615, setup: 'baseball', note: 'Official (MLB.com, March 2026). A ~48,000 concert figure is low-confidence and not kept.' }],
     roof: 'open',
   },
@@ -1219,6 +1319,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.6,
     names: [{ name: 'Ryan Field' }],
     location: [-87.6908, 42.0669],
+    ticketmasterIds: ['KovZpZAFdEdA'],
     capacity: [
       { seats: 47130, setup: 'football', note: 'Reported: the old Ryan Field, closed after 2023. Northwestern played at Martin Stadium and Wrigley in 2024–25.' },
       { seats: 35000, setup: 'football', fromYear: 2026, note: 'Official (Northwestern); sold out at the Oct 2, 2026 opener. Concerts (up to six a year) expected from 2027; capacity unpublished.' },
@@ -1232,6 +1333,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.6,
     names: [{ name: 'FirstMerit Bank Pavilion' }, { name: 'Huntington Bank Pavilion at Northerly Island', from: '2017-01-09' }],
     location: [-87.6085, 41.8634],
+    ticketmasterIds: ['KovZpZAEA7IA'],
     capacity: [{ seats: 30000, setup: 'concert', note: 'Reported, seats plus lawn; the reduced seated layout is ~8,000.' }],
     roof: 'open',
   },
@@ -1243,6 +1345,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hollywood Casino Amphitheatre' }, { name: 'Credit Union 1 Amphitheatre', from: '2023-04-25' }],
     // Approximate (research); OpenStreetMap does not know the venue by name.
     location: [-87.785, 41.546],
+    ticketmasterIds: ['KovZpZAEktFA'],
     capacity: [{ seats: 28000, setup: 'concert', note: 'Official (Live Nation via WGN): about 11,000 reserved plus 17,000 lawn; Wikipedia says 28,739.' }],
     roof: 'covered',
   },
@@ -1253,6 +1356,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.93,
     names: [{ name: 'Toyota Park' }, { name: 'SeatGeek Stadium', from: '2018-11-01' }],
     location: [-87.8062, 41.7648],
+    ticketmasterIds: ['Za5ju3rKuqZDvVoV_OqsqAKDLW-OEB0mP3', 'KovZpZA6keJA'],
     capacity: [
       { seats: 20000, setup: 'soccer', note: 'Reported. No confirmed pro tenant in 2026: the Fire left after 2019, the Stars after 2025.' },
       { seats: 28000, setup: 'concert', note: 'Reported, concert or festival' },
@@ -1266,6 +1370,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.87,
     names: [{ name: 'United Center' }],
     location: [-87.6742, 41.8807],
+    ticketmasterIds: ['KovZpa2M7e', 'KovZpa2zIe'],
     capacity: [
       { seats: 20917, setup: 'basketball', note: 'Reported; 23,129 with standing room is the record' },
       { seats: 19717, setup: 'hockey', note: 'Reported; 22,428 with standing room is the record' },
@@ -1280,6 +1385,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.93,
     names: [{ name: 'Allstate Arena' }],
     location: [-87.8878, 42.0053],
+    ticketmasterIds: ['KovZpa2MCe'],
     capacity: [
       { seats: 18500, setup: 'concert', note: 'Reported; Wikipedia now shows 18,200–22,000' },
       { seats: 17500, setup: 'basketball', note: 'Reported' },
@@ -1294,6 +1400,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.8,
     names: [{ name: 'Ravinia Festival' }, { name: 'Ravinia' }],
     location: [-87.7754, 42.1579],
+    ticketmasterIds: ['KovZpZAanvEA'],
     capacity: [{ seats: 12758, setup: 'concert', note: 'Official (Ravinia via AP, July 2026): pavilion 2,840 after the 2026 renovation (was 3,350) plus ~9,918 lawn.' }],
     roof: 'covered',
   },
@@ -1304,6 +1411,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.65,
     names: [{ name: 'Northwestern Medicine Field at Martin Stadium' }, { name: 'Martin Stadium' }],
     location: [-87.6708, 42.0584],
+    ticketmasterIds: ['KovZ917AYhu', 'Z7r9jZaAnr'],
     capacity: [
       { seats: 12000, setup: 'football', note: "Official (Northwestern), bleachers plus boxes; built 2024 as a temporary home. Northwestern football's last game here was Sept 2026." },
       { seats: 12000, setup: 'soccer', note: 'The same stands; the Chicago Stars played the 2026 season here. 2027 unresolved.' },
@@ -1317,6 +1425,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Sears Centre Arena' }, { name: 'NOW Arena', from: '2020-09-01' }],
     location: [-88.2128, 42.0693],
+    ticketmasterIds: ['KovZpZAan6JA'],
     capacity: [
       { seats: 11218, setup: 'concert', note: 'Reported, center stage; 7,410 end stage' },
       { seats: 8700, setup: 'basketball', note: 'Reported' },
@@ -1340,6 +1449,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.65,
     names: [{ name: 'Wintrust Arena' }],
     location: [-87.6214, 41.8537],
+    ticketmasterIds: ['KovZ917A2S0'],
     capacity: [{ seats: 10387, setup: 'basketball', note: 'Official (DePaul / MPEA). Concert configuration not published.' }],
     roof: 'indoor',
   },
@@ -1350,6 +1460,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.6,
     names: [{ name: 'UIC Pavilion' }, { name: 'Credit Union 1 Arena', from: '2018-11-01' }],
     location: [-87.6561, 41.8747],
+    ticketmasterIds: ['Za5ju3rKuqZDea8OFFnJ-5byyCu1H5yLOV', 'KovZpa2Bpe'],
     capacity: [
       { seats: 8000, setup: 'basketball', note: 'Official (UIC)' },
       { seats: 10300, setup: 'concert', note: 'Official (UIC); 10,075 end stage' },
@@ -1373,6 +1484,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Boomers Stadium' }, { name: 'Wintrust Field', from: '2020-01-01' }],
     location: [-88.1177, 41.9931],
+    ticketmasterIds: ['KovZpZA7et1A'],
     capacity: [{ seats: 7365, setup: 'baseball', note: 'Reported (citing the team): 5,665 fixed plus lawn; record crowd 8,297' }],
     roof: 'open',
   },
@@ -1383,6 +1495,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.65,
     names: [{ name: 'Welsh-Ryan Arena' }],
     location: [-87.6924, 42.0669],
+    ticketmasterIds: ['KovZpaozFe'],
     capacity: [
       { seats: 8117, setup: 'basketball', note: 'Reported, before the 2018 renovation' },
       { seats: 7039, setup: 'basketball', fromYear: 2019, note: 'Reported, since Nov 2018' },
@@ -1396,6 +1509,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Jones Convocation Center' }, { name: 'Emil and Patricia Jones Convocation Center' }],
     location: [-87.6084, 41.7165],
+    ticketmasterIds: ['KovZpZAa1ltA'],
     capacity: [{ seats: 7000, setup: 'basketball', note: 'Reported. Chicago State crowds are often in the hundreds; the building qualifies, the games sit under the floor.' }],
     roof: 'indoor',
   },
@@ -1406,6 +1520,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.55,
     names: [{ name: 'The Salt Shed' }],
     location: [-87.6592, 41.9067],
+    ticketmasterIds: ['KovZ917AI5F', 'KovZ917Amf0'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Reported (Pollstar): the outdoor Fairgrounds, standing; Wikipedia says 5,500. The indoor Shed (3,600) is under the floor.' }],
     roof: 'open',
   },
@@ -1416,6 +1531,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.45,
     names: [{ name: 'Aragon Ballroom' }, { name: 'Byline Bank Aragon Ballroom', from: '2019-01-01' }],
     location: [-87.658, 41.9694],
+    ticketmasterIds: ['KovZpZAFdJnA'],
     capacity: [{ seats: 5000, setup: 'concert', note: 'Reported (Ticketmaster), general admission; some sources say 4,800–4,900' }],
     roof: 'indoor',
   },
@@ -1436,6 +1552,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Chicagoland Speedway' }],
     location: [-88.0588, 41.4744],
+    ticketmasterIds: ['KovZpZAa1laA'],
     capacity: [{ seats: 47000, setup: 'racing', note: "Reported, after a cut from 75,000; the 2026 Cup race sold out. One weekend a year (June 25–27, 2027). The research's one addition to the boundary; in Will County." }],
     roof: 'open',
   },
@@ -1449,6 +1566,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: "AT&T Stadium" }],
     location: [-97.0928, 32.7479],
+    ticketmasterIds: ['KovZpZAJvndA'],
     capacity: [
       { seats: 80000, setup: 'football', standing: 100000, note: 'Reported, seated; 100,000+ with standing-room platforms; NFL record 105,121 (2009)' },
       { seats: 80000, setup: 'soccer', note: "The 2026 World Cup drew about 70,000 per match, not FIFA's listed 94,000; the seated bowl is the ceiling" },
@@ -1463,6 +1581,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.92,
     names: [{ name: 'Cotton Bowl Stadium' }, { name: 'Cotton Bowl' }],
     location: [-96.7596, 32.7796],
+    ticketmasterIds: ['KovZpZAdlEJA'],
     capacity: [
       { seats: 92100, setup: 'football', note: 'Official (Fair Park). Inside the State Fair grounds Sep 25 – Oct 18, 2026' },
       { seats: 92100, setup: 'soccer', note: 'No published soccer configuration; Trinity FC averages about 3,000. Atlético Dallas (USL) joins 2027.' },
@@ -1476,6 +1595,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Texas Motor Speedway' }],
     location: [-97.2816, 33.0371],
+    ticketmasterIds: ['KovZpa3g7e'],
     capacity: [{ seats: 75000, setup: 'racing', note: 'Reported (2026), after cuts from about 150,000; the May 3, 2026 Cup race sold out. One race weekend a year.' },
     ],
     roof: 'open',
@@ -1499,6 +1619,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.97,
     names: [{ name: 'Globe Life Field' }],
     location: [-97.0841, 32.7476],
+    ticketmasterIds: ['KovZ917A-X0'],
     capacity: [
       { seats: 40300, setup: 'baseball', note: 'Official (the Rangers); 40,518 has no source; record 42,500 (2023 World Series)' },
       { seats: 43598, setup: 'concert', note: 'Reported: the Morgan Wallen record (Oct 2022), as the ceiling' },
@@ -1512,6 +1633,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.8,
     names: [{ name: 'Gerald J. Ford Stadium' }, { name: 'Ford Stadium' }],
     location: [-96.7828, 32.8378],
+    ticketmasterIds: ['KovZpZAaEnkA'],
     capacity: [
       { seats: 32000, setup: 'football', note: 'Official (SMU), before the 2024 end zone' },
       { seats: 33200, setup: 'football', fromYear: 2024, note: 'Official (SMU, 2026)' },
@@ -1525,6 +1647,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.83,
     names: [{ name: 'Apogee Stadium' }, { name: 'DATCU Stadium', from: '2023-07-31' }],
     location: [-97.1594, 33.2039],
+    ticketmasterIds: ['KovZpZAFAnAA'],
     capacity: [
       { seats: 30850, setup: 'football', note: 'Reported, 2011–2023' },
       { seats: 30100, setup: 'football', fromYear: 2024, note: 'Reported, 2024 on' },
@@ -1538,6 +1661,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Globe Life Park in Arlington' }, { name: 'Choctaw Stadium', from: '2021-08-25' }],
     location: [-97.0826, 32.7513],
+    ticketmasterIds: ['KovZpZA1IEvA'],
     capacity: [
       { seats: 25000, setup: 'football', note: 'Reported, the football and soccer configuration' },
       { seats: 25000, setup: 'soccer', note: 'Reported' },
@@ -1552,6 +1676,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.9,
     names: [{ name: 'American Airlines Center' }],
     location: [-96.8103, 32.7905],
+    ticketmasterIds: ['KovZpZAJ67eA'],
     capacity: [
       { seats: 19200, setup: 'basketball', note: 'Reported; 21,146 with standing room' },
       { seats: 18532, setup: 'hockey', note: 'Reported; 19,323 with standing room' },
@@ -1566,6 +1691,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.92,
     names: [{ name: 'Gexa Energy Pavilion' }, { name: 'Starplex Pavilion', from: '2017-01-01' }, { name: 'Dos Equis Pavilion', from: '2018-04-20' }],
     location: [-96.7563, 32.7751],
+    ticketmasterIds: ['KovZpZAEAFeA'],
     capacity: [
       { seats: 20000, setup: 'concert', note: 'Reported: about 7,500 covered seats plus 12,500 lawn' },
     ],
@@ -1578,6 +1704,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Toyota Stadium' }],
     location: [-96.8354, 33.1542],
+    ticketmasterIds: ['KovZpZAJedaA'],
     capacity: [
       { seats: 20500, setup: 'soccer', note: 'Reported, the pre-renovation sellable maximum (19,096 seated bowl)' },
       { seats: 15000, setup: 'soccer', fromYear: 2025, note: 'Estimated (research): about 11,000 in 2025 during the $182M renovation, 15,000–20,000 reported for 2026–27; no official figure. 22,500–23,900 after Q1 2028.' },
@@ -1593,6 +1720,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Dickies Arena' }],
     location: [-97.3685, 32.7411],
+    ticketmasterIds: ['KovZ917AOAw'],
     capacity: [
       { seats: 14000, setup: 'concert', note: 'Official, up to' },
       { seats: 13300, setup: 'basketball', note: 'Official; Wikipedia says 13,550' },
@@ -1607,6 +1735,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Ford Center at The Star' }, { name: 'The Star' }],
     location: [-96.829, 33.1101],
+    ticketmasterIds: ['KovZ917A0sf'],
     capacity: [
       { seats: 12000, setup: 'football', note: "Reported; the Cowboys' practice facility, Frisco ISD football and events" },
     ],
@@ -1619,6 +1748,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Dr Pepper Ballpark' }, { name: 'Riders Field', from: '2021-01-01' }],
     location: [-96.8197, 33.0984],
+    ticketmasterIds: ['KovZpZAFAtnA'],
     capacity: [
       { seats: 10316, setup: 'baseball', note: 'Reported; 10,216 by MiLB; 7,748 fixed seats plus a berm' },
     ],
@@ -1656,6 +1786,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.92,
     names: [{ name: 'Fair Park Coliseum' }],
     location: [-96.7572, 32.7792],
+    ticketmasterIds: ['KovZpZAF6EEA'],
     capacity: [
       { seats: 8500, setup: 'concert', note: 'Reported (OVG360), end stage; 9,552 maximum; 5,768 seated' },
     ],
@@ -1668,6 +1799,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.97,
     names: [{ name: 'Curtis Culwell Center' }],
     location: [-96.642, 32.9594],
+    ticketmasterIds: ['KovZpZA6AEkA'],
     capacity: [
       { seats: 6860, setup: 'basketball', note: 'Reported, seated; 8,500 standing' },
     ],
@@ -1680,6 +1812,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.92,
     names: [{ name: 'Irving Music Factory' }, { name: 'The Pavilion at Toyota Music Factory', from: '2017-09-01' }, { name: 'Toyota Music Factory' }],
     location: [-96.9448, 32.8742],
+    ticketmasterIds: ['Za5ju3rKuqZDvc1b2OF6s5xzFania9J6TC', 'KovZ917A2Q7'],
     capacity: [
       { seats: 8000, setup: 'concert', note: 'Official: the indoor theater plus lawn; 4,000 all-seated indoors (under the floor in winter)' },
     ],
@@ -1692,6 +1825,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Lone Star Park' }],
     location: [-96.9882, 32.7747],
+    ticketmasterIds: ['KovZ917A0XB', 'KovZ917AcPU', 'KovZ917A5mV'],
     capacity: [{ seats: 8000, setup: 'racing', note: 'Reported, an older grandstand figure; about 700,000 visitors a year. Thoroughbred meet April–July.' },
     ],
     roof: 'covered',
@@ -1703,6 +1837,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Grand Prairie Stadium' }, { name: 'QuikTrip Park' }],
     location: [-96.986, 32.7683],
+    ticketmasterIds: ['KovZpZA1vdtA'],
     capacity: [{ seats: 7200, setup: 'cricket', note: 'Reported: cricket (Texas Super Kings, Major League Cricket); expandable to 15,000' },
     ],
     roof: 'open',
@@ -1714,6 +1849,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Texas Health Mansfield Stadium' }, { name: 'Mansfield Stadium' }],
     location: [-97.1395, 32.565],
+    ticketmasterIds: ['Z7r9jZakrm'],
     capacity: [
       { seats: 7000, setup: 'soccer', note: 'Reported; 7,500 by the city. Opened summer 2026; North Texas SC (MLS Next Pro). Coordinates approximate (research).' },
     ],
@@ -1726,6 +1862,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'College Park Center' }],
     location: [-97.1081, 32.7305],
+    ticketmasterIds: ['ZFr9jZaa77'],
     capacity: [
       { seats: 7000, setup: 'basketball', note: 'Reported; the Wings through 2026, UTA basketball' },
     ],
@@ -1738,6 +1875,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.8,
     names: [{ name: 'Moody Coliseum' }],
     location: [-96.7807, 32.8404],
+    ticketmasterIds: ['KovZpapvYe'],
     capacity: [
       { seats: 7000, setup: 'basketball', note: 'Official (SMU)' },
     ],
@@ -1750,6 +1888,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Allen Event Center' }, { name: 'Credit Union of Texas Event Center', from: '2021-10-15' }],
     location: [-96.6546, 33.1275],
+    ticketmasterIds: ['KovZpa2Wfe'],
     capacity: [
       { seats: 7080, setup: 'concert', note: 'Reported, in the round; 6,200 end stage' },
       { seats: 6200, setup: 'hockey', note: 'Estimated (research): the end-stage figure as a proxy; the Allen Americans (ECHL)' },
@@ -1763,6 +1902,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Ed & Rae Schollmaier Arena' }, { name: 'Schollmaier Arena' }],
     location: [-97.3667, 32.7088],
+    ticketmasterIds: ['ZFr9jZd6F6'],
     capacity: [
       { seats: 6800, setup: 'basketball', note: 'Reported; an 8,500 figure looks like an error' },
     ],
@@ -1787,6 +1927,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.9,
     names: [{ name: "Billy Bob's Texas" }],
     location: [-97.3478, 32.7909],
+    ticketmasterIds: ['KovZpZAJ6dnA'],
     capacity: [
       { seats: 6000, setup: 'concert', note: 'Official, up to' },
     ],
@@ -1799,6 +1940,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Dr Pepper Arena' }, { name: 'Comerica Center' }],
     location: [-96.8194, 33.1006],
+    ticketmasterIds: ['KovZpZA6AEAA'],
     capacity: [
       { seats: 6000, setup: 'concert', note: 'Official (Visit Frisco), seated; 7,000 standing' },
       { seats: 4500, setup: 'basketball', note: 'Reported, older: the Texas Legends (G League) sit under the floor' },
@@ -1826,6 +1968,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.35,
     names: [{ name: 'Centre Bell' }, { name: 'Bell Centre' }],
     location: [-73.5692, 45.496],
+    ticketmasterIds: ['KovZpauRJe'],
     capacity: [
       { seats: 21288, setup: 'hockey', note: 'Reported, 2015–17' },
       { seats: 21302, setup: 'hockey', fromYear: 2017, note: 'Reported, 2017–21' },
@@ -1843,6 +1986,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.3,
     names: [{ name: 'Stade olympique' }, { name: 'Olympic Stadium' }],
     location: [-73.5516, 45.5578],
+    ticketmasterIds: ['KovZ917AVK7'],
     capacity: [
       { seats: 56000, setup: 'football', note: 'Official (Montréal olympique). Closed to events since mid-December 2023; reopening 2028 with a new roof and a reshaped lower bowl (capacity not announced).' },
       { seats: 56000, setup: 'soccer', note: 'The same bowl; record 61,004 (2016 MLS conference final)' },
@@ -1856,6 +2000,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.45,
     names: [{ name: 'Stade Saputo' }, { name: 'Saputo Stadium' }],
     location: [-73.5526, 45.5631],
+    ticketmasterIds: ['KovZpZAFFElA'],
     capacity: [
       { seats: 20801, setup: 'soccer', note: 'Reported, after the 2012 expansion (low confidence)' },
       { seats: 19619, setup: 'soccer', fromYear: 2019, note: 'Official (CF Montréal)' },
@@ -1869,6 +2014,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.65,
     names: [{ name: 'Place Bell' }],
     location: [-73.7217, 45.5558],
+    ticketmasterIds: ['KovZ917A227'],
     capacity: [
       { seats: 10172, setup: 'hockey', note: 'Reported: announced sellouts, PWHL 2024–26; 10,062 in earlier listings. The Rocket (AHL) and Victoire (PWHL).' },
       { seats: 10000, setup: 'concert', note: 'Reported: a 10,000-seat amphitheatre that converts to a theatre; 10,500 not confirmed' },
@@ -1882,6 +2028,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.35,
     names: [{ name: 'Stade Percival-Molson' }, { name: 'Percival Molson Memorial Stadium' }, { name: 'Molson Stadium' }],
     location: [-73.5808, 45.5102],
+    ticketmasterIds: ['KovZpZAFFAJA'],
     capacity: [
       { seats: 25012, setup: 'football', note: 'Official (McGill), after the 2010 expansion' },
       { seats: 23420, setup: 'football', fromYear: 2014, note: 'Reported, after seats were removed in 2014' },
@@ -1896,6 +2043,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.35,
     names: [{ name: 'Stade Uniprix' }, { name: 'Stade IGA', from: '2018-04-01' }, { name: 'IGA Stadium' }],
     location: [-73.6267, 45.533],
+    ticketmasterIds: ['KovZ917AQsZ', 'KovZ917A4df', 'KovZpZAFlaeA', 'Za5ju3rKuqZDdnNKoydOyGdhwTHTHZ4Cio'],
     capacity: [{ seats: 11991, setup: 'tennis', note: "Reported (Canadian Press, 2026): centre court; the grounds average about 24,000 a day during the National Bank Open (men's event in even years, women's in odd). A ~15,000-seat roofed court is planned, no dates." },
     ],
     roof: 'open',
@@ -1907,6 +2055,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.35,
     names: [{ name: 'Stade du CEPSUM' }, { name: 'CEPSUM Stadium' }],
     location: [-73.6114, 45.5089],
+    ticketmasterIds: ['KovZ917AV1e'],
     capacity: [
       { seats: 5000, setup: 'football', note: 'Official (Tourisme Montréal); 5,100 by the RSEQ. The Carabins (U Sports).' },
       { seats: 5000, setup: 'soccer', note: 'The same stands' },
@@ -1920,6 +2069,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.5,
     names: [{ name: 'Complexe sportif Claude-Robillard' }, { name: 'Claude-Robillard Sports Complex' }],
     location: [-73.6362, 45.5526],
+    ticketmasterIds: ['KovZ917AV1t'],
     capacity: [{ seats: 6375, setup: 'soccer', note: "Official (Tourisme Montréal): the outdoor track stadium's bleachers; ticketed meets only. Renovations through 2029; stays open." },
     ],
     roof: 'open',
@@ -1929,6 +2079,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'tampa',
     names: [{ name: 'Amalie Arena' }],
     location: [-82.4518, 27.9427],
+    ticketmasterIds: ['Za5ju3rKuqZDduhSs3K_AaWBzwROtKPBXy'],
     capacity: [{ seats: 19420, setup: 'basketball', note: 'NCAA figure for the 2025 Women’s Final Four' }],
     roof: 'indoor',
   },
@@ -1937,6 +2088,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'phoenix',
     names: [{ name: 'Mortgage Matchup Center' }],
     location: [-112.0712, 33.4457],
+    ticketmasterIds: ['KovZpZAE617A', 'KovZ917Ami1'],
     capacity: [{ seats: 16795, setup: 'basketball', note: 'NCAA figure for the 2026 Women’s Final Four' }],
     roof: 'indoor',
   },
@@ -1947,6 +2099,7 @@ export const VENUES: Record<string, Venue> = {
     // Estimated by subtraction: the city put walking, biking and transit at 10–15% before opening (docs/archive/research/venue-egress-answer.md).
     carShare: 0.87,
     location: [-121.4996, 38.5802],
+    ticketmasterIds: ['KovZpZAEF76A'],
     capacity: [{ seats: 17600, setup: 'basketball', note: 'About 17,600 for basketball' }],
     roof: 'indoor',
   },
@@ -1955,6 +2108,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'boston',
     names: [{ name: 'Roadrunner' }],
     location: [-71.1428, 42.3564],
+    ticketmasterIds: ['Z7r9jZa7rs'],
     capacity: [{ seats: 3500, setup: 'concert', note: 'About 3,500. Estimated.' }],
     roof: 'indoor',
   },
@@ -1965,6 +2119,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Empire Polo Club' }],
     location: [-116.2372, 33.6803],
+    ticketmasterIds: ['KovZpZA1FtFA'],
     capacity: [
       { seats: 99000, setup: 'concert', note: 'Festival grounds in Indio: the city\'s daily cap, standing, not a seat count.' },
       { seats: 125000, setup: 'concert', fromYear: 2017, note: 'The daily cap after Indio raised it; 2018 sold out at this figure.' },
@@ -1976,6 +2131,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     names: [{ name: 'Ventura Theater' }],
     location: [-119.2978, 34.2805],
+    ticketmasterIds: ['KovZpapT1e'],
     capacity: [{ seats: 1000, setup: 'concert', note: 'About 1,000. Estimated. Ventura is part of Los Angeles here.' }],
     roof: 'indoor',
   },
@@ -1991,6 +2147,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.75,
     names: [{ name: 'Mercedes-Benz Stadium' }],
     location: [-84.4008, 33.7554],
+    ticketmasterIds: ['KovZpZAEdJaA', 'Za5ju3rKuqZDdZpd_5wxtkFl6OaoEUt3cV', 'KovZ917AOpV'],
     capacity: [
       { seats: 71000, setup: 'football', note: 'Official (Falcons). 75,000 expanded for the SEC Championship, Peach Bowl and other neutral-site games; record 79,330 (2022 Peach Bowl).' },
       { seats: 42500, setup: 'soccer', note: 'Official, the upper-bowl curtain for Atlanta United; the full bowl opens for big matches (record 73,019, 2018 MLS Cup, reported).' },
@@ -2028,6 +2185,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.96,
     names: [{ name: 'SunTrust Park' }, { name: 'Truist Park', from: '2020-01-14' }],
     location: [-84.4676, 33.8907],
+    ticketmasterIds: ['KovZpZAtv11A'],
     capacity: [{ seats: 41084, setup: 'baseball', note: 'Reported (the Braves\' figure via Ticketmaster and Populous); 41,149 at the 2017 opening' }],
     roof: 'open',
   },
@@ -2038,6 +2196,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.82,
     names: [{ name: 'Georgia State Stadium' }, { name: 'Center Parc Stadium', from: '2020-08-01' }],
     location: [-84.3887, 33.7355],
+    ticketmasterIds: ['KovZ917A8b7'],
     capacity: [{ seats: 24333, setup: 'football', note: 'Reported. Turner Field (49,586, baseball, 1997–2016) is history, not a setup.' }],
     roof: 'open',
   },
@@ -2048,6 +2207,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.84,
     names: [{ name: 'Philips Arena' }, { name: 'State Farm Arena', from: '2018-08-29' }],
     location: [-84.3964, 33.7574],
+    ticketmasterIds: ['KovZpa2Xke'],
     capacity: [
       { seats: 18047, setup: 'basketball', note: 'Reported, 2014–17' },
       { seats: 16600, setup: 'basketball', fromYear: 2018, note: 'Official at the 2018 reopening' },
@@ -2063,6 +2223,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Lakewood Amphitheatre' }, { name: 'Cellairis Amphitheatre at Lakewood', from: '2017-11-03' }, { name: 'Lakewood Amphitheatre', from: '2022-01-01' }],
     location: [-84.396, 33.7042],
+    ticketmasterIds: ['KovZpZAEkeFA'],
     capacity: [{ seats: 18920, setup: 'concert', note: 'Reported: ~7,000 seats and ~12,000 lawn; Live Nation rounds to 19,000. The Cellairis name came off about 2021 (end date not confirmed; 2022 used here).' }],
     roof: 'covered',
   },
@@ -2073,6 +2234,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Infinite Energy Arena' }, { name: 'Gas South Arena', from: '2021-05-25' }],
     location: [-84.0938, 33.9916],
+    ticketmasterIds: ['KovZpZAEkdvA'],
     capacity: [
       { seats: 13000, setup: 'concert', note: 'Official' },
       { seats: 12750, setup: 'basketball', note: 'Reported' },
@@ -2087,6 +2249,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.98,
     names: [{ name: 'Verizon Wireless Amphitheatre' }, { name: 'Verizon Amphitheatre', from: '2017-01-01' }, { name: 'Ameris Bank Amphitheatre', from: '2019-01-01' }],
     location: [-84.3063, 34.0544],
+    ticketmasterIds: ['KovZpZAFFdlA'],
     capacity: [{ seats: 12000, setup: 'concert', note: 'Official (Live Nation); 12,500 max standing and 7,500 seated reported' }],
     roof: 'covered',
   },
@@ -2097,6 +2260,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Fifth Third Bank Stadium' }, { name: 'Fifth Third Stadium' }],
     location: [-84.5678, 34.0288],
+    ticketmasterIds: ['KovZpZA116IA'],
     capacity: [
       { seats: 11040, setup: 'football', note: 'Official (KSU listing; equals the record). 8,300 permanent seats.' },
       { seats: 16316, setup: 'concert', note: 'Reported: seats plus ~8,000 on the field' },
@@ -2110,6 +2274,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.99,
     names: [{ name: 'Coolray Field' }, { name: 'Gwinnett Field', from: '2026-01-01' }],
     location: [-83.9925, 34.0407],
+    ticketmasterIds: ['Za5ju3rKuqZDdztf_g1FuZQILs8zHQYOWX', 'Za5ju3rKuqZBYfa7L90AZwBY6U3R4Pu5k', 'Za5ju3rKuqZDvgVh5HYIvdG5QuehFjWKUo'],
     capacity: [{ seats: 10427, setup: 'baseball', note: 'Official (MiLB). The Stripers averaged 2,694 in 2025, so most nights sit under the floor.' }],
     roof: 'open',
   },
@@ -2128,6 +2293,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.65,
     names: [{ name: 'McCamish Pavilion' }],
     location: [-84.3928, 33.7806],
+    ticketmasterIds: ['KovZpZAJ7ktA'],
     capacity: [{ seats: 8600, setup: 'basketball', note: 'Official (Georgia Tech): 6,935 court level and 1,665 balcony' }],
     roof: 'indoor',
   },
@@ -2138,6 +2304,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.73,
     names: [{ name: 'GSU Convocation Center' }],
     location: [-84.3887, 33.7425],
+    ticketmasterIds: ['KovZ917AIox'],
     capacity: [
       { seats: 7300, setup: 'basketball', fromYear: 2022, note: 'Official (Georgia State); opened September 2022' },
       { seats: 8000, setup: 'concert', fromYear: 2022, note: 'Official' },
@@ -2157,6 +2324,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     // OpenStreetMap knows the street address (4469 Stella Drive), not the stage; the research read 33.876, -84.396.
     location: [-84.3965, 33.878],
+    ticketmasterIds: ['KovZpZAEkAaA'],
     capacity: [{ seats: 6900, setup: 'concert', note: 'Reported; Live Nation says "nearly 7,000", mostly reserved and table seating' }],
     roof: 'open',
   },
@@ -2174,6 +2342,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Wolf Creek Amphitheater' }],
     // Approximate: 3025 Merk Road SW, South Fulton; neither OpenStreetMap nor the research gave the building. Geocode before it matters.
     location: [-84.569, 33.665],
+    ticketmasterIds: ['KovZpa3fme'],
     capacity: [{ seats: 5420, setup: 'concert', note: 'Reported (venue listing); 5,116 seated, older listings 5,200–5,300' }],
     roof: 'open',
   },
@@ -2205,6 +2374,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Gateway Center Arena at College Park' }, { name: 'Gateway Center' }],
     location: [-84.4597, 33.6468],
+    ticketmasterIds: ['KovZ917A-mZ'],
     capacity: [
       { seats: 3500, setup: 'basketball', fromYear: 2019, note: 'Official. Dream home games sit under the floor (Kylie, Oct 7); their State Farm Arena games count.' },
       { seats: 5000, setup: 'concert', fromYear: 2019, note: 'Official' },
@@ -2222,6 +2392,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: "Levi's Stadium" }],
     location: [-121.97, 37.403],
+    ticketmasterIds: ['KovZpZAJaFkA'],
     capacity: [
       { seats: 68500, setup: 'football', note: 'Reported. Expandable to about 75,000 for a Super Bowl; the World Cup did not use the expansion.' },
       { seats: 68827, setup: 'soccer', note: 'Official (FIFA): the 2026 World Cup sellout; six-match average 68,558.' },
@@ -2236,6 +2407,7 @@ export const VENUES: Record<string, Venue> = {
     // Name dates are approximate to the month (RingCentral 2019–2023, with a lapse in 2020).
     names: [{ name: 'Oakland–Alameda County Coliseum' }, { name: 'O.co Coliseum' }, { name: 'RingCentral Coliseum', from: '2019-07-01' }, { name: 'Oakland Coliseum', from: '2023-09-01' }],
     location: [-122.2006, 37.7517],
+    ticketmasterIds: ['KovZpaKBYe', 'KovZpZA7kdnA'],
     capacity: [
       { seats: 46847, setup: 'baseball', note: "Reported (the A's tarped setup); 56,782 with the tarps off. The A's left after 2024." },
       { seats: 53200, setup: 'football', note: 'Reported (Raiders era, to 2019); expandable to 63,132.' },
@@ -2251,6 +2423,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.6,
     names: [{ name: 'California Memorial Stadium' }],
     location: [-122.2508, 37.8711],
+    ticketmasterIds: ['KovZpZA1EFtA'],
     capacity: [
       { seats: 62467, setup: 'football', note: 'Reported, full bowl; 63,186 official at the 2013 reopening.' },
       { seats: 52428, setup: 'football', fromYear: 2024, note: 'Reported, south end tarped; one source dates the tarp to 2022.' },
@@ -2264,6 +2437,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Stanford Stadium' }],
     location: [-122.1619, 37.4345],
+    ticketmasterIds: ['KovZpZA7elEA'],
     capacity: [{ seats: 50424, setup: 'football', note: 'Reported, since 2013. The Earthquakes play one match a year in the same bowl.' }],
     roof: 'open',
   },
@@ -2274,6 +2448,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.5,
     names: [{ name: 'AT&T Park' }, { name: 'Oracle Park', from: '2019-01-10' }],
     location: [-122.3894, 37.7786],
+    ticketmasterIds: ['KovZpZAJF7EA'],
     capacity: [{ seats: 41265, setup: 'baseball', note: 'Reported (Ticketmaster); seat-map sites say 41,915. The Giants publish neither.' }],
     roof: 'open',
   },
@@ -2284,6 +2459,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.95,
     names: [{ name: 'Shoreline Amphitheatre' }],
     location: [-122.0806, 37.4269],
+    ticketmasterIds: ['KovZpZA6ta1A', 'Za5ju3rKuqZDe8DDXnaNgvTnavScoZoPy9'],
     capacity: [{ seats: 22500, setup: 'concert', note: 'Reported: 6,500 reserved seats plus 16,000 lawn; up to 30,000 as a festival with parking-lot stages.' }],
     roof: 'covered',
   },
@@ -2294,6 +2470,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.8,
     names: [{ name: 'Oracle Arena' }, { name: 'Oakland Arena', from: '2019-07-01' }],
     location: [-122.2029, 37.7503],
+    ticketmasterIds: ['KovZpZAJe6nA'],
     capacity: [
       { seats: 19596, setup: 'basketball', note: 'Reported; no tenant since the Warriors left in 2019.' },
       { seats: 19596, setup: 'concert', note: 'Reported; TheStadiumBusiness says 19,200 (2026). Oak View Group is pricing a renovation.' },
@@ -2307,6 +2484,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'SAP Center' }],
     location: [-121.9011, 37.3328],
+    ticketmasterIds: ['Za5ju3rKuqZymCqU5fgF9FIezqgkI4FU', 'KovZpZAJelvA', 'KovZ917AOAf'],
     capacity: [
       { seats: 17562, setup: 'hockey', note: 'Reported, 2001–2023' },
       { seats: 17435, setup: 'hockey', fromYear: 2023, note: 'Reported, after a penthouse-lounge conversion; a phased renovation from 2026 will change it again.' },
@@ -2322,6 +2500,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.5,
     names: [{ name: 'Chase Center' }],
     location: [-122.3874, 37.7679],
+    ticketmasterIds: ['KovZ917Ah1H'],
     capacity: [
       { seats: 18064, setup: 'basketball', note: 'Official: both the Warriors and the Valkyries announce sellouts at this number.' },
       { seats: 19500, setup: 'concert', note: 'Reported' },
@@ -2335,6 +2514,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Spartan Stadium' }, { name: 'CEFCU Stadium', from: '2016-09-10' }],
     location: [-121.8683, 37.3197],
+    ticketmasterIds: ['KovZpa3nBe'],
     capacity: [
       { seats: 30456, setup: 'football', note: 'Reported, 1998–2018. Many sites still show this figure; it is stale.' },
       { seats: 21520, setup: 'football', fromYear: 2019, note: 'Reported, during the east-side rebuild' },
@@ -2349,6 +2529,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.9,
     names: [{ name: 'Avaya Stadium' }, { name: 'Earthquakes Stadium', from: '2020-07-01' }, { name: 'PayPal Park', from: '2021-02-01' }],
     location: [-121.9246, 37.3513],
+    ticketmasterIds: ['Za5ju3rKuqZDe9PGZkq4udohdzgoU8O065', 'KovZpZAEvF6A'],
     capacity: [{ seats: 18000, setup: 'soccer', note: 'Official (Bay FC). A canopy covers the stands; the field is open.' }],
     roof: 'open',
   },
@@ -2359,6 +2540,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.88,
     names: [{ name: 'Cow Palace' }],
     location: [-122.4202, 37.7062],
+    ticketmasterIds: ['KovZpZAFktvA'],
     capacity: [
       { seats: 16500, setup: 'concert', note: 'Reported' },
       { seats: 14000, setup: 'basketball', note: 'Reported' },
@@ -2383,6 +2565,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.55,
     names: [{ name: 'Haas Pavilion' }],
     location: [-122.2622, 37.8694],
+    ticketmasterIds: ['KovZpZA1JlkA'],
     capacity: [{ seats: 11858, setup: 'basketball', note: "Reported, since 2015; Cal's own older page says 11,877." }],
     roof: 'indoor',
   },
@@ -2406,6 +2589,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.6,
     names: [{ name: 'Hearst Greek Theatre' }, { name: 'Greek Theatre' }],
     location: [-122.2542, 37.8737],
+    ticketmasterIds: ['KovZpZAFadlA'],
     capacity: [{ seats: 8500, setup: 'concert', note: 'Official (Cal Performances), general admission: 6,500 bowl plus 2,000 lawn; 7,250 seated.' }],
     roof: 'open',
   },
@@ -2416,6 +2600,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.4,
     names: [{ name: 'Bill Graham Civic Auditorium' }],
     location: [-122.4173, 37.7781],
+    ticketmasterIds: ['KovZpaKope'],
     capacity: [{ seats: 8500, setup: 'concert', note: 'Reported, general-admission floor plus seated balcony; the all-seated figure is unpublished.' }],
     roof: 'indoor',
   },
@@ -2427,6 +2612,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Frost Amphitheater' }],
     // Approximate (research); OpenStreetMap does not know the venue by name.
     location: [-122.1663, 37.4296],
+    ticketmasterIds: ['KovZ917AVNY'],
     capacity: [{ seats: 8000, setup: 'concert', note: 'Reported; rebuilt and reopened 2019' }],
     roof: 'open',
   },
@@ -2437,6 +2623,7 @@ export const VENUES: Record<string, Venue> = {
     carShare: 0.85,
     names: [{ name: 'Maples Pavilion' }],
     location: [-122.1605, 37.4295],
+    ticketmasterIds: ['KovZpZA1EFnA'],
     capacity: [{ seats: 7233, setup: 'basketball', note: 'Reported, citing Stanford' }],
     roof: 'indoor',
   },
@@ -2448,6 +2635,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Event Center at San José State' }, { name: 'Provident Credit Union Event Center', from: '2019-09-01' }],
     // Approximate (research); OpenStreetMap does not know the venue by name.
     location: [-121.8794, 37.3352],
+    ticketmasterIds: ['KovZpZAJeFeA'],
     capacity: [
       { seats: 5000, setup: 'basketball', note: 'Official (SJSU)' },
       { seats: 6000, setup: 'concert', note: 'Official (SJSU): "over 6,000"' },

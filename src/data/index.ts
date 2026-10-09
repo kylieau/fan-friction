@@ -1,7 +1,7 @@
 // The one place screens ask for event data. It merges every plugged-in source,
 // so adding a live feed means adding it to the lists below, nothing else.
 
-import { areaMetros, type Metro } from '../config/metros';
+import { DEFAULT_METRO, METROS, areaMetros, type Metro } from '../config/metros';
 import { matchingNames } from './matchDate';
 import { catalogEvents } from './sources/catalogSource';
 import { espnMetroIds } from './sources/espnSource';
@@ -16,7 +16,7 @@ import { withResults } from './results';
 import { withExpectedDraws } from './expectedDraw';
 import './homeSync';
 import { primeDate } from './catalogCache';
-import { entryMetroId, nightKey, rememberNearby } from './read';
+import { checkedFor, entryMetroId, nightKey, rememberNearby } from './read';
 
 // The shared catalog answers for the live feeds (and falls back to them). Seeds stay in code.
 const EVENT_SOURCES: EventSource[] = [seedEvents, catalogEvents];
@@ -54,7 +54,16 @@ export async function getCityDate(metroId: string, date: LocalDate): Promise<Cit
   const listed = withExpectedDraws(withResults(preferSeed(uniqueById(lists.flat())))).sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'));
   const { events, rating } = applyFormula(metroId, date, listed);
   const status = rating ? 'rated' : events.length ? 'unrated' : 'quiet';
-  return { metroId, date, status, events, rating, ...(failed.length ? { failed } : {}) };
+  const day: CityDate = { metroId, date, status, events, rating, ...(failed.length ? { failed } : {}) };
+  if (events.length === 0) {
+    // Quiet only when the city was really checked that date (Kylie, Oct 9, C030): a past date by the
+    // saved captures; today and ahead by the live load, and never when a source failed.
+    const past = date < todayIn(METROS[metroId] ?? DEFAULT_METRO);
+    const checked = past ? checkedFor(metroId, date) : failed.length ? 'failed' : 'checked';
+    day.empty = checked === 'checked' ? 'quiet' : 'no-data';
+    if (checked !== 'checked') day.emptyWhy = checked;
+  }
+  return day;
 }
 
 /** The three parts behind a date's read, for a side-by-side (docs/compare-proposal-oct6.md). */
@@ -292,6 +301,7 @@ export {
   eventFeedsFriction,
   frictionReadForEvent,
   isStampLocked,
+  nightKey,
   knownCrowdCount,
   listedCapacity,
   refreshStamp,

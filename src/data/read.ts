@@ -201,7 +201,7 @@ function plusDays(date: LocalDate, days: number): LocalDate {
 function spansFor(metroId: string, date: LocalDate): ScheduleSnapshotSpan[] {
   const days = cachedCaptureDays(metroId, date);
   const spans = days
-    ? days.map((capturedOn) => ({ metroId, capturedOn, from: capturedOn, through: plusDays(capturedOn, SNAPSHOT_HORIZON_DAYS) }))
+    ? days.map((capturedOn) => ({ metroId, capturedOn, from: capturedOn, through: plusDays(capturedOn, SNAPSHOT_HORIZON_DAYS), sources: [] as string[] })) // the catalog's capture days carry no source list; checkedFor reads the compiled one
     : SCHEDULE_SNAPSHOTS.filter((span) => span.metroId === metroId);
   return [...spans].sort((a, b) => a.capturedOn.localeCompare(b.capturedOn));
 }
@@ -221,6 +221,24 @@ export function scheduleCoverage(metroId: string, date: LocalDate, now = new Dat
   if (date < snaps[0].capturedOn) return 'reconstructed';
   if (date < today) return 'reconstructed';
   return 'not-yet';
+}
+
+export type DateChecked = 'checked' | 'partial' | 'never';
+
+/**
+ * Whether the nightly job actually looked at this city on this date (Kylie, Oct 9, C030):
+ * "checked" when a saved window covering the date ran every source the city uses now;
+ * "partial" when the only covering captures lacked one (LA's first days had no Ticketmaster);
+ * "never" when no capture covers it. Reads the compiled list, which ships with the app.
+ */
+export function checkedFor(metroId: string, date: LocalDate): DateChecked {
+  const spans = SCHEDULE_SNAPSHOTS.filter((span) => span.metroId === metroId);
+  if (spans.length === 0) return 'never';
+  const latest = spans.reduce((a, b) => (b.capturedOn > a.capturedOn ? b : a));
+  const covering = spans.filter((span) => date >= span.from && date <= span.through);
+  if (covering.length === 0) return 'never';
+  const uses = latest.sources.filter((id) => id !== 'seed');
+  return covering.some((span) => uses.every((id) => span.sources.includes(id))) ? 'checked' : 'partial';
 }
 
 /** Coverage for a logged night. A vague date before the archive is reconstructed; it is not treated as saved. */

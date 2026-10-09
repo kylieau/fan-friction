@@ -248,7 +248,7 @@ export function MapScreen() {
           </div>
           <DateScore
             rating={headerRating}
-            quiet={showScore && shown?.status === 'quiet'}
+            empty={showScore ? shown?.empty : undefined}
             showScore={showScore}
           />
         </div>
