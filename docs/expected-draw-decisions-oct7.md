@@ -38,7 +38,7 @@ Claude's proposal in reply (not locked):
 - **Promotions: yes, every league, not MLB only** (Kylie, Oct 7). They are all public; MLB is first only because its feed already carries them.
 - **Standings: yes, weighted toward the end of the season**; last season matters sometimes (a reigning champion, "something happened") (Kylie, Oct 7). She suggests social media attention as a way to see it.
 - **Stars: "All-Star last season" is not enough** (Kylie, Oct 7). Look at published lists: fantasy rankings, max contracts, notable players.
-- **Resale prices: agreed** (Kylie, Oct 7). Capture a week before and on the day.
+- **Resale prices: agreed in principle** (Kylie, Oct 7): capture a week before and on the day. Off until tested; nothing is built (Oct 9).
 - **Opponent: recent tension and deep history both matter** (Kylie, Oct 7), e.g. Dodgers–Yankees: storied, but rarely in Los Angeles.
 - She asked whether this deserves a deeper research prompt. Drafted: `docs/archive/research/expected-draw-demand-signals-prompt.md`.
 

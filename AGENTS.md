@@ -18,7 +18,7 @@ Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which 
 - v1 uses only publicly available data.
 - Anything can be logged by hand (Kylie, Oct 6, 2026). Events of ~1,000+ are what
   the app pre-lists; only 5,000+ affect friction.
-  Rooms under about 5,000 stay off the map.
+  Rooms under about 5,000 are on the map, muted, with no friction label (Kylie, Oct 9).
 - The Map's look is not locked. Propose a Map change, then wait.
 - No points, leaderboards, open posting, public photo walls, or navigation.
   See the Guardrails section of docs/direction.md.
@@ -35,8 +35,8 @@ Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which 
 - Run: `npm run dev` (phone-sized web app on http://localhost:3001; Vite may pick 3002 if busy). Don't `pkill -f vite`; use `kill $(lsof -ti:PORT)`.
 - Test: there is no test suite yet. `npm run build` (type-check plus production build) is the check that must pass. Visual checks use phone-size screenshots (see MEMORY_HANDOFF.md).
 - Key folders:
-  - `src/screens/` the five screens (Map, Nights, Compare, You, Event)
-  - `src/data/` events, venues, teams, seeded nights, live sources (`sources/`), the save layer (`storage/`), and the night record (`night.ts`: forecast, stamp, nearby read). Screens read only through `src/data/index.ts`.
+  - `src/screens/` Home, Explore (the Map; the date page is `DateScreen`), Favorites (and a favorite's page), You (My Stubs, Following, Stats; Settings, Log an event, a hand-added entry's page, profiles), Event, Compare
+  - `src/data/` events, venues, teams, seeded nights, live sources (`sources/`), the save layer (`storage/`, change-based since Oct 9), and the read (`read.ts`: forecast, stamp, nearby read, saved night read). Screens read only through `src/data/index.ts`.
   - `src/map/` MapLibre map, pins, chips
   - `src/lib/` small helpers (dates, titles, sheet drag, view)
   - `src/config/` app name, metros, score labels, theme
@@ -53,7 +53,7 @@ or foundational code, check for in-progress work and flag possible conflicts.
 (`git fetch` and look at `origin/cursor/*` branches and open PRs first.)
 
 ## UI copy rule (Kylie, Oct 5, 2026)
-Users are not dumb. They use Letterboxd, Strava and Flighty daily. Don't spend
+Users are not dumb. They use Letterboxd, Strava and Flighty daily. Words (Kylie, Oct 9): "night" only for a city-date after 5 pm, otherwise events, dates, days; the log is My Stubs; Following is who you see, Followers who sees you. Don't spend
 screen space explaining patterns they already know: no "this is how others see
 you" banners, no reassurance fine print, no hint text under every control. Put
 utilities (Export, account details, settings) behind a gear, not top and center.
@@ -84,11 +84,11 @@ PRs #1–#12 are squash-merged to `main`. She can resume in local Claude Code fr
 
 #7 was the Oct 4 Los Angeles seed plus the map chip pack. #8 is the nightly Los Angeles schedule archive, one free job at 12:15am Pacific. #9 is the night record. #10 is the global next-saved-night card and the Compare heading. #11 freezes the forecast at the scheduled start, not at Save. #12 is home city, stored on the device.
 
-The stamp clock is the last scheduled start that night, whichever event is scheduled last. The stamp locks 24 hours after that start. Save and "I was there" stay on the event page. The Map can show one card for the next saved upcoming night in any city. The lines are "Next saved night", the chip name, and the date and city, as in "Fri, Oct 9 · Boston". There is no gold button on the card. A tap opens that night in its own city and leaves the map where it is. Back restores the same city, zoom, and selection. The card stays hidden when nothing is saved, and it does not follow home. Save stores the night only and keeps no forecast. Until a closer capture is built, the stamp uses the latest Los Angeles daily snapshot saved before that event's start, and is labeled as such. No number is invented. The every-30-minute start-time capture is parked. The stamp itself is still not on screen. Compare's heading is "Your nights, side by side." The tab is still coming soon.
+The stamp clock is the last scheduled start that night, whichever event is scheduled last. The stamp locks 24 hours after that start. Attend / Attending / Attended sit on the event page and the date page (Kylie, Oct 9, 3.10). The Map can show one card for the next saved upcoming night in any city. The lines are "Next saved night", the chip name, and the date and city, as in "Fri, Oct 9 · Boston". There is no gold button on the card. A tap opens that night in its own city and leaves the map where it is. Back restores the same city, zoom, and selection. The card stays hidden when nothing is saved, and it does not follow home. Save stores the night only and keeps no forecast. Until a closer capture is built, the stamp uses the latest Los Angeles daily snapshot saved before that event's start, and is labeled as such. No number is invented. The every-30-minute start-time capture is parked. The stamp itself is still not on screen. Compare's heading is "Your nights, side by side." The tab is still coming soon.
 
-Home is one city on this device. The first open asks "Where's home?" and lists only cities that have events (Los Angeles for now). The map always opens on home and never follows a saved night. Looking at another city does not change home. The city switcher shows a house icon on that city. A screen reader hears "Home." "Set as home" shows only on cities that have events. "Use my location" is only inside that first picker, and only if they tap it. 🚩 Home does not leave this device until accounts exist.
+Home is one city on this device. The first open asks "Where's home?" and lists only cities that have events (Los Angeles for now). The map always opens on home and never follows a saved night. Looking at another city does not change home. The city switcher shows a house icon on that city. A screen reader hears "Home." Changing home is in Settings (Kylie, Oct 9); the switcher only marks it. There is no "Use my location". Home follows the account since Oct 6.
 
-Rooms under about 5,000 stay off the map. A below-floor night can still take a nearby score from bigger events the same night. The Map's look is no longer locked: chips, the sheet, the glow, and the legend can change after a proposal she approves.
+Rooms under about 5,000 are on the map, muted (Oct 9). A below-floor night can still take a nearby score from bigger events the same night. The Map's look is no longer locked: chips, the sheet, the glow, and the legend can change after a proposal she approves.
 
 The logging-threshold sentence was locked Oct 6, 2026: anything can be logged by hand; about 1,000+ is pre-listed; 5,000+ feeds friction. Famous nights keeps its stamps until they are hand-checked. Product risks are parked. Accounts, when built, are private by default. Tweets stay on hold until access and cost are verified.
 
@@ -132,6 +132,6 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 ## Tech setup (chosen Sep 30, 2026; open to change)
 - Phone-sized web app: React + Vite, installable to the home screen. It can be wrapped as a native app later (Capacitor).
 - Map: MapLibre with OpenFreeMap maps (free, no account). Google Maps was considered and passed on: it needs a credit card on file, and its heat map layer is being retired.
-- Saving today is this phone, plus an "Export my nights" backup, because iPhone Safari can erase a site's saved data. Supabase is the planned store, not connected yet.
-- **Supabase (next, Oct 5, 2026):** accounts are the next build. Shared event truth, then You-tab logs. Also home city, favorite teams, and artists. Do not connect, and do not invent the spec, until she pastes a project URL, the public anon key, and the spec. The adapter must not call the network until those keys exist. 🚩 The free plan allows 2 active projects (she already uses one) and pauses a project when it sits idle.
+- Saving is this phone plus the account when signed in (Supabase, connected Oct 5, 2026; change-based sync since Oct 9), and an "Export my events" backup.
+- **Supabase (connected Oct 5, 2026; migrations are pasted into the SQL editor by Kylie):** accounts hold the log, plans, settings, favorites, home city and profile. Shared event truth, then You-tab logs. Also home city, favorite teams, and artists. Do not connect, and do not invent the spec, until she pastes a project URL, the public anon key, and the spec. The adapter must not call the network until those keys exist. 🚩 The free plan allows 2 active projects (she already uses one) and pauses a project when it sits idle.
 - Hosting: Vercel free plan.

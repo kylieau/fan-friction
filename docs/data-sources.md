@@ -49,6 +49,6 @@ Kylie, Oct 6, 2026: one file that says where each kind of data is pulled from, s
 - `docs/archive/formula/formula-review-response.md`: the formula review, including the calibration plan (§11).
 
 ## Not yet used, checked as available
-- Ticketmaster Discovery API for concerts 🚩 free developer key, daily quota; terms to read first (step 4).
+- Ticketmaster Discovery API: **used since Oct 7, 2026** for concerts in every covered city and for sports listings at buildings no feed covers (`ticketmasterSource.ts`; the key is a GitHub secret and in `.env.local`). Free developer key, 5,000 calls a day, 5 a second. Venue ids are stored on each venue (`ticketmasterIds`, 188 of 213 on Oct 9); an unmatched listing within 300 m of a known venue matches it.
 - MLB promotions (bobbleheads): not in the schedule feed; still to find.
 - Setlist.fm API: terms of use to review before any setlist link is filled automatically.

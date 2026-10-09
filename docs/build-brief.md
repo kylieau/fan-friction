@@ -19,20 +19,20 @@ Sports are the reason it exists, but it's a live-event app: concerts and other b
 - **How far back logging goes:** 10 years (to about 2016). Kylie's own concert log has a few older shows (2013 to 2015). Keep those as rough-dated entries with no rating, and ask Kylie if she wants them kept.
 
 ## What should be built
-1. **The shell.** Four tabs along the bottom: Map, Nights, Compare, You. Compare is visible but shows a simple "coming soon" page for now. The app opens on Today, even when it's quiet. A skippable three-tip first-run guide.
+1. **The shell.** _(Updated Oct 9, 2026.)_ Four tabs along the bottom: Home, Explore, Favorites, You. The app opens on Home at `/`: today's read and events in the home city, what's coming up, your recent events, and the people you follow. Explore is the map with the day strip; a date page sits one tap deeper; Compare is reached from an event you attended. No first-run guide: the ? on the map and the empty states carry it (removed Oct 9).
 2. **Map, Crowds mode.** A heat map of where crowds went for the chosen night (default: today). The gold glow is the size of the crowd. A pale ring marks the one you picked. A map chip is the name, the time, and the crowd, in one fixed box about 112×44. A concert chip is the headliner. A game chip is the home short name, and a postseason chip adds the round and game number in parentheses (Dodgers (NLDS G2)). The type is a little smaller so that fits on one line. Friction, Sold Out, Marquee, Major, and Notable stay on the sheet. See `product-decisions.md`. The night has an overall difficulty score with a label, never a bare number.
 3. **Crowds | Traffic toggle.** Traffic mode shades the corridors near overlapping events and events letting out together, in blues (gold only ever means crowds). It is always labeled "Estimate · not live." No live data and no red "jam" color. Includes "Drag to your leave time."
 4. **Event screen.** Tap any event to see:
    - its rating and what else was on nearby that night ("Local competition")
    - a short "The game" or "The show" block (the result for sports; pitchers, giveaways and notable moments)
-   - one action by tense: an upcoming night says **Save this night** (a plan only; it does not add a Your nights row); a past night says **I was there**, and after that the page says **You were there**
+   - one action by tense (Kylie, Oct 9, 3.10): an upcoming event says **Attend** and, once tapped, **Attending** (a plan; it becomes Attended by itself when the date passes); a past event says **Attended**. The same words sit on the event page and the date page. Un-tapping Attended asks once.
    - a shareable card at the very end of the screen
    - one gold primary button per screen, with a plain verb
 5. **Nights tab.** A search box and a calendar shaded by each day's night rating, with each day's number and a legend. Below it, a "Famous nights" list with rating badges. Tapping a day opens that night.
-6. **You tab.** Attended nights only (Kylie, Oct 4, 2026). No Up next list and no Plans-first order toggle.
-   - **Your nights:** nights marked **I was there**. **Save this night** on an upcoming event stores a plan in the backup only. It does not add a row here.
+6. **You tab.** _(Updated Oct 9, 2026: the log is **My Stubs**; **Following** is the activity feed of the people you follow; Stats.)_ A small Coming up strip of plans sits above the log.
+   - **My Stubs:** events marked **Attended**, plus plans (Attending) in the Coming up strip. **Log an event** adds one by hand; a future date saves as a plan.
    - A log with team + sport filters. Each row shows the date, event, rating (when there is one), plain facts and an optional one-line result. Plain stats (counts by team and sport, venues) are welcome. No loaded labels, and no "brutal nights" stat.
-   - Logging: **I was there** on a past event. Search and add, a live check-in, and ticket import come later.
+   - Logging: **Attended** on a past event, or **Log an event** (search every covered city, or type it in). A live check-in and ticket import come later.
    - Logging rules: events below 5k can be logged (no rating, no dot). Rough dates are allowed alongside real ones. A festival is one entry with the sets inside. A partial night is a personal note. Away games are logged now, with context later. Old venue names match current ones (Staples Center = Crypto.com Arena, Banc of California Stadium = BMO Stadium).
    - Personal notes stay private and show only in Your nights.
 7. **"Who you've seen."** Headliners and pro-game participants count automatically. Openers, festival sets and multi-game events are opt-in. "Cameo" (surprise guests, one-song sets) is a secondary tier, and its default rules are still to be defined. Built in but not the main event of the app.

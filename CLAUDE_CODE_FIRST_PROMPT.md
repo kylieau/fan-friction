@@ -13,7 +13,7 @@ Before you write any code, reply with:
 4. Any questions you have for me. Keep them to decisions that actually block step one.
 
 Wait for my go-ahead on that plan. Then build in this order, committing after each step and telling me what to open and look at:
-- Step 1: project setup, light theme and colors, the four-tab shell opening on Tonight, and the three-tip first-run guide.
+- Step 1: project setup, light theme and colors, the four-tab shell opening on Tonight, and the three-tip first-run guide. _(Historical: the tips were removed Oct 9, 2026.)_
 - Step 2: the data layer with the 13 seeded test nights (hardcoded ratings from `docs/test-nights-and-ratings.md`), built so live sources can plug in later.
 - Step 3: the Map in Crowds mode (heat map, Squeeze tags, the star, SOLD OUT tags, night score) and the Event screen, matching the mockups.
 - Step 4: the Nights tab (shaded calendar, Famous nights).

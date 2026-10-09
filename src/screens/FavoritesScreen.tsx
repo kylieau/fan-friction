@@ -11,7 +11,8 @@ import {
   favoritesOf,
   getEventsBetween,
   getPersonalLog,
-  getRatedDates,
+  nightKey,
+  scoresForNights,
   metrosWithEvents,
   entryMatches,
   subscribePersonalLog,
@@ -66,9 +67,6 @@ export function FavoritesScreen() {
       if (!current) return;
       setUpcoming(lists.flat().sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? ''))));
     });
-    getRatedDates(home.id).then((rows) => {
-      if (current) setRatings(new Map(rows.map((row) => [row.date, row.rating])));
-    });
     return () => {
       current = false;
     };
@@ -81,6 +79,15 @@ export function FavoritesScreen() {
       .filter((row): row is { fav: Favorite; next: CrowdEvent } => Boolean(row.next));
     return rows.sort((a, b) => (a.next.date + (a.next.start ?? '')).localeCompare(b.next.date + (b.next.start ?? '')));
   }, [favorites, upcoming]);
+
+  // Each next date's read (a forecast ahead), keyed by city and date (C066 / 5.2).
+  useEffect(() => {
+    let current = true;
+    scoresForNights(nextUp.map(({ next }) => ({ metroId: next.metroId, date: next.date }))).then((map) => current && setRatings(map));
+    return () => {
+      current = false;
+    };
+  }, [nextUp]);
 
   const suggestions = useMemo(() => suggestionsFor(home.id, favorites), [home.id, favorites]);
   const isOn = (fav: Favorite) => favorites.some((f) => favoriteKey(f) === favoriteKey(fav));
@@ -255,7 +262,7 @@ export function FavoritesScreen() {
                         {where === 'everywhere' && next.metroId !== home.id ? ` · ${METROS[next.metroId]?.name ?? ''}` : ''}
                       </span>
                     </span>
-                    <Read rating={ratings.get(next.date) ?? null} />
+                    <Read rating={ratings.get(nightKey(next.metroId, next.date)) ?? null} />
                   </Link>
                 </li>
               ))}

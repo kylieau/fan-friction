@@ -19,7 +19,9 @@ import {
   nightsOf,
   ratingForEntry,
   scoreMark,
+  nightKey,
   scoresForNights,
+  TEAMS,
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
@@ -70,6 +72,7 @@ export function FavoritePage() {
     return built.id === decodeURIComponent(id) ? built : { ...built, id: decodeURIComponent(id) };
   }, [favorites, kind, id]);
   const following = favorites.some((f) => favoriteKey(f) === favoriteKey(fav));
+  const teamMetroId = fav.teamId ? TEAMS[fav.teamId]?.metroId : undefined;
 
   // A page for a name we only know from the log keeps that name's capitalization.
   const label = useMemo(() => {
@@ -85,13 +88,18 @@ export function FavoritePage() {
   useEffect(() => {
     let current = true;
     getUpcoming(metro.id, todayIn(metro), 60).then((list) => current && setUpcoming(list.filter((e) => eventMatches(e, fav)).slice(0, UPCOMING)));
-    scoresForNights(nightsOf(entries)).then((map) => {
+    // Your entries' nights plus the dates ahead on this page, so an upcoming game shows its forecast (C066 / 5.2).
+    const ahead = [
+      ...upcoming.map((e) => ({ metroId: e.metroId, date: e.date })),
+      ...(schedule ?? []).filter((g) => g.home && g.eventId).map((g) => ({ metroId: teamMetroId ?? metro.id, date: g.date })),
+    ];
+    scoresForNights([...nightsOf(entries), ...ahead]).then((map) => {
       if (current) setRatings(map);
     });
     return () => {
       current = false;
     };
-  }, [metro, fav]);
+  }, [entries, upcoming, schedule, teamMetroId, metro.id]);
 
   useEffect(() => {
     let current = true;
@@ -171,7 +179,7 @@ export function FavoritePage() {
               <ul className="log-list">
                 {toCome.slice(0, UPCOMING).map((game) => (
                   <li key={game.id} className="fav-li">
-                    <GameRow game={game} rating={game.eventId ? (ratings.get(game.date) ?? null) : null} />
+                    <GameRow game={game} rating={game.eventId ? (ratings.get(nightKey(teamMetroId ?? metro.id, game.date)) ?? null) : null} />
                     {game.eventId && plannable.has(game.eventId) && (
                       <button
                         type="button"
@@ -217,7 +225,7 @@ export function FavoritePage() {
               {upcoming.map((event) => (
                 <li key={event.id} className="fav-li">
                   <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
-                    <Read rating={ratings.get(event.date) ?? null} />
+                    <Read rating={ratings.get(nightKey(event.metroId, event.date)) ?? null} />
                     <span className="log-main">
                       <span className="log-title">{listTitle(event)}</span>
                       <span className="log-facts">

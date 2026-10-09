@@ -11,7 +11,7 @@ Source: a second-opinion report Kylie got on Oct 2 ("Audience Overlap & Date Rat
   - **"Same sport = High" is retired** as a blanket rule. Same-sport pairs reach High only through same fan identity or a Marquee competitor.
 - **Broad flag:** a team is Broad when about 20% of the metro's residents name it as theirs (threshold not final). Order of sources: a metro fan poll, then a college program with an 80k+ stadium, then Google Trends. **The flag is stamped with a year**, because a night is judged on what was known then (LA 2016: Lakers 37%, Dodgers 35%; LA 2026: Dodgers 43%, Lakers 28%).
 - **Adjustments:** a Marquee competitor moves the pair up one tier (same domain only); a Destination event (Super Bowl, F1) moves down one tier against local events; shifts are netted before clamping to Low–High. Market Saturation (more top-level teams in a city = Broad pairs count a little less) is a placeholder.
-- **Two reasons per date: Crowd fight and Gridlock.**
+- **Two reasons per date: Crowd fight and Gridlock.** _(Formula v4 added Conditions as a third reason; kept Oct 9, 2026, 3.7.)_
   - Crowd fight = fans choosing between events (overlap × time overlap × the competitor's venue capacity, relative to the event's own capacity).
   - Gridlock = everyone converging on shared roads, rail, parking and (for out-of-town draws) airports, whether or not they like the same things. Computed once per date from a per-city list of bottlenecks. A pre-announced strike or closure sets that bottleneck to the maximum.
   - The date's rating starts from the louder of the two and adds a small bump when the other is also high (placeholder: bump 0.5 once the quieter one is above 3). Not a plain sum. Weather and other inputs apply afterward.

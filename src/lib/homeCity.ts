@@ -2,8 +2,7 @@ import { METROS, type Metro } from '../config/metros';
 import { milesBetween } from './windows';
 import { getPref, setPref } from './prefs';
 
-// Home is one city on this phone. It is not the log, and it does not sync.
-// 🚩 Copying it to another phone needs accounts. Leave that out until then.
+// Home is one city. Kept on this phone, and on the profile when signed in (src/data/homeSync.ts, since Oct 6, 2026), so it follows you to another phone.
 
 const PREF = 'home-metro';
 

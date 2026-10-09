@@ -27,7 +27,7 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 
 **Rating and words**
 - Friction hidden at Low; Heavy chip is the pattern; no friction paragraph on the map.
-- Word first, then number (`Light · 4/10`). Share cards keep the date; the map's score line doesn't.
+- ~~Word first, then number (`Light · 4/10`).~~ _(Superseded: the box shows the number first, to one decimal, with the word under it; Kylie, Oct 9, 3.8 and 6.2.)_ Share cards keep the date; the map's score line doesn't.
 - Overlap tiers stay internal. A share shows a plain why ("Same crowd as X", "different fans, same roads").
 - Nearby regions don't lower overlap by default (OC and LA are one pool); silos only if a metro declares them. Freeways hit Gridlock, not the overlap tier.
 
@@ -38,7 +38,7 @@ Kylie adds thoughts whenever they come; Claude sorts them. Nothing here is a dec
 
 **Tips**
 - Add Back. Spotlight the control a tip is about, or don't ship it (tip 3 points at things not on the map).
-- Copy stays on hold. Leans: "Glows brighter where the crowds are bigger." / "Each night is Chill, Light, Mid, Brutal, or Cooked. Each big event shows its friction, Low to Extreme, from nearby events, similar crowds, and getting there." / "Attended an event?" instead of "Went to something?"
+- Copy stays on hold. Leans: "Glows brighter where the crowds are bigger." / "Each night is Chill, Light, Mid, Brutal, or Cooked _(the words are Chill, Mild, Spicy, Brutal, Cooked; kept Oct 9, 3.8)_. Each big event shows its friction, Low to Extreme, from nearby events, similar crowds, and getting there." / "Attended an event?" instead of "Went to something?"
 
 **Cameos and notifications**
 - A surprise guest or one-song set doesn't move the night unless billed.

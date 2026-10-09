@@ -9,8 +9,8 @@ An **account** is the login: an email and the data saved under it, so your log s
 
 | Holds | What it is | Today | v1? |
 |---|---|---|---|
-| **Your nights** | Every night you marked "I was there," with its private fields (outcome, starter, promo, notable, your note) and its stamp | On this phone | **Yes** |
-| **Saved nights (plans)** | Upcoming nights you tapped "Save this night" on | On this phone | **Yes** |
+| **Your events (My Stubs)** | Every event you marked Attended, with its private fields (review, With) and its stamp | Account, change-based sync (Oct 9) | **Yes** |
+| **Plans** | Upcoming events you tapped Attend on; visible to approved followers (0012) | Account | **Yes** |
 | **Hidden nights** | Pre-filled nights you removed from your log | On this phone | **Yes** |
 | **Home city** | The one city the map opens on | On this phone | **Yes** |
 | **Small settings** | Order of You, tips seen | On this phone | **Yes** |

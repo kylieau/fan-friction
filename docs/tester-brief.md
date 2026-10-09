@@ -14,7 +14,7 @@ For a friend of Kylie's who is trying Fan/Friction.
 
 **5. Send it back.** When Claude has written its summary, use Claude's **Share** button and send Kylie the link.
 
-**Games Kylie left out on purpose** (usually your most recent or next ones): after each one, add it yourself with **Add a night** on the You tab. That's part of the test.
+**Games Kylie left out on purpose** (usually your most recent or next ones): after each one, log it yourself with **Log an event** (the + on the You tab, under My Stubs). That's part of the test.
 
 Everything you log is private to you unless you change that in Settings.
 
@@ -25,9 +25,9 @@ I'm trying out an early app my friend Kylie is building, called **Fan/Friction**
 ## What the app is
 Fan/Friction is a personal log of the live events you went to (games, concerts, festivals), like Letterboxd for nights out. Each night also gets a "friction" read: how hard that date was for fans, from the other big events the same night (crowds choosing between them, and everyone hitting the same roads), plus the weather. A date gets a word and a number: Chill, Mild, Spicy, Brutal or Cooked, from 1 to 10. Each event can also show the friction it faced (Moderate, Heavy or Extreme). It's built for one person first; it's not a social network and there are no points or leaderboards.
 
-The app is at **https://fan-friction.vercel.app**. It works best on a phone. I'm signed in, and Kylie has loaded my past nights into my account. Tabs: Home, Explore (a map and calendar of upcoming and past dates), Favorites, and You (my log). I can add a night myself with "Add a night."
+The app is at **https://fan-friction.vercel.app**. It works best on a phone. I'm signed in, and Kylie has loaded my past nights into my account. Tabs: Home, Explore (a map and day strip of upcoming and past dates), Favorites, and You (My Stubs is my log; Following is the people I follow). I can log an event myself with "Log an event."
 
-My past nights were loaded by hand. Each night in a city the app covers carries its friction read, rebuilt afterwards from public listings of what else was on that date and the weather. The app may label these reads "reconstructed." That's expected, not a bug. Nights in a city the app doesn't cover yet may not have a read. Still ask whether those nights look right, and whether I'd want a read for them.
+My past events were loaded by hand. Each one in a city the app covers carries its friction read, rebuilt afterwards from public listings of what else was on that date and the weather. Nights in a city the app doesn't cover yet may not have a read. Still ask whether those nights look right, and whether I'd want a read for them.
 
 ## How to run this
 - Ask me **one question at a time** and wait for my answer. Keep it to about 15–20 minutes.

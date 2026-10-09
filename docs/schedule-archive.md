@@ -1,14 +1,14 @@
 # Schedule archive
 
-A nightly copy of the Los Angeles events Fan/Friction already knows about, kept so a night can be stamped later. Nothing in the app shows this yet. No Ticketmaster. No Supabase. No new paid account.
+A nightly copy of the events Fan/Friction already knows about in every covered city, kept so a night can be stamped later and so the app can say whether a date was checked. _(Updated Oct 9, 2026: nine cities, Ticketmaster included, and the rows are also written to Supabase's catalog tables. First files: Los Angeles Oct 4; New York, San Diego, Seattle Oct 6; Atlanta, Bay Area, Chicago, Dallas–Fort Worth, Montreal Oct 7.)_
 
 ## What is saved
 
 Each run writes the day's listing:
 
-`data/schedule-archive/la/YYYY-MM-DD.json`
+`data/schedule-archive/<city>/YYYY-MM-DD.json`
 
-The date is the Los Angeles calendar day the file was written. The file lists events from that day through 14 days later.
+The date is the city's calendar day the file was written. The file lists events from that day through 14 days later.
 
 Three sources, the same ones the app already uses:
 
@@ -28,7 +28,7 @@ The stamp is still the one Kylie locked: it is written when someone marks "I was
 
 Until a closer capture exists, the stamp lines up against the **latest daily file saved before that event's start** that includes the event. The stamp is labeled as coming from that file. A file saved at the start, or after it, is not used. If that latest file has no number, no number is added. If the event has no start time, no file can be placed before the start, so no number is added.
 
-Los Angeles only. Other cities are not captured.
+Every covered city is captured (since Oct 7, 2026).
 
 A daily file from before these reads were stored (the October 4, 2026 file) did not save a score. A stamp from that file can use a friction word already written on the event. It does not add a score that was never saved there. A room under the friction floor does not lend its own word.
 

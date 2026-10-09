@@ -8,7 +8,7 @@ The thesis: big-city fans get called "fake." Attendance is shaped by competition
 - **Map chip names (Kylie, Oct 4, 2026):** a concert is the headliner only (Slayer). The sheet and the event page keep the full official title. The venue goes on the chip only when two chips that night would otherwise match. A game is the home short name (Dodgers, Ducks, Galaxy), not the visitor matchup and not ATL @ LAD. Postseason adds the short round and the game number in parentheses: Dodgers (NLDS G2). Do not drop the round, and do not omit G1 or G2. Regular season and friendlies are the name only. A squad tag (MBB, WBB, FB) or the visitor short name is added only when two chips that night would otherwise match.
 - **On-the-map list (Kylie, Oct 4, 2026):** the sheet title says On the map. Every row shows its venue, as a quiet line. The list follows the map after a pan or zoom settles. The selected card can still sit above the list. This replaces showing the venue only on the raised card.
 - **Weather (Kylie, Oct 4, 2026):** Today can show one metro feels-like. Oct 4 is a draft 97°. That number is not copied onto venue lines. The chip shows the degrees, not a city prefix. A per-event degree on the selected venue line and the event page is not built. A rich outdoor Forecast is parked.
-- Tabs: Map, Nights, Compare, You. Opens on Today, even when quiet. Quiet state offers: next big night, "On this night" (a famous past night from this date), your teams' next game.
+- Tabs: _(superseded Oct 5–9, 2026: Home, Explore, Favorites, You; the app opens on Home.)_ Earlier: Map, Nights, Compare, You. Opens on Today, even when quiet. Quiet state offers: next big night, "On this night" (a famous past night from this date), your teams' next game.
 - Nights tab: search, a calendar shaded by night rating with each day's number and a legend, and "Famous nights." No "Jump to" chips.
 - "Brutal nights" is dropped as a stat or designation. "Immune" is not a word to use.
 - **Rating model (Oct 1, 2026, replaces per-event Squeeze scores):**
@@ -17,7 +17,7 @@ The thesis: big-city fans get called "fake." Attendance is shaped by competition
   - **Show friction only at Moderate or above.** Low friction is stored but never shown as a chip or tag, so a World Series never reads "Low friction."
   - **Friction is more than competing events:** it also covers travel to and from (shared freeway corridors, getting home), timing (weekday, start time, day game) and weather. Inputs are weighted, and the weights differ by event type. A full breakdown of every score comes later and doesn't block step 2.
   - **Weather** is venue-local (that venue's °F and rain, not a citywide LA number) and is only a small bump. Rain counts as friction, but only lightly.
-  - **Audience overlap (Oct 1, 2026):** each event is tagged with the audiences it draws, and each pair of events is scored High, Medium or Low overlap. **Superseded Oct 2 by `docs/overlap-and-date-rating-v3.md`** (same-sport rivals are now Medium; Broad teams in different sports are High; two reasons, Crowd fight and Gridlock). Earlier wording: same sport or the same fans' must-see is High; different sports in the same city is Medium; sports vs. concerts, or concerts of different genres, is Low (the crowds can overlap, just less); concerts of the same genre or era is Medium. Overlap acts only on each event's friction, never directly on the date's rating, so it counts once. Under this rule night 5 stays at 5. Kylie may get a second opinion on the rule and the friction weights (prompt in `docs/archive/second-opinions/second-opinion-prompt.md`).
+  - **Audience overlap (Oct 1, 2026):** each event is tagged with the audiences it draws, and each pair of events is scored High, Medium or Low overlap. **Superseded Oct 2 by `docs/overlap-and-date-rating-v3.md`** (same-sport rivals are now Medium; Broad teams in different sports are High; two reasons, Crowd fight and Gridlock; Conditions became the third reason in formula v4, kept Oct 9, 3.7). Earlier wording: same sport or the same fans' must-see is High; different sports in the same city is Medium; sports vs. concerts, or concerts of different genres, is Low (the crowds can overlap, just less); concerts of the same genre or era is Medium. Overlap acts only on each event's friction, never directly on the date's rating, so it counts once. Under this rule night 5 stays at 5. Kylie may get a second opinion on the rule and the friction weights (prompt in `docs/archive/second-opinions/second-opinion-prompt.md`).
   - **Friction weights:** the first draft in `docs/archive/formula/rating-model-draft.md` is the working version until the v3 structure is tested. The second opinion (Oct 2) proposes replacing the percentage slices with Crowd fight and Gridlock; Kylie agreed in direction, with the shield and what the date rating measures still open (see the v3 doc).
   - The word "friction" for the event verdict is kept for now, but Kylie is still weighing it (Oct 1, 2026).
   - **Crowd is evidence, not an input.** Show it next to the verdict, always labeled ("Extreme friction · 63,404 announced"). Say "sold out" when a source says so; don't invent a percentage of capacity.
@@ -27,12 +27,13 @@ The thesis: big-city fans get called "fake." Attendance is shaped by competition
   - The mockups predate this: they show "Squeeze 8/10" tags and "NIGHT · BRUTAL" for a 9/10 night (now "Cooked · 9/10").
 
 ## Product psychology rules
-One gold primary button per screen with a plain verb. Default to Today. Skippable three-tip first-run guide. Always label scores (no bare numbers). End the event screen on a shareable card. Curiosity-gap copy. Don't make the user think.
+One gold primary button per screen with a plain verb. Default to Today. _(The three-tip first-run guide was removed Oct 9, 2026.)_ Always label scores (no bare numbers). End the event screen on a shareable card. Curiosity-gap copy. Don't make the user think.
 
 ## Share cards (four)
 Night card, Event card, Compare card (two fanbases), Your stats card.
 
 ## Compare tab (second slice)
+_(Superseded Oct 6, 2026: Compare is a side-by-side of two of your events, reached from an event page; see `docs/archive/proposals/compare-proposal-oct6.md`.)_
 For competitors and rivals: same-city rivals, league rivals across the country (adjusted for how crowded each city is), artists/fandoms. Opens on a leaderboard (e.g. "Best-drawing fanbases, adjusted"). No single headline number: show several stats side by side (adjusted attendance, % of seats filled, record on tough nights).
 
 ## Event details
@@ -45,8 +46,8 @@ Three official layers plus personal notes:
 - Only pre-game facts may nudge an event's "own pull" rating factor. Outcomes never affect the rating.
 
 ## You tab
-- You lists attended nights only (Kylie, Oct 4, 2026). A past event says **I was there**; after it is logged, the page says **You were there**. There is no Up next section and no Plans-first order toggle.
-- An upcoming event says **Save this night**. That stores a plan only. It does not add a Your nights row. There is no "Plan this night" button and no line that says saving adds the night to Your nights. A plan can stay in storage and in Export without showing on You.
+- You's log (My Stubs) lists attended events, with a small Coming up strip of plans above it (Kylie, Oct 9, 3.11). A past event says **Attended**; an upcoming one **Attend** / **Attending** (3.10).
+- **Attending** stores a plan, which becomes Attended by itself when the date passes. Plans show in the Coming up strip and in Export; approved followers can see them (3.24).
 - Plain stats (counts by team + sport, venues). Receipts (saved past nights and cards) are still later.
 - Logging ways still later: search and add, live check-in, ticket import. What exists now is **I was there** on a past event.
 - Honor system for proof. Separate from Compare. Friends-only privacy.
