@@ -27,14 +27,14 @@ import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
 import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { AreaSwitcher } from '../components/AreaSwitcher';
 import { DateScore } from '../components/DateScore';
-import { ArrowRight, RecenterIcon } from '../components/Icons';
+import { ArrowRight, ChevronLeft, ChevronRight, RecenterIcon } from '../components/Icons';
 import { dayWordFor, tonightWord } from '../lib/dayWord';
 import { SearchSheet } from '../components/SearchSheet';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
 import { eventColumns, type EventColumns } from '../lib/eventColumns';
-import { clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
+import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
 import { mapPath, datePath, useView } from '../lib/view';
@@ -237,20 +237,32 @@ export function MapScreen() {
             <AreaSwitcher metro={metro} open={menu === 'area'} onOpenChange={(next) => setMenu(next ? 'area' : null)} />
           </div>
         </div>
+        {/* The read box first, then the date, then < Today > to step a day or jump back (Kylie, Oct 9). */}
         <div className="map-header-score">
-          <div className="map-header-dateblock">
-            {/* The big date is a label (6.1): Pick a date lives in search. */}
-            <h1 className="map-header-date">
-              <span>{headerDate(date, today)}</span>
-              {pastLabel && <span className="map-header-past">{pastLabel}</span>}
-            </h1>
-            {caption.trim() && <div className="map-header-count">{caption}</div>}
-          </div>
           <DateScore
             rating={headerRating}
             empty={showScore ? shown?.empty : undefined}
             showScore={showScore}
           />
+          <div className="map-header-dateblock">
+            {/* The big date is a label (6.1): Pick a date lives in search. */}
+            <h1 className="map-header-date">
+              <span>{headerDate(date, today)}</span>
+            </h1>
+            {/* The count and, on a past date, how long ago ("6 events · Last week"), so the date keeps its room beside < Today >. */}
+            {(caption.trim() || pastLabel) && <div className="map-header-count">{[caption.trim(), pastLabel].filter(Boolean).join(' · ')}</div>}
+          </div>
+          <nav className="day-nav" aria-label="Day">
+            <Link to={mapPath({ metroId: metro.id, date: addDays(date, -1), today })} className="day-nav-step" aria-label="Previous day">
+              <ChevronLeft />
+            </Link>
+            <Link to={mapPath({ metroId: metro.id, date: today, today })} className={`day-nav-today${isToday ? ' is-today' : ''}`} aria-current={isToday ? 'date' : undefined}>
+              Today
+            </Link>
+            <Link to={mapPath({ metroId: metro.id, date: addDays(date, 1), today })} className="day-nav-step" aria-label="Next day">
+              <ChevronRight />
+            </Link>
+          </nav>
         </div>
         <DayStrip metro={metro} today={today} date={date} onSearch={() => setSearchOpen(true)} />
         <div className="map-chrome">

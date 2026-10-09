@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, SearchIcon } from './Icons';
+import { SearchIcon } from './Icons';
 import type { Metro } from '../config/metros';
 import { getCityDate } from '../data';
 import { addDays, daysBetween } from '../lib/dates';
@@ -64,18 +64,7 @@ export function DayStrip({ metro, today, date, onSearch }: { metro: Metro; today
 
   return (
     <div className="day-strip-wrap">
-      {/* A way back to today, on the edge today is off toward (Kylie, Oct 6): left when looking ahead, right when looking back.
-          On the right it sits just inside search, smaller, so search stays last (Kylie, Oct 9, 6.1). */}
-      {date !== today && (
-        <Link
-          to={mapPath({ metroId: metro.id, date: today, today })}
-          className={`day-today-tab${date < today ? ' right' : ''}${date < today && onSearch ? ' beside-search' : ''}`}
-          aria-label="Back to today"
-        >
-          {date < today ? <ChevronRight /> : <ChevronLeft />}
-          Today
-        </Link>
-      )}
+      {/* The way back to today is the < Today > control in the header (Kylie, Oct 9); nothing sits on the strip's edge. */}
       {/* Search, pinned at the strip's right end (6.1). It may cover the last cell; the strip scrolls. */}
       {onSearch && (
         <button type="button" className="round-button strip-search" aria-label="Search" onClick={onSearch}>

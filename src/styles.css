@@ -246,8 +246,53 @@ button {
 }
 
 .map-header-score .datescore {
-  align-items: flex-end;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+
+/* < Today > at the right of the date row (Kylie, Oct 9): step a day, or jump back to today. */
+.day-nav {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.day-nav-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.12);
+}
+
+.day-nav-step svg {
+  width: 18px;
+  height: 18px;
+}
+
+.day-nav-today {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 17px;
+  background: var(--card);
+  color: var(--dodger);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.12);
+}
+
+.day-nav-today.is-today {
+  color: var(--ink2);
 }
 
 /* One personal card, only when a night is saved. Floats under the When row.
