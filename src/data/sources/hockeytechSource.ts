@@ -157,7 +157,7 @@ function toEvent(g: HtGame, t: (typeof HOCKEYTECH_TEAMS)[number], playoffs: bool
     start: g.time_tbd === '1' ? null : time,
     kind: 'game',
     title: `${nameOf(g, 'home')} vs. ${nameOf(g, 'visiting')}`,
-    ...(playoffs ? { stakes: { round: `${league} Playoffs` } } : {}),
+    ...(playoffs ? { stakes: { round: `${league} Playoffs`, ...(g.if_necessary === '1' ? { ifNecessary: true } : {}) } } : {}),
     place: { type: 'venue', venueId },
     audience: { domain: 'sports', sport: 'hockey' },
     // The key is the feed's nickname, the one data/attendance stores (C012).

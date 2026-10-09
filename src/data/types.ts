@@ -167,6 +167,8 @@ export interface Stakes {
   round: string;
   /** Series game number. Not a doubleheader index, and not an ESPN type code. */
   game?: number;
+  /** An "if necessary" playoff game (Kylie, Oct 9, C024): shown, labeled, and left out of the read until the league confirms it. */
+  ifNecessary?: boolean;
 }
 
 export interface CrowdEvent {

@@ -315,6 +315,7 @@ export {
   refreshStamp,
   scheduleCoverage,
   sizeTier,
+  drawSize,
   stampLocksAt,
   forecastBeforeStart,
   drawSavedAhead,

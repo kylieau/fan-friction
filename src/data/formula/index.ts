@@ -6,7 +6,7 @@ import { formatScore } from '../../config/scoreLabels';
 import { listedCapacity } from '../read';
 import type { CrowdEvent } from '../types';
 import { weatherForEvent } from '../weather';
-import { dateCrowdFight, type DateCrowdFight } from './crowdFight';
+import { dateCrowdFight, leftOut, type DateCrowdFight } from './crowdFight';
 import { dateConditions, eventConditions, type EventConditions, weatherGlyph } from './weather';
 import { dateGridlock, gridlockWhy, type DateGridlock } from './gridlock';
 
@@ -50,7 +50,7 @@ export function combine(scores: number[]): number {
 function crowdFightWhy(cf: DateCrowdFight): string {
   const big = cf.events.filter((row) => row.competitors.length > 0);
   if (cf.contestedSeats < 1000 || big.length === 0) return 'Nothing else big that date.';
-  const n = cf.events.filter((row) => !row.event.invited && row.competitors.length > 0).length;
+  const n = cf.events.filter((row) => !leftOut(row.event) && row.competitors.length > 0).length;
   const puller = cf.topPuller;
   if (puller && n >= 2) {
     const others = n - 1;
@@ -67,7 +67,7 @@ const COUNT = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eig
  */
 export function crowdFightDetail(cf: DateCrowdFight, cityName: string): string {
   if (cf.contestedSeats < 1000) return '';
-  const n = cf.events.filter((row) => !row.event.invited && row.competitors.length > 0).length;
+  const n = cf.events.filter((row) => !leftOut(row.event) && row.competitors.length > 0).length;
   return `${cityName} activity across ${n} ${n === 1 ? 'event' : 'events'}.`;
 }
 

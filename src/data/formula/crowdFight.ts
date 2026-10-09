@@ -10,7 +10,7 @@ import { occasionFor, PULL } from './occasion';
 import { overlapTier, TIER_WEIGHT, type Tier } from './overlap';
 
 /** Typical length, hours, by type. Used for the time factor. */
-const DURATION: Record<string, number> = { football: 3.25, baseball: 2.75, basketball: 2.5, hockey: 2.5, soccer: 2, concert: 3 };
+const DURATION: Record<string, number> = { football: 3.25, baseball: 2.75, basketball: 2.5, hockey: 2.5, soccer: 2, concert: 3, festival: 8, special: 3 };
 /** When a start time is missing: a typical start by type (local hour). The read is then labeled estimated. */
 const DEFAULT_START: Record<string, number> = { football: 13.1, baseball: 19.2, basketball: 19.5, hockey: 19.5, soccer: 19.5, concert: 20 };
 /** Seats-in-a-fight that reads as a Spicy night in LA: 0.2 × the median capacity of the city's 15k+ venues. */
@@ -22,7 +22,8 @@ const EVENT_SCALE = 14;
 const DATE_SCALE = 2.5;
 
 function kindOf(event: CrowdEvent): string {
-  return event.audience.domain === 'sports' ? event.audience.sport : 'concert';
+  if (event.audience.domain === 'sports') return event.audience.sport;
+  return event.kind === 'festival' || event.kind === 'special' ? event.kind : 'concert';
 }
 
 function durationOf(event: CrowdEvent): number {
@@ -99,6 +100,11 @@ function capacityOf(event: CrowdEvent): { cap: number; estimated: boolean } {
   return { cap: known || 5000, estimated: true };
 }
 
+/** Out of the read: an invited event, or a playoff game that may not be played (C024). */
+export function leftOut(event: CrowdEvent): boolean {
+  return Boolean(event.invited || event.stakes?.ifNecessary);
+}
+
 /** One event's Crowd fight against the others that date. Invited events neither pull nor get pulled. */
 export function eventCrowdFight(event: CrowdEvent, sameDate: readonly CrowdEvent[]): EventCrowdFight {
   const me = capacityOf(event);
@@ -106,9 +112,9 @@ export function eventCrowdFight(event: CrowdEvent, sameDate: readonly CrowdEvent
   const competitors: Competitor[] = [];
   let product = 1;
   let estimated = me.estimated || !event.start;
-  if (!event.invited) {
+  if (!leftOut(event)) {
     for (const other of sameDate) {
-      if (other.id === event.id || other.invited || !eventFeedsFriction(other)) continue;
+      if (other.id === event.id || leftOut(other) || !eventFeedsFriction(other)) continue;
       const cap = capacityOf(other);
       const tier = overlapTier(event, other);
       const t = timeFactor(event, other);
@@ -132,7 +138,7 @@ export function dateCrowdFight(metroId: string, sameDate: readonly CrowdEvent[])
   let total = 0;
   const pulled = new Map<string, number>();
   for (const row of events) {
-    if (!eventFeedsFriction(row.event) || row.event.invited) continue;
+    if (!eventFeedsFriction(row.event) || leftOut(row.event)) continue;
     const cap = capacityOf(row.event).cap;
     total += cap;
     contested += cap * row.D;

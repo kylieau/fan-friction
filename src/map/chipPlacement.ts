@@ -23,6 +23,8 @@ export const STEM_GAP = 16;
 /** Taps within this of a dot's center count, even when the drawn dot is smaller. */
 export const DOT_HIT_RADIUS = 22;
 
+/** A hidden chip counts under a placed one only when their dots are this close (C047). */
+const NEIGHBOR_PX = 180;
 /** Old order. Used only when the outward side does not fit. */
 const FALLBACK: Side[] = ['top', 'right', 'left', 'bottom'];
 const CARD_AIR = 4;
@@ -53,6 +55,12 @@ export interface PlacedChip {
   box: Box;
   gap: number;
   stem: Stem | null;
+}
+
+export interface Placement {
+  placed: PlacedChip[];
+  /** A dropped chip's id → the placed chip that sits on its spot (the biggest crowd there). It carries the "+N" badge (C047). */
+  blockedBy: Map<string, string>;
 }
 
 function boxFor(side: Side, c: ChipCandidate, gap: number): Box {
@@ -217,19 +225,69 @@ function placeCard(
   return null;
 }
 
-/** Place cards in rank order. Missing ids were dropped; their marks stay. */
-export function placeChips(candidates: ChipCandidate[], obstacles: Box[], view: Box): PlacedChip[] {
+/**
+ * A fanned-out card (C047, mockup 06 option 1): the hidden neighbors of a chip, laid out in
+ * a column stepping away from the dot with a leader line, allowed to cross other cards'
+ * stems and the gold but never another card, the chrome or the edge of the view.
+ */
+function placeFanned(c: ChipCandidate, obstacles: Box[], taken: Box[], view: Box): PlacedChip | null {
+  for (const side of ['right', 'left', 'bottom', 'top'] as Side[]) {
+    for (let step = 0; step < 6; step++) {
+      const gap = CARD_GAP + step * (c.h + CARD_AIR);
+      const box = boxFor(side, c, gap);
+      if (!clearAt(box, obstacles, taken, view)) continue;
+      return finish(c, side, box, gap);
+    }
+  }
+  return null;
+}
+
+/**
+ * Place cards in rank order. A card with no room is dropped and its mark stays; the
+ * placed card on its spot gets the count. Ids in `fanned` are placed last, in a column,
+ * so a tapped "+N" shows what was hiding.
+ */
+export function placeChips(candidates: ChipCandidate[], obstacles: Box[], view: Box, fanned: ReadonlySet<string> = new Set()): Placement {
   const frame = pinFrame(candidates);
   const ordered = [...candidates].sort((a, b) => b.rank - a.rank || a.id.localeCompare(b.id));
   const placed: PlacedChip[] = [];
   const taken: Box[] = [];
+  const dropped: ChipCandidate[] = [];
   for (const c of ordered) {
+    if (fanned.has(c.id)) continue;
     const spot = placeCard(c, frame, obstacles, taken, candidates, view);
-    if (!spot) continue;
+    if (!spot) {
+      dropped.push(c);
+      continue;
+    }
     placed.push(spot);
     taken.push(spot.box);
   }
-  return placed;
+  for (const c of ordered) {
+    if (!fanned.has(c.id)) continue;
+    const spot = placeFanned(c, obstacles, taken, view);
+    if (!spot) {
+      dropped.push(c);
+      continue;
+    }
+    placed.push(spot);
+    taken.push(spot.box);
+  }
+  // Each dropped chip belongs to the nearest placed chip's dot, when that dot is close:
+  // a neighbor, not a chip across town hidden by the sheet or the header.
+  const blockedBy = new Map<string, string>();
+  const at = new Map(candidates.map((c) => [c.id, c]));
+  for (const d of dropped) {
+    let best: { id: string; dist: number } | null = null;
+    for (const p of placed) {
+      const pin = at.get(p.id);
+      if (!pin) continue;
+      const dist = Math.hypot(pin.x - d.x, pin.y - d.y);
+      if (!best || dist < best.dist) best = { id: p.id, dist };
+    }
+    if (best && best.dist <= NEIGHBOR_PX) blockedBy.set(d.id, best.id);
+  }
+  return { placed, blockedBy };
 }
 
 export interface DotHit {

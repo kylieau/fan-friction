@@ -13,9 +13,11 @@ import {
   type DotHit,
   type PlacedChip,
 } from './chipPlacement';
+import { typeIconSvg } from './typeIcons';
 
-/** People in the disc. A sold-out show with no separate count uses the room. */
+/** People in the disc. A sold-out show with no separate count uses the room. A muted event has no glow. */
 function crowdForGlow(p: CrowdPoint): number | undefined {
+  if (p.muted) return undefined;
   if (p.count !== undefined && p.count > 0) return p.count;
   if (p.soldOut && p.capacity) return p.capacity;
   return undefined;
@@ -50,6 +52,10 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
   const pointsRef = useRef(points);
   pointsRef.current = points;
   const refreshRef = useRef<() => void>(() => {});
+  /** The ids fanned out from a tapped "+N" badge; cleared on the next pick. */
+  const fannedRef = useRef<Set<string>>(new Set());
+  /** Placed chip id → the ids hiding under it, from the last placement. */
+  const groupsRef = useRef<Map<string, string[]>>(new Map());
 
   useEffect(() => {
     if (!map || points.length === 0) return;
@@ -68,6 +74,7 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
             upcoming: p.upcoming,
             capacity: p.capacity ?? 20000,
             fill: p.fill ?? -1,
+            muted: p.muted,
           },
         })),
       },
@@ -98,8 +105,9 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
         type: 'circle',
         source: SOURCE,
         paint: {
-          'circle-color': '#0F1B2D',
-          'circle-radius': 5,
+          // A muted (under-floor) event is a smaller, paler dot (3.4).
+          'circle-color': ['case', ['get', 'muted'], '#7B8798', '#0F1B2D'] as never,
+          'circle-radius': ['case', ['get', 'muted'], 3.5, 5] as never,
           'circle-opacity': 1,
           'circle-opacity-transition': { duration: 280, delay: 0 },
         },
@@ -131,16 +139,26 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
     const entry = points.map((p) => p.event);
     for (const p of points) {
       const el = document.createElement('div');
-      el.className = 'crowd-label is-hidden';
+      el.className = `crowd-label is-hidden${p.muted ? ' is-muted' : ''}`;
       el.dataset.id = p.event.id;
       const name = escapeHtml(mapTitle(p.event, entry));
+      // Line 2 opens with a one-color type icon in Dodger blue (Kylie, Oct 9, 3.18; mockup 07 option C).
       el.innerHTML =
         `<span class="crowd-line">` +
         `<span class="crowd-name">${name}</span>` +
-        `<span class="crowd-meta">${escapeHtml(chipDetail(p))}</span>` +
-        `</span>`;
+        `<span class="crowd-meta">${typeIconSvg(p.event)}<span>${escapeHtml(chipDetail(p))}</span></span>` +
+        `</span>` +
+        `<button type="button" class="crowd-more is-hidden" aria-label="More events here"></button>`;
       el.addEventListener('click', (ev) => {
         ev.stopPropagation();
+        const target = ev.target;
+        if (target instanceof Element && target.closest('.crowd-more')) {
+          // "+N": fan the hidden neighbors out, or fold them back (C047).
+          const group = groupsRef.current.get(p.event.id) ?? [];
+          fannedRef.current = fannedRef.current.size && group.every((id) => fannedRef.current.has(id)) ? new Set() : new Set(group);
+          schedule();
+          return;
+        }
         selectRef.current(p.event.id);
       });
       const marker = new Marker({
@@ -217,7 +235,10 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
         });
       }
 
-      const placed = placeChips(candidates, chromeBoxes(map), view);
+      const { placed, blockedBy } = placeChips(candidates, chromeBoxes(map), view, fannedRef.current);
+      const groups = new Map<string, string[]>();
+      for (const [hidden, under] of blockedBy) groups.set(under, [...(groups.get(under) ?? []), hidden]);
+      groupsRef.current = groups;
       const byId = new Map(placed.map((chip) => [chip.id, chip]));
       const atById = new Map(candidates.map((c) => [c.id, c]));
 
@@ -231,6 +252,13 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
         el.classList.toggle('selected', chosen && !!chip);
         el.classList.toggle('is-dim', !!selectedRef.current && !chosen && !!chip);
         el.classList.toggle('is-hidden', !chip);
+        el.classList.toggle('is-fanned', fannedRef.current.has(p.event.id));
+        const more = el.querySelector<HTMLElement>('.crowd-more');
+        const hiding = groups.get(p.event.id)?.length ?? 0;
+        if (more) {
+          more.classList.toggle('is-hidden', hiding === 0);
+          more.textContent = hiding ? `+${hiding}` : '';
+        }
         if (!chip || !at) continue;
         const cx = (chip.box.x0 + chip.box.x1) / 2;
         const cy = (chip.box.y0 + chip.box.y1) / 2;
@@ -292,6 +320,7 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       if (target instanceof Element && target.closest('.crowd-label, .maplibregl-ctrl')) return;
       const dots = dotsInOrder(map, pointsRef.current, selectedRef.current);
       const hit = nearestDot(dots, e.point.x, e.point.y);
+      fannedRef.current = new Set();
       selectRef.current(hit ? hit.id : null);
     };
     const onHover = (e: { point: { x: number; y: number } }) => {
@@ -349,6 +378,7 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
 }
 
 function crowdRank(p: CrowdPoint): number {
+  if (p.muted) return -1; // a small event's card comes last
   if (p.count !== undefined) return p.count;
   if (p.soldOut && p.capacity) return p.capacity;
   return 0;
@@ -438,9 +468,9 @@ function drawStems(svg: SVGSVGElement, placed: PlacedChip[], w: number, h: numbe
   }
 }
 
-/** Line 2 of a map card: "1:08 pm · 40.0k". A different day is named first. No status words. */
+/** Line 2 of a map card: "1:08 pm · 40k". A different day is named first. No status words. */
 function chipDetail(p: CrowdPoint): string {
-  const time = p.event.start ? clockTime(p.event.start) : 'Time n/a';
+  const time = p.event.start ? clockTime(p.event.start) : 'Time TBA';
   // An expected draw shows as its number, like any estimate on a map card (Kylie, Oct 7).
   const crowd = crowdShort(p.event, p.capacity, false, false);
   return p.dayTag ? `${p.dayTag} · ${time} · ${crowd}` : `${time} · ${crowd}`;

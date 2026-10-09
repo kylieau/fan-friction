@@ -59,6 +59,8 @@ interface MlbGame {
   description?: string;
   seriesDescription?: string;
   seriesGameNumber?: number;
+  /** "Y" on a playoff game that may not be played. */
+  ifNecessary?: string;
   /** Doubleheader index. Not the series game. */
   gameNumber?: number;
   status: { detailedState: string; startTimeTBD?: boolean; abstractGameState?: string };
@@ -103,6 +105,7 @@ function toEvent(g: MlbGame, metroId: string): CrowdEvent | null {
   const awayName = g.teams.away.team.teamName ?? g.teams.away.team.name;
   const homeName = g.teams.home.team.teamName ?? g.teams.home.team.name;
   const stakes = mlbStakes(g);
+  if (stakes && g.ifNecessary === 'Y') stakes.ifNecessary = true;
   const broadcast = tvStation(g.broadcasts);
   const starters = {
     ...(g.teams.home.probablePitcher?.fullName ? { home: g.teams.home.probablePitcher.fullName } : {}),

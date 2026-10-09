@@ -4,7 +4,7 @@ import { ChevronDown, ShareIcon } from '../components/Icons';
 import { RemoveConfirm } from '../components/EntryLayer';
 import { ReadTile } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { formatScore, scoreBand, scoreLabel, showFriction } from '../config/scoreLabels';
+import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
   asMetroDate,
   cityWeather,
@@ -41,6 +41,8 @@ import { dayWord } from '../lib/dayWord';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId } from '../lib/homeCity';
 import { quietStakes } from '../lib/stakes';
+import { eventColumns } from '../lib/eventColumns';
+import { EventCols, EventColsHead, EventColsKey } from './MapScreen';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 
@@ -298,11 +300,11 @@ export function DateScreen() {
         <h2 id="that-date" className="you-heading">
           That {word} in {metro.name}
         </h2>
+        <EventColsHead />
         {(
           <ul className="log-list timeline-list">
             {events.map((e) => {
               const yours = attended(e) || attending(e);
-              const a = e.assessment;
               return (
                 <li key={e.id} className={`tl-row${yours || e.id === highlight ? ' yours' : ''}`}>
                   <Link to={eventPath(e.id, e.metroId)} className="tl-main">
@@ -311,7 +313,7 @@ export function DateScreen() {
                       <span className="log-title">{listTitle(e)}</span>
                       {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
                       <span className="log-facts">
-                        {[venueOf(e), crowdLine(e)].filter(Boolean).join(' · ')}
+                        {[venueOf(e), crowdLine(e), yours ? (ahead ? 'Attending' : 'Attended') : null].filter(Boolean).join(' · ')}
                         <VenueWeather event={e} />
                       </span>
                     </span>
@@ -330,16 +332,15 @@ export function DateScreen() {
                     <button type="button" className={`fav-toggle${yours ? ' on' : ''}`} onClick={() => mark(e)}>
                       {ahead ? (attending(e) ? 'Attending' : 'Attend') : attended(e) ? 'Attended' : 'Attended?'}
                     </button>
-                  ) : yours ? (
-                    <span className="chip chip-you">{ahead ? 'Attending' : 'Attended'}</span>
-                  ) : a && showFriction(a.friction) ? (
-                    <span className={`chip chip-f ${a.friction.toLowerCase()}`}>{a.friction}</span>
-                  ) : null}
+                  ) : (
+                    <EventCols cols={eventColumns(e, events)} soldOut={e.crowd.some((c) => c.soldOut)} />
+                  )}
                 </li>
               );
             })}
           </ul>
         )}
+        <EventColsKey />
       </section>
       )}
 

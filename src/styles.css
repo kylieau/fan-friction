@@ -1421,7 +1421,7 @@ button {
   width: 112px;
   height: 44px;
   padding: 2px 4px;
-  overflow: hidden;
+  overflow: visible; /* the +N badge sits on the corner; the text inside clips itself */
   background: #fff;
   opacity: 1;
   border: 1px solid rgba(15, 27, 45, 0.35);
@@ -1492,6 +1492,9 @@ button {
 
 .crowd-meta {
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3px;
   font-size: 11px;
   font-weight: 700;
   line-height: 1.15;
@@ -1500,6 +1503,54 @@ button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.crowd-meta > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.crowd-type {
+  flex-shrink: 0;
+}
+
+.crowd-label.is-dim .crowd-type {
+  opacity: 0.45;
+}
+
+/* A small event's card: paler, like its dot (3.4). */
+.crowd-label.is-muted .crowd-name,
+.crowd-label.is-muted .crowd-meta {
+  color: var(--muted);
+}
+
+/* "+N" on the chip that sits on hidden neighbors; tap to fan them out (C047). */
+.crowd-more {
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  min-width: 22px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  border: none;
+  background: var(--dodger);
+  color: var(--card);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 20px;
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.3);
+  cursor: pointer;
+}
+
+.crowd-more.is-hidden {
+  display: none;
+}
+
+.crowd-label.is-fanned {
+  box-shadow:
+    0 0 0 1.5px var(--dodger),
+    0 2px 6px rgba(15, 27, 45, 0.28);
 }
 
 .tag-count {
@@ -2058,6 +2109,67 @@ button {
 .map-key-empty {
   font-weight: 600;
   color: var(--ink2);
+}
+
+.picker-done {
+  position: sticky;
+  bottom: 8px;
+  padding-top: 8px;
+  background: linear-gradient(to top, var(--bg) 70%, transparent);
+}
+
+.event-cols {
+  display: grid;
+  grid-template-columns: 60px 70px;
+  gap: 6px;
+  flex-shrink: 0;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.event-col {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-col-reason {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink2);
+  white-space: normal;
+  line-height: 1.15;
+}
+
+.event-cols-head {
+  display: grid;
+  grid-template-columns: 1fr 60px 70px;
+  gap: 6px;
+  padding: 0 12px 4px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.event-cols-key {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--ink2);
+}
+
+.timeline-list .event-cols {
+  grid-template-columns: 56px 66px;
+}
+
+.timeline-list .event-cols-head,
+.date-page .event-cols-head {
+  grid-template-columns: 1fr 56px 66px;
 }
 
 .map-key-note {

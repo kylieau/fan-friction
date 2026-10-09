@@ -153,7 +153,8 @@ export function espnStakes(game: EspnScheduleGame, league: FeedLeague): Stakes |
   }
 
   if (!round || BANNED.test(round)) return undefined;
-  return gameNo ? { round, game: gameNo } : { round };
+  const ifNecessary = /\bif necessary\b/i.test(headline);
+  return { round, ...(gameNo ? { game: gameNo } : {}), ...(ifNecessary ? { ifNecessary: true } : {}) };
 }
 
 /**
@@ -163,12 +164,14 @@ export function espnStakes(game: EspnScheduleGame, league: FeedLeague): Stakes |
  */
 export function otherPostseason(game: EspnScheduleGame): Stakes | undefined {
   if (!playoffSeason(game)) return undefined;
-  const headline = headlineOf(game).replace(/\s+if necessary$/i, '');
+  const raw = headlineOf(game);
+  const ifNecessary = /\bif necessary\b/i.test(raw);
+  const headline = raw.replace(/\s+if necessary$/i, '');
   const m = headline.match(/^(?:WNBA|NWSL|MLS)?\s*(.*?)(?:\s*-\s*Game\s+(\d+))?$/i);
   const round = m?.[1]?.trim();
   const game_ = m?.[2] ? Number(m[2]) : undefined;
   const label = round && !BANNED.test(round) ? round : 'Postseason';
-  return game_ ? { round: label, game: game_ } : { round: label };
+  return { round: label, ...(game_ ? { game: game_ } : {}), ...(ifNecessary ? { ifNecessary: true } : {}) };
 }
 
 export function leagueFromPath(path: string): FeedLeague | null {

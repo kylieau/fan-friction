@@ -178,35 +178,35 @@ export function FavoritesScreen() {
         {search}
         {results || (
           <>
-            {favorites.length > 0 && (
-              <section className="you-block" aria-labelledby="following-heading">
-                <h2 id="following-heading" className="you-heading">
-                  Following
-                </h2>
-                <ul className="log-list">
-                  {favorites.map((fav) => (
-                    <FavRow key={favoriteKey(fav)} fav={fav} sub={subFor(fav, countFor(fav))} on />
-                  ))}
-                </ul>
-              </section>
-            )}
-            {suggestions.length > 0 && (
-              <section className="you-block" aria-labelledby="suggest-heading">
-                <h2 id="suggest-heading" className="you-heading">
-                  In {home.name}
-                </h2>
-                <ul className="log-list">
-                  {suggestions.map((fav) => (
-                    <FavRow key={favoriteKey(fav)} fav={fav} sub={subFor(fav, countFor(fav))} on={false} />
-                  ))}
-                </ul>
-              </section>
-            )}
+            {/* Sections by kind (Kylie, Oct 9, C076): what you follow first, then the rest in your home city. */}
+            {KINDS.map(({ kind, label }) => {
+              const on = favorites.filter((fav) => fav.kind === kind);
+              const more = suggestions.filter((fav) => fav.kind === kind);
+              if (on.length === 0 && more.length === 0) return null;
+              return (
+                <section key={kind} className="you-block" aria-labelledby={`pick-${kind}`}>
+                  <h2 id={`pick-${kind}`} className="you-heading">
+                    {label}s
+                  </h2>
+                  <ul className="log-list">
+                    {on.map((fav) => (
+                      <FavRow key={favoriteKey(fav)} fav={fav} sub={subFor(fav, countFor(fav))} on />
+                    ))}
+                    {more.map((fav) => (
+                      <FavRow key={favoriteKey(fav)} fav={fav} sub={subFor(fav, countFor(fav))} on={false} />
+                    ))}
+                  </ul>
+                </section>
+              );
+            })}
           </>
         )}
-        <button type="button" className="gold-button" onClick={done} disabled={favorites.length === 0}>
-          Done
-        </button>
+        {/* Done stays in reach while the list scrolls (C077). */}
+        <div className="picker-done">
+          <button type="button" className="gold-button" onClick={done} disabled={favorites.length === 0}>
+            Done
+          </button>
+        </div>
       </div>
     );
   }

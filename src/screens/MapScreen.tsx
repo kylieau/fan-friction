@@ -28,11 +28,11 @@ import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { AreaSwitcher } from '../components/AreaSwitcher';
 import { DateScore } from '../components/DateScore';
 import { ArrowRight, ChevronDown, RecenterIcon, SearchIcon } from '../components/Icons';
-import { sheetBadges } from '../lib/chips';
 import { dayWordFor } from '../lib/dayWord';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
+import { eventColumns, type EventColumns } from '../lib/eventColumns';
 import { clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
@@ -363,6 +363,7 @@ export function MapScreen() {
         </div>
 
         <div className="sheet-body" ref={bodyRef}>
+          {sheetEvents.length > 0 && <EventColsHead />}
           {sheetEvents.length > 0 && (
             <ul className="event-list">
               {sheetEvents.map((e) => (
@@ -382,6 +383,7 @@ export function MapScreen() {
               ))}
             </ul>
           )}
+          {sheetEvents.length > 0 && <EventColsKey />}
           {upcoming.length > 0 && (
             <div className="coming-up">
               <div className="section-title">Coming up</div>
@@ -502,7 +504,35 @@ function sheetVenue(event: CrowdEvent): string | null {
   return event.place.name;
 }
 
-/** One sheet card: the same lines as the map chip, plus a quiet venue and the badges. */
+/** The two labeled columns beside a listed event (C022 / 3.5). Shared by the sheet and the date page. */
+export function EventCols({ cols, soldOut }: { cols: EventColumns; soldOut?: boolean }) {
+  const f = cols.friction;
+  return (
+    <span className="event-cols">
+      <span className="event-col">{soldOut ? 'Sold out' : (cols.occasion ?? '—')}</span>
+      <span className="event-col">
+        {f && 'pill' in f ? <span className={`chip chip-f ${f.level}`}>{f.pill}</span> : <span className="event-col-reason">{f ? f.reason : '—'}</span>}
+      </span>
+    </span>
+  );
+}
+
+/** The column headings and the one-line key under a list (C022). */
+export function EventColsHead() {
+  return (
+    <div className="event-cols-head" aria-hidden>
+      <span />
+      <span className="event-col">Occasion</span>
+      <span className="event-col">Friction</span>
+    </div>
+  );
+}
+
+export function EventColsKey() {
+  return <p className="event-cols-key">Occasion: how big a deal. Friction: other big crowds and gridlock around it. The box above: the whole city.</p>;
+}
+
+/** One sheet card: the same lines as the map chip, plus a quiet venue and the two columns. */
 function EventRow({
   event: e,
   dateEvents,
@@ -518,12 +548,13 @@ function EventRow({
   showDate?: boolean;
   href?: string;
 }) {
-  const badges = sheetBadges(e);
   const time = e.start ? clockTime(e.start) : 'Time TBA';
   const crowd = crowdShort(e);
+  const soldOut = e.crowd.some((c) => c.soldOut);
   const detail = showDate ? `${shortLocalDate(e.date)} · ${time} · ${crowd}` : `${time} · ${crowd}`;
   const venue = sheetVenue(e);
   const stakes = quietStakes(e, dateEvents);
+  const cols = eventColumns(e, dateEvents);
   const body = (
     <>
       <span className="event-main">
@@ -532,15 +563,7 @@ function EventRow({
         {stakes && <span className="event-stakes">{stakes}</span>}
         <span className="event-meta">{detail}</span>
       </span>
-      {badges.length > 0 && (
-        <span className="event-badges">
-          {badges.map((badge) => (
-            <span key={badge.kind} className={`chip chip-${badge.kind}${badge.level ? ` chip-f ${badge.level}` : ''}`}>
-              {badge.text}
-            </span>
-          ))}
-        </span>
-      )}
+      <EventCols cols={cols} soldOut={soldOut} />
     </>
   );
   const cls = `event-row${selected ? ' selected' : ''}`;

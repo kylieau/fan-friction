@@ -38,6 +38,7 @@ export function quietStakes(event: CrowdEvent, entry: readonly CrowdEvent[]): st
   const { round, game } = event.stakes!;
   const parts = [round];
   if (game && game > 0) parts.push(`Game ${game}`);
+  if (event.stakes!.ifNecessary) parts.push('If necessary');
   if (collided(event, entry)) {
     const team = teamName(event);
     if (team) parts.push(team);

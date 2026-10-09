@@ -52,6 +52,7 @@ function factChips(event: CrowdEvent): string[] {
   const chips: string[] = [];
   const f = event.occasionFacts ?? {};
   if (event.stakes?.round) chips.push(event.stakes.game ? `${event.stakes.round} G${event.stakes.game}` : event.stakes.round);
+  if (event.stakes?.ifNecessary) chips.push('If necessary');
   if (f.final && !event.stakes?.round) chips.push('final');
   if (f.newMarket) chips.push('first game in LA');
   if (f.opener) chips.push('opener');

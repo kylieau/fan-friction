@@ -1,7 +1,7 @@
 // Turns a date's events into the dots the Crowds map draws. Kept apart from
 // the drawing so the Event screen and share cards can reuse it.
 
-import { VENUES, capacityOn, roundEstimate, todayIn, venueNameOn } from '../data';
+import { VENUES, capacityOn, roundEstimate, sizeTier, todayIn, venueNameOn } from '../data';
 import { DEFAULT_METRO } from '../config/metros';
 import { shortLocalDate } from '../lib/dates';
 import type { CrowdEvent, LngLat } from '../data';
@@ -20,11 +20,18 @@ export interface CrowdPoint {
   upcoming: boolean;
   /** "Sat, Oct 4" when the event is on a different date than the one being viewed. */
   dayTag: string | null;
+  /** Under the friction floor: a muted dot, no glow, placed after the big crowds. */
+  muted: boolean;
 }
 
-/** Under the ~5k floor stays in the catalog. The map and the On-the-map sheet skip it. */
+/** Every event at a known venue is on the map; a small one is drawn muted (Kylie, Oct 9, 3.4). */
 export function showsOnMap(event: CrowdEvent): boolean {
-  return event.belowFloor !== true;
+  return event.place.type === 'venue';
+}
+
+/** Under the ~5,000 floor: on the map but muted, with no friction label. */
+export function isMuted(event: CrowdEvent): boolean {
+  return sizeTier(event) !== 'feeds-friction';
 }
 
 const SETUP_BY_SPORT: Record<string, string> = {
@@ -59,17 +66,23 @@ export function crowdPoints(events: CrowdEvent[], date: string): CrowdPoint[] {
       fill,
       upcoming: event.date >= today,
       dayTag: event.date === date ? null : shortLocalDate(event.date),
+      muted: isMuted(event),
     });
   }
   return points;
 }
 
 /**
- * Thousands with one decimal: 40000 → "40.0k", 17500 → "17.5k".
- * Used on the map and in the sheet. The event screen still spells the full count.
+ * The short crowd format, wherever a crowd is shortened (Kylie, Oct 9, 6.3): always
+ * thousands with "k". 10,000 and up as whole thousands ("60k", never "16.0k"); under
+ * 10,000 with one decimal ("9.5k"); under 1,000 with no leading zero (".6k"). Rounding
+ * that reaches 10.0k reads "10k". Full numbers stay where there is room (C073).
  */
 export function crowdThousands(count: number): string {
-  return `${(count / 1000).toFixed(1)}k`;
+  if (count >= 9950) return `${Math.round(count / 1000)}k`;
+  const k = (count / 1000).toFixed(1);
+  if (count < 1000) return k === '1.0' ? '1.0k' : `${k.slice(1)}k`;
+  return `${k}k`;
 }
 
 /** The room size used when a sold-out show has no separate count. */
