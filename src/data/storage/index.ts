@@ -22,8 +22,26 @@ export { isCloudConfigured } from './supabaseClient';
 
 let signedInAs: string | null = null;
 
+/**
+ * How far this device's clock is from the server's, in ms (R10). Learned on each
+ * account load; zero while signed out or before the first load. Edit times made
+ * here are stamped with the server's clock so a phone set to the wrong time
+ * cannot win a sync conflict it should lose.
+ */
+let clockOffsetMs = 0;
+
+function setServerTime(iso: string) {
+  const serverMs = Date.parse(iso);
+  if (Number.isFinite(serverMs)) clockOffsetMs = serverMs - Date.now();
+}
+
+/** Now, by the server's clock when one has been heard; otherwise this device's. */
+export function serverNow(): Date {
+  return new Date(Date.now() + clockOffsetMs);
+}
+
 const client = supabase();
-const cloudStore: EntryStore | null = client ? createSupabaseEntryStore(client, () => signedInAs) : null;
+const cloudStore: EntryStore | null = client ? createSupabaseEntryStore(client, () => signedInAs, setServerTime) : null;
 
 /** Cloud writes wait their turn; a write that failed is resent with the next one. */
 let queue: Promise<void> = Promise.resolve();
@@ -137,9 +155,10 @@ const KEEP_REMOVED_MS = 183 * 86400 * 1000;
 /**
  * What changed from `before` to `after`, and the log to save: changed rows get
  * this moment as their edit time, removed ids are remembered, and an id that
- * comes back (Attended tapped again) is forgotten from the removed map.
+ * comes back (Attended tapped again) is forgotten from the removed map. `now` is the
+ * server's clock when signed in (R10).
  */
-export function diffLogs(before: PersonalLog, after: PersonalLog, now = new Date()): LogDiff {
+export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNow()): LogDiff {
   const at = now.toISOString();
   const entries = diffRows(before.added, after.added, at);
   const plans = diffRows(before.plans, after.plans, at);

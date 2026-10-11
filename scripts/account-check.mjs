@@ -25,7 +25,7 @@ const empty = log([]);
 // ---- Sync: two sessions, one account ----
 const s1 = await session('a'), s2 = await session('a');
 // clean slate
-await s1.c.from('entries').delete().eq('user_id', s1.id); await s1.c.from('plans').delete().eq('user_id', s1.id); await s1.c.from('settings').delete().eq('user_id', s1.id);
+await s1.c.from('entries').delete().eq('user_id', s1.id); await s1.c.from('plans').delete().eq('user_id', s1.id); await s1.c.from('settings').delete().eq('user_id', s1.id); await s1.c.from('removed_rows').delete().eq('user_id', s1.id);
 
 let phone1 = log([entry('mark-x'), entry('mark-y', { with: 'Sam' })], [{ id: 'plan-p', date: '2026-12-01', metroId: 'la', eventId: 'p', title: 'P' }]);
 let d = diffLogs(empty, phone1); phone1 = d.log; await s1.store.save(d);
@@ -42,8 +42,15 @@ d = diffLogs(phone1, log([...phone1.added, entry('mark-z')], phone1.plans, { rem
 let rows = (await s1.c.from('entries').select('id').eq('user_id', s1.id)).data.map((r) => r.id).sort();
 ok('a stale session adding z did not bring x back (C112)', rows.join() === 'mark-y,mark-z', rows.join());
 
-// session 1 reopens: merge drops x by the tombstone, keeps z (C114)
+// session 1, still stale, saves a settings change (favorites): with the old JSON map that overwrote the
+// account's removed ids and x came back on the next merge (R09). With removed_rows it cannot.
+d = diffLogs(phone1, log(phone1.added, phone1.plans, { removed: phone1.removed, favorites: [{ kind: 'team', id: 'dodgers', label: 'Dodgers' }] })); phone1 = d.log; await s1.store.save(d);
 let cloud1 = await s1.store.load();
+ok('x stays removed after a stale tab wrote settings (R09; needs migration 0014)', 'mark-x' in cloud1.removed && !mergeLogs(cloud1, phone1).added.some((e) => e.id === 'mark-x'), Object.keys(cloud1.removed).join());
+ok('edit times come back as the server clock (R10; needs migration 0014)', cloud1.added.every((e) => typeof e.updatedAt === 'string' && e.updatedAt.endsWith('Z')));
+
+// session 1 reopens: merge drops x by the tombstone, keeps z (C114)
+cloud1 = await s1.store.load();
 let merged = mergeLogs(cloud1, phone1);
 ok('on reopen, x stays removed and z stays (C114)', merged.added.map((e) => e.id).sort().join() === 'mark-y,mark-z', merged.added.map((e) => e.id).join());
 
@@ -88,7 +95,7 @@ ok('a pending follower sees none of A\'s entries on "People I approve"', seen.le
 // cleanup
 await b.c.from('follows').delete().eq('follower_id', b.id);
 await s1.c.from('profiles').update({ visibility: 'only_me' }).eq('id', s1.id);
-await s1.c.from('entries').delete().eq('user_id', s1.id); await s1.c.from('plans').delete().eq('user_id', s1.id); await s1.c.from('settings').delete().eq('user_id', s1.id);
+await s1.c.from('entries').delete().eq('user_id', s1.id); await s1.c.from('plans').delete().eq('user_id', s1.id); await s1.c.from('settings').delete().eq('user_id', s1.id); await s1.c.from('removed_rows').delete().eq('user_id', s1.id);
 await server.close();
 console.log(fails ? `${fails} failed` : 'all passed');
 process.exit(0);
