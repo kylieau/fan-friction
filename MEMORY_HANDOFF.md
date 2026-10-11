@@ -1,44 +1,43 @@
 # Fan/Friction: handoff snapshot
 
-Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-decisions.md` (its "Oct 9–10, 2026 decisions" section is the newest). The current build plan is Kylie's `docs/reviews/build-notes-2-oct10.md` (saved verbatim); the mocks are in `docs/design/` (index: its README) and the Ticketmaster research in `docs/research/`.
+Overwritten each session. Deferred work, open questions and the full plan live in `BACKLOG.md`. Product rules live in `AGENTS.md` (CLAUDE.md points at it), `docs/direction.md` and `docs/product-decisions.md` (its "Oct 11, 2026 decisions" and "Oct 9–10, 2026 decisions" sections are the newest). The build plans are Kylie's `docs/reviews/build-notes-2-oct10.md` and `docs/reviews/build2-judgment-call-decisions.md` (both verbatim); the mocks are in `docs/design/` (index: its README).
 
-_Last synced: Oct 11, 2026 (about 2:30 UTC, Oct 10 evening Pacific), Claude Code, ninth session (end). That session was committed and pushed to `main`; working-tree status must be checked anew. **Kylie's standing instruction: her usage is limited; commit and push after every step so the thread is never lost. No PRs: work goes to `main` (Kylie, Oct 9). Ask before anything uncertain.**_
+_Last synced: Oct 11, 2026 (about 19:00 UTC, midday Pacific), Claude Code, tenth session (end). Everything below is committed and pushed to `main`; the working tree is clean. **Kylie's standing instruction: her usage is limited; commit and push after every step so the thread is never lost. No PRs: work goes to `main` (Kylie, Oct 9). Ask before anything uncertain.**_
 
 ## Current state
-**Milwaukee preparation — Oct 11, 2026, Codex (targeted handoff update):** Kylie approved Milwaukee plus its surrounding metro and the two research prompts, now saved in `docs/research-queue/`; links and next steps are in BACKLOG's Milwaukee section. Research answers and a reviewed precise boundary are still needed before implementation. No app files or jobs changed in this step. Other work has untracked `src/data/watchPlaces.ts` and `supabase/migrations/0021_watch_places.sql`; these are not part of this session and are left unstaged. The earlier build snapshot below is preserved, not freshly verified by Codex.
+**Kylie's Oct 11 judgment-call decisions are built and live on `main`:** the build 2 review fixes she approved (R01–R06, R08, R12, R16, R18; R09 flagged, not changed; R07, R10, R11, R14, R17 left as she said), then calls 1–9: feed sentences, Attended / Watched states, the Attended stat and where-watched, the crowd lock, the ticket line with "+fees", Local competition on the date page, the crowd icon everywhere, My Stubs chips, the Stats tab left alone. Each step one commit, each build green, the new screens checked with phone-size screenshots. Decisions, reasons and rejected options are in `docs/product-decisions.md`; the parked and open items in `BACKLOG.md` ("Open from the Oct 11 decisions").
 
-**Build 2 (Kylie's Oct 10 notes) is built end to end and live on `main`**: Section 0's 18 review fixes (R15 deferred by her), the settled read box, Favorites, Following and People, privacy (search, block, keep-private, plans on profiles, link-off), one search on every tab, event naming, Home section links, the map chip L1b, friction words and the two tags, the chip card and the Why card, the color roles, the ticket line, "I watched it", and the decision logging. About twenty commits, each one step, each `npm run build` green. Screens were checked with phone-size screenshots against the mocks.
+**Not yet run by Kylie:** migrations 0020 (review fixes and the feed's watched column) and 0021 (where watched). The app falls back to the older shape until then; nine checks in `scripts/account-check.mjs` say "needs migration 0020".
 
-**Kylie ran migrations 0014–0019 and set the Ticketmaster key on Vercel (Oct 10 evening).** The live project answered the two-account check clean afterwards, and `/api/ticket-price` answers on the live site. The only step still waiting is watching the nightly run.
+**Checks:** `npm run build` passes. `node scripts/storage-check.mjs` passes. `node scripts/account-check.mjs` (live) passes everything except the nine 0020 checks. That script wipes the test accounts at the end; `node scripts/seed-test-accounts.mjs` puts them back (B follows A, A has three entries, one watched, and a plan). Reseeded Oct 11 after the last run.
 
-**Checks:** `npm run build` passes. `node scripts/storage-check.mjs` passes (offline). `node scripts/account-check.mjs` (live, two test accounts) passes in full since the migrations ran (two of its own assertions were wrong and were fixed Oct 10: the followee approves with an update, not an upsert; the private-entry check looks for the hidden id, not an exact list). That script also wipes and reseeds the test accounts: Test A has two entries and one plan again, and B follows A (approved), redone Oct 10 after an earlier run had cleared them.
-
-**The nightly job:** the Oct 10 scheduled run failed (one Open-Meteo text error killed the whole night); R12 made weather, schedule and results separate steps that skip a bad city and carry on, and a hand run on Oct 10 recovered that night (venue-id pull works; the "AIR SUPPLY" duplicate is gone). The cron is plain UTC `23 8 * * *` (about 1:23am Pacific) since Oct 9; the Oct 10 run still fired at the old 7:29am slot, so the first proof that the new time took is the run due 08:23 UTC on Oct 11. If it fires near 7am Pacific again, the cause is not the `timezone:` line.
+**The nightly job:** runs fine on the new step layout (Oct 11's scheduled run succeeded), but fires about six and a half hours after its cron whatever the cron is: cron 08:23 UTC, started 14:56 UTC. Kylie wants it done before 9 AM Eastern (R09); an earlier cron would date the Pacific cities' files with the previous day. Flagged in BACKLOG with three options; not changed.
 
 ## Key decisions in force (new this session; earlier ones in BACKLOG.md)
-- **Every read falls back until a migration runs:** `src/data/storage/dbErrors.ts` tells "not there yet" apart from a real error; the profiles layer, the account store and the screens try the new view, column or function first and the older shape second. Keep that pattern for any new migration.
-- **Views, not tables, for other people's data:** `profile_cards` (id, handle, name) and `entry_cards` (title, date, venue, city, kind, stamp, review) are what anyone but the owner reads; the tables are owner-only. The follower's side of a follow comes through `my_follows`, which never says declined or removed.
-- **Friction words on screen, levels in the data:** `src/config/scoreLabels.ts` maps Low / Moderate / Heavy / Extreme to Unopposed · Squeezed · Swamped · Steamrolled. Unopposed shows only on the event page; nothing under the floor gets a pill.
-- **Color roles are tokens** (`src/config/theme.ts`, `docs/design/colors.md`): blue = action, gold = crowd, violet = friction. Every gold button is action blue now; the Cooked read keeps gold on ink.
-- **One tags component** (`src/components/EventTags.tsx`) draws the occasion tag, the friction pill, the by line and the crowd mark everywhere.
-- **Names on screen** (`src/config/names.ts`): a feed's ALL CAPS is title-cased except the official-styling list and acronyms of four letters or fewer. Add to the list by hand; never guess.
-- **"I watched it"** is an entry with `watched: true`; `crowd` on an entry is the draw on file when it was marked (evidence for "Fans with you" and "Biggest crowd"; entries marked before Oct 10 carry none).
-- **The ticket price never touches the phone's key or the log:** `api/ticket-price.ts` runs on Vercel with `TICKETMASTER_API_KEY`; the app asks `/api/ticket-price?id=`; resale ranges are left out.
-- **Testing notes:** `npm i --no-save playwright-core`; Chromium at `/usr/bin/chromium` with swiftshader flags; `localStorage['fan-friction:home-metro'] = JSON.stringify('la')` skips the picker; a seeded local log goes in `localStorage['fan-friction:your-nights']`; a signed-in screenshot works by writing a password session into `localStorage[sb-<ref>-auth-token]` (see `private/test-session-b.json`); `scripts/.tmp-*.mjs` run from the repo root and are deleted after; don't `pkill` vite, `kill $(lsof -ti:3001)`. Wait for `domcontentloaded` plus a few seconds, not `networkidle`, on the heavier pages.
+- **Follows:** a request from a blocked person is refused by the insert rule; a removed row stays and the follower's Unfollow only hides it (`hide_follow`); a decline that fails says so and never deletes; the follower's side still reads through `my_follows`.
+- **People search is a server function** (`search_people`, three letters, punctuation stripped, twenty results); a profile link resolves one exact handle (`profile_card`); visitors cannot list `profile_cards`.
+- **The newest edit wins by when you made it:** the database skips an update whose `data.updatedAt` is older than the row's (`keep_newest_edit`); the app reads that field first.
+- **Crowds lock with the stamp** (`lockCrowds`, a lazy fill on open after plans settle): the box-score attendance, else the estimate; `crowdLocked` stops a second lookup. Nothing is taken at the tap.
+- **Where watched** is on the entry (`watchedWhere`, `watchedPlace`, `watchedPlacePrivate`) and, when shared, in `watch_places`; the database shares a name only with people public for the same event.
+- **Words:** feed lines "is going to / went to / watched {event}", no "· you too"; done states Attended / Watched; Stats "Attended", never "Events"; "Local competition", not "Up against", on the date page and the map key.
+- **Testing notes:** `npm i --no-save playwright-core`; Chromium at `/usr/bin/chromium` with swiftshader flags; `localStorage['fan-friction:home-metro'] = JSON.stringify('la')` skips the picker; a seeded local log goes in `localStorage['fan-friction:your-nights']`; a signed-in screenshot works by writing a password session into `localStorage[sb-<ref>-auth-token]` (see `private/test-session-b.json`); the page scrolls inside `.screen.page`, so scroll that element, not the window, for the bottom of a page; `scripts/.tmp-*.mjs` run from the repo root and are deleted after; don't `pkill` vite, `kill $(lsof -ti:3001)`.
 
-## Kylie's manual steps
-1. ~~Migrations 0014–0019~~ done Oct 10. ~~`TICKETMASTER_API_KEY` on Vercel~~ done Oct 10.
-2. Watch the nightly run due 08:23 UTC Oct 11 (1:23am Pacific) in GitHub Actions: it proves the cron time took, and it is the first scheduled run with the new step layout.
+## Kylie's manual steps (in order)
+1. Paste and run in the Supabase SQL editor: `supabase/migrations/0020_review_fixes.sql`, then `0021_watch_places.sql`. Each is safe to rerun. Then `node scripts/account-check.mjs` should say "all passed", and `node scripts/seed-test-accounts.mjs` after it.
+2. The crowd fill on your log: open the app signed in (it runs on open, at most forty lookups a run; open again if your log is long), then check My Stubs and Stats. Entries from nights before the schedule archive stay blank.
+3. The nightly run: decide R09 from the three options in BACKLOG. Until then it lands around 7–8 AM Pacific.
+4. Answer the ⚑ items in BACKLOG ("Open from the Oct 11 decisions"): what the event page keeps, where-watched's open questions, and the judgment calls listed there.
 
-## Open (everything, Oct 10 end of day; details in BACKLOG)
+## Open (everything, Oct 11 midday; details in BACKLOG)
 1. The manual steps above.
-2. **Build 2 judgment calls to confirm** (BACKLOG, "Open from the Oct 10 build"): feed line wording with the event named once; the date page keeps Attend / Attended while the event page says I was there; watched events out of the venue count; "+fees" dropped when the feed's range includes fees; Local competition kept under Up against.
-3. **Build 2 flags** (BACKLOG): standings beyond the schedule table, tours outside covered cities, alerts, live state, Official site links for artists, the re-score job, Weekend 1/2 on festival chips.
-4. **Kylie's phone checklist** (BACKLOG) on the live site.
-5. **R15, Famous nights wording** (deferred by Kylie).
-6. **The tester's first name in git history** (BACKLOG, Waiting on Kylie): leave or rewrite.
-7. **Tester interview about Oct 13:** a day before, check the tester's LA, San Diego, New York and Montreal nights show reads; after it, C034.
-8. Dated re-checks in BACKLOG (Nov 3 Bay Area transit vote; seasonal ones).
+2. **R09**, the nightly job's time (flagged, her call).
+3. **Call 6:** what the event page keeps; nothing was removed from it.
+4. **Where watched:** six open questions, her words.
+5. **R12:** the artist/concert equivalent of ESPN. **R17:** new framing for "Nothing bigger was on."
+6. **Kylie's phone checklist** (BACKLOG) on the live site.
+7. **The tester's first name in git history** (BACKLOG, Waiting on Kylie): leave or rewrite.
+8. **Tester interview about Oct 13:** a day before, check the tester's LA, San Diego, New York and Montreal nights show reads; after it, C034.
+9. Dated re-checks in BACKLOG (Nov 3 Bay Area transit vote; seasonal ones).
 
 **Next command to run:**
 ```bash
