@@ -18,6 +18,12 @@ on:
   schedule:
     - cron: '1 8 * * *'
   workflow_dispatch:
+    inputs:
+      metro:
+        description: 'Optional covered city id for a city build; empty runs every city'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: write
@@ -30,6 +36,8 @@ concurrency:
 jobs:
   archive:
     runs-on: ubuntu-latest
+    env:
+      CITY_METRO: ${{ inputs.metro }}
     steps:
       - name: Check out main
         uses: actions/checkout@v4
@@ -49,19 +57,28 @@ jobs:
       - name: Fetch weather
         id: weather
         continue-on-error: true
-        run: node scripts/weather-fetch.mjs
+        run: |
+          metro_args=()
+          if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi
+          node scripts/weather-fetch.mjs "${metro_args[@]}"
 
       - name: Save today's schedule
         id: schedule
         continue-on-error: true
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
-        run: node scripts/archive-schedule.mjs
+        run: |
+          metro_args=()
+          if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi
+          node scripts/archive-schedule.mjs "${metro_args[@]}"
 
       - name: Save results
         id: results
         continue-on-error: true
-        run: node scripts/results-fetch.mjs
+        run: |
+          metro_args=()
+          if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi
+          node scripts/results-fetch.mjs "${metro_args[@]}"
 
       # Expected draws from the night's results: this season's level and the opponent
       # ratios move as games are played (docs/product/expected-draw-decisions-oct7.md).
@@ -78,7 +95,10 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
-        run: node scripts/catalog-write.mjs
+        run: |
+          metro_args=()
+          if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi
+          node scripts/catalog-write.mjs "${metro_args[@]}"
 
       - name: Commit and push the snapshot
         env:
