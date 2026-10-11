@@ -58,8 +58,9 @@ export async function getCityDate(metroId: string, date: LocalDate): Promise<Cit
   if (events.length === 0) {
     // Quiet only when the city was really checked that date (Kylie, Oct 9, C030): a past date by the
     // saved captures; today and ahead by the live load, and never when a source failed.
+    // A past date with a failed source is "no data" too (R13): the captures may be fine, but today's read of them was not.
     const past = date < todayIn(METROS[metroId] ?? DEFAULT_METRO);
-    const checked = past ? checkedFor(metroId, date) : failed.length ? 'failed' : 'checked';
+    const checked = failed.length ? 'failed' : past ? checkedFor(metroId, date) : 'checked';
     day.empty = checked === 'checked' ? 'quiet' : 'no-data';
     if (checked !== 'checked') day.emptyWhy = checked;
   }
