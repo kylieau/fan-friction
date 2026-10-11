@@ -1,7 +1,10 @@
 # Saves each covered city's schedule for the coming two weeks, with weather and results.
-# Runs at 08:23 UTC: 1:23am Pacific in summer, 12:23am in winter. One run a day.
-# (Set in UTC on purpose: with a `timezone:` line the runs started about seven hours
-# late, 7-9am Pacific, Oct 5-9. The odd minute avoids the busy top of the hour.)
+# Asked for at 08:01 UTC: 12:01am Pacific in winter, 1:01am in summer (Kylie, Oct 11:
+# request just after midnight and accept whenever GitHub actually starts it, lately
+# about six and a half hours later). GitHub takes UTC only; this is the earliest minute
+# that is past midnight in every covered city all year, so no city's file gets the
+# previous day's date. (Set in UTC on purpose: with a `timezone:` line the runs started
+# about seven hours late, 7-9am Pacific, Oct 5-9.)
 # Free on this public repo: no new accounts or keys.
 # Weather, the schedule and results are separate steps, each carrying on past a bad
 # feed (Oct 10, 2026: one Open-Meteo text error cost the whole night). Whatever was
@@ -13,7 +16,7 @@ name: Nightly schedule archive
 
 on:
   schedule:
-    - cron: '23 8 * * *'
+    - cron: '1 8 * * *'
   workflow_dispatch:
 
 permissions:

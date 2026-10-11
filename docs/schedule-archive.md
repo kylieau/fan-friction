@@ -47,7 +47,7 @@ A night logged later is meant to be stamped from the saved schedule for that dat
 
 `npm run archive-schedule` writes today's listing. It needs the network. If a live feed cannot be read, that city writes nothing that night and the run reports it. Weather, the schedule and results are three steps; a bad weather or results feed never blocks the schedule.
 
-GitHub runs that command once a day, at **08:23 UTC** (1:23am Pacific in summer, 12:23am in winter), and commits to `main`. (From Oct 4 to Oct 9 the schedule carried a Los Angeles `timezone:` line, and every run started about seven hours late, 7–9am Pacific. It is back in plain UTC, Oct 9, with an odd minute to miss GitHub's busy top of the hour.) If `main` will not take the commit, the job opens a pull request instead, and that request needs a merge or the night stays missing.
+GitHub runs that command once a day, asked for at **08:01 UTC** (12:01am Pacific in winter, 1:01am in summer; Kylie, Oct 11, 2026: just after midnight, and whenever GitHub actually starts it, lately six and a half hours later, is accepted), and commits to `main`. (From Oct 4 to Oct 9 the schedule carried a Los Angeles `timezone:` line, and every run started about seven hours late, 7–9am Pacific. It is back in plain UTC, Oct 9, with an odd minute to miss GitHub's busy top of the hour.) If `main` will not take the commit, the job opens a pull request instead, and that request needs a merge or the night stays missing.
 
 A commit that only adds schedule files does not redeploy the website. A commit that updates the forecast list the app reads does build the site. That is still the free Vercel plan. One build a night is inside the free cap of 100 a day.
 
