@@ -67,7 +67,7 @@ export async function getCityDate(metroId: string, date: LocalDate): Promise<Cit
   return day;
 }
 
-/** The three parts behind a date's read, for a side-by-side (docs/compare-proposal-oct6.md). */
+/** The three parts behind a date's read, for a side-by-side (docs/product/compare-proposal-oct6.md). */
 export function readParts(day: CityDate): { crowdFight: number; conditions: number | null; gridlock: number } | null {
   if (!day.rating) return null;
   const read = rateDate(day.metroId, day.events);

@@ -1,9 +1,9 @@
 // Venues as their own records. Capacity is stored by year and setup, since it
 // changes (the Coliseum held 93,607 in 2017 and 77,500 after its renovation).
 // Capacities checked Oct 1, 2026 against venue guides and news reports, and
-// again Oct 6, 2026 against the venue research in docs/archive/research/la-venue-table-answer.md
+// again Oct 6, 2026 against the venue research in docs/research/city-builds/los-angeles/la-venue-table-answer.md
 // (every 5,000+ room in Los Angeles and Orange County). Sources per venue are
-// in docs/data-sources.md. Figures are official unless a note says reported
+// in docs/reference/data-sources.md. Figures are official unless a note says reported
 // or estimated. Locations: OpenStreetMap where it knows the building, else
 // the research's approximation, said so in a comment.
 
@@ -90,7 +90,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'la',
     strained: true,
     names: [{ name: 'Hollywood Bowl' }],
-    // LA Phil: 39% came by bus in 2025 (26% in 2022), so about 61% by car or other (docs/archive/research/venue-egress-answer.md).
+    // LA Phil: 39% came by bus in 2025 (26% in 2022), so about 61% by car or other (docs/research/topics/venue-egress-answer.md).
     carShare: 0.61,
     location: [-118.3391, 34.1122],
     ticketmasterIds: ['KovZpZAFFvJA', 'KovZpZAFFvtA'],
@@ -106,7 +106,7 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAEA66A', 'Z7r9jZadjY', 'KovZpZAal1tA', 'rZ7HnEZ17qk_f', 'Z7r9jZadz8'],
     capacity: [
       { seats: 89702, note: 'The stadium\'s all-seated figure. UCLA reports 91,136; aggregators say 92,542.' },
-      { seats: 60000, setup: 'concert', note: 'Estimated: the City of Pasadena\'s expected crowd per Live Nation concert (Jan 18, 2023 agenda), docs/archive/research/concert-venue-figures-answer.md.' },
+      { seats: 60000, setup: 'concert', note: 'Estimated: the City of Pasadena\'s expected crowd per Live Nation concert (Jan 18, 2023 agenda), docs/research/topics/concert-venue-figures-answer.md.' },
     ],
     roof: 'open',
   },
@@ -406,13 +406,13 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 102780, setup: 'football', note: 'Listed capacity' }],
     roof: 'open',
   },
-  // New York, covered Oct 7, 2026. Capacities: docs/archive/research/new-york-venue-table-answer.md (33 buildings; Etihad Park left
-  // out until it opens Jul 17, 2027). Car shares: docs/archive/research/new-york-city-type-answer.md, the "value to use" per venue;
+  // New York, covered Oct 7, 2026. Capacities: docs/research/city-builds/new-york/new-york-venue-table-answer.md (33 buildings; Etihad Park left
+  // out until it opens Jul 17, 2027). Car shares: docs/research/city-builds/new-york/new-york-city-type-answer.md, the "value to use" per venue;
   // where that research had no row, an estimate from the nearest comparable, as the research itself did, and labeled.
   // Kylie, Oct 6: one car share per venue (MetLife 0.85 though concerts run ~0.75; UBS 0.90 across 0.89/0.93).
   // The open grounds in the research's Table B (US Open grounds, Javits, the Great Lawn, Bethpage, Randall's Island
   // fields, Liberty State Park) are not venues: no fixed capacity. Events there are placed as points and sized only
-  // by their own crowd figure (docs/unsized-events.md). Hard access is measured by scripts/venue-access.mjs, not set here.
+  // by their own crowd figure (docs/reference/unsized-events.md). Hard access is measured by scripts/venue-access.mjs, not set here.
   'metlife-stadium': {
     id: 'metlife-stadium',
     metroId: 'new-york',
@@ -565,7 +565,7 @@ export const VENUES: Record<string, Venue> = {
       { seats: 16592, setup: 'hockey', fromYear: 2013, note: 'Official' },
       { seats: 16514, setup: 'hockey', fromYear: 2015, note: 'Official' },
       { seats: 18711, setup: 'basketball', note: 'Official (Seton Hall)' },
-      { seats: 19500, setup: 'concert', note: 'Venue: "up to 19,500 fans for concerts" (via Pollstar, Jul 2026); record 19,151 for Zach Bryan, Mar 15, 2024. Was 17,500 here until Oct 7, 2026 (docs/archive/research/concert-venue-figures-answer.md).' },
+      { seats: 19500, setup: 'concert', note: 'Venue: "up to 19,500 fans for concerts" (via Pollstar, Jul 2026); record 19,151 for Zach Bryan, Mar 15, 2024. Was 17,500 here until Oct 7, 2026 (docs/research/topics/concert-venue-figures-answer.md).' },
     ],
     roof: 'indoor',
   },
@@ -832,14 +832,14 @@ export const VENUES: Record<string, Venue> = {
     id: 'petco-park',
     metroId: 'san-diego',
     names: [{ name: 'Petco Park' }],
-    // Estimated: MTS counts about 8,000 trolley riders on a sellout against 39,860 seats (docs/archive/research/venue-egress-answer.md).
+    // Estimated: MTS counts about 8,000 trolley riders on a sellout against 39,860 seats (docs/research/topics/venue-egress-answer.md).
     carShare: 0.8,
     location: [-117.1569, 32.7072],
     ticketmasterIds: ['KovZpa4cFe', 'rZ7HnEZ17favg'],
     capacity: [{ seats: 39860, setup: 'baseball', note: 'Fixed seats (MLB). 42,445 is also reported and likely counts standing room.' }],
     roof: 'open',
   },
-  // ---- San Diego, from docs/archive/research/san-diego-venue-table-answer.md (Oct 6, 2026) ----
+  // ---- San Diego, from docs/research/city-builds/san-diego/san-diego-venue-table-answer.md (Oct 6, 2026) ----
   'san-diego-stadium': {
     id: 'san-diego-stadium',
     metroId: 'san-diego',
@@ -992,11 +992,11 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 6500, note: 'Hall H, seated (reported). Comic-Con sells about 135,000 badges over four days; no daily count is published.' }],
     roof: 'indoor',
   },
-  // ---- Seattle, from docs/archive/research/seattle-venue-table-answer.md (Oct 6, 2026): King, Pierce and Snohomish counties, plus the Gorge ----
+  // ---- Seattle, from docs/research/city-builds/seattle/seattle-venue-table-answer.md (Oct 6, 2026): King, Pierce and Snohomish counties, plus the Gorge ----
   'husky-stadium': {
     id: 'husky-stadium',
     metroId: 'seattle',
-    // Official, observed: UW's 2022 game-day survey, 37% by car (29% carpool, 3% alone, 5% rideshare), 45% transit (docs/archive/research/seattle-city-type-answer.md).
+    // Official, observed: UW's 2022 game-day survey, 37% by car (29% carpool, 3% alone, 5% rideshare), 45% transit (docs/research/city-builds/seattle/seattle-city-type-answer.md).
     carShare: 0.37,
     // The field is "Alaska Airlines Field at Husky Stadium"; ESPN and the schedule say Husky Stadium.
     names: [{ name: 'Husky Stadium' }],
@@ -1017,7 +1017,7 @@ export const VENUES: Record<string, Venue> = {
     capacity: [
       { seats: 68740, setup: 'football', note: 'Seahawks (official); expandable to 72,000 for the biggest events' },
       { seats: 37722, setup: 'soccer', note: 'Sounders setup (MLS). The Reign open about 10,000 lower-bowl seats (reported).' },
-      { seats: 51556, setup: 'concert', note: 'Reported: the sold-out count for The Weeknd, Aug 25, 2022 (Pollstar), the one end-stage figure found (docs/archive/research/concert-venue-figures-answer.md).' },
+      { seats: 51556, setup: 'concert', note: 'Reported: the sold-out count for The Weeknd, Aug 25, 2022 (Pollstar), the one end-stage figure found (docs/research/topics/concert-venue-figures-answer.md).' },
     ],
     // Roof over about 70% of seats; the field is open (the research's reading). Called "Seattle Stadium" for the 2026 World Cup.
     roof: 'covered',
@@ -1268,7 +1268,7 @@ export const VENUES: Record<string, Venue> = {
     roof: 'open',
     strained: true,
   },
-  // ---------- Chicago (docs/archive/research/chicago-venue-table-answer.md; car shares from docs/archive/research/chicago-city-type-answer.md), Oct 7, 2026 ----------
+  // ---------- Chicago (docs/research/city-builds/chicago/chicago-venue-table-answer.md; car shares from docs/research/city-builds/chicago/chicago-city-type-answer.md), Oct 7, 2026 ----------
   // Not venue rows: Grant, Douglass, Union and Humboldt parks (festival grounds), McCormick Place and the Stephens
   // Convention Center (sized per event-day), Hawthorne (racing ended July 19, 2026) and Arlington Park (closed 2021).
   // Car shares marked "ours" are not in the research; they come from the nearest comparable and are flagged for Kylie.
@@ -1556,7 +1556,7 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 47000, setup: 'racing', note: "Reported, after a cut from 75,000; the 2026 Cup race sold out. One weekend a year (June 25–27, 2027). The research's one addition to the boundary; in Will County." }],
     roof: 'open',
   },
-  // ---------- Dallas–Fort Worth (docs/archive/research/dallas-fort-worth-venue-table-answer.md; car shares from docs/archive/research/dallas-fort-worth-city-type-answer.md), Oct 8, 2026 ----------
+  // ---------- Dallas–Fort Worth (docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-venue-table-answer.md; car shares from docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-city-type-answer.md), Oct 8, 2026 ----------
   // Not venue rows: Fair Park's grounds and the Will Rogers grounds (sized per fair day), PGA Frisco, the convention halls, and
   // the Fort Worth Convention Center Arena (final event Sept 2026). Car shares marked "ours" are not in the research.
   'att-stadium': {
@@ -1958,7 +1958,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
-  // ---------- Montreal (docs/archive/research/montreal-venue-table-answer.md; car shares from docs/archive/research/montreal-city-type-answer.md), Oct 8, 2026 ----------
+  // ---------- Montreal (docs/research/city-builds/montreal/montreal-venue-table-answer.md; car shares from docs/research/city-builds/montreal/montreal-city-type-answer.md), Oct 8, 2026 ----------
   // Not venue rows: Circuit Gilles-Villeneuve and Parc Jean-Drapeau (the Grand Prix, Osheaga: sized per day), Place des Festivals,
   // the Palais des congrès, the Old Port. Their events are placed as points and sized by their own crowd when a figure exists.
   'bell-centre': {
@@ -2096,7 +2096,7 @@ export const VENUES: Record<string, Venue> = {
     id: 'golden-1-center',
     metroId: 'sacramento',
     names: [{ name: 'Golden 1 Center' }],
-    // Estimated by subtraction: the city put walking, biking and transit at 10–15% before opening (docs/archive/research/venue-egress-answer.md).
+    // Estimated by subtraction: the city put walking, biking and transit at 10–15% before opening (docs/research/topics/venue-egress-answer.md).
     carShare: 0.87,
     location: [-121.4996, 38.5802],
     ticketmasterIds: ['KovZpZAEF76A'],
@@ -2135,8 +2135,8 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 1000, setup: 'concert', note: 'About 1,000. Estimated. Ventura is part of Los Angeles here.' }],
     roof: 'indoor',
   },
-  // ---- Atlanta (docs/archive/research/atlanta-venue-table-answer.md, Oct 7, 2026). Capacities labeled as the research
-  // labeled them; car shares from docs/archive/research/atlanta-city-type-answer.md (one value per venue, Kylie, Oct 6).
+  // ---- Atlanta (docs/research/city-builds/atlanta/atlanta-venue-table-answer.md, Oct 7, 2026). Capacities labeled as the research
+  // labeled them; car shares from docs/research/city-builds/atlanta/atlanta-city-type-answer.md (one value per venue, Kylie, Oct 6).
   // Coordinates checked against OpenStreetMap by name; three rooms OSM does not know take the research's
   // approximation, said so below. Festival parks and the Georgia World Congress Center are not rows
   // (Kylie, Oct 7): their events are points sized by their own crowds. ----
@@ -2381,7 +2381,7 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
-  // ---------- Bay Area (docs/archive/research/bay-area-venue-table-answer.md; car shares from docs/archive/research/bay-area-city-type-answer.md), Oct 7, 2026 ----------
+  // ---------- Bay Area (docs/research/city-builds/bay-area/bay-area-venue-table-answer.md; car shares from docs/research/city-builds/bay-area/bay-area-city-type-answer.md), Oct 7, 2026 ----------
   // Not venue rows (Kylie, Oct 7, as for New York's Table B): the Golden Gate Park festival meadows, the Alameda County
   // Fairgrounds, Moscone, the San Jose convention center, Civic Center Plaza, Marina Green, Lake Merritt, Stern Grove,
   // Treasure Island. Their events are placed as points and sized by their own crowd.
@@ -2653,7 +2653,7 @@ export function venueNameOn(venue: Venue, date: LocalDate): string {
 
 /**
  * Hard to get in and out of: a hillside or canyon site with few streets at the
- * gate (Kylie, Oct 6, 2026; docs/hard-access-oct6.md). Measured, not hand-set:
+ * gate (Kylie, Oct 6, 2026; docs/product/hard-access-oct6.md). Measured, not hand-set:
  * relief of at least 40 m within 500 m and no more than 4 named public streets
  * within 250 m, from scripts/venue-access.mjs. A venue the script has not
  * measured falls back to its hand flag.

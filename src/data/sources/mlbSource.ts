@@ -23,7 +23,7 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's spo
   112: { metroId: 'chicago', teamId: 'cubs' },
   145: { metroId: 'chicago', teamId: 'white-sox' },
   140: { metroId: 'dallas-fort-worth', teamId: 'rangers' },
-  // Minor-league and independent clubs, the same feed (Kylie's OK, Oct 8, 2026; docs/no-feed-teams-proposal.md).
+  // Minor-league and independent clubs, the same feed (Kylie's OK, Oct 8, 2026; docs/product/no-feed-teams-proposal.md).
   540: { metroId: 'dallas-fort-worth', teamId: 'frisco-roughriders', sportId: 12, venueId: 'riders-field' },
   529: { metroId: 'seattle', teamId: 'tacoma-rainiers', sportId: 11, venueId: 'cheney-stadium' },
   403: { metroId: 'seattle', teamId: 'everett-aquasox', sportId: 13, venueId: 'everett-memorial-stadium' },

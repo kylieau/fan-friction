@@ -1,4 +1,4 @@
-// Kylie's own log, from docs/kylie-logs.md. Since Oct 5, 2026 it lives in her
+// Kylie's own log, from docs/product/kylie-logs.md. Since Oct 5, 2026 it lives in her
 // account (supabase/migrations/0002_kylie_log.sql, generated from this file) and
 // is no longer shipped inside the app. Kept as the source for that migration.
 // Originally: (sports 2025–2026 and the concerts,

@@ -1,4 +1,4 @@
-// Home city follows the account (docs/accounts-proposal.md: "Home city, yes").
+// Home city follows the account (docs/product/accounts-proposal.md: "Home city, yes").
 // Signing in: the account's home wins when it has one (the same rule as entries);
 // a phone with a home and an account without one sends the phone's up. After
 // that, changing home on any signed-in phone updates the account. Signed out,

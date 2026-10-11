@@ -1,4 +1,4 @@
-// The 13 hand-seeded test dates (docs/test-nights-and-ratings.md).
+// The 13 hand-seeded test dates (docs/reference/test-nights-and-ratings.md).
 // Ratings are hardcoded, as Kylie reviewed them. Occasion and friction come
 // from the Oct 1 draft (docs/archive/formula/rating-model-draft.md) and are marked "draft".
 // Crowd numbers are announced figures unless marked otherwise. Start times

@@ -24,23 +24,23 @@ const DEFAULT_START: Record<string, number> = { football: 13.1, baseball: 19.2, 
 const SCALE = 7.5;
 
 /** City type: drive-centric sprawl, destination hub, or transit-dominant. Others default to sprawl. */
-// Seattle is a hub (research, Oct 6, 2026, docs/archive/research/seattle-city-type-answer.md): in between. Core crowds run 37–70% by
+// Seattle is a hub (research, Oct 6, 2026, docs/research/city-builds/seattle/seattle-city-type-answer.md): in between. Core crowds run 37–70% by
 // car (Husky Stadium 37% observed, Lumen Field 60%, Climate Pledge Arena ~63%), the suburbs 85–95%. Every Seattle
 // venue carries its own carShare, so this default only covers a room without one.
-// New York is also a hub, not transit (research, Oct 6, 2026, docs/archive/research/new-york-city-type-answer.md): ~60% of a big crowd
+// New York is also a hub, not transit (research, Oct 6, 2026, docs/research/city-builds/new-york/new-york-city-type-answer.md): ~60% of a big crowd
 // arrives by car, weighted by seats. The ballparks broke the assumption — Citi Field ~60% car, Yankee Stadium ~50%.
 // Only the rail-hub buildings (MSG, Barclays, Radio City) are transit-tier; Long Island and the Meadowlands drive.
 // Chicago and Boston are still assumptions; research them before covering either (Kylie: never assume a city's type).
-// Montreal is in between with a transit core (research, Oct 7, 2026, docs/archive/research/montreal-city-type-answer.md): the Bell Centre and the
+// Montreal is in between with a transit core (research, Oct 7, 2026, docs/research/city-builds/montreal/montreal-city-type-answer.md): the Bell Centre and the
 // downtown sites sit at or under a third by car; Laval's Place Bell (65%) carries its own figure. No venue reaches 80%.
-// Dallas–Fort Worth is a driving region (research, Oct 7, 2026, docs/archive/research/dallas-fort-worth-city-type-answer.md): no large
+// Dallas–Fort Worth is a driving region (research, Oct 7, 2026, docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-city-type-answer.md): no large
 // venue clears 20% transit; Arlington has none at all.
-// Chicago is in between, leaning driving (research, Oct 7, 2026, docs/archive/research/chicago-city-type-answer.md): Wrigley and the
+// Chicago is in between, leaning driving (research, Oct 7, 2026, docs/research/city-builds/chicago/chicago-city-type-answer.md): Wrigley and the
 // downtown festivals run majority non-car, the United Center is 87% car, the suburban ring near-total. It was
 // 'transit' before any research; hub keeps the 0.85 default for venues with no figure of their own.
-// The Bay Area is driving, leaning (research, Oct 7, 2026, docs/archive/research/bay-area-city-type-answer.md): Oracle Park and
+// The Bay Area is driving, leaning (research, Oct 7, 2026, docs/research/city-builds/bay-area/bay-area-city-type-answer.md): Oracle Park and
 // Chase Center are about half by car, nearly every other big crowd 80–95%; the research picks a 0.85 default.
-// Atlanta is a driving region (research, Oct 7, 2026, docs/archive/research/atlanta-city-type-answer.md): no regular-season
+// Atlanta is a driving region (research, Oct 7, 2026, docs/research/city-builds/atlanta/atlanta-city-type-answer.md): no regular-season
 // crowd measured under ~70% car; only the two downtown buildings on MARTA take a real rail share.
 const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', boston: 'transit' };
 
@@ -193,7 +193,7 @@ function backgroundFor(
 }
 
 /**
- * The hard-access multiplier (docs/archive/research/hard-access-weight-answer.md, Oct 6, 2026).
+ * The hard-access multiplier (docs/research/topics/hard-access-weight-answer.md, Oct 6, 2026).
  * ×1.25 where everyone drives, scaled by the share of fans who drive to that
  * venue: the penalty is a car's problem, and transit share belongs to the
  * venue, not the city. A placeholder: the research puts the true effect at

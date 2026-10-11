@@ -8,11 +8,11 @@ const SOURCE_ID = 'listing';
 
 /**
  * New York Comic Con at the Javits Center, Oct 8–11, 2026. A convention hall has no fixed
- * capacity (docs/archive/research/new-york-venue-table-answer.md, Table B), so it is placed as a point and
+ * capacity (docs/research/city-builds/new-york/new-york-venue-table-answer.md, Table B), so it is placed as a point and
  * sized by its own crowd. Kylie, Oct 7, 2026: a per-day average of a multi-day total is fine
  * when labeled estimated. Floor hours 10:00–19:00 (NYCC's own schedule, Thursday).
  * A point does not reach Gridlock, so the load it puts on the West Side is not yet read
- * (docs/unsized-events.md).
+ * (docs/reference/unsized-events.md).
  */
 const comicConDay = (date: string, day: number): CrowdEvent => ({
   id: `${date}-nycc`,
@@ -34,7 +34,7 @@ const comicConDay = (date: string, day: number): CrowdEvent => ({
 });
 
 /**
- * Neutral-site football at Mercedes-Benz Stadium (docs/archive/research/atlanta-venue-table-answer.md §3). The
+ * Neutral-site football at Mercedes-Benz Stadium (docs/research/city-builds/atlanta/atlanta-venue-table-answer.md §3). The
  * team feeds miss these because neither side is an Atlanta home team, so they are hand-listed
  * (Kylie, Oct 7, 2026). Sized by the stadium's expanded setup, which these games sell
  * (75,000 official; the read caps at the 71,000 football setup). Dates and kickoffs as announced.
@@ -54,7 +54,7 @@ const neutralFootball = (id: string, date: string, start: string | null, title: 
 });
 
 /**
- * The State Fair of Texas, Sep 25 – Oct 18, 2026, at Fair Park (docs/archive/research/dallas-fort-worth-venue-table-answer.md §4:
+ * The State Fair of Texas, Sep 25 – Oct 18, 2026, at Fair Park (docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-venue-table-answer.md §4:
  * treat the fair as a daily event; the grounds have no capacity). Each remaining day takes the official 2025 gate for
  * the same day of the run (bigtex.com), labeled estimated. On Red River Saturday the game crowd inside the fair is
  * taken out, since game tickets include fair admission and the gate most likely counts them (the research's reading).

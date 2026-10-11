@@ -1,8 +1,8 @@
 // Home games for the AHL, PWHL and WHL clubs in the covered cities, from the HockeyTech
-// (LeagueStat) feed behind each league's own website (docs/no-feed-teams-answer.md).
+// (LeagueStat) feed behind each league's own website (docs/research/topics/no-feed-teams-answer.md).
 // The keys are the ones the league sites use; Kylie chose to read the feed without
-// asking first (Oct 8, 2026; docs/expected-draw-decisions-oct7.md), and the public-launch
-// milestone in docs/build-brief.md says that has to be revisited. One swappable piece,
+// asking first (Oct 8, 2026; docs/product/expected-draw-decisions-oct7.md), and the public-launch
+// milestone in docs/product/build-brief.md says that has to be revisited. One swappable piece,
 // like the ESPN source. Serves today and later; returns nothing when the feed is down.
 // The ECHL (Allen Americans, Atlanta Gladiators) is not here: its site key was not
 // found, so those buildings stay on the Ticketmaster sports sweep.

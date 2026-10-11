@@ -31,7 +31,7 @@ import { comparePath, datePath, type NightKey, parseNightKey } from '../lib/view
 const fmt = (n: number) => n.toLocaleString('en-US');
 
 /**
- * Two nights side by side (docs/compare-proposal-oct6.md, section 2). Reached
+ * Two nights side by side (docs/product/compare-proposal-oct6.md, section 2). Reached
  * from a night with "Compare with…"; with one night it is the picker of your
  * other nights and the Famous nights; with two it is the columns. Nights are
  * compared, never people.

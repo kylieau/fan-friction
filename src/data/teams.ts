@@ -80,7 +80,7 @@ const LIST: Team[] = [
   program('usc', 'USC Trojans', 'baseball', 'baseball', 'College baseball', 'baseball', []),
   program('usc', 'USC Trojans', 'wvb', 'volleyball', "College women's volleyball", "women's volleyball", []),
   // Visitors
-  // New York, covered Oct 7, 2026 (docs/new-city-checklist.md). Every feed id was verified against the live feed.
+  // New York, covered Oct 7, 2026 (docs/reference/new-city-checklist.md). Every feed id was verified against the live feed.
   // 'ny-' prefixes where an away team already holds the plain id (giants, jets, rangers are SF, Winnipeg, Texas).
   team('yankees', 'New York Yankees', 'Yankees', 'MLB', 'baseball', 'new-york', 'NYY'),
   team('mets', 'New York Mets', 'Mets', 'MLB', 'baseball', 'new-york', 'NYM'),
@@ -100,7 +100,7 @@ const LIST: Team[] = [
   team('columbia-football', 'Columbia Lions Football', 'Columbia FB', 'College football', 'football', 'new-york', 'COLU', ['Columbia']),
   team('stony-brook-football', 'Stony Brook Seawolves Football', 'Stony Brook FB', 'College football', 'football', 'new-york', 'STBK', ['Stony Brook']),
   team('fordham-football', 'Fordham Rams Football', 'Fordham FB', 'College football', 'football', 'new-york', 'FOR', ['Fordham']),
-  // Atlanta, covered Oct 7, 2026 (docs/new-city-checklist.md). Every feed id was verified against the live feed.
+  // Atlanta, covered Oct 7, 2026 (docs/reference/new-city-checklist.md). Every feed id was verified against the live feed.
   // The Braves were a visitor record (Braves at the Dodgers) until this build.
   team('braves', 'Atlanta Braves', 'Braves', 'MLB', 'baseball', 'atlanta', 'ATL'),
   team('hawks', 'Atlanta Hawks', 'Hawks', 'NBA', 'basketball', 'atlanta', 'ATL'),
@@ -115,7 +115,7 @@ const LIST: Team[] = [
   team('gsu-wbb', "Georgia State Panthers Women's Basketball", 'Georgia State WBB', "College women's basketball", 'basketball', 'atlanta', 'GSU', ['Georgia State']),
   team('ksu-football', 'Kennesaw State Owls Football', 'Kennesaw State FB', 'College football', 'football', 'atlanta', 'KSU', ['Kennesaw State']),
   team('ksu-mbb', "Kennesaw State Owls Men's Basketball", 'Kennesaw State MBB', "College men's basketball", 'basketball', 'atlanta', 'KSU', ['Kennesaw State']),
-  // Bay Area, covered Oct 7, 2026 (docs/archive/research/bay-area-venue-table-answer.md). The Giants were a visitor record before.
+  // Bay Area, covered Oct 7, 2026 (docs/research/city-builds/bay-area/bay-area-venue-table-answer.md). The Giants were a visitor record before.
   team('giants', 'San Francisco Giants', 'Giants', 'MLB', 'baseball', 'bay-area', 'SF'),
   team('warriors', 'Golden State Warriors', 'Warriors', 'NBA', 'basketball', 'bay-area', 'GSW'),
   team('valkyries', 'Golden State Valkyries', 'Valkyries', 'WNBA', 'basketball', 'bay-area', 'GSV'),
@@ -134,7 +134,7 @@ const LIST: Team[] = [
   team('sjsu-football', 'San José State Spartans Football', 'San José State FB', 'College football', 'football', 'bay-area', 'SJSU', ['San Jose State', 'SJSU']),
   team('sjsu-mbb', "San José State Spartans Men's Basketball", 'San José State MBB', "College men's basketball", 'basketball', 'bay-area', 'SJSU', ['San Jose State', 'SJSU']),
   team('sjsu-wbb', "San José State Spartans Women's Basketball", 'San José State WBB', "College women's basketball", 'basketball', 'bay-area', 'SJSU', ['San Jose State', 'SJSU']),
-  // Chicago, covered Oct 7, 2026 (docs/archive/research/chicago-venue-table-answer.md). Loyola is out: Gentile Arena is under 5,000.
+  // Chicago, covered Oct 7, 2026 (docs/research/city-builds/chicago/chicago-venue-table-answer.md). Loyola is out: Gentile Arena is under 5,000.
   team('cubs', 'Chicago Cubs', 'Cubs', 'MLB', 'baseball', 'chicago', 'CHC'),
   team('white-sox', 'Chicago White Sox', 'White Sox', 'MLB', 'baseball', 'chicago', 'CWS'),
   team('bulls', 'Chicago Bulls', 'Bulls', 'NBA', 'basketball', 'chicago', 'CHI'),
@@ -150,7 +150,7 @@ const LIST: Team[] = [
   team('depaul-wbb', "DePaul Blue Demons Women's Basketball", 'DePaul WBB', "College women's basketball", 'basketball', 'chicago', 'DEP', ['DePaul']),
   team('uic-mbb', "UIC Flames Men's Basketball", 'UIC MBB', "College men's basketball", 'basketball', 'chicago', 'UIC', ['UIC']),
   team('chicago-state-mbb', "Chicago State Cougars Men's Basketball", 'Chicago State MBB', "College men's basketball", 'basketball', 'chicago', 'CSU', ['Chicago State']),
-  // Dallas–Fort Worth, covered Oct 8, 2026 (docs/archive/research/dallas-fort-worth-venue-table-answer.md). The Rangers were a visitor record before.
+  // Dallas–Fort Worth, covered Oct 8, 2026 (docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-venue-table-answer.md). The Rangers were a visitor record before.
   team('rangers', 'Texas Rangers', 'Rangers', 'MLB', 'baseball', 'dallas-fort-worth', 'TEX'),
   team('cowboys', 'Dallas Cowboys', 'Cowboys', 'NFL', 'football', 'dallas-fort-worth', 'DAL'),
   team('mavericks', 'Dallas Mavericks', 'Mavericks', 'NBA', 'basketball', 'dallas-fort-worth', 'DAL', ['Mavs']),
@@ -166,8 +166,8 @@ const LIST: Team[] = [
   team('unt-football', 'North Texas Mean Green Football', 'North Texas FB', 'College football', 'football', 'dallas-fort-worth', 'UNT', ['North Texas', 'UNT']),
   team('unt-mbb', "North Texas Mean Green Men's Basketball", 'North Texas MBB', "College men's basketball", 'basketball', 'dallas-fort-worth', 'UNT', ['North Texas', 'UNT']),
   team('uta-mbb', "UT Arlington Mavericks Men's Basketball", 'UTA MBB', "College men's basketball", 'basketball', 'dallas-fort-worth', 'UTA', ['UT Arlington', 'UTA']),
-  // Montreal, covered Oct 8, 2026 (docs/archive/research/montreal-venue-table-answer.md). The Alouettes (CFL), Victoire (PWHL), Rocket (AHL)
-  // and Carabins (U Sports) have no feed wired yet; their pages say "No schedule yet" until one is (docs/no-feed-teams-proposal.md).
+  // Montreal, covered Oct 8, 2026 (docs/research/city-builds/montreal/montreal-venue-table-answer.md). The Alouettes (CFL), Victoire (PWHL), Rocket (AHL)
+  // and Carabins (U Sports) have no feed wired yet; their pages say "No schedule yet" until one is (docs/product/no-feed-teams-proposal.md).
   team('canadiens', 'Montreal Canadiens', 'Canadiens', 'NHL', 'hockey', 'montreal', 'MTL', ['Montréal Canadiens', 'Habs']),
   team('cf-montreal', 'CF Montréal', 'CF Montréal', 'MLS', 'soccer', 'montreal', 'MTL', ['CF Montreal', 'Montreal Impact']),
   team('alouettes', 'Montréal Alouettes', 'Alouettes', 'CFL', 'football', 'montreal', 'MTL', ['Montreal Alouettes']),
@@ -175,7 +175,7 @@ const LIST: Team[] = [
   // (the Laval Rocket row is above; it reads from HockeyTech too)
   team('laval-rocket', 'Laval Rocket', 'Rocket', 'AHL', 'hockey', 'montreal', 'LAV'),
   team('carabins-football', 'Montréal Carabins Football', 'Carabins FB', 'U Sports football', 'football', 'montreal', 'UdeM', ['Carabins']),
-  // Minor-league and independent baseball through MLB's own feed (Kylie's OK, Oct 8; docs/no-feed-teams-proposal.md).
+  // Minor-league and independent baseball through MLB's own feed (Kylie's OK, Oct 8; docs/product/no-feed-teams-proposal.md).
   team('frisco-roughriders', 'Frisco RoughRiders', 'RoughRiders', 'Double-A baseball', 'baseball', 'dallas-fort-worth', 'FRI'),
   team('tacoma-rainiers', 'Tacoma Rainiers', 'Rainiers', 'Triple-A baseball', 'baseball', 'seattle', 'TAC'),
   team('everett-aquasox', 'Everett AquaSox', 'AquaSox', 'High-A baseball', 'baseball', 'seattle', 'EVE'),
@@ -185,12 +185,12 @@ const LIST: Team[] = [
   team('gwinnett-stripers', 'Gwinnett Stripers', 'Stripers', 'Triple-A baseball', 'baseball', 'atlanta', 'GWN'),
   team('chicago-dogs', 'Chicago Dogs', 'Dogs', 'Independent baseball', 'baseball', 'chicago', 'CHI'),
   team('schaumburg-boomers', 'Schaumburg Boomers', 'Boomers', 'Independent baseball', 'baseball', 'chicago', 'SCH'),
-  // ESPN's smaller leagues (Kylie, Oct 8: extend ESPN; the terms question is a launch milestone, docs/no-feed-teams-proposal.md).
+  // ESPN's smaller leagues (Kylie, Oct 8: extend ESPN; the terms question is a launch milestone, docs/product/no-feed-teams-proposal.md).
   team('dallas-trinity', 'Dallas Trinity FC', 'Trinity FC', 'USL Super League', 'soccer', 'dallas-fort-worth', 'DAL', ['Dallas Trinity']),
   team('dallas-renegades', 'Dallas Renegades', 'Renegades', 'UFL', 'football', 'dallas-fort-worth', 'DAL', ['Arlington Renegades']),
   team('texas-legends', 'Texas Legends', 'Legends', 'NBA G League', 'basketball', 'dallas-fort-worth', 'TEX'),
   team('windy-city-bulls', 'Windy City Bulls', 'Windy City Bulls', 'NBA G League', 'basketball', 'chicago', 'WCB'),
-  // HockeyTech leagues (AHL, PWHL, WHL), read from the feed behind the league sites (Kylie, Oct 8; docs/no-feed-teams-proposal.md).
+  // HockeyTech leagues (AHL, PWHL, WHL), read from the feed behind the league sites (Kylie, Oct 8; docs/product/no-feed-teams-proposal.md).
   team('chicago-wolves', 'Chicago Wolves', 'Wolves', 'AHL', 'hockey', 'chicago', 'CHI'),
   team('san-jose-barracuda', 'San Jose Barracuda', 'Barracuda', 'AHL', 'hockey', 'bay-area', 'SJ'),
   team('san-diego-gulls', 'San Diego Gulls', 'Gulls', 'AHL', 'hockey', 'san-diego', 'SD'),

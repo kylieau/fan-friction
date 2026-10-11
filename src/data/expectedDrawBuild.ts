@@ -1,6 +1,6 @@
 // How an upcoming home game's crowd is estimated from past announced crowds
-// (docs/archive/research/expected-draw-sports-research-answer.md, Kylie's locks in
-// docs/expected-draw-decisions-oct7.md). One copy of the rule, used three ways:
+// (docs/research/topics/expected-draw-sports-research-answer.md, Kylie's locks in
+// docs/product/expected-draw-decisions-oct7.md). One copy of the rule, used three ways:
 // scripts/attendance-calibrate.mjs builds the rows the app ships with,
 // src/data/expectedDraw.ts picks a row for an event, and
 // scripts/expected-draw-check.mjs hides a season and predicts it from the ones before.
@@ -35,7 +35,7 @@ export interface PastGame {
 // ---------- Postseason (docs/archive/proposals/postseason-estimate-proposal.md, Kylie's locks Oct 7, 2026) ----------
 // A playoff crowd is learned as occupancy (announced ÷ the building's capacity for that sport),
 // in four round bands, from the team's own home playoff games, else the league's pool. Every
-// constant below was written before the check ran (docs/postseason-check.md) and is not re-tuned.
+// constant below was written before the check ran (docs/checks/postseason-check.md) and is not re-tuned.
 
 export type RoundBand = 'first' | 'second' | 'conference' | 'final';
 export const POSTSEASON_WINDOW = 3;
@@ -49,7 +49,7 @@ export const POST_PERCENTILE_MIN = 20;
 /**
  * Leagues whose league pool spans every round (Kylie, Oct 7, 2026, for the WNBA and MLS): the playoff
  * sample is too small per band, so the pool is "any round", labeled as such. A team's own rows stay by
- * band. The check (docs/postseason-check.md) passed for MLS (4.4% vs 7.7% by the building) and failed for
+ * band. The check (docs/checks/postseason-check.md) passed for MLS (4.4% vs 7.7% by the building) and failed for
  * the WNBA (25.1% vs 0.4% on six games, all sellouts), so the WNBA is held back pending Kylie's word.
  */
 export const ANY_ROUND_POOL = new Set(['MLS']);
@@ -284,7 +284,7 @@ function summarize(games: PastGame[]): Pick<ExpectedDrawRow, 'count' | 'low' | '
 /**
  * Leagues on a 2-season window. Kylie, Oct 7 (S3): three seasons everywhere, shorter
  * for women's leagues only if the check showed them reading low. The first check
- * (docs/expected-draw-check.md) did: the WNBA read 30% low on three seasons, women's
+ * (docs/checks/expected-draw-check.md) did: the WNBA read 30% low on three seasons, women's
  * college basketball 28% low. The NWSL and MLS also scored better on two seasons;
  * Kylie moved them to two as well (Oct 7).
  */
@@ -509,14 +509,14 @@ export interface OpponentRatioRow {
  * A show with no better figure is sized at this share of the room: the median fill
  * of the covered arenas that publish attendance and show counts (MSG, Kia Forum,
  * Barclays, Prudential, Intuit Dome, YouTube Theater, Hollywood Bowl), from
- * docs/archive/research/concert-venue-figures-answer.md against the capacities in venues.ts.
+ * docs/research/topics/concert-venue-figures-answer.md against the capacities in venues.ts.
  */
 export const CONCERT_FILL = 0.57;
 
 /**
- * Rung 4 of the show ladder (docs/archive/research/expected-draw-concerts-research-answer.md): a room's
+ * Rung 4 of the show ladder (docs/research/topics/expected-draw-concerts-research-answer.md): a room's
  * own published average per reported show, Billboard's chart year Oct 1, 2024 – Sep 30,
- * 2025, from docs/archive/research/concert-venue-figures-answer.md. Reported figures; they count every
+ * 2025, from docs/research/topics/concert-venue-figures-answer.md. Reported figures; they count every
  * ticketed non-team event Billboard received, so comedy and family shows are in the mix.
  * Rooms whose figure was only an upper bound (YouTube Theater, Hollywood Bowl) take the default.
  */

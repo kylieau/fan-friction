@@ -13,7 +13,7 @@ import { CrowdMark } from './EventTags';
 const LADDER = ['Chill', 'Mild', 'Spicy', 'Brutal', 'Cooked'];
 
 /**
- * Your year (docs/compare-proposal-oct6.md, section 1): your nights by friction
+ * Your year (docs/product/compare-proposal-oct6.md, section 1): your nights by friction
  * word, the heaviest and the quietest, and "your usual", the median read, which
  * is the yardstick a side-by-side compares against. This calendar year, or all
  * time. Counts and milestones only; nothing is ranked against anyone.

@@ -79,7 +79,7 @@ export function parseNightKey(text: string | null): NightKey | null {
   return { metroId, date, ...(eventId ? { eventId } : {}) };
 }
 
-/** The picker with one night, the side-by-side with two (docs/compare-proposal-oct6.md). */
+/** The picker with one night, the side-by-side with two (docs/product/compare-proposal-oct6.md). */
 export function comparePath(a: NightKey, b?: NightKey): string {
   const params = new URLSearchParams({ a: nightKeyText(a) });
   if (b) params.set('b', nightKeyText(b));

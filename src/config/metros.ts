@@ -10,7 +10,7 @@ export interface Metro {
 
 /**
  * Cities the nightly jobs cover: schedules, weather, results and the shared
- * catalog (docs/new-city-checklist.md). Adding a city here is step 1.
+ * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
 export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal'] as const;
 
@@ -32,7 +32,7 @@ export const METROS: Record<string, Metro> = {
     center: [-71.1428, 42.3564],
     zoom: 12,
   },
-  // Covered Oct 7, 2026 (docs/archive/research/chicago-venue-table-answer.md): the city, Cook County and the named
+  // Covered Oct 7, 2026 (docs/research/city-builds/chicago/chicago-venue-table-answer.md): the city, Cook County and the named
   // collar towns, plus Chicagoland Speedway in Joliet (the research's one addition). One frame holds
   // the lakefront, the West Side, Evanston and Rosemont; Tinley Park, Hoffman Estates and Joliet sit off it.
   chicago: {
@@ -49,7 +49,7 @@ export const METROS: Record<string, Metro> = {
     center: [-83.0197, 40.0016],
     zoom: 12,
   },
-  // Covered Oct 7, 2026 (docs/archive/research/new-york-venue-table-answer.md). The region runs from the
+  // Covered Oct 7, 2026 (docs/research/city-builds/new-york/new-york-venue-table-answer.md). The region runs from the
   // Meadowlands to Stony Brook; this frames Manhattan, the Bronx, Queens, Brooklyn, Newark
   // and Elmont on one phone screen. Jones Beach, PNC and Stony Brook sit off the first view.
   'new-york': {
@@ -59,7 +59,7 @@ export const METROS: Record<string, Metro> = {
     center: [-73.93, 40.75],
     zoom: 10.5,
   },
-  // Covered Oct 7, 2026 (docs/archive/research/atlanta-venue-table-answer.md): the 11-county core, from Kennesaw
+  // Covered Oct 7, 2026 (docs/research/city-builds/atlanta/atlanta-venue-table-answer.md): the 11-county core, from Kennesaw
   // and Alpharetta down to Hampton. This frames Downtown, Midtown, the Battery and Lakewood on one
   // phone screen; Gas South, Alpharetta, Kennesaw and the speedway sit off the first view.
   atlanta: {
@@ -69,7 +69,7 @@ export const METROS: Record<string, Metro> = {
     center: [-84.4, 33.8],
     zoom: 10.5,
   },
-  // Covered Oct 7, 2026 (docs/archive/research/bay-area-venue-table-answer.md): San Francisco, Alameda, Contra Costa,
+  // Covered Oct 7, 2026 (docs/research/city-builds/bay-area/bay-area-venue-table-answer.md): San Francisco, Alameda, Contra Costa,
   // San Mateo and Santa Clara counties. One frame holds San Francisco, Oakland, Berkeley and
   // San Jose; Concord and Pleasanton sit off the first view. Three centers 30–45 miles apart.
   'bay-area': {
@@ -79,7 +79,7 @@ export const METROS: Record<string, Metro> = {
     center: [-122.2, 37.62],
     zoom: 9.2,
   },
-  // Covered Oct 8, 2026 (docs/archive/research/dallas-fort-worth-venue-table-answer.md): Dallas, Tarrant, Collin and Denton
+  // Covered Oct 8, 2026 (docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-venue-table-answer.md): Dallas, Tarrant, Collin and Denton
   // counties. One frame holds Dallas, Arlington, Fort Worth and Frisco; Denton and the Speedway sit off it.
   'dallas-fort-worth': {
     id: 'dallas-fort-worth',
@@ -88,7 +88,7 @@ export const METROS: Record<string, Metro> = {
     center: [-97.0, 32.85],
     zoom: 9,
   },
-  // Covered Oct 8, 2026 (docs/archive/research/montreal-venue-table-answer.md): the island, Laval, Longueuil and the South Shore.
+  // Covered Oct 8, 2026 (docs/research/city-builds/montreal/montreal-venue-table-answer.md): the island, Laval, Longueuil and the South Shore.
   // One frame holds downtown, the Olympic Park, Parc Jean-Drapeau and Laval's Place Bell.
   montreal: {
     id: 'montreal',

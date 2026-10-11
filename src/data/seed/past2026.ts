@@ -153,7 +153,7 @@ export const PAST_2026_EVENTS: CrowdEvent[] = [
   }),
   // The marathon closes roads from Dodger Stadium to Century City all morning.
   // It has no building and no crowd figure, so it is listed and counts for
-  // nothing. See the note in docs/build-reconstructed-reads.md: Gridlock only
+  // nothing. See the note in docs/reference/build-reconstructed-reads.md: Gridlock only
   // reads events that sit in a venue, which is the wrong way round for a race.
   unsized('la', '2026-03-08', 'la-marathon', 'Los Angeles Marathon', 'road-race', {
     type: 'route',
@@ -370,7 +370,7 @@ export const PAST_2026_EVENTS: CrowdEvent[] = [
 
   // ---------- New York, Thu Oct 1 and Sat Oct 3 ----------
   // Before New York was covered (Oct 7), so no feed or archive lists them. From the October research
-  // (docs/archive/research/oct-2026-events/new-york.md); start times checked against ESPN's season schedules and AXS.
+  // (docs/research/events-and-dates/oct-2026-events/new-york.md); start times checked against ESPN's season schedules and AXS.
   // Oct 6 onward needs nothing here: the archive's first New York file starts that day.
   game('new-york', '2026-10-01', 'rangers', 'Rangers vs Lightning', 'hockey', { home: 'ny-rangers', away: 'lightning' }, {
     start: '19:00', venue: 'madison-square-garden',
@@ -430,7 +430,7 @@ export const PAST_2026_EVENTS: CrowdEvent[] = [
     start: '17:00', venue: 'waterfront-park',
     facts: { storyline: true /* Final stop of the Asleep in the Garden of Infernal Stars tour */ },
   }),
-  // Montreal, May 25, 2026: the tester's night (docs/archive/research/past-dates/san-diego-montreal.md;
+  // Montreal, May 25, 2026: the tester's night (docs/research/events-and-dates/past-dates/san-diego-montreal.md;
   // hand-seeded with the Montreal build, Kylie, Oct 7). Eastern Conference Final Game 3, a holiday Monday,
   // the day after the Grand Prix weekend. The street watch party outside has no published count, so it
   // is not seeded (no number is invented). 20,962 is the building's new capacity and the announced crowd.

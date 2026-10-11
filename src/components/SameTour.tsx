@@ -6,7 +6,7 @@ import { datePath } from '../lib/view';
 import { ReadTile } from './ReadTile';
 
 /**
- * Dates for the same tour or homestand (docs/compare-proposal-oct6.md, section 3):
+ * Dates for the same tour or homestand (docs/product/compare-proposal-oct6.md, section 3):
  * on an upcoming event, the same performer's or home team's other dates in this
  * city within 30 days, each with that day's read, so the calmest can be picked.
  */

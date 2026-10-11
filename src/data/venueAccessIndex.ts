@@ -1,7 +1,7 @@
 // Hard-access measures per venue, from scripts/venue-access.mjs (the map
 // tiles and a public elevation service). Do not edit by hand; rerun the
 // script when venues are added. The rule that turns these into the
-// "strained" flag lives in venues.ts (docs/hard-access-oct6.md).
+// "strained" flag lives in venues.ts (docs/product/hard-access-oct6.md).
 
 export interface VenueAccessRow {
   venueId: string;

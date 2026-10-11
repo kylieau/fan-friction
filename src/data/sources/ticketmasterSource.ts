@@ -91,7 +91,7 @@ function isShowAddOn(name: string): boolean {
 }
 
 /**
- * Buildings whose games no league feed lists (docs/no-feed-teams-proposal.md; Kylie's OK, Oct 8, 2026): the AHL,
+ * Buildings whose games no league feed lists (docs/product/no-feed-teams-proposal.md; Kylie's OK, Oct 8, 2026): the AHL,
  * ECHL, PWHL, WHL, CFL, UFL, USL Super League, MASL, cricket, rodeo and motorsport rooms. Sports listings are kept
  * only here, and a feed game at the same building on the same date still wins (the catalog and archive drop the
  * Ticketmaster copy).
