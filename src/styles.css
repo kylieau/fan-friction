@@ -4253,3 +4253,54 @@ button.back-link {
   font-size: 13px;
   color: #4b5a70;
 }
+
+/* The (i) on a settled read, and the About this read card (build notes 2, section 1). */
+.read-tile {
+  position: relative;
+}
+
+.read-info {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid var(--muted);
+  background: transparent;
+  color: var(--muted);
+  font: italic 700 12px/1 Georgia, 'Times New Roman', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.read-tile .read-why {
+  padding-right: 22px;
+}
+
+.about-read-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.about-read-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--track);
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.about-read-line {
+  margin: 10px 0 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--ink);
+}

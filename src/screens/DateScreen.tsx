@@ -23,6 +23,7 @@ import {
   isStampLocked,
   isWasThere,
   savedNightRead,
+  scheduleCoverage,
   roundEstimate,
   stampLocksAt,
   subscribeAccount,
@@ -58,6 +59,7 @@ const fmt = (n: number) => n.toLocaleString('en-US');
  */
 export function DateScreen() {
   const { date = '' } = useParams();
+  const [about, setAbout] = useState(false);
   const [params] = useSearchParams();
   const navigate = useNavigate();
   const highlight = params.get('event');
@@ -186,12 +188,15 @@ export function DateScreen() {
     );
   }
 
-  // "Forecast" until the stamp locks, 24 hours after the last start; "Stamped" only after (C041).
+  // "Forecast" until the stamp locks, 24 hours after the last start. A settled read carries no label
+  // (build notes 2, section 1): how it settled, and any revision, sits behind the (i).
   const locked = !ahead && isStampLocked(asMetroDate(metro.id, date, events), metro.timeZone);
-  const readKind = rating ? (locked ? 'Stamped' : 'Forecast') : null;
+  const readKind = rating && !locked ? 'Forecast' : null;
   // A settled night shows the read as it was saved, never today's recomputation (3.15).
   const saved = locked ? savedNightRead(metro.id, date, events) : null;
   const shownRating = saved?.rating ?? rating?.rating ?? null;
+  // A night from before the schedule archive began keeps one quiet line.
+  const rebuilt = locked && scheduleCoverage(metro.id, date) === 'reconstructed';
 
   return (
     <div className="screen page date-page">
@@ -233,16 +238,20 @@ export function DateScreen() {
               <span className="read-word">{scoreLabel(shownRating)}</span>
             </span>
             <span className="read-why">
-              <span className="read-lab">{readKind}</span>
+              {readKind && <span className="read-lab">{readKind}</span>}
               <span className="read-txt">{rating.headline}</span>
               {rating.detail ? <span className="read-detail">{rating.detail}</span> : null}
               <span className="read-meta">
                 {/* No internal terms here (C069): the lock time ahead, the sources count after. */}
                 {ahead && locksAt ? `Locks ${locksAt.toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit', timeZone: metro.timeZone })}` : ''}
-                {!ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
-                {saved?.rescoredOn ? ` · Updated ${shortLocalDate(saved.rescoredOn)}` : ''}
+                {rebuilt ? 'Rebuilt from past schedules.' : !ahead && rating.sources?.length ? `${rating.sources.length} ${rating.sources.length === 1 ? 'source' : 'sources'}` : ''}
               </span>
             </span>
+            {locked && (
+              <button type="button" className="read-info" aria-label="About this read" onClick={() => setAbout(true)}>
+                i
+              </button>
+            )}
           </>
         ) : (
           <>
@@ -273,6 +282,7 @@ export function DateScreen() {
           </>
         )}
       </section>
+      {about && <AboutRead saved={saved ?? {}} onClose={() => setAbout(false)} />}
 
       {(mine.length > 0 || plans.length > 0) && (
         <section className="you-block" aria-labelledby="your-entry">
@@ -438,4 +448,28 @@ function crowdLine(e: CrowdEvent): string | null {
   // An upcoming row shows the estimate the map's rows show (C065); full numbers here, there is room (C073).
   if (e.expectedDraw) return `~${fmt(roundEstimate(e.expectedDraw.count))} estimated`;
   return null;
+}
+
+/** How a settled read came to be (build notes 2, section 1). Only a redone read adds its second line. */
+function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousRating?: number }; onClose: () => void }) {
+  return (
+    <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="about-read-title" onClick={onClose}>
+      <div className="home-card about-read" onClick={(event) => event.stopPropagation()}>
+        <div className="about-read-head">
+          <h2 id="about-read-title" className="home-title">
+            About this read
+          </h2>
+          <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
+            ×
+          </button>
+        </div>
+        <p className="about-read-line">Settled the day after the games.</p>
+        {saved.rescoredOn && (
+          <p className="about-read-line">
+            Revised {shortLocalDate(saved.rescoredOn)} when we improved the method.{typeof saved.previousRating === 'number' ? ` It was ${formatScore(saved.previousRating)}.` : ''}
+          </p>
+        )}
+      </div>
+    </div>
+  );
 }

@@ -173,9 +173,7 @@ export function EventScreen() {
           <div className="verdict-word">{frictionVerdictTitle(a.friction)}</div>
           <div className="verdict-why">{a.why}</div>
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
-          {a.status === 'formula' && (
-            <div className="draft-note">{stampLocked ? 'Stamped' : 'Forecast'}</div>
-          )}
+          {a.status === 'formula' && !stampLocked && <div className="draft-note">Forecast</div>}
         </section>
       )}
 

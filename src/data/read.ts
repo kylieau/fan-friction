@@ -299,8 +299,10 @@ export interface SavedNightRead {
   rating: number;
   /** When the nightly job saved it. */
   capturedAt: string;
-  /** Set when a formula change re-scored the night against the saved schedule; shown as "Updated <date>" (Kylie, Oct 9, 3.15). */
+  /** Set when a formula change re-scored the night against the saved schedule. Told in "About this read" (build notes 2, section 1). */
   rescoredOn?: string;
+  /** The read before that re-score ("It was 9.1."). Written with `rescoredOn` by the re-score job, which does not exist yet. */
+  previousRating?: number;
 }
 
 /**
@@ -315,7 +317,7 @@ export function savedNightRead(metroId: string, date: LocalDate, events: readonl
   const starts = events.map((e) => e.start).filter((s): s is string => Boolean(s)).sort();
   const lastStart = starts[starts.length - 1] ?? '23:59';
   const cutoff = wallClockToUtc(date, lastStart, zone).getTime();
-  let best: (ArchiveForecastRow & { rescoredOn?: string }) | null = null;
+  let best: (ArchiveForecastRow & { rescoredOn?: string; previousRating?: number }) | null = null;
   for (const event of events) {
     for (const row of cachedSnapshots(metroId, event.id, date) ?? []) {
       if (row.read?.rating == null || !row.capturedAt) continue;
@@ -325,7 +327,12 @@ export function savedNightRead(metroId: string, date: LocalDate, events: readonl
     }
   }
   if (!best || best.read?.rating == null) return null;
-  return { rating: best.read.rating, capturedAt: best.capturedAt, ...(best.rescoredOn ? { rescoredOn: best.rescoredOn } : {}) };
+  return {
+    rating: best.read.rating,
+    capturedAt: best.capturedAt,
+    ...(best.rescoredOn ? { rescoredOn: best.rescoredOn } : {}),
+    ...(best.rescoredOn && typeof best.previousRating === 'number' ? { previousRating: best.previousRating } : {}),
+  };
 }
 
 /**
