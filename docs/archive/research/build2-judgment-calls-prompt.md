@@ -1,6 +1,8 @@
 # Prompt: six judgment calls from build 2 (Oct 10, 2026)
 
-_Kylie runs this on an outside model, then records her calls. Save the answer as `build2-judgment-calls-answer.md` beside this file._
+_Kylie runs this on an outside model, then records her calls. Save the answer as `docs/archive/research/build2-judgment-calls-answer.md` beside this file._
+
+Status: closed, decided in docs/reviews/build2-judgment-call-decisions.md, Oct 11, 2026
 
 ---
 

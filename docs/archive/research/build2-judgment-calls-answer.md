@@ -1,10 +1,22 @@
 # Answers: the six build 2 judgment calls (Oct 10–11, 2026)
 
-_Two outside models' answers to `build2-judgment-calls-prompt.md`, saved verbatim by Claude Code on Oct 11, 2026. Neither is a decision; Kylie's calls are recorded below when she makes them._
+_Two outside models' answers to `docs/archive/research/build2-judgment-calls-prompt.md`, saved verbatim by Claude Code on Oct 11, 2026. Neither is a decision; Kylie's calls are recorded below when she makes them._
 
-## Kylie's calls
+## Kylie's calls (Oct 11, 2026; the full text is `docs/reviews/build2-judgment-call-decisions.md`)
 
-_Pending._
+| Call | Decision |
+|---|---|
+| 1 | Plain sentences, no dot, no "· you too": "Sam is going to {event}", "Sam went to {event}", "Sam watched {event}". Each line opens the event and ends with a short date. A Feed section beside the by-event list. Neither model's wording; mock B rejected by name. |
+| 2 | Attending / Watching before, Attended / Watched after, the same on both pages. "I watched it" is an action on the event page only; the date page shows Watched as a state. |
+| 3 | "N attended · N venues · N watched". Watched never counts toward venues or crowd stats, Heaviest or Quietest. New: where watched (Home or a Public place, shared per event by name only, or kept private), enforced in the database. |
+| 4 | Drop "Fans with you". The crowd locks when the stamp locks, to the announced attendance or the best estimate; a one-time fill of empty crowds only; no "· N stubs" suffix. |
+| 5 | "Prices from $48+fees ›" stays, "+fees" always beside a number; "See tickets on Ticketmaster ›" as the fallback. |
+| 6 | "Local competition" again, on the date page: the read and summary line on top (mock D), the list, then the stacked timeline (B/C). One-hour rule. No miles. What the event page keeps is open. |
+| 7 (new) | The gold crowd icon beside every crowd figure, and only crowd figures. |
+| 8 (new) | My Stubs: a recent-activity list with Recent · Sports · Concerts · Watched · Attended chips, no badges on rows. |
+| 9 (new) | The Stats tab stays as it is; the badge set is parked for a later Mock Mosaic pass. |
+
+Status: closed, decided in docs/reviews/build2-judgment-call-decisions.md and logged in docs/product-decisions.md, Oct 11, 2026
 
 ## Model 1
 
