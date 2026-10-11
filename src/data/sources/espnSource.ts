@@ -14,6 +14,12 @@ const DAYS_AHEAD = 120;
 
 /** ESPN's ids for each team, mapped to our records. Add a metro's teams here. */
 const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: string; sport: string }[] = [
+  // Each Milwaukee id and actual home venue checked against the feed Oct 11, 2026.
+  { path: 'basketball/nba', espnId: '15', metroId: 'milwaukee', teamId: 'bucks', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '269', metroId: 'milwaukee', teamId: 'marquette-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '269', metroId: 'milwaukee', teamId: 'marquette-wbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '270', metroId: 'milwaukee', teamId: 'uwm-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '270', metroId: 'milwaukee', teamId: 'uwm-wbb', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
@@ -163,6 +169,15 @@ export function espnMetroIds(): string[] {
 
 /** ESPN gives venue names, not ids. Games anywhere else (road, neutral, abroad) are skipped. */
 const VENUE_BY_NAME: Record<string, string> = {
+  'fiserv forum': 'fiserv-forum',
+  'bmo harris bradley center': 'bradley-center',
+  'bradley center': 'bradley-center',
+  'uw-milwaukee panther arena': 'uwm-panther-arena',
+  'uw milwaukee panther arena': 'uwm-panther-arena',
+  'uwm panther arena': 'uwm-panther-arena',
+  'klotsche center': 'klotsche-center',
+  'al mcguire center': 'al-mcguire-center',
+
   'crypto.com arena': 'crypto-com-arena',
   'intuit dome': 'intuit-dome',
   'sofi stadium': 'sofi-stadium',

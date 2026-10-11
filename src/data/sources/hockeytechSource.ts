@@ -24,6 +24,7 @@ const CLIENTS: Record<string, { key: string; name: string }> = {
 
 /** The feed's team ids, mapped to our records. Add a city's clubs here. */
 export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; metroId: string; teamId: string; venueId: string }[] = [
+  { client: 'ahl', htId: '327', metroId: 'milwaukee', teamId: 'milwaukee-admirals', venueId: 'uwm-panther-arena' },
   { client: 'ahl', htId: '330', metroId: 'chicago', teamId: 'chicago-wolves', venueId: 'allstate-arena' },
   { client: 'ahl', htId: '415', metroId: 'montreal', teamId: 'laval-rocket', venueId: 'place-bell' },
   { client: 'ahl', htId: '405', metroId: 'bay-area', teamId: 'san-jose-barracuda', venueId: 'sap-center' },
@@ -38,6 +39,8 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
 
 /** The feed's venue names for a few buildings, when a club plays away from its usual home ("Bell Centre" for a Victoire one-off). */
 const VENUE_BY_NAME: Record<string, string> = {
+  'uw-milwaukee panther arena': 'uwm-panther-arena',
+  'bmo harris bradley center': 'bradley-center',
   'bell centre': 'bell-centre',
   'centre bell': 'bell-centre',
   'place bell': 'place-bell',

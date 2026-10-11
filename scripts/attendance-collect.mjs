@@ -14,11 +14,14 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
 const MLB_TEAMS = [
+  { teamId: 'brewers', metroId: 'milwaukee', mlbId: 158, venueId: 'american-family-field', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'milwaukee-milkmen', metroId: 'milwaukee', mlbId: 5548, sportId: 23, venueId: 'franklin-field', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'lake-country-dockhounds', metroId: 'milwaukee', mlbId: 6488, sportId: 23, venueId: 'dockhounds-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'dodgers', mlbId: 119, venueId: 'dodger-stadium', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'angels', mlbId: 108, venueId: 'angel-stadium', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'padres', mlbId: 135, venueId: 'petco-park', metroId: 'san-diego', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -42,6 +45,11 @@ const MLB_TEAMS = [
   { teamId: 'schaumburg-boomers', mlbId: 1950, sportId: 23, venueId: 'wintrust-field', metroId: 'chicago', seasons: [2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
+  { teamId: 'bucks', metroId: 'milwaukee', path: 'basketball/nba', espnId: '15', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'marquette-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'marquette-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uwm-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '270', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uwm-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '270', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'lakers', path: 'basketball/nba', espnId: '13', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'clippers', path: 'basketball/nba', espnId: '12', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'kings', path: 'hockey/nhl', espnId: '8', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -152,6 +160,15 @@ const ESPN_TEAMS = [
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
 const VENUE_BY_NAME = {
+  'fiserv forum': 'fiserv-forum',
+  'bmo harris bradley center': 'bradley-center',
+  'bradley center': 'bradley-center',
+  'uw-milwaukee panther arena': 'uwm-panther-arena',
+  'uw milwaukee panther arena': 'uwm-panther-arena',
+  'uwm panther arena': 'uwm-panther-arena',
+  'klotsche center': 'klotsche-center',
+  'al mcguire center': 'al-mcguire-center',
+
   'crypto.com arena': 'crypto-com-arena',
   'intuit dome': 'intuit-dome',
   'sofi stadium': 'sofi-stadium',
@@ -343,6 +360,7 @@ async function collectMlb(team) {
  * final score, season by season (src/data/sources/hockeytechSource.ts has the keys and team ids).
  */
 const HOCKEYTECH_TEAMS = [
+  { teamId: 'milwaukee-admirals', metroId: 'milwaukee', client: 'ahl', htId: '327', venueId: 'uwm-panther-arena' },
   { teamId: 'chicago-wolves', metroId: 'chicago', client: 'ahl', htId: '330', venueId: 'allstate-arena' },
   { teamId: 'laval-rocket', metroId: 'montreal', client: 'ahl', htId: '415', venueId: 'place-bell' },
   { teamId: 'san-jose-barracuda', metroId: 'bay-area', client: 'ahl', htId: '405', venueId: 'sap-center' },
@@ -354,7 +372,7 @@ const HOCKEYTECH_TEAMS = [
   { teamId: 'seattle-thunderbirds', metroId: 'seattle', client: 'whl', htId: '214', venueId: 'accesso-showare-center' },
   { teamId: 'everett-silvertips', metroId: 'seattle', client: 'whl', htId: '226', venueId: 'angel-of-the-winds-arena' },
 ];
-const HT_VENUES = { 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena' };
+const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena' };
 
 const HT_KEYS = { ahl: 'ccb91f29d6744675', pwhl: '446521baf8c38984', whl: '41b145a848f4bd67' };
 const htUrl = (client, params) => `https://lscluster.hockeytech.com/feed/?${new URLSearchParams({ feed: 'modulekit', key: HT_KEYS[client], client_code: client, fmt: 'json', lang: 'en', ...params })}`;

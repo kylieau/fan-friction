@@ -11,6 +11,888 @@ import type { LocalDate, Venue } from './types';
 import { VENUE_ACCESS } from './venueAccessIndex';
 
 export const VENUES: Record<string, Venue> = {
+  // Milwaukee: reconciled original answers and room register in docs/research/city-builds/milwaukee/.
+  // No unsupported venue carShare overrides; all locations are research-linked OSM points.
+  'american-family-field': {
+    id: 'american-family-field',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Miller Park'
+      },
+      {
+        name: 'American Family Field',
+        from: '2021-01-01'
+      }
+    ],
+    location: [
+      -87.97127,
+      43.02806
+    ],
+    capacity: [
+      {
+        seats: 41900,
+        setup: 'baseball',
+        note: 'Official. MLB currently publishes 41,900; Claude cites 40,100 after 2025 seat removal. No mechanical subtraction; current sellable inventory remains disputed. Source: https://www.mlb.com/news/featured/american-family-field-guide-capacity-seating-chart-parking-and-more'
+      }
+    ],
+    roof: 'covered'
+  },
+  'milwaukee-mile': {
+    id: 'milwaukee-mile',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Milwaukee Mile'
+      }
+    ],
+    location: [
+      -88.01112,
+      43.02093
+    ],
+    capacity: [
+      {
+        seats: 34855,
+        setup: 'racing',
+        note: 'Official. 34,463 seats plus 392 accessible places; concert floor/blocked sections vary. Fair Main Stage is a setup here, not another crowd. Source: https://wistatefair.com/wsfp/milwaukee-mile-speedway/'
+      }
+    ],
+    roof: 'open'
+  },
+  'american-family-insurance-amphitheater': {
+    id: 'american-family-insurance-amphitheater',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Marcus Amphitheater'
+      },
+      {
+        name: 'American Family Insurance Amphitheater'
+      }
+    ],
+    location: [
+      -87.89756,
+      43.02716
+    ],
+    capacity: [
+      {
+        seats: 23000,
+        setup: 'concert',
+        note: 'Official. Includes lawn, not 23,000 fixed chairs. Do not add this audience to Summerfest gate attendance. Source: https://www.amfamamp.com/plan-your-visit/ticket-info'
+      }
+    ],
+    roof: 'covered'
+  },
+  'fiserv-forum': {
+    id: 'fiserv-forum',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Fiserv Forum'
+      }
+    ],
+    location: [
+      -87.91749,
+      43.04501
+    ],
+    capacity: [
+      {
+        seats: 17341,
+        setup: 'basketball',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.fiservforum.com/assets/doc/Fiserv-Forum_FactSheet_8.5x11-7075c776c1.pdf',
+        fromYear: 2018
+      },
+      {
+        seats: 18000,
+        setup: 'concert',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.fiservforum.com/assets/doc/Fiserv-Forum_FactSheet_8.5x11-7075c776c1.pdf',
+        fromYear: 2018
+      }
+    ],
+    roof: 'indoor'
+  },
+  'uwm-panther-arena': {
+    id: 'uwm-panther-arena',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'U.S. Cellular Arena'
+      },
+      {
+        name: 'UW-Milwaukee Panther Arena',
+        from: '2014-06-26'
+      }
+    ],
+    location: [
+      -87.91695,
+      43.04229
+    ],
+    capacity: [
+      {
+        seats: 9652,
+        setup: 'hockey',
+        note: 'Reported historical hockey configuration; 2025 operator manual is newer. Source: research answer Claude.'
+      },
+      {
+        seats: 9497,
+        setup: 'basketball',
+        note: 'Official. Operator 2025 manual, end stage with 360-degree sight lines; other concert layouts range 7,128–9,003. Historical hockey 9,652 remains applicable before 2025. Source: https://wcd.org/wp-content/uploads/2025/10/UWMPA_Tec-manual_202520.pdf',
+        fromYear: 2025
+      },
+      {
+        seats: 9536,
+        setup: 'hockey',
+        note: 'Official. Operator 2025 manual, end stage with 360-degree sight lines; other concert layouts range 7,128–9,003. Historical hockey 9,652 remains applicable before 2025. Source: https://wcd.org/wp-content/uploads/2025/10/UWMPA_Tec-manual_202520.pdf',
+        fromYear: 2025
+      },
+      {
+        seats: 9403,
+        setup: 'soccer',
+        note: 'Official. Operator 2025 manual, end stage with 360-degree sight lines; other concert layouts range 7,128–9,003. Historical hockey 9,652 remains applicable before 2025. Source: https://wcd.org/wp-content/uploads/2025/10/UWMPA_Tec-manual_202520.pdf',
+        fromYear: 2025
+      },
+      {
+        seats: 10705,
+        setup: 'concert',
+        note: 'Official. Operator 2025 manual, end stage with 360-degree sight lines; other concert layouts range 7,128–9,003. Historical hockey 9,652 remains applicable before 2025. Source: https://wcd.org/wp-content/uploads/2025/10/UWMPA_Tec-manual_202520.pdf',
+        fromYear: 2025
+      }
+    ],
+    roof: 'indoor'
+  },
+  'slinger-speedway': {
+    id: 'slinger-speedway',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Slinger Super Speedway'
+      }
+    ],
+    location: [
+      -88.27757,
+      43.341
+    ],
+    capacity: [
+      {
+        seats: 10000,
+        setup: 'racing',
+        note: 'Official. Official 2026 permit maximum spectators, not attendance or fixed seats. Source: https://d3n9y02raazwpg.cloudfront.net/slinger-wi/927b2337-d084-11f0-bb28-005056a89546-45f3a427-b05d-46e7-a0be-c1aa89d74e37-1773335906.pdf'
+      }
+    ],
+    roof: 'open'
+  },
+  'bmo-pavilion': {
+    id: 'bmo-pavilion',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'BMO Harris Pavilion'
+      },
+      {
+        name: 'BMO Pavilion'
+      }
+    ],
+    location: [
+      -87.89661,
+      43.02859
+    ],
+    capacity: [
+      {
+        seats: 10000,
+        setup: 'concert',
+        note: 'Reported. Reported 5,000 covered seats plus 5,000 outside standing; fair/festival viewers are not an extra crowd. Source: https://news.pollstar.com/2013/05/29/babisch-talks-summerfest/'
+      }
+    ],
+    roof: 'covered'
+  },
+  'hart-park-stadium': {
+    id: 'hart-park-stadium',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Hart Park Stadium'
+      }
+    ],
+    location: [
+      -88.0023,
+      43.04684
+    ],
+    capacity: [
+      {
+        seats: 4900,
+        setup: 'soccer',
+        note: 'Official. City 4,900 wins over rounded 5,000; no standing inventory verified. Parent-park point, stadium point unverified. Source: https://www.wauwatosa.net/discover-tosa/rental-facilities/hart-park-stadium'
+      },
+      {
+        seats: 4900,
+        setup: 'football',
+        note: 'Official. City 4,900 wins over rounded 5,000; no standing inventory verified. Parent-park point, stadium point unverified. Source: https://www.wauwatosa.net/discover-tosa/rental-facilities/hart-park-stadium'
+      }
+    ],
+    roof: 'open'
+  },
+  'landmark-credit-union-live': {
+    id: 'landmark-credit-union-live',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Landmark Credit Union Live'
+      }
+    ],
+    location: [
+      -87.91684,
+      43.04389
+    ],
+    capacity: [
+      {
+        seats: 4500,
+        setup: 'concert',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://news.livenationentertainment.com/news/landmark-credit-union-live-debuts-as-milwaukees-newest-home-for-live-music',
+        fromYear: 2026
+      }
+    ],
+    roof: 'indoor'
+  },
+  'miller-high-life-theatre': {
+    id: 'miller-high-life-theatre',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Milwaukee Theatre'
+      },
+      {
+        name: 'Miller High Life Theatre',
+        from: '2017-04-25'
+      }
+    ],
+    location: [
+      -87.91816,
+      43.04228
+    ],
+    capacity: [
+      {
+        seats: 4079,
+        setup: 'concert',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.pabsttheatergroup.com/rentals/ticketed-event-rentals'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'eagles-ballroom': {
+    id: 'eagles-ballroom',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Eagles Ballroom'
+      }
+    ],
+    location: [
+      -87.94332,
+      43.03792
+    ],
+    capacity: [
+      {
+        seats: 4000,
+        setup: 'concert',
+        note: 'Reported. Reported current full ballroom 4,000; Club Stage is a curtain configuration, not a separate room. Source: https://www.mixonline.com/live-sound/venues/milwaukees-the-rave-rocks-new-p-a'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'franklin-field': {
+    id: 'franklin-field',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Routine Field'
+      },
+      {
+        name: 'Franklin Field'
+      }
+    ],
+    location: [
+      -88.01583,
+      42.91795
+    ],
+    capacity: [
+      {
+        seats: 4000,
+        setup: 'baseball',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.milwaukeemilkmen.com/franklin-field'
+      }
+    ],
+    roof: 'open'
+  },
+  'al-mcguire-center': {
+    id: 'al-mcguire-center',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Al McGuire Center'
+      }
+    ],
+    location: [
+      -87.92676,
+      43.03962
+    ],
+    capacity: [
+      {
+        seats: 3700,
+        setup: 'basketball',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://admissions.marquette.edu/portal/mumap'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'dockhounds-ballpark': {
+    id: 'dockhounds-ballpark',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Wisconsin Brewing Company Park'
+      },
+      {
+        name: 'DockHounds Ballpark',
+        from: '2026-04-07'
+      }
+    ],
+    location: [
+      -88.47574,
+      43.06754
+    ],
+    capacity: [
+      {
+        seats: 3641,
+        setup: 'baseball',
+        note: 'Reported. Reported 3,641; concert configuration unknown. Source: https://www.stadiumjourney.com/stadiums/wisconsin-brewing-company-park-lake-country-dockhounds'
+      }
+    ],
+    roof: 'open'
+  },
+  'klotsche-center': {
+    id: 'klotsche-center',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Klotsche Center'
+      }
+    ],
+    location: [
+      -87.87949,
+      43.07949
+    ],
+    capacity: [
+      {
+        seats: 3500,
+        setup: 'basketball',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://mkepanthers.com/facilities/klotsche-center/1'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'kapco-park': {
+    id: 'kapco-park',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Kapco Park'
+      }
+    ],
+    location: [
+      -87.91378,
+      43.25645
+    ],
+    capacity: [
+      {
+        seats: 3000,
+        setup: 'baseball',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://northwoodsleague.com/lakeshore-chinooks/team/kapcopark/'
+      }
+    ],
+    roof: 'open'
+  },
+  'southeast-sales-powersports-stadium': {
+    id: 'southeast-sales-powersports-stadium',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Kohler Engines Stadium'
+      },
+      {
+        name: 'Southeast Sales Powersports Stadium'
+      }
+    ],
+    location: [
+      -87.99798,
+      43.146
+    ],
+    capacity: [
+      {
+        seats: 3000,
+        setup: 'soccer',
+        note: 'Official. OSM parent soccer complex point; exact pitch unverified. Source: https://www.mksc.org/assets/139/20/mksc_january_2023_newsletters-2.pdf?73137='
+      }
+    ],
+    roof: 'open'
+  },
+  'time-of-grace-center': {
+    id: 'time-of-grace-center',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Time of Grace Center'
+      }
+    ],
+    location: [
+      -88.02195,
+      43.03727
+    ],
+    capacity: [
+      {
+        seats: 2500,
+        setup: 'basketball',
+        note: 'Official. OSM campus centroid; exact gym point unverified. Source: https://wlcsports.com/facilities/time-of-grace-center/9'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'riverside-theater': {
+    id: 'riverside-theater',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Riverside Theater'
+      }
+    ],
+    location: [
+      -87.91093,
+      43.03889
+    ],
+    capacity: [
+      {
+        seats: 2414,
+        setup: 'concert',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.pabsttheatergroup.com/rentals/ticketed-event-rentals'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'uihlein-hall': {
+    id: 'uihlein-hall',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Uihlein Hall'
+      }
+    ],
+    location: [
+      -87.9113,
+      43.04292
+    ],
+    capacity: [
+      {
+        seats: 2125,
+        setup: 'concert',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.marcuscenter.org/host-an-event/uihlein-hall/'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'wilson-ice-arena': {
+    id: 'wilson-ice-arena',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Wilson Ice Arena'
+      }
+    ],
+    location: [
+      -87.94258,
+      42.9711
+    ],
+    capacity: [
+      {
+        seats: 2000,
+        setup: 'hockey',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://county.milwaukee.gov/EN/Parks/Explore/Community-Centers/Wilson-Ice-Arena'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'schneider-stadium': {
+    id: 'schneider-stadium',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Schneider Stadium'
+      }
+    ],
+    location: [
+      -88.22988,
+      43.00479
+    ],
+    capacity: [
+      {
+        seats: 2000,
+        setup: 'football',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.carrollu.edu/facilities/athletic-facilities/'
+      },
+      {
+        seats: 2000,
+        setup: 'soccer',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.carrollu.edu/facilities/athletic-facilities/'
+      }
+    ],
+    roof: 'open'
+  },
+  'engelmann-stadium': {
+    id: 'engelmann-stadium',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Engelmann Stadium'
+      }
+    ],
+    location: [
+      -87.88583,
+      43.07684
+    ],
+    capacity: [
+      {
+        seats: 2000,
+        setup: 'soccer',
+        note: 'Estimated. Estimated lower-bound total of more than 1,500 bleacher places plus 500 grass spectators; no exact maximum. Source: https://mkepanthers.com/facilities/engelmann-stadium/5'
+      }
+    ],
+    roof: 'open'
+  },
+  'pettit-national-ice-center': {
+    id: 'pettit-national-ice-center',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Pettit National Ice Center'
+      }
+    ],
+    location: [
+      -88.01574,
+      43.02566
+    ],
+    capacity: [
+      {
+        seats: 2000,
+        note: 'Reported. Reported legacy total for the main skating room; not a capacity for each interior rink. Source: https://de.wikipedia.org/wiki/Pettit_National_Ice_Center'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'buuck-field-house': {
+    id: 'buuck-field-house',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'R. John Buuck Field House'
+      }
+    ],
+    location: [
+      -87.91666,
+      43.25427
+    ],
+    capacity: [
+      {
+        seats: 1800,
+        setup: 'basketball',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://cuwfalcons.com/sports/2025/4/16/facilities-rjohnbuuckfieldhouse.aspx'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'rave-hall': {
+    id: 'rave-hall',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Rave Hall'
+      },
+      {
+        name: 'The Rave'
+      }
+    ],
+    location: [
+      -87.94332,
+      43.03792
+    ],
+    capacity: [
+      {
+        seats: 1800,
+        setup: 'concert',
+        note: 'Reported. Reported 1,800 conflicts with Claude 1,500; current official per-room inventory unknown. Source: https://www.mixonline.com/live-sound/venues/milwaukees-the-rave-rocks-new-p-a'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'cooley-auditorium': {
+    id: 'cooley-auditorium',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Cooley Auditorium'
+      }
+    ],
+    location: [
+      -87.92031,
+      43.04437
+    ],
+    capacity: [
+      {
+        seats: 1800,
+        note: 'Official. Mapped MATC campus point, interior auditorium point unverified; this is not the athletic home. Source: https://www.matc.edu/who-we-are/offices/college-events/milwaukee-campus-rental.html'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'valley-fields': {
+    id: 'valley-fields',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Valley Fields'
+      }
+    ],
+    location: [
+      -87.9361,
+      43.03212
+    ],
+    capacity: [
+      {
+        seats: 1750,
+        setup: 'soccer',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://gomarquette.com/facilities/valley-fields/4'
+      }
+    ],
+    roof: 'open'
+  },
+  'bradley-symphony-center': {
+    id: 'bradley-symphony-center',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Allen-Bradley Hall'
+      },
+      {
+        name: 'Bradley Symphony Center'
+      }
+    ],
+    location: [
+      -87.9134,
+      43.03925
+    ],
+    capacity: [
+      {
+        seats: 1650,
+        setup: 'concert',
+        note: 'Official. Official opening 1,650; other publications report 1,799/1,800. Current sellable inventory unresolved. Source: https://www.mso.org/app/uploads/2022/11/MSO_21.22_Annual_Report-112922q_individual-pages_lo-res.pdf'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'van-male-field-house': {
+    id: 'van-male-field-house',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Van Male Field House'
+      }
+    ],
+    location: [
+      -88.22842,
+      43.00491
+    ],
+    capacity: [
+      {
+        seats: 1500,
+        setup: 'basketball',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.carrollu.edu/facilities/athletic-facilities/'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'raabe-stadium': {
+    id: 'raabe-stadium',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Raabe Stadium'
+      }
+    ],
+    location: [
+      -88.04277,
+      43.05102
+    ],
+    capacity: [
+      {
+        seats: 1500,
+        setup: 'football',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf'
+      }
+    ],
+    roof: 'open'
+  },
+  'ozaukee-ice-center': {
+    id: 'ozaukee-ice-center',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Ozaukee Ice Center'
+      }
+    ],
+    location: [
+      -87.97663,
+      43.27875
+    ],
+    capacity: [
+      {
+        seats: 1000,
+        setup: 'hockey',
+        note: 'Official. Official 2011 opening, 1,000 seats; up to 1,500 including standing; applies to the CUW/new rink only. Source: https://cuwfalcons.com/news/2011/12/9/12_9_2011_3031.aspx',
+        standing: 1500
+      }
+    ],
+    roof: 'indoor'
+  },
+  'pabst-theater': {
+    id: 'pabst-theater',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Pabst Theater'
+      }
+    ],
+    location: [
+      -87.91046,
+      43.04114
+    ],
+    capacity: [
+      {
+        seats: 1341,
+        setup: 'concert',
+        note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.pabsttheatergroup.com/rentals/ticketed-event-rentals'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'shattuck-auditorium': {
+    id: 'shattuck-auditorium',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Shattuck Auditorium'
+      }
+    ],
+    location: [
+      -88.22717,
+      43.00471
+    ],
+    capacity: [
+      {
+        seats: 1100,
+        setup: 'concert',
+        note: 'Official. Official approximate 1,100; older layouts may differ. Source: https://www.carrollu.edu/facilities/shattuck-music-center/'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'varsity-theatre': {
+    id: 'varsity-theatre',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Varsity Theatre'
+      }
+    ],
+    location: [
+      -87.92942,
+      43.0391
+    ],
+    capacity: [
+      {
+        seats: 1075,
+        note: 'Official. Official 1,075 lecture layout, concert 700; do not size a concert by lecture seats. Source: https://www.marquette.edu/event-services/varsity-theatre.php'
+      },
+      {
+        seats: 700,
+        setup: 'concert',
+        note: 'Official. Official 1,075 lecture layout, concert 700; do not size a concert by lecture seats. Source: https://www.marquette.edu/event-services/varsity-theatre.php'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'oak-creek-paec': {
+    id: 'oak-creek-paec',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Oak Creek Performing Arts & Education Center'
+      }
+    ],
+    location: [
+      -87.90823,
+      42.88749
+    ],
+    capacity: [
+      {
+        seats: 1000,
+        setup: 'concert',
+        note: 'Official. Official 1,000; mapped parent building, not surveyed interior room. Source: https://www.prarch.com/projects/oak-creek-high-school-performing-arts-education-center/'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'rave-ii': {
+    id: 'rave-ii',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Eagles Hall'
+      },
+      {
+        name: 'The Rave II'
+      }
+    ],
+    location: [
+      -87.94332,
+      43.03792
+    ],
+    capacity: [
+      {
+        seats: 1000,
+        setup: 'concert',
+        note: 'Reported. Reported approximate 1,000; current official per-room inventory unknown. Source: https://en.wikipedia.org/wiki/The_Rave/Eagles_Club'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'turner-hall-ballroom': {
+    id: 'turner-hall-ballroom',
+    metroId: 'milwaukee',
+    names: [
+      {
+        name: 'Turner Hall Ballroom'
+      }
+    ],
+    location: [
+      -87.91553,
+      43.04381
+    ],
+    capacity: [
+      {
+        seats: 987,
+        setup: 'concert',
+        note: 'Official. Official 987 standing, 600 seated. Near the listing threshold; never round to 1,000 in capacity. Source: https://www.pabsttheatergroup.com/rentals/ticketed-event-rentals'
+      }
+    ],
+    roof: 'indoor'
+  },
   'dodger-stadium': {
     id: 'dodger-stadium',
     metroId: 'la',

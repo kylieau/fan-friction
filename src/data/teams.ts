@@ -40,6 +40,22 @@ export function teamBadge(team: Team): string {
 }
 
 const LIST: Team[] = [
+  // Milwaukee (Oct 11, 2026): current clubs/programs; no-feed records remain manually loggable.
+  team("brewers", "Milwaukee Brewers", "Brewers", "MLB", "baseball", "milwaukee", "MIL"),
+  team("bucks", "Milwaukee Bucks", "Bucks", "NBA", "basketball", "milwaukee", "MIL"),
+  team("marquette-mbb", "Marquette Golden Eagles Men's Basketball", "Marquette MBB", "College men's basketball", "basketball", "milwaukee", "MARQ"),
+  team("marquette-wbb", "Marquette Golden Eagles Women's Basketball", "Marquette WBB", "College women's basketball", "basketball", "milwaukee", "MARQ"),
+  team("uwm-mbb", "Milwaukee Panthers Men's Basketball", "Milwaukee MBB", "College men's basketball", "basketball", "milwaukee", "UWM"),
+  team("uwm-wbb", "Milwaukee Panthers Women's Basketball", "Milwaukee WBB", "College women's basketball", "basketball", "milwaukee", "UWM"),
+  team("milwaukee-admirals", "Milwaukee Admirals", "Admirals", "AHL", "hockey", "milwaukee", "MIL"),
+  team("milwaukee-milkmen", "Milwaukee Milkmen", "Milkmen", "American Association", "baseball", "milwaukee", "MIL"),
+  team("lake-country-dockhounds", "Lake Country DockHounds", "DockHounds", "American Association", "baseball", "milwaukee", "LC"),
+  team("milwaukee-wave", "Milwaukee Wave", "Milwaukee Wave", "MASL", "soccer", "milwaukee", "MIL"),
+  team("lakeshore-chinooks", "Lakeshore Chinooks", "Chinooks", "Northwoods League", "baseball", "milwaukee", "LS"),
+  team("marquette-volleyball", "Marquette Golden Eagles Women's Volleyball", "Marquette VB", "College volleyball", "volleyball", "milwaukee", "MARQ"),
+  team("uwm-volleyball", "Milwaukee Panthers Women's Volleyball", "Milwaukee VB", "College volleyball", "volleyball", "milwaukee", "UWM"),
+  team("milwaukee-torrent-men", "Milwaukee Torrent Men", "Torrent Men", "NPSL", "soccer", "milwaukee", "MIL"),
+  team("milwaukee-torrent-women", "Milwaukee Torrent Women", "Torrent Women", "WPSL", "soccer", "milwaukee", "MIL"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

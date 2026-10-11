@@ -42,7 +42,9 @@ const SCALE = 7.5;
 // Chase Center are about half by car, nearly every other big crowd 80–95%; the research picks a 0.85 default.
 // Atlanta is a driving region (research, Oct 7, 2026, docs/research/city-builds/atlanta/atlanta-city-type-answer.md): no regular-season
 // crowd measured under ~70% car; only the two downtown buildings on MARTA take a real rail share.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', boston: 'transit' };
+// Milwaukee: provisional driving default; both research answers found no measured local mode split.
+// No venue override is inferred from parking or historical shuttle counts.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
