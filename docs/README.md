@@ -8,6 +8,8 @@ What's here is what's still in play. Finished research lives in `archive/`.
 | `reviews/gap-reviews/` | Independent reviews of the app (Codex, GrokBot/Cursor), each with its screenshots under `assets/`. Open until their items are decided. See its README. |
 | `reviews/tester-readiness-reviews/` | Independent reviews of whether a tester can use the main flows unaided (Codex, GrokBot), with screenshots under `assets/`. Open until their findings are decided. See its README. |
 | `research-queue/` | Prompts that have gone out and are waiting for an answer. |
+| `design/` | Kylie's approved mockups from the Oct 9–10, 2026 Mock Mosaic, by file name (index: its README). |
+| `research/` | Research answers Kylie ran outside the queue and saved verbatim (the Ticketmaster price research, Oct 10, 2026). |
 | `archive/research/` | Answered prompts and their answers, by city and topic. Still cited by the code as sources. |
 | `archive/second-opinions/` | Second-opinion prompts and answers. |
 | `archive/formula/` | Formula analysis, tuning, review and calibration history. The live formula is `formula-v4.md`. |
