@@ -5426,3 +5426,9 @@ button.back-link {
   background: var(--fightContainer);
   color: var(--ink);
 }
+
+/* A link slot with no source yet (R12). */
+.fav-slot {
+  color: var(--muted);
+  pointer-events: none;
+}

@@ -8,6 +8,8 @@ export interface TicketPrice {
   min: number | null;
   currency: string | null;
   feesIncluded: boolean;
+  /** Not on sale (offsale, cancelled, postponed): no line. */
+  offsale: boolean;
   soldOut: boolean;
 }
 
@@ -28,6 +30,7 @@ export async function ticketPrice(ticketmasterId: string): Promise<TicketPrice |
         min: typeof body.min === 'number' ? body.min : null,
         currency: body.currency ?? null,
         feesIncluded: Boolean(body.feesIncluded),
+        offsale: Boolean(body.offsale),
         soldOut: Boolean(body.soldOut),
       };
     }
@@ -38,10 +41,10 @@ export async function ticketPrice(ticketmasterId: string): Promise<TicketPrice |
   return answer;
 }
 
-/** "Prices from $48+fees", or "Prices from $48" when the feed's figure already includes them. */
+/** "Prices from $48+fees", always with "+fees" beside a number (Kylie, Oct 11, call 5). */
 export function priceLine(price: TicketPrice): string | null {
   if (price.min === null) return null;
   const symbol = price.currency === 'USD' || price.currency === 'CAD' || !price.currency ? '$' : `${price.currency} `;
   const amount = Number.isInteger(price.min) ? String(price.min) : price.min.toFixed(2);
-  return `Prices from ${symbol}${amount}${price.feesIncluded ? '' : '+fees'}`;
+  return `Prices from ${symbol}${amount}+fees`;
 }

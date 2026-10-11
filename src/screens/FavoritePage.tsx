@@ -50,6 +50,7 @@ import { mapTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath } from '../lib/view';
 import { crowdShort } from '../map/crowdPoints';
+import { dayWordFor } from '../lib/dayWord';
 import { LastFive } from './FavoritesScreen';
 
 /** How many schedule rows show before "See all". */
@@ -228,6 +229,12 @@ export function FavoritePage() {
           ESPN ›
         </a>
       )}
+      {/* R12 (Kylie, Oct 11): a slot for the artist's own link; no source yet, since Ticketmaster is not the ESPN of concerts. */}
+      {fav.kind === 'artist' && (
+        <span className="fav-foot-link fav-foot-out fav-page-espn fav-slot" aria-disabled="true">
+          Official site ›
+        </span>
+      )}
 
       {fav.kind === 'team' ? (
         <>
@@ -319,7 +326,7 @@ export function FavoritePage() {
                       <span className="log-main">
                         <span className="log-title">
                           {venueOf(event)}
-                          {event.date === today ? ' · tonight' : ''}
+                          {event.date === today ? ` · ${dayWordFor(event) === 'day' ? 'today' : 'tonight'}` : ''}
                         </span>
                         <span className="log-facts">
                           {shortLocalDate(event.date)}

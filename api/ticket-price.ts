@@ -12,8 +12,11 @@ interface PriceAnswer {
   /** The lowest standard price, when the listing carries one. */
   min: number | null;
   currency: string | null;
-  /** True when the lowest price already includes fees, so "+fees" would be wrong. */
+  /** True when the lowest price already includes fees. Kept as a fact; the line still says "+fees" (Kylie, Oct 11, call 5). */
   feesIncluded: boolean;
+  /** Not on sale here any more (offsale), cancelled or postponed: the app shows no line (R18). Not "sold out". */
+  offsale: boolean;
+  /** Reserved for a feed that says the tickets are gone. No feed says so today, so it is never true. */
   soldOut: boolean;
 }
 
@@ -69,7 +72,8 @@ export default async function handler(req: Req, res: Res) {
       min: pick?.min ?? null,
       currency: pick?.currency ?? null,
       feesIncluded: Boolean(pick && /fee/i.test(pick.type ?? '')),
-      soldOut: /offsale|cancel/i.test(event.dates?.status?.code ?? ''),
+      offsale: /offsale|cancel|postpon/i.test(event.dates?.status?.code ?? ''),
+      soldOut: false,
     };
     held.set(id, { at: Date.now(), answer });
     res.setHeader('Cache-Control', 'public, max-age=120');

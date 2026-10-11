@@ -174,7 +174,7 @@ export function EventScreen() {
         </div>
         <FactList facts={eventFacts(e, logged)} />
         {/* The ticket line (8.1): upcoming, unlogged events with a Ticketmaster listing; the price is looked up live and never stored. */}
-        {price && price.url && (price.min !== null || !price.soldOut) && (
+        {price && price.url && !price.offsale && (
           <a className="ticket-line" href={price.url} target="_blank" rel="noreferrer">
             {priceLine(price) ?? 'See tickets on Ticketmaster'} ›
           </a>
