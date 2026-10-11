@@ -445,6 +445,18 @@ export function updateEntry(entryId: string, edit: EntryEdit) {
   commit({ ...snapshot, added });
 }
 
+/** Keep one entry private, or share it again. The stamp and everything else stay. */
+export function setEntryPrivate(entryId: string, on: boolean) {
+  const added = snapshot.added.map((entry) => {
+    if (entry.id !== entryId) return entry;
+    const next: Entry = { ...entry };
+    if (on) next.private = true;
+    else delete next.private;
+    return next;
+  });
+  commit({ ...snapshot, added });
+}
+
 /** Take an entry out of the log. For a linked night this is the same as un-tapping Attended. */
 export function removeEntry(entryId: string) {
   commit({ ...snapshot, added: snapshot.added.filter((entry) => entry.id !== entryId) });

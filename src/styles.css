@@ -4659,3 +4659,56 @@ button.back-link {
   font-size: 14px;
   min-height: 44px;
 }
+
+/* Find people, Block, keep-private (build notes 2, section 4) */
+.people-find {
+  padding: 10px 14px 12px;
+}
+
+.people-find .search-box {
+  margin: 0 0 6px;
+}
+
+.people-find-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
+  text-align: left;
+  font: inherit;
+  color: var(--dodger);
+}
+
+.people-find-row .log-title {
+  color: var(--dodger);
+}
+
+.people-plus {
+  background: var(--card);
+  color: var(--dodger);
+  box-shadow: inset 0 0 0 1.5px var(--dodger);
+  font-size: 18px;
+}
+
+.entry-layer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.entry-private {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.entry-private[aria-checked='true'] {
+  color: var(--ink);
+}
+
+.profile-head .people-menu {
+  margin-left: auto;
+}

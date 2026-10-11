@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { entryFieldsFor, isManualEntry, ownEntryFacts, removeEntry, todayIn, updateEntry, updateManualEntry, type Entry, type EntryEdit } from '../data';
+import { entryFieldsFor, isManualEntry, ownEntryFacts, removeEntry, setEntryPrivate, todayIn, updateEntry, updateManualEntry, type Entry, type EntryEdit } from '../data';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { getHomeId } from '../lib/homeCity';
 import { FactList } from './FactList';
@@ -27,9 +27,15 @@ export function EntryLayer({ entry }: { entry: Entry }) {
     <section className="card entry-layer" aria-label="Your entry">
       {entry.review && <p className="entry-review">{entry.review}</p>}
       <FactList facts={facts} />
-      <button type="button" className="link-button entry-edit" onClick={() => setEditing(true)}>
-        {empty ? 'Add a review, who you went with…' : 'Edit'}
-      </button>
+      <span className="entry-layer-actions">
+        <button type="button" className="link-button entry-edit" onClick={() => setEditing(true)}>
+          {empty ? 'Add a review, who you went with…' : 'Edit'}
+        </button>
+        {/* One entry can stay private whatever the visibility switch says (build notes 2, section 4). */}
+        <button type="button" className="link-button entry-private" role="switch" aria-checked={Boolean(entry.private)} onClick={() => setEntryPrivate(entry.id, !entry.private)}>
+          {entry.private ? 'Private · only you' : 'Keep this one private'}
+        </button>
+      </span>
     </section>
   );
 }

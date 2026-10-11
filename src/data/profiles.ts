@@ -168,7 +168,7 @@ async function entryCards(c: SupabaseClient, userIds: string[], limit?: number):
   let { data, error } = await ask('entry_cards', ENTRY_CARD_COLUMNS);
   if (error && notThereYet(error)) ({ data, error } = await ask('entries', ENTRY_TABLE_COLUMNS));
   if (error || !data) return [];
-  return (data as unknown as EntryCardRow[]).map((row) => ({ userId: row.user_id, entry: entryFromCard(row) }));
+  return (data as unknown as EntryCardRow[]).filter((row) => !row.data?.private).map((row) => ({ userId: row.user_id, entry: entryFromCard(row) }));
 }
 
 const HANDLE_SHAPE = /^[a-z0-9]([a-z0-9-]{1,30}[a-z0-9])?$/;
@@ -555,3 +555,93 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
     },
   },
 ];
+
+/** A plan on someone's page, readable by their approved followers (migration 0012). */
+export interface PlanCard {
+  id: string;
+  date: string;
+  metroId: string;
+  eventId?: string;
+  title: string;
+  venue?: string;
+}
+
+/** Someone's plans from today on, soonest first. Empty when they have not approved you. */
+export async function plansOf(userId: string): Promise<PlanCard[]> {
+  const c = supabase();
+  if (!c) return [];
+  const { data } = await c
+    .from('plans')
+    .select('id, date, metro_id, event_id, title, venue')
+    .eq('user_id', userId)
+    .gte('date', earliestToday())
+    .order('date', { ascending: true })
+    .limit(20);
+  return ((data ?? []) as { id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null }[])
+    .filter((p) => p.date >= todayFor(p.metro_id))
+    .map((p) => ({ id: p.id, date: p.date, metroId: p.metro_id, eventId: p.event_id ?? undefined, title: p.title, venue: p.venue ?? undefined }));
+}
+
+/** Whether this person follows you (approved). */
+export async function followsMe(userId: string): Promise<boolean> {
+  const c = supabase();
+  const me = getAccount();
+  if (!c || !me) return false;
+  const { data } = await c.from('follows').select('status').eq('follower_id', userId).eq('followee_id', me.id).eq('status', 'approved').maybeSingle();
+  return Boolean(data);
+}
+
+/** The shortest search that returns people (Kylie, Oct 9): three characters. */
+export const PEOPLE_SEARCH_MIN = 3;
+
+/**
+ * Find people by part of a name or handle (Kylie, Oct 9: partial match from three
+ * characters). Cards only: id, handle, name. Someone who blocked you, or switched
+ * their link off, is not in the results (the database leaves them out).
+ */
+export async function searchPeople(query: string, limit = 20): Promise<Profile[]> {
+  const c = supabase();
+  const q = query.trim().toLowerCase();
+  if (!c || q.length < PEOPLE_SEARCH_MIN) return [];
+  const me = getAccount();
+  const like = `%${q.replace(/[%_]/g, '')}%`;
+  let { data, error } = await c.from('profile_cards').select(CARD_COLUMNS).or(`handle.ilike.${like},display_name.ilike.${like}`).limit(limit);
+  if (error && notThereYet(error)) ({ data, error } = await c.from('profiles').select(CARD_COLUMNS).or(`handle.ilike.${like},display_name.ilike.${like}`).limit(limit));
+  return ((data ?? []) as ProfileRow[]).filter((row) => row.id !== me?.id && row.handle).map(fromRow);
+}
+
+/**
+ * Block someone (migration 0018): the follow goes both ways, you leave their search and
+ * their links, and they leave your entries and plans. Nothing tells them. Resolves to an
+ * error message, or null.
+ */
+export async function blockUser(userId: string): Promise<string | null> {
+  const c = supabase();
+  if (!c || !getAccount()) return 'Sign in first.';
+  const { error } = await c.rpc('block_user', { target: userId });
+  if (!error) return null;
+  return notThereYet(error) ? 'Not available yet.' : error.message;
+}
+
+export async function unblockUser(userId: string): Promise<string | null> {
+  const c = supabase();
+  if (!c || !getAccount()) return 'Sign in first.';
+  const { error } = await c.rpc('unblock_user', { target: userId });
+  if (!error) return null;
+  return notThereYet(error) ? 'Not available yet.' : error.message;
+}
+
+/** The people you blocked, so a block can be undone in Settings. */
+export async function blockedPeople(): Promise<Profile[]> {
+  const c = supabase();
+  const me = getAccount();
+  if (!c || !me) return [];
+  const { data, error } = await c.from('blocks').select('blocked_id').eq('blocker_id', me.id);
+  if (error || !data) return [];
+  const ids = (data as { blocked_id: string }[]).map((row) => row.blocked_id);
+  const cards = await cardsById(c, ids);
+  return ids.flatMap((id) => {
+    const card = cards.get(id);
+    return card ? [card] : [{ id, handle: null, displayName: null, avatarUrl: null, homeMetroId: null } as Profile];
+  });
+}

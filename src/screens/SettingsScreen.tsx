@@ -6,7 +6,7 @@ import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { HomePicker } from '../components/HomePicker';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn, updateMyProfile } from '../data';
+import { blockedPeople, getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn, unblockUser, updateMyProfile, type Profile } from '../data';
 
 /** Behind the gear on You: account, profile, backup, tips. */
 export function SettingsScreen() {
@@ -17,6 +17,8 @@ export function SettingsScreen() {
   const [handle, setHandle] = useState<string | null>(null);
   // undefined until the project has the column (migration 0017); the row then shows.
   const [linkOff, setLinkOff] = useState<boolean | undefined>(undefined);
+  const [copyNote, setCopyNote] = useState('');
+  const [blocked, setBlocked] = useState<Profile[]>([]);
   const [exportNote, setExportNote] = useState('');
   const [shareNote, setShareNote] = useState('');
 
@@ -46,6 +48,7 @@ export function SettingsScreen() {
       setHandle(profile?.handle ?? null);
       setLinkOff(profile?.linkOff);
     });
+    blockedPeople().then((list) => current && setBlocked(list));
     return () => {
       current = false;
     };
@@ -84,6 +87,23 @@ export function SettingsScreen() {
               {shareNote && <span className="settings-value">{shareNote}</span>}
             </button>
           )}
+          {handle && (
+            <button
+              type="button"
+              className="settings-row settings-link"
+              onClick={async () => {
+                try {
+                  await navigator.clipboard.writeText(`@${handle}`);
+                  setCopyNote('Copied.');
+                } catch {
+                  setCopyNote(`@${handle}`);
+                }
+              }}
+            >
+              <span>Copy my handle</span>
+              <span className="settings-value">{copyNote || `@${handle}`}</span>
+            </button>
+          )}
           {handle && linkOff !== undefined && (
             // The off switch (R06): off, the link shows "No one here" to everyone but you and people already linked by a follow.
             <button
@@ -108,6 +128,25 @@ export function SettingsScreen() {
         <div className="settings">
           <div className="settings-heading">Profile</div>
           <ProfileForm />
+        </div>
+      )}
+
+      {account && blocked.length > 0 && (
+        <div className="settings">
+          <div className="settings-heading">Blocked</div>
+          {blocked.map((person) => (
+            <button
+              key={person.id}
+              type="button"
+              className="settings-row settings-link"
+              onClick={async () => {
+                if (!(await unblockUser(person.id))) setBlocked((list) => list.filter((p) => p.id !== person.id));
+              }}
+            >
+              <span>{person.displayName ?? (person.handle ? `@${person.handle}` : 'Someone')}</span>
+              <span className="settings-value">Unblock</span>
+            </button>
+          ))}
         </div>
       )}
 

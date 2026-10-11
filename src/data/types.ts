@@ -513,6 +513,8 @@ export interface Entry {
    * no read to store. May be replaced when the formula improves.
    */
   stamp?: Stamp;
+  /** Keep this one private (build notes 2, section 4): followers never see it, whatever the visibility switch says. */
+  private?: boolean;
   /** When this device last changed the entry (ISO). The newer copy wins when two devices disagree. */
   updatedAt?: string;
 }

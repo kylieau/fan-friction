@@ -5,21 +5,28 @@ import { DEFAULT_METRO, METROS } from '../config/metros';
 import { scoreBand, scoreLabel } from '../config/scoreLabels';
 import { HeaviestStat, Stat, heaviestEntry } from './YouScreen';
 import {
+  blockUser,
   canSignIn,
   entriesOf,
   follow,
   followStatus,
+  followsMe,
   getAccount,
   getProfileByHandle,
   nightsOf,
+  plansOf,
   ratingForEntry,
+  removeFollower,
   scoresForNights,
   subscribeAccount,
   type Entry,
   type FollowStatus,
+  type PlanCard,
   type Profile,
   unfollow,
 } from '../data';
+import { shortLocalDate } from '../lib/dates';
+import { datePath } from '../lib/view';
 import { loggedDateLabel } from '../lib/dates';
 import { eventPath, type BackTo } from '../lib/view';
 
@@ -41,6 +48,10 @@ export function ProfileScreen() {
   const [busy, setBusy] = useState(false);
   const [note, setNote] = useState<string | null>(null);
   const [asking, setAsking] = useState(false);
+  const [plans, setPlans] = useState<PlanCard[]>([]);
+  const [theyFollow, setTheyFollow] = useState(false);
+  const [menu, setMenu] = useState(false);
+  const [confirm, setConfirm] = useState<'remove' | 'block' | null>(null);
 
   const mine = Boolean(profile && account && profile.id === account.id);
 
@@ -51,10 +62,12 @@ export function ProfileScreen() {
       if (!current) return;
       setProfile(found);
       if (!found) return;
-      const [list, st] = await Promise.all([entriesOf(found.id), followStatus(found.id)]);
+      const [list, st, ahead, follower] = await Promise.all([entriesOf(found.id), followStatus(found.id), plansOf(found.id), followsMe(found.id)]);
       if (!current) return;
       setEntries(list);
       setStatus(st);
+      setPlans(ahead);
+      setTheyFollow(follower);
     });
     return () => {
       current = false;
@@ -120,8 +133,61 @@ export function ProfileScreen() {
         <span className="avatar avatar-big" aria-hidden>
           {name.slice(0, 1).toUpperCase()}
         </span>
-        <h1 className="page-title">{name}</h1>
+        <div className="you-who">
+          <h1 className="page-title">{name}</h1>
+          {profile.handle && <span className="you-handle">@{profile.handle}</span>}
+        </div>
+        {!mine && account && (
+          <span className="people-menu">
+            <button type="button" className="round-button people-more" aria-label={`More for ${name}`} aria-expanded={menu} onClick={() => setMenu((v) => !v)}>
+              ⋯
+            </button>
+            {menu && (
+              <span className="people-menu-sheet" role="menu">
+                {theyFollow && (
+                  <button type="button" role="menuitem" className="link-button" onClick={() => { setMenu(false); setConfirm('remove'); }}>
+                    Remove
+                  </button>
+                )}
+                <button type="button" role="menuitem" className="link-button remove-entry" onClick={() => { setMenu(false); setConfirm('block'); }}>
+                  Block
+                </button>
+              </span>
+            )}
+          </span>
+        )}
       </div>
+      {confirm && (
+        <div className="remove-confirm" role="group" aria-label={confirm === 'remove' ? 'Remove this follower?' : 'Block?'}>
+          <span>{confirm === 'remove' ? 'Remove them as a follower?' : `Block ${name}?`}</span>
+          <button type="button" className="link-button" onClick={() => setConfirm(null)}>
+            Keep
+          </button>
+          <button
+            type="button"
+            className="link-button remove-entry"
+            onClick={async () => {
+              const which = confirm;
+              setConfirm(null);
+              if (which === 'remove') {
+                await removeFollower(profile.id);
+                setTheyFollow(false);
+              } else {
+                const error = await blockUser(profile.id);
+                if (error) setNote(error);
+                else {
+                  setStatus('none');
+                  setTheyFollow(false);
+                  setEntries([]);
+                  setPlans([]);
+                }
+              }
+            }}
+          >
+            {confirm === 'remove' ? 'Remove' : 'Block'}
+          </button>
+        </div>
+      )}
 
       <div className="stat-grid">
         <Stat n={entries.length} label="Events" />
@@ -157,6 +223,26 @@ export function ProfileScreen() {
         <p className="you-fine" role="status">
           {note}
         </p>
+      )}
+
+      {plans.length > 0 && (
+        <section className="you-block" aria-labelledby="profile-plans-heading">
+          <h2 id="profile-plans-heading" className="you-heading">
+            Coming up
+          </h2>
+          <ul className="log-list">
+            {plans.map((plan) => (
+              <li key={plan.id}>
+                <Link to={datePath(plan.date, plan.metroId, plan.eventId)} className="log-row">
+                  <span className="log-main">
+                    <span className="log-title">{plan.title}</span>
+                    <span className="log-facts">{[shortLocalDate(plan.date), plan.venue, METROS[plan.metroId]?.name].filter(Boolean).join(' · ')}</span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       <section className="you-block" aria-labelledby="profile-entries-heading">

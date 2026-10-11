@@ -2,19 +2,24 @@ import { useEffect, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { ChevronDown } from '../components/Icons';
 import { backFrom } from '../lib/view';
+import { SearchIcon } from '../components/Icons';
 import {
   approveFollow,
+  blockUser,
   declineFollow,
   declinedRequests,
   follow,
   followRequests,
   getAccount,
+  PEOPLE_SEARCH_MIN,
   peopleList,
   removeFollower,
+  searchPeople,
   subscribeAccount,
   unfollow,
   type FollowRequest,
   type PersonRow,
+  type Profile,
 } from '../data';
 
 type Chip = 'all' | 'mutual' | 'followers' | 'following';
@@ -41,7 +46,11 @@ export function PeopleScreen() {
   const [declined, setDeclined] = useState<FollowRequest[]>([]);
   const [showRequests, setShowRequests] = useState(false);
   const [menuFor, setMenuFor] = useState<string | null>(null);
-  const [asking, setAsking] = useState<{ id: string; action: 'remove' | 'unfollow' } | null>(null);
+  const [asking, setAsking] = useState<{ id: string; action: 'remove' | 'unfollow' | 'block' } | null>(null);
+  const [finding, setFinding] = useState(false);
+  const [query, setQuery] = useState('');
+  const [found, setFound] = useState<Profile[] | null>(null);
+  const [note, setNote] = useState<string | null>(null);
   const location = useLocation();
   const back = backFrom(location.pathname, location.search);
 
@@ -79,13 +88,30 @@ export function PeopleScreen() {
     return true;
   });
 
-  const act = async (p: PersonRow, action: 'remove' | 'unfollow') => {
+  const act = async (p: PersonRow, action: 'remove' | 'unfollow' | 'block') => {
     setAsking(null);
     setMenuFor(null);
+    setNote(null);
     if (action === 'remove') await removeFollower(p.profile.id);
-    else await unfollow(p.profile.id);
+    else if (action === 'unfollow') await unfollow(p.profile.id);
+    else setNote(await blockUser(p.profile.id));
     await load();
   };
+
+  // Find people: part of a name or handle, from three characters (Kylie, Oct 9). Name, handle, Follow.
+  const q = query.trim();
+  useEffect(() => {
+    if (q.length < PEOPLE_SEARCH_MIN) {
+      setFound(null);
+      return;
+    }
+    let current = true;
+    searchPeople(q).then((list) => current && setFound(list));
+    return () => {
+      current = false;
+    };
+  }, [q]);
+  const known = new Map((people ?? []).map((p) => [p.profile.id, p]));
 
   return (
     <div className="screen page">
@@ -157,6 +183,60 @@ export function PeopleScreen() {
         </section>
       )}
 
+      {note && (
+        <p className="you-fine" role="status">
+          {note}
+        </p>
+      )}
+
+      {finding ? (
+        <section className="card people-find" aria-label="Find people">
+          <div className="search-box">
+            <label className="search-field">
+              <SearchIcon />
+              <input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Name or handle" aria-label="Name or handle" autoFocus />
+            </label>
+            <button type="button" className="search-clear" onClick={() => { setFinding(false); setQuery(''); }}>
+              Done
+            </button>
+          </div>
+          {found && found.length > 0 && (
+            <ul className="log-list">
+              {found.map((profile) => {
+                const row = known.get(profile.id);
+                const status = row?.youFollow ?? 'none';
+                return (
+                  <li key={profile.id} className="request-row people-row">
+                    <span className="avatar avatar-small" aria-hidden>
+                      {(profile.displayName ?? profile.handle ?? '?').slice(0, 1).toUpperCase()}
+                    </span>
+                    <Link to={profile.handle ? `/p/${profile.handle}` : '#'} state={{ back }} className="log-main">
+                      <span className="log-title">{profile.displayName ?? profile.handle}</span>
+                      {profile.handle && <span className="log-facts">@{profile.handle}</span>}
+                    </Link>
+                    {status === 'none' ? (
+                      <button type="button" className="fav-toggle people-pill" onClick={async () => { await follow(profile); await load(); }}>
+                        Follow
+                      </button>
+                    ) : (
+                      <span className="fav-toggle on people-pill">{status === 'pending' ? 'Requested' : 'Following'}</span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+          {found && found.length === 0 && <p className="you-fine">No one by that name.</p>}
+        </section>
+      ) : (
+        <button type="button" className="card people-find-row" onClick={() => setFinding(true)}>
+          <span className="avatar avatar-small people-plus" aria-hidden>
+            +
+          </span>
+          <span className="log-title">Find people</span>
+        </button>
+      )}
+
       {people === null ? null : shown.length === 0 ? (
         <div className="card empty-card">
           <div className="card-title">{people.length === 0 ? 'No one yet.' : 'No one here.'}</div>
@@ -177,12 +257,12 @@ export function PeopleScreen() {
                 <span className="request-actions">
                   {asking?.id === p.profile.id ? (
                     <span className="remove-confirm compact">
-                      <span>{asking.action === 'remove' ? 'Remove?' : 'Unfollow?'}</span>
+                      <span>{asking.action === 'remove' ? 'Remove?' : asking.action === 'block' ? 'Block?' : 'Unfollow?'}</span>
                       <button type="button" className="link-button" onClick={() => setAsking(null)}>
                         Keep
                       </button>
                       <button type="button" className="link-button remove-entry" onClick={() => act(p, asking.action)}>
-                        {asking.action === 'remove' ? 'Remove' : 'Unfollow'}
+                        {asking.action === 'remove' ? 'Remove' : asking.action === 'block' ? 'Block' : 'Unfollow'}
                       </button>
                     </span>
                   ) : (
@@ -216,6 +296,9 @@ export function PeopleScreen() {
                                 {p.youFollow === 'pending' ? 'Cancel request' : 'Unfollow'}
                               </button>
                             )}
+                            <button type="button" role="menuitem" className="link-button remove-entry" onClick={() => { setMenuFor(null); setAsking({ id: p.profile.id, action: 'block' }); }}>
+                              Block
+                            </button>
                           </span>
                         )}
                       </span>

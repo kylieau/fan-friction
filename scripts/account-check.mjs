@@ -127,6 +127,23 @@ r = await anon.from('profiles').select('home_metro_id').eq('id', s1.id);
 ok('a visitor cannot read the profiles table (needs migration 0017)', (r.data ?? []).length === 0, `${(r.data ?? []).length} rows`);
 await s1.c.from('profiles').update({ link_off: false }).eq('id', s1.id);
 
+// ---- Section 4: search, block, keep-private ----
+r = await b.c.from('profile_cards').select('id, handle').or(`handle.ilike.%${handleA.slice(0, 3)}%,display_name.ilike.%${handleA.slice(0, 3)}%`);
+ok('a partial name or handle finds a card (section 4; needs migration 0017)', !r.error && (r.data ?? []).some((row) => row.id === s1.id), r.error?.message ?? `${(r.data ?? []).length} rows`);
+await s1.c.from('follows').update({ status: 'approved' }).eq('follower_id', b.id).eq('followee_id', s1.id);
+d = diffLogs(empty, log([entry('seen-2', { review: 'shown' }), entry('hidden-1', { private: true, review: 'never shown' })])); await s1.store.save(d);
+r = await b.c.from('entry_cards').select('id').eq('user_id', s1.id);
+ok('a private entry stays off the cards (section 4; needs migration 0019)', !r.error && (r.data ?? []).map((x) => x.id).join() === 'seen-2', r.error?.message ?? (r.data ?? []).map((x) => x.id).join());
+r = await s1.c.rpc('block_user', { target: b.id });
+ok('block runs (section 4; needs migration 0018)', !r.error, r.error?.message);
+r = await s1.c.from('follows').select('status').eq('follower_id', b.id).eq('followee_id', s1.id);
+ok('block removes the follow', (r.data ?? []).length === 0, `${(r.data ?? []).length} rows`);
+r = await b.c.from('profile_cards').select('id').eq('id', s1.id);
+ok('the blocked person no longer finds the card (needs migration 0018)', !r.error && (r.data ?? []).length === 0, r.error?.message ?? `${(r.data ?? []).length} rows`);
+r = await b.c.from('entry_cards').select('id').eq('user_id', s1.id);
+ok('the blocked person sees no cards', (r.data ?? []).length === 0, `${(r.data ?? []).length} rows`);
+await s1.c.rpc('unblock_user', { target: b.id });
+
 // cleanup
 await b.c.from('follows').delete().eq('follower_id', b.id);
 await s1.c.from('follows').delete().eq('follower_id', b.id);

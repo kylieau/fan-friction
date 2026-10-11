@@ -488,6 +488,7 @@ function EntryRow({ entry, rating }: { entry: Entry; rating: number | null }) {
         {extraTags.length > 0 && <span className="log-facts">{extraTags.join(' · ')}</span>}
         <FactList facts={entryFacts(entry)} />
       </span>
+      {entry.private && <span className="status-label">Private</span>}
     </>
   );
   if (entry.eventId) {
