@@ -110,3 +110,12 @@ The Map's date button and range dropdown are now one When control: Today, Next 7
 - **Drop "Next 7 days" as a When option.** Today's view already forecasts the days ahead (the strip). **Structural.** Touches the When pill, the auto-widen on an empty day, Home's mini map link ("Open the map for the next 7 days"), the averaged week rating, and `?when=week` deep links. Propose before building.
 - **Week strip as a day-by-day carousel**, like an airline booking date picker: swipe moves one day at a time, the map follows. **Structural.** Today the strip is seven fixed slots (two back, viewed day in slot 3, four ahead) and only taps move it. Propose before building.
 - Handling (Kylie, Oct 5): event-entry notes come later, backend data first, then tab by tab. These three are Explore notes, not entry notes.
+
+### Oct 9–10, 2026: build notes 2 (all structural, all decided; see `docs/product-decisions.md`, "Oct 9–10, 2026 decisions")
+- One search button top right on every tab; You's gear behind the avatar; "+ Log an event" as a row in My Stubs; Favorites' own search bar gone.
+- Home: section headings are the links ("Tonight ›"); no "See all ›" rows.
+- Explore: the chip card on tap replaces the selected row and gold button; the read box opens "Why 4.7 tonight"; the "On the map" list is gone; the strip runs edge to edge; the city list centers under its chip.
+- Lists everywhere: two tags under the title (occasion outline tag, friction pill in the new words), crowd figure with the gold crowd mark on the right, time under it.
+- Event page: "Up against" (violet) replaces the verdict card; "I was there" hero with "I watched it" under it; the ticket line on upcoming events.
+- Settled read: no "Stamped" label; ⓘ opens "About this read".
+- Polish still open: the sheet's drag handle stays visible when no chip is selected only as a thin bar (hidden entirely now); "Local competition" bars sit under "Up against" and may be redundant; the Favorites "By date" heading's read uses the first row's city when rows span cities.
