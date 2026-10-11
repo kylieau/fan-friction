@@ -4,6 +4,24 @@
   "date": "2026-10-10",
   "results": [
     {
+      "eventId": "2026-10-10-espn-atlanta-united-761850",
+      "metroId": "atlanta",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mercedes-benz-stadium",
+      "homeTeamId": "atlanta-united",
+      "home": {
+        "name": "Atlanta United",
+        "score": 1
+      },
+      "away": {
+        "name": "Cincinnati",
+        "score": 3
+      },
+      "capturedAt": "2026-10-11T14:58:16.247Z"
+    },
+    {
       "eventId": "2026-10-10-espn-gt-football-401858255",
       "metroId": "atlanta",
       "date": "2026-10-10",
@@ -20,7 +38,7 @@
         "score": 25
       },
       "attendance": 46432,
-      "capturedAt": "2026-10-11T01:02:55.417Z",
+      "capturedAt": "2026-10-11T14:58:16.247Z",
       "duration": {
         "minutes": 201,
         "kind": "estimated"

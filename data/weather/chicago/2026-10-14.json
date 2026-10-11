@@ -434,6 +434,78 @@
       "shortwave": 0,
       "cloudCover": 100,
       "code": 3
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "soldier-field",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:28.880Z",
+      "feelsLikeF": 52.7,
+      "tempF": 58.9,
+      "humidity": 70,
+      "windMph": 14.2,
+      "uvIndex": 0,
+      "precipProbability": 32,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "soldier-field",
+      "date": "2026-10-14",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:28.880Z",
+      "feelsLikeF": 51.9,
+      "tempF": 58.6,
+      "humidity": 70,
+      "windMph": 15.1,
+      "uvIndex": 0,
+      "precipProbability": 14,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "soldier-field",
+      "date": "2026-10-14",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:28.880Z",
+      "feelsLikeF": 52,
+      "tempF": 58.4,
+      "humidity": 70,
+      "windMph": 14.4,
+      "uvIndex": 0,
+      "precipProbability": 14,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:28.880Z",
+      "feelsLikeF": 53.8,
+      "tempF": 58.8,
+      "humidity": 69,
+      "windMph": 10.8,
+      "uvIndex": 0,
+      "precipProbability": 32,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
     }
   ],
   "days": [
@@ -496,6 +568,18 @@
       "code": 3,
       "precipProbability": 21,
       "precipMm": 0
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:28.880Z",
+      "feelsLikeHighF": 73.2,
+      "feelsLikeLowF": 52.1,
+      "code": 80,
+      "precipProbability": 54,
+      "precipMm": 5.8
     }
   ]
 }

@@ -20,7 +20,7 @@
         "score": 1
       },
       "attendance": 15929,
-      "capturedAt": "2026-10-11T01:02:55.061Z",
+      "capturedAt": "2026-10-11T14:58:15.846Z",
       "duration": {
         "minutes": 150,
         "kind": "estimated"
@@ -44,12 +44,54 @@
         "score": 14
       },
       "attendance": 1825,
-      "capturedAt": "2026-10-11T01:02:55.061Z",
+      "capturedAt": "2026-10-11T14:58:15.846Z",
       "duration": {
         "minutes": 173,
         "kind": "estimated"
       },
       "startedAt": "12:32"
+    },
+    {
+      "eventId": "2026-10-10-espn-islanders-401892479",
+      "metroId": "new-york",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ubs-arena",
+      "homeTeamId": "islanders",
+      "home": {
+        "name": "Islanders",
+        "score": 3
+      },
+      "away": {
+        "name": "Lightning",
+        "score": 5
+      },
+      "attendance": 17345,
+      "capturedAt": "2026-10-11T14:58:15.846Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "16:39"
+    },
+    {
+      "eventId": "2026-10-10-espn-red-bulls-761853",
+      "metroId": "new-york",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sports-illustrated-stadium",
+      "homeTeamId": "red-bulls",
+      "home": {
+        "name": "Red Bull NY",
+        "score": 4
+      },
+      "away": {
+        "name": "San Diego FC",
+        "score": 1
+      },
+      "capturedAt": "2026-10-11T14:58:15.846Z"
     }
   ]
 }

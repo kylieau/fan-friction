@@ -182,6 +182,42 @@
       "shortwave": 3,
       "cloudCover": 100,
       "code": 53
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:38.972Z",
+      "feelsLikeF": 50.2,
+      "tempF": 51.3,
+      "humidity": 99,
+      "windMph": 3.3,
+      "uvIndex": 0,
+      "precipProbability": 91,
+      "precipMm": 1.5,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 80
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "hour": 18,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:38.972Z",
+      "feelsLikeF": 51.4,
+      "tempF": 51.8,
+      "humidity": 98,
+      "windMph": 1.8,
+      "uvIndex": 0,
+      "precipProbability": 91,
+      "precipMm": 1.4,
+      "shortwave": 2,
+      "cloudCover": 100,
+      "code": 80
     }
   ],
   "days": [
@@ -244,6 +280,18 @@
       "code": 80,
       "precipProbability": 88,
       "precipMm": 21.4
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:38.972Z",
+      "feelsLikeHighF": 51.4,
+      "feelsLikeLowF": 35.7,
+      "code": 81,
+      "precipProbability": 96,
+      "precipMm": 35.53
     }
   ]
 }

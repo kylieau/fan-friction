@@ -23522,6 +23522,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "bay-area",
     "teamId": "oakland-roots",
+    "opponent": "san-antonio",
+    "ratio": 1.452,
+    "games": 2
+  },
+  {
+    "metroId": "bay-area",
+    "teamId": "oakland-roots",
     "opponent": "switchbacks-fc",
     "ratio": 0.993,
     "games": 2
@@ -24433,8 +24440,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "chicago",
     "teamId": "blackhawks",
     "opponent": "hurricanes",
-    "ratio": 0.976,
-    "games": 3
+    "ratio": 0.972,
+    "games": 4
   },
   {
     "metroId": "chicago",
@@ -24986,8 +24993,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "chicago",
     "teamId": "chicago-wolves",
     "opponent": "moose",
-    "ratio": 0.769,
-    "games": 12
+    "ratio": 0.808,
+    "games": 13
   },
   {
     "metroId": "chicago",
@@ -28759,8 +28766,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "montreal",
     "teamId": "canadiens",
     "opponent": "red-wings",
-    "ratio": 0.998,
-    "games": 5
+    "ratio": 0.997,
+    "games": 6
   },
   {
     "metroId": "montreal",
@@ -29515,8 +29522,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "islanders",
     "opponent": "lightning",
-    "ratio": 0.957,
-    "games": 5
+    "ratio": 0.967,
+    "games": 6
   },
   {
     "metroId": "new-york",
@@ -31384,8 +31391,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "san-diego",
     "teamId": "san-diego-gulls",
     "opponent": "silver-knights",
-    "ratio": 1.043,
-    "games": 8
+    "ratio": 1.038,
+    "games": 9
   },
   {
     "metroId": "san-diego",

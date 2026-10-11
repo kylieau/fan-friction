@@ -151,6 +151,24 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "18:09"
   },
   {
+    "eventId": "2026-10-10-espn-atlanta-united-761850",
+    "metroId": "atlanta",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "mercedes-benz-stadium",
+    "homeTeamId": "atlanta-united",
+    "home": {
+      "name": "Atlanta United",
+      "score": 1
+    },
+    "away": {
+      "name": "Cincinnati",
+      "score": 3
+    },
+    "capturedAt": "2026-10-11T14:58:16.247Z"
+  },
+  {
     "eventId": "2026-10-10-espn-gt-football-401858255",
     "metroId": "atlanta",
     "date": "2026-10-10",
@@ -167,7 +185,7 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 25
     },
     "attendance": 46432,
-    "capturedAt": "2026-10-11T01:02:55.417Z",
+    "capturedAt": "2026-10-11T14:58:16.247Z",
     "duration": {
       "minutes": 201,
       "kind": "estimated"
@@ -311,12 +329,31 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 20
     },
     "attendance": 40170,
-    "capturedAt": "2026-10-11T01:02:55.766Z",
+    "capturedAt": "2026-10-11T14:58:16.493Z",
     "duration": {
       "minutes": 210,
       "kind": "estimated"
     },
     "startedAt": "12:32"
+  },
+  {
+    "eventId": "2026-10-10-espn-oakland-roots-401842280",
+    "metroId": "bay-area",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "oakland-coliseum",
+    "homeTeamId": "oakland-roots",
+    "home": {
+      "name": "Roots",
+      "score": 0
+    },
+    "away": {
+      "name": "San Antonio",
+      "score": 0
+    },
+    "attendance": 9718,
+    "capturedAt": "2026-10-11T14:58:16.493Z"
   },
   {
     "eventId": "2026-10-10-espn-sharks-401892471",
@@ -335,12 +372,36 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 3
     },
     "attendance": 17435,
-    "capturedAt": "2026-10-11T01:02:55.766Z",
+    "capturedAt": "2026-10-11T14:58:16.493Z",
     "duration": {
       "minutes": 146,
       "kind": "estimated"
     },
     "startedAt": "13:10"
+  },
+  {
+    "eventId": "2026-10-10-espn-warriors-401898399",
+    "metroId": "bay-area",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "chase-center",
+    "homeTeamId": "warriors",
+    "home": {
+      "name": "Warriors",
+      "score": 111
+    },
+    "away": {
+      "name": "Sacramento Kings",
+      "score": 106
+    },
+    "attendance": 18064,
+    "capturedAt": "2026-10-11T14:58:16.493Z",
+    "duration": {
+      "minutes": 162,
+      "kind": "estimated"
+    },
+    "startedAt": "17:23"
   },
   {
     "eventId": "2026-10-04-espn-bears-401872972",
@@ -524,6 +585,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "16:55"
   },
   {
+    "eventId": "2026-10-10-espn-blackhawks-401892476",
+    "metroId": "chicago",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "united-center",
+    "homeTeamId": "blackhawks",
+    "home": {
+      "name": "Blackhawks",
+      "score": 2
+    },
+    "away": {
+      "name": "Hurricanes",
+      "score": 5
+    },
+    "attendance": 18120,
+    "capturedAt": "2026-10-11T14:58:16.700Z",
+    "duration": {
+      "minutes": 150,
+      "kind": "estimated"
+    },
+    "startedAt": "16:09"
+  },
+  {
     "eventId": "2026-10-10-espn-chicago-fire-761846",
     "metroId": "chicago",
     "date": "2026-10-10",
@@ -539,7 +624,7 @@ export const GAME_RESULTS: GameResult[] = [
       "name": "NYCFC",
       "score": 1
     },
-    "capturedAt": "2026-10-11T01:02:56.108Z"
+    "capturedAt": "2026-10-11T14:58:16.700Z"
   },
   {
     "eventId": "2026-10-10-espn-northwestern-football-401858482",
@@ -558,12 +643,31 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 14
     },
     "attendance": 25629,
-    "capturedAt": "2026-10-11T01:02:56.108Z",
+    "capturedAt": "2026-10-11T14:58:16.700Z",
     "duration": {
       "minutes": 202,
       "kind": "estimated"
     },
     "startedAt": "09:29"
+  },
+  {
+    "eventId": "2026-10-10-ht-chicago-wolves-1029110",
+    "metroId": "chicago",
+    "date": "2026-10-10",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "allstate-arena",
+    "homeTeamId": "chicago-wolves",
+    "home": {
+      "name": "Wolves",
+      "score": 1
+    },
+    "away": {
+      "name": "Moose",
+      "score": 6
+    },
+    "attendance": 7329,
+    "capturedAt": "2026-10-11T14:58:16.701Z"
   },
   {
     "eventId": "2026-10-05-espn-dallas-stars-401892448",
@@ -807,6 +911,24 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:48"
   },
   {
+    "eventId": "2026-10-10-espn-lafc-761858",
+    "metroId": "la",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "bmo-stadium",
+    "homeTeamId": "lafc",
+    "home": {
+      "name": "LAFC",
+      "score": 1
+    },
+    "away": {
+      "name": "Vancouver",
+      "score": 1
+    },
+    "capturedAt": "2026-10-11T14:58:14.633Z"
+  },
+  {
     "eventId": "2026-10-06-espn-canadiens-401891815",
     "metroId": "montreal",
     "date": "2026-10-06",
@@ -853,6 +975,31 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "16:08"
+  },
+  {
+    "eventId": "2026-10-10-espn-canadiens-401892473",
+    "metroId": "montreal",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "bell-centre",
+    "homeTeamId": "canadiens",
+    "home": {
+      "name": "Canadiens",
+      "score": 1
+    },
+    "away": {
+      "name": "Red Wings",
+      "score": 0
+    },
+    "attendance": 20962,
+    "note": "SO",
+    "capturedAt": "2026-10-11T14:58:17.289Z",
+    "duration": {
+      "minutes": 175,
+      "kind": "estimated"
+    },
+    "startedAt": "16:15"
   },
   {
     "eventId": "2026-10-03-espn-columbia-football-401867819",
@@ -1154,7 +1301,7 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 1
     },
     "attendance": 15929,
-    "capturedAt": "2026-10-11T01:02:55.061Z",
+    "capturedAt": "2026-10-11T14:58:15.846Z",
     "duration": {
       "minutes": 150,
       "kind": "estimated"
@@ -1178,12 +1325,54 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 14
     },
     "attendance": 1825,
-    "capturedAt": "2026-10-11T01:02:55.061Z",
+    "capturedAt": "2026-10-11T14:58:15.846Z",
     "duration": {
       "minutes": 173,
       "kind": "estimated"
     },
     "startedAt": "12:32"
+  },
+  {
+    "eventId": "2026-10-10-espn-islanders-401892479",
+    "metroId": "new-york",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ubs-arena",
+    "homeTeamId": "islanders",
+    "home": {
+      "name": "Islanders",
+      "score": 3
+    },
+    "away": {
+      "name": "Lightning",
+      "score": 5
+    },
+    "attendance": 17345,
+    "capturedAt": "2026-10-11T14:58:15.846Z",
+    "duration": {
+      "minutes": 150,
+      "kind": "estimated"
+    },
+    "startedAt": "16:39"
+  },
+  {
+    "eventId": "2026-10-10-espn-red-bulls-761853",
+    "metroId": "new-york",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "sports-illustrated-stadium",
+    "homeTeamId": "red-bulls",
+    "home": {
+      "name": "Red Bull NY",
+      "score": 4
+    },
+    "away": {
+      "name": "San Diego FC",
+      "score": 1
+    },
+    "capturedAt": "2026-10-11T14:58:15.846Z"
   },
   {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",
@@ -1256,6 +1445,25 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "official"
     },
     "startedAt": "19:08"
+  },
+  {
+    "eventId": "2026-10-10-ht-san-diego-gulls-1029118",
+    "metroId": "san-diego",
+    "date": "2026-10-10",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "pechanga-arena",
+    "homeTeamId": "san-diego-gulls",
+    "home": {
+      "name": "Gulls",
+      "score": 2
+    },
+    "away": {
+      "name": "Silver Knights",
+      "score": 0
+    },
+    "attendance": 10019,
+    "capturedAt": "2026-10-11T14:58:15.157Z"
   },
   {
     "eventId": "2026-10-04-espn-kraken-401891824",

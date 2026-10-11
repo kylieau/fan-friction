@@ -4,6 +4,30 @@
   "date": "2026-10-10",
   "results": [
     {
+      "eventId": "2026-10-10-espn-blackhawks-401892476",
+      "metroId": "chicago",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 2
+      },
+      "away": {
+        "name": "Hurricanes",
+        "score": 5
+      },
+      "attendance": 18120,
+      "capturedAt": "2026-10-11T14:58:16.700Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "16:09"
+    },
+    {
       "eventId": "2026-10-10-espn-chicago-fire-761846",
       "metroId": "chicago",
       "date": "2026-10-10",
@@ -19,7 +43,7 @@
         "name": "NYCFC",
         "score": 1
       },
-      "capturedAt": "2026-10-11T01:02:56.108Z"
+      "capturedAt": "2026-10-11T14:58:16.700Z"
     },
     {
       "eventId": "2026-10-10-espn-northwestern-football-401858482",
@@ -38,12 +62,31 @@
         "score": 14
       },
       "attendance": 25629,
-      "capturedAt": "2026-10-11T01:02:56.108Z",
+      "capturedAt": "2026-10-11T14:58:16.700Z",
       "duration": {
         "minutes": 202,
         "kind": "estimated"
       },
       "startedAt": "09:29"
+    },
+    {
+      "eventId": "2026-10-10-ht-chicago-wolves-1029110",
+      "metroId": "chicago",
+      "date": "2026-10-10",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "allstate-arena",
+      "homeTeamId": "chicago-wolves",
+      "home": {
+        "name": "Wolves",
+        "score": 1
+      },
+      "away": {
+        "name": "Moose",
+        "score": 6
+      },
+      "attendance": 7329,
+      "capturedAt": "2026-10-11T14:58:16.701Z"
     }
   ]
 }

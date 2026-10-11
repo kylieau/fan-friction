@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-ht-san-diego-gulls-1029118",
+      "metroId": "san-diego",
+      "date": "2026-10-10",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "pechanga-arena",
+      "homeTeamId": "san-diego-gulls",
+      "home": {
+        "name": "Gulls",
+        "score": 2
+      },
+      "away": {
+        "name": "Silver Knights",
+        "score": 0
+      },
+      "attendance": 10019,
+      "capturedAt": "2026-10-11T14:58:15.157Z"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-canadiens-401892473",
+      "metroId": "montreal",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 1
+      },
+      "away": {
+        "name": "Red Wings",
+        "score": 0
+      },
+      "attendance": 20962,
+      "note": "SO",
+      "capturedAt": "2026-10-11T14:58:17.289Z",
+      "duration": {
+        "minutes": 175,
+        "kind": "estimated"
+      },
+      "startedAt": "16:15"
+    }
+  ]
+}

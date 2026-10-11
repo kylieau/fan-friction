@@ -20,12 +20,31 @@
         "score": 20
       },
       "attendance": 40170,
-      "capturedAt": "2026-10-11T01:02:55.766Z",
+      "capturedAt": "2026-10-11T14:58:16.493Z",
       "duration": {
         "minutes": 210,
         "kind": "estimated"
       },
       "startedAt": "12:32"
+    },
+    {
+      "eventId": "2026-10-10-espn-oakland-roots-401842280",
+      "metroId": "bay-area",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "oakland-coliseum",
+      "homeTeamId": "oakland-roots",
+      "home": {
+        "name": "Roots",
+        "score": 0
+      },
+      "away": {
+        "name": "San Antonio",
+        "score": 0
+      },
+      "attendance": 9718,
+      "capturedAt": "2026-10-11T14:58:16.493Z"
     },
     {
       "eventId": "2026-10-10-espn-sharks-401892471",
@@ -44,12 +63,36 @@
         "score": 3
       },
       "attendance": 17435,
-      "capturedAt": "2026-10-11T01:02:55.766Z",
+      "capturedAt": "2026-10-11T14:58:16.493Z",
       "duration": {
         "minutes": 146,
         "kind": "estimated"
       },
       "startedAt": "13:10"
+    },
+    {
+      "eventId": "2026-10-10-espn-warriors-401898399",
+      "metroId": "bay-area",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 111
+      },
+      "away": {
+        "name": "Sacramento Kings",
+        "score": 106
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-10-11T14:58:16.493Z",
+      "duration": {
+        "minutes": 162,
+        "kind": "estimated"
+      },
+      "startedAt": "17:23"
     }
   ]
 }

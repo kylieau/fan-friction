@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-lafc-761858",
+      "metroId": "la",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bmo-stadium",
+      "homeTeamId": "lafc",
+      "home": {
+        "name": "LAFC",
+        "score": 1
+      },
+      "away": {
+        "name": "Vancouver",
+        "score": 1
+      },
+      "capturedAt": "2026-10-11T14:58:14.633Z"
+    }
+  ]
+}

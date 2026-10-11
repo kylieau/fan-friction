@@ -830,6 +830,42 @@
       "shortwave": 210,
       "cloudCover": 90,
       "code": 3
+    },
+    {
+      "metroId": "dallas-fort-worth",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:33.779Z",
+      "feelsLikeF": 77.3,
+      "tempF": 73.6,
+      "humidity": 86,
+      "windMph": 9.2,
+      "uvIndex": 0.05,
+      "precipProbability": 48,
+      "precipMm": 0.1,
+      "shortwave": 5,
+      "cloudCover": 100,
+      "code": 51
+    },
+    {
+      "metroId": "dallas-fort-worth",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "hour": 10,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:33.779Z",
+      "feelsLikeF": 80.6,
+      "tempF": 77.4,
+      "humidity": 72,
+      "windMph": 8.6,
+      "uvIndex": 2,
+      "precipProbability": 31,
+      "precipMm": 0,
+      "shortwave": 311,
+      "cloudCover": 21,
+      "code": 1
     }
   ],
   "days": [
@@ -892,6 +928,18 @@
       "code": 53,
       "precipProbability": 42,
       "precipMm": 0.9
+    },
+    {
+      "metroId": "dallas-fort-worth",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T14:57:33.779Z",
+      "feelsLikeHighF": 84.6,
+      "feelsLikeLowF": 74.7,
+      "code": 95,
+      "precipProbability": 48,
+      "precipMm": 18
     }
   ]
 }
