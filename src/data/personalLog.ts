@@ -47,6 +47,8 @@ export interface LogStats {
   venues: number;
   /** Entries marked watched, not attended (8.2). */
   watched: number;
+  /** Entries you were at: events minus watched (Kylie, Oct 11: "Attended", never "Events"). */
+  attended: number;
   /** Kind of event: game, show, festival, and so on. Concerts are included. */
   byType: CountRow[];
   byTeamSport: CountRow[];
@@ -598,10 +600,62 @@ function freshEntry(event: CrowdEvent, watched: boolean): Entry {
   const entry = entryFromEvent(event);
   const stamp = stampNow(event, new Date());
   if (stamp) entry.stamp = stamp;
-  const crowd = drawSize(event);
-  if (crowd) entry.crowd = crowd;
+  // The crowd is not taken at the tap (Kylie, Oct 11, call 4): it locks with the stamp, see lockCrowds.
   if (watched) entry.watched = true;
   return entry;
+}
+
+/** The figure an entry's crowd locks to: the announced attendance from the box score, else the best estimate. */
+function finalCrowd(event: CrowdEvent): number | undefined {
+  return event.result?.attendance ?? drawSize(event);
+}
+
+/**
+ * Lock crowds (Kylie, Oct 11, call 4): once a night's stamp has locked, each of its entries takes the
+ * final announced attendance, or the best estimate when none was announced, and never changes again.
+ * Runs at app start and after the account copy loads, like settlePassedPlans. Entries from before the
+ * lock, and every entry marked before Oct 10, are filled the same way, empty ones only: a lazy fill
+ * on open, not a job. A night the catalog cannot find (before the archive) is marked looked-up and
+ * stays blank. At most forty lookups a run.
+ */
+export async function lockCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
+  const now = new Date();
+  const due = snapshot.added.filter((entry) => {
+    if (entry.crowdLocked || !entry.eventId || !entry.metroId || entry.when.precision !== 'day') return false;
+    const metro = METROS[entry.metroId];
+    return Boolean(metro) && entry.when.sort < todayInZone(metro.timeZone, now);
+  });
+  if (due.length === 0) return;
+  const updates = new Map<string, Partial<Entry>>();
+  for (const entry of due.slice(0, 40)) {
+    try {
+      const day = await loadDate(entry.metroId!, entry.when.sort);
+      const metro = METROS[entry.metroId!];
+      if (!isStampLocked(asMetroDate(entry.metroId!, entry.when.sort, day.events), metro.timeZone, now)) continue;
+      const event = day.events.find((e) => e.id === entry.eventId);
+      const crowd = event ? finalCrowd(event) : undefined;
+      updates.set(entry.id, crowd ? { crowd, crowdLocked: true } : { crowdLocked: true });
+    } catch {
+      /* try again next open */
+    }
+  }
+  if (updates.size === 0) return;
+  commit({ ...snapshot, added: snapshot.added.map((entry) => (updates.has(entry.id) ? { ...entry, ...updates.get(entry.id) } : entry)) });
+}
+
+/** Where a watched entry was watched (call 3). Home clears any place; a public place may be kept private. */
+export function setWatchedWhere(entryId: string, where: 'home' | 'public', place?: string, keepPrivate?: boolean) {
+  const added = snapshot.added.map((entry) => {
+    if (entry.id !== entryId) return entry;
+    const next: Entry = { ...entry, watchedWhere: where };
+    const clean = place?.trim().replace(/\s+/g, ' ');
+    if (where === 'public' && clean) next.watchedPlace = clean;
+    else delete next.watchedPlace;
+    if (where === 'public' && keepPrivate) next.watchedPlacePrivate = true;
+    else delete next.watchedPlacePrivate;
+    return next;
+  });
+  commit({ ...snapshot, added });
 }
 
 /** "I was there": a new entry, or a watched one becoming in person (build notes 2, 8.2). */
@@ -630,11 +684,6 @@ export function markWatched(event: CrowdEvent) {
 
 export function isWatched(eventId: string, log: PersonalLog = snapshot): boolean {
   return log.added.some((entry) => entry.eventId === eventId && entry.watched);
-}
-
-/** Fans in the buildings with you: the crowds on file for the events you were at (not watched). Evidence only. */
-export function fansWithYou(entries: readonly Entry[]): number {
-  return entries.filter((e) => !e.watched && e.crowd).reduce((sum, e) => sum + (e.crowd ?? 0), 0);
 }
 
 /** The event you were at with the biggest crowd on file. */
@@ -788,6 +837,7 @@ export function logStats(entries: Entry[]): LogStats {
     events: entries.length,
     venues: new Set(venues).size,
     watched: entries.filter((entry) => entry.watched).length,
+    attended: entries.filter((entry) => !entry.watched).length,
     byType: counts(entries.map((entry) => typeLabel(entry.kind))),
     byTeamSport: counts(entries.flatMap((entry) => entry.tags)),
     bySport: counts(entries.map((entry) => (entry.sport === 'Concerts' ? 'Concert' : entry.sport))),

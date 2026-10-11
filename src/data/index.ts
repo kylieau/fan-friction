@@ -374,9 +374,10 @@ export {
   markWasThere,
   markWatched,
   isWatched,
-  fansWithYou,
   biggestCrowd,
   toughestFights,
+  lockCrowds,
+  setWatchedWhere,
   settlePassedPlans,
   setYouOrder,
   subscribeLogLoaded,
@@ -397,3 +398,4 @@ export { COMPETITIONS, LEVELS, SPORTS_MORE, SPORTS_SHOWN, competitionNamed, comp
 export type { Competition } from './competitions';
 export type * from './types';
 export { ticketPrice, priceLine, type TicketPrice } from './tickets';
+export { saveWatchPlace, clearWatchPlace, placesForEvent, type EventPlace } from './watchPlaces';

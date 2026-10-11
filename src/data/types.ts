@@ -521,8 +521,19 @@ export interface Entry {
   private?: boolean;
   /** Watched, not attended (build notes 2, 8.2). Absent means in person. Kept in the same log, marked quietly. */
   watched?: boolean;
-  /** The crowd on file when the event was marked (its draw or count), for "fans with you" and "Biggest crowd". Evidence only. */
+  /**
+   * The event's crowd, locked when the night's stamp locks (Kylie, Oct 11, call 4): the announced attendance
+   * from the box score, or the best estimate when none was announced. Evidence only; never a target.
+   */
   crowd?: number;
+  /** Set once the crowd was looked up at the lock, so it is never looked up again (even when nothing was found). */
+  crowdLocked?: boolean;
+  /** Where a watched entry was watched (call 3): at home, or a public place. */
+  watchedWhere?: 'home' | 'public';
+  /** The public place, as typed ("Barney's Beanery"). */
+  watchedPlace?: string;
+  /** Keep the place to yourself: it is never shared with others who watched the same event. */
+  watchedPlacePrivate?: boolean;
   /** When this device last changed the entry (ISO). The newer copy wins when two devices disagree. */
   updatedAt?: string;
 }

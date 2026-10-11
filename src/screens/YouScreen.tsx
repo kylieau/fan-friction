@@ -4,13 +4,10 @@ import { DEFAULT_METRO } from '../config/metros';
 import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { ReadTile } from '../components/ReadTile';
 import { SearchButton } from '../components/SearchButton';
-import { CrowdMark } from '../components/EventTags';
-import { crowdThousands } from '../map/crowdPoints';
 import {
   canSignIn,
   entryFacts,
   EXAMPLE_FEED,
-  fansWithYou,
   favoritesOf,
   filterChoices,
   followRequests,
@@ -274,7 +271,7 @@ export function YouScreen() {
         <>
           {filters}
           <YourYear entries={shown} ratings={ratings} />
-          <Stats stats={stats} hours={hoursAtGames(shown)} fans={fansWithYou(shown)} />
+          <Stats stats={stats} hours={hoursAtGames(shown.filter((e) => !e.watched))} />
         </>
       )}
       {tab === 'friends' && <FollowingTab items={feed} ratings={ratings} signedIn={Boolean(account)} log={log} />}
@@ -470,21 +467,12 @@ function FilterChip({ label, pressed, onClick }: { label: string; pressed: boole
   );
 }
 
-function Stats({ stats, hours, fans }: { stats: ReturnType<typeof logStats>; hours: { hours: number; games: number }; fans: number }) {
+function Stats({ stats, hours }: { stats: ReturnType<typeof logStats>; hours: { hours: number; games: number } }) {
   return (
     <div className="stats-block">
       <div className="stat-grid">
-        <Stat n={stats.events} label="Events" />
-        {/* Fans with you: the crowds on file for the events you were at (7.4). Only entries marked since Oct 10 carry one. */}
-        {fans > 0 && (
-          <div className="stat-card">
-            <span className="stat-num stat-fans">
-              <CrowdMark />
-              {crowdThousands(fans)}
-            </span>
-            <span className="stat-label">Fans with you</span>
-          </div>
-        )}
+        {/* Attended, never "Events" (Kylie, Oct 11, call 3): watched is its own number below. */}
+        <Stat n={stats.attended} label="Attended" />
         <Stat n={stats.venues} label="Venues" />
         {stats.watched > 0 && <Stat n={stats.watched} label="Watched" />}
         {/* The heaviest read sits in Your year above; not repeated here (3.22). */}
