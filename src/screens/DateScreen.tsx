@@ -3,6 +3,8 @@ import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { ChevronDown, ShareIcon } from '../components/Icons';
 import { RemoveConfirm } from '../components/EntryLayer';
 import { ReadTile } from '../components/ReadTile';
+import { DayTimeline } from '../components/DayTimeline';
+import { crowdThousands } from '../map/crowdPoints';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
@@ -22,9 +24,11 @@ import {
   isPlanned,
   isStampLocked,
   isWasThere,
+  isWatched,
+  drawSize,
+  sizeTier,
   savedNightRead,
   scheduleCoverage,
-  roundEstimate,
   stampLocksAt,
   subscribeAccount,
   subscribePersonalLog,
@@ -36,7 +40,6 @@ import {
   type CrowdEvent,
   type FeedItem,
 } from '../data';
-import { crowdKind } from '../map/crowdPoints';
 import { VENUES, venueNameOn } from '../data';
 import { clockTime, longLocalDate, shortLocalDate, weekdayLong } from '../lib/dates';
 import { dayWord } from '../lib/dayWord';
@@ -48,7 +51,6 @@ import { feedLine } from './YouScreen';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 
-const fmt = (n: number) => n.toLocaleString('en-US');
 
 
 /**
@@ -295,7 +297,13 @@ export function DateScreen() {
                 <div key={entry.id} className="entry">
                   <span className="entry-title">{entry.title}</span>
                   <span className="entry-facts">
-                    {[entry.venue, event?.start ? clockTime(event.start) : null, event ? crowdLine(event) : null].filter(Boolean).join(' · ')}
+                    {[entry.venue, event?.start ? clockTime(event.start) : null].filter(Boolean).join(' · ')}
+                    {event && (
+                      <>
+                        {' · '}
+                        <CrowdFigure event={event} />
+                      </>
+                    )}
                   </span>
                   {entry.review && <span className="entry-note">{entry.review}</span>}
                 </div>
@@ -327,7 +335,7 @@ export function DateScreen() {
                       <span className="log-title">{listTitle(e)}</span>
                       <span className="event-tagline">
                         <EventTags event={e} />
-                        <span className="event-venue">{[venueOf(e), yours ? (ahead ? 'Attending' : 'Attended') : null].filter(Boolean).join(' · ')}</span>
+                        <span className="event-venue">{[venueOf(e), yours ? (ahead ? 'Attending' : isWatched(e.id, log) ? 'Watched' : 'Attended') : null].filter(Boolean).join(' · ')}</span>
                       </span>
                       {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
                       <span className="log-facts">
@@ -361,6 +369,18 @@ export function DateScreen() {
           </ul>
         )}
       </section>
+      )}
+
+      {events.length > 0 && rating && shownRating !== null && (
+        <section className="card local-competition" aria-label="Local competition">
+          {/* Local competition (Kylie, Oct 11, call 6; mock call6-overlap D on top, B/C timeline): the read, the summary line, the night's bars. No helper text. */}
+          <h2 className="you-heading">Local competition</h2>
+          <div className="local-head">
+            <ReadTile rating={shownRating} />
+            <span className="local-summary">{summaryLine(shownRating, events)}</span>
+          </div>
+          <DayTimeline events={events} />
+        </section>
       )}
 
       {events.length > 0 && (
@@ -441,15 +461,6 @@ function venueOf(e: CrowdEvent): string | null {
 }
 
 /** "52,394 announced · sold out", "sold out", or nothing. Every count keeps its kind. */
-function crowdLine(e: CrowdEvent): string | null {
-  const counted = e.crowd.find((c) => c.count !== undefined);
-  const sold = e.crowd.some((c) => c.soldOut);
-  if (counted?.count !== undefined) return `${fmt(counted.count)} ${crowdKind(e) ?? ''}`.trim() + (sold ? ' · sold out' : '');
-  if (sold) return 'sold out';
-  // An upcoming row shows the estimate the map's rows show (C065); full numbers here, there is room (C073).
-  if (e.expectedDraw) return `~${fmt(roundEstimate(e.expectedDraw.count))} estimated`;
-  return null;
-}
 
 /** How a settled read came to be (build notes 2, section 1). Only a redone read adds its second line. */
 function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousRating?: number }; onClose: () => void }) {
@@ -473,4 +484,28 @@ function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousR
       </div>
     </div>
   );
+}
+
+/** "7 PM" or "7:30 PM", the way Kylie wrote the summary line (call 6). */
+function clockShort(time: string): string {
+  const [h, m] = time.split(':').map(Number);
+  const hour12 = h % 12 === 0 ? 12 : h % 12;
+  const suffix = h < 12 ? 'AM' : 'PM';
+  return m ? `${hour12}:${String(m).padStart(2, '0')} ${suffix}` : `${hour12} ${suffix}`;
+}
+
+/** "4.7 Spicy · 54k across 6 events · 4 start at 7 PM" (Kylie, Oct 11, call 6). */
+function summaryLine(rating: number, events: readonly CrowdEvent[]): string {
+  const big = events.filter((e) => sizeTier(e) === 'feeds-friction');
+  const total = big.reduce((sum, e) => sum + (drawSize(e) ?? 0), 0);
+  const starts = new Map<string, number>();
+  for (const e of big) if (e.start) starts.set(e.start, (starts.get(e.start) ?? 0) + 1);
+  const top = [...starts.entries()].sort((a, b) => b[1] - a[1])[0];
+  return [
+    `${formatScore(rating)} ${scoreLabel(rating)}`,
+    `${total > 0 ? `${crowdThousands(total)} across ` : ''}${events.length} ${events.length === 1 ? 'event' : 'events'}`,
+    top && top[1] > 1 ? `${top[1]} start at ${clockShort(top[0])}` : null,
+  ]
+    .filter(Boolean)
+    .join(' · ');
 }

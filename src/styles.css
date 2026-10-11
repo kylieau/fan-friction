@@ -5448,3 +5448,122 @@ button.back-link {
 .word-pill.watched {
   color: var(--muted);
 }
+
+/* The flat feed (call 1), Local competition on the date page (call 6), the timeline */
+.feed-flat {
+  padding: 0 14px;
+}
+
+.feed-flat-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.feed-flat li:last-child .feed-flat-row {
+  border-bottom: 0;
+}
+
+.feed-flat-text {
+  flex: 1;
+  min-width: 0;
+  color: var(--ink2);
+}
+
+.feed-flat-text strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.feed-flat-date {
+  flex-shrink: 0;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.local-competition {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.local-competition .you-heading {
+  margin: 0;
+}
+
+.local-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.local-summary {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.day-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bar-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.bar-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar-crowd {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+
+.bar-crowd .crowd-mark {
+  width: 12px;
+  height: 12px;
+}
+
+.bar-squeezed {
+  background: var(--fightBar);
+}
+
+.bar-swamped {
+  background: var(--fight);
+}
+
+.bar-steamrolled {
+  background: var(--fightDeep);
+}
+
+.bar-none {
+  background: var(--noFightBar);
+}
+
+.crowd-number .crowd-mark {
+  width: 22px;
+  height: 22px;
+  vertical-align: -2px;
+  margin-right: 4px;
+}
+
+.share-crowd .crowd-mark {
+  color: var(--crowdOnInk);
+  vertical-align: -1px;
+}

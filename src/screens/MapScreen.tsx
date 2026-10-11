@@ -337,7 +337,7 @@ export function MapScreen() {
                 <li className="map-key-ring">Pale ring is the one you picked</li>
                 <li className="map-key-note">The date's read, 1–10, from three reasons: crowd fight, gridlock, conditions.</li>
                 <li className="map-key-note">
-                  Up against: <span className="chip chip-f squeezed">Squeezed</span> <span className="chip chip-f swamped">Swamped</span> <span className="chip chip-f steamrolled">Steamrolled</span>
+                  Local competition: <span className="chip chip-f squeezed">Squeezed</span> <span className="chip chip-f swamped">Swamped</span> <span className="chip chip-f steamrolled">Steamrolled</span>
                 </li>
                 <li className="map-key-note">
                   How big a deal: <span className="tag-occasion">Notable</span> <span className="tag-occasion">Major</span> <span className="tag-occasion">Marquee</span>

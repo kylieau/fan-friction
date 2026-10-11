@@ -43,7 +43,7 @@ export const THEME = {
   crowdOnInk: '#FFD100',
   /** The Squeezed pill and the Toughest fight badge, with ink text. */
   fightContainer: '#E6DDF8',
-  /** The Swamped pill, the Up against label and rule, rival dots. Never links, buttons or the day read. */
+  /** The Swamped pill, the Local competition label and rule, rival dots. Never links, buttons or the day read. */
   fight: '#6A3FBF',
   /** The Steamrolled pill. */
   fightDeep: '#2C1A57',
