@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { entryFieldsFor, isManualEntry, ownEntryFacts, removeEntry, updateEntry, updateManualEntry, type Entry, type EntryEdit } from '../data';
-import { METROS } from '../config/metros';
+import { entryFieldsFor, isManualEntry, ownEntryFacts, removeEntry, todayIn, updateEntry, updateManualEntry, type Entry, type EntryEdit } from '../data';
+import { DEFAULT_METRO, METROS } from '../config/metros';
 import { getHomeId } from '../lib/homeCity';
 import { FactList } from './FactList';
 
@@ -43,6 +43,9 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
   // A hand-typed entry's facts open too (3.14); a catalog entry's stay locked.
   const manual = isManualEntry(entry);
   const [facts, setFacts] = useState({ title: entry.title, date: entry.when.sort, venue: entry.venue ?? '', metroId: entry.metroId ?? '' });
+  // An entry is something that happened: a date ahead cannot be saved on it (R17). Plans are the other thing.
+  const latest = todayIn(METROS[facts.metroId] ?? DEFAULT_METRO);
+  const dateAhead = manual && facts.date > latest;
 
   return (
     <form
@@ -50,6 +53,7 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
       aria-label="Edit your entry"
       onSubmit={(event) => {
         event.preventDefault();
+        if (dateAhead) return;
         if (manual) updateManualEntry(entry.id, facts, getHomeId());
         updateEntry(entry.id, draft);
         onDone();
@@ -63,7 +67,8 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
           </label>
           <label className="field">
             <span className="field-label">When</span>
-            <input className="account-input" type="date" value={facts.date} onChange={(e) => setFacts((f) => ({ ...f, date: e.target.value }))} required />
+            <input className="account-input" type="date" value={facts.date} max={latest} onChange={(e) => setFacts((f) => ({ ...f, date: e.target.value }))} required />
+            {dateAhead && <span className="field-error">A date ahead is a plan, not an entry.</span>}
           </label>
           <label className="field">
             <span className="field-label">City</span>
@@ -99,7 +104,7 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
         <button type="button" className="link-button" onClick={onDone}>
           Cancel
         </button>
-        <button type="submit" className="gold-button small">
+        <button type="submit" className="gold-button small" disabled={dateAhead}>
           Save
         </button>
       </div>
@@ -108,10 +113,11 @@ function EntryForm({ entry, onDone }: { entry: Entry; onDone: () => void }) {
 }
 
 /** "Remove from log?" with Keep and Remove. The one confirm before an entry leaves the log (C054). */
-export function RemoveConfirm({ onKeep, onRemove, compact = false }: { onKeep: () => void; onRemove: () => void; compact?: boolean }) {
+export function RemoveConfirm({ onKeep, onRemove, compact = false, stamped = false }: { onKeep: () => void; onRemove: () => void; compact?: boolean; stamped?: boolean }) {
+  // One line says the stamped read leaves with the entry (R16); a new mark later gets whatever reads then.
   return (
     <div className={`remove-confirm${compact ? ' compact' : ''}`} role="group" aria-label="Remove from log?">
-      <span>{compact ? 'Remove?' : 'Remove from log?'}</span>
+      <span>{compact ? (stamped ? 'Remove, stamp too?' : 'Remove?') : stamped ? 'Remove from log? Its stamp goes too.' : 'Remove from log?'}</span>
       <button type="button" className="link-button" onClick={onKeep}>
         Keep
       </button>
@@ -134,6 +140,7 @@ export function RemoveFromLog({ entry, onRemoved }: { entry: Entry; onRemoved?: 
   }
   return (
     <RemoveConfirm
+      stamped={Boolean(entry.stamp)}
       onKeep={() => setAsking(false)}
       onRemove={() => {
         removeEntry(entry.id);

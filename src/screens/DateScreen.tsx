@@ -328,6 +328,7 @@ export function DateScreen() {
                   {choosing && unmarking === e.id ? (
                     <RemoveConfirm
                       compact
+                      stamped={Boolean(log.added.find((entry) => entry.eventId === e.id)?.stamp)}
                       onKeep={() => setUnmarking(null)}
                       onRemove={() => {
                         setUnmarking(null);

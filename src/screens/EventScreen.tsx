@@ -154,7 +154,7 @@ export function EventScreen() {
           </button>
         ) : isWasThere(e.id, log) ? (
           unmarking ? (
-            <RemoveConfirm onKeep={() => setUnmarking(false)} onRemove={() => { setUnmarking(false); toggleWasThere(e); }} />
+            <RemoveConfirm stamped={Boolean(log.added.find((entry) => entry.eventId === e.id)?.stamp)} onKeep={() => setUnmarking(false)} onRemove={() => { setUnmarking(false); toggleWasThere(e); }} />
           ) : (
             <button type="button" className="mark-button on" aria-pressed onClick={() => setUnmarking(true)}>
               Attended
