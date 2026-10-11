@@ -328,6 +328,40 @@ export async function unfollow(targetId: string): Promise<FollowStatus> {
   return followStatus(targetId);
 }
 
+/** One person in the People list: who follows whom, both ways. */
+export interface PersonRow {
+  profile: Profile;
+  /** They follow you (approved). */
+  followsYou: boolean;
+  /** Your side: none, pending (asked, or declined and not told), approved. */
+  youFollow: FollowStatus;
+}
+
+/**
+ * Everyone linked to you by an approved follow in either direction or a request of
+ * yours (build notes 2, section 3): one list, filtered by chips on the screen. Pending
+ * requests to you are not in it; they sit in the Requests row above.
+ */
+export async function peopleList(): Promise<PersonRow[]> {
+  const c = supabase();
+  const me = getAccount();
+  if (!c || !me) return [];
+  const [{ data: inRows }, out] = await Promise.all([
+    c.from('follows').select('follower_id').eq('followee_id', me.id).eq('status', 'approved'),
+    followsOut(c, me.id),
+  ]);
+  const followers = new Set(((inRows ?? []) as { follower_id: string }[]).map((r) => r.follower_id));
+  const mine = new Map(out.map((row) => [row.followeeId, row.status]));
+  const ids = [...new Set([...followers, ...mine.keys()])];
+  const cards = await cardsById(c, ids);
+  return ids
+    .flatMap((id) => {
+      const profile = cards.get(id);
+      return profile ? [{ profile, followsYou: followers.has(id), youFollow: mine.get(id) ?? ('none' as FollowStatus) }] : [];
+    })
+    .sort((a, b) => (a.profile.displayName ?? a.profile.handle ?? '').localeCompare(b.profile.displayName ?? b.profile.handle ?? ''));
+}
+
 async function requestsWith(status: 'pending' | 'declined'): Promise<FollowRequest[]> {
   const c = supabase();
   const me = getAccount();

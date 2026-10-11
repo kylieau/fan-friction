@@ -4,12 +4,10 @@ import { DEFAULT_METRO } from '../config/metros';
 import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { ReadTile } from '../components/ReadTile';
 import {
-  approveFollow,
   canSignIn,
-  declineFollow,
-  declinedRequests,
   entryFacts,
   EXAMPLE_FEED,
+  favoritesOf,
   filterChoices,
   followRequests,
   followingFeed,
@@ -18,15 +16,18 @@ import {
   getPersonalLog,
   getSaveWarning,
   hoursAtGames,
+  peopleList,
   logStats,
+  nightKey,
   nightsOf,
   ratingForEntry,
   scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
   type Entry,
+  type Favorite,
   type FeedItem,
-  type FollowRequest,
+  type PersonalLog,
   todayIn,
   upcomingPlans,
   yourEntries,
@@ -59,33 +60,22 @@ export function YouScreen() {
   }, [wanted]);
   const [tab, setTab] = useState<'events' | 'stats' | 'friends'>(() => (params.get('tab') === 'following' ? 'friends' : params.get('tab') === 'stats' ? 'stats' : 'events'));
   const [handle, setHandle] = useState<string | null>(null);
-  const [requests, setRequests] = useState<FollowRequest[]>([]);
-  const [declined, setDeclined] = useState<FollowRequest[]>([]);
-  const [showDeclined, setShowDeclined] = useState(false);
-  const location = useLocation();
-  const back = backFrom(location.pathname, location.search);
+  const [requestCount, setRequestCount] = useState(0);
+  const [peopleCount, setPeopleCount] = useState<number | null>(null);
   const [feed, setFeed] = useState<FeedItem[] | null>(null);
   const plansAhead = useMemo(() => upcomingPlans(todayIn(DEFAULT_METRO), log), [log]);
-
-  const decide = async (followerId: string, yes: boolean) => {
-    if (yes) await approveFollow(followerId);
-    else await declineFollow(followerId);
-    const row = requests.find((r) => r.followerId === followerId) ?? declined.find((r) => r.followerId === followerId);
-    setRequests((list) => list.filter((r) => r.followerId !== followerId));
-    // A decline keeps the row (R03): it can still be approved from here later.
-    setDeclined((list) => (yes ? list.filter((r) => r.followerId !== followerId) : row && !list.some((r) => r.followerId === followerId) ? [...list, row] : list));
-  };
 
   useEffect(() => {
     let current = true;
     if (!account) {
       setHandle(null);
       setFeed(null);
+      setPeopleCount(null);
       return;
     }
     getMyProfile().then((profile) => current && setHandle(profile?.handle ?? null));
-    followRequests().then((list) => current && setRequests(list));
-    declinedRequests().then((list) => current && setDeclined(list));
+    followRequests().then((list) => current && setRequestCount(list.length));
+    peopleList().then((list) => current && setPeopleCount(list.length));
     followingFeed().then((list) => current && setFeed(list));
     return () => {
       current = false;
@@ -178,6 +168,13 @@ export function YouScreen() {
         <div className="you-who">
           <h1 className="page-title">{account?.displayName ?? 'You'}</h1>
           {account && handle && <span className="you-handle">@{handle}</span>}
+          {account && peopleCount !== null && (
+            // One count, one tap to everyone (build notes 2, section 3): the People list holds requests too.
+            <Link to="/you/people" className="you-people">
+              {peopleCount} {peopleCount === 1 ? 'person' : 'people'}
+              {requestCount > 0 ? ` · ${requestCount} ${requestCount === 1 ? 'request' : 'requests'}` : ''} ›
+            </Link>
+          )}
         </div>
         <Link to="/you/add" className="round-button you-add" aria-label="Log an event">
           <PlusIcon />
@@ -185,10 +182,10 @@ export function YouScreen() {
         <Link
           to="/you/settings"
           className="round-button you-gear"
-          aria-label={requests.length > 0 ? `Settings, ${requests.length} follow requests` : 'Settings'}
+          aria-label={requestCount > 0 ? `Settings, ${requestCount} follow requests` : 'Settings'}
         >
           <GearIcon />
-          {requests.length > 0 && <span className="you-badge">{requests.length}</span>}
+          {requestCount > 0 && <span className="you-badge">{requestCount}</span>}
         </Link>
       </div>
 
@@ -198,54 +195,6 @@ export function YouScreen() {
         <p className="you-fine" role="status">
           {warning}
         </p>
-      )}
-
-      {(requests.length > 0 || declined.length > 0) && (
-        <section className="you-block" aria-labelledby="requests-heading">
-          <h2 id="requests-heading" className="you-heading">
-            Wants to follow you
-          </h2>
-          <ul className="log-list">
-            {requests.map((r) => (
-              <li key={r.followerId} className="request-row">
-                <Link to={r.handle ? `/p/${r.handle}` : '#'} state={{ back }} className="log-main">
-                  <span className="log-title">{r.displayName ?? r.handle ?? 'Someone'}</span>
-                  {/* What approval gives, in one line (Kylie, Oct 9, 3.24). */}
-                  <span className="log-facts">They'll see your logged events and plans.</span>
-                </Link>
-                <span className="request-actions">
-                  <button type="button" className="link-button" onClick={() => decide(r.followerId, true)}>
-                    Approve
-                  </button>
-                  <button type="button" className="link-button" onClick={() => decide(r.followerId, false)}>
-                    Decline
-                  </button>
-                </span>
-              </li>
-            ))}
-            {declined.length > 0 && (
-              <li className="request-row request-declined">
-                <button type="button" className="link-button" onClick={() => setShowDeclined((v) => !v)} aria-expanded={showDeclined}>
-                  Declined · {declined.length} {showDeclined ? '▴' : '▾'}
-                </button>
-              </li>
-            )}
-            {showDeclined &&
-              declined.map((r) => (
-                <li key={r.followerId} className="request-row">
-                  <Link to={r.handle ? `/p/${r.handle}` : '#'} state={{ back }} className="log-main">
-                    <span className="log-title">{r.displayName ?? r.handle ?? 'Someone'}</span>
-                    {r.handle && <span className="log-facts">@{r.handle}</span>}
-                  </Link>
-                  <span className="request-actions">
-                    <button type="button" className="link-button" onClick={() => decide(r.followerId, true)}>
-                      Approve
-                    </button>
-                  </span>
-                </li>
-              ))}
-          </ul>
-        </section>
       )}
 
       <div className="segmented" role="tablist" aria-label="You">
@@ -269,7 +218,7 @@ export function YouScreen() {
           <Stats stats={stats} hours={hoursAtGames(shown)} />
         </>
       )}
-      {tab === 'friends' && <FollowingTab items={feed} ratings={ratings} signedIn={Boolean(account)} />}
+      {tab === 'friends' && <FollowingTab items={feed} ratings={ratings} signedIn={Boolean(account)} log={log} />}
     </div>
   );
 }
@@ -286,12 +235,59 @@ function groupByTime(entries: Entry[]): [string, Entry[]][] {
   return groups;
 }
 
+/** A friend's line belongs on your feed when the event is yours (saved or logged) or one of your favorites' (Kylie, Oct 9). */
+function interested(item: FeedItem, log: PersonalLog, favorites: readonly Favorite[]): boolean {
+  if (item.eventId && (log.plans.some((p) => p.eventId === item.eventId) || log.added.some((e) => e.eventId === item.eventId))) return true;
+  const title = item.title.toLowerCase();
+  const venue = (item.venue ?? '').toLowerCase();
+  return favorites.some((fav) => {
+    const label = fav.label.toLowerCase();
+    if (!label) return false;
+    if (fav.kind === 'venue') return venue === label;
+    if (fav.kind === 'artist') return title === label || title.startsWith(`${label}:`) || title.startsWith(`${label} `);
+    const word = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp(`(^|[^a-z0-9])${word}([^a-z0-9]|$)`).test(title);
+  });
+}
+
+/** You too: the same event is in your plans or your log. */
+function youToo(item: FeedItem, log: PersonalLog): boolean {
+  return Boolean(item.eventId && (log.plans.some((p) => p.eventId === item.eventId) || log.added.some((e) => e.eventId === item.eventId)));
+}
+
+interface FeedGroup {
+  key: string;
+  title: string;
+  date: string;
+  venue?: string;
+  metroId?: string;
+  eventId?: string;
+  entry?: Entry;
+  items: FeedItem[];
+  example: boolean;
+}
+
+function groupFeed(items: FeedItem[]): FeedGroup[] {
+  const groups = new Map<string, FeedGroup>();
+  for (const item of items) {
+    const key = item.eventId ?? `${item.metroId ?? ''}|${item.date}|${item.title}`;
+    const group = groups.get(key) ?? { key, title: item.title, date: item.date, venue: item.venue, metroId: item.metroId, eventId: item.eventId, entry: item.entry, items: [], example: Boolean(item.example) };
+    group.items.push(item);
+    if (!group.entry && item.entry) group.entry = item.entry;
+    groups.set(key, group);
+  }
+  return [...groups.values()];
+}
+
 /**
- * The Following feed (Kylie, Oct 9, 3.24): what the people you follow are planning
- * to attend, and what they attended. Each line is dated by the event. No post times,
- * no "is at", and an attended line only once the date has passed.
+ * The Following feed, grouped per event (build notes 2, section 3, F3): the event and its
+ * read on top, the people you follow stacked under it. Only events you're interested in:
+ * ones you saved or logged, and your favorites'. Plans ahead under Coming up, past
+ * nights under Recent. Each line is dated by the event; no post times, no "is at".
  */
-function FollowingTab({ items, ratings, signedIn }: { items: FeedItem[] | null; ratings: ReadonlyMap<string, number>; signedIn: boolean }) {
+function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | null; ratings: ReadonlyMap<string, number>; signedIn: boolean; log: PersonalLog }) {
+  const location = useLocation();
+  const back = backFrom(location.pathname, location.search);
   if (!signedIn) {
     return (
       <div className="card empty-card">
@@ -300,23 +296,77 @@ function FollowingTab({ items, ratings, signedIn }: { items: FeedItem[] | null; 
     );
   }
   if (items === null) return null;
-  const list = items.length > 0 ? items : EXAMPLE_FEED;
-  return (
-    <section className="you-block" aria-label="Following">
-      <div className="you-heading-row">
-        <Link to="/you/people?tab=following" className="link-more people-link">
-          Following ›
-        </Link>
-        <Link to="/you/people?tab=followers" className="link-more people-link">
-          Followers ›
-        </Link>
+  const favorites = favoritesOf(log);
+  const example = items.length === 0;
+  const list = example ? EXAMPLE_FEED : items.filter((item) => interested(item, log, favorites));
+  const groups = groupFeed(list);
+  const coming = groups.filter((g) => g.items[0].kind === 'planning');
+  const recent = groups.filter((g) => g.items[0].kind === 'attended');
+  if (groups.length === 0) {
+    return (
+      <div className="card empty-card">
+        <div className="card-title">Nothing from the people you follow at your events or favorites yet.</div>
       </div>
-      <ul className="log-list">
-        {list.map((item) => (
-          <FeedRow key={`${item.friend.id}-${item.kind}-${item.date}-${item.title}`} item={item} ratings={ratings} />
-        ))}
-      </ul>
-    </section>
+    );
+  }
+  const section = (heading: string, rows: FeedGroup[]) =>
+    rows.length > 0 && (
+      <section className="you-block" aria-label={heading}>
+        <h2 className="you-heading">{heading}</h2>
+        {rows.map((group) => {
+          const rating = group.entry && !group.example ? ratingForEntry(group.entry, ratings) : group.metroId ? (ratings.get(nightKey(group.metroId, group.date)) ?? null) : null;
+          const facts = [shortLocalDate(group.date), group.venue].filter(Boolean).join(' · ');
+          const head = (
+            <>
+              <ReadTile rating={rating} />
+              <span className="log-main">
+                <span className="log-title">{group.title}</span>
+                <span className="log-facts">{facts}</span>
+              </span>
+              {group.example && <span className="example-chip">Example</span>}
+            </>
+          );
+          return (
+            <article key={group.key} className="card feed-group">
+              {group.example ? (
+                <div className="feed-group-head">{head}</div>
+              ) : (
+                <Link to={group.eventId && group.metroId ? eventPath(group.eventId, group.metroId) : datePath(group.date, group.metroId ?? DEFAULT_METRO.id)} className="feed-group-head">
+                  {head}
+                </Link>
+              )}
+              <ul className="feed-lines">
+                {group.items.map((item) => {
+                  const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
+                  const text = `${item.kind === 'planning' ? 'is planning to attend' : 'attended'}${youToo(item, log) ? ' · you too' : ''}`;
+                  return (
+                    <li key={`${item.friend.id}-${item.kind}`} className="feed-line">
+                      <span className="avatar avatar-small" aria-hidden>
+                        {name.slice(0, 1).toUpperCase()}
+                      </span>
+                      {item.example || !item.friend.handle ? (
+                        <span className="log-friend">
+                          <strong>{name}</strong> {text}
+                        </span>
+                      ) : (
+                        <Link to={`/p/${item.friend.handle}`} state={{ back }} className="log-friend log-friend-link">
+                          <strong>{name}</strong> {text}
+                        </Link>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </article>
+          );
+        })}
+      </section>
+    );
+  return (
+    <>
+      {section('Coming up', coming)}
+      {section('Recent', recent)}
+    </>
   );
 }
 
