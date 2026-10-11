@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ChevronDown } from '../components/Icons';
-import { EventFrictionPill } from '../components/EventTags';
+import { CrowdFigure, EventFrictionPill } from '../components/EventTags';
 import { ReadTile as Read } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
@@ -49,7 +49,6 @@ import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/date
 import { mapTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath } from '../lib/view';
-import { crowdShort } from '../map/crowdPoints';
 import { dayWordFor } from '../lib/dayWord';
 import { LastFive } from './FavoritesScreen';
 
@@ -254,7 +253,7 @@ export function FavoritePage() {
                     </span>
                     <span className="fav-next-tags">
                       <EventFrictionPill event={nextHomeEvent} />
-                      {crowdOf(nextHomeEvent) && <span className="log-facts">{crowdOf(nextHomeEvent)}</span>}
+                      <CrowdFigure event={nextHomeEvent} />
                     </span>
                   </span>
                 </Link>
@@ -334,7 +333,7 @@ export function FavoritePage() {
                         </span>
                         <span className="fav-next-tags">
                           <EventFrictionPill event={event} />
-                          {crowdOf(event) && <span className="log-facts">{crowdOf(event)}</span>}
+                          <CrowdFigure event={event} />
                         </span>
                       </span>
                     </Link>
@@ -474,11 +473,6 @@ function venueOf(event: CrowdEvent): string {
   return venue ? venueNameOn(venue, event.date) : event.place.venueId;
 }
 
-/** "52k", the way the map chip says it; nothing when there is no figure yet. */
-function crowdOf(event: CrowdEvent): string | null {
-  const text = crowdShort(event, undefined, false, true);
-  return text === 'No count yet' ? null : text;
-}
 
 /** "vs. Brewers · NLCS G3", "at Brewers · G1", "vs. Oilers". */
 function gameTitle(game: TeamGame): string {

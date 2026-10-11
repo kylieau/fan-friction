@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { SearchIcon } from '../components/Icons';
 import { SearchButton } from '../components/SearchButton';
-import { EventFrictionPill } from '../components/EventTags';
+import { CrowdFigure, EventFrictionPill } from '../components/EventTags';
 import { ReadTile as Read } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
@@ -451,6 +451,7 @@ function NextLineRow({ next, rating, home }: { next: NextLine; rating: number | 
       <span className="log-main">
         <span className="log-facts fav-next-facts">{nextFacts(next, home)}</span>
       </span>
+      {next.event && <CrowdFigure event={next.event} />}
       {next.event && <EventFrictionPill event={next.event} />}
     </>
   );

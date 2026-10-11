@@ -7,6 +7,7 @@ import { crowdThousands } from '../map/crowdPoints';
 import { loggedDateLabel } from '../lib/dates';
 import { entryPath, eventPath } from '../lib/view';
 import { ReadTile } from './ReadTile';
+import { CrowdMark } from './EventTags';
 
 /** The read's words, quietest first (src/config/scoreLabels.ts). */
 const LADDER = ['Chill', 'Mild', 'Spicy', 'Brutal', 'Cooked'];
@@ -87,7 +88,7 @@ export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: Read
             <div className="badge-row">
               {biggest && (
                 <span className="badge badge-crowd">
-                  Biggest crowd · {biggest.title} · {crowdThousands(biggest.crowd ?? 0)}
+                  Biggest crowd · {biggest.title} · <CrowdMark /> {crowdThousands(biggest.crowd ?? 0)}
                 </span>
               )}
               {fightText && <span className="badge badge-fight">Toughest fight · {fightText}</span>}

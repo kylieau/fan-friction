@@ -278,7 +278,10 @@ export function EventScreen() {
         <div className="crowd-figure">
           {me.count !== undefined ? (
             <>
-              <span className="crowd-number">{fmt(me.count)}</span>
+              <span className="crowd-number">
+                <CrowdMark />
+                {fmt(me.count)}
+              </span>
               <span className="crowd-kind">
                 People ({kind ? capital(kind) : kind})
                 {kind === 'estimated' && <HowButton onOpen={() => setShowHow(true)} />}
@@ -289,7 +292,10 @@ export function EventScreen() {
           ) : e.expectedDraw ? (
             <>
               {/* A building-only figure is a ceiling: "Up to N" (3.1, 3.3); a crowd-based one is "~N". */}
-              <span className="crowd-number">{e.expectedDraw.basis === 'building' ? `Up to ${fmt(roundEstimate(e.expectedDraw.count))}` : `~${fmt(roundEstimate(e.expectedDraw.count))}`}</span>
+              <span className="crowd-number">
+                <CrowdMark />
+                {e.expectedDraw.basis === 'building' ? `Up to ${fmt(roundEstimate(e.expectedDraw.count))}` : `~${fmt(roundEstimate(e.expectedDraw.count))}`}
+              </span>
               <span className="crowd-kind">
                 People (Est.)
                 <HowButton onOpen={() => setShowHow(true)} />
@@ -596,7 +602,16 @@ function Beaten({ me, all, date }: { me: CrowdPoint; all: CrowdPoint[]; date: st
                 <span>
                   {self ? '★ ' : ''}
                   {listTitle(p.event)}
-                  {p.count !== undefined ? ` · ${fmt(p.count)} ${crowdKind(p.event)}` : p.soldOut ? ' · sold out' : ''}
+                  {p.count !== undefined ? (
+                    <>
+                      {' · '}
+                      <CrowdMark /> {fmt(p.count)} {crowdKind(p.event)}
+                    </>
+                  ) : p.soldOut ? (
+                    ' · sold out'
+                  ) : (
+                    ''
+                  )}
                 </span>
                 <span className="bar-dist">{self ? 'This event' : `${miles < 0.3 ? '<0.3' : miles.toFixed(1)} mi`}</span>
               </div>

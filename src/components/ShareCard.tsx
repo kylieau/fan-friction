@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { APP } from '../config/app';
 import { formatScore, scoreLabel, type Friction } from '../config/scoreLabels';
-import { FrictionPill } from './EventTags';
+import { CrowdMark, FrictionPill } from './EventTags';
 import { Wordmark } from './Wordmark';
 
 interface Props {
@@ -58,7 +58,11 @@ export function ShareCard({ dateLabel, title, line, rating, crowd, buttonLabel =
           </div>
         )}
         <div className="share-line">{line}</div>
-        {crowd && <div className="share-crowd">{crowd}</div>}
+        {crowd && (
+          <div className="share-crowd">
+            <CrowdMark /> {crowd}
+          </div>
+        )}
         <div className="share-brand">
           <Wordmark onBlue />
         </div>
