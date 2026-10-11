@@ -701,11 +701,24 @@ export function isPlanned(eventId: string, log: PersonalLog = snapshot): boolean
   return log.plans.some((plan) => plan.eventId === eventId);
 }
 
-/** Flag or unflag an event's night as a plan. */
-export function togglePlan(event: CrowdEvent) {
-  if (isPlanned(event.id)) {
-    commit({ ...snapshot, plans: snapshot.plans.filter((plan) => plan.eventId !== event.id) });
-    return;
+/** Which question was answered for an event ahead (Kylie, Oct 11): Attending?, Watching?, or neither. */
+export function plannedKind(eventId: string, log: PersonalLog = snapshot): 'attend' | 'watch' | null {
+  const plan = log.plans.find((plan) => plan.eventId === eventId);
+  return plan ? (plan.watch ? 'watch' : 'attend') : null;
+}
+
+/**
+ * Answer Attending? (or Watching?) for an event ahead, or take the answer back. The same
+ * answer again clears the plan; the other answer switches it. One plan per event.
+ */
+export function togglePlan(event: CrowdEvent, watch = false) {
+  const kind = plannedKind(event.id);
+  if (kind) {
+    const plans = snapshot.plans.filter((plan) => plan.eventId !== event.id);
+    if (kind === (watch ? 'watch' : 'attend')) {
+      commit({ ...snapshot, plans });
+      return;
+    }
   }
   const plan: Plan = {
     id: `plan-${event.id}`,
@@ -714,8 +727,9 @@ export function togglePlan(event: CrowdEvent) {
     eventId: event.id,
     title: listTitle(event),
     venue: venueLabel(event),
+    ...(watch ? { watch: true } : {}),
   };
-  commit({ ...snapshot, plans: [...snapshot.plans, plan] });
+  commit({ ...snapshot, plans: [...snapshot.plans.filter((row) => row.eventId !== event.id), plan] });
 }
 
 /**
@@ -757,6 +771,8 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       const event = day.events.find((e) => e.id === plan.eventId);
       if (!event) continue;
       const entry = entryFromEvent(event);
+      // A Watching? answer becomes a Watched stub (Kylie, Oct 11); the friction stamp still applies.
+      if (plan.watch) entry.watched = true;
       const stamp = stampNow(event, now);
       if (!added.some((row) => row.id === entry.id)) added.push(stamp ? { ...entry, stamp } : entry);
       settledIds.add(plan.id);

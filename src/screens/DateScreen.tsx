@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { ChevronDown, ShareIcon } from '../components/Icons';
+import { ChevronDown, ShareIcon, TvIcon } from '../components/Icons';
 import { RemoveConfirm } from '../components/EntryLayer';
 import { ReadTile } from '../components/ReadTile';
 import { DayTimeline } from '../components/DayTimeline';
@@ -22,6 +22,7 @@ import {
   getCityDate,
   getPersonalLog,
   isPlanned,
+  plannedKind,
   isStampLocked,
   isWasThere,
   isWatched,
@@ -130,9 +131,11 @@ export function DateScreen() {
   const target = events.find((e) => e.id === highlight) ?? (events.length === 1 ? events[0] : undefined);
   const attended = (e: CrowdEvent) => isWasThere(e.id, log);
   const attending = (e: CrowdEvent) => isPlanned(e.id, log);
+  // Before the event the row reads Watching or Attending by which question was answered (Kylie, Oct 11).
+  const aheadWord = (e: CrowdEvent) => (plannedKind(e.id, log) === 'watch' ? 'Watching' : 'Attending');
 
   const mark = (e: CrowdEvent) => {
-    if (ahead) togglePlan(e);
+    if (ahead) togglePlan(e, plannedKind(e.id, log) === 'watch');
     else if (attended(e)) {
       setUnmarking(e.id);
       return;
@@ -288,7 +291,7 @@ export function DateScreen() {
       {(mine.length > 0 || plans.length > 0) && (
         <section className="you-block" aria-labelledby="your-entry">
           <h2 id="your-entry" className="you-heading">
-            {ahead ? 'Attending' : 'Attended'}
+            {ahead ? (plans.length > 0 && plans.every((p) => p.watch) ? 'Watching' : 'Attending') : 'Attended'}
           </h2>
           <div className="entry-card">
             {mine.map((entry) => {
@@ -335,7 +338,7 @@ export function DateScreen() {
                       <span className="log-title">{listTitle(e)}</span>
                       <span className="event-tagline">
                         <EventTags event={e} />
-                        <span className="event-venue">{[venueOf(e), yours ? (ahead ? 'Attending' : isWatched(e.id, log) ? 'Watched' : 'Attended') : null].filter(Boolean).join(' · ')}</span>
+                        <span className="event-venue">{[venueOf(e), yours ? (ahead ? aheadWord(e) : isWatched(e.id, log) ? 'Watched' : 'Attended') : null].filter(Boolean).join(' · ')}</span>
                       </span>
                       {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
                       <span className="log-facts">
@@ -360,7 +363,7 @@ export function DateScreen() {
                     />
                   ) : choosing ? (
                     <button type="button" className={`fav-toggle${yours ? ' on' : ''}`} onClick={() => mark(e)}>
-                      {ahead ? (attending(e) ? 'Attending' : 'Attend') : attended(e) ? 'Attended' : 'Attended?'}
+                      {ahead ? (attending(e) ? aheadWord(e) : 'Attending?') : attended(e) ? 'Attended' : 'Attended?'}
                     </button>
                   ) : null}
                 </li>
@@ -386,16 +389,23 @@ export function DateScreen() {
       {events.length > 0 && (
         <div className="action-row">
           {target ? (
-            <button
-              type="button"
-              className={ahead ? (attending(target) ? 'mark-button on' : 'gold-button') : attended(target) ? 'mark-button on' : 'gold-button'}
-              onClick={() => mark(target)}
-            >
-              {ahead ? (attending(target) ? 'Attending' : 'Attend') : 'Attended'}
-            </button>
+            <>
+              <button
+                type="button"
+                className={ahead ? (attending(target) ? `mark-button on${plannedKind(target.id, log) === 'watch' ? ' watched-on' : ''}` : 'gold-button') : attended(target) ? 'mark-button on' : 'gold-button'}
+                onClick={() => mark(target)}
+              >
+                {ahead ? (attending(target) ? aheadWord(target) : 'Attending?') : 'Attended'}
+              </button>
+              {ahead && !attending(target) && (
+                <button type="button" className="link-button watched-action" onClick={() => togglePlan(target, true)}>
+                  <TvIcon /> Watching?
+                </button>
+              )}
+            </>
           ) : (
             <button type="button" className={choosing ? 'mark-button on' : 'gold-button'} onClick={() => setChoosing((c) => !c)}>
-              {choosing ? 'Done' : ahead ? 'Attend' : 'Attended'}
+              {choosing ? 'Done' : ahead ? 'Attending?' : 'Attended'}
             </button>
           )}
           <button type="button" className="round-button share-button" aria-label={`Share this ${word}`} onClick={share}>
@@ -486,15 +496,7 @@ function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousR
   );
 }
 
-/** "7 PM" or "7:30 PM", the way Kylie wrote the summary line (call 6). */
-function clockShort(time: string): string {
-  const [h, m] = time.split(':').map(Number);
-  const hour12 = h % 12 === 0 ? 12 : h % 12;
-  const suffix = h < 12 ? 'AM' : 'PM';
-  return m ? `${hour12}:${String(m).padStart(2, '0')} ${suffix}` : `${hour12} ${suffix}`;
-}
-
-/** "4.7 Spicy · 54k across 6 events · 4 start at 7 PM" (Kylie, Oct 11, call 6). */
+/** "4.7 Spicy · 54k across 6 events · 4 start at 7:00 pm" (Kylie, Oct 11, call 6; the clock in the app's one form). */
 function summaryLine(rating: number, events: readonly CrowdEvent[]): string {
   const big = events.filter((e) => sizeTier(e) === 'feeds-friction');
   const total = big.reduce((sum, e) => sum + (drawSize(e) ?? 0), 0);
@@ -504,7 +506,7 @@ function summaryLine(rating: number, events: readonly CrowdEvent[]): string {
   return [
     `${formatScore(rating)} ${scoreLabel(rating)}`,
     `${total > 0 ? `${crowdThousands(total)} across ` : ''}${events.length} ${events.length === 1 ? 'event' : 'events'}`,
-    top && top[1] > 1 ? `${top[1]} start at ${clockShort(top[0])}` : null,
+    top && top[1] > 1 ? `${top[1]} start at ${clockTime(top[0])}` : null,
   ]
     .filter(Boolean)
     .join(' · ');

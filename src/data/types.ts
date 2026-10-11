@@ -546,6 +546,8 @@ export interface Plan {
   eventId?: string;
   title: string;
   venue?: string;
+  /** Watching?, not Attending? (Kylie, Oct 11): it settles into a watched stub, not an attended one. */
+  watch?: boolean;
   /**
    * Not written. Save stores the night only. An older phone copy may still
    * have one; it is dropped on load.

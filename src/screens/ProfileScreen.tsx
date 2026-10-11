@@ -236,7 +236,7 @@ export function ProfileScreen() {
                 <Link to={datePath(plan.date, plan.metroId, plan.eventId)} className="log-row">
                   <span className="log-main">
                     <span className="log-title">{plan.title}</span>
-                    <span className="log-facts">{[shortLocalDate(plan.date), plan.venue, METROS[plan.metroId]?.name].filter(Boolean).join(' · ')}</span>
+                    <span className="log-facts">{[shortLocalDate(plan.date), plan.venue, METROS[plan.metroId]?.name, plan.watch ? 'Watching' : null].filter(Boolean).join(' · ')}</span>
                   </span>
                 </Link>
               </li>

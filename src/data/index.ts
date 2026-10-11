@@ -352,6 +352,7 @@ export {
   isFavorite,
   toggleFavorite,
   isPlanned,
+  plannedKind,
   isWasThere,
   logStats,
   nextSavedPlan,

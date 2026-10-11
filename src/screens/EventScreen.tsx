@@ -29,7 +29,7 @@ import {
   roundEstimate,
   getCityDate,
   getPersonalLog,
-  isPlanned,
+  plannedKind,
   isStampLocked,
   asMetroDate,
   isWasThere,
@@ -195,14 +195,30 @@ export function EventScreen() {
 
       <div className="event-marks">
         {ahead ? (
-          <button
-            type="button"
-            className={`mark-button${isPlanned(e.id, log) ? ' on' : ''}`}
-            aria-pressed={isPlanned(e.id, log)}
-            onClick={() => togglePlan(e)}
-          >
-            {isPlanned(e.id, log) ? 'Attending' : 'Attend'}
-          </button>
+          plannedKind(e.id, log) === 'watch' ? (
+            <>
+              <button type="button" className="mark-button on watched-on" aria-pressed onClick={() => togglePlan(e, true)}>
+                <TvIcon /> Watching
+              </button>
+              <button type="button" className="mark-button small" onClick={() => togglePlan(e)}>
+                Attending?
+              </button>
+            </>
+          ) : plannedKind(e.id, log) === 'attend' ? (
+            <button type="button" className="mark-button on" aria-pressed onClick={() => togglePlan(e)}>
+              Attending
+            </button>
+          ) : (
+            <>
+              {/* Before the event, both are questions, a call to action rather than a status (Kylie, Oct 11). */}
+              <button type="button" className="gold-button" onClick={() => togglePlan(e)}>
+                Attending?
+              </button>
+              <button type="button" className="link-button watched-action" onClick={() => togglePlan(e, true)}>
+                <TvIcon /> Watching?
+              </button>
+            </>
+          )
         ) : isWasThere(e.id, log) ? (
           unmarking ? (
             <RemoveConfirm stamped={Boolean(log.added.find((entry) => entry.eventId === e.id)?.stamp)} onKeep={() => setUnmarking(false)} onRemove={() => { setUnmarking(false); toggleWasThere(e); }} />

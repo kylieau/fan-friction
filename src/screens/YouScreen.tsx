@@ -412,7 +412,7 @@ function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | n
                 {group.items.map((item) => {
                   const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
                   // No "· you too" (Kylie, Oct 11): people already know they're going.
-                  const text = item.kind === 'planning' ? 'is going to' : item.watched ? 'watched' : 'went to';
+                  const text = item.kind === 'planning' ? (item.watched ? 'is going to watch' : 'is going to') : item.watched ? 'watched' : 'went to';
                   return (
                     <li key={`${item.friend.id}-${item.kind}`} className="feed-line">
                       <span className="avatar avatar-small" aria-hidden>
@@ -465,10 +465,10 @@ function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | n
   );
 }
 
-/** The start of a friend's line (Kylie, Oct 11, call 1): "Sam is going to", "Sam went to", "Sam watched". The event follows. */
+/** The start of a friend's line (Kylie, Oct 11, call 1): "Sam is going to", "Sam is going to watch", "Sam went to", "Sam watched". The event follows. */
 export function feedLine(item: FeedItem): string {
   const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
-  if (item.kind === 'planning') return `${name} is going to`;
+  if (item.kind === 'planning') return item.watched ? `${name} is going to watch` : `${name} is going to`;
   return item.watched ? `${name} watched` : `${name} went to`;
 }
 
