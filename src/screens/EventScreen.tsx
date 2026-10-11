@@ -126,6 +126,8 @@ export function EventScreen() {
         {stakesLine && <p className="event-stakes">{stakesLine}</p>}
         <div className="event-sub">
           {me.venueName}
+          {/* A neutral site names its city (build notes 2, event naming). */}
+          {e.neutralSite ? ` · ${(METROS[e.metroId] ?? DEFAULT_METRO).name}` : ''}
           {e.start ? ` · ${clockTime(e.start)}` : ''}
           {tv ? ` · ${ahead ? 'On' : 'Was on'} ${tv}` : ''}
         </div>

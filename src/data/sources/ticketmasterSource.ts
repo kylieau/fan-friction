@@ -254,6 +254,8 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
         start: e.dates.start.timeTBA || !e.dates.start.localTime ? null : e.dates.start.localTime.slice(0, 5),
         kind,
         title: kind === 'show' ? performer : e.name.trim(),
+        // The full listing name when it says more than the act ("Bruno Mars: The Romantic Tour"; build notes 2, event naming).
+        ...(kind === 'show' && e.name.trim().toLowerCase() !== performer.toLowerCase() ? { officialTitle: e.name.trim() } : {}),
         place: { type: 'venue', venueId: venue.id },
         audience: kind === 'show' ? { domain: 'music', genre } : kind === 'game' ? { domain: 'sports', sport: sportOf(`${genre} ${e.classifications?.[0]?.subGenre?.name ?? ''} ${e.name}`) } : { domain: 'other', tag: genre },
         performer,

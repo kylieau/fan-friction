@@ -46,7 +46,7 @@ import {
   type TeamGame,
 } from '../data';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
-import { listTitle } from '../lib/eventTitle';
+import { mapTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath } from '../lib/view';
 import { crowdShort } from '../map/crowdPoints';
@@ -382,7 +382,7 @@ export function FavoritePage() {
                   <Link to={datePath(event.date, event.metroId, event.id)} className="log-row fav-row">
                     <Read rating={readAt(event.metroId, event.date)} />
                     <span className="log-main">
-                      <span className="log-title">{listTitle(event)}</span>
+                      <span className="log-title">{mapTitle(event, sameDate(event))}</span>
                       <span className="log-facts">
                         {shortLocalDate(event.date)}
                         {event.start ? ` · ${clockTime(event.start)}` : ''}

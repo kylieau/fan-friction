@@ -1,6 +1,7 @@
 import { TEAMS } from '../data/teams';
 import { VENUES, venueNameOn } from '../data/venues';
 import type { CrowdEvent } from '../data/types';
+import { displayName } from '../config/names';
 
 /** Tags that belong after the first name. CFB is stripped from old titles and never written back. */
 const SQUAD_TAG = 'FB|MBB|WBB|CFB';
@@ -56,8 +57,10 @@ function withSquadTag(title: string, tag: string | null): string {
 function headliner(event: CrowdEvent): string | null {
   if (event.audience.domain !== 'music') return null;
   if (event.kind !== 'show' && event.kind !== 'festival') return null;
+  // A festival's chip is the festival, not a performer (build notes 2, event naming).
+  if (event.kind === 'festival') return displayName(event.title) || null;
   const name = event.performer?.trim();
-  return name || null;
+  return name ? displayName(name) : null;
 }
 
 function venueLabel(event: CrowdEvent): string | null {
@@ -153,7 +156,12 @@ export function mapTitle(event: CrowdEvent, entry: readonly CrowdEvent[] = []): 
   return withSquadTag(event.title, collegeAbbrev(event));
 }
 
-/** Full official title on the sheet, the event page, and the log. The round is a separate line. */
+/**
+ * Full official title on the sheet, the event page, and the log. The round is a separate line.
+ * A show reads as the feed's full name when it says more than the act ("Bruno Mars: The
+ * Romantic Tour"), in the casing the act uses (src/config/names.ts).
+ */
 export function listTitle(event: CrowdEvent): string {
+  if (event.kind === 'show' || event.kind === 'festival') return displayName(event.officialTitle ?? event.title);
   return withSquadTag(event.title, collegeAbbrev(event));
 }

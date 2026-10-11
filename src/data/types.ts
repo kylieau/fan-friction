@@ -179,6 +179,8 @@ export interface CrowdEvent {
   start: LocalTime | null;
   kind: EventKind;
   title: string;
+  /** The feed's full event name when it says more than the performer ("Bruno Mars: The Romantic Tour"). The sheet and the event page show it. */
+  officialTitle?: string;
   /** Playoff round, when there is one. Concerts and the regular season leave it off. */
   stakes?: Stakes;
   place: Place;

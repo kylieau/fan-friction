@@ -34,7 +34,7 @@ import {
 import { VENUES, venueNameOn } from '../data';
 import { crowdKind, crowdPoints, showsOnMap, isMuted } from '../map/crowdPoints';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
-import { listTitle } from '../lib/eventTitle';
+import { mapTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, mapPath } from '../lib/view';
 import { dayWord } from '../lib/dayWord';
@@ -107,7 +107,7 @@ export function HomeScreen() {
     const seen = new Set(attending.map((row) => row.eventId));
     const theirs = sorted
       .filter((e) => !seen.has(e.id) && favorites.some((fav) => eventMatches(e, fav)))
-      .map((e) => ({ key: e.id, title: listTitle(e), date: e.date, metroId: e.metroId, eventId: e.id, venue: venueOf(e), start: e.start ?? undefined, attending: false }));
+      .map((e) => ({ key: e.id, title: mapTitle(e, everywhere), date: e.date, metroId: e.metroId, eventId: e.id, venue: venueOf(e), start: e.start ?? undefined, attending: false }));
     return [...attending, ...theirs].slice(0, ROWS);
   }, [log, everywhere, today]);
 
@@ -184,13 +184,19 @@ export function HomeScreen() {
               </span>
             </span>
           </Link>
+          {/* The heading is the link (build notes 2, Home section links): no See all rows. */}
+          <h2 className="you-heading heading-link-row">
+            <Link to={mapPath({ metroId: home.id, date: today, today })} className="heading-link">
+              {word === 'day' ? 'Today' : 'Tonight'} ›
+            </Link>
+          </h2>
           <ul className="log-list tonight-list">
             {tonight.slice(0, ROWS).map((e) => (
               <li key={e.id}>
                 <Link to={datePath(e.date, e.metroId, e.id)} className="log-row tl-row-link">
                   <span className="tl-time">{e.start ? clockTime(e.start) : 'TBA'}</span>
                   <span className="log-main">
-                    <span className="log-title">{listTitle(e)}</span>
+                    <span className="log-title">{mapTitle(e, tonight)}</span>
                     <span className="log-facts">{[venueOf(e), crowdLine(e)].filter(Boolean).join(' · ')}</span>
                   </span>
                   {e.assessment && showFriction(e.assessment.friction) && (
@@ -200,11 +206,7 @@ export function HomeScreen() {
               </li>
             ))}
           </ul>
-          <div className="see-all-row">
-            <Link to={mapPath({ metroId: home.id, date: today, today })} className="see-all">
-              See all ›
-            </Link>
-          </div>
+
         </section>
       )}
 
@@ -222,14 +224,11 @@ export function HomeScreen() {
 
       {comingUp.length > 0 && (
         <section className="you-block" aria-labelledby="coming-heading">
-          <div className="you-heading-row">
-            <h2 id="coming-heading" className="you-heading">
-              Your next event
-            </h2>
-            <Link to="/you" className="see-all">
-              See all ›
+          <h2 id="coming-heading" className="you-heading heading-link-row">
+            <Link to="/you" className="heading-link">
+              Your next event ›
             </Link>
-          </div>
+          </h2>
           <ul className="log-list">
             {comingUp.map((row) => (
               <li key={row.key}>
@@ -254,14 +253,11 @@ export function HomeScreen() {
 
       {account && (feedShown.length > 0 || newUser) && (
         <section className="you-block" aria-labelledby="following-heading">
-          <div className="you-heading-row">
-            <h2 id="following-heading" className="you-heading">
-              Following
-            </h2>
-            <Link to="/you?tab=following" className="see-all">
-              See all ›
+          <h2 id="following-heading" className="you-heading heading-link-row">
+            <Link to="/you?tab=following" className="heading-link">
+              Following ›
             </Link>
-          </div>
+          </h2>
           {feedShown.length > 0 ? (
             <ul className="log-list">
               {feedShown.map((item) => (
@@ -278,14 +274,11 @@ export function HomeScreen() {
 
       {favoritesWeek.length > 0 && (
         <section className="you-block" aria-labelledby="favorites-heading">
-          <div className="you-heading-row">
-            <h2 id="favorites-heading" className="you-heading">
-              Favorites this week
-            </h2>
-            <Link to="/favorites" className="see-all">
-              See all ›
+          <h2 id="favorites-heading" className="you-heading heading-link-row">
+            <Link to="/favorites" className="heading-link">
+              Favorites this week ›
             </Link>
-          </div>
+          </h2>
           {/* A sideways row; the last chip is cut so the scroll is obvious (6.4). */}
           <ul className="fav-strip">
             {favoritesWeek.map(({ fav, next }) => (
@@ -307,14 +300,11 @@ export function HomeScreen() {
 
       {recent.length > 0 && (
         <section className="you-block" aria-labelledby="recent-heading">
-          <div className="you-heading-row">
-            <h2 id="recent-heading" className="you-heading">
-              Recent
-            </h2>
-            <Link to="/you" className="see-all">
-              See all ›
+          <h2 id="recent-heading" className="you-heading heading-link-row">
+            <Link to="/you" className="heading-link">
+              Recent ›
             </Link>
-          </div>
+          </h2>
           <ul className="log-list">
             {recent.map((entry) => (
               <li key={entry.id}>
