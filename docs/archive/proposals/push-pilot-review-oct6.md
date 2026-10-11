@@ -1,6 +1,6 @@
 # Push Pilot's review of the plan (Oct 6, 2026)
 
-Kylie's Cursor bot reviewed `docs/big-picture-plan-oct6.md` and sent an engineering brief. Pasted here in summary; Claude's read and the decision follow. Kylie approved the reordered plan the same day.
+Kylie's Cursor bot reviewed `docs/product/big-picture-plan-oct6.md` and sent an engineering brief. Pasted here in summary; Claude's read and the decision follow. Kylie approved the reordered plan the same day.
 
 ## The brief, in short
 - Compare before more catalog depth is soft: side-by-side on thin LA-only data would feel toy-like; stress-test the checklist and the formula with a second city first, unless Kylie prioritizes Compare for product reasons.
@@ -13,9 +13,9 @@ Kylie's Cursor bot reviewed `docs/big-picture-plan-oct6.md` and sent an engineer
 - Recommended order: egress docs then rule; catalog write path; map code-split and a Gridlock draft label; one second city (San Diego first, then Seattle, New York last); Ticketmaster in slices; Compare when she says go; then the rest.
 
 ## Claude's read
-- Already done when the brief arrived: the egress research is finished and the cars-per-lane rule was shelved on the evidence (`docs/archive/research/venue-egress-answer.md`); Gridlock reads already say "Formula v4 · placeholder numbers until tuned" on screen.
+- Already done when the brief arrived: the egress research is finished and the cars-per-lane rule was shelved on the evidence (`docs/research/topics/venue-egress-answer.md`); Gridlock reads already say "Formula v4 · placeholder numbers until tuned" on screen.
 - Agree, and it matters: the catalog write path is the biggest real engineering debt; the map code-split is cheap; Ticketmaster in slices; San Diego first as the cheapest proof of the checklist.
 - Pushed back: Compare is not blocked by data (Kylie's own log spans eight cities and ten years; only "dates on the same tour" needs concerts), so it is a product call, hers. And inventing a Gridlock rule from patchy OpenStreetMap lane tags would be less honest than the labeled placeholder.
 
 ## Decision (Kylie, Oct 6)
-The reordered plan in `docs/big-picture-plan-oct6.md`: map code-split → catalog write path (proposal first) → San Diego via the checklist → Compare whenever she wants it → Ticketmaster in slices → the rest.
+The reordered plan in `docs/product/big-picture-plan-oct6.md`: map code-split → catalog write path (proposal first) → San Diego via the checklist → Compare whenever she wants it → Ticketmaster in slices → the rest.

@@ -1,6 +1,6 @@
 # Proposal: the catalog as shared truth (the write path)
 
-Oct 6, 2026. Item 4 of the reordered plan (`docs/big-picture-plan-oct6.md`). Nothing here is built. Kylie approves, then it is built in slices, each shown on the local site.
+Oct 6, 2026. Item 4 of the reordered plan (`docs/product/big-picture-plan-oct6.md`). Nothing here is built. Kylie approves, then it is built in slices, each shown on the local site.
 
 ## The problem, in plain terms
 Today the app's events come from three places, none of them a store:

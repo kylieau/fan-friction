@@ -4,9 +4,9 @@ _Saved verbatim from Kylie's Oct 11, 2026 bundle (Claude Code, Oct 11, 2026). Th
 
 Kylie, Oct 11, 2026. All decisions are final. Checked against origin/main @ 850beba (read-only). Mocks are in `mocks/`.
 
-How to work: each step is one commit straight to main. No PRs, no branches. Privacy and data-loss fixes go first. Log every decision in `docs/product-decisions.md` with the reason and the rejected options. New migrations start at **0020** (the last one is `0019_private_entries.sql`) and must be safe to rerun. Users are capable, so say less and skip fine print. If something is ambiguous or conflicts with the code, flag it. Don't guess.
+How to work: each step is one commit straight to main. No PRs, no branches. Privacy and data-loss fixes go first. Log every decision in `docs/product/product-decisions.md` with the reason and the rejected options. New migrations start at **0020** (the last one is `0019_private_entries.sql`) and must be safe to rerun. Users are capable, so say less and skip fine print. If something is ambiguous or conflicts with the code, flag it. Don't guess.
 
-Sources: `docs/archive/research/build2-judgment-calls-prompt.md` and `-answer.md` (Model 1, Model 2), `BACKLOG.md:88`, `MEMORY_HANDOFF.md`, Mock Mosaic's A–D options. Fill in "Kylie's calls: Pending" in `-answer.md` with these decisions.
+Sources: `docs/research/topics/build2-judgment-calls-prompt.md` and `-answer.md` (Model 1, Model 2), `BACKLOG.md:88`, `MEMORY_HANDOFF.md`, Mock Mosaic's A–D options. Fill in "Kylie's calls: Pending" in `-answer.md` with these decisions.
 
 ---
 
@@ -126,7 +126,7 @@ Keep as is (no code change, log it):
 2. Section 0, the rest: R08, R09, R12, R16, R18, plus logging R13/R15 and the deferred items.
 3. Calls 4 (data) and 3 (stats, where watched incl. its privacy migration).
 4. Calls 1, 2, 6, 7, 8. Then log call 9 and the parked badges.
-5. Commit mocks to `docs/design/`, link them from the docs, and log every decision in `docs/product-decisions.md`.
+5. Commit mocks to `docs/design/`, link them from the docs, and log every decision in `docs/product/product-decisions.md`.
 
 ## Kylie's manual steps (Claude lists the final ones)
 - Run each new migration (0020+) in order.
@@ -144,7 +144,7 @@ Build it step by step. Each step is one commit straight to main. No PRs, no bran
 
 1. Section 0 first: privacy and data-loss fixes (R01–R06), then R08, R09, R12, R16, R18. Don't build R07, R10, R11, R14 or R17.
 2. Then the decisions in the order the file gives.
-3. Log every decision in `docs/product-decisions.md` with the reason and rejected options. Fill in "Kylie's calls" in `docs/archive/research/build2-judgment-calls-answer.md`. Put parked items (badges, R13 mock idea, R12 source) in BACKLOG.md.
+3. Log every decision in `docs/product/product-decisions.md` with the reason and rejected options. Fill in "Kylie's calls" in `docs/research/topics/build2-judgment-calls-answer.md`. Put parked items (badges, R13 mock idea, R12 source) in BACKLOG.md.
 4. Commit the mocks to `docs/design/` and link them from the docs.
 
 Users are capable: say less, no fine print. Items marked ⚑ are open. If anything is ambiguous or conflicts with the code, flag it in your summary. Don't guess.

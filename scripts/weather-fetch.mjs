@@ -4,7 +4,7 @@
 // the 16-day forecast horizon (Kylie, Oct 5: show the high and low; quiet days too).
 // --backfill: the seeded past nights from the reanalysis archive (once).
 // The app never calls the weather service; it reads the index this writes.
-// Source: Open-Meteo, free for non-commercial use (🚩 see docs/build-brief.md cost milestones).
+// Source: Open-Meteo, free for non-commercial use (🚩 see docs/product/build-brief.md cost milestones).
 
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';

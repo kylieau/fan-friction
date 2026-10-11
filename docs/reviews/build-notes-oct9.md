@@ -24,7 +24,7 @@ Do these before anything else. Test them with two signed-in devices (or two brow
 - Fix: add the same one-step confirm that "Remove from log" already has, or an Undo. The entry proposal planned it that way: "Remove from log, one confirm. Same as un-tapping Attended" (`docs/archive/proposals/entry-proposal-oct6.md:31`).
 
 ### 2.2 C111–C114: saving to the account loses or brings back entries
-- **C111** `src/data/personalLog.ts:495-511`: when a past plan is settled, `settledIds` is built from every passed plan (`:506`). So a plan whose lookup threw an error, or whose event wasn't found (`continue` at `:498`), gets deleted anyway. Fix: clear only the plans that actually became entries. Treat "event not found" the same as a failed lookup, because public listings drop past events (`docs/product-review-decisions.md:133`). A hand-added plan has no `eventId` (see C059 in Section 4), so it needs its own path to become an entry.
+- **C111** `src/data/personalLog.ts:495-511`: when a past plan is settled, `settledIds` is built from every passed plan (`:506`). So a plan whose lookup threw an error, or whose event wasn't found (`continue` at `:498`), gets deleted anyway. Fix: clear only the plans that actually became entries. Treat "event not found" the same as a failed lookup, because public listings drop past events (`docs/product/product-review-decisions.md:133`). A hand-added plan has no `eventId` (see C059 in Section 4), so it needs its own path to become an entry.
 - **C112** `src/data/storage/supabaseStore.ts:133-170`: `save()` upserts the whole list, then deletes every row on the server that isn't in this device's list. It does this for entries (`:141-144`), notes (`:158`) and plans (`:166-169`). An older tab therefore overwrites a newer account copy. Fix: save one change at a time (add, change, delete).
 - **C113** `src/data/storage/index.ts:61-63`: at sign-in the merge keeps the account's copy whenever both copies have the entry, so an offline edit reverts. Fix: keep the newer copy, comparing a per-entry edit time set on the device.
 - **C114** `src/data/storage/index.ts:63` and `src/data/personalLog.ts:121-132`: an entry deleted on one device comes back from another device. Fix: keep a small "deleted" marker so a merge can't add the entry back. The code's stated goal, "nothing is lost" (`storage/index.ts:58-59`), still holds.
@@ -52,9 +52,9 @@ Do these before anything else. Test them with two signed-in devices (or two brow
 
 The six data-loss and privacy items (C054, C111–C114, C116) are in Section 2. The other 24 are below, with the triage's fix in short.
 
-- **C035** `src/data/personalLog.ts:589` (and `:277`): a hand-added event's nearby read is looked up only among hand-seeded events. Look it up in the full event list for that city and date (`docs/product-review-decisions.md:97`).
+- **C035** `src/data/personalLog.ts:589` (and `:277`): a hand-added event's nearby read is looked up only among hand-seeded events. Look it up in the full event list for that city and date (`docs/product/product-review-decisions.md:97`).
 - **C061** `src/styles.css:105`: the Add form's Save button needs a disabled style.
-- **C039** `src/screens/DateScreen.tsx:95` (`date > today`) vs `src/screens/EventScreen.tsx:109` (`e.date >= today`): use one rule on both pages, the event page's. Today counts as a plan (Attending), and a plan becomes Attended once the date passes (`docs/big-picture-plan-oct6.md:8`). This also matters for privacy (Section 7, Location visibility).
+- **C039** `src/screens/DateScreen.tsx:95` (`date > today`) vs `src/screens/EventScreen.tsx:109` (`e.date >= today`): use one rule on both pages, the event page's. Today counts as a plan (Attending), and a plan becomes Attended once the date passes (`docs/product/big-picture-plan-oct6.md:8`). This also matters for privacy (Section 7, Location visibility).
 - **C041** `src/screens/DateScreen.tsx:143`: show "Forecast" until the lock (`isStampLocked`, `src/data/read.ts:182`), and "Stamped" only after it. See 3.15.
 - **C031** `src/screens/EventScreen.tsx:304`, `src/data/expectedDraw.ts:77`: the ⓘ card's opening sentence should name the real basis (this team, team and league, or league), not "at [this building]".
 - **C026** `src/data/formula/index.ts:43`: when two parts tie for the top score, remove only one copy of it (6, 6, 1 should give 6.75).
@@ -64,7 +64,7 @@ The six data-loss and privacy items (C054, C111–C114, C116) are in Section 2. 
 - **C012** `src/data/expectedDrawBuild.ts:434`: normalize opponent keys to one form.
 - **C013** `src/data/sources/espnSource.ts:270`: give each team its own badge and trim names.
 - **C014** `src/data/sources/ticketmasterSource.ts:208`: dedupe on venue + date + title. The local time is in the key today.
-- **C027** `src/data/expectedDraw.ts:95-99`: add sports-setup tags to SoFi, Dodger Stadium, the Coliseum, Angel Stadium, Nassau Coliseum and Arthur Ashe so their concerts read about 57% (`docs/expected-draw-decisions-oct7.md:113`).
+- **C027** `src/data/expectedDraw.ts:95-99`: add sports-setup tags to SoFi, Dodger Stadium, the Coliseum, Angel Stadium, Nassau Coliseum and Arthur Ashe so their concerts read about 57% (`docs/product/expected-draw-decisions-oct7.md:113`).
 - **C016** `src/data/venues.ts:2493`, `data/venue-access.tsv`: add concert setups and Ticketmaster venue IDs. The Chicago access re-run is already done (commit `7bab8ac`: 23 Chicago rows, none flagged), so check it rather than redo it.
 - **C080** `src/components/ShareCard.tsx:54`: Compare's share button says "Share this event". Change it to **"Share these events"**. Use "Share these nights" only if both compared items are city-dates after 5 PM (the wording rule in Section 4).
 - **C029** `src/components/ShareCard.tsx:23`: don't add a period after a reason that already ends with one.
@@ -75,9 +75,9 @@ The six data-loss and privacy items (C054, C111–C114, C116) are in Section 2. 
 - **C062** `src/styles.css:2864`: raise "Email me a link" to at least 4.5:1 contrast.
 - **C064** `src/screens/DateScreen.tsx:256`: show the playoff round line ("NLDS G2") on date-page rows, as the map sheet does.
 - **C065** `src/screens/DateScreen.tsx:357`, `src/screens/HomeScreen.tsx:358`: upcoming rows should show the estimate the map rows already show. Number format follows C073.
-- **C079** `src/screens/MapScreen.tsx:92`: hide the Crowds/Traffic switch until Traffic exists (`docs/ux-notes.md:52`; Traffic is parked, `docs/product-review-decisions.md:209`).
+- **C079** `src/screens/MapScreen.tsx:92`: hide the Crowds/Traffic switch until Traffic exists (`docs/product/ux-notes.md:52`; Traffic is parked, `docs/product/product-review-decisions.md:209`).
 
-Map changes (C036/C048, C079, C047, 3.4, 3.18, 3.19, 3.20): the repo asks that Map changes be proposed first (`docs/product-review-decisions.md:205`). Kylie has now picked these options. Show her screenshots of the result.
+Map changes (C036/C048, C079, C047, 3.4, 3.18, 3.19, 3.20): the repo asks that Map changes be proposed first (`docs/product/product-review-decisions.md:205`). Kylie has now picked these options. Show her screenshots of the result.
 
 ---
 
@@ -117,8 +117,8 @@ The format is: id, the decision, then any requirements from her notes.
 - **3.4** Events under 5,000 on the map (`src/map/crowdPoints.ts:26`): (2) keep them on the map but muted, with no friction label. Today the map checks only the hand-set `belowFloor` flag, which Ticketmaster rows never get. Use the size tier in `src/data/read.ts:112-123` instead.
 - **3.5** Low friction hidden; occasion in the pill row (`src/lib/chips.ts:12-24`): confirmed, same as C022. Two labeled columns in event lists (date page and map sheet list); a calm event shows its factual reason instead of "Low"; an ⓘ or legend under the list.
 - **3.6** Read above its parts (`src/data/formula/index.ts:39-45`, Compare): (1) keep the rule and add one line: "The read is the strongest reason, plus a bump for each other strong one."
-- **3.7** Weather as a third reason (`src/screens/CompareScreen.tsx:219`): (1) keep it. Update `docs/direction.md` (`:17`) and the ? key to say three reasons.
-- **3.8** Rating words and decimals (`src/config/scoreLabels.ts:1-22`): (1) keep both (Chill/Mild/Spicy/Brutal/Cooked, one decimal). Fix `docs/ux-notes.md` (`:30`, `:41`).
+- **3.7** Weather as a third reason (`src/screens/CompareScreen.tsx:219`): (1) keep it. Update `docs/product/direction.md` (`:17`) and the ? key to say three reasons.
+- **3.8** Rating words and decimals (`src/config/scoreLabels.ts:1-22`): (1) keep both (Chill/Mild/Spicy/Brutal/Cooked, one decimal). Fix `docs/product/ux-notes.md` (`:30`, `:41`).
 - **3.9** Quiet vs missing data (`src/components/ReadTile.tsx:12-16`, `src/data/index.ts:54`): confirmed, same as C030. Section 5.
 - **3.10** Log button words (`src/screens/EventScreen.tsx:148`, `src/screens/DateScreen.tsx:213`, `:265`): (1) keep Attend / Attending / Attended on both the event page and the date page, and update the docs. The C054 confirm still applies.
 - **3.11** Plans on You (`src/screens/YouScreen.tsx:188`): (2) a small "Coming up" strip at the top of You.
@@ -144,7 +144,7 @@ The format is: id, the decision, then any requirements from her notes.
   - When a read has been redone, show one muted line: **"Rescored <date>"**. *This is a reviewer suggestion, not locked* (Section 10).
   - Nights from before the archive began look like any normal settled night, with no mark (matches 3.16).
   - Code notes: today every date view re-runs the formula on current listings (`index.ts:49-54`). A stamp is written only into a log entry, at tap time (`src/data/personalLog.ts:434-456`), and `forecastBeforeStart` handles LA only (`src/data/read.ts:287-288`). The date page needs a night-level saved read, built from the saved schedule.
-- **3.16** Reconstructed nights (`src/screens/DateScreen.tsx:143`, `src/data/read.ts:212-234`): (2) don't show "reconstructed". Change the tester brief (`docs/tester-brief.md:30`).
+- **3.16** Reconstructed nights (`src/screens/DateScreen.tsx:143`, `src/data/read.ts:212-234`): (2) don't show "reconstructed". Change the tester brief (`docs/product/tester-brief.md:30`).
 - **3.17** First-run tips (`src/components/FirstRunTips.tsx`): (1) remove the tips; the ? and the empty states carry it. Also remove "Show the tips again" (`src/screens/SettingsScreen.tsx:105-106`) and the `tipsDone` wiring (`src/App.tsx:34-43`, `:68`).
 - **3.18** Map chip contents (`src/lib/chips.ts:18`): confirmed. Put a one-color Material Symbols Rounded type icon in #005A9C at the start of chip line 2, before the time. Round the crowd ("20k") so line 2 fits. The name line keeps its full width. Whether the list row should also use the headliner name wasn't answered; leave names as they are (Section 10).
 - **3.19** Map key position and selected ring: (1) keep both (the ? on the right, the pale `#ffe56b` ring).
@@ -331,7 +331,7 @@ C116 and the approval bypass (Section 2) come first. Everything here was checked
 - **C118** (`src/screens/AddEntryScreen.tsx:284`): add an event by hand on a real iPhone and a real Android phone. Does the keyboard hide fields or Save?
 - **C002** (`src/data/sources/ticketmasterSource.ts:25`): check the last nightly run. A window that returned exactly 1,000 listings (200 × 5 pages) was cut off. Her note: run it, then "figure out alternative paths so we don't have a significant lag", and consider how far ahead events are shown. Report the options (smaller windows, more pages, a shorter horizon).
 - **C003** (`src/data/sources/catalogSource.ts:24`): on a busy window, compare the rows the app receives with the count in the table. Supabase's server default caps a response at 1,000 rows, and that setting isn't in the repo. Her note: "determine where our caps are so that we can determine best paths forward to stay consistent and not lose stored information." List every cap you find (server max rows, page sizes, cache `maxEntries: 300` in `vite.config.ts:65`).
-- **C034** (`docs/distance-check.md:1`): after the Oct 13 interview, set the tester's descriptions beside the reads as perception evidence, never as a target (`docs/formula-v4.md:45-46`).
+- **C034** (`docs/checks/distance-check.md:1`): after the Oct 13 interview, set the tester's descriptions beside the reads as perception evidence, never as a target (`docs/reference/formula-v4.md:45-46`).
 - **C066** (`src/components/ReadTile.tsx:12`): open an upcoming date that has events on Home and on a team page, and check whether a forecast appears. Re-check after the Section 5.2 fix.
 - **C072** (`src/screens/EventScreen.tsx:213`): take a fresh phone-width screenshot of the event page and judge whether it's crowded. Keep the share card and the weather and competition cards.
 - **C074** (`src/styles.css:1520`): take screenshots of the map sheet, date page and event page for one event, and compare how occasion is styled.
@@ -347,25 +347,25 @@ C116 and the approval bypass (Section 2) come first. Everything here was checked
 
 Do the docs that depend on answers after the matching app change lands.
 
-- **C096** `docs/build-brief.md:22`: describe today's opening screen (Home at `/`). *Depends on 3.17:* the tips are removed, so drop the three-tip guide.
+- **C096** `docs/product/build-brief.md:22`: describe today's opening screen (Home at `/`). *Depends on 3.17:* the tips are removed, so drop the three-tip guide.
 - **C098** `BACKLOG.md:193`: restate the Oct 7 57% rule as the code applies it (and as fixed by C027).
-- **C099** `data/schedule-archive/README.md:3`, `docs/schedule-archive.md`: list all nine archived cities and their first dates (Section 5.1).
-- **C100** `docs/new-city-checklist.md:39`: *repo changed.* Chicago now has 23 rows in `data/venue-access.tsv`, none flagged (commit `7bab8ac`), so "no venue flagged" is now true. Add a note that the rows were saved Oct 8, not Oct 7.
+- **C099** `data/schedule-archive/README.md:3`, `docs/reference/schedule-archive.md`: list all nine archived cities and their first dates (Section 5.1).
+- **C100** `docs/reference/new-city-checklist.md:39`: *repo changed.* Chicago now has 23 rows in `data/venue-access.tsv`, none flagged (commit `7bab8ac`), so "no venue flagged" is now true. Add a note that the rows were saved Oct 8, not Oct 7.
 - **C101** `BACKLOG.md:6`: refresh the opening. Compare and Ticketmaster are both live.
-- **C102** `docs/data-sources.md:52`: mark Ticketmaster as used.
+- **C102** `docs/reference/data-sources.md:52`: mark Ticketmaster as used.
 - **C104** `AGENTS.md:38`, `:135`: update the screens and files (no `night.ts`; accounts are connected). *Depends on 3.10:* `AGENTS.md:87` "event page only" becomes both pages. Also update the 3.24 and 3.12 words.
-- **C105** `docs/product-review-decisions.md:189` (remove "Use my location", gone since `8811570`); `src/lib/homeCity.ts:5` (home does sync, since `a338db8`).
+- **C105** `docs/product/product-review-decisions.md:189` (remove "Use my location", gone since `8811570`); `src/lib/homeCity.ts:5` (home does sync, since `a338db8`).
 - **C106** `MEMORY_HANDOFF.md:34`: correct the storage-key tip.
-- **C107** `docs/product-decisions.md:11`, `:36`: add a "superseded" note, or update the tabs and Compare. *Depends on 3.10, 3.11, 3.12:* `:48-49` still say "I was there / Save this night" and "You lists attended nights only".
-- **C108** `docs/expected-draw-decisions-oct7.md:41`, `MEMORY_HANDOFF.md:30`: resale prices are off until tested. Make both say so.
+- **C107** `docs/product/product-decisions.md:11`, `:36`: add a "superseded" note, or update the tabs and Compare. *Depends on 3.10, 3.11, 3.12:* `:48-49` still say "I was there / Save this night" and "You lists attended nights only".
+- **C108** `docs/product/expected-draw-decisions-oct7.md:41`, `MEMORY_HANDOFF.md:30`: resale prices are off until tested. Make both say so.
 - **C109** `BACKLOG.md:234`: says Kylie still has to run migration 0010. The triage's fix was "confirm with you, then align", so this needs her answer (Section 10).
-- **C110** `docs/tester-brief.md:17` ("Add a night"): *depends on 3.12 and the Oct 9 log wording.* Use "Log an event", "events" and the "My Stubs" tab name, and fill the interview-guide gaps. Also update `docs/tester-brief.md:30` for 3.16 (no "reconstructed").
+- **C110** `docs/product/tester-brief.md:17` ("Add a night"): *depends on 3.12 and the Oct 9 log wording.* Use "Log an event", "events" and the "My Stubs" tab name, and fill the interview-guide gaps. Also update `docs/product/tester-brief.md:30` for 3.16 (no "reconstructed").
 
 Also update for decisions:
-- 3.7: `docs/direction.md:17` should say three reasons.
-- 3.8: `docs/ux-notes.md:30`, `:41`.
-- 3.10: `docs/build-brief.md:28-35`, `docs/accounts-proposal.md:12-13`, `BACKLOG.md:32`, `:52`, `:69`.
-- 3.17: `BACKLOG.md:78`, `docs/product-decisions.md:30`, `CLAUDE_CODE_FIRST_PROMPT.md:16`.
+- 3.7: `docs/product/direction.md:17` should say three reasons.
+- 3.8: `docs/product/ux-notes.md:30`, `:41`.
+- 3.10: `docs/product/build-brief.md:28-35`, `docs/product/accounts-proposal.md:12-13`, `BACKLOG.md:32`, `:52`, `:69`.
+- 3.17: `BACKLOG.md:78`, `docs/product/product-decisions.md:30`, `CLAUDE_CODE_FIRST_PROMPT.md:16`.
 
 ---
 

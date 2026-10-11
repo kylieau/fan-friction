@@ -1,6 +1,6 @@
 # Postseason crowd estimate: a proposal
 
-Written Oct 7, 2026 from Kylie's research (`docs/archive/research/postseason-attendance-answer.md`). Nothing here is built. Propose, then wait.
+Written Oct 7, 2026 from Kylie's research (`docs/research/topics/postseason-attendance-answer.md`). Nothing here is built. Propose, then wait.
 
 ## The gap today
 
@@ -32,7 +32,7 @@ As every factor: predict each team's **last postseason** from its earlier ones, 
 ## What to build, in order
 
 1. Extend the attendance pull to playoff games in every league (one flag per row: round band, game number, home or neutral). Cost: a few minutes of feed calls; no code on screen changes.
-2. The check script and its result in `docs/postseason-check.md`.
+2. The check script and its result in `docs/checks/postseason-check.md`.
 3. Only if it passes: the rule in `expectedDrawBuild.ts`, the "Likely" range on the event page, the ⓘ sentence.
 
 ## What I need from Kylie
@@ -47,11 +47,11 @@ Kylie locked all three (Oct 7): pull playoff crowds from the same feeds; the fou
 
 **Built:** the pull (`scripts/attendance-collect.mjs`, 307 playoff games on file across 47 teams), the rule (`buildPostseasonRows` / `postseasonPeople` / `roundBand` in `src/data/expectedDrawBuild.ts`; rows written by the calibrate script as `POSTSEASON_DRAWS`), the read (`postseasonDraw` in `src/data/expectedDraw.ts`), "Likely X–Y" and a ⓘ sentence on the event page, and "47.4k+ est" on map cards and list rows (the low end, with a plus).
 
-**The check** (`scripts/postseason-check.mjs` → `docs/postseason-check.md`) **passed as pre-registered**, narrowly: on 44 scored games the rule's median error is 0.5% against 0.5% for the building and 0.8% for the regular-season rule applied blindly. NBA and NHL playoff games sell out, so there the rule and the building agree; the gain is in MLB (3.1% → 2.7%, and 16.8% for the regular rule). The planning range covered 61–80% of games by league.
+**The check** (`scripts/postseason-check.mjs` → `docs/checks/postseason-check.md`) **passed as pre-registered**, narrowly: on 44 scored games the rule's median error is 0.5% against 0.5% for the building and 0.8% for the regular-season rule applied blindly. NBA and NHL playoff games sell out, so there the rule and the building agree; the gain is in MLB (3.1% → 2.7%, and 16.8% for the regular rule). The planning range covered 61–80% of games by league.
 
 **What it covers, honestly:** 39 rows. Team rows for the Dodgers, Yankees, Knicks, Lakers, Kings (first or second round); blended rows for most NBA, NHL and MLB clubs' first or division-series round; league rows for the rest of those bands. **193 of the 237 playoff games on file had no comparable** under the pre-registered pool minimum (20 games, 4 teams, 2 postseasons), and so would **WNBA, MLS, NFL and NWSL playoff games today**, including the Liberty semifinal the research started from (6 WNBA games in that band on file, 3 teams). They keep "No count yet" and the building, as before.
 
 **Open for Kylie:** the pool minimum is a design choice, not a fitted result (the research's own words). Loosening it below 20 games would reach WNBA and MLS rounds with 5–10 games behind them, which is thinner evidence than anything else the app shows. The alternative that stays honest is a league-wide "any round" pool for the small leagues (WNBA: 29 games, 5 teams, 5 postseasons on file), labeled as such. Her call; not built.
 
 
-Status: closed, built and checked Oct 7, 2026 (docs/postseason-check.md); archived in the Oct 8, 2026 docs tidy.
+Status: closed, built and checked Oct 7, 2026 (docs/checks/postseason-check.md); archived in the Oct 8, 2026 docs tidy.

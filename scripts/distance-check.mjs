@@ -22,7 +22,7 @@
 //   against no fade (every competitor at full weight) AND against the null (no competitor
 //   effect at all). If no fade beats the null, the premise fails and the doc says so.
 //
-//   node scripts/distance-check.mjs   → docs/distance-check.md
+//   node scripts/distance-check.mjs   → docs/checks/distance-check.md
 
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -222,7 +222,7 @@ try {
   lines.push('- Sports against sports only: concerts, the biggest same-night competitors in several cities, are not on file for past dates. A season of archived Ticketmaster listings fixes that.');
   lines.push('- The baseline already absorbs some competition: a team that always plays beside another draws its median with that competition in it. The test sees only the nights that differ from the usual.');
   lines.push('- Straight-line miles. Rail and bridges are not in it.');
-  await writeFile(path.join(root, 'docs', 'distance-check.md'), `${lines.join('\n')}\n`);
+  await writeFile(path.join(root, 'docs', 'checks', 'distance-check.md'), `${lines.join('\n')}\n`);
   console.log(lines.slice(0, 8).join('\n'));
   console.log(`\nnull ${pct(oddNull)} · no fade ${pct(oddNoFade.mae)} · A ${pct(oddA.mae)} · B ${pct(oddB.mae)} · chosen ${chosen.near}/${chosen.far} ${pct(oddChosen.mae)}`);
 } finally {

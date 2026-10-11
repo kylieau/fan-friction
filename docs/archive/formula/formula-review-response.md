@@ -1,6 +1,6 @@
 # Outside review of the rating formula (Oct 5, 2026)
 
-Kylie ran `docs/archive/formula/formula-review-prompt.md` through a research-grade model and pasted the answer below, verbatim. Claude's re-check of its arithmetic and the decisions taken from it are in `formula-v4.md`.
+Kylie ran `docs/archive/formula/formula-review-prompt.md` through a research-grade model and pasted the answer below, verbatim. Claude's re-check of its arithmetic and the decisions taken from it are in `docs/reference/formula-v4.md`.
 
 ---
 

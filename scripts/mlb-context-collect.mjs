@@ -1,4 +1,4 @@
-// MLB league context for the expected-draw check (docs/expected-draw-decisions-oct7.md,
+// MLB league context for the expected-draw check (docs/product/expected-draw-decisions-oct7.md,
 // round 2): every team's record after each regular-season game, its league, the
 // World Series winner, and the All-Star and MVP lists, per season. All from MLB's
 // free feed, one request per season per list. Writes data/mlb-context.json.

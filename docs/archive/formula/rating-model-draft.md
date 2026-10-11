@@ -1,11 +1,11 @@
 # Rating model: open drafts (Oct 1, 2026)
 
-Proposals still waiting on Kylie's reaction. Locked decisions live in `product-decisions.md` (Rating model) and `test-nights-and-ratings.md`. Nothing here is built yet.
+Proposals still waiting on Kylie's reaction. Locked decisions live in `docs/product/product-decisions.md` (Rating model) and `docs/reference/test-nights-and-ratings.md`. Nothing here is built yet.
 
 ## Already locked (Oct 1)
 Night 5 stays at 5 · Mid, night 6 is 4 · Light, ELO starts at 8:00, Low friction is never shown, weather is local to each venue and only a small bump, and Kylie is still weighing the word "friction." The empty state says **Unrated** (changing it back is one word).
 
-Later on Oct 1, Kylie accepted: the audience-overlap tiers and rule (overlap acts only on event friction), the friction weights below as the working draft, the Lakers on night 1 as Heavy friction even though they nearly sold out, the Chargers on night 11 as Notable for now, and rain as light friction. She may get a second opinion on the overlap rule, the weights and the Chargers call; the prompt is in `docs/archive/second-opinions/second-opinion-prompt.md`.
+Later on Oct 1, Kylie accepted: the audience-overlap tiers and rule (overlap acts only on event friction), the friction weights below as the working draft, the Lakers on night 1 as Heavy friction even though they nearly sold out, the Chargers on night 11 as Notable for now, and rain as light friction. She may get a second opinion on the overlap rule, the weights and the Chargers call; the prompt is in `docs/research/second-opinions/second-opinion-prompt.md`.
 
 ## What "Unrated" is tied to
 Right now, nothing: the app has no event data yet, so the map just hard-codes "no rating." Once the data is in, a date can be in one of three states. Proposed display for each:

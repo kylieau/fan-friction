@@ -7,7 +7,7 @@
 // Pre-registered pass (written before the first run): the rule's median absolute error is lower
 // than the building's overall, and not worse in any league with 10+ scored games; the planning
 // range's coverage is reported, not gated. Constants in expectedDrawBuild.ts are not re-tuned.
-//   node scripts/postseason-check.mjs   → docs/postseason-check.md
+//   node scripts/postseason-check.mjs   → docs/checks/postseason-check.md
 
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -96,7 +96,7 @@ try {
   lines.push('- Capacity is the building\'s setup for the sport on that date, not the playoff configuration; a curtained or opened upper bowl shows up as occupancy, not as capacity.');
   lines.push('- The league pool is the covered cities\' teams only, not the whole league.');
   lines.push('- Announced crowds are tickets distributed, as everywhere in the app.');
-  await writeFile(path.join(root, 'docs', 'postseason-check.md'), `${lines.join('\n')}\n`);
+  await writeFile(path.join(root, 'docs', 'checks', 'postseason-check.md'), `${lines.join('\n')}\n`);
   console.log(lines.slice(4, 8).join('\n'));
   for (const [l, s] of byLeague) console.log(`${l}: n ${s.n} rule ${pct(s.rule)} building ${pct(s.building)} regular ${pct(s.regular)} cover ${pct(s.cover)}`);
 } finally {

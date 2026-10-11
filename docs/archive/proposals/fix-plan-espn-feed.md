@@ -1,6 +1,6 @@
 # Fix plan: two ESPN feed bugs (Oct 6, 2026)
 
-**Done Oct 6, 2026 (commit fce6191, run in another session).** Found while checking the October research against the app (`docs/archive/research/oct-2026-events/los-angeles.md`). Approved as a plan by Kylie; to be run in another session. Both fixes are inside `src/data/sources/espnSource.ts` only. Nothing on screen changes except that the wrong rows become right.
+**Done Oct 6, 2026 (commit fce6191, run in another session).** Found while checking the October research against the app (`docs/research/events-and-dates/oct-2026-events/los-angeles.md`). Approved as a plan by Kylie; to be run in another session. Both fixes are inside `src/data/sources/espnSource.ts` only. Nothing on screen changes except that the wrong rows become right.
 
 Before starting: `git pull --ff-only`, then check `origin/cursor/*` branches and open PRs for changes to `espnSource.ts` (per `AGENTS.md`).
 

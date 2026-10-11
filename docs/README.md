@@ -1,25 +1,24 @@
 # docs/
 
-What's here is what's still in play. Finished research lives in `archive/`.
-
 | Folder | What it holds |
 |---|---|
-| `docs/` | Product direction and decisions, the build plan, the current formula (`formula-v4.md`), the new-city checklist, data sources, UX notes, test nights, the tester kit. Plus two prompts the new-city checklist uses as templates (`la-venue-table-prompt.md`, `seattle-city-type-prompt.md`). |
-| `reviews/gap-reviews/` | Independent reviews of the app (Codex, GrokBot/Cursor), each with its screenshots under `assets/`. Open until their items are decided. See its README. |
-| `reviews/tester-readiness-reviews/` | Independent reviews of whether a tester can use the main flows unaided (Codex, GrokBot), with screenshots under `assets/`. Open until their findings are decided. See its README. |
-| `research-queue/` | Prompts that have gone out and are waiting for an answer. |
+| `product/` | What the app is and what Kylie has decided: `direction.md`, the decision logs, the build brief, proposals and plans, her logs, UX notes, the tester kit. |
+| `reference/` | How things work: `formula-v4.md` (the live formula), data sources, the new-city checklist, test nights and ratings, researched events, the schedule archive notes. |
+| `checks/` | Files the scripts write or read at these exact paths: `expected-draw-check.md`, `postseason-check.md`, `distance-check.md`, `promo-history-rows.csv`. Don't rename them. |
+| `research/city-builds/<city>/` | Each city's city-type and venue-table prompts and answers. Two models' answers sit side by side with `-claude` and `-codex` suffixes. `los-angeles/` and `seattle/` also hold the prompts the new-city checklist uses as templates; `next-cities/` is the cross-city scan. |
+| `research/topics/` | Research that isn't one city's build: expected draws, hard access, postseason, venue egress, promo history, concert venue figures, teams with no feed, the Ticketmaster price research. |
+| `research/events-and-dates/` | Event and past-date collections by city and their prompts (October 2026 events, past dates, theme-park nights). |
+| `research/second-opinions/` | Second-opinion prompts and answers. |
+| `reviews/` | Independent reviews of the app (`gap-reviews/`) and of tester readiness (`tester-readiness-reviews/`), each with screenshots under `assets/`, plus build notes and the judgment-call decisions. See their READMEs. None is a decision. |
 | `design/` | Kylie's approved mockups from the Oct 9–10, 2026 Mock Mosaic, by file name (index: its README). |
-| `research/` | Research answers Kylie ran outside the queue and saved verbatim (the Ticketmaster price research, Oct 10, 2026). |
-| `archive/research/` | Answered prompts and their answers, by city and topic. Still cited by the code as sources. |
-| `archive/second-opinions/` | Second-opinion prompts and answers. |
-| `archive/formula/` | Formula analysis, tuning, review and calibration history. The live formula is `formula-v4.md`. |
-| `archive/proposals/` | Proposals and plans that were built or decided. |
+| `screenshots/` | Phone-size screenshots from visual checks. |
+| `archive/` | `proposals/` (built or decided) and `formula/` (analysis, tuning and calibration history; the live formula is `reference/formula-v4.md`). |
 
-Some files stay put because scripts write or read them at these exact paths: `expected-draw-check.md`, `postseason-check.md`, `distance-check.md` and `promo-history-rows.csv`.
+Research is still cited by the code as a source, so it stays in `research/` for good.
 
 ## How things move
 
-New research prompts go in `research-queue/`. Save the answer next to its prompt's name (`bay-area-venue-table-answer.md` for `bay-area-venue-table-prompt.md`), in `docs/`.
+A new research prompt goes in `research/city-builds/<city>/` or `research/topics/`. Save the answer beside it, named after the prompt (`bay-area-venue-table-answer.md` for `bay-area-venue-table-prompt.md`). A second model's answer takes a suffix (`milwaukee-venue-table-answer-codex.md`).
 
 When an answer has been folded into the decisions, add one line to it:
 
@@ -27,8 +26,9 @@ When an answer has been folded into the decisions, add one line to it:
 Status: closed, folded into product-decisions.md, Oct 8, 2026
 ```
 
-On the next commit, the pre-commit hook moves the prompt and its answer to `archive/research/` and updates every link to them. Any other doc with that line (a proposal, a plan) moves to `archive/proposals/`. Nothing is archived without that line.
+Research and reviews stay where they are; the line only marks them finished. A doc in `product/` with that line moves to `archive/proposals/` on the next commit, and the pre-commit hook fixes every link to it.
 
 - Preview: `npm run docs:tidy`
 - Do it now: `npm run docs:tidy -- --apply`
+- One-off moves: `node scripts/docs-tidy.mjs --manifest moves.json --apply` (`{ "old/path.md": "new/path.md" }`, docs-relative; folders work too)
 - Script: `scripts/docs-tidy.mjs`. The hook is `.githooks/pre-commit` and switches on after `npm install`.

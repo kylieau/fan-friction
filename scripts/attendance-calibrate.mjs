@@ -1,8 +1,8 @@
 // Turns the collected attendance (data/attendance/<metro>/<team>.json) into
 // expected draws per team, building and kind of date, written to
 // src/data/expectedDrawIndex.ts. The rule lives in src/data/expectedDrawBuild.ts
-// (docs/archive/research/expected-draw-sports-research-answer.md; Kylie's locks in
-// docs/expected-draw-decisions-oct7.md). Run after attendance-collect.mjs:
+// (docs/research/topics/expected-draw-sports-research-answer.md; Kylie's locks in
+// docs/product/expected-draw-decisions-oct7.md). Run after attendance-collect.mjs:
 //   node scripts/attendance-calibrate.mjs
 // Medians of announced counts over the last three normal seasons; nothing is invented.
 // This season's games (data/results) are not in the baseline; they set the season

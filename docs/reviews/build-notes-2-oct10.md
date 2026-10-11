@@ -1,6 +1,6 @@
 # Fan/Friction build notes 2 (updated Oct 10, 2026)
 
-_Saved verbatim from Kylie's Oct 10 bundle (`build-notes-2-oct10.md`, `claude-prompt-oct10.md`, `ticketmaster-price-research.md` and twenty mocks; Claude Code, Oct 10, 2026). The mocks are in `docs/design/` (index: its README) and the research in `docs/research/ticketmaster-price-research.md`. Paths in the text such as `/workspace/ff-gap-review/mosaic/...` are where the mocks sat on her machine; each one is listed by file name in `docs/design/README.md`. Her prompt is appended at the end._
+_Saved verbatim from Kylie's Oct 10 bundle (`build-notes-2-oct10.md`, `claude-prompt-oct10.md`, `ticketmaster-price-research.md` and twenty mocks; Claude Code, Oct 10, 2026). The mocks are in `docs/design/` (index: its README) and the research in `docs/research/topics/ticketmaster-price-research.md`. Paths in the text such as `/workspace/ff-gap-review/mosaic/...` are where the mocks sat on her machine; each one is listed by file name in `docs/design/README.md`. Her prompt is appended at the end._
 
 This replaces build-notes-2-oct9.md. Build 2 has not been built yet: `origin/main` is at `5a4f0a0` (Oct 9, 4:20 PM PT), and every commit after `377ce75` is docs or the nightly-job fix. So this file contains all of build 2 plus Oct 10 (review fixes, Mosaic approvals, ticket line, "I watched it").
 Code references are to `377ce75` and still hold on `5a4f0a0` (no `src/` changes in between). The first build (`build-notes-oct9.md`) is done.
@@ -27,7 +27,7 @@ Current code:
 - `src/screens/DateScreen.tsx:191` sets the label to 'Stamped' or 'Forecast'; it renders at `src/screens/DateScreen.tsx:236` (`read-lab`). Remove 'Stamped' for settled reads. Keep 'Forecast' before the lock.
 - `src/screens/DateScreen.tsx:243` adds " · Updated {date}" from `saved.rescoredOn`. Remove it from the box; move the date and old score into the ⓘ text. The old score is not stored today: `SavedNightRead` (`src/data/types.ts:399-408`, `src/data/read.ts:302`) has `lastUpdated` and `rescoredOn` but no previous value. Needs a field for the old read.
 - `src/screens/EventScreen.tsx:177` shows 'Stamped' / 'Forecast' on the event page. Same change.
-- Pre-archive flag already exists: coverage `'reconstructed'` in `src/data/read.ts:212-234` and `reconstructed` on the saved read (`src/data/types.ts:408`). Use it for the "Rebuilt from past schedules" line. Also update `docs/tester-brief.md:30`, which the first build is changing for 3.16.
+- Pre-archive flag already exists: coverage `'reconstructed'` in `src/data/read.ts:212-234` and `reconstructed` on the saved read (`src/data/types.ts:408`). Use it for the "Rebuilt from past schedules" line. Also update `docs/product/tester-brief.md:30`, which the first build is changing for 3.16.
 - "Formula v4": not found in `src/` on origin/main. It appears in the mockups only. Nothing to remove in code.
 
 ## 2. Favorites
@@ -147,7 +147,7 @@ Current rules with file:line: /workspace/ff-claims/naming-rules-current.md (chip
 - Festival chip: the festival's short name (Coachella), not a performer. Add "Weekend 1/2" only if both weekends are on the map.
 - Squad tags: keep them on college list titles (matches code); pro teams get none. Update the docs to match.
 - Away/neutral: event titles stay "Home vs. Away". Only a favorite's own page and card use "at Brewers" / "vs. Oilers". Neutral sites show the city on the venue line.
-- Game number: show it when the feed has it, never guess. Update `docs/product-decisions.md:8` to match.
+- Game number: show it when the feed has it, never guess. Update `docs/product/product-decisions.md:8` to match.
 - If necessary: "If necessary" everywhere. Don't fade or mark the map chip (muted gray already means a small event); the flag shows on the sheet only.
 - List rows: Home and Favorites rows use the short name (`mapTitle`); only the sheet and event page use the official title.
 - Open: chip type icon on line 1 or line 2 (with Kylie).
@@ -299,7 +299,7 @@ Mockup: `links-tickets.png` (prices are EXAMPLE).
 - Team pages: a quiet "ESPN ›" header link from stored ESPN ids. Artist pages: "Official site ›" (needs artist homepage storage; TM attraction `externalLinks` sometimes has it). Only on team/artist pages, never on event pages.
 - **Why:** Kylie wants a path to tickets and accepts a slightly stale price. TM developer terms don't ban showing a price; caching is limited to "reasonable periods" and content must be removed within 24h on request. "+fees" keeps it honest.
 - **Decided against:** joining the TM affiliate program for now (commission makes the app look like a ticket business under the fee rules); a price on the chip card; resale prices.
-- Commit `ticketmaster-price-research.md` (in the bundle) to `docs/research/ticketmaster-price-research.md`.
+- Commit `ticketmaster-price-research.md` (in the bundle) to `docs/research/topics/ticketmaster-price-research.md`.
 
 **BLOCKER (add to the decisions/blockers doc, link to the research file):** The FTC Unfair or Deceptive Fees rule and California SB 478 require all-in prices wherever live-event ticket prices are shown, and `priceRanges` may not include fees. A free, unmonetized app is arguably outside these rules, but revisit before any monetization, affiliate deal, or scaled launch: go all-in or drop the number. Unverified: the TM branding guide (design.ticketmaster.com returned 401) and whether `priceRanges` includes fees. The earlier "never a buy button" note traces to no public clause.
 
@@ -314,7 +314,7 @@ Mockup: `log-watched.png`.
 - **Decided against:** a "How were you there?" prompt (corny), a 3-way toggle, a watch-party option.
 
 ## 9. Log decisions, commit mocks and research
-- Log every Oct 9–10 decision in the repo docs (`docs/product-decisions.md`, a design doc such as `docs/design/colors.md` for the tokens, `docs/ux-notes.md`, wherever fits) with the reason and rejected options, as written here.
+- Log every Oct 9–10 decision in the repo docs (`docs/product/product-decisions.md`, a design doc such as `docs/design/colors.md` for the tokens, `docs/product/ux-notes.md`, wherever fits) with the reason and rejected options, as written here.
 - Commit every mock in the bundle's `mocks/` folder to `docs/design/` and link them from the docs.
 - Commit the research file to `docs/research/` and link the blocker to it.
 

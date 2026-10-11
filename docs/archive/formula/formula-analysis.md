@@ -1,6 +1,6 @@
 # The rating formula: a fresh-eyes analysis (Oct 5, 2026)
 
-Written before building Step 8, after reading every rating document (`test-nights-and-ratings.md`, `docs/archive/formula/rating-model-draft.md`, `overlap-and-date-rating-v3.md`, the three second-opinion prompts) and the code (`src/data/read.ts`, `src/data/audience.ts`, the seed). The companion prompt for an outside review is `docs/archive/formula/formula-review-prompt.md`. Plain language throughout; numbers are the docs' placeholders.
+Written before building Step 8, after reading every rating document (`docs/reference/test-nights-and-ratings.md`, `docs/archive/formula/rating-model-draft.md`, `docs/reference/overlap-and-date-rating-v3.md`, the three second-opinion prompts) and the code (`src/data/read.ts`, `src/data/audience.ts`, the seed). The companion prompt for an outside review is `docs/archive/formula/formula-review-prompt.md`. Plain language throughout; numbers are the docs' placeholders.
 
 ## 1. What the formula is supposed to do
 

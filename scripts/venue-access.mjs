@@ -1,7 +1,7 @@
 // Hard-access measures for every 5,000+ venue, from the map tiles the app
 // already draws (OpenFreeMap, z14) and Open-Elevation. The same two numbers
 // in every city, so the "strained" flag is a rule, not a hand call
-// (docs/hard-access-oct6.md): relief within 500 m, and named public roads
+// (docs/product/hard-access-oct6.md): relief within 500 m, and named public roads
 // within 250 m of the building. Also counts roads within 500 m and the
 // distance to the nearest freeway, for the table. Part of the new-city
 // checklist: node scripts/venue-access.mjs
@@ -131,7 +131,7 @@ for (const [vid, metro, lat, lng, cap, strained, name] of venues) {
   for (const r of fw) for (const p of r.pts) fwDist = Math.min(fwDist, meters(here, p));
   const fwText = fwDist === Infinity ? '>1500' : String(Math.round(fwDist / 50) * 50);
   const rel = relief.get(vid) ?? -1;
-  // The rule (docs/hard-access-oct6.md): a hillside or canyon site with few streets at the gate.
+  // The rule (docs/product/hard-access-oct6.md): a hillside or canyon site with few streets at the gate.
   const rule = rel >= 40 && n250 <= 4;
   lines.push([vid, metro, cap, strained, n500, n250, fwText, rel, rule ? 1 : 0, name].join('\t'));
   console.log(vid.padEnd(28), String(n500).padStart(4), String(n250).padStart(4), fwText.padStart(5), String(rel).padStart(6), rule ? '  yes' : '    —');
@@ -145,7 +145,7 @@ const rows = lines.slice(1).map((l) => l.split('\t'));
 const index = `// Hard-access measures per venue, from scripts/venue-access.mjs (the map
 // tiles and a public elevation service). Do not edit by hand; rerun the
 // script when venues are added. The rule that turns these into the
-// "strained" flag lives in venues.ts (docs/hard-access-oct6.md).
+// "strained" flag lives in venues.ts (docs/product/hard-access-oct6.md).
 
 export interface VenueAccessRow {
   venueId: string;

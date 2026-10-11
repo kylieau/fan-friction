@@ -1,4 +1,4 @@
-// Folds the researched promotion history (docs/promo-history-rows.csv, Kylie's
+// Folds the researched promotion history (docs/checks/promo-history-rows.csv, Kylie's
 // research, Oct 7, 2026) into the six MLB teams' attendance files for 2021–2024,
 // the seasons MLB's own feed does not list promotions for. Each matched game gets
 // promotions: [{ type, name, source: 'research' }] in the feed's shape, so
@@ -40,7 +40,7 @@ function parseCsv(text) {
   return rest.filter((r) => r.length === h.length).map((r) => Object.fromEntries(h.map((k, i) => [k, r[i]])));
 }
 
-const rows = parseCsv(await readFile(path.join(root, 'docs', 'promo-history-rows.csv'), 'utf8')).filter((r) => r.league === 'MLB');
+const rows = parseCsv(await readFile(path.join(root, 'docs', 'checks', 'promo-history-rows.csv'), 'utf8')).filter((r) => r.league === 'MLB');
 for (const [team, [metroId, teamId]] of Object.entries(TEAMS)) {
   const file = path.join(root, 'data', 'attendance', metroId, `${teamId}.json`);
   const parsed = JSON.parse(await readFile(file, 'utf8'));

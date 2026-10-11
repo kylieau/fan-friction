@@ -1,9 +1,9 @@
-// The held-out check for expected draws (docs/archive/research/expected-draw-sports-research-answer.md §4;
+// The held-out check for expected draws (docs/research/topics/expected-draw-sports-research-answer.md §4;
 // Kylie, Oct 6: attendance on held-out dates is the only accuracy target).
 // For each team's last two seasons on file, every home game is predicted from
 // earlier data only, then compared with the crowd that was announced. Each step
 // stays, per league, only if it beats the step before it.
-//   node scripts/expected-draw-check.mjs            (prints, and writes docs/expected-draw-check.md)
+//   node scripts/expected-draw-check.mjs            (prints, and writes docs/checks/expected-draw-check.md)
 //
 // Steps, each falling back to the one before when it has nothing to say, and to
 // the building's capacity when there is no estimate at all (what the app does):
@@ -91,7 +91,7 @@ function winShare(g) {
   return r.wins / (r.wins + r.losses);
 }
 
-// ---- Round 2 (pre-registered Oct 7 in docs/expected-draw-decisions-oct7.md) ----
+// ---- Round 2 (pre-registered Oct 7 in docs/product/expected-draw-decisions-oct7.md) ----
 const MLB_IDS = { dodgers: 119, angels: 108, padres: 135, mariners: 136, yankees: 147, mets: 121 };
 const CROSSOVER = /hello kitty|sanrio|anime|naruto|one piece|dragon ball|pok[eé]mon|star wars|marvel|disney|peanuts|snoopy|sesame|mario|nintendo|jujutsu|demon slayer|my hero|attack on titan|gundam|sailor moon|squishmallow|care bears|barbie|transformers|harry potter|lego/i;
 const SPECIAL_TICKET = /special event ticket|ticket required|theme ticket|ticket package/i;
@@ -496,7 +496,7 @@ try {
   say();
   say('## Round 2: promotions by kind and top teams (MLB)');
   say();
-  say('Pre-registered Oct 7 (docs/expected-draw-decisions-oct7.md). Against the app\'s rule; each line scores only the games carrying that kind or flag. MLB\'s feed lists promotions only from 2025, so promotion lifts for 2026 come from 2025 alone, and 2025 gets none.');
+  say('Pre-registered Oct 7 (docs/product/expected-draw-decisions-oct7.md). Against the app\'s rule; each line scores only the games carrying that kind or flag. MLB\'s feed lists promotions only from 2025, so promotion lifts for 2026 come from 2025 alone, and 2025 gets none.');
   say();
   const mlb = rows.filter((r) => r.league === 'MLB');
   const line = (label, set) => {
@@ -577,7 +577,7 @@ try {
     }
   }
 
-  await writeFile(path.join(root, 'docs', 'expected-draw-check.md'), `${lines.join('\n')}\n`);
+  await writeFile(path.join(root, 'docs', 'checks', 'expected-draw-check.md'), `${lines.join('\n')}\n`);
 } finally {
   await server.close();
 }

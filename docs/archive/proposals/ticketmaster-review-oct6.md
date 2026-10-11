@@ -1,6 +1,6 @@
 # Ticketmaster Discovery API: what the free key allows (Oct 6, 2026)
 
-Step 7, slice (a) of `docs/big-picture-plan-oct6.md`: read the terms before anyone signs up. Read from Ticketmaster's developer portal on Oct 6, 2026 (getting-started page and terms of use). Nothing is built or connected.
+Step 7, slice (a) of `docs/product/big-picture-plan-oct6.md`: read the terms before anyone signs up. Read from Ticketmaster's developer portal on Oct 6, 2026 (getting-started page and terms of use). Nothing is built or connected.
 
 ## The key
 - **Free.** Register on developer.ticketmaster.com; Discovery API access is granted on registration. No card.
@@ -13,7 +13,7 @@ Step 7, slice (a) of `docs/big-picture-plan-oct6.md`: read the terms before anyo
 | **Caching:** store Event Content only "for reasonable periods in order to provide the service you are providing" | Long-term storage of Ticketmaster's content (images, descriptions, prices, links) is out. The facts of a night (who played, where, when) are what the log and the stamp need. | The nightly job keeps only the facts: name, date, start time, venue, performer and the Ticketmaster event id. No images, prices, descriptions or deep links are stored. Those facts are what the schedule archive already holds for sports. |
 | **Removal within 24 hours** when a content owner asks | A listing may have to go. | The catalog is one table; a removal is a row delete, and the nightly job will not re-add an id on a block list. |
 | **Privacy disclosure** "through a privacy policy or otherwise displayed in the footer of each page" | We must say how visitor data is collected and used. | Settings already carries the data credits; add a short privacy line there (what the app stores: your log, in your account or on your phone; no location; no tracking). 🚩 Not a cost. Worth having anyway. |
-| **No revenue** from the API | Fine today. | The app is free and non-commercial. A public launch or any revenue reopens this, as it does for MLB's feed and Open-Meteo (`docs/build-brief.md`, cost milestones). |
+| **No revenue** from the API | Fine today. | The app is free and non-commercial. A public launch or any revenue reopens this, as it does for MLB's feed and Open-Meteo (`docs/product/build-brief.md`, cost milestones). |
 | **No replica** of Ticketmaster's experience | We don't sell or list tickets. | A listing shows the night and its read, never a buy button. A text link to the event page is allowed; it is optional for us. |
 | **Branding guidelines** | Required only to raise the quota. | Not needed at our volume. Revisit if we ever ask for more. |
 

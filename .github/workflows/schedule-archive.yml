@@ -64,7 +64,7 @@ jobs:
         run: node scripts/results-fetch.mjs
 
       # Expected draws from the night's results: this season's level and the opponent
-      # ratios move as games are played (docs/expected-draw-decisions-oct7.md).
+      # ratios move as games are played (docs/product/expected-draw-decisions-oct7.md).
       - name: Recompute expected draws
         id: draws
         continue-on-error: true

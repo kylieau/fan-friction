@@ -1,6 +1,6 @@
 # Distance discount in Crowd fight: a proposal
 
-Written Oct 7, 2026, right after the Bay Area build, as Kylie asked (Oct 7: "distance discount as a proposal: yes… after Bay Area, as long as we don't forget it"). Nothing here is built. Approved in direction Oct 6 (BACKLOG, "Distance discount in Crowd fight"); the numbers below are placeholders for her to react to. Revised the same day after a second opinion (`docs/archive/second-opinions/distance-discount-second-opinion-oct7.md`): **B is a testable default, not a validated rule.** The example nights show how the rule moves scores; only the attendance check can show whether the moves are more accurate.
+Written Oct 7, 2026, right after the Bay Area build, as Kylie asked (Oct 7: "distance discount as a proposal: yes… after Bay Area, as long as we don't forget it"). Nothing here is built. Approved in direction Oct 6 (BACKLOG, "Distance discount in Crowd fight"); the numbers below are placeholders for her to react to. Revised the same day after a second opinion (`docs/research/second-opinions/distance-discount-second-opinion-oct7.md`): **B is a testable default, not a validated rule.** The example nights show how the rule moves scores; only the attendance check can show whether the moves are more accurate.
 
 ## The flaw, in one night
 
@@ -57,7 +57,7 @@ Per-city calibration later, from work others have done (Kylie, Oct 6): Nielsen T
 
 ## Result of the check (Oct 7, 2026)
 
-Kylie locked all three answers (Oct 7: "agree with all"), so the check ran first: `scripts/distance-check.mjs` → `docs/distance-check.md`. **It did not pass.** On 6,318 home games across six cities (2023–2026, sellouts set aside), games with a competing big game the same night drew the same against their expected draw as games with none: median −1.5% with a competitor within 15 miles, +0.4% with none, +1.0% with the nearest 15–45 miles out. On untouched (odd) seasons, ignoring competitors predicts crowds as well as counting them at full weight, and no fade (A, B, or the pair the even seasons chose) does better than either. The fitted slopes are slightly positive: nights with company draw a touch *more*, not less.
+Kylie locked all three answers (Oct 7: "agree with all"), so the check ran first: `scripts/distance-check.mjs` → `docs/checks/distance-check.md`. **It did not pass.** On 6,318 home games across six cities (2023–2026, sellouts set aside), games with a competing big game the same night drew the same against their expected draw as games with none: median −1.5% with a competitor within 15 miles, +0.4% with none, +1.0% with the nearest 15–45 miles out. On untouched (odd) seasons, ignoring competitors predicts crowds as well as counting them at full weight, and no fade (A, B, or the pair the even seasons chose) does better than either. The fitted slopes are slightly positive: nights with company draw a touch *more*, not less.
 
 What that means, and what it does not:
 - **Nothing is built.** The distance discount has no effect to discount.
@@ -66,4 +66,4 @@ What that means, and what it does not:
 - **Open for Kylie:** keep Crowd fight as it is (its read is still a plain statement of how many seats are in play at once, which is what she asked for on Oct 5), and revisit the discount when a season of concert listings is on file. Not reopened: the formula's constants stay as they are; no tuning to close this.
 
 
-Status: closed, checked Oct 7, 2026 (docs/distance-check.md); no effect found, so not built, and Kylie accepted that (per MEMORY_HANDOFF.md); archived in the Oct 8, 2026 docs tidy.
+Status: closed, checked Oct 7, 2026 (docs/checks/distance-check.md); no effect found, so not built, and Kylie accepted that (per MEMORY_HANDOFF.md); archived in the Oct 8, 2026 docs tidy.

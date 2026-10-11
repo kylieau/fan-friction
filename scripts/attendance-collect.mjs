@@ -188,7 +188,7 @@ const VENUE_BY_NAME = {
   'moglia stadium at jack coffey field': 'coffey-field',
   'carnesecca arena': 'carnesecca-arena',
   'icahn stadium': 'icahn-stadium',
-  // Atlanta (docs/archive/research/atlanta-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  // Atlanta (docs/research/city-builds/atlanta/atlanta-venue-table-answer.md), as ESPN writes them on each team's own schedule.
   'mercedes-benz stadium': 'mercedes-benz-stadium',
   'state farm arena': 'state-farm-arena',
   'gateway center': 'gateway-center-arena',
@@ -201,7 +201,7 @@ const VENUE_BY_NAME = {
   'mccamish pavilion': 'mccamish-pavilion',
   'vystar arena': 'ksu-convocation-center',
   'ksu convocation center': 'ksu-convocation-center',
-  // Bay Area (docs/archive/research/bay-area-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  // Bay Area (docs/research/city-builds/bay-area/bay-area-venue-table-answer.md), as ESPN writes them on each team's own schedule.
   'chase center': 'chase-center',
   "levi's stadium": 'levis-stadium',
   'sap center at san jose': 'sap-center',
@@ -216,7 +216,7 @@ const VENUE_BY_NAME = {
   'maples pavilion': 'maples-pavilion',
   'provident credit union event center': 'provident-event-center',
   'oracle park': 'oracle-park',
-  // Chicago (docs/archive/research/chicago-venue-table-answer.md), as ESPN writes them on each team's own schedule.
+  // Chicago (docs/research/city-builds/chicago/chicago-venue-table-answer.md), as ESPN writes them on each team's own schedule.
   'united center': 'united-center',
   'wintrust arena': 'wintrust-arena',
   'soldier field': 'soldier-field',
@@ -230,7 +230,7 @@ const VENUE_BY_NAME = {
   'rate field': 'rate-field',
   'seatgeek stadium': 'seatgeek-stadium',
   'toyota park': 'seatgeek-stadium',
-  // Dallas–Fort Worth (docs/archive/research/dallas-fort-worth-venue-table-answer.md), as ESPN writes them.
+  // Dallas–Fort Worth (docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-venue-table-answer.md), as ESPN writes them.
   'at&t stadium': 'att-stadium',
   'american airlines center': 'american-airlines-center',
   'college park center': 'college-park-center',
@@ -476,7 +476,7 @@ const only = process.argv[2];
 let failures = 0;
 for (const team of [...MLB_TEAMS, ...ESPN_TEAMS, ...HOCKEYTECH_TEAMS]) {
   if (only && team.teamId !== only) continue;
-  // Each team's file lives in its city's folder (docs/new-city-checklist.md).
+  // Each team's file lives in its city's folder (docs/reference/new-city-checklist.md).
   const METRO = team.metroId ?? DEFAULT_METRO;
   const dir = path.join(root, 'data', 'attendance', METRO);
   await mkdir(dir, { recursive: true });

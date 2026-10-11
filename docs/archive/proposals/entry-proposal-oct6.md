@@ -1,12 +1,12 @@
 # Proposal: the entry you can edit, and nights you type in yourself
 
-Oct 6, 2026. Step 1 of `docs/big-picture-plan-oct6.md`. Round 1 was reviewed by Kylie the same day; round 2 below carries her changes. Nothing here is built yet.
+Oct 6, 2026. Step 1 of `docs/product/big-picture-plan-oct6.md`. Round 1 was reviewed by Kylie the same day; round 2 below carries her changes. Nothing here is built yet.
 
 ## Kylie's round-1 answers (Oct 6)
 1. A You row opens the entry, yes, **but** the entry should mostly be the event page's content plus your own layer, and possibly a Letterboxd-style review.
 2. Add the TV station when the event was televised. The event page will need pre-event and post-event forms.
 3. The "+" for adding a night is fine, **but** a big enough hand-typed event might become something other people can see and add.
-4. The logging bar is locked as the review words it: anything by hand; about 1,000+ pre-listed; 5,000+ feeds friction. (`AGENTS.md`, `docs/direction.md` status note and `BACKLOG.md` updated.)
+4. The logging bar is locked as the review words it: anything by hand; about 1,000+ pre-listed; 5,000+ feeds friction. (`AGENTS.md`, `docs/product/direction.md` status note and `BACKLOG.md` updated.)
 
 ## The problem
 The log is the product, but an entry today is one tap. Kylie's migrated nights carry an outcome, a starter, a promo and a note; nobody else can write any of those, and nothing can be changed or removed. And only a listed event can be logged: a club show, an away game or a festival the catalog never heard of has no way in.
@@ -89,4 +89,4 @@ Photos 🚩. Automatic scores (step 2). Re-linking other hand-typed nights to ca
 ## Locked Oct 6 (round 3)
 - **One piece of prose per night: Review.** Note is folded into Review on load; nothing writes a note any more. Review follows the visibility switch (Only me by default). With stays its own private line.
 - **Results come from the nightly 12:15am Pacific run**, one pass for the day's games, not a per-event timer. Starters and promos come from the same feeds before the game. This is the first piece of step 2.
-- **Sport list:** out for a second opinion, `docs/archive/second-opinions/sport-list-second-opinion-prompt.md`. The form keeps its placeholder list until Kylie decides.
+- **Sport list:** out for a second opinion, `docs/research/second-opinions/sport-list-second-opinion-prompt.md`. The form keeps its placeholder list until Kylie decides.

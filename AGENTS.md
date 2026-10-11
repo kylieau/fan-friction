@@ -4,7 +4,7 @@
 A personal log of live events people attended (sports and concerts), with a
 friction read (crowd fight and gridlock) stamped on each night. Not a game,
 social network, traffic app, or rewards program. Full reasoning:
-docs/direction.md. Read it before making any product decision.
+docs/product/direction.md. Read it before making any product decision.
 
 ## Starting and ending a session (every tool)
 Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which tool it was last synced) and `BACKLOG.md` (parked work). When Kylie says "resume the handoff" or "sync the handoff", follow `handoff/resume.md` or `handoff/sync.md`. Claude Code and Cursor also have `/resume-handoff` and `/sync-handoff`, which only point at those files. Edit the procedure there, not in a tool's own folder.
@@ -21,14 +21,14 @@ Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which 
   Rooms under about 5,000 are on the map, muted, with no friction label (Kylie, Oct 9).
 - The Map's look is not locked. Propose a Map change, then wait.
 - No points, leaderboards, open posting, public photo walls, or navigation.
-  See the Guardrails section of docs/direction.md.
+  See the Guardrails section of docs/product/direction.md.
 
 ## Working agreements (carried over from Claude's private notes so every tool follows them)
-- **Build for every city, not just LA** (Kylie, Oct 2 and Oct 6, 2026). Phrase rules in city-neutral terms (metro, venue, sport and genre tags), and treat LA nights as test cases, not the definition. LA is the only city built by hand, once; every later city rides `docs/new-city-checklist.md` plus the scripts. A feature that only works because someone hand-tuned it for LA isn't done. Prefer a computed rule over a hand flag, and ask research prompts to cover other metros and countries.
+- **Build for every city, not just LA** (Kylie, Oct 2 and Oct 6, 2026). Phrase rules in city-neutral terms (metro, venue, sport and genre tags), and treat LA nights as test cases, not the definition. LA is the only city built by hand, once; every later city rides `docs/reference/new-city-checklist.md` plus the scripts. A feature that only works because someone hand-tuned it for LA isn't done. Prefer a computed rule over a hand flag, and ask research prompts to cover other metros and countries.
 - **Check provenance before calling anything Kylie's.** Several sessions and tools write these docs, and check notes and handoff lines are often an assistant's own words. Call something "Kylie's rule" or "locked" only when her name and a date sit beside it ("Kylie, Oct 6"). Otherwise say "a note in X". On Oct 7, 2026 an assistant's check note was promoted to a rule and presented to her as hers; she had decided the opposite.
 - **Reconcile small source gaps with judgment** (Kylie, Oct 3, 2026). When two sources differ slightly (8:00 vs. 8:15) or measure different things (doors vs. stage time), pick the sensible reading, record which kind it is, and move on. Leave a field blank only when there is no source or the conflict really changes the answer.
 - **Ratings are evidence, never a target** (handoff, Oct 6–7). Never report a gap from anyone's hand ratings as progress, and never tune a constant to close one. Attendance on held-out dates is the only accuracy target.
-- **UX notes:** sort each note as structural (what a screen shows, flow, tabs, naming, button placement; raise before the next step that reuses those pieces) or polish (colors, spacing, wording; batch it later). The running list is `docs/ux-notes.md`. At the start of a resumed session, ask Kylie for new UX notes before starting new work.
+- **UX notes:** sort each note as structural (what a screen shows, flow, tabs, naming, button placement; raise before the next step that reuses those pieces) or polish (colors, spacing, wording; batch it later). The running list is `docs/product/ux-notes.md`. At the start of a resumed session, ask Kylie for new UX notes before starting new work.
 - **Private material stays out of the repo.** Tester names, emails, attended lists and SQL live in the git-ignored `private/` folder. Public event facts can go in `docs/`. Refer to "the tester" everywhere else: no name in a file, a file path, a folder name or a commit message. (A first name once slipped into `BACKLOG.md` and `MEMORY_HANDOFF.md` and is in git history; see BACKLOG.)
 
 ## Working in this repo
@@ -40,12 +40,12 @@ Start from `MEMORY_HANDOFF.md` (the current snapshot; it says when and by which 
   - `src/map/` MapLibre map, pins, chips
   - `src/lib/` small helpers (dates, titles, sheet drag, view)
   - `src/config/` app name, metros, score labels, theme
-  - `docs/` product decisions and what's still in play; `docs/research-queue/` prompts awaiting answers; `docs/reviews/gap-reviews/` and `docs/reviews/tester-readiness-reviews/` independent reviews of the app and of tester readiness (saved with author, date and time; see their READMEs; none is a decision); `docs/archive/` finished research (see `docs/README.md`); `design/wireframes/` older mockups
+  - `docs/` (map in `docs/README.md`): `product/` decisions and plans; `reference/` the formula, data sources, new-city checklist, test nights; `checks/` files the scripts write; `research/` every research prompt and answer (`city-builds/<city>/`, `topics/`, `events-and-dates/`, `second-opinions/`); `reviews/` independent reviews of the app and of tester readiness (saved with author, date and time; see their READMEs; none is a decision); `design/` approved mockups; `archive/` old proposals and formula history
   - `data/schedule-archive/` nightly Los Angeles listings (not shown in the app)
   - `MEMORY_HANDOFF.md` and `BACKLOG.md` in the root: current state and deferred work
 
 ## Research docs
-New research prompts go in `docs/research-queue/`; save answers beside the prompt's name in `docs/`. When an answer is folded into the decisions, add a line `Status: closed, <where it went>, <date>` to it. The pre-commit hook then archives the pair and fixes links (`npm run docs:tidy` previews). Don't move docs by hand: links to them would break.
+New research prompts go in `docs/research/`: `city-builds/<city>/` for a city's city-type and venue-table briefs, `topics/` for the rest. Save each answer beside its prompt, named after it (`x-prompt.md` gets `x-answer.md`; a second model's answer takes a `-claude` or `-codex` suffix). When an answer is folded into the decisions, add a line `Status: closed, <where it went>, <date>` to it. Research and reviews stay where they are when closed. A closed doc in `docs/product/` moves to `docs/archive/proposals/` at the next commit (`npm run docs:tidy` previews). Don't move docs by hand: links to them would break.
 
 ## Multiple agents
 This repo is worked on in Claude Code, Cursor and Codex. Before changing shared
@@ -67,7 +67,7 @@ questions when anything is unclear.
 
 # Project background and working rules (carried over from the earlier CLAUDE.md)
 
-The section below is older background. Where it conflicts with `docs/direction.md`, direction.md wins. Where a later lock in `docs/product-review-decisions.md` or `MEMORY_HANDOFF.md` differs from direction.md, the later lock wins.
+The section below is older background. Where it conflicts with `docs/product/direction.md`, direction.md wins. Where a later lock in `docs/product/product-review-decisions.md` or `MEMORY_HANDOFF.md` differs from direction.md, the later lock wins.
 Known stale spots: the intro below describes the purpose as answering the
 "fake fans" claim, and says "5k+ events" (now: anything by hand, ~1,000+ pre-listed, friction at 5,000+).
 
@@ -103,12 +103,12 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 ## Read these first
 - `MEMORY_HANDOFF.md`: the current snapshot. Read it before building.
 - `BACKLOG.md`: parked work and the approved plan.
-- `docs/direction.md`: the Oct 4, 2026 direction (the log leads). Read it before any product decision. A status note at the bottom records what has been locked since. Where a later lock differs, `docs/product-review-decisions.md` is newer.
-- `docs/product-review-decisions.md`: Kylie's Oct 4 decisions on first screen, forecast-to-record, Compare, Famous nights, size thresholds and accounts, plus the Oct 5 locks. Newer than direction.md where they differ.
-- `docs/build-brief.md`: what to build, decisions already made, open questions.
-- `docs/product-decisions.md`: the product rules behind each screen.
-- `docs/test-nights-and-ratings.md`: the 13 seeded nights, the rating recipe and the ratings to hardcode.
-- `docs/kylie-logs.md` and `docs/researched-events.md`: real sample data for Your nights and event screens.
+- `docs/product/direction.md`: the Oct 4, 2026 direction (the log leads). Read it before any product decision. A status note at the bottom records what has been locked since. Where a later lock differs, `docs/product/product-review-decisions.md` is newer.
+- `docs/product/product-review-decisions.md`: Kylie's Oct 4 decisions on first screen, forecast-to-record, Compare, Famous nights, size thresholds and accounts, plus the Oct 5 locks. Newer than direction.md where they differ.
+- `docs/product/build-brief.md`: what to build, decisions already made, open questions.
+- `docs/product/product-decisions.md`: the product rules behind each screen.
+- `docs/reference/test-nights-and-ratings.md`: the 13 seeded nights, the rating recipe and the ratings to hardcode.
+- `docs/product/kylie-logs.md` and `docs/reference/researched-events.md`: real sample data for Your nights and event screens.
 - `design/wireframes/`: the current mockups (HTML boards, example night Fri Oct 25, 2024). Match their layout and feel; the palette and fonts are in the brief.
 
 ## Working rules
@@ -125,7 +125,7 @@ Kylie is a lawyer, not an engineer. She is the product owner and has made the pr
 - Keep M2/M3 topics (public launch, licensing, revenue) out of the conversation unless Kylie raises them.
 
 ## Cost and flexibility
-- **Keep it free until paying is unavoidable.** Any step that would start a cost (a paid plan, a developer fee, a credit card on file, a domain) is a milestone: flag it clearly with 🚩 and get Kylie's OK first. The running list is under "Cost milestones" in `docs/build-brief.md`.
+- **Keep it free until paying is unavoidable.** Any step that would start a cost (a paid plan, a developer fee, a credit card on file, a domain) is a milestone: flag it clearly with 🚩 and get Kylie's OK first. The running list is under "Cost milestones" in `docs/product/build-brief.md`.
 - **Decisions are not set in stone.** Kylie gets second opinions from other AI models and wants pushback. If a decision in these docs (a vendor, a tool, a product rule) looks wrong, say so and recommend something better.
 - **Build so things can be swapped.** Keep each outside service (map, each data source, where data is saved) and the app name behind its own small, replaceable piece, so changing one doesn't mean rebuilding.
 

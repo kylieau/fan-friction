@@ -1,6 +1,6 @@
 # Design mockups
 
-Kylie's approved mockups from the Oct 9–10, 2026 Mock Mosaic, saved from her Oct 10 bundle. The decisions they illustrate are in `docs/reviews/build-notes-2-oct10.md` (the build plan) and `docs/product-decisions.md` (the rules, with reasons and rejected options). Data in a mock marked EXAMPLE is illustrative, not real.
+Kylie's approved mockups from the Oct 9–10, 2026 Mock Mosaic, saved from her Oct 10 bundle. The decisions they illustrate are in `docs/reviews/build-notes-2-oct10.md` (the build plan) and `docs/product/product-decisions.md` (the rules, with reasons and rejected options). Data in a mock marked EXAMPLE is illustrative, not real.
 
 | Mock | Shows | Section in build notes 2 |
 |---|---|---|
