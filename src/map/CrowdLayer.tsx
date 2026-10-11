@@ -142,11 +142,11 @@ export function CrowdLayer({ points, selectedId, onSelect }: Props) {
       el.className = `crowd-label is-hidden${p.muted ? ' is-muted' : ''}`;
       el.dataset.id = p.event.id;
       const name = escapeHtml(mapTitle(p.event, entry));
-      // Line 2 opens with a one-color type icon in Dodger blue (Kylie, Oct 9, 3.18; mockup 07 option C).
+      // Line 1 opens with the one-color type icon, then the name (Kylie, Oct 9: chip L1b); line 2 is time · crowd.
       el.innerHTML =
         `<span class="crowd-line">` +
-        `<span class="crowd-name">${name}</span>` +
-        `<span class="crowd-meta">${typeIconSvg(p.event)}<span>${escapeHtml(chipDetail(p))}</span></span>` +
+        `<span class="crowd-name">${typeIconSvg(p.event)}<span class="crowd-name-text">${name}</span></span>` +
+        `<span class="crowd-meta"><span>${escapeHtml(chipDetail(p))}</span></span>` +
         `</span>` +
         `<button type="button" class="crowd-more is-hidden" aria-label="More events here"></button>`;
       el.addEventListener('click', (ev) => {

@@ -1,10 +1,10 @@
 // One-color type icons for the map chips (Kylie, Oct 9, 3.18): line style like the
-// app's other icons (src/components/Icons.tsx), 11px, Dodger blue, before the time.
+// app's other icons (src/components/Icons.tsx), 10px, Dodger blue, before the name (chip L1b, Oct 9).
 // Drawn here, not taken from an icon font, so every icon on screen matches.
 
 import type { CrowdEvent } from '../data';
 
-const ATTRS = 'width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#005A9C" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
+const ATTRS = 'width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#005A9C" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
 
 const ICONS: Record<string, string> = {
   // a ball with two seams
