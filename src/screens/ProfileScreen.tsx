@@ -1,5 +1,5 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { scoreBand, scoreLabel } from '../config/scoreLabels';
@@ -21,7 +21,7 @@ import {
   unfollow,
 } from '../data';
 import { loggedDateLabel } from '../lib/dates';
-import { eventPath } from '../lib/view';
+import { eventPath, type BackTo } from '../lib/view';
 
 /**
  * Someone's page as others see it: name, three stats, and the entries they allow
@@ -31,6 +31,8 @@ import { eventPath } from '../lib/view';
  */
 export function ProfileScreen() {
   const { handle = '' } = useParams();
+  // Back goes to the page this was opened from, with its name (R08); a pasted link goes to You.
+  const back: BackTo = (useLocation().state as { back?: BackTo } | null)?.back ?? { to: '/you', label: 'You' };
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [profile, setProfile] = useState<Profile | null | undefined>(undefined);
   const [entries, setEntries] = useState<Entry[]>([]);
@@ -74,8 +76,8 @@ export function ProfileScreen() {
   if (!profile) {
     return (
       <div className="screen page">
-        <Link to="/you" className="back-link">
-          <ChevronDown /> You
+        <Link to={back.to} className="back-link">
+          <ChevronDown /> {back.label}
         </Link>
         <h1 className="page-title">No one here</h1>
         <p className="you-fine">There's no profile at /p/{handle}. Check the link.</p>
@@ -100,16 +102,16 @@ export function ProfileScreen() {
       if (result === 'pending' || result === 'approved') setStatus(result);
       else setNote(result);
     } else {
-      await unfollow(profile.id);
-      setStatus('none');
+      // A declined request cannot be cancelled and still reads "Requested" (R03).
+      setStatus(await unfollow(profile.id));
     }
     setBusy(false);
   };
 
   return (
     <div className="screen page">
-      <Link to="/you" className="back-link">
-        <ChevronDown /> You
+      <Link to={back.to} className="back-link">
+        <ChevronDown /> {back.label}
       </Link>
 
       <div className="profile-head">
@@ -164,13 +166,7 @@ export function ProfileScreen() {
         {entries.length === 0 ? (
           <div className="card empty-card">
             <div className="card-title">
-              {mine
-                ? 'No events yet. Find one on the map.'
-                : profile.visibility === 'anyone'
-                  ? 'No events yet.'
-                  : profile.visibility === 'approved'
-                    ? 'Events are shared with approved followers.'
-                    : 'This log is private.'}
+              {mine ? 'No events yet. Find one on the map.' : 'No events to show.'}
             </div>
           </div>
         ) : (
@@ -202,6 +198,7 @@ function ProfileEntryRow({ entry, rating }: { entry: Entry; rating: number | nul
       <span className="log-main">
         <span className="log-title">{entry.title}</span>
         <span className="log-facts">{facts}</span>
+        {entry.review && <span className="log-review">{entry.review}</span>}
       </span>
     </>
   );

@@ -1,5 +1,6 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { backFrom } from '../lib/view';
 import { ChevronDown } from '../components/Icons';
 import { follow, followers, following, getAccount, removeFollower, subscribeAccount, unfollow, type Person } from '../data';
 
@@ -14,6 +15,8 @@ export function PeopleScreen() {
   const tab = params.get('tab') === 'following' ? 'following' : 'followers';
   const [list, setList] = useState<Person[] | null>(null);
   const [asking, setAsking] = useState<string | null>(null);
+  const location = useLocation();
+  const back = backFrom(location.pathname, location.search);
 
   const load = async () => {
     setList(await (tab === 'followers' ? followers() : following()));
@@ -53,7 +56,7 @@ export function PeopleScreen() {
         <ul className="log-list">
           {list.map((p) => (
             <li key={p.profile.id} className="request-row">
-              <Link to={p.profile.handle ? `/p/${p.profile.handle}` : '#'} className="log-main">
+              <Link to={p.profile.handle ? `/p/${p.profile.handle}` : '#'} state={{ back }} className="log-main">
                 <span className="log-title">{name(p)}</span>
                 {p.profile.handle && <span className="log-facts">@{p.profile.handle}</span>}
               </Link>

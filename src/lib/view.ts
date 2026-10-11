@@ -119,3 +119,18 @@ export function getExploreView(): ExploreView {
 export function setExploreView(view: ExploreView) {
   setPref('explore-view', view);
 }
+
+/** Where a profile page's back link returns to, from the page it was opened on (R08). */
+export interface BackTo {
+  to: string;
+  label: string;
+}
+
+export function backFrom(pathname: string, search = ''): BackTo {
+  const to = `${pathname}${search}`;
+  if (pathname.startsWith('/you/people')) return { to, label: 'People' };
+  if (pathname.startsWith('/you')) return { to, label: 'You' };
+  if (pathname === '/' || pathname.startsWith('/home')) return { to, label: 'Home' };
+  if (pathname.startsWith('/p/')) return { to, label: 'Back' };
+  return { to, label: 'Back' };
+}

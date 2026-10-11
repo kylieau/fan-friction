@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { ReadTile } from '../components/ReadTile';
@@ -7,6 +7,7 @@ import {
   approveFollow,
   canSignIn,
   declineFollow,
+  declinedRequests,
   entryFacts,
   EXAMPLE_FEED,
   filterChoices,
@@ -36,7 +37,7 @@ import { YourYear } from '../components/YourYear';
 import { GearIcon, PlusIcon } from '../components/Icons';
 import { loggedDateLabel, shortLocalDate, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
-import { datePath, entryPath, eventPath } from '../lib/view';
+import { datePath, entryPath, eventPath, backFrom } from '../lib/view';
 
 const TOP = 8;
 
@@ -54,13 +55,20 @@ export function YouScreen() {
   const [tab, setTab] = useState<'events' | 'stats' | 'friends'>(() => (params.get('tab') === 'following' ? 'friends' : params.get('tab') === 'stats' ? 'stats' : 'events'));
   const [handle, setHandle] = useState<string | null>(null);
   const [requests, setRequests] = useState<FollowRequest[]>([]);
+  const [declined, setDeclined] = useState<FollowRequest[]>([]);
+  const [showDeclined, setShowDeclined] = useState(false);
+  const location = useLocation();
+  const back = backFrom(location.pathname, location.search);
   const [feed, setFeed] = useState<FeedItem[] | null>(null);
   const plansAhead = useMemo(() => upcomingPlans(todayIn(DEFAULT_METRO), log), [log]);
 
   const decide = async (followerId: string, yes: boolean) => {
     if (yes) await approveFollow(followerId);
     else await declineFollow(followerId);
+    const row = requests.find((r) => r.followerId === followerId) ?? declined.find((r) => r.followerId === followerId);
     setRequests((list) => list.filter((r) => r.followerId !== followerId));
+    // A decline keeps the row (R03): it can still be approved from here later.
+    setDeclined((list) => (yes ? list.filter((r) => r.followerId !== followerId) : row && !list.some((r) => r.followerId === followerId) ? [...list, row] : list));
   };
 
   useEffect(() => {
@@ -72,6 +80,7 @@ export function YouScreen() {
     }
     getMyProfile().then((profile) => current && setHandle(profile?.handle ?? null));
     followRequests().then((list) => current && setRequests(list));
+    declinedRequests().then((list) => current && setDeclined(list));
     followingFeed().then((list) => current && setFeed(list));
     return () => {
       current = false;
@@ -186,7 +195,7 @@ export function YouScreen() {
         </p>
       )}
 
-      {requests.length > 0 && (
+      {(requests.length > 0 || declined.length > 0) && (
         <section className="you-block" aria-labelledby="requests-heading">
           <h2 id="requests-heading" className="you-heading">
             Wants to follow you
@@ -194,7 +203,7 @@ export function YouScreen() {
           <ul className="log-list">
             {requests.map((r) => (
               <li key={r.followerId} className="request-row">
-                <Link to={r.handle ? `/p/${r.handle}` : '#'} className="log-main">
+                <Link to={r.handle ? `/p/${r.handle}` : '#'} state={{ back }} className="log-main">
                   <span className="log-title">{r.displayName ?? r.handle ?? 'Someone'}</span>
                   {/* What approval gives, in one line (Kylie, Oct 9, 3.24). */}
                   <span className="log-facts">They'll see your logged events and plans.</span>
@@ -209,6 +218,27 @@ export function YouScreen() {
                 </span>
               </li>
             ))}
+            {declined.length > 0 && (
+              <li className="request-row request-declined">
+                <button type="button" className="link-button" onClick={() => setShowDeclined((v) => !v)} aria-expanded={showDeclined}>
+                  Declined · {declined.length} {showDeclined ? '▴' : '▾'}
+                </button>
+              </li>
+            )}
+            {showDeclined &&
+              declined.map((r) => (
+                <li key={r.followerId} className="request-row">
+                  <Link to={r.handle ? `/p/${r.handle}` : '#'} state={{ back }} className="log-main">
+                    <span className="log-title">{r.displayName ?? r.handle ?? 'Someone'}</span>
+                    {r.handle && <span className="log-facts">@{r.handle}</span>}
+                  </Link>
+                  <span className="request-actions">
+                    <button type="button" className="link-button" onClick={() => decide(r.followerId, true)}>
+                      Approve
+                    </button>
+                  </span>
+                </li>
+              ))}
           </ul>
         </section>
       )}
@@ -291,6 +321,8 @@ export function feedLine(item: FeedItem): string {
 }
 
 export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMap<string, number> }) {
+  const location = useLocation();
+  const back = backFrom(location.pathname, location.search);
   const rating = item.entry && !item.example ? ratingForEntry(item.entry, ratings) : null;
   const facts = [shortLocalDate(item.date), item.venue].filter(Boolean).join(' · ');
   const body = (
@@ -298,7 +330,7 @@ export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMa
       {rating !== null && <ReadTile rating={rating} />}
       <span className="log-main">
         <span className="log-friend">
-          {item.example || !item.friend.handle ? feedLine(item) : <Link to={`/p/${item.friend.handle}`} className="log-friend-link">{feedLine(item)}</Link>}
+          {item.example || !item.friend.handle ? feedLine(item) : <Link to={`/p/${item.friend.handle}`} state={{ back }} className="log-friend-link">{feedLine(item)}</Link>}
           {item.example && <span className="example-chip">Example</span>}
         </span>
         <span className="log-title">{item.title}</span>

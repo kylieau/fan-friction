@@ -4230,3 +4230,26 @@ button.back-link {
   width: 16px;
   height: 16px;
 }
+
+/* A line under a field that cannot be saved as typed (R17). */
+.field-error {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #4b5a70;
+}
+
+/* The review a person wrote for their followers, on their page (R05). */
+.log-review {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.35;
+  color: #0f1b2d;
+  white-space: pre-line;
+}
+
+.request-declined .link-button {
+  font-size: 13px;
+  color: #4b5a70;
+}

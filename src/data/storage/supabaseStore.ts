@@ -19,6 +19,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Entry, Plan, PersonalLog, YouOrder } from '../types';
 import { EMPTY_LOG, readFavorites, readRemoved } from './localStore';
+import { notThereYet } from './dbErrors';
 import type { EntryStore, LogDiff } from './types';
 
 interface EntryRow {
@@ -105,12 +106,6 @@ function isoTime(value: string | undefined): string | undefined {
   if (!value) return undefined;
   const ms = Date.parse(value);
   return Number.isFinite(ms) ? new Date(ms).toISOString() : undefined;
-}
-
-/** PostgREST says a table or function this build expects is not there (a migration not yet run). */
-function notThereYet(error: { code?: string; message: string } | null): boolean {
-  if (!error) return false;
-  return error.code === '42P01' || error.code === '42883' || error.code === 'PGRST202' || error.code === 'PGRST205' || /schema cache|does not exist/i.test(error.message);
 }
 
 async function must<T>(promise: PromiseLike<{ data: T | null; error: { message: string } | null }>): Promise<T | null> {

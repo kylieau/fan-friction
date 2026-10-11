@@ -41,7 +41,7 @@ export function ProfileForm({ onSaved }: { onSaved?: () => void }) {
       if (!current || !profile) return;
       setName(profile.displayName ?? '');
       setHandle(profile.handle ?? suggestHandle(profile.displayName ?? ''));
-      setVisibility(profile.visibility);
+      setVisibility(profile.visibility ?? 'only_me');
       setLoaded(true);
     });
     return () => {

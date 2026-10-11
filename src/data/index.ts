@@ -287,6 +287,7 @@ export {
   removeFollower,
   approveFollow,
   declineFollow,
+  declinedRequests,
   follow,
   friendsEntries,
   followRequests,

@@ -92,8 +92,44 @@ ok('leaving "Anyone" re-asks an auto-approved follower (needs migration 0011)', 
 // A's entries are hidden from B while pending
 let seen = (await b.c.from('entries').select('id').eq('user_id', s1.id)).data ?? [];
 ok('a pending follower sees none of A\'s entries on "People I approve"', seen.length === 0, `${seen.length} rows`);
+// ---- Oct 10 privacy fixes (R01, R03, R04, R05, R06) ----
+await b.c.from('follows').delete().eq('follower_id', b.id);
+r = await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending', auto_approved: true });
+ok('database refuses a request marked auto-approved by its sender (R01; needs migration 0015)', Boolean(r.error), r.error ? '' : 'row was accepted');
+await b.c.from('follows').delete().eq('follower_id', b.id);
+await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending' });
+await s1.c.from('follows').update({ status: 'declined' }).eq('follower_id', b.id).eq('followee_id', s1.id);
+r = await b.c.from('my_follows').select('status').eq('followee_id', s1.id).maybeSingle();
+ok('the requester reads a declined request as pending (R03; needs migration 0016)', r.data?.status === 'pending', r.error?.message ?? JSON.stringify(r.data));
+r = await b.c.from('follows').select('status').eq('followee_id', s1.id);
+ok('the requester reads nothing from the follows table itself (R03; needs migration 0016)', (r.data ?? []).length === 0, `${(r.data ?? []).length} rows`);
+await b.c.from('follows').delete().eq('follower_id', b.id).eq('followee_id', s1.id);
+r = await s1.c.from('follows').select('status').eq('follower_id', b.id).maybeSingle();
+ok('the requester cannot clear a declined request (R03; needs migration 0016)', r.data?.status === 'declined', JSON.stringify(r.data));
+await s1.c.from('follows').upsert({ follower_id: b.id, followee_id: s1.id, status: 'approved' });
+await s1.c.from('profiles').update({ visibility: 'approved' }).eq('id', s1.id);
+d = diffLogs(empty, log([entry('seen-1', { review: 'public words', starter: 'only for me' })])); await s1.store.save(d);
+r = await b.c.from('entry_cards').select('id, review').eq('user_id', s1.id);
+ok('an approved follower reads the entry card, review included (R05; needs migration 0017)', r.data?.length === 1 && r.data[0].review === 'public words', r.error?.message ?? JSON.stringify(r.data));
+r = await b.c.from('entries').select('data').eq('user_id', s1.id);
+ok('an approved follower cannot read whole entry rows (R05; needs migration 0017)', (r.data ?? []).length === 0, `${(r.data ?? []).length} rows`);
+await s1.c.from('follows').update({ status: 'removed' }).eq('follower_id', b.id).eq('followee_id', s1.id);
+r = await b.c.from('my_follows').select('status').eq('followee_id', s1.id).maybeSingle();
+ok('a removed follower still reads approved (R04; needs migration 0016)', r.data?.status === 'approved', r.error?.message ?? JSON.stringify(r.data));
+r = await b.c.from('entry_cards').select('id').eq('user_id', s1.id);
+ok('a removed follower sees no cards (R04; needs migrations 0016, 0017)', !r.error && (r.data ?? []).length === 0, r.error?.message ?? `${(r.data ?? []).length} rows`);
+const anon = createClient(env.VITE_SUPABASE_URL, env.VITE_SUPABASE_ANON_KEY, { auth: { persistSession: false, autoRefreshToken: false } });
+const handleA = (await s1.c.from('profiles').select('handle').eq('id', s1.id).maybeSingle()).data?.handle;
+await s1.c.from('profiles').update({ link_off: true }).eq('id', s1.id);
+r = await anon.from('profile_cards').select('id').eq('handle', handleA);
+ok('with the link off, a visitor finds no card (R06; needs migration 0017)', !r.error && (r.data ?? []).length === 0, r.error?.message ?? `${(r.data ?? []).length} rows`);
+r = await anon.from('profiles').select('home_metro_id').eq('id', s1.id);
+ok('a visitor cannot read the profiles table (needs migration 0017)', (r.data ?? []).length === 0, `${(r.data ?? []).length} rows`);
+await s1.c.from('profiles').update({ link_off: false }).eq('id', s1.id);
+
 // cleanup
 await b.c.from('follows').delete().eq('follower_id', b.id);
+await s1.c.from('follows').delete().eq('follower_id', b.id);
 await s1.c.from('profiles').update({ visibility: 'only_me' }).eq('id', s1.id);
 await s1.c.from('entries').delete().eq('user_id', s1.id); await s1.c.from('plans').delete().eq('user_id', s1.id); await s1.c.from('settings').delete().eq('user_id', s1.id); await s1.c.from('removed_rows').delete().eq('user_id', s1.id);
 await server.close();

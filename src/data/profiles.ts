@@ -1,12 +1,17 @@
-// Profiles: the public face of an account. A profile card (name, avatar, handle,
-// visibility) is readable by anyone. Nights behind it are readable only when the
-// owner's visibility switch allows (enforced by the database, not here).
-// Screens reach this through src/data/index.ts.
+// Profiles: the public face of an account. Others see a card (id, handle, name) and the
+// entries the owner's visibility allows, as cards (title, date, venue, city, kind, the
+// read and the review). Whole rows are the owner's alone; the database enforces it
+// (supabase/migrations/0017_cards.sql). Screens reach this through src/data/index.ts.
+//
+// Until Kylie has run a migration, the view or column it adds is not there; every read
+// here falls back to the older shape and narrows in code, so the app keeps working.
 
 import { getAccount } from './account';
 import { supabase } from './storage/supabaseClient';
-import type { Entry } from './types';
+import { notThereYet, olderShape } from './storage/dbErrors';
+import type { Entry, EventKind, LoggedWhen, Stamp } from './types';
 import { METROS } from '../config/metros';
+import type { SupabaseClient } from '@supabase/supabase-js';
 
 export type Visibility = 'only_me' | 'approved' | 'anyone';
 
@@ -15,9 +20,12 @@ export interface Profile {
   handle: string | null;
   displayName: string | null;
   avatarUrl: string | null;
-  visibility: Visibility;
-  /** The city the map opens on, kept with the account since Oct 6, 2026 so it follows you to another phone. */
+  /** Only on your own profile. A card someone else sees carries no setting. */
+  visibility?: Visibility;
+  /** The city the map opens on, kept with the account since Oct 6, 2026 so it follows you to another phone. Own profile only. */
   homeMetroId: string | null;
+  /** The profile link is switched off (R06). Own profile only; absent before migration 0017. */
+  linkOff?: boolean;
 }
 
 export type FollowStatus = 'none' | 'pending' | 'approved';
@@ -39,9 +47,10 @@ interface ProfileRow {
   id: string;
   handle: string | null;
   display_name: string | null;
-  avatar_url: string | null;
-  visibility: Visibility;
+  avatar_url?: string | null;
+  visibility?: Visibility;
   home_metro_id?: string | null;
+  link_off?: boolean;
 }
 
 function fromRow(row: ProfileRow): Profile {
@@ -49,10 +58,117 @@ function fromRow(row: ProfileRow): Profile {
     id: row.id,
     handle: row.handle,
     displayName: row.display_name,
-    avatarUrl: row.avatar_url,
-    visibility: row.visibility,
+    avatarUrl: row.avatar_url ?? null,
+    ...(row.visibility ? { visibility: row.visibility } : {}),
     homeMetroId: row.home_metro_id ?? null,
+    ...(typeof row.link_off === 'boolean' ? { linkOff: row.link_off } : {}),
   };
+}
+
+const CARD_COLUMNS = 'id, handle, display_name';
+
+/** Profile cards by id: the `profile_cards` view, or the narrowed table columns before migration 0017. */
+async function cardsById(c: SupabaseClient, ids: string[]): Promise<Map<string, Profile>> {
+  if (ids.length === 0) return new Map();
+  let { data, error } = await c.from('profile_cards').select(CARD_COLUMNS).in('id', ids);
+  if (error && notThereYet(error)) ({ data, error } = await c.from('profiles').select(CARD_COLUMNS).in('id', ids));
+  return new Map(((data ?? []) as ProfileRow[]).map((row) => [row.id, fromRow(row)]));
+}
+
+async function cardByHandle(c: SupabaseClient, handle: string): Promise<Profile | null> {
+  let { data, error } = await c.from('profile_cards').select(CARD_COLUMNS).ilike('handle', handle).maybeSingle();
+  if (error && notThereYet(error)) ({ data, error } = await c.from('profiles').select(CARD_COLUMNS).ilike('handle', handle).maybeSingle());
+  if (error || !data) return null;
+  return fromRow(data as ProfileRow);
+}
+
+/**
+ * Your side of every follow you asked for: through `my_follows`, which never says
+ * "declined" or "removed" (migration 0016). Before it exists, the raw rows with the
+ * same reading applied here.
+ */
+async function followsOut(c: SupabaseClient, me: string): Promise<{ followeeId: string; status: FollowStatus }[]> {
+  let { data, error } = await c.from('my_follows').select('followee_id, status').eq('follower_id', me);
+  if (error && notThereYet(error)) ({ data, error } = await c.from('follows').select('followee_id, status').eq('follower_id', me));
+  return ((data ?? []) as { followee_id: string; status: string }[]).map((row) => ({ followeeId: row.followee_id, status: readStatus(row.status) }));
+}
+
+function readStatus(status: string): FollowStatus {
+  if (status === 'declined') return 'pending';
+  if (status === 'removed' || status === 'approved') return 'approved';
+  return 'pending';
+}
+
+interface EntryCardRow {
+  id: string;
+  user_id: string;
+  when_sort: string;
+  when_precision: string;
+  title: string;
+  kind: string;
+  metro_id: string | null;
+  event_id: string | null;
+  when?: LoggedWhen | null;
+  venue?: string | null;
+  stamp?: Stamp | null;
+  review?: string | null;
+  away?: boolean | null;
+  neutral_site?: boolean | null;
+  below_floor?: boolean | null;
+  in_metro?: boolean | null;
+  /** Only on the fallback read of the table itself (before migration 0017). */
+  data?: Entry;
+}
+
+const ENTRY_CARD_COLUMNS = 'id, user_id, when_sort, when_precision, title, kind, metro_id, event_id, when, venue, stamp, review, away, neutral_site, below_floor, in_metro';
+const ENTRY_TABLE_COLUMNS = 'id, user_id, when_sort, when_precision, title, kind, metro_id, event_id, data';
+
+/** The card as an Entry the screens can draw: the shown fields only, whichever shape the read came in. */
+function entryFromCard(row: EntryCardRow): Entry {
+  const d = row.data;
+  const when: LoggedWhen = row.when ?? d?.when ?? { sort: row.when_sort, label: '', precision: row.when_precision as LoggedWhen['precision'] };
+  const entry: Entry = {
+    id: row.id,
+    when,
+    title: row.title,
+    tags: [],
+    sport: '',
+    sides: [],
+    kind: row.kind as EventKind,
+  };
+  const metroId = row.metro_id ?? undefined;
+  const eventId = row.event_id ?? undefined;
+  const venue = row.venue ?? d?.venue ?? undefined;
+  const stamp = row.stamp ?? d?.stamp ?? undefined;
+  const review = row.review ?? d?.review ?? undefined;
+  if (metroId) entry.metroId = metroId;
+  if (eventId) entry.eventId = eventId;
+  if (venue) entry.venue = venue;
+  if (stamp) entry.stamp = stamp;
+  if (review) entry.review = review;
+  for (const [key, value] of [
+    ['away', row.away ?? d?.away],
+    ['neutralSite', row.neutral_site ?? d?.neutralSite],
+    ['belowFloor', row.below_floor ?? d?.belowFloor],
+    ['inMetro', row.in_metro ?? d?.inMetro],
+  ] as const) {
+    if (typeof value === 'boolean') (entry as unknown as Record<string, boolean>)[key] = value;
+  }
+  return entry;
+}
+
+/** Entry cards for one or more people, newest first. The view when it exists; the table, narrowed here, before it. */
+async function entryCards(c: SupabaseClient, userIds: string[], limit?: number): Promise<{ userId: string; entry: Entry }[]> {
+  if (userIds.length === 0) return [];
+  const ask = (table: string, columns: string) => {
+    let q = c.from(table).select(columns).in('user_id', userIds).order('when_sort', { ascending: false });
+    if (limit) q = q.limit(limit);
+    return q;
+  };
+  let { data, error } = await ask('entry_cards', ENTRY_CARD_COLUMNS);
+  if (error && notThereYet(error)) ({ data, error } = await ask('entries', ENTRY_TABLE_COLUMNS));
+  if (error || !data) return [];
+  return (data as unknown as EntryCardRow[]).map((row) => ({ userId: row.user_id, entry: entryFromCard(row) }));
 }
 
 const HANDLE_SHAPE = /^[a-z0-9]([a-z0-9-]{1,30}[a-z0-9])?$/;
@@ -71,12 +187,11 @@ export function suggestHandle(name: string): string {
     .slice(0, 28);
 }
 
+/** The card behind a profile link. Null when there is none, or the owner switched the link off (R06). */
 export async function getProfileByHandle(handle: string): Promise<Profile | null> {
   const c = supabase();
   if (!c) return null;
-  const { data, error } = await c.from('profiles').select('*').ilike('handle', handle).maybeSingle();
-  if (error || !data) return null;
-  return fromRow(data as ProfileRow);
+  return cardByHandle(c, handle);
 }
 
 export async function getMyProfile(): Promise<Profile | null> {
@@ -94,6 +209,7 @@ export async function updateMyProfile(changes: {
   handle?: string;
   visibility?: Visibility;
   homeMetroId?: string | null;
+  linkOff?: boolean;
 }): Promise<string | null> {
   const c = supabase();
   const me = getAccount();
@@ -107,6 +223,7 @@ export async function updateMyProfile(changes: {
   }
   if (changes.visibility !== undefined) patch.visibility = changes.visibility;
   if (changes.homeMetroId !== undefined) patch.home_metro_id = changes.homeMetroId;
+  if (changes.linkOff !== undefined) patch.link_off = changes.linkOff;
   const { error } = await c.from('profiles').update(patch).eq('id', me.id);
   if (error) {
     if (error.code === '23505') return 'That link is taken. Try another.';
@@ -116,35 +233,20 @@ export async function updateMyProfile(changes: {
 }
 
 /**
- * The nights a viewer may see on this profile. The database returns nothing
- * when the owner's setting hides them, so an empty list can mean "private".
+ * The entries a viewer may see on this profile, as cards. The database returns
+ * nothing when the owner's setting hides them, so an empty list can mean "private".
  */
 export async function entriesOf(userId: string): Promise<Entry[]> {
   const c = supabase();
   if (!c) return [];
-  const { data, error } = await c
-    .from('entries')
-    .select('id, data')
-    .eq('user_id', userId)
-    .order('when_sort', { ascending: false });
-  if (error || !data) return [];
-  return (data as { id: string; data: Entry }[]).map((row) => ({ ...row.data, id: row.id }));
+  return (await entryCards(c, [userId])).map((row) => row.entry);
 }
 
 export async function followStatus(targetId: string): Promise<FollowStatus> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return 'none';
-  const { data } = await c
-    .from('follows')
-    .select('status')
-    .eq('follower_id', me.id)
-    .eq('followee_id', targetId)
-    .maybeSingle();
-  if (!data) return 'none';
-  // A declined request still reads as "Requested" to the person who asked (privacy 2 and 7; migration 0013).
-  const status = (data as { status: string }).status;
-  return status === 'declined' ? 'pending' : (status as FollowStatus);
+  return (await followsOut(c, me.id)).find((row) => row.followeeId === targetId)?.status ?? 'none';
 }
 
 /** The people who follow you (approved), with whether you follow them back. */
@@ -152,15 +254,18 @@ export async function followers(): Promise<Person[]> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return [];
-  const [{ data: inRows }, { data: outRows }] = await Promise.all([
+  const [{ data: inRows }, out] = await Promise.all([
     c.from('follows').select('follower_id').eq('followee_id', me.id).eq('status', 'approved'),
-    c.from('follows').select('followee_id, status').eq('follower_id', me.id),
+    followsOut(c, me.id),
   ]);
   const ids = ((inRows ?? []) as { follower_id: string }[]).map((r) => r.follower_id);
   if (ids.length === 0) return [];
-  const mine = new Map(((outRows ?? []) as { followee_id: string; status: string }[]).map((r) => [r.followee_id, r.status === 'declined' ? 'pending' : (r.status as FollowStatus)]));
-  const { data: people } = await c.from('profiles').select('*').in('id', ids);
-  return ((people ?? []) as ProfileRow[]).map((row) => ({ profile: fromRow(row), status: mine.get(row.id) ?? 'none' }));
+  const mine = new Map(out.map((row) => [row.followeeId, row.status]));
+  const cards = await cardsById(c, ids);
+  return ids.flatMap((id) => {
+    const profile = cards.get(id);
+    return profile ? [{ profile, status: mine.get(id) ?? 'none' }] : [];
+  });
 }
 
 /** The people you follow, approved and still waiting. */
@@ -168,31 +273,37 @@ export async function following(): Promise<Person[]> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return [];
-  const { data: rows } = await c.from('follows').select('followee_id, status').eq('follower_id', me.id);
-  const list = (rows ?? []) as { followee_id: string; status: string }[];
-  if (list.length === 0) return [];
-  const { data: people } = await c.from('profiles').select('*').in('id', list.map((r) => r.followee_id));
-  const byId = new Map(((people ?? []) as ProfileRow[]).map((row) => [row.id, fromRow(row)]));
-  return list
-    .flatMap((r) => {
-      const profile = byId.get(r.followee_id);
-      return profile ? [{ profile, status: (r.status === 'declined' ? 'pending' : r.status) as FollowStatus }] : [];
+  const out = await followsOut(c, me.id);
+  if (out.length === 0) return [];
+  const cards = await cardsById(
+    c,
+    out.map((row) => row.followeeId),
+  );
+  return out
+    .flatMap((row) => {
+      const profile = cards.get(row.followeeId);
+      return profile ? [{ profile, status: row.status }] : [];
     })
     .sort((a, b) => (a.status === b.status ? 0 : a.status === 'approved' ? -1 : 1));
 }
 
-/** Take a follower's access away. They see nothing of yours from then on, and nothing tells them. */
+/**
+ * Take a follower's access away (R04). The row stays as "removed": their side still reads
+ * "Following", nothing tells them, and every read rule sees no approval. Before migration
+ * 0016 the status is refused, and the row is deleted as before.
+ */
 export async function removeFollower(followerId: string): Promise<void> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return;
-  await c.from('follows').delete().eq('follower_id', followerId).eq('followee_id', me.id);
+  const { error } = await c.from('follows').update({ status: 'removed' }).eq('follower_id', followerId).eq('followee_id', me.id);
+  if (error && olderShape(error)) await c.from('follows').delete().eq('follower_id', followerId).eq('followee_id', me.id);
 }
 
 /**
  * Ask to follow someone. Every follow is a request the other person approves,
  * whatever their visibility (Kylie, Oct 9); the database refuses anything else
- * (supabase/migrations/0011_follow_approval.sql). A row that already exists
+ * (supabase/migrations/0011_follow_approval.sql, 0015). A row that already exists
  * (asked before, or already approved) is reported as it stands.
  */
 export async function follow(target: Profile): Promise<FollowStatus | string> {
@@ -205,27 +316,40 @@ export async function follow(target: Profile): Promise<FollowStatus | string> {
   return error.message;
 }
 
-export async function unfollow(targetId: string): Promise<void> {
+/**
+ * Unfollow, or cancel a request. Resolves to the state afterwards: a declined request
+ * cannot be cancelled (migration 0016), so it still reads "Requested".
+ */
+export async function unfollow(targetId: string): Promise<FollowStatus> {
   const c = supabase();
   const me = getAccount();
-  if (!c || !me) return;
+  if (!c || !me) return 'none';
   await c.from('follows').delete().eq('follower_id', me.id).eq('followee_id', targetId);
+  return followStatus(targetId);
 }
 
-/** People waiting for the signed-in person's approval. */
-export async function followRequests(): Promise<FollowRequest[]> {
+async function requestsWith(status: 'pending' | 'declined'): Promise<FollowRequest[]> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return [];
-  const { data } = await c.from('follows').select('follower_id').eq('followee_id', me.id).eq('status', 'pending');
+  const { data } = await c.from('follows').select('follower_id').eq('followee_id', me.id).eq('status', status);
   const ids = ((data ?? []) as { follower_id: string }[]).map((row) => row.follower_id);
   if (ids.length === 0) return [];
-  const { data: people } = await c.from('profiles').select('id, display_name, handle').in('id', ids);
-  return ((people ?? []) as { id: string; display_name: string | null; handle: string | null }[]).map((row) => ({
-    followerId: row.id,
-    displayName: row.display_name,
-    handle: row.handle,
-  }));
+  const cards = await cardsById(c, ids);
+  return ids.flatMap((id) => {
+    const card = cards.get(id);
+    return card ? [{ followerId: id, displayName: card.displayName, handle: card.handle }] : [];
+  });
+}
+
+/** People waiting for the signed-in person's approval. */
+export function followRequests(): Promise<FollowRequest[]> {
+  return requestsWith('pending');
+}
+
+/** Requests the signed-in person declined (R03). They can still be approved later; the requester sees no difference. */
+export function declinedRequests(): Promise<FollowRequest[]> {
+  return requestsWith('declined');
 }
 
 export async function approveFollow(followerId: string): Promise<void> {
@@ -276,40 +400,56 @@ function todayFor(metroId: string | undefined): string {
   return new Date().toLocaleDateString('en-CA', { timeZone: zone });
 }
 
-/** The Following feed: approved followees' past entries and upcoming plans, soonest plans first, then newest entries. */
+/** The earliest "today" anywhere on Earth, so a date-only query never drops a plan that is still today somewhere. */
+function earliestToday(): string {
+  return new Date(Date.now() - 36 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
+/** The ids of the people you follow who have approved. */
+async function approvedFollowees(c: SupabaseClient, me: string): Promise<string[]> {
+  return (await followsOut(c, me)).filter((row) => row.status === 'approved').map((row) => row.followeeId);
+}
+
+/**
+ * The Following feed: approved followees' past entries and upcoming plans, soonest plans
+ * first, then newest entries. Plans are asked for from today on (R07), so old ones never
+ * crowd out the next ones within the limit.
+ */
 export async function followingFeed(limit = 30): Promise<FeedItem[]> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return [];
-  const { data: links } = await c.from('follows').select('followee_id').eq('follower_id', me.id).eq('status', 'approved');
-  const ids = ((links ?? []) as { followee_id: string }[]).map((row) => row.followee_id);
+  const ids = await approvedFollowees(c, me.id);
   if (ids.length === 0) return [];
-  const [{ data: people }, { data: rows }, { data: plans }] = await Promise.all([
-    c.from('profiles').select('*').in('id', ids),
-    c.from('entries').select('id, user_id, data').in('user_id', ids).order('when_sort', { ascending: false }).limit(limit),
-    c.from('plans').select('id, user_id, date, metro_id, event_id, title, venue').in('user_id', ids).order('date', { ascending: true }).limit(limit),
+  const [people, cards, { data: plans }] = await Promise.all([
+    cardsById(c, ids),
+    entryCards(c, ids, limit),
+    c
+      .from('plans')
+      .select('id, user_id, date, metro_id, event_id, title, venue')
+      .in('user_id', ids)
+      .gte('date', earliestToday())
+      .order('date', { ascending: true })
+      .limit(limit),
   ]);
-  const byId = new Map(((people ?? []) as ProfileRow[]).map((row) => [row.id, fromRow(row)]));
   const planning: FeedItem[] = ((plans ?? []) as { id: string; user_id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null }[])
     .filter((p) => p.date >= todayFor(p.metro_id))
     .flatMap((p) => {
-      const friend = byId.get(p.user_id);
+      const friend = people.get(p.user_id);
       return friend ? [{ kind: 'planning' as const, friend, title: p.title, date: p.date, venue: p.venue ?? undefined, metroId: p.metro_id, eventId: p.event_id ?? undefined }] : [];
     });
-  const attended: FeedItem[] = ((rows ?? []) as { id: string; user_id: string; data: Entry }[])
-    .flatMap((row) => {
-      const friend = byId.get(row.user_id);
-      const entry: Entry = { ...row.data, id: row.id };
-      if (!friend || entry.when.sort >= todayFor(entry.metroId)) return [];
-      return [{ kind: 'attended' as const, friend, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry }];
-    });
+  const attended: FeedItem[] = cards.flatMap(({ userId, entry }) => {
+    const friend = people.get(userId);
+    if (!friend || entry.when.sort >= todayFor(entry.metroId)) return [];
+    return [{ kind: 'attended' as const, friend, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry }];
+  });
   return [...planning, ...attended].slice(0, limit);
 }
 
 /** The feed's shape before anyone is followed, marked Example. Nothing here is written anywhere. */
 export const EXAMPLE_FEED: FeedItem[] = [
-  { example: true, kind: 'planning', friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, visibility: 'approved', homeMetroId: null }, title: 'Rams vs. Bills', date: '2026-10-12', venue: 'SoFi Stadium', metroId: 'la' },
-  { example: true, kind: 'attended', friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, visibility: 'approved', homeMetroId: null }, title: 'Slayer', date: '2026-10-02', venue: 'Kia Forum', metroId: 'la' },
+  { example: true, kind: 'planning', friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, homeMetroId: null }, title: 'Rams vs. Bills', date: '2026-10-12', venue: 'SoFi Stadium', metroId: 'la' },
+  { example: true, kind: 'attended', friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, homeMetroId: null }, title: 'Slayer', date: '2026-10-02', venue: 'Kia Forum', metroId: 'la' },
 ];
 
 /** Recent nights of the people the signed-in person follows (approved only), newest first. */
@@ -317,20 +457,13 @@ export async function friendsEntries(limit = 20): Promise<FriendEntry[]> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return [];
-  const { data: links } = await c.from('follows').select('followee_id').eq('follower_id', me.id).eq('status', 'approved');
-  const ids = ((links ?? []) as { followee_id: string }[]).map((row) => row.followee_id);
+  const ids = await approvedFollowees(c, me.id);
   if (ids.length === 0) return [];
-  const [{ data: people }, { data: rows }] = await Promise.all([
-    c.from('profiles').select('*').in('id', ids),
-    c.from('entries').select('id, user_id, data').in('user_id', ids).order('when_sort', { ascending: false }).limit(limit),
-  ]);
-  const byId = new Map(((people ?? []) as ProfileRow[]).map((row) => [row.id, fromRow(row)]));
-  return ((rows ?? []) as { id: string; user_id: string; data: Entry }[])
-    .map((row) => {
-      const friend = byId.get(row.user_id);
-      return friend ? { entry: { ...row.data, id: row.id }, friend } : null;
-    })
-    .filter((item): item is FriendEntry => item !== null);
+  const [people, cards] = await Promise.all([cardsById(c, ids), entryCards(c, ids, limit)]);
+  return cards.flatMap(({ userId, entry }) => {
+    const friend = people.get(userId);
+    return friend ? [{ entry, friend }] : [];
+  });
 }
 
 /**
@@ -341,7 +474,7 @@ export async function friendsEntries(limit = 20): Promise<FriendEntry[]> {
 export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
   {
     example: true,
-    friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, visibility: 'anyone', homeMetroId: null },
+    friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, homeMetroId: null },
     entry: {
       id: 'example-entry-1',
       when: { sort: '2026-10-03', label: '', precision: 'day' },
@@ -357,7 +490,7 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
   },
   {
     example: true,
-    friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, visibility: 'anyone', homeMetroId: null },
+    friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, homeMetroId: null },
     entry: {
       id: 'example-entry-2',
       when: { sort: '2026-10-02', label: '', precision: 'day' },
@@ -373,7 +506,7 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
   },
   {
     example: true,
-    friend: { id: 'example-3', handle: 'dev', displayName: 'Dev', avatarUrl: null, visibility: 'anyone', homeMetroId: null },
+    friend: { id: 'example-3', handle: 'dev', displayName: 'Dev', avatarUrl: null, homeMetroId: null },
     entry: {
       id: 'example-entry-3',
       when: { sort: '2026-09-21', label: '', precision: 'day' },

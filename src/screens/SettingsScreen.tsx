@@ -6,7 +6,7 @@ import { ChevronDown } from '../components/Icons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { HomePicker } from '../components/HomePicker';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn } from '../data';
+import { getAccount, getMyProfile, getPersonalLog, logBackup, subscribeAccount, subscribePersonalLog, todayIn, updateMyProfile } from '../data';
 
 /** Behind the gear on You: account, profile, backup, tips. */
 export function SettingsScreen() {
@@ -15,6 +15,8 @@ export function SettingsScreen() {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const [handle, setHandle] = useState<string | null>(null);
+  // undefined until the project has the column (migration 0017); the row then shows.
+  const [linkOff, setLinkOff] = useState<boolean | undefined>(undefined);
   const [exportNote, setExportNote] = useState('');
   const [shareNote, setShareNote] = useState('');
 
@@ -39,7 +41,11 @@ export function SettingsScreen() {
       setHandle(null);
       return;
     }
-    getMyProfile().then((profile) => current && setHandle(profile?.handle ?? null));
+    getMyProfile().then((profile) => {
+      if (!current) return;
+      setHandle(profile?.handle ?? null);
+      setLinkOff(profile?.linkOff);
+    });
     return () => {
       current = false;
     };
@@ -72,10 +78,27 @@ export function SettingsScreen() {
           <div className="settings-row settings-static">
             <AccountRow handle={handle} />
           </div>
-          {handle && (
+          {handle && linkOff !== true && (
             <button type="button" className="settings-row settings-link" onClick={shareProfile}>
               <span>Share profile</span>
               {shareNote && <span className="settings-value">{shareNote}</span>}
+            </button>
+          )}
+          {handle && linkOff !== undefined && (
+            // The off switch (R06): off, the link shows "No one here" to everyone but you and people already linked by a follow.
+            <button
+              type="button"
+              className="settings-row settings-link"
+              role="switch"
+              aria-checked={!linkOff}
+              onClick={async () => {
+                const next = !linkOff;
+                setLinkOff(next);
+                if (await updateMyProfile({ linkOff: next })) setLinkOff(!next);
+              }}
+            >
+              <span>Profile link</span>
+              <span className="settings-value">{linkOff ? 'Off' : 'On'}</span>
             </button>
           )}
         </div>
