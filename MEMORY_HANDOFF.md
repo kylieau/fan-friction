@@ -7,9 +7,9 @@ _Last synced: Oct 11, 2026 (about 2:30 UTC, Oct 10 evening Pacific), Claude Code
 ## Current state
 **Build 2 (Kylie's Oct 10 notes) is built end to end and live on `main`**: Section 0's 18 review fixes (R15 deferred by her), the settled read box, Favorites, Following and People, privacy (search, block, keep-private, plans on profiles, link-off), one search on every tab, event naming, Home section links, the map chip L1b, friction words and the two tags, the chip card and the Why card, the color roles, the ticket line, "I watched it", and the decision logging. About twenty commits, each one step, each `npm run build` green. Screens were checked with phone-size screenshots against the mocks.
 
-**Not yet run by Kylie:** migrations 0014–0019 (the app falls back to the older shape until then) and the Ticketmaster key on Vercel (the ticket line stays hidden until then). Her list is below.
+**Kylie ran migrations 0014–0019 and set the Ticketmaster key on Vercel (Oct 10 evening).** The live project answered the two-account check clean afterwards, and `/api/ticket-price` answers on the live site. The only step still waiting is watching the nightly run.
 
-**Checks:** `npm run build` passes. `node scripts/storage-check.mjs` passes (offline). `node scripts/account-check.mjs` (live, two test accounts) passes everything except 15 checks that say "needs migration 00xx" in their name; they turn green as she runs each one. That script also wipes and reseeds the test accounts: Test A has two entries and one plan again, and B follows A (approved), redone Oct 10 after an earlier run had cleared them.
+**Checks:** `npm run build` passes. `node scripts/storage-check.mjs` passes (offline). `node scripts/account-check.mjs` (live, two test accounts) passes in full since the migrations ran (two of its own assertions were wrong and were fixed Oct 10: the followee approves with an update, not an upsert; the private-entry check looks for the hidden id, not an exact list). That script also wipes and reseeds the test accounts: Test A has two entries and one plan again, and B follows A (approved), redone Oct 10 after an earlier run had cleared them.
 
 **The nightly job:** the Oct 10 scheduled run failed (one Open-Meteo text error killed the whole night); R12 made weather, schedule and results separate steps that skip a bad city and carry on, and a hand run on Oct 10 recovered that night (venue-id pull works; the "AIR SUPPLY" duplicate is gone). The cron is plain UTC `23 8 * * *` (about 1:23am Pacific) since Oct 9; the Oct 10 run still fired at the old 7:29am slot, so the first proof that the new time took is the run due 08:23 UTC on Oct 11. If it fires near 7am Pacific again, the cause is not the `timezone:` line.
 
@@ -24,10 +24,9 @@ _Last synced: Oct 11, 2026 (about 2:30 UTC, Oct 10 evening Pacific), Claude Code
 - **The ticket price never touches the phone's key or the log:** `api/ticket-price.ts` runs on Vercel with `TICKETMASTER_API_KEY`; the app asks `/api/ticket-price?id=`; resale ranges are left out.
 - **Testing notes:** `npm i --no-save playwright-core`; Chromium at `/usr/bin/chromium` with swiftshader flags; `localStorage['fan-friction:home-metro'] = JSON.stringify('la')` skips the picker; a seeded local log goes in `localStorage['fan-friction:your-nights']`; a signed-in screenshot works by writing a password session into `localStorage[sb-<ref>-auth-token]` (see `private/test-session-b.json`); `scripts/.tmp-*.mjs` run from the repo root and are deleted after; don't `pkill` vite, `kill $(lsof -ti:3001)`. Wait for `domcontentloaded` plus a few seconds, not `networkidle`, on the heavier pages.
 
-## Kylie's manual steps (in order)
-1. Paste and run in the Supabase SQL editor, in this order, each safe to rerun: `supabase/migrations/0014_sync_rows.sql` (deletions as rows, server clock), `0015_follow_rules.sql` (R01, R02; it re-asks followers the app approved on its own, so approve Test A again if asked), `0016_follow_states.sql` (quiet declines and removals), `0017_cards.sql` (cards instead of rows; the link-off switch), `0018_blocks.sql` (Block), `0019_private_entries.sql` (keep this one private). Then `node scripts/account-check.mjs` should say "all passed".
-2. On Vercel, add `TICKETMASTER_API_KEY` as an environment variable on the project (Settings → Environment Variables; the same key the GitHub secret holds). The ticket line appears on upcoming event pages after the next deploy.
-3. Watch the nightly run due 08:23 UTC Oct 11 (1:23am Pacific) in GitHub Actions.
+## Kylie's manual steps
+1. ~~Migrations 0014–0019~~ done Oct 10. ~~`TICKETMASTER_API_KEY` on Vercel~~ done Oct 10.
+2. Watch the nightly run due 08:23 UTC Oct 11 (1:23am Pacific) in GitHub Actions: it proves the cron time took, and it is the first scheduled run with the new step layout.
 
 ## Open (everything, Oct 10 end of day; details in BACKLOG)
 1. The manual steps above.

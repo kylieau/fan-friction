@@ -106,11 +106,12 @@ ok('the requester reads nothing from the follows table itself (R03; needs migrat
 await b.c.from('follows').delete().eq('follower_id', b.id).eq('followee_id', s1.id);
 r = await s1.c.from('follows').select('status').eq('follower_id', b.id).maybeSingle();
 ok('the requester cannot clear a declined request (R03; needs migration 0016)', r.data?.status === 'declined', JSON.stringify(r.data));
-await s1.c.from('follows').upsert({ follower_id: b.id, followee_id: s1.id, status: 'approved' });
+// The person followed approves (the followee may update; only the follower may insert, so no upsert here).
+await s1.c.from('follows').update({ status: 'approved' }).eq('follower_id', b.id).eq('followee_id', s1.id);
 await s1.c.from('profiles').update({ visibility: 'approved' }).eq('id', s1.id);
 d = diffLogs(empty, log([entry('seen-1', { review: 'public words', starter: 'only for me' })])); await s1.store.save(d);
 r = await b.c.from('entry_cards').select('id, review').eq('user_id', s1.id);
-ok('an approved follower reads the entry card, review included (R05; needs migration 0017)', r.data?.length === 1 && r.data[0].review === 'public words', r.error?.message ?? JSON.stringify(r.data));
+ok('an approved follower reads the entry card, review included (R05; needs migration 0017)', (r.data ?? []).some((row) => row.id === 'seen-1' && row.review === 'public words'), r.error?.message ?? JSON.stringify(r.data));
 r = await b.c.from('entries').select('data').eq('user_id', s1.id);
 ok('an approved follower cannot read whole entry rows (R05; needs migration 0017)', (r.data ?? []).length === 0, `${(r.data ?? []).length} rows`);
 await s1.c.from('follows').update({ status: 'removed' }).eq('follower_id', b.id).eq('followee_id', s1.id);
@@ -133,7 +134,7 @@ ok('a partial name or handle finds a card (section 4; needs migration 0017)', !r
 await s1.c.from('follows').update({ status: 'approved' }).eq('follower_id', b.id).eq('followee_id', s1.id);
 d = diffLogs(empty, log([entry('seen-2', { review: 'shown' }), entry('hidden-1', { private: true, review: 'never shown' })])); await s1.store.save(d);
 r = await b.c.from('entry_cards').select('id').eq('user_id', s1.id);
-ok('a private entry stays off the cards (section 4; needs migration 0019)', !r.error && (r.data ?? []).map((x) => x.id).join() === 'seen-2', r.error?.message ?? (r.data ?? []).map((x) => x.id).join());
+ok('a private entry stays off the cards (section 4; needs migration 0019)', !r.error && (r.data ?? []).some((x) => x.id === 'seen-2') && !(r.data ?? []).some((x) => x.id === 'hidden-1'), r.error?.message ?? (r.data ?? []).map((x) => x.id).join());
 r = await s1.c.rpc('block_user', { target: b.id });
 ok('block runs (section 4; needs migration 0018)', !r.error, r.error?.message);
 r = await s1.c.from('follows').select('status').eq('follower_id', b.id).eq('followee_id', s1.id);
