@@ -159,9 +159,9 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
   const duplicate = useMemo(() => {
     if (!validDay || title.trim().length < 2) return null;
     const entry = log.added.find((e) => e.when.sort === day && similarTitles(e.title, title));
-    if (entry) return entry.title;
+    if (entry) return { title: entry.title, plan: false };
     const plan = log.plans.find((p) => p.date === day && similarTitles(p.title, title));
-    return plan ? plan.title : null;
+    return plan ? { title: plan.title, plan: true } : null;
   }, [log, day, title, validDay]);
 
   const pickCompetition = (name: string) => {
@@ -266,7 +266,7 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
 
       {duplicate && (
         <p className="you-fine" role="status">
-          Looks like {duplicate} on this date is already in your log.
+          Looks like {duplicate.title} on this date is already in your {duplicate.plan ? 'plans' : 'log'}.
         </p>
       )}
 
