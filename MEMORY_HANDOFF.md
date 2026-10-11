@@ -32,11 +32,11 @@ _Last synced: Oct 11, 2026 (about 22:30 UTC, afternoon Pacific), Claude Code, te
 1. The manual steps above.
 2. **Call 6:** what the event page keeps; nothing was removed from it.
 3. **Where watched:** six open questions, her words. **Interested** on the date page's Following section: not shown; her call.
-5. **R12:** the artist/concert equivalent of ESPN. **R17:** new framing for "Nothing bigger was on."
-6. **Kylie's phone checklist** (BACKLOG) on the live site.
-7. **The tester's first name in git history** (BACKLOG, Waiting on Kylie): leave or rewrite.
-8. **Tester interview about Oct 13:** a day before, check the tester's LA, San Diego, New York and Montreal nights show reads; after it, C034.
-9. Dated re-checks in BACKLOG (Nov 3 Bay Area transit vote; seasonal ones).
+4. **R12:** the artist/concert equivalent of ESPN. **R17:** new framing for "Nothing bigger was on."
+5. **Kylie's phone checklist** (BACKLOG) on the live site.
+6. **The tester's first name in git history** (BACKLOG, Waiting on Kylie): leave or rewrite.
+7. **Tester interview about Oct 13:** a day before, check the tester's LA, San Diego, New York and Montreal nights show reads; after it, C034.
+8. Dated re-checks in BACKLOG (Nov 3 Bay Area transit vote; seasonal ones).
 
 **Next command to run:**
 ```bash
