@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { SearchIcon } from '../components/Icons';
+import { SearchButton } from '../components/SearchButton';
 import { FrictionPill } from '../components/EventTags';
 import { ReadTile as Read } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
@@ -318,9 +319,9 @@ export function FavoritesScreen() {
         <button type="button" className="link-button you-edit" onClick={() => setPicking(true)}>
           Edit
         </button>
+        <SearchButton />
       </div>
-      {search}
-      {results || (
+      {
         <>
           <div className="segmented" role="tablist" aria-label="Favorites view">
             <button type="button" role="tab" aria-selected={view === 'favorite'} onClick={() => setView('favorite')}>
@@ -371,7 +372,7 @@ export function FavoritesScreen() {
             })
           )}
         </>
-      )}
+      }
     </div>
   );
 }

@@ -24,8 +24,8 @@ import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
 import { AreaSwitcher } from '../components/AreaSwitcher';
 import { DateScore } from '../components/DateScore';
 import { ArrowRight, ChevronLeft, ChevronRight, RecenterIcon } from '../components/Icons';
-import { dayWordFor, tonightWord } from '../lib/dayWord';
-import { SearchSheet } from '../components/SearchSheet';
+import { dayWordFor } from '../lib/dayWord';
+import { SearchButton } from '../components/SearchButton';
 import { listTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
@@ -47,7 +47,6 @@ const TRAFFIC_BUILT = false;
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
   const href = `${location.pathname}${location.search}`;
   const restored = useRef<MapMemory | null | undefined>(undefined);
@@ -178,6 +177,10 @@ export function MapScreen() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const [monthOpen, setMonthOpen] = useState(() => searchParams.get('pick') === '1');
+  // Pick a date from the shared search, while already on Explore: the address says so.
+  useEffect(() => {
+    if (searchParams.get('pick') === '1') setMonthOpen(true);
+  }, [searchParams]);
   useEffect(() => {
     if (!menu) return;
     const onPointer = (event: PointerEvent) => {
@@ -225,11 +228,12 @@ export function MapScreen() {
       </div>
 
       <header className="map-header">
-        {/* The city switcher alone, centered (Kylie, Oct 9, 6.1). Search moved to the day strip. */}
+        {/* The city switcher centered on the top row, the one search button at its right (build notes 2, global search). */}
         <div className="map-header-top centered">
           <div ref={areaRef}>
             <AreaSwitcher metro={metro} open={menu === 'area'} onOpenChange={(next) => setMenu(next ? 'area' : null)} />
           </div>
+          <SearchButton metroId={metro.id} className="map-header-search" />
         </div>
         {/* The read box first, then the date, then < Today > to step a day or jump back (Kylie, Oct 9). */}
         <div className="map-header-score">
@@ -258,7 +262,7 @@ export function MapScreen() {
             </Link>
           </nav>
         </div>
-        <DayStrip metro={metro} today={today} date={date} onSearch={() => setSearchOpen(true)} />
+        <DayStrip metro={metro} today={today} date={date} />
         <div className="map-chrome">
           <div className="map-chrome-left">
             {showFeels && dayRange && (
@@ -410,22 +414,6 @@ export function MapScreen() {
         </div>
       </section>
 
-      {searchOpen && (
-        <SearchSheet
-          homeId={metro.id}
-          today={today}
-          tonightWord={tonightWord(events)}
-          onClose={() => setSearchOpen(false)}
-          onPick={(picked, metroId) => {
-            setSearchOpen(false);
-            navigate(mapPath({ metroId, date: picked, today }));
-          }}
-          onPickDate={() => {
-            setSearchOpen(false);
-            setMonthOpen(true);
-          }}
-        />
-      )}
       {monthOpen && (
         <MonthSheet
           metro={metro}

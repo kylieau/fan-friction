@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { ReadTile } from '../components/ReadTile';
+import { SearchButton } from '../components/SearchButton';
 import {
   canSignIn,
   entryFacts,
@@ -35,7 +36,7 @@ import {
 import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
 import { YourYear } from '../components/YourYear';
-import { GearIcon, PlusIcon } from '../components/Icons';
+import { ChevronDown, ChevronRight } from '../components/Icons';
 import { loggedDateLabel, shortLocalDate, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { datePath, entryPath, eventPath, backFrom } from '../lib/view';
@@ -61,6 +62,24 @@ export function YouScreen() {
   const [tab, setTab] = useState<'events' | 'stats' | 'friends'>(() => (params.get('tab') === 'following' ? 'friends' : params.get('tab') === 'stats' ? 'stats' : 'events'));
   const [handle, setHandle] = useState<string | null>(null);
   const [requestCount, setRequestCount] = useState(0);
+  const [sheet, setSheet] = useState(false);
+  const [shareNote, setShareNote] = useState('');
+  const navigate = useNavigate();
+  // Share my handle: the profile link where it works, the handle itself elsewhere.
+  const shareHandle = async () => {
+    const url = `${window.location.origin}/p/${handle}`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: account?.displayName ?? 'Fan/Friction', url });
+        setSheet(false);
+        return;
+      }
+      await navigator.clipboard.writeText(url);
+      setShareNote('Link copied.');
+    } catch {
+      setShareNote(`@${handle}`);
+    }
+  };
   const [peopleCount, setPeopleCount] = useState<number | null>(null);
   const [feed, setFeed] = useState<FeedItem[] | null>(null);
   const plansAhead = useMemo(() => upcomingPlans(todayIn(DEFAULT_METRO), log), [log]);
@@ -112,6 +131,10 @@ export function YouScreen() {
 
   const eventsBlock = (
     <section className="you-block" aria-label="Your events">
+      {/* Log an event lives in My Stubs as one full-width row (build notes 2, global search). */}
+      <Link to="/you/add" className="log-add-row">
+        + Log an event
+      </Link>
       {/* A small Coming up strip above the log (3.11): plans still ahead, soonest first. */}
       {plansAhead.length > 0 && (
         <div className="coming-strip" aria-label="Coming up">
@@ -162,9 +185,15 @@ export function YouScreen() {
   return (
     <div className="screen page">
       <div className="you-header">
-        <span className="avatar" aria-hidden>
-          {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
-        </span>
+        {/* The avatar opens profile, Settings and sharing (build notes 2, global search); the chevron badge is the cue. */}
+        <button type="button" className="you-avatar-btn" aria-label="Profile and settings" aria-haspopup="dialog" onClick={() => (account ? setSheet(true) : navigate('/you/settings'))}>
+          <span className="avatar" aria-hidden>
+            {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
+          </span>
+          <span className="avatar-chevron" aria-hidden>
+            <ChevronDown />
+          </span>
+        </button>
         <div className="you-who">
           <h1 className="page-title">{account?.displayName ?? 'You'}</h1>
           {account && handle && <span className="you-handle">@{handle}</span>}
@@ -176,18 +205,45 @@ export function YouScreen() {
             </Link>
           )}
         </div>
-        <Link to="/you/add" className="round-button you-add" aria-label="Log an event">
-          <PlusIcon />
-        </Link>
-        <Link
-          to="/you/settings"
-          className="round-button you-gear"
-          aria-label={requestCount > 0 ? `Settings, ${requestCount} follow requests` : 'Settings'}
-        >
-          <GearIcon />
-          {requestCount > 0 && <span className="you-badge">{requestCount}</span>}
-        </Link>
+        <SearchButton className="you-search" />
       </div>
+      {sheet && (
+        <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Your account" onClick={() => setSheet(false)}>
+          <div className="action-sheet" onClick={(event) => event.stopPropagation()}>
+            <span className="sheet-handle" aria-hidden />
+            <div className="you-header">
+              <span className="avatar" aria-hidden>
+                {(account?.displayName ?? account?.email ?? 'Y').slice(0, 1).toUpperCase()}
+              </span>
+              <div className="you-who">
+                <span className="log-title">{account?.displayName ?? 'You'}</span>
+                {account && handle && <span className="you-handle">@{handle}</span>}
+              </div>
+            </div>
+            <Link to="/profile/edit" className="action-row" onClick={() => setSheet(false)}>
+              <span className="action-row-main">Edit profile</span>
+              <ChevronRight />
+            </Link>
+            <Link to="/you/settings" className="action-row" onClick={() => setSheet(false)}>
+              <span className="action-row-main">
+                Settings
+                <span className="action-row-sub">Home city, privacy, notifications</span>
+              </span>
+              {requestCount > 0 && <span className="you-badge static">{requestCount}</span>}
+              <ChevronRight />
+            </Link>
+            {handle && (
+              <button type="button" className="action-row" onClick={shareHandle}>
+                <span className="action-row-main">
+                  Share my handle
+                  {shareNote && <span className="action-row-sub">{shareNote}</span>}
+                </span>
+                <ChevronRight />
+              </button>
+            )}
+          </div>
+        </div>
+      )}
 
       <AccountBlock />
 

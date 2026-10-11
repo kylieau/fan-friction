@@ -4712,3 +4712,173 @@ button.back-link {
 .profile-head .people-menu {
   margin-left: auto;
 }
+
+/* ---------- One search spot on every tab; the You avatar sheet (build notes 2, global search) ---------- */
+.page-head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.page-head-row .page-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.map-header-top.centered {
+  position: relative;
+}
+
+.map-header-search {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* The city list sits under its chip, as wide as the longest name (build notes 2: Explore follow-ups). */
+.area-menu {
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  min-width: 200px;
+  max-width: calc(100vw - 32px);
+}
+
+.you-header .search-button,
+.you-header .you-search {
+  margin-left: auto;
+}
+
+.you-avatar-btn {
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  flex-shrink: 0;
+}
+
+.avatar-chevron {
+  position: absolute;
+  right: -4px;
+  bottom: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background: var(--card);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.2);
+}
+
+.avatar-chevron svg {
+  width: 12px;
+  height: 12px;
+}
+
+.sheet-backdrop {
+  align-items: flex-end;
+  padding: 0;
+}
+
+.action-sheet {
+  width: 100%;
+  background: var(--card);
+  border-radius: 20px 20px 0 0;
+  padding: 8px 16px calc(16px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 -8px 24px rgba(15, 27, 45, 0.2);
+}
+
+.action-sheet .sheet-handle {
+  align-self: center;
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--line);
+  margin-bottom: 8px;
+}
+
+.action-sheet .you-header {
+  padding: 8px 0 12px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 4px;
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 6px 4px;
+  border: 0;
+  background: none;
+  text-align: left;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.action-row + .action-row {
+  border-top: 1px solid var(--line);
+}
+
+.action-row-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.action-row-sub {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.action-row svg {
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+}
+
+.you-badge.static {
+  position: static;
+}
+
+.log-add-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  box-shadow: inset 0 0 0 1.5px var(--dodger);
+  color: var(--dodger);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.search-group {
+  margin-top: 8px;
+}
+
+.search-group-title {
+  margin: 8px 0 4px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.search-group .log-list {
+  margin: 0;
+}

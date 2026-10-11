@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AccountBlock } from '../components/AccountBlock';
 import { HomeIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
+import { SearchButton } from '../components/SearchButton';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { showFriction } from '../config/scoreLabels';
 import {
@@ -148,13 +149,16 @@ export function HomeScreen() {
 
   return (
     <div className="screen page home-page">
-      {/* The city is named once (Kylie, Oct 9, 6.4): the title row. No switcher and no search on Home. */}
-      <h1 className="page-title home-title">
-        <span className="home-mark" aria-hidden>
-          <HomeIcon />
-        </span>
-        {tonightTitle}
-      </h1>
+      {/* The city is named once (Kylie, Oct 9, 6.4): the title row, with the one search button at its right. */}
+      <div className="page-head-row">
+        <h1 className="page-title home-title">
+          <span className="home-mark" aria-hidden>
+            <HomeIcon />
+          </span>
+          {tonightTitle}
+        </h1>
+        <SearchButton />
+      </div>
 
       {day && tonight.length === 0 && (
         <section className="card home-quiet-card" aria-label={tonightTitle}>
