@@ -624,7 +624,11 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   for (const plan of passed) {
     if (!plan.eventId) {
       if (plan.manual) {
-        added.push(manualEntryFrom(nightFromPlan(plan), homeMetroId, `manual-${plan.id.replace(/^plan-manual-/, '')}`));
+        // Once only (R11): a plan that already became an entry (this run or an earlier one) is just cleared.
+        const id = `manual-${plan.id.replace(/^plan-manual-/, '')}`;
+        if (!snapshot.added.some((entry) => entry.id === id) && !added.some((entry) => entry.id === id)) {
+          added.push(manualEntryFrom(nightFromPlan(plan), homeMetroId, id));
+        }
         settledIds.add(plan.id);
       }
       continue;
@@ -639,7 +643,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       if (!event) continue;
       const entry = entryFromEvent(event);
       const stamp = stampNow(event, now);
-      added.push(stamp ? { ...entry, stamp } : entry);
+      if (!added.some((row) => row.id === entry.id)) added.push(stamp ? { ...entry, stamp } : entry);
       settledIds.add(plan.id);
     } catch {
       /* try again next open */
