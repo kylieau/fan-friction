@@ -62,7 +62,9 @@ try {
   const { fetchWeather, fetchWeatherDays, isOpenAir, weatherHourFor, weatherHoursFor } = await server.ssrLoadModule('/src/data/formula/weather.ts');
   const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
   const { METROS, COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  const failed = [];
   for (const METRO of COVERED_METRO_IDS) {
+  try {
   const metro = METROS[METRO];
   const now = new Date();
   const today = now.toLocaleDateString('en-CA', { timeZone: metro.timeZone });
@@ -149,9 +151,18 @@ try {
     }
   }
   console.log(`${METRO} weather: ${fetched} point-dates and ${dayCalls} day-range call${dayCalls === 1 ? '' : 's'} fetched, ${written} day file${written === 1 ? '' : 's'} changed${backfill ? ' (backfill)' : ''}.`);
+  } catch (err) {
+    // One city's weather failing (Oct 10, 2026) must not cost every city its night: skip it, say so, carry on.
+    failed.push(METRO);
+    console.error(`${METRO} weather: skipped (${err instanceof Error ? err.message : err}). Yesterday's rows stay in place.`);
+  }
   }
   const index = await refreshWeatherIndex(root);
   console.log(index.changed ? `Updated ${index.relative} (${index.count} rows, ${index.days} days).` : `No change in ${index.relative}.`);
+  if (failed.length > 0) {
+    console.error(`Weather skipped for ${failed.join(', ')}.`);
+    exitCode = 1;
+  }
 } catch (err) {
   console.error(err instanceof Error ? err.message : err);
   exitCode = 1;

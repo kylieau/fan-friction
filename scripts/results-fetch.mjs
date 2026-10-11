@@ -23,7 +23,9 @@ let exitCode = 0;
 try {
   const { collectResults } = await server.ssrLoadModule('/src/data/sources/results.ts');
   const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  const failed = [];
   for (const RESULTS_METRO_ID of COVERED_METRO_IDS) {
+  try {
   const { from, through, rows } = await collectResults(RESULTS_METRO_ID);
   const dir = path.join(root, 'data', 'results', RESULTS_METRO_ID);
   await mkdir(dir, { recursive: true });
@@ -57,9 +59,17 @@ try {
     saved++;
   }
   console.log(`${RESULTS_METRO_ID}: results ${from} through ${through}: ${rows.length} final${rows.length === 1 ? '' : 's'}, ${saved} file${saved === 1 ? '' : 's'} changed.`);
+  } catch (err) {
+    failed.push(RESULTS_METRO_ID);
+    console.error(`${RESULTS_METRO_ID}: results skipped (${err instanceof Error ? err.message : err}).`);
+  }
   }
   const index = await refreshResultsIndex(root);
   console.log(index.changed ? `Updated ${index.relative} (${index.count} results).` : `No change in ${index.relative}.`);
+  if (failed.length > 0) {
+    console.error(`Results skipped for ${failed.join(', ')}.`);
+    exitCode = 1;
+  }
 } catch (err) {
   console.error(err instanceof Error ? err.message : err);
   exitCode = 1;

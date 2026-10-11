@@ -18,7 +18,7 @@ Three sources, the same ones the app already uses:
 
 Road games are not included. The app's feeds already skip them, because they do not crowd Los Angeles. A seeded date can list the same game twice: once from the hand-checked seed and once from the live feed. The app still shows only the hand-checked list for that date. The archive keeps both.
 
-If a live feed cannot be read, the run stops and does not write a file. An empty file would look like a quiet city. A same-day rerun replaces the file only when the listings changed. Git keeps the earlier copy.
+If a live feed cannot be read, that city is skipped for the night and no file is written for it; the other cities still save (Oct 10, 2026). An empty file would look like a quiet city. A same-day rerun replaces the file only when the listings changed. Git keeps the earlier copy.
 
 ## What the stamp uses
 
@@ -45,7 +45,7 @@ A night logged later is meant to be stamped from the saved schedule for that dat
 
 ## How it runs
 
-`npm run archive-schedule` writes today's listing. It needs the network. If a live feed cannot be read, it writes nothing.
+`npm run archive-schedule` writes today's listing. It needs the network. If a live feed cannot be read, that city writes nothing that night and the run reports it. Weather, the schedule and results are three steps; a bad weather or results feed never blocks the schedule.
 
 GitHub runs that command once a day, at **08:23 UTC** (1:23am Pacific in summer, 12:23am in winter), and commits to `main`. (From Oct 4 to Oct 9 the schedule carried a Los Angeles `timezone:` line, and every run started about seven hours late, 7–9am Pacific. It is back in plain UTC, Oct 9, with an odd minute to miss GitHub's busy top of the hour.) If `main` will not take the commit, the job opens a pull request instead, and that request needs a merge or the night stays missing.
 

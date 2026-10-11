@@ -1,6 +1,6 @@
 // Writes one Los Angeles schedule snapshot for today.
 // Listings come from the same MLB, ESPN, and seed sources the app already uses.
-// A feed that cannot be read stops the run, so a blank file is never saved.
+// A feed that cannot be read skips that city, so a blank file is never saved; the other cities still save.
 
 import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -29,7 +29,9 @@ let exitCode = 0;
 try {
   const { collectScheduleArchive } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
   const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  const failed = [];
   for (const metroId of COVERED_METRO_IDS) {
+  try {
   // The reads saved tonight need weather; without Supabase here, it comes from the files.
   await primeFromFiles(server, metroId);
   const snapshot = await collectScheduleArchive(metroId);
@@ -54,6 +56,11 @@ try {
     await rename(tmp, file);
     console.log(`Saved ${relative} (${snapshot.events.length} events, ${snapshot.window.from} through ${snapshot.window.through}: ${counts}).`);
   }
+  } catch (err) {
+    // A feed that cannot be read costs that city its night, not every city (Oct 10, 2026). No blank file is written.
+    failed.push(metroId);
+    console.error(`${metroId}: skipped (${err instanceof Error ? err.message : err}).`);
+  }
   }
 
   const index = await refreshScheduleIndex(root);
@@ -64,6 +71,10 @@ try {
       ? `Updated ${forecasts.relative} (${forecasts.archiveCount} archive read${forecasts.archiveCount === 1 ? '' : 's'}).`
       : `No change in ${forecasts.relative}.`,
   );
+  if (failed.length > 0) {
+    console.error(`No snapshot saved for ${failed.join(', ')}.`);
+    exitCode = 1;
+  }
 } catch (err) {
   console.error(err instanceof Error ? err.message : err);
   exitCode = 1;

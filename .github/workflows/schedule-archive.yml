@@ -1,10 +1,12 @@
-# Saves the Los Angeles schedule for the coming two weeks.
+# Saves each covered city's schedule for the coming two weeks, with weather and results.
 # Runs at 08:23 UTC: 1:23am Pacific in summer, 12:23am in winter. One run a day.
 # (Set in UTC on purpose: with a `timezone:` line the runs started about seven hours
 # late, 7-9am Pacific, Oct 5-9. The odd minute avoids the busy top of the hour.)
 # Free on this public repo: no new accounts or keys.
-# The job commits straight to main so the night is saved without waiting on a
-# review. If main rejects the push, it opens a pull request instead.
+# Weather, the schedule and results are separate steps, each carrying on past a bad
+# feed (Oct 10, 2026: one Open-Meteo text error cost the whole night). Whatever was
+# saved is committed; the job then turns red if any step failed, so it still shows.
+# The job commits straight to main so the night is saved without waiting on a review.
 # A forecast list the app uses will build the site. A listing-only commit does not.
 
 name: Nightly schedule archive
@@ -35,26 +37,40 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
 
       - name: Install
         run: npm ci
 
+      - name: Fetch weather
+        id: weather
+        continue-on-error: true
+        run: node scripts/weather-fetch.mjs
+
       - name: Save today's schedule
+        id: schedule
+        continue-on-error: true
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
-        run: npm run archive-schedule
+        run: node scripts/archive-schedule.mjs
+
+      - name: Save results
+        id: results
+        continue-on-error: true
+        run: node scripts/results-fetch.mjs
 
       # Expected draws from the night's results: this season's level and the opponent
       # ratios move as games are played (docs/expected-draw-decisions-oct7.md).
       - name: Recompute expected draws
-        # A hiccup here must not lose the night's snapshot: the commit step still runs.
+        id: draws
         continue-on-error: true
         run: node scripts/attendance-calibrate.mjs
 
       # The catalog as shared truth (docs/archive/proposals/catalog-proposal-oct6.md). Skips itself when the secrets are missing.
       - name: Write the catalog to Supabase
+        id: catalog
+        continue-on-error: true
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
@@ -76,7 +92,6 @@ jobs:
           day=$(git diff --cached --name-only | sed -n 's|.*/\([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]\)\.json|\1|p' | head -n 1)
           git commit -m "Save the schedule for ${day:-the coming days}"
           # main may have moved while the job ran; rebase the one data commit onto it and try again.
-          # (The old fallback opened a pull request, which this repo's settings do not allow Actions to do.)
           for attempt in 1 2 3; do
             if git push origin HEAD:main; then
               echo "Saved on main."
@@ -87,4 +102,11 @@ jobs:
             sleep 5
           done
           echo "Could not push the snapshot after three tries."
+          exit 1
+
+      - name: Report a failed step
+        if: steps.weather.outcome == 'failure' || steps.schedule.outcome == 'failure' || steps.results.outcome == 'failure' || steps.draws.outcome == 'failure' || steps.catalog.outcome == 'failure'
+        run: |
+          echo "weather=${{ steps.weather.outcome }} schedule=${{ steps.schedule.outcome }} results=${{ steps.results.outcome }} draws=${{ steps.draws.outcome }} catalog=${{ steps.catalog.outcome }}"
+          echo "A step failed. What the others saved is committed; read that step's log."
           exit 1

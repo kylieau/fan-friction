@@ -236,14 +236,21 @@ function rowAt(hourly: Hourly, index: number, base: Omit<WeatherRow, 'feelsLikeF
   };
 }
 
-/** Open-Meteo drops a connection now and then; one dropped call must not end the nightly run. Three tries, backing off. */
+/** Open-Meteo drops a connection, or answers with a text error, now and then; one bad call must not end the nightly run. Three tries, backing off. */
 async function fetchSteady(url: string): Promise<Response> {
   let last: unknown;
   for (let attempt = 0; attempt < 3; attempt++) {
     if (attempt) await new Promise((resolve) => setTimeout(resolve, attempt * 4000));
     try {
       const res = await fetch(url);
-      if (res.ok || (res.status < 500 && res.status !== 429)) return res;
+      if (res.ok) {
+        // A 200 with an error page in it (Oct 10, 2026: "Unexpected ...") must not reach JSON.parse.
+        if (/json/i.test(res.headers.get('content-type') ?? '')) return res;
+        const text = (await res.text()).slice(0, 80).replace(/\s+/g, ' ');
+        last = new Error(`Open-Meteo sent a non-JSON body: ${text}`);
+        continue;
+      }
+      if (res.status < 500 && res.status !== 429) return res;
       last = new Error(`Open-Meteo ${res.status}`);
     } catch (err) {
       last = err;
