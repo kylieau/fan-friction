@@ -353,6 +353,8 @@ export {
   toggleFavorite,
   isPlanned,
   plannedKind,
+  firmPlan,
+  type PlanAnswer,
   isWasThere,
   logStats,
   nextSavedPlan,

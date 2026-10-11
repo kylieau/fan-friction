@@ -23,6 +23,7 @@ import {
   getPersonalLog,
   isPlanned,
   plannedKind,
+  firmPlan,
   isStampLocked,
   isWasThere,
   isWatched,
@@ -104,7 +105,7 @@ export function DateScreen() {
     }
     // The same feed rules as Following (3.24): attended only once the date has passed, plans ahead.
     followingFeed(300).then((list) => {
-      if (current) setFriends(list.filter((f) => f.date === date && (f.metroId ?? DEFAULT_METRO.id) === metro.id));
+      if (current) setFriends(list.filter((f) => !f.interested && f.date === date && (f.metroId ?? DEFAULT_METRO.id) === metro.id));
     });
     return () => {
       current = false;
@@ -120,7 +121,7 @@ export function DateScreen() {
     () => yourEntries(log).filter((n) => n.when.sort === date && n.when.precision === 'day' && (n.metroId ?? DEFAULT_METRO.id) === metro.id),
     [log, date, metro.id],
   );
-  const plans = useMemo(() => log.plans.filter((p) => p.date === date && p.metroId === metro.id), [log, date, metro.id]);
+  const plans = useMemo(() => log.plans.filter((p) => firmPlan(p) && p.date === date && p.metroId === metro.id), [log, date, metro.id]);
   const rating = day?.rating ?? null;
   const locksAt = useMemo(() => stampLocksAt(asMetroDate(metro.id, date, events), metro.timeZone), [metro, date, events]);
   // The day's feels-like low and high at the city point (Kylie, Oct 6); the hourly number is the fallback for old data.
@@ -135,7 +136,7 @@ export function DateScreen() {
   const aheadWord = (e: CrowdEvent) => (plannedKind(e.id, log) === 'watch' ? 'Watching' : 'Attending');
 
   const mark = (e: CrowdEvent) => {
-    if (ahead) togglePlan(e, plannedKind(e.id, log) === 'watch');
+    if (ahead) togglePlan(e, plannedKind(e.id, log) === 'watch' ? 'watch' : 'attend');
     else if (attended(e)) {
       setUnmarking(e.id);
       return;
@@ -398,7 +399,7 @@ export function DateScreen() {
                 {ahead ? (attending(target) ? aheadWord(target) : 'Attending?') : 'Attended'}
               </button>
               {ahead && !attending(target) && (
-                <button type="button" className="link-button watched-action" onClick={() => togglePlan(target, true)}>
+                <button type="button" className="link-button watched-action" onClick={() => togglePlan(target, 'watch')}>
                   <TvIcon /> Watching?
                 </button>
               )}

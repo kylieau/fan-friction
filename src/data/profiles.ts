@@ -460,6 +460,8 @@ export interface FeedItem {
   entry?: Entry;
   /** The friend watched, not attended (8.2); on a planning line, they answered Watching? (Kylie, Oct 11). */
   watched?: boolean;
+  /** They answered Interested? (Kylie, Oct 11): shown on the event page and the by-event list, never the feed. */
+  interested?: boolean;
   example?: boolean;
 }
 
@@ -501,11 +503,11 @@ export async function followingFeed(limit = 30): Promise<FeedItem[]> {
       .order('date', { ascending: true })
       .limit(limit),
   ]);
-  const planning: FeedItem[] = ((plans ?? []) as { id: string; user_id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean } | null }[])
+  const planning: FeedItem[] = ((plans ?? []) as { id: string; user_id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean; interested?: boolean } | null }[])
     .filter((p) => p.date >= todayFor(p.metro_id))
     .flatMap((p) => {
       const friend = people.get(p.user_id);
-      return friend ? [{ kind: 'planning' as const, friend, title: p.title, date: p.date, venue: p.venue ?? undefined, metroId: p.metro_id, eventId: p.event_id ?? undefined, ...(p.data?.watch ? { watched: true } : {}) }] : [];
+      return friend ? [{ kind: 'planning' as const, friend, title: p.title, date: p.date, venue: p.venue ?? undefined, metroId: p.metro_id, eventId: p.event_id ?? undefined, ...(p.data?.watch ? { watched: true } : {}), ...(p.data?.interested ? { interested: true } : {}) }] : [];
     });
   const attended: FeedItem[] = cards.flatMap(({ userId, entry }) => {
     const friend = people.get(userId);
@@ -614,8 +616,8 @@ export async function plansOf(userId: string): Promise<PlanCard[]> {
     .gte('date', earliestToday())
     .order('date', { ascending: true })
     .limit(20);
-  return ((data ?? []) as { id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean } | null }[])
-    .filter((p) => p.date >= todayFor(p.metro_id))
+  return ((data ?? []) as { id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean; interested?: boolean } | null }[])
+    .filter((p) => p.date >= todayFor(p.metro_id) && !p.data?.interested)
     .map((p) => ({ id: p.id, date: p.date, metroId: p.metro_id, eventId: p.event_id ?? undefined, title: p.title, venue: p.venue ?? undefined, ...(p.data?.watch ? { watch: true } : {}) }));
 }
 

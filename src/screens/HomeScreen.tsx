@@ -11,6 +11,7 @@ import {
   favoriteKey,
   favoriteMark,
   favoritesOf,
+  firmPlan,
   followingFeed,
   getAccount,
   getCityDate,
@@ -99,7 +100,7 @@ export function HomeScreen() {
     const favorites = favoritesOf(log);
     const sorted = [...everywhere].sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')));
     const attending = log.plans
-      .filter((plan) => plan.date >= today)
+      .filter((plan) => firmPlan(plan) && plan.date >= today)
       .sort((a, b) => a.date.localeCompare(b.date))
       .map((plan) => ({ key: plan.id, title: plan.title, date: plan.date, metroId: plan.metroId, eventId: plan.eventId, venue: plan.venue, start: undefined as string | undefined, attending: true }));
     const seen = new Set(attending.map((row) => row.eventId));

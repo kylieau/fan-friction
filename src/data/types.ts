@@ -549,6 +549,11 @@ export interface Plan {
   /** Watching?, not Attending? (Kylie, Oct 11): it settles into a watched stub, not an attended one. */
   watch?: boolean;
   /**
+   * Interested?, the third answer (Kylie, Oct 11): no stub when the date passes, never on the feed,
+   * not in Coming up; it shows on the event page and in the Following tab's by-event list.
+   */
+  interested?: boolean;
+  /**
    * Not written. Save stores the night only. An older phone copy may still
    * have one; it is dropped on load.
    */

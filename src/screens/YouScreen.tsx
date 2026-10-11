@@ -412,7 +412,7 @@ function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | n
                 {group.items.map((item) => {
                   const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
                   // No "· you too" (Kylie, Oct 11): people already know they're going.
-                  const text = item.kind === 'planning' ? (item.watched ? 'is going to watch' : 'is going to') : item.watched ? 'watched' : 'went to';
+                  const text = item.kind === 'planning' ? (item.interested ? 'is interested in' : item.watched ? 'is going to watch' : 'is going to') : item.watched ? 'watched' : 'went to';
                   return (
                     <li key={`${item.friend.id}-${item.kind}`} className="feed-line">
                       <span className="avatar avatar-small" aria-hidden>
@@ -439,11 +439,12 @@ function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | n
   return (
     <>
       {/* The feed (Kylie, Oct 11, call 1): one plain sentence per line, every friend's line, newest ahead first; the event is the link. */}
-      {!example && items.length > 0 && (
+      {!example && items.some((item) => !item.interested) && (
         <section className="you-block" aria-label="Feed">
+          {/* Interested lines stay off the feed (Kylie, Oct 11): they show under Coming up and on the event page. */}
           <h2 className="you-heading">Feed</h2>
           <ul className="log-list card feed-flat">
-            {items.map((item) => (
+            {items.filter((item) => !item.interested).map((item) => (
               <li key={`${item.friend.id}-${item.kind}-${item.date}-${item.title}`}>
                 <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} className="feed-flat-row">
                   <span className="avatar avatar-small" aria-hidden>
@@ -468,7 +469,7 @@ function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | n
 /** The start of a friend's line (Kylie, Oct 11, call 1): "Sam is going to", "Sam is going to watch", "Sam went to", "Sam watched". The event follows. */
 export function feedLine(item: FeedItem): string {
   const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
-  if (item.kind === 'planning') return item.watched ? `${name} is going to watch` : `${name} is going to`;
+  if (item.kind === 'planning') return item.interested ? `${name} is interested in` : item.watched ? `${name} is going to watch` : `${name} is going to`;
   return item.watched ? `${name} watched` : `${name} went to`;
 }
 

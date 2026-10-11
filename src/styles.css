@@ -5365,6 +5365,13 @@ button.back-link {
   color: var(--action);
 }
 
+/* The quieter questions under the main one (Kylie, Oct 11): Watching? and Interested? side by side. */
+.quiet-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .mark-button.watched-on {
   display: inline-flex;
   align-items: center;

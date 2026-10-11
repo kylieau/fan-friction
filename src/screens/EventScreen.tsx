@@ -38,6 +38,10 @@ import {
   togglePlan,
   toggleWasThere,
   yourEntries,
+  subscribeAccount,
+  getAccount,
+  followingFeed,
+  type FeedItem,
   type CityDate,
   type CrowdEvent,
 } from '../data';
@@ -50,7 +54,7 @@ import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
-import { comparePath, openedMetroId, eventPath } from '../lib/view';
+import { comparePath, datePath, openedMetroId, eventPath } from '../lib/view';
 import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { hoursOf, milesBetween, runningHours } from '../lib/windows';
@@ -111,6 +115,20 @@ export function EventScreen() {
   const tmId = liveEvent?.ticketmasterId;
   const wantsPrice = Boolean(liveEvent && tmId && liveEvent.date >= todayIn(METROS[liveEvent.metroId] ?? DEFAULT_METRO) && !yourEntries(log).some((entry) => entry.eventId === liveEvent.id));
   const [price, setPrice] = useState<TicketPrice | null>(null);
+  // The people you follow at this event (Kylie, Oct 11): their answers, Interested included, on the event page.
+  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
+  const [friends, setFriends] = useState<FeedItem[]>([]);
+  useEffect(() => {
+    let current = true;
+    if (!account || !liveEvent) {
+      setFriends([]);
+      return;
+    }
+    followingFeed(300).then((list) => current && setFriends(list.filter((f) => f.eventId === liveEvent.id)));
+    return () => {
+      current = false;
+    };
+  }, [account?.id, liveEvent?.id]);
   useEffect(() => {
     if (!wantsPrice || !tmId) {
       setPrice(null);
@@ -159,7 +177,7 @@ export function EventScreen() {
 
   return (
     <div className="screen page event-page">
-      <MapBack date={date} metroId={e.metroId} className="back-link">
+      <MapBack date={date} metroId={e.metroId} eventId={e.id} className="back-link">
         <ChevronDown /> {shortLocalDate(date)}
       </MapBack>
 
@@ -197,12 +215,27 @@ export function EventScreen() {
         {ahead ? (
           plannedKind(e.id, log) === 'watch' ? (
             <>
-              <button type="button" className="mark-button on watched-on" aria-pressed onClick={() => togglePlan(e, true)}>
+              <button type="button" className="mark-button on watched-on" aria-pressed onClick={() => togglePlan(e, 'watch')}>
                 <TvIcon /> Watching
               </button>
               <button type="button" className="mark-button small" onClick={() => togglePlan(e)}>
                 Attending?
               </button>
+            </>
+          ) : plannedKind(e.id, log) === 'interested' ? (
+            <>
+              {/* Interested (Kylie, Oct 11): the third answer. It lapses with the date and never makes a stub. */}
+              <button type="button" className="mark-button on" aria-pressed onClick={() => togglePlan(e, 'interested')}>
+                Interested
+              </button>
+              <div className="quiet-actions">
+                <button type="button" className="link-button watched-action" onClick={() => togglePlan(e)}>
+                  Attending?
+                </button>
+                <button type="button" className="link-button watched-action" onClick={() => togglePlan(e, 'watch')}>
+                  <TvIcon /> Watching?
+                </button>
+              </div>
             </>
           ) : plannedKind(e.id, log) === 'attend' ? (
             <button type="button" className="mark-button on" aria-pressed onClick={() => togglePlan(e)}>
@@ -210,13 +243,18 @@ export function EventScreen() {
             </button>
           ) : (
             <>
-              {/* Before the event, both are questions, a call to action rather than a status (Kylie, Oct 11). */}
+              {/* Before the event, all three are questions, a call to action rather than a status (Kylie, Oct 11). */}
               <button type="button" className="gold-button" onClick={() => togglePlan(e)}>
                 Attending?
               </button>
-              <button type="button" className="link-button watched-action" onClick={() => togglePlan(e, true)}>
-                <TvIcon /> Watching?
-              </button>
+              <div className="quiet-actions">
+                <button type="button" className="link-button watched-action" onClick={() => togglePlan(e, 'watch')}>
+                  <TvIcon /> Watching?
+                </button>
+                <button type="button" className="link-button watched-action" onClick={() => togglePlan(e, 'interested')}>
+                  Interested?
+                </button>
+              </div>
             </>
           )
         ) : isWasThere(e.id, log) ? (
@@ -251,6 +289,23 @@ export function EventScreen() {
         )}
         {logged && <EntryLayer entry={logged} />}
       </div>
+
+      {friends.length > 0 && (
+        <section className="you-block" aria-labelledby="friends-event">
+          <h2 id="friends-event" className="you-heading">
+            Following
+          </h2>
+          <ul className="log-list">
+            {friends.map((item) => (
+              <li key={`${item.friend.id}-${item.kind}`} className="log-row">
+                <span className="log-main">
+                  <span className="log-friend">{friendLine(item)}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {a && (
         <section className="card up-against" aria-label="Up against">
@@ -536,14 +591,24 @@ function WeatherDetail({ event }: { event: CrowdEvent }) {
  * Back to the map she left. From the map, that is the same city, zoom, and
  * selection. A refresh still has that memory. Any other visit keeps the date link.
  */
+/** A friend's line on the event page (Kylie, Oct 11): the event is the page, so the sentence ends without it. */
+function friendLine(item: FeedItem): string {
+  const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
+  if (item.kind === 'planning') return item.interested ? `${name} is interested` : item.watched ? `${name} is going to watch` : `${name} is going`;
+  return item.watched ? `${name} watched` : `${name} was there`;
+}
+
 function MapBack({
   date,
   metroId,
+  eventId,
   className,
   children,
 }: {
   date: string;
   metroId?: string;
+  /** Given, the date line opens this event's date page unless the map sent you here (Kylie, Oct 11, call 6). */
+  eventId?: string;
   className?: string;
   children: ReactNode;
 }) {
@@ -554,7 +619,7 @@ function MapBack({
   const params = new URLSearchParams();
   if (metroId && metroId !== openedMetroId()) params.set('metro', metroId);
   params.set('date', date);
-  const to = fromMap ? (memoryHref ?? '/explore') : `/explore?${params.toString()}`;
+  const to = fromMap ? (memoryHref ?? '/explore') : eventId ? datePath(date, metroId ?? DEFAULT_METRO.id, eventId) : `/explore?${params.toString()}`;
   return (
     <Link
       to={to}

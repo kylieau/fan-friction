@@ -697,25 +697,33 @@ export function toughestFights(entries: readonly Entry[]): { steamrolled: number
   return { steamrolled: levels.filter((l) => l === 'Extreme').length, swamped: levels.filter((l) => l === 'Heavy').length };
 }
 
+/** Attending or Watching for this event. An Interested answer is not a plan to be there (Kylie, Oct 11). */
 export function isPlanned(eventId: string, log: PersonalLog = snapshot): boolean {
-  return log.plans.some((plan) => plan.eventId === eventId);
+  return log.plans.some((plan) => plan.eventId === eventId && !plan.interested);
 }
 
-/** Which question was answered for an event ahead (Kylie, Oct 11): Attending?, Watching?, or neither. */
-export function plannedKind(eventId: string, log: PersonalLog = snapshot): 'attend' | 'watch' | null {
+export type PlanAnswer = 'attend' | 'watch' | 'interested';
+
+/** A plan that puts you somewhere: Attending or Watching, never Interested. */
+export function firmPlan(plan: Plan): boolean {
+  return !plan.interested;
+}
+
+/** Which question was answered for an event ahead (Kylie, Oct 11): Attending?, Watching?, Interested?, or none. */
+export function plannedKind(eventId: string, log: PersonalLog = snapshot): PlanAnswer | null {
   const plan = log.plans.find((plan) => plan.eventId === eventId);
-  return plan ? (plan.watch ? 'watch' : 'attend') : null;
+  return plan ? (plan.interested ? 'interested' : plan.watch ? 'watch' : 'attend') : null;
 }
 
 /**
- * Answer Attending? (or Watching?) for an event ahead, or take the answer back. The same
- * answer again clears the plan; the other answer switches it. One plan per event.
+ * Answer Attending?, Watching? or Interested? for an event ahead, or take the answer back.
+ * The same answer again clears the plan; another answer switches it. One plan per event.
  */
-export function togglePlan(event: CrowdEvent, watch = false) {
+export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
   const kind = plannedKind(event.id);
   if (kind) {
     const plans = snapshot.plans.filter((plan) => plan.eventId !== event.id);
-    if (kind === (watch ? 'watch' : 'attend')) {
+    if (kind === answer) {
       commit({ ...snapshot, plans });
       return;
     }
@@ -727,7 +735,8 @@ export function togglePlan(event: CrowdEvent, watch = false) {
     eventId: event.id,
     title: listTitle(event),
     venue: venueLabel(event),
-    ...(watch ? { watch: true } : {}),
+    ...(answer === 'watch' ? { watch: true } : {}),
+    ...(answer === 'interested' ? { interested: true } : {}),
   };
   commit({ ...snapshot, plans: [...snapshot.plans.filter((row) => row.eventId !== event.id), plan] });
 }
@@ -751,6 +760,11 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   const added: Entry[] = [];
   const settledIds = new Set<string>();
   for (const plan of passed) {
+    // Interested never becomes a stub (Kylie, Oct 11): the answer just lapses with the date.
+    if (plan.interested) {
+      settledIds.add(plan.id);
+      continue;
+    }
     if (!plan.eventId) {
       if (plan.manual) {
         // Once only (R11): a plan that already became an entry (this run or an earlier one) is just cleared.
@@ -794,7 +808,7 @@ export function removePlan(planId: string) {
 
 /** Plans still ahead, soonest first. A past plan stays in the backup but leaves Up next. */
 export function upcomingPlans(today: string, log: PersonalLog = snapshot): Plan[] {
-  return log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
+  return log.plans.filter((plan) => firmPlan(plan) && plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title));
 }
 
 /** Today's date in a time zone, "2026-10-04". */
@@ -813,7 +827,7 @@ export function nextSavedPlan(log: PersonalLog = snapshot, now = new Date()): Pl
     log.plans
       .filter((plan) => {
         const zone = METROS[plan.metroId]?.timeZone ?? 'America/Los_Angeles';
-        return plan.date >= todayInZone(zone, now);
+        return firmPlan(plan) && plan.date >= todayInZone(zone, now);
       })
       .sort((a, b) => a.date.localeCompare(b.date) || a.title.localeCompare(b.title))[0] ?? null
   );

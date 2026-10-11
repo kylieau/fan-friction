@@ -36,7 +36,11 @@ const log = {
     { id: 'seed-a-2', when: { sort: '2026-10-02', label: 'Oct 2, 2026', precision: 'day' }, title: 'Slayer', tags: ['Concerts'], sport: 'Concerts', sides: ['Slayer'], venue: 'Kia Forum', kind: 'show', metroId: 'la', inMetro: true },
     { id: 'seed-a-3', when: { sort: '2026-10-04', label: 'Oct 4, 2026', precision: 'day' }, title: 'Rams vs. Bills', tags: ['Rams'], sport: 'Football', sides: ['Rams'], venue: 'SoFi Stadium', kind: 'game', metroId: 'la', inMetro: true, watched: true },
   ],
-  plans: [{ id: 'plan-seed-a', date: '2026-10-17', metroId: 'la', eventId: 'seed-plan-texas', title: 'Texas vs. Oklahoma', venue: 'Cotton Bowl' }],
+  plans: [
+    { id: 'plan-seed-a', date: '2026-10-17', metroId: 'la', eventId: 'seed-plan-texas', title: 'Texas vs. Oklahoma', venue: 'Cotton Bowl' },
+    // An Interested answer on a real listed game (Kylie, Oct 11), so B's event page and by-event list have a line to show.
+    { id: 'plan-2026-10-12-espn-rams-401872994', date: '2026-10-12', metroId: 'la', eventId: '2026-10-12-espn-rams-401872994', title: 'Rams vs. Bills', venue: 'SoFi Stadium', interested: true },
+  ],
 };
 await a.store.save(diffLogs(empty, log));
 console.log(`Seeded: A has ${(await a.store.load()).added.length} entries and 1 plan; B follows A (approved).`);
