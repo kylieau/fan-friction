@@ -483,7 +483,8 @@ export const VENUES: Record<string, Venue> = {
         note: 'Official. Current published setup; other configurations are not assumed equal. Source: https://www.pabsttheatergroup.com/rentals/ticketed-event-rentals'
       }
     ],
-    roof: 'indoor'
+    roof: 'indoor',
+    ticketmasterIds: ['ZFr9jZeA7F', 'KovZpZA1IdeA']
   },
   'uihlein-hall': {
     id: 'uihlein-hall',

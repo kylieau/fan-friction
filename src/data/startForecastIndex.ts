@@ -20356,7 +20356,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-mlb-849809",
     "date": "2026-10-11",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20375,7 +20375,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-Z7r9jZ1A70-po",
     "date": "2026-10-11",
     "start": "20:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20390,7 +20390,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-mlb-849812",
     "date": "2026-10-12",
     "start": "16:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20409,7 +20409,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-tm-vv1a6Zk3pxbFxZeC5",
     "date": "2026-10-13",
     "start": "20:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "draw": {
       "count": 4500
@@ -20420,7 +20420,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-tm-Z7r9jZ1A70-pK",
     "date": "2026-10-13",
     "start": "20:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "draw": {
       "count": 1341
@@ -20431,7 +20431,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-bucks-401908942",
     "date": "2026-10-14",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20447,10 +20447,21 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "milwaukee",
+    "eventId": "2026-10-15-tm-Z7r9jZ1A7J_fI",
+    "date": "2026-10-15",
+    "start": "20:00",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
+    "capturedOn": "2026-10-11",
+    "draw": {
+      "count": 2414
+    }
+  },
+  {
+    "metroId": "milwaukee",
     "eventId": "2026-10-16-ht-milwaukee-admirals-1029142",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20467,7 +20478,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-vv1A6Zko9GkeIuPSF",
     "date": "2026-10-16",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20479,7 +20490,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-vvG1jZ_5SNFpaa",
     "date": "2026-10-16",
     "start": "20:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20496,7 +20507,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-Z7r9jZ1A7-Fot",
     "date": "2026-10-16",
     "start": "20:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20508,10 +20519,22 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "milwaukee",
+    "eventId": "2026-10-16-tm-Z7r9jZ1A7J_fs",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
+    "capturedOn": "2026-10-11",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "milwaukee",
     "eventId": "2026-10-17-ht-milwaukee-admirals-1029154",
     "date": "2026-10-17",
     "start": "18:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20530,7 +20553,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG1jZ_GwqYf7f",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20545,7 +20568,19 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-Z7r9jZ1A7JboN",
     "date": "2026-10-17",
     "start": "16:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
+    "capturedOn": "2026-10-11",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "milwaukee",
+    "eventId": "2026-10-17-tm-Z7r9jZ1AAZFa8",
+    "date": "2026-10-17",
+    "start": "17:00",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20557,7 +20592,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-mlb-849806",
     "date": "2026-10-18",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20576,7 +20611,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-vv1A6Zko_GkePx5w1",
     "date": "2026-10-18",
     "start": "14:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20588,7 +20623,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-Z7r9jZ1A7Ptr_",
     "date": "2026-10-18",
     "start": "20:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20603,7 +20638,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-19-mlb-849807",
     "date": "2026-10-19",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20622,7 +20657,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-19-tm-Z7r9jZ1A7Ptqg",
     "date": "2026-10-19",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20634,10 +20669,25 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "milwaukee",
+    "eventId": "2026-10-19-tm-Z7r9jZ1AAZ9f7",
+    "date": "2026-10-19",
+    "start": "19:30",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
+    "capturedOn": "2026-10-11",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2414
+    }
+  },
+  {
+    "metroId": "milwaukee",
     "eventId": "2026-10-20-tm-vv17jZ_3GkXXZ7CU",
     "date": "2026-10-20",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
   },
   {
@@ -20645,7 +20695,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-tm-vvG1jZ_2ro1ebx",
     "date": "2026-10-20",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "draw": {
       "count": 4500
@@ -20656,7 +20706,15 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-tm-vvG1jZ_uL87pJl",
     "date": "2026-10-20",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
+    "capturedOn": "2026-10-11"
+  },
+  {
+    "metroId": "milwaukee",
+    "eventId": "2026-10-20-tm-Z7r9jZ1A7x9Zd",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
   },
   {
@@ -20664,7 +20722,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-vv17jZ_3GkXXvfCD",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
   },
   {
@@ -20672,7 +20730,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-vv1A6Zk8gGkdkFE3x",
     "date": "2026-10-21",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "draw": {
       "count": 4500
@@ -20683,15 +20741,26 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-vvG1jZ_uL8AUJs",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
+  },
+  {
+    "metroId": "milwaukee",
+    "eventId": "2026-10-21-tm-Z7r9jZ1A7PfOs",
+    "date": "2026-10-21",
+    "start": "20:00",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
+    "capturedOn": "2026-10-11",
+    "draw": {
+      "count": 2414
+    }
   },
   {
     "metroId": "milwaukee",
     "eventId": "2026-10-22-tm-vv17jZ_3GkXXd7CT",
     "date": "2026-10-22",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
   },
   {
@@ -20699,7 +20768,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-tm-vvG1jZ_uL86kJW",
     "date": "2026-10-22",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
   },
   {
@@ -20707,7 +20776,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-espn-bucks-401909848",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20726,7 +20795,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-ht-milwaukee-admirals-1029183",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20743,7 +20812,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-vv17jZ_3GkXWzVCj",
     "date": "2026-10-23",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20755,7 +20824,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-vvG1jZ_uL8FJEv",
     "date": "2026-10-23",
     "start": "19:30",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20764,10 +20833,25 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   },
   {
     "metroId": "milwaukee",
+    "eventId": "2026-10-23-tm-Z7r9jZ1A7POf-",
+    "date": "2026-10-23",
+    "start": "20:00",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
+    "capturedOn": "2026-10-11",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 2414
+    }
+  },
+  {
+    "metroId": "milwaukee",
     "eventId": "2026-10-24-tm-LvZ18QPv9cD2-bkNQJmNb",
     "date": "2026-10-24",
     "start": "18:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11",
     "draw": {
       "count": 4500
@@ -20778,7 +20862,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vv17jZ_3GkXWD0C-",
     "date": "2026-10-24",
     "start": "14:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
   },
   {
@@ -20786,7 +20870,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vvG1jZ_uL85JEF",
     "date": "2026-10-24",
     "start": "14:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
   },
   {
@@ -20794,15 +20878,26 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-Z7r9jZ1A70yPg",
     "date": "2026-10-24",
     "start": "13:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
+  },
+  {
+    "metroId": "milwaukee",
+    "eventId": "2026-10-24-tm-Z7r9jZ1A7POfx",
+    "date": "2026-10-24",
+    "start": "20:00",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
+    "capturedOn": "2026-10-11",
+    "draw": {
+      "count": 2414
+    }
   },
   {
     "metroId": "milwaukee",
     "eventId": "2026-10-24-tm-Z7r9jZ1A7PtOY",
     "date": "2026-10-24",
     "start": "19:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
   },
   {
@@ -20810,7 +20905,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-vvG1jZ_uL8CJEC",
     "date": "2026-10-25",
     "start": "13:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
   },
   {
@@ -20818,8 +20913,19 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-Z7r9jZ1A7Pkv7",
     "date": "2026-10-25",
     "start": "15:00",
-    "capturedAt": "2026-10-11T20:12:31.515Z",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
     "capturedOn": "2026-10-11"
+  },
+  {
+    "metroId": "milwaukee",
+    "eventId": "2026-10-25-tm-Z7r9jZ1A7POfF",
+    "date": "2026-10-25",
+    "start": "20:00",
+    "capturedAt": "2026-10-11T23:07:15.327Z",
+    "capturedOn": "2026-10-11",
+    "draw": {
+      "count": 2414
+    }
   },
   {
     "metroId": "montreal",
