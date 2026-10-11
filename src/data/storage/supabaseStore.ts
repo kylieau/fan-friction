@@ -160,7 +160,8 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         hiddenSeedIds: settings?.hidden_seed_ids ?? EMPTY_LOG.hiddenSeedIds,
         added: (entries ?? []).map((row) => {
           const entry: Entry = { ...row.data, id: row.id };
-          const at = isoTime(row.updated_at);
+          // The edit time the app wrote (on the server's clock) decides who wins (R06); the server's own stamp is the fallback.
+          const at = isoTime(row.data.updatedAt) ?? isoTime(row.updated_at);
           if (at) entry.updatedAt = at;
           const priv = privateFor.get(row.id);
           if (priv?.note) entry.note = priv.note;
@@ -177,7 +178,7 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
             venue: row.venue ?? undefined,
             ...row.data,
           };
-          const at = isoTime(row.updated_at);
+          const at = isoTime((row.data as { updatedAt?: string }).updatedAt) ?? isoTime(row.updated_at);
           if (at) plan.updatedAt = at;
           return plan;
         }),

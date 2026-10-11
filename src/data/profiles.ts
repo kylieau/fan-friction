@@ -76,6 +76,13 @@ async function cardsById(c: SupabaseClient, ids: string[]): Promise<Map<string, 
 }
 
 async function cardByHandle(c: SupabaseClient, handle: string): Promise<Profile | null> {
+  // One exact handle through the server function (R04); the view and the table are the older shapes.
+  const viaFn = await c.rpc('profile_card', { h: handle });
+  if (!viaFn.error) {
+    const row = (viaFn.data as ProfileRow[] | null)?.[0];
+    return row ? fromRow(row) : null;
+  }
+  if (!notThereYet(viaFn.error)) return null;
   let { data, error } = await c.from('profile_cards').select(CARD_COLUMNS).ilike('handle', handle).maybeSingle();
   if (error && notThereYet(error)) ({ data, error } = await c.from('profiles').select(CARD_COLUMNS).ilike('handle', handle).maybeSingle());
   if (error || !data) return null;
@@ -116,11 +123,13 @@ interface EntryCardRow {
   neutral_site?: boolean | null;
   below_floor?: boolean | null;
   in_metro?: boolean | null;
+  watched?: boolean | null;
   /** Only on the fallback read of the table itself (before migration 0017). */
   data?: Entry;
 }
 
-const ENTRY_CARD_COLUMNS = 'id, user_id, when_sort, when_precision, title, kind, metro_id, event_id, when, venue, stamp, review, away, neutral_site, below_floor, in_metro';
+const ENTRY_CARD_COLUMNS = 'id, user_id, when_sort, when_precision, title, kind, metro_id, event_id, when, venue, stamp, review, away, neutral_site, below_floor, in_metro, watched';
+const ENTRY_CARD_COLUMNS_OLD = 'id, user_id, when_sort, when_precision, title, kind, metro_id, event_id, when, venue, stamp, review, away, neutral_site, below_floor, in_metro';
 const ENTRY_TABLE_COLUMNS = 'id, user_id, when_sort, when_precision, title, kind, metro_id, event_id, data';
 
 /** The card as an Entry the screens can draw: the shown fields only, whichever shape the read came in. */
@@ -146,6 +155,7 @@ function entryFromCard(row: EntryCardRow): Entry {
   if (venue) entry.venue = venue;
   if (stamp) entry.stamp = stamp;
   if (review) entry.review = review;
+  if (row.watched ?? d?.watched) entry.watched = true;
   for (const [key, value] of [
     ['away', row.away ?? d?.away],
     ['neutralSite', row.neutral_site ?? d?.neutralSite],
@@ -166,6 +176,8 @@ async function entryCards(c: SupabaseClient, userIds: string[], limit?: number):
     return q;
   };
   let { data, error } = await ask('entry_cards', ENTRY_CARD_COLUMNS);
+  // Before 0020 the view has no watched column; before 0017 there is no view.
+  if (error && error.code === '42703') ({ data, error } = await ask('entry_cards', ENTRY_CARD_COLUMNS_OLD));
   if (error && notThereYet(error)) ({ data, error } = await ask('entries', ENTRY_TABLE_COLUMNS));
   if (error || !data) return [];
   return (data as unknown as EntryCardRow[]).filter((row) => !row.data?.private).map((row) => ({ userId: row.user_id, entry: entryFromCard(row) }));
@@ -312,7 +324,13 @@ export async function follow(target: Profile): Promise<FollowStatus | string> {
   if (!c || !me) return 'Sign in to follow.';
   const { error } = await c.from('follows').insert({ follower_id: me.id, followee_id: target.id, status: 'pending' });
   if (!error) return 'pending';
-  if (error.code === '23505') return followStatus(target.id);
+  if (error.code === '23505') {
+    // A row already exists. A hidden one (removed, then unfollowed) reads as none; say Requested so nothing looks broken.
+    const status = await followStatus(target.id);
+    return status === 'none' ? 'pending' : status;
+  }
+  // Refused at the door (R01: blocked) reads as a quiet request too.
+  if (error.code === '42501') return 'pending';
   return error.message;
 }
 
@@ -325,6 +343,8 @@ export async function unfollow(targetId: string): Promise<FollowStatus> {
   const me = getAccount();
   if (!c || !me) return 'none';
   await c.from('follows').delete().eq('follower_id', me.id).eq('followee_id', targetId);
+  // A removed row cannot be deleted; Unfollow hides it on this side instead (R02, migration 0020).
+  await c.rpc('hide_follow', { target: targetId });
   return followStatus(targetId);
 }
 
@@ -393,14 +413,22 @@ export async function approveFollow(followerId: string): Promise<void> {
   await c.from('follows').update({ status: 'approved' }).eq('follower_id', followerId).eq('followee_id', me.id);
 }
 
-/** Decline quietly: the row stays as "declined" so the requester still sees "Requested" (migration 0013). */
-export async function declineFollow(followerId: string): Promise<void> {
+/**
+ * Decline quietly: the row stays as "declined" so the requester still sees "Requested" (migration 0013).
+ * Resolves to an error message, or null. A failed decline is reported, never turned into a delete (R03);
+ * only a project still on the old shape (no "declined" status) falls back to deleting.
+ */
+export async function declineFollow(followerId: string): Promise<string | null> {
   const c = supabase();
   const me = getAccount();
-  if (!c || !me) return;
+  if (!c || !me) return 'Sign in first.';
   const { error } = await c.from('follows').update({ status: 'declined' }).eq('follower_id', followerId).eq('followee_id', me.id);
-  // Before 0013 the status check refuses "declined"; fall back to the old delete so a decline still works.
-  if (error) await c.from('follows').delete().eq('follower_id', followerId).eq('followee_id', me.id);
+  if (!error) return null;
+  if (error.code === '23514') {
+    const old = await c.from('follows').delete().eq('follower_id', followerId).eq('followee_id', me.id);
+    return old.error ? "Couldn't decline, try again." : null;
+  }
+  return "Couldn't decline, try again.";
 }
 
 export interface FriendEntry {
@@ -425,6 +453,8 @@ export interface FeedItem {
   eventId?: string;
   /** The entry behind an attended line, for its read. */
   entry?: Entry;
+  /** The friend watched, not attended (8.2). */
+  watched?: boolean;
   example?: boolean;
 }
 
@@ -475,7 +505,7 @@ export async function followingFeed(limit = 30): Promise<FeedItem[]> {
   const attended: FeedItem[] = cards.flatMap(({ userId, entry }) => {
     const friend = people.get(userId);
     if (!friend || entry.when.sort >= todayFor(entry.metroId)) return [];
-    return [{ kind: 'attended' as const, friend, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry }];
+    return [{ kind: 'attended' as const, friend, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry, ...(entry.watched ? { watched: true } : {}) }];
   });
   return [...planning, ...attended].slice(0, limit);
 }
@@ -604,7 +634,11 @@ export async function searchPeople(query: string, limit = 20): Promise<Profile[]
   const q = query.trim().toLowerCase();
   if (!c || q.length < PEOPLE_SEARCH_MIN) return [];
   const me = getAccount();
-  const like = `%${q.replace(/[%_]/g, '')}%`;
+  const viaFn = await c.rpc('search_people', { q });
+  if (!viaFn.error) return ((viaFn.data ?? []) as ProfileRow[]).map(fromRow);
+  if (!notThereYet(viaFn.error)) return [];
+  // Older shape: the view, with commas and brackets stripped here (R04).
+  const like = `%${q.replace(/[%_,()[\]{}<>]/g, '')}%`;
   let { data, error } = await c.from('profile_cards').select(CARD_COLUMNS).or(`handle.ilike.${like},display_name.ilike.${like}`).limit(limit);
   if (error && notThereYet(error)) ({ data, error } = await c.from('profiles').select(CARD_COLUMNS).or(`handle.ilike.${like},display_name.ilike.${like}`).limit(limit));
   return ((data ?? []) as ProfileRow[]).filter((row) => row.id !== me?.id && row.handle).map(fromRow);

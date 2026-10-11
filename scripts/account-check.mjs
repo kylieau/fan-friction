@@ -145,6 +145,47 @@ r = await b.c.from('entry_cards').select('id').eq('user_id', s1.id);
 ok('the blocked person sees no cards', (r.data ?? []).length === 0, `${(r.data ?? []).length} rows`);
 await s1.c.rpc('unblock_user', { target: b.id });
 
+// ---- Oct 11 review fixes (R01, R02, R04, R05, R06) ----
+await s1.c.rpc('block_user', { target: b.id });
+r = await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending' });
+ok('a blocked person cannot send a request (R01; needs migration 0020)', Boolean(r.error), r.error ? '' : 'row was accepted');
+await s1.c.rpc('unblock_user', { target: b.id });
+await b.c.from('follows').delete().eq('follower_id', b.id).eq('followee_id', s1.id);
+await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending' });
+await s1.c.from('follows').update({ status: 'approved' }).eq('follower_id', b.id).eq('followee_id', s1.id);
+await s1.c.from('follows').update({ status: 'removed' }).eq('follower_id', b.id).eq('followee_id', s1.id);
+await b.c.from('follows').delete().eq('follower_id', b.id).eq('followee_id', s1.id);
+r = await s1.c.from('follows').select('status').eq('follower_id', b.id).eq('followee_id', s1.id).maybeSingle();
+ok('a removed follower cannot delete the row (R02; needs migration 0020)', r.data?.status === 'removed', JSON.stringify(r.data));
+r = await b.c.rpc('hide_follow', { target: s1.id });
+ok('Unfollow hides a removed row for them (R02; needs migration 0020)', !r.error, r.error?.message);
+r = await b.c.from('my_follows').select('status').eq('followee_id', s1.id);
+ok('the hidden row is gone from their side (R02)', !r.error && (r.data ?? []).length === 0, r.error?.message ?? `${(r.data ?? []).length} rows`);
+r = await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending' });
+ok('and they cannot request again (R02)', Boolean(r.error), r.error ? '' : 'row was accepted');
+r = await anon.from('profile_cards').select('id').limit(1);
+ok('a signed-out visitor cannot list the cards (R04; needs migration 0020)', Boolean(r.error), r.error ? '' : `${(r.data ?? []).length} rows`);
+r = await anon.rpc('profile_card', { h: handleA });
+ok('a profile link still resolves one exact handle for a visitor (R04)', !r.error && (r.data ?? []).length === 1, r.error?.message ?? `${(r.data ?? []).length} rows`);
+r = await b.c.rpc('search_people', { q: handleA.slice(0, 2) });
+ok('a two-letter search finds nothing (R04)', !r.error && (r.data ?? []).length === 0, r.error?.message ?? `${(r.data ?? []).length} rows`);
+r = await b.c.rpc('search_people', { q: `(${handleA.slice(0, 3)},)` });
+ok('brackets and commas are stripped before searching (R04)', !r.error && (r.data ?? []).some((row) => row.id === s1.id), r.error?.message ?? `${(r.data ?? []).length} rows`);
+// R05: a declined requester may not open a switched-off link
+await s1.c.from('follows').delete().eq('follower_id', b.id).eq('followee_id', s1.id);
+await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending' });
+await s1.c.from('follows').update({ status: 'declined' }).eq('follower_id', b.id).eq('followee_id', s1.id);
+await s1.c.from('profiles').update({ link_off: true }).eq('id', s1.id);
+r = await b.c.rpc('profile_card', { h: handleA });
+ok('a declined requester cannot open a switched-off link (R05; needs migration 0020)', !r.error && (r.data ?? []).length === 0, r.error?.message ?? `${(r.data ?? []).length} rows`);
+await s1.c.from('profiles').update({ link_off: false }).eq('id', s1.id);
+await s1.c.from('follows').delete().eq('follower_id', b.id).eq('followee_id', s1.id);
+// R06: an older edit arriving later does not overwrite the newer one
+d = diffLogs(empty, log([entry('edit-1', { review: 'newer', updatedAt: '2026-10-11T12:00:00.000Z' })])); await s1.store.save(d);
+d = diffLogs(empty, log([entry('edit-1', { review: 'older', updatedAt: '2026-10-11T11:00:00.000Z' })])); await s2.store.save(d);
+cloud1 = await s1.store.load();
+ok('an older offline edit does not overwrite a newer one (R06; needs migration 0020)', cloud1.added.find((e) => e.id === 'edit-1')?.review === 'newer', cloud1.added.find((e) => e.id === 'edit-1')?.review);
+
 // cleanup
 await b.c.from('follows').delete().eq('follower_id', b.id);
 await s1.c.from('follows').delete().eq('follower_id', b.id);

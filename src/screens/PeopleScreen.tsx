@@ -75,8 +75,9 @@ export function PeopleScreen() {
   }, [account?.id]);
 
   const decide = async (followerId: string, yes: boolean) => {
+    setNote(null);
     if (yes) await approveFollow(followerId);
-    else await declineFollow(followerId);
+    else setNote(await declineFollow(followerId));
     await load();
   };
 
