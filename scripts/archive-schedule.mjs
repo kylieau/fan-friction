@@ -11,6 +11,8 @@ import { primeFromFiles } from './prime-from-files.mjs';
 import { refreshScheduleIndex } from './schedule-index.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// Optional --metro=<id> for a city build; without it the nightly job covers every city.
+const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slice(8);
 
 function withoutClock(snapshot) {
   const { capturedAt, ...rest } = snapshot;
@@ -29,8 +31,10 @@ let exitCode = 0;
 try {
   const { collectScheduleArchive } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
   const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  if (metroFilter !== undefined && !COVERED_METRO_IDS.includes(metroFilter)) throw new Error(`Unknown covered metro: ${metroFilter}`);
+  const metroIds = COVERED_METRO_IDS.filter((id) => metroFilter === undefined || id === metroFilter);
   const failed = [];
-  for (const metroId of COVERED_METRO_IDS) {
+  for (const metroId of metroIds) {
   try {
   // The reads saved tonight need weather; without Supabase here, it comes from the files.
   await primeFromFiles(server, metroId);

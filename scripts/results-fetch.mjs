@@ -10,6 +10,8 @@ import { createServer } from 'vite';
 import { refreshResultsIndex } from './results-index.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// Optional --metro=<id> for a city build; without it the nightly job covers every city.
+const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slice(8);
 
 const server = await createServer({
   root,
@@ -23,8 +25,10 @@ let exitCode = 0;
 try {
   const { collectResults } = await server.ssrLoadModule('/src/data/sources/results.ts');
   const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  if (metroFilter !== undefined && !COVERED_METRO_IDS.includes(metroFilter)) throw new Error(`Unknown covered metro: ${metroFilter}`);
+  const metroIds = COVERED_METRO_IDS.filter((id) => metroFilter === undefined || id === metroFilter);
   const failed = [];
-  for (const RESULTS_METRO_ID of COVERED_METRO_IDS) {
+  for (const RESULTS_METRO_ID of metroIds) {
   try {
   const { from, through, rows } = await collectResults(RESULTS_METRO_ID);
   const dir = path.join(root, 'data', 'results', RESULTS_METRO_ID);

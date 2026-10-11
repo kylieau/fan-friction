@@ -5,7 +5,7 @@
 // within 250 m of the building. Also counts roads within 500 m and the
 // distance to the nearest freeway, for the table. Part of the new-city
 // checklist: node scripts/venue-access.mjs
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createServer } from 'vite';
@@ -78,9 +78,11 @@ async function roadsNear(lat, lng) {
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const server = await createServer({ root, configFile: path.join(root, 'vite.config.ts'), server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' });
 const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
+const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slice(8);
+if (metroFilter !== undefined && !Object.values(VENUES).some((v) => v.metroId === metroFilter)) throw new Error(`Unknown venue metro: ${metroFilter}`);
 await server.close();
 const venues = Object.values(VENUES)
-  .filter((v) => Math.max(...v.capacity.map((c) => c.seats)) >= 5000)
+  .filter((v) => (metroFilter === undefined || v.metroId === metroFilter) && Math.max(...v.capacity.map((c) => c.seats)) >= 5000)
   .map((v) => [v.id, v.metroId, v.location[1], v.location[0], Math.max(...v.capacity.map((c) => c.seats)), v.strained ? 1 : 0, v.names[v.names.length - 1].name]);
 
 /** Ground relief within 500 m: the venue's elevation against eight points around it (Open-Elevation, one request). */
@@ -118,6 +120,14 @@ async function reliefFor(list) {
 
 const relief = await reliefFor(venues);
 const lines = ['venueId\tmetro\tcapacity\tflagToday\troads500\troads250\tfreewayM\treliefM\truleSays\tname'];
+// A scoped run preserves every other city's measurements in both outputs.
+if (metroFilter !== undefined) {
+  const measuredIds = new Set(venues.map(([id]) => id));
+  let saved = '';
+  try { saved = readFileSync(path.join(root, 'data', 'venue-access.tsv'), 'utf8'); }
+  catch (err) { if (err.code !== 'ENOENT') throw err; }
+  lines.push(...saved.trim().split('\n').slice(1).filter((line) => line && !measuredIds.has(line.split('\t')[0])));
+}
 console.log('venue'.padEnd(28), 'r500 r250  fwy relief rule');
 for (const [vid, metro, lat, lng, cap, strained, name] of venues) {
   const here = { lat: Number(lat), lng: Number(lng) };

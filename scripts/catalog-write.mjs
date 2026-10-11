@@ -13,6 +13,8 @@ import { createClient } from '@supabase/supabase-js';
 import { createServer } from 'vite';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// Optional --metro=<id> for a city build; without it the nightly job covers every city.
+const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slice(8);
 const url = process.env.SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const dryRun = process.argv.includes('--dry-run');
@@ -72,10 +74,12 @@ try {
   const { dropTicketmasterGamesCoveredByFeeds } = await server.ssrLoadModule('/src/data/sources/types.ts');
   const tmKey = process.env.TICKETMASTER_API_KEY;
   const { COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  if (metroFilter !== undefined && !COVERED_METRO_IDS.includes(metroFilter)) throw new Error(`Unknown covered metro: ${metroFilter}`);
+  const metroIds = COVERED_METRO_IDS.filter((id) => metroFilter === undefined || id === metroFilter);
   const { EXPECTED_DRAWS } = await server.ssrLoadModule('/src/data/expectedDrawIndex.ts');
   const { TEAMS } = await server.ssrLoadModule('/src/data/teams.ts');
   const { teamScheduleFromFeeds } = await server.ssrLoadModule('/src/data/teamSchedule.ts');
-  for (const metroId of COVERED_METRO_IDS) {
+  for (const metroId of metroIds) {
   const now = new Date().toISOString();
   const counts = {};
 

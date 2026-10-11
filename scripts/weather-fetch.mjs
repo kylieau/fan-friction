@@ -13,6 +13,8 @@ import { createServer } from 'vite';
 import { refreshWeatherIndex } from './weather-index.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// Optional --metro=<id> for a city build; without it the nightly job covers every city.
+const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slice(8);
 const backfill = process.argv.includes('--backfill');
 
 const server = await createServer({
@@ -62,8 +64,10 @@ try {
   const { fetchWeather, fetchWeatherDays, isOpenAir, weatherHourFor, weatherHoursFor } = await server.ssrLoadModule('/src/data/formula/weather.ts');
   const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
   const { METROS, COVERED_METRO_IDS } = await server.ssrLoadModule('/src/config/metros.ts');
+  if (metroFilter !== undefined && !COVERED_METRO_IDS.includes(metroFilter)) throw new Error(`Unknown covered metro: ${metroFilter}`);
+  const metroIds = COVERED_METRO_IDS.filter((id) => metroFilter === undefined || id === metroFilter);
   const failed = [];
-  for (const METRO of COVERED_METRO_IDS) {
+  for (const METRO of metroIds) {
   try {
   const metro = METROS[METRO];
   const now = new Date();

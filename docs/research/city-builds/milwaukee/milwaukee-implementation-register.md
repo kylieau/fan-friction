@@ -56,3 +56,13 @@ Oct 11, 2026 · Codex. Kylie approved the five-point incorporation proposal Oct 
 - Wave, Chinooks, volleyball and Torrent have team records but no verified adapter yet; the existing No schedule yet behavior applies. MLB/ESPN/HockeyTech cover the other nine teams/programs.
 - No regional broad-team flag was assumed; no supporting audience poll exists in the supplied evidence. No monthly heat baseline was invented. The existing universal defaults apply.
 - Venue driving shares are unset. The existing 0.85 driving fallback is a model default, not measured Milwaukee travel.
+
+## Source retrieval and feed checks (Oct 11)
+
+Thirty-three of 37 linked non-Wikipedia capacity sources answered normally. Wilson county page and the Oriental reference returned 403; the NCAA D3 capacity PDF failed and the dated Ozaukee opening report timed out. No access bypass was attempted. Saved research retains their evidence; these rows carry the dated/reported figures and explicit configuration limits, with further source confirmation parked. Oriental is excluded.
+
+Live source IDs verified: MLB Brewers 158 / venue 32, Milkmen 5548 and DockHounds 6488 (sport 23); ESPN Bucks 15, Marquette 269 and Milwaukee 270 (men and women); HockeyTech AHL Admirals 327. ESPN home venue names were checked from actual schedules, not guessed. Milkmen/DockHounds feeds identify the teams but supplied no historical games. Generic Rave-complex listings cannot establish which of three rooms hosts a show; do not assign a whole-complex event by proximity.
+
+## Collected data and validation
+
+Attendance collection saved 987 games: Brewers 416, Bucks 181, Marquette men 74/women 62, Milwaukee men 64/women 58 and Admirals 132. Calibration uses the existing method and includes these observations in the shared postseason pool; no constants or personal ratings were changed. The first two-week snapshot contained 37 deduplicated listings, including room-matched concerts, and weather/results were collected. Independent-league attendance and unsupported team calendars remain explicit gaps. City/venue integrity, room matching, promoter rejection and league-game deduplication checks passed, as did the production build. Shared-catalog and phone verification follow the pushed data step.

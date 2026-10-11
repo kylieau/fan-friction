@@ -15,10 +15,12 @@ const env = Object.fromEntries((await readFile(path.join(root, '.env.local'), 'u
 const KEY = process.env.TICKETMASTER_API_KEY ?? env.TICKETMASTER_API_KEY;
 if (!KEY) throw new Error('TICKETMASTER_API_KEY is not set.');
 const all = process.argv.includes('--all');
+const metroFilter = process.argv.find((arg) => arg.startsWith('--metro='))?.slice(8);
 
 const server = await createServer({ server: { middlewareMode: true }, logLevel: 'error' });
 const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
 await server.close();
+if (metroFilter !== undefined && !Object.values(VENUES).some((v) => v.metroId === metroFilter)) throw new Error(`Unknown venue metro: ${metroFilter}`);
 
 const km = (a, b) => {
   const r = Math.PI / 180;
@@ -26,7 +28,7 @@ const km = (a, b) => {
   const y = (b[1] - a[1]) * r;
   return Math.sqrt(x * x + y * y) * 6371;
 };
-const norm = (s) => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim();
+const norm = (s) => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim().replace(/^the /, '');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function search(name, [lng, lat]) {
@@ -44,6 +46,7 @@ async function search(name, [lng, lat]) {
 const found = new Map();
 const report = [];
 for (const venue of Object.values(VENUES)) {
+  if (metroFilter !== undefined && venue.metroId !== metroFilter) continue;
   if (!all && venue.ticketmasterIds?.length) continue;
   const names = venue.names.map((n) => n.name);
   const ids = new Set(venue.ticketmasterIds ?? []);
@@ -56,10 +59,10 @@ for (const venue of Object.values(VENUES)) {
       if (!h.location) continue;
       const d = km(venue.location, [Number(h.location.longitude), Number(h.location.latitude)]);
       const exact = norm(h.name) === norm(name);
-      const same = exact || norm(h.name).includes(norm(name)) || norm(name).includes(norm(h.name));
+      const same = exact || norm(h.name).startsWith(`${norm(name)} `) || norm(name).startsWith(`${norm(h.name)} `);
       // A lot, a tour, a suite, a tent or a club on the grounds is not the room; its own listings are add-ons.
       const addOn = /\b(parking|lot|tours?|suites?|club|chapiteau|big top|grounds|warehouse|plaza|pavilion at|theater at|lounge)\b/i.test(h.name) && !exact;
-      if (!addOn && (d <= 0.3 || (same && d <= 1.5))) { ids.add(h.id); notes.push(`${h.name} (${h.id}, ${d.toFixed(2)} km)`); }
+      if (!addOn && (same && d <= 1.5)) { ids.add(h.id); notes.push(`${h.name} (${h.id}, ${d.toFixed(2)} km)`); }
     }
   }
   if (ids.size) found.set(venue.id, [...ids]);

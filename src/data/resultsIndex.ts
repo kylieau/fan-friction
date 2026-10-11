@@ -929,6 +929,25 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-11T14:58:14.633Z"
   },
   {
+    "eventId": "2026-10-10-ht-milwaukee-admirals-1029116",
+    "metroId": "milwaukee",
+    "date": "2026-10-10",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "uwm-panther-arena",
+    "homeTeamId": "milwaukee-admirals",
+    "home": {
+      "name": "Admirals",
+      "score": 4
+    },
+    "away": {
+      "name": "Griffins",
+      "score": 1
+    },
+    "attendance": 5588,
+    "capturedAt": "2026-10-11T20:10:38.433Z"
+  },
+  {
     "eventId": "2026-10-06-espn-canadiens-401891815",
     "metroId": "montreal",
     "date": "2026-10-06",

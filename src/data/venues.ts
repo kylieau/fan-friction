@@ -29,6 +29,7 @@ export const VENUES: Record<string, Venue> = {
       -87.97127,
       43.02806
     ],
+    ticketmasterIds: ['KovZpZA1FlkA'],
     capacity: [
       {
         seats: 41900,
@@ -50,6 +51,7 @@ export const VENUES: Record<string, Venue> = {
       -88.01112,
       43.02093
     ],
+    ticketmasterIds: ['ZFr9jZeeve'],
     capacity: [
       {
         seats: 34855,
@@ -74,6 +76,7 @@ export const VENUES: Record<string, Venue> = {
       -87.89756,
       43.02716
     ],
+    ticketmasterIds: ['KovZpZAJeenA'],
     capacity: [
       {
         seats: 23000,
@@ -95,6 +98,7 @@ export const VENUES: Record<string, Venue> = {
       -87.91749,
       43.04501
     ],
+    ticketmasterIds: ['KovZ917A_fV'],
     capacity: [
       {
         seats: 17341,
@@ -119,14 +123,14 @@ export const VENUES: Record<string, Venue> = {
         name: 'U.S. Cellular Arena'
       },
       {
-        name: 'UW-Milwaukee Panther Arena',
-        from: '2014-06-26'
+        name: 'UW-Milwaukee Panther Arena'
       }
     ],
     location: [
       -87.91695,
       43.04229
     ],
+    ticketmasterIds: ['KovZpZAJ61EA'],
     capacity: [
       {
         seats: 9652,
@@ -196,6 +200,7 @@ export const VENUES: Record<string, Venue> = {
       -87.89661,
       43.02859
     ],
+    ticketmasterIds: ['KovZpZAFAEeA'],
     capacity: [
       {
         seats: 10000,
@@ -243,6 +248,7 @@ export const VENUES: Record<string, Venue> = {
       -87.91684,
       43.04389
     ],
+    ticketmasterIds: ['KovZ917AYGS'],
     capacity: [
       {
         seats: 4500,
@@ -269,6 +275,7 @@ export const VENUES: Record<string, Venue> = {
       -87.91816,
       43.04228
     ],
+    ticketmasterIds: ['KovZpZAdJEnA'],
     capacity: [
       {
         seats: 4079,
@@ -335,6 +342,7 @@ export const VENUES: Record<string, Venue> = {
       -87.92676,
       43.03962
     ],
+    ticketmasterIds: ['KovZpa31ke'],
     capacity: [
       {
         seats: 3700,
@@ -489,6 +497,7 @@ export const VENUES: Record<string, Venue> = {
       -87.9113,
       43.04292
     ],
+    ticketmasterIds: ['KovZpZAEAkaA'],
     capacity: [
       {
         seats: 2125,
@@ -557,6 +566,7 @@ export const VENUES: Record<string, Venue> = {
       -87.88583,
       43.07684
     ],
+    ticketmasterIds: ['KovZ917AJzH'],
     capacity: [
       {
         seats: 2000,
@@ -663,6 +673,7 @@ export const VENUES: Record<string, Venue> = {
       -87.9361,
       43.03212
     ],
+    ticketmasterIds: ['KovZ917Ai87'],
     capacity: [
       {
         seats: 1750,
@@ -687,6 +698,7 @@ export const VENUES: Record<string, Venue> = {
       -87.9134,
       43.03925
     ],
+    ticketmasterIds: ['KovZ917AIWB'],
     capacity: [
       {
         seats: 1650,
@@ -772,6 +784,7 @@ export const VENUES: Record<string, Venue> = {
       -87.91046,
       43.04114
     ],
+    ticketmasterIds: ['KovZpZAal6EA'],
     capacity: [
       {
         seats: 1341,
@@ -884,6 +897,7 @@ export const VENUES: Record<string, Venue> = {
       -87.91553,
       43.04381
     ],
+    ticketmasterIds: ['KovZpZA1I6lA'],
     capacity: [
       {
         seats: 987,

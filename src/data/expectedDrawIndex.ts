@@ -13606,6 +13606,1338 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2025–2026"
   },
   {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 33434,
+    "low": 28025,
+    "high": 38734,
+    "games": 240,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 41922,
+    "low": 41791,
+    "high": 42462,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 28683,
+    "low": 24368,
+    "high": 33035,
+    "games": 115,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 21124,
+    "low": 19573,
+    "high": 23095,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 25372,
+    "low": 22319,
+    "high": 30391,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 30027,
+    "low": 27958,
+    "high": 31552,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 35365,
+    "low": 30016,
+    "high": 38319,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 32064,
+    "low": 30014,
+    "high": 35822,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 28566,
+    "low": 26583,
+    "high": 30059,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 35008,
+    "low": 31449,
+    "high": 40261,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 27602,
+    "low": 23528,
+    "high": 31785,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 33815,
+    "low": 31466,
+    "high": 35974,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 35008,
+    "low": 32554,
+    "high": 39752,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 36073,
+    "low": 32740,
+    "high": 38197,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 41620,
+    "low": 38936,
+    "high": 41917,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 40316,
+    "low": 33060,
+    "high": 41202,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 38529,
+    "low": 35776,
+    "high": 40757,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 35982,
+    "low": 33460,
+    "high": 39417,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 37736,
+    "low": 35678,
+    "high": 40203,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 38718,
+    "low": 36778,
+    "high": 40166,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 35593,
+    "low": 34500,
+    "high": 37584,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 40156,
+    "low": 38079,
+    "high": 40830,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 41449,
+    "low": 39928,
+    "high": 42067,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 37486,
+    "low": 31976,
+    "high": 40994,
+    "games": 40,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 26351,
+    "low": 25624,
+    "high": 30356,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 37360,
+    "low": 36865,
+    "high": 40175,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 40380,
+    "low": 30341,
+    "high": 41771,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 35746,
+    "low": 33470,
+    "high": 38461,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 40049,
+    "low": 36240,
+    "high": 42257,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 41055,
+    "low": 39086,
+    "high": 42142,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "all",
+    "month": null,
+    "count": 17341,
+    "low": 17341,
+    "high": 17341,
+    "games": 80,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 12489,
+    "low": 11364,
+    "high": 12725,
+    "games": 5,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 17341,
+    "low": 16378,
+    "high": 17341,
+    "games": 39,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 17341,
+    "low": 17341,
+    "high": 17341,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 17341,
+    "low": 15081,
+    "high": 17341,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 16341,
+    "low": 15646,
+    "high": 16878,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 17341,
+    "low": 17341,
+    "high": 17341,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17341,
+    "low": 16958,
+    "high": 17341,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 17341,
+    "low": 16527,
+    "high": 17341,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "friday",
+    "month": null,
+    "count": 17341,
+    "low": 17341,
+    "high": 17436,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 17341,
+    "low": 17341,
+    "high": 17507,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 17341,
+    "low": 17341,
+    "high": 17590,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17341,
+    "low": 17341,
+    "high": 17341,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 17535,
+    "low": 17011,
+    "high": 17751,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17341,
+    "low": 17341,
+    "high": 17341,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17341,
+    "low": 17341,
+    "high": 17343,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 17341,
+    "low": 17341,
+    "high": 17366,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 17341,
+    "low": 16259,
+    "high": 17341,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "all",
+    "month": null,
+    "count": 15342,
+    "low": 14285,
+    "high": 17530,
+    "games": 47,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "opener",
+    "month": null,
+    "count": 14546,
+    "low": 13857,
+    "high": 15449,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 14743,
+    "low": 14085,
+    "high": 15445,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 14487,
+    "low": 14091,
+    "high": 15083,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 14838,
+    "low": 14474,
+    "high": 15243,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 14369,
+    "low": 13483,
+    "high": 14736,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 14989,
+    "low": 14266,
+    "high": 15585,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "friday",
+    "month": null,
+    "count": 16930,
+    "low": 14201,
+    "high": 17542,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17544,
+    "low": 15550,
+    "high": 18009,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 17018,
+    "low": 15342,
+    "high": 17751,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 18095,
+    "low": 17832,
+    "high": 18112,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 15442,
+    "low": 14738,
+    "high": 15514,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "venueId": "fiserv-forum",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18086,
+    "low": 17803,
+    "high": 18097,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "venueId": "al-mcguire-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1758,
+    "low": 1411,
+    "high": 2169,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "venueId": "al-mcguire-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1602,
+    "low": 1346,
+    "high": 1814,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "venueId": "al-mcguire-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1297,
+    "low": 1275,
+    "high": 1712,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "venueId": "al-mcguire-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1758,
+    "low": 1545,
+    "high": 1833,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "venueId": "al-mcguire-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2237,
+    "low": 1951,
+    "high": 3085,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "venueId": "al-mcguire-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 3012,
+    "low": 1962,
+    "high": 3109,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "venueId": "al-mcguire-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1581,
+    "low": 1354,
+    "high": 1776,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "venueId": "al-mcguire-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 1559,
+    "low": 1255,
+    "high": 1973,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 6300,
+    "low": 4574,
+    "high": 7786,
+    "games": 105,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6501,
+    "low": 6223,
+    "high": 6983,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4678,
+    "low": 3893,
+    "high": 7002,
+    "games": 33,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4446,
+    "low": 4070,
+    "high": 5148,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3931,
+    "low": 3893,
+    "high": 4237,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 7467,
+    "low": 4789,
+    "high": 8964,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 8712,
+    "low": 7002,
+    "high": 9206,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 4067,
+    "low": 3797,
+    "high": 7022,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 6038,
+    "low": 4612,
+    "high": 6746,
+    "games": 28,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 5749,
+    "low": 4574,
+    "high": 7068,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 6077,
+    "low": 5144,
+    "high": 6200,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 6197,
+    "low": 5118,
+    "high": 6718,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 7786,
+    "low": 7203,
+    "high": 8478,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7094,
+    "low": 5776,
+    "high": 8188,
+    "games": 37,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 6927,
+    "low": 6575,
+    "high": 8192,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 7867,
+    "low": 7616,
+    "high": 8352,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 7308,
+    "low": 6732,
+    "high": 7734,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 8474,
+    "low": 8245,
+    "high": 8988,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 5982,
+    "low": 5180,
+    "high": 6516,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 5591,
+    "low": 4876,
+    "high": 6843,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 7102,
+    "low": 5721,
+    "high": 8934,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 8934,
+    "low": 7519,
+    "high": 9444,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "klotsche-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1570,
+    "low": 1484,
+    "high": 1608,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "klotsche-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1534,
+    "low": 1435,
+    "high": 1575,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 1959,
+    "low": 1696,
+    "high": 2441,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1784,
+    "low": 1556,
+    "high": 2083,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 2047,
+    "low": 1893,
+    "high": 2087,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1828,
+    "low": 1690,
+    "high": 1948,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1852,
+    "low": 1659,
+    "high": 2354,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 1852,
+    "low": 1668,
+    "high": 2261,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2619,
+    "low": 1918,
+    "high": 3137,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2017,
+    "low": 1824,
+    "high": 2883,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "venueId": "uwm-panther-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 2883,
+    "low": 2194,
+    "high": 2939,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "venueId": "klotsche-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 587,
+    "low": 460,
+    "high": 699,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "venueId": "klotsche-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 534,
+    "low": 436,
+    "high": 685,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "venueId": "klotsche-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 685,
+    "low": 497,
+    "high": 1388,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "venueId": "klotsche-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 497,
+    "low": 436,
+    "high": 534,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "venueId": "klotsche-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 574,
+    "low": 483,
+    "high": 698,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "venueId": "klotsche-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 633,
+    "low": 602,
+    "high": 730,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "venueId": "klotsche-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 733,
+    "low": 637,
+    "high": 771,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "venueId": "klotsche-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 606,
+    "low": 603,
+    "high": 664,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "venueId": "klotsche-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 463,
+    "low": 452,
+    "high": 518,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
     "metroId": "montreal",
     "teamId": "canadiens",
     "venueId": "bell-centre",
@@ -28595,6 +29927,713 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 2
   },
   {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "blue-jays",
+    "ratio": 1.047,
+    "games": 6
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "braves",
+    "ratio": 0.656,
+    "games": 9
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "cardinals",
+    "ratio": 1.018,
+    "games": 20
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "cubs",
+    "ratio": 1.094,
+    "games": 19
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "d-backs",
+    "ratio": 1.031,
+    "games": 11
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "dodgers",
+    "ratio": 1.033,
+    "games": 10
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "giants",
+    "ratio": 0.993,
+    "games": 10
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "guardians",
+    "ratio": 1.013,
+    "games": 6
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "mariners",
+    "ratio": 1.05,
+    "games": 6
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "marlins",
+    "ratio": 1.046,
+    "games": 9
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "mets",
+    "ratio": 0.976,
+    "games": 9
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "nationals",
+    "ratio": 1,
+    "games": 9
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "padres",
+    "ratio": 1.022,
+    "games": 9
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "phillies",
+    "ratio": 1.024,
+    "games": 9
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "pirates",
+    "ratio": 1.047,
+    "games": 19
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "rangers",
+    "ratio": 0.983,
+    "games": 6
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "rays",
+    "ratio": 0.876,
+    "games": 6
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "reds",
+    "ratio": 0.975,
+    "games": 20
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "rockies",
+    "ratio": 0.957,
+    "games": 9
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "twins",
+    "ratio": 1.019,
+    "games": 8
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "white-sox",
+    "ratio": 1.016,
+    "games": 6
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "opponent": "yankees",
+    "ratio": 1.051,
+    "games": 6
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "76ers",
+    "ratio": 0.991,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "bulls",
+    "ratio": 1.008,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "cavaliers",
+    "ratio": 0.969,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "celtics",
+    "ratio": 0.978,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "clippers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "grizzlies",
+    "ratio": 0.966,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "hawks",
+    "ratio": 0.977,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "heat",
+    "ratio": 0.972,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "hornets",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "jazz",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "knicks",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "lakers",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "magic",
+    "ratio": 0.977,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "mavericks",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "nets",
+    "ratio": 0.993,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "nuggets",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "pacers",
+    "ratio": 0.985,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "pelicans",
+    "ratio": 0.951,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "pistons",
+    "ratio": 0.99,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "rockets",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "spurs",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "suns",
+    "ratio": 0.983,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "thunder",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "timberwolves",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "trail-blazers",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "warriors",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "opponent": "wizards",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "butler",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "c-michigan",
+    "ratio": 0.978,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "creighton",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "depaul",
+    "ratio": 0.981,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "georgetown",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "providence",
+    "ratio": 0.957,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "seton-hall",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "southern",
+    "ratio": 0.964,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "st-john-s",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "uconn",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "villanova",
+    "ratio": 0.976,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "xavier",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "opponent": "butler",
+    "ratio": 0.958,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "opponent": "depaul",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "opponent": "georgetown",
+    "ratio": 0.841,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "opponent": "providence",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "opponent": "seton-hall",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "opponent": "st-john-s",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "opponent": "uconn",
+    "ratio": 1.198,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "opponent": "villanova",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-wbb",
+    "opponent": "xavier",
+    "ratio": 1.034,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "opponent": "griffins",
+    "ratio": 1.008,
+    "games": 15
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "opponent": "gulls",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "opponent": "icehogs",
+    "ratio": 0.966,
+    "games": 17
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "opponent": "monsters",
+    "ratio": 0.826,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "opponent": "moose",
+    "ratio": 0.942,
+    "games": 12
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "opponent": "silver-knights",
+    "ratio": 0.932,
+    "games": 6
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "opponent": "stars",
+    "ratio": 0.97,
+    "games": 12
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "opponent": "wild",
+    "ratio": 0.902,
+    "games": 12
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "milwaukee-admirals",
+    "opponent": "wolves",
+    "ratio": 1.011,
+    "games": 18
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "cleveland-st",
+    "ratio": 0.886,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "detroit-mercy",
+    "ratio": 0.983,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "green-bay",
+    "ratio": 1.21,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "iu-indy",
+    "ratio": 0.887,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "n-kentucky",
+    "ratio": 0.98,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "oakland",
+    "ratio": 1.01,
+    "games": 4
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "purdue-fw",
+    "ratio": 1.019,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "robert-morris",
+    "ratio": 0.907,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "wright-st",
+    "ratio": 1.196,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-mbb",
+    "opponent": "youngstown-st",
+    "ratio": 1.024,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "cleveland-st",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "detroit-mercy",
+    "ratio": 0.816,
+    "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "green-bay",
+    "ratio": 1.116,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "iu-indy",
+    "ratio": 1.026,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "n-kentucky",
+    "ratio": 1.446,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "oakland",
+    "ratio": 1.16,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "purdue-fw",
+    "ratio": 0.975,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "robert-morris",
+    "ratio": 1.044,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "wright-st",
+    "ratio": 1.014,
+    "games": 2
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "uwm-wbb",
+    "opponent": "youngstown-st",
+    "ratio": 0.923,
+    "games": 2
+  },
+  {
     "metroId": "montreal",
     "teamId": "canadiens",
     "opponent": "avalanche",
@@ -32711,10 +34750,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "braves",
     "venueId": "truist-park",
     "band": "first",
-    "occupancy": 0.969,
-    "low": 0.901,
-    "high": 1.19,
-    "games": 23,
+    "occupancy": 0.96,
+    "low": 0.902,
+    "high": 1.184,
+    "games": 28,
     "seasons": "2026 + league",
     "basis": "blend"
   },
@@ -32724,9 +34763,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "truist-park",
     "band": "second",
     "occupancy": 1.035,
-    "low": 0.94,
-    "high": 1.132,
-    "games": 48,
+    "low": 0.947,
+    "high": 1.12,
+    "games": 53,
     "seasons": "2022, 2023, 2026 + league",
     "basis": "blend"
   },
@@ -32735,10 +34774,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "braves",
     "venueId": "truist-park",
     "band": "conference",
-    "occupancy": 1.013,
+    "occupancy": 1.006,
     "low": 0.944,
-    "high": 1.058,
-    "games": 20,
+    "high": 1.051,
+    "games": 22,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -32749,8 +34788,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1.07,
     "low": 1,
-    "high": 1.108,
-    "games": 53,
+    "high": 1.074,
+    "games": 61,
     "seasons": "2023, 2026 + league",
     "basis": "blend"
   },
@@ -32915,11 +34954,11 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "giants",
     "venueId": "oracle-park",
     "band": "first",
-    "occupancy": 1.008,
+    "occupancy": 0.993,
     "low": 0.903,
-    "high": 1.192,
-    "games": 20,
-    "seasons": "league, 2022, 2024, 2025, 2026",
+    "high": 1.188,
+    "games": 25,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
   {
@@ -32928,9 +34967,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "oracle-park",
     "band": "second",
     "occupancy": 1.021,
-    "low": 0.925,
+    "low": 0.937,
     "high": 1.132,
-    "games": 42,
+    "games": 47,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -32939,10 +34978,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "giants",
     "venueId": "oracle-park",
     "band": "conference",
-    "occupancy": 1.013,
+    "occupancy": 1.006,
     "low": 0.944,
-    "high": 1.058,
-    "games": 20,
+    "high": 1.051,
+    "games": 22,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -32978,7 +35017,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1.001,
     "low": 1,
     "high": 1.063,
-    "games": 53,
+    "games": 61,
     "seasons": "2023, 2025 + league",
     "basis": "blend"
   },
@@ -33049,8 +35088,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1.005,
     "low": 1,
-    "high": 1.064,
-    "games": 47,
+    "high": 1.063,
+    "games": 55,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -33167,10 +35206,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "cubs",
     "venueId": "wrigley-field",
     "band": "first",
-    "occupancy": 0.998,
-    "low": 0.903,
-    "high": 1.19,
-    "games": 23,
+    "occupancy": 0.989,
+    "low": 0.904,
+    "high": 1.184,
+    "games": 28,
     "seasons": "2025 + league",
     "basis": "blend"
   },
@@ -33180,9 +35219,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "wrigley-field",
     "band": "second",
     "occupancy": 1.021,
-    "low": 0.925,
+    "low": 0.937,
     "high": 1.132,
-    "games": 42,
+    "games": 47,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -33191,10 +35230,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "cubs",
     "venueId": "wrigley-field",
     "band": "conference",
-    "occupancy": 1.013,
+    "occupancy": 1.006,
     "low": 0.944,
-    "high": 1.058,
-    "games": 20,
+    "high": 1.051,
+    "games": 22,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -33203,11 +35242,11 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "white-sox",
     "venueId": "rate-field",
     "band": "first",
-    "occupancy": 1.008,
+    "occupancy": 0.993,
     "low": 0.903,
-    "high": 1.192,
-    "games": 20,
-    "seasons": "league, 2022, 2024, 2025, 2026",
+    "high": 1.188,
+    "games": 25,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
   {
@@ -33216,9 +35255,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "rate-field",
     "band": "second",
     "occupancy": 1.021,
-    "low": 0.925,
+    "low": 0.937,
     "high": 1.132,
-    "games": 42,
+    "games": 47,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -33227,10 +35266,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "white-sox",
     "venueId": "rate-field",
     "band": "conference",
-    "occupancy": 1.013,
+    "occupancy": 1.006,
     "low": 0.944,
-    "high": 1.058,
-    "games": 20,
+    "high": 1.051,
+    "games": 22,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -33325,8 +35364,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1.027,
     "low": 1,
-    "high": 1.067,
-    "games": 50,
+    "high": 1.064,
+    "games": 58,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -33347,11 +35386,11 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "rangers",
     "venueId": "globe-life-field",
     "band": "first",
-    "occupancy": 1.008,
+    "occupancy": 0.993,
     "low": 0.903,
-    "high": 1.192,
-    "games": 20,
-    "seasons": "league, 2022, 2024, 2025, 2026",
+    "high": 1.188,
+    "games": 25,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
   {
@@ -33360,9 +35399,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "globe-life-field",
     "band": "second",
     "occupancy": 1.021,
-    "low": 0.925,
+    "low": 0.937,
     "high": 1.132,
-    "games": 42,
+    "games": 47,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -33371,10 +35410,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "rangers",
     "venueId": "globe-life-field",
     "band": "conference",
-    "occupancy": 1.025,
-    "low": 0.944,
+    "occupancy": 1.02,
+    "low": 0.945,
     "high": 1.051,
-    "games": 23,
+    "games": 25,
     "seasons": "2023 + league",
     "basis": "blend"
   },
@@ -33383,11 +35422,11 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "angels",
     "venueId": "angel-stadium",
     "band": "first",
-    "occupancy": 1.008,
+    "occupancy": 0.993,
     "low": 0.903,
-    "high": 1.192,
-    "games": 20,
-    "seasons": "league, 2022, 2024, 2025, 2026",
+    "high": 1.188,
+    "games": 25,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
   {
@@ -33396,9 +35435,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "angel-stadium",
     "band": "second",
     "occupancy": 1.021,
-    "low": 0.925,
+    "low": 0.937,
     "high": 1.132,
-    "games": 42,
+    "games": 47,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -33407,10 +35446,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "angels",
     "venueId": "angel-stadium",
     "band": "conference",
-    "occupancy": 1.013,
+    "occupancy": 1.006,
     "low": 0.944,
-    "high": 1.058,
-    "games": 20,
+    "high": 1.051,
+    "games": 22,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -33422,7 +35461,7 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "occupancy": 1.017,
     "low": 1,
     "high": 1.063,
-    "games": 52,
+    "games": 60,
     "seasons": "2023, 2024 + league",
     "basis": "blend"
   },
@@ -33432,9 +35471,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "intuit-dome",
     "band": "first",
     "occupancy": 1.001,
-    "low": 0.996,
+    "low": 0.999,
     "high": 1.063,
-    "games": 50,
+    "games": 58,
     "seasons": "2025 + league",
     "basis": "blend"
   },
@@ -33467,11 +35506,11 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "dodgers",
     "venueId": "dodger-stadium",
     "band": "first",
-    "occupancy": 1.008,
+    "occupancy": 0.993,
     "low": 0.903,
-    "high": 1.192,
-    "games": 20,
-    "seasons": "league, 2022, 2024, 2025, 2026",
+    "high": 1.188,
+    "games": 25,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
   {
@@ -33491,10 +35530,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "dodgers",
     "venueId": "dodger-stadium",
     "band": "conference",
-    "occupancy": 0.97,
+    "occupancy": 0.967,
     "low": 0.941,
-    "high": 1.05,
-    "games": 25,
+    "high": 1.049,
+    "games": 27,
     "seasons": "2024, 2025 + league",
     "basis": "blend"
   },
@@ -33763,6 +35802,66 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "basis": "blend"
   },
   {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "band": "first",
+    "occupancy": 0.982,
+    "low": 0.904,
+    "high": 1.182,
+    "games": 30,
+    "seasons": "2023, 2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "band": "second",
+    "occupancy": 1.021,
+    "low": 0.947,
+    "high": 1.126,
+    "games": 52,
+    "seasons": "2025, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "brewers",
+    "venueId": "american-family-field",
+    "band": "conference",
+    "occupancy": 1.006,
+    "low": 0.944,
+    "high": 1.051,
+    "games": 22,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "band": "first",
+    "occupancy": 1.017,
+    "low": 1,
+    "high": 1.045,
+    "games": 8,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "bucks",
+    "venueId": "fiserv-forum",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.038,
+    "games": 25,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
     "metroId": "montreal",
     "teamId": "canadiens",
     "venueId": "bell-centre",
@@ -33959,10 +36058,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "mets",
     "venueId": "citi-field",
     "band": "first",
-    "occupancy": 1.002,
-    "low": 0.903,
-    "high": 1.19,
-    "games": 23,
+    "occupancy": 0.993,
+    "low": 0.904,
+    "high": 1.184,
+    "games": 28,
     "seasons": "2022 + league",
     "basis": "blend"
   },
@@ -33972,9 +36071,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "citi-field",
     "band": "second",
     "occupancy": 1.021,
-    "low": 0.925,
+    "low": 0.937,
     "high": 1.132,
-    "games": 42,
+    "games": 47,
     "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -33983,10 +36082,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "mets",
     "venueId": "citi-field",
     "band": "conference",
-    "occupancy": 1.026,
-    "low": 0.944,
+    "occupancy": 1.021,
+    "low": 0.945,
     "high": 1.05,
-    "games": 23,
+    "games": 25,
     "seasons": "2024 + league",
     "basis": "blend"
   },
@@ -33997,8 +36096,8 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "band": "first",
     "occupancy": 1.005,
     "low": 1,
-    "high": 1.064,
-    "games": 47,
+    "high": 1.063,
+    "games": 55,
     "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
@@ -34235,10 +36334,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "yankees",
     "venueId": "yankee-stadium",
     "band": "first",
-    "occupancy": 1.029,
-    "low": 0.903,
-    "high": 1.188,
-    "games": 25,
+    "occupancy": 1.023,
+    "low": 0.904,
+    "high": 1.182,
+    "games": 30,
     "seasons": "2025, 2026 + league",
     "basis": "blend"
   },
@@ -34259,10 +36358,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "yankees",
     "venueId": "yankee-stadium",
     "band": "conference",
-    "occupancy": 1.013,
+    "occupancy": 1.01,
     "low": 0.945,
-    "high": 1.05,
-    "games": 24,
+    "high": 1.049,
+    "games": 26,
     "seasons": "2022, 2024 + league",
     "basis": "blend"
   },
@@ -34271,10 +36370,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "padres",
     "venueId": "petco-park",
     "band": "first",
-    "occupancy": 1.101,
-    "low": 0.903,
+    "occupancy": 1.093,
+    "low": 0.904,
     "high": 1.195,
-    "games": 24,
+    "games": 29,
     "seasons": "2024, 2026 + league",
     "basis": "blend"
   },
@@ -34284,9 +36383,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "petco-park",
     "band": "second",
     "occupancy": 1.153,
-    "low": 0.94,
+    "low": 0.947,
     "high": 1.197,
-    "games": 48,
+    "games": 53,
     "seasons": "2022, 2024, 2026 + league",
     "basis": "blend"
   },
@@ -34295,10 +36394,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "padres",
     "venueId": "petco-park",
     "band": "conference",
-    "occupancy": 1.013,
+    "occupancy": 1.006,
     "low": 0.944,
-    "high": 1.058,
-    "games": 20,
+    "high": 1.051,
+    "games": 22,
     "seasons": "league, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -34403,11 +36502,11 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "mariners",
     "venueId": "t-mobile-park",
     "band": "first",
-    "occupancy": 1.008,
+    "occupancy": 0.993,
     "low": 0.903,
-    "high": 1.192,
-    "games": 20,
-    "seasons": "league, 2022, 2024, 2025, 2026",
+    "high": 1.188,
+    "games": 25,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
     "basis": "league"
   },
   {
@@ -34416,9 +36515,9 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "venueId": "t-mobile-park",
     "band": "second",
     "occupancy": 1.004,
-    "low": 0.935,
+    "low": 0.947,
     "high": 1.132,
-    "games": 46,
+    "games": 51,
     "seasons": "2022, 2025 + league",
     "basis": "blend"
   },
@@ -34427,10 +36526,10 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "teamId": "mariners",
     "venueId": "t-mobile-park",
     "band": "conference",
-    "occupancy": 0.999,
-    "low": 0.944,
+    "occupancy": 0.994,
+    "low": 0.945,
     "high": 1.05,
-    "games": 23,
+    "games": 25,
     "seasons": "2025 + league",
     "basis": "blend"
   },

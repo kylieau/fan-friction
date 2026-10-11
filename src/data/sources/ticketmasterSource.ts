@@ -61,7 +61,9 @@ function venueFor(metroId: string, v: TmVenue) {
   const lat = Number(v.location.latitude);
   const lng = Number(v.location.longitude);
   if (!Number.isFinite(lat) || !Number.isFinite(lng)) return undefined;
-  return ours.find((venue) => metersBetween(venue.location, [lng, lat]) <= 300);
+  const nearby = ours.filter((venue) => metersBetween(venue.location, [lng, lat]) <= 300);
+  // Several rooms can share a campus/building. Without an id or name match, proximity is ambiguous.
+  return nearby.length === 1 ? nearby[0] : undefined;
 }
 
 function metersBetween([lng1, lat1]: readonly [number, number] | number[], [lng2, lat2]: readonly [number, number] | number[]): number {
@@ -97,6 +99,11 @@ function isShowAddOn(name: string): boolean {
  * Ticketmaster copy).
  */
 const SPORTS_FROM_TICKETMASTER = new Set([
+  // Milwaukee smaller sports and races; league-feed games at the same building/date still win.
+  'uwm-panther-arena', 'al-mcguire-center', 'klotsche-center', 'franklin-field', 'dockhounds-ballpark',
+  'kapco-park', 'milwaukee-mile', 'slinger-speedway', 'hart-park-stadium', 'engelmann-stadium',
+  'valley-fields', 'wilson-ice-arena', 'pettit-national-ice-center', 'buuck-field-house',
+  'ozaukee-ice-center', 'schneider-stadium', 'time-of-grace-center', 'raabe-stadium',
   'dickies-arena', 'will-rogers-coliseum', 'cutx-event-center', 'grand-prairie-stadium', 'mansfield-stadium', 'cotton-bowl', 'toyota-stadium', 'comerica-center', 'texas-motor-speedway',
   // The Dogs and Boomers (American Association, Frontier League) have no schedule in MLB's partner-league feed, so their parks are swept too.
   'allstate-arena', 'now-arena', 'chicagoland-speedway', 'impact-field', 'wintrust-field',

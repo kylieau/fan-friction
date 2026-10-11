@@ -1,0 +1,8277 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "teamId": "brewers",
+  "collectedOn": "2026-10-11",
+  "games": [
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-14",
+      "start": "16:14",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 42794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 26874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": "18:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 26356,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-17",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 23001,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-18",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 21512,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-19",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 22747,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-20",
+      "start": "12:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 20790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-25",
+      "start": "17:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 21186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 29062,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "18:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 37263,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 35137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-03",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 21961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-04",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 25413,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-05",
+      "start": "12:40",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 21715,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-16",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 25880,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 28910,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-18",
+      "start": "12:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 27014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-20",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 29609,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-21",
+      "start": "18:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 34837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 39822,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-02",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 21451,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-03",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 30019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "15:10",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 37376,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-05",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 32285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-07",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 27109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-08",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 29353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-09",
+      "start": "13:10",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 27306,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-20",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 28100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-21",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 30208,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-22",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 27986,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-23",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 32550,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-24",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "american-family-field",
+      "attendance": 32166,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-25",
+      "start": "15:10",
+      "opponent": "Blue Jays",
+      "venueId": "american-family-field",
+      "attendance": 34768,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-06-26",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "american-family-field",
+      "attendance": 35503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "15:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 41981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-05",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 30561,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-06",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 32696,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-08",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 29471,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-09",
+      "start": "15:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 35384,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-10",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 32967,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 33357,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "18:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 31694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 36465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-25",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 25194,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 28596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 35914,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-05",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 33239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-06",
+      "start": "18:15",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 35784,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-07",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 40063,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "american-family-field",
+      "attendance": 30030,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "american-family-field",
+      "attendance": 30644,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-15",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 27084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-16",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 32948,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-17",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 30259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-18",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 37403,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 33549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "18:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 40901,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 39035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-29",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 23009,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 24764,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 25240,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-08",
+      "start": null,
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 23019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-09",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 33660,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "18:15",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 34615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-11",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 42482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "american-family-field",
+      "attendance": 36011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "american-family-field",
+      "attendance": 41210,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "american-family-field",
+      "attendance": 35964,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-19",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 25671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-20",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 26319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-21",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 25204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-27",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 29341,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-28",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 28835,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-29",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 23122,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 31945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "18:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 30686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-10-02",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 31053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-10-03",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 18612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-10-04",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 19611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2022,
+      "date": "2022-10-05",
+      "start": "15:10",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 18765,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-03",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 42017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-04",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 19412,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-05",
+      "start": "12:40",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 18387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 28459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "18:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 43077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 27701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "american-family-field",
+      "attendance": 24976,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "18:10",
+      "opponent": "Red Sox",
+      "venueId": "american-family-field",
+      "attendance": 31965,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "american-family-field",
+      "attendance": 26939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-24",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "american-family-field",
+      "attendance": 23201,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "american-family-field",
+      "attendance": 24924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "12:40",
+      "opponent": "Tigers",
+      "venueId": "american-family-field",
+      "attendance": 25847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "american-family-field",
+      "attendance": 24787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "18:10",
+      "opponent": "Angels",
+      "venueId": "american-family-field",
+      "attendance": 39198,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "american-family-field",
+      "attendance": 33557,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-08",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 22847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 23874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "12:40",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 30112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "19:10",
+      "opponent": "Royals",
+      "venueId": "american-family-field",
+      "attendance": 24900,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "18:10",
+      "opponent": "Royals",
+      "venueId": "american-family-field",
+      "attendance": 35766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "american-family-field",
+      "attendance": 33188,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-22",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "american-family-field",
+      "attendance": 22583,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "american-family-field",
+      "attendance": 23062,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "12:10",
+      "opponent": "Astros",
+      "venueId": "american-family-field",
+      "attendance": 28262,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 24536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 30347,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "15:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 39269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 34581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "american-family-field",
+      "attendance": 22535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "american-family-field",
+      "attendance": 22320,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "american-family-field",
+      "attendance": 27318,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "american-family-field",
+      "attendance": 30657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "15:10",
+      "opponent": "Athletics",
+      "venueId": "american-family-field",
+      "attendance": 35157,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "american-family-field",
+      "attendance": 31363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 25586,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "15:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 37283,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 38073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-19",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 24257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 27048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 31397,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-03",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 43209,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "15:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 41133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 31285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 33366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 30970,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "15:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 39124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 32848,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 37698,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "18:15",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 39707,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 38605,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-24",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 29216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 27551,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 38596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-03",
+      "start": "18:15",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 25930,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-04",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 35438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-05",
+      "start": "18:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 35250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-06",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 33144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-07",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 24759,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 25365,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 35173,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 38688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 38164,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 33089,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "18:10",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 39945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 36528,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 32519,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "18:15",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 35253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "12:05",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 33473,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-11",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 21792,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-12",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 26466,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-13",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 24251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-14",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 26529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-15",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 35428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "18:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 36212,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-17",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 31865,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-26",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 36755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-27",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 31256,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-28",
+      "start": "15:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 29185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-29",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 39216,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "18:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42652,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": "14:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42946,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-10-03",
+      "start": "18:08",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 40892,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2023,
+      "date": "2023-10-04",
+      "start": "18:08",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 41166,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "15:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 41659,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "12:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 17854,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "american-family-field",
+      "attendance": 23035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "18:10",
+      "opponent": "Mariners",
+      "venueId": "american-family-field",
+      "attendance": 35522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "american-family-field",
+      "attendance": 25573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-15",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 18396,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 20034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "12:10",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 24521,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "american-family-field",
+      "attendance": 32314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "american-family-field",
+      "attendance": 41620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "american-family-field",
+      "attendance": 35295,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-29",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "american-family-field",
+      "attendance": 20395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "american-family-field",
+      "attendance": 21124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "12:10",
+      "opponent": "Rays",
+      "venueId": "american-family-field",
+      "attendance": 20132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-09",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 25031,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 30104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "18:15",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 34028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 36865,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-13",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 18305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 19532,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "12:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 32848,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-27",
+      "start": "15:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 41882,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-28",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 24076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-29",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 26695,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-30",
+      "start": "12:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 33219,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "american-family-field",
+      "attendance": 30931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "15:10",
+      "opponent": "White Sox",
+      "venueId": "american-family-field",
+      "attendance": 36017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "american-family-field",
+      "attendance": 30442,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-10",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "american-family-field",
+      "attendance": 24381,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "american-family-field",
+      "attendance": 25253,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "american-family-field",
+      "attendance": 30444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 32810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "15:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 38419,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 41676,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-24",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "american-family-field",
+      "attendance": 27924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "american-family-field",
+      "attendance": 30892,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "american-family-field",
+      "attendance": 36552,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 39298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "15:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42238,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42658,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 26422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 27294,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 36743,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 31967,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "15:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 34169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 35040,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 30128,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "18:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 36171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 32946,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-29",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 28698,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 28810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 37111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 37742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "18:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 38639,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 40049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-12",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 33618,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 29174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 31084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-15",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 40447,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "american-family-field",
+      "attendance": 30346,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "18:15",
+      "opponent": "Guardians",
+      "venueId": "american-family-field",
+      "attendance": 37518,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-18",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "american-family-field",
+      "attendance": 34483,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 24354,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 23247,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 30920,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-02",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 41731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 20027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 20027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "17:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 26582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 33603,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 42015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-16",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 28713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-17",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 30059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-18",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 30048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-19",
+      "start": "18:15",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 25093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-20",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 32123,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "18:10",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 35068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-22",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 37612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-27",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 33996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "18:15",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 39637,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "14:10",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 33754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-10-01",
+      "start": "16:32",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 40022,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-10-02",
+      "start": "18:38",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 40350,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2024,
+      "date": "2024-10-03",
+      "start": "18:08",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 41594,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-03-31",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "american-family-field",
+      "attendance": 41922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2025 Magnetic Schedule"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Jackson Chourio T-Shirt w/ Select Terrace Level Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-01",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "american-family-field",
+      "attendance": 18008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-02",
+      "start": "12:10",
+      "opponent": "Royals",
+      "venueId": "american-family-field",
+      "attendance": 19112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-03",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 20113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Hockey Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 23004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "18:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 32772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Long Sleeve Lightweight Hoodie"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 25778,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Fun-Day Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-14",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "american-family-field",
+      "attendance": 20892,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "4/14 Day Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller High Life Monday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-15",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "american-family-field",
+      "attendance": 18396,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-16",
+      "start": "12:10",
+      "opponent": "Tigers",
+      "venueId": "american-family-field",
+      "attendance": 22360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "History Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "american-family-field",
+      "attendance": 25008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Peanuts Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "18:10",
+      "opponent": "Athletics",
+      "venueId": "american-family-field",
+      "attendance": 30659,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Brewers Football Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "american-family-field",
+      "attendance": 21512,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Fun-Day Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        },
+        {
+          "name": "Brewers Coupon Book"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 34559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "18:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 37335,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 37360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Fun-Day Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-05",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "american-family-field",
+      "attendance": 20306,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Miller High Life Monday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "american-family-field",
+      "attendance": 21075,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "12:10",
+      "opponent": "Astros",
+      "venueId": "american-family-field",
+      "attendance": 26922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Weather Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 33070,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Star Wars™ Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "18:15",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 40267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Brewers Cribbage Board"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 30018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Fun-Day Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        },
+        {
+          "name": "Brewers Coupon Book"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-19",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "american-family-field",
+      "attendance": 22319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Miller High Life Monday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "american-family-field",
+      "attendance": 22778,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "12:10",
+      "opponent": "Orioles",
+      "venueId": "american-family-field",
+      "attendance": 30554,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Math Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-26",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "american-family-field",
+      "attendance": 40181,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ceremonial First Pitch: Jordan Love"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "american-family-field",
+      "attendance": 26489,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "12:10",
+      "opponent": "Red Sox",
+      "venueId": "american-family-field",
+      "attendance": 24603,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 32298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": "18:35",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 37032,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jackson Chourio Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "12:05",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 26265,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Fun-Day Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-09",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 25145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Miller High Life Monday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 30028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "T-Shirt Tuesdays Wisconsin Artist Series"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 30809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 27687,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 30026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "15:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 39017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Tropical Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 40629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Barrelman Cooler"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Fun-Day Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-23",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 26791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Miller High Life Monday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 31772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 42774,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 35008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "$5 Tap Beer Happy Hour"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert: Nelly"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Student Special: now just $5"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "15:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 32057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pat Murphy Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 30037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Fun-Day Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        },
+        {
+          "name": "Brewers Coupon Book"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-07",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 35365,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Miller High Life Monday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 38175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "T-Shirt Tuesdays Wisconsin Artist Series"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 33607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 35057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Negro Leagues Tribute Game"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "15:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 35015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1990s Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 32135,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Fun-Day Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        },
+        {
+          "name": "Brewers Coupon Book"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "15:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 41944,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "American Family Field's 25th Season Celebration"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Pokémon Go Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 38055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Brice Turang Platinum Glove Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 40158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "name": "Trading Card Packs"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Fun-Day Bundle"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-28",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 41076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-29",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 40136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-07-30",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42807,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 43469,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Cerveceros Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "18:10",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 40156,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Christian Yelich Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 42461,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Misiorowski 'The Miz' T-Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Sesame Street Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Autograph Sundays for Kids"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-11",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 30045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Miller High Life Monday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 32064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "T-Shirt Tuesdays Wisconsin Artist Series"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 40123,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 41716,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Stranger Things Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "name": "Brewers Coupon Book"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "18:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 41034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bob Uecker Golf Umbrella"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 42053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Uecker Celebration of Life"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-25",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 28486,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Miller High Life Monday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 32850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "King Vaughn T-shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 26176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 35822,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-01",
+      "start": "15:10",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 42153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 28528,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Bark at the Park"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-04",
+      "start": "15:10",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 26583,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Senior Stroll"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 40525,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Childhood Cancer Awareness Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 41807,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Crew Neck Sweatshirt"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Childhood Cancer Awareness Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 42269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Looney Tunes Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        },
+        {
+          "name": "Brewers Coupon Book"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Childhood Cancer Awareness Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "american-family-field",
+      "attendance": 28566,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Misiorowski T-Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-17",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "american-family-field",
+      "attendance": 28493,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-18",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "american-family-field",
+      "attendance": 34261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: College Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-26",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 40316,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 96,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Miller Lite Beerpen"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "$10 Student Special"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Ticket Voucher Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2026 Magnetic Schedule"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "18:15",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 40801,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 96,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brewers Tumbler"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Ticket Voucher Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2026 Magnetic Schedule"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Seat Member Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "14:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 41055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 96,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GOVX Discount"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Fan Appreciation Ticket Voucher Giveaway"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2026 Magnetic Schedule"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: The Famous Racing Sausages® Kids Race"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sunday Fun: Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-10-04",
+      "start": "13:08",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42678,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-10-06",
+      "start": "20:08",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42787,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-10-11",
+      "start": "19:08",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42743,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 5,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-10-13",
+      "start": "19:08",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 41737,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2025,
+      "date": "2025-10-14",
+      "start": "19:08",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 41427,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-03-26",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "american-family-field",
+      "attendance": 43001,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "18:10",
+      "opponent": "White Sox",
+      "venueId": "american-family-field",
+      "attendance": 36030,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Replica American Family Field"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-03-29",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "american-family-field",
+      "attendance": 32737,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-03-30",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "american-family-field",
+      "attendance": 20022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-03-31",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "american-family-field",
+      "attendance": 20010,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "12:40",
+      "opponent": "Rays",
+      "venueId": "american-family-field",
+      "attendance": 21949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 30196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "18:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 36442,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Miz Trading Card Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "american-family-field",
+      "attendance": 26924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wiffle Ball Set"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "american-family-field",
+      "attendance": 25143,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "414 Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "414 Day Artist T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "american-family-field",
+      "attendance": 23092,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "12:40",
+      "opponent": "Blue Jays",
+      "venueId": "american-family-field",
+      "attendance": 23098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 33339,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Star Wars™ Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "18:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 40408,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Windbreaker"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 31500,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Abner Uribe Poster"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 23063,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 24540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": "12:40",
+      "opponent": "D-backs",
+      "venueId": "american-family-field",
+      "attendance": 26849,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "american-family-field",
+      "attendance": 38051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "american-family-field",
+      "attendance": 35628,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "american-family-field",
+      "attendance": 40175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Picnic Blanket"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 25372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Bark at the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 28683,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "12:40",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 34862,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 36446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Boy Band Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "18:15",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 38136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Patriotic Brewers Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "american-family-field",
+      "attendance": 40973,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Brewers Pennant"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-25",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 35695,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "name": "Dollar Dog Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 33532,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Bravo Night Featuring Top Chef"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "12:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 30391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-01",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 28154,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 29728,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Local Artist Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 31924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Backyard Baseball® Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "american-family-field",
+      "attendance": 32570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 40205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "18:10",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 40157,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Contreras Trading Card Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "13:10",
+      "opponent": "Phillies",
+      "venueId": "american-family-field",
+      "attendance": 40131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Slidin' Sal Frelick Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "american-family-field",
+      "attendance": 30025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "american-family-field",
+      "attendance": 30452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Pokémon Go™ Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "american-family-field",
+      "attendance": 36386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 41021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "18:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 40193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42056,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-29",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 28059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 28081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 30068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: 250th Anniversary of America"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-02",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 41390,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "name": "Dollar Dog Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jacob Misiorowski T-shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 38566,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Noche de Cerveceros"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "15:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 40144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Woodruff Trading Card Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "american-family-field",
+      "attendance": 36451,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Paw Patrol™ Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-20",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 34073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 30016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Team Up for Venezuela Relief"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "american-family-field",
+      "attendance": 38319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "15:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 37089,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: American Family Field's 25th Anniversary"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame: Alumni Legends Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "18:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 34328,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Brewers Guess Who"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "american-family-field",
+      "attendance": 39131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Local Artist Kids T-Shirt"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "State Fair Ticket Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-03",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 30684,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 30014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 33528,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: NARUTO™ Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "american-family-field",
+      "attendance": 38145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 42118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 40625,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bar Dice Set"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "american-family-field",
+      "attendance": 42731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Sesame Street Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "american-family-field",
+      "attendance": 36870,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Local Artist Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "american-family-field",
+      "attendance": 34564,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Hello Kitty® Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-20",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "american-family-field",
+      "attendance": 35909,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids & Seniors Discount Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "15:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 40130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Black Culture Fest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 42298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hank Aaron Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "18:10",
+      "opponent": "Braves",
+      "venueId": "american-family-field",
+      "attendance": 2432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "MLB Little League Classic presented by New York Life in Williamsport, PA (to be played at Historic Bowman Field)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "american-family-field",
+      "attendance": 41620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert: Cole Swindell"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "18:15",
+      "opponent": "Rangers",
+      "venueId": "american-family-field",
+      "attendance": 36895,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Chourio Bowl"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "american-family-field",
+      "attendance": 37996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Chourio Height Poster"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-09-07",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 42368,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 36076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "american-family-field",
+      "attendance": 36073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: KPop Demon Hunters Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Laser Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "18:45",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 41879,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Wisconsin First Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "18:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 41167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Oktoberfest Alpine Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks Show"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "american-family-field",
+      "attendance": 40559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hank The Dog Plushie"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 42793,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 100,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Theme Night Ticket: Peanuts® Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "18:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 42900,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 101,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Tumbler"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "14:10",
+      "opponent": "Cardinals",
+      "venueId": "american-family-field",
+      "attendance": 43556,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 102,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Family Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "19:30",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 42843,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "brewers",
+      "season": 2026,
+      "date": "2026-10-04",
+      "start": "15:00",
+      "opponent": "Padres",
+      "venueId": "american-family-field",
+      "attendance": 41683,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    }
+  ]
+}
