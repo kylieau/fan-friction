@@ -73,17 +73,28 @@ ok('a plan removed on one device is gone for the other', cloud1.plans.length ===
 
 // ---- Follow approval: B follows A ----
 const b = await session('b');
-await b.c.from('follows').delete().eq('follower_id', b.id);
+// Setup clears run as the person followed: since 0016 the follower cannot see the row, so their plain delete matches nothing.
+await s1.c.from('follows').delete().eq('follower_id', b.id);
 await s1.c.from('profiles').update({ visibility: 'anyone' }).eq('id', s1.id);
 let r = await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'approved' });
 ok('database refuses a self-approved follow (needs migration 0011)', Boolean(r.error), r.error ? r.error.message : 'row was accepted');
-await b.c.from('follows').delete().eq('follower_id', b.id);
+await s1.c.from('follows').delete().eq('follower_id', b.id);
 r = await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending' });
 ok('a pending request is accepted', !r.error, r.error?.message);
 r = await b.c.from('follows').update({ status: 'approved' }).eq('follower_id', b.id).eq('followee_id', s1.id).select();
 ok('the follower cannot approve their own request', !r.data || r.data.length === 0);
 r = await s1.c.from('follows').update({ status: 'approved' }).eq('follower_id', b.id).eq('followee_id', s1.id).select();
 ok('the person followed can approve', r.data && r.data.length === 1 && r.data[0].status === 'approved');
+// The follower's Unfollow and Cancel go through one server function (0022): a plain delete from their side never matched.
+r = await b.c.rpc('unfollow', { target: s1.id });
+let outRows = (await b.c.from('my_follows').select('status').eq('followee_id', s1.id)).data ?? [];
+ok('the follower can unfollow an approved follow (needs migration 0022)', !r.error && outRows.length === 0, r.error?.message ?? `${outRows.length} rows`);
+await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending' });
+r = await b.c.rpc('unfollow', { target: s1.id });
+outRows = (await b.c.from('my_follows').select('status').eq('followee_id', s1.id)).data ?? [];
+ok('the follower can cancel a pending request (needs migration 0022)', !r.error && outRows.length === 0, r.error?.message ?? `${outRows.length} rows`);
+await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending' });
+await s1.c.from('follows').update({ status: 'approved' }).eq('follower_id', b.id).eq('followee_id', s1.id);
 // simulate an app-made auto approval, then tighten: should go back to pending (needs migration 0011)
 await s1.c.from('follows').update({ auto_approved: true }).eq('follower_id', b.id).eq('followee_id', s1.id);
 await s1.c.from('profiles').update({ visibility: 'approved' }).eq('id', s1.id);
@@ -93,10 +104,10 @@ ok('leaving "Anyone" re-asks an auto-approved follower (needs migration 0011)', 
 let seen = (await b.c.from('entries').select('id').eq('user_id', s1.id)).data ?? [];
 ok('a pending follower sees none of A\'s entries on "People I approve"', seen.length === 0, `${seen.length} rows`);
 // ---- Oct 10 privacy fixes (R01, R03, R04, R05, R06) ----
-await b.c.from('follows').delete().eq('follower_id', b.id);
+await s1.c.from('follows').delete().eq('follower_id', b.id);
 r = await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending', auto_approved: true });
 ok('database refuses a request marked auto-approved by its sender (R01; needs migration 0015)', Boolean(r.error), r.error ? '' : 'row was accepted');
-await b.c.from('follows').delete().eq('follower_id', b.id);
+await s1.c.from('follows').delete().eq('follower_id', b.id);
 await b.c.from('follows').insert({ follower_id: b.id, followee_id: s1.id, status: 'pending' });
 await s1.c.from('follows').update({ status: 'declined' }).eq('follower_id', b.id).eq('followee_id', s1.id);
 r = await b.c.from('my_follows').select('status').eq('followee_id', s1.id).maybeSingle();
@@ -123,7 +134,8 @@ const anon = createClient(env.VITE_SUPABASE_URL, env.VITE_SUPABASE_ANON_KEY, { a
 const handleA = (await s1.c.from('profiles').select('handle').eq('id', s1.id).maybeSingle()).data?.handle;
 await s1.c.from('profiles').update({ link_off: true }).eq('id', s1.id);
 r = await anon.from('profile_cards').select('id').eq('handle', handleA);
-ok('with the link off, a visitor finds no card (R06; needs migration 0017)', !r.error && (r.data ?? []).length === 0, r.error?.message ?? `${(r.data ?? []).length} rows`);
+// Since 0020 a visitor cannot list the view at all (R04); that refusal is the same answer.
+ok('with the link off, a visitor finds no card (R06; needs migration 0017)', r.error ? r.error.code === '42501' : (r.data ?? []).length === 0, r.error?.message ?? `${(r.data ?? []).length} rows`);
 r = await anon.from('profiles').select('home_metro_id').eq('id', s1.id);
 ok('a visitor cannot read the profiles table (needs migration 0017)', (r.data ?? []).length === 0, `${(r.data ?? []).length} rows`);
 await s1.c.from('profiles').update({ link_off: false }).eq('id', s1.id);

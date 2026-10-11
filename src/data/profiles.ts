@@ -342,9 +342,13 @@ export async function unfollow(targetId: string): Promise<FollowStatus> {
   const c = supabase();
   const me = getAccount();
   if (!c || !me) return 'none';
-  await c.from('follows').delete().eq('follower_id', me.id).eq('followee_id', targetId);
-  // A removed row cannot be deleted; Unfollow hides it on this side instead (R02, migration 0020).
-  await c.rpc('hide_follow', { target: targetId });
+  // One server function (migration 0022) clears a pending or approved row and hides a removed one (R02).
+  // The follower cannot read follows rows since 0016, so a plain delete from this side matched nothing.
+  const { error } = await c.rpc('unfollow', { target: targetId });
+  if (error && notThereYet(error)) {
+    await c.from('follows').delete().eq('follower_id', me.id).eq('followee_id', targetId);
+    await c.rpc('hide_follow', { target: targetId });
+  }
   return followStatus(targetId);
 }
 
@@ -454,7 +458,7 @@ export interface FeedItem {
   eventId?: string;
   /** The entry behind an attended line, for its read. */
   entry?: Entry;
-  /** The friend watched, not attended (8.2). */
+  /** The friend watched, not attended (8.2); on a planning line, they answered Watching? (Kylie, Oct 11). */
   watched?: boolean;
   example?: boolean;
 }
@@ -491,17 +495,17 @@ export async function followingFeed(limit = 30): Promise<FeedItem[]> {
     entryCards(c, ids, limit),
     c
       .from('plans')
-      .select('id, user_id, date, metro_id, event_id, title, venue')
+      .select('id, user_id, date, metro_id, event_id, title, venue, data')
       .in('user_id', ids)
       .gte('date', earliestToday())
       .order('date', { ascending: true })
       .limit(limit),
   ]);
-  const planning: FeedItem[] = ((plans ?? []) as { id: string; user_id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null }[])
+  const planning: FeedItem[] = ((plans ?? []) as { id: string; user_id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean } | null }[])
     .filter((p) => p.date >= todayFor(p.metro_id))
     .flatMap((p) => {
       const friend = people.get(p.user_id);
-      return friend ? [{ kind: 'planning' as const, friend, title: p.title, date: p.date, venue: p.venue ?? undefined, metroId: p.metro_id, eventId: p.event_id ?? undefined }] : [];
+      return friend ? [{ kind: 'planning' as const, friend, title: p.title, date: p.date, venue: p.venue ?? undefined, metroId: p.metro_id, eventId: p.event_id ?? undefined, ...(p.data?.watch ? { watched: true } : {}) }] : [];
     });
   const attended: FeedItem[] = cards.flatMap(({ userId, entry }) => {
     const friend = people.get(userId);
@@ -595,6 +599,8 @@ export interface PlanCard {
   eventId?: string;
   title: string;
   venue?: string;
+  /** They answered Watching?, not Attending? (Kylie, Oct 11). */
+  watch?: boolean;
 }
 
 /** Someone's plans from today on, soonest first. Empty when they have not approved you. */
@@ -603,14 +609,14 @@ export async function plansOf(userId: string): Promise<PlanCard[]> {
   if (!c) return [];
   const { data } = await c
     .from('plans')
-    .select('id, date, metro_id, event_id, title, venue')
+    .select('id, date, metro_id, event_id, title, venue, data')
     .eq('user_id', userId)
     .gte('date', earliestToday())
     .order('date', { ascending: true })
     .limit(20);
-  return ((data ?? []) as { id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null }[])
+  return ((data ?? []) as { id: string; date: string; metro_id: string; event_id: string | null; title: string; venue: string | null; data?: { watch?: boolean } | null }[])
     .filter((p) => p.date >= todayFor(p.metro_id))
-    .map((p) => ({ id: p.id, date: p.date, metroId: p.metro_id, eventId: p.event_id ?? undefined, title: p.title, venue: p.venue ?? undefined }));
+    .map((p) => ({ id: p.id, date: p.date, metroId: p.metro_id, eventId: p.event_id ?? undefined, title: p.title, venue: p.venue ?? undefined, ...(p.data?.watch ? { watch: true } : {}) }));
 }
 
 /** Whether this person follows you (approved). */
