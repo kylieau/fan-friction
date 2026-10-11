@@ -40,7 +40,7 @@ Use Claude's historical ridership/service findings as leads and retain its trans
 4. Wire verified supported teams and room-matched concerts through existing feeds. Other sports and event-specific fair/festival listings can join only with a verified date, location and defensible crowd treatment; no multi-day-total division or nested audience double-counting. Keep unresolved coverage visible.
 5. Check attendance calibration, access measurement, nightly catalog and phone screens through the existing new-city checklist. Confirm primary source details as each venue/team is incorporated. Historical event reconstruction remains a separate step.
 
-No app files, city configuration, data jobs, source answers or formula constants were changed in this review. Research is reviewed but remains open until the implementation choices are approved and findings are actually incorporated.
+The review itself changed no app files or source answers. Kylie approved the five-point incorporation on Oct 11, 2026; the subsequent [implementation register](milwaukee-implementation-register.md) records the selected rooms, actual feed coverage and remaining gaps. All four original reports remain unchanged. Unresolved research is follow-up evidence work, not a reason to treat the reports as approved inputs wholesale.
 
 ## Original reports
 
