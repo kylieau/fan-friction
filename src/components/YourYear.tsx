@@ -20,10 +20,10 @@ const LADDER = ['Chill', 'Mild', 'Spicy', 'Brutal', 'Cooked'];
 export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: ReadonlyMap<string, number> }) {
   const thisYear = String(new Date().getFullYear());
   const [scope, setScope] = useState<'year' | 'all'>('year');
-  const inScope = useMemo(
-    () => (scope === 'year' ? entries.filter((e) => e.when.sort.startsWith(thisYear)) : entries),
-    [entries, scope, thisYear],
-  );
+  // Watched entries stay out of the reads here (Kylie, Oct 11, call 3): a watched game is never Heaviest or Quietest.
+  const scoped = useMemo(() => (scope === 'year' ? entries.filter((e) => e.when.sort.startsWith(thisYear)) : entries), [entries, scope, thisYear]);
+  const inScope = useMemo(() => scoped.filter((e) => !e.watched), [scoped]);
+  const watchedCount = scoped.length - inScope.length;
   const rated = useMemo(
     () =>
       inScope
@@ -67,6 +67,11 @@ export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: Read
                 <strong>{count}</strong> {word}
               </span>
             ))}
+            {watchedCount > 0 && (
+              <span className="word-pill watched">
+                <strong>{watchedCount}</strong> watched
+              </span>
+            )}
           </div>
           {/* "Your usual" means something after about three reads; before that, the first one (3.22). */}
           {usual !== null && rated.length >= 3 ? (

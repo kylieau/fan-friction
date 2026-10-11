@@ -5432,3 +5432,19 @@ button.back-link {
   color: var(--muted);
   pointer-events: none;
 }
+
+/* Where you watched (call 3) */
+.watched-where {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.watched-where .account-input {
+  width: 100%;
+}
+
+.word-pill.watched {
+  color: var(--muted);
+}

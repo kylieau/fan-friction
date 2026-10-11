@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'reac
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
 import { ByLine, CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
+import { WatchedWhere } from '../components/WatchedWhere';
 import { crowdThousands } from '../map/crowdPoints';
 import {
   drawSize,
@@ -207,17 +208,18 @@ export function EventScreen() {
             <RemoveConfirm stamped={Boolean(log.added.find((entry) => entry.eventId === e.id)?.stamp)} onKeep={() => setUnmarking(false)} onRemove={() => { setUnmarking(false); toggleWasThere(e); }} />
           ) : isWatched(e.id, log) ? (
             <>
-              {/* Watched: the quiet checked state, with a smaller "I was there" to switch (build notes 2, 8.2). */}
+              {/* Done states are Attended / Watched on every page (Kylie, Oct 11, call 2); a smaller "I was there" switches. */}
               <button type="button" className="mark-button on watched-on" aria-pressed onClick={() => setUnmarking(true)}>
-                <TvIcon /> ✓ You watched it
+                <TvIcon /> Watched
               </button>
+              {logged && <WatchedWhere entry={logged} />}
               <button type="button" className="mark-button small" onClick={() => markWasThere(e)}>
                 I was there
               </button>
             </>
           ) : (
             <button type="button" className="mark-button on" aria-pressed onClick={() => setUnmarking(true)}>
-              ✓ You were there
+              Attended
             </button>
           )
         ) : (
