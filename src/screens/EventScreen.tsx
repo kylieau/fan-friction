@@ -1,8 +1,20 @@
 import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { frictionLabel, frictionVerdictTitle, showFriction } from '../config/scoreLabels';
-import { VENUES, feelsLikeLabel, isOpenAir, venueNameOn, weatherForEvent, weatherGlyph, weatherRangeForEvent } from '../data';
+import { frictionVerdictTitle } from '../config/scoreLabels';
+import { ByLine, CrowdMark, EventTags, FrictionPill } from '../components/EventTags';
+import { crowdThousands } from '../map/crowdPoints';
+import {
+  drawSize,
+  feelsLikeLabel,
+  isOpenAir,
+  sizeTier,
+  venueNameOn,
+  VENUES,
+  weatherForEvent,
+  weatherGlyph,
+  weatherRangeForEvent,
+} from '../data';
 import {
   CONCERT_FILL,
   drawSavedAhead,
@@ -29,9 +41,9 @@ import { FactList } from '../components/FactList';
 import { ArrowRight, ChevronDown } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
-import { listTitle } from '../lib/eventTitle';
+import { listTitle, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
-import { comparePath, openedMetroId } from '../lib/view';
+import { comparePath, openedMetroId, eventPath } from '../lib/view';
 import { quietStakes } from '../lib/stakes';
 import { longLocalDate } from '../lib/dates';
 import { hoursOf, milesBetween, runningHours } from '../lib/windows';
@@ -114,6 +126,13 @@ export function EventScreen() {
   const stampLocked = !ahead && isStampLocked(asMetroDate(e.metroId, date, day.events), (METROS[e.metroId] ?? DEFAULT_METRO).timeZone);
   // The station: the schedule's when it names one, else what you wrote down.
   const tv = e.broadcast ?? logged?.tv;
+  // The rivals: other events over the floor starting within an hour, biggest first (build notes 2).
+  const toMin = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5));
+  const rivals = day.events
+    .filter((r) => r.id !== e.id && sizeTier(r) === 'feeds-friction' && (!e.start || !r.start || Math.abs(toMin(r.start) - toMin(e.start)) <= 60))
+    .sort((x, y) => (drawSize(y) ?? 0) - (drawSize(x) ?? 0))
+    .slice(0, 5);
+  const rivalVenue = (r: CrowdEvent) => (r.place.type === 'venue' ? (VENUES[r.place.venueId] ? venueNameOn(VENUES[r.place.venueId], r.date) : null) : r.place.name);
 
   return (
     <div className="screen page event-page">
@@ -134,7 +153,8 @@ export function EventScreen() {
         <FactList facts={eventFacts(e, logged)} />
         {a && (
           <div className="chip-row">
-            <span className="chip chip-occasion">{a.occasion}</span>
+            {/* The two tags (build notes 2): the occasion outline tag, then the friction pill, Unopposed included here. */}
+            <EventTags event={e} withUnopposed />
             {a.facts.map((f) => (
               <span key={f} className="chip chip-fact">
                 {f}
@@ -170,10 +190,37 @@ export function EventScreen() {
         {logged && <EntryLayer entry={logged} />}
       </div>
 
-      {a && showFriction(a.friction) && (
-        <section className="card verdict">
-          <div className="verdict-word">{frictionVerdictTitle(a.friction)}</div>
+      {a && (
+        <section className="card up-against" aria-label="Up against">
+          {/* "Up against" (build notes 2, 7.4): violet label and rule; the pill starts the sentence; the rivals under it with gold crowd marks. */}
+          <div className="up-against-label">Up against</div>
+          <div className="up-against-line">
+            {/* A room under the floor gets no pill (build notes 2); Unopposed shows here, and only here. */}
+            {sizeTier(e) === 'feeds-friction' ? <FrictionPill level={a.friction} /> : null}
+            <ByLine event={e} />
+          </div>
           <div className="verdict-why">{a.why}</div>
+          {rivals.length > 0 && (
+            <ul className="rival-list">
+              {rivals.map((r) => (
+                <li key={r.id}>
+                  <Link to={eventPath(r.id, r.metroId)} className="rival-row">
+                    <span className="rival-dot" aria-hidden />
+                    <span className="rival-name">
+                      {mapTitle(r, day.events)}
+                      {rivalVenue(r) ? ` · ${rivalVenue(r)}` : ''}
+                    </span>
+                    {drawSize(r) ? (
+                      <span className="rival-crowd">
+                        <CrowdMark />
+                        {crowdThousands(drawSize(r)!)}
+                      </span>
+                    ) : null}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
           {a.status === 'draft' && <div className="draft-note">Draft. Still being checked.</div>}
           {a.status === 'formula' && !stampLocked && <div className="draft-note">Forecast</div>}
         </section>
@@ -234,7 +281,8 @@ export function EventScreen() {
       <ShareCard
         dateLabel={longLocalDate(date)}
         title={listTitle(e)}
-        line={a ? (showFriction(a.friction) ? `${frictionLabel(a.friction)}: ${a.why}` : a.why) : ''}
+        line={a ? `${frictionVerdictTitle(a.friction, a.rival)}. ${a.why}` : ''}
+        friction={a?.friction ?? null}
         rating={day.rating ? day.rating.rating : null}
         crowd={me.count !== undefined ? `${fmt(me.count)} ${kind ? capital(kind) : ''}` : me.soldOut ? 'Sold Out' : null}
       />

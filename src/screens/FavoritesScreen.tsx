@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { SearchIcon } from '../components/Icons';
 import { SearchButton } from '../components/SearchButton';
-import { FrictionPill } from '../components/EventTags';
+import { EventFrictionPill } from '../components/EventTags';
 import { ReadTile as Read } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
@@ -342,7 +342,7 @@ export function FavoritesScreen() {
                     {label}s
                   </h2>
                   {group.map((card) => (
-                    <FavCard key={favoriteKey(card.fav)} card={card} rating={readFor(card.next)} home={home.id} upcoming={upcoming} />
+                    <FavCard key={favoriteKey(card.fav)} card={card} rating={readFor(card.next)} home={home.id} />
                   ))}
                 </section>
               );
@@ -363,7 +363,7 @@ export function FavoritesScreen() {
                   <ul className="log-list">
                     {rows.map((card) => (
                       <li key={favoriteKey(card.fav)}>
-                        <NextRow card={card} home={home.id} upcoming={upcoming} />
+                        <NextRow card={card} home={home.id} />
                       </li>
                     ))}
                   </ul>
@@ -390,9 +390,8 @@ function nextFacts(next: NextLine, home: string): string {
 }
 
 /** One favorite as a status card: name, record and last five; one next line; your record; ESPN (teams). */
-function FavCard({ card, rating, home, upcoming }: { card: CardData; rating: number | null; home: string; upcoming: readonly CrowdEvent[] }) {
+function FavCard({ card, rating, home }: { card: CardData; rating: number | null; home: string }) {
   const { fav, record, next, yours, espn } = card;
-  const sameDate = next?.event ? upcoming.filter((e) => e.metroId === next.event!.metroId && e.date === next.date) : [];
   const yoursText =
     yours.count === 0
       ? null
@@ -417,7 +416,7 @@ function FavCard({ card, rating, home, upcoming }: { card: CardData; rating: num
         {record && <LastFive marks={record.last5} />}
       </Link>
       {next ? (
-        <NextLineRow next={next} rating={rating} home={home} sameDate={sameDate} />
+        <NextLineRow next={next} rating={rating} home={home} />
       ) : (
         <div className="fav-next fav-next-none">
           <span className="log-facts">{fav.teamId ? 'No games to come.' : 'Nothing in the next two weeks.'}</span>
@@ -445,14 +444,14 @@ function FavCard({ card, rating, home, upcoming }: { card: CardData; rating: num
 }
 
 /** The one next line on a card: date, time, opponent or venue; the read; the friction pill, or Away. */
-function NextLineRow({ next, rating, home, sameDate }: { next: NextLine; rating: number | null; home: string; sameDate: readonly CrowdEvent[] }) {
+function NextLineRow({ next, rating, home }: { next: NextLine; rating: number | null; home: string }) {
   const body = (
     <>
       {next.event ? <Read rating={rating} /> : next.away ? <span className="away-tag">Away</span> : <Read rating={rating} />}
       <span className="log-main">
         <span className="log-facts fav-next-facts">{nextFacts(next, home)}</span>
       </span>
-      {next.event && <FrictionPill event={next.event} sameDate={sameDate} />}
+      {next.event && <EventFrictionPill event={next.event} />}
     </>
   );
   if (next.event) {
@@ -466,14 +465,13 @@ function NextLineRow({ next, rating, home, sameDate }: { next: NextLine; rating:
 }
 
 /** A row under a date heading: time, who, where; the friction pill. */
-function NextRow({ card, home, upcoming }: { card: CardData; home: string; upcoming: readonly CrowdEvent[] }) {
+function NextRow({ card, home }: { card: CardData; home: string }) {
   const { fav, next } = card;
   if (!next) return null;
   const title = fav.kind === 'team' ? `${fav.label} ${next.text}` : fav.kind === 'artist' ? fav.label : next.text;
   const where = [fav.kind === 'team' && next.event ? venueOf(next.event) : fav.kind === 'artist' ? next.text : fav.label, next.metroId && next.metroId !== home ? METROS[next.metroId]?.name : null]
     .filter(Boolean)
     .join(' · ');
-  const sameDate = next.event ? upcoming.filter((e) => e.metroId === next.event!.metroId && e.date === next.date) : [];
   const body = (
     <>
       <span className="tl-time">{next.start ? clockTime(next.start) : 'TBA'}</span>
@@ -481,7 +479,7 @@ function NextRow({ card, home, upcoming }: { card: CardData; home: string; upcom
         <span className="log-title">{title}</span>
         <span className="log-facts">{where}</span>
       </span>
-      {next.event ? <FrictionPill event={next.event} sameDate={sameDate} /> : next.away ? <span className="away-tag">Away</span> : null}
+      {next.event ? <EventFrictionPill event={next.event} /> : next.away ? <span className="away-tag">Away</span> : null}
     </>
   );
   if (next.event) {

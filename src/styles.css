@@ -4928,3 +4928,421 @@ button.back-link {
 .crowd-meta {
   font-size: 10.5px;
 }
+
+/* ---------- Friction words, two tags, chip card, Why card, color roles (build notes 2; Kylie, Oct 9–10) ---------- */
+/* Gold means crowd, violet means friction, blue means action (7.3, 7.5). */
+.gold-button {
+  background: var(--action);
+  color: #fff;
+}
+
+.chip-you {
+  background: var(--water);
+  color: var(--ink);
+}
+
+.crowd-label.selected {
+  box-shadow:
+    0 0 0 3px var(--paleBlue),
+    0 2px 6px rgba(15, 27, 45, 0.28);
+}
+
+.tag-occasion {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 7px;
+  border: 1px solid var(--tagInk);
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--tagInk);
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.chip-f {
+  background: var(--unopposed);
+  color: var(--tagInk);
+}
+
+.chip-f.unopposed {
+  background: var(--unopposed);
+  color: var(--tagInk);
+}
+
+.chip-f.squeezed {
+  background: var(--fightContainer);
+  color: var(--ink);
+}
+
+.chip-f.swamped {
+  background: var(--fight);
+  color: #fff;
+}
+
+.chip-f.steamrolled {
+  background: var(--fightDeep);
+  color: #fff;
+}
+
+.event-tags {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.event-tagline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--ink2);
+}
+
+.event-tagline .event-venue {
+  font-size: 12px;
+  color: var(--ink2);
+}
+
+.event-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+.crowd-figure {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.crowd-mark {
+  color: var(--crowdIcon);
+  flex-shrink: 0;
+}
+
+.map-header-count .crowd-mark {
+  vertical-align: -1px;
+  margin-right: 2px;
+}
+
+.by-line {
+  font-size: 12.5px;
+  color: var(--ink2);
+}
+
+.by-line strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.tl-row-link .log-main,
+.tl-main .log-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* The chip card (T1) */
+.datescore-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  display: flex;
+}
+
+.sheet-none {
+  display: none;
+}
+
+.chip-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: var(--card);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
+}
+
+.chip-card-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.chip-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip-card-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.chip-card-side {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.chip-card-crowd {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.chip-card-chevron {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--action);
+}
+
+/* "Why 4.7 tonight" (P3) */
+.why-backdrop {
+  align-items: flex-start;
+  padding-top: calc(72px + env(safe-area-inset-top, 0px));
+}
+
+.why-card {
+  padding: 14px 0 6px;
+  gap: 0;
+  max-height: calc(100dvh - 180px);
+}
+
+.why-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.why-head-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.why-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.why-sub {
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.why-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 8px;
+}
+
+.why-row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  min-height: 64px;
+  padding: 10px 28px 10px 8px;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+}
+
+.why-list li:last-child .why-row {
+  border-bottom: 0;
+}
+
+.why-line1 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.why-row-title {
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.why-row-time {
+  font-size: 13px;
+  color: var(--ink2);
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.why-line2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.why-bar {
+  width: 88px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--track);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.why-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: var(--crowdBar);
+}
+
+.why-bar.quiet .why-bar-fill {
+  background: var(--noFightBar);
+}
+
+.why-row-crowd {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  min-width: 36px;
+}
+
+.why-row-chevron {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: var(--action);
+}
+
+/* Up against (event page, 7.4) */
+.up-against {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 3px solid var(--fight);
+}
+
+.up-against-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--fight);
+}
+
+.up-against-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.up-against-line .by-line {
+  font-size: 15px;
+}
+
+.rival-list {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+}
+
+.rival-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 36px;
+  color: inherit;
+  text-decoration: none;
+  border-top: 1px solid var(--line);
+  font-size: 13.5px;
+}
+
+.rival-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--fight);
+  flex-shrink: 0;
+}
+
+.rival-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rival-crowd {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Share card: gold date and crowd on ink; the violet pill outlined in white */
+.share-crowd {
+  color: var(--crowdOnInk);
+  opacity: 1;
+}
+
+.share-pill .chip-f {
+  box-shadow: 0 0 0 1px #fff;
+}
+
+.crowd-figure .crowd-mark,
+.chip-card-crowd .crowd-mark,
+.why-row-crowd .crowd-mark,
+.rival-crowd .crowd-mark {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+}
+
+.event-side .crowd-figure {
+  flex-direction: row;
+}

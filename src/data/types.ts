@@ -153,6 +153,8 @@ export interface Assessment {
   friction: Friction;
   /** The one or two biggest reasons, in plain words. */
   why: string;
+  /** The biggest other 5,000+ event starting within an hour, and how many more ("by Mac DeMarco +2"). */
+  rival?: { name: string; more: number };
   /** draft / confirmed are hand calls kept for comparison; formula is what the app shows. */
   status: 'draft' | 'confirmed' | 'formula';
 }

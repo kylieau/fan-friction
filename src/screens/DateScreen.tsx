@@ -43,8 +43,7 @@ import { dayWord } from '../lib/dayWord';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId } from '../lib/homeCity';
 import { quietStakes } from '../lib/stakes';
-import { eventColumns } from '../lib/eventColumns';
-import { EventCols, EventColsHead, EventColsKey } from './MapScreen';
+import { CrowdFigure, EventTags } from '../components/EventTags';
 import { feedLine } from './YouScreen';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
@@ -317,7 +316,6 @@ export function DateScreen() {
         <h2 id="that-date" className="you-heading">
           That {word} in {metro.name}
         </h2>
-        <EventColsHead />
         {(
           <ul className="log-list timeline-list">
             {events.map((e) => {
@@ -325,14 +323,20 @@ export function DateScreen() {
               return (
                 <li key={e.id} className={`tl-row${yours || e.id === highlight ? ' yours' : ''}`}>
                   <Link to={eventPath(e.id, e.metroId)} className="tl-main">
-                    <span className="tl-time">{e.start ? clockTime(e.start) : 'TBA'}</span>
                     <span className="log-main">
                       <span className="log-title">{listTitle(e)}</span>
+                      <span className="event-tagline">
+                        <EventTags event={e} />
+                        <span className="event-venue">{[venueOf(e), yours ? (ahead ? 'Attending' : 'Attended') : null].filter(Boolean).join(' · ')}</span>
+                      </span>
                       {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
                       <span className="log-facts">
-                        {[venueOf(e), crowdLine(e), yours ? (ahead ? 'Attending' : 'Attended') : null].filter(Boolean).join(' · ')}
                         <VenueWeather event={e} />
                       </span>
+                    </span>
+                    <span className="event-side">
+                      <CrowdFigure event={e} />
+                      <span className="event-meta">{e.start ? clockTime(e.start) : 'TBA'}</span>
                     </span>
                   </Link>
                   {choosing && unmarking === e.id ? (
@@ -350,15 +354,12 @@ export function DateScreen() {
                     <button type="button" className={`fav-toggle${yours ? ' on' : ''}`} onClick={() => mark(e)}>
                       {ahead ? (attending(e) ? 'Attending' : 'Attend') : attended(e) ? 'Attended' : 'Attended?'}
                     </button>
-                  ) : (
-                    <EventCols cols={eventColumns(e, events)} soldOut={e.crowd.some((c) => c.soldOut)} />
-                  )}
+                  ) : null}
                 </li>
               );
             })}
           </ul>
         )}
-        <EventColsKey />
       </section>
       )}
 

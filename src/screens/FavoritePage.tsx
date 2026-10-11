@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ChevronDown } from '../components/Icons';
-import { FrictionPill } from '../components/EventTags';
+import { EventFrictionPill } from '../components/EventTags';
 import { ReadTile as Read } from '../components/ReadTile';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
@@ -246,7 +246,7 @@ export function FavoritePage() {
                       {nextHome.start ? ` · ${clockTime(nextHome.start)}` : ''}
                     </span>
                     <span className="fav-next-tags">
-                      <FrictionPill event={nextHomeEvent} sameDate={sameDate(nextHomeEvent)} />
+                      <EventFrictionPill event={nextHomeEvent} />
                       {crowdOf(nextHomeEvent) && <span className="log-facts">{crowdOf(nextHomeEvent)}</span>}
                     </span>
                   </span>
@@ -326,7 +326,7 @@ export function FavoritePage() {
                           {event.start ? ` · ${clockTime(event.start)}` : ''}
                         </span>
                         <span className="fav-next-tags">
-                          <FrictionPill event={event} sameDate={sameDate(event)} />
+                          <EventFrictionPill event={event} />
                           {crowdOf(event) && <span className="log-facts">{crowdOf(event)}</span>}
                         </span>
                       </span>
@@ -389,7 +389,7 @@ export function FavoritePage() {
                         {event.metroId !== metro.id ? ` · ${METROS[event.metroId]?.name ?? ''}` : ''}
                       </span>
                       <span className="fav-next-tags">
-                        <FrictionPill event={event} sameDate={sameDate(event)} />
+                        <EventFrictionPill event={event} />
                       </span>
                     </span>
                   </Link>

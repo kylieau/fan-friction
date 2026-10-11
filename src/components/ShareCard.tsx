@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { APP } from '../config/app';
-import { formatScore, scoreLabel } from '../config/scoreLabels';
+import { formatScore, scoreLabel, type Friction } from '../config/scoreLabels';
+import { FrictionPill } from './EventTags';
 import { Wordmark } from './Wordmark';
 
 interface Props {
@@ -15,16 +16,19 @@ interface Props {
   crowd: string | null;
   /** The button's verb. Compare passes "Share these events" (C080). */
   buttonLabel?: string;
+  /** The event's friction, for the pill on the card. */
+  friction?: Friction | null;
 }
 
 // The event's share card (shown on screen; sharing sends text and the link for
 // now, and an image version can come later).
-export function ShareCard({ dateLabel, title, line, rating, crowd, buttonLabel = 'Share this event' }: Props) {
+export function ShareCard({ dateLabel, title, line, rating, crowd, buttonLabel = 'Share this event', friction = null }: Props) {
   const [note, setNote] = useState('');
 
   // One period per sentence, whether or not the reason already ends with one (C029).
   const sentence = (s: string) => (s && !/[.!?]$/.test(s) ? `${s}.` : s);
-  const text = [`${title}, ${dateLabel}${rating !== null ? ` · ${scoreLabel(rating)} · ${formatScore(rating)}/10` : ''}.`, sentence(line), sentence(crowd ?? '')].filter(Boolean).join(' ');
+  // Reads are tenths, never "x/10" (build notes 2, house rules).
+  const text = [`${title}, ${dateLabel}${rating !== null ? ` · ${scoreLabel(rating)} · ${formatScore(rating)}` : ''}.`, sentence(line), sentence(crowd ?? '')].filter(Boolean).join(' ');
 
   const share = async () => {
     const data = { title: `${APP.name}: ${title}`, text, url: window.location.href };
@@ -45,9 +49,14 @@ export function ShareCard({ dateLabel, title, line, rating, crowd, buttonLabel =
       <div className="share-card">
         <div className="share-date">
           {dateLabel.toUpperCase()}
-          {rating !== null && ` · ${scoreLabel(rating).toUpperCase()} · ${formatScore(rating)}/10`}
+          {rating !== null && ` · ${scoreLabel(rating).toUpperCase()} · ${formatScore(rating)}`}
         </div>
         <div className="share-title">{title}</div>
+        {friction && friction !== 'Low' && (
+          <div className="share-pill">
+            <FrictionPill level={friction} />
+          </div>
+        )}
         <div className="share-line">{line}</div>
         {crowd && <div className="share-crowd">{crowd}</div>}
         <div className="share-brand">

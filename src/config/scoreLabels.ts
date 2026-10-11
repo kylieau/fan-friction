@@ -40,9 +40,20 @@ export type Occasion = (typeof OCCASIONS)[number];
 export const FRICTION_LEVELS = ['Low', 'Moderate', 'Heavy', 'Extreme'] as const;
 export type Friction = (typeof FRICTION_LEVELS)[number];
 
-export const frictionLabel = (level: Friction) => `${level} friction`;
-/** The event page's verdict title: the event is dealing with it (Kylie, Oct 5). */
-export const frictionVerdictTitle = (level: Friction) => `Fighting ${level.toLowerCase()} friction`;
+/**
+ * The words on screen for each level (Kylie, Oct 9–10, 2026): a ladder of what the night
+ * does to you, least to most. The data keeps the old level names; only the words changed.
+ * Rejected: the old severity scale (sounded like weather alerts), a swords icon.
+ */
+export const FRICTION_WORDS: Record<Friction, string> = { Low: 'Unopposed', Moderate: 'Squeezed', Heavy: 'Swamped', Extreme: 'Steamrolled' };
+export const frictionWord = (level: Friction) => FRICTION_WORDS[level];
+/** The CSS class for a pill on the violet ladder. */
+export const frictionClass = (level: Friction) => FRICTION_WORDS[level].toLowerCase();
 
-// Low friction is kept in the data but never shown: only Moderate and up get a chip.
+export const frictionLabel = (level: Friction) => frictionWord(level);
+/** The pill starts the sentence: "Swamped by Mac DeMarco +2". Without a rival, the word alone. */
+export const frictionVerdictTitle = (level: Friction, rival?: { name: string; more: number }) =>
+  rival ? `${frictionWord(level)} by ${rival.name}${rival.more > 0 ? ` +${rival.more}` : ''}` : frictionWord(level);
+
+// Low friction ("Unopposed") is kept in the data and shown only on the event page: lists get a pill from Moderate up.
 export const showFriction = (level: Friction) => level !== 'Low';

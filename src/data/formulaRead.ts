@@ -11,6 +11,8 @@ import { VENUES } from './venues';
 import { METROS } from '../config/metros';
 import { eventConditions } from './formula/weather';
 import { weatherForEvent } from './weather';
+import { drawSize, sizeTier } from './read';
+import { mapTitle } from '../lib/eventTitle';
 
 function location(event: CrowdEvent): [number, number] | null {
   if (event.place.type === 'venue') return VENUES[event.place.venueId]?.location ?? null;
@@ -89,12 +91,14 @@ export function applyFormula(metroId: string, date: LocalDate, events: readonly 
     const cond = eventConditions(event, weatherForEvent(event, before));
     // The event's verdict is the louder of its crowd fight and its conditions.
     const score = Math.max(row?.score ?? 1, cond?.score ?? 1);
+    const rival = topRival(event, events);
     const assessment: Assessment = {
       occasion: occasionFor(event),
       facts: factChips(event),
       friction: verdictFromScore(score),
       why: row ? eventWhy(row, read) : 'Nothing bigger was on.',
       status: 'formula',
+      ...(rival ? { rival } : {}),
     };
     return { ...event, assessment };
   });
@@ -109,4 +113,24 @@ export function applyFormula(metroId: string, date: LocalDate, events: readonly 
     notes: read.reasons.map((r) => `${r.name} ${r.score.toFixed(1)}: ${r.why}`).join(' '),
   };
   return { events: assessed, rating, read };
+}
+
+/** Minutes between two wall-clock starts on the same date. */
+function minutesApart(a: string, b: string): number {
+  const toMin = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5));
+  return Math.abs(toMin(a) - toMin(b));
+}
+
+/**
+ * The event's top rival (build notes 2: "by Mac DeMarco +2"): the biggest other event over
+ * the friction floor starting within an hour of this one, and how many more there are.
+ * Named the way its map chip is. Nothing when this event has no start, or nobody is close.
+ */
+function topRival(event: CrowdEvent, events: readonly CrowdEvent[]): { name: string; more: number } | undefined {
+  if (!event.start) return undefined;
+  const near = events
+    .filter((other) => other.id !== event.id && other.start && other.date === event.date && sizeTier(other) === 'feeds-friction' && minutesApart(event.start!, other.start) <= 60)
+    .sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0));
+  if (near.length === 0) return undefined;
+  return { name: mapTitle(near[0], events), more: near.length - 1 };
 }

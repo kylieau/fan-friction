@@ -30,6 +30,31 @@ export const THEME = {
   sun: '#CCA700',
   paleBlue: '#9CC3E4',
   water: '#D5E5F3',
+  // Color roles (Kylie, Oct 10, 2026; build notes 2, 7.3): blue = action, gold = crowd, violet = friction.
+  /** Buttons, links, chevrons, the selected tab. Never crowd or friction. */
+  action: '#005A9C',
+  /** Map dots and glow; a badge fill with ink text. Never text on light, buttons, the tab bar or links. */
+  crowdMark: '#FFD100',
+  /** The crowd icon beside a figure in text. */
+  crowdIcon: '#B98500',
+  /** Crowd bars. */
+  crowdBar: '#E3A600',
+  /** The crowd number and date on the dark share card. */
+  crowdOnInk: '#FFD100',
+  /** The Squeezed pill and the Toughest fight badge, with ink text. */
+  fightContainer: '#E6DDF8',
+  /** The Swamped pill, the Up against label and rule, rival dots. Never links, buttons or the day read. */
+  fight: '#6A3FBF',
+  /** The Steamrolled pill. */
+  fightDeep: '#2C1A57',
+  /** Non-text graphics only. */
+  fightBar: '#B39DE6',
+  /** A crowd bar with no friction. */
+  noFightBar: '#AEB8C6',
+  /** The Unopposed pill's ground. */
+  unopposed: '#EEF2F7',
+  /** Outline tags and their text. */
+  tagInk: '#4B5A70',
 } as const;
 
 export type ThemeColor = keyof typeof THEME;

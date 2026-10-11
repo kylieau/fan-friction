@@ -5,7 +5,7 @@ import { HomeIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { SearchButton } from '../components/SearchButton';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { showFriction } from '../config/scoreLabels';
+import { CrowdFigure, EventTags } from '../components/EventTags';
 import {
   eventMatches,
   favoriteKey,
@@ -20,7 +20,6 @@ import {
   nightsOf,
   ratingForEntry,
   nightKey,
-  roundEstimate,
   scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
@@ -32,7 +31,7 @@ import {
   yourEntries,
 } from '../data';
 import { VENUES, venueNameOn } from '../data';
-import { crowdKind, crowdPoints, showsOnMap, isMuted } from '../map/crowdPoints';
+import { crowdPoints, showsOnMap, isMuted } from '../map/crowdPoints';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { mapTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
@@ -43,7 +42,6 @@ import { FeedRow } from './YouScreen';
 // The map library loads only when a map is on screen (Home and Explore), not on every tab.
 const MiniMap = lazy(() => import('../map/MiniMap'));
 
-const fmt = (n: number) => n.toLocaleString('en-US');
 const ROWS = 3;
 
 /**
@@ -194,14 +192,18 @@ export function HomeScreen() {
             {tonight.slice(0, ROWS).map((e) => (
               <li key={e.id}>
                 <Link to={datePath(e.date, e.metroId, e.id)} className="log-row tl-row-link">
-                  <span className="tl-time">{e.start ? clockTime(e.start) : 'TBA'}</span>
                   <span className="log-main">
                     <span className="log-title">{mapTitle(e, tonight)}</span>
-                    <span className="log-facts">{[venueOf(e), crowdLine(e)].filter(Boolean).join(' · ')}</span>
+                    <span className="event-tagline">
+                      <EventTags event={e} />
+                      {venueOf(e) && <span className="event-venue">{venueOf(e)}</span>}
+                    </span>
                   </span>
-                  {e.assessment && showFriction(e.assessment.friction) && (
-                    <span className={`chip chip-f ${e.assessment.friction.toLowerCase()}`}>{e.assessment.friction}</span>
-                  )}
+                  {/* Time on the right under the crowd, matching Explore (build notes 2, two tags). */}
+                  <span className="event-side">
+                    <CrowdFigure event={e} />
+                    <span className="event-meta">{e.start ? clockTime(e.start) : 'TBA'}</span>
+                  </span>
                 </Link>
               </li>
             ))}
@@ -333,11 +335,3 @@ function venueOf(e: CrowdEvent): string | undefined {
   return e.place.name;
 }
 
-function crowdLine(e: CrowdEvent): string | null {
-  const counted = e.crowd.find((c) => c.count !== undefined);
-  const sold = e.crowd.some((c) => c.soldOut);
-  if (counted?.count !== undefined) return `${fmt(counted.count)} ${crowdKind(e) ?? ''}`.trim() + (sold ? ' · sold out' : '');
-  if (sold) return 'sold out';
-  if (e.expectedDraw) return `~${fmt(roundEstimate(e.expectedDraw.count))} estimated`;
-  return null;
-}

@@ -9,7 +9,6 @@ import {
   rangeSpoken,
   weatherGlyph,
   getCityDate,
-  getUpcoming,
   todayIn,
   VENUES,
   venueNameOn,
@@ -19,23 +18,25 @@ import {
 import { BaseMap, MapContext } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { HandMoveWatch, MapCamera } from '../map/MapCamera';
-import { crowdPoints, crowdShort, showsOnMap } from '../map/crowdPoints';
-import { eventInBounds, MapSettle, type ViewBounds } from '../map/viewBounds';
+import { crowdPoints, crowdThousands, showsOnMap } from '../map/crowdPoints';
+import { MapSettle, type ViewBounds } from '../map/viewBounds';
 import { AreaSwitcher } from '../components/AreaSwitcher';
 import { DateScore } from '../components/DateScore';
-import { ArrowRight, ChevronLeft, ChevronRight, RecenterIcon } from '../components/Icons';
-import { dayWordFor } from '../lib/dayWord';
+import { ChevronLeft, ChevronRight, RecenterIcon } from '../components/Icons';
 import { SearchButton } from '../components/SearchButton';
 import { listTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, type MapMemory } from '../lib/mapReturn';
 import { quietStakes } from '../lib/stakes';
-import { eventColumns, type EventColumns } from '../lib/eventColumns';
 import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
-import { orderSheetEvents } from '../lib/sheetOrder';
 import { useSheetDrag } from '../lib/useSheetDrag';
-import { mapPath, datePath, useView } from '../lib/view';
+import { mapPath, useView } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
+import { ChipCard } from '../components/ChipCard';
+import { WhyCard } from '../components/WhyCard';
+import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
+import { drawSize, sizeTier } from '../data';
+import { dayWord } from '../lib/dayWord';
 
 type Mode = 'crowds' | 'traffic';
 /** No traffic layer exists yet; the switch stays off the map until one does (C079). */
@@ -47,6 +48,7 @@ const TRAFFIC_BUILT = false;
 export function MapScreen() {
   const [mode, setMode] = useState<Mode>('crowds');
   const [legend, setLegend] = useState(false);
+  const [why, setWhy] = useState(false);
   const location = useLocation();
   const href = `${location.pathname}${location.search}`;
   const restored = useRef<MapMemory | null | undefined>(undefined);
@@ -64,15 +66,6 @@ export function MapScreen() {
   useEffect(() => {
     let current = true;
     getCityDate(metro.id, date).then((d) => current && setDay(d));
-    return () => {
-      current = false;
-    };
-  }, [metro.id, date]);
-
-  const [upcoming, setUpcoming] = useState<CrowdEvent[]>([]);
-  useEffect(() => {
-    let current = true;
-    getUpcoming(metro.id, date, 2).then((u) => current && setUpcoming(u));
     return () => {
       current = false;
     };
@@ -133,6 +126,8 @@ export function MapScreen() {
   const selected = events.find((e) => e.id === selectedId) ?? null;
 
   const headerRating = rating ? rating.rating : null;
+  // The day's crowd, over the friction floor, for the count line and the Why card.
+  const crowdTotal = dayEvents.filter((e) => sizeTier(e) === 'feeds-friction').reduce((sum, e) => sum + (drawSize(e) ?? 0), 0);
   const showScore = true;
 
   const caption = !shown
@@ -148,14 +143,18 @@ export function MapScreen() {
   const cityRow = dayRange ? undefined : cityWeather(metro.id, date, events);
   const showFeels = dayRange !== undefined || cityRow !== undefined;
 
-  const [bounds, setBounds] = useState<ViewBounds | null>(null);
+  const [, setBounds] = useState<ViewBounds | null>(null);
   useEffect(() => {
     setBounds(null);
   }, [metro.id, date]);
-  const onMap = useMemo(() => events.filter((event) => eventInBounds(event, bounds)), [events, bounds]);
-  const sheetEvents = useMemo(() => orderSheetEvents(onMap, selected), [onMap, selected]);
+  const rivals = useMemo(() => {
+    if (!selected) return [] as CrowdEvent[];
+    const toMin = (t: string) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5));
+    return events
+      .filter((e) => e.id !== selected.id && e.date === selected.date && sizeTier(e) === 'feeds-friction' && (!selected.start || !e.start || Math.abs(toMin(e.start) - toMin(selected.start)) <= 60))
+      .sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0));
+  }, [events, selected]);
   // The header already names the day (Kylie, Oct 6: say it once).
-  const dateLine = shown ? 'On the map' : ' ';
   const pastLabel = pastRelativeLabel(date, todayIn(DEFAULT_METRO));
 
 
@@ -237,18 +236,28 @@ export function MapScreen() {
         </div>
         {/* The read box first, then the date, then < Today > to step a day or jump back (Kylie, Oct 9). */}
         <div className="map-header-score">
-          <DateScore
-            rating={headerRating}
-            empty={showScore ? shown?.empty : undefined}
-            showScore={showScore}
-          />
+          {/* Tapping the read opens "Why 4.7 tonight" (build notes 2, P3). */}
+          <button type="button" className="datescore-button" aria-label="Why this read" onClick={() => setWhy(true)} disabled={!shown}>
+            <DateScore rating={headerRating} empty={showScore ? shown?.empty : undefined} showScore={showScore} />
+          </button>
           <div className="map-header-dateblock">
             {/* The big date is a label (6.1): Pick a date lives in search. */}
             <h1 className="map-header-date">
               <span>{headerDate(date, today)}</span>
             </h1>
             {/* The count and, on a past date, how long ago ("6 events · Last week"), so the date keeps its room beside < Today >. */}
-            {(caption.trim() || pastLabel) && <div className="map-header-count">{[caption.trim(), pastLabel].filter(Boolean).join(' · ')}</div>}
+            {(caption.trim() || pastLabel) && (
+              <div className="map-header-count">
+                {[caption.trim(), pastLabel].filter(Boolean).join(' · ')}
+                {crowdTotal > 0 && (
+                  <>
+                    {' · '}
+                    <CrowdMark />
+                    {crowdThousands(crowdTotal)}
+                  </>
+                )}
+              </div>
+            )}
           </div>
           <nav className="day-nav" aria-label="Day">
             <Link to={mapPath({ metroId: metro.id, date: addDays(date, -1), today })} className="day-nav-step" aria-label="Previous day">
@@ -327,7 +336,12 @@ export function MapScreen() {
                 <li className="map-key-glow">Gold glow is the size of the crowd</li>
                 <li className="map-key-ring">Pale ring is the one you picked</li>
                 <li className="map-key-note">The date's read, 1–10, from three reasons: crowd fight, gridlock, conditions.</li>
-                <li className="map-key-note">An event's friction, Moderate to Extreme, is its own fight for a crowd.</li>
+                <li className="map-key-note">
+                  Up against: <span className="chip chip-f squeezed">Squeezed</span> <span className="chip chip-f swamped">Swamped</span> <span className="chip chip-f steamrolled">Steamrolled</span>
+                </li>
+                <li className="map-key-note">
+                  How big a deal: <span className="tag-occasion">Notable</span> <span className="tag-occasion">Major</span> <span className="tag-occasion">Marquee</span>
+                </li>
               </ul>
             </div>
           )}
@@ -339,80 +353,49 @@ export function MapScreen() {
       )}
       </div>
 
-      <section className="sheet" ref={sheetRef} aria-label={isToday ? 'Today' : shortLocalDate(date)}>
+      {/* The sheet rises only for a tapped chip (build notes 2, T1): the compact card on top, the rivals it is fighting under it. The On the map list is gone (P3 took it). */}
+      <section className={`sheet${selected ? '' : ' sheet-none'}`} ref={sheetRef} aria-label={selected ? listTitle(selected) : 'Nothing selected'} aria-hidden={!selected}>
         <div className="sheet-top" ref={topRef}>
           <div
             className="sheet-grab"
             role="button"
             tabIndex={0}
             aria-expanded={open}
-            aria-label={open ? 'Collapse the list' : 'Expand the list'}
+            aria-label={open ? 'Collapse' : 'Expand'}
             onClick={grabClick}
             onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setSheetOpen(!open)}
           >
             <span className="sheet-handle" aria-hidden />
-            <div className="sheet-title">{dateLine}</div>
           </div>
-
-          {selected && (
-            <>
-              <div className="selected-row">
-                <EventRow event={selected} dateEvents={events} selected showDate={selected.date !== date} />
-              </div>
-              <Link
-                to={datePath(selected.date, selected.metroId, selected.id)}
-                state={{ fromMap: true }}
-                className="gold-button"
-                onClick={() => markOpenedFromMap()}
-              >
-                See this {dayWordFor(selected)}
-                <ArrowRight />
-              </Link>
-            </>
-          )}
+          {selected && <ChipCard event={selected} onOpen={() => markOpenedFromMap()} />}
         </div>
 
         <div className="sheet-body" ref={bodyRef}>
-          {sheetEvents.length > 0 && <EventColsHead />}
-          {sheetEvents.length > 0 && (
-            <ul className="event-list">
-              {sheetEvents.map((e) => (
-                <li key={e.id}>
-                  <EventRow
-                    event={e}
-                    dateEvents={events}
-                    showDate={e.date !== date}
-                    selected={e.id === selectedId}
-                    onPick={() => {
-                      setFreezeCamera(false);
-                      setSelectedId(e.id);
-                      setOpen(false);
-                    }}
-                  />
-                </li>
-              ))}
-            </ul>
-          )}
-          {sheetEvents.length > 0 && <EventColsKey />}
-          {upcoming.length > 0 && (
-            <div className="coming-up">
-              <div className="section-title">Coming up</div>
+          {selected && rivals.length > 0 && (
+            <>
+              <div className="section-title">Fighting {dayWord(events) === 'day' ? 'today' : 'tonight'}</div>
               <ul className="event-list">
-                {upcoming.map((e) => (
+                {rivals.map((e) => (
                   <li key={e.id}>
                     <EventRow
                       event={e}
-                      dateEvents={upcoming}
-                      showDate
-                      href={mapPath({ metroId: e.metroId, date: e.date, today })}
+                      dateEvents={events}
+                      showDate={e.date !== date}
+                      onPick={() => {
+                        setFreezeCamera(false);
+                        setSelectedId(e.id);
+                      }}
                     />
                   </li>
                 ))}
               </ul>
-            </div>
+            </>
           )}
+          {selected && rivals.length === 0 && <p className="you-fine">Nothing else over 5,000 starts within the hour.</p>}
         </div>
       </section>
+
+      {why && shown && <WhyCard events={dayEvents} rating={headerRating} empty={shown.empty} word={dayWord(dayEvents) === 'day' ? 'today' : 'tonight'} onClose={() => setWhy(false)} />}
 
       {monthOpen && (
         <MonthSheet
@@ -478,35 +461,6 @@ function sheetVenue(event: CrowdEvent): string | null {
   return event.place.name;
 }
 
-/** The two labeled columns beside a listed event (C022 / 3.5). Shared by the sheet and the date page. */
-export function EventCols({ cols, soldOut }: { cols: EventColumns; soldOut?: boolean }) {
-  const f = cols.friction;
-  return (
-    <span className="event-cols">
-      <span className="event-col">{soldOut ? 'Sold out' : (cols.occasion ?? '—')}</span>
-      <span className="event-col">
-        {f && 'pill' in f ? <span className={`chip chip-f ${f.level}`}>{f.pill}</span> : <span className="event-col-reason">{f ? f.reason : '—'}</span>}
-      </span>
-    </span>
-  );
-}
-
-/** The column headings and the one-line key under a list (C022). */
-export function EventColsHead() {
-  return (
-    <div className="event-cols-head" aria-hidden>
-      <span />
-      <span className="event-col">Occasion</span>
-      <span className="event-col">Friction</span>
-    </div>
-  );
-}
-
-export function EventColsKey() {
-  return <p className="event-cols-key">Occasion: how big a deal. Friction: other big crowds and gridlock around it. The box above: the whole city.</p>;
-}
-
-/** One sheet card: the same lines as the map chip, plus a quiet venue and the two columns. */
 function EventRow({
   event: e,
   dateEvents,
@@ -523,21 +477,23 @@ function EventRow({
   href?: string;
 }) {
   const time = e.start ? clockTime(e.start) : 'Time TBA';
-  const crowd = crowdShort(e);
-  const soldOut = e.crowd.some((c) => c.soldOut);
-  const detail = showDate ? `${shortLocalDate(e.date)} · ${time} · ${crowd}` : `${time} · ${crowd}`;
   const venue = sheetVenue(e);
   const stakes = quietStakes(e, dateEvents);
-  const cols = eventColumns(e, dateEvents);
+  // Two tags under the title (build notes 2): the occasion outline tag, the friction pill. Crowd and time sit on the right.
   const body = (
     <>
       <span className="event-main">
         <span className="event-title">{listTitle(e)}</span>
-        {venue && <span className="event-venue">{venue}</span>}
+        <span className="event-tagline">
+          <EventTags event={e} />
+          {venue && <span className="event-venue">{venue}</span>}
+        </span>
         {stakes && <span className="event-stakes">{stakes}</span>}
-        <span className="event-meta">{detail}</span>
       </span>
-      <EventCols cols={cols} soldOut={soldOut} />
+      <span className="event-side">
+        <CrowdFigure event={e} />
+        <span className="event-meta">{showDate ? `${shortLocalDate(e.date)} · ${time}` : time}</span>
+      </span>
     </>
   );
   const cls = `event-row${selected ? ' selected' : ''}`;
