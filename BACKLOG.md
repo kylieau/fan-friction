@@ -3,7 +3,7 @@
 Deferred work and open questions that outlive one session. Remove an item only after checking it against the code. The current snapshot is in `MEMORY_HANDOFF.md`.
 
 ## Next
-**Oct 9, 2026: Kylie's build notes (`docs/reviews/build-notes-oct9.md`) are the current plan.** Steps (a) fix first, (b) Bucket 1, (c) decisions are built; (d) the Explore header and Home hub, (e) privacy and (f) docs follow. Compare (side by side) and Ticketmaster concerts are live. **Oct 6: the big-picture plan is `docs/big-picture-plan-oct6.md`.** Steps 1 (the log entry: review, with, Add an event, suggestions) and 2 (results, game length, feeds, the LA venue table, calibration, the hard-access rule) are **done and live**. Then (4) Ticketmaster concerts 🚩 and a second city via `docs/new-city-checklist.md`, (5) Traffic, Night story, image share card, notifications, offline. Each step is proposed before it is built. Kylie (Oct 6): saved nights settle to Attended automatically, no "Did you go?" step; she will take the free Ticketmaster key when step 4 arrives if it stays free with no later obligation; the retune keeps the placeholders and reruns in a season; LA is the only city built by hand. Open: the hard-access weight research (`docs/archive/research/hard-access-weight-prompt.md`); her notes on the entry layer, Add form and sport list after use.
+**Oct 9, 2026: Kylie's build notes (`docs/reviews/build-notes-oct9.md`) are the current plan.** Every step, (a) through (f), is built (Oct 9). **Oct 10: `docs/reviews/build-notes-2-oct10.md` is the plan now**: Section 0's review fixes first, then the settled read, Favorites, Following, privacy, global search, naming, chips, friction words, colors, the ticket line and "I watched it". Compare (side by side) and Ticketmaster concerts are live. **Oct 6: the big-picture plan is `docs/big-picture-plan-oct6.md`.** Steps 1 (the log entry: review, with, Add an event, suggestions) and 2 (results, game length, feeds, the LA venue table, calibration, the hard-access rule) are **done and live**. Then (4) Ticketmaster concerts 🚩 and a second city via `docs/new-city-checklist.md`, (5) Traffic, Night story, image share card, notifications, offline. Each step is proposed before it is built. Kylie (Oct 6): saved nights settle to Attended automatically, no "Did you go?" step; she will take the free Ticketmaster key when step 4 arrives if it stays free with no later obligation; the retune keeps the placeholders and reruns in a season; LA is the only city built by hand. Open: the hard-access weight research (`docs/archive/research/hard-access-weight-prompt.md`); her notes on the entry layer, Add form and sport list after use.
 
 The structure pivot (Oct 4, 2026) is approved. PRs #8–#12 are on `main`. Resume in local Claude Code from `MEMORY_HANDOFF.md`. The live site is https://fan-friction.vercel.app.
 
@@ -79,6 +79,10 @@ The Oct 4 pivot answers are locked (see Direction pivot). Do not re-ask them. Ac
 - **3.24 feed:** live, plans included (0012 applied); example rows show until someone is followed.
 - **C017:** nothing to build; new teams are added only where a free feed lists them (Kylie, Oct 9).
 - **Hand-added plans in a city the app has no metro for** keep the home city on the plan (marked elsewhere), so they sit in Coming up.
+
+## Open from the Oct 10 build (Kylie's build notes 2)
+- **R15, deferred by Kylie (Oct 10):** the "Famous nights" heading (`CalendarScreen.tsx`, `CompareScreen.tsx`) clashes with the night rule ("night" only for a city-date after 5 pm). Wait for her wording; don't rename it.
+- **Migrations 0014–0017 are written, not yet run.** Each read falls back to the older shape until then; `scripts/account-check.mjs` names the check each one turns green.
 
 ## Kylie's phone checklist (asked for Oct 9; these need a real phone or her own account)
 - [ ] **C118** Log an event by hand on an iPhone and an Android phone: does the keyboard hide fields or Save?

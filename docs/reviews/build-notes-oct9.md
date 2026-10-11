@@ -218,7 +218,7 @@ Use Kylie's text from her C030 answer.
 
 **Status: Kylie's lean (Oct 9). She may still adjust it.** Before building it out, Claude should propose it as a mock or a PR for her review.
 
-Reference mockups are in `mockups/`, on the box. They aren't in the repo, so copy them over or attach them:
+Reference mockups are in `docs/reviews/assets/build-notes-oct9/` (four of the seven were attached; `switcher-left-vs-center.png`, `home-header-options.png` and `home-layouts.png` were not):
 - `centered-search-down.png` (option K3)
 - `switcher-left-vs-center.png`
 - `home-header-options.png`
