@@ -52,6 +52,11 @@ export function YouScreen() {
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   const [params] = useSearchParams();
+  // "You at games" on a favorite's card opens the log filtered to it (build notes 2, section 2).
+  const wanted = params.get('filter');
+  useEffect(() => {
+    if (wanted) setFilter(wanted);
+  }, [wanted]);
   const [tab, setTab] = useState<'events' | 'stats' | 'friends'>(() => (params.get('tab') === 'following' ? 'friends' : params.get('tab') === 'stats' ? 'stats' : 'events'));
   const [handle, setHandle] = useState<string | null>(null);
   const [requests, setRequests] = useState<FollowRequest[]>([]);

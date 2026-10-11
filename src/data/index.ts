@@ -373,8 +373,9 @@ export type { EntryEdit, LabeledFact, ManualEntryEdit, ManualNight, SyncStatus }
 export { isManualEntry } from './personalLog';
 export { hasUnsyncedChanges } from './storage';
 export { suggestEvent } from './suggestions';
-export { getTeamSchedule, scoreMark } from './teamSchedule';
-export { hoursAtGames, lengthLine, resultFor, scoreLine } from './results';
+export { getTeamSchedule, nextTeamGame, recordLine, scoreMark, seriesLine, teamRecord, type TeamRecord } from './teamSchedule';
+export { espnTeamUrl } from './sources/espnSource';
+export { entryOutcome, hoursAtGames, lengthLine, resultFor, scoreLine } from './results';
 export { COMPETITIONS, LEVELS, SPORTS_MORE, SPORTS_SHOWN, competitionNamed, competitionsFor, divisionChoices, levelPhrase } from './competitions';
 export type { Competition } from './competitions';
 export type * from './types';

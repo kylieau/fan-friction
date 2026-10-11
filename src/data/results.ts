@@ -86,3 +86,21 @@ export function scoreLine(result: GameResult): string {
   const line = `${first.name} ${first.score}, ${second.name} ${second.score}`;
   return result.note ? `${line} (${result.note})` : line;
 }
+
+/**
+ * How a logged game went for the side you were there for: 'W', 'L' or 'T' from the
+ * saved result, matched by event id. Null when no result is on file, or the entry's
+ * sides name neither team. Evidence for "You at games: 4–2"; the read never sees it.
+ */
+export function entryOutcome(entry: Entry, sideNames: readonly string[] = entry.sides): 'W' | 'L' | 'T' | null {
+  if (!entry.eventId || !entry.metroId) return null;
+  const rows = cachedResults(entry.metroId, entry.when.sort) ?? [];
+  const result = rows.find((row) => row.eventId === entry.eventId);
+  if (!result) return null;
+  const names = sideNames.map((n) => n.toLowerCase());
+  const is = (name: string) => names.some((n) => n === name.toLowerCase() || name.toLowerCase().endsWith(` ${n}`) || name.toLowerCase().startsWith(`${n} `));
+  const us = is(result.home.name) ? result.home : is(result.away.name) ? result.away : null;
+  if (!us) return null;
+  const them = us === result.home ? result.away : result.home;
+  return us.score > them.score ? 'W' : us.score < them.score ? 'L' : 'T';
+}

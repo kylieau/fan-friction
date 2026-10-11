@@ -44,3 +44,47 @@ export function scoreMark(game: TeamGame): string | undefined {
   const mark = us > them ? 'W' : us < them ? 'L' : 'T';
   return `${mark} ${us}–${them}`;
 }
+
+export interface TeamRecord {
+  wins: number;
+  losses: number;
+  ties: number;
+  /** Oldest first, up to five: 'W' | 'L' | 'T'. */
+  last5: ('W' | 'L' | 'T')[];
+}
+
+/** Wins and losses from the games played, preseason left out. Null when nothing has been played. */
+export function teamRecord(games: readonly TeamGame[]): TeamRecord | null {
+  const played = games.filter((g) => g.score && !g.preseason).sort((a, b) => a.date.localeCompare(b.date));
+  if (played.length === 0) return null;
+  const marks = played.map((g) => (g.score!.us > g.score!.them ? 'W' : g.score!.us < g.score!.them ? 'L' : 'T') as 'W' | 'L' | 'T');
+  return {
+    wins: marks.filter((m) => m === 'W').length,
+    losses: marks.filter((m) => m === 'L').length,
+    ties: marks.filter((m) => m === 'T').length,
+    last5: marks.slice(-5),
+  };
+}
+
+/** "93–69", or "9–5–2" when there were ties. */
+export function recordLine(record: TeamRecord): string {
+  return record.ties > 0 ? `${record.wins}–${record.losses}–${record.ties}` : `${record.wins}–${record.losses}`;
+}
+
+/** The next game not yet played, from today. */
+export function nextTeamGame(games: readonly TeamGame[], today: string): TeamGame | undefined {
+  return games.filter((g) => g.date >= today && !g.score).sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')))[0];
+}
+
+/**
+ * Where a series stands, for a postseason game: "NLCS vs. Brewers · 1–0", from the games
+ * already played in the same round against the same opponent. Null outside a series.
+ */
+export function seriesLine(games: readonly TeamGame[], next: TeamGame): string | null {
+  const round = next.stakes?.round;
+  if (!round) return null;
+  const played = games.filter((g) => g.score && g.stakes?.round === round && g.opponent === next.opponent);
+  const w = played.filter((g) => g.score!.us > g.score!.them).length;
+  const l = played.filter((g) => g.score!.us < g.score!.them).length;
+  return `${round} vs. ${next.opponent} · ${w}–${l}`;
+}

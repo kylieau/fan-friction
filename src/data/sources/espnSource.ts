@@ -128,6 +128,35 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
 ];
 
 /** Cities this feed can list games for. */
+/** ESPN's ids for the MLB clubs the app covers (their schedules come from MLB, so they are not in ESPN_TEAMS). */
+const ESPN_MLB_IDS: Record<string, string> = {
+  dodgers: '19',
+  angels: '3',
+  padres: '25',
+  mariners: '12',
+  yankees: '10',
+  mets: '21',
+  braves: '15',
+  giants: '26',
+  cubs: '16',
+  'white-sox': '4',
+  rangers: '13',
+};
+
+/**
+ * The team's own page on ESPN, for a quiet "ESPN ›" link on a team card and page
+ * (build notes 2, section 2). A link only: no standings or scores are read from it.
+ */
+export function espnTeamUrl(teamId: string): string | null {
+  const mlb = ESPN_MLB_IDS[teamId];
+  if (mlb) return `https://www.espn.com/mlb/team/_/id/${mlb}`;
+  const team = ESPN_TEAMS.find((t) => t.teamId === teamId);
+  if (!team) return null;
+  const [sport, league] = team.path.split('/');
+  const section = sport === 'soccer' ? 'soccer' : league;
+  return `https://www.espn.com/${section}/team/_/id/${team.espnId}`;
+}
+
 export function espnMetroIds(): string[] {
   return [...new Set(ESPN_TEAMS.map((team) => team.metroId))];
 }
