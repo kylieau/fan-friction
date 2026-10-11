@@ -439,9 +439,10 @@ export interface FriendEntry {
 }
 
 /**
- * One line of the Following feed (Kylie, Oct 9, 3.24): "{name} attended {event}" once the
- * date has passed, or "{name} is planning to attend {event}" for a date ahead. Dated by the
- * event, never by when it was saved, and never "is at": nothing here says where someone is now.
+ * One line of the Following feed (Kylie, Oct 11, call 1): "{name} went to {event}" or "{name}
+ * watched {event}" once the date has passed, "{name} is going to {event}" for a date ahead.
+ * Dated by the event, never by when it was saved, and never "is at": nothing here says where
+ * someone is now.
  */
 export interface FeedItem {
   kind: 'attended' | 'planning';

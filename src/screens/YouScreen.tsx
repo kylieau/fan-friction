@@ -49,6 +49,8 @@ export function YouScreen() {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const entries = useMemo(() => yourEntries(log), [log]);
   const [filter, setFilter] = useState('All');
+  // My Stubs (Kylie, Oct 11, call 8): Recent · Sports · Concerts · Watched · Attended; Recent is everything, newest event first.
+  const [stubs, setStubs] = useState<'recent' | 'sports' | 'concerts' | 'watched' | 'attended'>('recent');
   useEffect(() => {
     clearOpenedFromMap();
   }, []);
@@ -111,6 +113,13 @@ export function YouScreen() {
     };
   }, [entries]);
 
+  const stubList = useMemo(
+    () =>
+      entries.filter((entry) =>
+        stubs === 'recent' ? true : stubs === 'watched' ? Boolean(entry.watched) : stubs === 'attended' ? !entry.watched : stubs === 'sports' ? entry.kind === 'game' : entry.kind === 'show' || entry.kind === 'festival',
+      ),
+    [entries, stubs],
+  );
   const choices = useMemo(() => filterChoices(entries), [entries]);
   const shown = filter === 'All' ? entries : entries.filter((entry) => entry.tags.includes(filter));
   const stats = useMemo(() => logStats(shown), [shown]);
@@ -135,6 +144,19 @@ export function YouScreen() {
       <Link to="/you/add" className="log-add-row">
         + Log an event
       </Link>
+      <div className="filter-row" role="group" aria-label="Show">
+        {(
+          [
+            ['recent', 'Recent'],
+            ['sports', 'Sports'],
+            ['concerts', 'Concerts'],
+            ['watched', 'Watched'],
+            ['attended', 'Attended'],
+          ] as const
+        ).map(([id, label]) => (
+          <FilterChip key={id} label={label} pressed={stubs === id} onClick={() => setStubs(id)} />
+        ))}
+      </div>
       {/* A small Coming up strip above the log (3.11): plans still ahead, soonest first. */}
       {plansAhead.length > 0 && (
         <div className="coming-strip" aria-label="Coming up">
@@ -151,9 +173,9 @@ export function YouScreen() {
           </ul>
         </div>
       )}
-      {entries.length === 0 ? (
+      {stubList.length === 0 ? (
         <div className="card empty-card">
-          <div className="card-title">{canSignIn() && !account ? 'No events on this phone.' : 'No events yet.'}</div>
+          <div className="card-title">{entries.length > 0 ? 'Nothing here.' : canSignIn() && !account ? 'No events on this phone.' : 'No events yet.'}</div>
           <div className="empty-actions">
             <Link to="/you/add" className="gold-button small">
               Log an event
@@ -165,7 +187,7 @@ export function YouScreen() {
         </div>
       ) : (
         <div className="timeline">
-          {groupByTime(entries).map(([group, list]) => (
+          {groupByTime(stubList).map(([group, list]) => (
             <section key={group} className="timeline-group" aria-label={group}>
               <h3 className="timeline-heading">{group}</h3>
               <ul className="log-list">
@@ -306,11 +328,6 @@ function interested(item: FeedItem, log: PersonalLog, favorites: readonly Favori
   });
 }
 
-/** You too: the same event is in your plans or your log. */
-function youToo(item: FeedItem, log: PersonalLog): boolean {
-  return Boolean(item.eventId && (log.plans.some((p) => p.eventId === item.eventId) || log.added.some((e) => e.eventId === item.eventId)));
-}
-
 interface FeedGroup {
   key: string;
   title: string;
@@ -394,7 +411,8 @@ function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | n
               <ul className="feed-lines">
                 {group.items.map((item) => {
                   const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
-                  const text = `${item.kind === 'planning' ? 'is planning to attend' : 'attended'}${youToo(item, log) ? ' · you too' : ''}`;
+                  // No "· you too" (Kylie, Oct 11): people already know they're going.
+                  const text = item.kind === 'planning' ? 'is going to' : item.watched ? 'watched' : 'went to';
                   return (
                     <li key={`${item.friend.id}-${item.kind}`} className="feed-line">
                       <span className="avatar avatar-small" aria-hidden>
@@ -420,15 +438,38 @@ function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | n
     );
   return (
     <>
+      {/* The feed (Kylie, Oct 11, call 1): one plain sentence per line, every friend's line, newest ahead first; the event is the link. */}
+      {!example && items.length > 0 && (
+        <section className="you-block" aria-label="Feed">
+          <h2 className="you-heading">Feed</h2>
+          <ul className="log-list card feed-flat">
+            {items.map((item) => (
+              <li key={`${item.friend.id}-${item.kind}-${item.date}-${item.title}`}>
+                <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} className="feed-flat-row">
+                  <span className="avatar avatar-small" aria-hidden>
+                    {(item.friend.displayName ?? item.friend.handle ?? '?').slice(0, 1).toUpperCase()}
+                  </span>
+                  <span className="feed-flat-text">
+                    {feedLine(item)} <strong>{item.title}</strong>
+                  </span>
+                  <span className="feed-flat-date">{shortLocalDate(item.date).replace(/^\w+, /, '')}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {section('Coming up', coming)}
       {section('Recent', recent)}
     </>
   );
 }
 
+/** The start of a friend's line (Kylie, Oct 11, call 1): "Sam is going to", "Sam went to", "Sam watched". The event follows. */
 export function feedLine(item: FeedItem): string {
   const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
-  return item.kind === 'planning' ? `${name} is planning to attend` : `${name} attended`;
+  if (item.kind === 'planning') return `${name} is going to`;
+  return item.watched ? `${name} watched` : `${name} went to`;
 }
 
 export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMap<string, number> }) {
