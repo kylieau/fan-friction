@@ -25,4 +25,13 @@ Kylie's approved mockups from the Oct 9–10, 2026 Mock Mosaic, saved from her O
 | [links-tickets.png](links-tickets.png) | Ticket line on the event page; ESPN and Official site links on team and artist pages | 8.1 |
 | [log-watched.png](log-watched.png) | "I was there" + "I watched it" on the event page and in My Stubs | 8.2 |
 
+## Oct 11, 2026: the judgment-call mocks (GrokBot with Kylie; decisions in `docs/reviews/build2-judgment-call-decisions.md`)
+
+| Mock | Shows | Decision |
+|---|---|---|
+| [call1-feed-row.png](call1-feed-row.png) | Following feed lines: A "planning · event", B "is planning to attend", C "· going to" | None as drawn: plain sentences "Sam is going to {event}" / "Sam went to {event}", no "· you too" |
+| [call2-where-watched.png](call2-where-watched.png) | Where "I watched it" lives: A a date-row menu, B the event page only with a Watched state on the date page | B |
+| [call5-ticket-line.png](call5-ticket-line.png) | The ticket line: A link only, B all-in price or blank, C live minimum price with +fees | C: "Prices from $48+fees ›", else "See tickets on Ticketmaster ›" |
+| [call6-overlap.png](call6-overlap.png) | Local competition: A on the event page, B/C the date page with the timeline, D the read box and summary line on top | D on top, then the list, then the B/C timeline, on the date page |
+
 Older mockups: `docs/reviews/assets/build-notes-oct9/` (Oct 9) and `design/wireframes/` (pre-rating-model boards; follow the decisions docs, not those).
