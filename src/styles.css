@@ -5346,3 +5346,83 @@ button.back-link {
 .event-side .crowd-figure {
   flex-direction: row;
 }
+
+/* I watched it (8.2), the ticket line (8.1), the My Stubs badges (7.4) */
+.event-marks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.watched-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--action);
+}
+
+.mark-button.watched-on {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.mark-button.small {
+  min-height: 40px;
+  font-size: 14px;
+}
+
+.watched-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ticket-line {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--action);
+  text-decoration: none;
+}
+
+.stat-fans {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 4px 0 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 28px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.badge-crowd {
+  background: var(--crowdMark);
+  color: var(--ink);
+}
+
+.badge-fight {
+  background: var(--fightContainer);
+  color: var(--ink);
+}

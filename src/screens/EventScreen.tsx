@@ -8,7 +8,13 @@ import {
   drawSize,
   feelsLikeLabel,
   isOpenAir,
+  isWatched,
+  markWasThere,
+  markWatched,
+  priceLine,
   sizeTier,
+  ticketPrice,
+  type TicketPrice,
   venueNameOn,
   VENUES,
   weatherForEvent,
@@ -38,7 +44,7 @@ import { crowdKind, crowdPoints, showsOnMap, type CrowdPoint } from '../map/crow
 import { EntryLayer, RemoveConfirm, RemoveFromLog } from '../components/EntryLayer';
 import { SameTour } from '../components/SameTour';
 import { FactList } from '../components/FactList';
-import { ArrowRight, ChevronDown } from '../components/Icons';
+import { ArrowRight, ChevronDown, TvIcon } from '../components/Icons';
 import { ShareCard } from '../components/ShareCard';
 import { clockTime, shortLocalDate } from '../lib/dates';
 import { listTitle, mapTitle } from '../lib/eventTitle';
@@ -99,6 +105,22 @@ export function EventScreen() {
       )
     : [];
   const me = points.find((p) => p.event.id === id);
+  // The ticket line's lookup (8.1): hooks sit before the early returns. Upcoming, unlogged, with a Ticketmaster listing.
+  const liveEvent = me?.event ?? null;
+  const tmId = liveEvent?.ticketmasterId;
+  const wantsPrice = Boolean(liveEvent && tmId && liveEvent.date >= todayIn(METROS[liveEvent.metroId] ?? DEFAULT_METRO) && !yourEntries(log).some((entry) => entry.eventId === liveEvent.id));
+  const [price, setPrice] = useState<TicketPrice | null>(null);
+  useEffect(() => {
+    if (!wantsPrice || !tmId) {
+      setPrice(null);
+      return;
+    }
+    let current = true;
+    ticketPrice(tmId).then((answer) => current && setPrice(answer));
+    return () => {
+      current = false;
+    };
+  }, [wantsPrice, tmId]);
 
   if (!day) return <div className="screen page" />;
   if (!me) {
@@ -151,6 +173,12 @@ export function EventScreen() {
           {tv ? ` · ${ahead ? 'On' : 'Was on'} ${tv}` : ''}
         </div>
         <FactList facts={eventFacts(e, logged)} />
+        {/* The ticket line (8.1): upcoming, unlogged events with a Ticketmaster listing; the price is looked up live and never stored. */}
+        {price && price.url && (price.min !== null || !price.soldOut) && (
+          <a className="ticket-line" href={price.url} target="_blank" rel="noreferrer">
+            {priceLine(price) ?? 'See tickets on Ticketmaster'} ›
+          </a>
+        )}
         {a && (
           <div className="chip-row">
             {/* The two tags (build notes 2): the occasion outline tag, then the friction pill, Unopposed included here. */}
@@ -177,15 +205,31 @@ export function EventScreen() {
         ) : isWasThere(e.id, log) ? (
           unmarking ? (
             <RemoveConfirm stamped={Boolean(log.added.find((entry) => entry.eventId === e.id)?.stamp)} onKeep={() => setUnmarking(false)} onRemove={() => { setUnmarking(false); toggleWasThere(e); }} />
+          ) : isWatched(e.id, log) ? (
+            <>
+              {/* Watched: the quiet checked state, with a smaller "I was there" to switch (build notes 2, 8.2). */}
+              <button type="button" className="mark-button on watched-on" aria-pressed onClick={() => setUnmarking(true)}>
+                <TvIcon /> ✓ You watched it
+              </button>
+              <button type="button" className="mark-button small" onClick={() => markWasThere(e)}>
+                I was there
+              </button>
+            </>
           ) : (
             <button type="button" className="mark-button on" aria-pressed onClick={() => setUnmarking(true)}>
-              Attended
+              ✓ You were there
             </button>
           )
         ) : (
-          <button type="button" className="mark-button" onClick={() => toggleWasThere(e)}>
-            Attended
-          </button>
+          <>
+            {/* The hero is in person; watching is the quieter action under it, one label for games and shows (8.2). */}
+            <button type="button" className="gold-button" onClick={() => markWasThere(e)}>
+              I was there
+            </button>
+            <button type="button" className="link-button watched-action" onClick={() => markWatched(e)}>
+              <TvIcon /> I watched it
+            </button>
+          </>
         )}
         {logged && <EntryLayer entry={logged} />}
       </div>

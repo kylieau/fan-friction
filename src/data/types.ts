@@ -519,6 +519,10 @@ export interface Entry {
   stamp?: Stamp;
   /** Keep this one private (build notes 2, section 4): followers never see it, whatever the visibility switch says. */
   private?: boolean;
+  /** Watched, not attended (build notes 2, 8.2). Absent means in person. Kept in the same log, marked quietly. */
+  watched?: boolean;
+  /** The crowd on file when the event was marked (its draw or count), for "fans with you" and "Biggest crowd". Evidence only. */
+  crowd?: number;
   /** When this device last changed the entry (ISO). The newer copy wins when two devices disagree. */
   updatedAt?: string;
 }

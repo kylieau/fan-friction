@@ -2,7 +2,8 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import { scoreLabel } from '../config/scoreLabels';
-import { ratingForEntry, type Entry } from '../data';
+import { biggestCrowd, ratingForEntry, toughestFights, type Entry } from '../data';
+import { crowdThousands } from '../map/crowdPoints';
 import { loggedDateLabel } from '../lib/dates';
 import { entryPath, eventPath } from '../lib/view';
 import { ReadTile } from './ReadTile';
@@ -38,6 +39,10 @@ export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: Read
   const heaviest = sorted[0];
   const quietest = sorted.length > 1 ? sorted[sorted.length - 1] : undefined;
   const usual = median(rated.map((r) => r.rating));
+  // The two badges (build notes 2, 7.4): gold for the biggest crowd you were in, pale violet for the toughest fights.
+  const biggest = biggestCrowd(inScope);
+  const fights = toughestFights(inScope);
+  const fightText = [fights.steamrolled > 0 ? `Steamrolled ×${fights.steamrolled}` : null, fights.swamped > 0 ? `Swamped ×${fights.swamped}` : null].filter(Boolean).join(', ');
 
   return (
     <section className="your-year" aria-label="Your year">
@@ -72,6 +77,16 @@ export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: Read
             <p className="your-usual">
               Your first event was <strong>{scoreLabel(first.rating)}</strong>, {first.rating.toFixed(1)}.
             </p>
+          )}
+          {(biggest || fightText) && (
+            <div className="badge-row">
+              {biggest && (
+                <span className="badge badge-crowd">
+                  Biggest crowd · {biggest.title} · {crowdThousands(biggest.crowd ?? 0)}
+                </span>
+              )}
+              {fightText && <span className="badge badge-fight">Toughest fight · {fightText}</span>}
+            </div>
           )}
           <ul className="log-list">
             <NightRow label="Heaviest" row={heaviest} />

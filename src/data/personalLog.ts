@@ -15,6 +15,7 @@ import { lengthLine, scoreLine } from './results';
 import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
+import { drawSize } from './read';
 import type { CrowdEvent, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
 
 export interface CountRow {
@@ -42,7 +43,10 @@ export type EntryEdit = Pick<Entry, 'review' | 'with'>;
 export interface LogStats {
   /** Log entries, not unique evenings. */
   events: number;
+  /** Buildings you were in. Watched events do not count. */
   venues: number;
+  /** Entries marked watched, not attended (8.2). */
+  watched: number;
   /** Kind of event: game, show, festival, and so on. Concerts are included. */
   byType: CountRow[];
   byTeamSport: CountRow[];
@@ -587,11 +591,61 @@ export function toggleWasThere(event: CrowdEvent) {
     commit({ ...snapshot, added: snapshot.added.filter((entry) => entry.eventId !== event.id) });
     return;
   }
-  const now = new Date();
+  markWasThere(event);
+}
+
+function freshEntry(event: CrowdEvent, watched: boolean): Entry {
   const entry = entryFromEvent(event);
-  const stamp = stampNow(event, now);
+  const stamp = stampNow(event, new Date());
   if (stamp) entry.stamp = stamp;
-  commit({ ...snapshot, added: [...snapshot.added, entry] });
+  const crowd = drawSize(event);
+  if (crowd) entry.crowd = crowd;
+  if (watched) entry.watched = true;
+  return entry;
+}
+
+/** "I was there": a new entry, or a watched one becoming in person (build notes 2, 8.2). */
+export function markWasThere(event: CrowdEvent) {
+  const existing = snapshot.added.find((entry) => entry.eventId === event.id);
+  if (existing) {
+    if (!existing.watched) return;
+    const { watched: _w, ...rest } = existing;
+    void _w;
+    commit({ ...snapshot, added: snapshot.added.map((entry) => (entry.id === existing.id ? rest : entry)) });
+    return;
+  }
+  commit({ ...snapshot, added: [...snapshot.added, freshEntry(event, false)] });
+}
+
+/** "I watched it": the same entry with a quiet mark; the friction stamp still applies. */
+export function markWatched(event: CrowdEvent) {
+  const existing = snapshot.added.find((entry) => entry.eventId === event.id);
+  if (existing) {
+    if (existing.watched) return;
+    commit({ ...snapshot, added: snapshot.added.map((entry) => (entry.id === existing.id ? { ...entry, watched: true } : entry)) });
+    return;
+  }
+  commit({ ...snapshot, added: [...snapshot.added, freshEntry(event, true)] });
+}
+
+export function isWatched(eventId: string, log: PersonalLog = snapshot): boolean {
+  return log.added.some((entry) => entry.eventId === eventId && entry.watched);
+}
+
+/** Fans in the buildings with you: the crowds on file for the events you were at (not watched). Evidence only. */
+export function fansWithYou(entries: readonly Entry[]): number {
+  return entries.filter((e) => !e.watched && e.crowd).reduce((sum, e) => sum + (e.crowd ?? 0), 0);
+}
+
+/** The event you were at with the biggest crowd on file. */
+export function biggestCrowd(entries: readonly Entry[]): Entry | null {
+  return entries.filter((e) => !e.watched && e.crowd).sort((a, b) => (b.crowd ?? 0) - (a.crowd ?? 0))[0] ?? null;
+}
+
+/** How many of your nights were Steamrolled and Swamped, from their stamps. */
+export function toughestFights(entries: readonly Entry[]): { steamrolled: number; swamped: number } {
+  const levels = entries.filter((e) => !e.watched).map((e) => e.stamp?.friction);
+  return { steamrolled: levels.filter((l) => l === 'Extreme').length, swamped: levels.filter((l) => l === 'Heavy').length };
 }
 
 export function isPlanned(eventId: string, log: PersonalLog = snapshot): boolean {
@@ -729,10 +783,11 @@ function typeLabel(kind: string): string {
 }
 
 export function logStats(entries: Entry[]): LogStats {
-  const venues = entries.map((entry) => entry.venue).filter((venue): venue is string => Boolean(venue));
+  const venues = entries.filter((entry) => !entry.watched).map((entry) => entry.venue).filter((venue): venue is string => Boolean(venue));
   return {
     events: entries.length,
     venues: new Set(venues).size,
+    watched: entries.filter((entry) => entry.watched).length,
     byType: counts(entries.map((entry) => typeLabel(entry.kind))),
     byTeamSport: counts(entries.flatMap((entry) => entry.tags)),
     bySport: counts(entries.map((entry) => (entry.sport === 'Concerts' ? 'Concert' : entry.sport))),

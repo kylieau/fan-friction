@@ -111,6 +111,16 @@ export function LockIcon() {
   );
 }
 
+/** A small TV, for "I watched it" (build notes 2, 8.2). */
+export function TvIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" {...base} aria-hidden="true">
+      <rect x="3" y="6" width="18" height="12" rx="2" />
+      <path d="M8 21h8M12 18v3M8 3l4 3 4-3" />
+    </svg>
+  );
+}
+
 export function ChevronLeft() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" {...base} aria-hidden>

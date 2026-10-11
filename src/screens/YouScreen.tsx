@@ -4,10 +4,13 @@ import { DEFAULT_METRO } from '../config/metros';
 import { formatScore, scoreLabel } from '../config/scoreLabels';
 import { ReadTile } from '../components/ReadTile';
 import { SearchButton } from '../components/SearchButton';
+import { CrowdMark } from '../components/EventTags';
+import { crowdThousands } from '../map/crowdPoints';
 import {
   canSignIn,
   entryFacts,
   EXAMPLE_FEED,
+  fansWithYou,
   favoritesOf,
   filterChoices,
   followRequests,
@@ -36,7 +39,7 @@ import {
 import { AccountBlock } from '../components/AccountBlock';
 import { FactList } from '../components/FactList';
 import { YourYear } from '../components/YourYear';
-import { ChevronDown, ChevronRight } from '../components/Icons';
+import { ChevronDown, ChevronRight, TvIcon } from '../components/Icons';
 import { loggedDateLabel, shortLocalDate, timelineGroup } from '../lib/dates';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { datePath, entryPath, eventPath, backFrom } from '../lib/view';
@@ -271,7 +274,7 @@ export function YouScreen() {
         <>
           {filters}
           <YourYear entries={shown} ratings={ratings} />
-          <Stats stats={stats} hours={hoursAtGames(shown)} />
+          <Stats stats={stats} hours={hoursAtGames(shown)} fans={fansWithYou(shown)} />
         </>
       )}
       {tab === 'friends' && <FollowingTab items={feed} ratings={ratings} signedIn={Boolean(account)} log={log} />}
@@ -467,12 +470,23 @@ function FilterChip({ label, pressed, onClick }: { label: string; pressed: boole
   );
 }
 
-function Stats({ stats, hours }: { stats: ReturnType<typeof logStats>; hours: { hours: number; games: number } }) {
+function Stats({ stats, hours, fans }: { stats: ReturnType<typeof logStats>; hours: { hours: number; games: number }; fans: number }) {
   return (
     <div className="stats-block">
       <div className="stat-grid">
         <Stat n={stats.events} label="Events" />
+        {/* Fans with you: the crowds on file for the events you were at (7.4). Only entries marked since Oct 10 carry one. */}
+        {fans > 0 && (
+          <div className="stat-card">
+            <span className="stat-num stat-fans">
+              <CrowdMark />
+              {crowdThousands(fans)}
+            </span>
+            <span className="stat-label">Fans with you</span>
+          </div>
+        )}
         <Stat n={stats.venues} label="Venues" />
+        {stats.watched > 0 && <Stat n={stats.watched} label="Watched" />}
         {/* The heaviest read sits in Your year above; not repeated here (3.22). */}
         {hours.games > 0 && <Stat n={hours.hours} label={`Hours at ${hours.games === 1 ? '1 game' : `${hours.games} games`}`} />}
       </div>
@@ -544,6 +558,11 @@ function EntryRow({ entry, rating }: { entry: Entry; rating: number | null }) {
         {extraTags.length > 0 && <span className="log-facts">{extraTags.join(' · ')}</span>}
         <FactList facts={entryFacts(entry)} />
       </span>
+      {entry.watched && (
+        <span className="status-label watched-label">
+          <TvIcon /> Watched
+        </span>
+      )}
       {entry.private && <span className="status-label">Private</span>}
     </>
   );
