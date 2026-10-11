@@ -322,6 +322,18 @@
       "code": 3,
       "precipProbability": 39,
       "precipMm": 0
+    },
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-10-12",
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T20:21:55.060Z",
+      "feelsLikeHighF": 71.7,
+      "feelsLikeLowF": 55.4,
+      "code": 63,
+      "precipProbability": 31,
+      "precipMm": 6.1
     }
   ]
 }

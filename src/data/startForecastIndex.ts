@@ -2266,7 +2266,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-espn-falcons-401872993",
     "date": "2026-10-11",
     "start": "20:20",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2285,7 +2285,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-vvG1zZ_2QEaQGk",
     "date": "2026-10-11",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2299,7 +2299,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-vvG1zZ_83jDpwc",
     "date": "2026-10-11",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2316,7 +2316,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-espn-hawks-401898402",
     "date": "2026-10-12",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2335,7 +2335,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-tm-vvG1zZ_eQ2KN-d",
     "date": "2026-10-13",
     "start": "18:45",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2352,7 +2352,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-tm-vvG1zZ_G68Ii_o",
     "date": "2026-10-13",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2369,7 +2369,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-tm-vvG1zZ_uQsKFm-",
     "date": "2026-10-14",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2386,7 +2386,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vvG1zZ_1D-1FDp",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2403,7 +2403,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vvG1zZ_1RbHwoA",
     "date": "2026-10-15",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2420,7 +2420,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vvG1zZ_8MZhDf8",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2437,7 +2437,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-vvG1zZ_121qqS7",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2454,7 +2454,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-vvG1zZ_6RsPgK8",
     "date": "2026-10-16",
     "start": "18:30",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2471,7 +2471,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-atlanta-united-761880",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2490,7 +2490,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG1zZ_1UneLAE",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2507,7 +2507,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG1zZ_7mxwkQk",
     "date": "2026-10-17",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2524,7 +2524,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG1zZ_G2Q5wKA",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2538,7 +2538,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-espn-falcons-401872999",
     "date": "2026-10-18",
     "start": "13:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2557,7 +2557,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-vvG1zZ_G2QGxKo",
     "date": "2026-10-18",
     "start": "15:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2571,7 +2571,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-19-tm-vvG1zZ_1p_clEl",
     "date": "2026-10-19",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2588,7 +2588,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-tm-vvG1zZ_FUW3nLL",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2605,7 +2605,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-espn-ksu-football-401871056",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2624,7 +2624,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-tm-vvG1zZ_FxEt19L",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2641,7 +2641,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-vvG1zZ_A3EpGC8",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2658,7 +2658,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-vvG1zZ_kw099iN",
     "date": "2026-10-23",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2675,7 +2675,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-atlanta-united-761893",
     "date": "2026-10-24",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2694,7 +2694,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-gt-football-401858273",
     "date": "2026-10-24",
     "start": null,
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2713,7 +2713,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-hawks-401909856",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -2732,13 +2732,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-espn-falcons-401873017",
     "date": "2026-10-25",
     "start": "13:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 1.4,
+      "rating": 1.5,
       "friction": "Low",
-      "why": "Nothing bigger was on."
+      "why": "86° feels-like at a 1:00 pm start, no roof."
     },
     "draw": {
       "count": 70306,
@@ -2751,11 +2751,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-vvG1zZ_6Dbxqs6",
     "date": "2026-10-25",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:59.243Z",
+    "capturedAt": "2026-10-11T20:23:05.398Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 1.4,
+      "rating": 1.5,
       "friction": "Low",
       "why": "Falcons vs. 49ers next door, earlier in the day."
     },
@@ -4755,7 +4755,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-G5vYZ_6eBbDWb",
     "date": "2026-10-11",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4772,7 +4772,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-G5vYZ_eEJSDnx",
     "date": "2026-10-11",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4789,7 +4789,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-G5vYZ_k9d23or",
     "date": "2026-10-11",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4806,7 +4806,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-sharks-401892503",
     "date": "2026-10-13",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4825,7 +4825,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-G5vYZ_6TyA5KT",
     "date": "2026-10-15",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4842,7 +4842,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-G5vYZ_aLvBhU9",
     "date": "2026-10-15",
     "start": "18:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4856,7 +4856,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-G5vYZ_ki2fDlR",
     "date": "2026-10-15",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4873,7 +4873,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-G5vYZbVTOJiVS",
     "date": "2026-10-15",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4890,7 +4890,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-espn-warriors-401898409",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4909,7 +4909,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-G5vYZ_adKleIW",
     "date": "2026-10-16",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4926,7 +4926,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-G5vYZ_aLvDDUV",
     "date": "2026-10-16",
     "start": "18:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4940,7 +4940,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-Z7r9jZ1A7JeGd",
     "date": "2026-10-16",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4957,7 +4957,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-cal-football-401858269",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4976,7 +4976,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-earthquakes-761886",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -4995,7 +4995,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-stanford-football-401858262",
     "date": "2026-10-17",
     "start": "16:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5014,7 +5014,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-valkyries-401918305",
     "date": "2026-10-17",
     "start": "12:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5033,7 +5033,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-G5vYZ_aLeZhMg",
     "date": "2026-10-17",
     "start": "11:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5047,7 +5047,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-G5vYZbg9ir1-u",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5064,13 +5064,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-espn-bay-fc-401854025",
     "date": "2026-10-18",
     "start": "14:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 3.5,
+      "rating": 3.4,
       "friction": "Moderate",
-      "why": "91° feels-like at a 2:00 pm start, no roof."
+      "why": "90° feels-like at a 2:00 pm start, no roof."
     },
     "draw": {
       "count": 11558,
@@ -5083,11 +5083,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-G5vYZ_aLed5z0",
     "date": "2026-10-18",
     "start": "11:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 3.5,
+      "rating": 3.4,
       "friction": "Low",
       "why": "Bay FC vs. Portland 32 mi away, same hours."
     }
@@ -5097,11 +5097,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-G5vYZ_uk8kyiH",
     "date": "2026-10-18",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 3.5,
+      "rating": 3.4,
       "friction": "Low",
       "why": "Bay FC vs. Portland 40 mi away, earlier in the day."
     },
@@ -5114,7 +5114,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-19-espn-sf-49ers-401873008",
     "date": "2026-10-19",
     "start": "17:15",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5133,7 +5133,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-19-espn-valkyries-401918306",
     "date": "2026-10-19",
     "start": "17:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5152,7 +5152,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-tm-G5vYZ_FDGjC3K",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5166,7 +5166,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-espn-stanford-football-401858272",
     "date": "2026-10-23",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5185,7 +5185,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-espn-warriors-401909850",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5204,7 +5204,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-G5vYZ_FDGqm3_",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5218,7 +5218,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-Z7r9jZ1A70kkF",
     "date": "2026-10-23",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5235,7 +5235,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-G5vYZ_FDGrm3O",
     "date": "2026-10-24",
     "start": "11:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5249,7 +5249,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-G5vYZ_FTZ_iUu",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -5266,7 +5266,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-G5vYZ_FDGNm3T",
     "date": "2026-10-25",
     "start": "13:00",
-    "capturedAt": "2026-10-11T14:58:02.992Z",
+    "capturedAt": "2026-10-11T20:23:08.981Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12070,7 +12070,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-state-fair-texas",
     "date": "2026-10-11",
     "start": "10:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12084,7 +12084,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-vvG1YZ_1DmMqf5",
     "date": "2026-10-11",
     "start": "20:15",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12101,7 +12101,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-vvG1YZ_AChebu0",
     "date": "2026-10-11",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12118,7 +12118,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-vvG1YZ_awL1QUZ",
     "date": "2026-10-11",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12135,7 +12135,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-state-fair-texas",
     "date": "2026-10-12",
     "start": "10:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12149,7 +12149,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-tm-vvG1YZ_7whjaQV",
     "date": "2026-10-12",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12166,7 +12166,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-tm-vvG1YZ_axJRhSo",
     "date": "2026-10-12",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12183,7 +12183,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-dallas-stars-401892498",
     "date": "2026-10-13",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12202,7 +12202,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-state-fair-texas",
     "date": "2026-10-13",
     "start": "10:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12216,7 +12216,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-tm-Z7r9jZ1AAZvu_",
     "date": "2026-10-13",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12230,7 +12230,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-fc-dallas-761867",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12249,7 +12249,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-mavericks-401901825",
     "date": "2026-10-14",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12268,7 +12268,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-state-fair-texas",
     "date": "2026-10-14",
     "start": "10:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12282,7 +12282,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-state-fair-texas",
     "date": "2026-10-15",
     "start": "10:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12296,7 +12296,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vvG1YZ_13XPlXI",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12313,7 +12313,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vvG1YZ_FCbXFze",
     "date": "2026-10-15",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12330,7 +12330,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-Z7r9jZ1A7Ptqe",
     "date": "2026-10-15",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12347,7 +12347,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-Z7r9jZ1A7xfrb",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12364,7 +12364,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-espn-mavericks-401898408",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12383,7 +12383,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-state-fair-texas",
     "date": "2026-10-16",
     "start": "10:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12397,7 +12397,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-vvG1YZ_axCfz2I",
     "date": "2026-10-16",
     "start": "20:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12414,7 +12414,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-vvG1YZ_dxO-E0O",
     "date": "2026-10-16",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12431,7 +12431,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-vvG1YZ_FB_UM69",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12448,7 +12448,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-smu-football-401858268",
     "date": "2026-10-17",
     "start": "11:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12467,7 +12467,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-state-fair-texas",
     "date": "2026-10-17",
     "start": "10:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12481,7 +12481,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG1YZ_5m3Hz7t",
     "date": "2026-10-17",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12498,7 +12498,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG1YZ_G6EbQDb",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12515,7 +12515,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG1YZ_kMvOnlG",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12532,7 +12532,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-Z7r9jZ1A70IuO",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12549,7 +12549,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-state-fair-texas",
     "date": "2026-10-18",
     "start": "10:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12563,7 +12563,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-vvG1YZ_aSPl9Lu",
     "date": "2026-10-18",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12580,7 +12580,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-vvG1YZ_FN5kiFV",
     "date": "2026-10-18",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12597,7 +12597,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-espn-dallas-stars-401892545",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12616,7 +12616,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-vvG1YZ_kYCNL4e",
     "date": "2026-10-21",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12633,7 +12633,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-espn-dallas-stars-401892559",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12652,7 +12652,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-tm-vvG1YZ_1THOo6h",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12669,7 +12669,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-tm-vvG1YZ_GKlGiGR",
     "date": "2026-10-22",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12686,7 +12686,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-vvG1YZ_2eFh0ES",
     "date": "2026-10-23",
     "start": "12:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12700,7 +12700,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-Z7r9jZ1A7-oZS",
     "date": "2026-10-23",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12717,11 +12717,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-fc-dallas-761900",
     "date": "2026-10-24",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Heavy",
       "why": "Mavericks vs. Spurs 25 mi away, same hours."
     },
@@ -12736,11 +12736,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-mavericks-401909858",
     "date": "2026-10-24",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Heavy",
       "why": "FC Dallas vs. Earthquakes and Ed Sheeran 25 mi away, same hours."
     },
@@ -12755,11 +12755,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-smu-football-401858270",
     "date": "2026-10-24",
     "start": null,
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Heavy",
       "why": "TCU vs. West Virginia 35 mi away, back to back."
     },
@@ -12774,11 +12774,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-tcu-football-401856841",
     "date": "2026-10-24",
     "start": null,
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Moderate",
       "why": "SMU vs. California 35 mi away, back to back."
     },
@@ -12793,11 +12793,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vvG1YZ_2eFjVET",
     "date": "2026-10-24",
     "start": "12:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Heavy",
       "why": "Sick New World Festival Forth Worth and Sick New World 37 mi away, same hours."
     }
@@ -12807,11 +12807,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vvG1YZ_u1Mvabx",
     "date": "2026-10-24",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Extreme",
       "why": "Ed Sheeran 12 mi away, same hours."
     },
@@ -12824,11 +12824,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vvG1YZbgQetoBB",
     "date": "2026-10-24",
     "start": "12:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Moderate",
       "why": "Sick New World Festival Forth Worth next door, same hours."
     },
@@ -12841,11 +12841,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-Z7r9jZ1A7j-_w",
     "date": "2026-10-24",
     "start": "17:30",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Moderate",
       "why": "Sick New World 23 mi away, back to back."
     },
@@ -12858,11 +12858,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-Z7r9jZ1A7J3uJ",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Heavy",
       "why": "Ed Sheeran and Mavericks vs. Spurs 6.5 mi away, same hours."
     }
@@ -12872,11 +12872,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-Z7r9jZ1A7q_Jf",
     "date": "2026-10-24",
     "start": "11:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 9.5,
+      "rating": 9.4,
       "friction": "Moderate",
       "why": "Sick New World next door, same hours."
     }
@@ -12886,7 +12886,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-espn-dallas-stars-401892579",
     "date": "2026-10-25",
     "start": "17:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12905,7 +12905,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-vvG1YZ_2eFr7I1",
     "date": "2026-10-25",
     "start": "12:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -12919,7 +12919,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-vvG1YZ_C5lRBQZ",
     "date": "2026-10-25",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:58:08.997Z",
+    "capturedAt": "2026-10-11T20:23:14.241Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19091,7 +19091,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-espn-chargers-401872989",
     "date": "2026-10-11",
     "start": "13:05",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19110,7 +19110,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-vv1ke8v0PdGA2NIXk",
     "date": "2026-10-11",
     "start": "19:20",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19127,7 +19127,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-vvG10Z_u5nPRGK",
     "date": "2026-10-11",
     "start": "18:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19142,7 +19142,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-vvG1iZbU81wkC0",
     "date": "2026-10-11",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19159,7 +19159,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-espn-rams-401872994",
     "date": "2026-10-12",
     "start": "17:15",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19178,7 +19178,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-tm-vvG10Z_2Rimjss",
     "date": "2026-10-12",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19193,7 +19193,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-ducks-401892501",
     "date": "2026-10-13",
     "start": "18:45",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19212,7 +19212,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-kings-401892502",
     "date": "2026-10-13",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19231,7 +19231,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-clippers-401918011",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19250,7 +19250,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-galaxy-761874",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19269,7 +19269,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-espn-lafc-761873",
     "date": "2026-10-14",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19288,7 +19288,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-mlb-849811",
     "date": "2026-10-14",
     "start": "17:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19297,7 +19297,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "why": "LAFC vs. Austin 4.9 mi away, same hours."
     },
     "draw": {
-      "count": 54320,
+      "count": 54152,
       "low": 49896,
       "high": 56000
     }
@@ -19307,7 +19307,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-tm-vvG10Z_uKts2xv",
     "date": "2026-10-14",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19322,7 +19322,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-mlb-849810",
     "date": "2026-10-15",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19331,7 +19331,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "why": "Nothing bigger was on."
     },
     "draw": {
-      "count": 54320,
+      "count": 54152,
       "low": 49896,
       "high": 56000
     }
@@ -19341,7 +19341,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vv170Z_7GkMfFAZu",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19358,7 +19358,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vv170Z_aGkRSVNGb",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19373,7 +19373,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vvG10Z_GwWe2IR",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19385,7 +19385,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vvG1iZ_1rd3dbK",
     "date": "2026-10-15",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19399,7 +19399,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-vvG1IZ_82Z9hL3",
     "date": "2026-10-15",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19416,11 +19416,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-espn-ducks-401892518",
     "date": "2026-10-16",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 5.3,
+      "rating": 5.2,
       "friction": "Moderate",
       "why": "Lakers vs. Nuggets 28 mi away, same hours."
     },
@@ -19435,11 +19435,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-espn-lakers-401898719",
     "date": "2026-10-16",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 5.3,
+      "rating": 5.2,
       "friction": "Moderate",
       "why": "Ducks vs. Bruins 28 mi away, same hours."
     },
@@ -19454,16 +19454,16 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-mlb-849808",
     "date": "2026-10-16",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 5.3,
+      "rating": 5.2,
       "friction": "Low",
       "why": "88° feels-like at a 6:00 pm start, no roof."
     },
     "draw": {
-      "count": 54320,
+      "count": 54152,
       "low": 49896,
       "high": 56000
     }
@@ -19473,11 +19473,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-rZ7HnEZ1Af07vN",
     "date": "2026-10-16",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
-      "rating": 5.3
+      "rating": 5.2
     }
   },
   {
@@ -19485,11 +19485,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-vv170Z_7Gkz5H4zw",
     "date": "2026-10-16",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 5.3,
+      "rating": 5.2,
       "friction": "Moderate",
       "why": "MILEY and Lakers vs. Nuggets 11 mi away, same hours."
     },
@@ -19502,11 +19502,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-vvG1iZ_owcOPJ1",
     "date": "2026-10-16",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 5.3,
+      "rating": 5.2,
       "friction": "Moderate",
       "why": "Lakers vs. Nuggets and Ducks vs. Bruins 6.3 mi away, same hours."
     },
@@ -19519,7 +19519,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-galaxy-761887",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19538,7 +19538,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-kings-401892530",
     "date": "2026-10-17",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19557,7 +19557,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-ucla-football-401858494",
     "date": "2026-10-17",
     "start": "16:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19576,7 +19576,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-rZ7HnEZ1AfaaP7",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19591,7 +19591,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vv170Z_FGkM0q1JB",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19608,7 +19608,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vv1AaZk3dGkdvrEc1",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19625,7 +19625,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vv1AaZkobGkeOgjs3",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19642,7 +19642,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG10Z_1rn_GMv",
     "date": "2026-10-17",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19657,7 +19657,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG10Z_G9R7nPH",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19674,7 +19674,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-vvG1iZ_F53Epiv",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19688,13 +19688,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-espn-rams-401873004",
     "date": "2026-10-18",
     "start": "13:05",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 4,
+      "rating": 4.3,
       "friction": "Moderate",
-      "why": "93° feels-like at a 1:05 pm start, no roof."
+      "why": "94° feels-like at a 1:05 pm start, no roof."
     },
     "draw": {
       "count": 72901,
@@ -19707,11 +19707,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-vvG10Z_G9gehI7",
     "date": "2026-10-18",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 4,
+      "rating": 4.3,
       "friction": "Moderate",
       "why": "MILEY 11 mi away, same hours."
     },
@@ -19724,11 +19724,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-vvG1iZ_owcx4Jh",
     "date": "2026-10-18",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 4,
+      "rating": 4.3,
       "friction": "Moderate",
       "why": "Charli xcx 11 mi away, same hours."
     },
@@ -19741,11 +19741,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-tm-Z7r9jZ1A70kAU",
     "date": "2026-10-18",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 4,
+      "rating": 4.3,
       "friction": "Moderate",
       "why": "MILEY and Charli xcx 6.3 mi away, same hours."
     },
@@ -19758,7 +19758,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-19-tm-Z7r9jZ1A70kAg",
     "date": "2026-10-19",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19775,7 +19775,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-tm-vv170Z_FGkU1BKx2",
     "date": "2026-10-20",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19792,7 +19792,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-tm-vv1AaZk3vGkdfJcBD",
     "date": "2026-10-20",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19809,7 +19809,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-tm-vvG10Z_1hSZGrO",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19824,7 +19824,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-tm-vvG10Z_u1J_FHJ",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19839,7 +19839,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-espn-clippers-401909842",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19858,7 +19858,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-espn-lakers-401909092",
     "date": "2026-10-21",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19877,7 +19877,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-vvG10Z_GpWro4Z",
     "date": "2026-10-21",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19892,7 +19892,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-vvG10Z_uCyohlW",
     "date": "2026-10-21",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19909,7 +19909,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-vvG1IZ_aQlI5Ky",
     "date": "2026-10-21",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19926,7 +19926,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-vvG1iZbS55MdJK",
     "date": "2026-10-21",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19943,7 +19943,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-tm-rZ7HnEZ1AfPprd",
     "date": "2026-10-22",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -19958,7 +19958,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-tm-vv170ZbSGkIhFzEy",
     "date": "2026-10-22",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19975,7 +19975,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-tm-vvG10Z_59jFKnv",
     "date": "2026-10-22",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -19992,7 +19992,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-tm-vvG10Z_5Up7IgV",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20007,7 +20007,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-espn-lakers-401909851",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20026,7 +20026,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-vv170Z_aGkRleoD6",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20041,7 +20041,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-vvG10Z_u2VwVbg",
     "date": "2026-10-23",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20058,7 +20058,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-vvG1IZ_GNCU5jV",
     "date": "2026-10-23",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20075,7 +20075,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-vvG1iZbS55MSJp",
     "date": "2026-10-23",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20092,7 +20092,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-angel-city-401854030",
     "date": "2026-10-24",
     "start": "17:45",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20111,7 +20111,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-ucla-football-401858499",
     "date": "2026-10-24",
     "start": null,
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20130,7 +20130,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-G5eYZ_kU9s8XI",
     "date": "2026-10-24",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20147,7 +20147,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-LvZ18QEeUh2VRS8rNKUpd",
     "date": "2026-10-24",
     "start": "18:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20162,7 +20162,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-rZ7HnEZ1AfGFQf",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20174,7 +20174,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vv170Z_AGkmI0jmT",
     "date": "2026-10-24",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20191,7 +20191,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vv1AaZkogGkd5zy4D",
     "date": "2026-10-24",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20208,7 +20208,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vvG10Z_CkYNF-n",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20225,7 +20225,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vvG10Z_CQ0afVx",
     "date": "2026-10-24",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20240,7 +20240,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vvG1iZ_erD1S_5",
     "date": "2026-10-24",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20254,7 +20254,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vvG1IZ_GNtjqqM",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20271,7 +20271,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-vvG1iZbS55zNJb",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20288,7 +20288,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-espn-lafc-761904",
     "date": "2026-10-25",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20307,7 +20307,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-vvG10Z_1rnyceQ",
     "date": "2026-10-25",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -20322,7 +20322,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-vvG10Z_5Eio1cI",
     "date": "2026-10-25",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -20339,7 +20339,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-vvG1IZ_2L8dh94",
     "date": "2026-10-25",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:43.357Z",
+    "capturedAt": "2026-10-11T20:22:49.823Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26189,13 +26189,13 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-espn-ny-jets-401872983",
     "date": "2026-10-11",
     "start": "13:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 4.5,
-      "friction": "Low",
-      "why": "New York Comic Con (day 4 of 4) 5.4 mi away, same hours."
+      "rating": 4.6,
+      "friction": "Moderate",
+      "why": "Rain in the forecast at a 1:00 pm start."
     },
     "draw": {
       "count": 81100,
@@ -26208,11 +26208,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-espn-ny-rangers-401892483",
     "date": "2026-10-11",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 4.5,
+      "rating": 4.6,
       "friction": "Moderate",
       "why": "Jets vs. Browns 6.1 mi away, back to back."
     },
@@ -26227,11 +26227,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-nycc",
     "date": "2026-10-11",
     "start": "10:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 4.5,
+      "rating": 4.6,
       "friction": "Low",
       "why": "Jets vs. Browns 5.4 mi away, same hours."
     }
@@ -26241,11 +26241,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-G5dYZ_oCCO-12",
     "date": "2026-10-11",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
-      "rating": 4.5
+      "rating": 4.6
     }
   },
   {
@@ -26253,11 +26253,11 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-11-tm-vvG1FZ_1TkGLsD",
     "date": "2026-10-11",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
-      "rating": 4.5,
+      "rating": 4.6,
       "friction": "Low",
       "why": "Rangers vs. Canucks 9.4 mi away, same hours."
     },
@@ -26270,7 +26270,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-espn-devils-401892486",
     "date": "2026-10-12",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26289,7 +26289,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-espn-knicks-401914124",
     "date": "2026-10-12",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26308,7 +26308,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-12-tm-17GZv0G6GXpRe3s",
     "date": "2026-10-12",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26325,7 +26325,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-islanders-401892495",
     "date": "2026-10-13",
     "start": "19:45",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26344,7 +26344,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-13-espn-ny-rangers-401892493",
     "date": "2026-10-13",
     "start": "19:15",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26363,7 +26363,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-14-tm-G5diZ_dfAMb5J",
     "date": "2026-10-14",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26380,7 +26380,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-espn-devils-401892511",
     "date": "2026-10-15",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26399,7 +26399,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-espn-knicks-401908945",
     "date": "2026-10-15",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26418,7 +26418,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-15-tm-k7vGF_aKApqSB",
     "date": "2026-10-15",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26435,7 +26435,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-1AdZZ_6GkYknb7s",
     "date": "2026-10-16",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26452,7 +26452,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-G5diZ_dfADI5V",
     "date": "2026-10-16",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26469,7 +26469,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-16-tm-Z7r9jZ1A7P-u7",
     "date": "2026-10-16",
     "start": "17:45",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26486,7 +26486,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-fordham-football-401868012",
     "date": "2026-10-17",
     "start": "15:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -26503,7 +26503,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-nycfc-761877",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26522,7 +26522,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-red-bulls-761878",
     "date": "2026-10-17",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26541,7 +26541,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-espn-stony-brook-football-401866666",
     "date": "2026-10-17",
     "start": "14:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26560,7 +26560,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-G5diZ_dfkOFuz",
     "date": "2026-10-17",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26577,7 +26577,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-17-tm-Z7r9jZ1A7Pp4a",
     "date": "2026-10-17",
     "start": "17:45",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26594,7 +26594,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-18-espn-ny-giants-401873000",
     "date": "2026-10-18",
     "start": "13:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26613,7 +26613,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-19-espn-ny-rangers-401892535",
     "date": "2026-10-19",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26632,7 +26632,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-espn-devils-401892540",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26651,7 +26651,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-espn-islanders-401892541",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26670,7 +26670,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-espn-knicks-401909089",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26689,7 +26689,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-20-tm-17GZv0G6ujNlQYZ",
     "date": "2026-10-20",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26706,7 +26706,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-espn-nets-401909836",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26725,7 +26725,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-1AdZZ_8GkldjAGf",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26739,7 +26739,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-1AdZZ_8GkleN47N",
     "date": "2026-10-21",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26753,7 +26753,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-21-tm-G5diZ_dfk0FC1",
     "date": "2026-10-21",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26770,7 +26770,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-espn-devils-401892555",
     "date": "2026-10-22",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26789,7 +26789,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-22-espn-islanders-401892557",
     "date": "2026-10-22",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26808,7 +26808,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-17GZv0G61Ux2pkD",
     "date": "2026-10-23",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26825,7 +26825,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-1AYZkfNGkd5vh6x",
     "date": "2026-10-23",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26842,7 +26842,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-23-tm-G5diZ_dfkEICb",
     "date": "2026-10-23",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26859,7 +26859,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-columbia-football-401867822",
     "date": "2026-10-24",
     "start": "13:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -26876,7 +26876,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-devils-401892567",
     "date": "2026-10-24",
     "start": "15:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26895,7 +26895,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-fordham-football-401868013",
     "date": "2026-10-24",
     "start": "13:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "nearby",
@@ -26912,7 +26912,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-espn-red-bulls-761891",
     "date": "2026-10-24",
     "start": "17:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26931,7 +26931,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-17GZv0G61mQcddn",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26948,7 +26948,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-G5diZ_dfklICx",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26965,7 +26965,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-k7vGF_19ZQEja",
     "date": "2026-10-24",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26982,7 +26982,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-24-tm-Z7r9jZ1A7PgZ8",
     "date": "2026-10-24",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -26999,7 +26999,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-espn-knicks-401909863",
     "date": "2026-10-25",
     "start": "19:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -27018,7 +27018,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-espn-nets-401909862",
     "date": "2026-10-25",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -27037,7 +27037,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-espn-ny-jets-401873015",
     "date": "2026-10-25",
     "start": "13:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -27056,7 +27056,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-17GZv0G61mQmKdg",
     "date": "2026-10-25",
     "start": "20:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -27073,7 +27073,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-1AdZZ_8GkldqAGQ",
     "date": "2026-10-25",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -27087,7 +27087,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-1AdZZ_8GklePA7R",
     "date": "2026-10-25",
     "start": "18:00",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",
@@ -27101,7 +27101,7 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     "eventId": "2026-10-25-tm-vvG1FZ_197DNKR",
     "date": "2026-10-25",
     "start": "19:30",
-    "capturedAt": "2026-10-11T14:57:53.003Z",
+    "capturedAt": "2026-10-11T20:22:59.066Z",
     "capturedOn": "2026-10-11",
     "read": {
       "method": "formula",

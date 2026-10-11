@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-ny-jets-401872983",
+      "metroId": "new-york",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "metlife-stadium",
+      "homeTeamId": "ny-jets",
+      "home": {
+        "name": "Jets",
+        "score": 17
+      },
+      "away": {
+        "name": "Browns",
+        "score": 12
+      },
+      "capturedAt": "2026-10-11T20:23:29.293Z",
+      "duration": {
+        "minutes": 189,
+        "kind": "estimated"
+      },
+      "startedAt": "10:02"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "metroName": "Atlanta",
   "timeZone": "America/New_York",
   "capturedOn": "2026-10-11",
-  "capturedAt": "2026-10-11T14:57:59.243Z",
+  "capturedAt": "2026-10-11T20:23:05.398Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-11",
@@ -1214,9 +1214,9 @@
       "date": "2026-10-25",
       "start": "13:00",
       "read": {
-        "rating": 1.4,
+        "rating": 1.5,
         "friction": "Low",
-        "why": "Nothing bigger was on.",
+        "why": "86° feels-like at a 1:00 pm start, no roof.",
         "method": "formula"
       },
       "draw": {
@@ -1230,7 +1230,7 @@
       "date": "2026-10-25",
       "start": "20:00",
       "read": {
-        "rating": 1.4,
+        "rating": 1.5,
         "friction": "Low",
         "why": "Falcons vs. 49ers next door, earlier in the day.",
         "method": "formula"

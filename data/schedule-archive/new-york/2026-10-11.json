@@ -4,7 +4,7 @@
   "metroName": "New York",
   "timeZone": "America/New_York",
   "capturedOn": "2026-10-11",
-  "capturedAt": "2026-10-11T14:57:53.003Z",
+  "capturedAt": "2026-10-11T20:22:59.066Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-11",
@@ -1598,7 +1598,7 @@
       "date": "2026-10-11",
       "start": "10:00",
       "read": {
-        "rating": 4.5,
+        "rating": 4.6,
         "friction": "Low",
         "why": "Jets vs. Browns 5.4 mi away, same hours.",
         "method": "formula"
@@ -1609,9 +1609,9 @@
       "date": "2026-10-11",
       "start": "13:00",
       "read": {
-        "rating": 4.5,
-        "friction": "Low",
-        "why": "New York Comic Con (day 4 of 4) 5.4 mi away, same hours.",
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Rain in the forecast at a 1:00 pm start.",
         "method": "formula"
       },
       "draw": {
@@ -1625,7 +1625,7 @@
       "date": "2026-10-11",
       "start": "18:00",
       "read": {
-        "rating": 4.5,
+        "rating": 4.6,
         "friction": "Moderate",
         "why": "Jets vs. Browns 6.1 mi away, back to back.",
         "method": "formula"
@@ -1641,7 +1641,7 @@
       "date": "2026-10-11",
       "start": "19:00",
       "read": {
-        "rating": 4.5,
+        "rating": 4.6,
         "method": "nearby"
       }
     },
@@ -1650,7 +1650,7 @@
       "date": "2026-10-11",
       "start": "20:00",
       "read": {
-        "rating": 4.5,
+        "rating": 4.6,
         "friction": "Low",
         "why": "Rangers vs. Canucks 9.4 mi away, same hours.",
         "method": "formula"

@@ -20,7 +20,7 @@
         "score": 1
       },
       "attendance": 13946,
-      "capturedAt": "2026-10-09T14:27:43.605Z",
+      "capturedAt": "2026-10-11T20:23:29.293Z",
       "duration": {
         "minutes": 152,
         "kind": "estimated"
@@ -44,12 +44,12 @@
         "score": 111
       },
       "attendance": 17960,
-      "capturedAt": "2026-10-09T14:27:43.605Z",
+      "capturedAt": "2026-10-11T20:23:29.293Z",
       "duration": {
         "minutes": 136,
         "kind": "estimated"
       },
-      "startedAt": "16:41"
+      "startedAt": "18:41"
     },
     {
       "eventId": "2026-10-08-espn-nets-401901823",
@@ -68,12 +68,12 @@
         "score": 108
       },
       "attendance": 16785,
-      "capturedAt": "2026-10-09T14:27:43.605Z",
+      "capturedAt": "2026-10-11T20:23:29.293Z",
       "duration": {
         "minutes": 164,
         "kind": "estimated"
       },
-      "startedAt": "16:22"
+      "startedAt": "18:22"
     }
   ]
 }

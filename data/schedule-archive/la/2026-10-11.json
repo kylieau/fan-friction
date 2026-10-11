@@ -4,7 +4,7 @@
   "metroName": "Los Angeles",
   "timeZone": "America/Los_Angeles",
   "capturedOn": "2026-10-11",
-  "capturedAt": "2026-10-11T14:57:43.357Z",
+  "capturedAt": "2026-10-11T20:22:49.823Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-11",
@@ -298,15 +298,15 @@
       "crowd": [],
       "sourceId": "mlb",
       "expectedDraw": {
-        "count": 54320,
+        "count": 54152,
         "low": 49896,
         "high": 56000,
         "planning": true,
         "fromCrowds": true,
-        "games": 25,
+        "games": 27,
         "seasons": "2024, 2025 + league",
         "basis": "blend",
-        "note": "Playoff crowds as a share of the building, this team's and the league's past 25 games (2024, 2025 + league). An estimate."
+        "note": "Playoff crowds as a share of the building, this team's and the league's past 27 games (2024, 2025 + league). An estimate."
       }
     },
     {
@@ -458,15 +458,15 @@
       "crowd": [],
       "sourceId": "mlb",
       "expectedDraw": {
-        "count": 54320,
+        "count": 54152,
         "low": 49896,
         "high": 56000,
         "planning": true,
         "fromCrowds": true,
-        "games": 25,
+        "games": 27,
         "seasons": "2024, 2025 + league",
         "basis": "blend",
-        "note": "Playoff crowds as a share of the building, this team's and the league's past 25 games (2024, 2025 + league). An estimate."
+        "note": "Playoff crowds as a share of the building, this team's and the league's past 27 games (2024, 2025 + league). An estimate."
       }
     },
     {
@@ -612,15 +612,15 @@
       "crowd": [],
       "sourceId": "mlb",
       "expectedDraw": {
-        "count": 54320,
+        "count": 54152,
         "low": 49896,
         "high": 56000,
         "planning": true,
         "fromCrowds": true,
-        "games": 25,
+        "games": 27,
         "seasons": "2024, 2025 + league",
         "basis": "blend",
-        "note": "Playoff crowds as a share of the building, this team's and the league's past 25 games (2024, 2025 + league). An estimate."
+        "note": "Playoff crowds as a share of the building, this team's and the league's past 27 games (2024, 2025 + league). An estimate."
       }
     },
     {
@@ -2232,7 +2232,7 @@
         "method": "formula"
       },
       "draw": {
-        "count": 54320,
+        "count": 54152,
         "low": 49896,
         "high": 56000
       }
@@ -2308,7 +2308,7 @@
         "method": "formula"
       },
       "draw": {
-        "count": 54320,
+        "count": 54152,
         "low": 49896,
         "high": 56000
       }
@@ -2378,13 +2378,13 @@
       "date": "2026-10-16",
       "start": "18:00",
       "read": {
-        "rating": 5.3,
+        "rating": 5.2,
         "friction": "Low",
         "why": "88° feels-like at a 6:00 pm start, no roof.",
         "method": "formula"
       },
       "draw": {
-        "count": 54320,
+        "count": 54152,
         "low": 49896,
         "high": 56000
       }
@@ -2394,7 +2394,7 @@
       "date": "2026-10-16",
       "start": "19:00",
       "read": {
-        "rating": 5.3,
+        "rating": 5.2,
         "friction": "Moderate",
         "why": "Lakers vs. Nuggets 28 mi away, same hours.",
         "method": "formula"
@@ -2410,7 +2410,7 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 5.3,
+        "rating": 5.2,
         "friction": "Moderate",
         "why": "Ducks vs. Bruins 28 mi away, same hours.",
         "method": "formula"
@@ -2426,7 +2426,7 @@
       "date": "2026-10-16",
       "start": "19:30",
       "read": {
-        "rating": 5.3,
+        "rating": 5.2,
         "friction": "Moderate",
         "why": "Lakers vs. Nuggets and Ducks vs. Bruins 6.3 mi away, same hours.",
         "method": "formula"
@@ -2440,7 +2440,7 @@
       "date": "2026-10-16",
       "start": "20:00",
       "read": {
-        "rating": 5.3,
+        "rating": 5.2,
         "method": "nearby"
       }
     },
@@ -2449,7 +2449,7 @@
       "date": "2026-10-16",
       "start": "20:00",
       "read": {
-        "rating": 5.3,
+        "rating": 5.2,
         "friction": "Moderate",
         "why": "MILEY and Lakers vs. Nuggets 11 mi away, same hours.",
         "method": "formula"
@@ -2602,9 +2602,9 @@
       "date": "2026-10-18",
       "start": "13:05",
       "read": {
-        "rating": 4,
+        "rating": 4.3,
         "friction": "Moderate",
-        "why": "93° feels-like at a 1:05 pm start, no roof.",
+        "why": "94° feels-like at a 1:05 pm start, no roof.",
         "method": "formula"
       },
       "draw": {
@@ -2618,7 +2618,7 @@
       "date": "2026-10-18",
       "start": "19:30",
       "read": {
-        "rating": 4,
+        "rating": 4.3,
         "friction": "Moderate",
         "why": "Charli xcx 11 mi away, same hours.",
         "method": "formula"
@@ -2632,7 +2632,7 @@
       "date": "2026-10-18",
       "start": "19:30",
       "read": {
-        "rating": 4,
+        "rating": 4.3,
         "friction": "Moderate",
         "why": "MILEY and Charli xcx 6.3 mi away, same hours.",
         "method": "formula"
@@ -2646,7 +2646,7 @@
       "date": "2026-10-18",
       "start": "20:00",
       "read": {
-        "rating": 4,
+        "rating": 4.3,
         "friction": "Moderate",
         "why": "MILEY 11 mi away, same hours.",
         "method": "formula"

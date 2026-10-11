@@ -329,7 +329,7 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 20
     },
     "attendance": 40170,
-    "capturedAt": "2026-10-11T14:58:16.493Z",
+    "capturedAt": "2026-10-11T20:23:29.792Z",
     "duration": {
       "minutes": 210,
       "kind": "estimated"
@@ -353,7 +353,7 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 0
     },
     "attendance": 9718,
-    "capturedAt": "2026-10-11T14:58:16.493Z"
+    "capturedAt": "2026-10-11T20:23:29.792Z"
   },
   {
     "eventId": "2026-10-10-espn-sharks-401892471",
@@ -372,7 +372,7 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 3
     },
     "attendance": 17435,
-    "capturedAt": "2026-10-11T14:58:16.493Z",
+    "capturedAt": "2026-10-11T20:23:29.792Z",
     "duration": {
       "minutes": 146,
       "kind": "estimated"
@@ -396,12 +396,12 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 106
     },
     "attendance": 18064,
-    "capturedAt": "2026-10-11T14:58:16.493Z",
+    "capturedAt": "2026-10-11T20:23:29.792Z",
     "duration": {
       "minutes": 162,
       "kind": "estimated"
     },
-    "startedAt": "17:23"
+    "startedAt": "19:23"
   },
   {
     "eventId": "2026-10-04-espn-bears-401872972",
@@ -577,12 +577,12 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 104
     },
     "attendance": 18966,
-    "capturedAt": "2026-10-11T01:02:56.108Z",
+    "capturedAt": "2026-10-11T20:23:30.424Z",
     "duration": {
       "minutes": 163,
       "kind": "estimated"
     },
-    "startedAt": "16:55"
+    "startedAt": "18:55"
   },
   {
     "eventId": "2026-10-10-espn-blackhawks-401892476",
@@ -903,12 +903,12 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 110
     },
     "attendance": 18350,
-    "capturedAt": "2026-10-09T14:27:42.144Z",
+    "capturedAt": "2026-10-11T20:23:28.142Z",
     "duration": {
       "minutes": 152,
       "kind": "estimated"
     },
-    "startedAt": "19:48"
+    "startedAt": "21:48"
   },
   {
     "eventId": "2026-10-10-espn-lafc-761858",
@@ -1224,7 +1224,7 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 1
     },
     "attendance": 13946,
-    "capturedAt": "2026-10-09T14:27:43.605Z",
+    "capturedAt": "2026-10-11T20:23:29.293Z",
     "duration": {
       "minutes": 152,
       "kind": "estimated"
@@ -1248,12 +1248,12 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 111
     },
     "attendance": 17960,
-    "capturedAt": "2026-10-09T14:27:43.605Z",
+    "capturedAt": "2026-10-11T20:23:29.293Z",
     "duration": {
       "minutes": 136,
       "kind": "estimated"
     },
-    "startedAt": "16:41"
+    "startedAt": "18:41"
   },
   {
     "eventId": "2026-10-08-espn-nets-401901823",
@@ -1272,12 +1272,12 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 108
     },
     "attendance": 16785,
-    "capturedAt": "2026-10-09T14:27:43.605Z",
+    "capturedAt": "2026-10-11T20:23:29.293Z",
     "duration": {
       "minutes": 164,
       "kind": "estimated"
     },
-    "startedAt": "16:22"
+    "startedAt": "18:22"
   },
   {
     "eventId": "2026-10-09-espn-liberty-401918299",
@@ -1392,6 +1392,29 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 1
     },
     "capturedAt": "2026-10-11T14:58:15.846Z"
+  },
+  {
+    "eventId": "2026-10-11-espn-ny-jets-401872983",
+    "metroId": "new-york",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "metlife-stadium",
+    "homeTeamId": "ny-jets",
+    "home": {
+      "name": "Jets",
+      "score": 17
+    },
+    "away": {
+      "name": "Browns",
+      "score": 12
+    },
+    "capturedAt": "2026-10-11T20:23:29.293Z",
+    "duration": {
+      "minutes": 189,
+      "kind": "estimated"
+    },
+    "startedAt": "10:02"
   },
   {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",

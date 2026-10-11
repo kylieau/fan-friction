@@ -4,7 +4,7 @@
   "metroName": "Dallas–Fort Worth",
   "timeZone": "America/Chicago",
   "capturedOn": "2026-10-11",
-  "capturedAt": "2026-10-11T14:58:08.997Z",
+  "capturedAt": "2026-10-11T20:23:14.241Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-11",
@@ -1965,7 +1965,7 @@
       "date": "2026-10-24",
       "start": "11:00",
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Moderate",
         "why": "Sick New World next door, same hours.",
         "method": "formula"
@@ -1976,7 +1976,7 @@
       "date": "2026-10-24",
       "start": "12:00",
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Heavy",
         "why": "Sick New World Festival Forth Worth and Sick New World 37 mi away, same hours.",
         "method": "formula"
@@ -1987,7 +1987,7 @@
       "date": "2026-10-24",
       "start": "12:00",
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Moderate",
         "why": "Sick New World Festival Forth Worth next door, same hours.",
         "method": "formula"
@@ -2001,7 +2001,7 @@
       "date": "2026-10-24",
       "start": "17:30",
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Moderate",
         "why": "Sick New World 23 mi away, back to back.",
         "method": "formula"
@@ -2015,7 +2015,7 @@
       "date": "2026-10-24",
       "start": "19:00",
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Heavy",
         "why": "FC Dallas vs. Earthquakes and Ed Sheeran 25 mi away, same hours.",
         "method": "formula"
@@ -2031,7 +2031,7 @@
       "date": "2026-10-24",
       "start": "19:00",
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Extreme",
         "why": "Ed Sheeran 12 mi away, same hours.",
         "method": "formula"
@@ -2045,7 +2045,7 @@
       "date": "2026-10-24",
       "start": "19:30",
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Heavy",
         "why": "Mavericks vs. Spurs 25 mi away, same hours.",
         "method": "formula"
@@ -2061,7 +2061,7 @@
       "date": "2026-10-24",
       "start": "20:00",
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Heavy",
         "why": "Ed Sheeran and Mavericks vs. Spurs 6.5 mi away, same hours.",
         "method": "formula"
@@ -2072,7 +2072,7 @@
       "date": "2026-10-24",
       "start": null,
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Heavy",
         "why": "TCU vs. West Virginia 35 mi away, back to back.",
         "method": "formula"
@@ -2088,7 +2088,7 @@
       "date": "2026-10-24",
       "start": null,
       "read": {
-        "rating": 9.5,
+        "rating": 9.4,
         "friction": "Moderate",
         "why": "SMU vs. California 35 mi away, back to back.",
         "method": "formula"
