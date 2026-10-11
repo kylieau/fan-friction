@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-devils-401892470",
+      "metroId": "new-york",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "prudential-center",
+      "homeTeamId": "devils",
+      "home": {
+        "name": "Devils",
+        "score": 4
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 1
+      },
+      "attendance": 15929,
+      "capturedAt": "2026-10-11T01:02:55.061Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "12:38"
+    },
+    {
+      "eventId": "2026-10-10-espn-fordham-football-401868011",
+      "metroId": "new-york",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "coffey-field",
+      "homeTeamId": "fordham-football",
+      "home": {
+        "name": "Fordham",
+        "score": 20
+      },
+      "away": {
+        "name": "Richmond",
+        "score": 14
+      },
+      "attendance": 1825,
+      "capturedAt": "2026-10-11T01:02:55.061Z",
+      "duration": {
+        "minutes": 173,
+        "kind": "estimated"
+      },
+      "startedAt": "12:32"
+    }
+  ]
+}

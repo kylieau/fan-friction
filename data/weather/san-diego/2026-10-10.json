@@ -2054,6 +2054,42 @@
       "shortwave": 0,
       "cloudCover": 100,
       "code": 3
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "city",
+      "date": "2026-10-10",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T01:00:52.291Z",
+      "feelsLikeF": 74.7,
+      "tempF": 70.1,
+      "humidity": 90,
+      "windMph": 4.4,
+      "uvIndex": 0,
+      "precipProbability": 13,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "city",
+      "date": "2026-10-10",
+      "hour": 18,
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T01:00:52.291Z",
+      "feelsLikeF": 73.2,
+      "tempF": 70.7,
+      "humidity": 86,
+      "windMph": 8.5,
+      "uvIndex": 0.3,
+      "precipProbability": 20,
+      "precipMm": 0.4,
+      "shortwave": 55,
+      "cloudCover": 100,
+      "code": 51
     }
   ],
   "days": [
@@ -2164,6 +2200,18 @@
       "code": 63,
       "precipProbability": 16,
       "precipMm": 5
+    },
+    {
+      "metroId": "san-diego",
+      "venueId": "city",
+      "date": "2026-10-10",
+      "basis": "forecast",
+      "capturedAt": "2026-10-11T01:00:52.291Z",
+      "feelsLikeHighF": 81.8,
+      "feelsLikeLowF": 70.9,
+      "code": 65,
+      "precipProbability": 61,
+      "precipMm": 8.8
     }
   ]
 }

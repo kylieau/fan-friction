@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-gt-football-401858255",
+      "metroId": "atlanta",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bobby-dodd-stadium",
+      "homeTeamId": "gt-football",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 28
+      },
+      "away": {
+        "name": "Duke",
+        "score": 25
+      },
+      "attendance": 46432,
+      "capturedAt": "2026-10-11T01:02:55.417Z",
+      "duration": {
+        "minutes": 201,
+        "kind": "estimated"
+      },
+      "startedAt": "12:36"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-09",
+  "results": [
+    {
+      "eventId": "2026-10-09-espn-liberty-401918299",
+      "metroId": "new-york",
+      "date": "2026-10-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "barclays-center",
+      "homeTeamId": "liberty",
+      "home": {
+        "name": "Liberty",
+        "score": 83
+      },
+      "away": {
+        "name": "Dream",
+        "score": 85
+      },
+      "attendance": 17991,
+      "capturedAt": "2026-10-11T01:02:55.061Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "19:34"
+    }
+  ]
+}

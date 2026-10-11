@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-09",
+  "results": [
+    {
+      "eventId": "2026-10-09-espn-sjsu-football-401864519",
+      "metroId": "bay-area",
+      "date": "2026-10-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cefcu-stadium",
+      "homeTeamId": "sjsu-football",
+      "home": {
+        "name": "San José St",
+        "score": 13
+      },
+      "away": {
+        "name": "Wyoming",
+        "score": 16
+      },
+      "attendance": 13104,
+      "note": "OT",
+      "capturedAt": "2026-10-11T01:02:55.766Z",
+      "duration": {
+        "minutes": 203,
+        "kind": "estimated"
+      },
+      "startedAt": "18:00"
+    }
+  ]
+}

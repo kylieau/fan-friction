@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-chicago-fire-761846",
+      "metroId": "chicago",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "soldier-field",
+      "homeTeamId": "chicago-fire",
+      "home": {
+        "name": "Fire",
+        "score": 2
+      },
+      "away": {
+        "name": "NYCFC",
+        "score": 1
+      },
+      "capturedAt": "2026-10-11T01:02:56.108Z"
+    },
+    {
+      "eventId": "2026-10-10-espn-northwestern-football-401858482",
+      "metroId": "chicago",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ryan-field",
+      "homeTeamId": "northwestern-football",
+      "home": {
+        "name": "Northwestern",
+        "score": 45
+      },
+      "away": {
+        "name": "Ball State",
+        "score": 14
+      },
+      "attendance": 25629,
+      "capturedAt": "2026-10-11T01:02:56.108Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "09:29"
+    }
+  ]
+}

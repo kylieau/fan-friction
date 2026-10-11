@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-09",
+  "results": [
+    {
+      "eventId": "2026-10-09-espn-uw-football-401858487",
+      "metroId": "seattle",
+      "date": "2026-10-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "husky-stadium",
+      "homeTeamId": "uw-football",
+      "home": {
+        "name": "Washington Huskies",
+        "score": 24
+      },
+      "away": {
+        "name": "Iowa",
+        "score": 41
+      },
+      "attendance": 66231,
+      "capturedAt": "2026-10-11T01:02:54.583Z",
+      "duration": {
+        "minutes": 205,
+        "kind": "estimated"
+      },
+      "startedAt": "18:03"
+    },
+    {
+      "eventId": "2026-10-09-ht-seattle-thunderbirds-1023150",
+      "metroId": "seattle",
+      "date": "2026-10-09",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "accesso-showare-center",
+      "homeTeamId": "seattle-thunderbirds",
+      "home": {
+        "name": "Thunderbirds",
+        "score": 3
+      },
+      "away": {
+        "name": "Giants",
+        "score": 6
+      },
+      "attendance": 3187,
+      "capturedAt": "2026-10-11T01:02:54.585Z"
+    }
+  ]
+}

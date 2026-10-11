@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-09",
+  "results": [
+    {
+      "eventId": "2026-10-09-espn-bulls-401908940",
+      "metroId": "chicago",
+      "date": "2026-10-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 100
+      },
+      "away": {
+        "name": "Grizzlies",
+        "score": 104
+      },
+      "attendance": 18966,
+      "capturedAt": "2026-10-11T01:02:56.108Z",
+      "duration": {
+        "minutes": 163,
+        "kind": "estimated"
+      },
+      "startedAt": "16:55"
+    }
+  ]
+}
