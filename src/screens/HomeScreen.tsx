@@ -31,7 +31,7 @@ import {
   yourEntries,
 } from '../data';
 import { VENUES, venueNameOn } from '../data';
-import { crowdKind, crowdPoints, showsOnMap } from '../map/crowdPoints';
+import { crowdKind, crowdPoints, showsOnMap, isMuted } from '../map/crowdPoints';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
@@ -134,7 +134,9 @@ export function HomeScreen() {
   const rating = day?.rating?.rating ?? null;
   const tonightTitle = `${word === 'day' ? 'Today' : 'Tonight'} in ${home.name}`;
   const newUser = log.added.length === 0 && log.plans.length === 0;
-  const others = Math.max(0, (day?.events.filter(showsOnMap).length ?? 0) - 1);
+  // Only events over the friction floor count as "big" here (R14); small rooms are on the map, muted.
+  const big = day?.events.filter((e) => showsOnMap(e) && !isMuted(e)).length ?? 0;
+  const others = Math.max(0, big - 1);
   const favorites = useMemo(() => favoritesOf(log), [log]);
   // Favorites this week: each favorite's next date within seven days, anywhere (the hub's chip row).
   const favoritesWeek = useMemo(() => {
@@ -174,7 +176,7 @@ export function HomeScreen() {
                 <span className="mini-map-title">
                   {shortLocalDate(today)} · {tonight.length} {tonight.length === 1 ? 'event' : 'events'}
                 </span>
-                <span className="mini-map-sub">{others > 0 ? `${others} other big ${others === 1 ? 'event' : 'events'} ${word === 'day' ? 'today' : 'tonight'}.` : `The only big event ${word === 'day' ? 'today' : 'tonight'}.`}</span>
+                <span className="mini-map-sub">{big === 0 ? `Nothing over 5,000 ${word === 'day' ? 'today' : 'tonight'}.` : others > 0 ? `${others} other big ${others === 1 ? 'event' : 'events'} ${word === 'day' ? 'today' : 'tonight'}.` : `The only big event ${word === 'day' ? 'today' : 'tonight'}.`}</span>
               </span>
             </span>
           </Link>
