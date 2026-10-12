@@ -147,6 +147,7 @@ From the two answers. None of these is a venue or a capacity change in this pass
 - `npm run build` passed (type-check and production build). Node on this machine is 22; `package.json` asks for 24. The build still passed. `package-lock.json` is identical to `main`.
 - `npm run city-build-check` passed, including Vancouver (metro record, at least one venue, at least one home team).
 - `node scripts/storage-check.mjs` passed.
+- A phone-sized check of the local app listed Vancouver on “Where’s home?” and listed the 20 rooms on Log an event. The first pass showed Pacific Coliseum as “Rink on Renfrew”, because the nickname was stored last and the current name is the last one. Official names are now last: Pacific Coliseum, PNE Agrodome, Orpheum, Chan Shun Concert Hall. Nicknames stay searchable. Oct 20 did not show the Canucks game in the browser: ESPN and HockeyTech are blocked by the browser from this local preview (CORS). The server-side snapshot did save that game.
 - Other metros’ expected-draw, season-level, opponent-ratio, and postseason objects match `main`. Vancouver rows were appended. The only extra punctuation is the comma that lets those rows sit in each array.
 
 ## Open questions for the next review

@@ -5842,7 +5842,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     // Estimated (0.55–0.85): bus-only access, event lots, long car exits. No measured split.
     carShare: 0.7,
-    names: [{ name: 'Pacific Coliseum' }, { name: 'Rink on Renfrew' }],
+    names: [{ name: 'Rink on Renfrew' }, { name: 'Pacific Coliseum' }],
     location: [-123.0427418, 49.2858422],
     capacity: [
       { seats: 15713, setup: 'hockey', note: 'Official (PNE): permanent seats, plus provision for 2,000 floor seats (total cited 17,500). The naming-rights page lists a current capacity of 15,455. Hockey is also reported as 16,281 (Wikipedia) and 16,821 (The Stadium Business). A PWHL sell-out of 14,958 is attendance, not capacity.' },
@@ -5932,7 +5932,7 @@ export const VENUES: Record<string, Venue> = {
     metroId: 'vancouver',
     // Same Hastings Park grounds as Pacific Coliseum. The city-type table has no separate row; this uses that grounds estimate (0.70). Not measured.
     carShare: 0.7,
-    names: [{ name: 'PNE Agrodome' }, { name: 'Agrodome' }],
+    names: [{ name: 'Agrodome' }, { name: 'PNE Agrodome' }],
     // Approximate (venue research). OpenStreetMap has no Agrodome hit. The grounds share 2901 E Hastings with the Coliseum and the Arch.
     location: [-123.0422, 49.2836],
     capacity: [
@@ -5962,7 +5962,7 @@ export const VENUES: Record<string, Venue> = {
   'orpheum-vancouver': {
     id: 'orpheum-vancouver',
     metroId: 'vancouver',
-    names: [{ name: 'Orpheum' }, { name: 'Orpheum Theatre' }],
+    names: [{ name: 'Orpheum Theatre' }, { name: 'Orpheum' }],
     location: [-123.1203207, 49.2801482],
     capacity: [{ seats: 2672, setup: 'concert', note: 'Official (Vancouver Civic Theatres). Destination Vancouver lists 2,688.' }],
     roof: 'indoor',
@@ -6005,7 +6005,7 @@ export const VENUES: Record<string, Venue> = {
   'chan-centre': {
     id: 'chan-centre',
     metroId: 'vancouver',
-    names: [{ name: 'Chan Shun Concert Hall' }, { name: 'Chan Centre for the Performing Arts' }],
+    names: [{ name: 'Chan Centre for the Performing Arts' }, { name: 'Chan Shun Concert Hall' }],
     location: [-123.2551083, 49.2697484],
     capacity: [{ seats: 1200, setup: 'concert', note: 'Reported (BC Touring Council). The venue research did not re-verify this independently. Telus Studio Theatre (250) is a different room.' }],
     roof: 'indoor',
