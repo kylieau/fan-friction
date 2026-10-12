@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|lake country|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|lake country|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -74,6 +74,26 @@ const LIST: Team[] = [
   team("uml-wbb", "UMass Lowell River Hawks Women's Basketball", "UML WBB", "College women's basketball", "basketball", "boston", "UML"),
   team("boston-cannons", "Boston Cannons", "Cannons", "PLL", "lacrosse", "boston", "CAN"),
   team("northeastern-mbb", "Northeastern Huskies Men's Basketball", "Northeastern MBB", "College men's basketball", "basketball", "boston", "NEU"),
+  // Philadelphia (Oct 12, 2026). ESPN/MLB ids verified against live feeds; Wings and Blue Rocks have no verified adapter yet.
+  team("phillies", "Philadelphia Phillies", "Phillies", "MLB", "baseball", "philadelphia", "PHI"),
+  team("eagles", "Philadelphia Eagles", "Eagles", "NFL", "football", "philadelphia", "PHI"),
+  team("sixers", "Philadelphia 76ers", "76ers", "NBA", "basketball", "philadelphia", "PHI"),
+  team("flyers", "Philadelphia Flyers", "Flyers", "NHL", "hockey", "philadelphia", "PHI"),
+  team("philadelphia-union", "Philadelphia Union", "Union", "MLS", "soccer", "philadelphia", "PHI"),
+  team("philadelphia-wings", "Philadelphia Wings", "Wings", "NLL", "lacrosse", "philadelphia", "PHI"),
+  team("temple-football", "Temple Owls Football", "Temple FB", "College football", "football", "philadelphia", "TEM", ["Temple"]),
+  team("temple-mbb", "Temple Owls Men's Basketball", "Temple MBB", "College men's basketball", "basketball", "philadelphia", "TEM", ["Temple"]),
+  team("temple-wbb", "Temple Owls Women's Basketball", "Temple WBB", "College women's basketball", "basketball", "philadelphia", "TEM", ["Temple"]),
+  team("villanova-football", "Villanova Wildcats Football", "Villanova FB", "College football", "football", "philadelphia", "NOVA", ["Villanova"]),
+  team("villanova-mbb", "Villanova Wildcats Men's Basketball", "Villanova MBB", "College men's basketball", "basketball", "philadelphia", "NOVA", ["Villanova"]),
+  team("villanova-wbb", "Villanova Wildcats Women's Basketball", "Villanova WBB", "College women's basketball", "basketball", "philadelphia", "NOVA", ["Villanova"]),
+  team("penn-football", "Pennsylvania Quakers Football", "Penn FB", "College football", "football", "philadelphia", "PENN", ["Penn", "Pennsylvania"]),
+  team("penn-mbb", "Pennsylvania Quakers Men's Basketball", "Penn MBB", "College men's basketball", "basketball", "philadelphia", "PENN", ["Penn", "Pennsylvania"]),
+  team("penn-wbb", "Pennsylvania Quakers Women's Basketball", "Penn WBB", "College women's basketball", "basketball", "philadelphia", "PENN", ["Penn", "Pennsylvania"]),
+  team("delaware-football", "Delaware Fightin' Blue Hens Football", "Delaware FB", "College football", "football", "philadelphia", "UD", ["Blue Hens", "Delaware"]),
+  team("delaware-mbb", "Delaware Fightin' Blue Hens Men's Basketball", "Delaware MBB", "College men's basketball", "basketball", "philadelphia", "UD", ["Blue Hens", "Delaware"]),
+  team("delaware-wbb", "Delaware Fightin' Blue Hens Women's Basketball", "Delaware WBB", "College women's basketball", "basketball", "philadelphia", "UD", ["Blue Hens", "Delaware"]),
+  team("wilmington-blue-rocks", "Wilmington Blue Rocks", "Blue Rocks", "MiLB", "baseball", "philadelphia", "WIL"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

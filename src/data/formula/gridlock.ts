@@ -45,7 +45,9 @@ const SCALE = 7.5;
 // crowd measured under ~70% car; only the two downtown buildings on MARTA take a real rail share.
 // Milwaukee: provisional driving default; both research answers found no measured local mode split.
 // No venue override is inferred from parking or historical shuttle counts.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub' };
+// Philadelphia is a hub (research, Oct 12, 2026, docs/research/city-builds/philadelphia/philadelphia-city-type-answer.md): Sports Complex
+// crowds run ~74–81% car-involved with meaningful B-line share; co-located stadiums share lots and Pattison/Broad approaches.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -76,6 +78,10 @@ const ZONE_NAMES: Record<string, string> = {
   'everett-memorial-stadium': 'Everett',
   'white-river-amphitheatre': 'Auburn',
   'emerald-downs': 'Auburn',
+  // Philadelphia Sports Complex (Linc, Citizens Bank Park, Xfinity Mobile Arena share SCSSD lots and NRG Station).
+  'lincoln-financial-field': 'South Philadelphia Sports Complex',
+  'citizens-bank-park': 'South Philadelphia Sports Complex',
+  'xfinity-mobile-arena': 'South Philadelphia Sports Complex',
 };
 
 export interface Zone {

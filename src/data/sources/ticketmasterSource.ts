@@ -101,6 +101,7 @@ function isShowAddOn(name: string): boolean {
 const SPORTS_FROM_TICKETMASTER = new Set([
   // Milwaukee smaller sports and races; league-feed games at the same building/date still win.
   'uwm-panther-arena', 'al-mcguire-center', 'klotsche-center', 'franklin-field', 'dockhounds-ballpark',
+  'frawley-stadium', 'mann-skyline-stage',
   'kapco-park', 'milwaukee-mile', 'slinger-speedway', 'hart-park-stadium', 'engelmann-stadium',
   'valley-fields', 'wilson-ice-arena', 'pettit-national-ice-center', 'buuck-field-house',
   'ozaukee-ice-center', 'schneider-stadium', 'time-of-grace-center', 'raabe-stadium',

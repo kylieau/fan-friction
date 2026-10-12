@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --port 3001 --host",
     "build": "tsc --noEmit && vite build",
+    "city-build-check": "node scripts/city-build-check.mjs",
     "preview": "vite preview --port 3001 --host",
     "attendance-collect": "node scripts/attendance-collect.mjs",
     "attendance-calibrate": "node scripts/attendance-calibrate.mjs",

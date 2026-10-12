@@ -1,0 +1,7789 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "teamId": "phillies",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "15:05",
+      "opponent": "Athletics",
+      "venueId": "citizens-bank-park",
+      "attendance": 44232,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "16:05",
+      "opponent": "Athletics",
+      "venueId": "citizens-bank-park",
+      "attendance": 41622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:05",
+      "opponent": "Athletics",
+      "venueId": "citizens-bank-park",
+      "attendance": 33507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-11",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 22317,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 26045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "13:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 31190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-22",
+      "start": "19:05",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 29285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-23",
+      "start": "16:05",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 30612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-24",
+      "start": "19:08",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 26175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-25",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 20130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 22300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 20127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 20098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-03",
+      "start": "18:45",
+      "opponent": "Rangers",
+      "venueId": "citizens-bank-park",
+      "attendance": 27788,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-04",
+      "start": "18:45",
+      "opponent": "Rangers",
+      "venueId": "citizens-bank-park",
+      "attendance": 21315,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-05",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 24040,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-06",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 36809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-07",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 37133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-08",
+      "start": null,
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 37133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 29200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-18",
+      "start": "18:45",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 27655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-19",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 30146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-20",
+      "start": "19:05",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 30025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-21",
+      "start": "18:05",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 32068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "13:35",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 34021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-30",
+      "start": "16:05",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 26650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-05-31",
+      "start": "18:45",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 20927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-01",
+      "start": "18:05",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 22213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-03",
+      "start": "19:05",
+      "opponent": "Angels",
+      "venueId": "citizens-bank-park",
+      "attendance": 28721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "19:15",
+      "opponent": "Angels",
+      "venueId": "citizens-bank-park",
+      "attendance": 36313,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-05",
+      "start": "13:35",
+      "opponent": "Angels",
+      "venueId": "citizens-bank-park",
+      "attendance": 34801,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "19:05",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 37423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "16:05",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 30820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": "13:35",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 41218,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-13",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 22701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 28073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 24726,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 27725,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 25621,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-06-30",
+      "start": "18:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 30131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-01",
+      "start": "18:05",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 36077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": "16:05",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 27657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-03",
+      "start": "19:08",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-05",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 20217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-06",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 22369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-07",
+      "start": "16:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 22104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 27775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "18:05",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 38542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "12:05",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 29079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-25",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 25452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 27486,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "12:35",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 29038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-04",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 35393,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-05",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 22024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-06",
+      "start": "18:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 27078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-07",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 28672,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 22087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 23021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 25444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-19",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 43176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "13:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 36809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 39374,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-21",
+      "start": "13:35",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 35801,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-22",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 19166,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 20220,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-24",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 24400,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-25",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 21123,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "19:05",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 30546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "18:05",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 37105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "13:35",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 30355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-06",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 17145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-07",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 17755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-08",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 19073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-09",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 22304,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "18:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 37185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-11",
+      "start": "13:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 23802,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-20",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 21129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-21",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 29363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-22",
+      "start": "19:15",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 21276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-23",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 28013,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "16:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 36692,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-09-25",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 32090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-10-14",
+      "start": "16:37",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 45538,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-10-15",
+      "start": "14:07",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 45660,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-10-21",
+      "start": "19:37",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 45279,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-10-22",
+      "start": "19:45",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 45467,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-10-23",
+      "start": "14:37",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 45485,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 5,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-10-31",
+      "start": "20:03",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 45712,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-11-01",
+      "start": "20:03",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 45712,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-11-02",
+      "start": "20:03",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 45693,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2022,
+      "date": "2022-11-03",
+      "start": "20:03",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 45693,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 5,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-06",
+      "start": "15:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 44365,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "15:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 44365,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "16:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 44526,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "13:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 39129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-10",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 28642,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 43444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "16:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 29584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-20",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 35062,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "19:05",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 43261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "15:05",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 41939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": "12:05",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 44618,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "citizens-bank-park",
+      "attendance": 42323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "citizens-bank-park",
+      "attendance": 32641,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "13:05",
+      "opponent": "Mariners",
+      "venueId": "citizens-bank-park",
+      "attendance": 31543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 43322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "19:15",
+      "opponent": "Red Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 43832,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "13:35",
+      "opponent": "Red Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 44669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 44544,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "16:05",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 31758,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 42110,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "16:05",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 42508,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:35",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 44108,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-22",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 34040,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 33420,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 41544,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-05",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "citizens-bank-park",
+      "attendance": 33196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "citizens-bank-park",
+      "attendance": 36664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "18:05",
+      "opponent": "Tigers",
+      "venueId": "citizens-bank-park",
+      "attendance": 29028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": "18:05",
+      "opponent": "Tigers",
+      "venueId": "citizens-bank-park",
+      "attendance": 29028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:05",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 42364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "16:05",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 44385,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:35",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 44287,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 37746,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 30572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 39570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 35093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 43586,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "13:35",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 42901,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": "18:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "16:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 42784,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 41531,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "18:05",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 44028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 43712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 33132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": "13:35",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 37204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-18",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 35302,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-19",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 33753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "12:35",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 38276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-24",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "citizens-bank-park",
+      "attendance": 44043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "citizens-bank-park",
+      "attendance": 37200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "18:05",
+      "opponent": "Orioles",
+      "venueId": "citizens-bank-park",
+      "attendance": 40235,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-04",
+      "start": "19:05",
+      "opponent": "Royals",
+      "venueId": "citizens-bank-park",
+      "attendance": 36510,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-05",
+      "start": "18:05",
+      "opponent": "Royals",
+      "venueId": "citizens-bank-park",
+      "attendance": 42326,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-06",
+      "start": "13:35",
+      "opponent": "Royals",
+      "venueId": "citizens-bank-park",
+      "attendance": 43112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-07",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 40264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": null,
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 40264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 30406,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 30113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:05",
+      "opponent": "Twins",
+      "venueId": "citizens-bank-park",
+      "attendance": 33071,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "18:05",
+      "opponent": "Twins",
+      "venueId": "citizens-bank-park",
+      "attendance": 40117,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "13:35",
+      "opponent": "Twins",
+      "venueId": "citizens-bank-park",
+      "attendance": 40111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-21",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 36274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 40420,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "16:05",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 33035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "19:05",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 34118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:35",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 41141,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-28",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "citizens-bank-park",
+      "attendance": 38142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "citizens-bank-park",
+      "attendance": 36096,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-08-30",
+      "start": "13:05",
+      "opponent": "Angels",
+      "venueId": "citizens-bank-park",
+      "attendance": 34655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "19:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 40190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "18:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 40899,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 40894,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-11",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 30572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-11",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 27025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-12",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 28683,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-13",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 31133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-21",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 30116,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 38795,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 40388,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "18:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 41139,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-26",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 32116,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-27",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 31388,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-09-28",
+      "start": "18:05",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 34046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-10-03",
+      "start": "20:08",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 45662,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-10-04",
+      "start": "20:08",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 45738,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Wild Card Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-10-11",
+      "start": "17:07",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 45798,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-10-12",
+      "start": "20:07",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 45831,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-10-16",
+      "start": "20:07",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 45396,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-10-17",
+      "start": "20:07",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 45412,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-10-23",
+      "start": "17:07",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 45473,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 6,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2023,
+      "date": "2023-10-24",
+      "start": "20:07",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 45397,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 7,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-03-28",
+      "start": "15:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 44452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-03-29",
+      "start": "15:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 44452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-03-30",
+      "start": "16:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 44468,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-03-31",
+      "start": "13:35",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 42515,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-01",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 33754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 28119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "16:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 28077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-11",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 33362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 35578,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": "16:05",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 40519,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "13:35",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 44568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-15",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 35496,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 35010,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "18:05",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 35706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 39069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "18:05",
+      "opponent": "White Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 44546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "13:35",
+      "opponent": "White Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 43614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 40888,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "18:05",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 42610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 41058,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-06",
+      "start": "16:05",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 33408,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 39492,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "13:05",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 34681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 37219,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-16",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 38267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "18:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 43112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "citizens-bank-park",
+      "attendance": 41083,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "citizens-bank-park",
+      "attendance": 39595,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": "13:05",
+      "opponent": "Rangers",
+      "venueId": "citizens-bank-park",
+      "attendance": 42377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44668,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 41190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-03",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 43553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 40632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "16:05",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 38910,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "10:10",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 55074,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-17",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 43134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 43021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 44445,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-21",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 44436,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-22",
+      "start": "16:05",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 44288,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-23",
+      "start": "11:35",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 44079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "18:20",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 43507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "18:20",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 44252,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "16:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 44117,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 43222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 43065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "19:05",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 42912,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "18:05",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 44020,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "citizens-bank-park",
+      "attendance": 42570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "16:05",
+      "opponent": "Athletics",
+      "venueId": "citizens-bank-park",
+      "attendance": 44231,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:35",
+      "opponent": "Athletics",
+      "venueId": "citizens-bank-park",
+      "attendance": 43025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "citizens-bank-park",
+      "attendance": 44448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "18:05",
+      "opponent": "Guardians",
+      "venueId": "citizens-bank-park",
+      "attendance": 44356,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "13:35",
+      "opponent": "Guardians",
+      "venueId": "citizens-bank-park",
+      "attendance": 43845,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-29",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "citizens-bank-park",
+      "attendance": 44289,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "citizens-bank-park",
+      "attendance": 44502,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "12:35",
+      "opponent": "Yankees",
+      "venueId": "citizens-bank-park",
+      "attendance": 44543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 42846,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 42577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-15",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 43722,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 41067,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "18:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 43356,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-18",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 40677,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-26",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 39627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 39373,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "16:05",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 37778,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 40451,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 40193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "19:15",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 42730,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 43249,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-09",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "citizens-bank-park",
+      "attendance": 39511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "citizens-bank-park",
+      "attendance": 40088,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "citizens-bank-park",
+      "attendance": 40715,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 44607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "16:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 44563,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "13:35",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 44786,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-23",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 42386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-24",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 42033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-09-25",
+      "start": "18:05",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 42438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "16:08",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 45751,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2024,
+      "date": "2024-10-06",
+      "start": "16:08",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 45679,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-03-31",
+      "start": "15:05",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 44595,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day presented by Nemours Children's Health"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2024 NL East Champions Pennant"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-02",
+      "start": "18:45",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 37550,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "McDonald's Opening Night T-shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-03",
+      "start": "13:05",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 34097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "18:45",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 43024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "name": "Autism Awareness Night"
+        },
+        {
+          "name": "Peanut Reduced Suites"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "16:05",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 44404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Cavity Busters Kids Opening Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Knit Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:35",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 44098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "name": "2025 Schedule Magnet presented by Ace Hardware Home Services"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-14",
+      "start": "18:45",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 40636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hatfield Phillies Franks BOGO Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-15",
+      "start": "18:45",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 38119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jackie Robinson Day"
+        },
+        {
+          "name": "Strike Out the Stigma - Mental Health in Sports"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-16",
+      "start": "18:45",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 38532,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "name": "Red Goes Greek Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-17",
+      "start": "16:05",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 41321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Independence Blue Cross Senior Stroll the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 44949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "name": "Scouts Night I"
+        },
+        {
+          "name": "Peanut Reduced Suites"
+        },
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 45045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "name": "BradyPLUS Nick Castellanos Wristbands"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:35",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 45079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Citizens Phanatic Birthday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Phanatic Widget Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-29",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 38387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hatfield Phillies Franks BOGO Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-04-30",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 37713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "name": "Italian Family Celebration"
+        },
+        {
+          "name": "Peanut Reduced Suites"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-01",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 37069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "name": "Scouts Night II"
+        },
+        {
+          "name": "Number Retirement Recognition for Delahanty, Hamilton and Thompson"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "18:45",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 40133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "name": "Teacher Appreciation Night powered by Constellation Energy"
+        },
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        },
+        {
+          "name": "School Supply Collection, Entrance Gates"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "18:05",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 42650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Independence Blue Cross Aaron Nola Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "14:05",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 44010,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mother's Appreciation Day presented by Valley Forge & Montgomery County"
+        },
+        {
+          "name": "Ladies Puffer Vest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-12",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 42513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hatfield Phillies Franks BOGO Night"
+        },
+        {
+          "name": "Strike Out the Stigma - Mental Health Awareness Month"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "18:45",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 35150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "13:05",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 40773,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "name": "Citizens Weather Education Day presented by NBC10 First Alert Weather"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "18:15",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 35150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "18:45",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 44039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Johnson Controls Zack Wheeler Bobble Figurine"
+        },
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "18:05",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 44164,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "name": "Salute to Service Night presented by Toyota"
+        },
+        {
+          "name": "On-Field Celebration for Salute to Service Night presented by Toyota"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:35",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 44356,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "name": "Phanatic About Reading Day presented by Xfinity"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Phanatic Children's Book"
+        },
+        {
+          "name": "Book Collection, Entrance Gates"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 40627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 32314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-29",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 32314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-29",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 42739,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Retro Phillies Cap presented by SEI"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 41546,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "name": "Youth Baseball and Softball Night"
+        },
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "16:05",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 43773,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "name": "Coca-Cola Photo Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "13:35",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 44076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "name": "IBEW Local 98 Phillies T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-09",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 41226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "name": "ALS Awareness Night presented by Asplundh"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "18:45",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 41220,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "13:05",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 42660,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Independence Blue Cross Senior Stroll the Bases"
+        },
+        {
+          "name": "HBCU Celebration presented by Citizens"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "18:45",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 40596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "16:05",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 43711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "name": "Toyota Kyle Schwarber Card Show Bobble"
+        },
+        {
+          "name": "Strike Out the Stigma - Importance of Healthy Family Relationships"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 44681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "name": "Chevrolet Father's Appreciation Day"
+        },
+        {
+          "name": "Men's Board Shorts"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-20",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 44432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        },
+        {
+          "name": "Pride Night presented by The GIANT Company"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-21",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 44687,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-22",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 42155,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "name": "Phans Feeding Families Night and Food Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-06-30",
+      "start": "18:35",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 43138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "name": "Xfinity Fireworks Show #1"
+        },
+        {
+          "name": "Strike Out the Stigma - Relationship Between Physical & Mental Health"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "18:35",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 40742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "name": "Xfinity Fireworks Show #2"
+        },
+        {
+          "name": "Tugger's On-Field Debut"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 40144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "name": "Summer Camp Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "18:15",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 40742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "name": "Xfinity Fireworks Show #2"
+        },
+        {
+          "name": "Tugger's On-Field Debut"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "13:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 42166,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "name": "Peanut Reduced Suites"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "16:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 42045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "name": "Irish Dance Schools Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "13:35",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 42055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "name": "Philadelphia Water Ice Phanatic Beach Towel"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "18:45",
+      "opponent": "Angels",
+      "venueId": "citizens-bank-park",
+      "attendance": 44482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "name": "PECO J.T. Realmuto Bobble Figurine"
+        },
+        {
+          "name": "Philadelphia's 2026 All-Star Declaration"
+        },
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "18:05",
+      "opponent": "Angels",
+      "venueId": "citizens-bank-park",
+      "attendance": 43124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "name": "Brandon Marsh Basketball Jersey presented by CP Rankin Roofing Experts"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "13:35",
+      "opponent": "Angels",
+      "venueId": "citizens-bank-park",
+      "attendance": 40616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "name": "Faith & Baseball with J.T. and Lexi Realmuto"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-21",
+      "start": "18:45",
+      "opponent": "Red Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 42843,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "name": "I Heart Phillies Night presented by the Temple Heart & Vascular Institute"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "18:45",
+      "opponent": "Red Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 43409,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "name": "Y2K Retro Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Nelly Postgame Concert presented by Jim Beam"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 42601,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "name": "Phillies Ballgirls Christmas in July Toy Drive, as part of Phillies and IBX Give Back"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-01",
+      "start": "18:45",
+      "opponent": "Tigers",
+      "venueId": "citizens-bank-park",
+      "attendance": 43241,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "name": "Toyota Phillies Wall of Fame Night honoring Jimmy Rollins and Ed Wade"
+        },
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-02",
+      "start": "16:05",
+      "opponent": "Tigers",
+      "venueId": "citizens-bank-park",
+      "attendance": 44669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "name": "Dick Allen Hall of Fame Pregame Recognition"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-03",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "citizens-bank-park",
+      "attendance": 41569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "name": "Toyota Phillies Alumni Night & 75th Anniversary Salute to the 1950 NL champion Phillies, The Whiz Kids"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-04",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "citizens-bank-park",
+      "attendance": 41099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "name": "Pickleball Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "18:45",
+      "opponent": "Orioles",
+      "venueId": "citizens-bank-park",
+      "attendance": 43660,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "name": "Phanatic Big Chain presented by Terminix"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "12:35",
+      "opponent": "Orioles",
+      "venueId": "citizens-bank-park",
+      "attendance": 42030,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "name": "Nemours Children's Health Kids Run the Bases"
+        },
+        {
+          "name": "Summer Camp Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-18",
+      "start": "18:45",
+      "opponent": "Mariners",
+      "venueId": "citizens-bank-park",
+      "attendance": 44471,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "name": "Oktoberfest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "18:45",
+      "opponent": "Mariners",
+      "venueId": "citizens-bank-park",
+      "attendance": 43757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "name": "Harry Potter™ Night"
+        },
+        {
+          "name": "Strike Out the Stigma - Empowering Youth Athletes"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "13:05",
+      "opponent": "Mariners",
+      "venueId": "citizens-bank-park",
+      "attendance": 38331,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "18:45",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "name": "Miller Lite Floppy Hat"
+        },
+        {
+          "name": "Phillies Wives Save a Pet at the Park to benefit Pennsylvania SPCA"
+        },
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "18:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44771,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "13:35",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 42580,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "name": "BradyPLUS Trea Turner Performance Sunglasses"
+        },
+        {
+          "name": "Nemours Children's Health Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 41293,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "name": "Star Wars™ Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 40322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 43462,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "name": "Chick-fil-A Bryce Harper Funko Pop! Collectible"
+        },
+        {
+          "name": "Luzardo's Cheesesteaks for Charity to benefit Boys & Girls Club Philadelphia"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 43770,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "name": "Sustainable Phillies Cap presented by PGW"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-08",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 40388,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 41609,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "name": "Strike Out the Stigma - The Positive Impacts of Social Media"
+        },
+        {
+          "name": "Hello Kitty® Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "18:45",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 38090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "name": "Goya Latino Community Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-11",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 40098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "name": "First Responders Night presented by Toyota"
+        },
+        {
+          "name": "On-Field Tribute for First Responders Night presented by Toyota"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "18:45",
+      "opponent": "Royals",
+      "venueId": "citizens-bank-park",
+      "attendance": 41099,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        },
+        {
+          "name": "Philadelphia Negro Leagues Tribute Night presented by Asplundh"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "18:05",
+      "opponent": "Royals",
+      "venueId": "citizens-bank-park",
+      "attendance": 43326,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Nemours Children's Health Childhood Cancer Awareness Night"
+        },
+        {
+          "name": "Bucket Hat"
+        },
+        {
+          "name": "On-field Ceremony: Nemours Children's Health Childhood Cancer Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "13:35",
+      "opponent": "Royals",
+      "venueId": "citizens-bank-park",
+      "attendance": 42513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "name": "GIANT Family Day"
+        },
+        {
+          "name": "Phillies Lunch Tote"
+        },
+        {
+          "name": "Recognizing PCADV & Joe Torre Safe At Home Foundation"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-23",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 38041,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "name": "Phillies Band Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-24",
+      "start": "18:45",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 36816,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-25",
+      "start": "18:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 36265,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "name": "Jewish Community Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-26",
+      "start": "18:45",
+      "opponent": "Twins",
+      "venueId": "citizens-bank-park",
+      "attendance": 40073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 94,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "name": "Lights Up // Friday Night at the Bank"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "18:05",
+      "opponent": "Twins",
+      "venueId": "citizens-bank-park",
+      "attendance": 40506,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 95,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "15:05",
+      "opponent": "Twins",
+      "venueId": "citizens-bank-park",
+      "attendance": 42637,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 95,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "name": "Fan Appreciation Day"
+        },
+        {
+          "name": "2026 Schedule Magnet presented by Prego"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-10-04",
+      "start": "18:38",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 45777,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2025,
+      "date": "2025-10-06",
+      "start": "18:08",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 45653,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-03-26",
+      "start": "16:15",
+      "opponent": "Rangers",
+      "venueId": "citizens-bank-park",
+      "attendance": 44610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day presented by Nemours Children's Health"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2025 NL East Champions Pennant"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "16:05",
+      "opponent": "Rangers",
+      "venueId": "citizens-bank-park",
+      "attendance": 40051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "name": "Peanut Reduced Suites"
+        },
+        {
+          "name": "McDonald's Opening Night T-shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-03-29",
+      "start": "13:35",
+      "opponent": "Rangers",
+      "venueId": "citizens-bank-park",
+      "attendance": 38013,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2026 Schedule Magnet presented by Valley Forge & Montgomery County, PA"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-03-30",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 35609,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "name": "College Series Business Analytics Night sponsored by Temple University's Fox School of Business"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-03-31",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 40709,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "name": "Autism Awareness Night"
+        },
+        {
+          "name": "College Series Women in Sports Night sponsored by Temple University's Fox School of Business"
+        },
+        {
+          "name": "Peanut Reduced Suites"
+        },
+        {
+          "name": "Hatfield Phillies Franks BOGO Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "13:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 37469,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "name": "Phillies School Spirit Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 41683,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "name": "Scouts Night I"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 41201,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "name": "Cavity Busters Kids Opening Day"
+        },
+        {
+          "name": "Hooded Sweatshirt"
+        },
+        {
+          "name": "Peanut Reduced Suites"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:35",
+      "opponent": "D-backs",
+      "venueId": "citizens-bank-park",
+      "attendance": 43060,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "name": "Citizens Phanatic Birthday"
+        },
+        {
+          "name": "Colonial Phanatic Bobble Head"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-13",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 36045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "name": "Scouts Night II"
+        },
+        {
+          "name": "College Series Sport Management & Hospitality Night sponsored by Temple University's Fox School of Business"
+        },
+        {
+          "name": "Hatfield Phillies Franks BOGO Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 37426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "name": "Red Goes Greek Night"
+        },
+        {
+          "name": "Pitch in for the Planet presented by Asplundh"
+        },
+        {
+          "name": "College Series Technology Services Night sponsored by Temple University's Fox School of Business"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "citizens-bank-park",
+      "attendance": 38254,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "name": "Jackie Robinson Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 43048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "name": "Jordan Davis Postgame Concert presented by Jim Beam"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "19:15",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 43423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "name": "Independence Blue Cross Trea Turner Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "19:20",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 36806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 36731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "name": "Fightins' Frank Hat Bundle Presented by Hatfield"
+        },
+        {
+          "name": "Hatfield Phillies Franks BOGO Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "18:10",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 34109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": "12:35",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 36861,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": "17:35",
+      "opponent": "Giants",
+      "venueId": "citizens-bank-park",
+      "attendance": 34109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "citizens-bank-park",
+      "attendance": 36069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "name": "Class of 2026 Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "citizens-bank-park",
+      "attendance": 36474,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "name": "Nurses Night Presented by Temple Health"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-07",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "citizens-bank-park",
+      "attendance": 37543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "name": "Retro Phillies Cap presented by SEI"
+        },
+        {
+          "name": "Irish Dance Schools Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 39478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "name": "IBEW Local 98 Jesús Luzardo T-shirt"
+        },
+        {
+          "name": "Teacher Appreciation Night presented by Independence Blue Cross"
+        },
+        {
+          "name": "Cradles to Crayons School Supplies Collection at Entrance Gates"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "18:05",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 38043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "name": "Phil & Phillis Socks presented by Terminix"
+        },
+        {
+          "name": "Strike Out the Stigma presented by Park Avenue Worldwide - Mental Health Awareness Month"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:35",
+      "opponent": "Rockies",
+      "venueId": "citizens-bank-park",
+      "attendance": 44620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "name": "Mother's Appreciation Day presented by UKG"
+        },
+        {
+          "name": "Ladies Mock Neck Crew"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-18",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 40065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 37527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "name": "Youth Baseball and Softball Celebration"
+        },
+        {
+          "name": "Fightins' Frank Hat Bundle II"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "13:05",
+      "opponent": "Reds",
+      "venueId": "citizens-bank-park",
+      "attendance": 38222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "name": "Citizens Weather Education Day presented by NBC10 First Alert Weather"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "citizens-bank-park",
+      "attendance": 38092,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "name": "BradyPLUS Cristopher Sánchez Bobble Figurine"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "16:05",
+      "opponent": "Guardians",
+      "venueId": "citizens-bank-park",
+      "attendance": 36125,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "name": "Salute to Service presented by Toyota"
+        },
+        {
+          "name": "Salute to Service presented by Toyota"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "13:35",
+      "opponent": "Guardians",
+      "venueId": "citizens-bank-park",
+      "attendance": 37808,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "name": "Phanatic About Reading Day presented by Xfinity"
+        },
+        {
+          "name": "Phanatic Children's Book"
+        },
+        {
+          "name": "Peanut Reduced Suites"
+        },
+        {
+          "name": "Tree House Books Collection at Entrance Gates"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 38763,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "ALS Awareness Night presented by Asplundh"
+        },
+        {
+          "name": "ALS Awareness Night presented by Asplundh"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 40453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "name": "Star Wars™ Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "13:05",
+      "opponent": "Padres",
+      "venueId": "citizens-bank-park",
+      "attendance": 37812,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 43232,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "name": "Miller Lite Phillies Floppy Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "16:05",
+      "opponent": "White Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 42949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "name": "Coca-Cola Photo Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "13:35",
+      "opponent": "White Sox",
+      "venueId": "citizens-bank-park",
+      "attendance": 41978,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "name": "Toyota Jhoan Duran Card Show Bobble"
+        },
+        {
+          "name": "Independence Blue Cross Senior Stroll the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-15",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 39241,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "name": "Country Music Night"
+        },
+        {
+          "name": "Strike Out the Stigma presented by Park Avenue Worldwide - Overcoming Obstacles through Healthy Life Practices"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 38238,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "name": "State Farm Phillies Soccer Scarf"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "13:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 37591,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "name": "Nemours Children's Health Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 39767,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "name": "Pride Night presented by The GIANT Company"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "19:15",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 43402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "name": "Phans Feeding Families Night and Food Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "19:20",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 41552,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "name": "Chevrolet Father's Appreciation Day"
+        },
+        {
+          "name": "Men's Cap"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-29",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 39791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2026 MLB All-Star Game Pennant"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 41710,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "name": "Xfinity Fireworks Show #1"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 41766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "name": "Xfinity Fireworks Show #2"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-02",
+      "start": "12:35",
+      "opponent": "Pirates",
+      "venueId": "citizens-bank-park",
+      "attendance": 37851,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "name": "Summer Camp Day"
+        },
+        {
+          "name": "Strike Out the Stigma presented by Park Avenue Worldwide - International Sports - Psychology and Support"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-16",
+      "start": "18:10",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 40109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "15:05",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 41133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "13:35",
+      "opponent": "Mets",
+      "venueId": "citizens-bank-park",
+      "attendance": 40132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-20",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 40265,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 40077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "name": "Chick-fil-A Phillies Big Chain"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "citizens-bank-park",
+      "attendance": 40675,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "name": "I Heart Phillies Night presented by the Temple Heart & Vascular Institute"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "18:45",
+      "opponent": "Yankees",
+      "venueId": "citizens-bank-park",
+      "attendance": 43165,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "18:05",
+      "opponent": "Yankees",
+      "venueId": "citizens-bank-park",
+      "attendance": 44562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Phillies Ballgirls Christmas in July Toy Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "19:20",
+      "opponent": "Yankees",
+      "venueId": "citizens-bank-park",
+      "attendance": 42799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "name": "Philadelphia Water Ice Phanatic Cap"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-03",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 41115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "name": "Margaritaville Night"
+        },
+        {
+          "name": "School Supply Drive hosted by Jesús Luzardo and Independence Blue Cross"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 38731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "name": "College Series Business of Sports Night Sponsored by Temple University's Fox School of Business"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 37025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "name": "Pickleball Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "18:05",
+      "opponent": "Nationals",
+      "venueId": "citizens-bank-park",
+      "attendance": 40301,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "name": "PGW Multi-Player T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 43641,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "name": "Toyota Phillies Wall of Fame Night honoring Chase Utley"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "18:05",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 40010,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "name": "Toyota Alumni Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "13:35",
+      "opponent": "Blue Jays",
+      "venueId": "citizens-bank-park",
+      "attendance": 40398,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "name": "Toyota Phillies Alumni Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-17",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 37544,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 39237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "name": "Flo Rida Postgame Concert presented by Jim Beam"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": "18:05",
+      "opponent": "Marlins",
+      "venueId": "citizens-bank-park",
+      "attendance": 37031,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "name": "HBCU & Divine Nine Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 44802,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "name": "Wawa Kyle Schwarber Bobble Figurine"
+        },
+        {
+          "name": "Strike Out the Stigma Presented by Park Avenue Worldwide: Empowering Youth Athletes"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Phillies Charities, Inc. Save a Pet at the Park; Plus, Pet Supply Collection to Benefit Pennsylvania SPCA"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "18:05",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 42218,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "13:35",
+      "opponent": "Cardinals",
+      "venueId": "citizens-bank-park",
+      "attendance": 42610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "name": "PECO Bryce Harper Football Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 41883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "name": "Phils' Steak Hat Bundle presented by Philly's Best Steak Company"
+        },
+        {
+          "name": "Basic Necessities Collection to Support Women Against Abuse"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 43241,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "name": "GIANT Family Day"
+        },
+        {
+          "name": "Squeeze Bottle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 42793,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "name": "Nemours Children's Health Childhood Cancer Awareness Day"
+        },
+        {
+          "name": "Phillies Rope Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-07",
+      "start": "13:05",
+      "opponent": "Braves",
+      "venueId": "citizens-bank-park",
+      "attendance": 41820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "name": "Nemours Children's Health Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 39262,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "name": "Hello Kitty® Night"
+        },
+        {
+          "name": "Strike Out the Stigma presented by Park Avenue Worldwide - Culture in Sports"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 38642,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "name": "First Responders Night presented by Toyota"
+        },
+        {
+          "name": "College Series Baseball Analytics Night Sponsored by Temple University's Fox School of Business"
+        },
+        {
+          "name": "On-Field Tribute Commemorating 25th Anniversary of September 11 "
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-10",
+      "start": "13:05",
+      "opponent": "Astros",
+      "venueId": "citizens-bank-park",
+      "attendance": 37100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "name": "Independence Blue Cross Senior Stroll the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-22",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 37132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "name": "College Series Media & Marketing Night Sponsored by Temple University's Fox School of Business"
+        },
+        {
+          "name": "Art of the Game Presented by Goya"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-23",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 37271,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "name": "Mystery Squishy Dumpling Bundle"
+        },
+        {
+          "name": "Phillies Band Night"
+        },
+        {
+          "name": "College Series Finance & Accounting Night Sponsored by Temple University's Fox School of Business"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-24",
+      "start": "18:05",
+      "opponent": "Brewers",
+      "venueId": "citizens-bank-park",
+      "attendance": 37177,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "name": "Harry Potter™ Night"
+        },
+        {
+          "name": "College Series Sport Management & Hospitality Night Sponsored by Temple University's Fox School of Business"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "citizens-bank-park",
+      "attendance": 40133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "name": "Mystery Squishy Dumpling Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "19:15",
+      "opponent": "Rays",
+      "venueId": "citizens-bank-park",
+      "attendance": 43076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "name": "Mystery Squishy Dumpling Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "phillies",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "14:30",
+      "opponent": "Rays",
+      "venueId": "citizens-bank-park",
+      "attendance": 42146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "name": "Fan Appreciation Day"
+        },
+        {
+          "name": "2027 Schedule Magnet"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

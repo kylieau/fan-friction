@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -102,6 +102,15 @@ export const METROS: Record<string, Metro> = {
   milwaukee: {
     id: 'milwaukee', code: 'MIL', name: 'Milwaukee', timeZone: 'America/Chicago',
     center: [-87.96, 43.04], zoom: 10.5,
+  },
+  // Philadelphia–Camden–Wilmington MSA core (Oct 12, 2026; docs/research/city-builds/philadelphia/philadelphia-venue-table-answer.md).
+  // Frames the Sports Complex, University City, North Broad, Chester and Camden on one phone screen; Villanova and edge-tier Delaware rooms sit off the first view.
+  philadelphia: {
+    id: 'philadelphia', code: 'PHI',
+    name: 'Philadelphia',
+    timeZone: 'America/New_York',
+    center: [-75.17, 39.95],
+    zoom: 10.3,
   },
   phoenix: {
     id: 'phoenix', code: 'PHX',

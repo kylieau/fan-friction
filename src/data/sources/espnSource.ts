@@ -14,6 +14,23 @@ const DAYS_AHEAD = 120;
 
 /** ESPN's ids for each team, mapped to our records. Add a metro's teams here. */
 const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: string; sport: string }[] = [
+  // Philadelphia (docs/research/city-builds/philadelphia/); each id and home venue checked against the feed Oct 12, 2026.
+  { path: 'football/nfl', espnId: '21', metroId: 'philadelphia', teamId: 'eagles', sport: 'football' },
+  { path: 'basketball/nba', espnId: '20', metroId: 'philadelphia', teamId: 'sixers', sport: 'basketball' },
+  { path: 'hockey/nhl', espnId: '15', metroId: 'philadelphia', teamId: 'flyers', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '10739', metroId: 'philadelphia', teamId: 'philadelphia-union', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '218', metroId: 'philadelphia', teamId: 'temple-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '218', metroId: 'philadelphia', teamId: 'temple-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '218', metroId: 'philadelphia', teamId: 'temple-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '222', metroId: 'philadelphia', teamId: 'villanova-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '222', metroId: 'philadelphia', teamId: 'villanova-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '222', metroId: 'philadelphia', teamId: 'villanova-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '219', metroId: 'philadelphia', teamId: 'penn-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '219', metroId: 'philadelphia', teamId: 'penn-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '219', metroId: 'philadelphia', teamId: 'penn-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '48', metroId: 'philadelphia', teamId: 'delaware-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '48', metroId: 'philadelphia', teamId: 'delaware-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '48', metroId: 'philadelphia', teamId: 'delaware-wbb', sport: 'basketball' },
   // Each Milwaukee id and actual home venue checked against the feed Oct 11, 2026.
   { path: 'basketball/nba', espnId: '15', metroId: 'milwaukee', teamId: 'bucks', sport: 'basketball' },
   { path: 'basketball/mens-college-basketball', espnId: '269', metroId: 'milwaukee', teamId: 'marquette-mbb', sport: 'basketball' },
@@ -162,6 +179,7 @@ const ESPN_MLB_IDS: Record<string, string> = {
   cubs: '16',
   'white-sox': '4',
   rangers: '13',
+  phillies: '22',
 };
 
 /**
@@ -184,6 +202,17 @@ export function espnMetroIds(): string[] {
 
 /** ESPN gives venue names, not ids. Games anywhere else (road, neutral, abroad) are skipped. */
 const VENUE_BY_NAME: Record<string, string> = {
+  'lincoln financial field': 'lincoln-financial-field',
+  'citizens bank park': 'citizens-bank-park',
+  'xfinity mobile arena': 'xfinity-mobile-arena',
+  'wells fargo center': 'xfinity-mobile-arena',
+  'subaru park': 'subaru-park',
+  'liacouras center': 'liacouras-center',
+  'finneran pavilion': 'finneran-pavilion',
+  'the palestra': 'the-palestra',
+  'palestra': 'the-palestra',
+  'villanova stadium': 'villanova-stadium',
+  'bob carpenter center': 'bob-carpenter-center',
   'fiserv forum': 'fiserv-forum',
   'bmo harris bradley center': 'bradley-center',
   'bradley center': 'bradley-center',
@@ -308,6 +337,17 @@ const VENUE_BY_NAME: Record<string, string> = {
   'comerica center': 'comerica-center',
 };
 
+/** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */
+const METRO_VENUE_BY_NAME: Partial<Record<string, Record<string, string>>> = {
+  philadelphia: { 'franklin field': 'penn-franklin-field' },
+  milwaukee: { 'franklin field': 'franklin-field', 'routine field': 'franklin-field' },
+};
+
+function venueIdForEspnName(name: string, metroId: string): string | undefined {
+  const key = name.toLowerCase();
+  return METRO_VENUE_BY_NAME[metroId]?.[key] ?? VENUE_BY_NAME[key];
+}
+
 interface EspnSide {
   homeAway: 'home' | 'away';
   team: { id: string; displayName: string; shortDisplayName: string };
@@ -366,7 +406,7 @@ function toEvent(g: EspnGame, t: (typeof ESPN_TEAMS)[number]): CrowdEvent | null
   const c = g.competitions[0];
   const home = c?.competitors.find((x) => x.homeAway === 'home');
   const away = c?.competitors.find((x) => x.homeAway === 'away');
-  const venueId = VENUE_BY_NAME[(c?.venue?.fullName ?? '').toLowerCase()];
+  const venueId = venueIdForEspnName(c?.venue?.fullName ?? '', t.metroId);
   if (!home || !away || home.team.id !== t.espnId || !venueId) return null;
   if (/postponed|cancel/i.test(c.status?.type?.name ?? '')) return null;
 
@@ -593,7 +633,10 @@ export async function espnTeamSchedule(teamId: string): Promise<TeamGame[] | nul
       // The home side's own event in a city the app covers, so the row can open that night.
       const hostId = home ? t.espnId : them.team.id;
       const host = ESPN_TEAMS.find((x) => x.path === t.path && x.espnId === hostId);
-      const eventId = host && VENUE_BY_NAME[(c.venue?.fullName ?? '').toLowerCase()] ? `${date}-espn-${host.teamId}-${g.id}` : undefined;
+      const eventId =
+        host && venueIdForEspnName(c.venue?.fullName ?? '', host.metroId)
+          ? `${date}-espn-${host.teamId}-${g.id}`
+          : undefined;
       return [
         {
           id: `espn-${t.teamId}-${g.id}`,

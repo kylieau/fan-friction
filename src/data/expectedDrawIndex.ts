@@ -19522,6 +19522,2154 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2024–2026"
   },
   {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 2063,
+    "low": 1732,
+    "high": 2373,
+    "games": 40,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1775,
+    "low": 1481,
+    "high": 2007,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1991,
+    "low": 1648,
+    "high": 2133,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1786,
+    "low": 1683,
+    "high": 2041,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 2084,
+    "low": 1991,
+    "high": 2221,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1600,
+    "low": 1501,
+    "high": 1992,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1818,
+    "low": 1596,
+    "high": 2068,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2405,
+    "low": 2262,
+    "high": 2651,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 2411,
+    "low": 2192,
+    "high": 2618,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 2433,
+    "low": 2362,
+    "high": 2603,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-wbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1127,
+    "low": 903,
+    "high": 1377,
+    "games": 25,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-wbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1142,
+    "low": 725,
+    "high": 1197,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-wbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1157,
+    "low": 945,
+    "high": 2381,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-wbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 920,
+    "low": 820,
+    "high": 1301,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-wbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 903,
+    "low": 829,
+    "high": 1163,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-wbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1297,
+    "low": 1032,
+    "high": 1405,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-wbb",
+    "venueId": "bob-carpenter-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 963,
+    "low": 954,
+    "high": 1156,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 69879,
+    "low": 69879,
+    "high": 69879,
+    "games": 21,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 69879,
+    "low": 69879,
+    "high": 69879,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 69879,
+    "low": 69879,
+    "high": 69879,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 69879,
+    "low": 69879,
+    "high": 69879,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 69879,
+    "low": 69879,
+    "high": 69879,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 69879,
+    "low": 69878,
+    "high": 69879,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 69879,
+    "low": 69879,
+    "high": 69879,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 18623,
+    "low": 17942,
+    "high": 19260,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 19083,
+    "low": 18983,
+    "high": 19252,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 12751,
+    "low": 11716,
+    "high": 13863,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18443,
+    "low": 17851,
+    "high": 19118,
+    "games": 72,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18238,
+    "low": 17942,
+    "high": 19337,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18726,
+    "low": 18371,
+    "high": 19155,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18858,
+    "low": 18565,
+    "high": 19221,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 19603,
+    "low": 19182,
+    "high": 19848,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 16170,
+    "low": 15812,
+    "high": 17245,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17885,
+    "low": 17677,
+    "high": 18480,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18206,
+    "low": 17541,
+    "high": 18554,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18949,
+    "low": 18297,
+    "high": 19365,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19618,
+    "low": 19215,
+    "high": 19692,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 19756,
+    "low": 19280,
+    "high": 19847,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 19092,
+    "low": 18886,
+    "high": 19257,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 17625,
+    "low": 16918,
+    "high": 18247,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18246,
+    "low": 18046,
+    "high": 18435,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18341,
+    "low": 18034,
+    "high": 18493,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18659,
+    "low": 17446,
+    "high": 19073,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 19120,
+    "low": 18916,
+    "high": 19196,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "venueId": "penn-franklin-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 3093,
+    "low": 2152,
+    "high": 6587,
+    "games": 11,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "venueId": "penn-franklin-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6541,
+    "low": 5680,
+    "high": 7256,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "venueId": "penn-franklin-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 3097,
+    "low": 1385,
+    "high": 5531,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "venueId": "penn-franklin-field",
+    "dayClass": "friday",
+    "month": 10,
+    "count": 3097,
+    "low": 1385,
+    "high": 5531,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "venueId": "penn-franklin-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3093,
+    "low": 2610,
+    "high": 7332,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "venueId": "penn-franklin-field",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 2250,
+    "low": 2152,
+    "high": 2610,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "venueId": "penn-franklin-field",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 7332,
+    "low": 4715,
+    "high": 9785,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "all",
+    "month": null,
+    "count": 1837,
+    "low": 1225,
+    "high": 2367,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "opener",
+    "month": null,
+    "count": 932,
+    "low": 784,
+    "high": 1250,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1317,
+    "low": 966,
+    "high": 2183,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2387,
+    "low": 1979,
+    "high": 4555,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 934,
+    "low": 781,
+    "high": 998,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1700,
+    "low": 1421,
+    "high": 2047,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 1530,
+    "low": 1365,
+    "high": 2203,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 1766,
+    "low": 1597,
+    "high": 2176,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2014,
+    "low": 1610,
+    "high": 2758,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 2189,
+    "low": 1971,
+    "high": 2689,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 2481,
+    "low": 2061,
+    "high": 2811,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 1534,
+    "low": 1233,
+    "high": 1762,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "venueId": "the-palestra",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 840,
+    "low": 719,
+    "high": 907,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "venueId": "the-palestra",
+    "dayClass": "all",
+    "month": null,
+    "count": 506,
+    "low": 269,
+    "high": 730,
+    "games": 22,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "venueId": "the-palestra",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 215,
+    "low": 205,
+    "high": 303,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "venueId": "the-palestra",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 224,
+    "low": 206,
+    "high": 329,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "venueId": "the-palestra",
+    "dayClass": "friday",
+    "month": null,
+    "count": 521,
+    "low": 249,
+    "high": 632,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "venueId": "the-palestra",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 725,
+    "low": 516,
+    "high": 748,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "venueId": "the-palestra",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 550,
+    "low": 470,
+    "high": 747,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 18577,
+    "low": 18075,
+    "high": 18737,
+    "games": 22,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18626,
+    "low": 18227,
+    "high": 18749,
+    "games": 19,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18639,
+    "low": 18025,
+    "high": 18696,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 18428,
+    "low": 18277,
+    "high": 18553,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 18086,
+    "low": 17486,
+    "high": 18840,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 18520,
+    "low": 18289,
+    "high": 18633,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 41293,
+    "low": 38731,
+    "high": 43356,
+    "games": 245,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 44595,
+    "low": 44524,
+    "high": 44603,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 39511,
+    "low": 37271,
+    "high": 41321,
+    "games": 125,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 36731,
+    "low": 34109,
+    "high": 37916,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 37543,
+    "low": 35610,
+    "high": 40346,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 40632,
+    "low": 39076,
+    "high": 42841,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 42184,
+    "low": 40368,
+    "high": 43323,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 40451,
+    "low": 38731,
+    "high": 42577,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 39262,
+    "low": 37224,
+    "high": 40552,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 43036,
+    "low": 40528,
+    "high": 44439,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 42354,
+    "low": 39723,
+    "high": 43042,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 41217,
+    "low": 39969,
+    "high": 44156,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 44252,
+    "low": 43232,
+    "high": 44432,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 43807,
+    "low": 43016,
+    "high": 44457,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 43241,
+    "low": 40695,
+    "high": 44199,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 41099,
+    "low": 40133,
+    "high": 41883,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 43356,
+    "low": 42192,
+    "high": 44380,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 43914,
+    "low": 41757,
+    "high": 44511,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 42650,
+    "low": 40327,
+    "high": 43443,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 44203,
+    "low": 43634,
+    "high": 44501,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 43124,
+    "low": 42106,
+    "high": 44294,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 43356,
+    "low": 42474,
+    "high": 44066,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 43159,
+    "low": 42134,
+    "high": 43305,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 42793,
+    "low": 41569,
+    "high": 44076,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 43856,
+    "low": 43199,
+    "high": 44451,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 44183,
+    "low": 41796,
+    "high": 44554,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 43222,
+    "low": 41978,
+    "high": 44079,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 42427,
+    "low": 40976,
+    "high": 42969,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 42075,
+    "low": 40900,
+    "high": 42603,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 42715,
+    "low": 42544,
+    "high": 43135,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 19754,
+    "low": 19746,
+    "high": 19772,
+    "games": 80,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 19746,
+    "low": 17824,
+    "high": 19767,
+    "games": 5,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19746,
+    "low": 18765,
+    "high": 19769,
+    "games": 43,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 19746,
+    "low": 18608,
+    "high": 19771,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 19754,
+    "low": 19746,
+    "high": 19766,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19746,
+    "low": 18654,
+    "high": 19758,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 19746,
+    "low": 18877,
+    "high": 19762,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 19746,
+    "low": 18221,
+    "high": 19851,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19760,
+    "low": 19746,
+    "high": 19779,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 19762,
+    "low": 19757,
+    "high": 19768,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 19787,
+    "low": 19765,
+    "high": 19924,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19751,
+    "low": 19574,
+    "high": 20083,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19746,
+    "low": 18876,
+    "high": 19921,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 20079,
+    "low": 19249,
+    "high": 20119,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19761,
+    "low": 19522,
+    "high": 19781,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 19757,
+    "low": 19752,
+    "high": 19771,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 18850,
+    "low": 18520,
+    "high": 19764,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 13168,
+    "low": 11758,
+    "high": 17811,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 13945,
+    "low": 13201,
+    "high": 14800,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 13267,
+    "low": 12251,
+    "high": 18471,
+    "games": 12,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 14309,
+    "low": 11271,
+    "high": 19157,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 18555,
+    "low": 16824,
+    "high": 20578,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "venueId": "lincoln-financial-field",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 13109,
+    "low": 12860,
+    "high": 13218,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 3007,
+    "low": 2588,
+    "high": 3685,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3637,
+    "low": 3561,
+    "high": 4119,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2709,
+    "low": 2447,
+    "high": 3260,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2833,
+    "low": 2261,
+    "high": 3381,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3036,
+    "low": 2737,
+    "high": 3705,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 3108,
+    "low": 2442,
+    "high": 4229,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2472,
+    "low": 2463,
+    "high": 2755,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4007,
+    "low": 3138,
+    "high": 4014,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 4011,
+    "low": 4009,
+    "high": 4031,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3198,
+    "low": 2643,
+    "high": 3481,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 2910,
+    "low": 2749,
+    "high": 3079,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "venueId": "liacouras-center",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 4084,
+    "low": 3414,
+    "high": 4507,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "venueId": "liacouras-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1349,
+    "low": 1197,
+    "high": 1449,
+    "games": 24,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "venueId": "liacouras-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1223,
+    "low": 1118,
+    "high": 1356,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "venueId": "liacouras-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1356,
+    "low": 1268,
+    "high": 1918,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "venueId": "liacouras-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1390,
+    "low": 1358,
+    "high": 1928,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "venueId": "liacouras-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1352,
+    "low": 1243,
+    "high": 1463,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "venueId": "liacouras-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1394,
+    "low": 1270,
+    "high": 1476,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "venueId": "liacouras-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1243,
+    "low": 1181,
+    "high": 1374,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "venueId": "villanova-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 4101,
+    "low": 2429,
+    "high": 5119,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "venueId": "villanova-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 5101,
+    "low": 4626,
+    "high": 5261,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "venueId": "villanova-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4101,
+    "low": 2429,
+    "high": 5119,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "venueId": "villanova-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 6012,
+    "low": 5490,
+    "high": 6207,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "venueId": "villanova-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 4101,
+    "low": 2429,
+    "high": 5015,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "venueId": "villanova-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 4009,
+    "low": 2618,
+    "high": 4460,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "friday",
+    "month": null,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 6501,
+    "low": 6501,
+    "high": 8377,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 6501,
+    "low": 6501,
+    "high": 6501,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "madison-square-garden",
+    "dayClass": "all",
+    "month": null,
+    "count": 19812,
+    "low": 19812,
+    "high": 19812,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "madison-square-garden",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19812,
+    "low": 19812,
+    "high": 19812,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "madison-square-garden",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 19812,
+    "low": 19812,
+    "high": 19812,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 13754,
+    "low": 13168,
+    "high": 16823,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "venueId": "xfinity-mobile-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 15861,
+    "low": 13791,
+    "high": 18430,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 1511,
+    "low": 1117,
+    "high": 1696,
+    "games": 27,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1166,
+    "low": 1056,
+    "high": 1437,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1219,
+    "low": 1144,
+    "high": 1365,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1509,
+    "low": 1279,
+    "high": 2614,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1121,
+    "low": 1086,
+    "high": 1166,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1551,
+    "low": 1518,
+    "high": 1951,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1771,
+    "low": 1254,
+    "high": 2045,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "venueId": "finneran-pavilion",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1696,
+    "low": 1539,
+    "high": 2187,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
     "metroId": "san-diego",
     "teamId": "padres",
     "venueId": "petco-park",
@@ -25076,6 +27224,20 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "teamId": "ny-giants",
     "season": 2026,
     "level": 1.025,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "season": 2026,
+    "level": 1.08,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "season": 2026,
+    "level": 1.123,
     "games": 3
   },
   {
@@ -34862,6 +37024,1161 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 9
   },
   {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "opponent": "drexel",
+    "ratio": 1.048,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "opponent": "monmouth",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "opponent": "rider",
+    "ratio": 0.863,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "opponent": "stony-brook",
+    "ratio": 0.942,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "opponent": "towson",
+    "ratio": 1.077,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-mbb",
+    "opponent": "william-mary",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "delaware-wbb",
+    "opponent": "towson",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "opponent": "commanders",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "opponent": "cowboys",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "opponent": "giants",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "eagles",
+    "opponent": "rams",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "avalanche",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "blackhawks",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "blue-jackets",
+    "ratio": 1.004,
+    "games": 6
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "blues",
+    "ratio": 0.977,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "bruins",
+    "ratio": 0.999,
+    "games": 5
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "canadiens",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "canucks",
+    "ratio": 1.05,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "capitals",
+    "ratio": 1.02,
+    "games": 6
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "devils",
+    "ratio": 1.012,
+    "games": 5
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "ducks",
+    "ratio": 1.017,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "flames",
+    "ratio": 0.943,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "golden-knights",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "hurricanes",
+    "ratio": 0.999,
+    "games": 8
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "islanders",
+    "ratio": 0.987,
+    "games": 5
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "jets",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "kings",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "kraken",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "lightning",
+    "ratio": 1.01,
+    "games": 5
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "maple-leafs",
+    "ratio": 1.009,
+    "games": 5
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "oilers",
+    "ratio": 1.016,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "panthers",
+    "ratio": 1.054,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "penguins",
+    "ratio": 1.014,
+    "games": 7
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "predators",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "rangers",
+    "ratio": 1.013,
+    "games": 5
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "red-wings",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "sabres",
+    "ratio": 0.986,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "senators",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "sharks",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "stars",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "opponent": "wild",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "opponent": "brown",
+    "ratio": 0.813,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "opponent": "cornell",
+    "ratio": 1.159,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "opponent": "dartmouth",
+    "ratio": 1.518,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-football",
+    "opponent": "princeton",
+    "ratio": 0.739,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "opponent": "brown",
+    "ratio": 0.856,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "opponent": "columbia",
+    "ratio": 0.938,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "opponent": "cornell",
+    "ratio": 0.937,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "opponent": "dartmouth",
+    "ratio": 0.944,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "opponent": "harvard",
+    "ratio": 1.097,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "opponent": "lafayette",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "opponent": "princeton",
+    "ratio": 1.354,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "opponent": "saint-joseph-s",
+    "ratio": 1.076,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-mbb",
+    "opponent": "yale",
+    "ratio": 1.11,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "opponent": "brown",
+    "ratio": 1.041,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "opponent": "columbia",
+    "ratio": 1.133,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "opponent": "dartmouth",
+    "ratio": 0.983,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "opponent": "harvard",
+    "ratio": 0.923,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "opponent": "princeton",
+    "ratio": 1.17,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "opponent": "saint-joseph-s",
+    "ratio": 1.265,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "penn-wbb",
+    "opponent": "yale",
+    "ratio": 0.909,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "opponent": "chicago",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "opponent": "columbus",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "opponent": "d-c-united",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "opponent": "nashville",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "opponent": "nycfc",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "astros",
+    "ratio": 0.982,
+    "games": 6
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "athletics",
+    "ratio": 0.988,
+    "games": 6
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "blue-jays",
+    "ratio": 0.978,
+    "games": 8
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "braves",
+    "ratio": 0.986,
+    "games": 23
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "brewers",
+    "ratio": 0.982,
+    "games": 9
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "cardinals",
+    "ratio": 1.009,
+    "games": 10
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "cubs",
+    "ratio": 1.019,
+    "games": 9
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "d-backs",
+    "ratio": 0.985,
+    "games": 9
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "dodgers",
+    "ratio": 0.986,
+    "games": 9
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "giants",
+    "ratio": 0.995,
+    "games": 12
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "guardians",
+    "ratio": 0.934,
+    "games": 6
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "marlins",
+    "ratio": 0.971,
+    "games": 18
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "mets",
+    "ratio": 0.993,
+    "games": 19
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "nationals",
+    "ratio": 0.994,
+    "games": 20
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "padres",
+    "ratio": 0.984,
+    "games": 10
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "pirates",
+    "ratio": 0.983,
+    "games": 11
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "rangers",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "rays",
+    "ratio": 0.996,
+    "games": 6
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "reds",
+    "ratio": 0.986,
+    "games": 9
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "rockies",
+    "ratio": 0.98,
+    "games": 9
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "white-sox",
+    "ratio": 0.983,
+    "games": 6
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "opponent": "yankees",
+    "ratio": 1.012,
+    "games": 6
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "bucks",
+    "ratio": 0.971,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "bulls",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "cavaliers",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "celtics",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "clippers",
+    "ratio": 0.982,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "grizzlies",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "hawks",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "heat",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "hornets",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "jazz",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "kings",
+    "ratio": 0.984,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "knicks",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "lakers",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "magic",
+    "ratio": 0.987,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "mavericks",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "nets",
+    "ratio": 0.987,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "nuggets",
+    "ratio": 0.983,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "pacers",
+    "ratio": 0.982,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "pelicans",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "pistons",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "raptors",
+    "ratio": 0.973,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "rockets",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "spurs",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "suns",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "thunder",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "timberwolves",
+    "ratio": 0.982,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "trail-blazers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "warriors",
+    "ratio": 0.979,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "opponent": "wizards",
+    "ratio": 0.969,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "opponent": "army",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "opponent": "navy",
+    "ratio": 1.116,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-football",
+    "opponent": "utsa",
+    "ratio": 0.872,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "charlotte",
+    "ratio": 0.959,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "east-carolina",
+    "ratio": 0.899,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "fau",
+    "ratio": 0.984,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "la-salle",
+    "ratio": 1.025,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "memphis",
+    "ratio": 1.285,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "north-texas",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "rice",
+    "ratio": 0.945,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "south-florida",
+    "ratio": 1.031,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "tulane",
+    "ratio": 0.939,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "tulsa",
+    "ratio": 0.938,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "uab",
+    "ratio": 0.964,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "utsa",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-mbb",
+    "opponent": "wichita-st",
+    "ratio": 1.066,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "opponent": "charlotte",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "opponent": "east-carolina",
+    "ratio": 0.832,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "opponent": "memphis",
+    "ratio": 1.068,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "opponent": "rice",
+    "ratio": 0.95,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "opponent": "south-florida",
+    "ratio": 1.026,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "temple-wbb",
+    "opponent": "tulane",
+    "ratio": 0.98,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "opponent": "colgate",
+    "ratio": 0.936,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "opponent": "stony-brook",
+    "ratio": 0.939,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "opponent": "towson",
+    "ratio": 0.932,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "opponent": "william-mary",
+    "ratio": 1.066,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-football",
+    "opponent": "youngstown-st",
+    "ratio": 0.98,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "butler",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "creighton",
+    "ratio": 1.092,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "depaul",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "georgetown",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "marquette",
+    "ratio": 0.967,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "penn",
+    "ratio": 0.893,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "providence",
+    "ratio": 1.064,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "seton-hall",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "st-john-s",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "uconn",
+    "ratio": 1.086,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-mbb",
+    "opponent": "xavier",
+    "ratio": 1.038,
+    "games": 3
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "butler",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "creighton",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "depaul",
+    "ratio": 1.035,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "georgetown",
+    "ratio": 0.969,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "marquette",
+    "ratio": 1.036,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "seton-hall",
+    "ratio": 0.764,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "st-john-s",
+    "ratio": 0.895,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "temple",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "uconn",
+    "ratio": 1.521,
+    "games": 2
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "villanova-wbb",
+    "opponent": "xavier",
+    "ratio": 1.086,
+    "games": 2
+  },
+  {
     "metroId": "san-diego",
     "teamId": "padres",
     "opponent": "astros",
@@ -38057,6 +41374,138 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.049,
     "games": 26,
     "seasons": "2022, 2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "band": "first",
+    "occupancy": 1.016,
+    "low": 1,
+    "high": 1.04,
+    "games": 57,
+    "seasons": "2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "flyers",
+    "venueId": "xfinity-mobile-arena",
+    "band": "second",
+    "occupancy": 1,
+    "low": 0.99,
+    "high": 1.012,
+    "games": 26,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "band": "first",
+    "occupancy": 0.93,
+    "low": 0.674,
+    "high": 1.023,
+    "games": 46,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "band": "second",
+    "occupancy": 0.93,
+    "low": 0.674,
+    "high": 1.023,
+    "games": 46,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "band": "conference",
+    "occupancy": 0.93,
+    "low": 0.674,
+    "high": 1.023,
+    "games": 46,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "philadelphia-union",
+    "venueId": "subaru-park",
+    "band": "final",
+    "occupancy": 0.93,
+    "low": 0.674,
+    "high": 1.023,
+    "games": 46,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "band": "first",
+    "occupancy": 0.993,
+    "low": 0.904,
+    "high": 1.186,
+    "games": 27,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "band": "second",
+    "occupancy": 1.056,
+    "low": 0.949,
+    "high": 1.081,
+    "games": 59,
+    "seasons": "2023, 2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "phillies",
+    "venueId": "citizens-bank-park",
+    "band": "conference",
+    "occupancy": 1.039,
+    "low": 0.945,
+    "high": 1.06,
+    "games": 30,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "band": "first",
+    "occupancy": 1.022,
+    "low": 0.964,
+    "high": 1.031,
+    "games": 8,
+    "seasons": "2023, 2024, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "philadelphia",
+    "teamId": "sixers",
+    "venueId": "xfinity-mobile-arena",
+    "band": "second",
+    "occupancy": 1.024,
+    "low": 0.979,
+    "high": 1.042,
+    "games": 35,
+    "seasons": "2023, 2026 + league",
     "basis": "blend"
   },
   {
