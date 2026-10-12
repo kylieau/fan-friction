@@ -81,6 +81,7 @@ export const LISTINGS_2026_EVENTS: CrowdEvent[] = [
     start: '14:30',
     kind: 'game',
     title: 'Texas vs. Oklahoma (Red River Showdown)',
+    neutralSite: true,
     place: { type: 'venue', venueId: 'cotton-bowl' },
     audience: { domain: 'sports', sport: 'football' },
     crowd: [],

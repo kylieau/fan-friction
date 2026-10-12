@@ -38,7 +38,7 @@ import {
   type TeamRecord,
 } from '../data';
 import { addDays, clockTime, shortLocalDate } from '../lib/dates';
-import { mapTitle } from '../lib/eventTitle';
+import { mapTitle, scheduleGameTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath } from '../lib/view';
 
@@ -56,7 +56,7 @@ const KINDS: { kind: FavoriteKind; label: string }[] = [
 interface NextLine {
   date: string;
   start: string | null;
-  /** "at Brewers", "vs. Oilers", a venue, or an event title. */
+  /** "Dodgers at Brewers" (the canonical form; the team-relative one is for the team's own page), a venue, or an event title. */
   text: string;
   /** The listed event behind it, when the building is covered. */
   event?: CrowdEvent;
@@ -132,7 +132,7 @@ export function FavoritesScreen() {
         next = {
           date: game.date,
           start: game.start,
-          text: `${game.home || game.neutral ? 'vs.' : 'at'} ${game.opponent}${uncovered && game.venueName && (game.neutral || game.home) ? ` · ${game.venueName}` : ''}`,
+          text: `${scheduleGameTitle(fav.label, game)}${uncovered && game.venueName && (game.neutral || game.home) ? ` · ${game.venueName}` : ''}`,
           event,
           metroId: event?.metroId ?? game.eventMetroId,
           away: uncovered,
@@ -469,7 +469,7 @@ function NextLineRow({ next, rating, home }: { next: NextLine; rating: number | 
 function NextRow({ card, home }: { card: CardData; home: string }) {
   const { fav, next } = card;
   if (!next) return null;
-  const title = fav.kind === 'team' ? `${fav.label} ${next.text}` : fav.kind === 'artist' ? fav.label : next.text;
+  const title = fav.kind === 'artist' ? fav.label : next.text;
   const where = [fav.kind === 'team' && next.event ? venueOf(next.event) : fav.kind === 'artist' ? next.text : fav.label, next.metroId && next.metroId !== home ? METROS[next.metroId]?.name : null]
     .filter(Boolean)
     .join(' · ');

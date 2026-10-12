@@ -24,11 +24,8 @@ function squadTag(raw: string): string {
   return raw === 'CFB' ? 'FB' : raw;
 }
 
-/**
- * Squad tag sits right after the first name: "USC (FB) vs Washington".
- * A unique pro name (Dodgers, Lakers) gets no tag. Never leave the tag at the end.
- */
-function withSquadTag(title: string, tag: string | null): string {
+/** The two sides of a game as the source wrote them (home first), the squad tag, and a trailing event name ("Red River Showdown"). */
+function sidesOf(title: string, tag: string | null): { home: string; away: string; tag: string | null; eventName: string | null } | null {
   let rest = title.trim();
   let found = tag;
   const trailing = rest.match(new RegExp(`^(.*?)\\s+\\((${SQUAD_TAG})\\)\\s*$`));
@@ -37,17 +34,48 @@ function withSquadTag(title: string, tag: string | null): string {
     found = found ?? squadTag(trailing[2]);
   }
   const vs = rest.match(/^(.*?)\s+(vs\.?)\s+(.*)$/i);
-  if (!vs) return rest;
-  let first = vs[1].trim();
-  const onFirst = first.match(new RegExp(`^(.*?)\\s+\\((${SQUAD_TAG})\\)\\s*$`));
+  if (!vs) return null;
+  let home = vs[1].trim();
+  const onFirst = home.match(new RegExp(`^(.*?)\\s+\\((${SQUAD_TAG})\\)\\s*$`));
   if (onFirst) {
-    first = onFirst[1].trim();
+    home = onFirst[1].trim();
     found = found ?? squadTag(onFirst[2]);
   }
-  const second = vs[3].trim();
-  // "vs." everywhere, whatever the source wrote (Kylie, Oct 9, C086).
-  if (!found) return `${first} vs. ${second}`;
-  return `${first} (${found}) vs. ${second}`;
+  let away = vs[3].trim();
+  // A parenthetical that is not a squad tag names the event: "Oklahoma (Red River Showdown)".
+  let eventName: string | null = null;
+  const named = away.match(/^(.*?)\s+\(([^()]+)\)\s*$/);
+  if (named && !new RegExp(`^(${SQUAD_TAG})$`).test(named[2])) {
+    away = named[1].trim();
+    eventName = named[2].trim();
+  }
+  return { home, away, tag: found, eventName };
+}
+
+/** "NLCS G2", "World Series G7", "Wild Card": the round and game as a short label, or null in the regular season. */
+export function stakesLabel(event: Pick<CrowdEvent, 'stakes' | 'audience' | 'kind'>): string | null {
+  const round = event.stakes?.round;
+  if (!round || event.audience.domain !== 'sports' || event.kind === 'show' || event.kind === 'festival') return null;
+  const game = event.stakes?.game;
+  return game && game > 0 ? `${round} G${game}` : round;
+}
+
+/**
+ * A game's name (Kylie, Oct 11, 2026; docs/research/topics/event-naming-at-vs.md): "{Away} at {Home}"
+ * in every sport, the way the source names the sides; college keeps the squad tag after the school,
+ * "Washington at USC (FB)". A neutral site is the one place "vs." appears, designated visitor first,
+ * with the event's own name ahead of it: "Red River Showdown · Texas vs. Oklahoma". A title with
+ * no "vs" is left as written.
+ */
+function gameName(title: string, tag: string | null, neutral: boolean): string {
+  const sides = sidesOf(title, tag);
+  if (!sides) return title.trim();
+  const home = sides.tag ? `${sides.home} (${sides.tag})` : sides.home;
+  if (neutral) {
+    const name = `${sides.home} vs. ${sides.away}${sides.tag ? ` (${sides.tag})` : ''}`;
+    return sides.eventName ? `${sides.eventName} · ${name}` : name;
+  }
+  return `${sides.away} at ${home}`;
 }
 
 /**
@@ -153,15 +181,51 @@ export function mapTitle(event: CrowdEvent, entry: readonly CrowdEvent[] = []): 
     if (!sportsCollide(event, entry, true, false)) return sportsChip(event, true, false)!;
     return sportsChip(event, true, true)!;
   }
-  return withSquadTag(event.title, collegeAbbrev(event));
+  return gameName(event.title, collegeAbbrev(event), Boolean(event.neutralSite));
 }
 
 /**
- * Full official title on the sheet, the event page, and the log. The round is a separate line.
- * A show reads as the feed's full name when it says more than the act ("Bruno Mars: The
+ * Full name on the sheet, the event page, the feed and the log: the label first, then the game
+ * (Kylie, Oct 11, 2026): "NLCS G2 · Dodgers at Brewers". Identity is the event id and date, not this
+ * string. A show reads as the feed's full name when it says more than the act ("Bruno Mars: The
  * Romantic Tour"), in the casing the act uses (src/config/names.ts).
  */
 export function listTitle(event: CrowdEvent): string {
   if (event.kind === 'show' || event.kind === 'festival') return displayName(event.officialTitle ?? event.title);
-  return withSquadTag(event.title, collegeAbbrev(event));
+  const name = gameName(event.title, collegeAbbrev(event), Boolean(event.neutralSite));
+  const label = stakesLabel(event);
+  return label ? `${label} · ${name}` : name;
+}
+
+/** A game on a team's own schedule, from that team's side (TeamGame). */
+export interface SchedulePick {
+  home: boolean;
+  neutral?: boolean;
+  opponent: string;
+  venueName?: string;
+  preseason?: boolean;
+  stakes?: { round: string; game?: number };
+}
+
+function scheduleLabel(game: SchedulePick): string | null {
+  if (game.stakes) return game.stakes.game ? `${game.stakes.round} G${game.stakes.game}` : game.stakes.round;
+  return game.preseason ? 'Preseason' : null;
+}
+
+/**
+ * The team-relative form, only on a favorite team's own page (Kylie, Oct 11, 2026): "vs Padres" at
+ * home, "@ Brewers" away, "vs 49ers · Melbourne" at a neutral site; the label first. Never on share
+ * cards, the feed, search or the log: those use listTitle.
+ */
+export function teamRelativeTitle(game: SchedulePick): string {
+  const side = game.neutral ? `vs ${game.opponent}${game.venueName ? ` · ${game.venueName}` : ''}` : game.home ? `vs ${game.opponent}` : `@ ${game.opponent}`;
+  const label = scheduleLabel(game);
+  return label ? `${label} · ${side}` : side;
+}
+
+/** The same game in its canonical form for a list that is not the team's own page: "Dodgers at Brewers". */
+export function scheduleGameTitle(us: string, game: SchedulePick): string {
+  const name = game.neutral ? (game.home ? `${game.opponent} vs. ${us}` : `${us} vs. ${game.opponent}`) : game.home ? `${game.opponent} at ${us}` : `${us} at ${game.opponent}`;
+  const label = scheduleLabel(game);
+  return label ? `${label} · ${name}` : name;
 }

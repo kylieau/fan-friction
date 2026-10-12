@@ -519,7 +519,7 @@ export async function followingFeed(limit = 30): Promise<FeedItem[]> {
 
 /** The feed's shape before anyone is followed, marked Example. Nothing here is written anywhere. */
 export const EXAMPLE_FEED: FeedItem[] = [
-  { example: true, kind: 'planning', friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, homeMetroId: null }, title: 'Rams vs. Bills', date: '2026-10-12', venue: 'SoFi Stadium', metroId: 'la' },
+  { example: true, kind: 'planning', friend: { id: 'example-1', handle: 'sam-r', displayName: 'Sam R.', avatarUrl: null, homeMetroId: null }, title: 'Bills at Rams', date: '2026-10-12', venue: 'SoFi Stadium', metroId: 'la' },
   { example: true, kind: 'attended', friend: { id: 'example-2', handle: 'priya', displayName: 'Priya', avatarUrl: null, homeMetroId: null }, title: 'Slayer', date: '2026-10-02', venue: 'Kia Forum', metroId: 'la' },
 ];
 
@@ -549,7 +549,7 @@ export const EXAMPLE_FRIEND_ENTRIES: FriendEntry[] = [
     entry: {
       id: 'example-entry-1',
       when: { sort: '2026-10-03', label: '', precision: 'day' },
-      title: 'Dodgers (NLDS G1) vs. Phillies',
+      title: 'NLDS G1 · Phillies at Dodgers',
       tags: ['Dodgers'],
       sport: 'Baseball',
       sides: ['Dodgers'],

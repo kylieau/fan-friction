@@ -47,7 +47,7 @@ import {
   type TeamGame,
 } from '../data';
 import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/dates';
-import { mapTitle } from '../lib/eventTitle';
+import { mapTitle, teamRelativeTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath } from '../lib/view';
 import { LastFive } from './FavoritesScreen';
@@ -486,11 +486,9 @@ function venueOf(event: CrowdEvent): string {
 }
 
 
-/** "vs. Brewers · NLCS G3", "at Brewers · G1", "vs. Oilers". */
+/** The team-relative form belongs to this page alone (Kylie, Oct 11, 2026): "NLCS G3 · vs Brewers", "@ Brewers". */
 function gameTitle(game: TeamGame): string {
-  const side = `${game.home || game.neutral ? 'vs.' : 'at'} ${game.opponent}`;
-  const round = game.stakes ? `${game.stakes.round}${game.stakes.game ? ` G${game.stakes.game}` : ''}` : game.preseason ? 'Preseason' : null;
-  return round ? `${side} · ${round}` : side;
+  return teamRelativeTitle(game);
 }
 
 /** A schedule or results row: the game, its date and place; the read when the building is covered, else a dash. */
@@ -503,7 +501,7 @@ function GameRow({ game, rating, covered, teamMetroId }: { game: TeamGame; ratin
   const body = (
     <>
       <span className="log-main">
-        <span className="log-title">{mark ? `${mark} ${game.home || game.neutral ? 'vs.' : 'at'} ${game.opponent}` : gameTitle(game)}</span>
+        <span className="log-title">{mark ? `${mark} ${teamRelativeTitle({ ...game, stakes: undefined, preseason: undefined })}` : gameTitle(game)}</span>
         <span className="log-facts">{facts}</span>
       </span>
       {!mark && (covered ? <Read rating={rating} /> : <span className="log-score none" aria-label="No read: not a covered building">—</span>)}
