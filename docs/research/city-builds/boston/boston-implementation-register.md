@@ -50,7 +50,8 @@ Oct 12, 2026 · Cursor cloud agent. Source of truth: [city-type answer](boston-c
 
 - **Attendance:** ~1,198 regular-season home games across 15 JSON files under `data/attendance/boston/` (Red Sox, Celtics, Bruins, Patriots, Revolution, Legacy, Fleet, BC, BU, Harvard, UML, etc.). BU MBB/WBB files are stubs (Case Gym not mapped).
 - **Weather, schedule archive, results:** collected for `boston` under `data/weather/boston/`, `data/schedule-archive/boston/`, `data/results/boston/`.
-- **Expected draws:** `src/data/expectedDrawIndex.ts` was **not** replaced by a full `attendance-calibrate` run (that pass rewrites other metros’ shared `POSTSEASON_DRAWS` pool). Boston rows were merged as **main’s arrays plus Boston-only rows** (+140 expected draws, +2 season levels, +137 opponent ratios, +14 postseason rows). Non-Boston sections stay byte-identical to `main`.
+- **Expected draws:** no full `attendance-calibrate` rewrite (that would change other metros’ `POSTSEASON_DRAWS` pool). Boston rows were spliced onto **main** for `EXPECTED_DRAWS` (+140), `SEASON_LEVELS` (+2), and `POSTSEASON_DRAWS` (+14); non-Boston rows in those arrays stay byte-identical to `main`. Boston opponent ratios (+137) are in `src/data/expectedDrawIndexBostonOpponents.ts` and merge in `expectedDraw.ts`; `OPPONENT_RATIOS` in the index file matches `main` exactly.
+- **Product sign-off:** Kylie has not approved Boston execution the way she did Milwaukee (K14). That note is here only—not in `docs/product/product-decisions.md` (build 3 owns that log).
 
 ## Gaps and judgment calls
 

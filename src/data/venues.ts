@@ -1099,15 +1099,6 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 5000, setup: 'track', note: 'Reported. Sources disagree up to vs over 5,000; confirm per event. Source: venue table A14.' }],
     roof: 'indoor',
   },
-  roadrunner: {
-    id: 'roadrunner',
-    metroId: 'boston',
-    names: [{ name: 'Roadrunner' }],
-    location: [-71.1438739, 42.3566205],
-    ticketmasterIds: ['Z7r9jZa7rs'],
-    capacity: [{ seats: 3500, setup: 'concert', note: 'Reported. 3,500 vs 3,000 conflict in research; GA standing only. Source: venue table A17.' }],
-    roof: 'indoor',
-  },
   'wang-theatre': {
     id: 'wang-theatre',
     metroId: 'boston',
@@ -3247,6 +3238,15 @@ export const VENUES: Record<string, Venue> = {
     location: [-121.4996, 38.5802],
     ticketmasterIds: ['KovZpZAEF76A'],
     capacity: [{ seats: 17600, setup: 'basketball', note: 'About 17,600 for basketball' }],
+    roof: 'indoor',
+  },
+  roadrunner: {
+    id: 'roadrunner',
+    metroId: 'boston',
+    names: [{ name: 'Roadrunner' }],
+    location: [-71.1438739, 42.3566205],
+    ticketmasterIds: ['Z7r9jZa7rs'],
+    capacity: [{ seats: 3500, setup: 'concert', note: 'Reported. 3,500 vs 3,000 conflict in research; GA standing only. Source: venue table A17.' }],
     roof: 'indoor',
   },
   // One festival site in Indio, not its own metro. The logged nights stay
