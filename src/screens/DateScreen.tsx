@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { ChevronDown, ShareIcon, TvIcon } from '../components/Icons';
-import { RemoveConfirm } from '../components/EntryLayer';
+import { ChevronDown, ShareIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
+import { StubSheet } from '../components/StubSheet';
+import { ActivityLines } from '../components/ActivityLines';
+import { activityGroups, activityLine, yourActivity, ACTIVITY_WORDS } from '../lib/activity';
 import { DayTimeline } from '../components/DayTimeline';
 import { crowdThousands } from '../map/crowdPoints';
 import { DEFAULT_METRO, METROS } from '../config/metros';
@@ -21,12 +23,8 @@ import {
   getAccount,
   getCityDate,
   getPersonalLog,
-  isPlanned,
-  plannedKind,
   firmPlan,
   isStampLocked,
-  isWasThere,
-  isWatched,
   drawSize,
   sizeTier,
   savedNightRead,
@@ -35,8 +33,6 @@ import {
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
-  togglePlan,
-  toggleWasThere,
   yourEntries,
   type CityDate,
   type CrowdEvent,
@@ -48,7 +44,6 @@ import { listTitle } from '../lib/eventTitle';
 import { getHomeId } from '../lib/homeCity';
 import { quietStakes } from '../lib/stakes';
 import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
-import { feedLine } from './FollowingScreen';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 
@@ -77,9 +72,8 @@ export function DateScreen() {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [day, setDay] = useState<CityDate | null>(null);
   const [friends, setFriends] = useState<FeedItem[]>([]);
-  const [choosing, setChoosing] = useState(false);
-  // The event whose Attended is being un-tapped: one confirm before it leaves the log (C054).
-  const [unmarking, setUnmarking] = useState<string | null>(null);
+  // The event whose "+ Stub it" sheet is open (Kylie's answer, build notes 3, 8.1, item 13).
+  const [stubbing, setStubbing] = useState<CrowdEvent | null>(null);
   const [shareNote, setShareNote] = useState('');
 
   const [tries, setTries] = useState(0);
@@ -102,9 +96,9 @@ export function DateScreen() {
       setFriends([]);
       return;
     }
-    // The same feed rules as Following (3.24): attended only once the date has passed, plans ahead.
+    // The same feed rules as Following (3.24): attended only once the date has passed, plans ahead. Interested too (8.1, item 11).
     followingFeed(300).then((list) => {
-      if (current) setFriends(list.filter((f) => !f.interested && f.date === date && (f.metroId ?? DEFAULT_METRO.id) === metro.id));
+      if (current) setFriends(list.filter((f) => f.date === date && (f.metroId ?? DEFAULT_METRO.id) === metro.id));
     });
     return () => {
       current = false;
@@ -114,7 +108,8 @@ export function DateScreen() {
   const today = todayIn(metro);
   // Today counts as ahead: an Attend today is a plan, and becomes Attended once the date passes (C039).
   const ahead = date >= today;
-  const events = useMemo(() => (day ? [...day.events].sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99')) : []), [day]);
+  // By crowd (build notes 3, 4.3): the rows explain the score; Explore is the one by time.
+  const events = useMemo(() => (day ? [...day.events].sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0) || (a.start ?? '99').localeCompare(b.start ?? '99')) : []), [day]);
   const mine = useMemo(
     () => yourEntries(log).filter((n) => n.when.sort === date && n.when.precision === 'day' && (n.metroId ?? DEFAULT_METRO.id) === metro.id),
     [log, date, metro.id],
@@ -126,21 +121,10 @@ export function DateScreen() {
   const dayRange = cityDayRange(metro.id, date);
   const cityRow = dayRange ? undefined : cityWeather(metro.id, date, events);
 
-  // The event the gold button acts on: the highlighted one, or the only one.
+  // The event the share line names: the highlighted one, or the only one.
   const target = events.find((e) => e.id === highlight) ?? (events.length === 1 ? events[0] : undefined);
-  const attended = (e: CrowdEvent) => isWasThere(e.id, log);
-  const attending = (e: CrowdEvent) => isPlanned(e.id, log);
-  // Before the event the row reads Watching or Attending by which question was answered (Kylie, Oct 11).
-  const aheadWord = (e: CrowdEvent) => (plannedKind(e.id, log) === 'watch' ? 'Watching' : 'Attending');
-
-  const mark = (e: CrowdEvent) => {
-    if (ahead) togglePlan(e, plannedKind(e.id, log) === 'watch' ? 'watch' : 'attend');
-    else if (attended(e)) {
-      setUnmarking(e.id);
-      return;
-    } else toggleWasThere(e);
-    setChoosing(false);
-  };
+  // Your answer and the people you follow, per event, for the row's one activity line (build notes 3, 4.2).
+  const lineFor = (e: CrowdEvent) => activityLine(activityGroups(friends.filter((f) => f.eventId === e.id), yourActivity(e.id, log)));
 
   const share = async () => {
     const line = shownRating !== null ? `${scoreLabel(shownRating)} · ${formatScore(shownRating)}/10` : '';
@@ -326,50 +310,35 @@ export function DateScreen() {
         <h2 id="that-date" className="you-heading">
           This day in {metro.name}
         </h2>
-        {(
-          <ul className="log-list timeline-list">
-            {events.map((e) => {
-              const yours = attended(e) || attending(e);
-              return (
-                <li key={e.id} className={`tl-row${yours || e.id === highlight ? ' yours' : ''}`}>
-                  <Link to={eventPath(e.id, e.metroId)} className="tl-main">
-                    <span className="log-main">
-                      <span className="log-title">{listTitle(e)}</span>
-                      <span className="event-tagline">
-                        <EventTags event={e} />
-                        <span className="event-venue">{[venueOf(e), yours ? (ahead ? aheadWord(e) : isWatched(e.id, log) ? 'Watched' : 'Attended') : null].filter(Boolean).join(' · ')}</span>
-                      </span>
-                      {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
-                      <span className="log-facts">
-                        <VenueWeather event={e} />
-                      </span>
-                    </span>
-                    <span className="event-side">
-                      <CrowdFigure event={e} />
-                      <span className="event-meta">{e.start ? clockTime(e.start) : 'TBA'}</span>
-                    </span>
-                  </Link>
-                  {choosing && unmarking === e.id ? (
-                    <RemoveConfirm
-                      compact
-                      stamped={Boolean(log.added.find((entry) => entry.eventId === e.id)?.stamp)}
-                      onKeep={() => setUnmarking(null)}
-                      onRemove={() => {
-                        setUnmarking(null);
-                        toggleWasThere(e);
-                        setChoosing(false);
-                      }}
-                    />
-                  ) : choosing ? (
-                    <button type="button" className={`fav-toggle${yours ? ' on' : ''}`} onClick={() => mark(e)}>
-                      {ahead ? (attending(e) ? aheadWord(e) : 'Attending?') : attended(e) ? 'Attended' : 'Attended?'}
-                    </button>
-                  ) : null}
-                </li>
-              );
-            })}
-          </ul>
-        )}
+        {/* Rows (build notes 3, 4.3; mock 3-date-page): title, crowd and tags, one activity line; the time over the venue
+            on the right; a small "+ Stub it" on each row opens the one sheet (8.1, item 13). */}
+        <ul className="date-list">
+          {events.map((e) => {
+            const you = yourActivity(e.id, log);
+            const line = lineFor(e);
+            return (
+              <li key={e.id} className={`date-row${you || e.id === highlight ? ' yours' : ''}`}>
+                <Link to={eventPath(e.id, e.metroId)} className="date-row-main">
+                  <span className="date-row-title">{listTitle(e)}</span>
+                  <span className="date-row-line">
+                    <CrowdFigure event={e} />
+                    <EventTags event={e} />
+                  </span>
+                  {quietStakes(e, events) && <span className="event-stakes">{quietStakes(e, events)}</span>}
+                  {line && <span className="day-row-activity">{line}</span>}
+                  <VenueWeather event={e} bare />
+                </Link>
+                <span className="date-row-side">
+                  <span className="date-row-time">{e.start ? clockTime(e.start) : 'TBA'}</span>
+                  {venueOf(e) && <span className="date-row-venue">{venueOf(e)}</span>}
+                  <button type="button" className={`stub-mini${you ? ' on' : ''}`} onClick={() => setStubbing(e)}>
+                    {you ? ACTIVITY_WORDS[you.kind] : '+ Stub it'}
+                  </button>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
       </section>
       )}
 
@@ -400,26 +369,6 @@ export function DateScreen() {
 
       {events.length > 0 && (
         <div className="action-row">
-          {target ? (
-            <>
-              <button
-                type="button"
-                className={ahead ? (attending(target) ? `mark-button on${plannedKind(target.id, log) === 'watch' ? ' watched-on' : ''}` : 'gold-button') : attended(target) ? 'mark-button on' : 'gold-button'}
-                onClick={() => mark(target)}
-              >
-                {ahead ? (attending(target) ? aheadWord(target) : 'Attending?') : 'Attended'}
-              </button>
-              {ahead && !attending(target) && (
-                <button type="button" className="link-button watched-action" onClick={() => togglePlan(target, 'watch')}>
-                  <TvIcon /> Watching?
-                </button>
-              )}
-            </>
-          ) : (
-            <button type="button" className={choosing ? 'mark-button on' : 'gold-button'} onClick={() => setChoosing((c) => !c)}>
-              {choosing ? 'Done' : ahead ? 'Attending?' : 'Attended'}
-            </button>
-          )}
           <button type="button" className="round-button share-button" aria-label="Share this date" onClick={share}>
             <ShareIcon />
           </button>
@@ -436,18 +385,16 @@ export function DateScreen() {
           <h2 id="friends-date" className="you-heading">
             Following
           </h2>
-          <ul className="log-list">
-            {friends.map((item) => (
-              <li key={`${item.friend.id}-${item.kind}-${item.title}`} className="log-row">
-                <span className="log-main">
-                  <span className="log-friend">{feedLine(item)}</span>
-                  <span className="log-title">{item.title}</span>
-                </span>
-              </li>
-            ))}
-          </ul>
+          {/* Grouped per event like the event page (Kylie, Oct 11; 8.1, items 11 and 12), Interested included. */}
+          {groupByEvent(friends).map((group) => (
+            <div key={group.key} className="date-friends-group">
+              <span className="log-facts date-friends-title">{group.title}</span>
+              <ActivityLines groups={activityGroups(group.items, null)} />
+            </div>
+          ))}
         </section>
       )}
+      {stubbing && <StubSheet event={stubbing} onClose={() => setStubbing(null)} />}
 
       {shareNote && (
         <p className="you-fine" role="status">
@@ -458,11 +405,33 @@ export function DateScreen() {
   );
 }
 
-/** The venue's feels-like, inline, open-air venues only. */
-function VenueWeather({ event }: { event: CrowdEvent }) {
+/** Friends' answers by event, in the day's order. */
+function groupByEvent(items: FeedItem[]): { key: string; title: string; items: FeedItem[] }[] {
+  const groups = new Map<string, { key: string; title: string; items: FeedItem[] }>();
+  for (const item of items) {
+    const key = item.eventId ?? item.title;
+    const group = groups.get(key) ?? { key, title: item.title, items: [] };
+    group.items.push(item);
+    groups.set(key, group);
+  }
+  return [...groups.values()];
+}
+
+/** The venue's feels-like, inline, open-air venues only; `bare` makes it its own small line. */
+function VenueWeather({ event, bare = false }: { event: CrowdEvent; bare?: boolean }) {
   if (!isOpenAir(event)) return null;
   const row = weatherForEvent(event);
   if (!row) return null;
+  if (bare) {
+    return (
+      <span className="log-facts">
+        <span className="weather-glyph" aria-hidden>
+          {weatherGlyph(row)}
+        </span>{' '}
+        {feelsLikeLabel(row, event.metroId)}
+      </span>
+    );
+  }
   return (
     <>
       {' · '}

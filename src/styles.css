@@ -2143,6 +2143,77 @@ button {
   cursor: pointer;
 }
 
+/* The day timeline (Local competition on the date page): shared axis and bar rules. */
+.axis {
+  position: relative;
+  height: 14px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.axis span {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bar-dist {
+  flex-shrink: 0;
+  font-weight: 500;
+  color: var(--ink2);
+}
+
+.bar-track {
+  position: relative;
+  height: 8px;
+  margin-top: 4px;
+  background: var(--track);
+  border-radius: 4px;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px;
+}
+
+.bar-overlap {
+  background: var(--ucla);
+}
+
+.bar-other {
+  background: var(--paleBlue);
+}
+
+.bar-legend {
+  font-size: 12px;
+  color: var(--ink2);
+}
+
+.source-note {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
 /* ---------- Share card and wordmark ---------- */
 
 .ff-wordmark {
@@ -3682,7 +3753,120 @@ button.back-link {
   margin-right: 0;
 }
 
-/* ---------- Night page ---------- */
+/* ---------- Date page ---------- */
+
+/* The rows (build notes 3, 4.3): title, crowd and tags, an activity line; time over venue on the right; "+ Stub it". */
+.date-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(15, 27, 45, 0.08);
+  overflow: hidden;
+}
+
+.date-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.date-list .date-row:last-child {
+  border-bottom: none;
+}
+
+.date-row.yours {
+  background: #f1f7fd;
+}
+
+.date-row-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.date-row-title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.date-row-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.date-row-line .crowd-figure {
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.date-row-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+  max-width: 44%;
+  text-align: right;
+}
+
+.date-row-time {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.date-row-venue {
+  font-size: 12.5px;
+  color: var(--ink2);
+}
+
+.stub-mini {
+  margin-top: 4px;
+  min-height: 28px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 999px;
+  background: var(--card);
+  box-shadow: inset 0 0 0 1.5px var(--dodger);
+  color: var(--dodger);
+  font-size: 12.5px;
+  font-weight: 800;
+}
+
+.stub-mini.on {
+  background: var(--dodger);
+  color: var(--card);
+  box-shadow: none;
+}
+
+.date-friends-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.date-friends-title {
+  padding: 0 4px;
+  font-weight: 700;
+}
+
+/* ---------- Date page (older rules) ---------- */
 .date-head {
   display: flex;
   flex-direction: column;
