@@ -899,6 +899,24 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "12:30"
   },
   {
+    "eventId": "2026-10-10-espn-sporting-kc-761855",
+    "metroId": "kansas-city",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "sporting-park",
+    "homeTeamId": "sporting-kc",
+    "home": {
+      "name": "Sporting KC",
+      "score": 3
+    },
+    "away": {
+      "name": "Portland",
+      "score": 3
+    },
+    "capturedAt": "2026-10-12T08:30:22.799Z"
+  },
+  {
     "eventId": "2026-10-03-espn-usc-football-401858478",
     "metroId": "la",
     "date": "2026-10-03",

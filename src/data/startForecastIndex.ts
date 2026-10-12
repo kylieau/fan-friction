@@ -13416,6 +13416,82 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "kansas-city",
+    "eventId": "2026-10-17-espn-sporting-kc-761884",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:30:22.188Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16531,
+      "low": 16019,
+      "high": 17510
+    }
+  },
+  {
+    "metroId": "kansas-city",
+    "eventId": "2026-10-18-espn-chiefs-401873006",
+    "date": "2026-10-18",
+    "start": "15:25",
+    "capturedAt": "2026-10-12T08:30:22.188Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 73437,
+      "low": 73417,
+      "high": 73466
+    }
+  },
+  {
+    "metroId": "kansas-city",
+    "eventId": "2026-10-24-espn-sporting-kc-761899",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:30:22.188Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16398,
+      "low": 15890,
+      "high": 17369
+    }
+  },
+  {
+    "metroId": "kansas-city",
+    "eventId": "2026-10-25-espn-kc-current-401854032",
+    "date": "2026-10-25",
+    "start": "16:00",
+    "capturedAt": "2026-10-12T08:30:22.188Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 11500,
+      "low": 11500,
+      "high": 11500
+    }
+  },
+  {
     "metroId": "la",
     "eventId": "2026-10-04-candlelight",
     "date": "2026-10-04",

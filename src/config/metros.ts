@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -208,6 +208,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Los_Angeles',
     center: [-115.172, 36.115],
     zoom: 11,
+  },
+  // Covered Oct 12, 2026 (docs/research/city-builds/kansas-city/kansas-city-venue-table-answer.md): bi-state Kansas City
+  // MO–KS core (Jackson, Clay, Platte, Wyandotte, Johnson). One frame holds downtown, the Truman Sports Complex and
+  // Village West; Bonner Springs, Independence and Swope Park sit near the edges. Lawrence and Columbia stay out.
+  'kansas-city': {
+    id: 'kansas-city', code: 'KC',
+    name: 'Kansas City',
+    timeZone: 'America/Chicago',
+    center: [-94.62, 39.08],
+    zoom: 9.4,
   },
 };
 

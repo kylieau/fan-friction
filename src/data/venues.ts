@@ -6755,6 +6755,380 @@ export const VENUES: Record<string, Venue> = {
     capacity: [],
     roof: 'open',
   },
+  // Kansas City (docs/research/city-builds/kansas-city/kansas-city-venue-table-answer.md, Oct 12, 2026).
+  // Bi-state core. No carShare overrides: the city-type figures are estimates, not measured splits.
+  // Coordinates are OpenStreetMap unless a comment says the room point was not separated.
+  'arrowhead-stadium': {
+    id: 'arrowhead-stadium',
+    metroId: 'kansas-city',
+    names: [
+      { name: 'Arrowhead Stadium' },
+      { name: 'GEHA Field at Arrowhead Stadium', from: '2021-01-01' },
+      { name: 'Kansas City Stadium', from: '2026-06-16' },
+      { name: 'Arrowhead Stadium', from: '2026-08-05' },
+    ],
+    location: [-94.4839993, 39.0489358],
+    capacity: [
+      {
+        seats: 76416,
+        setup: 'football',
+        note: 'Official/reported. 76,416 since 2010. FIFA 2026 config was 69,045 and is not the Chiefs figure. Concert capacity unknown. Source: https://blog.ticketmaster.com/step-inside-arrowhead-stadium-kansas-city/',
+      },
+    ],
+    roof: 'open',
+  },
+  'kauffman-stadium': {
+    id: 'kauffman-stadium',
+    metroId: 'kansas-city',
+    names: [{ name: 'Kauffman Stadium' }],
+    location: [-94.4804598, 39.0515081],
+    capacity: [
+      {
+        seats: 37903,
+        setup: 'baseball',
+        note: 'Official (MLB.com). Conflicts with Wikipedia 38,053 for 2026. Source: https://www.mlb.com/royals/ballpark/kauffman-stadium',
+      },
+    ],
+    roof: 'open',
+  },
+  'kansas-speedway': {
+    id: 'kansas-speedway',
+    metroId: 'kansas-city',
+    names: [{ name: 'Kansas Speedway' }],
+    location: [-94.8306045, 39.1158122],
+    capacity: [
+      {
+        seats: 48000,
+        setup: 'racing',
+        fromYear: 2019,
+        note: 'Reported grandstand seats as of 2019. A 48,000–75,000 range includes infield and camping, not seats. Source: https://en.wikipedia.org/wiki/Kansas_Speedway',
+      },
+    ],
+    roof: 'open',
+  },
+  'sporting-park': {
+    id: 'sporting-park',
+    metroId: 'kansas-city',
+    names: [
+      { name: "Children's Mercy Park" },
+      { name: 'Sporting Park', from: '2026-02-01' },
+    ],
+    location: [-94.8233504, 39.1216438],
+    capacity: [
+      {
+        seats: 18467,
+        setup: 'soccer',
+        note: 'Official design figure. MLS mode with standing is about 21,000 (reported), not stored as a second soccer row. Source: https://populous.com/projects/childrens-mercy-park?lang=es',
+      },
+      {
+        seats: 25000,
+        setup: 'concert',
+        note: 'Reported concert configuration. Source: https://en.wikipedia.org/wiki/Sporting_Park',
+      },
+    ],
+    roof: 'covered',
+  },
+  't-mobile-center': {
+    id: 't-mobile-center',
+    metroId: 'kansas-city',
+    names: [
+      { name: 'Sprint Center' },
+      { name: 'T-Mobile Center', from: '2020-01-01' },
+    ],
+    location: [-94.5799495, 39.0972952],
+    capacity: [
+      {
+        seats: 19252,
+        setup: 'concert',
+        note: 'Reported. Source: https://en.wikipedia.org/wiki/T-Mobile_Center',
+      },
+      {
+        seats: 18972,
+        setup: 'basketball',
+        note: 'Reported. An engineer sheet lists 18,500 seats as a round project figure. Source: https://en.wikipedia.org/wiki/T-Mobile_Center',
+      },
+      {
+        seats: 17544,
+        setup: 'hockey',
+        note: 'Reported. Source: https://en.wikipedia.org/wiki/T-Mobile_Center',
+      },
+      {
+        seats: 17297,
+        setup: 'football',
+        note: 'Reported arena-football configuration, not an NFL setup. Source: https://en.wikipedia.org/wiki/T-Mobile_Center',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'azura-amphitheater': {
+    id: 'azura-amphitheater',
+    metroId: 'kansas-city',
+    names: [
+      { name: 'Sandstone Amphitheater' },
+      { name: 'Providence Medical Center Amphitheater', from: '2016-01-01' },
+      { name: 'Azura Amphitheater', from: '2021-01-01' },
+    ],
+    location: [-94.8773837, 39.1138158],
+    capacity: [
+      {
+        seats: 18000,
+        setup: 'concert',
+        note: 'Official. About 3,100 reserved seats; the rest is lawn. Not 18,000 chairs. Source: https://www.azuracu.com/about/azura-amphitheater/',
+      },
+    ],
+    roof: 'open',
+  },
+  'cpkc-stadium': {
+    id: 'cpkc-stadium',
+    metroId: 'kansas-city',
+    names: [{ name: 'CPKC Stadium' }],
+    location: [-94.5665908, 39.1193789],
+    // The venue-table answer left the roof unconfirmed. Recorded open because the sources describe a soccer stadium, not an indoor arena.
+    capacity: [
+      {
+        seats: 11500,
+        setup: 'soccer',
+        note: 'Reported seated capacity. Expansion to 18,000 is financed and not built. Source: https://en.wikipedia.org/wiki/2026_Kansas_City_Current_season',
+      },
+    ],
+    roof: 'open',
+  },
+  'municipal-auditorium-arena': {
+    id: 'municipal-auditorium-arena',
+    metroId: 'kansas-city',
+    names: [{ name: 'Municipal Auditorium' }, { name: 'Municipal Auditorium Arena' }],
+    location: [-94.5864003, 39.0979007],
+    capacity: [
+      {
+        seats: 7316,
+        note: 'Official fixed seats. The 10,721 maximum adds risers and floor seats and is not used unless that setup is confirmed. Source: https://kcconvention.com/venue/municipal-arena/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'kansas-city-music-hall': {
+    id: 'kansas-city-music-hall',
+    metroId: 'kansas-city',
+    names: [{ name: 'Music Hall' }, { name: 'Kansas City Music Hall' }],
+    location: [-94.5867058, 39.0985136],
+    capacity: [
+      {
+        seats: 2363,
+        setup: 'concert',
+        note: 'Official. Same complex as Municipal Auditorium Arena; do not inherit the arena figure. Source: https://kcconvention.com/venue/music-hall/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'starlight-theatre': {
+    id: 'starlight-theatre',
+    metroId: 'kansas-city',
+    names: [{ name: 'Starlight Theatre' }],
+    location: [-94.5328099, 39.0075805],
+    capacity: [
+      {
+        seats: 7739,
+        setup: 'concert',
+        note: 'Official tech specs. Conflicts with 7,958 in secondary listings. Source: https://kcstarlight.com/?p=217',
+      },
+    ],
+    roof: 'open',
+  },
+  'starlight-cohen-stage': {
+    id: 'starlight-cohen-stage',
+    metroId: 'kansas-city',
+    names: [{ name: 'Starlight Cohen Community Stage' }, { name: 'Cohen Community Stage' }],
+    // OSM did not resolve the interior stage. Same campus point as the main theatre.
+    location: [-94.5328099, 39.0075805],
+    capacity: [
+      {
+        seats: 1200,
+        setup: 'concert',
+        note: 'Reported approximate (~1,200). Not on Starlight\'s tech page. Source: https://thrillzing.com/music-venues/starlight-theatre-kansas-city/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'legends-field': {
+    id: 'legends-field',
+    metroId: 'kansas-city',
+    names: [
+      { name: 'CommunityAmerica Ballpark' },
+      { name: 'T-Bones Stadium', from: '2003-01-01' },
+      { name: 'Field of Legends', from: '2021-01-01' },
+      { name: 'Legends Field', from: '2021-01-01' },
+    ],
+    location: [-94.8308572, 39.124496],
+    capacity: [
+      {
+        seats: 6537,
+        setup: 'baseball',
+        note: 'Reported fixed seats. Berm and standing push past 7,500; former soccer config was 10,385. Active figure is the fixed seats. Source: https://en.wikipedia.org/wiki/Legends_Field',
+      },
+    ],
+    roof: 'open',
+  },
+  'cable-dahmer-arena': {
+    id: 'cable-dahmer-arena',
+    metroId: 'kansas-city',
+    names: [
+      { name: 'Independence Events Center' },
+      { name: 'Cable Dahmer Arena', from: '2011-01-01' },
+    ],
+    location: [-94.3574967, 39.0398613],
+    capacity: [
+      {
+        seats: 5800,
+        setup: 'hockey',
+        note: 'Reported. Indoor soccer and concert configurations were not published. Source: https://www.kshb.com/news/local-news/missouri/jackson-county/mavericks-independence-agree-to-3-year-extension-at-cable-dahmer-arena',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'hale-arena': {
+    id: 'hale-arena',
+    metroId: 'kansas-city',
+    names: [{ name: 'Hale Arena' }],
+    location: [-94.6045545, 39.0900121],
+    capacity: [
+      {
+        seats: 5000,
+        note: 'Reported show-arena seats, one source, exactly at the friction line. American Royal is moving part of its calendar to Kansas City, Kansas. Source: https://www.thepitchkc.com/?p=3284',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'hy-vee-arena': {
+    id: 'hy-vee-arena',
+    metroId: 'kansas-city',
+    names: [
+      { name: 'Kemper Arena' },
+      { name: 'Mosaic Arena', from: '2017-01-01' },
+      { name: 'Hy-Vee Arena', from: '2018-01-01' },
+    ],
+    // OSM places the arena on Wyoming Street; the research address is 1800 Genessee, the next block.
+    location: [-94.6058218, 39.0917752],
+    capacity: [
+      {
+        seats: 3500,
+        setup: 'basketball',
+        note: 'Lower room after the floor split (5,000 upper / 3,500 lower). The upper bowl is exactly 5,000 and is not the active figure: research says mute unless one spectator event uses that bowl. Source: https://flatlandkc.org/news-issues/hy-vee-arena-opens-bringing-new-bounce-to-west-bottoms/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'midland-theatre': {
+    id: 'midland-theatre',
+    metroId: 'kansas-city',
+    names: [
+      { name: 'The Midland' },
+      { name: 'Arvest Bank Theatre at The Midland', from: '2013-09-13' },
+    ],
+    location: [-94.5837203, 39.0988674],
+    // The official site publishes a live-show range, 1,300–3,000, not one figure. Left unknown.
+    capacity: [],
+    roof: 'indoor',
+  },
+  'kauffman-center-muriel': {
+    id: 'kauffman-center-muriel',
+    metroId: 'kansas-city',
+    names: [{ name: 'Muriel Kauffman Theatre' }],
+    // OSM building point. The two halls were not separated.
+    location: [-94.587694, 39.0941587],
+    capacity: [
+      {
+        seats: 1800,
+        setup: 'concert',
+        note: 'Reported. Do not merge with Helzberg Hall. Source: https://kctoday.6amcity.com/kansas-citys-biggest-sports-and-entertainment-venues',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'kauffman-center-helzberg': {
+    id: 'kauffman-center-helzberg',
+    metroId: 'kansas-city',
+    names: [{ name: 'Helzberg Hall' }],
+    location: [-94.587694, 39.0941587],
+    capacity: [
+      {
+        seats: 1600,
+        setup: 'concert',
+        note: 'Reported. Separate room from Muriel Kauffman Theatre. Source: https://kctoday.6amcity.com/kansas-citys-biggest-sports-and-entertainment-venues',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'uptown-theater-kc': {
+    id: 'uptown-theater-kc',
+    metroId: 'kansas-city',
+    names: [{ name: 'Uptown Theater' }],
+    location: [-94.5910506, 39.0609236],
+    capacity: [
+      {
+        seats: 2400,
+        setup: 'concert',
+        note: 'Reported. The Encore Room is a separate smaller space and is not this room. Source: https://kctoday.6amcity.com/city-guide/play/live-music-venues-kansas-city',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'theatre-in-the-park': {
+    id: 'theatre-in-the-park',
+    metroId: 'kansas-city',
+    names: [{ name: 'Theatre in the Park' }, { name: 'The Theatre in the Park' }],
+    location: [-94.7878379, 38.9897673],
+    capacity: [
+      {
+        seats: 3000,
+        setup: 'concert',
+        note: 'Reported. Shawnee Mission Park; below the friction line. Source: https://kctoday.6amcity.com/kansas-citys-biggest-sports-and-entertainment-venues',
+      },
+    ],
+    roof: 'open',
+  },
+  'grinders-kc': {
+    id: 'grinders-kc',
+    metroId: 'kansas-city',
+    names: [{ name: 'Grinders' }],
+    // OSM resolved the restaurant, not a separate stage.
+    location: [-94.578132, 39.0914904],
+    capacity: [
+      {
+        seats: 2500,
+        setup: 'concert',
+        note: 'Reported outdoor stage. Source: https://kctoday.6amcity.com/city-guide/play/live-music-venues-kansas-city',
+      },
+    ],
+    roof: 'open',
+  },
+  'the-truman': {
+    id: 'the-truman',
+    metroId: 'kansas-city',
+    names: [{ name: 'The Truman' }],
+    location: [-94.5761415, 39.0952132],
+    capacity: [
+      {
+        seats: 1200,
+        setup: 'concert',
+        note: 'Reported. Opened September 2017. Source: https://kctoday.6amcity.com/city-guide/play/live-music-venues-kansas-city',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'folly-theater': {
+    id: 'folly-theater',
+    metroId: 'kansas-city',
+    names: [{ name: 'Folly Theatre' }, { name: 'Folly Theater' }],
+    location: [-94.587292, 39.1003099],
+    capacity: [
+      {
+        seats: 1006,
+        setup: 'concert',
+        note: 'Reported after a renovation removed seats. Conflicts with 1,078 on another page of the same guide. Source: https://kctoday.6amcity.com/kansas-citys-biggest-sports-and-entertainment-venues',
+      },
+    ],
+    roof: 'indoor',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

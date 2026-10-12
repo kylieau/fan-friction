@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "metroName": "Kansas City",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T08:30:22.188Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-17-espn-sporting-kc-761884",
+      "metroId": "kansas-city",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Sporting KC vs. Salt Lake",
+      "place": {
+        "type": "venue",
+        "venueId": "sporting-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "sporting-kc",
+        "away": "salt-lake"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16531,
+        "low": 16019,
+        "high": 17510,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 23 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-chiefs-401873006",
+      "metroId": "kansas-city",
+      "date": "2026-10-18",
+      "start": "15:25",
+      "kind": "game",
+      "title": "Chiefs vs. Chargers",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "arrowhead-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "chiefs",
+        "away": "chargers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 73437,
+        "low": 73417,
+        "high": 73466,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-sporting-kc-761899",
+      "metroId": "kansas-city",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Sporting KC vs. Austin",
+      "place": {
+        "type": "venue",
+        "venueId": "sporting-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "sporting-kc",
+        "away": "austin"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16398,
+        "low": 15890,
+        "high": 17369,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 23 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-kc-current-401854032",
+      "metroId": "kansas-city",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Current vs. Washington Spirit",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "cpkc-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "kc-current",
+        "away": "washington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11500,
+        "low": 11500,
+        "high": 11500,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 4 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-17-espn-sporting-kc-761884",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16531,
+        "low": 16019,
+        "high": 17510
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-chiefs-401873006",
+      "date": "2026-10-18",
+      "start": "15:25",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 73437,
+        "low": 73417,
+        "high": 73466
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-sporting-kc-761899",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16398,
+        "low": 15890,
+        "high": 17369
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-kc-current-401854032",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11500,
+        "low": 11500,
+        "high": 11500
+      }
+    }
+  ]
+}

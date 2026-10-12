@@ -118,6 +118,10 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '2439', metroId: 'las-vegas', teamId: 'unlv-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '2439', metroId: 'las-vegas', teamId: 'unlv-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '2439', metroId: 'las-vegas', teamId: 'unlv-wbb', sport: 'basketball' },
+  // Kansas City (docs/research/city-builds/kansas-city/); ids and home venue names checked against the feed Oct 12, 2026.
+  { path: 'football/nfl', espnId: '12', metroId: 'kansas-city', teamId: 'chiefs', sport: 'football' },
+  { path: 'soccer/usa.1', espnId: '186', metroId: 'kansas-city', teamId: 'sporting-kc', sport: 'soccer' },
+  { path: 'soccer/usa.nwsl', espnId: '20907', metroId: 'kansas-city', teamId: 'kc-current', sport: 'soccer' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
@@ -510,6 +514,14 @@ const VENUE_BY_NAME: Record<string, string> = {
   'thomas and mack center': 'thomas-mack-center',
   "lee's family forum": 'lees-family-forum',
   'cashman field': 'cashman-field',
+  // Kansas City, as ESPN writes them (2025 still says Children's Mercy Park; 2026 says Sporting Park).
+  'arrowhead stadium': 'arrowhead-stadium',
+  'geha field at arrowhead stadium': 'arrowhead-stadium',
+  'kansas city stadium': 'arrowhead-stadium',
+  'kauffman stadium': 'kauffman-stadium',
+  "children's mercy park": 'sporting-park',
+  'sporting park': 'sporting-park',
+  'cpkc stadium': 'cpkc-stadium',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

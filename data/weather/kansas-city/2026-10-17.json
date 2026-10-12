@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "date": "2026-10-17",
+  "rows": [
+    {
+      "metroId": "kansas-city",
+      "venueId": "sporting-park",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:29:37.454Z",
+      "feelsLikeF": 41.4,
+      "tempF": 47.9,
+      "humidity": 59,
+      "windMph": 7,
+      "uvIndex": 0.1,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 14,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "kansas-city",
+      "venueId": "sporting-park",
+      "date": "2026-10-17",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:29:37.454Z",
+      "feelsLikeF": 40.1,
+      "tempF": 46.4,
+      "humidity": 62,
+      "windMph": 6.8,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "kansas-city",
+      "venueId": "sporting-park",
+      "date": "2026-10-17",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:29:37.454Z",
+      "feelsLikeF": 39.1,
+      "tempF": 45.5,
+      "humidity": 63,
+      "windMph": 6.8,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "kansas-city",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:29:37.454Z",
+      "feelsLikeF": 45.7,
+      "tempF": 51.6,
+      "humidity": 52,
+      "windMph": 5.7,
+      "uvIndex": 0.05,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 13,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "kansas-city",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:29:37.454Z",
+      "feelsLikeHighF": 51.6,
+      "feelsLikeLowF": 34.7,
+      "code": 0,
+      "precipProbability": 1,
+      "precipMm": 0
+    }
+  ]
+}
