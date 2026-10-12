@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-titans-401872984",
+      "metroId": "nashville",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nissan-stadium",
+      "homeTeamId": "titans",
+      "home": {
+        "name": "Titans",
+        "score": 3
+      },
+      "away": {
+        "name": "Texans",
+        "score": 26
+      },
+      "attendance": 52097,
+      "capturedAt": "2026-10-12T08:13:58.281Z",
+      "duration": {
+        "minutes": 171,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

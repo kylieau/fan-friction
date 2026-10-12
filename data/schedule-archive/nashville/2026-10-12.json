@@ -1,0 +1,375 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "metroName": "Nashville",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T08:14:00.517Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 10
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-13-espn-mtsu-football-401871067",
+      "metroId": "nashville",
+      "date": "2026-10-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "MTSU vs. Delaware",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "floyd-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "mtsu-football",
+        "away": "delaware"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-13-espn-predators-401892499",
+      "metroId": "nashville",
+      "date": "2026-10-13",
+      "start": "19:45",
+      "kind": "game",
+      "title": "Predators vs. Golden Knights",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-14-espn-nashville-sc-761866",
+      "metroId": "nashville",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Nashville SC vs. Kansas City",
+      "place": {
+        "type": "venue",
+        "venueId": "geodis-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "nashville-sc",
+        "away": "kansas-city"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-15-espn-predators-401892513",
+      "metroId": "nashville",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Sharks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "sharks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-tsu-football-401867968",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Tennessee St vs. Morgan St",
+      "place": {
+        "type": "venue",
+        "venueId": "nissan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tsu-football",
+        "away": "morgan-st"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-vanderbilt-football-401856726",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Vanderbilt vs. Arkansas",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "firstbank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "vanderbilt-football",
+        "away": "arkansas"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-espn-predators-401892529",
+      "metroId": "nashville",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Blues",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "blues"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-tsu-football-401868174",
+      "metroId": "nashville",
+      "date": "2026-10-24",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Tennessee St vs. Charleston So",
+      "place": {
+        "type": "venue",
+        "venueId": "nissan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tsu-football",
+        "away": "charleston-so"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-25-espn-titans-401873013",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Titans vs. Browns",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "nissan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "titans",
+        "away": "browns"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-25-espn-predators-401892580",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Avalanche",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-13-espn-mtsu-football-401871067",
+      "date": "2026-10-13",
+      "start": "18:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "Predators vs. Golden Knights 31 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-13-espn-predators-401892499",
+      "date": "2026-10-13",
+      "start": "19:45",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "MTSU vs. Delaware 31 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-nashville-sc-761866",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-espn-predators-401892513",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-tsu-football-401867968",
+      "date": "2026-10-17",
+      "start": "17:30",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Vanderbilt vs. Arkansas 2.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-vanderbilt-football-401856726",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Tennessee St vs. Morgan St 2.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-predators-401892529",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Tennessee St vs. Morgan St and Vanderbilt vs. Arkansas 0.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-tsu-football-401868174",
+      "date": "2026-10-24",
+      "start": "14:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-titans-401873013",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-predators-401892580",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Titans vs. Browns 0.7 mi away, earlier in the day.",
+        "method": "formula"
+      }
+    }
+  ]
+}

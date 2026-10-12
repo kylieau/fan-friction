@@ -1,0 +1,250 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "teamId": "tsu-football",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "tsu-football",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "17:00",
+      "opponent": "Bethune",
+      "venueId": "nissan-stadium",
+      "attendance": 22231,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2022,
+      "date": "2022-10-22",
+      "start": "14:00",
+      "opponent": "E Illinois",
+      "venueId": "nissan-stadium",
+      "attendance": 6237,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "17:00",
+      "opponent": "SE Missouri St",
+      "venueId": "nissan-stadium",
+      "attendance": 6369,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "16:00",
+      "opponent": "UT Martin",
+      "venueId": "nissan-stadium",
+      "attendance": 2665,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "17:00",
+      "opponent": "Gardner-Webb",
+      "venueId": "nissan-stadium",
+      "attendance": 3869,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2023,
+      "date": "2023-10-14",
+      "start": "17:00",
+      "opponent": "Norfolk St",
+      "venueId": "nissan-stadium",
+      "attendance": 13975,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "14:00",
+      "opponent": "Lincoln (CA)",
+      "venueId": "nissan-stadium",
+      "attendance": 2727,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "14:00",
+      "opponent": "Lindenwood",
+      "venueId": "nissan-stadium",
+      "attendance": 3879,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "17:00",
+      "opponent": "Miss Valley St",
+      "venueId": "nissan-stadium",
+      "attendance": 8124,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "17:00",
+      "opponent": "Charleston So",
+      "venueId": "nissan-stadium",
+      "attendance": 1853,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "17:00",
+      "opponent": "E Illinois",
+      "venueId": "nissan-stadium",
+      "attendance": 7875,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2024,
+      "date": "2024-11-02",
+      "start": "17:00",
+      "opponent": "UT Martin",
+      "venueId": "nissan-stadium",
+      "attendance": 2845,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "15:30",
+      "opponent": "SE Missouri",
+      "venueId": "nissan-stadium",
+      "attendance": 1536,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "15:30",
+      "opponent": "NC A&T",
+      "venueId": "nissan-stadium",
+      "attendance": 8865,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "13:30",
+      "opponent": "N Dakota St",
+      "venueId": "nissan-stadium",
+      "attendance": 8569,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "15:30",
+      "opponent": "Alabama A&M",
+      "venueId": "nissan-stadium",
+      "attendance": 10208,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "15:30",
+      "opponent": "Tennessee Tech",
+      "venueId": "nissan-stadium",
+      "attendance": 2137,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "16:30",
+      "opponent": "Howard",
+      "venueId": "nissan-stadium",
+      "attendance": 14056,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "15:30",
+      "opponent": "Lindenwood",
+      "venueId": "nissan-stadium",
+      "attendance": 1006,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "13:30",
+      "opponent": "Gardner-Webb",
+      "venueId": "nissan-stadium",
+      "attendance": 1667,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "19:30",
+      "opponent": "Jackson St",
+      "venueId": "nissan-stadium",
+      "attendance": 32467,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tsu-football",
+      "season": 2026,
+      "date": "2026-10-10",
+      "start": "14:30",
+      "opponent": "UT Martin",
+      "venueId": "nissan-stadium",
+      "attendance": 670,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

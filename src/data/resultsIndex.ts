@@ -1160,6 +1160,78 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "16:15"
   },
   {
+    "eventId": "2026-10-10-espn-tsu-football-401868198",
+    "metroId": "nashville",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "nissan-stadium",
+    "homeTeamId": "tsu-football",
+    "home": {
+      "name": "Tennessee St",
+      "score": 28
+    },
+    "away": {
+      "name": "UT Martin",
+      "score": 42
+    },
+    "attendance": 670,
+    "capturedAt": "2026-10-12T08:13:58.281Z",
+    "duration": {
+      "minutes": 201,
+      "kind": "estimated"
+    },
+    "startedAt": "15:31"
+  },
+  {
+    "eventId": "2026-10-10-espn-vanderbilt-football-401856718",
+    "metroId": "nashville",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "firstbank-stadium",
+    "homeTeamId": "vanderbilt-football",
+    "home": {
+      "name": "Vanderbilt",
+      "score": 17
+    },
+    "away": {
+      "name": "Ole Miss",
+      "score": 52
+    },
+    "attendance": 35000,
+    "capturedAt": "2026-10-12T08:13:58.281Z",
+    "duration": {
+      "minutes": 222,
+      "kind": "estimated"
+    },
+    "startedAt": "15:33"
+  },
+  {
+    "eventId": "2026-10-11-espn-titans-401872984",
+    "metroId": "nashville",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "nissan-stadium",
+    "homeTeamId": "titans",
+    "home": {
+      "name": "Titans",
+      "score": 3
+    },
+    "away": {
+      "name": "Texans",
+      "score": 26
+    },
+    "attendance": 52097,
+    "capturedAt": "2026-10-12T08:13:58.281Z",
+    "duration": {
+      "minutes": 171,
+      "kind": "estimated"
+    },
+    "startedAt": "13:02"
+  },
+  {
     "eventId": "2026-10-03-espn-columbia-football-401867819",
     "metroId": "new-york",
     "date": "2026-10-03",
