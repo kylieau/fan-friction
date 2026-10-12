@@ -106,7 +106,7 @@ export const METROS: Record<string, Metro> = {
   // Philadelphia–Camden–Wilmington MSA core (Oct 12, 2026; docs/research/city-builds/philadelphia/philadelphia-venue-table-answer.md).
   // Frames the Sports Complex, University City, North Broad, Chester and Camden on one phone screen; Villanova and edge-tier Delaware rooms sit off the first view.
   philadelphia: {
-    id: 'philadelphia',
+    id: 'philadelphia', code: 'PHI',
     name: 'Philadelphia',
     timeZone: 'America/New_York',
     center: [-75.17, 39.95],

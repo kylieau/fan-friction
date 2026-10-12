@@ -41721,7 +41721,6 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "low": 0.663,
     "high": 1.014,
     "games": 41,
-<<<<<<< HEAD
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
     "basis": "league"
   },
@@ -41890,8 +41889,6 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "low": 0.665,
     "high": 1.013,
     "games": 42,
-=======
->>>>>>> b5e4c5b (Restore package-lock; keep Philadelphia-only expected-draw deltas)
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
     "basis": "league"
   }
