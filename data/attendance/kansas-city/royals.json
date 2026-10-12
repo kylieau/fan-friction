@@ -1,0 +1,7765 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "teamId": "royals",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-07",
+      "start": "15:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 28459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "15:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 17103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 20165,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-11",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 8971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-14",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 9595,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 16720,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": "15:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 19022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-17",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 11084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-19",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 10003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-20",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 8969,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-21",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 15540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 16460,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 23965,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 19706,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-03",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 18788,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-04",
+      "start": "12:10",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 12774,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-16",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 12441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 9168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "18:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 11684,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-18",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 13504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-19",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 11784,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-20",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 25337,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-21",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 17893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 15482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-03",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 22516,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "15:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 14686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-05",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 12776,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-06",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 10889,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-07",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 15103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-08",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 12196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-09",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 15594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "19:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 17650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "15:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 15134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 15037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-24",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 25077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-25",
+      "start": "15:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 13543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-26",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 24820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-27",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 12876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "19:10",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 19593,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 11391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-08",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 19611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-09",
+      "start": "15:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 17024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-10",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 13282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-11",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 11084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-11",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 16202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 14451,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 11016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 22119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 20668,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 12336,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-25",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 16616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 20834,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 12596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-04",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 18970,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-05",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 21246,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-06",
+      "start": "18:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 19136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-07",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 14949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": null,
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 12700,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 15463,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 10009,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "kauffman-stadium",
+      "attendance": 24333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "18:10",
+      "opponent": "Dodgers",
+      "venueId": "kauffman-stadium",
+      "attendance": 29689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "kauffman-stadium",
+      "attendance": 18481,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-22",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 8471,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "kauffman-stadium",
+      "attendance": 12427,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-24",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "kauffman-stadium",
+      "attendance": 10531,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "kauffman-stadium",
+      "attendance": 16479,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "18:10",
+      "opponent": "Padres",
+      "venueId": "kauffman-stadium",
+      "attendance": 22232,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "kauffman-stadium",
+      "attendance": 12584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-05",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 11511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-06",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 12580,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-07",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 13394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-09",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 14556,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "15:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 15929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-11",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 13150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 84
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-20",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 14508,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-21",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 13952,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-22",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 12951,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-23",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 13615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "18:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 25237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2022,
+      "date": "2022-09-25",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 18350,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 90
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-03-30",
+      "start": "15:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 38351,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-01",
+      "start": "15:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 16633,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-02",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 14589,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-03",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 10810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-04",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 12123,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-05",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 10015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-06",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 10401,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "kauffman-stadium",
+      "attendance": 20186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "15:10",
+      "opponent": "Braves",
+      "venueId": "kauffman-stadium",
+      "attendance": 17644,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "kauffman-stadium",
+      "attendance": 22040,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-17",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 11068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-18",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 12118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-04-19",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 10388,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 10487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 10362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 11514,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 15966,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "18:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 29549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 12740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-08",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 9814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 11258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 12187,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-11",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 20321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-22",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 14229,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 13443,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 11898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "kauffman-stadium",
+      "attendance": 15878,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "15:10",
+      "opponent": "Nationals",
+      "venueId": "kauffman-stadium",
+      "attendance": 19130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "kauffman-stadium",
+      "attendance": 18319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "kauffman-stadium",
+      "attendance": 23482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "15:10",
+      "opponent": "Rockies",
+      "venueId": "kauffman-stadium",
+      "attendance": 16492,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "kauffman-stadium",
+      "attendance": 13128,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-12",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "kauffman-stadium",
+      "attendance": 20500,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "kauffman-stadium",
+      "attendance": 16931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": "19:10",
+      "opponent": "Reds",
+      "venueId": "kauffman-stadium",
+      "attendance": 13731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 19834,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "15:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 21056,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "13:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 24385,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-27",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 15718,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 11978,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 12414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "kauffman-stadium",
+      "attendance": 22006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "18:15",
+      "opponent": "Dodgers",
+      "venueId": "kauffman-stadium",
+      "attendance": 21004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "kauffman-stadium",
+      "attendance": 19058,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 15428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 15428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "18:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 18052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 15632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-17",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 19440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-18",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 18448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-19",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 17903,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 11478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 23022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "18:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 20643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 13752,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "kauffman-stadium",
+      "attendance": 16140,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "kauffman-stadium",
+      "attendance": 13630,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-03",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "kauffman-stadium",
+      "attendance": 11926,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 26271,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "18:10",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 37016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-14",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 11878,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 12759,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 11091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-17",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 10875,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-28",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "kauffman-stadium",
+      "attendance": 11610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 91
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "kauffman-stadium",
+      "attendance": 11233,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 92
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-08-30",
+      "start": "19:10",
+      "opponent": "Pirates",
+      "venueId": "kauffman-stadium",
+      "attendance": 10592,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 93
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 15470,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 94
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "18:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 20527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 94
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 15785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 95
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-04",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 10646,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 96
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 10395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 96
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 11046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 96
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-15",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 15465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 101
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "18:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 19557,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 101
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-17",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 15311,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 101
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-18",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 9736,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 102
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 15254,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 102
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 12162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 102
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-29",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 18374,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 105
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "18:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 22665,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 105
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": "14:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 20662,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 106
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-03-28",
+      "start": "15:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 38775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-03-30",
+      "start": "15:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 19461,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-03-31",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 13005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-04",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 10863,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 10592,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "18:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 15463,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 14251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-09",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 11926,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-10",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 10536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-11",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 10280,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 17073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "18:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 23118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 18044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-22",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 10004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 11373,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 10282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-04-25",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 9740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 25690,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "18:10",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 26002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 20613,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-06",
+      "start": "18:10",
+      "opponent": "Brewers",
+      "venueId": "kauffman-stadium",
+      "attendance": 10005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "kauffman-stadium",
+      "attendance": 14657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "13:10",
+      "opponent": "Brewers",
+      "venueId": "kauffman-stadium",
+      "attendance": 22430,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 24585,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "18:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 22014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 20035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-20",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 12986,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 14031,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 15004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "kauffman-stadium",
+      "attendance": 30006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "15:10",
+      "opponent": "Padres",
+      "venueId": "kauffman-stadium",
+      "attendance": 25266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "kauffman-stadium",
+      "attendance": 21825,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "19:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 25178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "15:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 18351,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 20926,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-10",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 24038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 22437,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "19:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 25132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 21875,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-24",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "kauffman-stadium",
+      "attendance": 16817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "kauffman-stadium",
+      "attendance": 16119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "kauffman-stadium",
+      "attendance": 14132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 23340,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 20691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "15:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 24153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 27691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-02",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 16865,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-03",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 23268,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "19:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 28358,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-19",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 26693,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "18:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 27545,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-21",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 22226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-22",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "kauffman-stadium",
+      "attendance": 16275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "kauffman-stadium",
+      "attendance": 21993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "19:10",
+      "opponent": "D-backs",
+      "venueId": "kauffman-stadium",
+      "attendance": 15931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "kauffman-stadium",
+      "attendance": 36351,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "18:10",
+      "opponent": "Cubs",
+      "venueId": "kauffman-stadium",
+      "attendance": 31784,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "kauffman-stadium",
+      "attendance": 24839,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-05",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 20087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 21386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": "19:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 16550,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "19:10",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 34066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "18:10",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 36799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-19",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 15091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 16310,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "19:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 13009,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "kauffman-stadium",
+      "attendance": 25491,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "18:10",
+      "opponent": "Phillies",
+      "venueId": "kauffman-stadium",
+      "attendance": 27002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "13:10",
+      "opponent": "Phillies",
+      "venueId": "kauffman-stadium",
+      "attendance": 18193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-02",
+      "start": "15:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 30612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 14813,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 14094,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 19484,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:15",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 29160,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 26477,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-16",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 18920,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-17",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 21086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-18",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 16279,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-20",
+      "start": "19:10",
+      "opponent": "Giants",
+      "venueId": "kauffman-stadium",
+      "attendance": 22117,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "16:10",
+      "opponent": "Giants",
+      "venueId": "kauffman-stadium",
+      "attendance": 24189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-09-22",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "kauffman-stadium",
+      "attendance": 24189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-10-09",
+      "start": "18:08",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 40312,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2024,
+      "date": "2024-10-10",
+      "start": "19:08",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 39012,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-03-27",
+      "start": "15:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 39393,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-03-29",
+      "start": "15:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 22019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-03-30",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 15414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sluggerrr Plush Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 14196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bark at the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "15:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 14383,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bring Out The Blue T-Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 19098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Collector Card Series 1 of 3 Bobblehead: Vinnie Pasquantino Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-07",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 12041,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 13008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 13156,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-10",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 14730,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "kauffman-stadium",
+      "attendance": 14567,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Trapper Hat Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "kauffman-stadium",
+      "attendance": 15601,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": null,
+      "opponent": "Rockies",
+      "venueId": "kauffman-stadium",
+      "attendance": 15601,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 19003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "18:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 25378,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2015 Champs Bobblehead: Mike Moustakas Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "MIAA Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 21171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "UMKC Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Scout Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-05",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 12529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 15968,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bark at the Park - THEME TICKETS SOLD OUT"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 12328,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Asian American and Pacific Islander Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 25386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "School Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 30348,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Nurses Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Brain Health Awareness Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "18:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 29460,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bring Out The Blue T-Shirt Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 25785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Mother's Day Brunch - BRUNCH TICKETS SOLD OUT"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 28104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "1985 World Series Championship Team Celebration"
+        },
+        {
+          "type": "Theme Days",
+          "name": "George Brett & Bret Saberhagen 1985 Championship Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "18:10",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 36134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "2015 World Series Championship Team Celebration"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2015 World Series Replica Ring Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 25695,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-26",
+      "start": "15:10",
+      "opponent": "Reds",
+      "venueId": "kauffman-stadium",
+      "attendance": 18002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "kauffman-stadium",
+      "attendance": 17383,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pasquatch Necklace Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "kauffman-stadium",
+      "attendance": 15430,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 28785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Big Slick"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "15:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 35005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mike Moustakas Retirement"
+        },
+        {
+          "type": "Theme Days",
+          "name": "K-State Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Faith Day Featuring Maverick City Music"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 24474,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dia De Los Ninos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Girl Scout Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 30017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 21182,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Men's Cancer Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 23412,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "19:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 29586,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2015 Champs Bobblehead: Alex Gordon Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alex Gordon Hall of Fame Induction Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "15:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 29034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bobby's Record-Breaker Bobblehead Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ladies Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 27272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Father's Day Tailgate"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 22951,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Cooler Bag Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 20649,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pickleball Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "13:10",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 19619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "kauffman-stadium",
+      "attendance": 35187,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Space Camper Koolie Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Space Camper Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "15:10",
+      "opponent": "Dodgers",
+      "venueId": "kauffman-stadium",
+      "attendance": 36578,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bring Out The Blue T-Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "kauffman-stadium",
+      "attendance": 28671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Monarchs Pin Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Salute to the Negro Leagues"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-07",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "kauffman-stadium",
+      "attendance": 18614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "kauffman-stadium",
+      "attendance": 22855,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Collector Card Series 2 of 3 Bobblehead: Cole Ragans Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "kauffman-stadium",
+      "attendance": 18398,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Superman™ Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:10",
+      "opponent": "Mets",
+      "venueId": "kauffman-stadium",
+      "attendance": 28268,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2015 Champs Bobblehead: Eric Hosmer Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Heart Health Awareness Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "15:10",
+      "opponent": "Mets",
+      "venueId": "kauffman-stadium",
+      "attendance": 24620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Military Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "kauffman-stadium",
+      "attendance": 22121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Mizzou Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 21794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bring Out The Blue T-Shirt Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Grateful Dead Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "13:40",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 21794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bring Out The Blue T-Shirt Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Grateful Dead Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:15",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 25278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Flo Rida Postgame Concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 16590,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Yacht Rock Pre-Game Party"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-28",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "kauffman-stadium",
+      "attendance": 23850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "1985 Championship Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-29",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "kauffman-stadium",
+      "attendance": 22562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "90s Royals Retro Viewer Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-07-30",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "kauffman-stadium",
+      "attendance": 17726,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2000s Trucker Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-11",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "kauffman-stadium",
+      "attendance": 17568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "kauffman-stadium",
+      "attendance": 19334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Soccer Jersey Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "KC Current Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "kauffman-stadium",
+      "attendance": 13669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 20829,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bring Out The Blue T-Shirt Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ag Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "18:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 28355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Teachers Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ty Myers Postgame Concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 15114,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Biker Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-18",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 12747,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Food Thermos Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 14176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Lunch Box Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 14312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Water Bottle Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Women's Cancer Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-21",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 13527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 34494,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Collector Card Series 3 of 3 Bobblehead: Bobby Witt Jr. Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Nebraska Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:15",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 26237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hawaiian Shirt Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Margaritaville Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 23689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pasquatch Handmade by Robots Vinyl Figure Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-02",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 13685,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 15924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jewish Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-04",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 17352,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-05",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 16255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "The Pigeon Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "18:15",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 21771,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Viva Los Royals"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 26505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sluggerrr Youth Shorts Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sluggerrr's Birthday Bash"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 20017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bark at the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-17",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 19127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Tabletop RPG Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-18",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 18137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-19",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 26459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2015 Champs Bobblehead: Salvador Perez Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Futures Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Transplant Awareness Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "18:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 25774,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bring Out The Blue T-Shirt Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2025,
+      "date": "2025-09-21",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 32936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Italian Heritage Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-03-30",
+      "start": "15:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 39320,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 10870,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bark at the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-02",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 11694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "kauffman-stadium",
+      "attendance": 12732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "13:10",
+      "opponent": "Brewers",
+      "venueId": "kauffman-stadium",
+      "attendance": 17055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "18:10",
+      "opponent": "Brewers",
+      "venueId": "kauffman-stadium",
+      "attendance": 12732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "13:10",
+      "opponent": "Brewers",
+      "venueId": "kauffman-stadium",
+      "attendance": 14584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-09",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 13001,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 12907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Flag Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "15:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 16214,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 20552,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Bobby Mitt Jr. Youth Sliding Glove Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "PAW Patrol™ Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Scout Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-20",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 13589,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Grateful Dead Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 15164,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "kauffman-stadium",
+      "attendance": 14175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Royals x Space Camper Color-Changing Sunglasses Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Space Camper Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 19079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "18:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 22152,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Royal-Tees Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "UMKC Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "15:10",
+      "opponent": "Angels",
+      "venueId": "kauffman-stadium",
+      "attendance": 11579,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Día de los Niños"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-04",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 16434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Caglianone Blazin' Bat Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 13102,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 13039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bark at the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-07",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 24892,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "School Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 29374,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Rock, Paper, Scissors Bobblehead Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Nurses Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "18:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 26724,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Nickelodeon Night Slime Jersey Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Nurses Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "18:20",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 17295,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Nurses Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-18",
+      "start": "18:10",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 15531,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Lights Out Lucas Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 14047,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 14091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Stroke Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 18842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "15:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 25544,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Royal-Tees Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Star Wars™ Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "kauffman-stadium",
+      "attendance": 25014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-25",
+      "start": "14:40",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 26162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Stainless Steel Splash Cup Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 21947,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "The Pasquatch Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Saxsquatch Postgame Concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "kauffman-stadium",
+      "attendance": 17007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Brain Health Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 25075,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 16015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Peanut Free Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-11",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "kauffman-stadium",
+      "attendance": 17622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "19:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 25672,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Beach Towel Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Teachers Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "18:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 17881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Royal-Tees Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "13:10",
+      "opponent": "Astros",
+      "venueId": "kauffman-stadium",
+      "attendance": 23730,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Girl Scout Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Mizzou Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 18363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "19:15",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 27323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Scarf Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Men's Cancer Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "kauffman-stadium",
+      "attendance": 28309,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "KC Monarchs Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Salute to the Negro Leagues"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 15014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sluggerrr's Gym Tank Top Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 13798,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Here Comes the Bloom Hawaiian Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-02",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "kauffman-stadium",
+      "attendance": 16814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Armed Forces Night Thermo Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Armed Forces Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Extravaganza"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "19:10",
+      "opponent": "Phillies",
+      "venueId": "kauffman-stadium",
+      "attendance": 30459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Red, White & Bobby Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "America 250 Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Spectacular"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "14:00",
+      "opponent": "Phillies",
+      "venueId": "kauffman-stadium",
+      "attendance": 14891,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "John Wathan Royals Hall of Fame Induction Pregame Ceremony"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-06",
+      "start": "13:10",
+      "opponent": "Phillies",
+      "venueId": "kauffman-stadium",
+      "attendance": 13496,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "19:10",
+      "opponent": "Padres",
+      "venueId": "kauffman-stadium",
+      "attendance": 25884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Big Bobby Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "K-State Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Heart Health Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "15:10",
+      "opponent": "Padres",
+      "venueId": "kauffman-stadium",
+      "attendance": 23347,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Big Bobby Bobblehead Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Nebraska Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "kauffman-stadium",
+      "attendance": 18383,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Big Bobby Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-20",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "kauffman-stadium",
+      "attendance": 16411,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Peanut Free Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "kauffman-stadium",
+      "attendance": 25175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Maikel's Big Time Bat Flip Bobblehead Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "kauffman-stadium",
+      "attendance": 14606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 20177,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Salvy's Record-Breaking Home Run Poster Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Salvy's Home Run Record Pregame Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 13439,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ag Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "kauffman-stadium",
+      "attendance": 16036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "kauffman-stadium",
+      "attendance": 26083,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Women's Cancer Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "18:10",
+      "opponent": "Cubs",
+      "venueId": "kauffman-stadium",
+      "attendance": 32326,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Royal-Tees Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "KU Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "kauffman-stadium",
+      "attendance": 24225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-17",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 12438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 12009,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 11579,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-20",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "kauffman-stadium",
+      "attendance": 11867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 29535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "City Connect Crossbody Bag Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Faith Night ft. TobyMac Postgame Concert"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "18:15",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 23156,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "George Brett Alternate Jersey Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ladies Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Peanut Free Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "kauffman-stadium",
+      "attendance": 21269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Elephant & Piggie Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "kauffman-stadium",
+      "attendance": 13330,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dollar Dog Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Harry Potter™ Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "kauffman-stadium",
+      "attendance": 10913,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "kauffman-stadium",
+      "attendance": 10803,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 18218,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "KPop Demon Hunters Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 20547,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Royal-Tees Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "kauffman-stadium",
+      "attendance": 17518,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Big Bling Birthday Bash Chain Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sluggerrr's Birthday Bash"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Peanut Free Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-07",
+      "start": "13:10",
+      "opponent": "D-backs",
+      "venueId": "kauffman-stadium",
+      "attendance": 18912,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Iced Out Hockey Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "kauffman-stadium",
+      "attendance": 13361,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jewish Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "18:40",
+      "opponent": "D-backs",
+      "venueId": "kauffman-stadium",
+      "attendance": 15369,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-22",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 15785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 89
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-23",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 17114,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 90
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Bark at the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-24",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "kauffman-stadium",
+      "attendance": 15592,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 90
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 26034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 91
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Salvador Perez City Connect Bobblehead Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Viva Los Royals"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Futures Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "18:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 24656,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 92
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jersey Jacket Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Garage Sale"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "royals",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "14:10",
+      "opponent": "Guardians",
+      "venueId": "kauffman-stadium",
+      "attendance": 22827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 93
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Italian Heritage Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fun Run"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday 4-Pack"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Garage Sale"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

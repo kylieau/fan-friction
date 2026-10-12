@@ -130,6 +130,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'estadio-alfredo-harp-helu', 'gimnasio-juan-de-la-barrera', 'arena-mexico', 'estadio-wilfrido-massieu', 'estadio-ciudad-de-los-deportes',
   // Las Vegas rooms whose tenants have no league feed (NASCAR, indoor football, lacrosse, rodeo). Feed games at the same building still win.
   'las-vegas-motor-speedway', 'lvms-dirt-track', 'lvms-bullring', 'lees-family-forum', 'orleans-arena', 'thomas-mack-center', 'cashman-field',
+  // Kansas City rooms with no league schedule in MLB or ESPN (ECHL, MASL, NASCAR, Big 12/PBR, NAIA, Monarchs).
+  'cable-dahmer-arena', 'kansas-speedway', 't-mobile-center', 'municipal-auditorium-arena', 'legends-field',
 ]);
 
 function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {

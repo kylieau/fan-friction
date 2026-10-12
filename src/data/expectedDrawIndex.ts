@@ -39573,6 +39573,678 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 34118,
     "games": 3,
     "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 73570,
+    "low": 73550,
+    "high": 73611,
+    "games": 20,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 73558,
+    "low": 73540,
+    "high": 73585,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 73427,
+    "low": 73187,
+    "high": 73512,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 73581,
+    "low": 73559,
+    "high": 73633,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 73569,
+    "low": 73549,
+    "high": 73581,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 73523,
+    "low": 73371,
+    "high": 73574,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 73523,
+    "low": 73371,
+    "high": 73574,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 73571,
+    "low": 73555,
+    "high": 73611,
+    "games": 11,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 73558,
+    "low": 73555,
+    "high": 73560,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 73584,
+    "low": 73564,
+    "high": 73613,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "venueId": "arrowhead-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 73591,
+    "low": 73447,
+    "high": 73618,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "venueId": "cpkc-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 11500,
+    "low": 11500,
+    "high": 11500,
+    "games": 24,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "venueId": "cpkc-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 11500,
+    "low": 11500,
+    "high": 11500,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "venueId": "cpkc-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 11500,
+    "low": 11500,
+    "high": 11500,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "venueId": "cpkc-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 11500,
+    "low": 11500,
+    "high": 11500,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "venueId": "cpkc-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 11500,
+    "low": 11500,
+    "high": 11500,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "venueId": "cpkc-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 11500,
+    "low": 11500,
+    "high": 11500,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "venueId": "cpkc-stadium",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 11500,
+    "low": 11500,
+    "high": 11500,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 19113,
+    "low": 14919,
+    "high": 24984,
+    "games": 242,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 39320,
+    "low": 39048,
+    "high": 39357,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 15601,
+    "low": 13361,
+    "high": 18920,
+    "games": 117,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 12041,
+    "low": 10863,
+    "high": 14175,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 15004,
+    "low": 13102,
+    "high": 17007,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 21182,
+    "low": 17220,
+    "high": 23376,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 17726,
+    "low": 16275,
+    "high": 22562,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 14244,
+    "low": 12944,
+    "high": 16805,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 15785,
+    "low": 13890,
+    "high": 17745,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 25672,
+    "low": 19079,
+    "high": 28785,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 14196,
+    "low": 12820,
+    "high": 18038,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 28445,
+    "low": 25414,
+    "high": 29532,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 25672,
+    "low": 25178,
+    "high": 29586,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 26693,
+    "low": 25884,
+    "high": 28268,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 27809,
+    "low": 25639,
+    "high": 32933,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 20801,
+    "low": 18535,
+    "high": 25055,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 25272,
+    "low": 21788,
+    "high": 28356,
+    "games": 48,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 16635,
+    "low": 15193,
+    "high": 22394,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 26162,
+    "low": 25544,
+    "high": 29460,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 25266,
+    "low": 21252,
+    "high": 28179,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 26412,
+    "low": 24302,
+    "high": 28883,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 27679,
+    "low": 26428,
+    "high": 31333,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 24423,
+    "low": 21465,
+    "high": 26621,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 21547,
+    "low": 17913,
+    "high": 24883,
+    "games": 40,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 18044,
+    "low": 14418,
+    "high": 19825,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 22814,
+    "low": 20180,
+    "high": 25525,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 25873,
+    "low": 23254,
+    "high": 27846,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 20252,
+    "low": 17038,
+    "high": 22200,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 21269,
+    "low": 18193,
+    "high": 23689,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 25333,
+    "low": 23168,
+    "high": 26498,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 17180,
+    "low": 16497,
+    "high": 18109,
+    "games": 31,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 16223,
+    "low": 15525,
+    "high": 16635,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17180,
+    "low": 16648,
+    "high": 18198,
+    "games": 23,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 16683,
+    "low": 15164,
+    "high": 18131,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 17144,
+    "low": 17050,
+    "high": 18177,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 16987,
+    "low": 16852,
+    "high": 18432,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 16579,
+    "low": 16421,
+    "high": 16981,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17457,
+    "low": 17424,
+    "high": 17898,
+    "games": 5,
+    "seasons": "2024–2025"
   }
 ];
 
@@ -39836,6 +40508,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 0.918,
     "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "season": 2026,
+    "level": 0.969,
+    "games": 10
   }
 ];
 
@@ -57677,6 +58356,398 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "toluca",
     "ratio": 1.282,
     "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "opponent": "bengals",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "opponent": "broncos",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "opponent": "chargers",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "opponent": "colts",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "opponent": "eagles",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "opponent": "lions",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "opponent": "raiders",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "opponent": "ravens",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "chiefs",
+    "opponent": "texans",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "angel-city",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "bay",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "chicago",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "gotham",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "houston",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "louisville",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "north-carolina",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "orlando",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "portland",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "seattle",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "kc-current",
+    "opponent": "utah",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "angels",
+    "ratio": 1.021,
+    "games": 9
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "astros",
+    "ratio": 0.99,
+    "games": 9
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "athletics",
+    "ratio": 0.924,
+    "games": 10
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "blue-jays",
+    "ratio": 0.926,
+    "games": 10
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "brewers",
+    "ratio": 0.919,
+    "games": 7
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "cardinals",
+    "ratio": 1.054,
+    "games": 8
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "cubs",
+    "ratio": 1.073,
+    "games": 6
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "d-backs",
+    "ratio": 0.924,
+    "games": 6
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "giants",
+    "ratio": 1.015,
+    "games": 6
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "guardians",
+    "ratio": 1.025,
+    "games": 21
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "mariners",
+    "ratio": 0.972,
+    "games": 9
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "marlins",
+    "ratio": 0.816,
+    "games": 6
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "orioles",
+    "ratio": 1.089,
+    "games": 9
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "padres",
+    "ratio": 0.951,
+    "games": 6
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "phillies",
+    "ratio": 0.914,
+    "games": 6
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "rangers",
+    "ratio": 0.944,
+    "games": 10
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "rays",
+    "ratio": 0.92,
+    "games": 9
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "red-sox",
+    "ratio": 1.041,
+    "games": 9
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "tigers",
+    "ratio": 0.999,
+    "games": 18
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "twins",
+    "ratio": 1.108,
+    "games": 19
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "white-sox",
+    "ratio": 0.987,
+    "games": 21
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "opponent": "yankees",
+    "ratio": 1.123,
+    "games": 10
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "austin",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "colorado",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "dallas",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "houston",
+    "ratio": 1.014,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "la-galaxy",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "lafc",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "minnesota",
+    "ratio": 0.968,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "portland",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "salt-lake",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "san-diego",
+    "ratio": 0.97,
+    "games": 2
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "san-jose",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "seattle",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "st-louis",
+    "ratio": 1.051,
+    "games": 3
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "opponent": "vancouver",
+    "ratio": 0.957,
+    "games": 3
   }
 ];
 
@@ -60128,6 +61199,138 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.058,
     "games": 22,
     "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "band": "first",
+    "occupancy": 0.993,
+    "low": 0.882,
+    "high": 1.183,
+    "games": 29,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "band": "second",
+    "occupancy": 1.027,
+    "low": 0.949,
+    "high": 1.152,
+    "games": 58,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "royals",
+    "venueId": "kauffman-stadium",
+    "band": "conference",
+    "occupancy": 1.011,
+    "low": 0.945,
+    "high": 1.059,
+    "games": 29,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "band": "first",
+    "occupancy": 0.964,
+    "low": 0.698,
+    "high": 1.042,
+    "games": 63,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "arrowhead-stadium",
+    "band": "first",
+    "occupancy": 0.964,
+    "low": 0.698,
+    "high": 1.042,
+    "games": 63,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "band": "second",
+    "occupancy": 0.964,
+    "low": 0.698,
+    "high": 1.042,
+    "games": 63,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "arrowhead-stadium",
+    "band": "second",
+    "occupancy": 0.964,
+    "low": 0.698,
+    "high": 1.042,
+    "games": 63,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "band": "conference",
+    "occupancy": 0.964,
+    "low": 0.698,
+    "high": 1.042,
+    "games": 63,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "arrowhead-stadium",
+    "band": "conference",
+    "occupancy": 0.964,
+    "low": 0.698,
+    "high": 1.042,
+    "games": 63,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "sporting-park",
+    "band": "final",
+    "occupancy": 0.964,
+    "low": 0.698,
+    "high": 1.042,
+    "games": 63,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "kansas-city",
+    "teamId": "sporting-kc",
+    "venueId": "arrowhead-stadium",
+    "band": "final",
+    "occupancy": 0.964,
+    "low": 0.698,
+    "high": 1.042,
+    "games": 63,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
     "basis": "league"
   }
 ];

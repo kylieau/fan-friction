@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -206,6 +206,16 @@ const LIST: Team[] = [
   team("vegas-knight-hawks", "Vegas Knight Hawks", "Knight Hawks", "IFL", "football", "las-vegas", "VKH"),
   team("las-vegas-desert-dogs", "Las Vegas Desert Dogs", "Desert Dogs", "NLL", "lacrosse", "las-vegas", "LVD"),
   team("las-vegas-rockers", "Las Vegas Rockers", "Rockers", "Arena football", "football", "las-vegas", "RCK"),
+  // Kansas City (Oct 12, 2026; docs/research/city-builds/kansas-city/). Lawrence and Columbia stay separate markets.
+  team("chiefs", "Kansas City Chiefs", "Chiefs", "NFL", "football", "kansas-city", "KC", ["KC Chiefs"]),
+  team("royals", "Kansas City Royals", "Royals", "MLB", "baseball", "kansas-city", "KCR", ["KC Royals"]),
+  team("sporting-kc", "Sporting Kansas City", "Sporting KC", "MLS", "soccer", "kansas-city", "SKC", ["Sporting Kansas City"]),
+  team("kc-current", "Kansas City Current", "Current", "NWSL", "soccer", "kansas-city", "KCC", ["KC Current"]),
+  team("sporting-kc-ii", "Sporting KC II", "Sporting II", "MLS Next Pro", "soccer", "kansas-city", "SK2"),
+  team("kc-monarchs", "Kansas City Monarchs", "Monarchs", "American Association", "baseball", "kansas-city", "KCM"),
+  team("kc-mavericks", "Kansas City Mavericks", "KC Mavericks", "ECHL", "hockey", "kansas-city", "MVS"),
+  team("kc-comets", "Kansas City Comets", "Comets", "MASL", "soccer", "kansas-city", "KCO"),
+  team("kc-outlaws", "Kansas City Outlaws", "Outlaws", "PBR", "rodeo", "kansas-city", "OUT"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -59,6 +59,8 @@ const MLB_TEAMS = [
   { teamId: 'schaumburg-boomers', mlbId: 1950, sportId: 23, venueId: 'wintrust-field', metroId: 'chicago', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'sounds', metroId: 'nashville', mlbId: 556, sportId: 11, venueId: 'first-horizon-park', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'vancouver-canadians', mlbId: 435, sportId: 13, venueId: 'nat-bailey-stadium', metroId: 'vancouver', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'royals', mlbId: 118, venueId: 'kauffman-stadium', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'kc-monarchs', mlbId: 1885, sportId: 23, venueId: 'legends-field', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'celtics', metroId: 'boston', path: 'basketball/nba', espnId: '2', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -147,6 +149,9 @@ const ESPN_TEAMS = [
   { teamId: 'unlv-football', metroId: 'las-vegas', path: 'football/college-football', espnId: '2439', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'unlv-mbb', metroId: 'las-vegas', path: 'basketball/mens-college-basketball', espnId: '2439', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'unlv-wbb', metroId: 'las-vegas', path: 'basketball/womens-college-basketball', espnId: '2439', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'chiefs', metroId: 'kansas-city', path: 'football/nfl', espnId: '12', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'sporting-kc', metroId: 'kansas-city', path: 'soccer/usa.1', espnId: '186', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'kc-current', metroId: 'kansas-city', path: 'soccer/usa.nwsl', espnId: '20907', seasons: [2022, 2023, 2024, 2025] },
   { teamId: 'bucks', metroId: 'milwaukee', path: 'basketball/nba', espnId: '15', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -494,6 +499,13 @@ const VENUE_BY_NAME = {
   'thomas and mack center': 'thomas-mack-center',
   "lee's family forum": 'lees-family-forum',
   'cashman field': 'cashman-field',
+  'arrowhead stadium': 'arrowhead-stadium',
+  'geha field at arrowhead stadium': 'arrowhead-stadium',
+  'kansas city stadium': 'arrowhead-stadium',
+  'kauffman stadium': 'kauffman-stadium',
+  "children's mercy park": 'sporting-park',
+  'sporting park': 'sporting-park',
+  'cpkc stadium': 'cpkc-stadium',
 };
 
 const METRO_VENUE_BY_NAME = {

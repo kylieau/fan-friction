@@ -71,7 +71,10 @@ const SCALE = 7.5;
 // Las Vegas is a hub (research, Oct 12, 2026, docs/research/city-builds/las-vegas/las-vegas-city-type-answer.md):
 // the Strip rooms share approaches and hotel audiences, and the non-car share is walking from hotels, not transit.
 // No measured mode split. Estimated car shares stay in the research; no venue override is wired (same rule as Milwaukee and Tampa).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub' };
+// Kansas City is sprawl (research, Oct 12, 2026, docs/research/city-builds/kansas-city/kansas-city-city-type-answer.md):
+// recurring large rooms are mostly estimates at 0.93–0.97 car-involved, and the downtown spine is still about 0.80.
+// No measured recurring mode split, so no venue carShare is wired; the 0.85 fallback stands.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -193,6 +196,14 @@ const ZONE_NAMES: Record<string, string> = {
   'bleaulive-theater': 'North Strip',
   'downtown-las-vegas-events-center': 'Downtown',
   'cashman-field': 'Downtown',
+  // Kansas City clusters that share lots or the same approach (research, Oct 12, 2026).
+  'arrowhead-stadium': 'Truman Sports Complex',
+  'kauffman-stadium': 'Truman Sports Complex',
+  'sporting-park': 'Village West',
+  'kansas-speedway': 'Village West',
+  'legends-field': 'Village West',
+  'hy-vee-arena': 'West Bottoms',
+  'hale-arena': 'West Bottoms',
 };
 
 export interface Zone {
