@@ -37,6 +37,9 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
   { client: 'whl', htId: '214', metroId: 'seattle', teamId: 'seattle-thunderbirds', venueId: 'accesso-showare-center' },
   { client: 'whl', htId: '226', metroId: 'seattle', teamId: 'everett-silvertips', venueId: 'angel-of-the-winds-arena' },
   { client: 'ahl', htId: '380', metroId: 'austin', teamId: 'texas-stars', venueId: 'heb-center-cedar-park' },
+  // Vancouver. Ids checked Oct 12, 2026. Goldeneyes "home" games at Rogers Place (Edmonton) are not mapped.
+  { client: 'pwhl', htId: '9', metroId: 'vancouver', teamId: 'vancouver-goldeneyes', venueId: 'pacific-coliseum' },
+  { client: 'whl', htId: '223', metroId: 'vancouver', teamId: 'vancouver-giants', venueId: 'langley-events-centre' },
 ];
 
 /** The feed's venue names for a few buildings, when a club plays away from its usual home ("Bell Centre" for a Victoire one-off). */
@@ -59,6 +62,10 @@ const VENUE_BY_NAME: Record<string, string> = {
   'td garden': 'td-garden',
   'h-e-b center at cedar park': 'heb-center-cedar-park',
   'cedar park center': 'heb-center-cedar-park',
+  'pacific coliseum': 'pacific-coliseum',
+  'rogers arena': 'rogers-arena',
+  'langley events centre': 'langley-events-centre',
+  'langley events centre - langley, bc': 'langley-events-centre',
 };
 
 export function hockeytechMetroIds(): string[] {

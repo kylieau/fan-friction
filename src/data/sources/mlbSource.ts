@@ -46,8 +46,10 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's spo
   1882: { metroId: 'chicago', teamId: 'chicago-dogs', sportId: 23, venueId: 'impact-field' },
   1950: { metroId: 'chicago', teamId: 'schaumburg-boomers', sportId: 23, venueId: 'wintrust-field' },
   556: { metroId: 'nashville', teamId: 'sounds', sportId: 11, venueId: 'first-horizon-park' },
+  // Vancouver Canadians (High-A). Team 435 and venue 2817 checked against the feed Oct 12, 2026.
+  435: { metroId: 'vancouver', teamId: 'vancouver-canadians', sportId: 13, venueId: 'nat-bailey-stadium' },
 };
-const MLB_VENUES: Record<number, string> = { 3: 'fenway-park', 2681: 'citizens-bank-park', 15: 'chase-field', 4249: 'salt-river-fields', 12: 'tropicana-field', 3970: 'huntington-park', 2528: 'dell-diamond', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field', 4715: 'first-horizon-park' };
+const MLB_VENUES: Record<number, string> = { 3: 'fenway-park', 2681: 'citizens-bank-park', 15: 'chase-field', 4249: 'salt-river-fields', 12: 'tropicana-field', 3970: 'huntington-park', 2528: 'dell-diamond', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field', 4715: 'first-horizon-park', 2817: 'nat-bailey-stadium' };
 
 /** The feed's team ids for a metro, grouped by sport id (one schedule call per sport). */
 function teamIdsBySport(metroId: string): Map<number, string[]> {

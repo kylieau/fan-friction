@@ -293,4 +293,12 @@ export const VENUE_ACCESS: VenueAccessRow[] = [
   { venueId: 'global-credit-union-arena', reliefM: 3, streets250: 6 },
   { venueId: 'mullett-arena', reliefM: 22, streets250: 3 },
   { venueId: 'arizona-financial-theatre', reliefM: 28, streets250: 11 },
+  { venueId: 'bc-place', reliefM: 35, streets250: 12 },
+  { venueId: 'rogers-arena', reliefM: 34, streets250: 14 },
+  { venueId: 'pacific-coliseum', reliefM: 41, streets250: 7 },
+  { venueId: 'freedom-mobile-arch', reliefM: 38, streets250: 0 },
+  { venueId: 'thunderbird-arena', reliefM: 14, streets250: 5 },
+  { venueId: 'nat-bailey-stadium', reliefM: 43, streets250: 8 },
+  { venueId: 'willoughby-stadium', reliefM: 23, streets250: 1 },
+  { venueId: 'langley-events-centre', reliefM: 36, streets250: 2 },
 ];

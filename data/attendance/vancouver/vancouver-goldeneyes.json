@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "teamId": "vancouver-goldeneyes",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2025-11-21",
+      "start": "19:00",
+      "opponent": "Torrent",
+      "venueId": "pacific-coliseum",
+      "attendance": 14958,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2025-12-06",
+      "start": "12:00",
+      "opponent": "Sirens",
+      "venueId": "pacific-coliseum",
+      "attendance": 9502,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2025-12-16",
+      "start": "19:00",
+      "opponent": "Charge",
+      "venueId": "pacific-coliseum",
+      "attendance": 9250,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2025-12-20",
+      "start": "12:00",
+      "opponent": "Victoire",
+      "venueId": "pacific-coliseum",
+      "attendance": 12127,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2026-01-22",
+      "start": "19:00",
+      "opponent": "Sceptres",
+      "venueId": "pacific-coliseum",
+      "attendance": 14006,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2026-03-01",
+      "start": "13:00",
+      "opponent": "Sceptres",
+      "venueId": "pacific-coliseum",
+      "attendance": 13264,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2026-03-10",
+      "start": "19:00",
+      "opponent": "Fleet",
+      "venueId": "pacific-coliseum",
+      "attendance": 9731,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2026-03-14",
+      "start": "12:00",
+      "opponent": "Charge",
+      "venueId": "pacific-coliseum",
+      "attendance": 11201,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2026-03-18",
+      "start": "19:00",
+      "opponent": "Sirens",
+      "venueId": "pacific-coliseum",
+      "attendance": 9296,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2026-03-21",
+      "start": "12:00",
+      "opponent": "Frost",
+      "venueId": "pacific-coliseum",
+      "attendance": 10366,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2026-04-14",
+      "start": "19:00",
+      "opponent": "Torrent",
+      "venueId": "pacific-coliseum",
+      "attendance": 10094,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2026-04-21",
+      "start": "19:00",
+      "opponent": "Victoire",
+      "venueId": "pacific-coliseum",
+      "attendance": 10946,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    },
+    {
+      "teamId": "vancouver-goldeneyes",
+      "season": 2025,
+      "date": "2026-04-25",
+      "start": "16:00",
+      "opponent": "Frost",
+      "venueId": "pacific-coliseum",
+      "attendance": 11310,
+      "kind": "announced",
+      "sourceId": "hockeytech"
+    }
+  ]
+}

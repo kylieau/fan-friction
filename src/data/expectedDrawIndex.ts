@@ -34844,6 +34844,1026 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 8890,
     "games": 4,
     "seasons": "2025–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 4811,
+    "low": 3278,
+    "high": 5750,
+    "games": 191,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2796,
+    "low": 2654,
+    "high": 2986,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4023,
+    "low": 2706,
+    "high": 5266,
+    "games": 95,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 1664,
+    "low": 1541,
+    "high": 1776,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 2868,
+    "low": 2147,
+    "high": 3643,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 4609,
+    "low": 3467,
+    "high": 5536,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 5228,
+    "low": 4537,
+    "high": 5750,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 5221,
+    "low": 4284,
+    "high": 5750,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 4077,
+    "low": 3650,
+    "high": 4188,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 5143,
+    "low": 3944,
+    "high": 5821,
+    "games": 33,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 2184,
+    "low": 1736,
+    "high": 4677,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 3818,
+    "low": 2652,
+    "high": 3985,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 5536,
+    "low": 5143,
+    "high": 5926,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 5750,
+    "low": 5526,
+    "high": 5947,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 5821,
+    "low": 5750,
+    "high": 6013,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5748,
+    "low": 4608,
+    "high": 6013,
+    "games": 32,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 2948,
+    "low": 2818,
+    "high": 3009,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 4507,
+    "low": 3707,
+    "high": 4838,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 5949,
+    "low": 5623,
+    "high": 6013,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 6013,
+    "low": 5750,
+    "high": 6013,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 5750,
+    "low": 5749,
+    "high": 6013,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5750,
+    "low": 5309,
+    "high": 6013,
+    "games": 31,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 2688,
+    "low": 2485,
+    "high": 3020,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 5419,
+    "low": 4236,
+    "high": 5513,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 6013,
+    "low": 5655,
+    "high": 6313,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 6013,
+    "low": 5750,
+    "high": 6013,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "venueId": "nat-bailey-stadium",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 6013,
+    "low": 5750,
+    "high": 6013,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 18806,
+    "low": 18679,
+    "high": 18906,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18850,
+    "low": 18778,
+    "high": 18931,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 18504,
+    "low": 18429,
+    "high": 18767,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18803,
+    "low": 18689,
+    "high": 18917,
+    "games": 66,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18913,
+    "low": 18774,
+    "high": 19003,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18801,
+    "low": 18730,
+    "high": 18924,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18672,
+    "low": 18316,
+    "high": 18873,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18911,
+    "low": 18888,
+    "high": 18924,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18717,
+    "low": 18682,
+    "high": 18919,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18728,
+    "low": 18711,
+    "high": 18857,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18781,
+    "low": 18697,
+    "high": 18860,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18728,
+    "low": 18589,
+    "high": 18878,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 18724,
+    "low": 18664,
+    "high": 18809,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18857,
+    "low": 18717,
+    "high": 18910,
+    "games": 35,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18871,
+    "low": 18800,
+    "high": 18920,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 18992,
+    "low": 18958,
+    "high": 19007,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18853,
+    "low": 18751,
+    "high": 18892,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 18844,
+    "low": 18769,
+    "high": 18879,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 18748,
+    "low": 18616,
+    "high": 18797,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18763,
+    "low": 18714,
+    "high": 18857,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18875,
+    "low": 18708,
+    "high": 18923,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18735,
+    "low": 18650,
+    "high": 18806,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18735,
+    "low": 18696,
+    "high": 18770,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 18643,
+    "low": 18615,
+    "high": 18657,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "all",
+    "month": null,
+    "count": 3621,
+    "low": 3241,
+    "high": 4118,
+    "games": 99,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3722,
+    "low": 3671,
+    "high": 3869,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2944,
+    "low": 2722,
+    "high": 3707,
+    "games": 9,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2944,
+    "low": 2583,
+    "high": 3088,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 3707,
+    "low": 3215,
+    "high": 3909,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "friday",
+    "month": null,
+    "count": 3402,
+    "low": 3125,
+    "high": 3593,
+    "games": 30,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 3504,
+    "low": 3404,
+    "high": 4017,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 3220,
+    "low": 3023,
+    "high": 3415,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 3524,
+    "low": 3470,
+    "high": 3972,
+    "games": 3,
+    "seasons": "2023"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "friday",
+    "month": 10,
+    "count": 3177,
+    "low": 3107,
+    "high": 3321,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 3533,
+    "low": 3322,
+    "high": 3621,
+    "games": 5,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 3322,
+    "low": 3164,
+    "high": 3805,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3958,
+    "low": 3508,
+    "high": 4297,
+    "games": 34,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 3859,
+    "low": 3684,
+    "high": 4133,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 4006,
+    "low": 3540,
+    "high": 4269,
+    "games": 12,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 4047,
+    "low": 4030,
+    "high": 4287,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 3471,
+    "low": 3224,
+    "high": 3839,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 4521,
+    "low": 4116,
+    "high": 4645,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3916,
+    "low": 3651,
+    "high": 4438,
+    "games": 26,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 4317,
+    "low": 4068,
+    "high": 4421,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 4280,
+    "low": 3947,
+    "high": 4565,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 3828,
+    "low": 3586,
+    "high": 4047,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "venueId": "langley-events-centre",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 4066,
+    "low": 3645,
+    "high": 4491,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-goldeneyes",
+    "venueId": "pacific-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 10656,
+    "low": 9674,
+    "high": 11514,
+    "games": 12,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-goldeneyes",
+    "venueId": "pacific-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 9913,
+    "low": 9405,
+    "high": 10733,
+    "games": 6,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-goldeneyes",
+    "venueId": "pacific-coliseum",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 11201,
+    "low": 10366,
+    "high": 11310,
+    "games": 5,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "dayClass": "all",
+    "month": null,
+    "count": 23193,
+    "low": 20592,
+    "high": 25445,
+    "games": 32,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 20212,
+    "low": 17361,
+    "high": 20867,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 23651,
+    "low": 20867,
+    "high": 25683,
+    "games": 22,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 20855,
+    "low": 19328,
+    "high": 22807,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 21336,
+    "low": 17978,
+    "high": 24765,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 32465,
+    "low": 26114,
+    "high": 41750,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 24545,
+    "low": 22718,
+    "high": 25934,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 25292,
+    "low": 24276,
+    "high": 26031,
+    "games": 5,
+    "seasons": "2024–2025"
   }
 ];
 
@@ -35065,6 +36085,20 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 0.786,
     "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "season": 2026,
+    "level": 0.865,
+    "games": 5
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "season": 2026,
+    "level": 1.063,
+    "games": 11
   }
 ];
 
@@ -50539,6 +51573,531 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "lsu",
     "ratio": 1.015,
     "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "opponent": "aquasox",
+    "ratio": 0.945,
+    "games": 48
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "opponent": "dust-devils",
+    "ratio": 1.016,
+    "games": 35
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "opponent": "emeralds",
+    "ratio": 1.036,
+    "games": 42
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "opponent": "hops",
+    "ratio": 0.942,
+    "games": 36
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canadians",
+    "opponent": "indians",
+    "ratio": 1.005,
+    "games": 33
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "avalanche",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "blackhawks",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "blue-jackets",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "blues",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "bruins",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "canadiens",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "capitals",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "coyotes",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "devils",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "ducks",
+    "ratio": 0.993,
+    "games": 6
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "flames",
+    "ratio": 0.985,
+    "games": 7
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "flyers",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "golden-knights",
+    "ratio": 0.983,
+    "games": 6
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "hurricanes",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "islanders",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "jets",
+    "ratio": 0.994,
+    "games": 5
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "kings",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "kraken",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "lightning",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "mammoth",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "maple-leafs",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "oilers",
+    "ratio": 1,
+    "games": 7
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "panthers",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "penguins",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "predators",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "rangers",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "red-wings",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "sabres",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "senators",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "sharks",
+    "ratio": 1.002,
+    "games": 6
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "stars",
+    "ratio": 0.995,
+    "games": 5
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "opponent": "wild",
+    "ratio": 0.997,
+    "games": 4
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "americans",
+    "ratio": 1.021,
+    "games": 6
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "blazers",
+    "ratio": 1.019,
+    "games": 12
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "broncos",
+    "ratio": 0.96,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "chiefs",
+    "ratio": 0.937,
+    "games": 6
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "cougars",
+    "ratio": 0.929,
+    "games": 11
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "hitmen",
+    "ratio": 1.064,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "hurricanes",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "oil-kings",
+    "ratio": 1.083,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "rebels",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "rockets",
+    "ratio": 1.021,
+    "games": 12
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "royals",
+    "ratio": 0.985,
+    "games": 12
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "silvertips",
+    "ratio": 1.013,
+    "games": 6
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "thunderbirds",
+    "ratio": 1.002,
+    "games": 7
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "tigers",
+    "ratio": 0.966,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "vees",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "wheat-kings",
+    "ratio": 0.957,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "wild",
+    "ratio": 0.979,
+    "games": 6
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-giants",
+    "opponent": "winterhawks",
+    "ratio": 0.973,
+    "games": 7
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-goldeneyes",
+    "opponent": "charge",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-goldeneyes",
+    "opponent": "frost",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-goldeneyes",
+    "opponent": "sceptres",
+    "ratio": 1.12,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-goldeneyes",
+    "opponent": "sirens",
+    "ratio": 0.955,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-goldeneyes",
+    "opponent": "torrent",
+    "ratio": 1.074,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-goldeneyes",
+    "opponent": "victoire",
+    "ratio": 1.036,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "austin",
+    "ratio": 0.955,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "colorado",
+    "ratio": 1.015,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "dallas",
+    "ratio": 1.034,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "houston",
+    "ratio": 1.01,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "kansas-city",
+    "ratio": 0.975,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "la-galaxy",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "lafc",
+    "ratio": 1.105,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "minnesota",
+    "ratio": 0.945,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "portland",
+    "ratio": 1.056,
+    "games": 4
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "salt-lake",
+    "ratio": 0.91,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "san-jose",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "seattle",
+    "ratio": 0.969,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "st-louis",
+    "ratio": 1.032,
+    "games": 2
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "opponent": "toronto",
+    "ratio": 1.03,
+    "games": 2
   }
 ];
 
@@ -52845,6 +54404,78 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "low": 0.682,
     "high": 1.019,
     "games": 50,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "band": "first",
+    "occupancy": 1.002,
+    "low": 1,
+    "high": 1.015,
+    "games": 71,
+    "seasons": "2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-canucks",
+    "venueId": "rogers-arena",
+    "band": "second",
+    "occupancy": 1.003,
+    "low": 0.997,
+    "high": 1.01,
+    "games": 37,
+    "seasons": "2024 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "band": "first",
+    "occupancy": 1.094,
+    "low": 0.686,
+    "high": 1.276,
+    "games": 54,
+    "seasons": "2023, 2024, 2025 + league, any round",
+    "basis": "blend"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "band": "second",
+    "occupancy": 0.932,
+    "low": 0.685,
+    "high": 1.043,
+    "games": 51,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "band": "conference",
+    "occupancy": 0.932,
+    "low": 0.685,
+    "high": 1.043,
+    "games": 51,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "vancouver",
+    "teamId": "vancouver-whitecaps",
+    "venueId": "bc-place",
+    "band": "final",
+    "occupancy": 0.932,
+    "low": 0.685,
+    "high": 1.043,
+    "games": 51,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
     "basis": "league"
   }

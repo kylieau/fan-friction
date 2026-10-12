@@ -60,7 +60,10 @@ const SCALE = 7.5;
 // not a measured mode split, so no venue override is wired.
 // Phoenix: sprawl (research Oct 11, 2026). No measured event mode split; downtown rail inference and
 // suburban structural estimates stay in the research. No venue carShare overrides (Milwaukee/Tampa pattern).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl' };
+// Vancouver is transit (research, Oct 12, 2026, docs/research/city-builds/vancouver/vancouver-city-type-answer.md), low confidence:
+// no measured attendee survey. Estimated car shares, including Hastings Park and Langley, stay in the research.
+// No venue override is wired (same rule as Milwaukee and Tampa). The transit spill stays 0.10; Hastings Park has no rapid transit.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -135,6 +138,23 @@ const ZONE_NAMES: Record<string, string> = {
   'mountain-america-stadium': 'ASU Tempe',
   'desert-financial-arena': 'ASU Tempe',
   'mullett-arena': 'ASU Tempe',
+  // Vancouver clusters named in the city-type answer.
+  'bc-place': 'Stadium district',
+  'rogers-arena': 'Stadium district',
+  'queen-elizabeth-theatre': 'Stadium district',
+  'orpheum-vancouver': 'Stadium district',
+  'vogue-theatre': 'Stadium district',
+  'commodore-ballroom': 'Stadium district',
+  'pacific-coliseum': 'Hastings Park',
+  'freedom-mobile-arch': 'Hastings Park',
+  'pne-agrodome': 'Hastings Park',
+  'langley-events-centre': 'Willoughby',
+  'langley-centre-gym': 'Willoughby',
+  'willoughby-stadium': 'Willoughby',
+  'thunderbird-arena': 'UBC',
+  'thunderbird-stadium': 'UBC',
+  'war-memorial-gym': 'UBC',
+  'chan-centre': 'UBC',
 };
 
 export interface Zone {

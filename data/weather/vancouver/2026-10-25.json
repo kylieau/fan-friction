@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-10-25",
+  "rows": [
+    {
+      "metroId": "vancouver",
+      "venueId": "city",
+      "date": "2026-10-25",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:18:50.124Z",
+      "feelsLikeF": 47.5,
+      "tempF": 50.1,
+      "humidity": 76,
+      "windMph": 1.8,
+      "uvIndex": 0,
+      "precipProbability": 50,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ],
+  "days": [
+    {
+      "metroId": "vancouver",
+      "venueId": "city",
+      "date": "2026-10-25",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:18:50.124Z",
+      "feelsLikeHighF": 52.1,
+      "feelsLikeLowF": 40.9,
+      "code": 3,
+      "precipProbability": 55,
+      "precipMm": 0
+    }
+  ]
+}

@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -175,6 +175,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-97.74, 30.35],
     zoom: 9.6,
+  },
+  // Covered Oct 12, 2026 (docs/research/city-builds/vancouver/vancouver-venue-table-answer.md): Metro Vancouver
+  // (the regional district / CMA). One frame holds downtown, Hastings Park and Burnaby; UBC sits toward the
+  // edge and Langley sits off the first view. Abbotsford and Victoria stay outside this metro.
+  vancouver: {
+    id: 'vancouver', code: 'VAN',
+    name: 'Vancouver',
+    timeZone: 'America/Vancouver',
+    center: [-123.1, 49.26],
+    zoom: 10.5,
   },
 };
 

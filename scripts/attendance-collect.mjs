@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -54,6 +54,7 @@ const MLB_TEAMS = [
   { teamId: 'chicago-dogs', mlbId: 1882, sportId: 23, venueId: 'impact-field', metroId: 'chicago', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'schaumburg-boomers', mlbId: 1950, sportId: 23, venueId: 'wintrust-field', metroId: 'chicago', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'sounds', metroId: 'nashville', mlbId: 556, sportId: 11, venueId: 'first-horizon-park', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'vancouver-canadians', mlbId: 435, sportId: 13, venueId: 'nat-bailey-stadium', metroId: 'vancouver', seasons: [2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'celtics', metroId: 'boston', path: 'basketball/nba', espnId: '2', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -115,6 +116,10 @@ const ESPN_TEAMS = [
   { teamId: 'asu-hockey', metroId: 'phoenix', path: 'hockey/mens-college-hockey', espnId: '9', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'gcu-mbb', metroId: 'phoenix', path: 'basketball/mens-college-basketball', espnId: '2253', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'gcu-wbb', metroId: 'phoenix', path: 'basketball/womens-college-basketball', espnId: '2253', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'vancouver-canucks', metroId: 'vancouver', path: 'hockey/nhl', espnId: '22', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'vancouver-whitecaps', metroId: 'vancouver', path: 'soccer/usa.1', espnId: '9727', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'bc-lions', metroId: 'vancouver', path: 'football/cfl', espnId: '79', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'vancouver-warriors', metroId: 'vancouver', path: 'lacrosse/nll', espnId: '125432', seasons: [2024, 2025, 2026], seasontype: 2 },
   { teamId: 'bucks', metroId: 'milwaukee', path: 'basketball/nba', espnId: '15', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -390,6 +395,13 @@ const VENUE_BY_NAME = {
   'saputo stadium': 'stade-saputo',
   'percival molson memorial stadium': 'percival-molson-stadium',
   'molson stadium': 'percival-molson-stadium',
+  'bc place': 'bc-place',
+  'bc place vancouver': 'bc-place',
+  'rogers arena': 'rogers-arena',
+  'pacific coliseum': 'pacific-coliseum',
+  'swangard stadium': 'swangard-stadium',
+  'rogers field at nat bailey stadium': 'nat-bailey-stadium',
+  'nat bailey stadium': 'nat-bailey-stadium',
   'now arena': 'now-arena',
   'comerica center': 'comerica-center',
   // Nashville, as ESPN writes them (checked Oct 12, 2026).
@@ -545,8 +557,10 @@ const HOCKEYTECH_TEAMS = [
   { teamId: 'seattle-thunderbirds', metroId: 'seattle', client: 'whl', htId: '214', venueId: 'accesso-showare-center' },
   { teamId: 'everett-silvertips', metroId: 'seattle', client: 'whl', htId: '226', venueId: 'angel-of-the-winds-arena' },
   { teamId: 'texas-stars', metroId: 'austin', client: 'ahl', htId: '380', venueId: 'heb-center-cedar-park' },
+  { teamId: 'vancouver-goldeneyes', metroId: 'vancouver', client: 'pwhl', htId: '9', venueId: 'pacific-coliseum' },
+  { teamId: 'vancouver-giants', metroId: 'vancouver', client: 'whl', htId: '223', venueId: 'langley-events-centre' },
 ];
-const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden', 'h-e-b center at cedar park': 'heb-center-cedar-park', 'cedar park center': 'heb-center-cedar-park' };
+const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden', 'h-e-b center at cedar park': 'heb-center-cedar-park', 'cedar park center': 'heb-center-cedar-park', 'pacific coliseum': 'pacific-coliseum', 'rogers arena': 'rogers-arena', 'langley events centre': 'langley-events-centre', 'langley events centre - langley, bc': 'langley-events-centre' };
 
 const HT_KEYS = { ahl: 'ccb91f29d6744675', pwhl: '446521baf8c38984', whl: '41b145a848f4bd67' };
 const htUrl = (client, params) => `https://lscluster.hockeytech.com/feed/?${new URLSearchParams({ feed: 'modulekit', key: HT_KEYS[client], client_code: client, fmt: 'json', lang: 'en', ...params })}`;
