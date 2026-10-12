@@ -522,8 +522,17 @@ export interface Entry {
   /** Watched, not attended (build notes 2, 8.2). Absent means in person. Kept in the same log, marked quietly. */
   watched?: boolean;
   /**
-   * The event's crowd, locked when the night's stamp locks (Kylie, Oct 11, call 4): the announced attendance
-   * from the box score, or the best estimate when none was announced. Evidence only; never a target.
+   * The crowd as three figures (build notes 3, D04), filled when the stamp locks and never
+   * overwriting one another: the estimate the app made ahead, the announced attendance from
+   * the box score, and the final count when a source for one exists (none yet, ⚑4). The
+   * highlighted one is Final > Announced > Estimated (src/data/crowdFigures.ts).
+   */
+  crowdEstimated?: number;
+  crowdAnnounced?: number;
+  crowdFinal?: number;
+  /**
+   * The single figure stubs locked before Oct 12, 2026 (announced if the box score had one, else
+   * the estimate, untagged). Kept as it was; how to tag it is open (build notes 3, ⚑3).
    */
   crowd?: number;
   /** Set once the crowd was looked up at the lock, so it is never looked up again (even when nothing was found). */

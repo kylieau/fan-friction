@@ -16,6 +16,7 @@ import type { Favorite } from './favorites';
 import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLocked, ratingFromEntry } from './read';
 import { seedEventsOn } from './sources/seedSource';
 import { drawSize } from './read';
+import { crowdFigures, entryCrowd } from './crowdFigures';
 import type { CrowdEvent, Division, Entry, Plan, SportsLevel, Stamp, PersonalLog, YouOrder } from './types';
 
 export interface CountRow {
@@ -605,18 +606,22 @@ function freshEntry(event: CrowdEvent, watched: boolean): Entry {
   return entry;
 }
 
-/** The figure an entry's crowd locks to: the announced attendance from the box score, else the best estimate. */
-function finalCrowd(event: CrowdEvent): number | undefined {
-  return event.result?.attendance ?? drawSize(event);
+/**
+ * The figures an entry's crowd locks to (build notes 3, D04): the announced attendance from the box
+ * score, and the estimate the app made, each into its own field. Final has no source yet (⚑4).
+ */
+function lockedCrowd(event: CrowdEvent): Pick<Entry, 'crowdAnnounced' | 'crowdEstimated'> {
+  const figures = crowdFigures(event);
+  const estimated = figures.estimated ?? drawSize(event);
+  return { ...(figures.announced ? { crowdAnnounced: figures.announced } : {}), ...(estimated ? { crowdEstimated: estimated } : {}) };
 }
 
 /**
- * Lock crowds (Kylie, Oct 11, call 4): once a night's stamp has locked, each of its entries takes the
- * final announced attendance, or the best estimate when none was announced, and never changes again.
- * Runs at app start and after the account copy loads, like settlePassedPlans. Entries from before the
- * lock, and every entry marked before Oct 10, are filled the same way, empty ones only: a lazy fill
- * on open, not a job. A night the catalog cannot find (before the archive) is marked looked-up and
- * stays blank. At most forty lookups a run.
+ * Lock crowds (Kylie, Oct 11, call 4; build notes 3, D04 and 8.1 item 18): once a date's stamp has
+ * locked, each of its entries takes the announced attendance and the estimate into their own fields,
+ * and no field is ever overwritten. Runs at app start and after the account copy loads, like
+ * settlePassedPlans: a lazy fill on open, not a job. A date the catalog cannot find (before the
+ * archive) is marked looked-up and stays blank. At most forty lookups a run.
  */
 export async function lockCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
   const now = new Date();
@@ -633,8 +638,12 @@ export async function lockCrowds(loadDate: (metroId: string, date: string) => Pr
       const metro = METROS[entry.metroId!];
       if (!isStampLocked(asMetroDate(entry.metroId!, entry.when.sort, day.events), metro.timeZone, now)) continue;
       const event = day.events.find((e) => e.id === entry.eventId);
-      const crowd = event ? finalCrowd(event) : undefined;
-      updates.set(entry.id, crowd ? { crowd, crowdLocked: true } : { crowdLocked: true });
+      const locked = event ? lockedCrowd(event) : {};
+      // Fill only what is empty: a figure already on the entry stays (D03).
+      const fill: Partial<Entry> = { crowdLocked: true };
+      if (locked.crowdAnnounced && !entry.crowdAnnounced) fill.crowdAnnounced = locked.crowdAnnounced;
+      if (locked.crowdEstimated && !entry.crowdEstimated) fill.crowdEstimated = locked.crowdEstimated;
+      updates.set(entry.id, fill);
     } catch {
       /* try again next open */
     }
@@ -686,9 +695,10 @@ export function isWatched(eventId: string, log: PersonalLog = snapshot): boolean
   return log.added.some((entry) => entry.eventId === eventId && entry.watched);
 }
 
-/** The event you were at with the biggest crowd on file. */
+/** The event you were at with the biggest crowd on file, by each stub's highlighted figure. */
 export function biggestCrowd(entries: readonly Entry[]): Entry | null {
-  return entries.filter((e) => !e.watched && e.crowd).sort((a, b) => (b.crowd ?? 0) - (a.crowd ?? 0))[0] ?? null;
+  const count = (e: Entry) => entryCrowd(e)?.count ?? 0;
+  return entries.filter((e) => !e.watched && count(e) > 0).sort((a, b) => count(b) - count(a))[0] ?? null;
 }
 
 /** How many of your nights were Steamrolled and Swamped, from their stamps. */

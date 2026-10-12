@@ -1819,6 +1819,89 @@ button {
   flex: 1 1 100%;
 }
 
+/* The crowd block (build notes 3, D04): the highlighted figure in a pale-gold row with a gold bar, small rows under it. */
+.crowd-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.crowd-block-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
+.crowd-block-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #e3a600;
+}
+
+.crowd-hero {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-left: 4px solid #e3a600;
+  border-radius: 8px;
+  background: #fff8db;
+}
+
+.crowd-hero-num {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.crowd-hero-num .crowd-mark {
+  width: 18px;
+  height: 18px;
+  color: #b98500;
+}
+
+.crowd-hero-kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.crowd-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0 14px;
+}
+
+.crowd-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--ink2);
+}
+
+.crowd-row dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+
 /* The (i) card's per-event opening and the heading of the general explanation under it. */
 .how-about {
   margin: 0 0 14px;

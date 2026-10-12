@@ -24,8 +24,10 @@ import {
 } from '../data';
 import {
   CONCERT_FILL,
-  drawSavedAhead,
+  crowdFigures,
+  crowdKindWord,
   eventFacts,
+  highlightedCrowd,
   roundEstimate,
   getCityDate,
   getPersonalLog,
@@ -60,7 +62,6 @@ import { longLocalDate } from '../lib/dates';
 import { hoursOf, milesBetween, runningHours } from '../lib/windows';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
-const capital = (word: string) => word.charAt(0).toUpperCase() + word.slice(1);
 
 // One event: what it was, how much competition it faced (known beforehand),
 // the crowd as labeled evidence, and what else was on at the same time.
@@ -159,7 +160,9 @@ export function EventScreen() {
 
   const e = me.event;
   const a = e.assessment;
-  const kind = crowdKind(e);
+  // The three crowd figures and the one to highlight (D04). A seeded estimate is a figure, never a ceiling.
+  const figures = { ...crowdFigures(e), estimatedSeeded: e.crowd.some((f) => f.kind === 'estimated' && f.count != null) };
+  const shown = highlightedCrowd(e);
   const stakesLine = quietStakes(e, day.events);
   const logged = yourEntries(log).find((entry) => entry.eventId === e.id);
   const ahead = e.date >= todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
@@ -345,50 +348,61 @@ export function EventScreen() {
 
       {ahead && <SameTour event={e} />}
 
-      <section className="card crowd-card">
-        <div className="crowd-figure">
-          {me.count !== undefined ? (
-            <>
-              <span className="crowd-number">
-                <CrowdMark />
-                {fmt(me.count)}
-              </span>
-              <span className="crowd-kind">
-                People ({kind ? capital(kind) : kind})
-                {kind === 'estimated' && <HowButton onOpen={() => setShowHow(true)} />}
-              </span>
-            </>
-          ) : me.soldOut ? (
-            <span className="crowd-number small">Sold Out</span>
-          ) : e.expectedDraw ? (
-            <>
-              {/* A building-only figure is a ceiling: "Up to N" (3.1, 3.3); a crowd-based one is "~N". */}
-              <span className="crowd-number">
-                <CrowdMark />
-                {e.expectedDraw.basis === 'building' ? `Up to ${fmt(roundEstimate(e.expectedDraw.count))}` : `~${fmt(roundEstimate(e.expectedDraw.count))}`}
-              </span>
-              <span className="crowd-kind">
-                People (Est.)
-                <HowButton onOpen={() => setShowHow(true)} />
-              </span>
-              {e.expectedDraw.fromCrowds && me.capacity && (
-                <>
-                  <span className="crowd-fill-word">{fullnessWord(e.expectedDraw.count, me.capacity)}</span>
-                  <FillBar count={e.expectedDraw.count} capacity={me.capacity} />
-                </>
-              )}
-            </>
-          ) : me.capacity ? (
-            <>
-              <span className="crowd-number small">{fmt(me.capacity)}</span>
-              <span className="crowd-kind">Seats · no estimate yet</span>
-            </>
-          ) : (
-            <span className="crowd-kind">No count found yet</span>
-          )}
+      {/* The crowd block (build notes 3, D04; mock call11b-crowd-hybrid): the highlighted figure big, in a pale-gold row
+          with a gold bar; small rows under it list Announced and Final once they exist. The estimate shows only until
+          an announced count lands. Final > Announced > Estimated. */}
+      <section className="card crowd-block" aria-label="Crowd">
+        <div className="crowd-block-label">
+          <span className="crowd-block-dot" aria-hidden />
+          Crowd
         </div>
-        {me.soldOut && me.count !== undefined && <span className="tag-soldout">SOLD OUT</span>}
-        <DrawNote event={e} counted={me.count !== undefined || me.soldOut} />
+        {shown ? (
+          <>
+            <div className="crowd-hero">
+              <span className="crowd-hero-num">
+                <CrowdMark />
+                {shown.kind === 'estimated' ? (e.expectedDraw?.basis === 'building' && !figures.estimatedSeeded ? `Up to ${fmt(shown.count)}` : `~${fmt(shown.count)}`) : fmt(shown.count)}
+              </span>
+              <span className="crowd-hero-kind">
+                {crowdKindWord(shown.kind)}
+                {shown.kind === 'estimated' && <HowButton onOpen={() => setShowHow(true)} />}
+              </span>
+            </div>
+            {(figures.final || (figures.announced && shown.kind === 'final')) && (
+              <dl className="crowd-rows">
+                {figures.final && (
+                  <div className="crowd-row">
+                    <dt>Final</dt>
+                    <dd>{fmt(figures.final)}</dd>
+                  </div>
+                )}
+                {figures.announced && (
+                  <div className="crowd-row">
+                    <dt>{crowdKindWord(figures.announcedKind ?? 'announced')}</dt>
+                    <dd>{fmt(figures.announced)}</dd>
+                  </div>
+                )}
+              </dl>
+            )}
+            {shown.kind === 'estimated' && e.expectedDraw?.fromCrowds && me.capacity && (
+              <>
+                <span className="crowd-fill-word">{fullnessWord(e.expectedDraw.count, me.capacity)}</span>
+                <FillBar count={e.expectedDraw.count} capacity={me.capacity} />
+              </>
+            )}
+            {shown.kind === 'estimated' && <DrawNote event={e} />}
+          </>
+        ) : me.soldOut ? (
+          <span className="crowd-number small">Sold Out</span>
+        ) : me.capacity ? (
+          <>
+            <span className="crowd-number small">{fmt(me.capacity)}</span>
+            <span className="crowd-kind">Seats · no estimate yet</span>
+          </>
+        ) : (
+          <span className="crowd-kind">No count found yet</span>
+        )}
+        {me.soldOut && shown && <span className="tag-soldout">SOLD OUT</span>}
       </section>
       {showHow && <HowEstimatesWork onClose={() => setShowHow(false)} event={e} seats={me.capacity} />}
 
@@ -407,7 +421,7 @@ export function EventScreen() {
         line={a ? `${frictionVerdictTitle(a.friction, a.rival)}. ${a.why}` : ''}
         friction={a?.friction ?? null}
         rating={day.rating ? day.rating.rating : null}
-        crowd={me.count !== undefined ? `${fmt(me.count)} ${kind ? capital(kind) : ''}` : me.soldOut ? 'Sold Out' : null}
+        crowd={shown ? `${fmt(shown.count)} ${crowdKindWord(shown.kind)}` : me.soldOut ? 'Sold Out' : null}
       />
 
       <MapBack date={date} metroId={e.metroId} className="text-link">
@@ -451,16 +465,11 @@ function FillBar({ count, capacity }: { count: number; capacity: number }) {
   );
 }
 
-function DrawNote({ event, counted }: { event: CrowdEvent; counted: boolean }) {
-  if (!counted) {
-    const d = event.expectedDraw;
-    // The middle half lives in the (i) card (Kylie, Oct 8: "half of games land between"); a playoff planning range stays here.
-    if (!d || !d.planning || d.low == null || d.high == null || roundEstimate(d.low) === roundEstimate(d.high)) return null;
-    return <p className="crowd-note">Likely {fmt(roundEstimate(d.low))}–{fmt(roundEstimate(d.high))}.</p>;
-  }
-  const saved = drawSavedAhead(event);
-  if (!saved) return null;
-  return <p className="crowd-note">Estimated ahead: ~{fmt(roundEstimate(saved.count))}.</p>;
+function DrawNote({ event }: { event: CrowdEvent }) {
+  const d = event.expectedDraw;
+  // The middle half lives in the (i) card (Kylie, Oct 8: "half of games land between"); a playoff planning range stays here.
+  if (!d || !d.planning || d.low == null || d.high == null || roundEstimate(d.low) === roundEstimate(d.high)) return null;
+  return <p className="crowd-note">Likely {fmt(roundEstimate(d.low))}–{fmt(roundEstimate(d.high))}.</p>;
 }
 
 /** The small (i) beside an estimated figure. */
