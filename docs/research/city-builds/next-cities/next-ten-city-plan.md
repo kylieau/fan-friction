@@ -1,6 +1,6 @@
 # Proposed next ten cities
 
-Drafted Oct 11, 2026 (America/Los_Angeles). This is a research/build queue proposal, not a lock or authorization to build all ten. The three formerly top-ranked cities in the older cross-city scan (Bay Area, Dallas–Fort Worth, and Chicago) are now covered, so they are removed from this queue. Pair each city's city-type and venue-table prompts; do not build until the research is reviewed and Kylie approves the scope.
+Drafted Oct 12, 2026 (America/Los_Angeles). This is a research/build queue proposal, not a lock or authorization to build all ten. The three formerly top-ranked cities in the older cross-city scan (Bay Area, Dallas–Fort Worth, and Chicago) are now covered, so they are removed from this queue. Pair each city's city-type and venue-table prompts; do not build until the research is reviewed and Kylie approves the scope.
 
 | Order | City | Why it is in the queue | Near-term calendar cue (verify again before building) |
 |---:|---|---|---|
@@ -13,9 +13,9 @@ Drafted Oct 11, 2026 (America/Los_Angeles). This is a research/build queue propo
 | 7 | Austin | College-town and open-site event test. | Formula 1 United States Grand Prix at Circuit of The Americas, Oct 23–25, 2026. |
 | 8 | Sacramento | In the personal log; separate from the Bay Area and useful for changing venue status. | Kings home opener Oct 23, 2026; verify the Athletics' actual home status and announced moves. |
 | 9 | Toronto | Extends the Canada test beyond Montreal with a different event mix and source inventory. | Maple Leafs 2026–27 season is underway. |
-| 10 | London | First European market, testing event feeds, venue scope, transit, time zone and source terms beyond North America. | 2026–27 Premier League fixtures are active. |
+| 10 | Mexico City | Keeps the queue within North America while testing a major Spanish-language market and whether local leagues, ticketing and event calendars are covered by public sources. This is a research candidate, not a decision to build internationally or an assumption that existing feeds work there. | Formula 1 Gran Premio de la Ciudad de México, Oct 30–Nov 1, 2026. |
 
-## Schedule evidence checked Oct 11, 2026
+## Schedule evidence checked Oct 12, 2026
 
 - Philadelphia: [Eagles 2026 schedule](https://www.philadelphiaeagles.com/schedule/2026/) and [Flyers 2026–27 schedule](https://www.nhl.com/flyers/news/flyers-announce-2026-27-regular-season-schedule).
 - Boston: [Bruins 2026–27 schedule](https://www.nhl.com/bruins/news/topic/press-release/nhl-announces-boston-bruins-2026-27-regular-season-schedule-individual-game-tickets-to-go-on-sale-friday-july-17-at-2-p-m) and [Celtics 2026–27 schedule](https://api-hub.nba.com/team/1610612738/schedule).
@@ -26,7 +26,7 @@ Drafted Oct 11, 2026 (America/Los_Angeles). This is a research/build queue propo
 - Austin: [Formula 1's United States Grand Prix timetable](https://www.formula1.com/en/latest/article/formula-1-msc-cruises-united-states-grand-prix-2026.2u6li2pzNhPzL3TSYaagrm) and [Texas Longhorns 2026 football schedule](https://texaslonghorns.com/sports/football/schedule/).
 - Sacramento: [Kings schedule announcement](https://www.nba.com/kings/news/kings-announce-2026-27-regular-season-schedule).
 - Toronto: [Maple Leafs 2026–27 schedule announcement](https://www.nhl.com/mapleleafs/news/maple-leafs-announce-2026-27-nhl-regular-season-schedule).
-- London: [Premier League 2026–27 fixtures](https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season).
+- Mexico City: [Formula 1 2026 Mexico City Grand Prix schedule](https://www.formula1.com/en/latest/article/formula-1-gran-premio-de-la-ciudad-de-mexico-2026.14b3wTWzNNLJ5Wd8cG7HCQ), scheduled Oct 30–Nov 1, 2026.
 
 Schedule timing helps with sequencing but does not by itself make a city worth building. The remaining decisions are whether the metro contributes a useful model test, whether its public source coverage is adequate, and whether Kylie expects to log events there. Recheck current venue names, calendars, feed terms and capacities during each research run.
 
@@ -43,4 +43,4 @@ Each city has two drafts: a venue and open-event table prompt, and a venue trave
 - **Austin:** [city type](austin/austin-city-type-prompt.md), [venue table](austin/austin-venue-table-prompt.md)
 - **Toronto:** [city type](toronto/toronto-city-type-prompt.md), [venue table](toronto/toronto-venue-table-prompt.md)
 - **Sacramento:** [city type](sacramento/sacramento-city-type-prompt.md), [venue table](sacramento/sacramento-venue-table-prompt.md)
-- **London:** [city type](london/london-city-type-prompt.md), [venue table](london/london-venue-table-prompt.md)
+- **Mexico City:** [city type](mexico-city/mexico-city-city-type-prompt.md), [venue table](mexico-city/mexico-city-venue-table-prompt.md)

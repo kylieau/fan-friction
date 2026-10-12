@@ -1,22 +1,22 @@
-# Research prompt: London venue and major-event table
+# Research prompt: Mexico City venue and major-event table
 
-Drafted Oct 11, 2026 (America/Los_Angeles) as part of the proposed next-ten city queue. Research only: this does not approve a city build, venue inclusion, or a formula change.
+Drafted Oct 12, 2026 (America/Los_Angeles) as part of the proposed next-ten city queue. Research only: this does not approve a city build, venue inclusion, or a formula change.
 
-Copy the brief below into a research model. Save the full answer beside this prompt as `london-venue-table-answer.md`; a second model's answer may use `-claude` or `-codex` before `.md`. Companion research: [London event-travel and city-type prompt](london-city-type-prompt.md). Keep prompts and answers together.
+Copy the brief below into a research model. Save the full answer beside this prompt as `mexico-city-venue-table-answer.md`; a second model's answer may use `-claude` or `-codex` before `.md`. Companion research: [Mexico City event-travel and city-type prompt](mexico-city-city-type-prompt.md). Keep prompts and answers together.
 
 ---
 
 ## Delivery
-Deliver a downloadable Markdown file named `london-venue-table-answer.md`, using headings, pipe tables, and inline links. If unavailable, provide complete Markdown in chat. Do not provide a PDF or summary only. Date the answer and link every numeric claim directly to a public source.
+Deliver a downloadable Markdown file named `mexico-city-venue-table-answer.md`, using headings, pipe tables, and inline links. If unavailable, provide complete Markdown in chat. Do not provide a PDF or summary only. Date the answer and link every numeric claim directly to a public source.
 
 ## Purpose and thresholds
 Fan/Friction is a personal log of live sports and concerts. Anything can be logged by hand; events around 1,000+ are pre-listed; only 5,000+ feed friction. Rooms under about 5,000 may be listed and muted but have no friction label. Venue capacity is not event attendance. This research should fit the existing city model, not redesign it or tune to personal ratings.
 
 ## Boundary
-Research London. Starting search boundary: Greater London as a working search boundary. Assess outer commuter venues and neighboring towns (including Wembley, Twickenham, and other sites inside or just outside Greater London) by actual audience and shared-road/transit evidence; do not expand to all South East England. This is a working search area, not a locked boundary. Recommend a final scope with sourced reasoning about the actual metro and event catchment. Separate useful edge cases. Do not automatically include distant destination sites or adjacent cities because they share a state, province or marketing label.
+Research Mexico City. Starting boundary: Mexico City (CDMX) and connected parts of the State of Mexico as a working search area. Recommend scope from sourced metro, event-catchment and shared-access evidence; assess Toluca, Puebla and Querétaro separately as edge cases. Do not automatically expand to all central Mexico or include distant destinations because they share a state or marketing label.
 
 ## Search coverage and leads
-Enumerate every active fixed public venue with at least one room or setup around 1,000+; prioritize all 5,000+ setups. Check the entire boundary rather than stopping at famous professional venues. Include major college, minor-league, women's, independent, motorsport, fair, race, concert and theatre venues when they meet the threshold. Search for changing home venues, closures, temporary homes, renamed rooms, shared campuses and upcoming openings through 2028. Starting leads (unverified; confirm existence, active status, current names, location, tenants, size and scope): Premier League and EFL grounds in Greater London, Wembley Stadium and Arena, Twickenham Stadium, The O2, Tottenham Hotspur Stadium, Emirates Stadium, Stamford Bridge, London Stadium, Wimbledon grounds, Alexandra Palace, major arenas/theatres, ExCeL, marathons, major parades and festival/open-site events. Verify current tenants, capacities by configuration, non-football events, local ticketing, and how to avoid duplicate ground/room listings.
+Enumerate every active fixed public venue with at least one room or setup around 1,000+; prioritize all 5,000+ setups. Check the entire boundary rather than stopping at famous professional venues. Include major university, minor-league, women's, independent, motorsport, fair, race, concert and theatre venues when they meet the threshold. Search for changing home venues, closures, temporary homes, renamed rooms, shared campuses and upcoming openings through 2028. Starting leads (unverified; confirm current official names, activity, location, tenants, size and scope): Estadio Banorte (formerly Estadio Azteca), Estadio Olímpico Universitario, Estadio Ciudad de los Deportes, Arena CDMX, Palacio de los Deportes, Estadio GNP Seguros / Autódromo Hermanos Rodríguez grounds, Auditorio Nacional, Estadio Alfredo Harp Helú, Liga MX and LMB grounds, university venues, major concert rooms, Mexico City Grand Prix, marathons and major festivals/open sites. Search in Spanish and English; keep official Spanish names and record sponsor/rename changes with effective dates. Verify local ticketing and avoid duplicate ground/room listings.
 
 Also list major event-specific crowds at festivals, fairs, races, parades, conventions, open grounds and stadium districts. These are event records, not fixed-capacity rooms. Separate them from buildings. Distinguish daily attendance, multi-day totals, ticket scans and peak simultaneous crowds; do not convert one measure into another without evidence.
 
@@ -29,7 +29,7 @@ Do not combine alternative setups, count movable standing layouts as seated capa
 For each major event without a meaningful fixed-room capacity: event name, organizer, exact date(s), map point/footprint, daily and peak-concurrent counts separately if available, count type (announced/reported/estimated), public schedule source, status, and source/method. Give unknown rather than inventing size. Explain overlap/deduplication with fixed rooms on the same grounds.
 
 ## Evidence rules
-Prefer venue, team, league, government, university, organizer and planning sources. Link each figure to the supporting page and date it. Reconcile small differences by stating what is being measured; preserve conflicts that change classification. If a page cannot be fetched normally, flag it and continue without bypassing access. Treat Ticketmaster/feed matches as verified only when exact room identity is supported; proximity alone may be ambiguous. For international markets, state local naming, time zone, event-calendar, and data-rights issues as factual coverage findings.
+Prefer venue, team, league, government, university, organizer and planning sources. Link each figure to the supporting page and date it. Reconcile small differences by stating what is being measured; preserve conflicts that change classification. If a page cannot be fetched normally, flag it and continue without bypassing access. Treat Ticketmaster/feed matches as verified only when exact room identity is supported; proximity alone may be ambiguous. For this market, search Spanish and English and state local naming, time zone, event-calendar, local ticketing and data-rights issues as factual coverage findings. Verify whether app schedule sources cover Liga MX, LMB and local events; do not assume they do.
 
 ## End with
 1. Recommended boundary and uncertain edge venues.
