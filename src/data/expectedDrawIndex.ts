@@ -46261,6 +46261,930 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2024–2026"
   },
   {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 738,
+    "low": 490,
+    "high": 916,
+    "games": 32,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1207,
+    "low": 1118,
+    "high": 1474,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 604,
+    "low": 404,
+    "high": 782,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 453,
+    "low": 400,
+    "high": 527,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 619,
+    "low": 440,
+    "high": 799,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 711,
+    "low": 540,
+    "high": 719,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 792,
+    "low": 719,
+    "high": 956,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 793,
+    "low": 665,
+    "high": 950,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 743,
+    "low": 730,
+    "high": 831,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 288,
+    "low": 186,
+    "high": 381,
+    "games": 23,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 300,
+    "low": 232,
+    "high": 389,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 308,
+    "low": 205,
+    "high": 389,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 374,
+    "low": 325,
+    "high": 398,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 286,
+    "low": 179,
+    "high": 354,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 182,
+    "low": 158,
+    "high": 317,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "venueId": "lakefront-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 327,
+    "low": 260,
+    "high": 370,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 16787,
+    "low": 16287,
+    "high": 17467,
+    "games": 118,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 16331,
+    "low": 15732,
+    "high": 17347,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 16488,
+    "low": 16022,
+    "high": 17308,
+    "games": 67,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 16253,
+    "low": 16063,
+    "high": 16457,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 16767,
+    "low": 16633,
+    "high": 17429,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17175,
+    "low": 16563,
+    "high": 17448,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 16427,
+    "low": 16199,
+    "high": 17090,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 16009,
+    "low": 15789,
+    "high": 16587,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 16487,
+    "low": 15918,
+    "high": 17172,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 17318,
+    "low": 16685,
+    "high": 18274,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 17814,
+    "low": 16721,
+    "high": 18403,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 18133,
+    "low": 18016,
+    "high": 18499,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 16479,
+    "low": 15922,
+    "high": 17141,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 17028,
+    "low": 16836,
+    "high": 17178,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 16987,
+    "low": 16430,
+    "high": 17829,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 17725,
+    "low": 17356,
+    "high": 17829,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17817,
+    "low": 16812,
+    "high": 18488,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 16805,
+    "low": 16500,
+    "high": 17278,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17455,
+    "low": 16713,
+    "high": 17711,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 17097,
+    "low": 16743,
+    "high": 17449,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 17661,
+    "low": 17328,
+    "high": 17979,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 16302,
+    "low": 15904,
+    "high": 17338,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "venueId": "caesars-superdome",
+    "dayClass": "all",
+    "month": null,
+    "count": 70009,
+    "low": 70006,
+    "high": 70040,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "venueId": "caesars-superdome",
+    "dayClass": "opener",
+    "month": null,
+    "count": 70007,
+    "low": 70007,
+    "high": 70016,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "venueId": "caesars-superdome",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 70038,
+    "low": 70028,
+    "high": 70053,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "venueId": "caesars-superdome",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 70009,
+    "low": 70006,
+    "high": 70041,
+    "games": 20,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "venueId": "caesars-superdome",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 70038,
+    "low": 70008,
+    "high": 70041,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "venueId": "caesars-superdome",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 70006,
+    "low": 70005,
+    "high": 70006,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "venueId": "caesars-superdome",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 70020,
+    "low": 70005,
+    "high": 70039,
+    "games": 8,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-football",
+    "venueId": "yulman-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 24504,
+    "low": 21149,
+    "high": 28802,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-football",
+    "venueId": "yulman-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 22103,
+    "low": 21123,
+    "high": 24538,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-football",
+    "venueId": "yulman-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 25021,
+    "low": 21514,
+    "high": 30000,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-football",
+    "venueId": "yulman-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 23938,
+    "low": 21298,
+    "high": 28759,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-football",
+    "venueId": "yulman-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 22897,
+    "low": 21462,
+    "high": 26449,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-football",
+    "venueId": "yulman-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 25021,
+    "low": 22245,
+    "high": 30000,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "all",
+    "month": null,
+    "count": 1281,
+    "low": 1208,
+    "high": 1597,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1467,
+    "low": 1321,
+    "high": 1578,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1262,
+    "low": 1221,
+    "high": 1472,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1610,
+    "low": 1345,
+    "high": 1956,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1432,
+    "low": 1276,
+    "high": 1465,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1202,
+    "low": 1185,
+    "high": 1215,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1254,
+    "low": 1030,
+    "high": 1255,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1293,
+    "low": 1168,
+    "high": 1645,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 1293,
+    "low": 1231,
+    "high": 1447,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 1103,
+    "low": 989,
+    "high": 1374,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1281,
+    "low": 1151,
+    "high": 1344,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1281,
+    "low": 1281,
+    "high": 1678,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 1243,
+    "low": 1073,
+    "high": 1325,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1589,
+    "low": 1251,
+    "high": 1895,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 1307,
+    "low": 1189,
+    "high": 2464,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 1605,
+    "low": 1232,
+    "high": 1950,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "all",
+    "month": null,
+    "count": 708,
+    "low": 638,
+    "high": 801,
+    "games": 29,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 751,
+    "low": 648,
+    "high": 866,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 614,
+    "low": 585,
+    "high": 716,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 731,
+    "low": 685,
+    "high": 741,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 879,
+    "low": 866,
+    "high": 2250,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 708,
+    "low": 677,
+    "high": 729,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 704,
+    "low": 677,
+    "high": 729,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 720,
+    "low": 712,
+    "high": 750,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 670,
+    "low": 648,
+    "high": 685,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "venueId": "devlin-fieldhouse",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 664,
+    "low": 632,
+    "high": 690,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
     "metroId": "minneapolis",
     "teamId": "wild",
     "venueId": "grand-casino-arena",
@@ -46585,6 +47509,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 0.953,
     "games": 4
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "season": 2026,
+    "level": 1,
+    "games": 3
   },
   {
     "metroId": "minneapolis",
@@ -67713,6 +68644,538 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "games": 6
   },
   {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "east-texas-a-m",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "hou-christian",
+    "ratio": 1.309,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "incarnate-word",
+    "ratio": 0.864,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "lamar",
+    "ratio": 0.781,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "mcneese",
+    "ratio": 1.138,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "n-western-st",
+    "ratio": 1.055,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "nicholls",
+    "ratio": 1.034,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "se-louisiana",
+    "ratio": 1.222,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "sf-austin",
+    "ratio": 0.786,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "texas-a-m-cc",
+    "ratio": 0.893,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-mbb",
+    "opponent": "ut-rio-grande",
+    "ratio": 0.825,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "east-texas-a-m",
+    "ratio": 0.932,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "hou-christian",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "incarnate-word",
+    "ratio": 0.687,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "mcneese",
+    "ratio": 0.98,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "n-western-st",
+    "ratio": 0.955,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "nicholls",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "se-louisiana",
+    "ratio": 0.975,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "sf-austin",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "texas-a-m-cc",
+    "ratio": 1.014,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "lsuno-wbb",
+    "opponent": "ut-rio-grande",
+    "ratio": 0.941,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "76ers",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "bucks",
+    "ratio": 0.973,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "bulls",
+    "ratio": 1.019,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "cavaliers",
+    "ratio": 0.987,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "celtics",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "clippers",
+    "ratio": 0.981,
+    "games": 6
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "grizzlies",
+    "ratio": 1.014,
+    "games": 6
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "hawks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "heat",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "hornets",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "jazz",
+    "ratio": 0.983,
+    "games": 5
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "kings",
+    "ratio": 0.995,
+    "games": 6
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "knicks",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "lakers",
+    "ratio": 1.058,
+    "games": 5
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "magic",
+    "ratio": 0.976,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "mavericks",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "nets",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "nuggets",
+    "ratio": 1.012,
+    "games": 5
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "pacers",
+    "ratio": 0.981,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "pistons",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "raptors",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "rockets",
+    "ratio": 1.003,
+    "games": 6
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "spurs",
+    "ratio": 1.003,
+    "games": 6
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "suns",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "thunder",
+    "ratio": 0.959,
+    "games": 5
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "timberwolves",
+    "ratio": 0.941,
+    "games": 5
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "trail-blazers",
+    "ratio": 0.954,
+    "games": 6
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "warriors",
+    "ratio": 1.024,
+    "games": 5
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "opponent": "wizards",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "opponent": "buccaneers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "opponent": "falcons",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "opponent": "giants",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "opponent": "panthers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "saints",
+    "opponent": "raiders",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-football",
+    "opponent": "north-texas",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-football",
+    "opponent": "south-alabama",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "charlotte",
+    "ratio": 1.073,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "dillard",
+    "ratio": 0.94,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "fau",
+    "ratio": 0.967,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "lsu-n-orleans",
+    "ratio": 1.125,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "memphis",
+    "ratio": 1.229,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "nicholls",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "north-texas",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "rice",
+    "ratio": 1.043,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "south-florida",
+    "ratio": 0.94,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "temple",
+    "ratio": 0.959,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "tulsa",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "uab",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-mbb",
+    "opponent": "wichita-st",
+    "ratio": 0.898,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "opponent": "memphis",
+    "ratio": 1.025,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "opponent": "mercer",
+    "ratio": 0.983,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "opponent": "north-texas",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "opponent": "temple",
+    "ratio": 1.011,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "opponent": "uab",
+    "ratio": 0.971,
+    "games": 2
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "opponent": "wichita-st",
+    "ratio": 1.034,
+    "games": 2
+  },
+  {
     "metroId": "minneapolis",
     "teamId": "wild",
     "opponent": "utah-hc",
@@ -70592,6 +72055,42 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "games": 9,
     "seasons": "2023, 2025, 2026",
     "basis": "team"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "band": "first",
+    "occupancy": 1.003,
+    "low": 1,
+    "high": 1.063,
+    "games": 78,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.04,
+    "games": 40,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "venueId": "smoothie-king-center",
+    "band": "final",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.058,
+    "games": 22,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
   },
   {
     "metroId": "minneapolis",

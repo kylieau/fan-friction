@@ -370,4 +370,11 @@ export const VENUE_ACCESS: VenueAccessRow[] = [
   { venueId: 'maturi-pavilion', reliefM: 11, streets250: 9 },
   { venueId: 'roy-wilkins-auditorium', reliefM: 39, streets250: 14 },
   { venueId: 'anderson-arena', reliefM: 51, streets250: 8 },
+  { venueId: 'caesars-superdome', reliefM: 17, streets250: 7 },
+  { venueId: 'yulman-stadium', reliefM: 4, streets250: 11 },
+  { venueId: 'tad-gormley-stadium', reliefM: 5, streets250: 9 },
+  { venueId: 'smoothie-king-center', reliefM: 28, streets250: 6 },
+  { venueId: 'fair-grounds-race-course', reliefM: 3, streets250: 5 },
+  { venueId: 'lakefront-arena', reliefM: 2, streets250: 1 },
+  { venueId: 'turchin-stadium', reliefM: 4, streets250: 10 },
 ];

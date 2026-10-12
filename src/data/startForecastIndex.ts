@@ -33683,6 +33683,77 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "new-orleans",
+    "eventId": "2026-10-16-espn-pelicans-401906509",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:14:53.854Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2.1,
+      "friction": "Low",
+      "why": "Tulane vs. Memphis 2.1 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "new-orleans",
+    "eventId": "2026-10-16-espn-tulane-football-401862801",
+    "date": "2026-10-16",
+    "start": "18:30",
+    "capturedAt": "2026-10-12T08:14:53.854Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2.1,
+      "friction": "Low",
+      "why": "87° feels-like at a 6:30 pm start, no roof."
+    },
+    "draw": {
+      "count": 24504,
+      "low": 21149,
+      "high": 28802
+    }
+  },
+  {
+    "metroId": "new-orleans",
+    "eventId": "2026-10-21-espn-pelicans-401909839",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:14:53.854Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16021,
+      "low": 15433,
+      "high": 17017
+    }
+  },
+  {
+    "metroId": "new-orleans",
+    "eventId": "2026-10-24-espn-tulane-football-401862811",
+    "date": "2026-10-24",
+    "start": null,
+    "capturedAt": "2026-10-12T08:14:53.854Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3,
+      "friction": "Low",
+      "why": "89° feels-like, no roof."
+    },
+    "draw": {
+      "count": 22897,
+      "low": 21462,
+      "high": 26449
+    }
+  },
+  {
     "metroId": "sacramento",
     "eventId": "2026-10-25-espn-sacramento-kings-401909867",
     "date": "2026-10-25",
