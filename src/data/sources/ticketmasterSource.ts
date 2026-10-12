@@ -114,6 +114,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'hughes-stadium', 'all-american-speedway', 'dan-russell-rodeo-arena', 'sac-state-nest',
   // Reliant Stadium also has the Texans on ESPN; a same-day feed game still wins. Rodeo and bowl listings are not NFL games.
   'reliant-stadium', 'reliant-arena', 'sam-houston-race-park',
+  // Minneapolis rooms with no league schedule feed: Aurora, MNUFC2, Gophers volleyball, women's hockey.
+  'nsc-stadium', 'tco-stadium', 'ridder-arena', 'maturi-pavilion', 'anderson-arena',
   'valley-fields', 'wilson-ice-arena', 'pettit-national-ice-center', 'buuck-field-house',
   'ozaukee-ice-center', 'schneider-stadium', 'time-of-grace-center', 'raabe-stadium',
   'dickies-arena', 'will-rogers-coliseum', 'cutx-event-center', 'grand-prairie-stadium', 'mansfield-stadium', 'cotton-bowl', 'toyota-stadium', 'comerica-center', 'texas-motor-speedway',

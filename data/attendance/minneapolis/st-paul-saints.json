@@ -1,0 +1,6866 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "teamId": "st-paul-saints",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 5051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 3115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-14",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4170,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 3026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": "14:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-17",
+      "start": "14:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 3168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "18:37",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 3817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "13:07",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 3049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "18:37",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 4015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "18:37",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 4399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "12:30",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 4399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "15:50",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 5974,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-03",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 4846,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-04",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 4693,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-05",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 4661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-06",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5602,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-07",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-08",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 4751,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "11:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 7392,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-25",
+      "start": null,
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4170,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 6284,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-27",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 7064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 7056,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "17:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 8169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-06-07",
+      "start": "19:07",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 5072,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-06-08",
+      "start": "19:07",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 5513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-06-09",
+      "start": "19:07",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 5626,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "19:07",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 9061,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "19:07",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 8364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": "14:07",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 8325,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "13:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7933,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-06-30",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-01",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": "18:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 8475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-03",
+      "start": "18:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 9110,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "17:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "19:52",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 8223,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-14",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-15",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-16",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 8323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-17",
+      "start": "14:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 8401,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7719,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "13:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 8555,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-28",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 8476,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 9385,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 9224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 8166,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "13:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 8083,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 10077,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7682,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 8613,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "14:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 8647,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-16",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 6722,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-17",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 5627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-18",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 7038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-19",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 8305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": null,
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 7038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-21",
+      "start": "14:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 8347,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 5377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 5078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 5047,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": "17:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-06",
+      "start": "16:00",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 8401,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 4459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-14",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 4215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-15",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 5448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 8572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 7189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "12:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 7008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-26",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 5845,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-27",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 5221,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2022,
+      "date": "2022-09-28",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 4904,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-04",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-05",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-06",
+      "start": "15:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 3022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 3299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": null,
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 3503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-18",
+      "start": "18:37",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 3629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-19",
+      "start": "18:37",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 3011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-20",
+      "start": "18:37",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 3577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "18:37",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 3437,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "14:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 4252,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": "14:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 4048,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "11:07",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 4213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "18:37",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 4018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "18:37",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 4909,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "18:37",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 4875,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": null,
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 6037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "12:07",
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 4875,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": null,
+      "opponent": "Sounds",
+      "venueId": "chs-field",
+      "attendance": 6037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-11",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4459,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "14:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 5134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "14:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "11:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7436,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 4222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7218,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "17:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 8640,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7041,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": null,
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7073,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 9285,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7696,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 8513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "13:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 8355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "19:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 8507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": "19:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 7881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "18:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 8715,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "14:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 7475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-03",
+      "start": "18:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 9028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "19:07",
+      "opponent": "Bulls",
+      "venueId": "chs-field",
+      "attendance": 8643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "19:07",
+      "opponent": "Bulls",
+      "venueId": "chs-field",
+      "attendance": 8652,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": "14:07",
+      "opponent": "Bulls",
+      "venueId": "chs-field",
+      "attendance": 8427,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "13:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-27",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 8540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 9364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "14:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 8212,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 7638,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "13:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 8368,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 8456,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 8328,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 8215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "14:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 7244,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 7262,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 8783,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-17",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 7002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 8035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 6188,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "14:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 7833,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 6530,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-30",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 5814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 6066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 6089,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 6605,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "17:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 6582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "18:37",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 6741,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "18:37",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 5554,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-09-21",
+      "start": "18:37",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 6547,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "18:37",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7517,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "12:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 6003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-03-30",
+      "start": "17:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 4052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-03-31",
+      "start": "14:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 3019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-09",
+      "start": "16:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 2909,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-10",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 3145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-11",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 3028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 6843,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "18:37",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 3038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "18:37",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 3497,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-25",
+      "start": "18:37",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 4133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "18:37",
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 4334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": null,
+      "opponent": "Red Wings",
+      "venueId": "chs-field",
+      "attendance": 4334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "11:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 4636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "18:37",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 4478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-02",
+      "start": "18:37",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 4432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "18:37",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 5132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "14:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 5040,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "14:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 5614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "11:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 4015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-16",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "13:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6299,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "14:54",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7310,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "14:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "19:07",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 6325,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "19:07",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 5278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": null,
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 6325,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "19:07",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 9081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "18:07",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 9204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "14:07",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 7360,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 6084,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "13:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-20",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 6199,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-21",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7445,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-22",
+      "start": "18:37",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7626,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-06-23",
+      "start": "14:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 8306,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-02",
+      "start": "19:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 6012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-03",
+      "start": "18:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 9189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "18:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 8295,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-05",
+      "start": "19:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 8168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-06",
+      "start": "18:37",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 7020,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-07",
+      "start": "14:07",
+      "opponent": "Stripers",
+      "venueId": "chs-field",
+      "attendance": 6504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 8054,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "13:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 8552,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-25",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 8527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 8606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 8090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "14:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7464,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": "13:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 8620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-08",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 8774,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 8306,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "18:37",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "14:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7292,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 6913,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 7967,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-22",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 7086,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 8103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "18:37",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 7027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "14:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 6575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-02",
+      "start": "16:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 6008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-05",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5070,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 6119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7122,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 6074,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-17",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 5405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-18",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 5033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-19",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 5619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-20",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 8636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "17:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 7524,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2024,
+      "date": "2024-09-22",
+      "start": "12:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 5628,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-03-28",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 5314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "It's Opening Weekend! Jacket giveaway to first 1,000 fans, presented by CHS."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-03-29",
+      "start": "14:05",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 3874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-03-30",
+      "start": "14:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 3789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 2889,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "TBD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 2909,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "TBD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-10",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 2962,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "TBD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-11",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 3516,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Friday Night Fireworks powered by Xcel Energy featuring the most informative songs you've ever heard."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-12",
+      "start": "14:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 4452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sesame Street Day with Youth Cookie Monster Bucket Hat Giveaway (500) and special Puppet Meet & Greet"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-13",
+      "start": "14:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 3918,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sensory Friendly Game brought to you by our friends at Fraser"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "11:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4797,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Education Day: The Basics of Baseball"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": null,
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 3874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": null,
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 3789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "14:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 3987,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Did Someone Say Dynasty? Your other home team is back from their astonishingly successful first season to make even more history as the Malmo Oat Milkers presented by Oatly."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "14:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4928,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "75th Anniversary Celebration of Peanuts (be sure to annunciate when saying out loud) featuring Linus Van Pelt themed Saints jersey giveaway (750) presented by Valleyfair."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "18:37",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 4826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Larry Doby Passion for the Community Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "18:37",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 4302,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "50th Anniversary of Hmong Diaspora, presented by Saint Paul College."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "18:37",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 4002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Movers for Moms presented by Two Men & A Truck"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "18:37",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 4866,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "“Bring out your dead.” Friday Night Fireworks Powered by Xcel Energy featuring music from Pink Floyd, Led Zeppelin and our other favorite bands who helped fund “Monty Python and the Holy Grail” brought to you by SPAM."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "14:07",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 6203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Always a Saint featuring Brooks Lee Bobblehead (1,500), presented by CHS."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "14:07",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 4392,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sunday Runday with Seigo Masabuchi running his 96th Marathon ever and his 2nd around the CHS Field concourse during the game presented by Cub."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "11:07",
+      "opponent": "Tides",
+      "venueId": "chs-field",
+      "attendance": 5345,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "18:37",
+      "opponent": "Tides",
+      "venueId": "chs-field",
+      "attendance": 6258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-22",
+      "start": null,
+      "opponent": "Tides",
+      "venueId": "chs-field",
+      "attendance": 5345,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "18:37",
+      "opponent": "Tides",
+      "venueId": "chs-field",
+      "attendance": 6004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Copa Celebracion Numero Uno with post-game Friday Night Fireworks Powered by Xcel Energy featuring the music of our favorite Latin musicians."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": null,
+      "opponent": "Tides",
+      "venueId": "chs-field",
+      "attendance": 6258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "17:07",
+      "opponent": "Tides",
+      "venueId": "chs-field",
+      "attendance": 8386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Memorial Day with Super Fireworks and post-game monster food truck rally, presented by Blaze Credit Union!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 4062,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Ick Night 2.0 bought to you by Minneapolis College."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 5923,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "10 Years of CHS Field celebration, presented by CHS."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 4852,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Strummin our 6-Strings on Margaritaville Night delivered to you by Custom One."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "19:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 8006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "We’ve been doing this theme night so long, our puns almost seem forced at this point. Star Wars Night with post-game Friday Night Fireworks Powered by Xcel Energy."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": "18:37",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 7210,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Tonight’s game will last 9 ¾ innings as we all enter the HOGwarts world of Harry Potter."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "14:07",
+      "opponent": "RailRiders",
+      "venueId": "chs-field",
+      "attendance": 6705,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Disability Hub Day MN at the Park presented by Disability Hub MN"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 5006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "All In Night brought to you by Innovative Office Solutions."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 5510,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Is that BAT BOY from the 90’s Tabloid we used to see in the Cub checkout lane? Or just one of the Power Trip Morning Show’s hosts gracefully losing a bet?"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 5615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Juneteenth Celebration presented by Hamline University"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-20",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7063,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Starry Night. Partnering with The Pediatric Brain Tumor Foundation on a night of impact, shine and stars. Plus, post-game Friday Night Fireworks powered by Xcel Energy."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-21",
+      "start": "18:37",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 5818,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Make Music Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-22",
+      "start": "14:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 6494,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Peppa Pig Meet & Greet, presented by Metro Transit."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 5008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Be sure to ‘like and subscribe’ as we play the part of Influencer tonight."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "13:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 8176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 5292,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 8286,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "1) Check-in. 2) Make a donation. 3) Commit no crime in Saint Paul. Follow those rules and instantly become a notorious Crooks Haven Ghostly Gangster and be invited to hangout in the Wabasha Street Caves. Plus post-game Friday Night Fireworks Powered by Xcel Energy."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": null,
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 8176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "14:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 6521,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Theme Days|Sponsorship",
+          "name": "Help us name our second half of the season ball pig presented by Koppy Motors,"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 4942,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Police and Fire Night presented by Blaze Credit Union!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5782,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "At CHS Field, we have had a Bigfoot, UFO, and Tupac sighting to date. What else might we see? We'll find out on this Conspiracy Theory Night presented by Holman's Table."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 5757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Traaaaaaaaaaaaaaaaaaain. Celebrating 200 years with the modern railway masterpiece."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 6667,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fluxing for 40 years, we're generating 1.21 gigawatts to go back in time on this Friday Night Fireworks powered by Xcel Energy."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7903,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Balls, Bases and Barks. It's Dog Day #2"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversión #2"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 8113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Minnesota Twins Night brought to by CHS with co-branded crossbody bag giveaway (1,500)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "13:07",
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 7809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-24",
+      "start": null,
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 7809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 7105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Because everything sounds better with a little \"more cowbell.\" Celebrating 50 years of the number one sketch comedy show on this Friday Night Fireworks powered by Xcel Energy."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:37",
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 7356,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Securian Financial Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "14:07",
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 6120,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "There’s no crying in baseball, or over Undeniably Dairy spilt milk."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 6658,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pre-game Jimmy Lee Umpire Awards and ode to Chappie Johnson ceremonies in honor of MiLB’s The Nine. Oh, and celebrating National Ice Cream Sandwich Month with Thelma’s Ice Cream Treats."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "13:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 9002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Put in your PTO requests now. It’s the Saints last weekday day game of the season!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-07",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 8059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Trading Card Day presented by Real Sportscards with Saints Entertainment Team card set giveaway (1,500). Plus, the Jimmy Lee Umpire Awards."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7752,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Joey Chestnut and a MN Native take on the Land of 10,000 Calories!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "St. Paul to the Hall with Joe Mauer pre-game ceremony and Joe Mauer bobblehead giveaway (1,500) brought to you by Killebrew Root Beer"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 7787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Artsy Fartsy Day at the Ballpark, presented by People Incorporated! Plus, 2025 Saints Player Team Card set giveaway (1,500) presented by Blaze Credit Union."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "19:07",
+      "opponent": "Express",
+      "venueId": "chs-field",
+      "attendance": 7420,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Stand Up to Cancer presented by Minnesota Oncology."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "19:07",
+      "opponent": "Express",
+      "venueId": "chs-field",
+      "attendance": 6707,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "A Night About Nothing: No soup for you, but we do have an assortment of J. Peterman Catalogs with special guests Larry Thomas (“Soup Nazi”) and John O’Hurley (“J. Peterman”) from Seinfeld."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-21",
+      "start": "19:07",
+      "opponent": "Express",
+      "venueId": "chs-field",
+      "attendance": 9202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "The best of the wurst. It’s German Night!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "19:07",
+      "opponent": "Express",
+      "venueId": "chs-field",
+      "attendance": 9252,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Friday Night Fireworks powered by Xcel Energy featuring the music from some of our favorite Country music stars"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "18:37",
+      "opponent": "Express",
+      "venueId": "chs-field",
+      "attendance": 7201,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Native American Heritage Night presented by Treasure Island Resort and Casino. Plus, a Saints x Prairie Island Indian Community bucket hat giveaway to the first 1,000 fans."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "14:07",
+      "opponent": "Express",
+      "venueId": "chs-field",
+      "attendance": 8496,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Our final Dog Days of the season, presented by Helping Paws!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "18:37",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 5672,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fighting Saints Night brought to you by Undeniably Dairy!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "18:37",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 6422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "La ultima Copa Celebracion presentado por Anoka Technical College and Anoka Ramsey Community College."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-09-11",
+      "start": "18:37",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 6562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Make-A-Wish Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "18:37",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "They deserve way more than an apple. Teacher Appreciation Night brought to you by Comcast plus post-game Friday Night Fireworks Powered by Xcel Energy featuring some classic marching band ensembles."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "17:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 8057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Night brought to you by our friends at Valleyfair with post-game Monster Food Truck Rally and Super Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "14:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 8823,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 82
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Saving the best for last- Bluey and Bingo are joining us for the last home game in 2025, presented by Wanta Thome Law! Plus, Fastest Fan Day presented by T-Mobile."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-03-31",
+      "start": "18:37",
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 4144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Let the Games Begin. Saints Opening Day featuring white jersey hoodie giveaway presented by CHS (1,000)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "13:07",
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 2617,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Fool me once ...the ultimate prank game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-02",
+      "start": "18:37",
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 2701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "14:07",
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 2919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Upcoming memories highlighted in blue, red and yellow. It is the 2026 Saints Magnet Schedule giveaway (2,000)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": null,
+      "opponent": "Red Sox",
+      "venueId": "chs-field",
+      "attendance": 2701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "18:37",
+      "opponent": "IronPigs",
+      "venueId": "chs-field",
+      "attendance": 2765,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Today we are celebrating the book with the hardest language to learn, the dictionary."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "18:37",
+      "opponent": "IronPigs",
+      "venueId": "chs-field",
+      "attendance": 2946,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Sometimes you need a cat to kick. Let us be your cat. It's the complain game."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "18:37",
+      "opponent": "IronPigs",
+      "venueId": "chs-field",
+      "attendance": 3939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Is it still trendy to be a trendsetter, or did that go out of style?"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "18:37",
+      "opponent": "IronPigs",
+      "venueId": "chs-field",
+      "attendance": 3222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "The forecast for this post-game Friday Night Fireworks powered by Xcel Energy will be slightly punny with a good chance of beats and batted balls on the side"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "14:07",
+      "opponent": "IronPigs",
+      "venueId": "chs-field",
+      "attendance": 4334,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Chō tanoshī jikandesu! It is Anime Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Ahoy, anime enthusiasts! Set sail for a night of animated adventures with our Anime Day Ticket Package, featuring an Outfield Reserved Ticket and a not-so-official Anime Pirate Straw Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "14:07",
+      "opponent": "IronPigs",
+      "venueId": "chs-field",
+      "attendance": 3397,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Sensory Friendly Day presented by our good friends at Fraser"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Don't miss out on this exclusive release: St. Paul Saints X Love Your Melon Build Your Own Beanie Experience"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sensory Friendly: We have transformed the Securian Financial Club into a serene and welcoming space, ensuring every fan feels right at home."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "11:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 4342,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "We will give you a hall pass to skip work. It is Education Day, presented by Twin Cities PBS."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 3526,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Coincidence or conspiracy? We will decide."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 4036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "El primer partido de copa de la temporada!"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Special Olympics Night: We are rolling out the red carpet for all our incredible Special Olympics athletes!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "18:37",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 4396,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Unpack your bell bottoms, mood rings and polyester pullovers, this Friday Night Fireworks presented by Xcel Energy will be full of hits from 1976"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 6460,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter Ticket Package"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Laaascivio Glooobulus! Today we Plaaay Baaaall Harry Potter style"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mudonna's Kids Club | Every Kid Deserves a Saints Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "14:07",
+      "opponent": "Cubs",
+      "venueId": "chs-field",
+      "attendance": 4948,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Can you name all 148 crayon colors in the pack? It is Crayola Day with Saints x Crayola branded jersey giveaway (1,000)"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Secure your Saints x Crayola Jersey and Outfield Reserved Ticket package."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:37",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 4826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Larry Doby Passion for the Community Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:37",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 3521,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Mental Health Awareness Night presented by Transformation House"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Custom Mental Health Awareness Hat, Donation, and Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "18:37",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 4427,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": null,
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 4427,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "14:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 5581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Thanks to CHS, we have a top prospect Walker Jenkins bobblehead giveaway (1,500)"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Looking for a unique experience? Book our fireside seats."
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Secure your Walker Jenkins Bobblehead and Outfield Reserved Ticket package."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "14:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 4424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sunday Runday: Witnessing history in the making as we cheer on Seigo Masubuchi running his 100th marathon and third around the CHS Field concourse"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Seigo Marathon T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "11:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6591,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Name a better field trip to be a chaperone: It is Education Day #2, presented by Hamline University."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 4509,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Custom Saints 50 SPF & UV Fishing Hoodie"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Flint Hills Family Festival presented by the Ordway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-21",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 5492,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "The more camo they wear, the less attention they get for it. It is Military Appreciation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 5815,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sun Country wants to remind you that they fly (almost) everywhere, man. Plus, post-game Friday Night Fireworks presented by Xcel Energy"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bring the Pups to the Park!"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Retriever? I hardly know her.. It’s the first Dog Day of 2026 brought to you by Coco’s Heart Dog Rescue"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "17:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 9377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Memorial Day Celebration with post-game Super Fireworks presented by Blaze Credit Union and Monster Food Truck Rally"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 4452,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Train day presented by Union Depot"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mudonna's Kids Club | Every Kid Deserves a Saints Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "13:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 5003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "We willl provide the doctors note. Play hooky and join us at CHS Field for this weekday day game! Plus, it is Make-A-Wish day!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 5113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Custom Margaritaville Trucker Hat"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Tourists (and baseball gloves) covered in oil on Margaritaville Night, presented by Holman's Table."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "19:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 8652,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sith happens. Friday Night Fireworks presented by Xcel Energy with a Star Wars twist"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Celebrate Star Wars Night with the St. Paul Saints and enjoy an enhanced game-day experience at CHS Field."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "18:37",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 6817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Joey Chestnut vs. you the fans. What's on the menu this time? Plus, don't miss out on the Royce Lewis t-shirt giveaway (1000)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "14:07",
+      "opponent": "Indians",
+      "venueId": "chs-field",
+      "attendance": 6550,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Thelmas Ice Cream Treats is anything but 6-7."
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Princess Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "A Love Letter to the city of Saint Paul"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "13:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6943,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": null,
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 6943,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "19:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 7212,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Juneteenth celebration with post-game Friday Night Fireworks powered by Xcel Energy"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "18:37",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 8341,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Hands over Buzzers, It's Game Show Night presented by the Game Show Studio"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "14:07",
+      "opponent": "Storm Chasers",
+      "venueId": "chs-field",
+      "attendance": 9008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Father's Day | Pre-Game on Field Catch"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hey Dad, wanna have a catch? Welcoming Dwier Brown from Field of Dreams on this Fathers Day, presented by Cub."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "19:07",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 6139,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "One name. You decide. Naming The Minnesota Star Tribune second half of the season ball pig."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "19:07",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 5419,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Hosting the Double Play 5K with Twin Cities in Motion. Hate running? They have the bases covered with a 0K too."
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Double Play 5K: in partnership with Twin Cities in Motion"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-02",
+      "start": "19:07",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 5717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Northland Ford Dealers kickoff to A250 weekend with a First Responders Night, plus post-game fireworks."
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Independence Day Celebration: All you can eat buffet!"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "First Responders Ticket Redemption"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "18:07",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 8401,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Because one night is not enough. Celebrating A250 with Northland Ford Dealers with post-game Super Fireworks and Monster Food Truck Rally"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Independence Day Celebration: All you can eat buffet!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "18:07",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 8538,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Time flies when you are having Fun. Happy 250th Birthday America! Northland Ford Dealers is bringing the celebration with post-game Super Fireworks and Monster Food Truck Rally"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Independence Day Celebration: All you can eat buffet!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "14:07",
+      "opponent": "Bisons",
+      "venueId": "chs-field",
+      "attendance": 6002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Co-op Day brought to you by our friends at CHS"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mudonna's Kids Club | Every Kid Deserves a Saints Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 8267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "On this Irish Night we will shamROCK with post-game Friday Night Fireworks presented by Xcel Energy"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "16:37",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 6379,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "A pregame Celebration of Life for beloved Sister Ros begins at 3:30 p.m., ahead of Securian Financial Night."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "14:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 5772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "¡Es nuestra segunda noche de Copa!"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "3M Open x Saints Ticket Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Blaze Credit Union Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "3M Open x Saints Ticket Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "13:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 8415,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Wake up. Work out. Eat Breakfast. Brush teeth. Cracks Beer. Wait, what? Tailgating starts earlier when it is a day game."
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "3M Open x Saints Ticket Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-23",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Step back into Crooks Haven as the Saints become the Ghostly Gangsters, presented by Innovative Office Solutions! Bring a pack of toilet paper for Innovatives drive benefiting Second Harvest Heartland and receive a game ticket."
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "3M Open x Saints Ticket Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "19:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7155,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Run it back. Crooks Haven Ghostly Gangsters with post-game Friday Night Fireworks powered by Xcel Energy featuring the music of the Roaring Twenties. This evening is presented by Custom One."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "18:37",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 7098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bring the Pups to the Park!"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hide your hot dogs, it is another Dog Day!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "14:07",
+      "opponent": "Clippers",
+      "venueId": "chs-field",
+      "attendance": 5376,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Mall of America Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 6946,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Why is Seigo dressed like the Nerd? It is the great Ushertainer Switcheroo presented by Hamline University."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "13:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 9002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Feelin gooood - it is Health and Wellness Day!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 9027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Celebrating the history of black baseball in Minnesota as the St. Paul Gophers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "19:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 7939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Summer is still swinging! Post-game Friday Night Fireworks powered by Xcel Energy! Plus, pre-game Jimmy Lee Umpire Awards ceremony."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "18:37",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 6953,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Backyard Brawl. Melonheads vs. The Fishes, presented by Heppner's Auto Body"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Sports Baseball Hat/Basketball Jersey Package"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "14:07",
+      "opponent": "Bats",
+      "venueId": "chs-field",
+      "attendance": 6853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "All the art you can handle at CHS Field.  It is Artsy Fartsy Day brought to you by People Incorporated. Plus, Team Cardset Giveaway (1500)."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 6883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Stand Up 2 Cancer presented by Minnesota Oncology"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Support Children's Minnesota"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 5733,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "¡Nuestra última noche de Copa!"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mudonna's Kids Club | Every Kid Deserves a Saints Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-27",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 6670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mudonna Brick Building Set"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Native American Heritage Night brought to you by Treasure Island Resort and Casino"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "19:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Let us make bedtime fun during this post-game Friday Night Fireworks powered by Xcel Energy to kids hip hop lullabies."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "18:37",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 6757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Minnesota Twins Day presented by CHS featuring former Twins and Saints managers Ron and Toby Gardenhire double bobblehead giveaway (1,500). Plus, it's our first ever Cat day! Bring your feline friend to the ballpark!"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Cat Day w/ the Saints"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "14:07",
+      "opponent": "Mud Hens",
+      "venueId": "chs-field",
+      "attendance": 7189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bring your Pup to the Park!"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Woof. Ruff. Arff arff. It is the last Dog Day of the season, presented by South Metro Animal Emergency Care."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:37",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 5063,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Teachers do not want apples but they sure do love the Saints! It is teacher Appreciation Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mudonna's Kids Club | Every Kid Deserves a Saints Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "18:37",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 5971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Minnesota Fighting Saints Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Exclusive Fighting Saints Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-09-10",
+      "start": "18:37",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 7067,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Good grief! It is the Great Pumpkin Charlie Brown with Peanuts replica jersey giveaway (1,000)"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Peanuts Jersey | Guaranteed Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "18:37",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 7221,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Friday Night Fireworks powered by Xcel Energy featuring 2001s greatest hits. This evening is presented by Portillo's."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "17:07",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 8711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Night with post-game Super Fireworks and Monster Food Truck Rally. This evening is presented by Metro Transit."
+        },
+        {
+          "type": "Theme Days",
+          "name": "Ring now, title later. Half a championship ring giveaway to the first 200 through the gates."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "st-paul-saints",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:07",
+      "opponent": "Mets",
+      "venueId": "chs-field",
+      "attendance": 6210,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sesame Street Day!"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

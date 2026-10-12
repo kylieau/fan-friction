@@ -39,6 +39,7 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
   // Toronto Marlies and Sceptres. Ids from the league season lists, Oct 12, 2026. Home games at TD Coliseum (Hamilton) or Scotiabank Centre (Halifax) are not mapped.
   { client: 'ahl', htId: '335', metroId: 'toronto', teamId: 'marlies', venueId: 'coca-cola-coliseum' },
   { client: 'pwhl', htId: '6', metroId: 'toronto', teamId: 'sceptres', venueId: 'coca-cola-coliseum' },
+  { client: 'pwhl', htId: '2', metroId: 'minneapolis', teamId: 'minnesota-frost', venueId: 'grand-casino-arena' },
   { client: 'whl', htId: '214', metroId: 'seattle', teamId: 'seattle-thunderbirds', venueId: 'accesso-showare-center' },
   { client: 'whl', htId: '226', metroId: 'seattle', teamId: 'everett-silvertips', venueId: 'angel-of-the-winds-arena' },
   { client: 'ahl', htId: '380', metroId: 'austin', teamId: 'texas-stars', venueId: 'heb-center-cedar-park' },
@@ -79,6 +80,8 @@ const VENUE_BY_NAME: Record<string, string> = {
   'ricoh coliseum': 'coca-cola-coliseum',
   'scotiabank arena': 'scotiabank-arena',
   'aréna scotiabank': 'scotiabank-arena',
+  'grand casino arena': 'grand-casino-arena',
+  'xcel energy center': 'grand-casino-arena',
 };
 
 export function hockeytechMetroIds(): string[] {

@@ -80,7 +80,11 @@ const SCALE = 7.5;
 // Houston is driving sprawl (research, Oct 12, 2026, docs/research/city-builds/houston/houston-city-type-answer.md):
 // recurring Reliant Park events derive to about 0.90 car-involved and the suburbs estimate 0.96–0.97.
 // No venue carShare is set. None of those figures is a measured mode split. Downtown spill is the contrary case for hub.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit' };
+// Minneapolis–St. Paul is a hub (research, Oct 12, 2026, docs/research/city-builds/minneapolis/minneapolis-city-type-answer.md):
+// downtown and campus stadiums share a rail spine. Estimated car shares, including Allianz,
+// Mystic Lake and the State Fair grandstand, stay in the research.
+// No venue override is wired (same rule as Milwaukee and Tampa).
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -245,6 +249,32 @@ const ZONE_NAMES: Record<string, string> = {
   'uoft-varsity-arena': 'University of Toronto',
   'kimel-field-house': 'University of Toronto',
   'uoft-convocation-hall': 'University of Toronto',
+  // Minneapolis–St. Paul clusters that share a rail stop or a downtown ramp (city-type answer §8).
+  'us-bank-stadium': 'Downtown East',
+  'minneapolis-armory': 'Downtown East',
+  'target-field': 'Downtown West',
+  'target-center': 'Downtown West',
+  'first-avenue': 'Downtown West',
+  'fillmore-minneapolis': 'Downtown West',
+  'orpheum-theatre-minneapolis': 'Downtown West',
+  'state-theatre-minneapolis': 'Downtown West',
+  'pantages-theatre-minneapolis': 'Downtown West',
+  'huntington-bank-stadium': 'University of Minnesota',
+  'williams-arena': 'University of Minnesota',
+  'mariucci-arena': 'University of Minnesota',
+  'ridder-arena': 'University of Minnesota',
+  'maturi-pavilion': 'University of Minnesota',
+  'northrop-auditorium': 'University of Minnesota',
+  'grand-casino-arena': 'Downtown Saint Paul',
+  'roy-wilkins-auditorium': 'Downtown Saint Paul',
+  'palace-theatre-saint-paul': 'Downtown Saint Paul',
+  'chs-field': 'Downtown Saint Paul',
+  'allianz-field': 'Midway',
+  'state-fair-grandstand': 'State Fairgrounds',
+  'mystic-lake-amphitheater': 'Shakopee',
+  'tco-stadium': 'Eagan',
+  'nsc-stadium': 'Blaine',
+  'anderson-arena': 'St. Thomas',
 };
 
 export interface Zone {

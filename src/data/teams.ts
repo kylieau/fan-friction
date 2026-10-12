@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|minneapolis|minnesota|st\.? paul|saint paul|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -238,6 +238,29 @@ const LIST: Team[] = [
   // texas-southern-football: Nashville already uses tsu-football for Tennessee State.
   team("texas-southern-football", "Texas Southern Tigers Football", "TSU", "College football", "football", "houston", "TSU", ["Tigers"]),
   team("pvamu-football", "Prairie View A&M Panthers Football", "PVAMU", "College football", "football", "houston", "PVAM", ["Panthers"]),
+  // Minneapolis–St. Paul (Oct 12, 2026; docs/research/city-builds/minneapolis/). Feed ids checked against live schedules.
+  team("vikings", "Minnesota Vikings", "Vikings", "NFL", "football", "minneapolis", "MIN"),
+  team("twins", "Minnesota Twins", "Twins", "MLB", "baseball", "minneapolis", "MIN"),
+  team("timberwolves", "Minnesota Timberwolves", "Timberwolves", "NBA", "basketball", "minneapolis", "MIN"),
+  team("lynx", "Minnesota Lynx", "Lynx", "WNBA", "basketball", "minneapolis", "MIN"),
+  team("wild", "Minnesota Wild", "Wild", "NHL", "hockey", "minneapolis", "MIN"),
+  team("minnesota-united", "Minnesota United FC", "MNUFC", "MLS", "soccer", "minneapolis", "MNU", ["Loons", "Minnesota United"]),
+  team("minnesota-frost", "Minnesota Frost", "Frost", "PWHL", "hockey", "minneapolis", "MIN", ["PWHL Minnesota"]),
+  team("st-paul-saints", "St. Paul Saints", "Saints", "Triple-A baseball", "baseball", "minneapolis", "STP"),
+  team("gophers-football", "Minnesota Golden Gophers Football", "Gophers FB", "College football", "football", "minneapolis", "MINN", ["Gophers", "Minnesota Football"]),
+  team("gophers-mbb", "Minnesota Golden Gophers Men's Basketball", "Gophers MBB", "College men's basketball", "basketball", "minneapolis", "MINN", ["Gophers"]),
+  team("gophers-wbb", "Minnesota Golden Gophers Women's Basketball", "Gophers WBB", "College women's basketball", "basketball", "minneapolis", "MINN", ["Gophers"]),
+  team("gophers-hockey", "Minnesota Golden Gophers Men's Hockey", "Gophers Hockey", "College men's hockey", "hockey", "minneapolis", "MINN", ["Gophers"]),
+  team("gophers-whockey", "Minnesota Golden Gophers Women's Hockey", "Gophers W Hockey", "College women's hockey", "hockey", "minneapolis", "MINN", ["Gophers"]),
+  team("gophers-volleyball", "Minnesota Golden Gophers Women's Volleyball", "Gophers VB", "College volleyball", "volleyball", "minneapolis", "MINN", ["Gophers"]),
+  team("st-thomas-mbb", "St. Thomas Tommies Men's Basketball", "Tommies MBB", "College men's basketball", "basketball", "minneapolis", "UST", ["St. Thomas", "Tommies"]),
+  team("st-thomas-wbb", "St. Thomas Tommies Women's Basketball", "Tommies WBB", "College women's basketball", "basketball", "minneapolis", "UST", ["St. Thomas", "Tommies"]),
+  team("st-thomas-hockey", "St. Thomas Tommies Men's Hockey", "Tommies Hockey", "College men's hockey", "hockey", "minneapolis", "UST", ["St. Thomas", "Tommies"]),
+  team("st-thomas-whockey", "St. Thomas Tommies Women's Hockey", "Tommies W Hockey", "College women's hockey", "hockey", "minneapolis", "UST", ["St. Thomas", "Tommies"]),
+  team("mnufc2", "MNUFC2", "MNUFC2", "MLS Next Pro", "soccer", "minneapolis", "MNU2", ["Minnesota United 2"]),
+  team("minnesota-aurora", "Minnesota Aurora FC", "Aurora", "USL W", "soccer", "minneapolis", "AUR"),
+  team("minnesota-forge", "Minnesota Forge", "Forge", "MLV", "volleyball", "minneapolis", "FOR"),
+  team("lovb-minnesota", "LOVB Minnesota", "LOVB Minnesota", "LOVB Pro", "volleyball", "minneapolis", "LOVB"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

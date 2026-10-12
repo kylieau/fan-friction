@@ -7858,7 +7858,255 @@ export const VENUES: Record<string, Venue> = {
     // Capacity unknown. A note that moving the Sceptres raised capacity by nearly 5,000 is not a count.
     capacity: [],
     roof: 'indoor',
-  },};
+  },
+  // Minneapolis–St. Paul (docs/research/city-builds/minneapolis/minneapolis-venue-table-answer.md, Oct 12, 2026).
+  // Seven-county core. Car-share estimates stay in the research; no venue override is wired.
+  // Coordinates from OpenStreetMap by name; misses are marked approximate. No capacity is filled in where the research had none.
+  'us-bank-stadium': {
+    id: 'us-bank-stadium',
+    metroId: 'minneapolis',
+    names: [{ name: 'U.S. Bank Stadium' }],
+    location: [-93.2593387, 44.9751097],
+    capacity: [
+      { seats: 66200, setup: 'football', fromYear: 2016, note: 'Reported (Wikipedia timeline). Planned 66,200 at opening. Official Super Bowl LII guide said "66,400+" bowl seats, a floor not a count. Concert capacity was not published; the football number is not a concert figure. Source: https://en.wikipedia.org/wiki/U.S._Bank_Stadium' },
+      { seats: 66860, setup: 'football', fromYear: 2017, note: 'Reported (Wikipedia timeline), 2017–18. Source: https://en.wikipedia.org/wiki/U.S._Bank_Stadium' },
+      { seats: 66467, setup: 'football', fromYear: 2019, note: 'Reported (Wikipedia timeline), 2019–21. Source: https://en.wikipedia.org/wiki/U.S._Bank_Stadium' },
+      { seats: 66202, setup: 'football', fromYear: 2022, note: 'Reported current football seating. Expandable toward 73,000 for a special event; that setup is not the regular-season figure. Source: https://en.wikipedia.org/wiki/U.S._Bank_Stadium' },
+    ],
+    roof: 'indoor',
+  },
+  'huntington-bank-stadium': {
+    id: 'huntington-bank-stadium',
+    metroId: 'minneapolis',
+    names: [
+      { name: 'TCF Bank Stadium' },
+      { name: 'Huntington Bank Stadium', from: '2021-06-29' },
+    ],
+    location: [-93.2240767, 44.9765397],
+    capacity: [{ seats: 50805, setup: 'football', note: 'Reported (Wikipedia and Stadium Journey). No official current page was fetched. Vikings played here 2014–15; Minnesota United 2017–18. Source: https://en.wikipedia.org/wiki/Huntington_Bank_Stadium' }],
+    roof: 'open',
+  },
+  'target-field': {
+    id: 'target-field',
+    metroId: 'minneapolis',
+    names: [{ name: 'Target Field' }],
+    location: [-93.2778643, 44.9816845],
+    capacity: [
+      { seats: 39504, setup: 'baseball', fromYear: 2010, note: 'Reported opening figure (BaseballParks.com). Source: https://baseballparks.com/?p=2316' },
+      { seats: 38544, setup: 'baseball', fromYear: 2021, note: 'Official (MLB/Twins press release, June 2021), called approximate. Source: https://www.mlb.com/press-release/press-release-winter-classic-at-target-field-6-28-21' },
+    ],
+    roof: 'open',
+  },
+  'target-center': {
+    id: 'target-center',
+    metroId: 'minneapolis',
+    names: [{ name: 'Target Center' }],
+    location: [-93.2759828, 44.9795917],
+    capacity: [
+      { seats: 18798, setup: 'basketball', note: 'Reported (Wikipedia). A Oct 26, 2025 crowd of 18,978 was above this list. Operator rounds concerts to 20,000. Source: https://en.wikipedia.org/wiki/Target_Center' },
+      { seats: 17500, setup: 'hockey', note: 'Reported (Wikipedia). Source: https://en.wikipedia.org/wiki/Target_Center' },
+      { seats: 20500, setup: 'concert', note: 'Reported (Wikipedia), seated plus floor. Source: https://en.wikipedia.org/wiki/Target_Center' },
+    ],
+    roof: 'indoor',
+  },
+  'grand-casino-arena': {
+    id: 'grand-casino-arena',
+    metroId: 'minneapolis',
+    names: [
+      { name: 'Xcel Energy Center' },
+      { name: 'Grand Casino Arena', from: '2025-09-03' },
+    ],
+    location: [-93.1010971, 44.9447277],
+    capacity: [
+      { seats: 18064, setup: 'hockey', fromYear: 2000, note: 'Reported (Wikipedia), 2000–2012. Source: https://en.wikipedia.org/wiki/Grand_Casino_Arena' },
+      { seats: 17954, setup: 'hockey', fromYear: 2012, note: 'Reported (Wikipedia), 2012–present. Source: https://en.wikipedia.org/wiki/Grand_Casino_Arena' },
+      { seats: 12999, setup: 'concert', note: 'Reported end-stage, seated plus floor. Mutually exclusive with the centre-stage figure; the app uses the last concert row. Source: https://en.wikipedia.org/wiki/Grand_Casino_Arena' },
+      { seats: 20554, setup: 'concert', note: 'Reported centre-stage, seated plus floor. Operator says configurations exceed 20,000. Source: https://en.wikipedia.org/wiki/Grand_Casino_Arena' },
+    ],
+    roof: 'indoor',
+  },
+  'allianz-field': {
+    id: 'allianz-field',
+    metroId: 'minneapolis',
+    names: [{ name: 'Allianz Field' }],
+    location: [-93.1646871, 44.953139],
+    capacity: [{ seats: 19400, setup: 'soccer', note: 'Official (Minnesota United), total including a safe-standing section (2,920 or 2,800 depending on the source; not extra seats). A corner expansion to about 24,474 is a proposal only. Source: https://www.mnufc.com/news/mnufc-allianz-field' }],
+    roof: 'open',
+  },
+  'mystic-lake-amphitheater': {
+    id: 'mystic-lake-amphitheater',
+    metroId: 'minneapolis',
+    names: [{ name: 'Mystic Lake Amphitheater' }],
+    location: [-93.4729075, 44.7912765],
+    capacity: [{ seats: 19000, setup: 'concert', note: 'Official (SMSC / Live Nation). Covered seats plus lawn; the split was not published. Opened June 20, 2026. Source: https://shakopeedakota.org/mystic-lake-amphitheater-to-open-summer-2026-in-the-twin-cities/' }],
+    roof: 'covered',
+  },
+  'williams-arena': {
+    id: 'williams-arena',
+    metroId: 'minneapolis',
+    names: [
+      { name: 'The Barn by Blue Cross and Blue Shield of Minnesota' },
+      { name: 'Williams Arena' },
+    ],
+    location: [-93.2282704, 44.9769776],
+    capacity: [{ seats: 14625, setup: 'basketball', fromYear: 1997, note: 'Official (Gopher Athletics). Same building as Maturi Pavilion, which is a separate room. Source: https://gophersports.com/sports/2018/5/21/facilities-williams-arena-html' }],
+    roof: 'indoor',
+  },
+  'state-fair-grandstand': {
+    id: 'state-fair-grandstand',
+    metroId: 'minneapolis',
+    names: [{ name: 'Minnesota State Fair Grandstand' }],
+    // Approximate. OSM resolved "Grandstand Ramp" on the fairgrounds, not a surveyed bowl. The fair itself is not a room.
+    location: [-93.1733394, 44.980628],
+    capacity: [{ seats: 13000, setup: 'concert', note: 'Reported "about 13,000" grandstand seats (Racket, citing a Star Tribune critic). No official figure found. A 2003 remodel temporarily went to 17,000; that is not current. Nested inside State Fair admission. The fair\'s 2023 arrival split is about 0.93 car-involved; that figure is not stored on this room. Source: https://racketmn.com/every-mn-state-fair-grandstand-music-lineup-ever-ranked' }],
+    roof: 'open',
+  },
+  'mariucci-arena': {
+    id: 'mariucci-arena',
+    metroId: 'minneapolis',
+    names: [
+      { name: 'Mariucci Arena' },
+      { name: '3M Arena at Mariucci', from: '2017-07-01' },
+    ],
+    location: [-93.2280099, 44.978039],
+    capacity: [
+      { seats: 9700, setup: 'hockey', fromYear: 1997, note: 'Official (Gopher Athletics history), 1996–97 figure carried forward until the 2023 renovation. Source: https://gophersports.com/sports/2018/5/21/facilities-mariucci-arena-html' },
+      { seats: 10257, setup: 'hockey', fromYear: 2023, note: 'Official (Gopher Athletics) after the fall 2023 renovation. An older official page still says 10,000. Source: https://gophersports.com/sports/2018/5/21/facilities-mariucci-arena-html' },
+    ],
+    roof: 'indoor',
+  },
+  'minneapolis-armory': {
+    id: 'minneapolis-armory',
+    metroId: 'minneapolis',
+    names: [{ name: 'Minneapolis Armory' }, { name: 'The Armory' }],
+    location: [-93.2635039, 44.9752066],
+    capacity: [{ seats: 8400, setup: 'concert', note: 'Reported (Live Nation / The Current). Mostly standing, plus mezzanine seats; the split was not published. Source: https://www.thecurrent.org/feature/2018/01/30/inside-the-armory-minneapoliss-newest-concert-venue-gets-ready-for-nomadic-live-megastar' }],
+    roof: 'indoor',
+  },
+  'chs-field': {
+    id: 'chs-field',
+    metroId: 'minneapolis',
+    names: [{ name: 'CHS Field' }],
+    location: [-93.0852019, 44.9509544],
+    capacity: [{ seats: 7210, setup: 'baseball', note: 'Official (MLB / Twins), stated total of seats plus berm and standing. Published crowds have gone above this. Source: https://www.mlb.com/twins/news/explore-chs-field-home-of-the-st-paul-saints' }],
+    roof: 'open',
+  },
+  'tco-stadium': {
+    id: 'tco-stadium',
+    metroId: 'minneapolis',
+    names: [{ name: 'TCO Stadium' }, { name: 'Twin Cities Orthopedics Performance Center' }],
+    // OSM resolved the Vikings training-facility complex, not a separately named stadium bowl.
+    location: [-93.1154991, 44.8593391],
+    capacity: [{ seats: 5500, setup: 'soccer', note: 'Reported base seating (KARE 11). Wikipedia lists 6,000. A 2023 sellout of 6,987 used temporary seats and is event-specific, not the room. A railing section collapsed after a high-school game on Sept 3, 2026. Source: https://kare11.com/article/news/local/minnesota-aurora-fc-playing-home-games-tco-stadium/89-ae2c80f2-db2a-4abf-aab6-81482a282506' }],
+    roof: 'open',
+  },
+  'maturi-pavilion': {
+    id: 'maturi-pavilion',
+    metroId: 'minneapolis',
+    names: [
+      { name: 'Sports Pavilion' },
+      { name: 'Maturi Pavilion', from: '2017-08-01' },
+    ],
+    // Same building as Williams Arena. OSM has no separate pavilion point, so this is the Williams Arena coordinate.
+    location: [-93.2282704, 44.9769776],
+    capacity: [{ seats: 5700, note: 'Reported volleyball seating (Wikipedia). Conflicts with 5,500 (Special Olympics) and a 2017 "5,000-seat" line. Threshold-sensitive; no official current number in the research. LOVB Minnesota is scheduled here from Jan 2027. Source: https://en.wikipedia.org/wiki/Minnesota_Golden_Gophers_women%27s_volleyball' }],
+    roof: 'indoor',
+  },
+  'roy-wilkins-auditorium': {
+    id: 'roy-wilkins-auditorium',
+    metroId: 'minneapolis',
+    names: [{ name: 'Roy Wilkins Auditorium' }, { name: 'Legendary Roy Wilkins Auditorium' }],
+    location: [-93.0994119, 44.9447618],
+    capacity: [{ seats: 5800, note: 'Reported general seated figure (Pioneer Press via Yahoo). 5,844 also reported (Mpls.St.Paul Magazine). Configuration was not specified, and a concert/standing count was not published. $40M renovation funded May 2026; timeline not found. Source: https://www.yahoo.com/news/articles/bonding-bill-50m-st-paul-190200277.html' }],
+    roof: 'indoor',
+  },
+  'nsc-stadium': {
+    id: 'nsc-stadium',
+    metroId: 'minneapolis',
+    names: [{ name: 'National Sports Center Stadium' }, { name: 'NSC Stadium' }],
+    location: [-93.2259566, 45.1572737],
+    // Wikipedia 5,500 vs FotMob 10,350, and no official NSC figure. Left unknown rather than choosing one.
+    capacity: [],
+    roof: 'open',
+  },
+  'anderson-arena': {
+    id: 'anderson-arena',
+    metroId: 'minneapolis',
+    names: [{ name: 'Lee & Penny Anderson Arena' }, { name: 'Lee and Penny Anderson Arena' }],
+    location: [-93.194434, 44.9396574],
+    capacity: [
+      { seats: 4000, setup: 'hockey', note: 'Reported (The Stadium Business). Opened Oct 24, 2025. Source: https://www.thestadiumbusiness.com/?p=86726' },
+      { seats: 5300, setup: 'basketball', note: 'Reported (The Stadium Business). A planning page said about 5,500. Source: https://www.thestadiumbusiness.com/?p=86726' },
+      { seats: 6000, setup: 'concert', note: 'Secondary only (Stadium Journey). Not confirmed on an official page. Source: https://www.stadiumjourney.com/stadiums/lee-and-penny-anderson-arena-st-thomas-tommies' },
+    ],
+    roof: 'indoor',
+  },
+  'ridder-arena': {
+    id: 'ridder-arena',
+    metroId: 'minneapolis',
+    names: [{ name: 'Ridder Arena' }],
+    location: [-93.2293777, 44.9787438],
+    capacity: [{ seats: 3400, setup: 'hockey', note: 'Official (Gopher Athletics), including club seats and suites. A recorded crowd of 3,539 is above this list. Address sources differ (1815 vs 1901 4th St SE); OSM places it at 1815. Source: https://gophersports.com/sports/2018/5/21/facilities-ridder-arena-html' }],
+    roof: 'indoor',
+  },
+  'northrop-auditorium': {
+    id: 'northrop-auditorium',
+    metroId: 'minneapolis',
+    names: [{ name: 'Northrop Auditorium' }, { name: 'Northrop Memorial Auditorium' }, { name: 'Northrop' }],
+    location: [-93.2353693, 44.9764788],
+    capacity: [{ seats: 2868, setup: 'concert', note: 'Reported (Mpls.St.Paul Magazine). Source: https://mspmag.com/arts-and-culture/concert-venues/' }],
+    roof: 'indoor',
+  },
+  'palace-theatre-saint-paul': {
+    id: 'palace-theatre-saint-paul',
+    metroId: 'minneapolis',
+    names: [{ name: 'Palace Theatre' }],
+    location: [-93.0967302, 44.9471334],
+    capacity: [{ seats: 2800, setup: 'concert', note: 'Reported (MPR / Pollstar): about 2,000 standing floor plus about 800 balcony. Also reported as 2,500. Source: https://www.mprnews.org/story/2016/12/15/palace-theater-open-house' }],
+    roof: 'indoor',
+  },
+  'orpheum-theatre-minneapolis': {
+    id: 'orpheum-theatre-minneapolis',
+    metroId: 'minneapolis',
+    names: [{ name: 'Orpheum Theatre' }],
+    location: [-93.2780964, 44.9766405],
+    capacity: [{ seats: 2579, setup: 'concert', note: 'Reported (Wikipedia). Source: https://en.wikipedia.org/wiki/Orpheum_Theatre_(Minneapolis)' }],
+    roof: 'indoor',
+  },
+  'state-theatre-minneapolis': {
+    id: 'state-theatre-minneapolis',
+    metroId: 'minneapolis',
+    names: [{ name: 'State Theatre' }],
+    location: [-93.2757131, 44.976662],
+    capacity: [{ seats: 2181, setup: 'concert', note: 'Reported (Mpls.St.Paul Magazine). Source: https://mspmag.com/arts-and-culture/concert-venues/' }],
+    roof: 'indoor',
+  },
+  'fillmore-minneapolis': {
+    id: 'fillmore-minneapolis',
+    metroId: 'minneapolis',
+    names: [{ name: 'The Fillmore Minneapolis' }, { name: 'Fillmore Minneapolis' }],
+    location: [-93.2788889, 44.9839395],
+    capacity: [{ seats: 1850, setup: 'concert', note: 'Reported (Pollstar), mostly standing plus box seats. Planned February 2020 opening; the actual opening date was not re-verified. Source: https://news.pollstar.com/2019/08/08/fillmore-minneapolis-1850-capacity-venue-to-open-in-feb-2020/' }],
+    roof: 'indoor',
+  },
+  'first-avenue': {
+    id: 'first-avenue',
+    metroId: 'minneapolis',
+    names: [{ name: 'First Avenue' }, { name: 'First Avenue Main Room' }],
+    location: [-93.2760295, 44.9782606],
+    capacity: [{ seats: 1550, setup: 'concert', note: 'Reported standing capacity (Wikipedia). 7th St Entry (250) is a separate room and is not listed. Source: https://en.wikipedia.org/wiki/First_Avenue_(nightclub)' }],
+    roof: 'indoor',
+  },
+  'pantages-theatre-minneapolis': {
+    id: 'pantages-theatre-minneapolis',
+    metroId: 'minneapolis',
+    names: [{ name: 'Pantages Theatre' }],
+    location: [-93.2754673, 44.9780265],
+    capacity: [{ seats: 1014, setup: 'concert', note: 'Reported (Mpls.St.Paul Magazine). At the about-1,000 pre-list line. Source: https://mspmag.com/arts-and-culture/concert-venues/' }],
+    roof: 'indoor',
+  },
+
+};
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */
 export function venueNameOn(venue: Venue, date: LocalDate): string {
