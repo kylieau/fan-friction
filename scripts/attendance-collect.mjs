@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -23,6 +23,8 @@ const MLB_TEAMS = [
   { teamId: 'phillies', metroId: 'philadelphia', mlbId: 143, venueId: 'citizens-bank-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'rays', metroId: 'tampa', mlbId: 139, venueId: 'tropicana-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'columbus-clippers', metroId: 'columbus', mlbId: 445, sportId: 11, venueId: 'huntington-park', seasons: [2023, 2024, 2025, 2026] },
+  // Regular-season home games only at Chase Field. 2026 had two "home" games in Mexico City (venue 5340).
+  { teamId: 'diamondbacks', metroId: 'phoenix', mlbId: 109, venueId: 'chase-field', mlbVenueId: 15, seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'clearwater-threshers', metroId: 'tampa', mlbId: 566, sportId: 14, venueId: 'baycare-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'tampa-tarpons', metroId: 'tampa', mlbId: 587, sportId: 14, venueId: 'george-m-steinbrenner-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'dunedin-blue-jays', metroId: 'tampa', mlbId: 424, sportId: 14, venueId: 'td-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -102,6 +104,17 @@ const ESPN_TEAMS = [
   { teamId: 'texas-state-football', metroId: 'austin', path: 'football/college-football', espnId: '326', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
   { teamId: 'texas-state-mbb', metroId: 'austin', path: 'basketball/mens-college-basketball', espnId: '326', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'texas-state-wbb', metroId: 'austin', path: 'basketball/womens-college-basketball', espnId: '326', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'arizona-cardinals', metroId: 'phoenix', path: 'football/nfl', espnId: '22', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'suns', metroId: 'phoenix', path: 'basketball/nba', espnId: '21', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'mercury', metroId: 'phoenix', path: 'basketball/wnba', espnId: '11', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'valley-suns', metroId: 'phoenix', path: 'basketball/nba-development', espnId: '129713', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'phoenix-rising', metroId: 'phoenix', path: 'soccer/usa.usl.1', espnId: '17850', seasons: [2024, 2025, 2026], seasontype: 0 },
+  { teamId: 'asu-football', metroId: 'phoenix', path: 'football/college-football', espnId: '9', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'asu-mbb', metroId: 'phoenix', path: 'basketball/mens-college-basketball', espnId: '9', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'asu-wbb', metroId: 'phoenix', path: 'basketball/womens-college-basketball', espnId: '9', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'asu-hockey', metroId: 'phoenix', path: 'hockey/mens-college-hockey', espnId: '9', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'gcu-mbb', metroId: 'phoenix', path: 'basketball/mens-college-basketball', espnId: '2253', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'gcu-wbb', metroId: 'phoenix', path: 'basketball/womens-college-basketball', espnId: '2253', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'bucks', metroId: 'milwaukee', path: 'basketball/nba', espnId: '15', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -402,6 +415,24 @@ const VENUE_BY_NAME = {
   'q2 stadium': 'q2-stadium',
   'strahan arena at the university events center': 'strahan-arena',
   'strahan arena': 'strahan-arena',
+  // Phoenix, as ESPN writes them (Oct 12, 2026).
+  'state farm stadium': 'state-farm-stadium',
+  'mortgage matchup center': 'mortgage-matchup-center',
+  'footprint center': 'mortgage-matchup-center',
+  'phoenix suns arena': 'mortgage-matchup-center',
+  'talking stick resort arena': 'mortgage-matchup-center',
+  'phx arena': 'mortgage-matchup-center',
+  'mountain america stadium': 'mountain-america-stadium',
+  'sun devil stadium': 'mountain-america-stadium',
+  'desert financial arena': 'desert-financial-arena',
+  'wells fargo arena': 'desert-financial-arena',
+  'mullett arena': 'mullett-arena',
+  'global credit union arena': 'global-credit-union-arena',
+  'gcu arena': 'global-credit-union-arena',
+  'desert diamond arena': 'desert-diamond-arena',
+  'gila river arena': 'desert-diamond-arena',
+  'phoenix rising stadium at 38th st/washington': 'phoenix-rising-soccer-stadium',
+  'phoenix rising soccer stadium': 'phoenix-rising-soccer-stadium',
 };
 
 const METRO_VENUE_BY_NAME = {
@@ -468,6 +499,7 @@ async function collectMlb(team) {
         const box = await getJson(`https://statsapi.mlb.com/api/v1/game/${g.gamePk}/boxscore`);
         const att = Number((box.info?.find((row) => row.label === 'Att')?.value ?? '').replace(/[^0-9]/g, ''));
         if (!Number.isFinite(att) || att <= 0) return null;
+        if (team.mlbVenueId && g.venue?.id && g.venue.id !== team.mlbVenueId) return null;
         const { date, time } = localParts(g.gameDate, team.metroId);
         return {
           teamId: team.teamId,

@@ -58,7 +58,9 @@ const SCALE = 7.5;
 // (regional estimate about 0.77), with a real UT campus cluster and lower car shares at ACL and SXSW. sprawl is the
 // alternative; hub and sprawl share today's 0.85 fallback. Every Austin car share in that answer is an estimate,
 // not a measured mode split, so no venue override is wired.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub' };
+// Phoenix: sprawl (research Oct 11, 2026). No measured event mode split; downtown rail inference and
+// suburban structural estimates stay in the research. No venue carShare overrides (Milwaukee/Tampa pattern).
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -124,6 +126,15 @@ const ZONE_NAMES: Record<string, string> = {
   'dkr-texas-memorial-stadium': 'UT Campus',
   'moody-center': 'UT Campus',
   'myers-stadium': 'UT Campus',
+  // Phoenix downtown (Chase, the arena and the theatre share Jefferson Street garages). Westgate and the ASU campus are their own clusters.
+  'chase-field': 'Downtown Phoenix',
+  'mortgage-matchup-center': 'Downtown Phoenix',
+  'arizona-financial-theatre': 'Downtown Phoenix',
+  'state-farm-stadium': 'Westgate',
+  'desert-diamond-arena': 'Westgate',
+  'mountain-america-stadium': 'ASU Tempe',
+  'desert-financial-arena': 'ASU Tempe',
+  'mullett-arena': 'ASU Tempe',
 };
 
 export interface Zone {

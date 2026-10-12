@@ -3820,15 +3820,6 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'open',
   },
-  'mortgage-matchup-center': {
-    id: 'mortgage-matchup-center',
-    metroId: 'phoenix',
-    names: [{ name: 'Mortgage Matchup Center' }],
-    location: [-112.0712, 33.4457],
-    ticketmasterIds: ['KovZpZAE617A', 'KovZ917Ami1'],
-    capacity: [{ seats: 16795, setup: 'basketball', note: 'NCAA figure for the 2026 Women’s Final Four' }],
-    roof: 'indoor',
-  },
   'golden-1-center': {
     id: 'golden-1-center',
     metroId: 'sacramento',
@@ -5391,6 +5382,428 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bobcat Softball Stadium' }],
     location: [-97.9293321, 29.8881256],
     capacity: [{ seats: 1000, note: 'Reported (Visit San Marcos). Right at the 1,000 pre-list line. South-edge room. Source: https://www.visitsanmarcos.com/things-to-do/recreation-and-sports/texas-state-university/' }],
+    roof: 'open',
+  },
+
+  // Phoenix (docs/research/city-builds/phoenix/, Oct 12, 2026). Maricopa County plus Salt River Fields and Firebird.
+  // No carShare overrides: the city-type answer found no measured event mode split. Coordinates are OpenStreetMap
+  // hits by name or street address. Rooms with no selected capacity stay unknown (empty list).
+  'state-farm-stadium': {
+    id: 'state-farm-stadium',
+    metroId: 'phoenix',
+    names: [
+      { name: 'University of Phoenix Stadium' },
+      { name: 'State Farm Stadium', from: '2018-09-01' },
+    ],
+    location: [-112.261709, 33.527039],
+    capacity: [
+      {
+        seats: 63400,
+        setup: 'football',
+        note: 'Official fixed NFL count. Expanded mega-event is "73,000+" official; Wikipedia reports 72,200 expanded and 78,600 standing room. Those are not stored as a precise seat count. Source: https://www.statefarmstadium.com/about',
+        fromYear: 2018,
+      },
+    ],
+    roof: 'covered',
+  },
+  'mountain-america-stadium': {
+    id: 'mountain-america-stadium',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Sun Devil Stadium' },
+      { name: 'Mountain America Stadium, Home of the ASU Sun Devils', from: '2023-08-01' },
+      { name: 'Mountain America Stadium', from: '2023-08-01' },
+    ],
+    location: [-111.932659, 33.426310],
+    capacity: [
+      {
+        seats: 53599,
+        setup: 'football',
+        note: 'Reported, since 2018. Conflicts with 53,559 (StadiumDB) and 56,634 (Stadium Journey). No official concert figure. Source: https://en.wikipedia.org/wiki/Mountain_America_Stadium',
+        fromYear: 2018,
+      },
+    ],
+    roof: 'open',
+  },
+  'chase-field': {
+    id: 'chase-field',
+    metroId: 'phoenix',
+    names: [{ name: 'Chase Field' }],
+    location: [-112.066693, 33.445486],
+    capacity: [
+      {
+        seats: 48633,
+        setup: 'baseball',
+        note: 'Reported. Conflicts with 48,330 (Meet Stadium) and 48,519 (Stadium Journey) in the city-type answer. Lease expires 2027; extension not signed. Source: https://www.thestadiumbusiness.com/2025/09/05/state-approval-sets-up-chase-field-renovations/',
+      },
+    ],
+    roof: 'covered',
+  },
+  'phoenix-raceway': {
+    id: 'phoenix-raceway',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Phoenix International Raceway' },
+      { name: 'ISM Raceway', from: '2017-01-01' },
+      { name: 'Phoenix Raceway', from: '2018-01-01' },
+    ],
+    location: [-112.321285, 33.373632],
+    capacity: [
+      {
+        seats: 42000,
+        setup: 'racing',
+        note: 'Reported Wikipedia infobox grandstand. Not official. Conflicts: 45,000 planned after the 2018 project, ~51,000 on a third-party page, ~67,000 is pre-2018. City-type answer found no official current figure. ISM rename dates were not verified. Source: https://en.wikipedia.org/wiki/ISM_Raceway',
+      },
+    ],
+    roof: 'open',
+  },
+  'talking-stick-resort-amphitheatre': {
+    id: 'talking-stick-resort-amphitheatre',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Ak-Chin Pavilion' },
+      { name: 'Talking Stick Resort Amphitheatre', from: '2023-01-01' },
+    ],
+    location: [-112.232867, 33.471523],
+    capacity: [
+      {
+        seats: 20106,
+        setup: 'concert',
+        note: 'Reported total. About 8,000 covered seats plus lawn; the lawn is standing, not seats. KTAR rounds the total to ~20,000. West Phoenix (83rd Ave), not the Talking Stick resort in Scottsdale. Source: https://en.wikipedia.org/wiki/Talking_Stick_Resort_Amphitheatre',
+      },
+    ],
+    roof: 'covered',
+  },
+  'desert-diamond-arena': {
+    id: 'desert-diamond-arena',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Gila River Arena' },
+      { name: 'Desert Diamond Arena', from: '2022-01-01' },
+    ],
+    location: [-112.260440, 33.532033],
+    capacity: [
+      {
+        seats: 17125,
+        setup: 'hockey',
+        note: 'Reported. Rename month in 2022 not verified. Source: https://en.wikipedia.org/wiki/Desert_Diamond_Arena',
+      },
+      {
+        seats: 18300,
+        setup: 'basketball',
+        note: 'Reported. Source: https://en.wikipedia.org/wiki/Desert_Diamond_Arena',
+      },
+      {
+        seats: 19000,
+        setup: 'concert',
+        note: 'Official venue release. Source: https://www.businesswire.com/news/home/20241213997294/en',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'mortgage-matchup-center': {
+    id: 'mortgage-matchup-center',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Talking Stick Resort Arena' },
+      { name: 'Phoenix Suns Arena', from: '2020-01-01' },
+      { name: 'PHX Arena', from: '2020-06-01' },
+      { name: 'Footprint Center', from: '2021-01-01' },
+      { name: 'Mortgage Matchup Center', from: '2025-10-02' },
+    ],
+    location: [-112.071101, 33.446039],
+    // Ids already on the Phoenix starter row. Not re-verified at room level in the Oct 12 venue answer.
+    ticketmasterIds: ['KovZpZAE617A', 'KovZ917Ami1'],
+    capacity: [
+      {
+        seats: 17071,
+        setup: 'basketball',
+        note: 'Reported regular basketball. An unlabeled 18,422 (Stadium Journey) has no configuration and is not used. A pre-existing app stub said 16,795 for the 2026 Women\'s Final Four without a source URL; that figure is not stored. Source: https://en.wikipedia.org/wiki/Mortgage_Matchup_Center',
+      },
+      {
+        seats: 16210,
+        setup: 'hockey',
+        note: 'Reported. Source: https://en.wikipedia.org/wiki/Mortgage_Matchup_Center',
+      },
+      {
+        seats: 12565,
+        setup: 'concert',
+        note: 'Reported end-stage. In-the-round is 17,716; theater setup is 4,379 and is the same room, not a separate venue. PHX Arena was also an interim 2025 name before Oct 2; that window is not a separate display date. Source: https://en.wikipedia.org/wiki/Mortgage_Matchup_Center',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'sloan-park': {
+    id: 'sloan-park',
+    metroId: 'phoenix',
+    names: [{ name: 'Sloan Park' }],
+    location: [-111.881637, 33.431390],
+    capacity: [
+      {
+        seats: 15000,
+        setup: 'baseball',
+        note: 'Official, including berm. Cubs spring and Mesa Solar Sox. Source: https://www.mlb.com/news/explore-arizona-fall-league-stadiums',
+      },
+    ],
+    roof: 'open',
+  },
+  'arizona-veterans-memorial-coliseum': {
+    id: 'arizona-veterans-memorial-coliseum',
+    metroId: 'phoenix',
+    names: [{ name: 'Arizona Veterans Memorial Coliseum' }],
+    // OSM stadium point at 1826 W McDowell, the fairgrounds address. A reseller page says 1326 W McDowell; not used.
+    location: [-112.096678, 33.469625],
+    // Reseller listing ~14,870 only. The venue answer says mark capacity unverified until an official figure exists.
+    capacity: [],
+    roof: 'indoor',
+  },
+  'desert-financial-arena': {
+    id: 'desert-financial-arena',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Wells Fargo Arena' },
+      { name: 'Desert Financial Arena', from: '2019-01-01' },
+    ],
+    location: [-111.931010, 33.424508],
+    capacity: [
+      {
+        seats: 14198,
+        setup: 'basketball',
+        note: 'Official current count. Post-renovation capacity is not set (phase 1 from May 2026). Rename date after the 2018 Wells Fargo name was not verified; 2019-01-01 is a placeholder so 2018 still shows the old name. Source: https://news.asu.edu/20251017-sun-devil-community-100m-renovation-energize-fan-experience-desert-financial-arena',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'camelback-ranch': {
+    id: 'camelback-ranch',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Camelback Ranch' },
+      { name: 'Camelback Ranch–Glendale', from: '2016-01-01' },
+    ],
+    // OSM sports-centre point. Branded Glendale; the pin sits in Phoenix city limits. Municipality left unresolved.
+    location: [-112.295002, 33.512312],
+    capacity: [
+      {
+        seats: 13500,
+        setup: 'baseball',
+        note: 'Official MLB.com fall-league page. The MLB spring-training page says 13,000 including 3,000 lawn. Dodgers and White Sox in spring. Source: https://www.mlb.com/news/explore-arizona-fall-league-stadiums',
+      },
+    ],
+    roof: 'open',
+  },
+  'scottsdale-stadium': {
+    id: 'scottsdale-stadium',
+    metroId: 'phoenix',
+    names: [{ name: 'Scottsdale Stadium' }],
+    location: [-111.920205, 33.488608],
+    capacity: [
+      {
+        seats: 12000,
+        setup: 'baseball',
+        note: 'Official. Giants spring and Scottsdale Scorpions. Source: https://www.mlb.com/news/explore-arizona-fall-league-stadiums',
+      },
+    ],
+    roof: 'open',
+  },
+  'salt-river-fields': {
+    id: 'salt-river-fields',
+    metroId: 'phoenix',
+    names: [{ name: 'Salt River Fields at Talking Stick' }],
+    location: [-111.885255, 33.545384],
+    capacity: [
+      {
+        seats: 11000,
+        setup: 'baseball',
+        note: 'Official. 7,000 fixed plus 4,000 lawn. Scottsdale address on Salt River Pima-Maricopa land. Not the west-Phoenix amphitheatre. Source: https://www.mlb.com/news/explore-arizona-fall-league-stadiums',
+      },
+    ],
+    roof: 'open',
+  },
+  'surprise-stadium': {
+    id: 'surprise-stadium',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Billy Parker Field' },
+      { name: 'Surprise Stadium', from: '2003-01-01' },
+    ],
+    location: [-112.378276, 33.628129],
+    capacity: [
+      {
+        seats: 10714,
+        setup: 'baseball',
+        note: 'Official MLB.com. A Florida write-up says 10,500. Rangers and Royals spring. Source: https://www.mlb.com/news/explore-arizona-fall-league-stadiums',
+      },
+    ],
+    roof: 'open',
+  },
+  'hohokam-stadium': {
+    id: 'hohokam-stadium',
+    metroId: 'phoenix',
+    names: [{ name: 'Hohokam Stadium' }],
+    location: [-111.830082, 33.438589],
+    capacity: [
+      {
+        seats: 10500,
+        setup: 'baseball',
+        note: 'Reported current figure. 13,074 is a 2013 number. Athletics spring. Source: https://springtraining.jou.ufl.edu/2025/05/06/spring-training-scorecard-grading-arizonas-cactus-league-venues/',
+      },
+    ],
+    roof: 'open',
+  },
+  'peoria-sports-complex': {
+    id: 'peoria-sports-complex',
+    metroId: 'phoenix',
+    names: [{ name: 'Peoria Sports Complex' }],
+    // OSM sports-centre point for the complex, not a separately named grandstand.
+    location: [-112.232133, 33.630181],
+    capacity: [
+      {
+        seats: 12339,
+        setup: 'baseball',
+        note: 'Official MLB spring-training page. Another official MLB page says 10,075. Both kept in the register; 12,339 is the spring-page total, not a resolved fixed-vs-berm split. Padres and Mariners. Source: https://www.mlb.com/spring-training/ballparks',
+      },
+    ],
+    roof: 'open',
+  },
+  'american-family-fields-of-phoenix': {
+    id: 'american-family-fields-of-phoenix',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Maryvale Baseball Park' },
+      { name: 'American Family Fields of Phoenix', from: '2019-01-01' },
+    ],
+    // OSM sports-centre point. 2019 reopening month not in the research.
+    location: [-112.172128, 33.490742],
+    capacity: [
+      {
+        seats: 10000,
+        setup: 'baseball',
+        note: 'Reported. Wikipedia list says 8,000. Brewers spring. Source: https://springtraining.jou.ufl.edu/2025/05/06/spring-training-scorecard-grading-arizonas-cactus-league-venues/',
+      },
+    ],
+    roof: 'open',
+  },
+  'goodyear-ballpark': {
+    id: 'goodyear-ballpark',
+    metroId: 'phoenix',
+    names: [{ name: 'Goodyear Ballpark' }],
+    location: [-112.390297, 33.428455],
+    capacity: [
+      {
+        seats: 9500,
+        setup: 'baseball',
+        note: 'Reported. Wikipedia infobox 8,000 seats plus 1,500 berm, and the same page text says 9,500. baseballparks.com says 10,311 including berm. Guardians and Reds spring. Source: https://en.wikipedia.org/wiki/Goodyear_Ballpark',
+      },
+    ],
+    roof: 'open',
+  },
+  'tempe-diablo-stadium': {
+    id: 'tempe-diablo-stadium',
+    metroId: 'phoenix',
+    names: [{ name: 'Tempe Diablo Stadium' }],
+    location: [-111.971061, 33.401010],
+    capacity: [
+      {
+        seats: 9558,
+        setup: 'baseball',
+        note: 'Reported. An Arizona Complex League list says 9,785. Angels spring. Source: https://en.wikipedia.org/wiki/Tempe_Diablo_Stadium',
+      },
+    ],
+    roof: 'open',
+  },
+  'phoenix-rising-soccer-stadium': {
+    id: 'phoenix-rising-soccer-stadium',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Phoenix Rising Stadium at 38th St/Washington' },
+      { name: 'Phoenix Rising Soccer Stadium', from: '2023-01-01' },
+    ],
+    location: [-112.001795, 33.445136],
+    capacity: [
+      {
+        seats: 10000,
+        setup: 'soccer',
+        note: 'Reported (Wikipedia and USL). FotMob says 10,437. Temporary stadium on airport land; five-year lease from the 2022 approval plus options. Re-check before 2028. Source: https://en.wikipedia.org/wiki/Phoenix_Rising_Soccer_Stadium',
+      },
+    ],
+    roof: 'open',
+  },
+  'phoenix-municipal-stadium': {
+    id: 'phoenix-municipal-stadium',
+    metroId: 'phoenix',
+    names: [{ name: 'Phoenix Municipal Stadium' }],
+    location: [-111.954221, 33.449272],
+    capacity: [
+      {
+        seats: 7800,
+        setup: 'baseball',
+        note: 'Official City of Phoenix. Wikipedia says 8,775; ASU says more than 7,000. ASU baseball since 2015. Source: https://phoenix.gov/parks/sports/professional-sports',
+      },
+    ],
+    roof: 'open',
+  },
+  'global-credit-union-arena': {
+    id: 'global-credit-union-arena',
+    metroId: 'phoenix',
+    names: [
+      { name: 'GCU Arena' },
+      { name: 'Global Credit Union Arena', from: '2023-12-05' },
+    ],
+    location: [-112.128922, 33.510149],
+    capacity: [
+      {
+        seats: 7000,
+        setup: 'basketball',
+        note: 'Official. GCU men and women. Source: https://www.gcuarena.com/facility-information/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'mullett-arena': {
+    id: 'mullett-arena',
+    metroId: 'phoenix',
+    names: [{ name: 'Mullett Arena' }],
+    location: [-111.928489, 33.426643],
+    capacity: [
+      {
+        seats: 5000,
+        setup: 'hockey',
+        note: 'Reported NCAA hockey configuration. The 4,600 NHL setup was the Coyotes\' temporary home (2022–2024) and is not the current count. At the 5,000 friction line. Source: https://en.wikipedia.org/wiki/Mullett_Arena',
+        fromYear: 2022,
+      },
+    ],
+    roof: 'indoor',
+  },
+  'arizona-financial-theatre': {
+    id: 'arizona-financial-theatre',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Comerica Theatre' },
+      { name: 'Arizona Federal Theatre', from: '2019-12-18' },
+      { name: 'Arizona Financial Theatre', from: '2022-07-11' },
+    ],
+    location: [-112.079626, 33.448930],
+    capacity: [
+      {
+        seats: 5000,
+        setup: 'concert',
+        note: 'Official full house, exactly at the friction line. The room scales smaller; reduced houses are not a separate stored count. Source: https://blog.ticketmaster.com/venue-faq-arizona-federal-theatre-phoenix-az',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'firebird-motorsports-park': {
+    id: 'firebird-motorsports-park',
+    metroId: 'phoenix',
+    names: [
+      { name: 'Wild Horse Pass Motorsports Park' },
+      { name: 'Firebird Motorsports Park', from: '2023-12-19' },
+    ],
+    // OSM recreation-ground under the former name, at the 20000 S Maricopa Rd grounds. Not a surveyed grandstand point.
+    location: [-111.965414, 33.267968],
+    // No capacity in the venue answer. Gila River Indian Community land, Chandler mailing address.
+    capacity: [],
     roof: 'open',
   },
 };

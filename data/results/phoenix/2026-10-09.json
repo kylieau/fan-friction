@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-10-09",
+  "results": [
+    {
+      "eventId": "2026-10-09-espn-asu-hockey-401904433",
+      "metroId": "phoenix",
+      "date": "2026-10-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mullett-arena",
+      "homeTeamId": "asu-hockey",
+      "home": {
+        "name": "Arizona State",
+        "score": 1
+      },
+      "away": {
+        "name": "Holy Cross",
+        "score": 2
+      },
+      "capturedAt": "2026-10-12T08:13:43.364Z"
+    }
+  ]
+}

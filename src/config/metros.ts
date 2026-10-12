@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -115,12 +115,15 @@ export const METROS: Record<string, Metro> = {
     center: [-75.17, 39.95],
     zoom: 10.3,
   },
+  // Covered Oct 12, 2026 (docs/research/city-builds/phoenix/phoenix-venue-table-answer.md): Maricopa County
+  // plus tribal venues with Valley addresses (Salt River Fields, Firebird). Pinal edge festivals stay out.
+  // One frame holds downtown, Tempe and Westgate; Surprise, Peoria, Goodyear and the raceway sit off it.
   phoenix: {
     id: 'phoenix', code: 'PHX',
     name: 'Phoenix',
     timeZone: 'America/Phoenix',
-    center: [-112.0712, 33.4457],
-    zoom: 12,
+    center: [-112.10, 33.48],
+    zoom: 10.2,
   },
   sacramento: {
     id: 'sacramento', code: 'SAC',

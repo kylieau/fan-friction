@@ -1,0 +1,7489 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "teamId": "diamondbacks",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-07",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 35508,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 17297,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "17:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 19504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 19089,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "chase-field",
+      "attendance": 17674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "12:40",
+      "opponent": "Astros",
+      "venueId": "chase-field",
+      "attendance": 12660,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-22",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 20939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-23",
+      "start": "17:10",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 25413,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-24",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 23570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-25",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 17750,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 18063,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "12:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 15138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-06",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 18551,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-07",
+      "start": "17:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 24133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-08",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 19323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-09",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 11571,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 8855,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "12:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 9058,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 21765,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": "17:10",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 25169,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 23309,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-23",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "chase-field",
+      "attendance": 14629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "chase-field",
+      "attendance": 12616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 17057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-27",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 24865,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-28",
+      "start": "16:15",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 30819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-29",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 30482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-30",
+      "start": "17:10",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 20735,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-05-31",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 12686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-01",
+      "start": "12:40",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 12370,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-13",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 13735,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 15081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "12:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 14917,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "chase-field",
+      "attendance": 26351,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-18",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "chase-field",
+      "attendance": 24338,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-19",
+      "start": "13:10",
+      "opponent": "Twins",
+      "venueId": "chase-field",
+      "attendance": 30690,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-24",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "chase-field",
+      "attendance": 22064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-25",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "chase-field",
+      "attendance": 23129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-26",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "chase-field",
+      "attendance": 22529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 19904,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "12:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 20109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "15:10",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 27752,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-05",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 14467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-06",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 13445,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-07",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 11727,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-08",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 15524,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-09",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 21819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-10",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 18126,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 17819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "17:10",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 37802,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 20278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-25",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 16100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 16989,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "12:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 17043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-05",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 17720,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-06",
+      "start": "17:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 21146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-07",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 20644,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-08",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 11275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 12901,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 12714,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "12:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 12725,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-19",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 32183,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "17:10",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 34248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-21",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 25064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-29",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 18594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 16873,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 13690,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 10495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 13488,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "17:10",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 22138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": "13:10",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 20274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-12",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 19393,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 21143,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-14",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 22971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-15",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 17121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 19945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "17:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 29796,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 20480,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-23",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 25949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 81
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-24",
+      "start": "17:10",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 24504,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2022,
+      "date": "2022-09-25",
+      "start": "12:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 25389,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 82
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-06",
+      "start": "19:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 48034,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 30249,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "17:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 26881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 18543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-10",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 12681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 17069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "12:40",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 13136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-20",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 16734,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 21308,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "17:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 28419,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 23655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-24",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "chase-field",
+      "attendance": 9815,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "chase-field",
+      "attendance": 13835,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "12:40",
+      "opponent": "Royals",
+      "venueId": "chase-field",
+      "attendance": 14343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 16384,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "17:10",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 27345,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 17174,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-08",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 9071,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 13608,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "12:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 10482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-11",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 15582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 19266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "17:10",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 25147,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "13:10",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 26267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "chase-field",
+      "attendance": 25467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "16:15",
+      "opponent": "Red Sox",
+      "venueId": "chase-field",
+      "attendance": 29142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "chase-field",
+      "attendance": 26051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-29",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 15304,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 11146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 11844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-01",
+      "start": "12:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 16492,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 27469,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "19:10",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 36529,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 32401,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-12",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 18432,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 20186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 20286,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-15",
+      "start": "12:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 23032,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "chase-field",
+      "attendance": 27203,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "19:10",
+      "opponent": "Guardians",
+      "venueId": "chase-field",
+      "attendance": 25471,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "13:10",
+      "opponent": "Guardians",
+      "venueId": "chase-field",
+      "attendance": 42031,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-27",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "chase-field",
+      "attendance": 23351,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "chase-field",
+      "attendance": 20858,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "12:40",
+      "opponent": "Rays",
+      "venueId": "chase-field",
+      "attendance": 22127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 41670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 18152,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 18514,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 26837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 31801,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 30021,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-24",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 23184,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 23572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "12:40",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 22457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "chase-field",
+      "attendance": 31697,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "17:10",
+      "opponent": "Mariners",
+      "venueId": "chase-field",
+      "attendance": 44472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "13:10",
+      "opponent": "Mariners",
+      "venueId": "chase-field",
+      "attendance": 35295,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 29861,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 27485,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 26210,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "17:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 41351,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 29277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-21",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 21829,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 19003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-24",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 18827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 29500,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "17:10",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 34028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 26574,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "chase-field",
+      "attendance": 18248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "17:10",
+      "opponent": "Orioles",
+      "venueId": "chase-field",
+      "attendance": 34118,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "13:10",
+      "opponent": "Orioles",
+      "venueId": "chase-field",
+      "attendance": 24284,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-04",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 18097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 12994,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "12:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 11044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-15",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 32864,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "17:10",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 35193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-17",
+      "start": "16:10",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 26307,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 26093,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "12:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 16848,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-29",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "chase-field",
+      "attendance": 36133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "17:10",
+      "opponent": "Astros",
+      "venueId": "chase-field",
+      "attendance": 36789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": "12:10",
+      "opponent": "Astros",
+      "venueId": "chase-field",
+      "attendance": 30703,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-10-11",
+      "start": "18:07",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 48175,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Division Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-10-19",
+      "start": "14:07",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 47075,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-10-20",
+      "start": "17:07",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 47806,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "17:07",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 47897,
+      "kind": "announced",
+      "postseason": true,
+      "round": "NL Championship Series",
+      "game": 5,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-10-30",
+      "start": "17:03",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 48517,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-10-31",
+      "start": "17:03",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 48388,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 4,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2023,
+      "date": "2023-11-01",
+      "start": "17:03",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 48511,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 5,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-03-28",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 49011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-03-29",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 29480,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-03-30",
+      "start": "17:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 32133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-03-31",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 21824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-01",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "chase-field",
+      "attendance": 38608,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "chase-field",
+      "attendance": 39863,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "12:40",
+      "opponent": "Yankees",
+      "venueId": "chase-field",
+      "attendance": 35038,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 29247,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": "17:10",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 33640,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 26460,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-15",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 24468,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 26426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "12:40",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 26567,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-29",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 36985,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 28667,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 34088,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 31976,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "17:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 39661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 30968,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-13",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 18017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 20068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "12:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 16826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "chase-field",
+      "attendance": 25122,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "17:10",
+      "opponent": "Tigers",
+      "venueId": "chase-field",
+      "attendance": 35826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "13:10",
+      "opponent": "Tigers",
+      "venueId": "chase-field",
+      "attendance": 26991,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 22642,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "19:10",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 31966,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 25723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-03",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 21551,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 23548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "12:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 24178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "chase-field",
+      "attendance": 20972,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "chase-field",
+      "attendance": 19691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "chase-field",
+      "attendance": 18185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "chase-field",
+      "attendance": 23700,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "19:10",
+      "opponent": "White Sox",
+      "venueId": "chase-field",
+      "attendance": 38494,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "13:10",
+      "opponent": "White Sox",
+      "venueId": "chase-field",
+      "attendance": 37694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "chase-field",
+      "attendance": 21485,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "chase-field",
+      "attendance": 16396,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "12:40",
+      "opponent": "Twins",
+      "venueId": "chase-field",
+      "attendance": 22671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "chase-field",
+      "attendance": 25846,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "chase-field",
+      "attendance": 39843,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:10",
+      "opponent": "Athletics",
+      "venueId": "chase-field",
+      "attendance": 26413,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-08",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 20594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 21652,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 18020,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 27101,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "chase-field",
+      "attendance": 24441,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "19:10",
+      "opponent": "Blue Jays",
+      "venueId": "chase-field",
+      "attendance": 40121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "chase-field",
+      "attendance": 24732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 31255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "17:10",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 35905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "13:10",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 27162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-29",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 18790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 19758,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "12:40",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 18294,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-08",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 25239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 37952,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "17:10",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 46183,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "13:10",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 29071,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-12",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 15525,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 19731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "12:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 16464,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-27",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 22575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-28",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 27059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-29",
+      "start": "12:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 18425,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-30",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 46606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "17:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 50041,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-01",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 46278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-02",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 43747,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 25499,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "12:40",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 20473,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 31033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "17:10",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 44886,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "13:10",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 33708,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-23",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 23359,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-24",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 22355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-25",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 23767,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-27",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 43310,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "17:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 42915,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "12:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 38892,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-03-27",
+      "start": "19:10",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 49070,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Rally Towel courtesy of AZ Complete Health"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-03-28",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 37449,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks presented by SeatGeek"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-03-29",
+      "start": "17:10",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 36407,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-03-30",
+      "start": "13:10",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 39145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Paint at the Park - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-07",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "chase-field",
+      "attendance": 20333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "chase-field",
+      "attendance": 23843,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bark at the Park - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "12:40",
+      "opponent": "Orioles",
+      "venueId": "chase-field",
+      "attendance": 22411,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-11",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 32026,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks presented by SeatGeek"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Autism Awareness Presented by Roman Empire Agency - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Boy Band Tee Ticket Pack - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-12",
+      "start": "17:10",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 34853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Eugenio Suárez Bobble courtesy of Chase"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-13",
+      "start": "13:10",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 30057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "chase-field",
+      "attendance": 21810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Jackie Robinson Day - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "chase-field",
+      "attendance": 16100,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "chase-field",
+      "attendance": 20661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 31023,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks presented by SeatGeek"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Country Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert featuring Scotty Hasting"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "17:10",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 43043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Diamondbacks Replica Jersey courtesy of Casino Arizona & Talking Stick Resort"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Korean Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 33544,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Yoga on the Field - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "A MINECRAFT MOVIE Day - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-05",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 22674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Golf Night - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Teacher Appreciation - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 24353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Nurse Appreciation - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "12:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 25729,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 40319,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Japanese Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 49122,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mexican Heritage Weekend Presented by Coors Light"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert Presented by Wendy's featuring La Original Banda El Limón"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "17:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 47106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 46292,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mother's Day Crossbody Bag"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family Photos on the Field - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 35204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks presented by SeatGeek"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Armed Forces Weekend / Rivalry Weekend"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Weekend - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "D-backs x Common Hype Ticket Pack"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "17:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 35129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Replica Home Jersey // courtesy of Avnet"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Armed Forces Weekend / Rivalry Weekend"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Weekend - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 28888,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Armed Forces Weekend / Rivalry Weekend"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Weekend - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-26",
+      "start": "17:10",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 25697,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Memorial Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Memorial Day Red Poppy Cap"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 20739,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "D-backs First Responders Appreciation - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "12:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 25202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 29435,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks presented by SeatGeek"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Women's Night - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Girl Scout Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "19:10",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 29434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Geraldo Perdomo Bobble courtesy of Chas Roberts"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Chinese Heritage Celebration - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Paint at the Park - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 29664,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Native American Recognition Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-09",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "chase-field",
+      "attendance": 22799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "chase-field",
+      "attendance": 25140,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Filipino Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "12:40",
+      "opponent": "Mariners",
+      "venueId": "chase-field",
+      "attendance": 25969,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 33052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "D-backs Black Excellence Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "16:15",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 37561,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ketel Marte Silver Slugger Cap"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "NAU Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": "13:10",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 42676,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Father's Day Polo Shirt courtesy of Budweiser"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Father's Day Play Catch on the Field - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 26696,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pride Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 28446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Police vs. Fire Softball Game - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "13:10",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 30653,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Hello Kitty Ticket Pack - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Paint at the Park - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pilates in the Ballpark - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-06-30",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 18963,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 19455,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 17840,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-03",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 29769,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "4th of July Weekend presented by Bar-S"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "chase-field",
+      "attendance": 35562,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "4th of July Weekend presented by Bar-S"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "chase-field",
+      "attendance": 26043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Patriotic Tee"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "13:10",
+      "opponent": "Royals",
+      "venueId": "chase-field",
+      "attendance": 22949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 31938,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Free Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "16:15",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 42817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ketel Marte Bobble courtesy of Casino Arizona & Talking Stick Resort"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Free Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 31288,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Free Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-21",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "chase-field",
+      "attendance": 20144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "The Church of Jesus Christ of Latter-day Saints Family Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "chase-field",
+      "attendance": 25650,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "U of A Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "12:40",
+      "opponent": "Astros",
+      "venueId": "chase-field",
+      "attendance": 22513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-04",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 20196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Girls in Sports Night - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Diamondbacks Healthcare Heroes - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 20903,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Diamondbacks Healthcare Heroes - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 22692,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Paint at the Park - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Diamondbacks Healthcare Heroes - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 29941,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Faith & Family Night presented by Chick-fil-A"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "17:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 38337,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Corbin Carroll Rebel Pilot Bobble courtesy of Cox"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Star Wars Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 24611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Jewish Community Day - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pokémon GO - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-18",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "chase-field",
+      "attendance": 16815,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "chase-field",
+      "attendance": 19723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Suns & Mercury Night Ticket Pack - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "12:40",
+      "opponent": "Guardians",
+      "venueId": "chase-field",
+      "attendance": 16848,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 29252,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hispanic Heritage Weekend presented by Estrella Jalisco"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert featuring Grupo Clasificado and Banda Renovacion"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Puerto Rican Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "17:10",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 36567,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hispanic Heritage Weekend presented by Estrella Jalisco"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Serpientes Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "13:10",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 25496,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hispanic Heritage Weekend presented by Estrella Jalisco"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Cuban Heritage Celebration - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Yoga on the Field"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-01",
+      "start": "17:10",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 26489,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hondo Rodeo Fest Drink Koozie"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Teacher Appreciation - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-02",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 22046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "ASU Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "12:40",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 14921,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-05",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "chase-field",
+      "attendance": 39126,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Irish Heritage Celebration - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Golf Night - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Flo Rida Postgame Concert presented by Coors Light Birds Nest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "17:10",
+      "opponent": "Red Sox",
+      "venueId": "chase-field",
+      "attendance": 35679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Greek Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-07",
+      "start": "13:10",
+      "opponent": "Red Sox",
+      "venueId": "chase-field",
+      "attendance": 31346,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-15",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 21521,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-16",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 26431,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Run Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-17",
+      "start": "12:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 19513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 75
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-19",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 36981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks presented by SeatGeek"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Stranger Things Night - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Catholic Night - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Italian Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "17:10",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 35498,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Taiwanese Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-21",
+      "start": "13:10",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 37105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Scouting Arizona Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-23",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 42882,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "German Heritage Celebration - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Youth Sports Day - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-24",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 43417,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "D-backs x NASCAR Rally Towel courtesy of NASCAR & Phoenix Raceway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2025,
+      "date": "2025-09-25",
+      "start": "12:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 34952,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-03-30",
+      "start": "19:10",
+      "opponent": "Tigers",
+      "venueId": "chase-field",
+      "attendance": 48350,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Meet the Budweiser Clydesdales"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-03-31",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "chase-field",
+      "attendance": 28780,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bark at the Park - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "12:40",
+      "opponent": "Tigers",
+      "venueId": "chase-field",
+      "attendance": 23166,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-02",
+      "start": "18:40",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 21600,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "18:45",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 29192,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks presented by Budweiser"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pickleball Ticket Pack - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "16:15",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 37457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Street Festival presented by Budweiser"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert featuring The All-American Rejects"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Cuban Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "13:10",
+      "opponent": "Braves",
+      "venueId": "chase-field",
+      "attendance": 25814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "chase-field",
+      "attendance": 32747,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Autism Acceptance Night presented by Roman Empire Agency - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "17:10",
+      "opponent": "Blue Jays",
+      "venueId": "chase-field",
+      "attendance": 36946,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Ketel Marte Tee courtesy of State Farm"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "13:10",
+      "opponent": "Blue Jays",
+      "venueId": "chase-field",
+      "attendance": 32240,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Yoga on the Field - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Canadian Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "chase-field",
+      "attendance": 23045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "chase-field",
+      "attendance": 20799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bark at the Park - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "12:40",
+      "opponent": "White Sox",
+      "venueId": "chase-field",
+      "attendance": 20405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-05",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 22410,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Bark at the Park - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Teacher Appreciation Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-06",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 21719,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Nurse Appreciation Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-07",
+      "start": "12:40",
+      "opponent": "Pirates",
+      "venueId": "chase-field",
+      "attendance": 21827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "18:40",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 30599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "16:15",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 38726,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Star Wars Night + Gabriel Moreno Mandalorian Bobble courtesy of Cox"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:10",
+      "opponent": "Mets",
+      "venueId": "chase-field",
+      "attendance": 40170,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mother's Day Jersey courtesy of Dignity Health"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family Photos on the Field - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-18",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 20072,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 19548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Snakes Hat Ticket Pack - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "First Responders Appreciation presented by AMR - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": "12:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 17748,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-21",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 14761,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 29945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Weekend - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "19:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 33891,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Serpientes Replica Jersey courtesy of Talking Stick Resort"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Weekend - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "13:10",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 30037,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Weekend - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Paint at the Park - Special Event - SOLD OUT"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Toy Story 5 Day - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-01",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 31410,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Korean Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 32829,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 36213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Japanese Heritage Celebration - Special Event - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 41999,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mexican Heritage Night presented by Coors Light"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mexican Heritage Jersey Pack presented by Coors Light - Special Event - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 24272,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pride Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "13:10",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 30638,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Corbin Carroll 30/30 Mystery Bobble courtesy of Chase"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Filipino Heritage Celebration - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Pilates in the Ballpark - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "12:15",
+      "opponent": "Nationals",
+      "venueId": "chase-field",
+      "attendance": 35540,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Native American Recognition Day presented by Talking Stick Resort"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-15",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "chase-field",
+      "attendance": 29457,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "chase-field",
+      "attendance": 36905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Hello Kitty® Bobble Pack - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "12:40",
+      "opponent": "Angels",
+      "venueId": "chase-field",
+      "attendance": 28433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "18:45",
+      "opponent": "Twins",
+      "venueId": "chase-field",
+      "attendance": 25110,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "75 Years of Topps Baseball Giveaway - Series 2 Pack courtesy of Topps"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "D-backs Black Excellence Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "19:10",
+      "opponent": "Twins",
+      "venueId": "chase-field",
+      "attendance": 30575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Gabriel Moreno Soccer Jersey courtesy of Wendy's"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "NAU Night - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Youth Soccer Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "12:15",
+      "opponent": "Twins",
+      "venueId": "chase-field",
+      "attendance": 34024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Father's Day Polo"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Play Catch on the Field - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-29",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 18838,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 20420,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Peanuts Bobble Pack - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "chase-field",
+      "attendance": 17142,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Paint at the Park - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "18:45",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 31280,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 43
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "4th of July Weekend + Fireworks Spectaculars presented by Bar-S"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Girl Scout Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "18:40",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 33154,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "4th of July Weekend + Fireworks Spectaculars presented by Bar-S"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "13:00",
+      "opponent": "Brewers",
+      "venueId": "chase-field",
+      "attendance": 24728,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Scouting Arizona Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 29931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Free Weekend presented by Wendy's"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "U of A Night presented by Chase - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 38244,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Geraldo Perdomo Audio Bobble courtesy of Chas Roberts"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Free Weekend presented by Wendy's"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "13:10",
+      "opponent": "Cardinals",
+      "venueId": "chase-field",
+      "attendance": 28069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Baxter Ears Cap courtesy of Honeywell Aerospace"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kids Free Weekend presented by Wendy's"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-20",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "chase-field",
+      "attendance": 19121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "The Church of Jesus Christ of Latter-Day Saints Family Night  - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "18:40",
+      "opponent": "Athletics",
+      "venueId": "chase-field",
+      "attendance": 19709,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Youth Football - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "12:40",
+      "opponent": "Athletics",
+      "venueId": "chase-field",
+      "attendance": 19343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-03",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 22008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Harry Potter™ Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 20839,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Healthcare Heroes presented by Dignity Health - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 17559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Healthcare Heroes presented by Dignity Health - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "18:40",
+      "opponent": "Padres",
+      "venueId": "chase-field",
+      "attendance": 21884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 46172,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Golf Hat Ticket Pack - Special Event"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Concert featuring Jhayco"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "17:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 46213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "13:10",
+      "opponent": "Dodgers",
+      "venueId": "chase-field",
+      "attendance": 43775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Jewish Community Day - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-10",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 17358,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Construction Nights - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 21002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Pokémon GO - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Construction Nights - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "12:40",
+      "opponent": "Rockies",
+      "venueId": "chase-field",
+      "attendance": 17168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "18:40",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 32087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "GCU Night - Special Event - SOLD OUT"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Faith & Family Night + Postgame Concert presented by Chick-fil-A"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "17:10",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 36405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Serpientes Haboob Globe courtesy of Estrella Jalisco"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hispanic Heritage Weekend presented by Estrella Jalisco"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Puerto Rican Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-23",
+      "start": "13:15",
+      "opponent": "Reds",
+      "venueId": "chase-field",
+      "attendance": 28433,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Hispanic Heritage Weekend presented by Estrella Jalisco"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Dominican Heritage Celebration - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Yoga on the Field presented by Blue Cross Blue Shield of Arizona - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Paint at the Park - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-24",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 28704,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "18:40",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 28215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Women's Night - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Greek Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "12:40",
+      "opponent": "Cubs",
+      "venueId": "chase-field",
+      "attendance": 24297,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-08-31",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 21314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Teacher Appreciation Night presented by FOX10 - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 27395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "ASU Night - Special Event - SOLD OUT"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "12:40",
+      "opponent": "Phillies",
+      "venueId": "chase-field",
+      "attendance": 19039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 32849,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Catholic Night - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "17:10",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 34300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Merrill Kelly Bobble courtesy of Casino Arizona & Talking Stick Resort"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Youth Sports Day - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:10",
+      "opponent": "Rangers",
+      "venueId": "chase-field",
+      "attendance": 28843,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "KPop Demon Hunters Pack - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-14",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 19434,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "D-backs x RMS Original Viral Mystery Squishy Dumpling - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Irish Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-15",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 24869,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 71
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "D-backs x RMS Original Viral Mystery Squishy Dumpling - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Bark at the Park - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-16",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "chase-field",
+      "attendance": 22162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "German Heritage Celebration - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Mexican Independence Day Ticket Pack - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "NASCAR Night - Special Event"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Paint at the Park - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-18",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "chase-field",
+      "attendance": 41910,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Italian Heritage Celebration - Special Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "17:10",
+      "opponent": "Yankees",
+      "venueId": "chase-field",
+      "attendance": 47918,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "2001 Throwback Jersey courtesy of Chase"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "2001 World Series Champions Reunion - Pregame Ceremony"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "diamondbacks",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "13:10",
+      "opponent": "Yankees",
+      "venueId": "chase-field",
+      "attendance": 37755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 74
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    }
+  ]
+}
