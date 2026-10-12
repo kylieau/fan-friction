@@ -283,6 +283,18 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '2393', metroId: 'nashville', teamId: 'mtsu-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '2393', metroId: 'nashville', teamId: 'mtsu-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '2393', metroId: 'nashville', teamId: 'mtsu-wbb', sport: 'basketball' },
+  // New Orleans (docs/research/city-builds/new-orleans/); every id and home venue checked against the feed Oct 12, 2026.
+  // Tulane football is 2655, not 265 (265 is Washington State).
+  { path: 'football/nfl', espnId: '18', metroId: 'new-orleans', teamId: 'saints', sport: 'football' },
+  { path: 'basketball/nba', espnId: '3', metroId: 'new-orleans', teamId: 'pelicans', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2655', metroId: 'new-orleans', teamId: 'tulane-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2655', metroId: 'new-orleans', teamId: 'tulane-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2655', metroId: 'new-orleans', teamId: 'tulane-wbb', sport: 'basketball' },
+  { path: 'baseball/college-baseball', espnId: '203', metroId: 'new-orleans', teamId: 'tulane-baseball', sport: 'baseball' },
+  { path: 'basketball/mens-college-basketball', espnId: '2443', metroId: 'new-orleans', teamId: 'lsuno-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2443', metroId: 'new-orleans', teamId: 'lsuno-wbb', sport: 'basketball' },
+  { path: 'baseball/college-baseball', espnId: '184', metroId: 'new-orleans', teamId: 'lsuno-baseball', sport: 'baseball' },
+  { path: 'basketball/nba-development', espnId: '6', metroId: 'new-orleans', teamId: 'laketown-squadron', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -596,6 +608,24 @@ const VENUE_BY_NAME: Record<string, string> = {
   '3m arena at mariucci': 'mariucci-arena',
   'mariucci arena': 'mariucci-arena',
   'lee & penny anderson arena': 'anderson-arena',
+  // New Orleans, as ESPN writes them (checked Oct 12, 2026).
+  'caesars superdome': 'caesars-superdome',
+  'mercedes-benz superdome': 'caesars-superdome',
+  'smoothie king center': 'smoothie-king-center',
+  'new orleans arena': 'smoothie-king-center',
+  'yulman stadium': 'yulman-stadium',
+  'benson field at yulman stadium': 'yulman-stadium',
+  'avron b. fogelman arena in the devlin fieldhouse': 'devlin-fieldhouse',
+  'fogelman arena in devlin fieldhouse': 'devlin-fieldhouse',
+  'devlin fieldhouse': 'devlin-fieldhouse',
+  'lakefront arena': 'lakefront-arena',
+  'uno lakefront arena': 'lakefront-arena',
+  'green field at turchin stadium': 'turchin-stadium',
+  'greer field at turchin stadium': 'turchin-stadium',
+  'turchin stadium': 'turchin-stadium',
+  'maestri field': 'maestri-field',
+  'maestri field at privateer park': 'maestri-field',
+  'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
 };
 

@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "metroName": "New Orleans",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T08:14:53.854Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-16-espn-tulane-football-401862801",
+      "metroId": "new-orleans",
+      "date": "2026-10-16",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Tulane vs. Memphis",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "yulman-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tulane-football",
+        "away": "memphis"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 24504,
+        "low": 21149,
+        "high": 28802,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 18 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-16-espn-pelicans-401906509",
+      "metroId": "new-orleans",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pelicans vs. Wizards",
+      "preseason": true,
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "smoothie-king-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pelicans",
+        "away": "wizards"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-21-espn-pelicans-401909839",
+      "metroId": "new-orleans",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pelicans vs. Pacers",
+      "place": {
+        "type": "venue",
+        "venueId": "smoothie-king-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pelicans",
+        "away": "pacers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 16021,
+        "low": 15433,
+        "high": 17017,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-tulane-football-401862811",
+      "metroId": "new-orleans",
+      "date": "2026-10-24",
+      "start": null,
+      "kind": "game",
+      "title": "Tulane vs. UTSA",
+      "place": {
+        "type": "venue",
+        "venueId": "yulman-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tulane-football",
+        "away": "utsa"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 22897,
+        "low": 21462,
+        "high": 26449,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-16-espn-tulane-football-401862801",
+      "date": "2026-10-16",
+      "start": "18:30",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "87° feels-like at a 6:30 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 24504,
+        "low": 21149,
+        "high": 28802
+      }
+    },
+    {
+      "eventId": "2026-10-16-espn-pelicans-401906509",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "Tulane vs. Memphis 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-21-espn-pelicans-401909839",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16021,
+        "low": 15433,
+        "high": 17017
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-tulane-football-401862811",
+      "date": "2026-10-24",
+      "start": null,
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "89° feels-like, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22897,
+        "low": 21462,
+        "high": 26449
+      }
+    }
+  ]
+}

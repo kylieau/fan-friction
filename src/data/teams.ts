@@ -261,6 +261,18 @@ const LIST: Team[] = [
   team("minnesota-aurora", "Minnesota Aurora FC", "Aurora", "USL W", "soccer", "minneapolis", "AUR"),
   team("minnesota-forge", "Minnesota Forge", "Forge", "MLV", "volleyball", "minneapolis", "FOR"),
   team("lovb-minnesota", "LOVB Minnesota", "LOVB Minnesota", "LOVB Pro", "volleyball", "minneapolis", "LOVB"),
+  // New Orleans (Oct 12, 2026; docs/research/city-builds/new-orleans/). Feed ids checked against live schedules.
+  team("saints", "New Orleans Saints", "Saints", "NFL", "football", "new-orleans", "NO"),
+  team("pelicans", "New Orleans Pelicans", "Pelicans", "NBA", "basketball", "new-orleans", "NOP"),
+  team("tulane-football", "Tulane Green Wave Football", "Tulane FB", "College football", "football", "new-orleans", "TUL", ["Green Wave", "Tulane"]),
+  team("tulane-mbb", "Tulane Green Wave Men's Basketball", "Tulane MBB", "College men's basketball", "basketball", "new-orleans", "TUL", ["Green Wave"]),
+  team("tulane-wbb", "Tulane Green Wave Women's Basketball", "Tulane WBB", "College women's basketball", "basketball", "new-orleans", "TUL", ["Green Wave"]),
+  team("tulane-baseball", "Tulane Green Wave Baseball", "Tulane Baseball", "College baseball", "baseball", "new-orleans", "TUL", ["Green Wave"]),
+  team("lsuno-mbb", "LSU New Orleans Privateers Men's Basketball", "LSUNO MBB", "College men's basketball", "basketball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
+  team("lsuno-wbb", "LSU New Orleans Privateers Women's Basketball", "LSUNO WBB", "College women's basketball", "basketball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
+  team("lsuno-baseball", "LSU New Orleans Privateers Baseball", "LSUNO Baseball", "College baseball", "baseball", "new-orleans", "UNO", ["UNO", "New Orleans Privateers", "Privateers"]),
+  team("laketown-squadron", "Laketown Squadron", "Squadron", "NBA G League", "basketball", "new-orleans", "LKT"),
+  team("new-orleans-jesters", "New Orleans Jesters", "Jesters", "NPSL", "soccer", "new-orleans", "JES"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

@@ -2155,6 +2155,30 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-12T08:19:11.748Z"
   },
   {
+    "eventId": "2026-10-11-espn-saints-401872987",
+    "metroId": "new-orleans",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "caesars-superdome",
+    "homeTeamId": "saints",
+    "home": {
+      "name": "Saints",
+      "score": 13
+    },
+    "away": {
+      "name": "Vikings",
+      "score": 23
+    },
+    "attendance": 70006,
+    "capturedAt": "2026-10-12T08:13:29.053Z",
+    "duration": {
+      "minutes": 169,
+      "kind": "estimated"
+    },
+    "startedAt": "13:03"
+  },
+  {
     "eventId": "2026-10-10-espn-sacramento-republic-401842277",
     "metroId": "sacramento",
     "date": "2026-10-10",

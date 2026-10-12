@@ -84,7 +84,10 @@ const SCALE = 7.5;
 // downtown and campus stadiums share a rail spine. Estimated car shares, including Allianz,
 // Mystic Lake and the State Fair grandstand, stay in the research.
 // No venue override is wired (same rule as Milwaukee and Tampa).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub' };
+// New Orleans is a hub (research, Oct 12, 2026, docs/research/city-builds/new-orleans/new-orleans-city-type-answer.md):
+// the Superdome, Smoothie King Center and Champions Square share one garage set. Every car-share in that answer
+// is an estimate, none measured, so no venue override is stored; the hub fallback applies.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit', minneapolis: 'hub', 'new-orleans': 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -274,6 +277,9 @@ const ZONE_NAMES: Record<string, string> = {
   'mystic-lake-amphitheater': 'Shakopee',
   'tco-stadium': 'Eagan',
   'nsc-stadium': 'Blaine',
+  // New Orleans LSED complex: Superdome and Smoothie King Center share the garage set and Poydras approach.
+  'caesars-superdome': 'Superdome complex',
+  'smoothie-king-center': 'Superdome complex',
   'anderson-arena': 'St. Thomas',
 };
 

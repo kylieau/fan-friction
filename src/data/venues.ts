@@ -8106,6 +8106,347 @@ export const VENUES: Record<string, Venue> = {
     roof: 'indoor',
   },
 
+
+  // New Orleans (docs/research/city-builds/new-orleans/, Oct 12, 2026). Orleans + Jefferson core.
+  // No carShare overrides: the city-type answer's shares are estimates, none measured.
+  // Coordinates are OpenStreetMap by name, except where a comment says the point is a street address or a parent building.
+  'caesars-superdome': {
+    id: 'caesars-superdome',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'Mercedes-Benz Superdome' },
+      { name: 'Caesars Superdome', from: '2021-01-01' },
+    ],
+    location: [-90.0823076, 29.9510489],
+    capacity: [
+      {
+        seats: 73208,
+        setup: 'football',
+        note: 'Official press kit, Saints game count. Same kit lists a football maximum of 74,295. All figures predate the 2019–2024 renovation; no post-renovation capacity was published. Wikipedia reports 76,468 expandable. Source: https://www.caesarssuperdome.com/assets/doc/presskit-1-874851cf94.pdf',
+      },
+      {
+        seats: 67500,
+        setup: 'basketball',
+        note: 'Official press kit, NCAA Final Four, pre-renovation. Source: https://www.caesarssuperdome.com/assets/doc/presskit-1-874851cf94.pdf',
+      },
+      {
+        seats: 83000,
+        setup: 'concert',
+        note: 'Official press kit, center-stage concert maximum, pre-renovation. Source: https://www.caesarssuperdome.com/assets/doc/presskit-1-874851cf94.pdf',
+      },
+    ],
+    roof: 'covered',
+  },
+  'yulman-stadium': {
+    id: 'yulman-stadium',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'Yulman Stadium' },
+      { name: 'Benson Field at Yulman Stadium' },
+    ],
+    location: [-90.1160511, 29.9446510],
+    capacity: [
+      {
+        seats: 30000,
+        setup: 'football',
+        note: 'Official (Tulane). Built to expand by 5,000–10,000; no confirmed expansion through 2028. Source: https://news.tulane.edu/news/yulman-stadium-ranks-among-top-25',
+      },
+    ],
+    roof: 'open',
+  },
+  'tad-gormley-stadium': {
+    id: 'tad-gormley-stadium',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'Reggie Bush Field' },
+      { name: 'Tad Gormley Stadium' },
+    ],
+    location: [-90.0996330, 29.9898746],
+    capacity: [
+      {
+        seats: 26500,
+        setup: 'football',
+        note: 'Official (City Park), permanent seats, unassigned. A turf closure dated only "January 12" has no year in the research. Source: https://neworleanscitypark.org/venues/tad-gormley-stadium',
+      },
+    ],
+    roof: 'open',
+  },
+  'smoothie-king-center': {
+    id: 'smoothie-king-center',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'New Orleans Arena' },
+      { name: 'Smoothie King Center', from: '2014-02-01' },
+    ],
+    location: [-90.0820690, 29.9490393],
+    capacity: [
+      {
+        seats: 16867,
+        setup: 'basketball',
+        note: 'Reported (Ticketmaster), NBA regular season. Same source lists playoffs and college basketball at 18,500. Announced crowds have reached 19,397. A renovation adding seats is a proposal only. Source: https://blog.ticketmaster.com/step-inside-smoothie-king-center-new-orleans-la/',
+      },
+      {
+        seats: 17791,
+        setup: 'concert',
+        note: 'Reported (Ticketmaster), 360-degree. Wikipedia lists end-stage 17,221, center-stage 17,805 and half-stage 7,500. Source: https://blog.ticketmaster.com/step-inside-smoothie-king-center-new-orleans-la/',
+      },
+      {
+        seats: 16900,
+        setup: 'hockey',
+        note: 'Reported (Wikipedia). No current hockey tenant. Source: https://en.wikipedia.org/wiki/Smoothie_King_Center',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'fair-grounds-race-course': {
+    id: 'fair-grounds-race-course',
+    metroId: 'new-orleans',
+    names: [{ name: 'Fair Grounds Race Course' }],
+    // OSM sports_centre named Fair Grounds Race Course. A second OSM track point sits nearby; this is the named centre, not the Jazz Fest grounds total.
+    location: [-90.0812845, 29.9851851],
+    capacity: [
+      {
+        seats: 10000,
+        setup: 'racing',
+        note: 'Reported grandstand seating, "about 10,000", plus about 5,000 more on the concourse on Derby Day (not added). Jazz Fest uses these grounds and is not this room. Source: https://www.stadiumjourney.com/stadiums/fair-grounds-race-course',
+      },
+    ],
+    roof: 'covered',
+  },
+  'lakefront-arena': {
+    id: 'lakefront-arena',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'UNO Lakefront Arena' },
+      { name: 'Senator Nat G. Kiefer University of New Orleans Lakefront Arena' },
+      { name: 'Lakefront Arena' },
+    ],
+    location: [-90.0505067, 30.0301050],
+    capacity: [
+      {
+        seats: 8785,
+        setup: 'basketball',
+        note: 'Official (UNO facilities page), basketball. Reported figures also include 8,900, 8,933 and an older 10,000. Concert setups are published only as a range (1,500 to over 10,000) and are not stored. The campus became LSU New Orleans on Jul 1, 2026; an official arena rename is not confirmed. Source: https://unoprivateers.com/facilities/?id=3',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'turchin-stadium': {
+    id: 'turchin-stadium',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'Turchin Stadium' },
+      { name: 'Green Field at Turchin Stadium' },
+      { name: 'Greer Field at Turchin Stadium' },
+    ],
+    location: [-90.1156165, 29.9461816],
+    capacity: [
+      {
+        seats: 5000,
+        setup: 'baseball',
+        note: 'Reported (Wikipedia). Exactly at the friction line. No official Tulane facilities figure was in the research. ESPN writes "Green Field". Source: https://en.wikipedia.org/wiki/Greer_Field_at_Turchin_Stadium',
+      },
+    ],
+    roof: 'open',
+  },
+  'pan-american-stadium': {
+    id: 'pan-american-stadium',
+    metroId: 'new-orleans',
+    names: [{ name: 'Pan American Stadium' }],
+    location: [-90.0879004, 29.9942626],
+    capacity: [
+      {
+        seats: 4500,
+        setup: 'soccer',
+        note: 'Official (Jesters): 4,500 seated bleachers. City Park also says up to 5,000 in general admission; that standing total is not stored as seats. Source: https://www.nolajesters.com/team/stadium/',
+      },
+    ],
+    roof: 'open',
+  },
+  'new-orleans-theater': {
+    id: 'new-orleans-theater',
+    metroId: 'new-orleans',
+    names: [{ name: 'New Orleans Theater' }],
+    // Interior room of the Morial Convention Center. OSM has the center, not the theater. Exhibit halls are not this room.
+    location: [-90.0631825, 29.9395386],
+    capacity: [
+      {
+        seats: 4032,
+        setup: 'concert',
+        note: 'Reported (Wikipedia). The center\'s own page says "over 4,000" without a precise count. Exhibit-hall theater setups are a different floor, not this room. Source: https://en.wikipedia.org/wiki/New_Orleans_Morial_Convention_Center',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'devlin-fieldhouse': {
+    id: 'devlin-fieldhouse',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'Avron B. Fogelman Arena' },
+      { name: 'Avron B. Fogelman Arena in the Devlin Fieldhouse', from: '2012-01-01' },
+      { name: 'Fogelman Arena in Devlin Fieldhouse', from: '2012-01-01' },
+    ],
+    // OSM node named Fogelman Arena at 6401 Freret. Interior gym point not separately surveyed.
+    location: [-90.1207046, 29.9390674],
+    capacity: [
+      {
+        seats: 4100,
+        setup: 'basketball',
+        note: 'Reported (Wikipedia). Source: https://en.wikipedia.org/wiki/Devlin_Fieldhouse',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'pontchartrain-center': {
+    id: 'pontchartrain-center',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'Pontchartrain Convention and Civic Center' },
+      { name: 'Pontchartrain Center' },
+    ],
+    location: [-90.2405762, 30.0393600],
+    capacity: [
+      {
+        seats: 3600,
+        setup: 'basketball',
+        note: 'Reported (Wikipedia), sports. A 4,600 figure in the same article and a 5,820 theater-style hall setup are not the arena. The hall setup is not stored. Source: https://en.wikipedia.org/wiki/Pontchartrain_Center',
+      },
+      {
+        seats: 3700,
+        setup: 'concert',
+        note: 'Official (Laketown Squadron): "3,700 seat facility". Source: https://laketown.gleague.nba.com/news/new-orleans-pelicans-to-relocate-g-league-affiliate-to-kenner-and-rebrand-as-laketown-squadron',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'maestri-field': {
+    id: 'maestri-field',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'Maestri Field' },
+      { name: 'Maestri Field at Privateer Park' },
+    ],
+    location: [-90.0470706, 30.0305847],
+    capacity: [
+      {
+        seats: 2900,
+        setup: 'baseball',
+        note: 'Reported (Wikipedia). Source: https://en.wikipedia.org/wiki/Maestri_Field_at_Privateer_Park',
+      },
+    ],
+    roof: 'open',
+  },
+  'saenger-theatre': {
+    id: 'saenger-theatre',
+    metroId: 'new-orleans',
+    names: [{ name: 'Saenger Theatre' }],
+    location: [-90.0725759, 29.9563933],
+    capacity: [
+      {
+        seats: 2600,
+        setup: 'concert',
+        note: 'Official (ATG). The same page also gives 2,613 at the 2013 reopening. Source: https://www.atgentertainment.com/?p=1349',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'alario-center': {
+    id: 'alario-center',
+    metroId: 'new-orleans',
+    names: [
+      { name: 'Alario Center' },
+      { name: 'Alario Sr. Event Center' },
+    ],
+    location: [-90.1627914, 29.9054733],
+    capacity: [
+      {
+        seats: 2400,
+        setup: 'concert',
+        note: 'Reported (Wikipedia), seats. A directory lists the largest space up to 3,000 theater style. Source: https://en.wikipedia.org/wiki/Alario_Center',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'mahalia-jackson-theater': {
+    id: 'mahalia-jackson-theater',
+    metroId: 'new-orleans',
+    names: [{ name: 'Mahalia Jackson Theater for the Performing Arts' }],
+    location: [-90.0693976, 29.9632013],
+    capacity: [
+      {
+        seats: 2153,
+        setup: 'concert',
+        note: 'Official (ATG) lower figure on a page that also lists 2,243. Wikipedia lists 2,100. Lower official figure stored. Source: https://www.atgentertainment.com/aka_venues/mahalia-jackson-theater-for-the-performing-arts/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'fillmore-new-orleans': {
+    id: 'fillmore-new-orleans',
+    metroId: 'new-orleans',
+    names: [{ name: 'Fillmore New Orleans' }, { name: 'The Fillmore New Orleans' }],
+    // No OSM node for the room. Street-address geocode of 6 Canal St; the hall is inside the casino.
+    location: [-90.0643614, 29.9498230],
+    capacity: [
+      {
+        seats: 2000,
+        setup: 'concert',
+        note: 'Reported (Ticketmaster). AP reported 2,200 standing. Lower figure stored. Source: https://blog.ticketmaster.com/concert-venues-new-orleans/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'orpheum-theater-new-orleans': {
+    id: 'orpheum-theater-new-orleans',
+    metroId: 'new-orleans',
+    names: [{ name: 'Orpheum Theater' }],
+    location: [-90.0728273, 29.9545428],
+    // Published range 1,460–1,780 by setup. No single figure, so capacity stays unknown.
+    capacity: [],
+    roof: 'indoor',
+  },
+  'joy-theater': {
+    id: 'joy-theater',
+    metroId: 'new-orleans',
+    names: [{ name: 'Joy Theater' }],
+    location: [-90.0739853, 29.9560038],
+    capacity: [
+      {
+        seats: 1200,
+        setup: 'concert',
+        note: 'Reported standing (Advocate, 2017). Seated is about 660, not stored as an exact count. Ticketmaster calls 1,200 seating. Source: https://www.theadvocate.com/new_orleans/news/business/harrah-s-casino-in-new-orleans-planning-major-new-music-venue-on-second-floor/article_0092bfee-e4f6-11e6-8be8-3bb32106aa73.html',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'civic-theatre-new-orleans': {
+    id: 'civic-theatre-new-orleans',
+    metroId: 'new-orleans',
+    names: [{ name: 'The Civic Theatre' }, { name: 'Civic Theatre' }],
+    location: [-90.0741646, 29.9495123],
+    capacity: [
+      {
+        seats: 1200,
+        setup: 'concert',
+        note: 'Reported (Advocate, 2017). Source: https://www.theadvocate.com/new_orleans/news/business/harrah-s-casino-in-new-orleans-planning-major-new-music-venue-on-second-floor/article_0092bfee-e4f6-11e6-8be8-3bb32106aa73.html',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'house-of-blues-new-orleans': {
+    id: 'house-of-blues-new-orleans',
+    metroId: 'new-orleans',
+    names: [{ name: 'House of Blues' }, { name: 'House of Blues New Orleans' }],
+    location: [-90.0660795, 29.9532033],
+    capacity: [
+      {
+        seats: 1010,
+        setup: 'concert',
+        note: 'Reported. At the pre-list line. Source: https://www.theadvocate.com/gambit/new_orleans/news/the_latest/fillmore-music-venue-at-harrahs-to-open-in-2019/article_a3c96f60-7586-11e8-b9d5-3fb6b231230d.html',
+      },
+    ],
+    roof: 'indoor',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

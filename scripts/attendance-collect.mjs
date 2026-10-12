@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago', toronto: 'America/Toronto', minneapolis: 'America/Chicago' , 'new-orleans': 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -314,6 +314,16 @@ const ESPN_TEAMS = [
   { teamId: 'mtsu-football', metroId: 'nashville', path: 'football/college-football', espnId: '2393', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'mtsu-mbb', metroId: 'nashville', path: 'basketball/mens-college-basketball', espnId: '2393', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'mtsu-wbb', metroId: 'nashville', path: 'basketball/womens-college-basketball', espnId: '2393', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'saints', metroId: 'new-orleans', path: 'football/nfl', espnId: '18', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'pelicans', metroId: 'new-orleans', path: 'basketball/nba', espnId: '3', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'tulane-football', metroId: 'new-orleans', path: 'football/college-football', espnId: '2655', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'tulane-mbb', metroId: 'new-orleans', path: 'basketball/mens-college-basketball', espnId: '2655', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'tulane-wbb', metroId: 'new-orleans', path: 'basketball/womens-college-basketball', espnId: '2655', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'tulane-baseball', metroId: 'new-orleans', path: 'baseball/college-baseball', espnId: '203', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'lsuno-mbb', metroId: 'new-orleans', path: 'basketball/mens-college-basketball', espnId: '2443', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'lsuno-wbb', metroId: 'new-orleans', path: 'basketball/womens-college-basketball', espnId: '2443', seasons: [2023, 2024, 2025, 2026, 2027], seasontype: 2 },
+  { teamId: 'lsuno-baseball', metroId: 'new-orleans', path: 'baseball/college-baseball', espnId: '184', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'laketown-squadron', metroId: 'new-orleans', path: 'basketball/nba-development', espnId: '6', seasons: [2025, 2026, 2027], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -578,6 +588,24 @@ const VENUE_BY_NAME = {
   '3m arena at mariucci': 'mariucci-arena',
   'mariucci arena': 'mariucci-arena',
   'lee & penny anderson arena': 'anderson-arena',
+  // New Orleans, as ESPN writes them Keep in step with espnSource.ts.
+  'caesars superdome': 'caesars-superdome',
+  'mercedes-benz superdome': 'caesars-superdome',
+  'smoothie king center': 'smoothie-king-center',
+  'new orleans arena': 'smoothie-king-center',
+  'yulman stadium': 'yulman-stadium',
+  'benson field at yulman stadium': 'yulman-stadium',
+  'avron b. fogelman arena in the devlin fieldhouse': 'devlin-fieldhouse',
+  'fogelman arena in devlin fieldhouse': 'devlin-fieldhouse',
+  'devlin fieldhouse': 'devlin-fieldhouse',
+  'lakefront arena': 'lakefront-arena',
+  'uno lakefront arena': 'lakefront-arena',
+  'green field at turchin stadium': 'turchin-stadium',
+  'greer field at turchin stadium': 'turchin-stadium',
+  'turchin stadium': 'turchin-stadium',
+  'maestri field': 'maestri-field',
+  'maestri field at privateer park': 'maestri-field',
+  'pontchartrain center': 'pontchartrain-center',
   'lee and penny anderson arena': 'anderson-arena',
 };
 

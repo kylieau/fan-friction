@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis', 'new-orleans'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -247,6 +247,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-93.2, 44.96],
     zoom: 10.4,
+  },
+  // Covered Oct 12, 2026 (docs/research/city-builds/new-orleans/). Orleans Parish plus Jefferson Parish
+  // (East Bank and West Bank). One frame holds the Superdome, Uptown, Gentilly, City Park and the Lakefront;
+  // Kenner and Westwego sit off the first view. St. Tammany stays outside.
+  'new-orleans': {
+    id: 'new-orleans', code: 'NOLA',
+    name: 'New Orleans',
+    timeZone: 'America/Chicago',
+    center: [-90.09, 29.97],
+    zoom: 10.6,
   },
 };
 
