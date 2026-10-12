@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-austin-fc-761856",
+      "metroId": "austin",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "q2-stadium",
+      "homeTeamId": "austin-fc",
+      "home": {
+        "name": "Austin FC",
+        "score": 1
+      },
+      "away": {
+        "name": "Nashville",
+        "score": 4
+      },
+      "capturedAt": "2026-10-12T08:20:57.716Z"
+    }
+  ]
+}

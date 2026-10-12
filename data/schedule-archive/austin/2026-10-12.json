@@ -1,0 +1,379 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "metroName": "Austin",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T08:21:00.008Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 5
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 2
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-15-espn-texas-state-football-401860923",
+      "metroId": "austin",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Texas St vs. Colorado St",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ufcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-state-football",
+        "away": "colorado-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13647,
+        "low": 13438,
+        "high": 16722,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-texas-football-401856724",
+      "metroId": "austin",
+      "date": "2026-10-17",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Texas Longhorns vs. Florida",
+      "broadcast": "ABC",
+      "place": {
+        "type": "venue",
+        "venueId": "dkr-texas-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-football",
+        "away": "florida"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 104330,
+        "low": 103658,
+        "high": 104702,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 14 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-austin-fc-761882",
+      "metroId": "austin",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Austin FC vs. Vancouver",
+      "place": {
+        "type": "venue",
+        "venueId": "q2-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "austin-fc",
+        "away": "vancouver"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20738,
+        "low": 20738,
+        "high": 20738,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 15 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-ht-texas-stars-1029185",
+      "metroId": "austin",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Reign",
+      "place": {
+        "type": "venue",
+        "venueId": "heb-center-cedar-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "texas-stars",
+        "away": "reign"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5451,
+        "low": 5332,
+        "high": 5665,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-texas-state-football-401860906",
+      "metroId": "austin",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Texas St vs. Utah State",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ufcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-state-football",
+        "away": "utah-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20399,
+        "low": 18761,
+        "high": 21735,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-ht-texas-stars-1029199",
+      "metroId": "austin",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Reign",
+      "place": {
+        "type": "venue",
+        "venueId": "heb-center-cedar-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "texas-stars",
+        "away": "reign"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 6105,
+        "low": 5771,
+        "high": 6280,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-texas-football-401856732",
+      "metroId": "austin",
+      "date": "2026-10-24",
+      "start": null,
+      "kind": "game",
+      "title": "Texas Longhorns vs. Ole Miss",
+      "place": {
+        "type": "venue",
+        "venueId": "dkr-texas-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-football",
+        "away": "ole-miss"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 104330,
+        "low": 103658,
+        "high": 104702,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 14 games, 2023–2025."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-15-espn-texas-state-football-401860923",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13647,
+        "low": 13438,
+        "high": 16722
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-texas-football-401856724",
+      "date": "2026-10-17",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 104330,
+        "low": 103658,
+        "high": 104702
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-austin-fc-761882",
+      "date": "2026-10-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20738,
+        "low": 20738,
+        "high": 20738
+      }
+    },
+    {
+      "eventId": "2026-10-23-ht-texas-stars-1029185",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5451,
+        "low": 5332,
+        "high": 5665
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-texas-state-football-401860906",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "read": {
+        "rating": 4.5,
+        "friction": "Moderate",
+        "why": "Texas Longhorns vs. Ole Miss 29 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20399,
+        "low": 18761,
+        "high": 21735
+      }
+    },
+    {
+      "eventId": "2026-10-24-ht-texas-stars-1029199",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 4.5,
+        "friction": "Moderate",
+        "why": "Texas St vs. Utah State 45 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6105,
+        "low": 5771,
+        "high": 6280
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-texas-football-401856732",
+      "date": "2026-10-24",
+      "start": null,
+      "read": {
+        "rating": 4.5,
+        "friction": "Moderate",
+        "why": "94° feels-like, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 104330,
+        "low": 103658,
+        "high": 104702
+      }
+    }
+  ]
+}

@@ -54,7 +54,11 @@ const SCALE = 7.5;
 // Nashville is sprawl (research, Oct 12, 2026, docs/research/city-builds/nashville/nashville-city-type-answer.md):
 // the only measured event-transit share is about 1.6% at a Titans game, and that was mostly car-involved.
 // Estimated car shares stay in the research; no venue override is wired (same rule as Milwaukee).
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl' };
+// Austin is a hub (research, Oct 11, 2026, docs/research/city-builds/austin/austin-city-type-answer.md): car-dominant
+// (regional estimate about 0.77), with a real UT campus cluster and lower car shares at ACL and SXSW. sprawl is the
+// alternative; hub and sprawl share today's 0.85 fallback. Every Austin car share in that answer is an estimate,
+// not a measured mode split, so no venue override is wired.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -116,6 +120,10 @@ const ZONE_NAMES: Record<string, string> = {
   'grand-ole-opry-house': 'Music Valley',
   'gentry-center': 'Tennessee State',
   'allen-arena': 'Lipscomb',
+  // Austin: DKR, Moody Center and Myers share I-35 / MLK / Red River (research cluster 1).
+  'dkr-texas-memorial-stadium': 'UT Campus',
+  'moody-center': 'UT Campus',
+  'myers-stadium': 'UT Campus',
 };
 
 export interface Zone {

@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -162,6 +162,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Chicago',
     center: [-86.78, 36.16],
     zoom: 10.6,
+  },
+  // Covered Oct 12, 2026 (docs/research/city-builds/austin/austin-venue-table-answer.md): Austin–Round Rock–San Marcos MSA
+  // (Travis, Williamson, Hays, plus Bastrop and Caldwell, which have no fixed rooms). One frame holds downtown, the UT campus,
+  // Q2, Round Rock and Cedar Park. San Marcos and Circuit of The Americas sit off the first view.
+  austin: {
+    id: 'austin', code: 'ATX',
+    name: 'Austin',
+    timeZone: 'America/Chicago',
+    center: [-97.74, 30.35],
+    zoom: 9.6,
   },
 };
 

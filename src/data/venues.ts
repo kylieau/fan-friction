@@ -5121,6 +5121,278 @@ export const VENUES: Record<string, Venue> = {
     roof: 'open',
   },
 
+
+  // Austin (Oct 12, 2026): docs/research/city-builds/austin/austin-venue-table-answer.md
+  // and austin-city-type-answer.md. No carShare overrides (every figure there is an estimate).
+  // Coordinates are OpenStreetMap Nominatim unless a comment says the hit was an address or a parent site.
+  'dkr-texas-memorial-stadium': {
+    id: 'dkr-texas-memorial-stadium',
+    metroId: 'austin',
+    names: [
+      { name: 'DKR-Texas Memorial Stadium' },
+      { name: 'Darrell K Royal-Texas Memorial Stadium' },
+    ],
+    location: [-97.7326229, 30.2838412],
+    capacity: [{
+      seats: 100119,
+      setup: 'football',
+      fromYear: 2009,
+      note: 'Official. 100,119 after the 2009 work; south end zone enclosed in 2021 with capacity listed unchanged. 85,123 in 2006 was temporary south bleachers. Record crowd 105,215 on Oct 19, 2024 is attendance, not capacity. Source: https://texaslonghorns.com/facilities/memorial-stadium/1',
+    }],
+    roof: 'open',
+  },
+  'ufcu-stadium': {
+    id: 'ufcu-stadium',
+    metroId: 'austin',
+    names: [
+      { name: 'Bobcat Stadium' },
+      { name: 'UFCU Stadium', from: '2024-05-21' },
+    ],
+    location: [-97.9255534, 29.8910593],
+    capacity: [{
+      seats: 28388,
+      setup: 'football',
+      note: 'Official. Jim Wacker Field. Was Bobcat Stadium until the UFCU naming deal announced May 21, 2024. South-edge room (San Marcos). Source: https://txst.com/UFCUStadium',
+    }],
+    roof: 'open',
+  },
+  'q2-stadium': {
+    id: 'q2-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Q2 Stadium', from: '2021-01-25' }],
+    // Nominatim has no stadium name; this is the OSM point for 10414 McKalla Place.
+    location: [-97.719227, 30.3853074],
+    capacity: [{
+      seats: 20738,
+      setup: 'soccer',
+      note: 'Reported (Wikipedia and stadiumdb). Official club page was not fetched. A ~25,000 expansion on a low-quality aggregator is unverified. Source: https://en.wikipedia.org/wiki/Q2_Stadium',
+    }],
+    roof: 'open',
+  },
+  'myers-stadium': {
+    id: 'myers-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Mike A. Myers Stadium and Soccer Field' }, { name: 'Mike A. Myers Stadium' }],
+    location: [-97.7299723, 30.282571],
+    capacity: [
+      { seats: 20000, setup: 'soccer', note: 'Official. Same listed size for soccer and track. Source: https://texaslonghorns.com/sports/2013/7/25/facilities_0725133514' },
+      { seats: 20000, setup: 'track', note: 'Official. Same listed size. Source: https://texaslonghorns.com/sports/2013/7/25/facilities_0725133514' },
+    ],
+    roof: 'open',
+  },
+  'moody-center': {
+    id: 'moody-center',
+    metroId: 'austin',
+    names: [{ name: 'Moody Center' }],
+    location: [-97.7306522, 30.2809367],
+    capacity: [
+      {
+        seats: 10763,
+        setup: 'basketball',
+        note: 'Reported (Wikipedia) for UT basketball. Official UT describes about 10,000 with the upper bowl closed. Do not use the concert figure for a UT game. Source: https://en.wikipedia.org/wiki/Moody_Center',
+      },
+      {
+        seats: 16223,
+        setup: 'concert',
+        note: 'Reported (Wikipedia) full configuration. Official UT: 15,000+ for concerts. The operator describes flexing from 4,000 to 16,000. Source: https://en.wikipedia.org/wiki/Moody_Center',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'germania-amphitheater': {
+    id: 'germania-amphitheater',
+    metroId: 'austin',
+    names: [
+      { name: 'Austin360 Amphitheater' },
+      { name: 'Germania Insurance Amphitheater', from: '2020-01-01' },
+    ],
+    // Nominatim has no amphitheater node. This is the OSM sports_centre for Circuit of The Americas.
+    location: [-97.63662, 30.1356307],
+    capacity: [{
+      seats: 14000,
+      setup: 'concert',
+      note: 'Official. Up to 14,000, with 6,700 reserved seats plus lawn. Naming deal runs through 2026. F1-weekend concerts are inside the race ticket and are not a second crowd. Source: https://circuitoftheamericas.com/about/',
+    }],
+    roof: 'open',
+  },
+  'dell-diamond': {
+    id: 'dell-diamond',
+    metroId: 'austin',
+    names: [{ name: 'Dell Diamond' }],
+    location: [-97.6308393, 30.5277319],
+    capacity: [{
+      seats: 11631,
+      setup: 'baseball',
+      note: 'Official (MiLB), including the berm. Fixed seats 8,722 are reported separately and are not used as the cap. Source: https://www.mlb.com/milb/news/featured/visit-dell-diamond-home-of-the-round-rock-express',
+    }],
+    roof: 'open',
+  },
+  'strahan-arena': {
+    id: 'strahan-arena',
+    metroId: 'austin',
+    names: [
+      { name: 'Strahan Coliseum' },
+      { name: 'Strahan Arena at the University Events Center' },
+      { name: 'Strahan Arena', from: '2018-10-06' },
+    ],
+    location: [-97.9324419, 29.8885359],
+    capacity: [{
+      seats: 10000,
+      setup: 'basketball',
+      note: 'Reported. Expansion added 1,800 seats, rededicated Oct 6, 2018. South-edge room (San Marcos). Source: https://en.wikipedia.org/wiki/Strahan_Arena',
+    }],
+    roof: 'indoor',
+  },
+  'heb-center-cedar-park': {
+    id: 'heb-center-cedar-park',
+    metroId: 'austin',
+    names: [
+      { name: 'Cedar Park Center' },
+      { name: 'H-E-B Center at Cedar Park', from: '2016-04-22' },
+    ],
+    location: [-97.8205235, 30.5413221],
+    capacity: [
+      { seats: 6863, setup: 'hockey', note: 'Official press release. The current site lists hockey at 6,800. Source: https://www.hebcenter.com/assets/doc/H-E-B-Center-Press-Release-FINAL-323c3a4ae0.pdf' },
+      { seats: 7200, setup: 'basketball', note: 'Official press release. Source: https://www.hebcenter.com/assets/doc/H-E-B-Center-Press-Release-FINAL-323c3a4ae0.pdf' },
+      { seats: 8700, setup: 'concert', note: 'Official press release, concerts up to 8,700. The current site lists entertainment at 2,500–8,000. Source: https://www.hebcenter.com/assets/doc/H-E-B-Center-Press-Release-FINAL-323c3a4ae0.pdf' },
+    ],
+    roof: 'indoor',
+  },
+  'luedecke-arena': {
+    id: 'luedecke-arena',
+    metroId: 'austin',
+    names: [{ name: 'Luedecke Arena' }, { name: 'Travis County Exposition Center' }],
+    location: [-97.6209537, 30.2942285],
+    capacity: [
+      { seats: 6400, setup: 'rodeo', note: 'Reported (Austin Monitor) as 6,400 seats. Pollstar 2017 lists 8,400 capacity. Seated vs floor is unresolved and the two figures are not averaged. Source: https://austinmonitor.com/?p=32577' },
+      { seats: 8400, setup: 'concert', note: 'Reported (Pollstar, 2017). May be the floor setup against the 6,400 seated figure. Unresolved. Source: https://news.pollstar.com/2017/12/06/expo-center-replacement-plan/' },
+    ],
+    roof: 'indoor',
+  },
+  'disch-falk-field': {
+    id: 'disch-falk-field',
+    metroId: 'austin',
+    names: [
+      { name: 'Disch-Falk Field' },
+      { name: 'UFCU Disch-Falk Field', from: '2006-08-01' },
+    ],
+    location: [-97.7261524, 30.2801248],
+    capacity: [{
+      seats: 7211,
+      setup: 'baseball',
+      note: 'Official. Wikipedia list says 7,373; a 2008 renovation report says 6,756. The official 7,211 is the figure used. Source: https://texaslonghorns.com/facilities/?id=11',
+    }],
+    roof: 'open',
+  },
+  'house-park': {
+    id: 'house-park',
+    metroId: 'austin',
+    names: [{ name: 'House Park' }],
+    location: [-97.7500372, 30.2793593],
+    capacity: [{
+      seats: 6500,
+      setup: 'soccer',
+      note: 'Reported, one Wikipedia list only. Also an AISD school stadium. Verify with AISD. Source: https://en.wikipedia.org/wiki/Sports_in_Austin,_Texas',
+    }],
+    roof: 'open',
+  },
+  'moody-amphitheater': {
+    id: 'moody-amphitheater',
+    metroId: 'austin',
+    names: [{ name: 'Moody Amphitheater' }, { name: 'Moody Amphitheater at Waterloo Park' }],
+    // Nominatim has no amphitheater node. This is the OSM point for Waterloo Park.
+    location: [-97.7359243, 30.2741216],
+    capacity: [{
+      seats: 5000,
+      setup: 'concert',
+      note: 'Official. Lawn, mostly standing, exactly at the 5,000 friction line. Source: https://waterloogreenway.org/?p=13560',
+    }],
+    roof: 'open',
+  },
+  'gregory-gym': {
+    id: 'gregory-gym',
+    metroId: 'austin',
+    names: [{ name: 'Gregory Gymnasium' }, { name: 'Gregory Gym' }],
+    location: [-97.7363896, 30.2839839],
+    capacity: [{ seats: 4000, note: 'Official. Texas volleyball. Source: https://texaslonghorns.com/sports/2013/7/25/facilities_0725134031' }],
+    roof: 'indoor',
+  },
+  'bass-concert-hall': {
+    id: 'bass-concert-hall',
+    metroId: 'austin',
+    names: [{ name: 'Bass Concert Hall' }],
+    location: [-97.7312787, 30.2858688],
+    capacity: [{ seats: 2900, setup: 'concert', note: 'Reported (Wikipedia, citing Texas Performing Arts). Source: https://en.wikipedia.org/wiki/University_of_Texas_Performing_Arts_Center' }],
+    roof: 'indoor',
+  },
+  'moody-theater': {
+    id: 'moody-theater',
+    metroId: 'austin',
+    names: [{ name: 'Moody Theater' }, { name: 'ACL Live at the Moody Theater' }],
+    location: [-97.7471887, 30.2654821],
+    capacity: [{
+      seats: 2750,
+      setup: 'concert',
+      note: 'Reported for concerts. Austin City Limits TV tapings cap at 800; do not apply 2,750 to a taping. Source: https://theclio.com/entry/103659',
+    }],
+    roof: 'indoor',
+  },
+  'long-center-dell-hall': {
+    id: 'long-center-dell-hall',
+    metroId: 'austin',
+    names: [{ name: 'Long Center for the Performing Arts' }, { name: 'Michael & Susan Dell Hall' }],
+    location: [-97.7512449, 30.2602594],
+    capacity: [{ seats: 2442, setup: 'concert', note: 'Official. Source: https://thelongcenter.org/dell-hall/' }],
+    roof: 'indoor',
+  },
+  'stubbs-amphitheater': {
+    id: 'stubbs-amphitheater',
+    metroId: 'austin',
+    names: [{ name: "Stubb's BBQ" }, { name: "Stubb's Waller Creek Amphitheater" }],
+    location: [-97.7362194, 30.2684889],
+    capacity: [{
+      seats: 2200,
+      setup: 'concert',
+      note: 'Reported standing capacity (2008). A third-party profile says about 2,500. The indoor stage (about 300) is a separate room and is not this one. Source: https://www.austinmonitor.com/stories/2008/03/downtown-panel-tentatively-oks-stubbs-expansion/',
+    }],
+    roof: 'open',
+  },
+  'emos-austin': {
+    id: 'emos-austin',
+    metroId: 'austin',
+    names: [{ name: "Emo's" }],
+    location: [-97.7280211, 30.239565],
+    capacity: [{
+      seats: 2000,
+      setup: 'concert',
+      note: 'Reported (KVUE, about 2,000). A Ticketmaster blog says 1,700. Not averaged. Source: https://www.kvue.com/article/money/economy/boomtown-2040/austin-indoor-live-music-venue-southeast-river-park-riverside/269-0670ae72-4457-41ae-a9ee-1003d6d18c94',
+    }],
+    roof: 'indoor',
+  },
+  'mccombs-field': {
+    id: 'mccombs-field',
+    metroId: 'austin',
+    names: [{ name: 'Red & Charline McCombs Field' }, { name: 'Red and Charline McCombs Field' }],
+    location: [-97.7247851, 30.2808552],
+    capacity: [{ seats: 1250, note: 'Reported. Texas softball. Near the 1,000 pre-list line. Source: https://en.wikipedia.org/wiki/Sports_in_Austin,_Texas' }],
+    roof: 'open',
+  },
+  'bobcat-soccer-complex': {
+    id: 'bobcat-soccer-complex',
+    metroId: 'austin',
+    names: [{ name: 'Bobcat Soccer Complex' }],
+    location: [-97.9517681, 29.8892039],
+    capacity: [{ seats: 1000, setup: 'soccer', note: 'Reported (Visit San Marcos). Right at the 1,000 pre-list line. South-edge room. Source: https://www.visitsanmarcos.com/things-to-do/recreation-and-sports/texas-state-university/' }],
+    roof: 'open',
+  },
+  'bobcat-softball-stadium': {
+    id: 'bobcat-softball-stadium',
+    metroId: 'austin',
+    names: [{ name: 'Bobcat Softball Stadium' }],
+    location: [-97.9293321, 29.8881256],
+    capacity: [{ seats: 1000, note: 'Reported (Visit San Marcos). Right at the 1,000 pre-list line. South-edge room. Source: https://www.visitsanmarcos.com/things-to-do/recreation-and-sports/texas-state-university/' }],
+    roof: 'open',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */
