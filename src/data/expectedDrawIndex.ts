@@ -35864,6 +35864,1686 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 26031,
     "games": 5,
     "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 9423,
+    "low": 8694,
+    "high": 10306,
+    "games": 154,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 9274,
+    "low": 8567,
+    "high": 10032,
+    "games": 74,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 9333,
+    "low": 9013,
+    "high": 9654,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 10061,
+    "low": 9614,
+    "high": 10273,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 8922,
+    "low": 8766,
+    "high": 9245,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 9674,
+    "low": 9219,
+    "high": 10307,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 8281,
+    "low": 8138,
+    "high": 8367,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 9367,
+    "low": 7672,
+    "high": 9694,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 9012,
+    "low": 8454,
+    "high": 10815,
+    "games": 23,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 10283,
+    "low": 9958,
+    "high": 11155,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 12122,
+    "low": 12049,
+    "high": 12254,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 9619,
+    "low": 8682,
+    "high": 10506,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 8413,
+    "low": 8082,
+    "high": 8484,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 8847,
+    "low": 8595,
+    "high": 9395,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 10289,
+    "low": 9063,
+    "high": 11703,
+    "games": 31,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 10632,
+    "low": 9808,
+    "high": 11352,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 11752,
+    "low": 11243,
+    "high": 12299,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 9185,
+    "low": 8670,
+    "high": 9687,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 12298,
+    "low": 11138,
+    "high": 12322,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 10053,
+    "low": 9215,
+    "high": 10337,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 10047,
+    "low": 8758,
+    "high": 10289,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 9149,
+    "low": 8791,
+    "high": 11606,
+    "games": 26,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 10061,
+    "low": 9809,
+    "high": 10581,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 12224,
+    "low": 12194,
+    "high": 12515,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 10215,
+    "low": 9526,
+    "high": 11296,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 8986,
+    "low": 8835,
+    "high": 9861,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 8477,
+    "low": 7764,
+    "high": 8802,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 8975,
+    "low": 8772,
+    "high": 9384,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 4199,
+    "low": 3041,
+    "high": 5755,
+    "games": 219,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6258,
+    "low": 5479,
+    "high": 7131,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3224,
+    "low": 2551,
+    "high": 3888,
+    "games": 107,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 2882,
+    "low": 2443,
+    "high": 3441,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 3580,
+    "low": 3336,
+    "high": 4293,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 3463,
+    "low": 2643,
+    "high": 3989,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 3183,
+    "low": 2793,
+    "high": 3935,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 2747,
+    "low": 2342,
+    "high": 4205,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 2726,
+    "low": 2216,
+    "high": 3533,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 5288,
+    "low": 4272,
+    "high": 6226,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 5270,
+    "low": 4361,
+    "high": 5599,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 5692,
+    "low": 5225,
+    "high": 6372,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 5018,
+    "low": 4300,
+    "high": 5820,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 4313,
+    "low": 4002,
+    "high": 4720,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 5879,
+    "low": 3907,
+    "high": 6097,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 8939,
+    "low": 4415,
+    "high": 11152,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6545,
+    "low": 5652,
+    "high": 8074,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 5654,
+    "low": 5244,
+    "high": 6225,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 6624,
+    "low": 6246,
+    "high": 7966,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 6376,
+    "low": 4947,
+    "high": 7221,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 7037,
+    "low": 6299,
+    "high": 8332,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 7814,
+    "low": 6732,
+    "high": 8861,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 8500,
+    "low": 5787,
+    "high": 8894,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4402,
+    "low": 3476,
+    "high": 5445,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 4105,
+    "low": 3771,
+    "high": 4505,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 4953,
+    "low": 4152,
+    "high": 5881,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 5393,
+    "low": 4964,
+    "high": 6049,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 4306,
+    "low": 4076,
+    "high": 4847,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 3048,
+    "low": 3029,
+    "high": 3164,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 3732,
+    "low": 2895,
+    "high": 4336,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "venueId": "sutter-health-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 5680,
+    "low": 4288,
+    "high": 6231,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-football",
+    "venueId": "hornet-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 15016,
+    "low": 13253,
+    "high": 16122,
+    "games": 13,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-football",
+    "venueId": "hornet-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 12316,
+    "low": 12274,
+    "high": 12405,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-football",
+    "venueId": "hornet-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 14966,
+    "low": 13077,
+    "high": 15678,
+    "games": 12,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-football",
+    "venueId": "hornet-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 13253,
+    "low": 12901,
+    "high": 14135,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-football",
+    "venueId": "hornet-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 15530,
+    "low": 14916,
+    "high": 16122,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-football",
+    "venueId": "hornet-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 13745,
+    "low": 11780,
+    "high": 15660,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "hornet-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 2749,
+    "low": 2596,
+    "high": 2895,
+    "games": 13,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "hornet-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2749,
+    "low": 2713,
+    "high": 2823,
+    "games": 7,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "hornet-pavilion",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2956,
+    "low": 2820,
+    "high": 3041,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "all",
+    "month": null,
+    "count": 672,
+    "low": 508,
+    "high": 811,
+    "games": 28,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 587,
+    "low": 531,
+    "high": 771,
+    "games": 13,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 587,
+    "low": 531,
+    "high": 1007,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 700,
+    "low": 652,
+    "high": 786,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 416,
+    "low": 384,
+    "high": 495,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 746,
+    "low": 521,
+    "high": 814,
+    "games": 14,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 739,
+    "low": 478,
+    "high": 752,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 765,
+    "low": 634,
+    "high": 834,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "venueId": "hornet-pavilion",
+    "dayClass": "all",
+    "month": null,
+    "count": 602,
+    "low": 462,
+    "high": 719,
+    "games": 12,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "venueId": "hornet-pavilion",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 701,
+    "low": 597,
+    "high": 1144,
+    "games": 5,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "venueId": "hornet-pavilion",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 491,
+    "low": 429,
+    "high": 581,
+    "games": 6,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "venueId": "hornet-pavilion",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 491,
+    "low": 462,
+    "high": 528,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "all",
+    "month": null,
+    "count": 409,
+    "low": 342,
+    "high": 603,
+    "games": 14,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 346,
+    "low": 335,
+    "high": 603,
+    "games": 7,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 583,
+    "low": 509,
+    "high": 634,
+    "games": 4,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 543,
+    "low": 475,
+    "high": 583,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "venueId": "sac-state-nest",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 397,
+    "low": 362,
+    "high": 404,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 16339,
+    "low": 15782,
+    "high": 17832,
+    "games": 79,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 16016,
+    "low": 15130,
+    "high": 16362,
+    "games": 5,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 16320,
+    "low": 15412,
+    "high": 17832,
+    "games": 42,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 17007,
+    "low": 15245,
+    "high": 17832,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 17188,
+    "low": 16162,
+    "high": 17893,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 15919,
+    "low": 15350,
+    "high": 16475,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 16333,
+    "low": 16026,
+    "high": 17832,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 17384,
+    "low": 16464,
+    "high": 17832,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 16601,
+    "low": 16387,
+    "high": 17965,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 16435,
+    "low": 15929,
+    "high": 17305,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 16478,
+    "low": 16123,
+    "high": 17155,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 16911,
+    "low": 16212,
+    "high": 17832,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 17832,
+    "low": 16898,
+    "high": 17832,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 15901,
+    "low": 15268,
+    "high": 16750,
+    "games": 17,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 16067,
+    "low": 15736,
+    "high": 16639,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 15132,
+    "low": 15077,
+    "high": 15711,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 15901,
+    "low": 15564,
+    "high": 16326,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 15905,
+    "low": 15774,
+    "high": 16469,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 9547,
+    "low": 9038,
+    "high": 10810,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 11569,
+    "low": 11569,
+    "high": 11569,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 8779,
+    "low": 8562,
+    "high": 8988,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 8988,
+    "low": 8884,
+    "high": 9038,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 9880,
+    "low": 9363,
+    "high": 10827,
+    "games": 34,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 9370,
+    "low": 8956,
+    "high": 9495,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 9594,
+    "low": 9204,
+    "high": 9972,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 10191,
+    "low": 9981,
+    "high": 10208,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 9463,
+    "low": 9282,
+    "high": 10470,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 9388,
+    "low": 8792,
+    "high": 9634,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 10026,
+    "low": 9624,
+    "high": 11348,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 11569,
+    "low": 10787,
+    "high": 11569,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "venueId": "heart-health-park",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 11569,
+    "low": 11569,
+    "high": 11569,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "venueId": "uc-davis-health-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 10577,
+    "low": 9103,
+    "high": 12084,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "venueId": "uc-davis-health-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 14724,
+    "low": 11734,
+    "high": 15971,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "venueId": "uc-davis-health-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 10577,
+    "low": 9103,
+    "high": 12084,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "venueId": "uc-davis-health-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 12238,
+    "low": 10580,
+    "high": 13535,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "venueId": "uc-davis-health-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 9937,
+    "low": 9757,
+    "high": 10226,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "venueId": "uc-davis-health-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 11298,
+    "low": 10722,
+    "high": 13366,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1376,
+    "low": 1193,
+    "high": 1811,
+    "games": 42,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 877,
+    "low": 722,
+    "high": 952,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1295,
+    "low": 1215,
+    "high": 1698,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1372,
+    "low": 1262,
+    "high": 1475,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1810,
+    "low": 1300,
+    "high": 1816,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1263,
+    "low": 1188,
+    "high": 1290,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1090,
+    "low": 946,
+    "high": 1260,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1502,
+    "low": 1186,
+    "high": 2153,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1458,
+    "low": 1255,
+    "high": 2181,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1547,
+    "low": 1470,
+    "high": 1687,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 1165,
+    "low": 1084,
+    "high": 1612,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 692,
+    "low": 529,
+    "high": 800,
+    "games": 27,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 548,
+    "low": 517,
+    "high": 583,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 537,
+    "low": 515,
+    "high": 582,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 548,
+    "low": 491,
+    "high": 566,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 775,
+    "low": 705,
+    "high": 877,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 733,
+    "low": 726,
+    "high": 754,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "venueId": "university-credit-union-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 785,
+    "low": 696,
+    "high": 877,
+    "games": 4,
+    "seasons": "2025–2026"
   }
 ];
 
@@ -36099,6 +37779,20 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.063,
     "games": 11
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-football",
+    "season": 2026,
+    "level": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "season": 2026,
+    "level": 0.918,
+    "games": 3
   }
 ];
 
@@ -52098,6 +53792,769 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "toronto",
     "ratio": 1.03,
     "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "angels",
+    "ratio": 1.01,
+    "games": 13
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "astros",
+    "ratio": 1.04,
+    "games": 14
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "blue-jays",
+    "ratio": 0.858,
+    "games": 6
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "giants",
+    "ratio": 1.039,
+    "games": 6
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "guardians",
+    "ratio": 0.985,
+    "games": 6
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "mariners",
+    "ratio": 0.979,
+    "games": 12
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "orioles",
+    "ratio": 0.955,
+    "games": 6
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "rangers",
+    "ratio": 0.959,
+    "games": 13
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "rays",
+    "ratio": 0.977,
+    "games": 6
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "red-sox",
+    "ratio": 1.038,
+    "games": 7
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "royals",
+    "ratio": 1.011,
+    "games": 6
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "tigers",
+    "ratio": 0.997,
+    "games": 6
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "twins",
+    "ratio": 1.015,
+    "games": 7
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "white-sox",
+    "ratio": 1.037,
+    "games": 6
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "opponent": "yankees",
+    "ratio": 1.014,
+    "games": 6
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "opponent": "aces",
+    "ratio": 1.063,
+    "games": 30
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "opponent": "aviators",
+    "ratio": 0.893,
+    "games": 34
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "opponent": "bees",
+    "ratio": 0.86,
+    "games": 32
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "opponent": "chihuahuas",
+    "ratio": 0.944,
+    "games": 21
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "opponent": "comets",
+    "ratio": 0.99,
+    "games": 15
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "opponent": "express",
+    "ratio": 0.962,
+    "games": 18
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "opponent": "isotopes",
+    "ratio": 1.105,
+    "games": 18
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "opponent": "rainiers",
+    "ratio": 0.874,
+    "games": 30
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "river-cats",
+    "opponent": "space-cowboys",
+    "ratio": 1.015,
+    "games": 18
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-football",
+    "opponent": "cal-poly",
+    "ratio": 1.03,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "bethesda",
+    "ratio": 0.978,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "e-washington",
+    "ratio": 0.952,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "idaho",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "idaho-st",
+    "ratio": 1.109,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "montana",
+    "ratio": 1.079,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "montana-st",
+    "ratio": 1.101,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "n-arizona",
+    "ratio": 0.961,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "n-colorado",
+    "ratio": 0.918,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "portland-st",
+    "ratio": 0.932,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-mbb",
+    "opponent": "weber-st",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "opponent": "e-washington",
+    "ratio": 1.169,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "opponent": "idaho",
+    "ratio": 0.875,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "opponent": "idaho-st",
+    "ratio": 0.918,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "opponent": "montana",
+    "ratio": 1.23,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "opponent": "montana-st",
+    "ratio": 1.147,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "opponent": "n-arizona",
+    "ratio": 0.937,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "opponent": "n-colorado",
+    "ratio": 1.018,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "opponent": "portland-st",
+    "ratio": 1.11,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sac-state-wbb",
+    "opponent": "weber-st",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "76ers",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "bucks",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "bulls",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "cavaliers",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "celtics",
+    "ratio": 1.014,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "clippers",
+    "ratio": 0.997,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "grizzlies",
+    "ratio": 0.976,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "hawks",
+    "ratio": 0.978,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "heat",
+    "ratio": 0.978,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "hornets",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "jazz",
+    "ratio": 1.011,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "knicks",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "lakers",
+    "ratio": 1.034,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "magic",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "mavericks",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "nets",
+    "ratio": 1.027,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "nuggets",
+    "ratio": 0.97,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "pacers",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "pelicans",
+    "ratio": 0.985,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "pistons",
+    "ratio": 1.01,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "raptors",
+    "ratio": 0.984,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "rockets",
+    "ratio": 0.982,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "spurs",
+    "ratio": 1.022,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "suns",
+    "ratio": 1.017,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "thunder",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "timberwolves",
+    "ratio": 1.009,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "trail-blazers",
+    "ratio": 0.986,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "warriors",
+    "ratio": 1.05,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "opponent": "wizards",
+    "ratio": 1.01,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "el-paso",
+    "ratio": 0.939,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "las-vegas",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "lexington",
+    "ratio": 1.035,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "monterey-bay",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "new-mexico",
+    "ratio": 1.084,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "oakland",
+    "ratio": 1.058,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "orange-county",
+    "ratio": 1.018,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "phoenix",
+    "ratio": 0.989,
+    "games": 4
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "san-antonio",
+    "ratio": 1.066,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "switchbacks-fc",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-republic",
+    "opponent": "tulsa",
+    "ratio": 1.034,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "opponent": "e-washington",
+    "ratio": 0.972,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "opponent": "montana",
+    "ratio": 0.97,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-football",
+    "opponent": "sacramento-st",
+    "ratio": 1.088,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "bakersfield",
+    "ratio": 0.858,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "cal-poly",
+    "ratio": 1.019,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "csu-northridge",
+    "ratio": 0.874,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "fullerton",
+    "ratio": 0.929,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "hawai-i",
+    "ratio": 1.033,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "long-beach-st",
+    "ratio": 1.017,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "menlo",
+    "ratio": 0.883,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "sacramento-st",
+    "ratio": 1.391,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "santa-barbara",
+    "ratio": 1.179,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "uc-irvine",
+    "ratio": 1.118,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "uc-riverside",
+    "ratio": 0.972,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-mbb",
+    "opponent": "uc-san-diego",
+    "ratio": 1.234,
+    "games": 3
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "bakersfield",
+    "ratio": 0.965,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "cal-poly",
+    "ratio": 1.024,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "csu-northridge",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "fullerton",
+    "ratio": 1.037,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "hawai-i",
+    "ratio": 1.07,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "long-beach-st",
+    "ratio": 0.955,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "santa-barbara",
+    "ratio": 1.036,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "uc-irvine",
+    "ratio": 1.078,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "uc-riverside",
+    "ratio": 0.956,
+    "games": 2
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "uc-davis-wbb",
+    "opponent": "uc-san-diego",
+    "ratio": 0.985,
+    "games": 2
   }
 ];
 
@@ -54477,6 +56934,78 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.043,
     "games": 51,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "band": "first",
+    "occupancy": 0.993,
+    "low": 0.882,
+    "high": 1.183,
+    "games": 29,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "band": "second",
+    "occupancy": 1.027,
+    "low": 0.948,
+    "high": 1.171,
+    "games": 55,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "athletics",
+    "venueId": "sutter-health-park",
+    "band": "conference",
+    "occupancy": 1.019,
+    "low": 0.945,
+    "high": 1.059,
+    "games": 26,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "band": "first",
+    "occupancy": 1.021,
+    "low": 1,
+    "high": 1.042,
+    "games": 84,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.04,
+    "games": 40,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "sacramento",
+    "teamId": "sacramento-kings",
+    "venueId": "golden-1-center",
+    "band": "final",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.058,
+    "games": 22,
+    "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   }
 ];

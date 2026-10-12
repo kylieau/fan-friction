@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "teamId": "sac-state-football",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "sac-state-football",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "19:00",
+      "opponent": "East Texas A&M",
+      "venueId": "hornet-stadium",
+      "attendance": 12316,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "18:00",
+      "opponent": "N Arizona",
+      "venueId": "hornet-stadium",
+      "attendance": 12549,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "19:30",
+      "opponent": "Montana St",
+      "venueId": "hornet-stadium",
+      "attendance": 16122,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2023,
+      "date": "2023-10-28",
+      "start": "18:00",
+      "opponent": "Idaho St",
+      "venueId": "hornet-stadium",
+      "attendance": 13733,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "14:00",
+      "opponent": "Cal Poly",
+      "venueId": "hornet-stadium",
+      "attendance": 12022,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "18:00",
+      "opponent": "Nicholls",
+      "venueId": "hornet-stadium",
+      "attendance": 12494,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "18:00",
+      "opponent": "E Washington",
+      "venueId": "hornet-stadium",
+      "attendance": 14916,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2024,
+      "date": "2024-10-19",
+      "start": "18:00",
+      "opponent": "Weber St",
+      "venueId": "hornet-stadium",
+      "attendance": 15530,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2024,
+      "date": "2024-11-02",
+      "start": "18:00",
+      "opponent": "Portland St",
+      "venueId": "hornet-stadium",
+      "attendance": 11055,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "14:00",
+      "opponent": "UC Davis",
+      "venueId": "hornet-stadium",
+      "attendance": 16239,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "18:00",
+      "opponent": "Mercyhurst",
+      "venueId": "hornet-stadium",
+      "attendance": 12231,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "18:00",
+      "opponent": "C Arkansas",
+      "venueId": "hornet-stadium",
+      "attendance": 13253,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "18:00",
+      "opponent": "Cal Poly",
+      "venueId": "hornet-stadium",
+      "attendance": 15016,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "18:00",
+      "opponent": "N Colorado",
+      "venueId": "hornet-stadium",
+      "attendance": 20022,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2025,
+      "date": "2025-10-24",
+      "start": "19:35",
+      "opponent": "Montana",
+      "venueId": "hornet-stadium",
+      "attendance": 18029,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2025,
+      "date": "2025-11-15",
+      "start": "18:00",
+      "opponent": "Idaho",
+      "venueId": "hornet-stadium",
+      "attendance": 15467,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "19:00",
+      "opponent": "Miss Valley St",
+      "venueId": "hornet-stadium",
+      "attendance": 18523,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "19:30",
+      "opponent": "N Dakota St",
+      "venueId": "hornet-stadium",
+      "attendance": 13322,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "sac-state-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "18:00",
+      "opponent": "UMass",
+      "venueId": "hornet-stadium",
+      "attendance": 11007,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

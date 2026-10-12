@@ -92,6 +92,15 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'soccer/usa.1', espnId: '9727', metroId: 'vancouver', teamId: 'vancouver-whitecaps', sport: 'soccer' },
   { path: 'football/cfl', espnId: '79', metroId: 'vancouver', teamId: 'bc-lions', sport: 'football' },
   { path: 'lacrosse/nll', espnId: '125432', metroId: 'vancouver', teamId: 'vancouver-warriors', sport: 'lacrosse' },
+  // Sacramento (docs/research/city-builds/sacramento/). Ids and home venue names checked against the feed Oct 12, 2026.
+  { path: 'basketball/nba', espnId: '23', metroId: 'sacramento', teamId: 'sacramento-kings', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '16', metroId: 'sacramento', teamId: 'sac-state-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '16', metroId: 'sacramento', teamId: 'sac-state-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '16', metroId: 'sacramento', teamId: 'sac-state-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '302', metroId: 'sacramento', teamId: 'uc-davis-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '302', metroId: 'sacramento', teamId: 'uc-davis-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '302', metroId: 'sacramento', teamId: 'uc-davis-wbb', sport: 'basketball' },
+  { path: 'soccer/usa.usl.1', espnId: '17828', metroId: 'sacramento', teamId: 'sacramento-republic', sport: 'soccer' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
@@ -469,6 +478,18 @@ const METRO_VENUE_BY_NAME: Partial<Record<string, Record<string, string>>> = {
   philadelphia: { 'franklin field': 'penn-franklin-field' },
   milwaukee: { 'franklin field': 'franklin-field', 'routine field': 'franklin-field' },
   nashville: { 'memorial gymnasium': 'vanderbilt-memorial-gymnasium' },
+  sacramento: {
+    'golden 1 center': 'golden-1-center',
+    'hornet stadium': 'hornet-stadium',
+    'hornet pavilion': 'hornet-pavilion',
+    'the nest': 'sac-state-nest',
+    'heart health park': 'heart-health-park',
+    'uc davis health stadium': 'uc-davis-health-stadium',
+    'aggie stadium': 'uc-davis-health-stadium',
+    'university credit union center': 'university-credit-union-center',
+    'the pavilion': 'university-credit-union-center',
+    'pavilion at arc': 'university-credit-union-center',
+  },
 };
 
 function venueIdForEspnName(name: string, metroId: string): string | undefined {

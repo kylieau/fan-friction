@@ -162,7 +162,7 @@ iga-stadium	montreal	11991	0	21	4	1450	6	0	IGA Stadium
 cepsum-stadium	montreal	5000	0	20	6	3300	99	0	CEPSUM Stadium
 claude-robillard	montreal	6375	0	18	4	350	10	0	Claude-Robillard Sports Complex
 mortgage-matchup-center	phoenix	17071	0	29	12	1750	30	0	Mortgage Matchup Center
-golden-1-center	sacramento	17600	0	21	8	350	13	0	Golden 1 Center
+golden-1-center	sacramento	19000	0	20	8	350	12	0	Golden 1 Center
 empire-polo-club	la	125000	0	1	0	>1500	4	0	Empire Polo Club
 mercedes-benz-stadium	atlanta	71000	0	31	14	1050	21	0	Mercedes-Benz Stadium
 echopark-speedway	atlanta	71000	0	6	1	650	7	0	EchoPark Speedway
@@ -288,3 +288,10 @@ thunderbird-arena	vancouver	7000	0	20	5	>1500	14	0	Thunderbird Arena
 nat-bailey-stadium	vancouver	6500	0	23	8	1850	43	0	Rogers Field at Nat Bailey Stadium
 willoughby-stadium	vancouver	6042	0	10	1	2000	23	0	Willoughby Stadium
 langley-events-centre	vancouver	5276	0	9	2	1750	36	0	Langley Events Centre
+sutter-health-park	sacramento	13416	0	24	9	500	7	0	Sutter Health Park
+hornet-stadium	sacramento	21195	0	14	2	500	6	0	Hornet Stadium
+heart-health-park	sacramento	14000	0	1	0	600	4	0	Heart Health Park
+toyota-amphitheatre	sacramento	18500	0	4	1	2650	3	0	Toyota Amphitheatre
+uc-davis-health-stadium	sacramento	10743	0	8	4	350	5	0	UC Davis Health Stadium
+university-credit-union-center	sacramento	6003	0	7	3	750	2	0	University Credit Union Center
+hughes-stadium	sacramento	25000	0	29	6	1000	5	0	Charles C. Hughes Stadium

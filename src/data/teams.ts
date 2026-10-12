@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -178,6 +178,20 @@ const LIST: Team[] = [
   team("gcu-wbb", "Grand Canyon Lopes Women's Basketball", "GCU WBB", "College women's basketball", "basketball", "phoenix", "GCU", ["Lopes", "Grand Canyon"]),
   team("arizona-rattlers", "Arizona Rattlers", "Rattlers", "IFL", "football", "phoenix", "RAT"),
   team("arizona-ridge-riders", "Arizona Ridge Riders", "Ridge Riders", "PBR", "rodeo", "phoenix", "ARR"),
+  // Sacramento (Oct 12, 2026; docs/research/city-builds/sacramento/). Feed ids checked against live schedules.
+  // "Sac Kings" so titles do not collide with the Los Angeles Kings.
+  team("sacramento-kings", "Sacramento Kings", "Sac Kings", "NBA", "basketball", "sacramento", "SAC"),
+  team("athletics", "Athletics", "Athletics", "MLB", "baseball", "sacramento", "ATH", ["A's", "Oakland Athletics"]),
+  team("river-cats", "Sacramento River Cats", "River Cats", "Triple-A baseball", "baseball", "sacramento", "RC"),
+  team("sacramento-republic", "Sacramento Republic FC", "Republic FC", "USL Championship", "soccer", "sacramento", "REP"),
+  team("sac-state-football", "Sacramento State Hornets Football", "Sac State FB", "College football", "football", "sacramento", "SSFB", ["Hornets", "Sacramento State"]),
+  team("sac-state-mbb", "Sacramento State Hornets Men's Basketball", "Sac State MBB", "College men's basketball", "basketball", "sacramento", "SSMB", ["Hornets"]),
+  team("sac-state-wbb", "Sacramento State Hornets Women's Basketball", "Sac State WBB", "College women's basketball", "basketball", "sacramento", "SSWB", ["Hornets"]),
+  team("sac-state-volleyball", "Sacramento State Hornets Women's Volleyball", "Sac State VB", "College volleyball", "volleyball", "sacramento", "SSVB", ["Hornets"]),
+  team("uc-davis-football", "UC Davis Aggies Football", "UC Davis FB", "College football", "football", "sacramento", "UCFB", ["Aggies", "UC Davis"]),
+  team("uc-davis-mbb", "UC Davis Aggies Men's Basketball", "UC Davis MBB", "College men's basketball", "basketball", "sacramento", "UCMB", ["Aggies"]),
+  team("uc-davis-wbb", "UC Davis Aggies Women's Basketball", "UC Davis WBB", "College women's basketball", "basketball", "sacramento", "UCWB", ["Aggies"]),
+  team("sac-city-football", "Sacramento City College Panthers Football", "Sac City FB", "Community college football", "football", "sacramento", "SCC"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

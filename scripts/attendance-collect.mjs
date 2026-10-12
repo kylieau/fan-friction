@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -29,6 +29,9 @@ const MLB_TEAMS = [
   { teamId: 'tampa-tarpons', metroId: 'tampa', mlbId: 587, sportId: 14, venueId: 'george-m-steinbrenner-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'dunedin-blue-jays', metroId: 'tampa', mlbId: 424, sportId: 14, venueId: 'td-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'round-rock-express', metroId: 'austin', mlbId: 102, sportId: 11, venueId: 'dell-diamond', seasons: [2022, 2023, 2024, 2025, 2026] },
+  // Only Sutter Health Park (MLB venue 2529). Oakland seasons and 2026 Las Vegas games are left out.
+  { teamId: 'athletics', metroId: 'sacramento', mlbId: 133, venueByMlbId: { 2529: 'sutter-health-park' }, seasons: [2025, 2026] },
+  { teamId: 'river-cats', metroId: 'sacramento', mlbId: 105, sportId: 11, venueId: 'sutter-health-park', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'brewers', metroId: 'milwaukee', mlbId: 158, venueId: 'american-family-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'milwaukee-milkmen', metroId: 'milwaukee', mlbId: 5548, sportId: 23, venueId: 'franklin-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'lake-country-dockhounds', metroId: 'milwaukee', mlbId: 6488, sportId: 23, venueId: 'dockhounds-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -120,6 +123,14 @@ const ESPN_TEAMS = [
   { teamId: 'vancouver-whitecaps', metroId: 'vancouver', path: 'soccer/usa.1', espnId: '9727', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'bc-lions', metroId: 'vancouver', path: 'football/cfl', espnId: '79', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'vancouver-warriors', metroId: 'vancouver', path: 'lacrosse/nll', espnId: '125432', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sacramento-kings', metroId: 'sacramento', path: 'basketball/nba', espnId: '23', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sac-state-football', metroId: 'sacramento', path: 'football/college-football', espnId: '16', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sac-state-mbb', metroId: 'sacramento', path: 'basketball/mens-college-basketball', espnId: '16', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sac-state-wbb', metroId: 'sacramento', path: 'basketball/womens-college-basketball', espnId: '16', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uc-davis-football', metroId: 'sacramento', path: 'football/college-football', espnId: '302', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uc-davis-mbb', metroId: 'sacramento', path: 'basketball/mens-college-basketball', espnId: '302', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'uc-davis-wbb', metroId: 'sacramento', path: 'basketball/womens-college-basketball', espnId: '302', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'sacramento-republic', metroId: 'sacramento', path: 'soccer/usa.usl.1', espnId: '17828', seasons: [2023, 2024, 2025, 2026], seasontype: 0 },
   { teamId: 'bucks', metroId: 'milwaukee', path: 'basketball/nba', espnId: '15', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -451,6 +462,18 @@ const METRO_VENUE_BY_NAME = {
   philadelphia: { 'franklin field': 'penn-franklin-field' },
   milwaukee: { 'franklin field': 'franklin-field', 'routine field': 'franklin-field' },
   nashville: { 'memorial gymnasium': 'vanderbilt-memorial-gymnasium' },
+  sacramento: {
+    'golden 1 center': 'golden-1-center',
+    'hornet stadium': 'hornet-stadium',
+    'hornet pavilion': 'hornet-pavilion',
+    'the nest': 'sac-state-nest',
+    'heart health park': 'heart-health-park',
+    'uc davis health stadium': 'uc-davis-health-stadium',
+    'aggie stadium': 'uc-davis-health-stadium',
+    'university credit union center': 'university-credit-union-center',
+    'the pavilion': 'university-credit-union-center',
+    'pavilion at arc': 'university-credit-union-center',
+  },
 };
 
 function venueIdForEspnName(name, metroId) {
@@ -513,13 +536,15 @@ async function collectMlb(team) {
         if (!Number.isFinite(att) || att <= 0) return null;
         if (team.mlbVenueId && g.venue?.id && g.venue.id !== team.mlbVenueId) return null;
         const { date, time } = localParts(g.gameDate, team.metroId);
+        const venueId = team.venueByMlbId ? team.venueByMlbId[g.venue?.id] : team.venueId;
+        if (!venueId) return null;
         return {
           teamId: team.teamId,
           season,
           date,
           start: g.status?.startTimeTBD ? null : time,
           opponent: g.teams.away.team.teamName ?? g.teams.away.team.name,
-          venueId: team.venueId,
+          venueId,
           attendance: att,
           kind: 'announced',
           postseason: g.gameType !== 'R' || undefined,
