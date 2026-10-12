@@ -5806,15 +5806,15 @@ export const VENUES: Record<string, Venue> = {
     capacity: [],
     roof: 'open',
   },
-  // ---------- Vancouver (docs/research/city-builds/vancouver/vancouver-venue-table-answer.md; car shares from docs/research/city-builds/vancouver/vancouver-city-type-answer.md), Oct 12, 2026 ----------
+  // ---------- Vancouver (docs/research/city-builds/vancouver/vancouver-venue-table-answer.md), Oct 12, 2026 ----------
   // Not venue rows: Vancouver Convention Centre halls (convention visits, not a fixed bowl), Hastings Racecourse (closed; grandstand capacity unknown),
   // the replaced PNE Amphitheatre, the unbuilt Surrey arena and Whitecaps stadium, and open sites (Fan Festival, PNE Fair, parades, fireworks).
   // Abbotsford (Rogers Forum) and Victoria stay outside this metro.
+  // No carShare overrides. Every figure in the city-type answer is an estimate, including Hastings Park and Langley.
+  // Those estimates stay in the research (same rule as Milwaukee and Tampa). The transit fallback is 0.40.
   'bc-place': {
     id: 'bc-place',
     metroId: 'vancouver',
-    // Estimated (0.35–0.60) for a regular full-bowl night. No measured split. MLS was estimated at 0.40 and the World Cup at 0.30; one share per building.
-    carShare: 0.45,
     names: [{ name: 'BC Place Vancouver' }, { name: 'BC Place' }],
     location: [-123.1120062, 49.2766905],
     capacity: [
@@ -5826,8 +5826,7 @@ export const VENUES: Record<string, Venue> = {
   'rogers-arena': {
     id: 'rogers-arena',
     metroId: 'vancouver',
-    // Estimated (0.35–0.60) for hockey. Concerts were estimated at 0.50. No measured split. Not Rogers Place (Edmonton) or Rogers Forum (Abbotsford).
-    carShare: 0.45,
+    // Not Rogers Place (Edmonton) or Rogers Forum (Abbotsford).
     names: [{ name: 'GM Place' }, { name: 'Canada Hockey Place' }, { name: 'Rogers Arena' }],
     location: [-123.1089417, 49.2779085],
     capacity: [
@@ -5840,8 +5839,6 @@ export const VENUES: Record<string, Venue> = {
   'pacific-coliseum': {
     id: 'pacific-coliseum',
     metroId: 'vancouver',
-    // Estimated (0.55–0.85): bus-only access, event lots, long car exits. No measured split.
-    carShare: 0.7,
     names: [{ name: 'Rink on Renfrew' }, { name: 'Pacific Coliseum' }],
     location: [-123.0427418, 49.2858422],
     capacity: [
@@ -5853,8 +5850,6 @@ export const VENUES: Record<string, Venue> = {
   'freedom-mobile-arch': {
     id: 'freedom-mobile-arch',
     metroId: 'vancouver',
-    // Estimated (0.50–0.85) by analogy to Pacific Coliseum. No event travel data yet. Very low confidence.
-    carShare: 0.68,
     names: [{ name: 'Freedom Mobile Arch' }],
     location: [-123.037059, 49.2839638],
     capacity: [
@@ -5876,8 +5871,6 @@ export const VENUES: Record<string, Venue> = {
   'nat-bailey-stadium': {
     id: 'nat-bailey-stadium',
     metroId: 'vancouver',
-    // Estimated (0.50–0.80): a walk from the Canada Line and a limited lot. No measured split.
-    carShare: 0.65,
     names: [
       { name: 'Nat Bailey Stadium' },
       { name: 'Scotiabank Field at Nat Bailey Stadium' },
@@ -5893,8 +5886,6 @@ export const VENUES: Record<string, Venue> = {
   'willoughby-stadium': {
     id: 'willoughby-stadium',
     metroId: 'vancouver',
-    // Estimated suburban pattern from the city-type answer (near 0.85 for parking-led edge venues). Not a measured split for this pitch. Adjacent to Langley Events Centre, whose own estimate is 0.88.
-    carShare: 0.85,
     names: [{ name: 'Willoughby Community Park Stadium' }, { name: 'Willoughby Stadium at Langley Events Centre' }, { name: 'Willoughby Stadium' }],
     location: [-122.6656644, 49.1438512],
     capacity: [
@@ -5905,8 +5896,6 @@ export const VENUES: Record<string, Venue> = {
   'langley-events-centre': {
     id: 'langley-events-centre',
     metroId: 'vancouver',
-    // Estimated (0.80–0.95): free parking, limited transit. No measured split.
-    carShare: 0.88,
     names: [{ name: 'Langley Events Centre Arena' }, { name: 'Langley Events Centre' }],
     location: [-122.6664163, 49.1459933],
     capacity: [
@@ -5918,8 +5907,6 @@ export const VENUES: Record<string, Venue> = {
   'swangard-stadium': {
     id: 'swangard-stadium',
     metroId: 'vancouver',
-    // Estimated (0.45–0.75), very low confidence. No measured split.
-    carShare: 0.6,
     names: [{ name: 'Swangard Stadium' }],
     location: [-123.0217265, 49.2308777],
     capacity: [
@@ -5930,8 +5917,6 @@ export const VENUES: Record<string, Venue> = {
   'pne-agrodome': {
     id: 'pne-agrodome',
     metroId: 'vancouver',
-    // Same Hastings Park grounds as Pacific Coliseum. The city-type table has no separate row; this uses that grounds estimate (0.70). Not measured.
-    carShare: 0.7,
     names: [{ name: 'Agrodome' }, { name: 'PNE Agrodome' }],
     // Approximate (venue research). OpenStreetMap has no Agrodome hit. The grounds share 2901 E Hastings with the Coliseum and the Arch.
     location: [-123.0422, 49.2836],
@@ -5970,8 +5955,6 @@ export const VENUES: Record<string, Venue> = {
   'langley-centre-gym': {
     id: 'langley-centre-gym',
     metroId: 'vancouver',
-    // Same campus as the arena. The 0.88 figure is the arena's estimate, not a separate gym measurement.
-    carShare: 0.88,
     names: [{ name: 'Langley Events Centre — Centre Gymnasium' }, { name: 'Langley Events Centre Gymnasium' }],
     // The gym was not a separate OpenStreetMap hit. This is the Langley Events Centre campus point.
     location: [-122.6664163, 49.1459933],
