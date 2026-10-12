@@ -103,6 +103,7 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'uwm-panther-arena', 'al-mcguire-center', 'klotsche-center', 'franklin-field', 'dockhounds-ballpark',
   'frawley-stadium', 'mann-skyline-stage',
   'kapco-park', 'milwaukee-mile', 'slinger-speedway', 'hart-park-stadium', 'engelmann-stadium',
+  'al-lang-stadium', 'tampa-bay-downs', 'wish-farms-soundstage',
   'valley-fields', 'wilson-ice-arena', 'pettit-national-ice-center', 'buuck-field-house',
   'ozaukee-ice-center', 'schneider-stadium', 'time-of-grace-center', 'raabe-stadium',
   'dickies-arena', 'will-rogers-coliseum', 'cutx-event-center', 'grand-prairie-stadium', 'mansfield-stadium', 'cotton-bowl', 'toyota-stadium', 'comerica-center', 'texas-motor-speedway',

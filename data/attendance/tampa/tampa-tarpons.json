@@ -1,0 +1,5618 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "teamId": "tampa-tarpons",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-12",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1184,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-13",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 658,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-14",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 786,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1985,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-17",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 845,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 698,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 490,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 636,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": null,
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "16:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": null,
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 744,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-18",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-19",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 822,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-20",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 748,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-21",
+      "start": "12:00",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "12:00",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "13:15",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-24",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 739,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-25",
+      "start": null,
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-05-26",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 724,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-07",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 684,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-08",
+      "start": null,
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 684,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-09",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-10",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 868,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-11",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-12",
+      "start": null,
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 723,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-21",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1116,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-22",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-23",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-24",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-25",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-06-26",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 678,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-04",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2349,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-07",
+      "start": null,
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 761,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-07",
+      "start": "16:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 891,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-08",
+      "start": null,
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 761,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-09",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1148,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 700,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-14",
+      "start": "19:05",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 700,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-15",
+      "start": "16:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 700,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-15",
+      "start": "19:27",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 848,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-16",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-17",
+      "start": null,
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": null,
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 690,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-02",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-03",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-05",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 797,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-06",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-07",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-16",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 746,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-17",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-18",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 608,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-19",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 720,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-20",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1020,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-21",
+      "start": null,
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1020,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-09-01",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-09-02",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 895,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-09-03",
+      "start": "16:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 874,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-09-04",
+      "start": null,
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 895,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2022,
+      "date": "2022-09-06",
+      "start": "17:35",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 817,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-04-07",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-04-08",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1443,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-04-09",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 678,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-04-18",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-04-19",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-04-20",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 652,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-04-21",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 786,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-04-22",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-04-23",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 778,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 797,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 623,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 877,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1469,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 843,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 738,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-18",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 637,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": null,
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 822,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1115,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 547,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-01",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 770,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": null,
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 800,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1458,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 859,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "12:00",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-03",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2682,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1160,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 3277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 800,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-25",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 954,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-26",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 816,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-27",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1767,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": null,
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1767,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 728,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-08",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 909,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-09",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 566,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-10",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 631,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1599,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 729,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-22",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-23",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-24",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": null,
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "12:00",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 773,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "12:00",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-09",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1555,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-10",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-11",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 931,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-25",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1745,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1195,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-07",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 829,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-08",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 616,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-09",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 668,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 955,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-16",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1347,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1583,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 901,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "13:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 724,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 649,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 708,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 964,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 763,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-20",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 746,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-21",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-23",
+      "start": "12:00",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-06-23",
+      "start": "12:00",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 920,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-01",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 624,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-19",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "16:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1353,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1354,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-21",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "16:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 902,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-25",
+      "start": "16:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 902,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-25",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 902,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 809,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 667,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-08",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1032,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "12:00",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 692,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "16:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 567,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": null,
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-09-05",
+      "start": null,
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "16:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1141,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-04-04",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 436,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-04-05",
+      "start": "15:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-04-06",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 244,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "17:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 263,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 235,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Malmö Oat Milkers Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "13:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 193,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 139,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 141,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 340,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": null,
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 214,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-15",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 429,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2584,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Military Appreciation Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tampa Tarpons Camo Can Cooler"
+        },
+        {
+          "type": "Theme Days",
+          "name": "BSA Scout Sleepover Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "12:00",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 208,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 260,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-10",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 280,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-11",
+      "start": "17:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 279,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 279,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-12",
+      "start": "16:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-13",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 279,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-14",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 209,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-15",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 248,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-24",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 124,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-25",
+      "start": "17:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-26",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 126,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-27",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 384,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-28",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 226,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-06-29",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "21:18",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 232,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "17:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 172,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 162,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 227,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-29",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 259,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-07-30",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Tallboy Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "17:00",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Double Dog Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-07",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 188,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": null,
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 188,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": null,
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 188,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "12:00",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sweat It Out Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 128,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Tallboy Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "17:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Double Dog Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-14",
+      "start": "16:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Short Sips Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Kids & Cans Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sip & Save Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Sweat It Out Sunday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 194,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Tallboy Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "17:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 122,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Double Dog Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 152,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Short Sips Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 231,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Kids & Cans Friday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 5238,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Schedule Magnet Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Easter Celebration & Egg Hunt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 780,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Brunch & Batting Practice Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "$2 Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "17:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "BOGO Burgers & Brews Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "11:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 4019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Throw 'Em Back Thursday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "College Night Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "14:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "14:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Water Bottle Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Brunch & Batting Practice Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": null,
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 628,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Special Edition Tail Waggin' Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Throw 'Em Back Thursday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "College Night Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 777,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Youth Sports Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Sports Sunglasses Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "12:00",
+      "opponent": "Mets",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 598,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Brunch & Batting Practice Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 724,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "$2 Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "17:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "BOGO Burgers & Brews Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 899,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Throw 'Em Back Thursday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "College Night Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 925,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Shawn Gavin Thomas Pregame Concert"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1283,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Armed Forces Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Patriotic Tarpons Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1417,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Brunch & Batting Practice Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-19",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-20",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-21",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 521,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Throw 'Em Back Thursday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "College Night Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 902,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 593,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-02",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 822,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "$2 Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-03",
+      "start": "17:00",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 662,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "BOGO Burgers & Brews Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-04",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 617,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Throw 'Em Back Thursday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "College Night Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Splash Into Summer Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tarpons Rally Towel Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "12:00",
+      "opponent": "Cardinals",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 654,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Brunch & Batting Practice Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1150,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "$2 Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "17:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 696,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "BOGO Burgers & Brews Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": "11:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 746,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Throw 'Em Back Thursday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "College Night Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "World Soccer After Party"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "King Ripple's Birthday Bash"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tarpons Drawstring Bag Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Brunch & Batting Practice Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-07",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "$2 Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "17:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 455,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "BOGO Burgers & Brews Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-09",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Throw 'Em Back Thursday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "College Night Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-11",
+      "start": null,
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 2422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "12:00",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 525,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Brunch & Batting Practice Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1165,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Stand Up to Cancer Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Water Bottle Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Brunch & Batting Practice Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1030,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "$2 Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "17:00",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "BOGO Burgers & Brews Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 704,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Throw 'Em Back Thursday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Professional Networking Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "College Night Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "OneBlood Blood Drive"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Back to School Splash"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tarpons Helmet Bowl Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "$2 Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": "17:00",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 752,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "BOGO Burgers & Brews Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-08-20",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 772,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Throw 'Em Back Thursday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Women's Networking Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "College Night Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1370,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "13:00",
+      "opponent": "Tortugas",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pickle Ball Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tampa Tarpons Headband"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": null,
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "16:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 888,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "BOGO Burgers & Brews Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": null,
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1190,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Latin Heritage Night Presented by Empanada Revolution"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks Friday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tampa Tarpons Dominos Set"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack Tickets"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Tarpons Basketball Jersey"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "AnyDesk Dugout Club Ticket"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "813 Ticket Deal"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 623,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Brunch & Batting Practice Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:30",
+      "opponent": "Threshers",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 1449,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FSL Division Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "tampa-tarpons",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:00",
+      "opponent": "Hammerheads",
+      "venueId": "george-m-steinbrenner-field",
+      "attendance": 957,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FSL Championship Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    }
+  ]
+}

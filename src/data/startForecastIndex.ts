@@ -32193,5 +32193,165 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "friction": "Low",
       "why": "Seahawks vs. Chiefs 15 mi away, earlier in the day."
     }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-12-mlb-849820",
+    "date": "2026-10-12",
+    "start": "20:00",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.7,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 25025,
+      "low": 25025,
+      "high": 25025
+    }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-13-mlb-849813",
+    "date": "2026-10-13",
+    "start": "20:00",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.7,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 25025,
+      "low": 25025,
+      "high": 25025
+    }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-15-espn-lightning-401892509",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-17-espn-lightning-401892521",
+    "date": "2026-10-17",
+    "start": "16:00",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.3,
+      "friction": "Moderate",
+      "why": "South Florida vs. Kent State 3.9 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-17-espn-rowdies-401842293",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.3,
+      "friction": "Moderate",
+      "why": "South Florida vs. Kent State and Lightning vs. Canucks 16 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-17-espn-usf-football-401862806",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.3,
+      "friction": "Moderate",
+      "why": "Rain in the forecast at a 7:00 pm start."
+    }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-18-espn-buccaneers-401873002",
+    "date": "2026-10-18",
+    "start": "13:00",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-19-mlb-849815",
+    "date": "2026-10-19",
+    "start": "17:00",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.7,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 25025,
+      "low": 25025,
+      "high": 25025
+    }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-20-mlb-849814",
+    "date": "2026-10-20",
+    "start": "20:00",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.7,
+      "friction": "Low",
+      "why": "86° feels-like at a 8:00 pm start, no roof."
+    },
+    "draw": {
+      "count": 25025,
+      "low": 25025,
+      "high": 25025
+    }
+  },
+  {
+    "metroId": "tampa",
+    "eventId": "2026-10-24-espn-rowdies-401842305",
+    "date": "2026-10-24",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T06:30:27.897Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
   }
 ];

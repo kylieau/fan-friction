@@ -1,0 +1,6055 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "teamId": "clearwater-threshers",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2747,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4031,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-04-19",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 4039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-04-20",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1638,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-04-21",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-04-22",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2284,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-04-23",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 4952,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-04-24",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2270,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-10",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 3363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-11",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 1536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-12",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 2467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-13",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 2394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-14",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 2868,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-15",
+      "start": "12:00",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 1904,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "18:32",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2708,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-18",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1488,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-20",
+      "start": null,
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1851,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-21",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4473,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1403,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-05-31",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 3019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-01",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-02",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1824,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-03",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2515,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 3017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-05",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1396,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 3781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "12:00",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 1367,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-16",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 1609,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 2610,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-18",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 3101,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-19",
+      "start": "12:00",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 1388,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3280,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-06-30",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-01",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2367,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 6438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-03",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 8017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-22",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2061,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-23",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-24",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1157,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1740,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-28",
+      "start": null,
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2288,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 3008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 50
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-09",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 2230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-10",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 1261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-11",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 1555,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 2228,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 3075,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "12:00",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 1183,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-23",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2603,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-24",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1557,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-25",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2366,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 3005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-09-06",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-09-07",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1281,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-09-09",
+      "start": "16:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": null,
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 5090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2022,
+      "date": "2022-09-10",
+      "start": "16:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1271,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-13",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1781,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2592,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1527,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 3213,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 1574,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 1949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 2503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 2211,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "12:00",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 1234,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-02",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2908,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-03",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-04",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1456,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-05",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-06",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 4346,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-07",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1338,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 3648,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-18",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2970,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 4977,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1263,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 4153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1402,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-01",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1713,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-02",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2839,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-03",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 3787,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-04",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 4506,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-15",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 3463,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2006,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 8847,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 1325,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 1603,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 1561,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-08",
+      "start": "18:30",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 4075,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "12:00",
+      "opponent": "Cardinals",
+      "venueId": "baycare-ballpark",
+      "attendance": 1282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-18",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 4003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-19",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1565,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1763,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2512,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1315,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": null,
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1315,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1326,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-03",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1816,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-04",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2889,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-05",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-06",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-17",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1506,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2268,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 3503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1831,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-08-31",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-09-01",
+      "start": null,
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1831,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-09-03",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-09-14",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1753,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FSL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-09-15",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 942,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FSL Division Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 1307,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FSL Championship Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 1018,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FSL Championship Series",
+      "game": 3,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-09",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4490,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-10",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1462,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-11",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1542,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 3143,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 5014,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-23",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 3903,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-24",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2716,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-25",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2050,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 3501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 5202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-14",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 4274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-15",
+      "start": "12:00",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 2028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-16",
+      "start": null,
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 2028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 2104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 4563,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "12:00",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 1603,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-28",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3318,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-29",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1617,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-30",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 4414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-11",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2669,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-12",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1614,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-13",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1589,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2120,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "16:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2120,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 3168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-25",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 4008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-26",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2391,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1859,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2306,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 4524,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1440,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-07-01",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1172,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-07-02",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 3553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-07-03",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 8703,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-07-19",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4638,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 3254,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-07-21",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1332,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-07-30",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 3202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-07-31",
+      "start": "12:00",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 1458,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-01",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 1556,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-02",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 2883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-03",
+      "start": "15:00",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 2883,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-13",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2891,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-14",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1404,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-15",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-16",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1935,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-17",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 3343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-18",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2767,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1471,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-22",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1350,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2682,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2762,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1241,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 2104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "16:00",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 2104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-09-05",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 1419,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 1935,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:30",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 4314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "12:00",
+      "opponent": "Mets",
+      "venueId": "baycare-ballpark",
+      "attendance": 1208,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2024,
+      "date": "2024-09-12",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1076,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FSL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 4310,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Opening Night on Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 1786,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sharks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-10",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 1549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers and Taps and Tacos"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-11",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 2808,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Crossfire Creek Concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-12",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 4380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-13",
+      "start": "12:00",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 1801,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4346,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers and Taps and Tacos"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2748,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Clearwater Beach Dogs Lucy May Bat Dog T-Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4204,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1428,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 11
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Uncle John's Band Concert and Tie-Dye Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 5012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night and Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1514,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2337,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sharks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-15",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1736,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers and Taps and Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Malmö Oat Milkers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2362,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Beach Dogs Night with Layla and Lucy May Figurine Ticket Package option"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3649,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Toy Story Jersey Auction and Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1442,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-27",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 3717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-28",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1629,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sharks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-05-29",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2153,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers and Taps and Tacos"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2564,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1580,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": null,
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1580,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Phillie Phanatic Visit and Crossfire Creek Concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 3572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "First Responders Appreciation Night With Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 4158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2180,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Camp Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1631,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Phinley's Birthday Party with Lil' Anglers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-20",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2704,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pitch For Pink Pickleball Paddle Giveaway and Beach Dogs Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-21",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2622,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-06-22",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1382,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 3473,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 3732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Independence Day Fireworks Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-03",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 6091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "16:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 6091,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 3451,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1447,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sharks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers and Taps and Tacos"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2417,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Margaritaville Night and Tropical Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 3061,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1221,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 3806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1712,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Camp Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Beach Dogs and Christmas in July Cooling Scarf Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 3002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Back to School Night, Kid's Backpack Giveaway and Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1733,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Ticket Holders Eat Free"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "VisitSPC 727 Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3230,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sharks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-14",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1373,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers and Taps and Tacos"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2744,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Veterans and Military Appreciation Night with Camo Hat Giveaway and Jersey Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3637,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1363,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Ticket Holders Eat Free"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 2725,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 1355,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sharks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-21",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 1503,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers and Taps and Tacos"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 2660,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Beach Dogs and Aidan Miller Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 3168,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Comic Book Night with Fireworks by Cusano's Bakery and AVIS"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-09-02",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2843,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-09-03",
+      "start": "16:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1534,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sharks"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Doubleheader"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-09-04",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers and Taps and Tacos"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-09-06",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 6061,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Season Rewind and Largest Fireworks Show of the Season"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1961,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FSL Division Series",
+      "game": 1,
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Dollar Tuesday Playoff Game"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 4560,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday on Opening Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1848,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-09",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 3128,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Crossfire Creek Concert"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Country Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 4645,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-21",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 4303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-22",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 3215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Education Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-23",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 2372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Beach Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "18:30",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 4277,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Halfway to Halloween"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "12:00",
+      "opponent": "Marauders",
+      "venueId": "baycare-ballpark",
+      "attendance": 1464,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3416,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1939,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2102,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Grateful Dead tribute act - Uncle John's Band concert"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 5411,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "At Bat Check-in Offer",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1449,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Coffee Koozie Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Mother's Appreciation Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 3737,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1707,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-28",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1770,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-29",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Beach Dogs"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Crossbody Bag Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Pitch for Pink"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 2936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Tacky Prom Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "12:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1571,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 4217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1407,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-11",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1505,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 2406,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Margaritaville Night Tropical Shirt Giveaway"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Trop Rock Junkies Concert on Margaritaville Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "18:30",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 3522,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Disney Toy Story Night with Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "12:00",
+      "opponent": "Flying Tigers",
+      "venueId": "baycare-ballpark",
+      "attendance": 1403,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Father's Appreciation Day with Blue Threshers Cap Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 3711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "12:00",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 2103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Camp Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 1458,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club, Phinley's Birthday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 1941,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Beach Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "18:30",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 3003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Free Ticket for First Responders and Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "12:00",
+      "opponent": "Hammerheads",
+      "venueId": "baycare-ballpark",
+      "attendance": 1108,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 31
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-02",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1474,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 7407,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Independence Day Fireworks Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 5617,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Independence Day Fireworks Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1098,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 4121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "12:00",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 1873,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Camp Day"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-23",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 1638,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-24",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 2042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Beach Dogs"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Andrew Painter Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-25",
+      "start": "18:30",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 2807,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Christmas in July with Santa Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-07-26",
+      "start": "12:00",
+      "opponent": "Tortugas",
+      "venueId": "baycare-ballpark",
+      "attendance": 1202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-04",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 4167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-05",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1627,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-06",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-07",
+      "start": null,
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 2202,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 3214,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Free Ticket for Veterans & Active Military"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Camo Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-09",
+      "start": "12:00",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1251,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 3270,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-19",
+      "start": "16:00",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1400,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Silver Sharks Seniors Club"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Doubleheader starting at 4 p.m."
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-20",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 1859,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Beach Dogs"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-08-22",
+      "start": "18:30",
+      "opponent": "Blue Jays",
+      "venueId": "baycare-ballpark",
+      "attendance": 4776,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Harry Potter™ Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2453,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Dollar Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1384,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": null,
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1384,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 2119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Beach Dogs"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Zach Haywood Postgame Concert and Album Release Party"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:30",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 4521,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Largest and Last Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Season Rewind"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "12:00",
+      "opponent": "Mighty Mussels",
+      "venueId": "baycare-ballpark",
+      "attendance": 1262,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sunday Funday!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "clearwater-threshers",
+      "season": 2026,
+      "date": "2026-09-10",
+      "start": "18:30",
+      "opponent": "Tarpons",
+      "venueId": "baycare-ballpark",
+      "attendance": 1331,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FSL Division Series",
+      "game": 2,
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "FSL West Division Series Playoffs Game 2"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Taps & Tacos"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Lil' Anglers Kids Club"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

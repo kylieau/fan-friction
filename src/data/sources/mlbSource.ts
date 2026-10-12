@@ -14,6 +14,10 @@ const DAYS_AHEAD = 120;
 const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's sport id: 1 the majors, 11–14 the affiliated minors, 23 the partner leagues. */ sportId?: number; /** The club's home building when the feed's venue is not on file (the partner leagues list "TBD"). */ venueId?: string }> = {
   111: { metroId: 'boston', teamId: 'red-sox' },
   143: { metroId: 'philadelphia', teamId: 'phillies' },
+  139: { metroId: 'tampa', teamId: 'rays' },
+  566: { metroId: 'tampa', teamId: 'clearwater-threshers', sportId: 14, venueId: 'baycare-ballpark' },
+  587: { metroId: 'tampa', teamId: 'tampa-tarpons', sportId: 14, venueId: 'george-m-steinbrenner-field' },
+  424: { metroId: 'tampa', teamId: 'dunedin-blue-jays', sportId: 14, venueId: 'td-ballpark' },
   158: { metroId: 'milwaukee', teamId: 'brewers' },
   5548: { metroId: 'milwaukee', teamId: 'milwaukee-milkmen', sportId: 23, venueId: 'franklin-field' },
   6488: { metroId: 'milwaukee', teamId: 'lake-country-dockhounds', sportId: 23, venueId: 'dockhounds-ballpark' },
@@ -39,7 +43,7 @@ const MLB_TEAMS: Record<number, { metroId: string; teamId: string; /** MLB's spo
   1882: { metroId: 'chicago', teamId: 'chicago-dogs', sportId: 23, venueId: 'impact-field' },
   1950: { metroId: 'chicago', teamId: 'schaumburg-boomers', sportId: 23, venueId: 'wintrust-field' },
 };
-const MLB_VENUES: Record<number, string> = { 3: 'fenway-park', 2681: 'citizens-bank-park', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field' };
+const MLB_VENUES: Record<number, string> = { 3: 'fenway-park', 2681: 'citizens-bank-park', 12: 'tropicana-field', 32: 'american-family-field', 22: 'dodger-stadium', 1: 'angel-stadium', 2680: 'petco-park', 680: 't-mobile-park', 3313: 'yankee-stadium', 3289: 'citi-field', 4705: 'truist-park', 2395: 'oracle-park', 17: 'wrigley-field', 4: 'rate-field', 5325: 'globe-life-field', 2755: 'riders-field', 2745: 'cheney-stadium', 2762: 'everett-memorial-stadium', 2795: 'maimonides-park', 2836: 'siuh-community-park', 5419: 'fairfield-properties-ballpark', 3810: 'gwinnett-field' };
 
 /** The feed's team ids for a metro, grouped by sport id (one schedule call per sport). */
 function teamIdsBySport(metroId: string): Map<number, string[]> {

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "teamId": "usf-wbb",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "usf-wbb",
+      "season": 2024,
+      "date": "2024-03-10",
+      "start": "15:00",
+      "opponent": "Wichita St",
+      "venueId": "dickies-arena",
+      "attendance": 1506,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usf-wbb",
+      "season": 2025,
+      "date": "2025-03-10",
+      "start": "21:30",
+      "opponent": "Tulane",
+      "venueId": "dickies-arena",
+      "attendance": 1909,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "usf-wbb",
+      "season": 2025,
+      "date": "2025-03-12",
+      "start": "19:00",
+      "opponent": "Rice",
+      "venueId": "dickies-arena",
+      "attendance": 3795,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}
