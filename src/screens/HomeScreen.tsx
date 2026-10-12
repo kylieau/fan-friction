@@ -37,7 +37,7 @@ import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/date
 import { mapTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, mapPath } from '../lib/view';
-import { FeedRow } from './YouScreen';
+import { FeedRow } from './FollowingScreen';
 
 // The map library loads only when a map is on screen (Home and Explore), not on every tab.
 const MiniMap = lazy(() => import('../map/MiniMap'));
@@ -227,7 +227,7 @@ export function HomeScreen() {
       {comingUp.length > 0 && (
         <section className="you-block" aria-labelledby="coming-heading">
           <h2 id="coming-heading" className="you-heading heading-link-row">
-            <Link to="/you" className="heading-link">
+            <Link to="/stubs" className="heading-link">
               Your next event ›
             </Link>
           </h2>
@@ -256,7 +256,7 @@ export function HomeScreen() {
       {account && (feedShown.length > 0 || newUser) && (
         <section className="you-block" aria-labelledby="following-heading">
           <h2 id="following-heading" className="you-heading heading-link-row">
-            <Link to="/you?tab=following" className="heading-link">
+            <Link to="/following?tab=friends" className="heading-link">
               Following ›
             </Link>
           </h2>
@@ -277,7 +277,7 @@ export function HomeScreen() {
       {favoritesWeek.length > 0 && (
         <section className="you-block" aria-labelledby="favorites-heading">
           <h2 id="favorites-heading" className="you-heading heading-link-row">
-            <Link to="/favorites" className="heading-link">
+            <Link to="/following" className="heading-link">
               Favorites this week ›
             </Link>
           </h2>
@@ -303,7 +303,7 @@ export function HomeScreen() {
       {recent.length > 0 && (
         <section className="you-block" aria-labelledby="recent-heading">
           <h2 id="recent-heading" className="you-heading heading-link-row">
-            <Link to="/you" className="heading-link">
+            <Link to="/stubs" className="heading-link">
               Recent ›
             </Link>
           </h2>

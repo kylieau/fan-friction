@@ -80,7 +80,7 @@ interface CardData {
  * next dates in date order. With no favorites yet, or from Edit, the tab is a picker:
  * search, suggestions, Follow pills, Done. A favorite's own page has everything else.
  */
-export function FavoritesScreen() {
+export function FavoritesScreen({ embedded = false }: { embedded?: boolean }) {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
@@ -201,7 +201,7 @@ export function FavoritesScreen() {
   const done = () => {
     setPicking(false);
     setQuery('');
-    if (pathname.endsWith('/edit')) navigate('/favorites', { replace: true });
+    if (pathname.endsWith('/edit')) navigate('/following', { replace: true });
   };
 
   const search = (
@@ -312,17 +312,14 @@ export function FavoritesScreen() {
     }));
   }, [cards]);
 
-  return (
-    <div className="screen page">
-      <div className="you-header">
-        <h1 className="page-title">Favorites</h1>
-        <button type="button" className="link-button you-edit" onClick={() => setPicking(true)}>
-          Edit
-        </button>
-        <SearchButton />
-      </div>
-      {
+  const body = (
         <>
+          <div className="you-heading-row">
+            <span />
+            <button type="button" className="link-button you-edit" onClick={() => setPicking(true)}>
+              Edit
+            </button>
+          </div>
           <div className="segmented" role="tablist" aria-label="Favorites view">
             <button type="button" role="tab" aria-selected={view === 'favorite'} onClick={() => setView('favorite')}>
               By favorite
@@ -372,7 +369,15 @@ export function FavoritesScreen() {
             })
           )}
         </>
-      }
+  );
+  if (embedded) return body;
+  return (
+    <div className="screen page">
+      <div className="you-header">
+        <h1 className="page-title">Favorites</h1>
+        <SearchButton />
+      </div>
+      {body}
     </div>
   );
 }
@@ -426,7 +431,7 @@ function FavCard({ card, rating, home }: { card: CardData; rating: number | null
         <div className="fav-card-foot">
           {yoursText &&
             (filterKey ? (
-              <Link to={`/you?filter=${encodeURIComponent(filterKey)}`} className="fav-foot-link">
+              <Link to={`/stubs?filter=${encodeURIComponent(filterKey)}`} className="fav-foot-link">
                 {yoursText} ›
               </Link>
             ) : (

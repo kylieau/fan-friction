@@ -57,6 +57,28 @@ export function StarIcon() {
   );
 }
 
+/** A ticket stub, for the Stubs tab and the Attending status (build notes 3, 4.4). */
+export function TicketIcon({ size = 24 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden>
+      <path d="M3 9V6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5V9a2.5 2.5 0 0 0 0 5v2.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5V14a2.5 2.5 0 0 0 0-5Z" />
+      <path d="M14 5v14" strokeDasharray="2 2.5" />
+    </svg>
+  );
+}
+
+/** Two people, for the Following tab and the shared-with-friends status. */
+export function PeopleIcon({ size = 24 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden>
+      <circle cx="9" cy="8" r="3.5" />
+      <path d="M2.5 20c1.2-3.6 3.6-5.5 6.5-5.5s5.3 1.9 6.5 5.5" />
+      <circle cx="17" cy="9" r="2.8" />
+      <path d="M16 14.6c2.6.2 4.6 2 5.5 5.4" />
+    </svg>
+  );
+}
+
 export function PersonIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" {...base} aria-hidden>

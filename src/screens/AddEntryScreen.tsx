@@ -68,8 +68,8 @@ export function AddEntryScreen() {
 
   return (
     <div className="screen page add-page">
-      <Link to="/you" className="back-link">
-        <ChevronDown /> You
+      <Link to="/stubs" className="back-link">
+        <ChevronDown /> Stubs
       </Link>
       <h1 className="page-title">Log an event</h1>
 
@@ -191,7 +191,7 @@ function ManualForm({ homeId, firstTitle, onCancel }: { homeId: string; firstTit
     // A date still ahead is a plan; it becomes an entry once the date passes (C059).
     if (ahead) {
       addManualPlan(night, homeId);
-      navigate('/you', { replace: true });
+      navigate('/stubs', { replace: true });
       return;
     }
     const entry = addManualEntry(night, homeId);

@@ -48,7 +48,7 @@ import { listTitle } from '../lib/eventTitle';
 import { getHomeId } from '../lib/homeCity';
 import { quietStakes } from '../lib/stakes';
 import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
-import { feedLine } from './YouScreen';
+import { feedLine } from './FollowingScreen';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 

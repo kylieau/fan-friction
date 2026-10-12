@@ -130,6 +130,8 @@ export function backFrom(pathname: string, search = ''): BackTo {
   const to = `${pathname}${search}`;
   if (pathname.startsWith('/you/people')) return { to, label: 'People' };
   if (pathname.startsWith('/you')) return { to, label: 'You' };
+  if (pathname.startsWith('/stubs')) return { to, label: 'Stubs' };
+  if (pathname.startsWith('/following')) return { to, label: 'Following' };
   if (pathname === '/' || pathname.startsWith('/home')) return { to, label: 'Home' };
   if (pathname.startsWith('/p/')) return { to, label: 'Back' };
   return { to, label: 'Back' };

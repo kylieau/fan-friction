@@ -45,8 +45,8 @@ export function ManualEntryScreen() {
   if (!entry) {
     return (
       <div className="screen page">
-        <Link to="/you" className="back-link">
-          <ChevronDown /> You
+        <Link to="/stubs" className="back-link">
+          <ChevronDown /> Stubs
         </Link>
         <h1 className="page-title">Not in your log</h1>
       </div>
@@ -61,8 +61,8 @@ export function ManualEntryScreen() {
 
   return (
     <div className="screen page event-page">
-      <Link to="/you" className="back-link">
-        <ChevronDown /> You
+      <Link to="/stubs" className="back-link">
+        <ChevronDown /> Stubs
       </Link>
 
       <header className="event-head">
@@ -103,7 +103,7 @@ export function ManualEntryScreen() {
           Compare with…
         </Link>
       )}
-      <RemoveFromLog entry={entry} onRemoved={() => navigate('/you', { replace: true })} />
+      <RemoveFromLog entry={entry} onRemoved={() => navigate('/stubs', { replace: true })} />
     </div>
   );
 }

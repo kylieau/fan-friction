@@ -204,8 +204,8 @@ export function FavoritePage() {
 
   return (
     <div className="screen page">
-      <Link to="/favorites" className="back-link">
-        <ChevronDown /> Favorites
+      <Link to="/following" className="back-link">
+        <ChevronDown /> Following
       </Link>
 
       <div className="profile-head">
@@ -429,7 +429,7 @@ export function FavoritePage() {
               {fav.kind === 'team' && wins + losses > 0 ? `${mine.length} ${mine.length === 1 ? 'game' : 'games'} in My Stubs` : lastMine ? `Last: ${[lastMine.venue, lastMine.when.sort.slice(0, 4)].filter(Boolean).join(', ')}` : ''}
             </span>
           </div>
-          <Link to={filterKey ? `/you?filter=${encodeURIComponent(filterKey)}` : '/you'} className="fav-foot-link">
+          <Link to={filterKey ? `/stubs?filter=${encodeURIComponent(filterKey)}` : '/stubs'} className="fav-foot-link">
             My Stubs ›
           </Link>
         </div>

@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom';
-import { HomeTabIcon, MapIcon, PersonIcon, StarIcon } from './Icons';
+import { MapIcon, PeopleIcon, PersonIcon, TicketIcon } from './Icons';
 
+// The build 3 nav (Kylie, Oct 11–12, 2026; every mock in docs/design/build3/): Explore, Stubs,
+// Following, You. Home left the bar: today's events are Explore, your next event is Stubs ›
+// Upcoming, friends and favorites are Following. It stays reachable at /home. Compare stays at /compare.
 const TABS = [
-  { to: '/', label: 'Home', Icon: HomeTabIcon },
   { to: '/explore', label: 'Explore', Icon: MapIcon },
-  // Favorites took Compare's place (Kylie, Oct 5). Compare's screen stays reachable at /compare.
-  { to: '/favorites', label: 'Favorites', Icon: StarIcon },
+  { to: '/stubs', label: 'Stubs', Icon: TicketIcon },
+  { to: '/following', label: 'Following', Icon: PeopleIcon },
   { to: '/you', label: 'You', Icon: PersonIcon },
 ];
 

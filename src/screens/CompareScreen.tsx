@@ -42,8 +42,8 @@ export function CompareScreen() {
   if (!a) {
     return (
       <div className="screen page">
-        <Link to="/you" className="back-link">
-          <ChevronDown /> You
+        <Link to="/stubs" className="back-link">
+          <ChevronDown /> Stubs
         </Link>
         <h1 className="page-title">Compare</h1>
         <p className="you-fine">Open an event you attended and tap Compare with…</p>
