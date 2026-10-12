@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "teamId": "mtsu-football",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "mtsu-football",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "18:00",
+      "opponent": "Tennessee St",
+      "venueId": "floyd-stadium",
+      "attendance": 22227,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "18:30",
+      "opponent": "UTSA",
+      "venueId": "floyd-stadium",
+      "attendance": 15020,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2022,
+      "date": "2022-10-15",
+      "start": "14:30",
+      "opponent": "Western KY",
+      "venueId": "floyd-stadium",
+      "attendance": 14806,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "14:30",
+      "opponent": "Charlotte",
+      "venueId": "floyd-stadium",
+      "attendance": 9806,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2022,
+      "date": "2022-11-19",
+      "start": "14:30",
+      "opponent": "FAU",
+      "venueId": "floyd-stadium",
+      "attendance": 9958,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "18:00",
+      "opponent": "Murray St",
+      "venueId": "floyd-stadium",
+      "attendance": 16605,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "18:00",
+      "opponent": "Colorado St",
+      "venueId": "floyd-stadium",
+      "attendance": 19806,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2023,
+      "date": "2023-10-04",
+      "start": "19:00",
+      "opponent": "Jax State",
+      "venueId": "floyd-stadium",
+      "attendance": 13066,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2023,
+      "date": "2023-10-10",
+      "start": "18:00",
+      "opponent": "Louisiana Tech",
+      "venueId": "floyd-stadium",
+      "attendance": 9602,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2023,
+      "date": "2023-11-11",
+      "start": "14:30",
+      "opponent": "FIU",
+      "venueId": "floyd-stadium",
+      "attendance": 11111,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "13:00",
+      "opponent": "UTEP",
+      "venueId": "floyd-stadium",
+      "attendance": 9122,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2024,
+      "date": "2024-08-31",
+      "start": "18:00",
+      "opponent": "Tennessee Tech",
+      "venueId": "floyd-stadium",
+      "attendance": 16000,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "18:00",
+      "opponent": "Western KY",
+      "venueId": "floyd-stadium",
+      "attendance": 12227,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "15:00",
+      "opponent": "Duke",
+      "venueId": "floyd-stadium",
+      "attendance": 15209,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2024,
+      "date": "2024-10-15",
+      "start": "19:00",
+      "opponent": "Kennesaw St",
+      "venueId": "floyd-stadium",
+      "attendance": 10200,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2024,
+      "date": "2024-11-09",
+      "start": "12:00",
+      "opponent": "Liberty",
+      "venueId": "floyd-stadium",
+      "attendance": 13500,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2024,
+      "date": "2024-11-23",
+      "start": "13:30",
+      "opponent": "New Mexico St",
+      "venueId": "floyd-stadium",
+      "attendance": 10123,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:00",
+      "opponent": "Austin Peay",
+      "venueId": "floyd-stadium",
+      "attendance": 18505,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "18:00",
+      "opponent": "Marshall",
+      "venueId": "floyd-stadium",
+      "attendance": 15168,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2025,
+      "date": "2025-10-08",
+      "start": "18:30",
+      "opponent": "Missouri St",
+      "venueId": "floyd-stadium",
+      "attendance": 9806,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2025,
+      "date": "2025-10-29",
+      "start": "18:30",
+      "opponent": "Jax State",
+      "venueId": "floyd-stadium",
+      "attendance": 10200,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2025,
+      "date": "2025-11-08",
+      "start": "14:00",
+      "opponent": "FIU",
+      "venueId": "floyd-stadium",
+      "attendance": 12227,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "14:00",
+      "opponent": "Sam Houston",
+      "venueId": "floyd-stadium",
+      "attendance": 7605,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:45",
+      "opponent": "Murray St",
+      "venueId": "floyd-stadium",
+      "attendance": 16227,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "mtsu-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "18:00",
+      "opponent": "Nevada",
+      "venueId": "floyd-stadium",
+      "attendance": 16106,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

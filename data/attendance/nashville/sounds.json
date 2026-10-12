@@ -1,0 +1,6083 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "teamId": "sounds",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-03-31",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 7879,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-01",
+      "start": null,
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 7879,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-02",
+      "start": "14:05",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 7134,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 6007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 5589,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-13",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 6112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 6377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 10042,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "14:05",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 7016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 4127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 5455,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-27",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 3507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 6707,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 9833,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "14:05",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 9469,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 11
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-09",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-10",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6327,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-11",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 7045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 10245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "14:05",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 8154,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-23",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 6777,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-24",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 7241,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-25",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 7976,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 22
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-26",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 10312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-27",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 11127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-05-28",
+      "start": "14:05",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 11444,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-13",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 7413,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-14",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 8252,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-15",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 9918,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-16",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 10167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-17",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 11167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-18",
+      "start": "14:05",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 11081,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-20",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 8236,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-21",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 6548,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-22",
+      "start": null,
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 8236,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 10206,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 10567,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "14:05",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 6936,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-04",
+      "start": "18:05",
+      "opponent": "Clippers",
+      "venueId": "first-horizon-park",
+      "attendance": 10704,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-05",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "first-horizon-park",
+      "attendance": 5876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-06",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "first-horizon-park",
+      "attendance": 6247,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-07",
+      "start": "18:35",
+      "opponent": "Clippers",
+      "venueId": "first-horizon-park",
+      "attendance": 8864,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-09",
+      "start": "13:05",
+      "opponent": "Clippers",
+      "venueId": "first-horizon-park",
+      "attendance": 5588,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-18",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 4841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-19",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 6707,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 7049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-21",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 8633,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-22",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 11414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-07-23",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 7379,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 6623,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 7151,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-03",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 7007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-04",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 7785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-05",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 8837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-06",
+      "start": "18:05",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 6007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6145,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 5689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-17",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6974,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-18",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 8144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-19",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 11343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-08-20",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-05",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 4639,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-06",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 5684,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-07",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 6007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 8121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 10092,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "14:05",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 6437,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-19",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 6577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-20",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 7127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-21",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 6891,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-22",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 9807,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 11163,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": "12:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 6689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-02",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "first-horizon-park",
+      "attendance": 3999,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-03",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "first-horizon-park",
+      "attendance": 3987,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-04",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "first-horizon-park",
+      "attendance": 4002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-05",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "first-horizon-park",
+      "attendance": 4498,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-06",
+      "start": "18:35",
+      "opponent": "Saints",
+      "venueId": "first-horizon-park",
+      "attendance": 7237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-07",
+      "start": "14:05",
+      "opponent": "Saints",
+      "venueId": "first-horizon-park",
+      "attendance": 8053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 4867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 5318,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-18",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 5486,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-19",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 8149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-20",
+      "start": "18:35",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 10420,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-21",
+      "start": "14:05",
+      "opponent": "Storm Chasers",
+      "venueId": "first-horizon-park",
+      "attendance": 9667,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 5954,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 7568,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-02",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 5987,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-03",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 7133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-04",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 9331,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-05",
+      "start": "14:05",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 8877,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 5827,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-23",
+      "start": null,
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-24",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 7961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-25",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 10917,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-05-26",
+      "start": "14:05",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 5826,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 5587,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 5577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": "17:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 5577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 6192,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-07",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 9164,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-08",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 8865,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-09",
+      "start": "14:05",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 6101,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 7131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 6785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-20",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 9661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-21",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 10222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-22",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 9777,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-06-23",
+      "start": "14:05",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 5109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "18:05",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 10997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-05",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 10991,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-06",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 9437,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-09",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 4661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-10",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 7726,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-11",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 6619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-12",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 10237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-13",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 11107,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-14",
+      "start": "13:05",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 4474,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 4658,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6675,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-25",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 7655,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 10469,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 5605,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 5588,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-08",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 5661,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 7045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 7681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "18:05",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 5422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 4867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 5106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-22",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 6119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 9349,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 10016,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 5396,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 4367,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 4518,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-05",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 5045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-06",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 7545,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 10071,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-08",
+      "start": "14:05",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6417,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 4478,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 5107,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 7641,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "18:05",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 7409,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-03-28",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 8110,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Weekend"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Opening Homestand Premiere Package"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2025 Schedule Cling Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-03-29",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 4989,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Weekend"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Opening Homestand Premiere Package"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2025 Schedule Cling Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "10th Anniversary Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-03-30",
+      "start": "14:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 4671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Weekend"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Opening Homestand Premiere Package"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "10th Anniversary Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Play Forever Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 3267,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 4117,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sounds Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Clear Tote Bag Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-10",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 3644,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-11",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 4831,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Gold Star Family Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-12",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 8007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "College Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "UT Reversible Blanket Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-13",
+      "start": "14:05",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 7992,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Zoo Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 4923,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Peanut Free Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 4808,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": null,
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 4808,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 6461,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Perfect Date Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 8966,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Booster's 10th Birthday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Booster Water Bottle Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "14:05",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 8544,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 4937,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 5241,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Racing Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Lightweight Hoodie Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-08",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 4814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Malmö Oat Milkers Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 7007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "API Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 8993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversión"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Vihuelas Snapback Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "14:05",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 7239,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Mother's Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "first-horizon-park",
+      "attendance": 6657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": null,
+      "opponent": "RailRiders",
+      "venueId": "first-horizon-park",
+      "attendance": 6657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-22",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "first-horizon-park",
+      "attendance": 8437,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Teacher Appreciation"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "first-horizon-park",
+      "attendance": 9215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 18
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mental Health Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "18:35",
+      "opponent": "RailRiders",
+      "venueId": "first-horizon-park",
+      "attendance": 10388,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Batting Gloves Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "ERA Real Estate Day at the Park"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Guitar Bank Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Country Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 5997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "PRIDE Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 7612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": null,
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 7612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "14:05",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Early Father's Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "LEGO NINJAGO Make and Take Event"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 6671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 9139,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Nobody Trashes Tennessee Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Rick Sweet Bobble'stache Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 7003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Juneteenth Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-20",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 11119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "The Nine Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-21",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 10427,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "The Nine Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Butch McCord Shirsey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-06-22",
+      "start": "14:05",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 6742,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Art in the Park"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 6625,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 7783,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Batting Gloves Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-03",
+      "start": "18:00",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 11415,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Independence Day Celebration"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 10222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 9389,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Booster Water Bottle Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Scout Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hot Chickens Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "18:05",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 6978,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Hot Chickens Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 5582,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Clear Tote Bag Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Women in Sports Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-24",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6850,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-25",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 7822,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Christmas in July"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-26",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 9775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2005 PCL Championship Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-07-27",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6001,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Book Fair Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Library Night Ticket Bundle"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-05",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 5905,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-06",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 5906,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Butch McCord Shirsey Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "HBCU Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-07",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 5671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "AUG-tober Fest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-08",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 7389,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-09",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 10117,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Star Wars Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Guitar Bank Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-10",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 5425,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-19",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 4868,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-20",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 5113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversión"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Vihuelas Snapback Hat Giveaway"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-21",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 6438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-22",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 8023,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Faith & Family Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-23",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 10823,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Brewski's Safari Hat Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Blue Heeler Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-24",
+      "start": "18:05",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 5983,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Exit Giveaway: Martin's Potato Rolls"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Vanderbilt Univeristy Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 4467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 5525,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "UT Reversible Blanket Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Football Night"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-28",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 4944,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 7597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Emo Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 8978,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Harry Potter Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Rick Sweet Bobble'stache Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 7996,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit a Home Run for Health Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 5176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6989,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Throwback Windbreaker Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Kroger Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Catch on the Field"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-09-11",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6177,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "First Responders Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 9068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Copa de la Diversión"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 8844,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Lightweight Hoodie Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "18:05",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 7549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "2026 Schedule Cling Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-03-31",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 7678,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Night Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "2026 Sounds Tour T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 4002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "2026 Schedule Concert Poster"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-02",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 5217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 7892,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "13:05",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 4881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 12
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "18:35",
+      "opponent": "Red Sox",
+      "venueId": "first-horizon-park",
+      "attendance": 5029,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Peanut Free Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "18:35",
+      "opponent": "Red Sox",
+      "venueId": "first-horizon-park",
+      "attendance": 5255,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jackie Robinson Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "18:35",
+      "opponent": "Red Sox",
+      "venueId": "first-horizon-park",
+      "attendance": 6144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "18:05",
+      "opponent": "Red Sox",
+      "venueId": "first-horizon-park",
+      "attendance": 6144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "19:16",
+      "opponent": "Red Sox",
+      "venueId": "first-horizon-park",
+      "attendance": 7789,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "18:35",
+      "opponent": "Red Sox",
+      "venueId": "first-horizon-park",
+      "attendance": 5997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Skyline Bobblehead - Jacob Misiorowski"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "The Band Box Mixer"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "13:05",
+      "opponent": "Red Sox",
+      "venueId": "first-horizon-park",
+      "attendance": 8812,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ice Cream Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 6426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 4514,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Country Legends Coasters"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sounds Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": null,
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 6426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 6607,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "API Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 9019,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tune Squad Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Space Jam Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "13:05",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 7511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Booster Building Block Set"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Boosters Birthday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 5687,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 5677,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Vihuelas Sunglasses"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Copa de la Diversión Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 6044,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 8644,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "18:35",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 10078,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sleeveless Hoodie"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Red, White and Blue Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "13:05",
+      "opponent": "Cubs",
+      "venueId": "first-horizon-park",
+      "attendance": 6513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ice Cream Batter Sleeve"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "True Blue Day"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 4919,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 5247,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Denim Bucket Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-28",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6421,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Teacher Appreciation Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-29",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6219,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 7873,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pablo Sanchez Bobblehead"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Backyard Baseball Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "13:05",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 5311,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 5012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 6569,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Brewmaster Shirt"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-11",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 6886,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Vintage Panel Throwback Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 7677,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Emo Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "18:35",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 8815,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sulphur Dell Replica"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "The Nine Weekend"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "13:05",
+      "opponent": "Bulls",
+      "venueId": "first-horizon-park",
+      "attendance": 5007,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "The Nine Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 6581,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 7591,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 32
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Skyline Bobblehead - Brice Turang"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 5761,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wristband Mixer"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pride Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 8167,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "18:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 8119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "15:35",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 8119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "18:41",
+      "opponent": "Stripers",
+      "venueId": "first-horizon-park",
+      "attendance": 5237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 5338,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hot Chickens Farewell"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 5076,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hot Chickens Cooling Towel"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hot Chickens Farewell"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-02",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 5074,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hot Chickens Farewell"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "18:35",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 9823,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": null,
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 9823,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "18:05",
+      "opponent": "Jumbo Shrimp",
+      "venueId": "first-horizon-park",
+      "attendance": 7242,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Independence Day Celebration"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sandlot Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 10154,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Christmas in July"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "18:35",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 9811,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Spider-Man Funko Pop"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Marvel Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Scout Night"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "18:05",
+      "opponent": "Tides",
+      "venueId": "first-horizon-park",
+      "attendance": 6771,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ice Cream Jersey"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 5518,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 6466,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Country Legends Coasters"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Women & Girls in Sports Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 7001,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wristband Mixer"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run for Life Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 10557,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Faith & Family Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "18:35",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 11559,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Bluey Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Denim Bucket Hat"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "18:05",
+      "opponent": "Knights",
+      "venueId": "first-horizon-park",
+      "attendance": 5501,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 49
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Stand Up to Cancer Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 4989,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 4711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Booster Building Block Set"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 4981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Appreciating Hometown Heroes Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 7513,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Grateful Dead Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "18:35",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 8945,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Brewmaster Shirt"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "18:05",
+      "opponent": "Indians",
+      "venueId": "first-horizon-park",
+      "attendance": 6186,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-01",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 4891,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Threaded and Tipsy"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-02",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 4799,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sleeveless Hoodie"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-03",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 5507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wristband Mixer"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 7711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Star Wars Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-05",
+      "start": "18:35",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 7988,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 60
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Skyline Bobblehead - Sal Frelick"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-06",
+      "start": "12:05",
+      "opponent": "Bats",
+      "venueId": "first-horizon-park",
+      "attendance": 6394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ice Cream Batter Sleeve"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-15",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 6181,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Silver Sounds Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Tito's Tail Waggin' Tuesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-16",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 5991,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "UT Shootaround Half-zip"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Winning Wednesday"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kroger Wednesday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-17",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 6678,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Vintage Panel Throwback Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Throwback Thursday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-18",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 8354,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 67
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Copa de la Diversión Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Friday Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "18:35",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 8891,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Vihuelas Sunglasses"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Copa de la Diversión Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Post Game Fireworks"
+        },
+        {
+          "type": "Theme Days",
+          "name": "Hit City Saturday"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "sounds",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "17:05",
+      "opponent": "Redbirds",
+      "venueId": "first-horizon-park",
+      "attendance": 7642,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sunday Family Fun Day"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

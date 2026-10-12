@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|lake country|columbus|ohio state|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|nashville|lake country|columbus|ohio state|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -120,6 +120,26 @@ const LIST: Team[] = [
   team("columbus-fury", "Columbus Fury", "Fury", "MLV", "volleyball", "columbus", "FURY"),
   team("owu-football", "Ohio Wesleyan Battling Bishops Football", "OWU Football", "College football", "football", "columbus", "OWU"),
   team("owu-mbb", "Ohio Wesleyan Battling Bishops Men's Basketball", "OWU MBB", "College men's basketball", "basketball", "columbus", "OWU"),
+  // Nashville (Oct 12, 2026; docs/research/city-builds/nashville/). Clarksville (Kats, Austin Peay) is a separate MSA and is not here.
+  // Vibe has a team record only; the league has not started and no feed is wired.
+  team("titans", "Tennessee Titans", "Titans", "NFL", "football", "nashville", "TEN"),
+  team("predators", "Nashville Predators", "Predators", "NHL", "hockey", "nashville", "NSH"),
+  team("nashville-sc", "Nashville SC", "Nashville SC", "MLS", "soccer", "nashville", "NSC"),
+  team("sounds", "Nashville Sounds", "Sounds", "Triple-A baseball", "baseball", "nashville", "NAS"),
+  team("tsu-football", "Tennessee State Tigers Football", "TSU Football", "College football", "football", "nashville", "TSU", ["Tennessee State", "TSU"]),
+  team("tsu-mbb", "Tennessee State Tigers Men's Basketball", "TSU MBB", "College men's basketball", "basketball", "nashville", "TSU", ["Tennessee State", "TSU"]),
+  team("tsu-wbb", "Tennessee State Lady Tigers Women's Basketball", "TSU WBB", "College women's basketball", "basketball", "nashville", "TSU", ["Tennessee State", "TSU"]),
+  team("vanderbilt-football", "Vanderbilt Commodores Football", "Vanderbilt Football", "College football", "football", "nashville", "VAN", ["Vandy", "Commodores"]),
+  team("vanderbilt-mbb", "Vanderbilt Commodores Men's Basketball", "Vanderbilt MBB", "College men's basketball", "basketball", "nashville", "VAN", ["Vandy", "Commodores"]),
+  team("vanderbilt-wbb", "Vanderbilt Commodores Women's Basketball", "Vanderbilt WBB", "College women's basketball", "basketball", "nashville", "VAN", ["Vandy", "Commodores"]),
+  team("belmont-mbb", "Belmont Bruins Men's Basketball", "Belmont MBB", "College men's basketball", "basketball", "nashville", "BEL", ["Belmont"]),
+  team("belmont-wbb", "Belmont Bruins Women's Basketball", "Belmont WBB", "College women's basketball", "basketball", "nashville", "BEL", ["Belmont"]),
+  team("lipscomb-mbb", "Lipscomb Bisons Men's Basketball", "Lipscomb MBB", "College men's basketball", "basketball", "nashville", "LIP", ["Lipscomb"]),
+  team("lipscomb-wbb", "Lipscomb Bisons Women's Basketball", "Lipscomb WBB", "College women's basketball", "basketball", "nashville", "LIP", ["Lipscomb"]),
+  team("mtsu-football", "Middle Tennessee Blue Raiders Football", "MTSU Football", "College football", "football", "nashville", "MTSU", ["Middle Tennessee", "Blue Raiders"]),
+  team("mtsu-mbb", "Middle Tennessee Blue Raiders Men's Basketball", "MTSU MBB", "College men's basketball", "basketball", "nashville", "MTSU", ["Middle Tennessee", "Blue Raiders"]),
+  team("mtsu-wbb", "Middle Tennessee Blue Raiders Women's Basketball", "MTSU WBB", "College women's basketball", "basketball", "nashville", "MTSU", ["Middle Tennessee", "Blue Raiders"]),
+  team("nashville-vibe", "Nashville Vibe", "Vibe", "UpShot League", "basketball", "nashville", "VIBE"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

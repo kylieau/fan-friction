@@ -29528,6 +29528,2298 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "high": 758,
     "games": 3,
     "seasons": "2023"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1656,
+    "low": 1461,
+    "high": 2206,
+    "games": 42,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1716,
+    "low": 1716,
+    "high": 1960,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1605,
+    "low": 1405,
+    "high": 1788,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1648,
+    "low": 1420,
+    "high": 1724,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1603,
+    "low": 1526,
+    "high": 1640,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1537,
+    "low": 1405,
+    "high": 2835,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1732,
+    "low": 1405,
+    "high": 2052,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1211,
+    "low": 1167,
+    "high": 1703,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 1211,
+    "low": 1167,
+    "high": 1703,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2049,
+    "low": 1532,
+    "high": 2429,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1649,
+    "low": 1447,
+    "high": 2429,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 2836,
+    "low": 2360,
+    "high": 3357,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 1532,
+    "low": 1480,
+    "high": 1791,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "venueId": "curb-event-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2186,
+    "low": 2051,
+    "high": 2437,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "venueId": "curb-event-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 971,
+    "low": 820,
+    "high": 1144,
+    "games": 26,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "venueId": "curb-event-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 729,
+    "low": 709,
+    "high": 840,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "venueId": "curb-event-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 883,
+    "low": 818,
+    "high": 933,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "venueId": "curb-event-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 851,
+    "low": 742,
+    "high": 896,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "venueId": "curb-event-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1062,
+    "low": 1007,
+    "high": 1170,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "venueId": "curb-event-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1037,
+    "low": 987,
+    "high": 1062,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "venueId": "curb-event-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 1154,
+    "low": 955,
+    "high": 1187,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "venueId": "curb-event-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1009,
+    "low": 863,
+    "high": 1170,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "venueId": "curb-event-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 944,
+    "low": 845,
+    "high": 1092,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 1582,
+    "low": 1079,
+    "high": 2004,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 2179,
+    "low": 2099,
+    "high": 2247,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1585,
+    "low": 1142,
+    "high": 1924,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1011,
+    "low": 977,
+    "high": 1446,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1585,
+    "low": 1562,
+    "high": 1730,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 1706,
+    "low": 1700,
+    "high": 1844,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1170,
+    "low": 413,
+    "high": 1960,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1486,
+    "low": 1091,
+    "high": 2095,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1864,
+    "low": 1296,
+    "high": 2229,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1541,
+    "low": 1247,
+    "high": 2045,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1337,
+    "low": 1227,
+    "high": 1961,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "venueId": "allen-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 1337,
+    "low": 1095,
+    "high": 1649,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "venueId": "allen-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 321,
+    "low": 218,
+    "high": 462,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 293,
+    "low": 185,
+    "high": 448,
+    "games": 16,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 225,
+    "low": 195,
+    "high": 449,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 307,
+    "low": 278,
+    "high": 440,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 225,
+    "low": 148,
+    "high": 471,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "venueId": "allen-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 325,
+    "low": 235,
+    "high": 386,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "venueId": "allen-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 327,
+    "low": 280,
+    "high": 457,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "venueId": "allen-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 316,
+    "low": 171,
+    "high": 469,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "venueId": "allen-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 316,
+    "low": 298,
+    "high": 397,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "venueId": "floyd-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 11111,
+    "low": 9965,
+    "high": 13283,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "venueId": "floyd-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 16605,
+    "low": 16303,
+    "high": 17555,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "venueId": "floyd-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 10200,
+    "low": 9806,
+    "high": 10200,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "venueId": "floyd-stadium",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 10200,
+    "low": 9806,
+    "high": 10200,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "venueId": "floyd-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 12227,
+    "low": 10370,
+    "high": 14751,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "venueId": "floyd-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 15189,
+    "low": 14433,
+    "high": 16358,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "venueId": "floyd-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 10617,
+    "low": 9372,
+    "high": 11948,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 3220,
+    "low": 2605,
+    "high": 3840,
+    "games": 44,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 7501,
+    "low": 5503,
+    "high": 7657,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3059,
+    "low": 2530,
+    "high": 3447,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2555,
+    "low": 2502,
+    "high": 3132,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3479,
+    "low": 3312,
+    "high": 3507,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 3319,
+    "low": 2942,
+    "high": 3436,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2709,
+    "low": 2186,
+    "high": 3195,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3912,
+    "low": 2964,
+    "high": 4144,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 4125,
+    "low": 3451,
+    "high": 4393,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 4081,
+    "low": 3344,
+    "high": 4347,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 3000,
+    "low": 2752,
+    "high": 3406,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "venueId": "murphy-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3168,
+    "low": 2840,
+    "high": 3190,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "venueId": "murphy-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 3605,
+    "low": 3212,
+    "high": 3812,
+    "games": 25,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "venueId": "murphy-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3434,
+    "low": 3072,
+    "high": 3627,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "venueId": "murphy-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3141,
+    "low": 3006,
+    "high": 3308,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "venueId": "murphy-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3572,
+    "low": 3189,
+    "high": 3600,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "venueId": "murphy-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 3378,
+    "low": 3195,
+    "high": 4530,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "venueId": "murphy-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 3807,
+    "low": 3605,
+    "high": 4006,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "venueId": "murphy-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 3806,
+    "low": 3507,
+    "high": 4031,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "venueId": "murphy-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 3812,
+    "low": 3407,
+    "high": 4123,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "venueId": "geodis-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 28011,
+    "low": 26542,
+    "high": 28816,
+    "games": 32,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "venueId": "geodis-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 28111,
+    "low": 27893,
+    "high": 28711,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "venueId": "geodis-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 28008,
+    "low": 25640,
+    "high": 28800,
+    "games": 25,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "venueId": "geodis-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 25640,
+    "low": 25301,
+    "high": 28008,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "venueId": "geodis-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 26682,
+    "low": 25412,
+    "high": 28050,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "venueId": "geodis-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 28351,
+    "low": 25110,
+    "high": 28377,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "venueId": "geodis-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 29663,
+    "low": 28253,
+    "high": 29886,
+    "games": 3,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "venueId": "geodis-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 28014,
+    "low": 27642,
+    "high": 28445,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 17159,
+    "low": 17159,
+    "high": 17257,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 17544,
+    "low": 17394,
+    "high": 17587,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 17159,
+    "low": 17159,
+    "high": 17159,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 17159,
+    "low": 17159,
+    "high": 17176,
+    "games": 75,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 17159,
+    "low": 17159,
+    "high": 17159,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 17159,
+    "low": 17159,
+    "high": 17159,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17159,
+    "low": 17159,
+    "high": 17159,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 17331,
+    "low": 17236,
+    "high": 17396,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 17159,
+    "low": 17159,
+    "high": 17159,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17159,
+    "low": 17159,
+    "high": 17166,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 17159,
+    "low": 17159,
+    "high": 17159,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17159,
+    "low": 17159,
+    "high": 17439,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 17297,
+    "low": 17159,
+    "high": 17474,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 17159,
+    "low": 17159,
+    "high": 17333,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 17439,
+    "low": 17159,
+    "high": 17597,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 17159,
+    "low": 17159,
+    "high": 17206,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17159,
+    "low": 17159,
+    "high": 17303,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 17159,
+    "low": 17159,
+    "high": 17267,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "venueId": "bridgestone-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17159,
+    "low": 17159,
+    "high": 17159,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 6622,
+    "low": 5424,
+    "high": 8070,
+    "games": 220,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 7678,
+    "low": 5839,
+    "high": 7894,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5597,
+    "low": 4972,
+    "high": 6429,
+    "games": 104,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 4895,
+    "low": 4088,
+    "high": 5360,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 5987,
+    "low": 5247,
+    "high": 6421,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 6100,
+    "low": 5631,
+    "high": 6832,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 6625,
+    "low": 5518,
+    "high": 6850,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 5319,
+    "low": 4953,
+    "high": 5669,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 5142,
+    "low": 4822,
+    "high": 6131,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7822,
+    "low": 7451,
+    "high": 9190,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 6461,
+    "low": 5488,
+    "high": 7841,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 7133,
+    "low": 6807,
+    "high": 8303,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 8666,
+    "low": 7800,
+    "high": 9958,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 10188,
+    "low": 9323,
+    "high": 10317,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 7555,
+    "low": 7420,
+    "high": 7917,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 7711,
+    "low": 7641,
+    "high": 8354,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 9175,
+    "low": 8091,
+    "high": 10088,
+    "games": 40,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 8007,
+    "low": 7237,
+    "high": 8966,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 9331,
+    "low": 9006,
+    "high": 10233,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 8467,
+    "low": 7460,
+    "high": 9093,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 9817,
+    "low": 9691,
+    "high": 10601,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 10016,
+    "low": 8962,
+    "high": 10470,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 8868,
+    "low": 8630,
+    "high": 9186,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 6513,
+    "low": 5425,
+    "high": 7549,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 8299,
+    "low": 8007,
+    "high": 8745,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 6876,
+    "low": 5998,
+    "high": 7443,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 6101,
+    "low": 5173,
+    "high": 6781,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 6771,
+    "low": 6001,
+    "high": 6978,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 5501,
+    "low": 5424,
+    "high": 6085,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "venueId": "first-horizon-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 7409,
+    "low": 6417,
+    "high": 7549,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "venueId": "nissan-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 62567,
+    "low": 60258,
+    "high": 66455,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "venueId": "nissan-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 65509,
+    "low": 62289,
+    "high": 66474,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "venueId": "nissan-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 61735,
+    "low": 60528,
+    "high": 63418,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "venueId": "nissan-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 62641,
+    "low": 60487,
+    "high": 66533,
+    "games": 21,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "venueId": "nissan-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 67709,
+    "low": 66633,
+    "high": 68244,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "venueId": "nissan-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 60487,
+    "low": 57296,
+    "high": 64513,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "venueId": "nissan-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 62197,
+    "low": 61671,
+    "high": 63469,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-football",
+    "venueId": "nissan-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 2845,
+    "low": 1853,
+    "high": 8569,
+    "games": 13,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-football",
+    "venueId": "nissan-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 8124,
+    "low": 5997,
+    "high": 8495,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-football",
+    "venueId": "nissan-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2845,
+    "low": 1853,
+    "high": 8569,
+    "games": 13,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-football",
+    "venueId": "nissan-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 5353,
+    "low": 2066,
+    "high": 8979,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-football",
+    "venueId": "nissan-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 7875,
+    "low": 3879,
+    "high": 13975,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-football",
+    "venueId": "nissan-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 1602,
+    "low": 1404,
+    "high": 1962,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 784,
+    "low": 364,
+    "high": 1166,
+    "games": 35,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 995,
+    "low": 735,
+    "high": 2782,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 917,
+    "low": 544,
+    "high": 1329,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1204,
+    "low": 605,
+    "high": 1909,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1072,
+    "low": 720,
+    "high": 1166,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 917,
+    "low": 540,
+    "high": 1185,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 493,
+    "low": 352,
+    "high": 886,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 379,
+    "low": 378,
+    "high": 409,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 886,
+    "low": 807,
+    "high": 1002,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "venueId": "gentry-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 327,
+    "low": 247,
+    "high": 493,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "venueId": "gentry-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 282,
+    "low": 242,
+    "high": 412,
+    "games": 22,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "venueId": "gentry-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 267,
+    "low": 251,
+    "high": 435,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "venueId": "gentry-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 432,
+    "low": 296,
+    "high": 644,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "venueId": "gentry-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 276,
+    "low": 255,
+    "high": 357,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "venueId": "gentry-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 320,
+    "low": 223,
+    "high": 356,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "venueId": "gentry-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 352,
+    "low": 263,
+    "high": 360,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "venueId": "gentry-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 352,
+    "low": 296,
+    "high": 503,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "venueId": "firstbank-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 28934,
+    "low": 28346,
+    "high": 35000,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "venueId": "firstbank-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 24080,
+    "low": 22744,
+    "high": 29540,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "venueId": "firstbank-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 28934,
+    "low": 28346,
+    "high": 35000,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "venueId": "firstbank-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 26332,
+    "low": 26279,
+    "high": 33688,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "venueId": "firstbank-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 28934,
+    "low": 28609,
+    "high": 33484,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "venueId": "firstbank-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 28934,
+    "low": 28934,
+    "high": 35000,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "all",
+    "month": null,
+    "count": 7229,
+    "low": 5809,
+    "high": 10348,
+    "games": 48,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 5506,
+    "low": 5259,
+    "high": 6042,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6832,
+    "low": 5710,
+    "high": 8794,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 8688,
+    "low": 7099,
+    "high": 10195,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 10460,
+    "low": 6564,
+    "high": 11678,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 5667,
+    "low": 5516,
+    "high": 5673,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 6810,
+    "low": 5487,
+    "high": 7403,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 5346,
+    "low": 5297,
+    "high": 5707,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 5346,
+    "low": 5297,
+    "high": 5707,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8959,
+    "low": 6748,
+    "high": 11543,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 13852,
+    "low": 10580,
+    "high": 14316,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 9855,
+    "low": 8587,
+    "high": 10793,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 6696,
+    "low": 6569,
+    "high": 8504,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 6500,
+    "low": 5697,
+    "high": 7228,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "all",
+    "month": null,
+    "count": 3141,
+    "low": 2562,
+    "high": 5597,
+    "games": 31,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3241,
+    "low": 2661,
+    "high": 3577,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3191,
+    "low": 3136,
+    "high": 3306,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 4411,
+    "low": 3577,
+    "high": 5173,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2221,
+    "low": 2205,
+    "high": 2441,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2524,
+    "low": 2434,
+    "high": 3129,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 2524,
+    "low": 2434,
+    "high": 3129,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2599,
+    "low": 2555,
+    "high": 2617,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 2599,
+    "low": 2555,
+    "high": 2617,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 6149,
+    "low": 2620,
+    "high": 7929,
+    "games": 12,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 8299,
+    "low": 7438,
+    "high": 8400,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 7041,
+    "low": 6213,
+    "high": 8171,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "venueId": "vanderbilt-memorial-gymnasium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 2621,
+    "low": 2554,
+    "high": 2841,
+    "games": 3,
+    "seasons": "2025–2026"
   }
 ];
 
@@ -29707,6 +31999,27 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 0.748,
     "games": 11
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "season": 2026,
+    "level": 0.953,
+    "games": 10
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "season": 2026,
+    "level": 1.027,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "season": 2026,
+    "level": 1.329,
+    "games": 4
   }
 ];
 
@@ -42920,6 +45233,1168 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "tortugas",
     "ratio": 2.428,
     "games": 11
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "bradley",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "drake",
+    "ratio": 0.979,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "evansville",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "illinois-st",
+    "ratio": 0.771,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "indiana-st",
+    "ratio": 1.074,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "lipscomb",
+    "ratio": 1.476,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "missouri-st",
+    "ratio": 0.953,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "murray-st",
+    "ratio": 1.253,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "northern-iowa",
+    "ratio": 0.974,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "s-illinois",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "uic",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-mbb",
+    "opponent": "valparaiso",
+    "ratio": 0.97,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "opponent": "bradley",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "opponent": "drake",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "opponent": "evansville",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "opponent": "indiana-st",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "opponent": "murray-st",
+    "ratio": 1.089,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "opponent": "northern-iowa",
+    "ratio": 0.941,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "opponent": "s-illinois",
+    "ratio": 0.961,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "opponent": "uic",
+    "ratio": 1.022,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "opponent": "valparaiso",
+    "ratio": 0.956,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "alabama-a-m",
+    "ratio": 0.826,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "asbury",
+    "ratio": 1.052,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "austin-peay",
+    "ratio": 1.176,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "bellarmine",
+    "ratio": 0.959,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "bryan",
+    "ratio": 1.019,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "c-arkansas",
+    "ratio": 0.962,
+    "games": 4
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "e-kentucky",
+    "ratio": 0.937,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "fgcu",
+    "ratio": 0.788,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "jacksonville",
+    "ratio": 0.773,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "north-alabama",
+    "ratio": 1.2,
+    "games": 5
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "queens",
+    "ratio": 1.091,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-mbb",
+    "opponent": "stetson",
+    "ratio": 0.834,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "opponent": "austin-peay",
+    "ratio": 1.114,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "opponent": "bellarmine",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "opponent": "e-kentucky",
+    "ratio": 1.191,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "opponent": "jacksonville",
+    "ratio": 1.11,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "opponent": "johnson-univ",
+    "ratio": 1.166,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "opponent": "north-alabama",
+    "ratio": 0.876,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "opponent": "north-florida",
+    "ratio": 1.103,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "opponent": "queens",
+    "ratio": 1.116,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "lipscomb-wbb",
+    "opponent": "west-georgia",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "opponent": "fiu",
+    "ratio": 1.05,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "opponent": "jax-state",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-football",
+    "opponent": "murray-st",
+    "ratio": 1.029,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "belmont",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "fiu",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "jax-state",
+    "ratio": 0.852,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "kennesaw-st",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "liberty",
+    "ratio": 1.2,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "louisiana-tech",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "milligan",
+    "ratio": 1.315,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "missouri-st",
+    "ratio": 1.024,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "new-mexico-st",
+    "ratio": 0.948,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "sam-houston",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "uab",
+    "ratio": 1.065,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "utep",
+    "ratio": 0.973,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-mbb",
+    "opponent": "western-ky",
+    "ratio": 1.084,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "opponent": "fiu",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "opponent": "jax-state",
+    "ratio": 0.968,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "opponent": "kennesaw-st",
+    "ratio": 0.969,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "opponent": "liberty",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "opponent": "new-mexico-st",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "opponent": "utep",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
+    "opponent": "western-ky",
+    "ratio": 1.034,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "atlanta",
+    "ratio": 0.832,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "cf-montr-al",
+    "ratio": 0.98,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "charlotte",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "chicago",
+    "ratio": 0.98,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "cincinnati",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "columbus",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "d-c-united",
+    "ratio": 0.979,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "miami",
+    "ratio": 1.022,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "new-england",
+    "ratio": 0.935,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "nycfc",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "orlando",
+    "ratio": 1.015,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "philadelphia",
+    "ratio": 1.014,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "red-bull-ny",
+    "ratio": 0.952,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "nashville-sc",
+    "opponent": "toronto",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "avalanche",
+    "ratio": 1.004,
+    "games": 6
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "blackhawks",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "blue-jackets",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "blues",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "bruins",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "canadiens",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "canucks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "capitals",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "coyotes",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "devils",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "ducks",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "flames",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "flyers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "golden-knights",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "hurricanes",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "islanders",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "jets",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "kings",
+    "ratio": 1.001,
+    "games": 4
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "kraken",
+    "ratio": 1.002,
+    "games": 4
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "lightning",
+    "ratio": 1.009,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "mammoth",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "maple-leafs",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "oilers",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "panthers",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "penguins",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "rangers",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "red-wings",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "sabres",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "senators",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "sharks",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "stars",
+    "ratio": 1.003,
+    "games": 7
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "utah-hc",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "predators",
+    "opponent": "wild",
+    "ratio": 1.009,
+    "games": 6
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "opponent": "bats",
+    "ratio": 0.984,
+    "games": 19
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "opponent": "bulls",
+    "ratio": 0.993,
+    "games": 18
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "opponent": "cubs",
+    "ratio": 1.036,
+    "games": 18
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "opponent": "indians",
+    "ratio": 0.972,
+    "games": 15
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "opponent": "jumbo-shrimp",
+    "ratio": 0.936,
+    "games": 21
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "opponent": "knights",
+    "ratio": 0.979,
+    "games": 34
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "opponent": "redbirds",
+    "ratio": 1.034,
+    "games": 22
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "opponent": "stripers",
+    "ratio": 0.983,
+    "games": 31
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "sounds",
+    "opponent": "tides",
+    "ratio": 1.022,
+    "games": 21
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "opponent": "bengals",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "opponent": "chargers",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "opponent": "colts",
+    "ratio": 0.964,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "opponent": "jaguars",
+    "ratio": 0.969,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "opponent": "jets",
+    "ratio": 1.013,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "opponent": "patriots",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "opponent": "seahawks",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "titans",
+    "opponent": "texans",
+    "ratio": 0.934,
+    "games": 4
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-football",
+    "opponent": "gardner-webb",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-football",
+    "opponent": "lindenwood",
+    "ratio": 0.814,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-football",
+    "opponent": "ut-martin",
+    "ratio": 0.56,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "e-illinois",
+    "ratio": 0.795,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "lindenwood",
+    "ratio": 0.665,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "little-rock",
+    "ratio": 0.859,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "morehead-st",
+    "ratio": 0.794,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "s-indiana",
+    "ratio": 1.11,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "se-missouri",
+    "ratio": 0.849,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "siue",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "tennessee-tech",
+    "ratio": 1.115,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "ut-martin",
+    "ratio": 0.775,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-mbb",
+    "opponent": "w-illinois",
+    "ratio": 0.845,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "opponent": "e-illinois",
+    "ratio": 1.071,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "opponent": "lindenwood",
+    "ratio": 1.058,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "opponent": "little-rock",
+    "ratio": 0.913,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "opponent": "morehead-st",
+    "ratio": 1.874,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "opponent": "se-missouri",
+    "ratio": 0.858,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "opponent": "siue",
+    "ratio": 1.069,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "opponent": "tennessee-tech",
+    "ratio": 0.931,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "opponent": "ut-martin",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "tsu-wbb",
+    "opponent": "w-illinois",
+    "ratio": 1.155,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "opponent": "auburn",
+    "ratio": 1.062,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "opponent": "kentucky",
+    "ratio": 1.063,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-football",
+    "opponent": "missouri",
+    "ratio": 1.063,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "alabama",
+    "ratio": 1.052,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "auburn",
+    "ratio": 1.032,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "c-arkansas",
+    "ratio": 1.033,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "florida",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "georgia",
+    "ratio": 0.954,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "kentucky",
+    "ratio": 1.06,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "lsu",
+    "ratio": 0.883,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "missouri",
+    "ratio": 1.07,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "ole-miss",
+    "ratio": 0.965,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "tennessee",
+    "ratio": 1.118,
+    "games": 3
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-mbb",
+    "opponent": "texas-a-m",
+    "ratio": 0.915,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "opponent": "kentucky",
+    "ratio": 0.973,
+    "games": 2
   }
 ];
 

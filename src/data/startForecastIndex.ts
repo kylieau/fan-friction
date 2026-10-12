@@ -22511,6 +22511,146 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "nashville",
+    "eventId": "2026-10-13-espn-mtsu-football-401871067",
+    "date": "2026-10-13",
+    "start": "18:00",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Low",
+      "why": "Predators vs. Golden Knights 31 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "nashville",
+    "eventId": "2026-10-13-espn-predators-401892499",
+    "date": "2026-10-13",
+    "start": "19:45",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.8,
+      "friction": "Low",
+      "why": "MTSU vs. Delaware 31 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "nashville",
+    "eventId": "2026-10-14-espn-nashville-sc-761866",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "nashville",
+    "eventId": "2026-10-15-espn-predators-401892513",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "nashville",
+    "eventId": "2026-10-17-espn-predators-401892529",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 5.3,
+      "friction": "Moderate",
+      "why": "Tennessee St vs. Morgan St and Vanderbilt vs. Arkansas 0.7 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "nashville",
+    "eventId": "2026-10-17-espn-tsu-football-401867968",
+    "date": "2026-10-17",
+    "start": "17:30",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 5.3,
+      "friction": "Moderate",
+      "why": "Vanderbilt vs. Arkansas 2.6 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "nashville",
+    "eventId": "2026-10-17-espn-vanderbilt-football-401856726",
+    "date": "2026-10-17",
+    "start": "18:00",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 5.3,
+      "friction": "Moderate",
+      "why": "Tennessee St vs. Morgan St 2.6 mi away, same hours."
+    }
+  },
+  {
+    "metroId": "nashville",
+    "eventId": "2026-10-24-espn-tsu-football-401868174",
+    "date": "2026-10-24",
+    "start": "14:30",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "nashville",
+    "eventId": "2026-10-25-espn-predators-401892580",
+    "date": "2026-10-25",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "Titans vs. Browns 0.7 mi away, earlier in the day."
+    }
+  },
+  {
+    "metroId": "nashville",
+    "eventId": "2026-10-25-espn-titans-401873013",
+    "date": "2026-10-25",
+    "start": "12:00",
+    "capturedAt": "2026-10-12T08:14:00.517Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1.4,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
     "metroId": "new-york",
     "eventId": "2026-10-06-espn-devils-401892451",
     "date": "2026-10-06",

@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -152,6 +152,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/New_York',
     center: [-82.55, 27.92],
     zoom: 10.2,
+  },
+  // Covered Oct 12, 2026 (docs/research/city-builds/nashville/nashville-venue-table-answer.md):
+  // Nashville–Davidson–Murfreesboro–Franklin MSA. One frame holds downtown, Vanderbilt and the fairgrounds;
+  // the Opry, Murfreesboro, Lebanon and Thompson's Station sit off the first view. Clarksville is a separate MSA and is not in this metro.
+  nashville: {
+    id: 'nashville', code: 'BNA',
+    name: 'Nashville',
+    timeZone: 'America/Chicago',
+    center: [-86.78, 36.16],
+    zoom: 10.6,
   },
 };
 

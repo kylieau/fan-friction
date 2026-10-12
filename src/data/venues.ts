@@ -4669,6 +4669,458 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+  // Nashville (docs/research/city-builds/nashville/nashville-venue-table-answer.md, Oct 12, 2026).
+  // MSA core: Davidson, Rutherford (Murfreesboro), Williamson (Thompson's Station) and Wilson (Lebanon).
+  // Clarksville is a separate MSA and is not here. No carShare overrides (estimates stay in the research).
+  // Coordinates are OpenStreetMap by name unless the note says otherwise.
+  'nissan-stadium': {
+    id: 'nissan-stadium',
+    metroId: 'nashville',
+    names: [{ name: 'Nissan Stadium' }],
+    location: [-86.7713148, 36.1665236],
+    capacity: [
+      {
+        seats: 69143,
+        setup: 'football',
+        fromYear: 2006,
+        note: 'Reported. Listed since 2006. This 1999 building closes after the Jan 3, 2027 game. The 2027 enclosed stadium is a different building and is not this row. Source: https://blog.ticketmaster.com/step-inside-nissan-stadium-nashville-tn',
+      },
+      {
+        seats: 71000,
+        setup: 'concert',
+        note: 'Reported expanded concerts and special events. Not added to the football figure. Source: https://blog.ticketmaster.com/step-inside-nissan-stadium-nashville-tn',
+      },
+    ],
+    roof: 'open',
+  },
+  'geodis-park': {
+    id: 'geodis-park',
+    metroId: 'nashville',
+    names: [{ name: 'GEODIS Park', from: '2022-03-01' }],
+    location: [-86.7659442, 36.130025],
+    capacity: [
+      {
+        seats: 30000,
+        setup: 'soccer',
+        note: 'Reported, structural engineer. Architect lists 30,100. Conflict preserved. Source: https://www.walterpmoore.com/node/10854',
+      },
+      {
+        seats: 27000,
+        setup: 'concert',
+        note: 'Reported. Source: https://soccerstadiumdigest.com/2022/05/an-inside-look-at-geodis-park-new-nashville-sc-home/',
+      },
+    ],
+    roof: 'open',
+  },
+  'firstbank-stadium': {
+    id: 'firstbank-stadium',
+    metroId: 'nashville',
+    names: [
+      { name: 'Dudley Field' },
+      { name: 'Vanderbilt Stadium' },
+      { name: 'FirstBank Stadium', from: '2022-01-01' },
+    ],
+    // OSM knows the site as Dudley Field (the historic name), not FirstBank Stadium.
+    location: [-86.8089081, 36.1440212],
+    capacity: [
+      {
+        seats: 40350,
+        setup: 'football',
+        note: 'Official Vanderbilt page, which the research calls stale after the renovation. Also cited as 40,305 before the 2023 cap. Source: https://vucommodores.com/firstbank-stadium/',
+      },
+      {
+        seats: 28500,
+        setup: 'football',
+        fromYear: 2023,
+        note: 'Reported construction-period cap. A 2024 addition of 600 seats was not published as a new total, so 2024 stays on this figure. Source: https://aol.com/kentucky-football-fans-know-vandy-181438001.html',
+      },
+      {
+        seats: 35000,
+        setup: 'football',
+        fromYear: 2025,
+        note: 'Reported after the 2025 south end zone. The official page still lists 40,350. Conflict preserved. Source: https://www.inforum.com/opinion/columns/mcfeely-nashvilles-home-for-fcs-title-game-is-beautiful-hallowed-ground',
+      },
+    ],
+    roof: 'open',
+  },
+  'floyd-stadium': {
+    id: 'floyd-stadium',
+    metroId: 'nashville',
+    names: [{ name: 'Horace Jones Field' }, { name: 'Johnny "Red" Floyd Stadium' }],
+    location: [-86.3682714, 35.8512874],
+    capacity: [
+      {
+        seats: 27303,
+        setup: 'football',
+        note: 'Official current figure. Official 2021 figure was 30,788; the year of the drop was not stated, so that older total is not a dated row. West-side work after the 2026 season does not publish a new total. Source: https://goblueraiders.com/sports/2014/7/9/FB_0709140906',
+      },
+    ],
+    roof: 'open',
+  },
+  'nashville-superspeedway': {
+    id: 'nashville-superspeedway',
+    metroId: 'nashville',
+    names: [{ name: 'Nashville Superspeedway' }],
+    // OSM places the track in Rutherford County; the research places it in Lebanon, Wilson County.
+    location: [-86.4101499, 36.0456319],
+    capacity: [
+      {
+        seats: 25000,
+        setup: 'racing',
+        note: 'Reported permanent seating, sourced to a 2015 NASCAR page and treated as stale. A 150,000 portable-seating claim is unverified and not used. Source: https://en.wikipedia.org/wiki/2026_Cracker_Barrel_400',
+      },
+    ],
+    roof: 'open',
+  },
+  'firstbank-amphitheater': {
+    id: 'firstbank-amphitheater',
+    metroId: 'nashville',
+    names: [{ name: 'FirstBank Amphitheater' }],
+    // OSM did not name the stage. Coordinate is the research Wikipedia point.
+    location: [-86.840156, 35.81034],
+    capacity: [
+      {
+        seats: 7500,
+        setup: 'concert',
+        note: 'Official maximum. Planned as 5,000 in 2015; that figure is superseded. Source: https://www.firstbankamphitheater.com/',
+      },
+    ],
+    roof: 'open',
+  },
+  'grand-ole-opry-house': {
+    id: 'grand-ole-opry-house',
+    metroId: 'nashville',
+    names: [{ name: 'Grand Ole Opry House' }],
+    location: [-86.6918054, 36.2069577],
+    capacity: [
+      {
+        seats: 4000,
+        setup: 'concert',
+        note: 'Official owner figure. A guide adds the sections to about 4,400. Conflict preserved; the owner figure is the one stored. Source: https://ryman.com/plan-your-visit',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'gentry-center': {
+    id: 'gentry-center',
+    metroId: 'nashville',
+    names: [{ name: 'Howard Gentry Complex' }, { name: 'Gentry Center' }],
+    // OSM names the athletic complex, not a surveyed arena interior.
+    location: [-86.8291663, 36.1689456],
+    capacity: [
+      {
+        seats: 10500,
+        setup: 'basketball',
+        note: 'Reported. The official figure was not verified in the research. Source: https://www.stadiumjourney.com/stadiums/gentry-center-s629',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'allen-arena': {
+    id: 'allen-arena',
+    metroId: 'nashville',
+    names: [{ name: 'Allen Arena' }],
+    location: [-86.7989111, 36.1037647],
+    capacity: [
+      {
+        seats: 5028,
+        setup: 'basketball',
+        note: 'Reported basketball. Concerts are reported as a range, 3,845–5,584, which is not one figure and is not stored. The room straddles 5,000. Source: https://en.wikipedia.org/wiki/Allen_Arena',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'bridgestone-arena': {
+    id: 'bridgestone-arena',
+    metroId: 'nashville',
+    names: [{ name: 'Bridgestone Arena' }],
+    location: [-86.7783819, 36.1589806],
+    capacity: [
+      {
+        seats: 17159,
+        setup: 'hockey',
+        note: 'Reported. Conflicts with 17,113. Source: https://en.wikipedia.org/wiki/Bridgestone_Arena',
+      },
+      {
+        seats: 19395,
+        setup: 'basketball',
+        note: 'Reported. Ticketmaster guide lists 18,500. Conflict preserved. Source: https://en.wikipedia.org/wiki/Bridgestone_Arena',
+      },
+      {
+        seats: 10000,
+        setup: 'concert',
+        note: 'Reported half-house. Source: https://en.wikipedia.org/wiki/Bridgestone_Arena',
+      },
+      {
+        seats: 20000,
+        setup: 'concert',
+        note: 'Reported center-stage. Source: https://en.wikipedia.org/wiki/Bridgestone_Arena',
+      },
+      {
+        seats: 18500,
+        setup: 'concert',
+        note: 'Reported end-stage, the usual concert layout. Half-house 10,000 and center-stage 20,000 are stored as other concert rows; the last concert row is the one a concert uses. Source: https://en.wikipedia.org/wiki/Bridgestone_Arena',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'vanderbilt-memorial-gymnasium': {
+    id: 'vanderbilt-memorial-gymnasium',
+    metroId: 'nashville',
+    names: [{ name: 'Memorial Gymnasium' }],
+    location: [-86.8072775, 36.1445214],
+    capacity: [
+      {
+        seats: 14316,
+        setup: 'basketball',
+        note: 'Official. An encyclopedia lists 14,326. Conflict preserved. Source: https://vucommodores.com/facilities/historic-memorial-gymnasium',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'murphy-center': {
+    id: 'murphy-center',
+    metroId: 'nashville',
+    names: [{ name: 'Monte Hale Arena' }, { name: 'Murphy Center' }],
+    location: [-86.3695467, 35.852395],
+    capacity: [
+      {
+        seats: 11802,
+        setup: 'basketball',
+        note: 'Official. A guide lists 11,520. Conflict preserved. Source: https://goblueraiders.com/facilities/?id=21',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'first-horizon-park': {
+    id: 'first-horizon-park',
+    metroId: 'nashville',
+    names: [
+      { name: 'First Tennessee Park' },
+      { name: 'First Horizon Park', from: '2019-01-01' },
+    ],
+    location: [-86.7845981, 36.1725225],
+    capacity: [
+      {
+        seats: 8500,
+        standing: 10000,
+        setup: 'baseball',
+        note: 'Official media guide total is 10,000, made of 8,500 fixed seats plus a berm. The berm is lawn, not seats. Source: https://img.mlbstatic.com/milb-images/image/upload/milb/lqxufuhmmyj8cdu68qe9.pdf',
+      },
+    ],
+    roof: 'open',
+  },
+  'nashville-municipal-auditorium': {
+    id: 'nashville-municipal-auditorium',
+    metroId: 'nashville',
+    names: [{ name: 'Nashville Municipal Auditorium' }],
+    location: [-86.7821984, 36.1673832],
+    capacity: [
+      {
+        seats: 9700,
+        setup: 'concert',
+        note: 'Reported in the round. Reserved in the round is 9,432. Source: https://en.wikipedia.org/wiki/Nashville_Municipal_Auditorium',
+      },
+      {
+        seats: 8000,
+        setup: 'basketball',
+        note: 'Reported. Source: https://en.wikipedia.org/wiki/Nashville_Municipal_Auditorium',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'ascend-amphitheater': {
+    id: 'ascend-amphitheater',
+    metroId: 'nashville',
+    names: [{ name: 'Ascend Amphitheater' }],
+    location: [-86.7718452, 36.1598799],
+    capacity: [
+      {
+        seats: 2300,
+        setup: 'concert',
+        note: 'Reported fixed seats only. Source: https://en.wikipedia.org/wiki/Ascend_Amphitheater',
+      },
+      {
+        seats: 6800,
+        setup: 'concert',
+        note: 'Reported total with the lawn (2,300 seated + 4,500 lawn). Not a seated count. The room is under 5,000 without the lawn. Source: https://en.wikipedia.org/wiki/Ascend_Amphitheater',
+      },
+    ],
+    roof: 'open',
+  },
+  'curb-event-center': {
+    id: 'curb-event-center',
+    metroId: 'nashville',
+    names: [{ name: 'Curb Event Center' }],
+    // OSM did not name the arena. Coordinate is the research Wikipedia point. A second address (1801 Edgehill Ave) is unresolved.
+    location: [-86.79444444, 36.13222222],
+    capacity: [
+      {
+        seats: 5085,
+        setup: 'basketball',
+        note: 'Reported sports. Source: https://en.wikipedia.org/wiki/Curb_Event_Center',
+      },
+      {
+        seats: 5500,
+        setup: 'concert',
+        note: 'Official theatre-style. Opening concert layouts were a range, 2,400–6,000 (2003), not one figure. The room straddles 5,000. Source: https://www.belmont.edu/strategic-venues/venues/curb.html',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'pinnacle-nashville': {
+    id: 'pinnacle-nashville',
+    metroId: 'nashville',
+    names: [{ name: 'The Pinnacle' }],
+    location: [-86.7849304, 36.1601131],
+    capacity: [
+      {
+        seats: 4500,
+        setup: 'concert',
+        note: 'Official maximum. Under 5,000. Source: https://www.nashvilleyards.com/?p=3047',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'the-truth-nashville': {
+    id: 'the-truth-nashville',
+    metroId: 'nashville',
+    names: [{ name: 'The Truth' }],
+    // OSM has the street address (440 Chestnut St), not a named venue. Opened Oct 1, 2026.
+    location: [-86.7684688, 36.1442267],
+    capacity: [
+      {
+        seats: 4400,
+        setup: 'concert',
+        note: 'Official. Seated versus standing split is unknown. The Vinyl Room (up to 300) is a separate room and is not this one. Source: https://news.livenationentertainment.com/news/the-truth-announces-miranda-lambert-one-night-only-for-october-1-opening-night',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'hawkins-field': {
+    id: 'hawkins-field',
+    metroId: 'nashville',
+    names: [{ name: 'Hawkins Field' }],
+    location: [-86.807492, 36.1433436],
+    capacity: [
+      {
+        seats: 3802,
+        setup: 'baseball',
+        note: 'Official facility page. Conflicts with 3,700 and with 3,626 in a 2018 fact book. The current facility page is the one stored. Source: https://vucommodores.com/facilities-hawkins-field',
+      },
+    ],
+    roof: 'open',
+  },
+  'andrew-jackson-hall': {
+    id: 'andrew-jackson-hall',
+    metroId: 'nashville',
+    names: [{ name: 'Tennessee Performing Arts Center' }, { name: 'Andrew Jackson Hall' }],
+    location: [-86.7824167, 36.164551],
+    capacity: [
+      {
+        seats: 2472,
+        setup: 'concert',
+        note: 'Official, including 47 pit seats (Dec 2025 tech pack). Polk Theater is a different room. Source: https://www.tpac.org/assets/doc/Jackson-Tech-Pack-12.9.25-d3a3456adb.pdf',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'james-k-polk-theater': {
+    id: 'james-k-polk-theater',
+    metroId: 'nashville',
+    names: [{ name: 'James K. Polk Theater' }],
+    // Same TPAC building as Andrew Jackson Hall. OSM does not split the rooms.
+    location: [-86.7824167, 36.164551],
+    capacity: [
+      {
+        seats: 1075,
+        setup: 'concert',
+        note: 'Official, including 44 pit seats. Near the 1,000 pre-list line. Source: https://www.tpac.org/assets/doc/Jackson-Tech-Pack-12.9.25-d3a3456adb.pdf',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'ryman-auditorium': {
+    id: 'ryman-auditorium',
+    metroId: 'nashville',
+    names: [{ name: 'Ryman Auditorium' }],
+    location: [-86.7784951, 36.1612473],
+    capacity: [
+      {
+        seats: 2362,
+        setup: 'concert',
+        fromYear: 1994,
+        note: 'Official. Source: https://ryman.com/plan-your-visit',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'laura-turner-concert-hall': {
+    id: 'laura-turner-concert-hall',
+    metroId: 'nashville',
+    names: [{ name: 'Schermerhorn Symphony Center' }, { name: 'Laura Turner Concert Hall' }],
+    location: [-86.7754987, 36.1597613],
+    capacity: [
+      {
+        seats: 1844,
+        setup: 'concert',
+        note: 'Reported. Source: https://www.mixonline.com/live-sound/tour-nashville-venues-368996',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'war-memorial-auditorium': {
+    id: 'war-memorial-auditorium',
+    metroId: 'nashville',
+    names: [{ name: 'War Memorial Auditorium' }],
+    location: [-86.7835862, 36.164332],
+    capacity: [
+      {
+        seats: 1661,
+        setup: 'concert',
+        note: 'Reported. Separate building from TPAC. Source: https://www.broadway.org/zh/theatres/details/tennessee-performing-arts-center,719',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'marathon-music-works': {
+    id: 'marathon-music-works',
+    metroId: 'nashville',
+    names: [{ name: 'Marathon Music Works' }],
+    location: [-86.7973705, 36.1641223],
+    capacity: [
+      {
+        seats: 1500,
+        setup: 'concert',
+        note: 'Reported standing, 2012. Not re-verified as seated. Source: https://last.musicrow.com/?p=81722',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'brooklyn-bowl-nashville': {
+    id: 'brooklyn-bowl-nashville',
+    metroId: 'nashville',
+    names: [{ name: 'Brooklyn Bowl Nashville' }],
+    location: [-86.7839698, 36.1734467],
+    capacity: [
+      {
+        seats: 1200,
+        setup: 'concert',
+        note: 'Reported "up to 1,200". Source: https://nashtoday.6amcity.com/city-guide/play/live-music-venues-nashville-tn',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'nashville-fairgrounds-speedway': {
+    id: 'nashville-fairgrounds-speedway',
+    metroId: 'nashville',
+    names: [{ name: 'Nashville Fairgrounds Speedway' }],
+    location: [-86.7621456, 36.130769],
+    // Current capacity was not found. A ~30,000-seat proposal is not built. Nothing is invented.
+    capacity: [],
+    roof: 'open',
+  },
+
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

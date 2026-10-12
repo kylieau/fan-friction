@@ -177,6 +177,23 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'football/college-football', espnId: '338', metroId: 'atlanta', teamId: 'ksu-football', sport: 'football' },
   { path: 'basketball/mens-college-basketball', espnId: '338', metroId: 'atlanta', teamId: 'ksu-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '338', metroId: 'atlanta', teamId: 'ksu-wbb', sport: 'basketball' },
+  // Nashville (docs/research/city-builds/nashville/). Ids checked against each team's schedule Oct 12, 2026.
+  { path: 'football/nfl', espnId: '10', metroId: 'nashville', teamId: 'titans', sport: 'football' },
+  { path: 'hockey/nhl', espnId: '27', metroId: 'nashville', teamId: 'predators', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '18986', metroId: 'nashville', teamId: 'nashville-sc', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '2634', metroId: 'nashville', teamId: 'tsu-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2634', metroId: 'nashville', teamId: 'tsu-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2634', metroId: 'nashville', teamId: 'tsu-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '238', metroId: 'nashville', teamId: 'vanderbilt-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '238', metroId: 'nashville', teamId: 'vanderbilt-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '238', metroId: 'nashville', teamId: 'vanderbilt-wbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '2057', metroId: 'nashville', teamId: 'belmont-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2057', metroId: 'nashville', teamId: 'belmont-wbb', sport: 'basketball' },
+  { path: 'basketball/mens-college-basketball', espnId: '288', metroId: 'nashville', teamId: 'lipscomb-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '288', metroId: 'nashville', teamId: 'lipscomb-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '2393', metroId: 'nashville', teamId: 'mtsu-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2393', metroId: 'nashville', teamId: 'mtsu-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2393', metroId: 'nashville', teamId: 'mtsu-wbb', sport: 'basketball' },
 ];
 
 /** Cities this feed can list games for. */
@@ -370,12 +387,26 @@ const VENUE_BY_NAME: Record<string, string> = {
   'historic crew stadium': 'historic-crew-stadium',
   'mapfre stadium': 'historic-crew-stadium',
   'huntington park': 'huntington-park',
+  // Nashville, as ESPN writes them on each team's own schedule (checked Oct 12, 2026).
+  'nissan stadium': 'nissan-stadium',
+  'bridgestone arena': 'bridgestone-arena',
+  'geodis park': 'geodis-park',
+  'firstbank stadium': 'firstbank-stadium',
+  'vanderbilt stadium': 'firstbank-stadium',
+  'memorial gymnasium (tn)': 'vanderbilt-memorial-gymnasium',
+  'johnny "red" floyd stadium': 'floyd-stadium',
+  'murphy center': 'murphy-center',
+  'gentry center': 'gentry-center',
+  'curb event center arena': 'curb-event-center',
+  'curb event center': 'curb-event-center',
+  'allen arena': 'allen-arena',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */
 const METRO_VENUE_BY_NAME: Partial<Record<string, Record<string, string>>> = {
   philadelphia: { 'franklin field': 'penn-franklin-field' },
   milwaukee: { 'franklin field': 'franklin-field', 'routine field': 'franklin-field' },
+  nashville: { 'memorial gymnasium': 'vanderbilt-memorial-gymnasium' },
 };
 
 function venueIdForEspnName(name: string, metroId: string): string | undefined {

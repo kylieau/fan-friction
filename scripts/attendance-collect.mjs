@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -50,6 +50,7 @@ const MLB_TEAMS = [
   { teamId: 'gwinnett-stripers', mlbId: 431, sportId: 11, venueId: 'gwinnett-field', metroId: 'atlanta', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'chicago-dogs', mlbId: 1882, sportId: 23, venueId: 'impact-field', metroId: 'chicago', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'schaumburg-boomers', mlbId: 1950, sportId: 23, venueId: 'wintrust-field', metroId: 'chicago', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'sounds', metroId: 'nashville', mlbId: 556, sportId: 11, venueId: 'first-horizon-park', seasons: [2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
   { teamId: 'celtics', metroId: 'boston', path: 'basketball/nba', espnId: '2', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -204,6 +205,22 @@ const ESPN_TEAMS = [
   { teamId: 'dallas-renegades', metroId: 'dallas-fort-worth', path: 'football/ufl', espnId: '112647', seasons: [2024, 2025, 2026], seasontype: 2 },
   { teamId: 'texas-legends', metroId: 'dallas-fort-worth', path: 'basketball/nba-development', espnId: '24', seasons: [2024, 2025, 2026], seasontype: 2 },
   { teamId: 'windy-city-bulls', metroId: 'chicago', path: 'basketball/nba-development', espnId: '26', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'titans', metroId: 'nashville', path: 'football/nfl', espnId: '10', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'predators', metroId: 'nashville', path: 'hockey/nhl', espnId: '27', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'nashville-sc', metroId: 'nashville', path: 'soccer/usa.1', espnId: '18986', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'tsu-football', metroId: 'nashville', path: 'football/college-football', espnId: '2634', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'tsu-mbb', metroId: 'nashville', path: 'basketball/mens-college-basketball', espnId: '2634', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'tsu-wbb', metroId: 'nashville', path: 'basketball/womens-college-basketball', espnId: '2634', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'vanderbilt-football', metroId: 'nashville', path: 'football/college-football', espnId: '238', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'vanderbilt-mbb', metroId: 'nashville', path: 'basketball/mens-college-basketball', espnId: '238', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'vanderbilt-wbb', metroId: 'nashville', path: 'basketball/womens-college-basketball', espnId: '238', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'belmont-mbb', metroId: 'nashville', path: 'basketball/mens-college-basketball', espnId: '2057', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'belmont-wbb', metroId: 'nashville', path: 'basketball/womens-college-basketball', espnId: '2057', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'lipscomb-mbb', metroId: 'nashville', path: 'basketball/mens-college-basketball', espnId: '288', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'lipscomb-wbb', metroId: 'nashville', path: 'basketball/womens-college-basketball', espnId: '288', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'mtsu-football', metroId: 'nashville', path: 'football/college-football', espnId: '2393', seasons: [2022, 2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'mtsu-mbb', metroId: 'nashville', path: 'basketball/mens-college-basketball', espnId: '2393', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'mtsu-wbb', metroId: 'nashville', path: 'basketball/womens-college-basketball', espnId: '2393', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
 ];
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
@@ -354,11 +371,25 @@ const VENUE_BY_NAME = {
   'molson stadium': 'percival-molson-stadium',
   'now arena': 'now-arena',
   'comerica center': 'comerica-center',
+  // Nashville, as ESPN writes them (checked Oct 12, 2026).
+  'nissan stadium': 'nissan-stadium',
+  'bridgestone arena': 'bridgestone-arena',
+  'geodis park': 'geodis-park',
+  'firstbank stadium': 'firstbank-stadium',
+  'vanderbilt stadium': 'firstbank-stadium',
+  'memorial gymnasium (tn)': 'vanderbilt-memorial-gymnasium',
+  'johnny "red" floyd stadium': 'floyd-stadium',
+  'murphy center': 'murphy-center',
+  'gentry center': 'gentry-center',
+  'curb event center arena': 'curb-event-center',
+  'curb event center': 'curb-event-center',
+  'allen arena': 'allen-arena',
 };
 
 const METRO_VENUE_BY_NAME = {
   philadelphia: { 'franklin field': 'penn-franklin-field' },
   milwaukee: { 'franklin field': 'franklin-field', 'routine field': 'franklin-field' },
+  nashville: { 'memorial gymnasium': 'vanderbilt-memorial-gymnasium' },
 };
 
 function venueIdForEspnName(name, metroId) {

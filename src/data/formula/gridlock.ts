@@ -51,7 +51,10 @@ const SCALE = 7.5;
 // Columbus is sprawl (research, Oct 12, 2026, docs/research/city-builds/columbus/columbus-city-type-answer.md): no rail,
 // no measured mode split, and every venue estimate is 0.72–0.93 car. sprawl and hub share the 0.85 fallback; the
 // Arena District cluster is the contrary case, recorded in the implementation register, not a second city type.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl' };
+// Nashville is sprawl (research, Oct 12, 2026, docs/research/city-builds/nashville/nashville-city-type-answer.md):
+// the only measured event-transit share is about 1.6% at a Titans game, and that was mostly car-involved.
+// Estimated car shares stay in the research; no venue override is wired (same rule as Milwaukee).
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -103,6 +106,16 @@ const ZONE_NAMES: Record<string, string> = {
   'mershon-auditorium': 'Ohio State',
   'historic-crew-stadium': 'Ohio Expo Center',
   'celeste-center': 'Ohio Expo Center',
+  // Nashville. Downtown rooms share the East Bank lots and the river bridges; the fairgrounds rooms share one campus.
+  'nissan-stadium': 'Downtown',
+  'geodis-park': 'Fairgrounds',
+  'firstbank-stadium': 'Vanderbilt',
+  'floyd-stadium': 'MTSU',
+  'nashville-superspeedway': 'Lebanon',
+  'firstbank-amphitheater': "Thompson's Station",
+  'grand-ole-opry-house': 'Music Valley',
+  'gentry-center': 'Tennessee State',
+  'allen-arena': 'Lipscomb',
 };
 
 export interface Zone {

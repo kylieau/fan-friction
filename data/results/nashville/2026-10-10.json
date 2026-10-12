@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-tsu-football-401868198",
+      "metroId": "nashville",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nissan-stadium",
+      "homeTeamId": "tsu-football",
+      "home": {
+        "name": "Tennessee St",
+        "score": 28
+      },
+      "away": {
+        "name": "UT Martin",
+        "score": 42
+      },
+      "attendance": 670,
+      "capturedAt": "2026-10-12T08:13:58.281Z",
+      "duration": {
+        "minutes": 201,
+        "kind": "estimated"
+      },
+      "startedAt": "15:31"
+    },
+    {
+      "eventId": "2026-10-10-espn-vanderbilt-football-401856718",
+      "metroId": "nashville",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "firstbank-stadium",
+      "homeTeamId": "vanderbilt-football",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 17
+      },
+      "away": {
+        "name": "Ole Miss",
+        "score": 52
+      },
+      "attendance": 35000,
+      "capturedAt": "2026-10-12T08:13:58.281Z",
+      "duration": {
+        "minutes": 222,
+        "kind": "estimated"
+      },
+      "startedAt": "15:33"
+    }
+  ]
+}
