@@ -40,17 +40,23 @@ export async function clearWatchPlace(eventId: string): Promise<string | null> {
   return error ? SAVE_FAILED : null;
 }
 
+/** The same key the database groups by (build notes 3, 8.1, item 14): case, spaces and punctuation ignored. */
+export function placeKey(place: string): string {
+  return place.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+}
+
 /**
- * The public places named for this event, for the picker. The database answers only when
- * you are public for the same event; otherwise the list is empty. Your own name is left out.
+ * The places named for this event by the people you follow, with how many named each
+ * (migration 0024). The database answers only when you are sharing a place for the same
+ * event; otherwise the list is empty. Your own name is left out. Before 0024 runs, the
+ * old view is asked and narrowed the same way.
  */
 export async function placesForEvent(eventId: string, mine?: string): Promise<EventPlace[]> {
   const c = supabase();
   if (!c || !getAccount()) return [];
-  const { data, error } = await c.from('event_watch_places').select('place, people').eq('event_id', eventId).order('people', { ascending: false }).limit(12);
-  if (error) {
-    if (!notThereYet(error)) return [];
-    return [];
-  }
-  return ((data ?? []) as EventPlace[]).filter((row) => row.place.toLowerCase() !== (mine ?? '').trim().toLowerCase());
+  let { data, error } = await c.rpc('event_watch_places', { evt: eventId });
+  if (error && notThereYet(error)) ({ data, error } = await c.from('event_watch_places').select('place, people').eq('event_id', eventId).order('people', { ascending: false }).limit(12));
+  if (error) return [];
+  const key = placeKey(mine ?? '');
+  return ((data ?? []) as EventPlace[]).filter((row) => placeKey(row.place) !== key && placeKey(row.place) !== 'home');
 }
