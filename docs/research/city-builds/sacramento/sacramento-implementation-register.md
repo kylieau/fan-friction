@@ -92,6 +92,38 @@ The Athletics and Kings postseason rows are league-pool occupancies (the seasons
 
 OpenStreetMap via Nominatim, one request a second. Rooms OSM does not separate are marked approximate in `venues.ts`: Thunder Valley (resort), Hard Rock Live (casino), Hornet Pavilion (The WELL), The Nest (Yosemite Hall). Heart Health Park was found under the name Papa Murphy's Park. The University Credit Union Center point is the events-venue pin, not the nearby ARC building.
 
-## Judgment calls (also listed for the next review)
+## Checks (Oct 12, 2026)
 
-See the open-question list in the pull request. The short version: hub rather than sprawl; Sutter's 13,416 total rather than fixed seats; Hughes at the official 25,000; rename dates set to the first day of the sourced month or year where the calendar day was not published; Hard Rock capacity taken from the city-type Seminole Tribune figure because the venue table's link is a Thunder Valley article.
+- `npm run build` passed (type-check and production build).
+- `npm run city-build-check` passed, including Sacramento (metro record, at least one venue, at least one home team).
+- `node scripts/storage-check.mjs` passed.
+- `package-lock.json` matches `main`.
+
+## Open questions for the next review
+
+1. **City type.** Research recommends `hub` because downtown/riverfront and Cal Expo share bridges, ramps, and lots. The strongest contrary case is `sprawl`: commuting is about 92% by car, and more than half of the 5,000+ capacity sits on sites with their own lots and little transit. `transit` (0.40) is not supported. Nothing here is a measured mode split. Confirm `hub`, or switch to `sprawl`.
+2. **Car share.** No measured split for any room. Should any estimated exception be wired later (Toyota / Thunder Valley / Hard Rock ~0.97, Heart Health Park ~0.93, UC Davis Health Stadium ~0.77), or should they stay on the city default?
+3. **Sutter Health Park capacity.** Stored 13,416 (2025 team-official total, lawn included) rather than Wikipedia 14,014, a May 2026 report of 13,800, or 10,624 fixed seats.
+4. **Hughes Stadium.** Official 25,000, not Wikipedia 20,311. The research says it is rarely near capacity. It is friction-eligible on the published figure.
+5. **All American Speedway.** Unresolved (4,000 bleachers vs derived ~7,500). Left under the friction line.
+6. **Dan Russell Rodeo Arena.** No official capacity. Left unknown. Address listings disagree (403 Stafford St vs 200 Wool St).
+7. **Heart Health Park.** Soccer 11,569 from 2015 (8,000 kept for 2014). Concerts 14,000 (club, 2017). A 25,000 listing and Cal Expo's "about 12,000" were not stored. The 2021 rename day is not published (`2021-01-01`).
+8. **University Credit Union Center.** Official 6,003 basketball, not 7,600 or 8,000. Concert 5,575. Renamed July 2021; the day is not published (`2021-07-01`).
+9. **SAFE Credit Union Performing Arts Center.** Official 2,188 after the 2021 reopening, not 2,193 or older 2,452. The reopen day is not published (`2021-01-01`). Dates before 2021 have no stored capacity.
+10. **Memorial Auditorium.** 3,849, not 3,867.
+11. **Golden 1 Center.** Basketball 17,608 and concert 19,000. Design 17,500 is not a second basketball row. An announced crowd of 17,832 can sit above the basketball figure.
+12. **Toyota Amphitheatre.** 18,500 official total. About 8,000 reserved plus lawn is noted, not stored separately. Naming announced March 2015; the day is not published (`2015-03-01`). No per-show crowd history (only a 2014 season total).
+13. **Hard Rock Live.** Stored 2,500 seated. Seminole Tribune also says 3,500 general admission, still under 5,000, not stored. The venue table's 2,500 link points at a Thunder Valley article.
+14. **Hard Rock vs Toyota.** Research says under a mile. The OpenStreetMap pins are about 1.35 miles apart, so they do not share a 1.25-mile zone. The Hard Rock pin is the casino, not the room.
+15. **Downtown zone.** The distance rule puts Memorial Auditorium, the Performing Arts Center, Ace of Spades, and Sutter Health Park in Golden 1 Center's zone. Sutter is about 0.75 miles away, across the river.
+16. **Rename days that were not published.** Sutter Health Park `2020-01-01` (the season after 2019). UC Davis Health Stadium `2019-01-01`. Papa Murphy's Park is `2017-03-09`, which is sourced. The other days are the first day of the sourced month or year.
+17. **Approximate coordinates.** Thunder Valley is the resort. Hard Rock is the casino. Hornet Pavilion is The WELL. The Nest is Yosemite Hall. Heart Health Park was found as Papa Murphy's Park. The University Credit Union Center pin is the events-venue point, not the nearby ARC building.
+18. **Athletics home split.** 2026: 75 games at Sutter; six Las Vegas games skipped. Oakland 2022–2024 are not in this file. A fourth year at Sutter is only a third-party claim.
+19. **Postseason rows.** League-pool or blend figures, computed with Sacramento inside the pool. Other metros' pool rows were not rewritten.
+20. **Missing crowd history and teams.** No per-show attendance for the amphitheatre, casinos, Hughes, the speedway, Dan Russell, the theaters, Ace of Spades, or Quarry Park. Sac State volleyball and Sac City football are records only. UC Davis volleyball and gymnastics were not added. MLV NorCal (2027) was not added. No women's professional team in 2026.
+21. **Not activated.** Cal Expo Grandstand. Republic FC Railyards stadium (2028). Sac State at Cal Expo (proposal). UC Davis stadium expansion (proposal). Closed: Sleep Train Arena, Thunder Valley outdoor amphitheatre, Sacramento Raceway. SAFE convention halls. Table B open sites.
+22. **Quarry Park.** 1,000 was not re-verified. OSM spells the sponsor "Platnum."
+23. **Hornet Stadium.** 21,195 is reported, and the stands are described as temporary.
+24. **Ticketmaster.** Only Golden 1's existing id is stored. This snapshot has no concerts (no API key here).
+25. **Map frame.** Center `[-121.47, 38.57]`, zoom 10.8. Davis, Roseville, Lincoln, and Wheatland sit off the first view. Display name stays "Sacramento."
+26. **Hughes Stadium address.** A CEQA filing says "West Sacramento." The research treats that as a data error. The pin is the City of Sacramento stadium.
