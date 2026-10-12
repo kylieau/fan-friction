@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-osu-football-401858483",
+      "metroId": "columbus",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ohio-stadium",
+      "homeTeamId": "osu-football",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 45
+      },
+      "away": {
+        "name": "Maryland",
+        "score": 16
+      },
+      "attendance": 102589,
+      "capturedAt": "2026-10-12T08:15:39.822Z",
+      "duration": {
+        "minutes": 195,
+        "kind": "estimated"
+      },
+      "startedAt": "16:16"
+    }
+  ]
+}

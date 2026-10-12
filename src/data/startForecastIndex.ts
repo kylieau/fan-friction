@@ -8374,6 +8374,148 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "columbus",
+    "eventId": "2026-10-13-espn-blue-jackets-401892489",
+    "date": "2026-10-13",
+    "start": "18:15",
+    "capturedAt": "2026-10-12T08:16:13.746Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15902,
+      "low": 15141,
+      "high": 16694
+    }
+  },
+  {
+    "metroId": "columbus",
+    "eventId": "2026-10-14-espn-columbus-crew-761865",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:16:13.746Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19624,
+      "low": 19615,
+      "high": 19982
+    }
+  },
+  {
+    "metroId": "columbus",
+    "eventId": "2026-10-17-espn-blue-jackets-401892527",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:16:13.746Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16009,
+      "low": 15566,
+      "high": 16443
+    }
+  },
+  {
+    "metroId": "columbus",
+    "eventId": "2026-10-20-espn-blue-jackets-401892543",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:16:13.746Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16027,
+      "low": 15261,
+      "high": 16826
+    }
+  },
+  {
+    "metroId": "columbus",
+    "eventId": "2026-10-23-espn-osu-mhockey-401904519",
+    "date": "2026-10-23",
+    "start": "18:30",
+    "capturedAt": "2026-10-12T08:16:13.746Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "columbus",
+    "eventId": "2026-10-24-espn-blue-jackets-401892572",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:16:13.746Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.6,
+      "friction": "Moderate",
+      "why": "Ohio State Buckeyes vs. Augustana (SD) 2.8 mi away, same hours."
+    },
+    "draw": {
+      "count": 16300,
+      "low": 15849,
+      "high": 16742
+    }
+  },
+  {
+    "metroId": "columbus",
+    "eventId": "2026-10-24-espn-columbus-crew-761890",
+    "date": "2026-10-24",
+    "start": "15:30",
+    "capturedAt": "2026-10-12T08:16:13.746Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.6,
+      "friction": "Low",
+      "why": "Ohio State Buckeyes vs. Augustana (SD) and Blue Jackets vs. Golden Knights 2.7 mi away, same hours."
+    },
+    "draw": {
+      "count": 19907,
+      "low": 19765,
+      "high": 19932
+    }
+  },
+  {
+    "metroId": "columbus",
+    "eventId": "2026-10-24-espn-osu-mhockey-401904520",
+    "date": "2026-10-24",
+    "start": "17:00",
+    "capturedAt": "2026-10-12T08:16:13.746Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 3.6,
+      "friction": "Moderate",
+      "why": "Blue Jackets vs. Golden Knights 2.8 mi away, same hours."
+    }
+  },
+  {
     "metroId": "dallas-fort-worth",
     "eventId": "2026-10-07-tm-vvG1YZ_aE4su5L",
     "date": "2026-10-07",

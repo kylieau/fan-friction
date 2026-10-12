@@ -1,0 +1,399 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "metroName": "Columbus",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T08:16:13.746Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 8
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-13-espn-blue-jackets-401892489",
+      "metroId": "columbus",
+      "date": "2026-10-13",
+      "start": "18:15",
+      "kind": "game",
+      "title": "Blue Jackets vs. Panthers",
+      "broadcast": "CBJNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15902,
+        "low": 15141,
+        "high": 16694,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-columbus-crew-761865",
+      "metroId": "columbus",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Crew vs. Charlotte",
+      "place": {
+        "type": "venue",
+        "venueId": "scottsmiracle-gro-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "columbus-crew",
+        "away": "charlotte"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19624,
+        "low": 19615,
+        "high": 19982,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 5 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-blue-jackets-401892527",
+      "metroId": "columbus",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blue Jackets vs. Rangers",
+      "broadcast": "MSG",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "rangers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16009,
+        "low": 15566,
+        "high": 16443,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-20-espn-blue-jackets-401892543",
+      "metroId": "columbus",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blue Jackets vs. Maple Leafs",
+      "broadcast": "CBJNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "maple-leafs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16027,
+        "low": 15261,
+        "high": 16826,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-osu-mhockey-401904519",
+      "metroId": "columbus",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Augustana (SD)",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "augustana-sd"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-10-24-espn-columbus-crew-761890",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Crew vs. Toronto",
+      "place": {
+        "type": "venue",
+        "venueId": "scottsmiracle-gro-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "columbus-crew",
+        "away": "toronto"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19907,
+        "low": 19765,
+        "high": 19932,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-osu-mhockey-401904520",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Augustana (SD)",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "augustana-sd"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-blue-jackets-401892572",
+      "metroId": "columbus",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blue Jackets vs. Golden Knights",
+      "broadcast": "CBJNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16300,
+        "low": 15849,
+        "high": 16742,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-13-espn-blue-jackets-401892489",
+      "date": "2026-10-13",
+      "start": "18:15",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15902,
+        "low": 15141,
+        "high": 16694
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-columbus-crew-761865",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19624,
+        "low": 19615,
+        "high": 19982
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-blue-jackets-401892527",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16009,
+        "low": 15566,
+        "high": 16443
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-blue-jackets-401892543",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16027,
+        "low": 15261,
+        "high": 16826
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-osu-mhockey-401904519",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-columbus-crew-761890",
+      "date": "2026-10-24",
+      "start": "15:30",
+      "read": {
+        "rating": 3.6,
+        "friction": "Low",
+        "why": "Ohio State Buckeyes vs. Augustana (SD) and Blue Jackets vs. Golden Knights 2.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19907,
+        "low": 19765,
+        "high": 19932
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-osu-mhockey-401904520",
+      "date": "2026-10-24",
+      "start": "17:00",
+      "read": {
+        "rating": 3.6,
+        "friction": "Moderate",
+        "why": "Blue Jackets vs. Golden Knights 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-blue-jackets-401892572",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 3.6,
+        "friction": "Moderate",
+        "why": "Ohio State Buckeyes vs. Augustana (SD) 2.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16300,
+        "low": 15849,
+        "high": 16742
+      }
+    }
+  ]
+}

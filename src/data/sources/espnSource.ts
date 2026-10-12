@@ -52,6 +52,13 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/mens-college-basketball', espnId: '2349', metroId: 'boston', teamId: 'uml-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '2349', metroId: 'boston', teamId: 'uml-wbb', sport: 'basketball' },
   { path: 'basketball/mens-college-basketball', espnId: '111', metroId: 'boston', teamId: 'northeastern-mbb', sport: 'basketball' },
+  // Columbus (docs/research/city-builds/columbus/); every id and home venue checked against the feed Oct 12, 2026.
+  { path: 'hockey/nhl', espnId: '29', metroId: 'columbus', teamId: 'blue-jackets', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '183', metroId: 'columbus', teamId: 'columbus-crew', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '194', metroId: 'columbus', teamId: 'osu-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '194', metroId: 'columbus', teamId: 'osu-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '194', metroId: 'columbus', teamId: 'osu-wbb', sport: 'basketball' },
+  { path: 'hockey/mens-college-hockey', espnId: '194', metroId: 'columbus', teamId: 'osu-mhockey', sport: 'hockey' },
   // Tampa Bay (docs/research/city-builds/tampa/); every id and home venue checked against the feed Oct 12, 2026.
   { path: 'football/nfl', espnId: '27', metroId: 'tampa', teamId: 'buccaneers', sport: 'football' },
   { path: 'hockey/nhl', espnId: '20', metroId: 'tampa', teamId: 'lightning', sport: 'hockey' },
@@ -352,6 +359,17 @@ const VENUE_BY_NAME: Record<string, string> = {
   'molson stadium': 'percival-molson-stadium',
   'now arena': 'now-arena',
   'comerica center': 'comerica-center',
+  // Columbus, as ESPN writes them (checked Oct 12, 2026).
+  'ohio stadium': 'ohio-stadium',
+  'nationwide arena': 'nationwide-arena',
+  'schottenstein center': 'value-city-arena',
+  'value city arena': 'value-city-arena',
+  'scottsmiracle-gro field': 'scottsmiracle-gro-field',
+  'lower.com field': 'scottsmiracle-gro-field',
+  'lower com field': 'scottsmiracle-gro-field',
+  'historic crew stadium': 'historic-crew-stadium',
+  'mapfre stadium': 'historic-crew-stadium',
+  'huntington park': 'huntington-park',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

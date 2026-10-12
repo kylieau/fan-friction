@@ -10,6 +10,1074 @@ export type { DayClass, ExpectedDrawRow, OpponentRatioRow, PostseasonRow, Season
 
 export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 16897,
+    "low": 15808,
+    "high": 18359,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18614,
+    "low": 18549,
+    "high": 18621,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 11157,
+    "low": 10147,
+    "high": 12126,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 16156,
+    "low": 15088,
+    "high": 17289,
+    "games": 65,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 15131,
+    "low": 14509,
+    "high": 15832,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18472,
+    "low": 18017,
+    "high": 18559,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 16689,
+    "low": 16074,
+    "high": 17433,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 16731,
+    "low": 16213,
+    "high": 18244,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 15682,
+    "low": 14932,
+    "high": 16464,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 15697,
+    "low": 14698,
+    "high": 16605,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 15630,
+    "low": 15066,
+    "high": 16604,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18194,
+    "low": 16276,
+    "high": 18586,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 17615,
+    "low": 16732,
+    "high": 18233,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 17115,
+    "low": 15673,
+    "high": 18592,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18222,
+    "low": 17008,
+    "high": 18767,
+    "games": 34,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18588,
+    "low": 18079,
+    "high": 18790,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 18843,
+    "low": 18796,
+    "high": 18888,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18668,
+    "low": 18033,
+    "high": 18869,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 18323,
+    "low": 18298,
+    "high": 18484,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 16171,
+    "low": 15723,
+    "high": 16609,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 16298,
+    "low": 16156,
+    "high": 16714,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 17688,
+    "low": 17288,
+    "high": 17783,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "venueId": "nationwide-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18223,
+    "low": 17241,
+    "high": 18413,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 7555,
+    "low": 6089,
+    "high": 8816,
+    "games": 219,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4677,
+    "low": 3571,
+    "high": 6392,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 7013,
+    "low": 5859,
+    "high": 8531,
+    "games": 104,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 4330,
+    "low": 3421,
+    "high": 5027,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 6735,
+    "low": 5950,
+    "high": 7255,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 9731,
+    "low": 7637,
+    "high": 10100,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 8382,
+    "low": 7265,
+    "high": 10136,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 6934,
+    "low": 6371,
+    "high": 7822,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 7296,
+    "low": 6180,
+    "high": 8215,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 8556,
+    "low": 5971,
+    "high": 9302,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 4551,
+    "low": 3232,
+    "high": 5832,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 5964,
+    "low": 5759,
+    "high": 8125,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 10100,
+    "low": 9302,
+    "high": 10100,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 9015,
+    "low": 7642,
+    "high": 9667,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 8616,
+    "low": 8363,
+    "high": 9499,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 8816,
+    "low": 8619,
+    "high": 8899,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8298,
+    "low": 7148,
+    "high": 9179,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 4493,
+    "low": 4122,
+    "high": 6255,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 8299,
+    "low": 7178,
+    "high": 9152,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 8225,
+    "low": 7547,
+    "high": 9413,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 8298,
+    "low": 7555,
+    "high": 9918,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 8769,
+    "low": 8489,
+    "high": 9106,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 8004,
+    "low": 7476,
+    "high": 8444,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 7386,
+    "low": 6302,
+    "high": 8271,
+    "games": 35,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 4552,
+    "low": 3756,
+    "high": 4724,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 7116,
+    "low": 6787,
+    "high": 8252,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 8210,
+    "low": 7411,
+    "high": 9564,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 6110,
+    "low": 6002,
+    "high": 7722,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 7545,
+    "low": 7332,
+    "high": 8057,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "venueId": "huntington-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 8094,
+    "low": 7800,
+    "high": 8462,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "venueId": "scottsmiracle-gro-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 20618,
+    "low": 20387,
+    "high": 20759,
+    "games": 31,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "venueId": "scottsmiracle-gro-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 20420,
+    "low": 20411,
+    "high": 20793,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "venueId": "scottsmiracle-gro-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 20643,
+    "low": 20354,
+    "high": 20749,
+    "games": 24,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "venueId": "scottsmiracle-gro-field",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 20275,
+    "low": 20234,
+    "high": 20317,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "venueId": "scottsmiracle-gro-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 20737,
+    "low": 20614,
+    "high": 20740,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "venueId": "scottsmiracle-gro-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 20363,
+    "low": 20265,
+    "high": 20632,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "venueId": "scottsmiracle-gro-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 20739,
+    "low": 20631,
+    "high": 20804,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "venueId": "scottsmiracle-gro-field",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 20736,
+    "low": 20588,
+    "high": 20762,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "venueId": "ohio-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 104974,
+    "low": 103871,
+    "high": 105506,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "venueId": "ohio-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 102897,
+    "low": 102454,
+    "high": 105211,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "venueId": "ohio-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 104974,
+    "low": 103871,
+    "high": 105506,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "venueId": "ohio-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 102665,
+    "low": 100624,
+    "high": 103871,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "venueId": "ohio-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 105114,
+    "low": 104974,
+    "high": 105135,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "venueId": "ohio-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 105137,
+    "low": 104094,
+    "high": 105634,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 10623,
+    "low": 9984,
+    "high": 13071,
+    "games": 48,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 9244,
+    "low": 8693,
+    "high": 10021,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 10148,
+    "low": 9075,
+    "high": 10812,
+    "games": 28,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 10498,
+    "low": 10340,
+    "high": 10789,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 11157,
+    "low": 10071,
+    "high": 12026,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 8294,
+    "low": 8081,
+    "high": 9974,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 9974,
+    "low": 9098,
+    "high": 10697,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 12884,
+    "low": 11094,
+    "high": 13109,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 11631,
+    "low": 10149,
+    "high": 12794,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 13471,
+    "low": 12937,
+    "high": 15267,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 15524,
+    "low": 12357,
+    "high": 17684,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "venueId": "value-city-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 18058,
+    "low": 17871,
+    "high": 18206,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 6309,
+    "low": 5002,
+    "high": 7430,
+    "games": 30,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4977,
+    "low": 4691,
+    "high": 6151,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 5563,
+    "low": 5145,
+    "high": 6184,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 6663,
+    "low": 6540,
+    "high": 6935,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4617,
+    "low": 4574,
+    "high": 4644,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 4816,
+    "low": 4710,
+    "high": 4977,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 7504,
+    "low": 6660,
+    "high": 8455,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 7190,
+    "low": 6696,
+    "high": 7927,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 8144,
+    "low": 7608,
+    "high": 8567,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "venueId": "value-city-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 6668,
+    "low": 6160,
+    "high": 7562,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
     "metroId": "atlanta",
     "teamId": "atlanta-united",
     "venueId": "mercedes-benz-stadium",
@@ -28466,6 +29534,20 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
 /** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */
 export const SEASON_LEVELS: SeasonLevelRow[] = [
   {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "season": 2026,
+    "level": 0.961,
+    "games": 10
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "season": 2026,
+    "level": 0.98,
+    "games": 4
+  },
+  {
     "metroId": "atlanta",
     "teamId": "atlanta-united",
     "season": 2026,
@@ -28630,6 +29712,475 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
 
 /** How each opponent has drawn at each team's games (expectedDrawBuild.ts opponentRatio). */
 export const OPPONENT_RATIOS: OpponentRatioRow[] = [
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "avalanche",
+    "ratio": 1.042,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "blackhawks",
+    "ratio": 1.012,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "blues",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "bruins",
+    "ratio": 1.024,
+    "games": 5
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "canadiens",
+    "ratio": 0.995,
+    "games": 4
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "canucks",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "capitals",
+    "ratio": 1.023,
+    "games": 5
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "devils",
+    "ratio": 1.031,
+    "games": 6
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "ducks",
+    "ratio": 0.974,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "flames",
+    "ratio": 0.953,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "flyers",
+    "ratio": 1.01,
+    "games": 5
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "golden-knights",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "hurricanes",
+    "ratio": 1.011,
+    "games": 6
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "islanders",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "jets",
+    "ratio": 0.976,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "kings",
+    "ratio": 0.967,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "kraken",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "lightning",
+    "ratio": 0.974,
+    "games": 5
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "mammoth",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "maple-leafs",
+    "ratio": 1.022,
+    "games": 5
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "oilers",
+    "ratio": 1.052,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "panthers",
+    "ratio": 1.014,
+    "games": 4
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "penguins",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "predators",
+    "ratio": 0.983,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "rangers",
+    "ratio": 0.99,
+    "games": 6
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "red-wings",
+    "ratio": 1.046,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "sabres",
+    "ratio": 1.034,
+    "games": 5
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "senators",
+    "ratio": 0.948,
+    "games": 5
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "sharks",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "stars",
+    "ratio": 0.971,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "blue-jackets",
+    "opponent": "wild",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "opponent": "bats",
+    "ratio": 1,
+    "games": 30
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "opponent": "bisons",
+    "ratio": 1.017,
+    "games": 10
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "opponent": "cubs",
+    "ratio": 1.076,
+    "games": 24
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "opponent": "indians",
+    "ratio": 0.946,
+    "games": 29
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "opponent": "mud-hens",
+    "ratio": 1.029,
+    "games": 30
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "opponent": "saints",
+    "ratio": 0.977,
+    "games": 29
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-clippers",
+    "opponent": "storm-chasers",
+    "ratio": 0.906,
+    "games": 34
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "atlanta",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "cf-montr-al",
+    "ratio": 0.987,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "charlotte",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "chicago",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "cincinnati",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "d-c-united",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "miami",
+    "ratio": 1.01,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "nashville",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "new-england",
+    "ratio": 0.974,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "nycfc",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "orlando",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "philadelphia",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "red-bull-ny",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "columbus-crew",
+    "opponent": "toronto",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "opponent": "maryland",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "opponent": "minnesota",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-football",
+    "opponent": "penn-state",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "illinois",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "indiana",
+    "ratio": 1.103,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "maryland",
+    "ratio": 0.975,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "michigan",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "minnesota",
+    "ratio": 0.914,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "nebraska",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "penn-state",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "purdue",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "rutgers",
+    "ratio": 0.937,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "w-michigan",
+    "ratio": 0.962,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-mbb",
+    "opponent": "wisconsin",
+    "ratio": 0.939,
+    "games": 2
+  },
+  {
+    "metroId": "columbus",
+    "teamId": "osu-wbb",
+    "opponent": "maryland",
+    "ratio": 1.01,
+    "games": 2
+  },
   {
     "metroId": "atlanta",
     "teamId": "atlanta-united",

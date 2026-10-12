@@ -48,7 +48,10 @@ const SCALE = 7.5;
 // Philadelphia is a hub (research, Oct 12, 2026, docs/research/city-builds/philadelphia/philadelphia-city-type-answer.md): Sports Complex
 // crowds run ~74–81% car-involved with meaningful B-line share; co-located stadiums share lots and Pattison/Broad approaches.
 // Tampa: provisional driving default (research §8.1); no venue carShare overrides in this pass.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl' };
+// Columbus is sprawl (research, Oct 12, 2026, docs/research/city-builds/columbus/columbus-city-type-answer.md): no rail,
+// no measured mode split, and every venue estimate is 0.72–0.93 car. sprawl and hub share the 0.85 fallback; the
+// Arena District cluster is the contrary case, recorded in the implementation register, not a second city type.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -83,6 +86,23 @@ const ZONE_NAMES: Record<string, string> = {
   'lincoln-financial-field': 'South Philadelphia Sports Complex',
   'citizens-bank-park': 'South Philadelphia Sports Complex',
   'xfinity-mobile-arena': 'South Philadelphia Sports Complex',
+  // Columbus clusters that share approaches (city-type answer §5b). Distance still forms the zone.
+  'nationwide-arena': 'Arena District',
+  'scottsmiracle-gro-field': 'Arena District',
+  'huntington-park': 'Arena District',
+  'kemba-live-outdoor': 'Arena District',
+  'kemba-live-indoor': 'Arena District',
+  'ohio-stadium': 'Ohio State',
+  'value-city-arena': 'Ohio State',
+  'st-john-arena': 'Ohio State',
+  'jesse-owens-memorial-stadium': 'Ohio State',
+  'bill-davis-stadium': 'Ohio State',
+  'osu-covelli-center': 'Ohio State',
+  'ohio-state-ice-rink': 'Ohio State',
+  'osu-lacrosse-stadium': 'Ohio State',
+  'mershon-auditorium': 'Ohio State',
+  'historic-crew-stadium': 'Ohio Expo Center',
+  'celeste-center': 'Ohio Expo Center',
 };
 
 export interface Zone {

@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -43,12 +43,15 @@ export const METROS: Record<string, Metro> = {
     center: [-87.72, 41.88],
     zoom: 9.3,
   },
+  // Covered Oct 12, 2026 (docs/research/city-builds/columbus/columbus-venue-table-answer.md): 10-county MSA as the
+  // outer boundary, Franklin County core, plus Delaware (Selby) and Newark (Midland). One frame holds Ohio Stadium,
+  // the Arena District and the fairgrounds; Delaware, Newark and Mid-Ohio sit off the first view.
   columbus: {
     id: 'columbus', code: 'CBUS',
     name: 'Columbus',
     timeZone: 'America/New_York',
-    center: [-83.0197, 40.0016],
-    zoom: 12,
+    center: [-83.01, 39.985],
+    zoom: 11.2,
   },
   // Covered Oct 7, 2026 (docs/research/city-builds/new-york/new-york-venue-table-answer.md). The region runs from the
   // Meadowlands to Stony Brook; this frames Manhattan, the Bronx, Queens, Brooklyn, Newark

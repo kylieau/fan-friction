@@ -1825,13 +1825,331 @@ export const VENUES: Record<string, Venue> = {
   },
   // Buildings from her log outside Los Angeles. One record each. New York
   // is Citi Field only.
+  // Columbus (Oct 12, 2026). Rooms and figures: docs/research/city-builds/columbus/columbus-venue-table-answer.md.
+  // Car shares, where set, are the city-type answer's estimates (no measured split). Coordinates: OpenStreetMap
+  // unless a comment says the research supplied the point. Ohio Stadium already existed for a logged away game.
   'ohio-stadium': {
     id: 'ohio-stadium',
     metroId: 'columbus',
-    names: [{ name: 'Ohio Stadium' }],
-    location: [-83.0197, 40.0016],
+    // Estimate (city-type answer), low confidence, not measured. Football is the principal configuration.
+    // The March 2025 Stadium Series estimate was 0.88 and is not this default.
+    carShare: 0.72,
+    names: [{ name: 'The Shoe' }, { name: 'Ohio Stadium' }],
+    location: [-83.01974, 40.00165],
     ticketmasterIds: ['KovZpZAEAAeA'],
-    capacity: [{ seats: 102780, setup: 'football', note: 'Listed capacity' }],
+    capacity: [{
+      seats: 102780,
+      setup: 'football',
+      note: 'Official figure as reported by NHL.com, matching OSU Athletics. 2026 south-end-zone suites and 400 chair-back seats; net capacity not yet published. Roof called open-air in research but marked unsourced there. Source: https://nhl.com/news/2025-nhl-stadium-series-to-embrace-ohio-state-michigan-rivalry',
+    }],
+    roof: 'open',
+  },
+  'nationwide-arena': {
+    id: 'nationwide-arena',
+    metroId: 'columbus',
+    carShare: 0.86,
+    names: [{ name: 'Nationwide Arena' }],
+    location: [-83.00608, 39.96919],
+    capacity: [
+      { seats: 18500, setup: 'hockey', note: 'Official. Fan wiki lists 18,144 (older). End-stage concerts are a range (13,000–18,000), not a single figure. Source: https://www.nationwidearena.com/arena-info' },
+      { seats: 19500, setup: 'basketball', note: 'Official. Source: https://www.nationwidearena.com/arena-info' },
+      { seats: 20000, setup: 'concert', note: 'Official, up to 20,000. Source: https://www.nationwidearena.com/arena-info' },
+    ],
+    roof: 'indoor',
+  },
+  'value-city-arena': {
+    id: 'value-city-arena',
+    metroId: 'columbus',
+    carShare: 0.85,
+    names: [
+      { name: 'Value City Arena' },
+      { name: 'Jerome Schottenstein Center' },
+      { name: 'Schottenstein Center' },
+      { name: 'Value City Arena at the Jerome Schottenstein Center' },
+    ],
+    location: [-83.02496, 40.0076],
+    capacity: [
+      { seats: 18809, setup: 'basketball', note: 'Reported (Wikipedia) for OSU basketball. Official full bowl is up to 20,000; curtained setups are a 3,000–7,000 range, not one number. Architect program cited 19,500. Source: https://en.wikipedia.org/wiki/Value_City_Arena' },
+      { seats: 17500, setup: 'hockey', note: 'Reported (Wikipedia). Total seats also reported at 19,049. Source: https://en.wikipedia.org/wiki/Value_City_Arena' },
+      { seats: 20000, setup: 'concert', note: 'Official, full bowl up to 20,000. A Knowlton archive page reports up to 21,000. Source: https://planevents.osu.edu/venues-and-services/value-city-arena' },
+    ],
+    roof: 'indoor',
+  },
+  'scottsmiracle-gro-field': {
+    id: 'scottsmiracle-gro-field',
+    metroId: 'columbus',
+    carShare: 0.86,
+    names: [
+      { name: 'Lower.com Field' },
+      { name: 'Columbus Stadium', from: '2028-07-10' },
+      { name: 'ScottsMiracle-Gro Field', from: '2026-01-01' },
+    ],
+    location: [-83.01666, 39.96836],
+    capacity: [{
+      seats: 20371,
+      setup: 'soccer',
+      note: 'Official league figure. StadiumDB reports 20,139. Concert configuration unknown. Columbus Stadium is the LA28 alias and stays searchable; the sponsor name remains the display name. Canopy extent unverified, so the roof stays open. Source: https://www.mlssoccer.com/news/columbus-crew-stadium-renamed-scottsmiracle-gro-field',
+    }],
+    roof: 'open',
+  },
+  'historic-crew-stadium': {
+    id: 'historic-crew-stadium',
+    metroId: 'columbus',
+    carShare: 0.93,
+    names: [
+      { name: 'Columbus Crew Stadium' },
+      { name: 'Mapfre Stadium', from: '2015-01-01' },
+      { name: 'Historic Crew Stadium', from: '2020-12-01' },
+    ],
+    location: [-82.99114, 40.00947],
+    capacity: [{
+      seats: 19968,
+      note: 'Reported gridiron/UFL figure. Also reported: 21,000 (Columbus Navigator) and 27,000 (Dispatch via AOL, configuration not stated — possibly a field or festival floor, unverified, not stored). Sonic Temple uses the bowl plus outside stages; do not add stage crowds. Roof called open-air but marked unsourced in the research. Source: https://en.wikipedia.org/wiki/2026_UFL_season',
+    }],
+    roof: 'open',
+  },
+  'st-john-arena': {
+    id: 'st-john-arena',
+    metroId: 'columbus',
+    names: [{ name: 'St. John Arena' }],
+    location: [-83.01913, 40.00541],
+    capacity: [{
+      seats: 13276,
+      setup: 'basketball',
+      note: 'Reported. No current ticketed sport; Skull Session and rentals. Not demolished. Source: https://en.wikipedia.org/wiki/St._John_Arena',
+    }],
+    roof: 'indoor',
+  },
+  'mid-ohio-sports-car-course': {
+    id: 'mid-ohio-sports-car-course',
+    metroId: 'columbus',
+    names: [{ name: 'Mid-Ohio Sports Car Course' }],
+    // Edge of the MSA (Morrow County). Research: a destination circuit, not the Columbus default. Not on the sports sweep.
+    location: [-82.63636, 40.68901],
+    capacity: [{
+      seats: 12000,
+      setup: 'racing',
+      note: 'Reported grandstands. Observation mounds "over 75,000" are grounds, not seats, and are not stored. Source: https://www.scca.com/locations/1990905-mid-ohio-sports-car-course',
+    }],
+    roof: 'open',
+  },
+  'celeste-center': {
+    id: 'celeste-center',
+    metroId: 'columbus',
+    names: [{ name: 'Celeste Center' }, { name: 'WCOL Celeste Center' }],
+    location: [-82.99051, 39.99914],
+    capacity: [{
+      seats: 10200,
+      setup: 'concert',
+      note: 'Official. Listings sometimes say 10,000. Fair concerts sit inside fair admission — do not add them to the fair gate. Source: https://www.ohioexpocenter.com/p/planevent/buildings-and-floorplans/celeste-center',
+    }],
+    roof: 'indoor',
+  },
+  'huntington-park': {
+    id: 'huntington-park',
+    metroId: 'columbus',
+    carShare: 0.85,
+    names: [{ name: 'Huntington Park' }],
+    location: [-83.01091, 39.96873],
+    capacity: [{
+      seats: 10100,
+      setup: 'baseball',
+      note: 'Official team release. Record crowd 12,517 (2010) is attendance above listed seats, not a second capacity. Roof called open-air but marked unsourced in the research. Source: https://www.oursportscentral.com/services/releases/capacity-crowd-cheers-clippers-over-cubs-saturday/n-6231886',
+    }],
+    roof: 'open',
+  },
+  'jesse-owens-memorial-stadium': {
+    id: 'jesse-owens-memorial-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Jesse Owens Memorial Stadium' }],
+    location: [-83.02762, 40.01232],
+    capacity: [
+      { seats: 10000, note: 'Official billed total on the same OSU page that lists the East Grandstand at 3,242 fixed seats. The other seats are unreconciled. Fixed seating alone would sit under 5,000. Source: https://ohiostatebuckeyes.com/sports/2023/5/22/jesse-owens-memorial-stadium' },
+      { seats: 3242, setup: 'track', note: 'Official East Grandstand seats only, same page. Not a second crowd.' },
+    ],
+    roof: 'open',
+  },
+  'selby-stadium': {
+    id: 'selby-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Selby Stadium' }],
+    // NRHP / Wikipedia point (~10 m). Nominatim did not resolve the stadium name.
+    location: [-83.06361, 40.29667],
+    capacity: [{
+      seats: 9100,
+      setup: 'football',
+      note: 'Official. Also used for track, lacrosse and field hockey; no separate published counts. Delaware County, inside the MSA. Source: https://www.owu.edu/athletics/athletics-fitness-facilities/selby-stadium/',
+    }],
+    roof: 'open',
+  },
+  'fortress-obetz': {
+    id: 'fortress-obetz',
+    metroId: 'columbus',
+    names: [{ name: 'Fortress Obetz' }],
+    location: [-82.94446, 39.88582],
+    capacity: [{
+      seats: 6500,
+      note: 'Reported grandstand (1,100 flip-down + 2,000 bench-back + 3,400 bleacher). Tenant page says 6,500+. Typical events are community and high-school; crowds unknown. Source: https://en.wikipedia.org/wiki/Fortress_Obetz',
+    }],
+    roof: 'open',
+  },
+  'battelle-grand': {
+    id: 'battelle-grand',
+    metroId: 'columbus',
+    names: [{ name: 'Battelle Hall' }, { name: 'Battelle Grand' }],
+    // Parent convention-center point. The room itself was not a separate OSM hit.
+    location: [-83.00115, 39.97188],
+    capacity: [{
+      seats: 5411,
+      setup: 'concert',
+      note: 'Official ballroom theater set. Main floor theater is 4,368 on the same chart. Historic bleacher arena 6,864 and concert 7,588 / 6,400 are other setups, not applied to every event. Exhibit halls and Union Station Ballroom are not rooms. Source: https://columbusconventions.com/wp-content/uploads/2023/08/GCCC-Map-and-Capacity-Chart.pdf',
+    }],
+    roof: 'indoor',
+  },
+  'kemba-live-outdoor': {
+    id: 'kemba-live-outdoor',
+    metroId: 'columbus',
+    carShare: 0.85,
+    names: [
+      { name: 'PromoWest Pavilion' },
+      { name: 'Lifestyle Communities Pavilion' },
+      { name: 'Express Live!' },
+      { name: 'KEMBA Live!' },
+    ],
+    location: [-83.01005, 39.96977],
+    capacity: [{
+      seats: 5200,
+      setup: 'concert',
+      note: 'Official standing capacity. Also reported 5,500, and a rental page says up to 5,000. Straddles the friction floor by source. Rename date to KEMBA Live! was not confirmed, so older names are searchable but not dated. Indoor hall is a separate room. Source: https://promowestlive.com/our-venues/kemba-live',
+    }],
+    roof: 'open',
+  },
+  'kemba-live-indoor': {
+    id: 'kemba-live-indoor',
+    metroId: 'columbus',
+    names: [{ name: 'KEMBA Live! Indoor Music Hall' }],
+    // Same building as the outdoor amphitheater. Bare "KEMBA Live!" is the outdoor room's name so a shared listing is not split by guess.
+    location: [-83.01005, 39.96977],
+    capacity: [{
+      seats: 2200,
+      setup: 'concert',
+      note: 'Official. Also reported 2,300. Standing-dominant. Source: https://promowestlive.com/our-venues/kemba-live',
+    }],
+    roof: 'indoor',
+  },
+  'bill-davis-stadium': {
+    id: 'bill-davis-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Nick Swisher Field' }, { name: 'Bill Davis Stadium' }],
+    location: [-83.02602, 40.00968],
+    // A Wanderlog guide says 4,450. The venue research labels that source weak and says not to rely on it. Capacity stays unknown.
+    capacity: [],
+    roof: 'open',
+  },
+  'osu-covelli-center': {
+    id: 'osu-covelli-center',
+    metroId: 'columbus',
+    names: [{ name: 'Covelli Center' }],
+    // OSM way "Covelli Center & Jennings Wrestling Facility". Not Youngstown's Covelli Centre.
+    location: [-83.02774, 40.01385],
+    capacity: [{
+      seats: 3700,
+      note: 'Reported approximate (~3,700). Volleyball, wrestling and gymnastics since 2019. Source: https://myfox28columbus.com/sports/content/sneak-peak-of-new-covelli-center-at-ohio-state',
+    }],
+    roof: 'indoor',
+  },
+  'ohio-theatre-columbus': {
+    id: 'ohio-theatre-columbus',
+    metroId: 'columbus',
+    names: [{ name: 'Ohio Theatre' }],
+    location: [-82.99894, 39.95989],
+    capacity: [{
+      seats: 2779,
+      setup: 'concert',
+      note: 'Reported (CanonBase). CAPA. Source: https://canonbase.eu/wiki/Item:Q26126',
+    }],
+    roof: 'indoor',
+  },
+  'palace-theatre-columbus': {
+    id: 'palace-theatre-columbus',
+    metroId: 'columbus',
+    names: [{ name: 'Palace Theatre' }],
+    location: [-83.00194, 39.96259],
+    capacity: [{
+      seats: 2695,
+      setup: 'concert',
+      note: 'Reported. A 2018 renovation note says seating went from 2,837 to 2,691. Source: https://en.wikipedia.org/wiki/Palace_Theatre_(Columbus,_Ohio)',
+    }],
+    roof: 'indoor',
+  },
+  'mershon-auditorium': {
+    id: 'mershon-auditorium',
+    metroId: 'columbus',
+    names: [{ name: 'Mershon Auditorium' }],
+    location: [-83.00896, 40.00052],
+    capacity: [{
+      seats: 2477,
+      setup: 'concert',
+      note: 'Official fixed seats (900 main + 1,577 balcony). Wexner Center also says over 2,590 with pit/floor. Source: https://planevents.osu.edu/venues-and-services/wexner-center-and-mershon-auditorium',
+    }],
+    roof: 'indoor',
+  },
+  'newport-music-hall': {
+    id: 'newport-music-hall',
+    metroId: 'columbus',
+    names: [{ name: 'Newport Music Hall' }],
+    location: [-83.00709, 39.99747],
+    capacity: [{
+      seats: 1700,
+      setup: 'concert',
+      note: 'Official (PromoWest). The city-type answer cited an AXS page at 1,400; the venue table\'s operator figure is the one stored. Source: https://promowestlive.com/our-venues',
+    }],
+    roof: 'indoor',
+  },
+  'branch-rickey-arena': {
+    id: 'branch-rickey-arena',
+    metroId: 'columbus',
+    names: [{ name: 'Branch Rickey Arena' }],
+    location: [-83.06643, 40.2949],
+    capacity: [{
+      seats: 1450,
+      setup: 'basketball',
+      note: 'Official. Ohio Wesleyan, Delaware. Source: https://owu.edu/athletics/athletics-fitness-facilities/',
+    }],
+    roof: 'indoor',
+  },
+  'midland-theatre-newark': {
+    id: 'midland-theatre-newark',
+    metroId: 'columbus',
+    names: [{ name: 'Midland Theatre' }],
+    // OSM at 36 N Park Place. A research database point sits about 120 m away; precision there was unknown.
+    location: [-82.40167, 40.05915],
+    capacity: [{
+      seats: 1200,
+      setup: 'concert',
+      note: 'Reported. Newark, Licking County, inside the MSA. Not the Kansas City Midland. Source: https://explorelc.org/directory/the-midland-theatre',
+    }],
+    roof: 'indoor',
+  },
+  'ohio-state-ice-rink': {
+    id: 'ohio-state-ice-rink',
+    metroId: 'columbus',
+    names: [{ name: 'Ohio State Ice Rink' }],
+    location: [-83.01822, 40.00541],
+    capacity: [{
+      seats: 1000,
+      setup: 'hockey',
+      note: 'Reported approximate (~1,000); varies by event. Women\'s hockey. On the pre-list line. Source: https://www.thelantern.com/?p=216955',
+    }],
+    roof: 'indoor',
+  },
+  'osu-lacrosse-stadium': {
+    id: 'osu-lacrosse-stadium',
+    metroId: 'columbus',
+    names: [{ name: 'Ohio State Lacrosse Stadium' }],
+    location: [-83.02598, 40.01412],
+    // A Wanderlog guide says 2,000. The venue research labels that source weak. Capacity stays unknown.
+    capacity: [],
     roof: 'open',
   },
   // New York, covered Oct 7, 2026. Capacities: docs/research/city-builds/new-york/new-york-venue-table-answer.md (33 buildings; Etihad Park left

@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -22,6 +22,7 @@ const MLB_TEAMS = [
   { teamId: 'red-sox', metroId: 'boston', mlbId: 111, venueId: 'fenway-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'phillies', metroId: 'philadelphia', mlbId: 143, venueId: 'citizens-bank-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'rays', metroId: 'tampa', mlbId: 139, venueId: 'tropicana-field', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'columbus-clippers', metroId: 'columbus', mlbId: 445, sportId: 11, venueId: 'huntington-park', seasons: [2023, 2024, 2025, 2026] },
   { teamId: 'clearwater-threshers', metroId: 'tampa', mlbId: 566, sportId: 14, venueId: 'baycare-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'tampa-tarpons', metroId: 'tampa', mlbId: 587, sportId: 14, venueId: 'george-m-steinbrenner-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'dunedin-blue-jays', metroId: 'tampa', mlbId: 424, sportId: 14, venueId: 'td-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -86,6 +87,12 @@ const ESPN_TEAMS = [
   { teamId: 'usf-mbb', metroId: 'tampa', path: 'basketball/mens-college-basketball', espnId: '58', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'usf-wbb', metroId: 'tampa', path: 'basketball/womens-college-basketball', espnId: '58', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'rowdies', metroId: 'tampa', path: 'soccer/usa.usl.1', espnId: '17361', seasons: [2023, 2024, 2025, 2026], seasontype: 0 },
+  { teamId: 'blue-jackets', metroId: 'columbus', path: 'hockey/nhl', espnId: '29', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'columbus-crew', metroId: 'columbus', path: 'soccer/usa.1', espnId: '183', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'osu-football', metroId: 'columbus', path: 'football/college-football', espnId: '194', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'osu-mbb', metroId: 'columbus', path: 'basketball/mens-college-basketball', espnId: '194', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'osu-wbb', metroId: 'columbus', path: 'basketball/womens-college-basketball', espnId: '194', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'osu-mhockey', metroId: 'columbus', path: 'hockey/mens-college-hockey', espnId: '194', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'bucks', metroId: 'milwaukee', path: 'basketball/nba', espnId: '15', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -201,6 +208,16 @@ const ESPN_TEAMS = [
 
 /** ESPN gives venue names. Only home games in buildings the app knows are kept. */
 const VENUE_BY_NAME = {
+  'ohio stadium': 'ohio-stadium',
+  'nationwide arena': 'nationwide-arena',
+  'schottenstein center': 'value-city-arena',
+  'value city arena': 'value-city-arena',
+  'scottsmiracle-gro field': 'scottsmiracle-gro-field',
+  'lower.com field': 'scottsmiracle-gro-field',
+  'lower com field': 'scottsmiracle-gro-field',
+  'historic crew stadium': 'historic-crew-stadium',
+  'mapfre stadium': 'historic-crew-stadium',
+  'huntington park': 'huntington-park',
   'lincoln financial field': 'lincoln-financial-field',
   'citizens bank park': 'citizens-bank-park',
   'xfinity mobile arena': 'xfinity-mobile-arena',
