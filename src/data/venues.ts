@@ -841,6 +841,64 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor'
   },
+  'st-thomas-more-gym': {
+    id: 'st-thomas-more-gym',
+    metroId: 'milwaukee',
+    names: [
+      { name: 'Rick Majerus Court' },
+      { name: 'Jerry Huennekens Gymnasium' }
+    ],
+    location: [
+      -87.87700,
+      42.98015
+    ],
+    capacity: [
+      {
+        seats: 1250,
+        setup: 'basketball',
+        note: 'Official WIAA basketball seating, 2025-02-27; school identifies this as its basketball/volleyball competition room. Attendance is unknown. Coordinate is the mapped school campus, not a surveyed gym point. Sources: https://www.wiaawi.org/portals/0/pdf/sports/basketball_boys/bk_gyms.pdf and https://www.tmore.org/athletics'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'whitnall-main-gym': {
+    id: 'whitnall-main-gym',
+    metroId: 'milwaukee',
+    names: [
+      { name: 'Whitnall High School Main Gym' }
+    ],
+    location: [
+      -88.05628,
+      42.95397
+    ],
+    capacity: [
+      {
+        seats: 1200,
+        setup: 'basketball',
+        note: 'Official WIAA basketball seating, 2025-02-27. School announcement identifies a public varsity game in Main Gym on 2027-01-29; attendance is unknown. Coordinate is the mapped school campus, not a surveyed gym point. Sources: https://www.wiaawi.org/portals/0/pdf/sports/basketball_boys/bk_gyms.pdf and https://whs.whitnall.com/activities/co-curricular-hub/hall-of-fame'
+      }
+    ],
+    roof: 'indoor'
+  },
+  'catholic-memorial-main-gym': {
+    id: 'catholic-memorial-main-gym',
+    metroId: 'milwaukee',
+    names: [
+      { name: 'Catholic Memorial Main Gym' }
+    ],
+    location: [
+      -88.22037,
+      43.00223
+    ],
+    capacity: [
+      {
+        seats: 1000,
+        setup: 'basketball',
+        note: 'Official WIAA basketball seating, 2025-02-27; WIAA schedule assigns a 2026 volleyball match to Main Gym, but volleyball capacity is unknown. Game attendance is unknown. Coordinate is the mapped school campus, not a surveyed gym point. Sources: https://www.wiaawi.org/portals/0/pdf/sports/basketball_boys/bk_gyms.pdf and https://schools.wiaawi.org/Directory/Schedule/Index?TeamID=139228'
+      }
+    ],
+    roof: 'indoor'
+  },
   'oak-creek-paec': {
     id: 'oak-creek-paec',
     metroId: 'milwaukee',

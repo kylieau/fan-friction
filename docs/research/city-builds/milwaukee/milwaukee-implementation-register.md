@@ -1,6 +1,6 @@
 # Milwaukee implementation register
 
-Oct 11, 2026 · Codex. Kylie approved the five-point incorporation proposal Oct 11. The four original answers remain unchanged. This register selects active mapped public rooms from both, preserves capacity conflicts, and records gaps rather than inventing fields. Source links below support capacity; mapped coordinates, tenants and schedule links are in the original Codex venue rows.
+Oct 11, 2026 · Codex; coverage follow-up updated Oct 11. Kylie approved the five-point incorporation proposal Oct 11. The four original answers remain unchanged. This register selects active mapped public rooms from both, preserves capacity conflicts, and records gaps rather than inventing fields. Three school gyms from the later coverage-gap report are now in the venue directory for hand logging only. Source links below support capacity; mapped coordinates, tenants and schedule links are in the original Codex venue rows.
 
 ## Active fixed rooms
 
@@ -42,16 +42,19 @@ Oct 11, 2026 · Codex. Kylie approved the five-point incorporation proposal Oct 
 | `shattuck-auditorium` | Shattuck Auditorium | 1100 concert | Official; Official approximate 1,100; older layouts may differ. [Source](https://www.carrollu.edu/facilities/shattuck-music-center/) |
 | `varsity-theatre` | Varsity Theatre | 1075 default, 700 concert | Official; Official 1,075 lecture layout, concert 700; do not size a concert by lecture seats. [Source](https://www.marquette.edu/event-services/varsity-theatre.php) |
 | `oak-creek-paec` | Oak Creek Performing Arts & Education Center | 1000 concert | Official; Official 1,000; mapped parent building, not surveyed interior room. [Source](https://www.prarch.com/projects/oak-creek-high-school-performing-arts-education-center/) |
+| `st-thomas-more-gym` | Jerry Huennekens Gymnasium | 1250 basketball | WIAA seating inventory, 2025-02-27; school identifies it as the basketball/volleyball competition room and publishes ticket routes. Attendance unknown; mapped campus point, not gym point. [WIAA](https://www.wiaawi.org/portals/0/pdf/sports/basketball_boys/bk_gyms.pdf), [school athletics](https://www.tmore.org/athletics) |
+| `whitnall-main-gym` | Whitnall High School Main Gym | 1200 basketball | WIAA seating inventory, 2025-02-27; official school announcement identifies a public varsity game in this gym on 2027-01-29. Attendance unknown; mapped campus point, not gym point. [WIAA](https://www.wiaawi.org/portals/0/pdf/sports/basketball_boys/bk_gyms.pdf), [school announcement](https://whs.whitnall.com/activities/co-curricular-hub/hall-of-fame) |
+| `catholic-memorial-main-gym` | Catholic Memorial Main Gym | 1000 basketball | WIAA seating inventory, 2025-02-27; official schedule names this room for a 2026 volleyball match, but volleyball capacity is unknown. Attendance unknown; mapped campus point, not gym point. [WIAA](https://www.wiaawi.org/portals/0/pdf/sports/basketball_boys/bk_gyms.pdf), [WIAA schedule](https://schools.wiaawi.org/Directory/Schedule/Index?TeamID=139228) |
 | `rave-ii` | The Rave II | 1000 concert | Reported; Reported approximate 1,000; current official per-room inventory unknown. [Source](https://en.wikipedia.org/wiki/The_Rave/Eagles_Club) |
 | `turner-hall-ballroom` | Turner Hall Ballroom | 987 concert | Official; Official 987 standing, 600 seated. Near the listing threshold; never round to 1,000 in capacity. [Source](https://www.pabsttheatergroup.com/rentals/ticketed-event-rentals) |
 
 ## Explicit gaps and exclusions
 
-- 57 school-gym inventory candidates: exact competition room, map point, current public schedule and availability need verification; not activated from a school name alone.
+- School gyms: three researched rooms above are now selectable for hand-logged events. Their public schedule pages are not integrated as feeds, no school sports adapter or Ticketmaster room IDs were verified, and attendance remains unknown. The other 54 of the 57 original leads remain unresolved; their exact room/schedule/availability evidence is listed in the coverage-gaps answer.
 - Bradley Center: demolished; retained in research, not activated as a current room. Historical logs remain manually loggable.
 - Iron District and Fieldhouse Flats: unbuilt/planned, not activated.
 - Bavarian stadium: no verified point. Oriental Theatre: chiefly cinema; live-event coverage is not established. Keep both as research leads.
-- Aurora and other festival ground stages, Bank Five Nine free amphitheater, Potawatomi flexible hall/outdoor series, county Expo/fairgrounds and Baird Center: event-specific footprints, not generic fixed-capacity rows. Current daily crowds and per-event calendars must be reconciled before hand listing.
+- Aurora and other festival ground stages, Bank Five Nine free amphitheater, county Expo/fairgrounds and Baird Center remain event-specific footprints, not generic fixed-capacity rows. Potawatomi Event Center is a distinct active indoor room and is documented in the coverage-gaps answer, but is not yet in the app: Ticketmaster Discovery returned combined casino/Northern Lights/Event Center record `KovZpZAJFE7A`, with no upcoming event rows, rather than a room-specific id. Proximity matching could attach another casino event to this room. Add after a room-safe match is available; do not treat the outdoor series as a recurring current venue.
 - Racine/Kenosha, Alpine Valley and destination venues remain outside the approved initial four-county coverage.
 - Wave, Chinooks, volleyball and Torrent have team records but no verified adapter yet; the existing No schedule yet behavior applies. MLB/ESPN/HockeyTech cover the other nine teams/programs.
 - No regional broad-team flag was assumed; no supporting audience poll exists in the supplied evidence. No monthly heat baseline was invented. The existing universal defaults apply.

@@ -1,6 +1,6 @@
 # Research prompt: Milwaukee coverage gaps — open sites and school gyms
 
-Drafted Oct 12, 2026 · Codex. This brief follows the approved initial Milwaukee build. Its findings may be incorporated where they meet the existing evidence threshold; do not invent attendance, schedules, feeds or coordinates.
+Drafted Oct 11, 2026 · Codex. This brief follows the approved initial Milwaukee build. Its findings may be incorporated where they meet the existing evidence threshold; do not invent attendance, schedules, feeds or coordinates.
 
 When running this prompt, attach the Milwaukee implementation register and both original venue-table answers. Save each full answer beside this prompt as `milwaukee-coverage-gaps-answer-<model>.md` (for example, `milwaukee-coverage-gaps-answer-claude.md` or `milwaukee-coverage-gaps-answer-codex.md`). Preserve each complete answer for comparison.
 
