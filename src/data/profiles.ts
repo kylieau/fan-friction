@@ -462,7 +462,16 @@ export interface FeedItem {
   watched?: boolean;
   /** They answered Interested? (Kylie, Oct 11): shown on the event page and the by-event list, never the feed. */
   interested?: boolean;
+  /** Where they're watching, when they shared it with friends (build notes 3, 4.7): "Home" or a place name. */
+  place?: string;
   example?: boolean;
+}
+
+/** The places the people you follow shared, keyed "user|event". Reads through the 0023 rule; nothing before it runs. */
+async function sharedPlaces(c: SupabaseClient, ids: string[]): Promise<Map<string, string>> {
+  const { data, error } = await c.from('watch_places').select('user_id, event_id, place').in('user_id', ids).eq('public', true);
+  if (error || !data) return new Map();
+  return new Map((data as { user_id: string; event_id: string; place: string }[]).map((row) => [`${row.user_id}|${row.event_id}`, row.place]));
 }
 
 /** Today's date where the friend's event is, so an "attended" line never shows on the day itself. */
@@ -492,9 +501,10 @@ export async function followingFeed(limit = 30): Promise<FeedItem[]> {
   if (!c || !me) return [];
   const ids = await approvedFollowees(c, me.id);
   if (ids.length === 0) return [];
-  const [people, cards, { data: plans }] = await Promise.all([
+  const [people, cards, places, { data: plans }] = await Promise.all([
     cardsById(c, ids),
     entryCards(c, ids, limit),
+    sharedPlaces(c, ids),
     c
       .from('plans')
       .select('id, user_id, date, metro_id, event_id, title, venue, data')
@@ -507,12 +517,14 @@ export async function followingFeed(limit = 30): Promise<FeedItem[]> {
     .filter((p) => p.date >= todayFor(p.metro_id))
     .flatMap((p) => {
       const friend = people.get(p.user_id);
-      return friend ? [{ kind: 'planning' as const, friend, title: p.title, date: p.date, venue: p.venue ?? undefined, metroId: p.metro_id, eventId: p.event_id ?? undefined, ...(p.data?.watch ? { watched: true } : {}), ...(p.data?.interested ? { interested: true } : {}) }] : [];
+      const place = p.data?.watch && p.event_id ? places.get(`${p.user_id}|${p.event_id}`) : undefined;
+      return friend ? [{ kind: 'planning' as const, friend, title: p.title, date: p.date, venue: p.venue ?? undefined, metroId: p.metro_id, eventId: p.event_id ?? undefined, ...(p.data?.watch ? { watched: true } : {}), ...(p.data?.interested ? { interested: true } : {}), ...(place ? { place } : {}) }] : [];
     });
   const attended: FeedItem[] = cards.flatMap(({ userId, entry }) => {
     const friend = people.get(userId);
     if (!friend || entry.when.sort >= todayFor(entry.metroId)) return [];
-    return [{ kind: 'attended' as const, friend, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry, ...(entry.watched ? { watched: true } : {}) }];
+    const place = entry.watched && entry.eventId ? places.get(`${userId}|${entry.eventId}`) : undefined;
+    return [{ kind: 'attended' as const, friend, title: entry.title, date: entry.when.sort, venue: entry.venue, metroId: entry.metroId, eventId: entry.eventId, entry, ...(entry.watched ? { watched: true } : {}), ...(place ? { place } : {}) }];
   });
   return [...planning, ...attended].slice(0, limit);
 }

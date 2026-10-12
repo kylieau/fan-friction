@@ -224,7 +224,12 @@ button {
   min-width: 0;
 }
 
-/* The header date is a label (Kylie, Oct 9, 6.1); Pick a date lives in search. */
+/* The header date is plain text that opens the date page (build notes 3, 4.1). */
+.map-header-date-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .map-header-date {
   display: flex;
   align-items: baseline;
@@ -760,6 +765,146 @@ button {
 
 /* ---------- Bottom sheet ---------- */
 
+/* The collapsed bar (build notes 3, 4.2): "4 events · 94k ›" opens the date page; the activity chip beside it. */
+.sheet-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 36px;
+}
+
+.sheet-bar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--dodger);
+  text-decoration: none;
+}
+
+.sheet-bar-link .crowd-mark {
+  width: 14px;
+  height: 14px;
+  color: #b98500;
+}
+
+.activity-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 32px;
+  border: 1.5px solid #76869b;
+  border-radius: 999px;
+  background: var(--card);
+  color: #4b5a70;
+}
+
+.activity-chip.on {
+  border-color: var(--dodger);
+  background: var(--dodger);
+  color: var(--card);
+}
+
+/* Off: one slash across the icon. */
+.activity-chip:not(.on)::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 22px;
+  height: 1.5px;
+  background: #4b5a70;
+  transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+/* The day's rows (build notes 3, 4.2, mock 2b): time left, title over venue, crowd and tags right, one activity line. */
+.day-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(15, 27, 45, 0.08);
+  overflow: hidden;
+}
+
+.day-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+}
+
+.day-list li:last-child .day-row {
+  border-bottom: none;
+}
+
+.day-row-time {
+  width: 58px;
+  flex-shrink: 0;
+  padding-top: 2px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink2);
+  font-variant-numeric: tabular-nums;
+}
+
+.day-row-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.day-row-title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.day-row-venue {
+  font-size: 12.5px;
+  color: var(--ink2);
+}
+
+.day-row-activity {
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--dodger);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.day-row-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.day-row-side .crowd-figure {
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.day-row-side .event-tags {
+  justify-content: flex-end;
+}
+
 .sheet {
   position: absolute;
   left: 0;
@@ -792,7 +937,7 @@ button {
 .sheet-grab {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   padding-top: 4px;
   cursor: grab;
   outline: none;
@@ -2939,6 +3084,8 @@ button.back-link {
   height: 40px;
   flex-shrink: 0;
   border-radius: 12px;
+  /* Every read box, at every level, wears the thin grey border (build notes 3, 4.0). */
+  box-shadow: inset 0 0 0 1px #76869b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3577,6 +3724,7 @@ button.back-link {
   height: 56px;
   flex-shrink: 0;
   border-radius: 16px;
+  box-shadow: inset 0 0 0 1px #76869b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -5139,7 +5287,19 @@ button.back-link {
   color: var(--action);
 }
 
-/* "Why 4.7 tonight" (P3) */
+/* "See the whole day ›" attached to the Why card's bottom (build notes 3, 4.3). */
+.why-day-link {
+  display: block;
+  padding: 12px 16px 10px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--dodger);
+  text-decoration: none;
+}
+
+/* "Why 4.7 today" (P3) */
 .why-backdrop {
   align-items: flex-start;
   padding-top: calc(72px + env(safe-area-inset-top, 0px));

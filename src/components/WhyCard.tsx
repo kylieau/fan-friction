@@ -18,11 +18,14 @@ export function WhyCard({
   events,
   rating,
   empty,
+  dayHref,
   onClose,
 }: {
   events: readonly CrowdEvent[];
   rating: number | null;
   empty?: EmptyKind;
+  /** The date page, as "See the whole day ›" attached to the card's bottom (build notes 3, 4.3). */
+  dayHref?: string;
   onClose: () => void;
 }) {
   const rank = (e: CrowdEvent) => FRICTION_LEVELS.indexOf(e.assessment?.friction ?? 'Low');
@@ -93,6 +96,11 @@ export function WhyCard({
             );
           })}
         </ul>
+        {dayHref && (
+          <Link to={dayHref} className="why-day-link" onClick={onClose}>
+            See the whole day ›
+          </Link>
+        )}
       </div>
     </div>
   );

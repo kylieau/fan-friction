@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState } from 'react';
+import { useCallback, useContext, useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO } from '../config/metros';
 import {
@@ -12,9 +12,18 @@ import {
   todayIn,
   VENUES,
   venueNameOn,
+  followingFeed,
+  getAccount,
+  getPersonalLog,
+  subscribeAccount,
+  subscribePersonalLog,
   type CityDate,
   type CrowdEvent,
+  type FeedItem,
 } from '../data';
+import { activityGroups, activityLine, yourActivity } from '../lib/activity';
+import { getPref, setPref } from '../lib/prefs';
+import { PeopleIcon } from '../components/Icons';
 import { BaseMap, MapContext } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
 import { HandMoveWatch, MapCamera } from '../map/MapCamera';
@@ -29,7 +38,7 @@ import { clearOpenedFromMap, markOpenedFromMap, readMapMemory, saveMapMemory, ty
 import { quietStakes } from '../lib/stakes';
 import { addDays, clockTime, headerDate, pastRelativeLabel, shortLocalDate } from '../lib/dates';
 import { useSheetDrag } from '../lib/useSheetDrag';
-import { mapPath, useView } from '../lib/view';
+import { datePath, eventPath, mapPath, useView } from '../lib/view';
 import { MonthSheet } from '../components/MonthSheet';
 import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
@@ -69,6 +78,31 @@ export function MapScreen() {
       current = false;
     };
   }, [metro.id, date]);
+
+  // Activity lines under the rows (build notes 3, 4.2): your own answers and the people you follow.
+  // One chip in the sheet's header hides them all, yours included; it is remembered on this device.
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
+  const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
+  const [activity, setActivity] = useState<boolean>(() => getPref<boolean>('explore-activity', true));
+  const toggleActivity = () => {
+    setActivity((on) => {
+      setPref('explore-activity', !on);
+      return !on;
+    });
+  };
+  const [friends, setFriends] = useState<FeedItem[]>([]);
+  useEffect(() => {
+    let current = true;
+    if (!account) {
+      setFriends([]);
+      return;
+    }
+    followingFeed(300).then((list) => current && setFriends(list.filter((f) => f.date === date && (f.metroId ?? DEFAULT_METRO.id) === metro.id)));
+    return () => {
+      current = false;
+    };
+  }, [account?.id, date, metro.id]);
+  const lineFor = (e: CrowdEvent) => (activity ? activityLine(activityGroups(friends.filter((f) => f.eventId === e.id), yourActivity(e.id, log))) : null);
 
   const shown = day && day.date === date ? day : null;
   const rating = shown?.rating ?? null;
@@ -240,9 +274,11 @@ export function MapScreen() {
             <DateScore rating={headerRating} empty={showScore ? shown?.empty : undefined} showScore={showScore} />
           </button>
           <div className="map-header-dateblock">
-            {/* The big date is a label (6.1): Pick a date lives in search. */}
+            {/* The date is plain text that opens the date page (build notes 3, 4.1); Pick a date lives in search. */}
             <h1 className="map-header-date">
-              <span>{headerDate(date, today)}</span>
+              <Link to={datePath(date, metro.id)} className="map-header-date-link">
+                {headerDate(date, today)}
+              </Link>
             </h1>
             {/* The count and, on a past date, how long ago ("6 events · Last week"), so the date keeps its room beside < Today >. */}
             {(caption.trim() || pastLabel) && (
@@ -352,8 +388,10 @@ export function MapScreen() {
       )}
       </div>
 
-      {/* The sheet rises only for a tapped chip (build notes 2, T1): the compact card on top, the rivals it is fighting under it. The On the map list is gone (P3 took it). */}
-      <section className={`sheet${selected ? '' : ' sheet-none'}`} ref={sheetRef} aria-label={selected ? listTitle(selected) : 'Nothing selected'} aria-hidden={!selected}>
+      {/* The sheet (build notes 3, 4.2; Kylie's answer, 8.1 item 20): with no chip picked, its collapsed bar reads
+          "4 events · 94k ›" and opens the date page, and the list under it is the day's rows by time. A tapped chip
+          puts the compact card on top with the rivals it is fighting under it (build notes 2, T1). */}
+      <section className={`sheet${selected || dayEvents.length > 0 ? '' : ' sheet-none'}`} ref={sheetRef} aria-label={selected ? listTitle(selected) : 'This day'} aria-hidden={!selected && dayEvents.length === 0}>
         <div className="sheet-top" ref={topRef}>
           <div
             className="sheet-grab"
@@ -366,7 +404,28 @@ export function MapScreen() {
           >
             <span className="sheet-handle" aria-hidden />
           </div>
-          {selected && <ChipCard event={selected} onOpen={() => markOpenedFromMap()} />}
+          {selected ? (
+            <ChipCard event={selected} onOpen={() => markOpenedFromMap()} />
+          ) : (
+            <div className="sheet-bar">
+              <Link to={datePath(date, metro.id)} className="sheet-bar-link">
+                {isToday ? '' : `${shortLocalDate(date)} · `}
+                {caption.trim()}
+                {crowdTotal > 0 && (
+                  <>
+                    {' · '}
+                    <CrowdMark />
+                    {crowdThousands(crowdTotal)}
+                  </>
+                )}
+                {' ›'}
+              </Link>
+              {/* Icon only (Kylie, Oct 11): a filled pill when on, a grey slashed outline when off. */}
+              <button type="button" className={`activity-chip${activity ? ' on' : ''}`} aria-pressed={activity} aria-label="Friends activity" onClick={toggleActivity}>
+                <PeopleIcon size={18} />
+              </button>
+            </div>
+          )}
         </div>
 
         <div className="sheet-body" ref={bodyRef}>
@@ -391,10 +450,21 @@ export function MapScreen() {
             </>
           )}
           {selected && rivals.length === 0 && <p className="you-fine">Nothing else over 5,000 starts within the hour.</p>}
+          {!selected && dayEvents.length > 0 && (
+            <ul className="day-list" aria-label="Events">
+              {[...dayEvents]
+                .sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'))
+                .map((e) => (
+                  <li key={e.id}>
+                    <DayRow event={e} line={lineFor(e)} />
+                  </li>
+                ))}
+            </ul>
+          )}
         </div>
       </section>
 
-      {why && shown && <WhyCard events={dayEvents} rating={headerRating} empty={shown.empty} onClose={() => setWhy(false)} />}
+      {why && shown && <WhyCard events={dayEvents} rating={headerRating} empty={shown.empty} dayHref={datePath(date, metro.id)} onClose={() => setWhy(false)} />}
 
       {monthOpen && (
         <MonthSheet
@@ -450,6 +520,28 @@ function RememberMap({
 }
 
 
+
+/**
+ * One of the day's rows (build notes 3, 4.2; mock 2b): the time on the left, the title over the venue,
+ * the crowd with its tags on the right, and one small activity line under it. Opens the event page.
+ */
+function DayRow({ event: e, line }: { event: CrowdEvent; line: string | null }) {
+  const venue = sheetVenue(e);
+  return (
+    <Link to={eventPath(e.id, e.metroId)} state={{ fromMap: true }} className="day-row" onClick={() => markOpenedFromMap()}>
+      <span className="day-row-time">{e.start ? clockTime(e.start) : 'TBA'}</span>
+      <span className="day-row-main">
+        <span className="day-row-title">{listTitle(e)}</span>
+        {venue && <span className="day-row-venue">{venue}</span>}
+        {line && <span className="day-row-activity">{line}</span>}
+      </span>
+      <span className="day-row-side">
+        <CrowdFigure event={e} />
+        <EventTags event={e} />
+      </span>
+    </Link>
+  );
+}
 
 /** Same venue name the event page uses. Every On-the-map row shows it. */
 function sheetVenue(event: CrowdEvent): string | null {

@@ -537,12 +537,17 @@ export interface Entry {
   crowd?: number;
   /** Set once the crowd was looked up at the lock, so it is never looked up again (even when nothing was found). */
   crowdLocked?: boolean;
-  /** Where a watched entry was watched (call 3): at home, or a public place. */
+  /** Where a watched entry was watched (call 3): at home, or a public place. Older copies; the sheet writes `watchedPlace` ("Home" for the preset). */
   watchedWhere?: 'home' | 'public';
-  /** The public place, as typed ("Barney's Beanery"). */
+  /** The place, as typed ("Barney's Beanery"), or "Home" for the preset (build notes 3, 4.7). */
   watchedPlace?: string;
-  /** Keep the place to yourself: it is never shared with others who watched the same event. */
+  /** Older copies' "Only you" switch; read as `watchShare: 'private'`. */
   watchedPlacePrivate?: boolean;
+  /**
+   * Watching's one-tap choice (build notes 3, 4.7): Private keeps the watch and its place to you;
+   * Friends shares the place with your approved followers. Absent until chosen; nothing is preselected.
+   */
+  watchShare?: 'private' | 'friends';
   /** When this device last changed the entry (ISO). The newer copy wins when two devices disagree. */
   updatedAt?: string;
 }
@@ -562,6 +567,9 @@ export interface Plan {
    * not in Coming up; it shows on the event page and in the Following tab's by-event list.
    */
   interested?: boolean;
+  /** A Watching plan's Private / Friends choice and place (build notes 3, 4.7); they carry into the Watched stub. */
+  watchShare?: 'private' | 'friends';
+  watchedPlace?: string;
   /**
    * Not written. Save stores the night only. An older phone copy may still
    * have one; it is dropped on load.
