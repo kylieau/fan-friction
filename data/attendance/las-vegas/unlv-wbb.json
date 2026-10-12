@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "teamId": "unlv-wbb",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "unlv-wbb",
+      "season": 2023,
+      "date": "2022-11-11",
+      "start": "17:30",
+      "opponent": "Oral Roberts",
+      "venueId": "thomas-mack-center",
+      "attendance": 684,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unlv-wbb",
+      "season": 2024,
+      "date": "2024-03-13",
+      "start": "19:30",
+      "opponent": "San Diego St",
+      "venueId": "thomas-mack-center",
+      "attendance": 2045,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unlv-wbb",
+      "season": 2025,
+      "date": "2024-11-07",
+      "start": "11:00",
+      "opponent": "N Arizona",
+      "venueId": "thomas-mack-center",
+      "attendance": 803,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unlv-wbb",
+      "season": 2025,
+      "date": "2024-11-29",
+      "start": "14:30",
+      "opponent": "East Carolina",
+      "venueId": "thomas-mack-center",
+      "attendance": 906,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unlv-wbb",
+      "season": 2025,
+      "date": "2024-12-21",
+      "start": "14:30",
+      "opponent": "UC Riverside",
+      "venueId": "thomas-mack-center",
+      "attendance": 936,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unlv-wbb",
+      "season": 2026,
+      "date": "2025-11-26",
+      "start": "12:00",
+      "opponent": "Creighton",
+      "venueId": "thomas-mack-center",
+      "attendance": 604,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unlv-wbb",
+      "season": 2026,
+      "date": "2025-11-28",
+      "start": "14:30",
+      "opponent": "Northern Iowa",
+      "venueId": "thomas-mack-center",
+      "attendance": 576,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "unlv-wbb",
+      "season": 2026,
+      "date": "2026-03-09",
+      "start": "19:30",
+      "opponent": "Colorado St",
+      "venueId": "thomas-mack-center",
+      "attendance": 909,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

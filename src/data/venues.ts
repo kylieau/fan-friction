@@ -6535,6 +6535,226 @@ export const VENUES: Record<string, Venue> = {
     ],
     roof: 'indoor',
   },
+
+  // Las Vegas Valley (docs/research/city-builds/las-vegas/las-vegas-venue-table-answer.md, Oct 12, 2026).
+  // City type hub. Estimated car shares stay in the research and are not wired (Milwaukee/Tampa pattern).
+  // Order matters for Gridlock zones: T-Mobile is the South Strip center; Sphere starts North Strip.
+  // The Athletics' 2028 ballpark is not active. Cashman Field's last match is Oct 17, 2026.
+  't-mobile-arena': {
+    id: 't-mobile-arena',
+    metroId: 'las-vegas',
+    names: [{ name: 'T-Mobile Arena' }],
+    location: [-115.1782239, 36.102678],
+    capacity: [
+      { seats: 17500, setup: 'hockey', note: 'Official. Hockey with standing room 20,000 is secondary. Source: venue table A04.' },
+      { seats: 18000, setup: 'basketball', note: 'Official. Source: venue table A04.' },
+      { seats: 18000, setup: 'concert', note: 'Official end-stage upper bound (12,000–18,000). Center-stage is 19,500–20,000. Boxing/UFC up to 20,000. Source: venue table A04.' },
+    ],
+    roof: 'indoor',
+  },
+  'allegiant-stadium': {
+    id: 'allegiant-stadium',
+    metroId: 'las-vegas',
+    names: [{ name: 'Allegiant Stadium' }],
+    location: [-115.1833303, 36.0907359],
+    capacity: [
+      { seats: 65000, setup: 'football', note: 'Official. Expanded figures 71,835 (secondary) and about 72,000 (reported) are not the regular NFL setup. Concert configurations were not published. Source: venue table A02.' },
+      { seats: 61000, setup: 'soccer', note: 'Secondary. Source: venue table A02.' },
+    ],
+    roof: 'covered',
+  },
+  'michelob-ultra-arena': {
+    id: 'michelob-ultra-arena',
+    metroId: 'las-vegas',
+    names: [{ name: 'Mandalay Bay Events Center' }, { name: 'Michelob ULTRA Arena' }],
+    location: [-115.1790209, 36.0906483],
+    capacity: [
+      { seats: 12000, setup: 'basketball', note: 'Secondary. No official WNBA-configuration figure; the Aces use part of the bowl. Rename date from Mandalay Bay Events Center was not verified. Source: venue table A09.' },
+    ],
+    roof: 'indoor',
+  },
+  'mgm-grand-garden': {
+    id: 'mgm-grand-garden',
+    metroId: 'las-vegas',
+    names: [{ name: 'MGM Grand Garden Arena' }],
+    location: [-115.1685689, 36.1048311],
+    capacity: [
+      { seats: 16800, setup: 'concert', note: 'Official fact sheet, Jan 15, 2026: boxing/UFC and center-stage concert up to 16,800. Source: venue table A07.' },
+    ],
+    roof: 'indoor',
+  },
+  'dolby-live': {
+    id: 'dolby-live',
+    metroId: 'las-vegas',
+    names: [{ name: 'Park Theater' }, { name: 'Dolby Live' }],
+    location: [-115.1749787, 36.1041326],
+    // Reseller figure of 5,200 was not stored. The venue answer said to confirm an official number first.
+    capacity: [],
+    roof: 'indoor',
+  },
+  'ph-live': {
+    id: 'ph-live',
+    metroId: 'las-vegas',
+    names: [
+      { name: 'AXIS' },
+      { name: 'Zappos Theater', from: '2018-02-01' },
+      { name: 'Bakkt Theater', from: '2023-03-24' },
+      { name: 'PH Live', from: '2024-07-01' },
+    ],
+    // Venue-table coordinates (Wikipedia). OpenStreetMap resolved Planet Hollywood, not the theater.
+    location: [-115.1701, 36.1099],
+    capacity: [
+      { seats: 7000, setup: 'concert', note: 'Secondary, about 7,000, set at the 2000 reopening. GA exists; the seated vs GA split was not published. PH Live rename is July 2024 vs August 2024. Source: venue table A14.' },
+    ],
+    roof: 'indoor',
+  },
+  sphere: {
+    id: 'sphere',
+    metroId: 'las-vegas',
+    names: [{ name: 'Sphere' }],
+    location: [-115.1620674, 36.1212076],
+    capacity: [
+      { seats: 17600, setup: 'concert', note: 'Secondary: 17,600 seated; 20,000 with floor (Wikipedia; 8K Association, July 2023). Conflicts with 18,600 seated reported elsewhere. Official capacity page not retrieved. Source: venue table A05.' },
+    ],
+    roof: 'indoor',
+  },
+  'resorts-world-theatre': {
+    id: 'resorts-world-theatre',
+    metroId: 'las-vegas',
+    names: [{ name: 'Resorts World Theatre' }],
+    location: [-115.1683513, 36.1345604],
+    capacity: [
+      { seats: 5000, setup: 'concert', fromYear: 2021, note: 'Reported opening figure, December 2021. Source: venue table A18.' },
+      { seats: 4869, setup: 'concert', fromYear: 2025, note: 'Reported May 29, 2025, quoting AEG: 4,869 GA+seated; 4,561 fully seated. Below 5,000 from the 2025 renovation. Source: venue table A18.' },
+    ],
+    roof: 'indoor',
+  },
+  'bleaulive-theater': {
+    id: 'bleaulive-theater',
+    metroId: 'las-vegas',
+    names: [{ name: 'BleauLive Theater' }],
+    // OpenStreetMap resolved Fontainebleau, not the theater.
+    location: [-115.1592284, 36.1374208],
+    capacity: [
+      { seats: 3800, setup: 'concert', note: 'Secondary. Muted (under 5,000). Source: venue table A20.' },
+    ],
+    roof: 'indoor',
+  },
+  'thomas-mack-center': {
+    id: 'thomas-mack-center',
+    metroId: 'las-vegas',
+    names: [{ name: 'Thomas & Mack Center' }],
+    location: [-115.1442662, 36.104923],
+    capacity: [
+      { seats: 18000, setup: 'basketball', note: 'Official post-modernization basketball. Conflicts with secondary 17,923. Pre-modernization 19,522 boxing / 18,500 basketball is not the current room. Cox Pavilion is a separate room and is not mapped. Source: venue table A06.' },
+    ],
+    roof: 'indoor',
+  },
+  'orleans-arena': {
+    id: 'orleans-arena',
+    metroId: 'las-vegas',
+    names: [{ name: 'Orleans Arena' }],
+    location: [-115.2022465, 36.1058277],
+    capacity: [
+      { seats: 5736, note: 'Official production guide, July 2024: permanent seats. Source: venue table A12.' },
+      { seats: 7773, setup: 'hockey', note: 'Secondary. Source: venue table A12.' },
+      { seats: 8000, setup: 'basketball', note: 'Reported, about 8,000. Source: venue table A12.' },
+      { seats: 9500, setup: 'concert', note: 'Secondary maximum. Source: venue table A12.' },
+    ],
+    roof: 'indoor',
+  },
+  'downtown-las-vegas-events-center': {
+    id: 'downtown-las-vegas-events-center',
+    metroId: 'las-vegas',
+    names: [{ name: 'Downtown Las Vegas Events Center' }],
+    location: [-115.1446408, 36.1687163],
+    capacity: [
+      { seats: 11000, setup: 'concert', note: 'Official: main venue up to 11,000 standing. All available space up to 20,000 is a different footprint. The tent (1,500 seated / 2,000 standing) is not this room. A third-party listing says 2,500 scalable to 11,000. Source: venue table A10.' },
+    ],
+    roof: 'open',
+  },
+  'cashman-field': {
+    id: 'cashman-field',
+    metroId: 'las-vegas',
+    names: [{ name: 'Cashman Field' }],
+    location: [-115.1298902, 36.1797605],
+    capacity: [
+      { seats: 10000, setup: 'soccer', note: 'Reported, about 10,000. Secondary lists 12,500. Final match Oct 17, 2026. Source: venue table A08.' },
+    ],
+    roof: 'open',
+  },
+  'las-vegas-ballpark': {
+    id: 'las-vegas-ballpark',
+    metroId: 'las-vegas',
+    names: [{ name: 'Las Vegas Ballpark' }],
+    location: [-115.3294897, 36.152704],
+    capacity: [
+      { seats: 10000, setup: 'baseball', note: 'Official (A\'s Las Vegas series guide): about 8,200 fixed seats, 10,000 capacity. Secondary infobox 8,196 seats. June 2026 MLB games took some seats out of sale. Source: venue table A11.' },
+    ],
+    roof: 'open',
+  },
+  'lees-family-forum': {
+    id: 'lees-family-forum',
+    metroId: 'las-vegas',
+    names: [{ name: 'Dollar Loan Center' }, { name: "Lee's Family Forum", from: '2024-04-02' }],
+    location: [-115.081418, 36.0193318],
+    capacity: [
+      { seats: 5567, setup: 'hockey', note: 'Reported fixed seats and 28 suites. The rounded about 6,000 is not used. Source: venue table A15.' },
+    ],
+    roof: 'indoor',
+  },
+  'las-vegas-motor-speedway': {
+    id: 'las-vegas-motor-speedway',
+    metroId: 'las-vegas',
+    names: [{ name: 'Las Vegas Motor Speedway' }],
+    location: [-115.0094164, 36.2711872],
+    capacity: [
+      { seats: 80000, setup: 'racing', note: 'Reported, about 80,000 permanent seats after upgrades. Conflicts: secondary 75,000 at the end of 2018 with 8,000 more removed in 2019; stale 123,000; reseller 131,000. Source: venue table A01.' },
+    ],
+    roof: 'open',
+  },
+  'lvms-dirt-track': {
+    id: 'lvms-dirt-track',
+    metroId: 'las-vegas',
+    names: [{ name: 'LVMS Dirt Track' }],
+    // OpenStreetMap has the speedway, not this child track.
+    location: [-115.0094164, 36.2711872],
+    capacity: [
+      { seats: 8200, setup: 'racing', note: 'Secondary. Official LVMS confirmation still needed. Complex point, not a surveyed track point. Source: venue table A13.' },
+    ],
+    roof: 'open',
+  },
+  'lvms-bullring': {
+    id: 'lvms-bullring',
+    metroId: 'las-vegas',
+    names: [{ name: 'LVMS Bullring' }],
+    location: [-115.0094164, 36.2711872],
+    capacity: [
+      { seats: 5400, setup: 'racing', note: 'Secondary. Official LVMS confirmation still needed. Complex point, not a surveyed track point. Source: venue table A16.' },
+    ],
+    roof: 'open',
+  },
+  'south-point-arena': {
+    id: 'south-point-arena',
+    metroId: 'las-vegas',
+    names: [{ name: 'Arena at South Point Hotel And Casino' }, { name: 'South Point Arena' }],
+    // OpenStreetMap resolved the hotel at 9777 Las Vegas Blvd S, not the arena.
+    location: [-115.1761154, 36.0119389],
+    capacity: [
+      { seats: 4600, note: 'Official: Main Arena 4,600 seats. Other arenas in the complex have no published spectator capacity. Muted (under 5,000). Source: venue table A19.' },
+    ],
+    roof: 'indoor',
+  },
+  // Capacity unknown. An observed crowd of about 9,000 is not a capacity (venue table A21).
+  'craig-ranch-amphitheater': {
+    id: 'craig-ranch-amphitheater',
+    metroId: 'las-vegas',
+    names: [{ name: 'Amphitheater at Craig Ranch Regional Park' }],
+    // OpenStreetMap resolved the park, not the amphitheater.
+    location: [-115.149204, 36.2431197],
+    capacity: [],
+    roof: 'open',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

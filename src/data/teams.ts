@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -192,6 +192,20 @@ const LIST: Team[] = [
   team("uc-davis-mbb", "UC Davis Aggies Men's Basketball", "UC Davis MBB", "College men's basketball", "basketball", "sacramento", "UCMB", ["Aggies"]),
   team("uc-davis-wbb", "UC Davis Aggies Women's Basketball", "UC Davis WBB", "College women's basketball", "basketball", "sacramento", "UCWB", ["Aggies"]),
   team("sac-city-football", "Sacramento City College Panthers Football", "Sac City FB", "Community college football", "football", "sacramento", "SCC"),
+  // Las Vegas (Oct 12, 2026; docs/research/city-builds/las-vegas/). Feed ids checked against live schedules the same day.
+  team("raiders", "Las Vegas Raiders", "Raiders", "NFL", "football", "las-vegas", "LV"),
+  team("golden-knights", "Vegas Golden Knights", "Golden Knights", "NHL", "hockey", "las-vegas", "VGK"),
+  team("aces", "Las Vegas Aces", "Aces", "WNBA", "basketball", "las-vegas", "LVA"),
+  team("pwhl-las-vegas", "PWHL Las Vegas", "PWHL Vegas", "PWHL", "hockey", "las-vegas", "PWHL"),
+  team("henderson-silver-knights", "Henderson Silver Knights", "Silver Knights", "AHL", "hockey", "las-vegas", "HSK"),
+  team("las-vegas-aviators", "Las Vegas Aviators", "Aviators", "Triple-A baseball", "baseball", "las-vegas", "AVI"),
+  team("las-vegas-lights", "Las Vegas Lights FC", "Lights", "USL Championship", "soccer", "las-vegas", "LVL"),
+  team("unlv-football", "UNLV Rebels", "UNLV", "College football", "football", "las-vegas", "UNLV", ["Rebels"]),
+  team("unlv-mbb", "UNLV Rebels", "UNLV MBB", "College men's basketball", "basketball", "las-vegas", "UNLV", ["Rebels"]),
+  team("unlv-wbb", "UNLV Lady Rebels", "UNLV WBB", "College women's basketball", "basketball", "las-vegas", "UNLV", ["Lady Rebels"]),
+  team("vegas-knight-hawks", "Vegas Knight Hawks", "Knight Hawks", "IFL", "football", "las-vegas", "VKH"),
+  team("las-vegas-desert-dogs", "Las Vegas Desert Dogs", "Desert Dogs", "NLL", "lacrosse", "las-vegas", "LVD"),
+  team("las-vegas-rockers", "Las Vegas Rockers", "Rockers", "Arena football", "football", "las-vegas", "RCK"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

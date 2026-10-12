@@ -68,7 +68,10 @@ const SCALE = 7.5;
 // Mexico City is transit (research, Oct 11, 2026, docs/research/city-builds/mexico-city/mexico-city-city-type-answer.md):
 // the only quantified event split is about 0.35 car-involved at Banorte during the World Cup, and the capacity-weighted
 // estimates sit nearer 0.4 than 0.85. Low-confidence venue overrides stay in the research and are not wired.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit' };
+// Las Vegas is a hub (research, Oct 12, 2026, docs/research/city-builds/las-vegas/las-vegas-city-type-answer.md):
+// the Strip rooms share approaches and hotel audiences, and the non-car share is walking from hotels, not transit.
+// No measured mode split. Estimated car shares stay in the research; no venue override is wired (same rule as Milwaukee and Tampa).
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -178,6 +181,18 @@ const ZONE_NAMES: Record<string, string> = {
   'estadio-ciudad-de-los-deportes': 'Nápoles',
   'plaza-de-toros-mexico': 'Nápoles',
   'pepsi-center-wtc': 'Nápoles',
+  // Las Vegas Strip rooms that fall in one zone. North Strip starts at Sphere; South Strip is centered on T-Mobile.
+  't-mobile-arena': 'South Strip',
+  'allegiant-stadium': 'South Strip',
+  'michelob-ultra-arena': 'South Strip',
+  'mgm-grand-garden': 'South Strip',
+  'dolby-live': 'South Strip',
+  'ph-live': 'South Strip',
+  sphere: 'North Strip',
+  'resorts-world-theatre': 'North Strip',
+  'bleaulive-theater': 'North Strip',
+  'downtown-las-vegas-events-center': 'Downtown',
+  'cashman-field': 'Downtown',
 };
 
 export interface Zone {

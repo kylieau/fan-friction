@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -198,6 +198,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Vancouver',
     center: [-123.1, 49.26],
     zoom: 10.5,
+  },
+  // Covered Oct 12, 2026 (docs/research/city-builds/las-vegas/las-vegas-venue-table-answer.md): the Las Vegas Valley
+  // (Las Vegas, North Las Vegas, Henderson, and the unincorporated townships). One frame holds the Strip rooms;
+  // downtown, Summerlin, Henderson and the speedway sit off the first view.
+  'las-vegas': {
+    id: 'las-vegas', code: 'LAS',
+    name: 'Las Vegas',
+    timeZone: 'America/Los_Angeles',
+    center: [-115.172, 36.115],
+    zoom: 11,
   },
 };
 

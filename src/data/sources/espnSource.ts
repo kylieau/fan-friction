@@ -110,6 +110,14 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'soccer/mex.w.1', espnId: '133981', metroId: 'mexico-city', teamId: 'pumas-femenil', sport: 'soccer' },
   { path: 'soccer/mex.w.1', espnId: '133982', metroId: 'mexico-city', teamId: 'cruz-azul-femenil', sport: 'soccer' },
   { path: 'basketball/nba-development', espnId: '124612', metroId: 'mexico-city', teamId: 'capitanes', sport: 'basketball' },
+  // Las Vegas (docs/research/city-builds/las-vegas/); every id and home venue checked against the feed Oct 12, 2026.
+  { path: 'football/nfl', espnId: '13', metroId: 'las-vegas', teamId: 'raiders', sport: 'football' },
+  { path: 'hockey/nhl', espnId: '37', metroId: 'las-vegas', teamId: 'golden-knights', sport: 'hockey' },
+  { path: 'basketball/wnba', espnId: '17', metroId: 'las-vegas', teamId: 'aces', sport: 'basketball' },
+  { path: 'soccer/usa.usl.1', espnId: '18987', metroId: 'las-vegas', teamId: 'las-vegas-lights', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '2439', metroId: 'las-vegas', teamId: 'unlv-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '2439', metroId: 'las-vegas', teamId: 'unlv-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '2439', metroId: 'las-vegas', teamId: 'unlv-wbb', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
@@ -493,6 +501,15 @@ const VENUE_BY_NAME: Record<string, string> = {
   'arena cdmx': 'arena-cdmx',
   'arena ciudad de méxico': 'arena-cdmx',
   'arena ciudad de mexico': 'arena-cdmx',
+  // Las Vegas, as ESPN writes them on each team's own schedule (Oct 12, 2026).
+  'allegiant stadium': 'allegiant-stadium',
+  't-mobile arena': 't-mobile-arena',
+  'michelob ultra arena': 'michelob-ultra-arena',
+  'mgm grand garden arena': 'mgm-grand-garden',
+  'thomas & mack center': 'thomas-mack-center',
+  'thomas and mack center': 'thomas-mack-center',
+  "lee's family forum": 'lees-family-forum',
+  'cashman field': 'cashman-field',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

@@ -23,7 +23,7 @@ const CLIENTS: Record<string, { key: string; name: string }> = {
 };
 
 /** The feed's team ids, mapped to our records. Add a city's clubs here. */
-export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; metroId: string; teamId: string; venueId: string }[] = [
+export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; metroId: string; teamId: string; venueId: string; /** A "TBD" building is a neutral site, not this club's home room. */ skipUnknownVenue?: boolean }[] = [
   { client: 'ahl', htId: '327', metroId: 'milwaukee', teamId: 'milwaukee-admirals', venueId: 'uwm-panther-arena' },
   { client: 'ahl', htId: '330', metroId: 'chicago', teamId: 'chicago-wolves', venueId: 'allstate-arena' },
   { client: 'ahl', htId: '415', metroId: 'montreal', teamId: 'laval-rocket', venueId: 'place-bell' },
@@ -34,6 +34,8 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
   { client: 'pwhl', htId: '4', metroId: 'new-york', teamId: 'ny-sirens', venueId: 'prudential-center' },
   { client: 'pwhl', htId: '13', metroId: 'bay-area', teamId: 'pwhl-san-jose', venueId: 'sap-center' },
   { client: 'pwhl', htId: '1', metroId: 'boston', teamId: 'boston-fleet', venueId: 'agganis-arena' },
+  { client: 'ahl', htId: '437', metroId: 'las-vegas', teamId: 'henderson-silver-knights', venueId: 'lees-family-forum' },
+  { client: 'pwhl', htId: '12', metroId: 'las-vegas', teamId: 'pwhl-las-vegas', venueId: 't-mobile-arena', skipUnknownVenue: true },
   { client: 'whl', htId: '214', metroId: 'seattle', teamId: 'seattle-thunderbirds', venueId: 'accesso-showare-center' },
   { client: 'whl', htId: '226', metroId: 'seattle', teamId: 'everett-silvertips', venueId: 'angel-of-the-winds-arena' },
   { client: 'ahl', htId: '380', metroId: 'austin', teamId: 'texas-stars', venueId: 'heb-center-cedar-park' },
@@ -66,6 +68,10 @@ const VENUE_BY_NAME: Record<string, string> = {
   'rogers arena': 'rogers-arena',
   'langley events centre': 'langley-events-centre',
   'langley events centre - langley, bc': 'langley-events-centre',
+  't-mobile arena': 't-mobile-arena',
+  "lee's family forum": 'lees-family-forum',
+  'lee\u2019s family forum': 'lees-family-forum',
+  'orleans arena': 'orleans-arena',
 };
 
 export function hockeytechMetroIds(): string[] {
@@ -156,8 +162,10 @@ function nameOf(g: HtGame, side: 'home' | 'visiting'): string {
 
 function venueOf(g: HtGame, t: (typeof HOCKEYTECH_TEAMS)[number]): string | undefined {
   const name = (g.venue_name ?? '').split('|')[0].trim().toLowerCase();
-  if (!name || name === 'tbd') return t.venueId;
-  return VENUE_BY_NAME[name] ?? (name.includes(t.venueId.replace(/-/g, ' ').split(' ')[0]) ? t.venueId : undefined);
+  if (!name || name === 'tbd') return t.skipUnknownVenue ? undefined : t.venueId;
+  const token = t.venueId.replace(/-/g, ' ').split(' ')[0];
+  // A one-letter token ("t" from t-mobile-arena) would match almost every building name.
+  return VENUE_BY_NAME[name] ?? (token.length > 1 && name.includes(token) ? t.venueId : undefined);
 }
 
 function toEvent(g: HtGame, t: (typeof HOCKEYTECH_TEAMS)[number], playoffs: boolean): CrowdEvent | null {
