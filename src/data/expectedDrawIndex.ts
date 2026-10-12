@@ -14878,6 +14878,2022 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "seasons": "2025–2026"
   },
   {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "all",
+    "month": null,
+    "count": 33299,
+    "low": 28947,
+    "high": 36911,
+    "games": 240,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "opener",
+    "month": null,
+    "count": 42305,
+    "low": 41817,
+    "high": 42474,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 29512,
+    "low": 26930,
+    "high": 32741,
+    "games": 117,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 26930,
+    "low": 25231,
+    "high": 27627,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 28298,
+    "low": 26840,
+    "high": 29624,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 28124,
+    "low": 26382,
+    "high": 30745,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 28950,
+    "low": 26902,
+    "high": 32758,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 30681,
+    "low": 28748,
+    "high": 34776,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 30450,
+    "low": 22789,
+    "high": 33409,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 32327,
+    "low": 29560,
+    "high": 34704,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "friday",
+    "month": null,
+    "count": 36739,
+    "low": 33344,
+    "high": 38451,
+    "games": 40,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 37004,
+    "low": 33896,
+    "high": 39294,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 37852,
+    "low": 34459,
+    "high": 39842,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 33176,
+    "low": 31920,
+    "high": 35212,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 38402,
+    "low": 36902,
+    "high": 38596,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 37700,
+    "low": 36330,
+    "high": 39950,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 33654,
+    "low": 32006,
+    "high": 35560,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 36921,
+    "low": 34218,
+    "high": 39666,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 36470,
+    "low": 33299,
+    "high": 38567,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 41247,
+    "low": 35994,
+    "high": 41495,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 38399,
+    "low": 36102,
+    "high": 38574,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 33033,
+    "low": 32325,
+    "high": 34209,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 35085,
+    "low": 33129,
+    "high": 37249,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 38577,
+    "low": 36524,
+    "high": 41288,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 37485,
+    "low": 36422,
+    "high": 37947,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 38486,
+    "low": 35922,
+    "high": 40986,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 36512,
+    "low": 33951,
+    "high": 37438,
+    "games": 40,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 35622,
+    "low": 33491,
+    "high": 36759,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 35210,
+    "low": 34257,
+    "high": 36092,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 36911,
+    "low": 34166,
+    "high": 37789,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 37458,
+    "low": 30996,
+    "high": 38451,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 35205,
+    "low": 32332,
+    "high": 36611,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "venueId": "daikin-park",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 39555,
+    "low": 37329,
+    "high": 40080,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 5986,
+    "low": 5434,
+    "high": 6886,
+    "games": 24,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 5658,
+    "low": 5426,
+    "high": 6229,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 5765,
+    "low": 5615,
+    "high": 5991,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6811,
+    "low": 6207,
+    "high": 7112,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 6207,
+    "low": 5901,
+    "high": 6659,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 17808,
+    "low": 17012,
+    "high": 18680,
+    "games": 23,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 15552,
+    "low": 15016,
+    "high": 16163,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17849,
+    "low": 17367,
+    "high": 18785,
+    "games": 18,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 17445,
+    "low": 17044,
+    "high": 17679,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 19346,
+    "low": 18630,
+    "high": 19880,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "pvamu-football",
+    "venueId": "pvamu-panther-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 5416,
+    "low": 4591,
+    "high": 10338,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "pvamu-football",
+    "venueId": "pvamu-panther-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6326,
+    "low": 3723,
+    "high": 8103,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "pvamu-football",
+    "venueId": "pvamu-panther-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5416,
+    "low": 4591,
+    "high": 10338,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "pvamu-football",
+    "venueId": "pvamu-panther-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 4869,
+    "low": 3890,
+    "high": 6516,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "venueId": "first-community-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 20436,
+    "low": 18660,
+    "high": 21632,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "venueId": "first-community-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 23425,
+    "low": 20362,
+    "high": 26771,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "venueId": "first-community-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 20779,
+    "low": 18521,
+    "high": 21789,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "venueId": "first-community-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 18103,
+    "low": 17760,
+    "high": 19598,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "venueId": "first-community-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 21122,
+    "low": 20436,
+    "high": 21207,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "venueId": "first-community-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 21443,
+    "low": 19858,
+    "high": 22411,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "all",
+    "month": null,
+    "count": 1617,
+    "low": 1250,
+    "high": 1958,
+    "games": 43,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "opener",
+    "month": null,
+    "count": 1111,
+    "low": 1050,
+    "high": 1429,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1348,
+    "low": 1187,
+    "high": 1713,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1798,
+    "low": 1570,
+    "high": 2028,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1314,
+    "low": 1194,
+    "high": 1776,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 1196,
+    "low": 1098,
+    "high": 1384,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 1339,
+    "low": 1224,
+    "high": 1633,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2232,
+    "low": 1675,
+    "high": 2353,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1687,
+    "low": 1343,
+    "high": 2024,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1424,
+    "low": 1308,
+    "high": 1778,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1982,
+    "low": 1886,
+    "high": 2895,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 1517,
+    "low": 1286,
+    "high": 1871,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "all",
+    "month": null,
+    "count": 767,
+    "low": 694,
+    "high": 1044,
+    "games": 29,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 703,
+    "low": 630,
+    "high": 832,
+    "games": 15,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 731,
+    "low": 675,
+    "high": 797,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 703,
+    "low": 686,
+    "high": 1011,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 641,
+    "low": 604,
+    "high": 755,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1088,
+    "low": 1066,
+    "high": 1344,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 856,
+    "low": 768,
+    "high": 1314,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "venueId": "tudor-fieldhouse",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 748,
+    "low": 742,
+    "high": 826,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 15890,
+    "low": 15592,
+    "high": 16317,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18055,
+    "low": 16790,
+    "high": 18055,
+    "games": 65,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17544,
+    "low": 16755,
+    "high": 18055,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 16417,
+    "low": 16148,
+    "high": 18055,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18055,
+    "low": 17434,
+    "high": 18055,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 25,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 18055,
+    "low": 17694,
+    "high": 18055,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 18055,
+    "low": 18055,
+    "high": 18070,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18055,
+    "low": 16691,
+    "high": 18055,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18055,
+    "low": 17079,
+    "high": 18055,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "venueId": "toyota-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 18055,
+    "low": 18055,
+    "high": 18055,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 3549,
+    "low": 2597,
+    "high": 4547,
+    "games": 220,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 3984,
+    "low": 3649,
+    "high": 4276,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2576,
+    "low": 2275,
+    "high": 3027,
+    "games": 104,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 2452,
+    "low": 2201,
+    "high": 2581,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 2736,
+    "low": 2561,
+    "high": 2936,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 3129,
+    "low": 2922,
+    "high": 3490,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 2684,
+    "low": 2421,
+    "high": 3064,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 2315,
+    "low": 2017,
+    "high": 2447,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 2355,
+    "low": 2182,
+    "high": 2903,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 4458,
+    "low": 4037,
+    "high": 5086,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 4047,
+    "low": 4033,
+    "high": 4782,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 4909,
+    "low": 4308,
+    "high": 5001,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 4513,
+    "low": 4097,
+    "high": 5004,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 4165,
+    "low": 4007,
+    "high": 4302,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 4877,
+    "low": 4076,
+    "high": 5337,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 4816,
+    "low": 4615,
+    "high": 5117,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 4502,
+    "low": 3870,
+    "high": 5002,
+    "games": 42,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 4574,
+    "low": 4268,
+    "high": 5180,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 4449,
+    "low": 3570,
+    "high": 4953,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 4083,
+    "low": 3466,
+    "high": 4431,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 4515,
+    "low": 3774,
+    "high": 4706,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 4412,
+    "low": 4021,
+    "high": 4684,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 5139,
+    "low": 5102,
+    "high": 5153,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3887,
+    "low": 3467,
+    "high": 4811,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 5238,
+    "low": 4345,
+    "high": 5721,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 3770,
+    "low": 3658,
+    "high": 4333,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 4465,
+    "low": 3694,
+    "high": 4574,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 3308,
+    "low": 3303,
+    "high": 3391,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 3199,
+    "low": 3090,
+    "high": 3570,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "venueId": "constellation-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 4502,
+    "low": 4071,
+    "high": 5148,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "venueId": "reliant-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 71133,
+    "low": 70683,
+    "high": 71413,
+    "games": 23,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "venueId": "reliant-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 71412,
+    "low": 71286,
+    "high": 71496,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "venueId": "reliant-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 69845,
+    "low": 67554,
+    "high": 69873,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "venueId": "reliant-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 71517,
+    "low": 71174,
+    "high": 71531,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "venueId": "reliant-stadium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 71517,
+    "low": 71174,
+    "high": 71531,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "venueId": "reliant-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 71133,
+    "low": 70683,
+    "high": 71390,
+    "games": 19,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "venueId": "reliant-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 71399,
+    "low": 71380,
+    "high": 71427,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "venueId": "reliant-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 70785,
+    "low": 70501,
+    "high": 71190,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "venueId": "reliant-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 71191,
+    "low": 71142,
+    "high": 71333,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texas-southern-football",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 6464,
+    "low": 4240,
+    "high": 8467,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texas-southern-football",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 13173,
+    "low": 9710,
+    "high": 15722,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texas-southern-football",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6916,
+    "low": 5000,
+    "high": 8956,
+    "games": 9,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texas-southern-football",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 8956,
+    "low": 7000,
+    "high": 10029,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texas-southern-football",
+    "venueId": "shell-energy-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 4997,
+    "low": 3858,
+    "high": 6237,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-football",
+    "venueId": "tdecu-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 33029,
+    "low": 28225,
+    "high": 35295,
+    "games": 16,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-football",
+    "venueId": "tdecu-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 28150,
+    "low": 26950,
+    "high": 33006,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-football",
+    "venueId": "tdecu-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 32379,
+    "low": 28172,
+    "high": 34861,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-football",
+    "venueId": "tdecu-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 31595,
+    "low": 27394,
+    "high": 35295,
+    "games": 4,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-football",
+    "venueId": "tdecu-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 35671,
+    "low": 28464,
+    "high": 42808,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-football",
+    "venueId": "tdecu-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 32379,
+    "low": 26500,
+    "high": 34101,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 7035,
+    "low": 7035,
+    "high": 7231,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 7035,
+    "low": 6934,
+    "high": 7035,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 7035,
+    "low": 7035,
+    "high": 7132,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 7035,
+    "low": 7035,
+    "high": 7035,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 7035,
+    "low": 7035,
+    "high": 7205,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 7035,
+    "low": 7035,
+    "high": 7052,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 7035,
+    "low": 7035,
+    "high": 7128,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7122,
+    "low": 7035,
+    "high": 7382,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 7110,
+    "low": 7035,
+    "high": 7235,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 7377,
+    "low": 7180,
+    "high": 7891,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "fertitta-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 7035,
+    "low": 7035,
+    "high": 7057,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "toyota-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 7121,
+    "low": 7011,
+    "high": 9637,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "venueId": "toyota-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7121,
+    "low": 7011,
+    "high": 9637,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "venueId": "fertitta-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 1101,
+    "low": 860,
+    "high": 1209,
+    "games": 28,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "venueId": "fertitta-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1101,
+    "low": 704,
+    "high": 1219,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "venueId": "fertitta-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 613,
+    "low": 612,
+    "high": 1004,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "venueId": "fertitta-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 1098,
+    "low": 1037,
+    "high": 1143,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "venueId": "fertitta-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 1180,
+    "low": 947,
+    "high": 1355,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "venueId": "fertitta-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 1075,
+    "low": 904,
+    "high": 1204,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "venueId": "fertitta-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 1198,
+    "low": 1050,
+    "high": 1554,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "venueId": "fertitta-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 925,
+    "low": 824,
+    "high": 1122,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "venueId": "fertitta-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 864,
+    "low": 808,
+    "high": 1045,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
     "metroId": "la",
     "teamId": "angel-city",
     "venueId": "bmo-stadium",
@@ -40370,6 +42386,34 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "games": 3
   },
   {
+    "metroId": "houston",
+    "teamId": "pvamu-football",
+    "season": 2026,
+    "level": 1.737,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "season": 2026,
+    "level": 0.792,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "season": 2026,
+    "level": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-football",
+    "season": 2026,
+    "level": 0.91,
+    "games": 3
+  },
+  {
     "metroId": "la",
     "teamId": "galaxy",
     "season": 2026,
@@ -47351,6 +49395,895 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "valkyries",
     "ratio": 0.976,
     "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "angels",
+    "ratio": 0.915,
+    "games": 21
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "athletics",
+    "ratio": 0.926,
+    "games": 19
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "blue-jays",
+    "ratio": 0.939,
+    "games": 9
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "braves",
+    "ratio": 1.014,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "brewers",
+    "ratio": 0.938,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "cardinals",
+    "ratio": 0.958,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "d-backs",
+    "ratio": 0.96,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "dodgers",
+    "ratio": 1.136,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "guardians",
+    "ratio": 0.964,
+    "games": 9
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "mariners",
+    "ratio": 0.98,
+    "games": 20
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "marlins",
+    "ratio": 0.935,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "orioles",
+    "ratio": 0.919,
+    "games": 9
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "pirates",
+    "ratio": 0.947,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "rangers",
+    "ratio": 1.004,
+    "games": 18
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "rays",
+    "ratio": 0.952,
+    "games": 10
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "red-sox",
+    "ratio": 1.002,
+    "games": 9
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "rockies",
+    "ratio": 1.021,
+    "games": 8
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "royals",
+    "ratio": 0.966,
+    "games": 10
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "tigers",
+    "ratio": 1.009,
+    "games": 9
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "twins",
+    "ratio": 0.958,
+    "games": 9
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "white-sox",
+    "ratio": 0.871,
+    "games": 10
+  },
+  {
+    "metroId": "houston",
+    "teamId": "astros",
+    "opponent": "yankees",
+    "ratio": 1.025,
+    "games": 10
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "angel-city",
+    "ratio": 0.966,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "bay",
+    "ratio": 1.054,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "chicago",
+    "ratio": 0.956,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "gotham",
+    "ratio": 1.026,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "kansas-city",
+    "ratio": 1.041,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "louisville",
+    "ratio": 0.99,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "north-carolina",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "san-diego",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "seattle",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "utah",
+    "ratio": 0.979,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dash",
+    "opponent": "washington",
+    "ratio": 1.122,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "opponent": "colorado",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "opponent": "lafc",
+    "ratio": 1.034,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "opponent": "portland",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "opponent": "san-diego",
+    "ratio": 1.025,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "opponent": "seattle",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "dynamo",
+    "opponent": "vancouver",
+    "ratio": 1.008,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "pvamu-football",
+    "opponent": "alabama-st",
+    "ratio": 0.963,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "pvamu-football",
+    "opponent": "ar-pine-bluff",
+    "ratio": 1.228,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "pvamu-football",
+    "opponent": "miss-valley-st",
+    "ratio": 0.871,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "pvamu-football",
+    "opponent": "southern",
+    "ratio": 1.255,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "opponent": "fau",
+    "ratio": 1.019,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "opponent": "houston",
+    "ratio": 1.201,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "opponent": "texas-southern",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "opponent": "uconn",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-football",
+    "opponent": "utsa",
+    "ratio": 0.924,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "charlotte",
+    "ratio": 0.931,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "east-carolina",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "fau",
+    "ratio": 0.92,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "memphis",
+    "ratio": 1.162,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "north-texas",
+    "ratio": 1.072,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "prairie-view",
+    "ratio": 1.071,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "south-florida",
+    "ratio": 0.977,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "temple",
+    "ratio": 0.916,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "tulsa",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-mbb",
+    "opponent": "utsa",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "opponent": "north-texas",
+    "ratio": 1.157,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "opponent": "sam-houston",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "opponent": "south-florida",
+    "ratio": 1.153,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "opponent": "tulane",
+    "ratio": 1.11,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "opponent": "tulsa",
+    "ratio": 1.125,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "opponent": "uab",
+    "ratio": 1.052,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rice-wbb",
+    "opponent": "utsa",
+    "ratio": 1.128,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "76ers",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "bucks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "bulls",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "cavaliers",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "celtics",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "clippers",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "grizzlies",
+    "ratio": 1.001,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "hawks",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "heat",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "hornets",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "jazz",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "kings",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "knicks",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "lakers",
+    "ratio": 1.017,
+    "games": 5
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "magic",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "mavericks",
+    "ratio": 1.01,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "nets",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "nuggets",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "pacers",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "pelicans",
+    "ratio": 0.995,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "pistons",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "raptors",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "spurs",
+    "ratio": 0.992,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "suns",
+    "ratio": 0.993,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "thunder",
+    "ratio": 0.994,
+    "games": 5
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "timberwolves",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "trail-blazers",
+    "ratio": 0.972,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "warriors",
+    "ratio": 1.006,
+    "games": 6
+  },
+  {
+    "metroId": "houston",
+    "teamId": "rockets",
+    "opponent": "wizards",
+    "ratio": 1.026,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "aces",
+    "ratio": 1.019,
+    "games": 18
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "aviators",
+    "ratio": 1.033,
+    "games": 29
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "baseball-club",
+    "ratio": 1.079,
+    "games": 12
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "bees",
+    "ratio": 0.944,
+    "games": 21
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "chihuahuas",
+    "ratio": 1.03,
+    "games": 18
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "comets",
+    "ratio": 0.988,
+    "games": 21
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "express",
+    "ratio": 1.083,
+    "games": 33
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "isotopes",
+    "ratio": 1.011,
+    "games": 30
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "rainiers",
+    "ratio": 0.942,
+    "games": 18
+  },
+  {
+    "metroId": "houston",
+    "teamId": "space-cowboys",
+    "opponent": "river-cats",
+    "ratio": 0.951,
+    "games": 17
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "opponent": "bills",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "opponent": "broncos",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "opponent": "buccaneers",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "opponent": "cardinals",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "opponent": "colts",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "opponent": "jaguars",
+    "ratio": 0.999,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texans",
+    "opponent": "titans",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "texas-southern-football",
+    "opponent": "alcorn-st",
+    "ratio": 0.895,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-football",
+    "opponent": "tcu",
+    "ratio": 0.995,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-football",
+    "opponent": "west-virginia",
+    "ratio": 0.919,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "baylor",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "cincinnati",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "iowa-state",
+    "ratio": 1.009,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "jackson-st",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "kansas",
+    "ratio": 1.022,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "oklahoma-st",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "texas-a-m-cc",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "texas-tech",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "ucf",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-mbb",
+    "opponent": "west-virginia",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "opponent": "kansas-st",
+    "ratio": 1.184,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "opponent": "texas-tech",
+    "ratio": 1.132,
+    "games": 2
+  },
+  {
+    "metroId": "houston",
+    "teamId": "uh-wbb",
+    "opponent": "ucf",
+    "ratio": 1.021,
+    "games": 2
   },
   {
     "metroId": "la",

@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "teamId": "texas-southern-football",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "texas-southern-football",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "18:00",
+      "opponent": "Alabama St",
+      "venueId": "shell-energy-stadium",
+      "attendance": 6742,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2022,
+      "date": "2022-11-05",
+      "start": "18:00",
+      "opponent": "Jackson St",
+      "venueId": "shell-energy-stadium",
+      "attendance": 21092,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "18:00",
+      "opponent": "Grambling",
+      "venueId": "shell-energy-stadium",
+      "attendance": 8372,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2023,
+      "date": "2023-09-02",
+      "start": "19:00",
+      "opponent": "Prairie View",
+      "venueId": "shell-energy-stadium",
+      "attendance": 18271,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2023,
+      "date": "2023-10-21",
+      "start": "19:00",
+      "opponent": "Florida A&M",
+      "venueId": "shell-energy-stadium",
+      "attendance": 8956,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2023,
+      "date": "2023-11-12",
+      "start": "14:00",
+      "opponent": "Alcorn St",
+      "venueId": "shell-energy-stadium",
+      "attendance": 3987,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "14:00",
+      "opponent": "AR-Pine Bluff",
+      "venueId": "shell-energy-stadium",
+      "attendance": 3482,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "18:00",
+      "opponent": "Jackson St",
+      "venueId": "shell-energy-stadium",
+      "attendance": 13173,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2024,
+      "date": "2024-10-05",
+      "start": "14:00",
+      "opponent": "VA Lynchburg",
+      "venueId": "shell-energy-stadium",
+      "attendance": 7000,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "18:00",
+      "opponent": "Southern",
+      "venueId": "shell-energy-stadium",
+      "attendance": 14007,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2024,
+      "date": "2024-10-26",
+      "start": "18:00",
+      "opponent": "Grambling",
+      "venueId": "shell-energy-stadium",
+      "attendance": 10029,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "14:00",
+      "opponent": "Bethune",
+      "venueId": "shell-energy-stadium",
+      "attendance": 6916,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "18:00",
+      "opponent": "Lamar",
+      "venueId": "shell-energy-stadium",
+      "attendance": 6247,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2025,
+      "date": "2025-10-18",
+      "start": "13:00",
+      "opponent": "Lynchburg",
+      "venueId": "shell-energy-stadium",
+      "attendance": 5000,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "14:00",
+      "opponent": "Alcorn St",
+      "venueId": "shell-energy-stadium",
+      "attendance": 3983,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "14:00",
+      "opponent": "Alabama A&M",
+      "venueId": "shell-energy-stadium",
+      "attendance": 6011,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "texas-southern-football",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "18:00",
+      "opponent": "NC Central",
+      "venueId": "shell-energy-stadium",
+      "attendance": 8931,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

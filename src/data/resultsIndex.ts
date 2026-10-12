@@ -899,6 +899,53 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "12:30"
   },
   {
+    "eventId": "2026-10-10-espn-pvamu-football-401868968",
+    "metroId": "houston",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "pvamu-panther-stadium",
+    "homeTeamId": "pvamu-football",
+    "home": {
+      "name": "Prairie View",
+      "score": 14
+    },
+    "away": {
+      "name": "Southern",
+      "score": 28
+    },
+    "attendance": 9410,
+    "capturedAt": "2026-10-12T08:17:13.823Z",
+    "duration": {
+      "minutes": 208,
+      "kind": "estimated"
+    },
+    "startedAt": "16:06"
+  },
+  {
+    "eventId": "2026-10-10-espn-texas-southern-football-401868966",
+    "metroId": "houston",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "shell-energy-stadium",
+    "homeTeamId": "texas-southern-football",
+    "home": {
+      "name": "Texas Southern",
+      "score": 34
+    },
+    "away": {
+      "name": "Miss Valley St",
+      "score": 38
+    },
+    "capturedAt": "2026-10-12T08:17:13.823Z",
+    "duration": {
+      "minutes": 235,
+      "kind": "estimated"
+    },
+    "startedAt": "15:04"
+  },
+  {
     "eventId": "2026-10-10-espn-sporting-kc-761855",
     "metroId": "kansas-city",
     "date": "2026-10-10",

@@ -36,6 +36,7 @@ export const SCHEDULE_SNAPSHOTS: readonly ScheduleSnapshotSpan[] = [
   { metroId: 'dallas-fort-worth', capturedOn: '2026-10-10', from: '2026-10-10', through: '2026-10-24', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'dallas-fort-worth', capturedOn: '2026-10-11', from: '2026-10-11', through: '2026-10-25', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'kansas-city', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed'] },
+  { metroId: 'houston', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed'] },
   { metroId: 'la', capturedOn: '2026-10-04', from: '2026-10-04', through: '2026-10-18', sources: ['mlb', 'espn', 'seed'] },
   { metroId: 'la', capturedOn: '2026-10-05', from: '2026-10-05', through: '2026-10-19', sources: ['mlb', 'espn', 'seed'] },
   { metroId: 'la', capturedOn: '2026-10-06', from: '2026-10-06', through: '2026-10-20', sources: ['mlb', 'espn', 'seed', 'ticketmaster'] },
