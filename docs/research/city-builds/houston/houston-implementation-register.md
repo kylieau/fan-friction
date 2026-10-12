@@ -81,6 +81,14 @@ Ids were checked against the live schedule, not copied from memory.
 
 Texas Southern's app id is `texas-southern-football`. Nashville already uses `tsu-football` for Tennessee State, so the two schools do not share an id.
 
+## Checks (Oct 12, 2026)
+
+- `npm run build` passed (type-check and production build).
+- `npm run city-build-check` passed, including Houston.
+- `node scripts/storage-check.mjs` passed.
+- `package-lock.json` is unchanged from main.
+- Phone-size check: Houston can be chosen as home. The Oct 17 date shows four events (Shell Energy Stadium, TDECU Stadium, First Community Stadium, Panther Stadium at Blackshear Field). Opening the Dynamo card did not crash. Oct 12 itself has no listing, so that date has no pins.
+
 ## Collected data
 
 - Attendance files: `data/attendance/houston/`, 1,443 games across the 14 teams above.
