@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "metroName": "Sacramento",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T08:18:45.827Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 6
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-13-espn-sacramento-kings-401901826",
+      "metroId": "sacramento",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sac Kings vs. Trail Blazers",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sacramento-kings",
+        "away": "trail-blazers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16016,
+        "low": 15130,
+        "high": 16362,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2027",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 5 games, 2025–2027."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-sac-state-football-401866445",
+      "metroId": "sacramento",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sacramento St vs. Ohio",
+      "place": {
+        "type": "venue",
+        "venueId": "hornet-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sac-state-football",
+        "away": "ohio"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15608,
+        "low": 14991,
+        "high": 16203,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-23-espn-sacramento-kings-401909852",
+      "metroId": "sacramento",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sac Kings vs. Trail Blazers",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sacramento-kings",
+        "away": "trail-blazers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 16369,
+        "low": 16158,
+        "high": 17713,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-uc-davis-football-401868132",
+      "metroId": "sacramento",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "kind": "game",
+      "title": "UC Davis vs. N Colorado",
+      "place": {
+        "type": "venue",
+        "venueId": "uc-davis-health-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "uc-davis-football",
+        "away": "n-colorado"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 9122,
+        "low": 8957,
+        "high": 9387,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-sacramento-republic-401842309",
+      "metroId": "sacramento",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Republic FC vs. Roots",
+      "place": {
+        "type": "venue",
+        "venueId": "heart-health-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "sacramento-republic",
+        "away": "oakland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12240,
+        "low": 12240,
+        "high": 12240,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-sacramento-kings-401909867",
+      "metroId": "sacramento",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Sac Kings vs. Grizzlies",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sacramento-kings",
+        "away": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15519,
+        "low": 14902,
+        "high": 16348,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 17 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-13-espn-sacramento-kings-401901826",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16016,
+        "low": 15130,
+        "high": 16362
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-sac-state-football-401866445",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15608,
+        "low": 14991,
+        "high": 16203
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-sacramento-kings-401909852",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16369,
+        "low": 16158,
+        "high": 17713
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-uc-davis-football-401868132",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Republic FC vs. Roots 18 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9122,
+        "low": 8957,
+        "high": 9387
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-sacramento-republic-401842309",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "UC Davis vs. N Colorado 18 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12240,
+        "low": 12240,
+        "high": 12240
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-sacramento-kings-401909867",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15519,
+        "low": 14902,
+        "high": 16348
+      }
+    }
+  ]
+}

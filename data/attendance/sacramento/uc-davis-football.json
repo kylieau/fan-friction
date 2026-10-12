@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "teamId": "uc-davis-football",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "uc-davis-football",
+      "season": 2023,
+      "date": "2023-09-23",
+      "start": "19:00",
+      "opponent": "E Washington",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 14724,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2023,
+      "date": "2023-10-07",
+      "start": "16:00",
+      "opponent": "Montana",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 9576,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "16:00",
+      "opponent": "Portland St",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 8945,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "12:00",
+      "opponent": "Sacramento St",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 11622,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2024,
+      "date": "2024-09-07",
+      "start": "19:00",
+      "opponent": "East Texas A&M",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 8743,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2024,
+      "date": "2024-09-21",
+      "start": "19:00",
+      "opponent": "Utah Tech",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 14832,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "19:00",
+      "opponent": "Idaho",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 8921,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "16:00",
+      "opponent": "Cal Poly",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 10515,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2024,
+      "date": "2024-11-02",
+      "start": "13:00",
+      "opponent": "N Colorado",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 10638,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2024,
+      "date": "2024-11-16",
+      "start": "17:00",
+      "opponent": "Montana St",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 13947,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2024,
+      "date": "2024-12-07",
+      "start": "13:00",
+      "opponent": "Illinois St",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 6317,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2025,
+      "date": "2025-09-20",
+      "start": "19:00",
+      "opponent": "Southern Utah",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 17217,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "19:00",
+      "opponent": "Weber St",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 12238,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2025,
+      "date": "2025-10-11",
+      "start": "16:00",
+      "opponent": "N Arizona",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 9937,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "13:00",
+      "opponent": "Idaho St",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 10973,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "13:00",
+      "opponent": "Sacramento St",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 14590,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2025,
+      "date": "2025-12-06",
+      "start": "19:00",
+      "opponent": "Rhode Island",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 8525,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2025,
+      "date": "2025-12-13",
+      "start": "14:00",
+      "opponent": "Illinois St",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 9216,
+      "kind": "announced",
+      "postseason": true,
+      "round": "FCS Championship - Quarterfinals",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2026,
+      "date": "2026-09-19",
+      "start": "19:00",
+      "opponent": "Stetson",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 15270,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "19:00",
+      "opponent": "Montana",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 11238,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "uc-davis-football",
+      "season": 2026,
+      "date": "2026-10-03",
+      "start": "19:30",
+      "opponent": "E Washington",
+      "venueId": "uc-davis-health-stadium",
+      "attendance": 8677,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

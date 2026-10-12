@@ -32920,5 +32920,119 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "low": 18594,
       "high": 18750
     }
+  },
+  {
+    "metroId": "sacramento",
+    "eventId": "2026-10-13-espn-sacramento-kings-401901826",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:18:45.827Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16016,
+      "low": 15130,
+      "high": 16362
+    }
+  },
+  {
+    "metroId": "sacramento",
+    "eventId": "2026-10-17-espn-sac-state-football-401866445",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:18:45.827Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15608,
+      "low": 14991,
+      "high": 16203
+    }
+  },
+  {
+    "metroId": "sacramento",
+    "eventId": "2026-10-23-espn-sacramento-kings-401909852",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:18:45.827Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16369,
+      "low": 16158,
+      "high": 17713
+    }
+  },
+  {
+    "metroId": "sacramento",
+    "eventId": "2026-10-24-espn-sacramento-republic-401842309",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:18:45.827Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "UC Davis vs. N Colorado 18 mi away, same hours."
+    },
+    "draw": {
+      "count": 12240,
+      "low": 12240,
+      "high": 12240
+    }
+  },
+  {
+    "metroId": "sacramento",
+    "eventId": "2026-10-24-espn-uc-davis-football-401868132",
+    "date": "2026-10-24",
+    "start": "16:00",
+    "capturedAt": "2026-10-12T08:18:45.827Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Republic FC vs. Roots 18 mi away, same hours."
+    },
+    "draw": {
+      "count": 9122,
+      "low": 8957,
+      "high": 9387
+    }
+  },
+  {
+    "metroId": "sacramento",
+    "eventId": "2026-10-25-espn-sacramento-kings-401909867",
+    "date": "2026-10-25",
+    "start": "18:00",
+    "capturedAt": "2026-10-12T08:18:45.827Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 15519,
+      "low": 14902,
+      "high": 16348
+    }
   }
 ];

@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -125,12 +125,15 @@ export const METROS: Record<string, Metro> = {
     center: [-112.10, 33.48],
     zoom: 10.2,
   },
+  // Covered Oct 12, 2026 (docs/research/city-builds/sacramento/sacramento-venue-table-answer.md):
+  // Sacramento–Roseville–Folsom MSA (Sacramento, Placer, Yolo, El Dorado) plus Wheatland in Yuba as a named edge.
+  // One frame holds downtown, West Sacramento, Cal Expo and Sac State; Davis, Roseville, Lincoln and Wheatland sit off it.
   sacramento: {
     id: 'sacramento', code: 'SAC',
     name: 'Sacramento',
     timeZone: 'America/Los_Angeles',
-    center: [-121.4996, 38.5802],
-    zoom: 12,
+    center: [-121.47, 38.57],
+    zoom: 10.8,
   },
   'san-diego': {
     id: 'san-diego', code: 'SD',

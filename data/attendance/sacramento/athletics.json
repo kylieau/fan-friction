@@ -1,0 +1,3178 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "teamId": "athletics",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-03-31",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "sutter-health-park",
+      "attendance": 12119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Rickey Henderson Rally Towel"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Trucker Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-01",
+      "start": "19:05",
+      "opponent": "Cubs",
+      "venueId": "sutter-health-park",
+      "attendance": 10095,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 3
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Magnet Schedule"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-02",
+      "start": "12:35",
+      "opponent": "Cubs",
+      "venueId": "sutter-health-park",
+      "attendance": 9342,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 4
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Rickey Henderson T-Shirt"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-07",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "sutter-health-park",
+      "attendance": 9502,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-08",
+      "start": "19:05",
+      "opponent": "Padres",
+      "venueId": "sutter-health-park",
+      "attendance": 9018,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-09",
+      "start": "12:35",
+      "opponent": "Padres",
+      "venueId": "sutter-health-park",
+      "attendance": 10553,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-11",
+      "start": "19:05",
+      "opponent": "Mets",
+      "venueId": "sutter-health-park",
+      "attendance": 9632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-12",
+      "start": "13:05",
+      "opponent": "Mets",
+      "venueId": "sutter-health-park",
+      "attendance": 10133,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-13",
+      "start": "13:05",
+      "opponent": "Mets",
+      "venueId": "sutter-health-park",
+      "attendance": 10036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-22",
+      "start": "19:05",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 10059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 12
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-23",
+      "start": "19:05",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 9806,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-24",
+      "start": "19:05",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 9008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-25",
+      "start": "19:05",
+      "opponent": "White Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 10283,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-26",
+      "start": "13:05",
+      "opponent": "White Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 8832,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 13
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Basketball Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-04-27",
+      "start": "13:05",
+      "opponent": "White Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 9127,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-05",
+      "start": "19:05",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 10257,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-06",
+      "start": "19:05",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 9615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Straw Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-07",
+      "start": "12:35",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 9697,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-09",
+      "start": "19:05",
+      "opponent": "Yankees",
+      "venueId": "sutter-health-park",
+      "attendance": 12049,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-10",
+      "start": "13:05",
+      "opponent": "Yankees",
+      "venueId": "sutter-health-park",
+      "attendance": 12113,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-11",
+      "start": "13:05",
+      "opponent": "Yankees",
+      "venueId": "sutter-health-park",
+      "attendance": 12224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Mother's Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-19",
+      "start": "19:05",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 10519,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 25
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Armed Forces Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "19:05",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 10028,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Asian American & Pacific Islander Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "19:05",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 10094,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-22",
+      "start": "12:35",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 10321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Cooler Bag"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-23",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "sutter-health-park",
+      "attendance": 10052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-24",
+      "start": "19:05",
+      "opponent": "Phillies",
+      "venueId": "sutter-health-park",
+      "attendance": 10090,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-05-25",
+      "start": "13:05",
+      "opponent": "Phillies",
+      "venueId": "sutter-health-park",
+      "attendance": 10068,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-02",
+      "start": "19:05",
+      "opponent": "Twins",
+      "venueId": "sutter-health-park",
+      "attendance": 8922,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Lou Gehrig Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "19:05",
+      "opponent": "Twins",
+      "venueId": "sutter-health-park",
+      "attendance": 8487,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "19:05",
+      "opponent": "Twins",
+      "venueId": "sutter-health-park",
+      "attendance": 9211,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": "12:35",
+      "opponent": "Twins",
+      "venueId": "sutter-health-park",
+      "attendance": 8877,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-06",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "sutter-health-park",
+      "attendance": 8424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 40
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-07",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "sutter-health-park",
+      "attendance": 9185,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pop Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Glenn Burke Pride Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-08",
+      "start": "13:05",
+      "opponent": "Orioles",
+      "venueId": "sutter-health-park",
+      "attendance": 8836,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Brent Rooker Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-16",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 8766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Prostate Cancer Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 8315,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 8803,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 8670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "African American Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Juneteenth"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-20",
+      "start": "19:05",
+      "opponent": "Guardians",
+      "venueId": "sutter-health-park",
+      "attendance": 8578,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Limited-Edition Denzel Clarke Poster"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-21",
+      "start": "19:05",
+      "opponent": "Guardians",
+      "venueId": "sutter-health-park",
+      "attendance": 8383,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-06-22",
+      "start": "13:05",
+      "opponent": "Guardians",
+      "venueId": "sutter-health-park",
+      "attendance": 10215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mason Miller Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "19:05",
+      "opponent": "Giants",
+      "venueId": "sutter-health-park",
+      "attendance": 12322,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Patriotic Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fourth of July"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "19:05",
+      "opponent": "Giants",
+      "venueId": "sutter-health-park",
+      "attendance": 12298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "19:05",
+      "opponent": "Giants",
+      "venueId": "sutter-health-park",
+      "attendance": 12180,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-08",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "sutter-health-park",
+      "attendance": 8620,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-09",
+      "start": "19:05",
+      "opponent": "Braves",
+      "venueId": "sutter-health-park",
+      "attendance": 9273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-10",
+      "start": "18:05",
+      "opponent": "Braves",
+      "venueId": "sutter-health-park",
+      "attendance": 10258,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Lawrence Butler Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-11",
+      "start": "19:05",
+      "opponent": "Blue Jays",
+      "venueId": "sutter-health-park",
+      "attendance": 7950,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-12",
+      "start": "19:05",
+      "opponent": "Blue Jays",
+      "venueId": "sutter-health-park",
+      "attendance": 8738,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-13",
+      "start": "13:05",
+      "opponent": "Blue Jays",
+      "venueId": "sutter-health-park",
+      "attendance": 8884,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 57
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-28",
+      "start": "19:05",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 9536,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-29",
+      "start": "19:05",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 8671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-07-30",
+      "start": "19:05",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 9165,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-01",
+      "start": "19:05",
+      "opponent": "D-backs",
+      "venueId": "sutter-health-park",
+      "attendance": 8730,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pregame Performance by NMIXX"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-02",
+      "start": "19:05",
+      "opponent": "D-backs",
+      "venueId": "sutter-health-park",
+      "attendance": 8687,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-03",
+      "start": "13:05",
+      "opponent": "D-backs",
+      "venueId": "sutter-health-park",
+      "attendance": 8830,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Backpack"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-11",
+      "start": "19:05",
+      "opponent": "Rays",
+      "venueId": "sutter-health-park",
+      "attendance": 7731,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "19:05",
+      "opponent": "Rays",
+      "venueId": "sutter-health-park",
+      "attendance": 8305,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "First Responders Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "19:05",
+      "opponent": "Rays",
+      "venueId": "sutter-health-park",
+      "attendance": 8275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "19:05",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 8484,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "19:05",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 10035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Country Postgame Fireworks"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "13:05",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 8876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 69
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-25",
+      "start": "19:05",
+      "opponent": "Tigers",
+      "venueId": "sutter-health-park",
+      "attendance": 8105,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "19:05",
+      "opponent": "Tigers",
+      "venueId": "sutter-health-park",
+      "attendance": 9043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "19:05",
+      "opponent": "Tigers",
+      "venueId": "sutter-health-park",
+      "attendance": 8551,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "19:05",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 8413,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "19:05",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 8941,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:05",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 8716,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-08",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 10079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 78
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Childhood Cancer Awareness Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "19:05",
+      "opponent": "Red Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 10066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 79
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Food Drive Presented by Yolo Transfer Moving & Storage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "12:35",
+      "opponent": "Red Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 9634,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Food Drive Presented by Yolo Transfer Moving & Storage"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "sutter-health-park",
+      "attendance": 8333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 80
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "19:05",
+      "opponent": "Reds",
+      "venueId": "sutter-health-park",
+      "attendance": 8758,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Athletics Hall of Fame: Class of 2025 Pregame Induction Ceremony"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "13:05",
+      "opponent": "Reds",
+      "venueId": "sutter-health-park",
+      "attendance": 8778,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "A's Throwback T-Shirt"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-23",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 9465,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Latin and Hispanic Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Roberto Clemente Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-24",
+      "start": "19:05",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 9753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-25",
+      "start": "12:35",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 8293,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-26",
+      "start": "19:05",
+      "opponent": "Royals",
+      "venueId": "sutter-health-park",
+      "attendance": 10543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 84
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Crewneck Sweatshirt"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "19:05",
+      "opponent": "Royals",
+      "venueId": "sutter-health-park",
+      "attendance": 10047,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 84
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Rock Postgame Fireworks"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "12:05",
+      "opponent": "Royals",
+      "venueId": "sutter-health-park",
+      "attendance": 8754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 85
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Topps Truck Tour Stop"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-03",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 12410,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Opening Day + Fireworks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Magnet Schedule"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-04",
+      "start": "13:05",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 12015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 5
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sacramento Baseball Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-05",
+      "start": "13:05",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 10085,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "First Glove"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-13",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 8344,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-14",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 8031,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-15",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 9252,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jackie Robinson Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jackie Robinson Day Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-16",
+      "start": "12:05",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 8764,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-17",
+      "start": "18:40",
+      "opponent": "White Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 12027,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Nick Kurtz Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-18",
+      "start": "13:05",
+      "opponent": "White Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 11131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sacramento Script Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-19",
+      "start": "13:05",
+      "opponent": "White Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 12070,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 10
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Stomper Plush Hat"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Scout Day - SOLD OUT"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "sutter-health-park",
+      "attendance": 9274,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "18:40",
+      "opponent": "Royals",
+      "venueId": "sutter-health-park",
+      "attendance": 9399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Pregame Perks = Surprises!"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-04-30",
+      "start": "12:05",
+      "opponent": "Royals",
+      "venueId": "sutter-health-park",
+      "attendance": 9333,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-01",
+      "start": "18:40",
+      "opponent": "Guardians",
+      "venueId": "sutter-health-park",
+      "attendance": 12122,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hello Kitty A's Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Asian American and Pacific Islander (AAPI) Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-02",
+      "start": "13:05",
+      "opponent": "Guardians",
+      "venueId": "sutter-health-park",
+      "attendance": 11390,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sacramento Basketball Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-03",
+      "start": "13:05",
+      "opponent": "Guardians",
+      "venueId": "sutter-health-park",
+      "attendance": 12194,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sliding Glove"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Youth Baseball & Softball Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "sutter-health-park",
+      "attendance": 11132,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 19
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "STAR WARS™ Grogu"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "18:40",
+      "opponent": "Cardinals",
+      "venueId": "sutter-health-park",
+      "attendance": 10182,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Military Appreciation Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-14",
+      "start": "12:05",
+      "opponent": "Cardinals",
+      "venueId": "sutter-health-park",
+      "attendance": 8975,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-15",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "sutter-health-park",
+      "attendance": 12348,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "K-Pop Fireworks (Postgame)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-16",
+      "start": "18:40",
+      "opponent": "Giants",
+      "venueId": "sutter-health-park",
+      "attendance": 12489,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "A's Clear Crossbody Bag"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-17",
+      "start": "13:05",
+      "opponent": "Giants",
+      "venueId": "sutter-health-park",
+      "attendance": 12541,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "A's Kids Socks"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-25",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 11194,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 26
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Memorial Day Military Giveaway: Camo Hat"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 9539,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Swim Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "12:05",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 9612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-29",
+      "start": "18:40",
+      "opponent": "Yankees",
+      "venueId": "sutter-health-park",
+      "attendance": 12254,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "19:05",
+      "opponent": "Yankees",
+      "venueId": "sutter-health-park",
+      "attendance": 12361,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Beach Towel"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-05-31",
+      "start": "13:05",
+      "opponent": "Yankees",
+      "venueId": "sutter-health-park",
+      "attendance": 12515,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 30
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Water Bottle"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "ALS Awareness Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-06-15",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "sutter-health-park",
+      "attendance": 10033,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-06-16",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "sutter-health-park",
+      "attendance": 8615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-06-17",
+      "start": "18:40",
+      "opponent": "Pirates",
+      "venueId": "sutter-health-park",
+      "attendance": 9024,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Glenn Burke Pride Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-06-18",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 9245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "75 Years of Topps Baseball Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-06-19",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 9687,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Juneteenth/African-American Heritage Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "History of Hip Hop Fireworks (Postgame)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-06-20",
+      "start": "19:05",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 11261,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Jacob Wilson Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-06-21",
+      "start": "13:05",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 12377,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Family 4-Pack - SOLD OUT!"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Father's Day Giveaway: Hawaiian Shirt"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-06-29",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "sutter-health-park",
+      "attendance": 12394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "sutter-health-park",
+      "attendance": 12387,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "18:40",
+      "opponent": "Dodgers",
+      "venueId": "sutter-health-park",
+      "attendance": 12592,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-03",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "sutter-health-park",
+      "attendance": 10312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Country Hat"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-04",
+      "start": "18:40",
+      "opponent": "Marlins",
+      "venueId": "sutter-health-park",
+      "attendance": 12532,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Patriotic Fireworks (Postgame)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "13:30",
+      "opponent": "Marlins",
+      "venueId": "sutter-health-park",
+      "attendance": 8686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 48
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Pool Float"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "18:40",
+      "opponent": "Nationals",
+      "venueId": "sutter-health-park",
+      "attendance": 11087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Championship Belt Bag Giveaway"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Wrestling Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "19:05",
+      "opponent": "Nationals",
+      "venueId": "sutter-health-park",
+      "attendance": 11138,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Short Sleeve Hoodie"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "13:05",
+      "opponent": "Nationals",
+      "venueId": "sutter-health-park",
+      "attendance": 9088,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Backyard Baseball T-Shirt"
+        },
+        {
+          "type": "Ticket Offer",
+          "name": "Camp Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-27",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 10486,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-28",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 10356,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Filipino Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-29",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 9674,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "18:40",
+      "opponent": "Red Sox",
+      "venueId": "sutter-health-park",
+      "attendance": 10246,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "sutter-health-park",
+      "attendance": 8926,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bravo Night featuring The Valley"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "18:40",
+      "opponent": "Tigers",
+      "venueId": "sutter-health-park",
+      "attendance": 10426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 65
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Nick Kurtz Superhero Poster"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "13:05",
+      "opponent": "Tigers",
+      "venueId": "sutter-health-park",
+      "attendance": 8237,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Buildable Tower Bridge"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-10",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "sutter-health-park",
+      "attendance": 7427,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "18:40",
+      "opponent": "Rays",
+      "venueId": "sutter-health-park",
+      "attendance": 8154,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 72
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "A's Sunglasses"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "12:05",
+      "opponent": "Rays",
+      "venueId": "sutter-health-park",
+      "attendance": 8287,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 73
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "125th Anniversary Commemorative Coin Set"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 8082,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Country Fireworks  (Postgame)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "18:40",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 10070,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Shea Langeliers Bobblehead"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "13:05",
+      "opponent": "Rangers",
+      "venueId": "sutter-health-park",
+      "attendance": 7343,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Headband"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-24",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "sutter-health-park",
+      "attendance": 8149,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 80
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "UC Davis Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "18:40",
+      "opponent": "Twins",
+      "venueId": "sutter-health-park",
+      "attendance": 8301,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Taiwanese Heritage Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "18:05",
+      "opponent": "Twins",
+      "venueId": "sutter-health-park",
+      "attendance": 9446,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "KPop Demon Hunters Night & Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "18:40",
+      "opponent": "Orioles",
+      "venueId": "sutter-health-park",
+      "attendance": 7228,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 81
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Mark Kotsay Bobblehead"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "19:05",
+      "opponent": "Orioles",
+      "venueId": "sutter-health-park",
+      "attendance": 10619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 82
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Sacramento Puffer Vest"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "13:05",
+      "opponent": "Orioles",
+      "venueId": "sutter-health-park",
+      "attendance": 7606,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Growth Chart"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-07",
+      "start": "19:05",
+      "opponent": "Blue Jays",
+      "venueId": "sutter-health-park",
+      "attendance": 7467,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 87
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-08",
+      "start": "18:40",
+      "opponent": "Blue Jays",
+      "venueId": "sutter-health-park",
+      "attendance": 7632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 87
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Sacramento State University Night"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-09",
+      "start": "12:05",
+      "opponent": "Blue Jays",
+      "venueId": "sutter-health-park",
+      "attendance": 7217,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 88
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 8682,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 88
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "First Responders Night"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "18:40",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 10289,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 88
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Athletics Hall of Fame Ceremony"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:05",
+      "opponent": "Mariners",
+      "venueId": "sutter-health-park",
+      "attendance": 9171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 89
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Stomper Shoulder Magnet Plush"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-22",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 7711,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 95
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-23",
+      "start": "18:40",
+      "opponent": "Angels",
+      "venueId": "sutter-health-park",
+      "attendance": 7430,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 95
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-24",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 9367,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 95
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Hispanic Heritage Night & A's Soccer Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 9012,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 96
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Home Run Happy Hour"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Fan Appreciation Weekend Fireworks (Postgame)"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "18:40",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 12025,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 96
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "A's Players Pins"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "athletics",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "12:05",
+      "opponent": "Astros",
+      "venueId": "sutter-health-park",
+      "attendance": 10022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 97
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Wiffle Ball Set"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Stompin' Sundays"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kids Run the Bases"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

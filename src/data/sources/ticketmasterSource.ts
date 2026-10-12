@@ -110,6 +110,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'heb-center-cedar-park', 'luedecke-arena', 'house-park', 'moody-center', 'myers-stadium', 'disch-falk-field',
   'gregory-gym', 'mccombs-field', 'bobcat-soccer-complex', 'bobcat-softball-stadium',
   'desert-diamond-arena', 'phoenix-raceway', 'firebird-motorsports-park',
+  // Sacramento rooms with no league feed: community-college football, racing, rodeo, and Sac State volleyball.
+  'hughes-stadium', 'all-american-speedway', 'dan-russell-rodeo-arena', 'sac-state-nest',
   'valley-fields', 'wilson-ice-arena', 'pettit-national-ice-center', 'buuck-field-house',
   'ozaukee-ice-center', 'schneider-stadium', 'time-of-grace-center', 'raabe-stadium',
   'dickies-arena', 'will-rogers-coliseum', 'cutx-event-center', 'grand-prairie-stadium', 'mansfield-stadium', 'cotton-bowl', 'toyota-stadium', 'comerica-center', 'texas-motor-speedway',

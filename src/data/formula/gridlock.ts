@@ -63,7 +63,9 @@ const SCALE = 7.5;
 // Vancouver is transit (research, Oct 12, 2026, docs/research/city-builds/vancouver/vancouver-city-type-answer.md), low confidence:
 // no measured attendee survey. Estimated car shares, including Hastings Park and Langley, stay in the research.
 // No venue override is wired (same rule as Milwaukee and Tampa). The transit spill stays 0.10; Hastings Park has no rapid transit.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit' };
+// Sacramento is a hub (research, Oct 12, 2026, docs/research/city-builds/sacramento/sacramento-city-type-answer.md):
+// downtown/riverfront and Cal Expo share bridges, ramps and lots. No venue carShare is wired; every split in that answer is estimated or a fallback.
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -155,6 +157,17 @@ const ZONE_NAMES: Record<string, string> = {
   'thunderbird-stadium': 'UBC',
   'war-memorial-gym': 'UBC',
   'chan-centre': 'UBC',
+  // Sacramento downtown / riverfront rooms within about 2 km, and the two campus clusters.
+  'golden-1-center': 'Downtown',
+  'sacramento-memorial-auditorium': 'Downtown',
+  'safe-credit-union-performing-arts-center': 'Downtown',
+  'ace-of-spades': 'Downtown',
+  'heart-health-park': 'Cal Expo',
+  'hornet-stadium': 'Sacramento State',
+  'hornet-pavilion': 'Sacramento State',
+  'sac-state-nest': 'Sacramento State',
+  'uc-davis-health-stadium': 'UC Davis',
+  'university-credit-union-center': 'UC Davis',
 };
 
 export interface Zone {

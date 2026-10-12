@@ -2015,5 +2015,24 @@ export const GAME_RESULTS: GameResult[] = [
     },
     "attendance": 3423,
     "capturedAt": "2026-10-12T08:19:11.748Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-sacramento-republic-401842277",
+    "metroId": "sacramento",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "heart-health-park",
+    "homeTeamId": "sacramento-republic",
+    "home": {
+      "name": "Republic FC",
+      "score": 1
+    },
+    "away": {
+      "name": "Switchbacks FC",
+      "score": 1
+    },
+    "attendance": 11569,
+    "capturedAt": "2026-10-12T08:18:46.808Z"
   }
 ];

@@ -3824,11 +3824,21 @@ export const VENUES: Record<string, Venue> = {
     id: 'golden-1-center',
     metroId: 'sacramento',
     names: [{ name: 'Golden 1 Center' }],
-    // Estimated by subtraction: the city put walking, biking and transit at 10–15% before opening (docs/research/topics/venue-egress-answer.md).
-    carShare: 0.87,
-    location: [-121.4996, 38.5802],
+    // No carShare: the Oct 12 city-type answer has no measured split (projected ~0.85 for Kings games). The earlier 0.87 was an estimate by subtraction.
+    location: [-121.4995008, 38.5801405],
     ticketmasterIds: ['KovZpZAEF76A'],
-    capacity: [{ seats: 17600, setup: 'basketball', note: 'About 17,600 for basketball' }],
+    capacity: [
+      {
+        seats: 17608,
+        setup: 'basketball',
+        note: 'Reported. Design figure 17,500, expandable to 19,000. Source: https://en.wikipedia.org/wiki/Golden_1_Center',
+      },
+      {
+        seats: 19000,
+        setup: 'concert',
+        note: 'Reported. Source: https://en.wikipedia.org/wiki/Golden_1_Center',
+      },
+    ],
     roof: 'indoor',
   },
   roadrunner: {
@@ -6008,6 +6018,290 @@ export const VENUES: Record<string, Venue> = {
     location: [-123.120792, 49.2805634],
     capacity: [{ seats: 990, setup: 'concert', note: 'Reported (BC Living): standing room. Also described as about 1,000. Not rounded up to 1,000.' }],
     roof: 'indoor',
+  },
+  // Sacramento (docs/research/city-builds/sacramento/, Oct 12, 2026). MSA plus Wheatland edge.
+  // No carShare overrides: every split in the city-type answer is estimated or a fallback.
+  // Coordinates from OpenStreetMap by name; rooms OSM does not separate are marked approximate.
+  'sutter-health-park': {
+    id: 'sutter-health-park',
+    metroId: 'sacramento',
+    names: [
+      { name: 'Raley Field' },
+      { name: 'Sutter Health Park', from: '2020-01-01' },
+    ],
+    location: [-121.5134097, 38.5803717],
+    capacity: [
+      {
+        seats: 13416,
+        setup: 'baseball',
+        note: 'Reported. 2025 team-official total (lawn and standing included). Fixed seats 10,624. Conflicts with Wikipedia 14,014 and a May 2026 report of 13,800. The 2020 rename date is the season after 2019; the day is not in the research. Source: https://www.abc10.com/article/sports/mlb/the-as/as-sacramento-sutter-health-park-attendance/103-82a2d4a0-eedc-4ae8-883f-0f8800e3d2c5',
+      },
+    ],
+    roof: 'open',
+  },
+  'hornet-stadium': {
+    id: 'hornet-stadium',
+    metroId: 'sacramento',
+    names: [
+      { name: 'Fred Anderson Field at Hornet Stadium' },
+      { name: 'Hornet Stadium' },
+    ],
+    location: [-121.4229535, 38.5556698],
+    capacity: [
+      {
+        seats: 21195,
+        setup: 'football',
+        note: 'Reported. Current stands described as temporary. Source: https://en.wikipedia.org/wiki/Hornet_Stadium_(Sacramento)',
+      },
+    ],
+    roof: 'open',
+  },
+  'heart-health-park': {
+    id: 'heart-health-park',
+    metroId: 'sacramento',
+    names: [
+      { name: 'Bonney Field' },
+      { name: "Papa Murphy's Park", from: '2017-03-09' },
+      { name: 'Heart Health Park', from: '2021-01-01' },
+    ],
+    location: [-121.4380099, 38.5913512],
+    capacity: [
+      {
+        seats: 8000,
+        setup: 'soccer',
+        note: 'Official (club, 2017): opened June 2014 at 8,000 seats. Source: https://www.sacrepublicfc.com/?p=9130',
+      },
+      {
+        seats: 11569,
+        setup: 'soccer',
+        fromYear: 2015,
+        note: 'Reported. Expanded 2015. Conflicts with club "over 11,500" (2017) and Cal Expo "about 12,000". A 25,000 concert listing is estimated and not used. The 2021 rename day is not in the research. Source: https://en.wikipedia.org/wiki/Heart_Health_Park',
+      },
+      {
+        seats: 14000,
+        setup: 'concert',
+        fromYear: 2017,
+        note: 'Official (club, 2017): concerts up to 14,000. Source: https://www.sacrepublicfc.com/?p=9130',
+      },
+    ],
+    roof: 'open',
+  },
+  'toyota-amphitheatre': {
+    id: 'toyota-amphitheatre',
+    metroId: 'sacramento',
+    names: [
+      { name: 'Sleep Train Amphitheatre' },
+      { name: 'Toyota Amphitheatre', from: '2015-03-01' },
+    ],
+    location: [-121.512912, 39.0311465],
+    capacity: [
+      {
+        seats: 18500,
+        setup: 'concert',
+        note: 'Official (Live Nation). About 8,000 reserved seats plus lawn; do not size a concert by the seats alone. Toyota naming announced March 2015; the day is not in the research. Wheatland, Yuba County, included edge outside the MSA. Source: https://livenationentertainment.com/?p=26244',
+      },
+    ],
+    roof: 'open',
+  },
+  'uc-davis-health-stadium': {
+    id: 'uc-davis-health-stadium',
+    metroId: 'sacramento',
+    names: [
+      { name: 'Aggie Stadium' },
+      { name: 'UC Davis Health Stadium', from: '2019-01-01' },
+    ],
+    location: [-121.762774, 38.5365564],
+    capacity: [
+      {
+        seats: 10743,
+        setup: 'football',
+        note: 'Official (athletics). Renamed 2019; the day is not in the research. Source: https://ucdavisaggies.com/facilities/?id=6',
+      },
+    ],
+    roof: 'open',
+  },
+  'university-credit-union-center': {
+    id: 'university-credit-union-center',
+    metroId: 'sacramento',
+    names: [
+      { name: 'The Pavilion' },
+      { name: 'Pavilion at ARC' },
+      { name: 'University Credit Union Center', from: '2021-07-01' },
+    ],
+    location: [-121.7596452, 38.5416786],
+    capacity: [
+      {
+        seats: 6003,
+        setup: 'basketball',
+        note: 'Official (athletics). Conflicts with reported 7,600 and 8,000. Renamed July 2021; the day is not in the research. Source: https://ucdavisaggies.com/facilities/?id=5',
+      },
+      {
+        seats: 5575,
+        setup: 'concert',
+        note: 'Reported (campus events). Source: https://ces.ucdavis.edu/ucenter',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'hughes-stadium': {
+    id: 'hughes-stadium',
+    metroId: 'sacramento',
+    names: [{ name: 'Hughes Stadium' }, { name: 'Charles C. Hughes Stadium' }],
+    location: [-121.4862621, 38.5407719],
+    capacity: [
+      {
+        seats: 25000,
+        setup: 'football',
+        note: 'Official (Sacramento City College). Conflicts with reported 20,311. A 2022 turf project said spectator capacity was unchanged. Rarely near capacity. Source: https://www.scc.losrios.edu/about-us/our-facilities/hughes-stadium',
+      },
+    ],
+    roof: 'open',
+  },
+  'thunder-valley-venue': {
+    id: 'thunder-valley-venue',
+    metroId: 'sacramento',
+    names: [{ name: 'The Venue at Thunder Valley' }],
+    // The indoor room has no separate OSM point; this is the resort.
+    location: [-121.3137366, 38.8403664],
+    capacity: [
+      {
+        seats: 4500,
+        setup: 'concert',
+        note: 'Reported. A reseller "1,000" is a listing error and is not used. Replaced the outdoor amphitheatre (last concert October 2022), which is not a current room. Coordinate is the resort, not a surveyed room point. Source: https://www.cbsnews.com/sacramento/news/thunder-valley-casino-announces-bruno-mars-performance',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'all-american-speedway': {
+    id: 'all-american-speedway',
+    metroId: 'sacramento',
+    names: [{ name: 'All American Speedway' }],
+    location: [-121.2921058, 38.7579863],
+    capacity: [
+      {
+        seats: 4000,
+        setup: 'racing',
+        note: 'Reported bleacher seats. A 2021 "20% capacity was about 1,500" implies about 7,500, which is derived and not used. Total spectator capacity is unresolved, so this stays under the friction line. Source: https://en.wikipedia.org/wiki/All_American_Speedway',
+      },
+    ],
+    roof: 'open',
+  },
+  'sacramento-memorial-auditorium': {
+    id: 'sacramento-memorial-auditorium',
+    metroId: 'sacramento',
+    names: [{ name: 'Sacramento Memorial Auditorium' }, { name: 'Memorial Auditorium' }],
+    location: [-121.4856188, 38.5789153],
+    capacity: [
+      {
+        seats: 3849,
+        setup: 'concert',
+        note: 'Reported. Conflicts with 3,867; the dedicated auditorium figure is used. Jean Runyon Little Theater (272) is not this room. Source: https://en.wikipedia.org/wiki/Sacramento_Memorial_Auditorium',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'hornet-pavilion': {
+    id: 'hornet-pavilion',
+    metroId: 'sacramento',
+    names: [{ name: 'Hornet Pavilion' }],
+    location: [-121.4234503, 38.5568456],
+    capacity: [
+      {
+        seats: 3000,
+        setup: 'basketball',
+        fromYear: 2025,
+        note: 'Official. Inside The WELL; opened November 2025. Coordinate is The WELL, not a surveyed court point. Source: https://hornetsports.com/facilities/hornet-pavilion/24',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'hard-rock-live-sacramento': {
+    id: 'hard-rock-live-sacramento',
+    metroId: 'sacramento',
+    names: [{ name: 'Hard Rock Live Sacramento' }, { name: 'Hard Rock Live' }],
+    // OSM has the casino, not a separate Hard Rock Live room. Wheatland edge, near Toyota Amphitheatre.
+    location: [-121.5118126, 39.0506909],
+    capacity: [
+      {
+        seats: 2500,
+        setup: 'concert',
+        note: 'Reported. 2,500 seated / 3,500 general admission; 3,500 is still under 5,000 and is not a second stored setup. The venue table\'s 2,500 link points at a Thunder Valley article, so this uses the city-type source. Coordinate is the casino, not a surveyed room point. Source: https://seminoletribune.org/?p=43708',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'safe-credit-union-performing-arts-center': {
+    id: 'safe-credit-union-performing-arts-center',
+    metroId: 'sacramento',
+    names: [
+      { name: 'Community Center Theater' },
+      { name: 'SAFE Credit Union Performing Arts Center', from: '2021-01-01' },
+    ],
+    location: [-121.4894149, 38.5771834],
+    capacity: [
+      {
+        seats: 2188,
+        setup: 'concert',
+        fromYear: 2021,
+        note: 'Official (City of Sacramento), reopened 2021. Conflicts with 2,193 (2021 city recap) and older 2,452. The reopen day is not in the venue table. Source: https://www.cityofsacramento.gov/ccs/safe-credit-union-performing-arts',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'sac-state-nest': {
+    id: 'sac-state-nest',
+    metroId: 'sacramento',
+    names: [{ name: 'The Nest' }, { name: 'Hornets Nest' }, { name: 'Colberg Court' }],
+    // South Gym inside Yosemite Hall. OSM knows the hall, not the gym.
+    location: [-121.4276643, 38.5625448],
+    capacity: [
+      {
+        seats: 1012,
+        setup: 'basketball',
+        note: 'Reported. Volleyball still plays here; basketball moved to Hornet Pavilion for 2025–26. Coordinate is Yosemite Hall. Source: https://en.wikipedia.org/wiki/2022%E2%80%9323_Sacramento_State_Hornets_men%27s_basketball_team',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'ace-of-spades': {
+    id: 'ace-of-spades',
+    metroId: 'sacramento',
+    names: [{ name: 'Ace of Spades' }],
+    location: [-121.4909477, 38.5699259],
+    capacity: [
+      {
+        seats: 1000,
+        setup: 'concert',
+        note: 'Reported. At the pre-list line. Source: https://sactoday.6amcity.com/city-guide/live/live-music-venues-sacramento-ca',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'quarry-park-amphitheater': {
+    id: 'quarry-park-amphitheater',
+    metroId: 'sacramento',
+    names: [
+      { name: 'Platnum Living Amphitheater at Quarry Park' },
+      { name: 'Quarry Park Amphitheater' },
+    ],
+    location: [-121.2339412, 38.7883736],
+    capacity: [
+      {
+        seats: 1000,
+        setup: 'concert',
+        note: 'Reported. Not re-verified in the venue-table pass. OSM spells the sponsor name "Platnum". Source: https://comstocksmag.com/web-only/venue-makes-its-debut',
+      },
+    ],
+    roof: 'open',
+  },
+  'dan-russell-rodeo-arena': {
+    id: 'dan-russell-rodeo-arena',
+    metroId: 'sacramento',
+    names: [{ name: 'Dan Russell Rodeo Arena' }],
+    location: [-121.1682977, 38.6830298],
+    // Reseller 7,000 is labeled estimated. No official capacity, so none is stored.
+    capacity: [],
+    roof: 'open',
   },
 };
 
