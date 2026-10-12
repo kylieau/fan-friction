@@ -11,6 +11,8 @@ export function WatchedWhere({ entry }: { entry: Entry }) {
   const where = entry.watchedWhere ?? null;
   const [place, setPlace] = useState(entry.watchedPlace ?? '');
   const [others, setOthers] = useState<EventPlace[]>([]);
+  // A refused save says so (build notes 3, D01); it clears on the next attempt.
+  const [failed, setFailed] = useState<string | null>(null);
   const signedIn = Boolean(getAccount());
   const shared = where === 'public' && !entry.watchedPlacePrivate && signedIn;
 
@@ -34,15 +36,13 @@ export function WatchedWhere({ entry }: { entry: Entry }) {
   const save = async (next: string, keepPrivate = Boolean(entry.watchedPlacePrivate)) => {
     setWatchedWhere(entry.id, 'public', next, keepPrivate);
     if (!entry.eventId || !signedIn) return;
-    if (next.trim() && !keepPrivate) await saveWatchPlace(entry.eventId, next, true);
-    else if (next.trim()) await saveWatchPlace(entry.eventId, next, false);
-    else await clearWatchPlace(entry.eventId);
+    setFailed(next.trim() ? await saveWatchPlace(entry.eventId, next, !keepPrivate) : await clearWatchPlace(entry.eventId));
   };
 
   const pickHome = async () => {
     setWatchedWhere(entry.id, 'home');
     setPlace('');
-    if (entry.eventId && signedIn) await clearWatchPlace(entry.eventId);
+    if (entry.eventId && signedIn) setFailed(await clearWatchPlace(entry.eventId));
   };
 
   return (
@@ -75,6 +75,11 @@ export function WatchedWhere({ entry }: { entry: Entry }) {
                 </button>
               ))}
             </div>
+          )}
+          {failed && (
+            <p className="field-error" role="alert">
+              {failed}
+            </p>
           )}
           {signedIn && (
             <button type="button" className="link-button entry-private" role="switch" aria-checked={Boolean(entry.watchedPlacePrivate)} onClick={() => void save(place, !entry.watchedPlacePrivate)}>

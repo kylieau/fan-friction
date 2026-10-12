@@ -1,8 +1,8 @@
-// Where you watched (Kylie, Oct 11, 2026, call 3): a watched entry's place, at home or a
-// public place typed in, shared per event with people who also went public for that event.
-// The database holds the rule (supabase/migrations/0021_watch_places.sql); this file only
-// reads and writes your own row and lists the names it is allowed to see. Nothing here runs
-// signed out: the phone copy keeps the place on the entry itself.
+// Where you watched (Kylie, Oct 11, 2026, call 3; build notes 3, D01–D02): a watched entry's
+// place, at home or a place typed in, shared per event with your approved followers. The
+// database holds the rule (supabase/migrations/0021_watch_places.sql, fixed in 0023); this file
+// only reads and writes your own row and lists the names it is allowed to see. Nothing here
+// runs signed out: the phone copy keeps the place on the entry itself.
 
 import { getAccount } from './account';
 import { supabase } from './storage/supabaseClient';
@@ -14,25 +14,30 @@ export interface EventPlace {
   people: number;
 }
 
-/** Save your place for an event. Public shares the name with others who are public for the same event. */
-export async function saveWatchPlace(eventId: string, place: string, isPublic: boolean): Promise<void> {
+/** The one line a failed save shows (build notes 3, D01). */
+export const SAVE_FAILED = "Couldn't save, try again";
+
+/**
+ * Save your place for an event. Shared (public) lets your approved followers read the name.
+ * Resolves to an error line when the database refused, or null when saved; nothing is swallowed.
+ */
+export async function saveWatchPlace(eventId: string, place: string, isPublic: boolean): Promise<string | null> {
   const c = supabase();
   const me = getAccount();
-  if (!c || !me) return;
+  if (!c || !me) return null;
   const clean = place.trim().replace(/\s+/g, ' ').slice(0, 80);
-  if (!clean) {
-    await c.from('watch_places').delete().eq('user_id', me.id).eq('event_id', eventId);
-    return;
-  }
-  await c.from('watch_places').upsert({ user_id: me.id, event_id: eventId, place: clean, public: isPublic }, { onConflict: 'user_id,event_id' });
+  if (!clean) return clearWatchPlace(eventId);
+  const { error } = await c.from('watch_places').upsert({ user_id: me.id, event_id: eventId, place: clean, public: isPublic }, { onConflict: 'user_id,event_id' });
+  return error ? SAVE_FAILED : null;
 }
 
-/** Forget your place for an event (the entry left the log, or you chose Home). */
-export async function clearWatchPlace(eventId: string): Promise<void> {
+/** Forget your place for an event (the entry left the log, or nothing is shared any more). */
+export async function clearWatchPlace(eventId: string): Promise<string | null> {
   const c = supabase();
   const me = getAccount();
-  if (!c || !me) return;
-  await c.from('watch_places').delete().eq('user_id', me.id).eq('event_id', eventId);
+  if (!c || !me) return null;
+  const { error } = await c.from('watch_places').delete().eq('user_id', me.id).eq('event_id', eventId);
+  return error ? SAVE_FAILED : null;
 }
 
 /**
