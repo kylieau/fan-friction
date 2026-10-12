@@ -760,6 +760,55 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-11T14:58:16.701Z"
   },
   {
+    "eventId": "2026-10-09-espn-blue-jackets-401892467",
+    "metroId": "columbus",
+    "date": "2026-10-09",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "nationwide-arena",
+    "homeTeamId": "blue-jackets",
+    "home": {
+      "name": "Blue Jackets",
+      "score": 3
+    },
+    "away": {
+      "name": "Penguins",
+      "score": 2
+    },
+    "attendance": 17057,
+    "note": "SO",
+    "capturedAt": "2026-10-12T08:15:39.822Z",
+    "duration": {
+      "minutes": 160,
+      "kind": "estimated"
+    },
+    "startedAt": "19:09"
+  },
+  {
+    "eventId": "2026-10-10-espn-osu-football-401858483",
+    "metroId": "columbus",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ohio-stadium",
+    "homeTeamId": "osu-football",
+    "home": {
+      "name": "Ohio State Buckeyes",
+      "score": 45
+    },
+    "away": {
+      "name": "Maryland",
+      "score": 16
+    },
+    "attendance": 102589,
+    "capturedAt": "2026-10-12T08:15:39.822Z",
+    "duration": {
+      "minutes": 195,
+      "kind": "estimated"
+    },
+    "startedAt": "16:16"
+  },
+  {
     "eventId": "2026-10-05-espn-dallas-stars-401892448",
     "metroId": "dallas-fort-worth",
     "date": "2026-10-05",

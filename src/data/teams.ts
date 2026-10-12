@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|lake country|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|lake country|columbus|ohio state|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -106,6 +106,20 @@ const LIST: Team[] = [
   team("tampa-tarpons", "Tampa Tarpons", "Tarpons", "Single-A baseball", "baseball", "tampa", "TAR"),
   team("dunedin-blue-jays", "Dunedin Blue Jays", "Dunedin Blue Jays", "Single-A baseball", "baseball", "tampa", "DUN"),
   team("tampa-bay-sun", "Tampa Bay Sun FC", "Sun FC", "USL Super League", "soccer", "tampa", "SUN"),
+  // Columbus (Oct 12, 2026; docs/research/city-builds/columbus/). ESPN/MLB ids checked against live schedules.
+  // Crew 2, Aviators, Fury and Ohio Wesleyan have records only; no verified schedule adapter.
+  team("blue-jackets", "Columbus Blue Jackets", "Blue Jackets", "NHL", "hockey", "columbus", "CBJ"),
+  team("columbus-crew", "Columbus Crew", "Crew", "MLS", "soccer", "columbus", "CLB"),
+  team("columbus-clippers", "Columbus Clippers", "Clippers", "Triple-A baseball", "baseball", "columbus", "CLP"),
+  team("osu-football", "Ohio State Buckeyes Football", "Ohio State", "College football", "football", "columbus", "OSU", ["Buckeyes"]),
+  team("osu-mbb", "Ohio State Buckeyes Men's Basketball", "Ohio State MBB", "College men's basketball", "basketball", "columbus", "OSU", ["Buckeyes"]),
+  team("osu-wbb", "Ohio State Buckeyes Women's Basketball", "Ohio State WBB", "College women's basketball", "basketball", "columbus", "OSU", ["Buckeyes"]),
+  team("osu-mhockey", "Ohio State Buckeyes Men's Hockey", "Ohio State Hockey", "College men's hockey", "hockey", "columbus", "OSU", ["Buckeyes"]),
+  team("columbus-crew-2", "Columbus Crew 2", "Crew 2", "MLS Next Pro", "soccer", "columbus", "C2"),
+  team("columbus-aviators", "Columbus Aviators", "Aviators", "UFL", "football", "columbus", "AVI"),
+  team("columbus-fury", "Columbus Fury", "Fury", "MLV", "volleyball", "columbus", "FURY"),
+  team("owu-football", "Ohio Wesleyan Battling Bishops Football", "OWU Football", "College football", "football", "columbus", "OWU"),
+  team("owu-mbb", "Ohio Wesleyan Battling Bishops Men's Basketball", "OWU MBB", "College men's basketball", "basketball", "columbus", "OWU"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),
