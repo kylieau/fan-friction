@@ -617,20 +617,29 @@ function lockedCrowd(event: CrowdEvent): Pick<Entry, 'crowdAnnounced' | 'crowdEs
   return { ...(figures.announced ? { crowdAnnounced: figures.announced } : {}), ...(estimated ? { crowdEstimated: estimated } : {}) };
 }
 
+/** How long after a date an entry keeps asking for its announced crowd (Kylie, Oct 12: retry until it lands). Box scores land within days; older gaps are left. */
+const ANNOUNCED_RETRY_DAYS = 30;
+
 /**
  * Lock crowds (Kylie, Oct 11, call 4; build notes 3, D04 and 8.1 item 18): once a date's stamp has
  * locked, each of its entries takes the announced attendance and the estimate into their own fields,
  * and no field is ever overwritten. Runs at app start and after the account copy loads, like
- * settlePassedPlans: a lazy fill on open, not a job. A date the catalog cannot find (before the
- * archive) is marked looked-up and stays blank. At most forty lookups a run.
+ * settlePassedPlans: a lazy fill on open, not a job. An entry whose box score has not landed yet
+ * asks again on later opens, for a month (Kylie, Oct 12), after the first-time lookups. A date the
+ * catalog cannot find (before the archive) stays blank. At most forty lookups a run.
  */
 export async function lockCrowds(loadDate: (metroId: string, date: string) => Promise<{ events: CrowdEvent[] }>) {
   const now = new Date();
-  const due = snapshot.added.filter((entry) => {
-    if (entry.crowdLocked || !entry.eventId || !entry.metroId || entry.when.precision !== 'day') return false;
+  const past = (entry: Entry) => {
+    if (!entry.eventId || !entry.metroId || entry.when.precision !== 'day') return false;
     const metro = METROS[entry.metroId];
     return Boolean(metro) && entry.when.sort < todayInZone(metro.timeZone, now);
-  });
+  };
+  const first = snapshot.added.filter((entry) => !entry.crowdLocked && past(entry));
+  const retry = snapshot.added.filter(
+    (entry) => entry.crowdLocked && !entry.crowdAnnounced && !entry.crowdFinal && !entry.crowd && past(entry) && entry.when.sort >= todayInZone('UTC', new Date(now.getTime() - ANNOUNCED_RETRY_DAYS * 86400000)),
+  );
+  const due = [...first, ...retry];
   if (due.length === 0) return;
   const updates = new Map<string, Partial<Entry>>();
   for (const entry of due.slice(0, 40)) {
@@ -644,6 +653,8 @@ export async function lockCrowds(loadDate: (metroId: string, date: string) => Pr
       const fill: Partial<Entry> = { crowdLocked: true };
       if (locked.crowdAnnounced && !entry.crowdAnnounced) fill.crowdAnnounced = locked.crowdAnnounced;
       if (locked.crowdEstimated && !entry.crowdEstimated) fill.crowdEstimated = locked.crowdEstimated;
+      // A retry that found nothing new writes nothing.
+      if (entry.crowdLocked && !fill.crowdAnnounced && !fill.crowdEstimated) continue;
       updates.set(entry.id, fill);
     } catch {
       /* try again next open */

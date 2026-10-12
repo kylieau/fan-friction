@@ -6,7 +6,6 @@
 
 import { getAccount } from './account';
 import { supabase } from './storage/supabaseClient';
-import { notThereYet } from './storage/dbErrors';
 
 /** A public place other people named for this event, and how many did. Never who. */
 export interface EventPlace {
@@ -47,15 +46,14 @@ export function placeKey(place: string): string {
 
 /**
  * The places named for this event by the people you follow, with how many named each
- * (migration 0024). The database answers only when you are sharing a place for the same
- * event; otherwise the list is empty. Your own name is left out. Before 0024 runs, the
- * old view is asked and narrowed the same way.
+ * (migrations 0024 and 0025). The database answers only when you are sharing a place for the
+ * same event; otherwise the list is empty. Your own name is left out. Until 0024 runs the
+ * function is missing and the list stays empty: the old open view is never asked (Kylie, Oct 12).
  */
 export async function placesForEvent(eventId: string, mine?: string): Promise<EventPlace[]> {
   const c = supabase();
   if (!c || !getAccount()) return [];
-  let { data, error } = await c.rpc('event_watch_places', { evt: eventId });
-  if (error && notThereYet(error)) ({ data, error } = await c.from('event_watch_places').select('place, people').eq('event_id', eventId).order('people', { ascending: false }).limit(12));
+  const { data, error } = await c.rpc('event_watch_places', { evt: eventId });
   if (error) return [];
   const key = placeKey(mine ?? '');
   return ((data ?? []) as EventPlace[]).filter((row) => placeKey(row.place) !== key && placeKey(row.place) !== 'home');
