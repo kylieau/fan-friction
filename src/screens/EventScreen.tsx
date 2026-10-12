@@ -198,7 +198,8 @@ export function EventScreen() {
         {/* The ticket line (8.1): upcoming, unlogged events with a Ticketmaster listing; the price is looked up live and never stored. */}
         {price && price.url && !price.offsale && (
           <a className="ticket-line" href={price.url} target="_blank" rel="noreferrer">
-            {priceLine(price) ?? 'See tickets on Ticketmaster'} ›
+            {/* With no price the line is just "Tickets ›" (build notes 3, 8.1, item 24): the link may not always be Ticketmaster. */}
+            {priceLine(price) ?? 'Tickets'} ›
           </a>
         )}
         {a && (

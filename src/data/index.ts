@@ -402,4 +402,5 @@ export { COMPETITIONS, LEVELS, SPORTS_MORE, SPORTS_SHOWN, competitionNamed, comp
 export type { Competition } from './competitions';
 export type * from './types';
 export { ticketPrice, priceLine, type TicketPrice } from './tickets';
+export { artistSite } from './artistSite';
 export { saveWatchPlace, clearWatchPlace, placesForEvent, placeKey, SAVE_FAILED, type EventPlace } from './watchPlaces';

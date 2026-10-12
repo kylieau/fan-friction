@@ -36,12 +36,8 @@ export function WhyCard({
   const starts = new Map<string, number>();
   for (const e of big) if (e.start) starts.set(e.start, (starts.get(e.start) ?? 0) + 1);
   const top = [...starts.entries()].sort((a, b) => b[1] - a[1])[0];
-  const sub = [
-    total > 0 ? `${crowdThousands(total)} across ${events.length} ${events.length === 1 ? 'event' : 'events'}` : `${events.length} ${events.length === 1 ? 'event' : 'events'}`,
-    top && top[1] > 1 ? `${top[1]} start at ${clockTime(top[0])}` : null,
-  ]
-    .filter(Boolean)
-    .join(' · ');
+  const count = `${events.length} ${events.length === 1 ? 'event' : 'events'}`;
+  const starts_ = top && top[1] > 1 ? ` · ${top[1]} start at ${clockTime(top[0])}` : '';
 
   return (
     <div className="home-backdrop why-backdrop" role="dialog" aria-modal="true" aria-labelledby="why-title" onClick={onClose}>
@@ -52,7 +48,18 @@ export function WhyCard({
             <h2 id="why-title" className="why-title">
               {rating === null ? `Why nothing ${word}` : `Why ${formatScore(rating)} ${word}`}
             </h2>
-            <span className="why-sub">{sub}</span>
+            <span className="why-sub">
+              {/* The crowd icon beside the crowd total (build notes 3, D09). */}
+              {total > 0 ? (
+                <>
+                  <CrowdMark />
+                  {crowdThousands(total)} across {count}
+                </>
+              ) : (
+                count
+              )}
+              {starts_}
+            </span>
           </div>
           <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
             ×

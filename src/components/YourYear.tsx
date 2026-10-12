@@ -62,17 +62,16 @@ export function YourYear({ entries, ratings }: { entries: Entry[]; ratings: Read
         <p className="you-fine">{inScope.length === 0 ? 'No events yet.' : 'No reads on these events yet.'}</p>
       ) : (
         <>
+          {/* One plain line (build notes 3, D10): attended and watched counts; the watched pill is gone. */}
+          <p className="your-usual your-counts">
+            {inScope.length} attended{watchedCount > 0 ? ` · ${watchedCount} watched` : ''}
+          </p>
           <div className="word-row" aria-label="Events by read">
             {byWord.map(({ word, count }) => (
               <span key={word} className={`word-pill ${word.toLowerCase()}`}>
                 <strong>{count}</strong> {word}
               </span>
             ))}
-            {watchedCount > 0 && (
-              <span className="word-pill watched">
-                <strong>{watchedCount}</strong> watched
-              </span>
-            )}
           </div>
           {/* "Your usual" means something after about three reads; before that, the first one (3.22). */}
           {usual !== null && rated.length >= 3 ? (

@@ -5517,12 +5517,6 @@ button.back-link {
   color: var(--ink);
 }
 
-/* A link slot with no source yet (R12). */
-.fav-slot {
-  color: var(--muted);
-  pointer-events: none;
-}
-
 /* Where you watched (call 3) */
 .watched-where {
   display: flex;

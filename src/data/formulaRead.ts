@@ -32,7 +32,8 @@ function eventWhy(row: EventCrowdFight, read: DateRead): string {
     if (cond.cause === 'cold') return `${Math.round(cond.row.feelsLikeF)}° feels-like${start}, no roof.`;
     return `${Math.round(cond.effectiveF)}° feels-like${start}, no roof.`;
   }
-  if (!top || top.d < 0.03) return 'Nothing bigger was on.';
+  // An Unopposed event says it from its own side (Kylie, Oct 11, build notes 3, 8.1, item 15).
+  if (!top || top.d < 0.03) return 'The biggest event around.';
   const a = location(row.event);
   const b = location(top.event);
   const miles = a && b ? milesBetween(a, b) : null;
@@ -96,7 +97,7 @@ export function applyFormula(metroId: string, date: LocalDate, events: readonly 
       occasion: occasionFor(event),
       facts: factChips(event),
       friction: verdictFromScore(score),
-      why: row ? eventWhy(row, read) : 'Nothing bigger was on.',
+      why: row ? eventWhy(row, read) : 'The biggest event around.',
       status: 'formula',
       ...(rival ? { rival } : {}),
     };

@@ -65,8 +65,9 @@ export default async function handler(req: Req, res: Res) {
     };
     // Standard ranges only: platinum and resale stay out (Kylie: no resale prices).
     const standard = (event.priceRanges ?? []).filter((p) => typeof p.min === 'number' && /^standard/i.test(p.type ?? ''));
-    const withFees = standard.filter((p) => /fee/i.test(p.type ?? ''));
-    const pick = (withFees.length ? withFees : standard).sort((a, b) => (a.min ?? 0) - (b.min ?? 0))[0];
+    // The before-fees range first (build notes 3, D08), so the line's "+fees" is true; the fee-inclusive one only when it is all there is.
+    const noFees = standard.filter((p) => !/fee/i.test(p.type ?? ''));
+    const pick = (noFees.length ? noFees : standard).sort((a, b) => (a.min ?? 0) - (b.min ?? 0))[0];
     const answer: PriceAnswer = {
       url: event.url ?? null,
       min: pick?.min ?? null,

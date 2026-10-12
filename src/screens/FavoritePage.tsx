@@ -39,6 +39,7 @@ import {
   VENUES,
   venueNameOn,
   yourEntries,
+  artistSite,
   type CrowdEvent,
   type Entry,
   type Favorite,
@@ -137,6 +138,18 @@ export function FavoritePage() {
   }, [account?.id, fav]);
 
   const matching = useMemo(() => everywhere.filter((e) => eventMatches(e, fav)), [everywhere, fav]);
+  // The artist's own site, from one of their listed events; looked up live, never stored.
+  const [site, setSite] = useState<string | null>(null);
+  const siteEventId = fav.kind === 'artist' ? matching.find((e) => e.ticketmasterId)?.ticketmasterId : undefined;
+  useEffect(() => {
+    let current = true;
+    setSite(null);
+    if (!siteEventId) return;
+    artistSite(siteEventId, label).then((url) => current && setSite(url));
+    return () => {
+      current = false;
+    };
+  }, [siteEventId, label]);
   const nearHome = matching.filter((e) => e.metroId === metro.id);
   const elsewhere = matching.filter((e) => e.metroId !== metro.id);
   const byId = useMemo(() => new Map(everywhere.map((e) => [e.id, e])), [everywhere]);
@@ -228,11 +241,11 @@ export function FavoritePage() {
           ESPN ›
         </a>
       )}
-      {/* R12 (Kylie, Oct 11): a slot for the artist's own link; no source yet, since Ticketmaster is not the ESPN of concerts. */}
-      {fav.kind === 'artist' && (
-        <span className="fav-foot-link fav-foot-out fav-page-espn fav-slot" aria-disabled="true">
+      {/* The artist's homepage from Ticketmaster's attraction links (build notes 3, 8.1, item 16); hidden when none is found. */}
+      {fav.kind === 'artist' && site && (
+        <a href={site} target="_blank" rel="noreferrer" className="fav-foot-link fav-foot-out fav-page-espn">
           Official site ›
-        </span>
+        </a>
       )}
 
       {fav.kind === 'team' ? (

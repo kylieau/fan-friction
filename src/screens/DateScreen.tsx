@@ -48,7 +48,7 @@ import { dayWord } from '../lib/dayWord';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId } from '../lib/homeCity';
 import { quietStakes } from '../lib/stakes';
-import { CrowdFigure, EventTags } from '../components/EventTags';
+import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
 import { feedLine } from './YouScreen';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
@@ -381,7 +381,20 @@ export function DateScreen() {
           <h2 className="you-heading">Local competition</h2>
           <div className="local-head">
             <ReadTile rating={shownRating} />
-            <span className="local-summary">{summaryLine(shownRating, events)}</span>
+            <span className="local-summary">
+              {/* The crowd icon sits beside the crowd total (build notes 3, D09). */}
+              {formatScore(shownRating)} {scoreLabel(shownRating)}
+              {summaryTotal(events) > 0 && (
+                <>
+                  {' · '}
+                  <CrowdMark />
+                  {crowdThousands(summaryTotal(events))} across
+                </>
+              )}
+              {summaryTotal(events) > 0 ? ' ' : ' · '}
+              {events.length} {events.length === 1 ? 'event' : 'events'}
+              {summaryStart(events) ? ` · ${summaryStart(events)}` : ''}
+            </span>
           </div>
           <DayTimeline events={events} />
         </section>
@@ -497,18 +510,15 @@ function AboutRead({ saved, onClose }: { saved: { rescoredOn?: string; previousR
   );
 }
 
-/** "4.7 Spicy · 54k across 6 events · 4 start at 7:00 pm" (Kylie, Oct 11, call 6; the clock in the app's one form). */
-function summaryLine(rating: number, events: readonly CrowdEvent[]): string {
-  const big = events.filter((e) => sizeTier(e) === 'feeds-friction');
-  const total = big.reduce((sum, e) => sum + (drawSize(e) ?? 0), 0);
+/** The crowd over the floor that date, for "54k across 6 events" (Kylie, Oct 11, call 6). */
+function summaryTotal(events: readonly CrowdEvent[]): number {
+  return events.filter((e) => sizeTier(e) === 'feeds-friction').reduce((sum, e) => sum + (drawSize(e) ?? 0), 0);
+}
+
+/** "4 start at 7:00 pm" when several big events share a start (the clock in the app's one form), else null. */
+function summaryStart(events: readonly CrowdEvent[]): string | null {
   const starts = new Map<string, number>();
-  for (const e of big) if (e.start) starts.set(e.start, (starts.get(e.start) ?? 0) + 1);
+  for (const e of events) if (e.start && sizeTier(e) === 'feeds-friction') starts.set(e.start, (starts.get(e.start) ?? 0) + 1);
   const top = [...starts.entries()].sort((a, b) => b[1] - a[1])[0];
-  return [
-    `${formatScore(rating)} ${scoreLabel(rating)}`,
-    `${total > 0 ? `${crowdThousands(total)} across ` : ''}${events.length} ${events.length === 1 ? 'event' : 'events'}`,
-    top && top[1] > 1 ? `${top[1]} start at ${clockTime(top[0])}` : null,
-  ]
-    .filter(Boolean)
-    .join(' · ');
+  return top && top[1] > 1 ? `${top[1]} start at ${clockTime(top[0])}` : null;
 }
