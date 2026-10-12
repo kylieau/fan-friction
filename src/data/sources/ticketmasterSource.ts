@@ -120,6 +120,10 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'gas-south-arena', 'echopark-speedway',
   'kezar-stadium', 'oakland-coliseum',
   'place-bell', 'percival-molson-stadium', 'cepsum-stadium', 'iga-stadium',
+  // Vancouver rooms whose tenants are not fully on a league feed (CFL schedule was empty; NLL listings had no venue;
+  // CEBL, CPL, NSL, MLS Next Pro and U Sports have no adapter). A feed game at the same building and date still wins.
+  'bc-place', 'rogers-arena', 'pacific-coliseum', 'langley-events-centre', 'langley-centre-gym',
+  'willoughby-stadium', 'swangard-stadium', 'thunderbird-arena', 'thunderbird-stadium', 'war-memorial-gym',
 ]);
 
 function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {

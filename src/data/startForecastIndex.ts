@@ -32863,5 +32863,62 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
       "friction": "Low",
       "why": "The biggest event around."
     }
+  },
+  {
+    "metroId": "vancouver",
+    "eventId": "2026-10-20-espn-vancouver-canucks-401892548",
+    "date": "2026-10-20",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:19:04.235Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18492,
+      "low": 18458,
+      "high": 18692
+    }
+  },
+  {
+    "metroId": "vancouver",
+    "eventId": "2026-10-22-espn-vancouver-canucks-401892563",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:19:04.235Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18717,
+      "low": 18682,
+      "high": 18919
+    }
+  },
+  {
+    "metroId": "vancouver",
+    "eventId": "2026-10-25-espn-vancouver-canucks-401892581",
+    "date": "2026-10-25",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:19:04.235Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18679,
+      "low": 18594,
+      "high": 18750
+    }
   }
 ];

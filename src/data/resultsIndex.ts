@@ -1996,5 +1996,24 @@ export const GAME_RESULTS: GameResult[] = [
     },
     "attendance": 3187,
     "capturedAt": "2026-10-11T01:02:54.585Z"
+  },
+  {
+    "eventId": "2026-10-10-ht-vancouver-giants-1023159",
+    "metroId": "vancouver",
+    "date": "2026-10-10",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "langley-events-centre",
+    "homeTeamId": "vancouver-giants",
+    "home": {
+      "name": "Giants",
+      "score": 4
+    },
+    "away": {
+      "name": "Thunderbirds",
+      "score": 1
+    },
+    "attendance": 3423,
+    "capturedAt": "2026-10-12T08:19:11.748Z"
   }
 ];

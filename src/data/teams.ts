@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|nashville|lake country|columbus|ohio state|austin|round rock|texas state|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -338,6 +338,24 @@ const LIST: Team[] = [
   team('seattle-thunderbirds', 'Seattle Thunderbirds', 'Thunderbirds', 'WHL', 'hockey', 'seattle', 'SEA'),
   team('everett-silvertips', 'Everett Silvertips', 'Silvertips', 'WHL', 'hockey', 'seattle', 'EVT'),
   team('ksu-wbb', "Kennesaw State Owls Women's Basketball", 'Kennesaw State WBB', "College women's basketball", 'basketball', 'atlanta', 'KSU', ['Kennesaw State']),
+  // Vancouver, covered Oct 12, 2026 (docs/research/city-builds/vancouver/). Abbotsford and Victoria clubs are not in this metro.
+  // No-feed records stay loggable; their pages say "No schedule yet" until a source is wired.
+  team('vancouver-canucks', 'Vancouver Canucks', 'Canucks', 'NHL', 'hockey', 'vancouver', 'VAN'),
+  team('vancouver-warriors', 'Vancouver Warriors', 'Warriors', 'NLL', 'lacrosse', 'vancouver', 'VAN'),
+  team('bc-lions', 'BC Lions', 'Lions', 'CFL', 'football', 'vancouver', 'BC'),
+  team('vancouver-whitecaps', 'Vancouver Whitecaps FC', 'Whitecaps', 'MLS', 'soccer', 'vancouver', 'VAN', ['Whitecaps', 'VWFC']),
+  team('vancouver-goldeneyes', 'Vancouver Goldeneyes', 'Goldeneyes', 'PWHL', 'hockey', 'vancouver', 'VAN'),
+  team('vancouver-giants', 'Vancouver Giants', 'Giants', 'WHL', 'hockey', 'vancouver', 'VAN'),
+  team('vancouver-bandits', 'Vancouver Bandits', 'Bandits', 'CEBL', 'basketball', 'vancouver', 'VAN'),
+  team('vancouver-canadians', 'Vancouver Canadians', 'Canadians', 'High-A baseball', 'baseball', 'vancouver', 'VAN'),
+  team('vancouver-fc', 'Vancouver FC', 'Vancouver FC', 'Canadian Premier League', 'soccer', 'vancouver', 'VFC'),
+  team('vancouver-rise', 'Vancouver Rise FC', 'Rise', 'NSL', 'soccer', 'vancouver', 'RISE'),
+  team('whitecaps-fc-2', 'Whitecaps FC 2', 'Whitecaps 2', 'MLS Next Pro', 'soccer', 'vancouver', 'WFC2'),
+  team('ubc-football', 'UBC Thunderbirds Football', 'UBC FB', 'U Sports football', 'football', 'vancouver', 'UBC'),
+  team('ubc-hockey', 'UBC Thunderbirds Hockey', 'UBC Hockey', 'U Sports hockey', 'hockey', 'vancouver', 'UBC'),
+  team('ubc-mbb', "UBC Thunderbirds Men's Basketball", 'UBC MBB', "U Sports men's basketball", 'basketball', 'vancouver', 'UBC'),
+  team('ubc-wbb', "UBC Thunderbirds Women's Basketball", 'UBC WBB', "U Sports women's basketball", 'basketball', 'vancouver', 'UBC'),
+  team('ubc-soccer', 'UBC Thunderbirds Soccer', 'UBC Soccer', 'U Sports soccer', 'soccer', 'vancouver', 'UBC'),
   team('blue-jays', 'Toronto Blue Jays', 'Blue Jays', 'MLB', 'baseball'),
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball'),
   team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball'),

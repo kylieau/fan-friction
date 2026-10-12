@@ -5806,6 +5806,209 @@ export const VENUES: Record<string, Venue> = {
     capacity: [],
     roof: 'open',
   },
+  // ---------- Vancouver (docs/research/city-builds/vancouver/vancouver-venue-table-answer.md), Oct 12, 2026 ----------
+  // Not venue rows: Vancouver Convention Centre halls (convention visits, not a fixed bowl), Hastings Racecourse (closed; grandstand capacity unknown),
+  // the replaced PNE Amphitheatre, the unbuilt Surrey arena and Whitecaps stadium, and open sites (Fan Festival, PNE Fair, parades, fireworks).
+  // Abbotsford (Rogers Forum) and Victoria stay outside this metro.
+  // No carShare overrides. Every figure in the city-type answer is an estimate, including Hastings Park and Langley.
+  // Those estimates stay in the research (same rule as Milwaukee and Tampa). The transit fallback is 0.40.
+  'bc-place': {
+    id: 'bc-place',
+    metroId: 'vancouver',
+    names: [{ name: 'BC Place Vancouver' }, { name: 'BC Place' }],
+    location: [-123.1120062, 49.2766905],
+    capacity: [
+      { seats: 54500, setup: 'football', note: 'Reported (Ticketmaster blog). Also 54,320 (Soccer Stadium Digest). Venue marketing says over 55,000, not an exact count. FIFA 2026 configuration 54,000 (CBC) was a tournament setup. Concerts with a floor are reported as over 65,000; no exact seat count is stored.' },
+      { seats: 22120, setup: 'soccer', note: 'Reported (Wikipedia, city-type answer): lower bowl, upper deck closed. Venue table also reports about 22,000 (SeatGeek) and 21,000 (Soccer Stadium Digest).' },
+    ],
+    roof: 'open',
+  },
+  'rogers-arena': {
+    id: 'rogers-arena',
+    metroId: 'vancouver',
+    // Not Rogers Place (Edmonton) or Rogers Forum (Abbotsford).
+    names: [{ name: 'GM Place' }, { name: 'Canada Hockey Place' }, { name: 'Rogers Arena' }],
+    location: [-123.1089417, 49.2779085],
+    capacity: [
+      { seats: 18871, setup: 'hockey', fromYear: 2018, note: 'Reported (Wikipedia): 2018–present. Ticketmaster blog lists 18,910. Wikipedia also lists 18,865 for 2016–2018.' },
+      { seats: 19700, setup: 'basketball', note: 'Reported (Ticketmaster blog).' },
+      { seats: 19000, setup: 'concert', note: 'Reported (Ticketmaster blog). A PWHL Takeover Tour crowd of 19,038 (Jan 8, 2025) is attendance, not a new capacity.' },
+    ],
+    roof: 'indoor',
+  },
+  'pacific-coliseum': {
+    id: 'pacific-coliseum',
+    metroId: 'vancouver',
+    names: [{ name: 'Rink on Renfrew' }, { name: 'Pacific Coliseum' }],
+    location: [-123.0427418, 49.2858422],
+    capacity: [
+      { seats: 15713, setup: 'hockey', note: 'Official (PNE): permanent seats, plus provision for 2,000 floor seats (total cited 17,500). The naming-rights page lists a current capacity of 15,455. Hockey is also reported as 16,281 (Wikipedia) and 16,821 (The Stadium Business). A PWHL sell-out of 14,958 is attendance, not capacity.' },
+      { seats: 17000, setup: 'concert', note: 'Official (PNE): in-the-round. A mini concert is listed at 4,200; that setup is not stored as the concert size.' },
+    ],
+    roof: 'indoor',
+  },
+  'freedom-mobile-arch': {
+    id: 'freedom-mobile-arch',
+    metroId: 'vancouver',
+    names: [{ name: 'Freedom Mobile Arch' }],
+    location: [-123.037059, 49.2839638],
+    capacity: [
+      { seats: 6000, setup: 'concert', standing: 10000, note: 'Reported: 6,000 fixed seats under the roof plus about 4,000 on the open lawn. The lawn is not counted as seats. Connect CRE and the Vancouver host committee also state a total of 10,000. Opened June 2026. The old PNE Amphitheatre is a different, replaced room and is not an alias here.' },
+    ],
+    roof: 'open',
+  },
+  'thunderbird-arena': {
+    id: 'thunderbird-arena',
+    metroId: 'vancouver',
+    names: [{ name: 'UBC Winter Sports Centre' }, { name: 'Doug Mitchell Thunderbird Sports Centre' }, { name: 'Thunderbird Arena' }],
+    location: [-123.2420795, 49.2605753],
+    capacity: [
+      { seats: 5004, setup: 'hockey', note: 'Official (UBC Sport Facilities): permanent seats. Also 5,033 (UBC Thunderbirds, 2009, dated) and 5,500 (UBC Properties). Wikipedia reports hockey 7,500 and concerts 8,000. Father Bauer Arena (900) and Protrans Arena are other rooms in this building and are not this row.' },
+      { seats: 7000, setup: 'concert', note: 'Official (UBC Sport Facilities): up to 7,000 for special events, with floor seats or standing. Not the permanent seat count.' },
+    ],
+    roof: 'indoor',
+  },
+  'nat-bailey-stadium': {
+    id: 'nat-bailey-stadium',
+    metroId: 'vancouver',
+    names: [
+      { name: 'Nat Bailey Stadium' },
+      { name: 'Scotiabank Field at Nat Bailey Stadium' },
+      { name: 'The Nat' },
+      { name: 'Rogers Field at Nat Bailey Stadium' },
+    ],
+    location: [-123.1067007, 49.242738],
+    capacity: [
+      { seats: 6500, setup: 'baseball', note: 'Official (MLB.com). The city-type answer records an unresolved conflict (5,132–6,500). This row uses the league site figure. MLB venue id 2817, checked Oct 12, 2026. The Rogers Field name was in use by January 2026; the exact start date was not verified, so no rename date is stored.' },
+    ],
+    roof: 'open',
+  },
+  'willoughby-stadium': {
+    id: 'willoughby-stadium',
+    metroId: 'vancouver',
+    names: [{ name: 'Willoughby Community Park Stadium' }, { name: 'Willoughby Stadium at Langley Events Centre' }, { name: 'Willoughby Stadium' }],
+    location: [-122.6656644, 49.1438512],
+    capacity: [
+      { seats: 6042, setup: 'soccer', note: 'Reported (Wikipedia). The same page also lists an initial configuration of 6,137. Langley Advance Times says more than 6,500; Soccerway says 6,600. Modular and designed to expand. All of those figures are at or above 5,000.' },
+    ],
+    roof: 'open',
+  },
+  'langley-events-centre': {
+    id: 'langley-events-centre',
+    metroId: 'vancouver',
+    names: [{ name: 'Langley Events Centre Arena' }, { name: 'Langley Events Centre' }],
+    location: [-122.6664163, 49.1459933],
+    capacity: [
+      { seats: 5276, setup: 'hockey', note: 'Reported (Wikipedia; CBC). Also described as about 5,300 (Daily Hive). The Giants reportedly curtain unused upper seating; no curtained seat count was published, so none is stored. Threshold-sensitive.' },
+      { seats: 5276, setup: 'basketball', note: 'No separate basketball figure was published for the Bandits. The arena figure is used. The Centre Gymnasium is a different room.' },
+    ],
+    roof: 'indoor',
+  },
+  'swangard-stadium': {
+    id: 'swangard-stadium',
+    metroId: 'vancouver',
+    names: [{ name: 'Swangard Stadium' }],
+    location: [-123.0217265, 49.2308777],
+    capacity: [
+      { seats: 4500, setup: 'soccer', note: 'Reported (Rise team president, Burnaby Now, 2024): current seating 4,500. Conflicts that cross 5,000: 5,288 (Wikipedia), about 5,000 (The IX), and more than 5,000 permanent seats (Burnaby Now). No official City of Burnaby figure. The 4,500 count is what is stored, so the friction label stays off until one official number exists. A temporary 10,000 setup for the 2007 U-20 World Cup is historical and not stored.' },
+    ],
+    roof: 'open',
+  },
+  'pne-agrodome': {
+    id: 'pne-agrodome',
+    metroId: 'vancouver',
+    names: [{ name: 'Agrodome' }, { name: 'PNE Agrodome' }],
+    // Approximate (venue research). OpenStreetMap has no Agrodome hit. The grounds share 2901 E Hastings with the Coliseum and the Arch.
+    location: [-123.0422, 49.2836],
+    capacity: [
+      { seats: 3400, note: 'Official (PNE naming-rights page): 3,400 permanent seats. Another PNE page says over 3,000 permanent plus 2,000 floor seats for concerts. No single published concert total, so the floor-seat setup is not stored as its own capacity. Fixed seating is under 5,000.' },
+    ],
+    roof: 'indoor',
+  },
+  'thunderbird-stadium': {
+    id: 'thunderbird-stadium',
+    metroId: 'vancouver',
+    names: [{ name: 'Thunderbird Stadium' }],
+    location: [-123.2453928, 49.2544747],
+    capacity: [
+      { seats: 3500, setup: 'football', note: 'Official (UBC Thunderbirds, 2009, dated). The current UBC Sport Facilities home page says 12,000. The venue research says that figure may include temporary or standing space and not to label the room until UBC says which number is seated. 12,000 is not stored.' },
+      { seats: 3500, setup: 'soccer', note: 'Same stands. No separate soccer capacity was published.' },
+    ],
+    roof: 'open',
+  },
+  'queen-elizabeth-theatre': {
+    id: 'queen-elizabeth-theatre',
+    metroId: 'vancouver',
+    names: [{ name: 'Queen Elizabeth Theatre' }],
+    location: [-123.113161, 49.2803131],
+    capacity: [{ seats: 2765, setup: 'concert', note: 'Official (Vancouver Civic Theatres). The Vancouver Playhouse (668) is the adjoining room and is under the pre-list line, so it is not a row.' }],
+    roof: 'indoor',
+  },
+  'orpheum-vancouver': {
+    id: 'orpheum-vancouver',
+    metroId: 'vancouver',
+    names: [{ name: 'Orpheum Theatre' }, { name: 'Orpheum' }],
+    location: [-123.1203207, 49.2801482],
+    capacity: [{ seats: 2672, setup: 'concert', note: 'Official (Vancouver Civic Theatres). Destination Vancouver lists 2,688.' }],
+    roof: 'indoor',
+  },
+  'langley-centre-gym': {
+    id: 'langley-centre-gym',
+    metroId: 'vancouver',
+    names: [{ name: 'Langley Events Centre — Centre Gymnasium' }, { name: 'Langley Events Centre Gymnasium' }],
+    // The gym was not a separate OpenStreetMap hit. This is the Langley Events Centre campus point.
+    location: [-122.6664163, 49.1459933],
+    capacity: [{ seats: 2200, setup: 'basketball', note: 'Reported (Wikipedia).' }],
+    roof: 'indoor',
+  },
+  'war-memorial-gym': {
+    id: 'war-memorial-gym',
+    metroId: 'vancouver',
+    names: [{ name: 'War Memorial Gymnasium' }, { name: 'War Memorial Gym' }],
+    location: [-123.2476281, 49.2668059],
+    capacity: [{ seats: 2176, setup: 'basketball', note: 'Official (UBC Sport Facilities).' }],
+    roof: 'indoor',
+  },
+  'vogue-theatre': {
+    id: 'vogue-theatre',
+    metroId: 'vancouver',
+    names: [{ name: 'Vogue Theatre' }],
+    location: [-123.121631, 49.2797734],
+    capacity: [{ seats: 1280, setup: 'concert', note: 'Reported (Bandsintown). A guide site says about 1,100.' }],
+    roof: 'indoor',
+  },
+  'massey-theatre': {
+    id: 'massey-theatre',
+    metroId: 'vancouver',
+    names: [{ name: 'Massey Theatre' }],
+    location: [-122.926914, 49.2151874],
+    capacity: [{ seats: 1260, setup: 'concert', note: 'Official (Massey Theatre): 867 orchestra plus 393 balcony.' }],
+    roof: 'indoor',
+  },
+  'chan-centre': {
+    id: 'chan-centre',
+    metroId: 'vancouver',
+    names: [{ name: 'Chan Centre for the Performing Arts' }, { name: 'Chan Shun Concert Hall' }],
+    location: [-123.2551083, 49.2697484],
+    capacity: [{ seats: 1200, setup: 'concert', note: 'Reported (BC Touring Council). The venue research did not re-verify this independently. Telus Studio Theatre (250) is a different room.' }],
+    roof: 'indoor',
+  },
+  'bell-performing-arts-centre': {
+    id: 'bell-performing-arts-centre',
+    metroId: 'vancouver',
+    names: [{ name: 'Bell Performing Arts Centre' }],
+    location: [-122.8214734, 49.1165785],
+    capacity: [{ seats: 1052, setup: 'concert', note: 'Reported (BC Touring Council). The venue research did not re-verify this independently.' }],
+    roof: 'indoor',
+  },
+  'commodore-ballroom': {
+    id: 'commodore-ballroom',
+    metroId: 'vancouver',
+    names: [{ name: 'Commodore Ballroom' }],
+    location: [-123.120792, 49.2805634],
+    capacity: [{ seats: 990, setup: 'concert', note: 'Reported (BC Living): standing room. Also described as about 1,000. Not rounded up to 1,000.' }],
+    roof: 'indoor',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

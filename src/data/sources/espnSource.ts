@@ -86,6 +86,12 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'hockey/mens-college-hockey', espnId: '9', metroId: 'phoenix', teamId: 'asu-hockey', sport: 'hockey' },
   { path: 'basketball/mens-college-basketball', espnId: '2253', metroId: 'phoenix', teamId: 'gcu-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '2253', metroId: 'phoenix', teamId: 'gcu-wbb', sport: 'basketball' },
+  // Vancouver (docs/research/city-builds/vancouver/); ids and home venue names checked against the feed Oct 12, 2026.
+  // CFL team schedules came back empty (as Montreal's did). NLL home listings had no venue name, so they are not placed.
+  { path: 'hockey/nhl', espnId: '22', metroId: 'vancouver', teamId: 'vancouver-canucks', sport: 'hockey' },
+  { path: 'soccer/usa.1', espnId: '9727', metroId: 'vancouver', teamId: 'vancouver-whitecaps', sport: 'soccer' },
+  { path: 'football/cfl', espnId: '79', metroId: 'vancouver', teamId: 'bc-lions', sport: 'football' },
+  { path: 'lacrosse/nll', espnId: '125432', metroId: 'vancouver', teamId: 'vancouver-warriors', sport: 'lacrosse' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
@@ -412,6 +418,14 @@ const VENUE_BY_NAME: Record<string, string> = {
   'saputo stadium': 'stade-saputo',
   'percival molson memorial stadium': 'percival-molson-stadium',
   'molson stadium': 'percival-molson-stadium',
+  // Vancouver, as the feeds write them. Rogers Place (Edmonton) is intentionally not mapped.
+  'bc place': 'bc-place',
+  'bc place vancouver': 'bc-place',
+  'rogers arena': 'rogers-arena',
+  'pacific coliseum': 'pacific-coliseum',
+  'swangard stadium': 'swangard-stadium',
+  'rogers field at nat bailey stadium': 'nat-bailey-stadium',
+  'nat bailey stadium': 'nat-bailey-stadium',
   'now arena': 'now-arena',
   'comerica center': 'comerica-center',
   // Columbus, as ESPN writes them (checked Oct 12, 2026).
