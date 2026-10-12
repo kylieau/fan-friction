@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "teamId": "penn-football",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "penn-football",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "13:00",
+      "opponent": "Colgate",
+      "venueId": "penn-franklin-field",
+      "attendance": 4678,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2022,
+      "date": "2022-10-15",
+      "start": "13:00",
+      "opponent": "Columbia",
+      "venueId": "penn-franklin-field",
+      "attendance": 5127,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2022,
+      "date": "2022-10-22",
+      "start": "13:00",
+      "opponent": "Yale",
+      "venueId": "penn-franklin-field",
+      "attendance": 11972,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2022,
+      "date": "2022-11-12",
+      "start": "13:00",
+      "opponent": "Harvard",
+      "venueId": "penn-franklin-field",
+      "attendance": 10370,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "13:00",
+      "opponent": "Dartmouth",
+      "venueId": "penn-franklin-field",
+      "attendance": 7970,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2023,
+      "date": "2023-10-07",
+      "start": "13:00",
+      "opponent": "Georgetown",
+      "venueId": "penn-franklin-field",
+      "attendance": 2250,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2023,
+      "date": "2023-10-27",
+      "start": "19:00",
+      "opponent": "Brown",
+      "venueId": "penn-franklin-field",
+      "attendance": 4735,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2023,
+      "date": "2023-11-04",
+      "start": "13:00",
+      "opponent": "Cornell",
+      "venueId": "penn-franklin-field",
+      "attendance": 9408,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2023,
+      "date": "2023-11-18",
+      "start": "13:00",
+      "opponent": "Princeton",
+      "venueId": "penn-franklin-field",
+      "attendance": 5256,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "13:00",
+      "opponent": "Colgate",
+      "venueId": "penn-franklin-field",
+      "attendance": 4818,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2024,
+      "date": "2024-10-12",
+      "start": "13:00",
+      "opponent": "Bucknell",
+      "venueId": "penn-franklin-field",
+      "attendance": 2054,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2024,
+      "date": "2024-10-19",
+      "start": "13:00",
+      "opponent": "Columbia",
+      "venueId": "penn-franklin-field",
+      "attendance": 2970,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2024,
+      "date": "2024-10-25",
+      "start": "19:00",
+      "opponent": "Yale",
+      "venueId": "penn-franklin-field",
+      "attendance": 7917,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2025,
+      "date": "2025-10-04",
+      "start": "13:00",
+      "opponent": "Dartmouth",
+      "venueId": "penn-franklin-field",
+      "attendance": 6541,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2025,
+      "date": "2025-10-10",
+      "start": "19:00",
+      "opponent": "Marist",
+      "venueId": "penn-franklin-field",
+      "attendance": 1164,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2025,
+      "date": "2025-10-31",
+      "start": "19:00",
+      "opponent": "Brown",
+      "venueId": "penn-franklin-field",
+      "attendance": 1458,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2025,
+      "date": "2025-11-08",
+      "start": "13:00",
+      "opponent": "Cornell",
+      "venueId": "penn-franklin-field",
+      "attendance": 10914,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2025,
+      "date": "2025-11-22",
+      "start": "13:00",
+      "opponent": "Princeton",
+      "venueId": "penn-franklin-field",
+      "attendance": 3093,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "13:00",
+      "opponent": "Lehigh",
+      "venueId": "penn-franklin-field",
+      "attendance": 1839,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "penn-football",
+      "season": 2026,
+      "date": "2026-10-10",
+      "start": "13:00",
+      "opponent": "Howard",
+      "venueId": "penn-franklin-field",
+      "attendance": 5342,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}
