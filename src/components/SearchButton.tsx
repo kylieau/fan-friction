@@ -1,10 +1,9 @@
-import { useEffect, useState, useSyncExternalStore } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SearchIcon } from './Icons';
 import { SearchSheet } from './SearchSheet';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { getCityDate, todayIn } from '../data';
-import { tonightWord } from '../lib/dayWord';
+import { todayIn } from '../data';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { mapPath } from '../lib/view';
 
@@ -20,17 +19,6 @@ export function SearchButton({ metroId, className = '' }: { metroId?: string; cl
   const metro = METROS[cityId] ?? DEFAULT_METRO;
   const today = todayIn(metro);
   const [open, setOpen] = useState(false);
-  const [word, setWord] = useState<'Tonight' | 'Today'>('Tonight');
-
-  // Tonight or Today, by the 5 pm rule on the city's events.
-  useEffect(() => {
-    if (!open) return;
-    let current = true;
-    getCityDate(cityId, today).then((day) => current && setWord(tonightWord(day.events)));
-    return () => {
-      current = false;
-    };
-  }, [open, cityId, today]);
 
   return (
     <>
@@ -41,7 +29,6 @@ export function SearchButton({ metroId, className = '' }: { metroId?: string; cl
         <SearchSheet
           homeId={cityId}
           today={today}
-          tonightWord={word}
           onClose={() => setOpen(false)}
           onPick={(picked, pickedMetro) => {
             setOpen(false);

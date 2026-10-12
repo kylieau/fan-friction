@@ -37,7 +37,6 @@ import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/date
 import { mapTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, mapPath } from '../lib/view';
-import { dayWord } from '../lib/dayWord';
 import { FeedRow } from './YouScreen';
 
 // The map library loads only when a map is on screen (Home and Explore), not on every tab.
@@ -130,9 +129,9 @@ export function HomeScreen() {
     };
   }, [nightsShown]);
 
-  const word = dayWord(day?.events ?? []);
   const rating = day?.rating?.rating ?? null;
-  const tonightTitle = `${word === 'day' ? 'Today' : 'Tonight'} in ${home.name}`;
+  // Always "Today" (build notes 3, 3.1: never "night").
+  const tonightTitle = `Today in ${home.name}`;
   const newUser = log.added.length === 0 && log.plans.length === 0;
   // Only events over the friction floor count as "big" here (R14); small rooms are on the map, muted.
   const big = day?.events.filter((e) => showsOnMap(e) && !isMuted(e)).length ?? 0;
@@ -162,7 +161,7 @@ export function HomeScreen() {
       {day && tonight.length === 0 && (
         <section className="card home-quiet-card" aria-label={tonightTitle}>
           <ReadTile rating={null} size="big" empty={day.empty} />
-          <span className="home-quiet">{day.empty === 'no-data' ? "Couldn't check today's events." : `Nothing big ${word === 'day' ? 'today' : 'tonight'}.`}</span>
+          <span className="home-quiet">{day.empty === 'no-data' ? "Couldn't check today's events." : 'Nothing big today.'}</span>
         </section>
       )}
 
@@ -175,18 +174,18 @@ export function HomeScreen() {
             <span className="mini-map-overlay">
               <ReadTile rating={rating} empty={day.empty} />
               <span className="mini-map-text">
-                <span className="mini-map-label">{word === 'day' ? "Today's read" : "Tonight's read"}</span>
+                <span className="mini-map-label">Today's read</span>
                 <span className="mini-map-title">
                   {shortLocalDate(today)} · {tonight.length} {tonight.length === 1 ? 'event' : 'events'}
                 </span>
-                <span className="mini-map-sub">{big === 0 ? `Nothing over 5,000 ${word === 'day' ? 'today' : 'tonight'}.` : others > 0 ? `${others} other big ${others === 1 ? 'event' : 'events'} ${word === 'day' ? 'today' : 'tonight'}.` : `The only big event ${word === 'day' ? 'today' : 'tonight'}.`}</span>
+                <span className="mini-map-sub">{big === 0 ? 'Nothing over 5,000 today.' : others > 0 ? `${others} other big ${others === 1 ? 'event' : 'events'} today.` : 'The only big event today.'}</span>
               </span>
             </span>
           </Link>
           {/* The heading is the link (build notes 2, Home section links): no See all rows. */}
           <h2 className="you-heading heading-link-row">
             <Link to={mapPath({ metroId: home.id, date: today, today })} className="heading-link">
-              {word === 'day' ? 'Today' : 'Tonight'} ›
+              Today ›
             </Link>
           </h2>
           <ul className="log-list tonight-list">

@@ -41,7 +41,7 @@ export function CalendarScreen() {
   );
 }
 
-/** Search, the shaded month, On this date and Famous nights. Used by the page above and by Explore's month sheet. */
+/** Search, the shaded month, On this date and Famous dates. Used by the page above and by Explore's month sheet. */
 export function CalendarPanel({ metro, today, focus, onPick }: { metro: Metro; today: string; focus: string | null; onPick?: (date: string) => void }) {
   const [month, setMonth] = useState(() => clampMonth(yearMonth(focus ?? today), today));
   const [query, setQuery] = useState('');
@@ -183,7 +183,7 @@ export function CalendarPanel({ metro, today, focus, onPick }: { metro: Metro; t
           {famous && famous.length > 0 && (
             <section className="famous">
               <h2 className="section-title">
-                Famous nights <span className="section-note">Newest first</span>
+                Famous dates <span className="section-note">Newest first</span>
               </h2>
               <ul className="famous-list">
                 {famous.map((entry) => (
@@ -221,7 +221,7 @@ function SearchResults({
   if (hits.length === 0) return <p className="card-body search-note">No dates match that.</p>;
   return (
     <section className="famous" aria-live="polite">
-      <h2 className="section-title">{hits.length === 1 ? '1 night' : `${hits.length} nights`}</h2>
+      <h2 className="section-title">{hits.length === 1 ? '1 date' : `${hits.length} dates`}</h2>
       <ul className="famous-list">
         {hits.map((hit) => (
           <li key={hit.date}>
@@ -240,7 +240,7 @@ function SearchResults({
   );
 }
 
-/** One night in Famous nights, On this night, or search results. */
+/** One date in Famous dates, On this date, or search results. */
 function EntryRow({ to, rating, headline, meta }: { to: string; rating: number | null; headline: string; meta: string }) {
   return (
     <Link to={to} className="famous-row">

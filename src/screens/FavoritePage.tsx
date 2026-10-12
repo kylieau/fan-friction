@@ -50,7 +50,6 @@ import { addDays, clockTime, loggedDateLabel, shortLocalDate } from '../lib/date
 import { mapTitle } from '../lib/eventTitle';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath } from '../lib/view';
-import { dayWordFor } from '../lib/dayWord';
 import { LastFive } from './FavoritesScreen';
 
 /** How many schedule rows show before "See all". */
@@ -338,7 +337,7 @@ export function FavoritePage() {
                       <span className="log-main">
                         <span className="log-title">
                           {venueOf(event)}
-                          {event.date === today ? ` · ${dayWordFor(event) === 'day' ? 'today' : 'tonight'}` : ''}
+                          {event.date === today ? ' · today' : ''}
                         </span>
                         <span className="log-facts">
                           {shortLocalDate(event.date)}

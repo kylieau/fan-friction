@@ -24,7 +24,6 @@ import { ChevronDown } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { ShareCard } from '../components/ShareCard';
 import { listTitle } from '../lib/eventTitle';
-import { dayWord } from '../lib/dayWord';
 import { loggedDateLabel, longLocalDate, shortLocalDate } from '../lib/dates';
 import { comparePath, datePath, type NightKey, parseNightKey } from '../lib/view';
 
@@ -108,8 +107,9 @@ function Picker({ a }: { a: NightKey }) {
         </section>
       )}
       {famous.length > 0 && (
-        <section className="you-block" aria-label="Famous nights">
-          <h2 className="you-heading">Famous nights</h2>
+        <section className="you-block" aria-label="Famous dates">
+          {/* "Famous dates" (Kylie, Oct 11, build notes 3, 8.1, item 17). */}
+          <h2 className="you-heading">Famous dates</h2>
           <ul className="log-list">
             {famous.map((r) => (
               <li key={r.date}>
@@ -231,7 +231,7 @@ function SideBySide({ a, b }: { a: NightKey; b: NightKey }) {
         line={`${A.day.rating?.headline ?? ''} · ${B.day.rating?.headline ?? ''}`}
         rating={null}
         crowd={null}
-        buttonLabel={dayWord(A.day.events) === 'night' && dayWord(B.day.events) === 'night' ? 'Share these nights' : 'Share these events'}
+        buttonLabel="Share these events"
       />
       {/* How the parts become the read (3.6). */}
       <p className="you-fine">The read is the strongest reason, plus a bump for each other strong one.</p>

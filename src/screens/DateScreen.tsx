@@ -44,7 +44,6 @@ import {
 } from '../data';
 import { VENUES, venueNameOn } from '../data';
 import { clockTime, longLocalDate, shortLocalDate, weekdayLong } from '../lib/dates';
-import { dayWord } from '../lib/dayWord';
 import { listTitle } from '../lib/eventTitle';
 import { getHomeId } from '../lib/homeCity';
 import { quietStakes } from '../lib/stakes';
@@ -116,7 +115,6 @@ export function DateScreen() {
   // Today counts as ahead: an Attend today is a plan, and becomes Attended once the date passes (C039).
   const ahead = date >= today;
   const events = useMemo(() => (day ? [...day.events].sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99')) : []), [day]);
-  const word = dayWord(events);
   const mine = useMemo(
     () => yourEntries(log).filter((n) => n.when.sort === date && n.when.precision === 'day' && (n.metroId ?? DEFAULT_METRO.id) === metro.id),
     [log, date, metro.id],
@@ -326,7 +324,7 @@ export function DateScreen() {
       {events.length > 0 && (
       <section className="you-block" aria-labelledby="that-date">
         <h2 id="that-date" className="you-heading">
-          That {word} in {metro.name}
+          This day in {metro.name}
         </h2>
         {(
           <ul className="log-list timeline-list">
@@ -422,7 +420,7 @@ export function DateScreen() {
               {choosing ? 'Done' : ahead ? 'Attending?' : 'Attended'}
             </button>
           )}
-          <button type="button" className="round-button share-button" aria-label={`Share this ${word}`} onClick={share}>
+          <button type="button" className="round-button share-button" aria-label="Share this date" onClick={share}>
             <ShareIcon />
           </button>
         </div>

@@ -38,14 +38,12 @@ import { favPath } from '../screens/FavoritesScreen';
 export function SearchSheet({
   homeId,
   today,
-  tonightWord,
   onPick,
   onPickDate,
   onClose,
 }: {
   homeId: string;
   today: string;
-  tonightWord: 'Tonight' | 'Today';
   onPick: (date: string, metroId: string) => void;
   onPickDate: () => void;
   onClose: () => void;
@@ -194,7 +192,7 @@ export function SearchSheet({
         </div>
         <div className="pill-row search-shortcuts" role="group" aria-label="Shortcuts">
           <button type="button" className="filter-chip" onClick={() => onPick(today, homeId)}>
-            {tonightWord}
+            Today
           </button>
           <button type="button" className="filter-chip" onClick={() => onPick(weekend, homeId)}>
             This weekend

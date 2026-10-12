@@ -9,7 +9,7 @@ import { eventPath } from '../lib/view';
 import { crowdThousands } from '../map/crowdPoints';
 
 /**
- * "Why 4.7 tonight" (build notes 2, P3 V2, mocks p3-final and p3-gold): the date's read,
+ * "Why 4.7 today" (build notes 2, P3 V2, mocks p3-final and p3-gold; never "night", build notes 3, 3.1): the date's read,
  * then every event in order of crowd (ties: more friction, then the earlier start), each
  * with a gold crowd bar, its figure, the occasion tag and the friction pill. The whole row
  * opens the event. No "by" line here; no highlighted row.
@@ -18,13 +18,11 @@ export function WhyCard({
   events,
   rating,
   empty,
-  word,
   onClose,
 }: {
   events: readonly CrowdEvent[];
   rating: number | null;
   empty?: EmptyKind;
-  word: 'today' | 'tonight';
   onClose: () => void;
 }) {
   const rank = (e: CrowdEvent) => FRICTION_LEVELS.indexOf(e.assessment?.friction ?? 'Low');
@@ -46,7 +44,7 @@ export function WhyCard({
           <ReadTile rating={rating} size="big" empty={empty} />
           <div className="why-head-text">
             <h2 id="why-title" className="why-title">
-              {rating === null ? `Why nothing ${word}` : `Why ${formatScore(rating)} ${word}`}
+              {rating === null ? 'Why nothing today' : `Why ${formatScore(rating)} today`}
             </h2>
             <span className="why-sub">
               {/* The crowd icon beside the crowd total (build notes 3, D09). */}

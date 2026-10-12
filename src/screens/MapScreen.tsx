@@ -36,7 +36,6 @@ import { ChipCard } from '../components/ChipCard';
 import { WhyCard } from '../components/WhyCard';
 import { CrowdFigure, CrowdMark, EventTags } from '../components/EventTags';
 import { drawSize, sizeTier } from '../data';
-import { dayWord } from '../lib/dayWord';
 
 type Mode = 'crowds' | 'traffic';
 /** No traffic layer exists yet; the switch stays off the map until one does (C079). */
@@ -236,7 +235,7 @@ export function MapScreen() {
         </div>
         {/* The read box first, then the date, then < Today > to step a day or jump back (Kylie, Oct 9). */}
         <div className="map-header-score">
-          {/* Tapping the read opens "Why 4.7 tonight" (build notes 2, P3). */}
+          {/* Tapping the read opens "Why 4.7 today" (build notes 2, P3; never "night", build notes 3, 3.1). */}
           <button type="button" className="datescore-button" aria-label="Why this read" onClick={() => setWhy(true)} disabled={!shown}>
             <DateScore rating={headerRating} empty={showScore ? shown?.empty : undefined} showScore={showScore} />
           </button>
@@ -373,7 +372,7 @@ export function MapScreen() {
         <div className="sheet-body" ref={bodyRef}>
           {selected && rivals.length > 0 && (
             <>
-              <div className="section-title">Fighting {dayWord(events) === 'day' ? 'today' : 'tonight'}</div>
+              <div className="section-title">Fighting today</div>
               <ul className="event-list">
                 {rivals.map((e) => (
                   <li key={e.id}>
@@ -395,7 +394,7 @@ export function MapScreen() {
         </div>
       </section>
 
-      {why && shown && <WhyCard events={dayEvents} rating={headerRating} empty={shown.empty} word={dayWord(dayEvents) === 'day' ? 'today' : 'tonight'} onClose={() => setWhy(false)} />}
+      {why && shown && <WhyCard events={dayEvents} rating={headerRating} empty={shown.empty} onClose={() => setWhy(false)} />}
 
       {monthOpen && (
         <MonthSheet
