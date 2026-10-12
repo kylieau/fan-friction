@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-seahawks-401872992",
+      "metroId": "seattle",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lumen-field",
+      "homeTeamId": "seahawks",
+      "home": {
+        "name": "Seahawks",
+        "score": 29
+      },
+      "away": {
+        "name": "49ers",
+        "score": 32
+      },
+      "attendance": 68664,
+      "capturedAt": "2026-10-12T17:25:03.426Z",
+      "duration": {
+        "minutes": 197,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

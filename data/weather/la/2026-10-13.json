@@ -632,6 +632,42 @@
       "shortwave": 123,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:20:45.788Z",
+      "feelsLikeF": 64.1,
+      "tempF": 65.1,
+      "humidity": 56,
+      "windMph": 2,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "hour": 18,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:20:45.788Z",
+      "feelsLikeF": 66,
+      "tempF": 68.5,
+      "humidity": 53,
+      "windMph": 6.4,
+      "uvIndex": 0.6,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 72,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
@@ -813,6 +849,18 @@
       "feelsLikeLowF": 54.6,
       "code": 3,
       "precipProbability": 2,
+      "precipMm": 0
+    },
+    {
+      "metroId": "la",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:20:45.788Z",
+      "feelsLikeHighF": 72.8,
+      "feelsLikeLowF": 48.9,
+      "code": 2,
+      "precipProbability": 0,
       "precipMm": 0
     }
   ]

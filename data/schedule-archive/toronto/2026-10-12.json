@@ -4,7 +4,7 @@
   "metroName": "Toronto",
   "timeZone": "America/Toronto",
   "capturedOn": "2026-10-12",
-  "capturedAt": "2026-10-12T08:16:24.793Z",
+  "capturedAt": "2026-10-12T17:24:37.657Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-12",
@@ -31,9 +31,106 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 66
     }
   ],
   "events": [
+    {
+      "id": "2026-10-12-tm-177Zv0G62SgS2-Y",
+      "metroId": "toronto",
+      "date": "2026-10-12",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Canada WNT v Denmark",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Canadian Soccer Association",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62SgS2-Y"
+    },
+    {
+      "id": "2026-10-12-tm-177Zv0G6ClCgdrW",
+      "metroId": "toronto",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Linda Lindas",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Linda Lindas",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6ClCgdrW",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-12-tm-rZ7HnEZ1AfFd77",
+      "metroId": "toronto",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Medium Build",
+      "officialTitle": "Medium Build Presents The King of Having Fun on Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "concert-hall-888-yonge"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Medium Build",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfFd77",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-12-tm-1A8ZkfIGkd1aGHe",
+      "metroId": "toronto",
+      "date": "2026-10-12",
+      "start": "23:59",
+      "kind": "special",
+      "title": "Guided Tours of Scotiabank Arena",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Guided Tours of Scotiabank Arena",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfIGkd1aGHe",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
     {
       "id": "2026-10-13-espn-raptors-401908944",
       "metroId": "toronto",
@@ -68,6 +165,79 @@
       }
     },
     {
+      "id": "2026-10-13-tm-1avZZ_arA-gZd8ku",
+      "metroId": "toronto",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Emei",
+      "officialTitle": "EMEI - Night at the Opera Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Emei",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1avZZ_arA-gZd8ku",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-rZ7HnEZ1Af_9Fd",
+      "metroId": "toronto",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Daði Freyr",
+      "officialTitle": "Daði Freyr - Too Much Not Enough Tour with BRíET",
+      "place": {
+        "type": "venue",
+        "venueId": "concert-hall-888-yonge"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Daði Freyr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af_9Fd",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-1A8ZkfIGkd11jH1",
+      "metroId": "toronto",
+      "date": "2026-10-13",
+      "start": "23:59",
+      "kind": "special",
+      "title": "Guided Tours of Scotiabank Arena",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Guided Tours of Scotiabank Arena",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfIGkd11jH1",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
       "id": "2026-10-14-espn-toronto-fc-761860",
       "metroId": "toronto",
       "date": "2026-10-14",
@@ -97,6 +267,34 @@
         "seasons": "2024–2025",
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight: 6 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-14-tm-1A8Zk3eGkdHU3oH",
+      "metroId": "toronto",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Beck",
+      "officialTitle": "BECK: RIDE LONESOME TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "massey-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Beck",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zk3eGkdHU3oH",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2534,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -133,6 +331,267 @@
       }
     },
     {
+      "id": "2026-10-15-tm-1A8ZkfUGkeEGzBR",
+      "metroId": "toronto",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Leafs Fan Access Plus Ups: Penalty Box Experience - Warm-Up",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Leafs Fan Access Plus Ups",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfUGkeEGzBR",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-15-tm-1A8Zk3eGkdHUx3d",
+      "metroId": "toronto",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Beck",
+      "officialTitle": "BECK: RIDE LONESOME TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "massey-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Beck",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zk3eGkdHUx3d",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2534,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-1k7ZvPA7GAGTF3E",
+      "metroId": "toronto",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "kind": "special",
+      "title": "CBC Radio - Accent on Toronto",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Accent On Toronto",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1k7ZvPA7GAGTF3E"
+    },
+    {
+      "id": "2026-10-15-tm-177Zv0G6uNfK-Cj",
+      "metroId": "toronto",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BUNT.",
+      "officialTitle": "BUNT. - In The Toronto Round",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "BUNT.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6uNfK-Cj",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-1A8ZkfIGkd1GHHj",
+      "metroId": "toronto",
+      "date": "2026-10-15",
+      "start": "23:59",
+      "kind": "special",
+      "title": "Guided Tours of Scotiabank Arena",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Guided Tours of Scotiabank Arena",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfIGkd1GHHj",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-16-tm-177Zv0G61wro_RG",
+      "metroId": "toronto",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rugby Canada WXV Toronto V England",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Rugby Canada",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G61wro_RG"
+    },
+    {
+      "id": "2026-10-16-tm-177Zv0G6u6_KEFK",
+      "metroId": "toronto",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Jayhawks",
+      "officialTitle": "Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Jayhawks",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6u6_KEFK",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-1A8ZkodGkdw_LrT",
+      "metroId": "toronto",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "kind": "special",
+      "title": "How to Train Your Dragon 2 in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Action/Adventure"
+      },
+      "performer": "How to Train Your Dragon 2 in Concert",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkodGkdw_LrT",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-16-tm-1A8ZkuyGkdby1F9",
+      "metroId": "toronto",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Jimmy Carr: Laughs Funny",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Jimmy Carr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkuyGkdby1F9"
+    },
+    {
+      "id": "2026-10-16-tm-1AvZZ_aGkUHdlAc",
+      "metroId": "toronto",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BUNT.",
+      "officialTitle": "BUNT. - In The Toronto Round",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "BUNT.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_aGkUHdlAc",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-1A8ZkodGkdwQRLA",
+      "metroId": "toronto",
+      "date": "2026-10-17",
+      "start": "14:00",
+      "kind": "special",
+      "title": "How to Train Your Dragon 2 in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "meridian-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Action/Adventure"
+      },
+      "performer": "How to Train Your Dragon 2 in Concert",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkodGkdwQRLA",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
       "id": "2026-10-17-espn-maple-leafs-401892523",
       "metroId": "toronto",
       "date": "2026-10-17",
@@ -166,6 +625,148 @@
       }
     },
     {
+      "id": "2026-10-17-tm-1A8ZkfgGkdZkLMK",
+      "metroId": "toronto",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Leafs Fan Access Plus Ups: Fanboni",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Leafs Fan Access Plus Ups",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfgGkdZkLMK",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-17-tm-1AvZZ_AGkiQzc98",
+      "metroId": "toronto",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Buena Vista Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Buena Vista Orchestra",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_AGkiQzc98",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-1A8ZkobGke-1oba",
+      "metroId": "toronto",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bruce Cockburn",
+      "place": {
+        "type": "venue",
+        "venueId": "massey-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Bruce Cockburn",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkobGke-1oba",
+      "expectedDraw": {
+        "count": 2534,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-1AvZZ_aGkUH7hAM",
+      "metroId": "toronto",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BUNT.",
+      "officialTitle": "BUNT. - In The Toronto Round",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "BUNT.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_aGkUH7hAM",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-1A8ZkfIGkd1CGHt",
+      "metroId": "toronto",
+      "date": "2026-10-17",
+      "start": "23:59",
+      "kind": "special",
+      "title": "Guided Tours of Scotiabank Arena",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Guided Tours of Scotiabank Arena",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfIGkd1CGHt",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-18-tm-1A8ZkoVGkd7OuMk",
+      "metroId": "toronto",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "game",
+      "title": "AFC Toronto vs. Calgary Wild FC",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "AFC Toronto",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkoVGkd7OuMk"
+    },
+    {
       "id": "2026-10-18-ht-marlies-1029167",
       "metroId": "toronto",
       "date": "2026-10-18",
@@ -195,6 +796,122 @@
         "seasons": "2023–2025",
         "basis": "team",
         "note": "Typical announced crowd here for a Sunday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-1AvZZ_8GkSti75Y",
+      "metroId": "toronto",
+      "date": "2026-10-18",
+      "start": "18:05",
+      "kind": "game",
+      "title": "Oshawa Generals vs. Kitchener Rangers",
+      "place": {
+        "type": "venue",
+        "venueId": "tribute-communities-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Oshawa Generals",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_8GkSti75Y",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-18-tm-177Zv0G61KtfVqg",
+      "metroId": "toronto",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Paris Paloma",
+      "officialTitle": "Paris Paloma: The Fatal Flaw Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Paris Paloma",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G61KtfVqg",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-177Zv0G6GCWaT0D",
+      "metroId": "toronto",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Max Amini Live in Toronto!",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Max Amini",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6GCWaT0D"
+    },
+    {
+      "id": "2026-10-19-tm-177Zv0G6GKZh0VC",
+      "metroId": "toronto",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sylvan Esso",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Sylvan Esso",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6GKZh0VC",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-1AvZZ_aGkDu4V-Q",
+      "metroId": "toronto",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "AFI",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "AFI",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_aGkDu4V-Q",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -231,6 +948,125 @@
       }
     },
     {
+      "id": "2026-10-19-tm-1A8ZkfgGkdZ6TMI",
+      "metroId": "toronto",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Leafs Fan Access Plus Ups: Fanboni",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Leafs Fan Access Plus Ups",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfgGkdZ6TMI",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-19-tm-1A8ZkfIGkd12iHB",
+      "metroId": "toronto",
+      "date": "2026-10-19",
+      "start": "23:59",
+      "kind": "special",
+      "title": "Guided Tours of Scotiabank Arena",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Guided Tours of Scotiabank Arena",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfIGkd12iHB",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-20-tm-177Zv0G62e1MPrb",
+      "metroId": "toronto",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Mike D",
+      "officialTitle": "MIKE D 5D",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Mike D",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62e1MPrb",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-rZ7HnEZ1Af0tpK",
+      "metroId": "toronto",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Igorrr",
+      "officialTitle": "Igorrr, Secret Chiefs 3, VMO (Violent Magic Orchestra)",
+      "place": {
+        "type": "venue",
+        "venueId": "concert-hall-888-yonge"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Igorrr",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af0tpK",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-1A8ZkfIGkd1oGWZ",
+      "metroId": "toronto",
+      "date": "2026-10-20",
+      "start": "23:59",
+      "kind": "special",
+      "title": "Guided Tours of Scotiabank Arena",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Guided Tours of Scotiabank Arena",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfIGkd1oGWZ",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
       "id": "2026-10-21-ht-marlies-1029174",
       "metroId": "toronto",
       "date": "2026-10-21",
@@ -260,6 +1096,31 @@
         "seasons": "2023–2025",
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight: 25 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-177Zv0G62eBEGfP",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Rebecca Black",
+      "officialTitle": "Rebecca Black: Exhibitionism on Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Rebecca Black",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G62eBEGfP",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -296,6 +1157,77 @@
       }
     },
     {
+      "id": "2026-10-21-tm-1AvZZ_3GkmOn10a",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Raptors Fan Access Plus Ups - Courtside Access for Team Warmups",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Raptors Fan Access Plus Ups",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_3GkmOn10a",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-21-tm-1A8ZkfIGkd13jW4",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "start": "23:59",
+      "kind": "special",
+      "title": "Guided Tours of Scotiabank Arena",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Guided Tours of Scotiabank Arena",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfIGkd13jW4",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-22-tm-177Zv0G65rcNeqk",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Plini",
+      "officialTitle": "Plini - An Unnameable Desire North American Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Plini",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G65rcNeqk",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-22-espn-maple-leafs-401892553",
       "metroId": "toronto",
       "date": "2026-10-22",
@@ -326,6 +1258,336 @@
         "seasons": "2024–2026",
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight in October: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-1A8ZkfgGkdZaZLH",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Leafs Fan Access Plus Ups: Fanboni",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Leafs Fan Access Plus Ups",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfgGkdZaZLH",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-22-tm-177Zv0G61Qha2mj",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Allison Russell",
+      "officialTitle": "Allison Russell with very special guests Elisapie & AHI",
+      "place": {
+        "type": "venue",
+        "venueId": "massey-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Allison Russell",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G61Qha2mj",
+      "expectedDraw": {
+        "count": 2534,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-1A8ZkoVGkdd8WiP",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Menopause The Musical",
+      "place": {
+        "type": "venue",
+        "venueId": "pickering-casino-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Menopause The Musical",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkoVGkdd8WiP"
+    },
+    {
+      "id": "2026-10-22-tm-1A8ZkfIGkd1KjWP",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "23:59",
+      "kind": "special",
+      "title": "Guided Tours of Scotiabank Arena",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Guided Tours of Scotiabank Arena",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkfIGkd1KjWP",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-23-tm-rZ7HnEZ1AfGKxf",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "11:00",
+      "kind": "game",
+      "title": "TMU Bold Women's Hockey - 2026-27 Season Pass",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "TMU Bold Women's Hockey - 2026-27 Season Pass",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfGKxf"
+    },
+    {
+      "id": "2026-10-23-tm-rZ7HnEZ1A4ZdrK",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "11:15",
+      "kind": "game",
+      "title": "TMU Bold vs Toronto - School Day (Women's Hockey)",
+      "place": {
+        "type": "venue",
+        "venueId": "mattamy-athletic-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "TMU Bold vs Toronto - School Day (Women's Hockey)",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1A4ZdrK"
+    },
+    {
+      "id": "2026-10-23-tm-1A8Zk34Gkd6Scy9",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "special",
+      "title": "mike. Pre-Show VIP Upsell - DOES NOT INCLUDE A TICKET",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "LN Artist Upsell",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zk34Gkd6Scy9"
+    },
+    {
+      "id": "2026-10-23-tm-1A8Zk3KGkdpWtv-",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "MIKE.",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "MIKE.",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zk3KGkdpWtv-",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1A8Zkf_GkeJPlen",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Brampton Steelheads vs. Brantford Bulldogs",
+      "place": {
+        "type": "venue",
+        "venueId": "caa-centre-brampton"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Brampton Steelheads",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zkf_GkeJPlen",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1AvZZ_FGkUx0bXQ",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Toronto Argonauts vs. Montreal Alouettes",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Toronto Argonauts",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_FGkUx0bXQ"
+    },
+    {
+      "id": "2026-10-23-tm-1AvZZ_8GkStc7Gp",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Oshawa Generals vs. Peterborough Petes",
+      "place": {
+        "type": "venue",
+        "venueId": "tribute-communities-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Oshawa Generals",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_8GkStc7Gp",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1k7ZvPFyGA1LM7f",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dave Chappelle Karmageddon",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Dave Chappelle",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1k7ZvPFyGA1LM7f"
+    },
+    {
+      "id": "2026-10-23-tm-177Zv0G6527-XSJ",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Mike Epps",
+      "place": {
+        "type": "venue",
+        "venueId": "pickering-casino-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Mike Epps",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6527-XSJ"
+    },
+    {
+      "id": "2026-10-23-tm-rZ7HnEZ1AfaMG7",
+      "metroId": "toronto",
+      "date": "2026-10-23",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Skepsis",
+      "officialTitle": "CRUCAST",
+      "place": {
+        "type": "venue",
+        "venueId": "rebel-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Skepsis",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfaMG7",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1AtZkfYGkdNxYgN",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "09:00",
+      "kind": "show",
+      "title": "Dancehall At 9am",
+      "place": {
+        "type": "venue",
+        "venueId": "rebel-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "Dancehall At 9am",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AtZkfYGkdNxYgN",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -361,6 +1623,103 @@
       }
     },
     {
+      "id": "2026-10-24-tm-177Zv0G6Gl4Dzgx",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Judah & the Lion",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Judah & the Lion",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6Gl4Dzgx",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1A8Zkf4GkdK38B-",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Yebba",
+      "officialTitle": "Yebba: Jean Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Yebba",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zkf4GkdK38B-",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1AvZZ_oGkUi9hTo",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_oGkUi9hTo",
+      "expectedDraw": {
+        "count": 11286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-1A8Zkf_GkeJJlez",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Brampton Steelheads vs. Erie Otters",
+      "place": {
+        "type": "venue",
+        "venueId": "caa-centre-brampton"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Brampton Steelheads",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8Zkf_GkeJJlez",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
       "id": "2026-10-25-ht-marlies-1029204",
       "metroId": "toronto",
       "date": "2026-10-25",
@@ -391,23 +1750,272 @@
         "basis": "team",
         "note": "Typical announced crowd here for a Sunday in October: 6 games, 2023–2025."
       }
+    },
+    {
+      "id": "2026-10-25-tm-1AvZZ_AGklF626g",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Inter Toronto FC vs. Atlético Ottawa",
+      "place": {
+        "type": "venue",
+        "venueId": "york-lions-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Inter Toronto FC",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_AGklF626g"
+    },
+    {
+      "id": "2026-10-25-tm-177Zv0G6G9hZRkw",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "show",
+      "title": "SIENNA SPIRO",
+      "officialTitle": "Sienna Spiro: My House Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "SIENNA SPIRO",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G6G9hZRkw",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-1AvZZ_8GkStmfue",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "18:05",
+      "kind": "game",
+      "title": "Oshawa Generals vs. Sudbury Wolves",
+      "place": {
+        "type": "venue",
+        "venueId": "tribute-communities-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Oshawa Generals",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_8GkStmfue",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-26-tm-177Zv0G658v1VzJ",
+      "metroId": "toronto",
+      "date": "2026-10-26",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Periphery",
+      "officialTitle": "Periphery - A Pale White Dot Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "history-toronto"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Periphery",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G658v1VzJ",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-177Zv0G629d8ms9",
+      "metroId": "toronto",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Quadeca",
+      "place": {
+        "type": "venue",
+        "venueId": "danforth-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Quadeca",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G629d8ms9",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-1A8ZkoVGkd7hqUQ",
+      "metroId": "toronto",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "game",
+      "title": "AFC Toronto vs. Halifax Tides FC",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "AFC Toronto",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A8ZkoVGkd7hqUQ",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-26-tm-1AvZZ_aGkmWmyKb",
+      "metroId": "toronto",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "officialTitle": "Olivia Rodrigo: The Unraveled Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_aGkmWmyKb",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
     }
   ],
   "forecasts": [
+    {
+      "eventId": "2026-10-12-tm-177Zv0G62SgS2-Y",
+      "date": "2026-10-12",
+      "start": "15:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-12-tm-177Zv0G6ClCgdrW",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-12-tm-rZ7HnEZ1AfFd77",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-12-tm-1A8ZkfIGkd1aGHe",
+      "date": "2026-10-12",
+      "start": "23:59",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
     {
       "eventId": "2026-10-13-espn-raptors-401908944",
       "date": "2026-10-13",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 1.6,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "Guided Tours of Scotiabank Arena next door, back to back.",
         "method": "formula"
       },
       "draw": {
         "count": 17507,
         "low": 16950,
         "high": 18141
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-1avZZ_arA-gZd8ku",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-rZ7HnEZ1Af_9Fd",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-1A8ZkfIGkd11jH1",
+      "date": "2026-10-13",
+      "start": "23:59",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Raptors vs. Knicks next door, back to back.",
+        "method": "formula"
       }
     },
     {
@@ -427,13 +2035,25 @@
       }
     },
     {
+      "eventId": "2026-10-14-tm-1A8Zk3eGkdHU3oH",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2534
+      }
+    },
+    {
       "eventId": "2026-10-15-espn-maple-leafs-401892506",
       "date": "2026-10-15",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 4.2,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "Leafs Fan Access Plus Ups: Penalty Box Experience - Warm-Up next door, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -443,13 +2063,132 @@
       }
     },
     {
+      "eventId": "2026-10-15-tm-1A8ZkfUGkeEGzBR",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Low",
+        "why": "Maple Leafs vs. Sabres next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-1A8Zk3eGkdHUx3d",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2534
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-1k7ZvPA7GAGTF3E",
+      "date": "2026-10-15",
+      "start": "19:30",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-177Zv0G6uNfK-Cj",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-1A8ZkfIGkd1GHHj",
+      "date": "2026-10-15",
+      "start": "23:59",
+      "read": {
+        "rating": 4.2,
+        "friction": "Low",
+        "why": "Leafs Fan Access Plus Ups: Penalty Box Experience - Warm-Up and Maple Leafs vs. Sabres next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-177Zv0G61wro_RG",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Jimmy Carr: Laughs Funny 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-177Zv0G6u6_KEFK",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-1A8ZkodGkdw_LrT",
+      "date": "2026-10-16",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-1A8ZkuyGkdby1F9",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "Rugby Canada WXV Toronto V England 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-1AvZZ_aGkUHdlAc",
+      "date": "2026-10-16",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1A8ZkodGkdwQRLA",
+      "date": "2026-10-17",
+      "start": "14:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
       "eventId": "2026-10-17-espn-maple-leafs-401892523",
       "date": "2026-10-17",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 2.9,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "Leafs Fan Access Plus Ups: Fanboni next door, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -459,9 +2198,82 @@
       }
     },
     {
+      "eventId": "2026-10-17-tm-1A8ZkfgGkdZkLMK",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Maple Leafs vs. Islanders next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1AvZZ_AGkiQzc98",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1A8ZkobGke-1oba",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2534
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1AvZZ_aGkUH7hAM",
+      "date": "2026-10-17",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1A8ZkfIGkd1CGHt",
+      "date": "2026-10-17",
+      "start": "23:59",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Leafs Fan Access Plus Ups: Fanboni and Maple Leafs vs. Islanders next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-1A8ZkoVGkd7OuMk",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
       "eventId": "2026-10-18-ht-marlies-1029167",
       "date": "2026-10-18",
       "start": "16:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
       "draw": {
         "count": 3724,
         "low": 3668,
@@ -469,13 +2281,71 @@
       }
     },
     {
+      "eventId": "2026-10-18-tm-1AvZZ_8GkSti75Y",
+      "date": "2026-10-18",
+      "start": "18:05",
+      "read": {
+        "rating": 1.9,
+        "friction": "Moderate",
+        "why": "Max Amini Live in Toronto! 31 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-177Zv0G61KtfVqg",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-177Zv0G6GCWaT0D",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Oshawa Generals vs. Kitchener Rangers 31 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-177Zv0G6GKZh0VC",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-1AvZZ_aGkDu4V-Q",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
       "eventId": "2026-10-19-espn-maple-leafs-401892537",
       "date": "2026-10-19",
       "start": "19:30",
       "read": {
-        "rating": 1,
+        "rating": 4.1,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "Leafs Fan Access Plus Ups: Fanboni next door, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -485,11 +2355,68 @@
       }
     },
     {
+      "eventId": "2026-10-19-tm-1A8ZkfgGkdZ6TMI",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Low",
+        "why": "Maple Leafs vs. Sharks and Guided Tours of Scotiabank Arena next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-1A8ZkfIGkd12iHB",
+      "date": "2026-10-19",
+      "start": "23:59",
+      "read": {
+        "rating": 4.1,
+        "friction": "Low",
+        "why": "Leafs Fan Access Plus Ups: Fanboni and Maple Leafs vs. Sharks next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-177Zv0G62e1MPrb",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-rZ7HnEZ1Af0tpK",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-1A8ZkfIGkd1oGWZ",
+      "date": "2026-10-20",
+      "start": "23:59",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
       "eventId": "2026-10-21-ht-marlies-1029174",
       "date": "2026-10-21",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 4.3,
         "method": "nearby"
       },
       "draw": {
@@ -499,13 +2426,25 @@
       }
     },
     {
+      "eventId": "2026-10-21-tm-177Zv0G62eBEGfP",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
       "eventId": "2026-10-21-espn-raptors-401909837",
       "date": "2026-10-21",
       "start": "19:30",
       "read": {
-        "rating": 1,
+        "rating": 4.3,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "Raptors Fan Access Plus Ups - Courtside Access for Team Warmups next door, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -515,13 +2454,47 @@
       }
     },
     {
+      "eventId": "2026-10-21-tm-1AvZZ_3GkmOn10a",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 4.3,
+        "friction": "Low",
+        "why": "Raptors vs. Bulls and Guided Tours of Scotiabank Arena next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-1A8ZkfIGkd13jW4",
+      "date": "2026-10-21",
+      "start": "23:59",
+      "read": {
+        "rating": 4.3,
+        "friction": "Low",
+        "why": "Raptors Fan Access Plus Ups - Courtside Access for Team Warmups and Raptors vs. Bulls next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-177Zv0G65rcNeqk",
+      "date": "2026-10-22",
+      "start": "18:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
       "eventId": "2026-10-22-espn-maple-leafs-401892553",
       "date": "2026-10-22",
       "start": "19:00",
       "read": {
-        "rating": 1,
+        "rating": 4.1,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "Leafs Fan Access Plus Ups: Fanboni next door, same hours.",
         "method": "formula"
       },
       "draw": {
@@ -531,9 +2504,172 @@
       }
     },
     {
+      "eventId": "2026-10-22-tm-1A8ZkfgGkdZaZLH",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Low",
+        "why": "Maple Leafs vs. Rangers next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-177Zv0G61Qha2mj",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2534
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-1A8ZkoVGkdd8WiP",
+      "date": "2026-10-22",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-1A8ZkfIGkd1KjWP",
+      "date": "2026-10-22",
+      "start": "23:59",
+      "read": {
+        "rating": 4.1,
+        "friction": "Low",
+        "why": "Leafs Fan Access Plus Ups: Fanboni and Maple Leafs vs. Rangers next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-rZ7HnEZ1AfGKxf",
+      "date": "2026-10-23",
+      "start": "11:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-rZ7HnEZ1A4ZdrK",
+      "date": "2026-10-23",
+      "start": "11:15",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1A8Zk34Gkd6Scy9",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1A8Zk3KGkdpWtv-",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1A8Zkf_GkeJPlen",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Heavy",
+        "why": "Oshawa Generals vs. Peterborough Petes 45 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1AvZZ_FGkUx0bXQ",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Dave Chappelle Karmageddon 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1AvZZ_8GkStc7Gp",
+      "date": "2026-10-23",
+      "start": "19:05",
+      "read": {
+        "rating": 3.5,
+        "friction": "Heavy",
+        "why": "Brampton Steelheads vs. Brantford Bulldogs 45 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1k7ZvPFyGA1LM7f",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Toronto Argonauts vs. Montreal Alouettes 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-177Zv0G6527-XSJ",
+      "date": "2026-10-23",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-rZ7HnEZ1AfaMG7",
+      "date": "2026-10-23",
+      "start": "22:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1AtZkfYGkdNxYgN",
+      "date": "2026-10-24",
+      "start": "09:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
       "eventId": "2026-10-24-ht-marlies-1029200",
       "date": "2026-10-24",
       "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
       "draw": {
         "count": 3820,
         "low": 3711,
@@ -541,13 +2677,147 @@
       }
     },
     {
+      "eventId": "2026-10-24-tm-177Zv0G6Gl4Dzgx",
+      "date": "2026-10-24",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1A8Zkf4GkdK38B-",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1AvZZ_oGkUi9hTo",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11286
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1A8Zkf_GkeJJlez",
+      "date": "2026-10-25",
+      "start": "14:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Moderate",
+        "why": "Oshawa Generals vs. Sudbury Wolves 45 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
       "eventId": "2026-10-25-ht-marlies-1029204",
       "date": "2026-10-25",
       "start": "16:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
       "draw": {
         "count": 3792,
         "low": 3735,
         "high": 4433
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1AvZZ_AGklF626g",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-177Zv0G6G9hZRkw",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1AvZZ_8GkStmfue",
+      "date": "2026-10-25",
+      "start": "18:05",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Brampton Steelheads vs. Erie Otters 45 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-177Zv0G658v1VzJ",
+      "date": "2026-10-26",
+      "start": "17:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-177Zv0G629d8ms9",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-1A8ZkoVGkd7hqUQ",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Olivia Rodrigo 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-1AvZZ_aGkmWmyKb",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "AFC Toronto vs. Halifax Tides FC 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11286
       }
     }
   ]

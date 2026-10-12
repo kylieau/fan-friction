@@ -20,12 +20,12 @@
         "score": 41
       },
       "attendance": 66231,
-      "capturedAt": "2026-10-11T01:02:54.583Z",
+      "capturedAt": "2026-10-12T17:25:03.426Z",
       "duration": {
         "minutes": 205,
         "kind": "estimated"
       },
-      "startedAt": "18:03"
+      "startedAt": "21:03"
     },
     {
       "eventId": "2026-10-09-ht-seattle-thunderbirds-1023150",
@@ -44,7 +44,7 @@
         "score": 6
       },
       "attendance": 3187,
-      "capturedAt": "2026-10-11T01:02:54.585Z"
+      "capturedAt": "2026-10-12T17:25:03.427Z"
     }
   ]
 }

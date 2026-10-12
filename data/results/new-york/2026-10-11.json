@@ -19,12 +19,37 @@
         "name": "Browns",
         "score": 12
       },
-      "capturedAt": "2026-10-11T20:23:29.293Z",
+      "attendance": 67418,
+      "capturedAt": "2026-10-12T17:25:03.860Z",
       "duration": {
         "minutes": 189,
         "kind": "estimated"
       },
-      "startedAt": "10:02"
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-10-11-espn-ny-rangers-401892483",
+      "metroId": "new-york",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "ny-rangers",
+      "home": {
+        "name": "Rangers",
+        "score": 6
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 2
+      },
+      "attendance": 18006,
+      "capturedAt": "2026-10-12T17:25:03.860Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "18:08"
     }
   ]
 }

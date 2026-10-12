@@ -4,7 +4,7 @@
   "metroName": "Vancouver",
   "timeZone": "America/Vancouver",
   "capturedOn": "2026-10-12",
-  "capturedAt": "2026-10-12T08:19:04.235Z",
+  "capturedAt": "2026-10-12T17:23:58.675Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-12",
@@ -31,9 +31,339 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 30
     }
   ],
   "events": [
+    {
+      "id": "2026-10-13-tm-1AoZkoYGkemx9HB",
+      "metroId": "vancouver",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sammy Rae & The Friends",
+      "officialTitle": "Sammy Rae & The Friends - the GET DOWN!",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sammy Rae & The Friends",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZkoYGkemx9HB",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-1AoZkGyGkdOSIGy",
+      "metroId": "vancouver",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Doja Cat",
+      "officialTitle": "Doja Cat - Tour Ma Vie World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Doja Cat",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZkGyGkdOSIGy",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-1778v0G61mSHan6",
+      "metroId": "vancouver",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "glaive",
+      "officialTitle": "GLAIVE - GOD SAVE THE THREE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "vogue-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "glaive",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G61mSHan6",
+      "expectedDraw": {
+        "count": 1280,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-14-tm-16v7ZbyrvG7DKHM",
+      "metroId": "vancouver",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bruno Mars",
+      "officialTitle": "Bruno Mars - The Romantic Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bc-place"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Bruno Mars",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16v7ZbyrvG7DKHM",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 31065,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-15-tm-1Av7Z_3GkSDR602",
+      "metroId": "vancouver",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sidhu Moose Wala",
+      "officialTitle": "Signed To God World Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Sidhu Moose Wala",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_3GkSDR602",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-16-tm-LvZ18QPB0su-gRXyNNp0Y",
+      "metroId": "vancouver",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UBC Thunderbirds Football vs CGY Dinos - COUNTRY NIGHT",
+      "place": {
+        "type": "venue",
+        "venueId": "thunderbird-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "UBC Thunderbirds Football",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QPB0su-gRXyNNp0Y"
+    },
+    {
+      "id": "2026-10-16-tm-1Av7Z_eGkShVJEX",
+      "metroId": "vancouver",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bruno Mars",
+      "officialTitle": "Bruno Mars - The Romantic Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bc-place"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Bruno Mars",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_eGkShVJEX",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 31065,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-LvZ18QPBNx4p45zClN4SC",
+      "metroId": "vancouver",
+      "date": "2026-10-17",
+      "start": "17:30",
+      "kind": "game",
+      "title": "UBC Thunderbirds Men's & Women's Soccer vs. UNBC Timberwolves",
+      "place": {
+        "type": "venue",
+        "venueId": "thunderbird-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "UBC Thunderbirds Soccer",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QPBNx4p45zClN4SC"
+    },
+    {
+      "id": "2026-10-17-tm-1AoZk8gGkePO_zh",
+      "metroId": "vancouver",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "UB40",
+      "officialTitle": "UB40 - THE UNSTOPPABLE TOUR 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "UB40",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZk8gGkePO_zh",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-17-tm-1AoZkosGkdfnG7U",
+      "metroId": "vancouver",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Joanne McNally",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-vancouver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Joanne McNally",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZkosGkdfnG7U"
+    },
+    {
+      "id": "2026-10-17-tm-1Av7Z_eGkShMJIA",
+      "metroId": "vancouver",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bruno Mars",
+      "officialTitle": "Bruno Mars - The Romantic Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bc-place"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Bruno Mars",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_eGkShMJIA",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 31065,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-1AoZk8gGkeJyndJ",
+      "metroId": "vancouver",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "UB40",
+      "officialTitle": "UB40 - THE UNSTOPPABLE TOUR 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "UB40",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZk8gGkeJyndJ",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-19-tm-1AoZkoyGkeJt9_s",
+      "metroId": "vancouver",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Owen Riegling",
+      "officialTitle": "Owen Riegling: In The Feeling Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Owen Riegling",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZkoyGkeJt9_s",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
     {
       "id": "2026-10-20-espn-vancouver-canucks-401892548",
       "metroId": "vancouver",
@@ -65,6 +395,111 @@
         "seasons": "2024–2026",
         "basis": "team",
         "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-1Av7Z_aGkszVd14",
+      "metroId": "vancouver",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Finn Wolfhard",
+      "officialTitle": "Finn Wolfhard - The Common Side Effects Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Finn Wolfhard",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_aGkszVd14",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-20-tm-1Av7Z_eGkWiMwWb",
+      "metroId": "vancouver",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bruno Mars",
+      "officialTitle": "Bruno Mars - The Romantic Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bc-place"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Bruno Mars",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_eGkWiMwWb",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 31065,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-1778v0G6uhqIGUS",
+      "metroId": "vancouver",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Paul Cauthen",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Paul Cauthen",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6uhqIGUS",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-21-tm-1k78v0fJGACrKAY",
+      "metroId": "vancouver",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bruno Mars",
+      "officialTitle": "Bruno Mars - The Romantic Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bc-place"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Bruno Mars",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1k78v0fJGACrKAY",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 31065,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
       }
     },
     {
@@ -100,6 +535,188 @@
       }
     },
     {
+      "id": "2026-10-23-tm-LvZ18QNg_NkeoQksqEqiR",
+      "metroId": "vancouver",
+      "date": "2026-10-23",
+      "start": "17:30",
+      "kind": "special",
+      "title": "UBC Thunderbirds Volleyball vs. Calgary Dinos - HOME OPENER",
+      "place": {
+        "type": "venue",
+        "venueId": "thunderbird-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "UBC Thunderbirds Volleyball vs. Calgary Dinos - HOME OPENER",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QNg_NkeoQksqEqiR"
+    },
+    {
+      "id": "2026-10-23-tm-1778v0G65R46nkn",
+      "metroId": "vancouver",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Digable Planets",
+      "officialTitle": "Digable Planets - Celebrating 30 years of Blow Out Comb",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Digable Planets",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G65R46nkn",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-1778v0G65ZZe58G",
+      "metroId": "vancouver",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "BC Lions vs. Winnipeg Blue Bombers",
+      "place": {
+        "type": "venue",
+        "venueId": "bc-place"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "BC Lions",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G65ZZe58G"
+    },
+    {
+      "id": "2026-10-24-tm-LvZ18QE_QKi0bTPHVHRuu",
+      "metroId": "vancouver",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "kind": "special",
+      "title": "UBC Thunderbirds Volleyball vs. Calgary Dinos",
+      "place": {
+        "type": "venue",
+        "venueId": "thunderbird-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "UBC Thunderbirds Volleyball vs. Calgary Dinos",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QE_QKi0bTPHVHRuu"
+    },
+    {
+      "id": "2026-10-24-tm-1778v0G65KcNhDk",
+      "metroId": "vancouver",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Moontricks",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Moontricks",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G65KcNhDk",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1778v0G6G1ql6eK",
+      "metroId": "vancouver",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Phoebe Bridgers",
+      "officialTitle": "Phoebe Bridgers: The Lost Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Phoebe Bridgers",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6G1ql6eK",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-1778v0G61M_RlzB",
+      "metroId": "vancouver",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Charles Wesley Godwin",
+      "officialTitle": "Charles Wesley Godwin - Christian Name Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-vancouver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Charles Wesley Godwin",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G61M_RlzB",
+      "expectedDraw": {
+        "count": 2672,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-1Av7Z_7GkwIR5IP",
+      "metroId": "vancouver",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Vancouver Rise FC vs. Calgary Wild FC",
+      "place": {
+        "type": "venue",
+        "venueId": "swangard-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Vancouver Rise FC",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_7GkwIR5IP",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
       "id": "2026-10-25-espn-vancouver-canucks-401892581",
       "metroId": "vancouver",
       "date": "2026-10-25",
@@ -131,12 +748,95 @@
         "basis": "team",
         "note": "Typical announced crowd here for a Sunday: 11 games, 2024–2026."
       }
+    },
+    {
+      "id": "2026-10-26-tm-1778v0G6G-XudNv",
+      "metroId": "vancouver",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Dillinger Escape Plan",
+      "officialTitle": "The Dillinger Escape Plan - Final Calculating Infinity Shows",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Dillinger Escape Plan",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6G-XudNv",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-1778v0G62eO2ppW",
+      "metroId": "vancouver",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Silent Movie Mondays - Dr. Jekyll and Mr. Hyde",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-vancouver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Horror"
+      },
+      "performer": "Silent Movie Mondays - Dr. Jekyll and Mr. Hyde",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G62eO2ppW"
     }
   ],
   "forecasts": [
     {
-      "eventId": "2026-10-20-espn-vancouver-canucks-401892548",
-      "date": "2026-10-20",
+      "eventId": "2026-10-13-tm-1AoZkoYGkemx9HB",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-1AoZkGyGkdOSIGy",
+      "date": "2026-10-13",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-1778v0G61mSHan6",
+      "date": "2026-10-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1280
+      }
+    },
+    {
+      "eventId": "2026-10-14-tm-16v7ZbyrvG7DKHM",
+      "date": "2026-10-14",
       "start": "19:00",
       "read": {
         "rating": 1,
@@ -145,9 +845,176 @@
         "method": "formula"
       },
       "draw": {
+        "count": 31065
+      }
+    },
+    {
+      "eventId": "2026-10-15-tm-1Av7Z_3GkSDR602",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-LvZ18QPB0su-gRXyNNp0Y",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Bruno Mars 6.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-1Av7Z_eGkShVJEX",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 31065
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-LvZ18QPBNx4p45zClN4SC",
+      "date": "2026-10-17",
+      "start": "17:30",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Bruno Mars 6.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1AoZk8gGkePO_zh",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1AoZkosGkdfnG7U",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-1Av7Z_eGkShMJIA",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 31065
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-1AoZk8gGkeJyndJ",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-10-19-tm-1AoZkoyGkeJt9_s",
+      "date": "2026-10-19",
+      "start": "19:00",
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-10-20-espn-vancouver-canucks-401892548",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "Bruno Mars next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
         "count": 18492,
         "low": 18458,
         "high": 18692
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-1Av7Z_aGkszVd14",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-10-20-tm-1Av7Z_eGkWiMwWb",
+      "date": "2026-10-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 31065
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-1778v0G6uhqIGUS",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-10-21-tm-1k78v0fJGACrKAY",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 31065
       }
     },
     {
@@ -167,6 +1034,98 @@
       }
     },
     {
+      "eventId": "2026-10-23-tm-LvZ18QNg_NkeoQksqEqiR",
+      "date": "2026-10-23",
+      "start": "17:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Low",
+        "why": "BC Lions vs. Winnipeg Blue Bombers 6.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1778v0G65R46nkn",
+      "date": "2026-10-23",
+      "start": "18:30",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-1778v0G65ZZe58G",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-LvZ18QE_QKi0bTPHVHRuu",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Phoebe Bridgers 6.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1778v0G65KcNhDk",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1778v0G6G1ql6eK",
+      "date": "2026-10-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "UBC Thunderbirds Volleyball vs. Calgary Dinos 6.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-1778v0G61M_RlzB",
+      "date": "2026-10-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2672
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-1Av7Z_7GkwIR5IP",
+      "date": "2026-10-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
       "eventId": "2026-10-25-espn-vancouver-canucks-401892581",
       "date": "2026-10-25",
       "start": "19:00",
@@ -181,6 +1140,19 @@
         "low": 18594,
         "high": 18750
       }
+    },
+    {
+      "eventId": "2026-10-26-tm-1778v0G6G-XudNv",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-1778v0G62eO2ppW",
+      "date": "2026-10-26",
+      "start": "19:30"
     }
   ]
 }

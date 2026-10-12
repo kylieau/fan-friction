@@ -19,7 +19,7 @@
         "name": "Cincinnati",
         "score": 3
       },
-      "capturedAt": "2026-10-11T14:58:16.247Z"
+      "capturedAt": "2026-10-12T17:25:04.135Z"
     },
     {
       "eventId": "2026-10-10-espn-gt-football-401858255",
@@ -38,12 +38,12 @@
         "score": 25
       },
       "attendance": 46432,
-      "capturedAt": "2026-10-11T14:58:16.247Z",
+      "capturedAt": "2026-10-12T17:25:04.135Z",
       "duration": {
         "minutes": 201,
         "kind": "estimated"
       },
-      "startedAt": "12:36"
+      "startedAt": "15:36"
     }
   ]
 }

@@ -20,6 +20,24 @@
       "shortwave": 9,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "sacramento",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:00.516Z",
+      "feelsLikeF": 58.5,
+      "tempF": 66.1,
+      "humidity": 18,
+      "windMph": 5.7,
+      "uvIndex": 0.05,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
@@ -32,6 +50,18 @@
       "feelsLikeHighF": 68.4,
       "feelsLikeLowF": 36.5,
       "code": 1,
+      "precipProbability": 0,
+      "precipMm": 0
+    },
+    {
+      "metroId": "sacramento",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:00.516Z",
+      "feelsLikeHighF": 68,
+      "feelsLikeLowF": 37.2,
+      "code": 0,
       "precipProbability": 0,
       "precipMm": 0
     }

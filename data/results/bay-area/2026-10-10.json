@@ -20,12 +20,12 @@
         "score": 20
       },
       "attendance": 40170,
-      "capturedAt": "2026-10-11T20:23:29.792Z",
+      "capturedAt": "2026-10-12T17:25:04.353Z",
       "duration": {
         "minutes": 210,
         "kind": "estimated"
       },
-      "startedAt": "12:32"
+      "startedAt": "15:32"
     },
     {
       "eventId": "2026-10-10-espn-oakland-roots-401842280",
@@ -44,7 +44,7 @@
         "score": 0
       },
       "attendance": 9718,
-      "capturedAt": "2026-10-11T20:23:29.792Z"
+      "capturedAt": "2026-10-12T17:25:04.353Z"
     },
     {
       "eventId": "2026-10-10-espn-sharks-401892471",
@@ -63,12 +63,12 @@
         "score": 3
       },
       "attendance": 17435,
-      "capturedAt": "2026-10-11T20:23:29.792Z",
+      "capturedAt": "2026-10-12T17:25:04.353Z",
       "duration": {
         "minutes": 146,
         "kind": "estimated"
       },
-      "startedAt": "13:10"
+      "startedAt": "16:10"
     },
     {
       "eventId": "2026-10-10-espn-warriors-401898399",
@@ -83,16 +83,16 @@
         "score": 111
       },
       "away": {
-        "name": "Sacramento Kings",
+        "name": "Sac Kings",
         "score": 106
       },
       "attendance": 18064,
-      "capturedAt": "2026-10-11T20:23:29.792Z",
+      "capturedAt": "2026-10-12T17:25:04.353Z",
       "duration": {
         "minutes": 162,
         "kind": "estimated"
       },
-      "startedAt": "19:23"
+      "startedAt": "20:23"
     }
   ]
 }

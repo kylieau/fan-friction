@@ -46,6 +46,18 @@
       "code": 55,
       "precipProbability": 24,
       "precipMm": 4.2
+    },
+    {
+      "metroId": "milwaukee",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:29.320Z",
+      "feelsLikeHighF": 60.1,
+      "feelsLikeLowF": 56.2,
+      "code": 3,
+      "precipProbability": 24,
+      "precipMm": 0
     }
   ]
 }

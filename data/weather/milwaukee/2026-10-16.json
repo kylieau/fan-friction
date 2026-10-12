@@ -56,6 +56,24 @@
       "shortwave": 0,
       "cloudCover": 38,
       "code": 1
+    },
+    {
+      "metroId": "milwaukee",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:29.320Z",
+      "feelsLikeF": 34.2,
+      "tempF": 44.5,
+      "humidity": 51,
+      "windMph": 14,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 7,
+      "code": 0
     }
   ],
   "days": [
@@ -82,6 +100,18 @@
       "code": 55,
       "precipProbability": 43,
       "precipMm": 1.1
+    },
+    {
+      "metroId": "milwaukee",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:29.320Z",
+      "feelsLikeHighF": 48,
+      "feelsLikeLowF": 31.3,
+      "code": 55,
+      "precipProbability": 63,
+      "precipMm": 1.4
     }
   ]
 }

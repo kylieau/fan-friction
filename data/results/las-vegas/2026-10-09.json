@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-09",
+  "results": [
+    {
+      "eventId": "2026-10-09-espn-aces-401918300",
+      "metroId": "las-vegas",
+      "date": "2026-10-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michelob-ultra-arena",
+      "homeTeamId": "aces",
+      "home": {
+        "name": "Aces",
+        "score": 77
+      },
+      "away": {
+        "name": "Valkyries",
+        "score": 87
+      },
+      "attendance": 10218,
+      "note": "OT",
+      "capturedAt": "2026-10-12T17:25:07.588Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "18:36"
+    }
+  ]
+}

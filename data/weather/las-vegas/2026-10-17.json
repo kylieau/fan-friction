@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-17",
+  "rows": [
+    {
+      "metroId": "las-vegas",
+      "venueId": "cashman-field",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:07.197Z",
+      "feelsLikeF": 73.5,
+      "tempF": 79.4,
+      "humidity": 18,
+      "windMph": 4.8,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "las-vegas",
+      "venueId": "cashman-field",
+      "date": "2026-10-17",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:07.197Z",
+      "feelsLikeF": 73.1,
+      "tempF": 78.6,
+      "humidity": 19,
+      "windMph": 4.5,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "las-vegas",
+      "venueId": "cashman-field",
+      "date": "2026-10-17",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:07.197Z",
+      "feelsLikeF": 72.6,
+      "tempF": 77.9,
+      "humidity": 20,
+      "windMph": 4.1,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    },
+    {
+      "metroId": "las-vegas",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:07.197Z",
+      "feelsLikeF": 73.2,
+      "tempF": 78.3,
+      "humidity": 19,
+      "windMph": 3.4,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "las-vegas",
+      "venueId": "city",
+      "date": "2026-10-17",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:07.197Z",
+      "feelsLikeHighF": 73.2,
+      "feelsLikeLowF": 64.2,
+      "code": 0,
+      "precipProbability": 6,
+      "precipMm": 0
+    }
+  ]
+}

@@ -4,6 +4,30 @@
   "date": "2026-10-10",
   "results": [
     {
+      "eventId": "2026-10-10-espn-raptors-401902645",
+      "metroId": "toronto",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-arena",
+      "homeTeamId": "raptors",
+      "home": {
+        "name": "Raptors",
+        "score": 114
+      },
+      "away": {
+        "name": "Clippers",
+        "score": 106
+      },
+      "attendance": 18872,
+      "capturedAt": "2026-10-12T17:25:08.439Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "18:43"
+    },
+    {
       "eventId": "2026-10-10-espn-toronto-fc-761845",
       "metroId": "toronto",
       "date": "2026-10-10",
@@ -20,7 +44,7 @@
         "score": 1
       },
       "attendance": 21572,
-      "capturedAt": "2026-10-12T08:16:22.986Z"
+      "capturedAt": "2026-10-12T17:25:08.439Z"
     }
   ]
 }

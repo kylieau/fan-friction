@@ -20,6 +20,24 @@
       "shortwave": 29,
       "cloudCover": 100,
       "code": 3
+    },
+    {
+      "metroId": "austin",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:54.152Z",
+      "feelsLikeF": 80.6,
+      "tempF": 76.4,
+      "humidity": 87,
+      "windMph": 11.7,
+      "uvIndex": 0.25,
+      "precipProbability": 39,
+      "precipMm": 0.6,
+      "shortwave": 38,
+      "cloudCover": 23,
+      "code": 53
     }
   ],
   "days": [
@@ -34,6 +52,18 @@
       "code": 3,
       "precipProbability": 38,
       "precipMm": 0
+    },
+    {
+      "metroId": "austin",
+      "venueId": "city",
+      "date": "2026-10-23",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:54.152Z",
+      "feelsLikeHighF": 83.7,
+      "feelsLikeLowF": 77.6,
+      "code": 53,
+      "precipProbability": 40,
+      "precipMm": 5.9
     }
   ]
 }

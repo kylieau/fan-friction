@@ -20,6 +20,24 @@
       "shortwave": 0,
       "cloudCover": 87,
       "code": 3
+    },
+    {
+      "metroId": "phoenix",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:57.066Z",
+      "feelsLikeF": 72.2,
+      "tempF": 81.5,
+      "humidity": 24,
+      "windMph": 17,
+      "uvIndex": 0,
+      "precipProbability": 11,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 19,
+      "code": 0
     }
   ],
   "days": [
@@ -33,6 +51,18 @@
       "feelsLikeLowF": 64.3,
       "code": 3,
       "precipProbability": 7,
+      "precipMm": 0
+    },
+    {
+      "metroId": "phoenix",
+      "venueId": "city",
+      "date": "2026-10-16",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:57.066Z",
+      "feelsLikeHighF": 78.6,
+      "feelsLikeLowF": 66.6,
+      "code": 3,
+      "precipProbability": 16,
       "precipMm": 0
     }
   ]

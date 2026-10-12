@@ -20,6 +20,24 @@
       "shortwave": 1,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "nashville",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:50.169Z",
+      "feelsLikeF": 81.5,
+      "tempF": 80.2,
+      "humidity": 50,
+      "windMph": 4.8,
+      "uvIndex": 0,
+      "precipProbability": 10,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
     }
   ],
   "days": [
@@ -33,6 +51,18 @@
       "feelsLikeLowF": 70.7,
       "code": 3,
       "precipProbability": 9,
+      "precipMm": 0
+    },
+    {
+      "metroId": "nashville",
+      "venueId": "city",
+      "date": "2026-10-15",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:50.169Z",
+      "feelsLikeHighF": 89.8,
+      "feelsLikeLowF": 71.1,
+      "code": 1,
+      "precipProbability": 10,
       "precipMm": 0
     }
   ]

@@ -488,6 +488,78 @@
       "shortwave": 0,
       "cloudCover": 100,
       "code": 51
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "stade-saputo",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:26.339Z",
+      "feelsLikeF": 47.7,
+      "tempF": 51.4,
+      "humidity": 84,
+      "windMph": 6.7,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "stade-saputo",
+      "date": "2026-10-14",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:26.339Z",
+      "feelsLikeF": 47.1,
+      "tempF": 50.9,
+      "humidity": 85,
+      "windMph": 6.8,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "stade-saputo",
+      "date": "2026-10-14",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:26.339Z",
+      "feelsLikeF": 46.3,
+      "tempF": 50.5,
+      "humidity": 85,
+      "windMph": 7.7,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:26.339Z",
+      "feelsLikeF": 47.3,
+      "tempF": 51.1,
+      "humidity": 84,
+      "windMph": 6.7,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
     }
   ],
   "days": [
@@ -574,6 +646,18 @@
       "code": 53,
       "precipProbability": 73,
       "precipMm": 2.2
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:26.339Z",
+      "feelsLikeHighF": 47.8,
+      "feelsLikeLowF": 36.9,
+      "code": 61,
+      "precipProbability": 84,
+      "precipMm": 1.53
     }
   ]
 }

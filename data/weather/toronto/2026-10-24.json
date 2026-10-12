@@ -38,6 +38,42 @@
       "shortwave": 408,
       "cloudCover": 0,
       "code": 0
+    },
+    {
+      "metroId": "toronto",
+      "venueId": "city",
+      "date": "2026-10-24",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:18.467Z",
+      "feelsLikeF": 48.7,
+      "tempF": 52.9,
+      "humidity": 74,
+      "windMph": 6.7,
+      "uvIndex": 0,
+      "precipProbability": 20,
+      "precipMm": 0,
+      "shortwave": 1,
+      "cloudCover": 94,
+      "code": 3
+    },
+    {
+      "metroId": "toronto",
+      "venueId": "city",
+      "date": "2026-10-24",
+      "hour": 16,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:18.467Z",
+      "feelsLikeF": 49.5,
+      "tempF": 54,
+      "humidity": 70,
+      "windMph": 7.4,
+      "uvIndex": 1.85,
+      "precipProbability": 20,
+      "precipMm": 0,
+      "shortwave": 335,
+      "cloudCover": 86,
+      "code": 3
     }
   ],
   "days": [
@@ -51,6 +87,18 @@
       "feelsLikeLowF": 33.1,
       "code": 2,
       "precipProbability": 25,
+      "precipMm": 0
+    },
+    {
+      "metroId": "toronto",
+      "venueId": "city",
+      "date": "2026-10-24",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:22:18.467Z",
+      "feelsLikeHighF": 60.3,
+      "feelsLikeLowF": 45.6,
+      "code": 3,
+      "precipProbability": 20,
       "precipMm": 0
     }
   ]

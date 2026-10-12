@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-falcons-401872993",
+      "metroId": "atlanta",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mercedes-benz-stadium",
+      "homeTeamId": "falcons",
+      "home": {
+        "name": "Falcons",
+        "score": 23
+      },
+      "away": {
+        "name": "Ravens",
+        "score": 30
+      },
+      "attendance": 72392,
+      "note": "OT",
+      "capturedAt": "2026-10-12T17:25:04.135Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "20:23"
+    }
+  ]
+}

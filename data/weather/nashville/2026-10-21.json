@@ -15,6 +15,18 @@
       "code": 3,
       "precipProbability": 9,
       "precipMm": 0
+    },
+    {
+      "metroId": "nashville",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:50.169Z",
+      "feelsLikeHighF": 81.1,
+      "feelsLikeLowF": 64,
+      "code": 53,
+      "precipProbability": 7,
+      "precipMm": 2.2
     }
   ]
 }

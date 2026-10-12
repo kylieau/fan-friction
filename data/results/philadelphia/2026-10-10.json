@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-penn-football-401867960",
+      "metroId": "philadelphia",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "penn-franklin-field",
+      "homeTeamId": "penn-football",
+      "home": {
+        "name": "Penn",
+        "score": 24
+      },
+      "away": {
+        "name": "Howard",
+        "score": 20
+      },
+      "attendance": 5342,
+      "capturedAt": "2026-10-12T17:25:05.537Z",
+      "duration": {
+        "minutes": 198,
+        "kind": "estimated"
+      },
+      "startedAt": "13:00"
+    },
+    {
+      "eventId": "2026-10-10-espn-philadelphia-union-761849",
+      "metroId": "philadelphia",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "subaru-park",
+      "homeTeamId": "philadelphia-union",
+      "home": {
+        "name": "Union",
+        "score": 2
+      },
+      "away": {
+        "name": "Salt Lake",
+        "score": 1
+      },
+      "capturedAt": "2026-10-12T17:25:05.537Z"
+    },
+    {
+      "eventId": "2026-10-10-espn-temple-football-401861964",
+      "metroId": "philadelphia",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lincoln-financial-field",
+      "homeTeamId": "temple-football",
+      "home": {
+        "name": "Temple",
+        "score": 20
+      },
+      "away": {
+        "name": "UConn",
+        "score": 34
+      },
+      "attendance": 21112,
+      "capturedAt": "2026-10-12T17:25:05.537Z",
+      "duration": {
+        "minutes": 200,
+        "kind": "estimated"
+      },
+      "startedAt": "15:49"
+    }
+  ]
+}

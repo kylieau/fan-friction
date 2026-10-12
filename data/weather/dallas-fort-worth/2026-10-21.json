@@ -502,6 +502,18 @@
       "code": 51,
       "precipProbability": 14,
       "precipMm": 2.5
+    },
+    {
+      "metroId": "dallas-fort-worth",
+      "venueId": "city",
+      "date": "2026-10-21",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:21.319Z",
+      "feelsLikeHighF": 84.7,
+      "feelsLikeLowF": 77.3,
+      "code": 55,
+      "precipProbability": 31,
+      "precipMm": 4.2
     }
   ]
 }

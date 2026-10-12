@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-golden-knights-401892481",
+      "metroId": "las-vegas",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "golden-knights",
+      "home": {
+        "name": "Golden Knights",
+        "score": 2
+      },
+      "away": {
+        "name": "Kings",
+        "score": 1
+      },
+      "attendance": 16768,
+      "note": "OT",
+      "capturedAt": "2026-10-12T17:25:07.588Z",
+      "duration": {
+        "minutes": 162,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-10-10-espn-unlv-football-401864518",
+      "metroId": "las-vegas",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allegiant-stadium",
+      "homeTeamId": "unlv-football",
+      "home": {
+        "name": "UNLV",
+        "score": 13
+      },
+      "away": {
+        "name": "N Dakota St",
+        "score": 7
+      },
+      "attendance": 33516,
+      "capturedAt": "2026-10-12T17:25:07.588Z",
+      "duration": {
+        "minutes": 205,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

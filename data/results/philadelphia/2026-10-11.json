@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-flyers-401892484",
+      "metroId": "philadelphia",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "flyers",
+      "home": {
+        "name": "Flyers",
+        "score": 1
+      },
+      "away": {
+        "name": "Hurricanes",
+        "score": 4
+      },
+      "attendance": 18914,
+      "capturedAt": "2026-10-12T17:25:05.537Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

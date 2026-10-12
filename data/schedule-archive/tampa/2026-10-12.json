@@ -4,7 +4,7 @@
   "metroName": "Tampa",
   "timeZone": "America/New_York",
   "capturedOn": "2026-10-12",
-  "capturedAt": "2026-10-12T06:30:27.897Z",
+  "capturedAt": "2026-10-12T17:23:23.138Z",
   "horizonDays": 14,
   "window": {
     "from": "2026-10-12",
@@ -31,6 +31,11 @@
       "id": "seed",
       "name": "Hand-seeded test nights",
       "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 21
     }
   ],
   "events": [
@@ -71,6 +76,56 @@
         "planning": true,
         "basis": "building",
         "note": "No past playoff crowds on file for this round; the building's capacity for this sport. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-vvG1VZ_drCw2hk",
+      "metroId": "tampa",
+      "date": "2026-10-13",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Tedeschi Trucks Band",
+      "officialTitle": "Tedeschi Trucks Band: Future Soul 2026 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "baycare-sound"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Tedeschi Trucks Band",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_drCw2hk",
+      "expectedDraw": {
+        "count": 9000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-13-tm-Z7r9jZ1A70bo9",
+      "metroId": "tampa",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Basement",
+      "officialTitle": "Basement w/ Momma",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Basement",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70bo9",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
       }
     },
     {
@@ -132,6 +187,51 @@
       "sourceId": "espn"
     },
     {
+      "id": "2026-10-15-tm-Z7r9jZ1AAZJ1_",
+      "metroId": "tampa",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "kind": "special",
+      "title": "The Vampire Circus",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "The Vampire Circus",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZJ1_"
+    },
+    {
+      "id": "2026-10-16-tm-vvG1VZ_Fkbpz7W",
+      "metroId": "tampa",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Cavetown",
+      "officialTitle": "Cavetown - Running With Scissors Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Cavetown",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_Fkbpz7W",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-17-espn-lightning-401892521",
       "metroId": "tampa",
       "date": "2026-10-17",
@@ -155,6 +255,31 @@
       "sourceId": "espn"
     },
     {
+      "id": "2026-10-17-tm-vvG1VZ_apqvI2m",
+      "metroId": "tampa",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Toadies",
+      "officialTitle": "Toadies: The Charmer Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Toadies",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_apqvI2m",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
       "id": "2026-10-17-espn-usf-football-401862806",
       "metroId": "tampa",
       "date": "2026-10-17",
@@ -175,6 +300,31 @@
       },
       "crowd": [],
       "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-17-tm-vvG1VZ_8CbjVxk",
+      "metroId": "tampa",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Gente De Zona",
+      "officialTitle": "Suncoast Credit Union \"Juntos y con Ritmo\"",
+      "place": {
+        "type": "venue",
+        "venueId": "yuengling-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Gente De Zona",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_8CbjVxk",
+      "expectedDraw": {
+        "count": 5934,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
     },
     {
       "id": "2026-10-17-espn-rowdies-401842293",
@@ -220,6 +370,95 @@
       },
       "crowd": [],
       "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-18-tm-vvG1VZ_u5-2cQ_",
+      "metroId": "tampa",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Pepsi Tailgate: Tampa Bay Buccaneers Vs. Pittsburgh Steelers",
+      "place": {
+        "type": "venue",
+        "venueId": "raymond-james-stadium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Tampa Bay Buccaneers Tailgate",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_u5-2cQ_"
+    },
+    {
+      "id": "2026-10-18-tm-vvG1VZ_1WFWwMX",
+      "metroId": "tampa",
+      "date": "2026-10-18",
+      "start": "17:00",
+      "kind": "show",
+      "title": "Arch Enemy",
+      "officialTitle": "Arch Enemy & The Black Dahlia Murder: Wrath Across North America 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Arch Enemy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_1WFWwMX",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-Z7r9jZ1A7PIop",
+      "metroId": "tampa",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Rumours of Fleetwood Mac",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Rumours of Fleetwood Mac",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PIop",
+      "expectedDraw": {
+        "count": 2180,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-18-tm-vvG1VZ_CEWtcn_",
+      "metroId": "tampa",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Grief Sucks: A One Man Show By KevOnStage",
+      "place": {
+        "type": "venue",
+        "venueId": "tampa-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "KevOnStage",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_CEWtcn_"
     },
     {
       "id": "2026-10-19-mlb-849815",
@@ -294,6 +533,196 @@
       }
     },
     {
+      "id": "2026-10-21-tm-Z7r9jZ1AAZJGe",
+      "metroId": "tampa",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Concert: A Tribute To ABBA",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Concert: A Tribute To ABBA",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZJGe",
+      "expectedDraw": {
+        "count": 2180,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG1VZ_1mYOzEm",
+      "metroId": "tampa",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Jake Owen",
+      "place": {
+        "type": "venue",
+        "venueId": "baycare-sound"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Jake Owen",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_1mYOzEm",
+      "expectedDraw": {
+        "count": 9000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-22-tm-vvG1VZ_23ia7zG",
+      "metroId": "tampa",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "EsDeeKid",
+      "officialTitle": "EsDeeKid - Council House Rat Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "EsDeeKid",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_23ia7zG",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-vvG1VZ_GGmXWg3",
+      "metroId": "tampa",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Scene Queen",
+      "officialTitle": "Scene Queen: METALICIOUS",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Scene Queen",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_GGmXWg3",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-23-tm-Z7r9jZ1A7xoQ8",
+      "metroId": "tampa",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "kind": "show",
+      "title": "CAKE",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "CAKE",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xoQ8",
+      "expectedDraw": {
+        "count": 2180,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1A7x9GA",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Hip Abduction",
+      "place": {
+        "type": "venue",
+        "venueId": "baycare-sound"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Hip Abduction",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x9GA",
+      "expectedDraw": {
+        "count": 9000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAvAqf",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Josh Thomas",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Josh Thomas",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvAqf",
+      "expectedDraw": {
+        "count": 2180,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-24-tm-Z7r9jZ1AAZEFk",
+      "metroId": "tampa",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Golden Girls: The Laughs Continue",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Golden Girls: The Laughs Continue",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZEFk"
+    },
+    {
       "id": "2026-10-24-espn-rowdies-401842305",
       "metroId": "tampa",
       "date": "2026-10-24",
@@ -314,6 +743,75 @@
       },
       "crowd": [],
       "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-25-tm-vvG1VZ_6NO_Ch4",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Turnpike Troubadours",
+      "place": {
+        "type": "venue",
+        "venueId": "baycare-sound"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Turnpike Troubadours",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_6NO_Ch4",
+      "expectedDraw": {
+        "count": 9000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-25-tm-vvG1VZ_opLsz5J",
+      "metroId": "tampa",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Yung Gravy",
+      "officialTitle": "Yung Gravy: The Joyrider Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "jannus-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Yung Gravy",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1VZ_opLsz5J",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AAZEFN",
+      "metroId": "tampa",
+      "date": "2026-10-26",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dan and Phil",
+      "place": {
+        "type": "venue",
+        "venueId": "ruth-eckerd-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Dan and Phil",
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZEFN"
     }
   ],
   "forecasts": [
@@ -331,6 +829,32 @@
         "count": 25025,
         "low": 25025,
         "high": 25025
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-vvG1VZ_drCw2hk",
+      "date": "2026-10-13",
+      "start": "18:30",
+      "read": {
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "Rays vs. Guardians 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9000
+      }
+    },
+    {
+      "eventId": "2026-10-13-tm-Z7r9jZ1A70bo9",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
       }
     },
     {
@@ -361,14 +885,43 @@
       }
     },
     {
+      "eventId": "2026-10-15-tm-Z7r9jZ1AAZJ1_",
+      "date": "2026-10-15",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-16-tm-vvG1VZ_Fkbpz7W",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
       "eventId": "2026-10-17-espn-lightning-401892521",
       "date": "2026-10-17",
       "start": "16:00",
       "read": {
-        "rating": 3.3,
+        "rating": 3.7,
         "friction": "Moderate",
         "why": "South Florida vs. Kent State 3.9 mi away, same hours.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1VZ_apqvI2m",
+      "date": "2026-10-17",
+      "start": "18:00",
+      "read": {
+        "rating": 3.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
       }
     },
     {
@@ -376,10 +929,24 @@
       "date": "2026-10-17",
       "start": "19:00",
       "read": {
-        "rating": 3.3,
-        "friction": "Moderate",
-        "why": "Rain in the forecast at a 7:00 pm start.",
+        "rating": 3.7,
+        "friction": "Low",
+        "why": "Lightning vs. Canucks 3.9 mi away, same hours.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-17-tm-vvG1VZ_8CbjVxk",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 3.7,
+        "friction": "Moderate",
+        "why": "South Florida vs. Kent State and Lightning vs. Canucks 8.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5934
       }
     },
     {
@@ -387,7 +954,7 @@
       "date": "2026-10-17",
       "start": "19:30",
       "read": {
-        "rating": 3.3,
+        "rating": 3.7,
         "friction": "Moderate",
         "why": "South Florida vs. Kent State and Lightning vs. Canucks 16 mi away, same hours.",
         "method": "formula"
@@ -398,10 +965,54 @@
       "date": "2026-10-18",
       "start": "13:00",
       "read": {
-        "rating": 1,
+        "rating": 6.7,
         "friction": "Low",
-        "why": "The biggest event around.",
+        "why": "Pepsi Tailgate: Tampa Bay Buccaneers Vs. Pittsburgh Steelers next door, same hours.",
         "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1VZ_u5-2cQ_",
+      "date": "2026-10-18",
+      "start": "13:00",
+      "read": {
+        "rating": 6.7,
+        "friction": "Low",
+        "why": "Buccaneers vs. Steelers next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1VZ_1WFWwMX",
+      "date": "2026-10-18",
+      "start": "17:00",
+      "read": {
+        "rating": 6.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-Z7r9jZ1A7PIop",
+      "date": "2026-10-18",
+      "start": "19:00",
+      "read": {
+        "rating": 6.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2180
+      }
+    },
+    {
+      "eventId": "2026-10-18-tm-vvG1VZ_CEWtcn_",
+      "date": "2026-10-18",
+      "start": "19:30",
+      "read": {
+        "rating": 6.7,
+        "method": "nearby"
       }
     },
     {
@@ -427,7 +1038,7 @@
       "read": {
         "rating": 3.7,
         "friction": "Low",
-        "why": "86° feels-like at a 8:00 pm start, no roof.",
+        "why": "The biggest event around.",
         "method": "formula"
       },
       "draw": {
@@ -437,15 +1048,131 @@
       }
     },
     {
+      "eventId": "2026-10-21-tm-Z7r9jZ1AAZJGe",
+      "date": "2026-10-21",
+      "start": "20:00",
+      "draw": {
+        "count": 2180
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1VZ_1mYOzEm",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9000
+      }
+    },
+    {
+      "eventId": "2026-10-22-tm-vvG1VZ_23ia7zG",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-vvG1VZ_GGmXWg3",
+      "date": "2026-10-23",
+      "start": "19:00",
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-23-tm-Z7r9jZ1A7xoQ8",
+      "date": "2026-10-23",
+      "start": "20:30",
+      "draw": {
+        "count": 2180
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1A7x9GA",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Rowdies vs. Sporting JAX 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9000
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAvAqf",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2180
+      }
+    },
+    {
+      "eventId": "2026-10-24-tm-Z7r9jZ1AAZEFk",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
       "eventId": "2026-10-24-espn-rowdies-401842305",
       "date": "2026-10-24",
       "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The Hip Abduction 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1VZ_6NO_Ch4",
+      "date": "2026-10-25",
+      "start": "19:00",
       "read": {
         "rating": 1,
         "friction": "Low",
         "why": "The biggest event around.",
         "method": "formula"
+      },
+      "draw": {
+        "count": 9000
       }
+    },
+    {
+      "eventId": "2026-10-25-tm-vvG1VZ_opLsz5J",
+      "date": "2026-10-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AAZEFN",
+      "date": "2026-10-26",
+      "start": "19:30"
     }
   ]
 }

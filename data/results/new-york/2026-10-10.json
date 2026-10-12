@@ -20,12 +20,12 @@
         "score": 1
       },
       "attendance": 15929,
-      "capturedAt": "2026-10-11T14:58:15.846Z",
+      "capturedAt": "2026-10-12T17:25:03.860Z",
       "duration": {
         "minutes": 150,
         "kind": "estimated"
       },
-      "startedAt": "12:38"
+      "startedAt": "15:38"
     },
     {
       "eventId": "2026-10-10-espn-fordham-football-401868011",
@@ -44,12 +44,12 @@
         "score": 14
       },
       "attendance": 1825,
-      "capturedAt": "2026-10-11T14:58:15.846Z",
+      "capturedAt": "2026-10-12T17:25:03.860Z",
       "duration": {
         "minutes": 173,
         "kind": "estimated"
       },
-      "startedAt": "12:32"
+      "startedAt": "15:32"
     },
     {
       "eventId": "2026-10-10-espn-islanders-401892479",
@@ -68,12 +68,12 @@
         "score": 5
       },
       "attendance": 17345,
-      "capturedAt": "2026-10-11T14:58:15.846Z",
+      "capturedAt": "2026-10-12T17:25:03.860Z",
       "duration": {
         "minutes": 150,
         "kind": "estimated"
       },
-      "startedAt": "16:39"
+      "startedAt": "19:39"
     },
     {
       "eventId": "2026-10-10-espn-red-bulls-761853",
@@ -91,7 +91,7 @@
         "name": "San Diego FC",
         "score": 1
       },
-      "capturedAt": "2026-10-11T14:58:15.846Z"
+      "capturedAt": "2026-10-12T17:25:03.860Z"
     }
   ]
 }

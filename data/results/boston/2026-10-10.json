@@ -20,7 +20,7 @@
         "score": 1
       },
       "attendance": 17850,
-      "capturedAt": "2026-10-12T06:27:56.243Z",
+      "capturedAt": "2026-10-12T17:25:05.315Z",
       "duration": {
         "minutes": 143,
         "kind": "estimated"
@@ -44,12 +44,12 @@
         "score": 106
       },
       "attendance": 19156,
-      "capturedAt": "2026-10-12T06:27:56.243Z",
+      "capturedAt": "2026-10-12T17:25:05.315Z",
       "duration": {
         "minutes": 159,
         "kind": "estimated"
       },
-      "startedAt": "18:51"
+      "startedAt": "19:51"
     },
     {
       "eventId": "2026-10-10-espn-revolution-761851",
@@ -67,7 +67,7 @@
         "name": "Sounders",
         "score": 3
       },
-      "capturedAt": "2026-10-12T06:27:56.243Z"
+      "capturedAt": "2026-10-12T17:25:05.315Z"
     }
   ]
 }

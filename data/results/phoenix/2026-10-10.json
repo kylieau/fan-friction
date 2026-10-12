@@ -20,7 +20,7 @@
         "score": 12
       },
       "attendance": 47931,
-      "capturedAt": "2026-10-12T08:13:43.364Z",
+      "capturedAt": "2026-10-12T17:25:06.905Z",
       "duration": {
         "minutes": 237,
         "kind": "estimated"
@@ -44,7 +44,7 @@
         "score": 4
       },
       "note": "OT",
-      "capturedAt": "2026-10-12T08:13:43.364Z"
+      "capturedAt": "2026-10-12T17:25:06.905Z"
     },
     {
       "eventId": "2026-10-10-espn-phoenix-rising-401842279",
@@ -59,10 +59,10 @@
         "score": 3
       },
       "away": {
-        "name": "Las Vegas",
+        "name": "Lights",
         "score": 2
       },
-      "capturedAt": "2026-10-12T08:13:43.364Z"
+      "capturedAt": "2026-10-12T17:25:06.905Z"
     },
     {
       "eventId": "2026-10-10-espn-suns-401898720",
@@ -81,7 +81,7 @@
         "score": 98
       },
       "attendance": 17071,
-      "capturedAt": "2026-10-12T08:13:43.364Z",
+      "capturedAt": "2026-10-12T17:25:06.905Z",
       "duration": {
         "minutes": 155,
         "kind": "estimated"

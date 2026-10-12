@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-13",
+  "rows": [
+    {
+      "metroId": "philadelphia",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:36.983Z",
+      "feelsLikeF": 68.6,
+      "tempF": 67,
+      "humidity": 87,
+      "windMph": 7.1,
+      "uvIndex": 0,
+      "precipProbability": 4,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 0,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "philadelphia",
+      "venueId": "city",
+      "date": "2026-10-13",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T17:21:36.983Z",
+      "feelsLikeHighF": 74.8,
+      "feelsLikeLowF": 55.7,
+      "code": 3,
+      "precipProbability": 5,
+      "precipMm": 0
+    }
+  ]
+}

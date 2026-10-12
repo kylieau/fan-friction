@@ -20,12 +20,12 @@
         "score": 5
       },
       "attendance": 18120,
-      "capturedAt": "2026-10-11T14:58:16.700Z",
+      "capturedAt": "2026-10-12T17:25:04.589Z",
       "duration": {
         "minutes": 150,
         "kind": "estimated"
       },
-      "startedAt": "16:09"
+      "startedAt": "19:09"
     },
     {
       "eventId": "2026-10-10-espn-chicago-fire-761846",
@@ -43,7 +43,7 @@
         "name": "NYCFC",
         "score": 1
       },
-      "capturedAt": "2026-10-11T14:58:16.700Z"
+      "capturedAt": "2026-10-12T17:25:04.589Z"
     },
     {
       "eventId": "2026-10-10-espn-northwestern-football-401858482",
@@ -62,12 +62,12 @@
         "score": 14
       },
       "attendance": 25629,
-      "capturedAt": "2026-10-11T14:58:16.700Z",
+      "capturedAt": "2026-10-12T17:25:04.589Z",
       "duration": {
         "minutes": 202,
         "kind": "estimated"
       },
-      "startedAt": "09:29"
+      "startedAt": "12:29"
     },
     {
       "eventId": "2026-10-10-ht-chicago-wolves-1029110",
@@ -86,7 +86,7 @@
         "score": 6
       },
       "attendance": 7329,
-      "capturedAt": "2026-10-11T14:58:16.701Z"
+      "capturedAt": "2026-10-12T17:25:04.590Z"
     }
   ]
 }

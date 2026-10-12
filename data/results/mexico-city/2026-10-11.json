@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-pumas-unam-401876947",
+      "metroId": "mexico-city",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-olimpico-universitario",
+      "homeTeamId": "pumas-unam",
+      "home": {
+        "name": "Pumas",
+        "score": 3
+      },
+      "away": {
+        "name": "Cruz Azul",
+        "score": 3
+      },
+      "capturedAt": "2026-10-12T17:25:07.394Z"
+    }
+  ]
+}

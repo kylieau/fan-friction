@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-10-10",
+  "results": [
+    {
+      "eventId": "2026-10-10-espn-club-america-401876950",
+      "metroId": "mexico-city",
+      "date": "2026-10-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "club-america",
+      "home": {
+        "name": "América",
+        "score": 1
+      },
+      "away": {
+        "name": "Monterrey",
+        "score": 1
+      },
+      "capturedAt": "2026-10-12T17:25:07.394Z"
+    }
+  ]
+}
