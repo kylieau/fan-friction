@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "teamId": "st-thomas-mbb",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2025-11-08",
+      "start": "19:00",
+      "opponent": "Army",
+      "venueId": "anderson-arena",
+      "attendance": 5325,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2025-11-13",
+      "start": "19:00",
+      "opponent": "Green Bay",
+      "venueId": "anderson-arena",
+      "attendance": 2658,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2025-11-29",
+      "start": "19:00",
+      "opponent": "Lawrence",
+      "venueId": "anderson-arena",
+      "attendance": 1988,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2025-12-07",
+      "start": "12:00",
+      "opponent": "Weber St",
+      "venueId": "anderson-arena",
+      "attendance": 1998,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2025-12-11",
+      "start": "19:00",
+      "opponent": "St Johns (MN)",
+      "venueId": "anderson-arena",
+      "attendance": 5325,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": "19:00",
+      "opponent": "UC Riverside",
+      "venueId": "anderson-arena",
+      "attendance": 1780,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2025-12-28",
+      "start": "13:00",
+      "opponent": "N Central",
+      "venueId": "anderson-arena",
+      "attendance": 1646,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2026-01-04",
+      "start": "12:00",
+      "opponent": "Denver",
+      "venueId": "anderson-arena",
+      "attendance": 2541,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2026-01-07",
+      "start": "20:00",
+      "opponent": "South Dakota",
+      "venueId": "anderson-arena",
+      "attendance": 2004,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2026-01-22",
+      "start": "20:00",
+      "opponent": "S Dakota St",
+      "venueId": "anderson-arena",
+      "attendance": 2322,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2026-02-01",
+      "start": "13:00",
+      "opponent": "Kansas City",
+      "venueId": "anderson-arena",
+      "attendance": 2552,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2026-02-07",
+      "start": "19:00",
+      "opponent": "Oral Roberts",
+      "venueId": "anderson-arena",
+      "attendance": 2612,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2026-02-26",
+      "start": "20:00",
+      "opponent": "N Dakota St",
+      "venueId": "anderson-arena",
+      "attendance": 4708,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "st-thomas-mbb",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": "19:00",
+      "opponent": "Omaha",
+      "venueId": "anderson-arena",
+      "attendance": 2911,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

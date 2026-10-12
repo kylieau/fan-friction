@@ -43955,6 +43955,2323 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "games": 3,
     "seasons": "2024–2025"
   }
+,
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "venueId": "huntington-bank-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 47118,
+    "low": 44735,
+    "high": 48659,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "venueId": "huntington-bank-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 50805,
+    "low": 49290,
+    "high": 52217,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "venueId": "huntington-bank-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 46843,
+    "low": 44534,
+    "high": 48696,
+    "games": 17,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "venueId": "huntington-bank-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 46234,
+    "low": 43491,
+    "high": 47472,
+    "games": 7,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "venueId": "huntington-bank-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 49254,
+    "low": 48696,
+    "high": 50913,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "venueId": "huntington-bank-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 45339,
+    "low": 44266,
+    "high": 46038,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 8558,
+    "low": 7431,
+    "high": 9202,
+    "games": 53,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 7132,
+    "low": 7054,
+    "high": 7401,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 8239,
+    "low": 7261,
+    "high": 8976,
+    "games": 25,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 9365,
+    "low": 8902,
+    "high": 9948,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 8724,
+    "low": 8478,
+    "high": 8916,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 7051,
+    "low": 6786,
+    "high": 7546,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 7450,
+    "low": 6990,
+    "high": 8228,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 8658,
+    "low": 7816,
+    "high": 9031,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8983,
+    "low": 8066,
+    "high": 10021,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 11062,
+    "low": 9721,
+    "high": 11201,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 9652,
+    "low": 9275,
+    "high": 10021,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 7431,
+    "low": 7347,
+    "high": 8019,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 8254,
+    "low": 8048,
+    "high": 8571,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "venueId": "williams-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 8048,
+    "low": 7820,
+    "high": 8144,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 4032,
+    "low": 2953,
+    "high": 4838,
+    "games": 30,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3432,
+    "low": 2926,
+    "high": 4233,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4105,
+    "low": 3630,
+    "high": 4352,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 4168,
+    "low": 4036,
+    "high": 4903,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 2946,
+    "low": 2781,
+    "high": 2973,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2812,
+    "low": 2808,
+    "high": 2872,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2939,
+    "low": 2821,
+    "high": 3028,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 2973,
+    "low": 2939,
+    "high": 3083,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 4854,
+    "low": 4341,
+    "high": 6118,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 5632,
+    "low": 5333,
+    "high": 6200,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "venueId": "williams-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 5495,
+    "low": 4422,
+    "high": 6637,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 10810,
+    "low": 8821,
+    "high": 12592,
+    "games": 43,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 10516,
+    "low": 8846,
+    "high": 12614,
+    "games": 22,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 8910,
+    "low": 8359,
+    "high": 9411,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 9105,
+    "low": 8802,
+    "high": 10812,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 10824,
+    "low": 10221,
+    "high": 12778,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 12824,
+    "low": 11317,
+    "high": 14413,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 8816,
+    "low": 8664,
+    "high": 10543,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 10810,
+    "low": 10801,
+    "high": 12101,
+    "games": 9,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 10801,
+    "low": 9789,
+    "high": 10806,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 12101,
+    "low": 10436,
+    "high": 12253,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 10806,
+    "low": 8818,
+    "high": 14597,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 15124,
+    "low": 14773,
+    "high": 15815,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "venueId": "grand-casino-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 7216,
+    "low": 5158,
+    "high": 8748,
+    "games": 35,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5001,
+    "low": 4627,
+    "high": 6195,
+    "games": 15,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 4854,
+    "low": 4467,
+    "high": 5112,
+    "games": 8,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 6330,
+    "low": 4669,
+    "high": 6673,
+    "games": 5,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "venueId": "grand-casino-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8866,
+    "low": 8476,
+    "high": 9121,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "venueId": "grand-casino-arena",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 9159,
+    "low": 8776,
+    "high": 9568,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "venueId": "grand-casino-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 8276,
+    "low": 7817,
+    "high": 9599,
+    "games": 12,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "venueId": "grand-casino-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 7895,
+    "low": 7817,
+    "high": 8410,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "venueId": "grand-casino-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 9536,
+    "low": 8402,
+    "high": 9731,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 19682,
+    "low": 19597,
+    "high": 19744,
+    "games": 32,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19667,
+    "low": 18954,
+    "high": 19728,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 19742,
+    "low": 19713,
+    "high": 19758,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19686,
+    "low": 19607,
+    "high": 19744,
+    "games": 24,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 19315,
+    "low": 18220,
+    "high": 19461,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 19633,
+    "low": 19597,
+    "high": 19672,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 19677,
+    "low": 19542,
+    "high": 19716,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 19742,
+    "low": 19719,
+    "high": 19749,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 19619,
+    "low": 19526,
+    "high": 19685,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 6325,
+    "low": 4945,
+    "high": 7455,
+    "games": 219,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4144,
+    "low": 4098,
+    "high": 4729,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 5646,
+    "low": 4459,
+    "high": 6943,
+    "games": 102,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 3092,
+    "low": 2909,
+    "high": 3963,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 4826,
+    "low": 4427,
+    "high": 5492,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 5717,
+    "low": 5008,
+    "high": 6325,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 7783,
+    "low": 5776,
+    "high": 8189,
+    "games": 16,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 7339,
+    "low": 6891,
+    "high": 8736,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 5619,
+    "low": 5163,
+    "high": 6197,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7221,
+    "low": 5910,
+    "high": 8218,
+    "games": 35,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 3789,
+    "low": 3516,
+    "high": 4334,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 5132,
+    "low": 4647,
+    "high": 5910,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 8146,
+    "low": 7585,
+    "high": 8561,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 8168,
+    "low": 7130,
+    "high": 8334,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 8021,
+    "low": 7799,
+    "high": 8255,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 7505,
+    "low": 6946,
+    "high": 8001,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7024,
+    "low": 6154,
+    "high": 7558,
+    "games": 44,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 4334,
+    "low": 4074,
+    "high": 4423,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 6279,
+    "low": 6048,
+    "high": 6513,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 7230,
+    "low": 6915,
+    "high": 8039,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 7630,
+    "low": 7079,
+    "high": 8141,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 7114,
+    "low": 6972,
+    "high": 7452,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 7524,
+    "low": 7122,
+    "high": 8057,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 6352,
+    "low": 5436,
+    "high": 7266,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 3918,
+    "low": 3397,
+    "high": 4928,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 5614,
+    "low": 4686,
+    "high": 7216,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 6705,
+    "low": 6536,
+    "high": 7833,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 6120,
+    "low": 5887,
+    "high": 6758,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 7241,
+    "low": 6937,
+    "high": 7663,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "venueId": "chs-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 6142,
+    "low": 5963,
+    "high": 6863,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-mbb",
+    "venueId": "anderson-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 2541,
+    "low": 1998,
+    "high": 2658,
+    "games": 13,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-mbb",
+    "venueId": "anderson-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2658,
+    "low": 2322,
+    "high": 4708,
+    "games": 5,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-mbb",
+    "venueId": "anderson-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2300,
+    "low": 1936,
+    "high": 2687,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-mbb",
+    "venueId": "anderson-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2270,
+    "low": 1910,
+    "high": 2544,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-wbb",
+    "venueId": "anderson-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 478,
+    "low": 370,
+    "high": 558,
+    "games": 17,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-wbb",
+    "venueId": "anderson-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 406,
+    "low": 281,
+    "high": 501,
+    "games": 9,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-wbb",
+    "venueId": "anderson-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 501,
+    "low": 454,
+    "high": 603,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-wbb",
+    "venueId": "anderson-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 318,
+    "low": 300,
+    "high": 438,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-wbb",
+    "venueId": "anderson-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 628,
+    "low": 589,
+    "high": 740,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-thomas-wbb",
+    "venueId": "anderson-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 389,
+    "low": 388,
+    "high": 445,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 18024,
+    "low": 18024,
+    "high": 18978,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18978,
+    "low": 18501,
+    "high": 18978,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 9038,
+    "low": 8624,
+    "high": 10227,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18024,
+    "low": 17428,
+    "high": 18978,
+    "games": 58,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18024,
+    "low": 17875,
+    "high": 18978,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18978,
+    "low": 18024,
+    "high": 18978,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17955,
+    "low": 17303,
+    "high": 18024,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18024,
+    "low": 18024,
+    "high": 18024,
+    "games": 3,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 15308,
+    "low": 14663,
+    "high": 17143,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18024,
+    "low": 18024,
+    "high": 18263,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18024,
+    "low": 17590,
+    "high": 18978,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18978,
+    "low": 18024,
+    "high": 18978,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "friday",
+    "month": 2,
+    "count": 18501,
+    "low": 18024,
+    "high": 18978,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 18978,
+    "low": 18263,
+    "high": 18978,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18501,
+    "low": 17949,
+    "high": 18978,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18978,
+    "low": 18024,
+    "high": 18978,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 18978,
+    "low": 18740,
+    "high": 18978,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 18978,
+    "low": 18501,
+    "high": 18978,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 18024,
+    "low": 17684,
+    "high": 18501,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18024,
+    "low": 18024,
+    "high": 18978,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18978,
+    "low": 18024,
+    "high": 18978,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 18978,
+    "low": 18501,
+    "high": 18978,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 18978,
+    "low": 18740,
+    "high": 18978,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18024,
+    "low": 18024,
+    "high": 18740,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 18978,
+    "low": 18740,
+    "high": 18978,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 18978,
+    "low": 17979,
+    "high": 18978,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 18978,
+    "low": 17222,
+    "high": 18978,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 22040,
+    "low": 18166,
+    "high": 26816,
+    "games": 242,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 36042,
+    "low": 35819,
+    "high": 36413,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19666,
+    "low": 15177,
+    "high": 22725,
+    "games": 117,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 14348,
+    "low": 12436,
+    "high": 18026,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 18130,
+    "low": 14710,
+    "high": 22235,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 20112,
+    "low": 17882,
+    "high": 24188,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 25053,
+    "low": 21518,
+    "high": 30384,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 20258,
+    "low": 19354,
+    "high": 22188,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 18162,
+    "low": 14445,
+    "high": 21983,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 25913,
+    "low": 21829,
+    "high": 28041,
+    "games": 36,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 14091,
+    "low": 13612,
+    "high": 18554,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 22124,
+    "low": 21772,
+    "high": 23830,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 27082,
+    "low": 24029,
+    "high": 27838,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 27736,
+    "low": 26893,
+    "high": 28129,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 28140,
+    "low": 24623,
+    "high": 28605,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 23338,
+    "low": 20346,
+    "high": 25986,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 23971,
+    "low": 21060,
+    "high": 29766,
+    "games": 47,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 20198,
+    "low": 18073,
+    "high": 23648,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 30687,
+    "low": 23700,
+    "high": 30839,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 23408,
+    "low": 20750,
+    "high": 24296,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 26496,
+    "low": 21286,
+    "high": 30873,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 29218,
+    "low": 23971,
+    "high": 30517,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 24700,
+    "low": 21927,
+    "high": 28589,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 22786,
+    "low": 20301,
+    "high": 27677,
+    "games": 42,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 17757,
+    "low": 15166,
+    "high": 19019,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 26646,
+    "low": 24007,
+    "high": 29208,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 21143,
+    "low": 20532,
+    "high": 22552,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 21294,
+    "low": 20442,
+    "high": 26508,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 27487,
+    "low": 26616,
+    "high": 28630,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 22545,
+    "low": 20451,
+    "high": 26440,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 66933,
+    "low": 66873,
+    "high": 66975,
+    "games": 21,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 66741,
+    "low": 66741,
+    "high": 66800,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 66704,
+    "low": 66689,
+    "high": 66705,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 66975,
+    "low": 66909,
+    "high": 66996,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 66932,
+    "low": 66903,
+    "high": 66968,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 66932,
+    "low": 66903,
+    "high": 66968,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 66933,
+    "low": 66858,
+    "high": 66963,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 66843,
+    "low": 66818,
+    "high": 66861,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 66971,
+    "low": 66935,
+    "high": 66987,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 66949,
+    "low": 66943,
+    "high": 66953,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "venueId": "us-bank-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 66941,
+    "low": 66857,
+    "high": 67014,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 18473,
+    "low": 18074,
+    "high": 19016,
+    "games": 119,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18836,
+    "low": 18725,
+    "high": 18906,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 17123,
+    "low": 16688,
+    "high": 17906,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18264,
+    "low": 17803,
+    "high": 18733,
+    "games": 62,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18265,
+    "low": 18075,
+    "high": 18462,
+    "games": 14,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18446,
+    "low": 18262,
+    "high": 18657,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18376,
+    "low": 18078,
+    "high": 18901,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 19019,
+    "low": 18771,
+    "high": 19101,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 17064,
+    "low": 16203,
+    "high": 17102,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17288,
+    "low": 16253,
+    "high": 17634,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18277,
+    "low": 18052,
+    "high": 18873,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18532,
+    "low": 18289,
+    "high": 19051,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 18788,
+    "low": 18425,
+    "high": 19047,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18925,
+    "low": 18379,
+    "high": 19103,
+    "games": 33,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19045,
+    "low": 18868,
+    "high": 19091,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 19024,
+    "low": 18782,
+    "high": 19150,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 19090,
+    "low": 18747,
+    "high": 19204,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 18421,
+    "low": 18255,
+    "high": 18450,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17801,
+    "low": 17289,
+    "high": 18544,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 19025,
+    "low": 18298,
+    "high": 19137,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18548,
+    "low": 18096,
+    "high": 18879,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 18759,
+    "low": 18515,
+    "high": 18859,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 17768,
+    "low": 17352,
+    "high": 18199,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 18989,
+    "low": 18771,
+    "high": 19146,
+    "games": 5,
+    "seasons": "2024–2026"
+  }
 ];
 
 /** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */
@@ -44260,6 +46577,21 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 0.74,
     "games": 10
+  }
+,
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "season": 2026,
+    "level": 0.953,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "season": 2026,
+    "level": 0.997,
+    "games": 8
   }
 ];
 
@@ -64301,6 +66633,1092 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "ratio": 0.946,
     "games": 3
   }
+,
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "opponent": "michigan",
+    "ratio": 1.016,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "opponent": "michigan-st",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "opponent": "nebraska",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-football",
+    "opponent": "wisconsin",
+    "ratio": 1.01,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "bethune",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "fdu",
+    "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "indiana",
+    "ratio": 1.054,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "iowa",
+    "ratio": 0.965,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "maryland",
+    "ratio": 1.015,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "michigan-st",
+    "ratio": 1.022,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "nebraska",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "northwestern",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "ohio-state",
+    "ratio": 0.944,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "penn-state",
+    "ratio": 1.075,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "rutgers",
+    "ratio": 0.991,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-mbb",
+    "opponent": "wisconsin",
+    "ratio": 1.139,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "gophers-wbb",
+    "opponent": "wisconsin",
+    "ratio": 1.046,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "aces",
+    "ratio": 1.064,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "dream",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "fever",
+    "ratio": 1.108,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "fire",
+    "ratio": 1.035,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "liberty",
+    "ratio": 1.122,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "mercury",
+    "ratio": 1.034,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "mystics",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "sky",
+    "ratio": 0.932,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "sparks",
+    "ratio": 1.061,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "storm",
+    "ratio": 0.951,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "sun",
+    "ratio": 0.966,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "tempo",
+    "ratio": 1.023,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "valkyries",
+    "ratio": 0.995,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "opponent": "wings",
+    "ratio": 1.062,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "boston",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "charge",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "fleet",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "goldeneyes",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "montreal",
+    "ratio": 1.028,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "new-york",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "ottawa",
+    "ratio": 0.981,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "sceptres",
+    "ratio": 1.048,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "sirens",
+    "ratio": 0.945,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "torrent",
+    "ratio": 1.138,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-frost",
+    "opponent": "victoire",
+    "ratio": 1.058,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "austin",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "cincinnati",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "colorado",
+    "ratio": 0.989,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "dallas",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "houston",
+    "ratio": 0.98,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "kansas-city",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "la-galaxy",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "lafc",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "portland",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "salt-lake",
+    "ratio": 0.977,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "san-jose",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "seattle",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "st-louis",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "opponent": "vancouver",
+    "ratio": 0.988,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "bats",
+    "ratio": 1.012,
+    "games": 21
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "bisons",
+    "ratio": 0.933,
+    "games": 12
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "clippers",
+    "ratio": 0.944,
+    "games": 26
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "cubs",
+    "ratio": 1.017,
+    "games": 30
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "indians",
+    "ratio": 0.938,
+    "games": 20
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "mets",
+    "ratio": 1.049,
+    "games": 12
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "mud-hens",
+    "ratio": 0.934,
+    "games": 18
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "railriders",
+    "ratio": 0.953,
+    "games": 12
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "red-sox",
+    "ratio": 0.868,
+    "games": 11
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "st-paul-saints",
+    "opponent": "storm-chasers",
+    "ratio": 1.121,
+    "games": 31
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "76ers",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "bucks",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "bulls",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "cavaliers",
+    "ratio": 0.984,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "celtics",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "clippers",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "grizzlies",
+    "ratio": 0.97,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "hawks",
+    "ratio": 0.977,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "heat",
+    "ratio": 0.98,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "hornets",
+    "ratio": 1.007,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "jazz",
+    "ratio": 0.989,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "kings",
+    "ratio": 0.947,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "knicks",
+    "ratio": 1.022,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "lakers",
+    "ratio": 1.006,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "magic",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "mavericks",
+    "ratio": 1.012,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "nets",
+    "ratio": 1.011,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "nuggets",
+    "ratio": 0.996,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "pacers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "pelicans",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "pistons",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "raptors",
+    "ratio": 1.016,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "rockets",
+    "ratio": 1.017,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "spurs",
+    "ratio": 0.976,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "suns",
+    "ratio": 0.969,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "thunder",
+    "ratio": 0.997,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "trail-blazers",
+    "ratio": 0.979,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "warriors",
+    "ratio": 1.013,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "opponent": "wizards",
+    "ratio": 0.976,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "angels",
+    "ratio": 0.963,
+    "games": 9
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "astros",
+    "ratio": 0.984,
+    "games": 9
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "athletics",
+    "ratio": 1.035,
+    "games": 11
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "blue-jays",
+    "ratio": 0.985,
+    "games": 10
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "braves",
+    "ratio": 1.009,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "brewers",
+    "ratio": 1.072,
+    "games": 8
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "cardinals",
+    "ratio": 0.998,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "dodgers",
+    "ratio": 1.37,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "guardians",
+    "ratio": 0.937,
+    "games": 19
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "mariners",
+    "ratio": 1.044,
+    "games": 11
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "marlins",
+    "ratio": 0.934,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "orioles",
+    "ratio": 1.021,
+    "games": 9
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "phillies",
+    "ratio": 0.869,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "rangers",
+    "ratio": 1.088,
+    "games": 9
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "rays",
+    "ratio": 1.019,
+    "games": 9
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "red-sox",
+    "ratio": 1.093,
+    "games": 9
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "reds",
+    "ratio": 1.187,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "rockies",
+    "ratio": 1.007,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "royals",
+    "ratio": 0.918,
+    "games": 20
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "tigers",
+    "ratio": 0.922,
+    "games": 20
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "white-sox",
+    "ratio": 0.869,
+    "games": 20
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "opponent": "yankees",
+    "ratio": 1.235,
+    "games": 9
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "opponent": "49ers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "opponent": "bears",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "opponent": "falcons",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "opponent": "lions",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "vikings",
+    "opponent": "packers",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "avalanche",
+    "ratio": 1.011,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "blackhawks",
+    "ratio": 1.008,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "blue-jackets",
+    "ratio": 1.019,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "blues",
+    "ratio": 1.004,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "bruins",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "canadiens",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "canucks",
+    "ratio": 0.992,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "capitals",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "coyotes",
+    "ratio": 0.996,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "devils",
+    "ratio": 1.013,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "ducks",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "flames",
+    "ratio": 0.982,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "flyers",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "golden-knights",
+    "ratio": 0.99,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "hurricanes",
+    "ratio": 0.98,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "islanders",
+    "ratio": 0.993,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "jets",
+    "ratio": 0.991,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "kings",
+    "ratio": 1.006,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "kraken",
+    "ratio": 0.996,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "lightning",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "mammoth",
+    "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "maple-leafs",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "oilers",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "panthers",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "penguins",
+    "ratio": 0.988,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "predators",
+    "ratio": 1.003,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "rangers",
+    "ratio": 1.006,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "red-wings",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "sabres",
+    "ratio": 0.986,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "senators",
+    "ratio": 0.982,
+    "games": 3
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "sharks",
+    "ratio": 0.97,
+    "games": 5
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "stars",
+    "ratio": 0.992,
+    "games": 6
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "opponent": "utah-hc",
+    "ratio": 0.993,
+    "games": 2
+  }
 ];
 
 /** Playoff occupancy per team, building and round band (expectedDrawBuild.ts buildPostseasonRows). */
@@ -67028,6 +70446,163 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "high": 1.022,
     "games": 47,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  }
+,
+  {
+    "metroId": "minneapolis",
+    "teamId": "lynx",
+    "venueId": "target-center",
+    "band": "first",
+    "occupancy": 0.561,
+    "low": 0.464,
+    "high": 1,
+    "games": 27,
+    "seasons": "2023, 2024, 2025, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "band": "first",
+    "occupancy": 0.942,
+    "low": 0.685,
+    "high": 1.026,
+    "games": 53,
+    "seasons": "2024, 2025 + league, any round",
+    "basis": "blend"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "band": "second",
+    "occupancy": 0.93,
+    "low": 0.682,
+    "high": 1.027,
+    "games": 50,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "band": "conference",
+    "occupancy": 0.93,
+    "low": 0.682,
+    "high": 1.027,
+    "games": 50,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "minnesota-united",
+    "venueId": "allianz-field",
+    "band": "final",
+    "occupancy": 0.93,
+    "low": 0.682,
+    "high": 1.027,
+    "games": 50,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "band": "first",
+    "occupancy": 1.026,
+    "low": 1.01,
+    "high": 1.039,
+    "games": 9,
+    "seasons": "2023, 2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "band": "second",
+    "occupancy": 1.021,
+    "low": 1.01,
+    "high": 1.05,
+    "games": 9,
+    "seasons": "2024, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "timberwolves",
+    "venueId": "target-center",
+    "band": "final",
+    "occupancy": 1.018,
+    "low": 1,
+    "high": 1.055,
+    "games": 32,
+    "seasons": "2024, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "band": "first",
+    "occupancy": 0.993,
+    "low": 0.901,
+    "high": 1.181,
+    "games": 31,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "band": "second",
+    "occupancy": 1.028,
+    "low": 0.949,
+    "high": 1.158,
+    "games": 57,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "twins",
+    "venueId": "target-field",
+    "band": "conference",
+    "occupancy": 1.019,
+    "low": 0.945,
+    "high": 1.059,
+    "games": 26,
+    "seasons": "league, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "band": "first",
+    "occupancy": 1.074,
+    "low": 1.061,
+    "high": 1.08,
+    "games": 9,
+    "seasons": "2023, 2025, 2026",
+    "basis": "team"
+  },
+  {
+    "metroId": "minneapolis",
+    "teamId": "wild",
+    "venueId": "grand-casino-arena",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.03,
+    "games": 31,
+    "seasons": "league, 2023, 2024, 2025, 2026",
     "basis": "league"
   }
 ];

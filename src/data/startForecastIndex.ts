@@ -21886,6 +21886,198 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-12-espn-wild-401892487",
+    "date": "2026-10-12",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 16893,
+      "low": 16041,
+      "high": 16931
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-14-espn-timberwolves-401914125",
+    "date": "2026-10-14",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 9038,
+      "low": 8624,
+      "high": 10227
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-15-espn-wild-401892514",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17132,
+      "low": 16268,
+      "high": 17170
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-17-espn-minnesota-united-761876",
+    "date": "2026-10-17",
+    "start": "15:30",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19647,
+      "low": 19568,
+      "high": 19704
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-18-espn-wild-401892533",
+    "date": "2026-10-18",
+    "start": "17:00",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18900,
+      "low": 18440,
+      "high": 19238
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-22-espn-gophers-hockey-401905008",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-23-espn-gophers-hockey-401905009",
+    "date": "2026-10-23",
+    "start": "18:00",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-23-espn-st-thomas-hockey-401904659",
+    "date": "2026-10-23",
+    "start": "19:07",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-24-espn-gophers-football-401858497",
+    "date": "2026-10-24",
+    "start": null,
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 46939,
+      "low": 46407,
+      "high": 48520
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-25-espn-timberwolves-401909864",
+    "date": "2026-10-25",
+    "start": "18:00",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "Vikings vs. Colts 0.9 mi away, back to back."
+    },
+    "draw": {
+      "count": 19282,
+      "low": 18797,
+      "high": 19282
+    }
+  },
+  {
+    "metroId": "minneapolis",
+    "eventId": "2026-10-25-espn-vikings-401873014",
+    "date": "2026-10-25",
+    "start": "12:00",
+    "capturedAt": "2026-10-12T08:29:42.979Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 66971,
+      "low": 66935,
+      "high": 66987
+    }
+  },
+  {
     "metroId": "montreal",
     "eventId": "2026-10-07-tm-1Ad7Z_FGkM9lFwl",
     "date": "2026-10-07",

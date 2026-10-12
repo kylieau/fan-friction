@@ -1,0 +1,529 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "metroName": "Minneapolis–St. Paul",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T08:29:42.979Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 11
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-12-espn-wild-401892487",
+      "metroId": "minneapolis",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wild vs. Golden Knights",
+      "broadcast": "MINNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "wild",
+        "away": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16893,
+        "low": 16041,
+        "high": 16931,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-timberwolves-401914125",
+      "metroId": "minneapolis",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Timberwolves vs. Pistons",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "timberwolves",
+        "away": "pistons"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 9038,
+        "low": 8624,
+        "high": 10227,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-15-espn-wild-401892514",
+      "metroId": "minneapolis",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wild vs. Blues",
+      "broadcast": "MINNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "wild",
+        "away": "blues"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17132,
+        "low": 16268,
+        "high": 17170,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-minnesota-united-761876",
+      "metroId": "minneapolis",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "kind": "game",
+      "title": "MNUFC vs. St. Louis",
+      "place": {
+        "type": "venue",
+        "venueId": "allianz-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "minnesota-united",
+        "away": "st-louis"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19647,
+        "low": 19568,
+        "high": 19704,
+        "fromCrowds": true,
+        "games": 24,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 24 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-18-espn-wild-401892533",
+      "metroId": "minneapolis",
+      "date": "2026-10-18",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Wild vs. Blue Jackets",
+      "broadcast": "CBJNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "wild",
+        "away": "blue-jackets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18900,
+        "low": 18440,
+        "high": 19238,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 17 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-gophers-hockey-401905008",
+      "metroId": "minneapolis",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Minnesota vs. North Dakota",
+      "place": {
+        "type": "venue",
+        "venueId": "mariucci-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "gophers-hockey",
+        "away": "north-dakota"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-10-23-espn-gophers-hockey-401905009",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Minnesota vs. North Dakota",
+      "place": {
+        "type": "venue",
+        "venueId": "mariucci-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "gophers-hockey",
+        "away": "north-dakota"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-23-espn-st-thomas-hockey-401904659",
+      "metroId": "minneapolis",
+      "date": "2026-10-23",
+      "start": "19:07",
+      "kind": "game",
+      "title": "St Thomas vs. Minnesota State",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "st-thomas-hockey",
+        "away": "minnesota-state"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-24-espn-gophers-football-401858497",
+      "metroId": "minneapolis",
+      "date": "2026-10-24",
+      "start": null,
+      "kind": "game",
+      "title": "Minnesota vs. Iowa",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-bank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "gophers-football",
+        "away": "iowa"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 46939,
+        "low": 46407,
+        "high": 48520,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-vikings-401873014",
+      "metroId": "minneapolis",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Vikings vs. Colts",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "us-bank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "vikings",
+        "away": "colts"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 66971,
+        "low": 66935,
+        "high": 66987,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-timberwolves-401909864",
+      "metroId": "minneapolis",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Timberwolves vs. Raptors",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "timberwolves",
+        "away": "raptors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19282,
+        "low": 18797,
+        "high": 19282,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-12-espn-wild-401892487",
+      "date": "2026-10-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16893,
+        "low": 16041,
+        "high": 16931
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-timberwolves-401914125",
+      "date": "2026-10-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9038,
+        "low": 8624,
+        "high": 10227
+      }
+    },
+    {
+      "eventId": "2026-10-15-espn-wild-401892514",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17132,
+        "low": 16268,
+        "high": 17170
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-minnesota-united-761876",
+      "date": "2026-10-17",
+      "start": "15:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19647,
+        "low": 19568,
+        "high": 19704
+      }
+    },
+    {
+      "eventId": "2026-10-18-espn-wild-401892533",
+      "date": "2026-10-18",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18900,
+        "low": 18440,
+        "high": 19238
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-gophers-hockey-401905008",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-gophers-hockey-401905009",
+      "date": "2026-10-23",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-23-espn-st-thomas-hockey-401904659",
+      "date": "2026-10-23",
+      "start": "19:07",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-gophers-football-401858497",
+      "date": "2026-10-24",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 46939,
+        "low": 46407,
+        "high": 48520
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-vikings-401873014",
+      "date": "2026-10-25",
+      "start": "12:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 66971,
+        "low": 66935,
+        "high": 66987
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-timberwolves-401909864",
+      "date": "2026-10-25",
+      "start": "18:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Vikings vs. Colts 0.9 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19282,
+        "low": 18797,
+        "high": 19282
+      }
+    }
+  ]
+}

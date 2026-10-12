@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-09",
+  "results": [
+    {
+      "eventId": "2026-10-09-espn-st-thomas-hockey-401904337",
+      "metroId": "minneapolis",
+      "date": "2026-10-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-hockey",
+      "home": {
+        "name": "St Thomas",
+        "score": 1
+      },
+      "away": {
+        "name": "Air Force",
+        "score": 5
+      },
+      "capturedAt": "2026-10-12T08:29:40.966Z"
+    }
+  ]
+}

@@ -1189,6 +1189,60 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-11T20:10:38.433Z"
   },
   {
+    "eventId": "2026-10-09-espn-st-thomas-hockey-401904337",
+    "metroId": "minneapolis",
+    "date": "2026-10-09",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "anderson-arena",
+    "homeTeamId": "st-thomas-hockey",
+    "home": {
+      "name": "St Thomas",
+      "score": 1
+    },
+    "away": {
+      "name": "Air Force",
+      "score": 5
+    },
+    "capturedAt": "2026-10-12T08:29:40.966Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-minnesota-united-761854",
+    "metroId": "minneapolis",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "allianz-field",
+    "homeTeamId": "minnesota-united",
+    "home": {
+      "name": "MNUFC",
+      "score": 2
+    },
+    "away": {
+      "name": "Houston",
+      "score": 2
+    },
+    "capturedAt": "2026-10-12T08:29:40.966Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-st-thomas-hockey-401904338",
+    "metroId": "minneapolis",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "anderson-arena",
+    "homeTeamId": "st-thomas-hockey",
+    "home": {
+      "name": "St Thomas",
+      "score": 4
+    },
+    "away": {
+      "name": "Air Force",
+      "score": 2
+    },
+    "capturedAt": "2026-10-12T08:29:40.966Z"
+  },
+  {
     "eventId": "2026-10-06-espn-canadiens-401891815",
     "metroId": "montreal",
     "date": "2026-10-06",

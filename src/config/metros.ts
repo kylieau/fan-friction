@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city', 'las-vegas', 'kansas-city', 'houston', 'toronto', 'minneapolis'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -237,6 +237,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Toronto',
     center: [-79.40, 43.64],
     zoom: 10.6,
+  },
+  // Covered Oct 12, 2026 (docs/research/city-builds/minneapolis/minneapolis-venue-table-answer.md):
+  // the seven-county Met Council core. One frame holds both downtowns, the university and the Midway;
+  // Shakopee, Eagan and Blaine sit off the first view.
+  minneapolis: {
+    id: 'minneapolis', code: 'MSP',
+    name: 'Minneapolis–St. Paul',
+    timeZone: 'America/Chicago',
+    center: [-93.2, 44.96],
+    zoom: 10.4,
   },
 };
 
