@@ -30,6 +30,8 @@ const BROAD: Record<string, { fromYear: number; teams: string[] }[]> = {
   'dallas-fort-worth': [{ fromYear: 2016, teams: ['cowboys', 'rangers', 'mavericks'] }],
   // The Canadiens are the region's team; no poll needed for that one.
   montreal: [{ fromYear: 2016, teams: ['canadiens'] }],
+  // Placeholder until a Boston poll is found: the Red Sox, Patriots and Celtics are the region's teams.
+  boston: [{ fromYear: 2016, teams: ['red-sox', 'patriots', 'celtics'] }],
 };
 
 export function isBroad(metroId: string, teamId: string | undefined, date: string): boolean {

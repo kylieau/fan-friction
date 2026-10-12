@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -24,15 +24,14 @@ export const METROS: Record<string, Metro> = {
     center: [-118.3, 33.97],
     zoom: 9.5,
   },
-  // Real away and neutral markets from her log. Not one row per building.
-  // Inglewood, Pasadena, Anaheim, and Ventura are Los Angeles. Indio is one
-  // festival site, so it is not a metro. New York is Citi Field only.
+  // Covered Oct 12, 2026 (docs/research/city-builds/boston/boston-venue-table-answer.md): Boston–Cambridge–Newton MSA core,
+  // Foxborough/Mansfield corridor and Lowell edge. One frame holds downtown, Fenway and the Garden; Gillette and Xfinity sit off it.
   boston: {
     id: 'boston', code: 'BOS',
     name: 'Boston',
     timeZone: 'America/New_York',
-    center: [-71.1428, 42.3564],
-    zoom: 12,
+    center: [-71.08, 42.36],
+    zoom: 10.8,
   },
   // Covered Oct 7, 2026 (docs/research/city-builds/chicago/chicago-venue-table-answer.md): the city, Cook County and the named
   // collar towns, plus Chicagoland Speedway in Joliet (the research's one addition). One frame holds

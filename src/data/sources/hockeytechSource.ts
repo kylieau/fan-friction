@@ -33,6 +33,7 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
   { client: 'pwhl', htId: '8', metroId: 'seattle', teamId: 'seattle-torrent', venueId: 'climate-pledge-arena' },
   { client: 'pwhl', htId: '4', metroId: 'new-york', teamId: 'ny-sirens', venueId: 'prudential-center' },
   { client: 'pwhl', htId: '13', metroId: 'bay-area', teamId: 'pwhl-san-jose', venueId: 'sap-center' },
+  { client: 'pwhl', htId: '1', metroId: 'boston', teamId: 'boston-fleet', venueId: 'agganis-arena' },
   { client: 'whl', htId: '214', metroId: 'seattle', teamId: 'seattle-thunderbirds', venueId: 'accesso-showare-center' },
   { client: 'whl', htId: '226', metroId: 'seattle', teamId: 'everett-silvertips', venueId: 'angel-of-the-winds-arena' },
 ];
@@ -52,6 +53,9 @@ const VENUE_BY_NAME: Record<string, string> = {
   'pechanga arena san diego': 'pechanga-arena',
   'accesso showare center': 'accesso-showare-center',
   'angel of the winds arena': 'angel-of-the-winds-arena',
+  'agganis arena': 'agganis-arena',
+  'tsongas center': 'tsongas-center',
+  'td garden': 'td-garden',
 };
 
 export function hockeytechMetroIds(): string[] {

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-14",
+  "rows": [
+    {
+      "metroId": "boston",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T06:27:21.542Z",
+      "feelsLikeF": 62.8,
+      "tempF": 66.6,
+      "humidity": 59,
+      "windMph": 10.5,
+      "uvIndex": 0,
+      "precipProbability": 3,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    }
+  ],
+  "days": [
+    {
+      "metroId": "boston",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T06:27:21.542Z",
+      "feelsLikeHighF": 73.3,
+      "feelsLikeLowF": 58.8,
+      "code": 53,
+      "precipProbability": 46,
+      "precipMm": 1.3
+    }
+  ]
+}

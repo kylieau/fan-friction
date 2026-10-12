@@ -5276,6 +5276,215 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "boston",
+    "eventId": "2026-10-14-espn-celtics-401898405",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19156,
+      "low": 19156,
+      "high": 19156
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-16-espn-boston-legacy-fc-401854091",
+    "date": "2026-10-16",
+    "start": "20:00",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 9847,
+      "low": 8557,
+      "high": 10163
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-17-espn-bc-football-401858267",
+    "date": "2026-10-17",
+    "start": "12:00",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "Harvard vs. Holy Cross 3.0 mi away, same hours."
+    },
+    "draw": {
+      "count": 33274,
+      "low": 32413,
+      "high": 34705
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-17-espn-harvard-football-401867841",
+    "date": "2026-10-17",
+    "start": "13:00",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Moderate",
+      "why": "Boston College vs. Pitt 3.0 mi away, same hours."
+    },
+    "draw": {
+      "count": 7678,
+      "low": 6950,
+      "high": 12244
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-17-espn-revolution-761879",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2.6,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 21037,
+      "low": 18203,
+      "high": 24718
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-18-espn-patriots-401873001",
+    "date": "2026-10-18",
+    "start": "13:00",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 64628,
+      "low": 64628,
+      "high": 64628
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-22-espn-bruins-401892552",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17850,
+      "low": 17850,
+      "high": 17850
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-23-espn-celtics-401909095",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19156,
+      "low": 19156,
+      "high": 19156
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-24-espn-bruins-401892568",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Harvard vs. Princeton 3.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 17850,
+      "low": 17850,
+      "high": 17850
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-24-espn-harvard-football-401867842",
+    "date": "2026-10-24",
+    "start": "15:00",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1.5,
+      "friction": "Low",
+      "why": "Bruins vs. Sharks 3.3 mi away, same hours."
+    },
+    "draw": {
+      "count": 7678,
+      "low": 6950,
+      "high": 12244
+    }
+  },
+  {
+    "metroId": "boston",
+    "eventId": "2026-10-26-espn-celtics-401909870",
+    "date": "2026-10-26",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T06:27:57.880Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19156,
+      "low": 19156,
+      "high": 19156
+    }
+  },
+  {
     "metroId": "chicago",
     "eventId": "2026-10-07-espn-bulls-401908939",
     "date": "2026-10-07",
