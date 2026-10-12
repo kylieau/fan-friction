@@ -14,7 +14,7 @@ export interface Metro {
  * Cities the nightly jobs cover: schedules, weather, results and the shared
  * catalog (docs/reference/new-city-checklist.md). Adding a city here is step 1.
  */
-export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento'] as const;
+export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atlanta', 'bay-area', 'chicago', 'dallas-fort-worth', 'montreal', 'milwaukee', 'boston', 'philadelphia', 'tampa', 'columbus', 'nashville', 'austin', 'phoenix', 'vancouver', 'sacramento', 'mexico-city'] as const;
 
 export const METROS: Record<string, Metro> = {
   la: {
@@ -100,6 +100,16 @@ export const METROS: Record<string, Metro> = {
     timeZone: 'America/Toronto',
     center: [-73.6, 45.53],
     zoom: 10.5,
+  },
+  // Covered Oct 12, 2026 (docs/research/city-builds/mexico-city/mexico-city-venue-table-answer.md): CDMX's 16 alcaldías
+  // plus the long-standing ZMVM State of Mexico municipalities. Every fixed room found sits inside CDMX. Toluca, Puebla
+  // and Querétaro stay separate cities. One frame holds Nápoles, Mixhuca and the center; Banorte and the north arenas sit off it.
+  'mexico-city': {
+    id: 'mexico-city', code: 'MEX',
+    name: 'Mexico City',
+    timeZone: 'America/Mexico_City',
+    center: [-99.14, 19.4],
+    zoom: 10.2,
   },
   // Milwaukee, Waukesha, Ozaukee and Washington counties (Kylie, Oct 11, 2026).
   milwaukee: {

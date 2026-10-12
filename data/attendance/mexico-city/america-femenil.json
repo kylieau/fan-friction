@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "teamId": "america-femenil",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "america-femenil",
+      "season": 2026,
+      "date": "2026-08-08",
+      "start": "16:00",
+      "opponent": "Cruz Azul",
+      "venueId": "estadio-banorte",
+      "attendance": 17572,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "america-femenil",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "17:00",
+      "opponent": "Tigres",
+      "venueId": "estadio-banorte",
+      "attendance": 20295,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

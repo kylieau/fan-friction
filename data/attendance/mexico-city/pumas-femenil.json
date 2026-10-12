@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "teamId": "pumas-femenil",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "pumas-femenil",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "12:00",
+      "opponent": "León",
+      "venueId": "estadio-olimpico-universitario",
+      "attendance": 4988,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pumas-femenil",
+      "season": 2026,
+      "date": "2026-08-21",
+      "start": "17:00",
+      "opponent": "Querétaro",
+      "venueId": "estadio-olimpico-universitario",
+      "attendance": 2051,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pumas-femenil",
+      "season": 2026,
+      "date": "2026-09-04",
+      "start": "21:00",
+      "opponent": "América",
+      "venueId": "estadio-olimpico-universitario",
+      "attendance": 12850,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "pumas-femenil",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "12:00",
+      "opponent": "Puebla",
+      "venueId": "estadio-olimpico-universitario",
+      "attendance": 2627,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

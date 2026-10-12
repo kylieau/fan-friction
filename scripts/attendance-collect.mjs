@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -131,6 +131,14 @@ const ESPN_TEAMS = [
   { teamId: 'uc-davis-mbb', metroId: 'sacramento', path: 'basketball/mens-college-basketball', espnId: '302', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'uc-davis-wbb', metroId: 'sacramento', path: 'basketball/womens-college-basketball', espnId: '302', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'sacramento-republic', metroId: 'sacramento', path: 'soccer/usa.usl.1', espnId: '17828', seasons: [2023, 2024, 2025, 2026], seasontype: 0 },
+  { teamId: 'club-america', metroId: 'mexico-city', path: 'soccer/mex.1', espnId: '227', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'cruz-azul', metroId: 'mexico-city', path: 'soccer/mex.1', espnId: '218', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'atlante', metroId: 'mexico-city', path: 'soccer/mex.1', espnId: '226', seasons: [2024, 2025, 2026] },
+  { teamId: 'pumas-unam', metroId: 'mexico-city', path: 'soccer/mex.1', espnId: '233', seasons: [2023, 2024, 2025, 2026] },
+  { teamId: 'america-femenil', metroId: 'mexico-city', path: 'soccer/mex.w.1', espnId: '22415', seasons: [2024, 2025, 2026] },
+  { teamId: 'pumas-femenil', metroId: 'mexico-city', path: 'soccer/mex.w.1', espnId: '133981', seasons: [2024, 2025, 2026] },
+  { teamId: 'cruz-azul-femenil', metroId: 'mexico-city', path: 'soccer/mex.w.1', espnId: '133982', seasons: [2024, 2025, 2026] },
+  { teamId: 'capitanes', metroId: 'mexico-city', path: 'basketball/nba-development', espnId: '124612', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'bucks', metroId: 'milwaukee', path: 'basketball/nba', espnId: '15', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -456,6 +464,19 @@ const VENUE_BY_NAME = {
   'gila river arena': 'desert-diamond-arena',
   'phoenix rising stadium at 38th st/washington': 'phoenix-rising-soccer-stadium',
   'phoenix rising soccer stadium': 'phoenix-rising-soccer-stadium',
+  // Mexico City, as ESPN writes them. Puebla and unmapped Coapa/Centenario rooms are skipped.
+  'estadio banorte': 'estadio-banorte',
+  'estadio azteca': 'estadio-banorte',
+  'estadio ciudad de méxico': 'estadio-banorte',
+  'estadio ciudad de mexico': 'estadio-banorte',
+  'estadio olímpico universitario': 'estadio-olimpico-universitario',
+  'estadio olimpico universitario': 'estadio-olimpico-universitario',
+  'estadio ciudad de los deportes': 'estadio-ciudad-de-los-deportes',
+  'estadio azul': 'estadio-ciudad-de-los-deportes',
+  'mexico city arena': 'arena-cdmx',
+  'arena cdmx': 'arena-cdmx',
+  'arena ciudad de méxico': 'arena-cdmx',
+  'arena ciudad de mexico': 'arena-cdmx',
 };
 
 const METRO_VENUE_BY_NAME = {
@@ -668,7 +689,9 @@ async function collectEspn(team) {
       const c = e.competitions?.[0];
       // Soccer lists its playoffs in the one schedule, under their own season-type names.
       const typeName = e.seasonType?.name ?? '';
-      const postseason = fromPost || (!team.seasontype && typeName && !/regular season|preseason/i.test(typeName) && !/^\d+$/.test(typeName));
+      // Liga MX's regular tournaments are "Torneo Apertura" and "Torneo Clausura", not "Regular Season".
+      // Playoff names ("Clausura - Quarterfinals", "Apertura 2024 - Finals") stay postseason.
+      const postseason = fromPost || (!team.seasontype && typeName && !/regular season|preseason|torneo apertura|torneo clausura/i.test(typeName) && !/^\d+$/.test(typeName));
       const headline = (c?.notes ?? []).find((n) => n.headline)?.headline?.trim() ?? '';
       const roundName = postseason ? (team.seasontype ? headline || typeName || 'Postseason' : [typeName, headline].filter(Boolean).join(' - ') || 'Postseason').replace(/\s+if necessary$/i, '') : undefined;
       const gameNo = postseason ? Number((headline.match(/\bGame\s+(\d+)\b/i) ?? [])[1]) || c?.gameNumberOfSeries || undefined : undefined;

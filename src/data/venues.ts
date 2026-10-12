@@ -6303,6 +6303,238 @@ export const VENUES: Record<string, Venue> = {
     capacity: [],
     roof: 'open',
   },
+  // Mexico City (Oct 12, 2026; docs/research/city-builds/mexico-city/). Coordinates are OpenStreetMap Nominatim
+  // hits for the building. No carShare overrides: city-type estimates stay in the research. Capacities are sourced
+  // figures only; a missing setup is left off rather than guessed.
+  'estadio-banorte': {
+    id: 'estadio-banorte',
+    metroId: 'mexico-city',
+    names: [
+      { name: 'Estadio Azteca' },
+      { name: 'Estadio Ciudad de México', from: '2026-06-11' },
+      { name: 'Estadio Banorte', from: '2026-03-28' },
+    ],
+    location: [-99.15047, 19.3029794],
+    capacity: [
+      {
+        seats: 81070,
+        setup: 'soccer',
+        note: 'Reported pre-renovation figure (Expansión, Mar 2025). Conflicts with 83,264 (Claro Sports). Concert setups were not published. Source: https://expansion.mx/economia/2025/03/14/estadio-azteca-cambia-de-nombre-a-estadio-banorte',
+      },
+      {
+        seats: 87000,
+        setup: 'soccer',
+        fromYear: 2026,
+        note: 'Official post-renovation figure stated by the stadium director (TUDN, 11 Jun 2025). City-type research also cites 87,500, 88,084 and about 90,000. Concert capacity unknown. Source: https://www.tudn.com/mundial-2026/asi-modernizacion-estadio-azteca-mundial-2026',
+      },
+    ],
+    roof: 'open',
+  },
+  'estadio-gnp-seguros': {
+    id: 'estadio-gnp-seguros',
+    metroId: 'mexico-city',
+    names: [
+      { name: 'Foro Sol' },
+      { name: 'Estadio GNP Seguros', from: '2024-08-08' },
+    ],
+    location: [-99.0955714, 19.4050224],
+    capacity: [
+      {
+        seats: 65000,
+        setup: 'concert',
+        fromYear: 2024,
+        note: 'Official OCESA concert figure. Do not add the pre-renovation thesis split (37,500 stands + 25,000 field) to this. No current sports setup. Source: https://news.pollstar.com/?p=1063150',
+      },
+    ],
+    roof: 'covered',
+  },
+  'estadio-olimpico-universitario': {
+    id: 'estadio-olimpico-universitario',
+    metroId: 'mexico-city',
+    names: [{ name: 'Estadio Olímpico Universitario' }],
+    location: [-99.1922864, 19.3316881],
+    capacity: [
+      {
+        seats: 58445,
+        setup: 'soccer',
+        note: 'Reported (Soccerway; Wikipedia stadium list). Conflicts with 63,186 (StadiumDB) and city-type figures 72,000 (CDMX tourism), 68,954 (UNAM thesis) and 52,000 seats (StadiumGuide). All above 5,000. Source: https://co.soccerway.com/equipo/u-n-a-m/UB73mIXI',
+      },
+    ],
+    roof: 'open',
+  },
+  'plaza-de-toros-mexico': {
+    id: 'plaza-de-toros-mexico',
+    metroId: 'mexico-city',
+    names: [
+      { name: 'Plaza México' },
+      { name: 'Plaza de Toros México' },
+    ],
+    location: [-99.1800979, 19.3829715],
+    capacity: [
+      {
+        seats: 41262,
+        note: 'Official seated figure (venue history, via Wikipedia). Traditional corridas suspended 24 Jun 2025; concert use continues. About 200 m from Estadio Ciudad de los Deportes. Source: https://en.wikipedia.org/wiki/Plaza_de_Toros_M%C3%A9xico',
+      },
+      {
+        seats: 50000,
+        setup: 'concert',
+        note: 'Reported up to about 50,000 including the floor. Keep separate from the 41,262 seated figure. Source: https://www.nmas.com.mx/entretenimiento/cuantas-personas-caben-plaza-toros-mexico-capacidad-profugos-del-anexo-cdmx-2024',
+      },
+    ],
+    roof: 'open',
+  },
+  'estadio-ciudad-de-los-deportes': {
+    id: 'estadio-ciudad-de-los-deportes',
+    metroId: 'mexico-city',
+    names: [
+      { name: 'Estadio Azul' },
+      { name: 'Estadio Ciudad de los Deportes', from: '2018-01-01' },
+    ],
+    location: [-99.1782599, 19.3834348],
+    capacity: [
+      {
+        seats: 34253,
+        setup: 'soccer',
+        note: 'Reported (Wikipedia citing the Liga MX stadium page), including 92 boxes. Conflicts with 36,681 (StadiumDB; CDMX tourism). No regular Liga MX tenant after the 2026 moves to Banorte. Rename day in 2018 was not published; January 1 is the year boundary only. Source: https://en.wikipedia.org/wiki/Estadio_Ciudad_de_los_Deportes',
+      },
+    ],
+    roof: 'open',
+  },
+  'arena-cdmx': {
+    id: 'arena-cdmx',
+    metroId: 'mexico-city',
+    names: [
+      { name: 'Mexico City Arena' },
+      { name: 'Arena CDMX' },
+      { name: 'Arena Ciudad de México', from: '2012-02-25' },
+    ],
+    location: [-99.1751954, 19.4976072],
+    capacity: [
+      {
+        seats: 8000,
+        setup: 'basketball',
+        note: 'Reported G League limit of about 8,000. Do not apply the 22,300 bowl maximum to Capitanes games. Source: https://en.wikipedia.org/wiki/Mexico_City_Arena',
+      },
+      {
+        seats: 22300,
+        setup: 'concert',
+        note: 'Official maximum, depending on the event. A secondary operator range of about 6,000–23,000 was not used. Source: https://en.wikipedia.org/wiki/Mexico_City_Arena',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'palacio-de-los-deportes': {
+    id: 'palacio-de-los-deportes',
+    metroId: 'mexico-city',
+    names: [{ name: 'Domo de Cobre' }, { name: 'Palacio de los Deportes' }],
+    location: [-99.0996762, 19.4053099],
+    capacity: [
+      {
+        seats: 15000,
+        setup: 'concert',
+        note: 'Official OCESA range is 15,000–21,000 depending on setup (Pollstar). This is the low end of that range, not a second room. Other figures not used: 17,000 (El CEO), 22,000 (2022 thesis), 24,500 (hotel blog), 36,709 (HireSpace, likely multi-space). Source: https://news.pollstar.com/?p=1204620',
+      },
+      {
+        seats: 21000,
+        setup: 'concert',
+        note: 'Official OCESA range high end, 15,000–21,000 depending on setup. Stored last so a full setup is the ceiling. Source: https://news.pollstar.com/?p=1204620',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'estadio-alfredo-harp-helu': {
+    id: 'estadio-alfredo-harp-helu',
+    metroId: 'mexico-city',
+    names: [{ name: 'Estadio Alfredo Harp Helú' }],
+    location: [-99.0852437, 19.4036757],
+    capacity: [
+      {
+        seats: 20576,
+        setup: 'baseball',
+        fromYear: 2019,
+        note: 'Official at the March 2019 opening (MLB.com; club sell-out post). Conflicts with 20,062 reported in August 2026 (Expansión). Canopy not verified. Source: https://mlb.com/es/news/diablos-rojos-inauguraron-nuevo-estadio-en-mexico',
+      },
+    ],
+    roof: 'open',
+  },
+  'arena-mexico': {
+    id: 'arena-mexico',
+    metroId: 'mexico-city',
+    names: [{ name: 'Arena México' }],
+    location: [-99.1520014, 19.4246141],
+    capacity: [
+      {
+        seats: 16500,
+        note: 'Reported wrestling and boxing figure, widely repeated, including the CDMX tourism page. No separate concert figure was published. Source: https://mexicocity.cdmx.gob.mx/?p=1985',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'estadio-wilfrido-massieu': {
+    id: 'estadio-wilfrido-massieu',
+    metroId: 'mexico-city',
+    names: [{ name: 'Estadio Wilfrido Massieu' }],
+    location: [-99.1384942, 19.5019763],
+    capacity: [
+      {
+        seats: 13000,
+        setup: 'football',
+        note: 'Reported (Excélsior, Sep 2015). Conflicts with 15,000 in a 2021 Wikipedia mirror. ONEFA home; current pro tenant not verified. Source: https://www.excelsior.com.mx/adrenalina/2015/09/12/1045326',
+      },
+    ],
+    roof: 'open',
+  },
+  'auditorio-nacional': {
+    id: 'auditorio-nacional',
+    metroId: 'mexico-city',
+    names: [{ name: 'Auditorio Nacional' }],
+    location: [-99.1948518, 19.4247897],
+    capacity: [
+      {
+        seats: 9366,
+        setup: 'concert',
+        note: 'Official seated figure (CDMX tourism). A hotel-blog 10,000 was not used. Lunario is a separate room whose capacity was not verified, so it is not merged here. Source: https://mexicocity.cdmx.gob.mx/venues/auditorio-nacional/?lang=en',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'pepsi-center-wtc': {
+    id: 'pepsi-center-wtc',
+    metroId: 'mexico-city',
+    names: [{ name: 'Pepsi Center WTC' }],
+    location: [-99.1747474, 19.3944618],
+    capacity: [
+      {
+        seats: 3342,
+        note: 'Reported auditorium seats (Venue Coalition). Wikipedia lists 3,478 seats and an overall 7,505. Seated theatre stays under 5,000. The WTC convention halls are not this room. Source: https://venuecoalition.com/pepsi-center-wtc/',
+      },
+      {
+        seats: 6486,
+        setup: 'concert',
+        note: 'Reported concert GA low end (Venue Coalition range 6,486–8,000). Source: https://venuecoalition.com/pepsi-center-wtc/',
+      },
+      {
+        seats: 8000,
+        setup: 'concert',
+        note: 'Reported concert GA high end of the same 6,486–8,000 range. Stored last so a full GA setup is the ceiling. Source: https://venuecoalition.com/pepsi-center-wtc/',
+      },
+    ],
+    roof: 'indoor',
+  },
+  'gimnasio-juan-de-la-barrera': {
+    id: 'gimnasio-juan-de-la-barrera',
+    metroId: 'mexico-city',
+    names: [{ name: 'Gimnasio Olímpico Juan de la Barrera' }],
+    location: [-99.1546997, 19.3598654],
+    capacity: [
+      {
+        seats: 5242,
+        setup: 'basketball',
+        note: 'Reported, one secondary source, just above 5,000. Research asked for an official figure before treating it as a friction room. Source: https://www.mediotiempo.com/opinion/javier-balseca/los-dineros-del-deporte/capitanes-la-nueva-opcion-de-entretenmiento-en-mexico-que-va-en-crecimiento',
+      },
+    ],
+    roof: 'indoor',
+  },
 };
 
 /** The venue's name as it was on that date ("Staples Center" in 2019). */

@@ -101,6 +101,15 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/mens-college-basketball', espnId: '302', metroId: 'sacramento', teamId: 'uc-davis-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '302', metroId: 'sacramento', teamId: 'uc-davis-wbb', sport: 'basketball' },
   { path: 'soccer/usa.usl.1', espnId: '17828', metroId: 'sacramento', teamId: 'sacramento-republic', sport: 'soccer' },
+  // Mexico City (docs/research/city-builds/mexico-city/). Ids and home venue names checked against the feed Oct 12, 2026.
+  { path: 'soccer/mex.1', espnId: '227', metroId: 'mexico-city', teamId: 'club-america', sport: 'soccer' },
+  { path: 'soccer/mex.1', espnId: '218', metroId: 'mexico-city', teamId: 'cruz-azul', sport: 'soccer' },
+  { path: 'soccer/mex.1', espnId: '226', metroId: 'mexico-city', teamId: 'atlante', sport: 'soccer' },
+  { path: 'soccer/mex.1', espnId: '233', metroId: 'mexico-city', teamId: 'pumas-unam', sport: 'soccer' },
+  { path: 'soccer/mex.w.1', espnId: '22415', metroId: 'mexico-city', teamId: 'america-femenil', sport: 'soccer' },
+  { path: 'soccer/mex.w.1', espnId: '133981', metroId: 'mexico-city', teamId: 'pumas-femenil', sport: 'soccer' },
+  { path: 'soccer/mex.w.1', espnId: '133982', metroId: 'mexico-city', teamId: 'cruz-azul-femenil', sport: 'soccer' },
+  { path: 'basketball/nba-development', espnId: '124612', metroId: 'mexico-city', teamId: 'capitanes', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
@@ -471,6 +480,19 @@ const VENUE_BY_NAME: Record<string, string> = {
   'q2 stadium': 'q2-stadium',
   'strahan arena at the university events center': 'strahan-arena',
   'strahan arena': 'strahan-arena',
+  // Mexico City, as ESPN writes them. Puebla's Estadio Cuauhtémoc and Coapa/Centenario rooms are not mapped.
+  'estadio banorte': 'estadio-banorte',
+  'estadio azteca': 'estadio-banorte',
+  'estadio ciudad de méxico': 'estadio-banorte',
+  'estadio ciudad de mexico': 'estadio-banorte',
+  'estadio olímpico universitario': 'estadio-olimpico-universitario',
+  'estadio olimpico universitario': 'estadio-olimpico-universitario',
+  'estadio ciudad de los deportes': 'estadio-ciudad-de-los-deportes',
+  'estadio azul': 'estadio-ciudad-de-los-deportes',
+  'mexico city arena': 'arena-cdmx',
+  'arena cdmx': 'arena-cdmx',
+  'arena ciudad de méxico': 'arena-cdmx',
+  'arena ciudad de mexico': 'arena-cdmx',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

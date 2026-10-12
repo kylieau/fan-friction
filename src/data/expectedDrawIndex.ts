@@ -37545,6 +37545,547 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "games": 4,
     "seasons": "2025–2026"
   }
+,
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "all",
+    "month": null,
+    "count": 5426,
+    "low": 3860,
+    "high": 7141,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6994,
+    "low": 5168,
+    "high": 7441,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4531,
+    "low": 3568,
+    "high": 6342,
+    "games": 25,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 3927,
+    "low": 3512,
+    "high": 4680,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 4095,
+    "low": 3931,
+    "high": 5430,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 5992,
+    "low": 5323,
+    "high": 7602,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "friday",
+    "month": null,
+    "count": 5841,
+    "low": 5097,
+    "high": 8432,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 5841,
+    "low": 5097,
+    "high": 8432,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6066,
+    "low": 3973,
+    "high": 10100,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 7024,
+    "low": 6066,
+    "high": 13176,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 7180,
+    "low": 4394,
+    "high": 8203,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 4325,
+    "low": 3996,
+    "high": 5380,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 7124,
+    "low": 6421,
+    "high": 7972,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "venueId": "arena-cdmx",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 8139,
+    "low": 6152,
+    "high": 8352,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-banorte",
+    "dayClass": "all",
+    "month": null,
+    "count": 39968,
+    "low": 31133,
+    "high": 46465,
+    "games": 19,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-banorte",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19085,
+    "low": 18642,
+    "high": 24782,
+    "games": 3,
+    "seasons": "2023"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-banorte",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 43552,
+    "low": 38129,
+    "high": 55995,
+    "games": 14,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-banorte",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 44463,
+    "low": 40910,
+    "high": 51574,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "all",
+    "month": null,
+    "count": 24110,
+    "low": 20668,
+    "high": 26477,
+    "games": 27,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 15499,
+    "low": 13946,
+    "high": 19718,
+    "games": 7,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 15499,
+    "low": 15415,
+    "high": 18403,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 26214,
+    "low": 23880,
+    "high": 27780,
+    "games": 16,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 26410,
+    "low": 25175,
+    "high": 27017,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 26387,
+    "low": 26214,
+    "high": 28317,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 23810,
+    "low": 23606,
+    "high": 24298,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "venueId": "estadio-banorte",
+    "dayClass": "all",
+    "month": null,
+    "count": 20448,
+    "low": 11053,
+    "high": 28878,
+    "games": 9,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "venueId": "estadio-banorte",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 32689,
+    "low": 24409,
+    "high": 44281,
+    "games": 4,
+    "seasons": "2023"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "venueId": "estadio-banorte",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 19551,
+    "low": 16753,
+    "high": 21284,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "all",
+    "month": null,
+    "count": 25497,
+    "low": 23005,
+    "high": 25854,
+    "games": 16,
+    "seasons": "2023–2024"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 25414,
+    "low": 21032,
+    "high": 25846,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "venueId": "estadio-ciudad-de-los-deportes",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 25585,
+    "low": 24160,
+    "high": 25854,
+    "games": 12,
+    "seasons": "2023–2024"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "all",
+    "month": null,
+    "count": 16358,
+    "low": 12133,
+    "high": 22174,
+    "games": 14,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17170,
+    "low": 11575,
+    "high": 22174,
+    "games": 10,
+    "seasons": "2024–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-femenil",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "all",
+    "month": null,
+    "count": 2627,
+    "low": 2339,
+    "high": 7739,
+    "games": 3,
+    "seasons": "2026"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "all",
+    "month": null,
+    "count": 20492,
+    "low": 17104,
+    "high": 27431,
+    "games": 48,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "opener",
+    "month": null,
+    "count": 20844,
+    "low": 20397,
+    "high": 22561,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 13230,
+    "low": 10235,
+    "high": 19156,
+    "games": 9,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 39684,
+    "low": 34879,
+    "high": 42513,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 41672,
+    "low": 39336,
+    "high": 42320,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 20854,
+    "low": 17393,
+    "high": 22721,
+    "games": 27,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 21364,
+    "low": 18910,
+    "high": 21915,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 19678,
+    "low": 15327,
+    "high": 21979,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 18015,
+    "low": 17484,
+    "high": 22365,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 14186,
+    "low": 13232,
+    "high": 18969,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "venueId": "estadio-olimpico-universitario",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 26885,
+    "low": 22368,
+    "high": 34118,
+    "games": 3,
+    "seasons": "2023–2025"
+  }
 ];
 
 /** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */
@@ -54555,6 +55096,406 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "uc-san-diego",
     "ratio": 0.985,
     "games": 2
+  }
+,
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "opponent": "clippers",
+    "ratio": 1.018,
+    "games": 4
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "opponent": "hustle",
+    "ratio": 0.285,
+    "games": 4
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "opponent": "legends",
+    "ratio": 1.004,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "opponent": "remix",
+    "ratio": 0.94,
+    "games": 4
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "opponent": "spurs",
+    "ratio": 1.093,
+    "games": 2
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "opponent": "stars",
+    "ratio": 1.126,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "opponent": "vipers",
+    "ratio": 0.821,
+    "games": 4
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "capitanes",
+    "opponent": "warriors",
+    "ratio": 0.793,
+    "games": 4
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "atl-san-luis",
+    "ratio": 1.032,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "atlas",
+    "ratio": 0.845,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "cruz-azul",
+    "ratio": 1.028,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "guadalajara",
+    "ratio": 1.065,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "ju-rez",
+    "ratio": 0.877,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "le-n",
+    "ratio": 0.99,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "mazatl-n",
+    "ratio": 1.019,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "monterrey",
+    "ratio": 0.968,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "necaxa",
+    "ratio": 1.013,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "puebla",
+    "ratio": 0.915,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "queretaro",
+    "ratio": 0.837,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "santos",
+    "ratio": 0.933,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "tigres",
+    "ratio": 1.019,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "tijuana",
+    "ratio": 1.086,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "toluca",
+    "ratio": 1.028,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "club-america",
+    "opponent": "unam",
+    "ratio": 1.024,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "am-rica",
+    "ratio": 1.283,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "atl-san-luis",
+    "ratio": 0.971,
+    "games": 2
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "atlas",
+    "ratio": 0.835,
+    "games": 2
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "guadalajara",
+    "ratio": 1.105,
+    "games": 2
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "ju-rez",
+    "ratio": 0.941,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "le-n",
+    "ratio": 1.089,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "mazatl-n",
+    "ratio": 0.954,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "monterrey",
+    "ratio": 1.016,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "necaxa",
+    "ratio": 1.013,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "pachuca",
+    "ratio": 0.885,
+    "games": 2
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "puebla",
+    "ratio": 0.862,
+    "games": 2
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "queretaro",
+    "ratio": 0.971,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "santos",
+    "ratio": 0.901,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "tigres",
+    "ratio": 1.011,
+    "games": 2
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "tijuana",
+    "ratio": 0.945,
+    "games": 2
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "cruz-azul",
+    "opponent": "toluca",
+    "ratio": 1.033,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "am-rica",
+    "ratio": 1.01,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "atl-san-luis",
+    "ratio": 0.876,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "atlas",
+    "ratio": 0.935,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "cruz-azul",
+    "ratio": 0.995,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "guadalajara",
+    "ratio": 1.111,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "ju-rez",
+    "ratio": 0.922,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "le-n",
+    "ratio": 1.003,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "mazatl-n",
+    "ratio": 0.948,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "monterrey",
+    "ratio": 1.107,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "necaxa",
+    "ratio": 1.204,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "pachuca",
+    "ratio": 1.044,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "puebla",
+    "ratio": 0.922,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "queretaro",
+    "ratio": 0.966,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "santos",
+    "ratio": 1.004,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "tigres",
+    "ratio": 0.952,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "tijuana",
+    "ratio": 0.863,
+    "games": 3
+  },
+{
+    "metroId": "mexico-city",
+    "teamId": "pumas-unam",
+    "opponent": "toluca",
+    "ratio": 1.282,
+    "games": 3
   }
 ];
 
