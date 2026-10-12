@@ -98,6 +98,27 @@ export function LockMark({ size = 16 }: { size?: number }) {
   );
 }
 
+/** Grouped cards, for the Friends view switch. */
+export function CardsIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" {...base} aria-hidden>
+      <rect x="3" y="4" width="18" height="7" rx="2" />
+      <rect x="3" y="14" width="18" height="7" rx="2" />
+    </svg>
+  );
+}
+
+/** A flat list, for the Friends view switch. */
+export function ListIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" {...base} aria-hidden>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="4" y1="12" x2="20" y2="12" />
+      <line x1="4" y1="18" x2="20" y2="18" />
+    </svg>
+  );
+}
+
 export function PersonIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" {...base} aria-hidden>

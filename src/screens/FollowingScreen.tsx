@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
-import { DEFAULT_METRO } from '../config/metros';
+import { DEFAULT_METRO, METROS } from '../config/metros';
 import { ReadTile } from '../components/ReadTile';
 import { SearchButton } from '../components/SearchButton';
-import { PeopleIcon, StarIcon } from '../components/Icons';
+import { ActivityLines } from '../components/ActivityLines';
+import { FrictionPill } from '../components/EventTags';
+import { CardsIcon, ChevronDown, ListIcon, PeopleIcon, StarIcon } from '../components/Icons';
 import {
   EXAMPLE_FEED,
   favoritesOf,
@@ -16,12 +18,14 @@ import {
   scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
+  todayIn,
   yourEntries,
   type Entry,
   type Favorite,
   type FeedItem,
   type PersonalLog,
 } from '../data';
+import { ACTIVITY_WORDS, activityGroups, activityOrder, feedSentence, type ActivityGroups } from '../lib/activity';
 import { shortLocalDate } from '../lib/dates';
 import { backFrom, datePath, eventPath } from '../lib/view';
 import { FavoritesScreen } from './FavoritesScreen';
@@ -31,9 +35,7 @@ type Segment = 'faves' | 'friends';
 /**
  * Following: who and what you follow, its own tab since build 3 (Kylie, Oct 11, 2026; mocks
  * docs/design/build3/5-favorites.png and 6-friends.png). Two segments, star "Faves" and person
- * "Friends", icon plus a short word so the F-words don't stack. Faves is the Favorites screen;
- * Friends is the feed of the people you follow. This commit moves both as they were; the build 3
- * layouts follow.
+ * "Friends", an icon and a short word each so the F-words don't stack.
  */
 export function FollowingScreen() {
   const [params, setParams] = useSearchParams();
@@ -58,13 +60,20 @@ export function FollowingScreen() {
           <PeopleIcon /> Friends
         </button>
       </div>
-      {segment === 'faves' ? <FavoritesScreen embedded /> : <FriendsTab />}
+      {segment === 'faves' ? <FavoritesScreen embedded /> : <FriendsTab view={params.get('view') === 'feed' ? 'feed' : 'events'} onView={(view) => {
+        const nextParams = new URLSearchParams(params);
+        if (view === 'events') nextParams.delete('view');
+        else nextParams.set('view', view);
+        setParams(nextParams, { replace: true });
+      }} />}
     </div>
   );
 }
 
-/** The Friends segment: the feed of the people you follow, with the reads of the dates it names. */
-function FriendsTab() {
+type View = 'events' | 'feed';
+
+/** The Friends segment: the people you follow, grouped by event by default, or as the flat feed. */
+function FriendsTab({ view, onView }: { view: View; onView: (view: View) => void }) {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const entries = useMemo(() => yourEntries(log), [log]);
@@ -77,7 +86,7 @@ function FriendsTab() {
       setFeed(null);
       return;
     }
-    followingFeed().then((list) => current && setFeed(list));
+    followingFeed(200).then((list) => current && setFeed(list));
     return () => {
       current = false;
     };
@@ -85,7 +94,7 @@ function FriendsTab() {
 
   useEffect(() => {
     let current = true;
-    const nights = [...nightsOf(entries), ...(feed ?? []).filter((item) => item.kind === 'attended').map((item) => ({ metroId: item.metroId ?? DEFAULT_METRO.id, date: item.date }))];
+    const nights = [...nightsOf(entries), ...(feed ?? []).map((item) => ({ metroId: item.metroId ?? DEFAULT_METRO.id, date: item.date }))];
     scoresForNights(nights).then((map) => {
       if (current) setRatings(map);
     });
@@ -94,10 +103,36 @@ function FriendsTab() {
     };
   }, [entries, feed]);
 
-  return <FollowingTab items={feed} ratings={ratings} signedIn={Boolean(account)} log={log} />;
+  if (!account) {
+    return (
+      <div className="card empty-card">
+        <div className="card-title">Sign in to follow people.</div>
+      </div>
+    );
+  }
+  if (feed === null) return null;
+  const example = feed.length === 0;
+  const items = example ? EXAMPLE_FEED : feed;
+  return (
+    <>
+      <div className="you-heading-row friends-head">
+        <span className="friends-kicker">{view === 'events' ? 'By event' : 'Feed'}</span>
+        {/* Grouped by event is the default (Kylie, Oct 11); the switch goes to the feed. */}
+        <div className="view-switch" role="tablist" aria-label="View">
+          <button type="button" role="tab" aria-selected={view === 'events'} aria-label="By event" onClick={() => onView('events')}>
+            <CardsIcon />
+          </button>
+          <button type="button" role="tab" aria-selected={view === 'feed'} aria-label="Feed" onClick={() => onView('feed')}>
+            <ListIcon />
+          </button>
+        </div>
+      </div>
+      {view === 'events' ? <ByEvent items={items} example={example} ratings={ratings} log={log} onFeed={() => onView('feed')} /> : <Feed items={items} example={example} />}
+    </>
+  );
 }
 
-/** A friend's line belongs on your by-event list when the event is yours (saved or logged) or one of your favorites' (Kylie, Oct 9). */
+/** A friend's line belongs on your by-event list when the event is yours (saved or logged) or one of your favorites' (Kylie, Oct 9; kept, 8.1 item 19). */
 function interested(item: FeedItem, log: PersonalLog, favorites: readonly Favorite[]): boolean {
   if (item.eventId && (log.plans.some((p) => p.eventId === item.eventId) || log.added.some((e) => e.eventId === item.eventId))) return true;
   const title = item.title.toLowerCase();
@@ -136,29 +171,35 @@ function groupFeed(items: FeedItem[]): FeedGroup[] {
   return [...groups.values()];
 }
 
+/** "Sam +2 attending · Priya watching · 3 interested" (build notes 3, 4.6; Attending/Attended per 8.1 item 25). */
+function summaryLine(groups: ActivityGroups): string {
+  return activityOrder(groups)
+    .map((kind) => {
+      const people = groups[kind]!;
+      if (kind === 'interested') return `${people.length} interested`;
+      const word = ACTIVITY_WORDS[kind].toLowerCase();
+      return `${people[0].name}${people.length > 1 ? ` +${people.length - 1}` : ''} ${word}`;
+    })
+    .join(' · ');
+}
+
+function todayFor(metroId: string | undefined): string {
+  return todayIn(METROS[metroId ?? DEFAULT_METRO.id] ?? DEFAULT_METRO);
+}
+
 /**
- * The Following feed, grouped per event (build notes 2, section 3, F3): the event and its
- * read on top, the people you follow stacked under it. Only events you're interested in:
- * ones you saved or logged, and your favorites'. Plans ahead under Coming up, past
- * dates under Recent. Each line is dated by the event; no post times, no "is at".
+ * Grouped by event (build notes 3, 4.6; mock 6-friends, A): each card leads with the title and venue,
+ * then its tags and the small read box; one summary line that expands to the grouped lists. Dates
+ * ahead first; past ones sit under an Earlier band like the Stubs month bands. Only the events you
+ * saved, logged or follow (Kylie, Oct 9); the feed shows every line.
  */
-function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | null; ratings: ReadonlyMap<string, number>; signedIn: boolean; log: PersonalLog }) {
-  const location = useLocation();
-  const back = backFrom(location.pathname, location.search);
-  if (!signedIn) {
-    return (
-      <div className="card empty-card">
-        <div className="card-title">Sign in to follow people.</div>
-      </div>
-    );
-  }
-  if (items === null) return null;
+function ByEvent({ items, example, ratings, log, onFeed }: { items: FeedItem[]; example: boolean; ratings: ReadonlyMap<string, number>; log: PersonalLog; onFeed: () => void }) {
   const favorites = favoritesOf(log);
-  const example = items.length === 0;
-  const list = example ? EXAMPLE_FEED : items.filter((item) => interested(item, log, favorites));
+  const list = example ? items : items.filter((item) => interested(item, log, favorites));
   const groups = groupFeed(list);
-  const coming = groups.filter((g) => g.items[0].kind === 'planning');
-  const recent = groups.filter((g) => g.items[0].kind === 'attended');
+  const coming = groups.filter((g) => g.date >= todayFor(g.metroId)).sort((a, b) => a.date.localeCompare(b.date));
+  const earlier = groups.filter((g) => g.date < todayFor(g.metroId)).sort((a, b) => b.date.localeCompare(a.date));
+  const [open, setOpen] = useState<string | null>(() => (coming[0] ?? earlier[0])?.key ?? null);
   if (groups.length === 0) {
     return (
       <div className="card empty-card">
@@ -166,95 +207,141 @@ function FollowingTab({ items, ratings, signedIn, log }: { items: FeedItem[] | n
       </div>
     );
   }
-  const section = (heading: string, rows: FeedGroup[]) =>
-    rows.length > 0 && (
-      <section className="you-block" aria-label={heading}>
-        <h2 className="you-heading">{heading}</h2>
-        {rows.map((group) => {
-          const rating = group.entry && !group.example ? ratingForEntry(group.entry, ratings) : group.metroId ? (ratings.get(nightKey(group.metroId, group.date)) ?? null) : null;
-          const facts = [shortLocalDate(group.date), group.venue].filter(Boolean).join(' · ');
-          const head = (
-            <>
-              <ReadTile rating={rating} />
-              <span className="log-main">
-                <span className="log-title">{group.title}</span>
-                <span className="log-facts">{facts}</span>
-              </span>
-              {group.example && <span className="example-chip">Example</span>}
-            </>
-          );
-          return (
-            <article key={group.key} className="card feed-group">
-              {group.example ? (
-                <div className="feed-group-head">{head}</div>
-              ) : (
-                <Link to={group.eventId && group.metroId ? eventPath(group.eventId, group.metroId) : datePath(group.date, group.metroId ?? DEFAULT_METRO.id)} className="feed-group-head">
-                  {head}
-                </Link>
-              )}
-              <ul className="feed-lines">
-                {group.items.map((item) => {
-                  const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
-                  // No "· you too" (Kylie, Oct 11): people already know they're going.
-                  const text = item.kind === 'planning' ? (item.interested ? 'is interested in' : item.watched ? 'is going to watch' : 'is going to') : item.watched ? 'watched' : 'went to';
-                  return (
-                    <li key={`${item.friend.id}-${item.kind}`} className="feed-line">
-                      <span className="avatar avatar-small" aria-hidden>
-                        {name.slice(0, 1).toUpperCase()}
-                      </span>
-                      {item.example || !item.friend.handle ? (
-                        <span className="log-friend">
-                          <strong>{name}</strong> {text}
-                        </span>
-                      ) : (
-                        <Link to={`/p/${item.friend.handle}`} state={{ back }} className="log-friend log-friend-link">
-                          <strong>{name}</strong> {text}
-                        </Link>
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
-            </article>
-          );
-        })}
-      </section>
+  const card = (group: FeedGroup) => {
+    const rating = group.entry && !group.example ? ratingForEntry(group.entry, ratings) : group.metroId ? (ratings.get(nightKey(group.metroId, group.date)) ?? null) : null;
+    const activity = activityGroups(group.items, null);
+    const expanded = open === group.key;
+    const friction = group.entry?.stamp?.friction;
+    const head = (
+      <>
+        <span className="log-main">
+          <span className="log-title">{group.title}</span>
+          <span className="log-facts">{[group.venue, shortLocalDate(group.date)].filter(Boolean).join(' · ')}</span>
+          {friction && friction !== 'Low' && (
+            <span className="stub-tags">
+              <FrictionPill level={friction} />
+            </span>
+          )}
+        </span>
+        {group.example && <span className="example-chip">Example</span>}
+        <ReadTile rating={rating} />
+      </>
     );
+    return (
+      <article key={group.key} className="card feed-group">
+        {group.example ? (
+          <div className="feed-group-head">{head}</div>
+        ) : (
+          <Link to={group.eventId && group.metroId ? eventPath(group.eventId, group.metroId) : datePath(group.date, group.metroId ?? DEFAULT_METRO.id)} className="feed-group-head">
+            {head}
+          </Link>
+        )}
+        <button type="button" className="feed-summary" aria-expanded={expanded} onClick={() => setOpen(expanded ? null : group.key)}>
+          <span className="feed-avatars" aria-hidden>
+            {group.items.slice(0, 3).map((item) => (
+              <span key={item.friend.id} className="avatar avatar-small">
+                {(item.friend.displayName ?? item.friend.handle ?? '?').slice(0, 1).toUpperCase()}
+              </span>
+            ))}
+          </span>
+          <span className="feed-summary-text">{summaryLine(activity)}</span>
+          <span className={`feed-summary-chevron${expanded ? ' open' : ''}`} aria-hidden>
+            <ChevronDown />
+          </span>
+        </button>
+        {expanded && (
+          <div className="feed-expanded">
+            <ActivityLines groups={activity} />
+          </div>
+        )}
+      </article>
+    );
+  };
   return (
     <>
-      {/* The feed (Kylie, Oct 11, call 1): one plain sentence per line, every friend's line, newest ahead first; the event is the link. */}
-      {!example && items.some((item) => !item.interested) && (
-        <section className="you-block" aria-label="Feed">
-          {/* Interested lines stay off the feed (Kylie, Oct 11): they show under Coming up and on the event page. */}
-          <h2 className="you-heading">Feed</h2>
-          <ul className="log-list card feed-flat">
-            {items.filter((item) => !item.interested).map((item) => (
-              <li key={`${item.friend.id}-${item.kind}-${item.date}-${item.title}`}>
-                <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} className="feed-flat-row">
-                  <span className="avatar avatar-small" aria-hidden>
-                    {(item.friend.displayName ?? item.friend.handle ?? '?').slice(0, 1).toUpperCase()}
-                  </span>
-                  <span className="feed-flat-text">
-                    {feedLine(item)} <strong>{item.title}</strong>
-                  </span>
-                  <span className="feed-flat-date">{shortLocalDate(item.date).replace(/^\w+, /, '')}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+      {coming.map(card)}
+      {earlier.length > 0 && (
+        <section className="you-block" aria-label="Earlier">
+          <h3 className="timeline-heading month-band">Earlier</h3>
+          {earlier.map(card)}
+          <button type="button" className="text-link see-earlier" onClick={onFeed}>
+            See all earlier activity ›
+          </button>
         </section>
       )}
-      {section('Coming up', coming)}
-      {section('Recent', recent)}
     </>
   );
 }
 
-/** The start of a friend's line (Kylie, Oct 11, call 1): "Sam is going to", "Sam is going to watch", "Sam went to", "Sam watched". The event follows. */
+/**
+ * The feed (Kylie, Oct 11, call 1; build notes 3, 4.6 and 4.7): one plain sentence per line, every friend's
+ * line, under Today, Coming up and Earlier bands. "Sam is watching {event} at {location}" when shared.
+ */
+function Feed({ items, example }: { items: FeedItem[]; example: boolean }) {
+  const location = useLocation();
+  const back = backFrom(location.pathname, location.search);
+  const visible = items.filter((item) => !item.interested);
+  const todayRows = visible.filter((item) => item.date === todayFor(item.metroId));
+  const coming = visible.filter((item) => item.date > todayFor(item.metroId)).sort((a, b) => a.date.localeCompare(b.date));
+  const earlier = visible.filter((item) => item.date < todayFor(item.metroId)).sort((a, b) => b.date.localeCompare(a.date));
+  const band = (label: string, rows: FeedItem[]) =>
+    rows.length > 0 && (
+      <section className="you-block" aria-label={label}>
+        <h3 className="timeline-heading month-band">{label}</h3>
+        <ul className="log-list feed-flat">
+          {rows.map((item) => {
+            const { lead, tail } = feedSentence(item);
+            const text = (
+              <>
+                <span className="avatar avatar-small" aria-hidden>
+                  {(item.friend.displayName ?? item.friend.handle ?? '?').slice(0, 1).toUpperCase()}
+                </span>
+                <span className="feed-flat-text">
+                  {lead} <strong>{item.title}</strong>
+                  {tail}
+                </span>
+                <span className="feed-flat-date">{shortLocalDate(item.date).replace(/^\w+, /, '')}</span>
+              </>
+            );
+            const key = `${item.friend.id}-${item.kind}-${item.date}-${item.title}`;
+            if (item.example || !item.friend.handle) {
+              return (
+                <li key={key}>
+                  <span className="feed-flat-row">{text}</span>
+                </li>
+              );
+            }
+            return (
+              <li key={key}>
+                <Link to={item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : datePath(item.date, item.metroId ?? DEFAULT_METRO.id)} state={{ back }} className="feed-flat-row">
+                  {text}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    );
+  if (visible.length === 0) {
+    return (
+      <div className="card empty-card">
+        <div className="card-title">Nothing from the people you follow yet.</div>
+      </div>
+    );
+  }
+  return (
+    <>
+      {example && <span className="example-chip">Example</span>}
+      {band('Today', todayRows)}
+      {band('Coming up', coming)}
+      {band('Earlier', earlier)}
+    </>
+  );
+}
+
+/** The start of a friend's line (Kylie, Oct 11, call 1): "Sam is going to", "Sam is watching", "Sam went to", "Sam watched". The event follows. */
 export function feedLine(item: FeedItem): string {
-  const name = item.friend.displayName ?? item.friend.handle ?? 'Someone';
-  if (item.kind === 'planning') return item.interested ? `${name} is interested in` : item.watched ? `${name} is going to watch` : `${name} is going to`;
-  return item.watched ? `${name} watched` : `${name} went to`;
+  return feedSentence(item).lead;
 }
 
 export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMap<string, number> }) {
@@ -262,15 +349,19 @@ export function FeedRow({ item, ratings }: { item: FeedItem; ratings: ReadonlyMa
   const back = backFrom(location.pathname, location.search);
   const rating = item.entry && !item.example ? ratingForEntry(item.entry, ratings) : null;
   const facts = [shortLocalDate(item.date), item.venue].filter(Boolean).join(' · ');
+  const { lead, tail } = feedSentence(item);
   const body = (
     <>
       {rating !== null && <ReadTile rating={rating} />}
       <span className="log-main">
         <span className="log-friend">
-          {item.example || !item.friend.handle ? feedLine(item) : <Link to={`/p/${item.friend.handle}`} state={{ back }} className="log-friend-link">{feedLine(item)}</Link>}
+          {item.example || !item.friend.handle ? lead : <Link to={`/p/${item.friend.handle}`} state={{ back }} className="log-friend-link">{lead}</Link>}
           {item.example && <span className="example-chip">Example</span>}
         </span>
-        <span className="log-title">{item.title}</span>
+        <span className="log-title">
+          {item.title}
+          {tail}
+        </span>
         <span className="log-facts">{facts}</span>
       </span>
     </>

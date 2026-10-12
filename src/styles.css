@@ -4805,6 +4805,220 @@ button.back-link {
   color: var(--ink);
 }
 
+/* ---------- Following › Faves: the schedule by date (build notes 3, 4.5) ---------- */
+.fav-day {
+  gap: 6px;
+}
+
+.fav-day-head {
+  margin: 0;
+  padding: 0 4px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
+/* One row, two tap zones with a thin separator between them. */
+.fav-sched-row {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--line);
+}
+
+.log-list li:last-child .fav-sched-row {
+  border-bottom: none;
+}
+
+.fav-sched-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px 9px 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.fav-sched-main .log-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.fav-sched-read {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 78px;
+  padding: 6px 4px;
+  border-left: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+.fav-sched-code {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: var(--ink2);
+}
+
+.fav-sched-chevron {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--dodger);
+}
+
+/* The team tag: a filled tile for a team, an outline for an artist, venue or festival. */
+.fav-tag {
+  flex-shrink: 0;
+  min-width: 44px;
+  height: 32px;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  background: var(--dodger);
+  color: var(--card);
+}
+
+.fav-tag-artist,
+.fav-tag-venue,
+.fav-tag-festival {
+  background: var(--card);
+  color: var(--ink2);
+  box-shadow: inset 0 0 0 1.5px #76869b;
+}
+
+.fav-quiet {
+  padding: 4px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+/* ---------- Following › Friends (build notes 3, 4.6) ---------- */
+.friends-head {
+  margin-top: -4px;
+}
+
+.friends-kicker {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
+.view-switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  border-radius: 10px;
+  background: rgba(15, 27, 45, 0.08);
+}
+
+.view-switch button {
+  width: 36px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink2);
+}
+
+.view-switch button[aria-selected='true'] {
+  background: var(--card);
+  color: var(--dodger);
+  box-shadow: 0 1px 3px rgba(15, 27, 45, 0.12);
+}
+
+.feed-summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 44px;
+  padding: 6px 14px;
+  border: none;
+  border-top: 1px solid var(--line);
+  background: none;
+  text-align: left;
+  font: inherit;
+  color: var(--ink);
+}
+
+.feed-avatars {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.feed-avatars .avatar-small {
+  width: 24px;
+  height: 24px;
+  font-size: 11px;
+  margin-left: -8px;
+  box-shadow: 0 0 0 2px var(--card);
+}
+
+.feed-avatars .avatar-small:first-child {
+  margin-left: 0;
+}
+
+.feed-summary-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.feed-summary-chevron svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 160ms ease;
+}
+
+.feed-summary-chevron.open svg {
+  transform: rotate(180deg);
+}
+
+.feed-expanded {
+  padding: 0 10px 10px;
+}
+
+.feed-expanded .activity-lines {
+  box-shadow: none;
+  background: #f4f8fc;
+}
+
+.see-earlier {
+  align-self: flex-start;
+  padding: 6px 4px;
+  border: none;
+  background: none;
+  font: inherit;
+  font-weight: 800;
+}
+
 /* ---------- Favorites: status cards (build notes 2, section 2) ---------- */
 .fav-card {
   display: flex;

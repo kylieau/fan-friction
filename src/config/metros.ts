@@ -3,6 +3,8 @@ export interface Metro {
   id: string;
   name: string;
   timeZone: string;
+  /** The short code shown over a read box for a date outside home (build notes 3, 4.5): "MIL". */
+  code: string;
   /** Map center as [longitude, latitude]. */
   center: [number, number];
   zoom: number;
@@ -16,7 +18,7 @@ export const COVERED_METRO_IDS = ['la', 'san-diego', 'seattle', 'new-york', 'atl
 
 export const METROS: Record<string, Metro> = {
   la: {
-    id: 'la',
+    id: 'la', code: 'LA',
     name: 'Los Angeles',
     timeZone: 'America/Los_Angeles',
     center: [-118.3, 33.97],
@@ -26,7 +28,7 @@ export const METROS: Record<string, Metro> = {
   // Inglewood, Pasadena, Anaheim, and Ventura are Los Angeles. Indio is one
   // festival site, so it is not a metro. New York is Citi Field only.
   boston: {
-    id: 'boston',
+    id: 'boston', code: 'BOS',
     name: 'Boston',
     timeZone: 'America/New_York',
     center: [-71.1428, 42.3564],
@@ -36,14 +38,14 @@ export const METROS: Record<string, Metro> = {
   // collar towns, plus Chicagoland Speedway in Joliet (the research's one addition). One frame holds
   // the lakefront, the West Side, Evanston and Rosemont; Tinley Park, Hoffman Estates and Joliet sit off it.
   chicago: {
-    id: 'chicago',
+    id: 'chicago', code: 'CHI',
     name: 'Chicago',
     timeZone: 'America/Chicago',
     center: [-87.72, 41.88],
     zoom: 9.3,
   },
   columbus: {
-    id: 'columbus',
+    id: 'columbus', code: 'CBUS',
     name: 'Columbus',
     timeZone: 'America/New_York',
     center: [-83.0197, 40.0016],
@@ -53,7 +55,7 @@ export const METROS: Record<string, Metro> = {
   // Meadowlands to Stony Brook; this frames Manhattan, the Bronx, Queens, Brooklyn, Newark
   // and Elmont on one phone screen. Jones Beach, PNC and Stony Brook sit off the first view.
   'new-york': {
-    id: 'new-york',
+    id: 'new-york', code: 'NYC',
     name: 'New York',
     timeZone: 'America/New_York',
     center: [-73.93, 40.75],
@@ -63,7 +65,7 @@ export const METROS: Record<string, Metro> = {
   // and Alpharetta down to Hampton. This frames Downtown, Midtown, the Battery and Lakewood on one
   // phone screen; Gas South, Alpharetta, Kennesaw and the speedway sit off the first view.
   atlanta: {
-    id: 'atlanta',
+    id: 'atlanta', code: 'ATL',
     name: 'Atlanta',
     timeZone: 'America/New_York',
     center: [-84.4, 33.8],
@@ -73,7 +75,7 @@ export const METROS: Record<string, Metro> = {
   // San Mateo and Santa Clara counties. One frame holds San Francisco, Oakland, Berkeley and
   // San Jose; Concord and Pleasanton sit off the first view. Three centers 30–45 miles apart.
   'bay-area': {
-    id: 'bay-area',
+    id: 'bay-area', code: 'BAY',
     name: 'Bay Area',
     timeZone: 'America/Los_Angeles',
     center: [-122.2, 37.62],
@@ -82,7 +84,7 @@ export const METROS: Record<string, Metro> = {
   // Covered Oct 8, 2026 (docs/research/city-builds/dallas-fort-worth/dallas-fort-worth-venue-table-answer.md): Dallas, Tarrant, Collin and Denton
   // counties. One frame holds Dallas, Arlington, Fort Worth and Frisco; Denton and the Speedway sit off it.
   'dallas-fort-worth': {
-    id: 'dallas-fort-worth',
+    id: 'dallas-fort-worth', code: 'DFW',
     name: 'Dallas–Fort Worth',
     timeZone: 'America/Chicago',
     center: [-97.0, 32.85],
@@ -91,7 +93,7 @@ export const METROS: Record<string, Metro> = {
   // Covered Oct 8, 2026 (docs/research/city-builds/montreal/montreal-venue-table-answer.md): the island, Laval, Longueuil and the South Shore.
   // One frame holds downtown, the Olympic Park, Parc Jean-Drapeau and Laval's Place Bell.
   montreal: {
-    id: 'montreal',
+    id: 'montreal', code: 'MTL',
     name: 'Montreal',
     timeZone: 'America/Toronto',
     center: [-73.6, 45.53],
@@ -99,32 +101,32 @@ export const METROS: Record<string, Metro> = {
   },
   // Milwaukee, Waukesha, Ozaukee and Washington counties (Kylie, Oct 11, 2026).
   milwaukee: {
-    id: 'milwaukee', name: 'Milwaukee', timeZone: 'America/Chicago',
+    id: 'milwaukee', code: 'MIL', name: 'Milwaukee', timeZone: 'America/Chicago',
     center: [-87.96, 43.04], zoom: 10.5,
   },
   phoenix: {
-    id: 'phoenix',
+    id: 'phoenix', code: 'PHX',
     name: 'Phoenix',
     timeZone: 'America/Phoenix',
     center: [-112.0712, 33.4457],
     zoom: 12,
   },
   sacramento: {
-    id: 'sacramento',
+    id: 'sacramento', code: 'SAC',
     name: 'Sacramento',
     timeZone: 'America/Los_Angeles',
     center: [-121.4996, 38.5802],
     zoom: 12,
   },
   'san-diego': {
-    id: 'san-diego',
+    id: 'san-diego', code: 'SD',
     name: 'San Diego',
     timeZone: 'America/Los_Angeles',
     center: [-117.1573, 32.7073],
     zoom: 12,
   },
   seattle: {
-    id: 'seattle',
+    id: 'seattle', code: 'SEA',
     name: 'Seattle',
     timeZone: 'America/Los_Angeles',
     // Between the stadium district and the university, so both fit one phone screen.
@@ -132,7 +134,7 @@ export const METROS: Record<string, Metro> = {
     zoom: 12,
   },
   tampa: {
-    id: 'tampa',
+    id: 'tampa', code: 'TPA',
     name: 'Tampa',
     timeZone: 'America/New_York',
     center: [-82.4518, 27.9427],
