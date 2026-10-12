@@ -231,6 +231,13 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'soccer/usa.1', espnId: '9720', metroId: 'montreal', teamId: 'cf-montreal', sport: 'soccer' },
   // ESPN's smaller leagues (Kylie, Oct 8). The CFL team schedule answered empty on Oct 8; the row stays so it lists when it fills.
   { path: 'football/cfl', espnId: '83', metroId: 'montreal', teamId: 'alouettes', sport: 'football' },
+  // Toronto (docs/research/city-builds/toronto/). Ids checked against the feed Oct 12, 2026. CFL schedule was empty, same as the Alouettes row.
+  { path: 'hockey/nhl', espnId: '21', metroId: 'toronto', teamId: 'maple-leafs', sport: 'hockey' },
+  { path: 'basketball/nba', espnId: '28', metroId: 'toronto', teamId: 'raptors', sport: 'basketball' },
+  { path: 'basketball/wnba', espnId: '131935', metroId: 'toronto', teamId: 'tempo', sport: 'basketball' },
+  { path: 'basketball/nba-development', espnId: '17', metroId: 'toronto', teamId: 'raptors-905', sport: 'basketball' },
+  { path: 'soccer/usa.1', espnId: '7318', metroId: 'toronto', teamId: 'toronto-fc', sport: 'soccer' },
+  { path: 'football/cfl', espnId: '85', metroId: 'toronto', teamId: 'argonauts', sport: 'football' },
   { path: 'soccer/usa.w.usl.1', espnId: '131447', metroId: 'dallas-fort-worth', teamId: 'dallas-trinity', sport: 'soccer' },
   { path: 'football/ufl', espnId: '112647', metroId: 'dallas-fort-worth', teamId: 'dallas-renegades', sport: 'football' },
   { path: 'basketball/nba-development', espnId: '24', metroId: 'dallas-fort-worth', teamId: 'texas-legends', sport: 'basketball' },
@@ -283,6 +290,7 @@ const ESPN_MLB_IDS: Record<string, string> = {
   brewers: '8',
   rays: '30',
   astros: '18',
+  'blue-jays': '14',
 };
 
 /**
@@ -470,6 +478,17 @@ const VENUE_BY_NAME: Record<string, string> = {
   'swangard stadium': 'swangard-stadium',
   'rogers field at nat bailey stadium': 'nat-bailey-stadium',
   'nat bailey stadium': 'nat-bailey-stadium',
+  // Toronto, as ESPN wrote them on each club's schedule Oct 12, 2026.
+  'scotiabank arena': 'scotiabank-arena',
+  'aréna scotiabank': 'scotiabank-arena',
+  'coca-cola coliseum': 'coca-cola-coliseum',
+  'ricoh coliseum': 'coca-cola-coliseum',
+  'bmo field': 'bmo-field',
+  'toronto stadium': 'bmo-field',
+  'paramount fine foods centre': 'mississauga-sports-centre',
+  'mississauga sports and entertainment centre': 'mississauga-sports-centre',
+  'hershey centre': 'mississauga-sports-centre',
+  'rogers centre': 'rogers-centre',
   'now arena': 'now-arena',
   'comerica center': 'comerica-center',
   // Columbus, as ESPN writes them (checked Oct 12, 2026).

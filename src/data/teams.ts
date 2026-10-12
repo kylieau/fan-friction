@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|sacramento|sac state|uc davis|nashville|lake country|columbus|ohio state|austin|round rock|texas state|vancouver|las vegas|vegas|henderson|unlv|kansas city|kc|houston|sugar land|toronto|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -416,7 +416,29 @@ const LIST: Team[] = [
   team('ubc-mbb', "UBC Thunderbirds Men's Basketball", 'UBC MBB', "U Sports men's basketball", 'basketball', 'vancouver', 'UBC'),
   team('ubc-wbb', "UBC Thunderbirds Women's Basketball", 'UBC WBB', "U Sports women's basketball", 'basketball', 'vancouver', 'UBC'),
   team('ubc-soccer', 'UBC Thunderbirds Soccer', 'UBC Soccer', 'U Sports soccer', 'soccer', 'vancouver', 'UBC'),
-  team('blue-jays', 'Toronto Blue Jays', 'Blue Jays', 'MLB', 'baseball'),
+  
+  // Toronto (Oct 12, 2026; docs/research/city-builds/toronto/). The Blue Jays record was already a visitor; it is now the home club, same id.
+  // Hamilton stays a separate city, so the Toronto Rock is not a Toronto team. Several clubs have no feed yet.
+  team('blue-jays', 'Toronto Blue Jays', 'Blue Jays', 'MLB', 'baseball', 'toronto', 'JAY'),
+  team('maple-leafs', 'Toronto Maple Leafs', 'Maple Leafs', 'NHL', 'hockey', 'toronto', 'TOR', ['Leafs']),
+  team('raptors', 'Toronto Raptors', 'Raptors', 'NBA', 'basketball', 'toronto', 'RAP'),
+  team('toronto-fc', 'Toronto FC', 'Toronto FC', 'MLS', 'soccer', 'toronto', 'TFC'),
+  team('argonauts', 'Toronto Argonauts', 'Argonauts', 'CFL', 'football', 'toronto', 'ARG', ['Argos']),
+  team('marlies', 'Toronto Marlies', 'Marlies', 'AHL', 'hockey', 'toronto', 'MAR'),
+  team('sceptres', 'Toronto Sceptres', 'Sceptres', 'PWHL', 'hockey', 'toronto', 'SCE'),
+  team('tempo', 'Toronto Tempo', 'Tempo', 'WNBA', 'basketball', 'toronto', 'TEM'),
+  team('raptors-905', 'Raptors 905', 'Raptors 905', 'NBA G League', 'basketball', 'toronto', '905'),
+  team('afc-toronto', 'AFC Toronto', 'AFC Toronto', 'NSL', 'soccer', 'toronto', 'AFC'),
+  team('inter-toronto', 'Inter Toronto FC', 'Inter Toronto', 'CPL', 'soccer', 'toronto', 'INT', ['York United FC']),
+  team('brampton-steelheads', 'Brampton Steelheads', 'Steelheads', 'OHL', 'hockey', 'toronto', 'BST', ['Mississauga Steelheads']),
+  team('brampton-honey-badgers', 'Brampton Honey Badgers', 'Honey Badgers', 'CEBL', 'basketball', 'toronto', 'BHB'),
+  team('oshawa-generals', 'Oshawa Generals', 'Generals', 'OHL', 'hockey', 'toronto', 'GEN'),
+  team('oshawa-firewolves', 'Oshawa FireWolves', 'FireWolves', 'NLL', 'lacrosse', 'toronto', 'FIR'),
+  team('varsity-blues-football', 'Toronto Varsity Blues Football', 'Varsity Blues FB', 'U Sports football', 'football', 'toronto', 'VFB'),
+  team('varsity-blues-hockey', 'Toronto Varsity Blues Hockey', 'Varsity Blues HK', 'U Sports hockey', 'hockey', 'toronto', 'VHK'),
+  team('varsity-blues-mbb', "Toronto Varsity Blues Men's Basketball", 'Varsity Blues MBB', 'U Sports basketball', 'basketball', 'toronto', 'VBB'),
+  team('york-lions-football', 'York Lions Football', 'York Lions FB', 'U Sports football', 'football', 'toronto', 'YFB'),
+  team('tmu-bold', 'TMU Bold', 'TMU Bold', 'U Sports', 'basketball', 'toronto', 'TMU'),
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball'),
   team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball'),
   team('padres', 'San Diego Padres', 'Padres', 'MLB', 'baseball'),

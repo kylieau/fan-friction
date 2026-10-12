@@ -42262,6 +42262,1699 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "games": 5,
     "seasons": "2024–2025"
   }
+,
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "all",
+    "month": null,
+    "count": 38900,
+    "low": 31665,
+    "high": 41690,
+    "games": 240,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "opener",
+    "month": null,
+    "count": 40734,
+    "low": 40402,
+    "high": 41731,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 36993,
+    "low": 27929,
+    "high": 41785,
+    "games": 117,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 35490,
+    "low": 27814,
+    "high": 37181,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 30233,
+    "low": 26498,
+    "high": 37766,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 28670,
+    "low": 23853,
+    "high": 39336,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 36801,
+    "low": 30588,
+    "high": 39252,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 41129,
+    "low": 36848,
+    "high": 42143,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 42342,
+    "low": 34954,
+    "high": 42917,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 36760,
+    "low": 27694,
+    "high": 42129,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "friday",
+    "month": null,
+    "count": 39867,
+    "low": 34248,
+    "high": 41685,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 40263,
+    "low": 39688,
+    "high": 40721,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 33781,
+    "low": 31002,
+    "high": 37673,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 39193,
+    "low": 36288,
+    "high": 41666,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 41339,
+    "low": 39697,
+    "high": 41506,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 41492,
+    "low": 40642,
+    "high": 42085,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 38244,
+    "low": 32292,
+    "high": 42166,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 40268,
+    "low": 36484,
+    "high": 41813,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 39405,
+    "low": 36775,
+    "high": 41543,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 40339,
+    "low": 37280,
+    "high": 41248,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 39318,
+    "low": 37448,
+    "high": 41657,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 38234,
+    "low": 36593,
+    "high": 40179,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 41666,
+    "low": 39646,
+    "high": 42027,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 42205,
+    "low": 37287,
+    "high": 42477,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 40048,
+    "low": 36008,
+    "high": 41468,
+    "games": 40,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 37804,
+    "low": 27481,
+    "high": 39053,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 35952,
+    "low": 33110,
+    "high": 39749,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 39468,
+    "low": 37622,
+    "high": 40993,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 40114,
+    "low": 40052,
+    "high": 41288,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 41475,
+    "low": 40690,
+    "high": 42117,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 41919,
+    "low": 36546,
+    "high": 42070,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 18737,
+    "low": 18513,
+    "high": 18975,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 18948,
+    "low": 18941,
+    "high": 18993,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 18059,
+    "low": 17175,
+    "high": 18293,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 18605,
+    "low": 18440,
+    "high": 18881,
+    "games": 71,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18577,
+    "low": 18535,
+    "high": 18955,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 18582,
+    "low": 18403,
+    "high": 18658,
+    "games": 6,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18691,
+    "low": 18456,
+    "high": 18911,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 18629,
+    "low": 18569,
+    "high": 18680,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 18414,
+    "low": 18287,
+    "high": 18692,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 18451,
+    "low": 18371,
+    "high": 18669,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 18681,
+    "low": 18565,
+    "high": 18937,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 18939,
+    "low": 18723,
+    "high": 19152,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 18992,
+    "low": 18905,
+    "high": 19125,
+    "games": 38,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19078,
+    "low": 18928,
+    "high": 19114,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 18952,
+    "low": 18933,
+    "high": 19100,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 19170,
+    "low": 19103,
+    "high": 19312,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 19151,
+    "low": 18924,
+    "high": 19197,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 18848,
+    "low": 18741,
+    "high": 18924,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 19107,
+    "low": 18955,
+    "high": 19277,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 18946,
+    "low": 18914,
+    "high": 19011,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18571,
+    "low": 18435,
+    "high": 18628,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 18554,
+    "low": 18451,
+    "high": 18663,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 5347,
+    "low": 4198,
+    "high": 6365,
+    "games": 95,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "opener",
+    "month": null,
+    "count": 5241,
+    "low": 5215,
+    "high": 5312,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 4026,
+    "low": 2665,
+    "high": 7362,
+    "games": 25,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 2962,
+    "low": 2483,
+    "high": 3737,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 7426,
+    "low": 6055,
+    "high": 7526,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 3580,
+    "low": 2770,
+    "high": 6564,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 7135,
+    "low": 5983,
+    "high": 7395,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 4026,
+    "low": 3352,
+    "high": 4395,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 2605,
+    "low": 2356,
+    "high": 3827,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "friday",
+    "month": null,
+    "count": 4557,
+    "low": 4170,
+    "high": 5103,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 6349,
+    "low": 5420,
+    "high": 6756,
+    "games": 35,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 6422,
+    "low": 6366,
+    "high": 6823,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 6638,
+    "low": 6421,
+    "high": 6769,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 6376,
+    "low": 6095,
+    "high": 6703,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 6357,
+    "low": 5859,
+    "high": 6889,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 3820,
+    "low": 3711,
+    "high": 3824,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 5828,
+    "low": 5276,
+    "high": 5909,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 5275,
+    "low": 4785,
+    "high": 5564,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 5077,
+    "low": 4474,
+    "high": 5881,
+    "games": 29,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 5347,
+    "low": 4857,
+    "high": 5359,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 5635,
+    "low": 4760,
+    "high": 5824,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 5720,
+    "low": 5347,
+    "high": 5980,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 3792,
+    "low": 3735,
+    "high": 4433,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 5984,
+    "low": 5941,
+    "high": 6045,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 4908,
+    "low": 4646,
+    "high": 4996,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "scotiabank-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 11381,
+    "low": 8771,
+    "high": 12806,
+    "games": 10,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 12174,
+    "low": 9623,
+    "high": 12791,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 10449,
+    "low": 8771,
+    "high": 11630,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 11879,
+    "low": 11381,
+    "high": 12448,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "all",
+    "month": null,
+    "count": 2471,
+    "low": 1848,
+    "high": 3608,
+    "games": 46,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "opener",
+    "month": null,
+    "count": 4414,
+    "low": 4055,
+    "high": 4846,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 2130,
+    "low": 1500,
+    "high": 4656,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 1115,
+    "low": 972,
+    "high": 1838,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 4641,
+    "low": 1696,
+    "high": 4701,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 3040,
+    "low": 2103,
+    "high": 4840,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "friday",
+    "month": null,
+    "count": 2206,
+    "low": 2054,
+    "high": 2634,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 2285,
+    "low": 2079,
+    "high": 2550,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2645,
+    "low": 2536,
+    "high": 3449,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 2418,
+    "low": 2148,
+    "high": 2497,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 2704,
+    "low": 2645,
+    "high": 3509,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 2951,
+    "low": 2226,
+    "high": 3126,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "venueId": "mississauga-sports-centre",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 2691,
+    "low": 2293,
+    "high": 3616,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 19182,
+    "low": 18562,
+    "high": 19800,
+    "games": 120,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 19800,
+    "low": 19708,
+    "high": 19800,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 17507,
+    "low": 16950,
+    "high": 18141,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 19060,
+    "low": 18357,
+    "high": 19541,
+    "games": 64,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 18566,
+    "low": 18091,
+    "high": 19239,
+    "games": 11,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 19120,
+    "low": 18337,
+    "high": 19800,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 18864,
+    "low": 18690,
+    "high": 18999,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 19142,
+    "low": 18582,
+    "high": 19563,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 10,
+    "count": 19082,
+    "low": 18158,
+    "high": 19174,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 19167,
+    "low": 18619,
+    "high": 19800,
+    "games": 10,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 19203,
+    "low": 18284,
+    "high": 19423,
+    "games": 13,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 19601,
+    "low": 19261,
+    "high": 19800,
+    "games": 23,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 19322,
+    "low": 19192,
+    "high": 19474,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "friday",
+    "month": 3,
+    "count": 19276,
+    "low": 19111,
+    "high": 19701,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 19800,
+    "low": 19800,
+    "high": 19800,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "friday",
+    "month": 12,
+    "count": 19800,
+    "low": 19800,
+    "high": 19800,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 19477,
+    "low": 19162,
+    "high": 19800,
+    "games": 12,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 19191,
+    "low": 19085,
+    "high": 19409,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 19477,
+    "low": 19360,
+    "high": 19556,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 18883,
+    "low": 18276,
+    "high": 19359,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "sunday",
+    "month": 2,
+    "count": 18812,
+    "low": 18531,
+    "high": 18903,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 19275,
+    "low": 18941,
+    "high": 19493,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 18038,
+    "low": 17392,
+    "high": 18610,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 19305,
+    "low": 18492,
+    "high": 19359,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 8335,
+    "low": 8168,
+    "high": 8608,
+    "games": 24,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 8335,
+    "low": 8127,
+    "high": 8597,
+    "games": 10,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 8618,
+    "low": 8485,
+    "high": 8645,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 8108,
+    "low": 7912,
+    "high": 8213,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "friday",
+    "month": null,
+    "count": 8264,
+    "low": 8194,
+    "high": 8450,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8278,
+    "low": 8170,
+    "high": 8472,
+    "games": 7,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 8251,
+    "low": 7918,
+    "high": 8265,
+    "games": 3,
+    "seasons": "2024"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 8557,
+    "low": 8450,
+    "high": 8611,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 8557,
+    "low": 8450,
+    "high": 8611,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "tempo",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "all",
+    "month": null,
+    "count": 8210,
+    "low": 8210,
+    "high": 8210,
+    "games": 14,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "tempo",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 8210,
+    "low": 8210,
+    "high": 8210,
+    "games": 6,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "tempo",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 8210,
+    "low": 8210,
+    "high": 8210,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "tempo",
+    "venueId": "coca-cola-coliseum",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 8210,
+    "low": 8210,
+    "high": 8210,
+    "games": 4,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "tempo",
+    "venueId": "scotiabank-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 18145,
+    "low": 16916,
+    "high": 18723,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 23407,
+    "low": 21270,
+    "high": 26141,
+    "games": 32,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 20591,
+    "low": 15824,
+    "high": 21520,
+    "games": 6,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 24183,
+    "low": 22337,
+    "high": 27038,
+    "games": 26,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 24382,
+    "low": 23342,
+    "high": 25075,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 22699,
+    "low": 22424,
+    "high": 23404,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 22247,
+    "low": 19644,
+    "high": 27179,
+    "games": 8,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 23361,
+    "low": 22903,
+    "high": 25832,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 27076,
+    "low": 25264,
+    "high": 27783,
+    "games": 3,
+    "seasons": "2024–2025"
+  }
 ];
 
 /** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */
@@ -42558,6 +44251,14 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "teamId": "sporting-kc",
     "season": 2026,
     "level": 0.969,
+    "games": 10
+  }
+,
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "season": 2026,
+    "level": 0.74,
     "games": 10
   }
 ];
@@ -61682,6 +63383,924 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "ratio": 0.957,
     "games": 3
   }
+,
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "angels",
+    "ratio": 0.989,
+    "games": 10
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "astros",
+    "ratio": 1.02,
+    "games": 10
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "athletics",
+    "ratio": 0.959,
+    "games": 10
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "cardinals",
+    "ratio": 0.973,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "dodgers",
+    "ratio": 1.16,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "guardians",
+    "ratio": 0.993,
+    "games": 9
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "mariners",
+    "ratio": 0.972,
+    "games": 9
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "marlins",
+    "ratio": 1.123,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "mets",
+    "ratio": 1.012,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "orioles",
+    "ratio": 0.936,
+    "games": 20
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "phillies",
+    "ratio": 0.942,
+    "games": 8
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "pirates",
+    "ratio": 1.053,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "rangers",
+    "ratio": 1.011,
+    "games": 10
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "rays",
+    "ratio": 1.063,
+    "games": 19
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "red-sox",
+    "ratio": 1.054,
+    "games": 19
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "reds",
+    "ratio": 0.97,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "rockies",
+    "ratio": 1.014,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "royals",
+    "ratio": 1.004,
+    "games": 9
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "tigers",
+    "ratio": 1.042,
+    "games": 9
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "twins",
+    "ratio": 1,
+    "games": 9
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "white-sox",
+    "ratio": 1.024,
+    "games": 9
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "opponent": "yankees",
+    "ratio": 1.009,
+    "games": 20
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "avalanche",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "blackhawks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "blue-jackets",
+    "ratio": 0.998,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "blues",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "bruins",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "canadiens",
+    "ratio": 1.013,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "canucks",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "capitals",
+    "ratio": 0.999,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "devils",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "ducks",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "flames",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "flyers",
+    "ratio": 0.994,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "golden-knights",
+    "ratio": 1.01,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "hurricanes",
+    "ratio": 0.991,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "islanders",
+    "ratio": 1.004,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "jets",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "kings",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "kraken",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "lightning",
+    "ratio": 0.992,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "oilers",
+    "ratio": 1.003,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "panthers",
+    "ratio": 1,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "penguins",
+    "ratio": 1.008,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "predators",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "rangers",
+    "ratio": 0.998,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "red-wings",
+    "ratio": 1.01,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "sabres",
+    "ratio": 1.003,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "senators",
+    "ratio": 0.998,
+    "games": 7
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "sharks",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "stars",
+    "ratio": 0.997,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "opponent": "wild",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "americans",
+    "ratio": 1.06,
+    "games": 9
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "bears",
+    "ratio": 0.69,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "bruins",
+    "ratio": 1.121,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "checkers",
+    "ratio": 0.938,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "comets",
+    "ratio": 1.061,
+    "games": 7
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "crunch",
+    "ratio": 0.923,
+    "games": 9
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "griffins",
+    "ratio": 0.945,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "monsters",
+    "ratio": 0.985,
+    "games": 12
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "moose",
+    "ratio": 0.863,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "penguins",
+    "ratio": 0.935,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "phantoms",
+    "ratio": 0.917,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "rocket",
+    "ratio": 1.053,
+    "games": 12
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "senators",
+    "ratio": 0.982,
+    "games": 15
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "thunderbirds",
+    "ratio": 0.985,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "marlies",
+    "opponent": "wolf-pack",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "blue-coats",
+    "ratio": 0.922,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "boom",
+    "ratio": 0.973,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "celtics",
+    "ratio": 1.136,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "cruise",
+    "ratio": 0.85,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "go-go",
+    "ratio": 1.176,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "gold",
+    "ratio": 1.208,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "herd",
+    "ratio": 1.195,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "knicks",
+    "ratio": 1.235,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "magic",
+    "ratio": 1.123,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "swarm",
+    "ratio": 0.905,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors-905",
+    "opponent": "vipers",
+    "ratio": 1.084,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "76ers",
+    "ratio": 0.982,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "bucks",
+    "ratio": 0.99,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "bulls",
+    "ratio": 0.978,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "cavaliers",
+    "ratio": 0.962,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "celtics",
+    "ratio": 0.988,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "clippers",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "grizzlies",
+    "ratio": 0.973,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "hawks",
+    "ratio": 0.983,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "heat",
+    "ratio": 0.989,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "hornets",
+    "ratio": 1.003,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "jazz",
+    "ratio": 0.991,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "kings",
+    "ratio": 0.994,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "knicks",
+    "ratio": 0.993,
+    "games": 7
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "lakers",
+    "ratio": 1.011,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "magic",
+    "ratio": 1.002,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "mavericks",
+    "ratio": 1.011,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "nets",
+    "ratio": 0.999,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "nuggets",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "pacers",
+    "ratio": 0.977,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "pelicans",
+    "ratio": 0.992,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "pistons",
+    "ratio": 1.001,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "rockets",
+    "ratio": 0.972,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "spurs",
+    "ratio": 1.005,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "suns",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "thunder",
+    "ratio": 0.995,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "timberwolves",
+    "ratio": 0.998,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "trail-blazers",
+    "ratio": 0.996,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "warriors",
+    "ratio": 1.014,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "opponent": "wizards",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "opponent": "charge",
+    "ratio": 1.004,
+    "games": 6
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "opponent": "fleet",
+    "ratio": 1.004,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "opponent": "frost",
+    "ratio": 0.996,
+    "games": 5
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "opponent": "sirens",
+    "ratio": 0.997,
+    "games": 4
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "sceptres",
+    "opponent": "victoire",
+    "ratio": 1.002,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "tempo",
+    "opponent": "dream",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "tempo",
+    "opponent": "fever",
+    "ratio": 1.012,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "tempo",
+    "opponent": "mystics",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "tempo",
+    "opponent": "storm",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "atlanta",
+    "ratio": 0.901,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "austin",
+    "ratio": 0.926,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "cf-montr-al",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "charlotte",
+    "ratio": 0.974,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "chicago",
+    "ratio": 1.007,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "cincinnati",
+    "ratio": 0.881,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "columbus",
+    "ratio": 0.889,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "d-c-united",
+    "ratio": 0.982,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "miami",
+    "ratio": 1.219,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "nashville",
+    "ratio": 0.966,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "new-england",
+    "ratio": 0.976,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "nycfc",
+    "ratio": 1.026,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "orlando",
+    "ratio": 0.982,
+    "games": 2
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "philadelphia",
+    "ratio": 0.886,
+    "games": 3
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "opponent": "red-bull-ny",
+    "ratio": 0.946,
+    "games": 3
+  }
 ];
 
 /** Playoff occupancy per team, building and round band (expectedDrawBuild.ts buildPostseasonRows). */
@@ -64263,6 +66882,151 @@ export const POSTSEASON_DRAWS: PostseasonRow[] = [
     "low": 0.698,
     "high": 1.042,
     "games": 63,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  }
+,
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "band": "first",
+    "occupancy": 0.986,
+    "low": 0.901,
+    "high": 1.181,
+    "games": 31,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "band": "second",
+    "occupancy": 1.028,
+    "low": 0.949,
+    "high": 1.165,
+    "games": 57,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "blue-jays",
+    "venueId": "rogers-centre",
+    "band": "conference",
+    "occupancy": 1.09,
+    "low": 0.948,
+    "high": 1.144,
+    "games": 34,
+    "seasons": "2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "band": "first",
+    "occupancy": 1.028,
+    "low": 1.011,
+    "high": 1.046,
+    "games": 9,
+    "seasons": "2023, 2024, 2025",
+    "basis": "team"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "maple-leafs",
+    "venueId": "scotiabank-arena",
+    "band": "second",
+    "occupancy": 1.024,
+    "low": 1,
+    "high": 1.033,
+    "games": 43,
+    "seasons": "2023, 2025 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.044,
+    "games": 82,
+    "seasons": "2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.04,
+    "games": 40,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "raptors",
+    "venueId": "scotiabank-arena",
+    "band": "final",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.058,
+    "games": 22,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "band": "first",
+    "occupancy": 0.929,
+    "low": 0.676,
+    "high": 1.022,
+    "games": 47,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "band": "second",
+    "occupancy": 0.929,
+    "low": 0.676,
+    "high": 1.022,
+    "games": 47,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "band": "conference",
+    "occupancy": 0.929,
+    "low": 0.676,
+    "high": 1.022,
+    "games": 47,
+    "seasons": "league, any round, 2022, 2023, 2024, 2025",
+    "basis": "league"
+  },
+  {
+    "metroId": "toronto",
+    "teamId": "toronto-fc",
+    "venueId": "bmo-field",
+    "band": "final",
+    "occupancy": 0.929,
+    "low": 0.676,
+    "high": 1.022,
+    "games": 47,
     "seasons": "league, any round, 2022, 2023, 2024, 2025",
     "basis": "league"
   }

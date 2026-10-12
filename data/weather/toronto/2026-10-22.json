@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-22",
+  "rows": [
+    {
+      "metroId": "toronto",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:13:35.179Z",
+      "feelsLikeF": 56,
+      "tempF": 58.5,
+      "humidity": 69,
+      "windMph": 5,
+      "uvIndex": 0,
+      "precipProbability": 28,
+      "precipMm": 0,
+      "shortwave": 2,
+      "cloudCover": 5,
+      "code": 0
+    }
+  ],
+  "days": [
+    {
+      "metroId": "toronto",
+      "venueId": "city",
+      "date": "2026-10-22",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:13:35.179Z",
+      "feelsLikeHighF": 57.9,
+      "feelsLikeLowF": 43.3,
+      "code": 0,
+      "precipProbability": 28,
+      "precipMm": 0
+    }
+  ]
+}

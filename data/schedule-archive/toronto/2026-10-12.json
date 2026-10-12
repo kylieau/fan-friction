@@ -1,0 +1,554 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "metroName": "Toronto",
+  "timeZone": "America/Toronto",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T08:16:24.793Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 7
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-13-espn-raptors-401908944",
+      "metroId": "toronto",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Raptors vs. Knicks",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "raptors",
+        "away": "knicks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17507,
+        "low": 16950,
+        "high": 18141,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-14-espn-toronto-fc-761860",
+      "metroId": "toronto",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Toronto FC vs. Orlando",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "toronto-fc",
+        "away": "orlando"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 14963,
+        "low": 11499,
+        "high": 15638,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 6 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-15-espn-maple-leafs-401892506",
+      "metroId": "toronto",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Maple Leafs vs. Sabres",
+      "broadcast": "MSGB",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "maple-leafs",
+        "away": "sabres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18469,
+        "low": 18342,
+        "high": 18748,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-17-espn-maple-leafs-401892523",
+      "metroId": "toronto",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Maple Leafs vs. Islanders",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "maple-leafs",
+        "away": "islanders"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18923,
+        "low": 18816,
+        "high": 19000,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-18-ht-marlies-1029167",
+      "metroId": "toronto",
+      "date": "2026-10-18",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Marlies vs. Senators",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "marlies",
+        "away": "senators"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3724,
+        "low": 3668,
+        "high": 4353,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-19-espn-maple-leafs-401892537",
+      "metroId": "toronto",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Maple Leafs vs. Sharks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "maple-leafs",
+        "away": "sharks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18432,
+        "low": 18305,
+        "high": 18711,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-21-ht-marlies-1029174",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Marlies vs. Hammers",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "marlies",
+        "away": "hammers"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 4026,
+        "low": 2665,
+        "high": 7362,
+        "fromCrowds": true,
+        "games": 25,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 25 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-21-espn-raptors-401909837",
+      "metroId": "toronto",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Raptors vs. Bulls",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "raptors",
+        "away": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 19364,
+        "low": 19274,
+        "high": 19364,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-22-espn-maple-leafs-401892553",
+      "metroId": "toronto",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Maple Leafs vs. Rangers",
+      "broadcast": "MSG",
+      "place": {
+        "type": "venue",
+        "venueId": "scotiabank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "maple-leafs",
+        "away": "rangers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18377,
+        "low": 18250,
+        "high": 18655,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-ht-marlies-1029200",
+      "metroId": "toronto",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Marlies vs. IceHogs",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "marlies",
+        "away": "icehogs"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3820,
+        "low": 3711,
+        "high": 3824,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-ht-marlies-1029204",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Marlies vs. IceHogs",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "marlies",
+        "away": "icehogs"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3792,
+        "low": 3735,
+        "high": 4433,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 6 games, 2023–2025."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-13-espn-raptors-401908944",
+      "date": "2026-10-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17507,
+        "low": 16950,
+        "high": 18141
+      }
+    },
+    {
+      "eventId": "2026-10-14-espn-toronto-fc-761860",
+      "date": "2026-10-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14963,
+        "low": 11499,
+        "high": 15638
+      }
+    },
+    {
+      "eventId": "2026-10-15-espn-maple-leafs-401892506",
+      "date": "2026-10-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18469,
+        "low": 18342,
+        "high": 18748
+      }
+    },
+    {
+      "eventId": "2026-10-17-espn-maple-leafs-401892523",
+      "date": "2026-10-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18923,
+        "low": 18816,
+        "high": 19000
+      }
+    },
+    {
+      "eventId": "2026-10-18-ht-marlies-1029167",
+      "date": "2026-10-18",
+      "start": "16:00",
+      "draw": {
+        "count": 3724,
+        "low": 3668,
+        "high": 4353
+      }
+    },
+    {
+      "eventId": "2026-10-19-espn-maple-leafs-401892537",
+      "date": "2026-10-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18432,
+        "low": 18305,
+        "high": 18711
+      }
+    },
+    {
+      "eventId": "2026-10-21-ht-marlies-1029174",
+      "date": "2026-10-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4026,
+        "low": 2665,
+        "high": 7362
+      }
+    },
+    {
+      "eventId": "2026-10-21-espn-raptors-401909837",
+      "date": "2026-10-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19364,
+        "low": 19274,
+        "high": 19364
+      }
+    },
+    {
+      "eventId": "2026-10-22-espn-maple-leafs-401892553",
+      "date": "2026-10-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18377,
+        "low": 18250,
+        "high": 18655
+      }
+    },
+    {
+      "eventId": "2026-10-24-ht-marlies-1029200",
+      "date": "2026-10-24",
+      "start": "16:00",
+      "draw": {
+        "count": 3820,
+        "low": 3711,
+        "high": 3824
+      }
+    },
+    {
+      "eventId": "2026-10-25-ht-marlies-1029204",
+      "date": "2026-10-25",
+      "start": "16:00",
+      "draw": {
+        "count": 3792,
+        "low": 3735,
+        "high": 4433
+      }
+    }
+  ]
+}

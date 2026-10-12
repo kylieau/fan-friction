@@ -1,0 +1,7605 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "teamId": "blue-jays",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-08",
+      "start": "19:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 45022,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-09",
+      "start": "15:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 43386,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-10",
+      "start": "13:37",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 31549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-15",
+      "start": "19:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 35415,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-16",
+      "start": "15:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 32330,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 3
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-17",
+      "start": "13:37",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 27490,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-25",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 20981,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-26",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 22611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-27",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 20468,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-28",
+      "start": "15:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 23144,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-29",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 35066,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-04-30",
+      "start": "15:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 40732,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-01",
+      "start": "13:37",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 31802,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-02",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 18577,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-03",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 22491,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-04",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 29057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 10
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-16",
+      "start": "19:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 28207,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-17",
+      "start": "19:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 22988,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-18",
+      "start": "19:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 20472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-20",
+      "start": "19:07",
+      "opponent": "Reds",
+      "venueId": "rogers-centre",
+      "attendance": 29300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-21",
+      "start": "15:07",
+      "opponent": "Reds",
+      "venueId": "rogers-centre",
+      "attendance": 39393,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-22",
+      "start": "13:37",
+      "opponent": "Reds",
+      "venueId": "rogers-centre",
+      "attendance": 42323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-05-31",
+      "start": "19:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 25424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-01",
+      "start": "19:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 23312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-02",
+      "start": "15:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 25250,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-03",
+      "start": "19:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 27753,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-04",
+      "start": "15:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 36987,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-05",
+      "start": "13:37",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 34088,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-13",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 19716,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-14",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 23106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-15",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 19961,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-16",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 36832,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-17",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 44688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-18",
+      "start": "15:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 45055,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-19",
+      "start": "13:37",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 44395,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-27",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 25498,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-28",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 27140,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-29",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 27601,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-06-30",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 22987,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-01",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 44445,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": "12:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 39426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 33
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-02",
+      "start": "18:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 24180,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-03",
+      "start": "13:37",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 35757,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-12",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 32795,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-13",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 30853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-14",
+      "start": "19:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 24426,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-15",
+      "start": "19:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 26422,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-16",
+      "start": "15:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 40135,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-17",
+      "start": "12:05",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 36681,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-26",
+      "start": "19:07",
+      "opponent": "Cardinals",
+      "venueId": "rogers-centre",
+      "attendance": 39756,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-27",
+      "start": "19:07",
+      "opponent": "Cardinals",
+      "venueId": "rogers-centre",
+      "attendance": 36666,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-28",
+      "start": "19:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 27080,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-29",
+      "start": "19:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 28046,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-30",
+      "start": "15:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 42933,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-07-31",
+      "start": "12:05",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 40298,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-12",
+      "start": "19:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 41677,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-13",
+      "start": "15:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 44977,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-14",
+      "start": "13:37",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 41002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-15",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 26769,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-16",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 37940,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-17",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 40141,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-26",
+      "start": "19:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 40754,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-27",
+      "start": "15:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 45311,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-28",
+      "start": "13:37",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 44318,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-29",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "rogers-centre",
+      "attendance": 26473,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-30",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "rogers-centre",
+      "attendance": 33759,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-08-31",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "rogers-centre",
+      "attendance": 28572,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-12",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 23002,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "13:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 23497,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-13",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 25103,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-14",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 24282,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-15",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 23820,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-16",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 36573,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-17",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 44448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-18",
+      "start": "13:37",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 41301,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-26",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 34307,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-27",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 40528,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-28",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 37008,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-09-30",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 37283,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-10-01",
+      "start": "15:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 44612,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-10-02",
+      "start": "13:37",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 43877,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-10-07",
+      "start": "16:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 47402,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Wild Card Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2022,
+      "date": "2022-10-08",
+      "start": "16:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 47156,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Wild Card Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-11",
+      "start": "19:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 42053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-12",
+      "start": "19:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 35300,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-13",
+      "start": "19:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 26192,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 4
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-14",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 34822,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-15",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 41679,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-16",
+      "start": "13:37",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 39179,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-24",
+      "start": "19:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 26293,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-25",
+      "start": "19:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 28917,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-26",
+      "start": "13:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 35069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-28",
+      "start": "19:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 41414,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-29",
+      "start": "15:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 41475,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-04-30",
+      "start": "13:37",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 40158,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 9
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-12",
+      "start": "19:07",
+      "opponent": "Braves",
+      "venueId": "rogers-centre",
+      "attendance": 35047,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-13",
+      "start": "15:07",
+      "opponent": "Braves",
+      "venueId": "rogers-centre",
+      "attendance": 41341,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-14",
+      "start": "13:37",
+      "opponent": "Braves",
+      "venueId": "rogers-centre",
+      "attendance": 40895,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-15",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 28810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-16",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 35112,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 17
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-17",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 27431,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-18",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 33290,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 18
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-19",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 32485,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 19
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-20",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 41611,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-21",
+      "start": "13:37",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 41643,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-30",
+      "start": "19:07",
+      "opponent": "Brewers",
+      "venueId": "rogers-centre",
+      "attendance": 32930,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-05-31",
+      "start": "19:07",
+      "opponent": "Brewers",
+      "venueId": "rogers-centre",
+      "attendance": 42205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-01",
+      "start": "13:07",
+      "opponent": "Brewers",
+      "venueId": "rogers-centre",
+      "attendance": 42059,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-05",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 23982,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 27
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-06",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 30079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-07",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 26724,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-08",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 28284,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-09",
+      "start": "19:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 35222,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-10",
+      "start": "15:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 41990,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-11",
+      "start": "13:37",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 41673,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 36,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-23",
+      "start": "19:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 34988,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-24",
+      "start": "16:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 41720,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-25",
+      "start": "13:37",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 41069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 42,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-27",
+      "start": "19:07",
+      "opponent": "Giants",
+      "venueId": "rogers-centre",
+      "attendance": 36004,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-28",
+      "start": "19:07",
+      "opponent": "Giants",
+      "venueId": "rogers-centre",
+      "attendance": 36685,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 43,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-29",
+      "start": "19:07",
+      "opponent": "Giants",
+      "venueId": "rogers-centre",
+      "attendance": 27761,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 44,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-06-30",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 37218,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-01",
+      "start": "15:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41813,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-02",
+      "start": "13:37",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41455,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 39
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-14",
+      "start": "19:07",
+      "opponent": "D-backs",
+      "venueId": "rogers-centre",
+      "attendance": 38617,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-15",
+      "start": "15:07",
+      "opponent": "D-backs",
+      "venueId": "rogers-centre",
+      "attendance": 42328,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-16",
+      "start": "13:37",
+      "opponent": "D-backs",
+      "venueId": "rogers-centre",
+      "attendance": 41794,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-18",
+      "start": "19:07",
+      "opponent": "Padres",
+      "venueId": "rogers-centre",
+      "attendance": 42680,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-19",
+      "start": "19:07",
+      "opponent": "Padres",
+      "venueId": "rogers-centre",
+      "attendance": 42948,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 42
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-20",
+      "start": "13:07",
+      "opponent": "Padres",
+      "venueId": "rogers-centre",
+      "attendance": 43196,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-28",
+      "start": "19:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 42106,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-29",
+      "start": "15:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 41997,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-30",
+      "start": "12:05",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 41810,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-07-31",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 31122,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-01",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 40691,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 48
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-02",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 36924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-03",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 42672,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 49
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-11",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "rogers-centre",
+      "attendance": 41814,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-12",
+      "start": "15:07",
+      "opponent": "Cubs",
+      "venueId": "rogers-centre",
+      "attendance": 42585,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-13",
+      "start": "13:37",
+      "opponent": "Cubs",
+      "venueId": "rogers-centre",
+      "attendance": 41960,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-15",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 42615,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-16",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 42701,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-25",
+      "start": "19:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 40755,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 58
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-26",
+      "start": "15:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 41924,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-27",
+      "start": "13:37",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 41978,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 59
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-28",
+      "start": "19:07",
+      "opponent": "Nationals",
+      "venueId": "rogers-centre",
+      "attendance": 27940,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-29",
+      "start": "19:07",
+      "opponent": "Nationals",
+      "venueId": "rogers-centre",
+      "attendance": 39722,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 60
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-08-30",
+      "start": "15:07",
+      "opponent": "Nationals",
+      "venueId": "rogers-centre",
+      "attendance": 39303,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": "19:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 26493,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": "15:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 41443,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": "13:37",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 35275,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 79,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-11",
+      "start": "19:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 23451,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-12",
+      "start": "19:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 30479,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 64
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-13",
+      "start": "19:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 25495,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 65
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-14",
+      "start": "19:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 37594,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-15",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 35680,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 80,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-16",
+      "start": "15:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 42276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 81,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-17",
+      "start": "13:37",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41876,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-26",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 40454,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-27",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 31923,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 70
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-28",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 36657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 87,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-29",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 42394,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 88,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-09-30",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 42097,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 71
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 42058,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 89,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-08",
+      "start": "19:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 40069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-09",
+      "start": "19:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 31310,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-10",
+      "start": "15:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 22960,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 6
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-12",
+      "start": "19:07",
+      "opponent": "Rockies",
+      "venueId": "rogers-centre",
+      "attendance": 29035,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-13",
+      "start": "15:07",
+      "opponent": "Rockies",
+      "venueId": "rogers-centre",
+      "attendance": 31472,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-14",
+      "start": "13:37",
+      "opponent": "Rockies",
+      "venueId": "rogers-centre",
+      "attendance": 27481,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 7,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-15",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 30962,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 8,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-16",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 31175,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-17",
+      "start": "15:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 30233,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-26",
+      "start": "19:07",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 39688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 13
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-27",
+      "start": "15:07",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 39405,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 14
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-28",
+      "start": "13:37",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 39053,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-29",
+      "start": "19:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 29879,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-04-30",
+      "start": "19:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 27189,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 15
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-01",
+      "start": "15:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 32307,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-10",
+      "start": "19:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 34205,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 20
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-11",
+      "start": "15:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 35069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-12",
+      "start": "13:37",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 32200,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 21
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-17",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 32640,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 23
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-18",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 34416,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 24
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-19",
+      "start": "13:37",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 35840,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 19,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-20",
+      "start": "15:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 36993,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-21",
+      "start": "19:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 28176,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 25
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-22",
+      "start": "19:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 28670,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 26
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-05-31",
+      "start": "19:07",
+      "opponent": "Pirates",
+      "venueId": "rogers-centre",
+      "attendance": 33356,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-01",
+      "start": "15:07",
+      "opponent": "Pirates",
+      "venueId": "rogers-centre",
+      "attendance": 36484,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 29
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-02",
+      "start": "13:37",
+      "opponent": "Pirates",
+      "venueId": "rogers-centre",
+      "attendance": 34887,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-03",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 23842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 30
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-04",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 28816,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 31
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-05",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 27929,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-06",
+      "start": "13:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 39215,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 32
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-14",
+      "start": "19:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 36790,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-15",
+      "start": "15:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 39318,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-16",
+      "start": "13:37",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 40043,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-17",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 29907,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-18",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 38595,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 37
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-19",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 38906,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 35,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-27",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 36423,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 37,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-28",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 34791,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-29",
+      "start": "15:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 37448,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-06-30",
+      "start": "13:37",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 38534,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 44
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-01",
+      "start": "15:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 39265,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-02",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 26308,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-03",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 28570,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 46
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-04",
+      "start": "13:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 38234,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 47
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-19",
+      "start": "19:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 39697,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 52
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-20",
+      "start": "15:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 38583,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 53
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-21",
+      "start": "13:37",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 38766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-23",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 38575,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 54
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-24",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 32276,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-25",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 41148,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 55
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-26",
+      "start": "19:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 35065,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-27",
+      "start": "15:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 35917,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-07-28",
+      "start": "13:37",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 40052,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-06",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 35051,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-07",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 37547,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 61
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-08",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 27910,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 53,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-09",
+      "start": "19:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 39894,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-10",
+      "start": "15:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 34312,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 62
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-11",
+      "start": "13:37",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 38797,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 63
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-19",
+      "start": "19:07",
+      "opponent": "Reds",
+      "venueId": "rogers-centre",
+      "attendance": 25603,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 66
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-20",
+      "start": "19:07",
+      "opponent": "Reds",
+      "venueId": "rogers-centre",
+      "attendance": 34662,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-21",
+      "start": "19:07",
+      "opponent": "Reds",
+      "venueId": "rogers-centre",
+      "attendance": 27057,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-22",
+      "start": "19:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 25900,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-23",
+      "start": "19:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 25431,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-24",
+      "start": "15:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 34011,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 62,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-08-25",
+      "start": "13:37",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 37036,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 63,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-03",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 23796,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 72
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-04",
+      "start": "15:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 23768,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 73
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-09",
+      "start": "19:07",
+      "opponent": "Mets",
+      "venueId": "rogers-centre",
+      "attendance": 27470,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 76
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-10",
+      "start": "19:07",
+      "opponent": "Mets",
+      "venueId": "rogers-centre",
+      "attendance": 28109,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 68,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-11",
+      "start": "15:07",
+      "opponent": "Mets",
+      "venueId": "rogers-centre",
+      "attendance": 29399,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 77
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-13",
+      "start": "19:07",
+      "opponent": "Cardinals",
+      "venueId": "rogers-centre",
+      "attendance": 30380,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-14",
+      "start": "15:07",
+      "opponent": "Cardinals",
+      "venueId": "rogers-centre",
+      "attendance": 33999,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-15",
+      "start": "13:37",
+      "opponent": "Cardinals",
+      "venueId": "rogers-centre",
+      "attendance": 34793,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 78
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-23",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 22254,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 83
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-24",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 29178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 84
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-25",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 27694,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 85
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-27",
+      "start": "19:07",
+      "opponent": "Marlins",
+      "venueId": "rogers-centre",
+      "attendance": 31597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 85
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-28",
+      "start": "15:07",
+      "opponent": "Marlins",
+      "venueId": "rogers-centre",
+      "attendance": 35733,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 86
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2024,
+      "date": "2024-09-29",
+      "start": "15:07",
+      "opponent": "Marlins",
+      "venueId": "rogers-centre",
+      "attendance": 31688,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 87
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-03-27",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 40734,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Opening Day presented by TD"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Toque Giveaway presented by TD"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Magnet Schedule presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-03-28",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 26289,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bo Bichette Layered City Connect Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-03-29",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 27005,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 1
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-03-30",
+      "start": "13:37",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 21069,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Jr. Jays Opening Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-03-31",
+      "start": "19:07",
+      "opponent": "Nationals",
+      "venueId": "rogers-centre",
+      "attendance": 20137,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Vladimir Guerrero Jr. Silver Slugger Bobblehead Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Vladimir Guerrero Jr. Silver Slugger Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-01",
+      "start": "19:07",
+      "opponent": "Nationals",
+      "venueId": "rogers-centre",
+      "attendance": 21845,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-02",
+      "start": "15:07",
+      "opponent": "Nationals",
+      "venueId": "rogers-centre",
+      "attendance": 20104,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 2
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-14",
+      "start": "19:07",
+      "opponent": "Braves",
+      "venueId": "rogers-centre",
+      "attendance": 21595,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 7
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-15",
+      "start": "19:07",
+      "opponent": "Braves",
+      "venueId": "rogers-centre",
+      "attendance": 26979,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 9,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-16",
+      "start": "13:07",
+      "opponent": "Braves",
+      "venueId": "rogers-centre",
+      "attendance": 25328,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "School Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-18",
+      "start": "19:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 40263,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "City Connect Bomber Jacket Giveaway presented by Enercare"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-19",
+      "start": "15:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 36775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "[SOLD OUT] Hello Kitty Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-20",
+      "start": "13:37",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 25752,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 9
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-29",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 28045,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-04-30",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 26498,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Alejandro Kirk Bobble-Arm Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Alejandro Kirk Bobble-Arm Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-01",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 24198,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 14,
+        "losses": 16
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-02",
+      "start": "19:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 26087,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 15,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "City Connect Chris Bassitt-Ball Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-03",
+      "start": "15:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 40507,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Blue Jays Minecraft Movie Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays A Minecraft Movie Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-04",
+      "start": "13:37",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 30641,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 17
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-13",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 27717,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 20
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-14",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 22314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 20,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Daulton Varsho Gold Glove Bobblehead Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Daulton Varsho Gold Glove Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-15",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 22856,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-16",
+      "start": "19:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 23146,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "City Connect Night Mode Hat Giveaway presented by RYOBI"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-17",
+      "start": "15:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 40171,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 21,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Blue Jays Barbie Game Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Barbie Hawaiian Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-18",
+      "start": "13:37",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 36064,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-20",
+      "start": "19:07",
+      "opponent": "Padres",
+      "venueId": "rogers-centre",
+      "attendance": 23597,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 22,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-21",
+      "start": "19:07",
+      "opponent": "Padres",
+      "venueId": "rogers-centre",
+      "attendance": 23266,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "George Springer Replica Football Jersey Giveaway Night presented by TD"
+        },
+        {
+          "type": "Giveaway",
+          "name": "George Springer Replica Football Jersey Giveaway by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-22",
+      "start": "13:07",
+      "opponent": "Padres",
+      "venueId": "rogers-centre",
+      "attendance": 33971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "School Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-29",
+      "start": "19:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 23853,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 27,
+        "losses": 28
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-30",
+      "start": "19:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 36951,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 28,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Vladimir Guerrero Jr. City Connect Replica Hockey Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-05-31",
+      "start": "15:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 38017,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 29,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Cricket Day at the Park presented by TD"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Cricket Warm-up Jacket Giveaway presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-01",
+      "start": "13:37",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 30130,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-03",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 32632,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-04",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 25716,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Golf Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-05",
+      "start": "15:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 33728,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-17",
+      "start": "19:07",
+      "opponent": "D-backs",
+      "venueId": "rogers-centre",
+      "attendance": 38537,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 38,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-18",
+      "start": "19:07",
+      "opponent": "D-backs",
+      "venueId": "rogers-centre",
+      "attendance": 27635,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kevin Gausman T-Shirt Giveaway Night presented by RYOBI"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Kevin Gausman T-Shirt Giveaway presented by RYOBI"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-19",
+      "start": "15:07",
+      "opponent": "D-backs",
+      "venueId": "rogers-centre",
+      "attendance": 33978,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-20",
+      "start": "19:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 36121,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night presented by TD"
+        },
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "City Connect Crossbody Bag Giveaway presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-21",
+      "start": "15:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41488,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 35
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-22",
+      "start": "13:37",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 38893,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 41,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-06-30",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 40619,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Andrés Giménez New Blue Replica Jersey Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Andrés Giménez New Blue Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-01",
+      "start": "15:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 41129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Canada Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Vladimir Guerrero Jr. Red Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-02",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 30985,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 47,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-03",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 36848,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 48,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-04",
+      "start": "19:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 30119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 49,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-05",
+      "start": "15:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 37269,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 38
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-06",
+      "start": "13:37",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 40114,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 38
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-18",
+      "start": "19:07",
+      "opponent": "Giants",
+      "venueId": "rogers-centre",
+      "attendance": 41339,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 55,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "José Berríos City Connect Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-19",
+      "start": "15:07",
+      "opponent": "Giants",
+      "venueId": "rogers-centre",
+      "attendance": 42015,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 41
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-20",
+      "start": "12:05",
+      "opponent": "Giants",
+      "venueId": "rogers-centre",
+      "attendance": 41693,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-21",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 41788,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jeff Hoffman Thanos Bobblehead Inspired by Thanos Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jeff Hoffman Thanos Bobblehead Inspired by Thanos Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-22",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 42326,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-07-23",
+      "start": "19:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 42143,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Salsa Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Dancing Vlad Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-01",
+      "start": "19:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 41492,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-02",
+      "start": "15:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 41842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Slo-Pitch Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-03",
+      "start": "13:37",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 41461,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 47
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-12",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "rogers-centre",
+      "attendance": 43003,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 69,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-13",
+      "start": "19:07",
+      "opponent": "Cubs",
+      "venueId": "rogers-centre",
+      "attendance": 43120,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 50
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Anthony Santander Switch-Hitter Bobblehead Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Anthony Santander Switch-Hitter Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-14",
+      "start": "15:07",
+      "opponent": "Cubs",
+      "venueId": "rogers-centre",
+      "attendance": 43270,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 70,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-15",
+      "start": "19:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 42260,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 71,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "City Connect Reversible Bucket Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-16",
+      "start": "15:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 42686,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 72,
+        "losses": 51
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-17",
+      "start": "13:37",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 42549,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-25",
+      "start": "19:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 41845,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 76,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Andrés Giménez Bobblehead Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Andrés Giménez Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-26",
+      "start": "19:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 42235,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-27",
+      "start": "19:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 42361,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 56
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-29",
+      "start": "19:07",
+      "opponent": "Brewers",
+      "venueId": "rogers-centre",
+      "attendance": 41390,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-30",
+      "start": "15:07",
+      "opponent": "Brewers",
+      "venueId": "rogers-centre",
+      "attendance": 41424,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 57
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-08-31",
+      "start": "13:37",
+      "opponent": "Brewers",
+      "venueId": "rogers-centre",
+      "attendance": 41488,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 58
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-09",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 40252,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 82,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-10",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 36760,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 61
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "University and College Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-11",
+      "start": "15:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 41224,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 83,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-12",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 34376,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 84,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-13",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 42461,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 85,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Blue Jays Peanuts Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Charlie Brown Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-14",
+      "start": "13:37",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 42032,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 86,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Jr. Jays Sundays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-23",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 42927,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 66
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-24",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 39438,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 67
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-25",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 42129,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 90,
+        "losses": 68
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-26",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 42184,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 91,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fan Appreciation Weekend presented by TD"
+        },
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "City Connect Rugby Shirt Giveaway presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-27",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 42624,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 92,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-09-28",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 42083,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 93,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-10-04",
+      "start": "16:08",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 44655,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-10-05",
+      "start": "16:08",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 44764,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Division Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-10-12",
+      "start": "20:03",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 44474,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Championship Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-10-13",
+      "start": "17:03",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 44814,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Championship Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-10-19",
+      "start": "20:03",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 44764,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Championship Series",
+      "game": 6,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-10-20",
+      "start": "20:10",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 44770,
+      "kind": "announced",
+      "postseason": true,
+      "round": "AL Championship Series",
+      "game": 7,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-10-24",
+      "start": "20:00",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 44353,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 1,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-10-25",
+      "start": "20:00",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 44607,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 2,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-10-31",
+      "start": "20:00",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 44710,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 6,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2025,
+      "date": "2025-11-01",
+      "start": "20:00",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 44713,
+      "kind": "announced",
+      "postseason": true,
+      "round": "World Series",
+      "game": 7,
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-03-27",
+      "start": "19:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 42728,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 0,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Opening Night presented by TD"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays AL Champions Pennant Giveaway presented by TD"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Magnet Schedule presented by Rogers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-03-28",
+      "start": "15:07",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 40268,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 1,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Blue Jays AL Champions White Panel Hat Giveaway Night presented by TD"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays AL Champions White Panel Hat Giveaway presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-03-29",
+      "start": "13:37",
+      "opponent": "Athletics",
+      "venueId": "rogers-centre",
+      "attendance": 36484,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 2,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Opening Day presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-03-30",
+      "start": "19:07",
+      "opponent": "Rockies",
+      "venueId": "rogers-centre",
+      "attendance": 35490,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 0
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Blue Jays AL Champions Crewneck Giveaway Night presented by Enercare"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays AL Champions Crewneck Giveaway presented by Enercare"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-03-31",
+      "start": "19:07",
+      "opponent": "Rockies",
+      "venueId": "rogers-centre",
+      "attendance": 38871,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 3,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-01",
+      "start": "13:07",
+      "opponent": "Rockies",
+      "venueId": "rogers-centre",
+      "attendance": 37208,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 1
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "School Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-06",
+      "start": "19:07",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 40991,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 5
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-07",
+      "start": "19:07",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 40971,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 6
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Commemorative Ticket Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-08",
+      "start": "15:07",
+      "opponent": "Dodgers",
+      "venueId": "rogers-centre",
+      "attendance": 37766,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 4,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-10",
+      "start": "19:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 40721,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 5,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Jumpin' George Springer Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-11",
+      "start": "15:07",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 41591,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 7
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Addison Barger Couch T-Shirt Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Addison Barger Couch T-Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-12",
+      "start": "13:37",
+      "opponent": "Twins",
+      "venueId": "rogers-centre",
+      "attendance": 37804,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 6,
+        "losses": 8
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-24",
+      "start": "19:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 41671,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 14
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Y2K Weekend"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Retro Hoodie Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-25",
+      "start": "15:07",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 41543,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 10,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "SpongeBob SquarePants Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-26",
+      "start": "13:37",
+      "opponent": "Guardians",
+      "venueId": "rogers-centre",
+      "attendance": 41136,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 11,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-27",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41785,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 15
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Ernie Clement Replica Hockey Jersey Giveaway Night presented by Explore New Brunswick"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Ernie Clement Replica Hockey Jersey Giveaway presented by Explore New Brunswick"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-28",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 12,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "15:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41314,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 13,
+        "losses": 16
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "19:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 41923,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 16,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Trey Yesavage Angry Bird Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-09",
+      "start": "15:07",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 41461,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 17,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Blue Jays Barbie Game Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Barbie Reversible Bucket Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-10",
+      "start": "13:37",
+      "opponent": "Angels",
+      "venueId": "rogers-centre",
+      "attendance": 40977,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 21
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Mother's Day presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-11",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 39336,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 22
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Blue Jays Legendary Home Runs T-Shirt Giveaway Night presented by RYOBI"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Legendary Home Runs T-Shirt Giveaway presented by RYOBI"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-12",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 41265,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 23
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 40119,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 18,
+        "losses": 24
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "NARUTO Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-22",
+      "start": "19:07",
+      "opponent": "Pirates",
+      "venueId": "rogers-centre",
+      "attendance": 39839,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 23,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Bautista & Encarnacion HR Flex Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "15:07",
+      "opponent": "Pirates",
+      "venueId": "rogers-centre",
+      "attendance": 41813,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 24,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Cricket Day at the Park"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Cricket Sweater Vest Giveaway presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-24",
+      "start": "12:15",
+      "opponent": "Pirates",
+      "venueId": "rogers-centre",
+      "attendance": 41354,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 27
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-25",
+      "start": "19:07",
+      "opponent": "Marlins",
+      "venueId": "rogers-centre",
+      "attendance": 41177,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 28
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "'Born Ready' Vladdy Bobblehead Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "'Born Ready' Vladdy Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-26",
+      "start": "19:07",
+      "opponent": "Marlins",
+      "venueId": "rogers-centre",
+      "attendance": 42815,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 25,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-05-27",
+      "start": "13:07",
+      "opponent": "Marlins",
+      "venueId": "rogers-centre",
+      "attendance": 42372,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 26,
+        "losses": 29
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "School Day"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-05",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 41801,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 33
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Pride Night presented by TD"
+        },
+        {
+          "type": "Theme Days",
+          "name": "City Connect Pride Hat Giveaway presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-06",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 41868,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 30,
+        "losses": 34
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "13:37",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 41278,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 31,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-08",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 37178,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 34
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Roy Halladay Retro Replica Jersey Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Roy Halladay Retro Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-09",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 41079,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 32,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "19:07",
+      "opponent": "Phillies",
+      "venueId": "rogers-centre",
+      "attendance": 35733,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 35
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Dylan Cease Bobblehead Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Dylan Cease Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-12",
+      "start": "19:37",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 41596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 33,
+        "losses": 36
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Andrés Giménez Replica Soccer Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-13",
+      "start": "15:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 42364,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 36
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "13:37",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 41596,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 34,
+        "losses": 37
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-22",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 42273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 54,
+        "losses": 62
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Gate 14 Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-23",
+      "start": "16:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 38633,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 39
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-24",
+      "start": "19:07",
+      "opponent": "Astros",
+      "venueId": "rogers-centre",
+      "attendance": 39264,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 40
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Retro Domer Hat Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Retro Domer Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "19:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 35273,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 41
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Potato Head Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-26",
+      "start": "19:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 41689,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 42
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Alejandro Kirk City Connect Replica Jersey"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "15:07",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 41657,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 43
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-28",
+      "start": "13:37",
+      "opponent": "Rangers",
+      "venueId": "rogers-centre",
+      "attendance": 40898,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 44
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-29",
+      "start": "19:07",
+      "opponent": "Mets",
+      "venueId": "rogers-centre",
+      "attendance": 41634,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 39,
+        "losses": 45
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-06-30",
+      "start": "19:07",
+      "opponent": "Mets",
+      "venueId": "rogers-centre",
+      "attendance": 41538,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 45
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-07-01",
+      "start": "15:07",
+      "opponent": "Mets",
+      "venueId": "rogers-centre",
+      "attendance": 41842,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 40,
+        "losses": 46
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Canada Day presented by Rogers"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Shane Bieber Red Cut-Off Replica Jersey Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "19:15",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41895,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 51
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-07-18",
+      "start": "15:07",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41775,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 45,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Back-to-Back Statue Unveil"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Set of '92 & '93 World Series Replica Rings Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-07-19",
+      "start": "12:15",
+      "opponent": "White Sox",
+      "venueId": "rogers-centre",
+      "attendance": 41288,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 52
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-07-20",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 40837,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 53
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Kazuma Okamoto T-Shirt Giveaway Night"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Kazuma Okamoto T-Shirt Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-07-21",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 42881,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 54
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-07-22",
+      "start": "19:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 42841,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 55
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Stranger Things Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-07-23",
+      "start": "15:07",
+      "opponent": "Rays",
+      "venueId": "rogers-centre",
+      "attendance": 43225,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 46,
+        "losses": 56
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-07-31",
+      "start": "19:07",
+      "opponent": "Cardinals",
+      "venueId": "rogers-centre",
+      "attendance": 41506,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 50,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-01",
+      "start": "15:07",
+      "opponent": "Cardinals",
+      "venueId": "rogers-centre",
+      "attendance": 41819,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 51,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Blue Jays Transformers Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Transformers Hat Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-02",
+      "start": "13:37",
+      "opponent": "Cardinals",
+      "venueId": "rogers-centre",
+      "attendance": 41321,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 52,
+        "losses": 59
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-10",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 42511,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 56,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Giveaway",
+          "name": "Back-to-Back Replica Statue Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-11",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 42419,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 57,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-12",
+      "start": "19:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 42888,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 58,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Youth Baseball Specialty Ticket"
+        },
+        {
+          "type": "Day of Game Highlights",
+          "name": "Sportsnet Jays Care Broadcast Auction"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-13",
+      "start": "15:07",
+      "opponent": "Red Sox",
+      "venueId": "rogers-centre",
+      "attendance": 43442,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 63
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-14",
+      "start": "19:15",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 42816,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 59,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-15",
+      "start": "15:07",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 42580,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 60,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "Care Bears Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-16",
+      "start": "13:37",
+      "opponent": "Yankees",
+      "venueId": "rogers-centre",
+      "attendance": 42351,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 61,
+        "losses": 64
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-25",
+      "start": "19:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 43245,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 68
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-26",
+      "start": "19:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 42323,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 64,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-27",
+      "start": "19:07",
+      "opponent": "Royals",
+      "venueId": "rogers-centre",
+      "attendance": 42621,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 69
+      },
+      "promotions": [],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-28",
+      "start": "19:15",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 41910,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 65,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-29",
+      "start": "15:07",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 41512,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 66,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Hall of Excellence Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Buck Martinez Legacy Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-08-30",
+      "start": "13:37",
+      "opponent": "Mariners",
+      "venueId": "rogers-centre",
+      "attendance": 42039,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 67,
+        "losses": 70
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-09-11",
+      "start": "19:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 42111,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 74
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "City Connect Fridays"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Classic Retro Bag Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-09-12",
+      "start": "15:07",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 41949,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 73,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Blue Jays Hello Kitty Day"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Blue Jays Hello Kitty Bobblehead Giveaway"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-09-13",
+      "start": "13:37",
+      "opponent": "Orioles",
+      "venueId": "rogers-centre",
+      "attendance": 41805,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 74,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Jr. Jays Sundays presented by Ontario Honda Dealers"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-09-14",
+      "start": "19:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 42867,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 75
+      },
+      "promotions": [
+        {
+          "type": "Ticket Offer",
+          "name": "University and College Specialty Ticket"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-09-15",
+      "start": "19:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 43554,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 76
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Loonie Dogs Night presented by Schneiders"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-09-16",
+      "start": "15:07",
+      "opponent": "Tigers",
+      "venueId": "rogers-centre",
+      "attendance": 43463,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 75,
+        "losses": 77
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Work From Dome"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-09-25",
+      "start": "19:07",
+      "opponent": "Reds",
+      "venueId": "rogers-centre",
+      "attendance": 42535,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 77,
+        "losses": 82
+      },
+      "promotions": [
+        {
+          "type": "Day of Game Highlights",
+          "name": "Carlos Delgado Short-Sleeved Retro Windbreaker Giveaway Night presented by TD"
+        },
+        {
+          "type": "Giveaway",
+          "name": "Carlos Delgado Short-Sleeved Retro Windbreaker Giveaway presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-09-26",
+      "start": "15:07",
+      "opponent": "Reds",
+      "venueId": "rogers-centre",
+      "attendance": 42482,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 82
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    },
+    {
+      "teamId": "blue-jays",
+      "season": 2026,
+      "date": "2026-09-27",
+      "start": "15:07",
+      "opponent": "Reds",
+      "venueId": "rogers-centre",
+      "attendance": 42131,
+      "kind": "announced",
+      "recordBefore": {
+        "wins": 78,
+        "losses": 83
+      },
+      "promotions": [
+        {
+          "type": "Theme Days",
+          "name": "Fan Appreciation Weekend presented by TD"
+        }
+      ],
+      "sourceId": "mlb"
+    }
+  ]
+}

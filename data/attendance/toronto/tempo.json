@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "teamId": "tempo",
+  "collectedOn": "2026-10-12",
+  "games": [
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-04-29",
+      "start": "19:00",
+      "opponent": "Sun",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "preseason": true,
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-05-08",
+      "start": "19:30",
+      "opponent": "Mystics",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-05-13",
+      "start": "19:00",
+      "opponent": "Storm",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8142,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-05-23",
+      "start": "18:00",
+      "opponent": "Fire",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-05-30",
+      "start": "13:00",
+      "opponent": "Storm",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-06-07",
+      "start": "15:00",
+      "opponent": "Sky",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-06-10",
+      "start": "19:00",
+      "opponent": "Sun",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-06-14",
+      "start": "15:00",
+      "opponent": "Dream",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-06-25",
+      "start": "19:00",
+      "opponent": "Sparks",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-06-27",
+      "start": "14:00",
+      "opponent": "Mercury",
+      "venueId": "scotiabank-arena",
+      "attendance": 15687,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-07-05",
+      "start": "15:00",
+      "opponent": "Wings",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-07-08",
+      "start": "19:00",
+      "opponent": "Valkyries",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-07-10",
+      "start": "19:30",
+      "opponent": "Wings",
+      "venueId": "bell-centre",
+      "attendance": 20996,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-07-12",
+      "start": "15:00",
+      "opponent": "Liberty",
+      "venueId": "bell-centre",
+      "attendance": 12724,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-07-14",
+      "start": "19:00",
+      "opponent": "Mystics",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-07-17",
+      "start": "19:30",
+      "opponent": "Dream",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-07-20",
+      "start": "20:00",
+      "opponent": "Aces",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-07-30",
+      "start": "20:00",
+      "opponent": "Lynx",
+      "venueId": "scotiabank-arena",
+      "attendance": 18145,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-08-18",
+      "start": "19:00",
+      "opponent": "Fever",
+      "venueId": "scotiabank-arena",
+      "attendance": 19300,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-09-18",
+      "start": "19:30",
+      "opponent": "Fever",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    },
+    {
+      "teamId": "tempo",
+      "season": 2026,
+      "date": "2026-09-20",
+      "start": "15:00",
+      "opponent": "Liberty",
+      "venueId": "coca-cola-coliseum",
+      "attendance": 8210,
+      "kind": "announced",
+      "sourceId": "espn"
+    }
+  ]
+}

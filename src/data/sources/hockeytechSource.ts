@@ -36,6 +36,9 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
   { client: 'pwhl', htId: '1', metroId: 'boston', teamId: 'boston-fleet', venueId: 'agganis-arena' },
   { client: 'ahl', htId: '437', metroId: 'las-vegas', teamId: 'henderson-silver-knights', venueId: 'lees-family-forum' },
   { client: 'pwhl', htId: '12', metroId: 'las-vegas', teamId: 'pwhl-las-vegas', venueId: 't-mobile-arena', skipUnknownVenue: true },
+  // Toronto Marlies and Sceptres. Ids from the league season lists, Oct 12, 2026. Home games at TD Coliseum (Hamilton) or Scotiabank Centre (Halifax) are not mapped.
+  { client: 'ahl', htId: '335', metroId: 'toronto', teamId: 'marlies', venueId: 'coca-cola-coliseum' },
+  { client: 'pwhl', htId: '6', metroId: 'toronto', teamId: 'sceptres', venueId: 'coca-cola-coliseum' },
   { client: 'whl', htId: '214', metroId: 'seattle', teamId: 'seattle-thunderbirds', venueId: 'accesso-showare-center' },
   { client: 'whl', htId: '226', metroId: 'seattle', teamId: 'everett-silvertips', venueId: 'angel-of-the-winds-arena' },
   { client: 'ahl', htId: '380', metroId: 'austin', teamId: 'texas-stars', venueId: 'heb-center-cedar-park' },
@@ -72,6 +75,10 @@ const VENUE_BY_NAME: Record<string, string> = {
   "lee's family forum": 'lees-family-forum',
   'lee\u2019s family forum': 'lees-family-forum',
   'orleans arena': 'orleans-arena',
+  'coca-cola coliseum': 'coca-cola-coliseum',
+  'ricoh coliseum': 'coca-cola-coliseum',
+  'scotiabank arena': 'scotiabank-arena',
+  'aréna scotiabank': 'scotiabank-arena',
 };
 
 export function hockeytechMetroIds(): string[] {
