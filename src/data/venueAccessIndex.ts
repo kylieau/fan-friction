@@ -230,5 +230,4 @@ export const VENUE_ACCESS: VenueAccessRow[] = [
   { venueId: 'td-ballpark', reliefM: 7, streets250: 9 },
   { venueId: 'al-lang-stadium', reliefM: 18, streets250: 8 },
   { venueId: 'suncoast-credit-union-field', reliefM: 17, streets250: 5 },
-  { venueId: 'tampa-bay-downs', reliefM: 11, streets250: 3 },
 ];
