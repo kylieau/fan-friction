@@ -10,6 +10,1650 @@ export type { DayClass, ExpectedDrawRow, OpponentRatioRow, PostseasonRow, Season
 
 export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
   {
+    "metroId": "phoenix",
+    "teamId": "asu-football",
+    "venueId": "mountain-america-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 53890,
+    "low": 45809,
+    "high": 54150,
+    "games": 18,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-football",
+    "venueId": "mountain-america-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 48108,
+    "low": 47941,
+    "high": 52434,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-football",
+    "venueId": "mountain-america-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 53774,
+    "low": 49542,
+    "high": 53906,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-football",
+    "venueId": "mountain-america-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 54005,
+    "low": 46114,
+    "high": 54172,
+    "games": 15,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-football",
+    "venueId": "mountain-america-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 46723,
+    "low": 45504,
+    "high": 54005,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-football",
+    "venueId": "mountain-america-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 54177,
+    "low": 54086,
+    "high": 54256,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-football",
+    "venueId": "mountain-america-stadium",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 53414,
+    "low": 44940,
+    "high": 54101,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 7401,
+    "low": 6812,
+    "high": 9383,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 7263,
+    "low": 7115,
+    "high": 7388,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 6874,
+    "low": 6633,
+    "high": 8315,
+    "games": 21,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 7745,
+    "low": 6930,
+    "high": 8777,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 7234,
+    "low": 6868,
+    "high": 8315,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 6192,
+    "low": 6049,
+    "high": 6435,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 6812,
+    "low": 6723,
+    "high": 7031,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 8895,
+    "low": 7810,
+    "high": 11174,
+    "games": 15,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 8128,
+    "low": 7377,
+    "high": 12762,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 9026,
+    "low": 7901,
+    "high": 9586,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 6310,
+    "low": 6008,
+    "high": 6896,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 11812,
+    "low": 8334,
+    "high": 12759,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 2728,
+    "low": 2227,
+    "high": 3954,
+    "games": 21,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 3095,
+    "low": 2579,
+    "high": 5375,
+    "games": 6,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 3138,
+    "low": 3095,
+    "high": 4947,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 2659,
+    "low": 2276,
+    "high": 3643,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 3812,
+    "low": 2545,
+    "high": 8287,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 2291,
+    "low": 2035,
+    "high": 2423,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "venueId": "desert-financial-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 3954,
+    "low": 2846,
+    "high": 5688,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "venueId": "mullett-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 1918,
+    "low": 1588,
+    "high": 2360,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "venueId": "mullett-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 1606,
+    "low": 1483,
+    "high": 1942,
+    "games": 4,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "venueId": "state-farm-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 63750,
+    "low": 62875,
+    "high": 64338,
+    "games": 22,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "venueId": "state-farm-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 63331,
+    "low": 62706,
+    "high": 63667,
+    "games": 3,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "venueId": "state-farm-stadium",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 62764,
+    "low": 62190,
+    "high": 63541,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "venueId": "state-farm-stadium",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 63468,
+    "low": 62809,
+    "high": 64171,
+    "games": 20,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "venueId": "state-farm-stadium",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 63286,
+    "low": 63101,
+    "high": 63468,
+    "games": 3,
+    "seasons": "2023–2024"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "venueId": "state-farm-stadium",
+    "dayClass": "sunday",
+    "month": 10,
+    "count": 63672,
+    "low": 62961,
+    "high": 64413,
+    "games": 4,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "venueId": "state-farm-stadium",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 63446,
+    "low": 62525,
+    "high": 64464,
+    "games": 6,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "venueId": "state-farm-stadium",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 63967,
+    "low": 61970,
+    "high": 64135,
+    "games": 5,
+    "seasons": "2023–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "all",
+    "month": null,
+    "count": 27279,
+    "low": 21825,
+    "high": 35017,
+    "games": 238,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "opener",
+    "month": null,
+    "count": 49011,
+    "low": 48681,
+    "high": 49041,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 21819,
+    "low": 19584,
+    "high": 25612,
+    "games": 118,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 23166,
+    "low": 21200,
+    "high": 27617,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 21719,
+    "low": 19548,
+    "high": 24353,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 23174,
+    "low": 20558,
+    "high": 29201,
+    "games": 22,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 19709,
+    "low": 18790,
+    "high": 21652,
+    "games": 17,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 20871,
+    "low": 17509,
+    "high": 22604,
+    "games": 24,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 22857,
+    "low": 20735,
+    "high": 26198,
+    "games": 18,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "friday",
+    "month": null,
+    "count": 31255,
+    "low": 29252,
+    "high": 35204,
+    "games": 37,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "friday",
+    "month": 4,
+    "count": 31023,
+    "low": 29247,
+    "high": 32026,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "friday",
+    "month": 5,
+    "count": 30272,
+    "low": 28357,
+    "high": 32783,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "friday",
+    "month": 6,
+    "count": 25846,
+    "low": 24272,
+    "high": 26696,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "friday",
+    "month": 7,
+    "count": 31255,
+    "low": 29931,
+    "high": 31280,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "friday",
+    "month": 8,
+    "count": 35020,
+    "low": 30478,
+    "high": 44117,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "friday",
+    "month": 9,
+    "count": 38054,
+    "low": 33882,
+    "high": 41214,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 36406,
+    "low": 33519,
+    "high": 39913,
+    "games": 44,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 36946,
+    "low": 34853,
+    "high": 37457,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 35129,
+    "low": 31966,
+    "high": 38726,
+    "games": 9,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 30638,
+    "low": 29511,
+    "high": 38028,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "saturday",
+    "month": 7,
+    "count": 35905,
+    "low": 34358,
+    "high": 39183,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 42260,
+    "low": 37010,
+    "high": 46206,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 39297,
+    "low": 35199,
+    "high": 44032,
+    "games": 8,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 30057,
+    "low": 26726,
+    "high": 36323,
+    "games": 39,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "sunday",
+    "month": 4,
+    "count": 30057,
+    "low": 26460,
+    "high": 32240,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "sunday",
+    "month": 5,
+    "count": 30037,
+    "low": 27940,
+    "high": 35569,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "sunday",
+    "month": 6,
+    "count": 34024,
+    "low": 30159,
+    "high": 36617,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "sunday",
+    "month": 7,
+    "count": 25947,
+    "low": 24729,
+    "high": 27842,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "sunday",
+    "month": 8,
+    "count": 28433,
+    "low": 25496,
+    "high": 29071,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "dayClass": "sunday",
+    "month": 9,
+    "count": 37105,
+    "low": 32527,
+    "high": 38324,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 7186,
+    "low": 7102,
+    "high": 7268,
+    "games": 45,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "opener",
+    "month": null,
+    "count": 7073,
+    "low": 7063,
+    "high": 7130,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 7123,
+    "low": 7004,
+    "high": 7198,
+    "games": 20,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 7179,
+    "low": 7129,
+    "high": 7191,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 7117,
+    "low": 6896,
+    "high": 7189,
+    "games": 7,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 7119,
+    "low": 7009,
+    "high": 7265,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 7183,
+    "low": 7112,
+    "high": 7266,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "friday",
+    "month": 11,
+    "count": 7142,
+    "low": 7082,
+    "high": 7183,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 7233,
+    "low": 7130,
+    "high": 7324,
+    "games": 19,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 7184,
+    "low": 7113,
+    "high": 7307,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 7268,
+    "low": 7219,
+    "high": 7286,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 7158,
+    "low": 7086,
+    "high": 7270,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 609,
+    "low": 499,
+    "high": 899,
+    "games": 31,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 604,
+    "low": 471,
+    "high": 755,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 698,
+    "low": 553,
+    "high": 929,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 604,
+    "low": 604,
+    "high": 624,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 298,
+    "low": 216,
+    "high": 701,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 655,
+    "low": 555,
+    "high": 1059,
+    "games": 14,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "saturday",
+    "month": 1,
+    "count": 895,
+    "low": 667,
+    "high": 1224,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 742,
+    "low": 591,
+    "high": 886,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 512,
+    "low": 460,
+    "high": 569,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 557,
+    "low": 505,
+    "high": 874,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "venueId": "global-credit-union-arena",
+    "dayClass": "sunday",
+    "month": 12,
+    "count": 557,
+    "low": 505,
+    "high": 874,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 10452,
+    "low": 9716,
+    "high": 12420,
+    "games": 42,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 10299,
+    "low": 9311,
+    "high": 12052,
+    "games": 24,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 5,
+    "count": 9078,
+    "low": 8620,
+    "high": 9741,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 6,
+    "count": 9589,
+    "low": 9234,
+    "high": 10708,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 7,
+    "count": 10152,
+    "low": 10069,
+    "high": 11891,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 8,
+    "count": 10445,
+    "low": 9040,
+    "high": 10459,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 9,
+    "count": 12759,
+    "low": 12274,
+    "high": 13137,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 10586,
+    "low": 10290,
+    "high": 11033,
+    "games": 6,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 10097,
+    "low": 9769,
+    "high": 12065,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 9662,
+    "low": 9448,
+    "high": 9769,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 12065,
+    "low": 11299,
+    "high": 12636,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 13481,
+    "low": 13247,
+    "high": 13953,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "all",
+    "month": null,
+    "count": 5000,
+    "low": 4193,
+    "high": 6191,
+    "games": 41,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "opener",
+    "month": null,
+    "count": 6478,
+    "low": 6252,
+    "high": 7333,
+    "games": 3,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "friday",
+    "month": null,
+    "count": 5347,
+    "low": 4742,
+    "high": 5954,
+    "games": 4,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 5032,
+    "low": 4367,
+    "high": 6211,
+    "games": 35,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "saturday",
+    "month": 3,
+    "count": 5793,
+    "low": 5239,
+    "high": 6320,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "saturday",
+    "month": 4,
+    "count": 6230,
+    "low": 4861,
+    "high": 6277,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "saturday",
+    "month": 5,
+    "count": 5294,
+    "low": 4530,
+    "high": 5596,
+    "games": 5,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "saturday",
+    "month": 6,
+    "count": 4613,
+    "low": 4080,
+    "high": 5585,
+    "games": 4,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "saturday",
+    "month": 8,
+    "count": 4154,
+    "low": 4052,
+    "high": 4798,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "saturday",
+    "month": 9,
+    "count": 5536,
+    "low": 4883,
+    "high": 6162,
+    "games": 6,
+    "seasons": "2024–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "dayClass": "saturday",
+    "month": 10,
+    "count": 7563,
+    "low": 6443,
+    "high": 8092,
+    "games": 3,
+    "seasons": "2024–2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "all",
+    "month": null,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 79,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "preseason",
+    "month": null,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 4,
+    "seasons": "2025–2027"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 39,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 4,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 11,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 10,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "weekday",
+    "month": 12,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "friday",
+    "month": null,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 11,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "friday",
+    "month": 1,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 3,
+    "seasons": "2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "saturday",
+    "month": null,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 13,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "saturday",
+    "month": 2,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "saturday",
+    "month": 11,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 3,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "saturday",
+    "month": 12,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 3,
+    "seasons": "2025"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "sunday",
+    "month": null,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 16,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "sunday",
+    "month": 1,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "sunday",
+    "month": 3,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "dayClass": "sunday",
+    "month": 11,
+    "count": 17071,
+    "low": 17071,
+    "high": 17071,
+    "games": 4,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "venueId": "mullett-arena",
+    "dayClass": "all",
+    "month": null,
+    "count": 863,
+    "low": 490,
+    "high": 1131,
+    "games": 30,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "venueId": "mullett-arena",
+    "dayClass": "weekday",
+    "month": null,
+    "count": 725,
+    "low": 410,
+    "high": 1006,
+    "games": 23,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "venueId": "mullett-arena",
+    "dayClass": "weekday",
+    "month": 1,
+    "count": 382,
+    "low": 357,
+    "high": 674,
+    "games": 7,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "venueId": "mullett-arena",
+    "dayClass": "weekday",
+    "month": 2,
+    "count": 810,
+    "low": 452,
+    "high": 1357,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "venueId": "mullett-arena",
+    "dayClass": "weekday",
+    "month": 3,
+    "count": 860,
+    "low": 685,
+    "high": 1040,
+    "games": 8,
+    "seasons": "2025–2026"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "venueId": "mullett-arena",
+    "dayClass": "friday",
+    "month": null,
+    "count": 1015,
+    "low": 890,
+    "high": 1201,
+    "games": 5,
+    "seasons": "2025–2026"
+  },
+  {
     "metroId": "columbus",
     "teamId": "blue-jackets",
     "venueId": "nationwide-arena",
@@ -33206,6 +34850,13 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
 /** This season's level per team, once enough home games are in (expectedDrawBuild.ts seasonLevel). */
 export const SEASON_LEVELS: SeasonLevelRow[] = [
   {
+    "metroId": "phoenix",
+    "teamId": "asu-football",
+    "season": 2026,
+    "level": 0.998,
+    "games": 3
+  },
+  {
     "metroId": "columbus",
     "teamId": "columbus-crew",
     "season": 2026,
@@ -33419,6 +35070,727 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
 
 /** How each opponent has drawn at each team's games (expectedDrawBuild.ts opponentRatio). */
 export const OPPONENT_RATIOS: OpponentRatioRow[] = [
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-football",
+    "opponent": "arizona",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "opponent": "arizona",
+    "ratio": 1.294,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "opponent": "colorado",
+    "ratio": 0.97,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "opponent": "kansas-st",
+    "ratio": 0.959,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "opponent": "oregon-st",
+    "ratio": 1.068,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "opponent": "texas-tech",
+    "ratio": 0.986,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "opponent": "utah",
+    "ratio": 0.935,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "opponent": "arizona",
+    "ratio": 1.226,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "asu-wbb",
+    "opponent": "byu",
+    "ratio": 1.223,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "opponent": "49ers",
+    "ratio": 1.008,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "opponent": "falcons",
+    "ratio": 0.982,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "opponent": "lions",
+    "ratio": 0.989,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "opponent": "rams",
+    "ratio": 0.99,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "arizona-cardinals",
+    "opponent": "seahawks",
+    "ratio": 1.004,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "angels",
+    "ratio": 1.149,
+    "games": 6
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "athletics",
+    "ratio": 0.992,
+    "games": 6
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "blue-jays",
+    "ratio": 1.014,
+    "games": 6
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "braves",
+    "ratio": 0.994,
+    "games": 11
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "brewers",
+    "ratio": 0.974,
+    "games": 9
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "cardinals",
+    "ratio": 1.032,
+    "games": 9
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "cubs",
+    "ratio": 1.219,
+    "games": 10
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "dodgers",
+    "ratio": 1.402,
+    "games": 21
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "giants",
+    "ratio": 0.936,
+    "games": 19
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "marlins",
+    "ratio": 0.956,
+    "games": 9
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "mets",
+    "ratio": 1.092,
+    "games": 9
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "nationals",
+    "ratio": 0.969,
+    "games": 9
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "padres",
+    "ratio": 1.041,
+    "games": 16
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "phillies",
+    "ratio": 1.007,
+    "games": 10
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "pirates",
+    "ratio": 0.992,
+    "games": 9
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "rangers",
+    "ratio": 0.869,
+    "games": 8
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "reds",
+    "ratio": 0.92,
+    "games": 9
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "rockies",
+    "ratio": 0.927,
+    "games": 20
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "tigers",
+    "ratio": 1.195,
+    "games": 6
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "twins",
+    "ratio": 0.946,
+    "games": 6
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "white-sox",
+    "ratio": 0.969,
+    "games": 6
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "opponent": "yankees",
+    "ratio": 1.128,
+    "games": 6
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "opponent": "abilene-chrstn",
+    "ratio": 0.997,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "opponent": "ca-baptist",
+    "ratio": 1.001,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "opponent": "san-diego-st",
+    "ratio": 1.002,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "opponent": "seattle-u",
+    "ratio": 1.003,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "opponent": "southern-utah",
+    "ratio": 1.005,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "opponent": "tarleton-st",
+    "ratio": 0.998,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "opponent": "ut-arlington",
+    "ratio": 1.004,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-mbb",
+    "opponent": "utah-valley",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "gcu-wbb",
+    "opponent": "utah-state",
+    "ratio": 0.907,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "aces",
+    "ratio": 0.988,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "dream",
+    "ratio": 1.032,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "fever",
+    "ratio": 1.215,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "liberty",
+    "ratio": 0.983,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "lynx",
+    "ratio": 1.011,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "mystics",
+    "ratio": 0.944,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "sky",
+    "ratio": 0.995,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "sparks",
+    "ratio": 1.018,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "storm",
+    "ratio": 1.005,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "sun",
+    "ratio": 0.97,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "tempo",
+    "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "valkyries",
+    "ratio": 1.001,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "mercury",
+    "opponent": "wings",
+    "ratio": 1.043,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "birmingham",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "el-paso",
+    "ratio": 1.083,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "las-vegas",
+    "ratio": 0.947,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "monterey-bay",
+    "ratio": 0.939,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "new-mexico",
+    "ratio": 0.966,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "oakland",
+    "ratio": 0.893,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "orange-county",
+    "ratio": 1.004,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "sacramento",
+    "ratio": 0.956,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "san-antonio",
+    "ratio": 0.947,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "switchbacks-fc",
+    "ratio": 0.903,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "phoenix-rising",
+    "opponent": "tulsa",
+    "ratio": 1.043,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "76ers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "bucks",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "bulls",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "cavaliers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "celtics",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "clippers",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "grizzlies",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "hawks",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "heat",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "hornets",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "jazz",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "kings",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "knicks",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "lakers",
+    "ratio": 1,
+    "games": 5
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "magic",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "mavericks",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "nets",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "nuggets",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "pacers",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "pelicans",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "pistons",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "raptors",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "rockets",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "spurs",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "thunder",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "timberwolves",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "trail-blazers",
+    "ratio": 1,
+    "games": 3
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "warriors",
+    "ratio": 1,
+    "games": 4
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "opponent": "wizards",
+    "ratio": 1,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "opponent": "clippers",
+    "ratio": 1.045,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "opponent": "kings",
+    "ratio": 1.028,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "opponent": "legends",
+    "ratio": 0.788,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "opponent": "stars",
+    "ratio": 1.251,
+    "games": 2
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "valley-suns",
+    "opponent": "vipers",
+    "ratio": 0.868,
+    "games": 2
+  },
   {
     "metroId": "columbus",
     "teamId": "blue-jackets",
@@ -48172,6 +50544,78 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
 
 /** Playoff occupancy per team, building and round band (expectedDrawBuild.ts buildPostseasonRows). */
 export const POSTSEASON_DRAWS: PostseasonRow[] = [
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "band": "first",
+    "occupancy": 0.993,
+    "low": 0.882,
+    "high": 1.183,
+    "games": 29,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "band": "second",
+    "occupancy": 1.025,
+    "low": 0.948,
+    "high": 1.165,
+    "games": 56,
+    "seasons": "league, 2022, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "diamondbacks",
+    "venueId": "chase-field",
+    "band": "conference",
+    "occupancy": 1.001,
+    "low": 0.946,
+    "high": 1.058,
+    "games": 32,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "band": "first",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.036,
+    "games": 90,
+    "seasons": "2023, 2024, 2026 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "band": "second",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.039,
+    "games": 46,
+    "seasons": "2023 + league",
+    "basis": "blend"
+  },
+  {
+    "metroId": "phoenix",
+    "teamId": "suns",
+    "venueId": "mortgage-matchup-center",
+    "band": "final",
+    "occupancy": 1,
+    "low": 1,
+    "high": 1.058,
+    "games": 22,
+    "seasons": "league, 2023, 2024, 2025, 2026",
+    "basis": "league"
+  },
   {
     "metroId": "atlanta",
     "teamId": "atlanta-united",

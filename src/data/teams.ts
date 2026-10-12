@@ -160,6 +160,24 @@ const LIST: Team[] = [
   team("lovb-austin", "LOVB Austin", "LOVB Austin", "League One Volleyball", "volleyball", "austin", "LOVB"),
   team("austin-gamblers", "Austin Gamblers", "Gamblers", "PBR Teams", "rodeo", "austin", "GAM"),
   team("austin-rise", "Austin Rise FC", "Rise FC", "WPSL PRO", "soccer", "austin", "RISE"),
+  // Phoenix (Oct 12, 2026; docs/research/city-builds/phoenix/). Suns was already a visitor id; it is now the home record.
+  // Rattlers, Ridge Riders and ASU baseball have no verified feed. Coyotes left in 2024 and are not a home club.
+  // arizona-cardinals is not the nickname slug: "cardinals" is already the St. Louis baseball key.
+  team("diamondbacks", "Arizona Diamondbacks", "Diamondbacks", "MLB", "baseball", "phoenix", "AZ"),
+  team("arizona-cardinals", "Arizona Cardinals", "Cardinals", "NFL", "football", "phoenix", "ARI"),
+  team("suns", "Phoenix Suns", "Suns", "NBA", "basketball", "phoenix", "PHX"),
+  team("mercury", "Phoenix Mercury", "Mercury", "WNBA", "basketball", "phoenix", "MER"),
+  team("valley-suns", "Valley Suns", "Valley Suns", "NBA G League", "basketball", "phoenix", "VAL"),
+  team("phoenix-rising", "Phoenix Rising FC", "Rising", "USL Championship", "soccer", "phoenix", "RIS"),
+  team("asu-football", "Arizona State Sun Devils Football", "ASU", "College football", "football", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
+  team("asu-mbb", "Arizona State Sun Devils Men's Basketball", "ASU MBB", "College men's basketball", "basketball", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
+  team("asu-wbb", "Arizona State Sun Devils Women's Basketball", "ASU WBB", "College women's basketball", "basketball", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
+  team("asu-hockey", "Arizona State Sun Devils Men's Hockey", "ASU Hockey", "College hockey", "hockey", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
+  team("asu-baseball", "Arizona State Sun Devils Baseball", "ASU Baseball", "College baseball", "baseball", "phoenix", "ASU", ["Sun Devils", "Arizona State"]),
+  team("gcu-mbb", "Grand Canyon Lopes Men's Basketball", "GCU MBB", "College men's basketball", "basketball", "phoenix", "GCU", ["Lopes", "Grand Canyon"]),
+  team("gcu-wbb", "Grand Canyon Lopes Women's Basketball", "GCU WBB", "College women's basketball", "basketball", "phoenix", "GCU", ["Lopes", "Grand Canyon"]),
+  team("arizona-rattlers", "Arizona Rattlers", "Rattlers", "IFL", "football", "phoenix", "RAT"),
+  team("arizona-ridge-riders", "Arizona Ridge Riders", "Ridge Riders", "PBR", "rodeo", "phoenix", "ARR"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),
@@ -324,7 +342,6 @@ const LIST: Team[] = [
   team('marlins', 'Miami Marlins', 'Marlins', 'MLB', 'baseball'),
   team('rockies', 'Colorado Rockies', 'Rockies', 'MLB', 'baseball'),
   team('padres', 'San Diego Padres', 'Padres', 'MLB', 'baseball'),
-  team('suns', 'Phoenix Suns', 'Suns', 'NBA', 'basketball'),
   team('spurs', 'San Antonio Spurs', 'Spurs', 'NBA', 'basketball'),
   team('blazers', 'Portland Trail Blazers', 'Blazers', 'NBA', 'basketball'),
   team('utah-hc', 'Utah Hockey Club', 'Utah', 'NHL', 'hockey'),

@@ -109,6 +109,7 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   // Austin rooms whose primary tenants have no league feed (Stars hockey still comes from HockeyTech and wins on the same date).
   'heb-center-cedar-park', 'luedecke-arena', 'house-park', 'moody-center', 'myers-stadium', 'disch-falk-field',
   'gregory-gym', 'mccombs-field', 'bobcat-soccer-complex', 'bobcat-softball-stadium',
+  'desert-diamond-arena', 'phoenix-raceway', 'firebird-motorsports-park',
   'valley-fields', 'wilson-ice-arena', 'pettit-national-ice-center', 'buuck-field-house',
   'ozaukee-ice-center', 'schneider-stadium', 'time-of-grace-center', 'raabe-stadium',
   'dickies-arena', 'will-rogers-coliseum', 'cutx-event-center', 'grand-prairie-stadium', 'mansfield-stadium', 'cotton-bowl', 'toyota-stadium', 'comerica-center', 'texas-motor-speedway',

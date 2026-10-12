@@ -27844,6 +27844,101 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "phoenix",
+    "eventId": "2026-10-16-espn-suns-401908948",
+    "date": "2026-10-16",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:13:27.762Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17071,
+      "low": 17071,
+      "high": 17071
+    }
+  },
+  {
+    "metroId": "phoenix",
+    "eventId": "2026-10-24-espn-asu-football-401856839",
+    "date": "2026-10-24",
+    "start": null,
+    "capturedAt": "2026-10-12T08:13:27.762Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 54069,
+      "low": 53978,
+      "high": 54147
+    }
+  },
+  {
+    "metroId": "phoenix",
+    "eventId": "2026-10-24-espn-phoenix-rising-401842307",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:13:27.762Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Moderate",
+      "why": "Suns vs. Warriors 4.0 mi away, same hours."
+    },
+    "draw": {
+      "count": 7563,
+      "low": 6443,
+      "high": 8092
+    }
+  },
+  {
+    "metroId": "phoenix",
+    "eventId": "2026-10-24-espn-suns-401909860",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:13:27.762Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 2.3,
+      "friction": "Low",
+      "why": "Arizona St vs. Kansas St and Rising vs. Lexington 8.1 mi away, back to back."
+    },
+    "draw": {
+      "count": 17071,
+      "low": 17071,
+      "high": 17071
+    }
+  },
+  {
+    "metroId": "phoenix",
+    "eventId": "2026-10-25-espn-arizona-cardinals-401873019",
+    "date": "2026-10-25",
+    "start": "13:05",
+    "capturedAt": "2026-10-12T08:13:27.762Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1.2,
+      "friction": "Low",
+      "why": "85° feels-like at a 1:05 pm start, no roof."
+    },
+    "draw": {
+      "count": 63672,
+      "low": 62961,
+      "high": 64413
+    }
+  },
+  {
     "metroId": "san-diego",
     "eventId": "2026-10-06-mlb-849826",
     "date": "2026-10-06",

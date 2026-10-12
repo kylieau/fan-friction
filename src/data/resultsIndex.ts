@@ -1646,6 +1646,133 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "10:02"
   },
   {
+    "eventId": "2026-10-09-espn-asu-hockey-401904433",
+    "metroId": "phoenix",
+    "date": "2026-10-09",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "mullett-arena",
+    "homeTeamId": "asu-hockey",
+    "home": {
+      "name": "Arizona State",
+      "score": 1
+    },
+    "away": {
+      "name": "Holy Cross",
+      "score": 2
+    },
+    "capturedAt": "2026-10-12T08:13:43.364Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-asu-football-401856808",
+    "metroId": "phoenix",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "mountain-america-stadium",
+    "homeTeamId": "asu-football",
+    "home": {
+      "name": "Arizona St",
+      "score": 30
+    },
+    "away": {
+      "name": "Hawai'i",
+      "score": 12
+    },
+    "attendance": 47931,
+    "capturedAt": "2026-10-12T08:13:43.364Z",
+    "duration": {
+      "minutes": 237,
+      "kind": "estimated"
+    },
+    "startedAt": "22:33"
+  },
+  {
+    "eventId": "2026-10-10-espn-asu-hockey-401904434",
+    "metroId": "phoenix",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "mullett-arena",
+    "homeTeamId": "asu-hockey",
+    "home": {
+      "name": "Arizona State",
+      "score": 5
+    },
+    "away": {
+      "name": "Holy Cross",
+      "score": 4
+    },
+    "note": "OT",
+    "capturedAt": "2026-10-12T08:13:43.364Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-phoenix-rising-401842279",
+    "metroId": "phoenix",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "phoenix-rising-soccer-stadium",
+    "homeTeamId": "phoenix-rising",
+    "home": {
+      "name": "Rising",
+      "score": 3
+    },
+    "away": {
+      "name": "Las Vegas",
+      "score": 2
+    },
+    "capturedAt": "2026-10-12T08:13:43.364Z"
+  },
+  {
+    "eventId": "2026-10-10-espn-suns-401898720",
+    "metroId": "phoenix",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "mortgage-matchup-center",
+    "homeTeamId": "suns",
+    "home": {
+      "name": "Suns",
+      "score": 102
+    },
+    "away": {
+      "name": "Spurs",
+      "score": 98
+    },
+    "attendance": 17071,
+    "capturedAt": "2026-10-12T08:13:43.364Z",
+    "duration": {
+      "minutes": 155,
+      "kind": "estimated"
+    },
+    "startedAt": "22:24"
+  },
+  {
+    "eventId": "2026-10-11-espn-arizona-cardinals-401872991",
+    "metroId": "phoenix",
+    "date": "2026-10-11",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "state-farm-stadium",
+    "homeTeamId": "arizona-cardinals",
+    "home": {
+      "name": "Cardinals",
+      "score": 21
+    },
+    "away": {
+      "name": "Lions",
+      "score": 45
+    },
+    "attendance": 60968,
+    "capturedAt": "2026-10-12T08:13:43.364Z",
+    "duration": {
+      "minutes": 182,
+      "kind": "estimated"
+    },
+    "startedAt": "16:25"
+  },
+  {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",
     "metroId": "san-diego",
     "date": "2026-10-03",

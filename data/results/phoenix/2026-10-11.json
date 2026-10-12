@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-10-11",
+  "results": [
+    {
+      "eventId": "2026-10-11-espn-arizona-cardinals-401872991",
+      "metroId": "phoenix",
+      "date": "2026-10-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-stadium",
+      "homeTeamId": "arizona-cardinals",
+      "home": {
+        "name": "Cardinals",
+        "score": 21
+      },
+      "away": {
+        "name": "Lions",
+        "score": 45
+      },
+      "attendance": 60968,
+      "capturedAt": "2026-10-12T08:13:43.364Z",
+      "duration": {
+        "minutes": 182,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

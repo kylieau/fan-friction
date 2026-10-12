@@ -1,0 +1,284 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "metroName": "Phoenix",
+  "timeZone": "America/Phoenix",
+  "capturedOn": "2026-10-12",
+  "capturedAt": "2026-10-12T08:13:27.762Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-12",
+    "through": "2026-10-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 5
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-16-espn-suns-401908948",
+      "metroId": "phoenix",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Suns vs. Jazz",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "jazz"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2027",
+        "basis": "team",
+        "note": "Typical announced crowd here for a preseason game: 4 games, 2025–2027."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-phoenix-rising-401842307",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rising vs. Lexington",
+      "place": {
+        "type": "venue",
+        "venueId": "phoenix-rising-soccer-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "phoenix-rising",
+        "away": "lexington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7563,
+        "low": 6443,
+        "high": 8092,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-suns-401909860",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Suns vs. Warriors",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "warriors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-24-espn-asu-football-401856839",
+      "metroId": "phoenix",
+      "date": "2026-10-24",
+      "start": null,
+      "kind": "game",
+      "title": "Arizona St vs. Kansas St",
+      "place": {
+        "type": "venue",
+        "venueId": "mountain-america-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "asu-football",
+        "away": "kansas-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 54069,
+        "low": 53978,
+        "high": 54147,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-25-espn-arizona-cardinals-401873019",
+      "metroId": "phoenix",
+      "date": "2026-10-25",
+      "start": "13:05",
+      "kind": "game",
+      "title": "Cardinals vs. Broncos",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "arizona-cardinals",
+        "away": "broncos"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 63672,
+        "low": 62961,
+        "high": 64413,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in October: 4 games, 2023–2025."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-16-espn-suns-401908948",
+      "date": "2026-10-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-phoenix-rising-401842307",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Suns vs. Warriors 4.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7563,
+        "low": 6443,
+        "high": 8092
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-suns-401909860",
+      "date": "2026-10-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Arizona St vs. Kansas St and Rising vs. Lexington 8.1 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-10-24-espn-asu-football-401856839",
+      "date": "2026-10-24",
+      "start": null,
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 54069,
+        "low": 53978,
+        "high": 54147
+      }
+    },
+    {
+      "eventId": "2026-10-25-espn-arizona-cardinals-401873019",
+      "date": "2026-10-25",
+      "start": "13:05",
+      "read": {
+        "rating": 1.2,
+        "friction": "Low",
+        "why": "85° feels-like at a 1:05 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 63672,
+        "low": 62961,
+        "high": 64413
+      }
+    }
+  ]
+}
