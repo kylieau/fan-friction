@@ -48,6 +48,9 @@ const SCALE = 7.5;
 // Philadelphia is a hub (research, Oct 12, 2026, docs/research/city-builds/philadelphia/philadelphia-city-type-answer.md): Sports Complex
 // crowds run ~74–81% car-involved with meaningful B-line share; co-located stadiums share lots and Pattison/Broad approaches.
 // Tampa: provisional driving default (research §8.1); no venue carShare overrides in this pass.
+// Toronto is transit (research, Oct 12, 2026, docs/research/city-builds/toronto/toronto-city-type-answer.md): the capacity-weighted
+// estimate for the large rooms is about 0.40, and no venue has a measured person-level split. Estimated per-room shares stay in the
+// research; rooms without their own figure use the transit fallback. Suburban arenas are called out there as likely higher.
 // Columbus is sprawl (research, Oct 12, 2026, docs/research/city-builds/columbus/columbus-city-type-answer.md): no rail,
 // no measured mode split, and every venue estimate is 0.72–0.93 car. sprawl and hub share the 0.85 fallback; the
 // Arena District cluster is the contrary case, recorded in the implementation register, not a second city type.
@@ -77,7 +80,7 @@ const SCALE = 7.5;
 // Houston is driving sprawl (research, Oct 12, 2026, docs/research/city-builds/houston/houston-city-type-answer.md):
 // recurring Reliant Park events derive to about 0.90 car-involved and the suburbs estimate 0.96–0.97.
 // No venue carShare is set. None of those figures is a measured mode split. Downtown spill is the contrary case for hub.
-const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl' };
+const CITY_TYPE: Record<string, 'sprawl' | 'hub' | 'transit'> = { la: 'sprawl', 'san-diego': 'sprawl', seattle: 'hub', 'new-york': 'hub', atlanta: 'sprawl', 'bay-area': 'sprawl', chicago: 'hub', 'dallas-fort-worth': 'sprawl', montreal: 'transit', milwaukee: 'sprawl', boston: 'hub', philadelphia: 'hub', tampa: 'sprawl', columbus: 'sprawl', nashville: 'sprawl', austin: 'hub', phoenix: 'sprawl', vancouver: 'transit', sacramento: 'hub', 'mexico-city': 'transit', 'las-vegas': 'hub', 'kansas-city': 'sprawl', houston: 'sprawl', toronto: 'transit' };
 
 /** Names for zones people know. Anything else is named after its largest venue. */
 const ZONE_NAMES: Record<string, string> = {
@@ -228,6 +231,20 @@ const ZONE_NAMES: Record<string, string> = {
   'reckling-park': 'Rice University',
   'cy-fair-fcu-stadium': 'Berry Center',
   'berry-center-arena': 'Berry Center',
+  // Toronto clusters from the Oct 12 city-type answer: Exhibition Place / Ontario Place, and the Union Station pair.
+  'bmo-field': 'Exhibition Place',
+  'coca-cola-coliseum': 'Exhibition Place',
+  'cne-bandshell': 'Exhibition Place',
+  'queen-elizabeth-theatre-toronto': 'Exhibition Place',
+  'rbc-amphitheatre': 'Exhibition Place',
+  'rogers-centre': 'Union Station',
+  'scotiabank-arena': 'Union Station',
+  'sobeys-stadium': 'York University',
+  'york-lions-stadium': 'York University',
+  'uoft-varsity-stadium': 'University of Toronto',
+  'uoft-varsity-arena': 'University of Toronto',
+  'kimel-field-house': 'University of Toronto',
+  'uoft-convocation-hall': 'University of Toronto',
 };
 
 export interface Zone {

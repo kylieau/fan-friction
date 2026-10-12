@@ -25,6 +25,195 @@ export interface ArchiveForecastRow {
 
 export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
   {
+    "metroId": "toronto",
+    "eventId": "2026-10-13-espn-raptors-401908944",
+    "date": "2026-10-13",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 17507,
+      "low": 16950,
+      "high": 18141
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-14-espn-toronto-fc-761860",
+    "date": "2026-10-14",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 14963,
+      "low": 11499,
+      "high": 15638
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-15-espn-maple-leafs-401892506",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18469,
+      "low": 18342,
+      "high": 18748
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-17-espn-maple-leafs-401892523",
+    "date": "2026-10-17",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18923,
+      "low": 18816,
+      "high": 19000
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-18-ht-marlies-1029167",
+    "date": "2026-10-18",
+    "start": "16:00",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "draw": {
+      "count": 3724,
+      "low": 3668,
+      "high": 4353
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-19-espn-maple-leafs-401892537",
+    "date": "2026-10-19",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18432,
+      "low": 18305,
+      "high": 18711
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-21-espn-raptors-401909837",
+    "date": "2026-10-21",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 19364,
+      "low": 19274,
+      "high": 19364
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-21-ht-marlies-1029174",
+    "date": "2026-10-21",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "nearby",
+      "rating": 1
+    },
+    "draw": {
+      "count": 4026,
+      "low": 2665,
+      "high": 7362
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-22-espn-maple-leafs-401892553",
+    "date": "2026-10-22",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 18377,
+      "low": 18250,
+      "high": 18655
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-24-ht-marlies-1029200",
+    "date": "2026-10-24",
+    "start": "16:00",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "draw": {
+      "count": 3820,
+      "low": 3711,
+      "high": 3824
+    }
+  },
+  {
+    "metroId": "toronto",
+    "eventId": "2026-10-25-ht-marlies-1029204",
+    "date": "2026-10-25",
+    "start": "16:00",
+    "capturedAt": "2026-10-12T08:16:24.793Z",
+    "capturedOn": "2026-10-12",
+    "draw": {
+      "count": 3792,
+      "low": 3735,
+      "high": 4433
+    }
+  },
+  {
     "metroId": "atlanta",
     "eventId": "2026-10-07-espn-dream-401918297",
     "date": "2026-10-07",

@@ -74,4 +74,5 @@ export const SCHEDULE_SNAPSHOTS: readonly ScheduleSnapshotSpan[] = [
   { metroId: 'seattle', capturedOn: '2026-10-11', from: '2026-10-11', through: '2026-10-25', sources: ['mlb', 'espn', 'hockeytech', 'seed', 'ticketmaster'] },
   { metroId: 'tampa', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed'] },
   { metroId: 'vancouver', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed'] },
+  { metroId: 'toronto', capturedOn: '2026-10-12', from: '2026-10-12', through: '2026-10-26', sources: ['mlb', 'espn', 'hockeytech', 'seed'] },
 ];

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-14",
+  "rows": [
+    {
+      "metroId": "toronto",
+      "venueId": "bmo-field",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:13:35.179Z",
+      "feelsLikeF": 54.7,
+      "tempF": 59.2,
+      "humidity": 62,
+      "windMph": 8.2,
+      "uvIndex": 0.05,
+      "precipProbability": 5,
+      "precipMm": 0,
+      "shortwave": 10,
+      "cloudCover": 36,
+      "code": 1
+    },
+    {
+      "metroId": "toronto",
+      "venueId": "bmo-field",
+      "date": "2026-10-14",
+      "hour": 20,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:13:35.179Z",
+      "feelsLikeF": 55.4,
+      "tempF": 58.8,
+      "humidity": 62,
+      "windMph": 5.4,
+      "uvIndex": 0,
+      "precipProbability": 5,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 95,
+      "code": 3
+    },
+    {
+      "metroId": "toronto",
+      "venueId": "bmo-field",
+      "date": "2026-10-14",
+      "hour": 21,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:13:35.179Z",
+      "feelsLikeF": 55,
+      "tempF": 58.4,
+      "humidity": 62,
+      "windMph": 5.3,
+      "uvIndex": 0,
+      "precipProbability": 1,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
+    },
+    {
+      "metroId": "toronto",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:13:35.179Z",
+      "feelsLikeF": 54.8,
+      "tempF": 59.3,
+      "humidity": 62,
+      "windMph": 8.2,
+      "uvIndex": 0.05,
+      "precipProbability": 5,
+      "precipMm": 0,
+      "shortwave": 10,
+      "cloudCover": 36,
+      "code": 1
+    }
+  ],
+  "days": [
+    {
+      "metroId": "toronto",
+      "venueId": "city",
+      "date": "2026-10-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-12T08:13:35.179Z",
+      "feelsLikeHighF": 64.2,
+      "feelsLikeLowF": 52.2,
+      "code": 3,
+      "precipProbability": 7,
+      "precipMm": 0
+    }
+  ]
+}

@@ -134,6 +134,8 @@ const SPORTS_FROM_TICKETMASTER = new Set([
   'las-vegas-motor-speedway', 'lvms-dirt-track', 'lvms-bullring', 'lees-family-forum', 'orleans-arena', 'thomas-mack-center', 'cashman-field',
   // Kansas City rooms with no league schedule in MLB or ESPN (ECHL, MASL, NASCAR, Big 12/PBR, NAIA, Monarchs).
   'cable-dahmer-arena', 'kansas-speedway', 't-mobile-center', 'municipal-auditorium-arena', 'legends-field',
+  // Toronto rooms whose clubs are not on MLB/ESPN/HockeyTech (CFL feed is empty; OHL, NLL, CPL, NSL, U Sports).
+  'bmo-field', 'caa-centre-brampton', 'tribute-communities-centre', 'uoft-varsity-stadium', 'uoft-varsity-arena', 'york-lions-stadium', 'mattamy-athletic-centre', 'kimel-field-house',
 ]);
 
 function kindOf(segment: string | undefined, venueId: string): CrowdEvent['kind'] | null {

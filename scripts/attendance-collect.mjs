@@ -14,11 +14,12 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago', phoenix: 'America/Phoenix', vancouver: 'America/Vancouver', sacramento: 'America/Los_Angeles', 'mexico-city': 'America/Mexico_City', 'las-vegas': 'America/Los_Angeles', 'kansas-city': 'America/Chicago', houston: 'America/Chicago' , toronto: 'America/Toronto' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
 const MLB_TEAMS = [
+  { teamId: 'blue-jays', metroId: 'toronto', mlbId: 141, venueId: 'rogers-centre', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'red-sox', metroId: 'boston', mlbId: 111, venueId: 'fenway-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'phillies', metroId: 'philadelphia', mlbId: 143, venueId: 'citizens-bank-park', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'astros', metroId: 'houston', mlbId: 117, venueId: 'daikin-park', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -65,6 +66,12 @@ const MLB_TEAMS = [
   { teamId: 'kc-monarchs', mlbId: 1885, sportId: 23, venueId: 'legends-field', metroId: 'kansas-city', seasons: [2022, 2023, 2024, 2025, 2026] },
 ];
 const ESPN_TEAMS = [
+  { teamId: 'maple-leafs', metroId: 'toronto', path: 'hockey/nhl', espnId: '21', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'raptors', metroId: 'toronto', path: 'basketball/nba', espnId: '28', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'tempo', metroId: 'toronto', path: 'basketball/wnba', espnId: '131935', seasons: [2026], seasontype: 2 },
+  { teamId: 'raptors-905', metroId: 'toronto', path: 'basketball/nba-development', espnId: '17', seasons: [2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'toronto-fc', metroId: 'toronto', path: 'soccer/usa.1', espnId: '7318', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'argonauts', metroId: 'toronto', path: 'football/cfl', espnId: '85', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'celtics', metroId: 'boston', path: 'basketball/nba', espnId: '2', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'bruins', metroId: 'boston', path: 'hockey/nhl', espnId: '1', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'patriots', metroId: 'boston', path: 'football/nfl', espnId: '17', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
@@ -448,6 +455,16 @@ const VENUE_BY_NAME = {
   'swangard stadium': 'swangard-stadium',
   'rogers field at nat bailey stadium': 'nat-bailey-stadium',
   'nat bailey stadium': 'nat-bailey-stadium',
+  'scotiabank arena': 'scotiabank-arena',
+  'aréna scotiabank': 'scotiabank-arena',
+  'coca-cola coliseum': 'coca-cola-coliseum',
+  'ricoh coliseum': 'coca-cola-coliseum',
+  'bmo field': 'bmo-field',
+  'toronto stadium': 'bmo-field',
+  'paramount fine foods centre': 'mississauga-sports-centre',
+  'mississauga sports and entertainment centre': 'mississauga-sports-centre',
+  'hershey centre': 'mississauga-sports-centre',
+  'rogers centre': 'rogers-centre',
   'now arena': 'now-arena',
   'comerica center': 'comerica-center',
   // Nashville, as ESPN writes them (checked Oct 12, 2026).
@@ -649,6 +666,8 @@ async function collectMlb(team) {
  * final score, season by season (src/data/sources/hockeytechSource.ts has the keys and team ids).
  */
 const HOCKEYTECH_TEAMS = [
+  { teamId: 'marlies', metroId: 'toronto', client: 'ahl', htId: '335', venueId: 'coca-cola-coliseum' },
+  { teamId: 'sceptres', metroId: 'toronto', client: 'pwhl', htId: '6', venueId: 'coca-cola-coliseum' },
   { teamId: 'boston-fleet', metroId: 'boston', client: 'pwhl', htId: '1', venueId: 'agganis-arena' },
   { teamId: 'milwaukee-admirals', metroId: 'milwaukee', client: 'ahl', htId: '327', venueId: 'uwm-panther-arena' },
   { teamId: 'chicago-wolves', metroId: 'chicago', client: 'ahl', htId: '330', venueId: 'allstate-arena' },
@@ -667,8 +686,7 @@ const HOCKEYTECH_TEAMS = [
   { teamId: 'henderson-silver-knights', metroId: 'las-vegas', client: 'ahl', htId: '437', venueId: 'lees-family-forum' },
   { teamId: 'pwhl-las-vegas', metroId: 'las-vegas', client: 'pwhl', htId: '12', venueId: 't-mobile-arena', skipUnknownVenue: true },
 ];
-const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden', 'h-e-b center at cedar park': 'heb-center-cedar-park', 'cedar park center': 'heb-center-cedar-park', 'pacific coliseum': 'pacific-coliseum', 'rogers arena': 'rogers-arena', 'langley events centre': 'langley-events-centre', 'langley events centre - langley, bc': 'langley-events-centre', 't-mobile arena': 't-mobile-arena', "lee's family forum": 'lees-family-forum', 'lee\u2019s family forum': 'lees-family-forum', 'orleans arena': 'orleans-arena' };
-
+const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden', 'h-e-b center at cedar park': 'heb-center-cedar-park', 'cedar park center': 'heb-center-cedar-park', 'pacific coliseum': 'pacific-coliseum', 'rogers arena': 'rogers-arena', 'langley events centre': 'langley-events-centre', 'langley events centre - langley, bc': 'langley-events-centre', 't-mobile arena': 't-mobile-arena', 'lee\u2019s family forum': 'lees-family-forum', 'orleans arena': 'orleans-arena', 'coca-cola coliseum': 'coca-cola-coliseum', 'ricoh coliseum': 'coca-cola-coliseum', 'scotiabank arena': 'scotiabank-arena', 'aréna scotiabank': 'scotiabank-arena' };
 
 const HT_KEYS = { ahl: 'ccb91f29d6744675', pwhl: '446521baf8c38984', whl: '41b145a848f4bd67' };
 const htUrl = (client, params) => `https://lscluster.hockeytech.com/feed/?${new URLSearchParams({ feed: 'modulekit', key: HT_KEYS[client], client_code: client, fmt: 'json', lang: 'en', ...params })}`;
