@@ -66,6 +66,14 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/mens-college-basketball', espnId: '58', metroId: 'tampa', teamId: 'usf-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '58', metroId: 'tampa', teamId: 'usf-wbb', sport: 'basketball' },
   { path: 'soccer/usa.usl.1', espnId: '17361', metroId: 'tampa', teamId: 'rowdies', sport: 'soccer' },
+  // Austin (docs/research/city-builds/austin/); every id and home venue checked against the feed Oct 12, 2026.
+  { path: 'soccer/usa.1', espnId: '20906', metroId: 'austin', teamId: 'austin-fc', sport: 'soccer' },
+  { path: 'football/college-football', espnId: '251', metroId: 'austin', teamId: 'texas-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '251', metroId: 'austin', teamId: 'texas-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '251', metroId: 'austin', teamId: 'texas-wbb', sport: 'basketball' },
+  { path: 'football/college-football', espnId: '326', metroId: 'austin', teamId: 'texas-state-football', sport: 'football' },
+  { path: 'basketball/mens-college-basketball', espnId: '326', metroId: 'austin', teamId: 'texas-state-mbb', sport: 'basketball' },
+  { path: 'basketball/womens-college-basketball', espnId: '326', metroId: 'austin', teamId: 'texas-state-wbb', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '13', metroId: 'la', teamId: 'lakers', sport: 'basketball' },
   { path: 'basketball/nba', espnId: '12', metroId: 'la', teamId: 'clippers', sport: 'basketball' },
   { path: 'hockey/nhl', espnId: '8', metroId: 'la', teamId: 'kings', sport: 'hockey' },
@@ -400,6 +408,16 @@ const VENUE_BY_NAME: Record<string, string> = {
   'curb event center arena': 'curb-event-center',
   'curb event center': 'curb-event-center',
   'allen arena': 'allen-arena',
+  // Austin, as ESPN writes them on each team's own schedule (Oct 12, 2026).
+  'dkr-texas memorial stadium': 'dkr-texas-memorial-stadium',
+  'darrell k royal-texas memorial stadium': 'dkr-texas-memorial-stadium',
+  'darrell k royal texas memorial stadium': 'dkr-texas-memorial-stadium',
+  'ufcu stadium': 'ufcu-stadium',
+  'bobcat stadium': 'ufcu-stadium',
+  'moody center': 'moody-center',
+  'q2 stadium': 'q2-stadium',
+  'strahan arena at the university events center': 'strahan-arena',
+  'strahan arena': 'strahan-arena',
 };
 
 /** Same display name in different metros (Franklin Field = Penn football vs Milwaukee baseball). */

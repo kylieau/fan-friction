@@ -193,6 +193,24 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "12:36"
   },
   {
+    "eventId": "2026-10-10-espn-austin-fc-761856",
+    "metroId": "austin",
+    "date": "2026-10-10",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "q2-stadium",
+    "homeTeamId": "austin-fc",
+    "home": {
+      "name": "Austin FC",
+      "score": 1
+    },
+    "away": {
+      "name": "Nashville",
+      "score": 4
+    },
+    "capturedAt": "2026-10-12T08:20:57.716Z"
+  },
+  {
     "eventId": "2026-10-04-espn-sf-49ers-401872975",
     "metroId": "bay-area",
     "date": "2026-10-04",

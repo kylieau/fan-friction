@@ -36,6 +36,7 @@ export const HOCKEYTECH_TEAMS: { client: keyof typeof CLIENTS; htId: string; met
   { client: 'pwhl', htId: '1', metroId: 'boston', teamId: 'boston-fleet', venueId: 'agganis-arena' },
   { client: 'whl', htId: '214', metroId: 'seattle', teamId: 'seattle-thunderbirds', venueId: 'accesso-showare-center' },
   { client: 'whl', htId: '226', metroId: 'seattle', teamId: 'everett-silvertips', venueId: 'angel-of-the-winds-arena' },
+  { client: 'ahl', htId: '380', metroId: 'austin', teamId: 'texas-stars', venueId: 'heb-center-cedar-park' },
 ];
 
 /** The feed's venue names for a few buildings, when a club plays away from its usual home ("Bell Centre" for a Victoire one-off). */
@@ -56,6 +57,8 @@ const VENUE_BY_NAME: Record<string, string> = {
   'agganis arena': 'agganis-arena',
   'tsongas center': 'tsongas-center',
   'td garden': 'td-garden',
+  'h-e-b center at cedar park': 'heb-center-cedar-park',
+  'cedar park center': 'heb-center-cedar-park',
 };
 
 export function hockeytechMetroIds(): string[] {

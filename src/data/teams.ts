@@ -35,7 +35,7 @@ const program = (school: 'ucla' | 'usc', schoolName: string, code: string, sport
 export function teamBadge(team: Team): string {
   const abbr = team.abbr;
   if (abbr && !Object.values(TEAMS).some((t) => t !== team && t.metroId === team.metroId && t.abbr === abbr)) return abbr;
-  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|nashville|lake country|columbus|ohio state|fc)\s+/i, '');
+  const nick = team.shortName.replace(/^(?:los angeles|la|san diego|sd|new york|ny|san jose|sj|sf|chicago|dallas|atlanta|seattle|montreal|milwaukee|boston|philadelphia|tampa bay|tampa|nashville|lake country|columbus|ohio state|austin|round rock|texas state|fc)\s+/i, '');
   return nick.replace(/[^A-Za-z0-9]/g, '').slice(0, 3).toUpperCase();
 }
 
@@ -140,6 +140,26 @@ const LIST: Team[] = [
   team("mtsu-mbb", "Middle Tennessee Blue Raiders Men's Basketball", "MTSU MBB", "College men's basketball", "basketball", "nashville", "MTSU", ["Middle Tennessee", "Blue Raiders"]),
   team("mtsu-wbb", "Middle Tennessee Blue Raiders Women's Basketball", "MTSU WBB", "College women's basketball", "basketball", "nashville", "MTSU", ["Middle Tennessee", "Blue Raiders"]),
   team("nashville-vibe", "Nashville Vibe", "Vibe", "UpShot League", "basketball", "nashville", "VIBE"),
+  // Austin (Oct 12, 2026; docs/research/city-builds/austin/). Feed ids checked against live schedules. No-feed clubs stay loggable.
+  team("austin-fc", "Austin FC", "Austin FC", "MLS", "soccer", "austin", "ATX"),
+  team("round-rock-express", "Round Rock Express", "Express", "Triple-A baseball", "baseball", "austin", "RR"),
+  team("texas-stars", "Texas Stars", "Stars", "AHL", "hockey", "austin", "STA"),
+  team("texas-football", "Texas Longhorns Football", "Texas", "College football", "football", "austin", "TEX", ["Longhorns", "Texas FB"]),
+  team("texas-mbb", "Texas Longhorns Men's Basketball", "Texas MBB", "College men's basketball", "basketball", "austin", "TEX", ["Longhorns"]),
+  team("texas-wbb", "Texas Longhorns Women's Basketball", "Texas WBB", "College women's basketball", "basketball", "austin", "TEX", ["Longhorns"]),
+  team("texas-state-football", "Texas State Bobcats Football", "Texas State", "College football", "football", "austin", "TXST", ["Bobcats", "Texas State FB"]),
+  team("texas-state-mbb", "Texas State Bobcats Men's Basketball", "Texas State MBB", "College men's basketball", "basketball", "austin", "TXST", ["Bobcats"]),
+  team("texas-state-wbb", "Texas State Bobcats Women's Basketball", "Texas State WBB", "College women's basketball", "basketball", "austin", "TXST", ["Bobcats"]),
+  team("texas-baseball", "Texas Longhorns Baseball", "Texas Baseball", "College baseball", "baseball", "austin", "TEX", ["Longhorns"]),
+  team("texas-softball", "Texas Longhorns Softball", "Texas Softball", "College softball", "softball", "austin", "TEX", ["Longhorns"]),
+  team("texas-soccer", "Texas Longhorns Soccer", "Texas Soccer", "College soccer", "soccer", "austin", "TEX", ["Longhorns"]),
+  team("texas-volleyball", "Texas Longhorns Volleyball", "Texas VB", "College volleyball", "volleyball", "austin", "TEX", ["Longhorns"]),
+  team("austin-fc-ii", "Austin FC II", "Austin FC II", "MLS Next Pro", "soccer", "austin", "ATX2"),
+  team("texas-volts", "Texas Volts", "Volts", "AUSL", "softball", "austin", "VOL"),
+  team("austin-spurs", "Austin Spurs", "Austin Spurs", "NBA G League", "basketball", "austin", "AUS"),
+  team("lovb-austin", "LOVB Austin", "LOVB Austin", "League One Volleyball", "volleyball", "austin", "LOVB"),
+  team("austin-gamblers", "Austin Gamblers", "Gamblers", "PBR Teams", "rodeo", "austin", "GAM"),
+  team("austin-rise", "Austin Rise FC", "Rise FC", "WPSL PRO", "soccer", "austin", "RISE"),
   // LA
   team('dodgers', 'Los Angeles Dodgers', 'Dodgers', 'MLB', 'baseball', 'la', 'LAD'),
   team('angels', 'Los Angeles Angels', 'Angels', 'MLB', 'baseball', 'la', 'LAA'),

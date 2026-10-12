@@ -2764,6 +2764,139 @@ export const ARCHIVE_FORECASTS: readonly ArchiveForecastRow[] = [
     }
   },
   {
+    "metroId": "austin",
+    "eventId": "2026-10-15-espn-texas-state-football-401860923",
+    "date": "2026-10-15",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:21:00.008Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 13647,
+      "low": 13438,
+      "high": 16722
+    }
+  },
+  {
+    "metroId": "austin",
+    "eventId": "2026-10-17-espn-austin-fc-761882",
+    "date": "2026-10-17",
+    "start": "19:30",
+    "capturedAt": "2026-10-12T08:21:00.008Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 20738,
+      "low": 20738,
+      "high": 20738
+    }
+  },
+  {
+    "metroId": "austin",
+    "eventId": "2026-10-17-espn-texas-football-401856724",
+    "date": "2026-10-17",
+    "start": "11:00",
+    "capturedAt": "2026-10-12T08:21:00.008Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 104330,
+      "low": 103658,
+      "high": 104702
+    }
+  },
+  {
+    "metroId": "austin",
+    "eventId": "2026-10-23-ht-texas-stars-1029185",
+    "date": "2026-10-23",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:21:00.008Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 1,
+      "friction": "Low",
+      "why": "The biggest event around."
+    },
+    "draw": {
+      "count": 5451,
+      "low": 5332,
+      "high": 5665
+    }
+  },
+  {
+    "metroId": "austin",
+    "eventId": "2026-10-24-espn-texas-football-401856732",
+    "date": "2026-10-24",
+    "start": null,
+    "capturedAt": "2026-10-12T08:21:00.008Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 4.5,
+      "friction": "Moderate",
+      "why": "94° feels-like, no roof."
+    },
+    "draw": {
+      "count": 104330,
+      "low": 103658,
+      "high": 104702
+    }
+  },
+  {
+    "metroId": "austin",
+    "eventId": "2026-10-24-espn-texas-state-football-401860906",
+    "date": "2026-10-24",
+    "start": "18:30",
+    "capturedAt": "2026-10-12T08:21:00.008Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 4.5,
+      "friction": "Moderate",
+      "why": "Texas Longhorns vs. Ole Miss 29 mi away, back to back."
+    },
+    "draw": {
+      "count": 20399,
+      "low": 18761,
+      "high": 21735
+    }
+  },
+  {
+    "metroId": "austin",
+    "eventId": "2026-10-24-ht-texas-stars-1029199",
+    "date": "2026-10-24",
+    "start": "19:00",
+    "capturedAt": "2026-10-12T08:21:00.008Z",
+    "capturedOn": "2026-10-12",
+    "read": {
+      "method": "formula",
+      "rating": 4.5,
+      "friction": "Moderate",
+      "why": "Texas St vs. Utah State 45 mi away, same hours."
+    },
+    "draw": {
+      "count": 6105,
+      "low": 5771,
+      "high": 6280
+    }
+  },
+  {
     "metroId": "bay-area",
     "eventId": "2026-10-07-espn-valkyries-401918298",
     "date": "2026-10-07",

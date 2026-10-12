@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEFAULT_METRO = 'la';
 /** Local dates and starts are each city's own clock (a 7 pm game in New York is 19:00, not 16:00). */
-const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago' };
+const ZONE_BY_METRO = { la: 'America/Los_Angeles', 'san-diego': 'America/Los_Angeles', seattle: 'America/Los_Angeles', 'new-york': 'America/New_York', atlanta: 'America/New_York', 'bay-area': 'America/Los_Angeles', chicago: 'America/Chicago', 'dallas-fort-worth': 'America/Chicago', montreal: 'America/Toronto', milwaukee: 'America/Chicago', boston: 'America/New_York', philadelphia: 'America/New_York', tampa: 'America/New_York', columbus: 'America/New_York', nashville: 'America/Chicago', austin: 'America/Chicago' };
 const UA = { 'User-Agent': 'Mozilla/5.0 (fan-friction attendance collector)' };
 
 /** MLB seasons are calendar years. ESPN seasons are the year the season ends (2026 = 2025-26) for winter sports. */
@@ -26,6 +26,7 @@ const MLB_TEAMS = [
   { teamId: 'clearwater-threshers', metroId: 'tampa', mlbId: 566, sportId: 14, venueId: 'baycare-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'tampa-tarpons', metroId: 'tampa', mlbId: 587, sportId: 14, venueId: 'george-m-steinbrenner-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'dunedin-blue-jays', metroId: 'tampa', mlbId: 424, sportId: 14, venueId: 'td-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
+  { teamId: 'round-rock-express', metroId: 'austin', mlbId: 102, sportId: 11, venueId: 'dell-diamond', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'brewers', metroId: 'milwaukee', mlbId: 158, venueId: 'american-family-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'milwaukee-milkmen', metroId: 'milwaukee', mlbId: 5548, sportId: 23, venueId: 'franklin-field', seasons: [2022, 2023, 2024, 2025, 2026] },
   { teamId: 'lake-country-dockhounds', metroId: 'milwaukee', mlbId: 6488, sportId: 23, venueId: 'dockhounds-ballpark', seasons: [2022, 2023, 2024, 2025, 2026] },
@@ -94,6 +95,13 @@ const ESPN_TEAMS = [
   { teamId: 'osu-mbb', metroId: 'columbus', path: 'basketball/mens-college-basketball', espnId: '194', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'osu-wbb', metroId: 'columbus', path: 'basketball/womens-college-basketball', espnId: '194', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'osu-mhockey', metroId: 'columbus', path: 'hockey/mens-college-hockey', espnId: '194', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'austin-fc', metroId: 'austin', path: 'soccer/usa.1', espnId: '20906', seasons: [2022, 2023, 2024, 2025] },
+  { teamId: 'texas-football', metroId: 'austin', path: 'football/college-football', espnId: '251', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'texas-mbb', metroId: 'austin', path: 'basketball/mens-college-basketball', espnId: '251', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'texas-wbb', metroId: 'austin', path: 'basketball/womens-college-basketball', espnId: '251', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'texas-state-football', metroId: 'austin', path: 'football/college-football', espnId: '326', seasons: [2022, 2023, 2024, 2025], seasontype: 2 },
+  { teamId: 'texas-state-mbb', metroId: 'austin', path: 'basketball/mens-college-basketball', espnId: '326', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
+  { teamId: 'texas-state-wbb', metroId: 'austin', path: 'basketball/womens-college-basketball', espnId: '326', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'bucks', metroId: 'milwaukee', path: 'basketball/nba', espnId: '15', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-mbb', metroId: 'milwaukee', path: 'basketball/mens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
   { teamId: 'marquette-wbb', metroId: 'milwaukee', path: 'basketball/womens-college-basketball', espnId: '269', seasons: [2023, 2024, 2025, 2026], seasontype: 2 },
@@ -384,6 +392,16 @@ const VENUE_BY_NAME = {
   'curb event center arena': 'curb-event-center',
   'curb event center': 'curb-event-center',
   'allen arena': 'allen-arena',
+  // Austin, as ESPN writes them on each team's own schedule (Oct 12, 2026).
+  'dkr-texas memorial stadium': 'dkr-texas-memorial-stadium',
+  'darrell k royal-texas memorial stadium': 'dkr-texas-memorial-stadium',
+  'darrell k royal texas memorial stadium': 'dkr-texas-memorial-stadium',
+  'ufcu stadium': 'ufcu-stadium',
+  'bobcat stadium': 'ufcu-stadium',
+  'moody center': 'moody-center',
+  'q2 stadium': 'q2-stadium',
+  'strahan arena at the university events center': 'strahan-arena',
+  'strahan arena': 'strahan-arena',
 };
 
 const METRO_VENUE_BY_NAME = {
@@ -494,8 +512,9 @@ const HOCKEYTECH_TEAMS = [
   { teamId: 'pwhl-san-jose', metroId: 'bay-area', client: 'pwhl', htId: '13', venueId: 'sap-center' },
   { teamId: 'seattle-thunderbirds', metroId: 'seattle', client: 'whl', htId: '214', venueId: 'accesso-showare-center' },
   { teamId: 'everett-silvertips', metroId: 'seattle', client: 'whl', htId: '226', venueId: 'angel-of-the-winds-arena' },
+  { teamId: 'texas-stars', metroId: 'austin', client: 'ahl', htId: '380', venueId: 'heb-center-cedar-park' },
 ];
-const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden' };
+const HT_VENUES = { 'uw-milwaukee panther arena': 'uwm-panther-arena', 'bmo harris bradley center': 'bradley-center', 'bell centre': 'bell-centre', 'centre bell': 'bell-centre', 'place bell': 'place-bell', 'sap center': 'sap-center', 'climate pledge arena': 'climate-pledge-arena', 'prudential center': 'prudential-center', 'allstate arena': 'allstate-arena', 'pechanga arena': 'pechanga-arena', 'pechanga arena san diego': 'pechanga-arena', 'accesso showare center': 'accesso-showare-center', 'angel of the winds arena': 'angel-of-the-winds-arena', 'agganis arena': 'agganis-arena', 'tsongas center': 'tsongas-center', 'td garden': 'td-garden', 'h-e-b center at cedar park': 'heb-center-cedar-park', 'cedar park center': 'heb-center-cedar-park' };
 
 const HT_KEYS = { ahl: 'ccb91f29d6744675', pwhl: '446521baf8c38984', whl: '41b145a848f4bd67' };
 const htUrl = (client, params) => `https://lscluster.hockeytech.com/feed/?${new URLSearchParams({ feed: 'modulekit', key: HT_KEYS[client], client_code: client, fmt: 'json', lang: 'en', ...params })}`;
